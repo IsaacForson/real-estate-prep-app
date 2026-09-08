@@ -1,0 +1,65 @@
+code: DE
+name: Delaware
+regulator:
+  name: "Delaware Real Estate Commission, Division of Professional Regulation (DPR), Department of State"
+  url: "https://dpr.delaware.gov/boards/realestate/"
+vendor: pearsonvue
+vendor_notes: null
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15           # 5 on national portion + 10 on Delaware state portion (unscored)
+  time_minutes: 240
+  pass_score_national: "70 (scaled score, 0-100)"
+  pass_score_state: "70 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 88
+  retake_policy: "'Candidates who fail need retake only the portion of the examination they failed, as long as they do so within one (1) year of completing the required pre-licensing education. If a candidate is unable to pass both parts of the examination in 3 or less attempts, that candidate must retake the pre-licensing course.' Candidates must wait twenty-four (24) hours before making a reexamination reservation; reservations cannot be made at the test center."
+  calculator_policy: "'Calculators are permitted only if they are silent, hand-held, non-printing, and without an alphabetic key pad. Financial calculators are not permitted.' 'NOTE: Calculators are NOT provided by' the test center."
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "70 (scaled score, 0-100)"
+  pass_score_state: "70 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 88
+prelicense_hours_salesperson: 99
+prelicense_hours_broker: 99
+statute_citation_root: "Del. Code Ann. tit. 24, ch. 29 (Real Estate Services, Brokers, Associate Brokers and Salespersons), § 2901 et seq."
+rules_citation_root: "24 Del. Admin. Code § 2900 (Real Estate Commission) and § 2925 (Real Estate Commission Education Committee)"
+statute_url: "https://delcode.delaware.gov/title24/c029/index.html"
+rules_url: "https://regulations.delaware.gov/AdminCode/title24/2900.shtml"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090800.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090800.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/de/realestate.html"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dpr.delaware.gov/boards/realestate/"
+    used_for: [regulator, statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://dpr.delaware.gov/boards/realestate/ressalesperson/"
+    used_for: [prelicense_hours_salesperson, vendor]
+    accessed: 2026-09-08
+  - url: "https://dpr.delaware.gov/boards/realestate/resbroker/"
+    used_for: [prelicense_hours_broker, vendor]
+    accessed: 2026-09-08
+  - url: "https://delcode.delaware.gov/title24/c029/index.html"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://regulations.delaware.gov/AdminCode/title24/2900.shtml"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #090800 dated January 2026. Salesperson: national 80 scored (+5 pretest) and Delaware state 40 scored (+10 pretest); broker: national 80 (+5) and state 50 (+10). 'Candidates will be given four (4) hours to complete the examination' (both portions in one sitting; no per-portion split published). Scaled passing score 70; portions passed separately and only the failed portion is retaken, within one year of completing pre-licensing education, with a maximum of 3 attempts before the course must be repeated. Fee $88. Handbook cites 24 Del. C. § 2907 and Commission Regulations 2.0 and 3.0 for qualification/examination. DPR licensure pages require 'the certificate that you received when you completed the 99-hour Delaware salesperson's pre-licensing course' and, for brokers, a '99-hour Delaware broker's pre-licensing course certificate' (broker applicants also need active licensure experience). Newly licensed salespersons must complete 12 hours of new-salesperson modules within 90 days. Out-of-state licensees take only the Delaware state portion after obtaining a Client Waiver from Pearson VUE. The regulations.delaware.gov pages render content via script, so the regulation text itself was not machine-read; the citation follows the handbook and DPR links."

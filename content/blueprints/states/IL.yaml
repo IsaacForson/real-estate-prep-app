@@ -1,0 +1,215 @@
+# Illinois state-portion blueprint. Illinois's entry-level license is "Broker" (the state record's
+# salesperson_exam holds the Broker exam) and the advanced license is "Managing Broker" (record's
+# broker_exam). Structure and weights from the PSI Illinois Real Estate Candidate Information
+# Bulletin, "State-Specific Portion Content Outline" (percentages plus per-column item counts for
+# Broker and Managing Broker). Labels are our own paraphrases; outline text is not reproduced
+# (SPEC §3.2).
+id: state_IL
+vendor: psi
+title: "Illinois state-portion outline (internal blueprint)"
+source_document: "PSI Illinois Real Estate Candidate Information Bulletin — State-Specific Portion Content Outline (Broker and Managing Broker columns)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4655"
+source_version_or_date: "Current PSI bulletin as of 2026-09-08 (Broker state portion 40 items / 90 minutes; Managing Broker 50 items / 90 minutes)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "I"
+        label: "Licensing requirements"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "I.A"
+            label: "Activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["225 ILCS 454/1-10", "225 ILCS 454/5-5", "225 ILCS 454/5-10", "225 ILCS 454/5-20", "68 Ill. Adm. Code 1450.170"]
+          - id: "I.B"
+            label: "License types: broker, managing broker, leasing agent, instructor"
+            items: null
+            statute_refs: ["225 ILCS 454/1-10", "225 ILCS 454/5-5", "225 ILCS 454/5-15", "225 ILCS 454/5-27", "225 ILCS 454/5-28", "225 ILCS 454/5-30", "225 ILCS 454/30-10"]
+          - id: "I.C"
+            label: "Eligibility, sponsorship, examination"
+            items: null
+            statute_refs: ["225 ILCS 454/5-27", "225 ILCS 454/5-28", "225 ILCS 454/5-35", "225 ILCS 454/5-40", "68 Ill. Adm. Code 1450.110", "68 Ill. Adm. Code 1450.400", "68 Ill. Adm. Code 1450.420", "68 Ill. Adm. Code 1450.430", "68 Ill. Adm. Code 1450.500", "68 Ill. Adm. Code 1450.510"]
+          - id: "I.D"
+            label: "Renewal, post-license and continuing education"
+            items: null
+            statute_refs: ["225 ILCS 454/5-50", "225 ILCS 454/5-55", "225 ILCS 454/5-70", "68 Ill. Adm. Code 1450.140", "68 Ill. Adm. Code 1450.145", "68 Ill. Adm. Code 1450.410", "68 Ill. Adm. Code 1450.450", "68 Ill. Adm. Code 1450.540"]
+          - id: "I.E"
+            label: "Changes of address, name, or business information"
+            items: null
+            statute_refs: ["225 ILCS 454/5-40", "225 ILCS 454/10-20", "68 Ill. Adm. Code 1450.150", "68 Ill. Adm. Code 1450.115", "68 Ill. Adm. Code 1450.730"]
+      - id: "II"
+        label: "The Real Estate License Act: practice rules and discipline"
+        items: 16
+        weight_pct: 40
+        subtopics:
+          - id: "II.A"
+            label: "Agency relationships: stigmatized property, material facts"
+            items: null
+            statute_refs: ["225 ILCS 454/15-5", "225 ILCS 454/15-15", "225 ILCS 454/15-20", "225 ILCS 454/15-25", "68 Ill. Adm. Code 1450.810", "68 Ill. Adm. Code 1450.800"]
+          - id: "II.B"
+            label: "Advertising"
+            items: null
+            statute_refs: ["225 ILCS 454/10-30", "68 Ill. Adm. Code 1450.715", "68 Ill. Adm. Code 1450.720", "68 Ill. Adm. Code 1450.725"]
+          - id: "II.C"
+            label: "Sponsoring broker and sponsored licensee relationship"
+            items: null
+            statute_refs: ["225 ILCS 454/10-5", "225 ILCS 454/10-10", "225 ILCS 454/10-20", "68 Ill. Adm. Code 1450.110", "68 Ill. Adm. Code 1450.115", "68 Ill. Adm. Code 1450.700", "68 Ill. Adm. Code 1450.705", "68 Ill. Adm. Code 1450.735"]
+          - id: "II.D"
+            label: "Brokerage agreements: exclusive, non-exclusive, minimum services"
+            items: null
+            statute_refs: ["225 ILCS 454/15-75", "225 ILCS 454/1-10", "68 Ill. Adm. Code 1450.770", "68 Ill. Adm. Code 1450.775"]
+          - id: "II.E"
+            label: "Compensation requirements and contractual obligations"
+            items: null
+            statute_refs: ["225 ILCS 454/10-10", "225 ILCS 454/10-15", "225 ILCS 454/10-25", "68 Ill. Adm. Code 1450.745", "68 Ill. Adm. Code 1450.760", "68 Ill. Adm. Code 1450.780"]
+          - id: "II.F"
+            label: "Interference with contracts or agreements"
+            items: null
+            statute_refs: ["225 ILCS 454/20-20", "225 ILCS 454/15-75", "68 Ill. Adm. Code 1450.900"]
+          - id: "II.G"
+            label: "Licensed and unlicensed assistants; teams"
+            items: null
+            statute_refs: ["225 ILCS 454/1-10", "225 ILCS 454/10-5", "225 ILCS 454/10-30", "68 Ill. Adm. Code 1450.740", "68 Ill. Adm. Code 1450.715", "68 Ill. Adm. Code 1450.705"]
+          - id: "II.H"
+            label: "Handling monies: special accounts and security deposits"
+            items: null
+            statute_refs: ["225 ILCS 454/20-20", "225 ILCS 454/1-10", "68 Ill. Adm. Code 1450.750", "68 Ill. Adm. Code 1450.755"]
+          - id: "II.I"
+            label: "Handling documents and records"
+            items: null
+            statute_refs: ["225 ILCS 454/20-20", "68 Ill. Adm. Code 1450.755", "68 Ill. Adm. Code 1450.775", "68 Ill. Adm. Code 1450.920"]
+          - id: "II.J"
+            label: "Disciplinary provisions and unprofessional conduct"
+            items: null
+            statute_refs: ["225 ILCS 454/20-10", "225 ILCS 454/20-20", "225 ILCS 454/20-21", "225 ILCS 454/20-25", "225 ILCS 454/20-60", "225 ILCS 454/20-85", "68 Ill. Adm. Code 1450.900", "68 Ill. Adm. Code 1450.905", "68 Ill. Adm. Code 1450.910"]
+          - id: "II.K"
+            label: "CMA and BPO requirements"
+            items: null
+            statute_refs: ["225 ILCS 454/10-45", "225 ILCS 454/1-10", "68 Ill. Adm. Code 1450.790"]
+          - id: "II.L"
+            label: "Purchase contracts, leases, and unauthorized practice of law"
+            items: null
+            statute_refs: ["225 ILCS 454/20-20", "225 ILCS 454/1-10", "68 Ill. Adm. Code 1450.775", "68 Ill. Adm. Code 1450.900"]
+          - id: "II.M"
+            label: "Purpose of the License Act"
+            items: null
+            statute_refs: ["225 ILCS 454/1-5", "225 ILCS 454/1-10", "225 ILCS 454/1-15"]
+      - id: "III"
+        label: "Other Illinois laws affecting real estate practice"
+        items: 10
+        weight_pct: 25
+        subtopics:
+          - id: "III.A"
+            label: "Ownership interests: trusts, homestead, government powers, co-ownership, condos, co-ops"
+            items: null
+            statute_refs: ["765 ILCS 405/1", "765 ILCS 605/2", "765 ILCS 605/22.1", "735 ILCS 5/12-901", "765 ILCS 1005/1", "225 ILCS 454/1-10"]
+          - id: "III.B"
+            label: "Acting beyond the license: law, securities, business brokerage, appraisal"
+            items: null
+            statute_refs: ["225 ILCS 454/1-10", "225 ILCS 454/10-45", "225 ILCS 454/20-20", "815 ILCS 307/10-5", "225 ILCS 458/5-5"]
+          - id: "III.C"
+            label: "Transfer taxes and transfer of title"
+            items: null
+            statute_refs: ["35 ILCS 200/31-10", "35 ILCS 200/31-15", "35 ILCS 200/31-25", "765 ILCS 5/9", "765 ILCS 5/28"]
+          - id: "III.D"
+            label: "Legal descriptions and the Plat Act"
+            items: null
+            statute_refs: ["765 ILCS 205/1", "765 ILCS 205/1.1", "765 ILCS 205/2"]
+          - id: "III.E"
+            label: "Real estate taxes and exemptions"
+            items: null
+            statute_refs: ["35 ILCS 200/15-170", "35 ILCS 200/15-175", "35 ILCS 200/9-145", "35 ILCS 200/21-15"]
+          - id: "III.F"
+            label: "Illinois Human Rights Act; fair housing advertising; assistance animals"
+            items: null
+            statute_refs: ["775 ILCS 5/1-103", "775 ILCS 5/3-102", "775 ILCS 5/3-102.1", "775 ILCS 5/3-103", "775 ILCS 5/3-104", "775 ILCS 5/3-105", "775 ILCS 5/3-106", "775 ILCS 5/3-104.1", "68 Ill. Adm. Code 1450.710", "225 ILCS 454/20-20", "775 ILCS 47/10"]
+          - id: "III.G"
+            label: "Landlord-tenant law; Commercial Broker Lien Act; radon-resistant construction"
+            items: null
+            statute_refs: ["765 ILCS 705/1", "765 ILCS 710/1", "765 ILCS 715/1", "770 ILCS 15/5", "770 ILCS 15/10", "770 ILCS 15/15", "420 ILCS 52/10", "68 Ill. Adm. Code 1450.770"]
+      - id: "IV"
+        label: "Disclosures"
+        items: 10
+        weight_pct: 25
+        subtopics:
+          - id: "IV.A"
+            label: "Agency disclosures: designated agency, no-agency notice, contemporaneous offers"
+            items: null
+            statute_refs: ["225 ILCS 454/15-10", "225 ILCS 454/15-15", "225 ILCS 454/15-35", "225 ILCS 454/15-40", "225 ILCS 454/15-45", "225 ILCS 454/15-50", "225 ILCS 454/15-55", "225 ILCS 454/15-70", "68 Ill. Adm. Code 1450.820", "68 Ill. Adm. Code 1450.830"]
+          - id: "IV.B"
+            label: "Licensee status and personal interest disclosures"
+            items: null
+            statute_refs: ["225 ILCS 454/20-20", "68 Ill. Adm. Code 1450.765", "68 Ill. Adm. Code 1450.760"]
+          - id: "IV.C"
+            label: "Compensation source disclosures"
+            items: null
+            statute_refs: ["225 ILCS 454/10-10", "225 ILCS 454/15-45", "68 Ill. Adm. Code 1450.760", "68 Ill. Adm. Code 1450.780"]
+          - id: "IV.D"
+            label: "Residential Real Property Disclosure Act and material defects"
+            items: null
+            statute_refs: ["765 ILCS 77/5", "765 ILCS 77/10", "765 ILCS 77/15", "765 ILCS 77/20", "765 ILCS 77/25", "765 ILCS 77/30", "765 ILCS 77/35", "765 ILCS 77/40", "765 ILCS 77/45", "765 ILCS 77/55", "225 ILCS 454/15-25"]
+          - id: "IV.E"
+            label: "Environmental and other disclosures: radon, lead, mine subsidence, tanks, flooding"
+            items: null
+            statute_refs: ["420 ILCS 46/10", "420 ILCS 46/15", "420 ILCS 46/25", "765 ILCS 77/35", "765 ILCS 705/25", "765 ILCS 750/5", "215 ILCS 5/805.1", "225 ILCS 454/15-25"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "I"
+        label: "Licensing requirements"
+        items: 3
+        weight_pct: 5
+        subtopics: []
+      - id: "II"
+        label: "The Real Estate License Act: practice rules and discipline"
+        items: 15
+        weight_pct: 30
+        subtopics: []
+      - id: "III"
+        label: "Other Illinois laws affecting real estate practice"
+        items: 7
+        weight_pct: 15
+        subtopics: []
+      - id: "IV"
+        label: "Disclosures"
+        items: 5
+        weight_pct: 10
+        subtopics: []
+      - id: "V"
+        label: "Managing broker topics: supervision, special accounts, audits, entities, finance, contracts"
+        items: 20
+        weight_pct: 40
+        subtopics:
+          - id: "V.A"
+            label: "Sponsoring and designated managing broker supervision and training"
+            items: null
+            broker_only: true
+            statute_refs: ["225 ILCS 454/10-5", "225 ILCS 454/1-10", "68 Ill. Adm. Code 1450.700", "68 Ill. Adm. Code 1450.705", "68 Ill. Adm. Code 1450.915"]
+          - id: "V.B"
+            label: "Special accounts: deposits, disbursements, documentation, disputes"
+            items: null
+            broker_only: true
+            statute_refs: ["225 ILCS 454/20-20", "68 Ill. Adm. Code 1450.750", "68 Ill. Adm. Code 1450.755", "68 Ill. Adm. Code 1450.920"]
+          - id: "V.C"
+            label: "Records, compliance examinations, entity licensure, endorsement, recovery fund"
+            items: null
+            broker_only: true
+            statute_refs: ["225 ILCS 454/5-40", "225 ILCS 454/5-60", "225 ILCS 454/20-85", "68 Ill. Adm. Code 1450.600", "68 Ill. Adm. Code 1450.755", "68 Ill. Adm. Code 1450.920", "68 Ill. Adm. Code 1450.945", "68 Ill. Adm. Code 1450.460", "68 Ill. Adm. Code 1450.570"]
+          - id: "V.D"
+            label: "Rental finding services, property management, virtual and branch offices"
+            items: null
+            broker_only: true
+            statute_refs: ["225 ILCS 454/10-20", "68 Ill. Adm. Code 1450.785", "68 Ill. Adm. Code 1450.770", "68 Ill. Adm. Code 1450.610", "68 Ill. Adm. Code 1450.730"]
+          - id: "V.E"
+            label: "Calculations, financing and lending law, contract issues, antitrust, employment law"
+            items: null
+            broker_only: true
+            statute_refs: ["225 ILCS 454/10-10", "225 ILCS 454/20-20", "68 Ill. Adm. Code 1450.735", "68 Ill. Adm. Code 1450.775", "68 Ill. Adm. Code 1450.790", "740 ILCS 10/3"]
+references: []
+notes: "PSI publishes both percentages and per-column item counts for the Illinois state portion: Broker 10/40/25/25 % = 4/16/10/10 of 40 items; Managing Broker 5/30/15/10/40 % = 3/15/7/5/20 of 50 items. The bulletin marks several sub-bullets 'managing broker only' inside domains III and IV; we keep them in the shared domains and place the Managing Broker-only domain V under exams.broker. The Illinois entry-level license is Broker, mirrored by the state record's salesperson_exam (40 state items). Cached text: 225 ILCS 454 (full act) and 68 Ill. Adm. Code Part 1450 (entire part), both official ilga.gov pages read via Internet Archive captures (March/August 2025) because ilga.gov refuses connections from this environment. Other Illinois acts cited (765 ILCS 77, 775 ILCS 5, 35 ILCS 200, 770 ILCS 15, 420 ILCS 46, etc.) are not yet cached."

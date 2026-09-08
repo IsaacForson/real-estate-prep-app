@@ -1,0 +1,180 @@
+# West Virginia state-portion blueprint. Structure and counts from the Pearson VUE "West Virginia
+# Real Estate State Content Outlines" (salesperson and broker, effective January 1, 2024).
+# Labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_WV
+vendor: pearsonvue
+title: "West Virginia state-portion outline (internal blueprint)"
+source_document: "Pearson VUE West Virginia Real Estate State Content Outlines (#094905) — salesperson and broker state-specific examinations"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094905.pdf"
+source_version_or_date: "State outlines effective January 1, 2024 (document also carries the national outline effective April 1, 2025)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers: audits, complaints, hearings, penalties"
+        items: 9
+        subtopics:
+          - id: "I.A"
+            label: "Audits of licensees and trust accounts"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-7", "W. Va. Code § 30-40-18", "W. Va. Code R. § 174-1-15", "W. Va. Code R. § 174-1-19"]
+          - id: "I.B"
+            label: "Complaints, investigations, and hearings"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-20", "W. Va. Code § 30-40-21", "W. Va. Code R. § 174-1-19", "W. Va. Code R. § 174-1-20", "W. Va. Code R. § 174-4-4", "W. Va. Code R. § 174-4-5", "W. Va. Code R. § 174-4-7", "W. Va. Code R. § 174-4-8", "W. Va. Code R. § 174-4-9", "W. Va. Code R. § 174-4-10"]
+          - id: "I.C"
+            label: "Sanctions: fines, suspension, revocation, costs, criminal penalties"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-19", "W. Va. Code § 30-40-21", "W. Va. Code § 30-40-22", "W. Va. Code § 30-40-23", "W. Va. Code § 30-40-24", "W. Va. Code R. § 174-4-3", "W. Va. Code R. § 174-4-8", "W. Va. Code R. § 174-4-11"]
+      - id: "II"
+        label: "Licensing"
+        items: 17
+        subtopics:
+          - id: "II.A"
+            label: "License maintenance: renewal, transfer, status, continuing education"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-9", "W. Va. Code § 30-40-16", "W. Va. Code R. § 174-1-3", "W. Va. Code R. § 174-1-8", "W. Va. Code R. § 174-1-9", "W. Va. Code R. § 174-2-2", "W. Va. Code R. § 174-2-4", "W. Va. Code R. § 174-2-5"]
+          - id: "II.B"
+            label: "Activities that require a license; qualifications"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-3", "W. Va. Code § 30-40-4", "W. Va. Code § 30-40-11", "W. Va. Code § 30-40-12", "W. Va. Code § 30-40-13", "W. Va. Code § 30-40-14", "W. Va. Code § 30-40-15", "W. Va. Code § 30-40-23", "W. Va. Code R. § 174-1-4", "W. Va. Code R. § 174-1-5", "W. Va. Code R. § 174-1-6", "W. Va. Code R. § 174-1-7"]
+          - id: "II.C"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-5", "W. Va. Code § 30-40-4"]
+      - id: "III"
+        label: "Real estate practice"
+        items: 15
+        subtopics:
+          - id: "III.A"
+            label: "Scope of practice, compensation, and fees"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-5", "W. Va. Code § 30-40-9", "W. Va. Code § 30-40-25", "W. Va. Code § 30-40-26", "W. Va. Code R. § 174-1-10", "W. Va. Code R. § 174-1-18", "W. Va. Code R. § 174-2-2"]
+          - id: "III.B"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["W. Va. Code R. § 174-1-17", "W. Va. Code R. § 174-1-12", "W. Va. Code R. § 174-1-13", "W. Va. Code § 30-40-19"]
+          - id: "III.C"
+            label: "Trust fund accounts"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-18", "W. Va. Code R. § 174-1-15", "W. Va. Code § 30-40-19"]
+      - id: "IV"
+        label: "Agency relationships"
+        items: 4
+        subtopics:
+          - id: "IV.A"
+            label: "Notice of agency relationship form"
+            items: null
+            statute_refs: ["W. Va. Code R. § 174-1-16", "W. Va. Code § 30-40-26"]
+          - id: "IV.B"
+            label: "Types of agency and licensee duties"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-4", "W. Va. Code § 30-40-26", "W. Va. Code R. § 174-1-16", "W. Va. Code R. § 174-1-2"]
+      - id: "V"
+        label: "West Virginia fair housing"
+        items: 5
+        subtopics:
+          - id: "V.1"
+            label: "Fair Housing Act: protected classes, prohibited acts, exemptions"
+            items: null
+            statute_refs: ["W. Va. Code § 5-11A-1 et seq.", "W. Va. Code § 30-40-19", "W. Va. Code R. § 174-4-3"]
+  broker:
+    scored_items: 60
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers: audits, complaints, hearings, penalties"
+        items: 9
+        subtopics:
+          - id: "I.A"
+            label: "Audits of licensees and trust accounts"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-7", "W. Va. Code § 30-40-18", "W. Va. Code R. § 174-1-15", "W. Va. Code R. § 174-1-19"]
+          - id: "I.B"
+            label: "Complaints, investigations, and hearings"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-20", "W. Va. Code § 30-40-21", "W. Va. Code R. § 174-1-19", "W. Va. Code R. § 174-1-20", "W. Va. Code R. § 174-4-4", "W. Va. Code R. § 174-4-5", "W. Va. Code R. § 174-4-7", "W. Va. Code R. § 174-4-8", "W. Va. Code R. § 174-4-9", "W. Va. Code R. § 174-4-10"]
+          - id: "I.C"
+            label: "Sanctions: fines, suspension, revocation, costs, criminal penalties"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-19", "W. Va. Code § 30-40-21", "W. Va. Code § 30-40-22", "W. Va. Code § 30-40-23", "W. Va. Code § 30-40-24", "W. Va. Code R. § 174-4-3", "W. Va. Code R. § 174-4-8", "W. Va. Code R. § 174-4-11"]
+      - id: "II"
+        label: "Licensing"
+        items: 14
+        subtopics:
+          - id: "II.A"
+            label: "License maintenance: renewal, transfer, status, continuing education"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-9", "W. Va. Code § 30-40-16", "W. Va. Code R. § 174-1-3", "W. Va. Code R. § 174-1-8", "W. Va. Code R. § 174-1-9", "W. Va. Code R. § 174-2-2", "W. Va. Code R. § 174-2-4", "W. Va. Code R. § 174-2-5"]
+          - id: "II.B"
+            label: "Activities that require a license; qualifications"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-3", "W. Va. Code § 30-40-4", "W. Va. Code § 30-40-11", "W. Va. Code § 30-40-12", "W. Va. Code § 30-40-13", "W. Va. Code § 30-40-14", "W. Va. Code § 30-40-15", "W. Va. Code § 30-40-23", "W. Va. Code R. § 174-1-4", "W. Va. Code R. § 174-1-5", "W. Va. Code R. § 174-1-6", "W. Va. Code R. § 174-1-7"]
+          - id: "II.C"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-5", "W. Va. Code § 30-40-4"]
+      - id: "III"
+        label: "Real estate practice"
+        items: 11
+        subtopics:
+          - id: "III.A"
+            label: "Scope of practice, compensation, and fees"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-5", "W. Va. Code § 30-40-9", "W. Va. Code § 30-40-25", "W. Va. Code § 30-40-26", "W. Va. Code R. § 174-1-10", "W. Va. Code R. § 174-1-18", "W. Va. Code R. § 174-2-2"]
+          - id: "III.B"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["W. Va. Code R. § 174-1-17", "W. Va. Code R. § 174-1-12", "W. Va. Code R. § 174-1-13", "W. Va. Code § 30-40-19"]
+      - id: "IV"
+        label: "Agency relationships"
+        items: 4
+        subtopics:
+          - id: "IV.A"
+            label: "Notice of agency relationship form"
+            items: null
+            statute_refs: ["W. Va. Code R. § 174-1-16", "W. Va. Code § 30-40-26"]
+          - id: "IV.B"
+            label: "Types of agency and licensee duties"
+            items: null
+            statute_refs: ["W. Va. Code § 30-40-4", "W. Va. Code § 30-40-26", "W. Va. Code R. § 174-1-16", "W. Va. Code R. § 174-1-2"]
+      - id: "V"
+        label: "West Virginia fair housing"
+        items: 4
+        subtopics:
+          - id: "V.1"
+            label: "Fair Housing Act: protected classes, prohibited acts, exemptions"
+            items: null
+            statute_refs: ["W. Va. Code § 5-11A-1 et seq.", "W. Va. Code § 30-40-19", "W. Va. Code R. § 174-4-3"]
+      - id: "VI"
+        label: "Broker management"
+        items: 18
+        subtopics:
+          - id: "VI.A"
+            label: "Trust funds: deposits, records, disbursement, commingling"
+            items: null
+            broker_only: true
+            statute_refs: ["W. Va. Code § 30-40-18", "W. Va. Code R. § 174-1-15", "W. Va. Code R. § 174-1-10"]
+          - id: "VI.B"
+            label: "Place of business, branch offices, signs, license display"
+            items: null
+            broker_only: true
+            statute_refs: ["W. Va. Code § 30-40-17", "W. Va. Code R. § 174-1-12", "W. Va. Code R. § 174-1-13", "W. Va. Code R. § 174-1-14"]
+          - id: "VI.C"
+            label: "Brokerage operation and management; broker duties"
+            items: null
+            broker_only: true
+            statute_refs: ["W. Va. Code § 30-40-12", "W. Va. Code § 30-40-26", "W. Va. Code R. § 174-1-10", "W. Va. Code R. § 174-1-11", "W. Va. Code R. § 174-1-9"]
+          - id: "VI.D"
+            label: "Supervising and managing affiliated licensees and staff"
+            items: null
+            broker_only: true
+            statute_refs: ["W. Va. Code R. § 174-1-10", "W. Va. Code § 30-40-19", "W. Va. Code § 30-40-26"]
+references:
+  - title: "West Virginia Real Estate License Act and Legislative Rules (W. Va. Code ch. 30, art. 40; 174 CSR 1-7), WVREC Law Book, July 2025"
+    publisher: "West Virginia Real Estate Commission"
+notes: "Pearson VUE's outline uses Roman-numeral domains with lettered subtopics and gives item counts only at the domain level; ids here mirror that numbering (Fair Housing has no lettered subtopics, so a single V.1 grounding node is used). Salesperson 9/17/15/4/5 = 50; broker 9/14/11/4/4/18 = 60 (Trust Fund moves from Real Estate Practice to Broker Management on the broker exam). Ground truth was ingested from the Commission's own compiled 'West Virginia Real Estate License Act and Legislative Rules' PDF (July 2025) hosted on rec.wv.gov, split into the statute (W. Va. Code § 30-40-1 to -28) and the legislative rules (174 CSR 1, 2, 3, 4, 6, 7); code.wvlegislature.gov and www.wvlegislature.gov both return a JavaScript challenge (HTTP 403 'Just a moment...') to non-browser clients. The West Virginia Fair Housing Act (W. Va. Code § 5-11A-1 et seq.) is not part of the license act and is not yet cached; the fair-housing subtopic also cites the license-act discipline provisions that incorporate discrimination as a ground for action."

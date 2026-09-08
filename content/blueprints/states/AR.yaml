@@ -1,0 +1,328 @@
+# Arkansas state-portion blueprint. Source: Pearson VUE publication 090402 (Arkansas Real Estate and
+# Property Management Content Outlines): "Arkansas Real Estate Salesperson Examination Content Outline"
+# and "Arkansas Unified Real Estate Broker Examination Content Outline", both effective December 1, 2025.
+# Labels are OUR paraphrases (SPEC §3.2). Domain ids follow the bulletin's Roman numerals.
+id: state_AR
+vendor: pearsonvue
+title: "Arkansas state-portion outline (internal blueprint)"
+source_document: "Pearson VUE publication 090402 — Arkansas Real Estate and Property Management Content Outlines (salesperson law portion; unified broker exam)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090402.pdf"
+source_version_or_date: "Salesperson law-portion outline and Unified Broker outline effective December 1, 2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  Salesperson: 30 scored Arkansas-law items (+10 pretest) in five domains with published counts.
+  Broker: the "Arkansas Unified Real Estate Broker" exam is a single 120-item exam (+10 pretest) mixing
+  general and Arkansas content, published as percentages; `weight_pct` holds the published weight and
+  `items` is our largest-remainder rounding onto 120 (5/12/7/12/22/14/12/6/18/12). Statute refs:
+  Ark. Code Ann. Title 17, ch. 42 (License Law) and the Arkansas Real Estate Commission Rules
+  ("Regulations", Rules 1-16), both cached from AREC's official compilations. Time-share law is
+  Ark. Code Ann. § 18-14-101 et seq. (included in the cached AREC compilation).
+exams:
+  salesperson:
+    scored_items: 30
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Commission duties and powers"
+        items: 4
+        subtopics:
+          - id: "I.A"
+            label: "Commission makeup, meetings, and general powers"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-201", "Ark. Code Ann. § 17-42-202", "Ark. Code Ann. § 17-42-203", "Ark. Code Ann. § 17-42-205", "Arkansas Real Estate Commission Rule 1.1", "Arkansas Real Estate Commission Rule 2.1"]
+          - id: "I.B"
+            label: "Commission authority to examine licensee records"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-203", "Arkansas Real Estate Commission Rule 10.7", "Arkansas Real Estate Commission Rule 9.3"]
+          - id: "I.C"
+            label: "Complaints, investigations, hearings, appeals"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 17-42-312", "Ark. Code Ann. § 17-42-313", "Ark. Code Ann. § 17-42-314", "Arkansas Real Estate Commission Rule 9.1", "Arkansas Real Estate Commission Rule 9.5", "Arkansas Real Estate Commission Rule 9.6"]
+          - id: "I.D"
+            label: "Suspension, revocation, other sanctions, civil penalties"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 17-42-105", "Ark. Code Ann. § 17-42-109", "Arkansas Real Estate Commission Rule 9.9"]
+          - id: "I.E"
+            label: "Real Estate Recovery Fund"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-403", "Ark. Code Ann. § 17-42-404", "Ark. Code Ann. § 17-42-405", "Ark. Code Ann. § 17-42-406", "Ark. Code Ann. § 17-42-407", "Ark. Code Ann. § 17-42-409"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 2
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-103", "Ark. Code Ann. § 17-42-104", "Ark. Code Ann. § 17-42-301", "Ark. Code Ann. § 17-42-105"]
+          - id: "II.B"
+            label: "License types: principal broker, executive broker, associate broker, salesperson"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-103", "Ark. Code Ann. § 17-42-301", "Arkansas Real Estate Commission Rule 7.2"]
+          - id: "II.C"
+            label: "Eligibility: education, exam, background check, application"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-302", "Ark. Code Ann. § 17-42-303", "Ark. Code Ann. § 17-42-306", "Ark. Code Ann. § 17-42-315", "Arkansas Real Estate Commission Rule 4.1", "Arkansas Real Estate Commission Rule 4.2", "Arkansas Real Estate Commission Rule 4.6"]
+          - id: "II.D"
+            label: "Renewal, expiration, and continuing education"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-307", "Arkansas Real Estate Commission Rule 6.1", "Arkansas Real Estate Commission Rule 6.3", "Arkansas Real Estate Commission Rule 11.2", "Arkansas Real Estate Commission Rule 11.5"]
+          - id: "II.E"
+            label: "Inactive status, transfer, termination"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-308", "Arkansas Real Estate Commission Rule 6.2", "Arkansas Real Estate Commission Rule 7.5"]
+          - id: "II.F"
+            label: "Reporting name and address changes"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-310", "Arkansas Real Estate Commission Rule 7.6"]
+          - id: "II.G"
+            label: "Place of business, firm names, signs, branch offices"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-309", "Arkansas Real Estate Commission Rule 7.1", "Arkansas Real Estate Commission Rule 7.3", "Arkansas Real Estate Commission Rule 7.4"]
+      - id: "III"
+        label: "Rules governing licensee activities"
+        items: 14
+        subtopics:
+          - id: "III.A"
+            label: "No dealing independently of the principal broker"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.1", "Ark. Code Ann. § 17-42-311"]
+          - id: "III.B"
+            label: "Agency contracts must have expiration dates"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.2"]
+          - id: "III.C"
+            label: "Principal broker responsibilities; executive and part-time brokers"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.4", "Ark. Code Ann. § 17-42-103"]
+          - id: "III.D"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.5", "Ark. Code Ann. § 17-42-311"]
+          - id: "III.E"
+            label: "Knowing the property being marketed"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.6"]
+          - id: "III.F"
+            label: "Handling funds and maintaining records"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.7", "Ark. Code Ann. § 17-42-311"]
+          - id: "III.G"
+            label: "Trust funds and trust accounts"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.8", "Arkansas Real Estate Commission Rule 12.1", "Ark. Code Ann. § 17-42-311"]
+          - id: "III.H"
+            label: "Disbursing trust funds"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.9"]
+          - id: "III.I"
+            label: "Agreements that must be in writing"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.10"]
+          - id: "III.J"
+            label: "Self-dealing and licensee-owned property"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.11"]
+          - id: "III.K"
+            label: "Offers, acceptances, and the sales contract"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.12"]
+          - id: "III.L"
+            label: "Listing agreements and signs"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.13"]
+          - id: "III.M"
+            label: "Broker price opinions"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-110", "Arkansas Real Estate Commission Rule 10.15"]
+          - id: "III.N"
+            label: "Property management agreements, accounting, ledgers"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.18", "Arkansas Real Estate Commission Rule 10.19", "Arkansas Real Estate Commission Rule 10.20", "Arkansas Real Estate Commission Rule 10.21", "Arkansas Real Estate Commission Rule 10.22", "Arkansas Real Estate Commission Rule 10.23", "Arkansas Real Estate Commission Rule 10.24"]
+      - id: "IV"
+        label: "Other statutory requirements"
+        items: 2
+        subtopics:
+          - id: "IV.A"
+            label: "Trade-organization membership not required"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 17-42-203"]
+          - id: "IV.B"
+            label: "Duty to report violations"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.14"]
+          - id: "IV.C"
+            label: "Reporting criminal convictions and disciplinary actions"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.16", "Ark. Code Ann. § 17-42-315"]
+          - id: "IV.D"
+            label: "Violations of law or rules as grounds for discipline"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-311"]
+          - id: "IV.E"
+            label: "Time-share regulation"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 18-14-101", "Ark. Code Ann. § 18-14-201", "Arkansas Real Estate Commission Rule 13.1", "Arkansas Real Estate Commission Rule 13.4"]
+      - id: "V"
+        label: "Agency relationships and disclosures"
+        items: 8
+        subtopics:
+          - id: "V.A"
+            label: "Representing sellers and lessors"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-317", "Arkansas Real Estate Commission Rule 8.1"]
+          - id: "V.B"
+            label: "Representing buyers and lessees"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-318", "Arkansas Real Estate Commission Rule 8.2"]
+          - id: "V.C"
+            label: "Dual agency and informed consent"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 8.3", "Ark. Code Ann. § 17-42-316"]
+          - id: "V.D"
+            label: "Failure to disclose agency representation"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 8.4", "Ark. Code Ann. § 17-42-108"]
+          - id: "V.E"
+            label: "Fidelity and honest dealing with all parties"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 8.5"]
+          - id: "V.F"
+            label: "Duties that are mandatory vs. waivable"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-316", "Ark. Code Ann. § 17-42-319"]
+  broker:
+    scored_items: 120
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Commission duties and authority"
+        items: 5
+        weight_pct: 4
+        subtopics:
+          - id: "I.A"
+            label: "Powers, record examination, investigations, discipline, recovery fund"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-203", "Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 17-42-312", "Ark. Code Ann. § 17-42-314", "Ark. Code Ann. § 17-42-403", "Ark. Code Ann. § 17-42-406", "Arkansas Real Estate Commission Rule 9.1"]
+      - id: "II"
+        label: "Arkansas licensure requirements"
+        items: 12
+        weight_pct: 10
+        subtopics:
+          - id: "II.A"
+            label: "License requirement, exemptions, eligibility"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-103", "Ark. Code Ann. § 17-42-104", "Ark. Code Ann. § 17-42-301", "Ark. Code Ann. § 17-42-303", "Arkansas Real Estate Commission Rule 4.1"]
+          - id: "II.B"
+            label: "Status changes, renewals, CE, required notifications"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-307", "Ark. Code Ann. § 17-42-308", "Ark. Code Ann. § 17-42-310", "Arkansas Real Estate Commission Rule 6.1", "Arkansas Real Estate Commission Rule 7.5", "Arkansas Real Estate Commission Rule 7.6", "Arkansas Real Estate Commission Rule 10.16", "Arkansas Real Estate Commission Rule 11.2"]
+      - id: "III"
+        label: "Other Arkansas statutory requirements"
+        items: 7
+        weight_pct: 6
+        subtopics:
+          - id: "III.A"
+            label: "Reporting violations, trade organizations, timeshare"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.14", "Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 18-14-101", "Arkansas Real Estate Commission Rule 13.1"]
+          - id: "III.B"
+            label: "Real estate auctions"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 15.1", "Arkansas Real Estate Commission Rule 15.2", "Arkansas Real Estate Commission Rule 15.4", "Arkansas Real Estate Commission Rule 15.5", "Arkansas Real Estate Commission Rule 15.6", "Arkansas Real Estate Commission Rule 15.7"]
+      - id: "IV"
+        label: "Federal laws affecting real estate"
+        items: 12
+        weight_pct: 10
+        subtopics:
+          - id: "IV.A"
+            label: "Loan programs, RESPA/TILA/TRID, antitrust, fair housing, ADA, environmental"
+            items: null
+            statute_refs: ["12 U.S.C. §§ 2601-2617 (RESPA)", "15 U.S.C. §§ 1601-1667f (TILA)", "15 U.S.C. § 1 et seq. (Sherman Act)", "42 U.S.C. §§ 3601-3619 (Fair Housing Act)", "42 U.S.C. §§ 12181-12189 (ADA Title III)", "42 U.S.C. §§ 4851-4856 (Lead paint)", "42 U.S.C. §§ 9601-9628 (CERCLA)"]
+      - id: "V"
+        label: "Broker operations and responsibilities"
+        items: 22
+        weight_pct: 18
+        subtopics:
+          - id: "V.A"
+            label: "Supervision, executive/part-time brokers, independent dealing, self-dealing"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.4", "Arkansas Real Estate Commission Rule 10.1", "Arkansas Real Estate Commission Rule 10.11", "Ark. Code Ann. § 17-42-311"]
+          - id: "V.B"
+            label: "Office management, unlicensed staff, employment relationships"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.4", "Ark. Code Ann. § 17-42-104", "Ark. Code Ann. § 17-42-309"]
+          - id: "V.C"
+            label: "Trust funds, commingling, disbursement"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.7", "Arkansas Real Estate Commission Rule 10.8", "Arkansas Real Estate Commission Rule 10.9", "Arkansas Real Estate Commission Rule 12.1"]
+          - id: "V.D"
+            label: "Transaction and financial records"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.7", "Ark. Code Ann. § 17-42-203"]
+          - id: "V.E"
+            label: "Business form, firm name approval, place of business, signage"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 7.1", "Arkansas Real Estate Commission Rule 7.3", "Arkansas Real Estate Commission Rule 7.4", "Ark. Code Ann. § 17-42-309"]
+          - id: "V.F"
+            label: "Ethics, good faith, due diligence, third-party providers"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 8.5", "Arkansas Real Estate Commission Rule 10.6", "Ark. Code Ann. § 17-42-311"]
+          - id: "V.G"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.5"]
+          - id: "V.H"
+            label: "Compensation"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-311", "Arkansas Real Estate Commission Rule 10.1", "Ark. Code Ann. § 17-42-105"]
+      - id: "VI"
+        label: "Client/customer relationships and agency disclosure"
+        items: 14
+        weight_pct: 12
+        subtopics:
+          - id: "VI.A"
+            label: "Agency forms, required/waivable duties, disclosures, agreements, offers"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-316", "Ark. Code Ann. § 17-42-317", "Ark. Code Ann. § 17-42-318", "Ark. Code Ann. § 17-42-319", "Ark. Code Ann. § 17-42-108", "Arkansas Real Estate Commission Rule 8.1", "Arkansas Real Estate Commission Rule 8.3", "Arkansas Real Estate Commission Rule 8.4", "Arkansas Real Estate Commission Rule 10.2", "Arkansas Real Estate Commission Rule 10.12"]
+      - id: "VII"
+        label: "Real property characteristics, descriptions, condition, inspection"
+        items: 12
+        weight_pct: 10
+        subtopics:
+          - id: "VII.A"
+            label: "Property knowledge, material disclosures, liability, title transfer"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.6", "Ark. Code Ann. § 17-42-311", "Ark. Code Ann. § 18-12-101"]
+      - id: "VIII"
+        label: "Valuation and appraisal process"
+        items: 6
+        weight_pct: 5
+        subtopics:
+          - id: "VIII.A"
+            label: "Appraisal, BPO, CMA, property taxes"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 17-42-110", "Arkansas Real Estate Commission Rule 10.15"]
+      - id: "IX"
+        label: "Contracts, financing, and settlement"
+        items: 18
+        weight_pct: 15
+        subtopics:
+          - id: "IX.A"
+            label: "Contract elements, written agreements, sales contracts, unauthorized practice of law"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.10", "Arkansas Real Estate Commission Rule 10.12", "Arkansas Real Estate Commission Rule 10.13", "Ark. Code Ann. § 4-59-101"]
+          - id: "IX.B"
+            label: "Financing, lender requirements, settlement, foreclosure"
+            items: null
+            statute_refs: ["Ark. Code Ann. § 18-50-101", "Ark. Code Ann. § 18-49-101", "12 U.S.C. §§ 2601-2617 (RESPA)"]
+      - id: "X"
+        label: "Property management"
+        items: 12
+        weight_pct: 10
+        subtopics:
+          - id: "X.A"
+            label: "Leases, management agreements, records, trust accounts, security deposits"
+            items: null
+            statute_refs: ["Arkansas Real Estate Commission Rule 10.18", "Arkansas Real Estate Commission Rule 10.19", "Arkansas Real Estate Commission Rule 10.20", "Arkansas Real Estate Commission Rule 10.21", "Arkansas Real Estate Commission Rule 10.24", "Ark. Code Ann. § 18-16-301", "Ark. Code Ann. § 18-17-101"]
+references: []

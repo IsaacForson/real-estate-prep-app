@@ -1,0 +1,278 @@
+# Virginia state-portion blueprint. Structure and counts from the PSI Virginia Real Estate
+# Candidate Information Bulletin (state portion, "Virginia State Real Estate Laws and Real Estate
+# Board Rules"). Labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_VA
+vendor: psi
+title: "Virginia state-portion outline (internal blueprint)"
+source_document: "PSI Virginia Real Estate Candidate Information Bulletin — state portion content outline (salesperson and broker item counts)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/466"
+source_version_or_date: "Bulletin last revised 2/18/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "1-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "Licensing: qualifications, discipline, records, license upkeep"
+        items: 8
+        subtopics:
+          - id: "1.1"
+            label: "Qualifying for a license; broker supervision duties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105", "Va. Code Ann. § 54.1-2106.1", "Va. Code Ann. § 54.1-2110", "Va. Code Ann. § 54.1-2110.1", "18 VAC 135-20-30", "18 VAC 135-20-35", "18 VAC 135-20-160", "18 VAC 135-20-165", "18 VAC 135-20-330"]
+          - id: "1.2"
+            label: "Discipline and sanctions: improper dealings and brokerage"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105.1", "Va. Code Ann. § 54.1-2105.2", "Va. Code Ann. § 54.1-2111.1", "18 VAC 135-20-155", "18 VAC 135-20-260", "18 VAC 135-20-270", "18 VAC 135-20-280", "18 VAC 135-20-300", "18 VAC 135-20-310", "18 VAC 135-20-340"]
+          - id: "1.3"
+            label: "Record retention, inspections, and Board audits"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2146", "Va. Code Ann. § 54.1-2106.2", "18 VAC 135-20-185", "18 VAC 135-20-225"]
+          - id: "1.4"
+            label: "License types; activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2100", "Va. Code Ann. § 54.1-2101.1", "Va. Code Ann. § 54.1-2103", "Va. Code Ann. § 54.1-2106.1", "18 VAC 135-20-10", "18 VAC 135-20-20", "18 VAC 135-20-45", "18 VAC 135-20-50", "18 VAC 135-20-335"]
+          - id: "1.5"
+            label: "Keeping a license: post-license, CE, transfers, Board notices"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105.01", "Va. Code Ann. § 54.1-2105.03", "Va. Code Ann. § 54.1-2105.04", "18 VAC 135-20-70", "18 VAC 135-20-90", "18 VAC 135-20-95", "18 VAC 135-20-101", "18 VAC 135-20-110", "18 VAC 135-20-140", "18 VAC 135-20-145", "18 VAC 135-20-170", "18 VAC 135-20-240"]
+      - id: "2"
+        label: "Escrow accounts"
+        items: 2
+        subtopics:
+          - id: "2.1"
+            label: "Holding, depositing, and disbursing escrow funds"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2108", "Va. Code Ann. § 54.1-2108.1", "Va. Code Ann. § 54.1-2108.2", "Va. Code Ann. § 54.1-2109", "18 VAC 135-20-181", "18 VAC 135-20-280"]
+      - id: "3"
+        label: "Disclosure requirements"
+        items: 10
+        subtopics:
+          - id: "3.1"
+            label: "Residential property disclosure statement; Chesapeake Bay notice"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-700", "Va. Code Ann. § 55.1-701", "Va. Code Ann. § 55.1-702", "Va. Code Ann. § 55.1-703", "Va. Code Ann. § 55.1-709", "Va. Code Ann. § 55.1-710", "Va. Code Ann. § 55.1-711", "Va. Code Ann. § 55.1-712", "Va. Code Ann. § 55.1-714"]
+          - id: "3.2"
+            label: "Military air installation noise and accident zone notice"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-704", "Va. Code Ann. § 55.1-1217"]
+          - id: "3.3"
+            label: "Onsite sewage (septic) system disclosure"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-703"]
+          - id: "3.4"
+            label: "Sex offender registry information"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-703", "Va. Code Ann. § 55.1-713", "Va. Code Ann. § 54.1-2131"]
+          - id: "3.5"
+            label: "Stigmatized property; no duty to disclose certain events"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-713", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2142"]
+          - id: "3.6"
+            label: "Association resale certificates: delivery, review, cancellation"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-2307", "Va. Code Ann. § 55.1-2308", "Va. Code Ann. § 55.1-2309", "Va. Code Ann. § 55.1-2310", "Va. Code Ann. § 55.1-2311", "Va. Code Ann. § 55.1-2312", "Va. Code Ann. § 55.1-2314", "Va. Code Ann. § 55.1-1807"]
+          - id: "3.7"
+            label: "Advertising rules for licensees and firms"
+            items: null
+            statute_refs: ["18 VAC 135-20-190", "Va. Code Ann. § 54.1-2138.2", "18 VAC 135-20-10"]
+      - id: "4"
+        label: "Agency definitions and brokerage relationships"
+        items: 12
+        subtopics:
+          - id: "4.1"
+            label: "Broker–salesperson relationship and compensation flow"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2110.1", "Va. Code Ann. § 54.1-2140", "18 VAC 135-20-165", "18 VAC 135-20-280", "18 VAC 135-20-330"]
+          - id: "4.2"
+            label: "Limited service agents"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2138.1"]
+          - id: "4.3"
+            label: "Disclosing brokerage relationships to parties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2138", "18 VAC 135-20-220", "Va. Code Ann. § 54.1-2138.2"]
+          - id: "4.4"
+            label: "Agent duties: documents, standard agency, client vs. customer, misrepresentation, brokerage agreements"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2132", "Va. Code Ann. § 54.1-2133", "Va. Code Ann. § 54.1-2134", "Va. Code Ann. § 54.1-2135", "Va. Code Ann. § 54.1-2137", "Va. Code Ann. § 54.1-2142", "Va. Code Ann. § 54.1-2142.1", "Va. Code Ann. § 54.1-2144", "18 VAC 135-20-300", "18 VAC 135-20-310"]
+          - id: "4.5"
+            label: "Designated agency and disclosed dual agency"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2136", "Va. Code Ann. § 54.1-2139", "Va. Code Ann. § 54.1-2139.01", "Va. Code Ann. § 54.1-2139.1"]
+          - id: "4.6"
+            label: "Working with unrepresented parties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2132", "Va. Code Ann. § 54.1-2138", "Va. Code Ann. § 54.1-2141"]
+      - id: "5"
+        label: "Virginia fair housing law and regulations"
+        items: 4
+        subtopics:
+          - id: "5.1"
+            label: "Protected classes, prohibited practices, exemptions, enforcement"
+            items: null
+            statute_refs: ["Va. Code Ann. § 36-96.1", "Va. Code Ann. § 36-96.1:1", "Va. Code Ann. § 36-96.2", "Va. Code Ann. § 36-96.3", "Va. Code Ann. § 36-96.3:1", "Va. Code Ann. § 36-96.4", "Va. Code Ann. § 36-96.5", "Va. Code Ann. § 36-96.6", "18 VAC 135-50-10 et seq.", "18 VAC 135-20-260"]
+      - id: "6"
+        label: "Other Virginia acts affecting practice"
+        items: 4
+        subtopics:
+          - id: "6.1"
+            label: "Condominium Act and regulations; unit-owner restrictions"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1900", "Va. Code Ann. § 55.1-1961", "Va. Code Ann. § 55.1-1984", "Va. Code Ann. § 55.1-2308", "Va. Code Ann. § 55.1-2310"]
+          - id: "6.2"
+            label: "Residential Landlord and Tenant Act basics"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1200", "Va. Code Ann. § 55.1-1201", "Va. Code Ann. § 55.1-1203", "Va. Code Ann. § 55.1-1204", "Va. Code Ann. § 55.1-1215", "Va. Code Ann. § 55.1-1216", "Va. Code Ann. § 55.1-1226", "Va. Code Ann. § 55.1-1229"]
+          - id: "6.3"
+            label: "Common Interest Community Act (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["Va. Code Ann. § 54.1-2345", "Va. Code Ann. § 54.1-2346", "Va. Code Ann. § 54.1-2347", "Va. Code Ann. § 54.1-2349", "Va. Code Ann. § 54.1-2350"]
+          - id: "6.4"
+            label: "Underground Utility Damage Prevention Act notices"
+            items: null
+            statute_refs: ["Va. Code Ann. § 56-265.14", "Va. Code Ann. § 56-265.15", "Va. Code Ann. § 56-265.17", "Va. Code Ann. § 56-265.18"]
+          - id: "6.5"
+            label: "Property Owners' Association Act"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1800", "Va. Code Ann. § 55.1-1801", "Va. Code Ann. § 55.1-1805", "Va. Code Ann. § 55.1-1807", "Va. Code Ann. § 55.1-1819", "Va. Code Ann. § 55.1-1822", "Va. Code Ann. § 55.1-1824", "Va. Code Ann. § 55.1-1833"]
+  broker:
+    scored_items: 50
+    pretest_items: "1-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "Licensing: qualifications, discipline, records, license upkeep"
+        items: 13
+        subtopics:
+          - id: "1.1"
+            label: "Qualifying for a license; broker supervision duties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105", "Va. Code Ann. § 54.1-2106.1", "Va. Code Ann. § 54.1-2110", "Va. Code Ann. § 54.1-2110.1", "18 VAC 135-20-30", "18 VAC 135-20-35", "18 VAC 135-20-160", "18 VAC 135-20-165", "18 VAC 135-20-330"]
+          - id: "1.2"
+            label: "Discipline and sanctions: improper dealings and brokerage"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105.1", "Va. Code Ann. § 54.1-2105.2", "Va. Code Ann. § 54.1-2111.1", "18 VAC 135-20-155", "18 VAC 135-20-260", "18 VAC 135-20-270", "18 VAC 135-20-280", "18 VAC 135-20-300", "18 VAC 135-20-310", "18 VAC 135-20-340"]
+          - id: "1.3"
+            label: "Record retention, inspections, and Board audits"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2146", "Va. Code Ann. § 54.1-2106.2", "18 VAC 135-20-185", "18 VAC 135-20-225"]
+          - id: "1.4"
+            label: "License types; activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2100", "Va. Code Ann. § 54.1-2101.1", "Va. Code Ann. § 54.1-2103", "Va. Code Ann. § 54.1-2106.1", "18 VAC 135-20-10", "18 VAC 135-20-20", "18 VAC 135-20-45", "18 VAC 135-20-50", "18 VAC 135-20-335"]
+          - id: "1.5"
+            label: "Keeping a license: post-license, CE, transfers, Board notices"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2105.01", "Va. Code Ann. § 54.1-2105.03", "Va. Code Ann. § 54.1-2105.04", "18 VAC 135-20-70", "18 VAC 135-20-90", "18 VAC 135-20-95", "18 VAC 135-20-101", "18 VAC 135-20-110", "18 VAC 135-20-140", "18 VAC 135-20-145", "18 VAC 135-20-170", "18 VAC 135-20-240"]
+      - id: "2"
+        label: "Escrow accounts"
+        items: 7
+        subtopics:
+          - id: "2.1"
+            label: "Holding, depositing, and disbursing escrow funds"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2108", "Va. Code Ann. § 54.1-2108.1", "Va. Code Ann. § 54.1-2108.2", "Va. Code Ann. § 54.1-2109", "18 VAC 135-20-181", "18 VAC 135-20-280"]
+      - id: "3"
+        label: "Disclosure requirements"
+        items: 7
+        subtopics:
+          - id: "3.1"
+            label: "Residential property disclosure statement; Chesapeake Bay notice"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-700", "Va. Code Ann. § 55.1-701", "Va. Code Ann. § 55.1-702", "Va. Code Ann. § 55.1-703", "Va. Code Ann. § 55.1-709", "Va. Code Ann. § 55.1-710", "Va. Code Ann. § 55.1-711", "Va. Code Ann. § 55.1-712", "Va. Code Ann. § 55.1-714"]
+          - id: "3.2"
+            label: "Military air installation noise and accident zone notice"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-704", "Va. Code Ann. § 55.1-1217"]
+          - id: "3.3"
+            label: "Onsite sewage (septic) system disclosure"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-703"]
+          - id: "3.4"
+            label: "Sex offender registry information"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-703", "Va. Code Ann. § 55.1-713", "Va. Code Ann. § 54.1-2131"]
+          - id: "3.5"
+            label: "Stigmatized property; no duty to disclose certain events"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-713", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2142"]
+          - id: "3.6"
+            label: "Association resale certificates: delivery, review, cancellation"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-2307", "Va. Code Ann. § 55.1-2308", "Va. Code Ann. § 55.1-2309", "Va. Code Ann. § 55.1-2310", "Va. Code Ann. § 55.1-2311", "Va. Code Ann. § 55.1-2312", "Va. Code Ann. § 55.1-2314", "Va. Code Ann. § 55.1-1807"]
+          - id: "3.7"
+            label: "Advertising rules for licensees and firms"
+            items: null
+            statute_refs: ["18 VAC 135-20-190", "Va. Code Ann. § 54.1-2138.2", "18 VAC 135-20-10"]
+      - id: "4"
+        label: "Agency definitions and brokerage relationships"
+        items: 12
+        subtopics:
+          - id: "4.1"
+            label: "Broker–salesperson relationship and compensation flow"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2110.1", "Va. Code Ann. § 54.1-2140", "18 VAC 135-20-165", "18 VAC 135-20-280", "18 VAC 135-20-330"]
+          - id: "4.2"
+            label: "Limited service agents"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2138.1"]
+          - id: "4.3"
+            label: "Disclosing brokerage relationships to parties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2138", "18 VAC 135-20-220", "Va. Code Ann. § 54.1-2138.2"]
+          - id: "4.4"
+            label: "Agent duties: documents, standard agency, client vs. customer, misrepresentation, brokerage agreements"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2132", "Va. Code Ann. § 54.1-2133", "Va. Code Ann. § 54.1-2134", "Va. Code Ann. § 54.1-2135", "Va. Code Ann. § 54.1-2137", "Va. Code Ann. § 54.1-2142", "Va. Code Ann. § 54.1-2142.1", "Va. Code Ann. § 54.1-2144", "18 VAC 135-20-300", "18 VAC 135-20-310"]
+          - id: "4.5"
+            label: "Designated agency and disclosed dual agency"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2136", "Va. Code Ann. § 54.1-2139", "Va. Code Ann. § 54.1-2139.01", "Va. Code Ann. § 54.1-2139.1"]
+          - id: "4.6"
+            label: "Working with unrepresented parties"
+            items: null
+            statute_refs: ["Va. Code Ann. § 54.1-2130", "Va. Code Ann. § 54.1-2131", "Va. Code Ann. § 54.1-2132", "Va. Code Ann. § 54.1-2138", "Va. Code Ann. § 54.1-2141"]
+      - id: "5"
+        label: "Virginia fair housing law and regulations"
+        items: 6
+        subtopics:
+          - id: "5.1"
+            label: "Protected classes, prohibited practices, exemptions, enforcement"
+            items: null
+            statute_refs: ["Va. Code Ann. § 36-96.1", "Va. Code Ann. § 36-96.1:1", "Va. Code Ann. § 36-96.2", "Va. Code Ann. § 36-96.3", "Va. Code Ann. § 36-96.3:1", "Va. Code Ann. § 36-96.4", "Va. Code Ann. § 36-96.5", "Va. Code Ann. § 36-96.6", "18 VAC 135-50-10 et seq.", "18 VAC 135-20-260"]
+      - id: "6"
+        label: "Other Virginia acts affecting practice"
+        items: 5
+        subtopics:
+          - id: "6.1"
+            label: "Condominium Act and regulations; unit-owner restrictions"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1900", "Va. Code Ann. § 55.1-1961", "Va. Code Ann. § 55.1-1984", "Va. Code Ann. § 55.1-2308", "Va. Code Ann. § 55.1-2310"]
+          - id: "6.2"
+            label: "Residential Landlord and Tenant Act basics"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1200", "Va. Code Ann. § 55.1-1201", "Va. Code Ann. § 55.1-1203", "Va. Code Ann. § 55.1-1204", "Va. Code Ann. § 55.1-1215", "Va. Code Ann. § 55.1-1216", "Va. Code Ann. § 55.1-1226", "Va. Code Ann. § 55.1-1229"]
+          - id: "6.3"
+            label: "Common Interest Community Act"
+            items: null
+            broker_only: true
+            statute_refs: ["Va. Code Ann. § 54.1-2345", "Va. Code Ann. § 54.1-2346", "Va. Code Ann. § 54.1-2347", "Va. Code Ann. § 54.1-2349", "Va. Code Ann. § 54.1-2350"]
+          - id: "6.4"
+            label: "Underground Utility Damage Prevention Act notices"
+            items: null
+            statute_refs: ["Va. Code Ann. § 56-265.14", "Va. Code Ann. § 56-265.15", "Va. Code Ann. § 56-265.17", "Va. Code Ann. § 56-265.18"]
+          - id: "6.5"
+            label: "Property Owners' Association Act"
+            items: null
+            statute_refs: ["Va. Code Ann. § 55.1-1800", "Va. Code Ann. § 55.1-1801", "Va. Code Ann. § 55.1-1805", "Va. Code Ann. § 55.1-1807", "Va. Code Ann. § 55.1-1819", "Va. Code Ann. § 55.1-1822", "Va. Code Ann. § 55.1-1824", "Va. Code Ann. § 55.1-1833"]
+references:
+  - title: "Code of Virginia Title 54.1, Chapter 21 (Real Estate Brokers, Salespersons and Rental Location Agents)"
+    publisher: "Virginia Legislative Information System"
+  - title: "18 VAC 135-20 (Virginia Real Estate Board Licensing Regulations)"
+    publisher: "Virginia Legislative Information System"
+  - title: "Virginia Residential Property Disclosure Act (Va. Code § 55.1-700 et seq.); Resale Disclosure Act (§ 55.1-2307 et seq.)"
+    publisher: "Virginia Legislative Information System"
+notes: "The PSI state outline lists six unnumbered topic headings with per-exam item counts; ids 1-6 follow the bulletin's order and sub-ids follow its internal numbering where present. Escrow Accounts and Virginia Fair Housing have no published subtopics, so each has a single grounding subtopic. The bulletin's 'HOA/POA disclosures' topic is grounded in the Resale Disclosure Act (Va. Code § 55.1-2307 et seq., effective 2023), which replaced the former POA (§ 55.1-1808 et seq.) and Condominium Act resale-certificate provisions; 'Megan's Law' and 'Stigmatized Properties' are grounded in § 55.1-703 and § 55.1-713. The Common Interest Community Act subtopic (6.3) is broker-only per the bulletin. Broker exam: 50 items with the same six domains (13/7/7/12/6/5). Ground-truth text ingested from law.lis.virginia.gov full-chapter pages (Title 54.1 ch. 21 and ch. 23.3; 18 VAC 135-20 and 135-50; Title 36 ch. 5.1; Title 55.1 chs. 7, 12, 18, 19, 23.1; Title 56 ch. 10.3)."

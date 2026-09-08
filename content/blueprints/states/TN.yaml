@@ -1,0 +1,478 @@
+# Tennessee state-portion blueprint. The entry-level license is Affiliate Broker (mapped to
+# `salesperson`); Broker is mapped to `broker`. Structure and counts from the PSI Tennessee Real
+# Estate Candidate Information Bulletin; labels are our own paraphrases.
+id: state_TN
+vendor: psi
+title: "Tennessee state-portion outline (internal blueprint)"
+source_document: "PSI Tennessee Real Estate Commission Candidate Information Bulletin — State Portion Content Outline (Affiliate Broker and Broker)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/511"
+source_version_or_date: "Bulletin updated 7/1/2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "Real Estate Commission duties and powers"
+        items: 4
+        subtopics:
+          - id: "1.a"
+            label: "Why the Commission exists and what it does"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-201", "Tenn. Code Ann. § 62-13-203", "Tenn. Code Ann. § 62-13-101", "Tenn. Comp. R. & Regs. 1260-01-.01"]
+          - id: "1.b"
+            label: "Persons and disputes outside Commission jurisdiction"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-104", "Tenn. Code Ann. § 62-13-203", "Tenn. Code Ann. § 62-13-312"]
+          - id: "1.c"
+            label: "Complaints, notifications, and hearings"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-313", "Tenn. Code Ann. § 62-13-314", "Tenn. Comp. R. & Regs. 1260-04-.01"]
+          - id: "1.d"
+            label: "Disciplinary actions and penalties"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-313", "Tenn. Code Ann. § 62-13-110"]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 4
+        subtopics:
+          - id: "2.a"
+            label: "Licensing examinations"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Comp. R. & Regs. 1260-01-.02"]
+          - id: "2.b"
+            label: "Pre-license and post-license education"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Comp. R. & Regs. 1260-05-.03", "Tenn. Comp. R. & Regs. 1260-05-.02"]
+          - id: "2.c"
+            label: "Other qualifications for licensure"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Code Ann. § 62-13-302", "Tenn. Code Ann. § 62-13-311"]
+          - id: "2.d"
+            label: "Changes of status, name, or address"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-01-.04", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "2.e"
+            label: "Firm licenses and display of licenses"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-309", "Tenn. Code Ann. § 62-13-301", "Tenn. Comp. R. & Regs. 1260-01-.06"]
+          - id: "2.f"
+            label: "License renewal"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-307", "Tenn. Code Ann. § 62-13-308", "Tenn. Comp. R. & Regs. 1260-05-.02"]
+          - id: "2.g"
+            label: "Errors and omissions insurance"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-112", "Tenn. Comp. R. & Regs. 1260-01-.16"]
+      - id: "3"
+        label: "Advertising and marketing"
+        items: 7
+        subtopics:
+          - id: "3.a"
+            label: "Owner-agent advertising requirements"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.b"
+            label: "For-sale signs"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.c"
+            label: "Firm and team advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-309"]
+          - id: "3.d"
+            label: "Internet advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12"]
+          - id: "3.e"
+            label: "Required content of advertised listings"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.f"
+            label: "Gifts and prizes"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.g"
+            label: "Social media advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12"]
+      - id: "4"
+        label: "Broker and affiliate relationships"
+        items: 5
+        subtopics:
+          - id: "4.a"
+            label: "How compensation may be paid"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-302", "Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.01"]
+          - id: "4.b"
+            label: "Permitted affiliations"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-309", "Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "4.c"
+            label: "Broker's supervisory responsibility"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.01", "Tenn. Comp. R. & Regs. 1260-01-.06"]
+          - id: "4.d"
+            label: "Changing affiliation and release"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "4.e"
+            label: "Who owns an affiliate's listings"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.02", "Tenn. Comp. R. & Regs. 1260-02-.03", "Tenn. Code Ann. § 62-13-312"]
+      - id: "5"
+        label: "Documents and record keeping"
+        items: 4
+        subtopics:
+          - id: "5.a"
+            label: "Who is responsible for records"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.01", "Tenn. Code Ann. § 62-13-312"]
+          - id: "5.b"
+            label: "How long records must be kept"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.40", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "5.c"
+            label: "What must be kept"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Comp. R. & Regs. 1260-02-.40"]
+          - id: "5.d"
+            label: "Handling offers and leaving copies"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.08", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-312"]
+          - id: "5.e"
+            label: "Commission access to records"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+      - id: "6"
+        label: "Trust and escrow funds"
+        items: 4
+        subtopics:
+          - id: "6.a"
+            label: "When trust funds may be disbursed"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.b"
+            label: "General trust account requirements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.c"
+            label: "Commingling and misuse of trust funds"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.d"
+            label: "Depository and account requirements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.e"
+            label: "Interest and non-cash earnest money"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Code Ann. § 62-13-321"]
+          - id: "6.f"
+            label: "Deadlines for depositing funds"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Code Ann. § 62-13-321"]
+      - id: "7"
+        label: "Other improper conduct and consumer protection"
+        items: 3
+        subtopics:
+          - id: "7.a"
+            label: "Improper listing agreements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.03"]
+          - id: "7.b"
+            label: "Discrimination"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 4-21-601", "Tenn. Code Ann. § 4-21-604"]
+          - id: "7.c"
+            label: "Other misconduct"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.05"]
+      - id: "8"
+        label: "Agency and disclosure"
+        items: 6
+        subtopics:
+          - id: "8.a"
+            label: "General agency duties and how agency is created"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-401", "Tenn. Code Ann. § 62-13-402", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-404"]
+          - id: "8.b"
+            label: "Disclosing agency relationships"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.36"]
+          - id: "8.c"
+            label: "Material facts and misrepresentation"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 66-5-201", "Tenn. Code Ann. § 66-5-202", "Tenn. Code Ann. § 66-5-206"]
+          - id: "8.d"
+            label: "Disclosing the agent's own interest"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.05"]
+          - id: "8.e"
+            label: "Handling offers"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-404", "Tenn. Comp. R. & Regs. 1260-02-.08"]
+          - id: "8.f"
+            label: "Designated agents"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-102"]
+          - id: "8.g"
+            label: "Facilitators"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-405"]
+          - id: "8.h"
+            label: "Dual agency"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-404"]
+      - id: "9"
+        label: "Special areas of practice"
+        items: 3
+        subtopics:
+          - id: "9.a"
+            label: "Timeshares"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 66-32-101", "Tenn. Code Ann. § 66-32-102", "Tenn. Code Ann. § 66-32-114", "Tenn. Code Ann. § 66-32-133"]
+          - id: "9.b"
+            label: "Property management"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-104", "Tenn. Code Ann. § 66-28-101", "Tenn. Code Ann. § 66-28-301", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "9.c"
+            label: "Commercial and industrial real estate"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 66-5-209"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "Real Estate Commission duties and powers"
+        items: 6
+        subtopics:
+          - id: "1.a"
+            label: "Why the Commission exists and what it does"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-201", "Tenn. Code Ann. § 62-13-203", "Tenn. Code Ann. § 62-13-101", "Tenn. Comp. R. & Regs. 1260-01-.01"]
+          - id: "1.b"
+            label: "Persons and disputes outside Commission jurisdiction"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-104", "Tenn. Code Ann. § 62-13-203", "Tenn. Code Ann. § 62-13-312"]
+          - id: "1.c"
+            label: "Complaints, notifications, and hearings"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-313", "Tenn. Code Ann. § 62-13-314", "Tenn. Comp. R. & Regs. 1260-04-.01"]
+          - id: "1.d"
+            label: "Disciplinary actions and penalties"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-313", "Tenn. Code Ann. § 62-13-110"]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 5
+        subtopics:
+          - id: "2.a"
+            label: "Licensing examinations"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Comp. R. & Regs. 1260-01-.02"]
+          - id: "2.b"
+            label: "Pre-license and post-license education"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Comp. R. & Regs. 1260-05-.03", "Tenn. Comp. R. & Regs. 1260-05-.02"]
+          - id: "2.c"
+            label: "Other qualifications for licensure"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-303", "Tenn. Code Ann. § 62-13-302", "Tenn. Code Ann. § 62-13-311"]
+          - id: "2.d"
+            label: "Changes of status, name, or address"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-01-.04", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "2.e"
+            label: "Firm licenses and display of licenses"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-309", "Tenn. Code Ann. § 62-13-301", "Tenn. Comp. R. & Regs. 1260-01-.06"]
+          - id: "2.f"
+            label: "License renewal"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-307", "Tenn. Code Ann. § 62-13-308", "Tenn. Comp. R. & Regs. 1260-05-.02"]
+          - id: "2.g"
+            label: "Errors and omissions insurance"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-112", "Tenn. Comp. R. & Regs. 1260-01-.16"]
+      - id: "3"
+        label: "Advertising and marketing"
+        items: 7
+        subtopics:
+          - id: "3.a"
+            label: "Owner-agent advertising requirements"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.b"
+            label: "For-sale signs"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.c"
+            label: "Firm and team advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-309"]
+          - id: "3.d"
+            label: "Internet advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12"]
+          - id: "3.e"
+            label: "Required content of advertised listings"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.f"
+            label: "Gifts and prizes"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12", "Tenn. Code Ann. § 62-13-312"]
+          - id: "3.g"
+            label: "Social media advertising"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.12"]
+      - id: "4"
+        label: "Broker and affiliate relationships"
+        items: 6
+        subtopics:
+          - id: "4.a"
+            label: "How compensation may be paid"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-302", "Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.01"]
+          - id: "4.b"
+            label: "Permitted affiliations"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-309", "Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "4.c"
+            label: "Broker's supervisory responsibility"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.01", "Tenn. Comp. R. & Regs. 1260-01-.06"]
+          - id: "4.d"
+            label: "Changing affiliation and release"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-310", "Tenn. Comp. R. & Regs. 1260-02-.02"]
+          - id: "4.e"
+            label: "Who owns an affiliate's listings"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.02", "Tenn. Comp. R. & Regs. 1260-02-.03", "Tenn. Code Ann. § 62-13-312"]
+      - id: "5"
+        label: "Documents and record keeping"
+        items: 6
+        subtopics:
+          - id: "5.a"
+            label: "Who is responsible for records"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.01", "Tenn. Code Ann. § 62-13-312"]
+          - id: "5.b"
+            label: "How long records must be kept"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.40", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "5.c"
+            label: "What must be kept"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Comp. R. & Regs. 1260-02-.40"]
+          - id: "5.d"
+            label: "Handling offers and leaving copies"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.08", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-312"]
+          - id: "5.e"
+            label: "Commission access to records"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+      - id: "6"
+        label: "Trust and escrow funds"
+        items: 7
+        subtopics:
+          - id: "6.a"
+            label: "When trust funds may be disbursed"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.b"
+            label: "General trust account requirements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.c"
+            label: "Commingling and misuse of trust funds"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.d"
+            label: "Depository and account requirements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-321", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "6.e"
+            label: "Interest and non-cash earnest money"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Code Ann. § 62-13-321"]
+          - id: "6.f"
+            label: "Deadlines for depositing funds"
+            items: null
+            statute_refs: ["Tenn. Comp. R. & Regs. 1260-02-.09", "Tenn. Code Ann. § 62-13-321"]
+      - id: "7"
+        label: "Other improper conduct and consumer protection"
+        items: 3
+        subtopics:
+          - id: "7.a"
+            label: "Improper listing agreements"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Comp. R. & Regs. 1260-02-.03"]
+          - id: "7.b"
+            label: "Discrimination"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 4-21-601", "Tenn. Code Ann. § 4-21-604"]
+          - id: "7.c"
+            label: "Other misconduct"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.05"]
+      - id: "8"
+        label: "Agency and disclosure"
+        items: 7
+        subtopics:
+          - id: "8.a"
+            label: "General agency duties and how agency is created"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-401", "Tenn. Code Ann. § 62-13-402", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-404"]
+          - id: "8.b"
+            label: "Disclosing agency relationships"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.36"]
+          - id: "8.c"
+            label: "Material facts and misrepresentation"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 66-5-201", "Tenn. Code Ann. § 66-5-202", "Tenn. Code Ann. § 66-5-206"]
+          - id: "8.d"
+            label: "Disclosing the agent's own interest"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-312", "Tenn. Code Ann. § 62-13-403", "Tenn. Comp. R. & Regs. 1260-02-.05"]
+          - id: "8.e"
+            label: "Handling offers"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-404", "Tenn. Comp. R. & Regs. 1260-02-.08"]
+          - id: "8.f"
+            label: "Designated agents"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-102"]
+          - id: "8.g"
+            label: "Facilitators"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 62-13-405"]
+          - id: "8.h"
+            label: "Dual agency"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-405", "Tenn. Code Ann. § 62-13-404"]
+      - id: "9"
+        label: "Special areas of practice"
+        items: 3
+        subtopics:
+          - id: "9.a"
+            label: "Timeshares"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 66-32-101", "Tenn. Code Ann. § 66-32-102", "Tenn. Code Ann. § 66-32-114", "Tenn. Code Ann. § 66-32-133"]
+          - id: "9.b"
+            label: "Property management"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-104", "Tenn. Code Ann. § 66-28-101", "Tenn. Code Ann. § 66-28-301", "Tenn. Comp. R. & Regs. 1260-02-.09"]
+          - id: "9.c"
+            label: "Commercial and industrial real estate"
+            items: null
+            statute_refs: ["Tenn. Code Ann. § 62-13-102", "Tenn. Code Ann. § 62-13-403", "Tenn. Code Ann. § 66-5-209"]
+references: []
+notes: "Bulletin (updated 7/1/2025) State Portion Content Outline gives per-domain counts for both exams: Affiliate Broker 4/4/7/5/4/4/3/6/3 = 40; Broker 6/5/7/6/6/7/3/7/3 = 50; 5-10 unscored experimental items may be added. The bulletin's domains are unnumbered; ids 1-9 are ours in bulletin order and subtopic letters follow the bulletin's lettering. Subtopic counts are not published. Grounding: NOT YET CACHED. Tennessee's official code is hosted on LexisNexis (not fetchable by script); the Secretary of State rules host publications.tnsosfiles.com returned CloudFront 403 for every path tried; tn.gov TREC pages contain only links. Statute and rule section numbers here (T.C.A. 62-13-1xx general, -2xx Commission, -3xx licensing, -312 grounds for discipline, -321 escrow accounts, -4xx agency; Rules 1260-01 licensing, 1260-02 conduct incl. -.09 escrow, -.12 advertising, -.36 agency disclosure, -.40 records, 1260-04 hearings, 1260-05 education; T.C.A. 66-5-201 et seq. property disclosure, 66-28 landlord-tenant, 66-32 time-shares, 4-21-601 fair housing) are from general knowledge of the Act and should be verified against cached text before drafting."

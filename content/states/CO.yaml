@@ -1,0 +1,62 @@
+code: CO
+name: Colorado
+regulator:
+  name: "Colorado Real Estate Commission, Division of Real Estate, Department of Regulatory Agencies (DORA)"
+  url: "https://dre.colorado.gov/"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the Colorado Real Estate Broker Examination (test-takers.psiexams.com/core). Colorado has no salesperson license; the entry-level license is Associate Broker and all applicants take the single Broker exam. The salesperson_exam block below therefore describes the entry-level Broker exam."
+salesperson_exam:
+  national_items: 80
+  state_items: 74
+  total_items: 154
+  pretest_items: null         # bulletin: unscored 'experimental' questions may be administered; count not stated
+  time_minutes: 230           # National 120 min + State 110 min
+  pass_score_national: "60 correct of 80"
+  pass_score_state: "53 correct of 74"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 49            # first time; retake $48
+  retake_policy: "'Applicants for licensure who must receive passing scores on both the general part and the state part of the examination need not receive them on the same administration date. If one part is failed, the applicant may retake it at a subsequent time. In no event will a passing score on either part of the exam be accepted beyond one year.' A new appointment cannot be made the same day as a failed exam (call next day; retest as soon as the following day). Exam fee is forfeited if the candidate does not test within 1 year of the date the fee is received. License application must be filed within one year of passing the entire exam or both portions must be retaken. Per Commission Rule 2.2.D the exam does not count if taken before pre-license education is complete."
+  calculator_policy: "'Handheld calculators' are listed among prohibited electronic devices at the test center; the bulletin does not describe an on-screen calculator."
+broker_exam:
+  national_items: 80
+  state_items: 74
+  total_items: 154
+  pretest_items: null
+  time_minutes: 230
+  pass_score_national: "60 correct of 80"
+  pass_score_state: "53 correct of 74"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 49
+prelicense_hours_salesperson: 168
+prelicense_hours_broker: 168
+statute_citation_root: "Colo. Rev. Stat. § 12-10-201 et seq. (Title 12, art. 10, pt. 2, Real Estate Brokers and Salespersons)"
+rules_citation_root: "4 Colo. Code Regs. § 725-1 (Rules Regarding Real Estate Brokers)"
+statute_url: "https://leg.colorado.gov/laws/colorado-revised-statutes"
+rules_url: "https://www.coloradosos.gov/CCR/DisplayRule.do?action=ruleinfo&ruleId=2307&deptID=18&agencyID=98&deptName=Department+of+Regulatory+Agencies&agencyName=Division+of+Real+Estate&seriesNum=4+CCR+725-1"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/2598"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/2598"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://proctor2.psionline.com/programs/Instructions/163.pdf"
+    used_for: [salesperson_exam]
+    accessed: 2026-09-08
+  - url: "https://dre.colorado.gov/division-programs/real-estate-broker/licensing/broker-license-application-requirements"
+    used_for: [regulator, vendor, prelicense_hours_salesperson, prelicense_hours_broker, retake_policy]
+    accessed: 2026-09-08
+  - url: "https://dre.colorado.gov/division-notifications/psis-2023-national-real-estate-examination-content-outlines"
+    used_for: [vendor]
+    accessed: 2026-09-08
+  - url: "https://www.coloradosos.gov/CCR/DisplayRule.do?action=ruleinfo&ruleId=2307&deptID=18&agencyID=98&deptName=Department+of+Regulatory+Agencies&agencyName=Division+of+Real+Estate&seriesNum=4+CCR+725-1"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+  - url: "https://leg.colorado.gov/laws/colorado-revised-statutes"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: medium
+last_verified: 2026-09-08
+notes: "Colorado licenses only brokers (Associate Broker is the entry level after 168 hours: Law & Practice 48, Colorado Contracts & Regulations 48, Trust Accounts & Record-Keeping 8, Current Legal Issues 8, Closings 24, Practical Applications 32). Both salesperson_exam and broker_exam blocks contain the same single Broker exam. Passing scores are raw counts (60/80 national, 53/74 state), not percentages. Two PSI-hosted copies of the Candidate Information Bulletin both carry 'Updated 10/1/2023': the current test-takers.psiexams.com copy (id 2598) lists fees $49.00 first-time / $48.00 retake, while the legacy proctor2.psionline.com copy (163.pdf) lists $44.95 / $42.50; the test-takers copy is used here. Confidence is medium because the bulletin is dated 2023 and the two copies disagree on fees. DRE says 'exam results are good for one year from the date of each portion's passing score.' Official C.R.S. text is published by the General Assembly via LexisNexis (leg.colorado.gov/laws/colorado-revised-statutes); DRE also reprints the license law in the Colorado Real Estate Manual, Chapter 1. Reciprocal and CE candidates take only the 74-question state portion."

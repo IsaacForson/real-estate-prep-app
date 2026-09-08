@@ -1,0 +1,63 @@
+code: NY
+name: New York
+regulator:
+  name: "New York State Department of State, Division of Licensing Services"
+  url: "https://dos.ny.gov/real-estate-salesperson1"
+vendor: state
+vendor_notes: "The Department of State administers its own written qualifying examination; applicants schedule, pay, and receive results through the DOS eAccessNY online system at DOS exam sites. There is no third-party vendor bulletin and the exam is not split into national/state portions."
+salesperson_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: 90
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: combined
+  exam_fee_usd: 15.00
+  retake_policy: "'Passed exam results are only valid for a period of two years.' Failing applicants reschedule another exam through eAccessNY and pay the $15 exam fee for each attempt; DOS pages state no mandatory waiting period. 'Exam results are reported as either passed or failed; you will not receive a numerical score.'"
+  calculator_policy: "'Calculators are permitted if they are battery or solar powered, silent, nonprinting and do not contain an alphabetic keyboard.'"
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: 150
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: combined
+  exam_fee_usd: 15.00
+prelicense_hours_salesperson: 77
+prelicense_hours_broker: 152
+statute_citation_root: "N.Y. Real Prop. Law art. 12-A (§§ 440-443)"
+rules_citation_root: "19 N.Y.C.R.R. Part 175 (Parts 175-179)"
+statute_url: "https://www.nysenate.gov/legislation/laws/RPP/A12-A"
+rules_url: "https://dos.ny.gov/system/files/documents/2026/03/real-estate-license-law_03.2026.pdf"
+bulletin_url: "https://dos.ny.gov/real-estate-agent"
+exam_outline_url: null
+sources:
+  - url: "https://dos.ny.gov/real-estate-agent"
+    used_for: [vendor, salesperson_exam, prelicense_hours_salesperson, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dos.ny.gov/become-real-estate-broker"
+    used_for: [broker_exam, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://dos.ny.gov/real-estate-salesperson-frequently-asked-questions"
+    used_for: [prelicense_hours_salesperson, vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://dos.ny.gov/system/files/documents/2026/03/real-estate-license-law_03.2026.pdf"
+    used_for: [statute_citation_root, rules_citation_root, rules_url, prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://www.nysenate.gov/legislation/laws/RPP/A12-A"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.total_items
+  - salesperson_exam.pass_score_combined
+  - broker_exam.total_items
+  - broker_exam.pass_score_combined
+confidence: medium
+last_verified: 2026-09-08
+notes: "DOS publishes only that the salesperson written exam 'is multiple choice and based on the 77-hour pre-licensing curriculum' with 1 1/2 hours allowed, and the broker exam is based on the 152-hour curriculum with 2 1/2 hours allowed; DOS does not publish the number of questions or the passing percentage on its pages (results are pass/fail only), so those fields are null rather than taken from prep-school sources. Since Dec 2024 (post-Sept. 2024 law change) the salesperson course is 77 hours (was 75) and broker qualifying education is 152 hours; DOS FAQ also requires a school-administered proctored final exam in addition to the DOS exam. bulletin_url points to the DOS 'Become a Real Estate Salesperson' page (the closest official equivalent of a candidate bulletin). rules_url is DOS's March 2026 compiled 'Real Estate License Law' PDF containing Article 12-A and 19 NYCRR Parts 175-179."

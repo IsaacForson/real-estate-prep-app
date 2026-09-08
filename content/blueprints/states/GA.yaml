@@ -1,0 +1,112 @@
+# Georgia state-portion blueprint. Structure and counts from the PSI/GREC Georgia Real Estate
+# Candidate Information Bulletin ("Georgia Salesperson Supplement Examination" and "Georgia Broker
+# Supplement Examination" outlines, item counts per section). Labels are our own paraphrases;
+# outline text is not reproduced (SPEC §3.2).
+id: state_GA
+vendor: psi
+title: "Georgia state-portion outline (internal blueprint)"
+source_document: "PSI Georgia Real Estate Candidate Information Bulletin — Georgia Salesperson Supplement Examination and Georgia Broker Supplement Examination content outlines"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4672"
+source_version_or_date: "Bulletin effective 7/1/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 52
+    pretest_items: "1-10 unscored experimental items may be added"
+    domains:
+      - id: "I"
+        label: "Georgia license law and commission rules"
+        items: 16
+        subtopics:
+          - id: "I.A"
+            label: "Unfair trade practices and sanctions"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-25", "O.C.G.A. § 43-40-25.1", "O.C.G.A. § 43-40-25.2", "O.C.G.A. § 43-40-15", "Ga. Comp. R. & Regs. r. 520-1-.10", "Ga. Comp. R. & Regs. r. 520-1-.14"]
+          - id: "I.B"
+            label: "Substantive regulations: advertising, transactions, principals, management"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-18", "O.C.G.A. § 43-40-19", "O.C.G.A. § 43-40-20", "O.C.G.A. § 43-40-25", "Ga. Comp. R. & Regs. r. 520-1-.02", "Ga. Comp. R. & Regs. r. 520-1-.07", "Ga. Comp. R. & Regs. r. 520-1-.08", "Ga. Comp. R. & Regs. r. 520-1-.09", "Ga. Comp. R. & Regs. r. 520-1-.10", "Ga. Comp. R. & Regs. r. 520-1-.11"]
+          - id: "I.C"
+            label: "Qualifications, education, examination, renewal, and fees"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-7", "O.C.G.A. § 43-40-8", "O.C.G.A. § 43-40-9", "O.C.G.A. § 43-40-12", "O.C.G.A. § 43-40-15", "Ga. Comp. R. & Regs. r. 520-1-.04", "Ga. Comp. R. & Regs. r. 520-1-.05"]
+          - id: "I.D"
+            label: "Fair housing law"
+            items: null
+            statute_refs: ["O.C.G.A. § 8-3-200", "O.C.G.A. § 8-3-201", "O.C.G.A. § 8-3-202", "O.C.G.A. § 8-3-203", "O.C.G.A. § 8-3-204", "O.C.G.A. § 8-3-205", "O.C.G.A. § 8-3-206", "O.C.G.A. § 43-40-25", "Ga. Comp. R. & Regs. r. 520-1-.08"]
+          - id: "I.E"
+            label: "Real Estate Education, Research, and Recovery Fund"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-22", "O.C.G.A. § 43-40-22.1", "O.C.G.A. § 43-40-12", "Ga. Comp. R. & Regs. r. 520-1-.04"]
+          - id: "I.F"
+            label: "Investigations and the hearing process"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-27", "O.C.G.A. § 43-40-26", "O.C.G.A. § 43-40-25.1", "O.C.G.A. § 43-40-15", "Ga. Comp. R. & Regs. r. 520-1-.14"]
+          - id: "I.G"
+            label: "Commission organization and procedures"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-2", "O.C.G.A. § 43-40-3", "O.C.G.A. § 43-40-4", "O.C.G.A. § 43-40-5", "O.C.G.A. § 43-40-6", "Ga. Comp. R. & Regs. r. 520-1-.01", "Ga. Comp. R. & Regs. r. 520-1-.03"]
+          - id: "I.H"
+            label: "Who must be licensed; exemptions; penalties for unlicensed practice"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-1", "O.C.G.A. § 43-40-7", "O.C.G.A. § 43-40-29", "O.C.G.A. § 43-40-30", "O.C.G.A. § 43-40-30.1", "Ga. Comp. R. & Regs. r. 520-1-.02"]
+      - id: "II"
+        label: "Real estate practice in Georgia"
+        items: 21
+        subtopics:
+          - id: "II.A"
+            label: "Brokerage practice and handling transactions"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-18", "O.C.G.A. § 43-40-25", "O.C.G.A. § 44-1-16", "Ga. Comp. R. & Regs. r. 520-1-.07", "Ga. Comp. R. & Regs. r. 520-1-.10", "Ga. Comp. R. & Regs. r. 520-1-.11"]
+          - id: "II.B"
+            label: "Sales contracts and required disclosures"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-25", "O.C.G.A. § 10-6A-5", "O.C.G.A. § 10-6A-7", "O.C.G.A. § 44-1-16", "O.C.G.A. § 13-5-30", "Ga. Comp. R. & Regs. r. 520-1-.10"]
+          - id: "II.C"
+            label: "Listings and agency under BRRETA"
+            items: null
+            statute_refs: ["O.C.G.A. § 10-6A-1", "O.C.G.A. § 10-6A-2", "O.C.G.A. § 10-6A-3", "O.C.G.A. § 10-6A-4", "O.C.G.A. § 10-6A-5", "O.C.G.A. § 10-6A-6", "O.C.G.A. § 10-6A-7", "O.C.G.A. § 10-6A-8", "O.C.G.A. § 10-6A-9", "O.C.G.A. § 10-6A-10", "O.C.G.A. § 10-6A-11", "O.C.G.A. § 10-6A-12", "O.C.G.A. § 10-6A-13", "O.C.G.A. § 10-6A-14", "O.C.G.A. § 43-40-25", "Ga. Comp. R. & Regs. r. 520-1-.06"]
+          - id: "II.D"
+            label: "Property management"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-20", "O.C.G.A. § 43-40-25", "O.C.G.A. § 44-7-30", "O.C.G.A. § 44-7-31", "O.C.G.A. § 44-7-33", "O.C.G.A. § 44-7-34", "Ga. Comp. R. & Regs. r. 520-1-.09", "Ga. Comp. R. & Regs. r. 520-1-.10"]
+          - id: "II.E"
+            label: "Community association management"
+            items: null
+            statute_refs: ["O.C.G.A. § 43-40-1", "O.C.G.A. § 43-40-8", "O.C.G.A. § 43-40-20", "O.C.G.A. § 43-40-25", "Ga. Comp. R. & Regs. r. 520-1-.02", "Ga. Comp. R. & Regs. r. 520-1-.09"]
+      - id: "III"
+        label: "Finance and closing"
+        items: 15
+        subtopics:
+          - id: "III.A"
+            label: "Financing practice under Georgia law"
+            items: null
+            statute_refs: ["O.C.G.A. § 44-14-60", "O.C.G.A. § 44-14-162", "O.C.G.A. § 44-14-162.2", "O.C.G.A. § 7-1-1000", "O.C.G.A. § 43-40-25"]
+          - id: "III.B"
+            label: "Closing procedures, transfer tax, and settlement funds"
+            items: null
+            statute_refs: ["O.C.G.A. § 48-6-1", "O.C.G.A. § 48-6-2", "O.C.G.A. § 44-14-13", "O.C.G.A. § 43-40-20", "O.C.G.A. § 43-40-25", "Ga. Comp. R. & Regs. r. 520-1-.09", "Ga. Comp. R. & Regs. r. 520-1-.10"]
+  broker:
+    scored_items: 48
+    pretest_items: "1-10 unscored experimental items may be added"
+    domains:
+      - id: "I"
+        label: "Georgia license law and commission rules (incl. trust accounts, AG opinions)"
+        items: 31
+        subtopics: []
+      - id: "II"
+        label: "Brokerage management"
+        items: 12
+        subtopics:
+          - id: "II.1"
+            label: "Broker's management responsibilities for firms and affiliates"
+            items: null
+            broker_only: true
+            statute_refs: ["O.C.G.A. § 43-40-18", "O.C.G.A. § 43-40-19", "O.C.G.A. § 43-40-20", "Ga. Comp. R. & Regs. r. 520-1-.07", "Ga. Comp. R. & Regs. r. 520-1-.09"]
+      - id: "III"
+        label: "Closing and calculations"
+        items: 5
+        subtopics: []
+references: []
+notes: "The 7/1/2026 bulletin prints item counts per section: salesperson supplement 16+21+15 = 52 (matching the state record's 52 state items taken from the sample score report), broker supplement 31+12+5 = 48; the bulletin publishes no per-subtopic counts and no time limits. Cached text for GA is limited to three GREC-hosted official rule PDFs (520-1-.02 Definitions, 520-1-.04 Obtaining a License, and the 520-1-.05(1)(f) broker-CE amendment). O.C.G.A. Title 43 ch. 40, Title 10 ch. 6A (BRRETA) and Title 8 ch. 3 art. 4 (fair housing) are published officially only through LexisNexis's JavaScript viewer (no static text), and rules.sos.ga.gov returns 403 to scripts while its archived copies are the Fastcase terms-of-use wall, so the remaining rule and statute text is not yet cached. Rule titles beyond 520-1-.07 could not be listed from the source and are cited by number."

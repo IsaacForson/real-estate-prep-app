@@ -1,0 +1,347 @@
+# Utah state-portion blueprint. The entry-level license is Sales Agent (mapped to
+# `salesperson`). Structure and counts from the Pearson VUE Utah Real Estate State Content
+# Outlines (#094502); labels are our own paraphrases. Pearson VUE publishes most Utah domain
+# counts as ranges; `items` is our allocation within each range summing to scored_items.
+id: state_UT
+vendor: pearsonvue
+title: "Utah state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Utah Real Estate State Content Outlines (#094502) — Utah Real Estate State Salesperson / Broker Licensing Examination Content Outlines (Utah Laws, Rules, and Regulations)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094502.pdf"
+source_version_or_date: "#094502 dated 04/2025; state outlines effective July 15, 2016"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Key definitions and the regulators"
+        items: 3
+        subtopics:
+          - id: "I.A"
+            label: "The Real Estate Commission"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-103", "Utah Code Ann. § 61-2f-104"]
+          - id: "I.B"
+            label: "Division and Commission versus trade associations"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-103", "Utah Code Ann. § 61-2f-102"]
+          - id: "I.C"
+            label: "Principal broker, associate broker, and sales agent defined"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Admin. Code R162-2f-102"]
+          - id: "I.D"
+            label: "Other defined terms"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Admin. Code R162-2f-102"]
+      - id: "II"
+        label: "Licensing"
+        items: 8
+        subtopics:
+          - id: "II.A"
+            label: "When a license is required"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-201", "Utah Code Ann. § 61-2f-102"]
+          - id: "II.B"
+            label: "Who is exempt from licensing"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-202", "Utah Code Ann. § 61-2f-201"]
+          - id: "II.C"
+            label: "Minimum qualifications for a license"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-203", "Utah Admin. Code R162-2f-201", "Utah Admin. Code R162-2f-201a"]
+          - id: "II.D"
+            label: "License upkeep: renewal, transfer, termination, activation, CE"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-204", "Utah Admin. Code R162-2f-202", "Utah Admin. Code R162-2f-204", "Utah Admin. Code R162-2f-205", "Utah Admin. Code R162-2f-206"]
+          - id: "II.E"
+            label: "Reporting duties at licensing, renewal, and on events"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-204", "Utah Code Ann. § 61-2f-206", "Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-202"]
+          - id: "II.F"
+            label: "Who may sue for a commission"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-404", "Utah Code Ann. § 61-2f-201"]
+      - id: "III"
+        label: "Real estate office procedures"
+        items: 4
+        subtopics:
+          - id: "III.A"
+            label: "Records and documents"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401b", "Utah Admin. Code R162-2f-401c", "Utah Code Ann. § 61-2f-401"]
+          - id: "III.B"
+            label: "Trust accounts"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-403", "Utah Code Ann. § 61-2f-401"]
+          - id: "III.C"
+            label: "Branch offices"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-301", "Utah Code Ann. § 61-2f-206"]
+      - id: "IV"
+        label: "Property management"
+        items: 3
+        subtopics:
+          - id: "IV.A"
+            label: "Property management under the license law"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Code Ann. § 61-2f-201", "Utah Code Ann. § 61-2f-202", "Utah Admin. Code R162-2f-403", "Utah Admin. Code R162-2f-401c"]
+      - id: "V"
+        label: "Licensee practice"
+        items: 16
+        subtopics:
+          - id: "V.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-401b", "Utah Code Ann. § 61-2f-401"]
+          - id: "V.B"
+            label: "Handling money: earnest money, commissions, referrals"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-403", "Utah Admin. Code R162-2f-401a", "Utah Code Ann. § 61-2f-401", "Utah Code Ann. § 61-2f-404"]
+          - id: "V.C"
+            label: "Property disclosures"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Code Ann. § 61-2f-401", "Utah Code Ann. § 57-1-37"]
+          - id: "V.D"
+            label: "Improper practices"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401b", "Utah Code Ann. § 61-2f-401"]
+          - id: "V.E"
+            label: "Agency: duties, disclosure, and exclusive agreements"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-401c", "Utah Code Ann. § 61-2f-308", "Utah Code Ann. § 61-2f-401"]
+          - id: "V.F"
+            label: "Using state-approved forms, including the REPC"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-306", "Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-401b"]
+          - id: "V.G"
+            label: "Unauthorized practice of law and other professional advice"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-306", "Utah Admin. Code R162-2f-401b", "Utah Code Ann. § 61-2f-401"]
+      - id: "VI"
+        label: "Enforcement"
+        items: 5
+        subtopics:
+          - id: "VI.A"
+            label: "Complaints, notice, and investigation"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-401", "Utah Code Ann. § 61-2f-402", "Utah Code Ann. § 61-2f-403"]
+          - id: "VI.B"
+            label: "Audits"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-402", "Utah Admin. Code R162-2f-403"]
+          - id: "VI.C"
+            label: "Administrative action"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-401", "Utah Code Ann. § 61-2f-402", "Utah Code Ann. § 61-2f-405"]
+      - id: "VII"
+        label: "Education, Research, and Recovery Fund"
+        items: 2
+        subtopics:
+          - id: "VII.A"
+            label: "Purpose of the fund"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-501", "Utah Code Ann. § 61-2f-502", "Utah Code Ann. § 61-2f-503"]
+          - id: "VII.B"
+            label: "Payments from the fund and license revocation"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-504", "Utah Code Ann. § 61-2f-505", "Utah Code Ann. § 61-2f-506", "Utah Code Ann. § 61-2f-507"]
+      - id: "VIII"
+        label: "Other Utah topics"
+        items: 2
+        subtopics:
+          - id: "VIII.A"
+            label: "Water rights history and appropriation"
+            items: null
+            statute_refs: ["Utah Code Ann. § 73-1-1", "Utah Code Ann. § 73-1-3", "Utah Code Ann. § 73-1-11", "Utah Code Ann. § 73-3-1"]
+          - id: "VIII.B"
+            label: "Adverse possession"
+            items: null
+            statute_refs: ["Utah Code Ann. § 78B-2-208", "Utah Code Ann. § 78B-2-209", "Utah Code Ann. § 78B-2-214"]
+          - id: "VIII.C"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Utah Code Ann. § 25-5-1", "Utah Code Ann. § 25-5-3", "Utah Code Ann. § 25-5-4"]
+          - id: "VIII.D"
+            label: "Residence Lien Restriction and Lien Recovery Fund Act"
+            items: null
+            statute_refs: ["Utah Code Ann. § 38-11-102", "Utah Code Ann. § 38-11-107", "Utah Code Ann. § 38-11-108", "Utah Code Ann. § 38-11-204"]
+      - id: "IX"
+        label: "Closing statements"
+        items: 7
+        subtopics:
+          - id: "IX.A"
+            label: "Preparing and explaining settlement statements"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-403", "Utah Code Ann. § 61-2f-401"]
+  broker:
+    scored_items: 90
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Key definitions and the regulators"
+        items: 6
+        subtopics:
+          - id: "I.A"
+            label: "Basic terms and definitions"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Admin. Code R162-2f-102"]
+          - id: "I.B"
+            label: "The Division of Real Estate"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-103", "Utah Code Ann. § 61-2f-104", "Utah Code Ann. § 61-2f-105"]
+          - id: "I.C"
+            label: "One act for compensation triggers licensing"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Code Ann. § 61-2f-201"]
+      - id: "II"
+        label: "Licensing"
+        items: 16
+        subtopics:
+          - id: "II.A"
+            label: "License required to practice"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-201", "Utah Code Ann. § 61-2f-202"]
+          - id: "II.B"
+            label: "Licensing and examination procedures and requirements"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-203", "Utah Admin. Code R162-2f-201", "Utah Admin. Code R162-2f-201a", "Utah Admin. Code R162-2f-201b"]
+          - id: "II.C"
+            label: "License upkeep: renewal, transfer, termination, activation, CE"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-204", "Utah Admin. Code R162-2f-202", "Utah Admin. Code R162-2f-204", "Utah Admin. Code R162-2f-205", "Utah Admin. Code R162-2f-206"]
+          - id: "II.D"
+            label: "Reporting duties at licensing, renewal, and on events"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-204", "Utah Code Ann. § 61-2f-206", "Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-202"]
+          - id: "II.E"
+            label: "License forms and display"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-204", "Utah Admin. Code R162-2f-301", "Utah Admin. Code R162-2f-202"]
+      - id: "III"
+        label: "Licensee practice"
+        items: 34
+        subtopics:
+          - id: "III.A"
+            label: "Standards of practice and improper practice"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-401b", "Utah Admin. Code R162-2f-401c", "Utah Code Ann. § 61-2f-401"]
+          - id: "III.B"
+            label: "Commissions, affiliation, and agent designations"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-404", "Utah Code Ann. § 61-2f-201", "Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-202"]
+          - id: "III.C"
+            label: "Discharging an associated broker or sales agent; notice"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-202", "Utah Code Ann. § 61-2f-204", "Utah Admin. Code R162-2f-401c"]
+          - id: "III.D"
+            label: "Administrative procedures"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-402", "Utah Code Ann. § 61-2f-403", "Utah Code Ann. § 63G-4-201"]
+          - id: "III.E"
+            label: "Using state-approved forms, including the REPC"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-306", "Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-401b"]
+          - id: "III.F"
+            label: "Broker's role: supervision and trust accounts"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401c", "Utah Admin. Code R162-2f-403", "Utah Code Ann. § 61-2f-401"]
+          - id: "III.G"
+            label: "Managing the company"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401c", "Utah Admin. Code R162-2f-301", "Utah Code Ann. § 61-2f-204"]
+          - id: "III.H"
+            label: "Agency types and exclusive brokerage agreements"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Code Ann. § 61-2f-308", "Utah Code Ann. § 61-2f-401"]
+      - id: "IV"
+        label: "Disciplinary action"
+        items: 10
+        subtopics:
+          - id: "IV.A"
+            label: "Grounds for disciplinary action"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-401", "Utah Admin. Code R162-2f-401b"]
+          - id: "IV.B"
+            label: "Enforcement and administrative procedures"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-402", "Utah Code Ann. § 61-2f-403", "Utah Code Ann. § 61-2f-405"]
+          - id: "IV.C"
+            label: "Judicial review of discipline"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-402", "Utah Code Ann. § 63G-4-401", "Utah Code Ann. § 63G-4-403"]
+          - id: "IV.D"
+            label: "Limits on suing to recover compensation"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-404"]
+          - id: "IV.E"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Utah Code Ann. § 25-5-1", "Utah Code Ann. § 25-5-3", "Utah Code Ann. § 25-5-4"]
+      - id: "V"
+        label: "Education, Research, and Recovery Fund"
+        items: 3
+        subtopics:
+          - id: "V.A"
+            label: "Fund purpose, claims, and payments"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-501", "Utah Code Ann. § 61-2f-502", "Utah Code Ann. § 61-2f-503", "Utah Code Ann. § 61-2f-504", "Utah Code Ann. § 61-2f-505", "Utah Code Ann. § 61-2f-506", "Utah Code Ann. § 61-2f-507"]
+      - id: "VI"
+        label: "Other Utah topics"
+        items: 9
+        subtopics:
+          - id: "VI.A"
+            label: "Undivided fractionalized long-term estates"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Code Ann. § 57-29-101", "Utah Code Ann. § 57-29-102", "Utah Code Ann. § 61-2f-401"]
+          - id: "VI.B"
+            label: "Timeshare and Camp Resort Act"
+            items: null
+            statute_refs: ["Utah Code Ann. § 57-19-2", "Utah Code Ann. § 57-19-3", "Utah Code Ann. § 57-19-5", "Utah Code Ann. § 57-19-11", "Utah Code Ann. § 57-19-15"]
+          - id: "VI.C"
+            label: "Water rights"
+            items: null
+            statute_refs: ["Utah Code Ann. § 73-1-1", "Utah Code Ann. § 73-1-3", "Utah Code Ann. § 73-1-11", "Utah Code Ann. § 73-3-1"]
+          - id: "VI.D"
+            label: "Mechanics' and construction liens"
+            items: null
+            statute_refs: ["Utah Code Ann. § 38-1a-102", "Utah Code Ann. § 38-1a-301", "Utah Code Ann. § 38-1a-501", "Utah Code Ann. § 38-1a-502"]
+          - id: "VI.E"
+            label: "Residence Lien Restriction and Lien Recovery Fund Act"
+            items: null
+            statute_refs: ["Utah Code Ann. § 38-11-102", "Utah Code Ann. § 38-11-107", "Utah Code Ann. § 38-11-108", "Utah Code Ann. § 38-11-204"]
+          - id: "VI.F"
+            label: "Property taxes"
+            items: null
+            statute_refs: ["Utah Code Ann. § 59-2-103", "Utah Code Ann. § 59-2-1317", "Utah Code Ann. § 59-2-1331", "Utah Code Ann. § 59-2-1343"]
+          - id: "VI.G"
+            label: "Foreclosure"
+            items: null
+            statute_refs: ["Utah Code Ann. § 57-1-23", "Utah Code Ann. § 57-1-24", "Utah Code Ann. § 57-1-25", "Utah Code Ann. § 57-1-27", "Utah Code Ann. § 78B-6-901"]
+          - id: "VI.H"
+            label: "Sex Offender Registry disclosure rules"
+            items: null
+            statute_refs: ["Utah Code Ann. § 77-41-102", "Utah Code Ann. § 77-41-110", "Utah Code Ann. § 57-1-37"]
+          - id: "VI.I"
+            label: "Stigmatized property laws"
+            items: null
+            statute_refs: ["Utah Code Ann. § 57-1-37", "Utah Admin. Code R162-2f-401a"]
+      - id: "VII"
+        label: "Property management"
+        items: 5
+        subtopics:
+          - id: "VII.A"
+            label: "Property management under the license law"
+            items: null
+            statute_refs: ["Utah Code Ann. § 61-2f-102", "Utah Code Ann. § 61-2f-201", "Utah Code Ann. § 61-2f-202", "Utah Admin. Code R162-2f-403", "Utah Admin. Code R162-2f-401c"]
+      - id: "VIII"
+        label: "Closing statements"
+        items: 7
+        subtopics:
+          - id: "VIII.A"
+            label: "Preparing and explaining settlement statements"
+            items: null
+            statute_refs: ["Utah Admin. Code R162-2f-401a", "Utah Admin. Code R162-2f-403", "Utah Code Ann. § 61-2f-401"]
+references: []
+notes: "Outline #094502 (04/2025; state outlines effective July 15, 2016) publishes domain counts as ranges. Salesperson: I 3, II 8, III 4-5, IV 3, V 15-17, VI 4-5, VII 1-2, VIII 1-3, IX 6-8 (50 scored, 5-10 pretest) — recorded as 3/8/4/3/16/5/2/2/7 = 50. Broker: I 5-7, II 15-17, III 33-35, IV 9-11, V 2-3, VI 8-10, VII 4-6, VIII 6-8 (90 scored, 5-10 pretest) — recorded as 6/16/34/10/3/9/5/7 = 90. Each `items` value is within the published range; the ranges themselves are recorded here and in the domain order. Domains IV, IX (salesperson) and V, VII, VIII (broker) have no published subtopics; the single subtopics under them are our grounding nodes. Grounding: NOT YET CACHED. le.utah.gov (Utah Code 61-2f) refused connections; rules.utah.gov redirects to the JavaScript-only eRules portal (adminrules.utah.gov); realestate.utah.gov returned a Cloudflare 403. Section numbers for Utah Code 61-2f (parts 1 general, 2 licensing, 3 conduct, 4 enforcement, 5 recovery fund) and R162-2f (-101/-102 title and definitions, -2xx licensing, -301 branch offices, -401a affirmative duties, -401b prohibited conduct, -401c broker duties, -403 trust accounts) and the Title 57, 38, 73, 59, 25, 77 and 78B provisions are from general knowledge and should be verified against cached text."

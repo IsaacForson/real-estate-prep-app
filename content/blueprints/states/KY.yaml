@@ -1,0 +1,151 @@
+# Kentucky state-portion blueprint. Structure and counts from the PSI Kentucky Real Estate Sales
+# Associate and Broker Candidate Information Bulletin ("Kentucky State Content Outline", sales
+# associate and broker item counts). Labels are our own paraphrases; outline text is not reproduced
+# (SPEC §3.2).
+id: state_KY
+vendor: psi
+title: "Kentucky state-portion outline (internal blueprint)"
+source_document: "PSI Kentucky Real Estate Sales Associate and Broker Candidate Information Bulletin — Kentucky State Content Outline (sales associate and broker item counts)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/2312"
+source_version_or_date: "Bulletin dated 10/1/2023 (current as of 2026-09-08); State portion 50 items / 90 minutes"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "The Kentucky Real Estate Commission: powers and enforcement"
+        items: 5
+        subtopics:
+          - id: "1.1"
+            label: "General powers: licensing, audits of records, education/recovery fund"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.281", "Ky. Rev. Stat. § 324.282", "Ky. Rev. Stat. § 324.2812", "Ky. Rev. Stat. § 324.284", "Ky. Rev. Stat. § 324.285", "Ky. Rev. Stat. § 324.286", "Ky. Rev. Stat. § 324.111", "Ky. Rev. Stat. § 324.400", "Ky. Rev. Stat. § 324.410"]
+          - id: "1.2"
+            label: "Enforcement: investigations, hearings, appeals, emergency suspension, sanctions"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.150", "Ky. Rev. Stat. § 324.151", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.170", "Ky. Rev. Stat. § 324.200", "Ky. Rev. Stat. § 324.220", "Ky. Rev. Stat. § 324.230", "Ky. Rev. Stat. § 324.990", "201 Ky. Admin. Regs. 11:190"]
+      - id: "2"
+        label: "Getting and keeping a license"
+        items: 10
+        subtopics:
+          - id: "2.1"
+            label: "Activities requiring a license; exceptions"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.010", "Ky. Rev. Stat. § 324.020", "Ky. Rev. Stat. § 324.030", "Ky. Rev. Stat. § 324.980", "Ky. Rev. Stat. § 324.990"]
+          - id: "2.2"
+            label: "Eligibility, application, examination, background check"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.040", "Ky. Rev. Stat. § 324.045", "Ky. Rev. Stat. § 324.046", "Ky. Rev. Stat. § 324.141", "201 Ky. Admin. Regs. 11:210"]
+          - id: "2.3"
+            label: "Renewal, expiration, license changes, inactive status, reporting"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.080", "Ky. Rev. Stat. § 324.090", "Ky. Rev. Stat. § 324.287", "Ky. Rev. Stat. § 324.288", "Ky. Rev. Stat. § 324.310", "Ky. Rev. Stat. § 324.312", "Ky. Rev. Stat. § 324.330", "201 Ky. Admin. Regs. 11:210"]
+          - id: "2.4"
+            label: "Continuing and post-license education"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.085", "Ky. Rev. Stat. § 324.046", "201 Ky. Admin. Regs. 11:210", "201 Ky. Admin. Regs. 11:170"]
+          - id: "2.5"
+            label: "Errors and omissions insurance; extended reporting when deactivating"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.395", "201 Ky. Admin. Regs. 11:220"]
+      - id: "3"
+        label: "Brokerage operations: affiliation, commissions, ads, funds, records, conduct"
+        items: 18
+        subtopics:
+          - id: "3.1"
+            label: "Principal broker and sales associate relationship; teams; supervision"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.010", "Ky. Rev. Stat. § 324.112", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.310", "Ky. Rev. Stat. § 324.312", "201 Ky. Admin. Regs. 11:121", "201 Ky. Admin. Regs. 11:011"]
+          - id: "3.2"
+            label: "Commissions and compensation"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.020", "Ky. Rev. Stat. § 324.235", "Ky. Rev. Stat. § 324.236", "Ky. Rev. Stat. § 324.237", "201 Ky. Admin. Regs. 11:121"]
+          - id: "3.3"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.117", "201 Ky. Admin. Regs. 11:105", "Ky. Rev. Stat. § 324.160"]
+          - id: "3.4"
+            label: "Handling monies, escrow accounts, and documents"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.111", "Ky. Rev. Stat. § 324.160", "201 Ky. Admin. Regs. 11:121"]
+          - id: "3.5"
+            label: "Place of business, branch offices, and records"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.115", "Ky. Rev. Stat. § 324.112", "Ky. Rev. Stat. § 324.111", "Ky. Rev. Stat. § 324.330", "201 Ky. Admin. Regs. 11:121"]
+          - id: "3.6"
+            label: "Improper conduct, prohibited practices, and unlicensed brokerage"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.165", "Ky. Rev. Stat. § 324.020", "Ky. Rev. Stat. § 324.142", "Ky. Rev. Stat. § 324.990", "201 Ky. Admin. Regs. 11:121"]
+          - id: "3.7"
+            label: "Unlicensed assistants, broker lien law, no-call list, brokerage management"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.020", "Ky. Rev. Stat. § 324.030", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 376.075", "Ky. Rev. Stat. § 367.46955", "201 Ky. Admin. Regs. 11:121"]
+      - id: "4"
+        label: "License-law requirements for listing and purchase contracts"
+        items: 6
+        subtopics:
+          - id: "4.1"
+            label: "Statute of frauds; listing contracts; purchase contracts and offers"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 371.010", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.121", "201 Ky. Admin. Regs. 11:121"]
+          - id: "4.2"
+            label: "Required contract provisions and licensee duties in transactions"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.162", "Ky. Rev. Stat. § 324.111", "201 Ky. Admin. Regs. 11:121"]
+      - id: "5"
+        label: "Agency and disclosure issues"
+        items: 8
+        subtopics:
+          - id: "5.1"
+            label: "Agency relationships, designated agency, and agency disclosure"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.121", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.010", "201 Ky. Admin. Regs. 11:121"]
+          - id: "5.2"
+            label: "Disclosure of licensee's personal interest; agent's duty to disclose"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.162", "Ky. Rev. Stat. § 324.160", "201 Ky. Admin. Regs. 11:121"]
+          - id: "5.3"
+            label: "Seller's property condition disclosure; condominium certificates; stigmatized property"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.360", "Ky. Rev. Stat. § 381.9203", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 324.162", "201 Ky. Admin. Regs. 11:121"]
+      - id: "6"
+        label: "Property management"
+        items: 3
+        subtopics:
+          - id: "6.1"
+            label: "Written management agreements, procedures, security deposits"
+            items: null
+            statute_refs: ["Ky. Rev. Stat. § 324.111", "Ky. Rev. Stat. § 324.160", "Ky. Rev. Stat. § 383.580", "201 Ky. Admin. Regs. 11:121"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "The Kentucky Real Estate Commission: powers and enforcement"
+        items: 7
+        subtopics: []
+      - id: "2"
+        label: "Getting and keeping a license"
+        items: 8
+        subtopics: []
+      - id: "3"
+        label: "Brokerage operations: affiliation, commissions, ads, funds, records, conduct"
+        items: 18
+        subtopics: []
+      - id: "4"
+        label: "License-law requirements for listing and purchase contracts"
+        items: 6
+        subtopics: []
+      - id: "5"
+        label: "Agency and disclosure issues"
+        items: 8
+        subtopics: []
+      - id: "6"
+        label: "Property management"
+        items: 3
+        subtopics: []
+references: []
+notes: "The bulletin lists six unnumbered Kentucky topic groups with sales associate/broker counts; we number them 1-6 in outline order. Sales associate counts sum to 50 (5+10+18+6+8+3); broker counts to 50 (7+8+18+6+8+3). Team/group management and brokerage management are broker-only sub-bullets within domain 3. 201 KAR Chapter 11 was consolidated in 2021: only 11:011, 11:105, 11:121, 11:170, 11:190, 11:210 and 11:220 remain in effect (all others repealed), so rule refs use only those seven. Cached text: KRS 324.010-324.990 (49 non-repealed sections) and the seven current 201 KAR 11 regulations, all from official apps.legislature.ky.gov pages read via Internet Archive captures because the live site refuses connections from this environment."

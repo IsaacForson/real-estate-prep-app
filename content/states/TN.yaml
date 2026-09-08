@@ -1,0 +1,56 @@
+code: TN
+name: Tennessee
+regulator:
+  name: "Tennessee Real Estate Commission (TREC), Department of Commerce & Insurance"
+  url: "https://www.tn.gov/commerce/regboards/trec.html"
+vendor: psi
+vendor_notes: "Tennessee's entry-level license is 'Affiliate Broker' (no salesperson license); that exam is mapped to salesperson_exam. PSI Services LLC administers the Affiliate Broker, Broker, Timeshare Salesperson and Acquisition Agent exams (https://test-takers.psiexams.com/tnre). The education provider transmits affiliate broker eligibility to PSI electronically."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 10
+  time_minutes: 240
+  pass_score_national: "56/80 (70%)"
+  pass_score_state: "28/40 (70%)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 63
+  retake_policy: "Bulletin: 'The affiliate broker and broker examinations are divided into two sections: national and state. Candidates who pass one section but fail the other need retake only the section they failed. The passing score for one section of an examination is valid for two (2) retakes of the failed section or one (1) year, whichever comes first.' 'Affiliate broker and broker examinations candidates who fail the first attempt at the examination may retake it as soon as they want (however you cannot schedule until the day after you took the examination). After the second attempt, an examination candidate must wait thirty (30) days between any subsequent failed exams to retake the examination.' Exam fee valid one year; license application must be filed within one year of passing."
+  calculator_policy: "Bulletin lists 'handheld calculators' among prohibited electronic devices; it does not mention an on-screen calculator."
+broker_exam:
+  national_items: 75
+  state_items: 50
+  total_items: 125
+  pretest_items: 10
+  time_minutes: 240
+  pass_score_national: "60 of 80 points (75%)"
+  pass_score_state: "38/50 (75%)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 63
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 120
+statute_citation_root: "Tenn. Code Ann. § 62-13-101 et seq. (Tennessee Real Estate Broker License Act of 1973)"
+rules_citation_root: "Tenn. Comp. R. & Regs. ch. 1260-01 to 1260-07 (Rules of the Tennessee Real Estate Commission)"
+statute_url: "https://www.tn.gov/commerce/regboards/trec/rules-and-laws/laws.html"
+rules_url: "http://publications.tnsosfiles.com/rules/1260/1260.htm"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/511"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/511"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.tn.gov/commerce/regboards/trec/license/psi.html"
+    used_for: [vendor, salesperson_exam.exam_fee_usd, salesperson_exam.time_minutes, salesperson_exam.retake_policy, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.tn.gov/commerce/regboards/trec/rules-and-laws/laws.html"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.tn.gov/commerce/regboards/trec/rules-and-laws/rules.html"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin (PSI, Updated 7/1/2025) Examination Summary Table: Affiliate Broker National 80 items (80 points) 160 minutes; State 40 items (40 points) 80 minutes. Broker National 75 items (80 points; some items scored up to two points) 150 minutes; State 50 items (50 points) 90 minutes. Minimum passing: Affiliate Broker 56 (70%) national / 28 (70%) state; Broker 60 (75%) national / 38 (75%) state. Experimental questions: 'a small number' unscored items may be administered and count against exam time; PSI's standard range is 5-10 (pretest_items records 10). Fees: Affiliate Broker and Broker: Full $63.00, State Only $26.00, National Only $37.00. Pre-license: affiliate broker 'must complete a total of 90 hours of real estate education. Sixty (60) of those hours must cover the topic of real estate principles/fundamentals and must be completed in order to qualify to take the licensing exam with PSI. The remaining 30-hour Course for New Affiliates must be completed before a license will be issued. (T.C.A. § 62-13-303(b)(2); Rule 1260-05-.03)'. Broker: 120 classroom hours (30 of which 'Office/Broker Management') plus 36 months' active licensure, and 120 hours post-licensing within 3 years. Tennessee's official code is hosted on LexisNexis; the statute_url is TREC's Laws page, which links to Title 62, Chapter 13. TREC's Rules page redirects to the Secretary of State rules publication (rules_url)."

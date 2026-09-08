@@ -1,0 +1,59 @@
+code: MS
+name: Mississippi
+regulator:
+  name: "Mississippi Real Estate Commission (MREC)"
+  url: "https://www.mrec.ms.gov/"
+vendor: psi
+vendor_notes: "Candidates apply to MREC first; MREC approval creates a 2-month exam eligibility window."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5-10 experimental questions; not scored and (per this bulletin) do not count against exam time"
+  time_minutes: 240
+  pass_score_national: "70% (56 points of 80)"
+  pass_score_state: "75% (30 points of 40)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75
+  retake_policy: "'To retake the examination, you only need to sit for the portion(s) you failed.' 'You may sit for the state portion of the examination only twice during the 2 months immediately following the approval of your application.' If you fail to schedule, fail to appear, or fail to pass both portions within that 2-month period you must re-apply to the Commission to establish eligibility. 'If you pass the state portion of the exam but fail the national portion, you may continue to take the national portion on an unlimited basis within the two (2) months following the date that your application was approved.' After two failures of the state portion, you may re-apply after a 3-month waiting period (salesperson) or 6 months (broker). 'BOTH state and national portions must be passed in the SAME 2-month eligibility period.' No same-day rebooking. Fee is $75 per registration whether taking one or both portions; retakes are $75; registration fees expire one year after registering."
+  calculator_policy: "'You will have access to an online calculator.' Scratch paper and pencil are provided and returned to the proctor."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: "5-10 experimental questions"
+  time_minutes: 240
+  pass_score_national: "75% (60 points of 80; 75 questions, some scored up to two points)"
+  pass_score_state: "80% (32 points of 40)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 120
+statute_citation_root: "Miss. Code Ann. § 73-35-1 et seq. (Real Estate Brokers License Law of 1954)"
+rules_citation_root: "30 Miss. Admin. Code Pt. 1601 (Mississippi Real Estate Commission Rules and Regulations)"
+statute_url: "https://www.mrec.ms.gov/wp-content/uploads/2026/07/MREC_LICENSE_LAW_2026_REVISED-7-01-2026.pdf"
+rules_url: "https://www.mrec.ms.gov/wp-content/uploads/2025/02/MREC_RULES_AND_REGULATIONS_REV_02-21-2025.pdf"
+bulletin_url: "https://www.mrec.ms.gov/wp-content/uploads/2024/12/MREC_PSI_Candidate_Information_Bulletin_10-01-2023.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.mrec.ms.gov/wp-content/uploads/2024/12/MREC_PSI_Candidate_Information_Bulletin_10-01-2023.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.mrec.ms.gov/applicants-2/"
+    used_for: [vendor, bulletin_url, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.mrec.ms.gov/license-law/"
+    used_for: [statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://www.mrec.ms.gov/wp-content/uploads/2026/07/MREC_LICENSE_LAW_2026_REVISED-7-01-2026.pdf"
+    used_for: [statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.mrec.ms.gov/wp-content/uploads/2025/02/MREC_RULES_AND_REGULATIONS_REV_02-21-2025.pdf"
+    used_for: [rules_citation_root]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI bulletin 'Updated 10/1/2023' (the version linked from MREC's Applicants page; the bulletin at test-takers.psiexams.com/msre is the same document). Time: general 2.5 hours + state 1.5 hours = 4 hours. Passing percentages differ by portion and level: salesperson 70% general / 75% state; broker 75% general / 80% state. Salesperson applicants must be Mississippi residents (18+); broker applicants 21+ with 120 classroom hours AND an active sales license for the 12 months preceding application, or 150 college hours in a degree program without the experience. The official Mississippi Code is published by the Legislature through a third-party (Lexis) portal without stable URLs, so statute_url points to MREC's own compilation of the license law (Rev. 07-01-2026); rules_url is MREC's compilation of Title 30 Part 1601. MREC posted proposed amended regulations (08-04-2026) — check for updates."

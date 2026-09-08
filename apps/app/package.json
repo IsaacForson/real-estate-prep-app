@@ -1,0 +1,36 @@
+{
+  "name": "@rep/app",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "content:manifest": "tsx scripts/build-content-manifest.ts",
+    "cap:sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/core": "^8.5.1",
+    "@capacitor/ios": "^8.5.1",
+    "@mediagrid/capacitor-native-audio": "^3.0.0",
+    "@pinia/nuxt": "^1.0.2",
+    "@rep/schema": "workspace:*",
+    "dexie": "^4.4.5",
+    "nuxt": "^4.5.2",
+    "pinia": "^3.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.1",
+    "@rep/content-lint": "workspace:*",
+    "vue-tsc": "^3.0.0",
+    "yaml": "^2.5.1"
+  }
+}

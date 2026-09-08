@@ -1,0 +1,53 @@
+code: NC
+name: North Carolina
+regulator:
+  name: "North Carolina Real Estate Commission (NCREC)"
+  url: "https://www.ncrec.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the NC real estate license examination for the Commission (since March 1, 2024). Per the Commission's April 2026 bulletin: 'The National section is developed and provided by Pearson... The State section of the license examination is developed by the North Carolina Real Estate Commission and administered for the Commission by Pearson to only North Carolina license applicants.' Applicants must first file a license application ($105) with NCREC to receive a 180-day Notice of Exam Eligibility, then pay Pearson separately. NC issues a single 'broker' license (entry-level = provisional broker); there is no salesperson license, so salesperson_exam below is the NC broker license exam."
+salesperson_exam:
+  national_items: 80
+  state_items: 60
+  total_items: 140
+  pretest_items: 10
+  time_minutes: 270
+  pass_score_national: "75 (computed separately for the National section)"
+  pass_score_state: "75 (computed separately for the State section)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 63.00
+  retake_policy: "'An applicant who fails both the National and State sections of the comprehensive examination must continue to take the 2-part comprehensive examination on any subsequent attempt until such time as the applicant passes at least one of the National or State sections.' 'Once an applicant has passed one of the two (2) examination sections, the applicant may apply to take only the remaining unpassed exam section.' 'Both exam sections must be passed during the same 180-day examination eligibility period... If an applicant only passes one examination section prior to the end of the 180-day examination eligibility period, then the applicant loses the benefit of having passed one section, must reapply to take the comprehensive examination, and pass both sections during the subsequent 180-day' period. The $105 application fee to the Commission plus the Pearson exam fee ($63 both sections / $53 single section) is collected each attempt. Each application/fee payment is valid for only one attempt."
+  calculator_policy: "'Calculators are not required; however, they are recommended. Acceptable calculators include hand-held, battery, or solar-powered financial calculators used in real estate, finance, accounting, and business. The acceptable financial calculator may have storage capabilities but must not contain alpha characters.' 'Calculators are NOT provided by the test' center."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: null
+prelicense_hours_salesperson: 75
+prelicense_hours_broker: null
+statute_citation_root: "N.C. Gen. Stat. ch. 93A (Real Estate License Law)"
+rules_citation_root: "21 N.C. Admin. Code ch. 58 (subch. 58A, Real Estate Brokers)"
+statute_url: "https://www.ncleg.gov/Laws/GeneralStatuteSections/Chapter93A"
+rules_url: "http://reports.oah.state.nc.us/ncac.asp?folderName=\\Title+21+-+Occupational+Licensing+Boards+and+Commissions\\Chapter+58+-+Real+Estate+Commission"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf"
+    used_for: [vendor, vendor_notes, salesperson_exam, prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://www.ncleg.gov/Laws/GeneralStatuteSections/Chapter93A"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "http://reports.oah.state.nc.us/ncac.asp?folderName=\\Title+21+-+Occupational+Licensing+Boards+and+Commissions\\Chapter+58+-+Real+Estate+Commission"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin is NCREC's 'Real Estate Licensing in North Carolina' (April 2026 edition, hosted by Pearson). Sections are separately timed: National 2.5 hours (150 min), State 2.0 hours (120 min); 80 + 60 scored items plus 5 pretest items per section. The passing score of 75 is stated as a score per section (equal-value items). IMPORTANT: the brief's assumption that the national section is NCREC's own is contradicted by the current bulletin, which says Pearson develops the National section (a version used in all Pearson real estate states); NCREC develops only the State section. broker_exam and prelicense_hours_broker are null because NC has a single broker license tier: new licensees are 'provisional brokers' who must complete 90 hours of Postlicensing education (three 30-hour courses) within 18 months to remove provisional status; a Broker-in-Charge designation requires a separate 12-hour course, not an exam. Applicants licensed in other jurisdictions may qualify to take only the State section. The content outline is included in the bulletin (pp. 17-18) rather than published separately."

@@ -1,0 +1,62 @@
+code: MT
+name: Montana
+regulator:
+  name: "Montana Board of Realty Regulation, Department of Labor & Industry, Business Standards Division"
+  url: "https://boards.bsd.dli.mt.gov/realty-regulation/"
+vendor: pearsonvue
+vendor_notes: "National and state portions are scheduled and paid for as separate exams ($95 each); OnVUE online proctoring is available."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 95
+  retake_policy: "'Candidates who fail an examination will need to make a new reservation to retake the exam' (and pay the fee again). 'Candidates who pass one (1) part of the examination and fail the other need to retake only the failed part.' 'The authorization period for salespersons is five (5) years after passing the first education course required to take the exams. For brokers, the authorization period is ten (10) years after passing the first course required to take their exams.' 'Exam results are good for three (3) years from the date of passing the exam.' (Board checklist: must have passed the exam within the past 12 months when applying.) No waiting period is stated."
+  calculator_policy: "Handbook does not expressly address calculators. No personal items or electronic devices are allowed in the testing room; 'the test administrator will provide the candidate with materials to make notes or calculations and any other items specified by the exam sponsor.'"
+broker_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 95
+prelicense_hours_salesperson: 70
+prelicense_hours_broker: null
+statute_citation_root: "Mont. Code Ann. § 37-51-101 et seq. (Title 37, ch. 51, Real Estate Brokers and Salespersons)"
+rules_citation_root: "Mont. Admin. R. 24.210 (Board of Realty Regulation)"
+statute_url: "https://archive.legmt.gov/bills/mca/title_0370/chapter_0510/parts_index.html"
+rules_url: "https://rules.mt.gov/gateway/ChapterHome.asp?Chapter=24.210"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092700.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092701.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092700.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092701.pdf"
+    used_for: [exam_outline_url, salesperson_exam.state_items]
+    accessed: 2026-09-08
+  - url: "https://boards.bsd.dli.mt.gov/_docs/rre/rbs-checklist.pdf"
+    used_for: [prelicense_hours_salesperson, vendor, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://boards.bsd.dli.mt.gov/realty-regulation/license-information/real-estate-salesperson"
+    used_for: [vendor, regulator]
+    accessed: 2026-09-08
+  - url: "https://archive.legmt.gov/bills/mca/title_0370/chapter_0510/parts_index.html"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://rules.mt.gov/gateway/ChapterHome.asp?Chapter=24.210"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: [prelicense_hours_broker]
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #092700 dated January 2026 (rev 01/2026). Each portion is a separate exam: National Salesperson $95 / 150 minutes / 80 scored + 5 pretest; State Salesperson $95 / 90 minutes / 40 scored + 10 pretest (state outline effective Jan 1, 2025 says 5-10 pretest); passing 75 scaled on each. Broker exams have identical structure and fees. exam_fee_usd is per portion — $190 to sit for both. Pre-license: 70 hours within the past 24 months per MCA 37-51-302 and ARM 24.210.611(8) (Board salesperson checklist, updated 11/2025); broker pre-license hours were not confirmed from a primary source (broker checklist not retrieved). leg.mt.gov redirects the MCA to archive.legmt.gov (MCA 2025)."

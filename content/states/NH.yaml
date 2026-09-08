@@ -1,0 +1,53 @@
+code: NH
+name: New Hampshire
+regulator:
+  name: "New Hampshire Real Estate Commission, Office of Professional Licensure and Certification (OPLC)"
+  url: "https://www.oplc.nh.gov/find-board/nh-real-estate-commission"
+vendor: psi
+vendor_notes: "PSI Services LLC conducts the examination program under contract with the Commission; candidates register and pay PSI directly (OPLC no longer accepts exam registrations)."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5 to 10 experimental questions may be administered; unscored and time taken does not count against testing time"
+  time_minutes: 240
+  pass_score_national: "56/80 points"
+  pass_score_state: "28/40 points"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 66.00
+  retake_policy: "'You will pay the examination fee for each attempt and, you must re-apply.' Candidates must pass both the National and State portions to be eligible for a license. Per Rea 301.03(e) all candidates shall take the examination within 3 months from the date of receipt of the exam registration. 'Candidates who fail to attain a passing grade on both portions of the examination within a 6-month period from the date of the original examination or after eight (8) examination attempts shall be required to complete an accredited pre-licensing course in addition to any pre-licensing course previously submitted' (Rea 303.05). Examination fee is valid for one year from the date of payment. National $34 / State $32 / Combo $66 (a candidate who passed one portion re-registers for the failed portion only)."
+  calculator_policy: "'An online calculator will be provided. Or you may bring a silent non-programmable calculator without alpha keys.'"
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: "5 to 10"
+  time_minutes: 240
+  pass_score_national: "56/80 points (75 items scored up to 80 points; some items worth 2 points)"
+  pass_score_state: "28/40 points"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 70.00
+prelicense_hours_salesperson: 40
+prelicense_hours_broker: 60
+statute_citation_root: "N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act)"
+rules_citation_root: "N.H. Code Admin. R. Rea 100-700"
+statute_url: "https://www.gc.nh.gov/rsa/html/NHTOC/NHTOC-XXX-331-A.htm"
+rules_url: "https://www.gc.nh.gov/rules/state_agencies/rea.html"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/6529"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/6529"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.oplc.nh.gov/find-board/nh-real-estate-commission/real-estate-examination-information"
+    used_for: [vendor, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.oplc.nh.gov/find-board/nh-real-estate-commission/real-estate-laws-rules"
+    used_for: [statute_url, rules_url, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin is PSI's 'Updated 7/1/2025' edition; OPLC also hosts an older October 2024 handbook PDF (https://www.oplc.nh.gov/sites/g/files/ehbemt441/files/inline-documents/examination-candidate-handbook.pdf). Time per portion: National 150 min, State 90 min. Salesperson pre-license is 40 hours (min. 32 classroom, max 8 distance) completed within 6 months before the exam; broker 60 hours. Candidates who pass any portion without having met the education requirement must retake the exam in its entirety (Rea 301.03(r)). Content outlines are included within the bulletin rather than published separately. gc.nh.gov blocked automated fetches; URLs were taken from OPLC's Laws & Rules page links."

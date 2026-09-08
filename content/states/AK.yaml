@@ -1,0 +1,59 @@
+code: AK
+name: Alaska
+regulator:
+  name: "Alaska Real Estate Commission, Division of Corporations, Business and Professional Licensing, Dept. of Commerce, Community & Economic Development"
+  url: "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/RealEstateCommission.aspx"
+vendor: pearsonvue
+vendor_notes: null
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "10-15"      # 5 on national portion + 5-10 on state portion (not scored)
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 115
+  retake_policy: "'The examination is divided into two parts: general and state law. Candidates who pass one section of the examination and fail the other must retake the entire examination.' Candidates must wait twenty-four (24) hours after failing before making a reservation to retake. Reservations for reexamination may not be made at the test center. Applicants must apply for licensure within six (6) months of passing the examination; pre-licensing education must have been completed within 18 months preceding application."
+  calculator_policy: "'Calculators are permitted only if they are silent, hand-held, nonprinting, and without an alphabetic key pad. Financial calculators are not permitted.'"
+broker_exam:
+  national_items: 80
+  state_items: 60
+  total_items: 140
+  pretest_items: "10-15"
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 115
+prelicense_hours_salesperson: 40
+prelicense_hours_broker: 30
+statute_citation_root: "Alaska Stat. § 08.88.011 et seq. (AS 08.88, Real Estate Brokers and Other Licensees)"
+rules_citation_root: "12 Alaska Admin. Code § 64.010 et seq. (12 AAC 64, Real Estate Commission)"
+statute_url: "https://www.akleg.gov/basis/statutes.asp#08.88"
+rules_url: "https://www.akleg.gov/basis/aac.asp#12.64"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092200.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092200.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/ak/realestate.html"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.commerce.alaska.gov/web/cbpl/ProfessionalLicensing/RealEstateCommission/StatutesandRegulations.aspx"
+    used_for: [regulator, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.akleg.gov/basis/statutes.asp"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.akleg.gov/basis/aac.asp"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #092200 dated July 2026. Passing score is 75 (scaled) per portion; the handbook states a candidate who passes one section and fails the other must retake the ENTIRE exam (no partial credit carried). Time is stated as four (4) hours for the examination as a whole (both portions in one sitting); per-portion times are not published. Pre-license hours are stated in the handbook as the '40-hour Alaska prelicensing course' (salesperson) and the '30-hour Alaska broker training course' (broker) in the licensing-by-endorsement section; the commerce.alaska.gov exam page returned HTTP 403 to automated fetches so the hours were not re-confirmed there. Content outlines are embedded in the handbook (national effective April 1, 2025; Alaska law portion effective September 14, 2023). Exams offered weekly in Anchorage, less often in Fairbanks/Juneau/Bethel. Salesperson minimum age 19; broker 22 with 36 of the prior 60 months active."

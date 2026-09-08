@@ -1,0 +1,62 @@
+code: OK
+name: Oklahoma
+regulator:
+  name: "Oklahoma Real Estate Commission (OREC)"
+  url: "https://oklahoma.gov/orec.html"
+vendor: pearsonvue
+vendor_notes: "OREC's Application & Exam FAQ page and the Pearson VUE Oklahoma Real Estate Candidate Handbook (#093800, July 2024) both name Pearson VUE as the exam administrator. Older PSI bulletins for Oklahoma still circulate online (PSI was the prior vendor) and should not be used. The entry-level exam is the 'OK Salesperson' exam, which qualifies for the Provisional Sales Associate license."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "70% scaled"
+  pass_score_state: "70% scaled"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75
+  retake_policy: "Handbook: 'Candidates are allowed unlimited attempts to pass their necessary examination(s) within one (1) year of their approved application through the Commission... The salesperson and broker examination are divided into two parts: the national portion and the Oklahoma portion. Candidates will receive a score for each portion of the exam. If the candidate passes one part of the exam, the candidate will only need to retake the portion that was failed. Candidates are not permitted to retake an exam once they have passed that portion for one full year.' OREC FAQ: each portion may be taken via OnVUE remote proctoring up to three times during the one-year authorization; additional attempts must be at a Pearson VUE test center."
+  calculator_policy: "Handbook: 'Personal calculators are NOT permitted, but an online calculator is available as part of the exam.'"
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "75% scaled"
+  pass_score_state: "75% scaled"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 90
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 90
+statute_citation_root: "Okla. Stat. tit. 59, §§ 858-101 to 858-605 (Oklahoma Real Estate License Code)"
+rules_citation_root: "Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules, chs. 1 and 10)"
+statute_url: "https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf"
+rules_url: "https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093800.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093801.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093800.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093801.pdf"
+    used_for: [salesperson_exam.pretest_items, broker_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/ok/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://oklahoma.gov/orec/licensing/application-and-exam-faqs.html"
+    used_for: [vendor, salesperson_exam.exam_fee_usd, broker_exam.exam_fee_usd, salesperson_exam.retake_policy, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://oklahoma.gov/orec/quick-links/how-to-obtain-a-license/application-process-for-provisional-sales-associate.html"
+    used_for: [prelicense_hours_salesperson, vendor]
+    accessed: 2026-09-08
+  - url: "https://oklahoma.gov/content/dam/ok/en/orec/documents/meetings/Nov%201%202025%20Oklahoma%20Real%20Estate%20Commission%20Code%20and%20Rules%20Book.pdf"
+    used_for: [statute_citation_root, rules_citation_root, statute_url, rules_url, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook exam table: OK Salesperson State = 40 scored items + 10 pretest, 90 minutes; OK Salesperson National = 80 scored + 5 pretest, 150 minutes; passing 70% scaled per portion (numeric scores reported only to failing candidates). Broker: State 50 + 10 pretest (90 min), National 80 + 5 pretest (150 min), 75% scaled each. The 093801 outline (state outline effective April 2, 2024) states 5-10 pretest items per state exam; pretest_items here uses the handbook table (5 national + 10 state). Fees: $75 per salesperson portion and $90 per broker portion, but 'Any two exams scheduled at the same time on the same order will be discounted as two-for-one' (both salesperson portions on one order = $75 total). Pre-license: 59 O.S. § 858-302 requires 90 clock hours for provisional sales associate (plus 45 hours post-license); § 858-303 requires 90 clock hours of advanced instruction plus the Broker in Charge course (OREC FAQ describes it as a 15-hour course) and 2 years' active licensure for broker. The Code & Rules Book PDF (as of Nov 1, 2025) reprints Title 59 §§ 858-101 et seq. and OAC Title 605; the statutes are also on OSCN (oscn.net, Title 59) and rules at rules.ok.gov, which could not be fetched from this environment."

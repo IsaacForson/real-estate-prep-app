@@ -1,0 +1,181 @@
+# North Dakota state-portion blueprint. Source: PSI "North Dakota Real Estate Salesperson and Broker
+# Examination Candidate Information Bulletin" (bulletin 4662), State Portion outline (40 scored items for both
+# salesperson and broker). The bulletin publishes topics WITHOUT per-domain item counts; the `items` values
+# below are OUR allocation of the 40 state items (see notes). Labels are OUR paraphrases (SPEC §3.2).
+id: state_ND
+vendor: psi
+title: "North Dakota state-portion outline (internal blueprint)"
+source_document: "PSI North Dakota Real Estate Salesperson and Broker Examination Candidate Information Bulletin — State Portion content outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4662"
+source_version_or_date: "Bulletin dated 10/1/2025"
+accessed: 2026-09-08
+copyright_note: "Structure recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases; item counts are our allocation."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and sanctions"
+        items: 8
+        subtopics:
+          - id: "I.A"
+            label: "Commission makeup and general powers"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-01", "N.D. Cent. Code § 43-23-02", "N.D. Cent. Code § 43-23-03", "N.D. Cent. Code § 43-23-04", "N.D. Cent. Code § 43-23-15"]
+          - id: "I.B"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-11", "N.D. Cent. Code § 43-23-11.1", "N.D. Admin. Code § 70-02-01-16", "N.D. Admin. Code § 70-02-01-17"]
+          - id: "I.C"
+            label: "Sanctions: suspension, revocation, fines, misdemeanor penalties"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-11.1", "N.D. Cent. Code § 43-23-17", "N.D. Cent. Code § 43-23-18"]
+          - id: "I.D"
+            label: "Examination of licensee records"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-11.1", "N.D. Cent. Code § 43-23-14.1", "N.D. Admin. Code § 70-02-01-15"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 8
+        subtopics:
+          - id: "II.A"
+            label: "License types: salesperson, broker, broker associate"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-06.1", "N.D. Cent. Code § 43-23-08", "N.D. Admin. Code § 70-02-01-07", "N.D. Admin. Code § 70-02-01-09", "N.D. Admin. Code § 70-02-01-10"]
+          - id: "II.B"
+            label: "Activities requiring a license; exemptions; reciprocity"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-05", "N.D. Cent. Code § 43-23-05.1", "N.D. Cent. Code § 43-23-07", "N.D. Cent. Code § 43-23-10", "N.D. Admin. Code § 70-02-01-06"]
+          - id: "II.C"
+            label: "License renewal and inactive status"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-08.2", "N.D. Cent. Code § 43-23-13", "N.D. Cent. Code § 43-23-13.1", "N.D. Admin. Code § 70-02-01-04", "N.D. Admin. Code § 70-02-01-05"]
+          - id: "II.D"
+            label: "Changes in license: transfer, release, firm name"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-01-08", "N.D. Admin. Code § 70-02-01-13", "N.D. Cent. Code § 43-23-12"]
+          - id: "II.E"
+            label: "Education: prelicensing and continuing education"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-08", "N.D. Cent. Code § 43-23-08.2", "N.D. Admin. Code § 70-02-02-02", "N.D. Admin. Code § 70-02-02-03", "N.D. Admin. Code § 70-02-04-02", "N.D. Admin. Code § 70-02-04-03"]
+      - id: "III"
+        label: "Statutory rules governing licensee activities"
+        items: 18
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-03-02", "N.D. Admin. Code § 70-02-03-02.1", "N.D. Admin. Code § 70-02-03-10", "N.D. Cent. Code § 43-23-11.1"]
+          - id: "III.B"
+            label: "Broker-salesperson relationship and supervision"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-12", "N.D. Cent. Code § 43-23-12.1", "N.D. Admin. Code § 70-02-01-21", "N.D. Admin. Code § 70-02-01-10"]
+          - id: "III.C"
+            label: "Commissions and compensation"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-01-18", "N.D. Admin. Code § 70-02-03-03", "N.D. Admin. Code § 70-02-03-05", "N.D. Cent. Code § 43-23-11.1"]
+          - id: "III.D"
+            label: "Agency disclosure and conflicts of interest"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-12.1", "N.D. Cent. Code § 43-23-12.2", "N.D. Admin. Code § 70-02-03-13", "N.D. Admin. Code § 70-02-03-15", "N.D. Admin. Code § 70-02-03-15.1", "N.D. Admin. Code § 70-02-03-15.2", "N.D. Admin. Code § 70-02-03-16"]
+          - id: "III.E"
+            label: "Preparing and handling offers and documents"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-03-06", "N.D. Admin. Code § 70-02-03-08", "N.D. Admin. Code § 70-02-03-09", "N.D. Admin. Code § 70-02-03-14", "N.D. Cent. Code § 43-23-11.1"]
+          - id: "III.F"
+            label: "Listings and buyer representation agreements"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-03-04", "N.D. Admin. Code § 70-02-03-05", "N.D. Admin. Code § 70-02-03-05.1", "N.D. Admin. Code § 70-02-03-11"]
+          - id: "III.G"
+            label: "Branch offices and license display"
+            items: null
+            broker_only: true
+            statute_refs: ["N.D. Cent. Code § 43-23-12", "N.D. Admin. Code § 70-02-01-11", "N.D. Admin. Code § 70-02-01-12"]
+          - id: "III.H"
+            label: "Duties to the public; psychologically impacted property"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-03-01", "N.D. Admin. Code § 70-02-01-19", "N.D. Admin. Code § 70-02-01-20", "N.D. Cent. Code § 43-23-11.1", "N.D. Cent. Code § 43-23-24"]
+          - id: "III.I"
+            label: "Cooperative transactions and appointed agents"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-12.3", "N.D. Admin. Code § 70-02-03-17", "N.D. Admin. Code § 70-02-03-03"]
+          - id: "III.J"
+            label: "Code of ethics"
+            items: null
+            statute_refs: ["N.D. Admin. Code § 70-02-03-01", "N.D. Cent. Code § 43-23-11.1"]
+          - id: "III.K"
+            label: "Trust accounts"
+            items: null
+            broker_only: true
+            statute_refs: ["N.D. Cent. Code § 43-23-14", "N.D. Cent. Code § 43-23-14.1", "N.D. Admin. Code § 70-02-01-15"]
+          - id: "III.L"
+            label: "Record keeping"
+            items: null
+            broker_only: true
+            statute_refs: ["N.D. Admin. Code § 70-02-01-15", "N.D. Cent. Code § 43-23-11.1"]
+      - id: "IV"
+        label: "Land sales registration, closings, recovery fund"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Subdivided and out-of-state land sales registration and disclosure"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23.1-01 et seq.", "N.D. Cent. Code § 43-23-11.1"]
+          - id: "IV.B"
+            label: "Closing statements"
+            items: null
+            broker_only: true
+            statute_refs: ["N.D. Admin. Code § 70-02-03-07", "N.D. Admin. Code § 70-02-01-14"]
+          - id: "IV.C"
+            label: "Real Estate Education, Research, and Recovery Fund"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23.2-01 et seq.", "N.D. Cent. Code § 43-23-15"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and sanctions"
+        items: 7
+        subtopics:
+          - id: "I.A"
+            label: "Powers, investigations, hearings, sanctions, record examination"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-01", "N.D. Cent. Code § 43-23-02", "N.D. Cent. Code § 43-23-11", "N.D. Cent. Code § 43-23-11.1", "N.D. Cent. Code § 43-23-17", "N.D. Cent. Code § 43-23-18", "N.D. Admin. Code § 70-02-01-16"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 7
+        subtopics:
+          - id: "II.A"
+            label: "License types, licensable activity, renewal, changes, education"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-05", "N.D. Cent. Code § 43-23-06.1", "N.D. Cent. Code § 43-23-07", "N.D. Cent. Code § 43-23-08", "N.D. Cent. Code § 43-23-08.2", "N.D. Cent. Code § 43-23-10", "N.D. Cent. Code § 43-23-13.1", "N.D. Admin. Code § 70-02-01-04", "N.D. Admin. Code § 70-02-01-08", "N.D. Admin. Code § 70-02-02-03", "N.D. Admin. Code § 70-02-04-02"]
+      - id: "III"
+        label: "Statutory rules governing licensee activities"
+        items: 20
+        subtopics:
+          - id: "III.A"
+            label: "Advertising, supervision, commissions, agency disclosure, documents, listings"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-12", "N.D. Cent. Code § 43-23-12.1", "N.D. Cent. Code § 43-23-12.2", "N.D. Admin. Code § 70-02-01-18", "N.D. Admin. Code § 70-02-01-21", "N.D. Admin. Code § 70-02-03-02", "N.D. Admin. Code § 70-02-03-04", "N.D. Admin. Code § 70-02-03-05", "N.D. Admin. Code § 70-02-03-06", "N.D. Admin. Code § 70-02-03-15", "N.D. Admin. Code § 70-02-03-15.1"]
+          - id: "III.B"
+            label: "Branch offices, license display, trust accounts, records, cooperation, ethics"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23-12", "N.D. Cent. Code § 43-23-12.3", "N.D. Cent. Code § 43-23-14", "N.D. Cent. Code § 43-23-14.1", "N.D. Admin. Code § 70-02-01-11", "N.D. Admin. Code § 70-02-01-12", "N.D. Admin. Code § 70-02-01-15", "N.D. Admin. Code § 70-02-03-01", "N.D. Admin. Code § 70-02-03-17"]
+      - id: "IV"
+        label: "Land sales registration, closings, recovery fund"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Subdivided land registration, closing statements, recovery fund"
+            items: null
+            statute_refs: ["N.D. Cent. Code § 43-23.1-01 et seq.", "N.D. Admin. Code § 70-02-03-07", "N.D. Admin. Code § 70-02-01-14", "N.D. Cent. Code § 43-23.2-01 et seq.", "N.D. Cent. Code § 43-23-15"]
+references: []
+notes: >-
+  The PSI bulletin lists four state domains (I-IV) with lettered subtopics but publishes NO item counts (only the
+  40-item state total, same for salesperson and broker). Domain `items` (8/8/18/6 salesperson; 7/7/20/6 broker) are
+  OUR allocation weighted by subtopic count and the extra broker-only subtopics; revise if NDREC/PSI publish
+  counts. Subtopics marked BROKER ONLY in the bulletin carry broker_only: true. Ground truth cached in
+  content/statutes/ND: N.D.C.C. ch. 43-23 and N.D. Admin. Code chs. 70-02-01 through 70-02-05 (ndlegis.gov).
+  Chapters 43-23.1 (Subdivided Land) and 43-23.2 (Recovery Fund) are not yet cached.

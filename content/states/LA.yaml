@@ -1,0 +1,59 @@
+code: LA
+name: Louisiana
+regulator:
+  name: "Louisiana Real Estate Commission (LREC)"
+  url: "https://lrec.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers both the LREC real estate exams and the Louisiana Real Estate Appraisers Board exams under one candidate handbook (#091900)."
+salesperson_exam:
+  national_items: 80
+  state_items: 55
+  total_items: 135
+  pretest_items: "10-15 on the combination exam (5 national + 5-10 state); not scored"
+  time_minutes: 240
+  pass_score_national: "70 (scaled score, 0-100)"
+  pass_score_state: "70 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 81
+  retake_policy: "Authorization to test is good for one year with unlimited attempts; candidates do not return to LREC for retake authorizations. 'Those who pass one part of the examination and fail the other, need to retake ONLY the failed part and must do so within one full year.' If a candidate passes one part and the authorization year expires, the candidate must resubmit an initial application and be re-authorized for the part not passed, but has one year from the date of the passed portion to pass the other part. Candidates may not retake a previously passed part. Fees: combination exam $81 first attempt / $96 repeat attempts; national-only $42; state-only $39 (only the first attempt gets the discounted rate)."
+  calculator_policy: "'For real estate exams, candidates will be given a hand-held calculator at the test center. There is also an on-screen calculator option embedded in the exam.' No personal items (including electronic devices) are allowed in the testing room."
+broker_exam:
+  national_items: 80
+  state_items: 55
+  total_items: 135
+  pretest_items: "10-15 on the combination exam (5 national + 5-10 state)"
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 81
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 150
+statute_citation_root: "La. R.S. 37:1430 et seq. (Louisiana Real Estate License Law)"
+rules_citation_root: "La. Admin. Code tit. 46, pt. LXVII (Real Estate)"
+statute_url: "http://www.legis.la.gov/Legis/Law.aspx?d=93259"
+rules_url: "https://www.doa.la.gov/media/ybmbcplf/46v67.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091900.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091901.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091900.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091901.pdf"
+    used_for: [exam_outline_url, salesperson_exam.state_items, salesperson_exam.pretest_items]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/la/realestate.html"
+    used_for: [vendor]
+    accessed: 2026-09-08
+  - url: "https://lrec.gov/laws-and-rules/license-law"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.doa.la.gov/media/ybmbcplf/46v67.pdf"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #091900 dated July 2024. Exam is split into national and state parts, each scored separately on a 0-100 scaled score (70 salesperson / 75 broker). Time: national 150 min + state 90 min; combination exam 240 min. Exam fee is per attempt: $81 first combination attempt, $96 for repeat combination attempts. statute_url is the legis.la.gov link published on the LREC 'License Law' page (legis.la.gov blocks automated fetches, so the page itself was not loaded); the LREC page gives the range as R.S. 37:1430 through 37:1470. Broker applicants need 4 years active licensure (2 of last 4 immediately preceding) plus 150 hours. Salesperson state outline: 55 scored items + 5-10 pretest (effective April 1, 2025)."

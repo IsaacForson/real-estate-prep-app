@@ -1,0 +1,309 @@
+# Rhode Island state-portion blueprint. Structure and counts from the Pearson VUE Rhode Island
+# Real Estate Candidate Handbook (#094000) state content outline; labels are our own paraphrases.
+id: state_RI
+vendor: pearsonvue
+title: "Rhode Island state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Rhode Island Real Estate Candidate Handbook (#094000) — Rhode Island State Content Outline for Sales and Broker Exams"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094000.pdf"
+source_version_or_date: "Handbook #094000, January 2026; state outline effective August 21, 2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Regulators and their authority"
+        items: 2
+        weight_pct: 4
+        subtopics:
+          - id: "I.A"
+            label: "Department of Business Regulation powers"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-6", "R.I. Gen. Laws § 5-20.5-12", "R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.1"]
+          - id: "I.B"
+            label: "Real Estate Commission role and makeup"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-23", "R.I. Gen. Laws § 5-20.5-24", "R.I. Gen. Laws § 5-20.5-6"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 6
+        weight_pct: 12
+        subtopics:
+          - id: "II.A"
+            label: "Activities that require a license"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-1", "R.I. Gen. Laws § 5-20.5-2", "R.I. Gen. Laws § 5-20.5-3", "230-RICR-30-20-2.2"]
+          - id: "II.B"
+            label: "License status: transfer, renewal, lapse, and CE"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-11", "R.I. Gen. Laws § 5-20.5-12", "230-RICR-30-20-2.9", "230-RICR-30-20-2.10", "230-RICR-30-20-2.17", "230-RICR-30-20-2.30"]
+          - id: "II.C"
+            label: "Eligibility: recovery account, E&O insurance, other requirements"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-4", "R.I. Gen. Laws § 5-20.5-5", "R.I. Gen. Laws § 5-20.5-19", "R.I. Gen. Laws § 5-20.5-20", "R.I. Gen. Laws § 5-20.5-25", "230-RICR-30-20-2.6", "230-RICR-30-20-2.7", "230-RICR-30-20-2.28"]
+      - id: "III"
+        label: "Statutory rules for licensee conduct"
+        items: 24
+        weight_pct: 48
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.25", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.B"
+            label: "Broker and salesperson relationship"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.4", "230-RICR-30-20-2.5", "230-RICR-30-20-2.10", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.C"
+            label: "Commissions and compensation"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.21", "230-RICR-30-20-2.23", "R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.5-16"]
+          - id: "III.D"
+            label: "Conflict-of-interest and material-fact disclosure"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.8-1", "R.I. Gen. Laws § 5-20.8-2", "230-RICR-30-20-2.22", "230-RICR-30-20-2.31"]
+          - id: "III.E"
+            label: "Handling transaction documents"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.20", "230-RICR-30-20-2.26", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.F"
+            label: "Handling money belonging to others"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-26", "230-RICR-30-20-2.18", "230-RICR-30-20-2.19", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.G"
+            label: "Listings and purchase and sales agreements"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.26", "R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.6-5"]
+          - id: "III.H"
+            label: "Unfair inducements"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.21", "230-RICR-30-20-2.25"]
+          - id: "III.I"
+            label: "Unauthorized practice of law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.22", "230-RICR-30-20-2.26"]
+          - id: "III.J"
+            label: "General obligations of licensees"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.22", "230-RICR-30-20-2.13", "230-RICR-30-20-2.14", "230-RICR-30-20-2.15", "230-RICR-30-20-2.24", "230-RICR-30-20-2.27", "R.I. Gen. Laws § 5-20.5-14"]
+      - id: "IV"
+        label: "Other Rhode Island statutes and regulations"
+        items: 18
+        weight_pct: 36
+        subtopics:
+          - id: "IV.A"
+            label: "State fair housing law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-37-1", "R.I. Gen. Laws § 34-37-3", "R.I. Gen. Laws § 34-37-4", "230-RICR-30-20-2.14"]
+          - id: "IV.B"
+            label: "Residential landlord-tenant law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-18-1", "R.I. Gen. Laws § 34-18-19", "R.I. Gen. Laws § 34-18-22", "R.I. Gen. Laws § 34-18-35", "R.I. Gen. Laws § 34-18-36"]
+          - id: "IV.C"
+            label: "Agricultural functions of the environmental department"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 2-1-5", "R.I. Gen. Laws § 2-1-18", "R.I. Gen. Laws § 2-1-27"]
+          - id: "IV.D"
+            label: "Fire safety code general provisions"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 23-28.1-1", "R.I. Gen. Laws § 23-28.1-2", "R.I. Gen. Laws § 23-28.1-5"]
+          - id: "IV.E"
+            label: "Onsite wastewater treatment system disclosure"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.8-2", "R.I. Gen. Laws § 5-20.8-1"]
+          - id: "IV.F"
+            label: "Cesspool phase-out act"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 23-19.15-1", "R.I. Gen. Laws § 23-19.15-3", "R.I. Gen. Laws § 23-19.15-6"]
+          - id: "IV.G"
+            label: "Nonresident seller tax withholding"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 44-30-71.3"]
+          - id: "IV.H"
+            label: "Lead hazard disclosure"
+            items: null
+            statute_refs: ["216-RICR-50-15-3", "R.I. Gen. Laws § 5-20.8-11", "R.I. Gen. Laws § 42-128.1-1"]
+          - id: "IV.I"
+            label: "Real estate sales disclosures"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.8-1", "R.I. Gen. Laws § 5-20.8-2", "R.I. Gen. Laws § 5-20.8-3", "R.I. Gen. Laws § 5-20.8-4", "R.I. Gen. Laws § 5-20.8-5", "R.I. Gen. Laws § 5-20.8-6"]
+          - id: "IV.J"
+            label: "Condominium sales"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-36-1.1", "R.I. Gen. Laws § 34-36.1-4.08", "R.I. Gen. Laws § 34-36.1-4.09"]
+          - id: "IV.K"
+            label: "Relationships in residential transactions"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.6-1", "R.I. Gen. Laws § 5-20.6-2", "R.I. Gen. Laws § 5-20.6-3", "R.I. Gen. Laws § 5-20.6-4", "R.I. Gen. Laws § 5-20.6-5", "R.I. Gen. Laws § 5-20.6-6", "R.I. Gen. Laws § 5-20.6-8", "230-RICR-30-20-2.31"]
+  broker:
+    scored_items: 60
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Regulators and their authority"
+        items: 2
+        weight_pct: 3
+        subtopics:
+          - id: "I.A"
+            label: "Department of Business Regulation powers"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-6", "R.I. Gen. Laws § 5-20.5-12", "R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.1"]
+          - id: "I.B"
+            label: "Real Estate Commission role and makeup"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-23", "R.I. Gen. Laws § 5-20.5-24", "R.I. Gen. Laws § 5-20.5-6"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 6
+        weight_pct: 10
+        subtopics:
+          - id: "II.A"
+            label: "Activities that require a license"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-1", "R.I. Gen. Laws § 5-20.5-2", "R.I. Gen. Laws § 5-20.5-3", "230-RICR-30-20-2.2"]
+          - id: "II.B"
+            label: "License status: transfer, renewal, lapse, and CE"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-11", "R.I. Gen. Laws § 5-20.5-12", "230-RICR-30-20-2.9", "230-RICR-30-20-2.10", "230-RICR-30-20-2.17", "230-RICR-30-20-2.30"]
+          - id: "II.C"
+            label: "Eligibility: recovery account, E&O insurance, other requirements"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-4", "R.I. Gen. Laws § 5-20.5-5", "R.I. Gen. Laws § 5-20.5-19", "R.I. Gen. Laws § 5-20.5-20", "R.I. Gen. Laws § 5-20.5-25", "230-RICR-30-20-2.6", "230-RICR-30-20-2.7", "230-RICR-30-20-2.28"]
+      - id: "III"
+        label: "Statutory rules for licensee conduct"
+        items: 22
+        weight_pct: 37
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.25", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.B"
+            label: "Broker and salesperson relationship"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.4", "230-RICR-30-20-2.5", "230-RICR-30-20-2.10", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.C"
+            label: "Commissions and compensation"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.21", "230-RICR-30-20-2.23", "R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.5-16"]
+          - id: "III.D"
+            label: "Conflict-of-interest and material-fact disclosure"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.8-1", "R.I. Gen. Laws § 5-20.8-2", "230-RICR-30-20-2.22", "230-RICR-30-20-2.31"]
+          - id: "III.E"
+            label: "Handling transaction documents"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.20", "230-RICR-30-20-2.26", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.F"
+            label: "Handling money belonging to others"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-26", "230-RICR-30-20-2.18", "230-RICR-30-20-2.19", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "III.G"
+            label: "Listings and purchase and sales agreements"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.26", "R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.6-5"]
+          - id: "III.H"
+            label: "Unfair inducements"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.21", "230-RICR-30-20-2.25"]
+          - id: "III.I"
+            label: "Unauthorized practice of law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "230-RICR-30-20-2.22", "230-RICR-30-20-2.26"]
+          - id: "III.J"
+            label: "General obligations of licensees"
+            items: null
+            statute_refs: ["230-RICR-30-20-2.22", "230-RICR-30-20-2.13", "230-RICR-30-20-2.14", "230-RICR-30-20-2.15", "230-RICR-30-20-2.24", "230-RICR-30-20-2.27", "R.I. Gen. Laws § 5-20.5-14"]
+      - id: "IV"
+        label: "Other Rhode Island statutes and regulations"
+        items: 18
+        weight_pct: 30
+        subtopics:
+          - id: "IV.A"
+            label: "State fair housing law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-37-1", "R.I. Gen. Laws § 34-37-3", "R.I. Gen. Laws § 34-37-4", "230-RICR-30-20-2.14"]
+          - id: "IV.B"
+            label: "Residential landlord-tenant law"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-18-1", "R.I. Gen. Laws § 34-18-19", "R.I. Gen. Laws § 34-18-22", "R.I. Gen. Laws § 34-18-35", "R.I. Gen. Laws § 34-18-36"]
+          - id: "IV.C"
+            label: "Agricultural functions of the environmental department"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 2-1-5", "R.I. Gen. Laws § 2-1-18", "R.I. Gen. Laws § 2-1-27"]
+          - id: "IV.D"
+            label: "Fire safety code general provisions"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 23-28.1-1", "R.I. Gen. Laws § 23-28.1-2", "R.I. Gen. Laws § 23-28.1-5"]
+          - id: "IV.E"
+            label: "Onsite wastewater treatment system disclosure"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.8-2", "R.I. Gen. Laws § 5-20.8-1"]
+          - id: "IV.F"
+            label: "Cesspool phase-out act"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 23-19.15-1", "R.I. Gen. Laws § 23-19.15-3", "R.I. Gen. Laws § 23-19.15-6"]
+          - id: "IV.G"
+            label: "Nonresident seller tax withholding"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 44-30-71.3"]
+          - id: "IV.H"
+            label: "Lead hazard disclosure"
+            items: null
+            statute_refs: ["216-RICR-50-15-3", "R.I. Gen. Laws § 5-20.8-11", "R.I. Gen. Laws § 42-128.1-1"]
+          - id: "IV.I"
+            label: "Real estate sales disclosures"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.8-1", "R.I. Gen. Laws § 5-20.8-2", "R.I. Gen. Laws § 5-20.8-3", "R.I. Gen. Laws § 5-20.8-4", "R.I. Gen. Laws § 5-20.8-5", "R.I. Gen. Laws § 5-20.8-6"]
+          - id: "IV.J"
+            label: "Condominium sales"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 34-36-1.1", "R.I. Gen. Laws § 34-36.1-4.08", "R.I. Gen. Laws § 34-36.1-4.09"]
+          - id: "IV.K"
+            label: "Relationships in residential transactions"
+            items: null
+            statute_refs: ["R.I. Gen. Laws § 5-20.6-1", "R.I. Gen. Laws § 5-20.6-2", "R.I. Gen. Laws § 5-20.6-3", "R.I. Gen. Laws § 5-20.6-4", "R.I. Gen. Laws § 5-20.6-5", "R.I. Gen. Laws § 5-20.6-6", "R.I. Gen. Laws § 5-20.6-8", "230-RICR-30-20-2.31"]
+      - id: "V"
+        label: "Broker-only responsibilities"
+        items: 12
+        weight_pct: 20
+        subtopics:
+          - id: "V.A"
+            label: "Place of business"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-9", "R.I. Gen. Laws § 5-20.5-10", "230-RICR-30-20-2.3", "230-RICR-30-20-2.4"]
+          - id: "V.B"
+            label: "Office policies: records, supervision, other duties"
+            items: null
+            broker_only: true
+            statute_refs: ["230-RICR-30-20-2.4", "230-RICR-30-20-2.20", "230-RICR-30-20-2.11", "230-RICR-30-20-2.12", "R.I. Gen. Laws § 5-20.5-14"]
+          - id: "V.C"
+            label: "Commingling"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.5-26", "230-RICR-30-20-2.18"]
+          - id: "V.D"
+            label: "Escrow accounts"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-26", "230-RICR-30-20-2.18", "230-RICR-30-20-2.19"]
+          - id: "V.E"
+            label: "License needed to own a brokerage"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-27", "230-RICR-30-20-2.4"]
+          - id: "V.F"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.5-15", "230-RICR-30-20-2.16"]
+          - id: "V.G"
+            label: "Sanctions"
+            items: null
+            broker_only: true
+            statute_refs: ["R.I. Gen. Laws § 5-20.5-14", "R.I. Gen. Laws § 5-20.5-15", "R.I. Gen. Laws § 5-20.5-16", "230-RICR-30-20-2.15", "230-RICR-30-20-2.17"]
+references: []
+notes: "Handbook #094000 (January 2026) state outline (effective Aug. 21, 2025): Sales 2/6/24/18 = 50 (4%/12%/48%/36%); Broker 2/6/22/18/12 = 60 (3%/10%/37%/30%/20%), 10 pretest items each. AMBIGUITY: the same handbook's 'Available Exams' table lists the RI Broker State Part as 50 questions while the outline text says the broker state exam has sixty (60) scored items and its domain counts sum to 60; this blueprint follows the outline (60) and content/states/RI.yaml keeps the table's 50 — reconcile with Pearson VUE / DBR. Subtopic counts are not published. Grounding: 230-RICR-30-20-2 is cached (sections verified). R.I. Gen. Laws ch. 5-20.5, 5-20.6, 5-20.8 and the other statutes in domain IV could not be fetched (webserver.rilegislature.gov timed out; dbr.ri.gov returns a JavaScript challenge), so 5-20.5 section numbers beyond those cross-referenced in the regulation (§§ 5-20.5-1, -4, -6, -11, -12, -14, -19, -20, -25, -26, -27) are best-effort and should be verified once the chapter is cached."

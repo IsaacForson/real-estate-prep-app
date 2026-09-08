@@ -1,0 +1,154 @@
+# Minnesota state-portion blueprint. Source: PSI Minnesota Real Estate / Abstracter Candidate Information
+# Bulletin (10/1/2023), "Minnesota State Content Outline" (Laws and Rules). Labels are OUR paraphrases (SPEC §3.2).
+# The bulletin's per-area counts (Salesperson 20/8/8/4 = 40; Broker 25/10/9/6 = 50) do NOT sum to the
+# state-portion item counts in its own Examination Summary Table (Salesperson 50, Broker 60). We keep the
+# published proportions and scale onto the summary-table totals: salesperson x1.25 = 25/10/10/5 (exact);
+# broker x1.2 = 30/12/10.8/7.2, rounded to 30/12/11/7. The bulletin's own statute cites (Minn. Stat. chapters)
+# are used for statute_refs. Areas are unnumbered in the bulletin; ids "1"–"4" are ours, in bulletin order.
+id: state_MN
+vendor: psi
+title: "Minnesota state-portion outline (internal blueprint)"
+source_document: "PSI Minnesota Real Estate Candidate Information Bulletin — Minnesota State Content Outline (Laws and Rules)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/10954"
+source_version_or_date: "Bulletin dated 10/1/2023"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10 (experimental, unscored)"
+    domains:
+      - id: "1"
+        label: "Minnesota real estate brokerage license law (ch. 82)"
+        items: 25
+        subtopics:
+          - id: "1.1"
+            label: "Statutory definitions"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.55"]
+          - id: "1.2"
+            label: "Licensing: who needs a license, exemptions, applications, renewal, education"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.57", "Minn. Stat. § 82.58", "Minn. Stat. § 82.59", "Minn. Stat. § 82.60", "Minn. Stat. § 82.61", "Minn. Stat. § 82.62", "Minn. Stat. § 82.63", "Minn. Stat. § 82.641"]
+          - id: "1.3"
+            label: "Trust accounts and handling of earnest money"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.75", "Minn. Stat. § 82.82"]
+          - id: "1.4"
+            label: "Standards of conduct, prohibited practices, and discipline"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.72", "Minn. Stat. § 82.73", "Minn. Stat. § 82.81", "Minn. Stat. § 82.82", "Minn. Stat. § 82.83"]
+          - id: "1.5"
+            label: "Commissioner of Commerce authority, investigations, and enforcement"
+            items: null
+            statute_refs: ["Minn. Stat. §§ 45.011–45.43", "Minn. Stat. § 45.027", "Minn. Stat. § 82.82", "Minn. Stat. § 82.83"]
+          - id: "1.6"
+            label: "Real Estate Education, Research, and Recovery Fund"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.86"]
+          - id: "1.7"
+            label: "Agency disclosure requirements and agency relationships"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.67", "Minn. Stat. § 82.66"]
+          - id: "1.8"
+            label: "Other required disclosures (property, radon, wells, well disclosure)"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.68", "Minn. Stat. §§ 513.52–513.60"]
+          - id: "1.9"
+            label: "Compensation: who may be paid and referral fees"
+            items: null
+            statute_refs: ["Minn. Stat. § 82.70", "Minn. Stat. § 82.66"]
+      - id: "2"
+        label: "Interests in real property: ownership, common interest, taxes, landlord-tenant"
+        items: 10
+        subtopics:
+          - id: "2.1"
+            label: "Conveyances by spouses and marital interests"
+            items: null
+            statute_refs: ["Minn. Stat. § 507.02", "Minn. Stat. § 500.19"]
+          - id: "2.2"
+            label: "Subdivided land sales regulation"
+            items: null
+            statute_refs: ["Minn. Stat. §§ 83.20–83.45"]
+          - id: "2.3"
+            label: "Condominiums and common interest communities"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 515", "Minn. Stat. ch. 515A", "Minn. Stat. ch. 515B"]
+          - id: "2.4"
+            label: "Property taxes and special assessments"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 279", "Minn. Stat. ch. 429"]
+          - id: "2.5"
+            label: "Landlord and tenant law"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 504B", "Minn. Stat. § 504B.178"]
+      - id: "3"
+        label: "Conveyancing, recording, warranties, human rights, frauds, environment"
+        items: 10
+        subtopics:
+          - id: "3.1"
+            label: "Recording, Torrens registration, deed and mortgage registry taxes"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 508", "Minn. Stat. ch. 287", "Minn. Stat. ch. 507"]
+          - id: "3.2"
+            label: "Statutory new-home warranties"
+            items: null
+            statute_refs: ["Minn. Stat. § 327A.02", "Minn. Stat. § 327A.01"]
+          - id: "3.3"
+            label: "Minnesota Human Rights Act in housing"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 363A", "Minn. Stat. § 363A.09"]
+          - id: "3.4"
+            label: "Minnesota statute of frauds for property agreements"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 513", "Minn. Stat. § 513.05", "Minn. Stat. § 336.2A-201"]
+          - id: "3.5"
+            label: "Environmental disclosures: septic systems, wells, storage tanks, petroleum releases"
+            items: null
+            statute_refs: ["Minn. Stat. § 115.55", "Minn. Stat. § 103I.235", "Minn. Stat. §§ 116.46–116.48", "Minn. Stat. §§ 115C.01–115C.09", "Minn. Stat. § 82.68"]
+      - id: "4"
+        label: "Financing instruments: foreclosure, redemption, contracts for deed, homestead, liens"
+        items: 5
+        subtopics:
+          - id: "4.1"
+            label: "Mortgage foreclosure by advertisement or action; redemption"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 580", "Minn. Stat. ch. 581", "Minn. Stat. ch. 582"]
+          - id: "4.2"
+            label: "Contracts for deed and cancellation"
+            items: null
+            statute_refs: ["Minn. Stat. § 559.21", "Minn. Stat. ch. 559"]
+          - id: "4.3"
+            label: "Homestead exemption"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 510"]
+          - id: "4.4"
+            label: "Mechanics' and other liens"
+            items: null
+            statute_refs: ["Minn. Stat. ch. 514"]
+  broker:
+    scored_items: 60
+    pretest_items: "5-10 (experimental, unscored)"
+    domains:
+      - id: "1"
+        label: "Minnesota real estate brokerage license law (ch. 82)"
+        items: 30
+        subtopics: []
+      - id: "2"
+        label: "Interests in real property: ownership, common interest, taxes, landlord-tenant"
+        items: 12
+        subtopics: []
+      - id: "3"
+        label: "Conveyancing, recording, warranties, human rights, frauds, environment"
+        items: 11
+        subtopics: []
+      - id: "4"
+        label: "Financing instruments: foreclosure, redemption, contracts for deed, homestead, liens"
+        items: 7
+        subtopics: []
+references:
+  - title: "Minnesota Statutes Chapter 82 — Real Estate Brokers and Salespersons"
+    publisher: "Office of the Revisor of Statutes"
+  - title: "Minnesota Rules Chapter 2805 — Real Estate (largely repealed 2004)"
+    publisher: "Office of the Revisor of Statutes"
+notes: "AMBIGUITY: the bulletin's state outline item counts (salesperson 20+8+8+4 = 40; broker 25+10+9+6 = 50) conflict with its Examination Summary Table (state portion: salesperson 50 items, broker 60). scored_items follows the summary table (matches content/states/MN.yaml state_items); domain counts are the outline proportions scaled up (see header comment). Bulletin dated 10/1/2023 and may be stale. Broker subtopics mirror the salesperson list (omitted). Minn. R. ch. 2805 is almost entirely repealed (2004 recodification into ch. 82), so the rules cache is small (~3k chars); ch. 82 full text is cached. Chapters outside ch. 82 cited in domains 2-4 are not cached."

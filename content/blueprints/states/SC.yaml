@@ -1,0 +1,246 @@
+# South Carolina state-portion blueprint. The entry-level license is "Associate" (mapped to
+# `salesperson`). Structure and counts from the PSI South Carolina Real Estate Candidate
+# Information Bulletin; labels are our own paraphrases.
+id: state_SC
+vendor: psi
+title: "South Carolina state-portion outline (internal blueprint)"
+source_document: "PSI South Carolina Real Estate Commission Candidate Information Bulletin — State-Specific Portion content outline (Associate and Broker)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/440"
+source_version_or_date: "Bulletin updated 8/27/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "The Commission and licensing requirements"
+        items: 9
+        subtopics:
+          - id: "I.A"
+            label: "Commission purpose, powers, and duties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-10", "S.C. Code Ann. § 40-57-40", "S.C. Code Ann. § 40-57-60", "S.C. Code Ann. § 40-57-70"]
+          - id: "I.B"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-20", "S.C. Code Ann. § 40-57-30", "S.C. Code Ann. § 40-57-240", "S.C. Code Ann. § 40-57-250"]
+          - id: "I.C"
+            label: "License types, upkeep, status changes, and renewal"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-90", "S.C. Code Ann. § 40-57-110", "S.C. Code Ann. § 40-57-115", "S.C. Code Ann. § 40-57-120", "S.C. Code Ann. § 40-57-300", "S.C. Code Ann. § 40-57-310", "S.C. Code Ann. § 40-57-320", "S.C. Code Ann. § 40-57-330", "S.C. Code Ann. § 40-57-340", "S.C. Code Ann. § 40-57-345", "S.C. Code Ann. § 40-57-930", "S.C. Code Ann. Regs. 105-4", "S.C. Code Ann. Regs. 105-10"]
+      - id: "II"
+        label: "Statutes governing licensee and non-licensee activities"
+        items: 11
+        subtopics:
+          - id: "II.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. Regs. 105-16"]
+          - id: "II.B"
+            label: "Broker, associate, and non-licensee relationships"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-360", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-20"]
+          - id: "II.C"
+            label: "Commissions and other compensation"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-120", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-790"]
+          - id: "II.D"
+            label: "Disclosing a licensee's own interest in a deal"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-135"]
+          - id: "II.E"
+            label: "Presenting offers and counteroffers"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.F"
+            label: "Transaction documents and record keeping"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.G"
+            label: "Trust money and accounting practices"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.H"
+            label: "Violations, investigations, and penalties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-720", "S.C. Code Ann. § 40-57-725", "S.C. Code Ann. § 40-57-730", "S.C. Code Ann. § 40-57-740", "S.C. Code Ann. § 40-57-780"]
+      - id: "III"
+        label: "Agency and non-agency relationships"
+        items: 11
+        subtopics:
+          - id: "III.A"
+            label: "Permitted relationships and duties to parties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-30"]
+          - id: "III.B"
+            label: "Disclosure of brokerage relationships"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-370", "S.C. Code Ann. § 40-57-350"]
+          - id: "III.C"
+            label: "Creating and ending agency"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-380"]
+          - id: "III.D"
+            label: "Agency and non-agency agreements"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-380"]
+      - id: "IV"
+        label: "Other South Carolina statutes"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Consumer Protection Code"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 37-1-101", "S.C. Code Ann. § 37-10-102", "S.C. Code Ann. § 37-10-103"]
+          - id: "IV.B"
+            label: "Homestead exemption"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 12-37-250", "S.C. Code Ann. § 12-37-220"]
+          - id: "IV.C"
+            label: "Residential Landlord and Tenant Act"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-40-10", "S.C. Code Ann. § 27-40-410", "S.C. Code Ann. § 27-40-440", "S.C. Code Ann. § 27-40-510", "S.C. Code Ann. § 27-40-710"]
+          - id: "IV.D"
+            label: "Vacation Rental Act"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-50-210", "S.C. Code Ann. § 27-50-230", "S.C. Code Ann. § 27-50-250", "S.C. Code Ann. § 27-50-270"]
+          - id: "IV.E"
+            label: "Residential property condition disclosure statements"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-50-10", "S.C. Code Ann. § 27-50-30", "S.C. Code Ann. § 27-50-40", "S.C. Code Ann. § 27-50-50", "S.C. Code Ann. § 27-50-60", "S.C. Code Ann. § 27-50-70"]
+          - id: "IV.F"
+            label: "State fair housing law"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 31-21-10", "S.C. Code Ann. § 31-21-40", "S.C. Code Ann. § 31-21-70", "S.C. Code Ann. § 31-21-80"]
+          - id: "IV.G"
+            label: "Smoke detector law"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 5-25-1330", "S.C. Code Ann. § 27-40-440"]
+      - id: "V"
+        label: "Closing details"
+        items: 3
+        subtopics:
+          - id: "V.A"
+            label: "Closing statements and settlement duties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-710"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "The Commission and licensing requirements"
+        items: 10
+        subtopics:
+          - id: "I.A"
+            label: "Commission purpose, powers, and duties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-10", "S.C. Code Ann. § 40-57-40", "S.C. Code Ann. § 40-57-60", "S.C. Code Ann. § 40-57-70"]
+          - id: "I.B"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-20", "S.C. Code Ann. § 40-57-30", "S.C. Code Ann. § 40-57-240", "S.C. Code Ann. § 40-57-250"]
+          - id: "I.C"
+            label: "License types, upkeep, status changes, and renewal"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-90", "S.C. Code Ann. § 40-57-110", "S.C. Code Ann. § 40-57-115", "S.C. Code Ann. § 40-57-120", "S.C. Code Ann. § 40-57-300", "S.C. Code Ann. § 40-57-310", "S.C. Code Ann. § 40-57-320", "S.C. Code Ann. § 40-57-330", "S.C. Code Ann. § 40-57-340", "S.C. Code Ann. § 40-57-345", "S.C. Code Ann. § 40-57-930", "S.C. Code Ann. Regs. 105-4", "S.C. Code Ann. Regs. 105-10"]
+      - id: "II"
+        label: "Statutes governing licensee and non-licensee activities"
+        items: 16
+        subtopics:
+          - id: "II.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. Regs. 105-16"]
+          - id: "II.B"
+            label: "Broker, associate, and non-licensee relationships"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-360", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-20"]
+          - id: "II.C"
+            label: "Commissions and other compensation"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-120", "S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-790"]
+          - id: "II.D"
+            label: "Disclosing a licensee's own interest in a deal"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-135"]
+          - id: "II.E"
+            label: "Presenting offers and counteroffers"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.F"
+            label: "Transaction documents and record keeping"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.G"
+            label: "Trust money and accounting practices"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-710"]
+          - id: "II.H"
+            label: "Violations, investigations, and penalties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-710", "S.C. Code Ann. § 40-57-720", "S.C. Code Ann. § 40-57-725", "S.C. Code Ann. § 40-57-730", "S.C. Code Ann. § 40-57-740", "S.C. Code Ann. § 40-57-780"]
+      - id: "III"
+        label: "Agency and non-agency relationships"
+        items: 13
+        subtopics:
+          - id: "III.A"
+            label: "Permitted relationships and duties to parties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-30"]
+          - id: "III.B"
+            label: "Disclosure of brokerage relationships"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-370", "S.C. Code Ann. § 40-57-350"]
+          - id: "III.C"
+            label: "Creating and ending agency"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-380"]
+          - id: "III.D"
+            label: "Agency and non-agency agreements"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-350", "S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-380"]
+      - id: "IV"
+        label: "Other South Carolina statutes"
+        items: 7
+        subtopics:
+          - id: "IV.A"
+            label: "Consumer Protection Code"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 37-1-101", "S.C. Code Ann. § 37-10-102", "S.C. Code Ann. § 37-10-103"]
+          - id: "IV.B"
+            label: "Homestead exemption"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 12-37-250", "S.C. Code Ann. § 12-37-220"]
+          - id: "IV.C"
+            label: "Residential Landlord and Tenant Act"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-40-10", "S.C. Code Ann. § 27-40-410", "S.C. Code Ann. § 27-40-440", "S.C. Code Ann. § 27-40-510", "S.C. Code Ann. § 27-40-710"]
+          - id: "IV.D"
+            label: "Vacation Rental Act and Time Sharing Plan Act"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-50-210", "S.C. Code Ann. § 27-50-230", "S.C. Code Ann. § 27-50-250", "S.C. Code Ann. § 27-50-270", "S.C. Code Ann. § 27-32-10", "S.C. Code Ann. § 27-32-40", "S.C. Code Ann. § 27-32-50", "S.C. Code Ann. Regs. 105-2", "S.C. Code Ann. Regs. 105-3"]
+          - id: "IV.E"
+            label: "Residential property condition disclosure statements"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 27-50-10", "S.C. Code Ann. § 27-50-30", "S.C. Code Ann. § 27-50-40", "S.C. Code Ann. § 27-50-50", "S.C. Code Ann. § 27-50-60", "S.C. Code Ann. § 27-50-70"]
+          - id: "IV.F"
+            label: "State fair housing law"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 31-21-10", "S.C. Code Ann. § 31-21-40", "S.C. Code Ann. § 31-21-70", "S.C. Code Ann. § 31-21-80"]
+          - id: "IV.G"
+            label: "Smoke detector law"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 5-25-1330", "S.C. Code Ann. § 27-40-440"]
+      - id: "V"
+        label: "Closing details"
+        items: 4
+        subtopics:
+          - id: "V.A"
+            label: "Closing statements and settlement duties"
+            items: null
+            statute_refs: ["S.C. Code Ann. § 40-57-135", "S.C. Code Ann. § 40-57-136", "S.C. Code Ann. § 40-57-710"]
+references: []
+notes: "Bulletin (updated 8/27/2026) state-specific portion: Associate 9/11/11/6/3 = 40; Broker 10/16/13/7/4 = 50; 5-10 unscored experimental items may be added. Domain V has no published subtopics; V.A is our single grounding node. The Time Sharing Plan Act sub-item in IV.D is marked broker-only in the bulletin, so it is folded into the broker exam's IV.D only. Subtopic counts are not published. Grounding: S.C. Code Title 40, ch. 57 and S.C. Code Regs. ch. 105 are cached from scstatehouse.gov. The other statutes in domain IV (Title 27 chs. 32, 40, 50; Title 31 ch. 21; Title 37; § 12-37-250; § 5-25-1330) are the bulletin's own listed references and are not yet cached; llr.sc.gov refused scripted fetches."

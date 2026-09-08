@@ -1,0 +1,59 @@
+code: AL
+name: Alabama
+regulator:
+  name: "Alabama Real Estate Commission (AREC)"
+  url: "https://arec.alabama.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers both salesperson and broker exams; AREC pre-registers/authorizes candidates and sends an authorization-to-test email."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "10-15"      # handbook table says 10-15; content outlines say 5 national + 5-10 state
+  time_minutes: 210           # General 2.5 hrs + State 1 hr = 3.5 hrs total
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70 (scaled score, 0-100)"
+  grading: combined
+  exam_fee_usd: 73
+  retake_policy: "Authorization is good for six months from approval with unlimited attempts. 'The salesperson and broker examination is divided into two parts: General and state law. Candidates will receive an overall score. If you fail the overall exam, you must retake the entire test.' If not passed within the six-month authorization period the candidate must retake the pre-licensing course and be re-authorized. A passing exam score is good for 90 days (to apply for the license). Reservations for reexamination may not be made at the test center."
+  calculator_policy: "'Personal calculators are NOT permitted, but an online calculator is available as part of the exam.'"
+broker_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "10-15"
+  time_minutes: 210
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70 (scaled score, 0-100)"
+  grading: combined
+  exam_fee_usd: 73
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 60
+statute_citation_root: "Ala. Code § 34-27-1 et seq. (Title 34, ch. 27, Real Estate Brokers)"
+rules_citation_root: "Ala. Admin. Code ch. 790-X-1 et seq. (Alabama Real Estate Commission)"
+statute_url: "https://alison.legislature.state.al.us/code-of-alabama?section=34-27-1"
+rules_url: "https://admincode.legislature.state.al.us/agency/790"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093300.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093301.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093300.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/al/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://arec.alabama.gov/pages/consumer/tools/becomerep.aspx"
+    used_for: [regulator, vendor, prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://admincode.legislature.state.al.us/agency/790"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+  - url: "https://alison.legislature.state.al.us/code-of-alabama"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #093300 is dated August 2024 with 'fee updates effective August 1, 2025' (rev 02/2026). National outline effective April 1, 2025; Alabama state outline effective February 1, 2026. Scored as ONE overall scaled score (70 to pass) even though the exam has General and State sections; failing means retaking the whole exam. Reciprocal (out-of-state licensee) candidates take only the 40-item state exam ($53, 1 hr) after a 6-hour Alabama law course. Broker pre-license is also a 60-clock-hour course plus 24 of the prior 36 months actively licensed. Salesperson applicants have six months after course completion to pass; 30-hour post-license course required within 12 months of licensure. arec.alabama.gov refused automated connections on the verification date; URL taken from the handbook and search index."

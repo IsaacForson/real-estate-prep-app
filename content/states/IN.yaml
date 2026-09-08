@@ -1,0 +1,59 @@
+code: IN
+name: Indiana
+regulator:
+  name: "Indiana Real Estate Commission, Indiana Professional Licensing Agency (IPLA)"
+  url: "https://www.in.gov/pla/professions/real-estate-home/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exam (https://www.pearsonvue.com/us/en/in/realestate.html); reservations at least 48 hours in advance."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "75 (scaled)"
+  pass_score_state: "75 (scaled)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 55
+  retake_policy: "Handbook: 'Real estate broker examinations are divided into two parts: national and state. Candidates who pass one (1) part of the examination and fail the other need to retake only the failed part. Both parts of the exam (national and state) must be taken and passed within one (1) year of the date that the pre-licensing course was completed.' Reservations for re-examination cannot be made at the test center. Exam results are good for one year from the date of passing."
+  calculator_policy: "Handbook does not explicitly address calculators: no personal items or electronic devices are allowed in the testing room; the test administrator provides erasable notebooks 'to make notes or calculations and any other items specified by the exam sponsor'."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: null
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: null
+statute_citation_root: "Ind. Code § 25-34.1-1-1 et seq."
+rules_citation_root: "876 Ind. Admin. Code 1-1-1 et seq."
+statute_url: "https://iga.in.gov/laws/2025/ic/titles/25#25-34.1"
+rules_url: "https://iar.iga.in.gov/code/2025/876"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091500.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091501.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091500.pdf"
+    used_for: [vendor, salesperson_exam, prelicense_hours_salesperson, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091501.pdf"
+    used_for: [exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/in/realestate.html"
+    used_for: [vendor]
+    accessed: 2026-09-08
+  - url: "https://iga.in.gov/laws/2025/ic/titles/25#25-34.1"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://iar.iga.in.gov/code/2025/876"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Indiana has a single entry-level 'Broker' license (no salesperson tier), so salesperson_exam holds the Real Estate Broker exam (series ReIN-Broker): 240 min seat time, 145 total questions = 80 scored national + 50 scored state + 15 unscored pretest (5 national + 5-10 state per the content outlines), scaled passing score 75, fee $55. broker_exam is left null because Managing Broker candidates take the same ReIN-Broker exam; there is no separate higher-tier exam. Broker by Endorsement (out-of-state licensees) take the state portion only (60 questions, 90 min, $55). Prelicense course is 90 hours; both exam parts must be passed within 1 year of course completion. Handbook #091500 'March 2025' (rev 08/2025); national outlines effective March 1, 2025."

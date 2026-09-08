@@ -1,0 +1,333 @@
+# Florida blueprint. Florida gives ONE 100-item state exam (no separate national portion), so this
+# blueprint covers the whole DBPR/FREC Sales Associate outline (19 content areas; areas I-VII are
+# Florida license law/practice, VIII-XIX general real estate topics as tested under Florida law).
+# Structure and percentages from the DBPR Candidate Information Booklet, Real Estate Sales Associate
+# Examination (Effective January 2025). Labels are our own paraphrases; outline text is not
+# reproduced (SPEC §3.2). Item counts = published percentage x 100.
+id: state_FL
+vendor: pearsonvue
+title: "Florida sales associate exam outline (internal blueprint; whole exam)"
+source_document: "DBPR Candidate Information Booklet — Real Estate Sales Associate Examination (content areas and percentages); broker: DBPR CIB — Real Estate Broker Examination"
+source_url: "https://www2.myfloridalicense.com/servop/testing/documents/RE_sales_cibs.pdf"
+source_version_or_date: "Sales Associate CIB effective January 2025; Broker CIB effective March 2024"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 100
+    pretest_items: "A small number of unscored pilot items may be added (count not published)"
+    domains:
+      - id: "I"
+        label: "The real estate business and its participants"
+        items: 1
+        subtopics:
+          - id: "I.A"
+            label: "Brokerage, development, government role, professional groups"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.001", "Fla. Stat. § 475.02", "Fla. Stat. § 475.021"]
+      - id: "II"
+        label: "License law and qualifying for licensure"
+        items: 6
+        subtopics:
+          - id: "II.A"
+            label: "History and purpose of Florida license law; key statutes and rules"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.001", "Fla. Stat. § 475.01", "Fla. Stat. § 475.05", "Fla. Admin. Code r. 61J2-1.011"]
+          - id: "II.B"
+            label: "Sales associate qualifications, application, examination"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.17", "Fla. Stat. § 475.175", "Fla. Stat. § 475.181", "Fla. Admin. Code r. 61J2-2.027", "Fla. Admin. Code r. 61J2-3.008"]
+          - id: "II.C"
+            label: "Post-licensing and continuing education; renewal"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.17", "Fla. Stat. § 475.182", "Fla. Stat. § 475.183", "Fla. Admin. Code r. 61J2-3.009", "Fla. Admin. Code r. 61J2-3.020", "Fla. Stat. § 455.271"]
+          - id: "II.D"
+            label: "Broker requirements; registration vs. licensure; multiple and group licenses"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.17", "Fla. Stat. § 475.15", "Fla. Stat. § 475.161", "Fla. Stat. § 475.215", "Fla. Stat. § 475.180"]
+          - id: "II.E"
+            label: "Real estate services requiring a license; exempt persons"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.011", "Fla. Stat. § 475.41", "Fla. Stat. § 475.42"]
+      - id: "III"
+        label: "FREC, DBPR, and commission rulemaking"
+        items: 2
+        subtopics:
+          - id: "III.A"
+            label: "Commission composition, powers, and duties"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.02", "Fla. Stat. § 475.04", "Fla. Stat. § 475.05", "Fla. Stat. § 475.10", "Fla. Stat. § 475.125"]
+          - id: "III.B"
+            label: "DBPR and the Division of Real Estate"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.021", "Fla. Stat. § 455.225", "Fla. Stat. § 455.203"]
+      - id: "IV"
+        label: "Brokerage relationships, duties, and disclosures"
+        items: 7
+        subtopics:
+          - id: "IV.A"
+            label: "Agency law fundamentals as applied in Florida"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.278", "Fla. Stat. § 475.01", "Fla. Stat. § 475.2755"]
+          - id: "IV.B"
+            label: "Transaction broker, single agent, no brokerage relationship, transition"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.278", "Fla. Stat. § 475.2755", "Fla. Stat. § 475.25"]
+          - id: "IV.C"
+            label: "Misrepresentation, fraud, and professional ethics"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.278", "Fla. Stat. § 475.42"]
+          - id: "IV.D"
+            label: "Sales associate to broker relationship"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.42", "Fla. Stat. § 475.25", "Fla. Admin. Code r. 61J2-10.032"]
+      - id: "V"
+        label: "Brokerage operations: offices, ads, escrow, commissions, entities"
+        items: 12
+        subtopics:
+          - id: "V.A"
+            label: "Brokerage offices, signage, branch offices"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.22", "Fla. Stat. § 475.23", "Fla. Stat. § 475.24", "Fla. Admin. Code r. 61J2-10.022", "Fla. Admin. Code r. 61J2-10.023", "Fla. Admin. Code r. 61J2-10.038"]
+          - id: "V.B"
+            label: "Advertising and team advertising"
+            items: null
+            statute_refs: ["Fla. Admin. Code r. 61J2-10.025", "Fla. Admin. Code r. 61J2-10.026", "Fla. Admin. Code r. 61J2-10.027", "Fla. Stat. § 475.25"]
+          - id: "V.C"
+            label: "Escrow and trust accounts; commingling; deposits held by others"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Admin. Code r. 61J2-14.008", "Fla. Admin. Code r. 61J2-14.009", "Fla. Admin. Code r. 61J2-14.010", "Fla. Admin. Code r. 61J2-14.011", "Fla. Admin. Code r. 61J2-14.012", "Fla. Admin. Code r. 61J2-14.014"]
+          - id: "V.D"
+            label: "Commissions: antitrust, commercial lien law, kickbacks, employer changes"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.42", "Fla. Stat. § 475.701", "Fla. Stat. § 475.703", "Fla. Stat. § 475.705", "Fla. Admin. Code r. 61J2-10.028", "Fla. Admin. Code r. 61J2-10.032", "Fla. Stat. § 542.18"]
+          - id: "V.E"
+            label: "Business entities that may or may not register; trade names"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.15", "Fla. Stat. § 475.161", "Fla. Admin. Code r. 61J2-4.001", "Fla. Admin. Code r. 61J2-5.014", "Fla. Admin. Code r. 61J2-5.015", "Fla. Admin. Code r. 61J2-5.016", "Fla. Admin. Code r. 61J2-5.017", "Fla. Admin. Code r. 61J2-5.018", "Fla. Admin. Code r. 61J2-5.019", "Fla. Admin. Code r. 61J2-10.034"]
+          - id: "V.F"
+            label: "Unlicensed personal assistants"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.42", "Fla. Stat. § 475.011"]
+      - id: "VI"
+        label: "Violations, penalties, complaint process, recovery fund"
+        items: 3
+        subtopics:
+          - id: "VI.A"
+            label: "Complaint process and disciplinary procedure"
+            items: null
+            statute_refs: ["Fla. Stat. § 455.225", "Fla. Stat. § 475.25", "Fla. Stat. § 475.28", "Fla. Stat. § 475.31", "Fla. Stat. § 475.37"]
+          - id: "VI.B"
+            label: "Grounds for denial, suspension, revocation; types of penalties"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.42", "Fla. Stat. § 475.17", "Fla. Stat. § 475.181", "Fla. Stat. § 455.227", "Fla. Admin. Code r. 61J2-24.001", "Fla. Admin. Code r. 61J2-24.002", "Fla. Admin. Code r. 61J2-24.003"]
+          - id: "VI.C"
+            label: "Real Estate Recovery Fund"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.482", "Fla. Stat. § 475.483", "Fla. Stat. § 475.4835", "Fla. Stat. § 475.484", "Fla. Stat. § 475.485", "Fla. Stat. § 475.486", "Fla. Admin. Code r. 61J2-22.001"]
+      - id: "VII"
+        label: "Federal and Florida laws affecting real estate"
+        items: 3
+        subtopics:
+          - id: "VII.A"
+            label: "Fair housing under federal and Florida law"
+            items: null
+            statute_refs: ["Fla. Stat. § 760.20", "Fla. Stat. § 760.23", "Fla. Stat. § 760.24", "Fla. Stat. § 760.25", "Fla. Stat. § 760.29", "Fla. Stat. § 475.25"]
+          - id: "VII.B"
+            label: "Federal land, environmental, and mortgage lending laws"
+            items: null
+            statute_refs: ["Fla. Stat. § 404.056", "Fla. Stat. § 475.25", "Fla. Stat. § 494.001"]
+          - id: "VII.C"
+            label: "Florida Residential Landlord and Tenant Act: deposits, advance rent"
+            items: null
+            statute_refs: ["Fla. Stat. § 83.43", "Fla. Stat. § 83.49", "Fla. Stat. § 83.51", "Fla. Stat. § 83.56", "Fla. Stat. § 83.57", "Fla. Stat. § 475.25"]
+      - id: "VIII"
+        label: "Property rights, estates, tenancies, homestead, condos, timeshares"
+        items: 8
+        subtopics:
+          - id: "VIII.A"
+            label: "Nature of property; real vs. personal property"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 689.01", "Fla. Stat. § 192.001"]
+          - id: "VIII.B"
+            label: "Estates and tenancies"
+            items: null
+            statute_refs: ["Fla. Stat. § 689.11", "Fla. Stat. § 689.15", "Fla. Stat. § 689.17", "Fla. Stat. § 83.01", "Fla. Stat. § 83.04"]
+          - id: "VIII.C"
+            label: "Homestead protection and tax exemption"
+            items: null
+            statute_refs: ["Fla. Stat. § 196.031", "Fla. Stat. § 196.075", "Fla. Stat. § 193.155", "Fla. Stat. § 222.01", "Fla. Stat. § 689.111"]
+          - id: "VIII.D"
+            label: "Cooperatives, condominiums, and time-sharing"
+            items: null
+            statute_refs: ["Fla. Stat. § 718.103", "Fla. Stat. § 718.503", "Fla. Stat. § 719.103", "Fla. Stat. § 721.05", "Fla. Stat. § 721.06", "Fla. Stat. § 721.10", "Fla. Stat. § 475.011", "Fla. Admin. Code r. 61J2-23.001"]
+      - id: "IX"
+        label: "Title, deeds, and limits on ownership"
+        items: 7
+        subtopics:
+          - id: "IX.A"
+            label: "Acquiring title: voluntary and involuntary alienation, notice, condition of title"
+            items: null
+            statute_refs: ["Fla. Stat. § 689.01", "Fla. Stat. § 695.01", "Fla. Stat. § 695.11", "Fla. Stat. § 95.12", "Fla. Stat. § 95.16", "Fla. Stat. § 712.02", "Fla. Stat. § 732.101"]
+          - id: "IX.B"
+            label: "Deeds: clauses, statutory and special-purpose deeds"
+            items: null
+            statute_refs: ["Fla. Stat. § 689.01", "Fla. Stat. § 689.02", "Fla. Stat. § 689.03", "Fla. Stat. § 689.07", "Fla. Stat. § 689.10", "Fla. Stat. § 695.26"]
+          - id: "IX.C"
+            label: "Ownership limits: easements, leases, liens, public and deed restrictions"
+            items: null
+            statute_refs: ["Fla. Stat. § 704.01", "Fla. Stat. § 713.02", "Fla. Stat. § 713.07", "Fla. Stat. § 197.122", "Fla. Stat. § 55.10", "Fla. Stat. § 720.301", "Fla. Stat. § 163.3161"]
+      - id: "X"
+        label: "Legal descriptions"
+        items: 5
+        subtopics:
+          - id: "X.A"
+            label: "Metes and bounds, lot and block, government survey, related math"
+            items: null
+            statute_refs: ["Fla. Stat. § 177.031", "Fla. Stat. § 177.041", "Fla. Stat. § 177.091", "Fla. Stat. § 689.01"]
+      - id: "XI"
+        label: "Real estate contracts and mandatory disclosures"
+        items: 12
+        subtopics:
+          - id: "XI.A"
+            label: "Contract essentials, statute of frauds, statute of limitations, termination"
+            items: null
+            statute_refs: ["Fla. Stat. § 725.01", "Fla. Stat. § 95.11", "Fla. Stat. § 689.01", "Fla. Stat. § 475.25"]
+          - id: "XI.B"
+            label: "Listing, buyer-broker, option, and sale contracts; broker compensation"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.278", "Fla. Stat. § 475.42", "Fla. Stat. § 475.701", "Fla. Admin. Code r. 61J2-14.008", "Fla. Admin. Code r. 61J2-10.028"]
+          - id: "XI.C"
+            label: "Mandatory disclosures: defects, radon, lead paint, energy, HOA, tax, code, CDD"
+            items: null
+            statute_refs: ["Fla. Stat. § 404.056", "Fla. Stat. § 553.996", "Fla. Stat. § 720.401", "Fla. Stat. § 689.261", "Fla. Stat. § 689.27", "Fla. Stat. § 190.048", "Fla. Stat. § 689.25", "Fla. Stat. § 718.503", "Fla. Stat. § 475.278"]
+      - id: "XII"
+        label: "Residential mortgages: theory, instruments, clauses, loan types"
+        items: 9
+        subtopics:
+          - id: "XII.A"
+            label: "Mortgage theory, instruments, and clauses"
+            items: null
+            statute_refs: ["Fla. Stat. § 697.01", "Fla. Stat. § 697.02", "Fla. Stat. § 697.04", "Fla. Stat. § 701.02", "Fla. Stat. § 701.04", "Fla. Stat. § 702.01", "Fla. Stat. § 702.06"]
+          - id: "XII.B"
+            label: "FHA, VA, conventional loans; buying mortgaged property; other financing; qualifying"
+            items: null
+            statute_refs: ["Fla. Stat. § 697.01", "Fla. Stat. § 701.02", "Fla. Stat. § 494.001", "Fla. Stat. § 494.00296", "Fla. Stat. § 687.02", "Fla. Stat. § 687.03"]
+      - id: "XIII"
+        label: "Mortgage markets, regulators, and loan fees"
+        items: 4
+        subtopics:
+          - id: "XIII.A"
+            label: "Money supply, regulators, primary and secondary markets, fees"
+            items: null
+            statute_refs: ["Fla. Stat. § 494.001", "Fla. Stat. § 494.0011", "Fla. Stat. § 494.00296", "Fla. Stat. § 687.02", "Fla. Stat. § 697.01"]
+      - id: "XIV"
+        label: "Real estate computations and closing statements"
+        items: 6
+        subtopics:
+          - id: "XIV.A"
+            label: "Transaction math and closing statement entries"
+            items: null
+            statute_refs: ["Fla. Stat. § 201.02", "Fla. Stat. § 201.08", "Fla. Stat. § 197.333", "Fla. Stat. § 475.25", "Fla. Admin. Code r. 61J2-14.008"]
+      - id: "XV"
+        label: "Real estate market characteristics and analysis"
+        items: 1
+        subtopics:
+          - id: "XV.A"
+            label: "Characteristics of the real estate market"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.278", "Fla. Stat. § 192.001"]
+      - id: "XVI"
+        label: "Appraisal: regulation, value, approaches, CMA, BPO"
+        items: 8
+        subtopics:
+          - id: "XVI.A"
+            label: "Appraisal regulation and USPAP; market value"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.611", "Fla. Stat. § 475.612", "Fla. Stat. § 475.628", "Fla. Stat. § 193.011"]
+          - id: "XVI.B"
+            label: "Sales comparison, cost-depreciation, income approaches; CMA and BPO"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 475.612", "Fla. Stat. § 475.01", "Fla. Stat. § 193.011"]
+      - id: "XVII"
+        label: "Investment analysis and business opportunity brokerage"
+        items: 2
+        subtopics:
+          - id: "XVII.A"
+            label: "Investment characteristics, risk, leverage; business brokerage"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.01", "Fla. Stat. § 475.011", "Fla. Stat. § 475.25", "Fla. Stat. § 517.021"]
+      - id: "XVIII"
+        label: "Taxes affecting real estate"
+        items: 3
+        subtopics:
+          - id: "XVIII.A"
+            label: "City and county property taxes; assessment, exemptions, math"
+            items: null
+            statute_refs: ["Fla. Stat. § 192.001", "Fla. Stat. § 193.011", "Fla. Stat. § 193.155", "Fla. Stat. § 196.031", "Fla. Stat. § 197.122", "Fla. Stat. § 197.162", "Fla. Stat. § 197.432", "Fla. Stat. § 200.065", "Fla. Stat. § 194.011"]
+          - id: "XVIII.B"
+            label: "Federal income tax treatment of real property"
+            items: null
+            statute_refs: ["Fla. Stat. § 475.25", "Fla. Stat. § 196.031", "Fla. Stat. § 201.02"]
+      - id: "XIX"
+        label: "Planning, zoning, and growth management"
+        items: 1
+        subtopics:
+          - id: "XIX.A"
+            label: "Local planning agency, comprehensive plans, zoning, code enforcement"
+            items: null
+            statute_refs: ["Fla. Stat. § 163.3161", "Fla. Stat. § 163.3164", "Fla. Stat. § 163.3174", "Fla. Stat. § 163.3177", "Fla. Stat. § 163.3194", "Fla. Stat. § 162.06", "Fla. Stat. § 553.73"]
+  broker:
+    scored_items: 100
+    pretest_items: "A small number of unscored pilot items may be added (count not published)"
+    domains:
+      - id: "I"
+        label: "Real estate brokerage business: licensure, entities, management, escrow, FREC rules"
+        items: 43
+        subtopics: []
+      - id: "II"
+        label: "Valuing real property"
+        items: 9
+        subtopics: []
+      - id: "III"
+        label: "Listing and selling: agency, disclosures, brokerage relationships"
+        items: 6
+        subtopics: []
+      - id: "IV"
+        label: "Contracts"
+        items: 11
+        subtopics: []
+      - id: "V"
+        label: "Financing"
+        items: 4
+        subtopics: []
+      - id: "VI"
+        label: "Closing transactions"
+        items: 12
+        subtopics: []
+      - id: "VII"
+        label: "Federal income tax laws"
+        items: 5
+        subtopics: []
+      - id: "VIII"
+        label: "Investment"
+        items: 4
+        subtopics: []
+      - id: "IX"
+        label: "Zoning and planning"
+        items: 1
+        subtopics: []
+      - id: "X"
+        label: "Environmental issues"
+        items: 1
+        subtopics: []
+      - id: "XI"
+        label: "Property management"
+        items: 1
+        subtopics: []
+      - id: "XII"
+        label: "The real estate market"
+        items: 3
+        subtopics: []
+references: []
+notes: "Florida's sales associate exam is a single 100-item exam scored 75/100 to pass; the state record carries total_items 100 with state_items null, so scored_items here is the whole exam. The CIB publishes percentages per content area (I 1%, II 6%, III 2%, IV 7%, V 12%, VI 3%, VII 3%, VIII 8%, IX 7%, X 5%, XI 12%, XII 9%, XIII 4%, XIV 6%, XV 1%, XVI 8%, XVII 2%, XVIII 3%, XIX 1% = 100%), recorded as items on 100. Areas I-VII are Florida license law and brokerage practice; VIII-XIX are general topics tested as they operate under Florida law, so their refs point to the Florida chapters the CIB lists as references (chs. 83, 95, 163, 190, 193, 196, 197, 201, 404, 494, 553, 689, 695, 697, 701, 712, 718-721, 725, 760). Broker outline (March 2024 CIB) percentages: 43/9/6/11/4/12/5/4/1/1/1/3 = 100. Cached statute text: ch. 475 pt. I (2025 Florida Statutes, Online Sunshine page via Internet Archive capture) and ch. 61J2 (DBPR/FREC Florida Real Estate Law Book PDF, effective Sept. 2022, via Internet Archive capture); leg.state.fl.us, flsenate.gov and www2.myfloridalicense.com all refused connections from this environment. Other cited chapters are not yet cached."

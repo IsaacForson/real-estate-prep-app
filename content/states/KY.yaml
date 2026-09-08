@@ -1,0 +1,61 @@
+code: KY
+name: Kentucky
+regulator:
+  name: "Kentucky Real Estate Commission (KREC), Public Protection Cabinet"
+  url: "https://krec.ky.gov/"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the exam (https://test-takers.psiexams.com/kyre); passing candidates receive their license application at the PSI test site. Candidates must initiate the FBI background check and complete all education before scheduling."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "75% correct"
+  pass_score_state: "75% correct"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 100
+  retake_policy: "Bulletin (updated 10/1/2023): 'The salesperson and broker examination is divided into two (2) portions: general and state. Candidates who pass one (1) portion of the examination and fail the other need to retake only the section failed. However, if you don't pass both portions within 4 months from passing the portion, you must take both portions again. The fee is $100 regardless if you are taking one portion or both portions.' A new appointment cannot be made the same day; a candidate who fails on Wednesday can call Thursday and retest as soon as Friday. Registration fees are non-refundable and expire one year after registering; candidates must apply for licensure within 60 days of passing."
+  calculator_policy: "Bulletin: 'Only non-programmable calculators that are silent, battery-operated, do not have paper tape printing capabilities, and do not have a keyboard containing the alphabet will be allowed in the examination site.' (Same wording on KREC's Candidate Testing Information page.)"
+broker_exam:
+  national_items: 75
+  state_items: 50
+  total_items: 125
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "75% correct (80 points possible)"
+  pass_score_state: "75% correct"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 100
+prelicense_hours_salesperson: 96
+prelicense_hours_broker: 336
+statute_citation_root: "Ky. Rev. Stat. ch. 324"
+rules_citation_root: "201 Ky. Admin. Regs. ch. 11"
+statute_url: "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=38853"
+rules_url: "https://apps.legislature.ky.gov/law/kar/titles/201/011/"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/2312"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/2312"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://krec.ky.gov/newstatic_info.aspx?static_id=205"
+    used_for: [vendor, salesperson_exam, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.psiexams.com/test-takers/kentucky-real-estate/"
+    used_for: [vendor]
+    accessed: 2026-09-08
+  - url: "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=38853"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://apps.legislature.ky.gov/law/kar/titles/201/011/"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+confidence: high
+last_verified: 2026-09-08
+notes: "Sales Associate exam: General 80 items/150 min + State 50 items/90 min (240 min total); 'you must receive a score of at least 75% correct' on the exams. Broker general portion is 75 items worth 80 points (scenario-based items scored up to 2 points). 5-10 unscored experimental items may be added. The current PSI bulletin is dated 10/1/2023 (the 2015 edition showed 40 state items; now 50). KREC's page confirms the $100 fee, PSI as vendor and the calculator rule. Prelicense: sales associate 96 classroom hours from a Kentucky-approved school OR 6 academic credit hours in real estate; broker 336 classroom hours OR 21 academic credit hours (12 in real estate) OR a 12-credit/192-classroom-hour combination plus 9 elective college hours, plus 24 months' experience averaging 20 hrs/week (KREC notes a 48-hour broker management course is part of the broker education). apps.legislature.ky.gov refused connections from the research environment; both URLs were confirmed via Internet Archive captures."

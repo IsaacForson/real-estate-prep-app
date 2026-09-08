@@ -1,0 +1,297 @@
+# Nevada state-portion blueprint. Source: Pearson VUE "Nevada Real Estate State Content Outlines" (#092901),
+# "Nevada Salesperson and Broker Content Outline" effective January 15, 2025 — one outline with separate
+# percentage weights for salesperson (40 items) and broker (50 items). Pearson publishes WEIGHTS, so `items`
+# is our largest-remainder rounding of weight_pct onto scored_items. Labels are OUR paraphrases (SPEC §3.2).
+id: state_NV
+vendor: pearsonvue
+title: "Nevada state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Nevada Real Estate State Content Outlines (#092901) — Nevada Salesperson and Broker Content Outline"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092901.pdf"
+source_version_or_date: "State outline effective January 15, 2025 (outline booklet rev. 09/2025)"
+accessed: 2026-09-08
+copyright_note: "Structure and weights recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission duties, discipline, and recovery fund"
+        items: 1
+        weight_pct: 2
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.600", "Nev. Rev. Stat. § 645.610", "Nev. Rev. Stat. § 645.680", "Nev. Rev. Stat. § 645.685", "Nev. Rev. Stat. § 645.690", "Nev. Rev. Stat. § 645.760"]
+          - id: "I.B"
+            label: "Sanctions: fines, education, suspension, revocation"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.630", "Nev. Rev. Stat. § 645.633", "Nev. Rev. Stat. § 645.635", "Nev. Rev. Stat. § 645.660", "Nev. Admin. Code § 645.605"]
+          - id: "I.C"
+            label: "Education, Research, and Recovery Fund"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.841", "Nev. Rev. Stat. § 645.842", "Nev. Rev. Stat. § 645.844", "Nev. Rev. Stat. § 645.8491"]
+      - id: "II"
+        label: "Licensing and permit requirements"
+        items: 1
+        weight_pct: 3
+        subtopics:
+          - id: "II.A"
+            label: "License and permit types and qualifications"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.230", "Nev. Rev. Stat. § 645.330", "Nev. Rev. Stat. § 645.343", "Nev. Rev. Stat. § 645.345", "Nev. Rev. Stat. § 645.350", "Nev. Rev. Stat. § 645.6052", "Nev. Rev. Stat. § 645.6054"]
+          - id: "II.B"
+            label: "Renewal, status changes, and grounds for denial"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.575", "Nev. Rev. Stat. § 645.577", "Nev. Rev. Stat. § 645.780", "Nev. Rev. Stat. § 645.785", "Nev. Rev. Stat. § 645.330", "Nev. Rev. Stat. § 645.830"]
+          - id: "II.C"
+            label: "Required notices to the Division: convictions, association, personal changes"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.615", "Nev. Rev. Stat. § 645.520", "Nev. Rev. Stat. § 645.570", "Nev. Rev. Stat. § 645.580"]
+          - id: "II.D"
+            label: "Branch offices and license display"
+            items: null
+            broker_only: true
+            statute_refs: ["Nev. Rev. Stat. § 645.550", "Nev. Rev. Stat. § 645.560"]
+          - id: "II.E"
+            label: "Cooperative certificates for out-of-state brokers"
+            items: null
+            broker_only: true
+            statute_refs: ["Nev. Rev. Stat. § 645.605", "Nev. Rev. Stat. § 645.6056"]
+      - id: "III"
+        label: "Agency and duties owed"
+        items: 8
+        weight_pct: 20
+        subtopics:
+          - id: "III.A"
+            label: "Agency relationships and the brokerage as agent"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.0045", "Nev. Rev. Stat. § 645.005", "Nev. Rev. Stat. § 645.251", "Nev. Rev. Stat. § 645.253"]
+          - id: "III.B"
+            label: "Statutory duties owed; Consent to Act; confirmation of relationship"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 645.254", "Nev. Rev. Stat. § 645.255", "Nev. Rev. Stat. § 645.259", "Nev. Admin. Code § 645.637"]
+          - id: "III.C"
+            label: "Waiver of duties and direct negotiation with the seller"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.254", "Nev. Rev. Stat. § 645.255", "Nev. Rev. Stat. § 645.257"]
+      - id: "IV"
+        label: "License practice: conduct, supervision, compensation, advertising, money"
+        items: 10
+        weight_pct: 24
+        subtopics:
+          - id: "IV.A"
+            label: "Licensee responsibilities and prohibited conduct"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.633", "Nev. Rev. Stat. § 645.630", "Nev. Admin. Code § 645.605"]
+          - id: "IV.B"
+            label: "Activities requiring a license or permit; exemptions"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.030", "Nev. Rev. Stat. § 645.040", "Nev. Rev. Stat. § 645.0445", "Nev. Rev. Stat. § 645.230", "Nev. Rev. Stat. § 645.6052"]
+          - id: "IV.C"
+            label: "Broker supervision of licensees"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.660", "Nev. Admin. Code § 645.600", "Nev. Rev. Stat. § 645.550"]
+          - id: "IV.D"
+            label: "Commissions and other compensation"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.280", "Nev. Rev. Stat. § 645.283", "Nev. Rev. Stat. § 645.635"]
+          - id: "IV.E"
+            label: "Advertising in print and electronic media"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.315", "Nev. Admin. Code § 645.610", "Nev. Rev. Stat. § 645.633"]
+          - id: "IV.F"
+            label: "Broker price opinion rules"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.2515"]
+          - id: "IV.G"
+            label: "Handling of monies"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.630", "Nev. Admin. Code § 645.655", "Nev. Admin. Code § 645.657"]
+      - id: "V"
+        label: "Required disclosures"
+        items: 8
+        weight_pct: 20
+        subtopics:
+          - id: "V.A"
+            label: "Residential Disclosure Guide"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.193", "Nev. Rev. Stat. § 645.252"]
+          - id: "V.B"
+            label: "Seller's Real Property Disclosure form"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 113.100", "Nev. Rev. Stat. § 113.110", "Nev. Rev. Stat. § 113.120", "Nev. Rev. Stat. § 113.130", "Nev. Rev. Stat. § 113.135", "Nev. Rev. Stat. § 113.140", "Nev. Rev. Stat. § 113.150"]
+          - id: "V.C"
+            label: "Common-interest community resale disclosures"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 116.4103", "Nev. Rev. Stat. § 116.4108", "Nev. Rev. Stat. § 116.4109"]
+          - id: "V.D"
+            label: "Disclosure when the licensee is a principal"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 645.633", "Nev. Admin. Code § 645.640"]
+          - id: "V.E"
+            label: "Environmental, construction-defect, and other disclosures"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 645.259", "Nev. Rev. Stat. § 40.688", "Nev. Rev. Stat. § 113.135"]
+      - id: "VI"
+        label: "Contracts, documents, settlement, fees, deposits, timelines"
+        items: 9
+        weight_pct: 23
+        subtopics:
+          - id: "VI.A"
+            label: "Brokerage agreements: listings and buyer representation"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.320", "Nev. Rev. Stat. § 645.3205", "Nev. Rev. Stat. § 645.633"]
+          - id: "VI.B"
+            label: "Preparing and handling transaction documents"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.633", "Nev. Rev. Stat. § 645.254", "Nev. Admin. Code § 645.650"]
+          - id: "VI.C"
+            label: "Settlement statements"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.633", "Nev. Admin. Code § 645.650"]
+          - id: "VI.D"
+            label: "Advance fees"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.322", "Nev. Rev. Stat. § 645.323", "Nev. Rev. Stat. § 645.324"]
+          - id: "VI.E"
+            label: "Earnest money deposits"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.630", "Nev. Admin. Code § 645.657"]
+          - id: "VI.F"
+            label: "Statutory timelines: deposits, records, transfers"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.520", "Nev. Rev. Stat. § 645.615", "Nev. Admin. Code § 645.650"]
+      - id: "VII"
+        label: "Record keeping and trust account records"
+        items: 1
+        weight_pct: 3
+        subtopics:
+          - id: "VII.A"
+            label: "Timely submission, retention, and confidentiality of records"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Admin. Code § 645.650", "Nev. Rev. Stat. § 645.254"]
+          - id: "VII.B"
+            label: "Division inspection of records"
+            items: null
+            broker_only: true
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.600", "Nev. Admin. Code § 645.655"]
+          - id: "VII.C"
+            label: "Trust account records and management"
+            items: null
+            broker_only: true
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Admin. Code § 645.655", "Nev. Admin. Code § 645.657"]
+      - id: "VIII"
+        label: "Special topics: subdivisions, timeshares, water, solar, smart homes"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "VIII.A"
+            label: "Subdivided land sales"
+            items: null
+            broker_only: true
+            statute_refs: ["Nev. Rev. Stat. § 119.119", "Nev. Rev. Stat. § 119.175", "Nev. Rev. Stat. § 119.180", "Nev. Rev. Stat. § 645.633"]
+          - id: "VIII.B"
+            label: "Timeshares"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 119A.300", "Nev. Rev. Stat. § 119A.410", "Nev. Rev. Stat. § 645.633"]
+          - id: "VIII.C"
+            label: "Water rights disclosure"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 113.130", "Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 533.025"]
+          - id: "VIII.D"
+            label: "Solar installations"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 113.130"]
+          - id: "VIII.E"
+            label: "Smart-home devices"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 113.130"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission duties, discipline, and recovery fund"
+        items: 3
+        weight_pct: 5
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, sanctions, recovery fund"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.600", "Nev. Rev. Stat. § 645.610", "Nev. Rev. Stat. § 645.630", "Nev. Rev. Stat. § 645.633", "Nev. Rev. Stat. § 645.635", "Nev. Rev. Stat. § 645.685", "Nev. Rev. Stat. § 645.841", "Nev. Rev. Stat. § 645.8491"]
+      - id: "II"
+        label: "Licensing and permit requirements"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "II.A"
+            label: "License types, maintenance, notices, branch offices, cooperative certificates"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.230", "Nev. Rev. Stat. § 645.330", "Nev. Rev. Stat. § 645.343", "Nev. Rev. Stat. § 645.550", "Nev. Rev. Stat. § 645.560", "Nev. Rev. Stat. § 645.575", "Nev. Rev. Stat. § 645.605", "Nev. Rev. Stat. § 645.615", "Nev. Rev. Stat. § 645.780"]
+      - id: "III"
+        label: "Agency and duties owed"
+        items: 10
+        weight_pct: 20
+        subtopics:
+          - id: "III.A"
+            label: "Agency, statutory duties, consent to act, waiver"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.0045", "Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 645.253", "Nev. Rev. Stat. § 645.254", "Nev. Rev. Stat. § 645.255", "Nev. Rev. Stat. § 645.257", "Nev. Rev. Stat. § 645.259", "Nev. Admin. Code § 645.637"]
+      - id: "IV"
+        label: "License practice: conduct, supervision, compensation, advertising, money"
+        items: 10
+        weight_pct: 20
+        subtopics:
+          - id: "IV.A"
+            label: "Responsibilities, licensable activity, supervision, compensation, advertising, BPOs, monies"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.030", "Nev. Rev. Stat. § 645.0445", "Nev. Rev. Stat. § 645.2515", "Nev. Rev. Stat. § 645.280", "Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.315", "Nev. Rev. Stat. § 645.633", "Nev. Rev. Stat. § 645.660", "Nev. Admin. Code § 645.600", "Nev. Admin. Code § 645.605", "Nev. Admin. Code § 645.610"]
+      - id: "V"
+        label: "Required disclosures"
+        items: 8
+        weight_pct: 15
+        subtopics:
+          - id: "V.A"
+            label: "Disclosure Guide, SRPD, common-interest communities, licensee as principal, other"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.193", "Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 645.259", "Nev. Rev. Stat. § 113.130", "Nev. Rev. Stat. § 113.135", "Nev. Rev. Stat. § 116.4109", "Nev. Rev. Stat. § 40.688"]
+      - id: "VI"
+        label: "Contracts, documents, settlement, fees, deposits, timelines"
+        items: 11
+        weight_pct: 22
+        subtopics:
+          - id: "VI.A"
+            label: "Brokerage agreements, documents, settlement statements, advance fees, deposits, timelines"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.320", "Nev. Rev. Stat. § 645.3205", "Nev. Rev. Stat. § 645.322", "Nev. Rev. Stat. § 645.323", "Nev. Rev. Stat. § 645.324", "Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.633", "Nev. Admin. Code § 645.650", "Nev. Admin. Code § 645.657"]
+      - id: "VII"
+        label: "Record keeping and trust account records"
+        items: 4
+        weight_pct: 8
+        subtopics:
+          - id: "VII.A"
+            label: "Record maintenance, inspection, trust account management"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 645.310", "Nev. Rev. Stat. § 645.600", "Nev. Admin. Code § 645.650", "Nev. Admin. Code § 645.655", "Nev. Admin. Code § 645.657"]
+      - id: "VIII"
+        label: "Special topics: subdivisions, timeshares, water, solar, smart homes"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "VIII.A"
+            label: "Subdivisions, timeshares, water rights, solar, smart homes"
+            items: null
+            statute_refs: ["Nev. Rev. Stat. § 119.119", "Nev. Rev. Stat. § 119.175", "Nev. Rev. Stat. § 119.180", "Nev. Rev. Stat. § 119A.300", "Nev. Rev. Stat. § 113.130", "Nev. Rev. Stat. § 645.252", "Nev. Rev. Stat. § 533.025"]
+references: []
+notes: >-
+  Pearson publishes percentage weights (sales 2/3/20/24/20/23/3/5; broker 5/5/20/20/15/22/8/5). Salesperson
+  items are the largest-remainder rounding onto 40 (1/1/8/10/8/9/1/2); broker onto 50 (3/2/10/10/8/11/4/2 —
+  the four 2.5-point domains were split 3/2/8/2 to reach 50). Subtopics the outline marks "(Broker Only)" carry
+  broker_only: true but appear under salesperson for structure. No Nevada ground truth is cached: leg.state.nv.us
+  (NRS 645 / NAC 645) returns Cloudflare 403 'Sorry, you have been blocked' to curl, WebFetch and the browser
+  pane; NRED's site links only to leg.state.nv.us, and its own 'Nevada Law and Reference Guide' (5th ed. 2020,
+  red.nv.gov/.../law_guide.pdf, PDF structure partially corrupt) is narrative commentary with footnoted NRS/NAC
+  cites rather than statute text, so it was NOT ingested. NRS/NAC section refs above were checked against that
+  guide's footnotes where possible and should be verified once the statute text is cached.

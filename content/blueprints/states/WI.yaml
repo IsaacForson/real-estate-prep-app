@@ -1,0 +1,309 @@
+# Wisconsin blueprint. Wisconsin gives ONE combined 140-item salesperson exam (single scaled pass
+# score); the Pearson VUE "Wisconsin Real Estate Content Outlines" (#095006) labels the whole
+# 140-item outline the "state portion", so this blueprint covers the entire exam. Structure and
+# counts from that outline; labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_WI
+vendor: pearsonvue
+title: "Wisconsin combined salesperson exam outline (internal blueprint)"
+source_document: "Pearson VUE Wisconsin Real Estate Content Outlines (#095006) — salesperson and broker examinations"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095006.pdf"
+source_version_or_date: "Document rev. 06/2026; outlines effective July 1, 2016"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 140
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Property ownership and transfer"
+        items: 14
+        subtopics:
+          - id: "I.A"
+            label: "Ownership: encumbrances, real vs. personal property, Wisconsin co-ownership forms"
+            items: 6
+            statute_refs: ["Wis. Stat. § 700.17", "Wis. Stat. § 700.19", "Wis. Stat. § 700.20", "Wis. Stat. § 766.31", "Wis. Stat. § 766.605", "Wis. Stat. § 66.0703", "Wis. Stat. § 779.01", "Wis. Stat. § 706.01"]
+          - id: "I.B"
+            label: "Transfer: deeds, title insurance, defects, security interests, recording"
+            items: 8
+            statute_refs: ["Wis. Stat. § 706.02", "Wis. Stat. § 706.05", "Wis. Stat. § 706.06", "Wis. Stat. § 706.08", "Wis. Stat. § 706.09", "Wis. Stat. § 706.10", "Wis. Stat. § 706.11", "Wis. Stat. § 409.203", "Wis. Stat. § 402.201"]
+      - id: "II"
+        label: "Land use controls and regulations"
+        items: 5
+        subtopics:
+          - id: "II.A"
+            label: "Private controls: restrictions, deed conditions, covenants"
+            items: null
+            statute_refs: ["Wis. Stat. § 893.33", "Wis. Stat. § 706.10"]
+          - id: "II.B"
+            label: "Public controls: zoning, conditional and nonconforming uses, variances, setbacks"
+            items: null
+            statute_refs: ["Wis. Stat. § 62.23", "Wis. Stat. § 59.69", "Wis. Stat. § 60.61", "Wis. Stat. § 61.35"]
+          - id: "II.C"
+            label: "Planned unit developments"
+            items: null
+            statute_refs: ["Wis. Stat. § 62.23", "Wis. Stat. § 236.45"]
+      - id: "III"
+        label: "Valuation, financing, and calculations"
+        items: 20
+        subtopics:
+          - id: "III.A"
+            label: "Valuation and market analysis; value definitions"
+            items: 3
+            statute_refs: ["Wis. Stat. § 70.32", "Wis. Stat. § 70.47", "Wis. Stat. § 458.01", "Wis. Stat. § 452.01"]
+          - id: "III.B"
+            label: "Financing: loan types, terms, RESPA/Reg Z/TRID, fraud, sources"
+            items: 8
+            statute_refs: ["Wis. Stat. § 138.052", "Wis. Stat. § 138.056", "Wis. Stat. § 224.71", "Wis. Stat. § 224.77", "Wis. Stat. § 428.101", "Wis. Stat. § 428.102", "Wis. Stat. § 706.02", "Wis. Stat. § 943.20"]
+          - id: "III.C"
+            label: "Calculations: prorations, tax (mill rate), LTV, transfer fee"
+            items: 9
+            statute_refs: ["Wis. Stat. § 77.22", "Wis. Stat. § 77.25", "Wis. Stat. § 70.32", "Wis. Stat. § 74.09", "Wis. Stat. § 74.11", "Wis. Stat. § 74.12"]
+      - id: "IV"
+        label: "Agency"
+        items: 32
+        subtopics:
+          - id: "IV.A"
+            label: "Agency law: types, duties to clients and customers, creation, termination"
+            items: 17
+            statute_refs: ["Wis. Stat. § 452.01", "Wis. Stat. § 452.133", "Wis. Stat. § 452.134", "Wis. Stat. § 452.135", "Wis. Stat. § 452.137", "Wis. Stat. § 452.138", "Wis. Stat. § 452.139", "Wis. Stat. § 452.142", "Wis. Stat. § 452.19"]
+          - id: "IV.B"
+            label: "Agency contracts: WB-1, WB-4, WB-36, and other agreements"
+            items: 15
+            statute_refs: ["Wis. Stat. § 452.135", "Wis. Stat. § 452.133", "Wis. Stat. § 240.10", "Wis. Admin. Code § REEB 16.02", "Wis. Admin. Code § REEB 16.03", "Wis. Admin. Code § REEB 16.05", "Wis. Admin. Code § REEB 24.08"]
+      - id: "V"
+        label: "Disclosures"
+        items: 13
+        subtopics:
+          - id: "V.A"
+            label: "Environmental disclosures"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.23", "Wis. Stat. § 709.03", "Wis. Stat. § 292.11", "Wis. Admin. Code § REEB 24.07"]
+          - id: "V.B"
+            label: "Owner condition reports for residential property and vacant land"
+            items: null
+            statute_refs: ["Wis. Stat. § 709.01", "Wis. Stat. § 709.02", "Wis. Stat. § 709.03", "Wis. Stat. § 709.033", "Wis. Stat. § 709.035", "Wis. Stat. § 709.05", "Wis. Stat. § 709.06", "Wis. Stat. § 709.07", "Wis. Stat. § 709.08"]
+          - id: "V.C"
+            label: "Condominium disclosure requirements"
+            items: null
+            statute_refs: ["Wis. Stat. § 703.33", "Wis. Stat. § 703.335", "Wis. Stat. § 703.365"]
+          - id: "V.D"
+            label: "Federal lead-based paint disclosure"
+            items: null
+            statute_refs: ["42 U.S.C. § 4852d", "24 C.F.R. pt. 35 subpt. A", "40 C.F.R. pt. 745 subpt. F", "Wis. Admin. Code § REEB 24.07"]
+          - id: "V.E"
+            label: "Other licensee disclosure duties, including sex offender registry notice"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.23", "Wis. Stat. § 452.24", "Wis. Stat. § 452.133", "Wis. Admin. Code § REEB 24.07", "Wis. Admin. Code § REEB 24.05"]
+      - id: "VI"
+        label: "Contract law and approved forms"
+        items: 22
+        subtopics:
+          - id: "VI.A"
+            label: "Approved forms, legal advice, copies, and record retention"
+            items: 6
+            statute_refs: ["Wis. Stat. § 452.40", "Wis. Admin. Code § REEB 16.02", "Wis. Admin. Code § REEB 16.03", "Wis. Admin. Code § REEB 16.04", "Wis. Admin. Code § REEB 16.05", "Wis. Admin. Code § REEB 16.06", "Wis. Admin. Code § REEB 15.04", "Wis. Admin. Code § REEB 24.14"]
+          - id: "VI.B"
+            label: "Offers to purchase and related forms: WB-11, -13, -14, -40, -41, -44, -46"
+            items: 16
+            statute_refs: ["Wis. Admin. Code § REEB 16.02", "Wis. Admin. Code § REEB 16.05", "Wis. Admin. Code § REEB 24.13", "Wis. Admin. Code § REEB 24.09", "Wis. Stat. § 706.02", "Wis. Stat. § 240.08", "Wis. Stat. § 452.23"]
+      - id: "VII"
+        label: "Business ethics and practice"
+        items: 14
+        subtopics:
+          - id: "VII.A"
+            label: "Conduct and ethical practice rules for licensees"
+            items: null
+            statute_refs: ["Wis. Admin. Code § REEB 24.01", "Wis. Admin. Code § REEB 24.02", "Wis. Admin. Code § REEB 24.03", "Wis. Admin. Code § REEB 24.04", "Wis. Admin. Code § REEB 24.05", "Wis. Admin. Code § REEB 24.06", "Wis. Admin. Code § REEB 24.075", "Wis. Admin. Code § REEB 24.08", "Wis. Admin. Code § REEB 24.09", "Wis. Admin. Code § REEB 24.10", "Wis. Admin. Code § REEB 24.11", "Wis. Admin. Code § REEB 24.12", "Wis. Admin. Code § REEB 24.13", "Wis. Admin. Code § REEB 24.14", "Wis. Admin. Code § REEB 24.17", "Wis. Stat. § 452.14"]
+          - id: "VII.B"
+            label: "Real estate practice: licensing, discipline, firm responsibilities"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.03", "Wis. Stat. § 452.05", "Wis. Stat. § 452.09", "Wis. Stat. § 452.12", "Wis. Stat. § 452.132", "Wis. Stat. § 452.14", "Wis. Stat. § 452.17", "Wis. Stat. § 452.19", "Wis. Stat. § 452.25"]
+      - id: "VIII"
+        label: "Fair housing"
+        items: 6
+        subtopics:
+          - id: "VIII.A"
+            label: "Wisconsin Open Housing Law"
+            items: null
+            statute_refs: ["Wis. Stat. § 106.50", "Wis. Stat. § 106.52"]
+          - id: "VIII.B"
+            label: "Local equal-opportunity ordinances"
+            items: null
+            statute_refs: ["Wis. Stat. § 106.50", "Wis. Stat. § 66.1011"]
+          - id: "VIII.C"
+            label: "Accessibility and auxiliary services (ADA)"
+            items: null
+            statute_refs: ["42 U.S.C. § 12182", "Wis. Stat. § 106.52", "Wis. Stat. § 106.50"]
+      - id: "IX"
+        label: "Federal antitrust law"
+        items: 2
+        subtopics:
+          - id: "IX.A"
+            label: "Price fixing"
+            items: null
+            statute_refs: ["15 U.S.C. § 1", "Wis. Stat. § 133.03"]
+          - id: "IX.B"
+            label: "Group boycotts"
+            items: null
+            statute_refs: ["15 U.S.C. § 1", "Wis. Stat. § 133.03"]
+      - id: "X"
+        label: "Miscellaneous: trust accounts, fee splitting, firms, leases, rentals"
+        items: 12
+        subtopics:
+          - id: "X.A"
+            label: "Trust accounts"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.13", "Wis. Admin. Code § REEB 18.02", "Wis. Admin. Code § REEB 18.03", "Wis. Admin. Code § REEB 18.031", "Wis. Admin. Code § REEB 18.04", "Wis. Admin. Code § REEB 18.05", "Wis. Admin. Code § REEB 18.06", "Wis. Admin. Code § REEB 18.09", "Wis. Admin. Code § REEB 18.10", "Wis. Admin. Code § REEB 18.11", "Wis. Admin. Code § REEB 18.13"]
+          - id: "X.B"
+            label: "Fee splitting and compensation from others"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.19", "Wis. Stat. § 452.03", "Wis. Admin. Code § REEB 24.05"]
+          - id: "X.C"
+            label: "Responsibilities of firms and licensees"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.132", "Wis. Stat. § 452.12", "Wis. Stat. § 452.133", "Wis. Admin. Code § REEB 17.02"]
+          - id: "X.D"
+            label: "Legal effect of leases; approved lease forms"
+            items: null
+            statute_refs: ["Wis. Stat. § 704.01", "Wis. Stat. § 704.03", "Wis. Stat. § 704.05", "Wis. Stat. § 704.07", "Wis. Stat. § 704.17", "Wis. Stat. § 704.19", "Wis. Admin. Code § REEB 16.02"]
+          - id: "X.E"
+            label: "Residential rental practices"
+            items: null
+            statute_refs: ["Wis. Stat. § 704.28", "Wis. Stat. § 704.44", "Wis. Stat. § 704.95", "Wis. Admin. Code § ATCP 134.02", "Wis. Admin. Code § ATCP 134.04", "Wis. Admin. Code § ATCP 134.06", "Wis. Admin. Code § ATCP 134.08", "Wis. Admin. Code § ATCP 134.09"]
+  broker:
+    scored_items: 100
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Real estate practice: licenses, duties, relationships, disclosures"
+        items: 19
+        subtopics:
+          - id: "I.A"
+            label: "Licenses"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.03", "Wis. Stat. § 452.05", "Wis. Stat. § 452.09", "Wis. Stat. § 452.12", "Wis. Stat. § 452.25"]
+          - id: "I.B"
+            label: "Trust accounts (statutory)"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.13"]
+          - id: "I.C"
+            label: "Duties of licensees"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.133"]
+          - id: "I.D"
+            label: "Confirming and disclosing relationships"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.135"]
+          - id: "I.E"
+            label: "Firms serving more than one client in a transaction"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.134"]
+          - id: "I.F"
+            label: "Changes to common-law duties of brokers and parties"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.138", "Wis. Stat. § 452.139"]
+          - id: "I.G"
+            label: "Disclosures, investigations, and inspections by licensees"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.23"]
+          - id: "I.H"
+            label: "Sex offender registry notice; immunity"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.24"]
+          - id: "I.I"
+            label: "Condominium disclosure requirements"
+            items: null
+            statute_refs: ["Wis. Stat. § 703.33", "Wis. Stat. § 703.335"]
+          - id: "I.J"
+            label: "Responsibilities of firms and licensees"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.132"]
+          - id: "I.K"
+            label: "Changes of name, address, trade name, or business form"
+            items: null
+            statute_refs: ["Wis. Stat. § 452.12", "Wis. Admin. Code § REEB 17.02", "Wis. Admin. Code § REEB 17.03"]
+      - id: "II"
+        label: "Trust accounts (rules)"
+        items: 12
+        subtopics:
+          - id: "II.A"
+            label: "Definitions, deposits, account types and number, opening/closing, designation"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Stat. § 452.13", "Wis. Admin. Code § REEB 18.02", "Wis. Admin. Code § REEB 18.03", "Wis. Admin. Code § REEB 18.031", "Wis. Admin. Code § REEB 18.032", "Wis. Admin. Code § REEB 18.04"]
+          - id: "II.B"
+            label: "Department notice, examination authorization, signatures, receipts, escrow agreements"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 18.05", "Wis. Admin. Code § REEB 18.06", "Wis. Admin. Code § REEB 18.07", "Wis. Admin. Code § REEB 18.08", "Wis. Admin. Code § REEB 18.09", "Wis. Admin. Code § REEB 18.10", "Wis. Admin. Code § REEB 18.11"]
+          - id: "II.C"
+            label: "Disbursement, commingling, non-depositable items, bookkeeping, violations"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 18.09", "Wis. Admin. Code § REEB 18.11", "Wis. Admin. Code § REEB 18.12", "Wis. Admin. Code § REEB 18.13", "Wis. Admin. Code § REEB 18.14", "Wis. Stat. § 452.13", "Wis. Stat. § 452.14"]
+      - id: "III"
+        label: "Conduct and ethical practices for licensees"
+        items: 22
+        subtopics:
+          - id: "III.A"
+            label: "Definitions, competent service, advertising, compensation and interest disclosure"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 24.02", "Wis. Admin. Code § REEB 24.03", "Wis. Admin. Code § REEB 24.04", "Wis. Admin. Code § REEB 24.05"]
+          - id: "III.B"
+            label: "Inspection/disclosure duties, tie-ins, writings, agency agreements, net listings"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 24.07", "Wis. Admin. Code § REEB 24.075", "Wis. Admin. Code § REEB 24.08", "Wis. Admin. Code § REEB 24.09", "Wis. Admin. Code § REEB 24.10", "Wis. Admin. Code § REEB 24.11"]
+          - id: "III.C"
+            label: "Confidentiality of offers, drafting and submitting offers, rule availability, miscellaneous"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 24.12", "Wis. Admin. Code § REEB 24.13", "Wis. Admin. Code § REEB 24.14", "Wis. Admin. Code § REEB 24.16", "Wis. Admin. Code § REEB 24.17"]
+      - id: "IV"
+        label: "Approved forms and legal advice"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Approved forms: definitions, when and how to use, legal advice limits"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Stat. § 452.40", "Wis. Admin. Code § REEB 16.02", "Wis. Admin. Code § REEB 16.03", "Wis. Admin. Code § REEB 16.04", "Wis. Admin. Code § REEB 16.05", "Wis. Admin. Code § REEB 16.06"]
+      - id: "V"
+        label: "Drafting and supervision knowledge"
+        items: 37
+        subtopics:
+          - id: "V.A"
+            label: "Forms: WB-1, -11, -25, -36, -40, -41, -44, -45, -46; condition reports; agency and lead disclosures"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 16.02", "Wis. Admin. Code § REEB 16.05", "Wis. Admin. Code § REEB 24.13", "Wis. Stat. § 452.135", "Wis. Stat. § 709.02", "Wis. Stat. § 709.03", "42 U.S.C. § 4852d", "Wis. Stat. § 706.02"]
+          - id: "V.B"
+            label: "Form issues: transmitting complete contracts, drafting contingencies"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 24.13", "Wis. Admin. Code § REEB 16.06", "Wis. Stat. § 137.15", "Wis. Stat. § 452.23"]
+          - id: "V.C"
+            label: "Furnishing copies and maintaining records"
+            items: null
+            broker_only: true
+            statute_refs: ["Wis. Admin. Code § REEB 15.04", "Wis. Admin. Code § REEB 24.14", "Wis. Stat. § 452.132"]
+      - id: "VI"
+        label: "Miscellaneous: fair housing and lead-based paint"
+        items: 4
+        subtopics:
+          - id: "VI.A"
+            label: "Fair housing law"
+            items: null
+            statute_refs: ["Wis. Stat. § 106.50", "42 U.S.C. § 3604"]
+          - id: "VI.B"
+            label: "Federal lead-based paint law"
+            items: null
+            statute_refs: ["42 U.S.C. § 4852d", "24 C.F.R. pt. 35 subpt. A", "40 C.F.R. pt. 745 subpt. F"]
+references:
+  - title: "Wisconsin Statutes chapter 452 (Real Estate Practice); chapters 700, 703, 704, 706, 709 as cited"
+    publisher: "Wisconsin Legislature (docs.legis.wisconsin.gov)"
+  - title: "Wisconsin Administrative Code chapters REEB 11-25 (Real Estate Examining Board) and ATCP 134"
+    publisher: "Wisconsin Legislature (docs.legis.wisconsin.gov)"
+notes: "COMBINED EXAM: Wisconsin administers one 140-item salesperson exam with a single scaled pass score; the Pearson VUE outline does not separate a state section, so scored_items = 140 (= total_items in the state record; state_items/national_items stay null) and this blueprint covers the whole exam, including general (national-style) content. Domains I, III, IV and VI publish subtopic counts that sum to the domain count, so those subtopics become planning nodes; the rest are domain-level nodes. Broker exam: 100 items (19/12/22/6/37/4). GROUND TRUTH NOT YET CACHED: docs.legis.wisconsin.gov (the only official publisher of Wis. Stat. and Wis. Admin. Code) refused all connections on 2026-09-08 (curl: connection timed out; WebFetch: ECONNREFUSED 165.189.140.59:443; a real-browser attempt also failed), so no Wisconsin statute or REEB rule text has been ingested and `pipeline draft` cannot run for WI until it is. Section-level statute_refs were assigned from the outline's own statute/rule references (Ch. 452, REEB 16/18/24, ch. 709, § 703.33, § 452.24) plus standard Wisconsin code structure; REEB section numbers in particular should be re-checked against the live code when docs.legis is reachable."

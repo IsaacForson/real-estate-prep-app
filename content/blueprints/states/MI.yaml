@@ -1,0 +1,203 @@
+# Michigan state-portion blueprint. Source: PSI Michigan Real Estate Candidate Information Bulletin
+# (Updated 7/6/2026), "(Michigan Specific Portion) Michigan State Laws and Rules". Labels are OUR
+# paraphrases (SPEC §3.2). Michigan grades ONE combined score (115 items) but the outline separates the
+# Michigan-specific items: salesperson 3+5+10+5+12 = 35, broker 3+4+15+5+13 = 40. Areas are unnumbered
+# in the bulletin; ids "1"–"5" are ours, in bulletin order.
+id: state_MI
+vendor: psi
+title: "Michigan state-portion outline (internal blueprint)"
+source_document: "PSI Michigan Real Estate Candidate Information Bulletin — Michigan Specific Portion (Michigan State Laws and Rules)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/836"
+source_version_or_date: "Bulletin updated 7/6/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 35
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Department and Board powers, investigations, hearings, penalties"
+        items: 3
+        subtopics:
+          - id: "1.1"
+            label: "General powers of LARA and the Board of Real Estate Brokers and Salespersons"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2501", "Mich. Comp. Laws §§ 339.201–339.211", "Mich. Comp. Laws § 339.308"]
+          - id: "1.2"
+            label: "Complaints, investigations, compliance conferences, hearings"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 339.501–339.522", "Mich. Admin. Code R 339.1701–339.1771"]
+          - id: "1.3"
+            label: "Penalties and sanctions for violations"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.602", "Mich. Comp. Laws § 339.604", "Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.601"]
+      - id: "2"
+        label: "Licensing: who needs a license, license types, eligibility, renewal, transfers"
+        items: 5
+        subtopics:
+          - id: "2.1"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2501", "Mich. Comp. Laws § 339.2502", "Mich. Comp. Laws § 339.2503", "Mich. Comp. Laws § 339.601"]
+          - id: "2.2"
+            label: "Broker, associate broker, salesperson, and entity licenses"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2501", "Mich. Comp. Laws § 339.2505", "Mich. Comp. Laws § 339.2506", "Mich. Comp. Laws § 339.2507"]
+          - id: "2.3"
+            label: "Eligibility: education, examination, experience, good moral character"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2504", "Mich. Comp. Laws § 339.2504a", "Mich. Comp. Laws § 339.2505", "Mich. Comp. Laws §§ 338.41–338.47", "Mich. Admin. Code R 339.22201–339.22235"]
+          - id: "2.4"
+            label: "License renewal cycle and continuing education"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2504a", "Mich. Comp. Laws § 339.204", "Mich. Admin. Code R 339.22301–339.22321"]
+          - id: "2.5"
+            label: "Transfers, terminations, and changes to a license"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2508", "Mich. Comp. Laws § 339.2509", "Mich. Comp. Laws § 339.2510", "Mich. Admin. Code R 339.22201–339.22235"]
+      - id: "3"
+        label: "Statutory duties governing licensee activities"
+        items: 10
+        subtopics:
+          - id: "3.1"
+            label: "Advertising in the broker's name; team and internet ads"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Admin. Code R 339.22301–339.22321"]
+          - id: "3.2"
+            label: "Commissions and fees; services for which fees may be charged"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.2514", "Mich. Comp. Laws § 339.2515"]
+          - id: "3.3"
+            label: "Disclosure of licensee interest and conflicts of interest"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.2517"]
+          - id: "3.4"
+            label: "Handling contracts, documents, listings, and recommendations"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.2517", "Mich. Admin. Code R 339.22301–339.22321"]
+          - id: "3.5"
+            label: "Handling money: trust accounts and deposits"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Admin. Code R 339.22301–339.22321"]
+          - id: "3.6"
+            label: "Place of business and branch offices (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["Mich. Comp. Laws § 339.2507", "Mich. Comp. Laws § 339.2508", "Mich. Admin. Code R 339.22201–339.22235"]
+          - id: "3.7"
+            label: "Record-keeping duties"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Admin. Code R 339.22301–339.22321"]
+          - id: "3.8"
+            label: "Inducements and gifts"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.2514"]
+          - id: "3.9"
+            label: "Alternative dispute resolution versus arbitration (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 600.5001 et seq."]
+          - id: "3.10"
+            label: "No duty to disclose stigmatized or psychologically impacted property"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2518", "Mich. Comp. Laws § 565.957"]
+          - id: "3.11"
+            label: "Closing responsibilities and closing statements"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2512", "Mich. Admin. Code R 339.22301–339.22321"]
+      - id: "4"
+        label: "Agency and contractual relationships: agency types, disclosure, broker-salesperson, service agreements"
+        items: 5
+        subtopics:
+          - id: "4.1"
+            label: "Agency relationships available: transaction coordinator, designated, dual agency"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2501", "Mich. Comp. Laws § 339.2517", "Mich. Comp. Laws § 339.2512"]
+          - id: "4.2"
+            label: "Agency disclosure form and timing"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2517"]
+          - id: "4.3"
+            label: "Broker and salesperson relationship; supervision; independent contractors"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2508", "Mich. Comp. Laws § 339.2512", "Mich. Comp. Laws § 339.2514"]
+          - id: "4.4"
+            label: "Service provision agreements: listings and buyer agency contracts"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 339.2501", "Mich. Comp. Laws § 339.2517", "Mich. Comp. Laws § 339.2512"]
+      - id: "5"
+        label: "Other Michigan laws affecting real estate practice"
+        items: 12
+        subtopics:
+          - id: "5.1"
+            label: "Land Division Act and private road disclosure"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 560.101–560.293", "Mich. Comp. Laws § 560.261"]
+          - id: "5.2"
+            label: "Michigan fair housing: Elliott-Larsen and Persons with Disabilities Civil Rights Acts"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 37.2501–37.2507", "Mich. Comp. Laws § 37.2102", "Mich. Comp. Laws §§ 37.1501–37.1507"]
+          - id: "5.3"
+            label: "Landlord-Tenant Relationship Act and Truth in Renting Act"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 554.601–554.616", "Mich. Comp. Laws §§ 554.631–554.641"]
+          - id: "5.4"
+            label: "Usury limits (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["Mich. Comp. Laws § 438.31", "Mich. Comp. Laws § 438.31c", "Mich. Comp. Laws § 438.32"]
+          - id: "5.5"
+            label: "State and county real estate transfer taxes"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 207.521–207.537", "Mich. Comp. Laws §§ 207.501–207.513"]
+          - id: "5.6"
+            label: "Michigan Condominium Act"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 559.101–559.276", "Mich. Comp. Laws § 559.184a"]
+          - id: "5.7"
+            label: "Michigan State Housing Development Authority programs"
+            items: null
+            statute_refs: ["Mich. Comp. Laws § 125.1401 et seq.", "Mich. Comp. Laws § 125.1422"]
+          - id: "5.8"
+            label: "Michigan Antitrust Reform Act"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 445.771–445.788", "Mich. Comp. Laws § 445.772"]
+          - id: "5.9"
+            label: "Right to Farm Act and the seller's disclosure statement"
+            items: null
+            statute_refs: ["Mich. Comp. Laws §§ 286.471–286.474", "Mich. Comp. Laws § 565.957", "Mich. Comp. Laws §§ 565.951–565.966"]
+          - id: "5.10"
+            label: "Land contracts after Dodd-Frank (federal seller-financing limits)"
+            items: null
+            statute_refs: ["15 U.S.C. § 1639c", "12 C.F.R. § 1026.36", "12 C.F.R. § 1026.43", "Mich. Comp. Laws § 565.356"]
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Department and Board powers, investigations, hearings, penalties"
+        items: 3
+        subtopics: []
+      - id: "2"
+        label: "Licensing: who needs a license, license types, eligibility, renewal, transfers"
+        items: 4
+        subtopics: []
+      - id: "3"
+        label: "Statutory duties governing licensee activities"
+        items: 15
+        subtopics: []
+      - id: "4"
+        label: "Agency and contractual relationships: agency types, disclosure, broker-salesperson, service agreements"
+        items: 5
+        subtopics: []
+      - id: "5"
+        label: "Other Michigan laws affecting real estate practice"
+        items: 13
+        subtopics: []
+references:
+  - title: "Occupational Code, 1980 PA 299, Article 25 (MCL 339.2501–339.2518) and Articles 1–6 (MCL 339.101–339.606)"
+    publisher: "Michigan Legislature"
+  - title: "Mich. Admin. Code R 339.22101–339.22667 (Real Estate Brokers and Salespersons — General Rules); R 339.1701–339.1771 (Disciplinary Proceedings)"
+    publisher: "Michigan Department of Licensing and Regulatory Affairs"
+notes: "Michigan issues ONE combined score (salesperson 115 items / broker 115 items); scored_items here is the Michigan-specific item total from the bulletin outline (35 / 40), matching content/states/MI.yaml state_items. Broker subtopics mirror the salesperson list plus the broker-only topics (3.6, 3.9, 5.4). NO statute text is cached for MI: legislature.mi.gov returns HTTP 403 (Check Point CloudGuard WAF 'attack blocked') to curl, WebFetch (TLS verify failure), and the headless browser pane; ars.apps.lara.state.mi.us (General Rules PDF) returns HTTP 403 to curl. Article 25 section citations are from our knowledge of the code (339.2501 definitions; 339.2502-2503 licensure/exemptions; 339.2504-2505 qualifications and education; 339.2506-2510 entity, office, and transfer provisions; 339.2512 prohibited conduct; 339.2514-2515 compensation; 339.2517 disclosure of agency relationship; 339.2518 prohibited actions) and the administrative-rule ranges are approximate part ranges, not verified against the official rule text."

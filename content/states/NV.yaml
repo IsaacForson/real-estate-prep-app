@@ -1,0 +1,56 @@
+code: NV
+name: Nevada
+regulator:
+  name: "Nevada Real Estate Division (NRED), Department of Business and Industry"
+  url: "https://red.nv.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exam (test center or OnVUE online). Candidates must first register and pay the exam fee to the Real Estate Division at https://red.prod.secure.nv.gov; the Division transfers the record to Pearson VUE, which emails an Authorization to Test (2-3 business days) before scheduling."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5 to 10 additional unscored pretest questions per portion, included in the time allotted (national content outline specifies 5 on the national portion; state outline says 5-10)"
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 100.00
+  retake_policy: "'The salesperson and broker examination is divided into two parts: general (national) and state. Those who pass one part of the examination and fail the other, need to retake only the failed part within twelve (12) months. Candidates who after twelve (12) months have not passed both parts must retake the entire examination.' 'The cost for each retake is the same as the initial examination' ($100 combination; $100 for a single portion). Passing exam results must be dated within 12 months when applying for the license."
+  calculator_policy: "'Candidates are not permitted to bring or use their own calculator. However, a calculator is built into the following Real Estate examinations...: Broker, Business Broker, Community Association Manager, Property Manager, Salesperson, Timeshare Sales.' A tutorial on the in-exam calculator precedes the exam and does not reduce exam time."
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5 to 10 per portion"
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 100.00
+prelicense_hours_salesperson: 120
+prelicense_hours_broker: null
+statute_citation_root: "Nev. Rev. Stat. ch. 645 (Real Estate Brokers and Salespersons)"
+rules_citation_root: "Nev. Admin. Code ch. 645"
+statute_url: "https://www.leg.state.nv.us/nrs/nrs-645.html"
+rules_url: "https://www.leg.state.nv.us/nac/nac-645.html"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092900.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092901.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092900.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092901.pdf"
+    used_for: [salesperson_exam.state_items, broker_exam.state_items, salesperson_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://red.nv.gov/Content/Real_Estate/Salesperson/Initial_License_Requirements/"
+    used_for: [prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://red.nv.gov/Content/Licensing/Testing/"
+    used_for: [vendor, vendor_notes, regulator]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook is the July 2025 edition (#092900, rev 09/2025); content outlines (#092901, 09/2025) effective April 1, 2025. Time per portion: General (National) 150 min, State 90 min. Exam fee is paid to the Division, not Pearson: Salesperson Combination $100, or $100 for either single portion (two-for-one combo pricing when both portions are scheduled together; online broker exams are not eligible for the combination discount). Salesperson pre-license is 120 hours (45 Principles, 45 Law incl. 18 hours Nevada law, 15 Contracts, 15 Agency incl. 3 hours foundation) per red.nv.gov (the handbook still prints the older 90-to-120 transition text). prelicense_hours_broker is null because Nevada's broker requirement is expressed as 64 semester college credits (real estate courses, broker management, business/economics credits, and/or licensed experience credit), not clock hours. Salesperson license application fee $140 (red.nv.gov; handbook prints $125). leg.state.nv.us blocked automated fetches; NRS/NAC 645 URLs are the Legislature's standard chapter paths."

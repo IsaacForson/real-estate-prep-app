@@ -1,0 +1,50 @@
+code: NJ
+name: New Jersey
+regulator:
+  name: "New Jersey Real Estate Commission (NJREC), Department of Banking and Insurance"
+  url: "https://www.nj.gov/dobi/division_rec/index.htm"
+vendor: psi
+vendor_notes: "PSI Services LLC conducts examination testing under contract with the NJREC; education providers transmit exam eligibility electronically to PSI, and candidates pay PSI directly."
+salesperson_exam:
+  national_items: 80
+  state_items: 30
+  total_items: 110
+  pretest_items: "5 to 10 experimental questions may be administered; unscored, but they count against examination time"
+  time_minutes: 240
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70% (77 correct of 110)"
+  grading: combined
+  exam_fee_usd: 38.00
+  retake_policy: "'You cannot make a new examination appointment on the same day you have taken an examination... A candidate who fails an exam on a Wednesday can call the next day, Thursday, and can retest as soon as Friday, depending upon space availability.' Exam eligibility issued by the school expires one year to the day from the date it is issued; candidates must pass the examination and apply for licensure before that expiration date. Registration fees are not refundable or transferable."
+  calculator_policy: "Handheld calculators are listed among prohibited electronic devices ('Electronic devices of any type, including ... handheld calculators'). The bulletin does not state whether an on-screen calculator is provided."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: "5 to 10"
+  time_minutes: 240
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70% (84 correct of 120 points; 115 items, some national broker items scored up to two points)"
+  grading: combined
+  exam_fee_usd: 38.00
+prelicense_hours_salesperson: 75
+prelicense_hours_broker: 150
+statute_citation_root: "N.J. Stat. Ann. § 45:15-1 et seq. (Real Estate Brokers and Salesmen Act)"
+rules_citation_root: "N.J. Admin. Code tit. 11, ch. 5"
+statute_url: "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu"
+rules_url: "http://www.lexisnexis.com/hottopics/njcode/"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/1663"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/1663"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.nj.gov/dobi/division_rec/index.htm"
+    used_for: [regulator, statute_citation_root, statute_url, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin edition 'Updated 2/1/2026'. New Jersey does not report separate national and state scores: the salesperson exam is a single 110-item exam graded on one 70% cut score, but the bulletin's content outline gives per-topic item counts for the New Jersey-law blocks (salesperson 2+3+22+3 = 30; broker 3+4+30+3 = 40), so state_items records that block and national_items the remainder (80 of 110 salesperson questions; 75 of 115 broker questions, which carry 120 points because some national broker items score two points). Grading remains combined: one 70% cut score over the whole exam. The bulletin lists a single 'Examination Fee $38' line; it appears in the registration section applicable to all NJ real estate exams, so it is recorded for both salesperson and broker. Broker candidates need 3 years' full-time salesperson experience approved by the NJREC plus 150 hours (90-hour general course then two 30-hour courses) and a $25 experience-approval fee. Statute and N.J.A.C. links are those published by DOBI (the NJ Legislature's Folio gateway and the state's LexisNexis-hosted free NJAC)."

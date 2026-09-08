@@ -1,0 +1,124 @@
+# Indiana state-portion blueprint. Indiana's entry-level license is "Broker" (the state record's
+# salesperson_exam holds the Broker exam; there is no separate salesperson license). Structure and
+# counts from the Pearson VUE Indiana Real Estate Content Outline (publication 091501), "Indiana
+# Real Estate Broker Examination Content Outline" (effective March 1, 2025). Labels are our own
+# paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_IN
+vendor: pearsonvue
+title: "Indiana state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Indiana Real Estate Content Outlines (publication 091501) — Indiana Real Estate Broker Examination Content Outline"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091501.pdf"
+source_version_or_date: "Indiana broker state outline effective March 1, 2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "The Indiana Real Estate Commission"
+        items: 5
+        subtopics:
+          - id: "I.A"
+            label: "General powers and duties"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-2-1", "Ind. Code § 25-34.1-2-2", "Ind. Code § 25-34.1-2-5", "Ind. Code § 25-34.1-2-5.1", "876 Ind. Admin. Code 5-1-1"]
+          - id: "I.B"
+            label: "Examination of records"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-2-5", "Ind. Code § 25-34.1-4-6", "876 Ind. Admin. Code 8-1-1", "876 Ind. Admin. Code 8-2-2"]
+          - id: "I.C"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-6-1", "Ind. Code § 25-34.1-6-2", "Ind. Code § 25-1-7-1", "Ind. Code § 25-1-7-5", "Ind. Code § 25-1-11-1"]
+          - id: "I.D"
+            label: "Sanctions: cease-and-desist, suspension, revocation, civil penalties, recovery fund"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-6-2", "Ind. Code § 25-34.1-6-3", "Ind. Code § 25-34.1-6-4", "Ind. Code § 25-1-11-12", "Ind. Code § 25-34.1-7-1", "Ind. Code § 25-34.1-7-3", "Ind. Code § 25-34.1-7-10", "876 Ind. Admin. Code 8-1-13"]
+      - id: "II"
+        label: "Licensing: who needs one, license types, maintenance"
+        items: 9
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions and waivers"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-1-2", "Ind. Code § 25-34.1-3-1", "Ind. Code § 25-34.1-3-2", "Ind. Code § 25-34.1-3-3", "876 Ind. Admin. Code 5-1-1"]
+          - id: "II.B"
+            label: "License types: individual, organizational, resident and nonresident"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-3-4.1", "Ind. Code § 25-34.1-3-5", "Ind. Code § 25-34.1-3-6", "Ind. Code § 25-34.1-3-7", "Ind. Code § 25-34.1-3-8", "876 Ind. Admin. Code 8-1-2", "876 Ind. Admin. Code 8-1-3"]
+          - id: "II.C"
+            label: "Post-licensing education, renewal, transfers, continuing education, status"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-3-4.1", "Ind. Code § 25-34.1-4-1", "Ind. Code § 25-34.1-4-2", "Ind. Code § 25-34.1-4-3", "Ind. Code § 25-34.1-4-4", "Ind. Code § 25-34.1-9-11", "Ind. Code § 25-34.1-9-21", "876 Ind. Admin. Code 7-1-1", "876 Ind. Admin. Code 7-4-1", "876 Ind. Admin. Code 7-5-1", "876 Ind. Admin. Code 5-3-1", "876 Ind. Admin. Code 5-3-2"]
+      - id: "III"
+        label: "Statutory and regulatory transaction requirements"
+        items: 12
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-2-3", "876 Ind. Admin. Code 8-1-8"]
+          - id: "III.B"
+            label: "Commissions and other compensation"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-3-2", "Ind. Code § 25-34.1-6-2", "Ind. Code § 25-34.1-10-13", "876 Ind. Admin. Code 8-1-4", "876 Ind. Admin. Code 8-2-1"]
+          - id: "III.C"
+            label: "Brokerage agreements: listings, buyer/tenant agency, leasing, property management"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-10-6", "Ind. Code § 25-34.1-10-9", "Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-2-1", "876 Ind. Admin. Code 8-2-2"]
+          - id: "III.D"
+            label: "Offers to purchase"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-10-10", "Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-2-2", "876 Ind. Admin. Code 8-2-4"]
+          - id: "III.E"
+            label: "Earnest money and trust accounts"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-4-5", "Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-1-2", "876 Ind. Admin. Code 8-2-2"]
+          - id: "III.F"
+            label: "Appraisals and broker price opinions"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-3-2", "Ind. Code § 25-34.1-6-2", "Ind. Code § 25-34.1-11-1", "Ind. Code § 25-34.1-11-3"]
+          - id: "III.G"
+            label: "Seller's residential real estate sales disclosure"
+            items: null
+            statute_refs: ["Ind. Code § 32-21-5-1", "Ind. Code § 32-21-5-7", "Ind. Code § 32-21-5-8", "Ind. Code § 32-21-5-10", "Ind. Code § 32-21-5-11", "Ind. Code § 32-21-5-13", "876 Ind. Admin. Code 9-1-1", "876 Ind. Admin. Code 9-1-2"]
+          - id: "III.H"
+            label: "Psychologically affected properties"
+            items: null
+            statute_refs: ["Ind. Code § 32-21-6-3", "Ind. Code § 32-21-6-5", "Ind. Code § 32-21-6-6", "Ind. Code § 25-34.1-10-11"]
+      - id: "IV"
+        label: "Agency relationships and licensee conduct"
+        items: 17
+        subtopics:
+          - id: "IV.A"
+            label: "Types of agency and definitions; agency disclosures; written office policies"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-10-0.5", "Ind. Code § 25-34.1-10-1", "Ind. Code § 25-34.1-10-3", "Ind. Code § 25-34.1-10-5", "Ind. Code § 25-34.1-10-6", "Ind. Code § 25-34.1-10-6.5", "Ind. Code § 25-34.1-10-7", "Ind. Code § 25-34.1-10-8", "Ind. Code § 25-34.1-10-9.5", "Ind. Code § 25-34.1-10-10", "Ind. Code § 25-34.1-10-11", "Ind. Code § 25-34.1-10-12", "Ind. Code § 25-34.1-10-12.5", "Ind. Code § 25-34.1-10-14"]
+          - id: "IV.B"
+            label: "Licensee conduct: unfair inducements, incompetent practice, standards, disclosures"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-6-2", "Ind. Code § 25-1-11-5", "Ind. Code § 25-34.1-10-11", "876 Ind. Admin. Code 8-2-1", "876 Ind. Admin. Code 8-2-2", "876 Ind. Admin. Code 8-2-3", "876 Ind. Admin. Code 8-1-8"]
+      - id: "V"
+        label: "Real estate office procedures"
+        items: 7
+        subtopics:
+          - id: "V.A"
+            label: "Documents, records, and handling of monies"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-4-5", "Ind. Code § 25-34.1-4-6", "876 Ind. Admin. Code 8-1-2", "876 Ind. Admin. Code 8-1-3", "876 Ind. Admin. Code 8-2-2"]
+          - id: "V.B"
+            label: "Place of business, branch offices, unlicensed assistants"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-3-2", "Ind. Code § 25-34.1-4-7", "876 Ind. Admin. Code 8-1-1", "876 Ind. Admin. Code 8-1-2"]
+          - id: "V.C"
+            label: "Closing procedures"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-1-2", "876 Ind. Admin. Code 8-2-2"]
+          - id: "V.D"
+            label: "Managing broker supervision, employment and commission issues; broker company relationships"
+            items: null
+            statute_refs: ["Ind. Code § 25-34.1-1-2", "Ind. Code § 25-34.1-3-4.1", "Ind. Code § 25-34.1-4-3", "Ind. Code § 25-34.1-6-2", "876 Ind. Admin. Code 8-1-1", "876 Ind. Admin. Code 8-1-4", "876 Ind. Admin. Code 8-1-2"]
+references: []
+notes: "Indiana licenses only brokers (managing brokers supervise); the Pearson VUE state outline is a single Broker outline with five domains and published counts 5+9+12+17+7 = 50 plus 5-10 pretest items, mirrored by the state record's salesperson_exam (state_items 50). No separate advanced-license outline exists, so exams.broker is omitted. Cached text: 876 IAC articles 1, 2, 5, 6, 7, 8 and 9 (2024 edition PDFs from the official iac.iga.in.gov archive, read via Internet Archive captures). Indiana Code art. 25-34.1 itself is NOT cached: iga.in.gov serves the Code only through a JavaScript application (all URL forms return the app shell), no static/PDF copy is archived, and in.gov (PLA) refuses connections from this environment; IC section refs here follow the current article structure (ch. 1 definitions, 2 commission, 3 licensing, 4 license maintenance/trust accounts, 6 discipline, 7 recovery fund, 9 education, 10 agency relationships, 11 broker price opinions) and should be verified once the text is obtained."

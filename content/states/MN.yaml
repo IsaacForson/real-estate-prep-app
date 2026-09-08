@@ -1,0 +1,56 @@
+code: MN
+name: Minnesota
+regulator:
+  name: "Minnesota Department of Commerce (Commissioner of Commerce), Licensing Division"
+  url: "https://mn.gov/commerce/licensing/"
+vendor: psi
+vendor_notes: "The Department of Commerce site directs real estate and appraiser exam candidates to PSI (866-395-1006); an older Commerce news release referenced Pearson VUE, but the current scheduling page and bulletin are PSI."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5-10 experimental questions; not scored but count against exam time"
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 68
+  retake_policy: "'The combined salesperson and broker examination is divided into two (2) portions: general and state. Candidates who pass one (1) portion of the examination and fail the other need to retake only the section they failed. Candidates do not need to retake the entire combined exam.' No same-day rebooking; a candidate who fails on Wednesday can call Thursday and retest as soon as Friday. Fees: $45 for a single portion (state or national), $68 for the combo; fees are non-refundable and forfeited if not tested within 1 year of payment. Taking the exam before completing Course I invalidates the result."
+  calculator_policy: "Handheld calculators are listed among prohibited electronic devices. The bulletin does not state whether an on-screen calculator is provided."
+broker_exam:
+  national_items: 75
+  state_items: 60
+  total_items: 135
+  pretest_items: "5-10 experimental questions"
+  time_minutes: 240
+  pass_score_national: "75% (75 questions worth 80 points; some scored up to two points)"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 68
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 30
+statute_citation_root: "Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons)"
+rules_citation_root: "Minn. R. ch. 2805 (Department of Commerce – Real Estate Broker Practice)"
+statute_url: "https://www.revisor.mn.gov/statutes/cite/82"
+rules_url: "https://www.revisor.mn.gov/rules/2805/"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/10954"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/10954"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, regulator]
+    accessed: 2026-09-08
+  - url: "https://mn.gov/commerce/licensing/education/scheduling-exams.jsp"
+    used_for: [vendor]
+    accessed: 2026-09-08
+  - url: "https://www.revisor.mn.gov/statutes/cite/82"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.revisor.mn.gov/rules/2805/"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI bulletin dated 10/1/2023 (still the bulletin served at test-takers.psiexams.com/mnre). Time: general 2.5 hours + state 1.5 hours = 4 hours. 'You must get 75% correct to pass' applies to each portion. Pre-license: 90 hours in three 30-hour courses; only Course I (30 hrs) is required BEFORE the salesperson exam, Courses II and III before licensure. Broker: 30-hour broker course plus salesperson education/exam. Note the revisor.mn.gov search excerpt of Minn. Stat. ch. 82 mentions a 60-hour salesperson course; the current bulletin (the operative Commerce requirement) states 90 hours — flag for review. Wisconsin licensees have a 13-hour reciprocity course path. Abstracter exam (50 items) is also administered under this bulletin."

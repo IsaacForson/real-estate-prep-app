@@ -1,0 +1,53 @@
+code: TX
+name: Texas
+regulator:
+  name: "Texas Real Estate Commission (TREC)"
+  url: "https://www.trec.texas.gov"
+vendor: pearsonvue
+vendor_notes: "TREC contracts with Pearson VUE; the Texas Real Estate Candidate Handbook (#094400, September 2026) and content outlines (#094401) are published by Pearson VUE. Texas's entry-level license is 'Sales Agent'. National and state portions are graded separately with raw-score cut points set by TREC; the national portion may be waived for active out-of-state licensees who passed an ARELLO-approved national exam."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "56/80"
+  pass_score_state: "28/40"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 58
+  retake_policy: "Handbook: 'Candidates who fail need to retake only the portion of the examination they failed, as long as they do so within one year from the date the application was filed with TREC.' 'Reservations for re-examination cannot be made at the test center, and candidates must wait twenty-four (24) hours before scheduling.' 'Candidates have three attempts to pass both portions of the examination prior to the application expiration date. If the examination is failed three times, the candidate is unable to retest or submit a new application until additional qualifying real estate education is completed as follows: Thirty (30) hours for an applicant who fails either the national or state part of the examination; and sixty (60) hours for an applicant who fails both parts of the examination.' Course completion documents and the third failed score report go to documents@trec.texas.gov."
+  calculator_policy: "Handbook: 'Calculators are not required; however, they are recommended. Acceptable calculators include hand-held, battery, or solar-powered financial calculators used in real estate, finance, accounting, and business. The acceptable financial calculator may have storage capabilities but must not contain alpha characters... Calculator malfunctions are not grounds for challenging examination results or requesting additional examination time. NOTE: Calculators are NOT provided by the test center staff.'"
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "60/80"
+  pass_score_state: "38/50"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 58
+prelicense_hours_salesperson: null
+prelicense_hours_broker: null
+statute_citation_root: "Tex. Occ. Code ch. 1101 (The Real Estate License Act)"
+rules_citation_root: "22 Tex. Admin. Code pt. 23, chs. 531–543 (TREC rules)"
+statute_url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm"
+rules_url: "https://www.trec.texas.gov/agency-information/rules-and-laws/trec-rules"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094400.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094400.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf"
+    used_for: [salesperson_exam.state_items, salesperson_exam.pretest_items, broker_exam.state_items, broker_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/tx/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+unverified: [prelicense_hours_salesperson, prelicense_hours_broker]
+confidence: medium
+last_verified: 2026-09-08
+notes: "Handbook 'Available Exams and Time Allotted' (items = scored + pretest): Sales National 85 items 150 min $58; Sales State 50 items 90 min $58; Both 125 items 240 min $58. Broker National 85 / 150 min; State 60 / 90 min; Both 145 / 240 min; $58. Outlines: national 80 scored + 5 pretest (effective March 1, 2025); Texas Sales Agent state law 40 scored + 10 pretest (effective January 1, 2026); Texas Broker state law 50 scored + 5-10 pretest (effective April 15, 2020; includes 10 case-study items). 'Each candidate will be given 240 minutes or 4 hours (total includes State and National portion)'. Passing is a raw score: sales 56 national / 28 state; broker 60 national / 38 state. The exam fee is $58 whether one or both portions are scheduled. Fingerprinting via IDEMIA is required under Tex. Occ. Code § 1101.3521. Pre-license (qualifying education) hours are NOT recorded because the primary sources that state them (trec.texas.gov 'Become Licensed – Sales Agent', Tex. Occ. Code §§ 1101.356/1101.358, 22 TAC § 535.55) refused automated connections from this environment; the handbook does not state the base requirement. The statutes.capitol.texas.gov and trec.texas.gov URLs above are the official locations even though they could not be fetched here."

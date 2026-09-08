@@ -1,0 +1,188 @@
+# Maryland state-portion blueprint. Source: PSI Maryland Real Estate Candidate Information Bulletin
+# (Updated 8/15/2024), "Maryland State Portion Content Outline". Labels are OUR paraphrases (SPEC §3.2).
+# The bulletin publishes item COUNTS per domain (salesperson / broker) but does not number the domains;
+# ids "1"–"6" are ours, in bulletin order.
+id: state_MD
+vendor: psi
+title: "Maryland state-portion outline (internal blueprint)"
+source_document: "PSI Maryland Real Estate Commission Candidate Information Bulletin — Maryland State Portion Content Outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/529"
+source_version_or_date: "Bulletin updated 8/15/2024"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 30
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission powers, discipline, and the Guaranty Fund"
+        items: 4
+        subtopics:
+          - id: "1.1"
+            label: "Commission structure, rulemaking, and general authority"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-201", "Md. Code Ann., Bus. Occ. & Prof. § 17-202", "Md. Code Ann., Bus. Occ. & Prof. § 17-207", "Md. Code Ann., Bus. Occ. & Prof. § 17-208", "Md. Code Ann., Bus. Occ. & Prof. § 17-209", "Md. Code Ann., Bus. Occ. & Prof. § 17-212"]
+          - id: "1.2"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-323", "Md. Code Ann., Bus. Occ. & Prof. § 17-324", "Md. Code Ann., Bus. Occ. & Prof. § 17-325", "Md. Code Ann., Bus. Occ. & Prof. § 17-326", "Md. Code Ann., Bus. Occ. & Prof. § 17-329", "COMAR 09.11.03", "COMAR 09.11.01.19"]
+          - id: "1.3"
+            label: "Grounds for discipline; suspensions, revocations, penalties"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-322", "Md. Code Ann., Bus. Occ. & Prof. § 17-327", "Md. Code Ann., Bus. Occ. & Prof. § 17-328", "Md. Code Ann., Bus. Occ. & Prof. § 17-330", "Md. Code Ann., Bus. Occ. & Prof. § 17-613"]
+          - id: "1.4"
+            label: "Real Estate Guaranty Fund: purpose, claims, limits, reimbursement"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-402", "Md. Code Ann., Bus. Occ. & Prof. § 17-403", "Md. Code Ann., Bus. Occ. & Prof. § 17-404", "Md. Code Ann., Bus. Occ. & Prof. § 17-405", "Md. Code Ann., Bus. Occ. & Prof. § 17-410", "Md. Code Ann., Bus. Occ. & Prof. § 17-411", "Md. Code Ann., Bus. Occ. & Prof. § 17-412", "COMAR 09.11.01.15", "COMAR 09.11.01.20"]
+          - id: "1.5"
+            label: "Commission inspection of broker records (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-507", "Md. Code Ann., Bus. Occ. & Prof. § 17-209", "COMAR 09.11.01.06"]
+      - id: "2"
+        label: "Who must be licensed; status changes, renewal, CE, entities, offices"
+        items: 4
+        subtopics:
+          - id: "2.1"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-101", "Md. Code Ann., Bus. Occ. & Prof. § 17-102", "Md. Code Ann., Bus. Occ. & Prof. § 17-301", "Md. Code Ann., Bus. Occ. & Prof. § 17-302", "Md. Code Ann., Bus. Occ. & Prof. § 17-601", "Md. Code Ann., Bus. Occ. & Prof. § 17-602"]
+          - id: "2.2"
+            label: "Changing affiliation, name, inactive status, broker death or disability"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-311", "Md. Code Ann., Bus. Occ. & Prof. § 17-312", "Md. Code Ann., Bus. Occ. & Prof. § 17-313", "Md. Code Ann., Bus. Occ. & Prof. § 17-316", "Md. Code Ann., Bus. Occ. & Prof. § 17-318", "Md. Code Ann., Bus. Occ. & Prof. § 17-319", "Md. Code Ann., Bus. Occ. & Prof. § 17-319.1"]
+          - id: "2.3"
+            label: "License term, expiration, and renewal"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-314", "Md. Code Ann., Bus. Occ. & Prof. § 17-309", "Md. Code Ann., Bus. Occ. & Prof. § 17-310", "COMAR 09.11.09"]
+          - id: "2.4"
+            label: "Continuing education hours and required subjects"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-315", "COMAR 09.11.06"]
+          - id: "2.5"
+            label: "Brokerage through corporations, LLCs, and partnerships"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-321", "Md. Code Ann., Bus. Occ. & Prof. § 17-612"]
+          - id: "2.6"
+            label: "Office, branch office, signage, and license display"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-317", "Md. Code Ann., Bus. Occ. & Prof. § 17-517", "Md. Code Ann., Bus. Occ. & Prof. § 17-518", "Md. Code Ann., Bus. Occ. & Prof. § 17-519", "Md. Code Ann., Bus. Occ. & Prof. § 17-520", "COMAR 09.11.01.08", "COMAR 09.11.01.11"]
+          - id: "2.7"
+            label: "Ownership-percentage limits for unlicensed owners of a brokerage"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-321", "Md. Code Ann., Bus. Occ. & Prof. § 17-511"]
+      - id: "3"
+        label: "Brokerage relationships, listings, and required disclosures"
+        items: 7
+        subtopics:
+          - id: "3.1"
+            label: "Listing agreements: writing, signatures, required terms"
+            items: null
+            statute_refs: ["COMAR 09.11.01.10", "COMAR 09.11.01.01", "Md. Code Ann., Bus. Occ. & Prof. § 17-534", "Md. Code Ann., Bus. Occ. & Prof. § 17-322"]
+          - id: "3.2"
+            label: "Disclosing the brokerage relationship; agency types; dual and intracompany agency"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-528", "Md. Code Ann., Bus. Occ. & Prof. § 17-529", "Md. Code Ann., Bus. Occ. & Prof. § 17-530", "Md. Code Ann., Bus. Occ. & Prof. § 17-530.1", "Md. Code Ann., Bus. Occ. & Prof. § 17-530.2", "Md. Code Ann., Bus. Occ. & Prof. § 17-532", "Md. Code Ann., Bus. Occ. & Prof. § 17-535", "COMAR 09.11.08"]
+          - id: "3.3"
+            label: "Disclosing licensee's interest in property and conflicts"
+            items: null
+            statute_refs: ["COMAR 09.11.01.22", "COMAR 09.11.01.02", "COMAR 09.11.02", "Md. Code Ann., Bus. Occ. & Prof. § 17-322"]
+          - id: "3.4"
+            label: "Other mandated disclosures: property condition, contract notices, referrals"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-322.1", "Md. Code Ann., Bus. Occ. & Prof. § 17-523", "Md. Code Ann., Bus. Occ. & Prof. § 17-524", "Md. Code Ann., Bus. Occ. & Prof. § 17-527.4", "Md. Code Ann., Bus. Occ. & Prof. § 17-405", "COMAR 09.11.07", "Md. Code Ann., Real Prop. § 10-702"]
+      - id: "4"
+        label: "Trust money, records, supervision, and other Maryland laws"
+        items: 5
+        subtopics:
+          - id: "4.1"
+            label: "Trust money: deposit timing, accounts, disbursement, disputes"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-501", "Md. Code Ann., Bus. Occ. & Prof. § 17-502", "Md. Code Ann., Bus. Occ. & Prof. § 17-503", "Md. Code Ann., Bus. Occ. & Prof. § 17-504", "Md. Code Ann., Bus. Occ. & Prof. § 17-505", "Md. Code Ann., Bus. Occ. & Prof. § 17-508", "COMAR 09.11.01.07", "COMAR 09.11.01.17", "COMAR 09.11.01.18"]
+          - id: "4.2"
+            label: "Record retention, including electronic records"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-507", "COMAR 09.11.01.06"]
+          - id: "4.3"
+            label: "Broker and team-leader supervision duties"
+            items: null
+            statute_refs: ["COMAR 09.11.05", "Md. Code Ann., Bus. Occ. & Prof. § 17-320", "Md. Code Ann., Bus. Occ. & Prof. § 17-543", "Md. Code Ann., Bus. Occ. & Prof. § 17-544", "Md. Code Ann., Bus. Occ. & Prof. § 17-545", "Md. Code Ann., Bus. Occ. & Prof. § 17-603", "COMAR 09.11.01.23"]
+          - id: "4.4"
+            label: "Related Maryland laws: short sales, home improvement, homeowner protection (PHIFA)"
+            items: null
+            statute_refs: ["Md. Code Ann., Real Prop. §§ 7-301–7-325", "Md. Code Ann., Bus. Reg. § 8-101 et seq.", "Md. Code Ann., Bus. Occ. & Prof. § 17-322", "Md. Code Ann., Bus. Occ. & Prof. § 17-532"]
+      - id: "5"
+        label: "Business conduct: offers, compensation, advertising, fair housing, convictions"
+        items: 6
+        subtopics:
+          - id: "5.1"
+            label: "Presenting offers and handling contracts"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-532", "Md. Code Ann., Bus. Occ. & Prof. § 17-322", "COMAR 09.11.02"]
+          - id: "5.2"
+            label: "Commissions, fee splitting, rebates, and who may be paid"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-513", "Md. Code Ann., Bus. Occ. & Prof. § 17-516", "Md. Code Ann., Bus. Occ. & Prof. § 17-604", "Md. Code Ann., Bus. Occ. & Prof. § 17-605", "COMAR 09.11.01.01", "COMAR 09.11.02"]
+          - id: "5.3"
+            label: "Advertising, team names, trade names, and yard signs"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-527.2", "Md. Code Ann., Bus. Occ. & Prof. § 17-527.3", "Md. Code Ann., Bus. Occ. & Prof. § 17-547", "Md. Code Ann., Bus. Occ. & Prof. § 17-606", "COMAR 09.11.01.16", "COMAR 09.11.02"]
+          - id: "5.4"
+            label: "Maryland fair housing, steering, blockbusting, conservation areas"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-322", "Md. Code Ann., Bus. Occ. & Prof. § 17-522", "Md. Code Ann., Bus. Occ. & Prof. § 17-525", "Md. Code Ann., Bus. Occ. & Prof. § 17-526", "Md. Code Ann., Bus. Occ. & Prof. § 17-527", "Md. Code Ann., Bus. Occ. & Prof. § 17-608", "Md. Code Ann., Bus. Occ. & Prof. § 17-609", "Md. Code Ann., State Gov't § 20-701 et seq."]
+          - id: "5.5"
+            label: "Summary suspension and effect of criminal convictions"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-327", "Md. Code Ann., Bus. Occ. & Prof. § 17-328", "Md. Code Ann., Bus. Occ. & Prof. § 17-614", "Md. Code Ann., Bus. Occ. & Prof. § 17-322"]
+      - id: "6"
+        label: "Ethics: inducements, dealings with other licensees, code of ethics"
+        items: 4
+        subtopics:
+          - id: "6.1"
+            label: "Unfair inducements and kickbacks"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-605", "Md. Code Ann., Bus. Occ. & Prof. § 17-527.4", "COMAR 09.11.02"]
+          - id: "6.2"
+            label: "Conduct toward other licensees and their clients"
+            items: null
+            statute_refs: ["COMAR 09.11.02", "Md. Code Ann., Bus. Occ. & Prof. § 17-322"]
+          - id: "6.3"
+            label: "General ethical duties under the Commission's code of ethics"
+            items: null
+            statute_refs: ["Md. Code Ann., Bus. Occ. & Prof. § 17-207", "COMAR 09.11.02", "Md. Code Ann., Bus. Occ. & Prof. § 17-532"]
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission powers, discipline, Guaranty Fund, record examination"
+        items: 5
+        subtopics: []
+      - id: "2"
+        label: "Who must be licensed; status changes, renewal, CE, entities, offices"
+        items: 8
+        subtopics: []
+      - id: "3"
+        label: "Brokerage relationships, listings, and required disclosures"
+        items: 7
+        subtopics: []
+      - id: "4"
+        label: "Trust money, records, supervision, and other Maryland laws"
+        items: 6
+        subtopics: []
+      - id: "5"
+        label: "Business conduct: offers, compensation, advertising, fair housing, convictions"
+        items: 9
+        subtopics: []
+      - id: "6"
+        label: "Ethics: inducements, dealings with other licensees, code of ethics"
+        items: 5
+        subtopics: []
+references:
+  - title: "Annotated Code of Maryland, Business Occupations and Professions Article, Title 17 (Maryland Real Estate Brokers Act)"
+    publisher: "Maryland General Assembly, Department of Legislative Services"
+  - title: "COMAR Title 09, Subtitle 11 — Real Estate Commission (Chapters 01–09)"
+    publisher: "Maryland Division of State Documents"
+notes: "Salesperson domain counts 4/4/7/5/6/4 = 30; broker counts 5/8/7/6/9/5 = 40 (both published in the bulletin). Broker domains share the salesperson subtopics (omitted to avoid duplication) plus the broker-only 'examination of records' topic (1.5). Domain 3 covers the bulletin's 'Brokerage Relationships' area, whose topics map onto Bus. Occ. & Prof. Title 17, Subtitle 5, Part III (§§ 17-528 to 17-535) and COMAR 09.11.08. The 'Knowledge of Other Maryland State Laws' topic (4.4) points at the Protection of Homeowners in Foreclosure Act (Real Prop. Title 7, Subtitle 3) and the Home Improvement Law (Bus. Reg. Title 8), which are not in the statute cache; the cache holds all of Title 17 and COMAR 09.11."

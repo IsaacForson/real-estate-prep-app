@@ -1,0 +1,293 @@
+# Wyoming state-portion blueprint. Structure and counts from the Pearson VUE "Wyoming Real Estate
+# Salesperson and Broker Licensing Examination Content Outline" (state-specific, effective
+# January 1, 2021). Labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_WY
+vendor: pearsonvue
+title: "Wyoming state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Wyoming Real Estate State Content Outlines (#095101) — salesperson and broker state-specific examination"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095101.pdf"
+source_version_or_date: "State outline effective January 1, 2021 (document also carries the national outline effective April 1, 2025)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers: investigations, sanctions, records review"
+        items: 4
+        items_range: "2-5"
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-105", "Wyo. Stat. Ann. § 33-28-113", "Wyo. Stat. Ann. § 33-28-120", "Wyo. Real Estate Comm'n Rules ch. 8 § 2", "Wyo. Real Estate Comm'n Rules ch. 8 § 3", "Wyo. Real Estate Comm'n Rules ch. 8 § 4", "Wyo. Real Estate Comm'n Rules ch. 8 § 5", "Wyo. Real Estate Comm'n Rules ch. 8 § 7"]
+          - id: "I.B"
+            label: "Sanctions: censure, suspension, revocation, penalties"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-112", "Wyo. Stat. Ann. § 33-28-114", "Wyo. Real Estate Comm'n Rules ch. 6 § 1", "Wyo. Real Estate Comm'n Rules ch. 6 § 2"]
+          - id: "I.C"
+            label: "Commission examination of licensee records"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Stat. Ann. § 33-28-123", "Wyo. Real Estate Comm'n Rules ch. 5 § 2"]
+      - id: "II"
+        label: "Licensing"
+        items: 8
+        items_range: "7-9"
+        subtopics:
+          - id: "II.A"
+            label: "Requirements to obtain a license"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-106", "Wyo. Stat. Ann. § 33-28-107", "Wyo. Stat. Ann. § 33-28-108", "Wyo. Real Estate Comm'n Rules ch. 1 § 2", "Wyo. Real Estate Comm'n Rules ch. 1 § 3", "Wyo. Real Estate Comm'n Rules ch. 1 § 4", "Wyo. Real Estate Comm'n Rules ch. 2 § 1", "Wyo. Real Estate Comm'n Rules ch. 4 § 5"]
+          - id: "II.B"
+            label: "Activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-101", "Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 33-28-103", "Wyo. Stat. Ann. § 33-28-104", "Wyo. Stat. Ann. § 33-28-114", "Wyo. Stat. Ann. § 33-28-115"]
+          - id: "II.C"
+            label: "License renewal"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Real Estate Comm'n Rules ch. 4 § 1", "Wyo. Real Estate Comm'n Rules ch. 4 § 2", "Wyo. Real Estate Comm'n Rules ch. 4 § 4", "Wyo. Real Estate Comm'n Rules ch. 2 § 1"]
+          - id: "II.D"
+            label: "Continuing education"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Real Estate Comm'n Rules ch. 4 § 6", "Wyo. Real Estate Comm'n Rules ch. 4 § 7", "Wyo. Real Estate Comm'n Rules ch. 4 § 8", "Wyo. Real Estate Comm'n Rules ch. 4 § 9"]
+          - id: "II.E"
+            label: "Changes in information or status: inactive, active, cancellation"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 1 § 5", "Wyo. Real Estate Comm'n Rules ch. 4 § 2", "Wyo. Real Estate Comm'n Rules ch. 4 § 3", "Wyo. Real Estate Comm'n Rules ch. 7 § 12"]
+      - id: "III"
+        label: "Requirements governing licensee activities"
+        items: 16
+        items_range: "15-17"
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 6 § 4", "Wyo. Stat. Ann. § 33-28-111"]
+          - id: "III.B"
+            label: "Broker–salesperson relationship: transfers, terminations, designated licensees"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 33-28-109", "Wyo. Stat. Ann. § 33-28-121", "Wyo. Real Estate Comm'n Rules ch. 1 § 5", "Wyo. Real Estate Comm'n Rules ch. 1 § 6", "Wyo. Real Estate Comm'n Rules ch. 1 § 7"]
+          - id: "III.C"
+            label: "Compensation"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-110", "Wyo. Stat. Ann. § 33-28-115", "Wyo. Stat. Ann. § 33-28-308", "Wyo. Real Estate Comm'n Rules ch. 6 § 3"]
+          - id: "III.D"
+            label: "Disclosures: conflicts of interest, property condition, agency"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-304", "Wyo. Stat. Ann. § 33-28-306", "Wyo. Stat. Ann. § 33-28-309", "Wyo. Stat. Ann. § 33-28-310", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.E"
+            label: "Duties owed as agent, intermediary, or to a customer"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-304", "Wyo. Stat. Ann. § 33-28-305", "Wyo. Stat. Ann. § 33-28-307", "Wyo. Stat. Ann. § 33-28-310", "Wyo. Stat. Ann. § 33-28-311"]
+          - id: "III.F"
+            label: "Handling documents and records"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-123", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.G"
+            label: "Handling money: trust accounts and earnest money"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 5 § 1"]
+          - id: "III.H"
+            label: "Listings and other written agreements"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.I"
+            label: "Errors and omissions insurance"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-401", "Wyo. Real Estate Comm'n Rules ch. 7 § 1", "Wyo. Real Estate Comm'n Rules ch. 7 § 3", "Wyo. Real Estate Comm'n Rules ch. 7 § 4", "Wyo. Real Estate Comm'n Rules ch. 7 § 10", "Wyo. Real Estate Comm'n Rules ch. 7 § 12"]
+          - id: "III.J"
+            label: "Grounds for disciplinary action"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-124", "Wyo. Real Estate Comm'n Rules ch. 6 § 1", "Wyo. Real Estate Comm'n Rules ch. 6 § 2"]
+      - id: "IV"
+        label: "Additional Wyoming topics"
+        items: 12
+        items_range: "11-13"
+        subtopics:
+          - id: "IV.A"
+            label: "Real estate recovery and education accounts"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-201", "Wyo. Stat. Ann. § 33-28-202", "Wyo. Stat. Ann. § 33-28-203", "Wyo. Stat. Ann. § 33-28-204", "Wyo. Stat. Ann. § 33-28-205", "Wyo. Stat. Ann. § 33-28-206", "Wyo. Real Estate Comm'n Rules ch. 4 § 10"]
+          - id: "IV.B"
+            label: "Land descriptions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 34-4-104"]
+          - id: "IV.C"
+            label: "Landlord–tenant relationship"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 1-21-1201", "Wyo. Stat. Ann. § 1-21-1202", "Wyo. Stat. Ann. § 1-21-1203", "Wyo. Stat. Ann. § 1-21-1204", "Wyo. Stat. Ann. § 1-21-1205", "Wyo. Stat. Ann. § 1-21-1206", "Wyo. Stat. Ann. § 1-21-1207", "Wyo. Stat. Ann. § 1-21-1208", "Wyo. Stat. Ann. § 33-28-311"]
+          - id: "IV.D"
+            label: "Foreclosure and redemption"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 34-4-101", "Wyo. Stat. Ann. § 34-4-103", "Wyo. Stat. Ann. § 34-4-104", "Wyo. Stat. Ann. § 34-4-105", "Wyo. Stat. Ann. § 34-4-109", "Wyo. Stat. Ann. § 1-18-101", "Wyo. Stat. Ann. § 1-18-102", "Wyo. Stat. Ann. § 1-18-103", "Wyo. Stat. Ann. § 1-18-104"]
+          - id: "IV.E"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 1-23-105", "Wyo. Stat. Ann. § 33-28-302"]
+          - id: "IV.F"
+            label: "Broker's price opinions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-125", "Wyo. Stat. Ann. § 33-28-102"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers: investigations, sanctions, records review"
+        items: 4
+        items_range: "2-5"
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-105", "Wyo. Stat. Ann. § 33-28-113", "Wyo. Stat. Ann. § 33-28-120", "Wyo. Real Estate Comm'n Rules ch. 8 § 2", "Wyo. Real Estate Comm'n Rules ch. 8 § 3", "Wyo. Real Estate Comm'n Rules ch. 8 § 4", "Wyo. Real Estate Comm'n Rules ch. 8 § 5", "Wyo. Real Estate Comm'n Rules ch. 8 § 7"]
+          - id: "I.B"
+            label: "Sanctions: censure, suspension, revocation, penalties"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-112", "Wyo. Stat. Ann. § 33-28-114", "Wyo. Real Estate Comm'n Rules ch. 6 § 1", "Wyo. Real Estate Comm'n Rules ch. 6 § 2"]
+          - id: "I.C"
+            label: "Commission examination of licensee records"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Stat. Ann. § 33-28-123", "Wyo. Real Estate Comm'n Rules ch. 5 § 2"]
+      - id: "II"
+        label: "Licensing"
+        items: 5
+        items_range: "4-6"
+        subtopics:
+          - id: "II.A"
+            label: "Requirements to obtain a license"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-106", "Wyo. Stat. Ann. § 33-28-107", "Wyo. Stat. Ann. § 33-28-108", "Wyo. Real Estate Comm'n Rules ch. 1 § 2", "Wyo. Real Estate Comm'n Rules ch. 1 § 3", "Wyo. Real Estate Comm'n Rules ch. 1 § 4", "Wyo. Real Estate Comm'n Rules ch. 2 § 1", "Wyo. Real Estate Comm'n Rules ch. 4 § 5"]
+          - id: "II.B"
+            label: "Activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-101", "Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 33-28-103", "Wyo. Stat. Ann. § 33-28-104", "Wyo. Stat. Ann. § 33-28-114", "Wyo. Stat. Ann. § 33-28-115"]
+          - id: "II.C"
+            label: "License renewal"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Real Estate Comm'n Rules ch. 4 § 1", "Wyo. Real Estate Comm'n Rules ch. 4 § 2", "Wyo. Real Estate Comm'n Rules ch. 4 § 4", "Wyo. Real Estate Comm'n Rules ch. 2 § 1"]
+          - id: "II.D"
+            label: "Continuing education"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Real Estate Comm'n Rules ch. 4 § 6", "Wyo. Real Estate Comm'n Rules ch. 4 § 7", "Wyo. Real Estate Comm'n Rules ch. 4 § 8", "Wyo. Real Estate Comm'n Rules ch. 4 § 9"]
+          - id: "II.E"
+            label: "Changes in information or status: inactive, active, cancellation"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-118", "Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 1 § 5", "Wyo. Real Estate Comm'n Rules ch. 4 § 2", "Wyo. Real Estate Comm'n Rules ch. 4 § 3", "Wyo. Real Estate Comm'n Rules ch. 7 § 12"]
+      - id: "III"
+        label: "Requirements governing licensee activities"
+        items: 15
+        items_range: "14-16"
+        subtopics:
+          - id: "III.A"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 6 § 4", "Wyo. Stat. Ann. § 33-28-111"]
+          - id: "III.B"
+            label: "Broker–salesperson relationship: transfers, terminations, designated licensees"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 33-28-109", "Wyo. Stat. Ann. § 33-28-121", "Wyo. Real Estate Comm'n Rules ch. 1 § 5", "Wyo. Real Estate Comm'n Rules ch. 1 § 6", "Wyo. Real Estate Comm'n Rules ch. 1 § 7"]
+          - id: "III.C"
+            label: "Compensation"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-110", "Wyo. Stat. Ann. § 33-28-115", "Wyo. Stat. Ann. § 33-28-308", "Wyo. Real Estate Comm'n Rules ch. 6 § 3"]
+          - id: "III.D"
+            label: "Disclosures: conflicts of interest, property condition, agency"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-304", "Wyo. Stat. Ann. § 33-28-306", "Wyo. Stat. Ann. § 33-28-309", "Wyo. Stat. Ann. § 33-28-310", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.E"
+            label: "Duties owed as agent, intermediary, or to a customer"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-304", "Wyo. Stat. Ann. § 33-28-305", "Wyo. Stat. Ann. § 33-28-307", "Wyo. Stat. Ann. § 33-28-310", "Wyo. Stat. Ann. § 33-28-311"]
+          - id: "III.F"
+            label: "Handling documents and records"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-123", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.G"
+            label: "Handling money: trust accounts and earnest money"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 5 § 1"]
+          - id: "III.H"
+            label: "Listings and other written agreements"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-302", "Wyo. Stat. Ann. § 33-28-303", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 3 § 1"]
+          - id: "III.I"
+            label: "Errors and omissions insurance"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-401", "Wyo. Real Estate Comm'n Rules ch. 7 § 1", "Wyo. Real Estate Comm'n Rules ch. 7 § 3", "Wyo. Real Estate Comm'n Rules ch. 7 § 4", "Wyo. Real Estate Comm'n Rules ch. 7 § 10", "Wyo. Real Estate Comm'n Rules ch. 7 § 12"]
+          - id: "III.J"
+            label: "Grounds for disciplinary action"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-111", "Wyo. Stat. Ann. § 33-28-124", "Wyo. Real Estate Comm'n Rules ch. 6 § 1", "Wyo. Real Estate Comm'n Rules ch. 6 § 2"]
+      - id: "IV"
+        label: "Additional Wyoming topics"
+        items: 12
+        items_range: "11-13"
+        subtopics:
+          - id: "IV.A"
+            label: "Real estate recovery and education accounts"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-201", "Wyo. Stat. Ann. § 33-28-202", "Wyo. Stat. Ann. § 33-28-203", "Wyo. Stat. Ann. § 33-28-204", "Wyo. Stat. Ann. § 33-28-205", "Wyo. Stat. Ann. § 33-28-206", "Wyo. Real Estate Comm'n Rules ch. 4 § 10"]
+          - id: "IV.B"
+            label: "Land descriptions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 34-4-104"]
+          - id: "IV.C"
+            label: "Landlord–tenant relationship"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 1-21-1201", "Wyo. Stat. Ann. § 1-21-1202", "Wyo. Stat. Ann. § 1-21-1203", "Wyo. Stat. Ann. § 1-21-1204", "Wyo. Stat. Ann. § 1-21-1205", "Wyo. Stat. Ann. § 1-21-1206", "Wyo. Stat. Ann. § 1-21-1207", "Wyo. Stat. Ann. § 1-21-1208", "Wyo. Stat. Ann. § 33-28-311"]
+          - id: "IV.D"
+            label: "Foreclosure and redemption"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 34-4-101", "Wyo. Stat. Ann. § 34-4-103", "Wyo. Stat. Ann. § 34-4-104", "Wyo. Stat. Ann. § 34-4-105", "Wyo. Stat. Ann. § 34-4-109", "Wyo. Stat. Ann. § 1-18-101", "Wyo. Stat. Ann. § 1-18-102", "Wyo. Stat. Ann. § 1-18-103", "Wyo. Stat. Ann. § 1-18-104"]
+          - id: "IV.E"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 1-23-105", "Wyo. Stat. Ann. § 33-28-302"]
+          - id: "IV.F"
+            label: "Broker's price opinions"
+            items: null
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-125", "Wyo. Stat. Ann. § 33-28-102"]
+      - id: "V"
+        label: "Broker responsibility and office management"
+        items: 14
+        items_range: "14-16"
+        subtopics:
+          - id: "V.A"
+            label: "Managing a real estate company"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-102", "Wyo. Stat. Ann. § 33-28-109", "Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 1 § 6", "Wyo. Real Estate Comm'n Rules ch. 1 § 7", "Wyo. Real Estate Comm'n Rules ch. 4 § 4", "Wyo. Real Estate Comm'n Rules ch. 4 § 8"]
+          - id: "V.B"
+            label: "Trust accounts"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Real Estate Comm'n Rules ch. 5 § 1", "Wyo. Real Estate Comm'n Rules ch. 5 § 2"]
+          - id: "V.C"
+            label: "Funds-holder agreements"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-122", "Wyo. Real Estate Comm'n Rules ch. 5 § 1"]
+          - id: "V.D"
+            label: "Place of business"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-109", "Wyo. Stat. Ann. § 33-28-119", "Wyo. Real Estate Comm'n Rules ch. 1 § 6"]
+          - id: "V.E"
+            label: "Recordkeeping"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-123", "Wyo. Stat. Ann. § 33-28-122", "Wyo. Real Estate Comm'n Rules ch. 5 § 1", "Wyo. Real Estate Comm'n Rules ch. 5 § 2"]
+          - id: "V.F"
+            label: "Supervision: branch offices and multiple companies"
+            items: null
+            broker_only: true
+            statute_refs: ["Wyo. Stat. Ann. § 33-28-109", "Wyo. Stat. Ann. § 33-28-111", "Wyo. Real Estate Comm'n Rules ch. 1 § 6", "Wyo. Real Estate Comm'n Rules ch. 6 § 1"]
+references:
+  - title: "Wyoming Statutes Title 33, Chapter 28 — Real Estate License Act (§§ 33-28-101 to 33-28-401)"
+    publisher: "Wyoming Legislature (wyoleg.gov)"
+  - title: "Wyoming Real Estate Commission Rules, Chapters 1-8"
+    publisher: "Wyoming Real Estate Commission"
+notes: "Pearson VUE publishes every Wyoming domain as an item RANGE (e.g. Licensing 'Sales 7-9'); the `items` values are our single-point allocation chosen so domains sum exactly to 40 (salesperson: 4/8/16/12) and 50 (broker: 4/5/15/12/14), and `items_range` preserves the published range. Domain V is broker-only. Subtopic ids mirror the outline's lettering. Ground truth: statute text extracted from the Wyoming Legislature's Title 33 PDF (chapter 28 pages) plus Title 1 ch. 18 (foreclosure sales/redemption), Title 1 ch. 21 art. 12 (residential rental property), Title 1 ch. 23 (statute of frauds), and Title 34 ch. 4 (foreclosure by advertisement) for the 'Additional Topics' domain; Commission rules chapters 1-8 were ingested from the PDFs the Commission publishes on its own rules page (realestate.wyo.gov, hosted as Google Drive files). 'Land Description' has no Wyoming statute of its own; it is grounded only loosely (definitions and foreclosure-notice description requirements)."

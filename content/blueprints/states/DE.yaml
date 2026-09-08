@@ -1,0 +1,232 @@
+# Delaware state-portion blueprint. Source: Pearson VUE Delaware Real Estate Candidate Handbook
+# (publication 090800), "State Content Outline — Delaware Laws, Rules, and Regulations", effective
+# June 1, 2020. Labels are OUR paraphrases (SPEC §3.2). Domain ids follow the bulletin's Roman numerals;
+# subtopic ids append the bulletin's letters.
+id: state_DE
+vendor: pearsonvue
+title: "Delaware state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Delaware Real Estate Candidate Handbook (publication 090800) — State Content Outline, Delaware Laws, Rules, and Regulations"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090800.pdf"
+source_version_or_date: "State outline effective June 1, 2020 (handbook edition retrieved 2026-09-08)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  Per-domain counts are published: salesperson 4/3/17/16 = 40; broker adds domain V (10) = 50. Both
+  exams carry 10 unscored pretest items. Subtopic counts are not published. Statute refs: 24 Del. C.
+  ch. 29 (License Law, subch. I, and Statutory Agency, subch. II §§ 2926-2940) and 24 DE Admin. Code
+  2900 (Commission Rules and Regulations, sections 1.0-16.0), both cached. The bulletin's "Rule 14"
+  (Voluntary Treatment Option) is section 15.0 in the current regulation. Titles 6, 7, 17, 25, and 30
+  Del. C. topics (Consumer Fraud Act, seller disclosure, DUCIOA, landlord-tenant, transfer tax, etc.)
+  are cited but not cached.
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Commission duties and powers"
+        items: 4
+        subtopics:
+          - id: "I.A"
+            label: "Purpose of the law; Commission composition and powers"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2900", "Del. Code Ann. tit. 24, § 2903", "Del. Code Ann. tit. 24, § 2904", "Del. Code Ann. tit. 24, § 2906", "24 Del. Admin. Code § 2900-1.0"]
+          - id: "I.B"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2911", "Del. Code Ann. tit. 24, § 2913", "Del. Code Ann. tit. 24, § 2915", "Del. Code Ann. tit. 24, § 2925"]
+          - id: "I.C"
+            label: "Grounds for discipline and sanctions: reprimand, suspension, revocation, fines, probation"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2912", "Del. Code Ann. tit. 24, § 2914", "Del. Code Ann. tit. 24, § 2916", "Del. Code Ann. tit. 24, § 2917", "Del. Code Ann. tit. 24, § 2924", "24 Del. Admin. Code § 2900-16.0"]
+          - id: "I.D"
+            label: "Real Estate Guaranty Fund"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2922", "Del. Code Ann. tit. 24, § 2908"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 3
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2901", "Del. Code Ann. tit. 24, § 2902", "24 Del. Admin. Code § 2900-1.4", "24 Del. Admin. Code § 2900-9.0", "24 Del. Admin. Code § 2900-11.0"]
+          - id: "II.B"
+            label: "License types: salesperson, associate broker, broker, reciprocal"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2902", "Del. Code Ann. tit. 24, § 2907", "Del. Code Ann. tit. 24, § 2909", "24 Del. Admin. Code § 2900-5.0"]
+          - id: "II.C"
+            label: "Eligibility: education, examination, experience, application"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2907", "24 Del. Admin. Code § 2900-2.0", "24 Del. Admin. Code § 2900-3.0", "24 Del. Admin. Code § 2900-4.0"]
+          - id: "II.D"
+            label: "Renewal, late renewal, reinstatement, inactive status"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2910", "24 Del. Admin. Code § 2900-12.0", "24 Del. Admin. Code § 2900-13.0"]
+          - id: "II.E"
+            label: "Continuing education and new-licensee education"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2910", "24 Del. Admin. Code § 2900-14.0", "24 Del. Admin. Code § 2900-1.3"]
+          - id: "II.F"
+            label: "Changing brokers or office location"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2920", "Del. Code Ann. tit. 24, § 2921", "24 Del. Admin. Code § 2900-7.0", "24 Del. Admin. Code § 2900-1.5"]
+      - id: "III"
+        label: "Rules governing licensee activities"
+        items: 17
+        subtopics:
+          - id: "III.A"
+            label: "Advertising and team names"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-8.5", "24 Del. Admin. Code § 2900-8.6", "Del. Code Ann. tit. 24, § 2912", "Del. Code Ann. tit. 24, § 2928"]
+          - id: "III.B"
+            label: "Broker, associate broker, and salesperson relationship; office permits"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2919", "Del. Code Ann. tit. 24, § 2921", "Del. Code Ann. tit. 24, § 2917", "24 Del. Admin. Code § 2900-1.3", "24 Del. Admin. Code § 2900-8.7"]
+          - id: "III.C"
+            label: "Disclosures: condition report and exemptions, radon, leases and agricultural notices, psychologically impacted property"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-10.7", "24 Del. Admin. Code § 2900-10.8", "Del. Code Ann. tit. 6, § 2570", "Del. Code Ann. tit. 6, § 2572", "Del. Code Ann. tit. 6, § 2572A", "Del. Code Ann. tit. 6, § 2578", "Del. Code Ann. tit. 24, § 2927", "Del. Code Ann. tit. 25, § 5118"]
+          - id: "III.D"
+            label: "Written agreements and delivery of copies"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-8.1", "24 Del. Admin. Code § 2900-8.2", "24 Del. Admin. Code § 2900-8.4", "Del. Code Ann. tit. 24, § 2930"]
+          - id: "III.E"
+            label: "Handling deposits and escrow money"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2923", "24 Del. Admin. Code § 2900-6.0"]
+          - id: "III.F"
+            label: "Public responsibility: inducements, unauthorized practice of law, appraisals and CMAs"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-8.8", "Del. Code Ann. tit. 24, § 2912", "Del. Code Ann. tit. 24, § 2931", "Del. Code Ann. tit. 24, § 2930"]
+          - id: "III.G"
+            label: "Agency: consumer information statement, confidentiality, statutory duties, presumed and dual agency"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2932", "Del. Code Ann. tit. 24, § 2933", "Del. Code Ann. tit. 24, § 2934", "Del. Code Ann. tit. 24, § 2935", "Del. Code Ann. tit. 24, § 2936", "Del. Code Ann. tit. 24, § 2937", "Del. Code Ann. tit. 24, § 2938", "24 Del. Admin. Code § 2900-10.3", "24 Del. Admin. Code § 2900-10.4", "24 Del. Admin. Code § 2900-10.5"]
+          - id: "III.H"
+            label: "Voluntary treatment option for impaired licensees"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-15.0", "Del. Code Ann. tit. 29, § 8735"]
+      - id: "IV"
+        label: "Additional Delaware law topics"
+        items: 16
+        subtopics:
+          - id: "IV.A"
+            label: "Unit Property Act (condominiums)"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 2201", "Del. Code Ann. tit. 25, § 2202"]
+          - id: "IV.B"
+            label: "DUCIOA: applicability, resale certificate, homebuilder escrow deposits"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 81-101", "Del. Code Ann. tit. 25, § 81-116", "Del. Code Ann. tit. 25, § 81-409", "Del. Code Ann. tit. 25, § 81-410"]
+          - id: "IV.C"
+            label: "Landlord-Tenant Code"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 5101", "Del. Code Ann. tit. 25, § 5118", "Del. Code Ann. tit. 25, § 5514", "Del. Code Ann. tit. 25, § 5106"]
+          - id: "IV.D"
+            label: "Realty transfer taxes"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 30, § 5401", "Del. Code Ann. tit. 30, § 5402", "Del. Code Ann. tit. 30, § 5405"]
+          - id: "IV.E"
+            label: "Title, forms of ownership, deeds; sewer/water notice for unimproved land"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 101", "Del. Code Ann. tit. 25, § 121", "Del. Code Ann. tit. 25, § 701", "Del. Code Ann. tit. 25, § 309"]
+          - id: "IV.F"
+            label: "Delaware Fair Housing Act: protected classes and enforcement"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 6, § 4600", "Del. Code Ann. tit. 6, § 4603", "Del. Code Ann. tit. 6, § 4604", "Del. Code Ann. tit. 6, § 4610"]
+          - id: "IV.G"
+            label: "Surveys"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2701", "Del. Code Ann. tit. 25, § 101"]
+          - id: "IV.H"
+            label: "DNREC wastewater regulations and site evaluation"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 7, § 6003", "7 Del. Admin. Code § 7101"]
+          - id: "IV.I"
+            label: "Sign placement and the Clear Zone Safety Law"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 17, § 1108", "Del. Code Ann. tit. 17, § 1121"]
+          - id: "IV.J"
+            label: "Seller financing and purchase-money mortgages"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 2101", "Del. Code Ann. tit. 25, § 2108", "Del. Code Ann. tit. 25, § 2118"]
+          - id: "IV.K"
+            label: "Tax ditches"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 7, § 4101", "Del. Code Ann. tit. 7, § 4171"]
+          - id: "IV.L"
+            label: "Manufactured housing community right of first offer/refusal"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 7026", "Del. Code Ann. tit. 25, § 7001"]
+          - id: "IV.M"
+            label: "Uniform Electronic Transactions Act"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 6, § 12A-101", "Del. Code Ann. tit. 6, § 12A-107"]
+          - id: "IV.N"
+            label: "Real estate tax return and estimated tax declaration (Form 5403)"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 30, § 1126", "Del. Code Ann. tit. 30, § 1606"]
+          - id: "IV.O"
+            label: "Consumer Fraud Act and its application to licensees"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 6, § 2511", "Del. Code Ann. tit. 6, § 2513", "Del. Code Ann. tit. 6, § 2532"]
+          - id: "IV.P"
+            label: "Home inspector licensing statute"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 4101", "Del. Code Ann. tit. 24, § 4102"]
+          - id: "IV.Q"
+            label: "Green energy: solar and wind deed restrictions, system leases"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 318", "Del. Code Ann. tit. 25, § 81-320"]
+  broker:
+    scored_items: 50
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Commission duties and powers"
+        items: 4
+        subtopics:
+          - id: "I.A"
+            label: "Commission powers, discipline process, sanctions, Guaranty Fund"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2906", "Del. Code Ann. tit. 24, § 2911", "Del. Code Ann. tit. 24, § 2912", "Del. Code Ann. tit. 24, § 2913", "Del. Code Ann. tit. 24, § 2914", "Del. Code Ann. tit. 24, § 2922"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 3
+        subtopics:
+          - id: "II.A"
+            label: "License requirement, types, eligibility, renewal, CE, changes"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 24, § 2901", "Del. Code Ann. tit. 24, § 2907", "Del. Code Ann. tit. 24, § 2909", "Del. Code Ann. tit. 24, § 2910", "Del. Code Ann. tit. 24, § 2921", "24 Del. Admin. Code § 2900-3.0", "24 Del. Admin. Code § 2900-4.0", "24 Del. Admin. Code § 2900-12.0", "24 Del. Admin. Code § 2900-14.0"]
+      - id: "III"
+        label: "Rules governing licensee activities"
+        items: 17
+        subtopics:
+          - id: "III.A"
+            label: "Advertising, brokerage relationships, disclosures, documents, money, public responsibility, agency, VTO"
+            items: null
+            statute_refs: ["24 Del. Admin. Code § 2900-8.6", "24 Del. Admin. Code § 2900-8.8", "24 Del. Admin. Code § 2900-10.7", "24 Del. Admin. Code § 2900-10.8", "24 Del. Admin. Code § 2900-15.0", "Del. Code Ann. tit. 24, § 2912", "Del. Code Ann. tit. 24, § 2919", "Del. Code Ann. tit. 24, § 2923", "Del. Code Ann. tit. 24, § 2927", "Del. Code Ann. tit. 24, § 2931", "Del. Code Ann. tit. 24, § 2933", "Del. Code Ann. tit. 24, § 2936", "Del. Code Ann. tit. 24, § 2938"]
+      - id: "IV"
+        label: "Additional Delaware law topics"
+        items: 16
+        subtopics:
+          - id: "IV.A"
+            label: "Condominium and common-interest law, landlord-tenant, transfer tax, deeds, fair housing, environmental, consumer protection, UETA, tax forms"
+            items: null
+            statute_refs: ["Del. Code Ann. tit. 25, § 2201", "Del. Code Ann. tit. 25, § 81-409", "Del. Code Ann. tit. 25, § 5101", "Del. Code Ann. tit. 30, § 5401", "Del. Code Ann. tit. 25, § 121", "Del. Code Ann. tit. 6, § 4603", "Del. Code Ann. tit. 6, § 2513", "Del. Code Ann. tit. 6, § 12A-107", "Del. Code Ann. tit. 30, § 1126", "Del. Code Ann. tit. 25, § 7026"]
+      - id: "V"
+        label: "Broker-only: escrow accounts and records"
+        items: 10
+        subtopics:
+          - id: "V.A"
+            label: "Escrow account requirements and accounting"
+            items: null
+            broker_only: true
+            statute_refs: ["Del. Code Ann. tit. 24, § 2923", "24 Del. Admin. Code § 2900-6.0", "24 Del. Admin. Code § 2900-4.2"]
+          - id: "V.B"
+            label: "Commission inspection and audit of broker records"
+            items: null
+            broker_only: true
+            statute_refs: ["Del. Code Ann. tit. 24, § 2923", "Del. Code Ann. tit. 24, § 2906", "24 Del. Admin. Code § 2900-6.3", "24 Del. Admin. Code § 2900-1.3"]
+references: []

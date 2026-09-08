@@ -1,0 +1,322 @@
+# Nebraska state-portion blueprint. Source: Pearson VUE "Nebraska Real Estate State Content Outlines"
+# (#092801), salesperson and broker state-specific outlines effective September 1, 2023. Labels are OUR
+# paraphrases; outline text is not reproduced (SPEC §3.2). Item counts are the bulletin's; where the
+# bulletin publishes a range ("7-8", "17-18") `items` holds the value that makes the domains sum to 50
+# and `items_range` records the published range.
+id: state_NE
+vendor: pearsonvue
+title: "Nebraska state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Nebraska Real Estate State Content Outlines (#092801) — Nebraska Real Estate Salesperson / Broker Licensing Examination Content Outline, state-specific portion"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092801.pdf"
+source_version_or_date: "State outlines effective September 1, 2023 (outline booklet accompanying the April 2025 handbook #092800)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and discipline"
+        items: 5
+        subtopics:
+          - id: "I.A"
+            label: "NREC composition and general powers"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.07", "Neb. Rev. Stat. § 81-885.08", "Neb. Rev. Stat. § 81-885.09", "Neb. Rev. Stat. § 81-885.10", "Neb. Rev. Stat. § 81-885.43", "Neb. Rev. Stat. § 81-885.44"]
+          - id: "I.B"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 81-885.25", "Neb. Rev. Stat. § 81-885.26", "Neb. Rev. Stat. § 81-885.27", "Neb. Rev. Stat. § 81-885.28", "Neb. Rev. Stat. § 81-885.30", "305 Neb. Admin. Code"]
+          - id: "I.C"
+            label: "Sanctions: censure, suspension, revocation, probation, civil fines"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.29", "Neb. Rev. Stat. § 81-885.10", "Neb. Rev. Stat. § 81-885.31", "Neb. Rev. Stat. § 81-885.12", "Neb. Admin. Code tit. 299, ch. 5, § 002"]
+      - id: "II"
+        label: "Licensing: who needs one, how to get and keep it"
+        items: 8
+        items_range: "7-8"
+        subtopics:
+          - id: "II.A"
+            label: "Application, education, exam, and fee requirements"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.11", "Neb. Rev. Stat. § 81-885.12", "Neb. Rev. Stat. § 81-885.13", "Neb. Rev. Stat. § 81-885.14", "Neb. Rev. Stat. § 81-885.15", "Neb. Admin. Code tit. 299, ch. 1, § 001", "Neb. Admin. Code tit. 299, ch. 1, § 004", "Neb. Admin. Code tit. 299, ch. 1, § 005", "Neb. Admin. Code tit. 299, ch. 1, § 006"]
+          - id: "II.B"
+            label: "Activities requiring a license: sales, auctions, property management"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.01", "Neb. Rev. Stat. § 81-885.02", "Neb. Rev. Stat. § 81-885.03", "Neb. Rev. Stat. § 81-885.45"]
+          - id: "II.C"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.04", "Neb. Rev. Stat. § 81-885.05"]
+          - id: "II.D"
+            label: "Unlicensed assistants and permitted contact"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.04", "Neb. Rev. Stat. § 81-885.02", "Neb. Rev. Stat. § 81-885.01"]
+          - id: "II.E"
+            label: "Broker price opinions vs. appraisal licensing"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.16", "Neb. Rev. Stat. § 81-885.01"]
+          - id: "II.F"
+            label: "Nonresident licensure and reciprocal recognition"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.17"]
+          - id: "II.G"
+            label: "Transfers, renewals, inactive status, branch offices"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.14", "Neb. Rev. Stat. § 81-885.19", "Neb. Rev. Stat. § 81-885.20", "Neb. Rev. Stat. § 81-885.53", "Neb. Admin. Code tit. 299, ch. 2, § 012", "Neb. Admin. Code tit. 299, ch. 1, § 010"]
+          - id: "II.H"
+            label: "Errors and omissions insurance requirement"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.55", "Neb. Admin. Code tit. 299, ch. 8, § 001", "Neb. Admin. Code tit. 299, ch. 8, § 003", "Neb. Admin. Code tit. 299, ch. 8, § 006"]
+      - id: "III"
+        label: "Statutory rules governing licensee conduct"
+        items: 15
+        subtopics:
+          - id: "III.A"
+            label: "Advertising and broker-name prominence, including teams"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 004", "Neb. Admin. Code tit. 299, ch. 2, § 005", "Neb. Admin. Code tit. 299, ch. 2, § 006", "Neb. Admin. Code tit. 299, ch. 2, § 007"]
+          - id: "III.B"
+            label: "Designated broker, associate broker, salesperson roles"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.01", "Neb. Rev. Stat. § 81-885.48", "Neb. Rev. Stat. § 81-885.20", "Neb. Admin. Code tit. 299, ch. 2, § 001"]
+          - id: "III.C"
+            label: "Broker supervision duties and team leadership"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.56", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 001"]
+          - id: "III.D"
+            label: "Commissions, compensation, and fee disputes"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.06", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 010", "Neb. Admin. Code tit. 299, ch. 5, § 001"]
+          - id: "III.E"
+            label: "Handling others' funds and the 72-hour deposit rule"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.21", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 3, § 001", "Neb. Admin. Code tit. 299, ch. 3, § 002"]
+          - id: "III.F"
+            label: "Inducements and gifts to obtain business"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24"]
+          - id: "III.G"
+            label: "Unauthorized practice of law by licensees"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24"]
+          - id: "III.H"
+            label: "Prohibited and unfair trade practices"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 81-885.45", "Neb. Admin. Code tit. 299, ch. 5, § 003"]
+          - id: "III.I"
+            label: "Trust account setup, deposits, and reconciliation"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.21", "Neb. Rev. Stat. § 81-885.22", "Neb. Admin. Code tit. 299, ch. 3, § 001", "Neb. Admin. Code tit. 299, ch. 3, § 002", "Nebraska Real Estate Commission Trust Account Manual"]
+          - id: "III.J"
+            label: "Record retention and audit access"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 3, § 003"]
+      - id: "IV"
+        label: "Agency relationships, disclosures, and transaction handling"
+        items: 17
+        items_range: "17-18"
+        subtopics:
+          - id: "IV.A"
+            label: "Duties owed by seller's, buyer's, and dual agents"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2417", "Neb. Rev. Stat. § 76-2418", "Neb. Rev. Stat. § 76-2419", "Neb. Rev. Stat. § 76-2420", "Neb. Rev. Stat. § 76-2421", "Neb. Rev. Stat. § 76-2422", "Neb. Rev. Stat. § 76-2423"]
+          - id: "IV.B"
+            label: "Seller property condition disclosure and adverse facts"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2,120", "Neb. Rev. Stat. § 76-2403", "Neb. Rev. Stat. § 76-2417", "Neb. Rev. Stat. § 76-2418"]
+          - id: "IV.C"
+            label: "Cooperating brokers and subagency"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2419", "Neb. Rev. Stat. § 76-2424", "Neb. Rev. Stat. § 76-2425", "Neb. Rev. Stat. § 81-885.24"]
+          - id: "IV.D"
+            label: "Conflicts of interest and self-dealing disclosure"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 76-2422", "Neb. Admin. Code tit. 299, ch. 2, § 006"]
+          - id: "IV.E"
+            label: "Preparing, presenting, and delivering offers and documents"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 007", "Neb. Admin. Code tit. 299, ch. 2, § 008", "Neb. Rev. Stat. § 76-2421"]
+          - id: "IV.F"
+            label: "Listing and brokerage agreements"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2422", "Neb. Rev. Stat. § 76-2401", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 007", "Neb. Admin. Code tit. 299, ch. 2, § 011"]
+          - id: "IV.G"
+            label: "Closing duties, good funds, and accounting"
+            items: null
+            statute_refs: ["Neb. Admin. Code tit. 299, ch. 2, § 008", "Neb. Admin. Code tit. 299, ch. 2, § 009", "Neb. Admin. Code tit. 299, ch. 2, § 013", "Neb. Rev. Stat. § 81-885.24"]
+      - id: "V"
+        label: "Land sales registration, fair housing, equitable interests"
+        items: 5
+        subtopics:
+          - id: "V.A"
+            label: "Subdivided and out-of-state land registration"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.33", "Neb. Rev. Stat. § 81-885.34", "Neb. Rev. Stat. § 81-885.35", "Neb. Rev. Stat. § 81-885.36", "Neb. Rev. Stat. § 81-885.37", "Neb. Rev. Stat. § 81-885.38", "Neb. Rev. Stat. § 81-885.39", "Neb. Rev. Stat. § 81-885.40", "Neb. Rev. Stat. § 81-885.41", "Neb. Rev. Stat. § 81-885.42", "Neb. Admin. Code tit. 299, ch. 4"]
+          - id: "V.B"
+            label: "Nebraska fair housing protections and licensee duties"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 20-301 et seq.", "Neb. Rev. Stat. § 81-885.24"]
+          - id: "V.C"
+            label: "Marketing an equitable interest in real estate"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.02", "Neb. Rev. Stat. § 81-885.01"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and discipline"
+        items: 5
+        subtopics:
+          - id: "I.A"
+            label: "NREC composition and general powers"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.07", "Neb. Rev. Stat. § 81-885.10", "Neb. Rev. Stat. § 81-885.43", "Neb. Rev. Stat. § 81-885.44"]
+          - id: "I.B"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 81-885.25", "Neb. Rev. Stat. § 81-885.26", "Neb. Rev. Stat. § 81-885.27", "Neb. Rev. Stat. § 81-885.30", "305 Neb. Admin. Code"]
+          - id: "I.C"
+            label: "Sanctions: censure, suspension, revocation, probation, civil fines"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.29", "Neb. Rev. Stat. § 81-885.10", "Neb. Rev. Stat. § 81-885.31", "Neb. Admin. Code tit. 299, ch. 5, § 002"]
+      - id: "II"
+        label: "Licensing: who needs one, how to get and keep it"
+        items: 8
+        items_range: "7-8"
+        subtopics:
+          - id: "II.A"
+            label: "Broker application, experience, education, exam, fees"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.11", "Neb. Rev. Stat. § 81-885.12", "Neb. Rev. Stat. § 81-885.13", "Neb. Rev. Stat. § 81-885.14", "Neb. Admin. Code tit. 299, ch. 1, § 004"]
+          - id: "II.B"
+            label: "Activities requiring a license: sales, auctions, property management"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.01", "Neb. Rev. Stat. § 81-885.02", "Neb. Rev. Stat. § 81-885.45"]
+          - id: "II.C"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.04", "Neb. Rev. Stat. § 81-885.05"]
+          - id: "II.D"
+            label: "Unlicensed assistants and permitted contact"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.04", "Neb. Rev. Stat. § 81-885.02"]
+          - id: "II.E"
+            label: "Broker price opinions vs. appraisal licensing"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.16", "Neb. Rev. Stat. § 81-885.01"]
+          - id: "II.F"
+            label: "Nonresident licensure and reciprocal recognition"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.17"]
+          - id: "II.G"
+            label: "Transfers, renewals, inactive status, branch offices"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.14", "Neb. Rev. Stat. § 81-885.19", "Neb. Rev. Stat. § 81-885.20", "Neb. Rev. Stat. § 81-885.53", "Neb. Admin. Code tit. 299, ch. 2, § 012"]
+          - id: "II.H"
+            label: "Errors and omissions insurance requirement"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.55", "Neb. Admin. Code tit. 299, ch. 8, § 001", "Neb. Admin. Code tit. 299, ch. 8, § 006"]
+      - id: "III"
+        label: "Statutory rules governing licensee conduct"
+        items: 17
+        items_range: "17-18"
+        subtopics:
+          - id: "III.A"
+            label: "Advertising and broker-name prominence, including teams"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 004", "Neb. Admin. Code tit. 299, ch. 2, § 005", "Neb. Admin. Code tit. 299, ch. 2, § 006"]
+          - id: "III.B"
+            label: "Designated broker, associate broker, salesperson roles"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.01", "Neb. Rev. Stat. § 81-885.48", "Neb. Rev. Stat. § 81-885.20", "Neb. Admin. Code tit. 299, ch. 2, § 001"]
+          - id: "III.C"
+            label: "Broker supervision duties and team leadership"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.56", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 001"]
+          - id: "III.D"
+            label: "Commissions, compensation, and fee disputes"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.06", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 010", "Neb. Admin. Code tit. 299, ch. 5, § 001"]
+          - id: "III.E"
+            label: "Handling others' funds and the 72-hour deposit rule"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.21", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 3, § 001"]
+          - id: "III.F"
+            label: "Inducements and gifts to obtain business"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24"]
+          - id: "III.G"
+            label: "Unauthorized practice of law by licensees"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24"]
+          - id: "III.H"
+            label: "Prohibited and unfair trade practices"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 81-885.45", "Neb. Admin. Code tit. 299, ch. 5, § 003"]
+          - id: "III.I"
+            label: "Trust account setup, deposits, and reconciliation"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.21", "Neb. Rev. Stat. § 81-885.22", "Neb. Admin. Code tit. 299, ch. 3, § 001", "Neb. Admin. Code tit. 299, ch. 3, § 002", "Nebraska Real Estate Commission Trust Account Manual"]
+          - id: "III.J"
+            label: "Record retention and audit access"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 3, § 003"]
+      - id: "IV"
+        label: "Agency relationships, disclosures, and transaction handling"
+        items: 15
+        subtopics:
+          - id: "IV.A"
+            label: "Duties owed by seller's, buyer's, and dual agents"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2417", "Neb. Rev. Stat. § 76-2418", "Neb. Rev. Stat. § 76-2419", "Neb. Rev. Stat. § 76-2420", "Neb. Rev. Stat. § 76-2421", "Neb. Rev. Stat. § 76-2422", "Neb. Rev. Stat. § 76-2423"]
+          - id: "IV.B"
+            label: "Seller property condition disclosure and adverse facts"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2,120", "Neb. Rev. Stat. § 76-2403", "Neb. Rev. Stat. § 76-2417"]
+          - id: "IV.C"
+            label: "Cooperating brokers and subagency"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2419", "Neb. Rev. Stat. § 76-2424", "Neb. Rev. Stat. § 76-2425"]
+          - id: "IV.D"
+            label: "Conflicts of interest and self-dealing disclosure"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Rev. Stat. § 76-2422", "Neb. Admin. Code tit. 299, ch. 2, § 006"]
+          - id: "IV.E"
+            label: "Preparing, presenting, and delivering offers and documents"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 007", "Neb. Admin. Code tit. 299, ch. 2, § 008"]
+          - id: "IV.F"
+            label: "Listing and brokerage agreements"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 76-2422", "Neb. Rev. Stat. § 81-885.24", "Neb. Admin. Code tit. 299, ch. 2, § 007", "Neb. Admin. Code tit. 299, ch. 2, § 011"]
+          - id: "IV.G"
+            label: "Closing duties, good funds, and accounting"
+            items: null
+            statute_refs: ["Neb. Admin. Code tit. 299, ch. 2, § 008", "Neb. Admin. Code tit. 299, ch. 2, § 009", "Neb. Admin. Code tit. 299, ch. 2, § 013", "Neb. Rev. Stat. § 81-885.24"]
+      - id: "V"
+        label: "Land sales registration, fair housing, equitable interests"
+        items: 5
+        subtopics:
+          - id: "V.A"
+            label: "Subdivided and out-of-state land registration"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.33", "Neb. Rev. Stat. § 81-885.34", "Neb. Rev. Stat. § 81-885.35", "Neb. Rev. Stat. § 81-885.36", "Neb. Rev. Stat. § 81-885.39", "Neb. Rev. Stat. § 81-885.40", "Neb. Rev. Stat. § 81-885.41", "Neb. Rev. Stat. § 81-885.42", "Neb. Admin. Code tit. 299, ch. 4"]
+          - id: "V.B"
+            label: "Nebraska fair housing protections and licensee duties"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 20-301 et seq.", "Neb. Rev. Stat. § 81-885.24"]
+          - id: "V.C"
+            label: "Marketing an equitable interest in real estate"
+            items: null
+            statute_refs: ["Neb. Rev. Stat. § 81-885.02", "Neb. Rev. Stat. § 81-885.01"]
+references: []
+notes: >-
+  Domain ranges: the bulletin publishes II as 7-8 and IV as 17-18 items for salespersons (III 17-18 and IV 15 for
+  brokers); we fix II=8/IV=17 (salesperson) and III=17 (broker) so domains sum to 50, recorded in items_range.
+  Ground truth cached in content/statutes/NE: License Act (OCR of NREC's scanned License Manual PDF, Aug. 2026
+  ed. — nebraskalegislature.gov was unreachable), Title 299 rules by chapter, Title 305 procedure rules, agency
+  statutes 76-2401 to 76-2430, SPCD statute 76-2,120, and the Trust Account Manual. The Nebraska Fair Housing
+  Act (20-301 et seq.) and Title 301 agency rules are NOT cached; V.B currently resolves only to 81-885.24.

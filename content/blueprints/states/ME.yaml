@@ -1,0 +1,165 @@
+# Maine state-portion blueprint. Source: Pearson VUE "Maine Real Estate State Content Outlines" (#092005),
+# Maine Real Estate Law Examinations Content Outline effective September 1, 2026 (the prior outline,
+# revalidated July 10, 2024, ran through August 31, 2026 and has identical counts; the new one adds flood
+# risk and property-access disclosures under II.G). Labels are OUR paraphrases (SPEC §3.2).
+# Maine has no broker examination, so there is no `broker` blueprint; the same outline also drives the
+# 50-item Maine Law exam used for reciprocity/reinstatement (counts noted in `notes` only).
+id: state_ME
+vendor: pearsonvue
+title: "Maine state-portion (Maine Law) outline (internal blueprint)"
+source_document: "Pearson VUE Maine Real Estate State Content Outlines (#092005) — Maine Real Estate Law Examinations Content Outline"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092005.pdf"
+source_version_or_date: "Outline effective September 1, 2026 (Sales Agent exam law portion)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-15"
+    domains:
+      - id: "I"
+        label: "Maine Real Estate Commission: powers, enforcement, sanctions"
+        items: 2
+        subtopics:
+          - id: "I.A"
+            label: "Commission organization, rulemaking, and general powers"
+            items: null
+            statute_refs: ["32 M.R.S. § 13061", "32 M.R.S. § 13062", "32 M.R.S. § 13065", "32 M.R.S. § 13069", "02-039 C.M.R. ch. 300"]
+          - id: "I.B"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["32 M.R.S. § 13069", "32 M.R.S. § 13068", "02-039 C.M.R. ch. 340", "02-039 C.M.R. ch. 350"]
+          - id: "I.C"
+            label: "Disciplinary sanctions and license denial or non-renewal"
+            items: null
+            statute_refs: ["32 M.R.S. § 13067-A", "32 M.R.S. § 13005", "32 M.R.S. § 13174"]
+      - id: "II"
+        label: "Maine laws and rules governing licensee activities"
+        items: 15
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions; penalties for unlicensed practice"
+            items: null
+            statute_refs: ["32 M.R.S. § 13001", "32 M.R.S. § 13002", "32 M.R.S. § 13003", "32 M.R.S. § 13004", "32 M.R.S. § 13005"]
+          - id: "II.B"
+            label: "License categories and brokerage-agency definitions"
+            items: null
+            statute_refs: ["32 M.R.S. § 13001", "32 M.R.S. § 13171", "32 M.R.S. § 13198", "32 M.R.S. § 13199", "32 M.R.S. § 13200", "02-039 C.M.R. ch. 390"]
+          - id: "II.C"
+            label: "Designated broker duties toward affiliated sales agents; supervision"
+            items: null
+            statute_refs: ["32 M.R.S. § 13179", "32 M.R.S. § 13180", "32 M.R.S. § 13200", "02-039 C.M.R. ch. 400, § 1", "02-039 C.M.R. ch. 400, § 2"]
+          - id: "II.D"
+            label: "Listings and brokerage agreements; net listings; unfair listing terms"
+            items: null
+            statute_refs: ["32 M.R.S. § 13177-A", "32 M.R.S. § 13177-B", "02-039 C.M.R. ch. 410, § 4", "02-039 C.M.R. ch. 410, § 10"]
+          - id: "II.E"
+            label: "Offers to purchase and sales contracts; confidentiality of offer terms"
+            items: null
+            statute_refs: ["02-039 C.M.R. ch. 410, § 12", "02-039 C.M.R. ch. 410, § 13", "02-039 C.M.R. ch. 410, § 5"]
+          - id: "II.F"
+            label: "Earnest money and real estate trust accounts"
+            items: null
+            statute_refs: ["32 M.R.S. § 13178", "02-039 C.M.R. ch. 400, § 3"]
+          - id: "II.G"
+            label: "Material-fact disclosures and Maine-mandated property disclosures (water, heating, waste, hazards, flood, access)"
+            items: null
+            statute_refs: ["32 M.R.S. § 13273", "32 M.R.S. § 13274", "02-039 C.M.R. ch. 410, § 13", "02-039 C.M.R. ch. 410, § 14", "02-039 C.M.R. ch. 410, § 15", "02-039 C.M.R. ch. 410, § 16", "02-039 C.M.R. ch. 410, § 17", "02-039 C.M.R. ch. 410, § 18", "02-039 C.M.R. ch. 410, § 19", "02-039 C.M.R. ch. 410, § 20", "33 M.R.S. §§ 171–179"]
+          - id: "II.H"
+            label: "Commissions, compensation policy disclosure, and referral fees"
+            items: null
+            statute_refs: ["32 M.R.S. § 13004", "32 M.R.S. § 13183", "02-039 C.M.R. ch. 410, § 6", "02-039 C.M.R. ch. 410, § 21"]
+          - id: "II.I"
+            label: "Market analyses and opinions of value"
+            items: null
+            statute_refs: ["32 M.R.S. § 13251-A", "02-039 C.M.R. ch. 410, § 3"]
+          - id: "II.J"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["32 M.R.S. § 13176", "02-039 C.M.R. ch. 410, § 1"]
+          - id: "II.K"
+            label: "Other conduct rules: self-interest, inducements, records, renewal, CE"
+            items: null
+            statute_refs: ["02-039 C.M.R. ch. 410, § 2", "02-039 C.M.R. ch. 410, § 11", "32 M.R.S. § 13184", "32 M.R.S. § 13194", "32 M.R.S. § 13195", "32 M.R.S. § 13196", "32 M.R.S. § 13197", "02-039 C.M.R. ch. 370"]
+      - id: "III"
+        label: "Law of agency and brokerage relationships"
+        items: 10
+        subtopics:
+          - id: "III.A"
+            label: "Types of relationships: seller, buyer, appointed, disclosed dual, subagency"
+            items: null
+            statute_refs: ["32 M.R.S. § 13271", "32 M.R.S. § 13272", "32 M.R.S. § 13273", "32 M.R.S. § 13274", "32 M.R.S. § 13275", "32 M.R.S. § 13278"]
+          - id: "III.B"
+            label: "Written agency and brokerage agreements; firm policy"
+            items: null
+            statute_refs: ["32 M.R.S. § 13177-A", "32 M.R.S. § 13277", "32 M.R.S. § 13280"]
+          - id: "III.C"
+            label: "Duties owed to clients versus customers"
+            items: null
+            statute_refs: ["32 M.R.S. § 13273", "32 M.R.S. § 13274", "32 M.R.S. § 13275", "32 M.R.S. § 13276"]
+          - id: "III.D"
+            label: "Creation, duration, and termination of agency"
+            items: null
+            statute_refs: ["32 M.R.S. § 13281", "32 M.R.S. § 13282", "32 M.R.S. § 13272"]
+          - id: "III.E"
+            label: "Brokerage relationship disclosure form; acting in self-interest"
+            items: null
+            statute_refs: ["32 M.R.S. § 13279", "02-039 C.M.R. ch. 410, § 9", "02-039 C.M.R. ch. 410, § 8", "02-039 C.M.R. ch. 410, § 2", "02-039 C.M.R. ch. 410, § 7"]
+          - id: "III.F"
+            label: "Transaction brokerage"
+            items: null
+            statute_refs: ["32 M.R.S. § 13283", "32 M.R.S. § 13271"]
+      - id: "IV"
+        label: "Maine-specific ownership, transfer, landlord-tenant, condominium, closing practices"
+        items: 8
+        subtopics:
+          - id: "IV.A"
+            label: "Ownership forms, transfer methods, adverse possession, recording, transfer tax, nonresident withholding"
+            items: null
+            statute_refs: ["33 M.R.S. §§ 151–164", "14 M.R.S. § 801", "33 M.R.S. § 201", "36 M.R.S. §§ 4641–4641-N", "36 M.R.S. § 5250-A"]
+          - id: "IV.B"
+            label: "Public sources of property information in Maine"
+            items: null
+            statute_refs: ["33 M.R.S. § 651", "36 M.R.S. § 706-A", "1 M.R.S. § 408-A"]
+          - id: "IV.C"
+            label: "Maine landlord-tenant law: deposits, notices, habitability"
+            items: null
+            statute_refs: ["14 M.R.S. §§ 6001–6046", "14 M.R.S. §§ 6031–6038", "14 M.R.S. § 6021"]
+          - id: "IV.D"
+            label: "Maine Condominium Act"
+            items: null
+            statute_refs: ["33 M.R.S. §§ 1601-101–1604-118", "33 M.R.S. § 1604-108"]
+          - id: "IV.E"
+            label: "Closing practices and settlement in Maine"
+            items: null
+            statute_refs: ["33 M.R.S. § 521", "36 M.R.S. § 4641-A", "02-039 C.M.R. ch. 400, § 3"]
+      - id: "V"
+        label: "Maine land-use law: subdivisions, shoreland zoning, site location, tanks, other"
+        items: 5
+        subtopics:
+          - id: "V.A"
+            label: "Subdivision law"
+            items: null
+            statute_refs: ["30-A M.R.S. §§ 4401–4407"]
+          - id: "V.B"
+            label: "Mandatory Shoreland Zoning Act"
+            items: null
+            statute_refs: ["38 M.R.S. §§ 435–449"]
+          - id: "V.C"
+            label: "Site Location of Development Act"
+            items: null
+            statute_refs: ["38 M.R.S. §§ 481–490"]
+          - id: "V.D"
+            label: "Underground oil storage tanks"
+            items: null
+            statute_refs: ["38 M.R.S. §§ 561–570-M", "38 M.R.S. § 563"]
+          - id: "V.E"
+            label: "Other land-use topics: minimum lot size, LUPC/DEP, current-use tax programs, natural resources, shoreland transfers"
+            items: null
+            statute_refs: ["12 M.R.S. §§ 4807–4807-G", "12 M.R.S. §§ 681–689", "36 M.R.S. §§ 1101–1121", "36 M.R.S. §§ 571–584-A", "38 M.R.S. §§ 480-A–480-JJ", "30-A M.R.S. § 4404"]
+references:
+  - title: "32 M.R.S. Chapter 114 — Real Estate Brokerage License Act"
+    publisher: "Maine Office of the Revisor of Statutes"
+  - title: "02-039 C.M.R. Chapters 300–410 — Maine Real Estate Commission rules"
+    publisher: "Maine Secretary of State, Administrative Procedure"
+notes: "Maine has no broker examination (Associate Broker and Broker licenses are earned by experience/education), so no `broker` blueprint. The same outline also governs the separate 50-item Maine Law exam (reciprocity/reinstatement) with counts 2/18/12/13/5; that exam does not satisfy the Sales Agent law portion and is not modeled here. Domain counts 2/15/10/8/5 = 40 are published. The statute cache holds all of 32 M.R.S. ch. 114 and the Commission's rule chapters 300-410 (Ch. 410 Minimum Standards of Practice sections: 1 advertising, 2 self-interest, 3 market value, 4 net listings, 5 documents, 6 compensation disclosure, 7 disclosed dual agency, 8 appointed agents, 9 relationship disclosure, 10 written agreements, 11 inducements, 12 offer confidentiality, 13 licensee duty, 14-20 property disclosures, 21 referral fees; Ch. 400: 1-2 designated broker, 3 trust accounts). Titles 12, 14, 30-A, 33, 36, 38 cited in domains IV-V are not cached."

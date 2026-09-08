@@ -1,0 +1,62 @@
+code: NM
+name: New Mexico
+regulator:
+  name: "New Mexico Real Estate Commission, Regulation and Licensing Department (RLD)"
+  url: "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/real-estate-commission/"
+vendor: psi
+vendor_notes: "PSI Services LLC is the Commission's examination contractor; candidates apply for eligibility and pay PSI directly. New Mexico has no 'salesperson' license: the entry-level license is Associate Broker, and the exam is the 'NM Broker Exam' (National + State portions). Values under salesperson_exam are for that entry-level associate broker exam."
+salesperson_exam:
+  national_items: 75
+  state_items: 50
+  total_items: 125
+  pretest_items: "5 to 10 experimental questions may be administered; unscored and the time taken to answer them does not count against testing time"
+  time_minutes: 180
+  pass_score_national: "60 correct (75 items scored to 80 points; 75%)"
+  pass_score_state: "38 correct of 50"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 95.00
+  retake_policy: "'You are required to pass both the state and national portions of the examination. If you fail one portion of the examination, you will only need to register to retake the failed portion. You must pass both the national and state-specific examinations within 90 days of passing the first examination. If you do not pass both examinations within 90 days, you must retake both examinations.' 'The fee is $95 for the 2 examination portions, regardless if you take 1 or both examination portions. Examination retakes are $95 for 1 or both examination portions.' Eligibility expires one year from the date PSI receives the original submission; the examination fee is valid for one year from the date of payment."
+  calculator_policy: "'Only non-programmable calculators that are silent, battery-operated, do not have paper tape printing capabilities, and do not have a keyboard containing the alphabet will be allowed in the examination site.'"
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: null
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 120
+statute_citation_root: "N.M. Stat. Ann. ch. 61, art. 29 (Real Estate Brokers and Salesmen), §§ 61-29-1 et seq."
+rules_citation_root: "N.M. Admin. Code tit. 16, ch. 61 (16.61 NMAC)"
+statute_url: "https://www.rld.nm.gov/wp-content/uploads/2021/06/000-2021-Rule-Book-FINAL-Based-on-Changes-Effective-Jan-3-2021-2.pdf"
+rules_url: "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/real-estate-commission/statutes-rules-and-rule-hearings/"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/998"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/998"
+    used_for: [vendor, salesperson_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://test-takers.psiexams.com/nmre/test/X65XZ5E7"
+    used_for: [salesperson_exam.exam_fee_usd, salesperson_exam.time_minutes]
+    accessed: 2026-09-08
+  - url: "https://www.srca.nm.gov/parts/title16/16.061.0003.html"
+    used_for: [salesperson_exam.pass_score_national, salesperson_exam.retake_policy, prelicense_hours_salesperson, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/real-estate-commission/licensing-registration-and-renewal/"
+    used_for: [regulator, prelicense_hours_salesperson, salesperson_exam.retake_policy]
+    accessed: 2026-09-08
+  - url: "https://www.rld.nm.gov/boards-and-commissions/individual-boards-and-commissions/real-estate-commission/statutes-rules-and-rule-hearings/"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+  - url: "https://www.rld.nm.gov/wp-content/uploads/2021/06/000-2021-Rule-Book-FINAL-Based-on-Changes-Effective-Jan-3-2021-2.pdf"
+    used_for: [statute_url, statute_citation_root]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin edition 'Updated 10/30/2024' (PSI). Time per portion: National 120 min, State 60 min (both bulletin table and PSI test-detail page). PSI's score-reporting text says 'you must receive a score of at least 75%'; the summary table gives 60 correct (of 80 points) national and 38 correct (of 50) state; 16.61.3 NMAC says 'a minimum score of 75' on both portions. broker_exam is null because NM's Qualifying Broker license uses the same Broker examination plus 120 pre-licensing hours (adds a 30-hour Brokerage Office Administration course) and 2 of the last 5 years' experience as an associate broker; there is no separate higher-level exam. Statute is officially compiled on nmonesource.com (blocked to automated fetching); statute_url points to the Commission's official 2021 web-edition 'License Law and Commission Rules' book which reproduces Chapter 61, Article 29. NREC's licensing page also states applicants must apply for a license within 6 months of passing."

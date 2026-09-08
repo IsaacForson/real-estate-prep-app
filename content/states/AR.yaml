@@ -1,0 +1,65 @@
+code: AR
+name: Arkansas
+regulator:
+  name: "Arkansas Real Estate Commission (AREC), Arkansas Department of Labor and Licensing"
+  url: "https://arec.arkansas.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exams; AREC approves the application and Pearson emails an Authorization to Test."
+salesperson_exam:
+  national_items: 80
+  state_items: 30
+  total_items: 110
+  pretest_items: 15           # 5 on national portion + 10 on Arkansas law portion (unscored)
+  time_minutes: null
+  pass_score_national: "70 (scaled score)"
+  pass_score_state: "70 (scaled score)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75            # $75 covers both components if scheduled together; $75 per component if scheduled separately
+  retake_policy: "'The real estate salesperson exam is divided into two parts: general and state law. You may take the exam parts together or separately. If you pass one part of the exam and fail the other part, you only need to retake the failed part of the exam within six months. If you have not passed both parts of the exam after six months, you must retake the entire exam.' Must wait 24 hours before reserving a retake; reservations for reexamination may not be made at the test center. Candidates are authorized for unlimited attempts for one year from Commission approval. License application must be filed within 90 days of passing."
+  calculator_policy: null
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: 120
+  pretest_items: 10
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70 (scaled score, unified exam)"
+  grading: combined
+  exam_fee_usd: 75
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 60
+statute_citation_root: "Ark. Code Ann. § 17-42-101 et seq. (Title 17, ch. 42, Real Estate License Law)"
+rules_citation_root: "Arkansas Real Estate Commission Rules (formerly Commission Regulations), Rules 1-15"
+statute_url: "https://arec.arkansas.gov/wp-content/uploads/AR-Real-Estate-License-Law-July-2024.pdf"
+rules_url: "https://arec.arkansas.gov/wp-content/uploads/2024-Commission-Regulations-4.23.2024-ASA-REV.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090400.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090402.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090400.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090402.pdf"
+    used_for: [salesperson_exam, broker_exam, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/ar/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://arec.arkansas.gov/licensing/exam-information/"
+    used_for: [regulator, vendor, exam_fee_usd]
+    accessed: 2026-09-08
+  - url: "https://arec.arkansas.gov/wp-content/uploads/AR-Real-Estate-License-Law-July-2024.pdf"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://arec.arkansas.gov/wp-content/uploads/2024-Commission-Regulations-4.23.2024-ASA-REV.pdf"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.time_minutes
+  - salesperson_exam.calculator_policy
+  - broker_exam.time_minutes
+confidence: medium
+last_verified: 2026-09-08
+notes: "Candidate Handbook #090400 dated June 2026 (rev 06/2026). The handbook gives no per-exam time table; it says only 'You will have two to four hours to complete your exam', so time_minutes is left null. The handbook's test-center policy section does not state a calculator rule (only math-reference info), so calculator_policy is null. Salesperson: General 80 scored (+5 pretest) and Arkansas law 30 scored (+10 pretest), each portion passed separately at scaled 70 ('70 (general & state)'); portions may be taken together or separately; AREC advertises a '2-for-1' price when both are scheduled in the same transaction ($75 total vs $75 each). Broker exam is a single 'Arkansas Unified Real Estate Broker' exam (120 scored + 10 pretest) effective Dec 1, 2025, scaled 70. Salesperson pre-license: 60 hours of which 30 in basic principles (ACA § 17-42-303, Rule 4.1); broker: 60 hours of which 45 is the Commission-developed Broker Pre-License Course, within 36 months. Post-license education due within 6 months of licensure. Official Arkansas Code is published via the Arkansas General Assembly/LexisNexis; statute_url points to AREC's own compiled License Law PDF (July 2024) on the agency site. Property Management Associate/Broker exams also exist ($75 each)."

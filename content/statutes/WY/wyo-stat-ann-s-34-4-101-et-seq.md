@@ -1,0 +1,286 @@
+---
+jurisdiction: "WY"
+citation: "Wyo. Stat. Ann. § 34-4-101 et seq."
+title: "Wyoming Statutes Title 34, Chapter 4 — Foreclosure of Mortgages by Advertisement and Sale"
+url: "https://wyoleg.gov/statutes/compress/title34.pdf"
+fetched_on: "2026-09-08"
+---
+Witness the following signature and seal.
+.................(Seal.)
+CHAPTER 4 - FORECLOSURE OF MORTGAGES AND POWER OF SALE
+34-4-101. Application.
+The provisions of this act shall apply to all mortgages
+containing a power of sale executed prior to the passage
+thereof, not having been foreclosed, and nothing in this act
+contained shall be construed as limiting the power of parties to
+a mortgage to provide therein as they may see fit as to the
+manner of foreclosure and sale, and when such provision is made,
+foreclosure and sale may be made in accordance therewith, or in
+accordance with the provisions of this act.
+34-4-102. Foreclosure by advertisement.
+(a) Every mortgage of real estate, containing therein a
+power of sale upon default being made in any condition thereof,
+may be foreclosed by advertisement within ten (10) years after
+the maturing of such mortgage or the debt secured thereby, or
+after the recording thereof, in the cases and in the manner
+hereinafter specified.
+(b) The time within which such proceeding may be commenced
+under the power of sale shall begin to run:
+(i) As to any mortgage executed after May 21, 1945,
+from the date of such mortgage, unless the maturity of the debt
+or obligation secured by such mortgage be clearly stated in or
+is otherwise readily ascertainable from the provisions of such
+mortgage;
+(ii) (A) As to any mortgage executed prior to
+May 21, 1945, at the latest of the following dates:
+(I) The tenth anniversary of the maturity
+of the debt or obligation secured by such mortgage if clearly
+stated in or otherwise readily ascertainable from the provisions
+of the mortgage;
+(II) The tenth anniversary of the recording
+of the mortgage if no such maturity date is clearly stated in or
+readily ascertainable from the provisions of the mortgage;
+
+(III) The stated, renewed, or extended
+maturity date recorded on or before December 31, 1971, in the
+manner provided in subdivision (B)(II) of this paragraph.
+(B) The owner and holder of any debt or
+obligation secured by a mortgage executed prior to May 21, 1945,
+the maturity date of which either:
+(I) Is not clearly stated or otherwise
+readily ascertainable; or
+(II) Has been renewed or extended by
+agreement, payment, or other act of the debtor, may, on or
+before December 31, 1971, record in the office of the county
+clerk in the county in which such real estate is located either:
+(1) An agreement signed and
+acknowledged by the debtor as a conveyance of real estate,
+stating the agreed, renewed or extended maturity date of such
+debt or obligation; or
+(2) An affidavit of the owner and
+holder of such debt or obligation, stating such maturity date
+and the date, form or manner of the agreement, payment or other
+act of the debtor fixing such date.
+(c) No mortgage in which the maturity of the debt or
+obligation is not clearly stated or otherwise readily
+ascertainable, which was recorded on or before May 21, 1945, and
+for which no stated, renewed or extended maturity date is
+recorded on or before December 31, 1971, may be foreclosed by
+advertisement after December 31, 1971; and no such mortgage
+recorded after May 21, 1945, may be foreclosed by advertisement
+commenced more than ten (10) years after the date of such
+recording.
+34-4-103. Prerequisites to foreclosure.
+(a) To entitle any party to give a notice as hereinafter
+prescribed and to make such foreclosure, it is requisite:
+(i) That some default in a condition of such mortgage
+has occurred by which the power to sell became operative;
+(ii) That no suit or proceeding has been instituted
+at law to recover the debt then remaining secured by such
+mortgage, or any part thereof, or if any suit or proceeding has
+
+been instituted, that the same has been discontinued, or that an
+execution upon the judgment rendered therein has been returned
+unsatisfied in whole or in part;
+(iii) That the mortgage containing the power of sale
+has been duly recorded; and if it has been assigned, that all
+assignments have been recorded; and
+(iv) That written notice of intent to foreclose the
+mortgage by advertisement and sale has been served upon the
+record owner, and the person in possession of the mortgaged
+premises if different than the record owner, by certified mail
+with return receipt, mailed to the last known address of the
+record owner and the person in possession at least ten (10) days
+before commencement of publication of notice of sale. Proof of
+compliance with this subsection shall be by affidavit.
+34-4-104. Publication and service of notices; generally.
+(a) Notice that the mortgage will be foreclosed by a sale
+of the mortgaged premises, or some part of them, shall be given
+by publishing the notice for four (4) consecutive weeks, at
+least once in each week, in a newspaper printed in the county
+where the premises included in the mortgage and intended to be
+sold, or some part of them, are situated, if there be one; and
+if no newspaper be printed in the county, then notice shall be
+published in a paper printed in the state and of general
+circulation in the county. Prior to first date of publication,
+a copy of the notice shall be served by certified mail with
+return receipt requested upon the record owner, the person in
+possession of mortgaged premises, if different than the record
+owner, and all holders of recorded mortgages and liens
+subordinate to the mortgage being foreclosed, which appear of
+record at least twenty-five (25) days before the scheduled
+foreclosure sale. The notice shall be sent to the last known
+address for the addressee, which shall be the address set forth
+in the mortgage or lien filed of record unless another address
+has been recorded in the real estate records or has been
+provided to the foreclosing mortgagee or lienholder. Proof of
+compliance with this section shall be made by affidavit of an
+authorized representative of the foreclosing mortgagee or
+lienholder. A person or entity who acts in reliance upon the
+affidavit without knowledge that the representations contained
+therein are incorrect shall not be liable to any person for so
+acting and may assume without inquiry the existence of the facts
+contained in the affidavit.
+
+(b) If there are sale proceeds in excess of the amount
+necessary to pay the foreclosing mortgagee, judgment creditor or
+other lienor in full, then within ten (10) business days
+following the sale of real estate by foreclosure, the
+foreclosing mortgagee or lienholder shall serve a copy of the
+sale results to the record owner of the mortgaged premises and
+all holders of recorded mortgages and liens subordinate to the
+mortgage or lien being foreclosed. Sale results shall be sent
+by certified mail with return receipt requested to the last
+known address for the addressee, which shall be the address set
+forth in the mortgage or lien filed of record unless another
+address has been recorded in the real estate records or has been
+provided in writing to the foreclosing mortgagee or lienholder.
+The sale results shall include the amount due the foreclosing
+mortgagee or lienholder as of the date of sale, the name of the
+successful bidder and the amount of the successful bid. If the
+certificate of sale awarded to the successful bidder includes
+the required information, the foreclosing mortgagee or
+lienholder may comply with this section by serving a copy of the
+certificate of sale.
+34-4-105. Publication of notice; contents.
+(a) Every such notice shall include:
+(i) The names of the mortgagor and of the mortgagee
+and the assignee of the mortgage if any;
+(ii) The date of the mortgage and when recorded;
+(iii) The amount claimed to be due thereon at the
+date of the notice;
+(iv) A description of the mortgaged premises,
+conforming substantially with that contained in the mortgage;
+(v) The time and place of sale; and
+(vi) A statement that "The property being foreclosed
+upon may be subject to other liens and encumbrances that will
+not be extinguished at the sale and any prospective purchaser
+should research the status of title before submitting a bid."
+34-4-106. Time, place and manner of sale generally;
+mortgagee, judgment creditor or lienor shall be present or
+waive.
+
+The sale shall be at public vendue, between the hour of ten
+(10:00) o'clock in the forenoon, and five (5:00) o'clock in the
+afternoon, at the front door of the courthouse, or the place of
+holding the district court of the county within the county in
+which the premises to be sold, or some part of them, are
+situated, and shall be made by the person appointed for that
+purpose in the mortgage or by the sheriff or deputy sheriff of
+the county, to the highest bidder. The sheriff or deputy
+sheriff shall not hold the sale unless the foreclosing
+mortgagee, judgment creditor, other foreclosing lienor or an
+authorized agent of the foreclosing party is present at the sale
+or has previously waived to the sheriff conducting the sale the
+right to appear and bid at the sale. The sheriff conducting the
+sale shall not be considered to be the authorized agent of the
+foreclosing party unless the foreclosing party has given the
+sheriff a specified opening bid to be presented by the sheriff
+on behalf of the foreclosing party and the sheriff actually
+presents the opening bid. Any foreclosure sale conducted
+without complying with the terms of this section is void, in
+which case the mortgage, power of sale, judgment or other lien
+which is the subject of the voided sale is not extinguished or
+exhausted, but may be properly foreclosed in a subsequent
+foreclosure sale in compliance with applicable law.
+34-4-107. Manner in which distinct tracts or lots sold.
+If the mortgaged premises consist of distinct tracts or lots the
+foreclosing mortgagee may offer for sale separately sufficient
+tracts or lots as shall be necessary to satisfy the amount due
+on such mortgage at the date of the notice of sale, with
+interest and costs and expenses allowed by law, or the
+foreclosing mortgagee may offer all such distinct tracts or lots
+to be sold as a whole.
+34-4-108. Mortgagee may purchase; by whom sale made;
+mortgagee, judgment creditor or lienor shall be present or
+waive.
+The mortgagee, his assigns, or his or their legal
+representatives may fairly and in good faith, purchase the
+premises sold upon foreclosure of any mortgage by advertisement
+under power of sale or any part thereof, at the sale; and
+whenever the mortgage shall provide for the mortgagee to sell
+the premises at the foreclosure sale, notwithstanding the
+provision, the sale may be made by the sheriff, or deputy
+sheriff, or by the mortgagee at the option of the latter. The
+sale shall be postponed, if the foreclosing mortgagee, judgment
+
+creditor or other foreclosing lienor, or an authorized agent of
+the foreclosing mortgagee, judgment creditor or other
+foreclosing lienor, is not present at the sale or has not
+previously waived in writing the right to appear and bid at the
+sale.
+34-4-109. Postponement of sale.
+A foreclosure sale may be postponed from time to time by
+inserting a notice of the postponement as soon as practicable in
+the newspaper in which the original advertisement was published
+and continuing the publication until the time to which the sale
+shall be postponed, at the expense of the party requesting the
+postponement, provided that the original advertisement is
+published at least once a week, over four (4) consecutive weeks,
+and the notice of postponement is published at least once a
+week, over two (2) consecutive weeks.
+34-4-110. Successor to officer making sale may execute
+conveyance.
+If the term of service of the officer who makes sale of any
+lands and tenements as provided in chapter 243 of the Wyoming
+Compiled Statutes of 1910 expires, or if such officer die, be
+absent or unable for any cause to make a deed of conveyance of
+the property sold, any successor of such officer may execute
+such conveyance.
+34-4-111. Costs and expenses; generally.
+The costs and expenses of the foreclosure sale, which shall be
+paid out of the proceeds of the sale, shall include the costs of
+advertising, the fee of the officer or person making the sale
+and executing the deed, said fee not to exceed ten dollars
+($10.00); and an attorney or solicitor's fee if there be a
+stipulation therefor in the mortgage.
+34-4-112. Costs and expenses; attorney's fees.
+Whenever an attorney's fee is provided for in any real or
+chattel mortgage, or the note or notes secured thereby, such
+attorney's fee shall not be allowed or added to the mortgage
+debt in any foreclosure by public advertisement and sale, unless
+it shall appear by the affidavit of an attorney admitted
+generally to practice in this state representing the mortgagee
+or his assigns in such foreclosures, or the party instituting
+such foreclosure, which affidavit shall be filed with the
+
+sheriff or person who shall conduct the sale under such
+foreclosure, and said affidavit shall state therein that there
+has been and is no agreement, express or implied, between such
+attorney and his client, nor between him and any other person
+except a practicing attorney of this state engaged with him as
+an attorney in the foreclosure proceeding, for any sharing or
+division of said fee so to be allowed or added to the debt
+involved, and said fee when so allowed or added to the debt
+shall be only as compensation for services actually rendered in
+the foreclosure proceeding by an attorney admitted to practice
+in this state and residing therein. Provided, however, that in
+the foreclosure of real estate mortgages, this section shall in
+no wise affect the title to the real estate involved in such a
+foreclosure.
+34-4-113. Payment of proceeds.
+(a) After any sale of real estate made as herein
+prescribed, proceeds from the sale shall be paid over by the
+officer or other person making the sale in the following order:
+(i) Payment of the reasonable expenses of collection
+and enforcement and, to the extent provided by law, reasonable
+attorney's fees and legal expenses incurred by the foreclosing
+mortgagee;
+(ii) The satisfaction of obligations secured by the
+mortgage being foreclosed;
+(iii) The satisfaction of obligations secured by any
+subordinate or junior mortgage or other lien on the real estate
+sold at the foreclosure sale; and
+(iv) Surplus proceeds on demand to the mortgagor, his
+legal representatives or assigns, and if no demand is made, then
+the foreclosing mortgagee, officer or other person making sale
+may retain the surplus proceeds for disposition to the mortgagor
+or may dispose of the surplus proceeds in accordance with W.S.
+34-24-101 et seq.
+(b) If the foreclosing mortgagee receives a demand for the
+proceeds accompanied by the materials required by W.S.
+1-18-104(c) and signed by the holder of a subordinate or junior
+mortgage or other lien within thirty (30) days after the results
+of the sale are served in accordance with W.S. 34-4-104,
+proceeds remaining after distribution under paragraphs (a)(i)
+and (ii) of this section shall be paid over by the officer or

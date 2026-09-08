@@ -1,0 +1,53 @@
+code: RI
+name: Rhode Island
+regulator:
+  name: "Rhode Island Department of Business Regulation (DBR), Division of Commercial Licensing – Real Estate Section"
+  url: "https://dbr.ri.gov/divisions/commercial-licensing/real-estate"
+vendor: pearsonvue
+vendor_notes: "The Pearson VUE Rhode Island Real Estate Candidate Handbook (#094000, January 2026) states 'The State of Rhode Island has retained the services of Pearson VUE to develop and administer its real estate examination program.' Exams are offered in English or Spanish (Spanish at physical test centers only)."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "70 (scaled score)"
+  pass_score_state: "70 (scaled score)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 103
+  retake_policy: "Handbook: 'Candidates who fail either the General or State Law sections will need to retake the examination. Passing results are valid for ONE YEAR from the passing date. If you have not applied for your license within one year of passing both parts, you must retake the examination(s). Note: After ONE failed attempt (per part) via OnVUE online testing, candidates must register and test at a physical testing center for retaking the examination.' Also: 'Application for licensure MUST be filed within one year of the date on which the candidate passed the examination. If parts of the exam were passed on different dates, the one-year time period begins on the later date.'"
+  calculator_policy: "Handbook: 'Calculators are permitted only if they are silent, hand-held, non-printing, and without an alphabetic key pad. Financial calculators are not permitted. Calculator malfunctions are not grounds for challenging examination results or requesting additional examination time. NOTE: Calculators are NOT provided by the test center staff.'"
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "70 (scaled score)"
+  pass_score_state: "70 (scaled score)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 103
+prelicense_hours_salesperson: 45
+prelicense_hours_broker: 90
+statute_citation_root: "R.I. Gen. Laws ch. 5-20.5 (Real Estate Brokers and Salespersons)"
+rules_citation_root: "230-RICR-30-20-2 (Real Estate Brokers and Salespersons)"
+statute_url: "https://webserver.rilegislature.gov/Statutes/TITLE5/5-20.5/INDEX.htm"
+rules_url: "https://rules.sos.ri.gov/regulations/part/230-30-20-2"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094000.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094000.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/ri/realestate.html"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://rules.sos.ri.gov/regulations/part/230-30-20-2"
+    used_for: [rules_citation_root, rules_url, prelicense_hours_salesperson, prelicense_hours_broker, statute_citation_root]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook 'Available Exams' table: RI Sales - National Part $53, 5 pretest, 80 questions, 2.5 hours; RI Sales - State Part $50, 10 pretest, 50 questions, 1.5 hours (broker rows identical). exam_fee_usd = $53 + $50 = $103 for both parts; each part is priced and scheduled separately. 'Passing score for all exam levels is 70' on a 0-100 scaled score; numeric scores are reported only to failing candidates. Pre-license hours come from 230-RICR-30-20-2 (implementing R.I. Gen. Laws § 5-20.5-4(b)): 45 classroom hours for salesperson (completed within 2 years of application) and 90 classroom hours for broker; the 45 salesperson hours may not be counted toward the 90 broker hours. Candidates who completed pre-licensing education in Rhode Island must bring their Education Completion Certificate to the exam. Florida licensees may be eligible to take only the RI State Part under the FL-RI mutual recognition agreement. The DBR website and the rilegislature.gov statute server refused automated connections from this environment; the statute_url follows the legislature's standard chapter-index URL pattern and the regulator URL is the DBR real estate section page."

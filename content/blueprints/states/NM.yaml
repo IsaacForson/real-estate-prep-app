@@ -1,0 +1,155 @@
+# New Mexico state-portion blueprint. New Mexico's entry-level license is the (associate) BROKER license, so
+# the state record's `salesperson_exam` holds the broker exam and this blueprint's `exams.salesperson` mirrors
+# it. Source: PSI "New Mexico Real Estate Candidate Information Bulletin" (bulletin 998), "State Specific
+# Portion Content Outline" (6 + 7 + 15 + 15 + 7 = 50 items). Labels are OUR paraphrases (SPEC §3.2).
+id: state_NM
+vendor: psi
+title: "New Mexico state-portion outline (internal blueprint)"
+source_document: "PSI New Mexico Real Estate Candidate Information Bulletin — State Specific Portion Content Outline (associate broker examination)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/998"
+source_version_or_date: "Bulletin updated 10/30/2024"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "The Real Estate Commission"
+        items: 6
+        subtopics:
+          - id: "1.a"
+            label: "Commission purpose, powers, and duties"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-4", "N.M. Stat. Ann. § 61-29-5", "N.M. Stat. Ann. § 61-29-6", "N.M. Stat. Ann. § 61-29-7", "16.61 NMAC § 16.61.1.7"]
+          - id: "1.b"
+            label: "Violations, investigations, and record audits"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-12", "N.M. Stat. Ann. § 61-29-13", "16.61 NMAC § 16.61.36.8", "16.61 NMAC § 16.61.36.9", "16.61 NMAC § 16.61.23.14"]
+          - id: "1.c"
+            label: "Hearings, penalties, appeals under the Uniform Licensing Act"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-12", "N.M. Stat. Ann. § 61-29-17", "N.M. Stat. Ann. § 61-29-19", "N.M. Stat. Ann. § 61-29-29", "16.61 NMAC § 16.61.12.8", "16.61 NMAC § 16.61.12.9", "N.M. Stat. Ann. § 61-1-1 et seq."]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 7
+        subtopics:
+          - id: "2.a"
+            label: "Activities requiring a license; unlicensed assistants; exemptions"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-1", "N.M. Stat. Ann. § 61-29-2", "N.M. Stat. Ann. § 61-29-16", "N.M. Stat. Ann. § 61-29-17", "16.61 NMAC § 16.61.21.8", "16.61 NMAC § 16.61.21.9", "16.61 NMAC § 16.61.20.8"]
+          - id: "2.b"
+            label: "Qualifications: education, background checks, procedure, E&O, qualifying broker experience"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-3", "N.M. Stat. Ann. § 61-29-8", "N.M. Stat. Ann. § 61-29-9", "N.M. Stat. Ann. § 61-29-10", "N.M. Stat. Ann. § 61-29-10.1", "16.61 NMAC § 16.61.3.8", "16.61 NMAC § 16.61.3.9", "16.61 NMAC § 16.61.3.10", "16.61 NMAC § 16.61.5.8", "16.61 NMAC § 16.61.7.8", "16.61 NMAC § 16.61.13.8", "16.61 NMAC § 16.61.13.9", "16.61 NMAC § 16.61.16.8"]
+          - id: "2.c"
+            label: "Renewal, transfer of affiliation, name and address changes"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 61-29-9", "N.M. Stat. Ann. § 61-29-11", "16.61 NMAC § 16.61.8.8", "16.61 NMAC § 16.61.9.8", "16.61 NMAC § 16.61.9.9", "16.61 NMAC § 16.61.11.8", "16.61 NMAC § 16.61.11.9", "16.61 NMAC § 16.61.2.8"]
+      - id: "3"
+        label: "Commission rules on brokerage operations"
+        items: 15
+        subtopics:
+          - id: "3.a"
+            label: "Qualifying broker and associate broker responsibilities"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.16.8", "16.61 NMAC § 16.61.16.9", "16.61 NMAC § 16.61.16.10", "16.61 NMAC § 16.61.17.8", "16.61 NMAC § 16.61.17.9", "N.M. Stat. Ann. § 61-29-2"]
+          - id: "3.b"
+            label: "Broker affiliation, employment, and independent-contractor agreements"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.16.9", "16.61 NMAC § 16.61.17.8", "16.61 NMAC § 16.61.6.8", "N.M. Stat. Ann. § 61-29-16"]
+          - id: "3.c"
+            label: "Advertising and signage"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.32.8", "16.61 NMAC § 16.61.32.9", "16.61 NMAC § 16.61.31.8", "16.61 NMAC § 16.61.29.8", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "3.d"
+            label: "Record keeping"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.16.11", "16.61 NMAC § 16.61.23.13", "16.61 NMAC § 16.61.33.8", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "3.e"
+            label: "Property management: definition, agreements, trust accounts, commingling"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.24.8", "16.61 NMAC § 16.61.24.9", "16.61 NMAC § 16.61.24.10", "16.61 NMAC § 16.61.24.11", "16.61 NMAC § 16.61.23.8", "16.61 NMAC § 16.61.23.9", "16.61 NMAC § 16.61.23.10", "N.M. Stat. Ann. § 61-29-2"]
+      - id: "4"
+        label: "Broker duties, disclosure, and brokerage relationships"
+        items: 15
+        subtopics:
+          - id: "4.a"
+            label: "Honesty, reasonable care, ethical conduct"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "4.b"
+            label: "Compliance with local, state, and federal law"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "4.c"
+            label: "Performing written agreements and assisting parties to closing"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "16.61 NMAC § 16.61.33.8", "16.61 NMAC § 16.61.33.9"]
+          - id: "4.d"
+            label: "Advising parties to seek legal or expert help"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8"]
+          - id: "4.e"
+            label: "Prompt accounting for money and property"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "16.61 NMAC § 16.61.23.8", "16.61 NMAC § 16.61.23.11", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "4.f"
+            label: "Written disclosure of brokerage relationships and personal interest"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "16.61 NMAC § 16.61.19.9", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "4.g"
+            label: "Written disclosure of adverse material facts"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "16.61 NMAC § 16.61.1.7", "N.M. Stat. Ann. § 61-29-12"]
+          - id: "4.h"
+            label: "Confidentiality within brokerage relationships"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.8", "16.61 NMAC § 16.61.19.9", "16.61 NMAC § 16.61.1.7"]
+          - id: "4.i"
+            label: "Types of brokerage relationships available in New Mexico"
+            items: null
+            statute_refs: ["16.61 NMAC § 16.61.19.9", "16.61 NMAC § 16.61.1.7", "N.M. Stat. Ann. § 61-29-2"]
+      - id: "5"
+        label: "Other New Mexico laws and disclosures"
+        items: 7
+        subtopics:
+          - id: "5.a"
+            label: "New Mexico property taxes"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 7-38-1 et seq.", "N.M. Stat. Ann. § 7-36-1 et seq.", "N.M. Stat. Ann. § 47-13-1 et seq.", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.b"
+            label: "Mechanic's and materialman's liens"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 48-2-1 et seq.", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.c"
+            label: "Septic systems and liquid waste"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 74-1-1 et seq.", "20.7.3 NMAC", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.d"
+            label: "Well and surface water rights"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 72-12-1 et seq.", "N.M. Stat. Ann. § 72-5-1 et seq.", "N.M. Stat. Ann. § 47-13-1 et seq.", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.e"
+            label: "New Mexico Human Rights Act in housing"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 28-1-7", "N.M. Stat. Ann. § 28-1-2", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.f"
+            label: "Public improvement district disclosures"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 5-11-1 et seq.", "N.M. Stat. Ann. § 47-13-1 et seq.", "16.61 NMAC § 16.61.19.8"]
+          - id: "5.g"
+            label: "Homeowner association disclosures"
+            items: null
+            statute_refs: ["N.M. Stat. Ann. § 47-16-1 et seq.", "16.61 NMAC § 16.61.19.8"]
+references: []
+notes: >-
+  Entry exam is the associate broker exam (national 75 / state 50); recorded under `salesperson` to mirror the
+  state record. PSI numbers the state outline as bullets with lettered subtopics; domain ids 1-5 are ours in
+  bulletin order. Ground truth cached in content/statutes/NM from NMREC's official 2021 web-edition License Law
+  and Rules book (statute §§ 61-29-1 to -29 as 'N.M. Stat. Ann. § 61-29'; rules as '16.61 NMAC', 325K chars —
+  refs must carry a '§ 16.61.x.y' key so the pipeline slices rather than sending the whole doc). The 2021 book
+  predates rule amendments after Jan. 3, 2021 and does not include Chapter 5 topics (property tax, liens,
+  water, Human Rights Act, PID/HOA statutes) — those refs are currently unmatched; nmonesource.com was not
+  attempted after RLD's page offered the compiled book directly.

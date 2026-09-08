@@ -1,0 +1,56 @@
+code: OR
+name: Oregon
+regulator:
+  name: "Oregon Real Estate Agency (OREA)"
+  url: "https://www.oregon.gov/rea"
+vendor: psi
+vendor_notes: "Oregon has no 'salesperson' license; the entry-level license is Real Estate Broker, so the Broker exam is mapped to salesperson_exam and the Principal Broker exam to broker_exam. PSI Services LLC administers all Oregon real estate exams (Broker, Principal Broker, Property Manager, Timeshare, Reactivation) per the PSI Candidate Information Bulletin (Updated 1/1/2026) and the Agency's Broker Licensing page."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 10
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75
+  retake_policy: "Bulletin: 'The examination fee is valid for one exam attempt. If you fail, you may retake the examination after rescheduling and paying another fee to PSI. Broker and Principal Broker Applicants. If you pass only one section of the Broker or Principal Broker License examination, you are only required to retake the failed section. The score for the section passed is valid for 12 months; if the other section of the examination is not passed by then, both sections of the exam must be retaken.' No same-day rebooking: 'A candidate who fails an exam on a Wednesday can call the next day, Thursday, and can retest as soon as Friday.' 'Passing scores are valid for one year from the date of passing. You must activate your license within that time or you will need to retake the examination.'"
+  calculator_policy: "Bulletin lists 'handheld calculators' among prohibited electronic devices; at a PSI test site 'you will be given a piece of scratch paper and a pencil.' The bulletin does not mention an on-screen calculator."
+broker_exam:
+  national_items: 75
+  state_items: 50
+  total_items: 125
+  pretest_items: 10
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 75
+prelicense_hours_salesperson: 150
+prelicense_hours_broker: 40
+statute_citation_root: "Or. Rev. Stat. ch. 696 (Real Estate and Escrow Activities)"
+rules_citation_root: "Or. Admin. R. ch. 863 (Real Estate Agency)"
+statute_url: "https://www.oregonlegislature.gov/bills_laws/ors/ors696.html"
+rules_url: "https://secure.sos.state.or.us/oard/displayChapterRules.action?selectedChapter=174"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/3376"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/3376"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.oregon.gov/rea/licensing/get-license/pages/broker.aspx"
+    used_for: [vendor, prelicense_hours_salesperson, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.oregon.gov/rea/licensing/get-license/pages/principal-broker.aspx"
+    used_for: [prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.oregon.gov/rea/pages/laws-rules.aspx"
+    used_for: [statute_citation_root, rules_citation_root, statute_url, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin Examination Summary Table: Broker National 80 items (80 points) 150 minutes; State 50 items (50 points) 90 minutes. Principal Broker National 75 items (80 points; some questions scored up to two points) 150 minutes; State 50 items 90 minutes. 'A score of 75% is required to pass all real estate examinations. For examinations with state and national sections, you must score 75% or better on both sections.' Experimental questions: 'a small number (5 to 10)' unscored items may be administered and DO count against exam time (pretest_items records the upper bound). Exam fee $75 per attempt (covers a sitting of one or both sections). Principal broker: current Oregon brokers need the 40-hour Brokerage Administration and Sales Supervision (BASS) course plus three years' active experience; out-of-state applicants also need the 150-hour broker course. State content outlines are contained in the bulletin (no separate outline document). Fingerprinting ($56.25 at 1/1/2026 bulletin: $46.25 OSP + $15 PSI) is done at the PSI center after passing. The Agency's laws page links ORS 696 on oregonlegislature.gov and OAR 863 on the Secretary of State OARD site; those two sites could not be fetched directly from this environment."

@@ -1,0 +1,65 @@
+code: WY
+name: Wyoming
+regulator:
+  name: "Wyoming Real Estate Commission"
+  url: "https://realestate.wyo.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exams (pearsonvue.com/wy/realestate); test-center and OnVUE delivery. Candidates schedule directly after completing pre-license coursework; no Commission pre-approval step is described in the handbook."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5 unscored pretest items on the national portion; 5-10 on the state portion"
+  time_minutes: 240
+  pass_score_national: "scaled score 75"
+  pass_score_state: "scaled score 75"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 80.00
+  retake_policy: "Handbook: 'Candidates must wait 24 hours before scheduling a re-exam.' 'The exam is divided into two parts: The National and the Wyoming section... If a candidate passes one part and fails the other, only the part failed needs to be retaken. However, the failed part must be passed within six (6) months of the first passed portion. Once both portions of the exam have been passed, an application must be submitted within 90 days. Candidates who do not meet the six-month time limit must retake both parts of the exam.' Out-of-state active licensees take only the Wyoming section."
+  calculator_policy: null
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5 unscored pretest items on the national portion; 5-10 on the state portion"
+  time_minutes: 240
+  pass_score_national: "scaled score 75"
+  pass_score_state: "scaled score 75"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 80.00
+prelicense_hours_salesperson: 30
+prelicense_hours_broker: 30
+statute_citation_root: "Wyo. Stat. Ann. § 33-28-101 et seq. (Real Estate License Act)"
+rules_citation_root: "Wyoming Real Estate Commission Rules, chs. 1-8 (ch. 1 General Provisions and Licensing; ch. 4 Renewals - Education)"
+statute_url: "https://wyoleg.gov/statutes/compress/title33.pdf"
+rules_url: "https://realestate.wyo.gov/real-estate-commission/rules-regulations"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095100.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095101.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095100.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/wy/realestate.html"
+    used_for: [vendor, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://realestate.wyo.gov/real-estate-professionals/obtain-a-license"
+    used_for: [vendor, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://realestate.wyo.gov/real-estate-commission/rules-regulations"
+    used_for: [rules_citation_root, rules_url, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://drive.google.com/file/d/1J-4SICg1bQlvIZYBqBVp0X5icgApCjhM/view"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://drive.google.com/file/d/1VUwuk4eO17SHAVf8lfyCjzx8j73lyUEV/view"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://wyoleg.gov/statutes/compress/title33.pdf"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+unverified: [salesperson_exam.calculator_policy]
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook rev04/2025 (Pearson VUE #095100). Fee is $80 per portion at a test center ($160 both) or $90 per portion via OnVUE. Time: 2.5 hours national + 1.5 hours state. National outline effective Apr 1, 2025; state outline effective Jan 1, 2021. PRE-LICENSE HOURS ARE NOT A SINGLE FIXED NUMBER: the Commission's 'Pre-Licensing Course Outlines and Provider Application Instructions' states 'State Law requires that the combined total of Salesperson Course I and Salesperson Course II be a minimum of 30 hours' while the Commission 'prefers' Course I be at least 40 hours and Course II at least 21 hours and 'recommends' the Wyoming Law module be at least 7 hours (hence the 68-hour figure commonly quoted by schools). The same 30-hour statutory minimum / 40+21 preference applies to Broker Course I and II; Responsible Broker applicants also need an 8-hour Wyoming Real Estate Management course within one year before applying. Course completion must be within one year before application (Rules ch. 1). Applicants actively licensed elsewhere complete Course I (state portion) and Course II only and take only the state exam. Apply within 90 days of the last exam date; $300 license fee; fingerprints ($39) and E&O insurance required. Commission rules are hosted by the Commission as Google Drive PDFs; the Secretary of State's rules.wyo.gov is the official register (LII/Justia index them as Wyo. Admin. Code agency 018)."

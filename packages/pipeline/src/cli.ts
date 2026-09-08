@@ -1,0 +1,146 @@
+#!/usr/bin/env tsx
+import { CONFIG, repoRoot as repoRootDir } from "./config.js";
+import { fetchStatute, saveStatute, today, loadStatutes, pdfToText } from "./statutes.js";
+import { planBank } from "./plan.js";
+import { submitDraftBatch, collectBatch } from "./draft.js";
+import { submitVerifyBatch, collectVerifyBatch } from "./verify.js";
+import { qaSheet, qaApprove, qaReject, publish } from "./qa.js";
+import { buildMocks } from "./mocks.js";
+import { computeStatus, renderStatus, writeStatusMarkdown } from "./status.js";
+import { auditRefs, renderAudit } from "./refsAudit.js";
+import { writeQaPackets } from "./qaPacket.js";
+import { draftDirect, verifyDirect } from "./direct.js";
+import { loadEnv } from "@rep/llm";
+loadEnv();
+const BACKEND = process.env.LLM_BACKEND ?? "router";
+import { readFileSync } from "node:fs";
+import { readJson, listFiles } from "./fsx.js";
+import { join } from "node:path";
+
+const [cmd, ...rest] = process.argv.slice(2).filter((a) => a !== "--");
+const flag = (name: string) => { const i = rest.indexOf(`--${name}`); return i >= 0 ? rest[i + 1] : undefined; };
+const positional = rest.filter((a, i) => !a.startsWith("--") && !(i > 0 && rest[i - 1]!.startsWith("--")));
+
+const HELP = `pipeline — content factory (SPEC §3.5)
+
+  ingest <JUR> "<citation>" <url> ["<title>"]     fetch statute HTML → content/statutes/<JUR>/
+  ingest <JUR> "<citation>" --file <path.txt|.pdf> ["<title>"] [--url <source>]   ingest a local text or PDF file
+  statutes <JUR>                                    list cached statute docs
+  plan <bank>                                       per-node targets vs existing items
+  draft <bank> [--nodes I,II] [--limit N] [--dry-run]   draft items now via the free-tier router (LLM_BACKEND=router, default) or submit an Anthropic batch (LLM_BACKEND=anthropic); --dry-run writes requests to .pipeline/dry-run
+  collect <batchId>                                 pull draft results → .pipeline/drafts/<bank>/
+  verify <bank>                                     gate 3a locally, then verifier (router: immediate; anthropic: batch)
+  collect-verify <batchId>                          pull verdicts → content/items (pass) / .pipeline/rejected (fail)
+  batches                                           list known batches
+  qa-packet <bank> [--status verified|draft] [--limit N] [--out dir]   one Markdown review packet per item (item + cited authority section)
+  wait <batchId>                                    poll a batch until it ends, then collect (draft) or collect-verify (verify)
+  qa-sheet <bank> [--sample 0.2]                    reviewer CSV of a random sample of verified items
+  qa-approve <reviewer> <id...>                     stamp qa_approved
+  qa-reject <reviewer> <id> "<reason>"              retire an item
+  publish <bank>                                    qa_approved → published
+  refs-audit [XX|bank] [--verbose]                  resolve every blueprint node's statute_refs against cached authorities
+  status [--md docs/STATUS.md]                      per-jurisdiction readiness table (map, blueprint, authorities, items, mocks, phase)
+  mock-build <XX> [--forms 5] [--status published]  assemble N non-overlapping full-length mocks in the state's format
+`;
+
+async function main() {
+  switch (cmd) {
+    case "ingest": {
+      const [jur, citation, urlOrTitle, title] = positional;
+      if (!jur || !citation) throw new Error("ingest <JUR> <citation> <url>|--file <path>");
+      const file = flag("file");
+      if (file) {
+        const text = file.toLowerCase().endsWith(".pdf") ? await pdfToText(new Uint8Array(readFileSync(file))) : readFileSync(file, "utf8");
+        const p = saveStatute({ jurisdiction: jur, citation, title: urlOrTitle ?? citation, url: flag("url") ?? null, fetched_on: today(), text });
+        console.log(`saved ${p}`);
+      } else {
+        if (!urlOrTitle) throw new Error("need a url or --file");
+        const p = await fetchStatute(jur, citation, urlOrTitle, title);
+        console.log(`saved ${p}`);
+      }
+      break;
+    }
+    case "statutes": {
+      for (const d of loadStatutes(positional[0]!)) console.log(`${d.citation.padEnd(40)} ${String(d.text.length).padStart(8)} chars  ${d.fetched_on}  ${d.url ?? "(manual)"}`);
+      break;
+    }
+    case "plan": {
+      const gaps = planBank(positional[0]!);
+      console.log("node       exam  target  existing  gap   K/A/N            label");
+      for (const g of gaps) console.log(`${g.node.padEnd(10)} ${String(g.exam_items).padEnd(5)} ${String(g.target_bank_items).padEnd(7)} ${String(g.existing).padEnd(9)} ${String(g.gap).padEnd(5)} ${`${g.byLevel.knowledge}/${g.byLevel.application}/${g.byLevel.analysis}`.padEnd(16)} ${g.label}`);
+      const t = gaps.reduce((a, g) => ({ target: a.target + g.target_bank_items, existing: a.existing + g.existing }), { target: 0, existing: 0 });
+      console.log(`\n${t.existing}/${t.target} items (${((100 * t.existing) / Math.max(1, t.target)).toFixed(0)}%)`);
+      break;
+    }
+    case "draft": {
+      const dryRun = rest.includes("--dry-run");
+      if (BACKEND === "router" && !dryRun) {
+        const r = await draftDirect(positional[0]!, { nodes: flag("nodes")?.split(","), limit: flag("limit") ? Number(flag("limit")) : undefined });
+        console.log(`drafted ${r.written}/${r.requested} items (${r.failed} failed requests) → .pipeline/drafts/${positional[0]}/  providers: ${JSON.stringify(r.byProvider)}`);
+        break;
+      }
+      const m = await submitDraftBatch(positional[0]!, { nodes: flag("nodes")?.split(","), limit: flag("limit") ? Number(flag("limit")) : undefined, dryRun });
+      if (!dryRun) console.log(`submitted ${m.batch_id}: ${m.requests.length} requests, ${m.requests.reduce((a, r) => a + r.count, 0)} items requested`);
+      break;
+    }
+    case "collect": { console.log(await collectBatch(positional[0]!)); break; }
+    case "verify": {
+      if (BACKEND === "router") { const r = await verifyDirect(positional[0]!); console.log(`verify: ${r.drafts} drafts → ${r.localRejected} rejected locally, ${r.verified} verified, ${r.rejected} rejected by verifier, ${r.failed} failed  providers: ${JSON.stringify(r.byProvider)}`); break; }
+      const m = await submitVerifyBatch(positional[0]!); console.log(m ? `submitted ${m.batch_id}: ${m.requests.length} items` : "nothing to verify"); break;
+    }
+    case "collect-verify": { console.log(await collectVerifyBatch(positional[0]!)); break; }
+    case "batches": {
+      for (const p of listFiles(join(CONFIG.stateDir, "batches"), ".json")) { const m = readJson<any>(p); console.log(`${m.batch_id}  ${m.kind.padEnd(6)} ${m.bank.padEnd(20)} ${m.requests.length} reqs  ${m.created}`); }
+      break;
+    }
+    case "qa-packet": {
+      const r = writeQaPackets(positional[0]!, { status: flag("status"), limit: flag("limit") ? Number(flag("limit")) : undefined, out: flag("out") ? join(repoRootDir(), flag("out")!) : undefined });
+      console.log(`${r.count} packets → ${r.dir}/index.md`);
+      break;
+    }
+    case "wait": {
+      const { default: Anthropic } = await import("@anthropic-ai/sdk");
+      const client = new Anthropic();
+      const id = positional[0]!;
+      const manifest = readJson<any>(join(CONFIG.stateDir, "batches", `${id}.json`));
+      const started = Date.now();
+      for (;;) {
+        const b = await client.messages.batches.retrieve(id);
+        const c = b.request_counts;
+        console.log(`${new Date().toISOString()} ${b.processing_status} processing=${c.processing} succeeded=${c.succeeded} errored=${c.errored} expired=${c.expired}`);
+        if (b.processing_status === "ended") break;
+        if (Date.now() - started > 3 * 3600_000) throw new Error("gave up after 3h");
+        await new Promise((r) => setTimeout(r, 60_000));
+      }
+      console.log(manifest.kind === "verify" ? await collectVerifyBatch(id) : await collectBatch(id));
+      break;
+    }
+    case "qa-sheet": { qaSheet(positional[0]!, flag("sample") ? Number(flag("sample")) : 0.2); break; }
+    case "qa-approve": { qaApprove(positional[0]!, positional.slice(1)); break; }
+    case "qa-reject": { qaReject(positional[0]!, positional[1]!, positional[2] ?? "rejected by reviewer"); break; }
+    case "refs-audit": {
+      const rows = auditRefs(positional[0]);
+      console.log(renderAudit(rows));
+      if (rest.includes("--verbose")) for (const r of rows) if (r.unmatched.length || r.refs === 0) console.log(`  ${r.bank} ${r.node}: ${r.refs === 0 ? "NO REFS" : "unmatched → " + r.unmatched.join(" | ")}`);
+      break;
+    }
+    case "status": {
+      const md = flag("md") ? writeStatusMarkdown(join(repoRootDir(), flag("md")!)) : renderStatus(computeStatus());
+      console.log(md);
+      break;
+    }
+    case "mock-build": {
+      const r = buildMocks(positional[0]!, flag("forms") ? Number(flag("forms")) : 5, (flag("status") as any) ?? "published");
+      if (Object.keys(r.shortfalls).length) {
+        console.error("cannot build mocks — bank shortfalls (need = per-form count × forms):");
+        for (const [bank, list] of Object.entries(r.shortfalls)) for (const s of list) console.error(`  ${bank} ${s.node}: need ${s.need}, have ${s.have}`);
+        process.exit(2);
+      }
+      for (const p of r.written) console.log(`wrote ${p}`);
+      break;
+    }
+    case "publish": { console.log(`${publish(positional[0]!)} items published`); break; }
+    default: console.log(HELP); process.exit(cmd ? 1 : 0);
+  }
+}
+main().catch((e) => { console.error(e instanceof Error ? e.message : e); process.exit(1); });

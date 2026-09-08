@@ -1,0 +1,170 @@
+# District of Columbia state-portion blueprint. Source: PSI District of Columbia Real Estate Candidate
+# Information Bulletin (test-takers.psiexams.com/dcre), "State Portion Content Outline for Salespersons and
+# Brokers". Labels are OUR paraphrases (SPEC §3.2). Domain ids follow the bulletin's Roman numerals;
+# subtopic ids append the bulletin's letters.
+id: state_DC
+vendor: psi
+title: "District of Columbia state-portion outline (internal blueprint)"
+source_document: "PSI Services — District of Columbia Real Estate Candidate Information Bulletin, State Portion Content Outline for Salespersons and Brokers"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/5587"
+source_version_or_date: "PSI bulletin retrieved 2026-09-08 (salesperson state portion 30 items / 90 min; broker state portion 40 items / 90 min)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  The bulletin publishes both percentages and item counts per domain (salesperson 20%/13%/67% =
+  6/4/20 of 30; broker 12.5%/15%/60%/12.5% = 5/6/24/5 of 40); domain IV is broker-only and subtopics
+  II.B-II.C are broker-only. Up to 10 unscored items may be added. Statute refs: D.C. Code Title 47,
+  ch. 28, subch. I-B (general licensing provisions §§ 47-2853.01 to .27; real estate parts K-P at
+  §§ 47-2853.141 to .198 — parts K-P cached) and 17 DCMR ch. 26 (cached). Guaranty and Education Fund
+  (D.C. Code § 42-1705 et seq.), TOPA (§ 42-3404.01 et seq.), Human Rights Act (§ 2-1401.01 et seq.),
+  seller disclosure (§ 42-1301 et seq.) and condominium act (§ 42-1901.01 et seq.) cited but not cached.
+exams:
+  salesperson:
+    scored_items: 30
+    pretest_items: "up to 10"
+    domains:
+      - id: "I"
+        label: "Board of Real Estate powers and discipline"
+        items: 6
+        weight_pct: 20
+        subtopics:
+          - id: "I.A"
+            label: "Board composition and general powers"
+            items: null
+            statute_refs: ["17 DCMR § 2600", "D.C. Code § 47-2853.06", "D.C. Code § 47-2853.07", "D.C. Code § 47-2853.10"]
+          - id: "I.B"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.22", "D.C. Code § 47-2853.23", "D.C. Code § 47-2853.17", "17 DCMR § 2600"]
+          - id: "I.C"
+            label: "Sanctions: suspension, revocation, fines"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.17", "D.C. Code § 47-2853.18", "D.C. Code § 47-2853.20", "17 DCMR § 2623"]
+          - id: "I.D"
+            label: "Real Estate Guaranty and Education Fund"
+            items: null
+            statute_refs: ["D.C. Code § 42-1706", "D.C. Code § 42-1707"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 4
+        weight_pct: 13
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.161", "D.C. Code § 47-2853.171", "D.C. Code § 47-2853.141", "D.C. Code § 47-2853.181", "17 DCMR § 2624", "17 DCMR § 2699"]
+          - id: "II.B"
+            label: "Eligibility for a broker license"
+            items: null
+            broker_only: true
+            statute_refs: ["D.C. Code § 47-2853.162", "17 DCMR § 2601", "17 DCMR § 2610", "17 DCMR § 2611"]
+          - id: "II.C"
+            label: "License types: broker, salesperson, property manager, organizations"
+            items: null
+            broker_only: true
+            statute_refs: ["D.C. Code § 47-2853.161", "D.C. Code § 47-2853.171", "D.C. Code § 47-2853.141", "D.C. Code § 47-2853.183", "17 DCMR § 2601", "17 DCMR § 2602", "17 DCMR § 2603"]
+          - id: "II.D"
+            label: "License maintenance: CE, renewal, reinstatement, status changes"
+            items: null
+            statute_refs: ["17 DCMR § 2605", "17 DCMR § 2612", "17 DCMR § 2620", "17 DCMR § 2621", "17 DCMR § 2622", "D.C. Code § 47-2853.182", "D.C. Code § 47-2853.12"]
+      - id: "III"
+        label: "Rules governing licensee activities"
+        items: 20
+        weight_pct: 67
+        subtopics:
+          - id: "III.A"
+            label: "Advertising, including online and technology"
+            items: null
+            statute_refs: ["17 DCMR § 2615", "17 DCMR § 2609"]
+          - id: "III.B"
+            label: "Broker–salesperson relationship and supervision"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.171", "D.C. Code § 47-2853.186", "D.C. Code § 47-2853.187", "17 DCMR § 2614"]
+          - id: "III.C"
+            label: "Commissions and compensation"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.197", "D.C. Code § 47-2853.196", "17 DCMR § 2609"]
+          - id: "III.D"
+            label: "Disclosure of interests and conflicts"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.196", "D.C. Code § 47-2853.197", "17 DCMR § 2609", "17 DCMR § 2613"]
+          - id: "III.E"
+            label: "Handling transaction documents; written listing contracts"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.197", "D.C. Code § 42-1705", "17 DCMR § 2609"]
+          - id: "III.F"
+            label: "Handling escrow and other people's money"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.197", "17 DCMR § 2609", "D.C. Code § 42-1704"]
+          - id: "III.G"
+            label: "Fair housing and ADA"
+            items: null
+            statute_refs: ["D.C. Code § 2-1401.01", "D.C. Code § 2-1402.21", "D.C. Code § 2-1402.24", "17 DCMR § 2609", "42 U.S.C. §§ 3601-3619 (Fair Housing Act)"]
+          - id: "III.H"
+            label: "Tenant Opportunity to Purchase Act"
+            items: null
+            statute_refs: ["D.C. Code § 42-3404.02", "D.C. Code § 42-3404.03", "D.C. Code § 42-3404.09", "D.C. Code § 42-3404.11"]
+          - id: "III.I"
+            label: "Agency: brokerage-relationship disclosure and fiduciary duties"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.191", "D.C. Code § 47-2853.192", "D.C. Code § 47-2853.193", "D.C. Code § 47-2853.194", "D.C. Code § 47-2853.195", "D.C. Code § 47-2853.196", "D.C. Code § 47-2853.198", "17 DCMR § 2613"]
+          - id: "III.J"
+            label: "Property disclosures: seller disclosure, historic preservation, common-interest communities"
+            items: null
+            statute_refs: ["D.C. Code § 42-1301", "D.C. Code § 42-1302", "D.C. Code § 42-1305", "D.C. Code § 6-1101", "D.C. Code § 42-1904.11", "D.C. Code § 47-2853.198"]
+          - id: "III.K"
+            label: "Environmental issues: sustainable energy and D.C. environmental regulation"
+            items: null
+            statute_refs: ["D.C. Code § 6-1451.01", "D.C. Code § 6-1451.03", "D.C. Code § 8-1771.01", "D.C. Code § 8-1041.01"]
+  broker:
+    scored_items: 40
+    pretest_items: "up to 10"
+    domains:
+      - id: "I"
+        label: "Board of Real Estate powers and discipline"
+        items: 5
+        weight_pct: 12.5
+        subtopics:
+          - id: "I.A"
+            label: "Board powers, investigations, hearings, sanctions, guaranty fund"
+            items: null
+            statute_refs: ["17 DCMR § 2600", "D.C. Code § 47-2853.17", "D.C. Code § 47-2853.18", "D.C. Code § 47-2853.22", "D.C. Code § 42-1706", "D.C. Code § 42-1707"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 6
+        weight_pct: 15
+        subtopics:
+          - id: "II.A"
+            label: "License requirement, broker eligibility, license types, maintenance"
+            items: null
+            statute_refs: ["D.C. Code § 47-2853.161", "D.C. Code § 47-2853.162", "D.C. Code § 47-2853.181", "D.C. Code § 47-2853.182", "D.C. Code § 47-2853.183", "17 DCMR § 2601", "17 DCMR § 2605", "17 DCMR § 2610", "17 DCMR § 2612", "17 DCMR § 2621", "17 DCMR § 2624"]
+      - id: "III"
+        label: "Rules governing licensee activities"
+        items: 24
+        weight_pct: 60
+        subtopics:
+          - id: "III.A"
+            label: "Advertising, supervision, compensation, disclosures, documents, money, fair housing, TOPA, agency, property and environmental disclosures"
+            items: null
+            statute_refs: ["17 DCMR § 2609", "17 DCMR § 2613", "17 DCMR § 2614", "17 DCMR § 2615", "D.C. Code § 47-2853.191", "D.C. Code § 47-2853.192", "D.C. Code § 47-2853.196", "D.C. Code § 47-2853.197", "D.C. Code § 47-2853.198", "D.C. Code § 42-1301", "D.C. Code § 42-3404.02", "D.C. Code § 2-1402.21", "D.C. Code § 6-1451.01"]
+      - id: "IV"
+        label: "Broker-only: business entities, offices, supervision"
+        items: 5
+        weight_pct: 12.5
+        subtopics:
+          - id: "IV.A"
+            label: "Licensing corporations and other real estate organizations"
+            items: null
+            broker_only: true
+            statute_refs: ["D.C. Code § 47-2853.183", "D.C. Code § 47-2853.185", "D.C. Code § 47-2853.187"]
+          - id: "IV.B"
+            label: "Place of business requirements"
+            items: null
+            broker_only: true
+            statute_refs: ["D.C. Code § 47-2853.184", "17 DCMR § 2614"]
+          - id: "IV.C"
+            label: "Supervising affiliated licensees"
+            items: null
+            broker_only: true
+            statute_refs: ["17 DCMR § 2614", "D.C. Code § 47-2853.186", "D.C. Code § 47-2853.161"]
+references: []

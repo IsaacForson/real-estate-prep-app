@@ -1,0 +1,167 @@
+# New Jersey blueprint. New Jersey gives ONE combined 110-item salesperson exam with a single 70% cut score
+# (77 correct). The PSI bulletin's content outline nonetheless separates the New Jersey-law topics and gives
+# them item counts: 2 + 3 + 22 + 3 = 30 salesperson items (3 + 4 + 30 + 3 = 40 broker items). This blueprint
+# covers only that New Jersey-law block; the remaining 80 (salesperson) / 80 (broker, 120 points) items are
+# the general topics covered by the PSI national blueprint. Labels are OUR paraphrases (SPEC §3.2).
+id: state_NJ
+vendor: psi
+title: "New Jersey state-law block of the combined exam (internal blueprint)"
+source_document: "PSI New Jersey Real Estate Candidate Information Bulletin — Content Outlines (New Jersey-specific topics with salesperson/broker/instructor item counts)"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/1663"
+source_version_or_date: "Bulletin updated 2/1/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 30
+    pretest_items: "5-10"
+    domains:
+      - id: "NJ-1"
+        label: "Commission powers, records, and sanctions"
+        items: 2
+        subtopics:
+          - id: "NJ-1.1"
+            label: "Commission composition, rulemaking, and record maintenance"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-5", "N.J. Stat. Ann. § 45:15-6", "N.J. Stat. Ann. § 45:15-10.4", "N.J. Stat. Ann. § 45:15-17", "N.J. Admin. Code § 11:5-1.1"]
+          - id: "NJ-1.2"
+            label: "Fines, suspension, and revocation"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-17", "N.J. Stat. Ann. § 45:15-17.1", "N.J. Stat. Ann. § 45:15-18", "N.J. Stat. Ann. § 45:15-19.1", "N.J. Admin. Code § 11:5-11.1"]
+      - id: "NJ-2"
+        label: "Licensing requirements"
+        items: 3
+        subtopics:
+          - id: "NJ-2.1"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-1", "N.J. Stat. Ann. § 45:15-2", "N.J. Stat. Ann. § 45:15-3", "N.J. Stat. Ann. § 45:15-4"]
+          - id: "NJ-2.2"
+            label: "License types, qualifications, education, renewal"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-9", "N.J. Stat. Ann. § 45:15-10", "N.J. Stat. Ann. § 45:15-10.1", "N.J. Stat. Ann. § 45:15-10.2", "N.J. Stat. Ann. § 45:15-15", "N.J. Stat. Ann. § 45:15-16.2", "N.J. Admin. Code § 11:5-3.1", "N.J. Admin. Code § 11:5-3.2", "N.J. Admin. Code § 11:5-3.4", "N.J. Admin. Code § 11:5-3.8", "N.J. Admin. Code § 11:5-12.1"]
+      - id: "NJ-3"
+        label: "Statutes and rules governing licensee activities"
+        items: 22
+        subtopics:
+          - id: "NJ-3.1"
+            label: "Advertising"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-6.1", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.2"
+            label: "Broker-salesperson relationship and supervision"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-12", "N.J. Stat. Ann. § 45:15-16", "N.J. Admin. Code § 11:5-7.1", "N.J. Admin. Code § 11:5-4.1"]
+          - id: "NJ-3.3"
+            label: "Commissions and required accounting"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-3", "N.J. Stat. Ann. § 45:15-16", "N.J. Stat. Ann. § 45:15-17", "N.J. Admin. Code § 11:5-3.16"]
+          - id: "NJ-3.4"
+            label: "Agency, conflicts of interest, and disclosure duties"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-6.4", "N.J. Admin. Code § 11:5-6.9", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.5"
+            label: "Contracts, attorney review, and other transaction documents"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-6.2", "N.J. Admin. Code § 11:5-6.4", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.6"
+            label: "Trust fund requirements"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-17", "N.J. Admin. Code § 11:5-5.1", "N.J. Admin. Code § 11:5-5.2", "N.J. Admin. Code § 11:5-5.3"]
+          - id: "NJ-3.7"
+            label: "Listings and listing agreement content"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-6.1", "N.J. Admin. Code § 11:5-6.4", "N.J. Admin. Code § 11:5-6.9", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.8"
+            label: "Place of business and branch offices"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-12", "N.J. Admin. Code § 11:5-4.2", "N.J. Admin. Code § 11:5-4.3"]
+          - id: "NJ-3.9"
+            label: "Records and escrow bookkeeping"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-5.4", "N.J. Admin. Code § 11:5-5.1", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.10"
+            label: "Inducements"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-17", "N.J. Admin. Code § 11:5-6.1"]
+          - id: "NJ-3.11"
+            label: "Buyer rebates"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-17", "N.J. Stat. Ann. § 45:15-16", "N.J. Admin. Code § 11:5-6.1"]
+          - id: "NJ-3.12"
+            label: "Duties to the public and to other licensees"
+            items: null
+            statute_refs: ["N.J. Admin. Code § 11:5-6.4", "N.J. Stat. Ann. § 45:15-17"]
+          - id: "NJ-3.13"
+            label: "Related NJ laws: farmland, Pinelands, transfer fee, Mount Laurel, zoning, MLUL, renting, wetlands"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 54:4-23.1 et seq.", "N.J. Stat. Ann. § 13:18A-1 et seq.", "N.J. Stat. Ann. § 46:15-5 et seq.", "N.J. Stat. Ann. § 52:27D-301 et seq.", "N.J. Stat. Ann. § 40:55D-1 et seq.", "N.J. Stat. Ann. § 46:8-43 et seq.", "N.J. Stat. Ann. § 13:9B-1 et seq."]
+      - id: "NJ-4"
+        label: "Additional New Jersey statutes"
+        items: 3
+        subtopics:
+          - id: "NJ-4.1"
+            label: "Real Estate Sales Full Disclosure Act"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-16.27 et seq.", "N.J. Admin. Code § 11:5-9.1"]
+          - id: "NJ-4.2"
+            label: "Law Against Discrimination in housing"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 10:5-12", "N.J. Stat. Ann. § 10:5-4", "N.J. Admin. Code § 11:5-6.4"]
+          - id: "NJ-4.3"
+            label: "Real Estate Guaranty Fund"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-34", "N.J. Stat. Ann. § 45:15-35", "N.J. Stat. Ann. § 45:15-36", "N.J. Stat. Ann. § 45:15-37", "N.J. Stat. Ann. § 45:15-38", "N.J. Stat. Ann. § 45:15-39", "N.J. Stat. Ann. § 45:15-40", "N.J. Stat. Ann. § 45:15-41", "N.J. Stat. Ann. § 45:15-42"]
+          - id: "NJ-4.4"
+            label: "Real Estate Time Share Act"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-16.50 et seq.", "N.J. Admin. Code § 11:5-9A.1"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "NJ-1"
+        label: "Commission powers, records, and sanctions"
+        items: 3
+        subtopics:
+          - id: "NJ-1.1"
+            label: "Commission composition, rulemaking, record maintenance, sanctions"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-5", "N.J. Stat. Ann. § 45:15-6", "N.J. Stat. Ann. § 45:15-17", "N.J. Stat. Ann. § 45:15-17.1", "N.J. Stat. Ann. § 45:15-18", "N.J. Admin. Code § 11:5-11.1"]
+      - id: "NJ-2"
+        label: "Licensing requirements"
+        items: 4
+        subtopics:
+          - id: "NJ-2.1"
+            label: "Licensable activity, license types, broker qualifications"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-1", "N.J. Stat. Ann. § 45:15-3", "N.J. Stat. Ann. § 45:15-4", "N.J. Stat. Ann. § 45:15-9", "N.J. Stat. Ann. § 45:15-10", "N.J. Stat. Ann. § 45:15-10.1", "N.J. Admin. Code § 11:5-3.1", "N.J. Admin. Code § 11:5-3.3", "N.J. Admin. Code § 11:5-3.8"]
+      - id: "NJ-3"
+        label: "Statutes and rules governing licensee activities"
+        items: 30
+        subtopics:
+          - id: "NJ-3.1"
+            label: "Advertising, supervision, compensation, agency, contracts, trust funds"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-12", "N.J. Stat. Ann. § 45:15-16", "N.J. Stat. Ann. § 45:15-17", "N.J. Admin. Code § 11:5-5.1", "N.J. Admin. Code § 11:5-5.4", "N.J. Admin. Code § 11:5-6.1", "N.J. Admin. Code § 11:5-6.2", "N.J. Admin. Code § 11:5-6.4", "N.J. Admin. Code § 11:5-6.9", "N.J. Admin. Code § 11:5-7.1"]
+          - id: "NJ-3.2"
+            label: "Place of business, records, inducements, rebates, public duties, related laws"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-12", "N.J. Admin. Code § 11:5-4.2", "N.J. Admin. Code § 11:5-5.4", "N.J. Admin. Code § 11:5-6.4", "N.J. Stat. Ann. § 54:4-23.1 et seq.", "N.J. Stat. Ann. § 40:55D-1 et seq.", "N.J. Stat. Ann. § 46:8-43 et seq.", "N.J. Stat. Ann. § 13:9B-1 et seq."]
+      - id: "NJ-4"
+        label: "Additional New Jersey statutes"
+        items: 3
+        subtopics:
+          - id: "NJ-4.1"
+            label: "Full Disclosure Act, LAD, Guaranty Fund, Time Share Act"
+            items: null
+            statute_refs: ["N.J. Stat. Ann. § 45:15-16.27 et seq.", "N.J. Stat. Ann. § 10:5-12", "N.J. Stat. Ann. § 45:15-34", "N.J. Stat. Ann. § 45:15-16.50 et seq."]
+references: []
+notes: >-
+  scored_items (30) is the New Jersey-law block of the single 110-item exam, taken from the bulletin's per-topic
+  salesperson item counts (2+3+22+3); the state record (content/states/NJ.yaml) was updated to national_items 80 /
+  state_items 30 on that basis, with grading still 'combined' (one 70% cut score). Broker: 3+4+30+3 = 40 of 115
+  questions (120 points). Domain ids are ours (the bulletin does not number these blocks). No New Jersey statute
+  text is cached: lis.njleg.state.nj.us, www.njleg.state.nj.us and pub.njleg.state.nj.us all refused connections
+  (curl exit 000, WebFetch ECONNREFUSED, browser pane navigation denied); the DOBI site only links to the
+  legislature and to LexisNexis for N.J.A.C. 11:5. Drafting for NJ is blocked until 45:15 / 11:5 text is ingested.

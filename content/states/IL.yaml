@@ -1,0 +1,62 @@
+code: IL
+name: Illinois
+regulator:
+  name: "Illinois Department of Financial and Professional Regulation (IDFPR), Division of Real Estate"
+  url: "https://idfpr.illinois.gov/profs/realest.html"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the Illinois Real Estate Examination Program (ILREP) at test centers and via remote proctoring (https://test-takers.psiexams.com/ilrep)."
+salesperson_exam:
+  national_items: 100
+  state_items: 40
+  total_items: 140
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "70% (70/100 points)"
+  pass_score_state: "75% (30/40 points)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 58
+  retake_policy: "Bulletin (6/24/2026): 'If you fail any portion of the broker or managing broker examination... You will only be required to repeat the portion(s) that you failed. Candidates are allowed up to four attempts to pass the examination. After failing the fourth attempt, you are required to retake the following education and the entire examination: Broker - retake the 75-hour broker pre-license education...' Candidates must apply for licensure within one year of passing or lose exam accreditation. Exam fee is forfeited if you do not test within 1 year of PSI receiving it."
+  calculator_policy: "Bulletin: 'Physical calculators are allowed for Test Centers but not for Remote Proctored exams.' Scratch paper and pencil are provided at test centers."
+broker_exam:
+  national_items: null
+  state_items: 50
+  total_items: 50
+  pretest_items: null
+  time_minutes: 90
+  pass_score_national: null
+  pass_score_state: "75% (50 points possible)"
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: 58
+prelicense_hours_salesperson: 75
+prelicense_hours_broker: 45
+statute_citation_root: "225 ILCS 454 (Real Estate License Act of 2000)"
+rules_citation_root: "68 Ill. Adm. Code 1450"
+statute_url: "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=1364&ChapterID=24"
+rules_url: "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=06801450"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/4655"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/4655"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.psiexams.com/test-takers/ilrep/"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://idfpr.illinois.gov/profs/realest.html"
+    used_for: [regulator]
+    accessed: 2026-09-08
+  - url: "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=1364&ChapterID=24"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=06801450"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+  - broker_exam.grading
+confidence: high
+last_verified: 2026-09-08
+notes: "Illinois has no 'salesperson' license: the entry-level license is Broker, so salesperson_exam holds the Broker exam (National 100 items/150 min at 70%; State 40 items/90 min at 75%) and broker_exam holds the Managing Broker exam, which the bulletin's summary table lists as a State-only portion (50 items, 75%, 90 min). The bulletin notes the 70% national passing standard is equivalent to the previously reported scaled score of 75. 5-10 unscored experimental items may be added and count against time. Managing broker prelicense is 45 hours (for an active Illinois broker; 165 hours without one). Pre-license education is valid for two years. Managing Broker/Instructor national portions include scenario-based 0/1/2-point items. Bulletin dated 6/24/2026. ilga.gov refused connections from the research environment; the two URLs above were confirmed via Internet Archive captures (2025)."

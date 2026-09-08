@@ -1,0 +1,407 @@
+# Arizona state-portion blueprint. Source: Pearson VUE publication 090301 (Arizona Real Estate Content
+# Outlines): "Arizona Real Estate Salesperson Licensing Examination Content Outline" (effective January 1,
+# 2026) and "Arizona Real Estate Broker's Examination Content Outline" (effective September 23, 2019).
+# Labels are OUR paraphrases (SPEC §3.2). Domain ids follow the bulletin's Roman numerals.
+id: state_AZ
+vendor: pearsonvue
+title: "Arizona state-portion outline (internal blueprint)"
+source_document: "Pearson VUE publication 090301 — Arizona Real Estate Content Outlines (salesperson state-specific outline; single-exam broker outline)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090301.pdf"
+source_version_or_date: "Publication 090301 dated 01/2026; salesperson state outline effective January 1, 2026; broker outline effective September 23, 2019"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  Salesperson: 60 scored state items + 5 pretest, eleven domains with published counts; subtopic counts
+  are not published. Broker: Arizona gives ONE 180-item exam (plus 15 pretest) that mixes general and
+  Arizona-specific content, so the broker blueprint below covers the whole exam (state record
+  broker_exam.total_items = 180). The bulletin prints counts for 28 of 29 broker domains; domain XXIII
+  (deed of trust / mortgage / agreement for sale) has no printed count and is set to 3 so the total is
+  180 — flagged as derived. Statute refs: A.R.S. Title 32, ch. 20 (cached: arts. 1-7, 9-10) and
+  Commissioner's Rules A.A.C. Title 4, ch. 28 (R4-28-xxx; not yet cached — azsos.gov blocked automated
+  fetch). Consumer-protection, property, tax, and water-law topics cite other A.R.S. titles (not cached).
+exams:
+  salesperson:
+    scored_items: 60
+    pretest_items: 5
+    domains:
+      - id: "I"
+        label: "Arizona regulatory framework: ADRE, recovery fund, licensing"
+        items: 5
+        subtopics:
+          - id: "I.A"
+            label: "Sources of Arizona real estate law"
+            items: null
+            statute_refs: ["Ariz. Const. art. XXVI", "Ariz. Rev. Stat. § 32-2101", "Ariz. Rev. Stat. § 32-2102", "Ariz. Admin. Code R4-28-101"]
+          - id: "I.B"
+            label: "Department scope; commissioner's powers and duties"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2102", "Ariz. Rev. Stat. § 32-2104", "Ariz. Rev. Stat. § 32-2106", "Ariz. Rev. Stat. § 32-2107", "Ariz. Rev. Stat. § 32-2108"]
+          - id: "I.C"
+            label: "Real estate recovery fund: funding, claims, limits, consequences"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2186", "Ariz. Rev. Stat. § 32-2187", "Ariz. Rev. Stat. § 32-2188", "Ariz. Rev. Stat. § 32-2189", "Ariz. Rev. Stat. § 32-2192", "Ariz. Rev. Stat. § 32-2193.01"]
+          - id: "I.D"
+            label: "License qualifications, application, renewal, education"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2123", "Ariz. Rev. Stat. § 32-2124", "Ariz. Rev. Stat. § 32-2130", "Ariz. Rev. Stat. § 32-2131", "Ariz. Rev. Stat. § 32-2135", "Ariz. Admin. Code R4-28-301", "Ariz. Admin. Code R4-28-303", "Ariz. Admin. Code R4-28-401"]
+          - id: "I.E"
+            label: "Acts that require a license; exemptions; unlicensed activity"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2101", "Ariz. Rev. Stat. § 32-2121", "Ariz. Rev. Stat. § 32-2122", "Ariz. Rev. Stat. § 32-2165"]
+      - id: "II"
+        label: "Arizona consumer-protection statutes"
+        items: 5
+        subtopics:
+          - id: "II.A"
+            label: "Consumer Fraud Act"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 44-1521", "Ariz. Rev. Stat. § 44-1522", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "II.B"
+            label: "Statute of frauds for real estate agreements"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 44-101", "Ariz. Rev. Stat. § 32-2151.02"]
+          - id: "II.C"
+            label: "Arizona Fair Housing Act"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 41-1491", "Ariz. Rev. Stat. § 41-1491.14", "Ariz. Rev. Stat. § 41-1491.19"]
+          - id: "II.D"
+            label: "Homestead exemption"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-1101", "Ariz. Rev. Stat. § 33-1102", "Ariz. Rev. Stat. § 33-1103"]
+      - id: "III"
+        label: "Advertising rules"
+        items: 5
+        subtopics:
+          - id: "III.A"
+            label: "Licensee advertising content and identification"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-502", "Ariz. Rev. Stat. § 32-2153", "Ariz. Rev. Stat. § 32-2161"]
+          - id: "III.B"
+            label: "Promotional activities, prizes, and inducements"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-503", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "III.C"
+            label: "Subdivision and development advertising"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-504", "Ariz. Rev. Stat. § 32-2183.01", "Ariz. Rev. Stat. § 32-2195.05", "Ariz. Rev. Stat. § 32-2161"]
+          - id: "III.D"
+            label: "Broker supervision of advertising"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151.01", "Ariz. Admin. Code R4-28-1103", "Ariz. Admin. Code R4-28-502"]
+      - id: "IV"
+        label: "Agency in Arizona"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Kinds of agency relationships"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2101", "Ariz. Admin. Code R4-28-1101"]
+          - id: "IV.B"
+            label: "Creating agency; written employment agreements"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151.02", "Ariz. Admin. Code R4-28-1101"]
+          - id: "IV.C"
+            label: "Case-law duties to clients vs. customers"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "IV.D"
+            label: "Ending an agency relationship"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151.02", "Ariz. Admin. Code R4-28-1101"]
+      - id: "V"
+        label: "Licensee disclosure obligations"
+        items: 6
+        subtopics:
+          - id: "V.A"
+            label: "Material-fact disclosure duties"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2156", "Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "V.B"
+            label: "Seller disclosure obligations and the licensee's role"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2156", "Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 33-422"]
+          - id: "V.C"
+            label: "Disclosing conflicts of interest and self-dealing"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "V.D"
+            label: "Compensation disclosure and sharing"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2155", "Ariz. Admin. Code R4-28-701", "Ariz. Admin. Code R4-28-1101"]
+          - id: "V.E"
+            label: "Disclosing limits of one's experience and knowledge"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101"]
+          - id: "V.F"
+            label: "Timely performance for clients and customers"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Admin. Code R4-28-802"]
+          - id: "V.G"
+            label: "Disputes between agents on opposite sides"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+      - id: "VI"
+        label: "Competency and specialized practice areas"
+        items: 6
+        subtopics:
+          - id: "VI.A"
+            label: "Duty to be competent; incompetence as a violation"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "VI.B"
+            label: "Property types a licensee may handle"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2101"]
+          - id: "VI.C"
+            label: "Niches: new homes/subdivisions, property management, timeshare, vacant land, commercial"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2181", "Ariz. Rev. Stat. § 32-2183", "Ariz. Rev. Stat. § 32-2171", "Ariz. Rev. Stat. § 32-2173", "Ariz. Rev. Stat. § 32-2174", "Ariz. Rev. Stat. § 32-2197", "Ariz. Rev. Stat. § 32-2197.03", "Ariz. Rev. Stat. § 32-2195", "Ariz. Rev. Stat. § 32-2185.01"]
+      - id: "VII"
+        label: "Reasonable skill and care"
+        items: 6
+        subtopics:
+          - id: "VII.A"
+            label: "Standard of care owed by licensees"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+          - id: "VII.B"
+            label: "Property taxes and special assessments"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 42-11001", "Ariz. Rev. Stat. § 42-18051", "Ariz. Rev. Stat. § 42-15001"]
+          - id: "VII.C"
+            label: "Utility and environmental regulation affecting property"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2183", "Ariz. Rev. Stat. § 49-101", "Ariz. Rev. Stat. § 32-2183.05", "Ariz. Rev. Stat. § 32-2183.06"]
+      - id: "VIII"
+        label: "Contracts: employment and purchase agreements"
+        items: 8
+        subtopics:
+          - id: "VIII.A"
+            label: "Listing and buyer-broker employment agreements"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151.02", "Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2152"]
+          - id: "VIII.B"
+            label: "Purchase contracts: validity, consideration, terms, closing, possession, costs"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 44-101", "Ariz. Admin. Code R4-28-802", "Ariz. Admin. Code R4-28-803", "Ariz. Admin. Code R4-28-804", "Ariz. Rev. Stat. § 32-2151", "Ariz. Rev. Stat. § 32-2151.01"]
+      - id: "IX"
+        label: "Escrow, title insurance, and lending services"
+        items: 5
+        subtopics:
+          - id: "IX.A"
+            label: "Escrow agents and the escrow process"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 6-801", "Ariz. Rev. Stat. § 6-834", "Ariz. Rev. Stat. § 32-2151"]
+          - id: "IX.B"
+            label: "Title insurance and title reports"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 20-1561", "Ariz. Rev. Stat. § 20-1562"]
+          - id: "IX.C"
+            label: "Lenders, mortgage brokers, and loan originators"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 6-901", "Ariz. Rev. Stat. § 6-991", "Ariz. Rev. Stat. § 33-701"]
+      - id: "X"
+        label: "Ownership, liens, deeds, HOAs, easements"
+        items: 5
+        subtopics:
+          - id: "X.A"
+            label: "How title is held, including community property"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-431", "Ariz. Rev. Stat. § 25-211", "Ariz. Rev. Stat. § 25-214"]
+          - id: "X.B"
+            label: "Liens, including mechanics' liens"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-981", "Ariz. Rev. Stat. § 33-992", "Ariz. Rev. Stat. § 33-1002"]
+          - id: "X.C"
+            label: "Deeds and conveyancing"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-401", "Ariz. Rev. Stat. § 33-402", "Ariz. Rev. Stat. § 33-411", "Ariz. Rev. Stat. § 33-422"]
+          - id: "X.D"
+            label: "Planned communities, condominiums, HOA disclosures"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-1801", "Ariz. Rev. Stat. § 33-1806", "Ariz. Rev. Stat. § 33-1201", "Ariz. Rev. Stat. § 33-1260"]
+          - id: "X.E"
+            label: "Easements and other encumbrances"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-401", "Ariz. Rev. Stat. § 12-1202"]
+      - id: "XI"
+        label: "Foreclosure, short sale, deed in lieu"
+        items: 3
+        subtopics:
+          - id: "XI.A"
+            label: "Anti-deficiency protections"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-729", "Ariz. Rev. Stat. § 33-814"]
+          - id: "XI.B"
+            label: "Trustee's sale and judicial foreclosure process"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-807", "Ariz. Rev. Stat. § 33-808", "Ariz. Rev. Stat. § 33-809", "Ariz. Rev. Stat. § 33-811", "Ariz. Rev. Stat. § 33-721"]
+  broker:
+    scored_items: 180
+    pretest_items: 15
+    domains:
+      - id: "I"
+        label: "Arizona real estate statutes (Title 32, ch. 20)"
+        items: 28
+        subtopics:
+          - id: "I.A"
+            label: "Constitutional basis for state trust land"
+            items: null
+            statute_refs: ["Ariz. Const. art. XXVI", "Ariz. Const. art. X"]
+          - id: "I.B"
+            label: "Department, licensing, regulation, property management, subdivisions, recovery fund, timeshare"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2107", "Ariz. Rev. Stat. § 32-2108", "Ariz. Rev. Stat. § 32-2122", "Ariz. Rev. Stat. § 32-2124", "Ariz. Rev. Stat. § 32-2130", "Ariz. Rev. Stat. § 32-2151", "Ariz. Rev. Stat. § 32-2151.01", "Ariz. Rev. Stat. § 32-2153", "Ariz. Rev. Stat. § 32-2171", "Ariz. Rev. Stat. § 32-2173", "Ariz. Rev. Stat. § 32-2174", "Ariz. Rev. Stat. § 32-2175", "Ariz. Rev. Stat. § 32-2181", "Ariz. Rev. Stat. § 32-2183", "Ariz. Rev. Stat. § 32-2186", "Ariz. Rev. Stat. § 32-2188", "Ariz. Rev. Stat. § 32-2197", "Ariz. Rev. Stat. § 33-422"]
+      - id: "II"
+        label: "Commissioner's Rules (A.A.C. Title 4, ch. 28)"
+        items: 18
+        subtopics:
+          - id: "II.A"
+            label: "General requirements, continuing education, advertising, compensation, documents, conduct"
+            items: null
+            statute_refs: ["Ariz. Admin. Code R4-28-101", "Ariz. Admin. Code R4-28-301", "Ariz. Admin. Code R4-28-302", "Ariz. Admin. Code R4-28-303", "Ariz. Admin. Code R4-28-401", "Ariz. Admin. Code R4-28-402", "Ariz. Admin. Code R4-28-502", "Ariz. Admin. Code R4-28-503", "Ariz. Admin. Code R4-28-504", "Ariz. Admin. Code R4-28-701", "Ariz. Admin. Code R4-28-802", "Ariz. Admin. Code R4-28-803", "Ariz. Admin. Code R4-28-804", "Ariz. Admin. Code R4-28-1101", "Ariz. Admin. Code R4-28-1103"]
+      - id: "III"
+        label: "Agency relationships and managerial duties"
+        items: 14
+        subtopics:
+          - id: "III.A"
+            label: "Agency law, fiduciary duties, listing/buyer-broker agreements, running a brokerage"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151.02", "Ariz. Rev. Stat. § 32-2151.01", "Ariz. Rev. Stat. § 32-2125", "Ariz. Rev. Stat. § 32-2126", "Ariz. Rev. Stat. § 32-2127", "Ariz. Admin. Code R4-28-1101", "Ariz. Admin. Code R4-28-1103"]
+      - id: "IV"
+        label: "Contracts and contract law"
+        items: 10
+        subtopics: []
+      - id: "V"
+        label: "Property interests, estates, and tenancies"
+        items: 10
+        subtopics: []
+      - id: "VI"
+        label: "Government rights in real property"
+        items: 4
+        subtopics: []
+      - id: "VII"
+        label: "Income-tax aspects of real estate"
+        items: 3
+        subtopics: []
+      - id: "VIII"
+        label: "Arizona water law"
+        items: 5
+        subtopics:
+          - id: "VIII.A"
+            label: "Water doctrine, Groundwater Management Act, AMAs/INAs, grandfathered rights, well transfers"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 45-101", "Ariz. Rev. Stat. § 45-401", "Ariz. Rev. Stat. § 45-411", "Ariz. Rev. Stat. § 45-431", "Ariz. Rev. Stat. § 45-462", "Ariz. Rev. Stat. § 45-593", "Ariz. Rev. Stat. § 32-2183"]
+      - id: "IX"
+        label: "Environmental law"
+        items: 6
+        subtopics: []
+      - id: "X"
+        label: "Land descriptions"
+        items: 4
+        subtopics: []
+      - id: "XI"
+        label: "Land development"
+        items: 4
+        subtopics:
+          - id: "XI.A"
+            label: "Zoning, planned communities, new-home sales"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 9-462.01", "Ariz. Rev. Stat. § 11-811", "Ariz. Rev. Stat. § 33-1801", "Ariz. Rev. Stat. § 32-2181", "Ariz. Rev. Stat. § 32-2183"]
+      - id: "XII"
+        label: "Encumbrances"
+        items: 3
+        subtopics: []
+      - id: "XIII"
+        label: "Acquisition and transfer of title"
+        items: 5
+        subtopics: []
+      - id: "XIV"
+        label: "Escrow and settlement"
+        items: 4
+        subtopics:
+          - id: "XIV.A"
+            label: "Closing statements, commission disbursement, FIRPTA"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151", "Ariz. Rev. Stat. § 32-2155", "Ariz. Rev. Stat. § 6-841", "26 U.S.C. § 1445"]
+      - id: "XV"
+        label: "Fair housing, ADA, RESPA"
+        items: 3
+        subtopics: []
+      - id: "XVI"
+        label: "Leases and leasehold estates"
+        items: 5
+        subtopics: []
+      - id: "XVII"
+        label: "Commercial leasing and the Residential Landlord Tenant Act"
+        items: 3
+        subtopics:
+          - id: "XVII.A"
+            label: "Arizona Residential Landlord and Tenant Act"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-1301", "Ariz. Rev. Stat. § 33-1321", "Ariz. Rev. Stat. § 33-1341", "Ariz. Rev. Stat. § 33-1368"]
+      - id: "XVIII"
+        label: "Property insurance and warranties"
+        items: 2
+        subtopics: []
+      - id: "XIX"
+        label: "Appraisal"
+        items: 3
+        subtopics: []
+      - id: "XX"
+        label: "Primary and secondary markets; financing concepts"
+        items: 3
+        subtopics: []
+      - id: "XXI"
+        label: "Residential and commercial financing"
+        items: 4
+        subtopics: []
+      - id: "XXII"
+        label: "Financing documents"
+        items: 3
+        subtopics: []
+      - id: "XXIII"
+        label: "Deed of trust, mortgage, agreement for sale"
+        items: 3
+        subtopics:
+          - id: "XXIII.A"
+            label: "Deeds of trust, mortgages, and agreements for sale compared"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-801", "Ariz. Rev. Stat. § 33-701", "Ariz. Rev. Stat. § 33-741"]
+      - id: "XXIV"
+        label: "Deed of trust foreclosure"
+        items: 5
+        subtopics:
+          - id: "XXIV.A"
+            label: "Non-judicial and judicial foreclosure; distressed-property transactions"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 33-807", "Ariz. Rev. Stat. § 33-808", "Ariz. Rev. Stat. § 33-811", "Ariz. Rev. Stat. § 33-814", "Ariz. Rev. Stat. § 33-721", "Ariz. Rev. Stat. § 33-729"]
+      - id: "XXV"
+        label: "Disclosure and consumer protection"
+        items: 8
+        subtopics:
+          - id: "XXV.A"
+            label: "Statutory disclosures and consumer-fraud protections"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2156", "Ariz. Rev. Stat. § 33-422", "Ariz. Rev. Stat. § 44-1522", "Ariz. Admin. Code R4-28-1101", "Ariz. Rev. Stat. § 32-2153"]
+      - id: "XXVI"
+        label: "Math calculations"
+        items: 11
+        subtopics: []
+      - id: "XXVII"
+        label: "Cooperative nature of real estate"
+        items: 2
+        subtopics: []
+      - id: "XXVIII"
+        label: "Business accounting"
+        items: 2
+        subtopics: []
+      - id: "XXIX"
+        label: "ADRE audits"
+        items: 5
+        subtopics:
+          - id: "XXIX.A"
+            label: "Broker records, trust accounts, and department audits"
+            items: null
+            statute_refs: ["Ariz. Rev. Stat. § 32-2151", "Ariz. Rev. Stat. § 32-2151.01", "Ariz. Rev. Stat. § 32-2175", "Ariz. Rev. Stat. § 32-2108", "Ariz. Admin. Code R4-28-1103"]
+references: []

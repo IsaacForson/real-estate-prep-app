@@ -1,0 +1,259 @@
+# Mississippi state-portion blueprint. Source: PSI Mississippi Real Estate Candidate Information Bulletin
+# (Updated 10/1/2023, as posted by MREC), "Salesperson/Broker State Portion". Labels are OUR paraphrases
+# (SPEC §3.2). The bulletin publishes item counts per area (salesperson / broker) but does not number the
+# areas; ids "1"–"9" are ours, in bulletin order.
+id: state_MS
+vendor: psi
+title: "Mississippi state-portion outline (internal blueprint)"
+source_document: "PSI Mississippi Real Estate Commission Candidate Information Bulletin — Salesperson/Broker State Portion outline"
+source_url: "https://www.mrec.ms.gov/wp-content/uploads/2024/12/MREC_PSI_Candidate_Information_Bulletin_10-01-2023.pdf"
+source_version_or_date: "Bulletin updated 10/1/2023"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission powers: jurisdiction, hearings, violations, penalties"
+        items: 4
+        subtopics:
+          - id: "1.1"
+            label: "Hearings, subpoenas, and appeals"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-23", "Miss. Code Ann. § 73-35-25", "30 Miss. Admin. Code Pt. 1601, R. 5.5", "30 Miss. Admin. Code Pt. 1601, R. 5.7", "30 Miss. Admin. Code Pt. 1601, R. 5.8", "30 Miss. Admin. Code Pt. 1601, R. 5.9"]
+          - id: "1.2"
+            label: "Commission purpose, makeup, and jurisdiction"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-5", "Miss. Code Ann. § 73-35-27", "Miss. Code Ann. § 73-35-35", "Miss. Code Ann. § 73-35-1"]
+          - id: "1.3"
+            label: "Acts that violate the license law; complaint and investigation process"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-21", "30 Miss. Admin. Code Pt. 1601, R. 5.1", "30 Miss. Admin. Code Pt. 1601, R. 5.3", "30 Miss. Admin. Code Pt. 1601, R. 5.4"]
+          - id: "1.4"
+            label: "Sanctions the commission may impose"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-21", "Miss. Code Ann. § 73-35-23", "Miss. Code Ann. § 73-35-31", "30 Miss. Admin. Code Pt. 1601, R. 5.6"]
+      - id: "2"
+        label: "Licensing requirements and keeping a license in good standing"
+        items: 4
+        subtopics:
+          - id: "2.1"
+            label: "Qualifications, application, examination, background check"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-7", "Miss. Code Ann. § 73-35-9", "Miss. Code Ann. § 73-35-10", "Miss. Code Ann. § 73-35-13", "30 Miss. Admin. Code Pt. 1601, R. 1.1"]
+          - id: "2.2"
+            label: "Post-license and continuing education; renewal"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-18", "30 Miss. Admin. Code Pt. 1601, R. 6.1", "30 Miss. Admin. Code Pt. 1601, R. 6.2", "Miss. Code Ann. § 73-35-17"]
+          - id: "2.3"
+            label: "Errors and omissions insurance requirement"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-16", "30 Miss. Admin. Code Pt. 1601, ch. 9"]
+          - id: "2.4"
+            label: "Disqualifying factors and license refusal"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-7", "Miss. Code Ann. § 73-35-10", "Miss. Code Ann. § 73-35-21"]
+          - id: "2.5"
+            label: "Activities requiring a license (timeshares, auctions, property management)"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-1", "Miss. Code Ann. § 73-35-3", "30 Miss. Admin. Code Pt. 1601, ch. 8"]
+          - id: "2.6"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-3"]
+          - id: "2.7"
+            label: "Inactive status and status changes"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 1.2", "Miss. Code Ann. § 73-35-17"]
+          - id: "2.8"
+            label: "Receiving and sharing commissions"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-21", "Miss. Code Ann. § 73-35-33", "30 Miss. Admin. Code Pt. 1601, R. 3.1"]
+      - id: "3"
+        label: "Property condition disclosure statement"
+        items: 4
+        subtopics:
+          - id: "3.1"
+            label: "Who completes and delivers the disclosure form and when"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-501", "Miss. Code Ann. § 89-1-503", "Miss. Code Ann. § 89-1-507", "Miss. Code Ann. § 89-1-509"]
+          - id: "3.2"
+            label: "Stigmatizing factors that need not be disclosed"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-527", "Miss. Code Ann. § 73-35-21"]
+          - id: "3.3"
+            label: "Licensee duty to advise and to ensure completeness"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-521", "Miss. Code Ann. § 89-1-523", "Miss. Code Ann. § 73-35-21"]
+          - id: "3.4"
+            label: "Exemptions from the disclosure requirement"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-501", "Miss. Code Ann. § 89-1-503"]
+          - id: "3.5"
+            label: "Form is separate from the contract; attached to the listing"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-509", "30 Miss. Admin. Code Pt. 1601, R. 3.2"]
+          - id: "3.6"
+            label: "Buyer's right to void after material changes"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 89-1-511", "Miss. Code Ann. § 89-1-513"]
+      - id: "4"
+        label: "Agency disclosure and duties owed to parties"
+        items: 8
+        subtopics:
+          - id: "4.1"
+            label: "Dual agency disclosure and consent"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 4.2", "30 Miss. Admin. Code Pt. 1601, R. 4.3"]
+          - id: "4.2"
+            label: "'Working With a Real Estate Broker' form"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 4.3", "30 Miss. Admin. Code Pt. 1601, R. 4.1"]
+          - id: "4.3"
+            label: "Disclosing licensed status when acting as a principal"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.3", "Miss. Code Ann. § 73-35-21"]
+          - id: "4.4"
+            label: "Timing of disclosure and who must receive it"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 4.3", "30 Miss. Admin. Code Pt. 1601, R. 4.4"]
+          - id: "4.5"
+            label: "Buyer's right to withdraw from a buyer-broker agreement"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.2", "30 Miss. Admin. Code Pt. 1601, R. 4.3"]
+          - id: "4.6"
+            label: "General duties owed to all parties"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-21", "30 Miss. Admin. Code Pt. 1601, R. 3.1", "30 Miss. Admin. Code Pt. 1601, R. 4.2"]
+      - id: "5"
+        label: "Out-of-state brokers and developers"
+        items: 4
+        subtopics:
+          - id: "5.1"
+            label: "Cooperative agreements with nonresident brokers"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-11", "30 Miss. Admin. Code Pt. 1601, ch. 7"]
+          - id: "5.2"
+            label: "Reciprocal and nonresident licenses"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-8", "Miss. Code Ann. § 73-35-13", "30 Miss. Admin. Code Pt. 1601, R. 2.2"]
+      - id: "6"
+        label: "Trust accounts and earnest money"
+        items: 4
+        subtopics:
+          - id: "6.1"
+            label: "Handling earnest money deposits"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.4", "Miss. Code Ann. § 73-35-21"]
+          - id: "6.2"
+            label: "Accounting practices and prohibition on commingling"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.4", "Miss. Code Ann. § 73-35-21", "Miss. Code Ann. §§ 73-35-101–73-35-105"]
+          - id: "6.3"
+            label: "Broker as account holder; salespersons may not hold independent escrow"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.4", "Miss. Code Ann. § 73-35-15"]
+          - id: "6.4"
+            label: "Disbursement disputes and interpleader"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.4"]
+      - id: "7"
+        label: "Responsible broker duties and supervision of associates"
+        items: 6
+        subtopics:
+          - id: "7.1"
+            label: "Supervision and responsibility for associated licensees"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-15", "30 Miss. Admin. Code Pt. 1601, R. 3.1", "Miss. Code Ann. § 73-35-21"]
+          - id: "7.2"
+            label: "Notifying MREC of associate status changes and terminations"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 1.2", "30 Miss. Admin. Code Pt. 1601, R. 5.1", "Miss. Code Ann. § 73-35-15"]
+          - id: "7.3"
+            label: "License display and place of business"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-15", "30 Miss. Admin. Code Pt. 1601, R. 3.1"]
+          - id: "7.4"
+            label: "Broker price opinions"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-4"]
+          - id: "7.5"
+            label: "Compensation of associates and real estate teams"
+            items: null
+            statute_refs: ["Miss. Code Ann. § 73-35-21", "Miss. Code Ann. § 73-35-33", "30 Miss. Admin. Code Pt. 1601, R. 3.1", "30 Miss. Admin. Code Pt. 1601, R. 3.5"]
+      - id: "8"
+        label: "Records and documents"
+        items: 3
+        subtopics:
+          - id: "8.1"
+            label: "Retention periods and records covered"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.2", "30 Miss. Admin. Code Pt. 1601, R. 3.4", "30 Miss. Admin. Code Pt. 1601, R. 4.3"]
+          - id: "8.2"
+            label: "Records after a brokerage closes; electronic records"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.2", "30 Miss. Admin. Code Pt. 1601, R. 1.2"]
+      - id: "9"
+        label: "Advertising, marketing, and internet"
+        items: 3
+        subtopics:
+          - id: "9.1"
+            label: "Internet and social media count as advertising"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.3"]
+          - id: "9.2"
+            label: "Advertising in the broker's name with broker approval"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.3", "30 Miss. Admin. Code Pt. 1601, R. 3.5", "Miss. Code Ann. § 73-35-21"]
+          - id: "9.3"
+            label: "Advertising restrictions and private controls"
+            items: null
+            statute_refs: ["30 Miss. Admin. Code Pt. 1601, R. 3.3", "Miss. Code Ann. § 73-35-21"]
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission powers: jurisdiction, hearings, violations, penalties"
+        items: 4
+        subtopics: []
+      - id: "2"
+        label: "Licensing requirements and keeping a license in good standing"
+        items: 4
+        subtopics: []
+      - id: "3"
+        label: "Property condition disclosure statement"
+        items: 6
+        subtopics: []
+      - id: "4"
+        label: "Agency disclosure and duties owed to parties"
+        items: 8
+        subtopics: []
+      - id: "5"
+        label: "Out-of-state brokers and developers"
+        items: 3
+        subtopics: []
+      - id: "6"
+        label: "Trust accounts and earnest money"
+        items: 3
+        subtopics: []
+      - id: "7"
+        label: "Responsible broker duties and supervision of associates"
+        items: 5
+        subtopics: []
+      - id: "8"
+        label: "Records and documents"
+        items: 4
+        subtopics: []
+      - id: "9"
+        label: "Advertising, marketing, and internet"
+        items: 3
+        subtopics: []
+references:
+  - title: "Mississippi Real Estate Brokers License Law of 1954, Miss. Code Ann. § 73-35-1 et seq. (MREC compilation rev. 7-01-2026)"
+    publisher: "Mississippi Real Estate Commission"
+  - title: "Mississippi Real Estate Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025)"
+    publisher: "Mississippi Real Estate Commission"
+notes: "Salesperson counts 4/4/4/8/4/4/6/3/3 = 40; broker counts 4/4/6/8/3/3/5/4/3 = 40 (both published). Broker subtopics mirror the salesperson list (omitted). Statute cache holds MREC's compiled license law and its compiled Part 1601 rules; the Property Condition Disclosure statute (Miss. Code Ann. §§ 89-1-501 to 89-1-527) cited in domain 3 is NOT cached (Mississippi Code is published via a Lexis portal without stable URLs). MREC posted proposed rule amendments 08-04-2026; recheck rule numbering after adoption."

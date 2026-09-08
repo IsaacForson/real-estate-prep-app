@@ -1,0 +1,263 @@
+# Washington state-portion blueprint. Structure and counts from the PSI Washington Real Estate
+# Candidate Information Bulletin ("State Content Outline for Broker and Managing Broker
+# Examinations"). Washington's entry-level license is "Broker" (= salesperson elsewhere) and the
+# supervisory license is "Managing Broker"; exams.salesperson below = Broker exam, exams.broker =
+# Managing Broker exam. Labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_WA
+vendor: psi
+title: "Washington state-portion outline (internal blueprint)"
+source_document: "PSI Washington Real Estate Candidate Information Bulletin — state content outline for Broker and Managing Broker examinations"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4658"
+source_version_or_date: "Bulletin dated 3/28/2024 (copyright 2024)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 30
+    pretest_items: "5-10 unscored experimental questions may be administered"
+    domains:
+      - id: "I"
+        label: "General rules: definitions, Commission and Director, enforcement"
+        items: 4
+        subtopics:
+          - id: "I.1"
+            label: "Statutory definitions"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.011", "Wash. Rev. Code § 18.86.010", "Wash. Admin. Code § 308-124-021"]
+          - id: "I.2"
+            label: "Real Estate Commission and Director: powers and duties"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.021", "Wash. Rev. Code § 18.85.025", "Wash. Rev. Code § 18.85.031", "Wash. Rev. Code § 18.85.041", "Wash. Rev. Code § 18.85.061", "Wash. Admin. Code § 308-124-005", "Wash. Admin. Code § 308-124-007"]
+          - id: "I.3"
+            label: "Investigations, violations, hearings, appeals, penalties"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.361", "Wash. Rev. Code § 18.85.370", "Wash. Rev. Code § 18.85.380", "Wash. Rev. Code § 18.85.390", "Wash. Rev. Code § 18.85.401", "Wash. Rev. Code § 18.85.411", "Wash. Rev. Code § 18.85.430", "Wash. Rev. Code § 18.85.440", "Wash. Admin. Code § 308-124-305", "Wash. Admin. Code § 308-124-310", "Wash. Admin. Code § 308-124-315", "Wash. Admin. Code § 308-124I-040", "Wash. Admin. Code § 308-124I-060"]
+          - id: "I.4"
+            label: "Real Estate Research Center and research account"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.451", "Wash. Rev. Code § 18.85.461", "Wash. Rev. Code § 18.85.471"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 8
+        subtopics:
+          - id: "II.1"
+            label: "Activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.011", "Wash. Rev. Code § 18.85.151", "Wash. Rev. Code § 18.85.331", "Wash. Rev. Code § 18.85.081"]
+          - id: "II.2"
+            label: "Eligibility to be licensed; application and exam process"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.171", "Wash. Rev. Code § 18.85.181", "Wash. Admin. Code § 308-124A-700", "Wash. Admin. Code § 308-124A-705", "Wash. Admin. Code § 308-124A-710", "Wash. Admin. Code § 308-124A-720", "Wash. Admin. Code § 308-124A-760", "Wash. Admin. Code § 308-124A-765"]
+          - id: "II.3"
+            label: "License types: broker, managing broker, designated broker, firm"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.091", "Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.121", "Wash. Rev. Code § 18.85.131", "Wash. Admin. Code § 308-124A-725", "Wash. Admin. Code § 308-124A-735"]
+          - id: "II.4"
+            label: "Renewal, fees, and license maintenance"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.191", "Wash. Rev. Code § 18.85.211", "Wash. Rev. Code § 18.85.255", "Wash. Rev. Code § 18.85.291", "Wash. Admin. Code § 308-124A-740", "Wash. Admin. Code § 308-124A-775", "Wash. Admin. Code § 308-124A-780", "Wash. Admin. Code § 308-124A-785", "Wash. Admin. Code § 308-124A-730"]
+          - id: "II.5"
+            label: "License status: active, inactive, canceled, reinstatement"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.265", "Wash. Admin. Code § 308-124A-780", "Wash. Admin. Code § 308-124A-788", "Wash. Admin. Code § 308-124A-726"]
+          - id: "II.6"
+            label: "Pre-license, first-renewal, and continuing education"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.141", "Wash. Rev. Code § 18.85.211", "Wash. Admin. Code § 308-124A-750", "Wash. Admin. Code § 308-124A-785", "Wash. Admin. Code § 308-124A-790", "Wash. Admin. Code § 308-124A-800", "Wash. Admin. Code § 308-124A-802", "Wash. Admin. Code § 308-124A-835"]
+      - id: "III"
+        label: "Statutes and rules governing licensee conduct"
+        items: 13
+        subtopics:
+          - id: "III.1"
+            label: "Firm's relationship with affiliated licensees"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.275", "Wash. Rev. Code § 18.85.291", "Wash. Rev. Code § 18.85.201", "Wash. Admin. Code § 308-124A-730", "Wash. Admin. Code § 308-124C-125"]
+          - id: "III.2"
+            label: "Prohibited conduct and grounds for discipline"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.361", "Wash. Rev. Code § 18.85.053", "Wash. Rev. Code § 18.86.031", "Wash. Admin. Code § 308-124C-115", "Wash. Admin. Code § 308-124D-205", "Wash. Admin. Code § 308-124D-210", "Wash. Admin. Code § 308-124I-030"]
+          - id: "III.3"
+            label: "Compensation and commission sharing"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.301", "Wash. Rev. Code § 18.85.331", "Wash. Rev. Code § 18.86.080", "Wash. Admin. Code § 308-124D-200"]
+          - id: "III.4"
+            label: "Handling client funds and trust accounts"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.285", "Wash. Rev. Code § 18.85.311", "Wash. Admin. Code § 308-124E-100", "Wash. Admin. Code § 308-124E-105", "Wash. Admin. Code § 308-124E-110", "Wash. Admin. Code § 308-124E-115"]
+          - id: "III.5"
+            label: "Records, transaction documents, and audits"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.231", "Wash. Rev. Code § 18.85.285", "Wash. Admin. Code § 308-124C-105", "Wash. Admin. Code § 308-124C-110", "Wash. Admin. Code § 308-124I-020", "Wash. Admin. Code § 308-124I-050"]
+          - id: "III.6"
+            label: "Brokerage office requirements: names, branches, license display"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.221", "Wash. Rev. Code § 18.85.231", "Wash. Rev. Code § 18.85.241", "Wash. Rev. Code § 18.85.255", "Wash. Admin. Code § 308-124A-815", "Wash. Admin. Code § 308-124A-825", "Wash. Admin. Code § 308-124A-830", "Wash. Admin. Code § 308-124B-200", "Wash. Admin. Code § 308-124B-205", "Wash. Admin. Code § 308-124B-207"]
+          - id: "III.7"
+            label: "Property management agreements and disclosures"
+            items: null
+            statute_refs: ["Wash. Admin. Code § 308-124D-215", "Wash. Admin. Code § 308-124E-115", "Wash. Rev. Code § 18.85.285"]
+          - id: "III.8"
+            label: "Supervision of affiliated licensees and teams"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.201", "Wash. Rev. Code § 18.85.275", "Wash. Admin. Code § 308-124C-125", "Wash. Admin. Code § 308-124C-130", "Wash. Admin. Code § 308-124C-135", "Wash. Admin. Code § 308-124C-137", "Wash. Admin. Code § 308-124C-140", "Wash. Admin. Code § 308-124C-145"]
+          - id: "III.9"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["Wash. Admin. Code § 308-124B-210", "Wash. Admin. Code § 308-124B-207", "Wash. Rev. Code § 18.85.361"]
+      - id: "IV"
+        label: "Brokerage relationships (agency)"
+        items: 5
+        subtopics:
+          - id: "IV.1"
+            label: "Types of agency: seller, buyer, limited dual, non-agency"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.010", "Wash. Rev. Code § 18.86.020", "Wash. Rev. Code § 18.86.060", "Wash. Rev. Code § 18.86.070"]
+          - id: "IV.2"
+            label: "Disclosing brokerage relationships; agency law pamphlet"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.030", "Wash. Rev. Code § 18.86.120", "Wash. Rev. Code § 18.86.020"]
+          - id: "IV.3"
+            label: "Duties owed by brokers to clients and customers"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.030", "Wash. Rev. Code § 18.86.040", "Wash. Rev. Code § 18.86.050", "Wash. Rev. Code § 18.86.090", "Wash. Rev. Code § 18.86.100", "Wash. Rev. Code § 18.86.110"]
+          - id: "IV.4"
+            label: "Written consent for dual agency and services agreements"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.020", "Wash. Rev. Code § 18.86.060", "Wash. Rev. Code § 18.86.080", "Wash. Rev. Code § 18.86.130"]
+  broker:
+    scored_items: 44
+    pretest_items: "5-10 unscored experimental questions may be administered"
+    domains:
+      - id: "I"
+        label: "General rules: definitions, Commission and Director, enforcement"
+        items: 6
+        subtopics:
+          - id: "I.1"
+            label: "Statutory definitions"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.011", "Wash. Rev. Code § 18.86.010", "Wash. Admin. Code § 308-124-021"]
+          - id: "I.2"
+            label: "Real Estate Commission and Director: powers and duties"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.021", "Wash. Rev. Code § 18.85.025", "Wash. Rev. Code § 18.85.031", "Wash. Rev. Code § 18.85.041", "Wash. Rev. Code § 18.85.061", "Wash. Admin. Code § 308-124-005", "Wash. Admin. Code § 308-124-007"]
+          - id: "I.3"
+            label: "Investigations, violations, hearings, appeals, penalties"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.361", "Wash. Rev. Code § 18.85.370", "Wash. Rev. Code § 18.85.380", "Wash. Rev. Code § 18.85.390", "Wash. Rev. Code § 18.85.401", "Wash. Rev. Code § 18.85.411", "Wash. Rev. Code § 18.85.430", "Wash. Rev. Code § 18.85.440", "Wash. Admin. Code § 308-124-305", "Wash. Admin. Code § 308-124-310", "Wash. Admin. Code § 308-124-315", "Wash. Admin. Code § 308-124I-040", "Wash. Admin. Code § 308-124I-060"]
+          - id: "I.4"
+            label: "Real Estate Research Center and research account"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.451", "Wash. Rev. Code § 18.85.461", "Wash. Rev. Code § 18.85.471"]
+      - id: "II"
+        label: "Licensing requirements"
+        items: 9
+        subtopics:
+          - id: "II.1"
+            label: "Activities that require a license; exemptions"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.011", "Wash. Rev. Code § 18.85.151", "Wash. Rev. Code § 18.85.331", "Wash. Rev. Code § 18.85.081"]
+          - id: "II.2"
+            label: "Eligibility to be licensed; application and exam process"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.171", "Wash. Rev. Code § 18.85.181", "Wash. Admin. Code § 308-124A-700", "Wash. Admin. Code § 308-124A-705", "Wash. Admin. Code § 308-124A-710", "Wash. Admin. Code § 308-124A-713", "Wash. Admin. Code § 308-124A-715", "Wash. Admin. Code § 308-124A-720", "Wash. Admin. Code § 308-124A-760", "Wash. Admin. Code § 308-124A-765"]
+          - id: "II.3"
+            label: "License types: broker, managing broker, designated broker, firm"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.091", "Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.121", "Wash. Rev. Code § 18.85.131", "Wash. Admin. Code § 308-124A-725", "Wash. Admin. Code § 308-124A-735"]
+          - id: "II.4"
+            label: "Renewal, fees, and license maintenance"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.191", "Wash. Rev. Code § 18.85.211", "Wash. Rev. Code § 18.85.255", "Wash. Rev. Code § 18.85.291", "Wash. Admin. Code § 308-124A-740", "Wash. Admin. Code § 308-124A-775", "Wash. Admin. Code § 308-124A-780", "Wash. Admin. Code § 308-124A-785", "Wash. Admin. Code § 308-124A-730"]
+          - id: "II.5"
+            label: "License status: active, inactive, canceled, reinstatement"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.265", "Wash. Admin. Code § 308-124A-780", "Wash. Admin. Code § 308-124A-788", "Wash. Admin. Code § 308-124A-726"]
+          - id: "II.6"
+            label: "Pre-license, first-renewal, and continuing education"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.101", "Wash. Rev. Code § 18.85.111", "Wash. Rev. Code § 18.85.141", "Wash. Rev. Code § 18.85.211", "Wash. Admin. Code § 308-124A-750", "Wash. Admin. Code § 308-124A-755", "Wash. Admin. Code § 308-124A-785", "Wash. Admin. Code § 308-124A-790", "Wash. Admin. Code § 308-124A-800", "Wash. Admin. Code § 308-124A-802", "Wash. Admin. Code § 308-124A-835"]
+      - id: "III"
+        label: "Statutes and rules governing licensee conduct"
+        items: 18
+        subtopics:
+          - id: "III.1"
+            label: "Firm's relationship with affiliated licensees"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.275", "Wash. Rev. Code § 18.85.291", "Wash. Rev. Code § 18.85.201", "Wash. Admin. Code § 308-124A-730", "Wash. Admin. Code § 308-124C-125"]
+          - id: "III.2"
+            label: "Prohibited conduct and grounds for discipline"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.361", "Wash. Rev. Code § 18.85.053", "Wash. Rev. Code § 18.86.031", "Wash. Admin. Code § 308-124C-115", "Wash. Admin. Code § 308-124D-205", "Wash. Admin. Code § 308-124D-210", "Wash. Admin. Code § 308-124I-030"]
+          - id: "III.3"
+            label: "Compensation and commission sharing"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.301", "Wash. Rev. Code § 18.85.331", "Wash. Rev. Code § 18.86.080", "Wash. Admin. Code § 308-124D-200"]
+          - id: "III.4"
+            label: "Handling client funds and trust accounts"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.285", "Wash. Rev. Code § 18.85.311", "Wash. Admin. Code § 308-124E-100", "Wash. Admin. Code § 308-124E-105", "Wash. Admin. Code § 308-124E-110", "Wash. Admin. Code § 308-124E-115"]
+          - id: "III.5"
+            label: "Records, transaction documents, and audits"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.231", "Wash. Rev. Code § 18.85.285", "Wash. Admin. Code § 308-124C-105", "Wash. Admin. Code § 308-124C-110", "Wash. Admin. Code § 308-124I-020", "Wash. Admin. Code § 308-124I-050"]
+          - id: "III.6"
+            label: "Brokerage office requirements: names, branches, license display"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.221", "Wash. Rev. Code § 18.85.231", "Wash. Rev. Code § 18.85.241", "Wash. Rev. Code § 18.85.255", "Wash. Admin. Code § 308-124A-815", "Wash. Admin. Code § 308-124A-825", "Wash. Admin. Code § 308-124A-830", "Wash. Admin. Code § 308-124B-200", "Wash. Admin. Code § 308-124B-205", "Wash. Admin. Code § 308-124B-207"]
+          - id: "III.7"
+            label: "Property management agreements and disclosures"
+            items: null
+            statute_refs: ["Wash. Admin. Code § 308-124D-215", "Wash. Admin. Code § 308-124E-115", "Wash. Rev. Code § 18.85.285"]
+          - id: "III.8"
+            label: "Supervision of affiliated licensees and teams"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.85.201", "Wash. Rev. Code § 18.85.275", "Wash. Admin. Code § 308-124C-125", "Wash. Admin. Code § 308-124C-130", "Wash. Admin. Code § 308-124C-135", "Wash. Admin. Code § 308-124C-137", "Wash. Admin. Code § 308-124C-140", "Wash. Admin. Code § 308-124C-145"]
+          - id: "III.9"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["Wash. Admin. Code § 308-124B-210", "Wash. Admin. Code § 308-124B-207", "Wash. Rev. Code § 18.85.361"]
+      - id: "IV"
+        label: "Brokerage relationships (agency)"
+        items: 7
+        subtopics:
+          - id: "IV.1"
+            label: "Types of agency: seller, buyer, limited dual, non-agency"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.010", "Wash. Rev. Code § 18.86.020", "Wash. Rev. Code § 18.86.060", "Wash. Rev. Code § 18.86.070"]
+          - id: "IV.2"
+            label: "Disclosing brokerage relationships; agency law pamphlet"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.030", "Wash. Rev. Code § 18.86.120", "Wash. Rev. Code § 18.86.020"]
+          - id: "IV.3"
+            label: "Duties owed by brokers to clients and customers"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.030", "Wash. Rev. Code § 18.86.040", "Wash. Rev. Code § 18.86.050", "Wash. Rev. Code § 18.86.090", "Wash. Rev. Code § 18.86.100", "Wash. Rev. Code § 18.86.110"]
+          - id: "IV.4"
+            label: "Written consent for dual agency and services agreements"
+            items: null
+            statute_refs: ["Wash. Rev. Code § 18.86.020", "Wash. Rev. Code § 18.86.060", "Wash. Rev. Code § 18.86.080", "Wash. Rev. Code § 18.86.130"]
+      - id: "V"
+        label: "Scenario items: property management, supervision, statutes and rules"
+        items: 4
+        subtopics:
+          - id: "V.1"
+            label: "Property management scenario"
+            items: null
+            broker_only: true
+            statute_refs: ["Wash. Admin. Code § 308-124D-215", "Wash. Admin. Code § 308-124E-115", "Wash. Rev. Code § 18.85.285"]
+          - id: "V.2"
+            label: "Supervision scenario"
+            items: null
+            broker_only: true
+            statute_refs: ["Wash. Rev. Code § 18.85.201", "Wash. Rev. Code § 18.85.275", "Wash. Admin. Code § 308-124C-125", "Wash. Admin. Code § 308-124C-135", "Wash. Admin. Code § 308-124C-137"]
+          - id: "V.3"
+            label: "Randomly drawn statutes-and-rules scenarios"
+            items: null
+            broker_only: true
+            statute_refs: ["Wash. Rev. Code § 18.85.361", "Wash. Rev. Code § 18.85.285", "Wash. Rev. Code § 18.85.231", "Wash. Admin. Code § 308-124B-210", "Wash. Admin. Code § 308-124E-105"]
+references:
+  - title: "RCW Chapter 18.85 (Real Estate Brokers and Managing Brokers) and Chapter 18.86 (Real Estate Brokerage Relationships)"
+    publisher: "Washington State Legislature"
+  - title: "WAC Title 308, Chapters 308-124 through 308-124I (Real Estate)"
+    publisher: "Washington State Legislature"
+notes: "The bulletin gives per-domain counts, two of them as ranges: General Rules 'Broker 4-5' and Brokerage Relationships 'Broker 4-5'. Because the Broker exam totals exactly 30 (Licensing 8 + Statutes/Rules 13 fixed), one of the two ranged domains has 4 items and the other 5; we assign 4 to General Rules and 5 to Agency (either allocation is consistent with the bulletin). The bulletin labels both the Statutes/Rules domain and the Agency domain 'III'; we number Agency 'IV' and the Managing Broker scenario block 'V'. Managing Broker: 44 items worth 48 points (6/9/18/7 plus 4 two-point scenario items). Ground-truth text ingested from app.leg.wa.gov full-chapter pages: RCW 18.85, RCW 18.86, WAC 308-124, -124A, -124B, -124C, -124D, -124E, -124H, -124I (WAC 308-124F and -124G do not exist; the leg.wa.gov 'full' pages also list repealed dispositions, so refs cite only sections currently in force)."

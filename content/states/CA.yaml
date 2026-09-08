@@ -1,0 +1,68 @@
+code: CA
+name: California
+regulator:
+  name: "California Department of Real Estate (DRE)"
+  url: "https://www.dre.ca.gov/"
+vendor: state
+vendor_notes: "DRE administers its own examinations at DRE exam centers (Fresno, La Palma, Oakland, Sacramento, San Diego) in electronic format; candidates self-schedule through DRE's eLicensing system. No third-party vendor."
+salesperson_exam:
+  national_items: null
+  state_items: null
+  total_items: 150
+  pretest_items: null
+  time_minutes: 180
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70%"
+  grading: combined
+  exam_fee_usd: 100
+  retake_policy: "'There is no limitation on the number of examinations you may take during the two-year period following the date of the filing of your original application.' After the two-year period the applicant must submit a new application, requalify by meeting all statutory requirements, and pay the fee. Re-examination fee is $100 (salesperson) / $150 (broker). Applicants may reschedule after receiving notice of failure."
+  calculator_policy: "Permitted: 'pencils and slide rules or silent, battery-operated, electronic, pocket-sized calculators which are non-programmable, do not have a print-out capability, or an alphabetic keyboard.'"
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: 200
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "75%"
+  grading: combined
+  exam_fee_usd: 150
+prelicense_hours_salesperson: 135
+prelicense_hours_broker: 360
+statute_citation_root: "Cal. Bus. & Prof. Code §§ 10000–11288 (Div. 4, Real Estate Law and Subdivided Lands Law)"
+rules_citation_root: "Cal. Code Regs. tit. 10, § 2705 et seq. (Regulations of the Real Estate Commissioner)"
+statute_url: "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=BPC&division=4.&title=&part=1.&chapter=&article="
+rules_url: "https://www.dre.ca.gov/files/pdf/relaw/regs.pdf"
+bulletin_url: "https://dre.ca.gov/examinees/TakingExam.html"
+exam_outline_url: "https://www.dre.ca.gov/examinees/SalesExamContent.html"
+sources:
+  - url: "https://dre.ca.gov/examinees/TakingExam.html"
+    used_for: [vendor, salesperson_exam, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/examinees/SalesExamContent.html"
+    used_for: [salesperson_exam, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/examinees/BrokerExamContent.html"
+    used_for: [broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/licensees/fees.html"
+    used_for: [salesperson_exam, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/Examinees/RequirementsSales.html"
+    used_for: [prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/Examinees/RequirementsBroker.html"
+    used_for: [prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.dre.ca.gov/Publications/RealEstateLaw.html"
+    used_for: [statute_citation_root, rules_citation_root, rules_url]
+    accessed: 2026-09-08
+  - url: "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=BPC&division=4.&title=&part=1.&chapter=&article="
+    used_for: [statute_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Self-administered by DRE; there is no vendor candidate bulletin, so bulletin_url points to DRE's 'Taking the Exam' page. Exam is a single California exam (no separate national/state portions). Salesperson: '3 hours - 150 multiple choice questions', pass at 70%. Broker: '4 hours - 200 multiple choice questions', pass at 75% (DRE's Taking the Exam page; older materials described two 2.5-hour sessions). Fees (dre.ca.gov/licensees/fees.html): salesperson exam $100, re-exam $100, license $350 (combined exam+license $450 with RE 435); broker exam $150, re-exam $150, license $450. Pre-license: salesperson = 3 college-level courses (Principles, Practice, one elective), each a minimum of 45 hours (135 hrs total); broker = 8 statutorily required courses, each a minimum of 45 hours (360 hrs total), plus 2 years full-time salesperson experience or equivalent/degree. Fees are nonrefundable per B&P Code § 10207. DRE's own compilation 'Real Estate Law' (B&P Code §§ 10000-11288) and 'Regulations of the Real Estate Commissioner' (CCR Title 10) are published at dre.ca.gov/Publications/RealEstateLaw.html."

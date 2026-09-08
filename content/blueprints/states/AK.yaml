@@ -1,0 +1,222 @@
+# Alaska state-portion blueprint. Source: Pearson VUE Alaska Real Estate Candidate Handbook (publication
+# 092200), which embeds the "Alaska Real Estate Law Content Outline for Salesperson and Broker Exams"
+# (publication 092202, effective September 14, 2023). Labels are OUR paraphrases (SPEC §3.2).
+# Domain ids follow the bulletin's Roman numerals; subtopic ids append the bulletin's letters.
+id: state_AK
+vendor: pearsonvue
+title: "Alaska state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Alaska Real Estate Candidate Handbook (publication 092200, 09/2025) — Alaska Real Estate Law Content Outline (publication 092202)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092200.pdf"
+source_version_or_date: "Handbook dated 09/2025; state outline effective September 14, 2023"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  The bulletin gives per-domain counts for salesperson (40) and broker (60) exams; two domains are
+  published as ranges (III: sales 10-12 / broker 9-11; V: 4-6 both). We use the midpoints (III=11 sales,
+  10 broker; V=5) so domains sum exactly to scored_items; `items_range` records the published range.
+  Domain VII is broker-only. Pretest: 5-10 unscored items. Statute refs: AS 08.88 (Real Estate Brokers
+  and Other Licensees; licensee-relationships article at AS 08.88.600-.695) and 12 AAC 64 (Real Estate
+  Commission regulations). Topics grounded outside AS 08.88 (Residential Real Property Transfer
+  Disclosure AS 34.70, Common Interest Ownership Act AS 34.08, Landlord and Tenant Act AS 34.03) are
+  cited but not yet cached.
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers: investigations, discipline, recovery fund"
+        items: 4
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.037", "Alaska Stat. § 08.88.071", "Alaska Stat. § 08.88.131", "12 Alaska Admin. Code § 64.170", "12 Alaska Admin. Code § 64.175"]
+          - id: "I.B"
+            label: "Real estate recovery fund: fees, claims, limits"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.450", "Alaska Stat. § 08.88.455", "Alaska Stat. § 08.88.460", "Alaska Stat. § 08.88.470", "Alaska Stat. § 08.88.475", "Alaska Stat. § 08.88.495", "12 Alaska Admin. Code § 64.073", "12 Alaska Admin. Code § 64.280"]
+          - id: "I.C"
+            label: "Disciplinary sanctions and civil penalties"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.071", "Alaska Stat. § 08.88.167", "Alaska Stat. § 08.88.401", "12 Alaska Admin. Code § 64.080", "12 Alaska Admin. Code § 64.130"]
+          - id: "I.D"
+            label: "Commission review and audit of records"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.351", "Alaska Stat. § 08.88.403", "12 Alaska Admin. Code § 64.135"]
+      - id: "II"
+        label: "Licensing: who needs one, status changes, assistants, E&O"
+        items: 4
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exemptions; eligibility"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.161", "Alaska Stat. § 08.88.171", "Alaska Stat. § 08.88.900", "12 Alaska Admin. Code § 64.905", "12 Alaska Admin. Code § 64.063"]
+          - id: "II.B"
+            label: "Renewal, lapse, inactive status, transfer between brokers"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.241", "Alaska Stat. § 08.88.251", "Alaska Stat. § 08.88.095", "12 Alaska Admin. Code § 64.070", "12 Alaska Admin. Code § 64.071", "12 Alaska Admin. Code § 64.075"]
+          - id: "II.C"
+            label: "Licensed vs. unlicensed assistants"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.398", "12 Alaska Admin. Code § 64.095", "12 Alaska Admin. Code § 64.140"]
+          - id: "II.D"
+            label: "Errors and omissions insurance requirement"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.172", "12 Alaska Admin. Code § 64.600", "12 Alaska Admin. Code § 64.620", "12 Alaska Admin. Code § 64.640"]
+      - id: "III"
+        label: "Duties and disclosures owed to the public"
+        items: 11
+        subtopics:
+          - id: "III.A"
+            label: "Licensee relationships: representation, neutral licensee, consumer disclosure"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.600", "Alaska Stat. § 08.88.605", "Alaska Stat. § 08.88.610", "Alaska Stat. § 08.88.615", "Alaska Stat. § 08.88.620", "Alaska Stat. § 08.88.640", "Alaska Stat. § 08.88.645", "Alaska Stat. § 08.88.660", "12 Alaska Admin. Code § 64.118", "12 Alaska Admin. Code § 64.119"]
+          - id: "III.B"
+            label: "Conflicts of interest and self-dealing"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.391", "Alaska Stat. § 08.88.635", "12 Alaska Admin. Code § 64.961"]
+          - id: "III.C"
+            label: "Compensation: when earned, who may be paid, disclosure"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.361", "Alaska Stat. § 08.88.655", "Alaska Stat. § 08.88.401", "12 Alaska Admin. Code § 64.940", "12 Alaska Admin. Code § 64.960"]
+          - id: "III.D"
+            label: "Property disclosure: transfer disclosure form; CIOA resale certificates and public offering statements"
+            items: null
+            statute_refs: ["12 Alaska Admin. Code § 64.930", "Alaska Stat. § 34.70.010", "Alaska Stat. § 34.08.530", "Alaska Stat. § 34.08.590"]
+      - id: "IV"
+        label: "Rules governing everyday licensee conduct"
+        items: 10
+        subtopics:
+          - id: "IV.A"
+            label: "Advertising and signs"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.381", "Alaska Stat. § 08.88.401", "12 Alaska Admin. Code § 64.127", "12 Alaska Admin. Code § 64.160"]
+          - id: "IV.B"
+            label: "Broker–salesperson relationship and supervision"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.331", "12 Alaska Admin. Code § 64.075", "12 Alaska Admin. Code § 64.077", "12 Alaska Admin. Code § 64.125"]
+          - id: "IV.C"
+            label: "Preparing, delivering, and keeping transaction documents"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.341", "Alaska Stat. § 08.88.351", "Alaska Stat. § 08.88.405"]
+          - id: "IV.D"
+            label: "Handling deposits and other people's money"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.351", "12 Alaska Admin. Code § 64.180", "12 Alaska Admin. Code § 64.200", "12 Alaska Admin. Code § 64.250", "12 Alaska Admin. Code § 64.270"]
+          - id: "IV.E"
+            label: "Prohibited conduct and grounds for discipline"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.401", "Alaska Stat. § 08.88.071", "12 Alaska Admin. Code § 64.130", "12 Alaska Admin. Code § 64.160"]
+      - id: "V"
+        label: "Personal services agreements"
+        items: 5
+        items_range: "4-6"
+        subtopics:
+          - id: "V.A"
+            label: "Listing agreements"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.341", "Alaska Stat. § 08.88.361", "Alaska Stat. § 08.88.660"]
+          - id: "V.B"
+            label: "Property management agreements"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.341", "12 Alaska Admin. Code § 64.550", "12 Alaska Admin. Code § 64.570"]
+          - id: "V.C"
+            label: "Buyer representation agreements"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.341", "Alaska Stat. § 08.88.600", "Alaska Stat. § 08.88.620"]
+      - id: "VI"
+        label: "Property management and landlord-tenant law"
+        items: 6
+        subtopics:
+          - id: "VI.A"
+            label: "Managing property for others; community association management"
+            items: null
+            statute_refs: ["12 Alaska Admin. Code § 64.550", "12 Alaska Admin. Code § 64.570", "12 Alaska Admin. Code § 64.580", "Alaska Stat. § 08.88.173", "Alaska Stat. § 08.88.175"]
+          - id: "VI.B"
+            label: "Uniform Residential Landlord and Tenant Act compliance"
+            items: null
+            statute_refs: ["12 Alaska Admin. Code § 64.560", "Alaska Stat. § 34.03.010"]
+  broker:
+    scored_items: 60
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission powers: investigations, discipline, recovery fund"
+        items: 6
+        subtopics:
+          - id: "I.A"
+            label: "Investigations, hearings, appeals, sanctions, record review"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.037", "Alaska Stat. § 08.88.071", "Alaska Stat. § 08.88.401", "Alaska Stat. § 08.88.403", "12 Alaska Admin. Code § 64.130", "12 Alaska Admin. Code § 64.135", "12 Alaska Admin. Code § 64.170"]
+          - id: "I.B"
+            label: "Real estate recovery fund"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.450", "Alaska Stat. § 08.88.455", "Alaska Stat. § 08.88.470", "Alaska Stat. § 08.88.475", "12 Alaska Admin. Code § 64.073"]
+      - id: "II"
+        label: "Licensing: who needs one, status changes, assistants, E&O"
+        items: 6
+        subtopics:
+          - id: "II.A"
+            label: "License requirement, eligibility, status changes, assistants, E&O"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.161", "Alaska Stat. § 08.88.171", "Alaska Stat. § 08.88.172", "Alaska Stat. § 08.88.251", "Alaska Stat. § 08.88.398", "12 Alaska Admin. Code § 64.063", "12 Alaska Admin. Code § 64.075", "12 Alaska Admin. Code § 64.600"]
+      - id: "III"
+        label: "Duties and disclosures owed to the public"
+        items: 10
+        items_range: "9-11"
+        subtopics:
+          - id: "III.A"
+            label: "Licensee relationships, conflicts, compensation, property disclosure"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.600", "Alaska Stat. § 08.88.615", "Alaska Stat. § 08.88.620", "Alaska Stat. § 08.88.645", "Alaska Stat. § 08.88.391", "Alaska Stat. § 08.88.655", "12 Alaska Admin. Code § 64.118", "12 Alaska Admin. Code § 64.930", "12 Alaska Admin. Code § 64.940"]
+      - id: "IV"
+        label: "Rules governing everyday licensee conduct"
+        items: 9
+        subtopics:
+          - id: "IV.A"
+            label: "Advertising, broker-salesperson relationship, documents, monies, prohibited conduct"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.381", "Alaska Stat. § 08.88.341", "Alaska Stat. § 08.88.351", "Alaska Stat. § 08.88.401", "Alaska Stat. § 08.88.405", "12 Alaska Admin. Code § 64.125", "12 Alaska Admin. Code § 64.160"]
+      - id: "V"
+        label: "Personal services agreements"
+        items: 5
+        items_range: "4-6"
+        subtopics:
+          - id: "V.A"
+            label: "Listings, property management, buyer representation"
+            items: null
+            statute_refs: ["Alaska Stat. § 08.88.341", "Alaska Stat. § 08.88.361", "Alaska Stat. § 08.88.660", "12 Alaska Admin. Code § 64.550"]
+      - id: "VI"
+        label: "Property management and landlord-tenant law"
+        items: 9
+        subtopics:
+          - id: "VI.A"
+            label: "Property and community association management; Landlord and Tenant Act"
+            items: null
+            statute_refs: ["12 Alaska Admin. Code § 64.550", "12 Alaska Admin. Code § 64.560", "12 Alaska Admin. Code § 64.570", "12 Alaska Admin. Code § 64.580", "Alaska Stat. § 08.88.173", "Alaska Stat. § 08.88.175", "Alaska Stat. § 34.03.010"]
+      - id: "VII"
+        label: "Broker-only: trust accounts, supervision, office, records"
+        items: 15
+        subtopics:
+          - id: "VII.A"
+            label: "Trust account setup, deposits, records, prohibited activity"
+            items: null
+            broker_only: true
+            statute_refs: ["Alaska Stat. § 08.88.351", "12 Alaska Admin. Code § 64.180", "12 Alaska Admin. Code § 64.190", "12 Alaska Admin. Code § 64.200", "12 Alaska Admin. Code § 64.210", "12 Alaska Admin. Code § 64.220", "12 Alaska Admin. Code § 64.230", "12 Alaska Admin. Code § 64.240", "12 Alaska Admin. Code § 64.250", "12 Alaska Admin. Code § 64.270", "12 Alaska Admin. Code § 64.271"]
+          - id: "VII.B"
+            label: "Supervising licensees, written office policy, remote areas"
+            items: null
+            broker_only: true
+            statute_refs: ["12 Alaska Admin. Code § 64.117", "12 Alaska Admin. Code § 64.125", "12 Alaska Admin. Code § 64.126", "Alaska Stat. § 08.88.685"]
+          - id: "VII.C"
+            label: "Place of business, branch offices, signs, home offices"
+            items: null
+            broker_only: true
+            statute_refs: ["Alaska Stat. § 08.88.291", "Alaska Stat. § 08.88.301", "Alaska Stat. § 08.88.305", "Alaska Stat. § 08.88.311", "12 Alaska Admin. Code § 64.110", "12 Alaska Admin. Code § 64.111", "12 Alaska Admin. Code § 64.112", "12 Alaska Admin. Code § 64.115", "12 Alaska Admin. Code § 64.120", "12 Alaska Admin. Code § 64.127", "12 Alaska Admin. Code § 64.128"]
+          - id: "VII.D"
+            label: "Transaction records and retention"
+            items: null
+            broker_only: true
+            statute_refs: ["Alaska Stat. § 08.88.351", "12 Alaska Admin. Code § 64.220", "12 Alaska Admin. Code § 64.135"]
+references: []

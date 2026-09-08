@@ -1,0 +1,219 @@
+# Ohio state-portion blueprint. Source: PSI "Ohio Real Estate Salesperson and Broker Examination Candidate
+# Information Bulletin" (bulletin 1001), "State-Specific Portion Content Outline" — one outline for salesperson
+# and broker (4 + 6 + 16 + 14 = 40 items), with several subtopics flagged broker-only. Labels are OUR
+# paraphrases (SPEC §3.2).
+id: state_OH
+vendor: psi
+title: "Ohio state-portion outline (internal blueprint)"
+source_document: "PSI Ohio Real Estate Salesperson and Broker Examination Candidate Information Bulletin — State-Specific Portion Content Outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/1001"
+source_version_or_date: "Bulletin dated 7/1/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "State governance of the profession"
+        items: 4
+        subtopics:
+          - id: "1.A"
+            label: "Commission, Division, and Superintendent: structure and powers"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.03", "Ohio Rev. Code § 4735.04", "Ohio Rev. Code § 4735.05", "Ohio Rev. Code § 4735.10"]
+          - id: "1.B"
+            label: "Audit of records"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.05", "Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-5-11"]
+          - id: "1.C"
+            label: "Investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.051", "Ohio Rev. Code § 4735.052", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 119.12"]
+          - id: "1.D"
+            label: "Violations and penalties, including education sanctions and reprimands"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.181", "Ohio Rev. Code § 4735.99", "Ohio Rev. Code § 4735.052"]
+          - id: "1.E"
+            label: "Real Estate Recovery Fund"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.12"]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 6
+        subtopics:
+          - id: "2.A"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.01", "Ohio Rev. Code § 4735.02", "Ohio Rev. Code § 4735.021", "Ohio Rev. Code § 4735.09"]
+          - id: "2.B"
+            label: "License renewal and maintenance"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.14", "Ohio Rev. Code § 4735.15", "Ohio Rev. Code § 4735.13", "Ohio Adm. Code 1301:5-1-19"]
+          - id: "2.C"
+            label: "Status changes: military, retired, inactive, resigned"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.14", "Ohio Rev. Code § 4735.142", "Ohio Rev. Code § 4735.13", "Ohio Rev. Code § 5903.10"]
+          - id: "2.D"
+            label: "Post-licensing and continuing education"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.141", "Ohio Rev. Code § 4735.09", "Ohio Adm. Code 1301:5-7-01", "Ohio Adm. Code 1301:5-7-02"]
+      - id: "3"
+        label: "License law and Commission rules on brokerage practice"
+        items: 16
+        subtopics:
+          - id: "3.A"
+            label: "Advertising, business names, misrepresentation, team advertising"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.16", "Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-1-02", "Ohio Adm. Code 1301:5-1-21"]
+          - id: "3.B"
+            label: "Broker-salesperson employment or independent-contractor agreements"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.01", "Ohio Rev. Code § 4735.13", "Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-5-06"]
+          - id: "3.C"
+            label: "Compensation only through the broker; fee splitting"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.20", "Ohio Rev. Code § 4735.21", "Ohio Rev. Code § 4735.18"]
+          - id: "3.D"
+            label: "Document handling and record keeping, including contracts and listings"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-5-04", "Ohio Adm. Code 1301:5-5-10"]
+          - id: "3.E"
+            label: "Handling monies and other items of value"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.24", "Ohio Adm. Code 1301:5-5-11"]
+          - id: "3.F"
+            label: "Trust and special accounts"
+            items: null
+            broker_only: true
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.24", "Ohio Adm. Code 1301:5-5-11"]
+          - id: "3.G"
+            label: "Listing types and listing rules"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-5-04", "Ohio Rev. Code § 4735.55"]
+          - id: "3.H"
+            label: "Offers, counteroffers, acceptance, electronic documents"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.62", "Ohio Rev. Code § 4735.65", "Ohio Rev. Code § 1306.06"]
+          - id: "3.I"
+            label: "Broker lien law"
+            items: null
+            broker_only: true
+            statute_refs: ["Ohio Rev. Code § 1311.85", "Ohio Rev. Code § 1311.86", "Ohio Rev. Code § 1311.87", "Ohio Rev. Code § 1311.88"]
+          - id: "3.J"
+            label: "Inducements"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-1-02"]
+          - id: "3.K"
+            label: "Ancillary trustee when a broker dies or is incapacitated"
+            items: null
+            broker_only: true
+            statute_refs: ["Ohio Rev. Code § 4735.05", "Ohio Adm. Code 1301:5-1-17"]
+          - id: "3.L"
+            label: "Property management and leases"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.01", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 5321.04", "Ohio Rev. Code § 5321.16"]
+          - id: "3.M"
+            label: "Rental transactions and rental information"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.01", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 5321.16"]
+          - id: "3.N"
+            label: "Broker license display and place of business"
+            items: null
+            broker_only: true
+            statute_refs: ["Ohio Rev. Code § 4735.16", "Ohio Rev. Code § 4735.13"]
+          - id: "3.O"
+            label: "Ohio fair housing law"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4112.02", "Ohio Rev. Code § 4112.01", "Ohio Rev. Code § 4735.16", "Ohio Rev. Code § 4735.18", "Ohio Adm. Code 1301:5-1-01"]
+      - id: "4"
+        label: "Brokerage relationships (agency law)"
+        items: 14
+        subtopics:
+          - id: "4.A"
+            label: "Creating agency; agency contracts; types of relationships"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.51", "Ohio Rev. Code § 4735.53", "Ohio Rev. Code § 4735.54", "Ohio Rev. Code § 4735.55", "Ohio Rev. Code § 4735.70", "Ohio Rev. Code § 4735.71"]
+          - id: "4.B"
+            label: "Duties to clients and customers; liability; waiver of duties"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.62", "Ohio Rev. Code § 4735.63", "Ohio Rev. Code § 4735.64", "Ohio Rev. Code § 4735.65", "Ohio Rev. Code § 4735.66", "Ohio Rev. Code § 4735.67", "Ohio Rev. Code § 4735.68", "Ohio Rev. Code § 4735.621"]
+          - id: "4.C"
+            label: "Termination of agency"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.55", "Ohio Rev. Code § 4735.69", "Ohio Rev. Code § 4735.74"]
+          - id: "4.D"
+            label: "Confidentiality"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.62", "Ohio Rev. Code § 4735.74", "Ohio Rev. Code § 4735.72"]
+          - id: "4.E"
+            label: "Agency disclosure statement and disclosure of listing information"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.56", "Ohio Rev. Code § 4735.57", "Ohio Rev. Code § 4735.58", "Ohio Rev. Code § 4735.59", "Ohio Rev. Code § 4735.60", "Ohio Adm. Code 1301:5-6-01", "Ohio Adm. Code 1301:5-6-10"]
+          - id: "4.F"
+            label: "Disclosures when dealing in the licensee's own property"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.61", "Ohio Rev. Code § 4735.52"]
+          - id: "4.G"
+            label: "Unauthorized practice of law"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4705.07"]
+          - id: "4.H"
+            label: "False representation of licensee status or expertise"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.02", "Ohio Adm. Code 1301:5-1-02"]
+          - id: "4.I"
+            label: "Canons of ethics"
+            items: null
+            statute_refs: ["Ohio Adm. Code 1301:5-1-01", "Ohio Rev. Code § 4735.10", "Ohio Rev. Code § 4735.18"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "State governance of the profession"
+        items: 4
+        subtopics:
+          - id: "1.A"
+            label: "Governing bodies, audits, investigations, penalties, recovery fund"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.03", "Ohio Rev. Code § 4735.05", "Ohio Rev. Code § 4735.051", "Ohio Rev. Code § 4735.052", "Ohio Rev. Code § 4735.12", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.181"]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 6
+        subtopics:
+          - id: "2.A"
+            label: "Licensable activity, renewal, status changes, post-licensing and CE"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.01", "Ohio Rev. Code § 4735.02", "Ohio Rev. Code § 4735.07", "Ohio Rev. Code § 4735.13", "Ohio Rev. Code § 4735.14", "Ohio Rev. Code § 4735.141", "Ohio Rev. Code § 4735.142", "Ohio Adm. Code 1301:5-7-01"]
+      - id: "3"
+        label: "License law and Commission rules on brokerage practice"
+        items: 16
+        subtopics:
+          - id: "3.A"
+            label: "Advertising, employment agreements, compensation, documents, monies, trust accounts, listings, offers"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.16", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4735.20", "Ohio Rev. Code § 4735.21", "Ohio Rev. Code § 4735.24", "Ohio Adm. Code 1301:5-1-02", "Ohio Adm. Code 1301:5-1-21", "Ohio Adm. Code 1301:5-5-04", "Ohio Adm. Code 1301:5-5-06", "Ohio Adm. Code 1301:5-5-10", "Ohio Adm. Code 1301:5-5-11"]
+          - id: "3.B"
+            label: "Broker lien law, inducements, ancillary trustee, property management, license display, fair housing"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 1311.85", "Ohio Rev. Code § 1311.86", "Ohio Rev. Code § 1311.88", "Ohio Rev. Code § 4735.05", "Ohio Adm. Code 1301:5-1-17", "Ohio Rev. Code § 4735.16", "Ohio Rev. Code § 4735.18", "Ohio Rev. Code § 4112.02", "Ohio Rev. Code § 5321.04", "Ohio Rev. Code § 5321.16"]
+      - id: "4"
+        label: "Brokerage relationships (agency law)"
+        items: 14
+        subtopics:
+          - id: "4.A"
+            label: "Agency creation, duties, termination, confidentiality, disclosures, ethics"
+            items: null
+            statute_refs: ["Ohio Rev. Code § 4735.51", "Ohio Rev. Code § 4735.53", "Ohio Rev. Code § 4735.55", "Ohio Rev. Code § 4735.56", "Ohio Rev. Code § 4735.57", "Ohio Rev. Code § 4735.58", "Ohio Rev. Code § 4735.61", "Ohio Rev. Code § 4735.62", "Ohio Rev. Code § 4735.65", "Ohio Rev. Code § 4735.67", "Ohio Rev. Code § 4735.68", "Ohio Rev. Code § 4735.69", "Ohio Rev. Code § 4735.74", "Ohio Adm. Code 1301:5-6-01", "Ohio Adm. Code 1301:5-1-01"]
+references: []
+notes: >-
+  One state outline serves both licenses (40 items; national 80 salesperson / 75 broker). PSI presents the state
+  outline as four unnumbered blocks with lettered subtopics; domain ids 1-4 are ours in bulletin order, and
+  subtopics the bulletin marks "(broker only)" carry broker_only: true. No Ohio ground truth is cached:
+  codes.ohio.gov (ORC 4735, OAC 1301:5) never answered — TCP timeouts for curl (http and https), ECONNREFUSED
+  for WebFetch, and the browser pane navigation was denied; legislature.ohio.gov timed out likewise, and the
+  Division's laws-and-rules portal page is a JS shell that only links to codes.ohio.gov. Drafting for OH is
+  blocked until ORC 4735 / OAC 1301:5 text is ingested. Section refs for OAC 1301:5 are from memory and should
+  be verified against the text once cached.

@@ -1,0 +1,56 @@
+code: ND
+name: North Dakota
+regulator:
+  name: "North Dakota Real Estate Commission (NDREC)"
+  url: "https://www.realestatend.org/"
+vendor: psi
+vendor_notes: "PSI Services LLC conducts examination testing under contract with the NDREC; there are no eligibility requirements to sit for the exam and candidates register and pay PSI directly."
+salesperson_exam:
+  national_items: 100
+  state_items: 40
+  total_items: 140
+  pretest_items: "A small number of experimental questions may be administered; unscored, but they count against examination time"
+  time_minutes: 240
+  pass_score_national: "70/100"
+  pass_score_state: "30/40"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 134.00
+  retake_policy: "'The combined broker examination is divided into two (2) portions: general and state. Candidates who pass one (1) portion of the examination and fail the other need to retake only the section they failed. Candidates do not need to retake the entire combined exam. The fee is $134 whether you are taking one portion or two portions.' 'There are no eligibility requirements for the examination. If you fail, you may test unlimited for a 12 month period.' 'Your examination fee will be forfeited if you do not test within 1 year of the date your examination fee is received by PSI.'"
+  calculator_policy: "Handheld calculators are listed among prohibited electronic devices ('electronic watches, handheld calculators, headsets...'). The bulletin does not state whether an on-screen calculator is provided."
+broker_exam:
+  national_items: 90
+  state_items: 40
+  total_items: 130
+  pretest_items: "A small number of experimental questions may be administered"
+  time_minutes: 240
+  pass_score_national: "75/100 points (90 items scored to 100 points; some national broker items scored up to two points)"
+  pass_score_state: "30/40"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 134.00
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 60
+statute_citation_root: "N.D. Cent. Code ch. 43-23 (Real Estate Brokers)"
+rules_citation_root: "N.D. Admin. Code art. 70-02 (Real Estate Licensure)"
+statute_url: "https://ndlegis.gov/cencode/t43c23.html"
+rules_url: "https://ndlegis.gov/information/acdata/pdf/70-02-01.pdf"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/4662"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/4662"
+    used_for: [vendor, salesperson_exam, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://realestatend.org/how-to-apply/"
+    used_for: [regulator, vendor, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://ndlegis.gov/cencode/t43c23.html"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://ndlegis.gov/information/acdata/pdf/70-02-01.pdf"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin edition dated 10/1/2025 (PSI). Time per portion: National 150 min, State 90 min. Salesperson national portion is 100 items (unusual; most PSI states use 80). NDREC's 'How To Apply' page: 90-hour salesperson pre-licensure course; 60-hour broker pre-licensure course (broker applicants must also hold a salesperson license for the prior 2 years). The Commission also publishes a combined 'License Law and Rules' book (Sept 2022) at realestatend.org. The rules_url is the ndlegis.gov PDF of chapter 70-02-01; article 70-02 has multiple chapters (70-02-01 through 70-02-05) under the same ndlegis.gov acdata path."

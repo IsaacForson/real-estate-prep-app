@@ -1,0 +1,53 @@
+code: UT
+name: Utah
+regulator:
+  name: "Utah Division of Real Estate, Department of Commerce"
+  url: "https://realestate.utah.gov"
+vendor: pearsonvue
+vendor_notes: "The Utah Real Estate Candidate Handbook (#094500, July 2024) states 'All applicants must pass the licensure examination administered by Pearson VUE.' Utah's entry-level license is 'Sales Agent'. The general and state portions are administered in a single 4-hour sitting but scored separately (scaled scores)."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "70 (scaled score)"
+  pass_score_state: "70 (scaled score)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 69
+  retake_policy: "Handbook: 'The examination is divided into two parts: general and state law. Candidates who pass one section of the examination and fail the other need retake only the failed section within six (6) months. If, after six (6) months, both sections have not been passed, the candidate must retake the entire examination.' 'Reservations for reexamination may not be made at the test center, and candidates must wait twenty-four (24) hours after failing an examination before making a reservation to retake it.' 'All applicants must apply for a license within ninety (90) days of passing both examination components (general and state) and within twelve (12) months of the date on which the individual completes the prelicensing education.'"
+  calculator_policy: "Handbook: 'Calculators are not required; however, they are recommended. Acceptable calculators include hand-held, battery, or solar-powered financial calculators used in real estate, finance, accounting, and business. The acceptable financial calculator may have storage capabilities but must not contain alpha characters... Calculator malfunctions are not grounds for challenging examination results or requesting additional examination time.'"
+broker_exam:
+  national_items: 80
+  state_items: 90
+  total_items: 170
+  pretest_items: 15
+  time_minutes: 240
+  pass_score_national: "75 (scaled score)"
+  pass_score_state: "75 (scaled score)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 69
+prelicense_hours_salesperson: 120
+prelicense_hours_broker: 120
+statute_citation_root: "Utah Code Ann. § 61-2f-101 et seq. (Real Estate Licensing and Practices Act)"
+rules_citation_root: "Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules)"
+statute_url: "https://le.utah.gov/xcode/Title61/Chapter2F/61-2f.html"
+rules_url: "https://rules.utah.gov/publicat/code/r162/r162-02f.htm"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094500.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094502.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094500.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094502.pdf"
+    used_for: [salesperson_exam.state_items, salesperson_exam.pretest_items, broker_exam.state_items, broker_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/ut/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook: exam fee $69; 'Each candidate will have four (4) hours to complete the examination'; passing scaled scores: Salesperson 70 general / 70 state, Broker 75 general / 75 state (scaled 0-100; numeric scores reported only to failing candidates). Outlines (#094502): national/general 80 scored + 5 pretest (effective April 1, 2025); Utah State Salesperson outline '50 scored items, 5-10 pretest (unscored) items' (effective July 15, 2016); Utah State Broker outline '90 scored items, 5-10 pretest (unscored) items' (effective July 15, 2016). pretest_items records 5 national + 10 state (upper bound). Pre-license: 120 classroom hours for sales agent and 120 for broker (broker: 45 Broker Principles, 45 Broker Practices, 30 Utah Law); education is valid one year and the Candidate Education Certifying Document must be presented at each exam sitting. Fingerprinting is done at Pearson VUE ($12 fee to Pearson VUE per handbook) plus a Division fingerprint fee. le.utah.gov and realestate.utah.gov refused automated connections from this environment; the statute_url follows the Legislature's standard chapter URL and the rules_url is the Utah Office of Administrative Rules page for R162-2f (which redirects to the eRules portal)."

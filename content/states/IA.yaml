@@ -1,0 +1,61 @@
+code: IA
+name: Iowa
+regulator:
+  name: "Iowa Real Estate Commission, Iowa Department of Inspections, Appeals, and Licensing (DIAL)"
+  url: "https://dial.iowa.gov/licenses/other-professional-licensure/real-estate-licensees"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the exam at test centers and via remote proctoring (https://test-takers.psiexams.com/iare)."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: null
+  time_minutes: 180
+  pass_score_national: "56/80"
+  pass_score_state: "28/40"
+  pass_score_combined: "84/120 (must also meet each portion's minimum)"
+  grading: separate
+  exam_fee_usd: 95
+  retake_policy: "Bulletin (eff. 2/8/2024): 'In order to pass the examinations, you must achieve the minimum score on each part of the examination.' 'If you do not pass, you must retake the examination before you can be licensed. Submit a new registration form and the appropriate fee to PSI and schedule an appointment to retake the examination.' A registration must be used within 90 days or the fee is forfeited. The bulletin does not state a waiting period or a validity window for a passed portion; licensees examined in other states without reciprocity take the Iowa state portion only with Commission authorization."
+  calculator_policy: "Bulletin lists 'handheld calculators' among prohibited electronic devices; scratch paper and pencil are provided at PSI test sites. No on-screen calculator is mentioned."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: null
+  time_minutes: 180
+  pass_score_national: "60/80 points"
+  pass_score_state: "30/40"
+  pass_score_combined: "90/120 points"
+  grading: separate
+  exam_fee_usd: 95
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 60
+statute_citation_root: "Iowa Code ch. 543B"
+rules_citation_root: "Iowa Admin. Code 481—chs. 2001 to 2022 (Real Estate Commission rules; formerly 193E, transferred IAC Supp. 6/10/26)"
+statute_url: "https://www.legis.iowa.gov/docs/code/543B.pdf"
+rules_url: "https://www.legis.iowa.gov/law/administrativeRules/rules?agency=481"
+bulletin_url: "https://dial.iowa.gov/media/4323/download?inline="
+exam_outline_url: null
+sources:
+  - url: "https://dial.iowa.gov/media/4323/download?inline="
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dial.iowa.gov/licenses/other-professional-licensure/real-estate-licensees"
+    used_for: [regulator]
+    accessed: 2026-09-08
+  - url: "https://www.legis.iowa.gov/docs/code/543B.pdf"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.legis.iowa.gov/docs/iac/agency/193E.pdf"
+    used_for: [rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.legis.iowa.gov/law/administrativeRules/rules?agency=481"
+    used_for: [rules_url, rules_citation_root]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+confidence: high
+last_verified: 2026-09-08
+notes: "Salesperson: National 80 items/120 min (pass 56), State 40 items/60 min (pass 28), both 180 min. Broker national portion has 75 items worth 80 points (scenario-based items scored up to 2 points), pass 60; state 40 items pass 30. 5-10 unscored experimental items may be added and count against time. Salesperson prelicense: Commission-approved 60-hour course within 12 months before the exam; broker: 60 hours of broker prelicense education within 24 months plus 24 months' active salesperson experience. License application due by the last business day of the sixth month after passing. The Commission moved under DIAL (formerly Professional Licensing Bureau) — the bulletin still cites plb.iowa.gov. The Real Estate Commission rules formerly at 193E were editorially transferred to 481 IAC chapters 2001-2022 (IAC Supplement 6/10/26); the legis.iowa.gov 193E agency PDF is now only a transfer notice, so rules_url points to the agency 481 rules index."

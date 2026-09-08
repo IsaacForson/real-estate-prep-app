@@ -1,0 +1,667 @@
+---
+jurisdiction: "NH"
+citation: "N.H. Rev. Stat. Ann. ch. 540"
+title: "RSA Chapter 540, official General Court page read via Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts"
+url: "https://gc.nh.gov/rsa/html/LV/540/540-mrg.htm"
+fetched_on: "2026-09-08"
+---
+Chapter 540 ACTIONS AGAINST TENANTS 
+ TITLE LV PROCEEDINGS IN SPECIAL CASES 
+ CHAPTER 540 ACTIONS AGAINST TENANTS 
+-->
+
+ TITLE LV
+PROCEEDINGS IN SPECIAL CASES
+
+ Chapter 540
+ACTIONS AGAINST TENANTS
+
+ Section 540:1
+
+ 540:1 Tenancies, Nature of. – 
+
+Every tenancy or occupancy shall be deemed to be at will, and the rent payable upon demand, unless a different contract is shown.
+
+ Source. RS 209:5. CS 222:5. GS 231:5. GL 250:5. PS 246:1. PL 357:1. RL 413:1.
+
+ Section 540:1-a
+
+ 540:1-a Definitions. – 
+
+In this chapter:
+
+I. "Nonrestricted property" means all real property rented for nonresidential purposes and the following real property rented for residential purposes:
+
+(a) Single-family houses, if the owner of such a house does not own more than 3 single-family houses at any one time.
+
+(b) Rental units in an owner-occupied building containing a total of 4 dwelling units or fewer.
+
+(c) [Repealed.]
+
+(d) Single-family houses acquired by banks or other mortgagees through foreclosure.
+
+II. "Restricted property" means all real property rented for residential purposes, except those properties listed in paragraph I.
+
+III. "Rental unit" means a suite of one or more rooms located within a single building rented by the owner to one or more individuals living in common for nontransient residential purposes.
+
+IV. The term "tenant" or "tenancy" shall not include occupants or occupancy in the following places and the provisions of this chapter shall not apply to:
+
+(a) Rooms in rooming or boarding houses which are rented to transient guests for fewer than 90 consecutive days. For purposes of this subparagraph, if the owner of the facility directs the occupant to move from one room to another in the same rooming or boarding house, or directs the occupant to move from one of the owner's rooming or boarding houses to another, the 90-day period for computing consecutive days of occupancy shall not be broken. Consecutive days of occupancy shall not include a voluntary move from one room to another if the move was made at the request of the occupant after the occupant has been notified of the exemption from tenancy under this subparagraph. Such request shall be in writing and shall include the following statement:
+
+"I request a move from ________________ to _______________ . I have received a copy of RSA 540:1-a, IV(a) and understand that any time I spent in the first room shall not apply toward the 90 consecutive days of occupancy required for tenancy under RSA 540."
+
+(b) Rooms in hotels, motels, inns, tourist homes and other dwellings rented for recreational or vacation use.
+
+(c) Rooms in student dormitories, nursing homes, hospitals and any other facilities licensed under RSA 151 or certified under RSA 126-A, convents, monasteries, asylums, or group homes.
+
+(d) A single-family home in which the occupant has no lease, which is the primary and usual residence of the owner.
+
+(e) Residential real estate under RSA 540-B.
+
+(f) Vacation or recreational rental units under RSA 540-C.
+
+(g) Residential units leased by a member of a fraternal or social organization that provides student housing for a postsecondary institution in a structure owned and operated by the fraternal or social organization.
+
+(h) Occupancies in which the occupant is hired to provide care or assistance for a person with disabilities. In such cases, if the person with disabilities or his or her legal guardian no longer wishes the assistance of the caregiver, he or she may order the caregiver to vacate the premises without legal process required as a tenant under this chapter, provided:
+
+(1) There is a written agreement specifying that care or assistance authorizes summary ejection of the caregiver; and
+
+(2) The caregiver is given written notice directing him or her to vacate the premises in not less than 72 hours; and
+
+(3) If the agreement between the parties provides for compensation for the care provider beyond free housing, prior to the time the caregiver vacates the premises, the person with disabilities or the legal guardian pays the caregiver any money due under the agreement for services rendered.
+
+ Source. 1985, 249:1. 2001, 277:1. 2006, 312:2, eff. Jan. 1, 2007. 2010, 203:3, eff. Jan. 1, 2011. 2013, 61:3, eff. June 6, 2013; 253:1, eff. July 24, 2013. 2014, 93:1, eff. Aug. 10, 2014. 2018, 189:1, eff. Aug. 7, 2018.
+
+ Section 540:1-b
+
+ 540:1-b Landlord's Agent Required. – 
+
+I. An owner of restricted property, as defined in RSA 540:1-a, II, who resides within the state of New Hampshire shall, within 30 days of becoming the owner or within 30 days of the effective date of this section, whichever occurs later, file a statement with the town or city clerk of the municipality in which the property is located that provides the name, address, and telephone number of a person within the state who is authorized to accept service of process for any legal proceeding brought against the owner relating to the restricted property. Such person authorized to accept service may be the owner of the premises. This section shall not apply to manufactured housing parks as defined in RSA 205-A:1, II.
+
+II. An owner of restricted property who resides outside the state of New Hampshire shall, within 30 days of becoming the owner or within 30 days of the effective date of this section, whichever occurs later, file a statement with the town or city clerk of the municipality in which the property is located that provides the name, address, and telephone number of a person within the state who is authorized to accept service of process for any legal proceeding brought against the owner relating to the restricted property.
+
+III. In any legal proceeding in which the property owner resides out of state and said owner fails to: (a) comply with paragraph II, and (b) appear in said proceeding, service of process pursuant to RSA 510:4 shall create a rebuttable presumption that such service was lawful and adequate. As used in this section the term "legal proceeding" includes, but is not limited to, any action at law or in equity or for the enforcement of any provision of RSA 48-A:14, or any housing code adopted by a municipality pursuant to RSA 48-A, or for the enforcement of any municipal health code, building code, or fire or life safety code. A municipality may establish a reasonable filing fee to cover the cost to the town or city clerk of maintaining a record of the filings required by this section.
+
+IV. [Repealed.]
+
+ Source. 2010, 203:2, eff. Jan. 1, 2011. 2011, 247:3, eff. July 13, 2011. 2014, 77:4, eff. Jan. 1, 2015.
+
+ Section 540:1-c
+
+ 540:1-c Penalty. – 
+
+The governing body of a municipality may establish a fine not to exceed $100 for the failure to file a statement designating an agent for service of process as required under RSA 540:1-b. Any such fine may be collected in the same manner as a fine for violation of a municipal ordinance, and shall be for the use of the municipality.
+
+ Source. 2014, 77:3, eff. Jan. 1, 2015.
+
+ Section 540:2
+
+ 540:2 Termination of Tenancy. – 
+
+I. The lessor or owner of nonrestricted property may terminate any tenancy by giving to the tenant or occupant a notice in writing to quit the premises in accordance with RSA 540:3 and 5.
+
+II. The lessor or owner of restricted property may terminate any tenancy by giving to the tenant or occupant a notice in writing to quit the premises in accordance with RSA 540:3 and 5, but only for one of the following reasons:
+
+(a) Neglect or refusal to pay rent due and in arrears, upon demand.
+
+(b) Substantial damage to the premises by the tenant, members of his household, or guests.
+
+(c) Failure of the tenant to comply with a material term of the lease.
+
+(d) Behavior of the tenant or members of his family which adversely affects the health or safety of the other tenants or the landlord or his representatives, or failure of the tenant to accept suitable temporary relocation due to lead-based paint hazard abatement, as set forth in RSA 130-A:8-a, I.
+
+(e) Other good cause.
+
+(f) The dwelling unit contains a lead exposure-hazard which the owner will abate by:
+
+(1) Methods other than interim controls or encapsulation;
+
+(2) Any other method which can reasonably be expected to take more than 30 days to perform; or
+
+(3) Removing the dwelling unit from the residential rental market.
+
+(g) Willful failure by the tenant to prepare the unit for remediation of an infestation of insects or rodents, including bed bugs, after receipt of reasonable written notice of the required preparations and reasonable time to complete them.
+
+(h) If a remaining cotenant or occupant is the accused perpetrator of domestic violence, sexual assault, or stalking, resulting in the termination of a lease pursuant to RSA 540:11-b.
+
+ [Paragraph I(i) effective July 1, 2026.]
+
+(i)(1) For a lease the original term of which is 12 months or longer, or for a lease the term of which is less than 12 months but which has been renewed for a total period of 12 months or longer, the expiration of the term of the lease, provided that:
+
+(A) The landlord has provided the tenant with written notice at least 60 days in advance of the termination date of the lease term that the lease will not be renewed and that the tenant must vacate the rental property at the end of the lease term; and
+
+(B) The landlord has filed a possessory action within 6 months of the lease expiring.
+
+(2) Nothing in this subparagraph shall affect a tenant's defense of retaliatory eviction as set forth in RSA 540:13-a or a tenant's protections from discrimination as defined by RSA 354:10.
+
+III. If the grounds for eviction is other good cause as set forth in paragraph II(e) of this section, and such cause is based on the actions or inactions of the tenant, members of his family, or guests, the landlord shall, prior to the issuance of the eviction notice, provide the tenant with written notice stating that in the future such actions or inactions would constitute grounds for eviction. Such notice shall be served in accordance with RSA 540:5 or by certified mail.
+
+IV. A tenant's refusal to agree to a change in the existing rental agreement calling for an increase in the amount of rent shall constitute good cause for eviction under paragraph II(e) of this section, provided that the landlord provided the tenant with written notice of the amount and effective date of the rent increase at least 30 days prior to the effective date of the increase.
+
+V. "Other good cause" as set forth in paragraph II(e) of this section includes, but is not limited to, any legitimate business or economic reason and need not be based on the action or inaction of the tenant, members of his family, or guests.
+
+VI. No tenancy shall be terminated for nonpayment of rent if:
+
+(a) The tenant was forced to take over the landlord's utility payments in order to prevent utility services, which the landlord agreed to provide, from being terminated;
+
+(b) The amount of rent which the tenant is in arrears does not exceed the amount paid by the tenant to maintain utility service to the tenant's premises; and
+
+(c) The tenant has receipts from the utility company or other proof of payment of the amount paid to maintain utility service.
+
+VII. (a) No lessor or owner of restricted property shall terminate a tenancy solely based on a tenant or a household member of a tenant having been a victim of domestic violence as defined in RSA 173-B, sexual assault as defined in RSA 632-A, or stalking as defined in RSA 633:3-a, provided that:
+
+(1) The tenant or household member of a tenant who is the victim provides the lessor or owner with written verification that the tenant or household member of a tenant has obtained a valid protective order against the perpetrator of the domestic violence, sexual assault, or stalking; or
+
+(2) The tenant or household member of a tenant who is the victim:
+
+(A) Initiates legal action to obtain a protective order and provides written verification thereof to the lessor or owner; or
+
+(B) Reports the domestic violence, sexual assault, or stalking to a law enforcement agency and provides written verification thereof to the lessor or owner; or
+
+(C) Provides written verification from a law enforcement official, victim's advocate, attorney, or health care provider that he or she is a victim of domestic violence, sexual assault, or stalking; or
+
+(D) Provides a signed self-certification form provided by the circuit court. The circuit court shall develop and provide forms for self-certification modeled after those developed by the New Hampshire housing finance authority in accordance with the Violence Against Women Act, 24 CFR section 5.2007(b)(1)(i). The self-certification form developed by the circuit court shall include the same information as is required by 24 CFR section 5.2005(a)(1)(ii); and
+
+(i) Language swearing that the facts provided by the tenant in the self-certification form are true and accurate to the best of their knowledge and recollection; and
+
+(ii) Language informing the tenant that false statements may be subject to criminal penalties, including potentially perjury.
+
+(b) A tenant who has obtained a protective order from a court of competent jurisdiction granting him or her possession of a dwelling to the exclusion of one or more other tenants or household members may request that a lock be replaced or configured for a new key at the tenant's expense. The lessor or owner shall, if provided a copy of the protective order, comply with the request and shall not give copies of the new keys to the tenant or household member restrained or excluded by the protective order.
+
+(c) A lessor or owner who replaces a lock or configures a lock for a new key in accordance with subparagraph (b) shall not be liable for any damages that result directly from the lock replacement or reconfiguration.
+
+(d) If, after a hearing in the possessory action, the court finds that there are grounds under this section to evict the tenant or household member accused of the domestic violence, sexual assault, or stalking, it may issue a judgment in favor of the lessor or owner of the property against the person accused, and allow the tenancy of the remainder of the residents to continue undisturbed. The lessor or owner of the rental unit at issue in the possessory action shall have the right to bar the person accused of the domestic violence, sexual assault, or stalking from the unit and from the lessor's or owner's property once judgment in the possessory action becomes final against such person. Thereafter, and notwithstanding RSA 635:2, the person's entry upon the lessor's or owner's property after being notified in writing that he or she has been barred from the property shall constitute a trespass.
+
+(e) The written verification provided to the lessor or owner, including the fact that an individual is a victim of domestic violence, sexual assault, or stalking, shall be maintained in strict confidence. The lessor or owner shall not disclose this information to any other entity or individual, except to the extent that disclosure is:
+
+(1) Requested or consented to in writing by the tenant or household member of the tenant who is the victim of domestic violence, sexual assault, or stalking;
+
+(2) Relevant and reasonably necessary for use in an eviction proceeding or hearing regarding termination of housing assistance; or
+
+(3) Otherwise required by applicable law.
+
+(f) Nothing in this section shall preclude eviction for nonpayment of rent. A landlord may evict on any grounds set forth in RSA 540:2, II which are unrelated to domestic violence, sexual assault, or stalking.
+
+(g) The defense set forth in subparagraph VII(a) shall be an affirmative defense to possessory actions brought pursuant to subparagraph II(b), (c), (d), or (e) of this section.
+
+ [Paragraph VIII effective July 1, 2026.]
+
+VIII. No-fault termination of tenancy shall not be considered an eviction for the purposes of rental applications and tenant screening reports by the lessor or the lessee. For the purposes of this section, "no-fault termination of tenancy" shall mean any termination of tenancy under RSA 540:2, II(i). The court handling any no-fault termination of tenancy shall make note in court documentation of the termination of tenancy proceeding that the termination of tenancy was at no fault of the tenant. This subparagraph shall not be construed to limit a landlord's ability to perform due diligence inquiries regarding a prospective tenant.
+
+ Source. RS 209:1. CS 222:1. GS 231:1. GL 250:1. PS 246:2. PL 357:2. RL 413:2. RSA 540:2. 1985, 249:2. 1993, 325:5, 6. 1996, 139:2. 2006, 192:1, eff. Jan. 1, 2007. 2010, 285:1, eff. Oct. 6, 2010. 2013, 48:7, eff. Jan. 1, 2014. 2024, 9:1, 3, eff. Jan. 1, 2025. 2025, 263:1, 2, eff. July 1, 2026.
+
+ Section 540:3
+
+ 540:3 Eviction Notice. – 
+
+I. If a nonresidential tenant neglects or refuses to pay rent due and in arrears, upon demand, 7 days' notice shall be sufficient; if the rent is payable more frequently than once in 3 months, whether such rent is due or not, a notice equal to the rent period shall be sufficient, and 3 months' notice shall be sufficient in all cases.
+
+II. For all residential tenancies, 30 days' notice shall be sufficient in all cases; provided, however, that 7 days' notice shall be sufficient if the reason for the termination is as set forth in RSA 540:2, II(a), (b), (d), or (h).
+
+III. The eviction notice shall state with specificity the reason for the eviction.
+
+IV. If the eviction notice is based on nonpayment of rent, the notice shall inform the tenant of his or her right, if any, to avoid the eviction by payment of the arrearages and liquidated damages in accordance with RSA 540:9.
+
+V. For the purpose of interpreting or enforcing any lease or rental agreement for residential tenants in effect on July 1, 2006, a notice to quit shall be deemed an eviction notice under this section.
+
+ Source. RS 209:2. CS 222:2. GS 231:2. GL 250:2. PS 246:3. PL 357:3. 1939, 63:1. RL 413:3. RSA 540:3. 1979, 305:2. 1985, 249:3. 1988, 100:1. 2006, 192:3, eff. Jan. 1, 2007. 2024, 9:4, eff. Jan. 1, 2025.
+
+ Section 540:4
+
+ 540:4 Demand. – 
+
+Such demand shall be sufficient if made upon the tenant or occupant at any time after the rent becomes due and prior to or simultaneously with the service of such eviction notice.
+
+ Source. 1915, 37:1. PL 357:4. RL 413:4. 1999, 6:1. 2006, 192:1, eff. Jan. 1, 2007.
+
+ Section 540:5
+
+ 540:5 Service of Demand and Eviction Notice. – 
+
+I. Any notice of a demand for rent or an eviction notice may be served by any person and may be served upon the tenant personally or left at his or her last and usual place of abode. In the case of commercial rental property, service of process may be made at such property provided that a copy of the demand for rent or eviction notice shall be sent by certified mail to the commercial tenant at his or her last known legal address or, for non-residents, by certified mail to the tenant's registered agent if there is a registered agent for the tenant duly registered with the New Hampshire secretary of state or, if there is no such registered agent, by certified mail to the tenant's last known legal address. Proof of service must be shown by a true and attested copy of the notice accompanied by an affidavit of service, but the affidavit need not be sworn under oath. A notice of a demand for rent shall be sufficient if served upon the tenant at any time after the rent becomes due and prior to or simultaneously with the service of an eviction notice.
+
+II. The district court shall provide forms for a demand for rent and eviction notice in the district court clerks' offices and on the New Hampshire judicial branch website. Although a landlord shall not be required to use the forms, a valid demand for rent or eviction notice shall include the same information as is requested and provided on such forms.
+
+ Source. 1915, 37:1. PL 357:5. RL 413:5. RSA 540:5. 1979, 305:3. 1999, 6:2. 2006, 192:2, eff. Jan. 1, 2007. 2011, 208:1, eff. Jan. 1, 2012. 2013, 87:1, eff. Aug. 19, 2013.
+
+ Section 540:6
+
+ 540:6 Repealed by 1985, 249:10, I, eff. Aug. 6, 1985. – 
+
+ Section 540:7
+
+ 540:7 Demand of Rent. – 
+
+Where, to constitute a forfeiture for a violation of the condition of a written lease, a demand of rent is required such demand may be made as provided RSA 540:5.
+
+ Source. 1905, 57:1. PL 357:7. RL 413:7.
+
+ Section 540:8
+
+ 540:8 Time of. – 
+
+Such demand may be made when the rent is due or while it is in arrears, but the lessor shall not demand a greater sum than the whole rent in arrears when demand is made.
+
+ Source. 1905, 57:1. PL 357:8. RL 413:8.
+
+ Section 540:9
+
+ 540:9 Payment After Notice. – 
+
+I. Any possessory action based solely on nonpayment of rent shall be dismissed if both of the following occur:
+
+(a) The tenant, at any time prior to the hearing on the merits, pays to the landlord, in cash, certified check, prepaid money order, electronic transfer, or other guaranteed or immediately drawable funds, including any form of payment specified in 540:9-a, I, all rent due and owing through the time of such payment plus other lawful charges contained in the lease, $15 liquidated damages, and any filing fee and service charges incurred by the landlord in connection with the possessory action; and
+
+(b) The landlord also submits prior to the hearing date a receipt of such payment to court and states in writing that a copy of same receipt has also been forwarded to the tenant prior to the time and date of the hearing on the merits. If the landlord fails to file such receipt the hearing on the merits shall proceed, and if the tenant proves that payment has been made in accordance with subparagraph (a), the case shall be dismissed.
+
+II. Notwithstanding the provisions of paragraph I, a tenant may not defeat an eviction for nonpayment of rent by use of this section more than 3 times within a 12-month period.
+
+ Source. 1905, 57:1. PL 357:9. RL 413:9. RSA 540:9. 1985, 249:4. 2000, 155:1, eff. Jan. 1, 2001. 2021, 152:2, Pt. I, Sec. 1, eff. July 23, 2021.
+
+ Section 540:9-a
+
+ 540:9-a Payment by Voucher and Application of Rents Paid by a Municipality. – 
+
+I. Any rental payment or partial rental payment tendered by the tenant in the form of a written promise to pay on behalf of the tenant by the state, a county or a municipality of this state, or a payment by any organization which disburses federal or state funds, and any application by a municipality of amounts owed to it by a landlord pursuant to RSA 165:4-a, shall constitute payment by the tenant of the amount represented in the voucher, and of any amount applied by a municipality to delinquent balances of the landlord; provided, that this section shall not be construed to obligate a landlord to accept partial rental payments.
+
+II. In any eviction based on non-payment of rent, it shall be an affirmative defense that:
+
+(a) The tenant tendered timely payment pursuant to paragraph I, and such payment was refused; or
+
+(b) The tenant could have tendered timely payment pursuant to paragraph I had the landlord provided ordinary and reasonable verification of rental information requested by the agency.
+
+ Source. 1988, 100:2. 1992, 184:3. 2000, 48:1. 2006, 192:1, eff. Jan. 1, 2007. 2007, 153:1, eff. Aug. 17, 2007. 2021, 152:2, Pt. I, Sec. 2, eff. July 23, 2021.
+
+ Section 540:10
+
+ 540:10 Repealed by 1985, 249:10, II, eff. Aug. 6, 1985. – 
+
+ Section 540:11
+
+ 540:11 Termination by Lessee. – 
+
+I. A lessee may terminate his or her lease by notice in writing, in the same manner as the lessor, and the notice shall have the same effect for all purposes as a notice by the lessor to the lessee.
+
+II. A tenancy at will, from month to month, may be terminated by the lessee upon 30 days notice; provided that if the date of termination given in the notice does not coincide with the rent due date, the lessee is responsible for the rent for the entire month in which the notice expires, up to the next rent due date, unless the terms of the lease provide otherwise.
+
+ Source. RS 209:6. CS 222:6. GS 231:6. GL 250:6. PS 246:6. PL 357:11. RL 413:11. 2018, 18:1, eff. July 14, 2018.
+
+ Section 540:11-a
+
+ 540:11-a Termination by Members of the Armed Services. – 
+
+I. A lessee may terminate his or her lease, or a tenant may terminate a rental agreement when the lessee or tenant is:
+
+(a) A member of the armed services reserve who is called to active duty.
+
+(b) A member of the national guard who is called to active duty.
+
+(c) A member of the armed services on active duty who is reassigned to a location out of the state.
+
+II. The lessee or tenant shall give notice of termination within 7 days of receipt of notice of being called to active duty or being reassigned out of the state.
+
+III. The lessee or tenant shall terminate the lease or rental agreement by a written notice in accordance with the Servicemembers Civil Relief Act, Public Law 108-189, Section 305.
+
+ Source. 2004, 135:1, eff. Jan. 1, 2005.
+
+ Section 540:11-b
+
+ 540:11-b Termination of Lease by Tenant Due to Domestic Violence. – 
+
+I. A tenant may terminate his or her lease or rental agreement when:
+
+(a) The tenant or household member within the most recent 150 days residing at the current premises, has been a victim of domestic violence as defined in RSA 173-B, sexual assault as defined in RSA 632-A, or stalking as defined in RSA 633:3-a; or
+
+(b) Within the most recent 150 days, an event occurs relative to the victim of past domestic violence as defined in RSA 173-B, sexual assault as defined in RSA 632-A, or stalking as defined in RSA 633:3-a, that, in conjunction with the past abuse, causes a victim lessee or victim household member to fear for their safety.
+
+(c) Provided that:
+
+(1) The tenant or household member of a tenant who is the victim provides the lessor or owner with written verification that the tenant or household member of a tenant has obtained a valid protective order against the perpetrator of the domestic violence, sexual assault stalking; or
+
+(2) The tenant or household member of a tenant who is the victim:
+
+(A) Initiates legal action to obtain a protective order and provides written verification thereof to the lessor or owner;
+
+(B) Reports the domestic violence, sexual assault, or stalking to a law enforcement agency and provides written verification thereof to the lessor or owner;
+
+(C) Provides written verification from a law enforcement official, victim's advocate, attorney or health care provider that he or she is a victim of domestic violence, sexual assault, or stalking;
+
+(D) Provides a signed self-certification form provided by the circuit court. The circuit court shall develop and provide forms for self-certification modeled after those developed by the New Hampshire housing finance authority in accordance with the Violence Against Women Act, 24 CFR section 5.2007(b)(1)(i). The self-certification form developed by the circuit court shall include the same information as is required by 24 CFR section 5.2005(a)(1)(ii); and
+
+(i) Language swearing that the facts provided by the tenant in the self-certification form are true and accurate to the best of their knowledge and recollection; and
+
+(ii) Language informing the tenant that false statements may be subject to criminal penalties, including potentially perjury.
+
+II. The written verification provided to the lessor or owner, including the fact that an individual is a victim of domestic violence, sexual assault, or stalking, shall be maintained in strict confidence. The lessor or owner shall not disclose this information to any other entity or individual, except to the extent that disclosure is:
+
+(a) Requested or consented to in writing by the tenant or household member of the tenant who is the victim of domestic violence, sexual assault, or stalking;
+
+(b) Relevant and reasonably necessary for use in an eviction proceeding or hearing regarding termination of housing assistance; or
+
+(c) Otherwise required by applicable law.
+
+III. The tenant who has given notice pursuant to paragraph I shall vacate the premises within 30 days of giving notice to the landlord or at any other time as may be agreed upon by the landlord and the tenant.
+
+IV. For the purposes of determining rent owed, a tenant who terminates a lease or rental agreement pursuant to this section is only liable, if solely or jointly liable for purposes of the lease or rental agreement, for rent owed through the date of termination or the date the tenant actually vacates the premises, whichever is later. The security deposit, if any, shall remain applied to the rental of the premises until all tenants have vacated, at which time the security deposit shall be returned pursuant to RSA 540-A:7.
+
+ Source. 2024, 9:2, eff. Jan. 1, 2025.
+
+ Section 540:12
+
+ 540:12 Possessory Action. – 
+
+The owner, lessor, or purchaser at a mortgage foreclosure sale of any tenement or real estate may recover possession thereof from a lessee, occupant, mortgagor, or other person in possession, holding it without right, after notice in writing to quit the same as herein prescribed.
+
+ Source. RS 209:7. CS 222:7. GS 231:7. GL 250:7. PS 246:7. PL 357:12. 1939, 53:2. RL 413:12.
+
+ Section 540:13
+
+ 540:13 Writ; Service; Discovery; Record; Default. – 
+
+I. A writ of summons may be issued, returnable before a district court, setting forth in substance that the plaintiff is entitled to the possession of the demanded premises, and that the defendant is in possession thereof without right, after notice in writing, to quit the same at a day named therein.
+
+II. The writ shall be accompanied by a notice from the district court, printed in no smaller than 12-point type, informing the tenant that:
+
+(a) If the tenant wishes to contest the eviction, he must file an appearance in the district court no later than the return day appearing on the writ.
+
+(b) The tenant shall not be evicted unless the court so orders; however, such an order may be granted if the tenant does not file an appearance.
+
+(c) At the time the tenant files his appearance, he may request that the court make a sound recording of the eviction hearing by checking an appropriate box on the appearance form.
+
+(d) If the tenant wishes to appeal the district court's decision, he must:
+
+(1) File a notice of intent to appeal with the district court within 7 days of the notice of the district's decision; and
+
+(2) File a notice of appeal in the supreme court within 30 days of the notice of the district court's decision; and
+
+(3) Pay all rent, as it comes due, between the date of the notice of intent to appeal the district court's decision and the final disposition of the appeal.
+
+III. The writ of summons and the notice provided in paragraph II shall be returnable 7 days from the date of service of the writ by the sheriff. The writ of summons shall provide an opportunity for the landlord, at the landlord's option, to make a claim for an award of unpaid rent. If the landlord elects to make a claim for unpaid rent, the court shall consider any defense, claim, or counterclaim by the tenant which offsets or reduces the amount owed to the plaintiff. If the court finds that the landlord is entitled to possession on the ground of nonpayment of rent, it shall also award the landlord a money judgment. If the court determines that the amount owed by the landlord to the tenant, as a result of set-off or counterclaim exceeds or equals the amount of rent and other lawful charges owed by the tenant to the landlord, judgment in the possessory action shall be granted in favor of the tenant. If the court finds that the tenant's counterclaim exceeds the amount of the nonpayment, a money judgment shall issue in favor of the tenant. Any decision rendered by the court related to a money judgment, shall be limited to a maximum of $1,500 and shall not preclude either party from making a subsequent claim in a court of competent jurisdiction to recover any additional amounts not covered by the $1,500 judgment.
+
+IV. Both parties shall have a right to engage in discovery prior to the hearing on the merits within such time frame as may be established for eviction actions by the Rules of the District Court.
+
+V. If the tenant files an appearance, a hearing shall be scheduled to occur within 10 days after such filing, with allowance for additional time pursuant to paragraph IV, with notice of the hearing mailed to the parties no fewer than 6 days prior to the hearing. If the tenant fails to file an appearance or fails to appear at the hearing on the merits, the court shall mail a notice of default to the address set forth on the summons at least 3 days prior to the issuance of the writ of possession.
+
+VI. In deciding any contested hearing, the court shall issue a written decision setting forth the basis for its decision.
+
+VII. In the case of nonpayment of rent, while the possessory action is pending, the landlord may accept payment of the rental arrearage without creating a new tenancy, provided that the landlord informs the tenant in writing of the landlord's intention to proceed with the eviction in spite of the landlord's acceptance of the payment. The landlord may choose not to accept payment and to proceed with the eviction.
+
+ Source. RS 209:8, 9. CS 222:8, 9. GS 231:8. GL 250:8. PS 246:8. PL 357:13. RL 413:13. RSA 540:13. 1957, 244:23. 1992, 284:87. 1996, 155:1, 2. 1998, 25:1, 2, eff. Jan. 1, 1999.
+
+ Section 540:13-a
+
+ 540:13-a Defense to Retaliation. – 
+
+Except in cases in which the tenant owes the landlord the equivalent of one week's rent or more, it shall be a defense to any possessory action, as to residential property, that such possessory action was in retaliation for the tenant:
+
+I. Reporting a violation or reporting in good faith what the tenant reasonably believes to be a violation of RSA 540-A or an unreasonable and substantial violation of a regulation or housing code to the landlord or any board, agency or authority having powers of inspection, regulation or enforcement as to the reasonable fitness of said residential property for health or safety;
+
+II. Initiating an action in good faith pursuant to RSA 540-A or availing himself of the procedures of RSA 540:13-d; or
+
+III. Meeting or gathering with other tenants for any lawful purpose.
+
+ Source. 1972, 26:1. 1979, 305:4, eff. Aug. 21, 1979.
+
+ Section 540:13-b
+
+ 540:13-b Evidence of Intent to Retaliate. – 
+
+Unless the court finds that the act of the tenant in making a report or complaint or in initiating an action or in organizing relative to alleged violations by a landlord was primarily intended to prevent any eviction, a rebuttable presumption that such possessory action was in retaliation of the tenant's action shall be created when any possessory action, increase in rent or any substantial alteration in the terms of the tenancy is instituted by a landlord within 6 months after:
+
+I. The landlord received notice of any such alleged violation provided that:
+
+(a) The tenant mailed, gave in hand to, or left at the abode of the landlord notice of the report or complaint of the alleged violation; or
+
+(b) The landlord received notice of the complaint or report from the board, agency or authority; or
+
+II. The landlord completed repairs or otherwise successfully remedied such violation; or
+
+III. The landlord received notice that the tenant had initiated an action pursuant to RSA 540-A; or
+
+IV. The discovery by the landlord of activity protected by RSA 540:13-a, III.
+
+ Source. 1972, 26:1. 1979, 305:4. 1985, 249:5, eff. Aug. 6, 1985.
+
+ Section 540:13-c
+
+ 540:13-c Discretionary Stay Dependent on Payment of Rent. – 
+
+I. If the defendant defaults, or confesses judgment, or if on trial the court rules that the landlord has sustained his complaint, judgment shall be rendered that the landlord recover possession of the premises and costs. A writ of possession shall be issued, provided that, the court may order the tenant shall not be dispossessed until a date not later than 3 months from such default, confession of judgment, or ruling of the court, provided the court decides that under all the circumstances justice requires such stay, based on the reasonableness and good faith of the parties in their respective reports, complaints, demands, and evidence. In the event of any such stay of dispossession, the tenant shall pay the landlord weekly in advance the weekly former rent, or the proportional weekly part of the former rent if rent was payable less often than weekly, and on default of any such advance weekly payment a writ of possession shall be issued and the sheriff shall evict the tenant as soon as possible.
+
+II. Nothing in this section shall be construed to prohibit the parties in a case of nonpayment of rent from agreeing that, in spite of judgment for the plaintiff, a writ of possession shall not be issued, if the defendant makes payments in accordance with a schedule designated in the agreement. The agreement may incorporate the arrearage, future rent due, court costs, and service fees. The agreement shall be filed with the court and shall state the date when final payment of the arrearage, court costs, and service fees are due. Entering into such an agreement shall waive the defendant's right to appeal.
+
+(a) Every such agreement shall conspicuously state in a separate paragraph at the end of the agreement the following language:
+
+I, TENANT/DEFENDANT IN THIS ACTION, UNDERSTAND THAT IF I FAIL TO MAKE ANY OF THE PAYMENTS CALLED FOR IN THIS AGREEMENT ON TIME, THE COURT MAY ORDER THE SHERIFF TO EVICT ME WITHOUT A HEARING. I ALSO UNDERSTAND THAT BY SIGNING THIS AGREEMENT I AM GIVING UP MY RIGHT TO FILE ANY APPEAL IN THIS CASE.
+
+(b) If the plaintiff has not filed an affidavit of non-compliance within 14 days of the date that the final payment under the agreement established under this paragraph is due, the court shall dismiss the action.
+
+(c) The acceptance of any payment pursuant to such an agreement shall not establish a new tenancy.
+
+(d) If payments are not made when due, as evidenced by an affidavit of non-compliance filed with the court by the plaintiff and served in hand or at the abode of the defendant before the affidavit is filed with the court, the court shall issue a writ of possession, within 5 business days of the filing of the affidavit with the court, and without further hearing or judicial review.
+
+(e)(1) Notwithstanding the provisions of subparagraph (d), the court may hold a hearing to determine whether or not a writ of possession shall issue if the defendant files an objection or other pleading in court within 4 business days of the filing of the affidavit of non-compliance and certificate of service with the court, which alleges that:
+
+(A) The defendant made a timely tender of the required payment; or
+
+(B) The defendant had a specific compelling cause for not tendering the required payment or payments on time, and that the defendant is able to tender the past-due payment or payments at the time the defendant files his or her objection or other pleading.
+
+(2) If the court finds that the defendant's motion or other pleading do not meet the requirements of subparagraph (1)(A) or (1)(B), it shall issue a writ of possession. If the court determines that the defendant's allegations meet the requirements, a hearing shall be scheduled to occur within 4 business days of the filing of the defendant's objection or other pleading.
+
+(f)(1) At any hearing under subparagraph (e)(2), the defendant shall have the burden to prove that:
+
+(A) The defendant has made timely payments, and therefore the writ of possession shall not issue; or
+
+(B) The defendant has brought to court cash or a certified check sufficient to tender all past-due payments, and the defendant had a specific compelling cause for his or her failure to tender any past-due payments.
+
+(2) If the defendant fails to meet his or her burden of proof under subparagraph (1)(A) or (1)(B), the court shall issue the writ of possession.
+
+(3) If the defendant meets his or her burden of proof under subparagraph (1)(B), the court shall order the defendant to tender, by cash or certified check, all past-due payments to the plaintiff immediately. If all past due-payments are tendered immediately by cash or certified check, a writ of possession shall not issue, otherwise a writ of possession shall issue.
+
+ Source. 1972, 26:1. 1988, 100:3. 1992, 284:88, eff. Jan. 1, 1993. 2016, 220:1, eff. June 9, 2016.
+
+ Section 540:13-d
+
+ 540:13-d Defenses to Violations of Fitness. – 
+
+I. No action for possession based on nonpayment of rent shall be maintained in regard to any premises leased or rented for residential purposes, other than for vacation or recreation, if such premises are in substantial violation of the standards of fitness for health and safety set forth in RSA 48-A or in local codes, ordinances or bylaws established pursuant thereto, and such violation materially affects the habitability of said premises, provided that:
+
+(a) The tenant proves by clear and convincing evidence that, while not in arrears in rent, he provided notice of the violation to the person to whom he customarily pays rent; and
+
+(b) The landlord failed to correct the violations within 14 days of the receipt of such written notice or, in an emergency, as promptly as conditions require; and
+
+(c) The violations were not caused by the tenant, a member of the tenant's family or other person on the premises with the tenant's consent; and
+
+(d) Necessary repairs have not been prevented due to extreme weather conditions or due to the failure of the tenant to allow the landlord reasonable access to the premises.
+
+II. If a defendant raises a defense provided in paragraph I of this section, the court may order the action continued for a reasonable time not to exceed one month to enable the plaintiff to remedy the violation. At the time such continuance is ordered, the court shall require the person claiming a defense under this section to pay into court any rent withheld or becoming due thereafter as it becomes due. Upon a finding by the court that the violation has been remedied within the continuance period, the court shall dismiss the possessory action and either award the withheld rent money to the plaintiff or apportion the rent paid into court by paying to the plaintiff the fair rental value of the premises while in the substantially defective condition and by awarding the remainder of said funds to the defendant as damages for plaintiff's breach of his warranty of habitability. If the violation has not been remedied within such period, the court shall enter judgment for the defendant and refund to the defendant all money deposited.
+
+ Source. 1979, 305:5. 1985, 249:6, 7, eff. Aug. 6, 1985.
+
+ Section 540:13-e
+
+ 540:13-e Infestation of Bed Bugs: Liability for Costs of Remediation. – 
+
+I. In this section:
+
+(a) "Infestation of bed bugs" means the presence of bed bugs in real property rented for residential purposes.
+
+(b) "Remediation" means action taken by the landlord that substantially reduces the presence of bed bugs in a dwelling unit for at least 60 days.
+
+II. The landlord shall bear the reasonable costs of remediation of an infestation of bed bugs, but may recover those costs if the tenant is responsible for the infestation.
+
+III. If a landlord alleges that a tenant is responsible for an infestation of bed bugs, the landlord may bill the tenant, in writing, for the reasonable costs of remediation of the infestation of bed bugs in the tenant's own unit. If within 30 days of the completion of remediation the tenant has not paid the landlord for the reasonable costs of remediation, or entered into a repayment agreement with the landlord, such failure shall be considered grounds for eviction for nonpayment of rent pursuant to RSA 540:2, II(a).
+
+IV. In an eviction action for nonpayment of rent based on failure to pay the reasonable costs of remediation, or in an action for damages for the reasonable costs of remediation of an infestation of bed bugs, the landlord shall bear the burden of proving both that the tenant was responsible for the infestation and that the landlord offered the tenant the opportunity to enter into a reasonable repayment agreement.
+
+V. In an eviction action for nonpayment of rent based on failure to pay the reasonable costs of remediation of an infestation of bed bugs, or in an action for damages for the reasonable costs of remediation of an infestation of bed bugs:
+
+(a) Notwithstanding paragraph IV, there shall be a rebuttable presumption that the tenant is responsible for the infestation if during the 6 months prior to the inception of the defendant's tenancy, and throughout the defendant's tenancy, there were no reports, to the landlord or a municipal health or housing authority, of the presence of bed bugs in the defendant's unit or the dwelling units of a multiple-unit building that are adjacent to or directly above or below the defendant's unit, or by previous tenants in a single-family home. For the purposes of this subparagraph, the defendant's own report to the landlord or a municipal health or housing authority shall not be considered a report.
+
+(b) In evaluating which party is responsible for the infestation, the court shall consider the totality of the evidence, including but not limited to the following:
+
+(1) The existence and extent of bed bugs in other units or common areas anywhere in the building prior to and during the tenant's tenancy;
+
+(2) In which unit bed bugs were first discovered;
+
+(3) Whether and to what extent, prior to the infestation that is the subject of the litigation, the landlord undertook remediation efforts in the tenant's unit and the units adjacent to and directly above and below the tenant's unit; and
+
+(4) Whether the tenant had bed bugs in the dwelling unit in which he or she resided immediately prior to moving to the unit that is the subject of the litigation.
+
+ Source. 2013, 48:6, eff. Jan. 1, 2014.
+
+ Section 540:14
+
+ 540:14 Judgment. – 
+
+I. If the defendant makes default, or if on trial it is considered by the court that the plaintiff has sustained its complaint, judgment shall be rendered that the plaintiff recover possession of the demanded premises and costs, and a writ of possession shall issue. In cases based on nonpayment of rent, the court shall state the actual amount of the tenant's current weekly rent or, if rent is not paid on a weekly basis, the equivalent weekly rent amount, which must be paid into the court if an appeal is taken pursuant to RSA 540:20 and 540:25. The judgment may be enforced, at the sole discretion of the plaintiff, either by directing the sheriff to serve the writ of possession or by seeking judicial relief against the defendant for civil contempt. A writ of possession shall authorize the sheriff to remove the defendant from the premises.
+
+II. Whenever the tenant successfully raises the defense of retaliation pursuant to RSA 540:13-a, damages of not more than 3 months' rent may be awarded to the tenant.
+
+III. If the plaintiff makes a successful claim for unpaid rent as well as possession, or the defendant makes a successful counterclaim, the court shall issue a money judgment at the same time that it makes its ruling regarding possession of the premises.
+
+IV. If the court renders judgment against any one tenant or member of a multiperson household pursuant to RSA 540:2, VII(d), the court shall specify in its order that the writ of possession shall only be used to remove the tenant or household member against whom the judgment issued, and that the other tenants or household members may remain in residence.
+
+ Source. RS 209:10, 11. CS 222:10, 11. GS 231:9. GL 250:9. PS 246:9. PL 375:14. RL 413:14. RSA 540:14. 1957, 244:24. 1979, 305:6. 1991, 373:1. 1998, 25:3, 4, eff. Jan. 1, 1999. 2010, 285:2, eff. Oct. 6, 2010.
+
+ Section 540:15
+
+ 540:15 Neglect to Enter, etc. – 
+
+If the plaintiff neglects to enter his action, or fails to support it, judgment shall be rendered for the defendant for his costs.
+
+ Source. RS 209:12. CS 222:12. GS 231:10. GL 250:10. PS 246:10. PL 357:15. RL 413:15.
+
+ Section 540:16
+
+ 540:16 General Issue. – 
+
+Under the general issue, the defendant shall not offer evidence which may bring the title to the demanded premises in question.
+
+ Source. RS 209:13. CS 222:13. GS 231:11. GL 250:11. PS 246:11. PL 357:16. RL 413:16.
+
+ Section 540:16-a
+
+ 540:16-a Hearsay Exception. – 
+
+In any possessory action based on allegations concerning the behavior of the defendant or his family or guests, records of complaints made by other tenants to the landlord or his agent concerning such behavior shall be competent evidence if:
+
+I. The landlord or other qualified witness testifies to its identity and the mode of its preparation;
+
+II. It was made at or near the time of the receipt of the complaint; and
+
+III. In the opinion of the court, the sources of information, method and time of preparation, and proximity in time of the complaint to the alleged tenant behavior, were such as to justify its admission.
+
+ Source. 1985, 249:8, eff. Aug. 6, 1985.
+
+ Section 540:17
+
+ 540:17 Plea of Title, Recognizance. – 
+
+If the defendant shall plead a plea which may bring in question the title to the demanded premises he shall forthwith recognize to the plaintiff, with sufficient sureties, in such sum as the court shall order, to enter his action in the superior court for the county at the next return day, and to prosecute his action in said court, and to pay all rent then due or which shall become due pending the action, and the damages and costs which may be awarded against him.
+
+ Source. RS 209:14. CS 222:14. GS 231:12. GL 250:12. PS 246:12. PL 357:17. RL 413:17. 1947, 121:15. RSA 540:17. 1957, 244:25, eff. Sept. 23, 1957.
+
+ Section 540:18
+
+ 540:18 Effect of Plea, etc. – 
+
+After the filing of such plea and the entry of such recognizance no further proceedings shall be had before the municipal court, but the action may be entered and prosecuted in the superior court in the same manner as if it were originally begun there.
+
+ Source. RS 209:16. CS 222:16. GS 231:14. GL 250:14. PS 246:14. PL 357:18. RL 413:18. RSA 540:18. 1957, 244:26, eff. Sept. 23, 1957.
+
+ Section 540:19
+
+ 540:19 Neglect to Recognize. – 
+
+If the defendant neglects or refuses to recognize, judgment shall be rendered against him in the same manner as if he had refused to make answer to the suit.
+
+ Source. RS 209:15. CS 222:15. GS 231:13. GL 250:13. PS 246:13. PL 357:19. RL 413:19.
+
+ Section 540:20
+
+ 540:20 Appeal. – 
+
+Any party to an action brought pursuant to this chapter shall, within 7 days of the date of the notice of judgment, file in the district court a notice of intent to appeal to the supreme court. Until the appeal is perfected by the filing of a notice of appeal in the supreme court, the district court shall retain exclusive jurisdiction of the case. After the filing of the notice of appeal in the supreme court, the district court shall retain jurisdiction of the matter for the purposes of collecting rent pending appeal. In all other respects, the judgment of the district court shall be final at the expiration of the appeal period.
+
+ Source. RS 209:17. CS 222:17. GS 231:15. GL 250:15. PS 246:15. PL 357:20. RL 413:20. RSA 540:20. 1957, 244:27. 1965, 327:3. 1992, 284:45. 1998, 25:5, eff. Jan. 1, 1999.
+
+ Section 540:21
+
+ 540:21 Repealed by 1995, 277:26, III, eff. Aug. 19, 1995. – 
+
+ Section 540:22
+
+ 540:22 Neglect to Enter Appeal. – 
+
+If the appellant neglects to enter his appeal or to produce such copies the court, on complaint of the appellee, shall affirm the former judgment, with additional damages and costs.
+
+ Source. RS 209:21. CS 222:21. GS 231:19. GL 250:19. PS 246:19. PL 357:22. RL 413:22.
+
+ Section 540:23
+
+ 540:23 Plaintiff's Damages. – 
+
+If a defendant files a plea of title or appeals, and the plaintiff recovers judgment against the defendant, the court shall cause plaintiff's damages, exemplary or otherwise, including a just compensation for the use and detention of the property and for any injury thereto, to be assessed and may issue execution therefor, or the same may be recovered on the recognizance taken as before provided.
+
+ Source. GS 231:20. GL 250:20. PS 246:20. PL 357:23. RL 413:23. RSA 540:23. 1992, 284:46, eff. Jan. 1, 1993.
+
+ Section 540:24
+
+ 540:24 Recognizance, by Plaintiff. – 
+
+The plaintiff, before his appeal is allowed, shall recognize to the defendant, with sufficient sureties, in such sum as the court may order, to enter and prosecute his appeal, and to pay such costs as may be awarded against him.
+
+ Source. RS 209:18. CS 222:18. GS 231:16. GL 250:16. PS 246:16. PL 357:24. RL 413:24. RSA 540:24. 1957, 244:28, eff. Sept. 23, 1957.
+
+ Section 540:25
+
+ 540:25 Recognizance, by Defendant. – 
+
+I. If the possessory action was instituted on the basis of nonpayment of rent, and the defendant files a notice of intent to appeal, the defendant shall pay into court the current rent in an amount determined by the judgment of the court pursuant to RSA 540:14, I, weekly and in advance. Payment of rent for one week must be made at the time the defendant files notice of intent to appeal in the district court. Rent which had been payable on other than a weekly basis shall be paid to the court each week based on the equivalent weekly rent determined by the judgment issued by the court, pursuant to RSA 540:14, I. During the pendency of the appeal, rent is payable on a weekly basis and is due on the same day of the week on which the notice of intent to appeal was filed. If rent is not paid by the due date, the court shall immediately mail a notice of default to the tenant and issue a writ of possession to the landlord. If, however, the tenant pays the clerk the entire amount of rent due since the filing of the notice of intent to appeal prior to the service of the writ by the sheriff, the writ of possession shall be recalled and the appeal shall be reinstated. Unless the appeal is reinstated, the district court shall vacate the appeal and award the plaintiff the rent money that has been paid into court.
+
+I-a. At any time during the pendency of the appeal, the landlord may file a motion to the district court for recovery of the rent money that has been paid into court pursuant to paragraph I. The court may grant such motion unless the tenant objects and the court rules that the landlord is not lawfully entitled to the full amount of rent. If the court rules that the landlord is not entitled to the full amount of the rent, it shall release such portion of the rent to which the court deems the landlord is lawfully entitled, if any, and make specific findings in support of its decision to deny or partially deny the landlord's motion. The rent money retained by the court shall be apportioned between the landlord and the tenant upon final disposition of the appeal.
+
+II. If the possessory action was instituted for a reason other than nonpayment of rent, the defendant shall pay into court or to the plaintiff, as the court directs, all rents becoming due from the date the notice of intent to appeal is filed with the district court. In any case in which the duty to pay rent or a portion thereof is in dispute, the defendant shall be required to pay such portion of the rents becoming due after the notice of intent is filed into court, as the court may direct, which amounts shall be held by the court in escrow until a final decision is rendered. After such decision has been rendered, the escrowed rent money and any accrued interest thereon shall be apportioned between plaintiff and defendant on the basis of a finding of rent actually due. For the purpose of this section, "rent" shall mean the amount of money called for by the lease or rental agreement at the time the action for possession was instituted.
+
+ Source. RS 209:19. CS 222:19. GS 231:17. GL 250:17. PS 246:17. PL 357:25. RL 413:25. RSA 540:25. 1957, 244:29. 1973, 352:1. 1992, 284:47. 1998, 25:6. 2001, 123:1, 2, eff. Jan. 1, 2001.
+
+ Section 540:26
+
+ 540:26 Other Remedies. – 
+
+Nothing in this chapter shall be construed to prevent a landlord from pursuing his legal remedy at common law.
+
+ Source. RS 209:22. CS 222:22. GS 231:21. GL 250:21. PS 246:21. PL 357:26. RL 413:26.
+
+ Section 540:27
+
+ 540:27 Landlord's Grantee. – 
+
+Whenever the estate occupied by a tenant at will or sufferance is conveyed by the landlord his grantee shall have the rights and remedies which the grantor would have had, under the provisions of this chapter, if the estate had not been conveyed.
+
+ Source. 1865, 4084:1. GS 231:22. GL 250:22. PS 246:22. PL 357:27. RL 413:27.
+
+ Section 540:28
+
+ 540:28 Lease Provisions. – 
+
+No lease or rental agreement, oral or written, shall contain any provision by which a tenant waives any of his rights under this chapter, and any such waiver shall be null and void.
+
+ Source. 1985, 244:9, eff. Aug. 6, 1985.
+
+ Section 540:29
+
+ 540:29 Conflict of Laws. – 
+
+Any provisions of federal law relating to rental units owned, operated or subsidized by the federal government which are inconsistent with or contrary to the provisions of this chapter shall supersede the provisions of this chapter. Where not inconsistent, the provisions of federal law shall apply in conjunction with the provisions of this chapter.
+
+ Source. 1985, 244:9, eff. Aug. 6, 1985.
+
+ Section 540:30
+
+ 540:30 Unauthorized Practice of Law; Exception; Certain Employees and Members of Limited Liability Companies, Corporations, or Partnerships. – 
+
+Notwithstanding RSA 311:7, a person of good character who is not approved to practice law in New Hampshire, but is a member or employee of a limited liability company, corporation, or partnership, which has 5 or fewer members, shall, with the proper written authorization from the organization, be authorized to represent the entity on matters in the circuit court of New Hampshire arising under this chapter; provided that each such appearance shall require a new written authorization.
+
+ Source. 2014, 164:1, eff. Sept. 9, 2014.

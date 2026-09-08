@@ -1,0 +1,53 @@
+code: SC
+name: South Carolina
+regulator:
+  name: "South Carolina Real Estate Commission, Department of Labor, Licensing and Regulation (LLR)"
+  url: "https://llr.sc.gov/re/"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the 'Real Estate Associate' (salesperson) and 'Real Estate Broker' exams; the PSI Candidate Information Bulletin (Updated 8/27/2026) is at https://test-takers.psiexams.com/scre. Candidates must first be approved by the Commission and receive an Examination Eligibility letter (valid 1 year)."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 10
+  time_minutes: 200
+  pass_score_national: "56/80 (70%)"
+  pass_score_state: "28/40 (70%)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 67
+  retake_policy: "Bulletin: 'Examination Eligibility is valid for 1 year. If you fail you may retest on an unlimited basis during the 1 year period.' 'Candidates for licensure are required to pass both portions of the examination within 1 year of approval of your eligibility by the Commission. If your Examination Eligibility has expired, you will need to reapply to the Commission before you can register to take or retake the examination with PSI.' A single portion may be re-registered separately ('One Portion $59'). Examination fee is valid for one year from date of payment."
+  calculator_policy: "Bulletin: 'Only non-programmable calculators that are silent, battery-operated, do not have paper tape printing capabilities, and do not have a keyboard containing the alphabet will be allowed in the examination site.' Scratch paper is provided and may not be removed."
+broker_exam:
+  national_items: 75
+  state_items: 50
+  total_items: 125
+  pretest_items: 10
+  time_minutes: 200
+  pass_score_national: "60 of 80 points (75%)"
+  pass_score_state: "36/50 (72%)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 67
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 60
+statute_citation_root: "S.C. Code Ann. § 40-57-10 et seq. (Title 40, ch. 57 – Real Estate Brokers, Brokers-in-Charge, Associates, and Property Managers)"
+rules_citation_root: "S.C. Code Ann. Regs. ch. 105 (Real Estate Commission)"
+statute_url: "https://www.scstatehouse.gov/code/t40c057.php"
+rules_url: "https://www.scstatehouse.gov/coderegs/Chapter%20105.pdf"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/440"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/440"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.scstatehouse.gov/code/t40c057.php"
+    used_for: [statute_citation_root, statute_url, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.scstatehouse.gov/coderegs/Chapter%20105.pdf"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin Examination Summary Table: Associate National 80 (80 points) 120 minutes; State 40 (40 points) 80 minutes; Both (120 points) 200 minutes. Broker National 75 items (80 points; some items scored up to two points) 120 minutes; State 50 (50 points) 80 minutes; Both 200 minutes. Score Reporting (number correct required): Associate National 56, State 28; Broker National 60, State 36. Experimental questions: 'A small number (i.e., 5 to 10)' unscored items may be administered and, per this bulletin, 'the time taken to answer them will not count against testing time' (pretest_items records the upper bound). Fees: Both Portions $67, One Portion $59, Property Manager $63. Pre-license (S.C. Code § 40-57-300): salesperson = 60 hours Unit I (fundamentals) + 30 hours Unit II (advanced) within 5 years of application, and 'an applicant may take the license examination before completing the required thirty hours of advanced instruction'; broker = 60 hours of commission-approved instruction (30-hour Unit III A Broker Management + 30-hour Unit III B Brokerage Principles) plus experience. llr.sc.gov refused automated connections from this environment, so exam facts come from the PSI bulletin and the statute from scstatehouse.gov."

@@ -1,0 +1,231 @@
+# Louisiana state-portion blueprint. Source: Pearson VUE "Louisiana Real Estate State Content Outlines"
+# (#091901, 04/2025), Louisiana Real Estate Salesperson, Broker, and Instructor Licensing Examination
+# Content Outline, effective September 1, 2021. Labels are OUR paraphrases (SPEC §3.2).
+# The bulletin publishes each domain as an item RANGE; `items` is the midpoint so domains sum to 55.
+id: state_LA
+vendor: pearsonvue
+title: "Louisiana state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Louisiana Real Estate State Content Outlines (#091901) — Louisiana Real Estate Salesperson, Broker, and Instructor Licensing Examination Content Outline"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091901.pdf"
+source_version_or_date: "Document #091901 rev. 04/2025; state outline effective September 1, 2021"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 55
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission role, powers, enforcement, and sanctions"
+        items: 5
+        items_range: "4-6"
+        subtopics:
+          - id: "I.A"
+            label: "Commission makeup and general powers, including rulemaking"
+            items: null
+            statute_refs: ["La. R.S. 37:1432", "La. R.S. 37:1433", "La. R.S. 37:1435", "La. Admin. Code tit. 46, pt. LXVII, § 101"]
+          - id: "I.B"
+            label: "Commission audits and inspection of licensee records"
+            items: null
+            statute_refs: ["La. R.S. 37:1435", "La. R.S. 37:1449", "La. Admin. Code tit. 46, pt. LXVII, § 2719"]
+          - id: "I.C"
+            label: "Complaints, investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["La. R.S. 37:1453", "La. R.S. 37:1456", "La. R.S. 37:1457", "La. Admin. Code tit. 46, pt. LXVII, §§ 4101–4113"]
+          - id: "I.D"
+            label: "Fines, censure, suspension, revocation, other discipline"
+            items: null
+            statute_refs: ["La. R.S. 37:1455", "La. R.S. 37:1458", "La. R.S. 37:1461", "La. Admin. Code tit. 46, pt. LXVII, § 4113"]
+      - id: "II"
+        label: "Who needs a license; license types, eligibility, renewal"
+        items: 8
+        items_range: "7-9"
+        subtopics:
+          - id: "II.A"
+            label: "Activities that require a real estate license"
+            items: null
+            statute_refs: ["La. R.S. 37:1431", "La. R.S. 37:1436", "La. R.S. 37:1459"]
+          - id: "II.B"
+            label: "What unlicensed persons and assistants may do"
+            items: null
+            statute_refs: ["La. R.S. 37:1438", "La. R.S. 37:1445", "La. R.S. 37:1459"]
+          - id: "II.C"
+            label: "License categories: salesperson, broker, entity, inactive"
+            items: null
+            statute_refs: ["La. R.S. 37:1431", "La. R.S. 37:1437.2", "La. R.S. 37:1437.3", "La. R.S. 37:1439"]
+          - id: "II.D"
+            label: "Applicant qualifications, examination, and application"
+            items: null
+            statute_refs: ["La. R.S. 37:1437", "La. R.S. 37:1440", "La. Admin. Code tit. 46, pt. LXVII, §§ 301–307", "La. Admin. Code tit. 46, pt. LXVII, §§ 501–507"]
+          - id: "II.E"
+            label: "Renewal cycle, delinquent renewal, and fees"
+            items: null
+            statute_refs: ["La. R.S. 37:1442", "La. R.S. 37:1443", "La. Admin. Code tit. 46, pt. LXVII, §§ 701–705", "La. Admin. Code tit. 46, pt. LXVII, §§ 901–907"]
+          - id: "II.F"
+            label: "Transfers, terminations, inactive status, sponsor changes"
+            items: null
+            statute_refs: ["La. R.S. 37:1441", "La. R.S. 37:1437.3", "La. Admin. Code tit. 46, pt. LXVII, §§ 1501–1507", "La. Admin. Code tit. 46, pt. LXVII, §§ 1701–1703"]
+          - id: "II.G"
+            label: "Pre-license, post-license, and continuing education"
+            items: null
+            statute_refs: ["La. R.S. 37:1437", "La. R.S. 37:1460", "La. Admin. Code tit. 46, pt. LXVII, §§ 5301–5337", "La. Admin. Code tit. 46, pt. LXVII, §§ 5501–5539"]
+          - id: "II.H"
+            label: "Required notices to the commission (address, legal action)"
+            items: null
+            statute_refs: ["La. R.S. 37:1450", "La. Admin. Code tit. 46, pt. LXVII, § 3101", "La. Admin. Code tit. 46, pt. LXVII, § 4301"]
+      - id: "III"
+        label: "Statutory rules for licensee conduct and brokerage operations"
+        items: 14
+        items_range: "13-15"
+        subtopics:
+          - id: "III.A"
+            label: "Advertising rules and use of business and team names"
+            items: null
+            statute_refs: ["La. R.S. 37:1455", "La. Admin. Code tit. 46, pt. LXVII, §§ 2501–2515", "La. Admin. Code tit. 46, pt. LXVII, §§ 1901–1911"]
+          - id: "III.B"
+            label: "Sponsoring broker and salesperson relationship; supervision"
+            items: null
+            statute_refs: ["La. R.S. 37:1446", "La. R.S. 37:1441", "La. Admin. Code tit. 46, pt. LXVII, §§ 1801–1805"]
+          - id: "III.C"
+            label: "Compensation, referral fees, and who may be paid"
+            items: null
+            statute_refs: ["La. R.S. 37:1445", "La. R.S. 37:1446", "La. R.S. 37:1447", "La. R.S. 9:3896"]
+          - id: "III.D"
+            label: "Mandated disclosures: property condition, mold, offender, stigma"
+            items: null
+            statute_refs: ["La. R.S. 37:1468", "La. R.S. 37:1469", "La. R.S. 37:1470", "La. Admin. Code tit. 46, pt. LXVII, §§ 3501–3503", "La. Admin. Code tit. 46, pt. LXVII, § 3601", "La. Admin. Code tit. 46, pt. LXVII, § 3801"]
+          - id: "III.E"
+            label: "Self-dealing and conflicts of interest"
+            items: null
+            statute_refs: ["La. R.S. 37:1455", "La. Admin. Code tit. 46, pt. LXVII, §§ 3501–3503"]
+          - id: "III.F"
+            label: "Delivering and retaining transaction documents"
+            items: null
+            statute_refs: ["La. R.S. 37:1449", "La. Admin. Code tit. 46, pt. LXVII, §§ 3900–3909"]
+          - id: "III.G"
+            label: "Escrow and trust funds: deposit, disbursement, disputes"
+            items: null
+            statute_refs: ["La. R.S. 37:1455", "La. Admin. Code tit. 46, pt. LXVII, §§ 2701–2721", "La. Admin. Code tit. 46, pt. LXVII, § 2901"]
+          - id: "III.H"
+            label: "Listing agreements and brokerage contracts"
+            items: null
+            statute_refs: ["La. R.S. 37:1449", "La. R.S. 9:3891", "La. R.S. 9:3896"]
+          - id: "III.I"
+            label: "Presenting offers and counteroffers"
+            items: null
+            statute_refs: ["La. Admin. Code tit. 46, pt. LXVII, §§ 3900–3909", "La. R.S. 37:1455"]
+          - id: "III.J"
+            label: "Principal office and branch office requirements"
+            items: null
+            statute_refs: ["La. R.S. 37:1444", "La. Admin. Code tit. 46, pt. LXVII, § 2301", "La. Admin. Code tit. 46, pt. LXVII, § 2101"]
+          - id: "III.K"
+            label: "Broker record-keeping duties"
+            items: null
+            statute_refs: ["La. R.S. 37:1449", "La. Admin. Code tit. 46, pt. LXVII, § 2719"]
+          - id: "III.L"
+            label: "Residential property management rules"
+            items: null
+            statute_refs: ["La. Admin. Code tit. 46, pt. LXVII, §§ 2601–2609", "La. R.S. 37:1431"]
+      - id: "IV"
+        label: "Louisiana civil-law property, contract, sale, and lease concepts"
+        items: 14
+        items_range: "13-15"
+        subtopics:
+          - id: "IV.A"
+            label: "Classifying things: immovables, movables, legal descriptions"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 448–476", "La. Civ. Code arts. 462–475"]
+          - id: "IV.B"
+            label: "Real rights: ownership, servitudes, usufruct, habitation, use, restrictions"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 477–532", "La. Civ. Code arts. 533–629", "La. Civ. Code arts. 630–645", "La. Civ. Code arts. 646–774", "La. Civ. Code arts. 775–783"]
+          - id: "IV.C"
+            label: "Co-ownership, community and separate property, entities, condominiums"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 797–818", "La. Civ. Code arts. 2334–2369", "La. R.S. 9:1121.101 et seq.", "La. R.S. 37:1437.2"]
+          - id: "IV.D"
+            label: "Non-brokered transfers: donations, successions, expropriation, prescription"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 1467–1567", "La. Civ. Code arts. 871–902", "La. Civ. Code art. 890", "La. R.S. 19:1 et seq.", "La. Civ. Code arts. 3421–3444", "La. Civ. Code arts. 3473–3488"]
+          - id: "IV.E"
+            label: "Obligations and contracts: offers, acceptance, cause, nullity, deposits"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 1906–1917", "La. Civ. Code arts. 1927–1947", "La. Civ. Code arts. 1966–1977", "La. Civ. Code arts. 2029–2035", "La. Civ. Code arts. 1879–1887", "La. Civ. Code art. 2624", "La. Civ. Code art. 1833", "La. Civ. Code arts. 2520–2548", "La. Civ. Code arts. 2589–2600"]
+          - id: "IV.F"
+            label: "Sales: requirements, transfer, price, warranties, bond for deed"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 2439–2464", "La. Civ. Code arts. 2475–2548", "La. R.S. 9:2941–2948"]
+          - id: "IV.G"
+            label: "Privileges, mortgages, foreclosure, usury, property taxes"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 3278–3337", "La. Civ. Code arts. 3182–3277", "La. Code Civ. Proc. arts. 3721–3753", "La. R.S. 9:3500", "La. Const. art. VII, §§ 18–25"]
+          - id: "IV.H"
+            label: "Leases: form, reconduction, eviction, security deposits"
+            items: null
+            statute_refs: ["La. Civ. Code arts. 2668–2729", "La. Civ. Code arts. 2721–2724", "La. Code Civ. Proc. arts. 4701–4735", "La. R.S. 9:3251–3261"]
+      - id: "V"
+        label: "Louisiana agency law: relationships, duties, dual agency"
+        items: 14
+        items_range: "13-15"
+        subtopics:
+          - id: "V.A"
+            label: "Key agency terms: ministerial acts, confidential info, designated and dual agency"
+            items: null
+            statute_refs: ["La. R.S. 9:3891", "La. R.S. 37:1467"]
+          - id: "V.B"
+            label: "Client relationships and duties owed during and after agency"
+            items: null
+            statute_refs: ["La. R.S. 9:3892", "La. R.S. 9:3893", "La. R.S. 9:3895"]
+          - id: "V.C"
+            label: "Duties owed to customers (non-clients)"
+            items: null
+            statute_refs: ["La. R.S. 9:3894", "La. R.S. 9:3898"]
+          - id: "V.D"
+            label: "Dual agency: informed consent, disclosure form, duties"
+            items: null
+            statute_refs: ["La. R.S. 9:3897", "La. Admin. Code tit. 46, pt. LXVII, §§ 3701–3705"]
+          - id: "V.E"
+            label: "Vicarious liability limits for clients and licensees"
+            items: null
+            statute_refs: ["La. R.S. 9:3899"]
+          - id: "V.F"
+            label: "Agency disclosure pamphlet given to customers"
+            items: null
+            statute_refs: ["La. R.S. 37:1467", "La. Admin. Code tit. 46, pt. LXVII, §§ 3701–3705"]
+  broker:
+    scored_items: 55
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission role, powers, enforcement, and sanctions"
+        items: 5
+        items_range: "4-6"
+        subtopics: []
+      - id: "II"
+        label: "Who needs a license; license types, eligibility, renewal"
+        items: 8
+        items_range: "7-9"
+        subtopics: []
+      - id: "III"
+        label: "Statutory rules for licensee conduct and brokerage operations"
+        items: 14
+        items_range: "13-15"
+        subtopics: []
+      - id: "IV"
+        label: "Louisiana civil-law property, contract, sale, and lease concepts"
+        items: 14
+        items_range: "13-15"
+        subtopics: []
+      - id: "V"
+        label: "Louisiana agency law: relationships, duties, dual agency"
+        items: 14
+        items_range: "13-15"
+        subtopics: []
+references:
+  - title: "Louisiana Real Estate License Law, La. R.S. 37:1430–1470 (LREC compilation)"
+    publisher: "Louisiana Real Estate Commission"
+  - title: "Louisiana Law of Agency, La. R.S. 9:3891–3899 (LREC compilation)"
+    publisher: "Louisiana Real Estate Commission"
+  - title: "La. Admin. Code tit. 46, pt. LXVII (Real Estate) — LREC Rules and Regulations"
+    publisher: "Louisiana Office of the State Register"
+notes: "One state outline (55 scored + 5-10 pretest) serves salesperson, broker, and instructor candidates; the broker exam therefore mirrors the salesperson domains (subtopics identical to salesperson, omitted to avoid duplication). Domain counts are published as ranges (4-6, 7-9, 13-15 x3); midpoints 5/8/14/14/14 sum to 55. LAC rule chapter/section citations follow the LII/State Register chapter map (Ch. 3 applications, 5 exams, 7 fees, 9 renewals, 15 transfers, 18 broker responsibilities, 19 teams, 25 advertising, 26 property management, 27 escrow, 29 escrow disbursement, 35-38 disclosures, 39 offers, 41 investigations). The LAC PDF itself (doa.la.gov) is Cloudflare-blocked for scripted and headless fetches, so rule text is NOT in the statute cache; Civil Code articles in domain IV are cited for grounding but also not cached."

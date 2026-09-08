@@ -1,0 +1,189 @@
+id: national_pearsonvue
+vendor: pearsonvue
+title: "Pearson VUE national/general real estate outline (internal blueprint)"
+source_document: "Pearson VUE publication 099913 (National/General Exam Content Outline for Salespersons and Brokers)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/099913.pdf"
+source_version_or_date: "Effective January 2025 or later (PDF is the tracked-changes edition; header also carries a residual 'June 2020' date from the prior version). Counts below are the NEW (post-revision) values."
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; vendor text not reproduced. Labels are our own paraphrases."
+notes: >
+  The published PDF shows tracked changes (old count struck, new count added, e.g. "SALES 11 9").
+  Where a subtopic count is given as a range (e.g. 2 to 3), `items` holds the lower bound and
+  `items_range` the published range. Per-domain cognitive splits are published for every domain;
+  the exam-level totals below are our sums of those (Salesperson K40/A27/An13 = 80; Broker K20/A28/An32 = 80).
+  Pretest items are unscored and indistinguishable from scored items. Domain VIII (math) has no
+  Knowledge-level items in either exam.
+exams:
+  salesperson:
+    scored_items: 80
+    pretest_items: 5
+    cognitive_split:
+      knowledge: 40
+      application: 27
+      analysis: 13
+    domains:
+      - id: "I"
+        label: "Property characteristics, legal descriptions, land use controls"
+        items: 9
+        cognitive: { knowledge: 5, application: 2, analysis: 2 }
+        subtopics:
+          - { id: "I.A", label: "Real vs. personal property; fixtures", items: 2, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.B", label: "Economic and physical characteristics of land", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.C", label: "Legal description methods and surveys", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.D", label: "Government powers, zoning, private restrictions, easements", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+      - id: "II"
+        label: "Ownership forms, estates, title transfer, recording"
+        items: 8
+        cognitive: { knowledge: 4, application: 3, analysis: 1 }
+        subtopics:
+          - { id: "II.A", label: "Ownership forms, freehold/leasehold estates, liens, rights", items: 4, statute_refs: ["REP Ref. Ownership", "Title & Transfer"] }
+          - { id: "II.B", label: "Deeds, alienation, recording, title evidence and insurance", items: 4, statute_refs: ["REP Ref. Ownership", "Title & Transfer"] }
+      - id: "III"
+        label: "Value concepts and appraisal"
+        items: 11
+        cognitive: { knowledge: 5, application: 5, analysis: 1 }
+        subtopics:
+          - { id: "III.A", label: "Value vs. price; value characteristics and principles", items: 4, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.B", label: "Appraisal steps and federal oversight", items: 3, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.C", label: "Three approaches, multipliers, CMA, BPO, assessed value", items: 4, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+      - id: "IV"
+        label: "Contracts and agency"
+        items: 16
+        cognitive: { knowledge: 8, application: 6, analysis: 2 }
+        subtopics:
+          - { id: "IV.A", label: "Contract classifications (express/implied, uni/bilateral)", items: 2, statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.B", label: "Essential elements of a valid contract", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.C", label: "Contract status, breach, remedies, Statute of Frauds, e-signatures", items: 2, items_range: "2-3", statute_refs: ["E-SIGN", "REP Ref. Contracts"] }
+          - { id: "IV.D", label: "Purchase agreements: offers, earnest money, contingencies, options", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.E", label: "Agency types and licensee-client relationships", items: 2, statute_refs: ["REP Ref. Agency"] }
+          - { id: "IV.F", label: "How agency is created and ended", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Agency"] }
+          - { id: "IV.G", label: "Licensee duties to transaction parties", items: 2, statute_refs: ["REP Ref. Agency"] }
+      - id: "V"
+        label: "Brokerage practice, fair housing, risk management"
+        items: 14
+        cognitive: { knowledge: 9, application: 3, analysis: 2 }
+        subtopics:
+          - { id: "V.A", label: "Broker scope of practice; unauthorized practice of law", items: 2, statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "V.B", label: "Listing, buyer, and property management agreements; compensation", items: 4, statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "V.C", label: "Fair housing laws, protected classes, advertising, HUD, ADA", items: 4, statute_refs: ["Fair Housing Act", "Civil Rights Act of 1866", "ADA Title III"] }
+          - { id: "V.D", label: "Supervision, antitrust, fraud, privacy rules, E&O insurance", items: 4, statute_refs: ["Sherman Act § 1", "Sherman Act § 2", "TCPA", "REP Ref. Brokerage Practice"] }
+      - id: "VI"
+        label: "Property condition disclosures and environmental hazards"
+        items: 8
+        cognitive: { knowledge: 5, application: 2, analysis: 1 }
+        subtopics:
+          - { id: "VI.A", label: "Hazardous substances, EPA/CERCLA, site assessments, flood zones", items: 3, items_range: "3-4", statute_refs: ["CERCLA § 9601", "CERCLA § 9607", "Lead paint", "Flood insurance", "REP Ref. Property Condition & Environmental"] }
+          - { id: "VI.B", label: "Disclosure duties and liability for property/environmental conditions", items: 4, items_range: "4-5", statute_refs: ["Lead paint", "REP Ref. Property Condition & Environmental"] }
+      - id: "VII"
+        label: "Financing and settlement"
+        items: 7
+        cognitive: { knowledge: 4, application: 2, analysis: 1 }
+        subtopics:
+          - { id: "VII.A", label: "Financing methods, lien/title theory, loan types, mortgage clauses", items: 2, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "VII.B", label: "FHA/VA/USDA/conventional requirements, LTV, PMI/MIP, insurance", items: 1, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "VII.C", label: "TILA/Reg Z, TRID, RESPA, ECOA, predatory lending", items: 2, statute_refs: ["TILA § 1602", "TILA § 1605", "TILA § 1606", "TILA § 1631", "TILA § 1632", "TILA § 1635", "TILA § 1638", "TILA § 1639", "TILA § 1639h", "TILA § 1640", "TILA § 1664", "RESPA", "ECOA", "REP Ref. Financing & Closing"] }
+          - { id: "VII.D", label: "Closing the transaction", items: 2, statute_refs: ["RESPA", "REP Ref. Financing & Closing"] }
+      - id: "VIII"
+        label: "Real estate math"
+        items: 7
+        cognitive: { knowledge: 0, application: 4, analysis: 3 }
+        subtopics:
+          - { id: "VIII.A", label: "Area: square footage and acreage", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.B", label: "Valuation math: CMA, NOI, cap rate, equity, taxes", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.C", label: "Commission and compensation math", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.D", label: "Loan cost math: interest, LTV, points, amortization", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.E", label: "Closing math: PITI, prorations, debits/credits, net to seller", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.F", label: "Investment math: ROI, appreciation, depreciation, tax effects", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.G", label: "Property management budget and rental math", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+  broker:
+    scored_items: 80
+    pretest_items: 5
+    cognitive_split:
+      knowledge: 20
+      application: 28
+      analysis: 32
+    domains:
+      - id: "I"
+        label: "Property characteristics, legal descriptions, land use controls"
+        items: 9
+        cognitive: { knowledge: 2, application: 3, analysis: 4 }
+        subtopics:
+          - { id: "I.A", label: "Real vs. personal property; fixtures", items: 2, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.B", label: "Economic and physical characteristics of land", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.C", label: "Legal description methods and surveys", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.D", label: "Government powers, zoning, private restrictions, easements", items: 2, items_range: "2-3", statute_refs: ["REP Ref. Property & Land Use"] }
+      - id: "II"
+        label: "Ownership forms, estates, title transfer, recording"
+        items: 8
+        cognitive: { knowledge: 2, application: 3, analysis: 3 }
+        subtopics:
+          - { id: "II.A", label: "Ownership forms, freehold/leasehold estates, liens, rights", items: 4, statute_refs: ["REP Ref. Ownership", "Title & Transfer"] }
+          - { id: "II.B", label: "Deeds, alienation, recording, title evidence and insurance", items: 4, statute_refs: ["REP Ref. Ownership", "Title & Transfer"] }
+      - id: "III"
+        label: "Value concepts and appraisal"
+        items: 10
+        cognitive: { knowledge: 3, application: 3, analysis: 4 }
+        subtopics:
+          - { id: "III.A", label: "Value vs. price; value characteristics and principles", items: 3, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.B", label: "Appraisal steps and federal oversight", items: 3, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.C", label: "Three approaches, multipliers, CMA, BPO, assessed value", items: 4, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+      - id: "IV"
+        label: "Contracts and agency"
+        items: 17
+        cognitive: { knowledge: 3, application: 7, analysis: 7 }
+        subtopics:
+          - { id: "IV.A", label: "Contract classifications (express/implied, uni/bilateral)", items: 2, statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.B", label: "Essential elements of a valid contract", items: 3, statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.C", label: "Contract status, breach, remedies, Statute of Frauds, e-signatures", items: 3, statute_refs: ["E-SIGN", "REP Ref. Contracts"] }
+          - { id: "IV.D", label: "Purchase agreements: offers, earnest money, contingencies, options", items: 4, statute_refs: ["REP Ref. Contracts"] }
+          - { id: "IV.E", label: "Agency types and licensee-client relationships", items: 2, statute_refs: ["REP Ref. Agency"] }
+          - { id: "IV.F", label: "How agency is created and ended", items: 2, statute_refs: ["REP Ref. Agency"] }
+          - { id: "IV.G", label: "Licensee duties to transaction parties", items: 1, statute_refs: ["REP Ref. Agency"] }
+      - id: "V"
+        label: "Brokerage practice, fair housing, risk management"
+        items: 13
+        cognitive: { knowledge: 4, application: 4, analysis: 5 }
+        subtopics:
+          - { id: "V.A", label: "Broker scope of practice; unauthorized practice of law", items: 2, statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "V.B", label: "Listing, buyer, and property management agreements; compensation", items: 3, statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "V.C", label: "Fair housing laws, protected classes, advertising, HUD, ADA", items: 4, statute_refs: ["Fair Housing Act", "Civil Rights Act of 1866", "ADA Title III"] }
+          - { id: "V.D", label: "Supervision, antitrust, fraud, privacy rules, E&O insurance", items: 4, statute_refs: ["Sherman Act § 1", "Sherman Act § 2", "TCPA", "REP Ref. Brokerage Practice"] }
+      - id: "VI"
+        label: "Property condition disclosures and environmental hazards"
+        items: 8
+        cognitive: { knowledge: 3, application: 3, analysis: 2 }
+        subtopics:
+          - { id: "VI.A", label: "Hazardous substances, EPA/CERCLA, site assessments, flood zones", items: 3, items_range: "3-4", statute_refs: ["CERCLA § 9601", "CERCLA § 9607", "Lead paint", "Flood insurance", "REP Ref. Property Condition & Environmental"] }
+          - { id: "VI.B", label: "Disclosure duties and liability for property/environmental conditions", items: 4, items_range: "4-5", statute_refs: ["Lead paint", "REP Ref. Property Condition & Environmental"] }
+      - id: "VII"
+        label: "Financing and settlement"
+        items: 7
+        cognitive: { knowledge: 3, application: 2, analysis: 2 }
+        subtopics:
+          - { id: "VII.A", label: "Financing methods, lien/title theory, loan types, mortgage clauses", items: 2, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "VII.B", label: "FHA/VA/USDA/conventional requirements, LTV, PMI/MIP, insurance", items: 2, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "VII.C", label: "TILA/Reg Z, TRID, RESPA, ECOA, predatory lending", items: 2, statute_refs: ["TILA § 1602", "TILA § 1605", "TILA § 1606", "TILA § 1631", "TILA § 1632", "TILA § 1635", "TILA § 1638", "TILA § 1639", "TILA § 1639h", "TILA § 1640", "TILA § 1664", "RESPA", "ECOA", "REP Ref. Financing & Closing"] }
+          - { id: "VII.D", label: "Closing the transaction", items: 1, statute_refs: ["RESPA", "REP Ref. Financing & Closing"] }
+      - id: "VIII"
+        label: "Real estate math"
+        items: 8
+        cognitive: { knowledge: 0, application: 3, analysis: 5 }
+        subtopics:
+          - { id: "VIII.A", label: "Area: square footage and acreage", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.B", label: "Valuation math: CMA, NOI, cap rate, GRM/GIM, equity, taxes", items: 2, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.C", label: "Commission and compensation math", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.D", label: "Loan cost math: interest, LTV, points, amortization", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.E", label: "Closing math: PITI, prorations, debits/credits, net to seller", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.F", label: "Investment math: ROI, appreciation, depreciation, tax effects", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "VIII.G", label: "Property management budget and rental math", items: 1, statute_refs: ["REP Ref. Real Estate Math"] }
+references:
+  - { title: "Mastering Real Estate Principles", author: "Gerald R. Cortesi", publisher: "Dearborn", edition: "7th" }
+  - { title: "Modern Real Estate Practice", author: "Fillmore W. Galaty, Wellington J. Allaway, Robert C. Kyle, et al.", publisher: "Dearborn", edition: "20th" }
+  - { title: "Principles of Real Estate Practice", author: "Stephen Mettling", publisher: "Performance Programs Company", edition: "6th" }
+  - { title: "Property Management", author: "Robert C. Kyle", publisher: "Dearborn", edition: "10th" }
+  - { title: "Real Estate Finance", author: "J. Keith Baker and John P. Wiedemer", publisher: "OnCourse Learning", edition: "10th" }
+  - { title: "Real Estate Fundamentals", author: "Wade E. Gaddy", publisher: "Dearborn", edition: "10th" }
+  - { title: "Real Estate Law", author: "Charles J. Jacobus", publisher: "OnCourse Learning", edition: "3rd" }
+  - { title: "Real Estate Principles", author: "Charles J. Jacobus", publisher: "OnCourse Learning", edition: null, note: "Listed on the salesperson page only (spelled 'Principal' in source)." }
+  - { title: "Real Estate Law", author: "Elliot Klayman", publisher: "Dearborn", edition: "10th" }
+  - { title: "The Language of Real Estate", author: "John W. Reilly", publisher: "Dearborn", edition: "8th" }

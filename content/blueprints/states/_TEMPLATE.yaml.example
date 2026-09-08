@@ -1,0 +1,40 @@
+# State-portion blueprint template. Copy to <XX>.yaml (id: state_XX). One per jurisdiction — all 51.
+# Source: the state-portion content outline in the official candidate information bulletin
+# (content/states/<XX>.yaml → bulletin_url / exam_outline_url). Labels are OUR paraphrases;
+# never paste vendor or commission outline text (SPEC §3.2). Every subtopic lists the statute /
+# rule sections that ground it — the pipeline drafts ONLY from those sections' cached text.
+id: state_XX
+vendor: pearsonvue            # pearsonvue | psi | state | other — must match content/states/XX.yaml
+title: "<State> state-portion outline (internal blueprint)"
+source_document: "<Vendor> <State> Real Estate Candidate Information Bulletin — state-specific content outline"
+source_url: "https://..."
+source_version_or_date: "..."
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40              # state-portion scored items from the bulletin
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Licensing law, commission powers, and license requirements"
+        items: 8
+        subtopics:
+          - id: "1.1"
+            label: "Commission composition, powers, rulemaking"
+            items: null
+            statute_refs: ["<Citation> § ..."]
+          - id: "1.2"
+            label: "Who must be licensed; exemptions; activities requiring a license"
+            items: null
+            statute_refs: ["<Citation> § ..."]
+      - id: "2"
+        label: "Agency, disclosures, and duties to parties"
+        items: 10
+        subtopics: []
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains: []
+references: []
+notes: null

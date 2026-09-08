@@ -1,0 +1,25 @@
+name: content-ci
+on:
+  push:
+    paths: ["content/**", "packages/**", "apps/**", ".github/workflows/content-ci.yml"]
+  pull_request:
+    paths: ["content/**", "packages/**", "apps/**"]
+jobs:
+  lint-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm test
+      # A failing item cannot merge (SPEC §3.6). Exit code is non-zero on any ERROR.
+      - run: pnpm lint:content
+      # Client: logic tests, type check, and a production build with the real content manifest.
+      - run: pnpm --filter @rep/app content:manifest
+      - run: pnpm --filter @rep/app test
+      - run: pnpm --filter @rep/app typecheck
+      - run: pnpm --filter @rep/app build

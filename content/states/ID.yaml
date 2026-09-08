@@ -1,0 +1,58 @@
+code: ID
+name: Idaho
+regulator:
+  name: "Idaho Real Estate Commission (IREC), Division of Occupational and Professional Licenses (DOPL)"
+  url: "https://dopl.idaho.gov/rec/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exam and also handles fingerprint reservations (https://www.pearsonvue.com/us/en/id/realestate.html)."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "70 (scaled)"
+  pass_score_state: "70 (scaled)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 83
+  retake_policy: "Handbook: 'Candidates who pass one section of the exam and fail the other need to retake only the section they failed, as long as they pass the failed section within one (1) year of the date of the passed section. The exam fee is required each time a candidate tests. A candidate must pass both sections of the exam and submit a completed application for licensure within one (1) year of the date of the first passed exam section. Otherwise, the candidate must retake both sections.' No limit on attempts; must wait 24 hours before making a re-exam reservation; the cost for each retake is the same as the initial exam."
+  calculator_policy: "Handbook: 'Personal calculators are NOT permitted, but an online calculator is available as part of the exam.'"
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "75 (scaled)"
+  pass_score_state: "75 (scaled)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 83
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 90
+statute_citation_root: "Idaho Code tit. 54, ch. 20 (Idaho Real Estate License Law)"
+rules_citation_root: "IDAPA 33.01.01"
+statute_url: "https://legislature.idaho.gov/statutesrules/idstat/Title54/T54CH20/"
+rules_url: "https://dopl.idaho.gov/wp-content/uploads/2025/12/REC-License-Law-and-Rules-Booklet.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091300.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091300.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dopl.idaho.gov/rec/rec-education-applicants/"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://legislature.idaho.gov/statutesrules/idstat/Title54/T54CH20/"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://dopl.idaho.gov/wp-content/uploads/2025/12/REC-License-Law-and-Rules-Booklet.pdf"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook #091300 'July 2024' (rev 11/2025). Time is 4 hours total: General 150 min + State 90 min. Pretest items: 5 unscored items on the national/general portion plus 5-10 on the state portion (not a single published number). Scores are scaled 0-100; 70 passes salesperson, 75 passes broker. State outline effective July 15, 2017; national outlines effective April 1, 2025. Prelicense: salesperson 90 hours (Module 1 45 hrs + Module 2 45 hrs); associate broker minimum 90 hours (Brokerage Management 28 hrs, Real Estate Law 45 hrs, plus electives) per DOPL 'Education > Applicants' (read via Internet Archive copy because dopl.idaho.gov and legislature.idaho.gov refused connections from the research environment). rules_url points to DOPL's official License Law & Rules booklet (IDAPA 33.01.01) because the adminrules.idaho.gov PDF path could not be confirmed."

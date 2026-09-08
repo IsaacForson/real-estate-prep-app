@@ -1,0 +1,69 @@
+code: FL
+name: Florida
+regulator:
+  name: "Florida Real Estate Commission (FREC), Division of Real Estate, Dept. of Business & Professional Regulation (DBPR)"
+  url: "https://www2.myfloridalicense.com/examination-information/candidate-information-booklets/"
+vendor: pearsonvue
+vendor_notes: "DBPR retains Pearson VUE to schedule, administer, score and report computer-based exams; candidates must first be authorized by the Division of Real Estate. All DBPR candidates must test at a physical Pearson VUE test center."
+salesperson_exam:
+  national_items: null
+  state_items: null
+  total_items: 100
+  pretest_items: null
+  time_minutes: 210
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "75 points of 100 (75%)"
+  grading: combined
+  exam_fee_usd: null
+  retake_policy: "The exam is a single 100-item Florida exam (no separately passed national/state portions), so a failing candidate retakes the whole exam. Candidates who fail may review only the questions they answered incorrectly; the review request must be made within 21 days of the exam (CIB, Jan. 2025). Pearson VUE's Florida page adds that a retake within 21 days of an exam review requires a customer-service override. Pearson VUE's older Florida fact sheet (01/2017) states candidates who fail must wait 24 hours to schedule a re-examination."
+  calculator_policy: "CIB: 'Calculators are only permitted at test centers. Calculators must be silent, hand-held, battery-operated, non-programmable'; financial calculators with an alpha button (e.g., HP 12C/17/18/19, TI BA series, Calculated Industries Qualifier Plus) are allowed. Broker CIB adds that online-proctored candidates must use the calculator built into the exam."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: 100
+  pretest_items: null
+  time_minutes: 210
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "75 points of 100 (75%)"
+  grading: combined
+  exam_fee_usd: null
+prelicense_hours_salesperson: 63
+prelicense_hours_broker: 72
+statute_citation_root: "Fla. Stat. ch. 475, pt. I"
+rules_citation_root: "Fla. Admin. Code ch. 61J2"
+statute_url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0475/0475.html"
+rules_url: "https://www.flrules.org/gateway/Division.asp?DivID=283"
+bulletin_url: "https://www2.myfloridalicense.com/servop/testing/documents/RE_sales_cibs.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://www2.myfloridalicense.com/servop/testing/documents/RE_sales_cibs.pdf"
+    used_for: [vendor, salesperson_exam, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www2.myfloridalicense.com/servop/testing/documents/RE_broker_cib.pdf"
+    used_for: [broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www2.myfloridalicense.com/examination-information/candidate-information-booklets/"
+    used_for: [bulletin_url, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/fl/realestate.html"
+    used_for: [vendor, salesperson_exam]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091001.pdf"
+    used_for: [salesperson_exam]
+    accessed: 2026-09-08
+  - url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0475/Sections/0475.17.html"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker, statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.flrules.org/gateway/Division.asp?DivID=283"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.exam_fee_usd
+  - broker_exam.exam_fee_usd
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+confidence: medium
+last_verified: 2026-09-08
+notes: "Florida's sales associate exam is NOT split into national/state portions: 100 items across 19 content areas (approx. 45% law, 45% principles/practices, 10% math per CIB percentages) graded as one score, 75 to pass. The current CIB (Sales Associate 'Effective January 2025'; Broker 'Effective March 2024') says exam fees increased Jan 3, 2023 and points to a DBPR fee schedule that could not be retrieved (the DBPR site sits behind a Cloudflare challenge; the CIBs were read via the Internet Archive copy of the official URLs). Pearson VUE's 2017 fact sheet lists $36.75 for sales and broker, but that predates the 2023 increase, so the fee is left null. Pilot/pretest items may be included, are unscored, and extra time is allotted; the count is not published. Prelicense hours (63 sales / 72 broker) come from Fla. Stat. s. 475.17(2)(a)."

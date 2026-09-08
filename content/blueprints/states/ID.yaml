@@ -1,0 +1,216 @@
+# Idaho state-portion blueprint. Structure and weights from the Pearson VUE Idaho Real Estate
+# Candidate Handbook (#091300), "Idaho State Exam Content Outline for Salesperson and Broker
+# Examinations" (effective July 15, 2017). Labels are our own paraphrases; outline text is not
+# reproduced (SPEC §3.2). Item counts are our rounding of the published percentages onto the
+# scored item counts (40 salesperson / 50 broker).
+id: state_ID
+vendor: pearsonvue
+title: "Idaho state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Idaho Real Estate Candidate Handbook #091300 — Idaho State Exam Content Outline for Salesperson and Broker Examinations"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091300.pdf"
+source_version_or_date: "Handbook July 2024 (rev. 11/2025); state outline effective July 15, 2017"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and sanctions"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "I.A"
+            label: "Commission composition and general powers"
+            items: null
+            statute_refs: ["Idaho Code § 54-2005", "Idaho Code § 54-2006", "Idaho Code § 54-2007", "Idaho Code § 54-2008", "Idaho Code § 54-2097"]
+          - id: "I.B"
+            label: "Investigations, audits, hearings, appeals"
+            items: null
+            statute_refs: ["Idaho Code § 54-2058", "Idaho Code § 54-2063", "Idaho Code § 54-2064", "Idaho Code § 54-2068", "Idaho Code § 54-2080"]
+          - id: "I.C"
+            label: "Sanctions: fines, suspension, revocation"
+            items: null
+            statute_refs: ["Idaho Code § 54-2059", "Idaho Code § 54-2060", "Idaho Code § 54-2061", "Idaho Code § 54-2062", "Idaho Code § 54-2065", "Idaho Code § 54-2066", "Idaho Code § 54-2067", "Idaho Code § 54-2078", "Idaho Code § 54-2079"]
+      - id: "II"
+        label: "Licensing requirements, renewal, status changes, education"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license; exceptions"
+            items: null
+            statute_refs: ["Idaho Code § 54-2002", "Idaho Code § 54-2003", "Idaho Code § 54-2004", "Idaho Code § 54-2011", "Idaho Code § 54-2065"]
+          - id: "II.B"
+            label: "Eligibility, exams, out-of-state licensees, business entity licenses"
+            items: null
+            statute_refs: ["Idaho Code § 54-2012", "Idaho Code § 54-2013", "Idaho Code § 54-2014", "Idaho Code § 54-2015", "Idaho Code § 54-2016", "Idaho Code § 54-2017", "Idaho Code § 54-2019", "Idaho Code § 54-2020"]
+          - id: "II.C"
+            label: "Renewal, inactive status, and personal changes"
+            items: null
+            statute_refs: ["Idaho Code § 54-2018", "Idaho Code § 54-2020", "Idaho Code § 54-2056"]
+          - id: "II.D"
+            label: "Prelicense and continuing education"
+            items: null
+            statute_refs: ["Idaho Code § 54-2022", "Idaho Code § 54-2023", "Idaho Code § 54-2024", "Idaho Code § 54-2036"]
+      - id: "III"
+        label: "License law and commission rules on practice"
+        items: 16
+        weight_pct: 40
+        subtopics:
+          - id: "III.A"
+            label: "Advertising and use of business name"
+            items: null
+            statute_refs: ["Idaho Code § 54-2053", "Idaho Code § 54-2016", "Idaho Code § 54-2060", "Idaho Code § 54-2055"]
+          - id: "III.B"
+            label: "Broker-salesperson relationship and designated broker duties"
+            items: null
+            statute_refs: ["Idaho Code § 54-2038", "Idaho Code § 54-2039", "Idaho Code § 54-2048", "Idaho Code § 54-2056", "Idaho Code § 54-2057"]
+          - id: "III.C"
+            label: "Commissions, fees, and prohibited compensation"
+            items: null
+            statute_refs: ["Idaho Code § 54-2054", "Idaho Code § 54-2089", "Idaho Code § 54-2060"]
+          - id: "III.D"
+            label: "Document handling and record keeping"
+            items: null
+            statute_refs: ["Idaho Code § 54-2048", "Idaho Code § 54-2049", "Idaho Code § 54-2044", "Idaho Code § 54-2052"]
+          - id: "III.E"
+            label: "Handling money and other consideration"
+            items: null
+            statute_refs: ["Idaho Code § 54-2045", "Idaho Code § 54-2046", "Idaho Code § 54-2047", "Idaho Code § 54-2041"]
+          - id: "III.F"
+            label: "Trust accounts"
+            items: null
+            statute_refs: ["Idaho Code § 54-2041", "Idaho Code § 54-2042", "Idaho Code § 54-2043", "Idaho Code § 54-2044", "Idaho Code § 54-2045", "Idaho Code § 54-2046", "Idaho Code § 54-2047"]
+          - id: "III.G"
+            label: "Offers, counteroffers, and acceptance"
+            items: null
+            statute_refs: ["Idaho Code § 54-2051", "Idaho Code § 54-2050", "Idaho Code § 54-2052", "Idaho Code § 54-2048"]
+          - id: "III.H"
+            label: "Office operations and business practices"
+            items: null
+            statute_refs: ["Idaho Code § 54-2040", "Idaho Code § 54-2039", "Idaho Code § 54-2016", "Idaho Code § 54-2038"]
+          - id: "III.I"
+            label: "Prohibited conduct"
+            items: null
+            statute_refs: ["Idaho Code § 54-2060", "Idaho Code § 54-2054", "Idaho Code § 54-2055", "Idaho Code § 54-2061", "Idaho Code § 54-2062"]
+      - id: "IV"
+        label: "Brokerage representation (agency law)"
+        items: 10
+        weight_pct: 25
+        subtopics:
+          - id: "IV.A"
+            label: "Agency contracts and required elements"
+            items: null
+            statute_refs: ["Idaho Code § 54-2050", "Idaho Code § 54-2084", "Idaho Code § 54-2085", "Idaho Code § 54-2083"]
+          - id: "IV.B"
+            label: "Types of representation: customer, client, limited dual, assigned agency"
+            items: null
+            statute_refs: ["Idaho Code § 54-2083", "Idaho Code § 54-2084", "Idaho Code § 54-2088", "Idaho Code § 54-2094"]
+          - id: "IV.C"
+            label: "Duties owed to customers and clients"
+            items: null
+            statute_refs: ["Idaho Code § 54-2086", "Idaho Code § 54-2087", "Idaho Code § 54-2093", "Idaho Code § 54-2094"]
+          - id: "IV.D"
+            label: "Termination of agency and post-termination duties"
+            items: null
+            statute_refs: ["Idaho Code § 54-2091", "Idaho Code § 54-2092", "Idaho Code § 54-2089"]
+          - id: "IV.E"
+            label: "Limits of confidentiality"
+            items: null
+            statute_refs: ["Idaho Code § 54-2087", "Idaho Code § 54-2088", "Idaho Code § 54-2092", "Idaho Code § 54-2083"]
+          - id: "IV.F"
+            label: "Disclosing agency relationships: brochure and representation confirmation"
+            items: null
+            statute_refs: ["Idaho Code § 54-2085", "Idaho Code § 54-2088", "Idaho Code § 54-2051"]
+      - id: "V"
+        label: "Calculations and closing costs"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "V.1"
+            label: "Transaction math and closing cost computations under Idaho practice"
+            items: null
+            statute_refs: ["Idaho Code § 54-2048", "Idaho Code § 54-2046", "Idaho Code § 54-2054", "Idaho Code § 63-602G"]
+      - id: "VI"
+        label: "Idaho principles and practices"
+        items: 6
+        weight_pct: 15
+        subtopics:
+          - id: "VI.A"
+            label: "Financing; trust deeds, notes, mortgages, contracts for deed; foreclosure"
+            items: null
+            statute_refs: ["Idaho Code § 45-1502", "Idaho Code § 45-1505", "Idaho Code § 45-1506", "Idaho Code § 45-1512", "Idaho Code § 6-101", "Idaho Code § 45-901", "Idaho Code § 54-2054"]
+          - id: "VI.B"
+            label: "Ownership, possession, and community property"
+            items: null
+            statute_refs: ["Idaho Code § 32-906", "Idaho Code § 32-912", "Idaho Code § 55-104", "Idaho Code § 55-508", "Idaho Code § 55-1001"]
+          - id: "VI.C"
+            label: "Valuation, property taxes, assessed value, homeowner's exemption"
+            items: null
+            statute_refs: ["Idaho Code § 63-602G", "Idaho Code § 63-201", "Idaho Code § 63-205", "Idaho Code § 54-2038"]
+          - id: "VI.D"
+            label: "Recording; manufactured housing; water rights"
+            items: null
+            statute_refs: ["Idaho Code § 55-801", "Idaho Code § 55-811", "Idaho Code § 55-812", "Idaho Code § 63-304", "Idaho Code § 42-101", "Idaho Code § 42-248", "Idaho Code § 54-2004"]
+          - id: "VI.E"
+            label: "Land use controls: zoning and subdivision"
+            items: null
+            statute_refs: ["Idaho Code § 67-6502", "Idaho Code § 67-6511", "Idaho Code § 67-6513", "Idaho Code § 50-1301", "Idaho Code § 50-1306"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10 unscored pretest items"
+    domains:
+      - id: "I"
+        label: "Commission powers, investigations, and sanctions"
+        items: 2
+        weight_pct: 4
+        subtopics: []
+      - id: "II"
+        label: "Licensing requirements, renewal, status changes, education"
+        items: 2
+        weight_pct: 4
+        subtopics: []
+      - id: "III"
+        label: "License law and commission rules on practice"
+        items: 15
+        weight_pct: 30
+        subtopics: []
+      - id: "IV"
+        label: "Brokerage representation (agency law)"
+        items: 10
+        weight_pct: 20
+        subtopics: []
+      - id: "V"
+        label: "Calculations and closing costs"
+        items: 5
+        weight_pct: 10
+        subtopics: []
+      - id: "VI"
+        label: "Idaho principles and practices"
+        items: 6
+        weight_pct: 12
+        subtopics: []
+      - id: "VII"
+        label: "Brokerage management (broker only)"
+        items: 10
+        weight_pct: 20
+        subtopics:
+          - id: "VII.A"
+            label: "Broker supervision"
+            items: null
+            broker_only: true
+            statute_refs: ["Idaho Code § 54-2038", "Idaho Code § 54-2039", "Idaho Code § 54-2048", "Idaho Code § 54-2079"]
+          - id: "VII.B"
+            label: "Maintaining a brokerage license"
+            items: null
+            broker_only: true
+            statute_refs: ["Idaho Code § 54-2016", "Idaho Code § 54-2018", "Idaho Code § 54-2057", "Idaho Code § 54-2013"]
+          - id: "VII.C"
+            label: "Brokerage operations"
+            items: null
+            broker_only: true
+            statute_refs: ["Idaho Code § 54-2040", "Idaho Code § 54-2041", "Idaho Code § 54-2044", "Idaho Code § 54-2049", "Idaho Code § 54-2053"]
+references: []
+notes: "Pearson VUE publishes weights, not counts, for the Idaho state portion: salesperson 5/10/40/25/5/15 % on 40 items -> 2/4/16/10/2/6 (sum 40); broker 4/4/30/20/10/12/20 % on 50 items -> 2/2/15/10/5/6/10 (sum 50). Domain VII is broker-only. Idaho Code sections 54-2001 to 54-2097 (Idaho Real Estate License Law, incl. the Brokerage Representation Act 54-2082 et seq.) are cached one file per section from official legislature.idaho.gov pages read via Internet Archive 2025 captures (legislature.idaho.gov and dopl.idaho.gov refuse connections from this environment; the DOPL License Law & Rules booklet PDF has no archived copy). IDAPA 33.01.01 (commission rules) is not yet cached; the outline's rule-based topics are grounded here in the statute sections that authorize them. Domain VI general-topic refs point to Idaho Code titles 6, 32, 42, 45, 50, 55, 63 and 67, not yet cached."

@@ -1,0 +1,357 @@
+# California blueprint. California gives ONE 150-item salesperson exam (200 for brokers) with no separate
+# national/state split, so this blueprint covers the whole exam (README: scored_items = total_items).
+# Source: DRE "Salesperson Examination Content" and "Broker Examination Content" pages, which publish
+# seven topic areas with approximate percentage weights and unweighted subtopic lists. Labels are OUR
+# paraphrases (SPEC §3.2). Domain ids are ours ("1"-"7", in DRE's order); DRE does not number them.
+id: state_CA
+vendor: state
+title: "California salesperson/broker exam outline (internal blueprint)"
+source_document: "California DRE — Salesperson Examination Content (SalesExamContent.html) and Broker Examination Content (BrokerExamContent.html)"
+source_url: "https://www.dre.ca.gov/examinees/SalesExamContent.html"
+source_version_or_date: "DRE examinee pages as published September 2026 (undated; DRE revises topic lists periodically)"
+accessed: 2026-09-08
+copyright_note: "Structure and weights recorded for internal blueprint use; DRE topic wording not reproduced. Labels are our own paraphrases."
+notes: >
+  DRE publishes only approximate percentages (15/17/14/9/8/25/12) and identical topic lists for both
+  exams; `weight_pct` holds the published weight and `items` is our largest-remainder rounding onto 150
+  (salesperson: 22/26/21/13/12/38/18; the two .5 remainders were resolved toward the two largest domains)
+  and 200 (broker: 30/34/28/18/16/50/24, exact). Subtopic counts are not published. Passing: 70%
+  salesperson, 75% broker. Statute refs: Real Estate Law (Cal. Bus. & Prof. Code §§ 10000-10580,
+  cached by chapter from leginfo) and Regulations of the Real Estate Commissioner (Cal. Code Regs.
+  tit. 10, § 2705 et seq., cached from DRE's compilation); Civil Code and other codes cited but not cached.
+exams:
+  salesperson:
+    scored_items: 150
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Property ownership and land-use controls"
+        items: 22
+        weight_pct: 15
+        subtopics:
+          - id: "1.1"
+            label: "Real vs. personal property; fixtures; property characteristics"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 658", "Cal. Civ. Code § 660", "Cal. Civ. Code § 663", "Cal. Civ. Code § 1013"]
+          - id: "1.2"
+            label: "Encumbrances: liens, easements, encroachments"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 801", "Cal. Civ. Code § 2872", "Cal. Civ. Code § 8000", "Cal. Civ. Code § 8400"]
+          - id: "1.3"
+            label: "Forms of ownership and vesting"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 682", "Cal. Civ. Code § 683", "Cal. Civ. Code § 685", "Cal. Civ. Code § 686", "Cal. Fam. Code § 760"]
+          - id: "1.4"
+            label: "Legal descriptions and the Subdivision Map Act"
+            items: null
+            statute_refs: ["Cal. Gov. Code § 66410", "Cal. Gov. Code § 66424", "Cal. Bus. & Prof. Code § 11000"]
+          - id: "1.5"
+            label: "Government powers: police power, eminent domain, taxation, escheat"
+            items: null
+            statute_refs: ["Cal. Code Civ. Proc. § 1230.010", "Cal. Gov. Code § 65000", "Cal. Rev. & Tax. Code § 110", "Cal. Const. art. XIII A"]
+          - id: "1.6"
+            label: "Public controls: zoning, planning, subdivided lands law, environmental review"
+            items: null
+            statute_refs: ["Cal. Gov. Code § 65800", "Cal. Bus. & Prof. Code § 11000", "Cal. Bus. & Prof. Code § 11018", "Cal. Pub. Res. Code § 21000"]
+          - id: "1.7"
+            label: "Environmental hazards and hazard-zone regulation"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1103", "Cal. Civ. Code § 1103.2", "Cal. Health & Safety Code § 25359.7", "Cal. Gov. Code § 8589.3"]
+          - id: "1.8"
+            label: "Private controls: CC&Rs and common-interest developments"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 4000", "Cal. Civ. Code § 4250", "Cal. Civ. Code § 4525", "Cal. Civ. Code § 5300"]
+          - id: "1.9"
+            label: "Water rights"
+            items: null
+            statute_refs: ["Cal. Water Code § 100", "Cal. Water Code § 101", "Cal. Water Code § 1200"]
+          - id: "1.10"
+            label: "Special land categories: mobilehomes, agricultural, coastal, timeshare"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 798", "Cal. Bus. & Prof. Code § 10131.6", "Cal. Bus. & Prof. Code § 11210", "Cal. Gov. Code § 51200"]
+      - id: "2"
+        label: "Agency law and fiduciary duties"
+        items: 26
+        weight_pct: 17
+        subtopics:
+          - id: "2.1"
+            label: "Nature of agency; types of agents and agencies"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2295", "Cal. Civ. Code § 2297", "Cal. Civ. Code § 2079.13", "Cal. Bus. & Prof. Code § 10131"]
+          - id: "2.2"
+            label: "Creating agency; listing and buyer-broker agreements"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2307", "Cal. Civ. Code § 1624", "Cal. Civ. Code § 1670.50", "Cal. Bus. & Prof. Code § 10147.5"]
+          - id: "2.3"
+            label: "Fiduciary duties owed to the principal"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2079.16", "Cal. Civ. Code § 2322", "Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177"]
+          - id: "2.4"
+            label: "Agency relationship disclosure and confirmation"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2079.14", "Cal. Civ. Code § 2079.16", "Cal. Civ. Code § 2079.17", "Cal. Civ. Code § 2079.21"]
+          - id: "2.5"
+            label: "Disclosing when the licensee is a principal or has an interest"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177", "Cal. Civ. Code § 2079.16", "Cal. Code Regs. tit. 10, § 2726"]
+          - id: "2.6"
+            label: "Terminating agency"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2355", "Cal. Civ. Code § 2356", "Cal. Bus. & Prof. Code § 10176"]
+          - id: "2.7"
+            label: "Commissions, fees, and compensation rules"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10137", "Cal. Bus. & Prof. Code § 10138", "Cal. Bus. & Prof. Code § 10147.5", "Cal. Bus. & Prof. Code § 10136", "Cal. Civ. Code § 1670.50"]
+          - id: "2.8"
+            label: "Duties to non-client third parties"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2079", "Cal. Civ. Code § 2079.2", "Cal. Civ. Code § 2079.3", "Cal. Civ. Code § 1710.2", "Cal. Bus. & Prof. Code § 10176"]
+      - id: "3"
+        label: "Valuation and financial analysis"
+        items: 21
+        weight_pct: 14
+        subtopics:
+          - id: "3.1"
+            label: "Value concepts and principles"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 11302", "Cal. Rev. & Tax. Code § 110"]
+          - id: "3.2"
+            label: "Approaches to estimating value; appraiser licensing; BPO/CMA by licensees"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 11302", "Cal. Bus. & Prof. Code § 11319", "Cal. Bus. & Prof. Code § 11320", "Cal. Code Regs. tit. 10, § 2785"]
+          - id: "3.3"
+            label: "Investment and financial analysis"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10131", "Cal. Rev. & Tax. Code § 17041"]
+      - id: "4"
+        label: "Financing"
+        items: 13
+        weight_pct: 9
+        subtopics:
+          - id: "4.1"
+            label: "Financing concepts, loan types, sources, government programs"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2920", "Cal. Civ. Code § 2924", "Cal. Fin. Code § 50003", "Cal. Bus. & Prof. Code § 10240"]
+          - id: "4.2"
+            label: "Mortgages, deeds of trust, notes, foreclosure"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2924", "Cal. Civ. Code § 2924c", "Cal. Civ. Code § 2924f", "Cal. Code Civ. Proc. § 580b", "Cal. Code Civ. Proc. § 580d", "Cal. Civ. Code § 2956"]
+          - id: "4.3"
+            label: "Financing and credit laws"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2956", "Cal. Civ. Code § 2957", "Cal. Bus. & Prof. Code § 10240", "Cal. Bus. & Prof. Code § 10241", "Cal. Bus. & Prof. Code § 10242", "15 U.S.C. §§ 1601-1667f (TILA)", "12 U.S.C. §§ 2601-2617 (RESPA)"]
+          - id: "4.4"
+            label: "Loan brokerage and mortgage loan originators"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10131", "Cal. Bus. & Prof. Code § 10166.01", "Cal. Bus. & Prof. Code § 10166.02", "Cal. Bus. & Prof. Code § 10232", "Cal. Bus. & Prof. Code § 10232.4", "Cal. Code Regs. tit. 10, § 2756"]
+      - id: "5"
+        label: "Transfer of property"
+        items: 12
+        weight_pct: 8
+        subtopics:
+          - id: "5.1"
+            label: "Title insurance"
+            items: null
+            statute_refs: ["Cal. Ins. Code § 12340.1", "Cal. Ins. Code § 12340.2", "Cal. Ins. Code § 12340.11"]
+          - id: "5.2"
+            label: "Deeds, delivery, acknowledgment, recording"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1091", "Cal. Civ. Code § 1092", "Cal. Civ. Code § 1113", "Cal. Civ. Code § 1213", "Cal. Civ. Code § 1214", "Cal. Gov. Code § 27280"]
+          - id: "5.3"
+            label: "Escrow process and escrow agents"
+            items: null
+            statute_refs: ["Cal. Fin. Code § 17003", "Cal. Fin. Code § 17006", "Cal. Bus. & Prof. Code § 10131", "Cal. Civ. Code § 1057"]
+          - id: "5.4"
+            label: "Tax aspects: transfer tax, reassessment, withholding, exclusions"
+            items: null
+            statute_refs: ["Cal. Rev. & Tax. Code § 11911", "Cal. Rev. & Tax. Code § 60", "Cal. Rev. & Tax. Code § 63.1", "Cal. Rev. & Tax. Code § 18662", "Cal. Const. art. XIII A", "26 U.S.C. § 121"]
+          - id: "5.5"
+            label: "Special processes and court-supervised transfers; vesting"
+            items: null
+            statute_refs: ["Cal. Prob. Code § 10300", "Cal. Prob. Code § 10308", "Cal. Code Civ. Proc. § 701.510", "Cal. Civ. Code § 682"]
+      - id: "6"
+        label: "Practice of real estate and mandated disclosures"
+        items: 38
+        weight_pct: 25
+        subtopics:
+          - id: "6.1"
+            label: "Trust fund handling and trust accounts"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10145", "Cal. Bus. & Prof. Code § 10146", "Cal. Code Regs. tit. 10, § 2830", "Cal. Code Regs. tit. 10, § 2831", "Cal. Code Regs. tit. 10, § 2831.1", "Cal. Code Regs. tit. 10, § 2831.2", "Cal. Code Regs. tit. 10, § 2832", "Cal. Code Regs. tit. 10, § 2832.1", "Cal. Code Regs. tit. 10, § 2834", "Cal. Code Regs. tit. 10, § 2835"]
+          - id: "6.2"
+            label: "Fair housing laws and discriminatory conduct"
+            items: null
+            statute_refs: ["Cal. Gov. Code § 12955", "Cal. Civ. Code § 51", "Cal. Civ. Code § 53", "Cal. Bus. & Prof. Code § 10177", "Cal. Code Regs. tit. 10, § 2780", "Cal. Code Regs. tit. 10, § 2781"]
+          - id: "6.3"
+            label: "Truthful advertising and license identification"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10140", "Cal. Bus. & Prof. Code § 10140.5", "Cal. Bus. & Prof. Code § 10140.6", "Cal. Bus. & Prof. Code § 10235", "Cal. Code Regs. tit. 10, § 2770", "Cal. Code Regs. tit. 10, § 2770.1", "Cal. Code Regs. tit. 10, § 2773"]
+          - id: "6.4"
+            label: "Record keeping requirements"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10148", "Cal. Code Regs. tit. 10, § 2729", "Cal. Code Regs. tit. 10, § 2729.5"]
+          - id: "6.5"
+            label: "Broker supervision of salespersons and offices"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10159.2", "Cal. Bus. & Prof. Code § 10164", "Cal. Bus. & Prof. Code § 10165", "Cal. Code Regs. tit. 10, § 2724", "Cal. Code Regs. tit. 10, § 2725", "Cal. Code Regs. tit. 10, § 2726", "Cal. Code Regs. tit. 10, § 2743"]
+          - id: "6.6"
+            label: "What unlicensed assistants may do"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10131", "Cal. Bus. & Prof. Code § 10133", "Cal. Bus. & Prof. Code § 10137", "Cal. Code Regs. tit. 10, § 2725"]
+          - id: "6.7"
+            label: "DRE jurisdiction and disciplinary process"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10050", "Cal. Bus. & Prof. Code § 10071", "Cal. Bus. & Prof. Code § 10080", "Cal. Bus. & Prof. Code § 10175", "Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177", "Cal. Bus. & Prof. Code § 10177.5", "Cal. Bus. & Prof. Code § 10178", "Cal. Bus. & Prof. Code § 10179", "Cal. Bus. & Prof. Code § 10185", "Cal. Bus. & Prof. Code § 10186.2"]
+          - id: "6.8"
+            label: "Licensing, renewal, and continuing education"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10150", "Cal. Bus. & Prof. Code § 10151", "Cal. Bus. & Prof. Code § 10153", "Cal. Bus. & Prof. Code § 10153.2", "Cal. Bus. & Prof. Code § 10153.4", "Cal. Bus. & Prof. Code § 10156.2", "Cal. Bus. & Prof. Code § 10170", "Cal. Bus. & Prof. Code § 10170.5", "Cal. Bus. & Prof. Code § 10171", "Cal. Code Regs. tit. 10, § 2758.7", "Cal. Code Regs. tit. 10, § 3005", "Cal. Code Regs. tit. 10, § 3006"]
+          - id: "6.9"
+            label: "Real Estate Recovery Account"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10470", "Cal. Bus. & Prof. Code § 10471", "Cal. Bus. & Prof. Code § 10474", "Cal. Bus. & Prof. Code § 10475", "Cal. Bus. & Prof. Code § 10481"]
+          - id: "6.10"
+            label: "Ethics, technology, and electronic records"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177", "Cal. Civ. Code § 1633.7", "Cal. Code Regs. tit. 10, § 2713", "Cal. Code Regs. tit. 10, § 2770"]
+          - id: "6.11"
+            label: "Property management and landlord-tenant basics"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10131", "Cal. Civ. Code § 1940", "Cal. Civ. Code § 1946.2", "Cal. Civ. Code § 1950.5", "Cal. Civ. Code § 1954"]
+          - id: "6.12"
+            label: "Commercial, industrial, income property and specialty practice"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10131", "Cal. Bus. & Prof. Code § 10131.6", "Cal. Bus. & Prof. Code § 10167", "Cal. Bus. & Prof. Code § 10167.2"]
+          - id: "6.13"
+            label: "Transfer Disclosure Statement"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1102", "Cal. Civ. Code § 1102.2", "Cal. Civ. Code § 1102.3", "Cal. Civ. Code § 1102.6", "Cal. Civ. Code § 1102.13"]
+          - id: "6.14"
+            label: "Natural Hazard Disclosure Statement"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1103", "Cal. Civ. Code § 1103.2", "Cal. Civ. Code § 1103.4", "Cal. Gov. Code § 8589.3", "Cal. Pub. Res. Code § 2621.9"]
+          - id: "6.15"
+            label: "Material facts, inspections, and verifying information"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2079", "Cal. Civ. Code § 2079.3", "Cal. Civ. Code § 2079.5", "Cal. Civ. Code § 1710.2", "Cal. Bus. & Prof. Code § 10176"]
+          - id: "6.16"
+            label: "Required reports and notices (smoke/CO detectors, water heaters, Mello-Roos, lead)"
+            items: null
+            statute_refs: ["Cal. Health & Safety Code § 13113.8", "Cal. Health & Safety Code § 17926", "Cal. Health & Safety Code § 19211", "Cal. Civ. Code § 1102.6b", "42 U.S.C. §§ 4851-4856 (Lead paint)"]
+          - id: "6.17"
+            label: "Serving diverse populations; implicit bias"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10170.5", "Cal. Gov. Code § 12955", "Cal. Civ. Code § 51"]
+      - id: "7"
+        label: "Contracts"
+        items: 18
+        weight_pct: 12
+        subtopics:
+          - id: "7.1"
+            label: "Contract essentials, performance, and statute of frauds"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1550", "Cal. Civ. Code § 1556", "Cal. Civ. Code § 1565", "Cal. Civ. Code § 1624", "Cal. Civ. Code § 1689"]
+          - id: "7.2"
+            label: "Listing agreements"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1086", "Cal. Civ. Code § 1087", "Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10147.5"]
+          - id: "7.3"
+            label: "Buyer-broker representation agreements"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1670.50", "Cal. Bus. & Prof. Code § 10147.5", "Cal. Civ. Code § 2079.13"]
+          - id: "7.4"
+            label: "Offers, purchase agreements, deposits, contingencies"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1624", "Cal. Civ. Code § 1675", "Cal. Civ. Code § 1677", "Cal. Bus. & Prof. Code § 10141", "Cal. Bus. & Prof. Code § 10142", "Cal. Bus. & Prof. Code § 10145"]
+          - id: "7.5"
+            label: "Leases and other agreements"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1940", "Cal. Civ. Code § 1945", "Cal. Civ. Code § 1946", "Cal. Civ. Code § 1624"]
+          - id: "7.6"
+            label: "Promissory notes and real property securities"
+            items: null
+            statute_refs: ["Cal. Com. Code § 3104", "Cal. Bus. & Prof. Code § 10237", "Cal. Bus. & Prof. Code § 10238", "Cal. Civ. Code § 2985"]
+          - id: "7.7"
+            label: "Options and lease-options"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1624", "Cal. Bus. & Prof. Code § 10131", "Cal. Civ. Code § 2985"]
+          - id: "7.8"
+            label: "Advance fee agreements"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10026", "Cal. Bus. & Prof. Code § 10085", "Cal. Bus. & Prof. Code § 10146", "Cal. Code Regs. tit. 10, § 2970", "Cal. Code Regs. tit. 10, § 2972"]
+  broker:
+    scored_items: 200
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Property ownership and land-use controls"
+        items: 30
+        weight_pct: 15
+        subtopics:
+          - id: "1.1"
+            label: "Property classes, encumbrances, ownership, descriptions, controls, hazards, water, special land"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 658", "Cal. Civ. Code § 682", "Cal. Civ. Code § 801", "Cal. Civ. Code § 1103", "Cal. Civ. Code § 4000", "Cal. Gov. Code § 66410", "Cal. Bus. & Prof. Code § 11000", "Cal. Bus. & Prof. Code § 11018", "Cal. Water Code § 100"]
+      - id: "2"
+        label: "Agency law and fiduciary duties"
+        items: 34
+        weight_pct: 17
+        subtopics:
+          - id: "2.1"
+            label: "Agency creation, duties, disclosure, termination, compensation, third parties"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2079", "Cal. Civ. Code § 2079.13", "Cal. Civ. Code § 2079.14", "Cal. Civ. Code § 2079.16", "Cal. Civ. Code § 2079.17", "Cal. Civ. Code § 2295", "Cal. Civ. Code § 2355", "Cal. Civ. Code § 1670.50", "Cal. Bus. & Prof. Code § 10137", "Cal. Bus. & Prof. Code § 10147.5", "Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177"]
+      - id: "3"
+        label: "Valuation and market analysis"
+        items: 28
+        weight_pct: 14
+        subtopics:
+          - id: "3.1"
+            label: "Value, appraisal methods, BPO/CMA, financial analysis"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 11302", "Cal. Bus. & Prof. Code § 11319", "Cal. Rev. & Tax. Code § 110"]
+      - id: "4"
+        label: "Financing"
+        items: 18
+        weight_pct: 9
+        subtopics:
+          - id: "4.1"
+            label: "Loans, instruments, credit laws, loan brokerage, MLO endorsement"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 2924", "Cal. Civ. Code § 2956", "Cal. Bus. & Prof. Code § 10166.01", "Cal. Bus. & Prof. Code § 10232", "Cal. Bus. & Prof. Code § 10240", "Cal. Bus. & Prof. Code § 10241", "Cal. Bus. & Prof. Code § 10242", "Cal. Bus. & Prof. Code § 10248", "Cal. Code Civ. Proc. § 580b"]
+      - id: "5"
+        label: "Transfer of property"
+        items: 16
+        weight_pct: 8
+        subtopics:
+          - id: "5.1"
+            label: "Title insurance, deeds, escrow, taxes, court-supervised transfers, vesting"
+            items: null
+            statute_refs: ["Cal. Ins. Code § 12340.1", "Cal. Civ. Code § 1091", "Cal. Civ. Code § 1213", "Cal. Fin. Code § 17003", "Cal. Rev. & Tax. Code § 11911", "Cal. Rev. & Tax. Code § 18662", "Cal. Prob. Code § 10300"]
+      - id: "6"
+        label: "Practice of real estate and mandated disclosures"
+        items: 50
+        weight_pct: 25
+        subtopics:
+          - id: "6.1"
+            label: "Trust funds, fair housing, advertising, records, supervision, assistants"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10145", "Cal. Bus. & Prof. Code § 10148", "Cal. Bus. & Prof. Code § 10140.6", "Cal. Bus. & Prof. Code § 10159.2", "Cal. Code Regs. tit. 10, § 2725", "Cal. Code Regs. tit. 10, § 2729", "Cal. Code Regs. tit. 10, § 2770", "Cal. Code Regs. tit. 10, § 2780", "Cal. Code Regs. tit. 10, § 2831", "Cal. Code Regs. tit. 10, § 2832", "Cal. Code Regs. tit. 10, § 2834", "Cal. Gov. Code § 12955"]
+          - id: "6.2"
+            label: "DRE jurisdiction, discipline, licensing, CE, recovery account, ethics"
+            items: null
+            statute_refs: ["Cal. Bus. & Prof. Code § 10050", "Cal. Bus. & Prof. Code § 10150", "Cal. Bus. & Prof. Code § 10153.2", "Cal. Bus. & Prof. Code § 10170", "Cal. Bus. & Prof. Code § 10175", "Cal. Bus. & Prof. Code § 10176", "Cal. Bus. & Prof. Code § 10177", "Cal. Bus. & Prof. Code § 10471", "Cal. Bus. & Prof. Code § 10474"]
+          - id: "6.3"
+            label: "Property management, specialty areas, TDS/NHD, material facts, inspections, reports"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1102", "Cal. Civ. Code § 1102.6", "Cal. Civ. Code § 1103", "Cal. Civ. Code § 2079", "Cal. Civ. Code § 1710.2", "Cal. Civ. Code § 1940", "Cal. Bus. & Prof. Code § 10131", "Cal. Bus. & Prof. Code § 10167", "Cal. Health & Safety Code § 13113.8"]
+      - id: "7"
+        label: "Contracts"
+        items: 24
+        weight_pct: 12
+        subtopics:
+          - id: "7.1"
+            label: "Contract law, listings, buyer-broker agreements, purchase contracts, notes, options, advance fees"
+            items: null
+            statute_refs: ["Cal. Civ. Code § 1550", "Cal. Civ. Code § 1624", "Cal. Civ. Code § 1086", "Cal. Civ. Code § 1670.50", "Cal. Civ. Code § 2985", "Cal. Bus. & Prof. Code § 10026", "Cal. Bus. & Prof. Code § 10085", "Cal. Bus. & Prof. Code § 10141", "Cal. Bus. & Prof. Code § 10147.5", "Cal. Bus. & Prof. Code § 10237", "Cal. Code Regs. tit. 10, § 2970"]
+references: []

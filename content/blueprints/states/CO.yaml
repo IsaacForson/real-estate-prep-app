@@ -1,0 +1,216 @@
+# Colorado state-portion blueprint. Colorado has no salesperson license; the entry-level license is
+# Associate Broker and everyone takes the single Broker exam, so (as in content/states/CO.yaml) the
+# `salesperson` block describes that entry-level Broker exam's state portion. Source: PSI Colorado Real
+# Estate Broker Candidate Information Bulletin, "State Portion Content Outline". Labels are OUR
+# paraphrases (SPEC §3.2). PSI does not number the eight state domains; ids "1"-"8" are ours, in PSI's order.
+id: state_CO
+vendor: psi
+title: "Colorado state-portion outline (internal blueprint)"
+source_document: "PSI Services — Colorado Real Estate Broker Candidate Information Bulletin (test-takers.psiexams.com/core), State Portion Content Outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/2598"
+source_version_or_date: "PSI bulletin retrieved 2026-09-08 (bulletin text undated; state portion 74 items, 53 correct to pass, 110 minutes)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  74 scored state items in eight domains with published counts (2/5/11/7/23/5/10/11); subtopic counts
+  are not published. PSI says a small number (5-10) of unscored experimental items may be added. The
+  same state portion is used for the Continuing Education and Reciprocal Licensure exams. Statute refs:
+  C.R.S. Title 12, art. 10, pt. 2 (Brokers and Salespersons) and pt. 4 (Brokerage Relationships), cached
+  from the Division of Real Estate's 2026 Colorado Real Estate Manual ch. 1; 4 CCR 725-1 (Commission
+  rules; chapters 1-9 cited as "ch. N" plus rule numbers where known) cached from the Secretary of
+  State's official PDF; Commission Position Statements (CP-n) cached from Manual ch. 3. No broker block:
+  Colorado has only the one exam.
+exams:
+  salesperson:
+    scored_items: 74
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "Commission powers, investigations, and enforcement"
+        items: 2
+        subtopics:
+          - id: "1.a"
+            label: "Commission composition and general powers; Division of Real Estate"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-206", "Colo. Rev. Stat. § 12-10-207", "Colo. Rev. Stat. § 12-10-220", "Colo. Rev. Stat. § 12-10-226"]
+          - id: "1.b"
+            label: "Investigations, audits, hearings, appeals; criminal and license-law violations"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-216", "Colo. Rev. Stat. § 12-10-217", "Colo. Rev. Stat. § 12-10-219", "Colo. Rev. Stat. § 12-10-223", "Colo. Rev. Stat. § 12-10-225", "4 Colo. Code Regs. § 725-1, ch. 9"]
+      - id: "2"
+        label: "Licensing requirements"
+        items: 5
+        subtopics:
+          - id: "2.a"
+            label: "License types; entity (corporation/LLC/partnership) licenses"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-201", "Colo. Rev. Stat. § 12-10-203", "Colo. Rev. Stat. § 12-10-205", "Colo. Rev. Stat. § 12-10-212", "4 Colo. Code Regs. § 725-1, ch. 2"]
+          - id: "2.b"
+            label: "Acts that require a broker license"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-201", "Colo. Rev. Stat. § 12-10-202"]
+          - id: "2.c"
+            label: "Renewal, changes, expiration, inactive status, continuing education"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-211", "Colo. Rev. Stat. § 12-10-213", "Colo. Rev. Stat. § 12-10-205", "4 Colo. Code Regs. § 725-1, ch. 3", "4 Colo. Code Regs. § 725-1, ch. 4"]
+          - id: "2.d"
+            label: "Qualifications for licensure and exemptions"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-203", "Colo. Rev. Stat. § 12-10-201", "Colo. Rev. Stat. § 12-10-208", "4 Colo. Code Regs. § 725-1, ch. 2"]
+          - id: "2.e"
+            label: "Errors and omissions insurance"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-204", "4 Colo. Code Regs. § 725-1, ch. 3"]
+      - id: "3"
+        label: "Rules governing licensee activities"
+        items: 11
+        subtopics:
+          - id: "3.a"
+            label: "Advertising and trade names"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 6", "Colo. Rev. Stat. § 12-10-217", "Colo. Rev. Stat. § 12-10-203"]
+          - id: "3.b"
+            label: "Brokerage administration: employment relationships, place of business, office policy"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-208", "Colo. Rev. Stat. § 12-10-222", "Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "3.c"
+            label: "Commissions, rebates, referrals, fees; settlement-service inducements"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-221", "Colo. Rev. Stat. § 12-10-218", "Colo. Rev. Stat. § 12-10-217", "4 Colo. Code Regs. § 725-1, ch. 6", "Colorado Real Estate Commission Position Statement CP-2", "Colorado Real Estate Commission Position Statement CP-3", "Colorado Real Estate Commission Position Statement CP-4"]
+          - id: "3.d"
+            label: "Disclosing conflicts of interest and licensed status"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-217", "Colo. Rev. Stat. § 12-10-408", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "3.e"
+            label: "Handling transaction documents"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-217", "Colo. Rev. Stat. § 12-10-216", "4 Colo. Code Regs. § 725-1, ch. 6", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "3.f"
+            label: "Listing practices"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-217", "Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "3.g"
+            label: "Unauthorized practice of law; seller financing"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 7", "Colorado Real Estate Commission Position Statement CP-1"]
+          - id: "3.h"
+            label: "Unlicensed personal assistants"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-201", "Colo. Rev. Stat. § 12-10-202", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "3.i"
+            label: "Sign crossing"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 6", "Colo. Rev. Stat. § 12-10-217"]
+      - id: "4"
+        label: "Additional Colorado topics"
+        items: 7
+        subtopics:
+          - id: "4.a"
+            label: "Property management and landlord-tenant law"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 5", "4 Colo. Code Regs. § 725-1, ch. 6", "Colo. Rev. Stat. § 38-12-101", "Colo. Rev. Stat. § 38-12-103", "Colo. Rev. Stat. § 38-12-503"]
+          - id: "4.b"
+            label: "Water rights disclosures; well change of ownership"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 38-35.7-104", "Colo. Rev. Stat. § 37-90-137", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "4.c"
+            label: "Colorado property and income taxes affecting transactions"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 39-1-102", "Colo. Rev. Stat. § 39-1-104", "Colo. Rev. Stat. § 39-22-604.5"]
+          - id: "4.d"
+            label: "Colorado Fair Housing Act"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 24-34-501", "Colo. Rev. Stat. § 24-34-502", "Colo. Rev. Stat. § 12-10-217"]
+          - id: "4.e"
+            label: "Foreclosure Protection Act and the foreclosure process"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 6-1-1101", "Colo. Rev. Stat. § 6-1-1103", "Colo. Rev. Stat. § 6-1-1110", "Colo. Rev. Stat. § 38-38-101", "Colo. Rev. Stat. § 38-38-102"]
+      - id: "5"
+        label: "Colorado forms and contracts"
+        items: 23
+        subtopics:
+          - id: "5.a"
+            label: "Listing contracts and buyer representation agreements"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7", "Colo. Rev. Stat. § 12-10-403", "Colo. Rev. Stat. § 12-10-409", "Colo. Rev. Stat. § 12-10-410"]
+          - id: "5.b"
+            label: "Contract to Buy and Sell Real Estate, including new disclosures"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7", "Colo. Rev. Stat. § 38-35.7-101", "Colo. Rev. Stat. § 38-35.7-102", "Colo. Rev. Stat. § 38-35.7-103"]
+          - id: "5.c"
+            label: "When Commission-approved standard forms must be used"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "5.d"
+            label: "Deeds of trust and promissory notes"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 38-38-100.3", "Colo. Rev. Stat. § 38-39-101", "Colo. Rev. Stat. § 38-39-102", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "5.e"
+            label: "Disclosure documents"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-408", "Colo. Rev. Stat. § 38-35.7-101", "Colo. Rev. Stat. § 38-35.7-104", "4 Colo. Code Regs. § 725-1, ch. 6", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "5.f"
+            label: "Addenda, including foreclosure-property and short-sale addenda"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7", "Colo. Rev. Stat. § 6-1-1101", "Colo. Rev. Stat. § 6-1-1103"]
+          - id: "5.g"
+            label: "Counterproposal form"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "5.h"
+            label: "Closing instructions"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "5.i"
+            label: "Seller financing documents"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 7", "Colo. Rev. Stat. § 12-10-403", "Colorado Real Estate Commission Position Statement CP-1"]
+      - id: "6"
+        label: "Record keeping and trust accounts"
+        items: 5
+        subtopics:
+          - id: "6.a"
+            label: "Transaction record retention"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-216", "4 Colo. Code Regs. § 725-1, ch. 5", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "6.b"
+            label: "Trust accounts: requirements, delivery of funds, record keeping"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-217", "4 Colo. Code Regs. § 725-1, ch. 5"]
+      - id: "7"
+        label: "Closing and settlement"
+        items: 10
+        subtopics:
+          - id: "7.a"
+            label: "Computing prorations"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 6", "4 Colo. Code Regs. § 725-1, ch. 7"]
+          - id: "7.b"
+            label: "Broker responsibility for accurate closing statements that match the contract"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-217", "4 Colo. Code Regs. § 725-1, ch. 6", "4 Colo. Code Regs. § 725-1, ch. 5"]
+          - id: "7.c"
+            label: "Parties' responsibilities and documents at closing"
+            items: null
+            statute_refs: ["4 Colo. Code Regs. § 725-1, ch. 6", "4 Colo. Code Regs. § 725-1, ch. 7", "Colo. Rev. Stat. § 38-35-109"]
+      - id: "8"
+        label: "Brokerage relationships"
+        items: 11
+        subtopics:
+          - id: "8.a"
+            label: "Brokerage relationship disclosures"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-408", "Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 6"]
+          - id: "8.b"
+            label: "Transaction-brokerage duties"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-407", "Colo. Rev. Stat. § 12-10-402", "Colo. Rev. Stat. § 12-10-403"]
+          - id: "8.c"
+            label: "Single-agent duties to sellers, landlords, buyers, tenants"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-404", "Colo. Rev. Stat. § 12-10-405", "Colo. Rev. Stat. § 12-10-406", "Colo. Rev. Stat. § 12-10-409", "Colo. Rev. Stat. § 12-10-411"]
+          - id: "8.d"
+            label: "Designated brokers within a brokerage"
+            items: null
+            statute_refs: ["Colo. Rev. Stat. § 12-10-402", "Colo. Rev. Stat. § 12-10-403", "4 Colo. Code Regs. § 725-1, ch. 1"]
+references: []

@@ -1,0 +1,261 @@
+# New York blueprint — WEIGHTS ONLY. The DOS-administered salesperson exam is not split into national and
+# state portions and DOS publishes neither an item count nor a content outline: its pages say only that the
+# written exam is multiple choice, based on the 77-hour salesperson curriculum, 1.5 hours, pass/fail. The
+# closest official structure is the DOS "Real Estate Salesperson Syllabus" (77-hour curriculum, 2022), whose
+# 19 subjects carry hour allocations. Domain `items` below are PERCENTAGE POINTS (hours / 77, rounded so the
+# domains sum to 100), NOT item counts; scored_items = 100 is a placeholder. Labels are OUR paraphrases.
+id: state_NY
+vendor: state
+title: "New York salesperson exam weights (internal blueprint, whole exam)"
+source_document: "NY Department of State, Division of Licensing Services — Real Estate Salesperson (77-hour) Syllabus, and DOS 'Real Estate Agent' exam information pages"
+source_url: "https://dos.ny.gov/real-estate-salesperson-77-hour-curriculum-eff-12212022"
+source_version_or_date: "Syllabus 2022 (77-hour curriculum effective 12/21/2022); exam pages accessed 2026-09-08"
+accessed: 2026-09-08
+copyright_note: "Structure and hour weights recorded for internal blueprint use; syllabus text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 100
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "License law and DOS regulations"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "1.1"
+            label: "License categories, who must be licensed, exemptions"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 440", "N.Y. Real Prop. Law art. 12-A, § 440-a", "N.Y. Real Prop. Law art. 12-A, § 442-f"]
+          - id: "1.2"
+            label: "Getting and keeping a license: education, exam, fees, pocket cards, renewals, CE"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 441", "N.Y. Real Prop. Law art. 12-A, § 441-a", "N.Y. Real Prop. Law art. 12-A, § 441-b", "N.Y. Real Prop. Law art. 12-A, § 442-b", "19 N.Y.C.R.R. § 175.20", "19 N.Y.C.R.R. § 176.3", "19 N.Y.C.R.R. § 177.2"]
+          - id: "1.3"
+            label: "Broker supervision, salesperson association changes, dual licensure"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 441", "N.Y. Real Prop. Law art. 12-A, § 442-b", "N.Y. Real Prop. Law art. 12-A, § 442-c", "19 N.Y.C.R.R. § 175.21", "19 N.Y.C.R.R. § 175.22"]
+          - id: "1.4"
+            label: "Advertising rules and unlicensed assistants"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 175.25", "N.Y. Real Prop. Law art. 12-A, § 441-c"]
+          - id: "1.5"
+            label: "Violations, discipline, hearings, penalties"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 441-c", "N.Y. Real Prop. Law art. 12-A, § 441-d", "N.Y. Real Prop. Law art. 12-A, § 441-e", "N.Y. Real Prop. Law art. 12-A, § 441-f", "N.Y. Real Prop. Law art. 12-A, § 442-e", "N.Y. Real Prop. Law art. 12-A, § 442-h", "N.Y. Real Prop. Law art. 12-A, § 442-k"]
+          - id: "1.6"
+            label: "Property Condition Disclosure Act and gas-well disclosure"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 14, § 462", "N.Y. Real Prop. Law art. 14, § 463", "N.Y. Real Prop. Law art. 14, § 465", "N.Y. Real Prop. Law art. 14, § 466", "N.Y. Real Prop. Law § 242"]
+      - id: "2"
+        label: "Law of agency"
+        items: 14
+        weight_pct: 14.3
+        subtopics:
+          - id: "2.1"
+            label: "Agency relationships, fiduciary duties, types of agents"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 443", "19 N.Y.C.R.R. § 175.1", "19 N.Y.C.R.R. § 175.2", "19 N.Y.C.R.R. § 175.4", "19 N.Y.C.R.R. § 175.6"]
+          - id: "2.2"
+            label: "Mandatory agency disclosure form and dual/designated agency consent"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 443", "N.Y. Real Prop. Law art. 12-A, § 443-a"]
+          - id: "2.3"
+            label: "Compensation, commissions, and referral fees"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 442", "N.Y. Real Prop. Law art. 12-A, § 442-a", "N.Y. Real Prop. Law art. 12-A, § 442-d", "N.Y. Real Prop. Law art. 12-A, § 442-l", "19 N.Y.C.R.R. § 175.7", "19 N.Y.C.R.R. § 175.8"]
+          - id: "2.4"
+            label: "Listing agreements, net listings, escrow handling"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 175.1", "19 N.Y.C.R.R. § 175.19", "19 N.Y.C.R.R. § 175.24", "N.Y. Real Prop. Law art. 12-A, § 441-c"]
+      - id: "3"
+        label: "Legal issues: estates, liens, deeds, closing"
+        items: 13
+        weight_pct: 13.0
+        subtopics:
+          - id: "3.1"
+            label: "Estates and interests in real property"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Est. Powers & Trusts Law § 6-1.1 et seq.", "N.Y. Real Prop. Law § 240"]
+          - id: "3.2"
+            label: "Liens and easements"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Lien Law § 3 et seq.", "N.Y. Real Prop. Law § 291", "N.Y. Real Prop. Tax Law § 902"]
+          - id: "3.3"
+            label: "Deeds and conveyancing"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law § 243", "N.Y. Real Prop. Law § 258", "N.Y. Real Prop. Law § 291", "N.Y. Real Prop. Law art. 14, § 462"]
+          - id: "3.4"
+            label: "Title closing and closing costs"
+            items: null
+            statute_refs: ["N.Y. Tax Law § 1402", "N.Y. Real Prop. Law § 291", "19 N.Y.C.R.R. § 175.1"]
+      - id: "4"
+        label: "Contracts of sale and leases"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "4.1"
+            label: "Leases and landlord-tenant basics"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law § 226-b", "N.Y. Real Prop. Law § 227", "N.Y. Real Prop. Law § 235-b", "N.Y. Gen. Oblig. Law § 7-103"]
+          - id: "4.2"
+            label: "Contract essentials and contract preparation limits"
+            items: null
+            statute_refs: ["N.Y. Gen. Oblig. Law § 5-703", "N.Y. Real Prop. Law art. 12-A, § 441-c", "19 N.Y.C.R.R. § 175.5", "N.Y. Real Prop. Law art. 14, § 465"]
+      - id: "5"
+        label: "Real estate finance"
+        items: 7
+        weight_pct: 6.5
+        subtopics:
+          - id: "5.1"
+            label: "Mortgages, lenders, and loan types"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law § 254", "N.Y. Real Prop. Law § 254-b", "N.Y. Banking Law § 6-l", "N.Y. Real Prop. Actions & Proc. Law § 1301"]
+          - id: "5.2"
+            label: "Government finance programs and disclosure laws"
+            items: null
+            statute_refs: ["N.Y. Banking Law § 6-l", "N.Y. Banking Law § 589", "N.Y. Exec. Law art. 15, § 296"]
+      - id: "6"
+        label: "Land use regulation"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "6.1"
+            label: "Zoning, planning, and private land-use controls"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Town Law § 261", "N.Y. Town Law § 267", "N.Y. Village Law § 7-700", "N.Y. Gen. City Law § 20", "N.Y. Gen. Mun. Law § 239-m"]
+      - id: "7"
+        label: "Construction and environmental issues"
+        items: 6
+        weight_pct: 6.5
+        subtopics:
+          - id: "7.1"
+            label: "Building codes, permits, and construction basics"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Exec. Law § 377", "N.Y. Exec. Law § 381", "N.Y. Energy Law § 11-101"]
+          - id: "7.2"
+            label: "Environmental hazards and disclosures"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 14, § 462", "N.Y. Pub. Health Law § 1370-a", "N.Y. Envtl. Conserv. Law § 27-1301", "N.Y. Real Prop. Law § 242"]
+      - id: "8"
+        label: "Valuation and pricing"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "8.1"
+            label: "Appraisal concepts, CMAs, and appraiser licensing"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Exec. Law § 160-a", "N.Y. Exec. Law § 160-b", "N.Y. Exec. Law § 160-k", "N.Y. Real Prop. Law art. 12-A, § 440"]
+      - id: "9"
+        label: "Human rights and fair housing"
+        items: 8
+        weight_pct: 7.8
+        subtopics:
+          - id: "9.1"
+            label: "NY Human Rights Law protections in housing"
+            items: null
+            statute_refs: ["N.Y. Exec. Law art. 15, § 296"]
+          - id: "9.2"
+            label: "Licensee fair-housing duties, notices, discipline, and CE"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 441-c", "N.Y. Real Prop. Law art. 12-A, § 442-h", "19 N.Y.C.R.R. § 175.17", "19 N.Y.C.R.R. § 175.28", "19 N.Y.C.R.R. § 175.29", "19 N.Y.C.R.R. § 177.3"]
+      - id: "10"
+        label: "Real estate math"
+        items: 1
+        weight_pct: 1.3
+        subtopics:
+          - id: "10.1"
+            label: "Commission, area, tax, and proration calculations"
+            items: null
+            statute_refs: ["N.Y. Real Prop. Law art. 12-A, § 442", "19 N.Y.C.R.R. § 175.7", "N.Y. Tax Law § 1402"]
+      - id: "11"
+        label: "Municipal agencies"
+        items: 3
+        weight_pct: 2.6
+        subtopics:
+          - id: "11.1"
+            label: "Local boards, assessors, building departments, planning bodies"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Town Law § 271", "N.Y. Town Law § 267", "N.Y. Real Prop. Tax Law § 102", "N.Y. Gen. Mun. Law § 239-m"]
+      - id: "12"
+        label: "Property insurance"
+        items: 1
+        weight_pct: 1.3
+        subtopics:
+          - id: "12.1"
+            label: "Homeowner, liability, flood, and title insurance basics"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Ins. Law § 3404", "N.Y. Ins. Law § 3425", "N.Y. Ins. Law § 6401"]
+      - id: "13"
+        label: "Licensee safety"
+        items: 1
+        weight_pct: 1.3
+        subtopics:
+          - id: "13.1"
+            label: "Personal safety practices for showings and open houses"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law art. 12-A, § 441", "19 N.Y.C.R.R. § 177.3"]
+      - id: "14"
+        label: "Taxes and assessments"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "14.1"
+            label: "Property tax assessment, exemptions, and transfer taxes"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Tax Law § 102", "N.Y. Real Prop. Tax Law § 305", "N.Y. Real Prop. Tax Law § 425", "N.Y. Real Prop. Tax Law § 458", "N.Y. Tax Law § 1402"]
+      - id: "15"
+        label: "Condominiums and cooperatives"
+        items: 5
+        weight_pct: 5.2
+        subtopics:
+          - id: "15.1"
+            label: "Condo and co-op ownership, offering plans, boards"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law § 339-d", "N.Y. Real Prop. Law § 339-e", "N.Y. Real Prop. Law § 339-v", "N.Y. Gen. Bus. Law § 352-e", "N.Y. Gen. Bus. Law § 352-eeee"]
+      - id: "16"
+        label: "Commercial and investment properties"
+        items: 13
+        weight_pct: 13.0
+        subtopics:
+          - id: "16.1"
+            label: "Investment analysis, leases, and commercial brokerage practice"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Real Prop. Law art. 12-A, § 442-d", "N.Y. Real Prop. Law art. 12-A, § 443", "N.Y. Real Prop. Law § 232-a", "N.Y. Real Prop. Law § 232-b", "N.Y. Lien Law § 2"]
+      - id: "17"
+        label: "Income tax issues in real estate"
+        items: 4
+        weight_pct: 3.9
+        subtopics:
+          - id: "17.1"
+            label: "Capital gains, exclusions, exchanges, depreciation"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "26 U.S.C. § 121", "26 U.S.C. § 1031", "26 U.S.C. § 1250", "N.Y. Tax Law § 663"]
+      - id: "18"
+        label: "Mortgage brokerage"
+        items: 1
+        weight_pct: 1.3
+        subtopics:
+          - id: "18.1"
+            label: "Mortgage broker and banker registration and duties"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "N.Y. Banking Law § 589", "N.Y. Banking Law § 590", "N.Y. Banking Law § 595-a", "N.Y. Real Prop. Law art. 12-A, § 442-a"]
+      - id: "19"
+        label: "Property management"
+        items: 3
+        weight_pct: 2.6
+        subtopics:
+          - id: "19.1"
+            label: "Management agreements, tenant relations, security deposits, rent regulation"
+            items: null
+            statute_refs: ["19 N.Y.C.R.R. § 176.3", "19 N.Y.C.R.R. § 175.3", "N.Y. Gen. Oblig. Law § 7-103", "N.Y. Real Prop. Law § 235-b", "N.Y. Real Prop. Law § 226-c", "N.Y. Mult. Dwell. Law § 4"]
+references: []
+notes: >-
+  WEIGHTS-ONLY blueprint: DOS publishes no exam content outline and no item count (its pages state the exam is
+  multiple choice, based on the 77-hour curriculum, 1.5 hours, reported pass/fail). Domain `items` are percentage
+  points derived from the 77-hour Salesperson Syllabus hour allocations (3,11,10,3,5,3,5,3,6,1,2,1,1,3,4,10,3,1,2
+  hours; weight_pct = hours/77); scored_items 100 is a placeholder, and the state record keeps total_items null.
+  Because the exam is not split, this blueprint covers the whole curriculum, including general topics whose refs
+  point at NY statutes outside the license law. Ground truth cached in content/statutes/NY from the DOS 'Real
+  Estate License Law' booklet (March 2026): RPL art. 12-A, RPL art. 14, Exec. Law art. 15 excerpts, and 19 NYCRR
+  Parts 175-179. Refs to other NY laws (RPTL, Town Law, Banking Law, EPTL, etc.) are not yet cached; every general-topic subtopic therefore also cites 19 NYCRR § 176.3 (the required prelicensing subjects) so the node resolves to cached text. No broker
+  blueprint: DOS publishes no broker outline either (exam based on the 152-hour curriculum).

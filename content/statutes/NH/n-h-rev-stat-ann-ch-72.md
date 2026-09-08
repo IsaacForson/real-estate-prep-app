@@ -1,0 +1,1536 @@
+---
+jurisdiction: "NH"
+citation: "N.H. Rev. Stat. Ann. ch. 72"
+title: "RSA Chapter 72, official General Court page read via Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts"
+url: "https://gc.nh.gov/rsa/html/V/72/72-mrg.htm"
+fetched_on: "2026-09-08"
+---
+Chapter 72 PERSONS AND PROPERTY LIABLE TO TAXATION 
+ TITLE V TAXATION 
+ CHAPTER 72 PERSONS AND PROPERTY LIABLE TO TAXATION 
+ Part Resident Taxes 
+-->
+
+ TITLE V
+TAXATION
+
+ Chapter 72
+PERSONS AND PROPERTY LIABLE TO TAXATION
+
+ Resident Taxes
+
+ Section 72:1
+
+ 72:1 Persons Liable. – 
+
+On April 1 a tax of $10, to be known as the "resident tax," shall be assessed on every inhabitant of the state from 18 to 65 years of age whether a citizen of the United States or an alien, except assisted persons, insane persons, the surviving spouse of any veteran who served in the armed forces of the United States in any wars, conflicts or armed conflicts in which it has been engaged, the surviving spouse of any citizen who served in the armed forces of any country allied with the United States in any of the wars, conflicts or armed conflicts as defined in RSA 72:28 and RSA 72:32, and others exempt by special provisions of law. The exception provided for a surviving spouse under this section shall be in the form of a tax credit to be deducted from the surviving spouse's tax bill. Any person, unless otherwise exempted by this section, who becomes an inhabitant of the state after April 1 and prior to December 1 of any year shall be assessed the resident tax.
+
+ Source. RS 39:1. CS 41:1. GS 49:1. GL 53:1. PS 55:1. 1913, 82:1. 1919, 91:1. 1919 ex, 4:1. 1923, 69:1. 1925, 32:1. PL 60:1. RL 73:1. 1944, 5:1. 1949, 291:1. 1951, 9:1. RSA 72:1. 1967, 206:1. 1970, 52:1. 1971, 476:1. 1973, 72:4; 486:1. 1979, 257:1. 1981, 546:1. 1983, 234:1. 1985, 380:48. 1991, 70:2. 1993, 73:1, eff. June 22, 1993.
+
+ Section 72:1-a
+
+ 72:1-a Repealed by 1967, 206:3, eff. Aug. 18, 1967. – 
+
+ Section 72:1-b
+
+ 72:1-b Notice of Exemption. – 
+
+Notice of the exemptions from the resident tax listed in RSA 72:1 shall be printed on every resident tax bill and posted in every tax collector's office.
+
+ Source. 1981, 241:1, eff. June 11, 1981.
+
+ Section 72:1-c
+
+ 72:1-c Optional Collection of Resident Tax. – 
+
+I. Notwithstanding any other provision of law, any town or city by majority vote of the legislative body may elect not to assess, levy and collect a resident tax. All municipalities which elect not to assess, levy or collect said resident tax shall be exempt from all provisions of law relating to it. The provisions of RSA 261:71 and 261:72 shall not apply to residents of municipalities not so assessing, levying or collecting the resident tax.
+
+II. The legislative body of any town or city may adopt the provisions of paragraph I by approving the following question: "Shall we adopt the provisions of RSA 72:1-c which authorize any town or city to elect not to assess, levy and collect a resident tax?" If a majority of those voting on the question vote "Yes", RSA 72:1-c shall apply within the town or city on April 1 following the approval of the question. Any town or city may rescind the provisions of RSA 72:1-c in the same manner, except the word "adopt" shall be changed to "rescind" in the question.
+
+ Source. 1986, 40:1. 2003, 112:1, eff. Aug. 5, 2003.
+
+ Section 72:1-d
+
+ 72:1-d Definitions. – 
+
+In this chapter:
+
+I. "Date of the final tax bill" means:
+
+(a) In towns that bill annually, the date the town mails the tax bills to the taxpayers;
+
+(b) In towns that bill semiannually, pursuant to RSA 76:15-a, the date the town mails the second tax bill to the taxpayers;
+
+(c) In towns operating with an optional fiscal year, pursuant to RSA 31:94-a or a special legislative act, the date the town mails the first tax bill to the taxpayers, provided that first tax bill establishes the total tax liability for the tax year and the bill includes notice that abatements must be sought from the first bill; and
+
+(d) Notwithstanding subparagraph (c), in municipalities that bill quarterly, pursuant to RSA 76:15-aa, the date the municipality mails the final tax bill to the taxpayers.
+
+II. "Date of notice of tax" means the date the board of tax and land appeals determines to be the last mailing date of the final tax bill for which relief is sought.
+
+ Source. 1995, 265:2. 2004, 153:2, eff. July 23, 2004.
+
+ Section 72:2
+
+ 72:2 Repealed by 1971, 476:2, eff. July 10, 1971. – 
+
+ Section 72:3
+
+ 72:3 Repealed by 1977, 588:12, eff. Sept. 16, 1977. – 
+
+ Section 72:3-a
+
+ 72:3-a Members of the Armed Forces. – 
+
+Any person serving as a full time member of the United States armed services, including the women's auxiliary service, shall be exempt from the payment of the residence tax.
+
+ Source. 1971, 573:2. 1973, 35:1, eff. April 1, 1973.
+
+ Section 72:4
+
+ 72:4 Repealed by 1969, 136:1, eff. July 12, 1969. – 
+
+ Section 72:5
+
+ 72:5 Liability of Husband. – 
+
+A husband shall be liable for the payment of his wife's resident tax if, when it was assessed, they were living together as man and wife.
+
+ Source. 1939, 56:1. RL 73:6. RSA 72:5. 1971, 476:3, eff. July 10, 1971.
+
+ Section 72:5-a
+
+ 72:5-a Distribution of Resident Taxes. – 
+
+All resident taxes shall be retained for the use of town or city in which they are collected.
+
+ Source. 1971, 476:4. 1973, 469:1, eff. July 1, 1973.
+
+ Section 72:5-b
+
+ 72:5-b Compensation of Collector. – 
+
+In those towns where the collector is paid upon a commission or part-time basis, the collector of taxes shall receive for his services in collecting resident taxes, and in lieu of any other compensation for said service, $.50 for each resident tax collected by him and paid over to the town treasurer.
+
+ Source. 1971, 476:4. 1975, 358:1. 1977, 63:1, eff. June 19, 1977.
+
+ Section 72:5-c
+
+ 72:5-c Application. – 
+
+On and after July 10, 1971 all references to "poll taxes" or "poll tax" in the laws of the state shall be construed to mean "resident tax" as enacted in RSA 72:1.
+
+ Source. 1971, 476:4, eff. July 10, 1971.
+
+ Property Taxes
+
+ Section 72:6
+
+ 72:6 Real Estate. – 
+
+All real estate, whether improved or unimproved, shall be taxed except as otherwise provided.
+
+ Source. RS 39:2. CS 41:2. GS 49:2. 1869, 37:1. 1871, 11:1. GL 53:2. 1879, 50:1. 1883, 89:1. 1889, 22:1. PS 55:2. 1923, 70:2. PL 60:5. RL 73:7. 1945, 50:1. 1951, 23:1. RSA 72:6. 1957, 202:1, eff. April 1, 1958.
+
+ Section 72:6-a
+
+ 72:6-a Repealed by 1995, 137:9, eff. May 24, 1995. – 
+
+ Section 72:7
+
+ 72:7 Buildings, Etc. – 
+
+Buildings, mills, wharves, ferries, toll bridges, locks and canals and aqueducts owned by private parties, any portion of the water of which is sold or rented for pay, are taxable as real estate.
+
+ Source. RS 39:2. CS 41:2. GS 49:3. GL 53:3. PS 55:3. 1917, 6:1. PL 60:6. RL 73:8. RSA 72:7. 1970, 5:3, eff. Mar. 31, 1970.
+
+ Section 72:7-a
+
+ 72:7-a Manufactured Housing. – 
+
+I. Manufactured housing, as defined in RSA 205-A:1, I, suitable for use for domestic, commercial, or industrial purposes is taxable as real estate in the town in which it is located on April 1 in any year if it was brought into the state on or before April 1 and remains here after June 15 in any year; except that manufactured housing as determined by the commissioner of revenue administration, registered in this state for touring or pleasure and not remaining in any one town, city, or unincorporated place for more than 45 days, except for storage only, shall be exempt from taxation. This paragraph shall not apply to manufactured housing held for sale or storage by an agent or dealer.
+
+I-a. Manufactured housing, as defined in RSA 205-A:1, I, suitable for use for domestic, commercial, or industrial purposes is taxable as real estate in the town, city or unincorporated place to which it is brought and located after April 1 and before the following January 1, provided that said manufactured housing remains in said town, city, or unincorporated place for more than 10 weeks, except for storage only, and further provided a tax has not been assessed on it elsewhere in the state for that year. The tax shall be for the pro rata part of the tax year remaining when said manufactured housing became located in the town, city, or unincorporated place. The selectmen or assessors may so require and it shall be an obligation of the owner to file with the selectmen or assessors a true and correct inventory of the property subject to taxation under this paragraph within 15 days of the location of the manufactured housing in such form as the commissioner of revenue administration may prescribe.
+
+II. There shall be a lien for uncollected taxes upon any manufactured housing suitable for use for domestic, commercial or industrial purposes that has been taxed pursuant to paragraphs I and I-a. Said lien shall take precedence over all other liens and encumbrances upon said manufactured housing and shall continue in force until 11/2 years from the assessment of the tax. Such taxes shall be subject to the collection procedures set forth in RSA 80 for real estate taxes.
+
+ Source. 1955, 137:1. 1961, 41:1. 1963, 149:1. 1967, 57:1. 1969, 210:1. 1971, 363:1; 367:1, 2. 1973, 123:1; 544:8. 1983, 230:18. 2001, 102:26. 2004, 10:1, eff. April 5, 2004. 2014, 288:2, eff. April 1, 2015.
+
+ Section 72:7-b
+
+ 72:7-b Manufactured Housing. – 
+
+Whenever a person moves manufactured housing into a city or town for the purpose of establishing a residence in said city or town, or whenever a person purchases existing established manufactured housing with the intent of residing in the same at the existing location, he shall within 15 days of the placement of the manufactured housing or within 15 days of the purchase of same register with the assessors of the city or the selectmen of the town where he intends to reside. Whoever fails to comply with the provisions of this section shall be guilty of a violation.
+
+ Source. 1973, 152:1. 1983, 230:18, eff. Aug. 17, 1983.
+
+ Section 72:7-c
+
+ 72:7-c Exemption; Radio Towers, Antennas and Related Structures. – 
+
+Radio antennas, towers and related or supporting structures used exclusively in the operation of an amateur communications station under Federal Communications Commission amateur radio service rules and regulations, shall be considered personal property and are not taxable as real estate.
+
+ Source. 1994, 21:1, eff. April 1, 1994.
+
+ Section 72:7-d
+
+ 72:7-d Exemption; Recreational Vehicles. – 
+
+I. (a) For purposes of this chapter, recreational vehicles, as defined in RSA 216-I:1, VIII, having a valid motor vehicle registration and current number plate, having a maximum width of 8 feet and 6 inches while being transported, and located at a "recreational campground or camping park," as those terms are defined in RSA 216-I:1 VII, shall not be taxable as real estate.
+
+(b) Annually, before April 1, each campground owner, as defined in RSA 216-I:1, III, shall provide the local assessing officials with the name and address for each owner of a recreational vehicle at the campground, and shall identify which of such recreational vehicles at the campground currently meet the criteria described in subparagraph (a).
+
+II. Notwithstanding RSA 75:3, campground owners shall not be responsible for payment of any taxes imposed on a recreational vehicle located at the campground unless the campground owner is the owner of the recreational vehicle.
+
+ Source. 2014, 288:1, eff. April 1, 2015. 2018, 296:3, eff. June 25, 2018.
+
+ Section 72:8
+
+ 72:8 Electric Plants and Pipe Lines. – 
+
+All structures, machinery, dynamos, apparatus, poles, wires, fixtures of all kinds and descriptions, and pipe lines employed in the generation, production, supply, distribution, transmission, or transportation of electric power or natural gas, crude petroleum and refined petroleum products or combinations thereof, shall be taxed as real estate in the town in which said property or any part of it is situated; provided that no electric power fixtures which would otherwise be taxed under this section shall be taxed under this section if they are employed solely as an emergency source of electric power.
+
+ Source. 1905, 42:1. PL 60:7. 1941, 197:2. RL 73:9. 1951, 111:1. RSA 72:8. 1967, 139:1. 1997, 294:1; 351:47, eff. Mar. 1, 1997, at 12:01 a.m.
+
+ Section 72:8-a
+
+ 72:8-a Telecommunications Poles and Conduits. – 
+
+All structures, poles, towers, and conduits employed in the transmission of telecommunication, cable, or commercial mobile radio services shall be taxed as real estate in the town in which such property or any part of it is situated. Except as provided in RSA 72:8-c, the valuation of such property shall be based on its value as real estate. Other devices and equipment, including wires, fiber optics, and switching equipment employed in the transmission of telecommunication, cable, or commercial mobile radio services shall not be taxable as real estate.
+
+ Source. 1998, 304:1, eff. April 1, 1998. 2016, 208:1, eff. Sept. 1, 2016.
+
+ Section 72:8-b
+
+ 72:8-b Repealed by 1998, 304:5, eff. July 1, 2010. – 
+
+ Section 72:8-c
+
+ 72:8-c Valuation of Telecommunications Poles and Conduits; Rulemaking. – 
+
+I. The value of wooden poles or conduits employed in the transmission of telecommunications owned in whole or in part by telephone utilities, as described in RSA 362:7, or providers of Voice over Internet Protocol ("VoIP") service or IP-enabled service, each as defined in RSA 362:7, or commercial mobile radio services, for purposes of tax assessment against said entity, shall be determined by the following formula: the Replacement Cost New (RCN) of the telecommunications pole or conduit, less depreciation calculated on a straight-line basis for a period of 40 years with a residual value of 20 percent without applying the annual equalization ratio.
+
+II. On or before July 1 of the tax year, the department of revenue administration shall provide to every municipality a schedule of telecommunications pole and conduit RCN, using national published telecommunications standard cost data guides calculated annually using a 5-year rolling average.
+
+III. The commissioner of the department of revenue administration shall adopt rules pursuant to RSA 541-A relative to how telecommunications pole and conduit RCN shall be established, including a process for receiving public input prior to such establishment.
+
+ Source. 2016, 208:2, eff. Sept. 1, 2016. 2024, 210:2, eff. April 1, 2025.
+
+ Section 72:8-d
+
+ 72:8-d Valuation of Electric, Gas, and Water Utility Company Distribution Assets. – 
+
+I. In this section:
+
+(a) "FERC" means the Federal Energy Regulatory Commission.
+
+(b) "Utility company assets" means the following property not exempt under RSA 72:23:
+
+(1) For an electric company providing electricity service to retail customers: the distribution poles, wires, conductors, attachments, meters, transformers, and substations accounted for by the utility in accordance with FERC Form 1, buildings, contributions in aid of construction (CIAC), construction works in progress (CWIP), and land rights, including use of the public rights of way, easements on private land owned by third parties, and land owned in fee by the electric company, so long as such easements and fee land are associated solely with distribution power lines classified as distribution according to FERC standards.
+
+(2) For a gas company providing gas service to retail customers: distribution pipes, fittings, meters, pressure reducing stations, buildings, contributions in aid of construction (CIAC), construction works in progress (CWIP), and land rights including use of the public rights of way, easements on private land owned by third parties, and land owned in fee by the gas company.
+
+(3) For a water company providing water service to retail customers: pipes, fittings, meters, wells, pressure/pump stations, buildings, contributions in aid of construction (CIAC), construction works in progress (CWIP), and land rights including use of the public rights of way, easements on private land owned by third parties, and land owned in fee by the water company. No electric power fixtures employed solely as an emergency source of electric power in a public water distribution system shall be taxable.
+
+(c) "Utility company assets" shall not include:
+
+(1) Electric company transmission poles, wires, conductors, attachments, meters, transformers, and substations, classified as transmission according to FERC standards, buildings associated with transmission, and land rights, including easements on private land owned by third parties, and land owned in fee by the electric company, so long as such easements and fee land are associated with transmission power lines classified as transmission according to FERC standards.
+
+(2) Electric generation facilities and associated land rights, whether in fee or by easement.
+
+(3) Gas transmission pipeline facilities regulated by FERC and associated land rights, whether in fee or easement.
+
+(4) Wholly owned telephone, cable, or Internet service providers, and large scale natural gas and propane gas liquid storage and processing facility assets.
+
+(5) Fee-owned land, office buildings, garages, and warehouses.
+
+(d) "Retention dam" means a dam constructed for the purpose of impounding drinking water supply.
+
+II. (a) The selectmen or assessors shall appraise utility company assets lying within the limits of the town or city using a unified method of valuing the utility company assets, excluding land rights, according to the following formula:
+
+(1) For electric and gas utility company assets: a weighted average of 70 percent of each asset's original cost and 30 percent of each asset's net book cost as reported in compliance with paragraphs IV and V.
+
+(2) For water utility company assets: a weighted average of 25 percent of each asset's original cost and 75 percent of each asset's net book cost as reported in compliance with paragraphs IV and V.
+
+(b) To the appraisal under subparagraph (a), for the use of public rights of way and private distribution system easements, the selectmen or assessors shall add 3 percent of the valuation determined under subparagraph (a).
+
+(c) The total of subparagraphs (a) and (b), as implemented under paragraph VI, shall be the valuation of the utility company's assets for purposes of local property taxation, and added to the municipality's assessed value of the utility company's fee-owned land, office buildings, garages, and warehouses.
+
+III. Any water utility company land parcel owned in fee for sanitary radii, retention dams, and/or watershed protection purposes which is subject to regulation by the department of environmental services to protect water quality shall be entitled to be assessed under RSA 79-C at the value such land would have been assigned under the current use values established pursuant to RSA 79-A if the land had met the criteria for open space land under that chapter, even if said parcel is less than 10 acres in size and/or has a well structure and related piping on the parcel.
+
+IV. Each utility company shall report by May 1 of each year to the selectmen or assessors of each town or city in which its utility company assets are located and to the department of revenue administration, the original cost and net book value as of December 31 of the preceding year of each account code category of distribution, transmission, and generation assets, if any, located within such town or city in accordance with FERC Form 1 and/or Form 2 Federal Account Code items.
+
+V. The commissioner of the department of revenue administration shall adopt rules under RSA 541-A for the forms and requirements for the reporting under paragraph IV. Such reporting requirements shall also include an obligation on the utility company with utility company assets to utilize an accounting system to report and track with the best information available, in an efficient, equitable and transparent manner using the best information then available from the utility company's accounting records, contributions in aid of construction (CIAC), construction works in progress (CWIP), and undistributed plant assets in each town or city and the original cost of each such asset as reported by the contributing entity.
+
+VI. (a) The assessed value of all utility company assets existing and assessed as of April 1, 2018 determined in subparagraph II(c) shall be implemented over a 5-year period as follows:
+
+(1) The value for assessment of property taxes for the tax year effective April 1, 2020 shall be a weighted average of 80 percent of the final locally assessed value effective April 1, 2018 and 20 percent of the apportioned value determined under subparagraph II(c) effective April 1, 2020.
+
+(2) The value for assessment of property taxes for the tax year effective April 1, 2021 shall be a weighted average of 60 percent of the final locally assessed value effective April 1, 2018 and 40 percent of the apportioned value determined under subparagraph II(c) effective April 1, 2021.
+
+(3) The value for assessment of property taxes for the tax year effective April 1, 2022 shall be a weighted average of 40 percent of the final locally assessed value effective April 1, 2018 and 60 percent of the apportioned value determined under subparagraph II(c) effective April 1, 2022.
+
+(4) The value for assessment of property taxes for the tax year effective April 1, 2023 shall be a weighted average of 20 percent of the final locally assessed value effective April 1, 2018 and 80 percent of the apportioned value determined under subparagraph II(c) effective April 1, 2023.
+
+(5) For each of the years in subparagraphs (a)(1) through (4), all utility company assets installed after April 1, 2018, and not included in assessment as of April 1, 2018, shall be assessed at the apportioned value determined under subparagraph II(c) effective as of April 1 of the property tax year. For each of the years in subparagraphs (a)(1) through (4), all utility company assets retired after April 1, 2018, and included in assessment as of April 1, 2018, shall not be assessed.
+
+(6) Beginning with the tax year effective April 1, 2024 and every tax year thereafter the locally assessed value shall be the apportioned value determined under subparagraph II(c) effective as of April 1 of the property tax year.
+
+(b) For purposes of subparagraph (a), "final locally assessed value effective April 1, 2018" means the municipality's value of the utility company's assets as taken from the department of revenue administration's form MS-1 for 2018.
+
+VII. All determinations or decisions under this section shall be appealable by the electric, gas, or water utility company or the town or city by petition to the board of tax and land appeals under RSA 71-B.
+
+ Source. 2019, 117:2, eff. Aug. 20, 2019.
+
+ Section 72:8-e
+
+ 72:8-e Recovery of Taxes by Electric, Gas and Water Utility Companies. – 
+
+For the implementation period of the valuation of utility company assets under RSA 72:8-d, VI and terminating with the property tax year effective April 1, 2024, the public utility commission shall by order establish a rate recovery mechanism for any public utility owning property that meets the definition of utility company assets under RSA 72:8-d, I. Such rate recovery mechanism shall either:
+
+I. Adjust annually to recover all property taxes paid by each such utility on such utility company assets based upon the methodology set forth in of RSA 72:8-d; or
+
+II. Be established in an alternative manner acceptable to both the utility and the public utility commission.
+
+ Source. 2019, 117:2, eff. Aug. 20, 2019.
+
+ Section 72:8-f
+
+ 72:8-f Repealed by 2025, 266:3, VI, eff. Aug. 1, 2025. – 
+
+ Section 72:9
+
+ 72:9 Where Taxable. – 
+
+If the property described in RSA 72:8 or 72:8-a shall be situated in or extend into more than one town, the property shall be taxed in each town according to the value of that part lying within its limits.
+
+ Source. 1905, 42:2. PL 60:8. RL 73:10. RSA 72:9. 1998, 304:2, eff. April 1, 1998.
+
+ Section 72:10
+
+ 72:10 Limitation. – 
+
+Nothing in RSA 72:8, 72:8-a, or 72:9 shall in any way change or affect the laws relating to the taxation of public utilities and other property owned by municipal corporations.
+
+ Source. 1905, 42:4. PL 60:9. RL 73:11. RSA 72:10. 1998, 304:3, eff. April 1, 1998.
+
+ Section 72:11
+
+ 72:11 Water Works; Flood Control. – 
+
+I. Except as provided in paragraph II, property held by a city, town or district in another city or town for the purpose of a water supply or flood control, if yielding no rent, shall not be liable to taxation therein, but the city, town or district so holding it shall annually pay to the city or town in which such property lies an amount equal to that which such place would receive for taxes upon the average of the assessed value of such land, without buildings or other structures, for the 3 years last preceding legal process to acquire the same, or other acquisition thereof, the valuation for each year being reduced by all abatements thereon; but any part of such land or buildings from which any revenue in the nature of rent is received shall be subject to taxation; such payments shall be paid to the collector of taxes of the town or city in which such property lies upon notification from him, and such payment shall be made on or before December 1 in each year; provided, however, that after such acquisition the valuation thus established shall be subject to change, as to make such value proportional with the assessed value of other property in the town which is subject to taxation, so that such payment will not exceed its proportion of the public charge in that year. Any city or town aggrieved by the payment in lieu of taxes on such property shall have the same right of appeal as a taxpayer may have.
+
+II. (a) Alternatively, the governing body of a city, town, or district holding property described in paragraph I may enter into an agreement with the governing body of the city or town in which the property is located for payments in lieu of taxes with respect to the subject property. In the absence of such an agreement, the property shall be subject to the provisions of paragraph I. Notwithstanding any agreement entered into under this paragraph, any portion of the land or buildings from which revenue in the nature of rent is received shall remain subject to taxation as provided in paragraph I.
+
+(b) No voluntary agreement entered into under this paragraph shall be valid for more than 5 years, however, any such agreement may be renewed or amended and restated for any number of consecutive periods of 5 years or less.
+
+ Source. 1911, 40:1. 1923, 33:1. PL 60:10. 1941, 65:2. RL 73:12. 1953, 35:1. RSA 72:11. 1973, 544:11, XXVII. 1977, 501:2, eff. Sept. 12, 1977. 2013, 94:1, eff. June 20, 2013.
+
+ Section 72:11-a
+
+ 72:11-a Water Works, Flood Control, Additional Provisions. – 
+
+When a city, town or district has acquired, or acquires property in another city or town for the purpose of water supply or flood control which for any reason has been exempt from taxation, such property, if yielding no rent, shall not be liable to taxation therein but the city, town or district so holding it shall annually pay to the city or town in which such property lies either a sum equal to that which such place would receive from taxes from such land, without buildings or structures thereon, as determined by the commissioner of revenue administration, or the alternative payment permitted by RSA 72:11, II. Such payments shall be made as provided in RSA 72:11.
+
+ Source. 1965, 9:1. 1973, 544:8. 1977, 501:3, eff. Sept. 12, 1977. 2013, 94:2, eff. June 20, 2013.
+
+ Section 72:12
+
+ 72:12 Public Utilities. – 
+
+All real estate of railroads and other public utility corporations and companies which is not taxed under RSA 82 and 82-A shall be appraised and taxed by the authorities of the town in which it is situated.
+
+ Source. RS 39:2. 1844, 141:1. CS 41:2. GS 49:4. GL 53:5. PS 55:6. 1907, 119:1. PL 60:11. RL 73:13. RSA 72:12. 1990, 9:2, eff. Mar. 31, 1990.
+
+ Section 72:12-a
+
+ 72:12-a Water and Air Pollution Control Facilities. – 
+
+I. Any person, firm, or corporation which builds, constructs, installs, or places in use in this state any treatment facility, device, appliance, or installation wholly or partly for the purpose of reducing, controlling, or eliminating any source of air or water pollution shall be entitled to have the value of said facility and any real estate necessary therefor, or a percentage thereof determined in accordance with this section, exempted from the taxes levied under this chapter for the period of years in which the facility, device, appliance, or installation is used in accordance with the provisions of this section. This paragraph shall not apply to privately-owned landfills or ancillary facilities located at such landfills or to sewage disposal systems installed pursuant to RSA 485-A:29 through RSA 485-A:44 and rules adopted pursuant thereto, except that any exemption for a sewage disposal system granted prior to January 1, 2010 shall remain in effect.
+
+II. The party seeking the exemption shall file an application with the department of environmental services if the exemption sought is for a water pollution control facility or an air pollution control facility, with a copy to the taxing authorities in the municipality where the facility is situated. Said application shall describe the facilities and their function or functions and shall state the applicant's total investment therein and the portion allocable to each function.
+
+III. The department shall investigate and determine whether the purpose of the facility is solely or only partially pollution control. If the department finds that the purpose of the facility is only partially pollution control it shall determine by an allocation of the applicant's investment in the facility what percentage of the facility is used to control pollution. In making its investigation, the department may inspect the facility and request such other information from the applicant as is reasonably necessary to assist it in making its determination.
+
+IV. Upon making its determination, the department shall notify the applicant and the taxing authorities of the municipality where the facility is situated whether the purpose of the facility is solely pollution control, or, if not, what percentage of the applicant's investment in the facility should be allocated to pollution control.
+
+V. The taxing authorities shall each year separately appraise and describe the facility and related real estate and cause such appraisal and description to appear in their inventory. In accordance with the provisions of this section, the taxing authority shall exempt from the taxes levied under this chapter the appraised value of the facility and any real estate necessary therefor, or the exempt percentage thereof, determined by the department. The exemption period shall begin as of the April 1 next following the receipt of the department's determination.
+
+VI. Either the municipality or the owner of the facility may request a rehearing or appeal from such determination in accordance with the provisions of RSA 541.
+
+ Source. 1971, 142:1. 1979, 359:3. 1996, 228:15. 1998, 66:1. 2006, 282:4. 2010, 94:6, eff. May 25, 2010.
+
+ Section 72:12-b
+
+ 72:12-b Facilities Previously Exempted. – 
+
+Upon application by either the municipality or the owner of any pollution control facility previously exempted under RSA 149:5-a the department of environmental services shall review a determination made under RSA 149:5-a and determine the exempt percentage in the manner provided by RSA 72:12-a; provided, however, that the period of exemption shall not be extended by any such redetermination. Either the municipality or the owner of the facility may request a rehearing or appeal from such determination in accordance with the provisions of RSA 541.
+
+ Source. 1971, 142:1. 1996, 228:108, eff. July 1, 1996.
+
+ Section 72:12-c
+
+ 72:12-c Exemption. – 
+
+Ski area machinery and equipment of every kind and description, except tramway towers, shall be exempt from taxation as real estate if it meets all of the following qualifications:
+
+I. It is used or useful in the operation of a passenger tramway or in the production of man-made snow, including: cables, sheaves assemblies, carriers, pipe lines, compressors, pumps, electrical apparatus;
+
+II. It is not permanently affixed to the real estate upon which it is located; and
+
+III. It is capable of being removed from the real estate.
+
+ Source. 1981, 237:1, eff. Aug. 10, 1981.
+
+ Section 72:12-d
+
+ 72:12-d Exemption. – 
+
+I. Demountable, plastic-covered greenhouses shall be exempt from taxation as provided by RSA 72:6, if all of the following qualifications are met:
+
+(a) Removal of the demountable greenhouse will not affect the utility of the underlying real estate.
+
+(b) The demountable greenhouse is not permanently affixed to the underlying real estate with concrete or similar non-portable footings.
+
+(c) Removal of the demountable greenhouse can be accomplished without significant damage to the greenhouse and will not render the greenhouse unfit for subsequent use as a demountable greenhouse.
+
+(d) The demountable greenhouse is specifically designed, constructed, and used for culture, propagation, and protection of agricultural products.
+
+(e) The demountable greenhouse is not used for the retail sale of any non-agricultural products.
+
+II. For purposes of this section, the term "demountable, plastic-covered greenhouse" means:
+
+(a) Framework.
+
+(b) Coverings.
+
+(c) Electric services not fixed to the underlying real estate.
+
+(d) Benches.
+
+(e) A source of heat not fixed to the underlying real estate.
+
+(f) A source of ventilation not fixed to the underlying real estate.
+
+(g) An irrigation system not fixed to the underlying real estate.
+
+III. Nothing in this section shall be construed in any way to change or affect the current use laws under RSA 79-A and the rules adopted in furtherance of RSA 79-A.
+
+ Source. 1998, 296:1, eff. April 1, 1999.
+
+ Section 72:12-e
+
+ 72:12-e Repealed by 2018, 238:2, eff. Nov. 1, 2018. – 
+
+ Section 72:13
+
+ 72:13 Mines, Sand, Gravel, Loam, or Other Similar Substances. – 
+
+Real estate shall be taxed independently of any mines or ores contained therein until such mines or ores shall become a source of profit, and independently of any sand, gravel, loam, or other similar substances contained therein until any of them shall become a source of profit; except when such mines, ores, sand, gravel, loam, or other similar substances, or rights therein are owned by some person other than the one to whom such real estate is taxed, in which case they shall be taxed as real estate to such other person. This section shall not apply to real estate containing earth, as that term is defined in RSA 155-E:1, I. Earth and the real property constituting the area from which earth is being excavated shall be taxed exclusively under RSA 72-B.
+
+ Source. 1870, 36:1. GL 53:3. 1885, 25:1. PS 55:4. 1911, 74:1. PL 60:12. RL 73:14. RSA 72:13. 1969, 122:1. 1999, 301:18, eff. April 1, 1999.
+
+ Section 72:14
+
+ 72:14 Repealed by 1972, 3:1, eff. April 30, 1972. – 
+
+ Section 72:15
+
+ 72:15 Repealed by 1981, 248:1, I, eff. April 1, 1981. – 
+
+ Section 72:16, 72:17
+
+ 72:16, 72:17 Repealed by 1970, 5:8, eff. Mar. 31, 1970. – 
+
+ Section 72:18
+
+ 72:18 Repealed by 1971, 363:2, eff. June 28, 1971. – 
+
+ Section 72:19
+
+ 72:19 Corporate Stock. – 
+
+Stock in the corporations shall not be taxed except as otherwise specifically provided.
+
+ Source. RS 39:3. CS 41:3. GL 53:7. PS 55:9. PL 60:18. RL 73:20.
+
+ Section 72:20
+
+ 72:20 Repealed by 1971, 363:3, eff. June 28, 1971. – 
+
+ Section 72:21
+
+ 72:21 Repealed by 1971, 363:4, eff. June 28, 1971. – 
+
+ Section 72:21-a
+
+ 72:21-a Repealed by 1961, 41:4, eff. April 1, 1961. – 
+
+ Section 72:22
+
+ 72:22 Burial Places. – 
+
+All public cemeteries and all property held in trust for the benefit of public burial places are exempt from taxation.
+
+ Source. 1895, 66:1. PL 60:21. RL 73:23.
+
+ Section 72:22-a
+
+ 72:22-a Assistance to Tax Exempt Organizations. – 
+
+In a case where a town, having no fire department is charged by fire department of another town for expenses for fighting a fire at the request of a charitable, educational or religious organization in the town, whose property is exempt from taxation, the town so charged shall have a right of action against any such organization to collect the actual costs for such fire assistance. Said charges shall be enforceable in an action of debt in the superior court.
+
+ Source. 1967, 365:1, eff. Sept. 1, 1967.
+
+ Section 72:23
+
+ 72:23 Real Estate and Personal Property Tax Exemption. – 
+
+The following real estate and personal property shall, unless otherwise provided by statute, be exempt from taxation:
+
+I. (a) Lands and the buildings and structures thereon and therein and the personal property owned by the state of New Hampshire or by a New Hampshire city, town, school district, or village district unless said real or personal property is used or occupied by other than the state or a city, town, school district, or village district under a lease or other agreement the terms of which provide for the payment of properly assessed real and personal property taxes by the party using or occupying said property. The exemption provided herein shall apply to any and all taxes against lands and the buildings and structures thereon and therein and the personal property owned by the state, cities, towns, school districts, and village districts, which have or may have accrued since March 31, 1975, and to any and all future taxes which, but for the exemption provided herein, would accrue against lands and buildings and structures thereon and therein and the personal property owned by the state, cities, towns, school districts, and village districts.
+
+(b)(1)(A) All leases and other agreements, the terms of which provide for the use or occupation by others of real or personal property owned by the state or a county, city, town, school district, or village district, entered into after July 1, 1979, shall provide for the payment of properly assessed real and personal property taxes by the party using or occupying said property no later than the due date.
+
+(B) Annually, on or before April 15, the lessors of all leases and other agreements, the terms of which provide for the use or occupation by others of real or personal property owned by the state or a county, city, town, school district, or village district, including those properties identified under subparagraph (d), shall provide written notice and a copy of the lease or other agreement to the assessing officials of the municipality in which the property is located. This subparagraph does not apply to the department of transportation.
+
+(C) On or before April 15, 2021, the department of transportation shall provide to the assessing officials of the municipality in which leased property is located a copy of any lease in effect as of January 1, 2021. Thereafter on an annual basis, on or before April 15, the department of transportation shall provide to the assessing officials of the municipality in which leased property is located a copy of any new or renewed lease in effect. Such lease filing with municipal assessing officials shall not include permits, licenses, or non-lease agreements.
+
+(2) Subparagraph (1) shall not apply to leases of state-owned railroad properties which are subject to railroad taxes under the provisions of RSA 82 or which provide revenue to the state, a portion of which is distributed to cities and towns pursuant to RSA 228:69, I(a).
+
+(3) Any political subdivision of the state may adopt as an exemption from the requirement of subparagraph (1) land leased exclusively for agriculture as defined in RSA 21:34-a, II.
+
+(4) All leases and agreements described in subparagraph (1) unless exempted under subparagraphs (2) or (3) shall include a provision that "failure of the lessee to pay the duly assessed personal and real estate taxes when due shall be cause to terminate said lease or agreement by the lessor." All such leases and agreements entered into on or after January 1, 1994, shall clearly state the lessee's obligations regarding the payment of both current and potential real and personal property taxes, and shall also state whether the lessee has an obligation to pay real and personal property taxes on structures or improvements added by the lessee. Failure of the lease to contain the precise language of this subparagraph shall not affect the occupant's obligation to pay property taxes.
+
+(c) If the lessee using or occupying the property fails to pay the duly assessed personal and real estate taxes on the due date, the tax collector of the taxing district involved shall notify the lessor that the same remains unpaid. Upon receipt of said notification from the tax collector, the lessor shall terminate said lease or agreement and pay over to the tax collector from amounts received from said lease such sums as are necessary to satisfy the tax due.
+
+(d) The exemptions provided in subparagraph (a) shall apply to the lands and the buildings and structures thereon and therein and personal property owned by the university system of New Hampshire or the community college system of New Hampshire. The requirements of subparagraph (b) shall apply to all leases and other agreements entered into or renewed on or after April 1, 2006, the terms of which provide for the use or occupation by others of real or personal property owned by the university system of New Hampshire or the community college system of New Hampshire. The remedies set forth in subparagraph (c) shall be available to enforce the payment of real and personal property taxes assessed against the lessees of property owned by the university system of New Hampshire or the community college system of New Hampshire pursuant to this subparagraph.
+
+II. Lands and buildings and personal property owned and used by any county for governmental purposes, including hospitals, court houses, registry buildings, and county correctional facilities except that county farms and their lands, buildings and taxable personal property shall be taxed.
+
+III. Houses of public worship, parish houses, church parsonages, including parsonages that are rented or vacant, convents, monasteries, buildings and the lands appertaining to them owned, used and occupied directly for religious training or for other religious purposes by any regularly recognized and constituted denomination, creed or sect, organized, incorporated or legally doing business in this state and the personal property used by them for the purposes for which they are established.
+
+IV. The buildings and structures of schools, seminaries of learning, colleges, academies and universities organized, incorporated or legally doing business in this state and owned, used and occupied by them directly for the purposes for which they are established, including but not limited to the dormitories, dining rooms, kitchens, auditoriums, classrooms, infirmaries, administrative and utility rooms and buildings connected therewith, athletic fields and facilities and gymnasiums, boat houses and wharves belonging to them and used in connection therewith, and the land thereto appertaining but not including lands and buildings not used and occupied directly for the purposes for which they are organized or incorporated, and the personal property used by them directly for the purposes for which they are established, provided none of the income or profits are divided among the members or stockholders or used or appropriated for any other purpose than the purpose for which they are organized or established; provided further that if the value of the dormitories, dining rooms and kitchens shall exceed $150,000, the value thereof in excess of said sum shall be taxable. A town at an annual town meeting or the governing body of a city may vote to increase the amount of the exemption upon dormitories, dining rooms and kitchens.
+
+V. The buildings, lands and personal property of charitable organizations and societies organized, incorporated, or legally doing business in this state, owned, used and occupied by them directly for the purposes for which they are established, provided that none of the income or profits thereof is used for any other purpose than the purpose for which they are established.
+
+V-a. The real estate and personal property owned by any organization described in paragraphs I, II, III, IV or V of this section and occupied and used by another organization described in said paragraphs, but only to the extent that such real estate and personal property would be exempt from taxation under said paragraphs if such property were owned by the organization occupying and using the property, as long as any rental fee and repairs, charged by the owner, are not in clear excess of fair rental value.
+
+VI. Every charitable organization or society, except those religious and educational organizations and societies whose real estate is exempt under the provisions of paragraphs III and IV, shall annually before June 1, file with the municipality in which the property is located upon a form prescribed and provided by the board of tax and land appeals a statement of its financial condition for the preceding fiscal year and such other information as may be necessary to establish its status and eligibility for tax exemption. If any organization, otherwise qualified to receive an exemption, shall satisfy the selectmen that they were prevented by accident, mistake, or misfortune from filing an application on or before June 1, the officials may receive the application at a later date and grant an exemption thereunder for that year; but no such application shall be received or exemption granted after the local tax rate has been approved for that year.
+
+VII. For the purposes of this section, the term "charitable" shall have the meaning set forth in RSA 72:23-l.
+
+ Source. 1913, 115:1. 1915, 150:1. 1921, 41:1. 1923, 70:1. PL 60:22. 1930, 4:1. 1941, 174:1. RL 73:24. 1945, 141:1. RSA 70:23. 1955, 157:1. 1957, 202:2. 1969, 113:1. 1973, 544:8. 1975, 482:1, 2. 1977, 568:8; 600:83. 1979, 182:1. 1988, 1:2; 89:11. 1991, 111:1; 306:3. 1993, 195:1. 1994, 378:1. 1999, 304:2. 2002, 190:7. 2003, 56:3. 2006, 205:2. 2011, 199:2, eff. Aug. 19, 2011; 224:361, eff. July 1, 2011. 2017, 168:1, eff. June 28, 2017. 2018, 232:1, eff. Jan. 1, 2019. 2020, 33:6, eff. Jan. 1, 2021. 2024, 183:1, eff. April 1, 2025. 2025, 303:1, eff. July 1, 2025.
+
+ Section 72:23-a
+
+ 72:23-a Veterans Organization. – 
+
+The real estate and the personal property owned, occupied and used directly by the New Hampshire Veterans Association, the United Spanish War Veterans, Veterans of Foreign Wars, the American Legion, the Disabled American Veterans, Sons of Union Veterans of the Civil War, Veterans of World War I Incorporated and any other veterans organization incorporated by Act of Congress or of its departments or local chapters or posts, shall be exempt from taxation.
+
+ Source. 1957, 202:4. 1961, 233:1. 1969, 406:1. 1993, 73:2, eff. June 22, 1993.
+
+ Section 72:23-b
+
+ 72:23-b American Red Cross. – 
+
+The real estate and the personal property belonging to the American National Red Cross shall be exempt from taxation.
+
+ Source. 1957, 202:4, eff. April 1, 1958.
+
+ Section 72:23-c
+
+ 72:23-c Annual List. – 
+
+I. Every religious, educational and charitable organization, Grange, the Veterans of Foreign Wars, the American Legion, the Disabled American Veterans, the American National Red Cross and any other national veterans association shall annually, on or before April 15, file a list of all real estate and personal property owned by them on which exemption from taxation is claimed, upon a form prescribed and provided by the board of tax and land appeals, with the selectmen or assessors of the place where such real estate and personal property are taxable. If any such organization or corporation shall willfully neglect or refuse to file such list upon request therefor, the selectmen may deny the exemption. If any organization, otherwise qualified to receive an exemption, shall satisfy the selectmen or assessors that they were prevented by accident, mistake or misfortune from filing an application on or before April 15, the officials may receive the application at a later date and grant an exemption thereunder for that year; but no such application shall be received or exemption granted after the local tax rate has been approved for that year.
+
+II. City assessors, boards of selectmen, and other officials having power to act under the provisions of this chapter to grant or deny tax exemptions to religious, educational, and charitable organizations shall have the authority to request such materials concerning the organization seeking exemption including its organizational documents, nature of membership, functions, property and the nature of that property, and such other information as shall be reasonably required to make determinations of exemption of property under this chapter. Such information shall be provided within 30 days of a written request. Failure to provide information requested under this section shall result in a denial of exemption unless it is found that such requests were unreasonable.
+
+ Source. 1957, 202:4. 1961, 233:2. 1973, 544:8. 1983, 8:2. 1988, 1:3. 1991, 306:4. 1994, 378:2, eff. April 1, 1994.
+
+ Section 72:23-d
+
+ 72:23-d New Hampshire Congregational-Christian Conference. – 
+
+The real estate and personal property owned by the New Hampshire Congregational-Christian Conference, or a subsidiary corporation thereof, occupied and used by the conference or the subsidiary corporation to provide community housing for elderly persons, if none of the income or profits of the community housing is used for any purpose other than the purpose for which the housing is established, shall be exempt from taxation. For the purpose of this paragraph an elderly person is one who is 62 years or more of age. The age of the head of the family determines the eligibility of the family unit in the community housing. On or before December 1 of each year the owner of the community housing shall pay to the town or city in which the property is situated, in lieu of taxes, a sum representing 10 percent of the shelter rent received by the owner during the preceding calendar year. For cause shown, having in mind the nature and purpose of the corporation, the board of tax and land appeals may abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1965, 189:1. 1973, 544:8, 13. 1988, 1:3. 1991, 306:4, eff. April 1, 1992.
+
+ Section 72:23-e
+
+ 72:23-e Nutfield Heights Inc. – 
+
+The real estate and personal property of Nutfield Heights Inc., a nonprofit corporation sponsored by Derry and Londonderry United Methodist Churches to provide community housing for elderly persons, if none of the income or profits of the community housing is used for any purpose other than the purpose for which the housing is established, shall be exempt from taxation. For the purpose of this section an elderly person is one who is 62 years or more of age. The age of the head of the family determines the eligibility of the family unit in the community housing. On or before December 1 of each year the owner of the community housing shall pay to the town or city in which the property is situated, in lieu of taxes, a sum representing 10 percent of the shelter rent received by the owner during the preceding calendar year. For cause shown, having in mind the nature and purpose of the corporation, the board of tax and land appeals may abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1970, 23:1. 1973, 544:8, 13. 1988, 1:3. 1991, 306:4, eff. April 1, 1992.
+
+ Section 72:23-f
+
+ 72:23-f Salemhaven, Inc. – 
+
+The real estate and personal property of Salemhaven, Inc., a nonprofit New Hampshire corporation occupied and used by said Salemhaven, Inc., to provide community health care facilities for persons in need of the same in the town of Salem and surrounding areas, pursuant to the rules and regulations of the United States Department of Housing and Urban Development, United States Department of Health, Education and Welfare, and the state of New Hampshire department of health and human services, if none of the income or profits of the community health care facility is used for any purpose other than the purpose for which the facility is established, shall be exempt from taxation, and shall be limited to the 97-99 Geremonty Drive site, the original structure plus any additions to original site. On or before December 1 of each year the owner of the community health care facility shall pay to the town or city in which the property is situated, in lieu of taxes, a sum representing 10 percent of the shelter rent received by the owner during the preceding calendar year. For cause shown, having in mind the nature and purpose of the corporation, the board of tax and land appeals may abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1977, 568:7. 1983, 291:1, I. 1991, 306:4, eff. April 1, 1992.
+
+ Section 72:23-g
+
+ 72:23-g Letitia Pratt Foundation, Inc. – 
+
+The real estate and personal property of Letitia Pratt Foundation, Inc., a nonprofit corporation providing community housing for physically disabled and elderly persons, if none of the income or profits of the community housing is used for any purpose other than the purpose for which the housing is established, shall be exempt from taxation. For the purpose of this section an elderly person is one who is 62 years or more of age. The age of the head of the family determines the eligibility of the family unit in the community housing. On or before December 1 of each year the owner of the community housing shall pay to the town or city in which the property is situated, in lieu of taxes, a sum representing 10 percent of the shelter rent received by the owner during the preceding calendar year. For cause shown, having in mind the nature and purpose of the corporation, the board of tax and land appeals may abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1978, 40:25. 1990, 140:2, X. 1991, 306:4, eff. April 1, 1992.
+
+ Section 72:23-h
+
+ 72:23-h Granges. – 
+
+The real estate and personal property owned by Granges which are incorporated in this state shall be exempt from property taxes. If such property is rented for business purposes, the real estate shall not be exempt.
+
+ Source. 1983, 8:1, eff. Mar. 17, 1983.
+
+ Section 72:23-i
+
+ 72:23-i Rannie Webster Foundation. – 
+
+The real estate and personal property of the Rannie Webster Foundation, a nonprofit corporation which provides convalescent care and elderly housing for elderly persons through the Webster Pines Homes in Rye, New Hampshire, if none of the income or profits of the elderly housing is used for any purpose other than the purpose for which the housing is established, shall be exempt from taxation. For the purpose of this section an elderly person is one who is 62 years or more of age. The age of the head of the family determines the eligibility of the family unit in the elderly housing. On or before December 1 of each year the owner of the elderly housing shall pay to the town or city in which the property is situated, in lieu of taxes, a sum representing 10 percent of the shelter rent received by the owner during the preceding calendar year. For cause shown, having in mind the nature and purpose of the corporation, the board of tax and land appeals may abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1986, 84:1. 1988, 1:4. 1991, 306:5, eff. April 1, 1992.
+
+ Section 72:23-j
+
+ 72:23-j Senior Citizens Housing Development Corporation of Claremont, Inc. – 
+
+I. The real estate and personal property of the Senior Citizens Housing Development Corporation of Claremont, Inc., a nonprofit New Hampshire corporation which provides housing for elderly persons, shall, if none of the income or profits is used for any purpose other than the purpose for which such housing was established, be exempt from taxation.
+
+II. On or before November 1 of each year the owner of the housing project shall enter into an agreement with the municipality in which the property is situated to pay the municipality, on December 1 of each year, a sum in lieu of taxes to defray the costs of municipal, non-utility, services. Failing mutual agreement, the sum paid on December 1 of each year shall be an amount not to exceed the lower of 10 percent of the shelter rent received by the owner from all sources during the preceding calendar year, not including security deposits received from residents of the housing project, for shelter and care of residents within the project, or a sum equivalent to that derived from the application of the current municipal, non-school, portion of the local tax rate against the net local assessed value of the project. For cause shown and at any time, keeping in mind the nature and purpose of the project, the municipality or the board of tax and land appeals may refund or abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1987, 194:1. 1991, 306:6, eff. April 1, 1992.
+
+ Section 72:23-k
+
+ 72:23-k Charitable, Nonprofit Housing Projects. – 
+
+I. The real estate and personal property of charitable, nonprofit community housing and community health care facilities for elderly and disabled persons, if none of the income or profits is used for any purpose other than community housing or community health care, shall be exempt from taxation. This exemption shall apply to housing and health care facilities situated within New Hampshire which are sponsored or owned by nonprofit, charitable corporations or organizations, located within or outside of the state, and to projects organized, operated, or assisted under state law or pursuant to rules and regulations of the United States Department of Housing and Urban Development, the United States Department of Health and Human Services, or any successor agency. For the purposes of this section an elderly person is one who is 62 years or more of age. The age of the head of the family determines the eligibility of the family unit in the project. For the purposes of this section, the term "charitable" shall have the meaning set forth in RSA 72:23- l. 
+
+II. On or before November 1 of each year the owner of the housing project shall enter into an agreement with the municipality in which the property is situated to pay the municipality, on December 1 of each year, a sum in lieu of taxes to defray the costs of municipal, non-utility, services. Failing mutual agreement, the sum paid on December 1 of each year shall be an amount not to exceed the lower of 10 percent of the shelter rent received by the owner from all sources during the preceding calendar year, not including security deposits received from residents of the housing project, for shelter and care of residents within the project, or a sum equivalent to that derived from application of the current municipal, non-school, portion of the local tax rate against the net local assessed value of the project. For cause shown and at any time, keeping in mind the nature and purpose of the project, the municipality or the board of tax and land appeals may refund or abate all or a portion of the payment in lieu of taxes in any year. The owner shall on or before June 1 of each year file with the municipality in which the property is located, upon a form prescribed and provided by the board of tax and land appeals, a statement of its financial condition for the preceding fiscal year and such other information as the board of tax and land appeals requires.
+
+ Source. 1987, 194:1. 1990, 140:2, X. 1991, 111:2, 3; 306:7, eff. April 1, 1992.
+
+ Section 72:23-l
+
+ 72:23-l Definition of "Charitable". – 
+
+The term "charitable" as used to describe a corporation, society or other organization within the scope of this chapter, including RSA 72:23 and 72:23-k, shall mean a corporation, society or organization established and administered for the purpose of performing, and obligated, by its charter or otherwise, to perform some service of public good or welfare advancing the spiritual, physical, intellectual, social or economic well-being of the general public or a substantial and indefinite segment of the general public that includes residents of the state of New Hampshire, with no pecuniary profit or benefit to its officers or members, or any restrictions which confine its benefits or services to such officers or members, or those of any related organization. The fact that an organization's activities are not conducted for profit shall not in itself be sufficient to render the organization "charitable" for purposes of this chapter, nor shall the organization's treatment under the United States Internal Revenue Code of 1986, as amended. This section is not intended to abrogate the meaning of "charitable" under the common law of New Hampshire.
+
+ Source. 1991, 111:4. 1994, 378:3, eff. April 1, 1994.
+
+ Section 72:23-m
+
+ 72:23-m Applicability of Exemptions. – 
+
+The exemptions afforded by RSA 72:23 or 72:23-a through 72:23-k, as well as exemptions granted by other provisions of law, shall be construed to confer exemption only upon property which meets requirements of the statute under which the exemption is claimed. The burden of demonstrating the applicability of any exemption shall be upon the claimant.
+
+ Source. 1994, 378:4, eff. April 1, 1994.
+
+ Section 72:23-n
+
+ 72:23-n Voluntary Payments in Lieu of Taxes. – 
+
+The governing body of any municipality may enter into negotiations for a voluntary payment in lieu of taxes from otherwise fully or partially tax exempt properties, and may accept from such properties a voluntary payment in lieu of taxes.
+
+ Source. 1996, 208:1, eff. June 10, 1996.
+
+ Section 72:24 to 72:27
+
+ 72:24 to 72:27 Repealed by 1957, 202:3, eff. April 1, 1958. – 
+
+ Section 72:27-a
+
+ 72:27-a Procedure for Adoption, Modification, or Rescission. – 
+
+I. Any town or city may adopt the provisions of RSA 72:28, RSA 72:28-b, RSA 72:29-a, RSA 72:35, RSA 72:37, RSA 72:37-b, RSA 72:38-b, RSA 72:39-a, RSA 72:62, RSA 72:66, RSA 72:70, RSA 72:76, RSA 72:82, RSA 72:85, or RSA 72:87, in the following manner:
+
+(a) In a town, other than a town that has adopted a charter pursuant to RSA 49-D, the question shall be placed on the warrant of a special or annual town meeting, by the governing body or by petition pursuant to RSA 39:3.
+
+(b) In a city or town that has adopted a charter pursuant to RSA 49-C or RSA 49-D, the legislative body may consider and act upon the question in accordance with its normal procedures for passage of resolutions, ordinances, and other legislation. In the alternative, the legislative body of such municipality may vote to place the question on the official ballot for any regular municipal election.
+
+II. The vote shall specify the provisions of the property tax exemption or credit, the amount of such exemption or credit, and the manner of its determination, as listed in paragraph I. If a majority of those voting on the question vote "yes," the exemption or credit shall take effect within the town or city, on the date set by the governing body, or in the tax year beginning April 1 following its adoption, whichever shall occur first.
+
+III. A municipality may modify, if applicable, or rescind the exemption or credits provided in paragraph I in the manner described in this section.
+
+IV. An amendment to a statutory provision listed in paragraph I related to an exemption or credit amount or to the eligibility or application of an exemption or credit, shall apply in a municipality which previously adopted the provision only after the municipality complies with the procedure in this section, unless otherwise expressly required by law.
+
+ Source. 2003, 299:1; 299:23. 2004, 170:3. 2008, 224:3, eff. July 1, 2008. 2016, 217:2, eff. Aug. 8, 2016. 2017, 179:1, eff. Aug. 28, 2017. 2019, 327:3, eff. Oct. 15, 2019. 2021, 200:2, Pt. II, Sec. 1, eff. Oct. 9, 2021.
+
+ Section 72:28
+
+ 72:28 Standard and Optional Veterans' Tax Credit. – 
+
+I. The standard veterans' tax credit shall be $50.
+
+II. The optional veterans' tax credit, upon adoption by a city or town pursuant to RSA 72:27-a, shall be an amount from $51 up to $750. The optional veterans' tax credit shall replace the standard veterans' tax credit in its entirety and shall not be in addition thereto.
+
+III. Either the standard veterans' tax credit or the optional veterans' tax credit shall be subtracted each year from the property tax on the veteran's residential property. However, the surviving spouse of a resident who suffered a service-connected death may have the amount subtracted from the property tax on any real property in the same municipality where the surviving spouse is a resident.
+
+IV. The following persons shall qualify for the standard veterans' tax credit or the optional veterans' tax credit:
+
+(a) Every resident of this state who is a veteran, as defined in RSA 21:50, and served not less than 90 days on active service in the armed forces of the United States in any qualifying war or armed conflict listed in this section, and continues to serve or was honorably discharged or an officer who continues to serve or was honorably separated from service; or the spouse or surviving spouse of such resident, provided that training for active duty by a member of the national guard or reserve shall be included as service under this subparagraph;
+
+(b) Every resident of this state who was terminated from the armed forces because of service-connected disability; or the surviving spouse of such resident; and
+
+(c) The surviving spouse of any resident who suffered a service-connected death.
+
+V. Service in a qualifying war or armed conflict shall be as follows:
+
+(a) "World War I" between April 6, 1917 and November 11, 1918, extended to April 1, 1920 for service in Russia; provided that military or naval service on or after November 12, 1918 and before July 2, 1921, where there was prior service between April 6, 1917 and November 11, 1918 shall be considered as World War I service;
+
+(b) "World War II" between December 7, 1941 and December 31, 1946;
+
+(c) "Korean Conflict" between June 25, 1950 and January 31, 1955;
+
+(d) "Vietnam Conflict" between December 22, 1961 and May 7, 1975;
+
+(e) "Vietnam Conflict" between July 1, 1958 and December 22, 1961, if the resident earned the Vietnam service medal or the armed forces expeditionary medal;
+
+(f) "Persian Gulf War" between August 2, 1990 and the date thereafter prescribed by Presidential proclamation or by law; and
+
+(g) Any other war or armed conflict that has occurred since May 8, 1975, and in which the resident earned an armed forces expeditionary medal or theater of operations service medal.
+
+ Source. 1871, 13:1. GL 54:2. PS 56:4. 1907, 95:1. 1919, 54:1. 1921, 12:3; 103:1. 1923, 68:2. PL 60:26. 1941, 157:1. RL 73:29. 1943, 174:1. 1944, 4:1. 1947, 240:1, par. 29. 1949, 167:1. 1951, 132:1. RSA 72:28. 1955, 289:1. 1963, 49:1; 118:1; 324:1. 1967, 35:1, 2; 219:1, 2. 1971, 303:1. 1975, 282:1. 1976, 42:1, 2. 1977, 61:1. 1979, 288:2. 1981, 215:1. 1989, 64:1; 270:1. 1991, 70:3-6. 1992, 70:3. 1993, 73:3, 10; 262:1. 2003, 299:2. 2005, 126:1, eff. April 1, 2006. 2013, 254:2, eff. July 24, 2013. 2016, 217:9, eff. Aug. 8, 2016. 2018, 148:1, eff. Apr. 1, 2018. 2022, 121:1, eff. July 26, 2022.
+
+ Section 72:28-a
+
+ 72:28-a Repealed by 2003, 299:29, I, eff. April 1, 2003. – 
+
+ Section 72:28-b
+
+ 72:28-b All Veterans' Tax Credit. – 
+
+I. A town or city may adopt or rescind the all veterans' property tax credit granted under this section by the procedure in RSA 72:27-a.
+
+II. The credit granted under this section shall be the same as the amount of the standard or optional veterans' tax credit in effect in the town or city under RSA 72:28. A town or city with an existing standard or optional veterans' tax credit under RSA 72:28 prior to August 18, 2016, adopting the credit under this section, may phase in the amount of the all veterans' tax credit over a 3-year period to match the standard or optional veterans' tax credit.
+
+III. The all veterans' tax credit shall be subtracted each year from the property tax on the veteran's residential property.
+
+IV. A person shall qualify for the all veterans' tax credit if the person is a resident of this state who is a veteran, as defined in RSA 21:50, and served not less than 90 days on active service in the armed forces of the United States and continues to serve or was honorably discharged or an officer who continues to serve or was honorably separated from service; or the spouse or surviving spouse of such resident, provided that training for active duty or state active duty by a member of the national guard or reserve shall be included as service under this paragraph; provided however that the person is not eligible for and is not receiving a credit under RSA 72:28 or RSA 72:35.
+
+ Source. 2016, 217:1, eff. Aug. 8, 2016. 2017, 109:1, eff. June 8, 2017. 2022, 121:2, eff. July 26, 2022.
+
+ Section 72:28-c
+
+ 72:28-c Optional Tax Credit for Combat Service. – 
+
+I. A town or city may adopt or rescind an optional tax credit for combat service pursuant to the procedure provided in RSA 72:27-a.
+
+II. The optional tax credit for combat service, upon adoption by a city or town pursuant to RSA 72:27-a, shall be an amount from $50 up to $500. The tax credit for combat service shall be subtracted each year from the property tax on the qualifying service member's residential real estate, as defined in RSA 72:29, II.
+
+III. To qualify for the tax credit for combat service, a person shall be a resident of this state engaged at any point during the taxable period in combat service as a member of the New Hampshire national guard or a reserve component of the Unites States armed forces, called to active duty. For purposes of this section, and in accordance with Internal Revenue Service Publication 3, Armed Forces Tax Guide, "combat service" shall mean military service in one of the following areas:
+
+(a) An active combat area as designated by the President in an Executive Order, for which the service member receives special pay for duty subject to hostile fire or imminent danger as certified by the Department of Defense.
+
+(b) A support area as designated by the Department of Defense in direct sustainment of military operations in the combat zone, for which the service member receives special pay for duty subject to hostile fire or imminent danger as certified by the Department of Defense.
+
+(c) Service in a contingency operation as designated by the Department of Defense, for which the service member receives special pay for duty subject to hostile fire or imminent danger as certified by the Department of Defense.
+
+IV. The application for the tax credit under this section shall be accompanied by the service member's military orders, and shall include such information as may be required for the assessor's office to verify the dates of combat service.
+
+V. A tax credit for combat service shall be in lieu of, and not in addition to, the optional veteran's tax credit under RSA 72:28 or the all veterans' tax credit under RSA 72:28-b. The service member shall be eligible for the credit in each tax year in which the combat service occurs, but the credit may be prorated in the second tax year based on the duration of combat service.
+
+ Source. 2018, 151:1, eff. Jan. 1, 2019.
+
+ Section 72:29
+
+ 72:29 Definitions. – 
+
+I. The word "resident" as used in RSA 72:28 , RSA 72:28-b, and RSA 72:28-c shall mean a person who has resided in this state for at least one year preceding April 1, in the year in which the tax credit is claimed.
+
+II. The term "residential real estate" for the purposes of RSA 72:28-34, inclusive, shall mean the real estate which the person qualified for an exemption or a tax credit thereunder occupies as his principal place of abode together with any land or buildings appurtenant thereto and shall include manufactured housing if used for said purpose.
+
+III. "Exemption" as used in RSA 72 shall mean the amount of money to be deducted from the assessed valuation, for property tax purposes, of real property.
+
+IV. The term "tax credit" as used in RSA 72 shall mean the amount of money to be deducted from the person's tax bill.
+
+V. The term "surviving spouse" as used in RSA 72 shall not include a surviving spouse that has remarried, but if the surviving spouse is later divorced, his or her status as the surviving spouse of a veteran is regained. If the surviving spouse remarries and the new husband or wife dies, he or she shall be deemed the widow or widower of the latest spouse and shall not revert to the status of a surviving spouse of a veteran.
+
+VI. For purposes of RSA 72:28, 28-b, 28-c, 29-a, 30, 31, 32, 33, 35, 36-a, 37, 37-a, 37-b, 38-a, 39-a, 62, 66, and 70, the ownership of real estate, as expressed by such words as "owner," "owned" or "own," shall include those who have placed their property in a grantor/revocable trust or who have equitable title or the beneficial interest for life in the subject property.
+
+VII. The term "theater of operations service medal" for the purposes of RSA 72:28-34 shall mean any medal, ribbon, or badge awarded to a member of the armed forces which establishes that the member served in a theater of war or armed conflict, as determined by the director of the division of veterans services with written notification to the department of revenue administration.
+
+ Source. 1947, 240:1, par. 29-g. RSA 72:29. 1955, 289:4. 1963, 118:2. 1991, 70:9, 10. 1993, 73:4. 1994, 102:1; 390:7. 1995, 265:12. 2004, 170:2; 238:1. 2010, 119:7. 2011, 138:1, eff. April 1, 2011. 2016, 217:3, 5, eff. Aug. 8, 2016. 2018, 151:2, 3, eff. Jan. 1, 2019. 2019, 273:7, eff. Sept. 17, 2019.
+
+ Section 72:29-a
+
+ 72:29-a Surviving Spouse. – 
+
+I. The surviving spouse of any person who was killed or died while on active duty in the armed forces of the United States or any of the armed forces of any of the governments associated with the United States in the wars, conflicts or armed conflicts, or combat zones set forth in RSA 72:28, shall receive a tax credit in the amount of $700 for the taxes due upon the surviving spouse's real and personal property, whether residential or not, in the same municipality where the surviving spouse is a resident.
+
+II. Upon the adoption of this paragraph by a city or town as provided in RSA 72:27-a, the surviving spouse of any person who was killed or died while on active duty in the armed forces of the United States or any of the armed forces of any of the governments associated with the United States in the wars, conflicts or armed conflicts, or combat zones set forth in RSA 72:28, shall receive a tax credit in the amount from $701 up to $2,000 for the taxes due upon the surviving spouse's real and personal property, whether residential or not, in the same municipality where the surviving spouse is a resident.
+
+ Source. 1963, 174:2. 1967, 219:3. 1969, 56:1. 1975, 277:1. 1990, 125:3. 1991, 70:11. 1993, 73:5. 2003, 299:3, eff. April 1, 2003.
+
+ Section 72:29-b
+
+ 72:29-b Repealed by 2003, 299:29, II, eff. April 1, 2003. – 
+
+ Section 72:30
+
+ 72:30 Proration of Tax Credit. – 
+
+If any entitled person or persons shall own a fractional interest in residential real estate, each such entitled person shall be granted a tax credit in proportion to his or her interest therein with other persons so entitled, but in no case shall the total tax credit exceed the tax credit allowed under RSA 72:28, I or II, or RSA 72:28-b, except as provided in RSA 72:31.
+
+ Source. 1947, 240:1, par. 29-a. 1949, 167:2. RSA 72:30. 1955, 289:2. 1967, 219:4. 1991, 70:14. 2003, 299:4, eff. April 1, 2003. 2016, 217:4, eff. Aug. 8, 2016.
+
+ Section 72:31
+
+ 72:31 Husband and Wife. – 
+
+A husband and wife, each qualifying for a tax credit, shall each be granted a tax credit upon their residential real estate as provided under RSA 72:28, I or II, or RSA 72:28-b.
+
+ Source. 1947, 240:1, par. 29-b. RSA 72:31. 1955, 289:3. 1967, 219:5. 1991, 70:14. 2003, 299:5, eff. April 1, 2003. 2016, 217:4, eff. Aug. 8, 2016.
+
+ Section 72:32
+
+ 72:32 Veterans of Allied Forces. – 
+
+Any person otherwise entitled under the provisions of RSA 72:28, 28-b, 30 and 31 who being a citizen of the United States, or being a resident of New Hampshire, at the time of his or her entry therein, served on active duty in the armed forces of any of the governments associated with the United States in the wars, conflicts, or armed conflicts set forth in RSA 72:28, shall be entitled to the tax credit authorized by RSA 72:28 or RSA 72:28-b.
+
+ Source. 1947, 240:1, par. 29-c. 1949, 291:4. RSA 72:32. 1967, 206:4. 1991, 70:14, eff. April 1, 1992. 2016, 217:4, eff. Aug. 8, 2016.
+
+ Section 72:33
+
+ 72:33 Application for Exemption or Tax Credit. – 
+
+I. No person shall be entitled to the exemptions or tax credits provided by RSA 72:28, 28-b, 28-c, 29-a, 30, 31, 32, 35, 36-a, 37, 37-a, 37-b, 38-b, 39-b, 62, 66, and 70 unless the person has filed with the selectmen or assessors, by April 15 preceding the setting of the tax rate, a permanent application therefor, signed under penalty of perjury, on a form approved and provided by the commissioner of revenue administration, showing that the applicant is the true and lawful owner of the property on which the exemption or tax credit is claimed and that the applicant was duly qualified upon April 1 of the year in which the exemption or tax credit is first claimed, or, in the case of financial qualifications, that the applicant is duly qualified at the time of application. The form shall include the following and such other information deemed necessary by the commissioner:
+
+(a) Instructions on completing and filing the form, including an explanation of the grounds for requesting tax exemptions and credits pursuant to RSA 72.
+
+(b) Sections for information concerning the applicant, the property for which the relief is sought, and other properties owned by the person applying.
+
+(c) A section explaining the appeal procedure and stating the appeal deadline in the event the municipality denies the tax relief request in whole or in part.
+
+(d) A place for the applicant's signature with a certification by the person applying that the application has a good faith basis and the facts in the application are true.
+
+I-a. If any person, otherwise qualified to receive an exemption or credit, shall satisfy the selectmen or assessors that he or she was prevented by accident, mistake, or misfortune from filing a permanent application or amended permanent application on or before April 15 of the year in which he or she desires the exemption to begin, said officials may receive the application at a later date and grant an exemption or credit for that year; but no such application shall be received or exemption or credit granted after the local tax rate has been approved for that year.
+
+I-b. Notwithstanding the April 15 application deadline in paragraph I, a person may apply for the tax credit for combat service under RSA 72:28-c at any point during the tax year in which the person is engaged in combat service. If the application is received and granted after the tax rate for the city or town is set, the credit shall be applied to the balance of tax payments due for that year. If a person is deemed eligible for the tax credit after taxes have been billed and paid for the tax year in which the person served, the credit shall be applied in the following year.
+
+II. Any person who changes residence after filing such a permanent application shall file an amended permanent application on or before December 1 immediately following the change of residence. The filing of the permanent application shall be sufficient for said persons to receive these exemptions or tax credits on an annual basis so long as the applicant does not change residence.
+
+III. If the selectmen or assessors are satisfied that the applicant has willfully made any false statement in the application to obtain an exemption or tax credit, they may refuse to grant the exemption or tax credit.
+
+IV. [Repealed.]
+
+V. In addition to the above requirements, applicants for exemption who claim ownership pursuant to RSA 72:29, VI shall file with their application an additional statement signed under penalty of perjury, on a form approved and provided by the commissioner of revenue administration, showing they meet the requirements of RSA 72:29, VI.
+
+VI. The assessing officials may require applicants for any exemption or tax credit to file the information listed in RSA 72:34, or the statement required by RSA 72:33, V periodically but no more frequently than annually. Failure to file such periodic statements may, at the discretion of the assessing officials, result in a loss of the exemption or tax credit for that year.
+
+ Source. 1947, 240:1, par. 29-d. RSA 72:33. 1969, 55:1. 1973, 544:8. 1977, 502:1. 1983, 155:8; 385:1. 1987, 325:1. 1991, 70:14. 1994, 102:2; 390:3, 8. 1995, 265:3, 20. 1996, 140:7. 1997, 281:1. 2003, 131:1; 299:6, 25, 26. 2007, 182:3, eff. April 1, 2007. 2016, 217:6, eff. Aug. 8, 2016. 2018, 151:4, 5, eff. Jan. 1, 2019.
+
+ Section 72:33-a
+
+ 72:33-a Repealed by 1994, 102:3, I, eff. July 10, 1994. – 
+
+ Section 72:33-b
+
+ 72:33-b Repealed by 2003, 299:30, eff. April 1, 2005. – 
+
+ Section 72:34
+
+ 72:34 Investigation of Application and Decision by Town Officials. – 
+
+I. On receipt of an application provided for in RSA 72:33 or RSA 72:38-a, the selectmen or assessors shall examine it as to the right to the tax exemption, tax deferral or tax credit, the ownership of the property listed, and, if necessary, the encumbrances reported.
+
+II. For those exemptions having income or asset limitations, the assessing officials may request true copies of any documents as needed to verify eligibility. Unless otherwise provided for by law, all documents submitted with an application or as requested, as provided for in paragraphs I and II, and any copies shall be considered confidential, handled so as to protect the privacy of the individual, and not used for any purpose other than the specific statutory purposes for which the information was originally obtained. All documents and copies of such documents submitted by the applicant shall be returned to the applicant after a decision is made on the application.
+
+III. The assessing officials shall grant the exemption, deferral, or tax credit if:
+
+(a) They are satisfied that the applicant has not willfully made any false statement in the application for the purpose of obtaining the exemption, deferral, or tax credit; and
+
+(b) The applicant cooperated with their requests under paragraph II, if it applies.
+
+IV. On or before July 1 prior to the date of notice of tax under RSA 72:1-d, the selectmen or assessors shall send by first class mail a written decision to any taxpayer who timely requests an exemption or tax credit. On or before July 1 following the date of notice of tax under RSA 72:1-d, the selectmen or assessors shall send by first class mail a written decision to any taxpayer who timely requests a deferral. This decision shall be sent on a form to be prepared by the department of revenue administration. The decision shall advise the taxpayer of the municipality's decision and shall inform the taxpayer of the appeal procedure set forth in RSA 72:34-a. Failure to respond shall constitute denial. Municipalities may, at their option, require the taxpayer to furnish a self-addressed envelope with sufficient postage for the mailing of this written decision.
+
+ Source. 1947, 240:1, par. 29-e. RSA 72:34. 1969, 183:1. 1981, 188:1. 1991, 70:15, 16. 1995, 265:4. 2003, 299:7. 2004, 170:4. 2006, 30:1, eff. June 3, 2006.
+
+ Section 72:34-a
+
+ 72:34-a Appeal From Refusal to Grant Exemption, Deferral, or Tax Credit. – 
+
+Whenever the selectmen or assessors refuse to grant an applicant an exemption, deferral, or tax credit to which the applicant may be entitled under the provisions of RSA 72:23, 23-d, 23-e, 23-f, 23-g, 23-h, 23-i, 23-j, 23-k, 28, 28-b, 28-c, 29-a, 30, 31, 32, 35, 36-a, 37, 37-a, 37-b, 38-a, 38-b, 39-a, 39-b, 41, 42, 62, 66, or 70 the applicant may appeal in writing, on or before September 1 following the date of notice of tax under RSA 72:1-d, to the board of tax and land appeals or the superior court, which may order an exemption, deferral, or tax credit, or an abatement if a tax has been assessed.
+
+ Source. 1969, 183:2. 1973, 544:13. 1975, 127:2. 1982, 42:88. 1983, 155:9. 1987, 325:2. 1991, 70:17; 306:8. 1994, 390:5. 1995, 265:5. 1996, 140:8. 2003, 131:2, eff. April 1, 2003. 2016, 217:7, eff. Aug. 8, 2016. 2018, 151:6, eff. Jan. 1, 2019.
+
+ Section 72:34-b
+
+ 72:34-b Extensions. – 
+
+Extensions of filing deadlines in RSA 72 for filing deferral applications and appeals shall be in accordance with RSA 76:16-d.
+
+ Source. 1995, 265:6. 2007, 182:4, eff. April 1, 2007.
+
+ Section 72:35
+
+ 72:35 Tax Credit for Service-Connected Total Disability. – 
+
+I. Any person who has been honorably discharged or an officer honorably separated from the military service of the United States and who has total and permanent service-connected disability, or who is a double amputee or paraplegic because of service-connected injury, or the surviving spouse of such a person, shall receive a standard yearly tax credit in the amount of $700 of property taxes on the person's residential property.
+
+I-a. The optional tax credit for service-connected permanent and total disability, upon adoption by a city or town pursuant to RSA 72:27-a, shall be an amount from $701 up to $5,000. The optional tax credit for service-connected permanent and total disability shall replace the tax credits pursuant to RSA 72:28, 72:28-b, 72:28-c, and 72:36-a in its entirety and shall not be in addition thereto.
+
+I-b. Either the standard tax credit for service-connected total disability or the optional tax credit for service-connected total disability shall be subtracted each year from the property tax on the person's residential property.
+
+II. The standard or optional tax credit under this section may be applied only to property which is occupied as the principal place of abode by the disabled person or the surviving spouse. The tax credit may be applied to any land or buildings appurtenant to the residence or to manufactured housing if that is the principal place of abode.
+
+III. (a) Any person applying for the standard or optional tax credit under this section shall furnish to the assessors or selectmen certification from the United States Department of Veterans' Affairs that the applicant is rated totally and permanently disabled from service connection. The assessors or selectmen shall accept such certification as conclusive on the question of disability unless they have specific contrary evidence and the applicant, or the applicant's representative, has had a reasonable opportunity to review and rebut that evidence. The applicant shall also be afforded a reasonable opportunity to submit additional evidence on the question of disability.
+
+(b) Any decision to deny an application shall identify the evidence upon which the decision relied and shall be made within the time period provided by law.
+
+(c) Any tax credit shall be divided evenly among the number of tax payments required annually by the town or city so that a portion of the tax credit shall apply to each tax payment to be made.
+
+ Source. 1947, 240:1, par. 29-f. RSA 72:35. 1955, 283:1. 1963, 174:1. 1967, 219:6. 1969, 54:1. 1973, 553:1. 1975, 277:2. 1983, 95:1. 1989, 64:3. 1991, 70:17. 1993, 73:6, 7. 2000, 54:1. 2003, 299:8, eff. April 1, 2003. 2018, 105:1, eff. Jan. 1, 2019. 2025, 15:1, eff. July 13, 2025.
+
+ Section 72:35-a
+
+ 72:35-a Repealed by 2003, 299:29, III, eff. April 1, 2003. – 
+
+ Section 72:36
+
+ 72:36 Interpretations; Rules. – 
+
+The commissioner of revenue administration shall adopt rules, pursuant to RSA 541-A, relative to:
+
+I. The commissioner's interpretation of RSA 72:28, 72:28-b, 72:28-c, 72:29, 72:29-a, 72:30, 72:31, 72:32, 72:33, 72:34, 72:34-a, 72:35, 72:36-a, 72:37, 72:37-a, 72:37-b, 72:38-a, 72:38-b, 72:39-a, 72:39-b, 72:41, 72:62, 72:66, 72:70; 72:85, and 72:87; and
+
+II. The uniform observance and enforcement in the state of said sections.
+
+ Source. 1949, 167:3. RSA 72:36. 1973, 544:8. 1981, 128:14. 1993, 73:8. 2003, 299:9. 2007, 182:5, eff. April 1, 2007. 2016, 217:8, eff. Aug. 8, 2016. 2018, 151:7, eff. Jan. 1, 2019. 2019, 327:6, eff. Oct. 15, 2019. 2021, 200:2, Pt. II, Sec. 5, eff. Oct. 9, 2021.
+
+ Section 72:36-a
+
+ 72:36-a Certain Disabled Veterans. – 
+
+Any person, who is discharged from military service of the United States and who meets the veteran eligibility criteria established by RSA 21:50, and who owns a home which has been specially adapted by the Veterans Administration through an approved Special Adapted Housing (SAH) or Special Home Adaptation (SHA) grant or owns a home that has been specially adapted and has been acquired using proceeds from the sale of such an SAH or SHA home, the person or person's surviving spouse, as defined in RSA 72:29, V, shall be exempt from all taxation on said homestead, provided that:
+
+I. The person:
+
+(a) Is 100 percent permanently and totally disabled as prescribed in 38 C.F.R. 3.340, total and permanent total ratings and unemployability; or
+
+(b) Is a double amputee of the upper or lower extremities or any combination thereof, or paraplegic, as the result of service connection; or
+
+(c) Has blindness of both eyes with visual acuity of 5/200 or less, as the result of service connection.
+
+II. Satisfactory proof of such service connection disability is furnished to the assessors.
+
+ Source. 1965, 291:1. 1971, 466:1. 1977, 52:1. 1987, 200:1. 1993, 73:9, eff. June 22, 1993. 2020, 1:1, eff. Apr. 1, 2020. 2024, 13:1, eff. July 13, 2024.
+
+ Section 72:36-b
+
+ 72:36-b Repealed by 2003, 299:29, IV, eff. April 1, 2003. – 
+
+ Section 72:37
+
+ 72:37 Exemption for the Blind. – 
+
+Every inhabitant who is legally blind as determined by the blind services program, bureau of vocational rehabilitation, department of education shall be exempt each year on the assessed value, for property tax purposes, of his or her residential real estate to the value of $15,000, and a city or town may exempt any amount it may determine is appropriate to address significant increases in property values in accordance with the procedures in RSA 72:27-a. The term "residential real estate" as used in this section shall mean the same as defined in RSA 72:29. All applications made under this section shall be subject to the provisions of RSA 72:33 and RSA 72:34.
+
+ Source. 1935, 71:1. RL 73:30. RSA 72:37. 1957, 299:1. 1967, 419:1. 1973, 285:1; 538:1. 1975, 198:1. 1979, 100:1. 1985, 329:1. 1991, 70:21. 1992, 215:1. 1994, 379:2. 2003, 299:10, eff. April 1, 2003.
+
+ Section 72:37-a
+
+ 72:37-a Exemption for Improvements to Assist Persons With Disabilities. – 
+
+I. In this section:
+
+(a) "Person with a disability" means a person who by reason of a physical defect or infirmity permanently requires the use of special aids to enable him to propel himself.
+
+(b) "Residential real estate" has the meaning set forth under RSA 72:29, II.
+
+II. Every owner of residential real estate upon which he resides, and to which he has made improvements for the purpose of assisting a person with a disability who also resides on such real estate, is each year entitled to an exemption from the assessed value, for property tax purposes, upon such residential real estate determined by deducting the value of such improvements from the assessed value of the residential real estate before determining the taxes upon such real estate.
+
+III. The exemption under this section shall apply only in taxable years during which the person with a disability resided on the residential real estate for which the exemption is claimed on April 1 in any given year.
+
+IV. No person shall be entitled to an exemption under this section unless he has filed with the selectmen or assessors, on or before April 15 of some year, a permanent application therefor, signed under the penalty of perjury, on a form approved and provided by the commissioner of revenue administration showing that the applicant is duly entitled and is the true and lawful owner and occupant of the property on which the exemption is claimed. If any person, otherwise qualified to receive an exemption, shall satisfy the selectmen or assessors that he was prevented by accident, mistake or misfortune from filing an application on or before April 15 of the year in which he desires the exemption, said officials may receive said application at a later date and grant an exemption thereunder for that year; but no such application shall be received or exemption granted after the local tax rate has been approved for that year.
+
+V. Whenever the selectmen or assessors refuse to grant an applicant an exemption to which he may be entitled under this section, said applicant may appeal the decision in accordance with RSA 72:34-a.
+
+VI. An exemption granted under this section shall have no effect on an applicant's eligibility for other exemptions as authorized under this chapter.
+
+ Source. 1975, 127:1. 1977, 502:2. 1990, 140:2, II, III. 1991, 70:22, eff. April 1, 1992.
+
+ Section 72:37-b
+
+ 72:37-b Exemption for the Disabled. – 
+
+I. Upon its adoption by a city or town as provided in RSA 72:27-a, any person who is eligible under Title II or Title XVI of the federal Social Security Act for benefits to the disabled shall receive a yearly exemption in an amount to be chosen by the town or city.
+
+I-a. Upon the adoption of this paragraph by a city or town as provided in RSA 72:27-a, a person who is eligible under Title II or Title XVI of the federal Social Security Act on his or her sixty-fifth birthday shall remain eligible for a yearly exemption either in the amount of the exemption applicable under paragraph I or the amount of the elderly exemption granted to the person under RSA 72:39-b, whichever is greater.
+
+I-b. Upon the adoption of this paragraph by a city or town as provided in RSA 72:27-a, any person who at any time previously was eligible under Title II or Title XVI of the federal Social Security Act for benefits to the disabled, but who is no longer eligible for such federal benefits due to reasons other than the status of that person's disability, shall be eligible for the exemption under paragraph I or I-a, or both as may be applicable, provided that the person submits an affidavit from a physician licensed in New Hampshire that attests to the fact that the person continues to meet the criteria for disability that are used under Title II or Title XVI of the federal Social Security Act.
+
+II. The exemptions in paragraph I and I-a may be applied only to property which is occupied as the principal place of abode by the disabled person. The exemption may be applied to any land or buildings appurtenant to the residence or to manufactured housing if that is the principal place of abode. Nothing in this section shall preclude a qualified applicant from earning an income.
+
+III. No exemption shall be allowed under paragraph I or I-a unless the person applying for an exemption:
+
+(a) Had, in the calendar year preceding said April 1, a net income from all sources, or if married, a combined net income from all sources, of not more than the respective amount determined by the city or town for purposes of paragraph I or I-a. Under no circumstances shall the amount determined by the city or town be less than $13,400 for a single person or $20,400 for married persons. The net income shall be determined by deducting from all moneys received, from any source including social security or pension payments, the amount of any of the following or the sum thereof:
+
+(1) Life insurance paid on the death of an insured.
+
+(2) Expenses and costs incurred in the course of conducting a business enterprise.
+
+(3) Proceeds from the sale of assets.
+
+(b) Owns, on December 31 in the calendar year preceding said April 1, net assets not in excess of the amount determined by the city or town for purposes of paragraph I, excluding the value of the person's actual residence and the land upon which it is located up to the greater of 2 acres or the minimum single family residential lot size specified in the local zoning ordinance. The amount determined by the city or town shall not be less than $35,000 or, if married, combined net assets in such greater amount as may be determined by the town or city. "Net assets" means the value of all assets, tangible and intangible, minus the value of any good faith encumbrances. "Residence" means the housing unit, and related structures such as an unattached garage or woodshed, which is the person's principal home, and which the person in good faith regards as home to the exclusion of any other places where the person may temporarily live. "Residence" shall exclude attached dwelling units and unattached structures used or intended for commercial or other nonresidential purposes.
+
+(c) Has been a New Hampshire resident for at least 5 years.
+
+IV. Additional requirements for an exemption under paragraph I or I-a shall be that the property is:
+
+(a) Owned by the resident;
+
+(b) Owned by a resident jointly or in common with the resident's spouse, either of whom meets the requirements for the exemption claimed;
+
+(c) Owned by a resident jointly or in common with a person not the resident's spouse, if the resident meets the applicable requirements for the exemption claimed; or
+
+(d) Owned by a resident, or the resident's spouse, either of whom meets the requirements for the exemption claimed, and when they have been married to each other for at least 5 consecutive years.
+
+ Source. 1993, 212:1. 1997, 87:1. 2003, 299:11. 2004, 238:2. 2008, 307:1, eff. April 1, 2008. 2023, 39:1, eff. July 18, 2023.
+
+ Section 72:37-c
+
+ 72:37-c Repealed by 2003, 299:29, V, eff. April 1, 2003. – 
+
+ Section 72:38
+
+ 72:38 Exemption for Aviation Facilities; Partial Reimbursement for Taxes Paid. – 
+
+I. A town, by vote of a majority of those present and voting at any regular town meeting, acting under an article duly incorporated in the warrant for said meeting, and a city, by vote of the governing body thereof, may exempt the owner of a privately owned air navigation facility available for public use without charge, who holds as of April 1 of any year a certificate for such facility from the department of transportation, division of aeronautics, rail, and transit, that the facility is necessary for the maintenance of an effective airway system, from taxation of such facility for each such year. For the purposes of this section the term air navigation facility includes all the surfaces of an airport encompassed within the principal boundaries that are maintained and available for the take-off, landing, taxiing, and open air parking of an aircraft using said airport, any air navigation or communications facility associated with the airport and any passenger terminal building available for public use without charge.
+
+II. The owner of a privately owned airport, which is part of the statewide airport system and use of which is approved by the department of transportation, division of aeronautics, rail, and transit, may after paying all local property taxes owed, apply to the director of the division of aeronautics, rail, and transit for a state reimbursement grant in the amount of the portion of property taxes paid on the qualifying area of the airport. Reimbursement grants shall be paid from general funds appropriated to the division of aeronautics, rail, and transit for each fiscal year, to the extent that such funds are available. Any application for a reimbursement grant shall be made within 6 months of the date on which the taxes were due and reimbursement shall not be made if application is made after this 6-month period. Measurements of the qualifying area of each airport shall be made by the division and shall remain in effect until the owner notifies the division of a change in property size. In this paragraph, "qualifying area" means non-revenue producing areas that are open to the public and required for airport operation.
+
+III. Applicants for reimbursement shall apply to the division on a form provided by the division. The application form shall contain the following information:
+
+(a) The name and address of any owner.
+
+(b) Name of airport.
+
+(c) Period for which application is being made.
+
+(d) Computed acreage qualifying for reimbursement.
+
+(e) Signature of any owner and date of filing.
+
+(f) Attached copy of most recently paid tax bill.
+
+IV. An owner may contest the division's measurement of qualifying areas or other determinations with regard to reimbursement by petitioning the department for a hearing pursuant to RSA 541-A:31-36.
+
+ Source. 1963, 79:2. 1996, 166:1. 2004, 257:30, eff. July 1, 2004.
+
+ Section 72:38-a
+
+ 72:38-a Tax Deferral for Elderly and Disabled. – 
+
+I. Any resident property owner may apply for a tax deferral if the person:
+
+(a) Is either at least 65 years old or eligible under Title II or Title XVI of the federal Social Security Act for benefits for the disabled; and
+
+(b) Has owned the homestead for at least 5 consecutive years if the person qualifies as an elderly applicant, or has owned the homestead for at least one year if the person qualifies as a disabled applicant; and
+
+(c) Is living in the home.
+
+The assessing officials may annually grant a person qualified under this paragraph a tax deferral for all or part of the taxes due, plus annual interest at 5 percent, if in their opinion the tax liability causes the taxpayer an undue hardship or possible loss of the property. The total of tax deferrals on a particular property shall not be more than 85 percent of its equity value. The total of tax deferrals shall be determined by the following formula:
+
+Assessed Value = Equalized Assessed Value
+
+Equalization Ratio
+
+Equalized Assessed Value - Total of Priority Liens = Equity Value
+
+Equity Value X .85 = Total Amount Which May be Deferred
+
+At any time during the tax deferral process, the governing body may consider an abatement pursuant to RSA 76:16.
+
+II. A tax deferral shall be subject to any prior liens on the property and shall be treated as such in any foreclosure proceeding.
+
+II-a. No person shall be entitled to the deferral under this section unless the person has filed with the selectmen or assessors, by March 1 following the date of notice of tax under RSA 72:1-d, a permanent application therefor, signed under penalty of perjury, on a form approved and provided by the commissioner of revenue administration, showing that the applicant is the true and lawful owner of the property on which the deferral is claimed and that the applicant is duly qualified at the time of application. Any person who changes residence after filing such a permanent application shall file an amended permanent application on or before December 1 immediately following the change of residence. The filing of the permanent application shall be sufficient for said persons to receive a deferral on an annual basis so long as the applicant does not change residence; provided, however, that towns and cities may require an annual application for the tax deferral authorized for the elderly and disabled by this section. The form shall include the following and such other information deemed necessary by the commissioner:
+
+(a) Instructions on completing and filing the form, including an explanation of the grounds for requesting a deferral.
+
+(b) Sections for information concerning the applicant, the property for which the relief is sought, and other properties owned by the person applying.
+
+(c) A section explaining the appeal procedure and stating the appeal deadline in the event the municipality denies the tax relief request in whole or in part.
+
+(d) A place for the applicant's signature with a certification by the person applying that the application has a good faith basis and the facts in the application are true.
+
+III. If the property is subject to a mortgage, the owner must have the mortgage holder's approval of the tax deferral. Such approval does not grant the town a preferential lien.
+
+IV. When the owner of a property subject to a tax deferral dies, the heirs, heirs-at-law, assignee, or devisee shall have first priority to redeem the estate by paying in full the deferred taxes plus any interest due. If the heirs, heirs-at-law, assignees, or devisees do not redeem the property within 9 months of the date of death of the property owner, the municipality may commit the accrued amount of the deferral to the collector of taxes with a warrant signed by the assessing officials requiring him or her to collect it; and the collector of taxes shall have the same rights and remedies in relation thereto as provided in RSA 76:13 and RSA 80. Prior to holding a tax sale or executing a priority tax lien under RSA 80:59, the collector shall, at least 30 days prior to such tax sale or tax lien execution, send notice by certified or registered mail, to the last known post office address of the current owner, if known, or to the last known address of the deceased taxpayer, and to all mortgagees from whom permission has been sought pursuant to paragraph III of this section. Any person with a legal interest in the property may redeem it, either prior to the tax sale or tax lien execution, or subsequently as set forth in RSA 80:32 or RSA 80:69.
+
+IV-a. When the owner of a property subject to a tax deferral sells or otherwise conveys the property, the owner or grantee shall pay in full the deferred taxes plus any interest due and the municipality shall provide recorded written release or satisfaction of the notice of tax deferral. If the owner or grantee, who shall be deemed to have notice of and shall take title to the property subject to the notice of tax deferral, does not pay the accrued amount on the property within 9 months of the date of sale or conveyance of the property, the municipality may commit the accrued amount of the deferral to the collector of taxes with a warrant signed by the assessing officials requiring him or her to collect it; and the collector of taxes shall have the same rights and remedies in relation thereto as provided in RSA 76:13 and RSA 80. Prior to holding a tax sale or executing a priority tax lien under RSA 80:59, the collector shall, at least 30 days prior to such tax sale or tax lien execution, send notice by certified or registered mail, to the last known post office address of the current owner, if known, or to the last known address of the taxpayer who received the deferral, and to all mortgagees from whom permission has been sought pursuant to paragraph III of this section. Any person with a legal interest in the property may redeem it, either prior to the tax sale or tax lien execution, or subsequently as set forth in RSA 80:32 or RSA 80:69.
+
+V. The assessing officials shall file notice of each tax deferral granted, within 30 days, with the registry of deeds of the county in which the property is located to perfect it.
+
+VI. When a taxpayer appeals the denial of a deferral application to the superior court or board of tax and land appeals, the court or board may reverse or affirm, wholly or partly, or may modify the decision brought up for review when there is an error of law or when the court or board is persuaded by the balance of probabilities, on the evidence before it, that said decision is unreasonable.
+
+ Source. 1973, 452:1. 1975, 214:1. 1977, 54:1; 591:1-3. 1981, 374:1. 1983, 155:3. 1994, 390:1. 1995, 265:7. 1997, 37:1. 2003, 299:12, eff. April 1, 2003; 299:13, eff. April 1, 2005. 2013, 141:1, eff. Jan. 1, 2014.
+
+ Section 72:38-b
+
+ 72:38-b Exemption for Deaf or Severely Hearing Impaired Persons; Procedure for Adoption. – 
+
+I. Any deaf person or person with severe hearing impairment shall be exempt each year on the assessed value, for property tax purposes, of his or her residential real estate to the value of $15,000, and a city or town may exempt any amount it may determine is appropriate to address significant increases in property values in accordance with the procedures in this section. For residential real estate owned by the spouse of an eligible person, the exemption shall be allowed if they have been married for at least 5 years. The term "residential real estate" as used in this section shall mean the same as defined in RSA 72:29. All applications made under this section shall be subject to the provisions of RSA 72:33 and RSA 72:34.
+
+II. The exemption in paragraph I applies only to property which is occupied as the principal place of abode by the eligible deaf person or person with severe hearing impairment. For purposes of this section, "deaf person or person with severe hearing impairment" means a person who has a 71 Db hearing average hearing loss or greater in the better ear as determined by a licensed audiologist or qualified otolaryngologist, who may rely on a visual means of communication, such as American Sign Language or speech recognition, and whose hearing is so impaired as to substantially limit the person from processing linguistic information through hearing, with or without amplification, so as to require the use of an interpreter or auxiliary aid. The exemption may be applied to any land or buildings appurtenant to the residence or to manufactured housing if that is the principal place of abode.
+
+III. No exemption shall be allowed under paragraph I unless the person applying therefor:
+
+(a) Has resided in this state for at least 5 consecutive years preceding April 1 in the year in which the exemption is claimed.
+
+(b) Had in the calendar year preceding said April 1 a net income from all sources, or if married, a combined net income from all sources, of not more than the respective amount determined by the city or town for purposes of paragraph I. Under no circumstances shall the amount determined by the city or town be less than $13,400 for a single person or $20,400 for married persons. The net income shall be determined by deducting from all moneys received, from any source including social security or pension payments, the amount of any of the following or the sum thereof:
+
+(1) Life insurance paid on the death of an insured.
+
+(2) Expenses and costs incurred in the course of conducting a business enterprise.
+
+(3) Proceeds from the sale of assets.
+
+(c) Owns, on December 31 in the calendar year preceding said April 1, net assets not in excess of the amount determined by the city or town for purposes of paragraph I, excluding the value of the person's actual residence and the land upon which it is located up to the greater of 2 acres or the minimum single family residential lot size specified in the local zoning ordinance. The amount determined by the city or town shall not be less than $35,000 or, if married, combined net assets in such greater amount as may be determined by the town or city. "Net assets" means the value of all assets, tangible and intangible, minus the value of any good faith encumbrances. "Residence" means the housing unit, and related structures such as an unattached garage or woodshed, which is the person's principal home, and which the person in good faith regards as home to the exclusion of any other places where the person may temporarily live. "Residence" shall exclude attached dwelling units and unattached structures used or intended for commercial or other nonresidential purposes.
+
+IV. Additional requirements for an exemption under paragraph I shall be that the property is:
+
+(a) Owned by the resident;
+
+(b) Owned by a resident jointly or in common with the resident's spouse, either of whom meets the requirements for the exemption claimed;
+
+(c) Owned by a resident jointly or in common with a person not the resident's spouse, if the resident meets the applicable requirements for the exemption claimed;
+
+(d) Owned by a resident, or the resident's spouse, either of whom meets the requirements for the exemption claimed, and when they have been married to each other for at least 5 consecutive years.
+
+V. In addition to the exemption provided in this section, a person may claim an exemption for improvements to assist persons who are deaf or severely hearing impaired as follows:
+
+(a) Every owner of residential real estate upon which he or she resides, and to which he or she has made improvements for the purpose of assisting a person who is deaf or severely hearing impaired who also resides on such real estate, is each year entitled to an exemption from the assessed value, for property tax purposes, upon such residential real estate determined by deducting the value of such improvements from the assessed value of the residential real estate before determining the taxes upon such real estate.
+
+(b) The exemption under this paragraph shall apply only in taxable years during which the person who is deaf or severely hearing impaired resided on the residential real estate for which the exemption is claimed on April 1 in any given year.
+
+VI. Any town or city may adopt, modify, or rescind the provisions of this section in the manner provided in RSA 72:27-a.
+
+VII. The vote shall specify the provisions of the exemptions provided in RSA 72:38-b. The exemption shall take effect in the tax year beginning April 1 following its adoption.
+
+VIII. A municipality may rescind the exemptions provided by this section in the manner described in paragraph VI.
+
+ Source. 2003, 131:3, eff. April 1, 2003; 299:24, eff. April 1, 2003 at 12:01 a.m. 2023, 39:2, eff. July 18, 2023.
+
+ Section 72:39
+
+ 72:39 Repealed by 1996, 140:10, I, eff. Jan. 1, 1998. – 
+
+ Section 72:39-a
+
+ 72:39-a Conditions for Elderly Exemption. – 
+
+I. No exemption shall be allowed under RSA 72:39-b unless the person applying therefor:
+
+(a) Has resided in this state for at least 3 consecutive years preceding April 1 in the year in which the exemption is claimed.
+
+(b) Had in the calendar year preceding said April 1 a net income from all sources, or if married, a combined net income from all sources, of not more than the respective amount applicable to each age group as determined by the city or town for purposes of RSA 72:39-b. Under no circumstances shall the amount determined by the city or town be less than $13,400 for a single person or $20,400 for married persons. The net income shall be determined by deducting from all moneys received, from any source including social security or pension payments, the amount of any of the following or the sum thereof:
+
+(1) Life insurance paid on the death of an insured;
+
+(2) Expenses and costs incurred in the course of conducting a business enterprise;
+
+(3) Proceeds from the sale of assets.
+
+(c) Owns, on December 31 in the calendar year preceding said April 1, net assets not in excess of the amount determined by the city or town for purposes of RSA 72:39-b, excluding the value of the person's actual residence and the land upon which it is located up to the greater of 2 acres or the minimum single family residential lot size specified in the local zoning ordinance. The amount determined by the city or town shall not be less than $35,000. A city or town may set a combined net assets amount for married persons in such greater amount as the legislative body of the city or town may determine. "Net assets" means the value of all assets, tangible and intangible, minus the value of any good faith encumbrances. "Residence" means the housing unit, and related structures such as an unattached garage or woodshed, which is the person's principal home, and which the person in good faith regards as home to the exclusion of any other places where the person may temporarily live. "Residence" shall exclude attached dwelling units and unattached structures used or intended for commercial or other nonresidential purposes.
+
+II. Additional requirements for an exemption under RSA 72:39-b shall be that the property is:
+
+(a) Owned by the resident; or
+
+(b) Owned by a resident jointly or in common with the resident's spouse, either of whom meets the age requirement for the exemption claimed; or
+
+(c) Owned by a resident jointly or in common with a person not the resident's spouse, if the resident meets the applicable age requirement for the exemption claimed; or
+
+(d) Owned by a resident, or the resident's spouse, either of whom meets the age requirement for the exemption claimed, and when they have been married to each other for at least 5 consecutive years.
+
+III. Upon the death of an owner residing with a spouse pursuant to subparagraph II(b) or II(d), the combined net asset amount for married persons determined by the city or town shall continue to apply to the surviving spouse for the purpose of the exemption granted under RSA 72:39-b until the sale or transfer of the property by the surviving spouse or until the remarriage of the surviving spouse.
+
+ Source. 1996, 140:1. 2003, 299:14, 15. 2004, 238:3. 2006, 212:1, eff. June 1, 2006. 2023, 39:3, eff. July 18, 2023.
+
+ Section 72:39-b
+
+ 72:39-b Procedure for Adoption and Modification of Elderly Exemption. – 
+
+I. A town or city may adopt or modify elderly exemptions by the procedure in RSA 72:27-a.
+
+II. An elderly exemption, based on assessed value for qualified taxpayers, may be granted for a different dollar amount determined by the town or city, to a person 65 years of age up to 75 years, to a person 75 years of age up to 80 years, and to a person 80 years of age or older. To qualify, the person must have been a New Hampshire resident for at least 3 consecutive years, own the real estate individually or jointly, or if the real estate is owned by such person's spouse, they must have been married to each other for at least 5 consecutive years. In addition, the taxpayer must have a net income in each applicable age group of not more than a dollar amount determined by the town or city of not less than $13,400 or, if married, a combined net income of not more than a dollar amount determined by the town or city of not less than $20,400; and own net assets not in excess of a dollar amount determined by the town or city of not less than $35,000 excluding the value of the person's residence or, if married, combined net assets not in excess of a dollar amount determined by the town or city of not less than $35,000 excluding the value of the residence. Under no circumstances shall the amounts of the exemption for any age category be less than $5,000. The combined net asset amount for married persons shall apply to a surviving spouse until the sale or transfer of the property by the surviving spouse or until the remarriage of the surviving spouse.
+
+ Source. 1996, 140:1. 1997, 241:2. 2003, 299:16. 2004, 238:4. 2006, 212:2, eff. June 1, 2006.
+
+ Section 72:40
+
+ 72:40 Repealed by 1996, 140:10, II, eff. Jan. 1, 1998. – 
+
+ Section 72:40-a
+
+ 72:40-a Limitation. – 
+
+In addition to other conditions hereunder, no exemption shall be allowed under RSA 72:39-b if the resident applying therefor has, within the preceding 5 years, received transfer of the real estate from a person under the age of 65 related to him by blood or marriage.
+
+ Source. 1970, 54:6. 1975, 397:2. 1982, 42:64. 1983, 155:7. 1996, 140:2, eff. Jan. 1, 1998.
+
+ Section 72:40-b
+
+ 72:40-b Publishing Prohibited. – 
+
+The names of persons receiving an exemption under RSA 72:39-b shall not be printed in any list for publication except as required under RSA 74:2.
+
+ Source. 1973, 70:1. 1975, 397:3. 1983, 155:5. 1996, 140:3, eff. Jan. 1, 1998.
+
+ Section 72:41
+
+ 72:41 Proration. – 
+
+If any entitled person or persons shall own a fractional interest in residential real estate, each such entitled person shall be granted exemption for the blind under RSA 72:37, the disabled under RSA 72:37-b, the deaf or severely hearing impaired under RSA 72:38-b, or the elderly under RSA 72:39-b, in proportion to his or her interest therein with other persons so entitled, but in no case shall the total exemption to all persons so entitled exceed the amount provided in RSA 72:37, 72:37-b, 72:38-b, or 72:39-b.
+
+ Source. 1969, 496:1. 1970, 54:3. 1975, 397:4. 1983, 155:6. 1996, 140:4, eff. Jan. 1, 1998. 2023, 119:1, eff. Apr. 1, 2024.
+
+ Section 72:41-a
+
+ 72:41-a Removal From State; Residency Requirement. – 
+
+Any person who has qualified for the exemption under RSA 72:39-b, who has met the conditions for an exemption under RSA 72:39-a, and who has filed a permanent application for the exemption under RSA 72:42, shall not be required to meet the residency requirement under RSA 72:39-a a second time if it becomes necessary for the person to leave New Hampshire and establish residency in another state for any length of time due to health reasons, and who then reestablishes his residency in New Hampshire.
+
+ Source. 1987, 245:1. 1996, 140:5, eff. Jan. 1, 1998.
+
+ Section 72:42
+
+ 72:42 Repealed by 1994, 102:3, II, eff. July 10, 1994. – 
+
+ Section 72:43
+
+ 72:43 Repealed by 2007, 182:7, II, eff. April 1, 2007. – 
+
+ Expanded Elderly Exemptions
+
+ Section 72:43-a to 72:43-c
+
+ 72:43-a to 72:43-c Repealed by 1996, 140:10, III, eff. Jan. 1, 1998. – 
+
+ Section 72:43-d
+
+ 72:43-d Repealed by 1981, 496:2, eff. June 29, 1981. – 
+
+ Adjusted Elderly Exemption
+
+ Section 72:43-e to 72:43-g
+
+ 72:43-e to 72:43-g Repealed by 1996, 140:10, IV, eff. Jan. 1, 1998. – 
+
+ Optional Adjusted Elderly Exemptions
+
+ Section 72:43-h
+
+ 72:43-h Repealed by 1996, 140:10, V, eff. Jan. 1, 1998. – 
+
+ Homeowners' Exemptions
+
+ Section 72:44 to 72:60
+
+ 72:44 to 72:60 Repealed by 1983, 155:10, eff. June 8, 1983. – 
+
+ Solar Energy Systems Exemption
+
+ Section 72:61
+
+ 72:61 Definition of Solar Energy Systems. – 
+
+I. For purposes of an exemption under RSA 72:62 adopted before January 1, 2020, in this subdivision "solar energy system" means a system which utilizes solar energy to heat or cool the interior of a building or to heat water for use in a building and which includes one or more collectors and a storage container. "Solar energy system" also means a system which provides electricity for a building by the use of photovoltaic panels.
+
+II. In a municipality that adopts or re-adopts the exemption under RSA 72:62 on or after January 1, 2020, "solar energy system" means, in addition to the definition in paragraph I, a system which utilizes solar energy to produce electricity for a building and includes all photovoltaics, inverters, and storage. Systems may be off grid or connected to the grid in a net metered or group net metered arrangement pursuant to RSA 362-A:9 or in a direct retail sale arrangement pursuant to RSA 362-A:2-a.
+
+ Source. 1975, 391:1. 1993, 93:1, eff. April 1, 1993. 2019, 327:1, eff. Oct. 15, 2019.
+
+ Section 72:62
+
+ 72:62 Exemption for Solar Energy Systems. – 
+
+Each city and town may adopt under RSA 72:27-a an exemption from the assessed value, for property tax purposes, for persons owning real property which is equipped with a solar energy system as defined in RSA 72:61.
+
+ Source. 1975, 391:1. 1991, 70:26. 1993, 93:2. 2003, 299:17, eff. April 1, 2003.
+
+ Section 72:63
+
+ 72:63 Repealed by 2003, 299:29, VI, eff. April 1, 2003. – 
+
+ Section 72:64
+
+ 72:64 Application for Exemption. – 
+
+Applications for exemptions under RSA 72:62 shall be governed by the provisions of RSA 72:33, 72:34, and 72:34-a.
+
+ Source. 1975, 391:1. 1977, 502:4. 1983, 155:10. 1995, 265:8, eff. Jan. 1, 1996.
+
+ Wind-Powered Energy Systems Exemption
+
+ Section 72:65
+
+ 72:65 Definition of Wind-Powered Energy System. – 
+
+I. For purposes of an exemption under RSA 72:66 adopted before January 1, 2020, in this subdivision "wind-powered energy system" means any wind-powered devices which supplement or replace electrical power supplied to households or businesses at the immediate site.
+
+II. In a municipality that adopts or re-adopts the exemption under RSA 72:66 on or after January 1, 2020, "wind-powered energy system" means a system that utilizes wind power to produce electricity for a building and includes all wind-powered devices, inverters, and storage. Systems may be off grid or connected to the grid in a net metered or group net metered arrangement pursuant to RSA 362-A:9 or in a direct retail sale arrangement pursuant to RSA 362-A:2-a.
+
+ Source. 1977, 185:1, eff. Aug. 13, 1977. 2019, 327:2, eff. Oct. 15, 2019.
+
+ Section 72:66
+
+ 72:66 Exemption for Wind-Powered Energy Systems. – 
+
+Each city and town may adopt under RSA 72:27-a an exemption from the assessed value, for property tax purposes, for persons owning real property which is equipped with a wind-powered energy system.
+
+ Source. 1977, 185:1. 1991, 70:28. 2003, 299:18, eff. April 1, 2003.
+
+ Section 72:67
+
+ 72:67 Repealed by 2003, 299:29, VII, eff. April 1, 2003. – 
+
+ Section 72:68
+
+ 72:68 Application for Exemption. – 
+
+Applications for exemptions under RSA 72:66 shall be governed by the provisions of RSA 72:33, 72:34, and 72:34-a.
+
+ Source. 1977, 185:1; 502:6. 1983, 155:10. 1995, 265:9, eff. Jan. 1, 1996.
+
+ Woodheating Energy Systems Exemptions
+
+ Section 72:69
+
+ 72:69 Definition of Woodheating Energy System. – 
+
+In this subdivision "woodheating energy system" means a wood burning appliance designed to operate as a central heating system to heat the interior of a building. The appliance may burn wood solely or burn wood in combination with another fuel. A central heating system shall include a central appliance to distribute heat by a series of pipes, ducts or similar distribution system throughout a single building or group of buildings. A wood burning appliance shall not include a fireplace, meaning a hearth, fire chamber or similarly prepared place with a chimney intended to be usable in an open configuration whether or not it may also be closed and operated closed; or a wood stove meaning a wood burning appliance designed for space heating purposes which does not operate as a central heating system or as a sole source of heat.
+
+ Source. 1979, 280:1, eff. Aug. 20, 1979.
+
+ Section 72:70
+
+ 72:70 Exemption for Woodheating Energy Systems. – 
+
+Each city and town may adopt under RSA 72:27-a an exemption from the assessed value, for property tax purposes, for persons owning real property which is equipped with a woodheating energy system.
+
+ Source. 1979, 280:1. 1991, 70:30. 2003, 299:19, eff. April 1, 2003.
+
+ Section 72:71
+
+ 72:71 Repealed by 2003, 299:29, VIII, eff. April 1, 2003. – 
+
+ Section 72:72
+
+ 72:72 Application for Exemption. – 
+
+Applications for exemptions under RSA 72:70 shall be governed by the provisions of RSA 72:33, 72:34, and 72:34-a.
+
+ Source. 1979, 280:1. 1983, 155:10. 1995, 265:10, eff. Jan. 1, 1996.
+
+ Payment in Lieu of Taxes for Renewable Generation Facilities
+
+ Section 72:73
+
+ 72:73 Definition of Renewable Generation Facility. – 
+
+In this subdivision, "renewable generation facility" means a facility which produces electric energy for resale solely by the use, as a primary energy source, of geothermal energy, tidal or wave energy, wind energy, solar thermal energy, photovoltaic energy, landfill gas energy, hydro energy, biomass energy, energy generated from bio-oil, bio synthetic gas, and biodiesel as defined in RSA 362-A:1-a, I, I-a, and I-b, including the land, all rights, easements, and other interests thereto, and all dams, buildings, structures, and other improvements situated thereon which are necessary or incidental to the production of power at the facility.
+
+ Source. 2006, 294:6, eff. April 1, 2006. 2013, 232:1, eff. Sept. 13, 2013.
+
+ Section 72:74
+
+ 72:74 Payment in Lieu of Taxes. – 
+
+I. The owner of a renewable generation facility and the governing body of the municipality in which the facility is located may, after a duly noticed public hearing, enter into a voluntary agreement to make a payment in lieu of taxes. A lessee of a renewable generation facility which is responsible for the payment of taxes on the facility may also enter into a voluntary agreement with the municipality in which the facility is located to make a payment in lieu of taxes, provided the lessee shall send by certified mail to the lessor written notice which shall state that the property of the lessor may be subject to RSA 80 should the lessee fail to make the payments required by the agreement. A copy of such notice shall be provided to the municipality in which the facility is located.
+
+II. A renewable generation facility subject to a voluntary agreement to make a payment in lieu of taxes under this section shall be subject to the laws governing the utility property tax under RSA 83-F. Payments made pursuant to such agreement shall satisfy any tax liability relative to the renewable generation facility that otherwise exists under RSA 72. The payment in lieu of taxes shall be equalized under RSA 21-J:3, XIII in the same manner as other payments in lieu of taxes, but shall be excluded from the tax base used to determine the statewide education property tax in accordance with RSA 76:8, I(a). In the absence of a payment in lieu of taxes agreement, the renewable generation facility shall be subject to taxation under RSA 72.
+
+III. If a municipality that contains more than one school district receives a payment in lieu of taxes under this section, the proceeds shall be prorated to the districts in the same manner as local taxes are prorated to the districts, or in the case of a cooperative school district between the city or town and pre-existing school district.
+
+IV. The collection procedures in RSA 80 shall be used to enforce a voluntary agreement to make a payment in lieu of taxes authorized by this section.
+
+V. If a municipality enters into a voluntary payment in lieu of taxes agreement with an owner, or a lessee responsible for payment of taxes, of a renewable generation facility, the municipality, upon the request of the owner, or a lessee responsible for payment of taxes, of any other renewable generation facility located within the municipality, shall offer a comparable agreement to the owner or lessee of such facility.
+
+VI. Except as provided in paragraph VII, no voluntary agreement entered into under this section shall be valid for more than 5 years; however, any such agreement may be renewed or amended and restated for any number of consecutive periods of 5 years or less.
+
+VII. The owner of a renewable generation facility and the governing body of the municipality in which the facility is located may agree to a term exceeding 5 years if such term is necessary for the financing of the project or is otherwise advantageous to both parties and both parties agree to such term.
+
+ [Paragraph VIII effective July 1, 2027.]
+
+VIII. In the case of an electric generating facility that is exempt from the utility property tax pursuant to RSA 83-F:1, V(g) and making payments in lieu of taxes to a municipality pursuant to RSA 72:74, if the payment in lieu of tax agreement was in effect as of July 1, 2027, then the facility shall not be liable for payment of the state education tax under RSA 76:3 until that payment in lieu of taxes agreement expires or until July 1, 2032, whichever occurs first. Once payment of the state education tax under RSA 76:3 is required, it may be included in a payment in lieu of taxes agreement pursuant to a new agreement reached under RSA 72:74, or be paid in addition to a payment in lieu of taxes agreement if the underlying agreement has not expired or been reopened and renegotiated. If, under RSA 76:3, the state education tax is paid separately from the payment in lieu of taxes, then the amount of the state education tax owed by the facility shall be determined by using the imputed value of the facility that is calculated and used by the department of revenue administration for purposes of equalization under RSA 21-J:3, XIII.
+
+ Source. 2006, 294:6. 2007, 113:1, eff. Aug. 10, 2007. 2014, 277:2, eff. July 28, 2014. 2021, 31:1, eff. July 1, 2021. 2025, 206:1, eff. July 1, 2027.
+
+ Payment in Lieu of Taxes for Combined Heat and Power Agricultural Facilities
+
+ Section 72:74-a
+
+ 72:74-a Payment in Lieu of Taxes for Combined Heat and Power Agricultural Facilities. – 
+
+I. In this section, "combined heat and power agricultural facility" means a facility that engages in commercial agricultural production and uses an on-site combined heat and power system, as defined by RSA 362-A:1-a, I-d, with the exception that the size of such system may be up to .5 MW of electric power per acre of the portion of the combined heat and power agricultural facility that consists of that acreage that is used in the production and storage of agricultural commodities that are raised for sale, to furnish at least 85 percent of the facility's heat and power needs, not to exceed a total of .5 MW of electric power per acre of the portion of the combined heat and power agricultural facility that consists of that acreage that is used in the production and storage of agricultural commodities that are raised for sale. A combined heat and power agricultural facility shall not constitute a "utility" as defined by RSA 83-F:1, IV. A combined heat and power agricultural facility shall include all structures used for active agricultural purposes, including any buildings in which the combined heat and power system is housed, all structures ancillary to the combined heat and power agricultural facility, and the entirety of the lot on which such structures are physically located.
+
+II. The owner of a combined heat and power agricultural facility and the governing body of the municipality in which the facility is located may, after a duly noticed public hearing, enter into a voluntary agreement to make a payment in lieu of taxes. A lessee of a combined heat and power agricultural facility which is responsible for the payment of taxes on the facility may also enter into a voluntary agreement with the municipality in which the facility is located to make a payment in lieu of taxes, provided the lessee shall send by certified mail to the lessor written notice which shall state that the property of the lessor may be subject to RSA 80 should the lessee fail to make the payments required by the agreement. A copy of such notice shall be provided to the municipality in which the facility is located.
+
+III. A combined heat and power agricultural facility subject to a voluntary agreement to make a payment in lieu of taxes under this section shall not be subject to the laws governing the utility property tax under RSA 83-F. Payments made pursuant to such agreement shall satisfy any tax liability relative to the combined heat and power agricultural facility that otherwise exists under RSA 72. The payment in lieu of taxes shall be equalized under RSA 21-J:3, XIII in the same manner as other payments in lieu of taxes. In the absence of a payment in lieu of taxes agreement, the combined heat and power agricultural facility shall be subject to taxation under RSA 72.
+
+IV. If a municipality that contains more than one school district receives a payment in lieu of taxes under this section, the proceeds shall be prorated to the districts in the same manner as local taxes are prorated to the districts, or in the case of a cooperative school district between the city or town and pre-existing school district.
+
+V. The collection procedures in RSA 80 shall be used to enforce a voluntary agreement to make a payment in lieu of taxes authorized by this section.
+
+VI. If a municipality enters into a voluntary payment in lieu of taxes agreement with an owner, or a lessee responsible for payment of taxes, of a combined heat and power agricultural facility, the municipality, upon the request of the owner, or a lessee responsible for payment of taxes, of any other combined heat and power agricultural facility located within the municipality, shall offer a comparable agreement to the owner or lessee of such other facility.
+
+VII. Except as provided in paragraph VIII, no voluntary agreement entered into under this section shall be valid for more than 5 years; however, any such agreement may be renewed or amended and restated for any number of consecutive periods of 5 years or less.
+
+VIII. The owner of a combined heat and power agricultural facility and the governing body of the municipality in which the facility is located may agree to a term exceeding 5 years if such term is necessary for the financing of the project or is otherwise advantageous to both parties and both parties agree to such term.
+
+ Source. 2019, 266:2, eff. Apr. 1, 2019.
+
+ Commercial and Industrial Construction Exemption in Coos County
+
+ Section 72:75
+
+ 72:75 Definitions. – 
+
+I. In this subdivision:
+
+(a) "Commercial uses" shall include all retail, wholesale, service, and similar uses.
+
+(b) "Eligible municipality" shall mean any city or town in Coos county.
+
+(c) "Industrial uses" shall include all manufacturing, production, assembling, warehousing, or processing of goods or materials for sale or distribution, research and development activities, or processing of waste materials.
+
+II. An eligible municipality adopting a property tax exemption pursuant to RSA 72:76 may, in lieu of the definitions in this section, adopt by reference the definitions of similar terms as may be contained in that town's or city's zoning ordinances.
+
+ Source. 2008, 224:2, eff. July 1, 2008.
+
+ Section 72:76
+
+ 72:76 Property Tax Exemption. – 
+
+An eligible municipality may, by vote of the local legislative body pursuant to RSA 72:77, adopt a new construction property tax exemption for commercial or industrial uses, or both. The exemption shall apply only for municipal and local school property taxes assessed by the municipality which shall exclude state education property taxes under RSA 76:3 and county taxes assessed against the municipality under RSA 29:11, and shall be a specified percentage on an annual basis of the increase in assessed value attributable to construction of new structures, and additions, renovations, or improvements to existing structures. The exemption may run for a maximum period of 10 years following the new construction; provided, however, that the exemption for all years shall cumulatively not exceed 500 percent of the increased assessed value. Once adopted by the local legislative body, the percentage rate and duration of the exemption shall be granted uniformly within that municipality to all projects for which a proper application is filed.
+
+ Source. 2008, 224:2, eff. July 1, 2008.
+
+ Section 72:77
+
+ 72:77 Procedure for Adoption. – 
+
+I. A municipality desiring to adopt the provisions of RSA 72:76 shall do so in accordance with the procedures set forth in RSA 72:27-a. The vote shall specify the percentage of new assessed value to be exempted, the number of years duration of the exemption following new construction, and a reference to zoning use category definitions, if applicable. The exemption shall take effect in the tax year beginning April 1 following its adoption.
+
+II. A vote adopting RSA 72:76 shall remain in effect for a maximum of 5 tax years; provided, however, that for any application which has already been granted prior to expiration of such 5 tax year period, the exemption shall continue to apply at the rate and for the duration in effect at the time it was granted.
+
+ Source. 2008, 224:2, eff. July 1, 2008.
+
+ Section 72:78
+
+ 72:78 Application for Exemption. – 
+
+I. An owner shall apply for the exemption under RSA 72:76 prior to construction, but not after December 31 before the beginning of the tax year for which the exemption is sought. In such cases the selectmen or assessors may anticipatorily grant the exemption, subject to adjustment when the actual increase in assessed value becomes known. If construction is partially complete on April 1 of any year, the exemption for that year shall be based on the increased assessed value attributable to the partial construction, but the duration of the exemption shall be adjusted such that the cumulative amount of exemptions received, based on the construction as completed, is proportional to that received by other eligible properties.
+
+II. The selectmen or assessors shall notify the applicant of their decision no later than February 28 before the beginning of the tax year for which the exemption is sought. The decision shall specify the amount of the exemption, that it is effective with the new tax year and the number of years for which the exemption applies to qualified construction. The decision of the selectmen or assessors may be appealed in the manner set forth in RSA 72:34-a.
+
+III. The selectmen or assessors may request such additional or updated information as is necessary to determine eligibility. If they are satisfied that the applicant has willfully made any false statement, or has refused to provide information after such a request, they may refuse to grant the exemption.
+
+IV. If the municipality completes a revaluation during the period for which an exemption has been granted, the amount of the exemption shall be adjusted by the difference in equalization ratios applicable in the municipality before and after the revaluation.
+
+ Source. 2008, 224:2. 2009, 144:285, eff. July 1, 2009. 2012, 186:1, eff. June 11, 2012.
+
+ Commission to Study Taxability of Lease Interests in Public Property
+
+ Section 72:79
+
+ 72:79 Repealed by 2016, 157:2, eff. Jan. 1, 2017. – 
+
+ Commercial and Industrial Construction Exemption Statewide
+
+ Section 72:80
+
+ 72:80 Definitions. – 
+
+I. In this subdivision:
+
+(a) "Commercial uses" shall include all retail, wholesale, service, and similar uses.
+
+(b) "Eligible municipality" shall mean any city or town in the state.
+
+(c) "Industrial uses" shall include all manufacturing, production, assembling, warehousing, or processing of goods or materials for sale or distribution, research and development activities, or processing of waste materials.
+
+II. An eligible municipality adopting a property tax exemption pursuant to RSA 72:81 may, in lieu of the definitions in this section, adopt by reference the definitions of similar terms as may be contained in that town's or city's zoning ordinances.
+
+ Source. 2017, 179:2, eff. Aug. 28, 2017.
+
+ Section 72:81
+
+ 72:81 Property Tax Exemption. – 
+
+I. An eligible municipality may, by vote of the local legislative body pursuant to RSA 72:82, adopt a new construction property tax exemption for commercial or industrial uses, or both. The intent of the exemption is to provide incentives to businesses to build, rebuild, modernize, or enlarge within the municipality. The exemption shall apply only for municipal and local school property taxes assessed by the municipality which shall exclude state education property taxes under RSA 76:3 and county taxes assessed against the municipality under RSA 29:11, and shall be a specified percentage on an annual basis of the increase in assessed value attributable to construction of new structures, and additions, renovations, or improvements to existing structures, but which shall not exceed 50 percent per year. The exemption may run for a maximum period of 10 years following the new construction.
+
+II. Once adopted by the local legislative body, the percentage rate and duration of the exemption shall be granted on a per case basis based on the amount and value of public benefit as determined by the governing body either:
+
+(a) To all properties within the municipality; or
+
+(b) To a specific group or groups of parcels within the municipality as designated by the legislative body.
+
+III. For the purposes of this section, public benefit shall be defined by the local legislative body as part of the adoption of the property tax exemption.
+
+ Source. 2017, 179:2, eff. Aug. 28, 2017. 2019, 221:1, eff. July 12, 2019.
+
+ Section 72:82
+
+ 72:82 Procedure for Adoption. – 
+
+I. A municipality desiring to adopt the provisions of RSA 72:81 shall do so in accordance with the procedures set forth in RSA 72:27-a. The vote shall specify that the exemption, if granted, shall apply to all properties within the municipality if adopted in accordance with RSA 72:81, II(a) or to a specific group or groups of parcels within the municipality if adopted in accordance with RSA 72:81, II(b). The vote shall specify the maximum percentage of new assessed value to be exempted, the maximum number of years duration of the exemption following new construction, a definition of public benefit, and a reference to zoning use category definitions, if applicable. The exemption shall take effect in the tax year beginning April 1 following its adoption.
+
+II. A vote adopting RSA 72:81 shall remain in effect for a maximum of 5 tax years; provided, however, that for any application which has already been granted prior to expiration of such 5 tax year period, the exemption shall continue to apply at the rate and for the duration in effect at the time it was granted.
+
+ Source. 2017, 179:2, eff. Aug. 28, 2017. 2019, 221:2, eff. July 12, 2019.
+
+ Section 72:83
+
+ 72:83 Application for Exemption. – 
+
+I. An owner shall apply for the exemption under RSA 72:81 prior to construction, but not after December 31 before the beginning of the tax year for which the exemption is sought. In such cases the selectmen or assessors may anticipatorily grant the exemption, subject to adjustment when the actual increase in assessed value becomes known. If construction is partially complete on April 1 of any year, the exemption for that year shall be based on the increased assessed value attributable to the partial construction, but the duration of the exemption shall be adjusted such that the cumulative amount of exemptions received, based on the construction as completed, is proportional to that received by other eligible properties.
+
+II. The selectmen or assessors shall notify the applicant of their decision no later than February 28 before the beginning of the tax year for which the exemption is sought. The decision shall specify the amount of the exemption, that it is effective with the new tax year, and the number of years for which the exemption applies to qualified construction. The decision of the selectmen or assessors may be appealed in the manner set forth in RSA 72:34-a.
+
+III. The selectmen or assessors may request such additional or updated information as is necessary to determine eligibility. If they are satisfied that the applicant has willfully made any false statement, or has refused to provide information after such a request, they may refuse to grant the exemption.
+
+IV. If the municipality completes a revaluation during the period for which an exemption has been granted, the amount of the exemption shall be adjusted by the difference in equalization ratios applicable in the municipality before and after the revaluation.
+
+ Source. 2017, 179:2, eff. Aug. 28, 2017.
+
+ Electric Energy Storage Systems Exemption
+
+ Section 72:84
+
+ 72:84 Electric Energy Storage System; Definition. – 
+
+In this subdivision "electric energy storage system" means a facility located behind a retail meter that stores electrical energy that is otherwise produced by an electricity generator or uses electricity to concentrate and store thermal energy, by electrical, chemical, mechanical, or thermal means, for discharge or use at a later time, whether in the form of thermal energy to meet space or process heating or cooling loads or electricity, which can be used to reduce peak loads, compensate for variability in renewable energy production, or provide other grid services, and which does not participate in any wholesale energy markets administered by ISO New England as a registered asset or otherwise. An electric energy storage system shall not include conventional electric resistance or gas domestic hot water heaters.
+
+ Source. 2019, 327:4, eff. Oct. 15, 2019.
+
+ Section 72:85
+
+ 72:85 Exemption for Electric Energy Storage Systems. – 
+
+A city or town may adopt an exemption under RSA 72:27-a from the assessed value for property tax purposes, for persons owning real property which is equipped with an electrical energy storage system.
+
+ Source. 2019, 327:4, eff. Oct. 15, 2019.
+
+ Section 72:86
+
+ 72:86 Application for Exemption. – 
+
+Applications for exemptions under RSA 72:85 and RSA 72:87 shall be governed by the provisions of RSA 72:33, RSA 72:34, and RSA 72:34-a.
+
+ Source. 2019, 327:4, eff. Oct. 15, 2019. 2021, 200:2, Pt. II, Sec. 2, eff. Oct. 9, 2021.
+
+ Section 72:87
+
+ 72:87 Exemption for Renewable Generation Facilities and Electric Energy Storage Systems. – 
+
+Each municipality may adopt under RSA 72:27-a an exemption from the assessed value, for property tax purposes, of a renewable generation facility, as defined in RSA 72:73, and of an electric energy storage system, as defined in RSA 72:84, and that (a) is located behind the retail meter of a customer-generator, as defined in RSA 362-A:1-a, II-b; or (b) is a limited producer, as defined in RSA 362-A:1-a, III, operating pursuant to RSA 362-A:2-a; or (c) is operating pursuant to RSA 374-D:2.
+
+ Source. 2021, 200:2, Pt. II, Sec. 3, eff. Oct. 9, 2021.

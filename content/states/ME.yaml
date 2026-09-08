@@ -1,0 +1,62 @@
+code: ME
+name: Maine
+regulator:
+  name: "Maine Real Estate Commission, Office of Professional and Occupational Regulation (OPOR), Dept. of Professional and Financial Regulation"
+  url: "https://www.maine.gov/pfr/professionallicensing/professions/real-estate-commission"
+vendor: pearsonvue
+vendor_notes: "Maine's entry-level license is the 'Sales Agent'; the Pearson VUE 'Sales Agent Exam' has a general (national) portion and a Maine Law portion. A separate 50-item 'Maine Law' exam is used for reciprocity/reinstatement only."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "10-20 (5 national + 5-15 Maine Law); not scored"
+  time_minutes: 240
+  pass_score_national: "75 (scaled score, 0-100)"
+  pass_score_state: "75 (scaled score, 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 88
+  retake_policy: "'Sales Agent candidates may retake the Sales Agent Exam multiple times as long as they do so before the expiration date of the Course Completion Certificate. Course Completion Certificates are valid for one year.' 'Sales Agent candidates must schedule to retake the Sales Agent Exam regardless of failing one or both portions of that exam. The candidate will automatically be administered the required portion(s) of the exam by Pearson VUE.' Candidates must wait 24 hours before making a reservation for reexamination. The $88 fee applies to each reservation."
+  calculator_policy: "'Calculators are permitted only if they are silent, hand-held, nonprinting, and without an alphabetic key pad. Financial calculators are not permitted. Calculator malfunctions are not grounds for challenging examination results or requesting additional examination time.'"
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: null
+prelicense_hours_salesperson: 55
+prelicense_hours_broker: null
+statute_citation_root: "32 M.R.S. §§ 13001–13288 (ch. 114, Real Estate Brokerage License Act)"
+rules_citation_root: "02-039 C.M.R. chs. 300–410 (Real Estate Commission rules)"
+statute_url: "https://legislature.maine.gov/statutes/32/title32ch114sec0.html"
+rules_url: "https://www.maine.gov/sos/rulemaking/agency-rules/department-professional-and-financial-regulation-rules#039"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092000.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092005.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092000.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092005.pdf"
+    used_for: [exam_outline_url, salesperson_exam.state_items, salesperson_exam.pretest_items]
+    accessed: 2026-09-08
+  - url: "https://www.maine.gov/pfr/professionallicensing/professions/real-estate-commission/examinations"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.maine.gov/pfr/professionallicensing/sites/maine.gov.pfr.professionallicensing/files/inline-files/Sales-Agent-QE-Requirement-Overview.pdf"
+    used_for: [prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://www.maine.gov/pfr/professionallicensing/professions/real-estate-commission/home/laws-rules"
+    used_for: [statute_url, rules_url, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://legislature.maine.gov/statutes/32/title32sec13200.html"
+    used_for: [statute_citation_root]
+    accessed: 2026-09-08
+unverified: [prelicense_hours_broker]
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #092000 dated December 2025. No broker examination exists in Maine: the Associate Broker license (2 years as Sales Agent + 'The Associate Broker Course') and the Broker/Designated Broker license (2 years as Associate Broker + 'Broker/Designated Broker Course') are earned by education/experience only, so broker_exam is null by design. Course hours for the Associate Broker and Broker courses were not found in a primary source (Commission rules Ch. 360/390 do not state hours). Time: general 2.5 hours (150 min) + Maine Law 1.5 hours (90 min). The Maine Law content outline changes effective September 1, 2026 (old outline valid through August 31, 2026). Sales Agent license is issued for 2 years and cannot be renewed; licensee must advance to Associate Broker. Reciprocity candidates take only the 50-item Maine Law exam, which 'does not satisfy the law portion of the Sales Agent exam'."

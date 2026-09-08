@@ -1,0 +1,56 @@
+code: AZ
+name: Arizona
+regulator:
+  name: "Arizona Department of Real Estate (ADRE)"
+  url: "https://azre.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE (Pearson Professional Assessments) administers ADRE exams."
+salesperson_exam:
+  national_items: 80
+  state_items: 60
+  total_items: 140
+  pretest_items: 10           # 5 on General + 5 on State (not scored)
+  time_minutes: 240           # General 150 min + State 90 min (two separately scheduled exams)
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 130           # General $70 + State $60; "Combo discount of $75 available when scheduling these exams back to back"
+  retake_policy: "'Candidates who do not pass an examination must wait twenty-four (24) hours after taking that exam before making a reservation to retake it.' 'The cost for each retake is the same as the initial examination.' The exam 'must be successfully completed within one (1) year prior to the date of the license application' (A.R.S. § 32-2125.01). One-time 30-minute exam playback (review of incorrectly answered questions) is available after a second or subsequent failure, to be scheduled within 14 days."
+  calculator_policy: "'Calculators are permitted only if they are silent, hand-held, nonprinting, and without an alphabetic (A-Z) key pad.' Must be battery-operated."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: 180
+  pretest_items: 15
+  time_minutes: 315
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "75%"
+  grading: combined
+  exam_fee_usd: 125
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 90
+statute_citation_root: "Ariz. Rev. Stat. § 32-2101 et seq. (Title 32, ch. 20, Real Estate)"
+rules_citation_root: "Ariz. Admin. Code R4-28-101 et seq. (Title 4, ch. 28, State Real Estate Department / Commissioner's Rules)"
+statute_url: "https://www.azleg.gov/arsDetail/?title=32"
+rules_url: "https://apps.azsos.gov/public_services/Title_04/4-28.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090300.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090301.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090300.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/az/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://azre.gov/about/services/salesperson-license"
+    used_for: [regulator, prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://www.azleg.gov/arsDetail/?title=32"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Candidate Handbook #090300 dated February 2026. Effective January 1, 2026 the salesperson exam was split into two separately scheduled and separately scored exams: 'Arizona Real Estate Sales - General' (80 scored + 5 pretest, 150 min, $70) and 'Arizona Real Estate Sales - State' (60 scored + 5 pretest, 90 min, $60); combo price $75 when scheduled back to back; ADRE requires two score reports (General and State) with the license application. Scores are reported as percent correct (not scaled); 75% needed on each. The BROKER exam is a single 180-question Arizona-specific exam (plus 15 pretest), 315 minutes, $125, 75%; it is not split into national/state. Pre-license: handbook says applicants must complete 'prelicensure education course(s) prescribed and approved by the Commissioner of at least 90 hours' (both salesperson and broker; statute A.R.S. § 32-2124); a separate 6-hour Contract Writing course is required for the salesperson LICENSE application, not for the exam. Out-of-State License Recognition candidates take only the state-specific exam (salesperson 60 items/90 min/$60; broker 110 items/165 min/$125). azre.gov and apps.azsos.gov returned HTTP 403 to automated fetches; rules_url is the Secretary of State's official A.A.C. Title 4 Ch. 28 PDF as indexed by search."

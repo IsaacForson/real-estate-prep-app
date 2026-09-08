@@ -1,0 +1,164 @@
+id: national_psi
+vendor: psi
+title: "PSI national real estate outline (internal blueprint)"
+source_document: "PSI Real Estate Candidate Information Bulletins (state-specific), 'National Portion Content Outline (Real Estate Principles and Practices)'"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4672"
+source_version_or_date: "Outline revision introduced 2023 (per Colorado DRE notice title 'PSI's 2023 National Real Estate Examination Content Outlines'); confirmed unchanged in bulletins dated 8/15/2024 (MD), 2025 (ND), 9/23/2025 (MA), 2/18/2026 (VA), 7/1/2026 (GA), 7/6/2026 (MI)."
+accessed: 2026-09-08
+copyright_note: "Structure and weights recorded for internal blueprint use; vendor text not reproduced. Labels are our own paraphrases."
+states_confirmed_from: [GA, MA, VA, MD, ND, MI, CO]
+bulletin_urls:
+  - "https://test-takers.psiexams.com/api/content/bulletin/4672"   # GA (salesperson, broker, CAM)
+  - "https://test-takers.psiexams.com/api/content/bulletin/4460"   # MA
+  - "https://www.blueskyonlinerealestateschool.org/PSIBulletin/CIB%20VIRGINIA%20REAL%20ESTATE.pdf"   # VA (school-hosted copy of PSI CIB, rev. 2/18/2026)
+  - "https://www.mytristaracademy.com/sites/default/files/2025-02/PSI%20Maryland%20Real%20Estate%20Exam%20Candidate%20Bulletin%202024.pdf"   # MD (school-hosted copy, updated 8/15/2024)
+  - "https://realestatend.org/image/cache/NDREC_Candidate_Information_Bulletin.pdf"   # ND
+  - "https://test-takers.psiexams.com/api/content/bulletin/836"    # MI
+  - "https://proctor2.psionline.com/programs/Instructions/163.pdf" # CO (broker only; 2023)
+notes: >
+  PSI publishes ONE national outline expressed as percentage weights per domain (no per-subtopic
+  counts). Subtopic lists were normalized and diffed across GA, VA, MD, ND, MI and MA: the eleven
+  domains, weights, and subtopic structure are identical in every bulletin checked. Only cosmetic
+  differences exist (MA lists the six specialty loan types under IV.B as a-f instead of 5-10; the MA
+  bulletin calls the section "General Portion" rather than "National Portion"). Two subtopics are
+  flagged broker-only in every bulletin (VIII.A.4-6 and X.D). The NUMBER of national items varies
+  by state even though the weights do not: 80 scored items in MA/VA/MD (broker: 75 questions worth
+  80 points because some scenario items score 0/1/2); 100 items in GA and ND (ND broker: 90
+  questions/100 points); MI reports only a combined 115-question total. Experimental (unscored)
+  items: 1-10 (about 10%) in GA/VA/MI, 5-10 in MA/MD/ND. `items` below are our rounding of the
+  percentage onto an 80-point national exam and sum to 80 for both exams; scale by 1.25 for
+  100-item states. Nevada, listed in the task brief as a PSI state, is actually a Pearson VUE state
+  (Pearson VUE handbook 092900) and was not used.
+exams:
+  salesperson:
+    scored_items: 80          # MA/VA/MD; GA and ND administer 100
+    scored_items_by_state: { MA: 80, VA: 80, MD: 80, GA: 100, ND: 100 }
+    pretest_items: "1-10 (unscored experimental items; count varies by state)"
+    cognitive_split:
+      knowledge: null
+      application: null
+      analysis: null
+    domains:
+      - id: "I"
+        label: "Property ownership, land descriptions, encumbrances, ownership forms"
+        weight_pct: 10
+        items: 8
+        subtopics:
+          - { id: "I.A", label: "Real vs. personal property and conveyance", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.B", label: "Legal description methods and land/structure measurement", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.C", label: "Liens, easements, encroachments, and severable rights", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "I.D", label: "Severalty, co-ownership, common-interest, trust, entity, life estate", items: null, statute_refs: ["REP Ref. Ownership", "Title & Transfer"] }
+      - id: "II"
+        label: "Public and private land use controls"
+        weight_pct: 5
+        items: 4
+        subtopics:
+          - { id: "II.A", label: "Taxation, eminent domain, escheat", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "II.B", label: "Government land use regulation", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+          - { id: "II.C", label: "Deed restrictions, CC&Rs, association rules", items: null, statute_refs: ["REP Ref. Property & Land Use"] }
+      - id: "III"
+        label: "Valuation and appraisal"
+        weight_pct: 8
+        items: 6
+        subtopics:
+          - { id: "III.A", label: "When appraisals are required; appraisal process", items: null, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.B", label: "Value principles; sales, cost, income approaches", items: null, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+          - { id: "III.C", label: "CMA, BPO, and automated valuation", items: null, statute_refs: ["REP Ref. Valuation & Appraisal"] }
+      - id: "IV"
+        label: "Financing concepts, loan types, lending laws"
+        weight_pct: 10
+        items: 8
+        subtopics:
+          - { id: "IV.A", label: "Loan terminology, underwriting, mortgage clauses, promissory notes", items: null, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "IV.B", label: "Conventional, government, owner, and specialty loan types", items: null, statute_refs: ["REP Ref. Financing & Closing"] }
+          - { id: "IV.C", label: "RESPA, TILA, TRID, ECOA, lending process, risky features", items: null, statute_refs: ["RESPA", "TILA § 1602", "TILA § 1605", "TILA § 1606", "TILA § 1631", "TILA § 1632", "TILA § 1635", "TILA § 1638", "TILA § 1639", "TILA § 1639h", "TILA § 1640", "TILA § 1664", "ECOA", "REP Ref. Financing & Closing"] }
+      - id: "V"
+        label: "Contract law, purchase and lease contracts"
+        weight_pct: 19
+        items: 15
+        subtopics:
+          - { id: "V.A", label: "Contract formation, validity, enforceability, remedies, termination", items: null, statute_refs: ["E-SIGN", "REP Ref. Contracts"] }
+          - { id: "V.B", label: "Purchase agreements, addenda, contingencies, leases", items: null, statute_refs: ["REP Ref. Contracts"] }
+          - { id: "V.C", label: "Handling multiple offers and counteroffers", items: null, statute_refs: ["REP Ref. Contracts"] }
+      - id: "VI"
+        label: "Agency relationships, duties, disclosures"
+        weight_pct: 13
+        items: 10
+        subtopics:
+          - { id: "VI.A", label: "Creating and ending agency; listing/buyer agreements; non-agency", items: null, statute_refs: ["REP Ref. Agency"] }
+          - { id: "VI.B", label: "Fiduciary duties and duties to non-clients", items: null, statute_refs: ["REP Ref. Agency"] }
+          - { id: "VI.C", label: "Disclosing representation and conflicts of interest", items: null, statute_refs: ["REP Ref. Agency"] }
+      - id: "VII"
+        label: "Property condition and environmental disclosures"
+        weight_pct: 7
+        items: 6
+        subtopics:
+          - { id: "VII.A", label: "Seller condition disclosures, inspections, red flags", items: null, statute_refs: ["REP Ref. Property Condition & Environmental"] }
+          - { id: "VII.B", label: "Environmental and governmental disclosure requirements", items: null, statute_refs: ["CERCLA § 9601", "CERCLA § 9607", "Lead paint", "Flood insurance", "REP Ref. Property Condition & Environmental"] }
+          - { id: "VII.C", label: "Material facts and defects", items: null, statute_refs: ["REP Ref. Property Condition & Environmental"] }
+      - id: "VIII"
+        label: "Property management"
+        weight_pct: 3
+        items: 2
+        subtopics:
+          - { id: "VIII.A", label: "Tenant screening, fair housing, rent setting (manager duties)", items: null, note: "Sub-items 4-6 (maintenance/risk, trust funds, management contracts) are broker-only.", statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "VIII.B", label: "Landlord and tenant rights and obligations", items: null, statute_refs: ["REP Ref. Brokerage Practice"] }
+      - id: "IX"
+        label: "Deeds, title insurance, closing, special transfers"
+        weight_pct: 6
+        items: 5
+        subtopics:
+          - { id: "IX.A", label: "Deed types", items: null, statute_refs: ["REP Ref. Ownership", "Title & Transfer", "REP Ref. Financing & Closing"] }
+          - { id: "IX.B", label: "Title insurance, searches, title defects", items: null, statute_refs: ["REP Ref. Ownership", "Title & Transfer", "REP Ref. Financing & Closing"] }
+          - { id: "IX.C", label: "When title passes; recording; settlement; warranties", items: null, statute_refs: ["REP Ref. Ownership", "Title & Transfer", "REP Ref. Financing & Closing"] }
+          - { id: "IX.D", label: "Foreclosure, short sale, and probate transfers", items: null, statute_refs: ["REP Ref. Ownership", "Title & Transfer", "REP Ref. Financing & Closing"] }
+      - id: "X"
+        label: "Fair housing, regulations, licensee duties"
+        weight_pct: 12
+        items: 10
+        subtopics:
+          - { id: "X.A", label: "Fair Housing Act, protected classes, prohibited conduct, ADA", items: null, statute_refs: ["Fair Housing Act", "Civil Rights Act of 1866", "ADA Title III"] }
+          - { id: "X.B", label: "Employee/IC status, antitrust, Do-Not-Call, online advertising", items: null, statute_refs: ["Sherman Act § 1", "Sherman Act § 2", "TCPA", "REP Ref. Brokerage Practice"] }
+          - { id: "X.C", label: "Confidentiality, handling others' funds, due diligence", items: null, statute_refs: ["REP Ref. Brokerage Practice"] }
+          - { id: "X.D", label: "Broker supervision of licensees and assistants", items: null, note: "Broker-only; not tested on the salesperson exam.", statute_refs: ["REP Ref. Brokerage Practice"] }
+      - id: "XI"
+        label: "Real estate calculations"
+        weight_pct: 7
+        items: 6
+        subtopics:
+          - { id: "XI.A", label: "Net proceeds, buyer funds, prorations, transfer fees, PITI", items: null, statute_refs: ["REP Ref. Real Estate Math"] }
+          - { id: "XI.B", label: "Equity, cap rate, LTV, points and origination fees", items: null, statute_refs: ["REP Ref. Real Estate Math"] }
+  broker:
+    scored_items: 80          # points; MA/VA/MD administer 75 questions worth 80 points (some items score 0/1/2)
+    scored_items_by_state: { MA: "75 questions / 80 points", VA: "75 / 80", MD: "75 / 80", ND: "90 / 100", CO: "80 points (60 to pass)" }
+    pretest_items: "1-10 (unscored experimental items; count varies by state)"
+    item_format_note: "Broker national exam includes scenario items with more than four options, scored 0, 1, or 2 points for the single best answer."
+    cognitive_split:
+      knowledge: null
+      application: null
+      analysis: null
+    domains:
+      - { id: "I",    label: "Property ownership, land descriptions, encumbrances, ownership forms", weight_pct: 10, items: 8 }
+      - { id: "II",   label: "Public and private land use controls",                                weight_pct: 5,  items: 4 }
+      - { id: "III",  label: "Valuation and appraisal",                                             weight_pct: 8,  items: 6 }
+      - { id: "IV",   label: "Financing concepts, loan types, lending laws",                        weight_pct: 9,  items: 7 }
+      - { id: "V",    label: "Contract law, purchase and lease contracts",                          weight_pct: 19, items: 15 }
+      - { id: "VI",   label: "Agency relationships, duties, disclosures",                           weight_pct: 13, items: 10 }
+      - { id: "VII",  label: "Property condition and environmental disclosures",                    weight_pct: 7,  items: 6 }
+      - { id: "VIII", label: "Property management (incl. broker-only duties)",                      weight_pct: 5,  items: 4 }
+      - { id: "IX",   label: "Deeds, title insurance, closing, special transfers",                  weight_pct: 6,  items: 5 }
+      - { id: "X",    label: "Fair housing, regulations, licensee and supervisory duties",          weight_pct: 12, items: 10 }
+      - { id: "XI",   label: "Real estate calculations",                                            weight_pct: 6,  items: 5 }
+    subtopics_note: "Broker subtopic structure is identical to salesperson (same I.A ... XI.B ids); the only differences are weights on IV, VIII, XI and the inclusion of the broker-only sub-items VIII.A.4-6 and X.D."
+references:   # national-portion study list as printed in the GA/VA/MD 2024-2026 bulletins (MD list is the longest)
+  - { title: "Modern Real Estate Practice", author: "Galaty, Allaway, Kyle, Williams", publisher: "Dearborn", edition: "21st" }
+  - { title: "Mastering Real Estate Math", author: "Denise Evans", publisher: "Dearborn", edition: "9th (2022)" }
+  - { title: "The Language of Real Estate", author: "Reilly and Spodek", publisher: "Dearborn", edition: "8th (2019)" }
+  - { title: "Property Management", author: "Robert C. Kyle, Floyd M. Baird, C. Donald Kyle", publisher: "Dearborn", edition: "11th (2016)" }
+  - { title: "Real Estate Law", author: "Elliot Klayman", publisher: "Dearborn", edition: "11th (2022)" }
+  - { title: "Real Estate Fundamentals", author: "Gaddy, Hart, Spodek", publisher: "Dearborn", edition: "10th (2019)" }
+  - { title: "Real Estate Principles", author: "Charles Jacobus", publisher: "OnCourse Publishing", edition: "12th", note: "MD/CO lists" }
+  - { title: "Real Estate Principles", author: "Floyd and Allen", publisher: "Dearborn", edition: "12th (2021)", note: "MD list" }
+  - { title: "Mastering Real Estate Principles", author: "Gerald Cortesi", publisher: null, edition: "8th (2022)", note: "MD list" }
+  - { title: "Real Estate Principles & Practices", author: "Arlyne Geschwender", publisher: "OnCourse Publishing", edition: "9th (2014)", note: "MD/CO lists" }
+  - { title: "Principles of Real Estate Practice", author: "Stephen Mettling and David Cusic", publisher: "Performance Programs Company", edition: "6th (2019)", note: "MD/CO lists" }

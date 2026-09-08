@@ -1,0 +1,332 @@
+# Alabama state-portion blueprint. Source: Pearson VUE publication 093301 (Alabama Real Estate State
+# Content Outlines), "Alabama Salesperson Prelicense State Content Outline for Salespersons and Brokers",
+# effective February 1, 2026. Labels are OUR paraphrases; outline wording is not reproduced (SPEC §3.2).
+# Domain ids follow the bulletin's Roman numerals; subtopic ids append the bulletin's letters.
+id: state_AL
+vendor: pearsonvue
+title: "Alabama state-portion outline (internal blueprint)"
+source_document: "Pearson VUE publication 093301 — Alabama Real Estate State Content Outlines (state-specific outline for salesperson and broker exams)"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093301.pdf"
+source_version_or_date: "Publication 093301 dated 02/2026; state outline effective February 1, 2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  The bulletin publishes per-domain item counts for both the salesperson (40) and broker (40) state
+  exams in a single two-column table; subtopic counts are not published. Domain I carries 0 broker items
+  and is therefore omitted from the broker exam. Pretest: 5-10 unscored items on the state portion.
+  Statute refs: Ala. Code Title 34, ch. 27 (License Law art. 1-2; RECAD art. 4, §§ 34-27-80 to -88) and
+  Ala. Admin. Code agency 790 (AREC rules, ch. 790-X-1 to 790-X-5).
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Why the license law exists; the Commission's role"
+        items: 1
+        subtopics:
+          - id: "I.A"
+            label: "Purpose of the law; Commission makeup, rulemaking, enforcement"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-2", "Ala. Code § 34-27-7", "Ala. Code § 34-27-8", "Ala. Code § 34-27-8.1", "Ala. Admin. Code r. 790-X-1-.01"]
+      - id: "II"
+        label: "Getting and keeping a license"
+        items: 7
+        subtopics:
+          - id: "II.A"
+            label: "Acts that require a license; exemptions; penalties for unlicensed practice"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-2", "Ala. Code § 34-27-30", "Ala. Code § 34-27-11", "Ala. Admin. Code r. 790-X-1-.03", "Ala. Admin. Code r. 790-X-1-.04"]
+          - id: "II.B"
+            label: "Co-brokerage with out-of-state brokers"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-3", "Ala. Admin. Code r. 790-X-1-.05"]
+          - id: "II.C"
+            label: "Applicant qualifications, exam, reciprocity, application documents"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Code § 34-27-33", "Ala. Admin. Code r. 790-X-2-.01", "Ala. Admin. Code r. 790-X-2-.02", "Ala. Admin. Code r. 790-X-1-.18"]
+          - id: "II.D"
+            label: "License renewal cycle, fees, late renewal"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.16", "Ala. Admin. Code r. 790-X-2-.26"]
+          - id: "II.E"
+            label: "Continuing education hours, content, exemptions"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-1-.11", "Ala. Admin. Code r. 790-X-1-.12", "Ala. Admin. Code r. 790-X-1-.13"]
+          - id: "II.F"
+            label: "Post-license course requirement and deadline"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-33", "Ala. Admin. Code r. 790-X-1-.06", "Ala. Admin. Code r. 790-X-2-.03"]
+          - id: "II.G"
+            label: "Temporary salesperson license vs. original license"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-33", "Ala. Admin. Code r. 790-X-2-.03"]
+      - id: "III"
+        label: "Changing license status"
+        items: 2
+        subtopics:
+          - id: "III.A"
+            label: "Transferring to another qualifying broker"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34", "Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.15"]
+          - id: "III.B"
+            label: "Placing a license on inactive status"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.15"]
+          - id: "III.C"
+            label: "Reactivating an inactive license"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.13"]
+      - id: "IV"
+        label: "Broker and company licenses; offices; qualifying brokers"
+        items: 5
+        subtopics:
+          - id: "IV.A"
+            label: "Company and branch office licensing"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Admin. Code r. 790-X-2-.07", "Ala. Admin. Code r. 790-X-2-.24", "Ala. Admin. Code r. 790-X-2-.25"]
+          - id: "IV.B"
+            label: "Broker license issuance and experience prerequisites"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Admin. Code r. 790-X-2-.01", "Ala. Admin. Code r. 790-X-2-.04"]
+          - id: "IV.C"
+            label: "Who is eligible to be a qualifying broker"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34"]
+          - id: "IV.D"
+            label: "Qualifying broker supervision and accountability"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34", "Ala. Admin. Code r. 790-X-3-.15"]
+          - id: "IV.E"
+            label: "Ending qualifying-broker status; effect on affiliated licensees"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34"]
+          - id: "IV.F"
+            label: "One person qualifying more than one company"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34", "Ala. Admin. Code r. 790-X-2-.04"]
+          - id: "IV.G"
+            label: "Temporary qualifying broker on death or incapacity"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34"]
+          - id: "IV.H"
+            label: "Associate broker status"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-2", "Ala. Code § 34-27-34"]
+          - id: "IV.I"
+            label: "Running a brokerage from a residence"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Admin. Code r. 790-X-2-.07"]
+      - id: "V"
+        label: "Recovery Fund"
+        items: 2
+        subtopics:
+          - id: "V.A"
+            label: "Licensee fees paid into the fund"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-31", "Ala. Admin. Code r. 790-X-2-.20"]
+          - id: "V.B"
+            label: "Claims against the fund; caps; consequences for licensee"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-31"]
+      - id: "VI"
+        label: "Discipline: complaints through appeal"
+        items: 2
+        subtopics:
+          - id: "VI.A"
+            label: "Complaints, investigation, probable cause"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-37", "Ala. Admin. Code r. 790-X-3-.06", "Ala. Admin. Code r. 790-X-3-.10"]
+          - id: "VI.B"
+            label: "Formal hearings and hearing officers"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-37", "Ala. Admin. Code r. 790-X-3-.07", "Ala. Admin. Code r. 790-X-3-.11"]
+          - id: "VI.C"
+            label: "Penalties the Commission may impose"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "VI.D"
+            label: "Requesting a rehearing"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-37"]
+          - id: "VI.E"
+            label: "Appealing a Commission decision to court"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-38"]
+      - id: "VII"
+        label: "Estimated closing statement duty"
+        items: 1
+        subtopics:
+          - id: "VII.A"
+            label: "When and to whom an estimated closing statement is due"
+            items: null
+            statute_refs: ["Ala. Admin. Code r. 790-X-3-.04", "Ala. Code § 34-27-36"]
+      - id: "VIII"
+        label: "Trust funds and escrow handling"
+        items: 2
+        subtopics:
+          - id: "VIII.A"
+            label: "Depositing, holding, and disbursing others' money"
+            items: null
+            statute_refs: ["Ala. Admin. Code r. 790-X-3-.03", "Ala. Code § 34-27-36"]
+      - id: "IX"
+        label: "RECAD: consumer agency and disclosure duties"
+        items: 3
+        subtopics:
+          - id: "IX.A"
+            label: "Brokerage roles and the written disclosure form"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-81", "Ala. Code § 34-27-82", "Ala. Admin. Code r. 790-X-3-.13"]
+          - id: "IX.B"
+            label: "Office agency policy requirement"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-83", "Ala. Admin. Code r. 790-X-3-.14"]
+          - id: "IX.C"
+            label: "Duties owed to clients and customers; misrepresentation; remedies"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-84", "Ala. Code § 34-27-85", "Ala. Code § 34-27-86", "Ala. Code § 34-27-87", "Ala. Code § 34-27-88"]
+      - id: "X"
+        label: "Conduct that triggers discipline"
+        items: 15
+        subtopics:
+          - id: "X.A"
+            label: "Misrepresentation, fraud, dishonest dealing"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-86"]
+          - id: "X.B"
+            label: "Inducing a party to break a contract"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "X.C"
+            label: "Advertising rules, including team advertising"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-39", "Ala. Admin. Code r. 790-X-3-.16"]
+          - id: "X.D"
+            label: "Listing agreement requirements and abuses"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "X.E"
+            label: "Failing to make required disclosures"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-84", "Ala. Admin. Code r. 790-X-3-.13"]
+          - id: "X.F"
+            label: "Record keeping and office inspections"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Admin. Code r. 790-X-3-.09"]
+          - id: "X.G"
+            label: "Rebates and undisclosed compensation"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "X.H"
+            label: "Paying or receiving fees from unlicensed persons"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-30"]
+          - id: "X.I"
+            label: "Duty to report lawsuits, judgments, and criminal dispositions"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-31", "Ala. Code § 34-27-36"]
+          - id: "X.J"
+            label: "Lotteries and prize inducements"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "X.K"
+            label: "Delivering and retaining transaction documents"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36"]
+          - id: "X.L"
+            label: "Violating a Commission rule or order"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-8"]
+          - id: "X.M"
+            label: "Presenting and handling offers"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-84"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "II"
+        label: "Getting and keeping a license"
+        items: 6
+        subtopics:
+          - id: "II.A"
+            label: "Acts that require a license; exemptions"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-2", "Ala. Code § 34-27-30", "Ala. Admin. Code r. 790-X-1-.03"]
+          - id: "II.C"
+            label: "Broker applicant qualifications and experience"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Admin. Code r. 790-X-2-.01", "Ala. Admin. Code r. 790-X-2-.02"]
+          - id: "II.D"
+            label: "Renewal and continuing education"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.16", "Ala. Admin. Code r. 790-X-1-.12"]
+      - id: "III"
+        label: "Changing license status"
+        items: 2
+        subtopics:
+          - id: "III.A"
+            label: "Transfer, inactive status, reactivation"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34", "Ala. Code § 34-27-35", "Ala. Admin. Code r. 790-X-2-.13", "Ala. Admin. Code r. 790-X-2-.15"]
+      - id: "IV"
+        label: "Broker and company licenses; offices; qualifying brokers"
+        items: 6
+        subtopics:
+          - id: "IV.A"
+            label: "Company, branch, and home-office licensing"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-32", "Ala. Admin. Code r. 790-X-2-.07"]
+          - id: "IV.C"
+            label: "Qualifying broker eligibility, duties, multiple companies, termination"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-34", "Ala. Admin. Code r. 790-X-3-.15", "Ala. Admin. Code r. 790-X-2-.04"]
+      - id: "V"
+        label: "Recovery Fund"
+        items: 1
+        subtopics:
+          - id: "V.A"
+            label: "Payments into and out of the fund"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-31"]
+      - id: "VI"
+        label: "Discipline: complaints through appeal"
+        items: 3
+        subtopics:
+          - id: "VI.A"
+            label: "Complaints, hearings, penalties, rehearing, appeals"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-37", "Ala. Code § 34-27-38", "Ala. Admin. Code r. 790-X-3-.06", "Ala. Admin. Code r. 790-X-3-.07"]
+      - id: "VII"
+        label: "Estimated closing statement duty"
+        items: 2
+        subtopics:
+          - id: "VII.A"
+            label: "Broker responsibility for estimated closing statements"
+            items: null
+            statute_refs: ["Ala. Admin. Code r. 790-X-3-.04", "Ala. Code § 34-27-36"]
+      - id: "VIII"
+        label: "Trust funds and escrow handling"
+        items: 3
+        subtopics:
+          - id: "VIII.A"
+            label: "Broker trust account duties"
+            items: null
+            statute_refs: ["Ala. Admin. Code r. 790-X-3-.03", "Ala. Code § 34-27-36"]
+      - id: "IX"
+        label: "RECAD: consumer agency and disclosure duties"
+        items: 5
+        subtopics:
+          - id: "IX.A"
+            label: "Brokerage roles, disclosure form, office policy, duties"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-82", "Ala. Code § 34-27-83", "Ala. Code § 34-27-84", "Ala. Code § 34-27-85", "Ala. Admin. Code r. 790-X-3-.13", "Ala. Admin. Code r. 790-X-3-.14"]
+      - id: "X"
+        label: "Conduct that triggers discipline"
+        items: 12
+        subtopics:
+          - id: "X.A"
+            label: "Prohibited acts list; advertising; records; rebates; unlicensed payments"
+            items: null
+            statute_refs: ["Ala. Code § 34-27-36", "Ala. Code § 34-27-39", "Ala. Admin. Code r. 790-X-3-.16", "Ala. Admin. Code r. 790-X-3-.09"]
+references: []

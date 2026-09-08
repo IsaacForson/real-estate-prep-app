@@ -1,0 +1,62 @@
+code: WA
+name: Washington
+regulator:
+  name: "Washington State Department of Licensing (DOL), Real Estate Licensing; Washington Real Estate Commission"
+  url: "https://dol.wa.gov/professional-licenses/real-estate-brokers"
+vendor: psi
+vendor_notes: "DOL: 'We partner with PSI Testing Excellence to offer real estate broker exams' (test-takers.psiexams.com/ware). Washington's entry-level license is 'Broker' (equivalent to salesperson elsewhere); the supervisory license is 'Managing Broker'. salesperson_exam below = Broker exam; broker_exam = Managing Broker exam."
+salesperson_exam:
+  national_items: 100
+  state_items: 30
+  total_items: 130
+  pretest_items: "5-10 unscored experimental questions may be administered; they count against exam time"
+  time_minutes: 240
+  pass_score_national: "scaled score 70"
+  pass_score_state: "scaled score 70"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 210.00
+  retake_policy: "Bulletin: 'If you fail any portion of the broker or managing broker examination... You will only be required to repeat the portion(s) that you failed. Candidates who pass only one portion must pass the other portion within six (6) months of passing the first portion. Failure to do so will result in having to take the entire examination again.' Exam fee forfeited if you do not test within 1 year of PSI receiving the fee. DOL: 'Your exam results are valid for 1 year. If you don't apply for a license before your results expire, you'll have to reapply to take the exam.'"
+  calculator_policy: "Bulletin: 'Physical calculators are allowed for Test Centers but not for Remote Proctored exams.' (listed under prohibited electronic devices exception)."
+broker_exam:
+  national_items: 90
+  state_items: 44
+  total_items: 134
+  pretest_items: "5-10 unscored experimental questions may be administered"
+  time_minutes: 240
+  pass_score_national: "scaled score 75 (90 items worth 100 points; scenario items scored up to 2 points)"
+  pass_score_state: "scaled score 75 (44 items worth 48 points)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 210.00
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 90
+statute_citation_root: "Wash. Rev. Code ch. 18.85 (Real Estate Brokers and Managing Brokers)"
+rules_citation_root: "Wash. Admin. Code ch. 308-124A (Real Estate—Licensing and Examination); see also WAC chs. 308-124 through 308-124I"
+statute_url: "https://app.leg.wa.gov/rcw/default.aspx?cite=18.85"
+rules_url: "https://app.leg.wa.gov/wac/default.aspx?cite=308-124A"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/4658"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/4658"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dol.wa.gov/professional-licenses/real-estate-brokers/exam-real-estate-brokers"
+    used_for: [vendor, salesperson_exam.retake_policy]
+    accessed: 2026-09-08
+  - url: "https://app.leg.wa.gov/wac/default.aspx?cite=308-124A-775"
+    used_for: [salesperson_exam.exam_fee_usd, broker_exam.exam_fee_usd]
+    accessed: 2026-09-08
+  - url: "https://app.leg.wa.gov/rcw/default.aspx?cite=18.85.101"
+    used_for: [prelicense_hours_salesperson, statute_citation_root]
+    accessed: 2026-09-08
+  - url: "https://app.leg.wa.gov/rcw/default.aspx?cite=18.85"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://app.leg.wa.gov/wac/default.aspx?cite=308-124A"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI bulletin copyright 2024, dated 3/28/2024 (most recent version found; fee of $210 cross-checked against WAC 308-124A-775 'Application/examination $210.00' and 'Reexamination 210.00'). Time is 150 min national + 90 min state for both exams. Broker pre-license = 60-hour Real Estate Fundamentals + 30-hour Real Estate Practices (RCW 18.85.101: 90 hours), completed within 2 years before the exam. Managing Broker requires 90 clock hours (brokerage management, advanced real estate law, business management) plus 3 years' experience within the prior 5 years. Reciprocity/out-of-state licensees take only the state portion. Third-party prep sites quote $138.25 as the exam fee; that figure was not found in any primary source."

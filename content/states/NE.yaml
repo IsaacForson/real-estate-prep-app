@@ -1,0 +1,62 @@
+code: NE
+name: Nebraska
+regulator:
+  name: "Nebraska Real Estate Commission (NREC)"
+  url: "https://nrec.nebraska.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exam; candidates apply to and pay the exam fee to the NREC, which then authorizes Pearson VUE."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5 to 10 per handbook (national content outline specifies 5 unscored pretest items on the national portion)"
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 150.00
+  retake_policy: "Candidates who fail one or both parts may retest within six (6) months or three (3) attempts during their authorization period. Salesperson candidates who pass one part but fail the other may retake only the portion they failed. 'Salesperson applicants may retain credit for passing scores on either portion for three (3) subsequent examination attempts or six (6) months, or until the time their application expires, whichever comes first.' Before scheduling a retake, candidates must return to the NREC to pay the fee ($150 retake fee within one year of application) and obtain a new authorization. A license application remains valid for 12 months."
+  calculator_policy: "'Personal calculators are NOT permitted, an online calculator is available as part of the exam.'"
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5 to 10"
+  time_minutes: 240
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 150.00
+prelicense_hours_salesperson: 96
+prelicense_hours_broker: 60
+statute_citation_root: "Neb. Rev. Stat. §§ 81-885 to 81-885.56 (Nebraska Real Estate License Act)"
+rules_citation_root: "Neb. Admin. Code tit. 299"
+statute_url: "https://nebraskalegislature.gov/laws/statutes.php?statute=81-885"
+rules_url: "https://nrec.nebraska.gov/sites/default/files/doc/Legal/License%20Manual%20PDF/2licensemanualrulestitle299.pdf"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092800.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092801.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092800.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/092801.pdf"
+    used_for: [salesperson_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://nrec.nebraska.gov/sites/default/files/doc/Commission/fees.pdf"
+    used_for: [salesperson_exam.exam_fee_usd, broker_exam.exam_fee_usd, salesperson_exam.retake_policy]
+    accessed: 2026-09-08
+  - url: "https://nrec.nebraska.gov/licensing-forms/licenseinformation.html"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://nrec.nebraska.gov/legal/commission-statutes-rules-and-regulations-and-other-references"
+    used_for: [rules_url, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://nebraskalegislature.gov/laws/statutes.php?statute=81-885"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook is the April 2025 edition (#092800; content outlines effective April 1, 2025). Salesperson and broker exams share the same structure (80 national / 50 state, 2.5 h + 1.5 h). Each portion scored separately at 75%; broker candidates who fail must retake the entire exam, salesperson candidates only the failed portion. Exam fee is $150 per exam paid to NREC (Fee Schedule updated January 2026), plus a $175 license application fee. Pre-license: NREC lists '96 HOURS TOTAL' for salespersons = 90 clock hours (3 courses) + 6-hour Professional Practice Standards course; broker/associate broker = 60 additional clock hours (2 courses) beyond the salesperson hours. Rules are also hosted on rules.nebraska.gov (Secretary of State); the NREC-published Title 299 PDF is used here."

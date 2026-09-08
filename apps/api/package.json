@@ -1,0 +1,23 @@
+{
+  "name": "@rep/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Supabase backend: postgres schema + rls, edge functions (deno). see README.md",
+  "scripts": {
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:diff": "supabase db diff --schema public",
+    "db:lint": "supabase db lint --level warning",
+    "db:smoke": "bash scripts/pg-smoke.sh",
+    "functions:serve": "supabase functions serve --env-file supabase/.env.local",
+    "functions:deploy": "supabase functions deploy",
+    "check": "deno task check",
+    "typecheck": "node scripts/typecheck.mjs",
+    "test": "deno task test",
+    "lint": "deno task lint",
+    "fmt": "deno task fmt",
+    "build": "node scripts/typecheck.mjs"
+  }
+}

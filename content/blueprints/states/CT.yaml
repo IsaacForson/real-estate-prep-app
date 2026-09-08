@@ -1,0 +1,239 @@
+# Connecticut state-portion blueprint. Source: PSI Connecticut Real Estate Candidate Information Bulletin
+# (test-takers.psiexams.com/ctre), "State Portion Content Outline". Labels are OUR paraphrases (SPEC §3.2).
+# Domain ids follow the bulletin's Roman numerals; subtopic ids append the bulletin's letters.
+id: state_CT
+vendor: psi
+title: "Connecticut state-portion outline (internal blueprint)"
+source_document: "PSI Services — Connecticut Real Estate Salesperson and Broker Candidate Information Bulletin, State Portion Content Outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/1007"
+source_version_or_date: "PSI bulletin retrieved 2026-09-08 (salesperson state portion 35 items / 45 min; broker state portion 45 items / 60 min)"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+notes: >
+  Per-domain counts are published for both exams (salesperson 7/11/9/8 = 35; broker 7/12/10/8/8 = 45,
+  domain V broker-only). Subtopic counts are not published. 5-10 unscored experimental items may be
+  added. Statute refs: Conn. Gen. Stat. ch. 392 (§§ 20-311 to 20-329hh) and Regs. Conn. State Agencies
+  §§ 20-328-1a to -18a, both cached from official sources; other CGS titles (landlord-tenant 47a, CIOA
+  47-200 et seq., fair housing 46a, conveyance tax 12-494, UETA 1-266) cited but not cached.
+exams:
+  salesperson:
+    scored_items: 35
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Connecticut licensing requirements"
+        items: 7
+        subtopics:
+          - id: "I.A"
+            label: "Commission purpose, composition, powers, and duties"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-311a", "Conn. Gen. Stat. § 20-311b", "Conn. Gen. Stat. § 20-328", "Conn. Gen. Stat. § 20-311c"]
+          - id: "I.B"
+            label: "Activities requiring a license; penalties for unlicensed practice"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-311", "Conn. Gen. Stat. § 20-312", "Conn. Gen. Stat. § 20-325"]
+          - id: "I.C"
+            label: "Exemptions from licensure"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-329", "Conn. Gen. Stat. § 20-311"]
+          - id: "I.D"
+            label: "License types and qualifications; education and exam"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-312c", "Conn. Gen. Stat. § 20-313", "Conn. Gen. Stat. § 20-314", "Conn. Gen. Stat. § 20-314a", "Conn. Gen. Stat. § 20-316", "Conn. Gen. Stat. § 20-317"]
+          - id: "I.E"
+            label: "Renewal, continuing education, and transfer of affiliation"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-314", "Conn. Gen. Stat. § 20-319", "Conn. Gen. Stat. § 20-319a", "Regs., Conn. State Agencies § 20-328-10a", "Regs., Conn. State Agencies § 20-328-10b", "Regs., Conn. State Agencies § 20-328-12a"]
+          - id: "I.F"
+            label: "Real Estate Guaranty Fund"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-324a", "Conn. Gen. Stat. § 20-324b", "Conn. Gen. Stat. § 20-324c", "Conn. Gen. Stat. § 20-324d", "Conn. Gen. Stat. § 20-324e", "Conn. Gen. Stat. § 20-324h"]
+          - id: "I.G"
+            label: "Suspension, revocation, and other discipline"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-320", "Conn. Gen. Stat. § 20-321", "Conn. Gen. Stat. § 20-322", "Conn. Gen. Stat. § 20-323", "Conn. Gen. Stat. § 20-324"]
+          - id: "I.H"
+            label: "Registrations: teams, associate brokers, supervising licensees"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-312c", "Conn. Gen. Stat. § 20-311", "Conn. Gen. Stat. § 20-320"]
+      - id: "II"
+        label: "Laws governing licensee conduct"
+        items: 11
+        subtopics:
+          - id: "II.A"
+            label: "Broker–salesperson relationship and broker liability"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-312a", "Conn. Gen. Stat. § 20-312b", "Conn. Gen. Stat. § 20-312c", "Conn. Gen. Stat. § 20-319a", "Regs., Conn. State Agencies § 20-328-10a"]
+          - id: "II.B"
+            label: "Duties owed to parties"
+            items: null
+            statute_refs: ["Regs., Conn. State Agencies § 20-328-2a", "Regs., Conn. State Agencies § 20-328-3a", "Conn. Gen. Stat. § 20-320"]
+          - id: "II.C"
+            label: "Handling deposits and other money"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-324k", "Regs., Conn. State Agencies § 20-328-7a", "Conn. Gen. Stat. § 20-320"]
+          - id: "II.D"
+            label: "Misrepresentation"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-324", "Conn. Gen. Stat. § 20-320", "Regs., Conn. State Agencies § 20-328-5a"]
+          - id: "II.E"
+            label: "Disclosing material facts; nonmaterial facts and stigmatized property"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-329cc", "Conn. Gen. Stat. § 20-329dd", "Conn. Gen. Stat. § 20-329ee", "Conn. Gen. Stat. § 20-329ff", "Regs., Conn. State Agencies § 20-328-5a"]
+          - id: "II.F"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Regs., Conn. State Agencies § 20-328-5a", "Conn. Gen. Stat. § 20-311", "Conn. Gen. Stat. § 20-320"]
+          - id: "II.G"
+            label: "Commissions and compensation; prohibited referral fees"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325a", "Conn. Gen. Stat. § 20-325b", "Conn. Gen. Stat. § 20-320a", "Regs., Conn. State Agencies § 20-328-8a"]
+          - id: "II.H"
+            label: "Unlicensed personal assistants"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-311", "Conn. Gen. Stat. § 20-312", "Regs., Conn. State Agencies § 20-328-1a"]
+      - id: "III"
+        label: "Connecticut agency law"
+        items: 9
+        subtopics:
+          - id: "III.A"
+            label: "Representing a client vs. working with an unrepresented person"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-311", "Conn. Gen. Stat. § 20-325d", "Regs., Conn. State Agencies § 20-328-1a"]
+          - id: "III.B"
+            label: "Written agency agreements"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325a", "Regs., Conn. State Agencies § 20-328-6a"]
+          - id: "III.C"
+            label: "Agency disclosure requirements"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325d", "Conn. Gen. Stat. § 20-319", "Conn. Gen. Stat. § 20-325f"]
+          - id: "III.D"
+            label: "Dual agency and consent"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325g", "Conn. Gen. Stat. § 20-325d"]
+          - id: "III.E"
+            label: "Designated agency"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325i", "Conn. Gen. Stat. § 20-325j"]
+          - id: "III.F"
+            label: "Confidential information"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325h", "Conn. Gen. Stat. § 20-325d"]
+          - id: "III.G"
+            label: "Interference with agency relationships"
+            items: null
+            statute_refs: ["Regs., Conn. State Agencies § 20-328-9a"]
+      - id: "IV"
+        label: "Connecticut-specific real estate laws"
+        items: 8
+        subtopics:
+          - id: "IV.A"
+            label: "Ownership: adverse possession, land records, property tax, conveyance tax, condition disclosure"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 52-575", "Conn. Gen. Stat. § 47-10", "Conn. Gen. Stat. § 12-62", "Conn. Gen. Stat. § 12-494", "Conn. Gen. Stat. § 20-327b", "Conn. Gen. Stat. § 20-327c", "Conn. Gen. Stat. § 20-327e"]
+          - id: "IV.B"
+            label: "Landlord and tenant law"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 47a-1", "Conn. Gen. Stat. § 47a-7", "Conn. Gen. Stat. § 47a-21", "Conn. Gen. Stat. § 47a-23"]
+          - id: "IV.C"
+            label: "Common Interest Ownership Act"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 47-200", "Conn. Gen. Stat. § 47-262", "Conn. Gen. Stat. § 47-270"]
+          - id: "IV.D"
+            label: "Connecticut fair housing law"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 46a-64c", "Conn. Gen. Stat. § 20-327h", "Regs., Conn. State Agencies § 20-328-4a"]
+          - id: "IV.E"
+            label: "Property-specific disclosures: lead, crumbling foundations, carbon monoxide, hazardous waste"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-327b", "Conn. Gen. Stat. § 20-327f", "Conn. Gen. Stat. § 20-327g", "Regs., Conn. State Agencies § 20-328-5a"]
+          - id: "IV.F"
+            label: "Interpreters"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-327i"]
+          - id: "IV.G"
+            label: "Uniform Electronic Transactions Act"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 1-266", "Conn. Gen. Stat. § 1-272"]
+  broker:
+    scored_items: 45
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Connecticut licensing requirements"
+        items: 7
+        subtopics:
+          - id: "I.A"
+            label: "Commission, license requirement, exemptions, qualifications, renewal, guaranty fund, discipline"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-311a", "Conn. Gen. Stat. § 20-312", "Conn. Gen. Stat. § 20-312c", "Conn. Gen. Stat. § 20-314", "Conn. Gen. Stat. § 20-319", "Conn. Gen. Stat. § 20-320", "Conn. Gen. Stat. § 20-324a", "Conn. Gen. Stat. § 20-329", "Regs., Conn. State Agencies § 20-328-10b"]
+      - id: "II"
+        label: "Laws governing licensee conduct"
+        items: 12
+        subtopics:
+          - id: "II.A"
+            label: "Broker-salesperson relationship, duties, deposits, misrepresentation, disclosure, advertising, compensation, assistants"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-312a", "Conn. Gen. Stat. § 20-324k", "Conn. Gen. Stat. § 20-324", "Conn. Gen. Stat. § 20-325a", "Conn. Gen. Stat. § 20-329cc", "Conn. Gen. Stat. § 20-329ee", "Regs., Conn. State Agencies § 20-328-2a", "Regs., Conn. State Agencies § 20-328-5a", "Regs., Conn. State Agencies § 20-328-7a", "Regs., Conn. State Agencies § 20-328-8a"]
+      - id: "III"
+        label: "Connecticut agency law"
+        items: 10
+        subtopics:
+          - id: "III.A"
+            label: "Agency agreements, disclosure, dual and designated agency, confidentiality, interference"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-325a", "Conn. Gen. Stat. § 20-325d", "Conn. Gen. Stat. § 20-325g", "Conn. Gen. Stat. § 20-325h", "Conn. Gen. Stat. § 20-325i", "Regs., Conn. State Agencies § 20-328-6a", "Regs., Conn. State Agencies § 20-328-9a"]
+      - id: "IV"
+        label: "Connecticut-specific real estate laws"
+        items: 8
+        subtopics:
+          - id: "IV.A"
+            label: "Ownership and taxes, landlord-tenant, CIOA, fair housing, disclosures, interpreters, UETA"
+            items: null
+            statute_refs: ["Conn. Gen. Stat. § 20-327b", "Conn. Gen. Stat. § 20-327h", "Conn. Gen. Stat. § 20-327i", "Conn. Gen. Stat. § 12-494", "Conn. Gen. Stat. § 47a-1", "Conn. Gen. Stat. § 47-200", "Conn. Gen. Stat. § 46a-64c", "Conn. Gen. Stat. § 1-266", "Regs., Conn. State Agencies § 20-328-4a"]
+      - id: "V"
+        label: "Broker-only topics"
+        items: 8
+        subtopics:
+          - id: "V.A"
+            label: "Record keeping"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-325m", "Regs., Conn. State Agencies § 20-328-7a"]
+          - id: "V.B"
+            label: "Escrow accounts"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-324k", "Regs., Conn. State Agencies § 20-328-7a"]
+          - id: "V.C"
+            label: "Broker's lien on commercial property"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-325a", "Conn. Gen. Stat. § 20-325e"]
+          - id: "V.D"
+            label: "Notice of commission rights in commercial transactions"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-325a", "Conn. Gen. Stat. § 20-325b", "Conn. Gen. Stat. § 20-325k"]
+          - id: "V.E"
+            label: "Referrals and cooperation with out-of-state brokers"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-317", "Conn. Gen. Stat. § 20-325k", "Regs., Conn. State Agencies § 20-328-8a"]
+          - id: "V.F"
+            label: "Supervision of affiliated licensees"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-312c", "Conn. Gen. Stat. § 20-312a", "Conn. Gen. Stat. § 20-320"]
+          - id: "V.G"
+            label: "Mortgage brokerage fees charged by brokers"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-325c"]
+          - id: "V.H"
+            label: "Custodial brokers"
+            items: null
+            broker_only: true
+            statute_refs: ["Conn. Gen. Stat. § 20-329hh"]
+references: []

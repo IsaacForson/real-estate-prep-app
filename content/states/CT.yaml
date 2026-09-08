@@ -1,0 +1,59 @@
+code: CT
+name: Connecticut
+regulator:
+  name: "Connecticut Real Estate Commission, Department of Consumer Protection (DCP), License Services Division"
+  url: "https://portal.ct.gov/dcp"
+vendor: psi
+vendor_notes: "PSI Services LLC (test-takers.psiexams.com/ctre); DCP pre-approves candidates and forwards eligibility to PSI. Remote (online-proctored) testing available effective 5/14/25."
+salesperson_exam:
+  national_items: 80
+  state_items: 35
+  total_items: 115
+  pretest_items: "5-10"       # 'experimental' questions, unscored; time to answer them does not count against exam time
+  time_minutes: 165           # General 120 min + State 45 min
+  pass_score_national: "70%"
+  pass_score_state: "70%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 59            # first time, covers one or both portions; retakes $51
+  retake_policy: "'You may take the examination on an unlimited basis for up to one year from the date of eligibility.' 'You must pass both portions of the examination within one (1) year of eligibility.' If both portions are not passed within one year the candidate must reapply with DCP. A new appointment cannot be made the same day as a failed exam (call the next day; retest as soon as the day after). Retake fee $51 (one or both portions). License fee must be paid within two (2) years of passing the last portion or a new application is required."
+  calculator_policy: "'Handheld calculators' are listed among prohibited electronic devices; the bulletin does not describe an on-screen calculator."
+broker_exam:
+  national_items: 75
+  state_items: 45
+  total_items: 120
+  pretest_items: "5-10"
+  time_minutes: 180           # General 120 min + State 60 min
+  pass_score_national: "75%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 59
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 120
+statute_citation_root: "Conn. Gen. Stat. ch. 392, § 20-311 et seq. (Real Estate Licensees)"
+rules_citation_root: "Regs., Conn. State Agencies § 20-328-1a et seq. (Real Estate Commission regulations under Title 20)"
+statute_url: "https://www.cga.ct.gov/current/pub/chap_392.htm"
+rules_url: "https://eregulations.ct.gov/eRegsPortal/Browse/RCSA/Title_20Subtitle_20-328/"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/1007"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/1007"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://portal.ct.gov/DCP/License-Services-Division/All-License-Applications/Real-Estate-Salesperson---InitialExam"
+    used_for: [regulator, vendor, prelicense_hours_salesperson, exam_fee_usd, retake_policy]
+    accessed: 2026-09-08
+  - url: "https://portal.ct.gov/dcp/license-services-division/all-license-applications/real-estate-broker---initialexam"
+    used_for: [prelicense_hours_broker, broker_exam]
+    accessed: 2026-09-08
+  - url: "https://www.cga.ct.gov/current/pub/chap_392.htm"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://eregulations.ct.gov/eRegsPortal/Browse/RCSA/Title_20Subtitle_20-328/"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI Candidate Information Bulletin 'Updated 11/13/2025'. Salesperson: General 80 questions (80 points, 120 min) + State 35 questions (35 points, 45 min); both portions must be passed at 70% within one year of eligibility. Broker: General 75 questions (80 points; some national broker items are worth up to two points) + State 45 questions (40 points), 180 min total, 75%. Fee $59 whether taking one or both portions; retakes $51. Salesperson pre-license = 60-hour Real Estate Principles and Practices course. Broker pre-license per DCP = 60-hr Principles & Practices + 15-hr Real Estate Brokerage Principles & Practices + 15-hr Legal Compliance + either two 15-hr electives or one 30-hr elective (or 20 transactions in prior 5 years) = 120 hours when electives are taken, plus 1,500 hours / 4 transactions as a licensed salesperson within 3 years. CT real estate regulations are codified by enabling statute section (e.g., §§ 20-314-1 et seq. schools/courses; §§ 20-328-1a to -10a conduct); the rules root cites the § 20-328 conduct series."

@@ -1,0 +1,159 @@
+# North Carolina state-section blueprint. North Carolina's entry-level license is the (provisional) BROKER
+# license; the state record's `salesperson_exam` holds that exam and this blueprint's `exams.salesperson` mirrors
+# it. Source: NCREC "Real Estate Licensing in North Carolina" (April 2026, hosted by Pearson VUE as #093400),
+# Examination Content Outline — State Section Categories with item counts (3+16+4+12+4+7+3+11 = 60). The
+# bulletin publishes categories only; subtopics below are ours, grounded in the License Law and Commission
+# rules. Labels are OUR paraphrases (SPEC §3.2).
+id: state_NC
+vendor: pearsonvue
+title: "North Carolina state-section outline (internal blueprint)"
+source_document: "NCREC 'Real Estate Licensing in North Carolina' (RELINC) — Examination Content Outline, State Section Categories"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf"
+source_version_or_date: "April 2026 edition"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels and subtopics are our own."
+exams:
+  salesperson:
+    scored_items: 60
+    pretest_items: 5
+    domains:
+      - id: "1"
+        label: "Licensure"
+        items: 3
+        subtopics:
+          - id: "1.1"
+            label: "License requirement, exemptions, provisional vs. full broker status"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-1", "N.C. Gen. Stat. § 93A-2", "N.C. Gen. Stat. § 93A-4", "21 NCAC 58A .0504", "21 NCAC 58A .0506"]
+          - id: "1.2"
+            label: "Qualifications, application, postlicensing and continuing education"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-4", "N.C. Gen. Stat. § 93A-4.1", "21 NCAC 58A .0501", "21 NCAC 58A .0503", "21 NCAC 58A .0505", "21 NCAC 58A .1702", "21 NCAC 58A .1902"]
+          - id: "1.3"
+            label: "Commission structure, disciplinary grounds, and hearings"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-3", "N.C. Gen. Stat. § 93A-6", "N.C. Gen. Stat. § 93A-8", "21 NCAC 58A .0113", "21 NCAC 58A .0601", "21 NCAC 58A .0614"]
+      - id: "2"
+        label: "Agency relationships and disclosure"
+        items: 16
+        subtopics:
+          - id: "2.1"
+            label: "Agency agreements: written, required terms, timing"
+            items: null
+            statute_refs: ["21 NCAC 58A .0104", "N.C. Gen. Stat. § 93A-6"]
+          - id: "2.2"
+            label: "Working With Real Estate Agents disclosure and first substantial contact"
+            items: null
+            statute_refs: ["21 NCAC 58A .0104", "N.C. Gen. Stat. § 93A-3"]
+          - id: "2.3"
+            label: "Dual and designated agency; consent and confidentiality"
+            items: null
+            statute_refs: ["21 NCAC 58A .0104", "N.C. Gen. Stat. § 93A-6"]
+          - id: "2.4"
+            label: "Duties to clients and customers; material fact disclosure"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-6", "21 NCAC 58A .0114", "21 NCAC 58A .0115", "21 NCAC 58A .0120"]
+      - id: "3"
+        label: "Supervision and compensation"
+        items: 4
+        subtopics:
+          - id: "3.1"
+            label: "Broker-in-charge designation and supervision of provisional brokers"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-4.2", "21 NCAC 58A .0110", "21 NCAC 58A .0506", "21 NCAC 58A .1802"]
+          - id: "3.2"
+            label: "Brokerage fees, referral fees, and who may be paid"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-6", "21 NCAC 58A .0109", "N.C. Gen. Stat. § 93A-1"]
+      - id: "4"
+        label: "Brokerage practice"
+        items: 12
+        subtopics:
+          - id: "4.1"
+            label: "Advertising, team names, and firm identification"
+            items: null
+            statute_refs: ["21 NCAC 58A .0105", "21 NCAC 58A .0103", "N.C. Gen. Stat. § 93A-6"]
+          - id: "4.2"
+            label: "Handling and accounting for trust money"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-6", "21 NCAC 58A .0107", "21 NCAC 58A .0116", "21 NCAC 58A .0117", "21 NCAC 58A .0118"]
+          - id: "4.3"
+            label: "Offers, delivery of instruments, and record retention"
+            items: null
+            statute_refs: ["21 NCAC 58A .0106", "21 NCAC 58A .0108", "21 NCAC 58A .0112", "21 NCAC 58A .0115"]
+          - id: "4.4"
+            label: "Drafting limits, branch offices, firm licensing, prohibited acts"
+            items: null
+            statute_refs: ["21 NCAC 58A .0111", "21 NCAC 58A .0102", "21 NCAC 58A .0502", "21 NCAC 58A .0120", "N.C. Gen. Stat. § 93A-6"]
+      - id: "5"
+        label: "Taxes and insurance"
+        items: 4
+        subtopics:
+          - id: "5.1"
+            label: "Property taxation, excise tax on conveyances, prorations"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 105-228.30", "N.C. Gen. Stat. § 105-285", "N.C. Gen. Stat. § 105-277.1", "N.C. Gen. Stat. § 105-355"]
+          - id: "5.2"
+            label: "Homeowner, flood, and title insurance basics"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 58-44-16", "N.C. Gen. Stat. § 58-26-1", "N.C. Gen. Stat. § 47-18"]
+      - id: "6"
+        label: "Contracts and closing"
+        items: 7
+        subtopics:
+          - id: "6.1"
+            label: "Sales contracts, due diligence, earnest money, and standard forms"
+            items: null
+            statute_refs: ["21 NCAC 58A .0112", "21 NCAC 58A .0111", "21 NCAC 58A .0116", "N.C. Gen. Stat. § 22-2"]
+          - id: "6.2"
+            label: "Closing procedures, settlement statements, good funds, recording"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 45A-4", "N.C. Gen. Stat. § 47-18", "21 NCAC 58A .0107", "N.C. Gen. Stat. § 105-228.30"]
+      - id: "7"
+        label: "Landlord and tenant"
+        items: 3
+        subtopics:
+          - id: "7.1"
+            label: "Residential Rental Agreements Act and tenant security deposits"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 42-42", "N.C. Gen. Stat. § 42-43", "N.C. Gen. Stat. § 42-50", "N.C. Gen. Stat. § 42-51", "N.C. Gen. Stat. § 42-52", "21 NCAC 58A .0107"]
+          - id: "7.2"
+            label: "Vacation rentals and eviction basics"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 42A-1 et seq.", "N.C. Gen. Stat. § 42-26"]
+      - id: "8"
+        label: "Other North Carolina laws"
+        items: 11
+        subtopics:
+          - id: "8.1"
+            label: "Residential Property and Owners' Association Disclosure Statement"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 47E-1 et seq.", "21 NCAC 58A .0114"]
+          - id: "8.2"
+            label: "State Fair Housing Act"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 41A-4", "N.C. Gen. Stat. § 41A-6", "N.C. Gen. Stat. § 93A-6"]
+          - id: "8.3"
+            label: "Condominiums, planned communities, timeshares"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 47C-4-101 et seq.", "N.C. Gen. Stat. § 47F-3-101 et seq.", "N.C. Gen. Stat. § 93A-39 et seq.", "21 NCAC 58A .0114"]
+          - id: "8.4"
+            label: "Recording (Connor Act), Good Funds Settlement Act, land-use laws"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 47-18", "N.C. Gen. Stat. § 45A-4", "N.C. Gen. Stat. § 160D-701 et seq.", "N.C. Gen. Stat. § 136-102.6"]
+          - id: "8.5"
+            label: "Real Estate Education and Recovery Fund"
+            items: null
+            statute_refs: ["N.C. Gen. Stat. § 93A-16", "N.C. Gen. Stat. § 93A-17", "N.C. Gen. Stat. § 93A-18", "N.C. Gen. Stat. § 93A-19"]
+references:
+  - title: "NCREC Broker Prelicensing Course Syllabus (referenced by RELINC for subtopic detail)"
+    publisher: "North Carolina Real Estate Commission"
+notes: >-
+  Entry exam is the broker exam (national 80 / state 60 scored + 5 pretest each); recorded under `salesperson`
+  to mirror the state record. The bulletin gives eight state categories with counts but no subtopics; subtopics
+  are ours. Ground truth cached in content/statutes/NC: 21 NCAC 58A from the NC Office of Administrative Hearings
+  compilation, ingested as one doc per rule Section (citations like '21 NCAC 58A .0101-0120') so a rule ref
+  such as '21 NCAC 58A .0116' resolves to its Section's text. Chapter 93A statute text is NOT cached — ncleg.gov and ncleg.net return
+  Cloudflare 403 'Attention Required' to curl and WebFetch and the browser pane was denied; NCREC hosts only
+  the 'License Law and Rules Comments' commentary (not statute text) and links back to ncleg. Refs to G.S.
+  chapters 42, 45A, 47, 47C/47E/47F, 105 are likewise uncached until ncleg is reachable.

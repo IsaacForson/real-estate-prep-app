@@ -1,0 +1,59 @@
+code: MI
+name: Michigan
+regulator:
+  name: "Michigan Department of Licensing and Regulatory Affairs (LARA), Bureau of Professional Licensing – Real Estate Brokers and Salespersons"
+  url: "https://www.michigan.gov/realestate"
+vendor: psi
+vendor_notes: "Salesperson candidates apply to LARA first (MiPLUS) and are then made eligible with PSI; broker candidates 'do NOT need to apply to the state before testing'."
+salesperson_exam:
+  national_items: 80
+  state_items: 35
+  total_items: 115
+  pretest_items: "1-10 experimental items (approx. 10%); not scored but count against exam time"
+  time_minutes: 180
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "70% (raw score 80 of 115)"
+  grading: combined
+  exam_fee_usd: 79
+  retake_policy: "The bulletin states no waiting period or attempt limit. Because the exam is a single 115-question exam with one combined passing score, a failing candidate retakes the whole exam (failing candidates receive section scores 'to assist them in studying for the re-examination'). 'REGISTRATION/EXAMINATION FEES ARE NOT REFUNDABLE. FEES EXPIRE AFTER ONE YEAR OF REGISTERING.'"
+  calculator_policy: "Handheld calculators are listed among prohibited electronic devices ('...electronic watches, handheld calculators, headsets...'). The bulletin does not state whether an on-screen calculator is provided."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: "1-10 experimental items (approx. 10%)"
+  time_minutes: 210
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "75% (raw score 90 of 120 points; 115 questions, national items scored up to two points)"
+  grading: combined
+  exam_fee_usd: 79
+prelicense_hours_salesperson: 40
+prelicense_hours_broker: 90
+statute_citation_root: "Mich. Comp. Laws §§ 339.2501–339.2518 (Occupational Code, 1980 PA 299, Art. 25)"
+rules_citation_root: "Mich. Admin. Code R 339.22101–339.22667 (Real Estate Brokers and Salespersons – General Rules)"
+statute_url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-299-1980-25"
+rules_url: "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R+339.22101+to+R+339.22667.pdf"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/836"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/836"
+    used_for: [vendor, salesperson_exam, broker_exam, statute_citation_root, rules_citation_root, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.michigan.gov/-/media/Project/Websites/lara/bpl/Real-Estate-Brokers-and-Salespersons/Licensing-Information/Real-Estate-Salesperson-Licensing-Guide.pdf"
+    used_for: [prelicense_hours_salesperson, salesperson_exam.exam_fee_usd, vendor]
+    accessed: 2026-09-08
+  - url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-339-2504"
+    used_for: [prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-299-1980-25"
+    used_for: [statute_url]
+    accessed: 2026-09-08
+  - url: "https://ars.apps.lara.state.mi.us/AdminCode/DownloadAdminCodeFile?FileName=R+339.22101+to+R+339.22667.pdf"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: medium
+last_verified: 2026-09-08
+notes: "PSI bulletin 'Updated 7/6/2026'. Michigan uses ONE combined exam per license level graded on a single score (salesperson 115 questions, 70% / 80 raw, 180 minutes; broker 115 questions worth 120 points, 75% / 90 raw, 210 minutes). The national/state split is derived from the bulletin's content outline: the Michigan-specific outline totals 35 salesperson items (3+5+10+5+12) and 40 broker items (3+4+15+5+13); the national counts (80 / 75) are the remainder and match the standard PSI national exam. Confidence is medium because michigan.gov and legislature.mi.gov block automated retrieval: the 40-hour salesperson requirement and $79 fee were confirmed only via search-engine excerpts of LARA's own 'Real Estate Salesperson Licensing Guide' PDF, and the 90-clock-hour broker requirement via an excerpt of MCL 339.2504; the statute and rules URLs were not loaded directly. Salesperson education must include 4 hours of civil rights/fair housing (broker: 9 hours)."

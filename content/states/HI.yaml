@@ -1,0 +1,64 @@
+code: HI
+name: Hawaii
+regulator:
+  name: "Hawaii Real Estate Commission, Real Estate Branch, Dept. of Commerce and Consumer Affairs (DCCA)"
+  url: "https://cca.hawaii.gov/reb/"
+vendor: psi
+vendor_notes: "PSI Services LLC has been Hawaii's testing agency since July 1, 2009 (program page https://test-takers.psiexams.com/hire)."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "70"
+  pass_score_state: "70"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: null
+  retake_policy: "HAR §16-99-29(a): 'Any individual who fails to obtain a passing score in any part of the examination shall repeat that part of the examination. Failure to obtain a passing score in all parts thereof within the two-year period after the first examination date, shall result in failure of the examination as a whole and the entire examination shall be repeated by the candidate.' (b): an eligible individual forfeits the exam fee if they do not sit for the exam."
+  calculator_policy: null
+broker_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: null
+  time_minutes: 240
+  pass_score_national: "75"
+  pass_score_state: "75"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: null
+prelicense_hours_salesperson: 60
+prelicense_hours_broker: 80
+statute_citation_root: "Haw. Rev. Stat. ch. 467"
+rules_citation_root: "Haw. Admin. Rules tit. 16, ch. 99"
+statute_url: "https://www.capitol.hawaii.gov/hrscurrent/Vol10_Ch0436-0474/HRS0467/"
+rules_url: "https://cca.hawaii.gov/wp-content/uploads/2026/01/99-C.pdf"
+bulletin_url: "https://files.hawaii.gov/dcca/reb/real_ed/exam_lic/exam_info/347hawaii-re-cib.pdf"
+exam_outline_url: "https://files.hawaii.gov/dcca/reb/real_ed/exam_lic/exam_info/347hawaii-re-cib.pdf"
+sources:
+  - url: "https://cca.hawaii.gov/reb/real_ed/real_ed-exam_lic/"
+    used_for: [vendor, regulator]
+    accessed: 2026-09-08
+  - url: "https://files.hawaii.gov/dcca/reb/real_ed/exam_lic/exam_info/347hawaii-re-cib.pdf"
+    used_for: [salesperson_exam, broker_exam, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://cca.hawaii.gov/wp-content/uploads/2026/01/99-C.pdf"
+    used_for: [salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, rules_url]
+    accessed: 2026-09-08
+  - url: "https://cca.hawaii.gov/reb/real_ed-exam_lic-exam_info-exam_prereq/"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://cca.hawaii.gov/wp-content/uploads/2026/01/467-REAL-ESTATE-BROKERS-AND-SALESPERSONS-FINAL-101420-1.pdf"
+    used_for: [statute_citation_root]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.exam_fee_usd
+  - broker_exam.exam_fee_usd
+  - salesperson_exam.calculator_policy
+  - salesperson_exam.pretest_items
+  - broker_exam.pretest_items
+confidence: medium
+last_verified: 2026-09-08
+notes: "Item counts/times come from the PSI Examination Summary Table excerpt of the Hawaii CIB hosted on the DCCA site (Salesperson: Uniform 80 items/150 min, State 50 items/90 min, Combo 130/240 min; Broker identical counts; 5-10 unscored pretest items). That DCCA-hosted excerpt is undated and omits fee/calculator pages; the full current PSI bulletin is only served inside PSI's logged-in test-taker app (candidate.psiexams.com testid 1665 salesperson / 1664 broker), so the exam fee and calculator policy are left null. Passing scores (70 salesperson / 75 broker on both the uniform and State portions) and the retake rule are from HAR §16-99-29; prelicense hours (60 salesperson / 80 broker class hours) from HAR §16-99-36. Broker candidates need a Broker Experience Certificate before testing. The capitol.hawaii.gov statute URL returns 403 to automated clients; DCCA also hosts an official PDF of HRS ch. 467 (listed in sources)."

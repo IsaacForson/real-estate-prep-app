@@ -1,0 +1,59 @@
+code: WI
+name: Wisconsin
+regulator:
+  name: "Wisconsin Real Estate Examining Board, Department of Safety and Professional Services (DSPS)"
+  url: "https://dsps.wi.gov/pages/Professions/RESalesperson/Default.aspx"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exams (pearsonvue.com/wi/realestate). Candidates may take the exam before completing pre-license education; scores must be less than one year old at application."
+salesperson_exam:
+  national_items: null
+  state_items: null
+  total_items: 140
+  pretest_items: "5-10 unscored pretest items"
+  time_minutes: 240
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "scaled score 75 (0-100 scale)"
+  grading: combined
+  exam_fee_usd: 65.00
+  retake_policy: "Handbook: 'If you fail your exam, you may retake it... You must wait 24 hours before making a reservation to retake an exam, and you should have your failing score report available when scheduling. Retake reservations cannot be made at the test center.' Passing scores must be submitted to DSPS before they are one year old."
+  calculator_policy: null
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: 100
+  pretest_items: "5-10 unscored pretest items"
+  time_minutes: 195
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: "scaled score 75 (0-100 scale)"
+  grading: combined
+  exam_fee_usd: 65.00
+prelicense_hours_salesperson: 72
+prelicense_hours_broker: 72
+statute_citation_root: "Wis. Stat. ch. 452 (Real Estate Practice)"
+rules_citation_root: "Wis. Admin. Code ch. REEB 25 (education; § REEB 25.033 salesperson, § REEB 25.023 broker); Real Estate Examining Board rules chs. REEB 11-25"
+statute_url: "https://docs.legis.wisconsin.gov/statutes/statutes/452"
+rules_url: "https://docs.legis.wisconsin.gov/code/admin_code/reeb"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095000.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095006.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/095000.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/wi/realestate.html"
+    used_for: [vendor, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://dsps.wi.gov/pages/Professions/RESalesperson/Default.aspx"
+    used_for: [prelicense_hours_salesperson, statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://dsps.wi.gov/pages/Professions/REBroker/Default.aspx"
+    used_for: [prelicense_hours_broker, rules_citation_root]
+    accessed: 2026-09-08
+  - url: "https://dsps.wi.gov/Pages/Professions/RESalesperson/Exams.aspx"
+    used_for: [vendor]
+    accessed: 2026-09-08
+unverified: [salesperson_exam.calculator_policy, statute_url, rules_url]
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook rev06/2026 (Pearson VUE #095000). Wisconsin administers ONE exam per license level with a single scaled pass score of 75 set by DSPS; there is no separately graded national portion. The Pearson content outline is labeled 'The state portion of the salesperson examination consists of 140 scored items' but that outline covers all content (ownership/transfer, financing, agency, contracts/WB forms, fair housing, etc.). Salesperson time 4 hours; broker 3.25 hours. Some items include narratives or WB (Wisconsin-approved) forms displayed on screen. Handbook does not state a calculator policy. Pre-license 72 hours (Wis. Stat. § 452.09; Wis. Admin. Code § REEB 25.033 salesperson / § 25.023 broker), completed within 4 years before application; endorsement applicants from non-reciprocal states need 13 hours (salesperson) / 6 hours (broker). docs.legis.wisconsin.gov refused connections during verification, so statute_url/rules_url are the standard legislature URLs but were not loaded; citations were confirmed from DSPS pages."

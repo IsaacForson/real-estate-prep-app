@@ -1,0 +1,65 @@
+code: WV
+name: West Virginia
+regulator:
+  name: "West Virginia Real Estate Commission (WVREC)"
+  url: "https://rec.wv.gov/"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exams; candidates must first apply to WVREC ($25 exam application fee) and receive authorization to test by email from Pearson VUE. Test-center and OnVUE (online proctored) delivery available."
+salesperson_exam:
+  national_items: 80
+  state_items: 50
+  total_items: 130
+  pretest_items: "5 per portion per fee table (state outline says 5-10); unscored"
+  time_minutes: 210
+  pass_score_national: "scaled score 70 (handbook: 'Passing score: Salesperson 70%'; scaled 0-100)"
+  pass_score_state: "scaled score 70 (handbook: 'Passing score: Salesperson 70%'; scaled 0-100)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 59.00
+  retake_policy: "Handbook: 'Authorization is good for ninety (90) days or two attempts after approval (whichever comes first). Exam results are good for 90 days from the date of passing... Candidates are not permitted to retake a part of the exam that has already been passed during the ninety (90) day authorization period. Candidates have 90 days from the date they pass one part of the exam to pass the other part.' 'Those who pass one part of the examination and fail the other, need to retake ONLY the failed part and must do so within the authorization period. If a candidate only passes one part of the exam in the first ninety (90) days, and the authorization period expires, the candidate must resubmit an initial application with the West Virginia Real Estate Commission, pay the reexamination fee, and be authorized again for the part they did not pass.' OnVUE: 'Candidates are allowed one attempt for life at each level, Sales or Broker.'"
+  calculator_policy: null
+broker_exam:
+  national_items: 80
+  state_items: 60
+  total_items: 140
+  pretest_items: "5 per portion; unscored"
+  time_minutes: 240
+  pass_score_national: "scaled score 75 (handbook: 'Passing score: Broker 75%')"
+  pass_score_state: "scaled score 75 (handbook: 'Passing score: Broker 75%')"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 59.00
+prelicense_hours_salesperson: 90
+prelicense_hours_broker: 180
+statute_citation_root: "W. Va. Code § 30-40-1 et seq. (West Virginia Real Estate License Act)"
+rules_citation_root: "W. Va. Code R. § 174-1-1 et seq. (174 CSR 1, Licensing Real Estate Brokers, Associate Brokers, and Salespersons and the Conduct of Brokerage Business)"
+statute_url: "https://code.wvlegislature.gov/30-40/"
+rules_url: "https://apps.sos.wv.gov/adlaw/csr/rule.aspx?rule=174-01"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094900.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094905.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094900.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/wv/realestate.html"
+    used_for: [vendor, exam_outline_url, salesperson_exam.exam_fee_usd]
+    accessed: 2026-09-08
+  - url: "https://rec.wv.gov/Education/Pages/Pre-Licensing-Education.aspx"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://rec.wv.gov/License-Info/Pages/Salesperson.aspx"
+    used_for: [vendor, prelicense_hours_salesperson, salesperson_exam.retake_policy]
+    accessed: 2026-09-08
+  - url: "https://rec.wv.gov/License-Info/Pages/Licensing.aspx"
+    used_for: [statute_citation_root, vendor]
+    accessed: 2026-09-08
+  - url: "https://rec.wv.gov/Forms/Pages/Schedule-of-Fees.aspx"
+    used_for: [vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://apps.sos.wv.gov/adlaw/csr/rule.aspx?rule=174-01"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: [salesperson_exam.calculator_policy]
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook rev01/2026 (Pearson VUE #094900); exam fee raised from $55 to $59 per part effective Feb 1. Fee is $59 per portion ($118 for both) plus WVREC $25 exam application fee. Time: 150 min national + 60 min state (salesperson); 150 + 90 (broker). State outline effective Jan 1, 2024; national outline effective Apr 1, 2025. Broker pre-license is 180 clock hours total; an existing WV salesperson needs 90 additional broker hours (30 Brokerage Operation & Management, 25 HR Management, 35 WV-specific). Course must be completed within 3 years before application. Handbook does not state a calculator policy (only that the administrator provides materials for notes/calculations). Statute page (code.wvlegislature.gov) is behind a JavaScript challenge; citation confirmed via WVREC's references to W. Va. Code § 30-40-11 and § 30-40-15. 174 CSR 1 current effective date April 7, 2026."

@@ -1,0 +1,59 @@
+code: PA
+name: Pennsylvania
+regulator:
+  name: "Pennsylvania State Real Estate Commission, Department of State (Bureau of Professional and Occupational Affairs)"
+  url: "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/real-estate-commission"
+vendor: pearsonvue
+vendor_notes: "Pearson VUE administers the exams; salesperson exam eligibility is reviewed by Pearson VUE via the Clarus portal (https://pare.useclarus.com/), while broker eligibility is approved by the Commission. Pearson VUE publishes the Pennsylvania state content outlines as a separate document, #093901 (03/2026)."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 210
+  pass_score_national: "75% (scaled)"
+  pass_score_state: "75% (scaled)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 52
+  retake_policy: "Handbook: 'Candidates are permitted unlimited exam attempts within 5 years for salesperson exam and 10 years for broker exam, from the date the earliest required course was completed. A passing exam score is good for three years. Candidates may not retake a previously passed exam.' 'The salesperson and broker examination is divided into two parts: national and state law. Those who pass one part of the examination and fail the other, need to retake ONLY the failed part and must do so within the authorization period.' OnVUE: 'Candidate must wait seven (7) days between OnVUE attempts but the total number of attempts is NOT limited.'"
+  calculator_policy: "The March 2026 handbook contains no explicit calculator statement. It says hand-held computers and other electronic devices are not allowed in the testing room, and that 'the test administrator will provide the candidate with materials to make notes or calculations and any other items specified by the exam sponsor.' Whether a personal or on-screen calculator is available is not stated."
+broker_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: 15
+  time_minutes: 210
+  pass_score_national: "75% (scaled)"
+  pass_score_state: "75% (scaled)"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 52
+prelicense_hours_salesperson: 75
+prelicense_hours_broker: 240
+statute_citation_root: "63 P.S. § 455.101 et seq. (Real Estate Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9)"
+rules_citation_root: "49 Pa. Code ch. 35 (State Real Estate Commission)"
+statute_url: "https://www.palegis.us/statutes/unconsolidated/law-information?sessYr=1980&sessInd=0&actNum=9"
+rules_url: "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/049/chapter35/chap35toc.html&d=reduce"
+bulletin_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093900.pdf"
+exam_outline_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093901.pdf"
+sources:
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093900.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093901.pdf"
+    used_for: [salesperson_exam.pretest_items, broker_exam.pretest_items, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pearsonvue.com/us/en/pa/realestate.html"
+    used_for: [vendor, bulletin_url, exam_outline_url]
+    accessed: 2026-09-08
+  - url: "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/real-estate-commission"
+    used_for: [regulator, statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/049/chapter35/chap35toc.html&d=reduce"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: [salesperson_exam.calculator_policy]
+confidence: high
+last_verified: 2026-09-08
+notes: "Handbook (#093900, March 2026) 'Available Exams and Time Allotted' table: Salesperson - National $52, 5 to 10 pretest, 80 questions, 150 min, 75%; Salesperson - PA State-specific $49, 5 to 10 pretest, 40 questions, 60 min, 75%; 'Salesperson - Combined $52'. Broker rows are identical. exam_fee_usd records the $52 'Combined' line; the two portions are otherwise $52 (national) and $49 (state) when scheduled separately. The 093901 outlines specify 5 pretest items on the national portion (effective April 1, 2025) and 10 pretest items on the PA state portion (effective March 16, 2026), hence pretest_items 15. Scores are scaled 0-100 and numeric scores are reported only to failing candidates. Pre-license: 75 hours (5 credits) for salesperson; 240 hours (16 credits) plus 3 years' experience for broker; cemetery broker 60 hours. The legislature's statute site (legis.state.pa.us / palegis.us) could not be fetched directly from this environment; the statute_url is the link published on the Commission's own page."

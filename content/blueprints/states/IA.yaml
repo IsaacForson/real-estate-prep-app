@@ -1,0 +1,190 @@
+# Iowa state-portion blueprint. Structure and counts from the PSI Iowa Real Estate Candidate
+# Information Bulletin (DIAL-hosted), "State Portion" topic table with salesperson and broker
+# item counts. Labels are our own paraphrases; outline text is not reproduced (SPEC §3.2).
+id: state_IA
+vendor: psi
+title: "Iowa state-portion outline (internal blueprint)"
+source_document: "PSI Iowa Real Estate Candidate Information Bulletin — State Portion topic table (salesperson and broker item counts)"
+source_url: "https://dial.iowa.gov/media/4323/download?inline="
+source_version_or_date: "Bulletin effective 2/8/2024"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "Who must be licensed and how a license is obtained"
+        items: 2
+        subtopics:
+          - id: "1.1"
+            label: "License required; acts constituting brokerage; exclusions"
+            items: null
+            statute_refs: ["Iowa Code § 543B.1", "Iowa Code § 543B.2", "Iowa Code § 543B.3", "Iowa Code § 543B.5", "Iowa Code § 543B.6", "Iowa Code § 543B.7", "Iowa Code § 543B.7A", "Iowa Admin. Code r. 481-2002"]
+          - id: "1.2"
+            label: "Qualifications, application, examination, nonresident licensing"
+            items: null
+            statute_refs: ["Iowa Code § 543B.15", "Iowa Code § 543B.16", "Iowa Code § 543B.19", "Iowa Code § 543B.20", "Iowa Code § 543B.21", "Iowa Admin. Code r. 481-2003", "Iowa Admin. Code r. 481-2004", "Iowa Admin. Code r. 481-2005"]
+      - id: "2"
+        label: "Keeping a license active: renewal, transfers, status changes"
+        items: 3
+        subtopics:
+          - id: "2.1"
+            label: "Expiration, renewal, fees, and inactive status"
+            items: null
+            statute_refs: ["Iowa Code § 543B.27", "Iowa Code § 543B.28", "Iowa Code § 543B.14", "Iowa Admin. Code r. 481-2009", "Iowa Admin. Code r. 481-2016"]
+          - id: "2.2"
+            label: "Changing brokers, location changes, termination, and E&O insurance"
+            items: null
+            statute_refs: ["Iowa Code § 543B.24", "Iowa Code § 543B.31", "Iowa Code § 543B.32", "Iowa Code § 543B.33", "Iowa Code § 543B.47", "Iowa Admin. Code r. 481-2006", "Iowa Admin. Code r. 481-2008", "Iowa Admin. Code r. 481-2019"]
+      - id: "3"
+        label: "Discipline: suspension, revocation, penalties, voluntary compliance"
+        items: 4
+        subtopics:
+          - id: "3.1"
+            label: "Grounds for discipline and prohibited practices"
+            items: null
+            statute_refs: ["Iowa Code § 543B.29", "Iowa Code § 543B.34", "Iowa Code § 543B.45", "Iowa Code § 543B.60A", "Iowa Code § 543B.61", "Iowa Admin. Code r. 481-2018"]
+          - id: "3.2"
+            label: "Investigations, hearings, civil penalties, and criminal sanctions"
+            items: null
+            statute_refs: ["Iowa Code § 543B.34", "Iowa Code § 543B.35", "Iowa Code § 543B.41", "Iowa Code § 543B.43", "Iowa Code § 543B.44", "Iowa Code § 543B.48", "Iowa Code § 543B.49", "Iowa Admin. Code r. 481-2018", "Iowa Admin. Code r. 481-2021"]
+      - id: "4"
+        label: "Prelicense and continuing education requirements"
+        items: 3
+        subtopics:
+          - id: "4.1"
+            label: "Education for licensure and renewal; education fund"
+            items: null
+            statute_refs: ["Iowa Code § 543B.15", "Iowa Code § 543B.54", "Iowa Admin. Code r. 481-2016", "Iowa Admin. Code r. 481-2017"]
+      - id: "5"
+        label: "Trust accounts"
+        items: 3
+        subtopics:
+          - id: "5.1"
+            label: "Trust account requirements, deposits, disbursements, records"
+            items: null
+            statute_refs: ["Iowa Code § 543B.46", "Iowa Admin. Code r. 481-2013", "Iowa Code § 543B.34"]
+      - id: "6"
+        label: "Contracts: brokerage agreements, offers, dual contracts"
+        items: 7
+        subtopics:
+          - id: "6.1"
+            label: "Written brokerage agreements and their required contents"
+            items: null
+            statute_refs: ["Iowa Code § 543B.56A", "Iowa Admin. Code r. 481-2011", "Iowa Code § 543B.34"]
+          - id: "6.2"
+            label: "Offers, counteroffers, closings, and dual-contract prohibition"
+            items: null
+            statute_refs: ["Iowa Code § 543B.45", "Iowa Admin. Code r. 481-2013", "Iowa Admin. Code r. 481-2011", "Iowa Code § 543B.34"]
+      - id: "7"
+        label: "Agency relationships and licensee duties"
+        items: 6
+        subtopics:
+          - id: "7.1"
+            label: "Duties of licensees to clients and customers"
+            items: null
+            statute_refs: ["Iowa Code § 543B.56", "Iowa Code § 543B.55", "Iowa Admin. Code r. 481-2012"]
+          - id: "7.2"
+            label: "Disclosure and confirmation of representation; dual and appointed agency"
+            items: null
+            statute_refs: ["Iowa Code § 543B.57", "Iowa Code § 543B.58", "Iowa Code § 543B.59", "Iowa Code § 543B.60", "Iowa Admin. Code r. 481-2012"]
+      - id: "8"
+        label: "Property condition and other disclosure requirements"
+        items: 5
+        subtopics:
+          - id: "8.1"
+            label: "Seller property condition disclosure statement"
+            items: null
+            statute_refs: ["Iowa Code § 558A.1", "Iowa Code § 558A.2", "Iowa Code § 558A.3", "Iowa Code § 558A.4", "Iowa Code § 558A.6", "Iowa Admin. Code r. 481-2014"]
+          - id: "8.2"
+            label: "Other disclosures: business referrals, licensee interest, groundwater and lead"
+            items: null
+            statute_refs: ["Iowa Code § 543B.60A", "Iowa Admin. Code r. 481-2012", "Iowa Admin. Code r. 481-2014", "Iowa Code § 558.69"]
+      - id: "9"
+        label: "Iowa Civil Rights Act in housing"
+        items: 1
+        subtopics:
+          - id: "9.1"
+            label: "Protected classes, prohibited housing practices, exemptions"
+            items: null
+            statute_refs: ["Iowa Code § 216.2", "Iowa Code § 216.8", "Iowa Code § 216.8A", "Iowa Code § 216.12", "Iowa Code § 543B.34"]
+      - id: "10"
+        label: "Unlicensed assistants"
+        items: 2
+        subtopics:
+          - id: "10.1"
+            label: "Permitted and prohibited activities of unlicensed staff"
+            items: null
+            statute_refs: ["Iowa Code § 543B.6", "Iowa Code § 543B.7", "Iowa Admin. Code r. 481-2007", "Iowa Admin. Code r. 481-2002"]
+      - id: "11"
+        label: "Broker responsibilities and office management"
+        items: 2
+        subtopics:
+          - id: "11.1"
+            label: "Supervision, offices, branch licenses, records, advertising"
+            items: null
+            statute_refs: ["Iowa Code § 543B.24", "Iowa Code § 543B.25", "Iowa Code § 543B.31", "Iowa Admin. Code r. 481-2007", "Iowa Admin. Code r. 481-2010", "Iowa Admin. Code r. 481-2008"]
+      - id: "12"
+        label: "Property management"
+        items: 2
+        subtopics:
+          - id: "12.1"
+            label: "Property management agreements, trust funds, and landlord-tenant duties"
+            items: null
+            statute_refs: ["Iowa Admin. Code r. 481-2015", "Iowa Admin. Code r. 481-2013", "Iowa Code § 543B.46", "Iowa Code § 562A.12", "Iowa Code § 562A.15"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10 unscored experimental items may be added"
+    domains:
+      - id: "1"
+        label: "Who must be licensed and how a license is obtained"
+        items: 2
+        subtopics: []
+      - id: "2"
+        label: "Keeping a license active: renewal, transfers, status changes"
+        items: 4
+        subtopics: []
+      - id: "3"
+        label: "Discipline: suspension, revocation, penalties, voluntary compliance"
+        items: 4
+        subtopics: []
+      - id: "4"
+        label: "Prelicense and continuing education requirements"
+        items: 2
+        subtopics: []
+      - id: "5"
+        label: "Trust accounts"
+        items: 4
+        subtopics: []
+      - id: "6"
+        label: "Contracts: brokerage agreements, offers, dual contracts"
+        items: 5
+        subtopics: []
+      - id: "7"
+        label: "Agency relationships and licensee duties"
+        items: 4
+        subtopics: []
+      - id: "8"
+        label: "Property condition and other disclosure requirements"
+        items: 3
+        subtopics: []
+      - id: "9"
+        label: "Iowa Civil Rights Act in housing"
+        items: 1
+        subtopics: []
+      - id: "10"
+        label: "Unlicensed assistants"
+        items: 2
+        subtopics: []
+      - id: "11"
+        label: "Broker responsibilities and office management"
+        items: 6
+        subtopics: []
+      - id: "12"
+        label: "Property management"
+        items: 3
+        subtopics: []
+references: []
+notes: "The bulletin presents the state portion as a 12-row topic table (no numbering); we number rows 1-12 in table order. Salesperson counts sum to 40 (2+3+4+3+3+7+6+5+1+2+2+2), broker to 40 (2+4+4+2+4+5+4+3+1+2+6+3). The bulletin still names Iowa Admin. Code 193E, but the Real Estate Commission rules were editorially transferred to 481 IAC chapters 2001-2022 (IAC Supplement 6/10/26; legis.iowa.gov 193E agency PDF is now a transfer notice), so rule refs use the 481—20xx chapter numbers. Cached: Iowa Code ch. 543B and 481 IAC chapters 2001-2022 (all official legis.iowa.gov PDFs)."

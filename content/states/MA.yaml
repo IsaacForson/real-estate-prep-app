@@ -1,0 +1,56 @@
+code: MA
+name: Massachusetts
+regulator:
+  name: "Board of Registration of Real Estate Brokers and Salespersons, Division of Occupational Licensure"
+  url: "https://www.mass.gov/orgs/board-of-registration-of-real-estate-brokers-and-salespersons"
+vendor: psi
+vendor_notes: "PSI both administers the exam and processes the license application; candidates pay the license fee at the test center upon passing and receive a digital license via eLIPSE 24 hours later."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5-10 experimental questions; not scored but count against exam time"
+  time_minutes: 240
+  pass_score_national: "70%"
+  pass_score_state: "70%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 56
+  retake_policy: "'Candidates who pass one (1) portion of the examination and fail the other need to retake only the failed portion. The failed portion must be successfully completed within two (2) years from the completion date on the Educational Certificate form (or the authorized period by the Board). If the Educational Certificate expires, the partial pass also expires. Candidates who obtain a new Education Certificate must retake both portions of the examination.' No same-day rebooking; a candidate who fails on Wednesday can call Thursday and retest as soon as Friday. Re-take fee is $56 for all salesperson and broker candidates. Exam fee is valid for one year from date of payment."
+  calculator_policy: "'An online calculator will be provided; personal calculators will not be permitted.' Scratch paper and pencil are provided and collected."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 120
+  pretest_items: "5-10 experimental questions"
+  time_minutes: 240
+  pass_score_national: "70% (75 questions worth 80 points; some scored up to two points)"
+  pass_score_state: "70%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 56
+prelicense_hours_salesperson: 40
+prelicense_hours_broker: 40
+statute_citation_root: "M.G.L. c. 112, §§ 87PP–87DDD½"
+rules_citation_root: "254 CMR 1.00–7.00 (Board of Registration of Real Estate Brokers and Salespersons)"
+statute_url: "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87PP"
+rules_url: "https://www.mass.gov/law-library/254-cmr"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/4460"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/4460"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, regulator]
+    accessed: 2026-09-08
+  - url: "https://www.mass.gov/how-to/prepare-for-and-schedule-your-real-estate-license-exam"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87PP"
+    used_for: [statute_citation_root, statute_url]
+    accessed: 2026-09-08
+  - url: "https://www.mass.gov/law-library/254-cmr"
+    used_for: [rules_citation_root, rules_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI Candidate Information Bulletin 'Updated 09/23/2025' (also posted at https://www.mass.gov/doc/psi-candidate-information-bulletin/download). Time: general 150 minutes + state 90 minutes = 240 minutes; the broker exam is the same length (75 general questions worth 80 points + 40 state). Passing is 'a minimum of 70%' per portion. Salesperson applicants need 40 hours education, three candidate endorsements, and a $31 application fee; broker applicants need 40 additional hours, 3 years as an affiliated MA salesperson (at least 25 hrs/week), a $5,000 surety bond and $52 application fee. Massachusetts must be applied for and passed within two years of completing salesperson education. Content outlines are inside the bulletin."

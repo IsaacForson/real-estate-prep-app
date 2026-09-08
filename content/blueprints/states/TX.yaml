@@ -1,0 +1,356 @@
+# Texas state-portion blueprint. The entry-level license is Sales Agent (mapped to
+# `salesperson`). Structure and counts from the Pearson VUE Texas Real Estate State Content
+# Outlines (#094401); labels are our own paraphrases.
+id: state_TX
+vendor: pearsonvue
+title: "Texas state-portion outline (internal blueprint)"
+source_document: "Pearson VUE Texas Real Estate State Content Outlines (#094401) — Texas Sales Agent State Law and Texas Broker State Law Content Outlines"
+source_url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf"
+source_version_or_date: "#094401 dated 01/2026; Sales Agent State Law outline effective January 1, 2026; Broker State Law outline effective April 15, 2020"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: 10
+    domains:
+      - id: "I"
+        label: "Commission duties and powers"
+        items: 3
+        subtopics:
+          - id: "I.A"
+            label: "Commission makeup, powers, and advisory committees"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.051", "Tex. Occ. Code § 1101.151", "Tex. Occ. Code § 1101.201", "Tex. Occ. Code § 1101.251", "Tex. Occ. Code § 1101.254"]
+          - id: "I.B"
+            label: "Complaints: investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.202", "Tex. Occ. Code § 1101.203", "Tex. Occ. Code § 1101.204", "Tex. Occ. Code § 1101.657", "Tex. Occ. Code § 1101.658", "Tex. Occ. Code § 1101.659"]
+          - id: "I.C"
+            label: "Penalties, unlicensed activity, and the recovery trust account"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.701", "Tex. Occ. Code § 1101.702", "Tex. Occ. Code § 1101.751", "Tex. Occ. Code § 1101.752", "Tex. Occ. Code § 1101.758", "Tex. Occ. Code § 1101.601", "Tex. Occ. Code § 1101.602", "Tex. Occ. Code § 1101.606", "Tex. Occ. Code § 1101.610"]
+      - id: "II"
+        label: "Licensing"
+        items: 4
+        subtopics:
+          - id: "II.A"
+            label: "Who needs a license: scope, exemptions, entities, inspectors and appraisers"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.002", "Tex. Occ. Code § 1101.004", "Tex. Occ. Code § 1101.005", "Tex. Occ. Code § 1101.351", "Tex. Occ. Code § 1101.355", "22 Tex. Admin. Code § 535.4", "22 Tex. Admin. Code § 535.5"]
+          - id: "II.B"
+            label: "Application, education, exam, fitness, denial, and appeals"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.354", "Tex. Occ. Code § 1101.3521", "Tex. Occ. Code § 1101.358", "Tex. Occ. Code § 1101.401", "Tex. Occ. Code § 1101.364", "Tex. Occ. Code § 1101.367", "22 Tex. Admin. Code § 535.55", "22 Tex. Admin. Code § 535.51", "22 Tex. Admin. Code § 535.52"]
+          - id: "II.C"
+            label: "Keeping a license: CE, office, sponsorship, inactive status, assumed names"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.451", "Tex. Occ. Code § 1101.455", "Tex. Occ. Code § 1101.552", "Tex. Occ. Code § 1101.367", "22 Tex. Admin. Code § 535.91", "22 Tex. Admin. Code § 535.92", "22 Tex. Admin. Code § 535.121", "22 Tex. Admin. Code § 535.122", "22 Tex. Admin. Code § 535.154"]
+      - id: "III"
+        label: "Standards of conduct"
+        items: 9
+        subtopics:
+          - id: "III.A"
+            label: "Professional ethics and canons of conduct"
+            items: null
+            statute_refs: ["22 Tex. Admin. Code § 531.1", "22 Tex. Admin. Code § 531.2", "22 Tex. Admin. Code § 531.3", "Tex. Occ. Code § 1101.652"]
+          - id: "III.B"
+            label: "Grounds for discipline"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "Tex. Occ. Code § 1101.653", "Tex. Occ. Code § 1101.656"]
+          - id: "III.C"
+            label: "Unauthorized practice of law"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.654", "22 Tex. Admin. Code § 537.11", "Tex. Occ. Code § 1101.652"]
+          - id: "III.D"
+            label: "Trust accounts and trust money"
+            items: null
+            statute_refs: ["22 Tex. Admin. Code § 535.146", "Tex. Occ. Code § 1101.652"]
+          - id: "III.E"
+            label: "Splitting fees"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.651", "Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.147"]
+          - id: "III.F"
+            label: "Rebates"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.148"]
+          - id: "III.G"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.154", "22 Tex. Admin. Code § 535.155"]
+      - id: "IV"
+        label: "Agency and brokerage"
+        items: 10
+        subtopics:
+          - id: "IV.A"
+            label: "Representation disclosure and the information-about-brokerage-services notice"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.558", "22 Tex. Admin. Code § 535.148", "22 Tex. Admin. Code § 535.157"]
+          - id: "IV.B"
+            label: "Intermediary practice"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.559", "Tex. Occ. Code § 1101.560", "Tex. Occ. Code § 1101.561"]
+          - id: "IV.C"
+            label: "Duties to the client, including minimum services"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.557", "Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.2", "22 Tex. Admin. Code § 535.156"]
+          - id: "IV.D"
+            label: "Suing to collect compensation"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.806", "Tex. Occ. Code § 1101.651", "22 Tex. Admin. Code § 535.16"]
+          - id: "IV.E"
+            label: "Broker and sales agent relationship"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.351", "Tex. Occ. Code § 1101.803", "22 Tex. Admin. Code § 535.2", "22 Tex. Admin. Code § 535.121"]
+          - id: "IV.F"
+            label: "Broker's responsibility for a sales agent's acts"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.803", "22 Tex. Admin. Code § 535.2", "Tex. Occ. Code § 1101.652"]
+          - id: "IV.G"
+            label: "Proper use of unlicensed assistants"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.002", "Tex. Occ. Code § 1101.351", "22 Tex. Admin. Code § 535.4", "22 Tex. Admin. Code § 535.5"]
+      - id: "V"
+        label: "Contracts"
+        items: 8
+        subtopics:
+          - id: "V.A"
+            label: "Promulgated contract forms and addenda"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.155", "Tex. Occ. Code § 1101.251", "22 Tex. Admin. Code § 537.11", "22 Tex. Admin. Code § 537.20", "22 Tex. Admin. Code § 537.28"]
+          - id: "V.B"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Tex. Bus. & Com. Code § 26.01", "Tex. Bus. & Com. Code § 26.02", "Tex. Occ. Code § 1101.806"]
+          - id: "V.C"
+            label: "Seller disclosure requirements"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 5.008", "Tex. Occ. Code § 1101.652", "Tex. Occ. Code § 1101.556"]
+      - id: "VI"
+        label: "Special Texas topics"
+        items: 6
+        subtopics:
+          - id: "VI.A"
+            label: "Community property"
+            items: null
+            statute_refs: ["Tex. Fam. Code § 3.001", "Tex. Fam. Code § 3.002", "Tex. Fam. Code § 3.003", "Tex. Fam. Code § 5.001"]
+          - id: "VI.B"
+            label: "Homestead protection and tax exemptions"
+            items: null
+            statute_refs: ["Tex. Const. art. XVI, § 50", "Tex. Prop. Code § 41.001", "Tex. Prop. Code § 41.002", "Tex. Tax Code § 11.13"]
+          - id: "VI.C"
+            label: "Deceptive Trade Practices Act"
+            items: null
+            statute_refs: ["Tex. Bus. & Com. Code § 17.45", "Tex. Bus. & Com. Code § 17.46", "Tex. Bus. & Com. Code § 17.49", "Tex. Bus. & Com. Code § 17.50"]
+          - id: "VI.D"
+            label: "Wills and estates"
+            items: null
+            statute_refs: ["Tex. Est. Code § 201.001", "Tex. Est. Code § 201.002", "Tex. Est. Code § 251.001", "Tex. Est. Code § 101.001"]
+          - id: "VI.E"
+            label: "Landlord-tenant issues"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 92.101", "Tex. Prop. Code § 92.103", "Tex. Prop. Code § 92.104", "Tex. Prop. Code § 92.052", "Tex. Prop. Code § 24.005"]
+          - id: "VI.F"
+            label: "Foreclosure and short sales"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 51.002", "Tex. Prop. Code § 51.0025", "Tex. Prop. Code § 51.003"]
+          - id: "VI.G"
+            label: "Recording statutes"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 13.001", "Tex. Prop. Code § 13.002", "Tex. Prop. Code § 12.001"]
+          - id: "VI.H"
+            label: "Mechanic's and materialman's liens"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 53.021", "Tex. Prop. Code § 53.052", "Tex. Prop. Code § 53.254", "Tex. Const. art. XVI, § 37"]
+          - id: "VI.I"
+            label: "Veterans Land Board programs"
+            items: null
+            statute_refs: ["Tex. Nat. Res. Code § 161.001", "Tex. Nat. Res. Code § 161.171", "Tex. Nat. Res. Code § 162.001"]
+          - id: "VI.J"
+            label: "Homeowners associations"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 209.002", "Tex. Prop. Code § 209.004", "Tex. Prop. Code § 207.003", "Tex. Prop. Code § 5.012"]
+          - id: "VI.K"
+            label: "Equitable interest and executory contracts"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 5.061", "Tex. Prop. Code § 5.062", "Tex. Prop. Code § 5.069", "Tex. Prop. Code § 5.076"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "Commission duties and powers"
+        items: 3
+        subtopics:
+          - id: "I.A"
+            label: "Commission makeup, powers, and advisory committees"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.051", "Tex. Occ. Code § 1101.151", "Tex. Occ. Code § 1101.201", "Tex. Occ. Code § 1101.251", "Tex. Occ. Code § 1101.254"]
+          - id: "I.B"
+            label: "Complaints: investigations, hearings, and appeals"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.202", "Tex. Occ. Code § 1101.203", "Tex. Occ. Code § 1101.204", "Tex. Occ. Code § 1101.657", "Tex. Occ. Code § 1101.658", "Tex. Occ. Code § 1101.659"]
+          - id: "I.C"
+            label: "Penalties, unlicensed activity, and the recovery trust account"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.701", "Tex. Occ. Code § 1101.702", "Tex. Occ. Code § 1101.751", "Tex. Occ. Code § 1101.752", "Tex. Occ. Code § 1101.758", "Tex. Occ. Code § 1101.601", "Tex. Occ. Code § 1101.602", "Tex. Occ. Code § 1101.606", "Tex. Occ. Code § 1101.610"]
+      - id: "II"
+        label: "Licensing"
+        items: 4
+        subtopics:
+          - id: "II.A"
+            label: "Who needs a license: scope, exemptions, entities, inspectors and appraisers"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.002", "Tex. Occ. Code § 1101.004", "Tex. Occ. Code § 1101.005", "Tex. Occ. Code § 1101.351", "Tex. Occ. Code § 1101.355", "22 Tex. Admin. Code § 535.4", "22 Tex. Admin. Code § 535.5"]
+          - id: "II.B"
+            label: "Application, education, exam, fitness, denial, and appeals"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.356", "Tex. Occ. Code § 1101.357", "Tex. Occ. Code § 1101.3521", "Tex. Occ. Code § 1101.358", "Tex. Occ. Code § 1101.401", "Tex. Occ. Code § 1101.364", "22 Tex. Admin. Code § 535.56", "22 Tex. Admin. Code § 535.51", "22 Tex. Admin. Code § 535.52"]
+          - id: "II.C"
+            label: "Keeping a license: CE, office, sponsorship, inactive status, assumed names"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.451", "Tex. Occ. Code § 1101.455", "Tex. Occ. Code § 1101.552", "Tex. Occ. Code § 1101.367", "22 Tex. Admin. Code § 535.91", "22 Tex. Admin. Code § 535.92", "22 Tex. Admin. Code § 535.121", "22 Tex. Admin. Code § 535.122", "22 Tex. Admin. Code § 535.154"]
+      - id: "III"
+        label: "Standards of conduct"
+        items: 9
+        subtopics:
+          - id: "III.A"
+            label: "Professional ethics and canons of conduct"
+            items: null
+            statute_refs: ["22 Tex. Admin. Code § 531.1", "22 Tex. Admin. Code § 531.2", "22 Tex. Admin. Code § 531.3", "Tex. Occ. Code § 1101.652"]
+          - id: "III.B"
+            label: "Grounds for discipline"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "Tex. Occ. Code § 1101.653", "Tex. Occ. Code § 1101.656"]
+          - id: "III.C"
+            label: "Unauthorized practice of law"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.654", "22 Tex. Admin. Code § 537.11", "Tex. Occ. Code § 1101.652"]
+          - id: "III.D"
+            label: "Trust accounts and trust money"
+            items: null
+            statute_refs: ["22 Tex. Admin. Code § 535.146", "Tex. Occ. Code § 1101.652"]
+          - id: "III.E"
+            label: "Splitting fees"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.651", "Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.147"]
+          - id: "III.F"
+            label: "Rebates"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.148"]
+          - id: "III.G"
+            label: "Advertising"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.154", "22 Tex. Admin. Code § 535.155"]
+      - id: "IV"
+        label: "Agency and brokerage"
+        items: 11
+        subtopics:
+          - id: "IV.A"
+            label: "Representation disclosure and the information-about-brokerage-services notice"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.558", "22 Tex. Admin. Code § 535.148", "22 Tex. Admin. Code § 535.157"]
+          - id: "IV.B"
+            label: "Intermediary practice"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.559", "Tex. Occ. Code § 1101.560", "Tex. Occ. Code § 1101.561"]
+          - id: "IV.C"
+            label: "Duties to the client, including minimum services"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.557", "Tex. Occ. Code § 1101.652", "22 Tex. Admin. Code § 535.2", "22 Tex. Admin. Code § 535.156"]
+          - id: "IV.D"
+            label: "Broker and sales agent relationship"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.351", "Tex. Occ. Code § 1101.803", "22 Tex. Admin. Code § 535.2", "22 Tex. Admin. Code § 535.121"]
+          - id: "IV.E"
+            label: "Broker's responsibility for a sales agent's acts"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.803", "22 Tex. Admin. Code § 535.2", "Tex. Occ. Code § 1101.652"]
+          - id: "IV.F"
+            label: "Proper use of unlicensed assistants"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.002", "Tex. Occ. Code § 1101.351", "22 Tex. Admin. Code § 535.4", "22 Tex. Admin. Code § 535.5"]
+          - id: "IV.G"
+            label: "Suing to collect compensation"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.806", "Tex. Occ. Code § 1101.651", "22 Tex. Admin. Code § 535.16"]
+      - id: "V"
+        label: "Contracts"
+        items: 8
+        subtopics:
+          - id: "V.A"
+            label: "Promulgated contract forms and addenda"
+            items: null
+            statute_refs: ["Tex. Occ. Code § 1101.155", "Tex. Occ. Code § 1101.251", "22 Tex. Admin. Code § 537.11", "22 Tex. Admin. Code § 537.20", "22 Tex. Admin. Code § 537.28"]
+          - id: "V.B"
+            label: "Statute of frauds"
+            items: null
+            statute_refs: ["Tex. Bus. & Com. Code § 26.01", "Tex. Bus. & Com. Code § 26.02", "Tex. Occ. Code § 1101.806"]
+          - id: "V.C"
+            label: "Seller disclosure requirements"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 5.008", "Tex. Occ. Code § 1101.652", "Tex. Occ. Code § 1101.556"]
+      - id: "VI"
+        label: "Special Texas topics"
+        items: 5
+        subtopics:
+          - id: "VI.A"
+            label: "Community property"
+            items: null
+            statute_refs: ["Tex. Fam. Code § 3.001", "Tex. Fam. Code § 3.002", "Tex. Fam. Code § 3.003", "Tex. Fam. Code § 5.001"]
+          - id: "VI.B"
+            label: "Homestead protection and tax exemptions"
+            items: null
+            statute_refs: ["Tex. Const. art. XVI, § 50", "Tex. Prop. Code § 41.001", "Tex. Prop. Code § 41.002", "Tex. Tax Code § 11.13"]
+          - id: "VI.C"
+            label: "Deceptive Trade Practices Act"
+            items: null
+            statute_refs: ["Tex. Bus. & Com. Code § 17.45", "Tex. Bus. & Com. Code § 17.46", "Tex. Bus. & Com. Code § 17.49", "Tex. Bus. & Com. Code § 17.50"]
+          - id: "VI.D"
+            label: "Wills and estates"
+            items: null
+            statute_refs: ["Tex. Est. Code § 201.001", "Tex. Est. Code § 201.002", "Tex. Est. Code § 251.001", "Tex. Est. Code § 101.001"]
+          - id: "VI.E"
+            label: "Landlord-tenant issues"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 92.101", "Tex. Prop. Code § 92.103", "Tex. Prop. Code § 92.104", "Tex. Prop. Code § 92.052", "Tex. Prop. Code § 24.005"]
+          - id: "VI.F"
+            label: "Foreclosure and short sales"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 51.002", "Tex. Prop. Code § 51.0025", "Tex. Prop. Code § 51.003"]
+          - id: "VI.G"
+            label: "Recording statutes"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 13.001", "Tex. Prop. Code § 13.002", "Tex. Prop. Code § 12.001"]
+          - id: "VI.H"
+            label: "Mechanic's and materialman's liens"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 53.021", "Tex. Prop. Code § 53.052", "Tex. Prop. Code § 53.254", "Tex. Const. art. XVI, § 37"]
+          - id: "VI.I"
+            label: "Veterans Land Board programs"
+            items: null
+            statute_refs: ["Tex. Nat. Res. Code § 161.001", "Tex. Nat. Res. Code § 161.171", "Tex. Nat. Res. Code § 162.001"]
+          - id: "VI.J"
+            label: "Homeowners associations"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 209.002", "Tex. Prop. Code § 209.004", "Tex. Prop. Code § 207.003", "Tex. Prop. Code § 5.012"]
+          - id: "VI.K"
+            label: "Equitable interest and executory contracts"
+            items: null
+            statute_refs: ["Tex. Prop. Code § 5.061", "Tex. Prop. Code § 5.062", "Tex. Prop. Code § 5.069", "Tex. Prop. Code § 5.076"]
+      - id: "VII"
+        label: "Case studies"
+        items: 10
+        subtopics:
+          - id: "VII.A"
+            label: "Narrative case scenarios"
+            items: null
+            broker_only: true
+            statute_refs: ["Tex. Occ. Code § 1101.652", "Tex. Occ. Code § 1101.558", "Tex. Occ. Code § 1101.559", "Tex. Occ. Code § 1101.803", "22 Tex. Admin. Code § 535.2", "22 Tex. Admin. Code § 535.146"]
+          - id: "VII.B"
+            label: "Contract-form and addenda cases"
+            items: null
+            broker_only: true
+            statute_refs: ["22 Tex. Admin. Code § 537.11", "22 Tex. Admin. Code § 537.20", "22 Tex. Admin. Code § 537.28", "Tex. Occ. Code § 1101.155", "Tex. Prop. Code § 5.008"]
+references: []
+notes: "Outline #094401 (01/2026): Sales Agent State Law (effective Jan. 1, 2026) I 3 / II 4 / III 9 / IV 10 / V 8 / VI 6 = 40 scored + 10 pretest. Broker State Law (effective Apr. 15, 2020) I 3 / II 4 / III 9 / IV 11 / V 8 / VI 5 / VII 10 = 50 scored + 5-10 pretest, including 10 case-study items (domain VII). The broker outline's page 09 in the PDF lists domains IV-VII; domains I-III of the broker outline are identical in count to the sales agent outline. Subtopic counts are not published. Grounding: NOT YET CACHED. statutes.capitol.texas.gov serves a JavaScript shell for every path tried (Docs/OC/htm/OC.1101.htm, /docs/..., GetStatute.aspx, the .pdf path; XHR-style headers made no difference); trec.texas.gov connections timed out; the Texas SOS TAC viewer has moved to a JavaScript Appian portal. Section numbers for Occ. Code ch. 1101 and 22 TAC chs. 531, 535, 537 are from general knowledge of the Act and rules and should be verified against cached text. Domain VI cites Property, Family, Estates, Tax, Business & Commerce, and Natural Resources Code sections and the Texas Constitution."

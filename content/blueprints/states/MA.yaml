@@ -1,0 +1,262 @@
+# Massachusetts state-portion blueprint. Source: PSI Massachusetts Real Estate Candidate Information Bulletin
+# (Updated 09/23/2025), "State Portion (Massachusetts State Real Estate Laws and Real Estate Board Rules)".
+# Labels are OUR paraphrases (SPEC §3.2). The bulletin publishes both percentages and item counts per domain;
+# `items` uses the published salesperson counts (sum 40). `weight_pct` records the published percentage.
+id: state_MA
+vendor: psi
+title: "Massachusetts state-portion outline (internal blueprint)"
+source_document: "PSI Massachusetts Real Estate Candidate Information Bulletin — State Portion content outline"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/4460"
+source_version_or_date: "Bulletin updated 09/23/2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "I"
+        label: "Board of Registration: record examination and sanctions"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "I.A"
+            label: "Board authority to examine licensee records"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87QQ", "M.G.L. c. 112, § 87AAA", "254 CMR 3.00"]
+          - id: "I.B"
+            label: "Fines, license suspension, and revocation"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87AAA", "M.G.L. c. 112, § 87BBB", "M.G.L. c. 112, § 87CCC", "M.G.L. c. 112, § 87DDD"]
+      - id: "II"
+        label: "Licensing: who needs a license, license types, renewal, CE, notices"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a broker or salesperson license; exemptions"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87PP", "M.G.L. c. 112, § 87RR", "M.G.L. c. 112, § 87DDD"]
+          - id: "II.B"
+            label: "Active, inactive, and expired license status"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87SS", "M.G.L. c. 112, § 87TT", "M.G.L. c. 112, § 87XX½", "254 CMR 2.00"]
+          - id: "II.C"
+            label: "Renewal cycle and continuing education"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87TT", "M.G.L. c. 112, § 87XX½", "254 CMR 5.00"]
+          - id: "II.D"
+            label: "Required notices to the Board (address, affiliation, convictions)"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87UU", "M.G.L. c. 112, § 87AAA", "254 CMR 2.00", "254 CMR 3.00"]
+      - id: "III"
+        label: "Rules governing licensee conduct and brokerage practice"
+        items: 13
+        weight_pct: 34
+        subtopics:
+          - id: "III.A"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["254 CMR 3.00", "M.G.L. c. 112, § 87AAA"]
+          - id: "III.B"
+            label: "Broker and salesperson relationship; supervision; compensation flow"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87PP", "M.G.L. c. 112, § 87RR", "M.G.L. c. 112, § 87UU", "254 CMR 3.00"]
+          - id: "III.C"
+            label: "Commissions and who may be paid"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87RR", "M.G.L. c. 112, § 87AAA", "254 CMR 3.00"]
+          - id: "III.D"
+            label: "Disclosures: consumer-licensee relationship, conflicts, rental fees"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87AAA¾", "M.G.L. c. 112, § 87DDD½", "254 CMR 3.00", "254 CMR 7.00"]
+          - id: "III.E"
+            label: "Agency and non-agency (facilitator) relationships"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87AAA¾", "254 CMR 3.00"]
+          - id: "III.F"
+            label: "Handling documents: copies, delivery, forms"
+            items: null
+            statute_refs: ["254 CMR 3.00", "M.G.L. c. 112, § 87AAA"]
+          - id: "III.G"
+            label: "Handling client funds and escrow"
+            items: null
+            statute_refs: ["254 CMR 3.00", "M.G.L. c. 112, § 87AAA"]
+          - id: "III.H"
+            label: "Broker record-keeping (broker exam only)"
+            items: null
+            broker_only: true
+            statute_refs: ["254 CMR 3.00", "M.G.L. c. 112, § 87AAA"]
+          - id: "III.I"
+            label: "Home inspector referrals and inspection brochure duties"
+            items: null
+            statute_refs: ["M.G.L. c. 112, § 87YY½", "M.G.L. c. 112, § 87AAA", "266 CMR 6.00"]
+      - id: "IV"
+        label: "Contracts: offers, purchase and sale, leases, listing and buyer agreements"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "IV.A"
+            label: "Offer to purchase and purchase and sale agreement"
+            items: null
+            statute_refs: ["M.G.L. c. 259, § 1", "254 CMR 3.00", "M.G.L. c. 93A, § 2"]
+          - id: "IV.B"
+            label: "Leases and residential tenancy agreements"
+            items: null
+            statute_refs: ["M.G.L. c. 186, § 15B", "M.G.L. c. 186, § 15", "M.G.L. c. 186, § 12"]
+          - id: "IV.C"
+            label: "Listing and buyer representation agreements"
+            items: null
+            statute_refs: ["254 CMR 3.00", "M.G.L. c. 112, § 87AAA¾"]
+      - id: "V"
+        label: "Consumer protection: disclosures, misrepresentation, privacy, enforcement"
+        items: 5
+        weight_pct: 11
+        subtopics:
+          - id: "V.A"
+            label: "Property condition and stigmatized-property disclosure rules"
+            items: null
+            statute_refs: ["M.G.L. c. 93, § 114", "254 CMR 3.00", "M.G.L. c. 93A, § 2"]
+          - id: "V.B"
+            label: "Misrepresentation and unfair or deceptive acts"
+            items: null
+            statute_refs: ["M.G.L. c. 93A, § 2", "M.G.L. c. 93A, § 9", "M.G.L. c. 112, § 87AAA", "940 CMR 3.16"]
+          - id: "V.C"
+            label: "Consumer privacy and data protection duties"
+            items: null
+            statute_refs: ["M.G.L. c. 93H", "M.G.L. c. 93I", "201 CMR 17.00"]
+          - id: "V.D"
+            label: "Attorney General enforcement and consumer remedies"
+            items: null
+            statute_refs: ["M.G.L. c. 93A, § 4", "M.G.L. c. 93A, § 9", "M.G.L. c. 112, § 87CCC"]
+      - id: "VI"
+        label: "Environmental and hazard laws: lead, septic, detectors, wetlands"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "VI.A"
+            label: "Lead paint law and licensee notification duties"
+            items: null
+            statute_refs: ["M.G.L. c. 111, § 197A", "M.G.L. c. 111, §§ 189A–199B", "105 CMR 460.000"]
+          - id: "VI.B"
+            label: "Title 5 private sewage disposal inspections"
+            items: null
+            statute_refs: ["M.G.L. c. 21A, § 13", "310 CMR 15.000", "310 CMR 15.301"]
+          - id: "VI.C"
+            label: "Smoke and carbon monoxide detector certification at sale"
+            items: null
+            statute_refs: ["M.G.L. c. 148, § 26F", "M.G.L. c. 148, § 26F½", "527 CMR 1.00"]
+          - id: "VI.D"
+            label: "Wetlands and rivers protection"
+            items: null
+            statute_refs: ["M.G.L. c. 131, § 40", "310 CMR 10.00"]
+      - id: "VII"
+        label: "Massachusetts fair housing law and MCAD"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "VII.A"
+            label: "State protected classes beyond federal law"
+            items: null
+            statute_refs: ["M.G.L. c. 151B, § 4", "M.G.L. c. 151B, § 1"]
+          - id: "VII.B"
+            label: "Massachusetts-specific exemptions and lead-paint/children rules"
+            items: null
+            statute_refs: ["M.G.L. c. 151B, § 4", "M.G.L. c. 111, § 199A"]
+          - id: "VII.C"
+            label: "Massachusetts Commission Against Discrimination: complaints and remedies"
+            items: null
+            statute_refs: ["M.G.L. c. 151B, § 3", "M.G.L. c. 151B, § 5", "M.G.L. c. 6, § 56", "804 CMR 1.00"]
+          - id: "VII.D"
+            label: "Disability accommodations and accessibility"
+            items: null
+            statute_refs: ["M.G.L. c. 151B, § 4", "M.G.L. c. 22, § 13A", "521 CMR 1.00"]
+      - id: "VIII"
+        label: "Landlord-tenant law: deposits, sanitary code, short-term rentals"
+        items: 4
+        weight_pct: 10
+        subtopics:
+          - id: "VIII.A"
+            label: "Security deposits, last month's rent, receipts, statement of condition"
+            items: null
+            statute_refs: ["M.G.L. c. 186, § 15B"]
+          - id: "VIII.B"
+            label: "State Sanitary Code minimum housing standards"
+            items: null
+            statute_refs: ["105 CMR 410.000", "M.G.L. c. 111, § 127A"]
+          - id: "VIII.C"
+            label: "Short-term vacation and recreational rentals"
+            items: null
+            statute_refs: ["M.G.L. c. 64G", "M.G.L. c. 64G, § 1", "M.G.L. c. 186, § 15B"]
+      - id: "IX"
+        label: "Ownership forms, condominiums, cooperatives, timeshares, registered land"
+        items: 2
+        weight_pct: 5
+        subtopics:
+          - id: "IX.A"
+            label: "Forms of ownership under Massachusetts law"
+            items: null
+            statute_refs: ["M.G.L. c. 184, § 7", "M.G.L. c. 209, § 1", "M.G.L. c. 188"]
+          - id: "IX.B"
+            label: "Condominiums, cooperatives, and timeshares"
+            items: null
+            statute_refs: ["M.G.L. c. 183A", "M.G.L. c. 157B", "M.G.L. c. 183B"]
+          - id: "IX.C"
+            label: "Registered (Land Court) land"
+            items: null
+            statute_refs: ["M.G.L. c. 185", "M.G.L. c. 185, § 46"]
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "I"
+        label: "Board of Registration: record examination and sanctions"
+        items: 2
+        weight_pct: 5
+        subtopics: []
+      - id: "II"
+        label: "Licensing: who needs a license, license types, renewal, CE, notices"
+        items: 4
+        weight_pct: 10
+        subtopics: []
+      - id: "III"
+        label: "Rules governing licensee conduct and brokerage practice"
+        items: 14
+        weight_pct: 35
+        subtopics: []
+      - id: "IV"
+        label: "Contracts: offers, purchase and sale, leases, listing and buyer agreements"
+        items: 2
+        weight_pct: 5
+        subtopics: []
+      - id: "V"
+        label: "Consumer protection: disclosures, misrepresentation, privacy, enforcement"
+        items: 4
+        weight_pct: 10
+        subtopics: []
+      - id: "VI"
+        label: "Environmental and hazard laws: lead, septic, detectors, wetlands"
+        items: 4
+        weight_pct: 10
+        subtopics: []
+      - id: "VII"
+        label: "Massachusetts fair housing law and MCAD"
+        items: 4
+        weight_pct: 10
+        subtopics: []
+      - id: "VIII"
+        label: "Landlord-tenant law: deposits, sanitary code, short-term rentals"
+        items: 4
+        weight_pct: 10
+        subtopics: []
+      - id: "IX"
+        label: "Ownership forms, condominiums, cooperatives, timeshares, registered land"
+        items: 2
+        weight_pct: 5
+        subtopics: []
+references:
+  - title: "M.G.L. c. 112, §§ 87PP–87DDD½ (Real Estate Brokers and Salesmen)"
+    publisher: "Massachusetts General Court"
+  - title: "254 CMR 1.00–7.00 (Board of Registration of Real Estate Brokers and Salespersons)"
+    publisher: "Massachusetts Trial Court Law Libraries / Secretary of the Commonwealth"
+notes: "Salesperson counts 2/4/13/2/5/4/4/4/2 = 40; broker counts 2/4/14/2/4/4/4/4/2 = 40 (both published; percentages published as 5/10/33-35/5/10-12/10/10/10/5). Broker subtopics mirror the salesperson list plus the broker-only record-keeping topic (III.H). NO statute text is cached for MA: malegislature.gov refuses connections from scripted clients (curl: connection failure; WebFetch: ECONNREFUSED 170.63.68.84:443) and the browser pane is denied for that host; mass.gov (254 CMR PDFs, Board pages) returns HTTP 403 to curl and WebFetch. Section-level c. 112 citations are from our knowledge of the chapter (87PP definitions/exemptions, 87RR license required, 87SS qualifications/exam, 87TT-87UU issuance/renewal/supervision, 87XX½ CE, 87YY½ home inspection brochure, 87AAA grounds for discipline, 87AAA¾ agency disclosure, 87BBB-87DDD hearings/penalties, 87DDD½ rental-fee disclosure) and should be verified against the official text once it can be retrieved."

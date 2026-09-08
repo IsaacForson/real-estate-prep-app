@@ -1,0 +1,224 @@
+# New Hampshire state-portion blueprint. Source: PSI "New Hampshire Real Estate Candidate Information
+# Bulletin" (bulletin 6529), "State Portion Content Outline for Salespersons and Brokers" — the same 40-item
+# outline applies to both licenses. Labels are OUR paraphrases (SPEC §3.2). The bulletin itself cites the RSA
+# and Rea sections for each topic; those citations are what statute_refs record.
+id: state_NH
+vendor: psi
+title: "New Hampshire state-portion outline (internal blueprint)"
+source_document: "PSI New Hampshire Real Estate Candidate Information Bulletin — State Portion Content Outline for Salespersons and Brokers"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/6529"
+source_version_or_date: "Bulletin updated 7/1/2025"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "The Real Estate Commission and its enforcement powers"
+        items: 3
+        subtopics:
+          - id: "I.A"
+            label: "Purpose and makeup of the Commission"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:1", "N.H. Rev. Stat. Ann. § 331-A:3"]
+          - id: "I.B"
+            label: "Commission duties, powers, and rulemaking"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:5", "N.H. Rev. Stat. Ann. § 331-A:7", "N.H. Rev. Stat. Ann. § 331-A:8", "N.H. Rev. Stat. Ann. § 331-A:25", "N.H. Code Admin. R. Rea 102.01"]
+          - id: "I.C"
+            label: "Examination of licensee records"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:30", "N.H. Code Admin. R. Rea 204.05"]
+          - id: "I.D"
+            label: "Disciplinary procedures, hearings, and penalties"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:28", "N.H. Rev. Stat. Ann. § 331-A:29", "N.H. Rev. Stat. Ann. § 331-A:34", "N.H. Rev. Stat. Ann. § 331-A:35", "N.H. Code Admin. R. Rea 206.01"]
+      - id: "II"
+        label: "Licensure requirements and license maintenance"
+        items: 5
+        subtopics:
+          - id: "II.A"
+            label: "Activities requiring a license and exemptions"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:2", "N.H. Rev. Stat. Ann. § 331-A:4"]
+          - id: "II.B"
+            label: "Application and licensing procedures"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:12", "N.H. Rev. Stat. Ann. § 331-A:12-a", "N.H. Rev. Stat. Ann. § 331-A:15", "N.H. Rev. Stat. Ann. § 331-A:21", "N.H. Rev. Stat. Ann. § 331-A:22", "N.H. Rev. Stat. Ann. § 331-A:23", "N.H. Code Admin. R. Rea 301.01", "N.H. Code Admin. R. Rea 301.03", "N.H. Code Admin. R. Rea 301.04", "N.H. Code Admin. R. Rea 303", "N.H. Code Admin. R. Rea 305"]
+          - id: "II.C"
+            label: "Eligibility: education, experience, character"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:10", "N.H. Rev. Stat. Ann. § 331-A:10-a", "N.H. Rev. Stat. Ann. § 331-A:11", "N.H. Rev. Stat. Ann. § 331-A:11-a"]
+          - id: "II.D"
+            label: "Surety bond requirement"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:14"]
+          - id: "II.E"
+            label: "License renewal"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:19", "N.H. Code Admin. R. Rea 401"]
+          - id: "II.F"
+            label: "Changes in license status, transfers, terminations"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:17", "N.H. Rev. Stat. Ann. § 331-A:18"]
+          - id: "II.G"
+            label: "Continuing education"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:20", "N.H. Rev. Stat. Ann. § 331-A:25", "N.H. Code Admin. R. Rea 403.01"]
+      - id: "III"
+        label: "Rules governing licensee business conduct"
+        items: 11
+        subtopics:
+          - id: "III.A"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["N.H. Code Admin. R. Rea 404.05", "N.H. Rev. Stat. Ann. § 331-A:26"]
+          - id: "III.B"
+            label: "Branch offices"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:16", "N.H. Rev. Stat. Ann. § 331-A:16-a"]
+          - id: "III.C"
+            label: "Prohibited conduct and grounds for discipline"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:26"]
+          - id: "III.D"
+            label: "Water, insulation, and septic disclosures"
+            items: null
+            statute_refs: ["N.H. Code Admin. R. Rea 701.03", "N.H. Code Admin. R. Rea 701.04", "N.H. Code Admin. R. Rea 701.05", "N.H. Rev. Stat. Ann. § 477:4-c"]
+          - id: "III.E"
+            label: "Recordkeeping duties"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:26", "N.H. Code Admin. R. Rea 404.03"]
+          - id: "III.F"
+            label: "Escrow funds and trust accounts"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:13", "N.H. Code Admin. R. Rea 702"]
+          - id: "III.G"
+            label: "Place of business requirements"
+            items: null
+            statute_refs: ["N.H. Code Admin. R. Rea 404.01", "N.H. Code Admin. R. Rea 404.02"]
+      - id: "IV"
+        label: "Agency relationships and brokerage contracts"
+        items: 11
+        subtopics:
+          - id: "IV.A"
+            label: "Broker-salesperson relationship and supervision"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:2", "N.H. Rev. Stat. Ann. § 331-A:16", "N.H. Rev. Stat. Ann. § 331-A:17", "N.H. Rev. Stat. Ann. § 331-A:32", "N.H. Code Admin. R. Rea 702.02"]
+          - id: "IV.B"
+            label: "Brokerage (listing and buyer) contracts"
+            items: null
+            statute_refs: ["N.H. Code Admin. R. Rea 404.04"]
+          - id: "IV.C"
+            label: "Scope of agency and mandatory agency disclosure"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:25-a", "N.H. Code Admin. R. Rea 404.03", "N.H. Code Admin. R. Rea 701.01", "N.H. Code Admin. R. Rea 701.02"]
+          - id: "IV.D"
+            label: "Seller agent, buyer agent, disclosed dual agent"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:25-b", "N.H. Rev. Stat. Ann. § 331-A:25-c", "N.H. Rev. Stat. Ann. § 331-A:25-d"]
+          - id: "IV.E"
+            label: "Designated agency, facilitators, other relationships"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:25-e", "N.H. Rev. Stat. Ann. § 331-A:25-f", "N.H. Rev. Stat. Ann. § 331-A:2", "N.H. Rev. Stat. Ann. § 331-A:25-a"]
+          - id: "IV.F"
+            label: "Cooperating agreements between brokers"
+            items: null
+            statute_refs: ["N.H. Code Admin. R. Rea 703.01"]
+      - id: "V"
+        label: "New Hampshire-specific laws affecting practice"
+        items: 10
+        subtopics:
+          - id: "V.A"
+            label: "Human rights and housing discrimination law"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 354-A:1", "N.H. Rev. Stat. Ann. § 354-A:2", "N.H. Rev. Stat. Ann. § 354-A:7", "N.H. Rev. Stat. Ann. § 354-A:8", "N.H. Rev. Stat. Ann. § 354-A:9", "N.H. Rev. Stat. Ann. § 354-A:10", "N.H. Rev. Stat. Ann. § 354-A:12", "N.H. Rev. Stat. Ann. § 354-A:13", "N.H. Rev. Stat. Ann. § 354-A:14", "N.H. Rev. Stat. Ann. § 354-A:15", "N.H. Rev. Stat. Ann. § 354-A:16", "N.H. Rev. Stat. Ann. § 354-A:17", "N.H. Rev. Stat. Ann. § 354-A:21-a"]
+          - id: "V.B"
+            label: "Environmental hazards: waste, water, asbestos, tanks, radon, lead"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 147-A:7", "N.H. Rev. Stat. Ann. § 147-A:9", "N.H. Rev. Stat. Ann. § 147-A:11", "N.H. Rev. Stat. Ann. § 147-A:13", "N.H. Rev. Stat. Ann. § 147-B:1", "N.H. Rev. Stat. Ann. § 147-B:10-a", "N.H. Rev. Stat. Ann. § 147-B:10-b", "N.H. Rev. Stat. Ann. § 485-A:1", "N.H. Rev. Stat. Ann. § 485-A:2", "N.H. Rev. Stat. Ann. § 485-A:17", "N.H. Rev. Stat. Ann. § 485-A:29", "N.H. Rev. Stat. Ann. § 485-A:32", "N.H. Rev. Stat. Ann. § 485-A:38", "N.H. Rev. Stat. Ann. § 485-A:39", "N.H. Rev. Stat. Ann. § 485:1", "N.H. Rev. Stat. Ann. § 485:33", "N.H. Rev. Stat. Ann. § 485:38", "N.H. Rev. Stat. Ann. § 482-B:1", "N.H. Rev. Stat. Ann. § 141-E:9", "N.H. Rev. Stat. Ann. § 141-E:10", "N.H. Rev. Stat. Ann. § 146-C:2", "N.H. Rev. Stat. Ann. § 146-C:4", "N.H. Rev. Stat. Ann. § 146-C:11", "N.H. Rev. Stat. Ann. § 477:4-a", "N.H. Rev. Stat. Ann. § 130-A:1", "N.H. Rev. Stat. Ann. § 130-A:3", "N.H. Rev. Stat. Ann. § 130-A:4", "N.H. Rev. Stat. Ann. § 130-A:6", "N.H. Rev. Stat. Ann. § 130-A:6-a", "N.H. Rev. Stat. Ann. § 130-A:8-a", "N.H. Rev. Stat. Ann. § 130-A:9", "N.H. Rev. Stat. Ann. § 130-A:12"]
+          - id: "V.C"
+            label: "Condominium Act essentials"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 356-B:3", "N.H. Rev. Stat. Ann. § 356-B:12", "N.H. Rev. Stat. Ann. § 356-B:46", "N.H. Rev. Stat. Ann. § 356-B:50", "N.H. Rev. Stat. Ann. § 356-B:52", "N.H. Rev. Stat. Ann. § 356-B:57", "N.H. Rev. Stat. Ann. § 356-B:58"]
+          - id: "V.D"
+            label: "Planning, zoning, and land use boards"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 672:7", "N.H. Rev. Stat. Ann. § 672:14", "N.H. Rev. Stat. Ann. § 674:2", "N.H. Rev. Stat. Ann. § 674:4", "N.H. Rev. Stat. Ann. § 674:16", "N.H. Rev. Stat. Ann. § 674:17", "N.H. Rev. Stat. Ann. § 674:19", "N.H. Rev. Stat. Ann. § 674:31", "N.H. Rev. Stat. Ann. § 674:32", "N.H. Rev. Stat. Ann. § 674:33", "N.H. Rev. Stat. Ann. § 674:35", "N.H. Rev. Stat. Ann. § 674:36", "N.H. Rev. Stat. Ann. § 674:51"]
+          - id: "V.E"
+            label: "Wetlands and shoreland protection"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. ch. 482-A", "N.H. Rev. Stat. Ann. ch. 483-A", "N.H. Rev. Stat. Ann. ch. 483-B"]
+          - id: "V.F"
+            label: "Property, transfer, and current-use taxation"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 72:6", "N.H. Rev. Stat. Ann. § 72:7", "N.H. Rev. Stat. Ann. § 72:7-a", "N.H. Rev. Stat. Ann. § 72:23", "N.H. Rev. Stat. Ann. § 73:10", "N.H. Rev. Stat. Ann. § 78-A:3", "N.H. Rev. Stat. Ann. § 78-B:1", "N.H. Rev. Stat. Ann. § 78-B:1-a", "N.H. Rev. Stat. Ann. § 78-B:2", "N.H. Rev. Stat. Ann. § 78-B:3", "N.H. Rev. Stat. Ann. § 78-B:4", "N.H. Rev. Stat. Ann. § 78-B:6", "N.H. Rev. Stat. Ann. § 78-B:11", "N.H. Rev. Stat. Ann. § 79-A:1", "N.H. Rev. Stat. Ann. § 79-A:4", "N.H. Rev. Stat. Ann. § 79-A:5", "N.H. Rev. Stat. Ann. § 79-A:7", "N.H. Rev. Stat. Ann. § 79-A:25", "N.H. Rev. Stat. Ann. § 80:85", "N.H. Rev. Stat. Ann. § 80:86", "N.H. Rev. Stat. Ann. § 75:11", "N.H. Rev. Stat. Ann. § 76:16", "N.H. Rev. Stat. Ann. § 76:16-a", "N.H. Rev. Stat. Ann. § 76:16-c", "N.H. Rev. Stat. Ann. § 76:17"]
+          - id: "V.G"
+            label: "Manufactured housing parks and sales"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 205-A:1", "N.H. Rev. Stat. Ann. § 205-A:2", "N.H. Rev. Stat. Ann. § 205-A:3", "N.H. Rev. Stat. Ann. § 205-A:4", "N.H. Rev. Stat. Ann. § 205-A:5", "N.H. Rev. Stat. Ann. § 205-A:6", "N.H. Rev. Stat. Ann. § 205-A:7", "N.H. Rev. Stat. Ann. § 205-A:8", "N.H. Rev. Stat. Ann. § 205-A:10", "N.H. Rev. Stat. Ann. § 205-A:21"]
+          - id: "V.H"
+            label: "Landlord-tenant law and property management"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 540:1", "N.H. Rev. Stat. Ann. § 540:2", "N.H. Rev. Stat. Ann. § 540:3", "N.H. Rev. Stat. Ann. § 540:4", "N.H. Rev. Stat. Ann. § 540:5", "N.H. Rev. Stat. Ann. § 540:6", "N.H. Rev. Stat. Ann. § 540:7", "N.H. Rev. Stat. Ann. § 540:8", "N.H. Rev. Stat. Ann. § 540:9", "N.H. Rev. Stat. Ann. § 540:10", "N.H. Rev. Stat. Ann. § 540:28", "N.H. Rev. Stat. Ann. § 540-A:6"]
+          - id: "V.I"
+            label: "Deeds, recording, and conveyancing statutes"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 477:1", "N.H. Rev. Stat. Ann. § 477:2", "N.H. Rev. Stat. Ann. § 477:3", "N.H. Rev. Stat. Ann. § 477:3-a", "N.H. Rev. Stat. Ann. § 477:7", "N.H. Rev. Stat. Ann. § 477:7-a", "N.H. Rev. Stat. Ann. § 477:7-b", "N.H. Rev. Stat. Ann. § 477:10", "N.H. Rev. Stat. Ann. § 477:44", "N.H. Rev. Stat. Ann. § 478:1-a"]
+          - id: "V.J"
+            label: "Descent, distribution, and wills affecting title"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 551:1", "N.H. Rev. Stat. Ann. § 551:2", "N.H. Rev. Stat. Ann. § 561:1", "N.H. Rev. Stat. Ann. § 477:18"]
+  broker:
+    scored_items: 40
+    pretest_items: "5-10"
+    domains:
+      - id: "I"
+        label: "The Real Estate Commission and its enforcement powers"
+        items: 3
+        subtopics:
+          - id: "I.A"
+            label: "Purpose, powers, records examination, discipline"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:1", "N.H. Rev. Stat. Ann. § 331-A:5", "N.H. Rev. Stat. Ann. § 331-A:7", "N.H. Rev. Stat. Ann. § 331-A:8", "N.H. Rev. Stat. Ann. § 331-A:25", "N.H. Rev. Stat. Ann. § 331-A:28", "N.H. Rev. Stat. Ann. § 331-A:29", "N.H. Rev. Stat. Ann. § 331-A:30", "N.H. Rev. Stat. Ann. § 331-A:34", "N.H. Rev. Stat. Ann. § 331-A:35", "N.H. Code Admin. R. Rea 102.01", "N.H. Code Admin. R. Rea 204.05", "N.H. Code Admin. R. Rea 206.01"]
+      - id: "II"
+        label: "Licensure requirements and license maintenance"
+        items: 5
+        subtopics:
+          - id: "II.A"
+            label: "Licensable activity, procedures, eligibility, bonds, renewal, CE"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:2", "N.H. Rev. Stat. Ann. § 331-A:4", "N.H. Rev. Stat. Ann. § 331-A:10", "N.H. Rev. Stat. Ann. § 331-A:11", "N.H. Rev. Stat. Ann. § 331-A:12", "N.H. Rev. Stat. Ann. § 331-A:14", "N.H. Rev. Stat. Ann. § 331-A:17", "N.H. Rev. Stat. Ann. § 331-A:18", "N.H. Rev. Stat. Ann. § 331-A:19", "N.H. Rev. Stat. Ann. § 331-A:20", "N.H. Code Admin. R. Rea 301.03", "N.H. Code Admin. R. Rea 401", "N.H. Code Admin. R. Rea 403.01"]
+      - id: "III"
+        label: "Rules governing licensee business conduct"
+        items: 11
+        subtopics:
+          - id: "III.A"
+            label: "Advertising, branch offices, prohibited conduct, disclosures, records, escrow"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:13", "N.H. Rev. Stat. Ann. § 331-A:16", "N.H. Rev. Stat. Ann. § 331-A:16-a", "N.H. Rev. Stat. Ann. § 331-A:26", "N.H. Code Admin. R. Rea 404.01", "N.H. Code Admin. R. Rea 404.02", "N.H. Code Admin. R. Rea 404.03", "N.H. Code Admin. R. Rea 404.05", "N.H. Code Admin. R. Rea 701.03", "N.H. Code Admin. R. Rea 701.04", "N.H. Code Admin. R. Rea 701.05", "N.H. Code Admin. R. Rea 702"]
+      - id: "IV"
+        label: "Agency relationships and brokerage contracts"
+        items: 11
+        subtopics:
+          - id: "IV.A"
+            label: "Broker-salesperson relationship, brokerage contracts, agency types, cooperation"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. § 331-A:2", "N.H. Rev. Stat. Ann. § 331-A:16", "N.H. Rev. Stat. Ann. § 331-A:17", "N.H. Rev. Stat. Ann. § 331-A:25-a", "N.H. Rev. Stat. Ann. § 331-A:25-b", "N.H. Rev. Stat. Ann. § 331-A:25-c", "N.H. Rev. Stat. Ann. § 331-A:25-d", "N.H. Rev. Stat. Ann. § 331-A:25-e", "N.H. Rev. Stat. Ann. § 331-A:25-f", "N.H. Rev. Stat. Ann. § 331-A:32", "N.H. Code Admin. R. Rea 404.03", "N.H. Code Admin. R. Rea 404.04", "N.H. Code Admin. R. Rea 701.01", "N.H. Code Admin. R. Rea 701.02", "N.H. Code Admin. R. Rea 702.02", "N.H. Code Admin. R. Rea 703.01"]
+      - id: "V"
+        label: "New Hampshire-specific laws affecting practice"
+        items: 10
+        subtopics:
+          - id: "V.A"
+            label: "Human rights, environment, condos, zoning, wetlands, tax, housing, tenancy, recording, descent"
+            items: null
+            statute_refs: ["N.H. Rev. Stat. Ann. ch. 354-A", "N.H. Rev. Stat. Ann. ch. 147-A", "N.H. Rev. Stat. Ann. ch. 147-B", "N.H. Rev. Stat. Ann. ch. 485-A", "N.H. Rev. Stat. Ann. ch. 130-A", "N.H. Rev. Stat. Ann. ch. 356-B", "N.H. Rev. Stat. Ann. ch. 674", "N.H. Rev. Stat. Ann. ch. 482-A", "N.H. Rev. Stat. Ann. ch. 78-B", "N.H. Rev. Stat. Ann. ch. 79-A", "N.H. Rev. Stat. Ann. ch. 205-A", "N.H. Rev. Stat. Ann. ch. 540", "N.H. Rev. Stat. Ann. ch. 477", "N.H. Rev. Stat. Ann. ch. 551", "N.H. Rev. Stat. Ann. ch. 561"]
+references: []
+notes: >-
+  The bulletin publishes one state outline for both salesperson and broker (40 items each); the broker exam
+  section mirrors the salesperson section with collapsed subtopics. The bulletin cites RSA/Rea sections per
+  topic; statute_refs reproduce those citations. No New Hampshire ground truth is cached: gc.nh.gov (RSA
+  331-A and Rea 100-700) returns a WAF "Web Page Blocked" 403 to curl, WebFetch and the browser pane, and
+  the OPLC laws page links back to gc.nh.gov. Drafting for NH is blocked until RSA 331-A / Rea text is ingested.

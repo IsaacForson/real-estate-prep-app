@@ -1,0 +1,62 @@
+code: OH
+name: Ohio
+regulator:
+  name: "Ohio Division of Real Estate & Professional Licensing, Department of Commerce"
+  url: "https://com.ohio.gov/divisions-and-programs/real-estate-and-professional-licensing/real-estate-and-professional-licensing"
+vendor: psi
+vendor_notes: "PSI Services LLC conducts examination testing under contract with the Division. Candidates first apply to the Division ($81 salesperson / $135 broker exam application fee + background check); the Division transmits eligibility to PSI, who issues the Candidate Information Bulletin; candidates then pay PSI the exam fee."
+salesperson_exam:
+  national_items: 80
+  state_items: 40
+  total_items: 120
+  pretest_items: "5 to 10 experimental questions may be administered; unscored, but they count against examination time"
+  time_minutes: 180
+  pass_score_national: "70%"
+  pass_score_state: "70%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 66.00
+  retake_policy: "'You must pass both portions of the examination within 12 months of the date on the label of the initial Candidate Information Bulletin from PSI.' 'You must take both portions of the exam in the same examination session unless you have previously passed a single portion.' 'Candidates who fail one or both portions of the examination must submit a retake application service request and appropriate fee to the Division.' 'You must re-apply, using the Retake Application service request, for the portion you failed, and retake the examination, within the 12-month period.' 'If you are over your 12-month eligibility period, you must start the process over using either the Sales Exam Application or the Broker Exam Application.' Fees: State & National together $66; National only $46; State only $43 (same for retakes). Exam fee forfeited if not tested within 1 year of PSI receiving it."
+  calculator_policy: "Handheld calculators are listed among prohibited electronic devices ('electronic watches, handheld calculators, headsets...'). The bulletin does not state whether an on-screen calculator is provided."
+broker_exam:
+  national_items: 75
+  state_items: 40
+  total_items: 115
+  pretest_items: "5 to 10"
+  time_minutes: 180
+  pass_score_national: "75% (75 items scored to 80 points; some national broker items scored up to two points)"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 66.00
+prelicense_hours_salesperson: 120
+prelicense_hours_broker: 120
+statute_citation_root: "Ohio Rev. Code ch. 4735"
+rules_citation_root: "Ohio Adm. Code 1301:5 (Division of Real Estate), chs. 1301:5-1 to 1301:5-7"
+statute_url: "https://codes.ohio.gov/ohio-revised-code/chapter-4735"
+rules_url: "https://codes.ohio.gov/ohio-administrative-code/1301:5"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/1001"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/1001"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson]
+    accessed: 2026-09-08
+  - url: "https://test-takers.psiexams.com/ohre/test/WZ98295L"
+    used_for: [salesperson_exam.exam_fee_usd, salesperson_exam.time_minutes]
+    accessed: 2026-09-08
+  - url: "https://test-takers.psiexams.com/ohre/test/Z97SE7PX"
+    used_for: [broker_exam.exam_fee_usd, broker_exam.time_minutes]
+    accessed: 2026-09-08
+  - url: "https://com.ohio.gov/divisions-and-programs/real-estate-and-professional-licensing/salespersons-and-brokers/guides-and-resources/requirements-for-an-ohio-real-estate-salespersons-license"
+    used_for: [prelicense_hours_salesperson, vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://com.ohio.gov/divisions-and-programs/real-estate-and-professional-licensing/salespersons-and-brokers/guides-and-resources/requirements-for-an-ohio-real-estate-brokers-license"
+    used_for: [prelicense_hours_broker, vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://com.ohio.gov/divisions-and-programs/real-estate-and-professional-licensing/salespersons-and-brokers/guides-and-resources/salesperson-and-broker-candidate-information-bulletin"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "Bulletin edition dated 7/1/2026 (PSI, salesperson; the broker bulletin is https://test-takers.psiexams.com/api/content/bulletin/1002). Time per portion: National 120 min, State 60 min. Salesperson pre-license = 120 hours: Real Estate Principles and Practices 40, Ohio Real Estate Law 40, Real Estate Appraisal 10, Real Estate Finance 10 (HB 238 reduced appraisal/finance from 20 to 10 hours each for applicants on/after April 9, 2025). Broker applicants need the same 120 hours of real estate courses plus four additional college-level courses (Financial Management, Human Resources/Personnel Management, Applied Business Economics, Business Law, no hour count stated), an active salesperson license for 2 of the last 5 years, and 20 qualifying transactions; the 120 recorded here is the real-estate-course component only. Division exam application fees: $81 salesperson, $135 broker (separate from PSI's exam fee). codes.ohio.gov refused automated fetches during verification; URLs are the standard official Ohio Laws paths confirmed by search results."

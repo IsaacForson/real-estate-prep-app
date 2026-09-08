@@ -1,0 +1,160 @@
+# Vermont state-exam blueprint. Vermont's state (jurisprudence) exam is self-administered by the
+# Office of Professional Regulation inside the online license application (since Feb 27, 2021);
+# no vendor bulletin or published content outline exists. OPR's FAQ directs candidates to the
+# "Statutes, Rules & Resources" page (26 V.S.A. ch. 41, the Commission's Administrative Rules,
+# and OPR policies) as the exam's subject matter, so this blueprint is structured from the statute
+# and rules themselves. Item counts are PROVISIONAL (see notes). Labels are our own paraphrases.
+id: state_VT
+vendor: psi
+title: "Vermont state (jurisprudence) exam outline (internal blueprint, provisional)"
+source_document: "No published outline. Structured from 26 V.S.A. ch. 41 (Real Estate Brokers and Salespersons), 3 V.S.A. § 129a, and the Vermont Real Estate Commission Administrative Rules, as directed by the OPR Salesperson/Broker FAQ ('Where do I find the state exam?')"
+source_url: "https://sos.vermont.gov/real-estate-brokers-salespersons/statutes-rules-resources/"
+source_version_or_date: "Statute as published on legislature.vermont.gov (2025-2026 session); OPR pages as of 2026-09-08"
+accessed: 2026-09-08
+copyright_note: "No vendor outline exists; structure is our own derivation from public statute and rules. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission, OPR, and licensing framework"
+        items: 10
+        subtopics:
+          - id: "1.1"
+            label: "Definitions; activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["26 V.S.A. § 2211", "26 V.S.A. § 2212", "26 V.S.A. § 2213", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "1.2"
+            label: "Real Estate Commission and OPR: composition, powers, procedures, fees"
+            items: null
+            statute_refs: ["26 V.S.A. § 2251", "26 V.S.A. § 2252", "26 V.S.A. § 2253", "26 V.S.A. § 2255", "3 V.S.A. § 123", "3 V.S.A. § 125", "3 V.S.A. § 129"]
+          - id: "1.3"
+            label: "License types and eligibility: education, experience, examination"
+            items: null
+            statute_refs: ["26 V.S.A. § 2291", "26 V.S.A. § 2292", "26 V.S.A. § 2292a", "26 V.S.A. § 2297", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "1.4"
+            label: "Renewal, continuing education, changes of name or location, display"
+            items: null
+            statute_refs: ["26 V.S.A. § 2293", "26 V.S.A. § 2294", "26 V.S.A. § 2295", "26 V.S.A. § 2299", "3 V.S.A. § 127", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+      - id: "2"
+        label: "Trust and escrow accounts; records"
+        items: 8
+        subtopics:
+          - id: "2.1"
+            label: "Deposit timing, separate accounts, Commission notice, inspection"
+            items: null
+            statute_refs: ["26 V.S.A. § 2214", "26 V.S.A. § 2296", "26 V.S.A. § 2252"]
+          - id: "2.2"
+            label: "Interest-bearing deposits and disbursement rules"
+            items: null
+            statute_refs: ["26 V.S.A. § 2214", "26 V.S.A. § 2252"]
+      - id: "3"
+        label: "Agency, disclosure, and brokerage practice"
+        items: 12
+        subtopics:
+          - id: "3.1"
+            label: "Agency relationships and mandatory consumer disclosure"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "26 V.S.A. § 2211", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "3.2"
+            label: "Material-fact disclosure to buyers; misrepresentation"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "3 V.S.A. § 129a"]
+          - id: "3.3"
+            label: "Broker supervision of salespersons; brokerage firm duties; advertising"
+            items: null
+            statute_refs: ["26 V.S.A. § 2211", "26 V.S.A. § 2291", "26 V.S.A. § 2299", "3 V.S.A. § 129a", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+      - id: "4"
+        label: "Unprofessional conduct, discipline, and penalties"
+        items: 10
+        subtopics:
+          - id: "4.1"
+            label: "Profession-specific unprofessional conduct"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "26 V.S.A. § 2214"]
+          - id: "4.2"
+            label: "General OPR unprofessional conduct and disciplinary process"
+            items: null
+            statute_refs: ["3 V.S.A. § 129a", "3 V.S.A. § 129", "3 V.S.A. § 130a", "26 V.S.A. § 2253"]
+          - id: "4.3"
+            label: "Unlicensed practice and criminal penalties"
+            items: null
+            statute_refs: ["26 V.S.A. § 2212", "26 V.S.A. § 2213", "3 V.S.A. § 127"]
+  broker:
+    scored_items: 40
+    pretest_items: null
+    domains:
+      - id: "1"
+        label: "Commission, OPR, and licensing framework"
+        items: 8
+        subtopics:
+          - id: "1.1"
+            label: "Definitions; activities requiring a license; exemptions"
+            items: null
+            statute_refs: ["26 V.S.A. § 2211", "26 V.S.A. § 2212", "26 V.S.A. § 2213", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "1.2"
+            label: "Real Estate Commission and OPR: composition, powers, procedures, fees"
+            items: null
+            statute_refs: ["26 V.S.A. § 2251", "26 V.S.A. § 2252", "26 V.S.A. § 2253", "26 V.S.A. § 2255", "3 V.S.A. § 123", "3 V.S.A. § 125", "3 V.S.A. § 129"]
+          - id: "1.3"
+            label: "Broker eligibility: experience, education, examination; nonresidents"
+            items: null
+            statute_refs: ["26 V.S.A. § 2291", "26 V.S.A. § 2292", "26 V.S.A. § 2292a", "26 V.S.A. § 2297", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "1.4"
+            label: "Renewal, continuing education, changes of name or location, display"
+            items: null
+            statute_refs: ["26 V.S.A. § 2293", "26 V.S.A. § 2294", "26 V.S.A. § 2295", "26 V.S.A. § 2299", "3 V.S.A. § 127", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+      - id: "2"
+        label: "Trust and escrow accounts; records"
+        items: 10
+        subtopics:
+          - id: "2.1"
+            label: "Deposit timing, separate accounts, Commission notice, inspection"
+            items: null
+            statute_refs: ["26 V.S.A. § 2214", "26 V.S.A. § 2296", "26 V.S.A. § 2252"]
+          - id: "2.2"
+            label: "Interest-bearing deposits and disbursement rules"
+            items: null
+            statute_refs: ["26 V.S.A. § 2214", "26 V.S.A. § 2252"]
+      - id: "3"
+        label: "Agency, disclosure, and brokerage management"
+        items: 12
+        subtopics:
+          - id: "3.1"
+            label: "Agency relationships and mandatory consumer disclosure"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "26 V.S.A. § 2211", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+          - id: "3.2"
+            label: "Material-fact disclosure to buyers; misrepresentation"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "3 V.S.A. § 129a"]
+          - id: "3.3"
+            label: "Supervising salespersons; firm operations; death of broker; advertising"
+            items: null
+            broker_only: true
+            statute_refs: ["26 V.S.A. § 2211", "26 V.S.A. § 2291", "26 V.S.A. § 2299", "3 V.S.A. § 129a", "Code Vt. R. 04-030-290 (Real Estate Commission Administrative Rules)"]
+      - id: "4"
+        label: "Unprofessional conduct, discipline, and penalties"
+        items: 10
+        subtopics:
+          - id: "4.1"
+            label: "Profession-specific unprofessional conduct"
+            items: null
+            statute_refs: ["26 V.S.A. § 2296", "26 V.S.A. § 2214"]
+          - id: "4.2"
+            label: "General OPR unprofessional conduct and disciplinary process"
+            items: null
+            statute_refs: ["3 V.S.A. § 129a", "3 V.S.A. § 129", "3 V.S.A. § 130a", "26 V.S.A. § 2253"]
+          - id: "4.3"
+            label: "Unlicensed practice and criminal penalties"
+            items: null
+            statute_refs: ["26 V.S.A. § 2212", "26 V.S.A. § 2213", "3 V.S.A. § 127"]
+references:
+  - title: "26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons"
+    publisher: "Vermont General Assembly (legislature.vermont.gov)"
+  - title: "3 V.S.A. Chapter 5, Subchapter 3 — Office of Professional Regulation (incl. § 129a Unprofessional conduct)"
+    publisher: "Vermont General Assembly (legislature.vermont.gov)"
+  - title: "Administrative Rules of the Vermont Real Estate Commission (Code Vt. R. 04-030-290)"
+    publisher: "Vermont Secretary of State, Office of Professional Regulation"
+notes: "PROVISIONAL COUNTS. Vermont publishes no state-exam content outline: PSI administers only the national exam (its Vermont bulletin is not publicly linked), and OPR administers the state exam inside the online application without publishing item counts, time, or pass score. The OPR FAQ answers 'Where do I find the state exam?' by pointing to the Statutes, Rules & Resources page, so the exam's subject matter is taken to be 26 V.S.A. ch. 41, the Commission's Administrative Rules, and the general OPR statute (3 V.S.A. § 129a). scored_items is set to a provisional 40 (a common state-portion length) with a 10/8/12/10 split weighted toward trust accounts, agency/disclosure, and unprofessional conduct — the topics the statute itself emphasizes; the state record's salesperson_exam.state_items remains null and unverified, so lint does not enforce equality. Replace these counts if OPR ever publishes the exam specification. GROUND TRUTH: 26 V.S.A. ch. 41 (28.7k chars) and 3 V.S.A. ch. 5 were ingested from legislature.vermont.gov (fetched with curl and converted locally; the pipeline's direct fetch fails on that site's TLS certificate). The Administrative Rules PDF and every other OPR PDF on outside.vermont.gov return an F5 WAF 'Error 403 - Forbidden' (site tn2-lon) to curl, WebFetch, and a real browser session on 2026-09-08, so the rules text is NOT cached; rule references are therefore given only at the whole-rule level (Code Vt. R. 04-030-290) alongside verified statute sections, and the pipeline will draft rule-dependent nodes from the statute text only until the rules can be ingested from an official copy."

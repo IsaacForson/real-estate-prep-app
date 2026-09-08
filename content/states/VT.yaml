@@ -1,0 +1,83 @@
+code: VT
+name: Vermont
+regulator:
+  name: "Vermont Real Estate Commission, Office of Professional Regulation (OPR), Vermont Secretary of State"
+  url: "https://sos.vermont.gov/real-estate-brokers-salespersons/"
+vendor: psi
+vendor_notes: "Split administration. OPR FAQ: 'PSI is the current provider of the national examinations for brokers and salespersons' (test-takers.psiexams.com/vtre; PSI began offering the Vermont exams online Dec 3, 2025). The Vermont STATE exam is no longer given by an exam vendor: 'As of February 27, 2021 the Vermont State Real Estate Examination for Brokers and Salespersons will no longer be administered through an exam service' and 'The state exam is now a part of the application process. You will receive a link within your online application.'"
+salesperson_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: null
+  retake_policy: null
+  calculator_policy: null
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: null
+prelicense_hours_salesperson: 40
+prelicense_hours_broker: 40
+statute_citation_root: "26 V.S.A. ch. 41 (§ 2211 et seq.), Real Estate Brokers and Salespersons"
+rules_citation_root: "Administrative Rules of the Vermont Real Estate Commission (Code Vt. R. 04-030-290)"
+statute_url: "https://legislature.vermont.gov/statutes/fullchapter/26/041"
+rules_url: "https://outside.vermont.gov/dept/sos/office_professional_regulation/professions/real_estate_broker_salesperson/real_estate_broker_salesperson_administrative_rules.pdf"
+bulletin_url: null
+exam_outline_url: null
+sources:
+  - url: "https://sos.vermont.gov/real-estate-brokers-salespersons/salesperson-broker-faqs"
+    used_for: [vendor, vendor_notes, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://sos.vermont.gov/real-estate-brokers-salespersons/"
+    used_for: [regulator, vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://sos.vermont.gov/real-estate-brokers-salespersons/forms-instructions/"
+    used_for: [vendor, vendor_notes]
+    accessed: 2026-09-08
+  - url: "https://sos.vermont.gov/real-estate-brokers-salespersons/statutes-rules-resources/"
+    used_for: [statute_citation_root, statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://legislature.vermont.gov/statutes/fullchapter/26/041"
+    used_for: [statute_citation_root, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://test-takers.psiexams.com/vtre"
+    used_for: [vendor, vendor_notes]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.national_items
+  - salesperson_exam.state_items
+  - salesperson_exam.total_items
+  - salesperson_exam.pretest_items
+  - salesperson_exam.time_minutes
+  - salesperson_exam.pass_score_national
+  - salesperson_exam.pass_score_state
+  - salesperson_exam.exam_fee_usd
+  - salesperson_exam.retake_policy
+  - salesperson_exam.calculator_policy
+  - broker_exam.national_items
+  - broker_exam.state_items
+  - broker_exam.total_items
+  - broker_exam.pretest_items
+  - broker_exam.time_minutes
+  - broker_exam.pass_score_national
+  - broker_exam.pass_score_state
+  - broker_exam.exam_fee_usd
+  - rules_citation_root
+  - bulletin_url
+  - exam_outline_url
+confidence: low
+last_verified: 2026-09-08
+notes: "Unusual structure: PSI administers only the NATIONAL exam; the Vermont state (jurisprudence) exam is self-administered by OPR inside the online license application (since Feb 27, 2021), so national and state are necessarily passed separately. OPR: 'OPR no longer accepts paper applications.' Broker exam format changed from simulation to multiple choice as of 10/1/2023 (OPR forms page). Pre-license: 26 V.S.A. § 2292 requires 'a course of instruction, approved by the Commission, of at least 40 hours' for salespersons and 'at least 40 hours' for brokers (plus 2 years' salesperson experience with at least 8 closed transactions); OPR FAQ confirms 40-hour courses. 26 V.S.A. § 2292a authorizes the Commission to use independent testing services. PSI's Vermont Candidate Information Bulletin is only reachable through the PSI test-taker portal (the /vtre landing page shows program notices but no public bulletin link; a search of PSI's public bulletin API did not surface a Vermont bulletin), and OPR's PDFs on outside.vermont.gov (administrative rules, exam notice, application instructions, salesperson state jurisprudence exam) returned WAF 403 errors from this network, so national-exam item counts, time, pass score, fee, and retake rules could not be confirmed from a primary source and are left null. The 'Code Vt. R. 04-030-290' rule number was seen only in secondary legal indexes (LII/Justia); the rules PDF itself (linked from the OPR statutes-rules page) could not be opened. legislature.vermont.gov presents a certificate that some fetchers reject, but the chapter loaded via curl."

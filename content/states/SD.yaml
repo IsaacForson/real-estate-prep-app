@@ -1,0 +1,53 @@
+code: SD
+name: South Dakota
+regulator:
+  name: "South Dakota Real Estate Commission, Department of Labor and Regulation"
+  url: "https://dlr.sd.gov/realestate/"
+vendor: psi
+vendor_notes: "South Dakota's entry-level license is 'Broker Associate' (there is no salesperson license); that exam is mapped to salesperson_exam. PSI Services LLC administers it (https://test-takers.psiexams.com/sdre). The national portion is PSI's national Broker exam, which includes scenario-based items scored 0, 1, or 2 points (90 items = 100 points). No separate upgrade exam for the 'Broker' license is described in the bulletin, so broker_exam is null."
+salesperson_exam:
+  national_items: 90
+  state_items: 52
+  total_items: 142
+  pretest_items: 10
+  time_minutes: 270
+  pass_score_national: "75% (of 100 points)"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 105
+  retake_policy: "Bulletin: 'The combined broker examination is divided into two (2) portions: general and state. Candidates who pass one (1) portion of the examination and fail the other need to retake only the section they failed. Candidates do not need to retake the entire combined exam.' 'It is not possible to make a new examination appointment on the same day you have taken an examination... A candidate who tests unsuccessfully on a Wednesday can call the next day, Thursday, and retest as soon as Friday.' Fee forfeited if not tested within 1 year of payment. License application must be submitted within 60 days of passing the last portion; Commission site adds that applications must be filed within two years of completing pre-licensing courses."
+  calculator_policy: "Bulletin lists 'handheld calculators' among prohibited electronic devices; it does not mention an on-screen calculator."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: null
+prelicense_hours_salesperson: 116
+prelicense_hours_broker: null
+statute_citation_root: "S.D. Codified Laws ch. 36-21A (Real Estate Licensing)"
+rules_citation_root: "S.D. Admin. R. art. 20:69 (Real Estate Commission)"
+statute_url: "https://sdlegislature.gov/Statutes/36-21A"
+rules_url: "https://sdlegislature.gov/Rules/Administrative/20:69"
+bulletin_url: "https://proctor2.psionline.com/programs/Instructions/SDRE.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://proctor2.psionline.com/programs/Instructions/SDRE.pdf"
+    used_for: [vendor, salesperson_exam, prelicense_hours_salesperson, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dlr.sd.gov/realestate/exam_information.aspx"
+    used_for: [vendor, salesperson_exam.exam_fee_usd, salesperson_exam.retake_policy, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://dlr.sd.gov/realestate/publications/license_law_book.pdf"
+    used_for: [statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+unverified: [broker_exam, prelicense_hours_broker]
+confidence: medium
+last_verified: 2026-09-08
+notes: "Bulletin (PSI, dated 10/1/2023) Examination Summary Table: Broker National 90 items (100 points), passing 75%, 150 minutes; State 52 items (52 points), passing 75%, 120 minutes. State outline: Duties and Powers of the Commission 4 items, Licensing Requirements 6 items, Statutory Requirements Governing Activities of Licensees 42 items (= 52). Experimental questions: 'a small number (5 to 10)' unscored items may be administered and count against exam time (pretest_items records the upper bound). FEE CONFLICT: the 10/2023 bulletin lists $98 (state or national, or combo), but the Commission's current Exam Information page says registration 'requires credit card payment of $105'; $105 is recorded as the current value. Pre-license: 116 classroom hours in a Commission-approved course of study (bulletin 'Requirements for Obtaining a South Dakota Real Estate Broker Associate License'). Education/experience hours for upgrading to the 'Broker' license were not found in the sources consulted. sdlegislature.gov pages are JavaScript-rendered; URLs follow the Legislature's standard statute/rule paths and the DLR license law book compiles SDCL 36-21A and ARSD 20:69."

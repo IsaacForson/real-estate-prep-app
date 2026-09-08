@@ -1,0 +1,56 @@
+code: MO
+name: Missouri
+regulator:
+  name: "Missouri Real Estate Commission (MREC), Division of Professional Registration, Dept. of Commerce and Insurance"
+  url: "https://pr.mo.gov/realestate.asp"
+vendor: psi
+vendor_notes: null
+salesperson_exam:
+  national_items: 100
+  state_items: 40
+  total_items: 140
+  pretest_items: "5-10 experimental questions; not scored but count against exam time"
+  time_minutes: 270
+  pass_score_national: "70%"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 52
+  retake_policy: "The handbook states no waiting period or attempt limit. 'The fee is $52 for the 2 examination portions, regardless if you take 1 or both examination portions. Examination retakes are $52 for 1 or both examination portions.' 'REGISTRATION FEES EXPIRE AFTER ONE YEAR OF REGISTERING.' Applicants must pass BOTH portions; 'If both portions of the exam are not passed at one sitting, the application for license must be submitted within six months of the first passing exam score', and the complete license application must be submitted within six months of completing the 48-hour pre-exam course. Licensees from another state take only the state portion."
+  calculator_policy: "'test takers are allowed to bring their own calculators providing they meet the following: Non programmable (no alpha keys), Non Solar, Non printing. Also, a system calculator is available for your use... within the actual test.' Test centers may lend a calculator if available."
+broker_exam:
+  national_items: 90
+  state_items: 75
+  total_items: 165
+  pretest_items: "5-10 experimental questions"
+  time_minutes: 270
+  pass_score_national: "75% (90 questions worth 100 points; some scored up to two points)"
+  pass_score_state: "75%"
+  pass_score_combined: null
+  grading: separate
+  exam_fee_usd: 52
+prelicense_hours_salesperson: 72
+prelicense_hours_broker: 48
+statute_citation_root: "Mo. Rev. Stat. ch. 339 (Real Estate Brokers and Salespersons)"
+rules_citation_root: "20 CSR 2250 (Missouri Real Estate Commission)"
+statute_url: "http://revisor.mo.gov/main/OneChapter.aspx?chapter=339"
+rules_url: "http://www.sos.mo.gov/adrules/csr/current/20csr/20csr.asp#20-2250"
+bulletin_url: "https://pr.mo.gov/boards/realestate/MOREP-handbook.pdf"
+exam_outline_url: null
+sources:
+  - url: "https://pr.mo.gov/boards/realestate/MOREP-handbook.pdf"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker, regulator]
+    accessed: 2026-09-08
+  - url: "https://pr.mo.gov/realestate-exam-information.asp"
+    used_for: [vendor, bulletin_url]
+    accessed: 2026-09-08
+  - url: "https://pr.mo.gov/realestate-rules-statutes.asp"
+    used_for: [statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://pr.mo.gov/boards/realestate/RuleBook.pdf"
+    used_for: [statute_citation_root, rules_citation_root]
+    accessed: 2026-09-08
+unverified: []
+confidence: high
+last_verified: 2026-09-08
+notes: "PSI 'Missouri Real Estate Commission Real Estate Candidate Handbook' dated 7/18/2024 (same document served at test-takers.psiexams.com/more). Time: national 150 minutes + state 120 minutes = 270 minutes for both levels. Salesperson national portion is 100 items (larger than the usual 80). Pre-license: 48-hour pre-exam salesperson course (must be completed on/before the exam date) PLUS the 24-hour Missouri Real Estate Practice (MREP) course before licensure (may be taken before or after the exam) — prelicense_hours_salesperson = 72 total. Broker: 48-hour pre-exam broker course plus an active Missouri salesperson license for 24 of the last 30 months; licensed attorneys are exempt from education. statute_url and rules_url are the links published on MREC's own 'Rules and Statutes' page (revisor.mo.gov and sos.mo.gov block automated fetches); MREC also publishes a combined 'Statutes and Rules' book (RuleBook.pdf, June 2023)."

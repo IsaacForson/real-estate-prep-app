@@ -1,0 +1,403 @@
+# Oregon state-portion blueprint. Oregon's entry-level license is Broker (mapped to
+# `salesperson`); Principal Broker is mapped to `broker`. Structure and counts from the PSI
+# Oregon Real Estate Candidate Information Bulletin; labels are our own paraphrases.
+id: state_OR
+vendor: psi
+title: "Oregon state-portion outline (internal blueprint)"
+source_document: "PSI Oregon Real Estate Agency Candidate Information Bulletin — Broker and Principal Broker License Examination state-section content outlines"
+source_url: "https://test-takers.psiexams.com/api/content/bulletin/3376"
+source_version_or_date: "Bulletin updated 1/1/2026"
+accessed: 2026-09-08
+copyright_note: "Structure and counts recorded for internal blueprint use; outline text not reproduced. Labels are our own paraphrases."
+exams:
+  salesperson:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "License law, licensing status, and discipline"
+        items: 6
+        subtopics:
+          - id: "1.1"
+            label: "Keeping, renewing, reinstating, and transferring a license"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.022", "Or. Rev. Stat. § 696.020", "Or. Rev. Stat. § 696.030", "Or. Admin. R. 863-014-0030", "Or. Admin. R. 863-014-0063", "Or. Admin. R. 863-014-0065", "Or. Admin. R. 863-020-0010"]
+          - id: "1.2"
+            label: "Violations, penalties, investigations, and hearings"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.301", "Or. Rev. Stat. § 696.396", "Or. Rev. Stat. § 696.990", "Or. Admin. R. 863-015-0081"]
+      - id: "2"
+        label: "Clients' funds and earnest money"
+        items: 3
+        subtopics:
+          - id: "2.1"
+            label: "Clients' trust account recordkeeping"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-015-0255", "Or. Admin. R. 863-015-0257", "Or. Admin. R. 863-015-0259", "Or. Admin. R. 863-015-0275"]
+          - id: "2.2"
+            label: "Receiving, holding, and releasing earnest money"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-015-0257", "Or. Admin. R. 863-015-0186"]
+      - id: "3"
+        label: "Agency law and agency rules"
+        items: 5
+        subtopics:
+          - id: "3.1"
+            label: "Disclosed limited agency"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.815", "Or. Admin. R. 863-015-0205", "Or. Admin. R. 863-015-0210"]
+          - id: "3.2"
+            label: "Affirmative duties owed by agents"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.805", "Or. Rev. Stat. § 696.810", "Or. Rev. Stat. § 696.800"]
+          - id: "3.3"
+            label: "Kinds of agency relationships"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.800", "Or. Rev. Stat. § 696.805", "Or. Rev. Stat. § 696.810", "Or. Admin. R. 863-015-0200"]
+          - id: "3.4"
+            label: "Disclosing agency relationships to parties"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.820", "Or. Rev. Stat. § 696.845", "Or. Admin. R. 863-015-0200", "Or. Admin. R. 863-015-0215"]
+      - id: "4"
+        label: "Regulated brokerage activities and broker relationships"
+        items: 12
+        subtopics:
+          - id: "4.1"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0125", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0143"]
+          - id: "4.2"
+            label: "Broker price opinions and CMAs"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.010", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0125"]
+          - id: "4.3"
+            label: "Handling offers to purchase"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0135", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0250"]
+          - id: "4.4"
+            label: "Listing agreements and buyer agreements"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0130", "Or. Admin. R. 863-015-0133", "Or. Rev. Stat. § 696.301"]
+          - id: "4.5"
+            label: "Licensee acting as a principal"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0145", "Or. Rev. Stat. § 696.301"]
+          - id: "4.6"
+            label: "Compensation rules and prohibited payments"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.290", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-050-0052"]
+          - id: "4.7"
+            label: "Employment and independent-contractor arrangements"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.022", "Or. Admin. R. 863-014-0063", "Or. Admin. R. 863-015-0140"]
+          - id: "4.8"
+            label: "Registered business names"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.200", "Or. Admin. R. 863-014-0095", "Or. Admin. R. 863-014-0097"]
+          - id: "4.9"
+            label: "Principal broker supervision of associated licensees"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0140", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-014-0063"]
+      - id: "5"
+        label: "Transaction documents and recordkeeping"
+        items: 5
+        subtopics:
+          - id: "5.1"
+            label: "Deadlines to deliver documents to the principal broker"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0250"]
+          - id: "5.2"
+            label: "Principal broker document review timing"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0250", "Or. Admin. R. 863-015-0140"]
+          - id: "5.3"
+            label: "Record retention and storage"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.280", "Or. Admin. R. 863-015-0260"]
+          - id: "5.4"
+            label: "Rules for particular record types"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0250", "Or. Admin. R. 863-015-0259", "Or. Admin. R. 863-015-0275"]
+      - id: "6"
+        label: "Property management"
+        items: 4
+        subtopics:
+          - id: "6.1"
+            label: "Property management agreements and ending them"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0020", "Or. Rev. Stat. § 696.010"]
+          - id: "6.2"
+            label: "Property management records and receipts"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0090", "Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-025-0045"]
+          - id: "6.3"
+            label: "Residential landlord-tenant law and rent stabilization"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 90.100", "Or. Rev. Stat. § 90.300", "Or. Rev. Stat. § 90.323", "Or. Rev. Stat. § 90.427", "Or. Rev. Stat. § 90.600"]
+          - id: "6.4"
+            label: "Property manager duties"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0015", "Or. Admin. R. 863-025-0125", "Or. Rev. Stat. § 696.301"]
+      - id: "7"
+        label: "Other Oregon statutes affecting real estate"
+        items: 15
+        subtopics:
+          - id: "7.1"
+            label: "Property assessment and taxation"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 308.146", "Or. Rev. Stat. § 308.232", "Or. Rev. Stat. § 311.505"]
+          - id: "7.2"
+            label: "Subdivisions and partitions"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 92.010", "Or. Rev. Stat. § 92.025", "Or. Rev. Stat. § 92.305"]
+          - id: "7.3"
+            label: "Water rights"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 537.110", "Or. Rev. Stat. § 537.130", "Or. Rev. Stat. § 540.510"]
+          - id: "7.4"
+            label: "Construction liens"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 87.010", "Or. Rev. Stat. § 87.035", "Or. Rev. Stat. § 87.093"]
+          - id: "7.5"
+            label: "State housing discrimination law"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 659A.421"]
+          - id: "7.6"
+            label: "Trust deeds"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 86.705", "Or. Rev. Stat. § 86.752", "Or. Rev. Stat. § 86.771", "Or. Rev. Stat. § 86.795"]
+          - id: "7.7"
+            label: "Statewide land use planning"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 197.005", "Or. Rev. Stat. § 197.175", "Or. Rev. Stat. § 215.203"]
+          - id: "7.8"
+            label: "Seller property disclosure and stigmatized property"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 105.462", "Or. Rev. Stat. § 105.464", "Or. Rev. Stat. § 105.465", "Or. Rev. Stat. § 105.475", "Or. Rev. Stat. § 93.275"]
+          - id: "7.9"
+            label: "Farm and forest land"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 215.203", "Or. Rev. Stat. § 308A.050", "Or. Rev. Stat. § 30.930"]
+          - id: "7.10"
+            label: "Foreclosure and short sales"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 86.752", "Or. Rev. Stat. § 86.782", "Or. Rev. Stat. § 88.010"]
+          - id: "7.11"
+            label: "Condominiums, timeshares, and other common-interest ownership"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 100.005", "Or. Rev. Stat. § 100.660", "Or. Rev. Stat. § 94.803", "Or. Rev. Stat. § 94.550"]
+          - id: "7.12"
+            label: "Forms of ownership, including tenancy by the entirety"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 93.180", "Or. Rev. Stat. § 93.120"]
+          - id: "7.13"
+            label: "Manufactured homes"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 446.003", "Or. Rev. Stat. § 446.611", "Or. Rev. Stat. § 90.505"]
+          - id: "7.14"
+            label: "State environmental regulation"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 465.200", "Or. Rev. Stat. § 466.706", "Or. Rev. Stat. § 468B.005"]
+          - id: "7.15"
+            label: "Rectangular survey system as used in Oregon"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 92.010", "Or. Rev. Stat. § 209.250"]
+  broker:
+    scored_items: 50
+    pretest_items: "5-10"
+    domains:
+      - id: "1"
+        label: "License law, licensing status, and discipline"
+        items: 7
+        subtopics:
+          - id: "1.1"
+            label: "Keeping, renewing, reinstating, and transferring a license"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.022", "Or. Rev. Stat. § 696.020", "Or. Rev. Stat. § 696.030", "Or. Admin. R. 863-014-0030", "Or. Admin. R. 863-014-0063", "Or. Admin. R. 863-014-0065", "Or. Admin. R. 863-020-0010"]
+          - id: "1.2"
+            label: "Maintaining and renewing a registered business name"
+            items: null
+            broker_only: true
+            statute_refs: ["Or. Rev. Stat. § 696.200", "Or. Admin. R. 863-014-0095", "Or. Admin. R. 863-014-0097"]
+          - id: "1.3"
+            label: "Violations, penalties, investigations, and hearings"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.301", "Or. Rev. Stat. § 696.396", "Or. Rev. Stat. § 696.990", "Or. Admin. R. 863-015-0081"]
+      - id: "2"
+        label: "Clients' funds and earnest money"
+        items: 5
+        subtopics:
+          - id: "2.1"
+            label: "Opening and maintaining clients' trust accounts"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-015-0255"]
+          - id: "2.2"
+            label: "Clients' trust account recordkeeping"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0257", "Or. Admin. R. 863-015-0259", "Or. Admin. R. 863-015-0260"]
+          - id: "2.3"
+            label: "Reconciling clients' trust accounts"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0275", "Or. Admin. R. 863-015-0092"]
+          - id: "2.4"
+            label: "Receiving, holding, and releasing earnest money"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-015-0257", "Or. Admin. R. 863-015-0186"]
+      - id: "3"
+        label: "Agency law and agency rules"
+        items: 5
+        subtopics:
+          - id: "3.1"
+            label: "Disclosed limited agency"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.815", "Or. Admin. R. 863-015-0205", "Or. Admin. R. 863-015-0210"]
+          - id: "3.2"
+            label: "Affirmative duties owed by agents"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.805", "Or. Rev. Stat. § 696.810", "Or. Rev. Stat. § 696.800"]
+          - id: "3.3"
+            label: "Kinds of agency relationships"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.800", "Or. Rev. Stat. § 696.805", "Or. Rev. Stat. § 696.810", "Or. Admin. R. 863-015-0200"]
+          - id: "3.4"
+            label: "Disclosing agency relationships to parties"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.820", "Or. Rev. Stat. § 696.845", "Or. Admin. R. 863-015-0200", "Or. Admin. R. 863-015-0215"]
+      - id: "4"
+        label: "Regulated brokerage activities and broker relationships"
+        items: 8
+        subtopics:
+          - id: "4.1"
+            label: "Advertising rules"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0125", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0143"]
+          - id: "4.2"
+            label: "Broker price opinions and CMAs"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.010", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0125"]
+          - id: "4.3"
+            label: "Handling offers to purchase"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0135", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-015-0250"]
+          - id: "4.4"
+            label: "Listing agreements and buyer agreements"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0130", "Or. Admin. R. 863-015-0133", "Or. Rev. Stat. § 696.301"]
+          - id: "4.5"
+            label: "Licensee acting as a principal"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0145", "Or. Rev. Stat. § 696.301"]
+          - id: "4.6"
+            label: "Compensation rules and prohibited payments"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.290", "Or. Rev. Stat. § 696.301", "Or. Admin. R. 863-050-0052"]
+          - id: "4.7"
+            label: "Employment agreements with associated licensees"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.022", "Or. Admin. R. 863-014-0063", "Or. Admin. R. 863-015-0140"]
+          - id: "4.8"
+            label: "Registered business names"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.200", "Or. Admin. R. 863-014-0095", "Or. Admin. R. 863-014-0097"]
+      - id: "5"
+        label: "Transaction documents and recordkeeping"
+        items: 4
+        subtopics:
+          - id: "5.1"
+            label: "Deadlines to deliver documents to the principal broker"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0250"]
+          - id: "5.2"
+            label: "Record retention and storage"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 696.280", "Or. Admin. R. 863-015-0260"]
+          - id: "5.3"
+            label: "Rules for particular record types"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-015-0250", "Or. Admin. R. 863-015-0259", "Or. Admin. R. 863-015-0275"]
+      - id: "6"
+        label: "Property management"
+        items: 6
+        subtopics:
+          - id: "6.1"
+            label: "Property management agreements and ending them"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0020", "Or. Rev. Stat. § 696.010"]
+          - id: "6.2"
+            label: "Property management records and receipts"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0090", "Or. Rev. Stat. § 696.241", "Or. Admin. R. 863-025-0045"]
+          - id: "6.3"
+            label: "Residential landlord-tenant law and rent stabilization"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 90.100", "Or. Rev. Stat. § 90.300", "Or. Rev. Stat. § 90.323", "Or. Rev. Stat. § 90.427", "Or. Rev. Stat. § 90.600"]
+          - id: "6.4"
+            label: "Property manager duties"
+            items: null
+            statute_refs: ["Or. Admin. R. 863-025-0015", "Or. Admin. R. 863-025-0125", "Or. Rev. Stat. § 696.301"]
+      - id: "7"
+        label: "Other Oregon statutes affecting real estate"
+        items: 15
+        subtopics:
+          - id: "7.1"
+            label: "Property assessment and taxation"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 308.146", "Or. Rev. Stat. § 308.232", "Or. Rev. Stat. § 311.505"]
+          - id: "7.2"
+            label: "Subdivisions and partitions"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 92.010", "Or. Rev. Stat. § 92.025", "Or. Rev. Stat. § 92.305"]
+          - id: "7.3"
+            label: "Water rights"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 537.110", "Or. Rev. Stat. § 537.130", "Or. Rev. Stat. § 540.510"]
+          - id: "7.4"
+            label: "Construction liens"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 87.010", "Or. Rev. Stat. § 87.035", "Or. Rev. Stat. § 87.093"]
+          - id: "7.5"
+            label: "State housing discrimination law"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 659A.421"]
+          - id: "7.6"
+            label: "Trust deeds"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 86.705", "Or. Rev. Stat. § 86.752", "Or. Rev. Stat. § 86.771", "Or. Rev. Stat. § 86.795"]
+          - id: "7.7"
+            label: "Statewide land use planning"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 197.005", "Or. Rev. Stat. § 197.175", "Or. Rev. Stat. § 215.203"]
+          - id: "7.8"
+            label: "Seller property disclosure and stigmatized property"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 105.462", "Or. Rev. Stat. § 105.464", "Or. Rev. Stat. § 105.465", "Or. Rev. Stat. § 105.475", "Or. Rev. Stat. § 93.275"]
+          - id: "7.9"
+            label: "Farm and forest land"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 215.203", "Or. Rev. Stat. § 308A.050", "Or. Rev. Stat. § 30.930"]
+          - id: "7.10"
+            label: "Foreclosure and short sales"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 86.752", "Or. Rev. Stat. § 86.782", "Or. Rev. Stat. § 88.010"]
+          - id: "7.11"
+            label: "Condominiums, timeshares, and other common-interest ownership"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 100.005", "Or. Rev. Stat. § 100.660", "Or. Rev. Stat. § 94.803", "Or. Rev. Stat. § 94.550"]
+          - id: "7.13"
+            label: "Forms of ownership, including tenancy by the entirety"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 93.180", "Or. Rev. Stat. § 93.120"]
+          - id: "7.14"
+            label: "Manufactured homes"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 446.003", "Or. Rev. Stat. § 446.611", "Or. Rev. Stat. § 90.505"]
+          - id: "7.15"
+            label: "State environmental regulation"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 465.200", "Or. Rev. Stat. § 466.706", "Or. Rev. Stat. § 468B.005"]
+          - id: "7.16"
+            label: "Rectangular survey system as used in Oregon"
+            items: null
+            statute_refs: ["Or. Rev. Stat. § 92.010", "Or. Rev. Stat. § 209.250"]
+references: []
+notes: "Bulletin state-section outlines: Broker 6/3/5/12/5/4/15 = 50; Principal Broker 7/5/5/8/4/6/15 = 50; 5-10 unscored experimental items may be added. The bulletin's domains are unnumbered; ids 1-7 are ours, in bulletin order, and subtopic ids follow the bulletin's sub-list order (the Principal Broker list in domain 7 skips item 12, so subtopic 7.12 is intentionally absent there). Subtopic counts are not published. Grounding: ORS chapter 696 and OAR chapter 863 are the citation roots; oregonlegislature.gov (ORS text) and the Secretary of State OARD site (OAR 863) refused scripted fetches from this environment, so the cached OAR text is the Agency's official permanent-rule filing implementing HB 3137 (Oct. 9, 2025; effective Jan. 1, 2026), which reprints most of OAR 863 divisions 14, 15, 20, 22, 24 and 25. ORS 696 and the related-statute chapters in domain 7 (ORS 86, 87, 90, 92, 93, 94, 100, 105, 197, 215, 308, 311, 446, 465, 537, 659A) are not yet cached."

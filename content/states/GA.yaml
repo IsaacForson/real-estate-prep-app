@@ -1,0 +1,70 @@
+code: GA
+name: Georgia
+regulator:
+  name: "Georgia Real Estate Commission (GREC)"
+  url: "https://grec.state.ga.us/"
+vendor: psi
+vendor_notes: "PSI Services LLC administers the exam and also issues the license at the test center after passing (program page https://test-takers.psiexams.com/gare)."
+salesperson_exam:
+  national_items: 100
+  state_items: 52
+  total_items: 152
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: 175
+  retake_policy: "Bulletin (7/1/2026): 'It is not possible to make a new examination appointment on the same day you have taken an examination... A candidate who tests unsuccessfully on a Wednesday can call the next day, Thursday, and retest as soon as Friday, depending upon space availability.' Exam fees are non-refundable; the fee is forfeited if you do not test within 1 year of PSI receiving it. A passing candidate must apply for the license within 12 months of passing or retake the exam. Whether only a failed portion is retaken is not stated in the bulletin text."
+  calculator_policy: "Bulletin: 'An online calculator will be available.' Handheld calculators are listed among prohibited electronic devices."
+broker_exam:
+  national_items: null
+  state_items: null
+  total_items: null
+  pretest_items: null
+  time_minutes: null
+  pass_score_national: null
+  pass_score_state: null
+  pass_score_combined: null
+  grading: null
+  exam_fee_usd: 175
+prelicense_hours_salesperson: 75
+prelicense_hours_broker: 60
+statute_citation_root: "O.C.G.A. § 43-40-1 et seq."
+rules_citation_root: "Ga. Comp. R. & Regs. r. 520-1-.01 et seq."
+statute_url: "https://grec.state.ga.us/information-research/license-law/"
+rules_url: "https://rules.sos.ga.gov/gac/520-1"
+bulletin_url: "https://test-takers.psiexams.com/api/content/bulletin/4672"
+exam_outline_url: null
+sources:
+  - url: "https://test-takers.psiexams.com/api/content/bulletin/4672"
+    used_for: [vendor, salesperson_exam, broker_exam, prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+  - url: "https://grec.state.ga.us/information-research/license-law/"
+    used_for: [statute_url, rules_url]
+    accessed: 2026-09-08
+  - url: "https://grec.state.ga.us/wp-content/uploads/pdfs/About/520-1-.04%20Obtaining%20a%20License%20%20For%20the%20Website.pdf"
+    used_for: [salesperson_exam]
+    accessed: 2026-09-08
+  - url: "https://rules.sos.ga.gov/gac/520-1"
+    used_for: [rules_url]
+    accessed: 2026-09-08
+unverified:
+  - salesperson_exam.time_minutes
+  - salesperson_exam.pass_score_national
+  - salesperson_exam.pass_score_state
+  - salesperson_exam.pass_score_combined
+  - salesperson_exam.grading
+  - salesperson_exam.pretest_items
+  - broker_exam.national_items
+  - broker_exam.state_items
+  - broker_exam.total_items
+  - broker_exam.time_minutes
+  - broker_exam.pass_score_national
+  - broker_exam.pass_score_state
+  - broker_exam.pass_score_combined
+  - broker_exam.grading
+confidence: medium
+last_verified: 2026-09-08
+notes: "The 7/1/2026 GREC/PSI bulletin contains no examination summary table (no per-portion item counts, time limits or passing scores). The item counts above (National 100, Georgia 52, total 152) are taken from the sample score report reproduced in the bulletin (NATIONAL SUBTOTAL 100, GEORGIA SUBTOTAL 52, total 152). GREC Rule 520-1-.04(3) states the minimum passing score 'shall be published prior to the administration of the examination' rather than fixing it in rule. Bulletin says 1-10 experimental (unscored) items, roughly 10% of the exam, may be added and count against time. The National Broker exam contains scenario-based items weighted 0/1/2 points. Georgia has reciprocity (no exam) for licensees examined in other states, except Florida residents, who must pass the Georgia Supplement Exam. Licenses are issued by PSI at the test center. O.C.G.A. has no stable official deep link; GREC's License Law page is used for statute_url."
