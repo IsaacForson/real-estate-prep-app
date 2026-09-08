@@ -1,0 +1,38 @@
+id: NAT-PV-VII-0121
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Truth in Lending Act, which transaction is a 'residential mortgage transaction'?
+options:
+  - A loan secured by the consumer's dwelling to consolidate existing unsecured debts
+  - A home equity line of credit secured by a dwelling the consumer already owns
+  - A loan to purchase a five-unit apartment building as an investment
+  - A loan secured by the consumer's dwelling to finance its acquisition or initial construction
+key: D
+explanation: Section 1602(x) defines a residential mortgage transaction as one in which a security
+  interest is created or retained against the consumer's dwelling 'to finance the acquisition or
+  initial construction of such dwelling.' Debt consolidation and equity-line loans do not finance
+  acquisition or initial construction, and 'dwelling' is limited to one-to-four family structures.
+citation:
+  source: 15 U.S.C. § 1602(x)
+  url: null
+  quoted_text: is created or retained against the consumer's dwelling to finance the acquisition or
+    initial construction of such dwelling
+  secondary: []
+terms:
+  - residential mortgage transaction
+  - dwelling
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

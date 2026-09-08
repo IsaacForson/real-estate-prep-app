@@ -1,0 +1,41 @@
+id: NAT-PV-VII-0123
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Four loans are each secured by the consumer's principal dwelling. Based solely on the APR and
+  points-and-fees triggers in TILA's high-cost mortgage definition, which loan would **NOT** be a
+  high-cost mortgage?
+options:
+  - A $30,000 transaction with points and fees equal to 6 percent of the transaction amount
+  - A first mortgage whose APR exceeds the average prime offer rate by 5.9 percentage points
+  - A first mortgage whose APR exceeds the average prime offer rate by 6.9 percentage points
+  - A junior mortgage whose APR exceeds the average prime offer rate by 8.7 percentage points
+key: B
+explanation: A first mortgage becomes high-cost only when its APR exceeds the average prime offer
+  rate by more than 6.5 percentage points, so a 5.9-point spread does not meet the trigger. The
+  junior mortgage exceeds its 8.5-point trigger, and a $30,000 transaction (being $20,000 or more)
+  is high-cost when points and fees exceed 5 percent of the transaction amount, which 6 percent
+  does.
+citation:
+  source: 15 U.S.C. § 1602(bb)(1)(A)
+  url: null
+  quoted_text: in the case of a transaction for $20,000 or more, 5 percent of the total transaction amount
+  secondary: []
+terms:
+  - high-cost mortgage
+  - points and fees
+  - subordinate mortgage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

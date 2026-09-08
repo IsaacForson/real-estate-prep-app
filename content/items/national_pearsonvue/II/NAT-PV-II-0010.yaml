@@ -1,0 +1,41 @@
+id: NAT-PV-II-0010
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Marta's one-year lease ended on March 31. She remained in the apartment without the landlord's
+  permission through April 10, when the landlord accepted her rent check for April. How is Marta's
+  occupancy best classified after the landlord accepts the check?
+options:
+  - A tenancy at sufferance subject to immediate eviction
+  - A tenancy at will terminable at the landlord's option
+  - A periodic tenancy requiring proper notice to terminate
+  - A tenancy for years ending the following March 31
+key: C
+explanation: A holdover tenant without consent is initially a tenant at sufferance, but when the
+  landlord accepts rent, a periodic tenancy is created—here month to month—which continues until
+  proper notice is given. The tenancy at sufferance ended once the landlord accepted the rent
+  payment.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 2.2
+  url: null
+  quoted_text: A holdover tenant who stays after the lease ends without consent has possession but no
+    right to it; the landlord may evict or, by accepting rent, create a periodic tenancy.
+  secondary: []
+terms:
+  - periodic estate
+  - estate at sufferance
+  - holdover tenant
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

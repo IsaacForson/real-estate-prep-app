@@ -1,0 +1,41 @@
+id: NAT-PV-VII-0125
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under RESPA, during what period after the effective date of a servicing transfer may a
+  borrower **NOT** be charged a late fee for a payment mistakenly sent to the transferor servicer
+  before its due date?
+options:
+  - A 30-day period beginning on the effective date of transfer
+  - A 15-day period beginning on the effective date of transfer
+  - A 90-day period beginning on the effective date of transfer
+  - A 60-day period beginning on the effective date of transfer
+key: D
+explanation: "Section 2605(d) protects borrowers for a 60-day period beginning on the effective date
+  of transfer: no late fee may be imposed and no payment may be treated as late if the payment is
+  received by the transferor servicer before its due date. The 30- and 15-day figures relate to
+  notice deadlines elsewhere in the section, not this protection."
+citation:
+  source: 12 U.S.C. § 2605(d)
+  url: null
+  quoted_text: During the 60-day period beginning on the effective date of transfer of the servicing
+    of any federally related mortgage loan, a late fee may not be imposed on the borrower
+  secondary: []
+terms:
+  - late fee
+  - servicing transfer
+  - escrow
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

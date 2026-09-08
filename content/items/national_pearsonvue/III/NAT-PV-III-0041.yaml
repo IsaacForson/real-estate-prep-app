@@ -1,0 +1,45 @@
+id: NAT-PV-III-0041
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A small apartment building produces net operating income of $72,000 per year. Comparable sales
+  indicate an overall capitalization rate of 9 percent. Using direct capitalization, what is the
+  indicated value of the property?
+options:
+  - $900,000
+  - $864,000
+  - $720,000
+  - $800,000
+key: D
+explanation: Direct capitalization uses V = I ÷ R, where I is annual NOI and R is the overall
+  capitalization rate as a decimal. Here, $72,000 ÷ 0.09 = $800,000. Multiplying NOI by the rate
+  ($6,480) or dividing by the wrong rate reflects a misunderstanding of the IRV relationship.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.3
+  url: null
+  quoted_text: Income, rate, and value are linked by I = R × V, so V = I ÷ R (the appraiser's formula)
+    and R = I ÷ V (how a rate is extracted from a sale).
+  secondary: []
+math:
+  worked_solution: V = I ÷ R = $72,000 ÷ 0.09 = $800,000.
+  formulas:
+    - V = I ÷ R
+  onscreen_calculator_only: false
+terms:
+  - direct capitalization
+  - net operating income
+  - capitalization rate
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

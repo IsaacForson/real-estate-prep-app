@@ -29,8 +29,8 @@ broker_exam:
   pass_score_combined: null
   grading: separate
   exam_fee_usd: 58
-prelicense_hours_salesperson: null
-prelicense_hours_broker: null
+prelicense_hours_salesperson: 180
+prelicense_hours_broker: 900
 statute_citation_root: "Tex. Occ. Code ch. 1101 (The Real Estate License Act)"
 rules_citation_root: "22 Tex. Admin. Code pt. 23, chs. 531–543 (TREC rules)"
 statute_url: "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm"
@@ -47,7 +47,10 @@ sources:
   - url: "https://www.pearsonvue.com/us/en/tx/realestate.html"
     used_for: [vendor, bulletin_url, exam_outline_url]
     accessed: 2026-09-08
-unverified: [prelicense_hours_salesperson, prelicense_hours_broker]
+  - url: "https://texas-sos.appianportalsgov.com/rules-and-meetings?interface=VIEW_TAC&title=22&part=23&chapter=535&subchapter=E"
+    used_for: [prelicense_hours_salesperson, prelicense_hours_broker]
+    accessed: 2026-09-08
+unverified: []
 confidence: medium
 last_verified: 2026-09-08
-notes: "Handbook 'Available Exams and Time Allotted' (items = scored + pretest): Sales National 85 items 150 min $58; Sales State 50 items 90 min $58; Both 125 items 240 min $58. Broker National 85 / 150 min; State 60 / 90 min; Both 145 / 240 min; $58. Outlines: national 80 scored + 5 pretest (effective March 1, 2025); Texas Sales Agent state law 40 scored + 10 pretest (effective January 1, 2026); Texas Broker state law 50 scored + 5-10 pretest (effective April 15, 2020; includes 10 case-study items). 'Each candidate will be given 240 minutes or 4 hours (total includes State and National portion)'. Passing is a raw score: sales 56 national / 28 state; broker 60 national / 38 state. The exam fee is $58 whether one or both portions are scheduled. Fingerprinting via IDEMIA is required under Tex. Occ. Code § 1101.3521. Pre-license (qualifying education) hours are NOT recorded because the primary sources that state them (trec.texas.gov 'Become Licensed – Sales Agent', Tex. Occ. Code §§ 1101.356/1101.358, 22 TAC § 535.55) refused automated connections from this environment; the handbook does not state the base requirement. The statutes.capitol.texas.gov and trec.texas.gov URLs above are the official locations even though they could not be fetched here."
+notes: "Handbook 'Available Exams and Time Allotted' (items = scored + pretest): Sales National 85 items 150 min $58; Sales State 50 items 90 min $58; Both 125 items 240 min $58. Broker National 85 / 150 min; State 60 / 90 min; Both 145 / 240 min; $58. Outlines: national 80 scored + 5 pretest (effective March 1, 2025); Texas Sales Agent state law 40 scored + 10 pretest (effective January 1, 2026); Texas Broker state law 50 scored + 5-10 pretest (effective April 15, 2020; includes 10 case-study items). 'Each candidate will be given 240 minutes or 4 hours (total includes State and National portion)'. Passing is a raw score: sales 56 national / 28 state; broker 60 national / 38 state. The exam fee is $58 whether one or both portions are scheduled. Fingerprinting via IDEMIA is required under Tex. Occ. Code § 1101.3521. Pre-license (qualifying education) hours from the official TAC text (Texas SOS TAC viewer, as in effect 2026-09-08): 22 TAC § 535.55(a) — sales agent applicant must complete 180 hours of qualifying courses (60 Principles, 30 Agency, 30 Contracts, 30 Promulgated Forms, 30 Finance); 22 TAC § 535.56(a)(1) — broker applicant must complete 270 hours of qualifying courses plus 630 classroom hours of related education (900 total, including the 6-hour Broker Responsibility Course), with 4 years' active experience (Tex. Occ. Code § 1101.356; § 1101.358 states the sales agent requirement as 12 semester hours or equivalent classroom hours). The statutes.capitol.texas.gov and trec.texas.gov URLs above are the official locations even though they could not be fetched here."

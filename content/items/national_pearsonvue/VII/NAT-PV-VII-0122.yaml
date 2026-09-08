@@ -1,0 +1,51 @@
+id: NAT-PV-VII-0122
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A consumer obtains a $180,000 first mortgage on her principal dwelling. At consummation, the
+  loan's annual percentage rate is 11.9%, while the average prime offer rate for a comparable
+  transaction is 5.2%. Under TILA's high-cost mortgage definition, this loan is:"
+options:
+  - A high-cost mortgage, because its APR exceeds the average prime offer rate by more than 6.5
+    percentage points
+  - Not a high-cost mortgage, because first mortgages are exempt from the APR trigger
+  - A high-cost mortgage, because its APR exceeds the average prime offer rate by more than 8.5
+    percentage points
+  - Not a high-cost mortgage, because the loan amount exceeds $50,000
+key: A
+explanation: The spread is 11.9% − 5.2% = 6.7 percentage points. Under § 1602(bb)(1)(A)(i)(I), a
+  first mortgage on the principal dwelling is a high-cost mortgage if the APR exceeds the average
+  prime offer rate by more than 6.5 percentage points; 6.7 points exceeds that threshold. The
+  8.5-point trigger applies to subordinate or junior mortgages, not first mortgages.
+citation:
+  source: 15 U.S.C. § 1602(bb)(1)(A)(i)(I)
+  url: null
+  quoted_text: the annual percentage rate at consummation of the transaction will exceed by more than
+    6.5 percentage points
+  secondary: []
+math:
+  worked_solution: APR spread = 11.9% − 5.2% = 6.7 percentage points. First-mortgage trigger = more
+    than 6.5 percentage points above the average prime offer rate. 6.7 > 6.5, so the loan is a
+    high-cost mortgage.
+  formulas:
+    - APR spread = loan APR − average prime offer rate
+    - High-cost if spread > 6.5 percentage points (first mortgage)
+  onscreen_calculator_only: false
+terms:
+  - high-cost mortgage
+  - annual percentage rate
+  - average prime offer rate
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

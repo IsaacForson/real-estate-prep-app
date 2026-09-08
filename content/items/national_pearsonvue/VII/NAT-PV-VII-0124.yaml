@@ -1,0 +1,39 @@
+id: NAT-PV-VII-0124
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under RESPA, when the servicing of a federally related mortgage loan is transferred, within
+  what period must the transferor servicer generally notify the borrower in writing of the transfer?
+options:
+  - Not less than 30 days before the effective date of transfer
+  - Not more than 30 days after the effective date of transfer
+  - Not less than 15 days before the effective date of transfer
+  - Not more than 15 days after the effective date of transfer
+key: C
+explanation: Section 2605(b)(2)(A) requires the transferor servicer's notice to be made not less
+  than 15 days before the effective date of transfer. The 15-days-after deadline applies to the
+  transferee servicer's notice under subsection (c), not the transferor's.
+citation:
+  source: 12 U.S.C. § 2605(b)(2)(A)
+  url: null
+  quoted_text: the notice required under paragraph (1) shall be made to the borrower not less than 15
+    days before the effective date of transfer of the servicing of the mortgage loan
+  secondary: []
+terms:
+  - servicing transfer
+  - transferor servicer
+  - notice
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

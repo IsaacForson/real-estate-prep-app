@@ -6,6 +6,9 @@ import { buildPlan } from "~~/lib/study/plan";
 const settings = useSettings();
 const study = useStudy();
 const router = useRouter();
+const freeTier = useFreeTier();
+const entitlement = useEntitlement();
+const gateHit = ref(false);
 const banks = ref<{ national: string | null; state: string | null }>({ national: null, state: null });
 const pipelines = ref<Record<string, Pipeline>>({});
 const cover = ref<Record<string, NodeCoverage[] | null>>({});
@@ -29,9 +32,15 @@ onMounted(async () => {
 async function practice(kind: "practice" | "drill") {
   const bs = [banks.value.national, banks.value.state].filter((b): b is string => !!b);
   const s = await study.startSession(kind, { banks: bs });
-  if (!s.itemIds.length) { alert(kind === "drill" ? "No leeches yet — nothing to drill." : "No questions available for this state yet."); return; }
+  if (!s.itemIds.length) {
+    await study.endSession(s);
+    if (kind === "practice" && freeTier.exhausted.value) { gateHit.value = true; return; }
+    alert(kind === "drill" ? "No leeches yet — nothing to drill." : "No questions available for this state yet.");
+    return;
+  }
   router.push("/study/practice");
 }
+async function ackSharing() { settings.set("sharingNoticeAck", true); await entitlement.ackSharingNotice(); }
 </script>
 <template>
   <div>
@@ -47,7 +56,8 @@ async function practice(kind: "practice" | "drill") {
       </div>
     </div>
     <div v-if="active" class="card"><strong>Resume</strong> your {{ active.kind }} session at question {{ active.position + 1 }} of {{ active.itemIds.length }}. <NuxtLink :to="active.kind === 'mock' ? '/study/mock/run' : '/study/practice'">Continue →</NuxtLink></div>
-    <p v-if="!settings.sharingNoticeAck" class="notice">Your readiness score assumes one person is answering. Sharing this account will make it inaccurate. <button @click="settings.set('sharingNoticeAck', true)">Got it</button></p>
+    <FreeTierGate :variant="gateHit ? 'block' : 'banner'" />
+    <p v-if="!settings.sharingNoticeAck" class="notice">Your readiness score assumes one person is answering. Sharing this account will make it inaccurate. <button @click="ackSharing">Got it</button></p>
     <p v-if="loading" class="muted">Loading…</p>
     <PlanCard v-else :plan="plan" />
     <template v-for="(bank, portion) in banks" :key="portion">

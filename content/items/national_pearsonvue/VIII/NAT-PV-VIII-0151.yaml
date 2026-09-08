@@ -1,0 +1,48 @@
+id: NAT-PV-VIII-0151
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Two cooperating brokerages arrange a 6% total commission on a $380,000 sale, with 3.6% to the
+  listing side and 2.4% to the selling side. Compared with a 50/50 split of the same total
+  commission, how does the selling brokerage's share change?
+options:
+  - It stays the same
+  - It decreases by $1,140
+  - It decreases by $2,280
+  - It increases by $2,280
+key: C
+explanation: A 50/50 split gives the selling side 380,000 × 0.03 = $11,400, while a 2.4% allocation
+  gives 380,000 × 0.024 = $9,120, a decrease of $2,280. The $1,140 figure comes from halving the
+  difference again, but the full 0.6% rate difference applies to the entire price, so the change is
+  380,000 × 0.006 = $2,280.
+citation:
+  source: REP Ref. Real Estate Math § 4.1
+  url: null
+  quoted_text: When two brokerages cooperate, the total is split as the listing agreement or MLS offer
+    provides, often but not always 50/50.
+  secondary: []
+math:
+  worked_solution: "50/50 split: selling side = 380,000 × 0.06 ÷ 2 = 380,000 × 0.03 = 11,400. Unequal
+    split: selling side = 380,000 × 0.024 = 9,120. Difference = 11,400 − 9,120 = $2,280 decrease."
+  formulas:
+    - commission = sale price × rate
+    - side share = price × allocated rate
+  onscreen_calculator_only: false
+terms:
+  - co-op split
+  - commission rate
+  - selling brokerage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -1,0 +1,38 @@
+id: NAT-PV-IV-0057
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "A tenant transfers the entire remaining term of a lease to another person. Under general
+  leasing principles, this transfer is:"
+options:
+  - a surrender, which terminates the original tenant's liability
+  - a novation, which releases the original tenant from the lease
+  - a sublease, because the original tenant remains liable to the landlord
+  - an assignment, making the transferee the landlord's tenant
+key: D
+explanation: Transferring the entire remaining term is an assignment; the assignee becomes the
+  landlord's tenant, though the original tenant stays liable absent a release. A sublease transfers
+  less than the entire interest, so calling this a sublease is the tempting error.
+citation:
+  source: REP Ref. Contracts § 12.4
+  url: null
+  quoted_text: When a tenant transfers the *entire* remaining term to another, that is an
+    **assignment**; the assignee becomes the landlord's tenant
+  secondary: []
+terms:
+  - assignment
+  - sublease
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

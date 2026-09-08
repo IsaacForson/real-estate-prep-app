@@ -19,15 +19,18 @@ export interface ProviderConfig {
   maxInputTokens: number;
   rpm: number;
   jsonMode: boolean;
+  /** Max in-flight requests across all keys of this provider (free tiers often cap concurrency per account). */
+  maxConcurrent: number;
 }
 
-const DEFAULTS: Record<string, Omit<ProviderConfig, "keys" | "name">> = {
+const DEFAULTS: Record<string, Omit<ProviderConfig, "keys" | "name" | "maxConcurrent"> & { maxConcurrent?: number }> = {
   groq: { baseUrl: "https://api.groq.com/openai/v1", model: "openai/gpt-oss-120b", altModels: ["qwen/qwen3.8-27b"], maxInputTokens: 7000, rpm: 30, jsonMode: true },
   cerebras: { baseUrl: "https://api.cerebras.ai/v1", model: "gpt-oss-120b", altModels: ["qwen-3.8-27b", "gemma-4-31b"], maxInputTokens: 50000, rpm: 30, jsonMode: true },
   mistral: { baseUrl: "https://api.mistral.ai/v1", model: "mistral-medium-latest", altModels: ["magistral-medium-latest", "mistral-small-latest"], maxInputTokens: 100000, rpm: 60, jsonMode: true },
   deepseek: { baseUrl: "https://api.deepseek.com/v1", model: "deepseek-v4-pro", altModels: ["deepseek-v4-flash"], maxInputTokens: 100000, rpm: 60, jsonMode: true },
-  // deepseek-v4-pro on NVIDIA hangs (no response in 150 s); kimi-k3 answers in seconds but is a reasoning model (needs output budget).
-  nvidia: { baseUrl: "https://integrate.api.nvidia.com/v1", model: "moonshotai/kimi-k3", altModels: ["mistralai/mistral-large-2-instruct", "nvidia/nemotron-3-ultra-550b-a55b", "openai/gpt-oss-20b"], maxInputTokens: 100000, rpm: 40, jsonMode: true },
+  // deepseek-v4-pro on NVIDIA hangs; kimi-k3 is strong but a slow reasoning model (80–150 s per drafting call).
+  // minimax-m3 answers in ~3 s and nemotron-3-super in ~7 s; kimi-k3 stays as the verifier default (see VERIFY_NVIDIA_MODEL).
+  nvidia: { baseUrl: "https://integrate.api.nvidia.com/v1", model: "minimaxai/minimax-m3", altModels: ["nvidia/nemotron-3-super-120b-a12b", "moonshotai/kimi-k3", "openai/gpt-oss-20b"], maxInputTokens: 100000, rpm: 40, jsonMode: true, maxConcurrent: 2 },
 };
 
 function keysFor(name: string): string[] {
@@ -38,7 +41,11 @@ function keysFor(name: string): string[] {
   return [...new Set(list)];
 }
 
-export function loadProviders(): ProviderConfig[] {
+/**
+ * `role` selects per-role model overrides from .env, e.g. VERIFY_NVIDIA_MODEL=moonshotai/kimi-k3,
+ * so verification can use a slower, stronger model than drafting.
+ */
+export function loadProviders(role?: string): ProviderConfig[] {
   loadEnv();
   const order = (process.env.LLM_PROVIDER_ORDER ?? "groq,cerebras,mistral,deepseek,nvidia").split(",").map((s) => s.trim()).filter(Boolean);
   const out: ProviderConfig[] = [];
@@ -50,9 +57,10 @@ export function loadProviders(): ProviderConfig[] {
     const U = name.toUpperCase();
     out.push({
       name, keys, baseUrl: process.env[`${U}_BASE_URL`] ?? d.baseUrl,
-      model: process.env[`${U}_MODEL`] ?? d.model, altModels: d.altModels,
+      model: (role && process.env[`${role.toUpperCase()}_${U}_MODEL`]) || process.env[`${U}_MODEL`] || d.model, altModels: d.altModels,
       maxInputTokens: Number(process.env[`${U}_MAX_INPUT_TOKENS`] ?? d.maxInputTokens),
       rpm: Number(process.env[`${U}_RPM`] ?? d.rpm), jsonMode: d.jsonMode,
+      maxConcurrent: Number(process.env[`${U}_MAX_CONCURRENT`] ?? d.maxConcurrent ?? 4),
     });
   }
   return out;

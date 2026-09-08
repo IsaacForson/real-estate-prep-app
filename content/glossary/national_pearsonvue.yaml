@@ -1,0 +1,44 @@
+bank: national_pearsonvue
+generated_on: 2026-09-08
+entries:
+  - term: agent
+    definition: An agent is a person authorized to act on behalf of a principal in dealings with third
+      parties, subject to the principal’s control.
+    source: REP Ref. Agency
+    quoted_text: Agency is a relationship in which one person (the agent) is authorized to act on behalf
+      of another (the principal) in dealings with third parties, and agrees to do so subject to the
+      principal's control.
+    related_terms: []
+    items:
+      - NAT-PV-VIII-0003
+    status: approved
+    model: groq/openai/gpt-oss-120b
+    reviewer: qa-lead-model
+  - term: commission
+    definition: Commission means the Federal Trade Commission unless another meaning is specified.
+    source: 15 U.S.C. §§ 1601–1667f (TILA)
+    quoted_text: (1) Commission .—Unless otherwise specified, the term "Commission" means the Federal
+      Trade Commission.
+    related_terms: []
+    items:
+      - NAT-PV-VIII-0003
+    status: rejected
+    model: groq/openai/gpt-oss-120b
+    reviewer: qa-lead-model
+    reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
+      commission and split as brokerage compensation"
+  - term: split
+    definition: A split is a portion or percentage of a charge for a real‑estate settlement service that
+      is given or received without actual services performed, which is prohibited.
+    source: 12 U.S.C. §§ 2601–2617 (RESPA) — §2607. Prohibition against kickbacks and unearned fees
+    quoted_text: No person shall give and no person shall accept any portion, split, or percentage of
+      any charge made or received for the rendering of a real estate settlement service... other
+      than for services actually performed.
+    related_terms: []
+    items:
+      - NAT-PV-VIII-0003
+    status: rejected
+    model: groq/openai/gpt-oss-120b
+    reviewer: qa-lead-model
+    reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
+      commission and split as brokerage compensation"

@@ -1,0 +1,46 @@
+id: NAT-PV-VIII-0182
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.F
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Property A and Property B each produce net operating income of $60,000 per year. The
+  appropriate capitalization rate for Property A is 6% and for Property B is 7.5%. Which statement
+  about their indicated values is correct?
+options:
+  - Both properties are worth $900,000 because their incomes are identical
+  - Property A is worth $800,000 and Property B is worth $1,000,000
+  - Property A is worth $1,000,000 and Property B is worth $900,000
+  - Property A is worth $1,000,000 and Property B is worth $800,000
+key: D
+explanation: "Value = NOI ÷ rate, so Property A is 60,000 ÷ 0.06 = $1,000,000 and Property B is
+  60,000 ÷ 0.075 = $800,000. Value moves inversely to the rate: the higher cap rate produces the
+  lower value for the same income. The option reversing the two values contradicts this inverse
+  relationship."
+citation:
+  source: REP Ref. Real Estate Math § 7.2
+  url: null
+  quoted_text: "Value = Income ÷ Rate; Rate = Income ÷ Value. Income means NOI. Value moves inversely
+    to the rate: a higher cap rate produces a lower value for the same income."
+  secondary: []
+math:
+  worked_solution: "Property A: 60,000 ÷ 0.06 = 1,000,000. Property B: 60,000 ÷ 0.075 = 800,000."
+  formulas:
+    - Value = NOI ÷ capitalization rate
+  onscreen_calculator_only: false
+terms:
+  - capitalization rate
+  - net operating income
+  - value
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

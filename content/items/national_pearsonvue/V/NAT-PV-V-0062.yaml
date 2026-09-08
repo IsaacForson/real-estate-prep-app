@@ -1,0 +1,39 @@
+id: NAT-PV-V-0062
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A broker receives an earnest money deposit from a buyer. Where must these funds be held?
+options:
+  - In the firm's operating account if the funds are withdrawn at closing
+  - In the buyer's attorney's investment account until the closing statement is prepared
+  - In a designated trust or escrow account separate from the firm's operating funds
+  - In the broker's personal account until the transaction closes
+key: C
+explanation: Money a brokerage receives that belongs to others, including earnest money, is trust
+  money and must be held in a designated trust or escrow account separate from the firm's operating
+  funds. Depositing it into the operating account would be commingling, which is grounds for
+  discipline.
+citation:
+  source: REP Ref. Brokerage Practice § 10.1
+  url: null
+  quoted_text: is trust money and must be held in a designated trust or escrow account separate from
+    the firm's operating funds
+  secondary: []
+terms:
+  - trust account
+  - commingling
+  - earnest money
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

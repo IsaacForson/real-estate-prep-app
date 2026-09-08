@@ -1,0 +1,46 @@
+id: NAT-PV-VII-0118
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer with a decision credit score of 560 is purchasing a home with an FHA-insured loan. The
+  contract price is $240,000 and the appraised value is $236,000. What is the buyer's minimum
+  required investment?
+options:
+  - $8,260
+  - $23,600
+  - $8,400
+  - $24,000
+key: B
+explanation: "A score of 560 falls in the 500–579 band, so FHA requires 10% of the lesser of
+  appraised value ($236,000) or price ($240,000): 10% × $236,000 = $23,600. The $8,260 figure
+  incorrectly applies the 3.5% rate that is reserved for scores of 580 or above."
+citation:
+  source: REP Ref. Financing & Closing § 6.2
+  url: null
+  quoted_text: minimum required investment 3.5% of the lesser of appraised value or price for a
+    decision credit score of 580 or above, 10% for 500–579
+  secondary: []
+math:
+  worked_solution: Lesser of appraised value or price = min($236,000, $240,000) = $236,000. Score of
+    560 is in the 500–579 range, so the required investment is 10%. $236,000 × 0.10 = $23,600.
+  formulas:
+    - minimum investment = rate × min(appraised value, price)
+  onscreen_calculator_only: false
+terms:
+  - fha loan
+  - down payment
+  - loan-to-value
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

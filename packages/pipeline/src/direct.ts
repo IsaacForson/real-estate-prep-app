@@ -8,7 +8,7 @@
  */
 import { join } from "node:path";
 import { Item } from "@rep/schema";
-import { LlmRouter, chatJson, mapLimit, estimateTokens } from "@rep/llm";
+import { LlmRouter, chatJson, mapLimit, loadProviders } from "@rep/llm";
 import { CONFIG } from "./config.js";
 import { writeYaml, listFiles, readYaml } from "./fsx.js";
 import { loadStatutes, today } from "./statutes.js";
@@ -17,6 +17,8 @@ import { planBank, cognitiveMixFor, existingItems } from "./plan.js";
 import { DRAFT_SYSTEM, draftUserPrompt, VERIFY_SYSTEM, verifyUserPrompt } from "./prompts.js";
 import { DraftBatchSchema, bankMeta, nodeStatuteRefs, nextIdFactory, draftToItem } from "./draft.js";
 import { Verdict, localCheck, reject, jurOf } from "./verify.js";
+import { normalizeDraft } from "./normalize.js";
+import { needsBalancing, balanceItem } from "./balance.js";
 import { unlinkSync } from "node:fs";
 
 export const DIRECT = {
@@ -90,7 +92,7 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
   const stemsByNode = new Map<string, string[]>();
   for (const i of existing) { const k = i.blueprint_node; if (!stemsByNode.has(k)) stemsByNode.set(k, []); stemsByNode.get(k)!.push(i.stem); }
   const byProvider: Record<string, number> = {};
-  let written = 0, failed = 0;
+  let written = 0, failed = 0, balanced = 0;
   const results = await mapLimit(jobs, DIRECT.concurrency, async (j) => {
     const { statuteBlock, taskBlock } = draftUserPrompt({
       bank, jurisdictionName: meta.name, vendor: meta.vendor, target: { node: j.node, label: j.label, exam_items: j.examItems, target_bank_items: 0 }, count: j.count,
@@ -104,7 +106,11 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
     byProvider[`${result.provider}/${result.model}`] = (byProvider[`${result.provider}/${result.model}`] ?? 0) + 1;
     for (const d of data.items) {
       const id = nextId(j.node);
-      const item = draftToItem(d, { id, bank, node: j.node, model: `${result.provider}/${result.model}`, promptVersion: CONFIG.promptVersion, batchId: null });
+      let item = normalizeDraft(draftToItem(d, { id, bank, node: j.node, model: `${result.provider}/${result.model}`, promptVersion: CONFIG.promptVersion, batchId: null }), docs);
+      if (needsBalancing(item)) {
+        try { const b = await balanceItem(router, item, j.chunk); if (b.changed) { item = { ...b.item, version: 1 }; balanced++; } }
+        catch (e) { log(`  balance failed for ${id}: ${String(e).slice(0, 120)}`); }
+      }
       writeYaml(join(CONFIG.stateDir, "drafts", bank, `${id}.yaml`), item);
       stemsByNode.set(j.node, [...(stemsByNode.get(j.node) ?? []), d.stem]);
       written++;
@@ -112,6 +118,7 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
     log(`  ${j.node} chunk ${j.chunkIdx + 1}/${j.chunks}: ${data.items.length} items via ${result.provider}/${result.model} (${result.ms}ms)`);
   });
   for (const r of results) if (!r.ok) { failed++; log(`  FAILED request: ${String(r.error).slice(0, 300)}`); }
+  log(`distractors rebalanced on ${balanced} items (key was the longest option)`);
   return { requested, written, failed, byProvider, log: [] };
 }
 
@@ -119,7 +126,7 @@ export interface DirectVerifyResult { drafts: number; localRejected: number; ver
 
 export async function verifyDirect(bank: string, opts: { log?: (s: string) => void } = {}): Promise<DirectVerifyResult> {
   const log = opts.log ?? ((s: string) => console.log(s));
-  const router = new LlmRouter(); router.log = log;
+  const router = new LlmRouter(loadProviders("verify")); router.log = log; // VERIFY_<PROVIDER>_MODEL overrides
   const drafts = listFiles(join(CONFIG.stateDir, "drafts", bank), ".yaml");
   if (!drafts.length) throw new Error(`no drafts for ${bank}`);
   const jur = jurOf(bank);
@@ -131,7 +138,7 @@ export async function verifyDirect(bank: string, opts: { log?: (s: string) => vo
   for (const path of drafts) {
     const parsed = Item.safeParse(readYaml(path));
     if (!parsed.success) { log(`${path}: schema invalid — ${parsed.error.issues[0]?.message}`); failed++; continue; }
-    const item = parsed.data;
+    const item = normalizeDraft(parsed.data, statutes);
     const lc = localCheck(item, texts);
     if (!lc.ok) { reject(bank, item, lc.reasons, path); localRejected++; continue; }
     const hit = locateQuote(statutes, item.citation.quoted_text)!;

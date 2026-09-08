@@ -1,0 +1,47 @@
+id: NAT-PV-VIII-0149
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A $460,000 sale carries a total commission of 6%, split evenly between the listing and selling
+  brokerages. The listing agent is on a 65% split with the listing brokerage. How much does the
+  listing agent receive?
+options:
+  - $8,970
+  - $17,940
+  - $27,600
+  - $13,800
+key: A
+explanation: "Apply the splits in sequence: 460,000 × 0.06 = 27,600 total; the listing brokerage's
+  half is 13,800; the agent receives 13,800 × 0.65 = $8,970. The figure $17,940 results from
+  incorrectly applying the 65% split to the entire commission rather than to the brokerage's share."
+citation:
+  source: REP Ref. Real Estate Math § 4.2
+  url: null
+  quoted_text: "Apply the splits in sequence: price × commission rate × brokerage's share × agent's
+    split. The agent's percentage applies to the brokerage's share, not to the whole commission."
+  secondary: []
+math:
+  worked_solution: Total commission = 460,000 × 0.06 = 27,600. Listing brokerage share = 27,600 × 0.50
+    = 13,800. Agent share = 13,800 × 0.65 = $8,970.
+  formulas:
+    - commission = sale price × rate
+    - agent share = price × rate × brokerage split × agent split
+  onscreen_calculator_only: false
+terms:
+  - commission split
+  - listing brokerage
+  - agent share
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

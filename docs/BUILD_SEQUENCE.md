@@ -40,16 +40,13 @@ Volumes are ⚠ unverified until Phase 0 replaces them with ARELLO / commission 
 All 51 pipelines can run concurrently — the constraint is QA reviewer throughput, not the model.
 Budget 2–3 recently licensed reviewers per state (SPEC §10), paid per batch.
 
-## Where things stand — 2026-09-08
+## Where things stand — 2026-09-08 (evening)
 
 | Phase | Status |
 |---|---|
-| 0. Verify | State map: **51/51 from primary sources**, 0 lint errors (`pnpm state-map`). Audio spike: GO with `@mediagrid/capacitor-native-audio`; device checklist pending. Payment rails (RevenueCat / Paddle / Lemon Squeezy as Forsare Ventures Ltd) and the Heatmap contract read are **still to do by Forson** — nothing here can verify them. |
-| 1. Engine | Schema, lint CI, pipeline (ingest → draft → verify → QA → publish → mocks → status → refs-audit) built and tested, dry-runs for both national banks assemble end to end (Pearson VUE 121 requests / 968 items; PSI 114 / 912). Client shell (`apps/app`): state pages, dashboard with readiness + coverage + plan, question runner with per-question persistence and resume, timed mock, missed queue, narration bar, dark mode — smoke-tested in the browser. Backend (`apps/api`) schema + edge functions: in progress. **No API credit has been spent; no items drafted yet.** |
-| 2. All-state content | Blueprints: **51/51** state + 2 national. Ground truth cached for 31 states (≥50% refs resolve) + 21 national authorities (12 federal statutes, 9 authored reference notes). 20 states need a manual statute download — checklist in docs/STATUTE_GAPS.md. |
+| 0. Verify | State map 51/51 from primary sources. Audio: GO on Capacitor via `@mediagrid/capacitor-native-audio`; Groq TTS terms accepted, `pipeline audio-render` produces MP3 assets. Payment rails: RevenueCat account created; Supabase project and Google Play products pending Forson (instructions given). |
+| 1. Engine | Pipeline complete incl. free-tier LLM router (`packages/llm`), direct draft/verify, distractor balancing, uniform key assignment, requeue, refs-audit, glossary, audio-render, QA packets. Client wired to Supabase in three modes (static / free tier / signed-in API) with sync, devices, entitlement; 29 client tests. Backend schema + 7 edge functions (38 Deno tests). |
+| 2. Content | Ground truth: 47 states grounded, 80% of 6,347 blueprint refs resolve (GA, NJ rules, IN, TN need a human download). **Pearson VUE national: 85 items approved after 100% in-house QA** (46% yield of 184 pilot drafts; 20% QA rejection, mostly classes now caught by lint). Full remaining PV draft running; PSI and 51 states follow. |
 | 3–5 | Not started. |
 
-Next actions, in order: (1) run `pnpm pipeline draft national_pearsonvue` for real and tune prompts on
-the first batch (≈ $25–40 per national bank at Batches pricing); (2) hire 2–3 licensed reviewers and
-run the QA sheet on the first 100 verified items — the 20% rejection kill-criterion is measured here;
-(3) work through docs/STATUTE_GAPS.md; (4) device-day for audio; (5) payment rails.
+Next actions, in order: (1) finish PV (review the full-run output), then PSI, then states in the docs/BUILD_SEQUENCE order — each 100%-reviewed before publish; (2) Forson: Supabase `.env` values → deploy; Play Console products → RevenueCat; GA/NJ/IN/TN statute downloads; (3) device day for audio; (4) mock forms + per-state landing pages once state banks exist.

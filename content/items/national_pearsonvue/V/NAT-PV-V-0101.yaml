@@ -1,0 +1,40 @@
+id: NAT-PV-V-0101
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Fair Housing Act, an aggrieved person must file an administrative complaint with the
+  Secretary of Housing and Urban Development within what period after an alleged discriminatory
+  housing practice occurred or terminated?
+options:
+  - Not later than 180 days after the practice occurred or terminated
+  - Not later than two years after the practice occurred or terminated
+  - Not later than 90 days after the practice occurred or terminated
+  - Not later than one year after the practice occurred or terminated
+key: D
+explanation: Section 3610(a)(1)(A)(i) sets the filing deadline at not later than one year after the
+  alleged discriminatory housing practice occurred or terminated. The other periods are common
+  confusion points drawn from other limitation periods, but the statute specifies one year.
+citation:
+  source: 42 U.S.C. § 3610(a)(1)(A)(i)
+  url: null
+  quoted_text: An aggrieved person may, not later than one year after an alleged discriminatory
+    housing practice has occurred or terminated, file a complaint with the Secretary
+  secondary: []
+terms:
+  - complaint
+  - statute of limitations
+  - aggrieved person
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -40,6 +40,20 @@ fixtures/items.dev.yaml      8 original dev items so the loop can be exercised b
   `clientUpdatedAt` for last-write-wins sync to `apps/api` `sync-progress`.
 - **Theme**: `data-theme` on `<html>`, system/light/dark (F12).
 
+## Backend modes (lib/study/mode.ts)
+
+Chosen at runtime from `NUXT_PUBLIC_SUPABASE_URL` / `NUXT_PUBLIC_SUPABASE_ANON_KEY` (both empty by default):
+
+| mode | when | items | auth / sync |
+|---|---|---|---|
+| `static` | no Supabase URL — **dev only** | `StaticItemSource` over `public/content/items.json` (real ids, local bank) | none; no free-tier gate |
+| `free` | Supabase configured, signed out | static free sample, gated to 40 questions / one state / one short mock (`FreeTierGate.vue`, kv `freeTier`) | none; local only |
+| `api` | signed in | `ApiItemSource` → `issue-batch` signed batches under **public ids**, cached in Dexie `items`; rolling look-ahead of 30 unseen per bank | supabase-js session (magic link, Apple/Google); `register-device` on first sign-in; `sync-progress` debounced after each answer and on resume/online (lww by `clientUpdatedAt`, lib/study/sync.ts); `session_revoked` → signed out with "You signed in on another device." |
+
+Composables: `useAuth`, `useEntitlement` (RLS read of `entitlements`, cached in kv), `useSync`, `useDevices`, `useFreeTier`, `useAppMode`. Page: `/account`.
+The client never receives real item ids or the whole bank in `api` mode; the server enforces every limit the client displays.
+
 ## Not yet wired
-Auth, entitlement, device registry and sync (apps/api), narration UI (lib/narration exists),
-glossary layer (F16), study plan tied to exam date (F20), tablet rotation checks (F14).
+Payments / checkout (merchant of record + RevenueCat), narration UI (lib/narration exists),
+glossary layer (F16), study plan tied to exam date (F20), tablet rotation checks (F14),
+encrypted-at-rest item cache and TTL eviction (SPEC §5.4).

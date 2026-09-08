@@ -1,0 +1,40 @@
+id: NAT-PV-II-0009
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which characteristic distinguishes a joint tenancy from a tenancy in common?
+options:
+  - Each co-owner holds an undivided fractional interest in the whole property
+  - The right of survivorship passes a deceased owner's share to the surviving co-owners
+  - Any co-owner may sue to partition the property through a court-ordered sale or division
+  - Each co-owner may sell, mortgage, or will the individual share without the others' consent
+key: B
+explanation: "Joint tenancy carries the right of survivorship: a deceased joint tenant's share
+  passes automatically to the surviving joint tenants, outside probate. Undivided possession, the
+  ability to convey a share, and partition are features shared with tenancy in common, which has no
+  survivorship."
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 4.3
+  url: null
+  quoted_text: "Joint tenancy is co-ownership with the right of survivorship: when one joint tenant
+    dies, that share passes automatically to the surviving joint tenants, outside probate and
+    outside the decedent's will."
+  secondary: []
+terms:
+  - joint tenancy
+  - right of survivorship
+  - tenancy in common
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -15,11 +15,16 @@ export default defineNuxtConfig({
   // (offline-first, local store) and is also what Capacitor ships.
   routeRules: {
     "/study/**": { ssr: false },
+    // account + auth callback read the local store and the supabase session: client-only too
+    "/account": { ssr: false },
   },
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE ?? "",
       contentBase: "/content",
+      // Empty by default → "static" dev mode (no auth, local items). Set both to talk to apps/api.
+      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL ?? "",
+      supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY ?? "",
     },
   },
   typescript: { strict: true, typeCheck: false },

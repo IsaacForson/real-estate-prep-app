@@ -1,11 +1,17 @@
 /**
  * The study engine facade used by pages: banks for the chosen state, scheduling, sessions,
  * answering (persisted per question), SRS pipeline, coverage and readiness.
+ *
+ * Item source by mode (lib/study/mode.ts):
+ *   static → StaticItemSource over public/content/items.json (DEV ONLY — embeds real ids)
+ *   free   → StaticItemSource too, but the free-tier gate limits what a session may draw
+ *   api    → ApiItemSource: signed batches from issue-batch under public ids; sync in background
  */
 import type { Item, OptionLetter, StateRecord, Blueprint } from "@rep/schema";
 import { nationalBankFor, keyIndex } from "@rep/schema";
 import { getDb } from "~~/lib/study/db";
-import { StaticItemSource, type ItemSource } from "~~/lib/study/itemSource";
+import { ApiItemSource, StaticItemSource, type ItemSource } from "~~/lib/study/itemSource";
+import { functionsBase } from "~~/lib/study/api";
 import { newProgress, applyAnswer, scheduleSession, pipeline, leechDrill } from "~~/lib/study/srs";
 import { coverage } from "~~/lib/study/coverage";
 import { readiness, passItemsFrom } from "~~/lib/study/readiness";
@@ -14,12 +20,42 @@ import type { Progress, StudySession, SessionKind } from "~~/lib/study/types";
 /** IndexedDB structured-clone rejects Vue reactive proxies; always persist plain copies. */
 function plain<T>(v: T): T { return JSON.parse(JSON.stringify(toRaw(v))) as T; }
 
+let staticSource: StaticItemSource | null = null;
+let apiSource: ApiItemSource | null = null;
+let apiSourceFor: string | null = null;
+
 export function useStudy() {
   const settings = useSettings();
   const { load } = useContent();
   const config = useRuntimeConfig();
-  const source: ItemSource = new StaticItemSource(`${config.public.contentBase}/items.json`);
+  const mode = useAppMode();
+  const auth = useAuth();
+  const freeTier = useFreeTier();
+  const sync = useSync();
   const db = getDb();
+
+  function source(): ItemSource {
+    const uid = auth.user.value?.id;
+    if (mode.value === "api" && uid) {
+      if (!apiSource || apiSourceFor !== uid) {
+        apiSource = new ApiItemSource({
+          base: functionsBase(config.public.supabaseUrl),
+          headers: () => auth.apiHeaders(),
+          jurisdiction: () => settings.jurisdiction,
+          db,
+          onSessionRevoked: () => { void auth.onSessionRevoked(); },
+          onFreeTier: (info) => freeTier.noteServerFreeTier(info),
+          onSharingNoticeAck: (acked) => { if (acked && !settings.sharingNoticeAck) settings.set("sharingNoticeAck", true); },
+          onError: (e) => console.warn("[items] issue-batch failed; studying from cache", e),
+        });
+        apiSourceFor = uid;
+      }
+      return apiSource;
+    }
+    // DEV ONLY / anonymous free sample — see lib/study/itemSource.ts header.
+    if (!staticSource) staticSource = new StaticItemSource(`${config.public.contentBase}/items.json`);
+    return staticSource;
+  }
 
   async function state(): Promise<StateRecord | null> {
     const m = await load();
@@ -41,7 +77,7 @@ export function useStudy() {
     const cached = await db.items.bulkGet(ids);
     const missing = ids.filter((_, i) => !cached[i]);
     let fetched: Item[] = [];
-    if (missing.length) { fetched = await source.get(missing); await cacheItems(fetched); }
+    if (missing.length) { fetched = await source().get(missing); await cacheItems(fetched); }
     const byId = new Map<string, Item>();
     for (const c of cached) if (c) byId.set(c.id, c.item);
     for (const f of fetched) byId.set(f.id, f);
@@ -57,14 +93,18 @@ export function useStudy() {
     let itemIds = opts.itemIds;
     if (!itemIds) {
       const cands: string[] = [];
-      for (const b of opts.banks) cands.push(...(await source.ids(b)));
+      for (const b of opts.banks) cands.push(...(await source().ids(b)));
       const prog = await progressMap();
       itemIds = kind === "drill" ? leechDrill(prog.values(), opts.size ?? 20) : scheduleSession({ candidates: cands, progress: prog, size: opts.size ?? settings.sessionSize });
+      // SPEC §6: on the free tier a session may only draw what is left of the 40-question allowance
+      if (freeTier.applies.value) { await freeTier.load(); itemIds = freeTier.limit(itemIds); }
     }
     const now = Date.now();
-    const s: StudySession = { id: `${kind}-${now.toString(36)}`, kind, jurisdiction: settings.jurisdiction, banks: opts.banks, itemIds, position: 0, answers: {}, startedAt: now, endedAt: null, timeLimitMs: opts.timeLimitMs ?? null, mockFormId: opts.mockFormId ?? null, portions: opts.portions, clientUpdatedAt: now };
+    // uuid so the row can sync as-is (study_sessions.id is a uuid server-side)
+    const s: StudySession = { id: crypto.randomUUID(), kind, jurisdiction: settings.jurisdiction, banks: opts.banks, itemIds, position: 0, answers: {}, startedAt: now, endedAt: null, timeLimitMs: opts.timeLimitMs ?? null, mockFormId: opts.mockFormId ?? null, portions: opts.portions, clientUpdatedAt: now };
     await db.sessions.put(plain(s));
     await db.kv.put({ key: "activeSession", value: s.id });
+    sync.schedule();
     return s;
   }
   async function activeSession(): Promise<StudySession | null> {
@@ -73,7 +113,7 @@ export function useStudy() {
     const s = await db.sessions.get(kv.value as string);
     return s && !s.endedAt ? s : null;
   }
-  async function saveSession(s: StudySession) { s.clientUpdatedAt = Date.now(); await db.sessions.put(plain(s)); }
+  async function saveSession(s: StudySession) { s.clientUpdatedAt = Date.now(); await db.sessions.put(plain(s)); sync.schedule(); }
 
   /** Persist the answer immediately (F8), update SRS, advance the session position (F9). */
   async function answer(s: StudySession, item: Item, choice: OptionLetter, elapsedMs: number): Promise<{ correct: boolean; progress: Progress }> {
@@ -87,6 +127,8 @@ export function useStudy() {
       if (s.kind !== "mock") await db.progress.put(next);
       await db.sessions.put(plain({ ...s, clientUpdatedAt: now }));
     });
+    await freeTier.recordAnswer(item.id, s.jurisdiction || (item.jurisdiction === "NAT" ? settings.jurisdiction : item.jurisdiction));
+    sync.schedule();
     return { correct, progress: next };
   }
   async function endSession(s: StudySession) {
@@ -104,14 +146,14 @@ export function useStudy() {
   }
 
   async function pipelineFor(bank: string) {
-    const ids = await source.ids(bank);
+    const ids = await source().ids(bank);
     const prog = await progressMap(bank);
     return pipeline([...prog.values()], ids.length);
   }
   async function coverageFor(bank: string) {
     const bp = await blueprint(bank);
     if (!bp) return null;
-    const items = await source.get(await source.ids(bank));
+    const items = await source().get(await source().ids(bank));
     const nodes = new Map(items.map((i) => [i.id, i.blueprint_node]));
     return coverage(bp, nodes, await progressMap(bank), settings.licenseLevel);
   }
@@ -129,5 +171,8 @@ export function useStudy() {
     return (await db.progress.toArray()).filter((p) => p.box === "red" || p.leech).sort((a, b) => b.misses - a.misses);
   }
 
-  return { state, banks, blueprint, getItems, startSession, activeSession, saveSession, answer, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, source };
+  return {
+    state, banks, blueprint, getItems, startSession, activeSession, saveSession, answer, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, mode,
+    get source() { return source(); },
+  };
 }

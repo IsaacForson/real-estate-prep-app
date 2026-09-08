@@ -1,0 +1,47 @@
+id: NAT-PV-I-0006
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A deed conveys "the NW 1/4 of the SE 1/4 and the SW 1/4 of the NE 1/4 of Section 22." How many
+  acres does the deed convey?
+options:
+  - 40 acres
+  - 160 acres
+  - 80 acres
+  - 120 acres
+key: C
+explanation: 'Each piece is a quarter of a quarter of a 640-acre section: 640 / (4 x 4) = 40 acres.
+  The word "and" joins separate pieces whose acreages are added, so 40 + 40 = 80 acres. An answer of
+  40 acres treats only one piece; 160 acres would be a single quarter section.'
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: 'Acreage is 640 divided by the product of the fraction denominators: 640 / (4 x 4) = 40
+    acres. The word "of" means keep dividing; the word "and" joins separate pieces whose acreages
+    are added.'
+  secondary: []
+math:
+  worked_solution: 'First piece: 640 / (4 x 4) = 640 / 16 = 40 acres. Second piece: 640 / (4 x 4) = 40
+    acres. The word "and" joins separate pieces, so add: 40 + 40 = 80 acres.'
+  formulas:
+    - acres = 640 / (product of fraction denominators)
+    - total = piece 1 + piece 2
+  onscreen_calculator_only: false
+terms:
+  - government survey
+  - aliquot part
+  - acre
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

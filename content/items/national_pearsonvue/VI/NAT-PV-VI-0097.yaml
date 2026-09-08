@@ -1,0 +1,39 @@
+id: NAT-PV-VI-0097
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, which substance is excluded from the definition of "pollutant or contaminant"?
+options:
+  - Compounds that may cause genetic mutation
+  - Petroleum, including crude oil or any fraction thereof
+  - Disease-causing agents released into the environment
+  - Mixtures that may cause physiological malfunctions
+key: B
+explanation: Section 9601(33) defines "pollutant or contaminant" broadly to include disease-causing
+  agents and substances that may cause cancer, genetic mutation, or physiological malfunctions, but
+  expressly states the term "shall not include petroleum, including crude oil or any fraction
+  thereof" not otherwise listed as a hazardous substance. The other options fall squarely within the
+  definition.
+citation:
+  source: 42 U.S.C. § 9601(33)
+  url: null
+  quoted_text: shall not include petroleum, including crude oil or any fraction thereof which is not
+    otherwise specifically listed or designated as a hazardous substance
+  secondary: []
+terms:
+  - pollutant or contaminant
+  - petroleum exclusion
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

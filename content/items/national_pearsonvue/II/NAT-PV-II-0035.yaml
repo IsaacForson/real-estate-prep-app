@@ -1,0 +1,43 @@
+id: NAT-PV-II-0035
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller signs a deed on Tuesday and hands it to an escrow agent with instructions to release
+  it when the buyer's funds arrive. The funds arrive and the agent releases the deed on Friday; it
+  is recorded the following Monday. When did title pass to the buyer?
+options:
+  - Tuesday, when the seller signed the deed and manifested an intent to transfer ownership of the
+    property
+  - Monday, when the deed was recorded in the public records and thereby raised a presumption of
+    delivery
+  - Tuesday, when the deed was placed beyond the seller's control by deposit with the escrow agent
+  - Friday, when the escrow conditions were met and the deed was released
+key: D
+explanation: Title passes on delivery and acceptance, and delivery to an escrow agent with
+  instructions means title passes when the conditions are satisfied and the deed is released — here,
+  Friday. Recording is the tempting distractor, but recording is not the moment of transfer; it
+  merely raises a presumption of delivery.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 11.2
+  url: null
+  quoted_text: delivery may also be made to an escrow agent with instructions to release it when
+    conditions are met, and title then passes when they are satisfied
+  secondary: []
+terms:
+  - delivery
+  - escrow
+  - passage of title
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

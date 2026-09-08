@@ -1,0 +1,45 @@
+id: NAT-PV-VII-0114
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A veteran with full entitlement wants to buy a home priced well above the conforming loan
+  limit with no money down. Her lender asks how the VA guaranty applies. Which statement is correct?
+options:
+  - She may borrow up to two times her basic entitlement of $36,000, which is $72,000, with no down
+    payment required by the VA, but any amount above that must be covered by her own funds at
+    closing
+  - She must pay a monthly mortgage insurance premium on the portion of the loan that exceeds the
+    county conforming loan limit, similar to the FHA structure for high-balance mortgages
+  - She must make a down payment equal to 25% of any amount above the lender's approved loan amount,
+    since the VA guaranty cannot extend beyond what the lender is willing to underwrite for her
+  - She may borrow with no down payment for as much as the lender approves, because borrowers with
+    full entitlement face no VA loan limit
+key: D
+explanation: Since 2020, borrowers with full entitlement face no VA loan limit and may borrow with
+  no down payment for as much as the lender approves. The county-limit down payment requirement
+  applies only to borrowers with partially used entitlement, and VA loans carry no monthly mortgage
+  insurance.
+citation:
+  source: REP Ref. Financing & Closing § 6.3
+  url: null
+  quoted_text: borrowers with full entitlement face no VA loan limit and may borrow with no down
+    payment for as much as the lender approves
+  secondary: []
+terms:
+  - entitlement
+  - VA loan
+  - guaranty
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 3
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

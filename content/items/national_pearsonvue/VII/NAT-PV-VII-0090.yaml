@@ -1,0 +1,41 @@
+id: NAT-PV-VII-0090
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Borrower Jane transfers title of the mortgaged home to her adult daughter without the lender's
+  consent. Under the alienation clause rules, can the lender accelerate the loan?
+options:
+  - No, because a transfer to a child is exempt from the due-on-sale clause.
+  - No, because FHA loans are automatically assumable regardless of transfer.
+  - Yes, because any transfer without lender consent triggers acceleration.
+  - Yes, because the Garn–St Germain Act requires enforcement of all alienation clauses.
+key: A
+explanation: The Garn–St Germain Act exempts transfers to a spouse or child, so the due-on-sale
+  clause cannot be enforced in this case. The other choices ignore the specific exemption or
+  misapply FHA loan rules.
+citation:
+  source: REP Ref. Financing & Closing § 2.2
+  url: null
+  quoted_text: The Garn–St Germain Act of 1982 made these clauses generally enforceable but exempts
+    transfers such as to a spouse or child, on the death of a joint tenant, or into the borrower's
+    living trust.
+  secondary: []
+terms:
+  - alienation clause
+  - due-on-sale
+  - Garn–St Germain Act
+  - exemption
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

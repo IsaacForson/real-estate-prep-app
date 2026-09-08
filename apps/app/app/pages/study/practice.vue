@@ -37,7 +37,11 @@ async function quit() { if (session.value) { await study.endSession(session.valu
 const score = computed(() => { const a = Object.values(session.value?.answers ?? {}); return { n: a.length, c: a.filter((x) => x.correct).length }; });
 </script>
 <template>
-  <div v-if="session">
+  <div v-if="session && !session.itemIds.length">
+    <FreeTierGate variant="block" />
+    <p class="muted">No questions to show in this session. <NuxtLink to="/study">Back to study →</NuxtLink></p>
+  </div>
+  <div v-else-if="session">
     <div class="row" style="justify-content:space-between">
       <span class="muted">Question {{ session.position + 1 }} of {{ session.itemIds.length }} · {{ score.c }}/{{ score.n }} correct</span>
       <button @click="quit">End session</button>

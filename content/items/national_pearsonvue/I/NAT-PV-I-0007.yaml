@@ -1,0 +1,46 @@
+id: NAT-PV-I-0007
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A commercial tenant installs display shelving and a kitchen hood to operate a restaurant in
+  leased space. A homeowner installs a built-in furnace in a house the homeowner owns. When the
+  lease ends and the home is sold, how are these items treated?
+options:
+  - The tenant's shelving and hood pass to the landlord at once upon installation; the homeowner may
+    remove the furnace before closing as personal property still belonging to the seller
+  - Both the tenant's shelving and hood and the homeowner's furnace remain personal property that
+    each installer may remove at any time, including after the lease ends or after closing
+  - Both the tenant's shelving and hood and the homeowner's furnace become part of the real estate
+    and transfer automatically to the landlord at lease end and to the buyer at closing
+  - The tenant may remove the shelving and hood before the lease ends and must repair removal
+    damage; the furnace passes with the home as a fixture
+key: D
+explanation: "Trade fixtures installed by a business tenant remain the tenant's personal property
+  and may be removed before the lease ends, with the tenant repairing removal damage. A furnace
+  installed by an owner is adapted to the property and is a fixture that passes with the real
+  estate. The contrast is the point: fixtures installed by an owner belong to the real estate; trade
+  fixtures installed by a business tenant belong to the tenant."
+citation:
+  source: REP Ref. Property & Land Use § 1.4
+  url: null
+  quoted_text: fixtures installed by an owner belong to the real estate; trade fixtures installed by a
+    business tenant belong to the tenant
+  secondary: []
+terms:
+  - trade fixture
+  - fixture
+  - annexation
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

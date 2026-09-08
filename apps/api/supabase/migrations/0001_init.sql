@@ -8,7 +8,10 @@
 --     fn_assert_owner(); the service role (edge functions, webhooks) bypasses rls
 --   * no item text lives in this database (SPEC §5.4). only ids, metadata and statistics.
 
-create extension if not exists pgcrypto; -- gen_random_bytes() for public ids and session tokens
+-- pgcrypto lives in the `extensions` schema on hosted Supabase; functions below use search_path = public,
+-- so the call is schema-qualified. (create schema is a no-op on hosted projects, needed for local Postgres.)
+create schema if not exists extensions;
+create extension if not exists pgcrypto with schema extensions; -- gen_random_bytes() for public ids and session tokens
 
 -- ---------------------------------------------------------------------------
 -- enums
@@ -128,7 +131,7 @@ language sql
 volatile
 set search_path = public
 as $$
-  select translate(encode(gen_random_bytes(p_bytes), 'base64'), '+/=', '-_');
+  select translate(encode(extensions.gen_random_bytes(p_bytes), 'base64'), '+/=', '-_');
 $$;
 
 -- ---------------------------------------------------------------------------

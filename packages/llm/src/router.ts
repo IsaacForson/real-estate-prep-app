@@ -40,6 +40,9 @@ export class LlmRouter {
   private rr = new Map<string, number>();
   /** Providers disabled for the life of this router (402 payment required, 401 bad key). */
   private disabled = new Map<string, string>();
+  private inFlight = new Map<string, number>();
+  /** consecutive all-keys-limited events per provider → exponential backoff (15 s, 30 s, 60 s, … ≤ 5 min) */
+  private saturation = new Map<string, { count: number; until: number }>();
   public log: (line: string) => void = () => {};
 
   constructor(providers?: ProviderConfig[]) {
@@ -83,6 +86,20 @@ export class LlmRouter {
     return best;
   }
 
+  private async acquire(p: ProviderConfig): Promise<() => void> {
+    while ((this.inFlight.get(p.name) ?? 0) >= p.maxConcurrent) await new Promise((r) => setTimeout(r, 250));
+    this.inFlight.set(p.name, (this.inFlight.get(p.name) ?? 0) + 1);
+    return () => this.inFlight.set(p.name, Math.max(0, (this.inFlight.get(p.name) ?? 1) - 1));
+  }
+  private saturated(p: ProviderConfig, now: number): boolean { return (this.saturation.get(p.name)?.until ?? 0) > now; }
+  private markSaturated(p: ProviderConfig) {
+    const s = this.saturation.get(p.name) ?? { count: 0, until: 0 };
+    s.count++; s.until = Date.now() + Math.min(300_000, 15_000 * 2 ** (s.count - 1));
+    this.saturation.set(p.name, s);
+    this.log(`[llm] ${p.name} saturated; backing off ${Math.round((s.until - Date.now()) / 1000)}s`);
+  }
+  private clearSaturation(p: ProviderConfig) { this.saturation.delete(p.name); }
+
   async chat(req: ChatRequest): Promise<ChatResult> {
     const started = Date.now();
     const inputTokens = estimateTokens(req.messages.map((m) => m.content).join("\n"));
@@ -92,10 +109,14 @@ export class LlmRouter {
     const fitting = candidates.filter((p) => inputTokens <= p.maxInputTokens);
     if (!fitting.length) throw new LlmError(`prompt of ~${inputTokens} tokens exceeds every provider's input cap (${candidates.map((p) => `${p.name}:${p.maxInputTokens}`).join(", ")})`, attempts);
 
-    // Two passes: the second waits for the earliest key to free up.
-    for (let pass = 0; pass < 2; pass++) {
+    // Several passes: each later pass waits for the earliest key to free up (total wait ≤ ~5 min).
+    const maxPasses = Number(process.env.LLM_MAX_PASSES ?? 8);
+    for (let pass = 0; pass < maxPasses; pass++) {
       for (const p of fitting) {
+        if (this.saturated(p, Date.now())) continue;
         const models = [p.model, ...p.altModels];
+        const release = await this.acquire(p);
+        try {
         for (const model of models) {
           let keyIdx = this.pickKey(p, Date.now());
           if (keyIdx == null) break; // provider saturated; try next provider
@@ -115,23 +136,40 @@ export class LlmRouter {
             break;
           }
           if (r.ok) {
+            this.clearSaturation(p);
             this.log(`[llm] ${p.name}/${model} key#${keyIdx} ok in ${Date.now() - started}ms (~${inputTokens} in)`);
             return { text: r.text, provider: p.name, model, keyIndex: keyIdx, usage: r.usage, attempts: attempts.length, ms: Date.now() - started };
           }
           if (r.status === 429) {
-            const wait = r.retryAfterMs ?? 60_000;
+            // Daily/token-budget limits come back with a long retry-after: disable the provider for this run.
+            if ((r.retryAfterMs ?? 0) > 10 * 60_000 || /per day|daily|tokens per day|TPD/i.test(r.detail)) {
+              this.disabled.set(p.name, `429 long retry-after (${Math.round((r.retryAfterMs ?? 0) / 60000)} min): ${r.detail.slice(0, 100).replace(/\s+/g, " ")}`);
+              this.log(`[llm] ${p.name} disabled for this run: daily limit`);
+              break;
+            }
+            // Concurrency-style 429s (NVIDIA) clear quickly; per-minute limits need the window to roll.
+            const wait = r.retryAfterMs ?? (p.keys.length > 1 ? 15_000 : 60_000);
             s.cooldownUntil = Date.now() + wait;
             this.log(`[llm] ${p.name} key#${keyIdx} rate-limited; cooldown ${Math.round(wait / 1000)}s — ${r.detail.slice(0, 140).replace(/\s+/g, " ")}`);
             // try other keys of the same provider first
             let next = this.pickKey(p, Date.now());
+            let all429 = true;
             while (next != null) {
               const s2 = this.st(p, next); s2.used++;
               const r2 = await this.call(p, next, model, req);
               attempts.push({ provider: p.name, model, status: r2.status, detail: r2.detail.slice(0, 200) });
               if (r2.ok) return { text: r2.text, provider: p.name, model, keyIndex: next, usage: r2.usage, attempts: attempts.length, ms: Date.now() - started };
-              if (r2.status === 429) { s2.cooldownUntil = Date.now() + (r2.retryAfterMs ?? 60_000); next = this.pickKey(p, Date.now()); continue; }
-              break;
+              if (r2.status === 429) { this.log(`[llm] ${p.name} key#${next} rate-limited too`); s2.cooldownUntil = Date.now() + (r2.retryAfterMs ?? 15_000); next = this.pickKey(p, Date.now()); continue; }
+              all429 = false; break;
             }
+            // Every key limited on this model → the cap is per model/account, not per key: clear the key
+            // cooldowns and try the provider's next model before leaving for another provider.
+            if (all429 && models.indexOf(model) < models.length - 1) {
+              for (let i = 0; i < p.keys.length; i++) this.st(p, i).cooldownUntil = 0;
+              this.log(`[llm] ${p.name}/${model} limited on all keys; trying ${models[models.indexOf(model) + 1]}`);
+              continue;
+            }
+            if (all429) this.markSaturated(p); // every model on every key limited → account-level cap
             break; // next provider
           }
           if (r.status === 404 || /model|decommission|not found|unsupported/i.test(r.detail) && r.status === 400) continue; // try alt model
@@ -141,12 +179,14 @@ export class LlmRouter {
           }
           break; // 5xx / network → next provider
         }
+        } finally { release(); }
       }
       // everything saturated or failed: wait for the earliest key to free (max 65 s) and retry once more
       const now = Date.now();
       const soonest = Math.min(...fitting.map((p) => this.nextFree(p, now)));
       if (!isFinite(soonest)) break;
-      const wait = Math.min(65_000, Math.max(1_000, soonest - now));
+      const satUntil = Math.min(...fitting.map((p) => this.saturation.get(p.name)?.until ?? Infinity));
+      const wait = Math.min(120_000, Math.max(10_000, Math.min(soonest, isFinite(satUntil) ? satUntil : Infinity) - now));
       this.log(`[llm] all providers busy/failing; waiting ${Math.round(wait / 1000)}s`);
       await new Promise((r) => setTimeout(r, wait));
     }

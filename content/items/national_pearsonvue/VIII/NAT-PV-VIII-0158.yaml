@@ -1,0 +1,47 @@
+id: NAT-PV-VIII-0158
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A buyer agrees to pay $310,000 for a home, but the appraisal comes in at $300,000. The lender
+  will make a 90% loan-to-value loan. How much cash must the buyer bring for the down payment?
+options:
+  - $27,000
+  - $31,000
+  - $40,000
+  - $30,000
+key: C
+explanation: LTV is based on the lesser of price or appraised value, so the loan is $300,000 × 0.90
+  = $270,000. The buyer must cover the $40,000 difference between the $310,000 price and the
+  $270,000 loan, which includes the appraisal gap. The $31,000 distractor is simply 10% of the
+  contract price and ignores the low appraisal.
+citation:
+  source: REP Ref. Real Estate Math § 5.3
+  url: null
+  quoted_text: LTV = loan ÷ the lesser of price or appraised value. Loan = value × LTV. Down payment =
+    price − loan.
+  secondary: []
+math:
+  worked_solution: Loan = $300,000 (lesser of price or appraisal) × 0.90 = $270,000. Down payment =
+    $310,000 − $270,000 = $40,000.
+  formulas:
+    - Loan = lesser of price or appraised value × LTV
+    - Down payment = price − loan
+  onscreen_calculator_only: false
+terms:
+  - loan-to-value
+  - down payment
+  - appraisal
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

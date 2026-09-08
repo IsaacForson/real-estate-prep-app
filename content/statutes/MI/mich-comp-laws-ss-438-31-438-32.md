@@ -1,0 +1,226 @@
+---
+jurisdiction: "MI"
+citation: "Mich. Comp. Laws §§ 438.31–438.32"
+title: "Michigan Compiled Laws — Interest rates (usury), MCL 438.31–438.32 (Act 326-of-1966) — official Michigan Legislature compiled-act PDF read via Internet Archive capture of 2025-09-12 because legislature.mi.gov's WAF blocks scripts"
+url: "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-Act-326-of-1966.pdf"
+fetched_on: "2026-09-08"
+---
+INTEREST RATES
+Act 326 of 1966
+AN ACT to regulate the rate of interest of money; to provide exceptions; to prescribe the rights of parties; and to
+repeal certain acts and parts of acts.
+History: 1966, Act 326, Eff. Mar. 10, 1967
+Popular Name: Usury Act
+The People of the State of Michigan enact:
+438.31 Legal interest rate; scope; limitation; construction; foreign obligations.
+Sec. 1.
+The interest of money shall be at the rate of $5.00 upon $100.00 for a year, and at the same rate for a greater or
+less sum, and for a longer or shorter time, except that in all cases it shall be lawful for the parties to stipulate in
+writing for the payment of any rate of interest, not exceeding 7% per annum. This act shall not apply to the rate of
+interest on any note, bond or other evidence of indebtedness issued by any corporation, association or person, the
+issue and rate of interest of which have been expressly authorized by the public service commission or the securities
+bureau of the department of commerce, or is regulated by any other law of this state, or of the United States, nor
+shall it apply to any time price differential which may be charged upon sales of goods or services on credit. This act
+shall not be construed to repeal section 78 of Act No. 327 of the Public Acts of 1931, as amended, being section
+450.78 of the Compiled Laws of 1948. This act shall not render unlawful, the purchase of any note, bond or other
+evidence of indebtedness theretofore issued by any borrower not then domiciled in this state, which bear any rate of
+interest which is lawful under the law of the domicile of the borrower at the date of issue thereof, and in such case
+any such rate of interest may be charged and received by any person, firm, corporation or association in this state.
+History: 1966, Act 326, Eff. Mar. 10, 1967 ;-- Am. 1970, Act 227, Imd. Eff. Nov. 25, 1970
+Popular Name: Usury Act
+438.31a Payment of reasonable and necessary charges in addition to interest; exceptions.
+Sec. 1a.
+A state or national bank, except as federal law and regulation provide otherwise, insurance company, or lender
+approved as a mortgagee under the national housing act, 12 U.S.C. 1701 to 1750g, or regulated by a federal
+agency, may require a borrower to pay reasonable and necessary charges which are the actual expenses incurred by
+the lender in connection with the making, closing, disbursing, extending, readjusting, or renewing of a loan. The
+charges shall be in addition to interest authorized by law, and are not a part of the interest collected or agreed to be
+paid on the loan within the meaning of a law of this state which limits the rate of interest which may be exacted in a
+transaction. Reasonable and necessary charges shall consist of recording fees; title examination or title insurance;
+the preparation of a deed, appraisal, or credit report; plus a loan processing fee. The charges shall be paid only once
+by the borrower to either the seller of the mortgage or the lender. A charge for inspection required by a local unit of
+government shall be paid by the seller and shall not be charged to the borrower. This section does not apply to a
+corporation organized under Act No. 156 of the Public Acts of 1964, as amended, being sections 489.501 to
+489.920 of the Michigan Compiled Laws, or a federally chartered savings and loan association.
+History: Add. 1968, Act 266, Imd. Eff. July 1, 1968 ;-- Am. 1969, Act 255, Imd. Eff. Aug. 11, 1969 ;-- Am. 1978, Act 27, Imd. Eff. Feb. 24,
+1978
+Popular Name: Usury Act
+Rendered Friday, August 29, 2025
+Page 1
+Michigan Compiled Laws Complete Through PA 12 of 2025
+Courtesy of legislature.mi.gov
+
+438.31b Loan settlement statement.
+Sec. 1b.
+A state or national bank, insurance company, or lender approved as a mortgagee under the national housing act
+or regulated by a federal agency, shall furnish a loan settlement statement to a borrower upon closing of the loan,
+indicating in detail the charges the borrower has paid or obligated himself to pay the lender or to any other person
+in connection with the loan. A copy of the statement shall be retained in the records of the lender. This section does
+not apply to a corporation organized under Act No. 156 of the Public Acts of 1964, as amended, or a federally
+chartered savings and loan association.
+History: Add. 1968, Act 266, Imd. Eff. July 1, 1968 ;-- Am. 1969, Act 255, Imd. Eff. Aug. 11, 1969 ;-- Am. 1978, Act 27, Imd. Eff. Feb. 24,
+1978
+Compiler's Notes: Act 156 of 1964, referred to in this section, was repealed by Act 307 of 1980.
+Popular Name: Usury Act
+438.31c Interest charged by securities broker or dealer for carrying debit balance in customer account;
+written agreement for payment of interest on evidence of indebtedness; prohibitions when security is single-
+family dwelling unit; validity of transaction or rate of interest; limitation on rate of interest; loans to which
+subsection (2) applicable; mortgage loans or land contracts by lenders or vendors not qualified under
+subsection (5); rate of interest on purchase money mortgage or second mortgage; interest on extension of
+credit secured by lien on mobile home; interest not to be added or deducted in advance; computation of
+interest; injunction; agreement by certain parties for payment of interest; interest charged by certain trusts
+excepted; interest bearing deposit account; limitation; maintaining interest bearing account as condition of
+making mortgage loan or land contract providing for biweekly payments.
+Sec. 1c.
+(1) Interest charged by a broker or dealer registered under title I of the securities exchange act of 1934, chapter
+404, 48 Stat. 881, 15 U.S.C. 78a to 78o, 78o-3 to 78dd-1, 78ee to 78hh, and 78ll for carrying a debit balance in an
+account for a customer is not subject to the limitations of this act if the debit balance is payable on demand and
+secured by stocks or bonds.
+(2) The parties to a note, bond, or other evidence of indebtedness, executed after August 11, 1969, the bona fide
+primary security for which is a first lien against real property, or a land lease if the tenant owns a majority interest in
+the improvements, or the parties to a land contract, may agree in writing for the payment of any rate of interest, but
+the note, mortgage, contract, or other evidence of indebtedness shall not provide that the rate of interest initially
+effective may be increased for any reason. In connection with the transaction, except a loan, insured or guaranteed
+by the federal government or any agency of the federal government, if the security is a single family dwelling unit,
+the lender shall not do any of the following:
+(a) Directly or indirectly require as a condition of the making of the loan, a deposit to be maintained by the
+borrower, other than an escrow account or a deposit account which is established pursuant to subsection (13).
+(b) Directly or indirectly impose or collect, as a condition of the making of the loan, a payment from a seller or
+borrower in the nature of a discount, point, or similar system, except that a lender may impose and collect, as a
+condition of making a loan, all fees, discounts, points, or other charges that lenders are permitted or required to
+impose, collect, or pay in order to qualify the loan for sale, in whole or in part, or in order to obtain a purchase
+commitment, under any program authorized by federal statute or regulation.
+(c) Charge a prepayment fee or penalty in excess of 1% of the amount of any prepayment made within 3 years of
+the date of the loan, or any prepayment fee or penalty at all thereafter, or prohibit prepayment at any time.
+(3) Subsection (2) shall not impair the validity of a transaction or rate of interest lawful without regard to
+subsection (2).
+(4) Subsection (2) shall not authorize or permit a rate of interest in excess of the rate set forth in Act No. 259 of
+the Public Acts of 1968, being sections 438.41 to 438.42 of the Michigan Compiled Laws.
+(5) The provisions of subsection (2) shall apply only to loans made by lenders approved as a mortgagee under
+the national housing act, chapter 847, 48 Stat. 1246, or regulated by the state or by a federal agency, who are
+Rendered Friday, August 29, 2025
+Page 2
+Michigan Compiled Laws Complete Through PA 12 of 2025
+Courtesy of legislature.mi.gov
+
+authorized by state or federal law to make such loans.
+(6) Notwithstanding subsection (5), lenders or vendors not qualified to make loans under subsection (5) may
+make, or may have made, mortgage loans and land contracts specified in subsection (2) on or after August 16,
+1971, which mortgage loans and land contracts provide for a rate of interest not to exceed 11% per annum, which
+interest shall be inclusive of all amounts defined as the "finance charge" in section 106 of the truth in lending act,
+title I of Public Law 90-321, 15 U.S.C. 1605, and the regulations promulgated under that act, 12 C.F.R. part 226.
+(7) The parties to a purchase money mortgage or a second mortgage may agree in writing for the payment of a
+rate of interest not to exceed 11% per annum. A second mortgage made pursuant to this subsection shall be made
+in compliance with Act No. 125 of the Public Acts of 1981, being sections 493.51 to 493.81 of the Michigan
+Compiled Laws, except for section 2 of that act. As used in this subsection:
+(a) "Purchase money mortgage" means a mortgage secured by a first lien or junior lien taken or retained by the
+seller of real property to secure all or part of the purchase price of the property.
+(b) "Second mortgage" means a mortgage from which the proceeds of a loan or other extension of credit made
+by a third person are secured by a mortgage on the real property for which the mortgagor has used the proceeds of
+the loan or other extension of credit to pay all or part of the purchase price of the property.
+(c) "Third person" means:
+(i) A salesperson acting as an agent for a residential builder, or a residential builder, licensed under article 24 of
+the occupational code, Act No. 299 of the Public Acts of 1980, as amended, being sections 339.2401 to 339.2412
+of the Michigan Compiled Laws, when made or negotiated in connection with the sale of a residential structure
+constructed by that builder.
+(ii) A real estate broker or real estate salesperson licensed under article 25 of the occupational code, Act No. 299
+of the Public Acts of 1980, as amended, being sections 339.2501 to 339.2515 of the Michigan Compiled Laws, and
+engaged in the sale of real estate as a principal vocation, when made or negotiated in connection with a real estate
+sale where the real estate broker or salesperson affiliated with the broker represents either the buyer or seller.
+(8) Subject to the title transfer provisions of sections 30c and 30d of the mobile home commission act, Act No.
+96 of the Public Acts of 1987, being sections 125.2330c and 125.2330d of the Michigan Compiled Laws, the
+parties to an extension of credit which is secured by a lien on a mobile home taken or retained by the seller of a
+mobile home to secure all or part of the purchase price of the mobile home and which is not a retail installment
+transaction may agree in writing to a rate of interest not to exceed 11% per annum, which interest shall be inclusive
+of all amounts defined as the "finance charge" in section 106 of the truth in lending act, 15 U.S.C. 1605, and the
+regulations promulgated under that act, 12 C.F.R. part 226. This subsection shall not prohibit an extension of credit
+secured by a lien on a mobile home and made on terms and at a rate of interest specifically authorized by another
+law of this state or the United States. As used in this subsection:
+(a) "Mobile home" means mobile home as defined in section 2 of the mobile home commission act, Act No. 96 of
+the Public Acts of 1987, being section 125.2302 of the Michigan Compiled Laws.
+(b) "Retail installment transaction" means retail installment transaction as defined in section 2 of the retail
+installment sales act, Act No. 224 of the Public Acts of 1966, being section 445.852 of the Michigan Compiled
+Laws.
+(9) A mortgage loan or land contract made under this act shall not provide for a rate of interest added or
+deducted in advance and interest on the mortgage loan or land contract shall be computed from time to time only
+on the basis of unpaid balances.
+(10) A party to a transaction subject to this act shall be entitled to have his or her rights under this act enforced
+or protected by injunctive order of a court.
+(11) The parties to a note, bond, or other indebtedness of $100,000.00 or more, the bona fide primary security
+for which is a lien against real property other than a single family residence, or the parties to a land contract of such
+amount and nature, may agree in writing for the payment of any rate of interest.
+(12) Interest charged by a trust created or organized in the United States forming a part of a stock bonus,
+pension, or profit sharing plan which satisfies the requirements of section 401(a) of the internal revenue code on a
+loan to a participating employee or beneficiary of the trust is not subject to the limitations of this act.
+(13) In the case of a mortgage or land contract, an interest bearing deposit account held in a depository financial
+institution may be established as a condition of the making of the mortgage or land contract, subject to the
+conditions specified in this subsection. The deposit account shall be pledged to the lender or seller as additional
+security for the mortgage or land contract. The lender or seller shall withdraw from the deposit account agreed
+upon specified amounts at agreed upon periodic times and the withdrawals shall be applied against the periodic
+payments otherwise due from the borrower or buyer pursuant to the terms of the mortgage or land contract. All
+interest earned on the pledged deposit account shall be credited to the deposit account. This subsection shall only
+apply to a loan the primary security for which is a dwelling to be occupied by the owner, or a land contract given as
+consideration for the sale of a dwelling which is to be occupied by the owner. The mortgage or land contract shall
+specifically state the amounts by which the payments are supplemented by withdrawals from the pledged account,
+the amounts required from the borrower or buyer to make up the difference, and the period of time during which
+withdrawals from the pledge account shall be utilized.
+Rendered Friday, August 29, 2025
+Page 3
+Michigan Compiled Laws Complete Through PA 12 of 2025
+Courtesy of legislature.mi.gov
+
+(14) A lender or seller who offers 5 or more mortgages or land contracts in any 1 calendar year may not require
+a deposit account established pursuant to subsection (13) as a condition of making a mortgage or land contract on
+more than 20% of the mortgages or land contracts made by the lender or seller in any 1 calendar year.
+(15) Notwithstanding subsections (2), (2)(a), (13), and (14), in the case of a mortgage loan or land contract
+providing for biweekly payments, a regulated depository financial institution or its service corporations, subsidiaries
+or affiliates may require, or may have required, as a condition of the making of the mortgage loan or land contract,
+that the borrower maintain an interest bearing account with any depository institution for the purpose of making the
+biweekly payments by automatic withdrawals from the account, electronically or otherwise. If an institution does
+not offer interest bearing transaction accounts, or if an institution does not generally offer automatic withdrawals
+from interest bearing accounts, a noninterest bearing checking account may be maintained for the purpose of
+making the biweekly payments. However, the borrower shall not be required to maintain funds in the account in
+excess of an amount sufficient to meet the required biweekly loan payments, including required escrow payments
+for taxes and insurance, if any, as they become due. As used in this subsection, "regulated depository financial
+institution" means a state or nationally chartered bank, or a state or federally chartered savings and loan association
+or savings bank, or a state or federally chartered credit union. "Affiliate" means a person other than a natural person
+that directly or indirectly through 1 or more intermediaries is controlled by or is under common control of a
+regulated depository financial institution.
+History: Add. 1969, Act 305, Imd. Eff. Aug. 12, 1969 ;-- Am. 1970, Act 75, Imd. Eff. July 16, 1970 ;-- Am. 1971, Act 94, Imd. Eff. Aug.
+16, 1971 ;-- Am. 1971, Act 228, Imd. Eff. Jan. 3, 1972 ;-- Am. 1973, Act 6, Imd. Eff. Apr. 2, 1973 ;-- Am. 1973, Act 21, Imd. Eff. May 16,
+1973 ;-- Am. 1974, Act 311, Imd. Eff. Dec. 9, 1974 ;-- Am. 1977, Act 56, Imd. Eff. July 6, 1977 ;-- Am. 1978, Act 440, Imd. Eff. Oct. 9,
+1978 ;-- Am. 1980, Act 238, Imd. Eff. July 24, 1980 ;-- Am. 1981, Act 190, Imd. Eff. Dec. 29, 1981 ;-- Am. 1982, Act 193, Imd. Eff. June
+28, 1982 ;-- Am. 1982, Act 322, Imd. Eff. Dec. 3, 1982 ;-- Am. 1983, Act 1, Imd. Eff. Mar. 1, 1983 ;-- Am. 1984, Act 6, Imd. Eff. Feb. 1,
+1984 ;-- Am. 1985, Act 7, Imd. Eff. Mar. 29, 1985 ;-- Am. 1987, Act 186, Imd. Eff. Dec. 2, 1987 ;-- Am. 1990, Act 94, Imd. Eff. June 6,
+1990
+Popular Name: Usury Act
+438.31d Waiver of defense of usury by nonprofit corporation.
+Sec. 1d.
+Notwithstanding the provisions of section 78 of Act No. 327 of the Public Acts of 1931, as amended, being
+section 450.78 of the Compiled Laws of 1948, a charitable, religious or other nonprofit corporation may waive the
+defense of usury without regard to the amount borrowed.
+History: Add. 1971, Act 94, Imd. Eff. Aug. 16, 1971
+Popular Name: Usury Act
+438.32 Violation of act; attorney fees and court costs, recovery.
+Sec. 2.
+Any seller or lender or his assigns who enters into any contract or agreement which does not comply with the
+provisions of this act or charges interest in excess of that allowed by this act is barred from the recovery of any
+interest, any official fees, delinquency or collection charge, attorney fees or court costs and the borrower or buyer
+shall be entitled to recover his attorney fees and court costs from the seller, lender or assigns.
+History: 1966, Act 326, Eff. Mar. 10, 1967
+Popular Name: Usury Act
+438.33 Repeal.
+Rendered Friday, August 29, 2025
+Page 4
+Michigan Compiled Laws Complete Through PA 12 of 2025
+Courtesy of legislature.mi.gov
+
+Sec. 3.
+Act No. 156 of the Public Acts of 1891, as amended, being sections 438.51 to 438.53 of the Compiled Laws of
+1948, is repealed.
+History: 1966, Act 326, Eff. Mar. 10, 1967
+Popular Name: Usury Act
+Rendered Friday, August 29, 2025
+Page 5
+Michigan Compiled Laws Complete Through PA 12 of 2025
+Courtesy of legislature.mi.gov

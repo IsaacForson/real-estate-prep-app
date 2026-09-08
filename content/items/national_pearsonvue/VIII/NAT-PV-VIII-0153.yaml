@@ -1,0 +1,47 @@
+id: NAT-PV-VIII-0153
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home for $310,000. The appraisal comes in at $300,000, and the lender
+  makes a loan of $240,000. What is the loan-to-value ratio, and how much cash must the buyer bring
+  for the down payment?
+options:
+  - LTV 80%; down payment $70,000
+  - LTV 77.42%; down payment $60,000
+  - LTV 77.42%; down payment $70,000
+  - LTV 80%; down payment $60,000
+key: A
+explanation: "LTV uses the lesser of price or appraised value, so 240,000 ÷ 300,000 = 80%. The down
+  payment is price minus loan: 310,000 − 240,000 = $70,000, because the buyer must cover the
+  appraisal gap as well as 20% of the appraised value. Using the $310,000 price as the LTV
+  denominator (77.42%) is the tempting error."
+citation:
+  source: REP Ref. Real Estate Math § 5.3
+  url: null
+  quoted_text: LTV = loan ÷ the lesser of price or appraised value. Loan = value × LTV. Down payment =
+    price − loan.
+  secondary: []
+math:
+  worked_solution: Lesser of price ($310,000) and appraisal ($300,000) = $300,000. LTV = 240,000 ÷
+    300,000 = 0.80 = 80%. Down payment = 310,000 − 240,000 = $70,000.
+  formulas:
+    - LTV = loan ÷ lesser of price or appraised value
+    - down payment = price − loan
+  onscreen_calculator_only: false
+terms:
+  - loan-to-value
+  - down payment
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

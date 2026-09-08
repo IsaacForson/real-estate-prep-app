@@ -1,0 +1,40 @@
+id: NAT-PV-VI-0096
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, which activity is expressly excluded from the definition of a "release"?
+options:
+  - The normal application of fertilizer
+  - The abandonment of barrels containing hazardous substances
+  - The leaching of contaminants from a disposal site
+  - The dumping of pollutants into a waterway
+key: A
+explanation: CERCLA's definition of "release" covers spilling, leaking, dumping, and abandoning
+  containers of hazardous substances, but expressly excludes "the normal application of fertilizer,"
+  along with workplace-only exposures, engine exhaust, and certain nuclear releases. Abandoning
+  barrels containing hazardous substances is specifically included in the definition, so that
+  distractor fails.
+citation:
+  source: 42 U.S.C. § 9601(22)
+  url: null
+  quoted_text: but excludes (A) any release which results in exposure to persons solely within a
+    workplace, with respect to a claim which such persons may assert against the employer of such
+    persons, (B) emissions from the engine exhaust of a motor vehicle
+  secondary: []
+terms:
+  - release
+  - hazardous substance
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

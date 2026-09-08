@@ -59,3 +59,66 @@ KY (KRS 324, 201 KAR 11). The text is the official publication, but the capture 
 - MO's single 440K-char rulebook combines statute + rules; slicing works because refs are section-level.
 - NY has no published outline; the blueprint is weights-only (percentage points) with a provisional 100 items.
 - VT `scored_items: 40` is provisional — the state exam has no public outline.
+
+## Current resolution by state (auto-generated from `pnpm pipeline refs-audit`, 2026-09-08 after all gap agents)
+
+Weakest first. Below ~70% a state should not be drafted yet; unmatched refs (`refs-audit XX --verbose`) are
+usually companion acts or a still-blocked host. **Hard blockers needing a human on an unblocked network:**
+GA (O.C.G.A. 43-40 — LexisNexis CAPTCHA), NJ (N.J.A.C. 11:5 — LexisNexis only), IN (iga.in.gov JS shell;
+Title 25 PDF), TN (Tenn. Code Ann. 62-13 — Lexis CAPTCHA). Internet Archive captures of the exact official
+URL were used for TX, OH, NV, MA, MI, NJ statutes, AZ, NC, LA, FL, ID, IL, KY, UT, WI, NH, PA, RI, OR —
+re-fetch live when reachable. TX rules came from the SOS's new Appian TAC viewer (live, 2026-09-08).
+
+| State | refs resolved | still unmatched |
+|---|---|---|
+| GA | 27/108 (25%) | 81 |
+| IN | 38/123 (30%) | 85 |
+| TN | 43/130 (33%) | 87 |
+| MN | 25/59 (42%) | 34 |
+| FL | 130/244 (53%) | 114 |
+| NY | 85/153 (55%) | 68 |
+| DE | 73/124 (58%) | 51 |
+| HI | 128/203 (63%) | 75 |
+| NJ | 54/85 (63%) | 31 |
+| AZ | 89/135 (65%) | 46 |
+| SC | 61/87 (70%) | 26 |
+| IL | 125/177 (70%) | 52 |
+| NC | 65/92 (70%) | 27 |
+| LA | 92/129 (71%) | 37 |
+| ME | 87/114 (76%) | 27 |
+| WI | 130/168 (77%) | 38 |
+| MT | 69/89 (77%) | 20 |
+| WV | 52/67 (77%) | 15 |
+| RI | 81/104 (77%) | 23 |
+| ID | 107/133 (80%) | 26 |
+| CO | 108/134 (80%) | 26 |
+| CA | 218/262 (83%) | 44 |
+| MA | 86/102 (84%) | 16 |
+| DC | 71/84 (84%) | 13 |
+| OR | 106/125 (84%) | 19 |
+| NH | 171/201 (85%) | 30 |
+| CT | 89/103 (86%) | 14 |
+| NM | 102/117 (87%) | 15 |
+| OK | 97/111 (87%) | 14 |
+| IA | 84/96 (87%) | 12 |
+| MI | 78/89 (87%) | 11 |
+| UT | 81/92 (88%) | 11 |
+| MS | 94/106 (88%) | 12 |
+| OH | 106/119 (89%) | 13 |
+| VT | 41/46 (89%) | 5 |
+| PA | 122/134 (91%) | 12 |
+| KY | 97/102 (95%) | 5 |
+| AK | 93/97 (95%) | 4 |
+| MD | 136/140 (97%) | 4 |
+| AR | 100/102 (98%) | 2 |
+| NV | 128/130 (98%) | 2 |
+| TX | 140/142 (98%) | 2 |
+| NE | 126/127 (99%) | 1 |
+| AL | 104/104 (100%) | 0 |
+| KS | 80/80 (100%) | 0 |
+| MO | 101/101 (100%) | 0 |
+| ND | 91/91 (100%) | 0 |
+| SD | 146/146 (100%) | 0 |
+| VA | 150/150 (100%) | 0 |
+| WA | 139/139 (100%) | 0 |
+| WY | 125/125 (100%) | 0 |

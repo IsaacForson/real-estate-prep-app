@@ -8,7 +8,11 @@ export interface ContentManifest {
   blueprints: Record<string, Blueprint>;
   status: Record<string, StateStatus>;
   nationalStatus: Record<string, StateStatus>;
+  glossary: GlossaryTerm[];
+  /** item id → latest version that has pre-generated audio */
+  audio: Record<string, number>;
 }
+export interface GlossaryTerm { term: string; definition: string; source: string; quoted_text: string; related_terms: string[]; items: string[]; bank: string }
 
 export function useContent() {
   const manifest = useState<ContentManifest | null>("content-manifest", () => null);

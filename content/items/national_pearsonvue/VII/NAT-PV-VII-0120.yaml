@@ -1,0 +1,40 @@
+id: NAT-PV-VII-0120
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Truth in Lending Act, a person is a 'creditor' only if the person regularly extends
+  consumer credit that meets which condition?
+options:
+  - Is secured by a mortgage or other lien on the borrower's principal residence
+  - Is extended to a natural person primarily for business, commercial, or agricultural purposes
+  - Is payable by agreement in more than four installments or subject to a finance charge
+  - Is payable by agreement in four or fewer installments with no finance charge required
+key: C
+explanation: Section 1602(g) defines 'creditor' as a person who regularly extends consumer credit
+  'payable by agreement in more than four installments or for which the payment of a finance charge
+  is or may be required,' and to whom the debt is initially payable. A security interest in a
+  dwelling is not part of the general creditor definition, so the mortgage option is wrong.
+citation:
+  source: 15 U.S.C. § 1602(g)
+  url: null
+  quoted_text: consumer credit which is payable by agreement in more than four installments or for
+    which the payment of a finance charge is or may be required
+  secondary: []
+terms:
+  - creditor
+  - consumer credit
+  - finance charge
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

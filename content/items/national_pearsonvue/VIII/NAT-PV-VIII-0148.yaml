@@ -1,0 +1,46 @@
+id: NAT-PV-VIII-0148
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller wants to net $180,000 after paying a $3,600 closing cost and a 6% commission. What
+  minimum sale price must the property bring?
+options:
+  - $194,040.00
+  - $191,489.36
+  - $183,600.00
+  - $195,319.15
+key: D
+explanation: "Under net-to-seller pricing, add the fixed dollar costs to the desired net and divide
+  by one minus the commission rate: (180,000 + 3,600) ÷ 0.94 = $195,319.15. The tempting shortcut of
+  adding 6% to the net ($194,040) understates the price because the commission is computed on the
+  unknown gross price, not on the net."
+citation:
+  source: REP Ref. Real Estate Math § 4.3
+  url: null
+  quoted_text: price = (desired net + other seller costs) ÷ (1 − commission rate)
+  secondary: []
+math:
+  worked_solution: "Desired net + fixed costs = 180,000 + 3,600 = 183,600. Divisor = 1 − 0.06 = 0.94.
+    Price = 183,600 ÷ 0.94 = 195,319.1489... → $195,319.15. Check: 195,319.15 × 0.06 = 11,719.15;
+    195,319.15 − 11,719.15 − 3,600 = $180,000.00."
+  formulas:
+    - price = (desired net + other seller costs) ÷ (1 − commission rate)
+  onscreen_calculator_only: false
+terms:
+  - net-to-seller
+  - commission
+  - sale price
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

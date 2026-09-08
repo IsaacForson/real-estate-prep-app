@@ -3,7 +3,7 @@ import { mk } from "./fixtures.js";
 import {
   ruleNoAllNoneOfTheAbove, ruleOptionLengths, ruleAbsoluteQualifiers, ruleNegativeStemBolded,
   ruleLongestIsKeyShare, ruleKeyPositionDistribution, ruleNearDuplicateStems, ruleUniqueIds,
-  ruleMathHasWork, lintItems, ruleNoMetaReference, ruleNumericallyDistinctOptions,
+  ruleMathHasWork, lintItems, ruleNoMetaReference, ruleNumericallyDistinctOptions, ruleNoOptionLettersInExplanation,
 } from "../src/rules.js";
 
 const rules = (fs: { rule: string }[]) => fs.map((f) => f.rule);
@@ -21,7 +21,7 @@ describe("per-item rules", () => {
     expect(rules(ruleOptionLengths(it))).toContain("option-length-balance");
   });
   it("rejects absolute qualifier in a subset of options", () => {
-    const it = mk({ options: ["Always by the next business day", "Within three business days", "Within five business days", "Before the closing date"] });
+    const it = mk({ options: ["Never later than the next business day", "Within three business days", "Within five business days", "Before the closing date"] });
     expect(rules(ruleAbsoluteQualifiers(it))).toContain("absolute-qualifier");
   });
   it("allows absolute qualifiers present in all four options", () => {
@@ -74,10 +74,21 @@ describe("v3 rules", () => {
   it("rejects meta references to the supplied text", () => {
     expect(rules(ruleNoMetaReference(mk({ stem: "According to the reference, how is the total commission calculated for a Florida sales associate?" })))).toContain("meta-reference-in-stem");
     expect(ruleNoMetaReference(mk())).toEqual([]);
+    expect(rules(ruleNoMetaReference(mk({ explanation: "The reference explicitly warns that most probable price, not highest price, is the phrase candidates confuse." })))).toContain("meta-reference-in-explanation");
   });
   it("rejects numerically identical options", () => {
     const it = mk({ options: ["$22,825", "$22,825.00", "$22,825.50", "$23,000"] });
     expect(rules(ruleNumericallyDistinctOptions(it))).toContain("options-numerically-equal");
     expect(ruleNumericallyDistinctOptions(mk({ options: ["$5,250", "$7,200", "$10,500", "$6,300"] }))).toEqual([]);
+  });
+});
+
+describe("explanation option letters", () => {
+  it("rejects letter references and allows content references", () => {
+    expect(rules(ruleNoOptionLettersInExplanation(mk({ explanation: "Adjusted price = $354,500, which is option C. The other choices add instead of subtract." })))).toContain("explanation-option-letter");
+    expect(rules(ruleNoOptionLettersInExplanation(mk({ explanation: "Option A satisfies all elements of the definition while the construction loan is excluded." })))).toContain("explanation-option-letter");
+    expect(ruleNoOptionLettersInExplanation(mk({ explanation: "The $22,825 figure applies the rate to the price; the correct base is the loan amount, which is why $5,850 is right." }))).toEqual([]);
+    expect(ruleNoOptionLettersInExplanation(mk({ explanation: "Section 3607(b)(2)(C)(i) requires that at least 80 percent of occupied units have an occupant 55 or older; § 1602(bb)(1)(A)(i)(I) sets the trigger; the 62-or-older category is a separate basis under subparagraph (B)." }))).toEqual([]);
+    expect(rules(ruleNoOptionLettersInExplanation(mk({ explanation: "The remedy is specific performance (A); damages (B) are inadequate." })))).toContain("explanation-option-letter");
   });
 });

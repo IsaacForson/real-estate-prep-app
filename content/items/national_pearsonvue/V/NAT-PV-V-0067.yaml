@@ -1,0 +1,40 @@
+id: NAT-PV-V-0067
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A broker who takes his commission out of the trust account before the closing at which it is
+  earned has committed which violation?
+options:
+  - Lawful commingling of funds
+  - Conversion of trust funds
+  - Permitted advance against earnings
+  - Negligent record keeping
+key: B
+explanation: The commission portion of a closing disbursement becomes the broker's money only when
+  it is earned and disbursed under the closing statement; advancing the commission to himself from
+  the trust account before closing is conversion, which is theft. Commingling is mixing trust money
+  with the broker's own funds, a different violation.
+citation:
+  source: REP Ref. Brokerage Practice § 10.2
+  url: null
+  quoted_text: a broker who "advances" himself the commission from the trust account before closing
+    has converted funds
+  secondary: []
+terms:
+  - conversion
+  - commingling
+  - trust account
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

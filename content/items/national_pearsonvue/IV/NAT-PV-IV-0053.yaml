@@ -1,0 +1,38 @@
+id: NAT-PV-IV-0053
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which statement correctly describes earnest money in a real estate purchase agreement?
+options:
+  - It is a deposit showing good faith, credited to the buyer at closing
+  - It is automatically forfeited whenever the buyer terminates the contract
+  - It is required to form a valid contract between the parties
+  - It is the consideration that supports the seller's promise
+key: A
+explanation: Earnest money is a good-faith deposit showing serious intent; it is not required to
+  form a contract and is not the consideration (the mutual promises are). If the sale closes it is
+  credited to the buyer's funds, and if the buyer properly terminates under a contingency it is
+  returned. Forfeiture occurs only if the buyer defaults and the contract so provides.
+citation:
+  source: REP Ref. Contracts § 5.1
+  url: null
+  quoted_text: It is not required to form a contract and is not the consideration for the contract
+    (the mutual promises are; § 2.4).
+  secondary: []
+terms:
+  - earnest money
+  - consideration
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

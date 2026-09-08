@@ -1,0 +1,40 @@
+id: NAT-PV-VII-0133
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under RESPA, within what period must a lender deliver or mail the home buying information
+  booklet after receiving a written loan application?
+options:
+  - Not later than 5 business days after receiving the application
+  - Not later than 3 business days after receiving the application
+  - Not later than 10 calendar days after receiving the application
+  - Not later than 7 calendar days after receiving the application
+key: B
+explanation: Section 2604(d) requires the lender to deliver or mail the booklet not later than 3
+  business days after receiving the application, unless the lender denies the application before the
+  end of that 3-day period. The other periods have no basis in the statute.
+citation:
+  source: 12 U.S.C. § 2604(d)
+  url: null
+  quoted_text: Such booklet shall be provided by delivering it or placing it in the mail not later
+    than 3 business days after the lender receives the application, but no booklet need be provided
+    if the lender denies the application for credit before the end of the 3-day period.
+  secondary: []
+terms:
+  - booklet
+  - application
+  - respa
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

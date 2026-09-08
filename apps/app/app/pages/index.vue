@@ -4,7 +4,16 @@ const settings = useSettings();
 const { load } = useContent();
 const { data: manifest } = await useAsyncData("manifest", () => load());
 const router = useRouter();
-function choose(code: string) { settings.set("jurisdiction", code); router.push("/study"); }
+const freeTier = useFreeTier();
+const blocked = ref<string | null>(null);
+async function choose(code: string) {
+  // SPEC §6: the free tier covers one state; switching after the first answer is refused honestly
+  await freeTier.load();
+  if (!freeTier.canSwitch(code)) { blocked.value = code; window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+  blocked.value = null;
+  settings.set("jurisdiction", code);
+  router.push("/study");
+}
 function label(code: string) {
   const s = manifest.value?.status[code];
   if (!s) return "planned";
@@ -17,6 +26,10 @@ function label(code: string) {
   <div>
     <h1>All 50 states + DC. Every answer cites the statute. One payment.</h1>
     <p class="muted">Pick your state. Both national banks are included, and we route you to the one your state's exam vendor actually uses.</p>
+    <p v-if="blocked" class="notice" style="margin-bottom:12px">
+      The free tier covers one state, and you've already answered questions in <strong>{{ freeTier.state.value.jurisdiction }}</strong>, so {{ JURISDICTIONS[blocked as keyof typeof JURISDICTIONS] ?? blocked }} stays locked.
+      <NuxtLink to="/pricing">Complete</NuxtLink> unlocks all 51 jurisdictions for $59 once. <NuxtLink to="/study">Keep studying {{ freeTier.state.value.jurisdiction }} →</NuxtLink>
+    </p>
     <div class="grid">
       <button v-for="code in JURISDICTION_CODES" :key="code" class="card" style="text-align:left" @click="choose(code)">
         <strong>{{ JURISDICTIONS[code] }}</strong>

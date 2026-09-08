@@ -1,0 +1,45 @@
+id: NAT-PV-VIII-0131
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A 3,000-square-foot office is leased at $20 per square foot per year. The owner pays a
+  management fee of 5% of rent actually collected. Assuming the space is fully occupied and all rent
+  is collected, what is the annual management fee?
+options:
+  - $3,000
+  - $250
+  - $2,500
+  - $3,600
+key: A
+explanation: Annual collected rent = 3,000 × $20 = $60,000. Management fees are a percentage of rent
+  actually collected, so the fee = 60,000 × 0.05 = $3,000. The $250 figure applies the 5% to a
+  single month's rent ($5,000) rather than to the annual collected rent.
+citation:
+  source: REP Ref. Real Estate Math § 13.2
+  url: null
+  quoted_text: Management fees are usually a percentage of rent actually collected (EGI).
+  secondary: []
+math:
+  worked_solution: Annual rent = 3,000 × 20 = $60,000 collected. Management fee = 60,000 × 0.05 = $3,000 per year.
+  formulas:
+    - annual rent = area × rate per square foot per year
+    - management fee = collected rent × fee percentage
+  onscreen_calculator_only: false
+terms:
+  - management fee
+  - rent per square foot
+  - collected rent
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

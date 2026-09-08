@@ -1,0 +1,40 @@
+id: NAT-PV-II-0011
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A home sells at foreclosure. The property is subject to a first mortgage recorded in 2016, a
+  judgment lien recorded in 2019, and unpaid property taxes assessed in 2023. In what order are the
+  liens paid from the sale proceeds?
+options:
+  - The 2016 mortgage first, then the 2019 judgment lien, then the property taxes
+  - Property taxes, the mortgage, and the judgment lien share the proceeds equally
+  - The 2019 judgment lien first, then the property taxes, then the 2016 mortgage
+  - Property taxes first, then the 2016 mortgage, then the 2019 judgment lien
+key: D
+explanation: Property tax and special assessment liens rank first by statute regardless of recording
+  date. The remaining liens follow first in time, first in right by recording date, so the 2016
+  mortgage is paid before the 2019 judgment lien.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: "The general rule is first in time, first in right, by recording date. Exceptions:
+    property tax and special assessment liens rank first by statute regardless of date"
+  secondary: []
+terms:
+  - lien priority
+  - property tax lien
+  - first in time, first in right
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

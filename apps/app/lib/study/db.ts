@@ -7,7 +7,11 @@ import Dexie, { type Table } from "dexie";
 import type { Progress, StudySession } from "./types.js";
 import type { Item } from "@rep/schema";
 
-export interface CachedItem { id: string; bank: string; node: string; item: Item; cachedAt: number }
+/** `batchId` / `expiresAt` are set for items issued by the API (SPEC §5.4 short-TTL batches). */
+export interface CachedItem { id: string; bank: string; node: string; item: Item; cachedAt: number; batchId?: string; expiresAt?: number }
+/**
+ * kv keys in use: activeSession, freeTier, auth.device, entitlement:<uid>, sync.pushedAfter, sync.since.
+ */
 export interface KV { key: string; value: unknown }
 
 export class StudyDb extends Dexie {

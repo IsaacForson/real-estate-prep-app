@@ -1,0 +1,41 @@
+id: NAT-PV-V-0103
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Fair Housing Act, after a complaint is filed, the Secretary of Housing and Urban
+  Development must complete the investigation of the alleged discriminatory housing practice within
+  what time frame, unless it is impracticable to do so?
+options:
+  - Within 100 days after the filing of the complaint
+  - Within 30 days after the filing of the complaint
+  - Within 60 days after the filing of the complaint
+  - Within 180 days after the filing of the complaint
+key: A
+explanation: Section 3610(a)(1)(B)(iv) requires the Secretary to complete the investigation within
+  100 days after the filing of the complaint, unless it is impracticable to do so, in which case the
+  Secretary must notify the parties in writing of the reasons. The 10-day period in the same
+  subsection concerns serving notice on the respondent, not completing the investigation.
+citation:
+  source: 42 U.S.C. § 3610(a)(1)(B)(iv)
+  url: null
+  quoted_text: the Secretary shall make an investigation of the alleged discriminatory housing
+    practice and complete such investigation within 100 days after the filing of the complaint
+  secondary: []
+terms:
+  - investigation
+  - complaint
+  - conciliation
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

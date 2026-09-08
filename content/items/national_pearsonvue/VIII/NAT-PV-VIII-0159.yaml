@@ -1,0 +1,44 @@
+id: NAT-PV-VIII-0159
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A homeowner owes $168,000 on a first mortgage and takes out a $32,000 home equity loan. The
+  home is currently worth $250,000. Which statement correctly describes the combined loan-to-value
+  position?
+options:
+  - The CLTV is 67.2% because only the first mortgage balance is divided by the $250,000 value
+  - The CLTV is 87.2% because the original purchase price is added to the combined lien total
+  - The CLTV is 12.8% because the equity loan alone is divided by the $250,000 value
+  - The CLTV is 80% because both liens totaling $200,000 are divided by the $250,000 value
+key: D
+explanation: CLTV = (all liens) ÷ value, so ($168,000 + $32,000) ÷ $250,000 = 0.80 = 80%. The 67.2%
+  option is wrong because it counts only the first mortgage; the combined loan-to-value ratio must
+  include every lien secured by the property.
+citation:
+  source: REP Ref. Real Estate Math § 5.3
+  url: null
+  quoted_text: CLTV = (all liens) ÷ value.
+  secondary: []
+math:
+  worked_solution: Combined liens = $168,000 + $32,000 = $200,000. CLTV = $200,000 ÷ $250,000 = 0.80 = 80%.
+  formulas:
+    - CLTV = (all liens) ÷ value
+  onscreen_calculator_only: false
+terms:
+  - combined loan-to-value
+  - lien
+  - home equity loan
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

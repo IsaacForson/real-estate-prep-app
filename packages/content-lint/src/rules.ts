@@ -22,7 +22,7 @@ export const THRESHOLDS = {
   nearDupJaccard: 0.6,
 } as const;
 
-const ABSOLUTES = ["always", "never", "all", "none", "every", "only", "must never", "cannot ever"];
+const ABSOLUTES = ["always", "never", "must never", "cannot ever", "under no circumstances", "in all cases", "without exception"];
 const ALL_NONE_RE = /\b(all|none|both|neither)\s+of\s+the\s+above\b|\b(a|b|c|d)\s+and\s+(a|b|c|d)\s+(only|above)\b/i;
 const NEGATION_RE = /\b(not|except|never|least|false|incorrect|cannot)\b/i;
 const BOLD_NEGATION_RE = /\*\*\s*(not|except|never|least|false|incorrect|cannot)\s*\*\*/i;
@@ -43,6 +43,7 @@ export function ruleOptionLengths(item: Item): Finding[] {
   const out: Finding[] = [];
   lens.forEach((l, i) => {
     const dev = Math.abs(l - mean) / mean;
+    if (Math.abs(l - mean) < 12) return; // a few characters' difference on short options is not a tell
     if (dev > THRESHOLDS.optionLengthTolerance)
       out.push(f("option-length-balance", "error", item.id, `option ${OPTION_LETTERS[i]} length ${l} deviates ${(dev * 100).toFixed(0)}% from mean ${mean.toFixed(0)} (limit ${THRESHOLDS.optionLengthTolerance * 100}%)`));
   });
@@ -103,9 +104,13 @@ export function ruleMathHasWork(item: Item): Finding[] {
 
 const META_STEM_RE = /\b(according to|per|under|in) the (reference|supplied text|passage|text above|statute above|excerpt)\b/i;
 
+const META_ANY_RE = /\b(the (reference|supplied text|passage|text above|statute above|excerpt|governing text)|the text (lists|states|says|provides|defines|notes|explains|describes|directs|requires|instructs|warns|tells|specifies|indicates)|as (stated|noted|explained) (in|by) the (reference|text|passage))\b/i;
+
 export function ruleNoMetaReference(item: Item): Finding[] {
-  const hits = [item.stem, ...item.options].filter((t) => META_STEM_RE.test(t));
-  return hits.length ? [f("meta-reference-in-stem", "error", item.id, "stem/option refers to 'the reference/supplied text' — the candidate never sees it")] : [];
+  const out: Finding[] = [];
+  if ([item.stem, ...item.options].some((t) => META_STEM_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option refers to 'the reference/supplied text' — the candidate never sees it"));
+  if (META_ANY_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation refers to 'the reference/text' — state the rule directly and cite the section"));
+  return out;
 }
 
 /** "$22,825" and "$22,825.00" are the same answer; so are "6%" and "6.0%". */
@@ -126,8 +131,17 @@ export function ruleNumericallyDistinctOptions(item: Item): Finding[] {
   return out;
 }
 
+/** Explanations must describe wrong answers by content: option letters are reassigned when key positions are balanced. */
+export function ruleNoOptionLettersInExplanation(item: Item): Finding[] {
+  // "(C)" between other parentheses or after a digit is a statutory subsection ("§ 3607(b)(2)(C)(i)"), not an option letter.
+  return /\b(?:[Oo]ption|[Cc]hoice|[Aa]nswer|[Aa]lternative)s?\s+\(?[A-D]\)?(?![A-Za-z])|(?<![\w)])(?<!(?:sub)?paragraph |subsection |subdivision |clause |section |item |§ ?)\(\s*[A-D]\s*\)(?![(\w])|\b[A-D]\s+is\s+(?:correct|incorrect|wrong|right|the answer)\b/.test(item.explanation)
+    ? [f("explanation-option-letter", "error", item.id, "explanation refers to an option by letter; letters change when positions are balanced — describe the option's content instead")]
+    : [];
+}
+
 export const ITEM_RULES = [
   ruleNoMetaReference,
+  ruleNoOptionLettersInExplanation,
   ruleNumericallyDistinctOptions,
   ruleNoAllNoneOfTheAbove,
   ruleOptionLengths,

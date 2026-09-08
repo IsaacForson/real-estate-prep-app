@@ -1,0 +1,45 @@
+id: NAT-PV-V-0060
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the federal statutory safe harbor, a licensed real estate agent is treated as a
+  statutory non-employee for federal tax purposes when which set of conditions is met?
+options:
+  - Licensed, paid substantially all compensation based on sales output, and working under a written
+    contract stating the agent is not an employee
+  - Licensed, paid a base salary plus commissions on sales, and working under a written contract
+    stating the agent is not an employee
+  - Licensed, reimbursed for business expenses and paid commission splits, and working under a
+    written contract stating the agent is not an employee
+  - Licensed, paid hourly wages plus a small bonus per closing, and working under a written contract
+    stating the agent is not an employee
+key: A
+explanation: "The safe harbor requires all three conditions: a licensed agent, substantially all
+  compensation directly related to sales or other output rather than hours worked, and a written
+  contract providing the individual will not be treated as an employee for federal tax purposes.
+  Salaries, hourly wages, and reimbursed expenses are conduct inconsistent with independent
+  contractor status."
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: substantially all of the individual's compensation for real estate services is directly
+    related to sales or other output (commissions), rather than to the number of hours worked
+  secondary: []
+terms:
+  - independent contractor
+  - statutory non-employee
+  - safe harbor
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

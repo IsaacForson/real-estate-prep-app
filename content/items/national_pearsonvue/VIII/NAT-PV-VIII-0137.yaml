@@ -1,0 +1,43 @@
+id: NAT-PV-VIII-0137
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A trapezoidal lot has 120 feet of frontage on the street, 160 feet along the rear line, and a
+  depth of 180 feet. What is the area of the lot in square feet?
+options:
+  - 28,800 square feet
+  - 50,400 square feet
+  - 25,200 square feet
+  - 21,600 square feet
+key: C
+explanation: "For a trapezoid, average the two parallel sides and multiply by depth: (120 + 160) ÷ 2
+  = 140 feet average width; 140 × 180 = 25,200 square feet. Using only the frontage (120 × 180 =
+  21,600) or only the rear width (160 × 180 = 28,800) ignores the trapezoid formula, and multiplying
+  the sum of the sides by depth (280 × 180 = 50,400) forgets to divide by two."
+citation:
+  source: REP Ref. Real Estate Math § 2.3
+  url: null
+  quoted_text: "Trapezoid (two parallel sides): area = (side 1 + side 2) ÷ 2 × depth."
+  secondary: []
+math:
+  worked_solution: Average width = (120 + 160) ÷ 2 = 280 ÷ 2 = 140 ft. Area = 140 × 180 = 25,200 sq ft.
+  formulas:
+    - Trapezoid area = (side 1 + side 2) ÷ 2 × depth
+  onscreen_calculator_only: false
+terms:
+  - trapezoid
+  - area
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

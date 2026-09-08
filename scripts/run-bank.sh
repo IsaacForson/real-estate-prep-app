@@ -26,6 +26,11 @@ else
   run draft "$BANK" "$@"          # free-tier router: drafts are written immediately
   echo "== verify $BANK"
   run verify "$BANK"
+  # a second verify pass picks up drafts whose verifier calls failed on rate limits
+  if [ -n "$(ls .pipeline/drafts/$BANK 2>/dev/null)" ]; then echo "== verify (retry) $BANK"; run verify "$BANK"; fi
+  echo "== balance + keys $BANK"
+  run balance "$BANK"             # key must not be the unique longest option
+  run keys "$BANK"                # uniform key positions per domain
 fi
 echo "== qa packets"; run qa-packet "$BANK"
 run status --md docs/STATUS.md >/dev/null

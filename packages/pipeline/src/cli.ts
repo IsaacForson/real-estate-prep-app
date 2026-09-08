@@ -10,11 +10,19 @@ import { computeStatus, renderStatus, writeStatusMarkdown } from "./status.js";
 import { auditRefs, renderAudit } from "./refsAudit.js";
 import { writeQaPackets } from "./qaPacket.js";
 import { draftDirect, verifyDirect } from "./direct.js";
+import { buildGlossary, reviewGlossary } from "./glossary.js";
+import { needsBalancing, balanceItem } from "./balance.js";
+import { assignKeyPositions } from "./normalize.js";
+import { locateQuote, excerptAround } from "./cite.js";
+import { LlmRouter } from "@rep/llm";
+import { Item, domainOf } from "@rep/schema";
+import { loadItems } from "@rep/content-lint";
+import { renderAudio } from "./audio.js";
 import { loadEnv } from "@rep/llm";
 loadEnv();
 const BACKEND = process.env.LLM_BACKEND ?? "router";
 import { readFileSync } from "node:fs";
-import { readJson, listFiles } from "./fsx.js";
+import { readJson, listFiles, readYaml, writeYaml } from "./fsx.js";
 import { join } from "node:path";
 
 const [cmd, ...rest] = process.argv.slice(2).filter((a) => a !== "--");
@@ -32,6 +40,9 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   verify <bank>                                     gate 3a locally, then verifier (router: immediate; anthropic: batch)
   collect-verify <batchId>                          pull verdicts → content/items (pass) / .pipeline/rejected (fail)
   batches                                           list known batches
+  keys <bank>                                       assign key positions round-robin per domain (exactly uniform A/B/C/D)
+  balance <bank>                                    rewrite distractors on content items whose key is the longest option; item returns to "verified" for re-review
+  requeue <bank> [--match "substring"]              move rejected drafts whose reasons match back to drafts (after fixing a rule)
   qa-packet <bank> [--status verified|draft] [--limit N] [--out dir]   one Markdown review packet per item (item + cited authority section)
   wait <batchId>                                    poll a batch until it ends, then collect (draft) or collect-verify (verify)
   qa-sheet <bank> [--sample 0.2]                    reviewer CSV of a random sample of verified items
@@ -39,6 +50,9 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   qa-reject <reviewer> <id> "<reason>"              retire an item
   publish <bank>                                    qa_approved → published
   refs-audit [XX|bank] [--verbose]                  resolve every blueprint node's statute_refs against cached authorities
+  glossary <bank> [--limit N]                       define the bank's item terms from cached authorities → content/glossary/<bank>.yaml (F16)
+  glossary-approve <bank> <reviewer> <term...> / glossary-reject <bank> <reviewer> "<reason>" <term...>
+  audio-render <bank> [--limit N] [--status qa_approved,published]   pre-generate narration MP3s → content/audio/<item>/v<n>/ (F6)
   status [--md docs/STATUS.md]                      per-jurisdiction readiness table (map, blueprint, authorities, items, mocks, phase)
   mock-build <XX> [--forms 5] [--status published]  assemble N non-overlapping full-length mocks in the state's format
 `;
@@ -93,6 +107,52 @@ async function main() {
       for (const p of listFiles(join(CONFIG.stateDir, "batches"), ".json")) { const m = readJson<any>(p); console.log(`${m.batch_id}  ${m.kind.padEnd(6)} ${m.bank.padEnd(20)} ${m.requests.length} reqs  ${m.created}`); }
       break;
     }
+    case "keys": {
+      const bank = positional[0]!;
+      const items = loadItems(CONFIG.contentDir).items.map((x) => x.value).filter((i) => i.bank === bank && i.status !== "retired");
+      const dist: Record<string, number> = {};
+      for (const out of assignKeyPositions(items)) { writeYaml(join(CONFIG.contentDir, "items", bank, domainOf(out.blueprint_node), `${out.id}.yaml`), out); dist[out.key] = (dist[out.key] ?? 0) + 1; }
+      console.log(`${items.length} items re-keyed`, dist);
+      break;
+    }
+    case "balance": {
+      const bank = positional[0]!;
+      const jur = bank.startsWith("state_") ? bank.slice(6) : "NAT";
+      const docs = loadStatutes(jur);
+      const router = new LlmRouter(); router.log = (l) => console.log(l);
+      const items = loadItems(CONFIG.contentDir).items.map((x) => x.value).filter((i) => i.bank === bank && i.status !== "retired" && needsBalancing(i));
+      console.log(`${items.length} items need balancing`);
+      let changed = 0;
+      for (const it of items) {
+        const hit = locateQuote(docs, it.citation.quoted_text);
+        const excerpt = hit ? excerptAround(hit.doc.text, hit.index, 3000) : it.explanation;
+        try {
+          const b = await balanceItem(router, it, excerpt);
+          if (!b.changed || !needsBalancing(it)) continue;
+          const out: Item = { ...b.item, status: "verified", reviewer: null, qa_approved_on: null };
+          writeYaml(join(CONFIG.contentDir, "items", bank, domainOf(out.blueprint_node), `${out.id}.yaml`), out);
+          changed++; console.log(`  ${it.id}: ${b.rationale.slice(0, 120)}`);
+        } catch (e) { console.log(`  ${it.id}: balance failed — ${String(e).slice(0, 120)}`); }
+      }
+      console.log(`${changed} items rebalanced → status verified (re-review with qa-packet)`);
+      break;
+    }
+    case "requeue": {
+      const { renameSync, readdirSync } = await import("node:fs");
+      const bank = positional[0]!; const match = flag("match");
+      const dir = join(CONFIG.stateDir, "rejected", bank); let n = 0;
+      for (const f of readdirSync(dir).filter((x) => x.endsWith(".yaml"))) {
+        const d = readYaml<any>(join(dir, f));
+        const reasons: string[] = d.rejection?.reasons ?? [];
+        if (match && !reasons.some((r) => r.includes(match))) continue;
+        delete d.rejection; d.status = "draft"; d.verified_on = null;
+        writeYaml(join(CONFIG.stateDir, "drafts", bank, f), d);
+        renameSync(join(dir, f), join(dir, f + ".requeued"));
+        n++;
+      }
+      console.log(`${n} rejected drafts requeued for ${bank}`);
+      break;
+    }
     case "qa-packet": {
       const r = writeQaPackets(positional[0]!, { status: flag("status"), limit: flag("limit") ? Number(flag("limit")) : undefined, out: flag("out") ? join(repoRootDir(), flag("out")!) : undefined });
       console.log(`${r.count} packets → ${r.dir}/index.md`);
@@ -124,6 +184,10 @@ async function main() {
       if (rest.includes("--verbose")) for (const r of rows) if (r.unmatched.length || r.refs === 0) console.log(`  ${r.bank} ${r.node}: ${r.refs === 0 ? "NO REFS" : "unmatched → " + r.unmatched.join(" | ")}`);
       break;
     }
+    case "glossary": { console.log(await buildGlossary(positional[0]!, { limit: flag("limit") ? Number(flag("limit")) : undefined })); break; }
+    case "glossary-approve": { console.log(reviewGlossary(positional[0]!, "approved", positional[1]!, positional.slice(2)), "entries approved"); break; }
+    case "glossary-reject": { console.log(reviewGlossary(positional[0]!, "rejected", positional[1]!, positional.slice(3), positional[2]), "entries rejected"); break; }
+    case "audio-render": { console.log(await renderAudio(positional[0]!, { limit: flag("limit") ? Number(flag("limit")) : undefined, status: flag("status")?.split(",") as any })); break; }
     case "status": {
       const md = flag("md") ? writeStatusMarkdown(join(repoRootDir(), flag("md")!)) : renderStatus(computeStatus());
       console.log(md);

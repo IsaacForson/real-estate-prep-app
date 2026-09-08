@@ -1,0 +1,49 @@
+id: NAT-PV-VIII-0165
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A home sells for $400,000. The seller owes a 6% commission, a loan payoff of $186,500, a
+  transfer tax of $0.50 per $500 or fraction thereof, a tax proration owed to the buyer of $910, and
+  a settlement fee of $500. What are the seller's net proceeds?
+options:
+  - $189,510
+  - $188,600
+  - $211,690
+  - $187,690
+key: D
+explanation: Seller's net proceeds equal seller credits minus seller debits. The only credit is the
+  $400,000 price; debits are commission $24,000, payoff $186,500, transfer tax $400 (800 increments
+  × $0.50), proration $910, and settlement fee $500, totaling $212,310, so net proceeds are
+  $187,690. The $188,600 option wrongly omits the proration the seller owes the buyer.
+citation:
+  source: REP Ref. Real Estate Math § 12.1
+  url: null
+  quoted_text: Seller's net proceeds = seller credits − seller debits.
+  secondary: []
+math:
+  worked_solution: Commission = 400,000 × 0.06 = $24,000. Transfer tax = 400,000 ÷ 500 = 800
+    increments × 0.50 = $400. Seller debits = 24,000 + 186,500 + 400 + 910 + 500 = $212,310. Net
+    proceeds = 400,000 − 212,310 = $187,690.
+  formulas:
+    - net proceeds = seller credits − seller debits
+    - transfer tax = (price ÷ increment, rounded up) × rate
+  onscreen_calculator_only: false
+terms:
+  - net proceeds
+  - commission
+  - transfer tax
+  - debit
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

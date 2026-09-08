@@ -1,0 +1,40 @@
+id: NAT-PV-V-0075
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under the general rules of brokerage compensation, a salesperson who sells a property may
+  lawfully accept compensation for that sale from:"
+options:
+  - The seller directly if the seller offers a bonus
+  - The cooperating broker who shared the commission
+  - The salesperson's sponsoring broker only
+  - The buyer's lender as a referral reward
+key: C
+explanation: A salesperson may accept compensation for licensed activity only from his or her
+  sponsoring broker; bonuses from sellers or builders must be paid through the broker. Direct
+  payment from a seller is the tempting distractor, but even a seller-offered bonus must flow
+  through the sponsoring broker.
+citation:
+  source: REP Ref. Brokerage Practice § 4.7
+  url: null
+  quoted_text: A salesperson may accept compensation for licensed activity only from his or her
+    sponsoring broker — never directly from a client, another broker, a lender, or a vendor.
+  secondary: []
+terms:
+  - salesperson
+  - compensation
+  - sponsoring broker
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

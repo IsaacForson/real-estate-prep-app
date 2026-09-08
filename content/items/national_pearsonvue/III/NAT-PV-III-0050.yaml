@@ -1,0 +1,40 @@
+id: NAT-PV-III-0050
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the federal banking agencies' appraisal regulations, which transaction is exempt from
+  the requirement that a state-licensed or state-certified appraiser perform an appraisal for a
+  federally related transaction?
+options:
+  - A commercial real estate transaction of $1,000,000 or less
+  - A residential real estate transaction of $600,000 or less
+  - A commercial real estate transaction of $750,000 or less
+  - A residential real estate transaction of $400,000 or less
+key: D
+explanation: The agencies exempt residential real estate transactions of $400,000 or less and
+  commercial transactions of $500,000 or less; below the threshold a written evaluation, which need
+  not be prepared by a licensed appraiser, is still required. The $600,000, $750,000, and $1,000,000
+  figures exceed the stated thresholds.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.3
+  url: null
+  quoted_text: residential real estate transactions of $400,000 or less (raised from $250,000 in 2019)
+    and commercial real estate transactions of $500,000 or less
+  secondary: []
+terms:
+  - federally related transaction
+  - appraisal threshold
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-08
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08
