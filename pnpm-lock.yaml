@@ -50,6 +50,9 @@ importers:
       '@rep/schema':
         specifier: workspace:*
         version: link:../../packages/schema
+      '@revenuecat/purchases-capacitor':
+        specifier: ^13.5.0
+        version: 13.5.0(@capacitor/core@8.5.1)
       '@supabase/supabase-js':
         specifier: ^2.58.0
         version: 2.116.0
@@ -841,6 +844,14 @@ packages:
 
   '@poppinss/exception@1.2.3':
     resolution: {integrity: sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw==}
+
+  '@revenuecat/purchases-capacitor@13.5.0':
+    resolution: {integrity: sha512-m+5lockasPY9bhK989nXNUBtpoSwr6Kd8AqIhBDsq0scspJPV9QSLE1H08rFx41l3t60DNnJLtFTbFWhJyg0ZQ==}
+    peerDependencies:
+      '@capacitor/core': '>=8.0.0'
+
+  '@revenuecat/purchases-typescript-internal-esm@18.33.1':
+    resolution: {integrity: sha512-X83gP4VXX4j98tZ+WW6daD40IHkPAoUUap5/rrdihLZUBeeHdWUIQlm59Syx06LwBbsvalMc1eSfMib7M5vAjA==}
 
   '@rolldown/binding-android-arm-eabi@1.2.7':
     resolution: {integrity: sha512-EypzgnYCwyVY4NDHKzGmNJT5b+XaQEBniHxsMdeIQLB/tcCzZnhqrzHpZFbX9iaxx+5RiB8caATBtfvZP7zVxQ==}
@@ -4893,6 +4904,13 @@ snapshots:
       supports-color: 10.2.2
 
   '@poppinss/exception@1.2.3': {}
+
+  '@revenuecat/purchases-capacitor@13.5.0(@capacitor/core@8.5.1)':
+    dependencies:
+      '@capacitor/core': 8.5.1
+      '@revenuecat/purchases-typescript-internal-esm': 18.33.1
+
+  '@revenuecat/purchases-typescript-internal-esm@18.33.1': {}
 
   '@rolldown/binding-android-arm-eabi@1.2.7':
     optional: true

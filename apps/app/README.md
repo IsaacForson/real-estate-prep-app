@@ -57,3 +57,20 @@ The client never receives real item ids or the whole bank in `api` mode; the ser
 Payments / checkout (merchant of record + RevenueCat), narration UI (lib/narration exists),
 glossary layer (F16), study plan tied to exam date (F20), tablet rotation checks (F14),
 encrypted-at-rest item cache and TTL eviction (SPEC §5.4).
+
+## Android release build
+
+Prerequisites (this Mac, 2026-09-08): Homebrew `android-commandlinetools` (`sdkmanager`, `adb`), **JDK 21**
+(`brew install openjdk@21`; Capacitor 8's Android library needs it — Java 17 fails with "invalid source release: 21"),
+SDK platform 36 + build-tools 36 (`scripts/android-setup.sh sdk`, after `scripts/android-setup.sh licenses`).
+
+```bash
+scripts/android-setup.sh bundle   # content manifest → nuxt generate → cap sync → gradlew bundleRelease
+# → apps/app/android/app/build/outputs/bundle/release/app-release.aab
+```
+
+Signing: `android/keystore/upload.jks` (git-ignored), alias `upload`, password `ANDROID_KEYSTORE_PASSWORD` in the
+repo-root `.env`. Keep a backup of the keystore outside the repo — losing it means losing the ability to update the
+app (or you must enrol in Play App Signing key reset). Package name `com.forsare.realestateprep` is fixed by the
+first Play upload. Manifest carries the background-audio FGS (`mediaPlayback`) entries from docs/AUDIO_SPIKE.md;
+declare that FGS type in Play Console → Policy → App content before production.
