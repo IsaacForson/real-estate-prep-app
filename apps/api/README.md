@@ -209,3 +209,15 @@ Numbers live in one place per side: `functions/_shared/limits.ts` and the commen
   (`pnpm db:smoke`); `supabase db reset` against the real stack has not been run here, so
   Supabase-specific defaults (grants on `public`, `auth.users` columns) are still worth one
   local run.
+
+## Deployment record
+
+- 2026-09-08: linked to hosted project `lstgofflpwhdriiqyltu` (`https://lstgofflpwhdriiqyltu.supabase.co`); migrations 0001–0008 applied
+  (`0008_storage.sql` adds private buckets `batches` and `content`); all 7 edge functions deployed with `supabase functions deploy --use-api`;
+  secrets set: `BATCH_SIGNING_SECRET`, `REVENUECAT_WEBHOOK_AUTH`, `REVENUECAT_ALLOW_SANDBOX=true`, `BATCH_BUCKET=batches`
+  (values live in the repo-root `.env`, never in git). Smoke: `issue-batch` without a token → 401; `webhook-revenuecat` with a wrong
+  Authorization header → 401 bad_signature.
+- RevenueCat webhook URL: `https://lstgofflpwhdriiqyltu.supabase.co/functions/v1/webhook-revenuecat` with header
+  `Authorization: <REVENUECAT_WEBHOOK_AUTH>`.
+- Still to set when products exist: `REVENUECAT_PRODUCT_ID_COMPLETE`, `REVENUECAT_PRODUCT_ID_PASS_GUARANTEE`; Paddle / Lemon Squeezy secrets when web checkout is chosen.
+- pgcrypto note: hosted projects keep extensions in the `extensions` schema; `fn_random_token` calls `extensions.gen_random_bytes`.

@@ -30,7 +30,7 @@ const DEFAULTS: Record<string, Omit<ProviderConfig, "keys" | "name" | "maxConcur
   deepseek: { baseUrl: "https://api.deepseek.com/v1", model: "deepseek-v4-pro", altModels: ["deepseek-v4-flash"], maxInputTokens: 100000, rpm: 60, jsonMode: true },
   // deepseek-v4-pro on NVIDIA hangs; kimi-k3 is strong but a slow reasoning model (80–150 s per drafting call).
   // minimax-m3 answers in ~3 s and nemotron-3-super in ~7 s; kimi-k3 stays as the verifier default (see VERIFY_NVIDIA_MODEL).
-  nvidia: { baseUrl: "https://integrate.api.nvidia.com/v1", model: "minimaxai/minimax-m3", altModels: ["nvidia/nemotron-3-super-120b-a12b", "moonshotai/kimi-k3", "openai/gpt-oss-20b"], maxInputTokens: 100000, rpm: 40, jsonMode: true, maxConcurrent: 2 },
+  nvidia: { baseUrl: "https://integrate.api.nvidia.com/v1", model: "nvidia/nemotron-3-super-120b-a12b", altModels: ["moonshotai/kimi-k3", "minimaxai/minimax-m3", "openai/gpt-oss-20b"], maxInputTokens: 100000, rpm: 40, jsonMode: true, maxConcurrent: 2 },
 };
 
 function keysFor(name: string): string[] {
