@@ -14,6 +14,7 @@ const mode = useAppMode();
 
 const email = ref("");
 const sent = ref(false);
+const code = ref("");
 const error = ref<string | null>(null);
 const busy = ref(false);
 const removing = ref<string | null>(null);
@@ -22,7 +23,13 @@ async function magicLink() {
   error.value = null; busy.value = true;
   const r = await auth.signInWithEmail(email.value.trim());
   busy.value = false;
-  if (r.ok) sent.value = true; else error.value = r.error ?? "Could not send the link.";
+  if (r.ok) sent.value = true; else error.value = r.error ?? "Could not send the code.";
+}
+async function verifyCode() {
+  error.value = null; busy.value = true;
+  const r = await auth.verifyEmailCode(email.value, code.value);
+  busy.value = false;
+  if (!r.ok) error.value = r.error ?? "That code didn't work. Check it and try again.";
 }
 async function oauth(p: "apple" | "google") {
   error.value = null;
@@ -61,12 +68,19 @@ onMounted(() => { void freeTier.load(); });
     <template v-else-if="!auth.signedIn.value">
       <div class="card">
         <h2>Sign in</h2>
-        <p class="muted">No password. We email you a link; sessions stay signed in so studying is never interrupted.</p>
+        <p class="muted">No password. We email you a 6-digit code; sessions stay signed in so studying is never interrupted.</p>
         <form v-if="!sent" class="row" @submit.prevent="magicLink">
           <input v-model="email" type="email" required placeholder="you@example.com" autocomplete="email" style="flex:1;min-width:220px" />
-          <button class="primary" type="submit" :disabled="busy || !email">Email me a link</button>
+          <button class="primary" type="submit" :disabled="busy || !email">Email me a code</button>
         </form>
-        <p v-else class="notice">Check <strong>{{ email }}</strong> for your sign-in link. You can close this tab.</p>
+        <template v-else>
+          <p class="notice">We sent a code to <strong>{{ email }}</strong>. Enter it below. If the email has a sign-in link instead, tapping it also works on the web.</p>
+          <form class="row" @submit.prevent="verifyCode">
+            <input v-model="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9 ]*" maxlength="8" required placeholder="123456" style="flex:1;min-width:160px;letter-spacing:2px" />
+            <button class="primary" type="submit" :disabled="busy || code.replace(/\s+/g, '').length < 6">Verify</button>
+            <button type="button" :disabled="busy" @click="sent = false; code = ''">Use a different email</button>
+          </form>
+        </template>
         <div class="row" style="margin-top:12px">
           <button @click="oauth('apple')"> Continue with Apple</button>
           <button @click="oauth('google')">Continue with Google</button>

@@ -40,13 +40,15 @@ Volumes are ⚠ unverified until Phase 0 replaces them with ARELLO / commission 
 All 51 pipelines can run concurrently — the constraint is QA reviewer throughput, not the model.
 Budget 2–3 recently licensed reviewers per state (SPEC §10), paid per batch.
 
-## Where things stand — 2026-09-08 (evening)
+## Where things stand — 2026-09-08 (late evening)
 
 | Phase | Status |
 |---|---|
-| 0. Verify | State map 51/51 from primary sources. Audio: GO on Capacitor via `@mediagrid/capacitor-native-audio`; Groq TTS terms accepted, `pipeline audio-render` produces MP3 assets. Payment rails: RevenueCat account created; Supabase project and Google Play products pending Forson (instructions given). |
-| 1. Engine | Pipeline complete incl. free-tier LLM router (`packages/llm`), direct draft/verify, distractor balancing, uniform key assignment, requeue, refs-audit, glossary, audio-render, QA packets. Client wired to Supabase in three modes (static / free tier / signed-in API) with sync, devices, entitlement; 29 client tests. Backend schema + 7 edge functions (38 Deno tests). |
-| 2. Content | Ground truth: 47 states grounded, 80% of 6,347 blueprint refs resolve (GA, NJ rules, IN, TN need a human download). **Pearson VUE national: 85 items approved after 100% in-house QA** (46% yield of 184 pilot drafts; 20% QA rejection, mostly classes now caught by lint). Full remaining PV draft running; PSI and 51 states follow. |
+| 0. Verify | State map 51/51 from primary sources. Audio: GO on Capacitor via `@mediagrid/capacitor-native-audio`; Groq TTS terms accepted, `pipeline audio-render` produces MP3 assets. Payment rails (Android): Play Console app on internal testing, three one-time products active, RevenueCat app + entitlements + offering + webhook configured; RevenueCat's Play credentials await Google's permission propagation. Web merchant of record not started. |
+| 1. Engine | Pipeline complete incl. free-tier LLM router (`packages/llm`), direct draft/verify, distractor balancing, uniform key assignment, requeue, refs-audit, glossary, audio-render, QA packets. Client wired to Supabase in three modes (static / free tier / signed-in API) with sync, devices, entitlement; email-code sign-in; RevenueCat purchase flow on `/pricing` (native only). Backend deployed to Supabase (8 migrations, 7 edge functions, secrets incl. RevenueCat product map, sandbox allowed for testing). Signed Android bundles: versionCode 3 = 1.0.2 with Supabase + RevenueCat keys baked in. |
+| 2. Content | Ground truth: 47 states grounded, 80% of 6,347 blueprint refs resolve (GA, NJ rules, IN, TN need a human download). **Pearson VUE national: 85 items approved after 100% in-house QA** (46% yield of 184 pilot drafts; 20% QA rejection, mostly classes now caught by lint). Full remaining PV draft running on NVIDIA Nemotron (55/207 requests done, ~1 request per 2–3 min; faster after the Groq daily reset). PSI and 51 states follow. |
 | 3–5 | Not started. |
 
-Next actions, in order: (1) finish PV (review the full-run output), then PSI, then states in the docs/BUILD_SEQUENCE order — each 100%-reviewed before publish; (2) Forson: Supabase `.env` values → deploy; Play Console products → RevenueCat; GA/NJ/IN/TN statute downloads; (3) device day for audio; (4) mock forms + per-state landing pages once state banks exist.
+Blockers needing Forson: (a) custom SMTP for Supabase Auth (Resend or Brevo) — the default mailer allows 2 emails/hour and the free tier cannot edit the email template, so the 6-digit code does not appear in emails until SMTP is configured; (b) Play payments-profile country (Ghana eligibility); (c) GA/NJ/IN/TN statute downloads; (d) Google/Apple OAuth client ids (optional).
+
+Next actions, in order: (1) finish PV (review the full-run output), then PSI, then states in the docs/BUILD_SEQUENCE order — each 100%-reviewed before publish; (2) sandbox purchase test on a phone once RevenueCat credentials validate; (3) device day for audio; (4) mock forms + per-state landing pages once state banks exist; (5) web checkout via merchant of record.

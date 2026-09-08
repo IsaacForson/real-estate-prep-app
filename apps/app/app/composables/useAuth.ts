@@ -149,6 +149,13 @@ export function useAuth() {
     return error ? { ok: false, error: error.message } : { ok: true };
   }
 
+  /** Verify the 6-digit code from the sign-in email (works on native where links can't open the app). */
+  async function verifyEmailCode(email: string, token: string): Promise<{ ok: boolean; error?: string }> {
+    if (!supabase) return { ok: false, error: "Accounts are not configured in this build." };
+    const { error } = await supabase.auth.verifyOtp({ email: email.trim(), token: token.replace(/\s+/g, ""), type: "email" });
+    return error ? { ok: false, error: error.message } : { ok: true };
+  }
+
   async function signInWithOAuth(provider: "apple" | "google"): Promise<{ ok: boolean; error?: string }> {
     if (!supabase) return { ok: false, error: "Accounts are not configured in this build." };
     const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: `${location.origin}/account` } });
@@ -175,6 +182,6 @@ export function useAuth() {
   return {
     configured, ready, user, signedIn, notice, device, deviceLimit, busy,
     init, accessToken, authHeaders, apiHeaders, registerDevice,
-    signInWithEmail, signInWithOAuth, signOut, onSessionRevoked, dismissNotice,
+    signInWithEmail, verifyEmailCode, signInWithOAuth, signOut, onSessionRevoked, dismissNotice,
   };
 }
