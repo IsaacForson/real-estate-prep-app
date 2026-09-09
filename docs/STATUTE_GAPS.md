@@ -122,3 +122,29 @@ re-fetch live when reachable. TX rules came from the SOS's new Appian TAC viewer
 | VA | 150/150 (100%) | 0 |
 | WA | 139/139 (100%) | 0 |
 | WY | 125/125 (100%) | 0 |
+
+
+## Corpus damage audit — 2026-09-09
+
+Reaching a source is not the same as holding usable text. Three failure modes were found only when
+agent drafting tried to quote verbatim from the cache; none of them fails a test, and all three look
+identical from outside (a state that merely seems to have "thin" statute text).
+
+| Jurisdiction | Files | Failure | Status |
+|---|---|---|---|
+| KY | 49 | Raw PDF bytes. `ingest --file` read the download with `readFileSync(file, "utf8")`, which replaces every invalid byte with U+FFFD and destroys the deflate streams. | **Unrecoverable from disk.** Re-download the KRS 324 PDFs by hand (apps.legislature.ky.gov times out here; archive.org's CDX does not index its `statute.aspx?id=` form) and `ingest --file` them. |
+| WV | 2 | Broken PDF font encoding — the WVREC law-book PDF has no usable ToUnicode CMap, so extraction yields glyph soup (114k junk glyphs against 9.9k letters). Headings survive; bodies do not. | Needs an OCR pass, or a source other than code.wvlegislature.gov (Cloudflare challenge). |
+| OR | 7 | Same glyph-encoding failure, ~2.2 junk-per-letter, in ORS chs. 87, 90, 92, 93, 94, 100, 105. | Partial only — ORS 696 and OAR 863 (the core real-estate chapters) are clean, so OR drafts fine except for its "other statutes" node. |
+
+Fixed at the cause: `ingest --file` now types a file by its magic bytes rather than its name, runs
+`htmlToText` on saved HTML pages (which had put doctype/`<head>`/`<script>`/nav chrome into the
+corpus for IL, KS, FL and KY), and refuses a file it extracts no text from. `--raw` opts out.
+
+**Health check that actually works** — per file, not per jurisdiction (aggregating hides one bad file
+among good ones, which is why Oregon first read as clean):
+
+    grep -l '%PDF\|FlateDecode' content/statutes/*/*        # destroyed binaries
+    # and: ratio of non-ASCII non-typographic chars to [A-Za-z] above ~0.5 => glyph garbage
+
+Word count is NOT a damage signal. It flags short-but-valid single sections: ID (66 files) and KS
+(37) both tripped a `words < 200` heuristic and both drafted 20/20 successfully.
