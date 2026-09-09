@@ -12,7 +12,8 @@
 -- starts a fresh session; the old device gets 401 session_revoked on its next call and signs out
 -- locally. No refusal path, no cooldown — a retired device can take the slot straight back.
 --
--- mirrored in supabase/functions/_shared/limits.ts (MAX_ACTIVE_DEVICES = 1). Keep both in sync.
+-- superseded by 0016, which moves the ceiling into app_settings.device_policy so an admin can
+-- change it from the console. The typescript mirror now reads it via _shared/settings.ts.
 
 -- cooldown_until is retained on the table so historical rows stay readable, but nothing sets it
 -- from here on. Clear the ones already in flight so no account starts out locked.

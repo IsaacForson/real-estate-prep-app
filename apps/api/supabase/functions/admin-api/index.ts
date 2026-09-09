@@ -27,6 +27,7 @@ import { generateCouponCodes, validateCouponCreate } from "../_shared/coupons.ts
 import { type Db, rpc, unwrap } from "../_shared/db.ts";
 import { emitEvent } from "../_shared/events.ts";
 import { isKpiRange, shapeKpis } from "../_shared/kpis.ts";
+import { MAX_ACTIVE_DEVICES_CEILING } from "../_shared/limits.ts";
 import { errorResponse, HttpError, json, readJsonObject, serve } from "../_shared/response.ts";
 
 type Params = Record<string, unknown>;
@@ -40,6 +41,30 @@ interface OpResult {
 
 const BAN_FOREVER = "876000h"; // ~100 years; gotrue's "permanent" idiom
 const DEVICE_HASH_RE = /^[0-9a-f]{64}$/;
+
+/** Keys an admin may write. An allowlist, so a typo creates a 400 rather than a dead setting row. */
+const SETTING_KEYS = ["device_policy", "content_sync"] as const;
+const REFUND_KINDS = ["full", "partial", "guarantee"] as const;
+const REFUND_STATUSES = ["open", "approved", "denied", "paid"] as const;
+const REFUND_STORES = ["app_store", "play", "paddle", "lemonsqueezy", "coupon", "manual"] as const;
+const PRODUCTS = ["complete", "pass_guarantee"] as const;
+
+interface SettingRow {
+  key: string;
+  value: unknown;
+}
+
+/** `products` arrives as an array of product ids; anything else is a 400. */
+function readProducts(v: unknown): string[] {
+  if (v === undefined || v === null) return [];
+  if (!Array.isArray(v)) throw new HttpError(400, "invalid_products", "products must be an array");
+  for (const x of v) {
+    if (typeof x !== "string" || !(PRODUCTS as readonly string[]).includes(x)) {
+      throw new HttpError(400, "invalid_products", `products must be a subset of ${PRODUCTS.join(", ")}`);
+    }
+  }
+  return [...new Set(v as string[])];
+}
 
 async function emailsFor(db: Db, ids: string[]): Promise<Map<string, string | null>> {
   const uniq = [...new Set(ids)];
@@ -126,6 +151,60 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
         targetId: id,
         before,
         after: { ...after, reason },
+      };
+    }
+    /**
+     * Open the learner app as this user, to reproduce what they are seeing.
+     *
+     * Three things make this safe enough to exist:
+     *   - it is refused for admins and for yourself, so it cannot be used to escalate;
+     *   - it does NOT call register-device. fn_start_shadow_session attaches to the user's existing
+     *     device, so impersonating somebody does not sign them out of their own phone — which,
+     *     under the single-device rule, is exactly what a naive implementation would do;
+     *   - the magic-link token is single-use and short-lived, and the whole thing is in admin_audit.
+     *
+     * It is still a real session as that user. Everything done while impersonating is attributed
+     * to them, so it is for looking, not for acting on their behalf.
+     */
+    case "users.impersonate": {
+      const id = reqUuid(p, "id");
+      if (id === ctx.adminId) throw new HttpError(400, "cannot_impersonate_self");
+
+      const target = unwrap(
+        await db.from("profiles").select("id, is_admin").eq("id", id).maybeSingle(),
+        "impersonate_profile_lookup",
+      ) as { id: string; is_admin: boolean } | null;
+      if (!target) throw new HttpError(404, "user_not_found");
+      if (target.is_admin) throw new HttpError(403, "cannot_impersonate_admin", "admins cannot be impersonated");
+
+      const auth = await authUser(db, id);
+      if (!auth?.email) throw new HttpError(400, "user_has_no_email", "impersonation needs an email to mint a link");
+      if (auth.banned_until && Date.parse(auth.banned_until) > Date.now()) {
+        throw new HttpError(400, "user_disabled", "enable the account before opening it");
+      }
+
+      const { data: link, error: linkError } = await db.auth.admin.generateLink({ type: "magiclink", email: auth.email });
+      if (linkError || !link?.properties?.hashed_token) {
+        throw new HttpError(502, "impersonate_link_failed", linkError?.message ?? "no token returned");
+      }
+
+      // a session bound to a device the user already has, created without displacing anything
+      const shadow = await rpc<{ device_id: string; session_id: string }[]>(db, "fn_start_shadow_session", { p_user_id: id });
+      const s = shadow[0];
+      if (!s) throw new HttpError(409, "impersonate_no_device", "this user has no registered device to attach to");
+
+      return {
+        data: {
+          user_id: id,
+          email: auth.email,
+          token_hash: link.properties.hashed_token,
+          device_id: s.device_id,
+          session_id: s.session_id,
+        },
+        targetType: "user",
+        targetId: id,
+        // never audit the token itself
+        after: { impersonated: true, session_id: s.session_id, device_id: s.device_id },
       };
     }
     case "users.enable": {
@@ -516,6 +595,110 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
       );
       return { data: after, targetType: "device", targetId: hash, before, after };
     }
+    case "content.resync": {
+      // bump the epoch every install compares against on boot; stale item caches are dropped.
+      const after = await rpc<Record<string, unknown>>(db, "fn_bump_content_epoch", {});
+      return { data: after, targetType: "content", targetId: "epoch", after };
+    }
+
+    // ---- settings -------------------------------------------------------------------------
+    case "settings.get": {
+      const rows = unwrap(await db.from("app_settings").select("*").order("key"), "settings_list") as SettingRow[];
+      const settings: Record<string, unknown> = {};
+      for (const r of rows) settings[r.key] = r.value;
+      return {
+        data: {
+          settings,
+          rows,
+          // resolved values, so the console shows what is in force rather than what was written
+          effective: {
+            max_active_devices: await rpc<number>(db, "fn_max_active_devices", {}),
+          },
+        },
+        targetType: "settings",
+        targetId: null,
+      };
+    }
+    case "settings.set": {
+      const key = reqEnum(p, "key", SETTING_KEYS);
+      const value = p.value;
+      if (value === null || typeof value !== "object" || Array.isArray(value)) {
+        throw new HttpError(400, "invalid_value", "value must be a json object");
+      }
+      // The device ceiling is the one setting that can lock people out, so it is validated here as
+      // well as clamped in SQL — a typo should be a 400, not a silently different rule.
+      if (key === "device_policy") {
+        const n = (value as Record<string, unknown>).max_active_devices;
+        if (typeof n !== "number" || !Number.isInteger(n) || n < 1 || n > MAX_ACTIVE_DEVICES_CEILING) {
+          throw new HttpError(400, "invalid_max_active_devices", `max_active_devices must be an integer 1..${MAX_ACTIVE_DEVICES_CEILING}`);
+        }
+      }
+      const before = unwrap(await db.from("app_settings").select("*").eq("key", key).maybeSingle(), "setting_lookup");
+      const after = await rpc<Record<string, unknown>>(db, "fn_set_app_setting", { p_key: key, p_value: value });
+      return { data: after, targetType: "setting", targetId: key, before, after };
+    }
+
+    // ---- refunds --------------------------------------------------------------------------
+    case "refunds.list": {
+      const status = optEnum(p, "status", REFUND_STATUSES);
+      const limit = optInt(p, "limit", 100, 1, 500);
+      const [refunds, totals] = await Promise.all([
+        rpc<unknown[]>(db, "fn_admin_refunds", { p_status: status, p_limit: limit }),
+        rpc<Record<string, unknown>>(db, "fn_admin_refund_totals", {}),
+      ]);
+      return { data: { refunds, totals }, targetType: "query", targetId: status };
+    }
+    case "refunds.eligibility": {
+      const userId = reqUuid(p, "user_id");
+      const data = await rpc<Record<string, unknown>>(db, "fn_guarantee_eligibility", { p_user_id: userId });
+      return { data, targetType: "user", targetId: userId };
+    }
+    case "refunds.create": {
+      const userId = reqUuid(p, "user_id");
+      const kind = reqEnum(p, "kind", REFUND_KINDS);
+      const products = readProducts(p.products);
+      const amount = p.amount_cents === undefined || p.amount_cents === null ? null : optInt(p, "amount_cents", 0, 0, 100_000_00);
+      const store = optEnum(p, "store", REFUND_STORES);
+      const reason = optStr(p, "reason", 2000);
+      const evidence = p.evidence !== null && typeof p.evidence === "object" && !Array.isArray(p.evidence) ? p.evidence : {};
+      const after = await rpc<Record<string, unknown>>(db, "fn_admin_refund_create", {
+        p_user_id: userId,
+        p_kind: kind,
+        p_products: products,
+        p_amount_cents: amount,
+        p_store: store,
+        p_reason: reason,
+        p_evidence: evidence,
+      });
+      return { data: after, targetType: "refund", targetId: String(after.id ?? ""), after };
+    }
+    case "refunds.decide": {
+      const id = reqUuid(p, "id");
+      if (typeof p.approve !== "boolean") throw new HttpError(400, "invalid_approve");
+      const note = optStr(p, "note", 2000);
+      const amount = p.amount_cents === undefined || p.amount_cents === null ? null : optInt(p, "amount_cents", 0, 0, 100_000_00);
+      const before = unwrap(await db.from("refund_requests").select("*").eq("id", id).maybeSingle(), "refund_lookup");
+      if (!before) throw new HttpError(404, "refund_not_found");
+      const after = await rpc<Record<string, unknown>>(db, "fn_admin_refund_decide", {
+        p_id: id,
+        p_approve: p.approve,
+        p_note: note,
+        p_amount_cents: amount,
+      });
+      return { data: after, targetType: "refund", targetId: id, before, after };
+    }
+    case "refunds.markPaid": {
+      const id = reqUuid(p, "id");
+      const ref = reqStr(p, "external_refund_id", 200);
+      const before = unwrap(await db.from("refund_requests").select("*").eq("id", id).maybeSingle(), "refund_lookup");
+      if (!before) throw new HttpError(404, "refund_not_found");
+      const after = await rpc<Record<string, unknown>>(db, "fn_admin_refund_mark_paid", {
+        p_id: id,
+        p_external_refund_id: ref,
+      });
+      return { data: after, targetType: "refund", targetId: id, before, after };
+    }
+
     default:
       throw new HttpError(400, "unknown_op", `unknown op ${op}`);
   }

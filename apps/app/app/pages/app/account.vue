@@ -28,7 +28,6 @@ const err = ref<string | null>(null);
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const examDate = computed(() => studyState.settings.value?.examDate ?? null);
 watch(examDate, (d) => { draftDate.value = d ?? ""; });
-const themes = [{ value: "system", label: "Auto" }, { value: "light", label: "Light" }, { value: "dark", label: "Dark" }];
 const fmt = (s: string | null | undefined) => (s ? new Date(s).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "—");
 
 async function chooseState(c: string) { picker.value = false; await studyState.set({ jurisdiction: c }); }
@@ -83,6 +82,9 @@ onMounted(() => { void free.load(); });
       </p>
     </AppCard>
 
+    <!-- the only thing a Complete owner can still buy; renders nothing once they own it -->
+    <GuaranteeOffer />
+
     <AppCard title="Study settings" padding="none">
       <ListRow
         icon="map"
@@ -115,13 +117,7 @@ onMounted(() => { void free.load(); });
           <Icon :name="settings.theme === 'dark' ? 'moon' : settings.theme === 'light' ? 'sun' : 'monitor'" :size="17" />
         </span>
         <span class="flex-1 text-[15px] font-medium">Theme</span>
-        <AppTabs
-          :model-value="settings.theme"
-          :tabs="themes"
-          aria-label="Theme"
-          class="!w-auto shrink-0"
-          @update:model-value="(v) => settings.set('theme', v as 'system' | 'light' | 'dark')"
-        />
+        <ThemeToggle variant="tabs" class="!w-auto shrink-0" />
       </div>
     </AppCard>
 

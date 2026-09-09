@@ -18,7 +18,7 @@ export type IconName =
   | "external" | "plus" | "minus" | "skip-back" | "skip-forward" | "volume" | "menu" | "lock"
   | "gift" | "trophy" | "alert"
   | "grid" | "dollar" | "ticket" | "history" | "layers" | "filter" | "trash" | "edit" | "eye"
-  | "sliders" | "dot" | "bolt";
+  | "sliders" | "dot" | "bolt" | "undo";
 
 withDefaults(defineProps<{ name: IconName; size?: number | string; strokeWidth?: number }>(), {
   size: 20,
@@ -40,6 +40,8 @@ const paths: Record<IconName, string> = {
   "book-open": "M12 6.5C10.5 5 8.5 4.5 4 4.5v13c4.5 0 6.5.5 8 2 1.5-1.5 3.5-2 8-2v-13c-4.5 0-6.5.5-8 2ZM12 6.5v13",
   target: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-3.5h.01",
   refresh: "M20.5 12a8.5 8.5 0 1 1-2.49-6.01M20.5 4v5h-5",
+  // money going back the other way: a return arrow over a coin path (admin refunds)
+  undo: "M3.5 8.5h9a5.5 5.5 0 0 1 0 11H7M3.5 8.5 8 4M3.5 8.5 8 13",
   history: "M4 12a8 8 0 1 0 2.4-5.7M4 4.5V9h4.5M12 8v4.5l3 1.8",
   clock: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7.5V12l3 1.8",
   calendar: "M4.5 5.5h15v15h-15zM4.5 10h15M8.5 3v4.5M15.5 3v4.5",

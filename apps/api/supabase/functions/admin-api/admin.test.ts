@@ -35,6 +35,7 @@ Deno.test("admin ops list matches V2_PLAN §6.2", () => {
     "users.sendCode",
     "users.removeDevice",
     "users.setAdmin",
+    "users.impersonate",
     "entitlements.grant",
     "entitlements.revoke",
     "entitlements.pause",
@@ -53,8 +54,16 @@ Deno.test("admin ops list matches V2_PLAN §6.2", () => {
     "content.alerts",
     "content.resolveAlert",
     "content.versions",
+    "content.resync",
     "devices.flagged",
     "devices.block",
+    "settings.get",
+    "settings.set",
+    "refunds.list",
+    "refunds.create",
+    "refunds.decide",
+    "refunds.markPaid",
+    "refunds.eligibility",
   ];
   for (const op of required) assert(isAdminOp(op), `missing op ${op}`);
   assertEquals(ADMIN_OPS.length, required.length);

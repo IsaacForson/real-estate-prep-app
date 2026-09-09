@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { OptionLetter } from "@rep/schema";
 import { OPTION_LETTERS } from "@rep/schema";
+import type { StartPracticeOptions } from "~/composables/useStudy";
 /**
  * The app. Not a dashboard — the study loop itself.
  *
@@ -9,20 +10,21 @@ import { OPTION_LETTERS } from "@rep/schema";
  * "what should I do next" is answered by the engine rather than by the learner. Everything else in
  * the product lives behind the menu button (components/AppPanel.vue).
  *
- * Three phases only:
+ * Phases:
  *   need-state → the one question that must be answered before anything can be scheduled
  *   question   → answer, reveal, continue, repeat
  *   milestone  → a batch finished; a rest point with the score and one button to keep going
+ *   empty      → nothing schedulable; StudyIdle explains why and offers real alternatives
  *
- * The loop never dead-ends. Finishing a batch rolls straight into the next one, which is what makes
- * this feel like a study session rather than a series of errands.
+ * The loop never dead-ends. Finishing a batch rolls straight into the next one, and even the empty
+ * phase carries somewhere to go, which is what makes this feel like a study session rather than a
+ * series of errands.
  */
 useHead({ title: "Study" });
 
 const study = useStudy();
 const studyState = useStudyState();
 const content = useContent();
-const freeTier = useFreeTier();
 const panel = useAppPanel();
 
 const session = computed(() => study.session.value ?? study.activeSession.value);
@@ -34,7 +36,6 @@ const startedAt = ref(Date.now());
 const busy = ref(false);
 const starting = ref(true);
 const summary = ref<Awaited<ReturnType<typeof study.finish>> | null>(null);
-const exhausted = ref(false);
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const needState = computed(() => studyState.ready.value && !jur.value);
@@ -92,7 +93,6 @@ watch(() => item.value?.id, restore, { immediate: true });
 /** Resume whatever was in flight, otherwise schedule a fresh batch. */
 async function ensureSession() {
   starting.value = true;
-  exhausted.value = false;
   try {
     if (study.session.value && study.current.value) return;
     const active = study.activeSession.value;
@@ -101,8 +101,8 @@ async function ensureSession() {
       if (active.kind === "mock") { await navigateTo("/app/mocks/run"); return; }
       if (await study.resume(active.id)) return;
     }
-    const s = await study.startPractice({ kind: "practice" });
-    if (!s) exhausted.value = true;
+    // null means nothing is schedulable; the phase falls through to StudyIdle, which says why
+    await study.startPractice({ kind: "practice" });
   } finally {
     starting.value = false;
   }
@@ -141,6 +141,18 @@ async function advance() {
 async function keepGoing() {
   summary.value = null;
   await ensureSession();
+}
+
+/**
+ * Start a specific kind of batch from the idle screen (national only, a leech drill, studying
+ * ahead). Scheduling stays here so there is exactly one place that turns a session into the loop.
+ */
+async function startFrom(opts: StartPracticeOptions) {
+  starting.value = true;
+  try {
+    summary.value = null;
+    await study.startPractice(opts);
+  } finally { starting.value = false; }
 }
 
 /** 1-4 / A-D pick an option, Enter or Space advances once revealed. Same actions as the buttons. */
@@ -243,18 +255,16 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
       </div>
     </div>
 
-    <!-- Nothing schedulable: free tier spent, or the bank for this state is still thin. -->
-    <div v-else-if="phase === 'empty'" class="safe-px anim-fade-up mx-auto grid w-full max-w-md flex-1 content-center gap-5 py-12">
-      <FreeTierGate v-if="freeTier.applies.value && exhausted" />
-      <EmptyState
-        v-else
-        icon="book"
-        title="No questions ready for this state"
-        text="The bank for your state is still being written and verified. Try a national practice round or switch states from the menu."
-      >
-        <AppButton variant="primary" @click="panel.show()">Open menu</AppButton>
-      </EmptyState>
-    </div>
+    <!--
+      Nothing schedulable. StudyIdle works out why and gives the learner their numbers plus real
+      routes out; an empty screen here is what makes a study app feel broken.
+    -->
+    <StudyIdle
+      v-else-if="phase === 'empty'"
+      @start="startFrom"
+      @menu="panel.show()"
+      @change-state="panel.statePicker.value = true"
+    />
 
     <!-- The loop. -->
     <template v-else-if="phase === 'question' && item">

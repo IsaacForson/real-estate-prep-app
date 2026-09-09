@@ -29,12 +29,22 @@ watch(() => route.fullPath, () => { open.value = false; });
       <div class="flex-1" />
 
       <div class="hidden items-center gap-2 md:flex">
+        <!-- client-only: the preference lives in localStorage, so SSR would render the wrong icon -->
+        <ClientOnly>
+          <ThemeToggle />
+          <template #fallback><span class="size-11" aria-hidden="true" /></template>
+        </ClientOnly>
         <AppButton v-if="auth.signedIn.value" to="/app" variant="primary" size="sm" icon-right="arrow-right">Open app</AppButton>
         <template v-else>
           <AppButton to="/signin" variant="ghost" size="sm">Sign in</AppButton>
           <AppButton to="/signin" variant="primary" size="sm">Start free</AppButton>
         </template>
       </div>
+
+      <ClientOnly>
+        <ThemeToggle class="-mr-1 md:hidden" />
+        <template #fallback><span class="size-11 md:hidden" aria-hidden="true" /></template>
+      </ClientOnly>
 
       <button
         type="button"
@@ -55,6 +65,11 @@ watch(() => route.fullPath, () => { open.value = false; });
         >{{ l.label }}</NuxtLink>
         <NuxtLink to="/methodology" class="flex min-h-12 items-center rounded-lg px-2 text-[15px] font-medium transition-colors hover:bg-surface-2">Methodology</NuxtLink>
       </nav>
+      <div class="mt-4 border-t border-line pt-4">
+        <p class="eyebrow mb-2">Appearance</p>
+        <ClientOnly><ThemeToggle variant="tabs" /></ClientOnly>
+      </div>
+
       <div class="mt-4 grid gap-2 border-t border-line pt-4">
         <AppButton v-if="auth.signedIn.value" to="/app" variant="primary" size="lg" block icon-right="arrow-right">Open app</AppButton>
         <template v-else>

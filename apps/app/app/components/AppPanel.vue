@@ -140,6 +140,8 @@ onUnmounted(() => {
 
         <div class="safe-pb overflow-y-auto px-4 pb-5 pt-4">
           <FreeTierGate variant="banner" class="mb-4" />
+          <!-- for paid learners the free-tier banner is empty, so this is what sits here instead -->
+          <GuaranteeOffer variant="row" class="mb-4" />
 
           <!-- the two numbers that answer "am I ready yet" -->
           <div class="grid grid-cols-2 gap-3">

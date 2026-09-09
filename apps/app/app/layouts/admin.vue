@@ -9,18 +9,18 @@ const route = useRoute();
 const router = useRouter();
 const auth = useAuth();
 const { access, requireAdmin } = useAdmin();
-const settings = useSettings();
-
 const nav: Array<{ to: string; label: string; icon: IconName }> = [
   { to: "/admin", label: "Overview", icon: "grid" },
   { to: "/admin/users", label: "Users", icon: "users" },
   { to: "/admin/sales", label: "Sales", icon: "dollar" },
+  { to: "/admin/refunds", label: "Refunds", icon: "undo" },
   { to: "/admin/support", label: "Support", icon: "message" },
   { to: "/admin/reviews", label: "Reviews", icon: "star" },
   { to: "/admin/coupons", label: "Coupons", icon: "ticket" },
   { to: "/admin/devices", label: "Devices", icon: "device" },
   { to: "/admin/content", label: "Content", icon: "layers" },
   { to: "/admin/audit", label: "Audit", icon: "history" },
+  { to: "/admin/settings", label: "Settings", icon: "sliders" },
 ];
 const isActive = (to: string) => (to === "/admin" ? route.path === "/admin" : route.path.startsWith(to));
 
@@ -29,10 +29,6 @@ function submitSearch() {
   const q = search.value.trim();
   void router.push({ path: "/admin/users", query: q ? { q } : {} });
 }
-
-const themes = ["system", "light", "dark"] as const;
-const themeIcon = computed<IconName>(() => (settings.theme === "dark" ? "moon" : settings.theme === "light" ? "sun" : "monitor"));
-function cycleTheme() { settings.set("theme", themes[(themes.indexOf(settings.theme) + 1) % themes.length]!); }
 
 onMounted(() => { void requireAdmin(); });
 </script>
@@ -84,13 +80,7 @@ onMounted(() => { void requireAdmin(); });
 
         <span v-if="auth.user.value?.email" class="hidden text-[12px] text-muted md:inline">{{ auth.user.value.email }}</span>
 
-        <button
-          type="button"
-          class="grid size-9 place-items-center rounded-lg border border-line text-ink-2 transition-colors hover:bg-surface-2"
-          :title="`Theme: ${settings.theme}`"
-          aria-label="Cycle theme"
-          @click="cycleTheme"
-        ><Icon :name="themeIcon" :size="16" /></button>
+        <ClientOnly><ThemeToggle class="!size-9 !min-h-0 !min-w-0 border border-line" /></ClientOnly>
 
         <NuxtLink
           to="/app"
@@ -98,7 +88,7 @@ onMounted(() => { void requireAdmin(); });
         ><Icon name="arrow-left" :size="15" />Back to app</NuxtLink>
       </header>
 
-      <main class="min-w-0 flex-1 p-4 lg:p-6">
+      <main class="min-w-0 flex-1 p-5 lg:p-7">
         <ClientOnly>
           <div v-if="access === 'unconfigured'" class="rounded-card border border-dashed border-line-strong px-4 py-3 text-[13.5px] text-muted">
             This build has no <code>NUXT_PUBLIC_SUPABASE_URL</code>, so there is no admin backend to talk to.

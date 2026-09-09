@@ -171,6 +171,68 @@ export interface AdminContentVersion {
   notes?: string | null;
 }
 
+export type AdminSettingKey = "device_policy" | "content_sync";
+
+export interface AdminSettings {
+  settings: Partial<Record<AdminSettingKey, Record<string, unknown>>>;
+  rows: Array<{ key: string; value: unknown; updated_at?: string; updated_by?: string | null }>;
+  /** what is actually in force after SQL clamping, which may differ from what was written */
+  effective: { max_active_devices: number };
+}
+
+export type RefundKind = "full" | "partial" | "guarantee";
+export type RefundStatus = "open" | "approved" | "denied" | "paid";
+export type RefundStore = "app_store" | "play" | "paddle" | "lemonsqueezy" | "coupon" | "manual";
+
+export interface AdminRefund {
+  id: string;
+  user_id: string;
+  email: string | null;
+  kind: RefundKind;
+  status: RefundStatus;
+  amount_cents: number | null;
+  currency: string;
+  products: string[];
+  store: RefundStore | null;
+  reason: string | null;
+  evidence: Record<string, unknown>;
+  decision_note: string | null;
+  external_refund_id: string | null;
+  decided_at: string | null;
+  paid_at: string | null;
+  created_at: string;
+}
+
+export interface AdminRefundTotals {
+  open: number;
+  approved: number;
+  denied: number;
+  paid: number;
+  paid_cents: number;
+  awaiting_payout_cents: number;
+}
+
+/** The published pass-guarantee conditions, checked against this account (SPEC §6). */
+export interface AdminGuaranteeEligibility {
+  has_guarantee: boolean;
+  guarantee_granted_at: string | null;
+  complete_granted_at: string | null;
+  days_since_guarantee: number | null;
+  within_window: boolean;
+  mocks_completed: number;
+  meets_mock_requirement: boolean;
+  already_refunded: boolean;
+}
+
+/** What `users.impersonate` hands back; the token is single-use and never persisted. */
+export interface AdminImpersonation {
+  user_id: string;
+  email: string;
+  token_hash: string;
+  device_id: string;
+  session_id: string;
+}
+
 export interface AdminFlaggedDevice {
   device_hash: string;
   platform?: string | null;
@@ -336,6 +398,7 @@ export function useAdmin() {
       sendCode: (id: string) => call<unknown>("users.sendCode", { id }),
       removeDevice: (id: string, device_id: string) => call<unknown>("users.removeDevice", { id, device_id }),
       setAdmin: (id: string, is_admin: boolean) => call<unknown>("users.setAdmin", { id, is_admin }),
+      impersonate: (id: string) => call<AdminImpersonation>("users.impersonate", { id }),
     },
     entitlements: {
       grant: (user_id: string, product: string, note: string) => call<unknown>("entitlements.grant", { user_id, product, note }),
@@ -386,10 +449,39 @@ export function useAdmin() {
       alerts: async (status: string | null) => asList<AdminContentAlert>(await call<unknown>("content.alerts", { status: status ?? undefined }), "alerts"),
       resolveAlert: (id: string) => call<unknown>("content.resolveAlert", { id }),
       versions: async () => asList<AdminContentVersion>(await call<unknown>("content.versions", {}), "versions"),
+      resync: () => call<{ epoch: number; last_synced_at: string }>("content.resync", {}),
     },
     devices: {
       flagged: async () => asList<AdminFlaggedDevice>(await call<unknown>("devices.flagged", {}), "devices"),
       block: (device_hash: string, blocked: boolean, notes: string) => call<unknown>("devices.block", { device_hash, blocked, notes }),
+    },
+    settings: {
+      get: () => call<AdminSettings>("settings.get", {}),
+      set: (key: AdminSettingKey, value: Record<string, unknown>) => call<unknown>("settings.set", { key, value }),
+    },
+    refunds: {
+      list: async (status: RefundStatus | null) => {
+        const d = (await call<unknown>("refunds.list", { status: status ?? undefined })) as
+          | { refunds?: AdminRefund[]; totals?: AdminRefundTotals }
+          | null;
+        return {
+          refunds: asList<AdminRefund>(d, "refunds"),
+          totals: (d?.totals ?? { open: 0, approved: 0, denied: 0, paid: 0, paid_cents: 0, awaiting_payout_cents: 0 }) as AdminRefundTotals,
+        };
+      },
+      eligibility: (user_id: string) => call<AdminGuaranteeEligibility>("refunds.eligibility", { user_id }),
+      create: (p: {
+        user_id: string;
+        kind: RefundKind;
+        products?: string[];
+        amount_cents?: number | null;
+        store?: RefundStore | null;
+        reason?: string | null;
+        evidence?: Record<string, unknown>;
+      }) => call<AdminRefund>("refunds.create", { ...p }),
+      decide: (id: string, approve: boolean, note: string | null, amount_cents: number | null) =>
+        call<AdminRefund>("refunds.decide", { id, approve, note, amount_cents }),
+      markPaid: (id: string, external_refund_id: string) => call<AdminRefund>("refunds.markPaid", { id, external_refund_id }),
     },
   };
 
@@ -459,7 +551,15 @@ export interface AdminConfirmOptions {
   confirmLabel?: string;
   danger?: boolean;
   /** Ask for free text (reason / note); `required` blocks confirm until non-empty. */
-  reason?: { label: string; placeholder?: string; required?: boolean; type?: "text" | "date" | "datetime-local" };
+  reason?: {
+    label: string;
+    placeholder?: string;
+    required?: boolean;
+    type?: "text" | "date" | "datetime-local" | "number";
+    /** `number` only: passed straight through to the input, so a refund amount cannot go negative. */
+    min?: number;
+    step?: number;
+  };
 }
 export interface AdminConfirmResult { ok: boolean; reason: string }
 interface PendingConfirm { options: AdminConfirmOptions; resolve: (r: AdminConfirmResult) => void }

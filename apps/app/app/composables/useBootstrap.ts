@@ -22,6 +22,7 @@ export function useBootstrap() {
   const sync = useSync();
   const purchases = usePurchases();
   const settings = useSettings();
+  const contentEpoch = useContentEpoch();
 
   function applyTheme() {
     if (!import.meta.client) return;
@@ -44,6 +45,8 @@ export function useBootstrap() {
       else if (repo.settings().sharingNoticeAck && p && !p.sharing_notice_ack) void entitlement.ackSharingNotice();
       if (!p?.exam_date && repo.settings().examDate) void entitlement.setExamDate(repo.settings().examDate);
       await freeTier.load();
+      // an admin may have republished items since this device last looked; off the critical path
+      void contentEpoch.check().catch(() => {});
       if (purchases.supported.value) void purchases.configure(uid).catch(() => {});
       events.track(event === "sign_in" ? "sign_in" : "app_open", { restored: event === "init" });
       sync.schedule(1000);

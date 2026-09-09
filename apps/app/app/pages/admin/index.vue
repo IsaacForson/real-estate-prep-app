@@ -42,7 +42,7 @@ const rangeOptions = computed(() => ranges.map((r) => ({ value: r.v, label: r.la
       <template v-if="k">
         <!-- Tiles that link somewhere are the ones with an action behind them: revenue, refunds,
              tickets, reviews. The rest are read-only context. -->
-        <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
           <AdminKpiTile label="Signups" :value="adminFmt.int(k.signups)" :hint="`in ${ranges.find((r) => r.v === range)?.label.toLowerCase()}`" />
           <AdminKpiTile label="DAU / WAU / MAU" :value="`${adminFmt.int(k.dau)} / ${adminFmt.int(k.wau)} / ${adminFmt.int(k.mau)}`" hint="active learners" />
           <AdminKpiTile label="Revenue" :value="adminFmt.usd(revenue)" :hint="`${adminFmt.int(purchaseCount)} purchases`" tone="ok" to="/admin/sales" />
@@ -56,7 +56,7 @@ const rangeOptions = computed(() => ranges.map((r) => ({ value: r.v, label: r.la
           <AdminKpiTile v-for="p in k.purchases" :key="p.store" :label="`${p.store} revenue`" :value="adminFmt.usd(p.revenue_usd)" :hint="`${adminFmt.int(p.count)} purchases`" />
         </div>
 
-        <div class="grid gap-4 xl:grid-cols-2">
+        <div class="grid gap-5 xl:grid-cols-2">
           <AdminCard title="Signups &amp; purchases" subtitle="per day">
             <AdminChart :labels="labels" :series="growth" type="line" title="Signups and purchases per day" />
           </AdminCard>

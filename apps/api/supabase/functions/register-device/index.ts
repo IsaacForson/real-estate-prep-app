@@ -3,8 +3,10 @@
  * single live session (SPEC §5.3). Called right after supabase auth sign-in and on app start
  * when the stored session is rejected with 401 session_revoked.
  *
- * One active device per account (0015): this call takes the slot over, retires whatever device held
- * it and revokes its session, so it never refuses. The displaced device sees 401 session_revoked.
+ * How many devices an account may hold at once is `app_settings.device_policy.max_active_devices`
+ * (0016), which an admin edits from the console. At the default of 1 this call takes the only slot
+ * over, retires whatever device held it and revokes its session; above 1 it displaces nothing until
+ * the ceiling is reached. It never refuses. Displaced devices see 401 session_revoked.
  *
  * headers: Authorization: Bearer <jwt>, x-device-hash (V2 §1; falls back to fingerprint_hash)
  * body:    { fingerprint_hash: sha256 hex, platform: "ios"|"android"|"web", name?: string, model?: string }
@@ -17,6 +19,7 @@ import { rpc, unwrap } from "../_shared/db.ts";
 import { emitEvent } from "../_shared/events.ts";
 import { DEVICE_REGISTRATIONS_PER_HOUR, RATE_WINDOW_SECONDS } from "../_shared/limits.ts";
 import { HttpError, json, readJsonObject, serve } from "../_shared/response.ts";
+import { maxActiveDevices } from "../_shared/settings.ts";
 
 interface RegisterRequest extends Record<string, unknown> {
   fingerprint_hash?: unknown;
@@ -46,16 +49,19 @@ serve(async (req) => {
   await enforceRateLimit(ctx.db, `register:${ctx.userId}`, DEVICE_REGISTRATIONS_PER_HOUR, RATE_WINDOW_SECONDS, 1);
   await recordGeo(ctx, "register-device");
 
-  // read the current slot holder first so the response can name what this sign-in displaced.
-  // sql re-does the takeover atomically under an advisory lock.
-  const devices = unwrap(
-    await ctx.db
-      .from("devices")
-      .select("id, fingerprint_hash, removed_at, platform, name, last_seen")
-      .eq("user_id", ctx.userId),
-    "devices_lookup",
-  ) as DeviceListRow[];
-  const decision = decideRegister(devices, body.fingerprint_hash);
+  // read the current slot holders first so the response can name what this sign-in displaced.
+  // sql re-does the same arithmetic atomically under an advisory lock.
+  const [devices, ceiling] = await Promise.all([
+    Promise.resolve(unwrap(
+      await ctx.db
+        .from("devices")
+        .select("id, fingerprint_hash, removed_at, platform, name, last_seen")
+        .eq("user_id", ctx.userId),
+      "devices_lookup",
+    ) as DeviceListRow[]),
+    maxActiveDevices(ctx.db),
+  ]);
+  const decision = decideRegister(devices, body.fingerprint_hash, ceiling);
   const displaced = decision.superseded.map((s) => {
     const d = devices.find((x) => x.id === s.id)!;
     return { id: d.id, platform: d.platform, name: d.name, last_seen: d.last_seen };
@@ -96,9 +102,12 @@ serve(async (req) => {
         blocked: touch.blocked,
       }
       : null,
+    max_active_devices: ceiling,
     // SPEC §5.3: "a second login invalidates the first with a clear message."
-    message: displaced.length
+    message: displaced.length === 0
+      ? "signed in on this device."
+      : displaced.length === 1
       ? "signed in on this device. your other device has been signed out."
-      : "signed in on this device.",
+      : `signed in on this device. ${displaced.length} other devices have been signed out.`,
   });
 });

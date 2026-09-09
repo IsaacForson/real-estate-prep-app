@@ -41,7 +41,7 @@ const filter = computed({ get: () => status.value ?? "all", set: (v: string) => 
     </AdminPageHead>
 
     <!-- List beside thread: triaging a queue means reading one ticket without losing your place. -->
-    <div class="grid gap-4 xl:grid-cols-[minmax(320px,2fr)_3fr]">
+    <div class="grid gap-5 xl:grid-cols-[minmax(320px,2fr)_3fr]">
       <div>
         <AdminState
           :loading="q.loading.value"

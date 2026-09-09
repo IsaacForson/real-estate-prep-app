@@ -116,6 +116,19 @@ export function useAuth() {
     await registerDevice();
   }
 
+  /**
+   * Take device/session ids that were minted elsewhere instead of calling register-device.
+   *
+   * Only admin impersonation uses this. Under the single-device rule, registering a device for an
+   * account you are only looking at would sign the real owner out of their own phone, so admin-api
+   * attaches a session to a device the user already has and hands the ids over here. Writing them
+   * before the auth state change lands is what makes `ensureDevice` short-circuit.
+   */
+  async function adoptDevice(creds: DeviceCreds): Promise<void> {
+    device.value = creds;
+    await getDb().kv.put({ key: DEVICE_KV, value: creds });
+  }
+
   async function accessToken(): Promise<string | null> {
     if (!supabase) return null;
     const { data } = await supabase.auth.getSession();
@@ -232,7 +245,7 @@ export function useAuth() {
 
   return {
     configured, ready, user, signedIn, notice, device, busy, hydrating: hydratingState,
-    init, accessToken, authHeaders, apiHeaders, registerDevice,
+    init, accessToken, authHeaders, apiHeaders, registerDevice, adoptDevice,
     signInWithEmail, verifyEmailCode, signOut, onSessionRevoked, dismissNotice,
   };
 }

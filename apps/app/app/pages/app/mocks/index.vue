@@ -80,7 +80,7 @@ onMounted(() => { void content.load(); void free.load(); void study.loadHistory(
     </AppCard>
 
     <AppCard v-else-if="!jur">
-      <EmptyState icon="map" title="Choose your state" body="Mocks are built to your state's exact format. Pick a state on Home first." compact>
+      <EmptyState icon="map" title="Choose your state" body="Mocks are built to your state's exact format. Pick a state from the menu first." compact>
         <AppButton to="/app" variant="primary" size="sm">Go to Home</AppButton>
       </EmptyState>
     </AppCard>

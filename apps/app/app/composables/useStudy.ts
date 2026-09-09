@@ -42,6 +42,21 @@ export interface StartPracticeOptions {
   kind?: Extract<SessionKind, "practice" | "drill" | "review">;
   /** explicit item list (review of missed items, a drill) */
   itemIds?: string[];
+  /** study ahead: schedule cards that are not due yet (see scheduleSession) */
+  ignoreSchedule?: boolean;
+}
+
+/** The lower-level session builder's options; `startPractice` is the friendly face over this. */
+export interface StartSessionOptions {
+  banks: string[];
+  size?: number;
+  itemIds?: string[];
+  node?: string;
+  timeLimitMs?: number | null;
+  mockFormId?: string | null;
+  portions?: StudySession["portions"];
+  id?: string;
+  ignoreSchedule?: boolean;
 }
 
 export interface FinishSummary {
@@ -147,9 +162,9 @@ export function useStudy() {
     return s;
   }
 
-  async function startSession(kind: SessionKind, opts: { banks: string[]; size?: number; itemIds?: string[]; node?: string; timeLimitMs?: number | null; mockFormId?: string | null; portions?: StudySession["portions"]; id?: string }, extra: { dryRun: true }): Promise<StudySession | null>;
-  async function startSession(kind: SessionKind, opts: { banks: string[]; size?: number; itemIds?: string[]; node?: string; timeLimitMs?: number | null; mockFormId?: string | null; portions?: StudySession["portions"]; id?: string }, extra?: { dryRun?: boolean }): Promise<StudySession>;
-  async function startSession(kind: SessionKind, opts: { banks: string[]; size?: number; itemIds?: string[]; node?: string; timeLimitMs?: number | null; mockFormId?: string | null; portions?: StudySession["portions"]; id?: string }, extra: { dryRun?: boolean } = {}): Promise<StudySession | null> {
+  async function startSession(kind: SessionKind, opts: StartSessionOptions, extra: { dryRun: true }): Promise<StudySession | null>;
+  async function startSession(kind: SessionKind, opts: StartSessionOptions, extra?: { dryRun?: boolean }): Promise<StudySession>;
+  async function startSession(kind: SessionKind, opts: StartSessionOptions, extra: { dryRun?: boolean } = {}): Promise<StudySession | null> {
     let itemIds = opts.itemIds;
     if (!itemIds) {
       let cands: string[] = [];
@@ -160,7 +175,9 @@ export function useStudy() {
         cands = cands.filter((id) => { const bn = nodes.get(id); return !!bn && (bn === n || bn.startsWith(n + ".")); });
       }
       const prog = await progressMap();
-      itemIds = kind === "drill" ? leechDrill(prog.values(), opts.size ?? 20) : scheduleSession({ candidates: cands, progress: prog, size: opts.size ?? studyState.settings.value.sessionSize });
+      itemIds = kind === "drill"
+        ? leechDrill(prog.values(), opts.size ?? 20)
+        : scheduleSession({ candidates: cands, progress: prog, size: opts.size ?? studyState.settings.value.sessionSize, ignoreSchedule: opts.ignoreSchedule });
       // SPEC §6: on the free tier a session may only draw what is left of the allowance (server recounts)
       if (freeTier.applies.value) itemIds = freeTier.limit(itemIds, (id) => (prog.get(id)?.attempts ?? 0) > 0);
     }
@@ -185,7 +202,7 @@ export function useStudy() {
     let bs = opts.banks ?? (opts.bank ? [opts.bank] : undefined);
     if (!bs) { const b = await banks(); bs = [b.national, b.state].filter((x): x is string => !!x); }
     if (!bs.length) return null;
-    const s = await startSession(opts.kind ?? "practice", { banks: bs, size: opts.size, itemIds: opts.itemIds, node: opts.node }, { dryRun: true });
+    const s = await startSession(opts.kind ?? "practice", { banks: bs, size: opts.size, itemIds: opts.itemIds, node: opts.node, ignoreSchedule: opts.ignoreSchedule }, { dryRun: true });
     return s;
   }
 
@@ -384,6 +401,22 @@ export function useStudy() {
     const prog = await progressMap(bank);
     return pipeline([...prog.values()], ids.length);
   }
+
+  /**
+   * When the earliest not-yet-due card comes back, as an epoch ms — or null if nothing is waiting.
+   * Leeches are excluded because they are never scheduled by `scheduleSession`; they are drilled.
+   * This is what lets the idle screen say "your next batch unlocks in 4 hours" instead of implying
+   * the app has run out of content.
+   */
+  async function nextDueAt(now = Date.now()): Promise<number | null> {
+    const prog = await progressMap();
+    let soonest: number | null = null;
+    for (const p of prog.values()) {
+      if (p.attempts === 0 || p.leech || p.dueAt <= now) continue;
+      if (soonest == null || p.dueAt < soonest) soonest = p.dueAt;
+    }
+    return soonest;
+  }
   async function coverageFor(bank: string) {
     const bp = await blueprint(bank);
     if (!bp) return null;
@@ -409,7 +442,7 @@ export function useStudy() {
     // V2 §6.1
     startPractice, startMock, resume, answer, next, goTo, finish, current, session, items, progressFor, activeSession, history, loadHistory,
     // shared with the analytics composables and the pre-V2 pages
-    state, banks, blueprint, getItems, startSession, saveSession, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, mode, version,
+    state, banks, blueprint, getItems, startSession, saveSession, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, nextDueAt, mode, version,
     get source() { return source(); },
   };
 }

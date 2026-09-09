@@ -47,5 +47,10 @@ const detail = computed(() => (props.error ? describeAdminError(props.error) : "
     :class="inline ? '' : 'rounded-card border border-dashed border-line p-6 text-center'"
   >{{ emptyText }}</div>
 
-  <div v-else :class="loading ? 'opacity-55 transition-opacity' : ''" :aria-busy="loading ? 'true' : undefined"><slot /></div>
+  <!--
+    `space-y-5` is load-bearing: several pages put a KPI grid and a card grid in this slot as
+    siblings, and the grids' own `gap` does nothing between them. Without it the tiles sit flush
+    against the cards below. Single-child callers (the common case) are unaffected.
+  -->
+  <div v-else class="space-y-5" :class="loading ? 'opacity-55 transition-opacity' : ''" :aria-busy="loading ? 'true' : undefined"><slot /></div>
 </template>

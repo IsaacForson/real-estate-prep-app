@@ -68,14 +68,14 @@ const rangeOptions = computed(() => ranges.map((r) => ({ value: r.v, label: r.la
 
     <AdminState :loading="kpis.loading.value" :error="kpis.error.value" :empty="!k" @retry="kpis.reload">
       <template v-if="k">
-        <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-5">
           <AdminKpiTile label="Revenue" :value="adminFmt.usd(revenue)" tone="ok" />
           <AdminKpiTile label="Purchases" :value="adminFmt.int(count)" :hint="aov != null ? `avg ${adminFmt.usd(aov)}` : undefined" />
           <AdminKpiTile label="Refunds" :value="adminFmt.int(k.refunds)" :hint="count ? `${adminFmt.pct((k.refunds / count) * 100)} of purchases` : undefined" :tone="k.refunds ? 'warn' : 'default'" />
           <AdminKpiTile label="Conversion" :value="adminFmt.pct(k.conversion_pct)" hint="signups → purchase" />
           <AdminKpiTile label="Entitled now" :value="adminFmt.int(k.active_complete)" :hint="`${adminFmt.int(k.active_guarantee)} pass guarantee`" />
         </div>
-        <div class="grid gap-4 xl:grid-cols-[2fr_1fr]">
+        <div class="grid gap-5 xl:grid-cols-[2fr_1fr]">
           <AdminCard title="Purchases per day">
             <AdminChart :labels="labels" :series="purchaseSeries" type="bar" title="Purchases per day" />
           </AdminCard>

@@ -17,6 +17,7 @@ export const ADMIN_OPS = [
   "users.sendCode",
   "users.removeDevice",
   "users.setAdmin",
+  "users.impersonate",
   "entitlements.grant",
   "entitlements.revoke",
   "entitlements.pause",
@@ -35,8 +36,16 @@ export const ADMIN_OPS = [
   "content.alerts",
   "content.resolveAlert",
   "content.versions",
+  "content.resync",
   "devices.flagged",
   "devices.block",
+  "settings.get",
+  "settings.set",
+  "refunds.list",
+  "refunds.create",
+  "refunds.decide",
+  "refunds.markPaid",
+  "refunds.eligibility",
 ] as const;
 export type AdminOp = (typeof ADMIN_OPS)[number];
 

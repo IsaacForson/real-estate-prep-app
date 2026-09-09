@@ -9,6 +9,7 @@ const { api, requireAdmin } = useAdmin();
 const auth = useAuth();
 const { confirm } = useAdminConfirm();
 const action = useAdminAction();
+const toast = useAdminToast();
 
 const q = useAdminQuery(() => api.users.get(id.value));
 watch(id, () => { void q.reload(); });
@@ -79,6 +80,48 @@ async function pause(product: string) {
 async function resume(product: string) {
   await action.run(`resume-${product}`, () => api.entitlements.resume(id.value, product), `Resumed ${product}.`, q.reload);
 }
+// ── impersonation ──
+const imp = useImpersonation();
+async function openAsUser() {
+  const r = await confirm({
+    title: `Open the app as ${email.value ?? "this user"}?`,
+    body: "You will be signed in as them until you press Stop. They stay signed in on their own device, and everything you do is recorded against their account and in the audit log.",
+    confirmLabel: "Open as user",
+  });
+  if (!r.ok) return;
+  const ok = await imp.start(id.value, () => api.users.impersonate(id.value));
+  if (!ok) toast.push("error", imp.error.value ?? "Could not open the app as this user.");
+}
+
+// ── refunds ──
+const eligibility = ref<Awaited<ReturnType<typeof api.refunds.eligibility>> | null>(null);
+watch(u, async (v) => {
+  eligibility.value = null;
+  if (v) { try { eligibility.value = await api.refunds.eligibility(id.value); } catch { /* non-fatal */ } }
+}, { immediate: true });
+
+async function fileRefund() {
+  const r = await confirm({
+    title: "File a refund request?",
+    body: "It opens on the Refunds screen, where it can be approved in full or in part. Nothing is refunded and no access changes until it is approved there.",
+    confirmLabel: "File request",
+    reason: { label: "Reason", required: true, placeholder: "e.g. failed the state portion, guarantee claim" },
+  });
+  if (!r.ok) return;
+  await action.run(
+    "refund",
+    () => api.refunds.create({
+      user_id: id.value,
+      kind: eligibility.value?.has_guarantee ? "guarantee" : "full",
+      products: [...activeProducts.value],
+      reason: r.reason,
+      evidence: eligibility.value ? { eligibility_at_filing: eligibility.value } : {},
+    }),
+    "Refund request filed.",
+  );
+  await navigateTo("/admin/refunds");
+}
+
 // ── devices ──
 async function removeDevice(deviceId: string, name: string | null | undefined) {
   const r = await confirm({ title: `Remove device ${name ?? adminFmt.short(deviceId)}?`, body: "The slot frees immediately; the learner must sign in again on that device.", confirmLabel: "Remove", danger: true });
@@ -113,6 +156,15 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
             </p>
           </div>
           <div class="flex flex-wrap gap-2">
+            <AppButton
+              variant="secondary"
+              size="sm"
+              icon="eye"
+              :loading="imp.busy.value"
+              :disabled="isSelf || u.profile?.is_admin === true || disabled"
+              :aria-label="u.profile?.is_admin ? 'Admins cannot be impersonated' : undefined"
+              @click="openAsUser"
+            >Open as user</AppButton>
             <AppButton variant="secondary" size="sm" :loading="action.busy.value === 'code'" @click="sendCode">Send sign-in code</AppButton>
             <AppButton
               variant="secondary"
@@ -126,7 +178,7 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-3 md:grid-cols-4 xl:grid-cols-6">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-6">
           <AdminKpiTile label="Answers" :value="adminFmt.int(u.study?.answers)" />
           <AdminKpiTile label="Accuracy" :value="u.study?.accuracy == null ? '—' : u.study.accuracy <= 1 ? adminFmt.ratio(u.study.accuracy) : adminFmt.pct(u.study.accuracy)" />
           <AdminKpiTile label="Mocks" :value="adminFmt.int(u.study?.mocks)" />
@@ -135,7 +187,7 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
           <AdminKpiTile label="Free mocks used" :value="`${adminFmt.int(u.free_tier?.mocks_used)} / 1`" />
         </div>
 
-        <div class="grid gap-4 xl:grid-cols-2">
+        <div class="grid gap-5 xl:grid-cols-2">
           <AdminCard title="Entitlements">
             <template #actions>
               <AppButton v-for="p in grantable" :key="p" variant="primary" size="xs" :disabled="!!action.busy.value" @click="grant(p)">Grant {{ p }}</AppButton>
@@ -189,6 +241,41 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
                 >Sign out</AppButton>
               </li>
             </ul>
+          </AdminCard>
+
+          <!--
+            The published guarantee conditions, checked rather than recited, so the operator can
+            answer "are they entitled to this" without reading four tables. It reports facts; the
+            score report is a human judgement and stays one.
+          -->
+          <AdminCard title="Refund &amp; guarantee" subtitle="pass guarantee conditions, SPEC §6">
+            <template #actions>
+              <AppButton variant="secondary" size="xs" :loading="action.busy.value === 'refund'" @click="fileRefund">File refund request</AppButton>
+            </template>
+            <p v-if="!eligibility" class="m-0 text-[13px] text-muted">Checking…</p>
+            <template v-else>
+              <ul class="m-0 list-none p-0">
+                <li
+                  v-for="c in [
+                    { ok: eligibility.has_guarantee, label: 'Bought the pass guarantee', detail: eligibility.guarantee_granted_at ? adminFmt.abs(eligibility.guarantee_granted_at) : 'not purchased' },
+                    { ok: eligibility.within_window, label: 'Within the 90-day window', detail: eligibility.days_since_guarantee == null ? '—' : `${eligibility.days_since_guarantee} days since purchase` },
+                    { ok: eligibility.meets_mock_requirement, label: 'Completed 5 full mocks', detail: `${eligibility.mocks_completed} completed` },
+                    { ok: !eligibility.already_refunded, label: 'Not already refunded', detail: eligibility.already_refunded ? 'a refund is already on file' : 'no prior refund' },
+                  ]"
+                  :key="c.label"
+                  class="flex items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0"
+                >
+                  <Icon :name="c.ok ? 'check-circle' : 'x-circle'" :size="16" :class="c.ok ? 'text-ok' : 'text-danger'" />
+                  <span class="font-medium">{{ c.label }}</span>
+                  <span class="ml-auto text-[11.5px] text-muted">{{ c.detail }}</span>
+                </li>
+              </ul>
+              <p class="m-0 mt-3 text-[11.5px] leading-relaxed text-muted">
+                Approving a refund revokes the listed entitlements here. Returning the money is a
+                separate step in App Store Connect or Play Console — record the reference on the
+                Refunds screen once it is done.
+              </p>
+            </template>
           </AdminCard>
         </div>
 

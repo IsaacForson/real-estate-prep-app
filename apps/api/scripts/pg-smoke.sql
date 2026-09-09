@@ -286,3 +286,126 @@ set role anon;
 select count(*) = 1 as anon_sees_content_version from public.content_versions;
 select count(*) = 0 as anon_sees_no_alerts from public.content_alerts;
 reset role;
+
+\echo [19] 0016: app_settings drives the device ceiling; sessions follow it
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select public.fn_max_active_devices() = 1 as default_ceiling_is_one;
+do $$ begin perform public.fn_set_app_setting('device_policy', '{"max_active_devices": 3}');
+  raise exception 'non-admin wrote a setting';
+exception when insufficient_privilege then raise notice 'ok: settings refused for non-admin'; end $$;
+
+-- bob is an admin from [18]; he may change the rule
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select (public.fn_set_app_setting('device_policy', '{"max_active_devices": 3}')).value ->> 'max_active_devices' = '3' as admin_set_ceiling;
+select public.fn_max_active_devices() = 3 as ceiling_now_three;
+
+-- with room for three, three devices coexist and all keep live sessions
+select pg_temp.as_user('44444444-4444-4444-8444-444444444444');
+select superseded = 0 as carol_first_device from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('1',64), 'ios', 'phone');
+select superseded = 0 as carol_second_device from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('2',64), 'web', 'laptop');
+select superseded = 0 as carol_third_device from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('3',64), 'android', 'tablet');
+select public.fn_active_device_count('44444444-4444-4444-8444-444444444444') = 3 as three_slots_held;
+select count(*) = 3 as three_live_sessions from public.sessions where user_id = '44444444-4444-4444-8444-444444444444' and revoked_at is null;
+-- and every one of them still authenticates, which is the point of raising the ceiling
+select bool_and(public.fn_session_is_valid('44444444-4444-4444-8444-444444444444', s.id, s.device_id)) as all_three_valid
+from public.sessions s where s.user_id = '44444444-4444-4444-8444-444444444444' and s.revoked_at is null;
+
+-- the fourth pushes out the least recently seen, not all of them
+select superseded = 1 as fourth_retires_exactly_one from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('4',64), 'web', 'desktop');
+select public.fn_active_device_count('44444444-4444-4444-8444-444444444444') = 3 as still_three_slots;
+select removed_at is not null as oldest_device_retired from public.devices where user_id = '44444444-4444-4444-8444-444444444444' and fingerprint_hash = repeat('1',64);
+
+-- back to one: the next sign-in takes the whole account over again (the 0015 rule)
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select (public.fn_set_app_setting('device_policy', '{"max_active_devices": 1}')).value ->> 'max_active_devices' = '1' as admin_reset_ceiling;
+select pg_temp.as_user('44444444-4444-4444-8444-444444444444');
+select superseded = 3 as single_device_takes_over_all from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('5',64), 'ios', 'phone2');
+select public.fn_active_device_count('44444444-4444-4444-8444-444444444444') = 1 as one_slot_left;
+select count(*) = 1 as one_live_session from public.sessions where user_id = '44444444-4444-4444-8444-444444444444' and revoked_at is null;
+
+\echo [20] 0016: impersonation gets a session without displacing the user
+select pg_temp.as_user('44444444-4444-4444-8444-444444444444');
+do $$ begin perform public.fn_start_shadow_session('44444444-4444-4444-8444-444444444444');
+  raise exception 'user minted a shadow session';
+exception when insufficient_privilege then raise notice 'ok: shadow session is service-role only'; end $$;
+select pg_temp.as_service();
+select session_id is not null as shadow_session_made from public.fn_start_shadow_session('44444444-4444-4444-8444-444444444444');
+-- the user's own device kept its slot and its session
+select public.fn_active_device_count('44444444-4444-4444-8444-444444444444') = 1 as user_device_untouched;
+select count(*) = 2 as user_session_survives from public.sessions where user_id = '44444444-4444-4444-8444-444444444444' and revoked_at is null;
+
+\echo [21] 0016: refunds are decisions, and approving one revokes access
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+do $$ begin perform public.fn_admin_refunds(null, 10); raise exception 'non-admin listed refunds';
+exception when insufficient_privilege then raise notice 'ok: refunds refused for non-admin'; end $$;
+
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+-- bob holds `complete` (transferred in [13]); give him the guarantee so a claim can be judged
+select pg_temp.as_service();
+select public.fn_grant_entitlement('22222222-2222-4222-8222-222222222222', 'pass_guarantee', 'manual', 'smoke-guarantee') is not null as guarantee_granted;
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select (g->>'has_guarantee')::boolean as claim_has_guarantee,
+       (g->>'within_window')::boolean as claim_in_window,
+       (g->>'meets_mock_requirement')::boolean = false as claim_needs_more_mocks,
+       (g->>'already_refunded')::boolean = false as claim_not_yet_refunded
+from public.fn_guarantee_eligibility('22222222-2222-4222-8222-222222222222') g;
+
+do $$ begin perform public.fn_admin_refund_create('22222222-2222-4222-8222-222222222222', 'partial', '{}', null, 'app_store');
+  raise exception 'partial refund accepted without an amount';
+exception when invalid_parameter_value then raise notice 'ok: partial refund requires an amount'; end $$;
+
+\set rid '00000000-0000-4000-8000-0000000000f1'
+select id is not null as refund_filed, status = 'open' as refund_opens_open
+from public.fn_admin_refund_create('22222222-2222-4222-8222-222222222222', 'guarantee',
+  '{complete,pass_guarantee}'::public.product_kind[], 7900, 'app_store', 'failed the state portion',
+  '{"score_report":"https://example.test/report.pdf"}'::jsonb);
+
+-- paying before a decision is refused
+do $$
+declare v_id uuid;
+begin
+  select id into v_id from public.refund_requests order by created_at desc limit 1;
+  perform public.fn_admin_refund_mark_paid(v_id, 'APPLE-123');
+  raise exception 'paid an undecided refund';
+exception when invalid_parameter_value then raise notice 'ok: cannot pay before approving'; end $$;
+
+do $$
+declare v_id uuid; v_row public.refund_requests;
+begin
+  select id into v_id from public.refund_requests order by created_at desc limit 1;
+  v_row := public.fn_admin_refund_decide(v_id, true, 'score report checked', 7900);
+  if v_row.status <> 'approved' then raise exception 'decide did not approve'; end if;
+  -- deciding twice is refused
+  begin
+    perform public.fn_admin_refund_decide(v_id, false, 'oops');
+    raise exception 'decided the same refund twice';
+  exception when invalid_parameter_value then raise notice 'ok: a refund is decided once'; end;
+  v_row := public.fn_admin_refund_mark_paid(v_id, ' APPLE-123 ');
+  if v_row.external_refund_id <> 'APPLE-123' then raise exception 'refund reference not trimmed'; end if;
+end $$;
+
+-- approval revoked both products, so access is gone and the reason reads 'refund'
+select public.fn_has_entitlement('22222222-2222-4222-8222-222222222222', 'complete') = false as complete_revoked_by_refund,
+       public.fn_has_entitlement('22222222-2222-4222-8222-222222222222', 'pass_guarantee') = false as guarantee_revoked_by_refund;
+select count(*) >= 2 as revoke_reason_is_refund from public.entitlements
+where user_id = '22222222-2222-4222-8222-222222222222' and revoke_reason = 'refund';
+select (t->>'paid')::int = 1 as one_paid_refund, (t->>'paid_cents')::int = 7900 as paid_total_recorded, (t->>'open')::int = 0 as nothing_left_open
+from public.fn_admin_refund_totals() t;
+select (g->>'already_refunded')::boolean as claim_now_marked_refunded
+from public.fn_guarantee_eligibility('22222222-2222-4222-8222-222222222222') g;
+select count(*) = 1 as refund_listed from public.fn_admin_refunds('paid', 10);
+select count(*) = 1 as refund_visible_to_owner from (select pg_temp.as_user('22222222-2222-4222-8222-222222222222')) x, public.refund_requests;
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select count(*) = 0 as refund_hidden_from_others from public.refund_requests;
+reset role;
+
+\echo [22] 0016: content epoch bump reaches clients through v_app_runtime
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select content_epoch = 1 as epoch_starts_at_one from public.v_app_runtime;
+do $$ begin perform public.fn_bump_content_epoch(); raise exception 'non-admin bumped the content epoch';
+exception when insufficient_privilege then raise notice 'ok: content epoch bump is admin-only'; end $$;
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select (public.fn_bump_content_epoch() ->> 'epoch')::int = 2 as epoch_bumped;
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select content_epoch = 2 as learner_sees_new_epoch, content_synced_at is not null as sync_time_recorded from public.v_app_runtime;
+reset role;

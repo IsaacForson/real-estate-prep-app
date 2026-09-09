@@ -3,8 +3,12 @@
  * The SQL side mirrors the device numbers in migrations/0004_devices_sessions.sql — keep in sync.
  */
 
-// SPEC §5.3 device registry: one active device, taken over by the newest sign-in (0015).
-export const MAX_ACTIVE_DEVICES = 1;
+// SPEC §5.3 device registry: how many devices may hold a live session at once. This is the *default*
+// only — since 0016 the live value is a row in app_settings that an admin edits from the console, so
+// read it with maxActiveDevices() in _shared/settings.ts rather than importing this. At 1 the newest
+// sign-in takes the account over (0015); above 1 older devices keep working until the ceiling is hit.
+export const DEFAULT_MAX_ACTIVE_DEVICES = 1;
+export const MAX_ACTIVE_DEVICES_CEILING = 10;
 
 // SPEC §5.4 session batches: 50–200 items, signed, short ttl
 export const BATCH_MIN = 50;

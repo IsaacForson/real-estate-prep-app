@@ -31,6 +31,8 @@ function confirm() { if (canConfirm.value) settle({ ok: true, reason: reason.val
           ref="input"
           v-model="reason"
           :type="pending.options.reason.type ?? 'text'"
+          :min="pending.options.reason.min"
+          :step="pending.options.reason.step"
           class="mt-1.5 h-10 w-full rounded-lg border border-line bg-paper px-3 text-sm text-ink placeholder:text-muted focus-visible:border-accent"
           :placeholder="pending.options.reason.placeholder"
         />

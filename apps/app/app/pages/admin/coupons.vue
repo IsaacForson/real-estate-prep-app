@@ -75,10 +75,10 @@ async function disable(c: AdminCoupon) {
       subtitle="Gift codes grant the product on redemption; percent/amount codes apply at the future web checkout."
     />
 
-    <div class="grid gap-4 xl:grid-cols-[minmax(300px,1fr)_2fr]">
+    <div class="grid gap-5 xl:grid-cols-[minmax(300px,1fr)_2fr]">
       <AdminCard title="Create a batch">
         <form class="native-fields space-y-3" @submit.prevent="create">
-          <div class="grid grid-cols-2 gap-3">
+          <div class="grid grid-cols-2 gap-4">
             <label class="block">
               <span class="mb-1 block text-[12px] font-medium text-muted">Kind</span>
               <select v-model="form.kind">

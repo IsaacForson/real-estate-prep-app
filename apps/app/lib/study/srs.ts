@@ -56,6 +56,10 @@ export function pipeline(all: Progress[], totalItems: number, now = Date.now()):
 /**
  * Pick the next session's items: due reds first, then due yellows, then due greens, then unseen,
  * excluding leeches (they get their own drill). Deterministic given `seed`.
+ *
+ * `ignoreSchedule` drops the due-date filter so a learner who is caught up can still study. It is
+ * never the default: pulling a green card forward costs the spacing that earned it, so it has to be
+ * an explicit choice made on the idle screen rather than something the engine does on its own.
  */
 export function scheduleSession(opts: {
   candidates: string[];              // all item ids available in the chosen bank(s)
@@ -64,6 +68,7 @@ export function scheduleSession(opts: {
   now?: number;
   seed?: number;
   includeLeeches?: boolean;
+  ignoreSchedule?: boolean;
 }): string[] {
   const now = opts.now ?? Date.now();
   let s = (opts.seed ?? now) >>> 0;
@@ -74,7 +79,7 @@ export function scheduleSession(opts: {
     const p = opts.progress.get(id);
     if (!p || p.attempts === 0) { buckets.unseen.push(id); continue; }
     if (p.leech && !opts.includeLeeches) continue;
-    if (!isDue(p, now)) continue;
+    if (!opts.ignoreSchedule && !isDue(p, now)) continue;
     buckets[p.box].push(id);
   }
   const ordered = [...shuffle(buckets.red), ...shuffle(buckets.yellow), ...shuffle(buckets.green), ...shuffle(buckets.unseen)];
