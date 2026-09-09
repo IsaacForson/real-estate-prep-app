@@ -1,0 +1,39 @@
+id: NM-1-0005
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker wants to accept a second affiliation with another qualifying broker while
+  keeping the first affiliation active. Under 16.61.17.8 NMAC, is this permitted?
+options:
+  - No, unless the commission grants a waiver
+  - Yes, if both qualifying brokers consent in writing
+  - Yes, if the second brokerage is smaller
+  - No, one affiliation is allowed at a time
+key: D
+explanation: The rule limits an associate broker to only one associate broker's license and
+  affiliation with only one qualifying broker at a time.
+citation:
+  source: 16.61 NMAC § 16.61.17.8
+  url: null
+  quoted_text: An associate broker may have only one associate broker’s license and be affiliated with
+    only one qualifying broker at a time.
+  secondary: []
+terms:
+  - associate broker
+  - affiliation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

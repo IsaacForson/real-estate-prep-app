@@ -1,0 +1,37 @@
+id: AK-88-0041
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's office closed a sales transaction two years ago, and the broker has since discarded
+  the entire file. Does this comply with AS 08.88.351?
+options:
+  - No, because a broker must keep a complete record of each transaction for three years.
+  - Yes, because a broker only needs to retain transaction records for one year after closing.
+  - Yes, because record retention duties end once a transaction successfully closes.
+  - No, because a broker must keep transaction records permanently with no expiration.
+key: A
+explanation: AS 08.88.351(a)(1) requires a broker to keep a complete record of all real estate
+  transactions for three years, so discarding the file after two years does not comply.
+citation:
+  source: Alaska Stat. § 08.88.351
+  url: null
+  quoted_text: keep a complete record, for three years, of all real estate transactions in which the
+    broker or employed licensees of the broker engaged
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

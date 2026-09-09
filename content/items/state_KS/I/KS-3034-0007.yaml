@@ -1,0 +1,41 @@
+id: KS-3034-0007
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Kansas law, may a licensee whose license has been suspended still receive a commission
+  earned before the suspension took effect?
+options:
+  - No, all compensation is forfeited once a license is suspended
+  - Yes, for any transaction the former brokerage later closes
+  - No, commissions may only be paid to the supervising broker
+  - Yes, for acts performed while the license was still active
+key: D
+explanation: K.S.A. 58-3082(a) allows a licensee whose license is suspended, deactivated or revoked
+  to receive a personally earned commission, but only for acts performed while the person was
+  actively licensed before the suspension's effective date.
+citation:
+  source: Kan. Stat. Ann. § 58-3082
+  url: null
+  quoted_text: A licensee whose license is suspended, deactivated or revoked may receive any
+    personally earned commission during the period of suspension, deactivation or revocation only
+    for those acts performed and for which commission was personally earned when the person was
+    actively licensed prior to the effective date of the suspension, deactivation or revocation.
+  secondary: []
+terms:
+  - earned commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

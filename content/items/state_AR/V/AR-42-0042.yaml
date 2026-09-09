@@ -1,0 +1,47 @@
+id: AR-42-0042
+jurisdiction: AR
+bank: state_AR
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Rule 8.3(b), from whom may a licensee accept a commission, rebate, profit,
+  payment, compensation or other valuable consideration in connection with a real estate
+  transaction?
+options:
+  - Accepting compensation from any party to the transaction
+  - Accepting compensation from the licensed principal broker only
+  - Accepting compensation from both parties with written disclosure
+  - Accepting compensation from the client's attorney
+key: B
+explanation: Rule 8.3(b) states that a licensee shall not accept a commission, rebate, profit,
+  payment, compensation or other valuable consideration from any person or entity except the
+  licensed principal broker under whom the licensee is licensed. Therefore, only the principal
+  broker is permitted. The distractor suggesting acceptance from any party is incorrect because the
+  rule explicitly prohibits such acceptance except from the principal broker.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 8.3
+  url: null
+  quoted_text: Notwithstanding Regulation 8.3(a), a licensee shall not accept a commission, rebate,
+    profit, payment, compensation or other valuable consideration in connection with a real estate
+    transaction or real estate activity from any person or entity except the licensed principal
+    broker under whom the licensee is licensed.
+  secondary: []
+terms:
+  - dual agency
+  - commission
+  - principal broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

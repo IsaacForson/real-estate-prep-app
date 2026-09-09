@@ -1,0 +1,40 @@
+id: PA-9-0010
+jurisdiction: PA
+bank: state_PA
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A buyer and seller both claim entitlement to a deposit a broker holds in escrow, and
+  settlement talks have stalled with no resolution in sight. After giving the required notice, what
+  may the broker do next?
+options:
+  - Release the funds to whichever party signs first
+  - Split the disputed deposit evenly between the parties
+  - Transfer the deposit into the listing broker's account
+  - Petition the county court to interplead the claimants
+key: D
+explanation: Section 35.327 provides that if resolution of an escrow dispute appears remote without
+  legal action, the broker may, after thirty days' notice to the parties, petition the county court
+  to interplead the rival claimants.
+citation:
+  source: 49 Pa. Code § 35.327
+  url: null
+  quoted_text: If resolution of the dispute appears remote without legal action, the broker may,
+    following 30 days’ notice to the parties, petition the county court having jurisdiction in the
+    matter to interplead the rival claimants.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

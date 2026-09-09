@@ -1,0 +1,43 @@
+id: NAT-PV-V-0982
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Executive Order 11063, which type of residential property is subject to the
+  nondiscrimination requirement?
+options:
+  - Property situated outside the United States territories and possessions
+  - Property provided in whole or in part with the aid of a Federal grant
+  - Property used exclusively for commercial business activities
+  - Property owned by a private individual with no Federal assistance
+key: B
+explanation: The order applies to residential property provided in whole or in part with the aid of
+  Federal loans, advances, grants, or contributions. Therefore, property receiving a Federal grant
+  is covered. Property owned by a private individual with no Federal assistance is not covered
+  because the order only reaches property with Federal involvement.
+citation:
+  source: "### 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866
+    — property rights of citizens Sec. 101(a)(ii)"
+  url: null
+  quoted_text: provided in whole or in part with the aid of loans, advances, grants, or contributions
+    hereafter agreed to be made by the Federal Government
+  secondary: []
+terms:
+  - executive order
+  - federal assistance
+  - nondiscrimination
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

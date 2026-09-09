@@ -1,0 +1,42 @@
+id: NAT-PV-V-0937
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A home sells for $250,000 with a 4.5% commission. What is the total commission?
+options:
+  - $1,125,000.00
+  - $112,500.00
+  - $2,500.00
+  - $11,250.00
+key: D
+explanation: The commission is calculated by multiplying the sale price by the commission rate
+  expressed as a decimal. The distractor $1,125,000 results from incorrectly using the percentage
+  value (4.5) instead of its decimal equivalent (0.045).
+citation:
+  source: REP Ref. Brokerage Practice § 4.5 Computing a commission
+  url: null
+  quoted_text: Commission = sale price × rate.
+  secondary: []
+math:
+  worked_solution: "Convert 4.5% to decimal: 0.045. Multiply $250,000 × 0.045 = $11,250."
+  formulas:
+    - Commission = Sale price × rate
+  onscreen_calculator_only: false
+terms:
+  - commission calculation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

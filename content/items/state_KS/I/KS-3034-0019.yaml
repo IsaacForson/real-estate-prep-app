@@ -1,0 +1,44 @@
+id: KS-3034-0019
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A Kansas real estate licensee enters a plea of guilty to a felony charge unrelated to real
+  estate practice. Compared with a licensee who commits a misdemeanor reflecting on honesty or
+  trustworthiness, how does Kansas law treat the felony plea?
+options:
+  - The felony plea only permits discretionary action, while a qualifying misdemeanor instead
+    requires automatic and mandatory revocation of the license
+  - Neither offense affects licensure unless a court separately orders suspension of the license
+  - Both offenses trigger the same discretionary review by the commission before any action
+  - The commission must suspend or revoke the license for the felony plea, while a qualifying
+    misdemeanor only permits discretionary action
+key: D
+explanation: K.S.A. 58-3050(b) requires the commission to suspend or revoke the license of any
+  licensee who has entered a plea of guilty or nolo contendere to, or been convicted of, any felony,
+  a mandatory consequence that contrasts with the commission's discretionary authority over
+  qualifying misdemeanors under subsection (a).
+citation:
+  source: Kan. Stat. Ann. § 58-3050
+  url: null
+  quoted_text: the commission shall suspend or revoke the license of any licensee who has entered a
+    plea of guilty or nolo contendere to, or has been convicted of any felony.
+  secondary: []
+terms:
+  - felony conviction
+  - mandatory revocation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,39 @@
+id: NJ-1-0016
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A New Jersey broker wants to pay a referral fee to a broker licensed only in Pennsylvania who
+  maintains a bona fide office there. Under N.J. Stat. Ann. § 45:15-3.1, is this payment permitted?
+options:
+  - Yes, because referral fees are unregulated in New Jersey
+  - No, because the recipient does not hold a New Jersey license
+  - Yes, since the recipient is a broker licensed in that state
+  - No, because brokers may not pay compensation to outsiders
+key: C
+explanation: Section 45:15-3.1 allows a New Jersey broker to pay a referral fee to a broker who is
+  not licensed in this state but is duly licensed in another jurisdiction and maintains a bona fide
+  office there.
+citation:
+  source: N.J. Stat. Ann. § 45:15-3.1
+  url: null
+  quoted_text: A duly licensed real estate broker of this State may pay a referral fee or referral
+    commission to a person not licensed if the person is a licensed real estate broker of another
+    jurisdiction in which the licensed broker maintains a bona fide office.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,42 @@
+id: TX-1101-0020
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A sales agent wants to rebate part of the agent's commission to the buyer, a party the agent
+  represents in the transaction. Before making that payment, what consent does TREC's fee-splitting
+  rule require the agent to obtain?
+options:
+  - The informal verbal approval of the seller and the seller's broker given at the closing table
+  - The written consent of the sales agent's sponsoring broker and the represented buyer
+  - A ruling from the commission approving the specific rebate amount
+  - The written consent of the title company handling the transaction
+key: B
+explanation: Section 535.147(d) allows a license holder to rebate part of a fee or commission to a
+  party in the transaction only when the sales agent has the written consent of both the sponsoring
+  broker and the party the license holder represents.
+citation:
+  source: 22 Tex. Admin. Code § 535.147
+  url: null
+  quoted_text: |-
+    A license holder may rebate or pay a portion of the license holder's fee or
+    commission to a party in the transaction when the sales agent has the written
+    consent of the sales agent's sponsoring broker and the party represented by the
+    license holder.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

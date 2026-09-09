@@ -1,0 +1,44 @@
+id: NAT-PSI-VI-0360
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee presents an offer to a seller without having a listing agreement. The seller
+  accepts the offer. According to the text, what best describes the licensee's relationship to the
+  seller after acceptance?
+options:
+  - The licensee is the seller's customer
+  - The licensee is a subagent for the seller
+  - The licensee has no agency relationship
+  - The licensee is the seller's agent
+key: D
+explanation: By accepting the offer, the seller ratifies the licensee's unauthorized act, treating
+  the licensee as if authorized from the beginning and thus creating an agency relationship. The
+  licensee is not merely a customer, subagent, or unrelated party.
+citation:
+  source: "REP Ref. Agency — Reference note: agency relationships, creation/termination, fiduciary
+    duties, disclosure (authored, status: draft — needs licensed review) § 3.4 Ratification"
+  url: null
+  quoted_text: A seller who accepts an offer procured by a licensee who had no listing has ratified
+    the licensee's acts (though whether a commission is owed depends on the agreement and state
+    law).
+  secondary: []
+terms:
+  - ratification
+  - agency
+  - agent
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,42 @@
+id: NAT-PV-II-0875
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: In a fee simple determinable, what future interest does the grantor retain?
+options:
+  - Signing and delivering the deed
+  - Recording and delivering the deed
+  - Delivery and acceptance by the grantee
+  - Payment and consideration of funds
+key: C
+explanation: The grantor of a fee simple determinable retains a possibility of reverter, which
+  allows title to return automatically if the stated condition fails. A right of re-entry applies to
+  a fee simple subject to a condition subsequent, requiring the grantor to act to retake the
+  property. A remainder and a reversion are interests that follow a life estate, not a defeasible
+  fee.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 1.3
+  url: null
+  quoted_text: The grantor keeps a possibility of reverter, and title returns to the grantor or the
+    grantor's heirs without any action.
+  secondary: []
+terms:
+  - possibility of reverter
+  - fee simple determinable
+  - future interest
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

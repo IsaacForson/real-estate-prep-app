@@ -1,0 +1,47 @@
+id: MI-25-0006
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant submits written notice and required documentation of a reasonable apprehension of
+  domestic violence under Michigan's landlord-tenant statute. When does the tenant's rent obligation
+  end, and what does the release exclude?
+options:
+  - Rent ends immediately upon mailing the notice, and the release excludes the security deposit
+  - Rent ends at the close of the current month, and the release excludes utility charges
+  - Rent ends by the first day of the second month after notice, excluding prepaid rent
+  - Rent ends upon the landlord's written acknowledgment, and the release excludes late fees
+key: C
+explanation: The statute releases a tenant from the obligation to pay rent no later than the first
+  day of the second month that rent is due after notice is given, but the release does not apply to
+  prepaid amounts such as first and last months' rent.
+citation:
+  source: Mich. Comp. Laws § 554.601b
+  url: null
+  quoted_text: >-
+    the tenant is
+
+    released from an obligation to pay rent no later than the first day of the second month that
+    rent is due after
+
+    notice is given. A release of a rental obligation under this section does not apply to prepaid
+    amounts,
+
+    including, but not limited to, prepayment of first and last months' rent.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

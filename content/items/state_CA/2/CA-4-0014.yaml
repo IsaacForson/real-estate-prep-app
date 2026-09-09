@@ -1,0 +1,38 @@
+id: CA-4-0014
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A buyer signs a buyer-broker representation agreement with an individual real estate agent.
+  Under Section 1670.50, what is the maximum duration of that agreement from the date it was made?
+options:
+  - Six months from the date the agreement was made.
+  - Twelve months from the date the agreement was made.
+  - Three months from the date the agreement was made.
+  - One month from the date the agreement was made.
+key: C
+explanation: Section 1670.50 limits a buyer-broker representation agreement to no longer than three
+  months from the date it was made, unless the agreement is with a corporation, limited liability
+  company, or partnership.
+citation:
+  source: Cal. Civ. Code § 1670.50
+  url: null
+  quoted_text: A buyer-broker representation agreement shall not last longer than three months from
+    the date the agreement was made.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

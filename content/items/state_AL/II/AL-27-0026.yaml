@@ -1,0 +1,40 @@
+id: AL-27-0026
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: An applicant's real estate license application was rejected in another state eighteen months
+  ago solely because she failed the written licensing examination there. Under the requirements for
+  licensure, how should the commission treat her Alabama application?
+options:
+  - The prior rejection automatically disqualifies her for five years regardless of the reason.
+  - The rejection does not bar licensure since it was exam-based only.
+  - The prior rejection bars licensure until she reapplies in the original state first.
+  - The prior rejection bars licensure for any rejection within two years.
+key: B
+explanation: Section 34-27-32 disqualifies an applicant only when a license application was rejected
+  in another state on grounds other than failing a written examination within the two prior years,
+  so an examination-only rejection does not itself bar licensure.
+citation:
+  source: Ala. Code § 34-27-32
+  url: null
+  quoted_text: Is a person whose application for a real estate license has not been rejected in any
+    state on any grounds other than failure to pass a written examination within the two years prior
+    to the application for a real estate license with Alabama.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

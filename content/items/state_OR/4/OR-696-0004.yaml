@@ -1,0 +1,40 @@
+id: OR-696-0004
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A managing principal broker signs a written supervisory agreement dividing control among
+  several authorized principal brokers, and each keeps open records separated so agents on opposite
+  sides of a deal cannot access confidential information. What is the effect on a transaction
+  handled by agents supervised by different authorized principal brokers?
+options:
+  - It voids the supervisory agreement between the managing and authorized brokers
+  - It requires each authorized principal broker to personally supervise closing
+  - It converts every agent involved into an independent single agent for the deal
+  - It creates a disclosed limited agency transaction for the managing broker
+key: D
+explanation: When a managing principal broker has delegated supervision this way and the
+  open-records safeguard is followed, the rule treats the resulting transaction as disclosed limited
+  agency for the managing principal broker only.
+citation:
+  source: Or. Admin. R. § 863-015-0135
+  url: null
+  quoted_text: then a transaction involving agents supervised by different authorized principal
+    brokers creates a disclosed limited agency transaction for the managing principal broker only.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

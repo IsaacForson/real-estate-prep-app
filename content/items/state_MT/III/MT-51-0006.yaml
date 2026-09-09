@@ -1,0 +1,39 @@
+id: MT-51-0006
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana broker wants to pay a referral commission to a broker licensed only in Wyoming who
+  performed no brokerage service in Montana for this transaction. Under the nonresident-transactions
+  statute, is the payment permitted?
+options:
+  - No, because a Montana broker cannot pay compensation to any out-of-state broker
+  - Yes, because the nonresident broker performed no compensable service in Montana
+  - No, because the nonresident broker did not complete a reciprocity examination
+  - Yes, because referral fees of this kind are exempt from Montana's licensing chapter
+key: B
+explanation: A licensed broker may pay a commission to a broker of another state if that nonresident
+  broker has not conducted and does not conduct in Montana a service for which a fee is paid.
+citation:
+  source: Mont. Code Ann. § 37-51-306
+  url: null
+  quoted_text: a licensed broker may pay a commission to a licensed broker of another state or
+    jurisdiction if the nonresident broker has not conducted and does not conduct in this state a
+    service for which a fee, compensation, or commission is paid
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

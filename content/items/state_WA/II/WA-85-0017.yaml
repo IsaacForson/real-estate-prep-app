@@ -1,0 +1,38 @@
+id: WA-85-0017
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A candidate passed the broker's license examination ten months ago and has not yet applied for
+  a license. Under WAC 308-124A-710, is that passing result still usable?
+options:
+  - Yes, results remain valid indefinitely once earned
+  - No, results expire thirty days after the exam date
+  - No, results become void immediately after the exam
+  - Yes, results are valid a year from the exam date
+key: D
+explanation: The rule states that examination results are valid for one year only, so a candidate
+  who passed ten months earlier may still become licensed within that window.
+citation:
+  source: Wash. Admin. Code § 308-124A-710
+  url: null
+  quoted_text: Examination results are valid for one year only. Any person who has passed the
+    examination for broker or managing broker must become licensed within one year from the date of
+    such examination.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

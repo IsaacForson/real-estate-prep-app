@@ -1,0 +1,38 @@
+id: FL-475-0010
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A residential sale is under contract but has not yet closed. The seller demands that the
+  broker holding the earnest money deposit release those funds to the seller immediately. Under Rule
+  61J2-14.011, may the broker do so?
+options:
+  - No, the deposit may not go to either party before closing without consent
+  - Yes, the deposit legally belongs to the seller once the sales contract is signed
+  - Yes, the listing broker may release the deposit once the contract is ratified
+  - No, only a licensed closing agent may disburse a deposit before closing
+key: A
+explanation: Rule 61J2-14.011, F.A.C. bars a broker from delivering a held deposit to either party
+  until the transaction closes, unless the depositor specifically directs otherwise.
+citation:
+  source: Fla. Admin. Code Rule 61J2-14.011
+  url: null
+  quoted_text: A broker shall not deliver the deposit to the other party to the transaction until such
+    transaction is closed, except as otherwise directed or agreed to specifically by the depositor.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

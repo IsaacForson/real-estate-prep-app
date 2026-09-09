@@ -1,0 +1,41 @@
+id: AL-27-0035
+jurisdiction: AL
+bank: state_AL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Ala. Admin. Code § 790-X-3-.10(2), which element must be included in a Formal Complaint
+  drawn by the Commission?
+options:
+  - The complainant's driver's license number on file with the agency
+  - The name(s) of the party against whom the complaint is made
+  - The licensee's annual gross income reported to the federal IRS
+  - The date the licensee completed continuing education courses
+key: B
+explanation: The rule explicitly requires that a Formal Complaint include the name(s) of the party
+  (or parties) against whom the complaint is being made. The other options describe information not
+  mandated by this section.
+citation:
+  source: Ala. Admin. Code ch. 790-X-1 to 790-X-5 — Alabama Administrative Code, Agency 790 - Alabama
+    Real Estate Commission (Chapters 790-X-1 through 790-X-5) - Legislative Services Agency current
+    text — § 790-X-3-.10
+  url: null
+  quoted_text: (a) the name(s) of the party (or parties) against whom the complaint is being made;
+  secondary: []
+terms:
+  - formal complaint
+  - party
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

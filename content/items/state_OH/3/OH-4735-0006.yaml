@@ -1,0 +1,40 @@
+id: OH-4735-0006
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A broker divides a commission with a person who is not licensed as a real estate broker or
+  salesperson and who does not qualify for any exception in R.C. 4735.20. How should this payment be
+  evaluated under R.C. 4735.18?
+options:
+  - This is permitted because the payment was disclosed to both parties
+  - This is permitted because the recipient assisted with the transaction
+  - This is disciplinable because the recipient later obtains a license
+  - It is disciplinable because no exception under R.C. 4735.20 applies
+key: D
+explanation: R.C. 4735.18 makes it disciplinable to pay or divide commissions or fees with anyone
+  not licensed under the chapter, except as permitted under R.C. 4735.20; without a qualifying
+  exception, the payment is misconduct.
+citation:
+  source: Ohio Rev. Code § 4735.18
+  url: null
+  quoted_text: Except as permitted under section 4735.20 of the Revised Code, having paid commissions
+    or fees to, or divided commissions or fees with, anyone not licensed as a real estate broker or
+    salesperson under this chapter
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

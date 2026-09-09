@@ -1,0 +1,42 @@
+id: NAT-PSI-VII-0413
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: According to CERCLA § 9601(7), how would a spring that supplies water to a municipal water
+  treatment plant be classified?
+options:
+  - It is considered a drinking water supply because it may be used by a public water system
+  - It is not considered a drinking water supply because it is not finished water
+  - It is considered a drinking water supply only if it serves individual households
+  - It is not considered a drinking water supply because it is raw water only
+key: A
+explanation: The definition of drinking water supply in CERCLA § 9601(7) includes any raw or
+  finished water source that is or may be used by a public water system. A spring feeding a
+  municipal treatment plant meets this criterion, so it is a drinking water supply.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601
+  url: null
+  quoted_text: (7) The term "drinking water supply" means any raw or finished water source that is or
+    may be used by a public water system (as defined in the Safe Drinking Water Act [42 U.S.C. 300f
+    et seq.]) or as drinking water by one or more individuals.
+  secondary: []
+terms:
+  - drinking water supply
+  - public water system
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

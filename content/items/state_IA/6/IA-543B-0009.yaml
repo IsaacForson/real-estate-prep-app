@@ -1,0 +1,39 @@
+id: IA-543B-0009
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A transaction fails to close, and the broker claims part of the earnest money because a
+  commission was already earned under the listing contract. Under rule 481-2013.1(9), may the broker
+  withhold that portion of the earnest money?
+options:
+  - Yes, up to the earned commission amount
+  - No, the broker cannot withhold earnest money
+  - Yes, if the seller authorizes it verbally
+  - No, but after the buyer formally files an objection
+key: B
+explanation: The rule states the broker is not entitled to withhold any portion of the earnest money
+  when a transaction fails to consummate even if a commission is earned.
+citation:
+  source: Iowa Admin. Code rule 481-2013
+  url: null
+  quoted_text: |-
+    Under no circumstances is the broker entitled to withhold any portion of the earnest money
+    when a transaction fails to consummate even if a commission is earned.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

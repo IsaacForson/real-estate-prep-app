@@ -1,0 +1,41 @@
+id: ID-20-0017
+jurisdiction: ID
+bank: state_ID
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A seller's broker makes a misrepresentation to a buyer without the seller's knowledge, and the
+  seller had no reason to know of it. Under Idaho's vicarious liability provisions, is the seller
+  liable for the broker's misrepresentation?
+options:
+  - No, because brokers cannot be found to have misrepresented anything
+  - Yes, if the transaction later fails to close on schedule
+  - No, unless the seller had actual knowledge or reason to know of it
+  - Yes, because clients are automatically liable for their broker's conduct
+key: C
+explanation: Idaho abolished vicarious liability for clients, providing that a client is not liable
+  for a wrongful act, error, omission, or misrepresentation of the broker unless the client had
+  actual knowledge of it or reasonably should have known.
+citation:
+  source: Idaho Code § 54-2093
+  url: null
+  quoted_text: A client, as defined in this chapter, whether buyer or seller, shall not be liable for
+    a wrongful act, error, omission or misrepresentation of his broker or his broker’s licensees
+    unless the client had actual knowledge of or reasonably should have known of the wrongful act,
+    error, omission or misrepresentation.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

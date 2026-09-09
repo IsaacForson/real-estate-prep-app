@@ -1,0 +1,40 @@
+id: MT-51-0010
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A subagent who is an independent contractor, not an employee, makes a misrepresentation to a
+  buyer that the broker did not know about and did not originate. Under Montana's
+  vicarious-liability statute, is the broker liable for that misrepresentation?
+options:
+  - Yes, because independent-contractor status is irrelevant to broker liability
+  - No, because none of the statute's conditions for broker liability are met
+  - Yes, because the broker is presumed to have authorized the misrepresentation
+  - No, because subagents are not covered by the broker-duties statute
+key: B
+explanation: A broker is not liable for a subagent's misrepresentation unless the broker had actual
+  knowledge, the subagent was an employee rather than an independent contractor, or the subagent was
+  repeating the broker's own misrepresentation.
+citation:
+  source: Mont. Code Ann. § 37-51-315
+  url: null
+  quoted_text: "A broker is not liable for a misrepresentation made by the broker's subagent unless:
+    (a) the broker has actual knowledge of the misrepresentation; (b) the subagent making the
+    misrepresentation is an employee of the broker and not an independent contractor"
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

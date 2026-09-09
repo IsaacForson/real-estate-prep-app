@@ -1,0 +1,41 @@
+id: CA-4-0018
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: analysis
+stem: A principal dies, ending the agent's authority, but a buyer completes a purchase through that
+  agent without actual knowledge of the death. Under Section 2356, how does this transaction affect
+  the deceased principal's estate?
+options:
+  - The transaction is voidable at the discretion of the principal's heirs within one year.
+  - The transaction is automatically rescinded because the agent's authority ended immediately at
+    death.
+  - The transaction binds the principal's heirs, devisees, and legatees.
+  - The transaction requires ratification by a probate court before it has any legal effect.
+key: C
+explanation: Section 2356 provides that a bona fide transaction entered into with an agent by a
+  person who lacks actual knowledge of the principal's death remains binding on the principal's
+  heirs, devisees, legatees, and other successors in interest.
+citation:
+  source: Cal. Civ. Code § 2356
+  url: null
+  quoted_text: any bona fide transaction entered into with an agent by any person acting without
+    actual knowledge of the revocation, death, or incapacity shall be binding upon the principal,
+    his or her heirs, devisees, legatees, and other successors in interest.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

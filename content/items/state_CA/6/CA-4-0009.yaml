@@ -1,0 +1,43 @@
+id: CA-4-0009
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: analysis
+stem: An unlicensed employee of an individual broker has fidelity bond coverage equal to the maximum
+  trust funds to which the employee has access. Under Section 2834, what else must occur before that
+  employee may sign withdrawals from the broker's trust account?
+options:
+  - General verbal permission from the broker allowing the employee to sign withdrawals.
+  - Annual written approval from the commissioner's office allowing the employee to sign withdrawals
+    on file.
+  - Specific written authorization from the broker allowing the employee to sign withdrawals.
+  - Notarized consent from the principal allowing the employee to sign withdrawals.
+key: C
+explanation: Section 2834 permits withdrawals by a bonded unlicensed employee only when the broker
+  has specifically authorized that person in writing, so bond coverage alone does not satisfy the
+  signature-authorization rule.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2834
+  url: null
+  quoted_text: >-
+    Withdrawals may be made from a trust fund account of an individual broker only upon the
+    signature of the broker
+
+    or one or more of the following persons if specifically authorized in writing by the broker:
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

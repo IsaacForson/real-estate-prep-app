@@ -1,0 +1,39 @@
+id: DE-2901-0006
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller and a Broker orally agree to a non-exclusive listing for the sale of the seller's
+  property, with no signed paperwork. Under 24 Del. Admin. Code § 2900-8.1, is this listing
+  agreement valid?
+options:
+  - Yes, because oral listing agreements bind the seller once performance begins
+  - Yes, because non-exclusive listings are exempt from the writing requirement
+  - No, because exclusive listings alone require a written agreement
+  - No, because listing agreements are required to be in writing and signed
+key: D
+explanation: Rule 8.1.1 requires every listing agreement, whether exclusive or non-exclusive, to be
+  in writing and signed by the seller, owner, Broker, or the Broker's designee.
+citation:
+  source: 24 Del. Admin. Code § 2900-8.1
+  url: null
+  quoted_text: Listing Agreements for the sale, lease or exchange of real property, whether exclusive
+    or non-exclusive, shall be in writing and shall be signed by the seller, owner, Broker or
+    Broker's designee.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

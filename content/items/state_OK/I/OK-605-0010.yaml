@@ -1,0 +1,39 @@
+id: OK-605-0010
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A broker deposits client trust funds into a dedicated escrow account that holds only money
+  belonging to others, with none of the broker's own funds in it. Under the Code's
+  cause-for-discipline provision on commingling, how is this deposit treated?
+options:
+  - It is commingling regardless of what the account holds
+  - It is commingling because the broker's name appears on the account
+  - It is not commingling if the account holds solely others' funds
+  - It is not commingling once the Commission pre-approves the account
+key: C
+explanation: The statute defines commingling as mixing a licensee's own funds with others' funds,
+  and expressly excepts an escrow account that contains only money or property belonging to others.
+citation:
+  source: Okla. Stat. tit. 59, § 858-312
+  url: null
+  quoted_text: Commingling with the licensee's own money or property the money or property of others
+    which is received and held by the licensee, unless the money or property of others is received
+    by the licensee and held in an escrow account that contains only money or property of others;
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

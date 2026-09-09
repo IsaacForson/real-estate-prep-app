@@ -1,0 +1,39 @@
+id: MD-17-0017
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker offers a local attorney a fee simply for referring the attorney's clients to the
+  brokerage, with no other service performed. Is this arrangement permitted under the statute
+  governing referral fees to lawyers?
+options:
+  - Yes, provided the fee is paid soon after the sale closes
+  - Yes, as long as the attorney signs a detailed written referral agreement
+  - No, a broker may not pay a lawyer a fee for merely referring a client
+  - No, unless the attorney happens to be related to a party
+key: C
+explanation: The statute bars a real estate broker, associate broker, or salesperson from paying or
+  offering to pay a commission to a lawyer simply for referring a person as a possible party to a
+  residential transaction.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. § 17-605(a)(1)
+  url: null
+  quoted_text: pay or offer to pay a commission to a lawyer simply for the referral of a person as a
+    possible party to a residential real estate transaction.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

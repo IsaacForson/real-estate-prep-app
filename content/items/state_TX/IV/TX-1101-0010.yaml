@@ -1,0 +1,42 @@
+id: TX-1101-0010
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Texas Occupations Code, what is a person prohibited from doing unless the person
+  holds a license issued under Chapter 1101?
+options:
+  - Serving as a witness to the signing of a real estate sales contract
+  - Owning residential real property held for personal investment purposes
+  - Acting as or representing that the person is a broker or sales agent
+  - Attending an open house hosted by a licensed real estate brokerage
+key: C
+explanation: Section 1101.351(a) provides that unless a person holds a license issued under Chapter
+  1101, the person may not act as or represent that the person is a broker or sales agent, or act as
+  a residential rental locator.
+citation:
+  source: Tex. Occ. Code § 1101.351
+  url: null
+  quoted_text: |-
+    Unless a person holds a license issued under this chapter, the person may not:
+
+    (1) act as or represent that the person is a broker or sales agent; or
+
+    (2) act as a residential rental locator.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

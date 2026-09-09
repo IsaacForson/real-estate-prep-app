@@ -1,0 +1,48 @@
+id: AR-42-0025
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson continues to show properties and negotiate offers after her license expired on
+  June 30. The executive director issues a citation. What is the maximum penalty that may be imposed
+  by citation for performing activities that require an active real estate license while the license
+  is expired?
+options:
+  - $500.00
+  - $100.00
+  - $250.00
+  - $1000.00
+key: C
+explanation: The statute authorizes a citation penalty of not more than two hundred fifty dollars
+  ($250) for a broker, salesperson, or supervising broker when a licensee performs activities
+  requiring an active license while the license is expired. Therefore, the maximum penalty in this
+  scenario is $250. The $100 amount applies to education failures, not to conduct with an expired
+  license. The $500 and $1000 figures exceed the statutory limit for this violation.
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-312
+  url: null
+  quoted_text: "(B) A penalty of not more than two hundred fifty dollars ($250) to a broker,
+    salesperson, or the supervising broker of a broker or salesperson if a broker or salesperson:
+    (i) Performs activities that require an active real estate license while his or her license is
+    expired;"
+  secondary: []
+terms:
+  - penalty
+  - license
+  - expired
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

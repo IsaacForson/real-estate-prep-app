@@ -1,0 +1,42 @@
+id: AK-88-0048
+jurisdiction: AK
+bank: state_AK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A brokerage has two designated licensees, one representing the seller and one representing the
+  buyer in the same transaction, and neither is the broker. The seller's designated licensee learns
+  confidential information from the seller. Under AS 08.88.640, what is true about that information
+  as it relates to the broker?
+options:
+  - The information is imputed to the broker only after the transaction closes.
+  - The information is imputed to the broker because dual designated licensees create shared
+    knowledge.
+  - The information is imputed to the broker automatically because both licensees share one broker.
+  - The information is not imputed to the broker because the broker is not the designated licensee.
+key: D
+explanation: Under AS 08.88.640(d), unless the broker is itself the designated licensee, knowledge
+  received by a designated licensee is not imputed to the broker or to another licensee working for
+  the broker.
+citation:
+  source: Alaska Stat. § 08.88.640
+  url: null
+  quoted_text: the knowledge received by the designated licensee while representing or providing
+    specific assistance to the person is not imputed to the real estate broker for whom the
+    designated licensee works
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

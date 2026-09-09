@@ -1,0 +1,43 @@
+id: AK-88-0021
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Alaska Statute § 08.88.660, when does a licensee’s relationship with a buyer begin if
+  the licensee shows the property to the buyer but no written agreement exists?
+options:
+  - The relationship begins when the licensee first meets the buyer
+  - The relationship begins when the licensee shows the property to the buyer
+  - The relationship begins when a written agreement is signed
+  - The relationship begins when the buyer makes an offer
+key: B
+explanation: The statute states that a licensee relationship begins when the licensee represents or
+  provides specific assistance; showing property qualifies as specific assistance, so the
+  relationship starts at that point. The distractor claiming the relationship begins at first
+  meeting is wrong because mere meeting does not constitute representation or specific assistance
+  under the statute.
+citation:
+  source: Alaska Stat. § 08.88.660
+  url: null
+  quoted_text: "A licensee relationship with a buyer, lessee, seller, or lessor begins when the
+    licensee represents or provides specific assistance to the buyer, lessee, seller, or lessor and
+    continues until the earliest of the following events occurs:"
+  secondary: []
+terms:
+  - licensee relationship
+  - specific assistance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

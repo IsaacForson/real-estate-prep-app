@@ -1,0 +1,43 @@
+id: NAT-PV-V-0967
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: If a court finds a defendant willfully violated TCPA regulations, what is the maximum multiple
+  of the base statutory damages that may be awarded?
+options:
+  - Four times the base damages
+  - One times the base damages
+  - Three times the base damages
+  - Two times the base damages
+key: C
+explanation: The statute allows the court to increase the award to no more than three times the base
+  amount when the violation is willful or knowing. Therefore, two times the base damages is not the
+  maximum permitted increase under the TCPA.
+citation:
+  source: 47 U.S.C. § 227
+  url: null
+  quoted_text: If the court finds the defendant willfully or knowingly violated such regulations, the
+    court may, in its discretion, increase the amount of the award to an amount equal to not more
+    than 3 times the amount available under the preceding sentence.
+  secondary: []
+terms:
+  - tcpa
+  - willful violation
+  - statutory damages
+  - multiplier
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

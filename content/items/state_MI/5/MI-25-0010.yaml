@@ -1,0 +1,42 @@
+id: MI-25-0010
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A condominium developer's disclosure statement omits a material fact, causing the remaining
+  statements to appear misleading in context. Under the Condominium Act, has the developer violated
+  the disclosure requirements?
+options:
+  - No, because the act prohibits affirmative misstatements but does not address omissions of fact
+  - No, because disclosure statements are advisory and impose no binding legal duty on the developer
+  - Yes, because an omission that renders the statements misleading is itself a violation
+  - Yes, but a violation requires proof that the developer acted with malicious intent
+key: C
+explanation: The Condominium Act prohibits a developer from omitting a material fact when the
+  omission makes the required disclosures misleading in light of the circumstances, so the omission
+  itself is a violation regardless of the developer's intent.
+citation:
+  source: Mich. Comp. Laws § 559.184a
+  url: null
+  quoted_text: |-
+    With regard to any documents required under this section, a developer shall not make an
+    untrue statement of a material fact or omit to state a material fact necessary in order to make
+    the statements made, in the light of the circumstances under which they were made, not
+    misleading.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,49 @@
+id: NAT-PSI-VII-0403
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is listing a single-family home built in 1975 that is occupied by a family with two
+  children under age six. According to the definition of target housing in the Residential
+  Lead-Based Paint Hazard Reduction Act, how should the licensee classify this property?
+options:
+  - Not target housing
+  - Elderly housing
+  - Target housing
+  - Zero-bedroom dwelling
+key: C
+explanation: The property was constructed prior to 1978 and is not excluded as housing for the
+  elderly or persons with disabilities, nor is it a zero‑bedroom dwelling; moreover, children under
+  six reside there, which satisfies the exception for zero‑bedroom units. Therefore it meets the
+  definition of target housing. The option "Not target housing" is incorrect because the property
+  fulfills all criteria for target housing. "Elderly housing" and "Zero‑bedroom dwelling" describe
+  categories that are expressly excluded from target housing unless specific conditions apply, which
+  they do not.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act) —
+    Residential Lead-Based Paint Hazard Reduction Act (incl. § 4852d disclosure) §4851b
+  url: null
+  quoted_text: Target housing means any housing constructed prior to 1978, except housing for the
+    elderly or persons with disabilities or any 0-bedroom dwelling (unless any child who is less
+    than 6 years of age resides or is expected to reside in such housing)
+  secondary: []
+terms:
+  - target housing
+  - elderly
+  - zero-bedroom
+  - children
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

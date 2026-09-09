@@ -1,0 +1,40 @@
+id: AZ-20-0009
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A purchaser mails a rescission notice by regular first-class mail, without certification, on
+  the last permissible day. Does this satisfy Arizona's delivery requirement for a notice of
+  rescission on subdivided land?
+options:
+  - Yes, because any mailing that is postmarked before the deadline counts as timely delivery.
+  - Yes, because the rule accepts delivery by any method the purchaser chooses.
+  - No, because delivery is limited to hand delivery, email, courier, or certified mail.
+  - No, because rescission notices may only be delivered through a licensed escrow agent.
+key: C
+explanation: The rule deems a notice of rescission delivered and received only when hand delivered,
+  sent by email, sent by courier service, or sent by certified mail, so uncertified first-class mail
+  does not satisfy the requirement.
+citation:
+  source: Ariz. Admin. Code Rule R4-28-804
+  url: null
+  quoted_text: Delivery of all notices of rescission must be delivered in writing and are deemed
+    delivered and received when hand delivered, sent via email, sent by courier service, or
+    certified mail and seller must issue a receipt if hand delivered.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

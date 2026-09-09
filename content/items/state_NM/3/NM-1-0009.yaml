@@ -1,0 +1,40 @@
+id: NM-1-0009
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: An associate broker violates commission rules without the qualifying broker's awareness. Under
+  16.61.16.10 NMAC, what determines whether the qualifying broker's own license may be suspended or
+  revoked for that violation?
+options:
+  - Whether the brokerage carries excess insurance
+  - Whether the violation occurred during business hours
+  - Whether the associate broker is a new licensee
+  - Whether the qualifying broker had guilty knowledge
+key: D
+explanation: The rule provides that a licensee's violation is not cause for suspension or revocation
+  of the qualifying broker's license unless the qualifying broker had guilty knowledge of the act.
+citation:
+  source: 16.61 NMAC § 16.61.16.10
+  url: null
+  quoted_text: shall not be cause for suspension or revocation of a qualifying broker license unless
+    the qualifying broker had guilty knowledge of the act or rule violation.
+  secondary: []
+terms:
+  - qualifying broker
+  - guilty knowledge
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

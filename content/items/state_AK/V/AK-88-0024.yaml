@@ -1,0 +1,42 @@
+id: AK-88-0024
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee orally agrees with a seller to find a buyer and successfully does so, but there is
+  no written personal services contract. Under Alaska Stat. § 08.88.361, is the licensee entitled to
+  a commission?
+options:
+  - The licensee is not entitled to commission because no written personal services contract existed
+  - The licensee is not entitled to commission because the licensee did not disclose a conflict
+  - The licensee is entitled to commission because the seller orally agreed to pay
+  - The licensee is entitled to commission because the seller benefited from the service
+key: A
+explanation: The statute states that a commission is earned only when the broker fulfills the terms
+  of a written personal services contract. Since no written contract exists, the licensee has not
+  earned a commission regardless of the seller's benefit or oral agreement. Failure to disclose a
+  conflict is unrelated to the commission entitlement under this provision.
+citation:
+  source: Alaska Stat. § 08.88.361
+  url: null
+  quoted_text: A commission is earned when the real estate broker fulfills the terms of a written
+    personal services contract.
+  secondary: []
+terms:
+  - commission
+  - personal services contract
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

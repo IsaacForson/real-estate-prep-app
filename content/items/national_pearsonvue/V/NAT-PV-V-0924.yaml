@@ -1,0 +1,42 @@
+id: NAT-PV-V-0924
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the federal statutory safe harbor for licensed real estate agents, which action would
+  jeopardize a broker's ability to treat a licensee as an independent contractor for federal tax
+  purposes?
+options:
+  - The broker pays the licensee solely on commission splits with no hourly wage
+  - The broker requires the licensee to attend training on trust-account rules
+  - The broker sets mandatory hours for the licensee and supervises daily tasks
+  - The broker provides a written contract stating the licensee is not an employee
+key: C
+explanation: The safe harbor requires brokers to avoid conduct inconsistent with independent
+  contractor status, such as setting mandatory hours, paying salaries, or reimbursing expenses
+  beyond supervision requirements. Setting mandatory hours is expressly prohibited, while the other
+  actions are permissible or required.
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: setting mandatory hours, paying salaries or hourly wages, or reimbursing expenses
+  secondary: []
+terms:
+  - independent contractor
+  - safe harbor
+  - mandatory hours
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NH-331-0020
+jurisdiction: NH
+bank: state_NH
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A seller signs a listing agreement that contains an explanation of designated agency but never
+  signs any separate designated-agency consent form. Under RSA 331-A:25-e, II, has the seller
+  consented to designated agency?
+options:
+  - Yes, signing that agreement conclusively presumes consent
+  - No, a separate signed consent form is still required
+  - No, consent to designated agency cannot be presumed
+  - Yes, but consent applies once the designated agent is appointed
+key: A
+explanation: RSA 331-A:25-e, II creates a conclusive presumption of consent to designated agency
+  when a party signs a brokerage agreement containing an explanation of designated agency, so no
+  further separate form is needed.
+citation:
+  source: N.H. Rev. Stat. Ann. § 331-A:25-e
+  url: null
+  quoted_text: There shall be a conclusive presumption that a seller or landlord or a buyer or tenant
+    has consented to a designated agency relationship, if the party signed a brokerage agreement
+    containing an explanation of designated agency.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

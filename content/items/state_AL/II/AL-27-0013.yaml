@@ -1,0 +1,39 @@
+id: AL-27-0013
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age requirement for an applicant to obtain a real estate broker or
+  salesperson license in Alabama?
+options:
+  - 21 years of age
+  - 18 years of age
+  - 20 years of age
+  - 19 years of age
+key: D
+explanation: The statute requires applicants to be at least 19 years of age; the other ages do not
+  meet this requirement.
+citation:
+  source: Ala. Code § 34-27-32
+  url: null
+  quoted_text: (4) Is at least 19 years of age.
+  secondary: []
+terms:
+  - age
+  - license
+  - requirement
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

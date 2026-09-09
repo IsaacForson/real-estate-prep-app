@@ -1,0 +1,44 @@
+id: NAT-PV-V-0973
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What action is prohibited for a state while the Commission’s TCPA civil action is pending?
+options:
+  - The state's civil action after the Commission's lawsuit ends
+  - The state's civil action for a different violation not alleged
+  - The federal civil action against any defendant
+  - The state's civil action during the Commission's lawsuit
+key: D
+explanation: The TCPA limitation provision bars a state from instituting a civil action against any
+  defendant named in the Commission's complaint while the Commission's action is pending, making the
+  state's civil action during the Commission's lawsuit prohibited. A state may act after the
+  Commission's action ends, which is allowed.
+citation:
+  source: 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions on
+    telephone solicitation (7)
+  url: null
+  quoted_text: Whenever the Commission has instituted a civil action for violation of regulations
+    prescribed under this section, no State may, during the pendency of such action instituted by
+    the Commission, subsequently institute a civil action against any defendant named in the
+    Commission's complaint for any violation as alleged in the Commission's complaint.
+  secondary: []
+terms:
+  - tca
+  - state action
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

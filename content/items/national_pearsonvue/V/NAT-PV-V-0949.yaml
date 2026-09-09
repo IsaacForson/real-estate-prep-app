@@ -1,0 +1,41 @@
+id: NAT-PV-V-0949
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum civil penalty per violation for failing to comply with a final cease and
+  desist order issued under the Sherman Antitrust Act enforcement provisions?
+options:
+  - $1,000
+  - $2,500
+  - $5,000
+  - $10,000
+key: C
+explanation: The statute states that a person who violates a final order shall forfeit and pay a
+  civil penalty of not more than $5,000 for each violation. Therefore $5,000 is the statutory
+  ceiling; lower amounts are possible but not the maximum, and $10,000 exceeds the limit.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) § 21
+  url: null
+  quoted_text: shall forfeit and pay to the United States a civil penalty of not more than $5,000 for
+    each violation
+  secondary: []
+terms:
+  - penalty
+  - violation
+  - cease and desist
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

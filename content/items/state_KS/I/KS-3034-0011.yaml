@@ -1,0 +1,46 @@
+id: KS-3034-0011
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: When the commission collects a civil fine imposed under K.S.A. 58-3050 for a disciplinary
+  case, how must the fine proceeds generally be distributed under Kansas law?
+options:
+  - The entire fine is returned to the disciplined licensee as restitution
+  - The entire fine is deposited into the real estate recovery revolving fund
+  - The certified-cost portion goes to the county treasurer, and the balance is refunded to the
+    complainant
+  - The certified-cost portion goes to the real estate fee fund, and the rest goes to the general
+    fund
+key: D
+explanation: K.S.A. 58-3074(c) directs that the portion of a K.S.A. 58-3050 fine equal to the
+  commission's certified actual investigation and prosecution costs be credited to the real estate
+  fee fund, with the balance credited to the state general fund.
+citation:
+  source: Kan. Stat. Ann. § 58-3074
+  url: null
+  quoted_text: Upon receipt of each such remittance, the state treasurer shall deposit the entire
+    amount in the state treasury and shall credit the portion of the fine amount collected that
+    equals the commission's actual costs related to the investigation and prosecution of the case
+    and attorney fees, as certified by the executive director of the commission to the state
+    treasurer, to the real estate fee fund as provided by K.S.A. 58-3050 , and amendments thereto.
+    The balance of the fine amount collected shall be credited to the state general fund.
+  secondary: []
+terms:
+  - civil fine
+  - real estate fee fund
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

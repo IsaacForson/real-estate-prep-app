@@ -1,0 +1,44 @@
+id: NAT-PSI-VI-0346
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller instructs the listing agent to refuse to show the property to families with children.
+  According to the fiduciary duty of obedience, what must the agent do?
+options:
+  - Follow the instruction because it is the seller's lawful request.
+  - Refuse to follow the instruction because it would violate fair housing law.
+  - Show the property only to families with children to avoid discrimination.
+  - Seek the broker's approval before deciding whether to comply.
+key: B
+explanation: The duty of obedience requires the agent to follow only lawful instructions;
+  instructions to break the law, such as refusing to show the property to families with children in
+  violation of the Fair Housing Act, must be refused. An agent who follows an unlawful instruction
+  is personally liable. The other options either suggest compliance with an unlawful directive,
+  defer to the broker, or propose a discriminatory action that also violates the law.
+citation:
+  source: "REP Ref. Agency — Reference note: agency relationships, creation/termination, fiduciary
+    duties, disclosure (authored, status: draft — needs licensed review) § 5.2"
+  url: null
+  quoted_text: Instructions to break the law — to refuse to show the property to families with
+    children (a violation of the cached Fair Housing Act), to conceal a known defect, to misstate
+    square footage — must be refused; obedience never requires illegality, and an agent who follows
+    an unlawful instruction is personally liable.
+  secondary: []
+terms:
+  - obedience
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

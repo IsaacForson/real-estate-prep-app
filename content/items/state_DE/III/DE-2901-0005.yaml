@@ -1,0 +1,37 @@
+id: DE-2901-0005
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Delaware Broker wants to open the required escrow account at a bank that has no office in
+  Delaware. Under 24 Del. Admin. Code § 2900-6.4, is this permitted?
+options:
+  - Yes, the escrow account may be held at any bank nationwide
+  - Yes, the escrow account may be held at a bank in a neighboring state
+  - No, the escrow account is required to be held at a bank with a Delaware office
+  - No, the escrow account is required to be held with the Commission's office directly
+key: C
+explanation: Rule 6.4 conditions a valid license on the Broker opening and maintaining the escrow
+  account at a bank with an office located within Delaware.
+citation:
+  source: 24 Del. Admin. Code § 2900-6.4
+  url: null
+  quoted_text: An Escrow Account shall be opened and maintained by the Broker in a bank with an office
+    located in Delaware in order to receive and maintain a valid license.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

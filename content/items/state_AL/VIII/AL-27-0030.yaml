@@ -1,0 +1,47 @@
+id: AL-27-0030
+jurisdiction: AL
+bank: state_AL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson receives an earnest money check from a buyer. The purchase contract does not
+  specify a deposit timing clause. According to Ala. Admin. Code § 790-X-3-.03, when must the
+  qualifying broker deposit the check?
+options:
+  - The qualifying broker must deposit the check within three business days of receipt.
+  - The qualifying broker must deposit the check at the time of closing.
+  - The qualifying broker must deposit the check when the offer becomes a contract.
+  - The qualifying broker must deposit the check upon receipt of the buyer's loan approval.
+key: C
+explanation: When no deposit timing is specified in the contract form, the rule states the check
+  shall be deposited when the offer becomes a contract. The other options impose timing not
+  supported by the text.
+citation:
+  source: Ala. Admin. Code ch. 790-X-1 to 790-X-5 — Alabama Administrative Code, Agency 790 - Alabama
+    Real Estate Commission (Chapters 790-X-1 through 790-X-5) - Legislative Services Agency current
+    text — § 790-X-3-.03
+  url: null
+  quoted_text: In cases where a check is received as earnest money and the contract form states that
+    the check is to be held for a specific length of time or until the occurrence of a specific
+    event, then the check shall be deposited when the contract form states, or if no time for
+    deposit is specified in the contract form, then the check shall be deposited when the offer
+    becomes a contract.
+  secondary: []
+terms:
+  - earnest money
+  - deposit
+  - contract
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

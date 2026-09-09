@@ -1,0 +1,49 @@
+id: MI-25-0017
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner signs a right-to-list home sale agreement with a term of three years that includes
+  no early termination option. Under Michigan's occupational code, what is the status of this
+  agreement?
+options:
+  - Enforceable, provided the broker later adds a termination option by amendment
+  - Enforceable, because the code does not limit the term of such agreements
+  - Voidable if the homeowner formally objects to the agreement within 30 days of signing
+  - Void and unenforceable, because the term exceeds 2 years with no termination option
+key: D
+explanation: The code makes a right-to-list home sale agreement void and unenforceable if it is for
+  a period of more than 2 years or if it does not include an option for the owner to terminate the
+  agreement before its expiration date.
+citation:
+  source: Mich. Comp. Laws § 339.2512g
+  url: null
+  quoted_text: >-
+    It is for a period of more than 2 years.
+
+    (d) It does not include both of the following:
+
+    (i) An option for the owner to terminate the agreement before its expiration date for an amount
+    of consideration
+
+    payable to the real estate broker that is not more than the initial consideration the broker
+    paid to the owner with
+
+    interest of 6% per annum
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

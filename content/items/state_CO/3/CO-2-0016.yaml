@@ -1,0 +1,41 @@
+id: CO-2-0016
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker performs a covered act on behalf of a customer, and a title company offers
+  to pay the associate broker directly for facilitating the closing. Under Colorado law, may the
+  associate broker accept this payment?
+options:
+  - No, because customers are barred from paying licensees directly
+  - Yes, because the associate broker performed the qualifying act
+  - No, compensation for the act comes from the employing broker
+  - Yes, because title companies are exempt from this restriction
+key: C
+explanation: It is unlawful for a broker registered as in the employ of another broker to accept
+  compensation for such acts from anyone other than the broker's employer, who must be a licensed
+  real estate broker.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. § 12-10-221
+  url: null
+  quoted_text: It is unlawful for a real estate broker registered in the commission office as in the
+    employ of another broker to accept a commission or valuable consideration for the performance of
+    any of the acts specified in this part 2 from any person except the broker’s employer, who shall
+    be a licensed real estate broker.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

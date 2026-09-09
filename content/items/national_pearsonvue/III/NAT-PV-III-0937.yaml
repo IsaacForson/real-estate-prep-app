@@ -1,0 +1,50 @@
+id: NAT-PV-III-0937
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A comparable office building sold for $2,400,000 with annual gross income of $240,000. If the
+  subject property has annual gross income of $192,000, what is the indicated value using the gross
+  income multiplier (GIM)?
+options:
+  - The indicated value is $1,920,000,000.
+  - The indicated value is $192,000.
+  - The indicated value is $1,920,000.
+  - The indicated value is $19,200.
+key: C
+explanation: The GIM is sale price divided by gross annual income ($2,400,000 ÷ $240,000 = 10).
+  Multiplying the GIM by the subject’s annual gross income (10 × $192,000) yields $1,920,000. The
+  distractor that results from dividing income by the GIM confuses the formula.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.6
+  url: null
+  quoted_text: The gross income multiplier (GIM), used for larger commercial or multifamily
+    properties, is sale price ÷ gross annual income.
+  secondary: []
+math:
+  worked_solution: |-
+    GIM = $2,400,000 ÷ $240,000 = 10.0
+    Indicated value = 10.0 × $192,000 = $1,920,000
+  formulas:
+    - GIM = Sale Price / Gross Annual Income
+    - Indicated Value = GIM × Subject Gross Annual Income
+  onscreen_calculator_only: false
+terms:
+  - gross income multiplier
+  - indicated value
+  - annual gross income
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

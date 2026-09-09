@@ -1,0 +1,45 @@
+id: NAT-PV-V-0975
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate brokerage firm operates exclusively in State X, but its website advertises
+  properties to potential buyers in other states and receives inquiries from out‑of‑state parties.
+  Under the Sherman Antitrust Act, is the firm's activity considered 'commerce'?
+options:
+  - The firm's activity is considered commerce only if it maintains an office in another state
+  - The firm's activity is considered commerce because its advertising reaches persons in other
+    states
+  - The firm's activity is considered not to be commerce unless it completes a transaction with an
+    out‑of‑state buyer
+  - The firm's activity is considered not to be commerce because its physical operations are
+    confined to one state
+key: B
+explanation: The statute defines commerce to include trade or commerce among the several States,
+  which encompasses advertising that draws interest from out‑of‑state parties. An actual sale or a
+  physical office in another state is not required for the activity to qualify as commerce under the
+  Act.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) § 12
+  url: null
+  quoted_text: '"Commerce," as used herein, means trade or commerce among the several States and with
+    foreign nations,'
+  secondary: []
+terms:
+  - commerce
+  - antitrust
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

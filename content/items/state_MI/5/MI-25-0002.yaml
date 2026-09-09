@@ -1,0 +1,41 @@
+id: MI-25-0002
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which payment is excluded from the definition of a security deposit under Michigan's
+  landlord-tenant statute?
+options:
+  - An amount paid as prepayment of the first full rental period under the lease agreement
+  - An amount paid in excess of the average rent charged for the remaining lease term
+  - An amount paid for an option to purchase, absent intent to evade the act
+  - An amount held by the landlord as a condition of returning the unit in required condition
+key: C
+explanation: The statute excludes from the security deposit definition an amount paid for an option
+  to purchase under a lease with an option to purchase, unless the tenant shows the payment was
+  intended to evade the act.
+citation:
+  source: Mich. Comp. Laws § 554.601
+  url: null
+  quoted_text: >-
+    An amount paid for an option to purchase, pursuant to a lease with an option to purchase, unless
+    it is
+
+    shown the intent was to evade this act.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

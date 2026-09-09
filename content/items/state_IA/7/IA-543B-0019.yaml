@@ -1,0 +1,42 @@
+id: IA-543B-0019
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee only answers general questions about price range and location at an open house
+  without eliciting any confidential financial information. Under Iowa Code section 543B.57(2)(c),
+  does this conduct qualify as specific assistance requiring disclosure?
+options:
+  - Yes, any open house contact triggers disclosure
+  - No, that conduct is not specific assistance
+  - Yes, but not until the visitor makes an offer
+  - No, unless the visitor is already a client
+key: B
+explanation: The statute defines specific assistance to exclude an open house showing and
+  preliminary conversations about price range, location, and property styles.
+citation:
+  source: Iowa Code § 543B.57
+  url: null
+  quoted_text: |-
+    “Specific assistance”
+    does not mean an open house
+    showing, preliminary conversations concerning price range, location, and property styles, or
+    responding to general factual questions concerning properties which have been advertised
+    for sale or lease.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

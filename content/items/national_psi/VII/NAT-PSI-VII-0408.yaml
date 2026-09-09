@@ -1,0 +1,42 @@
+id: NAT-PSI-VII-0408
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under 42 U.S.C. § 4012a(f)(5), what is the maximum civil monetary penalty that may be assessed
+  for each violation under subsection (f)(2) or (f)(3)?
+options:
+  - A civil penalty of $2,000 per violation.
+  - A civil penalty of $1,000 per violation.
+  - A civil penalty of $500 per violation.
+  - A civil penalty of $5,000 per violation.
+key: A
+explanation: Subsection (f)(5) states that a civil monetary penalty under this subsection may not
+  exceed $2,000 for each violation under paragraph (2) or paragraph (3). Therefore, the maximum
+  penalty per violation is $2,000. The $500 and $1,000 options are below the statutory cap, while
+  the $5,000 option exceeds it.
+citation:
+  source: 42 U.S.C. § 4012a(f)(5)
+  url: null
+  quoted_text: A civil monetary penalty under this subsection may not exceed $2,000 for each violation
+    under paragraph (2) or paragraph (3).
+  secondary: []
+terms:
+  - civil penalty
+  - violation
+  - flood insurance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

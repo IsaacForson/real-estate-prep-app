@@ -1,0 +1,43 @@
+id: NAT-PSI-VI-0332
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A listing agent learns that the buyer, whose offer is pending, has just been laid off and may
+  be unable to obtain financing. According to the fiduciary duty of disclosure, what must the agent
+  do?
+options:
+  - The agent must inform the seller about the buyer's change in employment status
+  - The agent must keep the information confidential to protect the buyer's negotiating position
+  - The agent must disclose the information only if the buyer asks the agent to do so
+  - The agent must use the information to advise the buyer to increase the offer amount
+key: A
+explanation: The agent must disclose to the principal (the seller) every fact that could affect the
+  principal's decisions; the buyer's employment change affects the seller's assessment of the
+  offer's reliability. The distractor advocating confidentiality misstates the duty, which requires
+  disclosure to the client, not concealment.
+citation:
+  source: REP Ref. Agency § 5.4 Disclosure (full disclosure to the principal)
+  url: null
+  quoted_text: The agent must tell the principal every fact the agent knows, or should know, that
+    could affect the principal's decisions in the transaction.
+  secondary: []
+terms:
+  - disclosure
+  - principal
+  - fiduciary
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

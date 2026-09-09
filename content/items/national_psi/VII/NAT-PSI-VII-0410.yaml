@@ -1,0 +1,47 @@
+id: NAT-PSI-VII-0410
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower maintains his own flood insurance policy, and the lender also purchases flood
+  insurance for the same loan, resulting in overlapping coverage periods. According to 42 U.S.C. §
+  4012a(B), what must the lender do regarding the premiums paid by the borrower for the
+  lender‑purchased insurance during the overlap?
+options:
+  - The lender must retain the premiums and any related fees for the overlapping period.
+  - The lender must waive the premiums and any related fees for the overlapping period.
+  - The lender must refund the premiums and any related fees for the overlapping period.
+  - The lender must apply the premiums and any related fees for the overlapping period.
+key: C
+explanation: Subsection (B) requires the lender to refund to the borrower all premiums paid by the
+  borrower for any insurance purchased by the lender during any period of overlapping coverage, plus
+  any related fees. Therefore, refunding both premiums and fees is mandatory. Retaining premiums,
+  applying them to future premiums, or merely notifying the borrower do not satisfy this obligation.
+citation:
+  source: 42 U.S.C. § 4012a(B)
+  url: null
+  quoted_text: refund to the borrower all premiums paid by the borrower for any insurance purchased by
+    the lender or servicer under paragraph (2) during any period during which the borrower's flood
+    insurance coverage and the insurance coverage purchased by the lender or servicer were each in
+    effect, and any related fees charged to the borrower with respect to the insurance purchased by
+    the lender or servicer during such period.
+  secondary: []
+terms:
+  - premium
+  - refund
+  - flood insurance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

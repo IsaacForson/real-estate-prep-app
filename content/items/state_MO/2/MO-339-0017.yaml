@@ -1,0 +1,41 @@
+id: MO-339-0017
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A designated broker's license and an affiliated salesperson's license are both due for renewal
+  in the same even-numbered year. Applying 20 CSR 2250-4.020, on what date does the broker's license
+  expire?
+options:
+  - December 31, the same date as the salesperson license
+  - June 30, ahead of the salesperson license's September 30 date
+  - September 30, well after the broker license expires on June 30
+  - March 31, three months before the salesperson license
+key: B
+explanation: The rule sets every broker, broker-officer, broker-partner, and broker-associate
+  license to expire June 30 in each even-numbered year, ahead of the later salesperson license
+  expiration.
+citation:
+  source: 20 CSR 2250-4.020 § (Expiration and Renewal; Name and Address Changes)
+  url: null
+  quoted_text: Every license issued and every license renewal for a broker, corporation,
+    broker-officer, partnership, broker-partner, association, broker-associate, broker-salesperson,
+    professional corporation (broker-salesperson) or inactive broker license shall expire June 30 in
+    each even-numbered year.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

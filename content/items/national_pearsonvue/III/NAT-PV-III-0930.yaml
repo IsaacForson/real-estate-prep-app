@@ -1,0 +1,52 @@
+id: NAT-PV-III-0930
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A comparable property sold for $400,000 and is 200 square feet larger than the subject. If the
+  market-derived adjustment for living area is $50 per square foot, what is the adjusted price of
+  the comparable?
+options:
+  - $410,000
+  - $400,000
+  - $380,000
+  - $390,000
+key: D
+explanation: "Because the comparable is superior (larger), its price is adjusted downward: 200 sq ft
+  × $50/sq ft = $10,000 subtraction. $400,000 − $10,000 = $390,000. Adding the adjustment or
+  ignoring it leads to the incorrect distractors."
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.3
+  url: null
+  quoted_text: If a comparable has a feature the subject lacks (comparable superior), its price is
+    adjusted downward; if it lacks a feature the subject has (comparable inferior), its price is
+    adjusted upward.
+  secondary: []
+math:
+  worked_solution: |-
+    Difference in living area = 200 square feet
+    Adjustment amount = 200 × $50 = $10,000
+    Adjusted price = $400,000 − $10,000 = $390,000
+  formulas:
+    - Adjusted price = Comparable price − (Difference × Adjustment per unit)
+  onscreen_calculator_only: false
+terms:
+  - adjustment
+  - comparable
+  - subject
+  - living area
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,47 @@
+id: NAT-PV-V-0966
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA, which entity is authorized to bring a civil action on behalf of state
+  residents for violations of the act?
+options:
+  - The Federal Trade Commission or a designated federal official
+  - The state attorney general or a designated state official
+  - The local district attorney or a designated county prosecutor
+  - The private individual caller or a designated consumer advocate
+key: B
+explanation: The TCPA permits the state attorney general or an official/agency designated by the
+  state to bring a civil action on behalf of residents for telephone solicitation violations. The
+  Federal Trade Commission is not mentioned in this provision as having that authority, making it an
+  incorrect choice.
+citation:
+  source: 47 U.S.C. § 227
+  url: null
+  quoted_text: Whenever the attorney general of a State, or an official or agency designated by a
+    State, has reason to believe that any person has engaged or is engaging in a pattern or practice
+    of telephone calls or other transmissions to residents of that State in violation of this
+    section or the regulations prescribed under this section, the State may bring a civil action on
+    behalf of its residents to enjoin such calls, an action to recover for actual monetary loss or
+    receive $500 in damages for each violation, or both such actions.
+  secondary: []
+terms:
+  - tcpa
+  - attorney general
+  - civil action
+  - state resident
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

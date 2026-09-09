@@ -1,0 +1,41 @@
+id: KS-3034-0018
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Kansas licensee under investigation for misconduct voluntarily surrenders the license before
+  the investigation concludes. What authority does the commission retain under Kansas law?
+options:
+  - No further authority once a license has been surrendered
+  - Only the power to refer the matter to a county prosecutor
+  - The power to revoke the license despite the surrender
+  - Only the power to place a note in the licensee's public file
+key: C
+explanation: K.S.A. 58-3050(f) gives the commission the power to revoke the license of a licensee
+  who voluntarily surrenders the license, or who fails to renew it, while an investigation or
+  charges of misconduct are pending or anticipated.
+citation:
+  source: Kan. Stat. Ann. § 58-3050
+  url: null
+  quoted_text: In all matters pending before the commission, the commission shall have the power to
+    revoke the license of any licensee who voluntarily surrenders such licensee's license or who
+    does not renew such license pending investigation of misconduct or while charges of misconduct
+    are pending or anticipated.
+  secondary: []
+terms:
+  - voluntary surrender
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NH-331-0009
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A broker earns a commission and wants to route the payment to Riverbend Holdings, LLC, an
+  entity whose members include several unlicensed investors alongside the broker. Under RSA
+  331-A:16-b, why is this payment arrangement **NOT** permitted?
+options:
+  - The LLC has not registered to do business in New Hampshire as required
+  - The broker failed to notify the commission of the LLC's formation in writing
+  - The commission earned exceeds the surety bond amount currently on file
+  - Not every member of the LLC holds a valid, active real estate license
+key: D
+explanation: RSA 331-A:16-b allows a broker to route compensation to an entity only if all of its
+  partners, members, officers, or shareholders hold a valid and active license, which is not the
+  case when unlicensed investors are members.
+citation:
+  source: N.H. Rev. Stat. Ann. § 331-A:16-b
+  url: null
+  quoted_text: All of the partners, members, officers, or shareholders of any unlicensed business
+    entity, including a partnership, association, limited liability company, limited liability
+    partnership, or corporation, hold a valid and active license issued under this chapter.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

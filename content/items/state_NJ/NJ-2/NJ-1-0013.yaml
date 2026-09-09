@@ -1,0 +1,42 @@
+id: NJ-1-0013
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An unlicensed person charges a fee for providing a list of purportedly available rental units
+  before any lease is signed. Under N.J. Stat. Ann. § 45:15-1.2, how is this person classified?
+options:
+  - A referral agent operating under broker supervision
+  - An exempt property owner leasing out his own units
+  - A licensed real estate salesperson working part-time
+  - A disorderly person subject to a fine or jail term
+key: D
+explanation: Section 45:15-1.2 makes it a disorderly persons offense, punishable by fine or
+  imprisonment, for an unlicensed person to accept compensation for helping locate rental housing
+  before a lease is executed.
+citation:
+  source: N.J. Stat. Ann. § 45:15-1.2
+  url: null
+  quoted_text: Any person who, before a lease has been fully executed or, where no lease is drawn,
+    before possession is taken by the tenant, charges or accepts any fee, commission or compensation
+    in exchange for providing assistance in locating rental housing, including providing written
+    lists or telephone information on purportedly available rental units, without being licensed
+    pursuant to this act shall be a disorderly person and shall be subject to a fine of not less
+    than $200 or to imprisonment for not more than 30 days or both.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

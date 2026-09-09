@@ -1,0 +1,37 @@
+id: MA-87D-0001
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A person currently holds an active Massachusetts real estate broker license. Under 254 CMR
+  3.00, may that same person simultaneously hold an active salesperson license?
+options:
+  - No, but just during the first year after broker licensure
+  - No, a licensee may hold just one license type
+  - Yes, if the salesperson license was issued more recently
+  - Yes, if the broker sponsors the person's salesperson license
+key: B
+explanation: The regulation bars a broker from also being licensed as a salesperson and bars a
+  salesperson from also being licensed as a broker, so only one license type may be held at a time.
+citation:
+  source: 254 CMR 3.00, Section 3.00(5)
+  url: null
+  quoted_text: No broker shall also be licensed as a salesperson nor shall any salesperson be licensed
+    as a broker.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

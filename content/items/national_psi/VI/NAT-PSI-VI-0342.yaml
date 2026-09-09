@@ -1,0 +1,43 @@
+id: NAT-PSI-VI-0342
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the fiduciary duty of obedience, what must an agent do if the principal instructs the
+  agent to conceal a known defect in the property?
+options:
+  - Follow the instruction because the principal is the client
+  - Refuse to follow the instruction because it is unlawful
+  - Follow the instruction but disclose the defect to the buyer
+  - Seek the broker's approval before deciding
+key: B
+explanation: The duty of obedience requires an agent to follow the principal's lawful instructions,
+  but an agent must refuse any instruction that would violate the law, such as concealing a known
+  defect. Following an unlawful instruction makes the agent personally liable. Therefore, the agent
+  must refuse to conceal the defect.
+citation:
+  source: REP Ref. Agency § 5.2
+  url: null
+  quoted_text: Instructions to break the law — to refuse to show the property to families with
+    children (a violation of the cached Fair Housing Act), to conceal a known defect, to misstate
+    square footage — must be refused
+  secondary: []
+terms:
+  - obedience
+  - fiduciary duty
+  - unlawful instruction
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

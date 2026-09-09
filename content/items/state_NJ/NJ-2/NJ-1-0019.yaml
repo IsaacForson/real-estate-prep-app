@@ -1,0 +1,38 @@
+id: NJ-1-0019
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A 17-year-old wants to apply for a New Jersey real estate salesperson's license. Based on N.J.
+  Stat. Ann. § 45:15-9, what is the outcome?
+options:
+  - The application is accepted with parental consent on file
+  - The application is barred since the applicant is under 18
+  - The application is delayed pending a background check first
+  - The application is approved if a broker agrees to supervise
+key: B
+explanation: Section 45:15-9 requires every applicant for a broker, broker-salesperson, or
+  salesperson license to be at least 18 years of age, so a 17-year-old cannot be licensed.
+citation:
+  source: N.J. Stat. Ann. § 45:15-9
+  url: null
+  quoted_text: Every applicant for a license as a broker, broker-salesperson, or salesperson shall be
+    of the age of 18 years or over, and in the case of an association or a corporation the directors
+    thereof shall be of the age of 18 years or over.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

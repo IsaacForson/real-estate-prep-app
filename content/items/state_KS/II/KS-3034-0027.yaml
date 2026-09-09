@@ -1,0 +1,43 @@
+id: KS-3034-0027
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a supervising broker’s license expires and no prior notification is given to the
+  commission, within how many calendar days must the licenses of the broker’s associated licensees
+  be placed on inactive status?
+options:
+  - Ten calendar days
+  - Five calendar days
+  - Three calendar days
+  - Seven calendar days
+key: A
+explanation: Section 58-3080(a) specifies that associated licenses become inactive within five
+  calendar days after written notice, unless prior notification is provided. The other time frames
+  are not authorized by the statute.
+citation:
+  source: Kan. Stat. Ann. § 58-3080
+  url: null
+  quoted_text: the licenses of all licensees associated with or employed by the supervising broker or
+    branch broker shall automatically be placed on inactive status within five calendar days after
+    written notice is issued by the commission
+  secondary: []
+terms:
+  - inactive
+  - license
+  - supervising broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

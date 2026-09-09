@@ -1,0 +1,42 @@
+id: NJ-1-0003
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate instructor license has completed an approved instructor course
+  but has not taken the commission's written examination. Based on N.J. Stat. Ann. § 45:15-10.5, can
+  this applicant be licensed as an instructor?
+options:
+  - Yes, written examinations apply to salesperson applicants instead
+  - No, the applicant needs to hold a real estate broker's license first
+  - Yes, completing the approved instructor course satisfies this requirement
+  - No, the applicant also needs to pass the commission's exam
+key: D
+explanation: Section 45:15-10.5 conditions instructor licensure on demonstrating good moral
+  character, completing an approved instructor course, and passing a written examination conducted
+  by the commission.
+citation:
+  source: N.J. Stat. Ann. § 45:15-10.5
+  url: null
+  quoted_text: A person shall not be licensed as a real estate instructor unless the person
+    affirmatively demonstrates to the commission his good moral character, successfully completes a
+    real estate instructor course approved by the commission, successfully completes a written
+    examination conducted under the auspices of the commission, and meets all other qualifications
+    as the commission may prescribe by regulation.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

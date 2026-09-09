@@ -1,0 +1,41 @@
+id: AZ-20-0010
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A designated broker executes a purchase contract on a Friday. Given that the review period is
+  measured in business days that exclude weekends and legal holidays, by when must the broker place
+  initials and a review date on the instrument?
+options:
+  - By the end of the same business day the contract was executed.
+  - Within thirty calendar days after the date the contract was executed.
+  - Within ten business days after the date the transaction closes.
+  - Within ten business days after the date the contract was executed.
+key: D
+explanation: The designated broker must review each purchase agreement and place initials and the
+  review date on the instrument within ten business days after the date of execution, a count that
+  excludes Saturdays, Sundays, and legal holidays.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151.01
+  url: null
+  quoted_text: The designated broker shall review each listing agreement, purchase or nonresidential
+    lease agreement or similar instrument within ten business days after the date of execution by
+    placing the broker's initials and the date of review on the instrument on the same page as the
+    signatures of the parties.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

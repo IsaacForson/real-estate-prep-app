@@ -1,0 +1,41 @@
+id: NAT-PV-V-0936
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under an exclusive buyer representation agreement, if the buyer purchases a property without
+  the broker's involvement, is compensation owed?
+options:
+  - Compensation is owed only if the broker found the property
+  - Compensation is owed only if the buyer signed a separate agreement
+  - Compensation is owed because the buyer purchased a covered property during the term
+  - Compensation is not owed unless the property is within the geographic area
+key: C
+explanation: An exclusive buyer agreement obligates the buyer to pay compensation if they purchase
+  any covered property during the term, regardless of who found the property. The distractor that
+  compensation is owed only if the broker found the property misstates the rule, as the agreement
+  does not require the broker's involvement.
+citation:
+  source: REP Ref. Brokerage Practice § 3.1 Buyer representation agreement
+  url: null
+  quoted_text: Under an **exclusive** buyer agreement the buyer agrees to work only with that
+    brokerage and owes compensation if the buyer purchases any property of the covered type during
+    the term, whether or not the broker found it.
+  secondary: []
+terms:
+  - buyer representation agreement
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

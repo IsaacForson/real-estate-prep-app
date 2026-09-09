@@ -1,0 +1,43 @@
+id: TX-1101-0018
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives trust money from a transaction and the principals have not agreed in writing
+  to a different deposit schedule. Under TREC's trust money rule, by when must the broker deposit
+  that money into a trust account or deliver it to an authorized escrow agent?
+options:
+  - Not later than the close of business on the same calendar day the trust money is actually
+    received
+  - Not later than the tenth calendar day after the transaction closes
+  - Not later than the end of the calendar month in which the money is received
+  - Not later than the close of business of the second working day after receipt
+key: D
+explanation: Section 535.146(b)(3) sets the default deposit deadline at not later than the close of
+  business of the second working day after the broker receives the trust money, absent a different
+  written agreement among the principals.
+citation:
+  source: 22 Tex. Admin. Code § 535.146
+  url: null
+  quoted_text: Unless a different time to deposit trust money is expressly agreed upon in writing by
+    the principals to the transaction, any trust money received by the broker must be deposited in a
+    trust account or delivered to an authorized escrow agent within a reasonable time, which the
+    Commission has determined to be not later than the close of business of the second working day
+    after the date the broker receives the trust money.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

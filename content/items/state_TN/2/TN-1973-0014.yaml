@@ -1,0 +1,43 @@
+id: TN-1973-0014
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "An applicant already holds a license in another state and passed that state's approved
+  uniform principles examination with at least the required minimum score. Under the Tennessee
+  examinations rule, this applicant may be:"
+options:
+  - excused from the entire Tennessee licensing examination
+  - excused from the uniform principles portion of the exam
+  - granted a Tennessee license without any further application
+  - required to retake the out-of-state exam for verification
+key: B
+explanation: The rule permits an applicant meeting those two conditions to be excused only from the
+  uniform principles portion of the Tennessee examination.
+citation:
+  source: Tenn. Comp. R. & Regs. § 1260-01-.02
+  url: null
+  quoted_text: |-
+    An applicant may be excused from the “uniform principles of real estate” portion of the
+    examination if he:
+    1. Holds a license in another state and has successfully completed an examination
+    approved by the Tennessee Real Estate Commission; and
+    2. Has attained on the “uniform principles” portion of such examination at least the
+    minimum passing score requirement.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: NAT-PSI-VII-0425
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On January 10, an owner notifies the EPA that all conditions for liability transfer under
+  CERCLA subsection (k) have been satisfied. The EPA takes no action during the following ninety
+  days. Assuming no state program is involved, when does the transfer of liability become effective?
+options:
+  - January 10
+  - March 11
+  - April 10
+  - May 10
+key: C
+explanation: Liability transfer becomes effective ninety days after the owner notifies the EPA that
+  conditions are satisfied, provided the EPA does not object within that period. Ninety days after
+  January 10 is April 10.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(k)(2)
+  url: null
+  quoted_text: Such transfer of liability shall be effective ninety days after the owner or operator
+    of such facility notifies the Administrator of the Environmental Protection Agency (and the
+    State where it has an authorized program under section 3006(b) of the Solid Waste Disposal Act
+    [42 U.S.C. 6926(b)]) that the conditions imposed by this subsection have been satisfied.
+  secondary: []
+terms:
+  - liability transfer
+  - notice
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

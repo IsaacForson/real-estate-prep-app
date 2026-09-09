@@ -1,0 +1,46 @@
+id: NAT-PV-VI-0985
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A title insurance company acquires a vessel while handling a claim settlement. Under CERCLA,
+  does this entity qualify as a lender?
+options:
+  - The entity does not qualify as a lender because only insured depository institutions are lenders.
+  - The entity does not qualify as a lender because it must also make a bona fide extension of
+    credit.
+  - The entity does not qualify as a lender because only entities that guarantee against default are
+    lenders.
+  - The entity qualifies as a lender because it provides title insurance and acquires a vessel in
+    underwriting claims.
+key: D
+explanation: Under CERCLA, a lender includes a person that provides title insurance and acquires a
+  vessel or facility as a result of assignment or conveyance in the course of underwriting claims
+  and claims settlement. Therefore, the title insurance company qualifies. The claim that only
+  insured depository institutions are lenders ignores other categories listed in the definition.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601(viii)
+  url: null
+  quoted_text: (VIII) a person that provides title insurance and that acquires a vessel or facility as
+    a result of assignment or conveyance in the course of underwriting claims and claims settlement.
+  secondary: []
+terms:
+  - lender
+  - title insurance
+  - vessel
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

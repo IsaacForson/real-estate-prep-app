@@ -1,0 +1,43 @@
+id: NAT-PV-III-0935
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A house is larger than surrounding homes and its value is lower than expected due to the
+  smaller, less expensive homes nearby. Which principle best explains this situation?
+options:
+  - The progression principle
+  - The regression principle
+  - The substitution principle
+  - The conformity principle
+key: B
+explanation: Regression occurs when a superior property’s value is pulled down by inferior
+  neighboring properties. The scenario describes a larger house surrounded by smaller homes,
+  indicating regression. Progression would apply if an inferior property were surrounded by superior
+  ones, which is not the case.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.9"
+  url: null
+  quoted_text: "Regression: the value of a superior property is pulled down by inferior properties
+    around it. Progression: the value of an inferior property is pulled up by superior neighbors.
+    The largest house on the block suffers regression; the smallest house on a block of large houses
+    enjoys progression. Both follow from conformity."
+  secondary: []
+terms:
+  - regression
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

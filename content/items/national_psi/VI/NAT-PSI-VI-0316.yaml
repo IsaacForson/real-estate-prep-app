@@ -1,0 +1,42 @@
+id: NAT-PSI-VI-0316
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Under current practice in many states, a cooperating licensee who shows a property to a buyer
+  is most likely acting as:"
+options:
+  - Subagent of the seller
+  - Universal agent
+  - Transaction broker
+  - Buyer's agent
+key: D
+explanation: Many states have curtailed or eliminated blanket subagency, so a cooperating licensee
+  who shows property to a buyer is now far more often a buyer's agent rather than a subagent of the
+  seller. Transaction broker and universal agent are not the typical role in this scenario.
+citation:
+  source: "REP Ref. Agency — Reference note: agency relationships, creation/termination, fiduciary
+    duties, disclosure (authored, status: draft — needs licensed review) § 2.7 Subagency"
+  url: null
+  quoted_text: Many states have curtailed or eliminated blanket subagency; today a cooperating
+    licensee is far more often a buyer's agent.
+  secondary: []
+terms:
+  - subagency
+  - cooperating
+  - buyer's agent
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

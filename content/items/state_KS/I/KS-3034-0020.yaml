@@ -1,0 +1,44 @@
+id: KS-3034-0020
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: The Kansas real estate commission finds that a licensee's conduct involved fraud and directly
+  caused a client substantial financial loss, meeting the statutory definition of aggravating
+  circumstances. Under Kansas law, what is the maximum civil fine per violation the commission may
+  impose in this situation, compared with a violation lacking aggravating circumstances?
+options:
+  - $5,000 per violation, higher than the usual $1,000 cap
+  - $1,000 per violation, the same cap that otherwise applies
+  - $10,000 per violation, double the cap that otherwise applies
+  - $500 per violation, lower than the cap that otherwise applies
+key: A
+explanation: K.S.A. 58-3050(d)(2) permits a civil fine not exceeding $5,000 per violation when the
+  commission makes specific findings of aggravating circumstances, such as misappropriation of funds
+  or fraud, a higher ceiling than the $1,000 per-violation cap that otherwise applies under
+  subsection (d)(1).
+citation:
+  source: Kan. Stat. Ann. § 58-3050
+  url: null
+  quoted_text: "A civil fine not exceeding $5,000 per violation may be imposed if the commission makes
+    specific findings that aggravating circumstances exist and that the licensee: (A)
+    Misappropriated funds belonging to another person; (B) engaged in fraud or made any substantial
+    misrepresentation;"
+  secondary: []
+terms:
+  - aggravating circumstances
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

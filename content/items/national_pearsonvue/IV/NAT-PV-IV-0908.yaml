@@ -1,0 +1,43 @@
+id: NAT-PV-IV-0908
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the mirror-image rule in contract law?
+options:
+  - Acceptance may be silent if the offeror previously indicated silence means acceptance
+  - Acceptance must match the offer exactly without any changes
+  - Acceptance can vary minor terms and still form a contract
+  - Acceptance is effective when mailed, regardless of offer terms
+key: B
+explanation: Under the mirror-image rule, an acceptance must match the offer exactly; any change to
+  terms such as price, closing date, or contingencies makes it a counteroffer rather than an
+  acceptance. This principle is fundamental to contract formation. The rule ensures mutual assent is
+  genuine and unambiguous.
+citation:
+  source: "REP Ref. Contracts — Reference note: contract law, purchase agreements, leases, remedies
+    (authored, status: draft — needs licensed review) § 3.2"
+  url: null
+  quoted_text: To form a contract, the acceptance must match the offer exactly. Any change to price,
+    closing date, personal property included, contingencies, or other terms is not an acceptance; it
+    is a counteroffer
+  secondary: []
+terms:
+  - mirror-image rule
+  - acceptance
+  - counteroffer
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

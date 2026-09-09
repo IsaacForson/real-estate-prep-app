@@ -1,0 +1,48 @@
+id: NAT-PV-VI-0995
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under 42 U.S.C. § 4012a(c)(2), which type of loan is exempt from the flood insurance purchase
+  requirement?
+options:
+  - Loans where the borrower is a government entity and the property is owned by a public agency or
+    municipality
+  - Loans made after September 23, 1994, for the purchase or refinancing of residential or
+    commercial property
+  - Loans secured by residential improved real estate in a special flood hazard area
+  - Loans with an original principal balance of $5,000 or less and a repayment term of one year or
+    less
+key: D
+explanation: The statute states that subsections (a) and (b) do not apply to any loan with an
+  original outstanding principal balance of $5,000 or less and a repayment term of one year or less.
+  Therefore, such loans are exempt from the mandatory flood insurance purchase requirement. The
+  distractor about loans secured by residential improved real estate describes loans that are
+  subject to the requirement, not exempt.
+citation:
+  source: 42 U.S.C. § 4012a (Flood insurance purchase requirement) — National Flood Insurance Act —
+    mandatory purchase of flood insurance
+  url: null
+  quoted_text: subsections (a) and (b) shall not apply to any loan having— (A) an original outstanding
+    principal balance of $5,000 or less; and (B) a repayment term of 1 year or less.
+  secondary: []
+terms:
+  - loan
+  - principal balance
+  - repayment term
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

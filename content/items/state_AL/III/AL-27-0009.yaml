@@ -1,0 +1,44 @@
+id: AL-27-0009
+jurisdiction: AL
+bank: state_AL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Alabama law, what is the fee for a salesperson or associate broker to change their
+  qualifying broker?
+options:
+  - Twenty-five dollars ($25)
+  - Fifty dollars ($50)
+  - Seventy-five dollars ($75)
+  - One hundred fifty dollars ($150)
+key: A
+explanation: The statute specifies that a fee of twenty-five dollars ($25) must be paid for a change
+  of qualifying broker, after which a new license certificate is issued for the unexpired term of
+  the original license. This amount applies uniformly to all listed license changes, including
+  changes of qualifying broker, personal name, business location, business name, and status from
+  inactive to active. The other dollar amounts correspond to different fees or penalties elsewhere
+  in the code.
+citation:
+  source: Ala. Code § 34-27-34(b)
+  url: null
+  quoted_text: On payment of a fee of twenty-five dollars ($25), a new license certificate shall be
+    issued to the salesperson or associate broker for the unexpired term of the original license.
+  secondary: []
+terms:
+  - fee
+  - broker
+  - change
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

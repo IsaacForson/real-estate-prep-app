@@ -1,0 +1,38 @@
+id: VA-21-0001
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia's definitions for brokerage relationships, which description fits a person for
+  whom a licensee performs only ministerial acts, with no brokerage relationship formed?
+options:
+  - A customer receiving solely ministerial acts
+  - A designated agent assigned to a dual representation
+  - A client represented under a signed brokerage agreement
+  - A principal broker supervising the transaction file
+key: A
+explanation: The statute defines a customer as a person who has not entered a brokerage relationship
+  with a licensee but for whom the licensee performs ministerial acts, and such a person is presumed
+  to be a customer rather than a client.
+citation:
+  source: Va. Code Ann. § 54.1-2130
+  url: null
+  quoted_text: '"Customer" means a person who has not entered into a brokerage relationship with a
+    licensee but for whom a licensee performs ministerial acts in a real estate transaction.'
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,42 @@
+id: KS-3034-0029
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the late fee that must be paid when reinstating an expired Kansas real estate license
+  within six months of expiration?
+options:
+  - $200.00
+  - $150.00
+  - $050.00
+  - $100.00
+key: C
+explanation: The statute expressly states that a late renewal application must be accompanied by the
+  renewal fee plus a late fee of $100. The other amounts correspond to renewal fees or other fees
+  and are incorrect for the late fee.
+citation:
+  source: Kan. Stat. Ann. § 58-3045
+  url: null
+  quoted_text: Such application shall be accompanied by payment of the renewal fee prescribed by
+    K.S.A. 58-3063 , and amendments thereto, plus a late fee of $100.
+  secondary: []
+terms:
+  - late fee
+  - reinstatement
+  - renewal
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

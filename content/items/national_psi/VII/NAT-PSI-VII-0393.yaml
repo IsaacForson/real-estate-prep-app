@@ -1,0 +1,45 @@
+id: NAT-PSI-VII-0393
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On March 1, the EPA incurs response costs for a contaminated property. The owner receives
+  written notice of potential liability from the EPA on March 15. Under CERCLA, on which date does
+  the federal lien arise?
+options:
+  - March 8
+  - March 22
+  - March 1
+  - March 15
+key: D
+explanation: Under CERCLA § 9607(l)(2), a federal lien arises at the later of when the EPA first
+  incurs response costs or when the owner receives written notice of potential liability. Since the
+  notice date (March 15) is later than the cost incurrence date (March 1), the lien arises on
+  March 15. Choosing March 1 incorrectly treats the earlier date as the governing moment.
+citation:
+  source: "### 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(l)(2)"
+  url: null
+  quoted_text: "The lien imposed by this subsection shall arise at the later of the following: (A) The
+    time costs are first incurred by the United States with respect to a response action under this
+    chapter. (B) The time that the person referred to in paragraph (1) is provided (by certified or
+    registered mail) written notice of potential liability."
+  secondary: []
+terms:
+  - federal lien
+  - response action
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

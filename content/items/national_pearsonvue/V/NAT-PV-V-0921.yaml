@@ -1,0 +1,43 @@
+id: NAT-PV-V-0921
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What responsibility does a broker retain toward salespersons even if they are classified as
+  independent contractors for federal tax purposes?
+options:
+  - To pay unemployment insurance on their wages
+  - To provide health insurance benefits
+  - To withhold federal income tax from their pay
+  - To supervise their brokerage activities
+key: D
+explanation: Under the federal tax safe harbor, classifying a salesperson as an independent
+  contractor does not relieve the broker of the duty to supervise brokerage activities under state
+  license law. The broker remains responsible for oversight regardless of tax status. The distractor
+  about withholding federal income tax is incorrect because brokers do not withhold taxes for
+  independent contractors; that responsibility falls on the agent.
+citation:
+  source: REP Ref. Brokerage Practice § 6.1
+  url: null
+  quoted_text: "It does **not** affect the broker's duty under state license law to supervise the
+    salesperson (§ 7): a broker cannot avoid supervisory responsibility by calling a licensee an
+    independent contractor."
+  secondary: []
+terms:
+  - supervision
+  - independent contractor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

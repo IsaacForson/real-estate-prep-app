@@ -1,0 +1,40 @@
+id: IN-1-0003
+jurisdiction: IN
+bank: state_IN
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A broker company agrees to a listing that pays the broker any amount above a set net price to
+  the seller, with no maximum commission stated. Under 876 IAC 8-2-1, is this listing agreement
+  permitted?
+options:
+  - No, the listing needs a maximum commission
+  - Yes, because net listings are permitted
+  - Yes, because the seller approved it verbally
+  - No, because the property lacked an appraisal
+key: A
+explanation: 876 IAC 8-2-1 bars a broker company from accepting a listing agreement that provides a
+  net return to the seller unless that agreement also states a maximum commission payable to the
+  broker company.
+citation:
+  source: 876 Ind. Admin. Code § 8-2-1
+  url: null
+  quoted_text: No listing agreements shall be accepted by a broker company or by an associated broker
+    on the broker company's behalf that provides for a net return to the seller, unless said listing
+    agreement provides for a maximum commission to be paid by the seller to the broker company.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

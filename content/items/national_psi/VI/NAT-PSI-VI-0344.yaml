@@ -1,0 +1,42 @@
+id: NAT-PSI-VI-0344
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the sole-proprietor broker of a real estate firm dies, what is the effect on the firm's
+  existing listing agreements under general agency law?
+options:
+  - The listings remain valid because the salesperson can continue as agent
+  - The listings automatically transfer to the broker's heirs or personal representative
+  - The listings continue but require a new written agreement with the seller
+  - The listings are terminated because the broker's death ends the agency relationship
+key: D
+explanation: Because the agency relationship is personal, the death of a sole‑proprietor broker
+  terminates the firm's listings; the death of a salesperson does not affect them. Hence, the
+  broker's death ends the listing agreements.
+citation:
+  source: REP Ref. Agency § 4.2
+  url: null
+  quoted_text: Because the relationship is personal, the death of a sole-proprietor broker terminates
+    the firm's listings; the death of a salesperson does not, because the salesperson is not the
+    seller's agent in the primary sense — the broker is
+  secondary: []
+terms:
+  - termination
+  - death of broker
+  - listing agreement
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

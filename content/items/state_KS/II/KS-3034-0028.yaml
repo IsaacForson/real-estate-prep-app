@@ -1,0 +1,45 @@
+id: KS-3034-0028
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A member of a Kansas limited liability company regularly negotiates purchase agreements for
+  real estate on behalf of the LLC. Under the Kansas Real Estate Brokers' and Salespersons' License
+  Act, what must be true for this member to legally perform these activities?
+options:
+  - The member must hold a broker's license issued to the LLC.
+  - The member must be individually licensed as a broker or salesperson.
+  - The member may rely on the LLC's corporate license to perform brokerage acts.
+  - The member may perform the acts unlicensed if the LLC registers with the commission.
+key: B
+explanation: The statute prohibits granting a license to any LLC, corporation, partnership, or
+  similar entity; each individual who performs acts requiring a license must be individually
+  licensed as a broker or salesperson. Therefore the LLC member must hold an individual license. The
+  distractor that suggests the LLC can be licensed is incorrect because the law explicitly bars
+  licenses to such entities.
+citation:
+  source: Kan. Stat. Ann. § 58-3042 — K.S.A. Kan. Stat. Ann. § 58-3042 — License nontransferable; only
+    individuals licensed; primary office; supervising broker
+  url: null
+  quoted_text: No license shall be granted to an association, corporation, limited liability company,
+    limited liability partnership, partnership or professional corporation.
+  secondary: []
+terms:
+  - licensee
+  - limited liability company
+  - broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

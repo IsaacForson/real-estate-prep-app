@@ -1,0 +1,37 @@
+id: NE-56-0007
+jurisdiction: NE
+bank: state_NE
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A third party pays a designated broker's fee in a closed transaction. Under Neb. Rev. Stat. §
+  76-2424, what is the legal effect of that payment alone on the agency relationship?
+options:
+  - The payment automatically makes the payer the broker's client
+  - The payment converts the broker into a dual agent by law
+  - The payment does not by itself create an agency relationship
+  - The payment voids any existing agency agreement in place
+key: C
+explanation: Section 76-2424 provides that payment of compensation by itself does not establish an
+  agency relationship between the payer and the designated broker.
+citation:
+  source: Neb. Rev. Stat. § 76-2424
+  url: null
+  quoted_text: Payment of compensation by itself shall not establish an agency relationship between
+    the party who paid the compensation and the designated broker or any affiliated licensee.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

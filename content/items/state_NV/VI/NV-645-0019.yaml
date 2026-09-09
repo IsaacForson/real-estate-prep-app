@@ -1,0 +1,41 @@
+id: NV-645-0019
+jurisdiction: NV
+bank: state_NV
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A salesperson receives a buyer's earnest money deposit along with a fully executed purchase
+  contract on Monday. Under NAC 645.657, the salesperson must pay the deposit over to the broker or
+  designated escrow company:"
+options:
+  - within 24 hours after the date of closing
+  - within 5 business days after contract execution
+  - within 30 days after the loan is approved
+  - within 1 business day after contract execution
+key: D
+explanation: NAC 645.657 requires a licensee who receives a deposit to pay it over to the broker,
+  owner-developer or designated escrow company within 1 business day after receiving a fully
+  executed contract.
+citation:
+  source: Nev. Admin. Code § 645.657
+  url: null
+  quoted_text: A licensee who receives a deposit on any transaction in which he or she is engaged on
+    behalf of a broker or owner-developer shall pay over the deposit to that broker or
+    owner-developer, or to the escrow business or company designated in the contract, within 1
+    business day after receiving a fully executed contract.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

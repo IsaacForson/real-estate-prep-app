@@ -1,0 +1,40 @@
+id: CA-4-0006
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: How often must a broker reconcile individual beneficiary trust records with the overall trust
+  fund record under Section 2831.2?
+options:
+  - At least once a week, except in weeks when the trust account had no activity.
+  - At least once a year, except in years when the trust account had no activity.
+  - At least once a quarter, except in quarters when the trust account had no activity.
+  - At least once a month, except in months when the trust account had no activity.
+key: D
+explanation: Section 2831.2 requires the broker to reconcile the separate beneficiary records with
+  the overall trust fund record at least once a month, except in months when the bank account had no
+  activity.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2831.2
+  url: null
+  quoted_text: The balance of all separate beneficiary or transaction records maintained pursuant to
+    the provisions of Section 2831.1 must be reconciled with the record of all trust funds received
+    and disbursed required by Section 2831, at least once a month, except in those months when the
+    bank account did not have any activities.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NM-1-0017
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker withdraws funds from the brokerage trust account to cover a personal
+  vehicle repair. Under 16.61.23.11 NMAC, how is this withdrawal classified?
+options:
+  - A permitted minimum-balance bank withdrawal
+  - A routine administrative brokerage fee payment
+  - A wrongful disbursement that is commingling
+  - An allowed emergency broker cash expense
+key: C
+explanation: The rule identifies disbursing trust or custodial funds for the personal use of the
+  qualifying broker, an associate broker, or the broker's designee as a wrongful disbursement that
+  constitutes commingling.
+citation:
+  source: 16.61 NMAC § 16.61.23.11
+  url: null
+  quoted_text: Disbursing trust funds or custodial funds for personal use of the qualifying broker, an
+    associate broker or the broker’s designee
+  secondary: []
+terms:
+  - trust account
+  - commingling
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

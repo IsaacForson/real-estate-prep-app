@@ -1,0 +1,46 @@
+id: NAT-PV-VI-0993
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: For owner‑occupied housing receiving a grant under 42 U.S.C. § 4852(a)(2), what is the minimum
+  proportion of units that must be occupied by a child under six years old or where such a child
+  spends significant time?
+options:
+  - At least 80 percent
+  - At least 90 percent
+  - At least 70 percent
+  - At least 95 percent
+key: B
+explanation: The rule states that not less than 90 percent of the units assisted shall be occupied
+  by a child under six or where such a child spends significant time, which means at least 90
+  percent. Lower percentages would fail to meet the statutory requirement. The higher option exceeds
+  the minimum but is not the correct minimum.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act) —
+    Residential Lead-Based Paint Hazard Reduction Act (incl. § 4852d disclosure) § 4852(a)(2)
+  url: null
+  quoted_text: not less than 90 percent of the units assisted with grants under this section shall be
+    occupied by a child under the age of six years or shall be units where a child under the age of
+    six years spends a significant amount of time visiting
+  secondary: []
+terms:
+  - lead-based paint
+  - grant
+  - owner-occupant
+  - child occupancy
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

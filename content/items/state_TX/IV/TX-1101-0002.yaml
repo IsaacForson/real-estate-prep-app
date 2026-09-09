@@ -1,0 +1,41 @@
+id: TX-1101-0002
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker expects to receive a rebate from a home warranty company after closing a sale. Before
+  accepting that rebate, TREC rules require the broker to do what regarding the client?
+options:
+  - Wait until closing and then split the rebate evenly with the client
+  - Deposit the anticipated rebate into the brokerage's general operating account
+  - Disclose the intended rebate to the client and obtain the client's consent
+  - Notify the warranty company that no disclosure to the client is required
+key: C
+explanation: Section 535.148(a) prohibits a license holder from receiving a commission, rebate, or
+  fee from someone other than the person the license holder represents without first disclosing the
+  arrangement to the client and obtaining the client's consent.
+citation:
+  source: 22 Tex. Admin. Code § 535.148
+  url: null
+  quoted_text: |-
+    A license holder may not receive a commission, rebate, or fee in a transaction
+    from a person other than the person the license holder represents without first
+    disclosing to the license holder's client that the license holder intends to receive the
+    commission, rebate, or fee, and obtaining the consent of the license holder's client.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

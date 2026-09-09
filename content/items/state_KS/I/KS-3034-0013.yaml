@@ -1,0 +1,41 @@
+id: KS-3034-0013
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant's license application is denied by the Kansas real estate commission solely
+  because the applicant failed the required licensing examination. Is the applicant entitled to
+  written notice and a hearing under the Kansas administrative procedure act?
+options:
+  - Yes, because every single denial requires a formal administrative hearing first
+  - No, because that denial is excepted from the notice-and-hearing requirement
+  - No, because the commission has no duty to explain any denial
+  - Yes, but only if the applicant requests a hearing within 24 hours
+key: B
+explanation: K.S.A. 58-3044(a) requires notice and an opportunity to be heard under the Kansas
+  administrative procedure act for a license denial, unless the denial is solely because the
+  applicant failed to pass a required examination.
+citation:
+  source: Kan. Stat. Ann. § 58-3044
+  url: null
+  quoted_text: Such notice and an opportunity to be heard shall be given in accordance with the
+    provisions of the Kansas administrative procedure act, unless the application for a license is
+    denied solely because of the applicant's failure to pass a required examination.
+  secondary: []
+terms:
+  - administrative procedure act
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

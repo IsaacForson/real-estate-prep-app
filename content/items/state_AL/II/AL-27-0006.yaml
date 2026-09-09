@@ -1,0 +1,44 @@
+id: AL-27-0006
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a licensee submits a false statement to the Alabama Real Estate Commission regarding
+  continuing education, what criminal penalty applies under Ala. Code § 34-27-11(b)?
+options:
+  - A civil fine of up to $1,000
+  - Revocation of the license only
+  - A Class A misdemeanor
+  - No penalty unless fraud is proven
+key: C
+explanation: Under §34-27-11(b), filing a false statement with the commission is a Class A
+  misdemeanor punishable upon conviction. Submitting false continuing‑education information
+  constitutes such a false statement, triggering the misdemeanor penalty. A civil fine or license
+  revocation alone does not reflect the statutory penalty for false filings.
+citation:
+  source: Ala. Code § 34-27-1 et seq. § 34-27-11
+  url: null
+  quoted_text: (b) Any person who files with the commission any notice, statement, or other document
+    or information required under the provisions of this chapter which is false or untrue or
+    contains any material misstatement of fact commits a Class A misdemeanor and, on conviction,
+    shall be punished accordingly.
+  secondary: []
+terms:
+  - false statement
+  - penalty
+  - misdemeanor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

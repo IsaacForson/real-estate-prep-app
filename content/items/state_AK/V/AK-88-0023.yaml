@@ -1,0 +1,42 @@
+id: AK-88-0023
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee enters into an oral management contract with a property owner for six months. Under
+  Alaska Stat. § 08.88.341, what is the status of this contract?
+options:
+  - The contract is enforceable because it was signed by both parties
+  - The contract is enforceable because it includes a definite expiration date
+  - The contract is not enforceable because the broker failed to disclose a conflict
+  - The contract is not enforceable because it lacks a written agreement
+key: D
+explanation: The statute requires all real estate listings or management contracts to be in writing
+  and signed by the broker and client. An oral management contract fails the writing requirement and
+  is therefore not enforceable. The presence of a definite expiration date does not override the
+  writing requirement.
+citation:
+  source: Alaska Stat. § 08.88.341
+  url: null
+  quoted_text: All real estate listings or management contracts must be in writing and must be signed
+    by the broker or associated licensee of the broker and by the client or an authorized
+    representative of the client for whose benefit the real estate licensee will act.
+  secondary: []
+terms:
+  - management contract
+  - written agreement
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,38 @@
+id: MO-339-0018
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson submits a timely, complete renewal application, but the salesperson's broker has
+  not yet renewed the broker's own license. Applying 20 CSR 2250-4.020, what happens to the
+  salesperson's renewal?
+options:
+  - It is issued immediately regardless of the broker's license status
+  - It is placed on inactive status for the rest of the term
+  - It will not be issued until the broker's license has been renewed
+  - It is denied permanently and requires a fresh original application
+key: C
+explanation: The rule provides that a renewal license will not be issued until the license of the
+  broker with whom the licensee is associated has been renewed.
+citation:
+  source: 20 CSR 2250-4.020 § (Expiration and Renewal; Name and Address Changes)
+  url: null
+  quoted_text: A renewal license will not be issued until the license of the broker with whom the
+    licensee is associated has been renewed.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

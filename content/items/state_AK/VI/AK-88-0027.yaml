@@ -1,0 +1,44 @@
+id: AK-88-0027
+jurisdiction: AK
+bank: state_AK
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee collects a security deposit from a tenant and deposits the funds into his personal
+  checking account instead of a trust account. What is the status of this action under Alaska law?
+options:
+  - Allowed as long as the funds are returned within 30 days
+  - Considered fraudulent or dishonest conduct
+  - Permissible if the licensee informs the tenant in writing
+  - Only a violation if the amount exceeds $5,000
+key: B
+explanation: The rule provides that failure to deposit security deposits in a trust account as
+  required by the Uniform Residential Landlord and Tenant Act is considered fraudulent or dishonest
+  conduct. Therefore, depositing the funds personally is fraudulent or dishonest. Informing the
+  tenant in writing does not excuse the failure to use a trust account.
+citation:
+  source: 12 Alaska Admin. Code § 64.010 et seq. — Alaska Administrative Code Title 12, Chapter 64 -
+    Real Estate Commission — § 64.560
+  url: null
+  quoted_text: Failure of a licensee engaged in property management to deposit prepaid rents or
+    security deposits in a trust account as required by AS 34.03 (Uniform Residential Landlord and
+    Tenant Act) is considered fraudulent or dishonest conduct within the meaning of AS 08.88.071
+    (a)(3)(A)(iv).
+  secondary: []
+terms:
+  - trust account
+  - security deposit
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

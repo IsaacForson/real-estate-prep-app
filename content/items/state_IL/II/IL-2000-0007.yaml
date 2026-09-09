@@ -1,0 +1,42 @@
+id: IL-2000-0007
+jurisdiction: IL
+bank: state_IL
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker sponsored by Firm A wants to pay part of a commission directly to a licensee
+  sponsored by Firm B for helping close a sale. Under the Act, is that payment allowed?
+options:
+  - Yes, so long as both licensees agree to the split amount before closing occurs
+  - No, a licensee may not pay another broker's licensee directly for the work
+  - Yes, provided the payment is reported to the Division within ten business days
+  - No, unless the buyer signs a written waiver permitting the direct commission split
+key: B
+explanation: The statute forbids a licensee from paying compensation directly to a licensee
+  sponsored by another sponsoring broker for the performance of licensed activities.
+citation:
+  source: 225 ILCS 454 § 10-5
+  url: null
+  quoted_text: |-
+    No licensee shall pay compensation directly to a licensee sponsored by
+    another sponsoring broker for
+    the performance of licensed activities.
+  secondary: []
+terms:
+  - compensation
+  - sponsoring broker
+  - commission split
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,37 @@
+id: DC-198-0007
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer signs a brokerage agreement that does not state a termination date. Under D.C. Code §
+  47-2853.196, when does the brokerage relationship end by default?
+options:
+  - 30 days after the agreement was entered into
+  - 180 days after the agreement was entered into
+  - 90 days after the agreement was entered into
+  - 1 year after the agreement was entered into
+key: C
+explanation: The disclosure statute fills the gap for open-ended agreements by terminating a
+  brokerage relationship 90 days after it was entered into when no definite date is stated.
+citation:
+  source: D.C. Code §§ 42-1701–42-1709 § 47-2853.196
+  url: null
+  quoted_text: if a brokerage relationship does not specify a definite termination date, the brokerage
+    relationship shall terminate 90 days after the date the brokerage relationship was entered into.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

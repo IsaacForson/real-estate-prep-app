@@ -1,0 +1,42 @@
+id: NY-443-0008
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensed salesperson closes a rental deal and a satisfied tenant offers to pay the
+  salesperson directly for the help. Under New York Real Property Law § 442-a, from whom may that
+  salesperson lawfully accept compensation for the work?
+options:
+  - Only the tenant who benefited from the transaction directly
+  - Only the landlord whose property was involved in the lease
+  - Only the closing attorney who represented either party in the deal
+  - Only the licensed broker the salesperson is associated with
+key: D
+explanation: Section 442-a bars a salesperson from accepting compensation from anyone other than the
+  duly licensed broker with whom the salesperson is associated, regardless of who benefits from the
+  work.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A, § 442-a
+  url: null
+  quoted_text: No real estate salesperson in any place in which this article is applicable shall
+    receive or demand compensation of any kind from any person, other than a duly licensed real
+    estate broker with whom he associated, for any service rendered or work done by such salesperson
+    in the appraising, buying, selling, exchanging, leasing, renting or negotiating of a loan upon
+    any real estate.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,38 @@
+id: NC-93A-0018
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "4"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker acting in a fiduciary capacity receives trust money from a client on a Monday. Under
+  21 NCAC 58A .0116(a), by when must the broker deposit those funds into a trust or escrow account?
+options:
+  - No later than thirty calendar days after receiving the funds
+  - No later than three banking days after receiving the funds
+  - By the end of the same calendar month as receipt
+  - By the closing date of the related transaction
+key: B
+explanation: Rule.0116(a) requires a broker to deposit trust money into a trust or escrow account no
+  later than three banking days following the broker's receipt of the funds.
+citation:
+  source: 21 NCAC 58A Rule .0116(a)
+  url: null
+  quoted_text: all monies received by a broker acting in his or her fiduciary capacity (hereinafter
+    "trust money") shall be deposited in a trust or escrow account as defined in Rule .0117(b) of
+    this Section no later than three banking days following the broker's receipt of such monies.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NM-1-0007
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner personally sells one parcel of land that they own, without a subdivision involved.
+  Under 61-29-2 NMSA 1978, does this owner need a real estate license for the sale?
+options:
+  - No, but a lawyer should review the sale details
+  - No, owners selling their own property are exempt
+  - Yes, a license is required for every single sale
+  - Yes, unless the buyer is a close family relative here
+key: B
+explanation: The statute exempts an owner who performs listed activities regarding property the
+  owner holds, unless the sale involves a subdivision of one hundred or more parcels.
+citation:
+  source: N.M. Stat. Ann. § 61-29-2
+  url: null
+  quoted_text: A person who as owner performs any of the activities included in this section with
+    reference to property owned by the person, except when the sale or offering for sale of the
+    property constitutes a subdivision containing one hundred or more parcels
+  secondary: []
+terms:
+  - owner exemption
+  - licensure
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

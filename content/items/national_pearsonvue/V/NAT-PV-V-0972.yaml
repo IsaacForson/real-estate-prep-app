@@ -1,0 +1,43 @@
+id: NAT-PV-V-0972
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which courts have exclusive jurisdiction over civil actions brought under the TCPA?
+options:
+  - The international tribunals
+  - The state trial courts
+  - The federal district courts
+  - The local municipal courts
+key: C
+explanation: The TCPA provides that district courts of the United States, territorial courts, and
+  the District Court for the District of Columbia have exclusive jurisdiction over TCPA civil
+  actions, so the federal district courts are correct. State trial courts lack this exclusive
+  jurisdiction under the statute.
+citation:
+  source: 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions on
+    telephone solicitation (2)
+  url: null
+  quoted_text: The district courts of the United States, the United States courts of any territory,
+    and the District Court of the United States for the District of Columbia shall have exclusive
+    jurisdiction over all civil actions brought under this subsection.
+  secondary: []
+terms:
+  - tca
+  - jurisdiction
+  - federal court
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

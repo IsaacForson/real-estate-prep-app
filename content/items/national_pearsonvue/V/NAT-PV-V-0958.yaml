@@ -1,0 +1,43 @@
+id: NAT-PV-V-0958
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Sherman Antitrust Act, how is the term 'person' defined?
+options:
+  - Includes corporations and associations
+  - Includes only natural persons or partnerships
+  - Includes only foreign corporations
+  - Includes only associations and partnerships
+key: A
+explanation: The statute explicitly states that the word 'person' or 'persons' includes corporations
+  and associations existing under or authorized by the laws of the United States, any Territory, any
+  State, or any foreign country. This definition extends the term beyond natural persons to cover
+  business entities. The other options incorrectly limit the definition to only natural persons,
+  partnerships, or government entities.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) — Sherman Antitrust Act and related antitrust provisions — §
+    2 §12. Definitions; short title
+  url: null
+  quoted_text: ' The word "person" or "persons" wherever used in this Act shall be deemed to include
+    corporations and associations existing under or authorized by the laws of either the United
+    States, the laws of any of the Territories, the laws of any State, or the laws of any foreign
+    country.'
+  secondary: []
+terms:
+  - person
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

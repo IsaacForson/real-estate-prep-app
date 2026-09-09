@@ -1,0 +1,42 @@
+id: NJ-1-0018
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A licensed attorney negotiates the sale of a client's property as part of settling an estate,
+  without holding a real estate license. Based on N.J. Stat. Ann. § 45:15-4, why is a real estate
+  license **NOT** required for this activity?
+options:
+  - Attorneys at law are excluded from the licensing article's reach
+  - Settlement negotiations fall under insurance commission oversight
+  - Estate property sales are governed by municipal zoning law instead
+  - Court-ordered sales require a judicial broker's commission
+key: A
+explanation: Section 45:15-4 exempts attorneys at law, along with bona fide owners, receivers,
+  trustees in bankruptcy, and executors, from the license requirements of the real estate licensing
+  article.
+citation:
+  source: N.J. Stat. Ann. § 45:15-4
+  url: null
+  quoted_text: The provisions of this article shall not apply to any person, firm, partnership,
+    association or corporation who, as a bona fide owner or lessor, shall perform any of the
+    aforesaid acts with reference to property owned by him, nor shall they apply to or be construed
+    to include attorneys at law, receivers, trustees in bankruptcy, executors, administrators or
+    persons selling  real estate under the order of any court
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

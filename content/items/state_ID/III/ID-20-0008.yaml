@@ -1,0 +1,39 @@
+id: ID-20-0008
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A brokerage company's designated broker leaves the company and no replacement broker has yet
+  been designated, but the original broker's license has not been revoked. Who remains responsible
+  for the pending transactions and trust account funds?
+options:
+  - Each individual sales associate, who is responsible for that associate's own files
+  - The brokerage's unlicensed office administrator, by default
+  - The commission staff, acting temporarily in place of any broker
+  - The original designated broker, responsible until a new broker is designated
+key: D
+explanation: Where a designated broker has left and no new broker has been designated, the original
+  designated broker remains responsible for trust account funds, pending transactions, and records
+  unless that broker's own license was revoked.
+citation:
+  source: Idaho Code § 54-2039
+  url: null
+  quoted_text: the original designated broker shall remain responsible for trust account funds,
+    pending transactions and records in the manner described in sections
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

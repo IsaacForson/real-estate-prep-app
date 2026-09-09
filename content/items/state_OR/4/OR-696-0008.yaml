@@ -1,0 +1,40 @@
+id: OR-696-0008
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker collects earnest money from a buyer and receives no written instructions
+  from the buyer about handling it. Under Oregon administrative rule, what must the broker do with
+  that money?
+options:
+  - Hold it personally until the transaction closes and funds are disbursed
+  - Return it to the buyer pending the seller's acceptance of the offer
+  - Deposit it directly into the broker's own personal checking account
+  - Transmit it to the principal broker within three banking days
+key: D
+explanation: Absent written instructions to the contrary from the buyer, the rule requires the
+  broker to transmit all earnest monies to the authorized principal broker within three banking days
+  of receipt.
+citation:
+  source: Or. Admin. R. § 863-015-0257
+  url: null
+  quoted_text: Absent the buyer’s written instructions to the contrary, the real estate broker must
+    transmit all earnest monies to the authorized principal broker within three banking days of
+    receipt.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

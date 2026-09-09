@@ -1,0 +1,38 @@
+id: NM-1-0002
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under 16.61.16.9 NMAC, how soon after a broker's termination or discharge must the qualifying
+  broker return that broker's license to the commission?
+options:
+  - Within ten days of the discharge
+  - Within 48 hours of the discharge
+  - Within 24 hours of the discharge
+  - Within thirty days of the discharge
+key: B
+explanation: The rule requires the qualifying broker to return a departing broker's license to the
+  commission within 48 hours of termination or discharge.
+citation:
+  source: 16.61 NMAC § 16.61.16.9
+  url: null
+  quoted_text: Return broker’s license to the commission within 48 hours of termination or discharge
+  secondary: []
+terms:
+  - qualifying broker
+  - license return
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

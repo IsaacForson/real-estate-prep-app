@@ -1,0 +1,42 @@
+id: NC-93A-0020
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "4"
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A broker sets up a bank account to hold client trust funds, structured so that withdrawing
+  money requires thirty days' advance notice to the bank. Under 21 NCAC 58A .0117(b), does this
+  account satisfy the rule's requirements for a trust or escrow account?
+options:
+  - Yes, because any interest-bearing account qualifies automatically
+  - Yes, because the account is properly labeled a trust account
+  - No, because credit unions cannot maintain broker trust accounts
+  - No, this rule calls for withdrawal on demand
+key: D
+explanation: Rule.0117(b) requires that a trust or escrow account provide for full withdrawal of
+  funds on demand without prior notice and without penalty or deduction, so an account requiring
+  advance notice does not meet the rule's standard.
+citation:
+  source: 21 NCAC 58A Rule .0117(b)
+  url: null
+  quoted_text: A trust or escrow account shall satisfy the requirements of G.S . 93A-6(g) and shall be
+    designated as a "Trust Account" or "Escrow Account." All bank statements, deposit tickets and
+    checks drawn on said account shall bear the words "Trust Account" or "Escrow Account." A trust
+    account shall provide for the full withdraw al of funds on demand without prior notice and
+    without penalty or deduction to the funds.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

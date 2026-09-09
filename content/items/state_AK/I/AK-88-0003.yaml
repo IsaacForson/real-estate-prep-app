@@ -1,0 +1,41 @@
+id: AK-88-0003
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives a notice from the department proposing a temporary order to cease a
+  deceptive advertising practice. The licensee does not request a hearing within the time allowed.
+  According to Alaska Stat. § 08.88.037(b)(1), what is the effect of the temporary order?
+options:
+  - It becomes final after 15 days.
+  - It requires a hearing within 30 days.
+  - It expires after 15 days.
+  - It is enforced by the commission.
+key: A
+explanation: If the licensee does not request a hearing within 15 days after receiving the notice,
+  the temporary order becomes final under the statute. The other options misstate the timing,
+  hearing requirement, or enforcement authority.
+citation:
+  source: Alaska Stat. § 08.88.037
+  url: null
+  quoted_text: a temporary order becomes final if the person to whom the notice is addressed does not
+    request a hearing within 15 days after receiving the notice
+  secondary: []
+terms:
+  - temporary order
+  - hearing
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,37 @@
+id: ME-114-0002
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which transaction does 32 M.R.S. § 13002 exclude from the definition of real estate brokerage?
+options:
+  - Transactions conducted by an associate broker employed at a franchised agency
+  - Transactions conducted by a broker representing an out-of-state buyer client
+  - Transactions conducted by an attorney-at-law performing attorney duties
+  - Transactions conducted by a licensed sales agent working for a local broker
+key: C
+explanation: Section 13002 excludes transactions conducted by an attorney-at-law in the performance
+  of duties as an attorney-at-law, unless the attorney regularly engages in brokerage.
+citation:
+  source: 32 M.R.S. § 13002
+  url: null
+  quoted_text: |-
+    Transactions conducted by an attorney-at-law in the
+    performance of duties as an attorney-at-law
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

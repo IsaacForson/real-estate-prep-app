@@ -1,0 +1,45 @@
+id: NAT-PSI-VII-0398
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer has signed a purchase agreement for a home built in 1972 and wishes to check for
+  lead-based paint hazards. According to the Residential Lead-Based Paint Hazard Reduction Act, how
+  many days does the buyer have to conduct a risk assessment or inspection before becoming obligated
+  under the contract?
+options:
+  - Fifteen days, unless the parties agree otherwise
+  - Thirty days, unless the parties agree otherwise
+  - Ten days, unless the parties agree otherwise
+  - Five days, unless the parties agree otherwise
+key: C
+explanation: The statute requires the seller to permit the purchaser a 10-day period to conduct a
+  risk assessment or inspection, unless the parties mutually agree on a different period (42 U.S.C.
+  § 4852d(a)(1)(C)). The distractors propose other time periods not supported by the text.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act) —
+    Residential Lead-Based Paint Hazard Reduction Act (incl. § 4852d disclosure) § 4852d(a)(1)(C)
+  url: null
+  quoted_text: permit the purchaser a 10-day period (unless the parties mutually agree upon a
+    different period of time) to conduct a risk assessment or inspection for the presence of
+    lead-based paint hazards.
+  secondary: []
+terms:
+  - lead
+  - inspection
+  - period
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

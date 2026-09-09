@@ -1,0 +1,41 @@
+id: NAT-PV-II-0877
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grantor signs a deed and hands it to the grantee, but the grantee refuses to accept it. When
+  does title pass?
+options:
+  - Delivery and acceptance by the grantee
+  - Recording and delivering the deed
+  - Payment and consideration of funds
+  - Signing and delivering the deed
+key: A
+explanation: A deed is valid only when delivered by the grantor and accepted by the grantee during
+  the grantor's lifetime. If the grantee refuses acceptance, there is no effective transfer of
+  title, regardless of signing, recording, or consideration. Thus title passes only upon delivery
+  and acceptance.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.1
+  url: null
+  quoted_text: Delivery by the grantor and acceptance by the grantee during the grantor's lifetime
+  secondary: []
+terms:
+  - delivery
+  - acceptance
+  - deed
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

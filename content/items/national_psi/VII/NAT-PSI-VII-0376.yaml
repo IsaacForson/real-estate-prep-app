@@ -1,0 +1,43 @@
+id: NAT-PSI-VII-0376
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee discovers soil contaminated with petroleum hydrocarbons at a former gasoline
+  station. According to CERCLA, is the petroleum contamination considered a hazardous substance?
+options:
+  - No, unless the petroleum is mixed with a listed hazardous substance
+  - No, because petroleum is excluded from the definition unless specifically listed
+  - Yes, if the contamination exceeds EPA-established thresholds
+  - Yes, because any soil contamination triggers hazardous substance status
+key: B
+explanation: Petroleum is excluded from the definition of hazardous substance unless specifically
+  listed (see § 9601(14) exclusion). Therefore, contamination from petroleum hydrocarbons alone does
+  not constitute a hazardous substance under CERCLA. The distractor that any soil contamination
+  triggers hazardous substance status ignores this petroleum exclusion.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601(14)
+  url: null
+  quoted_text: The term does not include petroleum, including crude oil or any fraction thereof which
+    is not otherwise specifically listed or designated as a hazardous substance under subparagraphs
+    (A) through (F) of this paragraph
+  secondary: []
+terms:
+  - petroleum
+  - hazardous substance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

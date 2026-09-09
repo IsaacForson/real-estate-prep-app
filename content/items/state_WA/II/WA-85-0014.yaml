@@ -1,0 +1,41 @@
+id: WA-85-0014
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a managing broker's license has two years of full-time broker experience
+  within the past five years. Under RCW 18.85.111, does this meet the minimum requirement?
+options:
+  - Yes, provided the applicant is licensed in another state
+  - No, three years of licensed experience is required
+  - No, the applicant would instead need a lifetime license
+  - Yes, two years of experience satisfies the requirement
+key: B
+explanation: The statute requires a minimum of three years of licensed experience as a full-time
+  real estate broker within the five years preceding the managing broker examination application, so
+  two years is insufficient.
+citation:
+  source: Wash. Rev. Code § 18.85.111
+  url: null
+  quoted_text: Has had a minimum of three years of licensed experience as a full-time real estate
+    broker in this state or in another jurisdiction having comparable requirements within the five
+    years previous to applying for the managing broker's license examination or is otherwise
+    qualified by reason of practical experience in a business allied with or related to real estate
+    as prescribed by rule;
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

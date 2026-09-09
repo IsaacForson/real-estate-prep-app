@@ -1,0 +1,42 @@
+id: KS-3034-0030
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson’s license expired eight months ago. What must the licensee do to regain licensure?
+options:
+  - Submit a renewal application with the late fee
+  - Submit a certificate for twelve CE hours
+  - Submit a request for a fee waiver to the commission
+  - Submit a new application for an original license
+key: D
+explanation: Reinstatement is permitted only if a late renewal application is submitted within six
+  months of expiration. After eight months, the license cannot be reinstated, so the licensee must
+  apply for an original license. The renewal‑with‑late‑fee option applies only within the six‑month
+  window.
+citation:
+  source: Kan. Stat. Ann. § 58-3045
+  url: null
+  quoted_text: if within six months following the date of the expiration of the license, the licensee
+    submits to the commission an application for late renewal
+  secondary: []
+terms:
+  - reinstatement
+  - expiration
+  - application
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

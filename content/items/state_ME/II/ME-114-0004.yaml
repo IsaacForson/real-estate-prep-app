@@ -1,0 +1,45 @@
+id: ME-114-0004
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A former sales agent sues a seller in court to collect a commission earned before the agent's
+  license lapsed. Under 32 M.R.S. § 13004, the agent's case will fail unless the agent first
+  proves:"
+options:
+  - That the agent held a proper license when the cause of action arose
+  - That the seller signed a brokerage agreement before the closing date
+  - That the agent's supervising broker approved the lawsuit in writing
+  - That the commission amount was disclosed at the initial listing meeting
+key: A
+explanation: Section 13004 bars a person from bringing or maintaining an action to collect brokerage
+  compensation without first proving the person was properly licensed when the cause of action
+  arose.
+citation:
+  source: 32 M.R.S. § 13004
+  url: null
+  quoted_text: >-
+    No person or entity may bring or maintain any action in the courts of this State for the
+    collection
+
+    of compensation for real estate brokerage services, without first proving that the person or
+    entity was
+
+    properly licensed by the Real Estate Commission at the time the cause of action arose
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

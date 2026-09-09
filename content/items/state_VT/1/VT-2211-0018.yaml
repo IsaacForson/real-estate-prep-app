@@ -1,0 +1,40 @@
+id: VT-2211-0018
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson's initial license is issued 60 days before the Office of Professional
+  Regulation's set biennial renewal date for that license category. Applying section 123, what
+  should the salesperson do about renewal?
+options:
+  - Apply for an entirely new license instead of renewing this one
+  - Pay a prorated fee covering just the remaining 90-day gap period
+  - Wait until the end of the first full biennial period to renew
+  - Renew the license again within the following 30 days regardless
+key: C
+explanation: Section 123(a)(12)(B) provides that a person whose initial license is issued within 90
+  days before the set renewal date need not renew until the end of the first full biennial licensing
+  period.
+citation:
+  source: 3 V.S.A. § 123
+  url: null
+  quoted_text: A person whose initial license is issued within 90 days prior to the set renewal date
+    shall not be required to renew the license until the end of the first full biennial licensing
+    period following initial licensure.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

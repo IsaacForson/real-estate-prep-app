@@ -1,0 +1,39 @@
+id: SD-21A-0014
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Which person is exempt from South Dakota's real estate licensing requirement when performing
+  the described act?
+options:
+  - A person charging a fee to publish real estate listings
+  - A bona fide owner managing the owner's own rental property
+  - A salesperson negotiating a lease for an unrelated landlord
+  - A broker preparing a comparative market analysis for a fee
+key: B
+explanation: SDCL 36-21A-29 exempts a bona fide owner or lessor who performs acts described in the
+  broker or salesperson definitions with reference to property the owner owns or leases, when done
+  in the regular course of managing that property.
+citation:
+  source: S.D. Codified Laws § 36-21A-29
+  url: null
+  quoted_text: |-
+    Any person who as a bona fide owner or lessor, performs any of the acts described in §§ 
+    36-21A-6 and 36-21A-12 with reference to property owned, or leased by the person
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

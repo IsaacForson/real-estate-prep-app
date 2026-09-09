@@ -1,0 +1,42 @@
+id: NC-93A-0007
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "2"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker holds an ownership interest in a commercial property that exceeds the threshold this
+  rule allows for representing a buyer of that property. Under 21 NCAC 58A .0104(o), may the broker
+  represent a buyer of that property?
+options:
+  - No, the interest exceeds the threshold this rule allows
+  - Yes, a broker may represent a buyer of property the broker owns
+  - Yes, if the seller signs a waiver of fiduciary duties
+  - No, brokers may not hold interests in commercial listings
+key: A
+explanation: Rule.0104(o) generally bars a broker who is selling property in which the broker has an
+  ownership interest from representing a buyer of that property, permitting it for commercial
+  property only when the broker's ownership interest is below the rule's stated threshold.
+citation:
+  source: 21 NCAC 58A Rule .0104(o)
+  url: null
+  quoted_text: A broker who is selling property in which the broker has an ownership interest shall
+    not undertake to represent a buyer of that property except that a broker who is selling
+    commercial real estate as defined in Rule .1802 of this Subchapter in which the broker has less
+    than 25 p ercent ownership interest may represent a buyer of that property if the buyer consents
+    to the representation after full written disclosure of the broker's ownership interest.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

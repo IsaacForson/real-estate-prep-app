@@ -1,0 +1,40 @@
+id: NJ-1-0010
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A developer is constructing a five-story apartment building in New Jersey. Applying N.J. Stat.
+  Ann. § 52:27D-123.14, what elevator feature must the building include?
+options:
+  - A rooftop helicopter landing pad for emergency evacuation
+  - A backup generator connected to every passenger elevator
+  - At least one elevator sized to fit an ambulance stretcher
+  - A freight elevator dedicated to moving-day furniture deliveries
+key: C
+explanation: Section 52:27D-123.14 requires that new buildings four or more stories above grade
+  include at least one elevator arranged to accommodate a standard ambulance stretcher.
+citation:
+  source: N.J. Stat. Ann. § 52:27D-123.14
+  url: null
+  quoted_text: the commissioner shall modify the code pertaining to elevators to require that  at
+    least one elevator be  of such an arrangement to accommodate an ambulance stretcher 24 inches by
+    84 inches in the horizontal, open position with not less than 5-inch radius corners when
+    installed in any newly-constructed buildings four or more stories above grade, or four or more
+    stories below grade plane
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

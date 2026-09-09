@@ -1,0 +1,37 @@
+id: ME-114-0008
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A brokerage agency has a seller sign a listing agreement that states the commission rate, the
+  brokerage services to be provided, and the seller's signature. Under 32 M.R.S. § 13177-A, this
+  written agreement is still missing a legally required element:"
+options:
+  - The date upon which the agreement will expire
+  - The agency's average sale price for the past year
+  - The names of every affiliated licensee at the agency
+  - The seller's mailing address for tax purposes
+key: A
+explanation: Section 13177-A requires a written brokerage agreement to include, at minimum, the date
+  upon which the agreement will expire, along with the signature, terms and compensation method.
+citation:
+  source: 32 M.R.S. § 13177-A
+  url: null
+  quoted_text: The date upon which the agreement will expire
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

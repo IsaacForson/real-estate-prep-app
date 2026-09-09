@@ -1,0 +1,42 @@
+id: AK-88-0039
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson collects an earnest money check from a buyer on Friday afternoon and plans to
+  hold onto it over the weekend before giving it to the broker on Monday. Does this comply with AS
+  08.88.331?
+options:
+  - Yes, because AS 08.88.331 only applies to funds the broker collects personally, not a
+    salesperson.
+  - No, because trust funds collected by a salesperson must instead be deposited into the
+    salesperson's own account.
+  - Yes, because a salesperson may hold trust funds for up to three business days before turning
+    them over.
+  - No, because trust money must immediately be turned over to the broker or an authorized
+    representative.
+key: D
+explanation: AS 08.88.331 requires that money collected in trust related to a real estate
+  transaction be immediately turned over to the broker or the broker's authorized representative.
+citation:
+  source: Alaska Stat. § 08.88.331
+  url: null
+  quoted_text: All money or other proceeds collected in trust and related to a real estate transaction
+    shall immediately be turned over to the broker or the broker's authorized representative.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,39 @@
+id: MN-82-0003
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker opens a dedicated account to hold earnest money and other client funds apart from
+  operating funds. Under Minnesota law, what feature does this trust account need?
+options:
+  - It pays the highest current passbook savings rate and bars any bank setoff
+  - It lets the depository bank offset the broker's other debts against the balance
+  - It earns no interest so client funds stay separate from firm income
+  - It pays a fixed rate set every year by the commissioner of commerce
+key: A
+explanation: The law requires a trust account to bear interest at the highest current passbook
+  savings rate and bars the depository institution from claiming any setoff right against the
+  licensee's debts.
+citation:
+  source: Minn. Stat. § 82.55, subd. 25
+  url: null
+  quoted_text: A trust account must be an interest-bearing account paying the highest current passbook
+    savings account rate of interest and must not allow the financial institution a right of set off
+    against money owed it by the licensee.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

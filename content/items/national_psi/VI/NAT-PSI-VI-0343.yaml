@@ -1,0 +1,43 @@
+id: NAT-PSI-VI-0343
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee representing a buyer learns that the buyer has just been laid off and may be unable
+  to obtain financing. According to the fiduciary duty of disclosure to the principal, what must the
+  licensee do?
+options:
+  - Wait until after closing to disclose the information
+  - Advise the buyer to hide the layoff from the seller
+  - Inform the seller-client about the buyer's potential financing difficulty
+  - Keep the information confidential to protect the buyer's negotiating position
+key: C
+explanation: Under the duty of disclosure to the principal, the agent must reveal any known fact
+  that could affect the principal's decisions, including the buyer's potential financing problems.
+  Keeping the information confidential would violate this duty. Thus, the agent must inform the
+  seller-client.
+citation:
+  source: REP Ref. Agency § 5.4
+  url: null
+  quoted_text: The agent must tell the principal every fact the agent knows, or should know, that
+    could affect the principal's decisions in the transaction
+  secondary: []
+terms:
+  - disclosure
+  - fiduciary duty
+  - principal
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,49 @@
+id: MI-25-0009
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A lender charges interest above the rate allowed under Michigan's usury statute on a loan
+  secured by real property. What is the legal consequence for the lender and the borrower?
+options:
+  - The lender forfeits the excess interest charged, and the loan otherwise remains enforceable
+  - The lender forfeits recovery of interest and fees, and the borrower may recover legal costs
+  - The loan is automatically converted to the statutory maximum rate, with no other remedy available
+  - The borrower forfeits the right to challenge the loan, and the lender retains the interest
+    collected
+key: B
+explanation: A lender who violates the usury act by charging excess interest is barred from
+  recovering interest, fees, or collection charges, while the borrower is entitled to recover
+  attorney fees and court costs from the lender.
+citation:
+  source: Mich. Comp. Laws § 438.32
+  url: null
+  quoted_text: >-
+    Any seller or lender or his assigns who enters into any contract or agreement which does not
+    comply with the
+
+    provisions of this act or charges interest in excess of that allowed by this act is barred from
+    the recovery of any
+
+    interest, any official fees, delinquency or collection charge, attorney fees or court costs and
+    the borrower or buyer
+
+    shall be entitled to recover his attorney fees and court costs from the seller, lender or
+    assigns.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

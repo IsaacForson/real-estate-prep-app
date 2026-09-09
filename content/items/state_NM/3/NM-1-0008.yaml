@@ -1,0 +1,40 @@
+id: NM-1-0008
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker places a print advertisement for a listed home but omits the brokerage's
+  registered telephone number. Under 16.61.32.8 NMAC, does this advertisement comply with the rule?
+options:
+  - Yes, if the trade name is shown twice in the ad
+  - No, but that requirement applies to print ads
+  - No, the registered phone number is required
+  - Yes, phone numbers are considered optional
+key: C
+explanation: The rule requires a qualifying broker advertising property for others to use at a
+  minimum the trade name and current brokerage office telephone number registered with the
+  commission.
+citation:
+  source: 16.61 NMAC § 16.61.32.8
+  url: null
+  quoted_text: shall at a minimum, use in such advertising the trade name and current brokerage office
+    telephone number as registered with the commission
+  secondary: []
+terms:
+  - advertising
+  - trade name
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

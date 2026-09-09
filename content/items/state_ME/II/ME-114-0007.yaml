@@ -1,0 +1,40 @@
+id: ME-114-0007
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A sales agent resigns from a brokerage agency. Under 32 M.R.S. § 13180, the designated broker
+  must:"
+options:
+  - Transfer the agent's active listings to another agency without any notice
+  - Destroy the agent's entire license record after thirty business days pass
+  - Wait for the state commission to independently contact the departing agent later
+  - Send notice to the agent's last known address that the commission was told
+key: D
+explanation: Section 13180 requires the designated broker to immediately send a communication to the
+  last known address of the departing licensee advising that the commission has been notified.
+citation:
+  source: 32 M.R.S. § 13180
+  url: null
+  quoted_text: >-
+    the designated broker shall immediately send a communication to the last known address of the
+    broker, associate broker or sales agent advising the broker, associate broker or
+
+    sales agent that the commission has been notified
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

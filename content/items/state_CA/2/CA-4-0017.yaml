@@ -1,0 +1,39 @@
+id: CA-4-0017
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A dual agent learns from the seller that the seller will accept an offer below the listed
+  price. Under Section 2079.21, what must the agent do before sharing that information with the
+  buyer?
+options:
+  - Wait until escrow closes before disclosing the information to anyone.
+  - Obtain the seller's express permission before disclosing the information.
+  - Notify the local real estate board of the price concession in writing.
+  - Disclose the information immediately, since dual agents owe no confidentiality.
+key: B
+explanation: Section 2079.21 prohibits a dual agent from disclosing confidential information, such
+  as a seller's willingness to accept a lower price, to the buyer without the seller's express
+  permission.
+citation:
+  source: Cal. Civ. Code § 2079.21
+  url: null
+  quoted_text: A dual agent may not, without the express permission of the seller, disclose to the
+    buyer any confidential information obtained from the seller.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

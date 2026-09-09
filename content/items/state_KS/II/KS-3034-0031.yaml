@@ -1,0 +1,39 @@
+id: KS-3034-0031
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens three branch offices. What total fee must be paid to the commission for the
+  branch offices?
+options:
+  - $300.00
+  - $200.00
+  - $100.00
+  - $400.00
+key: A
+explanation: Each branch office incurs a fee of $100. Three offices therefore require 3 × $100 =
+  $300. The distractors represent fees for one, two, or four offices.
+citation:
+  source: Kan. Admin. Regs. § 86-1-5
+  url: null
+  quoted_text: (7) for each branch office, a fee of $100;
+  secondary: []
+terms:
+  - branch office
+  - fee
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

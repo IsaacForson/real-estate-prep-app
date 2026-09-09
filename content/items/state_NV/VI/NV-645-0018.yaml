@@ -1,0 +1,39 @@
+id: NV-645-0018
+jurisdiction: NV
+bank: state_NV
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: "A broker deposits an earnest money check from a buyer directly into the brokerage's operating
+  account rather than a separate trust account. Under NRS 645.310, this conduct violates the
+  prohibition against:"
+options:
+  - accepting earnest money deposits from buyers before closing
+  - maintaining more than one trust account at the same institution
+  - depositing client funds into the broker's personal account
+  - requiring written authorization before opening a trust account
+key: C
+explanation: NRS 645.310 forbids a broker from permitting advance payments of money belonging to
+  others to be deposited in the broker's business or personal account.
+citation:
+  source: Nev. Rev. Stat. § 645.310
+  url: null
+  quoted_text: A real estate broker shall not permit any advance payment of money belonging to others
+    to be deposited in the real estate brokers business or personal account or to be commingled with
+    any money he or she may have on deposit.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

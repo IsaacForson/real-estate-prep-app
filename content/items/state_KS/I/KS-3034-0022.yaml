@@ -1,0 +1,46 @@
+id: KS-3034-0022
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A person willfully violates the Kansas real estate brokers' and salespersons' license act for
+  the first time, and later commits a second willful violation. How does the potential fine range
+  for the second violation compare to the first under Kansas law?
+options:
+  - Both violations carry the identical fine range of $100 to $1,000 under the statute
+  - Only the first violation may be punished by a fine, and the second only by imprisonment
+  - The second violation's fine range rises to $1,000 to $10,000, up from $100 to $1,000 for the
+    first
+  - The second violation's fine range instead falls to $50 to $500, down from $100 to $1,000 for the
+    first offense
+key: C
+explanation: K.S.A. 58-3065(a) sets the fine for a willful violation at not less than $100 or more
+  than $1,000 for a first offense, but increases the range to not less than $1,000 or more than
+  $10,000 for a second or subsequent offense, alongside possible imprisonment of up to 12 months for
+  either.
+citation:
+  source: Kan. Stat. Ann. § 58-3065
+  url: null
+  quoted_text: Willful violation of any provision of this act or the brokerage relationships in real
+    estate transactions act is a misdemeanor punishable by imprisonment for not more than 12 months
+    or a fine of not less than $100 or more than $1,000, or both, for the first offense and
+    imprisonment for not more than 12 months or a fine of not less than $1,000 or more than $10,000,
+    or both, for a second or subsequent offense.
+  secondary: []
+terms:
+  - misdemeanor penalty
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

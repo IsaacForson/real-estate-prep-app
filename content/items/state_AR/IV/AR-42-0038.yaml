@@ -1,0 +1,44 @@
+id: AR-42-0038
+jurisdiction: AR
+bank: state_AR
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer signs a time-share purchase contract on a Thursday. If the fifth day after signing
+  falls on a Sunday, what is the last day the buyer may cancel the contract without penalty under
+  Arkansas Real Estate Commission Rules?
+options:
+  - Friday
+  - Saturday
+  - Monday
+  - Tuesday
+key: C
+explanation: Rule 13.4(d) provides that if the fifth day after contract execution is a Saturday,
+  Sunday, or legal holiday, the cancellation period extends to the next day that is not a Saturday,
+  Sunday, or legal holiday. Therefore, a Sunday fifth day pushes the deadline to Monday.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 13.4
+  url: null
+  quoted_text: Should the fifth day after the execution of the contract for purchase of a time-share
+    interest be a Saturday, Sunday or legal holiday, then the five (5) day cancellation period shall
+    not expire until the end of the next day which is not a Saturday, Sunday or legal holiday.
+  secondary: []
+terms:
+  - cancellation
+  - contract
+  - time-share
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

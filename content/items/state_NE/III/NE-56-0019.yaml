@@ -1,0 +1,40 @@
+id: NE-56-0019
+jurisdiction: NE
+bank: state_NE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A third-party home warranty company is paid directly for repairs performed on behalf of a
+  seller client, and the broker keeps no profit or fee from that payment. Under Neb. Rev. Stat. §
+  81-885.24, why does this payment fall outside the earnest-money compensation restriction?
+options:
+  - It includes no profit or payment for services by the broker
+  - It was arranged before the listing agreement was signed
+  - It was paid by an outside licensed contractor instead of a vendor
+  - It occurred after the transaction had already closed
+key: A
+explanation: Section 81-885.24(35) excludes a third-party payment for goods or services from the
+  compensation restriction when the payment includes no profit or payment for services rendered by
+  the broker.
+citation:
+  source: Neb. Rev. Stat. § 81-885.24
+  url: null
+  quoted_text: a payment for goods or services rendered by a third party on behalf of the client shall
+    not be considered compensation or consideration if such payment does not include any profit,
+    compensation, or payment for services rendered by the broker
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

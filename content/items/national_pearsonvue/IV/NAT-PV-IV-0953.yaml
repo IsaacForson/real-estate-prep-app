@@ -1,0 +1,49 @@
+id: NAT-PV-IV-0953
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer agrees to purchase a property for $400,000 with an 80% loan‑to‑value mortgage. If the
+  lender's appraisal comes in at $380,000 and the contract includes an appraisal contingency, what
+  is the maximum loan amount the lender will provide?
+options:
+  - $320,000
+  - $380,000
+  - $400,000
+  - $304,000
+key: D
+explanation: "With an appraisal contingency, the lender bases the loan on the appraised value. The
+  text shows the lender will lend the agreed percentage of the appraised value: 80% × $380,000 =
+  $304,000. The $320,000 distractor applies the 80% to the contract price instead of the appraisal."
+citation:
+  source: REP Ref. Contracts § 6.4
+  url: null
+  quoted_text: The lender will lend 80% × $340,000 = $272,000, not $280,000.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify loan‑to‑value ratio: 80%
+    Step 2: Identify appraised value: $380,000
+    Step 3: Multiply ratio by appraised value: 0.80 × 380,000 = 304,000
+    Step 4: Result is the maximum loan amount: $304,000
+  formulas:
+    - Loan Amount = LTV Ratio × Appraised Value
+  onscreen_calculator_only: false
+terms:
+  - appraisal contingency
+  - loan‑to‑value
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

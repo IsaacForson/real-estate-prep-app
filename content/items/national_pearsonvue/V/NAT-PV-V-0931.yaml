@@ -1,0 +1,55 @@
+id: NAT-PV-V-0931
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson on a 70/30 split with her broker received $8,400 from the sale. The broker's
+  share of the total commission was split evenly with the cooperating broker. If the total
+  commission rate was 6%, what was the sale price?
+options:
+  - Sale price of $200,000
+  - Sale price of $480,000
+  - Sale price of $400,000
+  - Sale price of $280,000
+key: C
+explanation: The salesperson’s $8,400 represents 70% of the broker’s share, so the broker’s share is
+  $12,000. Since the broker’s share is half of the total commission, the total commission is
+  $24,000. Dividing by the 6% rate yields a sale price of $400,000.
+citation:
+  source: REP Ref. Brokerage Practice § 4.5
+  url: null
+  quoted_text: Commission = sale price × rate
+  secondary: []
+math:
+  worked_solution: |-
+    Salesperson share = $8,400
+    Salesperson split = 70% of broker's share
+    Broker share = $8,400 ÷ 0.70 = $12,000
+    Broker share = 50% of total commission
+    Total commission = $12,000 ÷ 0.50 = $24,000
+    Commission rate = 6%
+    Sale price = Total commission ÷ Rate = $24,000 ÷ 0.06 = $400,000
+  formulas:
+    - Commission = Sale Price × Rate
+    - Salesperson Share = Broker Share × Salesperson Split%
+    - Broker Share = Total Commission × Broker Share Fraction
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - split
+  - sale price
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,41 @@
+id: KS-3034-0004
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: For purposes of Kansas real estate license law, which ownership situation is excluded from the
+  statutory definition of having an interest in real estate?
+options:
+  - Owning less than 5% of a publicly traded entity that holds the real estate
+  - Owning any share of a privately held entity that holds the real estate
+  - Serving as an officer of an entity that owns a majority stake in the real estate
+  - Holding a direct ownership interest in the real estate involved in the transaction
+key: A
+explanation: K.S.A. 58-3035(i) defines interest to include ownership by an officer, member, partner
+  or shareholder of an entity owning the real estate, but expressly excludes an ownership interest
+  of less than 5% in a publicly traded entity.
+citation:
+  source: Kan. Stat. Ann. § 58-3035
+  url: null
+  quoted_text: Having any type of ownership in the real estate involved in the transaction; or (2) an
+    officer, member, partner or shareholder of any entity that owns such real estate excluding an
+    ownership interest of less than 5% in a publicly traded entity.
+  secondary: []
+terms:
+  - interest
+  - publicly traded entity
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

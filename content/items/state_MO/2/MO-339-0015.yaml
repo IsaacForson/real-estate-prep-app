@@ -1,0 +1,37 @@
+id: MO-339-0015
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submits a license application that is missing several required fields. Applying
+  20 CSR 2250-3.010, what may the commission do with that application?
+options:
+  - Automatically place the application on a one-year waiting list
+  - Issue a temporary work permit pending completion of the fields
+  - Forward the application to the state fingerprint vendor
+  - Deny issuance due to the incomplete application
+key: D
+explanation: The rule allows the commission to deny issuance of a license to an applicant who
+  submits an incomplete application.
+citation:
+  source: 20 CSR 2250-3.010 § (Applications for License)
+  url: null
+  quoted_text: The commission may deny issuance of a license to any applicant submitting an incomplete
+    application
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

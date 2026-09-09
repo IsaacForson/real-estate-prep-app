@@ -1,0 +1,43 @@
+id: NM-1-0010
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A person performed brokerage work for a client but did not hold a license at the time the
+  dispute over commission arose, though the person later became licensed. Under 61-29-16 NMSA 1978,
+  can this person maintain a court action to collect that commission?
+options:
+  - No, licensure at the time the claim arose is required
+  - Yes, if the brokerage work was substantially finished
+  - No, unless the client agrees to an informal settlement
+  - Yes, later licensure cures the earlier gap
+key: A
+explanation: The statute bars a commission action unless the person was a duly licensed qualifying
+  broker or associate broker at the time the alleged cause of action arose.
+citation:
+  source: N.M. Stat. Ann. § 61-29-16
+  url: null
+  quoted_text: No action for the collection of a commission or compensation earned by any person as a
+    qualifying broker or an associate broker required to be licensed under the provisions of Chapter
+    61, Article 29 NMSA 1978 shall be maintained in the courts of the state unless such person was a
+    duly licensed qualifying broker or associate broker at the time the alleged cause of action
+    arose.
+  secondary: []
+terms:
+  - commission suit
+  - licensure timing
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,41 @@
+id: NAT-PV-V-0964
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: If a licensee continues to violate a final cease and desist order issued under the Sherman
+  Antitrust Act for three consecutive days, how many separate offenses are considered under §21(l)?
+options:
+  - Two offenses
+  - One offense
+  - Four violations
+  - Three offenses
+key: D
+explanation: Section 21(l) states that each day of continuance of failure to obey a final order is
+  deemed a separate offense. Thus three days of continuing violation constitute three separate
+  offenses.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) — Sherman Antitrust Act and related antitrust provisions — §
+    1 §21(l)
+  url: null
+  quoted_text: each day of continuance of such failure or neglect shall be deemed a separate offense.
+  secondary: []
+terms:
+  - violation
+  - offense
+  - continuing
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

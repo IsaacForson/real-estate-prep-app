@@ -1,0 +1,45 @@
+id: MI-25-0019
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A broker who engages in property management deposits management-related funds into the same
+  account used for general brokerage trust funds. Under Michigan's occupational code, does this
+  practice comply with the property management requirements?
+options:
+  - Yes, because the code allows the two account types to be combined for convenience
+  - No, because a broker in property management has to keep those accounts separate from others
+  - Yes, because the property management employment contract alone governs how funds are handled
+  - No, but the practice is excused whenever the client consents verbally after the fact
+key: B
+explanation: The code requires a real estate broker who engages in property management to maintain
+  property management accounts separate from all other accounts, so combining the two account types
+  does not comply with the requirement.
+citation:
+  source: Mich. Comp. Laws § 339.2512c
+  url: null
+  quoted_text: >-
+    A real estate broker who engages in property management shall maintain property management
+    accounts
+
+    separate from all other accounts. Except as provided in this section, a property management
+    account shall be
+
+    managed in accordance with the property management employment contract.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

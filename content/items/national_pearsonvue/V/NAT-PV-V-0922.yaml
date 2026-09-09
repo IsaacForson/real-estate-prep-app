@@ -1,0 +1,42 @@
+id: NAT-PV-V-0922
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the federal statutory safe harbor for licensed real estate agents, what must be true
+  about a licensee's compensation to qualify as a statutory non-employee?
+options:
+  - It must be based on commissions or other sales output
+  - It must be based on a fixed salary or hourly wage
+  - It must be based on reimbursement for expenses
+  - It must be based on weekly payment regardless of production
+key: A
+explanation: The safe harbor requires that substantially all of the agent's compensation be directly
+  related to sales or other output, not to hours worked. This ensures the agent is treated as a
+  non-employee for tax purposes. The distractor suggesting salary or hourly pay is wrong because
+  such compensation ties payment to hours, violating the safe harbor.
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: substantially all of the individual's compensation for real estate services is directly
+    related to sales or other output (commissions), rather than to the number of hours worked
+  secondary: []
+terms:
+  - compensation
+  - sales output
+  - safe harbor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

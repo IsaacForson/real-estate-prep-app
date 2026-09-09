@@ -1,0 +1,46 @@
+id: NAT-PV-III-0940
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $500,000 and an assessed value of $275,000. What is the
+  assessment ratio?
+options:
+  - 55 percent
+  - 45 percent
+  - 60 percent
+  - 50 percent
+key: A
+explanation: The assessment ratio equals assessed value divided by market value times 100. 275,000 ÷
+  500,000 = 0.55, or 55 percent. The other options result from incorrect division or subtraction.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.3
+  url: null
+  quoted_text: Assessed value is determined by a local assessor and is often a percentage of market
+    value called the assessment ratio
+  secondary: []
+math:
+  worked_solution: |-
+    275,000 ÷ 500,000 = 0.55
+    0.55 × 100 = 55%
+  formulas:
+    - assessment ratio = (assessed value ÷ market value) × 100
+  onscreen_calculator_only: false
+terms:
+  - assessment
+  - ratio
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

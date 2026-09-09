@@ -1,0 +1,40 @@
+id: IA-543B-0002
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer asks a salesperson to show a house before signing any paperwork. Under Iowa Code
+  section 543B.56A, when must the brokerage agreement be signed if the salesperson intends to show
+  the buyer that property?
+options:
+  - After the buyer makes a written offer
+  - Any time before the transaction closes
+  - Before showing the property to the buyer
+  - Within thirty days after the showing occurs
+key: C
+explanation: The statute requires a brokerage agreement to be signed by both broker and client
+  before showing a property to a buyer, unless a listed exemption applies.
+citation:
+  source: Iowa Code § 543B.56A
+  url: null
+  quoted_text: |-
+    A brokerage agreement must be signed by both the broker and the client prior to the
+    broker listing any property for sale on behalf of a seller, or before showing a property to a
+    buyer
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

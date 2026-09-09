@@ -1,0 +1,41 @@
+id: AK-88-0008
+jurisdiction: AK
+bank: state_AK
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Which of the following individuals is exempt from the real estate licensing requirement under
+  Alaska Statute § 08.88.900(a)(3)?
+options:
+  - A lawyer providing legal advice on a real estate transaction
+  - A lawyer acting as a real estate agent for commission
+  - A paralegal preparing closing documents for a buyer
+  - A real estate broker offering legal advice to a client
+key: A
+explanation: AS 08.88.900(a)(3) exempts 'a lawyer performing duties as a lawyer,' which includes
+  giving legal advice on a real estate transaction. The distractor 'A lawyer acting as a real estate
+  agent for commission' is not exempt because the lawyer is acting as an agent, not performing
+  lawyer duties.
+citation:
+  source: Alaska Stat. § 08.88.900
+  url: null
+  quoted_text: (3) a lawyer performing duties as a lawyer;
+  secondary: []
+terms:
+  - lawyer
+  - exemption
+  - legal advice
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

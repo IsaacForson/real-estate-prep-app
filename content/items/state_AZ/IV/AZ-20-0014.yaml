@@ -1,0 +1,40 @@
+id: AZ-20-0014
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker promises a salesperson a bonus contingent on closing a future sale, with no money
+  changing hands yet. Does this contingent promise qualify as compensation under Arizona's
+  definitions?
+options:
+  - No, because compensation requires that monies already be fully in the broker's possession.
+  - Yes, because the definition includes a promise of consideration whether contingent.
+  - Yes, but only once the department approves the bonus arrangement in writing.
+  - No, because a bonus is a gift rather than payment for services rendered.
+key: B
+explanation: Compensation is defined broadly to include any fee, commission, salary, monies, or
+  other valuable consideration for services rendered or to be rendered, including a promise of
+  consideration whether or not it is contingent.
+citation:
+  source: Ariz. Rev. Stat. § 32-2101
+  url: null
+  quoted_text: '"Compensation" means any fee, commission, salary, monies or other valuable
+    consideration for services rendered or to be rendered as well as the promise of consideration
+    whether contingent or not.'
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

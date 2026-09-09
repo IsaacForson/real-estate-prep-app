@@ -1,0 +1,40 @@
+id: NAT-PSI-VII-0411
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to CERCLA § 9601, how is the term 'ground water' defined?
+options:
+  - Water that is used exclusively for agricultural irrigation
+  - Water that is stored in above‑ground reservoirs or tanks
+  - Water that is present in the unsaturated zone above the water table
+  - Water that is found in a saturated zone or stratum beneath the surface of land or water
+key: D
+explanation: The definition of ground water in CERCLA § 9601(12) states it is water in a saturated
+  zone or stratum beneath the surface of land or water. The other options describe unsaturated zone,
+  above‑ground storage, or exclusive agricultural use, which do not match the statutory definition.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601
+  url: null
+  quoted_text: (12) The term "ground water" means water in a saturated zone or stratum beneath the
+    surface of land or water.
+  secondary: []
+terms:
+  - ground water
+  - definition
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,45 @@
+id: NAT-PV-V-0954
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A developer receives a federally insured loan to construct rental units and then refuses to
+  rent to an applicant because of the applicant's national origin. Under Executive Order 11063, this
+  action is:"
+options:
+  - Permitted because the loan is only for construction
+  - Allowed if the developer is a private entity
+  - Permitted only if the loan is for home purchases
+  - A violation because the housing receives Federal loan assistance
+key: D
+explanation: Section 101(a)(iii) covers housing provided in whole or in part by loans insured or
+  guaranteed by the Federal Government, making discrimination based on national origin prohibited.
+  The distractor claiming permission because the loan is only for construction is wrong because the
+  federal loan triggers coverage regardless of the loan's purpose.
+citation:
+  source: 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866 —
+    property rights of citizens Section 101(a)(iii)
+  url: null
+  quoted_text: (iii) provided in whole or in part by loans hereafter insured, guaranteed, or otherwise
+    secured by the credit of the Federal Government,
+  secondary: []
+terms:
+  - national origin
+  - federally insured
+  - discrimination
+  - housing
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

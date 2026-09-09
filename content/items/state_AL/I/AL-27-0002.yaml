@@ -1,0 +1,44 @@
+id: AL-27-0002
+jurisdiction: AL
+bank: state_AL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Jane Doe, a licensed broker, lists a home located in Georgia for sale. Under § 34-27-10(b), is
+  Jane subject to the requirements of Section 40-12-150?
+options:
+  - No, because the property is situated in another state
+  - Yes, because all brokers must follow Section 40-12-150 regardless of location
+  - No, because Section 40-12-150 applies only to rental transactions
+  - Yes, because the rule applies to any real estate activity
+key: A
+explanation: Section 34-27-10(b) expressly states that a licensee shall not be subject to the
+  requirements of Section 40-12-150 when selling or offering for sale realty situated in another
+  state or county. Since the property is in Georgia, Jane is not subject to those requirements. The
+  other choices misinterpret the exemption.
+citation:
+  source: Ala. Code § 34-27-10
+  url: null
+  quoted_text: (b) A licensee under this chapter shall not be subject to the requirements of Section
+    40-12-150 when he or she sells, offers to sell, or advertises for sale realty situated in
+    another state or county.
+  secondary: []
+terms:
+  - licensee
+  - exemption
+  - section
+  - realty
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

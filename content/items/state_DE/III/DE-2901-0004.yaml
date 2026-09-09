@@ -1,0 +1,40 @@
+id: DE-2901-0004
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer wants to submit a postdated personal check as an earnest money deposit, and the
+  parties have not agreed to this in writing. Under 24 Del. Admin. Code § 2900-6.2, may the Licensee
+  accept it?
+options:
+  - Yes, because postdated checks are acceptable as earnest money deposits
+  - No, because the parties have not agreed in writing to accept a postdated check
+  - Yes, because Brokers may accept any form of payment without restriction whatsoever
+  - No, because earnest money deposits are required to be paid in cash
+key: B
+explanation: Rule 6.2 bars a Licensee from accepting a postdated check as an earnest money deposit
+  unless the parties have agreed to this in writing beforehand.
+citation:
+  source: 24 Del. Admin. Code § 2900-6.2
+  url: null
+  quoted_text: Unless agreed to in writing by the parties, a Licensee shall not accept, as a good
+    faith or earnest money deposit in connection with a real estate transaction, a photocopy,
+    facsimile, or other copy of a personal check or draft, nor shall a Licensee accept as a good
+    faith or earnest money deposit a check or draft that is postdated.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

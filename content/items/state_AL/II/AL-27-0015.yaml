@@ -1,0 +1,45 @@
+id: AL-27-0015
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An Alabama qualifying broker enters a co-brokerage agreement with an out-of-state broker for a
+  property sale. The buyer and seller do not agree in writing to relieve the Alabama broker of
+  earnest money responsibility. Who must hold the earnest money in escrow?
+options:
+  - The Alabama qualifying broker must hold the earnest money in escrow
+  - The earnest money may be released to the seller immediately upon contract signing
+  - The earnest money may be held by either broker if the buyer agrees
+  - The out-of-state broker must hold the earnest money
+key: A
+explanation: The statute and administrative rule require the Alabama qualifying broker to hold
+  earnest money in escrow unless both buyer and seller agree in writing to relieve that
+  responsibility; absent such agreement, the Alabama broker must hold the funds. The other options
+  incorrectly assign the duty to the out-of-state broker, allow unilateral relief, or permit
+  premature release.
+citation:
+  source: Ala. Code § 34-27-3
+  url: null
+  quoted_text: (6) That any earnest money deposited pursuant to the agreement shall be held in escrow
+    by the Alabama qualifying broker unless both the buyer and the seller agree in writing to
+    relieve the Alabama qualifying broker of this responsibility.
+  secondary: []
+terms:
+  - earnest money
+  - escrow
+  - co-brokerage
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

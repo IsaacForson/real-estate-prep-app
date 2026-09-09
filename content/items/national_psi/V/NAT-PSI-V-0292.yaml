@@ -1,0 +1,49 @@
+id: NAT-PSI-V-0292
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: According to the text, what is the monthly rent for a percentage lease with a base rent of
+  $2,500, a percentage rate of 4% applied to gross sales above $50,000, and gross sales of $80,000?
+options:
+  - $5,700.00
+  - $3,700.00
+  - $4,500.00
+  - $2,500.00
+key: B
+explanation: "The rent equals base rent plus the percentage of sales exceeding the breakpoint:
+  $2,500 + 0.04 × ($80,000 − $50,000) = $2,500 + $1,200 = $3,700. The distractor $5,700 results from
+  applying the percentage to total sales without subtracting the breakpoint."
+citation:
+  source: REP Ref. Contracts § 12.3
+  url: null
+  quoted_text: "Percentage lease: rent is a base amount plus a percentage of the tenant's gross sales
+    above a stated breakpoint. Used for retail tenants in shopping centers."
+  secondary: []
+math:
+  worked_solution: |-
+    Subtract breakpoint from gross sales: $80,000 - $50,000 = $30,000
+    Multiply excess by percentage: $30,000 × 0.04 = $1,200
+    Add base rent: $2,500 + $1,200 = $3,700
+  formulas:
+    - Rent = Base Rent + (Percentage Rate × (Gross Sales - Breakpoint))
+  onscreen_calculator_only: false
+terms:
+  - percentage lease
+  - base rent
+  - breakpoint
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

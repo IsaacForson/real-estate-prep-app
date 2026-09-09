@@ -1,0 +1,43 @@
+id: NY-443-0010
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: analysis
+stem: A buyer's agency agreement has already been signed when another agent asks the buyer's agent
+  for a referral fee tied to that agreement. Under Real Property Law § 442-l, when is demanding such
+  a referral fee prohibited?
+options:
+  - Unless the buyer has closed on the property already
+  - Unless reasonable cause exists for the payment
+  - Unless the referral was documented in writing
+  - Unless the referral came from a different firm
+key: B
+explanation: Section 442-l prohibits a broker or salesperson from demanding an after-the-fact
+  referral fee tied to an already-signed agreement unless reasonable cause for that payment exists.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A, § 442-l
+  url: null
+  quoted_text: No real estate broker or salesperson, in any place in which this article is applicable,
+    shall demand or receive a referral fee or compensation of any kind for (i) a referral from any
+    person or other entity relative to finding a seller after a bona fide listing agreement has been
+    signed, (ii) a referral from any person or other entity relative to finding a buyer after a bona
+    fide offer to purchase is accepted, or (iii) a referral from any person or other entity relative
+    to finding a property after a bona fide buyer’s agency agreement has been signed, unless
+    reasonable cause for payment of such compensation exists.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

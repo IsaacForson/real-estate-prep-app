@@ -1,0 +1,43 @@
+id: TX-1101-0017
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: While negotiating a contract using a commission-approved form, a license holder is asked by a
+  principal to explain what a proposed contingency clause would mean for the principal's rights.
+  Under TREC's standard contract form rule, what is the license holder prohibited from doing in
+  response?
+options:
+  - Explaining, without practicing law, the meaning of informational items and choices already
+    contained in the approved form
+  - Advising the principal in writing to consult an attorney before signing the instrument
+  - Drafting or recommending language defining the parties' rights under the contingency clause
+  - Adding informational items to the form as authorized under the commission's rule
+key: C
+explanation: Section 537.11(b)(5) prohibits a license holder from drafting or recommending language
+  affecting the rights, obligations, or remedies of the principals, such as a contingency clause,
+  even while permitted to explain existing form language or recommend an attorney.
+citation:
+  source: 22 Tex. Admin. Code § 537.11
+  url: null
+  quoted_text: |-
+    draft or recommend language to be included in a contract form defining or
+    affecting the rights, obligations, or remedies of the principals of a real estate
+    transaction, including escalation, appraisal, or contingency clauses
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

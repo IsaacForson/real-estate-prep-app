@@ -1,0 +1,39 @@
+id: TX-1101-0008
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A license holder accepts payment from both the buyer and the seller in the same transaction,
+  and neither party knows about the payment from the other. Which outcome does the Texas Occupations
+  Code authorize as a result?
+options:
+  - Transfer of the disputed payments to the sponsoring broker's account
+  - Suspension or revocation of the license holder's license
+  - Automatic reinstatement of the license after a written warning
+  - A mandatory refund limited to whichever payment was received later
+key: B
+explanation: Section 1101.652(b)(8) lists receiving compensation from more than one party to a
+  transaction without the full knowledge and consent of all parties as a ground on which the
+  commission may suspend or revoke the license holder's license.
+citation:
+  source: Tex. Occ. Code § 1101.652
+  url: null
+  quoted_text: (8) receives compensation from more than one party to a real estate transaction without
+    the full knowledge and consent of all parties to the transaction;
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

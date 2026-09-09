@@ -1,0 +1,44 @@
+id: ME-114-0010
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: "A designated broker's license is suspended while several sales agents remain affiliated with
+  the agency. Under 32 M.R.S. § 13182, the effect on those agents' licenses is that:"
+options:
+  - Each agent may keep working normally until their own license expires
+  - Every license granted through that agency is automatically voided
+  - Each agent has to personally request a commission hearing to keep working
+  - Just the broker's license is affected, and not the agents' licenses
+key: B
+explanation: Section 13182 provides that the suspension, revocation or expiration of an agency or
+  designated broker's license automatically voids every license granted to a person through
+  employment by that agency.
+citation:
+  source: 32 M.R.S. § 13182
+  url: null
+  quoted_text: >-
+    The suspension, revocation or expiration of an agency or designated broker's license
+    automatically
+
+    voids every license granted to any person by virtue of the person's employment by the agency
+    whose
+
+    license has been suspended, revoked or expired
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

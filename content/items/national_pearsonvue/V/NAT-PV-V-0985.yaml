@@ -1,0 +1,42 @@
+id: NAT-PV-V-0985
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A loan officer at a bank denies a mortgage application from an applicant because the
+  applicant is of a particular national origin. The loan in question is insured by the Federal
+  Housing Administration. Under Executive Order 11063, the loan officer's action is:"
+options:
+  - The action is permissible because the decision is based on creditworthiness
+  - The action is permissible because the applicant can seek other financing
+  - The action is prohibited only if the loan is for a multifamily property
+  - The action is prohibited because it discriminates based on national origin
+key: D
+explanation: Because the loan is federally insured, the order prohibits discrimination in lending
+  based on national origin. Denying the loan for that reason is therefore prohibited. The action is
+  not permissible merely because the applicant could seek other financing.
+citation:
+  source: "### 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866
+    — property rights of citizens Sec. 101(b)"
+  url: null
+  quoted_text: because of race, color, religion (creed), sex, disability, familial status or national origin
+  secondary: []
+terms:
+  - executive order
+  - lending practice
+  - national origin
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

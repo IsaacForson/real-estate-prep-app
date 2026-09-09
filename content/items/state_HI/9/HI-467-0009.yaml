@@ -1,0 +1,40 @@
+id: HI-467-0009
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "9"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A Hawaii broker-in-charge receives a client's rental deposit on Monday morning but does not
+  deposit it into the trust fund account until the following Thursday, with no escrow arrangement in
+  place. Which conclusion follows from the trust fund rule?
+options:
+  - The broker-in-charge complied since the delay was brief
+  - The broker-in-charge complied because deposits are exempt
+  - The broker-in-charge broke the next-day deposit rule
+  - The broker-in-charge broke the rule since it was paid in cash
+key: C
+explanation: A brokerage firm must deposit trust funds it receives into a trust fund account or a
+  neutral escrow depository by the next business day following their receipt, so waiting several
+  days breaches that deadline.
+citation:
+  source: Haw. Admin. Rules § 16-99-4
+  url: null
+  quoted_text: Every brokerage firm shall deposit or place trust funds received into a neutral escrow
+    depository or in a trust fund account with some bank or recognized depository, which is
+    federally insured, by the next business day following their receipts.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

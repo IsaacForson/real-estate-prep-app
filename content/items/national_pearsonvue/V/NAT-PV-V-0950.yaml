@@ -1,0 +1,41 @@
+id: NAT-PV-V-0950
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which agency is authorized to issue a complaint alleging a violation of Sherman Act sections
+  13, 14, 18, or 19 for all other character of commerce?
+options:
+  - Secretary of Transportation
+  - Surface Transportation Board
+  - Federal Communications Commission
+  - Federal Trade Commission
+key: D
+explanation: Subsection (a) vests enforcement authority in the Federal Trade Commission for all
+  other character of commerce, whereas the other agencies listed have jurisdiction only over
+  specific types of carriers. Thus the FTC is the correct agency; the others apply to different
+  sectors.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) § 21
+  url: null
+  quoted_text: in the Federal Trade Commission where applicable to all other character of commerce
+  secondary: []
+terms:
+  - complaint
+  - enforcement
+  - Federal Trade Commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: AR-42-0028
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum validity period for a temporary interim license in Arkansas?
+options:
+  - (45) days
+  - (90) days
+  - (60) days
+  - (30) days
+key: D
+explanation: Rule 7.2 states that a temporary interim license shall be valid for a period of not
+  more than thirty (30) days. Therefore, the maximum allowable period is thirty days. The option
+  stating forty‑five days is incorrect because the rule does not permit a temporary license to
+  exceed thirty days.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 7.2
+  url: null
+  quoted_text: temporary interim license shall be valid for a period of not more than thirty (30) days.
+  secondary: []
+terms:
+  - temporary license
+  - validity period
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

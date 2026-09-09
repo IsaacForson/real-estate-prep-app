@@ -1,0 +1,38 @@
+id: OH-4735-0010
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A broker rents a post office box, lists it as the only business address on file with the
+  division, and conducts all client meetings elsewhere without a fixed office. How does this
+  arrangement measure against the location requirement of R.C. 4735.13?
+options:
+  - It satisfies the requirement as long as annual license fees are paid
+  - It fails because a post office box is not a definite place of business
+  - It satisfies the requirement because the box is registered with the division
+  - It fails because the broker also lacks a sign at the mailbox location
+key: B
+explanation: R.C. 4735.13 requires a broker to maintain a definite place of business and expressly
+  states that a post office box address is not a definite place of business for purposes of the
+  section.
+citation:
+  source: Ohio Rev. Code § 4735.13
+  url: null
+  quoted_text: A post office box address is not a definite place of business for purposes of this section.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

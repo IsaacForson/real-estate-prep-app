@@ -1,0 +1,43 @@
+id: NAT-PV-V-0945
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Executive Order 11063, within how many days must each federal department submit a report
+  to the President's Committee on Equal Opportunity in Housing outlining its programs affected by
+  the order?
+options:
+  - 30 days
+  - 60 days
+  - 10 days
+  - 20 days
+key: A
+explanation: The order directs each department to submit the report within thirty days from the date
+  of the order. Therefore, the correct period is 30 days. Shorter or longer periods do not match the
+  directive.
+citation:
+  source: "### 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866
+    — property rights of citizens Executive Order 11063 Sec. 201"
+  url: null
+  quoted_text: within thirty days from the date of this order, a report outlining all current programs
+    administered by it which are affected by this order.
+  secondary: []
+terms:
+  - report
+  - day
+  - committee
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

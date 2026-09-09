@@ -1,0 +1,39 @@
+id: NAT-PV-VI-0980
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee discovers a leaking underground storage tank on a property. Under CERCLA, which
+  statement is correct regarding whether the tank qualifies as a 'facility'?
+options:
+  - The tank is a facility because it is a storage container
+  - The tank is not a facility because it is underground
+  - The tank is a facility only if it contains hazardous substances
+  - The tank is not a facility because it is not a building
+key: A
+explanation: The definition of facility includes any storage container, so the tank qualifies as a
+  facility. The facility definition does not require the container to hold hazardous substances.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601
+  url: null
+  quoted_text: storage container, motor vehicle, rolling stock, or aircraft
+  secondary: []
+terms:
+  - facility
+  - storage container
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

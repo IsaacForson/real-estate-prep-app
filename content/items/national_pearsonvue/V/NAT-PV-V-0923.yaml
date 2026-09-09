@@ -1,0 +1,49 @@
+id: NAT-PV-V-0923
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker reimburses licensees for advertising expenses they incur while working on listings.
+  Under the federal statutory safe harbor for licensed real estate agents, can the broker treat the
+  licensees as independent contractors for federal tax purposes?
+options:
+  - The broker can treat the licensees as independent contractors because reimbursing expenses is
+    permitted
+  - The broker cannot treat the licensees as independent contractors because reimbursing expenses is
+    inconsistent with the safe harbor
+  - The broker can treat the licensees as independent contractors if the reimbursement is less than
+    10% of commissions
+  - The broker cannot treat the licensees as independent contractors unless a written contract
+    states otherwise
+key: B
+explanation: The safe harbor explicitly states that brokers who wish to preserve independent
+  contractor status should avoid reimbursing expenses, as such conduct is inconsistent with the
+  status. Reimbursing expenses therefore jeopardizes the broker’s ability to treat licensees as
+  independent contractors. The distractor claiming reimbursement is permitted is incorrect because
+  the rule prohibits it to maintain the safe harbor.
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: Brokers who wish to preserve independent contractor status should avoid conduct
+    inconsistent with it — setting mandatory hours, paying salaries or hourly wages, or reimbursing
+    expenses — beyond what license law supervision requires.
+  secondary: []
+terms:
+  - reimbursement
+  - independent contractor
+  - safe harbor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

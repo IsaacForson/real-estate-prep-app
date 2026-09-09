@@ -1,0 +1,47 @@
+id: NAT-PSI-VII-0390
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee hires a contractor to remove soil contaminated with a hazardous substance from a
+  property. The contractor later disposes of the soil at an unlicensed site, causing a release.
+  Under CERCLA § 9607(a)(3), the licensee may be held liable because:"
+options:
+  - The licensee arranged for disposal or treatment of the hazardous substance.
+  - The licensee possessed the property from which the contaminated soil was removed.
+  - The licensee neglected to verify the contractor's disposal site credentials.
+  - The licensee was aware that the contractor planned to dispose of the soil elsewhere.
+key: A
+explanation: Subsection (a)(3) imposes liability on any person who arranges for disposal or
+  treatment of hazardous substances, regardless of ownership or knowledge. The licensee’s role as
+  arranger triggers liability; failure to supervise or actual knowledge are not required for this
+  basis of liability.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(a)(3)
+  url: null
+  quoted_text: (3) any person who by contract, agreement, or otherwise arranged for disposal or
+    treatment, or arranged with a transporter for transport for disposal or treatment, of hazardous
+    substances owned or possessed by such person, by any other party or entity, at any facility or
+    incineration vessel owned or operated by another party or entity and containing such hazardous
+    substances,
+  secondary: []
+terms:
+  - arranger
+  - liability
+  - hazardous substance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

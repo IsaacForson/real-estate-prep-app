@@ -1,0 +1,38 @@
+id: RI-5-0012
+jurisdiction: RI
+bank: state_RI
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A seller asks a broker to list a home with instructions that the broker may keep, as
+  commission, any sale proceeds above a set net amount to the seller. What must the broker do under
+  Rhode Island's regulation?
+options:
+  - Accept the arrangement if the seller signs a waiver
+  - Decline the arrangement because net listings are prohibited
+  - Decline the arrangement unless the Department pre-approves it
+  - Accept the arrangement through a licensed appraiser
+key: B
+explanation: Section 2.26 bans net listing contracts outright, so the broker must decline the
+  seller's proposed fee structure regardless of any waiver or approval.
+citation:
+  source: 230-RICR-30-20-2 § 2.26
+  url: null
+  quoted_text: No licensee shall enter into a “net listing” contract for the sale of real property, or
+    any interest therein.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: NAT-PSI-VI-0304
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the duty of confidentiality, which of the following is **NOT** considered protected
+  information that an agent must **NOT** reveal without principal authorization?
+options:
+  - The material facts about the property's physical condition.
+  - The seller's willingness to accept less than list price.
+  - The seller's reason for selling, such as divorce or job relocation.
+  - The buyer's maximum price or urgency to close quickly.
+key: A
+explanation: The duty of confidentiality protects information that could weaken the principal's
+  bargaining position, such as the seller's willingness to accept less than list price, the reason
+  for selling, and the buyer's maximum price or urgency. However, confidentiality does not cover
+  material facts about the property's physical condition or legal status that the law requires to be
+  disclosed to the other party. Therefore, material facts about the property's physical condition
+  are not protected information.
+citation:
+  source: REP Ref. Agency § 5.5
+  url: null
+  quoted_text: Confidentiality does not cover material facts about the property's physical condition
+    or legal status that the law requires to be disclosed to the other party
+  secondary: []
+terms:
+  - confidentiality
+  - material fact
+  - protected information
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

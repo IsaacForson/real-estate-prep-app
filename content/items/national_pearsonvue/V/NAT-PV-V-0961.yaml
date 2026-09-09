@@ -1,0 +1,53 @@
+id: NAT-PV-V-0961
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A 15-unit apartment building rents for $1,000 per unit per month. Vacancy and collection loss
+  is 5%, other income is $2,000 per year, and operating expenses are $90,000 per year. What is the
+  net operating income?
+options:
+  - $73,000
+  - $83,000
+  - $103,000
+  - $93,000
+key: B
+explanation: Net operating income equals effective gross income minus operating expenses. Effective
+  gross income is potential gross income ($180,000) minus vacancy and collection loss ($9,000) plus
+  other income ($2,000) = $173,000. Subtracting operating expenses ($90,000) yields $83,000. The
+  distractor $73,000 results from subtracting vacancy loss but forgetting to add other income.
+citation:
+  source: REP Ref. Brokerage Practice § 12.3
+  url: null
+  quoted_text: net operating income (effective gross income minus operating expenses, before debt
+    service and income taxes).
+  secondary: []
+math:
+  worked_solution: |-
+    Potential gross income = 15 units × $1,000/month × 12 months = $180,000
+    Vacancy and collection loss = 5% × $180,000 = $9,000
+    Effective gross income = $180,000 − $9,000 + $2,000 = $173,000
+    Net operating income = $173,000 − $90,000 = $83,000
+  formulas:
+    - Potential Gross Income = Units × Rent per unit × Months
+    - Effective Gross Income = Potential Gross Income − Vacancy and Collection Loss + Other Income
+    - Net Operating Income = Effective Gross Income − Operating Expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - effective gross income
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

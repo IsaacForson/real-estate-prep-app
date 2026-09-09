@@ -1,0 +1,36 @@
+id: ND-23-0020
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A broker considers opening an interest-bearing account for client trust funds so the interest
+  can offset banking fees. Under North Dakota rule 70-02-01-15, is this arrangement permitted?
+options:
+  - No, because trust accounts are required to be noninterest bearing
+  - Yes, if the broker fully discloses the arrangement to the commission
+  - Yes, if interest earned is shared equally among the clients
+  - No, unless the depository bank waives its standard fees
+key: A
+explanation: Rule 70-02-01-15 requires that all trust accounts maintained by a broker be noninterest
+  bearing, so an interest-bearing trust account is not permitted regardless of disclosure.
+citation:
+  source: N.D. Admin. Code § 70-02-01-15
+  url: null
+  quoted_text: All trust accounts must be noninterest bearing.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

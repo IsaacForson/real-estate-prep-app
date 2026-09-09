@@ -1,0 +1,42 @@
+id: AR-42-0023
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The commission wishes to inform the public about disciplinary actions. Under which authority
+  may it release the names of sanctioned individuals?
+options:
+  - Publishing the names of all persons sanctioned under § 17-42-312 in writing or electronic format.
+  - Publishing the annual financial audit of the commission in writing or electronic format.
+  - Publishing the minutes of every commission meeting in writing or electronic format.
+  - Publishing the list of active licensees in writing or electronic format.
+key: A
+explanation: Section 17-42-203(e)(2) expressly permits the commission to publish in writing or
+  electronic format the names of persons sanctioned under § 17-42-312. The other options describe
+  publications not authorized by this subsection.
+citation:
+  source: Ark. Code Ann. § 17-42-203
+  url: null
+  quoted_text: (2) May publish in writing or in electronic format the names of all persons who have
+    been sanctioned under § 17-42-312 or by consent order, together with other information relative
+    to the enforcement of the provisions of this chapter as it may deem of interest to the public.
+  secondary: []
+terms:
+  - publication
+  - sanction
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

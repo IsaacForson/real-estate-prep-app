@@ -1,0 +1,42 @@
+id: NAT-PV-V-0926
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits earnest money received from a buyer into the firm's operating account to
+  cover office expenses. Which violation does this represent under trust account rules?
+options:
+  - The action constitutes commingling of trust funds
+  - The action constitutes conversion of trust funds
+  - The action constitutes both commingling and conversion
+  - The action constitutes neither commingling nor conversion
+key: A
+explanation: Commingling occurs when trust money is mixed with the broker's own funds, such as
+  depositing earnest money into the operating account. Conversion involves using trust money for an
+  unauthorized purpose; here the money is merely deposited incorrectly, not yet used for another
+  purpose, so it is commingling only.
+citation:
+  source: REP Ref. Brokerage Practice § 10.2
+  url: null
+  quoted_text: "**Commingling** is mixing trust money with the broker's own — depositing earnest money
+    to the operating account"
+  secondary: []
+terms:
+  - commingling
+  - trust account
+  - earnest money
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

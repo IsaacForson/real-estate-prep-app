@@ -1,0 +1,42 @@
+id: NAT-PSI-VII-0414
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to CERCLA, which of the following is included in the definition of 'release'?
+options:
+  - Release of source material from a nuclear incident.
+  - Spilling of a hazardous substance onto the soil.
+  - Normal application of fertilizer to a residential lawn.
+  - Emissions from the engine exhaust of a motor vehicle.
+key: B
+explanation: Under CERCLA, the term 'release' includes spilling, leaking, pumping, pouring,
+  emitting, emptying, discharging, injecting, escaping, leaching, dumping, or disposing into the
+  environment. Therefore, spilling of a hazardous substance onto the soil qualifies as a release.
+  Emissions from engine exhaust, normal fertilizer application, and nuclear material releases
+  subject to NRC financial protection are explicitly excluded from the definition.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601(22)
+  url: null
+  quoted_text: The term 'release' means any spilling, leaking, pumping, pouring, emitting, emptying,
+    discharging, injecting, escaping, leaching, dumping, or disposing into the environment
+  secondary: []
+terms:
+  - release
+  - hazardous substance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

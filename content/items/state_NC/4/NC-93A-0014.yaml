@@ -1,0 +1,39 @@
+id: NC-93A-0014
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "4"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a fully executed lease, and the tenant client requests a copy of it the same
+  week. Under 21 NCAC 58A .0106(a), by when must the broker deliver a copy of the lease to the
+  client?
+options:
+  - Within thirty days of the lease's start date
+  - Within three days of receiving the client's request
+  - After the security deposit is fully collected and cleared
+  - At the end of the current lease term
+key: B
+explanation: Rule.0106(a) requires a broker to deliver a copy of a lease or other related
+  transaction document within three days of receiving a request from the customer or client.
+citation:
+  source: 21 NCAC 58A Rule .0106(a)
+  url: null
+  quoted_text: every broker shall deliver a copy of any written agency agreement, contract, offer,
+    lease, rental agreement, option, or other related transaction document to their customer or
+    client within three days of the broker's receipt of the executed document.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

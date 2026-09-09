@@ -1,0 +1,40 @@
+id: ND-23-0009
+jurisdiction: ND
+bank: state_ND
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee repeats a misrepresentation that the client originally made, and the client had no
+  way of knowing the statement was false. Under N.D. Cent. Code § 43-23-12.2, is the client shielded
+  from liability for that misrepresentation?
+options:
+  - Yes, because a court may not hold a client liable for a licensee's acts
+  - No, because a subagency relationship removes a client's liability protection
+  - Yes, because the statute protects clients from a licensee's statements
+  - No, because the licensee is repeating a misrepresentation the client made
+key: D
+explanation: Section 43-23-12.2 removes a client's liability shield when the licensee is only
+  repeating a misrepresentation that the client itself made in the transaction.
+citation:
+  source: N.D. Cent. Code § 43-23-12.2
+  url: null
+  quoted_text: |-
+    unless the client knows or should have known of the wrongful act, error, omission, or
+    misrepresentation or unless the licensee is repeating a misrepresentation made by the
+    client.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

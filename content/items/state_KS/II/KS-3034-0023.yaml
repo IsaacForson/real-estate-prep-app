@@ -1,0 +1,42 @@
+id: KS-3034-0023
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Kansas Real Estate Brokers' and Salespersons' License Act, which entity is
+  prohibited from being granted a real estate license?
+options:
+  - An individual licensed as an associate broker
+  - A limited liability company
+  - An individual licensed as a broker
+  - An individual licensed as a salesperson
+key: B
+explanation: Kansas Statute Ann. § 58-3042(b) explicitly states that no license shall be granted to
+  a limited liability company. Licenses are issued only to individuals, such as brokers,
+  salespersons, and associate brokers, who must then be employed by or associated with the entity to
+  perform licensed acts.
+citation:
+  source: Kan. Stat. Ann. § 58-3042(b)
+  url: null
+  quoted_text: No license shall be granted to an association, corporation, limited liability company,
+    limited liability partnership, partnership or professional corporation.
+  secondary: []
+terms:
+  - license
+  - limited liability company
+  - individual
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

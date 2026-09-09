@@ -1,0 +1,41 @@
+id: NJ-1-0005
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A former real estate instructor whose license was revoked wants to work as an office manager
+  at a licensed real estate school for a modest salary. Based on N.J. Stat. Ann. § 45:15-10.12, is
+  this arrangement permitted?
+options:
+  - Yes, provided the person avoids any ownership stake in the school
+  - No, a revoked licensee cannot be employed by a licensed school
+  - Yes, provided the salary stays below a set annual threshold
+  - No, unless the revocation occurred more than five years earlier
+key: B
+explanation: Section 45:15-10.12 bars a person whose license has been revoked from being retained,
+  employed, or compensated in any capacity by a licensed real estate school during the period of
+  revocation.
+citation:
+  source: N.J. Stat. Ann. § 45:15-10.12
+  url: null
+  quoted_text: A person whose license has been revoked pursuant to section 54 of P.L.1993, c.51
+    (C.45:15-10.11) shall not be a general partner, officer, director or owner, either directly or
+    indirectly, of a controlling interest in any licensed school, nor shall the person be retained
+    or employed in any capacity, or compensated in any manner by a licensed school
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

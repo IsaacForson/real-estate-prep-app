@@ -1,0 +1,37 @@
+id: NY-443-0005
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker collects rent payments on behalf of a property owner client. Under 19 NYCRR § 175.2,
+  when must the broker render an account and remit any unexpended funds collected for the client?
+options:
+  - Within a reasonable time
+  - Within ten business days of collection
+  - Within thirty days of each payment
+  - At the close of the broker's fiscal year
+key: A
+explanation: The regulation requires a broker to render an account and remit unexpended client funds
+  within a reasonable time, rather than on any fixed periodic schedule.
+citation:
+  source: 19 N.Y.C.R.R. § 175.2
+  url: null
+  quoted_text: A real estate broker shall, within a reasonable time, render an account to this client
+    and remit to him, any monies collected for his client, and unexpended for his account.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

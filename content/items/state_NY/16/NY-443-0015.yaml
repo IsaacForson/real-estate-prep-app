@@ -1,0 +1,37 @@
+id: NY-443-0015
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "16"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: While auditing a real estate school's syllabus for compliance with 19 NYCRR § 176.3, an
+  examiner finds the class allotted only three hours to Human Rights and Fair Housing. How many
+  hours does the regulation actually require for that subject?
+options:
+  - Six hours
+  - Three hours
+  - Five hours
+  - Two hours
+key: A
+explanation: Section 176.3 requires six hours of instruction in Human Rights and Fair Housing in the
+  salesperson prelicensing course, so a three-hour allotment falls short of the standard.
+citation:
+  source: 19 N.Y.C.R.R. § 176.3
+  url: null
+  quoted_text: Human Rights and Fair Housing 6
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

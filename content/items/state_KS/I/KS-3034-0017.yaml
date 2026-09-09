@@ -1,0 +1,44 @@
+id: KS-3034-0017
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A supervising broker's license is revoked, and the commission issues written notice to the
+  salespersons associated with that broker, none of whom has yet transferred to another broker. What
+  happens to their licenses under Kansas law?
+options:
+  - They are automatically revoked along with the supervising broker's license, effective immediately
+  - They are automatically placed on inactive status within five calendar days of the notice
+  - They remain fully active until each salesperson's next scheduled renewal date
+  - They are automatically upgraded to independent broker status without any commission review
+key: B
+explanation: K.S.A. 58-3081(a) provides that when a supervising broker's license is suspended or
+  revoked, the licenses of associated licensees are automatically placed on inactive status within
+  five calendar days after the commission issues written notice, unless the licensee transfers to or
+  is already associated with another broker.
+citation:
+  source: Kan. Stat. Ann. § 58-3081
+  url: null
+  quoted_text: the licenses of all licensees associated with or employed by the supervising broker or
+    branch broker shall automatically be placed on inactive status within five calendar days after
+    written notice is issued by the commission to the associated or employed licensee for the
+    duration of the suspension or revocation, unless the licensee transfers to another supervising
+    broker or branch broker or the licensee is currently associated or employed with another broker.
+  secondary: []
+terms:
+  - inactive status
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

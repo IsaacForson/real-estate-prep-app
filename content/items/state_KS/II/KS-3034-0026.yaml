@@ -1,0 +1,41 @@
+id: KS-3034-0026
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a Kansas real estate license is charged a fee for fingerprinting. To which
+  fund must the commission deposit the money collected under this fee?
+options:
+  - Kansas Real Estate Education Fund
+  - Background investigation fee fund
+  - General commission operating fund
+  - License renewal fund
+key: D
+explanation: Section 58-3039(b)(2) directs that monies collected for fingerprinting be deposited in
+  the state treasury and credited to the background investigation fee fund. The other funds are not
+  mentioned for this purpose.
+citation:
+  source: Kan. Stat. Ann. § 58-3039
+  url: null
+  quoted_text: Any moneys collected under this subsection shall be deposited in the state treasury and
+    credited to the background investigation fee fund.
+  secondary: []
+terms:
+  - fee
+  - fingerprinting
+  - deposit
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

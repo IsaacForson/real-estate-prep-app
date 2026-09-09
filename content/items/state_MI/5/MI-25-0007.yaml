@@ -1,0 +1,43 @@
+id: MI-25-0007
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Michigan lender secures a loan with a first lien on a single-family owner-occupied dwelling
+  under Mich. Comp. Laws § 438.31c. Which practice regarding prepayment is prohibited?
+options:
+  - Disclosing the prepayment terms in writing at the loan closing
+  - Allowing prepayment in full at any time without charging any penalty
+  - Charging a prepayment penalty of exactly 1% of the prepayment made within 3 years of the loan
+    date
+  - Charging a prepayment penalty exceeding 1% of the prepayment made within 3 years of the loan date
+key: D
+explanation: The statute caps a prepayment penalty at 1% of the prepayment amount within the first 3
+  years of the loan and bars any prepayment penalty after that period, so a lender may not charge
+  more than the statutory limit.
+citation:
+  source: Mich. Comp. Laws § 438.31c
+  url: null
+  quoted_text: >-
+    Charge a prepayment fee or penalty in excess of 1% of the amount of any prepayment made within 3
+    years of
+
+    the date of the loan, or any prepayment fee or penalty at all thereafter, or prohibit prepayment
+    at any time.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

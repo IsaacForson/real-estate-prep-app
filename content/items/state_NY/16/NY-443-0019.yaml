@@ -1,0 +1,41 @@
+id: NY-443-0019
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "16"
+vendor: state
+license_level: both
+cognitive_level: analysis
+stem: A broker's agent helps a buyer's agent locate a property but has no direct relationship with
+  the buyer. Under Real Property Law § 443, if the broker's agent acts negligently, who bears
+  liability for those acts?
+options:
+  - The buyer's agent who directed and instructed the broker's agent
+  - The seller's agent, because the transaction ultimately affects the seller
+  - The buyer, because the broker's agent worked to find the buyer's property
+  - The broker's agent alone, regardless of who gave instructions
+key: A
+explanation: Because the buyer, seller, landlord, and tenant have no vicarious liability for a
+  broker's agent's acts, the statute places that liability on the listing agent, buyer's agent, or
+  tenant's agent who directed the broker's agent.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A, § 443
+  url: null
+  quoted_text: Therefore, the seller, buyer, landlord or tenant do not have vicarious liability for
+    the acts of the broker’s agent. The listing agent, buyer’s agent or tenant’s agent do provide
+    direction and instruction to the broker’s agent and therefore the listing agent, buyer’s agent
+    or tenant’s agent will have liability for the broker’s agent.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

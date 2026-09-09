@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0307
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer and seller have signed a purchase agreement and completed the closing, transferring
+  the deed and paying the price. According to the text, what is the contract best described as?
+options:
+  - The executory contract
+  - The voidable contract
+  - The executed contract
+  - The unenforceable contract
+key: C
+explanation: The text clarifies that 'executed' in the exam context means 'fully performed,'
+  referring to a contract where all obligations have been satisfied. Since the closing has occurred
+  and the deed and price have been exchanged, the contract is fully performed. Thus, it is best
+  described as executed. An executory contract would have pending performance, while voidable and
+  unenforceable contracts involve distinct defects not present after full performance.
+citation:
+  source: REP Ref. Contracts § 13.1
+  url: null
+  quoted_text: exam usage is 'fully performed.'
+  secondary: []
+terms:
+  - executed
+  - performance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

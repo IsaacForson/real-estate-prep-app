@@ -1,0 +1,42 @@
+id: NAT-PV-I-0868
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homeowner installs a central air conditioning unit that is wired into the electrical system
+  and cemented into the floor. The home is later sold, and the purchase contract is silent about the
+  unit. According to the REP Ref. Property & Land Use, what is the status of the air conditioning
+  unit?
+options:
+  - It remains personal property because it can be unplugged.
+  - It is a fixture and passes with the real estate.
+  - It is emblements and may be removed by the homeowner after sale.
+  - It is a trade fixture and remains the homeowner's personal property.
+key: B
+explanation: The unit is attached with methods (wired, cemented) indicating intent to remain, making
+  it a fixture that passes with the real estate absent a contract exclusion. It is not a trade
+  fixture because it is not used for a business, nor emblements which apply to crops.
+citation:
+  source: REP Ref. Property & Land Use § 1.3
+  url: null
+  quoted_text: A fixture is an item that began as personal property and became real property by being
+    attached to land or a building with the intent that it remain.
+  secondary: []
+terms:
+  - fixture
+  - personal property
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

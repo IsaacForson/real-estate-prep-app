@@ -1,0 +1,36 @@
+id: MA-87D-0016
+jurisdiction: MA
+bank: state_MA
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A court finds for a consumer under M.G.L. c. 93A, § 9, but the consumer's actual damages turn
+  out to be very small. Under § 9, how is the consumer's recovery set in that situation?
+options:
+  - Recovery is capped at half of the demand letter amount
+  - Recovery is limited strictly to the consumer's filing fee
+  - Recovery is set at actual damages or twenty-five dollars
+  - Recovery is denied because damages are below a set floor
+key: C
+explanation: Section 9 provides that where the court finds for the petitioner, recovery is set at
+  the amount of actual damages or twenty-five dollars, whichever amount is greater.
+citation:
+  source: M.G.L. c. 93A, § 9
+  url: null
+  quoted_text: recovery shall be in the amount of actual damages or twenty-five dollars, whichever is greater
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

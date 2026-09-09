@@ -1,0 +1,46 @@
+id: NAT-PV-IV-0909
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A purchase agreement for a residential property includes a 'time is of the essence' clause
+  specifying that closing must occur on July 15. The buyer fails to deliver the purchase funds by
+  that date. Under general contract principles, what is the likely result?
+options:
+  - The buyer may request a reasonable extension of the closing date
+  - The contract stays enforceable and closing must occur within a reasonable time
+  - The seller may treat the contract as terminated and pursue remedies
+  - The seller must accept late performance and waive all penalty claims
+key: C
+explanation: A 'time is of the essence' clause makes contractual deadlines strict; missing the
+  deadline constitutes a breach allowing the other party to treat the contract as terminated and
+  pursue remedies. Without such clause, courts might allow performance within a reasonable time, but
+  the clause overrides that leniency. Therefore, the seller is not obligated to accept late
+  performance.
+citation:
+  source: "REP Ref. Contracts — Reference note: contract law, purchase agreements, leases, remedies
+    (authored, status: draft — needs licensed review) § 4.3"
+  url: null
+  quoted_text: "A 'time is of the essence' clause makes stated deadlines strict: a party who misses a
+    deadline is in breach and the other party may pursue remedies or, if the contract so provides,
+    treat the contract as terminated."
+  secondary: []
+terms:
+  - time is of the essence
+  - breach
+  - remedies
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

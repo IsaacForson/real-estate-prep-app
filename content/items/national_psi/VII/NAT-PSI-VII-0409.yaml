@@ -1,0 +1,46 @@
+id: NAT-PSI-VII-0409
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A regulated lending institution purchases flood insurance on behalf of a borrower for a loan
+  that requires flood insurance. According to 42 U.S.C. § 4012a(f)(6), how is the lender treated
+  with respect to compliance with the regulations issued under subsection (b)?
+options:
+  - The lender is exempt from any penalty under subsection (f) regardless of compliance.
+  - The lender is considered to have complied with the regulations issued under subsection (b).
+  - The lender is considered to have violated the regulations issued under subsection (b).
+  - The lender must obtain a separate waiver to be considered compliant.
+key: B
+explanation: Subsection (f)(6) provides that a regulated lending institution that purchases flood
+  insurance on behalf of a borrower shall be considered to have complied with the regulations issued
+  under subsection (b). Thus, the lender is deemed compliant. The option stating violation
+  contradicts the explicit language, the waiver option adds a requirement not present, and the
+  exemption option misstates the rule.
+citation:
+  source: 42 U.S.C. § 4012a(f)(6)
+  url: null
+  quoted_text: Notwithstanding any State or local law, for purposes of this subsection, any regulated
+    lending institution that purchases flood insurance or renews a contract for flood insurance on
+    behalf of or as an agent of a borrower of a loan for which flood insurance is required shall be
+    considered to have complied with the regulations issued under subsection (b).
+  secondary: []
+terms:
+  - lender
+  - compliance
+  - flood insurance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

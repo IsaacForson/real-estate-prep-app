@@ -1,0 +1,41 @@
+id: KS-3034-0008
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Maria holds a broker's license but works under another broker as an independent contractor,
+  performing the sales activities the act assigns to a broker. What is Maria's status under Kansas
+  law?
+options:
+  - An associate broker under the license act
+  - A branch broker under the license act
+  - A salesperson under the license act
+  - A supervising broker under the license act
+key: A
+explanation: K.S.A. 58-3035(c) defines an associate broker as an individual who has a broker's
+  license and who is employed by, or associated as an independent contractor with, another broker
+  while participating in the activities described for a broker.
+citation:
+  source: Kan. Stat. Ann. § 58-3035
+  url: null
+  quoted_text: an individual who has a broker's license and who is employed by another broker or is
+    associated with another broker as an independent contractor and participates in any activity
+    described in subsection (f).
+  secondary: []
+terms:
+  - associate broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

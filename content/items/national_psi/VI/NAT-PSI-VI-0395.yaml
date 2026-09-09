@@ -1,0 +1,41 @@
+id: NAT-PSI-VI-0395
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After the agency relationship ends, the former listing agent must continue to do which of the
+  following?
+options:
+  - The agent must account for any funds already received
+  - The agent must maintain loyalty to the former client
+  - The agent must keep confidential information secret
+  - The agent must continue to obey the former client’s instructions
+key: A
+explanation: Upon termination, duties of loyalty and obedience end, but the duty to account for
+  money already received continues until the accounting is complete. Confidentiality generally
+  survives, but the question asks specifically about the duty that continues until accounting is
+  finished, which is accounting.
+citation:
+  source: REP Ref. Agency § 4.3
+  url: null
+  quoted_text: Duties of loyalty and obedience end with the relationship; the duty to account for
+    money already received continues until the accounting is complete.
+  secondary: []
+terms:
+  - accounting
+  - termination
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

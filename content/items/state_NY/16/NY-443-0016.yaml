@@ -1,0 +1,37 @@
+id: NY-443-0016
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "16"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker represents both parties in the sale of a five-story commercial office building and
+  wonders whether New York's agency disclosure form statute governs the deal. Under Real Property
+  Law § 443, to what kind of transaction does that section apply?
+options:
+  - Transactions arranged through a multiple listing service only
+  - Transactions involving residential real property only
+  - Transactions involving any commercial or residential property
+  - Transactions involving property valued above a set threshold
+key: B
+explanation: Section 443 states that it applies only to transactions involving residential real
+  property, so a commercial office building sale falls outside its disclosure requirements.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A, § 443
+  url: null
+  quoted_text: This section shall apply only to transactions involving residential real property.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

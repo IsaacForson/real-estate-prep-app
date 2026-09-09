@@ -1,0 +1,52 @@
+id: NAT-PV-III-0916
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A building has a replacement cost new of $350,000, an effective age of 10 years, a total
+  economic life of 50 years, and a land value of $120,000. What is the indicated value using the
+  cost approach (straight-line method)?
+options:
+  - $400,000
+  - $376,000
+  - $470,000
+  - $386,000
+key: A
+explanation: Accrued depreciation is (10/50) × $350,000 = $70,000. Depreciated cost is $350,000 −
+  $70,000 = $280,000. Adding land value of $120,000 gives $400,000. The distractors result from
+  using actual age, omitting depreciation, or applying depreciation to the sum of cost and land.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.5
+  url: null
+  quoted_text: Accrued depreciation = (effective age ÷ total economic life) × cost new; equivalently,
+    annual depreciation = cost new ÷ total economic life.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: accrued depreciation percentage = effective age ÷ total economic life = 10 ÷ 50 = 0.20
+    Step 2: accrued depreciation = $350,000 × 0.20 = $70,000
+    Step 3: depreciated cost of improvements = $350,000 − $70,000 = $280,000
+    Step 4: value indication = depreciated cost + land value = $280,000 + $120,000 = $400,000
+  formulas:
+    - Accrued depreciation = (effective age ÷ total economic life) × cost new
+    - Depreciated cost = cost new − accrued depreciation
+    - Value indication = depreciated cost + land value
+  onscreen_calculator_only: false
+terms:
+  - accrued depreciation
+  - straight-line method
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

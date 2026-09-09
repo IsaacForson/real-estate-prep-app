@@ -1,0 +1,41 @@
+id: VT-2211-0005
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An attorney admitted to practice in Vermont handles the sale of a house while administering a
+  client's estate under court supervision. Does the attorney need a real estate broker license for
+  this sale?
+options:
+  - Yes, because any sale of real estate by an attorney needs a broker license
+  - Yes, because the exemption applies to sales under a set dollar cap
+  - No, because attorneys are exempt after passing the salesperson exam
+  - No, because attorneys handling court-approved estate sales are exempt
+key: D
+explanation: Section 2211 excludes an attorney at law admitted to practice in Vermont who handles
+  sales of real estate in the course of estate administration subject to court approval from the
+  broker definition.
+citation:
+  source: 26 V.S.A. § 2211
+  url: null
+  quoted_text: Any attorney at law, admitted to practice in Vermont, handling sales of real estate in
+    the course of estate or guardianship administration, or trust administration, bankruptcy
+    proceedings, receiverships, or like actions subject to approval by a court of competent
+    jurisdiction, or sales of real estate arising in the usual course of the practice of law.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

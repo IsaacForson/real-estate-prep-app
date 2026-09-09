@@ -1,0 +1,38 @@
+id: DE-2901-0017
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Delaware Real Estate Commission wants to discipline a licensee at a meeting where only 4
+  of the 9 members are present. Under Del. Code Ann. tit. 24, § 2904(c), may the Commission proceed
+  to discipline the licensee at that meeting?
+options:
+  - No, because disciplining a licensee needs at least 5 affirmative votes
+  - Yes, because 4 present members already satisfy the quorum requirement
+  - Yes, because a simple majority of members present can approve discipline
+  - No, because disciplining a licensee needs at least 7 affirmative votes, per Commission policy
+key: A
+explanation: Section 2904(c) requires the affirmative vote of at least 5 members before any licensee
+  may be disciplined, regardless of how many members are needed merely to establish a quorum.
+citation:
+  source: Del. Code Ann. tit. 24, § 2904
+  url: null
+  quoted_text: A majority of members shall constitute a quorum, and no licensee shall be disciplined
+    without the affirmative vote of at least 5 members.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

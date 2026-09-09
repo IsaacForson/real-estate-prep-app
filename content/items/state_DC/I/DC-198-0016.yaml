@@ -1,0 +1,38 @@
+id: DC-198-0016
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A board schedules a disciplinary hearing against a licensee. Under D.C. Code § 47-2853.22, how
+  must the hearing notice be delivered and how far in advance?
+options:
+  - By personal service, at least 10 days before the hearing
+  - By certified mail, at least 15 days before the hearing
+  - By regular mail, at least 15 days before the hearing
+  - By certified mail, at least 30 days before the hearing
+key: B
+explanation: The hearing statute requires notice sent by certified mail to the licensee's last known
+  address no fewer than 15 days before the scheduled hearing.
+citation:
+  source: D.C. Code § 47-2853.22(d)
+  url: null
+  quoted_text: The hearing notice to be given to the person shall be sent by certified mail to the
+    last known address of the person at least 15 days before the hearing, and shall include
+    information on legal resources available in the District.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

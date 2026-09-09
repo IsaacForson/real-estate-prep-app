@@ -1,0 +1,54 @@
+id: NAT-PV-V-0934
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A 15-unit apartment building rents for $1,000 per unit per month. Vacancy and collection loss
+  is 8% of potential gross income, and other income is $2,000 per year. If the management fee is 5%
+  of collected rent, what is the annual management fee?
+options:
+  - $8,280
+  - $8,180
+  - $9,000
+  - $8,380
+key: A
+explanation: The management fee is a percentage of collected rent, which is potential gross income
+  minus vacancy and collection loss. Potential gross income is $180,000; vacancy loss is $14,400;
+  collected rent is $165,600; 5% of that equals $8,280. Using potential gross income instead of
+  collected rent yields $9,000, a common error.
+citation:
+  source: REP Ref. Brokerage Practice § 12.3
+  url: null
+  quoted_text: A management fee of 6% of collected rent ≈ 0.06 × ($288,000 − $17,280) = $16,243 and is
+    included in operating expenses.
+  secondary: []
+math:
+  worked_solution: |-
+    Potential gross income = 15 units × $1,000/unit/month × 12 months = $180,000
+    Vacancy and collection loss = 8% × $180,000 = $14,400
+    Collected rent = $180,000 − $14,400 = $165,600
+    Management fee = 5% × $165,600 = $8,280
+  formulas:
+    - PGI = Units × Rent per unit per month × 12
+    - VCL = PGI × Vacancy rate
+    - CR = PGI − VCL
+    - Management fee = Fee rate × CR
+  onscreen_calculator_only: false
+terms:
+  - management fee
+  - collected rent
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

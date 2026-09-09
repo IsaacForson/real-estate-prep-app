@@ -1,0 +1,38 @@
+id: KS-3034-0014
+jurisdiction: KS
+bank: state_KS
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Kansas real estate commission notifies an applicant that a license application is
+  incomplete and gives the applicant a period to correct the deficiency. What is the minimum period
+  Kansas law requires the commission to allow?
+options:
+  - Not less than 5 business days after the initial notice
+  - Not less than 2 calendar days after the notice
+  - Not less than 10 calendar days after the notice
+  - Not less than 30 calendar days after the notice
+key: C
+explanation: K.S.A. 58-3044(b) defines reasonable time, for purposes of correcting an incomplete
+  application, as not less than 10 calendar days.
+citation:
+  source: Kan. Stat. Ann. § 58-3044
+  url: null
+  quoted_text: For purposes of this paragraph only, reasonable time shall mean not less than 10 calendar days.
+  secondary: []
+terms:
+  - incomplete application
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,38 @@
+id: NM-1-0001
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under 16.61.16.8 NMAC, for how many brokerages may one individual act as qualifying broker at
+  the same time?
+options:
+  - More than one brokerage at once
+  - Three brokerages at the most
+  - A single brokerage at a time
+  - Two affiliated brokerages at once
+key: A
+explanation: The rule states a qualifying broker may serve concurrently as qualifying broker for
+  more than one brokerage, so the role is not limited to a single firm.
+citation:
+  source: 16.61 NMAC § 16.61.16.8
+  url: null
+  quoted_text: A qualifying broker may serve concurrently as a qualifying broker for more than one brokerage.
+  secondary: []
+terms:
+  - qualifying broker
+  - affiliation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

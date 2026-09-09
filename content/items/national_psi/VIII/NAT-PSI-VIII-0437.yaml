@@ -1,0 +1,49 @@
+id: NAT-PSI-VIII-0437
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VIII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property management agreement specifies that the manager receives 7% of the gross collected
+  rent each month plus a leasing fee equal to one month's rent when a new lease is signed. If the
+  monthly rent collected from tenants is $1,800 and a new lease is signed during the month, what is
+  the manager's total compensation for that month?
+options:
+  - The manager's compensation is $2,520
+  - The manager's compensation is $1,926
+  - The manager's compensation is $126
+  - The manager's compensation is $1,800
+key: B
+explanation: The manager's compensation consists of 7% of $1,800 ($126) plus a leasing fee of one
+  month's rent ($1,800), totaling $1,926. The $126 option reflects only the percentage, the $1,800
+  option reflects only the leasing fee, and the $2,520 option incorrectly adds an extra $600.
+citation:
+  source: REP Ref. Brokerage Practice § 3.2
+  url: null
+  quoted_text: the manager's compensation (commonly a percentage of gross collected rent, plus leasing
+    fees and sometimes a fee for supervising major repairs)
+  secondary: []
+math:
+  worked_solution: 7% of $1,800 = 0.07 × 1,800 = $126. Leasing fee = one month's rent = $1,800. Total
+    = $126 + $1,800 = $1,926.
+  formulas:
+    - Compensation = (rent collected × percentage) + leasing fee
+  onscreen_calculator_only: false
+terms:
+  - compensation
+  - percentage
+  - leasing fee
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

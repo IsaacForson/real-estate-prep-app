@@ -1,0 +1,41 @@
+id: NC-93A-0016
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "4"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer and seller ask their broker to fill in the blanks on a preprinted sales contract form
+  using terms they have already negotiated. Under 21 NCAC 58A .0111(a), may the broker do this?
+options:
+  - It is fine if the broker charges an added drafting fee
+  - A licensed attorney is required to complete contract forms
+  - Brokers are barred from handling sales contract documents
+  - Completing this preprinted form as directed is fine
+key: D
+explanation: Rule.0111(a) bars a broker from drafting legal instruments such as contracts or deeds,
+  but expressly allows a broker to complete preprinted offer, contract, or lease forms when
+  authorized or directed to do so by the parties.
+citation:
+  source: 21 NCAC 58A Rule .0111(a)
+  url: null
+  quoted_text: A broker acting as an agent in a real estate transaction shall not draft offers, sales
+    contracts, options, leases, promissory notes, deeds, deeds of trust or other legal instruments
+    by which the rights of others are secured; however, a broker may complete preprinted offers,
+    option contracts, sales contracts or lease forms in a real estate transaction when authorized or
+    directed to do so by the parties.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

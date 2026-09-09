@@ -1,0 +1,40 @@
+id: TN-1973-0009
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A firm completes an online transfer request for an affiliated licensee. The receiving
+  principal broker verified an active license and current insurance beforehand, the submission is
+  complete, and it carries an electronic signature. Which additional fact confirms the transfer is
+  valid?
+options:
+  - the licensee has notified the prior firm by certified mail
+  - the local association of realtors has approved the move
+  - payment for the online submission has been received
+  - the licensee's file has been closed for at least a week
+key: C
+explanation: The rule conditions a valid online transfer on the submission being complete,
+  electronically signed, and accompanied by received payment, along with the broker's prior
+  verification.
+citation:
+  source: Tenn. Comp. R. & Regs. § 1260-02-.02
+  url: null
+  quoted_text: The online submission is complete, the submission contains an electronic signature, and
+    payment has been received.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

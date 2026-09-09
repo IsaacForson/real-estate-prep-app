@@ -1,0 +1,44 @@
+id: NAT-PV-V-0920
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a licensed real estate agent qualifies as a statutory non-employee under the federal
+  statutory safe harbor, who is responsible for paying the agent's self-employment tax?
+options:
+  - The broker
+  - The client
+  - The agent
+  - The state
+key: C
+explanation: Under the federal statutory safe harbor, when all three conditions are met, the broker
+  does not withhold income tax or pay the employer share of employment taxes, and the agent is
+  responsible for self-employment tax and quarterly estimated payments. Therefore, the agent must
+  pay the self-employment tax. The distractor 'The broker' is incorrect because the broker is
+  relieved of paying the employer share of employment taxes under the safe harbor.
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: When all three are present, the broker does not withhold income tax or pay the employer
+    share of employment taxes, and the agent is responsible for self-employment tax and quarterly
+    estimated payments.
+  secondary: []
+terms:
+  - self-employment tax
+  - statutory safe harbor
+  - independent contractor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

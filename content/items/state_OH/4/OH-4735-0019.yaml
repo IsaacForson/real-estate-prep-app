@@ -1,0 +1,36 @@
+id: OH-4735-0019
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two licensees affiliated with the same brokerage each represent a separate client in the same
+  transaction. Under R.C. 4735.72, what duty does each licensee owe regarding whom they serve?
+options:
+  - Serve as the agent for the party who first contacted the brokerage
+  - Serve as the agent for both parties once the transaction is under contract
+  - Act exclusively as agent for the party the licensee agreed to represent
+  - Serve as the agent for whichever party pays the licensee's commission
+key: C
+explanation: R.C. 4735.72 requires each affiliated licensee in that situation to serve as the agent
+  of only the party in the transaction the licensee agreed to represent.
+citation:
+  source: Ohio Rev. Code § 4735.72
+  url: null
+  quoted_text: Serve as the agent of only the party in the transaction the licensee agreed to represent
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

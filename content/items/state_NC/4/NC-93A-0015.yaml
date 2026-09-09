@@ -1,0 +1,40 @@
+id: NC-93A-0015
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "4"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's sales transaction closes and all funds held in connection with it are disbursed on
+  that same day. Under 21 NCAC 58A .0108(a), how long must the broker retain records of that
+  transaction?
+options:
+  - One year from the date the listing agreement expired
+  - Until the buyer sells the property to someone else
+  - Three years from the date the funds were disbursed
+  - Six months from the date the offer was accepted
+key: C
+explanation: Rule.0108(a) requires a broker to retain transaction records for three years after all
+  funds held in connection with the transaction have been disbursed or the transaction concluded,
+  whichever is later.
+citation:
+  source: 21 NCAC 58A Rule .0108(a)
+  url: null
+  quoted_text: The broker shall retain records for three years after all funds held by the broker in
+    connection with the transaction have been disbursed to the proper party or parties or the
+    conclusion of the transaction, whichever occurs later.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

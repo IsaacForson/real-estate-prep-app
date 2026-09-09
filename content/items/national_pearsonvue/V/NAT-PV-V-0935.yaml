@@ -1,0 +1,39 @@
+id: NAT-PV-V-0935
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under an exclusive agency listing, if another broker (**NOT** the listing broker) procures the
+  buyer, who is owed the commission?
+options:
+  - The commission is shared equally by both brokers
+  - The listing broker for the transaction
+  - The commission is not owed to any broker
+  - The procuring broker only for the sale
+key: B
+explanation: The listing broker earns a commission if the property is sold by any broker, including
+  another broker, under an exclusive agency agreement. The procuring broker distractor is incorrect
+  because the listing broker, not the procuring broker, receives the commission in this scenario.
+citation:
+  source: REP Ref. Brokerage Practice § 2.3 Exclusive agency listing
+  url: null
+  quoted_text: The seller appoints one broker as the exclusive agent for the term, and owes that
+    broker a commission if the property is sold by the broker *or by any other broker*;
+  secondary: []
+terms:
+  - exclusive agency listing
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,42 @@
+id: NAT-PSI-VII-0377
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is asked whether an abandoned underground storage tank that once held hazardous
+  solvents qualifies as a 'facility' under CERCLA. Which statement is correct?
+options:
+  - No, because only buildings and structures are considered facilities
+  - No, unless the tank is currently leaking hazardous substances
+  - Yes, if the tank is a site where a hazardous substance has been stored
+  - Yes, because any motor vehicle is automatically a facility
+key: C
+explanation: The definition of facility includes any site where a hazardous substance has been
+  deposited, stored, disposed of, or placed (see § 9601(9)(B)). Thus, an underground storage tank
+  that held hazardous solvents qualifies as a facility. The distractor that only buildings and
+  structures are facilities misstates the broad definition.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601(9)
+  url: null
+  quoted_text: (B) any site or area where a hazardous substance has been deposited, stored, disposed
+    of, or placed, or otherwise come to be located
+  secondary: []
+terms:
+  - facility
+  - hazardous substance
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

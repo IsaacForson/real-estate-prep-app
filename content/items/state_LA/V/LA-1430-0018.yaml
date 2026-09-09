@@ -1,0 +1,39 @@
+id: LA-1430-0018
+jurisdiction: LA
+bank: state_LA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A buyer client discloses financial details to a licensee, who later passes those details to a
+  customer on the other side of the deal without the buyer's permission. Under La. R.S. 9:3897, is
+  this disclosure permitted for a dual agent?
+options:
+  - yes, because financial details are not treated as confidential
+  - no, confidential information cannot be shared without that client's consent
+  - yes, because dual agents may freely share information between both clients today
+  - yes, as long as the disclosure happens after the closing
+key: B
+explanation: The statute states that a dual agent shall not disclose confidential information that
+  the licensee may know about either client without that client's permission.
+citation:
+  source: La. R.S. 9:3897 (§ 3897)
+  url: null
+  quoted_text: |-
+    Confidential information that the licensee may know about either of the clients,
+    without that client's permission.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,39 @@
+id: VA-21-0014
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer wants to know whether a registered sex offender lives near a home listed for sale.
+  What does the required disclosure statement say about this information?
+options:
+  - The owner must attach the state offender registry printout
+  - The locality must notify the buyer before settlement occurs
+  - The listing agent must certify the neighborhood is offender-free
+  - No representation is made; the buyer must investigate
+key: D
+explanation: The required disclosure statement states that the owner makes no representations
+  regarding registered sexual offenders and that purchasers are advised to exercise whatever due
+  diligence they deem necessary on that topic.
+citation:
+  source: Va. Code Ann. § 55.1-703
+  url: null
+  quoted_text: The owner makes no representations with respect to information on any sexual offenders
+    registered under Chapter 23 (§ 19.2-387 et seq.) of Title 19.2, and purchasers are advised to
+    exercise whatever due diligence they deem necessary with respect to such information
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,39 @@
+id: UT-101-0015
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An attorney licensed to practice law in Utah negotiates a real estate purchase contract solely
+  while representing a client in a legal matter. Under Utah Code Ann. § 61-2f-202, is a real estate
+  license required for this conduct?
+options:
+  - No, because the attorney is performing the duties of an attorney
+  - No, because the transaction involves a family member of the attorney
+  - Yes, because negotiating a contract requires a real estate license
+  - Yes, because the exemption applies solely to court-appointed roles
+key: A
+explanation: The statute exempts services rendered by an attorney admitted to practice law in Utah
+  while performing the attorney's duties as an attorney from the licensing requirement.
+citation:
+  source: Utah Code Ann. § 61-2f-202
+  url: null
+  quoted_text: |-
+    services rendered by an attorney admitted to practice law
+    in this state in performing the attorney's duties as an attorney
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

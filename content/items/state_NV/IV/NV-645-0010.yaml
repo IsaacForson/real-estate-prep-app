@@ -1,0 +1,41 @@
+id: NV-645-0010
+jurisdiction: NV
+bank: state_NV
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: "A buyer's agent contacts the seller directly during negotiations, knowing the seller has an
+  exclusive-agency brokerage agreement with the listing agent, and does so without written
+  permission from the listing broker. Under NRS 645.635, this conduct is:"
+options:
+  - excused because the seller initiated the conversation
+  - a ground for disciplinary action against the buyer's agent
+  - permissible once the buyer's agent discloses it after closing
+  - permitted because negotiations remained ongoing before closing
+key: B
+explanation: NRS 645.635 makes it a ground for discipline to negotiate or communicate directly with
+  a client bound by an exclusive-agency agreement without the other broker's written permission.
+citation:
+  source: Nev. Rev. Stat. § 645.635
+  url: null
+  quoted_text: Negotiating a sale, exchange or lease of real estate, or communicating after such
+    negotiations but before closing, directly with a client if the person knows that the client has
+    a brokerage agreement in force in connection with the property granting an exclusive agency,
+    including, without limitation, an exclusive right to sell to another broker, unless permission
+    in writing has been obtained from the other broker.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

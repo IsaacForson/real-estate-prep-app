@@ -1,0 +1,38 @@
+id: NM-1-0015
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker reconciles the brokerage trust account only once every calendar quarter.
+  Under 16.61.23.8 NMAC, does this schedule satisfy the reconciliation requirement?
+options:
+  - No, reconciliation is required monthly
+  - Yes, quarterly reconciliation is sufficient
+  - Yes, if the account balance stays positive
+  - No, reconciliation is required weekly
+key: A
+explanation: The rule requires that trust account reconciliation be performed monthly and verified
+  by the qualifying broker, so quarterly reconciliation falls short.
+citation:
+  source: 16.61 NMAC § 16.61.23.8
+  url: null
+  quoted_text: trust account reconciliation must be performed monthly and verified by the qualifying broker
+  secondary: []
+terms:
+  - trust account
+  - reconciliation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09
