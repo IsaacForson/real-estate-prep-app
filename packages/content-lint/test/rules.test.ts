@@ -34,6 +34,29 @@ describe("per-item rules", () => {
     expect(rules(ruleNegativeStemBolded(bad))).toContain("negative-stem-not-bolded");
     expect(ruleNegativeStemBolded(good)).toEqual([]);
   });
+  it("lets an item cite its own short-numbered section", () => {
+    // Rhode Island really numbers subsections "§ 2.4" (230-RICR-30-20-2 § 2.4), so a bare 1-2 digit
+    // dotted number is not automatically internal note numbering. Flagging it threw away 18/20 RI items.
+    const ri = mk({
+      explanation: "Section 2.10 assigns the paperwork duty to the principal broker who newly welcomes the licensee, who must sign and submit the transfer.",
+      citation: { source: "230-RICR-30-20-2 § 2.10", url: null, quoted_text: "the principal broker with whom the licensee becomes affiliated shall sign and submit the transfer application" },
+    });
+    expect(ruleNoMetaReference(ri)).toEqual([]);
+    // still caught when the number is not the section the item was drafted from
+    const notes = mk({ explanation: "As covered under §7.2, the licensee must deliver the deposit by the end of the next business day." });
+    expect(rules(ruleNoMetaReference(notes))).toContain("meta-reference-in-explanation");
+  });
+  it("ignores a negation that belongs to the scenario, not the question", () => {
+    // These are facts of the fact-pattern. Bolding them would emphasise the wrong word, so the
+    // normalizer leaves them alone — and the rule must not refuse the item for it either.
+    const consent = mk({ stem: "A licensee learns privately that the seller would accept less than the list price, and the buyer has not consented to any disclosure. May the licensee tell the buyer?" });
+    const testimony = mk({ stem: "During an investigation a licensee gives the investigator a false version of events. What is the regulatory consequence?" });
+    const transfer = mk({ stem: "A salesperson applies to transfer to a new broker but has not yet received an amended certificate. How long may the salesperson work in the new office?" });
+    for (const it of [consent, testimony, transfer]) expect(ruleNegativeStemBolded(it)).toEqual([]);
+    // still caught when the negation actually governs the question
+    const governs = mk({ stem: "A broker holds an earnest money deposit. Which of the following is not a permitted disbursement?" });
+    expect(rules(ruleNegativeStemBolded(governs))).toContain("negative-stem-not-bolded");
+  });
   it("flags numeric stems without worked solution", () => {
     const it = mk({ stem: "A property sells for $250,000 with a 6% commission split equally between two brokerages. What does the listing brokerage receive?" });
     expect(rules(ruleMathHasWork(it))).toContain("math-worked-solution");

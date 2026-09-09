@@ -77,8 +77,23 @@ export function ruleAbsoluteQualifiers(item: Item): Finding[] {
   return [f("absolute-qualifier", "error", item.id, `absolute qualifier in some but not all options: ${offenders.join(", ")}`)];
 }
 
+/**
+ * The clause the candidate is actually answering — the sentence carrying the "?", else the last one.
+ *
+ * A negation buried in the scenario ("the buyer has not consented", "tells a false version of
+ * events") is a fact of the fact-pattern, not a negatively-worded question. Bolding it would
+ * emphasise the wrong word, so `boldNegations` leaves it alone — and this rule used to fire on it
+ * anyway, refusing perfectly good items. Only the question clause decides.
+ */
+function questionClause(stem: string): string {
+  const parts = stem.split(/(?<=[.?!])\s+/).map((x) => x.trim()).filter(Boolean);
+  return parts.find((x) => x.includes("?")) ?? parts[parts.length - 1] ?? stem;
+}
+
 export function ruleNegativeStemBolded(item: Item): Finding[] {
-  if (!NEGATION_RE.test(item.stem)) return [];
+  // An uppercase negation anywhere is deliberate exam styling and must carry its asterisks.
+  const explicit = /\b(NOT|EXCEPT|NEVER|LEAST|FALSE|INCORRECT|CANNOT)\b/.test(item.stem);
+  if (!NEGATION_RE.test(explicit ? item.stem : questionClause(item.stem))) return [];
   if (BOLD_NEGATION_RE.test(item.stem)) return [];
   return [f("negative-stem-not-bolded", "error", item.id, "negatively-worded stem must bold the negation, e.g. **NOT** / **EXCEPT**")];
 }
@@ -116,13 +131,26 @@ const META_ANY_RE = new RegExp(`\\b(in the text|does the text|the text (indicate
 
 const ORDINAL_OPTION_RE = /\b(the |option )?(first|second|third|fourth|last|1st|2nd|3rd|4th) (option|choice|answer|response|alternative)\b|\boption (one|two|three|four)\b/i;
 
+/**
+ * A bare "§ 2.4" is internal note numbering in our own reference material — but it is also how some
+ * jurisdictions genuinely number subsections (Rhode Island's 230-RICR-30-20-2 § 2.4, Delaware's
+ * 24 Del. Admin. Code § 2900 6.2). So it only counts as a meta-reference when it is NOT the section
+ * the item was drafted from: an explanation restating its own rule is citing the law, not our notes.
+ * Before this carve-out the rule threw away 18 of 20 Rhode Island items.
+ */
+function citesOwnSection(text: string, source: string): boolean {
+  const num = text.match(INTERNAL_SECTION_RE)?.[0].match(/\d{1,2}\.\d{1,2}/)?.[0];
+  return !!num && source.includes(num);
+}
+
 export function ruleNoMetaReference(item: Item): Finding[] {
   const out: Finding[] = [];
+  const src = item.citation.source;
   const stemLike = [item.stem, ...item.options];
   if (stemLike.some((t) => META_STEM_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option refers to 'the reference/supplied text/section' — the candidate never sees it"));
-  else if (stemLike.some((t) => INTERNAL_SECTION_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option cites an internal note section number (e.g. §7.2) — name the statute or rule instead"));
+  else if (stemLike.some((t) => INTERNAL_SECTION_RE.test(t) && !citesOwnSection(t, src))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option cites an internal note section number (e.g. §7.2) — name the statute or rule instead"));
   if (META_ANY_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation refers to 'the reference/text/section' — state the rule directly and cite the section"));
-  else if (INTERNAL_SECTION_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation cites an internal note section number (e.g. §7.2) — cite the statute or rule"));
+  else if (INTERNAL_SECTION_RE.test(item.explanation) && !citesOwnSection(item.explanation, src)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation cites an internal note section number (e.g. §7.2) — cite the statute or rule"));
   if (ORDINAL_OPTION_RE.test(item.explanation)) out.push(f("explanation-option-ordinal", "error", item.id, "explanation refers to an option by position (\"the first option\"); positions change when options are shuffled — describe the option's content"));
   return out;
 }
