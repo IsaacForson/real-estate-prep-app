@@ -5,9 +5,10 @@ import type { IconName } from "./Icon.vue";
  * button when a click listener is attached (attrs fall through to the root), otherwise static.
  * Designed to stack inside a `padding="none"` AppCard, so the divider is on the row itself.
  */
-defineProps<{ icon?: IconName; label: string; detail?: string; value?: string; to?: string; chevron?: boolean; danger?: boolean }>();
+const props = defineProps<{ icon?: IconName; label: string; detail?: string; value?: string; to?: string; chevron?: boolean; danger?: boolean; button?: boolean }>();
 const attrs = useAttrs();
-const interactive = computed(() => !!attrs.onClick);
+/** `button` is the reliable switch — Vue 3.5 does not always expose `onClick` on `useAttrs()`. */
+const interactive = computed(() => props.button || !!attrs.onClick);
 </script>
 <template>
   <component

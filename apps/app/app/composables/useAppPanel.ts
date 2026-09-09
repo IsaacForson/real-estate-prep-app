@@ -12,15 +12,10 @@ export function useAppPanel() {
 
   function show() { open.value = true; }
   function hide() { open.value = false; }
-  /**
-   * Open the state sheet. Closing the menu in the same tap used to land that tap on the new
-   * sheet's backdrop and instantly dismiss it — wait a beat so the click is finished first.
-   */
+  /** Open the state sheet. AppSheet ignores the leftover tap from whatever opened it. */
   function pickState() {
     open.value = false;
-    const openPicker = () => { statePicker.value = true; };
-    if (import.meta.client) window.setTimeout(openPicker, 80);
-    else openPicker();
+    statePicker.value = true;
   }
 
   return { open, statePicker, show, hide, pickState };

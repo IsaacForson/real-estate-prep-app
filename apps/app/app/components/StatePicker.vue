@@ -28,7 +28,7 @@ const list = computed(() => {
   return JURISDICTION_CODES.filter((c) => !needle || c.toLowerCase().includes(needle) || JURISDICTIONS[c].toLowerCase().includes(needle));
 });
 function status(code: string) {
-  const s = content.manifest.value?.status[code];
+  const s = content.manifest.value?.status?.[code];
   if (!s) return { label: "planned", tone: "outline" as const };
   if (s.phase === "complete") return { label: `${s.published} questions`, tone: "ok" as const };
   if (s.verified + s.published > 0) return { label: `${s.verified + s.published} verified`, tone: "warn" as const };
@@ -49,7 +49,7 @@ function pick(code: string) {
     @close="emit('close')"
   >
     <div class="grid gap-3">
-      <AppInput v-model="q" type="search" placeholder="Search states" inputmode="search" autocomplete="off" autofocus aria-label="Search states" />
+      <AppInput v-model="q" type="search" placeholder="Search states" inputmode="search" autocomplete="off" aria-label="Search states" />
 
       <div v-if="pending" class="rounded-card border border-warn/35 bg-warn-soft p-4">
         <p class="m-0 text-[14px] font-extrabold leading-snug">
@@ -95,7 +95,7 @@ function pick(code: string) {
 
             <span class="min-w-0 flex-1">
               <span class="block truncate text-[15px] font-medium">{{ JURISDICTIONS[code] }}</span>
-              <span class="block truncate text-[12px] text-muted">{{ content.manifest.value?.states[code]?.vendor ?? '—' }}</span>
+              <span class="block truncate text-[12px] text-muted">{{ content.manifest.value?.states?.[code]?.vendor ?? '—' }}</span>
             </span>
 
             <Badge :tone="status(code).tone">{{ status(code).label }}</Badge>

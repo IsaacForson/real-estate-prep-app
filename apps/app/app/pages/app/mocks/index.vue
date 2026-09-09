@@ -12,7 +12,7 @@ const free = useFreeTier();
 const events = useEvents();
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
-const st = computed(() => (jur.value ? content.manifest.value?.states[jur.value] ?? null : null));
+const st = computed(() => (jur.value ? content.manifest.value?.states?.[jur.value] ?? null : null));
 const exam = computed(() => (studyState.settings.value?.licenseLevel === "broker" && st.value?.broker_exam ? { ...st.value.salesperson_exam, ...st.value.broker_exam } : st.value?.salesperson_exam) ?? null);
 const mockForms = useMockForms();
 const nationalBank = computed(() => (st.value?.vendor === "psi" ? "national_psi" : st.value?.vendor === "pearsonvue" ? "national_pearsonvue" : null));
@@ -55,7 +55,7 @@ onMounted(() => { void content.load().then(() => mockForms.load(jur.value, natio
 watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.value); });
 </script>
 <template>
-  <div class="grid w-full gap-4 text-ink">
+  <div class="app-page grid w-full gap-4 text-ink">
     <p class="text-[13.5px] leading-relaxed text-ink-2">Timed forms in your state's exam format. Answers stay hidden until you submit.</p>
     <AppCard v-if="active" tone="accent">
       <div class="flex items-center gap-3">

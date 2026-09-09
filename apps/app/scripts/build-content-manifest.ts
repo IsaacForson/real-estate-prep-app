@@ -62,7 +62,7 @@ const manifest = {
   glossary,
   audio,
 };
-writeFileSync(resolve(serverAssets, "manifest.json"), JSON.stringify(manifest)); // served by /api/manifest
+writeFileSync(resolve(serverAssets, "manifest.json"), JSON.stringify(manifest)); // served by /api/manifest.json
 writeFileSync(resolve(out, "items.json"), JSON.stringify(allItems));
 // dev only: expose rendered audio under public/content/audio so StaticItemSource mode can play it
 if (existsSync(audioDir)) { const { cpSync } = await import("node:fs"); cpSync(audioDir, resolve(out, "audio"), { recursive: true }); }

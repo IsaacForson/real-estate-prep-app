@@ -47,11 +47,14 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    // /api/manifest has no params, so bake it as a static JSON file unconditionally — it must not
-    // depend on Nitro's link-crawler discovering it, which only ever happened via the fully-rendered
-    // marketing "/" page. Inside the packaged native app "/" is a bare shell (see the CAPACITOR_BUILD
-    // note above), so without this the manifest fetch 404s in the shipped app with no live server.
-    prerender: { routes: ["/api/manifest"] },
+    // /api/manifest.json has no params, so bake it as a static JSON file unconditionally — it must
+    // not depend on Nitro's link-crawler discovering it, which only ever happened via the fully
+    // rendered marketing "/" page. Inside the packaged native app "/" is a bare shell (see the
+    // CAPACITOR_BUILD note above), so without this the manifest fetch 404s in the shipped app,
+    // which has no live server. The `.json` extension is required, not cosmetic: Capacitor's
+    // Android local server types static assets by extension, and an extension-less file was
+    // handed to the app without a JSON content type (see composables/useContent.ts).
+    prerender: { routes: ["/api/manifest.json"] },
   },
   typescript: { strict: true, typeCheck: false },
   vite: {

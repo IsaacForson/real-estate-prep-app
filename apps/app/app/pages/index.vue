@@ -11,8 +11,8 @@ const content = useContent();
 const { data: manifest } = await useAsyncData("manifest", () => content.load());
 const approved = computed(() => (reviews.approved.value ?? []).slice(0, 3));
 onMounted(() => { void reviews.loadApproved(6); });
-const complete = computed(() => JURISDICTION_CODES.filter((c) => manifest.value?.status[c]?.phase === "complete"));
-const inProduction = computed(() => JURISDICTION_CODES.filter((c) => { const s = manifest.value?.status[c]; return s && s.phase !== "complete" && s.verified + s.published > 0; }));
+const complete = computed(() => JURISDICTION_CODES.filter((c) => manifest.value?.status?.[c]?.phase === "complete"));
+const inProduction = computed(() => JURISDICTION_CODES.filter((c) => { const s = manifest.value?.status?.[c]; return s && s.phase !== "complete" && s.verified + s.published > 0; }));
 const totalQuestions = computed(() => Object.values(manifest.value?.status ?? {}).reduce((a, s) => a + s.published, 0) + Object.values(manifest.value?.nationalStatus ?? {}).reduce((a, s) => a + s.published, 0));
 const faq = [
   { q: "Is this a subscription?", a: "No. $59 once buys everything, forever: all 51 jurisdictions, both national banks, every mock, and all future content and statute updates. The free tier needs no card." },
@@ -140,10 +140,10 @@ const steps = [
             >
               <p class="text-[14px] font-semibold">{{ JURISDICTIONS[c] }}</p>
               <p class="mt-1 text-[11.5px] text-muted">
-                {{ manifest?.states[c]?.vendor ?? '—' }} ·
-                {{ manifest?.status[c]?.phase === 'complete'
-                  ? `${manifest?.status[c]?.published} questions`
-                  : (manifest?.status[c]?.verified ?? 0) + (manifest?.status[c]?.published ?? 0) > 0 ? 'in production' : 'planned' }}
+                {{ manifest?.states?.[c]?.vendor ?? '—' }} ·
+                {{ manifest?.status?.[c]?.phase === 'complete'
+                  ? `${manifest?.status?.[c]?.published} questions`
+                  : (manifest?.status?.[c]?.verified ?? 0) + (manifest?.status?.[c]?.published ?? 0) > 0 ? 'in production' : 'planned' }}
               </p>
             </NuxtLink>
           </li>

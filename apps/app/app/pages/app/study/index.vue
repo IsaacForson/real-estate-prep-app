@@ -20,7 +20,7 @@ const portion = ref<"state" | "national">("state");
 const busy = ref<string | null>(null);
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const level = computed(() => studyState.settings.value?.licenseLevel ?? "salesperson");
-const vendor = computed(() => (jur.value ? content.manifest.value?.states[jur.value]?.vendor : null));
+const vendor = computed(() => (jur.value ? content.manifest.value?.states?.[jur.value]?.vendor : null));
 const nationalBank = computed(() => (vendor.value === "psi" ? "national_psi" : vendor.value === "pearsonvue" ? "national_pearsonvue" : null));
 const stateBank = computed(() => (jur.value ? `state_${jur.value}` : null));
 const bank = computed(() => (portion.value === "state" ? stateBank.value : nationalBank.value));

@@ -7,9 +7,9 @@ if (!isJurisdictionCode(code)) throw createError({ statusCode: 404, statusMessag
 const content = useContent();
 const { data: m } = await useAsyncData(`state-${code}`, () => content.load());
 const auth = useAuth();
-const st = computed(() => m.value?.states[code]);
+const st = computed(() => m.value?.states?.[code]);
 const exam = computed(() => st.value?.salesperson_exam);
-const status = computed(() => m.value?.status[code]);
+const status = computed(() => m.value?.status?.[code]);
 const bank = computed(() => (st.value ? nationalBankFor(st.value.vendor) : null));
 useHead({
   title: `${JURISDICTIONS[code]} real estate exam: format, pass score, fees`,

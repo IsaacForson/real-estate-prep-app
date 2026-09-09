@@ -6,6 +6,15 @@
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["--filter", "@rep/app", "dev"],
       "port": 3000
+    },
+    {
+      "name": "app-static",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "cd apps/app && NUXT_PUBLIC_SUPABASE_URL= NUXT_PUBLIC_SUPABASE_ANON_KEY= npx nuxt dev --port 3123"
+      ],
+      "port": 3123
     }
   ]
 }

@@ -7,7 +7,7 @@ const { data: manifest } = await useAsyncData("manifest", () => content.load());
 const q = ref("");
 const list = computed(() => { const n = q.value.trim().toLowerCase(); return JURISDICTION_CODES.filter((c) => !n || c.toLowerCase().includes(n) || JURISDICTIONS[c].toLowerCase().includes(n)); });
 function status(code: string) {
-  const s = manifest.value?.status[code];
+  const s = manifest.value?.status?.[code];
   if (!s) return { label: "planned", tone: "outline" as const };
   if (s.phase === "complete") return { label: `${s.published} questions`, tone: "ok" as const };
   if (s.verified + s.published > 0) return { label: `${s.verified + s.published} verified · in production`, tone: "warn" as const };
@@ -46,7 +46,7 @@ function status(code: string) {
           <span class="min-w-0 flex-1">
             <span class="block truncate text-[15px] font-semibold tracking-[-0.012em]">{{ JURISDICTIONS[c] }}</span>
             <span class="block text-[11.5px] text-muted">
-              {{ manifest?.states[c]?.vendor ?? '—' }}<template v-if="manifest?.states[c]?.salesperson_exam.total_items"> · {{ manifest?.states[c]?.salesperson_exam.total_items }} questions</template>
+              {{ manifest?.states?.[c]?.vendor ?? '—' }}<template v-if="manifest?.states?.[c]?.salesperson_exam?.total_items"> · {{ manifest?.states?.[c]?.salesperson_exam?.total_items }} questions</template>
             </span>
           </span>
           <Badge :tone="status(c).tone">{{ status(c).label }}</Badge>

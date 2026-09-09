@@ -88,12 +88,14 @@ onMounted(() => { void free.load(); });
 
     <AppCard title="Study settings" padding="none">
       <ListRow
+        button
         icon="map"
         label="Home state"
         :value="jur ? (JURISDICTIONS[jur as keyof typeof JURISDICTIONS] ?? jur) : 'Not set'"
-        @click="panel.pickState()"
+        @click.stop="panel.pickState()"
       />
       <ListRow
+        button
         icon="calendar"
         label="Exam date"
         :value="examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : 'Not set'"
@@ -161,10 +163,10 @@ onMounted(() => { void free.load(); });
     </AppCard>
 
     <AppCard padding="none">
-      <ListRow icon="star" label="Rate the app" detail="Approved reviews appear on our site" @click="rateSheet = true" />
+      <ListRow button icon="star" label="Rate the app" detail="Approved reviews appear on our site" @click="rateSheet = true" />
       <ListRow icon="help" label="Help Center" detail="Search answers or ask" to="/help" />
       <ListRow icon="message" label="Contact us" detail="We answer every ticket" to="/help/contact" />
-      <ListRow icon="gift" label="Redeem a code" detail="Gift or discount code" @click="redeemSheet = true" />
+      <ListRow button icon="gift" label="Redeem a code" detail="Gift or discount code" @click="redeemSheet = true" />
       <ListRow icon="tag" label="Pricing" to="/pricing" />
     </AppCard>
 
@@ -172,7 +174,7 @@ onMounted(() => { void free.load(); });
       <ListRow icon="info" label="Methodology" to="/methodology" />
       <ListRow icon="shield" label="Privacy" to="/legal/privacy" />
       <ListRow icon="list" label="Terms" to="/legal/terms" />
-      <ListRow icon="logout" label="Sign out" danger @click="signOutSheet = true" />
+      <ListRow button icon="logout" label="Sign out" danger @click="signOutSheet = true" />
     </AppCard>
 
     <p class="px-2 pb-2 text-center text-[11.5px] leading-relaxed text-muted">

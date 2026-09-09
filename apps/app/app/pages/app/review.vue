@@ -16,7 +16,7 @@ const busy = ref(false);
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const banks = computed(() => {
-  const v = jur.value ? content.manifest.value?.states[jur.value]?.vendor : null;
+  const v = jur.value ? content.manifest.value?.states?.[jur.value]?.vendor : null;
   return [jur.value ? `state_${jur.value}` : null, v === "psi" ? "national_psi" : v === "pearsonvue" ? "national_pearsonvue" : null].filter((b): b is string => !!b);
 });
 const pipelines = ref<Record<string, Awaited<ReturnType<typeof study.pipelineFor>>>>({});
@@ -53,7 +53,7 @@ const label = (b: string) => b.replace("national_pearsonvue", "National · Pears
 const stem = (s: string) => s.replace(/\*\*/g, "");
 </script>
 <template>
-  <div class="grid w-full gap-4 text-ink">
+  <div class="app-page grid w-full gap-4 text-ink">
     <p class="text-[13.5px] leading-relaxed text-ink-2">Missed questions and the ones due to come back. A correct review moves a card to the next box.</p>
     <AppTabs v-model="tab" :tabs="[{ value: 'missed', label: 'Missed', count: rows.length }, { value: 'boxes', label: 'Boxes' }]" aria-label="Review view" />
 

@@ -1,28 +1,45 @@
 <script setup lang="ts">
 /**
- * Bottom sheet on small screens, centred dialog from `sm:` up. Teleported to <body>, closes on
- * backdrop tap and Escape, returns focus to the opener, locks page scroll while open, and keeps
- * Tab inside the panel while it is up.
+ * Overlay dialog. Teleported out of the page so a parent `overflow: hidden` cannot clip it.
+ *
+ * Mobile WebView used to lose this sheet in two ways:
+ * 1. The opening tap's leftover `click` landed on a new `@click` backdrop and dismissed it.
+ * 2. `flex items-end` pinned the panel to the bottom of an oversized `fixed inset-0` box, so the
+ *    dialog sat below the visual viewport (desktop `items-center` never had that problem).
+ *
+ * Backdrop dismisses only on a pointer that both started and ended on the dimmer, after a short
+ * arming window. The close button always works. The panel is centred on every width.
  */
 const props = withDefaults(defineProps<{ open: boolean; title?: string; description?: string; dismissible?: boolean }>(), { dismissible: true });
 const emit = defineEmits<{ (e: "close"): void }>();
 const panel = ref<HTMLElement | null>(null);
 let opener: Element | null = null;
-/** Ignore the pointer that opened us — it can hit the new backdrop after the previous overlay unmounts. */
-let openedAt = 0;
+let armed = false;
+let armTimer: number | null = null;
+let backdropPointer: number | null = null;
 
 const FOCUSABLE = "button:not([disabled]),input:not([disabled]),textarea:not([disabled]),select:not([disabled]),a[href],[tabindex]:not([tabindex='-1'])";
 
 function close() {
   if (!props.dismissible) return;
-  if (Date.now() - openedAt < 400) return;
   emit("close");
+}
+
+function onBackdropPointerDown(e: PointerEvent) {
+  if (e.target !== e.currentTarget) return;
+  backdropPointer = e.pointerId;
+}
+
+function onBackdropPointerUp(e: PointerEvent) {
+  const same = backdropPointer === e.pointerId;
+  backdropPointer = null;
+  if (!armed || !same || e.target !== e.currentTarget) return;
+  close();
 }
 
 function onKey(e: KeyboardEvent) {
   if (e.key === "Escape") { close(); return; }
   if (e.key !== "Tab" || !panel.value) return;
-  // Focus trap: a modal the keyboard can walk out of is not modal.
   const nodes = [...panel.value.querySelectorAll<HTMLElement>(FOCUSABLE)].filter((n) => n.offsetParent !== null);
   if (!nodes.length) return;
   const first = nodes[0]!;
@@ -32,15 +49,24 @@ function onKey(e: KeyboardEvent) {
   else if (!e.shiftKey && active === last) { e.preventDefault(); first.focus(); }
 }
 
+function disarm() {
+  armed = false;
+  backdropPointer = null;
+  if (armTimer != null) { window.clearTimeout(armTimer); armTimer = null; }
+}
+
 watch(() => props.open, (o) => {
   if (!import.meta.client) return;
   if (o) {
-    openedAt = Date.now();
     opener = document.activeElement;
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", onKey);
-    nextTick(() => (panel.value?.querySelector<HTMLElement>(`[autofocus],${FOCUSABLE}`) ?? panel.value)?.focus());
+    disarm();
+    // Longer than Android's leftover click (~300–500ms) from the control that opened us.
+    armTimer = window.setTimeout(() => { armed = true; armTimer = null; }, 700);
+    nextTick(() => panel.value?.focus());
   } else {
+    disarm();
     document.body.style.overflow = "";
     document.removeEventListener("keydown", onKey);
     (opener as HTMLElement | null)?.focus?.();
@@ -49,28 +75,28 @@ watch(() => props.open, (o) => {
 
 onUnmounted(() => {
   if (!import.meta.client) return;
+  disarm();
   document.body.style.overflow = "";
   document.removeEventListener("keydown", onKey);
 });
 </script>
 <template>
   <Teleport to="body">
-    <div v-if="open" class="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center" role="presentation">
-      <div class="absolute inset-0 bg-black/50 backdrop-blur-[3px] motion-safe:animate-[cp-fade-up_.2s_ease-out]" @click="close" />
+    <div v-if="open" class="fixed inset-0 z-80 grid place-items-center p-3 sm:p-6" role="presentation">
+      <div
+        class="absolute inset-0 bg-black/50"
+        @pointerdown="onBackdropPointerDown"
+        @pointerup="onBackdropPointerUp"
+      />
       <div
         ref="panel"
         role="dialog"
         aria-modal="true"
         :aria-label="title"
         tabindex="-1"
-        class="relative flex max-h-[92dvh] w-full flex-col bg-surface text-ink shadow-float outline-none
-               rounded-t-panel sm:max-w-md sm:rounded-panel sm:border sm:border-line"
+        class="relative z-10 flex max-h-[min(92svh,40rem)] w-full max-w-md flex-col overflow-hidden bg-surface text-ink shadow-float outline-none rounded-panel border border-line"
       >
-        <div class="flex justify-center pt-2.5 sm:hidden" aria-hidden="true">
-          <span class="h-1 w-9 rounded-pill bg-line-strong" />
-        </div>
-
-        <header v-if="title || dismissible" class="flex items-start justify-between gap-3 px-5 pt-3.5 pb-1">
+        <header v-if="title || dismissible" class="flex items-start justify-between gap-3 px-5 pt-4 pb-1">
           <div class="min-w-0">
             <h2 v-if="title" class="text-[17px] font-semibold tracking-[-0.014em]">{{ title }}</h2>
             <p v-if="description" class="mt-1 text-[13.5px] leading-relaxed text-muted">{{ description }}</p>

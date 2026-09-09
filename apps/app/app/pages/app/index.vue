@@ -35,7 +35,7 @@ const firstName = computed(() => auth.user.value?.email?.split("@")[0] ?? null);
     <div>
       <p class="eyebrow">Home</p>
       <h1 class="display mt-1 text-[24px]">{{ firstName ? `Welcome back, ${firstName}` : "Welcome back" }}</h1>
-      <button type="button" class="mt-1.5 inline-flex items-center gap-1.5 text-[14px] font-bold text-muted hover:text-ink" @click="panel.statePicker.value = true">
+      <button type="button" class="mt-1.5 inline-flex items-center gap-1.5 text-[14px] font-bold text-muted hover:text-ink" @click.stop="panel.pickState()">
         <Icon name="map" :size="15" />
         <span>{{ stateName ?? "Choose your state" }} · {{ level }}</span>
         <Icon name="chevron-down" :size="14" />

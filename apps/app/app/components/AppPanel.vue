@@ -38,7 +38,7 @@ const daysLeft = computed(() =>
 /** Due count for the Review row. Only computed while the panel is up — it walks all progress. */
 const due = ref<number | null>(null);
 const banks = computed(() => {
-  const v = jur.value ? content.manifest.value?.states[jur.value]?.vendor : null;
+  const v = jur.value ? content.manifest.value?.states?.[jur.value]?.vendor : null;
   return [
     jur.value ? `state_${jur.value}` : null,
     v === "psi" ? "national_psi" : v === "pearsonvue" ? "national_pearsonvue" : null,
@@ -92,7 +92,7 @@ onUnmounted(() => {
 <template>
   <Teleport to="body">
     <div v-if="open" class="fixed inset-0 z-50 flex items-end sm:items-center sm:justify-center" role="presentation">
-      <div class="absolute inset-0 bg-black/55 backdrop-blur-[3px] motion-safe:animate-[cp-fade-up_.2s_ease-out]" @click="close" />
+      <div class="absolute inset-0 bg-black/55" @click="close" />
 
       <div
         ref="panel"
@@ -101,8 +101,7 @@ onUnmounted(() => {
         aria-label="Menu"
         tabindex="-1"
         class="relative flex max-h-[94dvh] w-full flex-col bg-bg text-ink shadow-float outline-none
-               rounded-t-panel sm:max-w-lg sm:rounded-panel sm:border sm:border-line
-               anim-sheet-up sm:anim-scale-in"
+               rounded-t-panel sm:max-w-lg sm:rounded-panel sm:border sm:border-line"
       >
         <div class="flex justify-center pt-2.5 sm:hidden" aria-hidden="true">
           <span class="h-1.5 w-10 rounded-pill bg-line-strong" />
