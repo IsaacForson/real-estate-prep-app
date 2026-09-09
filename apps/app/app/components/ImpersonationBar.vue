@@ -7,7 +7,30 @@
  * whose app they are looking at.
  */
 const imp = useImpersonation();
-onMounted(() => imp.restore());
+
+/**
+ * The server revokes the shadow session at `expiresAt` regardless. Counting down means the admin
+ * sees it coming instead of watching the app start failing for no visible reason, and we hand the
+ * admin session back automatically at zero rather than leaving them stranded as a dead user.
+ */
+const now = ref(Date.now());
+let timer: ReturnType<typeof setInterval> | null = null;
+
+const minutesLeft = computed(() => {
+  const exp = imp.state.value?.expiresAt;
+  if (!exp) return null;
+  return Math.max(0, Math.ceil((exp - now.value) / 60_000));
+});
+
+onMounted(() => {
+  imp.restore();
+  timer = setInterval(() => {
+    now.value = Date.now();
+    const exp = imp.state.value?.expiresAt;
+    if (imp.active.value && exp && exp <= now.value && !imp.busy.value) void imp.stop();
+  }, 15_000);
+});
+onUnmounted(() => { if (timer) clearInterval(timer); });
 </script>
 <template>
   <div
@@ -21,6 +44,9 @@ onMounted(() => imp.restore());
         Viewing as <span class="font-extrabold">{{ imp.state.value.target.email }}</span>
         <span class="hidden font-medium text-ink-2 sm:inline"> — actions are recorded against their account</span>
       </p>
+      <span v-if="minutesLeft != null" class="tabular shrink-0 text-[12px] font-bold text-ink-2">
+        {{ minutesLeft }}m left
+      </span>
       <AppButton variant="secondary" size="xs" :loading="imp.busy.value" @click="imp.stop()">Stop</AppButton>
     </div>
   </div>

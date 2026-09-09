@@ -11,7 +11,7 @@
  * reload. sessionStorage (not localStorage) on purpose: closing the tab ends the impersonation
  * rather than leaving a second identity lying around on the machine.
  */
-import type { AdminImpersonation } from "./useAdmin";
+import { describeAdminError, toAdminError, type AdminImpersonation } from "./useAdmin";
 
 const KEY = "rep-impersonation";
 
@@ -20,6 +20,8 @@ export interface ImpersonationState {
   admin: { accessToken: string; refreshToken: string; email: string | null; id: string };
   target: { userId: string; email: string; deviceId: string; sessionId: string };
   startedAt: number;
+  /** epoch ms; the server revokes the shadow session at this point whether we stop or not */
+  expiresAt: number;
 }
 
 function read(): ImpersonationState | null {
@@ -33,6 +35,7 @@ function read(): ImpersonationState | null {
 export function useImpersonation() {
   const supabase = useSupabase();
   const auth = useAuth();
+  const admin = useAdmin();
   const state = useState<ImpersonationState | null>("impersonation", () => null);
   const busy = useState<boolean>("impersonation.busy", () => false);
   const error = useState<string | null>("impersonation.error", () => null);
@@ -64,6 +67,7 @@ export function useImpersonation() {
         },
         target: { userId: grant.user_id, email: grant.email, deviceId: grant.device_id, sessionId: grant.session_id },
         startedAt: Date.now(),
+        expiresAt: grant.expires_at ? Date.parse(grant.expires_at) : Date.now() + 60 * 60_000,
       };
       sessionStorage.setItem(KEY, JSON.stringify(next));
 
@@ -83,7 +87,7 @@ export function useImpersonation() {
       return true;
     } catch (e) {
       sessionStorage.removeItem(KEY);
-      error.value = e instanceof Error ? e.message : "Could not open the app as this user.";
+      error.value = describeAdminError(toAdminError(e));
       return false;
     } finally {
       busy.value = false;
@@ -111,6 +115,10 @@ export function useImpersonation() {
         await navigateTo("/signin?next=/admin");
         return;
       }
+      // the admin's token is back, so this call authorises as the admin. Revoking server-side
+      // matters: otherwise the shadow session stays live until its expiry, usable by anyone who
+      // kept the ids.
+      await admin.api.users.stopImpersonation(s.target.userId).catch(() => {});
       await navigateTo(`/admin/users/${s.target.userId}`);
     } finally {
       busy.value = false;

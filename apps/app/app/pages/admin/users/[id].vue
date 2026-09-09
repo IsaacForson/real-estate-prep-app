@@ -90,7 +90,10 @@ async function openAsUser() {
   });
   if (!r.ok) return;
   const ok = await imp.start(id.value, () => api.users.impersonate(id.value));
-  if (!ok) toast.push("error", imp.error.value ?? "Could not open the app as this user.");
+  if (!ok) {
+    const msg = imp.error.value ?? "Could not open the app as this user.";
+    toast.push("error", msg);
+  }
 }
 
 // ── refunds ──
@@ -154,6 +157,7 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
               <template v-if="u.profile?.exam_date"> · exam {{ adminFmt.day(u.profile.exam_date) }}</template>
               <template v-if="u.auth?.banned_until && disabled"> · banned until {{ adminFmt.abs(u.auth.banned_until) }}</template>
             </p>
+            <p v-if="imp.error.value" class="m-0 mt-2 max-w-xl text-[13px] font-medium text-danger" role="alert">{{ imp.error.value }}</p>
           </div>
           <div class="flex flex-wrap gap-2">
             <AppButton
@@ -183,7 +187,7 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
           <AdminKpiTile label="Accuracy" :value="u.study?.accuracy == null ? '—' : u.study.accuracy <= 1 ? adminFmt.ratio(u.study.accuracy) : adminFmt.pct(u.study.accuracy)" />
           <AdminKpiTile label="Mocks" :value="adminFmt.int(u.study?.mocks)" />
           <AdminKpiTile label="Readiness" :value="u.study?.readiness == null ? '—' : u.study.readiness <= 1 ? adminFmt.ratio(u.study.readiness) : adminFmt.pct(u.study.readiness)" />
-          <AdminKpiTile label="Free questions used" :value="`${adminFmt.int(u.free_tier?.questions_used)} / 40`" :tone="(u.free_tier?.questions_used ?? 0) >= 40 ? 'warn' : 'default'" />
+          <AdminKpiTile label="Free questions used" :value="`${adminFmt.int(u.free_tier?.questions_used)} / 20`" :tone="(u.free_tier?.questions_used ?? 0) >= 20 ? 'warn' : 'default'" />
           <AdminKpiTile label="Free mocks used" :value="`${adminFmt.int(u.free_tier?.mocks_used)} / 1`" />
         </div>
 
@@ -258,8 +262,8 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
                 <li
                   v-for="c in [
                     { ok: eligibility.has_guarantee, label: 'Bought the pass guarantee', detail: eligibility.guarantee_granted_at ? adminFmt.abs(eligibility.guarantee_granted_at) : 'not purchased' },
-                    { ok: eligibility.within_window, label: 'Within the 90-day window', detail: eligibility.days_since_guarantee == null ? '—' : `${eligibility.days_since_guarantee} days since purchase` },
-                    { ok: eligibility.meets_mock_requirement, label: 'Completed 5 full mocks', detail: `${eligibility.mocks_completed} completed` },
+                    { ok: eligibility.within_window, label: `Within the ${eligibility.window_days ?? 90}-day window`, detail: eligibility.days_since_guarantee == null ? '—' : `${eligibility.days_since_guarantee} days since purchase` },
+                    { ok: eligibility.meets_mock_requirement, label: `Completed ${eligibility.mocks_required ?? 5} full mocks`, detail: `${eligibility.mocks_completed} completed` },
                     { ok: !eligibility.already_refunded, label: 'Not already refunded', detail: eligibility.already_refunded ? 'a refund is already on file' : 'no prior refund' },
                   ]"
                   :key="c.label"

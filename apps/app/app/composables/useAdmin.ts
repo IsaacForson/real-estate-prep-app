@@ -171,13 +171,18 @@ export interface AdminContentVersion {
   notes?: string | null;
 }
 
-export type AdminSettingKey = "device_policy" | "content_sync";
+export type AdminSettingKey = "device_policy" | "content_sync" | "guarantee" | "announcement";
+export type AnnouncementTone = "info" | "warn" | "danger";
 
 export interface AdminSettings {
   settings: Partial<Record<AdminSettingKey, Record<string, unknown>>>;
   rows: Array<{ key: string; value: unknown; updated_at?: string; updated_by?: string | null }>;
   /** what is actually in force after SQL clamping, which may differ from what was written */
-  effective: { max_active_devices: number };
+  effective: {
+    max_active_devices: number;
+    guarantee_window_days?: number;
+    guarantee_mocks_required?: number;
+  };
 }
 
 export type RefundKind = "full" | "partial" | "guarantee";
@@ -222,6 +227,9 @@ export interface AdminGuaranteeEligibility {
   mocks_completed: number;
   meets_mock_requirement: boolean;
   already_refunded: boolean;
+  /** the thresholds actually applied, so the console shows the rule in force, not a fixed caption */
+  window_days: number;
+  mocks_required: number;
 }
 
 /** What `users.impersonate` hands back; the token is single-use and never persisted. */
@@ -231,6 +239,8 @@ export interface AdminImpersonation {
   token_hash: string;
   device_id: string;
   session_id: string;
+  /** the shadow session dies on its own at this point, so a forgotten tab is not a standing key */
+  expires_at: string;
 }
 
 export interface AdminFlaggedDevice {
@@ -286,6 +296,7 @@ export function describeAdminError(e: AdminError): string {
     case "forbidden":
     case "http_403": return "This account is not an admin.";
     case "http_404": return "The admin-api function is not deployed yet.";
+    case "unknown_op": return "This admin-api deploy is older than the console. Push the latest function and try again.";
     default: return e.message || e.code;
   }
 }
@@ -399,6 +410,7 @@ export function useAdmin() {
       removeDevice: (id: string, device_id: string) => call<unknown>("users.removeDevice", { id, device_id }),
       setAdmin: (id: string, is_admin: boolean) => call<unknown>("users.setAdmin", { id, is_admin }),
       impersonate: (id: string) => call<AdminImpersonation>("users.impersonate", { id }),
+      stopImpersonation: (id: string) => call<{ ended: number }>("users.stopImpersonation", { id }),
     },
     entitlements: {
       grant: (user_id: string, product: string, note: string) => call<unknown>("entitlements.grant", { user_id, product, note }),

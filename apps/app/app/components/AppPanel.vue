@@ -27,6 +27,7 @@ let opener: Element | null = null;
 const FOCUSABLE = "button:not([disabled]),input:not([disabled]),textarea:not([disabled]),select:not([disabled]),a[href],[tabindex]:not([tabindex='-1'])";
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
+const stateLocked = computed(() => !entitlement.isComplete.value && !!entitlement.profile.value?.home_jurisdiction);
 const level = computed(() => studyState.settings.value?.licenseLevel ?? "salesperson");
 const stateName = computed(() => (jur.value ? JURISDICTIONS[jur.value as keyof typeof JURISDICTIONS] ?? jur.value : null));
 const examDate = computed(() => studyState.settings.value?.examDate ?? null);
@@ -118,16 +119,17 @@ onUnmounted(() => {
           <button
             type="button"
             class="group -ml-1 flex min-w-0 items-center gap-2 rounded-pill px-2 py-1.5 text-left transition-colors hover:bg-surface-2"
+            :aria-label="stateLocked ? `${stateName}, locked on the free tier` : undefined"
             @click="emit('change-state')"
           >
             <span class="grid size-9 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
-              <Icon name="map" :size="19" />
+              <Icon :name="stateLocked ? 'lock' : 'map'" :size="19" />
             </span>
             <span class="min-w-0">
               <span class="block truncate text-[16px] font-extrabold leading-tight">{{ stateName ?? 'Choose your state' }}</span>
-              <span class="block text-[12.5px] capitalize text-muted">{{ level }}</span>
+              <span class="block text-[12.5px] capitalize text-muted">{{ stateLocked ? 'Free tier · one state' : level }}</span>
             </span>
-            <Icon name="chevron-down" :size="16" class="shrink-0 text-muted transition-colors group-hover:text-ink" />
+            <Icon v-if="!stateLocked" name="chevron-down" :size="16" class="shrink-0 text-muted transition-colors group-hover:text-ink" />
           </button>
 
           <button

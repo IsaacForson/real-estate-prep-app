@@ -16,8 +16,8 @@ export const BATCH_MAX = 200;
 export const BATCH_DEFAULT = 100;
 export const BATCH_TTL_SECONDS_DEFAULT = 6 * 60 * 60;
 
-// SPEC §6 free tier: 40 questions, one state, 1 short mock
-export const FREE_TIER_ITEMS = 40;
+// Free tier: 20 questions, one state, 1 short mock
+export const FREE_TIER_ITEMS = 20;
 export const FREE_TIER_MOCKS = 1;
 export const FREE_TIER_MOCK_FORM = "short";
 export const FREE_TIER_MOCK_ITEMS = 20; // the one free mock is a short form (mirrors apps/app/lib/study/freeTier.ts)

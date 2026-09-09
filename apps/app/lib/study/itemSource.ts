@@ -5,7 +5,7 @@
  *                      content repo + fixtures). It embeds real item ids and, in a dev checkout,
  *                      the whole local bank. It is what the dev server / smoke test use, and what
  *                      the anonymous free tier reads; a production build must point it at the
- *                      curated free sample (≤40 items per state + the short mock), never the bank.
+ *                      curated free sample (≤20 items per state + the short mock), never the bank.
  *   ApiItemSource    — production. Signed, short-TTL batches from apps/api `issue-batch`
  *                      (SPEC §5.4). The client only ever sees per-user PUBLIC ids; items are cached
  *                      in Dexie under those ids and a rolling look-ahead window is kept per bank.
@@ -197,7 +197,7 @@ export class ApiItemSource implements ItemSource {
       if (isSessionRevoked(e)) { this.deps.onSessionRevoked(); this.retryAfter.set(bank, this.now() + RETRY_LONG_MS); return []; }
       if (isFreeTierError(e)) {
         this.retryAfter.set(bank, this.now() + RETRY_LONG_MS);
-        if (e.code === "free_tier_exhausted") this.deps.onFreeTier?.({ remaining: 0, total: 40 });
+        if (e.code === "free_tier_exhausted") this.deps.onFreeTier?.({ remaining: 0, total: 20 });
         return [];
       }
       if (isRateLimited(e)) {

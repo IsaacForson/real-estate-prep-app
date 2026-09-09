@@ -43,7 +43,8 @@ const BAN_FOREVER = "876000h"; // ~100 years; gotrue's "permanent" idiom
 const DEVICE_HASH_RE = /^[0-9a-f]{64}$/;
 
 /** Keys an admin may write. An allowlist, so a typo creates a 400 rather than a dead setting row. */
-const SETTING_KEYS = ["device_policy", "content_sync"] as const;
+const SETTING_KEYS = ["device_policy", "content_sync", "guarantee", "announcement"] as const;
+const ANNOUNCEMENT_TONES = ["info", "warn", "danger"] as const;
 const REFUND_KINDS = ["full", "partial", "guarantee"] as const;
 const REFUND_STATUSES = ["open", "approved", "denied", "paid"] as const;
 const REFUND_STORES = ["app_store", "play", "paddle", "lemonsqueezy", "coupon", "manual"] as const;
@@ -159,8 +160,10 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
      * Three things make this safe enough to exist:
      *   - it is refused for admins and for yourself, so it cannot be used to escalate;
      *   - it does NOT call register-device. fn_start_shadow_session attaches to the user's existing
-     *     device, so impersonating somebody does not sign them out of their own phone — which,
-     *     under the single-device rule, is exactly what a naive implementation would do;
+     *     device (or mints a slot-less shadow one if they have never opened the app), so
+     *     impersonating somebody does not sign them out of their own phone — which, under the
+     *     single-device rule, is exactly what a naive implementation would do;
+     *   - the shadow session expires on its own, so a forgotten tab is not a standing key;
      *   - the magic-link token is single-use and short-lived, and the whole thing is in admin_audit.
      *
      * It is still a real session as that user. Everything done while impersonating is attributed
@@ -189,9 +192,13 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
       }
 
       // a session bound to a device the user already has, created without displacing anything
-      const shadow = await rpc<{ device_id: string; session_id: string }[]>(db, "fn_start_shadow_session", { p_user_id: id });
+      const shadow = await rpc<{ device_id: string; session_id: string; minted_device: boolean; expires_at: string }[]>(
+        db,
+        "fn_start_shadow_session",
+        { p_user_id: id },
+      );
       const s = shadow[0];
-      if (!s) throw new HttpError(409, "impersonate_no_device", "this user has no registered device to attach to");
+      if (!s) throw new HttpError(502, "impersonate_no_session", "could not open a session for this user");
 
       return {
         data: {
@@ -200,12 +207,19 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
           token_hash: link.properties.hashed_token,
           device_id: s.device_id,
           session_id: s.session_id,
+          expires_at: s.expires_at,
         },
         targetType: "user",
         targetId: id,
         // never audit the token itself
-        after: { impersonated: true, session_id: s.session_id, device_id: s.device_id },
+        after: { impersonated: true, session_id: s.session_id, device_id: s.device_id, minted_device: s.minted_device },
       };
+    }
+    /** Stop impersonating: revoke the shadow session server-side, not just in the admin's tab. */
+    case "users.stopImpersonation": {
+      const id = reqUuid(p, "id");
+      const ended = await rpc<number>(db, "fn_end_shadow_session", { p_user_id: id });
+      return { data: { ended }, targetType: "user", targetId: id, after: { impersonated: false } };
     }
     case "users.enable": {
       const id = reqUuid(p, "id");
@@ -613,6 +627,8 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
           // resolved values, so the console shows what is in force rather than what was written
           effective: {
             max_active_devices: await rpc<number>(db, "fn_max_active_devices", {}),
+            guarantee_window_days: await rpc<number>(db, "fn_guarantee_window_days", {}),
+            guarantee_mocks_required: await rpc<number>(db, "fn_guarantee_mocks_required", {}),
           },
         },
         targetType: "settings",
@@ -627,11 +643,41 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
       }
       // The device ceiling is the one setting that can lock people out, so it is validated here as
       // well as clamped in SQL — a typo should be a 400, not a silently different rule.
+      const v = value as Record<string, unknown>;
       if (key === "device_policy") {
-        const n = (value as Record<string, unknown>).max_active_devices;
+        const n = v.max_active_devices;
         if (typeof n !== "number" || !Number.isInteger(n) || n < 1 || n > MAX_ACTIVE_DEVICES_CEILING) {
           throw new HttpError(400, "invalid_max_active_devices", `max_active_devices must be an integer 1..${MAX_ACTIVE_DEVICES_CEILING}`);
         }
+      }
+      // These decide whether a real refund claim succeeds, so a typo must be a 400 rather than a
+      // quietly different policy that only shows up when someone is denied.
+      if (key === "guarantee") {
+        const days = v.window_days;
+        const mocks = v.mocks_required;
+        if (typeof days !== "number" || !Number.isInteger(days) || days < 1 || days > 730) {
+          throw new HttpError(400, "invalid_window_days", "window_days must be an integer 1..730");
+        }
+        if (typeof mocks !== "number" || !Number.isInteger(mocks) || mocks < 0 || mocks > 50) {
+          throw new HttpError(400, "invalid_mocks_required", "mocks_required must be an integer 0..50");
+        }
+      }
+      if (key === "announcement") {
+        const active = v.active;
+        const message = v.message;
+        if (typeof active !== "boolean") throw new HttpError(400, "invalid_announcement", "active must be a boolean");
+        if (message !== null && (typeof message !== "string" || message.length > 500)) {
+          throw new HttpError(400, "invalid_announcement", "message must be a string of at most 500 characters, or null");
+        }
+        // publishing an empty banner would show learners a blank bar with a dismiss button
+        if (active && !(typeof message === "string" && message.trim().length > 0)) {
+          throw new HttpError(400, "invalid_announcement", "an active announcement needs a message");
+        }
+        if (v.tone !== undefined && !(ANNOUNCEMENT_TONES as readonly unknown[]).includes(v.tone)) {
+          throw new HttpError(400, "invalid_announcement", `tone must be one of ${ANNOUNCEMENT_TONES.join(", ")}`);
+        }
+        // stamped server-side so clients can tell a re-publish from an edit and re-show the banner
+        v.updated_at = new Date().toISOString();
       }
       const before = unwrap(await db.from("app_settings").select("*").eq("key", key).maybeSingle(), "setting_lookup");
       const after = await rpc<Record<string, unknown>>(db, "fn_set_app_setting", { p_key: key, p_value: value });

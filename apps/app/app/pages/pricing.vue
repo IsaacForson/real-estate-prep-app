@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PurchasesPackage } from "@revenuecat/purchases-capacitor";
 import { pushToast } from "~/components/Toast.vue";
 /**
  * Pricing: Free · Complete ($59 once) · Pass guarantee (+$20). Native: RevenueCat store prices and
@@ -10,32 +9,29 @@ useHead({ title: "Pricing — $59 once, every state, forever" });
 const auth = useAuth();
 const entitlement = useEntitlement();
 const purchases = usePurchases();
+const checkout = useCheckout();
 const events = useEvents();
 const notice = ref<string | null>(null);
 const justBought = ref(false);
 
-function pkgFor(id: string): PurchasesPackage | undefined { return purchases.packages.value.find((p) => p.product.identifier === id || p.product.identifier.startsWith(`${id}:`)); }
-const completePkg = computed(() => pkgFor(PRODUCT_IDS.founding) ?? pkgFor(PRODUCT_IDS.complete));
+const completePkg = computed(() => checkout.pkgFor("complete"));
 const isFounding = computed(() => !!completePkg.value && completePkg.value.product.identifier.startsWith(PRODUCT_IDS.founding));
-const guaranteePkg = computed(() => pkgFor(PRODUCT_IDS.guarantee));
+const guaranteePkg = computed(() => checkout.pkgFor("guarantee"));
 const ready = computed(() => auth.ready.value);
 const owned = computed(() => entitlement.isComplete.value || purchases.hasComplete.value);
 const ownedGuarantee = computed(() => entitlement.hasGuarantee.value || purchases.hasGuarantee.value);
 const native = computed(() => purchases.supported.value);
 const completePrice = computed(() => completePkg.value?.product.priceString ?? "$59");
 const guaranteePrice = computed(() => guaranteePkg.value?.product.priceString ?? "$20");
+const buying = computed(() => checkout.busy.value || purchases.busy.value);
 
-async function buy(pkg: PurchasesPackage | undefined, product: "complete" | "guarantee") {
+async function buy(product: "complete" | "guarantee") {
   notice.value = null;
-  if (!pkg) return;
   if (!auth.signedIn.value) { notice.value = "Sign in first (one email code) so the purchase is tied to your account and restores on your other devices."; return; }
-  events.track("purchase_started", { product, store: purchases.supported.value ? "store" : "web" });
-  await purchases.buy(pkg);
-  if (purchases.error.value) { events.track("purchase_failed", { product, error: purchases.error.value }); return; }
-  if (purchases.hasComplete.value || purchases.hasGuarantee.value) {
+  const ok = await checkout.buy(product);
+  if (!ok) { notice.value = checkout.error.value; return; }
+  if (purchases.hasComplete.value || purchases.hasGuarantee.value || entitlement.isComplete.value || entitlement.hasGuarantee.value) {
     justBought.value = true;
-    events.track("purchase_succeeded", { product });
-    for (const wait of [1500, 4000, 8000]) { await new Promise((r) => setTimeout(r, wait)); await entitlement.refresh(); if (entitlement.isComplete.value) break; }
     pushToast("Thank you. Everything is unlocked.", "ok");
   }
 }
@@ -87,7 +83,7 @@ const completeFeatures = [
         <p class="eyebrow">Free</p>
         <p class="display mt-2.5 text-[38px]">$0</p>
         <ul class="mt-5 grid gap-3 text-[13.5px] leading-relaxed text-ink-2">
-          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />40 questions in one state, with full explanations and statute citations</li>
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />20 questions in one state, with full explanations and statute citations</li>
           <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />One short mock</li>
           <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />No card, no trial that converts behind your back</li>
         </ul>
@@ -115,28 +111,18 @@ const completeFeatures = [
           </li>
         </ul>
         <div class="mt-6 grid gap-2">
-          <template v-if="native">
-            <AppButton v-if="!ready" variant="primary" size="lg" block loading>Checking your account…</AppButton>
-            <AppButton
-              v-else-if="!owned"
-              variant="primary"
-              size="lg"
-              block
-              :loading="purchases.busy.value"
-              :disabled="!completePkg"
-              @click="buy(completePkg, 'complete')"
-            >{{ completePkg ? `Get Complete · ${completePrice}` : 'Loading store…' }}</AppButton>
-            <p v-else-if="justBought" class="text-center text-[13.5px] font-medium text-ok">Unlocked. Syncing to your account…</p>
-          </template>
-          <template v-else>
-            <AppButton v-if="!auth.signedIn.value" to="/signin" variant="primary" size="lg" block>Start free, then upgrade</AppButton>
-            <div v-else-if="ready && !owned" class="rounded-card border border-line bg-paper p-3.5 text-[13px] leading-relaxed text-ink-2">
-              <strong class="font-semibold text-ink">Web checkout is opening soon.</strong>
-              Today, buy in the Android app: sign in there with the same email and Complete unlocks
-              here too. Have a gift code? Redeem it from
-              <NuxtLink to="/app/account" class="font-medium text-accent hover:underline hover:underline-offset-4">Account</NuxtLink>.
-            </div>
-          </template>
+          <AppButton v-if="!ready" variant="primary" size="lg" block loading>Checking your account…</AppButton>
+          <AppButton v-else-if="!auth.signedIn.value" to="/signin" variant="primary" size="lg" block>Sign in to buy</AppButton>
+          <AppButton
+            v-else-if="!owned"
+            variant="primary"
+            size="lg"
+            block
+            :loading="buying"
+            :disabled="native && !completePkg"
+            @click="buy('complete')"
+          >{{ native && !completePkg ? 'Loading store…' : `Get Complete · ${completePrice}` }}</AppButton>
+          <p v-else-if="justBought" class="text-center text-[13.5px] font-medium text-ok">Unlocked. Syncing to your account…</p>
         </div>
       </AppCard>
 
@@ -151,21 +137,16 @@ const completeFeatures = [
           <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />Requires five completed full-length mocks — the thing that predicts passing</li>
         </ul>
         <div class="mt-6">
-          <template v-if="native && ready">
-            <AppButton
-              v-if="!ownedGuarantee"
-              variant="secondary"
-              size="lg"
-              block
-              :loading="purchases.busy.value"
-              :disabled="!guaranteePkg || !owned"
-              @click="buy(guaranteePkg, 'guarantee')"
-            >{{ owned ? 'Add the guarantee' : 'Requires Complete' }}</AppButton>
-            <p v-else class="text-center text-[13.5px] font-medium text-ok">Guarantee active.</p>
-          </template>
-          <p v-else-if="!native" class="text-[12px] leading-relaxed text-muted">
-            Available with Complete in the app; on the web when checkout opens.
-          </p>
+          <AppButton
+            v-if="ready && !ownedGuarantee"
+            variant="secondary"
+            size="lg"
+            block
+            :loading="buying"
+            :disabled="!owned || (native && !guaranteePkg)"
+            @click="buy('guarantee')"
+          >{{ owned ? 'Add the guarantee' : 'Requires Complete' }}</AppButton>
+          <p v-else-if="ownedGuarantee" class="text-center text-[13.5px] font-medium text-ok">Guarantee active.</p>
         </div>
       </AppCard>
     </div>

@@ -17,7 +17,7 @@ export interface SizeOptions {
   min?: number;
   max?: number;
   fallback?: number;
-  /** hard cap from the free tier (remaining of 40) — may go below `min`. */
+  /** hard cap from the free tier (remaining of 20) — may go below `min`. */
   cap?: number | null;
 }
 

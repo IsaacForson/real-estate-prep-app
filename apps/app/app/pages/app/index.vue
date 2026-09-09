@@ -224,7 +224,7 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
         <h1 class="display text-[27px]">Which state are you licensing in?</h1>
         <p class="text-[15px] leading-relaxed text-ink-2">
           It decides which national exam you sit, how many questions you get, and what the state
-          portion covers. Everything after this is automatic.
+          portion covers. On the free tier you get one state — you will confirm before it locks.
         </p>
       </div>
       <AppButton variant="primary" size="lg" block icon="map" @click="panel.statePicker.value = true">Choose your state</AppButton>

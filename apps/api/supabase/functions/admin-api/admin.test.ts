@@ -36,6 +36,7 @@ Deno.test("admin ops list matches V2_PLAN §6.2", () => {
     "users.removeDevice",
     "users.setAdmin",
     "users.impersonate",
+    "users.stopImpersonation",
     "entitlements.grant",
     "entitlements.revoke",
     "entitlements.pause",

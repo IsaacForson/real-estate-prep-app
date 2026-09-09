@@ -7,6 +7,18 @@ const events = useEvents();
 const route = useRoute();
 const redirect = computed(() => { const n = route.query.next ?? route.query.redirect; return typeof n === "string" && n.startsWith("/") && !n.startsWith("//") ? n : "/app"; });
 
+/**
+ * Getting out of here.
+ *
+ * This page uses the `bare` layout, so there is no site nav. Sending people `history.back()` looks
+ * polite and is how they get stuck: "Start free" on the landing page goes through /welcome, so Back
+ * returns to the carousel, whose only prominent button is Sign in again. The landing page is the
+ * one place they asked to return to, so both the labelled control and the logo go there on purpose.
+ */
+function goHome() {
+  void navigateTo("/");
+}
+
 const step = ref<"email" | "code">("email");
 const email = ref("");
 const code = ref("");
@@ -61,14 +73,15 @@ function onCodeInput(e: Event) { code.value = (e.target as HTMLInputElement).val
         aria-label="Back"
         @click="step = 'email'; error = null"
       ><Icon name="chevron-left" :size="22" /></button>
-      <NuxtLink
+      <!-- labelled, because an icon on its own read as decoration and left people stuck here -->
+      <button
         v-else
-        to="/welcome"
-        class="tap -ml-2.5 grid place-items-center rounded-full text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink"
-        aria-label="Back"
-      ><Icon name="chevron-left" :size="22" /></NuxtLink>
+        type="button"
+        class="tap -ml-2.5 flex items-center gap-1 rounded-full pr-3 text-[14px] font-bold text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink"
+        @click="goHome"
+      ><Icon name="chevron-left" :size="20" /><span>Home</span></button>
       <div class="flex-1" />
-      <BrandMark :size="28" />
+      <NuxtLink to="/" aria-label="CitePass home" class="tap grid place-items-center rounded-lg"><BrandMark :size="28" /></NuxtLink>
     </div>
 
     <div class="flex flex-1 flex-col justify-center gap-7 py-8">

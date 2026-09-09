@@ -18,6 +18,7 @@ watch(() => auth.user.value?.id, (id) => {
 <template>
   <!-- outside the layout so it is present on every surface, learner and admin alike -->
   <ClientOnly><ImpersonationBar /></ClientOnly>
+  <ClientOnly><AnnouncementBanner /></ClientOnly>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

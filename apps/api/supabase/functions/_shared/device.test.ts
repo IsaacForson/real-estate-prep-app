@@ -20,14 +20,14 @@ Deno.test("fresh account on a fresh device: the full free tier", () => {
 });
 
 Deno.test("V2 §1: a new email on a used device inherits the device's consumption (max of both)", () => {
-  const f = effectiveFreeTier({ ...base, userQuestions: 0, deviceQuestions: 35, deviceMocks: 1 });
-  assertEquals(f.questions_used, 35);
+  const f = effectiveFreeTier({ ...base, userQuestions: 0, deviceQuestions: FREE_TIER_ITEMS - 5, deviceMocks: 1 });
+  assertEquals(f.questions_used, FREE_TIER_ITEMS - 5);
   assertEquals(f.questions_remaining, 5);
   assertEquals(f.mocks_remaining, 0);
   assertEquals(f.exhausted, false);
   assertEquals(f.reason, "mocks");
   // and the other way round: an account that studied elsewhere brings its usage to a new device
-  const g = effectiveFreeTier({ ...base, userQuestions: 40, deviceQuestions: 3 });
+  const g = effectiveFreeTier({ ...base, userQuestions: FREE_TIER_ITEMS, deviceQuestions: 3 });
   assertEquals(g.questions_remaining, 0);
   assertEquals(g.exhausted, true);
   assertEquals(g.reason, "questions");
@@ -35,7 +35,7 @@ Deno.test("V2 §1: a new email on a used device inherits the device's consumptio
 
 Deno.test("legacy client without a device hash: only the account counts", () => {
   const f = effectiveFreeTier({ ...base, userQuestions: 10, deviceQuestions: null, deviceMocks: null });
-  assertEquals(f.questions_remaining, 30);
+  assertEquals(f.questions_remaining, FREE_TIER_ITEMS - 10);
   assertEquals(f.reason, "ok");
 });
 

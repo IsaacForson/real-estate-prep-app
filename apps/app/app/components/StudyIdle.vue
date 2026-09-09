@@ -20,6 +20,7 @@ const content = useContent();
 const coverage = useCoverage();
 const readiness = useReadiness();
 const freeTier = useFreeTier();
+const entitlement = useEntitlement();
 const plan = usePlan();
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
@@ -122,8 +123,11 @@ const actions = computed<Action[]>(() => {
   }
 
   out.push({ key: "mock", label: "Sit a timed mock", hint: "Your exam's real format and length", icon: "clock", tone: "secondary", run: () => { void navigateTo("/app/mocks"); } });
-  if (stateBankThin.value) out.push({ key: "state", label: "Study a different state", hint: "Switch your jurisdiction", icon: "map", tone: "secondary", run: () => emit("change-state") });
-  else out.push({ key: "glossary", label: "Read the glossary", hint: "Terms with the law behind them", icon: "book", tone: "secondary", run: () => { void navigateTo("/app/glossary"); } });
+  if (stateBankThin.value && entitlement.isComplete.value) {
+    out.push({ key: "state", label: "Study a different state", hint: "Switch your jurisdiction", icon: "map", tone: "secondary", run: () => emit("change-state") });
+  } else {
+    out.push({ key: "glossary", label: "Read the glossary", hint: "Terms with the law behind them", icon: "book", tone: "secondary", run: () => { void navigateTo("/app/glossary"); } });
+  }
 
   return out;
 });

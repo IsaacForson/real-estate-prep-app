@@ -1,5 +1,5 @@
 /**
- * Free tier, server-fed (V2 §1, §6.1): 40 questions in one state + one short mock, counted per
+ * Free tier, server-fed (V2 §1, §6.1): 20 questions in one state + one short mock, counted per
  * account AND per device on the server (`free_tier_usage`), the device inheriting the maximum.
  * Nothing is counted locally any more — `remaining` comes from `issue-batch` responses and from
  * `free_tier_usage`; the optimistic decrements below only keep the label honest between syncs.
@@ -92,11 +92,11 @@ export function useFreeTier() {
   }
   /** The one short mock's ids (20 inside the remaining budget). */
   function shortMock(ids: string[]): string[] { return applies.value ? limit(ids).slice(0, FREE_TIER_MOCK_ITEMS) : ids; }
-  /** Switching state is free until the first answer; afterwards only the locked (home) state. */
+  /** Free accounts may only study the home state they confirmed. Complete may switch freely. */
   function canSwitch(code: string): boolean {
     if (!applies.value) return true;
     const locked = jurisdiction.value;
-    return !locked || locked === code || srv.value.questionsUsed === 0;
+    return !locked || locked === code;
   }
 
   /** legacy shape for pages not yet rewritten */

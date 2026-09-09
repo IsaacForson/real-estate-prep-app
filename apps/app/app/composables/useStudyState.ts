@@ -14,6 +14,11 @@ export function useStudyState() {
   const ready = useState<boolean>("studyState.ready", () => false);
 
   async function set(patch: Partial<StudySettings>): Promise<void> {
+    if (patch.jurisdiction) {
+      const entitlement = useEntitlement();
+      const home = entitlement.profile.value?.home_jurisdiction;
+      if (home && !entitlement.isComplete.value && patch.jurisdiction !== home) return;
+    }
     const before = repo.settings();
     const next = await repo.setSettings(patch);
     const changed = (Object.keys(patch) as Array<keyof StudySettings>).filter((k) => before[k] !== next[k]);

@@ -20,7 +20,7 @@ describe("mode", () => {
 });
 
 describe("free tier accounting (SPEC §6)", () => {
-  it("counts distinct answered questions against 40 and locks the jurisdiction on the first answer", () => {
+  it("counts distinct answered questions against the free allowance and locks the jurisdiction on the first answer", () => {
     let s = emptyFreeTier();
     expect(freeRemaining(s)).toBe(FREE_TIER_ITEMS);
     s = recordFreeAnswer(s, "a", "FL");
@@ -30,29 +30,30 @@ describe("free tier accounting (SPEC §6)", () => {
     expect(freeRemaining(s)).toBe(FREE_TIER_ITEMS - 1);
     expect(recordFreeAnswer(s, "b", "TX").jurisdiction).toBe("FL"); // first lock wins
   });
-  it("is exhausted at 40, but already-answered items stay answerable", () => {
+  it("is exhausted at the allowance, but already-answered items stay answerable", () => {
     const s = answered(FREE_TIER_ITEMS);
     expect(freeExhausted(s)).toBe(true);
     expect(canAnswerFree(s, "q3")).toBe(true);
     expect(canAnswerFree(s, "new")).toBe(false);
-    expect(canAnswerFree(answered(39), "new")).toBe(true);
+    expect(canAnswerFree(answered(FREE_TIER_ITEMS - 1), "new")).toBe(true);
   });
   it("limits a candidate list to answered ids plus the remaining budget, preserving order", () => {
-    const s = answered(38);
+    const s = answered(FREE_TIER_ITEMS - 2);
     const cands = ["n1", "q5", "n2", "n3", "q0", "n4"];
     expect(limitFreeCandidates(s, cands)).toEqual(["n1", "q5", "n2", "q0"]);
-    expect(limitFreeCandidates(answered(40), cands)).toEqual(["q5", "q0"]);
-    expect(limitFreeCandidates(emptyFreeTier(), ids(45))).toHaveLength(40);
+    expect(limitFreeCandidates(answered(FREE_TIER_ITEMS), cands)).toEqual(["q5", "q0"]);
+    expect(limitFreeCandidates(emptyFreeTier(), ids(45))).toHaveLength(FREE_TIER_ITEMS);
   });
-  it("allows switching state only before the first answer or back to the locked one", () => {
+  it("allows switching state only before a state is locked, or back to that state", () => {
     expect(canSwitchJurisdiction(emptyFreeTier(), "TX")).toBe(true);
+    expect(canSwitchJurisdiction({ jurisdiction: "FL", answeredIds: [], mockUsed: false }, "TX")).toBe(false);
     expect(canSwitchJurisdiction(answered(1), "FL")).toBe(true);
     expect(canSwitchJurisdiction(answered(1), "TX")).toBe(false);
   });
   it("builds the one short mock inside the remaining budget", () => {
-    expect(shortMockIds(emptyFreeTier(), ids(100))).toHaveLength(FREE_TIER_MOCK_ITEMS);
-    expect(shortMockIds(answered(35), ids(100, "m"))).toHaveLength(5);
-    expect(shortMockIds(answered(40), ids(100, "m"))).toHaveLength(0);
+    expect(shortMockIds(emptyFreeTier(), ids(100))).toHaveLength(Math.min(FREE_TIER_MOCK_ITEMS, FREE_TIER_ITEMS));
+    expect(shortMockIds(answered(FREE_TIER_ITEMS - 5), ids(100, "m"))).toHaveLength(5);
+    expect(shortMockIds(answered(FREE_TIER_ITEMS), ids(100, "m"))).toHaveLength(0);
   });
   it("normalizes whatever was persisted", () => {
     expect(normalizeFreeTier(undefined)).toEqual(emptyFreeTier());

@@ -21,8 +21,12 @@ function go(n: number) { const el = track.value; if (!el) return; el.scrollTo({ 
 <template>
   <div class="safe-px mx-auto flex w-full max-w-lg flex-1 flex-col">
     <div class="flex items-center justify-between pt-6">
-      <BrandMark :size="30" wordmark />
-      <NuxtLink to="/signin" class="tap inline-flex items-center px-2 text-[13.5px] font-medium text-accent">Sign in</NuxtLink>
+      <!-- linked: this is the only chrome on the page, so it is the only way back to the site -->
+      <NuxtLink to="/" aria-label="CitePass home" class="tap inline-flex items-center rounded-lg"><BrandMark :size="30" wordmark /></NuxtLink>
+      <div class="flex items-center gap-3">
+        <NuxtLink to="/" class="tap inline-flex items-center px-2 text-[13.5px] font-medium text-ink-2 hover:text-ink">Home</NuxtLink>
+        <NuxtLink to="/signin" class="tap inline-flex items-center px-2 text-[13.5px] font-medium text-accent">Sign in</NuxtLink>
+      </div>
     </div>
 
     <div
@@ -72,7 +76,8 @@ function go(n: number) { const el = track.value; if (!el) return; el.scrollTo({ 
       <AppButton v-else to="/signin" variant="primary" size="lg" block icon-right="arrow-right">Get started — it's free</AppButton>
 
       <p class="text-center text-[12px] leading-relaxed text-muted">
-        40 free questions in your state, every one with its citation. No card. $59 once for everything.
+        20 free questions in your state, every one with its citation. No card. $59 once for everything.
+        <NuxtLink to="/" class="ml-1 font-semibold text-ink-2 underline-offset-4 hover:text-ink hover:underline">Back to the site</NuxtLink>
       </p>
     </div>
   </div>

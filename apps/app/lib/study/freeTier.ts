@@ -1,13 +1,13 @@
 /**
- * Free-tier accounting (SPEC §6: 40 questions, full explanations, one state, one short mock).
+ * Free-tier accounting (20 questions, full explanations, one state, one short mock).
  *
- * This is the client's copy of the rule so the UI can be honest ("12 of 40 free questions left")
+ * This is the client's copy of the rule so the UI can be honest ("12 of 20 free questions left")
  * and offline. It is UX, not security: `issue-batch` enforces the same numbers server-side
  * (apps/api/supabase/functions/_shared/limits.ts) and refuses with 402/403 when exceeded.
  * Persisted in Dexie kv under `freeTier` so it survives reloads.
  */
 
-export const FREE_TIER_ITEMS = 40;
+export const FREE_TIER_ITEMS = 20;
 export const FREE_TIER_MOCK_ITEMS = 20;
 /** Must match FREE_TIER_MOCK_FORM in apps/api `_shared/limits.ts`. */
 export const FREE_TIER_MOCK_FORM = "short";
@@ -70,9 +70,9 @@ export function limitFreeCandidates(s: FreeTierState, candidates: string[]): str
   return out;
 }
 
-/** Switching state is free until the first answer; afterwards only the locked state is allowed. */
+/** Once a state is locked in, only that state is allowed. Complete bypasses this on the server. */
 export function canSwitchJurisdiction(s: FreeTierState, to: string): boolean {
-  return s.answeredIds.length === 0 || s.jurisdiction === null || s.jurisdiction === to;
+  return s.jurisdiction === null || s.jurisdiction === to;
 }
 
 /** The one free mock: a short form of FREE_TIER_MOCK_ITEMS questions inside the remaining budget. */

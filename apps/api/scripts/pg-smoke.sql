@@ -409,3 +409,102 @@ select (public.fn_bump_content_epoch() ->> 'epoch')::int = 2 as epoch_bumped;
 select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
 select content_epoch = 2 as learner_sees_new_epoch, content_synced_at is not null as sync_time_recorded from public.v_app_runtime;
 reset role;
+
+\echo [23] 0017: an impersonated session is actually usable, and works for a user with no device
+-- The bug this pins down: fn_session_is_valid required profiles.current_session_id to be the
+-- session whenever the ceiling is 1. A shadow session never moves that pointer, so [20] created a
+-- row that was valid-looking and rejected on every request. Asserting the row exists is not enough.
+-- dave signs up here: inserting into auth.users needs the owner role, not a switched-in one
+insert into auth.users (id, email) values ('55555555-5555-4555-8555-555555555555', 'dave@example.com');
+
+select pg_temp.as_service();
+-- fn_set_app_setting returns the row; a composite "is not null" needs every column non-null, and
+-- updated_by is null for the service role, so assert the effective ceiling instead.
+select public.fn_set_app_setting('device_policy', '{"max_active_devices": 1}'::jsonb) is distinct from null as setting_written;
+select public.fn_max_active_devices() = 1 as one_device_again;
+
+-- carol has a real device from [19]; the shadow must attach to it and validate
+\set csid '00000000-0000-0000-0000-000000000000'
+create temp table shadow_carol as
+  select * from public.fn_start_shadow_session('44444444-4444-4444-8444-444444444444');
+select minted_device = false as reused_carols_real_device,
+       expires_at > now() as shadow_expires_later
+from shadow_carol;
+select public.fn_session_is_valid('44444444-4444-4444-8444-444444444444', session_id, device_id) as shadow_session_is_usable
+from shadow_carol;
+select public.fn_active_device_count('44444444-4444-4444-8444-444444444444') = 1 as carol_slot_untouched;
+
+-- carol signing in on her phone must not knock the admin's shadow session offline
+select count(*) = 1 as shadow_survives_user_login
+from public.sessions where user_id = '44444444-4444-4444-8444-444444444444' and is_shadow and revoked_at is null;
+select session_id is not null as carol_relogin
+from public.fn_register_device('44444444-4444-4444-8444-444444444444', repeat('5',64), 'ios', 'phone2');
+select public.fn_session_is_valid('44444444-4444-4444-8444-444444444444', session_id, device_id) as shadow_still_usable_after_login
+from shadow_carol;
+
+-- dave signed up and never opened the app: impersonation must still work
+select public.fn_active_device_count('55555555-5555-4555-8555-555555555555') = 0 as dave_has_no_device;
+create temp table shadow_dave as
+  select * from public.fn_start_shadow_session('55555555-5555-4555-8555-555555555555');
+select minted_device as dave_device_minted from shadow_dave;
+select public.fn_session_is_valid('55555555-5555-4555-8555-555555555555', session_id, device_id) as dave_shadow_usable
+from shadow_dave;
+-- the minted device is invisible to the slot accounting and to dave's own device screen
+select public.fn_active_device_count('55555555-5555-4555-8555-555555555555') = 0 as shadow_device_takes_no_slot;
+select pg_temp.as_user('55555555-5555-4555-8555-555555555555');
+select count(*) = 0 as shadow_device_hidden_from_owner from public.v_my_devices;
+select pg_temp.as_service();
+
+-- dave's first real sign-in must not be displaced by the shadow device, and vice versa
+select superseded = 0 as shadow_does_not_retire_real_device
+from public.fn_register_device('55555555-5555-4555-8555-555555555555', repeat('7',64), 'ios', 'dave-phone');
+select public.fn_active_device_count('55555555-5555-4555-8555-555555555555') = 1 as dave_now_has_one_slot;
+
+-- a second "open as user" replaces the first rather than stacking
+select session_id is not null as second_open_as_user
+from public.fn_start_shadow_session('55555555-5555-4555-8555-555555555555');
+select count(*) = 1 as only_one_live_shadow
+from public.sessions where user_id = '55555555-5555-4555-8555-555555555555' and is_shadow and revoked_at is null;
+
+-- pressing Stop revokes it server-side
+select public.fn_end_shadow_session('55555555-5555-4555-8555-555555555555') >= 1 as stop_revoked_shadow;
+select count(*) = 0 as no_live_shadow_after_stop
+from public.sessions where user_id = '55555555-5555-4555-8555-555555555555' and is_shadow and revoked_at is null;
+do $$ begin perform public.fn_end_shadow_session('55555555-5555-4555-8555-555555555555');
+exception when insufficient_privilege then raise exception 'service role could not end a shadow session'; end $$;
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+do $$ begin perform public.fn_end_shadow_session('55555555-5555-4555-8555-555555555555');
+  raise exception 'user ended a shadow session';
+exception when insufficient_privilege then raise notice 'ok: ending a shadow session is service-role only'; end $$;
+reset role;
+
+-- an expired shadow session stops validating on its own
+select pg_temp.as_service();
+create temp table shadow_exp as
+  select * from public.fn_start_shadow_session('55555555-5555-4555-8555-555555555555');
+update public.sessions set expires_at = now() - interval '1 minute'
+where id = (select session_id from shadow_exp);
+select public.fn_session_is_valid('55555555-5555-4555-8555-555555555555', session_id, device_id) = false as expired_shadow_rejected
+from shadow_exp;
+reset role;
+
+\echo [24] 0018: a shadow device does not make an empty account look like it has one
+-- erin has never opened the app; impersonating her must not change her device count.
+-- auth.users needs the owner role, so insert before switching into service/user roles.
+insert into auth.users (id, email) values ('66666666-6666-4666-8666-666666666666', 'erin@example.com') on conflict do nothing;
+select pg_temp.as_service();
+select session_id is not null as erin_shadow from public.fn_start_shadow_session('66666666-6666-4666-8666-666666666666');
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select devices = 0 as console_reports_no_devices
+from public.fn_admin_search_users('erin@example.com', 10, 0);
+select (public.fn_admin_user('66666666-6666-4666-8666-666666666666') ->> 'active_devices')::int = 0 as detail_active_devices_zero,
+       (public.fn_admin_user('66666666-6666-4666-8666-666666666666') ->> 'shadow_sessions')::int = 1 as detail_shows_live_shadow,
+       jsonb_array_length(public.fn_admin_user('66666666-6666-4666-8666-666666666666') -> 'devices') = 1 as detail_still_lists_shadow_row;
+
+\echo [25] 0020: a free account cannot change home_jurisdiction after the first write
+select pg_temp.as_user('66666666-6666-4666-8666-666666666666');
+update public.profiles set home_jurisdiction = 'CO' where id = '66666666-6666-4666-8666-666666666666';
+select home_jurisdiction = 'CO' as erin_home_set from public.profiles where id = '66666666-6666-4666-8666-666666666666';
+update public.profiles set home_jurisdiction = 'TX' where id = '66666666-6666-4666-8666-666666666666';
+select home_jurisdiction = 'CO' as erin_home_stays from public.profiles where id = '66666666-6666-4666-8666-666666666666';
+reset role;

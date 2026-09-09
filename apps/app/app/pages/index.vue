@@ -3,7 +3,7 @@ import { JURISDICTIONS, JURISDICTION_CODES } from "@rep/schema";
 /** Web landing. On Capacitor the auth middleware sends `/` to /welcome. */
 useHead({
   title: "Real Estate Exam Prep — all 50 states + DC, statute-cited answers, $59 once",
-  meta: [{ name: "description", content: "The only real estate exam prep that covers every state portion, cites the statute behind every answer, and costs one payment forever. 40 free questions in your state." }],
+  meta: [{ name: "description", content: "The only real estate exam prep that covers every state portion, cites the statute behind every answer, and costs one payment forever. 20 free questions in your state." }],
 });
 const auth = useAuth();
 const reviews = useReviews();
@@ -54,7 +54,7 @@ const steps = [
 
           <div class="flex flex-wrap gap-2.5">
             <AppButton :to="auth.signedIn.value ? '/app' : '/signin'" variant="primary" size="lg" icon-right="arrow-right">
-              {{ auth.signedIn.value ? 'Open the app' : 'Start free — 40 questions' }}
+              {{ auth.signedIn.value ? 'Open the app' : 'Start free — 20 questions' }}
             </AppButton>
             <AppButton to="/pricing" variant="secondary" size="lg">$59 once, everything</AppButton>
           </div>
@@ -166,7 +166,7 @@ const steps = [
         <AppCard padding="lg">
           <p class="eyebrow">Free</p>
           <p class="tabular display mt-1.5 text-[32px]">$0</p>
-          <p class="mt-3.5 text-[13.5px] leading-relaxed text-ink-2">40 questions in one state with full explanations and citations, one short mock. No card.</p>
+          <p class="mt-3.5 text-[13.5px] leading-relaxed text-ink-2">20 questions in one state with full explanations and citations, one short mock. No card.</p>
         </AppCard>
 
         <AppCard padding="lg" class="ring-2 ring-ink/10">
@@ -240,7 +240,7 @@ const steps = [
       <div class="grid items-center gap-6 rounded-panel bg-action p-8 text-action-ink md:grid-cols-[1fr_auto] md:p-12">
         <div class="grid gap-2.5">
           <h2 class="display text-[28px] md:text-[36px]">Failed the state portion? That's the half nobody prepared you for.</h2>
-          <p class="text-[15px] leading-relaxed opacity-70">Start with 40 free questions in your state. Every one comes with its citation.</p>
+          <p class="text-[15px] leading-relaxed opacity-70">Start with 20 free questions in your state. Every one comes with its citation.</p>
         </div>
         <AppButton
           :to="auth.signedIn.value ? '/app' : '/signin'"

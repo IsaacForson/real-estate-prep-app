@@ -88,7 +88,7 @@ serve(async (req) => {
   ]);
   const paid = ent.complete;
 
-  // ---- free tier (SPEC §6: 40 questions, one state, 1 short mock; V2 §1: per device too) -------
+  // ---- free tier (20 questions, one state, 1 short mock; V2 §1: per device too) -------
   let cap: number | null = null;
   let free: Awaited<ReturnType<typeof freeTierFor>> | null = null;
   if (!paid) {

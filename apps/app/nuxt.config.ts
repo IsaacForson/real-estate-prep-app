@@ -30,6 +30,8 @@ export default defineNuxtConfig({
       contentBase: "/content",
       revenuecatGoogleKey: process.env.NUXT_PUBLIC_REVENUECAT_GOOGLE_KEY ?? "",
       revenuecatAppleKey: process.env.NUXT_PUBLIC_REVENUECAT_APPLE_KEY ?? "",
+      checkoutCompleteUrl: process.env.NUXT_PUBLIC_CHECKOUT_COMPLETE_URL ?? "",
+      checkoutGuaranteeUrl: process.env.NUXT_PUBLIC_CHECKOUT_GUARANTEE_URL ?? "",
       // Empty by default → "static" dev mode (no auth, local items). Set both to talk to apps/api.
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL ?? "",
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY ?? "",

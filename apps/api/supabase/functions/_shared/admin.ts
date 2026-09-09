@@ -18,6 +18,7 @@ export const ADMIN_OPS = [
   "users.removeDevice",
   "users.setAdmin",
   "users.impersonate",
+  "users.stopImpersonation",
   "entitlements.grant",
   "entitlements.revoke",
   "entitlements.pause",
