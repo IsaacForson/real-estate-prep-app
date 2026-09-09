@@ -24,6 +24,13 @@ const native = computed(() => purchases.supported.value);
 const completePrice = computed(() => completePkg.value?.product.priceString ?? "$59");
 const guaranteePrice = computed(() => guaranteePkg.value?.product.priceString ?? "$20");
 const buying = computed(() => checkout.busy.value || purchases.busy.value);
+const storeError = computed(() => purchases.error.value);
+const storePending = computed(() => native.value && !purchases.ready.value && !completePkg.value);
+async function loadStore() {
+  if (!native.value) return;
+  try { await purchases.configure(auth.user.value?.id ?? null); }
+  catch { /* configure records its own error and always flips ready */ }
+}
 
 async function buy(product: "complete" | "guarantee") {
   notice.value = null;
@@ -42,8 +49,8 @@ async function restore() {
   events.track("restore", { found: purchases.hasComplete.value });
   if (!purchases.error.value) pushToast(purchases.hasComplete.value ? "Purchases restored." : "No previous purchases found for this store account.", purchases.hasComplete.value ? "ok" : "info");
 }
-onMounted(async () => { if (native.value) await purchases.configure(auth.user.value?.id ?? null); void entitlement.load(); });
-watch(() => auth.user.value?.id, (id) => { if (id && native.value) void purchases.configure(id); });
+onMounted(async () => { void loadStore(); void entitlement.load(); });
+watch(() => auth.user.value?.id, (id) => { if (id && native.value) void loadStore(); });
 
 const completeFeatures = [
   "All 50 states + DC state portions — states still in production arrive as they pass verification",
@@ -113,15 +120,21 @@ const completeFeatures = [
         <div class="mt-6 grid gap-2">
           <AppButton v-if="!ready" variant="primary" size="lg" block loading>Checking your account…</AppButton>
           <AppButton v-else-if="!auth.signedIn.value" to="/signin" variant="primary" size="lg" block>Sign in to buy</AppButton>
-          <AppButton
-            v-else-if="!owned"
-            variant="primary"
-            size="lg"
-            block
-            :loading="buying"
-            :disabled="native && !completePkg"
-            @click="buy('complete')"
-          >{{ native && !completePkg ? 'Loading store…' : `Get Complete · ${completePrice}` }}</AppButton>
+          <template v-else-if="!owned">
+            <AppButton
+              v-if="!storePending"
+              variant="primary"
+              size="lg"
+              block
+              :loading="buying"
+              @click="buy('complete')"
+            >{{ `Buy Complete · ${completePrice}` }}</AppButton>
+            <AppButton v-else variant="primary" size="lg" block loading>Loading store…</AppButton>
+            <p v-if="native && storeError" class="text-center text-[13px] text-danger">
+              {{ storeError }}
+              <button type="button" class="ml-1 font-semibold text-accent underline underline-offset-2" @click="loadStore">Retry</button>
+            </p>
+          </template>
           <p v-else-if="justBought" class="text-center text-[13.5px] font-medium text-ok">Unlocked. Syncing to your account…</p>
         </div>
       </AppCard>
@@ -143,7 +156,7 @@ const completeFeatures = [
             size="lg"
             block
             :loading="buying"
-            :disabled="!owned || (native && !guaranteePkg)"
+            :disabled="!owned || storePending"
             @click="buy('guarantee')"
           >{{ owned ? 'Add the guarantee' : 'Requires Complete' }}</AppButton>
           <p v-else-if="ownedGuarantee" class="text-center text-[13.5px] font-medium text-ok">Guarantee active.</p>

@@ -19,12 +19,12 @@ export function useAppPanel() {
 }
 
 /**
- * Routes the study loop owns outright: they draw their own header and no shell chrome appears.
- * `/app` is the loop itself; a mock run is a timed exam and must not offer a way out by accident.
+ * Timed mock runner only. Practice, review and the rest of `/app/**` keep the shell header so
+ * there is always a back arrow off the screen — including on the phone, where practice used to
+ * hide the shell and show the logo instead.
  */
-/** Mock runner is always full-screen; the practice loop only on native (web keeps the shell header with title + back). */
-export function isImmersivePath(path: string, native = false): boolean {
-  return /^\/app\/mocks\/run/.test(path) || (native && /^\/app\/practice/.test(path));
+export function isImmersivePath(path: string, _native = false): boolean {
+  return /^\/app\/mocks\/run/.test(path);
 }
 
 const SCREEN_TITLES: Array<[RegExp, string]> = [

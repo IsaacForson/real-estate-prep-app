@@ -134,7 +134,7 @@ onUnmounted(() => {
           ><Icon name="x" :size="20" /></button>
         </header>
 
-        <div class="safe-pb overflow-y-auto px-4 pb-5 pt-4">
+        <div class="overflow-y-auto px-4 pt-4 pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+1.25rem))]">
           <FreeTierGate variant="banner" class="mb-4" />
           <!-- for paid learners the free-tier banner is empty, so this is what sits here instead -->
           <GuaranteeOffer variant="row" class="mb-4" />
@@ -192,7 +192,7 @@ onUnmounted(() => {
           <div class="mt-4 flex items-center justify-center gap-4 text-[13px] font-bold text-muted">
             <NuxtLink to="/help" class="hover:text-ink" @click="close">Help</NuxtLink>
             <span aria-hidden="true">·</span>
-            <NuxtLink v-if="!entitlement.isComplete.value" to="/pricing" class="hover:text-ink" @click="close">Get Complete</NuxtLink>
+            <NuxtLink v-if="!entitlement.isComplete.value" to="/pricing" class="hover:text-ink" @click="close">Buy Complete</NuxtLink>
             <NuxtLink v-else to="/app/account" class="hover:text-ink" @click="close">Complete unlocked</NuxtLink>
           </div>
         </div>

@@ -50,12 +50,11 @@ export function useCheckout() {
       error.value = "Sign in first so the purchase is tied to your account.";
       return false;
     }
-    events.track("purchase_started", { product, store: purchases.supported.value ? "store" : "web" });
+    events.track("purchase_started", { product, store: purchases.supported.value && pkgFor(product) ? "store" : "web" });
     busy.value = true;
     try {
-      if (purchases.supported.value) {
-        const pkg = pkgFor(product);
-        if (!pkg) { error.value = "The store catalog has not loaded yet. Try again in a moment."; return false; }
+      const pkg = purchases.supported.value ? pkgFor(product) : undefined;
+      if (pkg) {
         await purchases.buy(pkg);
         if (purchases.error.value) { error.value = purchases.error.value; events.track("purchase_failed", { product, error: purchases.error.value }); return false; }
       } else {
@@ -70,11 +69,16 @@ export function useCheckout() {
             headers,
           );
           if (!res.url) throw new Error("no checkout url");
-          window.location.assign(res.url);
+          const opened = window.open(res.url, "_blank", "noopener,noreferrer");
+          if (!opened) window.location.href = res.url;
           return true;
         } catch (e) {
           const fallback = hostedUrl(product);
-          if (fallback) { window.location.assign(fallback); return true; }
+          if (fallback) {
+            const opened = window.open(fallback, "_blank", "noopener,noreferrer");
+            if (!opened) window.location.href = fallback;
+            return true;
+          }
           error.value = e instanceof Error ? e.message : "Could not start checkout.";
           events.track("purchase_failed", { product, error: error.value });
           return false;

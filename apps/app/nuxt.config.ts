@@ -15,7 +15,16 @@ export default defineNuxtConfig({
   },
   // Marketing / state pages render on the server for SEO (V2 §1 public list). Everything that needs
   // the session or the local cache is client-only and is also what Capacitor ships.
+  //
+  // `CAPACITOR_BUILD=1` (set by scripts/android-setup.sh before `nuxt generate`) also drops "/" out
+  // of SSR for that one build. Capacitor's WebView always paints whatever file prerendering wrote
+  // for "/" as its very first frame, before Vue mounts or the auth middleware can run — normally
+  // that is the fully-rendered marketing landing page. On a cold app launch that showed as a flash
+  // of the website before the app redirected to /welcome or /app. With "/" client-only in this
+  // build, that first frame is the bare shell instead, and the very first thing to actually paint
+  // is the real destination.
   routeRules: {
+    ...(process.env.CAPACITOR_BUILD ? { "/": { ssr: false } } : {}),
     "/app/**": { ssr: false },
     "/admin/**": { ssr: false },
     "/study/**": { ssr: false },
@@ -36,6 +45,13 @@ export default defineNuxtConfig({
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL ?? "",
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY ?? "",
     },
+  },
+  nitro: {
+    // /api/manifest has no params, so bake it as a static JSON file unconditionally — it must not
+    // depend on Nitro's link-crawler discovering it, which only ever happened via the fully-rendered
+    // marketing "/" page. Inside the packaged native app "/" is a bare shell (see the CAPACITOR_BUILD
+    // note above), so without this the manifest fetch 404s in the shipped app with no live server.
+    prerender: { routes: ["/api/manifest"] },
   },
   typescript: { strict: true, typeCheck: false },
   vite: {

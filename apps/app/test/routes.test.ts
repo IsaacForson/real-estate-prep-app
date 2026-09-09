@@ -23,7 +23,7 @@ describe("auth-first routing (V2 §6.1)", () => {
   it("signed in passes everywhere; Capacitor sends the landing page to /welcome only when signed out", () => {
     expect(authRedirect({ path: "/app/home", signedIn: true, native: false, authConfigured: true })).toBeNull();
     expect(authRedirect({ path: "/", signedIn: false, native: true, authConfigured: true })).toBe(WELCOME_PATH);
-    expect(authRedirect({ path: "/", signedIn: true, native: true, authConfigured: true })).toBeNull();
+    expect(authRedirect({ path: "/", signedIn: true, native: true, authConfigured: true })).toBe("/app");
     expect(authRedirect({ path: "/pricing", signedIn: false, native: true, authConfigured: true })).toBeNull();
   });
   it("static dev mode (no Supabase) gates nothing", () => {

@@ -14,13 +14,26 @@ export interface ContentManifest {
 }
 export interface GlossaryTerm { term: string; definition: string; source: string; quoted_text: string; related_terms: string[]; items: string[]; bank: string }
 
+const EMPTY_MANIFEST: ContentManifest = { generated: "", states: {}, blueprints: {}, status: {}, nationalStatus: {}, glossary: [], audio: {} };
+
 export function useContent() {
   const manifest = useState<ContentManifest | null>("content-manifest", () => null);
+  const error = useState<boolean>("content-manifest-error", () => false);
   async function load(): Promise<ContentManifest> {
     if (manifest.value) return manifest.value;
-    const data = await $fetch<ContentManifest>("/api/manifest");
-    manifest.value = data;
-    return data;
+    try {
+      const data = await $fetch<ContentManifest>("/api/manifest");
+      manifest.value = data;
+      error.value = false;
+      return data;
+    } catch (e) {
+      // A missing/unreachable manifest must not break Home/Study/Mocks: state names come from
+      // @rep/schema regardless, and real question delivery goes through issue-batch, not this file.
+      // Degrade to empty status/blueprints (dashes instead of numbers) rather than throwing.
+      if (import.meta.dev) console.warn("[content] manifest fetch failed", e);
+      error.value = true;
+      return manifest.value ?? EMPTY_MANIFEST;
+    }
   }
-  return { manifest, load };
+  return { manifest, error, load };
 }

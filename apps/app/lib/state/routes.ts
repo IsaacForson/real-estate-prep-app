@@ -37,7 +37,10 @@ export interface RouteDecisionInput {
 export function authRedirect(o: RouteDecisionInput): string | null {
   if (!o.authConfigured) return null;
   const p = normalize(o.path);
-  if (o.native && p === "/" ) return o.signedIn ? null : WELCOME_PATH;
+  // Native has no marketing site: "/" always resolves to somewhere useful — the study loop when
+  // signed in, the onboarding carousel otherwise. Letting a signed-in visit render the landing page
+  // (the previous `null` here) was the bug where reopening the app showed the website, not the app.
+  if (o.native && p === "/") return o.signedIn ? "/app" : WELCOME_PATH;
   if (o.signedIn) return null;
   return isPublicPath(p) ? null : WELCOME_PATH;
 }

@@ -1,11 +1,15 @@
 <script setup lang="ts">
+import { Capacitor } from "@capacitor/core";
 /**
  * Onboarding carousel (mobile first, fine on web): three promises → Get started → sign in.
- * Signed-in users skip straight to the app.
+ * Signed-in users skip straight to the app. The logo/Home/Sign-in row above the carousel is web
+ * chrome only — inside the native app there is no marketing site to link to, and the row was
+ * pushing the first slide's text off a phone screen.
  */
 definePageMeta({ layout: "bare" });
 useHead({ title: "Welcome" });
 const auth = useAuth();
+const native = Capacitor.isNativePlatform();
 watch(() => [auth.ready.value, auth.signedIn.value], ([ready, signedIn]) => { if (ready && signedIn) navigateTo("/app", { replace: true }); }, { immediate: true });
 
 const slides = [
@@ -20,7 +24,7 @@ function go(n: number) { const el = track.value; if (!el) return; el.scrollTo({ 
 </script>
 <template>
   <div class="safe-px mx-auto flex w-full max-w-lg flex-1 flex-col">
-    <div class="flex items-center justify-between pt-6">
+    <div v-if="!native" class="flex items-center justify-between pt-6">
       <!-- linked: this is the only chrome on the page, so it is the only way back to the site -->
       <NuxtLink to="/" aria-label="CitePass home" class="tap inline-flex items-center rounded-lg"><BrandMark :size="30" wordmark /></NuxtLink>
       <div class="flex items-center gap-3">
@@ -72,8 +76,8 @@ function go(n: number) { const el = track.value; if (!el) return; el.scrollTo({ 
         </button>
       </div>
 
-      <AppButton v-if="i < slides.length - 1" variant="primary" size="lg" block icon-right="arrow-right" @click="go(i + 1)">Next</AppButton>
-      <AppButton v-else to="/signin" variant="primary" size="lg" block icon-right="arrow-right">Get started — it's free</AppButton>
+      <!-- always "Get started": swiping (or the dots) moves between slides, the button always signs in -->
+      <AppButton to="/signin" variant="primary" size="lg" block icon-right="arrow-right">Get started</AppButton>
 
       <p class="text-center text-[12px] leading-relaxed text-muted">
         20 free questions in your state, every one with its citation. No card. $59 once for everything.

@@ -526,20 +526,33 @@
   }
 }
 
+/* No `both` fill-mode: Android WebView (and "remove animations") can apply the `from` keyframe
+   and never composite `to`, which left mock/review/home content at opacity 0 — header only. */
 @utility anim-fade-up {
-  animation: cp-fade-up 0.24s var(--ease-standard) both;
+  animation: cp-fade-up 0.24s var(--ease-standard);
 }
 @utility anim-sheet-up {
-  animation: cp-sheet-up 0.3s var(--ease-emphasized) both;
+  animation: cp-sheet-up 0.3s var(--ease-emphasized);
 }
 @utility anim-scale-in {
-  animation: cp-scale-in 0.2s var(--ease-emphasized) both;
+  animation: cp-scale-in 0.2s var(--ease-emphasized);
 }
 @utility anim-pop {
-  animation: cp-pop 0.28s var(--ease-emphasized) both;
+  animation: cp-pop 0.28s var(--ease-emphasized);
 }
 @utility anim-deal-in {
-  animation: cp-deal-in 0.3s var(--ease-emphasized) both;
+  animation: cp-deal-in 0.3s var(--ease-emphasized);
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up,
+  .anim-sheet-up,
+  .anim-scale-in,
+  .anim-pop,
+  .anim-deal-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 @utility shimmer {
   background: linear-gradient(90deg, var(--surface-2) 25%, var(--surface-3) 50%, var(--surface-2) 75%);

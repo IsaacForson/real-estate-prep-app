@@ -17,7 +17,7 @@ case "${1:-}" in
   bundle)
     set -a; source .env; set +a
     pnpm --filter @rep/app content:manifest
-    pnpm --filter @rep/app generate
+    CAPACITOR_BUILD=1 pnpm --filter @rep/app generate
     pnpm --filter @rep/app exec cap sync android
     cd apps/app/android
     echo "sdk.dir=$ANDROID_HOME" > local.properties

@@ -33,23 +33,22 @@ async function buy() {
 }
 </script>
 <template>
-  <template v-if="applies">
-    <button
-      v-if="variant === 'row'"
+  <button
+    v-if="applies && variant === 'row'"
       type="button"
       class="flex min-h-[3.5rem] w-full items-center gap-3 rounded-card border border-accent/40 bg-accent-soft p-3.5 text-left transition-colors hover:border-accent disabled:opacity-60"
       :disabled="busy"
-      @click="buy"
-    >
-      <span class="grid size-9 shrink-0 place-items-center rounded-full bg-accent text-white"><Icon name="shield" :size="18" /></span>
-      <span class="min-w-0 flex-1">
-        <span class="block text-[14px] font-extrabold leading-tight">{{ busy ? "Opening checkout…" : "Add the pass guarantee" }}</span>
-        <span class="block truncate text-[12px] text-ink-2">{{ price }} — your money back if you fail</span>
-      </span>
-      <Icon name="chevron-right" :size="17" class="shrink-0 text-accent" />
-    </button>
+    @click="buy"
+  >
+    <span class="grid size-9 shrink-0 place-items-center rounded-full bg-accent text-white"><Icon name="shield" :size="18" /></span>
+    <span class="min-w-0 flex-1">
+      <span class="block text-[14px] font-extrabold leading-tight">{{ busy ? "Opening checkout…" : "Add the pass guarantee" }}</span>
+      <span class="block truncate text-[12px] text-ink-2">{{ price }} — your money back if you fail</span>
+    </span>
+    <Icon name="chevron-right" :size="17" class="shrink-0 text-accent" />
+  </button>
 
-    <AppCard v-else tone="accent" title="Pass guarantee" :subtitle="`${price} once, on top of Complete`">
+  <AppCard v-else-if="applies" tone="accent" title="Pass guarantee" :subtitle="`${price} once, on top of Complete`">
       <p class="text-[14px] leading-relaxed text-ink-2">
         If you sit the exam and fail, you get back everything you paid — Complete and the guarantee
         both. You need the required mocks finished in the app before the attempt and your official
@@ -72,6 +71,5 @@ async function buy() {
           Full guarantee terms
         </NuxtLink>
       </div>
-    </AppCard>
-  </template>
+  </AppCard>
 </template>

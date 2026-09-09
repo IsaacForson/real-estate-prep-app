@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Capacitor } from "@capacitor/core";
 import { pushToast } from "~/components/Toast.vue";
 import type { OptionLetter } from "@rep/schema";
 import { OPTION_LETTERS } from "@rep/schema";
@@ -28,7 +27,6 @@ const study = useStudy();
 const studyState = useStudyState();
 const content = useContent();
 const panel = useAppPanel();
-const native = Capacitor.isNativePlatform();
 
 const session = computed(() => study.session.value ?? study.activeSession.value);
 const item = computed(() => study.current.value);
@@ -185,40 +183,25 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
 </script>
 <template>
   <div class="flex min-h-dvh flex-col">
-    <!-- The only persistent chrome in the app: progress, score, and the way to everything else. -->
-    <header v-if="native || phase === 'question'" class="safe-pt sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-xl">
-      <div class="safe-px mx-auto flex h-15 max-w-3xl items-center gap-3">
-        <div class="min-w-0 flex-1">
-          <template v-if="phase === 'question'">
-            <div class="flex items-baseline justify-between gap-3">
-              <span class="tabular text-[14px] font-extrabold">
-                {{ position + 1 }} <span class="font-bold text-muted">/ {{ total }}</span>
-              </span>
-              <span class="tabular text-[12.5px] font-bold text-muted">{{ score.c }}/{{ score.n }} correct</span>
-            </div>
-
-            <div v-if="ticks" class="mt-1.5 flex gap-[3px]" role="img" :aria-label="`Question ${position + 1} of ${total}`">
-              <span v-for="(t, i) in ticks" :key="i" class="h-1.5 flex-1 rounded-pill transition-colors duration-300" :class="tickClass[t]" />
-            </div>
-            <div v-else class="mt-1.5 h-1.5 overflow-hidden rounded-pill bg-surface-3">
-              <span
-                class="block h-full rounded-pill bg-accent transition-[width] duration-300 ease-emphasized"
-                :style="{ width: (total ? (100 * position) / total : 0) + '%' }"
-              />
-            </div>
-          </template>
-          <NuxtLink v-else to="/app" aria-label="Home"><BrandMark :size="26" wordmark /></NuxtLink>
-        </div>
-
-        <button
-          v-if="native"
-          type="button"
-          class="tap -mr-2.5 grid shrink-0 place-items-center rounded-full text-ink transition-colors hover:bg-surface-2"
-          aria-label="Open menu"
-          @click="panel.show()"
-        ><Icon name="menu" :size="22" :stroke-width="2.1" /></button>
+    <!-- Progress only. Back + title + menu live on AppShellHeader so Practice matches Mock and Review. -->
+    <div v-if="phase === 'question'" class="border-b border-line px-0 pb-3">
+      <div class="flex items-baseline justify-between gap-3">
+        <span class="tabular text-[14px] font-extrabold">
+          {{ position + 1 }} <span class="font-bold text-muted">/ {{ total }}</span>
+        </span>
+        <span class="tabular text-[12.5px] font-bold text-muted">{{ score.c }}/{{ score.n }} correct</span>
       </div>
-    </header>
+
+      <div v-if="ticks" class="mt-1.5 flex gap-[3px]" role="img" :aria-label="`Question ${position + 1} of ${total}`">
+        <span v-for="(t, i) in ticks" :key="i" class="h-1.5 flex-1 rounded-pill transition-colors duration-300" :class="tickClass[t]" />
+      </div>
+      <div v-else class="mt-1.5 h-1.5 overflow-hidden rounded-pill bg-surface-3">
+        <span
+          class="block h-full rounded-pill bg-accent transition-[width] duration-300 ease-emphasized"
+          :style="{ width: (total ? (100 * position) / total : 0) + '%' }"
+        />
+      </div>
+    </div>
 
     <!-- First run. A single decision on its own screen, not a modal over an empty dashboard. -->
     <div v-if="phase === 'need-state'" class="safe-px anim-fade-up mx-auto grid w-full max-w-md flex-1 content-center gap-5 py-12 text-center">

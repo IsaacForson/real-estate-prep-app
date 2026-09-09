@@ -18,7 +18,7 @@ const title = computed(() => appScreenTitle(route.path));
 <template>
   <div v-if="isApp" class="flex min-h-dvh flex-col bg-bg text-ink">
     <template v-if="!immersive">
-      <AppShellHeader :title="title" />
+      <AppShellHeader :title="title" :home="route.path === '/app'" />
       <AuthBanner />
     </template>
 

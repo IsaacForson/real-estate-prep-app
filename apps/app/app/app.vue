@@ -12,7 +12,7 @@ onMounted(() => { void bootstrap.start(); });
 
 // RevenueCat identity follows the Supabase user so the webhook can match the entitlement (V2 §6.1 #6).
 watch(() => auth.user.value?.id, (id) => {
-  if (id && purchases.supported.value) void purchases.configure(id).catch(() => {});
+  if (id && purchases.supported.value) void purchases.configure(id).catch((e) => { if (import.meta.dev) console.warn("[purchases] configure", e); });
 });
 </script>
 <template>
