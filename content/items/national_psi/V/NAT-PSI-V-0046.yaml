@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0046
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two competing brokerages sign an agreement to charge every seller in town the same commission
+  rate. What is the legal status of that agreement?
+options:
+  - Voidable at the election of either broker
+  - Valid so long as both brokers perform
+  - Unenforceable until reduced to writing
+  - Void because its object is illegal
+key: D
+explanation: A valid contract requires a lawful object. An agreement between competing brokers to
+  fix commission rates violates federal antitrust law, so its purpose is illegal and the agreement
+  is void; neither party can enforce it, and performance would itself be unlawful.
+citation:
+  source: REP Ref. Contracts — Lawful object
+  url: null
+  quoted_text: A contract whose object is illegal — for example, an agreement between competing
+    brokers to fix commission rates, which the cached Sherman Act prohibits, or an agreement to
+    violate zoning law — is void.
+  secondary: []
+terms:
+  - lawful object
+  - void
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

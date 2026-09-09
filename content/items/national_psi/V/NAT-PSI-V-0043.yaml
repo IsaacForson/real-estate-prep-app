@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0043
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A seller who was adjudicated mentally incompetent by a court two years earlier signs a
+  purchase contract without the involvement of a guardian. The contract is generally:"
+options:
+  - Void
+  - Valid and binding
+  - Unenforceable only
+  - Voidable by the buyer
+key: A
+explanation: A person who has been declared incompetent by a court lacks capacity, and a contract
+  signed by such a person is generally void rather than merely voidable. Contrast a minor's
+  contract, which is voidable at the minor's election, and an oral land contract, which is
+  unenforceable.
+citation:
+  source: REP Ref. Contracts — Competent parties (capacity)
+  url: null
+  quoted_text: A contract with a person previously declared incompetent by a court is generally void.
+  secondary: []
+terms:
+  - capacity
+  - void
+  - incompetent
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

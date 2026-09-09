@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0036
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A 16-year-old signs a contract to purchase a vacant lot from an adult seller. Under general
+  contract law, the contract is:"
+options:
+  - Void from the moment it was signed
+  - Voidable at the election of the minor
+  - Voidable at the election of the seller
+  - Unenforceable against either party
+key: B
+explanation: A contract entered into by a minor is voidable, and only the protected party (the
+  minor) may disaffirm it. It is neither void nor voidable by the adult on the other side; until the
+  minor elects to cancel, the contract remains in force.
+citation:
+  source: REP Ref. Contracts — Valid, void, voidable, and unenforceable
+  url: null
+  quoted_text: Contracts entered into by minors, or induced by fraud, misrepresentation, duress, or
+    undue influence, are typically voidable by the injured or protected party.
+  secondary: []
+terms:
+  - voidable
+  - minor
+  - capacity
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

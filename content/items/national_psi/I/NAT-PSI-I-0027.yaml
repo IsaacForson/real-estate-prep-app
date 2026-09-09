@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0027
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A deed conveying a lakefront lot says nothing about the recorded right-of-way the lot has long
+  enjoyed over a neighbor's driveway. What happens to that right-of-way when the lot is sold?
+options:
+  - It passes to the buyer as an appurtenance to the lot
+  - It is extinguished because the deed did not expressly mention it
+  - It reverts to the neighbor who originally granted it
+  - It stays with the seller as a personal right of use
+key: A
+explanation: An appurtenance is a right that belongs to and passes with the land even if the deed
+  does not name it. A recorded right-of-way benefiting the lot is an appurtenant easement, so it
+  transfers automatically with the dominant parcel to the new owner; the deed's silence neither
+  extinguishes it nor leaves it with the seller.
+citation:
+  source: REP Ref. Property & Land Use § 1.7
+  url: null
+  quoted_text: An appurtenance is a right that belongs to and passes with the land even if the deed
+    does not name it, such as an appurtenant easement
+  secondary: []
+terms:
+  - appurtenance
+  - appurtenant easement
+  - right-of-way
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

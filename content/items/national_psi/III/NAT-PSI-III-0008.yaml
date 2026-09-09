@@ -1,0 +1,50 @@
+id: NAT-PSI-III-0008
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Three adjoining lots are worth $85,000, $90,000 and $95,000 as separate parcels. Combined
+  under one ownership as a single pharmacy site, the tract is appraised at $340,000. What is the
+  plottage value?
+options:
+  - $340,000
+  - $270,000
+  - $250,000
+  - $70,000
+key: D
+explanation: Plottage is the increment by which the assembled parcel exceeds the sum of the separate
+  parcels. The parts total 85,000 + 90,000 + 95,000 = $270,000, and the assembled site is worth
+  $340,000, so plottage value is 340,000 − 270,000 = $70,000. The $340,000 is the whole value,
+  $270,000 is the sum of the parts, and $250,000 results from subtracting only one lot's value.
+citation:
+  source: REP Ref. Valuation & Appraisal § 4.10
+  url: null
+  quoted_text: Plottage is the increase in total value when the combined parcel is worth more than the
+    sum of its parts, usually because the larger tract supports a more productive use.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Sum of the separate parcel values = 85,000 + 90,000 + 95,000 = $270,000.
+    Step 2: Value of the assembled tract = $340,000.
+    Step 3: Plottage value = 340,000 − 270,000 = $70,000.
+  formulas:
+    - plottage value = value of assembled parcel − sum of values of separate parcels
+  onscreen_calculator_only: false
+terms:
+  - plottage
+  - assemblage
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

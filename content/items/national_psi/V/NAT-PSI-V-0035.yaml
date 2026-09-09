@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0035
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: Both the optionor and the optionee sign an option agreement. A licensing candidate concludes
+  that the option must be bilateral because both parties signed it. What is the flaw in that
+  reasoning?
+options:
+  - Classification turns on who is bound to perform, and only the optionor is bound
+  - Classification turns on who drafted the document, and the optionee prepared it
+  - Classification turns on whether the agreement was recorded, and options are recorded
+  - Classification turns on whether consideration was paid, and the optionee paid a fee
+key: A
+explanation: Whether a contract is unilateral or bilateral depends on who is obligated, not on who
+  signs. In an option both parties sign, but only the optionor promises anything (to sell if the
+  optionee exercises); the optionee is free to walk away, so the option is unilateral.
+citation:
+  source: REP Ref. Contracts — Bilateral versus unilateral
+  url: null
+  quoted_text: The test is who is obligated, not who signs. Both parties sign an option, but only the
+    optionor is bound.
+  secondary: []
+terms:
+  - unilateral contract
+  - option
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

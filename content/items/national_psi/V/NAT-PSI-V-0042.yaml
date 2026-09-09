@@ -1,0 +1,43 @@
+id: NAT-PSI-V-0042
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A listing licensee receives an offer signed by an individual on behalf of a limited liability
+  company. Before the seller relies on the offer, what should the licensee do?
+options:
+  - Ask the LLC to post additional earnest money as security
+  - Require that every member of the LLC also sign the offer
+  - Treat the offer as void because an entity lacks capacity
+  - Confirm that the signer has authority to bind the LLC
+key: D
+explanation: Entities such as corporations, partnerships, LLCs, and trusts have capacity to
+  contract, but they act only through authorized officers, partners, managers, or trustees. The
+  prudent step is to verify the signer's authority; every member need not sign, and the entity's
+  capacity is not in doubt.
+citation:
+  source: REP Ref. Contracts — Competent parties (capacity)
+  url: null
+  quoted_text: Corporations, partnerships, LLCs, and trusts contract through authorized officers,
+    partners, managers, or trustees; a licensee dealing with an entity should confirm the signer's
+    authority.
+  secondary: []
+terms:
+  - capacity
+  - authority
+  - entity
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

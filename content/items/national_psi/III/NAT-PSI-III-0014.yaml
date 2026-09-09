@@ -1,0 +1,44 @@
+id: NAT-PSI-III-0014
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A federally regulated bank is making a purchase loan on a house. The transaction value exceeds
+  the residential appraisal exemption threshold but is well below the level at which a certified
+  appraiser becomes mandatory. What must the bank obtain?
+options:
+  - A broker price opinion from the listing brokerage
+  - An appraisal by a state-licensed or state-certified appraiser
+  - An appraisal by a state-certified general appraiser only
+  - A written evaluation that need not be done by an appraiser
+key: B
+explanation: For a federally related transaction above the exemption threshold, the lender must
+  obtain an appraisal from a state-licensed or state-certified appraiser. A written evaluation
+  suffices only at or below the threshold; a state-certified appraiser is mandatory only for larger,
+  complex, or nonresidential transactions; and federal law bars using a broker price opinion as the
+  primary basis for value when originating a residential mortgage on a principal dwelling.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.3
+  url: null
+  quoted_text: For an FRT the lender must obtain an appraisal from a state-licensed or state-certified
+    appraiser.
+  secondary: []
+terms:
+  - federally related transaction
+  - evaluation
+  - licensed appraiser
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

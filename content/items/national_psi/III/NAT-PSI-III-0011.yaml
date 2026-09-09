@@ -1,0 +1,43 @@
+id: NAT-PSI-III-0011
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A lender orders an appraisal of a house that is rented under a two-year lease at a rent below
+  market. Which interest is being appraised, and how does its value compare with the fee simple
+  value?
+options:
+  - Leasehold; above fee simple value
+  - Fee simple; equal to leased fee value
+  - Leased fee; below fee simple value
+  - Leased fee; above fee simple value
+key: C
+explanation: When a lease is in place, the owner's interest is the leased fee, which reflects
+  contract rents and the reversion at lease end. Because contract rent is below market, the leased
+  fee is worth less than the fee simple, while the tenant's leasehold has positive value. Fee simple
+  value assumes no leases, so it is not the interest a lender appraises on a rented house.
+citation:
+  source: REP Ref. Valuation & Appraisal § 5.3
+  url: null
+  quoted_text: Leased fee value is the lessor's interest, reflecting contract rents and the reversion
+    at lease end; if contract rent is below market, leased fee value is below fee simple value.
+  secondary: []
+terms:
+  - leased fee
+  - leasehold
+  - fee simple
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

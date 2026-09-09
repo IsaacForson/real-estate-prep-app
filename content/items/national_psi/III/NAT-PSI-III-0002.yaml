@@ -1,0 +1,58 @@
+id: NAT-PSI-III-0002
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner bought a home for $365,000 three years ago and later spent $52,000 adding a primary
+  suite. An appraiser now estimates market value at $402,000. How much did the addition contribute
+  to value?
+options:
+  - $52,000
+  - $37,000
+  - $15,000
+  - $89,000
+key: B
+explanation: "Under the principle of contribution, a component is worth what it adds to the value of
+  the whole, not what it cost. The addition contributed the difference between today's value and the
+  purchase price: 402,000 − 365,000 = $37,000. Treating the $52,000 cost as the contribution
+  confuses cost with value; subtracting the contribution from the cost gives the $15,000 shortfall
+  rather than the contribution; adding the cost to the value gain double counts."
+citation:
+  source: REP Ref. Valuation & Appraisal § 4.4
+  url: null
+  quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+    value of the whole, not by what it cost.
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Identify the price paid (historical fact): $365,000.
+
+    Step 2: Identify current market value (opinion as of today): $402,000.
+
+    Step 3: Contribution of the addition = value now − price paid = 402,000 − 365,000 = $37,000.
+
+    Step 4: Compare with cost: the $52,000 spent exceeded the $37,000 it added; the market did not
+    reimburse the full cost.
+  formulas:
+    - contribution = value with component − value without component
+    - value ≠ cost
+  onscreen_calculator_only: false
+terms:
+  - contribution
+  - cost
+  - value
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

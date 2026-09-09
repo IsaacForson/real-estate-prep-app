@@ -6,8 +6,8 @@ States by phase: grounded 47 · blueprinted 4
 
 bank | vendor→national | map | bp | target | auth (docs/KB) | refs resolved | draft | verified | qa | published | review | mocks | phase
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-National — Pearson VUE (national_pearsonvue) | pearsonvue | n/a | ✓ | 880 | 21 / 1639 | 60/60 (100%) | 0 | 1 | 203 | 0 | 0 | 0 | verified
-National — PSI (national_psi) | psi | n/a | ✓ | 880 | 21 / 1639 | 66/66 (100%) | 0 | 0 | 0 | 0 | 0 | 0 | grounded
+National — Pearson VUE (national_pearsonvue) | pearsonvue | n/a | ✓ | 880 | 21 / 1639 | 60/60 (100%) | 0 | 2 | 203 | 0 | 0 | 0 | verified
+National — PSI (national_psi) | psi | n/a | ✓ | 880 | 21 / 1639 | 66/66 (100%) | 0 | 46 | 0 | 0 | 0 | 0 | verified
 Alabama (state_AL) | pearsonvue → pearsonvue | high | ✓ | 440 | 2 / 340 | 104/104 (100%) | 0 | 0 | 0 | 0 | 0 | 0 | grounded
 Alaska (state_AK) | pearsonvue → pearsonvue | high | ✓ | 440 | 2 / 209 | 93/97 (96%) | 0 | 0 | 0 | 0 | 0 | 0 | grounded
 Arizona (state_AZ) | pearsonvue → pearsonvue | high | ✓ | 660 | 9 / 596 | 89/135 (66%) | 0 | 0 | 0 | 0 | 0 | 0 | grounded

@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0024
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer is purchasing a manufactured home that sits on a rented space in a park and still
+  carries a vehicle-type title. How should a licensee classify the home?
+options:
+  - Real property, because it has been occupied as a residence
+  - Personal property, because it still carries a vehicle-type title
+  - Real property, because it is connected to utilities and fully skirted
+  - A fixture of the park owner's land, because it rests on the lot
+key: B
+explanation: A manufactured home is personal property while it carries a vehicle-type title. It may
+  become real property only when it is permanently affixed to a foundation on land the owner holds
+  and the state's conversion or title-surrender procedure is completed. A home on rented park land
+  with a vehicle title has met neither condition.
+citation:
+  source: REP Ref. Property & Land Use § 1.6
+  url: null
+  quoted_text: A manufactured home is personal property while it carries a vehicle-type title; it may
+    become real property when permanently affixed to a foundation on land the owner holds and a
+    state conversion or title-surrender procedure is completed.
+  secondary: []
+terms:
+  - manufactured home
+  - personal property
+  - title conversion
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

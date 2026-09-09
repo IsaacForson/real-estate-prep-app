@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0025
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Years ago a rancher deeded a tract as 'the surface estate only,' reserving all oil, gas, and
+  minerals. The current surface owner now contracts to sell the tract to a buyer who expects to
+  receive the minerals. What will the buyer actually acquire?
+options:
+  - The surface and the minerals, because a later sale reunites the severed estates
+  - The minerals only, because the surface owner's deed passes subsurface rights first
+  - The surface estate only, because the recorded reservation severed the minerals
+  - The surface plus a half interest in the minerals, divided by operation of law
+key: C
+explanation: Subsurface mineral rights may be sold or reserved apart from the surface. Once the
+  rancher severed the mineral estate by reservation, the surface owner never held it and can convey
+  only the surface. The reservation appears in the chain of title, so the buyer has constructive
+  notice and takes the surface subject to the outstanding mineral estate.
+citation:
+  source: REP Ref. Property & Land Use § 1.7
+  url: null
+  quoted_text: When the surface owner later sells, the mineral estate does not pass, because the
+    farmer severed it and the reservation appears in the chain of title.
+  secondary: []
+terms:
+  - mineral rights
+  - surface estate
+  - reservation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

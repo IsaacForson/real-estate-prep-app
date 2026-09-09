@@ -1,0 +1,43 @@
+id: NAT-PV-I-0679
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A tenant plants wheat on leased farmland. The lease ends unexpectedly when the landlord sells
+  the property, through no fault of the tenant. Under the doctrine of emblements, who may harvest
+  the wheat?
+options:
+  - The tenant of the property may harvest the wheat
+  - The landlord of the property may harvest the wheat
+  - The buyer of the property may harvest the wheat
+  - The situation where no one may harvest the wheat
+key: A
+explanation: The doctrine of emblements gives the tenant the right to re-enter and harvest crops
+  they planted when the tenancy ends through no fault. The landlord or buyer does not acquire this
+  right, and the crops do not become real property automatically.
+citation:
+  source: REP Ref. Property & Land Use § 1.5
+  url: null
+  quoted_text: Annual crops produced by cultivation are treated as personal property of the person who
+    planted them and are called emblements. Under the doctrine of emblements, a tenant whose tenancy
+    ends through no fault of the tenant at an unpredictable time may re-enter to harvest crops the
+    tenant planted.
+  secondary: []
+terms:
+  - emblements
+  - tenant
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

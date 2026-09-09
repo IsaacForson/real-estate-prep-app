@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0037
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer who was a minor when a land contract was signed reaches the age of majority and, over
+  the next several months, keeps making the installment payments. What is the effect on the
+  contract?
+options:
+  - The contract became void when the buyer reached majority
+  - The contract must be re-signed before it can be enforced
+  - The contract has been ratified and is now fully binding
+  - The contract remains voidable indefinitely by the buyer
+key: C
+explanation: A voidable contract stays in force until the protected party elects to cancel it, and
+  that party may instead affirm it. Continuing to perform after reaching majority is ratification,
+  which makes the contract fully binding on the former minor.
+citation:
+  source: REP Ref. Contracts — Valid, void, voidable, and unenforceable
+  url: null
+  quoted_text: Until that party elects to void it, the contract remains in force, and the protected
+    party may instead choose to affirm (ratify) it.
+  secondary: []
+terms:
+  - ratification
+  - voidable
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

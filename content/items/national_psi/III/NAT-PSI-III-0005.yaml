@@ -1,0 +1,54 @@
+id: NAT-PSI-III-0005
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A home has a market value of $275,000 in a county that assesses at 35 percent of market value.
+  The owner qualifies for a $20,000 homestead exemption and the combined rate is 28 mills. What is
+  the annual property tax?
+options:
+  - $2,135
+  - $2,695
+  - $7,140
+  - $7,700
+key: A
+explanation: Tax equals assessed value, less exemptions, multiplied by the tax rate. Assessed value
+  is 275,000 × 0.35 = $96,250; subtracting the $20,000 exemption leaves $76,250 taxable; 28 mills is
+  0.028, so tax is 76,250 × 0.028 = $2,135. Skipping the exemption gives $2,695; applying the rate
+  to market value less the exemption gives $7,140; applying it to full market value gives $7,700.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.3
+  url: null
+  quoted_text: Tax equals assessed value, less exemptions such as a homestead exemption, multiplied by
+    the tax rate.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Assessed value = market value × assessment ratio = 275,000 × 0.35 = $96,250.
+    Step 2: Taxable value = assessed value − homestead exemption = 96,250 − 20,000 = $76,250.
+    Step 3: Convert the rate: 28 mills = 28 ÷ 1,000 = 0.028.
+    Step 4: Tax = 76,250 × 0.028 = $2,135.
+  formulas:
+    - assessed value = market value × assessment ratio
+    - tax = (assessed value − exemptions) × mill rate ÷ 1,000
+    - one mill = $0.001
+  onscreen_calculator_only: false
+terms:
+  - assessed value
+  - mill rate
+  - homestead exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09

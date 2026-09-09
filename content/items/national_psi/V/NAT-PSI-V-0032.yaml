@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0032
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A buyer and seller have both signed a purchase agreement with closing set six weeks out. The
+  deed has been prepared but has yet to be delivered. In the legal sense, the purchase agreement is
+  best described as:"
+options:
+  - An executory unilateral contract
+  - An executory bilateral contract
+  - An executed unilateral contract
+  - An executed bilateral contract
+key: B
+explanation: The agreement is bilateral because each side has made a promise (the seller to convey,
+  the buyer to pay), and it is executory because those promises remain unperformed until closing. A
+  contract that has merely been signed is executed only in the loose everyday sense; exam usage
+  treats executed as fully performed.
+citation:
+  source: REP Ref. Contracts — Executed versus executory
+  url: null
+  quoted_text: A signed purchase agreement awaiting closing is executory.
+  secondary: []
+terms:
+  - executory
+  - bilateral contract
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-09
