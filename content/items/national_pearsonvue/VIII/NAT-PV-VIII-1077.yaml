@@ -1,0 +1,49 @@
+id: NAT-PV-VIII-1077
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller wants to net $180,000 after paying a 5% commission and $2,500 in closing costs. What
+  must the sale price be to achieve that net?
+options:
+  - $192,105.26
+  - $189,473.68
+  - $191,625.00
+  - $191,500.00
+key: A
+explanation: Under the net-to-seller formula, price equals (desired net plus closing costs) divided
+  by one minus the commission rate. Adding $180,000 and $2,500 gives $182,500; dividing by 0.95
+  yields $192,105.26. The distractor $189,473.68 results from dividing the net alone by 0.95,
+  omitting the closing costs.
+citation:
+  source: REP Ref. Real Estate Math § 4.3
+  url: null
+  quoted_text: price = (desired net + other seller costs) ÷ (1 − commission rate)
+  secondary: []
+math:
+  worked_solution: |-
+    $180,000 + $2,500 = $182,500
+    1 − 0.05 = 0.95
+    $182,500 ÷ 0.95 = $192,105.263157...
+    Rounded to the nearest cent: $192,105.26
+  formulas:
+    - price = (desired net + other seller costs) ÷ (1 − commission rate)
+  onscreen_calculator_only: false
+terms:
+  - net
+  - commission
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

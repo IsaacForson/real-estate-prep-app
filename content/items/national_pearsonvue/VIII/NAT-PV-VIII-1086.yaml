@@ -1,0 +1,55 @@
+id: NAT-PV-VIII-1086
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.F
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investor purchases a small office building for $260,000, spends $25,000 on capital
+  improvements, incurs $3,000 in acquisition costs, and later sells the building for $350,000,
+  paying $7,000 in selling costs. What is the investor's return on investment (ROI) expressed as a
+  percent?
+options:
+  - 18.64%
+  - 22.81%
+  - 29.63%
+  - 16.27%
+key: A
+explanation: The correct ROI is 18.64%, found by subtracting total cost (purchase price plus
+  improvements, acquisition and selling costs) from the sale price and dividing by total cost, as
+  prescribed in § 7.6. The 22.81% distractor results from omitting acquisition and selling costs
+  from total cost, which overstates the return.
+citation:
+  source: REP Ref. Real Estate Math § 7.6
+  url: null
+  quoted_text: ROI or percent profit = (amount received − total cost) ÷ total cost. Total cost
+    includes the price paid plus capital improvements and, if the problem includes them, acquisition
+    and selling costs.
+  secondary: []
+math:
+  worked_solution: |-
+    Total cost = $260,000 + $25,000 + $3,000 + $7,000 = $295,000
+    Amount received = sale price = $350,000
+    Profit = amount received − total cost = $350,000 − $295,000 = $55,000
+    ROI = profit ÷ total cost = $55,000 ÷ $295,000 = 0.18644 → 18.64%
+  formulas:
+    - ROI = (amount received − total cost) ÷ total cost
+  onscreen_calculator_only: false
+terms:
+  - roi
+  - total cost
+  - amount received
+  - capital improvements
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

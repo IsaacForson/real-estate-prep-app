@@ -1,0 +1,45 @@
+id: NAT-PV-VIII-1073
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An agent received a commission check of $10,500, which represents 60% of the brokerage's share
+  of the total commission. What was the brokerage's share?
+options:
+  - $17,500
+  - $15,750
+  - $19,250
+  - $21,000
+key: C
+explanation: The key is correct because the brokerage’s share equals the agent’s check divided by
+  the agent’s split percentage (§ 4.2). The most tempting distractor, $15,750, comes from
+  multiplying the agent’s check by the split instead of dividing, which reverses the operation.
+citation:
+  source: REP Ref. Real Estate Math § 4.2
+  url: null
+  quoted_text: "Apply the splits in sequence: price × commission rate × brokerage's share × agent's split."
+  secondary: []
+math:
+  worked_solution: Brokerage share = 10,500 ÷ 0.60 = 17,500
+  formulas:
+    - Brokerage share = agent earnings ÷ agent split
+  onscreen_calculator_only: false
+terms:
+  - agent earnings
+  - brokerage share
+  - agent split
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

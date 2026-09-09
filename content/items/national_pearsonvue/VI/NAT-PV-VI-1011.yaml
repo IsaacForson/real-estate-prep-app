@@ -1,0 +1,41 @@
+id: NAT-PV-VI-1011
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under CERCLA, which of the following activities constitutes a 'release' of a hazardous substance?
+options:
+  - Spilling gasoline onto soil
+  - Nuclear source release
+  - Normal fertilizer application
+  - Engine exhaust emissions
+key: A
+explanation: The definition of release includes spilling, leaking, dumping, and similar disposals
+  into the environment. Spilling gasoline onto soil is a spilling activity, thus a release. Normal
+  fertilizer application, engine exhaust emissions, and nuclear source releases are expressly
+  excluded from the definition of release.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9601(22)
+  url: null
+  quoted_text: means any spilling, leaking, pumping, pouring, emitting, emptying, discharging,
+    injecting, escaping, leaching, dumping, or disposing into the environment
+  secondary: []
+terms:
+  - release
+  - spilling
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

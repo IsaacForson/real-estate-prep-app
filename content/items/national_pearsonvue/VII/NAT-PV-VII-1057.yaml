@@ -1,0 +1,42 @@
+id: NAT-PV-VII-1057
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower sells the property and transfers title to the buyer without obtaining the lender's
+  consent. The loan contains an alienation clause. What action may the lender take?
+options:
+  - Accelerate the loan
+  - Declare the balance due
+  - Require loan payoff
+  - Demand immediate payment
+key: A
+explanation: The alienation clause permits the lender to accelerate the loan if the borrower
+  transfers title without consent, making 'Accelerate the loan' correct. The distractor 'Demand
+  immediate payment' is inaccurate because acceleration must occur first; the lender cannot demand
+  payment without invoking the acceleration clause.
+citation:
+  source: REP Ref. Financing & Closing § 2.2
+  url: null
+  quoted_text: The alienation or due-on-sale clause lets the lender accelerate if the borrower
+    transfers title without consent, so a buyer cannot assume a below-market loan without
+    re-underwriting.
+  secondary: []
+terms:
+  - alienation clause
+  - accelerate
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

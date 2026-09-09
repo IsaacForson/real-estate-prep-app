@@ -1,0 +1,53 @@
+id: NAT-PV-VII-1029
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller paid the annual property tax of $2,400 in advance for the calendar year. The closing
+  occurs on August 15, with the closing day charged to the buyer. Using the actual/365‑day method,
+  what amount should appear as a buyer debit for the property tax proration?
+options:
+  - $914
+  - $950
+  - $800
+  - $876
+key: A
+explanation: The seller’s prepayment for the buyer’s ownership period (139 days) is credited to the
+  seller and debited to the buyer. Calculating (139/365) × $2,400 yields approximately $914. The
+  distractor $876 results from using a 360‑day year, which is not the specified method.
+citation:
+  source: REP Ref. Financing & Closing § 10.6
+  url: null
+  quoted_text: Items the seller paid ahead are credited to the seller and debited to the buyer;
+  secondary: []
+math:
+  worked_solution: |-
+    Annual tax = $2,400
+    Days in year = 365
+    Seller ownership days = Jan 1 – Aug 14 = 226 days
+    Buyer ownership days = Aug 15 – Dec 31 = 139 days
+    Buyer share = 139 / 365 = 0.3808
+    Proration = 0.3808 × $2,400 = $913.92
+    Rounded to nearest dollar = $914
+  formulas:
+    - Proration = (Buyer days ÷ Days in year) × Annual tax
+  onscreen_calculator_only: false
+terms:
+  - proration
+  - property tax
+  - debit
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

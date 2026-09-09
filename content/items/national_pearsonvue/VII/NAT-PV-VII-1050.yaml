@@ -1,0 +1,46 @@
+id: NAT-PV-VII-1050
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When an obligor exercises the right to rescind under TILA §1635(b), what is the effect on
+  finance charges and the security interest?
+options:
+  - The obligor remains liable for finance charges but the security interest becomes void.
+  - The obligor is not liable for finance or other charges and the security interest becomes void.
+  - The obligor must pay all finance charges and the security interest remains enforceable and
+    subject to foreclosure.
+  - The obligor is not liable for finance charges but must still pay any other charges.
+key: B
+explanation: Under TILA §1635(b), when an obligor exercises the right to rescind, he is not liable
+  for any finance or other charge and any security interest given by the obligor becomes void.
+  Therefore, the correct answer states that the obligor is not liable for finance or other charges
+  and the security interest becomes void. The distractor that the obligor remains liable for finance
+  charges misstates the rule because the statute explicitly removes liability for finance charges
+  upon rescission.
+citation:
+  source: 15 U.S.C. § 1635(b)
+  url: null
+  quoted_text: When an obligor exercises his right to rescind under subsection (a), he is not liable
+    for any finance or other charge, and any security interest given by the obligor, including any
+    such interest arising by operation of law, becomes void upon such a rescission.
+  secondary: []
+terms:
+  - rescission
+  - finance charge
+  - security interest
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

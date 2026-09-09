@@ -1,0 +1,42 @@
+id: NAT-PV-VI-1012
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, which of the following persons is liable for response costs resulting from a
+  release of a hazardous substance?
+options:
+  - A state government that provided emergency response without gross negligence
+  - A transporter who merely carried non-hazardous goods
+  - A person who merely rents a facility but does not own or operate it
+  - A person who arranged for disposal of hazardous substances they owned
+key: D
+explanation: Under CERCLA subsection (a)(3), any person who arranged for disposal or treatment of
+  hazardous substances they owned or possessed is liable for response costs. The other options
+  describe parties not covered by the liability provisions.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(a)(3)
+  url: null
+  quoted_text: any person who by contract, agreement, or otherwise arranged for disposal or treatment,
+    or arranged with a transporter for transport for disposal or treatment, of hazardous substances
+    owned or possessed by such person
+  secondary: []
+terms:
+  - liability
+  - arranger
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

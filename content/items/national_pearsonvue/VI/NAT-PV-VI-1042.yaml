@@ -1,0 +1,46 @@
+id: NAT-PV-VI-1042
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to CERCLA, which of the following is included in the definition of 'municipal solid
+  waste'?
+options:
+  - Manufacturing waste not household-like
+  - Hazardous waste above household levels
+  - Typical food and yard waste material
+  - Combustion ash from incinerators
+key: C
+explanation: CERCLA § 9607(p)(4)(B) expressly lists food and yard waste as examples of municipal
+  solid waste. Combustion ash from incinerators is excluded by subsection (p)(4)(C)(i), and
+  manufacturing waste that is not household‑like is excluded by subsection (p)(4)(C)(ii). Hazardous
+  waste exceeding typical household levels also fails the definition’s hazardous‑substance limit.
+  Thus only typical food and yard waste material is included.
+citation:
+  source: 42 U.S.C. § 9607(p)(4)(B)
+  url: null
+  quoted_text: Examples of municipal solid waste under subparagraph (A) include food and yard waste,
+    paper, clothing, appliances, consumer product packaging, disposable diapers, office supplies,
+    cosmetics, glass and metal food containers, elementary or secondary school science laboratory
+    waste, and household hazardous waste.
+  secondary: []
+terms:
+  - municipal solid waste
+  - food
+  - yard waste
+  - combustion ash
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

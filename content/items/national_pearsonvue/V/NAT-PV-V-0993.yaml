@@ -1,0 +1,41 @@
+id: NAT-PV-V-0993
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After being served with a cease and desist order under the Sherman Antitrust Act, how many
+  days does a person have to file a petition for review in the appropriate court of appeals?
+options:
+  - 15 days
+  - 30 days
+  - 45 days
+  - 60 days
+key: D
+explanation: A person must file a petition for review within sixty days after service of a cease and
+  desist order. Thus, sixty days is the correct period. Thirty days is incorrect because the statute
+  specifies sixty days, not thirty.
+citation:
+  source: 15 U.S.C. §§ 1–7 (Sherman Act) — Sherman Antitrust Act and related antitrust provisions — §
+    1 §21(c)
+  url: null
+  quoted_text: within sixty days after the date of the service of such order, a written petition
+  secondary: []
+terms:
+  - petition
+  - review
+  - cease and desist
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

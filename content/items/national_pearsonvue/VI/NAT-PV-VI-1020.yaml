@@ -1,0 +1,45 @@
+id: NAT-PV-VI-1020
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer is evaluating several properties. Which of the following properties qualifies as
+  target housing under the Residential Lead-Based Paint Hazard Reduction Act?
+options:
+  - A single-family home built in 1975, not restricted to elderly or disabled persons, with three
+    bedrooms
+  - A duplex built in 1980 with two units, not restricted to elderly or disabled persons
+  - A studio apartment built in 1975, with no child under 6 residing or expected
+  - A senior living facility built in 1970, restricted to persons aged 62 and older
+key: A
+explanation: Under §4851b(27), target housing is any pre‑1978 dwelling that is not exclusively for
+  the elderly or persons with disabilities and is not a zero‑bedroom unit unless a child under six
+  lives or is expected to live there. The single‑family home built in 1975 meets all criteria,
+  making it target housing. The studio apartment is a zero‑bedroom unit with no young child, so it
+  is excluded; the senior facility is housing for the elderly; and the duplex built after 1978 fails
+  the age requirement.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act) —
+    Residential Lead-Based Paint Hazard Reduction Act (incl. § 4852d disclosure) §4851b
+  url: null
+  quoted_text: any housing constructed prior to 1978, except housing for the elderly or persons with
+    disabilities or any 0-bedroom dwelling (unless any child who is less than 6 years of age resides
+    or is expected to reside in such housing)
+  secondary: []
+terms:
+  - target housing
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

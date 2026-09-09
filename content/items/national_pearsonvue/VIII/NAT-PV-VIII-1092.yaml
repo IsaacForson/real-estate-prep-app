@@ -1,0 +1,48 @@
+id: NAT-PV-VIII-1092
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller wants to net $300,000 after paying a 5% commission and has $7,200 in loan payoff and
+  $1,800 in closing costs. What must the sale price be to achieve that net?
+options:
+  - $324,000.00
+  - $327,800.00
+  - $326,500.00
+  - $325,263.16
+key: D
+explanation: According to §4.3, price = (desired net + other seller costs) ÷ (1 − commission rate).
+  Desired net plus costs = $300,000 + $7,200 + $1,800 = $309,000. Dividing by 0.95 yields
+  $325,263.16. The distractor $324,000.00 arises from omitting the added costs before division.
+citation:
+  source: REP Ref. Real Estate Math § 4.3
+  url: null
+  quoted_text: price = (desired net + other seller costs) ÷ (1 − commission rate).
+  secondary: []
+math:
+  worked_solution: |-
+    Net + costs = $300,000 + $7,200 + $1,800 = $309,000
+    Divisor = 1 − 0.05 = 0.95
+    Price = $309,000 ÷ 0.95 = $325,263.157894... → $325,263.16
+  formulas:
+    - Price = (Net + Costs) ÷ (1 − Rate)
+  onscreen_calculator_only: false
+terms:
+  - net
+  - commission
+  - closing costs
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

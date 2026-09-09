@@ -1,0 +1,43 @@
+id: NAT-PV-VII-1035
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower transfers title of the mortgaged property to her sibling without obtaining the
+  lender's consent. The loan contains an alienation (due-on-sale) clause. According to the Garn–St
+  Germain Act of 1982, what is the lender's right?
+options:
+  - The lender may accelerate the loan and demand immediate payment.
+  - The lender may not accelerate; sibling transfer is not exempt.
+  - The lender must sue only for missed payments and cannot accelerate.
+  - The lender must release the lien and cannot pursue foreclosure.
+key: A
+explanation: The Garn–St Germain Act exempts transfers to a spouse or child, but not to a sibling,
+  so the lender may accelerate the loan. The distractor claiming exemption for a sibling is
+  incorrect because the statute does not list siblings as exempt.
+citation:
+  source: REP Ref. Financing & Closing § 2.2
+  url: null
+  quoted_text: The Garn–St Germain Act of 1982 made these clauses generally enforceable but exempts
+    transfers such as to a spouse or child, on the death of a joint tenant, or into the borrower's
+    living trust.
+  secondary: []
+terms:
+  - alienation clause
+  - Garn-St Germain Act
+  - exempt
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

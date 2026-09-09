@@ -1,0 +1,39 @@
+id: NAT-PV-VII-1027
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: In a typical real estate closing, which document is recorded first?
+options:
+  - The deed document
+  - The security instrument
+  - The promissory note
+  - The closing disclosure form
+key: A
+explanation: The closing agent records the deed before the security instrument, as stated in the
+  rule that the deed is recorded first and the security instrument immediately after. The other
+  documents are not recorded before the deed under standard practice.
+citation:
+  source: REP Ref. Financing & Closing § 10.9
+  url: null
+  quoted_text: the closing agent records the deed first and the security instrument immediately after
+  secondary: []
+terms:
+  - deed
+  - recording
+  - security instrument
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

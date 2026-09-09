@@ -1,0 +1,50 @@
+id: NAT-PV-VIII-1091
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower has a monthly principal and interest payment of $1,250. Annual property taxes are
+  $3,600 and annual homeowners insurance is $900. What is the borrower's total PITI?
+options:
+  - $1,625
+  - $1,550
+  - $1,425
+  - $1,700
+key: A
+explanation: Under §5.8, PITI equals monthly principal and interest plus one‑twelfth of annual taxes
+  plus one‑twelfth of annual insurance. Taxes monthly = $3,600 ÷ 12 = $300; insurance monthly = $900
+  ÷ 12 = $75; sum = $1,250 + $300 + $75 = $1,625. The most tempting distractor, $1,550, results from
+  omitting the insurance component.
+citation:
+  source: REP Ref. Real Estate Math § 5.8
+  url: null
+  quoted_text: PITI = monthly principal and interest + annual taxes ÷ 12 + annual insurance ÷ 12 (+
+    monthly mortgage insurance and association dues when the problem includes them).
+  secondary: []
+math:
+  worked_solution: |-
+    Taxes monthly = $3,600 ÷ 12 = $300
+    Insurance monthly = $900 ÷ 12 = $75
+    PITI = $1,250 + $300 + $75 = $1,625
+  formulas:
+    - PITI = PI + (Taxes/12) + (Insurance/12)
+  onscreen_calculator_only: false
+terms:
+  - piti
+  - taxes
+  - insurance
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

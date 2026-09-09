@@ -1,0 +1,48 @@
+id: NAT-PV-VI-1014
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee volunteers to assist with a hazardous substance release cleanup under the direction
+  of an onscene coordinator appointed under the National Contingency Plan. The licensee follows all
+  instructions and is not negligent. Under CERCLA, is the licensee liable for response costs
+  resulting from the assistance?
+options:
+  - The licensee is liable if the assistance caused additional contamination
+  - The licensee is liable for response costs incurred
+  - The licensee is liable for costs that exceed a statutory limit
+  - The licensee is not liable for response costs resulting from the assistance
+key: D
+explanation: Subsection (d)(1) states that no person shall be liable for costs or damages resulting
+  from rendering care, assistance, or advice in accordance with the NCP or at the direction of an
+  onscene coordinator, except for negligence. Since the licensee was not negligent, there is no
+  liability.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(d)(1)
+  url: null
+  quoted_text: Except as provided in paragraph (2), no person shall be liable under this subchapter
+    for costs or damages as a result of actions taken or omitted in the course of rendering care,
+    assistance, or advice in accordance with the National Contingency Plan ("NCP") or at the
+    direction of an onscene coordinator appointed under such plan, with respect to an incident
+    creating a danger to public health or welfare or the environment as a result of any releases of
+    a hazardous substance or the threat thereof.
+  secondary: []
+terms:
+  - NCP
+  - liability
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

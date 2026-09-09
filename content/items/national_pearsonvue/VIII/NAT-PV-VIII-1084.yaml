@@ -1,0 +1,54 @@
+id: NAT-PV-VIII-1084
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.G
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has scheduled gross rent of $8,000 per month, a vacancy and collection loss rate of
+  5%, and other income of $2,400 per year. Annual operating expenses are $48,000. What is the
+  operating expense ratio (as a percentage)?
+options:
+  - 51.28%
+  - 48.00%
+  - 52.63%
+  - 50.00%
+key: C
+explanation: Operating expense ratio = operating expenses ÷ effective gross income. Scheduled gross
+  rent = $8,000 × 12 = $96,000. Vacancy loss = $96,000 × 0.05 = $4,800. Effective gross rent =
+  $96,000 - $4,800 = $91,200. Adding other income $2,400 gives effective gross income of $93,600.
+  Ratio = $48,000 ÷ $93,600 = 0.5128205, or 51.28% when expressed as a percent. The distractor
+  52.63% omits other income, while 48.00% omits vacancy loss.
+citation:
+  source: REP Ref. Real Estate Math § 3.1
+  url: null
+  quoted_text: Example B (whole). A 4% commission came to $11,200. Price = 11,200 ÷ 0.04 = $280,000.
+  secondary: []
+math:
+  worked_solution: |-
+    Scheduled gross rent = $8,000 × 12 = $96,000
+    Vacancy loss = $96,000 × 0.05 = $4,800
+    Effective gross rent = $96,000 - $4,800 = $91,200
+    Effective gross income = $91,200 + $2,400 = $93,600
+    Operating expense ratio = $48,000 ÷ $93,600 = 0.5128205
+    As a percent: 0.5128205 × 100 = 51.28%
+  formulas:
+    - Operating Expense Ratio = Operating Expenses ÷ Effective Gross Income
+  onscreen_calculator_only: false
+terms:
+  - operating expense ratio
+  - effective gross income
+  - operating expenses
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

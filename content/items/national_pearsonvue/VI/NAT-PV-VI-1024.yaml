@@ -1,0 +1,50 @@
+id: NAT-PV-VI-1024
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Secretary transmitted the first biennial report 24 months after October 28, 1992, as
+  required by 42 U.S.C. § 4856(b)(1), when is the next biennial report due?
+options:
+  - October 28, 1994
+  - October 28, 1996
+  - October 28, 1998
+  - October 28, 2000
+key: B
+explanation: The first biennial report is due 24 months after October 28, 1992, which is October 28,
+  1994. The statute requires a report at the end of every 24-month period thereafter, so the next
+  report is due another 24 months later, on October 28, 1996. The option October 28, 1994
+  corresponds to the first report, not the subsequent one.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act) —
+    Residential Lead-Based Paint Hazard Reduction Act (incl. § 4852d disclosure) § 4856(b)(1)
+  url: null
+  quoted_text: 24 months after October 28, 1992, and at the end of every 24-month period thereafter
+  secondary: []
+math:
+  worked_solution: >-
+    First report date = October 28, 1992 + 24 months = October 28, 1994
+
+    Next report date = First report date + 24 months = October 28, 1994 + 24 months = October 28,
+    1996
+  formulas:
+    - next_report_date = first_report_date + 24 months
+  onscreen_calculator_only: false
+terms:
+  - biennial report
+  - reporting period
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

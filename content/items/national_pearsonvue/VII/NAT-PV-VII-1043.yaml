@@ -1,0 +1,41 @@
+id: NAT-PV-VII-1043
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "In a transaction with two co‑borrowers, under TILA the creditor may disclose the required
+  information to only one of them if:"
+options:
+  - The disclosed obligor signed the loan first
+  - The disclosed obligor resides at the property
+  - The disclosed obligor is a primary obligor
+  - The disclosed obligor has the higher income
+key: C
+explanation: §1631(a) provides that in a transaction with more than one obligor the creditor need
+  not disclose to more than one obligor if the obligor receiving the disclosure is a primary
+  obligor. The other options are not recognized exceptions in the statute.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1631
+  url: null
+  quoted_text: In a transaction involving more than one obligor, a creditor or lessor, except in a
+    transaction under section 1635 of this title, need not disclose to more than one of such
+    obligors if the obligor given disclosure is a primary obligor.
+  secondary: []
+terms:
+  - disclosure
+  - obligor
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

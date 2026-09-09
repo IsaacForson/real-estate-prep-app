@@ -1,0 +1,43 @@
+id: NAT-PV-VI-1005
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, which substance is expressly excluded from the definition of 'hazardous substance'?
+options:
+  - Petroleum products
+  - Lead-based paint
+  - Mercury thermometers
+  - Asbestos insulation
+key: A
+explanation: The definition of hazardous substance explicitly states that the term does not include
+  petroleum, including crude oil or any fraction thereof. Lead-based paint, mercury thermometers,
+  and asbestos insulation are considered hazardous substances under other provisions of the statute.
+citation:
+  source: 42 U.S.C. § 9601(14)
+  url: null
+  quoted_text: The term does not include petroleum, including crude oil or any fraction thereof which
+    is not otherwise specifically listed or designated as a hazardous substance under subparagraphs
+    (A) through (F) of this paragraph, and the term does not include natural gas, natural gas
+    liquids, liquefied natural gas, or synthetic gas usable for fuel (or mixtures of natural gas and
+    such synthetic gas).
+  secondary: []
+terms:
+  - hazardous substance
+  - petroleum
+  - exclusion
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,48 @@
+id: NAT-PV-VII-1065
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home for $300,000 with a first mortgage of $210,000 and a home equity line
+  of credit with a current balance of $30,000. Assuming the appraised value equals the purchase
+  price, what is the combined loan-to-value ratio?
+options:
+  - 70%
+  - 75%
+  - 80%
+  - 85%
+key: C
+explanation: Combined LTV adds the first mortgage and HELOC balances, then divides by the property
+  value. Here ($210,000 + $30,000) / $300,000 = 0.80, or 80%. The other options result from using an
+  incorrect balance or property value.
+citation:
+  source: REP Ref. Financing & Closing § 8.2
+  url: null
+  quoted_text: Combined LTV adds all liens (first mortgage plus second mortgage or HELOC balance)
+    before dividing by value
+  secondary: []
+math:
+  worked_solution: "Step 1: Add loan balances: $210,000 + $30,000 = $240,000. Step 2: Divide by
+    property value $300,000: $240,000 / $300,000 = 0.80. Step 3: Convert to percentage: 0.80 × 100 =
+    80%."
+  formulas:
+    - CLTV = (First mortgage balance + HELOC balance) / Property value
+  onscreen_calculator_only: false
+terms:
+  - combined loan-to-value
+  - cltv
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,49 @@
+id: NAT-PV-VII-1037
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer obtains a USDA Rural Development guaranteed loan for $180,000. The program charges an
+  upfront guarantee fee of 1.00% of the loan amount. What is the upfront guarantee fee?
+options:
+  - $630.00
+  - $3,600.00
+  - $900.00
+  - $1,800.00
+key: D
+explanation: The upfront guarantee fee equals the loan amount multiplied by 1.00%; $180,000 × 0.01 =
+  $1,800. The $630.00 distractor results from using the annual fee rate of 0.35% instead of the
+  upfront fee.
+citation:
+  source: REP Ref. Financing & Closing § 6.4
+  url: null
+  quoted_text: charges an upfront guarantee fee of 1.00% of the loan
+  secondary: []
+math:
+  worked_solution: |-
+    Loan amount = $180,000
+    Upfront guarantee fee rate = 1.00%
+    Convert rate to decimal: 1.00% = 0.01
+    Upfront fee = $180,000 × 0.01 = $1,800
+  formulas:
+    - Upfront fee = Loan amount × Fee rate
+  onscreen_calculator_only: false
+terms:
+  - usda
+  - upfront fee
+  - guaranteed loan
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

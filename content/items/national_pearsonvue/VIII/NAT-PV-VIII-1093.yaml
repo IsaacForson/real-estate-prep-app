@@ -1,0 +1,52 @@
+id: NAT-PV-VIII-1093
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: "Two offers are received for a property. Offer A: sale price $350,000, commission 6%, loan
+  payoff $120,000, closing costs $1,000. Offer B: sale price $360,000, commission 5.5%, loan payoff
+  $130,000, closing costs $1,200. What is the higher net proceeds amount for the seller?"
+options:
+  - $208,000
+  - $209,000
+  - $207,500
+  - $210,000
+key: B
+explanation: Under §4.1, commission = sale price × rate. Offer A net = $350,000 − ($350,000×0.06) −
+  $120,000 − $1,000 = $208,000. Offer B net = $360,000 − ($360,000×0.055) − $130,000 − $1,200 =
+  $209,000. The higher net proceeds is $209,000. The distractor $208,000 results from selecting the
+  lower offer’s net proceeds.
+citation:
+  source: REP Ref. Brokerage Practice § 4.1
+  url: null
+  quoted_text: Commission = sale price × rate.
+  secondary: []
+math:
+  worked_solution: |-
+    Offer A commission = $350,000 × 0.06 = $21,000
+    Offer A net = $350,000 − $21,000 − $120,000 − $1,000 = $208,000
+    Offer B commission = $360,000 × 0.055 = $19,800
+    Offer B net = $360,000 − $19,800 − $130,000 − $1,200 = $209,000
+    Higher net = $209,000
+  formulas:
+    - Commission = Price × Rate
+    - Net Proceeds = Price − Commission − Loan Payoff − Closing Costs
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - net proceeds
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

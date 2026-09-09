@@ -1,0 +1,54 @@
+id: NAT-PV-VIII-1081
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A $450,000 sale has a total commission of 6%. Under Scenario 1, the listing brokerage receives
+  4% and the selling brokerage receives 2%; under Scenario 2, the listing brokerage receives 3% and
+  the selling brokerage receives 3%. If the listing agent receives 65% of the listing brokerage's
+  share, which scenario yields higher earnings for the listing agent, and by how much?
+options:
+  - The listing agent earns $2,925 more under Scenario 1
+  - The listing agent earns $2,925 more under Scenario 2
+  - The listing agent earns $4,500 more under Scenario 1
+  - The listing agent earns $2,700 more under Scenario 1
+key: A
+explanation: The correct answer computes the listing brokerage share (price × brokerage percentage)
+  then applies the agent split. The most tempting distractor is $4,500 more under Scenario 1, which
+  forgets to apply the agent’s 65% split.
+citation:
+  source: REP Ref. Real Estate Math § 4.2
+  url: null
+  quoted_text: "Apply the splits in sequence: price × commission rate × brokerage's share × agent's split."
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Scenario 1 listing brokerage share = $450,000 × 0.04 = $18,000
+    Step 2: Scenario 1 agent earnings = $18,000 × 0.65 = $11,700
+    Step 3: Scenario 2 listing brokerage share = $450,000 × 0.03 = $13,500
+    Step 4: Scenario 2 agent earnings = $13,500 × 0.65 = $8,775
+    Step 5: Difference = $11,700 − $8,775 = $2,925
+  formulas:
+    - Listing brokerage share = price × brokerage percentage
+    - Agent earnings = listing brokerage share × agent split
+    - Difference = earnings_scenario1 − earnings_scenario2
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - split
+  - percentage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

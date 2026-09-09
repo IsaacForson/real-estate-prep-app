@@ -1,0 +1,51 @@
+id: NAT-PV-VIII-1070
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is helping an investor determine the monthly rent needed to achieve a target net
+  operating income. The investor wants a target NOI of $48,000 per year, expects annual operating
+  expenses of $27,000, anticipates a vacancy rate of 6%, and the building has 8 rental units. What
+  is the required rent per unit per month to meet the target NOI?
+options:
+  - $828.13 per unit per month
+  - $831.12 per unit per month
+  - $531.91 per unit per month
+  - $232.71 per unit per month
+key: B
+explanation: The correct rent is found by first adding operating expenses to the target NOI to get
+  effective gross income, then dividing by (1 minus vacancy rate) to obtain potential gross income,
+  and finally dividing by the number of units and 12 months. The distractor $531.91 per unit per
+  month results from omitting operating expenses, which understates required income.
+citation:
+  source: REP Ref. Real Estate Math § 13.3
+  url: null
+  quoted_text: "Work upward from the target: required EGI = target NOI + operating expenses; required
+    PGI = EGI ÷ (1 − vacancy rate); rent per unit per month = PGI ÷ units ÷ 12."
+  secondary: []
+math:
+  worked_solution: "Step 1: EGI = $48,000 + $27,000 = $75,000. Step 2: PGI = $75,000 ÷ (1 - 0.06) =
+    $75,000 ÷ 0.94 = $79,787.23. Step 3: Rent per unit per month = $79,787.23 ÷ 8 ÷ 12 = $831.12."
+  formulas:
+    - EGI = target NOI + operating expenses; PGI = EGI / (1 - vacancy rate); rent per unit per month
+      = PGI / units / 12
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - vacancy rate
+  - rent per unit
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

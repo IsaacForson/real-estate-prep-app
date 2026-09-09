@@ -1,0 +1,53 @@
+id: NAT-PV-VIII-1090
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.F
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investor purchases a rental property for $250,000, spends $40,000 on capital improvements,
+  and later sells it for $340,000. What is the investor's return on investment (ROI)?
+options:
+  - 14.7%
+  - 17.2%
+  - 31.0%
+  - 20.0%
+key: B
+explanation: Under § 7.6, ROI equals (amount received − total cost) ÷ total cost, where total cost
+  includes purchase price plus capital improvements. The total cost is $250,000 + $40,000 =
+  $290,000, and the amount received is $340,000, yielding a profit of $50,000. Dividing $50,000 by
+  $290,000 gives 0.1724, or 17.2%. The most common error is to omit improvements from the
+  denominator, which would give $50,000 ÷ $250,000 = 20.0%.
+citation:
+  source: REP Ref. Real Estate Math § 7.6
+  url: null
+  quoted_text: ROI or percent profit = (amount received − total cost) ÷ total cost. Total cost
+    includes the price paid plus capital improvements and, if the problem includes them, acquisition
+    and selling costs.
+  secondary: []
+math:
+  worked_solution: |-
+    total cost = $250,000 + $40,000 = $290,000
+    profit = $340,000 - $290,000 = $50,000
+    ROI = $50,000 / $290,000 = 0.172413... = 17.2%
+  formulas:
+    - ROI = (amount received - total cost) / total cost
+    - total cost = purchase price + capital improvements
+  onscreen_calculator_only: false
+terms:
+  - roi
+  - profit
+  - capital improvements
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

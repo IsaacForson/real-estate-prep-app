@@ -1,0 +1,43 @@
+id: NAT-PV-V-0990
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A landlord refuses to rent an apartment to a family with two children because the landlord
+  prefers adult tenants. The apartment building is financed with a federally insured loan. Under
+  Executive Order 11063, the landlord's refusal is:"
+options:
+  - Lawful because familial status is not protected
+  - Unlawful because familial status is a protected characteristic
+  - Permissible if the landlord offers a different unit
+  - Allowed if the landlord provides a reasonable accommodation
+key: B
+explanation: Executive Order 11063 includes familial status as a protected characteristic in housing
+  transactions involving federal assistance. Refusing to rent to a family with children constitutes
+  discrimination based on familial status, which is unlawful. Offering a different unit or providing
+  a reasonable accommodation does not justify the refusal under the order.
+citation:
+  source: "### 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866
+    — property rights of citizens Section 101"
+  url: null
+  quoted_text: to prevent discrimination because of race, color, religion (creed), sex, disability,
+    familial status or national origin—
+  secondary: []
+terms:
+  - executive order
+  - familial status
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

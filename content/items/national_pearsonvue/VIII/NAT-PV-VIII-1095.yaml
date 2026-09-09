@@ -1,0 +1,51 @@
+id: NAT-PV-VIII-1095
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.G
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has annual scheduled gross rent of $140,000. The vacancy and collection loss rate
+  is 5%. Annual other income from parking is $2,400. Annual operating expenses are $48,000. What is
+  the property's net operating income?
+options:
+  - $85,000 per year
+  - $87,400 per year
+  - $94,400 per year
+  - $101,400 per year
+key: B
+explanation: "First compute vacancy loss: $140,000 × 0.05 = $7,000. Effective gross income equals
+  scheduled rent minus vacancy loss plus other income: $140,000 − $7,000 + $2,400 = $135,400. Net
+  operating income is effective gross income minus operating expenses: $135,400 − $48,000 = $87,400.
+  The distractor $85,000 omits the $2,400 of other income."
+citation:
+  source: REP Ref. Real Estate Math § 1.3
+  url: null
+  quoted_text: "Almost every percentage problem is one of three rearrangements of a single
+    relationship: Part = Whole × Rate."
+  secondary: []
+math:
+  worked_solution: Scheduled gross rent = $140,000. Vacancy rate = 5% = 0.05. Vacancy loss = $140,000
+    × 0.05 = $7,000. Effective gross income = $140,000 − $7,000 + $2,400 = $135,400. Operating
+    expenses = $48,000. Net operating income = $135,400 − $48,000 = $87,400 per year.
+  formulas:
+    - Vacancy Loss = Scheduled Gross Rent × Vacancy Rate; Effective Gross Income = Scheduled Gross
+      Rent − Vacancy Loss + Other Income; NOI = Effective Gross Income − Operating Expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - operating expenses
+  - vacancy loss
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

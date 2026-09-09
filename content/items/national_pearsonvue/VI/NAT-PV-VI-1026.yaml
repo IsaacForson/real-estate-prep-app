@@ -1,0 +1,53 @@
+id: NAT-PV-VI-1026
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller knowingly fails to disclose the presence of lead-based paint hazards in a home built
+  before 1978 that is being sold. The buyer later discovers the hazard and incurs $5,000 in
+  remediation costs. Under the Residential Lead-Based Paint Hazard Reduction Act, what is the
+  maximum amount the buyer could recover from the seller in a civil action for knowing violation?
+options:
+  - $5,000
+  - $10,000
+  - $15,000
+  - $20,000
+key: C
+explanation: The statute provides that a person who knowingly violates the disclosure requirements
+  is jointly and severally liable to the purchaser in an amount equal to three times the damages
+  incurred. Thus $5,000 × 3 = $15,000. The $10,000 figure refers to the maximum civil penalty per
+  violation under the Toxic Substances Control Act, not the civil damages award.
+citation:
+  source: 42 U.S.C. §§ 4851–4856 § 4852d(b)(3)
+  url: null
+  quoted_text: Any person who knowingly violates the provisions of this section shall be jointly and
+    severally liable to the purchaser or lessee in an amount equal to 3 times the amount of damages
+    incurred by such individual.
+  secondary: []
+math:
+  worked_solution: |-
+    Damages incurred = $5,000
+    Statutory multiplier = 3
+    Recovery = $5,000 × 3 = $15,000
+  formulas:
+    - Recovery = Damages × 3
+  onscreen_calculator_only: false
+terms:
+  - damages
+  - liability
+  - violation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

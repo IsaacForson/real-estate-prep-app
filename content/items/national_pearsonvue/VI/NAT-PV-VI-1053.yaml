@@ -1,0 +1,42 @@
+id: NAT-PV-VI-1053
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, what is the threshold amount of liquid hazardous substance material for the
+  small quantity generator exemption under subsection (o)(1)(A)?
+options:
+  - Yes, because the business employs no more than 100 full-time workers and qualifies as a small
+    business concern.
+  - No, because the exemption applies only to owners of residential property, not to businesses.
+  - No, because the municipal solid waste exemption does not include volume thresholds for liquids.
+  - Yes, but only if the waste is classified as non-hazardous municipal solid waste.
+key: A
+explanation: The statute states that a person is not liable if the total amount of liquid hazardous
+  substance material is less than 110 gallons, or such amount as the Administrator may determine.
+  This establishes the 110‑gallon threshold for liquids.
+citation:
+  source: 42 U.S.C. § 9607(o)(1)(A)
+  url: null
+  quoted_text: less than 110 gallons of liquid materials or less than 200 pounds of solid materials
+    (or such greater or lesser amounts as the Administrator may determine by regulation)
+  secondary: []
+terms:
+  - small quantity generator
+  - hazardous substance
+  - exemption
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: NAT-PV-V-1001
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A federal department discovers that a developer has discriminated against prospective buyers
+  based on race in a housing project funded by a federal grant. Under Executive Order 11063, what
+  action may the department take regarding the grant agreement?
+options:
+  - Cancel or terminate the grant agreement in whole or in part
+  - Impose a fine on the developer equal to twice the grant amount
+  - Require the developer to provide additional housing units
+  - Refer the matter to the developer’s state licensing board
+key: A
+explanation: Section 302(a) authorizes a department to cancel or terminate any agreement or contract
+  providing Federal aid when a violation of the order’s nondiscrimination provisions is found. The
+  other options describe actions not permitted under the order.
+citation:
+  source: 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866 —
+    property rights of citizens Section 302(a)
+  url: null
+  quoted_text: cancel or terminate in whole or in part any agreement or contract with such person,
+    firm, or State or local public agency providing for a loan, grant, contribution, or other
+    Federal aid, or for the payment of a commission or fee
+  secondary: []
+terms:
+  - department
+  - grant
+  - discrimination
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

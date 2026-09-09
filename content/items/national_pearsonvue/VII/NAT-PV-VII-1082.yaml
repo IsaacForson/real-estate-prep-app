@@ -1,0 +1,41 @@
+id: NAT-PV-VII-1082
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A developer finances a subdivision with a blanket loan that includes a partial release clause.
+  After selling one lot and receiving the stipulated payment, what is the status of that lot?
+options:
+  - The lot remains encumbered by the blanket loan
+  - The lot is released while the rest stays encumbered
+  - The lot becomes subject to a new separate loan
+  - The lot is automatically transferred to the lender
+key: B
+explanation: Under a blanket loan with a partial release clause, paying the stipulated amount for a
+  sold lot releases that lot from the lien while the remaining parcels stay encumbered. The
+  distractor claiming the lot remains encumbered ignores the effect of the partial release clause
+  upon payment.
+citation:
+  source: REP Ref. Financing & Closing § 5.2
+  url: null
+  quoted_text: It includes a partial release clause so that when a lot is sold and a stated amount is
+    paid, that lot is released while the rest stay encumbered
+  secondary: []
+terms:
+  - blanket mortgage
+  - partial release clause
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

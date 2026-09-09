@@ -1,0 +1,47 @@
+id: NAT-PV-VI-1043
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee purchases a parcel of land that borders a facility listed on the National
+  Priorities List. The licensee did not cause any release, is not affiliated with any potentially
+  liable party through familial or contractual ties (except a standard sales contract), and has
+  taken reasonable steps to stop any continuing release and prevent future releases. To qualify as a
+  contiguous property owner under CERCLA subsection (q)(1)(A), the licensee must also:"
+options:
+  - Providing cooperation, assistance, and access
+  - Having caused the release and failed to act
+  - Being potentially liable through familial ties
+  - Impeding institutional controls and ignoring notices
+key: A
+explanation: Under CERCLA § 9607(q)(1)(A)(iv), a contiguous property owner must provide full
+  cooperation, assistance, and access to authorized personnel conducting response actions. Causing
+  the release, being liable through familial ties, or impeding controls are contrary to the
+  requirements for the exemption. Therefore, providing cooperation, assistance, and access is the
+  correct action.
+citation:
+  source: 42 U.S.C. § 9607(q)(1)(A)(iv)
+  url: null
+  quoted_text: the person provides full cooperation, assistance, and access to persons that are
+    authorized to conduct response actions or natural resource restoration
+  secondary: []
+terms:
+  - contiguous
+  - cooperation
+  - release
+  - liability
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

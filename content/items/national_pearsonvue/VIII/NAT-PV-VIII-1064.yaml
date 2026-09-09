@@ -1,0 +1,48 @@
+id: NAT-PV-VIII-1064
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A triangular lot has a base of 100 feet and a height of 80 feet. What is the area of the lot
+  in square feet?
+options:
+  - 4,100 square feet
+  - 4,000 square feet
+  - 3,900 square feet
+  - 3,800 square feet
+key: B
+explanation: The triangle area formula is one‑half base times height, so 0.5 × 100 ft × 80 ft =
+  4,000 ft². The distractor 3,900 ft² arises from halving the product then incorrectly subtracting
+  100 ft², a common slip when applying the ½ factor.
+citation:
+  source: REP Ref. Real Estate Math § 2.3
+  url: null
+  quoted_text: "Triangle: area = ½ × base × height, where the height is measured perpendicular to the base."
+  secondary: []
+math:
+  worked_solution: |-
+    Multiply base by height: 100 ft × 80 ft = 8,000 ft²
+    Multiply by one‑half: 0.5 × 8,000 ft² = 4,000 ft²
+  formulas:
+    - Area = 1/2 × base × height
+  onscreen_calculator_only: false
+terms:
+  - triangle
+  - area
+  - base
+  - height
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

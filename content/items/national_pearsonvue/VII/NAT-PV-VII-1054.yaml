@@ -1,0 +1,43 @@
+id: NAT-PV-VII-1054
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer’s hybrid adjustable rate mortgage is scheduled to reset from a fixed rate to a
+  variable rate on March 15, 2025. According to TILA §1638a(b), during which period must the
+  creditor provide the reset notice?
+options:
+  - From February 15 to March 15, 2025.
+  - From September 15 to October 15, 2024.
+  - From August 15 to September 15, 2024.
+  - From January 15 to February 15, 2025.
+key: C
+explanation: The rule requires notice during the one‑month period that ends six months before the
+  reset date. Six months before March 15, 2025 is September 15, 2024; the one‑month period ending on
+  that date runs from August 15 to September 15, 2024. Therefore, the creditor must provide the
+  notice in that window.
+citation:
+  source: 15 U.S.C. § 1638a(b)
+  url: null
+  quoted_text: During the 1-month period that ends 6 months before the date on which the interest rate
+    in effect during the introductory period of a hybrid adjustable rate mortgage adjusts or resets
+    to a variable interest rate
+  secondary: []
+terms:
+  - hybrid adjustable rate mortgage
+  - reset notice
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

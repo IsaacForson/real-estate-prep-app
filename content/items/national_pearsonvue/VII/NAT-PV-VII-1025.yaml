@@ -1,0 +1,44 @@
+id: NAT-PV-VII-1025
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower transfers title of the mortgaged property to a friend without obtaining the
+  lender's consent. The loan contains an alienation (due-on-sale) clause. According to the Garn–St
+  Germain Act of 1982, what is the lender's right?
+options:
+  - The lender may not accelerate because transfers to friends are exempt
+  - The lender may accelerate the loan because the transfer is not exempt
+  - The lender must first offer the loan to the friend before accelerating
+  - The lender may accelerate only if the friend assumes the loan
+key: B
+explanation: Under the Garn–St Germain Act, alienation clauses are enforceable except for specific
+  exempt transfers; a transfer to a friend is not exempt, so the lender may accelerate, per §2.2.
+  The distractor claiming that transfers to friends are exempt misstates the statute, which only
+  exempts transfers to a spouse, child, joint tenant on death, or into a living trust.
+citation:
+  source: REP Ref. Financing & Closing § 2.2
+  url: null
+  quoted_text: The Garn–St Germain Act of 1982 made these clauses generally enforceable but exempts
+    transfers such as to a spouse or child, on the death of a joint tenant, or into the borrower's
+    living trust.
+  secondary: []
+terms:
+  - alienation clause
+  - due-on-sale
+  - exempt transfer
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

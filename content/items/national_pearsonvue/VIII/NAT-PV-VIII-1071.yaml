@@ -1,0 +1,41 @@
+id: NAT-PV-VIII-1071
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: According to the text’s description of common mistakes when using multipliers and
+  capitalization rates, which of the following calculations is cited as a wrong-answer pattern?
+options:
+  - Using net operating income divided by the capitalization rate
+  - Using monthly gross rent divided by the capitalization rate
+  - Using net operating income multiplied by the gross rent multiplier
+  - Using annual gross income multiplied by the gross income multiplier
+key: B
+explanation: The text explicitly states that dividing monthly gross rent by a cap rate is a common
+  wrong-answer pattern. Dividing NOI by the cap rate is the correct use of the capitalization rate,
+  while the other two options are not mentioned as errors.
+citation:
+  source: REP Ref. Real Estate Math § 15.4
+  url: null
+  quoted_text: GRM uses monthly gross rent; GIM uses annual gross income; cap rates use annual NOI.
+    Dividing NOI by a GRM, or monthly rent by a cap rate, is a common wrong-answer pattern.
+  secondary: []
+terms:
+  - capitalization rate
+  - gross rent multiplier
+  - gross income multiplier
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

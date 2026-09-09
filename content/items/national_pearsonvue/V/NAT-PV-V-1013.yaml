@@ -1,0 +1,41 @@
+id: NAT-PV-V-1013
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which statement about referral fees between licensed brokers is correct under RESPA?
+options:
+  - Referral fees must flow from broker to broker and cannot be paid to an unlicensed person.
+  - Referral fees may be paid directly to an unlicensed assistant who brings the client.
+  - Referral fees are allowed only when the referring broker is also the lender.
+  - Referral fees are prohibited unless disclosed on the HUD‑1 settlement statement.
+key: A
+explanation: RESPA permits referral fees only between licensed brokers and prohibits paying anything
+  of value to an unlicensed person for referrals. The fee must flow broker to broker.
+citation:
+  source: REP Ref. Brokerage Practice § 4.4
+  url: null
+  quoted_text: Referral fees between licensed brokers are lawful and must flow broker to broker;
+    paying anything of value to an *unlicensed* person for referring business is prohibited in every
+    state, and kickbacks for referrals of settlement services in a federally related mortgage
+    transaction are separately prohibited by the cached RESPA statute.
+  secondary: []
+terms:
+  - referral fee
+  - respa
+  - broker
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

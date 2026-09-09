@@ -1,0 +1,43 @@
+id: NAT-PV-VI-1015
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA §9607(2), how many days after notifying the EPA Administrator does the transfer
+  of liability to the Post-closure Liability Fund become effective?
+options:
+  - 30 days
+  - 120 days
+  - 60 days
+  - 90 days
+key: D
+explanation: The statute states that transfer of liability shall be effective ninety days after the
+  owner or operator notifies the Administrator that conditions have been satisfied. Therefore, the
+  correct period is ninety days. The thirty- and sixty-day distractors confuse other CERCLA
+  timelines, while one hundred twenty days incorrectly adds a month.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(2)
+  url: null
+  quoted_text: Such transfer of liability shall be effective ninety days after the owner or operator
+    of such facility notifies the Administrator
+  secondary: []
+terms:
+  - liability
+  - transfer
+  - notification
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

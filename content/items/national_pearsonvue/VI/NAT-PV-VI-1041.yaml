@@ -1,0 +1,45 @@
+id: NAT-PV-VI-1041
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, in a contribution action concerning municipal solid waste disposed of after
+  April 1, 2001, which party bears the burden of proof to show that the municipal solid waste
+  exemption does **NOT** apply?
+options:
+  - The party bringing the action
+  - The President of the United States
+  - The party defending the action
+  - The Environmental Protection Agency
+key: A
+explanation: The burden of proof falls on the party bringing the action under CERCLA § 9607(p)(5),
+  which states that the party bringing the action must demonstrate that the exemption conditions are
+  not met. The defending party, the EPA, or the President do not bear this burden in such a
+  contribution action. Therefore, the party bringing the action is correct.
+citation:
+  source: 42 U.S.C. § 9607(p)(5)
+  url: null
+  quoted_text: the burden of proof shall be on the party bringing the action to demonstrate that the
+    conditions described in paragraphs (1) and (4) for exemption for entities and organizations
+    described in paragraph (1)(B) and (C) are not met.
+  secondary: []
+terms:
+  - burden
+  - proof
+  - municipal solid waste
+  - contribution
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

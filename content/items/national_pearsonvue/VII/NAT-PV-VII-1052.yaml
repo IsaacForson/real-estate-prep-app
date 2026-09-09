@@ -1,0 +1,43 @@
+id: NAT-PV-VII-1052
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A loan servicer provides a monthly periodic statement for an adjustable-rate mortgage that
+  includes the principal balance and current interest rate but omits the date on which the interest
+  rate may next reset. Under TILA §1638(f)(1)(C), is the statement compliant?
+options:
+  - Yes, because the principal balance and interest rate are the only required items.
+  - No, because the statement must also include the date on which the interest rate may next reset.
+  - Yes, because adjustable-rate mortgages are exempt from periodic statement requirements.
+  - No, because the statement must also include a telephone number for counseling agencies.
+key: B
+explanation: TILA §1638(f)(1)(C) mandates that periodic statements for residential mortgage loans
+  include the date on which the interest rate may next reset or adjust. Because the statement omits
+  that date, it fails to meet the requirement. The telephone number for counseling agencies is
+  required under subsection (f)(1)(F) but does not cure the missing reset date. No exemption for
+  adjustable-rate mortgages from periodic statements exists in the statute.
+citation:
+  source: 15 U.S.C. § 1638(f)(1)(C)
+  url: null
+  quoted_text: The date on which the interest rate may next reset or adjust.
+  secondary: []
+terms:
+  - periodic statement
+  - adjustable-rate mortgage
+  - interest rate reset
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

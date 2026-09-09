@@ -1,0 +1,38 @@
+id: NAT-PV-VII-1028
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: How is a buyer's cash to close calculated on a settlement statement?
+options:
+  - Buyer credits minus buyer debits
+  - Buyer debits minus buyer credits
+  - Buyer credits plus buyer debits
+  - Buyer debits plus buyer credits
+key: B
+explanation: The rule defines buyer cash to close as buyer debits minus buyer credits. The other
+  options reverse the operation or use addition, which does not match the definition.
+citation:
+  source: REP Ref. Financing & Closing § 10.5
+  url: null
+  quoted_text: Buyer cash to close = buyer debits − buyer credits;
+  secondary: []
+terms:
+  - cash to close
+  - debits
+  - credits
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
