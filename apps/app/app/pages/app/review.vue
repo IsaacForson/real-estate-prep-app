@@ -53,7 +53,7 @@ const label = (b: string) => b.replace("national_pearsonvue", "National · Pears
 const stem = (s: string) => s.replace(/\*\*/g, "");
 </script>
 <template>
-  <div class="app-page grid w-full gap-4 text-ink">
+  <div class="grid w-full gap-4 text-ink">
     <p class="text-[13.5px] leading-relaxed text-ink-2">Missed questions and the ones due to come back. A correct review moves a card to the next box.</p>
     <AppTabs v-model="tab" :tabs="[{ value: 'missed', label: 'Missed', count: rows.length }, { value: 'boxes', label: 'Boxes' }]" aria-label="Review view" />
 

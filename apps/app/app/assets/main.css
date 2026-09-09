@@ -543,7 +543,7 @@
 @utility anim-deal-in {
   animation: cp-deal-in 0.3s var(--ease-emphasized);
 }
-@media (prefers-reduced-motion: reduce), (hover: none) {
+@media (prefers-reduced-motion: reduce) {
   .anim-fade-up,
   .anim-sheet-up,
   .anim-scale-in,
@@ -560,19 +560,13 @@
   animation: cp-shimmer 1.4s linear infinite;
 }
 
-/* Never leave a route at opacity 0. Android WebView has applied `from` / `enter-from` and
-   then failed to composite the visible state — header stayed, page body vanished. */
+/* Route transitions (Nuxt `page` transition). Opacity only — position changes fight the
+   scroll restoration. */
 .page-enter-active,
-.page-leave-active,
-.page-enter-from,
-.page-enter-to,
-.page-leave-from,
-.page-leave-to {
-  opacity: 1 !important;
-  transform: none !important;
+.page-leave-active {
+  transition: opacity 0.14s var(--ease-standard);
 }
-.app-page {
-  opacity: 1 !important;
-  transform: none !important;
-  min-height: 12rem;
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
 }

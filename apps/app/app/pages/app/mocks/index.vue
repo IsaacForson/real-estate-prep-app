@@ -55,7 +55,7 @@ onMounted(() => { void content.load().then(() => mockForms.load(jur.value, natio
 watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.value); });
 </script>
 <template>
-  <div class="app-page grid w-full gap-4 text-ink">
+  <div class="grid w-full gap-4 text-ink">
     <p class="text-[13.5px] leading-relaxed text-ink-2">Timed forms in your state's exam format. Answers stay hidden until you submit.</p>
     <AppCard v-if="active" tone="accent">
       <div class="flex items-center gap-3">
