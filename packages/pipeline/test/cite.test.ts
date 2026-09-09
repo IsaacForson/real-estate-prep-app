@@ -161,6 +161,38 @@ describe("keys without a section sign and table-of-contents headings", () => {
     expect(sectionKey("02-039 C.M.R. ch. 340", "02-039 C.M.R. chs. 300–410 (Maine rules)")).toBe("340");
     expect(sectionKey("Mo. Rev. Stat. ch. 339", "Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules)")).toBeNull();
   });
+  it("ignores a chapter listing and a bare cross-reference", () => {
+    // Iowa ch. 543B opens with a listing whose entries carry lower-case captions, so counting prose
+    // words cannot spot it — the giveaway is that sibling numbers recur every few dozen characters.
+    // The listing ran to the window cap and beat the real body on length.
+    const listing = [
+      "SUBCHAPTER II RELATIONSHIP BETWEEN LICENSEES AND PARTIES",
+      "543B.55 Disclosure of relationship.",
+      "543B.56 Duties of licensees.",
+      "543B.57 Written agreement required.",
+      "543B.58 Licensees representing more than one client.",
+      "543B.59 Appointed agents within a firm.",
+      "",
+      "543B.56 Duties of licensees.",
+      "1. Duties to all parties in a transaction. In providing brokerage services to a client, a licensee",
+      "shall treat all parties honestly and may not knowingly give false information.",
+      "",
+      "543B.57 Written agreement required.",
+      "A licensee shall obtain a written agreement.",
+    ].join("\n");
+    const body = sliceSection(listing, "543B.56")!;
+    expect(body.startsWith("543B.56 Duties of licensees.")).toBe(true);
+    expect(body).toContain("treat all parties honestly");
+    expect(body).not.toContain("543B.59");
+
+    // A document that only cross-references the section must not yield a slice labelled as it.
+    const crossRef = [
+      "481-2012.1 Agency disclosure.",
+      "The duties described in Code section 543B.56. a. The licensee owes no duty to conduct an",
+      "independent inspection of the property for the benefit of the buyer.",
+    ].join("\n");
+    expect(sliceSection(crossRef, "543B.56")).toBeNull();
+  });
   it("prefers the body heading over the table-of-contents line and accepts code prefixes", () => {
     const text = [
       "339.010 Definitions--applicability of chapter", "339.020 License required", "",

@@ -193,7 +193,26 @@ function sliceExact(text: string, key: string, window: number): string | null {
   const CODE = "(?:[A-Za-z0-9§.]{1,8}\\s?){0,3}?";
   const heading = new RegExp(`^[ \\t]*(?:#{1,4}\\s*)?(${PREFIX})?${CODE}${k}(?![0-9a-zA-Z])[.\\s:–—-]`, "gim");
   const shape = key.split(/(\d+|[a-zA-Z]+)/).filter(Boolean).map((part) => /^\d+$/.test(part) ? "\\d+" : /^[a-zA-Z]+$/.test(part) ? "[a-zA-Z]*" : esc(part).replace(/-/g, "[-–—]")).join("");
-  let best: string | null = null;
+  /**
+   * A contents listing packs sibling section numbers together with almost no prose between them.
+   * Iowa's chapter 543B opens with one, and the listing for § 543B.55 ran to the window cap — four
+   * times longer than the real § 543B.56 body — so "keep the longest" picked the table of contents
+   * and resolveRefs then labelled it `### … — § 543B.55`. The heading lied about its own body.
+   */
+  const siblingRe = new RegExp(`(?<![0-9.])${shape}(?![0-9a-zA-Z])`, "g");
+  // Two signals together, because either alone gives false positives: a listing names many
+  // DIFFERENT sibling sections, and it names them close together — every 40-110 characters of
+  // caption — whereas a real section body runs hundreds of characters of prose before the next
+  // number appears. Counting prose words instead does not work: Iowa's chapter listing carries
+  // lower-case captions ("Disclosure of relationship", "Duties to all parties") that read as prose.
+  const tocLike = (slice: string) => {
+    const at = [...slice.slice(0, 1200).matchAll(siblingRe)];
+    if (new Set(at.map((m) => m[0])).size < 4) return false;
+    const gaps = at.slice(1).map((m, n) => m.index! - at[n]!.index!);
+    return gaps.length > 0 && gaps.reduce((a, b) => a + b, 0) / gaps.length < 120;
+  };
+
+  const cands: Array<{ slice: string; titled: boolean }> = [];
   for (const m of text.matchAll(heading)) {
     const start = m.index!;
     const rest = text.slice(start + m[0].length);
@@ -203,13 +222,31 @@ function sliceExact(text: string, key: string, window: number): string | null {
     const next = new RegExp(`\\n[ \\t]*(?:#{1,4}\\s*)?${hadPrefix ? PREFIX : `${PREFIX}?`}${CODE}${shape}(?![0-9a-zA-Z])[.\\s:–—-]\\s*[A-Z"“(]`).exec(rest);
     const end = next ? start + m[0].length + next.index : Math.min(text.length, start + window * 4);
     const slice = text.slice(start, end).trim();
-    // Several headings can match (a table of contents lists the same number): keep the longest body.
-    if (!best || slice.length > best.length) best = slice;
+    if (tocLike(slice)) continue;
+    // A real heading is followed by its title; a cross-reference ("Code section 543B.56. a. the
+    // licensee owes no duty…") continues in lower case. The CODE prefix is loose enough to let
+    // "Code section" look like a heading, so the capital is what separates them.
+    // The capital must follow the number immediately. Allowing any run of characters first let
+    // "Code section 543B.56. a. The licensee owes no duty…" pass as a heading, and its 12,000-char
+    // slice then beat the real 5,555-char "543B.56 Duties of licensees." body on length.
+    // Measure from `text`, not from `slice`: the heading match includes any leading indentation
+    // that `.trim()` then removes, so an offset taken on the match misaligns inside the slice.
+    cands.push({ slice, titled: /^[.\s:–—-]*["“(]?[A-Z]/.test(text.slice(start + m[0].length - 1, start + m[0].length + 40)) });
   }
-  if (best) return best;
-  const i = text.search(new RegExp(`(?<![0-9.])${k}(?![0-9])`));
+  // Only a titled heading counts. Accepting untitled candidates when a document had no titled one
+  // meant a document that merely CROSS-REFERENCES the section produced a slice labelled as that
+  // section: Iowa Admin. Code r. 481-2012 mentions "Code section 543B.56." once, and that single
+  // mention became a 12,000-character block headed "§ 543B.56". Returning null instead lets
+  // resolveRefs fall back to the whole document under its own citation, which misattributes nothing.
+  const titled = cands.filter((c) => c.titled);
+  if (titled.length) return titled.reduce((a, b) => (b.slice.length > a.slice.length ? b : a)).slice;
+  // Last resort: a bare mention. Only usable if it reads like the start of the section rather than
+  // the middle of a sentence — returning null instead lets resolveRefs fall back to the whole
+  // document under the document's own citation, which at least does not misattribute a section.
+  const i = text.search(new RegExp(`(?<![0-9.])${k}(?![0-9])[.\\s:–—-]+["“(]?[A-Z]`));
   if (i < 0) return null;
-  return text.slice(Math.max(0, i - window), Math.min(text.length, i + window)).trim();
+  const around = text.slice(i, Math.min(text.length, i + window * 2)).trim();
+  return tocLike(around) ? null : around;
 }
 
 export interface QuoteHit { doc: StatuteDoc; index: number }
