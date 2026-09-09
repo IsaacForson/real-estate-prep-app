@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 import { CONFIG, repoRoot as repoRootDir } from "./config.js";
-import { fetchStatute, saveStatute, today, loadStatutes, pdfToText } from "./statutes.js";
+import { fetchStatute, saveStatute, today, loadStatutes, pdfToText, htmlToText } from "./statutes.js";
 import { planBank } from "./plan.js";
 import { submitDraftBatch, collectBatch } from "./draft.js";
 import { submitVerifyBatch, collectVerifyBatch } from "./verify.js";
@@ -74,7 +74,21 @@ async function main() {
       if (!jur || !citation) throw new Error("ingest <JUR> <citation> <url>|--file <path>");
       const file = flag("file");
       if (file) {
-        const text = file.toLowerCase().endsWith(".pdf") ? await pdfToText(new Uint8Array(readFileSync(file))) : readFileSync(file, "utf8");
+        // Sniff the bytes, never the file name. Both of these went wrong in the real corpus:
+        //   * a saved HTML page ingested whole, so doctype/<head>/<script>/nav chrome became
+        //     "authority text" and nothing could be quoted verbatim from it;
+        //   * a PDF whose name did not end in .pdf, read through `readFileSync(file, "utf8")` —
+        //     which replaces every invalid UTF-8 byte with U+FFFD and destroys the deflate streams
+        //     irrecoverably, leaving 500KB of unreadable binary that no later pass could repair.
+        // Read as a Buffer first and decide from the magic bytes. --raw keeps genuinely plain text.
+        const buf = readFileSync(file);
+        const head = buf.subarray(0, 4096).toString("latin1");
+        const text = head.startsWith("%PDF") || /\.pdf$/i.test(file)
+          ? await pdfToText(new Uint8Array(buf))
+          : (/^\s*(<!DOCTYPE|<html|<\?xml)/i.test(head) || /\.(html?|xhtml)$/i.test(file)) && !rest.includes("--raw")
+            ? htmlToText(buf.toString("utf8"))
+            : buf.toString("utf8");
+        if (!text.replace(/\s+/g, "").length) throw new Error(`extracted no text from ${file} — is it a scanned PDF or a corrupt download?`);
         const p = saveStatute({ jurisdiction: jur, citation, title: urlOrTitle ?? citation, url: flag("url") ?? null, fetched_on: today(), text });
         console.log(`saved ${p}`);
       } else {
