@@ -1,0 +1,46 @@
+id: NAT-PSI-III-0146
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A building has cost new of $500,000, effective age of 10 years, and total economic life of 50
+  years. Using the straight-line method, what is the accrued depreciation percentage?
+options:
+  - 10%
+  - 25%
+  - 20%
+  - 15%
+key: C
+explanation: Accrued depreciation percentage equals effective age divided by total economic life (10
+  ÷ 50 = 0.20 or 20%). The distractor 25% would result from mistakenly using 10 ÷ 40.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.5
+  url: null
+  quoted_text: Accrued depreciation = (effective age ÷ total economic life) × cost new;
+  secondary: []
+math:
+  worked_solution: |-
+    Divide effective age by total economic life: 10 ÷ 50 = 0.20
+    Convert to percentage: 0.20 × 100 = 20%
+  formulas:
+    - Accrued depreciation percentage = (effective age ÷ total economic life) × 100
+  onscreen_calculator_only: false
+terms:
+  - straight-line method
+  - accrued depreciation
+  - effective age
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

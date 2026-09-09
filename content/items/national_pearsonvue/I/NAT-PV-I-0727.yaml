@@ -1,0 +1,43 @@
+id: NAT-PV-I-0727
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A deed describes a parcel using metes and bounds that references a river as a boundary, but
+  the accompanying lot-and-block plat shows the boundary as a straight line 15 feet inland from the
+  river. According to the rule of construction for metes-and-bounds descriptions, which boundary
+  controls?
+options:
+  - The river (natural monument) as the boundary
+  - The lot-and-block plat line as the boundary
+  - The course and distance calls as the boundary
+  - The stated area description as the boundary
+key: A
+explanation: The rule of construction for metes‑and‑bounds descriptions ranks natural monuments
+  first, so the river boundary prevails over the plat line. The lot‑and‑block line is an artificial
+  monument and thus lower in priority. Course and distance and stated area are ranked even lower.
+citation:
+  source: REP Ref. Property & Land Use § 3.2
+  url: null
+  quoted_text: When elements of a description conflict, the usual rule of construction ranks natural
+    monuments first, then artificial monuments, then adjoining boundaries, then courses, then
+    distances, and stated area last
+  secondary: []
+terms:
+  - metes and bounds
+  - rule of construction
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

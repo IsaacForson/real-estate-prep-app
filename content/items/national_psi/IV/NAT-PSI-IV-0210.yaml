@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0210
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A private educational lender approves a private education loan application on March 15 and
+  provides the required disclosure documents on the same day. According to TILA §1638(e)(6)(A), what
+  is the latest calendar date by which the borrower may accept the loan terms and consummate the
+  transaction?
+options:
+  - April 12
+  - April 13
+  - April 14
+  - April 15
+key: C
+explanation: The rule gives the borrower 30 calendar days following approval and receipt of
+  disclosures to accept the loan. March 15 plus 30 days lands on April 14, which is the latest
+  permissible date. April 15 would exceed the 30‑day limit, while April 12 or 13 would be earlier
+  than allowed.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1638(e)(6)(A)
+  url: null
+  quoted_text: the borrower shall have the right to accept the terms of the loan and consummate the
+    transaction at any time within 30 calendar days
+  secondary: []
+terms:
+  - private education loan
+  - approval
+  - disclosure
+  - calendar days
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,50 @@
+id: NAT-PSI-III-0145
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A comparable property sold for $350,000 and has a pool, which the subject lacks. If the
+  market-derived adjustment for a pool is $12,000, what is the adjusted price of the comparable?
+options:
+  - $350,000
+  - $344,000
+  - $338,000
+  - $362,000
+key: C
+explanation: Because the comparable has a feature the subject lacks (pool), it is superior and its
+  price must be adjusted downward by $12,000, yielding $338,000. The distractor $362,000 results
+  from incorrectly adding the adjustment instead of subtracting it.
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.3
+  url: null
+  quoted_text: If a comparable has a feature the subject lacks (comparable superior), its price is
+    adjusted downward;
+  secondary: []
+math:
+  worked_solution: >-
+    Start with comparable sale price: $350,000
+
+    Since the comparable has a pool the subject lacks, it is superior; subtract the pool adjustment:
+    $350,000 - $12,000 = $338,000
+  formulas:
+    - Adjusted price = Sale price - Adjustment (for superior feature)
+  onscreen_calculator_only: false
+terms:
+  - sales comparison
+  - adjustment
+  - comparable
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

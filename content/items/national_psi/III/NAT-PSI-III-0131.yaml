@@ -1,0 +1,40 @@
+id: NAT-PSI-III-0131
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is preparing a CMA and has a comparable property that has a superior feature (an
+  extra bedroom) compared to the subject property. According to the adjustment direction rule, what
+  adjustment should be made to the comparable's sale price?
+options:
+  - No adjustment should be made to the comparable's price; the subject's price remains unchanged.
+  - The comparable's price should be used as the subject's value without any adjustment.
+  - The value of the extra bedroom should be subtracted from the comparable's price.
+  - The value of the extra bedroom should be added to the comparable's price.
+key: C
+explanation: The rule states that for a comparable superior to the subject, the analyst subtracts
+  the value of the superior feature from the comparable's price. The most tempting distractor is to
+  add the value, which would be appropriate only if the comparable were inferior.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: "- Adjustment direction: comparable superior, subtract; comparable inferior, add; never
+    adjust the subject."
+  secondary: []
+terms:
+  - adjustment
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

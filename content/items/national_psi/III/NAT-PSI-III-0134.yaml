@@ -1,0 +1,51 @@
+id: NAT-PSI-III-0134
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A comparable property sold for $400,000 and is 200 square feet larger than the subject. If the
+  market-derived adjustment for living area is $50 per square foot, what is the adjusted price of
+  the comparable?
+options:
+  - $390,000
+  - $410,000
+  - $450,000
+  - $350,000
+key: A
+explanation: Adjustments are made to the comparable; because the comparable is superior (larger),
+  its price is reduced by the market-derived adjustment. 200 ft² × $50/ft² = $10,000 subtraction
+  yields $390,000. The distractor $410,000 results from adding the adjustment instead of
+  subtracting, and $450,000 from mistakenly adding $50,000 (perhaps miscalculating 1,000 ft²).
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.4
+  url: null
+  quoted_text: "Comparable A sold for $352,000: 1,900 square feet, otherwise identical. It is larger
+    by 100 square feet (superior): subtract 100 × 60 = $6,000. Adjusted price 352,000 − 6,000 =
+    $346,000."
+  secondary: []
+math:
+  worked_solution: Size difference = 200 ft²; adjustment per ft² = $50; adjustment amount = 200 × 50 =
+    $10,000; adjusted price = $400,000 − $10,000 = $390,000.
+  formulas:
+    - Adjusted price = Sale price − (size difference × adjustment per sq ft)
+  onscreen_calculator_only: false
+terms:
+  - adjustment
+  - comparable
+  - sales comparison
+  - size
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

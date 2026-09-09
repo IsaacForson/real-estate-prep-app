@@ -55,7 +55,7 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   verify-local <bank>                               drafts passing local checks → content (status verified, provisional)
   repair <id...>                                    LLM-rewrite wording of content items failing lint → back to verified
   qa-reject <reviewer> <id> "<reason>"              retire an item
-  publish <bank>                                    qa_approved → published
+  publish <bank> [--include-verified]               qa_approved (and verified, if flagged) → published
   publish --remote [<bank>] [--dry-run] [--force-version] [--backfill]   upload qa_approved/published items to the Supabase 'content' bucket + item_index / item_content / content_versions / content_alerts (needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY); --backfill upserts every published item's item_content row
   forms-build <bank|XX> [--remote] [--forms 5]      assemble non-overlapping mock forms (national: short + full; state: short + form-1..N) from approved items; --remote upserts them into mock_forms
   watch-sources [--bank <id>] [--dry-run] [--skip-blocked] [--concurrency N]   re-fetch every cached authority URL, hash-compare, flag items whose citations changed → needs_review, docs/STATUTE_CHANGES.md, .pipeline/watch/
@@ -238,7 +238,8 @@ async function main() {
         break;
       }
       if (!positional[0]) throw new Error("publish <bank> | publish --remote");
-      console.log(`${publish(positional[0]!)} items published`);
+      const statuses = rest.includes("--include-verified") ? (["qa_approved", "verified"] as const) : (["qa_approved"] as const);
+      console.log(`${publish(positional[0]!, [...statuses])} items published`);
       break;
     }
     case "forms-build": {

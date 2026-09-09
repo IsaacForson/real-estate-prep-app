@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0160
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer provides a dated, written statement waiving the TILA disclosure timing requirements
+  due to a bona fide personal financial emergency. What must the creditor provide to the consumer at
+  or before the time of such waiver?
+options:
+  - The creditor must provide the final disclosures required by subsection (a)
+  - The creditor must provide a copy of the consumer's credit report (for underwriting)
+  - The creditor must provide a revised good faith estimate (if the APR changes)
+  - The creditor must provide a statement of the annual percentage rate (in the loan agreement)
+key: A
+explanation: When a consumer waives the timing requirements, the creditor must provide the final
+  disclosures required by subsection (a) at or before the time of the waiver. The other options are
+  not mandated by the waiver provision.
+citation:
+  source: 15 U.S.C. § 1638(b)(2)(F)(iii)
+  url: null
+  quoted_text: the creditor provides to the consumers at or before the time of such waiver or
+    modification, the final disclosures required by paragraph (1);
+  secondary: []
+terms:
+  - waiver
+  - final disclosures
+  - timing
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

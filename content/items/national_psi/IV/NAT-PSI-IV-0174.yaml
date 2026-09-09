@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0174
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A mortgage broker asks an appraiser to review additional comparable sales to support the
+  appraisal. Under TILA §1639(c), is this request permissible?
+options:
+  - The request is permissible because subsection (c)(1) allows consideration of additional
+    appropriate property information
+  - The request is prohibited because subsection (b)(1) bars any compensation to influence the
+    appraised value
+  - The request is permissible only if the broker pays the appraiser a separate fee for the
+    additional work
+  - The request is prohibited unless a second appraisal is obtained as required under subsection
+    (b)(2)
+key: A
+explanation: Subsection (c)(1) explicitly permits a mortgage broker to ask an appraiser to consider
+  additional appropriate property information, including comparable properties, to support the
+  appraisal. Thus the request is allowed. The distractor claiming the request is prohibited
+  incorrectly applies the prohibitions in subsection (b)(1), which only bar coercive compensation or
+  intimidation, not permissible requests for additional information.
+citation:
+  source: 15 U.S.C. § 1639(c)(1)
+  url: null
+  quoted_text: Consider additional, appropriate property information, including the consideration of
+    additional comparable properties to make or support an appraisal.
+  secondary: []
+terms:
+  - appraisal independence
+  - additional comparable properties
+  - permissible request
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

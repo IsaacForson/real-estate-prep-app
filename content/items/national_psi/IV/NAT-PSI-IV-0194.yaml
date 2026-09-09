@@ -1,0 +1,48 @@
+id: NAT-PSI-IV-0194
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower seeks a loan of $180,000 to purchase a home priced at $250,000 with an appraised
+  value of $225,000. What is the loan-to-value (LTV) ratio?
+options:
+  - The LTV ratio is 75 percent
+  - The LTV ratio is 70 percent
+  - The LTV ratio is 85 percent
+  - The LTV ratio is 80 percent
+key: D
+explanation: LTV is calculated as the loan amount divided by the lesser of appraised value or
+  purchase price. Here the lesser value is the appraised value of $225,000, so $180,000 ÷ $225,000 =
+  0.80, or 80 percent. The other percentages result from using incorrect values or miscalculations.
+citation:
+  source: REP Ref. Financing & Closing § 8.2
+  url: null
+  quoted_text: LTV is the loan amount divided by the lesser of appraised value or purchase price
+  secondary: []
+math:
+  worked_solution: |-
+    Identify lesser of appraised value ($225,000) and purchase price ($250,000) = $225,000
+    Divide loan amount ($180,000) by lesser value ($225,000) = 0.8
+    Convert to percentage: 0.8 × 100 = 80%
+  formulas:
+    - LTV = Loan Amount / Lesser of Appraised Value or Purchase Price
+  onscreen_calculator_only: false
+terms:
+  - loan-to-value
+  - LTV
+  - appraised value
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

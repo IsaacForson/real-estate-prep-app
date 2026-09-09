@@ -1,0 +1,48 @@
+id: NAT-PSI-I-0065
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property is assessed at $300,000. The local tax rate is 15 mills. The owner qualifies for a
+  $10,000 homestead exemption. What is the annual property tax?
+options:
+  - $4,500
+  - $4,200
+  - $4,350
+  - $4,650
+key: C
+explanation: "First subtract the exemption: $300,000 - $10,000 = $290,000 taxable value. One mill
+  equals $1 per $1,000 of assessed value, so 15 mills equals $15 per $1,000, or 0.015 as a decimal.
+  Multiply $290,000 by 0.015 to get $4,350."
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: one mill is one-tenth of a cent, that is, $1 of tax per $1,000 of assessed value.
+  secondary: []
+math:
+  worked_solution: |-
+    $300,000 - $10,000 = $290,000
+    15 mills = 15/1000 = 0.015
+    $290,000 × 0.015 = $4,350
+  formulas:
+    - Tax = (Assessed value - Exemption) × (mills / 1000)
+  onscreen_calculator_only: false
+terms:
+  - mill rate
+  - homestead exemption
+  - assessed value
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

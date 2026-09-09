@@ -1,0 +1,41 @@
+id: NAT-PSI-IV-0177
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is included in the finance charge under TILA?
+options:
+  - Title search and examination fees
+  - Appraisal and inspection fees
+  - Escrow for taxes and insurance
+  - Interest, time price differential
+key: D
+explanation: Under §1605(a)(1), interest, time price differential, and amounts payable under points,
+  discounts, or similar systems are included in the finance charge. Therefore, interest, time price
+  differential is part of the finance charge. The distractor 'Title search and examination fees' is
+  incorrect because §1605(e)(1) excludes fees for title examination, title insurance, or similar
+  purposes from the finance charge for real property–secured loans.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1605
+  url: null
+  quoted_text: Interest, time price differential, and any amount payable under a point, discount, or
+    other system or additional charges.
+  secondary: []
+terms:
+  - finance charge
+  - interest
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0215
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer receives a yield spread premium from the lender that is higher when the loan’s
+  interest rate is higher. Under TILA §1639b(c)(1), is this permissible?
+options:
+  - The practice is prohibited because the compensation varies based on the loan's interest rate, a
+    loan term.
+  - The practice is prohibited when the consumer pays the yield spread premium directly.
+  - The practice is permitted if the yield spread premium is disclosed to the consumer.
+  - The practice is permitted because yield spread premium is not considered compensation based on
+    loan terms.
+key: A
+explanation: TILA §1639b(c)(1) prohibits any compensation to a mortgage originator that varies based
+  on the terms of the loan other than the principal amount. A yield spread premium that increases
+  with the interest rate varies with a loan term, so it is prohibited. The distractor suggesting
+  permissibility if disclosed is incorrect because disclosure does not override the prohibition.
+citation:
+  source: 15 U.S.C. § 1639b(c)(1)
+  url: null
+  quoted_text: For any residential mortgage loan, no mortgage originator shall receive from any person
+    and no person shall pay to a mortgage originator, directly or indirectly, compensation that
+    varies based on the terms of the loan (other than the amount of the principal).
+  secondary: []
+terms:
+  - yield spread premium
+  - compensation
+  - loan terms
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

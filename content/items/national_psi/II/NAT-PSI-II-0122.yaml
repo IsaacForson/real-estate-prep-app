@@ -1,0 +1,49 @@
+id: NAT-PSI-II-0122
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A parcel is described as the NW 1/4 of the SE 1/4 of Section 22, Township 5 North, Range 3
+  East of the Fourth Principal Meridian. How many acres does the parcel contain?
+options:
+  - 40 acres
+  - 80 acres
+  - 160 acres
+  - 320 acres
+key: A
+explanation: The parcel is a quarter‑quarter, which is 1/16 of a section. Since a section contains
+  640 acres, dividing 640 by 16 yields 40 acres. The 80‑acre option mistakenly applies a single
+  quarter division, the 160‑acre option uses a half‑section, and the 320‑acre option doubles the
+  half‑section.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: "Acreage is 640 divided by the product of the fraction denominators: 640 / (4 x 4) = 40 acres."
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the fractions: NW 1/4 of SE 1/4 → denominators 4 and 4.
+    Multiply the denominators: 4 × 4 = 16.
+    Divide the section acreage by the product: 640 ÷ 16 = 40 acres.
+  formulas:
+    - Acres = 640 / (d₁ × d₂)
+  onscreen_calculator_only: false
+terms:
+  - section
+  - quarter-quarter
+  - acreage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

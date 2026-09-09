@@ -1,0 +1,44 @@
+id: NAT-PSI-I-0075
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Three siblings own a cabin as joint tenants. One sibling sells her interest to a friend. After
+  the sale, what is the friend's ownership interest?
+options:
+  - The friend holds the interest as a joint tenant
+  - The friend holds the interest as a tenant in severalty
+  - The friend holds the interest as a tenant in common
+  - The friend holds the interest as a life tenant
+key: C
+explanation: When a joint tenant conveys her share during life, the buyer becomes a tenant in common
+  with the remaining owners, who continue to hold their interests as joint tenants among themselves.
+  Thus the friend holds the purchased share as a tenant in common, while the two siblings remain
+  joint tenants as to the other two-thirds. The distractor stating the friend becomes a joint tenant
+  is incorrect because conveying a joint tenancy interest destroys the right of survivorship for
+  that share.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 4.3
+  url: null
+  quoted_text: A joint tenant may convey the share during life; the buyer becomes a tenant in common
+    with the remaining owners, who stay joint tenants among themselves.
+  secondary: []
+terms:
+  - joint tenancy
+  - tenant in common
+  - conveyance
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: NAT-PV-IV-0850
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to the duty of reasonable care and diligence, what must an agent do when they
+  recognize that a client needs a service outside their expertise?
+options:
+  - Wait for the client to ask for a referral before acting promptly
+  - Recommend the client hire a qualified professional promptly
+  - Perform the service themselves rather than refer out promptly
+  - Subcontract the work without telling the client promptly
+key: B
+explanation: The duty of reasonable care and diligence requires an agent to recognize when a client
+  needs a service beyond their expertise and to recommend obtaining that service from a qualified
+  professional. Telling the client to hire a qualified professional promptly satisfies this duty.
+  Performing the service themselves or subcontracting without informing the client would violate the
+  duty because the agent would be acting outside their competence without proper disclosure.
+citation:
+  source: REP Ref. Agency § 5.7
+  url: null
+  quoted_text: Care does not require the agent to be an inspector, appraiser, attorney, or accountant;
+    it requires the agent to recognize when the client needs one and to say so.
+  secondary: []
+terms:
+  - care
+  - diligence
+  - expertise
+  - referral
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

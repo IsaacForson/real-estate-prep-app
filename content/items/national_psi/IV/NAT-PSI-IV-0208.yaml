@@ -1,0 +1,41 @@
+id: NAT-PSI-IV-0208
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1638(a)(5), what term is used for the sum of the amount financed and the finance
+  charge?
+options:
+  - Amount financed
+  - Total of payments
+  - Total sale price
+  - Finance charge
+key: B
+explanation: The statute explicitly states that the sum of the amount financed and the finance
+  charge shall be termed the "total of payments" in §1638(a)(5). The other options refer to separate
+  disclosures defined elsewhere in the subsection.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1638(a)(5)
+  url: null
+  quoted_text: The sum of the amount financed and the finance charge, which shall be termed the "total
+    of payments".
+  secondary: []
+terms:
+  - total of payments
+  - amount financed
+  - finance charge
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

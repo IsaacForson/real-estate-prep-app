@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0080
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer receives a special warranty deed. Two years later an heir of a prior owner asserts an
+  unreleased interest that arose before the seller took title. What is the likely outcome?
+options:
+  - The seller is liable and must defend the title
+  - The seller has no liability for the defect
+  - The buyer must rely on the seller's personal guarantee
+  - The buyer can recover from the title insurance company
+key: B
+explanation: A special warranty deed limits the grantor's covenants to defects arising during the
+  grantor's own period of ownership and provides no protection against defects created before the
+  grantor took title. Since the asserted interest predates the seller's ownership, the seller is not
+  liable under the deed. The distractor claiming the seller is liable confuses a special warranty
+  deed with a general warranty deed, which warrants against defects arising at any time in the chain
+  of title.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.4
+  url: null
+  quoted_text: "A special warranty deed limits the covenants to the grantor's own period of ownership:
+    the grantor warrants only against claims 'by, through, or under' the grantor, and gives no
+    protection against defects created before the grantor took title."
+  secondary: []
+terms:
+  - special warranty deed
+  - covenant
+  - defect
+  - grantor
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

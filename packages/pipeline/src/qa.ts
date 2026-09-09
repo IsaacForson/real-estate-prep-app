@@ -56,8 +56,14 @@ export function qaReject(reviewer: string, id: string, reason: string) {
   unlinkSync(itemPath(hit.value));
 }
 
-export function publish(bank: string): number {
-  const items = bankItems(bank, "qa_approved");
-  for (const { value } of items) writeYaml(itemPath(value), { ...value, status: "published" });
-  return items.length;
+export function publish(bank: string, statuses: Array<Item["status"]> = ["qa_approved"]): number {
+  let n = 0;
+  for (const status of statuses) {
+    const items = bankItems(bank, status);
+    for (const { value } of items) {
+      writeYaml(itemPath(value), { ...value, status: "published" });
+      n++;
+    }
+  }
+  return n;
 }

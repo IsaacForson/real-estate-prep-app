@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0209
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1638(e)(1)(A), what must a private educational lender disclose in any application
+  for a private education loan?
+options:
+  - the potential range of rates of interest applicable to the private education loan
+  - the requirements for a co-borrower, including any changes in the applicable interest rates
+    without a co-borrower
+  - the disclosure of whether the rate of interest applicable to the private education loan is fixed
+    or variable
+  - the limitations on interest rate adjustments, both in terms of frequency and amount, or the lack
+    thereof, if applicable
+key: A
+explanation: The statute explicitly requires disclosure of the potential range of rates of interest
+  applicable to the private education loan in subsection (e)(1)(A). The other options describe
+  disclosures required under different paragraphs of the same subsection, such as whether the rate
+  is fixed or variable (e)(1)(B) or co‑borrower requirements (e)(1)(D).
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1638(e)(1)(A)
+  url: null
+  quoted_text: the potential range of rates of interest applicable to the private education loan;
+  secondary: []
+terms:
+  - private education loan
+  - interest rate
+  - disclosure
+  - application
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

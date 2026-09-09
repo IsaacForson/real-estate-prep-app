@@ -1,0 +1,41 @@
+id: NAT-PV-I-0688
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A lender wants its mortgage to be paid before an existing mechanic's lien despite the mortgage
+  being recorded later. What can the parties do to achieve this?
+options:
+  - Record a subordination agreement
+  - File a lis pendens
+  - Record a declaration of homestead
+  - Execute a quitclaim deed
+key: A
+explanation: Parties can rearrange lien priority by executing a recorded subordination agreement,
+  which makes a junior lien senior to a prior lien. A lis pendens only notes pending litigation, a
+  homestead declaration protects equity, and a quitclaim deed transfers interest without affecting
+  priority.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Parties can rearrange priority by a recorded subordination agreement.
+  secondary: []
+terms:
+  - subordination agreement
+  - priority
+  - lien
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: NAT-PV-IV-0826
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which event terminates an agency relationship by operation of law under general agency law?
+options:
+  - Mutual agreement to end the relationship
+  - Expiration of the agreed term
+  - Revocation by the principal
+  - Death of the principal
+key: D
+explanation: Death or incapacity of either the principal or the agent terminates the agency by
+  operation of law. Expiration of the term, mutual agreement, and revocation are acts of the
+  parties, not operation of law.
+citation:
+  source: "REP Ref. Agency — Reference note: agency relationships, creation/termination, fiduciary
+    duties, disclosure (authored, status: draft — needs licensed review) § 4 How agency is
+    terminated § 4.2 Operation of law"
+  url: null
+  quoted_text: Death or incapacity of either the principal or the agent (broker). Because the
+    relationship is personal, the death of a sole-proprietor broker terminates the firm's listings;
+    the death of a salesperson does not, because the salesperson is not the seller's agent in the
+    primary sense — the broker is.
+  secondary: []
+terms:
+  - death
+  - principal
+  - agent
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NAT-PSI-IV-0168
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum percentage of total loan amount that total points and fees may **NOT**
+  exceed for a loan to be considered a qualified mortgage under TILA §1639(b)(2)(A)(vii)?
+options:
+  - 2 percent of the total loan amount
+  - 4 percent of the total loan amount
+  - 3 percent of the total loan amount
+  - 5 percent of the total loan amount
+key: C
+explanation: The statute states that for a qualified mortgage, the total points and fees payable in
+  connection with the loan do not exceed 3 percent of the total loan amount. The 2 percent option
+  understates the permitted limit, while the 4 and 5 percent options exceed it.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639(b)(2)(A)(vii)
+  url: null
+  quoted_text: for which the total points and fees (as defined in subparagraph (C)) payable in
+    connection with the loan do not exceed 3 percent of the total loan amount
+  secondary: []
+terms:
+  - qualified mortgage
+  - points and fees
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

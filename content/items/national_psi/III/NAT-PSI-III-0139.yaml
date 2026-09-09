@@ -1,0 +1,48 @@
+id: NAT-PSI-III-0139
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a potential gross income of $150,000 per year, vacancy and collection loss of
+  5% of PGI, other income of $3,000, and operating expenses of $45,000. What is the net operating
+  income (NOI)?
+options:
+  - $100,500
+  - $108,000
+  - $93,000
+  - $115,500
+key: A
+explanation: "First calculate EGI: $150,000 − 5% of $150,000 ($7,500) + $3,000 = $145,500. Then NOI
+  = EGI − operating expenses: $145,500 − $45,000 = $100,500. The distractor $108,000 results from
+  omitting the other income before subtracting expenses."
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: EGI = PGI − vacancy and collection loss + other income; NOI = EGI − operating expenses
+    (excluding debt service, depreciation, income taxes, capital improvements).
+  secondary: []
+math:
+  worked_solution: PGI = $150,000; vacancy loss = 0.05 × $150,000 = $7,500; EGI = $150,000 − $7,500 +
+    $3,000 = $145,500; NOI = $145,500 − $45,000 = $100,500
+  formulas:
+    - EGI = PGI − vacancy and collection loss + other income
+    - NOI = EGI − operating expenses
+  onscreen_calculator_only: false
+terms:
+  - egi
+  - noi
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -12,7 +12,7 @@ const reviews = useReviews();
 const coupons = useCoupons();
 const free = useFreeTier();
 
-const picker = ref(false);
+const panel = useAppPanel();
 const dateSheet = ref(false);
 const rateSheet = ref(false);
 const redeemSheet = ref(false);
@@ -32,7 +32,6 @@ const fmt = (s: string | null | undefined) => (s ? new Date(s).toLocaleDateStrin
 const fmtSeen = (s: string | null | undefined) => (s ? new Date(s).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "—");
 const ordinal = (n: number) => (n === 2 ? "second" : n === 3 ? "third" : n === 4 ? "fourth" : n === 5 ? "fifth" : `${n}th`);
 
-async function chooseState(c: string) { picker.value = false; await studyState.set({ jurisdiction: c }); }
 async function saveDate() { await studyState.set({ examDate: draftDate.value || null }); dateSheet.value = false; }
 async function setLevel(v: string) { await studyState.set({ licenseLevel: v as "salesperson" | "broker" }); }
 async function submitReview() {
@@ -58,7 +57,7 @@ watch(() => auth.user.value?.id, (id) => { if (id) { void entitlement.load(); vo
 onMounted(() => { void free.load(); });
 </script>
 <template>
-  <div class="anim-fade-up grid gap-4">
+  <div class="grid w-full gap-4">
     <!-- Identity and entitlement first: the two things people open this screen to check. -->
     <AppCard>
       <div class="flex items-center gap-3.5">
@@ -92,7 +91,7 @@ onMounted(() => { void free.load(); });
         icon="map"
         label="Home state"
         :value="jur ? (JURISDICTIONS[jur as keyof typeof JURISDICTIONS] ?? jur) : 'Not set'"
-        @click="picker = true"
+        @click="panel.pickState()"
       />
       <ListRow
         icon="calendar"
@@ -180,8 +179,6 @@ onMounted(() => { void free.load(); });
       One person per account. Readiness, plan and coverage are computed from one person's answers —
       sharing makes them describe nobody.
     </p>
-
-    <StatePicker :open="picker" :current="jur" @close="picker = false" @select="chooseState" />
 
     <AppSheet :open="dateSheet" title="Exam date" @close="dateSheet = false">
       <form class="grid gap-3" @submit.prevent="saveDate">

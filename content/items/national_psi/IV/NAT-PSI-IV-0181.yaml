@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0181
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is **NOT** a prohibited basis for discrimination under the Equal Credit
+  Opportunity Act (ECOA)?
+options:
+  - Based on race or color.
+  - Based on credit history.
+  - Based on sex or gender.
+  - Based on religion alone.
+key: B
+explanation: Under ECOA §1691(a)(1), discrimination based on race, color, religion, national origin,
+  sex, marital status, or age (if the applicant has capacity to contract) is prohibited. Credit
+  history is not listed among these prohibited bases, so using it as a basis for discrimination is
+  not prohibited by ECOA. The distractor 'Based on religion alone.' is incorrect because the statute
+  explicitly includes religion as a prohibited basis.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(a)(1)
+  url: null
+  quoted_text: " (1) on the basis of race, color, religion, national origin, sex or marital status, or
+    age (provided the applicant has the capacity to contract);"
+  secondary: []
+terms:
+  - discrimination
+  - credit
+  - religion
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

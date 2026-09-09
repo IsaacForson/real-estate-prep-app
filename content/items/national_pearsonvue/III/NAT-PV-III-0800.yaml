@@ -1,0 +1,57 @@
+id: NAT-PV-III-0800
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $340,000. The jurisdiction assesses at 65 percent of market
+  value. The owner qualifies for a $12,000 homestead exemption. The tax rate is 28 mills. What is
+  the annual property tax?
+options:
+  - $2,996
+  - $5,852
+  - $9,184
+  - $6,188
+key: B
+explanation: First, assessed value = $340,000 × 0.65 = $221,000. Taxable value = $221,000 − $12,000
+  = $209,000. Tax rate of 28 mills equals 0.028, so tax = $209,000 × 0.028 = $5,852. The distractors
+  result from omitting the exemption, using market value instead of assessed value, or applying an
+  incorrect assessment ratio.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.3
+  url: null
+  quoted_text: "Tax equals assessed value, less exemptions such as a homestead exemption, multiplied
+    by the tax rate. Rates are commonly expressed in mills: one mill is one-thousandth of a dollar
+    ($0.001), or $1 of tax per $1,000 of assessed value, so 25 mills equals $25 per $1,000, or 2.5
+    percent."
+  secondary: []
+math:
+  worked_solution: |-
+    Assessed Value = $340,000 × 0.65 = $221,000
+    Taxable Value = $221,000 − $12,000 = $209,000
+    Tax = $209,000 × (28 / 1000) = $209,000 × 0.028 = $5,852
+  formulas:
+    - Assessed Value = Market Value × Assessment Ratio
+    - Taxable Value = Assessed Value − Exemption
+    - Tax = Taxable Value × (Mill Rate / 1000)
+  onscreen_calculator_only: false
+terms:
+  - assessed value
+  - assessment ratio
+  - homestead exemption
+  - mill rate
+  - property tax
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,47 @@
+id: NAT-PSI-III-0142
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home for $350,000 and later spends $60,000 on a basement finish. An
+  appraiser estimates the current market value at $390,000. How much did the basement finish
+  contribute to value?
+options:
+  - $40,000
+  - $45,000
+  - $50,000
+  - $55,000
+key: A
+explanation: "Contribution to value is the change in market value attributable to the improvement:
+  $390,000 (current value) − $350,000 (original purchase price) = $40,000. The $60,000 cost is not
+  the contribution; only the value added counts."
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 1.3"
+  url: null
+  quoted_text: The remodel contributed 448,000 − 410,000 = $38,000 to value, not the $45,000 it cost.
+  secondary: []
+math:
+  worked_solution: "Current market value minus original purchase price: $390,000 - $350,000 = $40,000."
+  formulas:
+    - Contribution = Current Value − Original Price
+  onscreen_calculator_only: false
+terms:
+  - contribution
+  - value
+  - cost
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

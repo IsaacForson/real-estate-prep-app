@@ -1,0 +1,42 @@
+id: NAT-PSI-III-0140
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property generates an annual income of $24,000 and the gross income multiplier (GIM) for
+  similar properties in the area is 8.5. What is the estimated property value using the GIM method?
+options:
+  - $204,000
+  - $216,000
+  - $200,000
+  - $192,000
+key: A
+explanation: Value = annual income × GIM = $24,000 × 8.5 = $204,000. The distractor $192,000 would
+  result from using a GIM of 8.0 instead of 8.5.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: GIM = sale price ÷ gross annual income; value = annual income × GIM.
+  secondary: []
+math:
+  worked_solution: Value = $24,000 × 8.5 = $204,000
+  formulas:
+    - value = annual income × GIM
+  onscreen_calculator_only: false
+terms:
+  - gim
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

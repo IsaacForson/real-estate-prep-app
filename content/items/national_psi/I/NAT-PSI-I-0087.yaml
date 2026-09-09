@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0087
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A legal description includes both an iron pin (an artificial monument) and an oak tree (a
+  natural monument) as boundary markers. If the two markers conflict, which controls under the usual
+  rule of construction?
+options:
+  - The adjoining boundary
+  - The iron pin
+  - The oak tree
+  - The course and distance
+key: C
+explanation: The rule of construction ranks natural monuments first, then artificial monuments, then
+  adjoining boundaries, then courses, then distances, and stated area last. Therefore, the natural
+  monument (the oak tree) prevails over the artificial iron pin.
+citation:
+  source: REP Ref. Property & Land Use § 3.2
+  url: null
+  quoted_text: When elements of a description conflict, the usual rule of construction ranks natural
+    monuments first, then artificial monuments, then adjoining boundaries, then courses, then
+    distances, and stated area last.
+  secondary: []
+terms:
+  - monument
+  - rule of construction
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0165
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor offers a high-cost mortgage that includes an early‑payoff fee calculated using the
+  rule of 78s, which results in a refund of unearned interest that is less favorable than the
+  actuarial method. Under TILA §1639, is this fee permissible?
+options:
+  - Under TILA §1639, the fee is permissible as long as the fee is disclosed in the loan contract
+  - Under TILA §1639, the fee is prohibited because any method less favorable than the actuarial
+    method constitutes a prepayment penalty
+  - Under TILA §1639, the fee is permissible because the rule of 78s is a standard method
+  - Under TILA §1639, the fee is prohibited unless the consumer agrees in writing to waive the
+    prohibition
+key: B
+explanation: Section 1639(c)(1)(B) defines any refund method less favorable than the actuarial
+  method as a prepayment penalty, and subsection (a) prohibits prepayment penalties. Therefore the
+  rule‑of‑78s fee is prohibited. The disclosure distractor is wrong because disclosure does not
+  override the substantive ban on prepayment penalties.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639
+  url: null
+  quoted_text: For purposes of this subsection, any method of computing a refund of unearned scheduled
+    interest is a prepayment penalty if it is less favorable to the consumer than the actuarial
+    method (as that term is defined in section 1615(d) of this title).
+  secondary: []
+terms:
+  - prepayment penalty
+  - actuarial method
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,43 @@
+id: NAT-PV-II-0742
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller signs a deed and gives it to an escrow agent with instructions to release it upon the
+  buyer's loan approval. The loan is approved three days later, the agent releases the deed to the
+  buyer, and the deed is recorded the next day. When does title pass?
+options:
+  - The deed being signed, delivered, and accepted
+  - The escrow agent receiving the deed
+  - The escrow agent releasing the deed
+  - The deed being recorded publicly
+key: C
+explanation: Title passes when the deed is delivered by the grantor and accepted by the grantee, not
+  when signed or recorded. Delivery to an escrow agent with conditions results in title passing when
+  those conditions are satisfied and the agent releases the deed. Thus, title passes when the escrow
+  agent releases the deed. The other options describe events that do not effect transfer of title.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 11.2
+  url: null
+  quoted_text: delivery may also be made to an escrow agent with instructions to release it when
+    conditions are met, and title then passes when they are satisfied.
+  secondary: []
+terms:
+  - delivery
+  - escrow
+  - title passage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

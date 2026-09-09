@@ -1,0 +1,39 @@
+id: NAT-PSI-IV-0164
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1639(k)(1)(A), what is the maximum percentage of a past-due payment that a
+  creditor may charge as a late fee for a high-cost mortgage?
+options:
+  - The maximum allowable late fee is 2% of the past-due payment
+  - The maximum allowable late fee is 3% of the past-due payment
+  - The maximum allowable late fee is 4% of the past-due payment
+  - The maximum allowable late fee is 5% of the past-due payment
+key: C
+explanation: The rule states a late fee may not exceed 4 percent of the amount of the payment past
+  due, making 4% the highest permissible amount. The 5% option exceeds this limit and therefore
+  violates §1639(k)(1)(A).
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639
+  url: null
+  quoted_text: (A) in an amount in excess of 4 percent of the amount of the payment past due;
+  secondary: []
+terms:
+  - late fee
+  - high-cost mortgage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

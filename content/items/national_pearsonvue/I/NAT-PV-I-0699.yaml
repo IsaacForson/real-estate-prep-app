@@ -1,0 +1,39 @@
+id: NAT-PV-I-0699
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which type of easement benefits a specific parcel of land and runs with the land?
+options:
+  - Appurtenant easement
+  - Easement in gross
+  - License agreement
+  - Profit à prendre
+key: A
+explanation: An appurtenant easement benefits a specific parcel (the dominant tenement) and runs
+  with the land, passing automatically to subsequent owners. The other options describe rights that
+  are either personal or not tied to a particular parcel.
+citation:
+  source: REP Ref. Property & Land Use § 7.2
+  url: null
+  quoted_text: An appurtenant easement benefits a parcel. The benefited parcel is the dominant
+    tenement; the burdened parcel is the servient tenement.
+  secondary: []
+terms:
+  - easement
+  - appurtenant
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

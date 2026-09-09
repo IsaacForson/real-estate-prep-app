@@ -1,0 +1,47 @@
+id: NAT-PV-I-0716
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A lot has a frontage of 80 feet and a depth of 200 feet. What is the acreage of the lot?
+options:
+  - 0.367 acre
+  - 0.500 acre
+  - 0.250 acre
+  - 0.734 acre
+key: A
+explanation: The area is 80 ft × 200 ft = 16,000 sq ft. Using the conversion 1 acre = 43,560 sq ft,
+  16,000 ÷ 43,560 ≈ 0.367 acre. The option 0.500 acre results from mistakenly using 32,000 sq ft per
+  acre.
+citation:
+  source: REP Ref. Property & Land Use § 3.6
+  url: null
+  quoted_text: 1 acre = 43,560 square feet = 4,840 square yards = 160 square rods = 10 square chains.
+  secondary: []
+math:
+  worked_solution: Area = 80 ft × 200 ft = 16,000 sq ft. Acres = 16,000 sq ft ÷ 43,560 sq ft per acre
+    = 0.3673 acre ≈ 0.367 acre.
+  formulas:
+    - Area = length × width
+    - Acres = square feet ÷ 43,560
+  onscreen_calculator_only: false
+terms:
+  - acre
+  - frontage
+  - depth
+  - conversion
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

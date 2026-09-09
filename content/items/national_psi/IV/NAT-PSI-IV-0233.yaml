@@ -1,0 +1,62 @@
+id: NAT-PSI-IV-0233
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has an annual property tax of $12,000. The seller paid the tax in advance for
+  January 1 through August 31. The closing date is September 1. Using the actual 365-day convention
+  and charging the closing day to the buyer, what is the buyer's proration debit for property taxes?
+options:
+  - $0997.26
+  - $1030.14
+  - $0000.00
+  - $4000.00
+key: B
+explanation: "First, find the daily tax rate: $12,000 ÷ 365 = $32.87671233 per day. The seller owned
+  the property from January 1 through August 31, which is 212 days. The seller’s tax share is 212 ×
+  $32.87671233 = $6,969.86. The seller paid ahead for eight months, which is 8/12 × $12,000 =
+  $8,000. The seller overpaid by $8,000 − $6,969.86 = $1,030.14. Because the seller paid ahead, the
+  overpayment is credited to the seller and debited to the buyer, so the buyer’s proration debit is
+  $1,030.14."
+citation:
+  source: REP Ref. Financing & Closing § 10.6
+  url: null
+  quoted_text: Expenses that run with the property over time — property taxes, association dues, rents
+    collected in advance, interest on an assumed loan — are divided so each party bears the share
+    for its period of ownership. Items the seller paid ahead are credited to the seller and debited
+    to the buyer; items accrued but unpaid are debited to the seller and credited to the buyer.
+  secondary: []
+math:
+  worked_solution: |-
+    Daily tax rate = $12,000 / 365 = $32.87671233 per day.
+    Seller ownership days = 212 (Jan 1–Aug 31).
+    Seller tax share = 212 × $32.87671233 = $6,969.86.
+    Amount seller paid ahead = 8/12 × $12,000 = $8,000.
+    Overpayment by seller = $8,000 − $6,969.86 = $1,030.14.
+    Buyer proration debit = $1,030.14 (seller overpayment credited to seller, debited to buyer).
+  formulas:
+    - daily_rate = annual_tax / days_in_year
+    - seller_share = days_owned_by_seller × daily_rate
+    - amount_paid_ahead = (months_paid_ahead / 12) × annual_tax
+    - overpayment = amount_paid_ahead − seller_share
+    - buyer_debit = overpayment
+  onscreen_calculator_only: false
+terms:
+  - proration
+  - debit
+  - credit
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

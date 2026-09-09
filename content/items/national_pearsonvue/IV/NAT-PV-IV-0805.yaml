@@ -1,0 +1,41 @@
+id: NAT-PV-IV-0805
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to general contract principles, what constitutes consideration in a real estate
+  purchase agreement?
+options:
+  - The buyer's promise to pay the purchase price
+  - The earnest money deposited with the broker
+  - The love and affection between the parties
+  - The promise to pay a broker's commission
+key: A
+explanation: The buyer's promise to pay the price serves as consideration for the seller's promise
+  to convey under §2.4. Earnest money is not consideration, as clarified in §5.1. Love and affection
+  and a broker's commission promise do not satisfy the consideration requirement for the purchase
+  agreement.
+citation:
+  source: REP Ref. Contracts § 2.4
+  url: null
+  quoted_text: In a purchase agreement, the buyer's promise to pay the price is consideration for the
+    seller's promise to convey, and vice versa.
+  secondary: []
+terms:
+  - consideration
+  - earnest money
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

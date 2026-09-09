@@ -1,0 +1,44 @@
+id: NAT-PV-III-0782
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A rental property generates $1,800 in gross monthly rent. If the market gross rent multiplier
+  (GRM) is 115, what is the indicated property value using the GRM method?
+options:
+  - $180,000
+  - $024,000
+  - $207,000
+  - $015,650
+key: C
+explanation: "The GRM method multiplies gross monthly rent by the GRM: $1,800 × 115 = $207,000. The
+  distractor $180,000 results from using a GRM of 100, which is not the given multiplier."
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: GRM = sale price ÷ gross monthly rent; value = monthly rent × GRM
+  secondary: []
+math:
+  worked_solution: 1,800 × 115 = 207,000
+  formulas:
+    - GRM = sale price ÷ gross monthly rent
+    - value = monthly rent × GRM
+  onscreen_calculator_only: false
+terms:
+  - grm
+  - value
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

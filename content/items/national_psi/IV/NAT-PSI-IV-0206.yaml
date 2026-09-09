@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0206
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A state housing finance agency extends a loan to a consumer to purchase a primary residence,
+  taking a security interest in the dwelling. Under TILA §1635(e), does the consumer have a right to
+  rescind the transaction?
+options:
+  - No, because the consumer received the TILA disclosures before closing
+  - No, because the creditor is a state agency
+  - No, because the loan is secured by the borrower's principal dwelling
+  - No, because the loan amount is less than $50,000
+key: B
+explanation: Subsection (e)(3) exempts transactions where the creditor is an agency of a State from
+  the right of rescission. Since the creditor in the scenario is a state housing finance agency, the
+  consumer lacks rescission rights. The other options cite factors that do not create an exemption
+  under this section.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1635(e)(3)
+  url: null
+  quoted_text: (3) a transaction in which an agency of a State is the creditor;
+  secondary: []
+terms:
+  - exemption
+  - state agency
+  - creditor
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

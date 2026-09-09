@@ -1,0 +1,49 @@
+id: NAT-PSI-I-0050
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A parcel is described as 'the NW 1/4 of the SE 1/4 of Section 12, Township 4 North, Range 3
+  East of the Fifth Principal Meridian.' How many acres does the parcel contain?
+options:
+  - The parcel contains 10 acres.
+  - The parcel contains 20 acres.
+  - The parcel contains 40 acres.
+  - The parcel contains 80 acres.
+key: C
+explanation: A quarter‑quarter parcel equals 1⁄4 of a quarter section. A quarter section is 160
+  acres (640 ÷ 4). Dividing that by another 4 gives 40 acres (640 ÷ (4×4)). Therefore the described
+  NW 1/4 of the SE 1/4 contains 40 acres.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres and 1,320 feet per side;
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the fractions: NW 1/4 of SE 1/4 → denominators 4 and 4.
+    Multiply the denominators: 4 × 4 = 16.
+    Divide the section acreage by the product: 640 acres ÷ 16 = 40 acres.
+  formulas:
+    - Acreage = 640 / (d1 × d2)
+  onscreen_calculator_only: false
+terms:
+  - quarter-quarter
+  - section
+  - acreage
+  - aliquot parts
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

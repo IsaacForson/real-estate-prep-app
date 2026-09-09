@@ -1,0 +1,48 @@
+id: NAT-PSI-III-0125
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner spent $20,000 on a new roof. Before the remodel, the house was valued at $250,000;
+  after the remodel, an appraiser estimates market value at $260,000. How much did the roof
+  contribute to value?
+options:
+  - $10,000
+  - $0.0000
+  - $30,000
+  - $20,000
+key: A
+explanation: Contribution measures the change in value attributable to a component, not its cost.
+  The value increased from $250,000 to $260,000, a $10,000 increase, so the roof contributed
+  $10,000. The distractor $20,000 incorrectly uses the cost of the roof.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.4"
+  url: null
+  quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+    value of the whole, not by what it cost.
+  secondary: []
+math:
+  worked_solution: Value_before = $250,000; Value_after = $260,000; Contribution = $260,000 - $250,000 = $10,000.
+  formulas:
+    - Contribution = Value_after - Value_before
+  onscreen_calculator_only: false
+terms:
+  - contribution
+  - value
+  - cost
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

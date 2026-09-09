@@ -19,7 +19,7 @@ const bankLabel = (b: string) => b.replace("national_pearsonvue", "Pearson VUE")
 const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" : "border-line bg-surface text-ink-2 hover:bg-surface-2");
 </script>
 <template>
-  <div class="anim-fade-up grid gap-4">
+  <div class="grid w-full gap-4">
     <p class="text-[13.5px] leading-relaxed text-ink-2">
       Real estate is a vocabulary exam wearing a law exam's clothes. Every definition here is grounded
       in a statute or reference you can open.

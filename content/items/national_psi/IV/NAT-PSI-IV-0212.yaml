@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0212
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1639(c)(1)(A), what is prohibited in a mortgage referred to in section 1602(aa)?
+options:
+  - A prepayment penalty clause that charges a fee for early payoff
+  - A term that permits negative amortization over the loan term
+  - A clause allowing the lender to increase the interest rate after default
+  - A provision that requires the borrower to pay a balloon payment at maturity
+key: A
+explanation: The statute states that a mortgage referred to in section 1602(aa) may not contain
+  terms under which a consumer must pay a prepayment penalty for paying all or part of the principal
+  before the due date. Therefore a prepayment penalty clause is prohibited. The distractor about
+  increasing the interest rate after default is addressed in a different subsection (§1639(d)) and
+  is not what this paragraph prohibits.
+citation:
+  source: 15 U.S.C. § 1639(c)(1)(A)
+  url: null
+  quoted_text: A mortgage referred to in section 1602(aa) 1 of this title may not contain terms under
+    which a consumer must pay a prepayment penalty for paying all or part of the principal before
+    the date on which the principal is due.
+  secondary: []
+terms:
+  - prepayment
+  - penalty
+  - mortgage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

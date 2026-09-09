@@ -1,0 +1,43 @@
+id: NAT-PV-IV-0832
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which information must a licensee keep confidential under the duty of confidentiality?
+options:
+  - The known roof leak that requires immediate repair
+  - The buyer's preferred closing date for the transaction
+  - The seller's willingness to accept less than list price
+  - The seller's asking price as shown in the MLS listing
+key: C
+explanation: Confidentiality protects information such as the seller's willingness to accept less
+  than list price, the reason for selling, the buyer's maximum price or urgency, and either party's
+  financial condition. A known roof leak is a material fact that must be disclosed, not kept
+  confidential.
+citation:
+  source: REP Ref. Agency § 5.5
+  url: null
+  quoted_text: Protected information typically includes the seller's willingness to accept less than
+    list price, the reason for selling (divorce, job relocation, financial distress), the buyer's
+    maximum price or urgency, and either party's financial condition.
+  secondary: []
+terms:
+  - confidentiality
+  - protected information
+  - seller's willingness
+  - financial condition
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

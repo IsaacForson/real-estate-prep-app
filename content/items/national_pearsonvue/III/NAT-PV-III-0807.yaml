@@ -1,0 +1,55 @@
+id: NAT-PV-III-0807
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A 20-unit building rents each unit for $800 per month. Vacancy and collection loss is 5
+  percent. Other income from laundry is $1,200 per year. What is the effective gross income?
+options:
+  - The effective gross income is $183,600.
+  - The effective gross income is $182,400.
+  - The effective gross income is $193,200.
+  - The effective gross income is $190,800.
+key: A
+explanation: Effective gross income is calculated by subtracting vacancy and collection loss from
+  potential gross income and adding other income. The correct calculation yields $183,600. The
+  distractors result from omitting other income, omitting vacancy loss, or misapplying the vacancy
+  rate.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.2
+  url: null
+  quoted_text: Subtract vacancy and collection loss (a percentage of PGI) and add other income
+    (laundry, parking, fees) to reach effective gross income (EGI).
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Calculate potential gross income (PGI) = 20 units × $800/month × 12 months = $192,000.
+
+    Step 2: Calculate vacancy and collection loss = PGI × 5% = $192,000 × 0.05 = $9,600.
+
+    Step 3: Calculate effective gross income (EGI) = PGI - vacancy loss + other income = $192,000 -
+    $9,600 + $1,200 = $183,600.
+  formulas:
+    - PGI = units × rent per month × 12
+    - Vacancy loss = PGI × vacancy rate
+    - EGI = PGI - vacancy loss + other income
+  onscreen_calculator_only: false
+terms:
+  - potential gross income
+  - vacancy and collection loss
+  - effective gross income
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

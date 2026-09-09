@@ -1,0 +1,45 @@
+id: NAT-PSI-III-0126
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A parcel is zoned for single-family residential use, but the soil is unsuitable for
+  foundations. According to the highest and best use tests, which test would cause the residential
+  use to be eliminated?
+options:
+  - Maximally productive
+  - Physically possible
+  - Legally permissible
+  - Financially feasible
+key: B
+explanation: The highest and best use analysis applies tests in order; the second test evaluates
+  physical possibility. Since the soil cannot support foundations, the use fails the physically
+  possible test and is eliminated before considering financial feasibility or productivity.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.1"
+  url: null
+  quoted_text: "The four tests are applied in that order: (1) legally permissible under zoning,
+    private restrictions, and environmental law; (2) physically possible given size, shape, soil,
+    topography, and access; (3) financially feasible, producing a positive return; (4) maximally
+    productive, yielding the highest land value among feasible uses."
+  secondary: []
+terms:
+  - highest and best use
+  - zoning
+  - physical possibility
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

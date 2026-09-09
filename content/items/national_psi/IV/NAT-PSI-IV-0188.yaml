@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0188
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What does an acceleration clause permit the lender to do upon a defined default?
+options:
+  - Declare the full unpaid balance due immediately
+  - Require a court judgment before starting foreclosure
+  - Sue only for each installment as it becomes due
+  - Allow the borrower to cure arrears during reinstatement
+key: A
+explanation: The acceleration clause lets the lender declare the entire unpaid balance due at once
+  when a default such as missed payment occurs. This matches the option to declare the full unpaid
+  balance due immediately. Suing only for each installment would be the remedy without an
+  acceleration clause.
+citation:
+  source: "REP Ref. Financing & Closing — Reference note: financing instruments, loan types,
+    government programs, underwriting, closing (authored, status: draft — needs licensed review) §
+    2.1"
+  url: null
+  quoted_text: "The acceleration clause lets the lender declare the entire unpaid balance due at once
+    upon a defined default: missed payments, unpaid taxes, lapsed insurance, or an unauthorized
+    transfer."
+  secondary: []
+terms:
+  - acceleration clause
+  - lender
+  - default
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

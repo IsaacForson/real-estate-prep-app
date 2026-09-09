@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0150
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the Homeowners Protection Act, when must a lender automatically terminate borrower‑paid
+  private mortgage insurance (PMI) for a single‑family principal residence if the loan is current?
+options:
+  - When the borrower requests cancellation after reaching 80% of the original value
+  - When the balance reaches 80% of the original value
+  - When the loan balance reaches the midpoint of the term
+  - When the balance is scheduled to reach 78% of the original value
+key: D
+explanation: Under the Homeowners Protection Act, a lender must automatically cancel borrower‑paid
+  PMI when the loan balance is scheduled to reach 78% of the original value, provided the loan is
+  current. The borrower may request cancellation earlier at 80% of value, but automatic termination
+  occurs at the 78% threshold. The other options describe the borrower‑request threshold, the
+  midpoint of the schedule, or an incorrect 80% automatic trigger, which do not match the rule.
+citation:
+  source: REP Ref. Financing & Closing § 6.1
+  url: null
+  quoted_text: the lender must terminate automatically when the balance is scheduled to reach 78% of
+    original value if the loan is current
+  secondary: []
+terms:
+  - pmi
+  - homeowners protection act
+  - cancellation
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

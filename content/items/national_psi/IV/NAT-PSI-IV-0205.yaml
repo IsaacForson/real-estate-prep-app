@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0205
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the latest time by which an obligor may exercise the right to rescind under TILA §1635(a)?
+options:
+  - Midnight of the third business day after the consummation of the transaction
+  - Midnight of the third business day after the delivery of the information and rescission forms
+  - Midnight of the third business day after whichever occurs later of consummation or delivery
+  - Midnight of the third business day after both consummation and delivery having occurred
+key: C
+explanation: The statute provides that the right to rescind lasts until midnight of the third
+  business day following the consummation of the transaction or the delivery of the required
+  disclosures, whichever is later. Therefore the correct answer reflects the later of the two
+  events. The other options incorrectly limit the period to only one event or to both events having
+  occurred.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1635(a)
+  url: null
+  quoted_text: until midnight of the third business day following the consummation of the transaction
+    or the delivery of the information and rescission forms required under this section together
+    with a statement containing the material disclosures required under this subchapter, whichever
+    is later
+  secondary: []
+terms:
+  - rescission
+  - consummation
+  - disclosures
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

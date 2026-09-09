@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0173
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1639(b)(1), which of the following actions constitutes a violation of appraisal
+  independence?
+options:
+  - Asking an appraiser to consider additional comparable properties
+  - Correcting errors in the appraisal report
+  - Providing further detail for the appraiser's value conclusion
+  - Compensating an appraiser to influence the appraised value
+key: D
+explanation: Subsection (b)(1) defines a violation as compensating, coercing, or otherwise
+  influencing an appraiser to base the value on factors other than independent judgment. Therefore,
+  compensating an appraiser to influence the appraised value is a prohibited act. The distractor
+  describing a request for additional comparable properties is permissible under subsection (c)(1)
+  and does not constitute a violation.
+citation:
+  source: 15 U.S.C. § 1639(b)(1)
+  url: null
+  quoted_text: compensates, coerces, extorts, colludes, instructs, induces, bribes, or intimidates a
+    person, appraisal management company, firm, or other entity conducting or involved in an
+    appraisal, or attempts, to compensate, coerce, extort, collude, instruct, induce, bribe, or
+    intimidate such a person, for the purpose of causing the appraised value assigned, under the
+    appraisal, to the property to be based on any factor other than the independent judgment of the
+    appraiser
+  secondary: []
+terms:
+  - appraisal independence
+  - compensation
+  - coercion
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

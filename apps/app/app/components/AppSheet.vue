@@ -8,10 +8,16 @@ const props = withDefaults(defineProps<{ open: boolean; title?: string; descript
 const emit = defineEmits<{ (e: "close"): void }>();
 const panel = ref<HTMLElement | null>(null);
 let opener: Element | null = null;
+/** Ignore the pointer that opened us — it can hit the new backdrop after the previous overlay unmounts. */
+let openedAt = 0;
 
 const FOCUSABLE = "button:not([disabled]),input:not([disabled]),textarea:not([disabled]),select:not([disabled]),a[href],[tabindex]:not([tabindex='-1'])";
 
-function close() { if (props.dismissible) emit("close"); }
+function close() {
+  if (!props.dismissible) return;
+  if (Date.now() - openedAt < 400) return;
+  emit("close");
+}
 
 function onKey(e: KeyboardEvent) {
   if (e.key === "Escape") { close(); return; }
@@ -29,6 +35,7 @@ function onKey(e: KeyboardEvent) {
 watch(() => props.open, (o) => {
   if (!import.meta.client) return;
   if (o) {
+    openedAt = Date.now();
     opener = document.activeElement;
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", onKey);
@@ -57,8 +64,7 @@ onUnmounted(() => {
         :aria-label="title"
         tabindex="-1"
         class="relative flex max-h-[92dvh] w-full flex-col bg-surface text-ink shadow-float outline-none
-               rounded-t-panel sm:max-w-md sm:rounded-panel sm:border sm:border-line
-               anim-sheet-up sm:anim-scale-in"
+               rounded-t-panel sm:max-w-md sm:rounded-panel sm:border sm:border-line"
       >
         <div class="flex justify-center pt-2.5 sm:hidden" aria-hidden="true">
           <span class="h-1 w-9 rounded-pill bg-line-strong" />

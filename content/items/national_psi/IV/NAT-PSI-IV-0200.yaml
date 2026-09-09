@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0200
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer pays two bona fide discount points that reduce the interest rate by 1.8 percentage
+  points relative to the average prime offer rate. Under TILA, how many of those points may be
+  excluded from the points and fees calculation?
+options:
+  - Zero points
+  - One points
+  - Two points
+  - Three points
+key: B
+explanation: Under TILA §1602(ee)(2), if the interest rate reduction exceeds one percentage point
+  but does not exceed two percentage points, up to one bona fide discount point may be excluded from
+  points and fees. Since the reduction is 1.8 percentage points, only one point may be excluded. The
+  distractor "Two points" incorrectly assumes both points can be excluded regardless of the size of
+  the interest rate reduction.
+citation:
+  source: 15 U.S.C. § 1602(ee)(2)
+  url: null
+  quoted_text: Unless 2 bona fide discount points have been excluded under paragraph (1), up to and
+    including 1 bona fide discount point payable by the consumer in connection with the mortgage,
+    but only if the interest rate from which the mortgage's interest rate will be discounted does
+    not exceed by more than 2 percentage points—
+  secondary: []
+terms:
+  - bona fide discount points
+  - points and fees
+  - average prime offer rate
+  - interest rate reduction
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

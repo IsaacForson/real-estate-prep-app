@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0169
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender charges $4,500 in points and fees on a $150,000 loan. Based on the points and fees
+  test in TILA §1639(b)(2)(A)(vii), is the loan eligible to be considered a qualified mortgage?
+options:
+  - The loan is ineligible because the points and fees exceed 3 percent of the loan amount
+  - The loan is eligible because the points and fees equal 3 percent of the loan amount
+  - The loan is ineligible because the points and fees equal 3 percent of the loan amount
+  - The loan is eligible because the points and fees are less than 3 percent of the loan amount
+key: B
+explanation: The points and fees of $4,500 represent exactly 3 percent of the $150,000 loan amount,
+  which meets the requirement that they do not exceed 3 percent. The option claiming ineligibility
+  due to equality is incorrect because the limit is not exceeded.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639(b)(2)(A)(vii)
+  url: null
+  quoted_text: for which the total points and fees (as defined in subparagraph (C)) payable in
+    connection with the loan do not exceed 3 percent of the total loan amount
+  secondary: []
+math:
+  worked_solution: |-
+    $4,500 ÷ $150,000 = 0.03
+    0.03 × 100 = 3%
+  formulas:
+    - percentage = (points and fees ÷ loan amount) × 100
+  onscreen_calculator_only: false
+terms:
+  - points and fees
+  - qualified mortgage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

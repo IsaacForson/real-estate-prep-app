@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0074
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A donor conveys land 'to the school district so long as it is used for a public school.' If
+  the district later leases the building to a retail store, what is the effect on the title?
+options:
+  - The lease creates a new fee simple estate for the district
+  - The donor must take legal action to retake the property
+  - The district retains title despite the lease
+  - The title automatically reverts to the donor's heirs
+key: D
+explanation: A fee simple determinable estate ends automatically when the stated use stops, and
+  title returns to the grantor or heirs without any action. Leasing the building to a retail store
+  violates the 'so long as' condition, so the estate terminates and the title reverts automatically.
+  The distractor claiming the donor must take legal action confuses a determinable fee with a fee
+  simple subject to a condition subsequent, which requires the grantor to act to retake the
+  property.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 1.3
+  url: null
+  quoted_text: Fee simple determinable. The estate lasts only 'so long as,' 'while,' or 'during' a
+    stated use continues, and it ends automatically when the use stops. The grantor keeps a
+    possibility of reverter, and title returns to the grantor or the grantor's heirs without any
+    action.
+  secondary: []
+terms:
+  - fee simple determinable
+  - possibility of reverter
+  - automatic
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

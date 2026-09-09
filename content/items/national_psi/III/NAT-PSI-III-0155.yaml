@@ -1,0 +1,44 @@
+id: NAT-PSI-III-0155
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A parcel is zoned for agricultural use, but the owner wants to build a factory. According to
+  the highest and best use tests, which test would cause the industrial use to be eliminated?
+options:
+  - The legally permissible test
+  - The physically possible test
+  - The financially feasible test
+  - The maximally productive test
+key: A
+explanation: The highest and best use analysis applies tests in order, beginning with legally
+  permissible use under zoning. Since the parcel is zoned for agricultural use, a factory is not
+  legally permissible, so the industrial use fails the first test. The physically possible test is
+  not the cause because the scenario does not mention any physical limitations.
+citation:
+  source: REP Ref. Valuation & Appraisal § 4.1
+  url: null
+  quoted_text: "The four tests are applied in that order: (1) legally permissible under zoning,
+    private restrictions, and environmental law; (2) physically possible given size, shape, soil,
+    topography, and access; (3) financially feasible, producing a positive return; (4) maximally
+    productive, yielding the highest land value among feasible uses."
+  secondary: []
+terms:
+  - highest and best use
+  - legally permissible
+  - zoning
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

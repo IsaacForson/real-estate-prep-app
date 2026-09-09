@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0170
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualified mortgage loan has an outstanding balance of $200,000 at the start of the second
+  year after consummation. What is the maximum prepayment penalty that may be charged during that
+  year under TILA §1639(c)(3)(B)?
+options:
+  - $6,000
+  - $4,000
+  - $8,000
+  - $2,000
+key: B
+explanation: During the second year, the prepayment penalty may not exceed 2 percent of the
+  outstanding balance. Two percent of $200,000 is $4,000. The $2,000 option corresponds to 1
+  percent, while the $6,000 and $8,000 options exceed the permitted limit.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639(c)(3)(B)
+  url: null
+  quoted_text: During the 1-year period beginning after the period described in subparagraph (A), the
+    prepayment penalty shall not exceed an amount equal to 2 percent of the outstanding balance on
+    the loan.
+  secondary: []
+math:
+  worked_solution: $200,000 × 0.02 = $4,000
+  formulas:
+    - penalty = outstanding balance × percentage
+  onscreen_calculator_only: false
+terms:
+  - prepayment penalty
+  - qualified mortgage
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

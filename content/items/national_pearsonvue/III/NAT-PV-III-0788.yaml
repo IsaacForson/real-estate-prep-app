@@ -1,0 +1,48 @@
+id: NAT-PV-III-0788
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An appraiser estimates accrued depreciation using the straight‑line (economic age‑life) method
+  for a building with cost new $350,000, effective age 10 years, and total economic life 50 years.
+  What is the accrued depreciation?
+options:
+  - $35,000
+  - $70,000
+  - $175,000
+  - $210,000
+key: B
+explanation: Accrued depreciation equals (effective age ÷ total economic life) × cost new. (10 ÷ 50)
+  × $350,000 = 0.20 × $350,000 = $70,000. The $35,000 result omits the multiplication by cost new,
+  while the larger amounts misuse the fraction.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.5
+  url: null
+  quoted_text: Accrued depreciation = (effective age ÷ total economic life) × cost new
+  secondary: []
+math:
+  worked_solution: |-
+    Divide effective age by total economic life: 10 ÷ 50 = 0.20
+    Multiply by cost new: 0.20 × $350,000 = $70,000
+    Accrued depreciation = $70,000
+  formulas:
+    - Accrued depreciation = (effective age ÷ total economic life) × cost new
+  onscreen_calculator_only: false
+terms:
+  - accrued depreciation
+  - straight-line
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

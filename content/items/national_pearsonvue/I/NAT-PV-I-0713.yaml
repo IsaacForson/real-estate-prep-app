@@ -1,0 +1,41 @@
+id: NAT-PV-I-0713
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A contractor begins work on a property in January and files a mechanic's lien in May. A
+  mortgage was recorded on the property in March. Assuming the mechanic's lien relates back to when
+  work began, which lien is paid first from foreclosure proceeds?
+options:
+  - The property tax lien
+  - The mechanic's lien
+  - Both liens equally
+  - The mortgage
+key: B
+explanation: Because the mechanic's lien may relate back to the date work began (January), it
+  becomes senior to the March-recorded mortgage under the first-in-time rule. No property tax lien
+  is mentioned, so it does not affect the order.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - mechanic's lien
+  - priority
+  - relation back
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -12,8 +12,16 @@ export function useAppPanel() {
 
   function show() { open.value = true; }
   function hide() { open.value = false; }
-  /** From inside the panel: swap it for the state picker so the two never stack. */
-  function pickState() { open.value = false; statePicker.value = true; }
+  /**
+   * Open the state sheet. Closing the menu in the same tap used to land that tap on the new
+   * sheet's backdrop and instantly dismiss it — wait a beat so the click is finished first.
+   */
+  function pickState() {
+    open.value = false;
+    const openPicker = () => { statePicker.value = true; };
+    if (import.meta.client) window.setTimeout(openPicker, 80);
+    else openPicker();
+  }
 
   return { open, statePicker, show, hide, pickState };
 }

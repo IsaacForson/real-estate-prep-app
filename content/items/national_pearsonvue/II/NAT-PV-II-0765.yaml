@@ -1,0 +1,43 @@
+id: NAT-PV-II-0765
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investor purchases a tax certificate at a tax sale. Six months later, the property owner
+  pays the overdue taxes plus interest and redeems the property. What is the investor entitled to
+  receive?
+options:
+  - The investor losing the entire investment
+  - The investor receiving full ownership of the property
+  - The issuance of a tax deed to the investor
+  - The repayment of the purchase price plus interest
+key: D
+explanation: The tax sale provision states that an investor who buys a tax certificate is repaid
+  with interest if the owner redeems within the statutory period. Therefore the investor receives
+  repayment plus interest. The distractor about receiving a tax deed applies only if the owner does
+  not redeem.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.2
+  url: null
+  quoted_text: In some states a tax certificate is sold to an investor who is repaid with interest if
+    the owner redeems within the statutory period and who may obtain a tax deed if the owner does
+    not
+  secondary: []
+terms:
+  - tax certificate
+  - redemption
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

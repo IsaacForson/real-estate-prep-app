@@ -1,0 +1,43 @@
+id: NAT-PSI-V-0224
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer signs a purchase agreement that includes a clause prohibiting assignment without the
+  seller's written consent. The buyer later attempts to assign the contract to an investor without
+  obtaining the seller's consent. What is the effect of this attempted assignment?
+options:
+  - The assignment creates a novation that releases the original buyer
+  - The assignment is void and the original buyer remains liable for performance
+  - The assignment is valid only if the investor provides additional earnest money
+  - The assignment is valid and releases the original buyer from liability
+key: B
+explanation: Because the contract expressly prohibits assignment without the seller's consent, the
+  attempted assignment is void and the original buyer remains liable for performance. An assignment
+  that releases the original buyer would only be effective if the contract permitted assignment and
+  a release was obtained.
+citation:
+  source: "REP Ref. Contracts — Reference note: contract law, purchase agreements, leases, remedies
+    (authored, status: draft — needs licensed review) § 4.4"
+  url: null
+  quoted_text: Unless the contract prohibits it, a party may assign its rights under a purchase
+    agreement to a third party.
+  secondary: []
+terms:
+  - assignment
+  - prohibition
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

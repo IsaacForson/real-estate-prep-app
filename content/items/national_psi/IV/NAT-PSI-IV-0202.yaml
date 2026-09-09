@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0202
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1605(a), which of the following is included in the finance charge for a consumer
+  credit transaction?
+options:
+  - The escrow reserve
+  - The interest charge
+  - The title insurance
+  - The appraisal fee
+key: B
+explanation: The finance charge includes interest, time price differential, and amounts paid under
+  points or similar charges, as stated in §1605(a)(1). The title insurance premium is excluded for
+  real property‑secured loans under §1605(e)(1).
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1605
+  url: null
+  quoted_text: (1) Interest, time price differential, and any amount payable under a point, discount,
+    or other system or additional charges.
+  secondary: []
+terms:
+  - interest
+  - finance charge
+  - title insurance
+  - escrow
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

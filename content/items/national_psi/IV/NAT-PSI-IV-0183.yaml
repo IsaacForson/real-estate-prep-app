@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0183
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under ECOA, when must a creditor provide a copy of a written appraisal to an applicant for a
+  dwelling‑secured loan?
+options:
+  - The creditor must provide the appraisal seven days prior to closing.
+  - The creditor must provide the appraisal at the loan closing date.
+  - The creditor must provide the appraisal at the time of application.
+  - The creditor must provide the appraisal three days before closing at latest.
+key: D
+explanation: ECOA §1691(e)(1) states that the creditor shall furnish the appraisal promptly upon
+  completion but in no case later than three days prior to closing. Therefore, the latest
+  permissible time is three days before closing. The distractor 'The creditor must provide the
+  appraisal at the loan closing date.' is incorrect because the statute prohibits providing the
+  appraisal as late as closing.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(e)(1)
+  url: null
+  quoted_text: " but in no case later than 3 days prior to the closing of the loan,"
+  secondary: []
+terms:
+  - appraisal
+  - closing
+  - ecoa
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

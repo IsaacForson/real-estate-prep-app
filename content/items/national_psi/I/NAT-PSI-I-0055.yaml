@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0055
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following liens is classified as a general, involuntary lien?
+options:
+  - Mortgage lien
+  - Property tax lien
+  - Judgment lien
+  - Mechanic's lien
+key: C
+explanation: Under the statute, a judgment lien is classified as a general lien because it attaches
+  to all of the debtor's real and personal property, and it is involuntary because it arises by
+  court action without the owner's consent. The property tax lien, while involuntary, is specific as
+  it attaches only to the parcel taxed. Therefore, the judgment lien is the only option that is both
+  general and involuntary.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: "General versus specific: a general lien attaches to all of a debtor's property, real
+    and personal (judgment liens, income tax liens, estate and inheritance tax liens);"
+  secondary: []
+terms:
+  - lien
+  - general
+  - involuntary
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

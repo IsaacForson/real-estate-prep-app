@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0093
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A neighbor openly and continuously uses a vacant lot adjacent to his property for 8 years,
+  maintaining a garden and paying property taxes, without the owner's permission. The state's
+  statutory period for adverse possession is 10 years. Which element is lacking for the neighbor to
+  acquire title by adverse possession?
+options:
+  - Lack of actual use
+  - Lack of open and notorious use
+  - Lack of exclusive use
+  - Lack of continuous period
+key: D
+explanation: Adverse possession requires continuous possession for the statutory period set by state
+  law. The neighbor's use lasted only 8 years, which is less than the required 10 years, so the
+  continuous period element is not satisfied. The other elements—actual, open and notorious,
+  exclusive, and hostile—are met by the facts given.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 8.4
+  url: null
+  quoted_text: The possession must be actual (physical use as an owner would), open and notorious
+    (visible), exclusive (not shared with the owner or the public), hostile or adverse (without
+    permission, under a claim of right), and continuous for the period set by state statute.
+  secondary: []
+terms:
+  - adverse possession
+  - continuous period
+  - hostile
+  - exclusive
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

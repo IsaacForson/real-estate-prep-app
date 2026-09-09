@@ -1,0 +1,50 @@
+id: NAT-PSI-III-0133
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A building has a replacement cost new of $600,000. The appraiser estimates an effective age of
+  15 years and a total economic life of 60 years. Using the straight-line (economic age-life)
+  method, what is the accrued depreciation?
+options:
+  - $200,000
+  - $50,000
+  - $150,000
+  - $100,000
+key: C
+explanation: Accrued depreciation equals (effective age ÷ total economic life) × cost new per the
+  straight-line method. (15 ÷ 60) × $600,000 = 0.25 × $600,000 = $150,000. The distractors result
+  from common errors such as using only the effective age, misapplying the fraction, or using the
+  total economic life incorrectly.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.5
+  url: null
+  quoted_text: Accrued depreciation = (effective age ÷ total economic life) × cost new; equivalently,
+    annual depreciation = cost new ÷ total economic life.
+  secondary: []
+math:
+  worked_solution: Effective age = 15 years; total economic life = 60 years; fraction = 15/60 = 0.25;
+    multiply by $600,000 = $150,000.
+  formulas:
+    - Accrued depreciation = (effective age / total economic life) × cost new
+  onscreen_calculator_only: false
+terms:
+  - accrued depreciation
+  - effective age
+  - total economic life
+  - straight-line
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

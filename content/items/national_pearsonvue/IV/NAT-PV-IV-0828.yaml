@@ -1,0 +1,41 @@
+id: NAT-PV-IV-0828
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following actions violates the duty of loyalty?
+options:
+  - Disclosing a known material defect to the buyer client
+  - Receiving a referral fee from a vendor without client knowledge
+  - Providing a comparative market analysis to the seller
+  - Recommending a licensed inspector for the property
+key: B
+explanation: The duty of loyalty forbids secret profits such as an undisclosed referral fee or
+  kickback. Receiving a referral fee from a vendor without the client's knowledge is a secret profit
+  and therefore disallowed. Disclosing a known material defect is required under honesty and fair
+  dealing, not a loyalty violation.
+citation:
+  source: REP Ref. Agency § 5.3
+  url: null
+  quoted_text: It forbids secret profits, such as a referral fee or repair-vendor kickback the client
+    does not know about.
+  secondary: []
+terms:
+  - loyalty
+  - secret profit
+  - referral fee
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

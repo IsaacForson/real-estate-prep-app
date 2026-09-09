@@ -114,7 +114,7 @@ onUnmounted(() => {
             type="button"
             class="group -ml-1 flex min-w-0 items-center gap-2 rounded-pill px-2 py-1.5 text-left transition-colors hover:bg-surface-2"
             :aria-label="stateLocked ? `${stateName}, locked on the free tier` : undefined"
-            @click="emit('change-state')"
+            @click.stop="emit('change-state')"
           >
             <span class="grid size-9 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
               <Icon :name="stateLocked ? 'lock' : 'map'" :size="19" />

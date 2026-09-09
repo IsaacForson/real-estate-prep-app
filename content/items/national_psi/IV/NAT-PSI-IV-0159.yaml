@@ -1,0 +1,46 @@
+id: NAT-PSI-IV-0159
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer submits a written loan application for a mortgage secured by their principal
+  dwelling on a Wednesday. What is the latest time by which the creditor must mail the good faith
+  estimate of the required TILA disclosures?
+options:
+  - The creditor must mail the estimate three business days after receiving the application
+  - The creditor must mail the estimate at least seven business days before consummation (as
+    required by the rule)
+  - The creditor must mail the estimate before the consumer pays any fee (if applicable)
+  - The creditor must mail the estimate at the time of consummation (when the loan closes)
+key: A
+explanation: TILA requires that good faith estimates be delivered or placed in the mail not later
+  than three business days after the creditor receives the consumer's written application. While the
+  estimate must also be at least seven business days before consummation, the direct timing rule is
+  the three‑day period after receipt.
+citation:
+  source: 15 U.S.C. § 1638(b)(2)(A)
+  url: null
+  quoted_text: good faith estimates of the disclosures required under subsection (a) shall be made in
+    accordance with regulations of the Bureau under section 1631(c) of this title and shall be
+    delivered or placed in the mail not later than three business days after the creditor receives
+    the consumer's written application
+  secondary: []
+terms:
+  - good faith estimate
+  - timing
+  - disclosure
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

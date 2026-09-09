@@ -1,0 +1,50 @@
+id: NAT-PSI-IV-0152
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has an appraised value of $200,000. The existing first mortgage balance is $150,000
+  and a home equity line of credit (HELOC) has an outstanding balance of $30,000. What is the
+  combined loan-to-value (CLTV) ratio?
+options:
+  - A CLTV of 75%
+  - A CLTV of 80%
+  - A CLTV of 90%
+  - A CLTV of 95%
+key: C
+explanation: Combined LTV is calculated by adding the balances of all liens secured by the property
+  and dividing by the lesser of appraised value or purchase price. Here, the first mortgage
+  ($150,000) plus the HELOC balance ($30,000) equals $180,000. Dividing $180,000 by the $200,000
+  appraised value yields 0.90, or a 90% CLTV. The other options result from using only the first
+  mortgage, omitting the HELOC, or applying an incorrect denominator.
+citation:
+  source: REP Ref. Financing & Closing § 8.2
+  url: null
+  quoted_text: Combined LTV adds all liens (first mortgage plus second mortgage or HELOC balance)
+    before dividing by value
+  secondary: []
+math:
+  worked_solution: "Step 1: Sum liens = $150,000 + $30,000 = $180,000. Step 2: Lesser of appraised
+    value or price = $200,000. Step 3: CLTV = ($180,000 / $200,000) × 100% = 90%."
+  formulas:
+    - CLTV = (Sum of all lien balances ÷ Lesser of appraised value or purchase price) × 100
+  onscreen_calculator_only: false
+terms:
+  - combined ltv
+  - heloc
+  - loan-to-value
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

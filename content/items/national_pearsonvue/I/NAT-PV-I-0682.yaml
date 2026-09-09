@@ -1,0 +1,40 @@
+id: NAT-PV-I-0682
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A landowner cuts down timber on his property and sells the logs. What is the legal
+  classification of the logs after they are cut?
+options:
+  - The item is real property
+  - The item is personal property
+  - The item is a fixture of the house
+  - The item is a trade fixture
+key: B
+explanation: Severance converts real property into personal property. Cutting timber is an act of
+  severance, so the logs become personal property. Fixtures and trade fixtures involve attachment
+  with intent to remain, which does not apply to severed timber.
+citation:
+  source: REP Ref. Property & Land Use § 1.6
+  url: null
+  quoted_text: Real property becomes personal property by severance (cutting timber, mining ore,
+    detaching a fixture).
+  secondary: []
+terms:
+  - severance
+  - personal property
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

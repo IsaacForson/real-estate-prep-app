@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0175
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer knowingly compensates an appraiser to inflate the property's value in order to
+  secure a loan. Under TILA §1639(k)(1), what is the maximum civil penalty for this first violation?
+options:
+  - $20,000 per day
+  - $15,000 per day
+  - $10,000 per day
+  - $5,000 per day
+key: C
+explanation: For a first violation of the appraisal independence standards, TILA §1639(k)(1) imposes
+  a civil penalty of not more than $10,000 per day for each day the violation continues. Therefore,
+  the maximum penalty is $10,000 per day. The distractor of $20,000 per day applies only to
+  subsequent violations after a prior penalty has been assessed.
+citation:
+  source: 15 U.S.C. § 1639(k)(1)
+  url: null
+  quoted_text: each person who violates this section shall forfeit and pay a civil penalty of not more
+    than $10,000 for each day any such violation continues.
+  secondary: []
+terms:
+  - civil penalty
+  - first violation
+  - appraisal independence
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

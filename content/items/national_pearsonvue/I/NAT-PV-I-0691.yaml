@@ -1,0 +1,46 @@
+id: NAT-PV-I-0691
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a 2017 mortgage recorded January 2017, a 2020 judgment lien recorded March
+  2020, a mechanic's lien for work begun June 2021 and filed August 2022, and unpaid 2023 property
+  taxes. Assuming the mechanic's lien relates back to when work began, which lien is paid third from
+  the foreclosure proceeds?
+options:
+  - The 2017 mortgage lien
+  - The 2020 judgment lien
+  - The 2023 prop. tax lien
+  - The 2022 mechanic's lien
+key: B
+explanation: Under the first‑in‑time, first‑in‑right rule, liens are paid in order of their
+  effective dates, but property tax liens are paid first regardless of date. After taxes, the 2017
+  mortgage (earliest) is paid second, the 2020 judgment lien third, and the mechanic's lien
+  (effective June 2021) fourth.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "The general rule is first in time, first in right: liens rank by recording date (or,
+    for some statutory liens, the date they arose), and a junior lien is paid only after every
+    senior lien is paid in full. Property tax and special assessment liens are the major exception:
+    by statute they generally rank ahead of all other liens regardless of date, including an
+    earlier‑recorded mortgage."
+  secondary: []
+terms:
+  - lien
+  - priority
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

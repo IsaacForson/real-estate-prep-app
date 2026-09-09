@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0056
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender signs a recorded subordination agreement agreeing to let a subsequently recorded
+  mechanic's lien have priority over its mortgage. What is the result?
+options:
+  - The mortgage remains senior to the mechanic's lien
+  - The mechanic's lien becomes senior to the mortgage
+  - The mortgage is converted to an involuntary lien
+  - The mechanic's lien is extinguished by the agreement
+key: B
+explanation: The statute states that parties can rearrange priority by a recorded subordination
+  agreement, allowing a lender to agree to rank behind a later lien. When the lender subordinates
+  its mortgage to a subsequently recorded mechanic's lien, the mechanic's lien moves ahead in
+  priority. The distractor that the mortgage remains senior ignores the effect of the subordination
+  agreement.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Parties can rearrange priority by a recorded subordination agreement.
+  secondary: []
+terms:
+  - subordination
+  - priority
+  - lien
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

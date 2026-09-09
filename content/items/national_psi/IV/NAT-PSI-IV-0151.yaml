@@ -1,0 +1,50 @@
+id: NAT-PSI-IV-0151
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer with a credit score of 560 is purchasing a home priced at $250,000. Assuming the
+  appraised value equals the price, what is the minimum required investment (down payment) under FHA
+  guidelines?
+options:
+  - A down payment of $30,000
+  - A down payment of $20,000
+  - A down payment of $25,000
+  - A down payment of $35,000
+key: C
+explanation: For FHA loans, the minimum required investment is 10% of the lesser of appraised value
+  or purchase price when the borrower’s decision credit score is between 500 and 579. With a score
+  of 560, the buyer falls in this range, so the down payment is 10% of $250,000, or $25,000. The
+  3.5% figure applies only to scores of 580 or higher, and the other amounts correspond to incorrect
+  percentages.
+citation:
+  source: REP Ref. Financing & Closing § 6.2
+  url: null
+  quoted_text: minimum required investment 3.5% of the lesser of appraised value or price for a
+    decision credit score of 580 or above, 10% for 500–579
+  secondary: []
+math:
+  worked_solution: "Step 1: Credit score 560 falls in the 500–579 range → minimum required investment
+    = 10%. Step 2: Lesser of appraised value or price = $250,000. Step 3: 10% × $250,000 = $25,000."
+  formulas:
+    - Minimum Required Investment = Percentage × Lesser of Appraised Value or Purchase Price
+  onscreen_calculator_only: false
+terms:
+  - fha
+  - minimum required investment
+  - credit score
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

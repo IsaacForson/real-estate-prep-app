@@ -1,0 +1,46 @@
+id: NAT-PSI-IV-0211
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor services a fixed-rate residential mortgage loan and provides the borrower with a
+  coupon book that contains substantially the same information as required in TILA §1638(f)(1).
+  Under TILA §1638(f)(3), is the creditor required to transmit periodic statements for each billing
+  cycle?
+options:
+  - The creditor must transmit periodic statements for each billing cycle
+  - The creditor is not required to transmit periodic statements for each billing cycle
+  - The creditor may choose whether to transmit periodic statements for each billing cycle
+  - The creditor must transmit periodic statements only if the coupon book lacks required information
+key: B
+explanation: The exception in subsection (f)(3) states that paragraph (1) does not apply to a
+  fixed‑rate residential mortgage loan when the creditor provides a coupon book with substantially
+  the same information. Therefore, no periodic statements are required. The option stating that
+  statements are required ignores this exemption.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1638(f)(3)
+  url: null
+  quoted_text: Paragraph (1) shall not apply to any fixed rate residential mortgage loan where the
+    creditor, assignee, or servicer provides the obligor with a coupon book that provides the
+    obligor with substantially the same
+  secondary: []
+terms:
+  - residential mortgage loan
+  - coupon book
+  - periodic statements
+  - exception
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0197
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor schedules the closing of a higher-risk mortgage for Thursday, June 10. According to
+  TILA §1639h(c), what is the latest day the creditor may provide the applicant with a free copy of
+  the appraisal?
+options:
+  - The creditor may provide the appraisal copy on Monday, June 7
+  - The creditor may provide the appraisal copy on Tuesday, June 8
+  - The creditor may provide the appraisal copy on Wednesday, June 9
+  - The creditor may provide the appraisal copy on Thursday, June 10
+key: A
+explanation: Subsection (c) requires the creditor to provide the appraisal copy at least 3 days
+  prior to the closing date. Providing the copy on Monday, June 7 satisfies this requirement, while
+  Tuesday, June 8 provides only 2 days' notice.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639h(c)
+  url: null
+  quoted_text: A creditor shall provide 1 copy of each appraisal conducted in accordance with this
+    section in connection with a higher-risk mortgage to the applicant without charge, and at least
+    3 days prior to the transaction closing date.
+  secondary: []
+terms:
+  - appraisal copy
+  - closing date
+  - creditor
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

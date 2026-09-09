@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0182
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor receives a completed loan application on June 1. Under ECOA, what is the latest
+  date by which the creditor must notify the applicant of its action on the application?
+options:
+  - July 1
+  - June 30
+  - June 15
+  - July 2
+key: A
+explanation: ECOA §1691(d)(1) requires notification within thirty days after receipt of a completed
+  application. Counting thirty days from June 1 brings the latest permissible date to July 1. The
+  distractor 'June 30' is wrong because it assumes only twenty‑nine days after receipt.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(d)(1)
+  url: null
+  quoted_text: " (1) Within thirty days (or such longer reasonable time as specified in regulations of
+    the Bureau for any class of credit transaction) after receipt of a completed application for
+    credit, a creditor shall notify the applicant of its action on the application."
+  secondary: []
+terms:
+  - notification
+  - timeline
+  - application
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

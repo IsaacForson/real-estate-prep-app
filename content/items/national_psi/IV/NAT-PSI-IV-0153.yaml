@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0153
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under a deed of trust, which party holds bare legal title to the property?
+options:
+  - The borrower (trustor)
+  - The mortgagee
+  - The lender (beneficiary)
+  - The trustee
+key: D
+explanation: The trustee holds bare legal title under a deed of trust, as the borrower conveys that
+  title to the trustee who holds it for the lender. The borrower (trustor) is a common distractor
+  because everyday speech says the borrower 'gets a mortgage,' but the trustee is the title holder.
+citation:
+  source: REP Ref. Financing & Closing § 1.2
+  url: null
+  quoted_text: A deed of trust (trust deed) is a three-party instrument in which the borrower
+    (trustor) conveys bare legal title to a neutral third party (trustee) who holds it for the
+    lender (beneficiary) until the debt is paid.
+  secondary: []
+terms:
+  - deed of trust
+  - trustee
+  - borrower
+  - lender
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

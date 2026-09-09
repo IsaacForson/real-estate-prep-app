@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0084
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A residential property is assessed at $400,000. The municipality applies a tax rate of 20
+  mills, and the owner qualifies for a $40,000 homestead exemption. What is the annual property tax?
+options:
+  - $7,200
+  - $8,000
+  - $72,000
+  - $3,600
+key: A
+explanation: Taxable value is $400,000 minus $40,000 exemption = $360,000. At 20 mills ($1 per
+  $1,000), the tax rate is 0.02. Multiplying $360,000 by 0.02 yields $7,200.
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: taxing bodies apply a rate expressed per hundred, per thousand, or in mills; one mill
+    is one-tenth of a cent, that is, $1 of tax per $1,000 of assessed value.
+  secondary: []
+math:
+  worked_solution: 1. Taxable value = $400,000 - $40,000 = $360,000\n2. Mill rate decimal = 20 mills ÷
+    1000 = 0.02\n3. Tax = $360,000 × 0.02 = $7,200
+  formulas:
+    - Tax = (Assessed value - Exemption) × (Mill rate / 1000)
+  onscreen_calculator_only: false
+terms:
+  - tax
+  - mill
+  - exemption
+tags: []
+status: published
+reviewer: provisional-skip-qa
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
