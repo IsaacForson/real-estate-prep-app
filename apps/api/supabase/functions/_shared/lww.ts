@@ -30,6 +30,15 @@ export interface StudySessionRow {
   answers: unknown[];
   time_remaining_s: number | null;
   client_updated_at: string;
+  // v2 (0012_study_state.sql) — optional so pre-v2 clients keep syncing
+  item_ids?: string[];
+  portions?: unknown[] | null;
+  time_limit_ms?: number | null;
+  status?: "active" | "finished" | "abandoned";
+  score?: number | null;
+  finished_at?: string | null;
+  device_hash?: string | null;
+  time_used_s?: number | null;
 }
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -86,7 +95,45 @@ export function validateStudySessionRow(x: unknown): StudySessionRow | null {
   if (!isNonNegInt(r.position)) return null;
   if (!Array.isArray(r.answers) || r.answers.length > 500) return null;
   if (r.time_remaining_s !== null && r.time_remaining_s !== undefined && !isNonNegInt(r.time_remaining_s)) return null;
+  // v2 columns (all optional)
+  const extra: Partial<StudySessionRow> = {};
+  if (r.item_ids !== undefined) {
+    if (
+      !Array.isArray(r.item_ids) || r.item_ids.length > 300 ||
+      !r.item_ids.every((x) => typeof x === "string" && x.length <= 64)
+    ) return null;
+    extra.item_ids = r.item_ids as string[];
+  }
+  if (r.portions !== undefined && r.portions !== null) {
+    if (!Array.isArray(r.portions) || r.portions.length > 10) return null;
+    extra.portions = r.portions;
+  }
+  if (r.time_limit_ms !== undefined && r.time_limit_ms !== null) {
+    if (!isNonNegInt(r.time_limit_ms) || r.time_limit_ms === 0) return null;
+    extra.time_limit_ms = r.time_limit_ms;
+  }
+  if (r.status !== undefined) {
+    if (r.status !== "active" && r.status !== "finished" && r.status !== "abandoned") return null;
+    extra.status = r.status;
+  }
+  if (r.score !== undefined && r.score !== null) {
+    if (typeof r.score !== "number" || !Number.isFinite(r.score) || r.score < 0 || r.score > 1) return null;
+    extra.score = r.score;
+  }
+  if (r.finished_at !== undefined && r.finished_at !== null) {
+    if (!isIsoDate(r.finished_at)) return null;
+    extra.finished_at = r.finished_at;
+  }
+  if (r.device_hash !== undefined && r.device_hash !== null) {
+    if (typeof r.device_hash !== "string" || !/^[0-9a-f]{64}$/.test(r.device_hash)) return null;
+    extra.device_hash = r.device_hash;
+  }
+  if (r.time_used_s !== undefined && r.time_used_s !== null) {
+    if (!isNonNegInt(r.time_used_s)) return null;
+    extra.time_used_s = r.time_used_s;
+  }
   return {
+    ...extra,
     id: r.id,
     kind: r.kind,
     jurisdiction: r.jurisdiction,

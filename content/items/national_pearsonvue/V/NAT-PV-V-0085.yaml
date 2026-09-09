@@ -9,12 +9,14 @@ stem: "A tenant who uses a wheelchair asks her landlord for permission to instal
   own expense, a ramp and widened doorway inside her rented unit. The landlord refuses permission
   outright. Under the Fair Housing Act, the landlord's refusal is:"
 options:
+  - Lawful, because the landlord is not required to permit modifications that alter the structural
+    integrity of the unit
   - Unlawful, because refusing to permit reasonable modifications at the tenant's expense is
     discrimination
+  - Unlawful, because the landlord must pay for reasonable modifications needed by a handicapped
+    tenant
   - Lawful, because modification rules apply only to newly constructed multifamily dwellings
-  - Unlawful, because the landlord must pay for modifications needed by a handicapped tenant
-  - Lawful, because landlords may control all alterations to the interior of their rental units
-key: A
+key: B
 explanation: Section 3604(f)(3)(A) provides that discrimination includes refusing to permit, at the
   handicapped person's expense, reasonable modifications of existing premises necessary for full
   enjoyment; a landlord may only condition permission on the tenant agreeing to restore the interior
@@ -34,8 +36,8 @@ tags: []
 status: qa_approved
 reviewer: qa-lead-model
 verified_on: 2026-09-08
-qa_approved_on: 2026-09-08
-version: 1
+qa_approved_on: 2026-09-09
+version: 2
 provenance:
   model: nvidia/moonshotai/kimi-k3
   prompt_version: draft-v3 / verify-v1

@@ -1,38 +1,19 @@
 <script setup lang="ts">
-const settings = useSettings();
+/**
+ * App shell. All sign-in bookkeeping (device hash, entitlement, study-state hydrate, free tier,
+ * RevenueCat identity, events) is registered in useBootstrap and runs inside auth.init() before
+ * `auth.ready` flips — pages never see a half-hydrated account (V2 §6.1).
+ */
 const auth = useAuth();
-const entitlement = useEntitlement();
-const sync = useSync();
-const freeTier = useFreeTier();
+const bootstrap = useBootstrap();
+const purchases = usePurchases();
 
-onMounted(async () => {
-  settings.restore();
-  applyTheme();
-  void freeTier.load();
-  // auth is a no-op in static dev mode (no NUXT_PUBLIC_SUPABASE_URL) — see lib/study/mode.ts
-  await auth.init();
-  sync.start();
+onMounted(() => { void bootstrap.start(); });
+
+// RevenueCat identity follows the Supabase user so the webhook can match the entitlement (V2 §6.1 #6).
+watch(() => auth.user.value?.id, (id) => {
+  if (id && purchases.supported.value) void purchases.configure(id).catch(() => {});
 });
-watch(() => settings.theme, applyTheme);
-
-// signed-in bookkeeping: entitlement (kv cache → network), home state for the free tier, the
-// sharing-notice ack, and a catch-up sync. None of it touches the study path (F7/F13).
-watch(() => auth.user.value?.id, async (id) => {
-  await entitlement.load();
-  if (!id) return;
-  if (settings.jurisdiction) void entitlement.setHomeJurisdiction(settings.jurisdiction);
-  if (entitlement.profile.value?.sharing_notice_ack && !settings.sharingNoticeAck) settings.set("sharingNoticeAck", true);
-  else if (settings.sharingNoticeAck && entitlement.profile.value && !entitlement.profile.value.sharing_notice_ack) void entitlement.ackSharingNotice();
-  void sync.syncNow();
-});
-watch(() => settings.jurisdiction, (code) => { if (code && auth.user.value) void entitlement.setHomeJurisdiction(code); });
-
-function applyTheme() {
-  if (!import.meta.client) return;
-  const root = document.documentElement;
-  if (settings.theme === "system") root.removeAttribute("data-theme");
-  else root.setAttribute("data-theme", settings.theme);
-}
 </script>
 <template>
   <NuxtLayout>

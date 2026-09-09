@@ -18,6 +18,8 @@ import { LlmRouter } from "@rep/llm";
 import { Item, domainOf } from "@rep/schema";
 import { loadItems } from "@rep/content-lint";
 import { renderAudio } from "./audio.js";
+import { watchSources, renderWatchSummary } from "./watch.js";
+import { publishRemote } from "./remote.js";
 import { loadEnv } from "@rep/llm";
 loadEnv();
 const BACKEND = process.env.LLM_BACKEND ?? "router";
@@ -47,8 +49,11 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   wait <batchId>                                    poll a batch until it ends, then collect (draft) or collect-verify (verify)
   qa-sheet <bank> [--sample 0.2]                    reviewer CSV of a random sample of verified items
   qa-approve <reviewer> <id...>                     stamp qa_approved
+  repair <id...>                                    LLM-rewrite wording of content items failing lint → back to verified
   qa-reject <reviewer> <id> "<reason>"              retire an item
   publish <bank>                                    qa_approved → published
+  publish --remote [<bank>] [--dry-run] [--force-version]   upload qa_approved/published items to the Supabase 'content' bucket + item_index / content_versions / content_alerts (needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY)
+  watch-sources [--bank <id>] [--dry-run] [--skip-blocked] [--concurrency N]   re-fetch every cached authority URL, hash-compare, flag items whose citations changed → needs_review, docs/STATUTE_CHANGES.md, .pipeline/watch/
   refs-audit [XX|bank] [--verbose]                  resolve every blueprint node's statute_refs against cached authorities
   glossary <bank> [--limit N]                       define the bank's item terms from cached authorities → content/glossary/<bank>.yaml (F16)
   glossary-approve <bank> <reviewer> <term...> / glossary-reject <bank> <reviewer> "<reason>" <term...>
@@ -177,6 +182,7 @@ async function main() {
     }
     case "qa-sheet": { qaSheet(positional[0]!, flag("sample") ? Number(flag("sample")) : 0.2); break; }
     case "qa-approve": { qaApprove(positional[0]!, positional.slice(1)); break; }
+    case "repair": { const { repairContentItems } = await import("./repair.js"); console.log(await repairContentItems(positional)); break; }
     case "qa-reject": { qaReject(positional[0]!, positional[1]!, positional[2] ?? "rejected by reviewer"); break; }
     case "refs-audit": {
       const rows = auditRefs(positional[0]);
@@ -203,7 +209,22 @@ async function main() {
       for (const p of r.written) console.log(`wrote ${p}`);
       break;
     }
-    case "publish": { console.log(`${publish(positional[0]!)} items published`); break; }
+    case "publish": {
+      if (rest.includes("--remote")) {
+        const r = await publishRemote({ bank: positional[0] ?? flag("bank"), dryRun: rest.includes("--dry-run"), forceVersion: rest.includes("--force-version"), log: (l) => console.log(l) });
+        for (const w of r.warnings) console.warn(`warning: ${w}`);
+        console.log(`${r.dry_run ? "[dry run] " : ""}uploaded ${r.uploaded} · unchanged ${r.skipped} · retired ${r.unpublished} · alerts ${r.alerts} · version ${r.version ?? "(no new version)"}`);
+        break;
+      }
+      if (!positional[0]) throw new Error("publish <bank> | publish --remote");
+      console.log(`${publish(positional[0]!)} items published`);
+      break;
+    }
+    case "watch-sources": {
+      const r = await watchSources({ bank: flag("bank"), dryRun: rest.includes("--dry-run"), skipBlocked: rest.includes("--skip-blocked"), concurrency: flag("concurrency") ? Number(flag("concurrency")) : undefined, log: (l) => console.log(l) });
+      console.log("\n" + renderWatchSummary(r));
+      break;
+    }
     default: console.log(HELP); process.exit(cmd ? 1 : 0);
   }
 }

@@ -44,7 +44,11 @@ export interface DraftRequest {
 }
 
 export function draftUserPrompt(r: DraftRequest): { statuteBlock: string; taskBlock: string } {
-  const statuteBlock = `GOVERNING TEXT (${r.statuteCitationRoot}) — cite only sections that appear below:\n\n${r.statuteText}`;
+  const statuteBlock = `GOVERNING TEXT (${r.statuteCitationRoot}) — cite only sections that appear below:\n\n${r.statuteText}
+EXAM RELEVANCE (v6): Only test rules a licensee must know or apply in practice — licensing requirements and exemptions, duties to clients and customers, prohibited conduct and discipline, disclosures, escrow/trust accounts, advertising, agency relationships, fair-housing protected classes and prohibited acts, contracts, property/land use concepts, finance and closing math. NEVER write items about appropriations or funding, rulemaking or hearing procedure, agency internal administration, subpoena/contempt/court-procedure penalties, preemption/jurisdiction or effective-date clauses, transportation/vehicle/telecommunications provisions of civil-rights statutes, antitrust definitions unrelated to brokerage conduct, or any provision a candidate would never meet on a licensing exam. If a chunk of text offers nothing examinable, return fewer items or an empty list rather than trivia.
+CITATIONS (v6): Cite the statute or rule (e.g. § 475.25(1)(b), 12 U.S.C. 2607, R. 61J2-14.010). Never refer to the numbering of study notes or outlines (no "§7.2", "section 5.5", "the licensee's duties section", "the guideline").
+FIGURES (v6): Do not key an item on a statutory dollar penalty or cap that is inflation-adjusted by regulation unless the text gives the current figure; prefer procedural facts (who, when, what) over penalty amounts. For math items every distractor must correspond to a specific, real mistake (wrong base, wrong rate, skipped step) — never invent a distractor rationale.
+`;
   const taskBlock = [
     `BANK: ${r.bank} (${r.jurisdictionName}; exam vendor: ${r.vendor})`,
     `BLUEPRINT NODE: ${r.target.node} — ${r.target.label}`,
@@ -63,9 +67,12 @@ Decide:
 2. key_supported — does the governing text establish that the keyed option, and only the keyed option, is correct? Check every distractor: if any distractor is also defensible under the text, the item fails.
 3. citation_precise — does citation.source name the specific section/subsection where the supporting language appears?
 4. stem_clear — is the stem unambiguous, free of double negatives, and answerable without outside assumptions?
-5. Any factual error, outdated figure, or state-specific detail that contradicts the text.
+5. Any factual error, outdated figure, or state-specific detail that contradicts the text. Treat statutory dollar penalties/caps that are inflation-adjusted by regulation as outdated unless the text gives the current figure.
+6. exam_relevant — would a licensing-exam candidate be tested on this? FAIL items about appropriations, rulemaking/hearing procedure, agency administration, subpoena or court-procedure penalties, preemption/jurisdiction/effective-date clauses, transportation/vehicle provisions of civil-rights statutes, antitrust definitions unrelated to brokerage conduct, or similar trivia.
+7. For math items recompute the keyed answer AND check that each distractor's stated rationale (if any) actually produces that distractor; an invented rationale fails.
+8. The item must not cite study-note numbering ("§7.2", "the guideline", "the duties section") anywhere.
 
-Return verdict "pass" only if 1–4 are all true and 5 finds nothing. Otherwise "fail". Give concrete issues and, where a small edit would fix it, a suggested_fix. Never be lenient because the explanation sounds confident. Output only JSON.`;
+Return verdict "pass" only if 1–4 and 6–8 are all true and 5 finds nothing. Otherwise "fail". Give concrete issues and, where a small edit would fix it, a suggested_fix. Never be lenient because the explanation sounds confident. Output only JSON.`;
 
 export function verifyUserPrompt(statuteRoot: string, statuteText: string, item: object): { statuteBlock: string; taskBlock: string } {
   return {

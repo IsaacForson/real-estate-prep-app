@@ -2,19 +2,29 @@
  * POST /functions/v1/sync-progress — two-way sync of per-question progress and study sessions
  * (F7 offline-first, F8 never lose progress) plus the SPEC §5.3 anomaly heuristics.
  *
- * headers: Authorization: Bearer <jwt>, x-device-id, x-session-id
+ * headers: Authorization: Bearer <jwt>, x-device-id, x-session-id, x-device-hash
  * body: {
- *   progress?:       ProgressRow[]      // keyed by public_id, lww on client_updated_at
+ *   progress?:       ProgressRow[]      // keyed by public_id, lww on client_updated_at (+ streak, history)
  *   study_sessions?: StudySessionRow[]  // keyed by client-generated uuid, lww on client_updated_at
  *   since?:          iso timestamp      // pull server rows updated after this watermark
  * }
  * returns counts per outcome, the server's newer rows, and any anomaly flags opened.
  */
 import { answersInWindow, detectAnomalies } from "../_shared/anomaly.ts";
-import { audit, authenticate, enforceRateLimit, getEntitlements, recordGeo, requireSession } from "../_shared/auth.ts";
+import {
+  audit,
+  authenticate,
+  enforceRateLimit,
+  getEntitlements,
+  getProfile,
+  recordGeo,
+  requireSession,
+} from "../_shared/auth.ts";
 import { rpc, unwrap } from "../_shared/db.ts";
+import { deviceFromRequest, freeTierFor } from "../_shared/device.ts";
 import { drainOutboxForUser } from "../_shared/email.ts";
-import { ANOMALY_ANSWERS_PER_HOUR, FREE_TIER_MOCKS, RATE_WINDOW_SECONDS, SYNCS_PER_HOUR } from "../_shared/limits.ts";
+import { emitEvent } from "../_shared/events.ts";
+import { ANOMALY_ANSWERS_PER_HOUR, RATE_WINDOW_SECONDS, SYNCS_PER_HOUR } from "../_shared/limits.ts";
 import {
   dedupeNewest,
   isIsoDate,
@@ -41,12 +51,16 @@ interface RecordResult {
   last_answered_at: string | null;
 }
 
+const SESSION_COLUMNS =
+  "id, kind, jurisdiction, bank, form_id, batch_id, started_at, ended_at, position, answers, time_remaining_s, client_updated_at, updated_at, item_ids, portions, time_limit_ms, status, score, finished_at, device_hash, time_used_s";
+
 serve(async (req) => {
   const ctx = await authenticate(req);
   await requireSession(ctx);
   const body = await readJsonObject<SyncRequest>(req);
   await enforceRateLimit(ctx.db, `syncs:${ctx.userId}`, SYNCS_PER_HOUR, RATE_WINDOW_SECONDS, 1);
   await recordGeo(ctx, "sync-progress");
+  const { deviceHash, touch } = await deviceFromRequest(req, ctx);
 
   const now = new Date();
   const since = isIsoDate(body.since) ? body.since : "1970-01-01T00:00:00Z";
@@ -56,12 +70,21 @@ serve(async (req) => {
   if (!Array.isArray(rawProgress) || rawProgress.length > MAX_PROGRESS_ROWS) {
     throw new HttpError(400, "invalid_progress", `progress must be an array of at most ${MAX_PROGRESS_ROWS} rows`);
   }
-  const progressRows: ProgressRow[] = [];
+  const progressRows: (ProgressRow & { streak?: number; history?: unknown[] })[] = [];
   let invalidProgress = 0;
   for (const r of rawProgress) {
     const v = validateProgressRow(r);
-    if (v) progressRows.push(v);
-    else invalidProgress++;
+    if (v) {
+      // v2: carry the client scheduler's streak / history when present and sane.
+      const o = r as Record<string, unknown>;
+      const streak = typeof o.streak === "number" && Number.isInteger(o.streak) && o.streak >= 0 ? o.streak : undefined;
+      const history = Array.isArray(o.history) && o.history.length <= 30 ? o.history : undefined;
+      progressRows.push({
+        ...v,
+        ...(streak !== undefined ? { streak } : {}),
+        ...(history !== undefined ? { history } : {}),
+      });
+    } else invalidProgress++;
   }
   const deduped = dedupeNewest(progressRows, (r) => r.public_id);
   const results = deduped.length
@@ -83,10 +106,12 @@ serve(async (req) => {
   for (const r of rawSessions) {
     const v = validateStudySessionRow(r);
     if (v) sessionRows.push(v);
-    else {rejected.push({
+    else {
+      rejected.push({
         id: typeof (r as { id?: unknown })?.id === "string" ? (r as { id: string }).id : null,
         reason: "invalid",
-      });}
+      });
+    }
   }
   let sessionsApplied = 0;
   if (sessionRows.length) {
@@ -97,10 +122,14 @@ serve(async (req) => {
     ) as { id: string; user_id: string; kind: string; form_id: string | null }[];
     const foreign = new Set(existing.filter((e) => e.user_id !== ctx.userId).map((e) => e.id));
 
-    // free tier: one mock form (SPEC §6). count forms already started plus new ones in this payload.
+    // free tier: one mock (SPEC §6), counted per account *and* per device (V2 §1).
     const ent = await getEntitlements(ctx.db, ctx.userId);
     let mockForms: Set<string> | null = null;
+    let mocksRemaining = Number.POSITIVE_INFINITY;
     if (!ent.complete) {
+      const profile = await getProfile(ctx.db, ctx.userId);
+      const free = await freeTierFor(ctx.db, ctx.userId, deviceHash, profile.home_jurisdiction ?? "NAT", touch);
+      mocksRemaining = free.reason === "device_blocked" || free.reason === "device_shared" ? 0 : free.mocks_remaining;
       const mine = unwrap(
         await ctx.db.from("study_sessions").select("id, form_id").eq("user_id", ctx.userId).eq("kind", "mock"),
         "mock_sessions_lookup",
@@ -117,14 +146,15 @@ serve(async (req) => {
       if (mockForms && s.kind === "mock") {
         const key = s.form_id ?? s.id;
         if (!mockForms.has(key)) {
-          if (mockForms.size >= FREE_TIER_MOCKS) {
+          if (mocksRemaining <= 0) {
             rejected.push({ id: s.id, reason: "free_tier_mock_limit" });
             continue;
           }
           mockForms.add(key);
+          mocksRemaining--;
         }
       }
-      toWrite.push({ ...s, user_id: ctx.userId });
+      toWrite.push({ ...s, user_id: ctx.userId, device_hash: s.device_hash ?? deviceHash });
     }
     if (toWrite.length) {
       // the before-write trigger drops stale rows (lww) and pins user_id/created_at.
@@ -164,6 +194,7 @@ serve(async (req) => {
     });
     if (flagId) opened.push(f.kind);
   }
+  if (touch?.flagged) opened.push("device_accounts");
   if (opened.length) await drainOutboxForUser(ctx.db, ctx.userId); // stub: logs, leaves rows queued
 
   // ---- pull: what the server knows that this device might not --------------------------
@@ -171,9 +202,7 @@ serve(async (req) => {
   const serverSessions = unwrap(
     await ctx.db
       .from("study_sessions")
-      .select(
-        "id, kind, jurisdiction, bank, form_id, batch_id, started_at, ended_at, position, answers, time_remaining_s, client_updated_at, updated_at",
-      )
+      .select(SESSION_COLUMNS)
       .eq("user_id", ctx.userId)
       .gt("updated_at", since)
       .order("updated_at", { ascending: true })
@@ -181,12 +210,16 @@ serve(async (req) => {
     "study_sessions_pull",
   ) as unknown[];
 
-  await audit(ctx, "progress.synced", null, {
+  const summary = {
     applied: count("applied"),
     stale: count("skipped_stale"),
     unknown: count("unknown_id"),
     sessions: sessionsApplied,
-  });
+  };
+  await audit(ctx, "progress.synced", null, summary);
+  if (summary.applied + summary.sessions > 0) {
+    await emitEvent(ctx.db, ctx.userId, deviceHash, "progress_synced", { ...summary, answers_delta: appliedDelta });
+  }
 
   return json({
     server_time: now.toISOString(),

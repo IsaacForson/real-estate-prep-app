@@ -1,0 +1,39 @@
+id: NAT-PV-I-0193
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A property has a 2019 first mortgage, a 2022 home-equity line, and a 2024 mechanic's lien for
+  work that began in 2021. Under the rule that mechanic's lien priority may relate back to when work
+  began, which lien is senior to the mechanic's lien?
+options:
+  - The 2022 home-equity line
+  - The mortgage and the home-equity line
+  - The 2019 first mortgage
+  - The mechanic's lien
+key: C
+explanation: If the mechanic's lien relates back to 2021, it is senior to the 2022 home-equity line
+  but junior to the 2019 mortgage; thus the 2019 first mortgage remains senior to the mechanic's
+  lien. The distractor claiming the home-equity line is senior overlooks the relation‑back date of
+  2021.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - mechanic's lien
+  - relation back
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -169,3 +169,100 @@ shortfall per node and writes nothing — that report is the per-state "ready" g
 `<JUR>-<ROOT>-<NNNN>` — `FL-475-0413`, `TX-1101-0007`, `NAT-PV-IV-0012`, `NAT-PSI-V-0102`.
 IDs are permanent. Edits bump `version`. Retired items are moved, never renumbered. Per-user ID
 rotation for anti-scraping (SPEC §5.4) happens in the delivery layer, not in content.
+
+## 7. Source watch (content freshness)
+
+```bash
+pnpm pipeline watch-sources                       # every cached authority with a URL
+pnpm pipeline watch-sources --bank state_TX       # one jurisdiction
+pnpm pipeline watch-sources --dry-run             # report only; touches no content/docs
+pnpm pipeline watch-sources --skip-blocked        # do not even try hosts known to block scripts
+```
+
+Runs nightly (§8). For each distinct source URL in `content/statutes/**` front-matter the command
+re-fetches with the same strategy as `ingest` (HTML → text, PDF → text, govinfo notes stripped),
+whitespace-normalises, and compares a sha256 to the doc's `source_sha256`:
+
+| Outcome | What happens |
+|---|---|
+| no stored hash | first sight: `source_sha256`, `text_sha256` (hash of the cached text) and `checked_on` are written to the front-matter. Nothing is flagged. |
+| same hash | `checked_on` bumped |
+| different hash | fetched text saved as `content/statutes/<JUR>/_versions/<slug>/<date>.md`; the cached doc's text is **not** replaced (it may be a curated slice or OCR, and it is what the live items were verified against) but its `source_sha256` / `source_changed_on` are updated so the same change is not re-flagged tomorrow. Every item of that jurisdiction whose `citation.source` matches the doc or whose quote is found in it is re-checked against the new text: quote no longer verbatim, or the cited section (sliced via `cite.ts`, exactly what the verifier saw) reads differently → `status: needs_review` + `review_reason`. A dated section is appended to `docs/STATUTE_CHANGES.md`. |
+| fetch fails / JS shell / archive (.zip) | skipped with a note. Hosts in `KNOWN_BLOCKED_HOSTS` (watch.ts, from docs/STATUTE_GAPS.md) never raise an alert; an unexpected failure raises `fetch_failed`. |
+
+Fetches run `--concurrency` wide (default 6) with a per-URL timeout of `WATCH_TIMEOUT_MS` (default
+30 s; the nightly job uses 60 s because some compiled law books are 10–30 MB PDFs). Each distinct URL
+is fetched once even when several cached docs share it.
+
+Outputs: `.pipeline/watch/<date>.json` (full report, `.dry-run.json` for dry runs) and
+`.pipeline/watch/alerts.json` — rows `{ kind: source_changed | quote_broken | fetch_failed,
+jurisdiction, ref, detail }` that `publish --remote` inserts into `content_alerts` for the admin
+console, then renames to `alerts.<ts>.sent.json`.
+
+`needs_review` items are dropped from `content:manifest`, from `publish --remote` (their `item_index`
+row is set to `retired` so the API stops serving them) and from mocks until a reviewer re-approves:
+re-ingest the authority if the change is real, re-run `verify`/`qa-approve` or `qa-reject`, and
+clear `review_reason`. Several cached docs may share one URL (a compiled law book split into
+chapters); the hash is of the whole publication, so a change anywhere in the book flags all of them
+— the per-item check then narrows it to the items whose section actually moved.
+
+## 8. Remote publish and the nightly workflow
+
+```bash
+pnpm pipeline publish --remote                    # all qa_approved + published items
+pnpm pipeline publish --remote state_TX --dry-run # plan only, no network, no credentials needed
+pnpm pipeline publish --remote --force-version    # write a content_versions row even if nothing changed
+```
+
+Needs `SUPABASE_URL` (or `NUXT_PUBLIC_SUPABASE_URL`) and `SUPABASE_SERVICE_ROLE_KEY` in the
+environment or the repo-root `.env` (read through `process.env`; values are never logged). What it
+writes, using the Storage REST API and PostgREST directly:
+
+| Target | Content |
+|---|---|
+| bucket `content`, object `items/<bank>/<item_id>.json` | the full Item as JSON — options in stored order, `key` retained; the API's `content-store.buildBatch` strips reviewer/provenance before delivery |
+| table `item_index` (upsert on `item_id`) | `item_id, bank, jurisdiction, blueprint_node, cognitive_level, license_level, status, content_version` — `status` is `published` for both `qa_approved` and `published` items (the table's check constraint only allows published/retired), `content_version` = the item's `version` |
+| table `content_versions` (insert) | `version = <ISO date>+<short git sha>`, `published_at`, `item_count` (live objects), `notes` — only when something was uploaded or retired; the app polls this table daily to refresh its cache |
+| table `content_alerts` (insert) | rows from `.pipeline/watch/alerts.json` with `status: open` |
+
+Idempotent: `.pipeline/publish/remote-manifest.json` stores the sha256 of every uploaded object;
+unchanged items are skipped, edited items re-uploaded, and items that left the publishable set
+(retired, pulled to `needs_review`, deleted) get `status: retired` in `item_index`. The manifest is
+updated per successful upload, so an interrupted run resumes where it stopped. A missing
+`content_versions` / `content_alerts` table (WP-A migration not applied yet) is a warning, not a
+failure; alerts stay on disk until they can be sent.
+
+**Nightly workflow** — `.github/workflows/content-nightly.yml`, cron `0 3 * * *` (03:00 UTC) and
+manual dispatch (with a `skip_publish` switch): checkout `main` → `pnpm install` → `watch-sources`
+→ `status --md docs/STATUS.md` → `help:kb` → commit `content/`, `docs/` and `help.json` back to
+`main` as "content: nightly source watch" (skipped when nothing changed) → upload the watch report
+as a build artifact → `publish --remote`. The publish manifest is carried between runs with
+`actions/cache` (key `remote-manifest-<run id>`, prefix restore); if the cache is lost the run
+simply re-uploads everything, which is safe.
+
+Required repository secrets (Settings → Secrets and variables → Actions):
+
+| Secret | Used by | Where to find it |
+|---|---|---|
+| `SUPABASE_URL` | `publish --remote` | Supabase project → Settings → API → Project URL (`https://<ref>.supabase.co`) |
+| `SUPABASE_SERVICE_ROLE_KEY` | `publish --remote` | Supabase project → Settings → API → service_role key (`sb_secret_…`). Server-only; never ship it in the app. |
+
+The workflow needs `contents: write` (declared in the file) to push the nightly commit. No other
+secrets are involved: the LLM router keys are not needed because the nightly job never drafts.
+
+## 9. Help Center knowledge base
+
+```bash
+pnpm --filter @rep/app help:kb        # → apps/app/public/content/help.json
+```
+
+`apps/app/scripts/build-help-kb.ts` assembles the in-app Help Center from the repo so it cannot
+drift from the product rules: `docs/HELP_FAQ.md` (hand-written; one `## ` section per article with
+`category:` / `keywords:` lines), curated lines of SPEC.md §5.2–5.3 and §6 (one-person rule,
+3-device rule, pricing / free tier / guarantee), QA_PROCESS.md, QA_REVIEWER_GUIDE.md and
+CONTENT_PIPELINE.md §1/§3 (how questions are verified), `app/pages/methodology.vue` (readiness
+score) and `app/pages/legal/*.vue` (tags stripped). Output shape
+`{ generated, articles: [{ id, title, category, body_md, keywords[], source }], index: { keyword: [ids] } }`;
+at most 60 articles, each at most 250 words (longer sections become numbered parts). The script
+fails if a limit is exceeded. The `index` is a plain keyword → article-id map for client-side search;
+`help-ai` grounds its answers on the same articles.

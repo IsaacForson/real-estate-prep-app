@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   compatibilityDate: "2026-09-01",
   modules: ["@pinia/nuxt"],
@@ -11,12 +13,16 @@ export default defineNuxtConfig({
       ],
     },
   },
-  // Marketing / state pages render on the server for SEO; the study app is client-only
-  // (offline-first, local store) and is also what Capacitor ships.
+  // Marketing / state pages render on the server for SEO (V2 §1 public list). Everything that needs
+  // the session or the local cache is client-only and is also what Capacitor ships.
   routeRules: {
+    "/app/**": { ssr: false },
+    "/admin/**": { ssr: false },
     "/study/**": { ssr: false },
-    // account + auth callback read the local store and the supabase session: client-only too
     "/account": { ssr: false },
+    "/welcome": { ssr: false },
+    "/signin": { ssr: false },
+    "/help/**": { ssr: false },
   },
   runtimeConfig: {
     public: {
@@ -30,5 +36,5 @@ export default defineNuxtConfig({
     },
   },
   typescript: { strict: true, typeCheck: false },
-  vite: { server: { fs: { allow: [".."] } } },
+  vite: { plugins: [tailwindcss()], server: { fs: { allow: [".."] } } },
 });

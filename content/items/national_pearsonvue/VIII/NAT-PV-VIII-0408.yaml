@@ -1,0 +1,58 @@
+id: NAT-PV-VIII-0408
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A buyer closes on a $180,000 loan at 6% interest with a monthly principal and interest payment
+  of $1,079.19. Comparing the first monthly payment to the second monthly payment, which statement
+  is correct?
+options:
+  - The interest portion rises and the principal portion falls, because the lender front-loads
+    interest in the early payments
+  - The interest portion falls and the principal portion rises, because the second month's interest
+    is computed on a slightly smaller balance
+  - The interest portion falls only if the borrower makes an extra principal payment with the first
+    installment
+  - The interest and principal portions remain identical, because the payment amount is fixed for
+    the full term
+key: B
+explanation: Month 1 interest is $180,000 × 0.06 ÷ 12 = $900, leaving $179.19 of principal and a new
+  balance of $179,820.81. Month 2 interest is computed on that smaller balance ($179,820.81 × 0.06 ÷
+  12 = $899.10), so interest drops and principal rises to $180.09. The claim that the split stays
+  identical ignores that each month's interest is figured on the balance at the start of that month,
+  which shrinks after every payment.
+citation:
+  source: REP Ref. Real Estate Math § 5.6
+  url: null
+  quoted_text: "Steps: (1) month's interest = balance × annual rate ÷ 12; (2) principal paid = payment
+    − interest; (3) new balance = balance − principal paid. Repeat with the new balance for the next
+    month."
+  secondary: []
+math:
+  worked_solution: Month 1 interest = $180,000 × 0.06 ÷ 12 = $900.00. Principal = $1,079.19 − $900.00
+    = $179.19. New balance = $180,000 − $179.19 = $179,820.81. Month 2 interest = $179,820.81 × 0.06
+    ÷ 12 = $899.10. Principal = $1,079.19 − $899.10 = $180.09. Interest fell by $0.90 and principal
+    rose by $0.90.
+  formulas:
+    - Month's interest = balance × annual rate ÷ 12
+    - Principal paid = payment − interest
+    - New balance = balance − principal paid
+  onscreen_calculator_only: false
+terms:
+  - amortization
+  - principal
+  - interest
+  - loan balance
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

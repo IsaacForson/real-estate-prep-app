@@ -1,0 +1,45 @@
+id: NAT-PV-II-0204
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A lender acquires a property through foreclosure and sells it using a deed that only warrants
+  against claims arising during the lender's ownership. Which deed type is the lender most likely
+  using?
+options:
+  - General warranty deed
+  - Quitclaim deed, no warranty
+  - Special warranty deed
+  - Bargain and sale deed
+key: C
+explanation: A special warranty deed limits the grantor's warranties to defects that arose during
+  the grantor's own period of ownership. When a lender acquires title through foreclosure and then
+  sells the property, it typically uses this deed because it only warrants against claims that could
+  have arisen while the lender owned the property. A general warranty deed would incorrectly extend
+  warranties to prior owners, a quitclaim deed provides no warranties, and a bargain and sale deed
+  does not warrant against encumbrances.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.4
+  url: null
+  quoted_text: "A special warranty deed limits the covenants to the grantor's own period of ownership:
+    the grantor warrants only against claims 'by, through, or under' the grantor, and gives no
+    protection against defects created before the grantor took title."
+  secondary: []
+terms:
+  - special warranty deed
+  - foreclosure
+  - lender
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-08
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

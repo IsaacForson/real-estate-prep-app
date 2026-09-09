@@ -1,0 +1,71 @@
+<script setup lang="ts">
+/** One support ticket: header, messages, reply box, close. Used by /admin/support. */
+import type { AdminTicket, AdminTicketMessage } from "~/composables/useAdmin";
+
+const props = defineProps<{ ticketId: string }>();
+const emit = defineEmits<{ changed: [] }>();
+const { api } = useAdmin();
+const { confirm } = useAdminConfirm();
+const action = useAdminAction();
+
+const q = useAdminQuery(() => api.tickets.get(props.ticketId));
+watch(() => props.ticketId, () => { reply.value = ""; void q.reload(); });
+
+const ticket = computed<AdminTicket | null>(() => q.data.value?.ticket ?? null);
+const messages = computed<AdminTicketMessage[]>(() => q.data.value?.messages ?? []);
+const isClosed = computed(() => /closed|resolved/i.test(ticket.value?.status ?? ""));
+const fromAdmin = (m: AdminTicketMessage) => m.from_admin === true || m.is_admin === true || m.role === "admin" || m.role === "agent";
+
+const reply = ref("");
+async function send() {
+  const body = reply.value.trim();
+  if (!body) return;
+  await action.run("reply", () => api.tickets.reply(props.ticketId, body), "Reply sent.", async () => { reply.value = ""; await q.reload(); emit("changed"); });
+}
+async function close() {
+  const r = await confirm({ title: "Close this ticket?", body: "The learner can still reply to reopen it.", confirmLabel: "Close ticket" });
+  if (!r.ok) return;
+  await action.run("close", () => api.tickets.close(props.ticketId), "Ticket closed.", async () => { await q.reload(); emit("changed"); });
+}
+</script>
+<template>
+  <AdminState :loading="q.loading.value" :error="q.error.value" :empty="!ticket" empty-text="Ticket not found." @retry="q.reload">
+    <div v-if="ticket" class="flex h-full flex-col">
+      <header class="border-b border-line pb-3">
+        <div class="flex flex-wrap items-center gap-2">
+          <h2 class="m-0 flex-1 text-base font-semibold text-ink">{{ ticket.subject }}</h2>
+          <AdminBadge :text="ticket.status" />
+          <button v-if="!isClosed" type="button" class="!px-3 !py-1 text-sm" :disabled="action.busy.value === 'close'" @click="close">Close</button>
+        </div>
+        <p class="m-0 mt-1 text-xs text-muted">
+          <NuxtLink v-if="ticket.user_id" :to="`/admin/users/${ticket.user_id}`">{{ ticket.email ?? adminFmt.short(ticket.user_id) }}</NuxtLink>
+          <span v-else>{{ ticket.email ?? "unknown user" }}</span>
+          <span v-if="ticket.category"> · {{ ticket.category }}</span>
+          · opened <AdminTime :value="ticket.created_at" />
+        </p>
+      </header>
+
+      <ol class="m-0 flex-1 list-none space-y-3 overflow-y-auto p-0 py-3">
+        <li v-if="!messages.length" class="text-sm text-muted">No messages returned for this ticket.</li>
+        <li v-for="(m, i) in messages" :key="m.id ?? i" class="flex" :class="fromAdmin(m) ? 'justify-end' : 'justify-start'">
+          <div class="max-w-[85%] rounded-card border px-3 py-2 text-sm" :class="fromAdmin(m) ? 'border-accent/40 bg-accent/10' : 'border-line bg-surface-2'">
+            <div class="mb-1 flex items-center gap-2 text-xs text-muted">
+              <strong class="text-ink">{{ fromAdmin(m) ? "You (admin)" : "Learner" }}</strong>
+              <AdminTime :value="m.created_at" />
+            </div>
+            <p class="m-0 whitespace-pre-wrap break-words text-ink">{{ m.body }}</p>
+          </div>
+        </li>
+      </ol>
+
+      <form class="border-t border-line pt-3" @submit.prevent="send">
+        <label class="sr-only" for="ticket-reply">Reply</label>
+        <textarea id="ticket-reply" v-model="reply" rows="3" class="w-full rounded-card border border-line bg-surface p-2 text-sm text-ink" :placeholder="isClosed ? 'Replying reopens the ticket…' : 'Write a reply…'" @keydown.meta.enter.prevent="send" @keydown.ctrl.enter.prevent="send" />
+        <div class="mt-2 flex items-center justify-between text-xs text-muted">
+          <span>⌘/Ctrl + Enter to send</span>
+          <button type="submit" class="primary !px-3 !py-1 text-sm" :disabled="!reply.trim() || action.busy.value === 'reply'">Send reply</button>
+        </div>
+      </form>
+    </div>
+  </AdminState>
+</template>

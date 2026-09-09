@@ -51,6 +51,10 @@ export interface ServerSessionRow {
   time_remaining_s: number | null;
   client_updated_at: string;
   updated_at?: string;
+  /** V2 §2: the session's item list (public ids) so another device can resume it. Optional on 0006 rows. */
+  item_ids?: string[];
+  /** V2 §2: kept for servers that store status instead of ended_at */
+  status?: "active" | "finished" | "abandoned";
 }
 
 export interface SyncPayload {
@@ -122,6 +126,8 @@ export function toServerSession(s: StudySession): ServerSessionRow | null {
     answers,
     time_remaining_s: remaining,
     client_updated_at: iso(s.clientUpdatedAt),
+    item_ids: s.itemIds.slice(0, 500),
+    status: s.endedAt == null ? "active" : "finished",
   };
 }
 
@@ -229,9 +235,9 @@ export function fromWireAnswer(x: unknown): Answer | null {
 }
 
 /**
- * Apply a server session on top of a local one. The server keeps no item list, so a session we
- * have never seen is rebuilt from its answers (enough for history and SRS; a resume needs the
- * device that started it).
+ * Apply a server session on top of a local one. When the server row carries `item_ids` (V2 §2) a
+ * session started on another device is fully resumable; a 0006 row without it is rebuilt from its
+ * answers (enough for history and SRS).
  */
 export function fromServerSession(row: ServerSessionRow, local: StudySession | undefined): StudySession {
   const answers: Record<string, Answer> = {};
@@ -240,7 +246,8 @@ export function fromServerSession(row: ServerSessionRow, local: StudySession | u
     if (p) answers[p.itemId] = p;
   }
   const answeredIds = Object.values(answers).sort((a, b) => a.at - b.at).map((a) => a.itemId);
-  const itemIds = local?.itemIds ?? answeredIds;
+  const serverIds = Array.isArray(row.item_ids) && row.item_ids.length ? row.item_ids.filter((x): x is string => typeof x === "string") : null;
+  const itemIds = local?.itemIds ?? serverIds ?? answeredIds;
   const started = ms(row.started_at);
   return {
     id: row.id,

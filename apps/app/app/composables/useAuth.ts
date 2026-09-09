@@ -1,17 +1,19 @@
 /**
- * Supabase auth + the SPEC §5.3 device/session binding.
+ * Supabase auth + the SPEC §5.3 device/session binding, auth-first per V2 §1.
  *
- * - Magic link + Apple/Google OAuth. Sessions are long-lived and refreshed by supabase-js; nothing
- *   here ever blocks the study path (F13). A refresh that fails for good only raises a banner.
- * - On the first sign-in on an install, `register-device` binds the install (stable fingerprint)
- *   and starts the account's single live session. Its ids are kept in Dexie kv and sent as
- *   x-device-id / x-session-id on every function call.
- * - `session_revoked` from any call → sign out here with the one-line explanation.
+ * - Sign-in is email + 6-digit code only (`signInWithEmail` → `verifyEmailCode`). OAuth is gone.
+ * - `init()` restores the session and then runs the signed-in hooks (device hash, register-device,
+ *   entitlement, study-state hydrate, free tier) BEFORE `ready` flips, so no screen ever renders
+ *   free-tier or empty-progress UI for a paid, experienced learner (V2 §6.1). Slow networks are
+ *   capped: after HYDRATE_TIMEOUT_MS the app proceeds and the hooks finish in the background.
+ * - `register-device` binds the install (device hash) and starts the account's single live
+ *   session; its ids are sent as x-device-id / x-session-id. `session_revoked` → local sign-out.
  */
 import type { User } from "@supabase/supabase-js";
+import { runSignedIn, runSignedOut, withTimeout } from "~~/lib/state/hooks";
 import { getDb } from "~~/lib/study/db";
 import { ApiError, callFunction, functionsBase } from "~~/lib/study/api";
-import { defaultDeviceName, fingerprintHash, platform } from "~~/lib/study/fingerprint";
+import { defaultDeviceName, platform } from "~~/lib/study/fingerprint";
 
 export interface DeviceCreds { deviceId: string; sessionId: string; userId: string }
 export interface DeviceLimit {
@@ -23,29 +25,36 @@ export interface DeviceLimit {
 export interface AuthNotice { kind: "info" | "warn"; text: string }
 
 export const SESSION_REVOKED_MESSAGE = "You signed in on another device. One active session per account.";
+export const HYDRATE_TIMEOUT_MS = 8000;
 const DEVICE_KV = "auth.device";
 
 let inited = false;
 let signingOut = false;
 let registering: Promise<boolean> | null = null;
+let hydratedFor: string | null = null;
+let hydrating: Promise<void> | null = null;
 
 export function useAuth() {
   const supabase = useSupabase();
   const config = useRuntimeConfig();
+  const dev = useDevice();
   const user = useState<User | null>("auth.user", () => null);
   const ready = useState<boolean>("auth.ready", () => false);
   const notice = useState<AuthNotice | null>("auth.notice", () => null);
   const device = useState<DeviceCreds | null>("auth.device", () => null);
   const deviceLimit = useState<DeviceLimit | null>("auth.deviceLimit", () => null);
   const busy = useState<boolean>("auth.busy", () => false);
+  /** true while the signed-in hooks (entitlement, study state …) run for the current user */
+  const hydratingState = useState<boolean>("auth.hydrating", () => false);
   // from runtime config (not the client instance) so SSR and client agree on what to render
   const configured = !!(config.public.supabaseUrl && config.public.supabaseAnonKey);
   const signedIn = computed(() => !!user.value);
   const base = configured ? functionsBase(config.public.supabaseUrl) : "";
 
-  /** Idempotent; called once from app.vue on the client. */
+  /** Idempotent; called once from app.vue (and by the auth middleware) on the client. */
   async function init(): Promise<void> {
-    if (inited || !import.meta.client) return;
+    if (!import.meta.client) return;
+    if (inited) { if (hydrating) await hydrating; return; }
     inited = true;
     if (!supabase) { ready.value = true; return; }
     try {
@@ -53,20 +62,22 @@ export function useAuth() {
       device.value = (kv?.value as DeviceCreds | undefined) ?? null;
       const { data } = await supabase.auth.getSession();
       user.value = data.session?.user ?? null;
+      if (user.value) await withTimeout(hydrate(user.value, "init"), HYDRATE_TIMEOUT_MS);
+    } catch (e) {
+      if (import.meta.dev) console.warn("[auth] init", e);
     } finally {
       ready.value = true;
     }
-    if (user.value) void ensureDevice(user.value);
     supabase.auth.onAuthStateChange((event, session) => {
       // never await supabase calls inside the callback (supabase-js deadlock note)
       setTimeout(() => {
         if (event === "SIGNED_OUT") {
+          const hadUser = !!user.value;
           user.value = null;
-          if (!signingOut) {
-            notice.value = {
-              kind: "warn",
-              text: "Your sign-in expired. Studying continues locally; sign in again to sync and load new questions.",
-            };
+          hydratedFor = null;
+          if (!signingOut && hadUser) {
+            notice.value = { kind: "warn", text: "Your sign-in expired. Sign in again to keep studying." };
+            void runSignedOut("expired");
           }
           return;
         }
@@ -74,10 +85,30 @@ export function useAuth() {
         if (session?.user) {
           const changed = user.value?.id !== session.user.id;
           user.value = session.user;
-          if (event === "SIGNED_IN" || changed) void ensureDevice(session.user);
+          if (event === "SIGNED_IN" || changed) void hydrate(session.user, "sign_in");
         }
       }, 0);
     });
+  }
+
+  /** Register the device, then run the signed-in hooks once per uid (coalesced). */
+  function hydrate(u: User, event: "init" | "sign_in"): Promise<void> {
+    if (hydratedFor === u.id && !hydrating) return Promise.resolve();
+    if (hydrating && hydratedFor === u.id) return hydrating;
+    hydratedFor = u.id;
+    hydratingState.value = true;
+    hydrating = (async () => {
+      try {
+        await ensureDevice(u);
+        const ran = await runSignedIn({ uid: u.id, event }, (e) => { if (import.meta.dev) console.warn("[auth] signed-in hook", e); });
+        // hooks are registered by plugins/bootstrap.client.ts; if none were (tests, odd load order) let a later call retry
+        if (!ran) hydratedFor = null;
+      } finally {
+        hydrating = null;
+        hydratingState.value = false;
+      }
+    })();
+    return hydrating;
   }
 
   async function ensureDevice(u: User): Promise<void> {
@@ -91,7 +122,7 @@ export function useAuth() {
     return data.session?.access_token ?? null;
   }
 
-  /** Bearer + apikey (+ device/session ids when this install is registered). */
+  /** Bearer + apikey (+ device/session ids when this install is registered). x-device-hash is added by callFunction. */
   async function authHeaders(): Promise<Record<string, string> | null> {
     const token = await accessToken();
     if (!token) return null;
@@ -116,8 +147,10 @@ export function useAuth() {
       if (!supabase || !uid || !token) return false;
       busy.value = true;
       try {
+        const deviceHash = await dev.ensure();
         const res = await callFunction<{ device_id: string; session_id: string }>(base, "register-device", {
-          fingerprint_hash: await fingerprintHash(),
+          fingerprint_hash: deviceHash,
+          device_hash: deviceHash,
           platform: platform(),
           name: name ?? defaultDeviceName(),
         }, { authorization: `Bearer ${token}`, apikey: config.public.supabaseAnonKey });
@@ -132,7 +165,7 @@ export function useAuth() {
           deviceLimit.value = { max: x.max ?? 3, occupied: x.occupied ?? 3, nextSlotFreesAt: x.next_slot_frees_at ?? null, devices: x.devices ?? [] };
           notice.value = { kind: "warn", text: "This account already has 3 devices. Remove one on the Account page to study here." };
         } else {
-          notice.value = { kind: "warn", text: "Couldn't register this device yet. Studying continues locally; we'll retry when you're online." };
+          notice.value = { kind: "warn", text: "Couldn't register this device yet. We'll retry when you're online." };
         }
         return false;
       } finally {
@@ -143,30 +176,43 @@ export function useAuth() {
     return registering;
   }
 
+  /** Step 1: send the 6-digit code. Same call creates the account on first use. */
   async function signInWithEmail(email: string): Promise<{ ok: boolean; error?: string }> {
     if (!supabase) return { ok: false, error: "Accounts are not configured in this build." };
-    const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: `${location.origin}/account` } });
+    const { error } = await supabase.auth.signInWithOtp({ email: email.trim(), options: { shouldCreateUser: true } });
     return error ? { ok: false, error: error.message } : { ok: true };
   }
 
-  /** Verify the 6-digit code from the sign-in email (works on native where links can't open the app). */
+  /**
+   * Step 2: verify the code. Resolves only after the signed-in hooks ran (entitlement, study state,
+   * device), so the caller can navigate straight to Home without a flash of empty state.
+   */
   async function verifyEmailCode(email: string, token: string): Promise<{ ok: boolean; error?: string }> {
     if (!supabase) return { ok: false, error: "Accounts are not configured in this build." };
-    const { error } = await supabase.auth.verifyOtp({ email: email.trim(), token: token.replace(/\s+/g, ""), type: "email" });
-    return error ? { ok: false, error: error.message } : { ok: true };
-  }
-
-  async function signInWithOAuth(provider: "apple" | "google"): Promise<{ ok: boolean; error?: string }> {
-    if (!supabase) return { ok: false, error: "Accounts are not configured in this build." };
-    const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo: `${location.origin}/account` } });
-    return error ? { ok: false, error: error.message } : { ok: true };
+    busy.value = true;
+    try {
+      const { data, error } = await supabase.auth.verifyOtp({ email: email.trim(), token: token.replace(/\s+/g, ""), type: "email" });
+      if (error) return { ok: false, error: error.message };
+      if (data.session?.user) {
+        user.value = data.session.user;
+        notice.value = null;
+        await withTimeout(hydrate(data.session.user, "sign_in"), HYDRATE_TIMEOUT_MS);
+      }
+      return { ok: true };
+    } finally {
+      busy.value = false;
+    }
   }
 
   /** Local sign-out only: the other device that just signed in keeps its own refresh token. */
   async function signOut(reason?: string): Promise<void> {
     signingOut = true;
-    try { if (supabase) await supabase.auth.signOut({ scope: "local" }); } catch { /* offline is fine */ } finally { signingOut = false; }
+    try {
+      await runSignedOut(reason === SESSION_REVOKED_MESSAGE ? "revoked" : "user");
+      if (supabase) await supabase.auth.signOut({ scope: "local" });
+    } catch { /* offline is fine */ } finally { signingOut = false; }
     user.value = null;
+    hydratedFor = null;
     device.value = null;
     deviceLimit.value = null;
     await getDb().kv.delete(DEVICE_KV);
@@ -180,8 +226,8 @@ export function useAuth() {
   function dismissNotice() { notice.value = null; }
 
   return {
-    configured, ready, user, signedIn, notice, device, deviceLimit, busy,
+    configured, ready, user, signedIn, notice, device, deviceLimit, busy, hydrating: hydratingState,
     init, accessToken, authHeaders, apiHeaders, registerDevice,
-    signInWithEmail, verifyEmailCode, signInWithOAuth, signOut, onSessionRevoked, dismissNotice,
+    signInWithEmail, verifyEmailCode, signOut, onSessionRevoked, dismissNotice,
   };
 }

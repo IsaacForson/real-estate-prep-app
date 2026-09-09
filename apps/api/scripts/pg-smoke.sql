@@ -149,3 +149,131 @@ select public.fn_transfer_entitlements('11111111-1111-4111-8111-111111111111','2
 select public.fn_user_id_by_email('BOB@example.com') = '22222222-2222-4222-8222-222222222222' as by_email;
 select action, count(*) from public.audit_log group by 1 order by 1;
 select item_id, attempts, correct, p_value, review_flag from public.v_item_pvalues order by 1;
+
+\echo [14] V2: device fingerprint rule — 3 accounts in 30 days flags + exhausts the device
+reset role;
+insert into auth.users (id, email) values ('44444444-4444-4444-8444-444444444444', 'carol@example.com');
+select pg_temp.as_service();
+select account_count = 1 as one_account, exhausted = false as not_exhausted, flagged = false as not_flagged
+from public.fn_touch_device_fingerprint(repeat('d',64), '11111111-1111-4111-8111-111111111111', 'android', 'Pixel 8');
+select account_count = 2 as two_accounts, exhausted = false as still_ok
+from public.fn_touch_device_fingerprint(repeat('d',64), '22222222-2222-4222-8222-222222222222', 'android', null);
+select account_count = 3 as three_accounts, exhausted as exhausted_now, flagged as flagged_now
+from public.fn_touch_device_fingerprint(repeat('d',64), '44444444-4444-4444-8444-444444444444', 'android', null);
+-- same account again: idempotent, no new flag
+select account_count = 3 as still_three, flagged = false as no_dup_flag
+from public.fn_touch_device_fingerprint(repeat('d',64), '44444444-4444-4444-8444-444444444444', 'android', null);
+select count(*) = 1 as one_device_accounts_flag from public.anomaly_flags where kind = 'device_accounts';
+select exhausted as device_exhausted, account_count = 3 as fp_accounts from public.fn_device_free_tier(repeat('d',64), 'FL');
+select count(*) = 3 as device_seen_events from public.events where kind = 'device_seen' and device_hash = repeat('d',64);
+
+\echo [15] V2: free tier usage counted per user and per device, max of both
+select public.fn_bump_free_tier_usage('11111111-1111-4111-8111-111111111111', repeat('e',64), 'FL', 30, 1);
+select questions_used = 30 as dev_q_30, mocks_used = 1 as dev_m_1, exhausted = false as dev_ok from public.fn_device_free_tier(repeat('e',64), 'FL');
+select questions_used >= 30 as user_q_30 from public.fn_user_free_tier('11111111-1111-4111-8111-111111111111', 'FL');
+select questions_used = 0 as bob_fresh from public.fn_user_free_tier('22222222-2222-4222-8222-222222222222', 'FL');
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select count(*) = 1 as sees_own_usage_only from public.free_tier_usage;
+
+\echo [16] V2: coupons — gift grants complete once; percent codes are recorded; bad codes refused
+-- fixture state here: bob holds `complete` (transferred from alice in [13]); alice and carol hold nothing.
+select pg_temp.as_service();
+insert into public.coupons (code, kind, value, product, max_uses, note) values
+  ('GIFT-AAAA-BBBB', 'gift', 0, 'complete', 2, 'smoke'),
+  ('PCT2-AAAA-BBBB', 'percent', 25, 'complete', 1, 'smoke'),
+  ('DEAD-AAAA-BBBB', 'gift', 0, 'complete', 1, 'smoke');
+update public.coupons set disabled_at = now() where code = 'DEAD-AAAA-BBBB';
+select ok as gift_ok, kind = 'gift' as gift_kind from public.fn_redeem_coupon('44444444-4444-4444-8444-444444444444', 'gift aaaa bbbb');
+select public.fn_has_entitlement('44444444-4444-4444-8444-444444444444', 'complete') as carol_now_complete;
+select source = 'coupon' as coupon_source from public.entitlements where user_id = '44444444-4444-4444-8444-444444444444' and product = 'complete' and revoked_at is null limit 1;
+select ok = false as dup_refused, error = 'already_redeemed' as dup_reason from public.fn_redeem_coupon('44444444-4444-4444-8444-444444444444', 'GIFT-AAAA-BBBB');
+select ok = false as entitled_refused, error = 'already_entitled' as entitled_reason from public.fn_redeem_coupon('22222222-2222-4222-8222-222222222222', 'GIFT-AAAA-BBBB');
+select ok as pct_ok, value = 25 as pct_value from public.fn_redeem_coupon('11111111-1111-4111-8111-111111111111', 'PCT2-AAAA-BBBB');
+select ok = false as exhausted_refused, error = 'coupon_exhausted' as exhausted_reason from public.fn_redeem_coupon('44444444-4444-4444-8444-444444444444', 'PCT2-AAAA-BBBB');
+select ok = false as disabled_refused, error = 'coupon_disabled' as disabled_reason from public.fn_redeem_coupon('44444444-4444-4444-8444-444444444444', 'DEAD-AAAA-BBBB');
+select ok = false as unknown_refused, error = 'invalid_code' as unknown_reason from public.fn_redeem_coupon('44444444-4444-4444-8444-444444444444', 'NOPE-NOPE-NOPE');
+select count(*) = 2 as coupon_events from public.events where kind = 'coupon_redeemed';
+select uses = 1 as gift_uses_1 from public.coupons where code = 'GIFT-AAAA-BBBB';
+
+\echo [17] V2: entitlement pause; study_state lww merge; answers resolve item ids; finished mock is frozen
+select public.fn_pause_entitlement('22222222-2222-4222-8222-222222222222', 'complete', now() + interval '1 day') = 1 as paused;
+select public.fn_has_entitlement('22222222-2222-4222-8222-222222222222', 'complete') = false as paused_not_live;
+select public.fn_pause_entitlement('22222222-2222-4222-8222-222222222222', 'complete', null) = 1 as resumed;
+select public.fn_has_entitlement('22222222-2222-4222-8222-222222222222', 'complete') as live_again;
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+select (settings->>'theme') = 'dark' as put_1 from public.fn_study_state_put('11111111-1111-4111-8111-111111111111', '{"theme":"dark","exam_date":"2026-12-01"}', null, false, '2026-09-09T10:00:00Z');
+select (settings->>'theme') = 'dark' and (settings->>'exam_date') = '2026-12-01' and (settings->>'home') = 'FL' as merged
+from public.fn_study_state_put('11111111-1111-4111-8111-111111111111', '{"home":"FL"}', '{"daily":30}', false, '2026-09-09T10:05:00Z');
+select (settings->>'home') = 'FL' as stale_dropped from public.fn_study_state_put('11111111-1111-4111-8111-111111111111', '{"home":"TX"}', null, false, '2026-09-09T09:00:00Z');
+select (plan->>'daily') = '30' as plan_kept from public.study_state where user_id = '11111111-1111-4111-8111-111111111111';
+-- answers: the client writes public ids (it cannot read item_id_aliases); the trigger resolves the real item id
+select pg_temp.as_service();
+select a.public_id as alias_pid from public.item_id_aliases a where a.user_id = '11111111-1111-4111-8111-111111111111' order by a.item_id limit 1 \gset
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+insert into public.answers (user_id, public_id, session_id, chosen, correct, ms)
+values ('11111111-1111-4111-8111-111111111111', :'alias_pid', '33333333-3333-4333-8333-333333333333', 'B', true, 9000);
+select item_id is not null as item_resolved from public.answers where user_id = '11111111-1111-4111-8111-111111111111' and public_id = :'alias_pid';
+insert into public.answers (user_id, public_id, correct) values ('11111111-1111-4111-8111-111111111111', 'not-an-alias', false);
+select count(*) filter (where item_id is null) = 1 as unknown_alias_kept_null from public.answers where user_id = '11111111-1111-4111-8111-111111111111';
+-- widened study_sessions: status derives from finished_at; a finished mock is frozen for the client
+update public.study_sessions set finished_at = now(), score = 0.8, client_updated_at = now() where id = '33333333-3333-4333-8333-333333333333';
+select status = 'finished' as status_derived, ended_at is not null as ended_synced from public.study_sessions where id = '33333333-3333-4333-8333-333333333333';
+update public.study_sessions set score = 1.0, status = 'active', client_updated_at = now() + interval '1 second' where id = '33333333-3333-4333-8333-333333333333';
+select score = 0.8 as score_frozen, status = 'finished' as status_frozen from public.study_sessions where id = '33333333-3333-4333-8333-333333333333';
+-- progress round-trips streak / history
+select pg_temp.as_service();
+select status from public.fn_record_answers('11111111-1111-4111-8111-111111111111', (
+  select jsonb_build_array(jsonb_build_object('public_id', a.public_id, 'attempts', 6, 'correct', 2, 'last_answered_at', now(), 'box', 'red',
+         'due_at', now(), 'client_updated_at', now() + interval '1 minute', 'streak', 0, 'history', '[{"at":1,"correct":false}]'::jsonb))
+  from public.item_id_aliases a where a.user_id = '11111111-1111-4111-8111-111111111111' and a.item_id = 'NAT-PV-I-0001'));
+select streak = 0 and jsonb_array_length(history) = 1 as srs_fields_stored from public.progress where user_id = '11111111-1111-4111-8111-111111111111' and item_id = 'NAT-PV-I-0001';
+select count(*) >= 1 as cards_visible from (select pg_temp.as_user('11111111-1111-4111-8111-111111111111')) x, public.fn_my_srs_cards();
+
+\echo [18] V2: support + reviews rls; admin functions refuse non-admins and answer admins
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+insert into public.support_tickets (id, user_id, subject, category) values ('55555555-5555-4555-8555-555555555555', '11111111-1111-4111-8111-111111111111', 'help', 'billing');
+insert into public.support_messages (ticket_id, author, author_id, body) values ('55555555-5555-4555-8555-555555555555', 'user', '11111111-1111-4111-8111-111111111111', 'hi');
+do $$ begin
+  insert into public.support_messages (ticket_id, author, author_id, body) values ('55555555-5555-4555-8555-555555555555', 'admin', '11111111-1111-4111-8111-111111111111', 'fake admin');
+  raise exception 'user could post as admin';
+exception when insufficient_privilege or check_violation then raise notice 'ok: user cannot post as admin'; end $$;
+insert into public.reviews (user_id, rating, body, jurisdiction, display_name) values ('11111111-1111-4111-8111-111111111111', 5, 'great', 'FL', 'Alice');
+select pg_temp.as_service();
+insert into public.support_messages (ticket_id, author, author_id, body) values ('55555555-5555-4555-8555-555555555555', 'admin', null, 'answer');
+select status = 'answered' as ticket_answered from public.support_tickets where id = '55555555-5555-4555-8555-555555555555';
+update public.reviews set status = 'approved' where user_id = '11111111-1111-4111-8111-111111111111';
+select pg_temp.as_user('11111111-1111-4111-8111-111111111111');
+update public.reviews set body = 'edited' where user_id = '11111111-1111-4111-8111-111111111111';
+select status = 'pending' as edit_resets_to_pending from public.reviews where user_id = '11111111-1111-4111-8111-111111111111';
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select count(*) = 0 as bob_sees_no_tickets from public.support_tickets;
+select count(*) = 0 as bob_sees_no_events_of_alice from public.events where user_id = '11111111-1111-4111-8111-111111111111';
+do $$ begin perform public.fn_admin_kpis('7d'); raise exception 'non-admin ran kpis';
+exception when insufficient_privilege then raise notice 'ok: kpis refused for non-admin'; end $$;
+do $$ begin perform public.fn_admin_user('11111111-1111-4111-8111-111111111111'); raise exception 'non-admin ran fn_admin_user';
+exception when insufficient_privilege then raise notice 'ok: fn_admin_user refused for non-admin'; end $$;
+-- make bob an admin and try again as bob
+select pg_temp.as_service();
+select public.fn_make_admin('bob@example.com') = '22222222-2222-4222-8222-222222222222' as bob_admin;
+select pg_temp.as_user('22222222-2222-4222-8222-222222222222');
+select public.fn_is_admin() as is_admin_now;
+select (k->>'signups')::int = 3 as kpi_signups, jsonb_typeof(k->'series') = 'array' as kpi_series, jsonb_typeof(k->'purchases') = 'array' as kpi_purchases,
+       (k->>'reviews_pending')::int = 1 as kpi_reviews_pending, (k->>'tickets_open')::int = 0 as kpi_tickets_open
+from public.fn_admin_kpis('all') k;
+select (u->'profile'->>'id') = '11111111-1111-4111-8111-111111111111' as admin_user_profile,
+       jsonb_array_length(u->'events') >= 1 as admin_user_events,
+       jsonb_array_length(u->'device_fingerprints') = 1 as admin_user_fps,
+       (u->'study'->>'answers')::int = 2 as admin_user_answers
+from public.fn_admin_user('11111111-1111-4111-8111-111111111111') u;
+select count(*) = 1 as search_by_email, bool_and(email = 'alice@example.com') as search_hit from public.fn_admin_search_users('alice', 10, 0);
+select count(*) = 3 as search_all from public.fn_admin_search_users(null, 10, 0);
+select count(*) = 1 as flagged_devices from public.fn_admin_flagged_devices(10);
+select count(*) >= 1 as admin_reads_all_tickets from public.support_tickets;
+select count(*) >= 1 as admin_reads_all_events from public.events where user_id = '11111111-1111-4111-8111-111111111111';
+select count(*) = 0 as public_reviews_hidden_when_pending from public.v_public_reviews;
+select pg_temp.as_service();
+insert into public.content_versions (version, item_count, banks) values ('2026.09.09-1', 16, '{"national_pearsonvue": 12}');
+set role anon;
+select count(*) = 1 as anon_sees_content_version from public.content_versions;
+select count(*) = 0 as anon_sees_no_alerts from public.content_alerts;
+reset role;

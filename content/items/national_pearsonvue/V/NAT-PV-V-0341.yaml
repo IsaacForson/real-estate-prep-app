@@ -1,0 +1,43 @@
+id: NAT-PV-V-0341
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a complaint alleges a discriminatory housing practice within the jurisdiction of a state
+  or local agency certified by the Secretary under the Fair Housing Act, what must the Secretary do
+  before taking any action on the complaint?
+options:
+  - Refer the complaint to the certified state or local agency
+  - Notify the Attorney General of the alleged violation
+  - Issue a formal charge against the respondent
+  - Dismiss the complaint without further investigation
+key: A
+explanation: The Act mandates that the Secretary refer the complaint to any certified state or local
+  agency before taking any action, unless the agency fails to act within statutory periods. Issuing
+  a charge prematurely violates this referral requirement.
+citation:
+  source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act) — Fair Housing Act — Title VIII of the Civil
+    Rights Act of 1968 § 3610(f)(1)
+  url: null
+  quoted_text: (1) Whenever a complaint alleges a discriminatory housing practice— (A) within the
+    jurisdiction of a State or local public agency; and (B) as to which such agency has been
+    certified by the Secretary under this subsection; the Secretary shall refer such complaint to
+    that certified agency before taking any action with respect to such complaint.
+  secondary: []
+terms:
+  - referral
+  - certified agency
+  - complaint
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

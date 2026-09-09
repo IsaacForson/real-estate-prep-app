@@ -1,0 +1,41 @@
+id: NAT-PV-V-0311
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a client asks a licensee for legal advice about the effect of a contract clause, what is
+  the appropriate action?
+options:
+  - Explaining the general purpose of the clause
+  - Recommending that the client consult an attorney
+  - Drafting a revised clause to address the concern
+  - Providing an interpretation based on common practice
+key: B
+explanation: When a client asks for legal advice about a contract clause, the licensee should not
+  interpret the clause or draft new language; instead, the licensee must recommend that the client
+  consult an attorney. Explaining the general purpose of the clause is permissible as general
+  information, but it does not satisfy the request for legal advice about the clause's effect.
+citation:
+  source: "REP Ref. Brokerage Practice — Reference note: brokerage practice, listings, compensation,
+    supervision, risk, property management (authored, status: draft — needs licensed review) § 1.2"
+  url: null
+  quoted_text: The safe response to a legal question is to recommend an attorney.
+  secondary: []
+terms:
+  - legal advice
+  - attorney
+  - recommendation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-08
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

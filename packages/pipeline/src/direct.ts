@@ -15,6 +15,7 @@ import { loadStatutes, today } from "./statutes.js";
 import { resolveRefs, locateQuote, excerptAround, refMatchesDoc } from "./cite.js";
 import { planBank, cognitiveMixFor, existingItems } from "./plan.js";
 import { DRAFT_SYSTEM, draftUserPrompt, VERIFY_SYSTEM, verifyUserPrompt } from "./prompts.js";
+import { isRepairable, repairItem } from "./repair.js";
 import { DraftBatchSchema, bankMeta, nodeStatuteRefs, nextIdFactory, draftToItem } from "./draft.js";
 import { Verdict, localCheck, reject, jurOf } from "./verify.js";
 import { normalizeDraft } from "./normalize.js";
@@ -132,20 +133,26 @@ export async function verifyDirect(bank: string, opts: { log?: (s: string) => vo
   const jur = jurOf(bank);
   const statutes = loadStatutes(jur);
   const texts = statutes.map((s) => s.text);
-  let localRejected = 0, verified = 0, rejected = 0, failed = 0;
+  let localRejected = 0, verified = 0, rejected = 0, failed = 0, repaired = 0;
   const byProvider: Record<string, number> = {};
   const survivors: Array<{ path: string; item: Item; excerpt: string; docCitation: string }> = [];
   for (const path of drafts) {
     const parsed = Item.safeParse(readYaml(path));
     if (!parsed.success) { log(`${path}: schema invalid — ${parsed.error.issues[0]?.message}`); failed++; continue; }
-    const item = normalizeDraft(parsed.data, statutes);
-    const lc = localCheck(item, texts);
+    let item = normalizeDraft(parsed.data, statutes);
+    let lc = localCheck(item, texts);
+    if (!lc.ok && isRepairable(lc.reasons)) {
+      try {
+        const r = await repairItem(router, item, lc.reasons);
+        if (r.changed) { item = r.item; lc = localCheck(item, texts); repaired++; log(`  ${item.id}: ${r.note}`); }
+      } catch (e) { log(`  repair failed for ${item.id}: ${String(e).slice(0, 120)}`); }
+    }
     if (!lc.ok) { reject(bank, item, lc.reasons, path); localRejected++; continue; }
     const hit = locateQuote(statutes, item.citation.quoted_text)!;
     if (!refMatchesDoc(item.citation.source, hit.doc.citation)) { reject(bank, item, [`citation.source "${item.citation.source}" does not correspond to the document containing the quote (${hit.doc.citation})`], path); localRejected++; continue; }
     survivors.push({ path, item, excerpt: `### ${hit.doc.citation} — ${hit.doc.title} (excerpt)\n\n${excerptAround(hit.doc.text, hit.index, 3500)}`, docCitation: hit.doc.citation });
   }
-  log(`3a: ${localRejected} rejected locally, ${survivors.length} to verifier`);
+  log(`3a: ${repaired} repaired, ${localRejected} rejected locally, ${survivors.length} to verifier`);
   const results = await mapLimit(survivors, DIRECT.concurrency, async (s) => {
     const { statuteBlock, taskBlock } = verifyUserPrompt(s.item.citation.source, s.excerpt, {
       stem: s.item.stem, options: s.item.options, key: s.item.key, explanation: s.item.explanation, citation: s.item.citation, cognitive_level: s.item.cognitive_level,

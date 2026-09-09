@@ -20,6 +20,10 @@ export const THRESHOLDS = {
   minForDistribution: 20,
   /** 3-gram shingle Jaccard at or above this is a near-duplicate. */
   nearDupJaccard: 0.6,
+  /** Within one blueprint node: 2-gram Jaccard at or above this is a near-duplicate. */
+  sameNodeDupJaccard: 0.45,
+  /** Within one node, identical keyed-answer text plus a stem this similar = the same rule asked twice. */
+  sameKeyDupJaccard: 0.25,
 } as const;
 
 const ABSOLUTES = ["always", "never", "must never", "cannot ever", "under no circumstances", "in all cases", "without exception"];
@@ -102,14 +106,21 @@ export function ruleMathHasWork(item: Item): Finding[] {
   return [];
 }
 
-const META_STEM_RE = /\b(according to|per|under|in) the (reference|supplied text|passage|text above|statute above|excerpt)\b/i;
-
-const META_ANY_RE = /\b(the (reference|supplied text|passage|text above|statute above|excerpt|governing text)|the text (lists|states|says|provides|defines|notes|explains|describes|directs|requires|instructs|warns|tells|specifies|indicates)|as (stated|noted|explained) (in|by) the (reference|text|passage))\b/i;
+// "the reference / the text" and also internal note numbering ("under §7.2", "as outlined in section 5.5",
+// "the licensee's duties section", "the guideline"). Real statutes carry 3+ digit or lettered section numbers
+// (§ 475.25(1)(b), 12 U.S.C. 2607, 61J2-14.010), so a bare 1–2 digit dotted number is an internal note reference.
+const INTERNAL_SECTION_RE = /(?:§|\bsection|\bsec\.)\s?\d{1,2}\.\d{1,2}(?![\d.(\-])/i;
+const META_LEADIN = "(according to|per|under|in|as (?:outlined|described|stated|noted|explained|set out|listed) in|based on|from)";
+const META_STEM_RE = new RegExp(`\\b${META_LEADIN} the (reference|supplied text|passage|text above|statute above|excerpt|guideline(?:s)?|fundamentals|notes?|outline|module|lesson|(?:[a-z']+ ){0,3}section)\\b`, "i");
+const META_ANY_RE = new RegExp(`\\b(the (reference|supplied text|passage|text above|statute above|excerpt|governing text|guideline(?:s)?|fundamentals)|the (text|notes?|outline|section|guideline) (lists|states|says|provides|defines|notes|explains|describes|directs|requires|instructs|warns|tells|specifies|indicates)|as (stated|noted|explained|outlined|described) (in|by) the (reference|text|passage|notes?|section|guideline(?:s)?))\\b`, "i");
 
 export function ruleNoMetaReference(item: Item): Finding[] {
   const out: Finding[] = [];
-  if ([item.stem, ...item.options].some((t) => META_STEM_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option refers to 'the reference/supplied text' — the candidate never sees it"));
-  if (META_ANY_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation refers to 'the reference/text' — state the rule directly and cite the section"));
+  const stemLike = [item.stem, ...item.options];
+  if (stemLike.some((t) => META_STEM_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option refers to 'the reference/supplied text/section' — the candidate never sees it"));
+  else if (stemLike.some((t) => INTERNAL_SECTION_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option cites an internal note section number (e.g. §7.2) — name the statute or rule instead"));
+  if (META_ANY_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation refers to 'the reference/text/section' — state the rule directly and cite the section"));
+  else if (INTERNAL_SECTION_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation cites an internal note section number (e.g. §7.2) — cite the statute or rule"));
   return out;
 }
 
@@ -238,7 +249,59 @@ export function ruleNearDuplicateStems(items: Item[]): Finding[] {
   return out;
 }
 
-export const AGGREGATE_RULES = [ruleUniqueIds, ruleLongestIsKeyShare, ruleKeyPositionDistribution, ruleNearDuplicateStems];
+/**
+ * Two items in the same blueprint node that ask the same rule (one in NOT form, or with a reworded stem)
+ * slip under the bank-wide 3-gram threshold. Within a node we use 2-grams at a lower threshold, and we
+ * also treat "same keyed answer text + similar stem" as a duplicate.
+ */
+export function ruleSameNodeDuplicates(items: Item[]): Finding[] {
+  const out: Finding[] = [];
+  const byNode = new Map<string, Item[]>();
+  for (const it of items) {
+    const k = `${it.bank}|${it.blueprint_node}`;
+    if (!byNode.has(k)) byNode.set(k, []);
+    byNode.get(k)!.push(it);
+  }
+  for (const list of byNode.values()) {
+    const sh = list.map((it) => shingles(it.stem, 2));
+    const keys = list.map((it) => normalize(it.options[keyIndex(it.key)]!));
+    for (let i = 0; i < list.length; i++) {
+      for (let j = i + 1; j < list.length; j++) {
+        const s = jaccard(sh[i]!, sh[j]!);
+        if (s >= THRESHOLDS.sameNodeDupJaccard)
+          out.push(f("near-duplicate-stem", "error", list[i]!.id, `stem is ${(s * 100).toFixed(0)}% similar (2-grams) to ${list[j]!.id} in the same node`));
+        else if (keys[i] === keys[j] && s >= THRESHOLDS.sameKeyDupJaccard)
+          out.push(f("near-duplicate-item", "error", list[i]!.id, `same keyed answer as ${list[j]!.id} with a ${(s * 100).toFixed(0)}% similar stem — same rule asked twice`));
+      }
+    }
+  }
+  return out;
+}
+
+/** Math items built from the same set of figures are the same problem in different words. */
+export function ruleDuplicateFigures(items: Item[]): Finding[] {
+  const out: Finding[] = [];
+  const byBank = new Map<string, Array<{ id: string; sig: string }>>();
+  for (const it of items) {
+    if (!it.math) continue;
+    const nums = (it.stem.replace(/,/g, "").match(/\d+(?:\.\d+)?/g) ?? []).map(Number).filter((n) => n !== 0);
+    if (nums.length < 3) continue;
+    const sig = [...nums].sort((a, b) => a - b).join("|");
+    if (!byBank.has(it.bank)) byBank.set(it.bank, []);
+    byBank.get(it.bank)!.push({ id: it.id, sig });
+  }
+  for (const list of byBank.values()) {
+    const seen = new Map<string, string>();
+    for (const x of list) {
+      const prev = seen.get(x.sig);
+      if (prev) out.push(f("duplicate-figures", "error", x.id, `uses exactly the same figures as ${prev} — the same problem in different words`));
+      else seen.set(x.sig, x.id);
+    }
+  }
+  return out;
+}
+
+export const AGGREGATE_RULES = [ruleUniqueIds, ruleLongestIsKeyShare, ruleKeyPositionDistribution, ruleNearDuplicateStems, ruleSameNodeDuplicates, ruleDuplicateFigures];
 
 export function lintItems(items: Item[]): Finding[] {
   return [...items.flatMap(lintItem), ...AGGREGATE_RULES.flatMap((r) => r(items))];

@@ -14,7 +14,8 @@ export class HttpError extends Error {
 
 const CORS_HEADERS: Record<string, string> = {
   "access-control-allow-origin": "*",
-  "access-control-allow-headers": "authorization, x-client-info, apikey, content-type, x-device-id, x-session-id",
+  "access-control-allow-headers":
+    "authorization, x-client-info, apikey, content-type, x-device-id, x-session-id, x-device-hash",
   "access-control-allow-methods": "POST, OPTIONS",
 };
 

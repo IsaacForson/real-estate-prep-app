@@ -1,0 +1,40 @@
+id: NAT-PV-IV-0249
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "After signing a purchase agreement, the parties agree to include a clause specifying who will
+  pay for repairs. This addition is:"
+options:
+  - It is an addendum because it was prepared before the contract was signed
+  - It is an amendment because it modifies the contract after execution
+  - It is an addendum because it adds new terms without changing existing ones
+  - It is an amendment because it requires a new consideration to be valid
+key: B
+explanation: An amendment modifies a contract after it has been formed, whereas an addendum is added
+  at the time of formation. Since the clause is added after signing, it is an amendment. The
+  distractor labeling it an addendum is wrong because addenda are only used at formation, not after
+  execution.
+citation:
+  source: REP Ref. Contracts § 13.1
+  url: null
+  quoted_text: "*Addendum vs. amendment*: addendum at formation; amendment after."
+  secondary: []
+terms:
+  - addendum
+  - amendment
+  - formation
+  - execution
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

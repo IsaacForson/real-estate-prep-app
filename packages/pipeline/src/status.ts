@@ -28,7 +28,7 @@ export interface BankStatus {
   phase: "not started" | "mapped" | "blueprinted" | "grounded" | "drafting" | "verified" | "mocks ready" | "complete";
 }
 
-const STATUSES: Item["status"][] = ["draft", "verified", "qa_approved", "published", "retired"];
+const STATUSES: Item["status"][] = ["draft", "verified", "qa_approved", "published", "needs_review", "retired"];
 
 export function computeStatus(): BankStatus[] {
   const { states } = loadStates(CONFIG.contentDir);
@@ -74,7 +74,7 @@ export function computeStatus(): BankStatus[] {
 }
 
 export function renderStatus(rows: BankStatus[]): string {
-  const h = ["bank", "vendor→national", "map", "bp", "target", "auth (docs/KB)", "refs resolved", "draft", "verified", "qa", "published", "mocks", "phase"];
+  const h = ["bank", "vendor→national", "map", "bp", "target", "auth (docs/KB)", "refs resolved", "draft", "verified", "qa", "published", "review", "mocks", "phase"];
   const lines = [h.join(" | "), h.map(() => "---").join(" | ")];
   for (const r of rows) {
     const nat = r.bank.startsWith("state_") && r.vendor ? (nationalBankFor(r.vendor as any) ?? "state-own") : "";
@@ -82,7 +82,7 @@ export function renderStatus(rows: BankStatus[]): string {
       `${r.label} (${r.bank})`, r.vendor ? `${r.vendor}${nat ? " → " + nat.replace("national_", "") : ""}` : "?", r.map, r.blueprint ? "✓" : "—",
       r.target || "—", r.authorities ? `${r.authorities} / ${Math.round(r.authority_chars / 1000)}` : "—",
       r.refs[1] ? `${r.refs[0]}/${r.refs[1]} (${Math.round((100 * r.refs[0]) / r.refs[1])}%)` : "—",
-      r.items.draft, r.items.verified, r.items.qa_approved, r.items.published, r.mocks, r.phase,
+      r.items.draft, r.items.verified, r.items.qa_approved, r.items.published, r.items.needs_review, r.mocks, r.phase,
     ].join(" | "));
   }
   const tally = rows.slice(2).reduce<Record<string, number>>((a, r) => ((a[r.phase] = (a[r.phase] ?? 0) + 1), a), {});

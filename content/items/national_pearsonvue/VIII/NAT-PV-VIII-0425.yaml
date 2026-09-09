@@ -1,0 +1,46 @@
+id: NAT-PV-VIII-0425
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.F
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investor purchases a parcel of land for $180,000. The land is expected to appreciate at 5%
+  per year, compounded annually. What will be the value of the land after 4 years?
+options:
+  - $216,000.00
+  - $208,372.50
+  - $218,791.13
+  - $227,245.85
+key: C
+explanation: Compound appreciation applies each year's rate to the prior year's value, so the
+  calculation is $180,000 × 1.05 four times, or $218,791.13. The $216,000.00 figure uses simple
+  appreciation, applying 5% only to the original value for 4 years.
+citation:
+  source: REP Ref. Real Estate Math § 6.3
+  url: null
+  quoted_text: "Compound (each year's percentage applies to the prior year's value): value × (1 +
+    rate) repeated once per year."
+  secondary: []
+math:
+  worked_solution: "Growth factor per year = 1 + 0.05 = 1.05. Year 1: $180,000 × 1.05 = $189,000. Year
+    2: $189,000 × 1.05 = $198,450. Year 3: $198,450 × 1.05 = $208,372.50. Year 4: $208,372.50 × 1.05
+    = $218,791.125, rounded to $218,791.13."
+  formulas:
+    - Future value = present value × (1 + rate)^years
+  onscreen_calculator_only: false
+terms:
+  - appreciation
+  - compound interest
+  - future value
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -38,7 +38,7 @@ const fixturesPath = resolve(here, "../fixtures/items.dev.yaml");
 const fixtures: unknown[] = existsSync(fixturesPath) ? YAML.parse(readFileSync(fixturesPath, "utf8")) : [];
 const fixtureItems = fixtures.map((f) => Item.parse(f));
 
-const live = items.map((x) => x.value).filter((i) => i.status !== "draft" && i.status !== "retired");
+const live = items.map((x) => x.value).filter((i) => i.status !== "draft" && i.status !== "retired" && i.status !== "needs_review");
 const allItems = [...live, ...fixtureItems];
 
 const statusFor = (bank: string) => {

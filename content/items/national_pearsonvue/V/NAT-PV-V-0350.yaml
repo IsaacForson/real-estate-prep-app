@@ -1,0 +1,42 @@
+id: NAT-PV-V-0350
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate school offers its licensing exam preparation course only in a second-floor
+  classroom with no elevator. The school also provides the same course via live webinar with
+  captioning. Is the school in compliance with ADA Title III regarding examinations and courses?
+options:
+  - Yes, but only if the webinar is also offered in a physically accessible location
+  - No, because the course must be offered in a physically accessible location
+  - Yes, because providing an alternative accessible arrangement satisfies the requirement
+  - No, because alternative arrangements are not permitted for examination courses
+key: C
+explanation: The statute requires that examinations or courses be offered in an accessible manner or
+  that alternative accessible arrangements be provided. Providing a live webinar with captioning
+  constitutes an alternative accessible arrangement, thus meeting the requirement.
+citation:
+  source: 42 U.S.C. §§ 12181–12189 (ADA Title III) — Americans with Disabilities Act — public
+    accommodations §12189
+  url: null
+  quoted_text: Any person that offers examinations or courses related to applications, licensing,
+    certification, or credentialing for secondary or postsecondary education, professional, or trade
+    purposes shall offer such examinations or courses in a place and manner accessible to persons
+    with disabilities or offer alternative accessible arrangements for such individuals.
+  secondary: []
+terms:
+  - examinations
+  - accessible arrangements
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

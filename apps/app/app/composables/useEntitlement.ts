@@ -6,7 +6,7 @@
 import { getDb } from "~~/lib/study/db";
 
 export interface EntitlementState { complete: boolean; passGuarantee: boolean; fetchedAt: number | null; userId: string | null }
-export interface Profile { id: string; home_jurisdiction: string | null; exam_date: string | null; sharing_notice_ack: boolean }
+export interface Profile { id: string; home_jurisdiction: string | null; exam_date: string | null; sharing_notice_ack: boolean; is_admin?: boolean }
 
 const empty = (): EntitlementState => ({ complete: false, passGuarantee: false, fetchedAt: null, userId: null });
 let cacheLoadedFor: string | null = null;
@@ -22,6 +22,8 @@ export function useEntitlement() {
   const isComplete = computed(() => forCurrentUser.value && ent.value.complete);
   const hasGuarantee = computed(() => forCurrentUser.value && ent.value.passGuarantee);
   const isFree = computed(() => !isComplete.value);
+  /** Founder / internal QA accounts (profiles.is_admin): may run test purchases while already entitled. */
+  const isAdmin = computed(() => !!profile.value?.is_admin);
 
   /** kv cache first (offline), then the network. Safe to call repeatedly. */
   async function load(): Promise<void> {
@@ -52,7 +54,7 @@ export function useEntitlement() {
         ent.value = next;
         await getDb().kv.put({ key: `entitlement:${uid}`, value: { ...next } });
       }
-      const p = await supabase.from("profiles").select("id, home_jurisdiction, exam_date, sharing_notice_ack").eq("id", uid).maybeSingle();
+      const p = await supabase.from("profiles").select("id, home_jurisdiction, exam_date, sharing_notice_ack, is_admin").eq("id", uid).maybeSingle();
       if (!p.error && p.data) profile.value = p.data as Profile;
     } finally {
       loading.value = false;
@@ -87,5 +89,5 @@ export function useEntitlement() {
     if (!error && profile.value) profile.value = { ...profile.value, exam_date: date };
   }
 
-  return { entitlement: ent, profile, loading, isComplete, isFree, hasGuarantee, load, refresh, ackSharingNotice, setHomeJurisdiction, setExamDate };
+  return { entitlement: ent, profile, loading, isComplete, isFree, hasGuarantee, isAdmin, load, refresh, ackSharingNotice, setHomeJurisdiction, setExamDate };
 }

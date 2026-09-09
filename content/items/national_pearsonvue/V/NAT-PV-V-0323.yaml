@@ -1,0 +1,46 @@
+id: NAT-PV-V-0323
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker pays a salesperson a fixed hourly wage for office work in addition to commission on
+  sales. Under the federal statutory safe harbor for licensed real estate agents, can the broker
+  treat the salesperson as an independent contractor for federal tax purposes?
+options:
+  - The broker may not treat the salesperson as an independent contractor unless the worker also
+    receives reimbursed expenses
+  - The broker may treat the salesperson as an independent contractor because the worker holds a
+    license
+  - The broker may treat the salesperson as an independent contractor if the worker signs a written
+    independent contractor agreement
+  - The broker may not treat the salesperson as an independent contractor because compensation must
+    be tied to sales, not hours worked
+key: D
+explanation: The safe harbor requires that substantially all compensation be directly related to
+  sales or other output, not to hours worked. Paying an hourly wage violates this condition, so the
+  broker cannot rely on the safe harbor. The other options either misstate the conditions or add
+  irrelevant factors.
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: substantially all of the individual's compensation for real estate services is directly
+    related to sales or other output (commissions), rather than to the number of hours worked
+  secondary: []
+terms:
+  - independent contractor
+  - safe harbor
+  - compensation
+  - hourly wage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -1,0 +1,41 @@
+id: NAT-PV-V-0338
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which entities are exempt from the provisions of ADA Title III under section 12187?
+options:
+  - The provisions do not apply to private clubs and state or local government agencies.
+  - The provisions do not apply to private clubs and religious organizations.
+  - The provisions do not apply to private clubs and general commercial retail establishments.
+  - The provisions do not apply to private clubs and federally chartered nonprofit organizations.
+key: B
+explanation: Section 12187 explicitly exempts private clubs and religious organizations (including
+  places of worship) from the subchapter’s requirements. The other options list entity types that
+  are not mentioned as exempt in the statute.
+citation:
+  source: 42 U.S.C. §§ 12181–12189 (ADA Title III) — Americans with Disabilities Act — public
+    accommodations §12187
+  url: null
+  quoted_text: The provisions of this subchapter shall not apply to private clubs or establishments
+    exempted from coverage under title II of the Civil Rights Act of 1964 (42 U.S.C. 2000–a(e)) [42
+    U.S.C. 2000a et seq.] or to religious organizations or entities controlled by religious
+    organizations, including places of worship.
+  secondary: []
+terms:
+  - private clubs
+  - religious organizations
+  - exemptions
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

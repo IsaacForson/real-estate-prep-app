@@ -1,0 +1,39 @@
+id: NAT-PV-VII-0401
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home and takes title 'subject to' the existing mortgage. According to the
+  alienation clause provisions, which statement is correct regarding liability for the mortgage
+  debt?
+options:
+  - The buyer is personally liable and the seller is released from liability
+  - Both the buyer and seller are jointly liable for the mortgage debt
+  - The buyer is not personally liable and the seller remains liable for the debt
+  - Neither the buyer nor the seller is liable; the loan is automatically discharged
+key: C
+explanation: Under the alienation clause, a buyer who takes title subject to the loan makes payments
+  but is not personally liable on the note, leaving the seller liable unless released. The
+  distractor claiming the buyer is personally liable confuses subject-to with loan assumption.
+citation:
+  source: REP Ref. Financing & Closing § 2.2
+  url: null
+  quoted_text: A buyer who takes title 'subject to' the loan makes the payments but is not personally
+    liable on the note.
+  secondary: []
+terms:
+  - alienation clause
+  - subject to
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

@@ -37,6 +37,20 @@ export function isTransient(e: unknown): boolean {
   return (e instanceof ApiError && e.status >= 500) || (e instanceof TypeError);
 }
 
+/** V2 §1: every function call carries the install's device hash (see lib/state/device.ts). */
+export const DEVICE_HASH_HEADER = "x-device-hash";
+let deviceHashProvider: (() => string | null | undefined) | null = null;
+/** Registered once by useDevice(); tests may register their own. */
+export function setDeviceHashProvider(fn: (() => string | null | undefined) | null): void {
+  deviceHashProvider = fn;
+}
+/** Add `x-device-hash` when a hash is known and the caller did not set one. */
+export function withDeviceHash(headers: Record<string, string>): Record<string, string> {
+  const hash = deviceHashProvider?.();
+  if (!hash || headers[DEVICE_HASH_HEADER]) return headers;
+  return { ...headers, [DEVICE_HASH_HEADER]: hash };
+}
+
 export function functionsBase(supabaseUrl: string): string {
   return `${supabaseUrl.replace(/\/+$/, "")}/functions/v1`;
 }
@@ -50,7 +64,7 @@ export async function callFunction<T>(
 ): Promise<T> {
   const res = await fetchImpl(`${base}/${name}`, {
     method: "POST",
-    headers: { "content-type": "application/json", ...headers },
+    headers: { "content-type": "application/json", ...withDeviceHash(headers) },
     body: JSON.stringify(body),
   });
   let parsed: unknown = null;

@@ -1,0 +1,42 @@
+id: NAT-PV-III-0227
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A vacant parcel is physically suitable for a factory, but local zoning prohibits industrial
+  use. According to the highest and best use tests, which test fails first?
+options:
+  - Legally permissible
+  - Physically possible
+  - Financially feasible
+  - Maximally productive
+key: A
+explanation: "The highest and best use analysis applies tests in order: first legally permissible,
+  then physically possible, financially feasible, and maximally productive. Because zoning prohibits
+  industrial use, the legally permissible test fails first, preventing further evaluation."
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.1 Highest and best
+    use"
+  url: null
+  quoted_text: "The four tests are applied in that order: (1) legally permissible under zoning,
+    private restrictions, and environmental law; (2) physically possible given size, shape, soil,
+    topography, and access; (3) financially feasible, producing a positive return; (4) maximally
+    productive, yielding the highest land value among feasible uses."
+  secondary: []
+terms:
+  - highest and best use
+  - legally permissible
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

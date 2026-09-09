@@ -1,0 +1,40 @@
+id: NAT-PV-V-0370
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property manager notices a strong gas smell in a residential building. According to risk
+  management guidelines, how should the manager classify this situation?
+options:
+  - As corrective (routine) maintenance that can be scheduled for the next business day.
+  - As emergency maintenance that must be addressed immediately due to danger.
+  - As preventive maintenance requiring scheduled servicing.
+  - As cosmetic or make-ready maintenance to be performed between tenants.
+key: B
+explanation: Emergency maintenance includes repairs that cannot wait due to danger or ongoing
+  damage, exemplified by a gas smell. The distractor labeling the situation as preventive
+  maintenance is incorrect because preventive maintenance is scheduled servicing to avoid
+  breakdowns, not an immediate hazard.
+citation:
+  source: REP Ref. Brokerage Practice § 12.7
+  url: null
+  quoted_text: "Emergency maintenance: repairs that cannot wait because of danger or ongoing damage —
+    a burst pipe, no heat in winter, a gas smell."
+  secondary: []
+terms:
+  - emergency maintenance
+  - hazard
+  - gas smell
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

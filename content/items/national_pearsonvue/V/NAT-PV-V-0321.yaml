@@ -1,0 +1,41 @@
+id: NAT-PV-V-0321
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under trust account rules, when does the commission portion of a closing disbursement become
+  the broker's money?
+options:
+  - The commission is considered earned once the closing statement is prepared
+  - The commission is earned and disbursed to the broker under the closing statement
+  - The commission becomes the broker's money when the earnest money is released
+  - The commission is deposited into the trust account and remains there until closing
+key: B
+explanation: The commission portion of a closing disbursement becomes the broker's money only when
+  it is earned and disbursed to the broker under the closing statement. Advancing the commission
+  before closing constitutes conversion of trust funds. The other options describe timing that does
+  not satisfy the rule.
+citation:
+  source: REP Ref. Brokerage Practice § 10.2
+  url: null
+  quoted_text: The commission portion of a closing disbursement becomes the broker's money only when
+    it is earned and disbursed to the broker under the closing statement
+  secondary: []
+terms:
+  - trust account
+  - commission
+  - disbursement
+  - conversion
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

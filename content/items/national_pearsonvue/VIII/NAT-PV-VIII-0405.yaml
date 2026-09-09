@@ -1,0 +1,45 @@
+id: NAT-PV-VIII-0405
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: An L-shaped lot consists of a 100-foot by 150-foot rectangle attached to a 60-foot by 80-foot
+  rectangle. What is the total area of the lot in square feet? (Round to the nearest whole number.)
+options:
+  - 18,800 square feet
+  - 20,800 square feet
+  - 19,000 square feet
+  - 19,800 square feet
+key: D
+explanation: "The area of each rectangle is length × width: 100 ft × 150 ft = 15,000 sq ft and 60 ft
+  × 80 ft = 4,800 sq ft. Summing gives 15,000 + 4,800 = 19,800 sq ft. The distractor 18,800 square
+  feet results from omitting the 60 × 80 rectangle or miscalculating its area."
+citation:
+  source: "REP Ref. Real Estate Math — Reference note: exam math methods with worked examples
+    (authored, status: draft — needs licensed review) § 2.3"
+  url: null
+  quoted_text: An irregular lot is split into rectangles and triangles whose areas are summed.
+  secondary: []
+math:
+  worked_solution: 100 × 150 = 15,000 sq ft; 60 × 80 = 4,800 sq ft; total = 15,000 + 4,800 = 19,800 sq ft
+  formulas:
+    - Area of rectangle = length × width
+    - Total area = sum of individual areas
+  onscreen_calculator_only: false
+terms:
+  - rectangle
+  - area
+  - square foot
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-08
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

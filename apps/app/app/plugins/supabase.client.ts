@@ -5,14 +5,17 @@
  */
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-export default defineNuxtPlugin(() => {
-  const config = useRuntimeConfig();
-  const url = config.public.supabaseUrl;
-  const key = config.public.supabaseAnonKey;
-  const supabase: SupabaseClient | null = url && key
-    ? createClient(url, key, {
-        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "pkce" },
-      })
-    : null;
-  return { provide: { supabase } };
+export default defineNuxtPlugin({
+  name: "supabase",
+  setup() {
+    const config = useRuntimeConfig();
+    const url = config.public.supabaseUrl;
+    const key = config.public.supabaseAnonKey;
+    const supabase: SupabaseClient | null = url && key
+      ? createClient(url, key, {
+          auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "pkce" },
+        })
+      : null;
+    return { provide: { supabase } };
+  },
 });

@@ -19,7 +19,18 @@ export interface StatuteDoc {
   fetched_on: string;
   text: string;
   slug: string;
+  /** sha256 of the whitespace-normalised text as last fetched from `url` (watch-sources baseline). */
+  source_sha256?: string | null;
+  /** sha256 of the whitespace-normalised cached `text` (integrity of what items were verified against). */
+  text_sha256?: string | null;
+  /** Last day watch-sources compared the live source to `source_sha256`. */
+  checked_on?: string | null;
+  /** Day the live source was last seen to differ; the fetched text is in `_versions/<slug>/<day>.md`. */
+  source_changed_on?: string | null;
 }
+
+/** Optional front-matter keys written only when set (kept in this order). */
+const OPTIONAL_META = ["source_sha256", "text_sha256", "checked_on", "source_changed_on"] as const;
 
 export function slugify(citation: string): string {
   return citation.toLowerCase().replace(/§/g, "s").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -30,8 +41,13 @@ export function statuteDir(jur: string) {
 }
 
 export function saveStatute(doc: Omit<StatuteDoc, "slug">): string {
-  const slug = slugify(doc.citation);
-  const path = join(statuteDir(doc.jurisdiction), `${slug}.md`);
+  const path = join(statuteDir(doc.jurisdiction), `${slugify(doc.citation)}.md`);
+  writeText(path, renderStatute(doc));
+  return path;
+}
+
+/** Front-matter + text exactly as saveStatute writes it (used to rewrite a doc in place at a known path). */
+export function renderStatute(doc: Omit<StatuteDoc, "slug">): string {
   const fm = [
     "---",
     `jurisdiction: ${JSON.stringify(doc.jurisdiction)}`,
@@ -39,11 +55,11 @@ export function saveStatute(doc: Omit<StatuteDoc, "slug">): string {
     `title: ${JSON.stringify(doc.title)}`,
     `url: ${doc.url ? JSON.stringify(doc.url) : "null"}`,
     `fetched_on: ${JSON.stringify(doc.fetched_on)}`,
+    ...OPTIONAL_META.filter((k) => doc[k]).map((k) => `${k}: ${JSON.stringify(doc[k])}`),
     "---",
     "",
   ].join("\n");
-  writeText(path, fm + doc.text.trim() + "\n");
-  return path;
+  return fm + doc.text.trim() + "\n";
 }
 
 export function loadStatutes(jur: string): StatuteDoc[] {
@@ -66,7 +82,13 @@ export function parseStatuteFile(path: string): StatuteDoc {
     jurisdiction: meta.jurisdiction!, citation: meta.citation!, title: meta.title!,
     url: (meta.url as unknown as string | null) ?? null, fetched_on: String(meta.fetched_on),
     text: m[2]!, slug: path.split("/").pop()!.replace(/\.md$/, ""),
+    ...Object.fromEntries(OPTIONAL_META.filter((k) => meta[k]).map((k) => [k, String(meta[k])])),
   };
+}
+
+/** Path of a cached doc; `version` selects a later fetch stored by watch-sources. */
+export function statutePath(jur: string, slug: string, version?: string): string {
+  return version ? join(statuteDir(jur), "_versions", slug, `${version}.md`) : join(statuteDir(jur), `${slug}.md`);
 }
 
 /** Very small HTML → text. Legislature sites are mostly server-rendered; PDFs need manual ingest. */
@@ -104,22 +126,43 @@ export function cleanUscText(text: string): string {
   return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
-export async function fetchStatute(jur: string, citation: string, url: string, title = citation): Promise<string> {
-  const res = await fetch(url, {
-    headers: { "user-agent": "Mozilla/5.0 (compatible; rep-pipeline/0.1; statute ingest)", accept: "text/html,application/xhtml+xml" },
-    signal: AbortSignal.timeout(Number(process.env.INGEST_TIMEOUT_MS ?? 45_000)),
-    redirect: "follow",
-  });
-  if (!res.ok) throw new Error(`fetch ${url} → ${res.status}`);
+export const FETCH_HEADERS = { "user-agent": "Mozilla/5.0 (compatible; rep-pipeline/0.1; statute ingest)", accept: "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8" } as const;
+
+export class SourceFetchError extends Error {
+  constructor(message: string, readonly kind: "http" | "unsupported" | "js_shell" | "network") { super(message); }
+}
+
+/**
+ * The one fetch strategy for authority text (ingest and watch-sources share it): HTML → text,
+ * PDF → text, govinfo U.S. Code → notes stripped. Throws SourceFetchError with a kind so callers
+ * can tell a blocked/JS-rendered page from a real outage.
+ */
+export async function fetchSourceText(url: string, opts: { timeoutMs?: number; fetchImpl?: typeof fetch } = {}): Promise<string> {
+  const doFetch = opts.fetchImpl ?? fetch;
+  let res: Response;
+  try {
+    res = await doFetch(url, { headers: FETCH_HEADERS, signal: AbortSignal.timeout(opts.timeoutMs ?? Number(process.env.INGEST_TIMEOUT_MS ?? 45_000)), redirect: "follow" });
+  } catch (e) {
+    // undici hides the interesting part (ECONNREFUSED, CERT_HAS_EXPIRED, ENOTFOUND…) in `cause`
+    const cause = (e as { cause?: { code?: string; message?: string } }).cause;
+    const why = [e instanceof Error ? e.message : String(e), cause?.code ?? cause?.message].filter(Boolean).join(" — ");
+    throw new SourceFetchError(`fetch ${url} failed: ${why}`, "network");
+  }
+  if (!res.ok) throw new SourceFetchError(`fetch ${url} → ${res.status}`, "http");
   const ct = res.headers.get("content-type") ?? "";
-  const text = ct.includes("pdf") || /\.pdf($|\?)/i.test(url) && !ct.includes("html")
-    ? await pdfToText(new Uint8Array(await res.arrayBuffer()))
-    : htmlToText(await res.text());
+  if (/zip|octet-stream/.test(ct) || /\.zip($|\?)/i.test(url)) throw new SourceFetchError(`${url} is an archive (${ct || "zip"}); text was extracted manually — cannot compare automatically`, "unsupported");
+  const isPdf = ct.includes("pdf") || (/\.pdf($|\?)/i.test(url) && !ct.includes("html"));
+  const text = isPdf ? await pdfToText(new Uint8Array(await res.arrayBuffer())) : htmlToText(await res.text());
   const cleaned = /govinfo\.gov\/content\/pkg\/USCODE/.test(url) ? cleanUscText(text) : text;
   const minChars = Number(process.env.INGEST_MIN_CHARS ?? 1200);
   if (text.length < minChars || /skip to main content/i.test(text.slice(0, 400)) && text.length < 20_000)
-    throw new Error(`only ${text.length} chars of text from ${url}; page is likely JS-rendered or a navigation shell. Find a static/PDF version and use 'ingest --file'`);
-  return saveStatute({ jurisdiction: jur, citation, title, url, fetched_on: today(), text: cleaned });
+    throw new SourceFetchError(`only ${text.length} chars of text from ${url}; page is likely JS-rendered or a navigation shell. Find a static/PDF version and use 'ingest --file'`, "js_shell");
+  return cleaned;
+}
+
+export async function fetchStatute(jur: string, citation: string, url: string, title = citation): Promise<string> {
+  const text = await fetchSourceText(url);
+  return saveStatute({ jurisdiction: jur, citation, title, url, fetched_on: today(), text });
 }
 
 /** PDF → text via unpdf (pdf.js). Page breaks become blank lines. */

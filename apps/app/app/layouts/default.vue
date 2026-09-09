@@ -1,23 +1,9 @@
 <script setup lang="ts">
-const settings = useSettings();
-const auth = useAuth();
-const themes = ["system", "light", "dark"] as const;
-function cycleTheme() { settings.set("theme", themes[(themes.indexOf(settings.theme) + 1) % themes.length]!); }
+/**
+ * Thin alias. WP-B's layout plugin points `default` at `mobile` on Capacitor and `web` otherwise;
+ * this file exists so pages without an explicit layout still render before that plugin lands.
+ */
 </script>
 <template>
-  <div>
-    <nav class="top">
-      <NuxtLink to="/"><strong>Exam Prep</strong></NuxtLink>
-      <NuxtLink to="/study">Study</NuxtLink>
-      <NuxtLink to="/study/review">Missed</NuxtLink>
-      <NuxtLink to="/methodology">Method</NuxtLink>
-      <NuxtLink to="/pricing">Pricing</NuxtLink>
-      <NuxtLink v-if="auth.configured" to="/account">{{ auth.signedIn.value ? 'Account' : 'Sign in' }}</NuxtLink>
-      <span class="spacer" />
-      <span v-if="settings.jurisdiction" class="pill">{{ settings.jurisdiction }}</span>
-      <button @click="cycleTheme" :title="`Theme: ${settings.theme}`">{{ settings.theme === 'dark' ? '🌙' : settings.theme === 'light' ? '☀️' : '🌗' }}</button>
-    </nav>
-    <AuthBanner />
-    <main class="container"><slot /></main>
-  </div>
+  <NuxtLayout name="web"><slot /></NuxtLayout>
 </template>

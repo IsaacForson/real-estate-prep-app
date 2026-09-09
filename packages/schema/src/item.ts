@@ -7,7 +7,8 @@ export type OptionLetter = (typeof OPTION_LETTERS)[number];
 export const CognitiveLevel = z.enum(["knowledge", "application", "analysis"]);
 export const LicenseLevel = z.enum(["salesperson", "broker", "both"]);
 export const Vendor = z.enum(["pearsonvue", "psi", "state", "other", "any"]);
-export const ItemStatus = z.enum(["draft", "verified", "qa_approved", "published", "retired"]);
+/** `needs_review`: set by `pipeline watch-sources` when the cited authority changed under a live item; excluded from delivery until a reviewer re-approves. */
+export const ItemStatus = z.enum(["draft", "verified", "qa_approved", "published", "needs_review", "retired"]);
 
 /**
  * Item IDs: `<JUR>-<ROOT>-<NNNN>`
@@ -70,6 +71,8 @@ export const Item = z
     verified_on: z.iso.date().nullable().default(null),
     /** Set when a licensed reviewer signs off (pipeline step 5). */
     qa_approved_on: z.iso.date().nullable().default(null),
+    /** Why watch-sources pulled the item (`status: needs_review`); cleared when re-approved. */
+    review_reason: z.string().nullable().optional(),
     version: z.number().int().min(1),
     provenance: Provenance.optional(),
   })
@@ -102,10 +105,22 @@ export const DraftItem = z.object({
     source: z.string().min(6),
     quoted_text: z.string().min(20),
   }),
-  math: z
-    .object({ worked_solution: z.string().min(20), formulas: z.array(z.string()) })
-    .nullable(),
-  terms: z.array(z.string()),
+  // Models frequently return the working as an array of steps, formulas as one string, or an empty
+  // object instead of null; coerce those shapes before validating (the strict Item schema still applies).
+  math: z.preprocess(
+    (v) => {
+      if (v === null || v === undefined || v === "" || v === "null") return null;
+      if (typeof v !== "object") return v;
+      const o = v as Record<string, unknown>;
+      if (Object.keys(o).length === 0) return null;
+      const ws = Array.isArray(o.worked_solution) ? o.worked_solution.map(String).join("\n") : o.worked_solution;
+      const f = typeof o.formulas === "string" ? [o.formulas] : o.formulas ?? [];
+      if ((ws === undefined || ws === null || String(ws).trim() === "") && (!Array.isArray(f) || f.length === 0)) return null;
+      return { worked_solution: ws, formulas: f };
+    },
+    z.object({ worked_solution: z.string().min(20), formulas: z.array(z.string()).default([]) }).nullable(),
+  ),
+  terms: z.preprocess((v) => (v === null || v === undefined ? [] : typeof v === "string" ? [v] : v), z.array(z.string())),
 });
 export type DraftItem = z.infer<typeof DraftItem>;
 

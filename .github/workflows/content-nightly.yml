@@ -1,0 +1,92 @@
+# Nightly content freshness (docs/V2_PLAN.md §1 "Content freshness", docs/CONTENT_PIPELINE.md §7–8).
+#   1. re-fetch every cached authority URL and flag items whose citations changed
+#   2. refresh docs/STATUS.md and the Help Center KB
+#   3. commit any changed content/docs back to main
+#   4. push approved items to Supabase (content bucket + item_index + content_versions + content_alerts)
+# Required repository secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY (values are never printed).
+name: content-nightly
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC daily
+  workflow_dispatch:
+    inputs:
+      skip_publish:
+        description: "Run the source watch and commit, but skip publish --remote"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-nightly
+  cancel-in-progress: false
+
+jobs:
+  watch-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+
+      # The publish manifest (sha256 per uploaded object) lives in the git-ignored .pipeline dir;
+      # restore the newest one so unchanged items are skipped instead of re-uploaded every night.
+      - name: Restore remote publish manifest
+        uses: actions/cache/restore@v4
+        with:
+          path: .pipeline/publish/remote-manifest.json
+          key: remote-manifest-${{ github.run_id }}
+          restore-keys: remote-manifest-
+
+      - name: Watch statute sources
+        env:
+          WATCH_TIMEOUT_MS: "60000"
+        run: pnpm pipeline watch-sources --concurrency 6
+
+      - name: Refresh status table and help KB
+        run: |
+          pnpm pipeline status --md docs/STATUS.md
+          pnpm --filter @rep/app help:kb
+
+      - name: Commit content and docs changes
+        run: |
+          git config user.name "content-nightly[bot]"
+          git config user.email "content-nightly@users.noreply.github.com"
+          git add content docs apps/app/public/content/help.json
+          if git diff --cached --quiet; then
+            echo "no content/docs changes"
+          else
+            git commit -m "content: nightly source watch"
+            git push origin HEAD:main
+          fi
+
+      - name: Upload watch report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: watch-report-${{ github.run_id }}
+          path: .pipeline/watch/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Publish approved items to Supabase
+        if: ${{ !inputs.skip_publish }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: pnpm pipeline publish --remote
+
+      - name: Save remote publish manifest
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .pipeline/publish/remote-manifest.json
+          key: remote-manifest-${{ github.run_id }}
