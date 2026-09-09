@@ -25,30 +25,23 @@ const growth = computed(() => [
   { name: "Purchases", values: (k.value?.series ?? []).map((s) => s.purchases), color: "ok" as const },
 ]);
 const answers = computed(() => [{ name: "Answers", values: (k.value?.series ?? []).map((s) => s.answers), color: "accent" as const }]);
+const rangeOptions = computed(() => ranges.map((r) => ({ value: r.v, label: r.label })));
 </script>
 <template>
   <div class="space-y-5">
-    <div class="flex flex-wrap items-end justify-between gap-3">
-      <div>
-        <h1 class="m-0 text-xl font-semibold">Overview</h1>
-        <p class="m-0 text-sm text-muted">Signups, activity and revenue across web, Android and iOS.</p>
-      </div>
-      <div class="inline-flex rounded-lg border border-line bg-surface p-0.5" role="tablist" aria-label="Time range">
-        <button
-          v-for="r in ranges"
-          :key="r.v"
-          type="button"
-          role="tab"
-          :aria-selected="range === r.v"
-          class="!rounded-md !border-0 !px-3 !py-1 text-sm"
-          :class="range === r.v ? '!bg-accent !text-accent-ink' : '!bg-transparent text-muted hover:text-ink'"
-          @click="range = r.v"
-        >{{ r.label }}</button>
-      </div>
-    </div>
+    <AdminPageHead title="Overview" subtitle="Signups, activity and revenue across web, Android and iOS.">
+      <AdminSegmented
+        :model-value="range"
+        :options="rangeOptions"
+        aria-label="Time range"
+        @update:model-value="(v) => (range = v as AdminRange)"
+      />
+    </AdminPageHead>
 
     <AdminState :loading="q.loading.value" :error="q.error.value" :empty="!k" @retry="q.reload">
       <template v-if="k">
+        <!-- Tiles that link somewhere are the ones with an action behind them: revenue, refunds,
+             tickets, reviews. The rest are read-only context. -->
         <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
           <AdminKpiTile label="Signups" :value="adminFmt.int(k.signups)" :hint="`in ${ranges.find((r) => r.v === range)?.label.toLowerCase()}`" />
           <AdminKpiTile label="DAU / WAU / MAU" :value="`${adminFmt.int(k.dau)} / ${adminFmt.int(k.wau)} / ${adminFmt.int(k.mau)}`" hint="active learners" />
@@ -64,7 +57,7 @@ const answers = computed(() => [{ name: "Answers", values: (k.value?.series ?? [
         </div>
 
         <div class="grid gap-4 xl:grid-cols-2">
-          <AdminCard title="Signups & purchases" subtitle="per day">
+          <AdminCard title="Signups &amp; purchases" subtitle="per day">
             <AdminChart :labels="labels" :series="growth" type="line" title="Signups and purchases per day" />
           </AdminCard>
           <AdminCard title="Answers" subtitle="questions answered per day">

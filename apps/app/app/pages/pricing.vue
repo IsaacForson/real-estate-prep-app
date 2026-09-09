@@ -58,52 +58,83 @@ const completeFeatures = [
 ];
 </script>
 <template>
-  <div class="max-w-5xl mx-auto safe-px py-6 md:py-14 grid gap-8 anim-fade-up">
-    <header class="text-center grid gap-3 max-w-2xl mx-auto">
-      <p class="eyebrow text-accent">Pricing</p>
-      <h1 class="text-3xl md:text-5xl display">One payment. Everything. Forever.</h1>
-      <p class="text-ink-2 md:text-lg">The study window for this exam is four to six weeks. A subscription in a four-week product is a trap, and the reviews of every other app say so. We don't run one.</p>
+  <div class="safe-px anim-fade-up mx-auto grid max-w-5xl gap-9 py-8 md:py-16">
+    <header class="mx-auto grid max-w-2xl gap-3.5 text-center">
+      <p class="eyebrow">Pricing</p>
+      <h1 class="display text-[34px] md:text-[52px]">One payment. Everything. Forever.</h1>
+      <p class="text-[15px] leading-relaxed text-ink-2 md:text-[17px]">
+        The study window for this exam is four to six weeks. A subscription in a four-week product is
+        a trap, and the reviews of every other app say so. We don't run one.
+      </p>
     </header>
 
     <AppCard v-if="ready && owned" tone="accent">
-      <div class="flex items-center gap-3">
-        <span class="grid place-items-center size-10 rounded-xl bg-accent text-accent-ink"><Icon name="check" :size="22" :stroke-width="2.6" /></span>
-        <p class="text-sm md:text-base">You have <strong>Complete</strong>. Every state, both national banks, all mocks and audio are unlocked on this account<template v-if="ownedGuarantee"> with the pass guarantee</template>.</p>
+      <div class="flex items-center gap-3.5">
+        <span class="grid size-10 shrink-0 place-items-center rounded-card bg-accent text-accent-ink">
+          <Icon name="check" :size="21" :stroke-width="2.4" />
+        </span>
+        <p class="text-[14px] leading-relaxed md:text-[15px]">
+          You have <strong class="font-semibold">Complete</strong>. Every state, both national banks,
+          all mocks and audio are unlocked on this account<template v-if="ownedGuarantee"> with the pass guarantee</template>.
+        </p>
       </div>
     </AppCard>
 
+    <!-- Complete is the offer, so it is the only card with a shadow and a ribbon. The other two are
+         deliberately quiet: comparison, not competition. -->
     <div class="grid gap-4 md:grid-cols-3 md:items-start">
       <AppCard padding="lg">
         <p class="eyebrow">Free</p>
-        <p class="mt-2 text-4xl display">$0</p>
-        <ul class="mt-5 grid gap-2.5 text-sm text-ink-2">
-          <li class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />40 questions in one state, with full explanations and statute citations</li>
-          <li class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />One short mock</li>
-          <li class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />No card, no trial that converts behind your back</li>
+        <p class="display mt-2.5 text-[38px]">$0</p>
+        <ul class="mt-5 grid gap-3 text-[13.5px] leading-relaxed text-ink-2">
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />40 questions in one state, with full explanations and statute citations</li>
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />One short mock</li>
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />No card, no trial that converts behind your back</li>
         </ul>
         <AppButton v-if="!auth.signedIn.value" to="/signin" variant="secondary" size="lg" block class="mt-6">Start free</AppButton>
       </AppCard>
 
-      <AppCard padding="lg" class="ring-2 ring-accent md:-mt-3 relative">
-        <span class="absolute -top-3 left-5 rounded-pill bg-accent text-accent-ink text-xs font-semibold px-2.5 py-1">Everything</span>
-        <p class="eyebrow">Complete</p>
-        <p class="mt-2 flex items-baseline gap-2 flex-wrap">
-          <span class="text-4xl display">{{ completePrice }}</span>
-          <span class="text-sm text-muted">one time<template v-if="isFounding"> · founding price, regular $59</template><template v-else-if="!completePkg"> · founding price $39 until 25 states are complete</template></span>
+      <!-- The ribbon sits inside the card's flow, not absolutely above it: AppCard clips overflow so
+           it can carry `padding="none"` list rows. -->
+      <AppCard padding="lg" class="border-line-strong shadow-float md:-mt-3">
+        <div class="flex items-center justify-between gap-2">
+          <p class="eyebrow">Complete</p>
+          <span class="rounded-pill bg-action px-2.5 py-1 text-[10.5px] font-semibold uppercase tracking-[0.06em] text-action-ink">
+            Everything
+          </span>
+        </div>
+        <p class="mt-2.5 flex flex-wrap items-baseline gap-2">
+          <span class="display text-[38px]">{{ completePrice }}</span>
+          <span class="text-[13px] text-muted">
+            one time<template v-if="isFounding"> · founding price, regular $59</template><template v-else-if="!completePkg"> · founding price $39 until 25 states are complete</template>
+          </span>
         </p>
-        <ul class="mt-5 grid gap-2.5 text-sm text-ink-2">
-          <li v-for="f in completeFeatures" :key="f" class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />{{ f }}</li>
+        <ul class="mt-5 grid gap-3 text-[13.5px] leading-relaxed text-ink-2">
+          <li v-for="f in completeFeatures" :key="f" class="flex gap-2.5">
+            <Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />{{ f }}
+          </li>
         </ul>
         <div class="mt-6 grid gap-2">
           <template v-if="native">
             <AppButton v-if="!ready" variant="primary" size="lg" block loading>Checking your account…</AppButton>
-            <AppButton v-else-if="!owned" variant="primary" size="lg" block :loading="purchases.busy.value" :disabled="!completePkg" @click="buy(completePkg, 'complete')">{{ completePkg ? `Get Complete · ${completePrice}` : 'Loading store…' }}</AppButton>
-            <p v-else-if="justBought" class="text-sm text-ok font-medium text-center">Unlocked. Syncing to your account…</p>
+            <AppButton
+              v-else-if="!owned"
+              variant="primary"
+              size="lg"
+              block
+              :loading="purchases.busy.value"
+              :disabled="!completePkg"
+              @click="buy(completePkg, 'complete')"
+            >{{ completePkg ? `Get Complete · ${completePrice}` : 'Loading store…' }}</AppButton>
+            <p v-else-if="justBought" class="text-center text-[13.5px] font-medium text-ok">Unlocked. Syncing to your account…</p>
           </template>
           <template v-else>
             <AppButton v-if="!auth.signedIn.value" to="/signin" variant="primary" size="lg" block>Start free, then upgrade</AppButton>
-            <div v-else-if="ready && !owned" class="rounded-xl bg-surface-2 p-3 text-sm text-ink-2">
-              <p><strong class="text-ink">Web checkout is opening soon.</strong> Today, buy in the Android app: sign in there with the same email and Complete unlocks here too. Have a gift code? Redeem it from <NuxtLink to="/app/account" class="text-accent font-medium">Account</NuxtLink>.</p>
+            <div v-else-if="ready && !owned" class="rounded-card border border-line bg-paper p-3.5 text-[13px] leading-relaxed text-ink-2">
+              <strong class="font-semibold text-ink">Web checkout is opening soon.</strong>
+              Today, buy in the Android app: sign in there with the same email and Complete unlocks
+              here too. Have a gift code? Redeem it from
+              <NuxtLink to="/app/account" class="font-medium text-accent hover:underline hover:underline-offset-4">Account</NuxtLink>.
             </div>
           </template>
         </div>
@@ -111,29 +142,55 @@ const completeFeatures = [
 
       <AppCard padding="lg">
         <p class="eyebrow">Pass guarantee</p>
-        <p class="mt-2 flex items-baseline gap-2"><span class="text-4xl display">+{{ guaranteePrice }}</span><span class="text-sm text-muted">add-on</span></p>
-        <ul class="mt-5 grid gap-2.5 text-sm text-ink-2">
-          <li class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />Full refund of both payments on proof of a failed attempt within 90 days of purchase</li>
-          <li class="flex gap-2"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />Requires five completed full-length mocks — the thing that predicts passing</li>
+        <p class="mt-2.5 flex items-baseline gap-2">
+          <span class="display text-[38px]">+{{ guaranteePrice }}</span>
+          <span class="text-[13px] text-muted">add-on</span>
+        </p>
+        <ul class="mt-5 grid gap-3 text-[13.5px] leading-relaxed text-ink-2">
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />Full refund of both payments on proof of a failed attempt within 90 days of purchase</li>
+          <li class="flex gap-2.5"><Icon name="check" :size="16" class="mt-0.5 shrink-0 text-ok" />Requires five completed full-length mocks — the thing that predicts passing</li>
         </ul>
         <div class="mt-6">
           <template v-if="native && ready">
-            <AppButton v-if="!ownedGuarantee" variant="secondary" size="lg" block :loading="purchases.busy.value" :disabled="!guaranteePkg || !owned" @click="buy(guaranteePkg, 'guarantee')">{{ owned ? 'Add the guarantee' : 'Requires Complete' }}</AppButton>
-            <p v-else class="text-sm text-ok font-medium text-center">Guarantee active.</p>
+            <AppButton
+              v-if="!ownedGuarantee"
+              variant="secondary"
+              size="lg"
+              block
+              :loading="purchases.busy.value"
+              :disabled="!guaranteePkg || !owned"
+              @click="buy(guaranteePkg, 'guarantee')"
+            >{{ owned ? 'Add the guarantee' : 'Requires Complete' }}</AppButton>
+            <p v-else class="text-center text-[13.5px] font-medium text-ok">Guarantee active.</p>
           </template>
-          <p v-else-if="!native" class="text-xs text-muted">Available with Complete in the app; on the web when checkout opens.</p>
+          <p v-else-if="!native" class="text-[12px] leading-relaxed text-muted">
+            Available with Complete in the app; on the web when checkout opens.
+          </p>
         </div>
       </AppCard>
     </div>
 
-    <div class="grid gap-3 text-sm text-muted max-w-2xl mx-auto text-center">
+    <div class="mx-auto grid max-w-2xl gap-3.5 text-center text-[13px] leading-relaxed text-muted">
       <template v-if="native">
-        <p v-if="notice" class="rounded-xl bg-warn-soft text-ink px-4 py-3">{{ notice }} <NuxtLink v-if="!auth.signedIn.value" to="/signin" class="font-medium text-accent">Sign in</NuxtLink></p>
-        <p v-if="purchases.error.value" class="text-danger">{{ purchases.error.value }}</p>
-        <p>Bought before? <button type="button" class="tap px-1 text-accent font-medium" :disabled="purchases.busy.value" @click="restore">Restore purchases</button></p>
+        <p v-if="notice" class="rounded-card border border-warn/25 bg-warn-soft px-4 py-3 text-left text-ink-2">
+          {{ notice }}
+          <NuxtLink v-if="!auth.signedIn.value" to="/signin" class="font-medium text-accent hover:underline hover:underline-offset-4">Sign in</NuxtLink>
+        </p>
+        <p v-if="purchases.error.value" class="text-danger" role="alert">{{ purchases.error.value }}</p>
+        <p>
+          Bought before?
+          <button type="button" class="font-medium text-accent hover:underline hover:underline-offset-4 disabled:text-muted" :disabled="purchases.busy.value" @click="restore">Restore purchases</button>
+        </p>
       </template>
-      <p>Purchases are not shareable across accounts: readiness and the plan are computed from one person's answers, so a shared account degrades for everyone using it.</p>
-      <p><NuxtLink to="/legal/refunds" class="underline underline-offset-2">Refunds & guarantee terms</NuxtLink> · <NuxtLink to="/legal/disclaimer" class="underline underline-offset-2">Trademark disclaimer</NuxtLink></p>
+      <p>
+        Purchases are not shareable across accounts: readiness and the plan are computed from one
+        person's answers, so a shared account degrades for everyone using it.
+      </p>
+      <p>
+        <NuxtLink to="/legal/refunds" class="underline underline-offset-4 hover:text-ink-2">Refunds &amp; guarantee terms</NuxtLink>
+        ·
+        <NuxtLink to="/legal/disclaimer" class="underline underline-offset-4 hover:text-ink-2">Trademark disclaimer</NuxtLink>
+      </p>
     </div>
   </div>
 </template>

@@ -15,22 +15,48 @@ function status(code: string) {
 }
 </script>
 <template>
-  <div class="max-w-6xl mx-auto safe-px py-8 md:py-14 grid gap-6 anim-fade-up">
-    <header class="grid gap-2 max-w-2xl">
-      <p class="eyebrow text-accent">States</p>
-      <h1 class="text-3xl md:text-4xl display">Every state's exam, from the official bulletin.</h1>
-      <p class="text-ink-2">Vendor, question counts, time limit, pass score and the law you'll be tested on — sourced from the state commission and the vendor's candidate bulletin, never a blog. Content status is the real count.</p>
+  <div class="safe-px anim-fade-up mx-auto grid max-w-6xl gap-7 py-8 md:py-16">
+    <header class="grid max-w-2xl gap-3">
+      <p class="eyebrow">States</p>
+      <h1 class="display text-[32px] md:text-[42px]">Every state's exam, from the official bulletin.</h1>
+      <p class="text-[15px] leading-relaxed text-ink-2">
+        Vendor, question counts, time limit, pass score and the law you'll be tested on — sourced from
+        the state commission and the vendor's candidate bulletin, never a blog. Content status is the
+        real count.
+      </p>
     </header>
-    <AppInput v-model="q" type="search" placeholder="Find your state" inputmode="search" autocomplete="off" aria-label="Find your state" class="max-w-md" />
-    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+    <AppInput
+      v-model="q"
+      type="search"
+      placeholder="Find your state"
+      inputmode="search"
+      autocomplete="off"
+      aria-label="Find your state"
+      class="max-w-md"
+    />
+
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       <li v-for="c in list" :key="c">
-        <NuxtLink :to="`/states/${c}`" class="flex items-center gap-3 rounded-card bg-surface border border-line p-4 hover:border-line-strong hover:bg-surface-2 transition-colors">
-          <span class="grid place-items-center size-10 rounded-lg bg-accent-soft text-accent text-sm font-semibold tabular">{{ c }}</span>
-          <span class="flex-1 min-w-0"><span class="block font-semibold truncate">{{ JURISDICTIONS[c] }}</span><span class="block text-xs text-muted">{{ manifest?.states[c]?.vendor ?? '—' }}<template v-if="manifest?.states[c]?.salesperson_exam.total_items"> · {{ manifest?.states[c]?.salesperson_exam.total_items }} questions</template></span></span>
+        <NuxtLink
+          :to="`/states/${c}`"
+          class="flex items-center gap-3.5 rounded-card border border-line bg-surface p-4 transition-colors hover:border-line-strong hover:bg-surface-2"
+        >
+          <span class="tabular grid size-10 shrink-0 place-items-center rounded-lg bg-accent-soft text-[13px] font-semibold text-accent">{{ c }}</span>
+          <span class="min-w-0 flex-1">
+            <span class="block truncate text-[15px] font-semibold tracking-[-0.012em]">{{ JURISDICTIONS[c] }}</span>
+            <span class="block text-[11.5px] text-muted">
+              {{ manifest?.states[c]?.vendor ?? '—' }}<template v-if="manifest?.states[c]?.salesperson_exam.total_items"> · {{ manifest?.states[c]?.salesperson_exam.total_items }} questions</template>
+            </span>
+          </span>
           <Badge :tone="status(c).tone">{{ status(c).label }}</Badge>
         </NuxtLink>
       </li>
     </ul>
-    <p class="text-sm text-muted">A state marked "in production" is included in Complete and its questions arrive as they pass verification. Nothing here is padded to look finished.</p>
+
+    <p class="max-w-2xl text-[13px] leading-relaxed text-muted">
+      A state marked "in production" is included in Complete and its questions arrive as they pass
+      verification. Nothing here is padded to look finished.
+    </p>
   </div>
 </template>

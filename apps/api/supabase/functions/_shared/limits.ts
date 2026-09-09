@@ -3,9 +3,8 @@
  * The SQL side mirrors the device numbers in migrations/0004_devices_sessions.sql — keep in sync.
  */
 
-// SPEC §5.3 device registry
-export const MAX_ACTIVE_DEVICES = 3;
-export const DEVICE_COOLDOWN_DAYS = 7;
+// SPEC §5.3 device registry: one active device, taken over by the newest sign-in (0015).
+export const MAX_ACTIVE_DEVICES = 1;
 
 // SPEC §5.4 session batches: 50–200 items, signed, short ttl
 export const BATCH_MIN = 50;

@@ -16,17 +16,23 @@ insert into auth.users (id, email) values
 select count(*) = 2 as ok from public.profiles;
 
 select pg_temp.as_service();
-\echo [2] SPEC 5.3: three devices register, the fourth raises P0003 device_limit
-select device_id is not null as ok, created from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('a',64), 'ios', 'phone');
-select created from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('b',64), 'android', 'tablet');
-select created from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('c',64), 'web', 'laptop');
-do $$ begin
-  perform public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('d',64), 'web', 'fourth');
-  raise exception 'expected device_limit';
-exception when sqlstate 'P0003' then raise notice 'device_limit raised as expected'; end $$;
+\echo [2] SPEC 5.3 (0015): one active device; each new sign-in takes the slot over, never refused
+select device_id is not null as ok, created, superseded = 0 as first_supersedes_nothing
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('a',64), 'ios', 'phone');
+select created, superseded = 1 as tablet_kicked_phone
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('b',64), 'android', 'tablet');
+select created, superseded = 1 as laptop_kicked_tablet
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('c',64), 'web', 'laptop');
+select public.fn_active_device_count('11111111-1111-4111-8111-111111111111') = 1 as exactly_one_active;
+-- the case 0015 exists to fix: a fourth device just works instead of raising P0003
+select device_id is not null as fourth_device_ok
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('d',64), 'web', 'fourth');
+-- and the phone can come straight back, with no cooldown in the way
+select superseded = 1 as phone_reclaims_slot
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('a',64), 'ios', 'phone');
 
 \echo [3] SPEC 5.3: single live session
-select count(*) filter (where revoked_at is null) = 1 as one_live, count(*) = 3 as three_total
+select count(*) filter (where revoked_at is null) = 1 as one_live, count(*) = 5 as five_total
 from public.sessions where user_id = '11111111-1111-4111-8111-111111111111';
 select p.current_session_id = s.id as profile_points_at_live
 from public.profiles p join public.sessions s on s.user_id = p.id and s.revoked_at is null
@@ -35,12 +41,15 @@ select public.fn_session_is_valid('11111111-1111-4111-8111-111111111111', p.curr
 from public.profiles p join public.sessions s on s.id = p.current_session_id
 where p.id = '11111111-1111-4111-8111-111111111111';
 
-\echo [4] SPEC 5.3: removal -> 7-day cooldown, slot still counted
-select public.fn_remove_device('11111111-1111-4111-8111-111111111111', d.id) > now() + interval '6 days' as cooldown_7d
-from public.devices d where d.fingerprint_hash = repeat('c',64);
-select public.fn_active_device_count('11111111-1111-4111-8111-111111111111') as still_three;
-select public.fn_can_register_device('11111111-1111-4111-8111-111111111111', repeat('d',64)) as new_fp_false;
-select public.fn_can_register_device('11111111-1111-4111-8111-111111111111', repeat('a',64)) as same_fp_true;
+\echo [4] SPEC 5.3 (0015): removal frees the slot immediately, no cooldown
+select public.fn_remove_device('11111111-1111-4111-8111-111111111111', d.id) <= now() as removed_now
+from public.devices d where d.fingerprint_hash = repeat('a',64);
+select public.fn_active_device_count('11111111-1111-4111-8111-111111111111') = 0 as slot_free;
+select count(*) = 0 as no_cooldowns_anywhere from public.devices where cooldown_until is not null;
+select public.fn_can_register_device('11111111-1111-4111-8111-111111111111', repeat('d',64)) as always_true;
+-- the removed device signs back in with no wait
+select device_id is not null as removed_device_returns
+from public.fn_register_device('11111111-1111-4111-8111-111111111111', repeat('a',64), 'ios', 'phone');
 
 \echo [5] entitlement grant is idempotent; revoke; re-grant after reversal
 select public.fn_grant_entitlement('11111111-1111-4111-8111-111111111111','complete','paddle','txn_1','ctm_1','{}') is not null as granted;

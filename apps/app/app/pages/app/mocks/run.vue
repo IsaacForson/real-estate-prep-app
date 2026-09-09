@@ -4,6 +4,10 @@ import { passItemsFrom } from "~~/lib/study/readiness";
 /**
  * Mock runner (immersive). Timer, question palette with flags, finish confirmation, results.
  * Flags are a per-device convenience kept in localStorage keyed by session id.
+ *
+ * The palette is the navigation for a 100-question timed exam, so it does more than jump: it
+ * summarises what is left and offers the two jumps people actually want under time pressure —
+ * the first unanswered question and the first flagged one.
  */
 useHead({ title: "Mock" });
 const study = useStudy();
@@ -48,50 +52,126 @@ async function finish(auto = false) {
   await study.finish();
   try { if (flagKey.value) localStorage.removeItem(flagKey.value); } catch {}
 }
+
+const firstUnanswered = computed(() => session.value?.itemIds.findIndex((id) => !session.value!.answers[id]) ?? -1);
+const firstFlagged = computed(() => session.value?.itemIds.findIndex((id) => flags.value.has(id)) ?? -1);
+
 const results = computed(() => (session.value?.portions ?? []).map((p) => {
   const c = p.itemIds.filter((id) => session.value!.answers[id]?.correct).length;
   const need = passItemsFrom(p.passScore, p.itemIds.length);
   return { ...p, correct: c, need, pass: need == null ? null : c >= need, pct: p.itemIds.length ? Math.round((100 * c) / p.itemIds.length) : 0 };
 }));
 const overall = computed(() => { const a = Object.values(session.value?.answers ?? {}); const c = a.filter((x) => x.correct).length; return { c, n: total.value, pct: total.value ? Math.round((100 * c) / total.value) : 0 }; });
+
+/** Answered = accent fill, unanswered = bordered surface, flagged = amber edge, current = ring. */
 function cell(id: string, i: number) {
   const a = session.value?.answers[id];
-  return [flags.value.has(id) ? "ring-2 ring-warn" : "", i === position.value ? "outline outline-2 outline-accent outline-offset-1" : "", a ? "bg-accent text-accent-ink" : "bg-surface-2 text-ink-2"].join(" ");
+  return [
+    a ? "bg-accent text-accent-ink border-accent" : "bg-surface text-ink-2 border-line",
+    flags.value.has(id) ? "!border-warn border-2" : "",
+    i === position.value ? "ring-2 ring-ink ring-offset-2 ring-offset-surface" : "",
+  ].join(" ");
 }
 </script>
 <template>
-  <div v-if="session && !finished" class="min-h-dvh flex flex-col">
-    <header class="sticky top-0 z-30 bg-bg/90 backdrop-blur-md safe-pt">
-      <div class="h-14 flex items-center gap-2">
-        <button type="button" class="tap -ml-2 grid place-items-center rounded-full text-ink hover:bg-surface-2" aria-label="Question palette" @click="palette = true"><Icon name="list" :size="22" /></button>
-        <div class="flex-1 min-w-0 text-sm"><span class="font-semibold tabular">{{ position + 1 }}</span><span class="text-muted"> / {{ total }}</span><span class="text-muted text-xs"> · {{ answeredCount }} answered</span></div>
-        <div v-if="remainingMs != null" class="px-2.5 h-9 grid place-items-center rounded-lg tabular font-semibold text-[15px]" :class="lowTime ? 'bg-danger-soft text-danger' : 'bg-surface-2 text-ink'" role="timer" :aria-label="`${clock} remaining`"><span class="inline-flex items-center gap-1.5"><Icon name="clock" :size="16" />{{ clock }}</span></div>
-        <button type="button" class="tap grid place-items-center rounded-full hover:bg-surface-2" :class="item && flags.has(item.id) ? 'text-warn' : 'text-ink'" :aria-pressed="!!item && flags.has(item.id)" aria-label="Flag this question" @click="toggleFlag"><Icon :name="item && flags.has(item.id) ? 'flag-filled' : 'flag'" :size="20" /></button>
+  <div v-if="session && !finished" class="flex min-h-dvh flex-col">
+    <header class="safe-pt sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-xl">
+      <div class="flex h-14 items-center gap-2">
+        <button
+          type="button"
+          class="tap -ml-2.5 grid place-items-center rounded-full text-ink transition-colors hover:bg-surface-2"
+          aria-label="Question palette"
+          @click="palette = true"
+        ><Icon name="grid" :size="20" /></button>
+
+        <div class="min-w-0 flex-1">
+          <p class="tabular text-[13.5px] leading-tight">
+            <span class="font-semibold">{{ position + 1 }}</span><span class="text-muted"> / {{ total }}</span>
+          </p>
+          <p class="tabular text-[11.5px] leading-tight text-muted">{{ answeredCount }} answered</p>
+        </div>
+
+        <div
+          v-if="remainingMs != null"
+          class="tabular grid h-9 place-items-center rounded-lg px-2.5 text-[15px] font-semibold"
+          :class="lowTime ? 'bg-danger-soft text-danger' : 'bg-surface-2 text-ink'"
+          role="timer"
+          :aria-label="`${clock} remaining`"
+        >
+          <span class="inline-flex items-center gap-1.5"><Icon name="clock" :size="15" />{{ clock }}</span>
+        </div>
+
+        <button
+          type="button"
+          class="tap grid place-items-center rounded-full transition-colors hover:bg-surface-2"
+          :class="item && flags.has(item.id) ? 'text-warn' : 'text-ink-2'"
+          :aria-pressed="!!item && flags.has(item.id)"
+          aria-label="Flag this question for another look"
+          @click="toggleFlag"
+        ><Icon :name="item && flags.has(item.id) ? 'flag-filled' : 'flag'" :size="19" /></button>
       </div>
     </header>
 
-    <div class="flex-1 py-3 pb-28">
+    <div class="flex-1 py-3.5 pb-32">
       <QuestionCard v-if="item" :key="item.id" :item="item" :answered="chosen" :reveal="false" :number="position + 1" :total="total" @choose="choose" />
       <Skeleton v-else height="22rem" />
     </div>
 
-    <div class="fixed inset-x-0 bottom-0 z-30 bg-bg/90 backdrop-blur-md border-t border-line safe-pb">
-      <div class="max-w-3xl mx-auto safe-px py-3 flex gap-2">
+    <div class="safe-pb fixed inset-x-0 bottom-0 z-30 border-t border-line bg-bg/92 backdrop-blur-xl">
+      <div class="safe-px mx-auto flex max-w-3xl gap-2 py-3">
         <AppButton variant="secondary" size="lg" icon="arrow-left" aria-label="Previous question" :disabled="position === 0" @click="go(position - 1)" />
         <AppButton v-if="!isLast" variant="primary" size="lg" block icon-right="arrow-right" @click="go(position + 1)">Next</AppButton>
         <AppButton v-else variant="primary" size="lg" block icon="check" @click="confirmFinish = true">Finish exam</AppButton>
-        <AppButton v-if="!isLast" variant="ghost" size="lg" @click="confirmFinish = true">Finish</AppButton>
+        <AppButton v-if="!isLast" variant="ghost" size="lg" class="shrink-0" @click="confirmFinish = true">Finish</AppButton>
       </div>
     </div>
 
-    <AppSheet :open="palette" title="Questions" :description="`${answeredCount} answered · ${total - answeredCount} left · ${flags.size} flagged`" @close="palette = false">
-      <div class="grid grid-cols-6 sm:grid-cols-8 gap-2">
-        <button v-for="(id, i) in session.itemIds" :key="id" type="button" class="h-11 rounded-lg text-sm font-semibold tabular transition-colors" :class="cell(id, i)" :aria-label="`Question ${i + 1}${session.answers[id] ? ', answered' : ''}${flags.has(id) ? ', flagged' : ''}`" @click="go(i)">{{ i + 1 }}</button>
+    <AppSheet :open="palette" title="Questions" @close="palette = false">
+      <div class="grid gap-4">
+        <div class="grid grid-cols-3 gap-2">
+          <StatTile label="Answered" :value="answeredCount" />
+          <StatTile label="Left" :value="total - answeredCount" :tone="total - answeredCount ? 'warn' : 'ok'" />
+          <StatTile label="Flagged" :value="flags.size" :tone="flags.size ? 'warn' : 'default'" />
+        </div>
+
+        <div v-if="firstUnanswered >= 0 || firstFlagged >= 0" class="flex flex-wrap gap-2">
+          <AppButton v-if="firstUnanswered >= 0" variant="secondary" size="sm" icon="arrow-right" @click="go(firstUnanswered)">
+            First unanswered ({{ firstUnanswered + 1 }})
+          </AppButton>
+          <AppButton v-if="firstFlagged >= 0" variant="secondary" size="sm" icon="flag" @click="go(firstFlagged)">
+            First flagged ({{ firstFlagged + 1 }})
+          </AppButton>
+        </div>
+
+        <div class="grid grid-cols-6 gap-2 sm:grid-cols-8">
+          <button
+            v-for="(id, i) in session.itemIds"
+            :key="id"
+            type="button"
+            class="tabular h-11 rounded-lg border text-[13px] font-semibold transition-colors"
+            :class="cell(id, i)"
+            :aria-label="`Question ${i + 1}${session.answers[id] ? ', answered' : ', unanswered'}${flags.has(id) ? ', flagged' : ''}`"
+            :aria-current="i === position ? 'true' : undefined"
+            @click="go(i)"
+          >{{ i + 1 }}</button>
+        </div>
+
+        <div class="flex flex-wrap gap-x-3.5 gap-y-1.5 border-t border-line pt-3.5 text-[12px] text-muted">
+          <span class="inline-flex items-center gap-1.5"><i class="size-3 rounded border border-accent bg-accent" />answered</span>
+          <span class="inline-flex items-center gap-1.5"><i class="size-3 rounded border border-line bg-surface" />unanswered</span>
+          <span class="inline-flex items-center gap-1.5"><i class="size-3 rounded border-2 border-warn" />flagged</span>
+        </div>
+
+        <AppButton variant="secondary" size="lg" block icon="check" @click="palette = false; confirmFinish = true">Submit exam</AppButton>
       </div>
-      <div class="mt-4 flex flex-wrap gap-3 text-xs text-muted"><span class="inline-flex items-center gap-1.5"><i class="size-3 rounded bg-accent" />answered</span><span class="inline-flex items-center gap-1.5"><i class="size-3 rounded bg-surface-2 border border-line" />unanswered</span><span class="inline-flex items-center gap-1.5"><i class="size-3 rounded ring-2 ring-warn" />flagged</span></div>
     </AppSheet>
 
-    <AppSheet :open="confirmFinish" title="Submit the exam?" :description="`${total - answeredCount} unanswered question${total - answeredCount === 1 ? '' : 's'} will count as wrong.`" @close="confirmFinish = false">
+    <AppSheet
+      :open="confirmFinish"
+      title="Submit the exam?"
+      :description="`${total - answeredCount} unanswered question${total - answeredCount === 1 ? '' : 's'} will count as wrong.`"
+      @close="confirmFinish = false"
+    >
       <div class="grid gap-2">
         <AppButton variant="primary" size="lg" block @click="finish()">Submit</AppButton>
         <AppButton variant="ghost" size="lg" block @click="confirmFinish = false">Keep working</AppButton>
@@ -99,28 +179,49 @@ function cell(id: string, i: number) {
     </AppSheet>
   </div>
 
-  <div v-else-if="finished" class="grid gap-4 py-4 anim-fade-up">
-    <div class="text-center grid gap-3 justify-items-center pt-4">
+  <div v-else-if="finished" class="anim-fade-up grid gap-4 py-4">
+    <div class="grid justify-items-center gap-3.5 pt-4 text-center">
       <p class="eyebrow">Mock results</p>
-      <ProgressRing :value="overall.pct" :size="160" :stroke="12">
-        <span class="grid leading-none"><span class="text-4xl font-semibold tabular tracking-tight">{{ overall.pct }}%</span><span class="text-xs text-muted mt-1 tabular">{{ overall.c }} of {{ overall.n }}</span></span>
+      <ProgressRing :value="overall.pct" :size="156" :stroke="11">
+        <span class="grid leading-none">
+          <span class="tabular text-[36px] font-semibold tracking-[-0.032em]">{{ overall.pct }}%</span>
+          <span class="tabular mt-1.5 text-[12px] text-muted">{{ overall.c }} of {{ overall.n }}</span>
+        </span>
       </ProgressRing>
     </div>
+
     <AppCard v-for="r in results" :key="r.portion">
       <div class="flex items-center gap-3">
-        <div class="flex-1 min-w-0"><p class="font-semibold capitalize">{{ r.portion }} portion</p><p class="text-sm text-ink-2 tabular">{{ r.correct }} / {{ r.itemIds.length }} correct<template v-if="r.need != null"> · {{ r.need }} needed</template></p></div>
+        <div class="min-w-0 flex-1">
+          <p class="text-[15px] font-semibold capitalize leading-tight">{{ r.portion }} portion</p>
+          <p class="tabular mt-0.5 text-[13px] text-ink-2">
+            {{ r.correct }} / {{ r.itemIds.length }} correct<template v-if="r.need != null"> · {{ r.need }} needed</template>
+          </p>
+        </div>
         <Badge v-if="r.pass != null" :tone="r.pass ? 'ok' : 'danger'" size="md">{{ r.pass ? 'Pass' : 'Below' }}</Badge>
       </div>
-      <div class="mt-3 h-2 rounded-pill bg-surface-3 overflow-hidden relative">
-        <span class="block h-full" :class="r.pass === false ? 'bg-danger' : 'bg-ok'" :style="{ width: r.pct + '%' }" />
-        <span v-if="r.need != null && r.itemIds.length" class="absolute top-0 h-full w-0.5 bg-ink" :style="{ left: (100 * r.need) / r.itemIds.length + '%' }" aria-hidden="true" />
+
+      <!-- The tick is the pass mark, so a bar that stops short of it reads as "below" without the label. -->
+      <div class="relative mt-3.5 h-2 overflow-hidden rounded-pill bg-surface-3">
+        <span class="block h-full rounded-pill" :class="r.pass === false ? 'bg-danger' : 'bg-ok'" :style="{ width: r.pct + '%' }" />
+        <span
+          v-if="r.need != null && r.itemIds.length"
+          class="absolute top-0 h-full w-0.5 bg-ink"
+          :style="{ left: (100 * r.need) / r.itemIds.length + '%' }"
+          aria-hidden="true"
+        />
       </div>
     </AppCard>
-    <p class="text-sm text-muted text-center">Every missed question is now in Review with its citation, and your boxes are updated.</p>
+
+    <p class="text-center text-[13px] leading-relaxed text-muted">
+      Every missed question is now in Review with its citation, and your boxes are updated.
+    </p>
+
     <div class="grid gap-2">
       <AppButton to="/app/review" variant="primary" size="lg" block>Review missed questions</AppButton>
       <AppButton to="/app/mocks" variant="secondary" size="lg" block>Back to Mocks</AppButton>
     </div>
   </div>
-  <div v-else class="py-10 grid gap-3"><Skeleton height="3rem" /><Skeleton height="22rem" /></div>
+
+  <div v-else class="grid gap-3 py-10"><Skeleton height="3rem" /><Skeleton height="22rem" /></div>
 </template>

@@ -16,33 +16,97 @@ const terms = computed(() => {
 });
 const letters = computed(() => [...new Set(all.value.map((t) => t.term[0]?.toUpperCase() ?? "#"))].sort());
 const bankLabel = (b: string) => b.replace("national_pearsonvue", "Pearson VUE").replace("national_psi", "PSI").replace(/^state_/, "");
+const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" : "border-line bg-surface text-ink-2 hover:bg-surface-2");
 </script>
 <template>
-  <div class="grid gap-4 anim-fade-up">
-    <p class="text-sm text-muted">Real estate is a vocabulary exam wearing a law exam's clothes. Every definition here is grounded in a statute or reference you can open.</p>
-    <AppInput v-model="q" type="search" placeholder="Search terms and definitions" inputmode="search" autocomplete="off" aria-label="Search glossary" />
-    <div v-if="letters.length > 4" class="flex gap-1 overflow-x-auto no-scrollbar -mx-4 px-4" role="tablist" aria-label="Filter by letter">
-      <button type="button" role="tab" class="tap px-3 rounded-lg text-sm font-medium shrink-0" :class="!letter ? 'bg-accent text-accent-ink' : 'bg-surface-2 text-ink-2'" :aria-selected="!letter" @click="letter = null">All</button>
-      <button v-for="l in letters" :key="l" type="button" role="tab" class="tap px-3 rounded-lg text-sm font-medium shrink-0" :class="letter === l ? 'bg-accent text-accent-ink' : 'bg-surface-2 text-ink-2'" :aria-selected="letter === l" @click="letter = letter === l ? null : l">{{ l }}</button>
+  <div class="anim-fade-up grid gap-4">
+    <p class="text-[13.5px] leading-relaxed text-ink-2">
+      Real estate is a vocabulary exam wearing a law exam's clothes. Every definition here is grounded
+      in a statute or reference you can open.
+    </p>
+
+    <div class="grid gap-2.5">
+      <AppInput
+        v-model="q"
+        type="search"
+        placeholder="Search terms and definitions"
+        inputmode="search"
+        autocomplete="off"
+        aria-label="Search glossary"
+      />
+
+      <div v-if="letters.length > 4" class="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4" role="tablist" aria-label="Filter by letter">
+        <button
+          type="button"
+          role="tab"
+          class="tabular grid h-9 shrink-0 place-items-center rounded-lg border px-3 text-[13px] font-semibold transition-colors"
+          :class="chip(!letter)"
+          :aria-selected="!letter"
+          @click="letter = null"
+        >All</button>
+        <button
+          v-for="l in letters"
+          :key="l"
+          type="button"
+          role="tab"
+          class="grid size-9 shrink-0 place-items-center rounded-lg border text-[13px] font-semibold transition-colors"
+          :class="chip(letter === l)"
+          :aria-selected="letter === l"
+          @click="letter = letter === l ? null : l"
+        >{{ l }}</button>
+      </div>
+
+      <p class="tabular px-1 text-[11.5px] text-muted" aria-live="polite">{{ terms.length }} of {{ all.length }} terms</p>
     </div>
-    <p class="text-xs text-muted px-1 tabular">{{ terms.length }} of {{ all.length }} terms</p>
+
     <ul v-if="terms.length" class="grid gap-2">
       <li v-for="t in terms" :key="t.bank + t.term">
-        <article class="rounded-card bg-surface border border-line overflow-hidden">
-          <button type="button" class="w-full text-left px-4 py-3 flex items-start gap-3 hover:bg-surface-2" :aria-expanded="open === t.bank + t.term" @click="open = open === t.bank + t.term ? null : t.bank + t.term">
-            <span class="flex-1 min-w-0">
-              <span class="flex items-center gap-2"><span class="font-semibold text-[15px]">{{ t.term }}</span><Badge tone="outline">{{ bankLabel(t.bank) }}</Badge></span>
-              <span class="block text-sm text-ink-2 mt-0.5" :class="open === t.bank + t.term ? '' : 'line-clamp-2'">{{ t.definition }}</span>
+        <article class="overflow-hidden rounded-card border border-line bg-surface">
+          <button
+            type="button"
+            class="flex w-full items-start gap-3 px-4 py-3.5 text-left transition-colors hover:bg-surface-2"
+            :aria-expanded="open === t.bank + t.term"
+            @click="open = open === t.bank + t.term ? null : t.bank + t.term"
+          >
+            <span class="min-w-0 flex-1">
+              <span class="flex flex-wrap items-center gap-2">
+                <span class="text-[15px] font-semibold tracking-[-0.012em]">{{ t.term }}</span>
+                <Badge tone="outline">{{ bankLabel(t.bank) }}</Badge>
+              </span>
+              <span class="mt-1 block text-[13.5px] leading-relaxed text-ink-2" :class="open === t.bank + t.term ? '' : 'line-clamp-2'">{{ t.definition }}</span>
             </span>
-            <Icon name="chevron-down" :size="18" class="text-muted shrink-0 transition-transform" :class="open === t.bank + t.term ? 'rotate-180' : ''" />
+            <Icon
+              name="chevron-down"
+              :size="18"
+              class="mt-0.5 shrink-0 text-muted transition-transform duration-200 ease-standard"
+              :class="open === t.bank + t.term ? 'rotate-180' : ''"
+            />
           </button>
-          <div v-if="open === t.bank + t.term" class="border-t border-line bg-paper px-4 py-4 grid gap-3">
+
+          <div v-if="open === t.bank + t.term" class="grid gap-3 border-t border-line bg-paper px-4 py-4">
             <CitationBlock :source="t.source" :quote="t.quoted_text" />
-            <p v-if="t.related_terms.length" class="text-xs text-muted">Related: <button v-for="(r, i) in t.related_terms" :key="r" type="button" class="text-accent underline underline-offset-2" @click="q = r; letter = null">{{ r }}<template v-if="i < t.related_terms.length - 1">, </template></button></p>
+            <p v-if="t.related_terms.length" class="text-[12px] text-muted">
+              Related:
+              <button
+                v-for="(r, i) in t.related_terms"
+                :key="r"
+                type="button"
+                class="font-medium text-accent underline underline-offset-2"
+                @click="q = r; letter = null"
+              >{{ r }}<template v-if="i < t.related_terms.length - 1">, </template></button>
+            </p>
           </div>
         </article>
       </li>
     </ul>
-    <EmptyState v-else icon="list" :title="all.length ? 'No matching terms' : 'No glossary terms yet'" :body="all.length ? 'Try a different spelling or clear the letter filter.' : 'Terms are generated as items for your banks are approved.'" />
+
+    <EmptyState
+      v-else
+      icon="list"
+      :title="all.length ? 'No matching terms' : 'No glossary terms yet'"
+      :body="all.length ? 'Try a different spelling, or clear the letter filter.' : 'Terms are generated as items for your banks are approved.'"
+    >
+      <AppButton v-if="all.length && (q || letter)" variant="secondary" size="sm" @click="q = ''; letter = null">Clear filters</AppButton>
+    </EmptyState>
   </div>
 </template>

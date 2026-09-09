@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { pushToast } from "~/components/Toast.vue";
-/** Study hub: pick a portion/section, start practice or a drill, see boxes and coverage. */
-useHead({ title: "Study" });
+/**
+ * Progress: readiness per portion, the review pipeline and section-by-section coverage.
+ *
+ * This is a reading screen, not a hub. The study loop schedules itself, so the only thing you can
+ * start from here is a focused batch on one weak section — which then drops you into the loop.
+ */
+useHead({ title: "Progress" });
 const studyState = useStudyState();
 const study = useStudy();
 const readiness = useReadiness();
@@ -51,52 +56,74 @@ async function start(kind: "practice" | "drill", node?: string) {
       return;
     }
     events.track("session_start", { kind, bank: bank.value, node: node ?? null });
-    await navigateTo("/app/study/practice");
+    await navigateTo("/app");
   } finally { busy.value = null; }
 }
 async function setLevel(v: string) { await studyState.set({ licenseLevel: v as "salesperson" | "broker" }); }
 onMounted(() => { void content.load(); });
 </script>
 <template>
-  <div class="grid gap-4 anim-fade-up">
+  <div class="anim-fade-up grid gap-4">
     <FreeTierGate variant="block" />
 
     <AppCard v-if="active && active.kind !== 'mock'" tone="accent">
       <div class="flex items-center gap-3">
-        <div class="flex-1 min-w-0"><p class="font-semibold">Session in progress</p><p class="text-sm text-ink-2">Question {{ active.position + 1 }} of {{ active.itemIds.length }}</p></div>
-        <AppButton variant="primary" size="sm" to="/app/study/practice" icon-right="arrow-right">Continue</AppButton>
+        <div class="min-w-0 flex-1">
+          <p class="text-[15px] font-semibold leading-tight">Session in progress</p>
+          <p class="tabular text-[13px] text-ink-2">Question {{ active.position + 1 }} of {{ active.itemIds.length }}</p>
+        </div>
+        <AppButton variant="primary" size="sm" to="/app" icon-right="arrow-right">Continue</AppButton>
       </div>
     </AppCard>
 
-    <div class="grid gap-2">
+    <!-- Portion switch, then the level switch under it: one decision at a time, biggest first. -->
+    <div class="grid gap-2.5">
       <AppTabs v-model="portion" :tabs="tabs" aria-label="Exam portion" />
-      <div class="flex items-center justify-between text-xs text-muted px-1">
-        <span>{{ portion === 'state' ? 'Your state\'s licensing law and rules' : 'General principles, weighted to the vendor\'s outline' }}</span>
-        <AppTabs :model-value="level" :tabs="[{ value: 'salesperson', label: 'Salesperson' }, { value: 'broker', label: 'Broker' }]" aria-label="License level" class="!w-auto" @update:model-value="setLevel" />
+      <div class="flex items-center justify-between gap-3 px-0.5">
+        <span class="text-[12px] leading-snug text-muted">
+          {{ portion === 'state' ? 'Your state\'s licensing law and rules' : 'General principles, weighted to the vendor\'s outline' }}
+        </span>
+        <AppTabs
+          :model-value="level"
+          :tabs="[{ value: 'salesperson', label: 'Salesperson' }, { value: 'broker', label: 'Broker' }]"
+          aria-label="License level"
+          class="!w-auto shrink-0"
+          @update:model-value="setLevel"
+        />
       </div>
     </div>
 
     <AppCard>
       <ReadinessCard :r="r" :title="portion === 'state' ? 'State readiness' : 'National readiness'" compact />
-      <div v-if="pipeline" class="mt-4"><PipelineBar :p="pipeline" /></div>
+
+      <div v-if="pipeline" class="mt-4 border-t border-line pt-4">
+        <p class="eyebrow mb-2.5">Review pipeline</p>
+        <PipelineBar :p="pipeline" />
+      </div>
+
       <div class="mt-4 grid grid-cols-[1fr_auto] gap-2">
         <AppButton variant="primary" size="lg" icon="play" :loading="busy === 'practice'" @click="start('practice')">Practice session</AppButton>
         <AppButton variant="secondary" size="lg" icon="target" :loading="busy === 'drill'" aria-label="Leech drill" @click="start('drill')">Drill</AppButton>
       </div>
-      <p class="mt-2 text-xs text-muted">Practice mixes due reviews with unseen questions. Drill focuses on leeches — questions missed four or more times.</p>
+      <p class="mt-2.5 text-[12px] leading-relaxed text-muted">
+        Practice mixes due reviews with unseen questions. Drill focuses on leeches — questions missed
+        four or more times.
+      </p>
     </AppCard>
 
     <AppCard title="By exam section" subtitle="Tap a section to practise only that section.">
-      <CoverageTable v-if="rows.length" :rows="rows" selectable @select="(n) => start('practice', n)" />
+      <CoverageTable v-if="rows.length" :rows="rows" selectable class="-mx-3" @select="(n) => start('practice', n)" />
       <template v-else>
         <Skeleton v-if="!studyState.ready.value" :lines="4" />
-        <EmptyState v-else icon="map" title="No blueprint yet" body="This portion's outline isn't loaded. Pick your state on Home, or check back as content lands." compact />
+        <EmptyState
+          v-else
+          icon="map"
+          title="No blueprint yet"
+          body="This portion's outline isn't loaded. Pick your state from the menu, or check back as content lands."
+          compact
+        />
       </template>
     </AppCard>
 
-    <AppCard padding="none">
-      <ListRow icon="clock" label="Timed mocks" detail="Your exam's exact format and timing" to="/app/mocks" />
-      <ListRow icon="list" label="Glossary" detail="Every term with its cited source" to="/app/glossary" />
-    </AppCard>
   </div>
 </template>

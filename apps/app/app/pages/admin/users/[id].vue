@@ -85,24 +85,27 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
   if (!r.ok) return;
   await action.run(`dev-${deviceId}`, () => api.users.removeDevice(id.value, deviceId), "Device removed.", q.reload);
 }
-const stars = (n: number) => "★".repeat(Math.max(0, Math.min(5, Math.round(n)))) + "☆".repeat(5 - Math.max(0, Math.min(5, Math.round(n))));
 </script>
 <template>
   <div class="space-y-4">
-    <nav class="text-sm text-muted" aria-label="Breadcrumb"><NuxtLink to="/admin/users">Users</NuxtLink> / <span class="font-mono text-xs">{{ id }}</span></nav>
+    <nav class="text-[13px] text-muted" aria-label="Breadcrumb">
+      <NuxtLink to="/admin/users" class="hover:text-ink">Users</NuxtLink>
+      <span class="px-1">/</span>
+      <span class="font-mono text-[11.5px]">{{ id }}</span>
+    </nav>
 
     <AdminState :loading="q.loading.value" :error="q.error.value" :empty="!u" empty-text="User not found." @retry="q.reload">
       <template v-if="u">
-        <!-- header -->
+        <!-- header: identity and the state badges that change what the actions below mean -->
         <div class="flex flex-wrap items-start justify-between gap-3">
-          <div>
-            <h1 class="m-0 flex flex-wrap items-center gap-2 text-xl font-semibold">
+          <div class="min-w-0">
+            <h1 class="m-0 flex flex-wrap items-center gap-2 text-[19px] font-semibold tracking-[-0.018em]">
               {{ email ?? "(no email)" }}
               <AdminBadge v-if="disabled" text="disabled" tone="danger" />
               <AdminBadge v-if="u.profile?.is_admin" text="admin" tone="accent" />
               <AdminBadge v-for="p in activeProducts" :key="p" :text="p" tone="ok" />
             </h1>
-            <p class="m-0 text-sm text-muted">
+            <p class="m-0 mt-1 text-[13px] leading-relaxed text-muted">
               Joined <AdminTime :value="u.auth?.created_at ?? u.profile?.created_at" /> · last sign-in <AdminTime :value="u.auth?.last_sign_in_at" />
               <template v-if="u.profile?.home_jurisdiction"> · home state {{ u.profile.home_jurisdiction }}</template>
               <template v-if="u.profile?.exam_date"> · exam {{ adminFmt.day(u.profile.exam_date) }}</template>
@@ -110,14 +113,19 @@ const stars = (n: number) => "★".repeat(Math.max(0, Math.min(5, Math.round(n))
             </p>
           </div>
           <div class="flex flex-wrap gap-2">
-            <button type="button" class="!px-3 !py-1.5 text-sm" :disabled="action.busy.value === 'code'" @click="sendCode">Send sign-in code</button>
-            <button type="button" class="!px-3 !py-1.5 text-sm" :disabled="action.busy.value === 'admin' || isSelf" :title="isSelf ? 'You cannot change your own admin flag' : undefined" @click="toggleAdmin">{{ u.profile?.is_admin ? "Remove admin" : "Make admin" }}</button>
-            <button v-if="disabled" type="button" class="primary !px-3 !py-1.5 text-sm" :disabled="action.busy.value === 'enable'" @click="enable">Enable account</button>
-            <button v-else type="button" class="!px-3 !py-1.5 text-sm !text-danger" :disabled="action.busy.value === 'disable' || isSelf" @click="disable">Disable account</button>
+            <AppButton variant="secondary" size="sm" :loading="action.busy.value === 'code'" @click="sendCode">Send sign-in code</AppButton>
+            <AppButton
+              variant="secondary"
+              size="sm"
+              :disabled="action.busy.value === 'admin' || isSelf"
+              :aria-label="isSelf ? 'You cannot change your own admin flag' : undefined"
+              @click="toggleAdmin"
+            >{{ u.profile?.is_admin ? "Remove admin" : "Make admin" }}</AppButton>
+            <AppButton v-if="disabled" variant="primary" size="sm" :loading="action.busy.value === 'enable'" @click="enable">Enable account</AppButton>
+            <AppButton v-else variant="danger" size="sm" :disabled="action.busy.value === 'disable' || isSelf" @click="disable">Disable account</AppButton>
           </div>
         </div>
 
-        <!-- stats -->
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4 xl:grid-cols-6">
           <AdminKpiTile label="Answers" :value="adminFmt.int(u.study?.answers)" />
           <AdminKpiTile label="Accuracy" :value="u.study?.accuracy == null ? '—' : u.study.accuracy <= 1 ? adminFmt.ratio(u.study.accuracy) : adminFmt.pct(u.study.accuracy)" />
@@ -128,17 +136,20 @@ const stars = (n: number) => "★".repeat(Math.max(0, Math.min(5, Math.round(n))
         </div>
 
         <div class="grid gap-4 xl:grid-cols-2">
-          <!-- entitlements -->
           <AdminCard title="Entitlements">
             <template #actions>
-              <button v-for="p in grantable" :key="p" type="button" class="primary !px-3 !py-1 text-sm" :disabled="!!action.busy.value" @click="grant(p)">Grant {{ p }}</button>
+              <AppButton v-for="p in grantable" :key="p" variant="primary" size="xs" :disabled="!!action.busy.value" @click="grant(p)">Grant {{ p }}</AppButton>
             </template>
-            <p v-if="!u.entitlements?.length" class="m-0 text-sm text-muted">Free tier — no entitlements.</p>
-            <ul v-else class="m-0 list-none divide-y divide-line p-0">
-              <li v-for="(e, i) in u.entitlements" :key="e.id ?? `${e.product}-${i}`" class="flex flex-wrap items-center gap-2 py-2 text-sm">
-                <strong>{{ e.product }}</strong>
+            <p v-if="!u.entitlements?.length" class="m-0 text-[13px] text-muted">Free tier — no entitlements.</p>
+            <ul v-else class="m-0 list-none p-0">
+              <li
+                v-for="(e, i) in u.entitlements"
+                :key="e.id ?? `${e.product}-${i}`"
+                class="flex flex-wrap items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0"
+              >
+                <strong class="font-semibold">{{ e.product }}</strong>
                 <AdminBadge :text="entState(e)" />
-                <span class="text-xs text-muted">
+                <span class="text-[11.5px] text-muted">
                   <template v-if="e.source">{{ e.source }} · </template>granted <AdminTime :value="e.granted_at" />
                   <template v-if="e.paused_until && entState(e) === 'paused'"> · until {{ adminFmt.abs(e.paused_until) }}</template>
                   <template v-if="e.revoked_at"> · revoked <AdminTime :value="e.revoked_at" /></template>
@@ -146,87 +157,108 @@ const stars = (n: number) => "★".repeat(Math.max(0, Math.min(5, Math.round(n))
                 </span>
                 <span class="ml-auto flex gap-1">
                   <template v-if="entState(e) === 'active'">
-                    <button type="button" class="!px-2 !py-0.5 text-xs" :disabled="!!action.busy.value" @click="pause(e.product)">Pause</button>
-                    <button type="button" class="!px-2 !py-0.5 text-xs !text-danger" :disabled="!!action.busy.value" @click="revoke(e.product)">Revoke</button>
+                    <AppButton variant="ghost" size="xs" :disabled="!!action.busy.value" @click="pause(e.product)">Pause</AppButton>
+                    <AppButton variant="ghost" size="xs" class="!text-danger" :disabled="!!action.busy.value" @click="revoke(e.product)">Revoke</AppButton>
                   </template>
                   <template v-else-if="entState(e) === 'paused'">
-                    <button type="button" class="!px-2 !py-0.5 text-xs" :disabled="!!action.busy.value" @click="resume(e.product)">Resume</button>
-                    <button type="button" class="!px-2 !py-0.5 text-xs !text-danger" :disabled="!!action.busy.value" @click="revoke(e.product)">Revoke</button>
+                    <AppButton variant="secondary" size="xs" :disabled="!!action.busy.value" @click="resume(e.product)">Resume</AppButton>
+                    <AppButton variant="ghost" size="xs" class="!text-danger" :disabled="!!action.busy.value" @click="revoke(e.product)">Revoke</AppButton>
                   </template>
                 </span>
               </li>
             </ul>
           </AdminCard>
 
-          <!-- devices -->
-          <AdminCard title="Devices" :subtitle="`${u.devices?.length ?? 0} registered (max 3)`">
-            <p v-if="!u.devices?.length" class="m-0 text-sm text-muted">No devices registered.</p>
-            <ul v-else class="m-0 list-none divide-y divide-line p-0">
-              <li v-for="d in u.devices" :key="d.id" class="flex flex-wrap items-center gap-2 py-2 text-sm">
-                <span class="w-14 text-xs uppercase text-muted">{{ d.platform ?? "?" }}</span>
+          <AdminCard title="Devices" :subtitle="`${u.devices?.length ?? 0} seen · one active at a time`">
+            <p v-if="!u.devices?.length" class="m-0 text-[13px] text-muted">No devices registered.</p>
+            <ul v-else class="m-0 list-none p-0">
+              <li v-for="d in u.devices" :key="d.id" class="flex flex-wrap items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0">
+                <span class="w-12 shrink-0 text-[11px] uppercase tracking-[0.04em] text-muted">{{ d.platform ?? "?" }}</span>
                 <span class="font-medium">{{ d.name ?? adminFmt.short(d.id) }}</span>
                 <AdminBadge v-if="d.has_live_session" text="live" tone="ok" />
                 <AdminBadge v-if="d.removed_at" text="removed" tone="muted" />
-                <span class="text-xs text-muted">seen <AdminTime :value="d.last_seen" /></span>
-                <span v-if="d.device_hash" class="font-mono text-xs text-muted" :title="d.device_hash">{{ adminFmt.short(d.device_hash, 10) }}</span>
-                <button v-if="!d.removed_at" type="button" class="ml-auto !px-2 !py-0.5 text-xs !text-danger" :disabled="!!action.busy.value" @click="removeDevice(d.id, d.name)">Remove</button>
+                <span class="text-[11.5px] text-muted">seen <AdminTime :value="d.last_seen" /></span>
+                <span v-if="d.device_hash" class="font-mono text-[11.5px] text-muted" :title="d.device_hash">{{ adminFmt.short(d.device_hash, 10) }}</span>
+                <AppButton
+                  v-if="!d.removed_at"
+                  variant="ghost"
+                  size="xs"
+                  class="ml-auto !text-danger"
+                  :disabled="!!action.busy.value"
+                  @click="removeDevice(d.id, d.name)"
+                >Sign out</AppButton>
               </li>
             </ul>
           </AdminCard>
         </div>
 
-        <!-- tabs -->
+        <!-- history: underline tabs rather than a segmented control, because the counts vary a lot
+             and a segmented control would jitter as they load -->
         <AdminCard flush>
-          <div class="flex gap-1 overflow-x-auto border-b border-line px-2" role="tablist">
+          <div class="no-scrollbar flex gap-1 overflow-x-auto border-b border-line px-2" role="tablist">
             <button
               v-for="t in tabs"
               :key="t.v"
               type="button"
               role="tab"
               :aria-selected="tab === t.v"
-              class="!rounded-none !border-0 !border-b-2 !bg-transparent !px-3 !py-2 text-sm"
-              :class="tab === t.v ? '!border-b-accent font-semibold text-ink' : '!border-b-transparent text-muted'"
+              class="shrink-0 border-b-2 px-3 py-2.5 text-[13.5px] transition-colors"
+              :class="tab === t.v ? 'border-b-accent font-semibold text-ink' : 'border-b-transparent text-muted hover:text-ink-2'"
               @click="tab = t.v"
-            >{{ t.label }} <span class="ml-1 rounded-full bg-surface-2 px-1.5 text-xs tabular-nums text-muted">{{ t.count() }}</span></button>
+            >
+              {{ t.label }}
+              <span class="tabular ml-1 rounded-pill bg-surface-2 px-1.5 text-[11px] text-muted">{{ t.count() }}</span>
+            </button>
           </div>
+
           <div class="p-4">
             <template v-if="tab === 'events'">
-              <p v-if="!u.events?.length" class="m-0 text-sm text-muted">No events recorded.</p>
+              <p v-if="!u.events?.length" class="m-0 text-[13px] text-muted">No events recorded.</p>
               <AdminEventsTimeline v-else :events="u.events" />
             </template>
+
             <template v-else-if="tab === 'tickets'">
-              <p v-if="!u.tickets?.length" class="m-0 text-sm text-muted">No support tickets.</p>
-              <ul v-else class="m-0 list-none divide-y divide-line p-0">
-                <li v-for="t in u.tickets" :key="t.id" class="flex flex-wrap items-center gap-2 py-2 text-sm">
-                  <NuxtLink :to="{ path: '/admin/support', query: { id: t.id } }" class="font-medium">{{ t.subject }}</NuxtLink>
+              <p v-if="!u.tickets?.length" class="m-0 text-[13px] text-muted">No support tickets.</p>
+              <ul v-else class="m-0 list-none p-0">
+                <li v-for="t in u.tickets" :key="t.id" class="flex flex-wrap items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0">
+                  <NuxtLink :to="{ path: '/admin/support', query: { id: t.id } }" class="font-medium hover:text-accent">{{ t.subject }}</NuxtLink>
                   <AdminBadge :text="t.status" />
-                  <span class="ml-auto text-xs text-muted"><AdminTime :value="t.updated_at ?? t.created_at" /></span>
+                  <span class="ml-auto text-[11.5px] text-muted"><AdminTime :value="t.updated_at ?? t.created_at" /></span>
                 </li>
               </ul>
             </template>
+
             <template v-else-if="tab === 'reviews'">
-              <p v-if="!u.reviews?.length" class="m-0 text-sm text-muted">No reviews.</p>
-              <ul v-else class="m-0 list-none divide-y divide-line p-0">
-                <li v-for="r in u.reviews" :key="r.id" class="py-2 text-sm">
-                  <div class="flex flex-wrap items-center gap-2"><span class="text-warn" :aria-label="`${r.rating} of 5`">{{ stars(r.rating) }}</span><AdminBadge :text="r.status" /><span class="ml-auto text-xs text-muted"><AdminTime :value="r.created_at" /></span></div>
-                  <p class="m-0 mt-1 whitespace-pre-wrap text-ink">{{ r.body }}</p>
+              <p v-if="!u.reviews?.length" class="m-0 text-[13px] text-muted">No reviews.</p>
+              <ul v-else class="m-0 list-none p-0">
+                <li v-for="r in u.reviews" :key="r.id" class="border-b border-line py-2.5 text-[13px] last:border-b-0">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="inline-flex text-warn" :aria-label="`${r.rating} of 5`">
+                      <Icon v-for="n in 5" :key="n" :name="n <= r.rating ? 'star-filled' : 'star'" :size="13" :class="n <= r.rating ? '' : 'text-line-strong'" />
+                    </span>
+                    <AdminBadge :text="r.status" />
+                    <span class="ml-auto text-[11.5px] text-muted"><AdminTime :value="r.created_at" /></span>
+                  </div>
+                  <p class="m-0 mt-1.5 whitespace-pre-wrap leading-relaxed text-ink">{{ r.body }}</p>
                 </li>
               </ul>
             </template>
+
             <template v-else-if="tab === 'coupons'">
-              <p v-if="!u.coupons?.length" class="m-0 text-sm text-muted">No coupons redeemed.</p>
-              <ul v-else class="m-0 list-none divide-y divide-line p-0">
-                <li v-for="(c, i) in u.coupons" :key="c.id ?? c.code ?? i" class="flex flex-wrap items-center gap-2 py-2 text-sm">
-                  <code class="rounded bg-surface-2 px-1.5 py-0.5 text-xs">{{ c.code }}</code>
+              <p v-if="!u.coupons?.length" class="m-0 text-[13px] text-muted">No coupons redeemed.</p>
+              <ul v-else class="m-0 list-none p-0">
+                <li v-for="(c, i) in u.coupons" :key="c.id ?? c.code ?? i" class="flex flex-wrap items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0">
+                  <code class="tabular rounded bg-surface-2 px-1.5 py-0.5 text-[11.5px]">{{ c.code }}</code>
                   <span>{{ c.kind }}<template v-if="c.value != null"> · {{ c.kind === "percent" ? adminFmt.pct(c.value, 0) : adminFmt.usd(c.value) }}</template><template v-if="c.product"> · {{ c.product }}</template></span>
-                  <span class="ml-auto text-xs text-muted"><AdminTime :value="c.redeemed_at ?? c.created_at" /></span>
+                  <span class="ml-auto text-[11.5px] text-muted"><AdminTime :value="c.redeemed_at ?? c.created_at" /></span>
                 </li>
               </ul>
             </template>
+
             <template v-else>
-              <p v-if="!u.sessions?.length" class="m-0 text-sm text-muted">No study sessions.</p>
+              <p v-if="!u.sessions?.length" class="m-0 text-[13px] text-muted">No study sessions.</p>
               <div v-else class="overflow-x-auto">
-                <pre class="m-0 max-h-96 overflow-auto rounded bg-surface-2 p-3 text-xs text-muted">{{ JSON.stringify(u.sessions, null, 2) }}</pre>
+                <pre class="m-0 max-h-96 overflow-auto rounded-lg border border-line bg-surface-2 p-3 text-[11.5px] text-muted">{{ JSON.stringify(u.sessions, null, 2) }}</pre>
               </div>
             </template>
           </div>

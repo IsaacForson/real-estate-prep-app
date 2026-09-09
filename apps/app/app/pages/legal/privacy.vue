@@ -7,7 +7,7 @@ useHead({ title: "Privacy policy" });
     <ul>
       <li><strong>Account:</strong> your email address and sign-in timestamps.</li>
       <li><strong>Study data:</strong> your answers, sessions, mock results, spaced-repetition state, home state, exam date and settings. This is the product; it lives on our servers so nothing is lost when you change devices.</li>
-      <li><strong>Devices:</strong> a per-device identifier (an app-scoped id on Android, the vendor identifier on iOS, a stable browser fingerprint on the web), platform and model, used to enforce the device limit and the free tier and to detect account sharing.</li>
+      <li><strong>Devices:</strong> a per-device identifier (an app-scoped id on Android, the vendor identifier on iOS, a stable browser fingerprint on the web), platform and model, used to keep an account on one device at a time, to enforce the free tier and to detect account sharing.</li>
       <li><strong>Usage events:</strong> app opens, sessions started and finished, purchases, help searches and questions asked to the assistant, support tickets and reviews. Used for support, abuse prevention and improving content.</li>
       <li><strong>Purchases:</strong> purchase and entitlement records from Apple, Google or our merchant of record. We never see your card number.</li>
     </ul>

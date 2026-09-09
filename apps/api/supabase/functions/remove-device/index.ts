@@ -1,10 +1,11 @@
 /**
- * POST /functions/v1/remove-device — self-service removal (SPEC §5.3). The slot stays occupied
- * for 7 days; sessions on the device are revoked. Removing the current device signs it out.
+ * POST /functions/v1/remove-device — sign a device out of the account (SPEC §5.3). Since 0015 there
+ * is one active device and the slot frees immediately, so this is only useful for "sign out the
+ * device I left somewhere"; signing in on that device again simply takes the slot back.
  *
  * headers: Authorization: Bearer <jwt>  (x-device-id optional, used to tell you signed yourself out)
  * body:    { device_id: uuid }
- * returns: { removed: true, cooldown_until, signed_out_here }
+ * returns: { removed: true, removed_at, signed_out_here }
  */
 import { audit, authenticate } from "../_shared/auth.ts";
 import { rpc } from "../_shared/db.ts";
@@ -23,7 +24,7 @@ serve(async (req) => {
     throw new HttpError(400, "invalid_device_id");
   }
 
-  const cooldownUntil = await rpc<string>(ctx.db, "fn_remove_device", {
+  const removedAt = await rpc<string>(ctx.db, "fn_remove_device", {
     p_user_id: ctx.userId,
     p_device_id: body.device_id,
   });
@@ -33,8 +34,8 @@ serve(async (req) => {
   return json({
     removed: true,
     device_id: body.device_id,
-    cooldown_until: cooldownUntil,
+    removed_at: removedAt,
     signed_out_here: signedOutHere,
-    message: `device removed. that slot can be used again on ${new Date(cooldownUntil).toUTCString()}.`,
+    message: "device signed out. signing in on it again will move your account back to it.",
   });
 });

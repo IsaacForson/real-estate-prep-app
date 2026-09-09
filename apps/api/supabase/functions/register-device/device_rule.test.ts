@@ -1,52 +1,54 @@
 import { assertEquals } from "@std/assert";
-import { decideRegister, type DeviceSlotRow, occupiedSlotCount, occupiesSlot } from "../_shared/device-rule.ts";
+import { activeDevices, decideRegister, type DeviceSlotRow, SINGLE_DEVICE } from "../_shared/device-rule.ts";
 
-const now = new Date("2026-09-08T12:00:00Z");
 const FP = (n: number) => n.toString(16).padStart(64, "0");
-const active = (id: string, fp: number): DeviceSlotRow => ({
-  id,
-  fingerprint_hash: FP(fp),
-  removed_at: null,
-  cooldown_until: null,
-});
-const removed = (id: string, fp: number, until: string): DeviceSlotRow => ({
-  id,
-  fingerprint_hash: FP(fp),
-  removed_at: "2026-09-01T00:00:00Z",
-  cooldown_until: until,
+const active = (id: string, fp: number): DeviceSlotRow => ({ id, fingerprint_hash: FP(fp), removed_at: null });
+const retired = (id: string, fp: number): DeviceSlotRow => ({ id, fingerprint_hash: FP(fp), removed_at: "2026-09-01T00:00:00Z" });
+
+Deno.test("the registry holds exactly one active device (SPEC 5.3, 0015)", () => {
+  assertEquals(SINGLE_DEVICE, true);
 });
 
-Deno.test("occupiesSlot: active always; removed only while cooling down", () => {
-  assertEquals(occupiesSlot(active("a", 1), now), true);
-  assertEquals(occupiesSlot(removed("b", 2, "2026-09-09T00:00:00Z"), now), true);
-  assertEquals(occupiesSlot(removed("c", 3, "2026-09-08T11:59:59Z"), now), false);
+Deno.test("an unknown device takes the slot and signs the old one out", () => {
+  const d = [active("laptop", 1)];
+  const decision = decideRegister(d, FP(2));
+  assertEquals(decision.reason, "new");
+  assertEquals(decision.existing_id, null);
+  assertEquals(decision.superseded.map((s) => s.id), ["laptop"]);
 });
 
-Deno.test("phone + tablet + laptop never hits the limit (SPEC 5.3)", () => {
-  const d = [active("phone", 1), active("tablet", 2)];
-  assertEquals(decideRegister(d, FP(3), now).ok, true);
-  assertEquals(occupiedSlotCount(d, now), 2);
+Deno.test("the laptop-then-phone case never dead-ends", () => {
+  // the bug 0015 fixes: under the old 3-slot rule this path could answer 409 device_limit.
+  let registry = [active("laptop", 1)];
+  const toPhone = decideRegister(registry, FP(2));
+  assertEquals(toPhone.superseded.map((s) => s.id), ["laptop"]);
+
+  // phone now holds the slot, laptop retired
+  registry = [retired("laptop", 1), active("phone", 2)];
+
+  // and back to the laptop later, with no cooldown in the way
+  const backToLaptop = decideRegister(registry, FP(1));
+  assertEquals(backToLaptop.reason, "reactivate");
+  assertEquals(backToLaptop.existing_id, "laptop");
+  assertEquals(backToLaptop.superseded.map((s) => s.id), ["phone"]);
 });
 
-Deno.test("a fourth distinct device is refused; same device re-login is fine", () => {
-  const d = [active("a", 1), active("b", 2), active("c", 3)];
-  const refused = decideRegister(d, FP(4), now);
-  assertEquals(refused.ok, false);
-  if (!refused.ok) {
-    assertEquals(refused.occupied, 3);
-    assertEquals(refused.next_slot_frees_at, null); // all active: user must remove one
-  }
-  const again = decideRegister(d, FP(2), now);
-  assertEquals(again, { ok: true, reason: "already_active", existing_id: "b" });
+Deno.test("the same device signing in again supersedes nothing", () => {
+  const decision = decideRegister([active("phone", 2)], FP(2));
+  assertEquals(decision.reason, "already_active");
+  assertEquals(decision.existing_id, "phone");
+  assertEquals(decision.superseded, []);
 });
 
-Deno.test("a removed device keeps its slot for 7 days, then frees it", () => {
-  const d = [active("a", 1), active("b", 2), removed("c", 3, "2026-09-10T00:00:00Z")];
-  const refused = decideRegister(d, FP(4), now);
-  assertEquals(refused.ok, false);
-  if (!refused.ok) assertEquals(refused.next_slot_frees_at, "2026-09-10T00:00:00.000Z");
-  const later = new Date("2026-09-10T00:00:01Z");
-  assertEquals(decideRegister(d, FP(4), later), { ok: true, reason: "new", existing_id: null });
-  // the removed device itself can come back once the slot is free
-  assertEquals(decideRegister(d, FP(3), later), { ok: true, reason: "reactivate", existing_id: "c" });
+Deno.test("a first-ever sign-in supersedes nothing", () => {
+  const decision = decideRegister([], FP(1));
+  assertEquals(decision.reason, "new");
+  assertEquals(decision.superseded, []);
+});
+
+Deno.test("retired devices never hold a slot", () => {
+  const d = [retired("a", 1), retired("b", 2), active("c", 3)];
+  assertEquals(activeDevices(d).map((x) => x.id), ["c"]);
+  // a third fingerprint displaces only the active one
+  assertEquals(decideRegister(d, FP(4)).superseded.map((s) => s.id), ["c"]);
 });

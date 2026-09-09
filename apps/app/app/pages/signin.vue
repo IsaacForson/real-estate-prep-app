@@ -52,60 +52,119 @@ watch(digits, (d) => { if (d.length === 6 && !busy.value) void verify(); });
 function onCodeInput(e: Event) { code.value = (e.target as HTMLInputElement).value.replace(/\D/g, "").slice(0, 6); }
 </script>
 <template>
-  <div class="flex-1 flex flex-col max-w-md mx-auto w-full safe-px">
-    <div class="pt-6 flex items-center gap-2">
-      <button v-if="step === 'code'" type="button" class="tap -ml-2 grid place-items-center rounded-full hover:bg-surface-2" aria-label="Back" @click="step = 'email'; error = null"><Icon name="chevron-left" :size="24" /></button>
-      <NuxtLink v-else to="/welcome" class="tap -ml-2 grid place-items-center rounded-full hover:bg-surface-2" aria-label="Back"><Icon name="chevron-left" :size="24" /></NuxtLink>
+  <div class="safe-px mx-auto flex w-full max-w-md flex-1 flex-col">
+    <div class="flex items-center gap-2 pt-6">
+      <button
+        v-if="step === 'code'"
+        type="button"
+        class="tap -ml-2.5 grid place-items-center rounded-full text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink"
+        aria-label="Back"
+        @click="step = 'email'; error = null"
+      ><Icon name="chevron-left" :size="22" /></button>
+      <NuxtLink
+        v-else
+        to="/welcome"
+        class="tap -ml-2.5 grid place-items-center rounded-full text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink"
+        aria-label="Back"
+      ><Icon name="chevron-left" :size="22" /></NuxtLink>
       <div class="flex-1" />
       <BrandMark :size="28" />
     </div>
 
-    <div class="flex-1 flex flex-col justify-center py-8 gap-6">
-      <div v-if="!auth.configured" class="rounded-card border border-dashed border-line-strong p-4 text-sm text-muted">
-        Accounts aren't configured in this build (no Supabase URL). Sign-in is unavailable until the environment is set.
+    <div class="flex flex-1 flex-col justify-center gap-7 py-8">
+      <div v-if="!auth.configured" class="rounded-card border border-dashed border-line-strong p-4 text-[13px] leading-relaxed text-muted">
+        Accounts aren't configured in this build (no Supabase URL). Sign-in is unavailable until the
+        environment is set.
       </div>
 
       <template v-if="step === 'email'">
-        <div class="grid gap-2">
-          <h1 class="text-3xl display">Sign in</h1>
-          <p class="text-ink-2">No password. We email you a 6-digit code; you stay signed in on this device so studying is never interrupted.</p>
+        <div class="grid gap-2.5">
+          <h1 class="display text-[32px]">Sign in</h1>
+          <p class="text-[15px] leading-relaxed text-ink-2">
+            No password. We email you a 6-digit code; you stay signed in on this device so studying is
+            never interrupted.
+          </p>
         </div>
         <form class="grid gap-4" novalidate @submit.prevent="sendCode">
-          <AppInput v-model="email" type="email" label="Email" placeholder="you@example.com" autocomplete="email" inputmode="email" :error="error" autofocus required />
+          <AppInput
+            v-model="email"
+            type="email"
+            label="Email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            inputmode="email"
+            :error="error"
+            autofocus
+            required
+          />
           <AppButton type="submit" variant="primary" size="lg" block :loading="busy" :disabled="!auth.configured">Email me a code</AppButton>
         </form>
-        <p class="text-xs text-muted">New here? The same code creates your account. By continuing you agree to the <NuxtLink to="/legal/terms" class="underline underline-offset-2">terms</NuxtLink> and <NuxtLink to="/legal/privacy" class="underline underline-offset-2">privacy policy</NuxtLink>.</p>
+        <p class="text-[12px] leading-relaxed text-muted">
+          New here? The same code creates your account. By continuing you agree to the
+          <NuxtLink to="/legal/terms" class="underline underline-offset-4 hover:text-ink-2">terms</NuxtLink>
+          and
+          <NuxtLink to="/legal/privacy" class="underline underline-offset-4 hover:text-ink-2">privacy policy</NuxtLink>.
+        </p>
       </template>
 
       <template v-else>
-        <div class="grid gap-2">
-          <h1 class="text-3xl display">Check your email</h1>
-          <p class="text-ink-2">We sent a 6-digit code to <strong class="text-ink break-all">{{ email }}</strong>. It expires in a few minutes.</p>
+        <div class="grid gap-2.5">
+          <h1 class="display text-[32px]">Check your email</h1>
+          <p class="text-[15px] leading-relaxed text-ink-2">
+            We sent a 6-digit code to <strong class="break-all font-semibold text-ink">{{ email }}</strong>.
+            It expires in a few minutes.
+          </p>
         </div>
+
         <form class="grid gap-4" novalidate @submit.prevent="verify">
+          <!-- One wide input rather than six boxes: it keeps paste and the OTP autofill working, and
+               the underline ticks give the same "how many digits left" read. -->
           <label class="block">
-            <span class="block text-sm font-medium text-ink-2 mb-1.5">Code</span>
+            <span class="mb-2 block text-[13px] font-medium text-ink-2">Code</span>
             <div class="relative">
               <input
-                ref="codeInput" :value="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="6" autofocus
-                aria-label="6-digit code" :aria-invalid="!!error || undefined"
-                class="w-full h-16 rounded-2xl border bg-surface text-center text-3xl font-semibold tabular tracking-[0.5em] pl-[0.5em] focus:outline-none focus:ring-2 focus:ring-accent/35 focus:border-accent"
+                ref="codeInput"
+                :value="code"
+                type="text"
+                inputmode="numeric"
+                autocomplete="one-time-code"
+                pattern="[0-9]*"
+                maxlength="6"
+                autofocus
+                aria-label="6-digit code"
+                :aria-invalid="!!error || undefined"
+                class="tabular h-16 w-full rounded-panel border bg-surface pl-[0.5em] text-center text-[30px] font-semibold tracking-[0.5em] transition-shadow focus:border-accent focus:outline-none focus:ring-4 focus:ring-accent/20"
                 :class="error ? 'border-danger' : 'border-line'"
                 @input="onCodeInput"
               />
-              <div class="pointer-events-none absolute inset-x-0 -bottom-1 flex justify-center gap-3" aria-hidden="true">
-                <span v-for="n in 6" :key="n" class="h-0.5 w-6 rounded-pill" :class="digits.length >= n ? 'bg-accent' : 'bg-line-strong'" />
+              <div class="pointer-events-none absolute inset-x-0 -bottom-1.5 flex justify-center gap-3" aria-hidden="true">
+                <span
+                  v-for="n in 6"
+                  :key="n"
+                  class="h-0.5 w-6 rounded-pill transition-colors"
+                  :class="digits.length >= n ? 'bg-accent' : 'bg-line-strong'"
+                />
               </div>
             </div>
-            <span v-if="error" class="block text-sm text-danger mt-2" role="alert">{{ error }}</span>
+            <span v-if="error" class="mt-2.5 block text-[13px] text-danger" role="alert">{{ error }}</span>
           </label>
           <AppButton type="submit" variant="primary" size="lg" block :loading="busy" :disabled="digits.length < 6">Verify and continue</AppButton>
         </form>
-        <div class="flex flex-wrap items-center justify-between gap-2 text-sm">
-          <button type="button" class="tap px-1 text-accent font-medium disabled:text-muted disabled:font-normal" :disabled="cooldown > 0 || busy" @click="sendCode">{{ cooldown > 0 ? `Resend code in ${cooldown}s` : 'Resend code' }}</button>
-          <button type="button" class="tap px-1 text-muted hover:text-ink" @click="step = 'email'; code = ''; error = null">Use a different email</button>
+
+        <div class="flex flex-wrap items-center justify-between gap-2 text-[13.5px]">
+          <button
+            type="button"
+            class="tap px-1 font-medium text-accent disabled:font-normal disabled:text-muted"
+            :disabled="cooldown > 0 || busy"
+            @click="sendCode"
+          >{{ cooldown > 0 ? `Resend code in ${cooldown}s` : 'Resend code' }}</button>
+          <button type="button" class="tap px-1 text-muted transition-colors hover:text-ink" @click="step = 'email'; code = ''; error = null">Use a different email</button>
         </div>
-        <p class="text-xs text-muted">Nothing arrived? Check spam, and make sure the address is spelled right. On the web the email may also contain a sign-in link; tapping it works too.</p>
+
+        <p class="text-[12px] leading-relaxed text-muted">
+          Nothing arrived? Check spam, and make sure the address is spelled right. On the web the email
+          may also contain a sign-in link; tapping it works too.
+        </p>
       </template>
     </div>
   </div>

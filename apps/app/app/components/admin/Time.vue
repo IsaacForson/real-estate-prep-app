@@ -8,6 +8,8 @@ const iso = computed(() => {
 });
 </script>
 <template>
-  <time v-if="value" :datetime="iso" :title="adminFmt.abs(value)" class="whitespace-nowrap tabular-nums">{{ absolute ? adminFmt.abs(value) : adminFmt.relative(value) }}</time>
+  <time v-if="value" :datetime="iso" :title="adminFmt.abs(value)" class="tabular whitespace-nowrap">
+    {{ absolute ? adminFmt.abs(value) : adminFmt.relative(value) }}
+  </time>
   <span v-else class="text-muted">—</span>
 </template>

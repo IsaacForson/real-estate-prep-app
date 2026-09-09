@@ -42,17 +42,13 @@ const columns: AdminColumn[] = [
 </script>
 <template>
   <div class="space-y-4">
-    <div class="flex flex-wrap items-end justify-between gap-3">
-      <div>
-        <h1 class="m-0 text-xl font-semibold">Users</h1>
-        <p class="m-0 text-sm text-muted">Search by email or user id. Newest first when the search is empty.</p>
-      </div>
-      <form class="flex items-center gap-2" role="search" @submit.prevent="submit">
+    <AdminPageHead title="Users" subtitle="Search by email or user id. Newest first when the search is empty.">
+      <form class="native-fields flex items-center gap-2" role="search" @submit.prevent="submit">
         <label for="users-q" class="sr-only">Search users</label>
-        <input id="users-q" v-model="query" type="search" placeholder="email, id…" class="w-64 !py-1.5 text-sm" autocomplete="off" />
-        <button type="submit" class="primary !px-3 !py-1.5 text-sm" :disabled="q.loading.value">Search</button>
+        <input id="users-q" v-model="query" type="search" placeholder="email, id…" class="!w-64" autocomplete="off" />
+        <AppButton type="submit" variant="primary" size="sm" :loading="q.loading.value">Search</AppButton>
       </form>
-    </div>
+    </AdminPageHead>
 
     <AdminState :loading="q.loading.value" :error="q.error.value" :empty="q.loaded.value && rows.length === 0" :empty-text="query ? `No users match “${query}”.` : 'No users yet.'" @retry="q.reload">
       <AdminTable :columns="columns" :rows="rows" :row-key="(r) => r.id" :row-to="(r) => `/admin/users/${r.id}`" caption="Users">

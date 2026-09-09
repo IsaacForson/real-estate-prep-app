@@ -13,6 +13,7 @@
     "test": "vitest run",
     "content:manifest": "tsx scripts/build-content-manifest.ts",
     "help:kb": "tsx scripts/build-help-kb.ts",
+    "fonts:sync": "cp node_modules/@fontsource-variable/nunito/files/nunito-latin-wght-normal.woff2 node_modules/@fontsource-variable/nunito/files/nunito-latin-wght-italic.woff2 node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2 public/fonts/",
     "cap:sync": "cap sync"
   },
   "dependencies": {
@@ -33,6 +34,8 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^8.5.1",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/nunito": "^5.3.0",
     "@rep/content-lint": "workspace:*",
     "@tailwindcss/vite": "^4.3.3",
     "tailwindcss": "^4.3.3",

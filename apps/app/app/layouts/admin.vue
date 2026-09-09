@@ -4,22 +4,23 @@
  * and a way back to the learner app, and the shared confirm dialog + toasts. The access guard runs
  * here as well as in each page so a direct deep-link never shows admin chrome to a non-admin.
  */
+import type { IconName } from "~/components/Icon.vue";
 const route = useRoute();
 const router = useRouter();
 const auth = useAuth();
 const { access, requireAdmin } = useAdmin();
 const settings = useSettings();
 
-const nav = [
-  { to: "/admin", label: "Overview", icon: "◫" },
-  { to: "/admin/users", label: "Users", icon: "◉" },
-  { to: "/admin/sales", label: "Sales", icon: "◆" },
-  { to: "/admin/support", label: "Support", icon: "◌" },
-  { to: "/admin/reviews", label: "Reviews", icon: "★" },
-  { to: "/admin/coupons", label: "Coupons", icon: "⌗" },
-  { to: "/admin/devices", label: "Devices", icon: "▣" },
-  { to: "/admin/content", label: "Content", icon: "≡" },
-  { to: "/admin/audit", label: "Audit", icon: "⧗" },
+const nav: Array<{ to: string; label: string; icon: IconName }> = [
+  { to: "/admin", label: "Overview", icon: "grid" },
+  { to: "/admin/users", label: "Users", icon: "users" },
+  { to: "/admin/sales", label: "Sales", icon: "dollar" },
+  { to: "/admin/support", label: "Support", icon: "message" },
+  { to: "/admin/reviews", label: "Reviews", icon: "star" },
+  { to: "/admin/coupons", label: "Coupons", icon: "ticket" },
+  { to: "/admin/devices", label: "Devices", icon: "device" },
+  { to: "/admin/content", label: "Content", icon: "layers" },
+  { to: "/admin/audit", label: "Audit", icon: "history" },
 ];
 const isActive = (to: string) => (to === "/admin" ? route.path === "/admin" : route.path.startsWith(to));
 
@@ -28,59 +29,89 @@ function submitSearch() {
   const q = search.value.trim();
   void router.push({ path: "/admin/users", query: q ? { q } : {} });
 }
+
 const themes = ["system", "light", "dark"] as const;
+const themeIcon = computed<IconName>(() => (settings.theme === "dark" ? "moon" : settings.theme === "light" ? "sun" : "monitor"));
 function cycleTheme() { settings.set("theme", themes[(themes.indexOf(settings.theme) + 1) % themes.length]!); }
 
 onMounted(() => { void requireAdmin(); });
 </script>
 <template>
-  <div class="min-h-screen bg-bg text-ink lg:grid lg:grid-cols-[220px_1fr]">
-    <aside class="border-b border-line bg-surface lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r">
-      <div class="flex items-center gap-2 px-4 py-4">
-        <span class="inline-flex size-7 items-center justify-center rounded-lg bg-accent text-sm font-bold text-accent-ink" aria-hidden="true">A</span>
-        <div>
-          <div class="text-sm font-semibold leading-tight">Admin console</div>
-          <div class="text-xs text-muted">Real Estate Exam Prep</div>
+  <div class="min-h-dvh bg-bg text-ink lg:grid lg:grid-cols-[232px_1fr]">
+    <aside class="border-b border-line bg-paper lg:sticky lg:top-0 lg:h-dvh lg:border-b-0 lg:border-r">
+      <div class="flex items-center gap-2.5 px-4 py-4">
+        <BrandMark :size="26" />
+        <div class="min-w-0">
+          <div class="text-[13.5px] font-semibold leading-tight">Admin console</div>
+          <div class="truncate text-[11.5px] text-muted">CitePass</div>
         </div>
       </div>
-      <nav class="flex gap-1 overflow-x-auto px-2 pb-2 lg:flex-col lg:pb-0" aria-label="Admin sections">
+
+      <nav class="no-scrollbar flex gap-1 overflow-x-auto px-2 pb-2 lg:flex-col lg:gap-0.5 lg:pb-0" aria-label="Admin sections">
         <NuxtLink
           v-for="n in nav"
           :key="n.to"
           :to="n.to"
-          class="flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm text-ink no-underline hover:bg-surface-2 focus-visible:outline-2 focus-visible:outline-accent"
-          :class="isActive(n.to) ? 'bg-surface-2 font-semibold' : 'text-muted'"
+          class="flex min-h-9 shrink-0 items-center gap-2.5 rounded-lg px-3 text-[13.5px] font-medium no-underline transition-colors"
+          :class="isActive(n.to) ? 'bg-accent-soft text-accent' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'"
           :aria-current="isActive(n.to) ? 'page' : undefined"
         >
-          <span class="w-4 text-center text-xs" aria-hidden="true">{{ n.icon }}</span>{{ n.label }}
+          <Icon :name="n.icon" :size="16" :stroke-width="isActive(n.to) ? 2.05 : 1.75" />{{ n.label }}
         </NuxtLink>
       </nav>
     </aside>
 
     <div class="flex min-w-0 flex-col">
-      <header class="sticky top-0 z-10 flex flex-wrap items-center gap-3 border-b border-line bg-surface px-4 py-2.5">
+      <header class="sticky top-0 z-10 flex flex-wrap items-center gap-2.5 border-b border-line bg-bg/85 px-4 py-2.5 backdrop-blur-xl">
         <form class="flex min-w-[220px] flex-1 items-center gap-2" role="search" @submit.prevent="submitSearch">
           <label for="admin-search" class="sr-only">Search users</label>
-          <input id="admin-search" v-model="search" type="search" placeholder="Search users by email or id…" class="w-full max-w-md !py-1.5 text-sm" autocomplete="off" />
-          <button type="submit" class="!px-3 !py-1.5 text-sm">Search</button>
+          <div class="relative w-full max-w-md">
+            <Icon name="search" :size="15" class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+            <input
+              id="admin-search"
+              v-model="search"
+              type="search"
+              placeholder="Search users by email or id…"
+              autocomplete="off"
+              class="h-9 w-full rounded-lg border border-line bg-surface pl-9 pr-3 text-[13.5px] text-ink placeholder:text-muted/70 transition-colors focus:border-accent focus:outline-none focus:ring-[3px] focus:ring-accent/20"
+            />
+          </div>
+          <button
+            type="submit"
+            class="inline-flex h-9 items-center rounded-lg bg-action px-3 text-[13.5px] font-medium text-action-ink transition-opacity hover:opacity-90"
+          >Search</button>
         </form>
-        <span v-if="auth.user.value?.email" class="hidden text-xs text-muted md:inline">{{ auth.user.value.email }}</span>
-        <button type="button" class="!px-2.5 !py-1.5 text-sm" :title="`Theme: ${settings.theme}`" aria-label="Cycle theme" @click="cycleTheme">{{ settings.theme === 'dark' ? '🌙' : settings.theme === 'light' ? '☀️' : '🌗' }}</button>
-        <NuxtLink to="/app" class="rounded-lg border border-line px-3 py-1.5 text-sm text-ink no-underline hover:bg-surface-2">← Back to app</NuxtLink>
+
+        <span v-if="auth.user.value?.email" class="hidden text-[12px] text-muted md:inline">{{ auth.user.value.email }}</span>
+
+        <button
+          type="button"
+          class="grid size-9 place-items-center rounded-lg border border-line text-ink-2 transition-colors hover:bg-surface-2"
+          :title="`Theme: ${settings.theme}`"
+          aria-label="Cycle theme"
+          @click="cycleTheme"
+        ><Icon :name="themeIcon" :size="16" /></button>
+
+        <NuxtLink
+          to="/app"
+          class="inline-flex h-9 items-center gap-1.5 rounded-lg border border-line px-3 text-[13.5px] text-ink-2 no-underline transition-colors hover:bg-surface-2 hover:text-ink"
+        ><Icon name="arrow-left" :size="15" />Back to app</NuxtLink>
       </header>
 
       <main class="min-w-0 flex-1 p-4 lg:p-6">
         <ClientOnly>
-          <div v-if="access === 'unconfigured'" class="notice">
+          <div v-if="access === 'unconfigured'" class="rounded-card border border-dashed border-line-strong px-4 py-3 text-[13.5px] text-muted">
             This build has no <code>NUXT_PUBLIC_SUPABASE_URL</code>, so there is no admin backend to talk to.
           </div>
-          <div v-else-if="access === 'denied'" class="notice">This account is not an admin. Redirecting…</div>
-          <div v-else-if="access === 'checking'" class="flex items-center gap-2 text-sm text-muted" aria-busy="true">
-            <span class="inline-block size-3 animate-pulse rounded-full bg-accent" aria-hidden="true" />Checking access…
+          <div v-else-if="access === 'denied'" class="rounded-card border border-dashed border-line-strong px-4 py-3 text-[13.5px] text-muted">
+            This account is not an admin. Redirecting…
+          </div>
+          <div v-else-if="access === 'checking'" class="flex items-center gap-2 text-[13.5px] text-muted" aria-busy="true">
+            <span class="size-3.5 animate-spin rounded-full border-2 border-current border-t-transparent" aria-hidden="true" />Checking access…
           </div>
           <slot v-else />
           <template #fallback>
-            <div class="text-sm text-muted">Loading console…</div>
+            <div class="text-[13.5px] text-muted">Loading console…</div>
           </template>
         </ClientOnly>
       </main>

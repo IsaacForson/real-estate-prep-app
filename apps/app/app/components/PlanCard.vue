@@ -13,25 +13,35 @@ function save() { emit("set-exam-date", draft.value || null); edit.value = false
 <template>
   <AppCard title="Today's plan">
     <template #header>
-      <button type="button" class="tap -mr-2 -mt-1 inline-flex items-center gap-1.5 px-2 rounded-lg text-sm text-accent font-medium hover:bg-accent-soft" @click="edit = true">
-        <Icon name="calendar" :size="16" />{{ examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : 'Set exam date' }}
+      <button
+        type="button"
+        class="tap -mr-2 -mt-1.5 inline-flex items-center gap-1.5 rounded-lg px-2 text-[13.5px] font-medium text-accent transition-colors hover:bg-accent-soft"
+        @click="edit = true"
+      >
+        <Icon name="calendar" :size="15" />
+        {{ examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : 'Set exam date' }}
       </button>
     </template>
-    <div v-if="plan && plan.dailyTarget != null && plan.daysLeft != null" class="grid grid-cols-3 gap-2 mb-3">
+
+    <div v-if="plan && plan.dailyTarget != null && plan.daysLeft != null" class="mb-3.5 grid grid-cols-3 gap-2">
       <StatTile label="Answers today" :value="plan.dailyTarget" :tone="tone === 'neutral' ? 'default' : tone" />
       <StatTile label="Days left" :value="plan.daysLeft" />
       <StatTile label="Mocks to fit" :value="plan.mocksPlanned" />
     </div>
-    <div class="flex items-start gap-2">
+
+    <div class="flex items-start gap-2.5">
       <Badge :tone="tone">{{ statusLabel }}</Badge>
-      <p class="text-sm text-ink-2 leading-snug">{{ plan?.message ?? 'Set your exam date and the plan works backwards from it: unseen items, reds to clear, and the mocks to fit in.' }}</p>
+      <p class="text-[13.5px] leading-relaxed text-ink-2">
+        {{ plan?.message ?? 'Set your exam date and the plan works backwards from it: unseen items, reds to clear, and the mocks to fit in.' }}
+      </p>
     </div>
+
     <AppSheet :open="edit" title="Exam date" description="The plan schedules a 3-day review buffer before it." @close="edit = false">
-      <form class="grid gap-3" @submit.prevent="save">
+      <form class="grid gap-4" @submit.prevent="save">
         <AppInput v-model="draft" type="date" label="Exam date" />
         <div class="flex gap-2">
-          <AppButton v-if="examDate" variant="ghost" @click="draft = ''; save()">Clear</AppButton>
-          <AppButton type="submit" variant="primary" block>Save</AppButton>
+          <AppButton v-if="examDate" variant="ghost" size="lg" @click="draft = ''; save()">Clear</AppButton>
+          <AppButton type="submit" variant="primary" size="lg" block>Save</AppButton>
         </div>
       </form>
     </AppSheet>

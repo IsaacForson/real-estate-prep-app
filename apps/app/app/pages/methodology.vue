@@ -3,13 +3,16 @@
 useHead({ title: "How the readiness score is computed" });
 </script>
 <template>
-  <div class="max-w-3xl mx-auto safe-px py-8 md:py-14 grid gap-6 anim-fade-up">
-    <header class="grid gap-2">
-      <p class="eyebrow text-accent">Methodology</p>
-      <h1 class="text-3xl md:text-4xl display">How the readiness score is computed</h1>
-      <p class="text-ink-2">This page describes exactly what the code does. If it disagrees with the app, the app is wrong.</p>
+  <div class="safe-px anim-fade-up mx-auto grid max-w-3xl gap-7 py-8 md:py-14">
+    <header class="grid gap-3">
+      <p class="eyebrow">Methodology</p>
+      <h1 class="display text-[32px] md:text-[42px]">How the readiness score is computed</h1>
+      <p class="text-[15px] leading-relaxed text-ink-2">
+        This page describes exactly what the code does. If it disagrees with the app, the app is wrong.
+      </p>
     </header>
-    <AppCard padding="lg" class="rich text-ink-2">
+
+    <AppCard padding="lg" class="rich text-[14.5px] leading-relaxed text-ink-2">
       <h2 class="!mt-0 text-ink">1. One probability per exam section</h2>
       <p>Your state's exam has a published blueprint: so many scored items per section. For each section we estimate the chance you answer one of its items correctly, from your recent answers on that section's questions.</p>
       <ul>

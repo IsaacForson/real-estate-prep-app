@@ -18,24 +18,35 @@ function confirm() { if (canConfirm.value) settle({ ok: true, reason: reason.val
 <template>
   <dialog
     ref="dialog"
-    class="m-auto w-[min(92vw,440px)] rounded-card border border-line bg-surface p-0 text-ink shadow-xl backdrop:bg-black/40"
+    class="m-auto w-[min(92vw,440px)] rounded-panel border border-line bg-surface p-0 text-ink shadow-float backdrop:bg-black/50 backdrop:backdrop-blur-[2px] open:anim-scale-in"
     @cancel.prevent="cancel"
     @click.self="cancel"
   >
     <form v-if="pending" method="dialog" class="p-5" @submit.prevent="confirm">
       <h2 class="m-0 text-base font-semibold">{{ pending.options.title }}</h2>
-      <p v-if="pending.options.body" class="m-0 mt-2 text-sm text-muted">{{ pending.options.body }}</p>
-      <label v-if="pending.options.reason" class="mt-3 block text-sm">
+      <p v-if="pending.options.body" class="m-0 mt-1.5 text-sm leading-relaxed text-muted">{{ pending.options.body }}</p>
+      <label v-if="pending.options.reason" class="mt-4 block text-sm">
         <span class="text-muted">{{ pending.options.reason.label }}<span v-if="pending.options.reason.required" class="text-danger"> *</span></span>
-        <input ref="input" v-model="reason" :type="pending.options.reason.type ?? 'text'" class="mt-1 w-full" :placeholder="pending.options.reason.placeholder" />
+        <input
+          ref="input"
+          v-model="reason"
+          :type="pending.options.reason.type ?? 'text'"
+          class="mt-1.5 h-10 w-full rounded-lg border border-line bg-paper px-3 text-sm text-ink placeholder:text-muted focus-visible:border-accent"
+          :placeholder="pending.options.reason.placeholder"
+        />
       </label>
-      <div class="mt-4 flex justify-end gap-2">
-        <button type="button" @click="cancel">Cancel</button>
+      <div class="mt-5 flex justify-end gap-2">
+        <button
+          type="button"
+          class="inline-flex h-9 items-center rounded-lg border border-line px-3 text-sm font-medium text-ink-2 transition-colors hover:bg-surface-2"
+          @click="cancel"
+        >Cancel</button>
         <button
           type="submit"
           data-confirm
           :disabled="!canConfirm"
-          :class="pending.options.danger ? '!border-transparent !bg-danger !text-white' : 'primary'"
+          class="inline-flex h-9 items-center rounded-lg px-3.5 text-sm font-medium transition-opacity hover:opacity-90 disabled:opacity-50"
+          :class="pending.options.danger ? 'bg-danger text-white' : 'bg-action text-action-ink'"
         >{{ pending.options.confirmLabel ?? "Confirm" }}</button>
       </div>
     </form>

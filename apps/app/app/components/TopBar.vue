@@ -8,14 +8,22 @@ function goBack(back: string | boolean | undefined) {
 }
 </script>
 <template>
-  <header class="sticky top-0 z-30 safe-pt" :class="transparent ? '' : 'bg-bg/85 backdrop-blur-md border-b border-line/70'">
-    <div class="h-14 safe-px flex items-center gap-2 max-w-3xl mx-auto w-full">
-      <button v-if="back" type="button" class="tap -ml-2 grid place-items-center rounded-full text-ink hover:bg-surface-2" aria-label="Back" @click="goBack(back)"><Icon name="chevron-left" :size="24" /></button>
+  <header class="safe-pt sticky top-0 z-30" :class="transparent ? '' : 'border-b border-line bg-bg/85 backdrop-blur-xl'">
+    <div class="safe-px mx-auto flex h-14 w-full max-w-3xl items-center gap-1.5">
+      <button
+        v-if="back"
+        type="button"
+        class="tap -ml-2.5 grid place-items-center rounded-full text-ink transition-colors hover:bg-surface-2"
+        aria-label="Back"
+        @click="goBack(back)"
+      ><Icon name="chevron-left" :size="22" /></button>
+
       <div class="min-w-0 flex-1">
-        <h1 v-if="title" class="text-[17px] font-semibold leading-tight truncate">{{ title }}</h1>
-        <p v-if="context" class="text-xs text-muted truncate">{{ context }}</p>
+        <h1 v-if="title" class="truncate text-[17px] font-semibold leading-tight tracking-[-0.016em]">{{ title }}</h1>
+        <p v-if="context" class="truncate text-[12px] leading-tight text-muted">{{ context }}</p>
       </div>
-      <div class="flex items-center gap-1 -mr-1"><slot /></div>
+
+      <div class="-mr-1 flex items-center gap-1"><slot /></div>
     </div>
   </header>
 </template>

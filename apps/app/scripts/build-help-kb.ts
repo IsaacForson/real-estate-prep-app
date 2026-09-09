@@ -127,9 +127,9 @@ function topTerms(text: string, n = 8): string[] {
   const devices = section(spec, /^### 5\.3 Entitlement mechanics/);
   const onePerson = dropSentences(
     curate(sharing, { keep: /^If five people share|^Surface this in the UI/ }).replace(/^Surface this in the UI honestly, not as a threat: /m, "The app says it plainly: ")
-    + "\n\n" + curate(devices, { keep: /^\*\*Device registry\.\*\*/ }).replace(/^\*\*Device registry\.\*\* Bind entitlement to an account, allow/m, "**Devices.** Your purchase is bound to your account and works on"),
+    + "\n\n" + curate(devices, { keep: /^\*\*Device registry\.\*\*/ }).replace(/^\*\*Device registry\.\*\* Bind entitlement to an account and allow/m, "**Devices.** Your purchase is bound to your account and works on"),
     /without you doing anything|more effective than a lockout|study group of six/);
-  add("One account, one person", "Account & devices", onePerson, ["sharing", "devices", "3 devices", "readiness", "account"], "docs/SPEC.md §5.2–5.3");
+  add("One account, one person", "Account & devices", onePerson, ["sharing", "devices", "one device", "another device", "readiness", "account"], "docs/SPEC.md §5.2–5.3");
 }
 
 // ---------------------------------------------------------------------------

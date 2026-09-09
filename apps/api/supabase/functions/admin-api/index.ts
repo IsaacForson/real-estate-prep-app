@@ -153,13 +153,14 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
         "device_lookup",
       );
       if (!before) throw new HttpError(404, "device_not_found");
-      const until = await rpc<string>(db, "fn_remove_device", { p_user_id: id, p_device_id: deviceId });
+      // since 0015 the slot frees at once: this signs the device out, it can register again freely
+      const removedAt = await rpc<string>(db, "fn_remove_device", { p_user_id: id, p_device_id: deviceId });
       return {
-        data: { id, device_id: deviceId, cooldown_until: until },
+        data: { id, device_id: deviceId, removed_at: removedAt },
         targetType: "device",
         targetId: deviceId,
         before,
-        after: { removed: true, cooldown_until: until },
+        after: { removed: true, removed_at: removedAt },
       };
     }
     case "users.setAdmin": {

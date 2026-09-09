@@ -50,58 +50,110 @@ const fmt = (t: number | null) => (t ? new Date(t).toLocaleDateString(undefined,
 onMounted(() => { void content.load(); void free.load(); void study.loadHistory(50); });
 </script>
 <template>
-  <div class="grid gap-4 anim-fade-up">
+  <div class="anim-fade-up grid gap-4">
     <AppCard v-if="active" tone="accent">
       <div class="flex items-center gap-3">
-        <span class="grid place-items-center size-11 rounded-xl bg-accent text-accent-ink shrink-0"><Icon name="clock" :size="22" /></span>
-        <div class="flex-1 min-w-0"><p class="font-semibold">Mock in progress</p><p class="text-sm text-ink-2">{{ Object.keys(active.answers).length }} of {{ active.itemIds.length }} answered · timer keeps running</p></div>
+        <span class="grid size-11 shrink-0 place-items-center rounded-card bg-accent text-accent-ink">
+          <Icon name="clock" :size="21" />
+        </span>
+        <div class="min-w-0 flex-1">
+          <p class="text-[15px] font-semibold leading-tight">Mock in progress</p>
+          <p class="tabular text-[13px] text-ink-2">
+            {{ Object.keys(active.answers).length }} of {{ active.itemIds.length }} answered · timer keeps running
+          </p>
+        </div>
         <AppButton variant="primary" size="sm" icon-right="arrow-right" @click="resume">Resume</AppButton>
       </div>
     </AppCard>
 
-    <AppCard v-if="exam" :title="`${st?.name ?? jur} exam format`" :subtitle="`Every form mirrors it. Pass: ${exam.grading === 'separate' ? `${exam.pass_score_national ?? '—'} national · ${exam.pass_score_state ?? '—'} state` : (exam.pass_score_combined ?? exam.pass_score_national ?? '—')}.`">
+    <AppCard
+      v-if="exam"
+      :title="`${st?.name ?? jur} exam format`"
+      :subtitle="`Every form mirrors it. Pass: ${exam.grading === 'separate' ? `${exam.pass_score_national ?? '—'} national · ${exam.pass_score_state ?? '—'} state` : (exam.pass_score_combined ?? exam.pass_score_national ?? '—')}.`"
+    >
       <div class="grid grid-cols-3 gap-2">
         <StatTile label="National" :value="exam.national_items ?? '—'" hint="questions" />
         <StatTile label="State" :value="exam.state_items ?? exam.total_items ?? '—'" hint="questions" />
         <StatTile label="Time" :value="timeLabel" :hint="exam.grading === 'separate' ? 'graded separately' : 'one score'" />
       </div>
-      <p v-if="exam.calculator_policy" class="mt-3 text-xs text-muted">Calculator: {{ exam.calculator_policy }}</p>
+      <p v-if="exam.calculator_policy" class="mt-3.5 text-[12px] text-muted">Calculator: {{ exam.calculator_policy }}</p>
     </AppCard>
-    <AppCard v-else-if="!jur"><EmptyState icon="map" title="Choose your state" body="Mocks are built to your state's exact format. Pick a state on Home first." compact><AppButton to="/app" variant="primary" size="sm">Go to Home</AppButton></EmptyState></AppCard>
+
+    <AppCard v-else-if="!jur">
+      <EmptyState icon="map" title="Choose your state" body="Mocks are built to your state's exact format. Pick a state on Home first." compact>
+        <AppButton to="/app" variant="primary" size="sm">Go to Home</AppButton>
+      </EmptyState>
+    </AppCard>
 
     <AppCard title="Forms" padding="none">
       <ul>
-        <li v-for="f in forms" :key="f.id" class="flex items-center gap-3 px-4 min-h-16 border-b border-line last:border-b-0">
-          <span class="grid place-items-center size-9 rounded-lg text-sm font-semibold" :class="f.locked ? 'bg-surface-2 text-muted' : 'bg-accent-soft text-accent'"><Icon v-if="f.locked" name="lock" :size="16" /><template v-else>{{ f.short ? 'S' : f.id.replace('form-', '') }}</template></span>
-          <div class="flex-1 min-w-0 py-2"><p class="font-medium text-[15px] leading-snug">{{ f.title }}</p><p class="text-xs text-muted">{{ f.detail }}</p></div>
+        <li v-for="f in forms" :key="f.id" class="flex min-h-16 items-center gap-3 border-b border-line px-4 last:border-b-0">
+          <span
+            class="tabular grid size-9 shrink-0 place-items-center rounded-lg text-[13px] font-semibold"
+            :class="f.locked ? 'bg-surface-2 text-muted' : 'bg-accent-soft text-accent'"
+          >
+            <Icon v-if="f.locked" name="lock" :size="15" />
+            <template v-else>{{ f.short ? 'S' : f.id.replace('form-', '') }}</template>
+          </span>
+
+          <div class="min-w-0 flex-1 py-2">
+            <p class="text-[15px] font-medium leading-snug">{{ f.title }}</p>
+            <p class="mt-0.5 text-[12px] leading-snug text-muted">{{ f.detail }}</p>
+          </div>
+
           <AppButton v-if="!f.locked" size="sm" :variant="f.short ? 'primary' : 'secondary'" :loading="busy === f.id" :disabled="!!active" @click="confirmForm = f.id">Start</AppButton>
           <AppButton v-else-if="!complete && !f.short" size="sm" variant="soft" to="/pricing">Unlock</AppButton>
           <Badge v-else tone="outline">{{ f.short ? 'used' : 'soon' }}</Badge>
         </li>
       </ul>
-      <p v-if="!complete" class="px-4 py-3 text-xs text-muted border-t border-line">Complete includes five full-length, non-overlapping forms per state in your exam's exact format and timing — $59 once.</p>
+      <p v-if="!complete" class="border-t border-line px-4 py-3 text-[12px] leading-relaxed text-muted">
+        Complete includes five full-length, non-overlapping forms per state in your exam's exact format
+        and timing — $59 once.
+      </p>
     </AppCard>
 
     <AppCard title="Results" padding="none">
       <ul v-if="history.length">
-        <li v-for="s in history" :key="s.id" class="px-4 py-3 border-b border-line last:border-b-0 grid gap-1.5">
+        <li v-for="s in history" :key="s.id" class="grid gap-2 border-b border-line px-4 py-3.5 last:border-b-0">
           <div class="flex items-center gap-3">
-            <span class="font-semibold tabular text-lg" :class="scoreOf(s).pass == null ? '' : scoreOf(s).pass ? 'text-ok' : 'text-danger'">{{ scoreOf(s).pct }}%</span>
-            <span class="flex-1 text-sm text-ink-2">{{ scoreOf(s).c }}/{{ scoreOf(s).n }} · {{ s.mockFormId === 'short' ? 'Short mock' : s.mockFormId?.replace('form-', 'Form ') ?? 'Mock' }}</span>
+            <span
+              class="tabular text-[19px] font-semibold tracking-[-0.02em]"
+              :class="scoreOf(s).pass == null ? '' : scoreOf(s).pass ? 'text-ok' : 'text-danger'"
+            >{{ scoreOf(s).pct }}%</span>
+            <span class="tabular min-w-0 flex-1 truncate text-[13.5px] text-ink-2">
+              {{ scoreOf(s).c }}/{{ scoreOf(s).n }} ·
+              {{ s.mockFormId === 'short' ? 'Short mock' : s.mockFormId?.replace('form-', 'Form ') ?? 'Mock' }}
+            </span>
             <Badge v-if="scoreOf(s).pass != null" :tone="scoreOf(s).pass ? 'ok' : 'danger'">{{ scoreOf(s).pass ? 'pass' : 'below' }}</Badge>
-            <span class="text-xs text-muted tabular">{{ fmt(s.endedAt) }}</span>
+            <span class="tabular shrink-0 text-[12px] text-muted">{{ fmt(s.endedAt) }}</span>
           </div>
-          <div v-if="scoreOf(s).portions.length > 1" class="flex flex-wrap gap-x-3 text-xs text-muted tabular">
-            <span v-for="p in scoreOf(s).portions" :key="p.portion" class="capitalize">{{ p.portion }} {{ p.correct }}/{{ p.itemIds.length }}<template v-if="p.need != null"> ({{ p.need }} needed)</template></span>
+
+          <div v-if="scoreOf(s).portions.length > 1" class="tabular flex flex-wrap gap-x-3.5 text-[12px] text-muted">
+            <span v-for="p in scoreOf(s).portions" :key="p.portion" class="capitalize">
+              {{ p.portion }} {{ p.correct }}/{{ p.itemIds.length }}<template v-if="p.need != null"> ({{ p.need }} needed)</template>
+            </span>
           </div>
         </li>
       </ul>
-      <EmptyState v-else icon="trophy" title="No mocks finished yet" body="Finished mocks land here with a pass/below verdict per portion. Five mocks is what predicts passing." compact />
+      <EmptyState
+        v-else
+        icon="trophy"
+        title="No mocks finished yet"
+        body="Finished mocks land here with a pass/below verdict per portion. Five mocks is what predicts passing."
+        compact
+      />
     </AppCard>
 
-    <AppSheet :open="!!confirmForm" title="Start the timed mock?" description="The clock starts now and keeps running if you leave. You can resume from Home." @close="confirmForm = null">
-      <div class="grid gap-2">
-        <p class="text-sm text-ink-2">Answers don't show feedback during a mock. Your boxes update when you submit.</p>
+    <AppSheet
+      :open="!!confirmForm"
+      title="Start the timed mock?"
+      description="The clock starts now and keeps running if you leave. You can resume from Home."
+      @close="confirmForm = null"
+    >
+      <div class="grid gap-2.5">
+        <p class="text-[13.5px] leading-relaxed text-ink-2">
+          Answers don't show feedback during a mock. Your boxes update when you submit.
+        </p>
         <AppButton variant="primary" size="lg" block icon="play" @click="start(confirmForm!)">Start</AppButton>
         <AppButton variant="ghost" size="lg" block @click="confirmForm = null">Not now</AppButton>
       </div>

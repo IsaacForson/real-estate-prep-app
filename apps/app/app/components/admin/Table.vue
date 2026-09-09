@@ -2,6 +2,9 @@
 /**
  * Keyboard-accessible data table. When `@select` is bound (or `rowTo` given), rows are focusable
  * and Enter/Space activates them. Cells render `row[column.key]` unless a `cell-<key>` slot exists.
+ *
+ * Every rule is explicit rather than inherited from a global `table` stylesheet, so the table can
+ * be dropped into any surface without depending on ambient CSS.
  */
 export interface AdminColumn { key: string; label: string; align?: "left" | "right" | "center"; width?: string; hideBelow?: "md" | "lg" }
 
@@ -36,25 +39,39 @@ const alignCls = (c: AdminColumn) => (c.align === "right" ? "text-right" : c.ali
 </script>
 <template>
   <div class="overflow-x-auto rounded-card border border-line">
-    <table class="w-full border-collapse text-sm" :class="dense ? 'text-[13px]' : ''">
+    <table class="w-full border-collapse bg-surface text-[13.5px]" :class="dense ? 'text-[12.5px]' : ''">
       <caption v-if="caption" class="sr-only">{{ caption }}</caption>
-      <thead class="bg-surface-2 text-xs uppercase tracking-wide text-muted">
+
+      <thead class="bg-paper">
         <tr>
-          <th v-for="c in columns" :key="c.key" scope="col" class="whitespace-nowrap border-b border-line px-3 py-2 font-medium" :class="[alignCls(c), hide(c)]" :style="c.width ? { width: c.width } : undefined">{{ c.label }}</th>
+          <th
+            v-for="c in columns"
+            :key="c.key"
+            scope="col"
+            class="eyebrow whitespace-nowrap border-b border-line px-3 py-2.5"
+            :class="[alignCls(c), hide(c)]"
+            :style="c.width ? { width: c.width } : undefined"
+          >{{ c.label }}</th>
         </tr>
       </thead>
+
       <tbody>
         <tr
           v-for="row in rows"
           :key="rowKey(row)"
-          class="border-b border-line last:border-b-0 bg-surface"
+          class="border-b border-line transition-colors last:border-b-0"
           :class="interactive ? 'cursor-pointer hover:bg-surface-2 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent' : ''"
           :tabindex="interactive ? 0 : undefined"
           :role="interactive ? (rowTo ? 'link' : 'button') : undefined"
           @click="interactive && activate(row)"
           @keydown="interactive && onKey($event, row)"
         >
-          <td v-for="c in columns" :key="c.key" class="px-3 align-top text-ink" :class="[alignCls(c), hide(c), dense ? 'py-1.5' : 'py-2.5']">
+          <td
+            v-for="c in columns"
+            :key="c.key"
+            class="px-3 align-top text-ink"
+            :class="[alignCls(c), hide(c), dense ? 'py-2' : 'py-3']"
+          >
             <slot :name="`cell-${c.key}`" :row="row" :value="(row as any)[c.key]">{{ cellText(row, c.key) }}</slot>
           </td>
         </tr>

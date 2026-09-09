@@ -31,38 +31,79 @@ const rows = computed(() => [
 ]);
 </script>
 <template>
-  <div v-if="st" class="max-w-4xl mx-auto safe-px py-8 md:py-14 grid gap-6 anim-fade-up">
-    <NuxtLink to="/states" class="inline-flex items-center gap-1 text-sm text-accent font-medium"><Icon name="arrow-left" :size="16" />All states</NuxtLink>
-    <header class="grid gap-3">
-      <div class="flex flex-wrap items-center gap-2"><Badge tone="accent" size="md">{{ code }}</Badge><Badge :tone="st.confidence === 'high' ? 'ok' : st.confidence === 'medium' ? 'warn' : 'outline'" size="md">verified {{ st.last_verified }}</Badge></div>
-      <h1 class="text-3xl md:text-5xl display">{{ JURISDICTIONS[code] }} real estate exam — what to expect</h1>
-      <p class="text-ink-2">Sourced from the official candidate bulletin and {{ st.regulator.name }}. Confirm current requirements with the state before you schedule; formats and fees change.</p>
+  <div v-if="st" class="safe-px anim-fade-up mx-auto grid max-w-4xl gap-6 py-8 md:py-14">
+    <NuxtLink to="/states" class="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-accent hover:underline hover:underline-offset-4">
+      <Icon name="arrow-left" :size="15" />All states
+    </NuxtLink>
+
+    <header class="grid gap-3.5">
+      <div class="flex flex-wrap items-center gap-2">
+        <Badge tone="accent" size="md">{{ code }}</Badge>
+        <Badge :tone="st.confidence === 'high' ? 'ok' : st.confidence === 'medium' ? 'warn' : 'outline'" size="md">verified {{ st.last_verified }}</Badge>
+      </div>
+      <h1 class="display text-[32px] md:text-[48px]">{{ JURISDICTIONS[code] }} real estate exam — what to expect</h1>
+      <p class="text-[15px] leading-relaxed text-ink-2">
+        Sourced from the official candidate bulletin and {{ st.regulator.name }}. Confirm current
+        requirements with the state before you schedule; formats and fees change.
+      </p>
     </header>
 
-    <div class="grid md:grid-cols-[1.2fr_1fr] gap-4 items-start">
+    <div class="grid items-start gap-4 md:grid-cols-[1.2fr_1fr]">
       <AppCard title="Exam format" subtitle="Salesperson / entry level" padding="none">
-        <dl class="divide-y divide-line">
-          <div v-for="[k, v] in rows" :key="k" class="grid grid-cols-[130px_1fr] gap-3 px-4 sm:px-5 py-3 text-sm"><dt class="text-muted">{{ k }}</dt><dd class="text-ink">{{ v }}</dd></div>
+        <dl>
+          <div
+            v-for="[k, v] in rows"
+            :key="k"
+            class="grid grid-cols-[124px_1fr] gap-3 border-b border-line px-4 py-3 text-[13.5px] last:border-b-0 sm:px-5"
+          >
+            <dt class="text-muted">{{ k }}</dt>
+            <dd class="leading-relaxed text-ink">{{ v }}</dd>
+          </div>
         </dl>
-        <p v-if="bank" class="px-4 sm:px-5 py-3 text-xs text-muted border-t border-line">{{ st.vendor === 'psi' ? 'PSI' : 'Pearson VUE' }} administers the exam, so we route you to the <strong class="text-ink">{{ bank.replace('national_', '') }}</strong> national bank, weighted to its published outline.</p>
+        <p v-if="bank" class="border-t border-line px-4 py-3.5 text-[12px] leading-relaxed text-muted sm:px-5">
+          {{ st.vendor === 'psi' ? 'PSI' : 'Pearson VUE' }} administers the exam, so we route you to
+          the <strong class="font-semibold text-ink">{{ bank.replace('national_', '') }}</strong>
+          national bank, weighted to its published outline.
+        </p>
       </AppCard>
+
       <div class="grid gap-4">
         <AppCard title="Law you'll be tested on">
-          <p class="font-serif text-lg">{{ st.statute_citation_root ?? '—' }}</p>
-          <p v-if="st.rules_citation_root" class="text-sm text-muted mt-1">{{ st.rules_citation_root }}</p>
-          <div class="mt-3 grid gap-1.5 text-sm">
-            <a v-if="st.bulletin_url" :href="st.bulletin_url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-accent font-medium"><Icon name="external" :size="15" />Official candidate bulletin</a>
-            <a v-if="st.statute_url" :href="st.statute_url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-accent font-medium"><Icon name="external" :size="15" />Statute text</a>
-            <a v-if="st.regulator.url" :href="st.regulator.url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-accent font-medium"><Icon name="external" :size="15" />{{ st.regulator.name }}</a>
+          <!-- The citation root is set in serif for the same reason CitationBlock is: it is law, not UI. -->
+          <p class="font-serif text-[19px] leading-snug">{{ st.statute_citation_root ?? '—' }}</p>
+          <p v-if="st.rules_citation_root" class="mt-1 text-[13px] text-muted">{{ st.rules_citation_root }}</p>
+
+          <div class="mt-4 grid gap-2 text-[13.5px]">
+            <a v-if="st.bulletin_url" :href="st.bulletin_url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-medium text-accent hover:underline hover:underline-offset-4">
+              <Icon name="external" :size="15" />Official candidate bulletin
+            </a>
+            <a v-if="st.statute_url" :href="st.statute_url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-medium text-accent hover:underline hover:underline-offset-4">
+              <Icon name="external" :size="15" />Statute text
+            </a>
+            <a v-if="st.regulator.url" :href="st.regulator.url" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 font-medium text-accent hover:underline hover:underline-offset-4">
+              <Icon name="external" :size="15" />{{ st.regulator.name }}
+            </a>
           </div>
-          <p v-if="st.unverified.length" class="mt-3 text-xs text-warn">Still being verified against primary sources: {{ st.unverified.join(', ') }}.</p>
-          <p v-if="st.notes" class="mt-2 text-xs text-muted">{{ st.notes }}</p>
+
+          <p v-if="st.unverified.length" class="mt-4 text-[12px] leading-relaxed text-warn">
+            Still being verified against primary sources: {{ st.unverified.join(', ') }}.
+          </p>
+          <p v-if="st.notes" class="mt-2 text-[12px] leading-relaxed text-muted">{{ st.notes }}</p>
         </AppCard>
+
         <AppCard tone="accent">
-          <p class="eyebrow text-accent">Our {{ code }} bank</p>
-          <p class="mt-1 text-2xl display tabular">{{ status?.phase === 'complete' ? status.published : ((status?.verified ?? 0) + (status?.published ?? 0)) || '—' }} <span class="text-sm font-normal text-ink-2">{{ status?.phase === 'complete' ? 'published questions' : 'verified questions · in production' }}</span></p>
-          <p class="mt-2 text-sm text-ink-2">Each cites the {{ st.statute_citation_root ?? 'statute' }} section it rests on. {{ status?.mocks ? `${status.mocks} full-length mock forms.` : 'Mock forms arrive as the bank fills.' }}</p>
-          <AppButton :to="auth.signedIn.value ? '/app' : '/signin'" variant="primary" class="mt-4" icon-right="arrow-right">Study for {{ JURISDICTIONS[code] }}</AppButton>
+          <p class="eyebrow">Our {{ code }} bank</p>
+          <p class="display tabular mt-1.5 text-[28px]">
+            {{ status?.phase === 'complete' ? status.published : ((status?.verified ?? 0) + (status?.published ?? 0)) || '—' }}
+            <span class="text-[13px] font-normal tracking-normal text-ink-2">{{ status?.phase === 'complete' ? 'published questions' : 'verified questions · in production' }}</span>
+          </p>
+          <p class="mt-2.5 text-[13.5px] leading-relaxed text-ink-2">
+            Each cites the {{ st.statute_citation_root ?? 'statute' }} section it rests on.
+            {{ status?.mocks ? `${status.mocks} full-length mock forms.` : 'Mock forms arrive as the bank fills.' }}
+          </p>
+          <AppButton :to="auth.signedIn.value ? '/app' : '/signin'" variant="primary" class="mt-4" icon-right="arrow-right">
+            Study for {{ JURISDICTIONS[code] }}
+          </AppButton>
         </AppCard>
       </div>
     </div>

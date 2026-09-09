@@ -6,7 +6,7 @@ useHead({ title: "Terms of use" });
     <h2 class="!mt-0 text-ink">1. The service</h2>
     <p>Real Estate Exam Prep is a study aid for US real estate licensing examinations, operated by Forsare Ventures Ltd. It provides practice questions, explanations with statutory citations, timed mock examinations, audio narration and a readiness estimate. It does not provide pre-licensing education credit and is not affiliated with any exam vendor or licensing authority.</p>
     <h2 class="text-ink">2. Your account</h2>
-    <p>One account is for one person. Sign-in is by email code; keep access to that mailbox secure. Up to three devices may be registered to an account and one session is active at a time. We may suspend accounts that show signs of sharing, automated access, or attempts to extract the question bank.</p>
+    <p>One account is for one person. Sign-in is by email code; keep access to that mailbox secure. An account is used on one device at a time: signing in on a device signs out the one you used before, as often as you like. We may suspend accounts that show signs of sharing, automated access, or attempts to extract the question bank.</p>
     <h2 class="text-ink">3. Free tier and Complete</h2>
     <p>The free tier includes a fixed number of questions in one state and one short mock, counted per account and per device. <strong>Complete</strong> is a one-time purchase that unlocks all jurisdictions, both national banks, all mocks and all future content updates for the life of the service. It is not a subscription and is not transferable between accounts.</p>
     <h2 class="text-ink">4. Purchases</h2>

@@ -53,18 +53,18 @@ const amount = (e: AdminEvent) => {
   return Number.isFinite(n) ? adminFmt.usd(n) : "—";
 };
 const eventRows = computed(() => (events.data.value ?? []).map((e, i) => ({ ...e, _key: e.id ?? `${e.kind}-${i}` })));
+const rangeOptions = computed(() => ranges.map((r) => ({ value: r.v, label: r.label })));
 </script>
 <template>
   <div class="space-y-5">
-    <div class="flex flex-wrap items-end justify-between gap-3">
-      <div>
-        <h1 class="m-0 text-xl font-semibold">Sales</h1>
-        <p class="m-0 text-sm text-muted">Store purchases, refunds and conversion. Revenue is what the stores report, before their fees.</p>
-      </div>
-      <div class="inline-flex rounded-lg border border-line bg-surface p-0.5" role="tablist" aria-label="Time range">
-        <button v-for="r in ranges" :key="r.v" type="button" role="tab" :aria-selected="range === r.v" class="!rounded-md !border-0 !px-3 !py-1 text-sm" :class="range === r.v ? '!bg-accent !text-accent-ink' : '!bg-transparent text-muted hover:text-ink'" @click="range = r.v">{{ r.label }}</button>
-      </div>
-    </div>
+    <AdminPageHead title="Sales" subtitle="Store purchases, refunds and conversion. Revenue is what the stores report, before their fees.">
+      <AdminSegmented
+        :model-value="range"
+        :options="rangeOptions"
+        aria-label="Time range"
+        @update:model-value="(v) => (range = v as AdminRange)"
+      />
+    </AdminPageHead>
 
     <AdminState :loading="kpis.loading.value" :error="kpis.error.value" :empty="!k" @retry="kpis.reload">
       <template v-if="k">
@@ -80,7 +80,7 @@ const eventRows = computed(() => (events.data.value ?? []).map((e, i) => ({ ...e
             <AdminChart :labels="labels" :series="purchaseSeries" type="bar" title="Purchases per day" />
           </AdminCard>
           <AdminCard title="By store">
-            <p v-if="!storeRows.length" class="m-0 text-sm text-muted">No purchases in this range.</p>
+            <p v-if="!storeRows.length" class="m-0 text-[13px] text-muted">No purchases in this range.</p>
             <AdminTable v-else :columns="storeCols" :rows="storeRows" :row-key="(r) => r.store" dense caption="Revenue by store">
               <template #cell-store="{ row }"><span class="font-medium capitalize">{{ row.store }}</span></template>
               <template #cell-count="{ row }"><span class="tabular-nums">{{ adminFmt.int(row.count) }}</span></template>
@@ -93,7 +93,9 @@ const eventRows = computed(() => (events.data.value ?? []).map((e, i) => ({ ...e
     </AdminState>
 
     <AdminCard title="Recent purchase events" subtitle="latest 100 purchase_* events across all users" flush>
-      <template #actions><button type="button" class="!px-3 !py-1 text-sm" :disabled="events.loading.value" @click="events.reload">Refresh</button></template>
+      <template #actions>
+        <AppButton variant="secondary" size="sm" icon="refresh" :loading="events.loading.value" @click="events.reload">Refresh</AppButton>
+      </template>
       <div class="px-4 pb-4">
         <AdminState :loading="events.loading.value" :error="events.error.value" :empty="events.loaded.value && eventRows.length === 0" empty-text="No purchase events yet." @retry="events.reload">
           <AdminTable :columns="eventCols" :rows="eventRows" :row-key="(r) => r._key" :row-to="(r) => (r.user_id ? `/admin/users/${r.user_id}` : null)" dense caption="Recent purchase events">

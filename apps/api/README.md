@@ -25,7 +25,7 @@ apps/api/
       0001_init.sql          enums, domains, helpers, audit_log
       0002_profiles.sql      profiles (home state, exam date, sharing_notice_ack, current_session_id)
       0003_entitlements.sql  entitlements, webhook_events, grant/revoke/transfer functions
-      0004_devices_sessions.sql  devices (3 slots, 7-day cooldown), sessions (single live), fn_register_device …
+      0004_devices_sessions.sql  devices, sessions (single live), fn_register_device … (device rule revised by 0015)
       0005_item_delivery.sql item_index (ids only), item_id_aliases, canary_items, item_batches, rate_limits
       0006_progress.sql      progress (lww), item_stats (trigger), study_sessions, fn_record_answer(s), fn_readiness_inputs
       0007_anomaly.sql       geo_events, anomaly_flags, email_outbox, fn_open_anomaly_flag
@@ -40,8 +40,8 @@ apps/api/
       _shared/               auth, db, hmac, response, limits, pure rule modules (+ tests)
       issue-batch/           signed item batches, srs-due first, look-ahead by blueprint node, device free tier
       sync-progress/         two-way lww sync + anomaly heuristics + re-verification email
-      register-device/       3-device rule, starts the single live session, touches the device fingerprint
-      remove-device/         self-service removal with 7-day cooldown
+      register-device/       takes over the single device slot, starts the single live session, touches the fingerprint
+      remove-device/         signs a device out (slot frees immediately)
       track-event/           batches of learner events (anonymous allowed with x-device-hash)
       study-state/           settings + plan, merged server-side, lww
       mock-start/ mock-finish/  server-built timed mocks + server-side scoring
@@ -103,7 +103,7 @@ pnpm db:smoke  # migrations + seed + scripts/pg-smoke.sql on a throwaway local p
 ```
 
 `db:smoke` stands in the `auth` and `storage` schemas with `scripts/pg-shim.sql` and then drives
-the rules the way PostgREST would (`set role` + `request.jwt.claims`): 3-device limit, cooldown,
+the rules the way PostgREST would (`set role` + `request.jwt.claims`): single-device takeover,
 single session, idempotent grants, aliasing, lww, `item_stats` deltas, RLS denials, anomaly dedupe,
 and (v2) the ≥3-accounts device rule, per-device free tier, coupon redemption, entitlement pause,
 study_state merge, answers alias resolution, frozen finished mocks, support/review RLS, admin
@@ -145,8 +145,9 @@ see `supabase/.env.example` for the full annotated list.
    optional `name` and `model`. The response carries `device_id` and `session_id`; send them as
    `x-device-id` / `x-session-id` on every later call. A sign-in elsewhere revokes this session
    and the next call returns `401 session_revoked` with a plain-language message (SPEC §5.3).
-   `409 device_limit` lists the active devices so the UI can offer removal (`POST remove-device`;
-   the slot stays busy for 7 days).
+   Registration is never refused: one active device per account (0015), and this call takes the slot
+   over, retiring the previous device. The response lists what it signed out in `signed_out`.
+   `POST remove-device` signs a device out by hand; the slot frees at once.
 4. **Items** — `POST issue-batch` with `{ bank, jurisdiction, kind, size, nodes?, form_id? }`.
    You get **public ids** (per-user aliases; real item ids never leave the server), a signed
    `content_url` for the batch json (real stems now — see "Content bucket contract"), an
@@ -248,7 +249,7 @@ from the profile row, never from a claim), body `{ op, params }`. Response `{ ok
 | `users.get` | `{ id }` → `{ id, auth{email,created_at,last_sign_in_at,banned_until}, profile, entitlements[], devices[], device_fingerprints[], sessions[], free_tier{jur:{questions_used,mocks_used}}, study{answers,accuracy,mocks,items_seen,items_green,leeches,last_answered_at}, events[≤200], tickets[], reviews[], coupons[], anomaly_flags[] }` |
 | `users.disable` / `users.enable` | `{ id, reason? }` / `{ id }` — auth ban (`ban_duration`) + app sessions revoked |
 | `users.sendCode` | `{ id }` — sends the OTP email to the user |
-| `users.removeDevice` | `{ id, device_id }` — `fn_remove_device` (7-day cooldown) |
+| `users.removeDevice` | `{ id, device_id }` — `fn_remove_device` (signs it out; slot frees at once) |
 | `users.setAdmin` | `{ id, is_admin }` |
 | `entitlements.grant` | `{ user_id, product, note? }` — source `manual`, idempotent on `manual:<uid>:<product>` |
 | `entitlements.revoke` | `{ user_id, product, reason? }` |
@@ -275,7 +276,7 @@ tables the console shows. Tables marked *service* have no client policies.
 | `profiles` | one per auth user (trigger). `current_session_id` + `last_reverified_at` are server-owned. `is_admin` (0009). |
 | `entitlements` | `complete` / `pass_guarantee`; live = `revoked_at is null and (paused_until is null or past)`. Unique on `(source, external_id, product)` → idempotent grants. Sources now include `coupon`. |
 | `webhook_events` *(service)* | unique `(provider, event_id)`; a failed attempt leaves `processed_at` null so the provider retry is reprocessed. |
-| `devices` | unique `(user_id, fingerprint_hash)`; 3 slots, 7-day cooldown (0004). |
+| `devices` | unique `(user_id, fingerprint_hash)`; one active row per user, newest sign-in wins (0015). `cooldown_until` is vestigial and always null. |
 | `device_fingerprints` *(service + admin read)* | pk `device_hash`; `account_ids[]`, `account_history` (first-seen per account), `blocked`, `free_tier_exhausted_at`. `fn_touch_device_fingerprint` applies the ≥3-in-30-days rule. |
 | `free_tier_usage` | pk `(scope user\|device, scope_id, jurisdiction)`; `questions_used`, `mocks_used`. Owner reads the user scope. `fn_user_free_tier`, `fn_device_free_tier`, `fn_bump_free_tier_usage`. |
 | `sessions` | one live row per account (0004). |

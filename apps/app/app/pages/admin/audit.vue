@@ -38,33 +38,46 @@ const summarize = (v: unknown) => {
 </script>
 <template>
   <div class="space-y-4">
-    <div>
-      <h1 class="m-0 text-xl font-semibold">Audit log</h1>
-      <p class="m-0 text-sm text-muted">Every admin-api call, newest first. Expand a row to see the before/after snapshot.</p>
-    </div>
+    <AdminPageHead
+      title="Audit log"
+      subtitle="Every admin-api call, newest first. Expand a row to see the before/after snapshot."
+    >
+      <AppButton variant="secondary" size="sm" icon="refresh" :loading="q.loading.value" @click="q.reload">Refresh</AppButton>
+    </AdminPageHead>
 
     <AdminState :loading="q.loading.value" :error="q.error.value" :empty="q.loaded.value && rows.length === 0" empty-text="No admin actions recorded yet." @retry="q.reload">
       <AdminTable :columns="columns" :rows="rows" :row-key="(r) => r.id" dense caption="Audit log">
         <template #cell-created_at="{ row }"><AdminTime :value="row.created_at" /></template>
         <template #cell-admin="{ row }">
-          <span class="text-xs">{{ row.admin_email ?? adminFmt.short(row.admin_id, 10) }}</span>
+          <span class="text-[12px]">{{ row.admin_email ?? adminFmt.short(row.admin_id, 10) }}</span>
         </template>
-        <template #cell-action="{ row }"><code class="rounded bg-surface-2 px-1.5 py-0.5 text-xs">{{ row.action }}</code></template>
+        <template #cell-action="{ row }"><code class="rounded bg-surface-2 px-1.5 py-0.5 text-[11.5px]">{{ row.action }}</code></template>
         <template #cell-target="{ row }">
-          <span v-if="row.target_type" class="text-xs uppercase text-muted">{{ row.target_type }} </span>
-          <NuxtLink v-if="targetLink(row.target_type, row.target_id)" :to="targetLink(row.target_type, row.target_id)!" class="font-mono text-xs">{{ row.target_id }}</NuxtLink>
-          <span v-else class="font-mono text-xs">{{ row.target_id ?? "—" }}</span>
+          <span v-if="row.target_type" class="text-[11px] uppercase tracking-[0.04em] text-muted">{{ row.target_type }} </span>
+          <NuxtLink v-if="targetLink(row.target_type, row.target_id)" :to="targetLink(row.target_type, row.target_id)!" class="font-mono text-[11.5px] text-accent hover:underline">{{ row.target_id }}</NuxtLink>
+          <span v-else class="font-mono text-[11.5px]">{{ row.target_id ?? "—" }}</span>
         </template>
         <template #cell-diff="{ row }">
           <template v-if="hasDiff(row.before, row.after)">
-            <button type="button" class="!border-0 !bg-transparent !p-0 text-xs text-accent" :aria-expanded="expanded === row.id" @click="expanded = expanded === row.id ? null : row.id">{{ expanded === row.id ? "Hide" : "Show" }} before / after</button>
-            <div v-if="expanded === row.id" class="mt-1 grid gap-2 md:grid-cols-2">
-              <div><div class="text-xs text-muted">Before</div><pre class="m-0 max-h-48 overflow-auto rounded bg-surface-2 p-2 text-xs">{{ row.before == null ? "—" : JSON.stringify(row.before, null, 2) }}</pre></div>
-              <div><div class="text-xs text-muted">After</div><pre class="m-0 max-h-48 overflow-auto rounded bg-surface-2 p-2 text-xs">{{ row.after == null ? "—" : JSON.stringify(row.after, null, 2) }}</pre></div>
+            <button
+              type="button"
+              class="text-[11.5px] font-medium text-accent hover:underline"
+              :aria-expanded="expanded === row.id"
+              @click="expanded = expanded === row.id ? null : row.id"
+            >{{ expanded === row.id ? "Hide" : "Show" }} before / after</button>
+            <div v-if="expanded === row.id" class="mt-1.5 grid gap-2 md:grid-cols-2">
+              <div>
+                <div class="text-[11px] uppercase tracking-[0.04em] text-muted">Before</div>
+                <pre class="m-0 mt-1 max-h-48 overflow-auto rounded-lg border border-line bg-surface-2 p-2 text-[11.5px]">{{ row.before == null ? "—" : JSON.stringify(row.before, null, 2) }}</pre>
+              </div>
+              <div>
+                <div class="text-[11px] uppercase tracking-[0.04em] text-muted">After</div>
+                <pre class="m-0 mt-1 max-h-48 overflow-auto rounded-lg border border-line bg-surface-2 p-2 text-[11.5px]">{{ row.after == null ? "—" : JSON.stringify(row.after, null, 2) }}</pre>
+              </div>
             </div>
-            <div v-else class="text-xs text-muted">{{ summarize(row.after ?? row.before) }}</div>
+            <div v-else class="text-[11.5px] text-muted">{{ summarize(row.after ?? row.before) }}</div>
           </template>
-          <span v-else class="text-xs text-muted">—</span>
+          <span v-else class="text-[11.5px] text-muted">—</span>
         </template>
       </AdminTable>
       <AdminPager :page="page" :count="rows.length" :has-prev="page > 1" :has-next="!!next" :loading="q.loading.value" label="entries" @prev="goPrev" @next="goNext" />

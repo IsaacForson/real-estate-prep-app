@@ -1,6 +1,8 @@
 <script setup lang="ts">
-/** Legacy route: redirected to the /app shell. */
-definePageMeta({ layout: "bare" });
-await navigateTo("/app/study/practice", { replace: true, redirectCode: 301 });
+/** Legacy pre-V2 URL. The study loop is now at /app. */
+definePageMeta({ layout: false });
+await navigateTo("/app", { replace: true, redirectCode: 301 });
 </script>
-<template><div /></template>
+<template>
+  <div />
+</template>

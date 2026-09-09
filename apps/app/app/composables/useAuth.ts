@@ -6,25 +6,26 @@
  *   entitlement, study-state hydrate, free tier) BEFORE `ready` flips, so no screen ever renders
  *   free-tier or empty-progress UI for a paid, experienced learner (V2 §6.1). Slow networks are
  *   capped: after HYDRATE_TIMEOUT_MS the app proceeds and the hooks finish in the background.
- * - `register-device` binds the install (device hash) and starts the account's single live
- *   session; its ids are sent as x-device-id / x-session-id. `session_revoked` → local sign-out.
+ * - `register-device` binds the install (device hash) and takes over the account's single device
+ *   slot; its ids are sent as x-device-id / x-session-id. `session_revoked` → local sign-out.
+ *   One device at a time (0015): signing in here signs out wherever you were before, and it can
+ *   never be refused, so there is no device-limit state to carry.
  */
 import type { User } from "@supabase/supabase-js";
 import { runSignedIn, runSignedOut, withTimeout } from "~~/lib/state/hooks";
 import { getDb } from "~~/lib/study/db";
-import { ApiError, callFunction, functionsBase } from "~~/lib/study/api";
+import { callFunction, functionsBase } from "~~/lib/study/api";
 import { defaultDeviceName, platform } from "~~/lib/study/fingerprint";
 
-export interface DeviceCreds { deviceId: string; sessionId: string; userId: string }
-export interface DeviceLimit {
-  max: number;
-  occupied: number;
-  nextSlotFreesAt: string | null;
-  devices: Array<{ id: string; platform: string; name: string | null; last_seen: string }>;
+/** Fallback wording when a displaced device was never given a name. */
+function deviceLabel(p: string): string {
+  return p === "web" ? "your computer" : p === "ios" || p === "android" ? "your phone" : "your other device";
 }
+
+export interface DeviceCreds { deviceId: string; sessionId: string; userId: string }
 export interface AuthNotice { kind: "info" | "warn"; text: string }
 
-export const SESSION_REVOKED_MESSAGE = "You signed in on another device. One active session per account.";
+export const SESSION_REVOKED_MESSAGE = "You signed in on another device. Sign in again to study here.";
 export const HYDRATE_TIMEOUT_MS = 8000;
 const DEVICE_KV = "auth.device";
 
@@ -42,7 +43,6 @@ export function useAuth() {
   const ready = useState<boolean>("auth.ready", () => false);
   const notice = useState<AuthNotice | null>("auth.notice", () => null);
   const device = useState<DeviceCreds | null>("auth.device", () => null);
-  const deviceLimit = useState<DeviceLimit | null>("auth.deviceLimit", () => null);
   const busy = useState<boolean>("auth.busy", () => false);
   /** true while the signed-in hooks (entitlement, study state …) run for the current user */
   const hydratingState = useState<boolean>("auth.hydrating", () => false);
@@ -138,7 +138,10 @@ export function useAuth() {
     return h && h["x-device-id"] ? h : null;
   }
 
-  /** register-device: binds this install and starts the single live session (kicks other devices). */
+  /**
+   * register-device: binds this install and takes over the account's single device slot. Whatever
+   * device held it is signed out (it sees 401 session_revoked), so this call cannot be refused.
+   */
   function registerDevice(name?: string): Promise<boolean> {
     if (registering) return registering;
     registering = (async () => {
@@ -148,7 +151,11 @@ export function useAuth() {
       busy.value = true;
       try {
         const deviceHash = await dev.ensure();
-        const res = await callFunction<{ device_id: string; session_id: string }>(base, "register-device", {
+        const res = await callFunction<{
+          device_id: string;
+          session_id: string;
+          signed_out?: Array<{ id: string; platform: string; name: string | null }>;
+        }>(base, "register-device", {
           fingerprint_hash: deviceHash,
           device_hash: deviceHash,
           platform: platform(),
@@ -157,16 +164,15 @@ export function useAuth() {
         const creds: DeviceCreds = { deviceId: res.device_id, sessionId: res.session_id, userId: uid };
         device.value = creds;
         await getDb().kv.put({ key: DEVICE_KV, value: creds });
-        deviceLimit.value = null;
-        return true;
-      } catch (e) {
-        if (e instanceof ApiError && e.code === "device_limit") {
-          const x = e.extra as Partial<{ max: number; occupied: number; next_slot_frees_at: string | null; devices: DeviceLimit["devices"] }>;
-          deviceLimit.value = { max: x.max ?? 3, occupied: x.occupied ?? 3, nextSlotFreesAt: x.next_slot_frees_at ?? null, devices: x.devices ?? [] };
-          notice.value = { kind: "warn", text: "This account already has 3 devices. Remove one on the Account page to study here." };
-        } else {
-          notice.value = { kind: "warn", text: "Couldn't register this device yet. We'll retry when you're online." };
+        // say so plainly rather than letting the other device go quiet unexplained
+        const kicked = res.signed_out?.[0];
+        if (kicked) {
+          notice.value = { kind: "info", text: `Signed out ${kicked.name ?? deviceLabel(kicked.platform)} — one device at a time.` };
         }
+        return true;
+      } catch {
+        // registration can no longer be refused on policy grounds, so anything here is transport
+        notice.value = { kind: "warn", text: "Couldn't register this device yet. We'll retry when you're online." };
         return false;
       } finally {
         busy.value = false;
@@ -214,7 +220,6 @@ export function useAuth() {
     user.value = null;
     hydratedFor = null;
     device.value = null;
-    deviceLimit.value = null;
     await getDb().kv.delete(DEVICE_KV);
     notice.value = reason ? { kind: "info", text: reason } : null;
   }
@@ -226,7 +231,7 @@ export function useAuth() {
   function dismissNotice() { notice.value = null; }
 
   return {
-    configured, ready, user, signedIn, notice, device, deviceLimit, busy, hydrating: hydratingState,
+    configured, ready, user, signedIn, notice, device, busy, hydrating: hydratingState,
     init, accessToken, authHeaders, apiHeaders, registerDevice,
     signInWithEmail, verifyEmailCode, signOut, onSessionRevoked, dismissNotice,
   };

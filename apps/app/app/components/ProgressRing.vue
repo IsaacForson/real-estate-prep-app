@@ -10,11 +10,26 @@ const color = computed(() => {
 });
 </script>
 <template>
-  <div class="relative inline-grid place-items-center" :style="{ width: `${size}px`, height: `${size}px` }" role="img" :aria-label="label ?? `${Math.round(pct)} percent`">
+  <div
+    class="relative inline-grid place-items-center"
+    :style="{ width: `${size}px`, height: `${size}px` }"
+    role="img"
+    :aria-label="label ?? `${Math.round(pct)} percent`"
+  >
     <svg :width="size" :height="size" :viewBox="`0 0 ${size} ${size}`" class="-rotate-90">
       <circle :cx="size / 2" :cy="size / 2" :r="r" fill="none" stroke="var(--surface-3)" :stroke-width="stroke" />
-      <circle :cx="size / 2" :cy="size / 2" :r="r" fill="none" :stroke="color" :stroke-width="stroke" stroke-linecap="round"
-        :stroke-dasharray="c" :stroke-dashoffset="c * (1 - pct / 100)" class="transition-[stroke-dashoffset] duration-700 ease-out" />
+      <circle
+        :cx="size / 2"
+        :cy="size / 2"
+        :r="r"
+        fill="none"
+        :stroke="color"
+        :stroke-width="stroke"
+        stroke-linecap="round"
+        :stroke-dasharray="c"
+        :stroke-dashoffset="c * (1 - pct / 100)"
+        class="transition-[stroke-dashoffset] duration-700 ease-emphasized"
+      />
     </svg>
     <div class="absolute inset-0 grid place-items-center text-center"><slot /></div>
   </div>

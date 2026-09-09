@@ -1,35 +1,62 @@
 <script setup lang="ts">
 const year = new Date().getFullYear();
+const groups = [
+  {
+    label: "Product",
+    links: [
+      { to: "/states", text: "States" },
+      { to: "/pricing", text: "Pricing" },
+      { to: "/methodology", text: "How readiness is computed" },
+      { to: "/reviews", text: "Reviews" },
+    ],
+  },
+  {
+    label: "Support",
+    links: [
+      { to: "/help", text: "Help Center" },
+      { to: "/help/contact", text: "Contact us" },
+      { to: "/signin", text: "Sign in" },
+    ],
+  },
+  {
+    label: "Legal",
+    links: [
+      { to: "/legal/terms", text: "Terms" },
+      { to: "/legal/privacy", text: "Privacy" },
+      { to: "/legal/refunds", text: "Refunds & guarantee" },
+      { to: "/legal/disclaimer", text: "Disclaimer" },
+    ],
+  },
+];
 </script>
 <template>
-  <footer class="border-t border-line mt-16 bg-paper">
-    <div class="max-w-6xl mx-auto safe-px py-10 grid gap-8 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-      <div class="grid gap-3 content-start">
+  <footer class="mt-20 border-t border-line bg-paper">
+    <div class="safe-px mx-auto grid max-w-6xl gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+      <div class="grid content-start gap-3.5">
         <BrandMark :size="28" wordmark />
-        <p class="text-sm text-muted max-w-xs">Independent exam prep for all 50 states and DC. Every answer cites the statute it rests on. One payment, forever.</p>
-        <p class="text-xs text-muted">© {{ year }} Forsare Ventures Ltd.</p>
+        <p class="max-w-[34ch] text-[13.5px] leading-relaxed text-muted">
+          Independent exam prep for all 50 states and DC. Every answer cites the statute it rests on.
+          One payment, forever.
+        </p>
       </div>
-      <nav class="grid gap-2 text-sm content-start" aria-label="Product">
-        <span class="eyebrow">Product</span>
-        <NuxtLink to="/states" class="text-ink-2 hover:text-ink">States</NuxtLink>
-        <NuxtLink to="/pricing" class="text-ink-2 hover:text-ink">Pricing</NuxtLink>
-        <NuxtLink to="/methodology" class="text-ink-2 hover:text-ink">How readiness is computed</NuxtLink>
-        <NuxtLink to="/reviews" class="text-ink-2 hover:text-ink">Reviews</NuxtLink>
-      </nav>
-      <nav class="grid gap-2 text-sm content-start" aria-label="Support">
-        <span class="eyebrow">Support</span>
-        <NuxtLink to="/help" class="text-ink-2 hover:text-ink">Help Center</NuxtLink>
-        <NuxtLink to="/help/contact" class="text-ink-2 hover:text-ink">Contact us</NuxtLink>
-        <NuxtLink to="/signin" class="text-ink-2 hover:text-ink">Sign in</NuxtLink>
-      </nav>
-      <nav class="grid gap-2 text-sm content-start" aria-label="Legal">
-        <span class="eyebrow">Legal</span>
-        <NuxtLink to="/legal/terms" class="text-ink-2 hover:text-ink">Terms</NuxtLink>
-        <NuxtLink to="/legal/privacy" class="text-ink-2 hover:text-ink">Privacy</NuxtLink>
-        <NuxtLink to="/legal/refunds" class="text-ink-2 hover:text-ink">Refunds & guarantee</NuxtLink>
-        <NuxtLink to="/legal/disclaimer" class="text-ink-2 hover:text-ink">Disclaimer</NuxtLink>
+
+      <nav v-for="g in groups" :key="g.label" class="grid content-start gap-2.5" :aria-label="g.label">
+        <span class="eyebrow">{{ g.label }}</span>
+        <NuxtLink
+          v-for="l in g.links"
+          :key="l.to"
+          :to="l.to"
+          class="text-[13.5px] text-ink-2 transition-colors hover:text-ink"
+        >{{ l.text }}</NuxtLink>
       </nav>
     </div>
-    <div class="max-w-6xl mx-auto safe-px pb-8 text-xs text-muted">Not affiliated with, endorsed by, or sponsored by Pearson VUE, PSI, or any state real estate commission. Trademarks belong to their owners.</div>
+
+    <div class="safe-px mx-auto max-w-6xl border-t border-line py-6">
+      <p class="text-[12px] leading-relaxed text-muted">
+        Not affiliated with, endorsed by, or sponsored by Pearson VUE, PSI, or any state real estate
+        commission. Trademarks belong to their owners.
+      </p>
+      <p class="mt-2 text-[12px] text-muted">© {{ year }} Forsare Ventures Ltd.</p>
+    </div>
   </footer>
 </template>

@@ -2,7 +2,7 @@
 /** No chrome at all: welcome carousel and sign-in on every platform. */
 </script>
 <template>
-  <div class="min-h-dvh bg-bg text-ink flex flex-col safe-pt safe-pb">
+  <div class="safe-pt safe-pb flex min-h-dvh flex-col bg-bg text-ink">
     <slot />
     <Toast />
   </div>

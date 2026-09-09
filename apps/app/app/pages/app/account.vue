@@ -57,58 +57,102 @@ watch(() => auth.user.value?.id, (id) => { if (id) { void entitlement.load(); vo
 onMounted(() => { void free.load(); });
 </script>
 <template>
-  <div class="grid gap-4 anim-fade-up">
+  <div class="anim-fade-up grid gap-4">
+    <!-- Identity and entitlement first: the two things people open this screen to check. -->
     <AppCard>
-      <div class="flex items-center gap-3">
-        <span class="grid place-items-center size-12 rounded-full bg-accent-soft text-accent font-semibold text-lg uppercase">{{ auth.user.value?.email?.[0] ?? '?' }}</span>
-        <div class="flex-1 min-w-0">
-          <p class="font-semibold truncate">{{ auth.user.value?.email ?? 'Signed in' }}</p>
-          <div class="flex flex-wrap gap-1.5 mt-1">
+      <div class="flex items-center gap-3.5">
+        <span class="grid size-12 shrink-0 place-items-center rounded-full bg-accent-soft text-[19px] font-semibold uppercase text-accent">
+          {{ auth.user.value?.email?.[0] ?? '?' }}
+        </span>
+        <div class="min-w-0 flex-1">
+          <p class="truncate text-[15px] font-semibold">{{ auth.user.value?.email ?? 'Signed in' }}</p>
+          <div class="mt-1.5 flex flex-wrap gap-1.5">
             <Badge :tone="entitlement.isComplete.value ? 'ok' : 'neutral'">{{ entitlement.isComplete.value ? 'Complete' : 'Free tier' }}</Badge>
             <Badge v-if="entitlement.hasGuarantee.value" tone="accent">Pass guarantee</Badge>
             <Badge v-if="entitlement.isAdmin.value" tone="warn">Admin</Badge>
           </div>
         </div>
       </div>
-      <p v-if="free.applies.value && auth.ready.value" class="mt-3 text-sm text-ink-2">
-        <strong class="tabular">{{ free.remaining.value }}</strong> free questions left<template v-if="free.jurisdiction.value"> in {{ free.jurisdiction.value }}</template>. <NuxtLink to="/pricing" class="text-accent font-medium">Unlock everything — $59 once.</NuxtLink>
+
+      <p v-if="free.applies.value && auth.ready.value" class="mt-3.5 border-t border-line pt-3.5 text-[13.5px] leading-relaxed text-ink-2">
+        <strong class="tabular font-semibold text-ink">{{ free.remaining.value }}</strong> free questions left<template v-if="free.jurisdiction.value"> in {{ free.jurisdiction.value }}</template>.
+        <NuxtLink to="/pricing" class="font-medium text-accent hover:underline hover:underline-offset-4">Unlock everything — $59 once.</NuxtLink>
       </p>
-      <p v-else-if="entitlement.isComplete.value" class="mt-3 text-sm text-muted">All 51 jurisdictions, both national banks, every mock. Forever.</p>
+      <p v-else-if="entitlement.isComplete.value" class="mt-3.5 border-t border-line pt-3.5 text-[13px] text-muted">
+        All 51 jurisdictions, both national banks, every mock. Forever.
+      </p>
     </AppCard>
 
     <AppCard title="Study settings" padding="none">
-      <ListRow icon="map" label="Home state" :value="jur ? (JURISDICTIONS[jur as keyof typeof JURISDICTIONS] ?? jur) : 'Not set'" @click="picker = true" />
-      <ListRow icon="calendar" label="Exam date" :value="examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : 'Not set'" @click="dateSheet = true" />
-      <div class="flex items-center gap-3 px-4 min-h-14">
-        <span class="grid place-items-center size-8 rounded-lg bg-surface-2 text-ink-2 shrink-0"><Icon name="shield" :size="18" /></span>
+      <ListRow
+        icon="map"
+        label="Home state"
+        :value="jur ? (JURISDICTIONS[jur as keyof typeof JURISDICTIONS] ?? jur) : 'Not set'"
+        @click="picker = true"
+      />
+      <ListRow
+        icon="calendar"
+        label="Exam date"
+        :value="examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : 'Not set'"
+        @click="dateSheet = true"
+      />
+      <div class="flex min-h-14 items-center gap-3 px-4">
+        <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-ink-2"><Icon name="shield" :size="17" /></span>
         <span class="flex-1 text-[15px] font-medium">License level</span>
-        <AppTabs :model-value="studyState.settings.value?.licenseLevel ?? 'salesperson'" :tabs="[{ value: 'salesperson', label: 'Salesperson' }, { value: 'broker', label: 'Broker' }]" aria-label="License level" class="!w-auto" @update:model-value="setLevel" />
+        <AppTabs
+          :model-value="studyState.settings.value?.licenseLevel ?? 'salesperson'"
+          :tabs="[{ value: 'salesperson', label: 'Salesperson' }, { value: 'broker', label: 'Broker' }]"
+          aria-label="License level"
+          class="!w-auto shrink-0"
+          @update:model-value="setLevel"
+        />
       </div>
     </AppCard>
 
     <AppCard title="Appearance" padding="none">
-      <div class="flex items-center gap-3 px-4 min-h-14">
-        <span class="grid place-items-center size-8 rounded-lg bg-surface-2 text-ink-2 shrink-0"><Icon :name="settings.theme === 'dark' ? 'moon' : settings.theme === 'light' ? 'sun' : 'monitor'" :size="18" /></span>
+      <div class="flex min-h-14 items-center gap-3 px-4">
+        <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-ink-2">
+          <Icon :name="settings.theme === 'dark' ? 'moon' : settings.theme === 'light' ? 'sun' : 'monitor'" :size="17" />
+        </span>
         <span class="flex-1 text-[15px] font-medium">Theme</span>
-        <AppTabs :model-value="settings.theme" :tabs="themes" aria-label="Theme" class="!w-auto" @update:model-value="(v) => settings.set('theme', v as 'system' | 'light' | 'dark')" />
+        <AppTabs
+          :model-value="settings.theme"
+          :tabs="themes"
+          aria-label="Theme"
+          class="!w-auto shrink-0"
+          @update:model-value="(v) => settings.set('theme', v as 'system' | 'light' | 'dark')"
+        />
       </div>
     </AppCard>
 
-    <AppCard title="Devices" subtitle="Up to 3. Removing one frees its slot after 7 days; signing in elsewhere signs this one out." padding="none">
-      <div v-if="auth.deviceLimit.value" class="mx-4 mb-3 rounded-xl bg-warn-soft px-3 py-2 text-sm">This account already has {{ auth.deviceLimit.value.max }} devices, so this one isn't registered yet. Remove one below, then <button type="button" class="font-medium underline underline-offset-2" :disabled="auth.busy.value" @click="auth.registerDevice()">register this device</button>.</div>
-      <p v-if="devices.error.value" class="mx-4 mb-3 text-sm text-danger">{{ devices.error.value }}</p>
-      <ul v-if="devices.devices.value.length">
-        <li v-for="d in devices.devices.value" :key="d.id" class="flex items-center gap-3 px-4 min-h-14 border-t border-line">
-          <span class="grid place-items-center size-8 rounded-lg bg-surface-2 text-ink-2 shrink-0"><Icon :name="d.platform === 'web' ? 'monitor' : 'device'" :size="18" /></span>
-          <span class="flex-1 min-w-0 py-2">
-            <span class="block text-[15px] font-medium truncate">{{ d.name ?? d.platform }}<Badge v-if="devices.isThisDevice(d.id)" tone="accent" class="ml-2">this device</Badge></span>
-            <span class="block text-xs text-muted">{{ d.platform }} · last seen {{ fmt(d.last_seen) }}<template v-if="d.cooling_down"> · slot busy until {{ fmt(d.cooldown_until) }}</template></span>
+    <AppCard
+      title="Signed in on"
+      subtitle="One device at a time. Signing in somewhere else moves your account there and signs this one out."
+      padding="none"
+    >
+      <p v-if="devices.error.value" class="mx-4 mb-3.5 text-[13px] text-danger">{{ devices.error.value }}</p>
+
+      <div v-if="devices.current.value" class="flex min-h-14 items-center gap-3 border-t border-line px-4">
+        <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-ink-2">
+          <Icon :name="devices.current.value.platform === 'web' ? 'monitor' : 'device'" :size="17" />
+        </span>
+        <span class="min-w-0 flex-1 py-2.5">
+          <span class="flex items-center gap-2">
+            <span class="truncate text-[15px] font-medium">{{ devices.current.value.name ?? devices.current.value.platform }}</span>
+            <Badge v-if="devices.isThisDevice(devices.current.value.id)" tone="accent">this device</Badge>
           </span>
-          <AppButton v-if="d.active" size="xs" variant="ghost" @click="removeId = d.id">Remove</AppButton>
-          <Badge v-else tone="outline">{{ d.cooling_down ? 'cooling down' : 'removed' }}</Badge>
-        </li>
-      </ul>
-      <p v-else-if="!devices.loading.value" class="px-4 pb-4 text-sm text-muted border-t border-line pt-3">No devices registered yet.</p>
+          <span class="mt-0.5 block text-[11.5px] text-muted">
+            {{ devices.current.value.platform }} · last seen {{ fmt(devices.current.value.last_seen) }}
+          </span>
+        </span>
+        <AppButton
+          v-if="!devices.isThisDevice(devices.current.value.id)"
+          size="xs"
+          variant="ghost"
+          @click="removeId = devices.current.value.id"
+        >Sign out</AppButton>
+      </div>
+      <p v-else-if="!devices.loading.value" class="border-t border-line px-4 pb-4 pt-3.5 text-[13px] text-muted">This device isn't registered yet.</p>
       <Skeleton v-else class="mx-4 mb-4" height="3rem" />
     </AppCard>
 
@@ -126,7 +170,11 @@ onMounted(() => { void free.load(); });
       <ListRow icon="list" label="Terms" to="/legal/terms" />
       <ListRow icon="logout" label="Sign out" danger @click="signOutSheet = true" />
     </AppCard>
-    <p class="text-center text-xs text-muted pb-2">One person per account. Readiness, plan and coverage are computed from one person's answers — sharing makes them describe nobody.</p>
+
+    <p class="px-2 pb-2 text-center text-[11.5px] leading-relaxed text-muted">
+      One person per account. Readiness, plan and coverage are computed from one person's answers —
+      sharing makes them describe nobody.
+    </p>
 
     <StatePicker :open="picker" :current="jur" @close="picker = false" @select="chooseState" />
 
@@ -137,29 +185,73 @@ onMounted(() => { void free.load(); });
       </form>
     </AppSheet>
 
-    <AppSheet :open="rateSheet" title="Rate the app" description="Honest reviews help other candidates decide. Approved reviews appear publicly with your state, never your email." @close="rateSheet = false">
+    <AppSheet
+      :open="rateSheet"
+      title="Rate the app"
+      description="Honest reviews help other candidates decide. Approved reviews appear publicly with your state, never your email."
+      @close="rateSheet = false"
+    >
       <form class="grid gap-4" @submit.prevent="submitReview">
         <div class="flex justify-center gap-1" role="radiogroup" aria-label="Rating">
-          <button v-for="n in 5" :key="n" type="button" role="radio" :aria-checked="rating === n" :aria-label="`${n} star${n > 1 ? 's' : ''}`" class="tap grid place-items-center rounded-lg" :class="n <= rating ? 'text-warn' : 'text-line-strong'" @click="rating = n"><Icon :name="n <= rating ? 'star-filled' : 'star'" :size="32" /></button>
+          <button
+            v-for="n in 5"
+            :key="n"
+            type="button"
+            role="radio"
+            :aria-checked="rating === n"
+            :aria-label="`${n} star${n > 1 ? 's' : ''}`"
+            class="tap grid place-items-center rounded-lg transition-transform duration-150 ease-emphasized active:scale-95"
+            :class="n <= rating ? 'text-warn' : 'text-line-strong'"
+            @click="rating = n"
+          ><Icon :name="n <= rating ? 'star-filled' : 'star'" :size="30" /></button>
         </div>
-        <AppInput v-model="reviewBody" multiline :rows="4" label="What should other candidates know?" placeholder="Which state, what helped, what didn't." :maxlength="800" :error="err" />
+        <AppInput
+          v-model="reviewBody"
+          multiline
+          :rows="4"
+          label="What should other candidates know?"
+          placeholder="Which state, what helped, what didn't."
+          :maxlength="800"
+          :error="err"
+        />
         <AppButton type="submit" variant="primary" size="lg" block :loading="busy">Submit review</AppButton>
       </form>
     </AppSheet>
 
-    <AppSheet :open="redeemSheet" title="Redeem a code" description="Gift codes unlock Complete immediately. Discount codes apply at web checkout." @close="redeemSheet = false; err = null">
+    <AppSheet
+      :open="redeemSheet"
+      title="Redeem a code"
+      description="Gift codes unlock Complete immediately. Discount codes apply at web checkout."
+      @close="redeemSheet = false; err = null"
+    >
       <form class="grid gap-3" @submit.prevent="redeem">
         <AppInput v-model="code" label="Code" placeholder="XXXX-XXXX" autocomplete="off" :error="err" autofocus />
         <AppButton type="submit" variant="primary" size="lg" block :loading="busy" :disabled="code.trim().length < 4">Redeem</AppButton>
       </form>
     </AppSheet>
 
-    <AppSheet :open="!!removeId" title="Remove this device?" :description="removeId && devices.isThisDevice(removeId) ? 'You will be signed out here and the slot stays used for 7 days.' : 'Its slot stays used for 7 days.'" @close="removeId = null">
-      <div class="grid gap-2"><AppButton variant="danger" size="lg" block :loading="busy" @click="removeDevice">Remove</AppButton><AppButton variant="ghost" size="lg" block @click="removeId = null">Cancel</AppButton></div>
+    <AppSheet
+      :open="!!removeId"
+      title="Sign out that device?"
+      description="Signing in on it again will simply move your account back to it."
+      @close="removeId = null"
+    >
+      <div class="grid gap-2">
+        <AppButton variant="danger" size="lg" block :loading="busy" @click="removeDevice">Sign it out</AppButton>
+        <AppButton variant="ghost" size="lg" block @click="removeId = null">Cancel</AppButton>
+      </div>
     </AppSheet>
 
-    <AppSheet :open="signOutSheet" title="Sign out?" description="Your progress lives on your account, not this device. Sign back in any time with an email code." @close="signOutSheet = false">
-      <div class="grid gap-2"><AppButton variant="danger" size="lg" block @click="signOut">Sign out</AppButton><AppButton variant="ghost" size="lg" block @click="signOutSheet = false">Stay signed in</AppButton></div>
+    <AppSheet
+      :open="signOutSheet"
+      title="Sign out?"
+      description="Your progress lives on your account, not this device. Sign back in any time with an email code."
+      @close="signOutSheet = false"
+    >
+      <div class="grid gap-2">
+        <AppButton variant="danger" size="lg" block @click="signOut">Sign out</AppButton>
+        <AppButton variant="ghost" size="lg" block @click="signOutSheet = false">Stay signed in</AppButton>
+      </div>
     </AppSheet>
   </div>
 </template>

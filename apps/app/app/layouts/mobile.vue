@@ -1,25 +1,40 @@
 <script setup lang="ts">
 /**
- * App shell for Capacitor: top bar with title/context, content, fixed bottom tabs with safe-area
- * insets. Practice and mock runs are "immersive" — they draw their own header and hide the tab bar
- * so the question owns the screen. Signed-out visitors (welcome/sign-in are `bare`; pricing/help
- * are public) get no tab bar.
+ * App shell for Capacitor.
+ *
+ * There is no bottom tab bar. `/app` is the study loop and owns the whole screen; the secondary
+ * screens get a slim header whose only navigation is "back to studying" plus the menu button that
+ * raises AppPanel. Public routes in the native build (pricing, help) keep the plain top bar;
+ * welcome and sign-in use the `bare` layout instead.
+ *
+ * The immersive rule lives in composables/useAppPanel.ts so layouts/web.vue cannot drift from it.
  */
 const route = useRoute();
-const auth = useAuth();
-const immersive = computed(() => /^\/app\/(study\/practice|mocks\/run)/.test(route.path));
-const tabs = computed(() => !immersive.value && auth.signedIn.value);
+
+const isApp = computed(() => route.path === "/app" || route.path.startsWith("/app/"));
+const immersive = computed(() => isImmersivePath(route.path));
+const title = computed(() => appScreenTitle(route.path));
 </script>
 <template>
-  <div class="min-h-dvh bg-bg text-ink flex flex-col">
-    <template v-if="!immersive">
+  <div class="flex min-h-dvh flex-col bg-bg text-ink">
+    <template v-if="isApp">
+      <template v-if="!immersive">
+        <AppShellHeader :title="title" />
+        <AuthBanner />
+      </template>
+
+      <main class="w-full flex-1" :class="immersive ? '' : 'safe-px mx-auto max-w-3xl pt-4 pb-10'">
+        <slot />
+      </main>
+
+      <AppChrome />
+    </template>
+
+    <template v-else>
       <AppTopBar />
       <AuthBanner />
+      <main class="safe-px mx-auto w-full max-w-3xl flex-1 pt-4 pb-10"><slot /></main>
+      <Toast />
     </template>
-    <main class="flex-1 w-full max-w-3xl mx-auto safe-px" :class="immersive ? 'pb-6' : tabs ? 'pt-4 pb-[calc(5.5rem+env(safe-area-inset-bottom))]' : 'pt-4 pb-8'">
-      <slot />
-    </main>
-    <BottomTabBar v-if="tabs" />
-    <Toast />
   </div>
 </template>

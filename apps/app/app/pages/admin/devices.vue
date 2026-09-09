@@ -26,6 +26,7 @@ const columns: AdminColumn[] = [
   { key: "actions", label: "", align: "right", width: "110px" },
 ];
 const expanded = ref<string | null>(null);
+const filters = [{ value: "all", label: "All" }, { value: "unblocked", label: "Unblocked" }, { value: "blocked", label: "Blocked" }];
 
 async function toggleBlock(d: AdminFlaggedDevice) {
   const blocking = !d.blocked;
@@ -42,28 +43,38 @@ async function toggleBlock(d: AdminFlaggedDevice) {
 </script>
 <template>
   <div class="space-y-4">
-    <div class="flex flex-wrap items-end justify-between gap-3">
-      <div>
-        <h1 class="m-0 text-xl font-semibold">Devices</h1>
-        <p class="m-0 text-sm text-muted">Devices used by 3+ accounts in 30 days (free-tier abuse) and devices you have blocked.</p>
-      </div>
-      <div class="inline-flex rounded-lg border border-line bg-surface p-0.5" role="tablist" aria-label="Filter">
-        <button v-for="f in (['all', 'unblocked', 'blocked'] as const)" :key="f" type="button" role="tab" :aria-selected="filter === f" class="!rounded-md !border-0 !px-3 !py-1 text-sm capitalize" :class="filter === f ? '!bg-accent !text-accent-ink' : '!bg-transparent text-muted hover:text-ink'" @click="filter = f">{{ f }}</button>
-      </div>
-    </div>
+    <AdminPageHead
+      title="Devices"
+      subtitle="Devices used by 3+ accounts in 30 days (free-tier abuse) and devices you have blocked."
+    >
+      <AdminSegmented
+        :model-value="filter"
+        :options="filters"
+        aria-label="Filter"
+        @update:model-value="(v) => (filter = v as typeof filter)"
+      />
+    </AdminPageHead>
 
     <AdminState :loading="q.loading.value" :error="q.error.value" :empty="q.loaded.value && rows.length === 0" empty-text="No flagged devices. Good sign." @retry="q.reload">
       <AdminTable :columns="columns" :rows="rows" :row-key="(r) => r.device_hash" caption="Flagged devices">
         <template #cell-device_hash="{ row }">
-          <code class="font-mono text-xs" :title="row.device_hash">{{ adminFmt.short(row.device_hash, 14) }}</code>
-          <div v-if="row.model" class="text-xs text-muted">{{ row.model }}</div>
+          <code class="font-mono text-[12px]" :title="row.device_hash">{{ adminFmt.short(row.device_hash, 14) }}</code>
+          <div v-if="row.model" class="text-[11.5px] text-muted">{{ row.model }}</div>
         </template>
         <template #cell-platform="{ row }"><span class="capitalize">{{ row.platform ?? "—" }}</span></template>
         <template #cell-accounts="{ row }">
-          <button v-if="row.account_ids?.length" type="button" class="!border-0 !bg-transparent !p-0 tabular-nums text-accent" :aria-expanded="expanded === row.device_hash" @click="expanded = expanded === row.device_hash ? null : row.device_hash">{{ adminFmt.int(accountsOf(row)) }}</button>
-          <span v-else class="tabular-nums" :class="accountsOf(row) >= 3 ? 'font-semibold text-warn' : ''">{{ adminFmt.int(accountsOf(row)) }}</span>
-          <ul v-if="expanded === row.device_hash && row.account_ids?.length" class="m-0 mt-1 list-none space-y-0.5 p-0 text-left">
-            <li v-for="a in row.account_ids" :key="a"><NuxtLink :to="`/admin/users/${a}`" class="font-mono text-xs">{{ adminFmt.short(a, 12) }}</NuxtLink></li>
+          <button
+            v-if="row.account_ids?.length"
+            type="button"
+            class="tabular font-medium text-accent hover:underline"
+            :aria-expanded="expanded === row.device_hash"
+            @click="expanded = expanded === row.device_hash ? null : row.device_hash"
+          >{{ adminFmt.int(accountsOf(row)) }}</button>
+          <span v-else class="tabular" :class="accountsOf(row) >= 3 ? 'font-semibold text-warn' : ''">{{ adminFmt.int(accountsOf(row)) }}</span>
+          <ul v-if="expanded === row.device_hash && row.account_ids?.length" class="m-0 mt-1.5 list-none space-y-0.5 p-0 text-left">
+            <li v-for="a in row.account_ids" :key="a">
+              <NuxtLink :to="`/admin/users/${a}`" class="font-mono text-[11.5px] text-accent hover:underline">{{ adminFmt.short(a, 12) }}</NuxtLink>
+            </li>
           </ul>
         </template>
         <template #cell-last_seen="{ row }"><AdminTime :value="row.last_seen" /></template>
@@ -71,7 +82,13 @@ async function toggleBlock(d: AdminFlaggedDevice) {
         <template #cell-blocked="{ row }"><AdminBadge :text="row.blocked ? 'blocked' : 'flagged'" :tone="row.blocked ? 'danger' : 'warn'" /></template>
         <template #cell-notes="{ row }"><span class="text-muted">{{ row.notes || "—" }}</span></template>
         <template #cell-actions="{ row }">
-          <button type="button" class="!px-2 !py-0.5 text-xs" :class="row.blocked ? '' : '!text-danger'" :disabled="!!action.busy.value" @click="toggleBlock(row)">{{ row.blocked ? "Unblock" : "Block" }}</button>
+          <AppButton
+            :variant="row.blocked ? 'secondary' : 'ghost'"
+            size="xs"
+            :class="row.blocked ? '' : '!text-danger'"
+            :disabled="!!action.busy.value"
+            @click="toggleBlock(row)"
+          >{{ row.blocked ? "Unblock" : "Block" }}</AppButton>
         </template>
       </AdminTable>
     </AdminState>

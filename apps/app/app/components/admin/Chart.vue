@@ -1,8 +1,11 @@
 <script setup lang="ts">
 /**
- * Dependency-free SVG chart for KPI series. `type="line"` draws one path per series; `type="bar"`
- * draws grouped bars. Colors are CSS variables from main.css so dark/light follow the theme.
- * Hover / focus on a column shows the values for that date.
+ * Dependency-free SVG chart for KPI series. `type="line"` draws one path per series (with a soft
+ * area fill under the first); `type="bar"` draws grouped bars. Colours are CSS variables from
+ * main.css so dark/light follow the theme.
+ *
+ * Hover or focus a column to read the values for that date; the readout is `aria-live` so keyboard
+ * users get the same information as a pointer hover.
  */
 export interface ChartSeries { name: string; values: number[]; color?: "accent" | "ok" | "warn" | "danger" | "muted" }
 
@@ -16,11 +19,13 @@ const props = withDefaults(defineProps<{
 }>(), { type: "line", height: 180, format: (n: number) => adminFmt.int(n) });
 
 const W = 640;
-const PAD = { l: 44, r: 12, t: 12, b: 26 };
+const PAD = { l: 44, r: 12, t: 14, b: 26 };
 const H = computed(() => props.height);
 const innerW = W - PAD.l - PAD.r;
 const innerH = computed(() => H.value - PAD.t - PAD.b);
 const n = computed(() => props.labels.length);
+
+const uid = `cg-${Math.random().toString(36).slice(2, 8)}`;
 
 const maxY = computed(() => {
   let m = 0;
@@ -41,10 +46,17 @@ const colorVar: Record<string, string> = { accent: "var(--accent)", ok: "var(--g
 const stroke = (s: ChartSeries, i: number) => colorVar[s.color ?? ["accent", "ok", "warn", "danger", "muted"][i % 5]!]!;
 
 const paths = computed(() => props.series.map((s) => s.values.map((v, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ")));
+/** Closed version of the first series' path, for the area tint that anchors the line to the axis. */
+const area = computed(() => {
+  const s = props.series[0];
+  if (!s?.values.length || props.type !== "line") return "";
+  const base = (PAD.t + innerH.value).toFixed(1);
+  return `${paths.value[0]} L${x(s.values.length - 1).toFixed(1)},${base} L${x(0).toFixed(1)},${base} Z`;
+});
 
 // bars: group width per label, one bar per series
 const slot = computed(() => (n.value ? innerW / n.value : innerW));
-const barW = computed(() => Math.max(2, Math.min(28, (slot.value * 0.7) / Math.max(1, props.series.length))));
+const barW = computed(() => Math.max(2, Math.min(26, (slot.value * 0.68) / Math.max(1, props.series.length))));
 const barX = (i: number, si: number) => PAD.l + i * slot.value + slot.value / 2 - (barW.value * props.series.length) / 2 + si * barW.value;
 
 const labelEvery = computed(() => Math.max(1, Math.ceil(n.value / 8)));
@@ -76,7 +88,10 @@ const hoverText = computed(() => {
 </script>
 <template>
   <figure class="m-0">
-    <div v-if="!labels.length" class="rounded-card border border-dashed border-line p-6 text-center text-sm text-muted">No data for this range.</div>
+    <div v-if="!labels.length" class="rounded-card border border-dashed border-line p-6 text-center text-[13.5px] text-muted">
+      No data for this range.
+    </div>
+
     <template v-else>
       <svg
         :viewBox="`0 0 ${W} ${H}`"
@@ -89,11 +104,19 @@ const hoverText = computed(() => {
         @keydown="onKey"
         @blur="hover = null"
       >
+        <defs>
+          <linearGradient :id="uid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" :stop-color="stroke(series[0]!, 0)" stop-opacity="0.16" />
+            <stop offset="100%" :stop-color="stroke(series[0]!, 0)" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
         <!-- gridlines + y labels -->
         <g v-for="t in ticks" :key="t">
           <line :x1="PAD.l" :x2="W - PAD.r" :y1="y(t)" :y2="y(t)" stroke="var(--border)" stroke-width="1" />
-          <text :x="PAD.l - 6" :y="y(t) + 3" text-anchor="end" font-size="10" fill="var(--muted)">{{ format(t) }}</text>
+          <text :x="PAD.l - 8" :y="y(t) + 3.5" text-anchor="end" font-size="10" font-weight="500" fill="var(--muted)">{{ format(t) }}</text>
         </g>
+
         <!-- x labels -->
         <text
           v-for="(l, i) in labels"
@@ -103,6 +126,7 @@ const hoverText = computed(() => {
           :y="H - 8"
           text-anchor="middle"
           font-size="10"
+          font-weight="500"
           fill="var(--muted)"
         >{{ shortLabel(l) }}</text>
 
@@ -116,24 +140,45 @@ const hoverText = computed(() => {
               :width="barW"
               :height="Math.max(0, innerH + PAD.t - y(v))"
               :fill="stroke(s, si)"
-              :opacity="hover === null || hover === i ? 0.9 : 0.45"
-              rx="1.5"
+              :opacity="hover === null || hover === i ? 0.92 : 0.4"
+              rx="2"
             />
           </g>
         </template>
+
         <template v-else>
-          <path v-for="(s, si) in series" :key="s.name" :d="paths[si]" fill="none" :stroke="stroke(s, si)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+          <path v-if="area" :d="area" :fill="`url(#${uid})`" stroke="none" />
+          <path
+            v-for="(s, si) in series"
+            :key="s.name"
+            :d="paths[si]"
+            fill="none"
+            :stroke="stroke(s, si)"
+            stroke-width="1.75"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          />
           <g v-if="hover !== null">
-            <line :x1="x(hover)" :x2="x(hover)" :y1="PAD.t" :y2="PAD.t + innerH" stroke="var(--muted)" stroke-dasharray="3 3" />
-            <circle v-for="(s, si) in series" :key="s.name" :cx="x(hover)" :cy="y(s.values[hover] ?? 0)" r="3.5" :fill="stroke(s, si)" stroke="var(--surface)" stroke-width="1.5" />
+            <line :x1="x(hover)" :x2="x(hover)" :y1="PAD.t" :y2="PAD.t + innerH" stroke="var(--border-strong)" stroke-dasharray="3 3" />
+            <circle
+              v-for="(s, si) in series"
+              :key="s.name"
+              :cx="x(hover)"
+              :cy="y(s.values[hover] ?? 0)"
+              r="3.5"
+              :fill="stroke(s, si)"
+              stroke="var(--surface)"
+              stroke-width="2"
+            />
           </g>
         </template>
       </svg>
-      <figcaption class="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
+
+      <figcaption class="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-[11.5px] text-muted">
         <span v-for="(s, si) in series" :key="s.name" class="inline-flex items-center gap-1.5">
-          <span class="inline-block size-2.5 rounded-sm" :style="{ background: stroke(s, si) }" aria-hidden="true" />{{ s.name }}
+          <span class="inline-block size-2 rounded-full" :style="{ background: stroke(s, si) }" aria-hidden="true" />{{ s.name }}
         </span>
-        <span class="ml-auto tabular-nums text-ink" aria-live="polite">{{ hoverText || "Hover or use ← → for values" }}</span>
+        <span class="tabular ml-auto text-ink" aria-live="polite">{{ hoverText || "Hover or use ← → for values" }}</span>
       </figcaption>
     </template>
   </figure>

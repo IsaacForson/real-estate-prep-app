@@ -3,17 +3,19 @@
  * single live session (SPEC §5.3). Called right after supabase auth sign-in and on app start
  * when the stored session is rejected with 401 session_revoked.
  *
+ * One active device per account (0015): this call takes the slot over, retires whatever device held
+ * it and revokes its session, so it never refuses. The displaced device sees 401 session_revoked.
+ *
  * headers: Authorization: Bearer <jwt>, x-device-hash (V2 §1; falls back to fingerprint_hash)
  * body:    { fingerprint_hash: sha256 hex, platform: "ios"|"android"|"web", name?: string, model?: string }
- * returns: { device_id, session_id, created, reason, device: { accounts, exhausted, blocked } }
- * 409 device_limit carries the active device list so the ui can offer removal.
+ * returns: { device_id, session_id, created, reason, signed_out, device: { accounts, exhausted, blocked } }
  */
 import { authenticate, enforceRateLimit, recordGeo } from "../_shared/auth.ts";
 import { decideRegister, type DeviceSlotRow, FINGERPRINT_RE, isPlatform } from "../_shared/device-rule.ts";
 import { deviceHashFromHeaders, touchDevice } from "../_shared/device.ts";
 import { rpc, unwrap } from "../_shared/db.ts";
 import { emitEvent } from "../_shared/events.ts";
-import { DEVICE_REGISTRATIONS_PER_HOUR, MAX_ACTIVE_DEVICES, RATE_WINDOW_SECONDS } from "../_shared/limits.ts";
+import { DEVICE_REGISTRATIONS_PER_HOUR, RATE_WINDOW_SECONDS } from "../_shared/limits.ts";
 import { HttpError, json, readJsonObject, serve } from "../_shared/response.ts";
 
 interface RegisterRequest extends Record<string, unknown> {
@@ -44,33 +46,22 @@ serve(async (req) => {
   await enforceRateLimit(ctx.db, `register:${ctx.userId}`, DEVICE_REGISTRATIONS_PER_HOUR, RATE_WINDOW_SECONDS, 1);
   await recordGeo(ctx, "register-device");
 
-  // pre-check with the pure rule so a refusal can explain itself; sql re-checks atomically.
+  // read the current slot holder first so the response can name what this sign-in displaced.
+  // sql re-does the takeover atomically under an advisory lock.
   const devices = unwrap(
     await ctx.db
       .from("devices")
-      .select("id, fingerprint_hash, removed_at, cooldown_until, platform, name, last_seen")
+      .select("id, fingerprint_hash, removed_at, platform, name, last_seen")
       .eq("user_id", ctx.userId),
     "devices_lookup",
   ) as DeviceListRow[];
-  const now = new Date();
-  const decision = decideRegister(devices, body.fingerprint_hash, now);
-  if (!decision.ok) {
-    throw new HttpError(
-      409,
-      "device_limit",
-      `this account already has ${MAX_ACTIVE_DEVICES} devices. remove one to sign in here.`,
-      {
-        occupied: decision.occupied,
-        max: MAX_ACTIVE_DEVICES,
-        next_slot_frees_at: decision.next_slot_frees_at,
-        devices: devices
-          .filter((d) => d.removed_at === null)
-          .map((d) => ({ id: d.id, platform: d.platform, name: d.name, last_seen: d.last_seen })),
-      },
-    );
-  }
+  const decision = decideRegister(devices, body.fingerprint_hash);
+  const displaced = decision.superseded.map((s) => {
+    const d = devices.find((x) => x.id === s.id)!;
+    return { id: d.id, platform: d.platform, name: d.name, last_seen: d.last_seen };
+  });
 
-  const rows = await rpc<{ device_id: string; session_id: string; created: boolean }[]>(ctx.db, "fn_register_device", {
+  const rows = await rpc<{ device_id: string; session_id: string; created: boolean; superseded: number }[]>(ctx.db, "fn_register_device", {
     p_user_id: ctx.userId,
     p_fingerprint_hash: body.fingerprint_hash,
     p_platform: body.platform,
@@ -86,6 +77,7 @@ serve(async (req) => {
     device_id: r.device_id,
     platform: body.platform,
     created: r.created,
+    superseded: r.superseded,
     accounts_on_device: touch?.account_count ?? null,
   });
 
@@ -94,6 +86,8 @@ serve(async (req) => {
     session_id: r.session_id,
     created: r.created,
     reason: decision.reason,
+    // what this sign-in signed out, so the ui can say "we signed out your laptop".
+    signed_out: displaced,
     device: touch
       ? {
         accounts: touch.account_count,
@@ -103,6 +97,8 @@ serve(async (req) => {
       }
       : null,
     // SPEC §5.3: "a second login invalidates the first with a clear message."
-    message: "signed in on this device. any other device signed into this account has been signed out.",
+    message: displaced.length
+      ? "signed in on this device. your other device has been signed out."
+      : "signed in on this device.",
   });
 });

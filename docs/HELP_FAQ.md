@@ -12,7 +12,7 @@ keywords: sign in, login, code, email, password, 6-digit, magic link, can't sign
 
 There is no password. Enter your email and we send a 6-digit code; type it in and you are signed in. The code expires after a few minutes, so request a new one if it has been a while. Check your spam folder if nothing arrives, and make sure the address is spelled exactly as you registered it.
 
-Your session stays signed in on that device so studying is never interrupted. You can sign in on up to 3 devices at the same time; see "Devices and the 3-device rule".
+Your session stays signed in on that device so studying is never interrupted. Your account is used on one device at a time — signing in somewhere else moves it there; see "Using your account on more than one device".
 
 If the email contains a sign-in link instead of a code, tapping it also works on the web. Codes are single use and only work for the address they were sent to; we never ask for a code over the phone or in chat.
 
@@ -34,11 +34,13 @@ The pass guarantee is an optional add-on to Complete. If you sit the exam within
 
 Refunds without the guarantee follow the store's policy: purchases made through the App Store or Google Play are refunded by Apple or Google under their rules, and web purchases are handled by our checkout partner. Contact support first; we can usually resolve it faster than a store dispute. Because Complete is a one-time payment there is nothing to cancel and no renewal to stop.
 
-## Devices and the 3-device rule
+## Using your account on more than one device
 category: Account & devices
-keywords: devices, 3 devices, remove device, new phone, tablet, laptop, signed out, cooldown
+keywords: devices, two devices, another device, new phone, tablet, laptop, signed out, switch device
 
-One account works on up to 3 devices at the same time, for example a phone, a tablet and a laptop. When you sign in on a fourth device you will be asked to remove one first. Remove a device from the Account screen; its slot stays used for 7 days before another device can take it, so plan a phone change rather than swapping daily.
+Your account works on one device at a time, and it is always the last one you signed in on. Sign in on your phone and your laptop is signed out; sign back in on the laptop and it comes straight back. There is no limit on how often you switch and no waiting period, so moving between a phone, a tablet and a laptop is fine — you just cannot study on two of them at the same moment.
+
+If a device you no longer use is holding the account, you can sign it out from the Account screen, but you rarely need to: simply signing in where you are takes the account back.
 
 Your progress lives in your account, not on the device. Clearing storage, reinstalling or signing in on a new phone brings back exactly the same history, boxes and readiness score once you sign in.
 

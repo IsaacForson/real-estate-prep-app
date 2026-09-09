@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Small state chip. Tone maps to the semantic palette — never used for actions. */
 withDefaults(defineProps<{ tone?: "neutral" | "accent" | "ok" | "warn" | "danger" | "outline"; size?: "sm" | "md" }>(), { tone: "neutral", size: "sm" });
 const tones = {
   neutral: "bg-surface-2 text-ink-2",
@@ -10,5 +11,8 @@ const tones = {
 };
 </script>
 <template>
-  <span class="inline-flex items-center gap-1 rounded-pill font-medium whitespace-nowrap" :class="[tones[tone], size === 'sm' ? 'text-xs px-2 py-0.5' : 'text-sm px-2.5 py-1']"><slot /></span>
+  <span
+    class="inline-flex items-center gap-1 whitespace-nowrap rounded-pill font-medium leading-none"
+    :class="[tones[tone], size === 'sm' ? 'px-2 py-1 text-[11.5px]' : 'px-2.5 py-1.5 text-[13px]']"
+  ><slot /></span>
 </template>

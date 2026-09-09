@@ -10,13 +10,13 @@ const tone = computed(() => {
   return "muted";
 });
 const cls: Record<string, string> = {
-  ok: "border-ok/40 bg-ok/10 text-ok",
-  warn: "border-warn/40 bg-warn/10 text-warn",
-  danger: "border-danger/40 bg-danger/10 text-danger",
-  accent: "border-accent/40 bg-accent/10 text-accent",
-  muted: "border-line bg-surface-2 text-muted",
+  ok: "bg-ok-soft text-ok",
+  warn: "bg-warn-soft text-warn",
+  danger: "bg-danger-soft text-danger",
+  accent: "bg-accent-soft text-accent",
+  muted: "bg-surface-2 text-muted",
 };
 </script>
 <template>
-  <span class="inline-block whitespace-nowrap rounded-full border px-2 py-0.5 text-xs font-medium" :class="cls[tone]">{{ text || "—" }}</span>
+  <span class="inline-block whitespace-nowrap rounded-pill px-2 py-1 text-[11.5px] font-medium leading-none" :class="cls[tone]">{{ text || "—" }}</span>
 </template>

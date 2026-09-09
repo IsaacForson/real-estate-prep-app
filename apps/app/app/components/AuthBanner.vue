@@ -3,10 +3,22 @@
 const auth = useAuth();
 </script>
 <template>
-  <div v-if="auth.notice.value" class="flex items-center gap-3 px-4 py-2 text-sm border-b border-line" :class="auth.notice.value.kind === 'warn' ? 'bg-warn-soft text-ink' : 'bg-accent-soft text-ink'" role="status">
-    <Icon :name="auth.notice.value.kind === 'warn' ? 'alert' : 'info'" :size="16" class="shrink-0" />
-    <span class="flex-1">{{ auth.notice.value.text }}</span>
-    <NuxtLink v-if="!auth.signedIn.value" to="/signin" class="font-medium text-accent">Sign in</NuxtLink>
-    <button type="button" class="tap -mr-2 grid place-items-center text-muted" aria-label="Dismiss" @click="auth.dismissNotice()"><Icon name="x" :size="16" /></button>
+  <div
+    v-if="auth.notice.value"
+    class="safe-px flex items-center gap-2.5 border-b py-2.5 text-[13.5px]"
+    :class="auth.notice.value.kind === 'warn' ? 'border-warn/25 bg-warn-soft text-ink' : 'border-accent/20 bg-accent-soft text-ink'"
+    role="status"
+  >
+    <Icon
+      :name="auth.notice.value.kind === 'warn' ? 'alert' : 'info'"
+      :size="16"
+      class="shrink-0"
+      :class="auth.notice.value.kind === 'warn' ? 'text-warn' : 'text-accent'"
+    />
+    <span class="flex-1 leading-snug">{{ auth.notice.value.text }}</span>
+    <NuxtLink v-if="!auth.signedIn.value" to="/signin" class="shrink-0 font-medium text-accent underline underline-offset-2">Sign in</NuxtLink>
+    <button type="button" class="tap -mr-2 grid place-items-center text-muted transition-colors hover:text-ink" aria-label="Dismiss" @click="auth.dismissNotice()">
+      <Icon name="x" :size="15" />
+    </button>
   </div>
 </template>

@@ -320,7 +320,9 @@ Surface this in the UI honestly, not as a threat: *"Your readiness score assumes
 
 ### 5.3 Entitlement mechanics
 
-**Device registry.** Bind entitlement to an account, allow 3 concurrently active devices. Self-service device removal with a 7-day cooldown per slot. A real user with a phone, a tablet and a laptop never hits this. A study group of six hits it on day one.
+**Device registry.** Bind entitlement to an account and allow one active device, always the most recent sign-in. Signing in anywhere moves the account there and signs the previous device out; nothing is ever refused and there is no cooldown, so a phone, a tablet and a laptop can be used in turn without friction.
+
+> Revised in migration 0015. The original rule was 3 slots with a 7-day cooldown on removal, which produced the failure it was meant to prevent: a learner signed in on their laptop, went out, opened their phone, and was told to remove a device — after which the freed slot was unusable for a week. The single live session below was already doing the anti-sharing work, so the slot ceiling cost legitimate users far more than it cost a study group.
 
 **Single active session token.** One live session per account. A second login invalidates the first with a clear message. Two people sharing will kick each other out repeatedly until one buys.
 

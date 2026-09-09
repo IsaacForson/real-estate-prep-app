@@ -18,7 +18,9 @@ pnpm --filter @rep/app generate && pnpm --filter @rep/app cap:sync   # native sh
 app/                Nuxt app dir (pages, components, composables, stores, layouts, assets)
   pages/**                  screens (WP-C): welcome, signin, app/** (home, study, mocks, review, glossary, account,
                             help, contact), admin/** (WP-D), public landing / states / pricing / methodology / legal
-  layouts/mobile.vue        bottom-tab shell (Capacitor) · layouts/web.vue top-nav shell · layouts/admin.vue
+  layouts/mobile.vue        Capacitor shell · layouts/web.vue browser shell · layouts/admin.vue
+                            both app shells are chrome-free on the session, and reach everything else
+                            through AppPanel (see docs/DESIGN_SYSTEM.md "Structure")
   composables/              the contract in docs/V2_PLAN.md §6.1 (see below)
   middleware/auth.global.ts auth-first routing (public list in lib/state/routes.ts)
   plugins/layout.client.ts  default layout = mobile on native, web in a browser (page meta still wins)
@@ -84,7 +86,7 @@ everything else redirects to `/welcome` (with `?next=`). On Capacitor `/` also g
 
 | composable | use |
 |---|---|
-| `useAuth()` | `ready`, `user`, `signedIn`, `signInWithEmail(email)`, `verifyEmailCode(email, code)`, `signOut()`, `notice`, `deviceLimit` |
+| `useAuth()` | `ready`, `user`, `signedIn`, `signInWithEmail(email)`, `verifyEmailCode(email, code)`, `signOut()`, `notice` |
 | `useDevice()` | `hash`, `platform`, `ensure()` |
 | `useEvents()` | `track(kind, props?)` |
 | `useStudyState()` | `settings`, `set(patch)`, `plan`, `ready` |

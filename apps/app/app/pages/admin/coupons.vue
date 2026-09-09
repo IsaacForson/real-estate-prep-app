@@ -51,6 +51,7 @@ const usesOf = (c: AdminCoupon) => c.uses ?? c.used_count ?? 0;
 const exhausted = (c: AdminCoupon) => c.max_uses != null && usesOf(c) >= c.max_uses;
 const stateOf = (c: AdminCoupon) => (isDisabled(c) ? "disabled" : isExpired(c) ? "expired" : exhausted(c) ? "used up" : "active");
 const rows = computed(() => (q.data.value ?? []).filter((c) => (filter.value === "all" ? true : filter.value === "disabled" ? stateOf(c) !== "active" : stateOf(c) === "active")));
+const filters = [{ value: "active", label: "Active" }, { value: "disabled", label: "Inactive" }, { value: "all", label: "All" }];
 const columns: AdminColumn[] = [
   { key: "code", label: "Code", width: "170px" },
   { key: "kind", label: "Kind", width: "150px" },
@@ -69,49 +70,80 @@ async function disable(c: AdminCoupon) {
 </script>
 <template>
   <div class="space-y-4">
-    <div>
-      <h1 class="m-0 text-xl font-semibold">Coupons</h1>
-      <p class="m-0 text-sm text-muted">Gift codes grant the product on redemption; percent/amount codes apply at the future web checkout.</p>
-    </div>
+    <AdminPageHead
+      title="Coupons"
+      subtitle="Gift codes grant the product on redemption; percent/amount codes apply at the future web checkout."
+    />
 
     <div class="grid gap-4 xl:grid-cols-[minmax(300px,1fr)_2fr]">
       <AdminCard title="Create a batch">
-        <form class="space-y-3 text-sm" @submit.prevent="create">
+        <form class="native-fields space-y-3" @submit.prevent="create">
           <div class="grid grid-cols-2 gap-3">
-            <label class="block"><span class="text-muted">Kind</span>
-              <select v-model="form.kind" class="mt-1 w-full"><option value="gift">Gift (100%)</option><option value="percent">Percent off</option><option value="amount">Amount off</option></select>
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">Kind</span>
+              <select v-model="form.kind">
+                <option value="gift">Gift (100%)</option>
+                <option value="percent">Percent off</option>
+                <option value="amount">Amount off</option>
+              </select>
             </label>
-            <label class="block"><span class="text-muted">{{ valueLabel }}</span>
-              <input v-model.number="form.value" type="number" min="0" :max="form.kind === 'percent' ? 100 : undefined" step="0.01" class="mt-1 w-full" :disabled="form.kind === 'gift'" />
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">{{ valueLabel }}</span>
+              <input
+                v-model.number="form.value"
+                type="number"
+                min="0"
+                :max="form.kind === 'percent' ? 100 : undefined"
+                step="0.01"
+                :disabled="form.kind === 'gift'"
+              />
             </label>
-            <label class="block"><span class="text-muted">Product</span>
-              <select v-model="form.product" class="mt-1 w-full"><option value="complete">complete</option><option value="pass_guarantee">pass_guarantee</option></select>
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">Product</span>
+              <select v-model="form.product">
+                <option value="complete">complete</option>
+                <option value="pass_guarantee">pass_guarantee</option>
+              </select>
             </label>
-            <label class="block"><span class="text-muted">Max uses per code</span>
-              <input v-model.number="form.max_uses" type="number" min="0" step="1" class="mt-1 w-full" title="0 = unlimited" />
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">Max uses per code</span>
+              <input v-model.number="form.max_uses" type="number" min="0" step="1" title="0 = unlimited" />
             </label>
-            <label class="block"><span class="text-muted">Expires</span>
-              <input v-model="form.expires_at" type="date" class="mt-1 w-full" />
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">Expires</span>
+              <input v-model="form.expires_at" type="date" />
             </label>
-            <label class="block"><span class="text-muted">How many codes</span>
-              <input v-model.number="form.count" type="number" min="1" max="500" step="1" class="mt-1 w-full" required />
+            <label class="block">
+              <span class="mb-1 block text-[12px] font-medium text-muted">How many codes</span>
+              <input v-model.number="form.count" type="number" min="1" max="500" step="1" required />
             </label>
           </div>
-          <label class="block"><span class="text-muted">Note (internal)</span>
-            <input v-model="form.note" type="text" class="mt-1 w-full" placeholder="e.g. Reddit giveaway Sept 2026" />
+
+          <label class="block">
+            <span class="mb-1 block text-[12px] font-medium text-muted">Note (internal)</span>
+            <input v-model="form.note" type="text" placeholder="e.g. Reddit giveaway Sept 2026" />
           </label>
-          <button type="submit" class="primary w-full" :disabled="!canSubmit || action.busy.value === 'create'">Generate {{ form.count }} code{{ form.count === 1 ? "" : "s" }}</button>
+
+          <AppButton
+            type="submit"
+            variant="primary"
+            block
+            :disabled="!canSubmit"
+            :loading="action.busy.value === 'create'"
+          >Generate {{ form.count }} code{{ form.count === 1 ? "" : "s" }}</AppButton>
         </form>
 
-        <div v-if="generated.length" class="mt-4 rounded-card border border-ok/40 bg-ok/10 p-3">
-          <div class="flex items-center justify-between gap-2 text-sm">
-            <strong class="text-ok">{{ generated.length }} code{{ generated.length === 1 ? "" : "s" }} generated</strong>
-            <button type="button" class="!px-2 !py-0.5 text-xs" @click="copy(generated.join('\n'), 'All codes')">Copy all</button>
+        <!-- Generated codes are shown once and only here, so "copy all" comes before the list: the
+             realistic next step is pasting the whole batch somewhere, not reading them. -->
+        <div v-if="generated.length" class="mt-4 rounded-card border border-ok/30 bg-ok-soft p-3.5">
+          <div class="flex items-center justify-between gap-2">
+            <strong class="text-[13px] font-semibold text-ok">{{ generated.length }} code{{ generated.length === 1 ? "" : "s" }} generated</strong>
+            <AppButton variant="ghost" size="xs" icon="list" @click="copy(generated.join('\n'), 'All codes')">Copy all</AppButton>
           </div>
-          <ul class="m-0 mt-2 max-h-56 list-none space-y-1 overflow-auto p-0">
+          <ul class="m-0 mt-2.5 max-h-56 list-none space-y-1 overflow-auto p-0">
             <li v-for="c in generated" :key="c" class="flex items-center gap-2">
-              <code class="flex-1 rounded bg-surface px-2 py-1 text-sm tracking-wide">{{ c }}</code>
-              <button type="button" class="!px-2 !py-0.5 text-xs" @click="copy(c)">Copy</button>
+              <code class="tabular flex-1 rounded-lg bg-surface px-2 py-1 text-[13px] tracking-wide">{{ c }}</code>
+              <AppButton variant="ghost" size="xs" :aria-label="`Copy ${c}`" @click="copy(c)">Copy</AppButton>
             </li>
           </ul>
         </div>
@@ -119,29 +151,34 @@ async function disable(c: AdminCoupon) {
 
       <AdminCard title="All coupons" flush>
         <template #actions>
-          <div class="inline-flex rounded-lg border border-line bg-surface p-0.5" role="tablist">
-            <button v-for="f in (['active', 'disabled', 'all'] as const)" :key="f" type="button" role="tab" :aria-selected="filter === f" class="!rounded-md !border-0 !px-3 !py-1 text-sm capitalize" :class="filter === f ? '!bg-accent !text-accent-ink' : '!bg-transparent text-muted hover:text-ink'" @click="filter = f">{{ f === "disabled" ? "Inactive" : f }}</button>
-          </div>
-          <button type="button" class="!px-3 !py-1 text-sm" :disabled="q.loading.value" @click="q.reload">Refresh</button>
+          <AdminSegmented v-model="filter" :options="filters" aria-label="Coupon state" />
+          <AppButton variant="secondary" size="sm" icon="refresh" :loading="q.loading.value" @click="q.reload">Refresh</AppButton>
         </template>
         <div class="px-4 pb-4">
           <AdminState :loading="q.loading.value" :error="q.error.value" :empty="q.loaded.value && rows.length === 0" empty-text="No coupons in this view." @retry="q.reload">
             <AdminTable :columns="columns" :rows="rows" :row-key="(r) => r.code" dense caption="Coupons">
               <template #cell-code="{ row }">
-                <span class="inline-flex items-center gap-1">
-                  <code class="rounded bg-surface-2 px-1.5 py-0.5 text-xs tracking-wide">{{ row.code }}</code>
-                  <button type="button" class="!border-0 !bg-transparent !p-0 text-xs text-accent" :aria-label="`Copy ${row.code}`" @click="copy(row.code)">copy</button>
+                <span class="inline-flex items-center gap-1.5">
+                  <code class="tabular rounded bg-surface-2 px-1.5 py-0.5 text-[12px] tracking-wide">{{ row.code }}</code>
+                  <button type="button" class="text-[11.5px] font-medium text-accent hover:underline" :aria-label="`Copy ${row.code}`" @click="copy(row.code)">copy</button>
                 </span>
               </template>
               <template #cell-kind="{ row }">
                 {{ row.kind }}<template v-if="row.kind !== 'gift' && row.value != null"> · {{ row.kind === "percent" ? adminFmt.pct(row.value, 0) : adminFmt.usd(row.value) }}</template>
               </template>
-              <template #cell-uses="{ row }"><span class="tabular-nums">{{ adminFmt.int(usesOf(row)) }} / {{ row.max_uses ?? "∞" }}</span></template>
+              <template #cell-uses="{ row }"><span class="tabular">{{ adminFmt.int(usesOf(row)) }} / {{ row.max_uses ?? "∞" }}</span></template>
               <template #cell-expires_at="{ row }"><AdminTime :value="row.expires_at" /></template>
               <template #cell-state="{ row }"><AdminBadge :text="stateOf(row)" :tone="stateOf(row) === 'active' ? 'ok' : stateOf(row) === 'disabled' ? 'danger' : 'muted'" /></template>
               <template #cell-note="{ row }"><span class="text-muted">{{ row.note || "—" }}</span></template>
               <template #cell-actions="{ row }">
-                <button v-if="!isDisabled(row)" type="button" class="!px-2 !py-0.5 text-xs !text-danger" :disabled="!!action.busy.value" @click="disable(row)">Disable</button>
+                <AppButton
+                  v-if="!isDisabled(row)"
+                  variant="ghost"
+                  size="xs"
+                  class="!text-danger"
+                  :disabled="!!action.busy.value"
+                  @click="disable(row)"
+                >Disable</AppButton>
               </template>
             </AdminTable>
           </AdminState>

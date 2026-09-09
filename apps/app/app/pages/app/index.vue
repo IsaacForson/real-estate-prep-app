@@ -1,99 +1,292 @@
 <script setup lang="ts">
-import { JURISDICTIONS } from "@rep/schema";
-import { pushToast } from "~/components/Toast.vue";
-/** Home: readiness, today's plan, continue, coverage summary, exam countdown. */
-useHead({ title: "Home" });
-const auth = useAuth();
-const studyState = useStudyState();
+import type { OptionLetter } from "@rep/schema";
+import { OPTION_LETTERS } from "@rep/schema";
+/**
+ * The app. Not a dashboard — the study loop itself.
+ *
+ * Opening the app puts you on the next question. There is no home screen to read, no hub to pick a
+ * mode from, and no session length to choose: `startPractice` already schedules due cards first, so
+ * "what should I do next" is answered by the engine rather than by the learner. Everything else in
+ * the product lives behind the menu button (components/AppPanel.vue).
+ *
+ * Three phases only:
+ *   need-state → the one question that must be answered before anything can be scheduled
+ *   question   → answer, reveal, continue, repeat
+ *   milestone  → a batch finished; a rest point with the score and one button to keep going
+ *
+ * The loop never dead-ends. Finishing a batch rolls straight into the next one, which is what makes
+ * this feel like a study session rather than a series of errands.
+ */
+useHead({ title: "Study" });
+
 const study = useStudy();
-const readiness = useReadiness();
-const coverage = useCoverage();
-const planApi = usePlan();
-const entitlement = useEntitlement();
+const studyState = useStudyState();
 const content = useContent();
+const freeTier = useFreeTier();
+const panel = useAppPanel();
 
-const picker = ref(false);
+const session = computed(() => study.session.value ?? study.activeSession.value);
+const item = computed(() => study.current.value);
+
+const chosen = ref<OptionLetter | null>(null);
+const reveal = ref(false);
+const startedAt = ref(Date.now());
+const busy = ref(false);
+const starting = ref(true);
+const summary = ref<Awaited<ReturnType<typeof study.finish>> | null>(null);
+const exhausted = ref(false);
+
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
-const examDate = computed(() => studyState.settings.value?.examDate ?? null);
-const daysLeft = computed(() => examDate.value ? Math.ceil((new Date(examDate.value + "T00:00").getTime() - Date.now()) / 86_400_000) : null);
-const active = computed(() => study.activeSession.value);
-const headline = computed(() => readiness.state.value ?? readiness.national.value ?? null);
-const stateName = computed(() => (jur.value ? JURISDICTIONS[jur.value as keyof typeof JURISDICTIONS] ?? jur.value : null));
-const stateRows = computed(() => coverage.state.value ?? []);
-const nationalRows = computed(() => coverage.national.value ?? []);
-const weakest = computed(() => [...stateRows.value, ...nationalRows.value].filter((r) => r.solidItems != null).sort((a, b) => (a.solidItems! / a.examItems) - (b.solidItems! / b.examItems)).slice(0, 3));
-const firstName = computed(() => auth.user.value?.email?.split("@")[0] ?? "");
-const greeting = computed(() => { const h = new Date().getHours(); return h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening"; });
+const needState = computed(() => studyState.ready.value && !jur.value);
 
-async function chooseState(code: string) {
-  picker.value = false;
-  await studyState.set({ jurisdiction: code });
-  pushToast(`Studying ${JURISDICTIONS[code as keyof typeof JURISDICTIONS] ?? code}`, "ok");
+const total = computed(() => session.value?.itemIds.length ?? 0);
+const position = computed(() => session.value?.position ?? 0);
+const answers = computed(() => Object.values(session.value?.answers ?? {}));
+const score = computed(() => ({ n: answers.value.length, c: answers.value.filter((a) => a.correct).length }));
+const isLast = computed(() => position.value + 1 >= total.value);
+
+const phase = computed<"need-state" | "milestone" | "question" | "empty" | "loading">(() => {
+  if (needState.value) return "need-state";
+  if (summary.value) return "milestone";
+  if (session.value && item.value) return "question";
+  if (starting.value) return "loading";
+  return "empty";
+});
+
+/** Per-question verdict for the progress rail; ticks stay readable up to ~40 questions. */
+const ticks = computed(() => {
+  const s = session.value;
+  if (!s || s.itemIds.length > 40) return null;
+  return s.itemIds.map((id, i) => {
+    if (i === position.value) return "current";
+    const a = s.answers[id];
+    return a ? (a.correct ? "correct" : "wrong") : "todo";
+  });
+});
+const tickClass: Record<string, string> = {
+  correct: "bg-ok",
+  wrong: "bg-danger",
+  current: "bg-accent",
+  todo: "bg-surface-3",
+};
+
+const milestonePct = computed(() => {
+  const s = summary.value;
+  return s && s.total ? Math.round((100 * s.correct) / s.total) : 0;
+});
+const praise = computed(() => {
+  const p = milestonePct.value;
+  return p >= 90 ? "Excellent round" : p >= 75 ? "Passing pace" : p >= 50 ? "Getting there" : "Worth another look";
+});
+
+function restore() {
+  const it = item.value;
+  const s = session.value;
+  const a = it && s ? s.answers[it.id] : undefined;
+  chosen.value = a?.choice ?? null;
+  reveal.value = !!a;
+  startedAt.value = Date.now();
 }
-async function setExamDate(date: string | null) { await studyState.set({ examDate: date }); }
-async function startPractice() {
-  const s = await study.startPractice({ kind: "practice" });
-  if (!s) { pushToast("No questions available right now.", "warn"); return; }
-  await navigateTo("/app/study/practice");
+watch(() => item.value?.id, restore, { immediate: true });
+
+/** Resume whatever was in flight, otherwise schedule a fresh batch. */
+async function ensureSession() {
+  starting.value = true;
+  exhausted.value = false;
+  try {
+    if (study.session.value && study.current.value) return;
+    const active = study.activeSession.value;
+    if (active && !active.endedAt) {
+      // a mock is a different surface; send it back to its own runner
+      if (active.kind === "mock") { await navigateTo("/app/mocks/run"); return; }
+      if (await study.resume(active.id)) return;
+    }
+    const s = await study.startPractice({ kind: "practice" });
+    if (!s) exhausted.value = true;
+  } finally {
+    starting.value = false;
+  }
 }
-async function resume() {
-  if (!active.value) return;
-  await study.resume(active.value.id);
-  await navigateTo(active.value.kind === "mock" ? "/app/mocks/run" : "/app/study/practice");
+
+onMounted(async () => {
+  await content.load();
+  if (!needState.value) await ensureSession();
+});
+// picking a state (or changing it) is the trigger to schedule the first batch
+watch(jur, async (j, prev) => {
+  if (!j || j === prev) return;
+  summary.value = null;
+  await ensureSession();
+});
+
+async function choose(letter: OptionLetter) {
+  if (!item.value || reveal.value || busy.value) return;
+  busy.value = true;
+  chosen.value = letter;
+  try {
+    await study.answer(letter);
+    reveal.value = true;
+  } finally { busy.value = false; }
 }
-onMounted(() => { void content.load(); });
-watch(() => [studyState.ready.value, jur.value], ([ready, j]) => { if (ready && !j) picker.value = true; }, { immediate: true });
+
+async function advance() {
+  if (busy.value) return;
+  busy.value = true;
+  try {
+    if (isLast.value) { summary.value = await study.finish(); return; }
+    await study.next();
+  } finally { busy.value = false; }
+}
+
+async function keepGoing() {
+  summary.value = null;
+  await ensureSession();
+}
+
+/** 1-4 / A-D pick an option, Enter or Space advances once revealed. Same actions as the buttons. */
+function onKey(e: KeyboardEvent) {
+  if (panel.open.value) return;
+  const el = e.target as HTMLElement | null;
+  if (el && /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName)) return;
+
+  if (phase.value === "milestone") {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); void keepGoing(); }
+    return;
+  }
+  if (phase.value !== "question") return;
+
+  if (!reveal.value) {
+    const digit = "1234".indexOf(e.key);
+    const i = digit >= 0 ? digit : "abcd".indexOf(e.key.toLowerCase());
+    const letter = i >= 0 ? OPTION_LETTERS[i] : undefined;
+    if (letter && item.value?.options[i]) { e.preventDefault(); void choose(letter); }
+    return;
+  }
+  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); void advance(); }
+}
+onMounted(() => window.addEventListener("keydown", onKey));
+onUnmounted(() => window.removeEventListener("keydown", onKey));
 </script>
 <template>
-  <div class="grid gap-4 anim-fade-up">
-    <div class="flex items-end justify-between gap-3">
-      <div class="min-w-0">
-        <p class="text-sm text-muted">{{ greeting }}<template v-if="firstName">, {{ firstName }}</template></p>
-        <button type="button" class="group inline-flex items-center gap-1.5 text-2xl display text-left" @click="picker = true" :aria-label="`Change state, currently ${stateName ?? 'not set'}`">
-          {{ stateName ?? 'Choose your state' }}<Icon name="chevron-down" :size="20" class="text-muted group-hover:text-ink mt-1" />
-        </button>
-      </div>
-      <Badge v-if="auth.ready.value" :tone="entitlement.isComplete.value ? 'ok' : 'neutral'" size="md">{{ entitlement.isComplete.value ? 'Complete' : 'Free' }}</Badge>
-    </div>
+  <div class="flex min-h-dvh flex-col">
+    <!-- The only persistent chrome in the app: progress, score, and the way to everything else. -->
+    <header class="safe-pt sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-xl">
+      <div class="safe-px mx-auto flex h-15 max-w-3xl items-center gap-3">
+        <div class="min-w-0 flex-1">
+          <template v-if="phase === 'question'">
+            <div class="flex items-baseline justify-between gap-3">
+              <span class="tabular text-[14px] font-extrabold">
+                {{ position + 1 }} <span class="font-bold text-muted">/ {{ total }}</span>
+              </span>
+              <span class="tabular text-[12.5px] font-bold text-muted">{{ score.c }}/{{ score.n }} correct</span>
+            </div>
 
-    <FreeTierGate variant="banner" />
-
-    <AppCard v-if="active" tone="accent">
-      <div class="flex items-center gap-3">
-        <span class="grid place-items-center size-11 rounded-xl bg-accent text-accent-ink shrink-0"><Icon :name="active.kind === 'mock' ? 'clock' : 'book'" :size="22" /></span>
-        <div class="flex-1 min-w-0">
-          <p class="font-semibold leading-tight">Continue where you left off</p>
-          <p class="text-sm text-ink-2 truncate">{{ active.kind === 'mock' ? 'Timed mock' : active.kind === 'drill' ? 'Leech drill' : 'Practice' }} · question {{ active.position + 1 }} of {{ active.itemIds.length }}</p>
+            <div v-if="ticks" class="mt-1.5 flex gap-[3px]" role="img" :aria-label="`Question ${position + 1} of ${total}`">
+              <span v-for="(t, i) in ticks" :key="i" class="h-1.5 flex-1 rounded-pill transition-colors duration-300" :class="tickClass[t]" />
+            </div>
+            <div v-else class="mt-1.5 h-1.5 overflow-hidden rounded-pill bg-surface-3">
+              <span
+                class="block h-full rounded-pill bg-accent transition-[width] duration-300 ease-emphasized"
+                :style="{ width: (total ? (100 * position) / total : 0) + '%' }"
+              />
+            </div>
+          </template>
+          <BrandMark v-else :size="26" wordmark />
         </div>
-        <AppButton variant="primary" size="sm" icon-right="arrow-right" @click="resume">Resume</AppButton>
-      </div>
-    </AppCard>
 
-    <AppCard>
-      <ReadinessCard :r="headline" :title="readiness.state.value ? 'State portion readiness' : 'National portion readiness'" />
-      <div v-if="readiness.state.value && readiness.national.value && (readiness.state.value.answersUsed + readiness.national.value.answersUsed) > 0" class="mt-4 pt-4 border-t border-line grid grid-cols-2 gap-3 text-sm">
-        <div><p class="text-muted text-xs">National</p><p class="font-semibold tabular text-lg">{{ readiness.national.value.expectedPct.toFixed(0) }}%</p></div>
-        <div><p class="text-muted text-xs">State</p><p class="font-semibold tabular text-lg">{{ readiness.state.value.expectedPct.toFixed(0) }}%</p></div>
+        <button
+          type="button"
+          class="tap -mr-2.5 grid shrink-0 place-items-center rounded-full text-ink transition-colors hover:bg-surface-2"
+          aria-label="Open menu"
+          @click="panel.show()"
+        ><Icon name="menu" :size="22" :stroke-width="2.1" /></button>
       </div>
-      <div class="mt-4 flex gap-2">
-        <AppButton variant="primary" block icon="play" @click="startPractice">Practice now</AppButton>
-        <AppButton to="/app/mocks" variant="secondary" icon="clock">Mock</AppButton>
-      </div>
-    </AppCard>
+    </header>
 
-    <div class="grid grid-cols-2 gap-3">
-      <StatTile label="Exam date" :value="daysLeft == null ? '—' : daysLeft < 0 ? 'Passed' : `${daysLeft}d`" :hint="examDate ? new Date(examDate + 'T00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : 'Set it in the plan'" icon="calendar" :tone="daysLeft != null && daysLeft <= 7 ? 'warn' : 'default'" />
-      <StatTile label="Sections solid" :value="`${[...stateRows, ...nationalRows].filter((r) => r.solidItems != null && r.solidItems >= r.examItems * 0.8).length}/${stateRows.length + nationalRows.length || '—'}`" hint="80%+ of exam items" icon="target" to="/app/study" />
+    <!-- First run. A single decision on its own screen, not a modal over an empty dashboard. -->
+    <div v-if="phase === 'need-state'" class="safe-px anim-fade-up mx-auto grid w-full max-w-md flex-1 content-center gap-5 py-12 text-center">
+      <span class="mx-auto grid size-20 place-items-center rounded-full bg-accent-soft text-accent">
+        <Icon name="map" :size="38" />
+      </span>
+      <div class="grid gap-2.5">
+        <h1 class="display text-[27px]">Which state are you licensing in?</h1>
+        <p class="text-[15px] leading-relaxed text-ink-2">
+          It decides which national exam you sit, how many questions you get, and what the state
+          portion covers. Everything after this is automatic.
+        </p>
+      </div>
+      <AppButton variant="primary" size="lg" block icon="map" @click="panel.statePicker.value = true">Choose your state</AppButton>
     </div>
 
-    <PlanCard :plan="planApi.plan.value" :exam-date="examDate" @set-exam-date="setExamDate" />
+    <!-- A batch just ended. A rest point, not a dead end. -->
+    <div v-else-if="phase === 'milestone'" class="safe-px anim-scale-in mx-auto grid w-full max-w-md flex-1 content-center gap-6 py-12 text-center">
+      <ProgressRing :value="milestonePct" :size="150" :stroke="12" class="mx-auto">
+        <span class="grid leading-none">
+          <span class="tabular text-[36px] font-extrabold">
+            {{ summary?.correct ?? 0 }}<span class="text-[19px] font-bold text-muted">/{{ summary?.total ?? 0 }}</span>
+          </span>
+          <span class="eyebrow mt-2 text-[9.5px]">correct</span>
+        </span>
+      </ProgressRing>
 
-    <AppCard title="Where to focus" subtitle="Sections with the least solid ground, across both portions.">
-      <CoverageTable v-if="weakest.length" :rows="weakest" />
-      <p v-else class="text-sm text-muted">Answer three questions in a section and it shows up here.</p>
-      <NuxtLink to="/app/study" class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-accent">Full coverage <Icon name="arrow-right" :size="16" /></NuxtLink>
-    </AppCard>
+      <div class="grid gap-2">
+        <h1 class="display text-[25px]">{{ praise }}</h1>
+        <p class="mx-auto max-w-[38ch] text-[14.5px] leading-relaxed text-ink-2">
+          Your boxes and readiness are updated. Anything you missed comes back on its own schedule —
+          there is nothing to file away.
+        </p>
+      </div>
 
-    <StatePicker :open="picker" :current="jur" @close="picker = false" @select="chooseState" />
+      <div class="grid gap-2.5">
+        <AppButton variant="primary" size="lg" block icon-right="arrow-right" :loading="starting" @click="keepGoing">Keep going</AppButton>
+        <AppButton variant="ghost" size="lg" block @click="panel.show()">Something else</AppButton>
+      </div>
+    </div>
+
+    <!-- Nothing schedulable: free tier spent, or the bank for this state is still thin. -->
+    <div v-else-if="phase === 'empty'" class="safe-px anim-fade-up mx-auto grid w-full max-w-md flex-1 content-center gap-5 py-12">
+      <FreeTierGate v-if="freeTier.applies.value && exhausted" />
+      <EmptyState
+        v-else
+        icon="book"
+        title="No questions ready for this state"
+        text="The bank for your state is still being written and verified. Try a national practice round or switch states from the menu."
+      >
+        <AppButton variant="primary" @click="panel.show()">Open menu</AppButton>
+      </EmptyState>
+    </div>
+
+    <!-- The loop. -->
+    <template v-else-if="phase === 'question' && item">
+      <div class="safe-px mx-auto grid w-full max-w-3xl flex-1 content-start gap-3 py-4 pb-36">
+        <NarrationBar :item="item" :reveal="reveal" :label="`Question ${position + 1} of ${total}`" />
+        <QuestionCard :key="item.id" :item="item" :answered="chosen" :reveal="reveal" class="anim-deal-in" @choose="choose" />
+      </div>
+
+      <div class="safe-pb fixed inset-x-0 bottom-0 z-30 border-t border-line bg-bg/92 backdrop-blur-xl">
+        <div class="safe-px mx-auto flex max-w-3xl items-center gap-3 py-3.5">
+          <AppButton
+            variant="primary"
+            size="lg"
+            block
+            :disabled="!reveal"
+            :loading="busy && reveal"
+            :icon-right="isLast ? 'check' : 'arrow-right'"
+            @click="advance"
+          >{{ !reveal ? 'Pick an answer' : isLast ? 'Finish round' : 'Continue' }}</AppButton>
+
+          <p class="hidden shrink-0 text-[11.5px] font-bold text-muted sm:block">
+            <template v-if="reveal">press <kbd class="rounded-md border border-line bg-surface-2 px-1.5 py-0.5 font-sans">Enter</kbd></template>
+            <template v-else>press <kbd class="rounded-md border border-line bg-surface-2 px-1.5 py-0.5 font-sans">1</kbd>–<kbd class="rounded-md border border-line bg-surface-2 px-1.5 py-0.5 font-sans">4</kbd></template>
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <!-- Scheduling the first batch. -->
+    <div v-else class="safe-px mx-auto grid w-full max-w-3xl flex-1 content-start gap-3 py-4">
+      <Skeleton height="3rem" />
+      <Skeleton height="22rem" />
+    </div>
   </div>
 </template>

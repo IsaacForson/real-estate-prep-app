@@ -1,14 +1,10 @@
 <script setup lang="ts">
-/** Route-aware TopBar for the app shell: title + jurisdiction context, back button off the tab roots. */
+/**
+ * Route-aware TopBar for the public routes inside the native build (pricing, help, legal, state
+ * briefs). The signed-in app uses AppShellHeader instead — `/app/**` never reaches this component.
+ */
 const route = useRoute();
-const studyState = useStudyState();
 const titles: Array<[RegExp, string]> = [
-  [/^\/app\/?$/, "Home"],
-  [/^\/app\/study\/?$/, "Study"],
-  [/^\/app\/mocks\/?$/, "Mocks"],
-  [/^\/app\/review/, "Review"],
-  [/^\/app\/glossary/, "Glossary"],
-  [/^\/app\/account/, "Account"],
   [/^\/pricing/, "Complete"],
   [/^\/help\/contact/, "Contact us"],
   [/^\/help/, "Help Center"],
@@ -18,14 +14,9 @@ const titles: Array<[RegExp, string]> = [
   [/^\/states/, "Exam brief"],
 ];
 const title = computed(() => titles.find(([re]) => re.test(route.path))?.[1] ?? "");
-const isTabRoot = computed(() => /^\/app\/?$|^\/app\/(study|mocks|review|account)\/?$/.test(route.path));
-const context = computed(() => {
-  const s = studyState.settings.value;
-  const j = s?.jurisdiction;
-  const scoped = route.path === "/app" || route.path.startsWith("/app/study") || route.path.startsWith("/app/mocks");
-  return scoped ? (j ? `${j} · ${s?.licenseLevel ?? "salesperson"}` : "Choose your state") : undefined;
-});
+/** Section roots have nowhere to go back to; their children do. */
+const isRoot = computed(() => /^\/(pricing|help|reviews|methodology|legal|states)\/?$/.test(route.path));
 </script>
 <template>
-  <TopBar :title="title" :context="context" :back="!isTabRoot"><slot /></TopBar>
+  <TopBar :title="title" :back="!isRoot"><slot /></TopBar>
 </template>
