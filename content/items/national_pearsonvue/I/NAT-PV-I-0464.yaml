@@ -1,0 +1,43 @@
+id: NAT-PV-I-0464
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A county adopts a regulation that limits the height of buildings in a commercial district to
+  20 feet, making it impossible to construct any economically viable building. A developer sues,
+  claiming the regulation is a taking requiring compensation. What is the likely outcome?
+options:
+  - The regulation is a valid exercise of police power and no compensation is required
+  - The regulation is a taking only if it also affects residential properties
+  - The regulation is not a taking because it applies uniformly to similar properties
+  - The regulation is a taking because it denies all economically viable use and compensation is
+    required
+key: D
+explanation: A police‑power regulation is not a taking if it leaves the owner an economically viable
+  use. If a regulation strips essentially all economically viable use, it may be a regulatory taking
+  requiring compensation. Here the 20‑foot height limit leaves no economically viable use, so the
+  regulation is a taking and compensation is required.
+citation:
+  source: REP Ref. Property & Land Use § 4.2
+  url: null
+  quoted_text: Regulation under police power is not a taking and requires no compensation so long as
+    it is reasonable, applies uniformly to similar properties, and leaves the owner an economically
+    viable use
+  secondary: []
+terms:
+  - police power
+  - taking
+  - economically viable use
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

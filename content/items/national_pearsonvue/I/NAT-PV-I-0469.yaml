@@ -1,0 +1,44 @@
+id: NAT-PV-I-0469
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Personal property (chattels, personalty) is:"
+options:
+  - Personal property is land plus permanent human-made attachments such as buildings, fences,
+    wells, and paving
+  - "Personal property is everything that is not real property: movable things such as furniture,
+    vehicles, and equipment, and intangible rights such as a promissory note"
+  - Personal property is the legal rights of ownership often described as a bundle of rights to
+    possess, control, use, enjoy, exclude, and dispose
+  - Personal property is the surface of the earth, everything beneath it to the center of the earth,
+    the airspace above it, and things attached by nature such as trees and water
+key: B
+explanation: Personal property is defined as everything that is not real property, including movable
+  items such as furniture, vehicles, equipment, and intangible rights like a promissory note. That
+  description matches the answer that states personal property is everything that is not real
+  property with those examples. The other choices describe real property and its fixtures, the
+  bundle of ownership rights, or land and natural attachments, which are not personal property.
+citation:
+  source: REP Ref. Property & Land Use § 1.2
+  url: null
+  quoted_text: "Personal property (chattels, personalty) is everything that is not real property:
+    movable things such as furniture, vehicles, and equipment, and intangible rights such as a
+    promissory note."
+  secondary: []
+terms:
+  - personal property
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 3
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: wording repaired 2026-09-09 (explanation-option-ordinal); re-review

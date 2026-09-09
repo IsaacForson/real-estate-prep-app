@@ -1,0 +1,46 @@
+id: NAT-PV-IV-0537
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Electronic Signatures in Global and National Commerce Act (E-SIGN), what is the
+  definition of an "electronic signature"?
+options:
+  - An electronic sound, symbol, or process, attached to or logically associated with a contract or
+    other record and executed or adopted by a person with the intent to approve the record.
+  - An electronic sound, symbol, or process, attached to or logically associated with a contract or
+    other record and executed or adopted by a person with the intent to sign the record.
+  - An electronic sound, symbol, or process, attached to or logically associated with a contract or
+    other record and executed or adopted by a person with the intent to transmit the record.
+  - An electronic sound, symbol, or process, attached to or logically associated with a contract or
+    other record and executed or adopted by a person with the intent to create the record.
+key: B
+explanation: 15 U.S.C. § 7006(5) defines an electronic signature as an electronic sound, symbol, or
+  process attached to or logically associated with a contract or other record and executed or
+  adopted by a person with the intent to sign the record. The choice that states the intent is to
+  sign the record matches this definition. The other choices use different intents—approve,
+  transmit, or create the record—which are not part of the statutory definition.
+citation:
+  source: 15 U.S.C. § 7006(5)
+  url: null
+  quoted_text: The term 'electronic signature' means an electronic sound, symbol, or process, attached
+    to or logically associated with a contract or other record and executed or adopted by a person
+    with the intent to sign the record.
+  secondary: []
+terms:
+  - electronic signature
+  - intent
+  - contract
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

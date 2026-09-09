@@ -1,0 +1,37 @@
+id: NAT-PV-III-0521
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the gross rent multiplier (GRM) defined as?
+options:
+  - Sale price divided by net operating income
+  - Gross monthly rent divided by sale price
+  - Sale price divided by gross monthly rent
+  - Net operating income divided by sale price
+key: C
+explanation: GRM equals sale price divided by gross monthly rent (Valuation & Appraisal reference).
+  An option that uses net operating income confuses GRM with the capitalization rate, which is based
+  on NOI. Options that place rent or NOI in the numerator reverse the ratio and are therefore
+  incorrect.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.6
+  url: null
+  quoted_text: The gross rent multiplier (GRM), conventionally used for one-to-four-unit residential
+    rentals, is sale price ÷ gross monthly rent.
+  secondary: []
+terms:
+  - gross rent multiplier
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

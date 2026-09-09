@@ -1,0 +1,42 @@
+id: NAT-PV-II-0485
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases property and obtains an owner's title insurance policy. After closing, an
+  undisclosed heir of a prior owner appears and claims ownership. What does the owner's title
+  insurance policy cover in this situation?
+options:
+  - The policy covers losses from unpaid property taxes by buyer
+  - The policy covers losses from zoning changes after policy date
+  - The policy covers losses from undisclosed heirs
+  - The policy covers losses from known liens not disclosed
+key: C
+explanation: A standard owner's title insurance policy covers losses from undisclosed heirs, as they
+  are listed among the defects in the recorded chain that are covered. The option describing a known
+  lien not disclosed is incorrect because the insured knew of it. The option referring to zoning
+  changes after the policy date is incorrect because defects created after the policy date are
+  excluded. The option concerning unpaid property taxes is incorrect because taxes not yet due or
+  post-policy liabilities are excluded.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.4
+  url: null
+  quoted_text: forged or improperly delivered deeds, undisclosed heirs, recording mistakes
+  secondary: []
+terms:
+  - title insurance
+  - undisclosed heirs
+  - coverage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

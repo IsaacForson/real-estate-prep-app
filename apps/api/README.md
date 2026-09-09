@@ -27,6 +27,8 @@ apps/api/
       0003_entitlements.sql  entitlements, webhook_events, grant/revoke/transfer functions
       0004_devices_sessions.sql  devices, sessions (single live), fn_register_device … (device rule revised by 0015)
       0005_item_delivery.sql item_index (ids only), item_id_aliases, canary_items, item_batches, rate_limits
+      0021_item_content_mock_forms.sql  item_content (published Item JSON, served table-first), mock_forms + v_mock_forms
+                                        (published forms; the view never exposes item ids), fn_admin_content_summary
       0006_progress.sql      progress (lww), item_stats (trigger), study_sessions, fn_record_answer(s), fn_readiness_inputs
       0007_anomaly.sql       geo_events, anomaly_flags, email_outbox, fn_open_anomaly_flag
       0008_storage.sql       private buckets `batches` and `content`
@@ -211,6 +213,20 @@ see `supabase/.env.example` for the full annotated list.
     same triggers, but prefer the functions so the anomaly and free-tier checks run.
 12. **Honest UX flag** — `profiles.sharing_notice_ack` records that the user saw *"Your readiness
     score assumes one person is answering. Sharing this account will make it inaccurate."*
+
+## Never an empty screen (availability rules)
+
+- `issue-batch` answers `200` for a bank with nothing published: `public_ids: []`, `content_url: null`
+  and `availability: { bank, items_available, fallback_bank }` (the vendor's national bank, from the
+  optional `national_bank` body field). `availability` is included for every bank.
+- `_shared/content-store.ts` reads item bodies from `item_content` first and downloads from the
+  `content` bucket only for ids the table does not hold. `pipeline publish --remote` writes both;
+  `pipeline publish --remote --backfill` upserts every published item's row.
+- `mock-start` serves a published `mock_forms` row when one exists (`pipeline forms-build <bank|XX>
+  --remote`): the state's own form first, else the vendor's national form (state portion drawn fresh
+  when that bank has items). Only without a row is the whole form drawn fresh. The response carries
+  `title`, `time_limit_s`, `pass_score` and `form: { source: "published"|"fresh", id }`.
+- `admin-api` op `content.summary` → per bank: items_published, items_in_db, forms, last_published_at.
 
 ## Content bucket contract (what `pipeline publish --remote` must upload)
 

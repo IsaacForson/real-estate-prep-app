@@ -30,6 +30,8 @@ export const CLIENT_EVENT_KINDS = [
 export const SERVER_EVENT_KINDS = [
   "device_seen",
   "device_registered",
+  "device_evicted",
+  "device_removed",
   "batch_issued",
   "progress_synced",
   "ticket_reply",

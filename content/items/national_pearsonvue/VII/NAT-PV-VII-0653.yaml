@@ -1,0 +1,42 @@
+id: NAT-PV-VII-0653
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Borrower A is 64 years old, owns the home outright, occupies it, has completed counseling, but
+  has **not** paid property taxes for the past year. Borrower B is 60 years old, owns the home
+  outright, occupies it, has completed counseling, and pays taxes and insurance on time. Based on
+  HECM eligibility rules, which statement is correct?
+options:
+  - Both borrowers are eligible
+  - Only Borrower B is eligible
+  - Only Borrower A is eligible
+  - Neither borrower is eligible
+key: D
+explanation: Borrowers must be 62 or older, own the home outright or nearly so, occupy it, keep
+  taxes and insurance current, and complete HUD-approved counseling. Borrower A does not keep taxes
+  current, and Borrower B is under 62, so neither satisfies all requirements.
+citation:
+  source: REP Ref. Financing & Closing § 4.6
+  url: null
+  quoted_text: borrowers must be 62 or older, own the home outright or nearly so, occupy it, keep
+    taxes and insurance current, and complete HUD-approved counseling.
+  secondary: []
+terms:
+  - hecm
+  - age
+  - taxes
+  - eligibility
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

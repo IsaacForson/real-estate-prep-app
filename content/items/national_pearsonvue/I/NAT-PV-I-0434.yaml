@@ -1,0 +1,46 @@
+id: NAT-PV-I-0434
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Which statement accurately reflects the legal distinction between a license and an easement?
+options:
+  - An easement is a personal, revocable permission, whereas a license is an interest in land that
+    runs with the land.
+  - A license creates a personal, revocable permission that does not run with the land, while an
+    easement is an interest that runs with the land.
+  - A license can be assigned to another party, but an easement cannot be transferred without the
+    dominant tenement's consent.
+  - Both a license and an easement are personal permissions that terminate upon the death of the
+    holder.
+key: B
+explanation: A license is a personal, revocable permission to use another's land; it is not an
+  interest in land, may be oral, can be revoked at will, cannot be assigned, and ends on the death
+  of either party or a sale of the property. An easement, in contrast, is a property interest that
+  runs with the land and can be transferred with the dominant tenement. Therefore the statement that
+  a license creates a personal, revocable permission that does not run with the land, while an
+  easement is an interest that runs with the land, correctly reflects the distinction.
+citation:
+  source: REP Ref. Property & Land Use § 7.5
+  url: null
+  quoted_text: "A license is personal permission to use another's land for a particular purpose. It is
+    not an interest in land: it may be oral, is revocable at will, cannot be assigned, and ends on
+    the death of either party or a sale of the property."
+  secondary: []
+terms:
+  - license
+  - easement
+  - interest
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

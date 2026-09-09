@@ -1,0 +1,54 @@
+id: NAT-PV-VIII-0669
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller wants to net $215,000 after paying a 7% commission on the sale price. What must the
+  sale price be to achieve that net?
+options:
+  - $231,182.80
+  - $230,050.00
+  - $199,950.00
+  - $3,071,428.57
+key: A
+explanation: Under the net‑to‑seller shortcut, the sale price equals the desired net divided by
+  (1 − commission rate) because the commission is taken from the gross price. Multiplying the net by
+  (1 + rate) would understate the price, giving $230,050.00, which is too low. Dividing the net by
+  the commission rate itself ($3,071,428.57) mistakenly treats the commission as the entire price.
+  The correct calculation yields $231,182.80.
+citation:
+  source: REP Ref. Real Estate Math § 15.2
+  url: null
+  quoted_text: Multiplying the desired net by (1 + rate) understates the price; divide by (1 − rate)
+    instead (§ 4.3).
+  secondary: []
+math:
+  worked_solution: |-
+    Desired net = $215,000
+    Commission rate = 7% = 0.07
+    Price = Desired net ÷ (1 - commission rate)
+    Price = $215,000 ÷ (1 - 0.07)
+    Price = $215,000 ÷ 0.93
+    Price = $231,182.7956989...
+    Rounded to nearest cent = $231,182.80
+  formulas:
+    - Price = Net ÷ (1 - Rate)
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - net
+  - price
+  - rate
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

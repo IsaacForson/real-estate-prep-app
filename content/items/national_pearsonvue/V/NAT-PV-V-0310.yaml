@@ -7,11 +7,11 @@ license_level: both
 cognitive_level: knowledge
 stem: Which action would constitute the unauthorized practice of law for a licensed real estate agent?
 options:
-  - Drafting a custom clause for a purchase contract
   - Explaining the general steps of the closing process
   - Sharing a list of local schools with a buyer
   - Filling in the blanks on a standard purchase agreement
-key: A
+  - Drafting a custom clause for a purchase contract
+key: D
 explanation: Licensees may not draft original contract language; drafting a custom clause for a
   purchase contract is prohibited. Filling in the blanks on a standard form is permitted as
   incidental to brokerage service. Explaining closing steps and sharing school lists are permissible
@@ -30,14 +30,14 @@ terms:
   - drafting
   - contract
 tags: []
-status: verified
-reviewer: null
+status: qa_approved
+reviewer: qa-lead-model
 verified_on: 2026-09-08
-qa_approved_on: null
+qa_approved_on: 2026-09-09
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review
 version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v5 / verify-v1
   batch_id: null
   generated_on: 2026-09-08
-review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

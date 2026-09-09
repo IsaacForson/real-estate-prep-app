@@ -56,6 +56,7 @@ Deno.test("admin ops list matches V2_PLAN §6.2", () => {
     "content.resolveAlert",
     "content.versions",
     "content.resync",
+    "content.summary",
     "devices.flagged",
     "devices.block",
     "settings.get",

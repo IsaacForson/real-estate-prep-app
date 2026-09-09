@@ -1,0 +1,50 @@
+id: NAT-PV-I-0433
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A home is assessed at $300,000. The local tax rate is 18 mills, and the homeowner qualifies
+  for a $20,000 homestead exemption. What is the total property tax due?
+options:
+  - $5,040
+  - $5,400
+  - $4,500
+  - $5,760
+key: A
+explanation: Taxable assessed value = $300,000 – $20,000 = $280,000. 18 mills = 0.018. Tax =
+  $280,000 × 0.018 = $5,040. The other amounts result from misapplying the exemption or rate.
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: one mill is one-tenth of a cent, that is, $1 of tax per $1,000 of assessed value.
+  secondary: []
+math:
+  worked_solution: |-
+    Assessed value = 300,000
+    Exemption = 20,000
+    Taxable = 300,000 - 20,000 = 280,000
+    Mills = 18 => rate = 18/1,000 = 0.018
+    Tax = 280,000 * 0.018 = 5,040
+  formulas:
+    - Taxable = Assessed Value - Exemption
+    - Rate = Mills ÷ 1,000
+    - Tax = Taxable × Rate
+  onscreen_calculator_only: false
+terms:
+  - property tax
+  - mill
+  - exemption
+  - calculation
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

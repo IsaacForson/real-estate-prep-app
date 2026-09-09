@@ -38,5 +38,21 @@ export default defineNuxtConfig({
     },
   },
   typescript: { strict: true, typeCheck: false },
-  vite: { plugins: [tailwindcss()], server: { fs: { allow: [".."] } } },
+  vite: {
+    plugins: [
+      tailwindcss(),
+      // zod v4's JSON-schema module declares a top-level `function process`; Vite inlines it into the SSR
+      // bundle, where Nitro's `import process from "node:process"` intro then collides with it (SyntaxError at
+      // prerender). Rename the identifier inside that one module.
+      {
+        name: "rename-zod-process",
+        enforce: "pre" as const,
+        transform(code: string, id: string) {
+          if (!/[\\/]zod[\\/].*to-json-schema/.test(id) || !code.includes("function process(")) return null;
+          return { code: code.replace(/(?<![.\w$])process(?![\w$])/g, "zodProcess") + "\nexport { zodProcess as process };\n", map: null };
+        },
+      },
+    ],
+    server: { fs: { allow: [".."] } },
+  },
 });

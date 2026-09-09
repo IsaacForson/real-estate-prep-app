@@ -8,11 +8,11 @@ cognitive_level: knowledge
 stem: When a client asks a licensee for legal advice about the effect of a contract clause, what is
   the appropriate action?
 options:
-  - Explaining the general purpose of the clause
   - Recommending that the client consult an attorney
+  - Explaining the general purpose of the clause
   - Drafting a revised clause to address the concern
   - Providing an interpretation based on common practice
-key: B
+key: A
 explanation: When a client asks for legal advice about a contract clause, the licensee should not
   interpret the clause or draft new language; instead, the licensee must recommend that the client
   consult an attorney. Explaining the general purpose of the clause is permissible as general
@@ -28,14 +28,14 @@ terms:
   - attorney
   - recommendation
 tags: []
-status: verified
-reviewer: null
+status: qa_approved
+reviewer: qa-lead-model
 verified_on: 2026-09-08
-qa_approved_on: null
+qa_approved_on: 2026-09-09
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review
 version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v5 / verify-v1
   batch_id: null
   generated_on: 2026-09-08
-review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

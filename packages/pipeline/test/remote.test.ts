@@ -90,6 +90,15 @@ describe("publishRemote", () => {
     expect(index.body.map((r: any) => r.item_id).sort()).toEqual(["NAT-PV-IV-0001", "NAT-PV-IV-0002"]);
     expect(index.body.every((r: any) => r.status === "published")).toBe(true);
 
+    // the same document lands in item_content (0021), after the index rows it references
+    const bodies = calls.find((c) => c.url.endsWith("/rest/v1/item_content"))!;
+    expect(calls.indexOf(bodies)).toBeGreaterThan(calls.indexOf(index));
+    expect(bodies.headers["prefer"]).toContain("merge-duplicates");
+    expect(bodies.body.map((r: any) => r.item_id).sort()).toEqual(["NAT-PV-IV-0001", "NAT-PV-IV-0002"]);
+    expect(bodies.body[0].body).toEqual(uploads.find((u) => u.url.endsWith(`${bodies.body[0].item_id}.json`))!.body);
+    expect(bodies.body[0]).toMatchObject({ bank: "national_pearsonvue", jurisdiction: "NAT", content_version: 1 });
+    expect(r.content_rows).toBe(2);
+
     const version = calls.find((c) => c.url.endsWith("/rest/v1/content_versions"))!;
     expect(version.body[0]).toMatchObject({ version: expect.stringMatching(/^2026-09-09T\d{4}\+abc1234$/), item_count: 2 });
     expect(version.body[0].notes).toContain("2 uploaded");
@@ -135,6 +144,26 @@ describe("publishRemote", () => {
     expect(r.warnings.join("\n")).toMatch(/content_versions table not found/);
     expect(r.warnings.join("\n")).toMatch(/content_alerts table not found/);
     expect(existsSync(join(state, "watch", "alerts.json"))).toBe(true);
+  });
+
+  it("--backfill upserts item_index + item_content for every publishable item even when nothing changed", async () => {
+    const { remote } = fakeSupabase();
+    await publishRemote({ contentDir: content, stateDir: state, remote, gitSha: "a", today: "2026-09-09" });
+    const { calls, remote: remote2 } = fakeSupabase();
+    const r = await publishRemote({ contentDir: content, stateDir: state, remote: remote2, gitSha: "a", today: "2026-09-10", backfill: true });
+    expect(r).toMatchObject({ uploaded: 0, skipped: 2, content_rows: 2 });
+    expect(calls.filter((c) => c.url.includes("/storage/"))).toEqual([]); // objects unchanged: not re-uploaded
+    const index = calls.find((c) => c.url.endsWith("/rest/v1/item_index"))!;
+    const rows = calls.find((c) => c.url.endsWith("/rest/v1/item_content"))!;
+    expect(index.body.map((x: any) => x.item_id).sort()).toEqual(["NAT-PV-IV-0001", "NAT-PV-IV-0002"]);
+    expect(rows.body.map((x: any) => x.item_id).sort()).toEqual(["NAT-PV-IV-0001", "NAT-PV-IV-0002"]);
+    expect(rows.body.every((x: any) => x.body.options.length === 4 && x.body.key)).toBe(true);
+    expect(calls.find((c) => c.url.endsWith("/rest/v1/content_versions"))!.body[0].notes).toContain("backfill 2 item_content rows");
+    // missing table: a warning, not a crash
+    const { remote: remote3 } = fakeSupabase(["item_content"]);
+    const r3 = await publishRemote({ contentDir: content, stateDir: state, remote: remote3, gitSha: "a", today: "2026-09-11", backfill: true });
+    expect(r3.content_rows).toBe(0);
+    expect(r3.warnings.join("\n")).toMatch(/item_content table not found/);
   });
 
   it("dry run touches nothing remote and writes no manifest", async () => {

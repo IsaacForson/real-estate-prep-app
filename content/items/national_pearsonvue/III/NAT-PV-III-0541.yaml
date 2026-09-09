@@ -1,0 +1,46 @@
+id: NAT-PV-III-0541
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $480,000. The assessment ratio in the jurisdiction is 55
+  percent. What is the assessed value?
+options:
+  - $48,000
+  - $216,000
+  - $264,000
+  - $288,000
+key: C
+explanation: Assessed value is calculated by multiplying the market value by the assessment ratio
+  expressed as a decimal. Here, 55% equals 0.55, and $480,000 × 0.55 = $264,000. The distractor
+  $216,000 results from mistakenly using 45% instead of 55%.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.4
+  url: null
+  quoted_text: "A home has a market value of $320,000 and the county assesses at 40 percent: assessed
+    value = 320,000 × 0.40 = $128,000."
+  secondary: []
+math:
+  worked_solution: |-
+    Convert assessment ratio to decimal: 55% ÷ 100 = 0.55
+    Multiply market value by decimal: $480,000 × 0.55 = $264,000
+  formulas:
+    - assessed value = market value × assessment ratio
+  onscreen_calculator_only: false
+terms:
+  - assessed value
+  - market value
+  - assessment ratio
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

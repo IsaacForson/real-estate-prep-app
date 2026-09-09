@@ -20,6 +20,7 @@ import { loadItems } from "@rep/content-lint";
 import { renderAudio } from "./audio.js";
 import { watchSources, renderWatchSummary } from "./watch.js";
 import { publishRemote } from "./remote.js";
+import { formsBuild } from "./forms.js";
 import { loadEnv } from "@rep/llm";
 loadEnv();
 const BACKEND = process.env.LLM_BACKEND ?? "router";
@@ -49,10 +50,14 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   wait <batchId>                                    poll a batch until it ends, then collect (draft) or collect-verify (verify)
   qa-sheet <bank> [--sample 0.2]                    reviewer CSV of a random sample of verified items
   qa-approve <reviewer> <id...>                     stamp qa_approved
+  node-brief <bank> [--nodes I,II.A]                write per-node drafting briefs (authority text, gaps, covered rules) to .pipeline/briefs
+  import-drafts <bank> <file.json>                  agent-written {node, items[]} JSON → lint/quote-checked drafts
+  verify-local <bank>                               drafts passing local checks → content (status verified, provisional)
   repair <id...>                                    LLM-rewrite wording of content items failing lint → back to verified
   qa-reject <reviewer> <id> "<reason>"              retire an item
   publish <bank>                                    qa_approved → published
-  publish --remote [<bank>] [--dry-run] [--force-version]   upload qa_approved/published items to the Supabase 'content' bucket + item_index / content_versions / content_alerts (needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY)
+  publish --remote [<bank>] [--dry-run] [--force-version] [--backfill]   upload qa_approved/published items to the Supabase 'content' bucket + item_index / item_content / content_versions / content_alerts (needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY); --backfill upserts every published item's item_content row
+  forms-build <bank|XX> [--remote] [--forms 5]      assemble non-overlapping mock forms (national: short + full; state: short + form-1..N) from approved items; --remote upserts them into mock_forms
   watch-sources [--bank <id>] [--dry-run] [--skip-blocked] [--concurrency N]   re-fetch every cached authority URL, hash-compare, flag items whose citations changed → needs_review, docs/STATUTE_CHANGES.md, .pipeline/watch/
   refs-audit [XX|bank] [--verbose]                  resolve every blueprint node's statute_refs against cached authorities
   glossary <bank> [--limit N]                       define the bank's item terms from cached authorities → content/glossary/<bank>.yaml (F16)
@@ -182,6 +187,22 @@ async function main() {
     }
     case "qa-sheet": { qaSheet(positional[0]!, flag("sample") ? Number(flag("sample")) : 0.2); break; }
     case "qa-approve": { qaApprove(positional[0]!, positional.slice(1)); break; }
+    case "node-brief": {
+      const { writeNodeBriefs } = await import("./agentDraft.js");
+      const r = writeNodeBriefs(positional[0]!, { nodes: flag("nodes")?.split(","), maxChars: flag("max-chars") ? Number(flag("max-chars")) : undefined });
+      console.log(r.summary.join("\n")); console.log(`${r.files.length} briefs → ${r.files[0] ? r.files[0].replace(/[^/]+$/, "") : "(none)"}`); break;
+    }
+    case "import-drafts": {
+      const { importDrafts } = await import("./agentDraft.js");
+      const r = importDrafts(positional[0]!, positional[1]!);
+      console.log(`written ${r.written.length}: ${r.written.join(" ")}`);
+      for (const x of r.refused) console.log(`REFUSED [${x.node}] "${x.stem}…"\n  - ${x.reasons.join("\n  - ")}`);
+      console.log(`refused ${r.refused.length}`); break;
+    }
+    case "verify-local": {
+      const { verifyLocal } = await import("./agentDraft.js");
+      const r = verifyLocal(positional[0]!); console.log(`verify-local: ${r.verified} verified (provisional), ${r.rejected} rejected`); break;
+    }
     case "repair": { const { repairContentItems } = await import("./repair.js"); console.log(await repairContentItems(positional)); break; }
     case "qa-reject": { qaReject(positional[0]!, positional[1]!, positional[2] ?? "rejected by reviewer"); break; }
     case "refs-audit": {
@@ -211,13 +232,20 @@ async function main() {
     }
     case "publish": {
       if (rest.includes("--remote")) {
-        const r = await publishRemote({ bank: positional[0] ?? flag("bank"), dryRun: rest.includes("--dry-run"), forceVersion: rest.includes("--force-version"), log: (l) => console.log(l) });
+        const r = await publishRemote({ bank: positional[0] ?? flag("bank"), dryRun: rest.includes("--dry-run"), forceVersion: rest.includes("--force-version"), backfill: rest.includes("--backfill"), log: (l) => console.log(l) });
         for (const w of r.warnings) console.warn(`warning: ${w}`);
-        console.log(`${r.dry_run ? "[dry run] " : ""}uploaded ${r.uploaded} · unchanged ${r.skipped} · retired ${r.unpublished} · alerts ${r.alerts} · version ${r.version ?? "(no new version)"}`);
+        console.log(`${r.dry_run ? "[dry run] " : ""}uploaded ${r.uploaded} · unchanged ${r.skipped} · retired ${r.unpublished} · item_content rows ${r.content_rows} · alerts ${r.alerts} · version ${r.version ?? "(no new version)"}`);
         break;
       }
       if (!positional[0]) throw new Error("publish <bank> | publish --remote");
       console.log(`${publish(positional[0]!)} items published`);
+      break;
+    }
+    case "forms-build": {
+      if (!positional[0]) throw new Error("forms-build <national_pearsonvue|national_psi|XX> [--remote] [--forms N]");
+      const r = await formsBuild(positional[0]!, { remote: rest.includes("--remote"), forms: flag("forms") ? Number(flag("forms")) : undefined, log: (l) => console.log(l) });
+      for (const w of r.warnings) console.warn(`warning: ${w}`);
+      console.log(`${r.target}: built ${r.built.length} form${r.built.length === 1 ? "" : "s"}, skipped ${r.skipped.length}${rest.includes("--remote") ? ` · upserted ${r.upserted} · retired ${r.retired}` : " (local only; add --remote to publish)"}`);
       break;
     }
     case "watch-sources": {

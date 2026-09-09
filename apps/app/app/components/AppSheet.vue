@@ -78,7 +78,7 @@ onUnmounted(() => {
           ><Icon name="x" :size="19" /></button>
         </header>
 
-        <div class="safe-pb overflow-y-auto px-5 pt-2 pb-5"><slot /></div>
+        <div class="overflow-y-auto px-5 pt-2 pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+1rem))]"><slot /></div>
       </div>
     </div>
   </Teleport>

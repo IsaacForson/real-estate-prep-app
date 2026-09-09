@@ -1,0 +1,46 @@
+id: NAT-PV-VIII-0660
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An apartment complex generates a net operating income of $82,500 per year. Investors in the
+  area expect a capitalization rate of 6.0%. What is the estimated value of the property using the
+  income approach?
+options:
+  - $1,250,000
+  - $1,100,000
+  - $1,375,000
+  - $1,500,000
+key: C
+explanation: Using the part‑whole‑rate triangle, value equals NOI divided by cap rate. Dividing
+  $82,500 by 0.06 gives $1,375,000. The distractor $1,250,000 arises from mistakenly dividing by
+  6.6% instead of 6.0%.
+citation:
+  source: REP Ref. Real Estate Math § 1.3
+  url: null
+  quoted_text: NOI (part) = value (whole) × cap rate.
+  secondary: []
+math:
+  worked_solution: |-
+    Convert 6.0% to decimal: 6.0 ÷ 100 = 0.06.
+    Divide NOI by rate: $82,500 ÷ 0.06 = $1,375,000.
+  formulas:
+    - Value = NOI ÷ Cap Rate
+  onscreen_calculator_only: false
+terms:
+  - noi
+  - cap rate
+  - value
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

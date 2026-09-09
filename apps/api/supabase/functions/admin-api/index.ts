@@ -584,6 +584,11 @@ async function run(ctx: AdminContext, op: string, p: Params): Promise<OpResult> 
       );
       return { data: { versions }, targetType: "query", targetId: null };
     }
+    case "content.summary": {
+      // per bank: published items (item_index), items held in item_content, active mock forms, last publish
+      const banks = await rpc<unknown[]>(db, "fn_admin_content_summary", {});
+      return { data: { banks }, targetType: "query", targetId: null };
+    }
 
     // ---- devices --------------------------------------------------------------------------
     case "devices.flagged": {

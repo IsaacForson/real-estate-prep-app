@@ -17,9 +17,20 @@ export class ApiError extends Error {
   }
 }
 
-/** The account's single live session moved to another device (SPEC §5.3). */
+/** This device's session was revoked: evicted by a newer device, removed from the Devices list, disabled (SPEC §5.3). */
 export function isSessionRevoked(e: unknown): e is ApiError {
   return e instanceof ApiError && e.code === "session_revoked";
+}
+/**
+ * The `{ reason, details }` of the most recent 401 session_revoked seen by any call, so a caller that
+ * only learns "revoked" second-hand (itemSource's `onSessionRevoked()` carries no error) can still
+ * explain it. Cleared once read.
+ */
+let lastRevocation: Record<string, unknown> | null = null;
+export function takeLastRevocation(): Record<string, unknown> | null {
+  const r = lastRevocation;
+  lastRevocation = null;
+  return r;
 }
 /** Device / session headers missing or unknown: register-device must run (again). */
 export function isSessionRequired(e: unknown): e is ApiError {
@@ -74,6 +85,7 @@ export async function callFunction<T>(
     const code = typeof err?.code === "string" ? err.code : `http_${res.status}`;
     const message = typeof err?.message === "string" ? err.message : res.statusText;
     const { code: _c, message: _m, ...extra } = err ?? {};
+    if (code === "session_revoked") lastRevocation = extra;
     throw new ApiError(res.status, code, message, extra);
   }
   return parsed as T;

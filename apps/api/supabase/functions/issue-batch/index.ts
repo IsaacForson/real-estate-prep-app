@@ -2,8 +2,13 @@
  * POST /functions/v1/issue-batch — server-paced item delivery (SPEC §5.4).
  *
  * headers: Authorization: Bearer <jwt>, x-device-id, x-session-id, x-device-hash
- * body:    { bank, jurisdiction, kind?: "practice"|"mock", size?: 50..200, nodes?: string[], form_id?: string }
- * returns: { batch_id, public_ids[], issued_at, expires_at, signature, content_url, counts, free_tier }
+ * body:    { bank, jurisdiction, kind?: "practice"|"mock", size?: 50..200, nodes?: string[], form_id?: string,
+ *            national_bank?: "national_pearsonvue"|"national_psi" }
+ * returns: { batch_id, public_ids[], issued_at, expires_at, signature, content_url, counts, free_tier, availability }
+ *
+ * a bank with nothing published is not an error ("never an empty screen"): 200 with public_ids: [],
+ * content_url: null and availability { bank, items_available: 0, fallback_bank } so the client
+ * studies the national bank meanwhile. availability is included for every bank.
  *
  * checks, in order: jwt → single live session → device fingerprint (V2 §1) → free tier as
  * max(account, device) (SPEC §6 + V2 §1) → hourly rate limits → candidate selection (due srs items
@@ -19,6 +24,7 @@ import {
   recordGeo,
   requireSession,
 } from "../_shared/auth.ts";
+import { itemsAvailable, readNationalBank, shapeAvailability } from "../_shared/availability.ts";
 import { clampBatchSize } from "../_shared/batch.ts";
 import { bumpFreeTier, deviceFromRequest, freeTierFor } from "../_shared/device.ts";
 import { emitEvent } from "../_shared/events.ts";
@@ -41,6 +47,7 @@ interface IssueBatchRequest extends Record<string, unknown> {
   size?: unknown;
   nodes?: unknown;
   form_id?: unknown;
+  national_bank?: unknown;
 }
 
 const BANK_RE = /^(national_pearsonvue|national_psi|state_[A-Z]{2})$/;
@@ -79,14 +86,37 @@ serve(async (req) => {
   if (bank.startsWith("state_") && bank.slice(6) !== jurisdiction) {
     throw new HttpError(400, "bank_jurisdiction_mismatch");
   }
+  const nationalBank = readNationalBank(body.national_bank);
 
   await recordGeo(ctx, "issue-batch");
-  const [profile, ent, { deviceHash, touch }] = await Promise.all([
+  const [profile, ent, { deviceHash, touch }, available] = await Promise.all([
     getProfile(ctx.db, ctx.userId),
     getEntitlements(ctx.db, ctx.userId),
     deviceFromRequest(req, ctx),
+    itemsAvailable(ctx.db, bank),
   ]);
   const paid = ent.complete;
+  const availability = shapeAvailability(bank, available, nationalBank);
+
+  // ---- nothing published in this bank yet: an honest empty batch, never an error ----------
+  if (availability.items_available === 0) {
+    const now = new Date().toISOString();
+    return json({
+      batch_id: null,
+      kind,
+      bank,
+      jurisdiction,
+      form_id: formId,
+      public_ids: [],
+      issued_at: now,
+      expires_at: now,
+      signature: null,
+      content_url: null,
+      counts: { due: 0, new: 0, missing: 0 },
+      sharing_notice_ack: profile.sharing_notice_ack,
+      availability,
+    });
+  }
 
   // ---- free tier (20 questions, one state, 1 short mock; V2 §1: per device too) -------
   let cap: number | null = null;
@@ -178,5 +208,6 @@ serve(async (req) => {
     },
     // SPEC §5.2: the client shows the one-person notice until acknowledged.
     sharing_notice_ack: profile.sharing_notice_ack,
+    availability,
   });
 });

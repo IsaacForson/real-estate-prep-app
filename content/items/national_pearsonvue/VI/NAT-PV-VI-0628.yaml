@@ -1,0 +1,37 @@
+id: NAT-PV-VI-0628
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to the EPA's radon guidance, what is the standard fix for reducing radon levels?
+options:
+  - Using increased ventilation with exhaust fans
+  - Using installation of air purifiers
+  - Using active soil (sub-slab) depressurization
+  - Using sealing of foundation cracks
+key: C
+explanation: The EPA guidance states that the standard fix for radon is active soil (sub-slab)
+  depressurization. The distractor about sealing foundation cracks is a common misconception;
+  sealing alone does not address radon entry from beneath the slab.
+citation:
+  source: REP Ref. Property Condition & Environmental § 6.1
+  url: null
+  quoted_text: standard fix is active soil (sub-slab) depressurization.
+  secondary: []
+terms:
+  - radon
+  - mitigation
+  - depressurization
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

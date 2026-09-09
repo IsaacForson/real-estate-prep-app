@@ -12,6 +12,7 @@ import { lintItem } from "@rep/content-lint";
 
 export const REPAIRABLE = new Set([
   "explanation-option-letter",
+  "explanation-option-ordinal",
   "meta-reference-in-explanation",
   "meta-reference-in-stem",
   "negative-stem-not-bolded",

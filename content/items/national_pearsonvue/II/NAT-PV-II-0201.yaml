@@ -8,11 +8,11 @@ cognitive_level: knowledge
 stem: Which type of deed provides the grantee with the greatest protection, warranting against
   defects arising at any time in the chain of title, before or during the grantor's ownership?
 options:
-  - General warranty deed
   - Quitclaim deed, no warranty
   - Special warranty deed
   - Bargain and sale deed
-key: A
+  - General warranty deed
+key: D
 explanation: A general warranty deed includes the full set of covenants of title, guaranteeing that
   the grantor will defend the grantee against any title defects that existed before the grantor
   acquired the property or that arise during the grantor’s ownership. Because the grantor is liable
@@ -31,14 +31,14 @@ terms:
   - covenant
   - chain of title
 tags: []
-status: verified
-reviewer: null
+status: qa_approved
+reviewer: qa-lead-model
 verified_on: 2026-09-08
-qa_approved_on: null
+qa_approved_on: 2026-09-09
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review
 version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v5 / verify-v1
   batch_id: null
   generated_on: 2026-09-08
-review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

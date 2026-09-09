@@ -39,9 +39,23 @@ export class StaticItemSource implements ItemSource {
 
 // ---- issue-batch ------------------------------------------------------------------------------
 
-/** Response of apps/api `issue-batch` (see its index.ts). */
+/**
+ * What `issue-batch` says about a bank alongside every batch ("never an empty screen"): how many
+ * real items are published there and, for a state bank, which national bank carries the learner
+ * while the state's questions are still being verified.
+ */
+export interface BankAvailability {
+  bank: string;
+  items_available: number;
+  fallback_bank: string | null;
+}
+
+/**
+ * Response of apps/api `issue-batch` (see its index.ts). A bank with nothing published answers 200
+ * with `public_ids: []`, `content_url: null` and `availability.items_available: 0` — not an error.
+ */
 export interface IssueBatchResponse {
-  batch_id: string;
+  batch_id: string | null;
   kind: "practice" | "mock";
   bank: string;
   jurisdiction: string;
@@ -49,11 +63,13 @@ export interface IssueBatchResponse {
   public_ids: string[];
   issued_at: string;
   expires_at: string;
-  signature: string;
-  content_url: string;
+  signature: string | null;
+  content_url: string | null;
   counts: { due: number; new: number };
-  free_tier: { remaining: number; total: number } | null;
+  /** absent on the empty-bank response */
+  free_tier?: { remaining: number; total: number } | null;
   sharing_notice_ack: boolean;
+  availability?: BankAvailability;
 }
 
 /** Below this many unseen cached items for a bank, `ids()` asks for one more batch. */
@@ -88,6 +104,8 @@ export function parseBatchItem(raw: unknown, publicId: string): Item | null {
 
 /** Download and validate the batch document behind the signed url; keeps only signed public ids. */
 export async function fetchBatchItems(res: IssueBatchResponse, fetchImpl: typeof fetch = fetch): Promise<Item[]> {
+  // an honest empty batch (bank has nothing published yet): nothing to download, nothing to fake
+  if (!res.public_ids.length || !res.content_url) return [];
   const r = await fetchImpl(res.content_url);
   if (!r.ok) throw new ApiError(r.status, "batch_content_failed", `batch content ${r.status}`);
   const doc = (await r.json()) as { items?: unknown };
@@ -115,10 +133,14 @@ export interface ApiItemSourceDeps {
   headers: () => Promise<Record<string, string> | null>;
   /** The learner's home jurisdiction (free tier scope; national banks are requested for it). */
   jurisdiction: () => string;
+  /** The national bank for the learner's state vendor; named as the fallback on empty state banks. */
+  nationalBank?: () => string | null;
   db: StudyDb;
   onSessionRevoked: () => void;
   onFreeTier?: (info: { remaining: number; total: number } | null) => void;
   onSharingNoticeAck?: (acked: boolean) => void;
+  /** Per-bank published counts; 0 means the screen must lean on `fallback_bank`. */
+  onAvailability?: (a: BankAvailability) => void;
   onError?: (e: unknown) => void;
   fetchImpl?: typeof fetch;
   now?: () => number;
@@ -179,16 +201,25 @@ export class ApiItemSource implements ItemSource {
     const jurisdiction = bank.startsWith("state_") ? bank.slice(6) : this.deps.jurisdiction() || "NAT";
     const body: Record<string, unknown> = { bank, jurisdiction, kind: o.kind, size: o.size };
     if (o.kind === "mock") body.form_id = o.formId;
+    const nat = this.deps.nationalBank?.();
+    if (nat) body.national_bank = nat;
     try {
       const res = await callFunction<IssueBatchResponse>(this.deps.base, "issue-batch", body, headers, this.deps.fetchImpl);
+      if (res.availability) this.deps.onAvailability?.(res.availability);
+      if (res.availability && res.availability.items_available === 0) {
+        // nothing published in this bank yet: the session is built from the fallback bank; ask again later
+        this.retryAfter.set(bank, this.now() + RETRY_LONG_MS);
+        this.deps.onSharingNoticeAck?.(res.sharing_notice_ack);
+        return [];
+      }
       const items = await fetchBatchItems(res, this.deps.fetchImpl);
       const expiresAt = Date.parse(res.expires_at);
       const cachedAt = this.now();
       await this.deps.db.items.bulkPut(items.map((item) => ({
-        id: item.id, bank: item.bank, node: item.blueprint_node, item, cachedAt, batchId: res.batch_id,
+        id: item.id, bank: item.bank, node: item.blueprint_node, item, cachedAt, batchId: res.batch_id ?? undefined,
         expiresAt: Number.isFinite(expiresAt) ? expiresAt : undefined,
       })));
-      this.deps.onFreeTier?.(res.free_tier);
+      if (res.free_tier !== undefined) this.deps.onFreeTier?.(res.free_tier);
       this.deps.onSharingNoticeAck?.(res.sharing_notice_ack);
       // a short batch means the scope is nearly exhausted: do not hammer the hourly batch limit
       this.retryAfter.set(bank, cachedAt + (items.length < o.size ? RETRY_LONG_MS : RETRY_SHORT_MS));

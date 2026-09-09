@@ -23,6 +23,7 @@ export function useBootstrap() {
   const purchases = usePurchases();
   const settings = useSettings();
   const contentEpoch = useContentEpoch();
+  const nuxtApp = useNuxtApp();
 
   function applyTheme() {
     if (!import.meta.client) return;
@@ -47,6 +48,9 @@ export function useBootstrap() {
       await freeTier.load();
       // an admin may have republished items since this device last looked; off the critical path
       void contentEpoch.check().catch(() => {});
+      // seed the item cache with one national batch so the first Study tap is instant (V2 "never an
+      // empty screen"); composables need the nuxt context, which this async continuation lacks
+      if (j) void nuxtApp.runWithContext(() => useStudy().seedCache()).catch(() => {});
       if (purchases.supported.value) void purchases.configure(uid).catch(() => {});
       events.track(event === "sign_in" ? "sign_in" : "app_open", { restored: event === "init" });
       sync.schedule(1000);

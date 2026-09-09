@@ -12,7 +12,7 @@
 const route = useRoute();
 
 const isApp = computed(() => route.path === "/app" || route.path.startsWith("/app/"));
-const immersive = computed(() => isImmersivePath(route.path));
+const immersive = computed(() => isImmersivePath(route.path, true));
 const title = computed(() => appScreenTitle(route.path));
 </script>
 <template>

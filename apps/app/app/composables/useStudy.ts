@@ -17,7 +17,7 @@ import type { Ref } from "vue";
 import { parseMockStart, type MockFinishResponse } from "~~/lib/state/contracts";
 import { buildMockPortions, planMockForm, scoreSession } from "~~/lib/state/mock";
 import { getDb } from "~~/lib/study/db";
-import { ApiItemSource, StaticItemSource, fetchBatchItems, type ItemSource } from "~~/lib/study/itemSource";
+import { ApiItemSource, StaticItemSource, fetchBatchItems, LOOK_AHEAD_MIN, type ItemSource } from "~~/lib/study/itemSource";
 import { ApiError, callFunction, functionsBase, isFreeTierError } from "~~/lib/study/api";
 import { newProgress, applyAnswer, scheduleSession, pipeline, leechDrill } from "~~/lib/study/srs";
 import { coverage } from "~~/lib/study/coverage";
@@ -82,8 +82,11 @@ export function useStudy() {
   const freeTier = useFreeTier();
   const sync = useSync();
   const events = useEvents();
+  const availability = useContentAvailability();
   const { repo, version } = useRepo();
   const db = getDb();
+  /** the vendor's national bank for the chosen state, remembered so issue-batch can name the fallback */
+  const natBank = useState<string | null>("study.nationalBank", () => null);
 
   // ---- reactive session state (shared across screens) ----------------------------------------
   const session = useState<StudySession | null>("study.session", () => null);
@@ -106,9 +109,11 @@ export function useStudy() {
           base: functionsBase(config.public.supabaseUrl),
           headers: () => auth.apiHeaders(),
           jurisdiction: () => jurisdiction(),
+          nationalBank: () => natBank.value,
           db,
           onSessionRevoked: () => { void auth.onSessionRevoked(); },
           onFreeTier: (info) => freeTier.noteServerFreeTier(info),
+          onAvailability: (a) => availability.note(a),
           onSharingNoticeAck: (acked) => { if (acked && !studyState.settings.value.sharingNoticeAck) void studyState.set({ sharingNoticeAck: true }); },
           onError: (e) => console.warn("[items] issue-batch failed; studying from cache", e),
         });
@@ -129,7 +134,22 @@ export function useStudy() {
   async function banks(): Promise<{ national: string | null; state: string | null }> {
     const st = await state();
     const j = jurisdiction();
-    return { national: st ? nationalBankFor(st.vendor) : null, state: j ? `state_${j}` : null };
+    const national = st ? nationalBankFor(st.vendor) : null;
+    if (national) natBank.value = national;
+    return { national, state: j ? `state_${j}` : null };
+  }
+
+  /**
+   * Warm the cache right after sign-in (V2 "never an empty screen"): one national batch in the
+   * background so the first Study tap shows a question instantly. The state bank is asked for as
+   * well; when it has nothing published the server says so and the loop simply runs national.
+   */
+  async function seedCache(): Promise<void> {
+    if (mode.value !== "api" || !auth.user.value) return;
+    const b = await banks();
+    const src = source();
+    const targets = [b.national, b.state].filter((x): x is string => !!x);
+    await Promise.all(targets.map((bank) => src.prefetch?.(bank, LOOK_AHEAD_MIN).catch(() => {})));
   }
   async function blueprint(bank: string): Promise<Blueprint | null> {
     const m = await load();
@@ -216,23 +236,27 @@ export function useStudy() {
     if (!st) return null;
     const short = freeTier.applies.value;
     const spec = planMockForm(st, { licenseLevel: licenseLevel(), maxItems: short ? freeTier.mockSize : null });
-    if (!spec) return null;
+    const nationalBank = nationalBankFor(st.vendor);
+    if (nationalBank) natBank.value = nationalBank;
     const form = formId ?? (short ? freeTier.mockForm : `local-${Date.now().toString(36)}`);
 
     if (mode.value === "api") {
       const headers = await auth.apiHeaders();
       if (headers) {
         try {
-          const raw = await callFunction<unknown>(functionsBase(config.public.supabaseUrl), "mock-start", { form_id: form, jurisdiction: st.code }, headers);
+          // the server serves a published form (mock_forms) when one exists, else draws fresh
+          const body: Record<string, unknown> = { form_id: form, jurisdiction: st.code };
+          if (nationalBank) body.national_bank = nationalBank;
+          const raw = await callFunction<unknown>(functionsBase(config.public.supabaseUrl), "mock-start", body, headers);
           const res = parseMockStart(raw);
           if (res) {
-            if (res.batch) await cacheItems(await fetchBatchItems(res.batch));
+            for (const b of res.batches ?? []) await cacheItems(await fetchBatchItems(b));
             if (res.free_tier) freeTier.noteServerFreeTier(res.free_tier);
             const portions = res.portions?.map((p) => ({ portion: p.portion, bank: p.bank, itemIds: p.item_ids, passScore: p.pass_score }));
             await freeTier.markMockUsed();
             return startSession("mock", {
-              id: res.session_id, banks: portions?.map((p) => p.bank) ?? [spec.natBank, spec.stateBank].filter((x): x is string => !!x),
-              itemIds: res.item_ids, timeLimitMs: res.time_limit_s != null ? res.time_limit_s * 1000 : spec.timeLimitMs, mockFormId: res.form_id || form, portions,
+              id: res.session_id, banks: portions?.map((p) => p.bank) ?? [nationalBank, `state_${st.code}`].filter((x): x is string => !!x),
+              itemIds: res.item_ids, timeLimitMs: res.time_limit_s != null ? res.time_limit_s * 1000 : spec?.timeLimitMs ?? null, mockFormId: res.form_id || form, portions,
             });
           }
         } catch (e) {
@@ -247,6 +271,7 @@ export function useStudy() {
       }
     }
     // local assembly (static dev mode, or mock-start not deployed)
+    if (!spec) return null;
     if (short && freeTier.mockUsed.value) return null;
     const prog = await progressMap();
     const built = await buildMockPortions(spec, {
@@ -384,6 +409,15 @@ export function useStudy() {
     return { session: s, ...local, server };
   }
 
+  /** Drop the active session without scoring it (its items are no longer available on this device). */
+  async function discard(): Promise<void> {
+    const s = session.value ?? active.value;
+    if (s) { const copy = { ...plain(s), endedAt: Date.now() }; await saveSession(copy); }
+    await repo.setActiveSession(null);
+    active.value = null; session.value = null; items.value = [];
+    sync.schedule(500);
+  }
+
   /** Finish the current session (practice or mock) and clear it from the screen state. */
   async function finish(): Promise<FinishSummary | null> {
     const s = session.value;
@@ -440,9 +474,9 @@ export function useStudy() {
 
   return {
     // V2 §6.1
-    startPractice, startMock, resume, answer, next, goTo, finish, current, session, items, progressFor, activeSession, history, loadHistory,
+    startPractice, startMock, resume, answer, next, goTo, finish, discard, current, session, items, progressFor, activeSession, history, loadHistory,
     // shared with the analytics composables and the pre-V2 pages
-    state, banks, blueprint, getItems, startSession, saveSession, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, nextDueAt, mode, version,
+    state, banks, blueprint, getItems, startSession, saveSession, endSession, pipelineFor, coverageFor, readinessFor, missedQueue, nextDueAt, mode, version, seedCache,
     get source() { return source(); },
   };
 }

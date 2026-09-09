@@ -1,0 +1,39 @@
+id: NAT-PV-IV-0564
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under general contract principles, what is the likely legal effect of an oral lease agreement
+  for a term of two years?
+options:
+  - The lease is valid and enforceable
+  - The lease is voidable by the tenant
+  - The lease is void and unenforceable
+  - The lease is unenforceable but not void
+key: D
+explanation: The Statute of Frauds requires leases longer than one year to be in writing; an oral
+  lease for two years is therefore unenforceable, but not void, because the parties may still choose
+  to perform. It is not automatically void, nor is it voidable solely by the tenant.
+citation:
+  source: REP Ref. Contracts § 2.6
+  url: null
+  quoted_text: Contracts for the sale of real property, and (in most states) leases longer than one
+    year, fall within it.
+  secondary: []
+terms:
+  - oral lease
+  - Statute of Frauds
+  - unenforceable
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,9 +1,8 @@
 /**
  * F11 mock forms, server-built (V2_PLAN §3 mock-start / mock-finish). Pure: form specs and scoring.
- * The bank has no published form definitions yet (packages/pipeline/src/mocks.ts builds them offline),
- * so a form is a size + national/state split + time limit; items are drawn fresh per session from the
- * candidates sql. When published forms exist, mock-start can read `forms/<JUR>/<form_id>.json` from the
- * content bucket instead and everything below still applies.
+ * Published forms live in `mock_forms` (0021, written by `pipeline forms-build`); mock-start uses a
+ * row when one exists (see formPortions / pickFormRow below). Without a row a form is a size +
+ * national/state split + time limit and items are drawn fresh per session from the candidates sql.
  */
 import {
   FREE_TIER_MOCK_FORM,
@@ -143,4 +142,76 @@ export function apportion(weights: number[], total: number): number[] {
     }
   });
   return base;
+}
+
+// ---- published forms (mock_forms, migration 0021) ----------------------------------------------
+
+/** One `mock_forms` row as the service role reads it. */
+export interface MockFormRow {
+  id: string;
+  bank: string;
+  jurisdiction: string | null;
+  form_id: string;
+  title: string;
+  item_ids: string[];
+  time_limit_s: number;
+  pass_score: number | string;
+  portions: unknown;
+  status: string;
+}
+
+export interface FormPortion {
+  portion: "national" | "state";
+  bank: string;
+  item_ids: string[];
+  pass_score: string | null;
+}
+
+/**
+ * Portions of a form row. Rows written by `pipeline forms-build` carry them; a row without them is
+ * one portion whose kind follows the bank.
+ */
+export function formPortions(row: MockFormRow): FormPortion[] {
+  const raw = Array.isArray(row.portions) ? row.portions as unknown[] : [];
+  const out: FormPortion[] = [];
+  for (const p of raw) {
+    if (!p || typeof p !== "object") continue;
+    const r = p as Record<string, unknown>;
+    const ids = Array.isArray(r.item_ids) ? r.item_ids.filter((x): x is string => typeof x === "string") : [];
+    if (typeof r.bank !== "string" || ids.length === 0) continue;
+    out.push({
+      portion: r.portion === "state" ? "state" : "national",
+      bank: r.bank,
+      item_ids: ids,
+      pass_score: typeof r.pass_score === "string" ? r.pass_score : null,
+    });
+  }
+  if (out.length) return out;
+  const ids = row.item_ids.filter((x) => typeof x === "string");
+  if (!ids.length) return [];
+  return [{ portion: row.bank.startsWith("state_") ? "state" : "national", bank: row.bank, item_ids: ids, pass_score: null }];
+}
+
+/**
+ * Which row serves `form_id` for a learner in `jurisdiction`: the state's own form when one was
+ * published, otherwise the national form for the state's vendor. null → draw fresh (legacy path).
+ */
+export function pickFormRow(rows: MockFormRow[], jurisdiction: string, nationalBank: NationalBank): MockFormRow | null {
+  const active = rows.filter((r) => r.status === "active" && r.item_ids.length > 0);
+  return active.find((r) => r.jurisdiction === jurisdiction) ??
+    active.find((r) => r.jurisdiction === null && r.bank === nationalBank) ??
+    null;
+}
+
+/** Fit a form into `total` items (free tier): largest-remainder split across portions, order kept. */
+export function truncatePortions(portions: FormPortion[], total: number): FormPortion[] {
+  const size = portions.reduce((a, p) => a + p.item_ids.length, 0);
+  if (total >= size) return portions;
+  const counts = apportion(portions.map((p) => p.item_ids.length), Math.max(0, total));
+  return portions.map((p, i) => ({ ...p, item_ids: p.item_ids.slice(0, counts[i] ?? 0) })).filter((p) => p.item_ids.length > 0);
+}
+
+export function formPassScore(row: MockFormRow): number {
+  const n = typeof row.pass_score === "number" ? row.pass_score : Number.parseFloat(String(row.pass_score));
+  return Number.isFinite(n) && n > 0 && n <= 1 ? n : MOCK_PASS_SCORE;
 }

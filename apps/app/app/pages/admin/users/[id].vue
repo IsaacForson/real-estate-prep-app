@@ -225,15 +225,20 @@ async function removeDevice(deviceId: string, name: string | null | undefined) {
             </ul>
           </AdminCard>
 
-          <AdminCard title="Devices" :subtitle="`${u.devices?.length ?? 0} seen · one active at a time`">
+          <AdminCard title="Devices" :subtitle="`${u.active_devices ?? 0} active of ${u.max_active_devices ?? 2} allowed · ${u.devices?.length ?? 0} seen · a new sign-in evicts the oldest`">
             <p v-if="!u.devices?.length" class="m-0 text-[13px] text-muted">No devices registered.</p>
             <ul v-else class="m-0 list-none p-0">
               <li v-for="d in u.devices" :key="d.id" class="flex flex-wrap items-center gap-2 border-b border-line py-2.5 text-[13px] last:border-b-0">
                 <span class="w-12 shrink-0 text-[11px] uppercase tracking-[0.04em] text-muted">{{ d.platform ?? "?" }}</span>
                 <span class="font-medium">{{ d.name ?? adminFmt.short(d.id) }}</span>
+                <AdminBadge v-if="d.is_shadow" text="admin shadow" tone="warn" />
                 <AdminBadge v-if="d.has_live_session" text="live" tone="ok" />
-                <AdminBadge v-if="d.removed_at" text="removed" tone="muted" />
+                <AdminBadge v-else-if="d.removed_at && d.last_revoke_reason === 'new_device'" text="evicted" tone="muted" />
+                <AdminBadge v-else-if="d.removed_at" text="removed" tone="muted" />
                 <span class="text-[11.5px] text-muted">seen <AdminTime :value="d.last_seen" /></span>
+                <span v-if="d.evicted_by && d.removed_at" class="text-[11.5px] text-muted">
+                  · signed out by {{ d.evicted_by.name ?? adminFmt.short(d.evicted_by.device_id) }} <AdminTime :value="d.evicted_by.at" />
+                </span>
                 <span v-if="d.device_hash" class="font-mono text-[11.5px] text-muted" :title="d.device_hash">{{ adminFmt.short(d.device_hash, 10) }}</span>
                 <AppButton
                   v-if="!d.removed_at"

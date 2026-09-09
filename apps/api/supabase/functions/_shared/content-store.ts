@@ -2,9 +2,11 @@
  * Per-batch content delivery (SPEC §5.4). The database never holds item text; the client fetches a
  * json document for each batch through a short-lived signed url.
  *
- * Source of truth: the private `content` bucket, written by `pipeline publish --remote`:
+ * Source of truth: the `item_content` table (migration 0021) and, for ids not in it yet, the private
+ * `content` bucket. Both are written by `pipeline publish --remote` with the same document:
  *
- *   items/<bank>/<item_id>.json      one object per published item = the Item schema from
+ *   item_content.body / items/<bank>/<item_id>.json
+ *                                    one object per published item = the Item schema from
  *                                    packages/schema/src/item.ts (id, jurisdiction, bank, blueprint_node,
  *                                    vendor, license_level, cognitive_level, stem, options[4] in stored
  *                                    order, key, explanation, citation, math?, terms, tags, status,
@@ -151,6 +153,25 @@ export class StorageContentStore implements ContentStore {
     return new Map((data as { item_id: string; bank: string }[]).map((r) => [r.item_id, r.bank]));
   }
 
+  /**
+   * Item documents from the `item_content` table (0021). A read failure is not fatal: the bucket
+   * still holds every published object, so the caller simply falls back for everything.
+   */
+  private async fromTable(itemIds: string[]): Promise<Map<string, unknown>> {
+    if (itemIds.length === 0) return new Map();
+    try {
+      const { data, error } = await this.db.from("item_content").select("item_id, body").in("item_id", itemIds);
+      if (error || !data) {
+        if (error) console.warn(`content-store: item_content read failed (${error.message}); using the bucket`);
+        return new Map();
+      }
+      return new Map((data as { item_id: string; body: unknown }[]).map((r) => [r.item_id, r.body]));
+    } catch (e) {
+      console.warn("content-store: item_content read threw; using the bucket", e instanceof Error ? e.message : e);
+      return new Map();
+    }
+  }
+
   private async download(path: string): Promise<unknown | null> {
     const { data, error } = await this.db.storage.from(this.contentBucket).download(path);
     if (error || !data) return null;
@@ -163,7 +184,8 @@ export class StorageContentStore implements ContentStore {
 
   async loadItems(refs: BatchItemRef[]): Promise<{ items: LoadedItem[]; missing: BatchItemRef[] }> {
     if (refs.length === 0) return { items: [], missing: [] };
-    const banks = await this.banksFor(refs.map((r) => r.item_id));
+    const ids = refs.map((r) => r.item_id);
+    const [banks, table] = await Promise.all([this.banksFor(ids), this.fromTable(ids)]);
     const missing: BatchItemRef[] = [];
     const loaded = await mapLimit(refs, 16, async (ref): Promise<LoadedItem | null> => {
       const bank = banks.get(ref.item_id);
@@ -171,8 +193,13 @@ export class StorageContentStore implements ContentStore {
         missing.push(ref);
         return null;
       }
-      const raw = await this.download(itemObjectPath(bank, ref.item_id));
-      const item = raw === null ? null : toBatchItem(raw, ref.public_id);
+      // table first; the bucket only for ids the table does not have (or holds in an unusable shape)
+      const fromTable = table.get(ref.item_id);
+      let item = fromTable === undefined ? null : toBatchItem(fromTable, ref.public_id);
+      if (!item) {
+        const raw = await this.download(itemObjectPath(bank, ref.item_id));
+        item = raw === null ? null : toBatchItem(raw, ref.public_id);
+      }
       if (item) return { ...item, item_id: ref.item_id };
       if (this.stubMissing) return { ...stubItem(ref, bank), item_id: ref.item_id };
       missing.push(ref);

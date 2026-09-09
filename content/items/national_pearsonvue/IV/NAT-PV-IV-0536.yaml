@@ -1,0 +1,38 @@
+id: NAT-PV-IV-0536
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller lists a property and receives an offer from a buyer. Before the buyer communicates
+  acceptance, the seller informs the buyer that the offer is withdrawn. Under general contract
+  principles, what is the effect of the seller's action?
+options:
+  - A revocation that terminates the offer if communicated before acceptance
+  - A rejection that prevents the buyer from accepting the offer
+  - A counteroffer that modifies the original offer's terms
+  - An acceptance that creates a binding contract despite the withdrawal
+key: A
+explanation: The offeror’s withdrawal of an offer before acceptance is a revocation that ends the
+  offer if the offeree receives it. The distractor describing a rejection mischaracterizes the
+  actor, as only the offeree can reject an offer.
+citation:
+  source: REP Ref. Contracts § 13.1
+  url: null
+  quoted_text: "*Revocation vs. rejection*: the offeror revokes; the offeree rejects."
+  secondary: []
+terms:
+  - revocation
+  - rejection
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

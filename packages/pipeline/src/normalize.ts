@@ -44,10 +44,15 @@ export function shuffleOptions(item: Item): Item {
   return { ...item, options, key };
 }
 
+/** "(REP Ref. Contracts)" style tags name our internal notes — the citation block already carries the source. */
+export function stripRefTags(text: string): string {
+  return text.replace(/\s*\((?:see )?REP Ref\.?[^)]*\)\.?/g, ".").replace(/\.\./g, ".").replace(/\s+\./g, ".").trim();
+}
+
 export function normalizeDraft(item: Item, docs: StatuteDoc[]): Item {
   const stem = boldNegations(item.stem);
   const source = normalizeSource(item.citation.source, item.citation.quoted_text, docs);
-  return shuffleOptions({ ...item, stem, citation: { ...item.citation, source } });
+  return shuffleOptions({ ...item, stem, explanation: stripRefTags(item.explanation), citation: { ...item.citation, source } });
 }
 
 /** Reorder options so that `key` lands at `target`, preserving the relative order of the others. */

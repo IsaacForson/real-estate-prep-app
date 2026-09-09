@@ -1,0 +1,37 @@
+id: NAT-PV-I-0460
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is lis pendens?
+options:
+  - A notice of pending litigation
+  - A lien securing debt on property
+  - A voluntary agreement with owner
+  - A general lien from tax debt
+key: A
+explanation: Lis pendens is not a lien but a recorded notice that litigation affecting title is
+  pending. The option describing it as a lien securing debt is incorrect because lis pendens does
+  not create a lien on the property.
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: Lis pendens is not a lien but a recorded notice that litigation affecting title is pending.
+  secondary: []
+terms:
+  - lis pendens
+  - notice
+  - litigation
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

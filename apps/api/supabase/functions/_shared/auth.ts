@@ -5,13 +5,17 @@
  *   Authorization: Bearer <supabase access token>   (verified by the platform, verify_jwt = true)
  *   x-device-id:  uuid returned by register-device
  *   x-session-id: uuid returned by register-device
- * A request whose session is no longer the account's single live session gets
- * 401 session_revoked and the client shows "you were signed in on another device".
+ * A request whose session has been revoked (evicted by a newer device, removed from the Devices
+ * list, disabled by an admin) gets 401 session_revoked with `reason` and `details` (0022) so the
+ * client can say exactly what happened. A stored session stays valid for as long as it is not
+ * revoked and its device is still active — a reload never needs to register again.
  */
 import { type Db, rpc, serviceClient, sha256Hex, unwrap } from "./db.ts";
 import { optionalEnv } from "./env.ts";
 import { clientIp, regionFromHeaders } from "./geo.ts";
 import { HttpError } from "./response.ts";
+import { loadRevocation } from "./session-revoked.ts";
+import { maxActiveDevices } from "./settings.ts";
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
@@ -48,7 +52,7 @@ export async function authenticate(req: Request): Promise<AuthContext> {
   };
 }
 
-/** Enforce the single-active-session rule. Also bumps last_seen on session and device. */
+/** Enforce the device/session rule. Also bumps last_seen on session and device. */
 export async function requireSession(ctx: AuthContext): Promise<void> {
   if (!ctx.deviceId || !ctx.sessionId) {
     throw new HttpError(
@@ -63,11 +67,8 @@ export async function requireSession(ctx: AuthContext): Promise<void> {
     p_device_id: ctx.deviceId,
   });
   if (!valid) {
-    throw new HttpError(
-      401,
-      "session_revoked",
-      "this account was signed in on another device. sign in again to continue here.",
-    );
+    const why = await loadRevocation(ctx.db, ctx.userId, ctx.sessionId, await maxActiveDevices(ctx.db));
+    throw new HttpError(401, "session_revoked", why.message, { reason: why.reason, details: why.details });
   }
   await rpc<null>(ctx.db, "fn_touch_session", { p_user_id: ctx.userId, p_session_id: ctx.sessionId });
 }

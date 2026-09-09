@@ -1,0 +1,47 @@
+id: NAT-PV-VIII-0666
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower obtains a $180,000 mortgage loan. The lender charges 2 discount points. How much
+  does the borrower pay in points at closing?
+options:
+  - $3,800.00
+  - $3,200.00
+  - $4,000.00
+  - $3,600.00
+key: D
+explanation: "One point equals 1% of the loan amount. To find the dollar cost, multiply the loan
+  amount by the number of points and divide by 100. For a $180,000 loan with 2 points: $180,000 × 2
+  ÷ 100 = $3,600. The other amounts come from using the purchase price instead of the loan amount,
+  moving the decimal incorrectly, or using the wrong point percentage."
+citation:
+  source: REP Ref. Real Estate Math § 5.4
+  url: null
+  quoted_text: One point = 1% of the loan amount, never of the price. Dollar cost = loan × points ÷ 100.
+  secondary: []
+math:
+  worked_solution: |-
+    Loan amount = $180,000
+    Points = 2
+    Cost = 180,000 × 2 ÷ 100 = 3,600
+  formulas:
+    - Dollar cost = loan × points ÷ 100
+  onscreen_calculator_only: false
+terms:
+  - points
+  - loan amount
+  - discount
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

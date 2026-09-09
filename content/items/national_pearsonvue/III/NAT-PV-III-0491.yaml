@@ -1,0 +1,42 @@
+id: NAT-PV-III-0491
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: When using the sales comparison approach, how are adjustments made to a comparable that has a
+  feature the subject lacks?
+options:
+  - Adjustments are made to the comparable upward because it is inferior.
+  - Adjustments are made to the subject downward because it is inferior.
+  - Adjustments are made to the subject upward because it is superior.
+  - Adjustments are made to the comparable downward because it is superior.
+key: D
+explanation: Adjustments are applied only to the comparable, never to the subject. If a comparable
+  possesses a feature that the subject does not have, the comparable is considered superior and its
+  price is adjusted downward. When a comparable lacks a feature the subject has, it is considered
+  inferior and its price is adjusted upward. This rule is stated in Valuation & Appraisal.
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.3
+  url: null
+  quoted_text: Adjustments are always made to the comparable, never to the subject, because the
+    question is what each comparable would have sold for had it been identical to the subject. If a
+    comparable has a feature the subject lacks (comparable superior), its price is adjusted
+    downward; if it lacks a feature the subject has (comparable inferior), its price is adjusted
+    upward.
+  secondary: []
+terms:
+  - adjustment
+  - sales comparison
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

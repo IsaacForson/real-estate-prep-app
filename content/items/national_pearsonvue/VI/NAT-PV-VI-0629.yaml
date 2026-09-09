@@ -1,0 +1,37 @@
+id: NAT-PV-VI-0629
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the standard waiting period for NFIP flood insurance coverage, **EXCEPT** at loan closing?
+options:
+  - 15 days
+  - 60 days
+  - 90 days
+  - 30 days
+key: D
+explanation: The NFIP imposes a 30‑day waiting period before coverage takes effect, except when the
+  policy is purchased at loan closing. The 60‑day option is a common confusion with other waiting
+  periods.
+citation:
+  source: REP Ref. Property Condition & Environmental § 6.1
+  url: null
+  quoted_text: 30-day waiting period except at loan closing.
+  secondary: []
+terms:
+  - flood
+  - insurance
+  - waiting period
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

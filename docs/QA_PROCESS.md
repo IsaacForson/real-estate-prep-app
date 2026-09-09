@@ -32,3 +32,6 @@ drafted N · verified (3a/3b) M · reviewed M · approved A · rejected R (R/M =
 reject classes: key-wrong k · two-defensible d · citation-imprecise c · stale-law s · not-exam-relevant t · explanation-weak e · math m
 prompt changes: ...
 ```
+
+## Provisional mode (from 2026-09-09)
+Forson's decision: banks are populated first and reviewed second. Agent-drafted items that pass the local gates (verbatim quote, citation-document match, lint incl. bank-wide dedupe) ship as `verified` with `review_reason: provisional…`. The model verifier and QA run behind; a rejected provisional item is retired by the next `publish --remote`. The 20 % kill criterion is tracked but no longer blocks drafting. See docs/AGENT_DRAFTING.md.

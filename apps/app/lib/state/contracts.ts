@@ -15,9 +15,15 @@ export interface MockStartResponse {
   /** public ids in presentation order */
   item_ids: string[];
   time_limit_s: number | null;
+  /** published form's title (mock_forms) — null when the server drew the form fresh */
+  title: string | null;
+  /** 0..1 */
+  pass_score: number | null;
   portions?: Array<{ portion: "national" | "state"; bank: string; item_ids: string[]; pass_score: string | null }>;
   /** optional signed batch carrying the items so the client need not call issue-batch */
   batch?: IssueBatchResponse | null;
+  /** every issued batch (one per portion) — the client downloads each content_url before starting */
+  batches: IssueBatchResponse[];
   free_tier?: { remaining: number; total: number; mocks_remaining?: number } | null;
 }
 
@@ -28,22 +34,41 @@ export function parseMockStart(x: unknown): MockStartResponse | null {
   const id = typeof s.session_id === "string" ? s.session_id : typeof s.id === "string" ? s.id : null;
   const ids = Array.isArray(s.item_ids) ? s.item_ids.filter((v): v is string => typeof v === "string") : Array.isArray(s.public_ids) ? (s.public_ids as unknown[]).filter((v): v is string => typeof v === "string") : [];
   if (!id || !ids.length) return null;
+  const fromBatches = Array.isArray(r.batches)
+    ? (r.batches as Array<Record<string, unknown>>).filter((b) => b && typeof b.portion === "string" && b.batch && typeof b.batch === "object").map((b) => {
+        const bb = b.batch as Record<string, unknown>;
+        return { portion: b.portion as string, bank: typeof bb.bank === "string" ? bb.bank : "", item_ids: Array.isArray(bb.public_ids) ? (bb.public_ids as unknown[]).filter((v): v is string => typeof v === "string") : [], pass_score: typeof b.pass_score === "number" ? b.pass_score : typeof b.pass_score === "string" ? Number(b.pass_score) : null };
+      })
+    : [];
   const portions = Array.isArray(s.portions)
     ? (s.portions as Array<Record<string, unknown>>).filter((p) => p && typeof p.bank === "string").map((p) => ({
         portion: p.portion === "national" ? "national" as const : "state" as const,
         bank: p.bank as string,
         item_ids: Array.isArray(p.item_ids) ? (p.item_ids as unknown[]).filter((v): v is string => typeof v === "string") : [],
-        pass_score: typeof p.pass_score === "string" ? p.pass_score : null,
+        pass_score: typeof p.pass_score === "string" ? p.pass_score : typeof p.pass_score === "number" ? `${Math.round(p.pass_score * 100)}%` : null,
       }))
     : undefined;
+  const portionsFinal = portions && portions.length
+    ? portions
+    : fromBatches.filter((p) => p.bank).map((p) => ({ portion: p.portion === "national" ? "national" as const : "state" as const, bank: p.bank, item_ids: p.item_ids, pass_score: p.pass_score == null ? null : `${Math.round(p.pass_score * 100)}%` }));
+  const timeS = typeof r.time_limit_s === "number" ? r.time_limit_s : typeof s.time_limit_s === "number" ? s.time_limit_s : typeof r.time_limit_ms === "number" ? r.time_limit_ms / 1000 : typeof s.time_limit_ms === "number" ? s.time_limit_ms / 1000 : typeof s.time_limit_minutes === "number" ? s.time_limit_minutes * 60 : null;
   return {
     session_id: id,
     form_id: typeof s.form_id === "string" ? s.form_id : "",
     jurisdiction: typeof s.jurisdiction === "string" ? s.jurisdiction : "",
     item_ids: ids,
-    time_limit_s: typeof s.time_limit_s === "number" ? s.time_limit_s : typeof s.time_limit_minutes === "number" ? s.time_limit_minutes * 60 : null,
-    portions,
+    time_limit_s: timeS,
+    title: typeof r.title === "string" && r.title ? r.title : null,
+    pass_score: typeof r.pass_score === "number" ? r.pass_score : null,
+    portions: portionsFinal,
     batch: r.batch && typeof r.batch === "object" ? (r.batch as IssueBatchResponse) : null,
+    // mock-start returns one issued batch per portion: { batches: [{ portion, batch, pass_score }] }
+    batches: [
+      ...(r.batch && typeof r.batch === "object" ? [r.batch as IssueBatchResponse] : []),
+      ...(Array.isArray(r.batches)
+        ? (r.batches as Array<Record<string, unknown>>).map((b) => (b && typeof b.batch === "object" && b.batch ? (b.batch as IssueBatchResponse) : (b as unknown as IssueBatchResponse))).filter((b) => b && Array.isArray((b as IssueBatchResponse).public_ids))
+        : []),
+    ],
     free_tier: r.free_tier && typeof r.free_tier === "object" ? (r.free_tier as MockStartResponse["free_tier"]) : null,
   };
 }

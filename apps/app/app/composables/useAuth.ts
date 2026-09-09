@@ -6,34 +6,51 @@
  *   entitlement, study-state hydrate, free tier) BEFORE `ready` flips, so no screen ever renders
  *   free-tier or empty-progress UI for a paid, experienced learner (V2 §6.1). Slow networks are
  *   capped: after HYDRATE_TIMEOUT_MS the app proceeds and the hooks finish in the background.
- * - `register-device` binds the install (device hash) and takes over the account's single device
- *   slot; its ids are sent as x-device-id / x-session-id. `session_revoked` → local sign-out.
- *   One device at a time (0015): signing in here signs out wherever you were before, and it can
+ * - `register-device` binds the install and starts (or resumes) its session; its ids are sent as
+ *   x-device-id / x-session-id. They persist in localStorage AND the Dexie kv table together with the
+ *   fingerprint hash they were minted for (lib/state/session.ts), so a reload sends the stored ids
+ *   and never registers again. If the fingerprint ever changes, one call *adopts* the stored device.
+ * - Up to `max_active_devices` (default 2, 0022) may be active. A third sign-in evicts the oldest;
+ *   that device gets 401 session_revoked with `reason: new_device` and signs out locally with a
+ *   persistent notice on the sign-in screen naming the device that displaced it. Registration can
  *   never be refused, so there is no device-limit state to carry.
  */
 import type { User } from "@supabase/supabase-js";
+import { pushToast } from "~/components/Toast.vue";
 import { runSignedIn, runSignedOut, withTimeout } from "~~/lib/state/hooks";
+import {
+  clearCreds, clearRevokedNotice, decideEnsureDevice, type DeviceCreds, evictionToastText, loadCreds, loadRevokedNotice,
+  revokedInfoFromExtra, revokedNoticeText, saveCreds, saveRevokedNotice,
+} from "~~/lib/state/session";
 import { getDb } from "~~/lib/study/db";
-import { callFunction, functionsBase } from "~~/lib/study/api";
+import { ApiError, callFunction, functionsBase, takeLastRevocation } from "~~/lib/study/api";
 import { defaultDeviceName, platform } from "~~/lib/study/fingerprint";
 
-/** Fallback wording when a displaced device was never given a name. */
-function deviceLabel(p: string): string {
-  return p === "web" ? "your computer" : p === "ios" || p === "android" ? "your phone" : "your other device";
-}
-
-export interface DeviceCreds { deviceId: string; sessionId: string; userId: string }
+export type { DeviceCreds } from "~~/lib/state/session";
 export interface AuthNotice { kind: "info" | "warn"; text: string }
 
-export const SESSION_REVOKED_MESSAGE = "You signed in on another device. Sign in again to study here.";
 export const HYDRATE_TIMEOUT_MS = 8000;
-const DEVICE_KV = "auth.device";
+/** Default device ceiling for wording when the server did not say (mirrors app_settings.device_policy). */
+export const DEFAULT_MAX_DEVICES = 2;
 
 let inited = false;
 let signingOut = false;
 let registering: Promise<boolean> | null = null;
 let hydratedFor: string | null = null;
 let hydrating: Promise<void> | null = null;
+
+function storage(): Storage | null {
+  try { return typeof localStorage !== "undefined" ? localStorage : null; } catch { return null; }
+}
+/** Dexie kv table behind the small interface lib/state/session.ts expects. */
+function kvStore() {
+  const db = getDb();
+  return {
+    get: async (key: string) => (await db.kv.get(key))?.value,
+    put: async (key: string, value: unknown) => { await db.kv.put({ key, value }); },
+    delete: async (key: string) => { await db.kv.delete(key); },
+  };
+}
 
 export function useAuth() {
   const supabase = useSupabase();
@@ -44,6 +61,8 @@ export function useAuth() {
   const notice = useState<AuthNotice | null>("auth.notice", () => null);
   const device = useState<DeviceCreds | null>("auth.device", () => null);
   const busy = useState<boolean>("auth.busy", () => false);
+  /** the device ceiling as last reported by register-device / session_revoked details */
+  const maxDevices = useState<number>("auth.maxDevices", () => DEFAULT_MAX_DEVICES);
   /** true while the signed-in hooks (entitlement, study state …) run for the current user */
   const hydratingState = useState<boolean>("auth.hydrating", () => false);
   // from runtime config (not the client instance) so SSR and client agree on what to render
@@ -58,11 +77,15 @@ export function useAuth() {
     inited = true;
     if (!supabase) { ready.value = true; return; }
     try {
-      const kv = await getDb().kv.get(DEVICE_KV);
-      device.value = (kv?.value as DeviceCreds | undefined) ?? null;
+      device.value = await loadCreds(storage(), kvStore());
       const { data } = await supabase.auth.getSession();
       user.value = data.session?.user ?? null;
       if (user.value) await withTimeout(hydrate(user.value, "init"), HYDRATE_TIMEOUT_MS);
+      else {
+        // a device that was evicted while this tab was closed: say why on the sign-in screen
+        const stored = loadRevokedNotice(storage());
+        if (stored) notice.value = { kind: stored.kind, text: stored.text };
+      }
     } catch (e) {
       if (import.meta.dev) console.warn("[auth] init", e);
     } finally {
@@ -76,8 +99,12 @@ export function useAuth() {
           user.value = null;
           hydratedFor = null;
           if (!signingOut && hadUser) {
-            notice.value = { kind: "warn", text: "Your sign-in expired. Sign in again to keep studying." };
-            void runSignedOut("expired");
+            // another tab signed this browser out after a revocation: show its reason, not "expired"
+            const stored = loadRevokedNotice(storage());
+            notice.value = stored
+              ? { kind: stored.kind, text: stored.text }
+              : { kind: "warn", text: "Your sign-in expired. Sign in again to keep studying." };
+            void runSignedOut(stored ? "revoked" : "expired");
           }
           return;
         }
@@ -111,22 +138,27 @@ export function useAuth() {
     return hydrating;
   }
 
+  /**
+   * Stored creds for this user → reuse them, no call. Stored creds whose fingerprint no longer matches
+   * this install → one register-device call that adopts the stored device row. Otherwise register.
+   */
   async function ensureDevice(u: User): Promise<void> {
-    if (device.value && device.value.userId === u.id) return;
-    await registerDevice();
+    const hash = await dev.ensure().catch(() => null);
+    const decision = decideEnsureDevice(device.value, u.id, hash);
+    if (decision === "reuse") return;
+    await registerDevice(undefined, decision === "adopt" ? device.value?.deviceId ?? null : null);
   }
 
   /**
    * Take device/session ids that were minted elsewhere instead of calling register-device.
    *
-   * Only admin impersonation uses this. Under the single-device rule, registering a device for an
-   * account you are only looking at would sign the real owner out of their own phone, so admin-api
-   * attaches a session to a device the user already has and hands the ids over here. Writing them
-   * before the auth state change lands is what makes `ensureDevice` short-circuit.
+   * Only admin impersonation uses this: admin-api attaches a shadow session to a device the user
+   * already has and hands the ids over here. Writing them before the auth state change lands is what
+   * makes `ensureDevice` short-circuit.
    */
   async function adoptDevice(creds: DeviceCreds): Promise<void> {
     device.value = creds;
-    await getDb().kv.put({ key: DEVICE_KV, value: creds });
+    await saveCreds(storage(), kvStore(), creds);
   }
 
   async function accessToken(): Promise<string | null> {
@@ -151,11 +183,22 @@ export function useAuth() {
     return h && h["x-device-id"] ? h : null;
   }
 
+  interface RegisterResponse {
+    device_id: string;
+    session_id: string;
+    created?: boolean;
+    session_reused?: boolean;
+    adopted?: boolean;
+    max_active_devices?: number;
+    signed_out?: Array<{ id: string; platform: string | null; name: string | null }>;
+  }
+
   /**
-   * register-device: binds this install and takes over the account's single device slot. Whatever
-   * device held it is signed out (it sees 401 session_revoked), so this call cannot be refused.
+   * register-device: binds this install and starts (or resumes) its session. Whatever this pushes over
+   * the ceiling is signed out (it sees 401 session_revoked with our name), so this call cannot be
+   * refused. `adoptDeviceId` carries the stored device id when only the fingerprint changed.
    */
-  function registerDevice(name?: string): Promise<boolean> {
+  function registerDevice(name?: string, adoptDeviceId: string | null = null): Promise<boolean> {
     if (registering) return registering;
     registering = (async () => {
       const uid = user.value?.id;
@@ -164,28 +207,34 @@ export function useAuth() {
       busy.value = true;
       try {
         const deviceHash = await dev.ensure();
-        const res = await callFunction<{
-          device_id: string;
-          session_id: string;
-          signed_out?: Array<{ id: string; platform: string; name: string | null }>;
-        }>(base, "register-device", {
+        const body: Record<string, unknown> = {
           fingerprint_hash: deviceHash,
           device_hash: deviceHash,
           platform: platform(),
           name: name ?? defaultDeviceName(),
-        }, { authorization: `Bearer ${token}`, apikey: config.public.supabaseAnonKey });
-        const creds: DeviceCreds = { deviceId: res.device_id, sessionId: res.session_id, userId: uid };
+        };
+        if (adoptDeviceId) body.device_id = adoptDeviceId;
+        const res = await callFunction<RegisterResponse>(base, "register-device", body, {
+          authorization: `Bearer ${token}`,
+          apikey: config.public.supabaseAnonKey,
+        });
+        const creds: DeviceCreds = { deviceId: res.device_id, sessionId: res.session_id, userId: uid, fingerprintHash: deviceHash };
         device.value = creds;
-        await getDb().kv.put({ key: DEVICE_KV, value: creds });
+        await saveCreds(storage(), kvStore(), creds);
+        if (typeof res.max_active_devices === "number") maxDevices.value = res.max_active_devices;
+        // we are signed in now; whatever put us on the sign-in screen is history
+        clearRevokedNotice(storage());
+        if (notice.value?.kind === "warn") notice.value = null;
         // say so plainly rather than letting the other device go quiet unexplained
-        const kicked = res.signed_out?.[0];
-        if (kicked) {
-          notice.value = { kind: "info", text: `Signed out ${kicked.name ?? deviceLabel(kicked.platform)} — one device at a time.` };
-        }
+        const toast = evictionToastText(res.signed_out, res.max_active_devices ?? maxDevices.value);
+        if (toast) pushToast(toast, "info", 6000);
         return true;
-      } catch {
-        // registration can no longer be refused on policy grounds, so anything here is transport
-        notice.value = { kind: "warn", text: "Couldn't register this device yet. We'll retry when you're online." };
+      } catch (e) {
+        if (import.meta.dev) console.warn("[auth] register-device", e);
+        // registration is never refused on policy grounds, so anything here is transport / auth
+        if (!(e instanceof ApiError && e.status === 401)) {
+          notice.value = { kind: "warn", text: "Couldn't register this device yet. We'll retry when you're online." };
+        }
         return false;
       } finally {
         busy.value = false;
@@ -215,6 +264,7 @@ export function useAuth() {
       if (data.session?.user) {
         user.value = data.session.user;
         notice.value = null;
+        clearRevokedNotice(storage());
         await withTimeout(hydrate(data.session.user, "sign_in"), HYDRATE_TIMEOUT_MS);
       }
       return { ok: true };
@@ -223,28 +273,46 @@ export function useAuth() {
     }
   }
 
-  /** Local sign-out only: the other device that just signed in keeps its own refresh token. */
-  async function signOut(reason?: string): Promise<void> {
+  /**
+   * Local sign-out only: other devices keep their own sessions. `reason` is shown as a notice; pass
+   * `kind: "revoked"` when the server pushed us out so the notice survives into the sign-in screen.
+   */
+  async function signOut(reason?: string, kind: "user" | "revoked" = "user"): Promise<void> {
     signingOut = true;
     try {
-      await runSignedOut(reason === SESSION_REVOKED_MESSAGE ? "revoked" : "user");
+      await runSignedOut(kind);
       if (supabase) await supabase.auth.signOut({ scope: "local" });
     } catch { /* offline is fine */ } finally { signingOut = false; }
     user.value = null;
     hydratedFor = null;
     device.value = null;
-    await getDb().kv.delete(DEVICE_KV);
-    notice.value = reason ? { kind: "info", text: reason } : null;
+    await clearCreds(storage(), kvStore());
+    if (reason) {
+      notice.value = { kind: kind === "revoked" ? "warn" : "info", text: reason };
+      if (kind === "revoked") saveRevokedNotice(storage(), reason, "warn");
+    } else {
+      notice.value = null;
+    }
   }
 
-  async function onSessionRevoked(): Promise<void> {
-    await signOut(SESSION_REVOKED_MESSAGE);
+  /**
+   * A call answered 401 session_revoked. Explain why (the error's `reason`/`details`, or the last one
+   * any call saw) and sign out locally; the notice persists until the next successful sign-in.
+   */
+  async function onSessionRevoked(e?: unknown): Promise<void> {
+    const extra = e instanceof ApiError ? e.extra : takeLastRevocation();
+    const info = revokedInfoFromExtra(extra, maxDevices.value);
+    if (info.maxDevices) maxDevices.value = info.maxDevices;
+    await signOut(revokedNoticeText(info), "revoked");
   }
 
-  function dismissNotice() { notice.value = null; }
+  function dismissNotice() {
+    notice.value = null;
+    clearRevokedNotice(storage());
+  }
 
   return {
-    configured, ready, user, signedIn, notice, device, busy, hydrating: hydratingState,
+    configured, ready, user, signedIn, notice, device, busy, maxDevices, hydrating: hydratingState,
     init, accessToken, authHeaders, apiHeaders, registerDevice, adoptDevice,
     signInWithEmail, verifyEmailCode, signOut, onSessionRevoked, dismissNotice,
   };

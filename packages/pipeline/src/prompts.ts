@@ -41,6 +41,8 @@ export interface DraftRequest {
   statuteCitationRoot: string;
   statuteText: string;
   existingStems: string[];
+  /** keyed-answer texts already used anywhere in this domain — the same rule must not be asked again */
+  coveredAnswers?: string[];
 }
 
 export function draftUserPrompt(r: DraftRequest): { statuteBlock: string; taskBlock: string } {
@@ -55,6 +57,7 @@ FIGURES (v6): Do not key an item on a statutory dollar penalty or cap that is in
     `This node contributes ${r.target.exam_items} scored item(s) to the real exam.`,
     `Write exactly ${r.count} items with this cognitive mix: knowledge ${r.cognitiveMix.knowledge}, application ${r.cognitiveMix.application}, analysis ${r.cognitiveMix.analysis}.`,
     r.existingStems.length ? `Existing stems in this node (do not duplicate or lightly vary):\n- ${r.existingStems.join("\n- ")}` : "Existing stems in this node: none yet.",
+    r.coveredAnswers?.length ? `Rules ALREADY COVERED in this domain — do not write any item whose correct answer restates one of these, in any wording, positive or negative form:\n- ${r.coveredAnswers.join("\n- ")}` : "",
     `Return JSON: {"items": [ ... ]} where each item has cognitive_level, stem, options (4 strings), key ("A"|"B"|"C"|"D"), explanation, citation {source, quoted_text}, math ({worked_solution, formulas} or null), terms.`,
   ].join("\n\n");
   return { statuteBlock, taskBlock };

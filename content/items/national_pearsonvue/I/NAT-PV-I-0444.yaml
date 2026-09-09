@@ -1,0 +1,36 @@
+id: NAT-PV-I-0444
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which lien is created by the owner's agreement?
+options:
+  - Property tax lien
+  - Mechanic's lien
+  - Mortgage lien
+  - Judgment lien
+key: C
+explanation: A voluntary lien is created by the owner's agreement, with mortgage and deed of trust
+  given as examples. Therefore a mortgage lien is created by the owner's agreement. The property tax
+  lien arises by statute without consent, making it involuntary.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: a voluntary lien is created by the owner's agreement (mortgage, deed of trust);
+  secondary: []
+terms:
+  - voluntary lien
+  - mortgage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

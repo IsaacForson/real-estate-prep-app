@@ -1,0 +1,47 @@
+id: NAT-PV-II-0474
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Alex, Blair, and Dana hold a rental property as joint tenants. Alex sells his interest to
+  Erin. After the sale, what is Erin's ownership status and what is the relationship between Blair
+  and Dana?
+options:
+  - Erin is a tenant in common with Blair and Dana; Blair and Dana become tenants in common with
+    each other.
+  - Erin is a joint tenant with Blair and Dana; Blair and Dana become tenants in common with each
+    other.
+  - Erin is a tenant in common with Blair and Dana; Blair and Dana remain joint tenants with each
+    other.
+  - Erin is a joint tenant with Blair and Dana; Blair and Dana remain joint tenants with each other.
+key: C
+explanation: Under the rules for joint tenancy, when a joint tenant conveys his or her interest
+  during life, the buyer becomes a tenant in common with the remaining owners, and the remaining
+  owners stay joint tenants among themselves. Thus, Erin holds her interest as a tenant in common
+  with Blair and Dana, while Blair and Dana continue to hold theirs as joint tenants with each
+  other. The option stating that Blair and Dana become tenants in common with each other is
+  incorrect because the conveyance destroys the joint tenancy only as to the transferred share, not
+  as to the remaining owners.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 4.3
+  url: null
+  quoted_text: A joint tenant may convey the share during life; the buyer becomes a tenant in common
+    with the remaining owners, who stay joint tenants among themselves.
+  secondary: []
+terms:
+  - joint tenancy
+  - tenancy in common
+  - conveyance
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

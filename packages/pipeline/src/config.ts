@@ -21,5 +21,5 @@ export const CONFIG = {
   stateDir: resolve(ROOT, process.env.PIPELINE_STATE_DIR ?? ".pipeline"),
   /** Items requested per drafting call. Keeps each response well under max_tokens. */
   itemsPerCall: 8,
-  promptVersion: "draft-v6 / verify-v2",
+  promptVersion: "draft-v7 / verify-v2",
 } as const;

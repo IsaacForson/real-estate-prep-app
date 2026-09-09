@@ -20,16 +20,40 @@ import { DraftBatchSchema, bankMeta, nodeStatuteRefs, nextIdFactory, draftToItem
 import { Verdict, localCheck, reject, jurOf } from "./verify.js";
 import { normalizeDraft } from "./normalize.js";
 import { needsBalancing, balanceItem } from "./balance.js";
-import { unlinkSync } from "node:fs";
+import { unlinkSync, existsSync } from "node:fs";
 
 export const DIRECT = {
   /** ≈ 5K tokens of authority text per request — fits Groq's free tier with room for the task + output. */
   chunkChars: Number(process.env.DRAFT_CHUNK_CHARS ?? 18_000),
-  itemsPerChunk: Number(process.env.DRAFT_ITEMS_PER_CHUNK ?? 4),
+  itemsPerChunk: Number(process.env.DRAFT_ITEMS_PER_CHUNK ?? 3),
   concurrency: Number(process.env.LLM_CONCURRENCY ?? 4),
 };
 
 /** Split resolved authority text into chunks at section boundaries ("### " headings), then by paragraphs. */
+let exclusionCache: RegExp[] | null = null;
+/** content/exclusions.yaml → heading regexes of never-examinable sections (QA batches 2–3). */
+export function loadExclusions(): RegExp[] {
+  if (exclusionCache) return exclusionCache;
+  const path = join(CONFIG.contentDir, "exclusions.yaml");
+  const raw = existsSync(path) ? (readYaml(path) as { heading_patterns?: string[] }) : {};
+  exclusionCache = (raw.heading_patterns ?? []).map((p) => {
+    const m = /^\(\?i\)/.exec(p);
+    return new RegExp(m ? p.slice(4) : p, m ? "i" : "");
+  });
+  return exclusionCache;
+}
+/** Drop "### " sections whose heading matches an exclusion; returns the text and the number of sections removed. */
+export function stripExcludedSections(text: string, patterns = loadExclusions()): { text: string; removed: string[] } {
+  if (!patterns.length) return { text, removed: [] };
+  const removed: string[] = [];
+  const kept = text.split(/\n(?=### )/g).filter((sec) => {
+    const heading = sec.match(/^### [^\n]*/)?.[0] ?? "";
+    if (heading && patterns.some((re) => re.test(heading))) { removed.push(heading.slice(4).trim()); return false; }
+    return true;
+  });
+  return { text: kept.join("\n"), removed };
+}
+
 export function chunkAuthority(text: string, max = DIRECT.chunkChars): string[] {
   const sections = text.split(/\n(?=### )/g);
   const out: string[] = [];
@@ -77,7 +101,10 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
     const r = resolveRefs(refs, docs);
     if (!r.text) { log(`skip ${g.node}: refs match nothing cached (${refs.join(", ")})`); continue; }
     if (r.unmatched.length) log(`warn ${g.node}: refs not cached: ${r.unmatched.join(", ")}`);
-    const chunks = chunkAuthority(r.text);
+    const stripped = stripExcludedSections(r.text);
+    if (stripped.removed.length) log(`  ${g.node}: excluded ${stripped.removed.length} non-examinable section(s): ${stripped.removed.slice(0, 4).join(" | ")}${stripped.removed.length > 4 ? " …" : ""}`);
+    if (!stripped.text.trim()) { log(`skip ${g.node}: nothing examinable left after exclusions`); continue; }
+    const chunks = chunkAuthority(stripped.text);
     const want = Math.min(g.gap, opts.limit ?? g.gap);
     // spread the node's items across its chunks, at most itemsPerChunk per request; rotate chunks if more needed
     let remaining = want, ci = 0, round = 0;
@@ -92,18 +119,27 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
 
   const stemsByNode = new Map<string, string[]>();
   for (const i of existing) { const k = i.blueprint_node; if (!stemsByNode.has(k)) stemsByNode.set(k, []); stemsByNode.get(k)!.push(i.stem); }
+  // rules already covered anywhere in the bank's domain: the keyed answer text of every existing item (dedupe control, QA batch 3)
+  const answersByDomain = new Map<string, string[]>();
+  for (const i of existing) {
+    const d = i.blueprint_node.split(".")[0]!;
+    const key = i.options["ABCD".indexOf(i.key)] ?? "";
+    if (!answersByDomain.has(d)) answersByDomain.set(d, []);
+    if (key.length >= 12) answersByDomain.get(d)!.push(key);
+  }
   const byProvider: Record<string, number> = {};
   let written = 0, failed = 0, balanced = 0;
   const results = await mapLimit(jobs, DIRECT.concurrency, async (j) => {
     const { statuteBlock, taskBlock } = draftUserPrompt({
       bank, jurisdictionName: meta.name, vendor: meta.vendor, target: { node: j.node, label: j.label, exam_items: j.examItems, target_bank_items: 0 }, count: j.count,
       cognitiveMix: j.cog, statuteCitationRoot: meta.statuteRoot, statuteText: j.chunk, existingStems: (stemsByNode.get(j.node) ?? []).slice(-40),
+      coveredAnswers: [...new Set(answersByDomain.get(j.node.split(".")[0]!) ?? [])].slice(-80),
     });
     const note = j.chunks > 1 ? `\n\nNOTE: this is part ${j.chunkIdx + 1} of ${j.chunks} of the node's authority text. Write items answerable from THIS part only.` : "";
     const { data, result } = await chatJson(router, DraftBatchSchema, [
       { role: "system", content: DRAFT_SYSTEM },
       { role: "user", content: `${statuteBlock}\n\n${taskBlock}${note}` },
-    ], { maxTokens: 6000, temperature: 0.5 });
+    ], { maxTokens: 9000, temperature: 0.5 });
     byProvider[`${result.provider}/${result.model}`] = (byProvider[`${result.provider}/${result.model}`] ?? 0) + 1;
     for (const d of data.items) {
       const id = nextId(j.node);

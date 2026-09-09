@@ -1,0 +1,48 @@
+id: NAT-PV-III-0529
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homeowner spends $18,000 to add a screened porch. After the addition, the property's market
+  value increases by $11,000. According to the contribution principle, what is the contribution of
+  the screened porch to the property's value?
+options:
+  - $11,000
+  - $18,000
+  - $7,000
+  - $29,000
+key: A
+explanation: Under the contribution principle, a component's value is the amount it adds to the
+  property's overall value, not what it cost. The screened porch increased market value by $11,000,
+  so its contribution is $11,000. The distractor that uses the cost of $18,000 is incorrect because
+  contribution ignores expenditure.
+citation:
+  source: REP Ref. Valuation & Appraisal § 4.4
+  url: null
+  quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+    value of the whole, not by what it cost.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the increase in market value after the improvement: $11,000.
+    Apply the contribution principle: contribution equals this increase.
+  formulas:
+    - Contribution = Change in market value due to component
+  onscreen_calculator_only: false
+terms:
+  - contribution
+  - component
+  - value
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

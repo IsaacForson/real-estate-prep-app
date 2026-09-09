@@ -1,0 +1,41 @@
+id: NAT-PV-I-0437
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home and the seller leaves a built‑in microwave that is bolted to the
+  kitchen cabinets. The purchase contract does **NOT** mention the microwave. What is the status of
+  the microwave?
+options:
+  - It remains personal property because it is not bolted.
+  - It is a trade fixture and must be removed by the seller.
+  - It becomes the buyer's personal property only if the buyer pays extra.
+  - It is a fixture and passes with the real estate.
+key: D
+explanation: A built‑in appliance that is attached to the property is a fixture. A fixture passes
+  with the real estate unless the contract specifically excludes it, so the microwave remains part
+  of the property. (Reference note on property characteristics, legal descriptions, land use
+  controls)
+citation:
+  source: "REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) § 1.3"
+  url: null
+  quoted_text: A fixture passes with the real estate unless the contract excludes it.
+  secondary: []
+terms:
+  - fixture
+  - contract exclusion
+  - attachment
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

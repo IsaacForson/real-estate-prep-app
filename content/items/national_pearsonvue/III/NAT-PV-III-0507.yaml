@@ -1,0 +1,45 @@
+id: NAT-PV-III-0507
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Two adjacent parcels each valued at $120,000 are combined into a single site valued at
+  $280,000. What is the plottage value resulting from the assemblage?
+options:
+  - $40,000
+  - $120,000
+  - $20,000
+  - $240,000
+key: A
+explanation: Plottage is the increase in value when parcels are combined, calculated as the combined
+  value minus the sum of the separate values. In this case, $280,000 - ($120,000 + $120,000) =
+  $40,000. The value of a single parcel ($120,000) is not the increment in value.
+citation:
+  source: "### REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process,
+    three approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.10"
+  url: null
+  quoted_text: Two adjoining lots worth $100,000 each are assembled into one commercial site worth
+    $260,000; plottage value is 260,000 − (100,000 + 100,000) = $60,000.
+  secondary: []
+math:
+  worked_solution: Combined value = $280,000. Sum of separate values = $120,000 + $120,000 = $240,000.
+    Plottage = $280,000 - $240,000 = $40,000.
+  formulas:
+    - Plottage = Combined value - (Value of parcel 1 + Value of parcel 2)
+  onscreen_calculator_only: false
+terms:
+  - plottage
+  - assemblage
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

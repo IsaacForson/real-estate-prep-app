@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AdminContentAlert, AdminContentVersion } from "~/composables/useAdmin";
+import type { AdminContentAlert, AdminContentBankSummary, AdminContentVersion } from "~/composables/useAdmin";
 import type { AdminColumn } from "~/components/admin/Table.vue";
 
 definePageMeta({ layout: "admin", ssr: false });
@@ -12,6 +12,7 @@ const action = useAdminAction();
 const status = ref<"open" | "resolved" | null>("open");
 const alerts = useAdminQuery(() => api.content.alerts(status.value));
 const versions = useAdminQuery(() => api.content.versions());
+const summary = useAdminQuery(() => api.content.summary());
 watch(status, () => { void alerts.reload(); });
 onMounted(() => { void requireAdmin(); });
 
@@ -31,6 +32,15 @@ async function resolve(a: AdminContentAlert) {
   await action.run(`resolve-${a.id}`, () => api.content.resolveAlert(a.id), "Alert resolved.", alerts.reload);
 }
 
+const summaryRows = computed(() => summary.data.value ?? []);
+const summaryCols: AdminColumn[] = [
+  { key: "bank", label: "Bank", width: "220px" },
+  { key: "items_published", label: "Items published", align: "right", width: "140px" },
+  { key: "items_in_db", label: "Bodies in DB", align: "right", width: "130px", hideBelow: "md" },
+  { key: "forms", label: "Mock forms", align: "right", width: "110px" },
+  { key: "last_published_at", label: "Last published", width: "180px" },
+];
+const bankTone = (b: AdminContentBankSummary) => (b.items_published === 0 ? "muted" : b.items_in_db < b.items_published ? "warn" : "ok");
 const versionRows = computed(() => (versions.data.value ?? []).map((v, i) => ({ ...v, _key: v.id ?? String(v.version ?? i) })));
 const versionCols: AdminColumn[] = [
   { key: "version", label: "Version", width: "140px" },
@@ -55,6 +65,35 @@ const alertFilter = computed({
         <code class="rounded bg-surface-2 px-1 py-px text-[12px]">pipeline publish --remote</code> shipped to learners.
       </p>
     </div>
+
+    <AdminCard title="Banks" flush>
+      <template #actions>
+        <AppButton variant="secondary" size="sm" icon="refresh" :loading="summary.loading.value" @click="summary.reload">Refresh</AppButton>
+      </template>
+      <div class="px-4 pb-4">
+        <AdminState :loading="summary.loading.value" :error="summary.error.value" :empty="summary.loaded.value && summaryRows.length === 0" empty-text="No bank has been published yet — run pipeline publish --remote." @retry="summary.reload">
+          <AdminTable :columns="summaryCols" :rows="summaryRows" :row-key="(r) => r.bank" dense caption="Published content per bank">
+            <template #cell-bank="{ row }">
+              <code class="font-mono text-[11.5px]">{{ row.bank }}</code>
+            </template>
+            <template #cell-items_published="{ row }">
+              <span class="tabular">{{ adminFmt.int(row.items_published) }}</span>
+              <AdminBadge v-if="row.items_published === 0" text="empty — national fallback" tone="muted" class="ml-1.5" />
+            </template>
+            <template #cell-items_in_db="{ row }">
+              <span class="tabular" :class="bankTone(row) === 'warn' ? 'text-warn' : ''">{{ adminFmt.int(row.items_in_db) }}</span>
+            </template>
+            <template #cell-forms="{ row }"><span class="tabular">{{ adminFmt.int(row.forms) }}</span></template>
+            <template #cell-last_published_at="{ row }"><AdminTime :value="row.last_published_at" absolute /></template>
+          </AdminTable>
+        </AdminState>
+        <p class="mt-3 text-[12px] leading-relaxed text-muted">
+          "Bodies in DB" counts <code class="rounded bg-surface-2 px-1 py-px text-[11.5px]">item_content</code> rows; when it trails the published
+          count, run <code class="rounded bg-surface-2 px-1 py-px text-[11.5px]">pipeline publish --remote --backfill</code>. Forms come from
+          <code class="rounded bg-surface-2 px-1 py-px text-[11.5px]">pipeline forms-build &lt;bank|XX&gt; --remote</code>.
+        </p>
+      </div>
+    </AdminCard>
 
     <AdminCard title="Content alerts" flush>
       <template #actions>

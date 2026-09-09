@@ -1,0 +1,52 @@
+id: NAT-PV-VIII-0672
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.E
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Annual property taxes are $4,800 and annual homeowners insurance is $1,200. The lender
+  requires 4 months of taxes and 3 months of insurance to be collected at closing. What is the total
+  initial escrow deposit?
+options:
+  - $2,700
+  - $2,000
+  - $1,900
+  - $1,500
+key: C
+explanation: The monthly escrow deposit is calculated by dividing the annual amount by 12, and the
+  initial deposit equals the monthly amount multiplied by the number of months required. Monthly tax
+  = $4,800 ÷ 12 = $400; for 4 months = $1,600. Monthly insurance = $1,200 ÷ 12 = $100; for 3 months
+  = $300. Total = $1,900. The distractor $2,000 assumes 4 months for both tax and insurance.
+citation:
+  source: REP Ref. Real Estate Math § 5.11
+  url: null
+  quoted_text: Monthly escrow deposit = annual tax (or premium) ÷ 12. Initial deposit at closing =
+    monthly amount × months required.
+  secondary: []
+math:
+  worked_solution: |-
+    Monthly tax = $4,800 ÷ 12 = $400.
+    Tax deposit = $400 × 4 = $1,600.
+    Monthly insurance = $1,200 ÷ 12 = $100.
+    Insurance deposit = $100 × 3 = $300.
+    Total = $1,600 + $300 = $1,900.
+  formulas:
+    - monthly deposit = annual/12
+    - initial deposit = monthly deposit × months
+  onscreen_calculator_only: false
+terms:
+  - escrow
+  - taxes
+  - insurance
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

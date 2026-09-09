@@ -1,0 +1,37 @@
+id: NAT-PV-III-0500
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: In real estate appraisal, how is "price" defined?
+options:
+  - The present worth of future benefits ownership is expected
+  - The amount spent to create or acquire the improvements
+  - An opinion of value stated as of a specific date in appraisal
+  - The amount actually paid in a completed transaction
+key: D
+explanation: Price is defined as the amount actually paid in a completed transaction, which is a
+  historical fact. The option describing the present worth of future benefits defines value, not
+  price.
+citation:
+  source: REP Ref. Valuation & Appraisal § 1.1
+  url: null
+  quoted_text: Price is the amount actually paid in a completed transaction; it is a historical fact.
+  secondary: []
+terms:
+  - price
+  - value
+  - cost
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,40 @@
+id: NAT-PV-V-0574
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following actions constitutes conversion of trust money under trust account rules?
+options:
+  - Maintaining a separate ledger for each transaction
+  - Using trust money to pay the broker's personal credit card bill
+  - Depositing earnest money into the broker's operating account
+  - Leaving earned commissions in the trust account past the permitted time
+key: B
+explanation: Conversion is defined as using trust money for any unauthorized purpose, such as paying
+  the broker's personal credit card bill. Depositing earnest money into the operating account or
+  leaving earned commissions in the trust account past the permitted time are examples of
+  commingling, not conversion. Maintaining a separate ledger is a proper trust account practice and
+  does not involve misuse of funds.
+citation:
+  source: REP Ref. Brokerage Practice § 10.2
+  url: null
+  quoted_text: Conversion is using trust money for any unauthorized purpose.
+  secondary: []
+terms:
+  - conversion
+  - trust money
+  - commingling
+  - unauthorized purpose
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

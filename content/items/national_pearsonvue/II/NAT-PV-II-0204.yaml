@@ -9,11 +9,11 @@ stem: A lender acquires a property through foreclosure and sells it using a deed
   against claims arising during the lender's ownership. Which deed type is the lender most likely
   using?
 options:
+  - Special warranty deed
   - General warranty deed
   - Quitclaim deed, no warranty
-  - Special warranty deed
   - Bargain and sale deed
-key: C
+key: A
 explanation: A special warranty deed limits the grantor's warranties to defects that arose during
   the grantor's own period of ownership. When a lender acquires title through foreclosure and then
   sells the property, it typically uses this deed because it only warrants against claims that could
@@ -32,14 +32,14 @@ terms:
   - foreclosure
   - lender
 tags: []
-status: verified
-reviewer: null
+status: qa_approved
+reviewer: qa-lead-model
 verified_on: 2026-09-08
-qa_approved_on: null
+qa_approved_on: 2026-09-09
+review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review
 version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v5 / verify-v1
   batch_id: null
   generated_on: 2026-09-08
-review_reason: wording repaired 2026-09-09 (meta-reference-in-explanation); re-review

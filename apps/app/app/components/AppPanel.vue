@@ -52,13 +52,7 @@ async function loadDue() {
   } catch { due.value = null; }
 }
 
-const rows = computed<Array<{ to: string; label: string; hint: string; icon: IconName; count?: number | null }>>(() => [
-  { to: "/app/mocks", label: "Timed mock", hint: "Sit the real exam format", icon: "clock" },
-  { to: "/app/review", label: "Review", hint: "Missed questions and your boxes", icon: "refresh", count: due.value },
-  { to: "/app/study", label: "Progress", hint: "Readiness and section coverage", icon: "target" },
-  { to: "/app/glossary", label: "Glossary", hint: "Terms with their citations", icon: "book" },
-  { to: "/app/account", label: "Account", hint: "Plan, exam date, settings", icon: "user" },
-]);
+const rows = computed(() => useAppNav({ due: due.value }));
 
 function close() { emit("close"); }
 
@@ -174,12 +168,12 @@ onUnmounted(() => {
             <span v-else>{{ daysLeft }} {{ daysLeft === 1 ? 'day' : 'days' }} until your exam</span>
           </div>
 
-          <nav class="mt-4 grid gap-2" aria-label="App">
+          <nav class="mt-4 grid min-w-0 grid-cols-[minmax(0,1fr)] gap-2" aria-label="App">
             <NuxtLink
               v-for="r in rows"
               :key="r.to"
               :to="r.to"
-              class="flex min-h-[4rem] items-center gap-3.5 rounded-card border border-line bg-surface p-3.5 shadow-card
+              class="flex min-h-[4rem] min-w-0 items-center gap-3.5 rounded-card border border-line bg-surface p-3.5 shadow-card
                      transition-[transform,border-color] duration-150 ease-standard hover:border-line-strong active:scale-[0.99]"
               @click="close"
             >

@@ -1,0 +1,47 @@
+id: NAT-PV-VII-0644
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1635(a), an obligor’s right to rescind a consumer credit transaction secured by
+  the obligor’s principal dwelling expires at which time?
+options:
+  - Midnight of the seventh business day after consummation.
+  - Midnight of the third business day after consummation only.
+  - Midnight of the third business day after consummation or delivery.
+  - Midnight of the third business day after delivery of required disclosures only.
+key: C
+explanation: Under 15 U.S.C. § 1635(a), the right to rescind a consumer credit transaction secured
+  by the obligor’s principal dwelling expires at midnight of the third business day following either
+  the consummation of the transaction or the delivery of the required disclosures, whichever occurs
+  later. The option stating 'Midnight of the third business day after consummation or delivery.'
+  matches this rule. The option stating 'Midnight of the third business day after consummation
+  only.' omits the delivery trigger, so it is incomplete. The option stating 'Midnight of the
+  seventh business day after consummation.' uses the wrong time period. The option stating 'Midnight
+  of the third business day after delivery of required disclosures only.' omits the consummation
+  trigger, so it is also incomplete.
+citation:
+  source: 15 U.S.C. § 1635(a)
+  url: null
+  quoted_text: the obligor shall have the right to rescind the transaction until midnight of the third
+    business day following the consummation of the transaction or the delivery of the information
+    and rescission forms required under this section together with a statement containing the
+    material disclosures required under this subchapter, whichever is later
+  secondary: []
+terms:
+  - rescission
+  - consummation
+  - disclosures
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

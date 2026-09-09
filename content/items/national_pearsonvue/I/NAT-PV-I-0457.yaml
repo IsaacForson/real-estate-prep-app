@@ -1,0 +1,38 @@
+id: NAT-PV-I-0457
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following liens is classified as specific and involuntary?
+options:
+  - Judgment lien filed
+  - Property tax lien
+  - Mortgage lien filed
+  - Federal tax lien filed
+key: B
+explanation: Property tax and special assessment liens are specific and involuntary, arising each
+  year without filing. The judgment lien, while involuntary, is classified as a general lien, not
+  specific.
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: "Property tax and special assessment liens: specific, involuntary, statutory, arising
+    each year without filing."
+  secondary: []
+terms:
+  - lien
+  - specific
+  - involuntary
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

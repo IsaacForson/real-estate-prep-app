@@ -1,0 +1,40 @@
+id: NAT-PV-I-0454
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grocery store has been operating as a legal nonconforming use in a single-family residential
+  zone. The owner wants to add a second story of retail space. Under typical zoning rules, is this
+  permitted?
+options:
+  - Yes, because the use is grandfathered.
+  - Yes, if the owner obtains a variance.
+  - No, unless the owner first gains a special-use permit.
+  - No, enlarging a nonconforming use is prohibited.
+key: D
+explanation: The privilege of a legal nonconforming use does not allow the owner to enlarge or
+  intensify the use; ordinances generally forbid expanding a nonconforming use, so adding a second
+  story of retail space is not permitted.
+citation:
+  source: REP Ref. Property & Land Use § 5.3
+  url: null
+  quoted_text: "The privilege is not a license to grow: ordinances typically forbid enlarging or
+    intensifying the use"
+  secondary: []
+terms:
+  - nonconforming use
+  - zoning
+  - enlarging
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

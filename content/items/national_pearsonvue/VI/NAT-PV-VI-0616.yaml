@@ -1,0 +1,44 @@
+id: NAT-PV-VI-0616
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under CERCLA, which of the following is a requirement for a person to qualify as a contiguous
+  property owner under subsection (q)(1)(A)?
+options:
+  - The person must have caused or contributed to the release of hazardous substances from the
+    contiguous property
+  - The person must have failed to provide legally required notices regarding the discovery of
+    hazardous substances
+  - The person must be potentially liable for response costs through a familial relationship with
+    the owner of the contiguous property
+  - The person must not have caused, contributed, or consented to the release or threatened release
+key: D
+explanation: "To avoid being considered an owner or operator solely due to contamination from
+  contiguous property, a person must not have caused, contributed, or consented to the release or
+  threatened release (see 42 U.S.C. § 9607(q)(1)(A)(i)). The first two options describe actions that
+  would disqualify the person (causing or contributing to a release, or failing to provide required
+  notices), while the correct option states the required condition: the person must not have caused,
+  contributed, or consented to the release or threatened release."
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation — § 9607(q)(1)(A)(i)
+  url: null
+  quoted_text: the person did not cause, contribute, or consent to the release or threatened release
+  secondary: []
+terms:
+  - contiguous property
+  - release
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

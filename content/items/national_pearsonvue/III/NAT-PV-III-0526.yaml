@@ -1,0 +1,48 @@
+id: NAT-PV-III-0526
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A comparable property sold for $375,000 and includes a finished basement that contributes
+  $20,000 to value. The subject property does **NOT** have a finished basement. Using the sales
+  comparison approach, what is the indicated value of the subject property?
+options:
+  - $375,000.
+  - $395,000.
+  - $355,000.
+  - $335,000.
+key: C
+explanation: "The contribution principle states that the value of a component is measured by how
+  much it adds to the whole, not by what it cost. Since the subject property lacks the basement that
+  adds $20,000 to the comparable's value, the comparable's price must be reduced by that amount:
+  $375,000 − $20,000 = $355,000. Adding the value would be incorrect, and ignoring the contribution
+  would overlook the necessary adjustment."
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.4"
+  url: null
+  quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+    value of the whole, not by what it cost. A $30,000 pool that adds $12,000 to sale price
+    contributes $12,000. Contribution is what a sales comparison adjustment measures.
+  secondary: []
+math:
+  worked_solution: $375,000 - $20,000 = $355,000
+  formulas:
+    - Subject value = Comparable sale price − Contribution of feature subject lacks
+  onscreen_calculator_only: false
+terms:
+  - sales comparison approach
+  - contribution
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

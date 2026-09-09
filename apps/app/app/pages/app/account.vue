@@ -29,6 +29,8 @@ const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const examDate = computed(() => studyState.settings.value?.examDate ?? null);
 watch(examDate, (d) => { draftDate.value = d ?? ""; });
 const fmt = (s: string | null | undefined) => (s ? new Date(s).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "—");
+const fmtSeen = (s: string | null | undefined) => (s ? new Date(s).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "—");
+const ordinal = (n: number) => (n === 2 ? "second" : n === 3 ? "third" : n === 4 ? "fourth" : n === 5 ? "fifth" : `${n}th`);
 
 async function chooseState(c: string) { picker.value = false; await studyState.set({ jurisdiction: c }); }
 async function saveDate() { await studyState.set({ examDate: draftDate.value || null }); dateSheet.value = false; }
@@ -122,32 +124,39 @@ onMounted(() => { void free.load(); });
     </AppCard>
 
     <AppCard
-      title="Signed in on"
-      subtitle="One device at a time. Signing in somewhere else moves your account there and signs this one out."
+      title="Devices"
+      :subtitle="`Up to ${devices.maxActive.value} devices can be active at once. Signing in on a ${ordinal(devices.maxActive.value + 1)} signs out the oldest.`"
       padding="none"
     >
       <p v-if="devices.error.value" class="mx-4 mb-3.5 text-[13px] text-danger">{{ devices.error.value }}</p>
 
-      <div v-if="devices.current.value" class="flex min-h-14 items-center gap-3 border-t border-line px-4">
-        <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-ink-2">
-          <Icon :name="devices.current.value.platform === 'web' ? 'monitor' : 'device'" :size="17" />
-        </span>
-        <span class="min-w-0 flex-1 py-2.5">
-          <span class="flex items-center gap-2">
-            <span class="truncate text-[15px] font-medium">{{ devices.current.value.name ?? devices.current.value.platform }}</span>
-            <Badge v-if="devices.isThisDevice(devices.current.value.id)" tone="accent">this device</Badge>
+      <template v-if="devices.active.value.length">
+        <div
+          v-for="d in devices.active.value"
+          :key="d.id"
+          class="flex min-h-14 items-center gap-3 border-t border-line px-4"
+        >
+          <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-ink-2">
+            <Icon :name="d.platform === 'web' ? 'monitor' : 'device'" :size="17" />
           </span>
-          <span class="mt-0.5 block text-[11.5px] text-muted">
-            {{ devices.current.value.platform }} · last seen {{ fmt(devices.current.value.last_seen) }}
+          <span class="min-w-0 flex-1 py-2.5">
+            <span class="flex items-center gap-2">
+              <span class="truncate text-[15px] font-medium">{{ d.name ?? d.platform }}</span>
+              <Badge v-if="devices.isThisDevice(d.id)" tone="accent">This device</Badge>
+            </span>
+            <span class="mt-0.5 block text-[11.5px] text-muted">
+              {{ d.platform }} · last seen {{ fmtSeen(d.last_seen) }}
+            </span>
           </span>
-        </span>
-        <AppButton
-          v-if="!devices.isThisDevice(devices.current.value.id)"
-          size="xs"
-          variant="ghost"
-          @click="removeId = devices.current.value.id"
-        >Sign out</AppButton>
-      </div>
+          <AppButton
+            v-if="!devices.isThisDevice(d.id)"
+            size="xs"
+            variant="ghost"
+            :loading="busy && removeId === d.id"
+            @click="removeId = d.id"
+          >Remove</AppButton>
+        </div>
+      </template>
       <p v-else-if="!devices.loading.value" class="border-t border-line px-4 pb-4 pt-3.5 text-[13px] text-muted">This device isn't registered yet.</p>
       <Skeleton v-else class="mx-4 mb-4" height="3rem" />
     </AppCard>
@@ -228,12 +237,12 @@ onMounted(() => { void free.load(); });
 
     <AppSheet
       :open="!!removeId"
-      title="Sign out that device?"
-      description="Signing in on it again will simply move your account back to it."
+      title="Remove that device?"
+      description="It is signed out immediately and its slot frees at once — no waiting period. Signing in on it again registers it afresh."
       @close="removeId = null"
     >
       <div class="grid gap-2">
-        <AppButton variant="danger" size="lg" block :loading="busy" @click="removeDevice">Sign it out</AppButton>
+        <AppButton variant="danger" size="lg" block :loading="busy" @click="removeDevice">Remove device</AppButton>
         <AppButton variant="ghost" size="lg" block @click="removeId = null">Cancel</AppButton>
       </div>
     </AppSheet>

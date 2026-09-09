@@ -1,0 +1,48 @@
+id: NAT-PV-III-0499
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is valuing a small office building using the income approach. The property's net
+  operating income is $85,000 per year, and the market-derived capitalization rate is 8 percent.
+  What is the indicated value using direct capitalization?
+options:
+  - $106,250.
+  - $1,133,333.
+  - $1,062,500.
+  - $6,800.
+key: C
+explanation: Direct capitalization determines value by dividing net operating income by the
+  capitalization rate (V = NOI ÷ R). Converting 8% to 0.08 and dividing $85,000 by 0.08 yields
+  $1,062,500. The option showing $106,250 results from mistakenly using 0.8 as the rate (8%
+  incorrectly expressed as 0.8), which understates the value by a factor of ten.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.3
+  url: null
+  quoted_text: Income, rate, and value are linked by I = R × V, so V = I ÷ R (the appraiser's formula)
+    and R = I ÷ V (how a rate is extracted from a sale).
+  secondary: []
+math:
+  worked_solution: |-
+    Convert cap rate to decimal: 8% = 0.08
+    Value = NOI ÷ cap rate = $85,000 ÷ 0.08 = $1,062,500
+  formulas:
+    - Value = NOI ÷ R
+  onscreen_calculator_only: false
+terms:
+  - income approach
+  - capitalization rate
+  - net operating income
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

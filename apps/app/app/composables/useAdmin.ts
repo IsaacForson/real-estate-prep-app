@@ -60,7 +60,12 @@ export interface AdminDevice {
   first_seen?: string | null;
   last_seen?: string | null;
   removed_at?: string | null;
+  is_shadow?: boolean;
   has_live_session?: boolean;
+  /** revoke_reason of the device's most recent session: new_device | device_removed | superseded | admin_disabled */
+  last_revoke_reason?: string | null;
+  /** set when the device lost its slot to a newer sign-in (0022) */
+  evicted_by?: { device_id: string; name: string | null; platform: string | null; at: string } | null;
 }
 
 export interface AdminEvent {
@@ -128,6 +133,10 @@ export interface AdminUserDetail {
   auth: { email: string | null; created_at: string | null; last_sign_in_at: string | null; banned_until: string | null } | null;
   entitlements: AdminEntitlement[];
   devices: AdminDevice[];
+  /** real (non-shadow) devices holding a slot, and the account-wide ceiling (0022) */
+  active_devices?: number;
+  max_active_devices?: number;
+  shadow_sessions?: number;
   sessions: Array<Record<string, unknown>>;
   free_tier: { questions_used: number; mocks_used: number } | null;
   study: { answers: number; accuracy: number | null; mocks: number; readiness: number | null } | null;
@@ -159,6 +168,14 @@ export interface AdminContentAlert {
   status: string;
   created_at: string;
   resolved_at?: string | null;
+}
+
+export interface AdminContentBankSummary {
+  bank: string;
+  items_published: number;
+  items_in_db: number;
+  forms: number;
+  last_published_at: string | null;
 }
 
 export interface AdminContentVersion {
@@ -461,6 +478,7 @@ export function useAdmin() {
       alerts: async (status: string | null) => asList<AdminContentAlert>(await call<unknown>("content.alerts", { status: status ?? undefined }), "alerts"),
       resolveAlert: (id: string) => call<unknown>("content.resolveAlert", { id }),
       versions: async () => asList<AdminContentVersion>(await call<unknown>("content.versions", {}), "versions"),
+      summary: async () => asList<AdminContentBankSummary>(await call<unknown>("content.summary", {}), "banks"),
       resync: () => call<{ epoch: number; last_synced_at: string }>("content.resync", {}),
     },
     devices: {

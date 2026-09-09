@@ -1,0 +1,40 @@
+id: NAT-PV-III-0523
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A comparable rental property has a gross rent multiplier of 118. If the subject property rents
+  for $1,650 per month, what is the indicated value using the GRM?
+options:
+  - $194,700
+  - $195,300
+  - $197,100
+  - $196,500
+key: A
+explanation: Value is calculated by multiplying the subject’s gross monthly rent by the gross rent
+  multiplier. $1,650 × 118 = $194,700. Any other answer results from using an incorrect multiplier.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.6
+  url: null
+  quoted_text: Once a multiplier is extracted from comparable sales, value = subject's gross rent × multiplier.
+  secondary: []
+math:
+  worked_solution: "Multiply monthly rent by GRM: $1,650 × 118 = $194,700."
+  formulas:
+    - value = gross rent × GRM
+  onscreen_calculator_only: false
+terms:
+  - gross rent multiplier
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

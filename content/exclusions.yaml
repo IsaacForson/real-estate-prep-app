@@ -1,0 +1,25 @@
+# Sections of cached authority text that are never examinable on a real estate licensing exam.
+# `pipeline draft` strips any "### " section whose heading matches one of these regexes before chunking
+# (QA batches 2–3, 2026-09-09: appropriations, rulemaking/hearing procedure, enforcement mechanics,
+# preemption, definitions of terms nobody is tested on, transport provisions of civil-rights statutes).
+heading_patterns:
+  # E-SIGN (15 U.S.C. 7001–7006): keep 7001 (consumer consent) only
+  - '\b7003\b|\b7004\b|\b7005\b|\b7006\b'
+  # RESPA: keep 2603–2610; drop enforcement/preemption/rulemaking/effective dates
+  - '\b2611\b|\b2612\b|\b2613\b|\b2614\b|\b2615\b|\b2616\b|\b2617\b'
+  # TILA: administrative enforcement, preemption, effect on other laws
+  - '\b1607\b|\b1610\b|\b1611\b|\b1612\b|\b1613\b|\b1615\b'
+  # ECOA: administrative enforcement, civil liability procedure
+  - '\b1691c\b|\b1691e\b'
+  # Fair Housing Act: enforcement procedure, election of remedies, penalties for interference handled by 3617 is kept
+  - '\b3608\b|\b3609\b|\b3610\b|\b3611\b|\b3612\b|\b3613\b|\b3614\b|\b3614a\b|\b3616\b|\b3619\b'
+  # ADA: transport / telecommunications / definitions of vehicles
+  - '\b12141\b|\b12142\b|\b12143\b|\b12144\b|\b12145\b|\b12146\b|\b12147\b|\b12148\b|\b12149\b|\b12150\b|\b12161\b|\b12162\b|\b12163\b|\b12164\b|\b12165\b|\b12181\b|\b12184\b|\b12185\b|\b12186\b|\b12187\b|\b12188\b|\b12189\b'
+  # CERCLA: liens, claims procedure, definitions beyond the innocent-landowner defence
+  - '\b9607\(l\)|\b9611\b|\b9612\b|\b9613\b|\b9614\b|\b9615\b|\b9616\b|\b9617\b|\b9618\b|\b9619\b|\b9620\b'
+  # Sherman/Clayton: definitions and court procedure
+  - 'Clayton.*§ ?12\b|\b15 U\.S\.C\. ?12\b|\b15 U\.S\.C\. ?15\b|\b15 U\.S\.C\. ?16\b|\b15 U\.S\.C\. ?26\b'
+  # Telephone Consumer Protection Act: carrier duties, FCC rulemaking
+  - '\b227\(c\)|\b227\(e\)|\b227\(f\)|\b227\(g\)|\b227\(h\)'
+  # generic headings anywhere
+  - '(?i)appropriation|authorization of appropriations|effective date|severability|rulemaking|regulations? prescribed|construction of chapter|relation to (state|other) law|preemption|definitions of terms used in this|table of contents|short title|congressional findings|purposes? of this chapter'

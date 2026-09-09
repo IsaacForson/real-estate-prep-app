@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { pushToast } from "~/components/Toast.vue";
 import type { OptionLetter } from "@rep/schema";
 import { passItemsFrom } from "~~/lib/study/readiness";
 /**
@@ -40,6 +41,13 @@ watch(flagKey, loadFlags, { immediate: true });
 onMounted(async () => {
   if (!session.value && study.activeSession.value) await study.resume(study.activeSession.value.id);
   if (!study.session.value && !study.activeSession.value) { await navigateTo("/app/mocks", { replace: true }); return; }
+  // the session's questions are not on this device (stale ids from an earlier build): drop it instead of a blank exam
+  if (!study.current.value && (session.value?.itemIds.length ?? 0) > 0) {
+    pushToast("That exam's questions are no longer available on this device. Start it again.", "warn");
+    await study.discard();
+    await navigateTo("/app/mocks", { replace: true });
+    return;
+  }
   tick = setInterval(() => { now.value = Date.now(); if (remainingMs.value === 0 && !finished.value) void finish(true); }, 1000);
 });
 onUnmounted(() => { if (tick) clearInterval(tick); });
@@ -76,7 +84,7 @@ function cell(id: string, i: number) {
 <template>
   <div v-if="session && !finished" class="flex min-h-dvh flex-col">
     <header class="safe-pt sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-xl">
-      <div class="flex h-14 items-center gap-2">
+      <div class="safe-px mx-auto flex h-14 w-full max-w-3xl items-center gap-2">
         <button
           type="button"
           class="tap -ml-2.5 grid place-items-center rounded-full text-ink transition-colors hover:bg-surface-2"
@@ -112,7 +120,7 @@ function cell(id: string, i: number) {
       </div>
     </header>
 
-    <div class="flex-1 py-3.5 pb-32">
+    <div class="safe-px mx-auto w-full max-w-3xl flex-1 py-3.5 pb-32">
       <QuestionCard v-if="item" :key="item.id" :item="item" :answered="chosen" :reveal="false" :number="position + 1" :total="total" @choose="choose" />
       <Skeleton v-else height="22rem" />
     </div>
@@ -179,7 +187,7 @@ function cell(id: string, i: number) {
     </AppSheet>
   </div>
 
-  <div v-else-if="finished" class="anim-fade-up grid gap-4 py-4">
+  <div v-else-if="finished" class="safe-px anim-fade-up mx-auto grid w-full max-w-3xl gap-4 py-4">
     <div class="grid justify-items-center gap-3.5 pt-4 text-center">
       <p class="eyebrow">Mock results</p>
       <ProgressRing :value="overall.pct" :size="156" :stroke="11">

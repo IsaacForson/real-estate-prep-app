@@ -1,0 +1,40 @@
+id: NAT-PV-VII-0652
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A 65-year-old homeowner wishes to obtain an FHA-insured Home Equity Conversion Mortgage
+  (HECM). The homeowner owns the property outright, lives in it as a principal residence, and has
+  completed HUD-approved counseling. However, the homeowner has let the homeowner's insurance lapse
+  for the past three months. Based on HECM eligibility rules, which statement is correct?
+options:
+  - The homeowner is ineligible because they must have a mortgage balance
+  - The homeowner is eligible because age and counseling are satisfied
+  - The homeowner is ineligible because taxes and insurance must be current
+  - The homeowner is eligible because insurance lapse does not affect HECM eligibility
+key: C
+explanation: HECM borrowers must keep taxes and insurance current; a lapse in insurance makes the
+  borrower ineligible even if age, ownership, and counseling requirements are met.
+citation:
+  source: REP Ref. Financing & Closing § 4.6
+  url: null
+  quoted_text: keep taxes and insurance current
+  secondary: []
+terms:
+  - hecm
+  - taxes
+  - insurance
+  - eligibility
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

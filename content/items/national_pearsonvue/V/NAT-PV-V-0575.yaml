@@ -1,0 +1,41 @@
+id: NAT-PV-V-0575
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A property management fee based on collected rent primarily rewards which of the following?
+options:
+  - Expense control and reporting
+  - Lease renewal and turnover
+  - Occupancy and rent collections
+  - Maintenance response and speed
+key: C
+explanation: A property management fee calculated as a percentage of collected rent directly
+  incentivizes the manager to keep units occupied and ensure rent is collected, as the fee amount
+  increases with these metrics. This structure does not inherently reward expense control, which is
+  why reporting and budgeting obligations are specified separately to ensure financial oversight
+  independent of the fee calculation.
+citation:
+  source: REP Ref. Brokerage Practice § 12.2
+  url: null
+  quoted_text: because a fee based on collected rent rewards occupancy and collections but not expense
+    control, which is why reporting and budgeting obligations are specified separately.
+  secondary: []
+terms:
+  - property management
+  - fee
+  - collected rent
+  - occupancy
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 3
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

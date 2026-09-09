@@ -46,9 +46,18 @@ async function start(kind: "practice" | "drill", node?: string) {
       const ids = await study.source.ids(bank.value);
       const items = await study.getItems(ids);
       itemIds = items.filter((i) => i.blueprint_node === node || i.blueprint_node.startsWith(`${node}.`)).map((i) => i.id).sort(() => Math.random() - 0.5).slice(0, studyState.settings.value.sessionSize ?? 20);
-      if (!itemIds.length) { pushToast("No questions in this section yet.", "info"); return; }
+      if (!itemIds.length) {
+        // state section with nothing published yet: run the national portion instead of a dead end
+        if (portion.value === "state" && nationalBank.value) {
+          const alt = await study.startPractice({ kind, banks: [nationalBank.value] });
+          if (alt?.itemIds.length) { events.track("session_start", { kind, bank: nationalBank.value, node: null, fallback_from: bank.value }); await navigateTo("/app/practice"); return; }
+        }
+        pushToast("No questions in this section yet.", "info"); return;
+      }
     }
-    const s = await study.startPractice({ kind, banks: [bank.value], itemIds });
+    let s = await study.startPractice({ kind, banks: [bank.value], itemIds });
+    // an empty state bank falls back to the national bank — never an empty session
+    if ((!s || !s.itemIds.length) && !itemIds && portion.value === "state" && nationalBank.value) s = await study.startPractice({ kind, banks: [nationalBank.value] });
     if (!s || !s.itemIds.length) {
       if (kind === "drill") pushToast("No leeches yet — nothing to drill.", "info");
       else if (!entitlement.isComplete.value && free.exhausted.value) pushToast("Your free questions are used up.", "warn");
@@ -56,7 +65,7 @@ async function start(kind: "practice" | "drill", node?: string) {
       return;
     }
     events.track("session_start", { kind, bank: bank.value, node: node ?? null });
-    await navigateTo("/app");
+    await navigateTo("/app/practice");
   } finally { busy.value = null; }
 }
 async function setLevel(v: string) { await studyState.set({ licenseLevel: v as "salesperson" | "broker" }); }
@@ -72,7 +81,7 @@ onMounted(() => { void content.load(); });
           <p class="text-[15px] font-semibold leading-tight">Session in progress</p>
           <p class="tabular text-[13px] text-ink-2">Question {{ active.position + 1 }} of {{ active.itemIds.length }}</p>
         </div>
-        <AppButton variant="primary" size="sm" to="/app" icon-right="arrow-right">Continue</AppButton>
+        <AppButton variant="primary" size="sm" to="/app/practice" icon-right="arrow-right">Continue</AppButton>
       </div>
     </AppCard>
 

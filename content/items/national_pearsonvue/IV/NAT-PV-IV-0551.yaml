@@ -1,0 +1,42 @@
+id: NAT-PV-IV-0551
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage lists Sam's house and also represents Tia as a buyer-client. Tia wants to write an
+  offer on Sam's house. What must the brokerage do before Tia can submit an offer?
+options:
+  - The brokerage must disclose the dual agency to Tia only.
+  - The brokerage must terminate Tia's buyer representation agreement.
+  - The brokerage must obtain written consent from both Sam and Tia.
+  - The brokerage must continue to advocate for the seller's best price.
+key: C
+explanation: Dual agency requires informed written consent from both parties before proceeding;
+  without it, the dual agency is undisclosed and violates fiduciary duty. The option suggesting
+  disclosure to only the buyer is incorrect because consent is needed from both parties, not just
+  one.
+citation:
+  source: "REP Ref. Agency — Reference note: agency relationships, creation/termination, fiduciary
+    duties, disclosure (authored, status: draft — needs licensed review) § 2.4 Dual agency"
+  url: null
+  quoted_text: Unless the state provides for designated agency, the brokerage is now a dual agent and
+    must obtain written consent from both Sam and Tia before proceeding, and must stop advocating on
+    price for either.
+  secondary: []
+terms:
+  - dual agency
+  - written consent
+  - designated agency
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

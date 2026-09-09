@@ -38,6 +38,7 @@ export const ADMIN_OPS = [
   "content.resolveAlert",
   "content.versions",
   "content.resync",
+  "content.summary",
   "devices.flagged",
   "devices.block",
   "settings.get",

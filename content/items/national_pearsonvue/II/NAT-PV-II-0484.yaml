@@ -1,0 +1,45 @@
+id: NAT-PV-II-0484
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer receives a special warranty deed from a seller. Six months later, an heir of a
+  previous owner asserts an interest in the property that arose before the seller owned it. Based on
+  the deed type, what is the seller's liability?
+options:
+  - The seller is liable only if the buyer purchases title insurance
+  - The seller is not liable for the claim and has no duty to defend
+  - The seller is liable for half the loss, shared with the buyer
+  - The seller is liable for the claim and must defend the title
+key: B
+explanation: A special warranty deed guarantees that the grantor defended the title only against
+  defects that arose while the grantor owned the property; it does not protect the buyer from claims
+  based on interests that existed before the grantor took title. Consequently, the seller has no
+  liability for the heir’s claim and no duty to defend the title. The choice that limits liability
+  to situations where the buyer purchases title insurance is incorrect because the deed provides no
+  such condition. The choice that makes the seller share loss with the buyer is also incorrect
+  because the deed creates no liability for prior defects. Likewise, the choice that imposes
+  liability and requires the seller to defend the title conflicts with the limited warranty of a
+  special warranty deed.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.4
+  url: null
+  quoted_text: gives no protection against defects created before the grantor took title
+  secondary: []
+terms:
+  - special warranty deed
+  - liability
+  - defect
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

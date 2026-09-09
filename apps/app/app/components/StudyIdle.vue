@@ -12,7 +12,13 @@ import type { StartPracticeOptions } from "~/composables/useStudy";
  *
  * Every route out of here is a real one; there is no branch that renders only a headline.
  */
-const emit = defineEmits<{ (e: "start", opts: StartPracticeOptions): void; (e: "menu"): void; (e: "change-state"): void }>();
+const props = withDefaults(defineProps<{
+  /** Nothing is loaded yet and the learner has not asked for a session: offer to start one. */
+  ready?: boolean;
+  /** A practice session is in flight (server-side) and can be continued. */
+  canResume?: boolean;
+}>(), { ready: false, canResume: false });
+const emit = defineEmits<{ (e: "start", opts: StartPracticeOptions): void; (e: "resume"): void; (e: "menu"): void; (e: "change-state"): void }>();
 
 const study = useStudy();
 const studyState = useStudyState();
@@ -72,14 +78,16 @@ const dueIn = computed(() => {
  * The four situations, in the order that matters. Free tier first because it is the only one the
  * learner cannot resolve by studying differently.
  */
-const reason = computed<"free" | "scheduled" | "leeches" | "thin">(() => {
+const reason = computed<"ready" | "free" | "scheduled" | "leeches" | "thin">(() => {
   if (freeTier.applies.value && freeTier.exhausted.value) return "free";
+  if (props.ready) return "ready";
   if (seen.value > 0 && nextDue.value != null) return "scheduled";
   if (pipe.value.leeches > 0 && pipe.value.unseen === 0) return "leeches";
   return "thin";
 });
 
 const headline = computed(() => ({
+  ready: props.canResume ? "Pick up where you left off" : "Ready to practise?",
   free: "That is your free allowance",
   scheduled: "You are caught up",
   leeches: "Only your hardest questions are left",
@@ -87,6 +95,7 @@ const headline = computed(() => ({
 }[reason.value]));
 
 const blurb = computed(() => ({
+  ready: "Practice shows one question at a time. After each answer you see whether you were right, the explanation, and the statute it rests on. Nothing is timed.",
   free: `You have answered all ${freeTier.total} free questions. Complete opens every state, both national banks, full mocks and the audio narration — once, and forever.`,
   scheduled: `Everything you have seen is scheduled${dueIn.value ? `, and the next batch comes back ${dueIn.value}` : ""}. Coming back when a card is actually due is what makes the repetition work, so this is the system doing its job rather than running out.`,
   leeches: "The questions you have missed four or more times are kept out of normal rounds so they cannot crowd out everything else. They get their own focused drill.",
@@ -103,6 +112,11 @@ const actions = computed<Action[]>(() => {
     out.push({ key: "buy", label: "Unlock Complete", hint: "Everything, one payment", icon: "spark", tone: "primary", run: () => { void navigateTo("/pricing"); } });
     out.push({ key: "review", label: "Review what you answered", hint: "Your free questions stay yours", icon: "refresh", tone: "secondary", run: () => { void navigateTo("/app/review"); } });
     return out;
+  }
+
+  if (reason.value === "ready") {
+    if (props.canResume) out.push({ key: "resume", label: "Continue your session", hint: "Your unfinished practice questions", icon: "play", tone: "primary", run: () => emit("resume") });
+    out.push({ key: "practice", label: props.canResume ? "Start a new practice session" : "Start a practice session", hint: "Due reviews mixed with new questions", icon: "play", tone: props.canResume ? "secondary" : "primary", run: () => emit("start", {}) });
   }
 
   if (pipe.value.leeches > 0) {

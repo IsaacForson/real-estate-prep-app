@@ -1,0 +1,38 @@
+id: NAT-PV-V-0596
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA private right of action, what is the maximum statutory damages a plaintiff may
+  receive for each violation?
+options:
+  - $100
+  - $250
+  - $1,000
+  - $500
+key: D
+explanation: The TCPA allows a plaintiff to recover up to $500 in damages for each violation, or
+  actual monetary loss, whichever is greater (47 U.S.C. § 227(c)(5)(B)). The $250 distractor
+  incorrectly halves the statutory amount.
+citation:
+  source: 47 U.S.C. § 227(c)(5)(B)
+  url: null
+  quoted_text: to receive up to $500 in damages for each such violation, whichever is greater
+  secondary: []
+terms:
+  - tcpa
+  - damages
+  - private right
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

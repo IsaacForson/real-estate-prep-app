@@ -14,7 +14,11 @@ const events = useEvents();
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const st = computed(() => (jur.value ? content.manifest.value?.states[jur.value] ?? null : null));
 const exam = computed(() => (studyState.settings.value?.licenseLevel === "broker" && st.value?.broker_exam ? { ...st.value.salesperson_exam, ...st.value.broker_exam } : st.value?.salesperson_exam) ?? null);
-const formsAvailable = computed(() => Math.max(0, content.manifest.value?.status[jur.value ?? ""]?.mocks ?? 0));
+const mockForms = useMockForms();
+const nationalBank = computed(() => (st.value?.vendor === "psi" ? "national_psi" : st.value?.vendor === "pearsonvue" ? "national_pearsonvue" : null));
+/** Published full-length forms for this learner: the state's own first, then the vendor's national forms. */
+const publishedFull = computed(() => [...mockForms.forState(jur.value), ...mockForms.national(nationalBank.value)].filter((f) => f.form_id !== "short"));
+const formsAvailable = computed(() => publishedFull.value.length);
 const complete = computed(() => entitlement.isComplete.value);
 const active = computed(() => study.activeSession.value?.kind === "mock" ? study.activeSession.value : null);
 const history = computed<StudySession[]>(() => (study.history.value ?? []).filter((s) => s.kind === "mock" && !!s.endedAt));
@@ -25,7 +29,7 @@ const forms = computed(() => {
   const list: Array<{ id: string; title: string; detail: string; locked: boolean; short?: boolean }> = [];
   if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0, short: true });
   const n = Math.max(formsAvailable.value, 5);
-  for (let i = 1; i <= n; i++) list.push({ id: `form-${i}`, title: `Form ${i}`, detail: i <= formsAvailable.value ? "Full length · non-overlapping" : "Arrives as this state's bank fills", locked: !complete.value || i > formsAvailable.value });
+  for (let i = 1; i <= n; i++) list.push({ id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`, title: `Form ${i}`, detail: i <= formsAvailable.value ? "Full length · non-overlapping" : "Arrives as this state's bank fills", locked: !complete.value || i > formsAvailable.value });
   return list;
 });
 const timeLabel = computed(() => (exam.value?.time_minutes ? `${exam.value.time_minutes} min` : "—"));
@@ -47,7 +51,8 @@ function scoreOf(s: StudySession) {
   return { c, n: s.itemIds.length, pct: s.itemIds.length ? Math.round((100 * c) / s.itemIds.length) : 0, pass, portions };
 }
 const fmt = (t: number | null) => (t ? new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "");
-onMounted(() => { void content.load(); void free.load(); void study.loadHistory(50); });
+onMounted(() => { void content.load().then(() => mockForms.load(jur.value, nationalBank.value)); void free.load(); void study.loadHistory(50); });
+watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.value); });
 </script>
 <template>
   <div class="anim-fade-up grid gap-4">

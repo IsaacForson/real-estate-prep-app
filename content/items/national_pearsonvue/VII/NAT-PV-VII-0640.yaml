@@ -1,0 +1,39 @@
+id: NAT-PV-VII-0640
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Who signs the promissory note in a real estate loan transaction?
+options:
+  - The trustee only
+  - The lender only
+  - The cosigner only
+  - The borrower only
+key: D
+explanation: The promissory note is a promise to pay made by the borrower; only the borrower signs
+  it as the maker. The lender does not sign the note, so any answer that includes the lender or
+  another party is incorrect.
+citation:
+  source: "REP Ref. Financing & Closing — Reference note: financing instruments, loan types,
+    government programs, underwriting, closing (authored, status: draft — needs licensed review) §
+    1.1"
+  url: null
+  quoted_text: Only the borrower signs it
+  secondary: []
+terms:
+  - promissory note
+  - borrower
+  - signature
+tags: []
+status: qa_approved
+reviewer: qa-lead-model
+verified_on: 2026-09-09
+qa_approved_on: 2026-09-09
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

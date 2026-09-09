@@ -46,7 +46,7 @@ async function reviewNow() {
     const s = await study.startPractice({ kind: "review" });
     if (!s || !s.itemIds.length) { pushToast("Nothing due right now.", "info"); return; }
     events.track("session_start", { kind: "review" });
-    await navigateTo("/app");
+    await navigateTo("/app/practice");
   } finally { busy.value = false; }
 }
 const label = (b: string) => b.replace("national_pearsonvue", "National · Pearson VUE").replace("national_psi", "National · PSI").replace(/^state_/, "State · ");
@@ -80,7 +80,7 @@ const stem = (s: string) => s.replace(/\*\*/g, "");
         title="Nothing missed"
         body="Wrong answers land here with their citation, so you can read the law rather than memorise the key."
       >
-        <AppButton to="/app" variant="secondary" size="sm">Start practising</AppButton>
+        <AppButton to="/app/practice" variant="secondary" size="sm">Start practising</AppButton>
       </EmptyState>
 
       <template v-else>

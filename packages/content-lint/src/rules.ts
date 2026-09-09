@@ -112,7 +112,9 @@ export function ruleMathHasWork(item: Item): Finding[] {
 const INTERNAL_SECTION_RE = /(?:§|\bsection|\bsec\.)\s?\d{1,2}\.\d{1,2}(?![\d.(\-])/i;
 const META_LEADIN = "(according to|per|under|in|as (?:outlined|described|stated|noted|explained|set out|listed) in|based on|from)";
 const META_STEM_RE = new RegExp(`\\b${META_LEADIN} the (reference|supplied text|passage|text above|statute above|excerpt|guideline(?:s)?|fundamentals|notes?|outline|module|lesson|(?:[a-z']+ ){0,3}section)\\b`, "i");
-const META_ANY_RE = new RegExp(`\\b(the (reference|supplied text|passage|text above|statute above|excerpt|governing text|guideline(?:s)?|fundamentals)|the (text|notes?|outline|section|guideline) (lists|states|says|provides|defines|notes|explains|describes|directs|requires|instructs|warns|tells|specifies|indicates)|as (stated|noted|explained|outlined|described) (in|by) the (reference|text|passage|notes?|section|guideline(?:s)?))\\b`, "i");
+const META_ANY_RE = new RegExp(`\\b(in the text|does the text|the text (indicate|show|mention|list|say|says)|the (comparison )?table|REP Ref|the (reference|supplied text|passage|text above|statute above|excerpt|governing text|guideline(?:s)?|fundamentals)|the (text|notes?|outline|section|guideline) (lists|states|says|provides|defines|notes|explains|describes|directs|requires|instructs|warns|tells|specifies|indicates)|as (stated|noted|explained|outlined|described) (in|by) the (reference|text|passage|notes?|section|guideline(?:s)?))\\b`, "i");
+
+const ORDINAL_OPTION_RE = /\b(the |option )?(first|second|third|fourth|last|1st|2nd|3rd|4th) (option|choice|answer|response|alternative)\b|\boption (one|two|three|four)\b/i;
 
 export function ruleNoMetaReference(item: Item): Finding[] {
   const out: Finding[] = [];
@@ -121,6 +123,7 @@ export function ruleNoMetaReference(item: Item): Finding[] {
   else if (stemLike.some((t) => INTERNAL_SECTION_RE.test(t))) out.push(f("meta-reference-in-stem", "error", item.id, "stem/option cites an internal note section number (e.g. §7.2) — name the statute or rule instead"));
   if (META_ANY_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation refers to 'the reference/text/section' — state the rule directly and cite the section"));
   else if (INTERNAL_SECTION_RE.test(item.explanation)) out.push(f("meta-reference-in-explanation", "error", item.id, "explanation cites an internal note section number (e.g. §7.2) — cite the statute or rule"));
+  if (ORDINAL_OPTION_RE.test(item.explanation)) out.push(f("explanation-option-ordinal", "error", item.id, "explanation refers to an option by position (\"the first option\"); positions change when options are shuffled — describe the option's content"));
   return out;
 }
 
@@ -301,7 +304,30 @@ export function ruleDuplicateFigures(items: Item[]): Finding[] {
   return out;
 }
 
-export const AGGREGATE_RULES = [ruleUniqueIds, ruleLongestIsKeyShare, ruleKeyPositionDistribution, ruleNearDuplicateStems, ruleSameNodeDuplicates, ruleDuplicateFigures];
+/**
+ * Bank-wide: two items whose keyed answers are the same statement (normalized) and whose quotes or stems
+ * overlap are the same rule asked twice, even across nodes (QA batch 3: four re-asks of one approved rule).
+ */
+export function ruleBankDuplicateAnswers(items: Item[]): Finding[] {
+  const out: Finding[] = [];
+  const byBank = new Map<string, Item[]>();
+  for (const it of items) { if (!byBank.has(it.bank)) byBank.set(it.bank, []); byBank.get(it.bank)!.push(it); }
+  for (const list of byBank.values()) {
+    const seen = new Map<string, Item>();
+    for (const it of list) {
+      const key = normalize(it.options[keyIndex(it.key)]!);
+      if (key.length < 25) continue;
+      const prev = seen.get(key);
+      if (!prev) { seen.set(key, it); continue; }
+      const quoteSame = normalize(prev.citation.quoted_text) === normalize(it.citation.quoted_text);
+      const stemSim = jaccard(shingles(prev.stem, 2), shingles(it.stem, 2));
+      if (quoteSame || stemSim >= 0.2) out.push(f("near-duplicate-item", "error", it.id, `same keyed answer as ${prev.id}${quoteSame ? " with the same quote" : ` and a ${(stemSim * 100).toFixed(0)}% similar stem`} — the same rule asked twice`));
+    }
+  }
+  return out;
+}
+
+export const AGGREGATE_RULES = [ruleUniqueIds, ruleLongestIsKeyShare, ruleKeyPositionDistribution, ruleNearDuplicateStems, ruleSameNodeDuplicates, ruleDuplicateFigures, ruleBankDuplicateAnswers];
 
 export function lintItems(items: Item[]): Finding[] {
   return [...items.flatMap(lintItem), ...AGGREGATE_RULES.flatMap((r) => r(items))];

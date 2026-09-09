@@ -46,7 +46,7 @@ export function useSync() {
       }
       if (r.reason !== "error") return;
       const e = r.error;
-      if (isSessionRevoked(e)) { await auth.onSessionRevoked(); return; }
+      if (isSessionRevoked(e)) { await auth.onSessionRevoked(e); return; }
       if (isSessionRequired(e)) { if (await auth.registerDevice()) schedule(1000); return; }
       state.value.error = e instanceof Error ? e.message : String(e);
       if (isRateLimited(e)) schedule(5 * 60_000);

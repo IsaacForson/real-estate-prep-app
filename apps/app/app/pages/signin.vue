@@ -85,6 +85,25 @@ function onCodeInput(e: Event) { code.value = (e.target as HTMLInputElement).val
     </div>
 
     <div class="flex flex-1 flex-col justify-center gap-7 py-8">
+      <!-- why you are here: an eviction / removal notice persists until the next successful sign-in -->
+      <div
+        v-if="auth.notice.value"
+        class="flex items-start gap-2.5 rounded-card border p-3.5 text-[13.5px] leading-relaxed"
+        :class="auth.notice.value.kind === 'warn' ? 'border-warn/30 bg-warn-soft text-ink' : 'border-accent/20 bg-accent-soft text-ink'"
+        role="status"
+      >
+        <Icon
+          :name="auth.notice.value.kind === 'warn' ? 'alert' : 'info'"
+          :size="17"
+          class="mt-px shrink-0"
+          :class="auth.notice.value.kind === 'warn' ? 'text-warn' : 'text-accent'"
+        />
+        <span class="flex-1">{{ auth.notice.value.text }}</span>
+        <button type="button" class="tap -mr-1.5 -mt-1 grid place-items-center text-muted transition-colors hover:text-ink" aria-label="Dismiss" @click="auth.dismissNotice()">
+          <Icon name="x" :size="15" />
+        </button>
+      </div>
+
       <div v-if="!auth.configured" class="rounded-card border border-dashed border-line-strong p-4 text-[13px] leading-relaxed text-muted">
         Accounts aren't configured in this build (no Supabase URL). Sign-in is unavailable until the
         environment is set.
