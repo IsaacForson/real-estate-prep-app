@@ -32,6 +32,9 @@ importers:
       '@capacitor/android':
         specifier: ^8.5.1
         version: 8.5.1(@capacitor/core@8.5.1)
+      '@capacitor/app':
+        specifier: ^8.1.1
+        version: 8.1.1(@capacitor/core@8.5.1)
       '@capacitor/core':
         specifier: ^8.5.1
         version: 8.5.1
@@ -41,6 +44,9 @@ importers:
       '@capacitor/ios':
         specifier: ^8.5.1
         version: 8.5.1(@capacitor/core@8.5.1)
+      '@capacitor/splash-screen':
+        specifier: ^8.0.2
+        version: 8.0.2(@capacitor/core@8.5.1)
       '@mediagrid/capacitor-native-audio':
         specifier: ^3.0.0
         version: 3.0.0(@capacitor/core@8.5.1)
@@ -297,6 +303,11 @@ packages:
     peerDependencies:
       '@capacitor/core': ^8.5.0
 
+  '@capacitor/app@8.1.1':
+    resolution: {integrity: sha512-xM2ZTX5jK60tFtmjsmJv+Cdj1Qsb6NcavkqmdEnCPQBeya9oKhamZJxYOnQNj1ZvcJM7sWfG6BEtSLx42pisbA==}
+    peerDependencies:
+      '@capacitor/core': '>=8.0.0'
+
   '@capacitor/cli@8.5.1':
     resolution: {integrity: sha512-LKQFSyLg1QbTN6CGDoFqeRtAlj8C3c9OymP8OuhwlmkbSQwh9i1HQjwUCaNyVem2XkY9rv0v2UOfVlgoxH5pAw==}
     engines: {node: '>=22.0.0'}
@@ -314,6 +325,11 @@ packages:
     resolution: {integrity: sha512-0EVqwCYf3RUp2JAjUGZ04xmG6dSpIsPmPacI9zKxn6mu9RSiHhmFF230ghe00HrkyB6ig6SfNdoADvVODxYhlQ==}
     peerDependencies:
       '@capacitor/core': ^8.5.0
+
+  '@capacitor/splash-screen@8.0.2':
+    resolution: {integrity: sha512-0C6rYScr13WfAE9nPl4ScOQynmjFv9NT3Th+RZkD4ezYHmER6mcl1/lDYsv7jg3Rj3FOvLrlTlmNkUrr83kZzQ==}
+    peerDependencies:
+      '@capacitor/core': '>=8.0.0'
 
   '@clack/core@1.5.0':
     resolution: {integrity: sha512-zNikCcd8BbcEvzzG1sbXFrRHFk5kHPrpwZwksPvf9qyQO1Teb7JaXaOAxXZei9nZLDW0gaZawiuTCji88bTBhw==}
@@ -4343,6 +4359,10 @@ snapshots:
     dependencies:
       '@capacitor/core': 8.5.1
 
+  '@capacitor/app@8.1.1(@capacitor/core@8.5.1)':
+    dependencies:
+      '@capacitor/core': 8.5.1
+
   '@capacitor/cli@8.5.1':
     dependencies:
       '@ionic/cli-framework-output': 2.2.8
@@ -4375,6 +4395,10 @@ snapshots:
       '@capacitor/core': 8.5.1
 
   '@capacitor/ios@8.5.1(@capacitor/core@8.5.1)':
+    dependencies:
+      '@capacitor/core': 8.5.1
+
+  '@capacitor/splash-screen@8.0.2(@capacitor/core@8.5.1)':
     dependencies:
       '@capacitor/core': 8.5.1
 
