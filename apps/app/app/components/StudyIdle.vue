@@ -78,28 +78,35 @@ const dueIn = computed(() => {
  * The four situations, in the order that matters. Free tier first because it is the only one the
  * learner cannot resolve by studying differently.
  */
-const reason = computed<"ready" | "free" | "scheduled" | "leeches" | "thin">(() => {
+/**
+ * Practice is always available. The only thing that can genuinely stop a learner is the free-tier
+ * allowance; everything else is just what to show first.
+ *
+ * There used to be a "scheduled" state that said "You are caught up — the next batch comes back in
+ * 33 hours" and offered no way to practise. Spaced repetition is a good reason to ORDER questions,
+ * not a reason to refuse to show any, and being told to come back tomorrow reads as the app being
+ * broken. The schedule still decides what comes first (see fn_batch_candidates); it no longer
+ * decides whether anything comes at all.
+ */
+const reason = computed<"ready" | "free" | "leeches" | "thin">(() => {
   if (freeTier.applies.value && freeTier.exhausted.value) return "free";
-  if (props.ready) return "ready";
-  if (seen.value > 0 && nextDue.value != null) return "scheduled";
-  if (pipe.value.leeches > 0 && pipe.value.unseen === 0) return "leeches";
-  return "thin";
+  if (pipe.value.leeches > 0 && pipe.value.unseen === 0 && seen.value > 0) return "leeches";
+  if (stateBankThin.value && seen.value === 0) return "thin";
+  return "ready";
 });
 
 const headline = computed(() => ({
   ready: props.canResume ? "Pick up where you left off" : "Ready to practise?",
   free: "That is your free allowance",
-  scheduled: "You are caught up",
   leeches: "Only your hardest questions are left",
-  thin: `The ${stateName.value} bank is still being written`,
+  thin: `The ${stateName.value} bank is still filling`,
 }[reason.value]));
 
 const blurb = computed(() => ({
   ready: "Practice shows one question at a time. After each answer you see whether you were right, the explanation, and the statute it rests on. Nothing is timed.",
   free: `You have answered all ${freeTier.total} free questions. Complete opens every state, both national banks, full mocks and the audio narration — once, and forever.`,
-  scheduled: `Everything you have seen is scheduled${dueIn.value ? `, and the next batch comes back ${dueIn.value}` : ""}. Coming back when a card is actually due is what makes the repetition work, so this is the system doing its job rather than running out.`,
   leeches: "The questions you have missed four or more times are kept out of normal rounds so they cannot crowd out everything else. They get their own focused drill.",
-  thin: `Every question is written against the statute and verified before it ships, so a state bank appears in pieces. The national portion is ready now and it is the larger half of your exam.`,
+  thin: `More questions for ${stateName.value} arrive as they are written and verified. You can practise everything that is already here, and the national portion is the larger half of your exam.`,
 }[reason.value]));
 
 interface Action { key: string; label: string; hint: string; icon: IconName; tone: "primary" | "secondary"; run: () => void }
@@ -114,10 +121,10 @@ const actions = computed<Action[]>(() => {
     return out;
   }
 
-  if (reason.value === "ready") {
-    if (props.canResume) out.push({ key: "resume", label: "Continue your session", hint: "Your unfinished practice questions", icon: "play", tone: "primary", run: () => emit("resume") });
-    out.push({ key: "practice", label: props.canResume ? "Start a new practice session" : "Start a practice session", hint: "Due reviews mixed with new questions", icon: "play", tone: props.canResume ? "secondary" : "primary", run: () => emit("start", {}) });
-  }
+  // Practice is offered in every state except an exhausted free tier: there is always something to
+  // answer while the bank has questions in it.
+  if (props.canResume) out.push({ key: "resume", label: "Continue your session", hint: "Your unfinished practice questions", icon: "play", tone: "primary", run: () => emit("resume") });
+  out.push({ key: "practice", label: props.canResume ? "Start a new practice session" : "Start a practice session", hint: "Due reviews mixed with the rest of the bank", icon: "play", tone: props.canResume ? "secondary" : "primary", run: () => emit("start", {}) });
 
   if (pipe.value.leeches > 0) {
     out.push({
@@ -131,9 +138,7 @@ const actions = computed<Action[]>(() => {
   }
 
   if (stateBankThin.value && nb) {
-    out.push({ key: "national", label: "Practise the national portion", hint: "Ready for every state", icon: "play", tone: "primary", run: () => emit("start", { banks: [nb] }) });
-  } else if (reason.value === "scheduled" && seen.value > 0) {
-    out.push({ key: "ahead", label: "Study ahead anyway", hint: "Pulls cards forward, out of schedule", icon: "bolt", tone: "primary", run: () => emit("start", { ignoreSchedule: true }) });
+    out.push({ key: "national", label: "Practise the national portion", hint: "Ready for every state", icon: "play", tone: "secondary", run: () => emit("start", { banks: [nb] }) });
   }
 
   out.push({ key: "mock", label: "Sit a timed mock", hint: "Your exam's real format and length", icon: "clock", tone: "secondary", run: () => { void navigateTo("/app/mocks"); } });
@@ -155,9 +160,9 @@ const rest = computed(() => actions.value.filter((a) => a !== primary.value));
     <div class="text-center">
       <span
         class="mx-auto grid size-16 place-items-center rounded-full"
-        :class="reason === 'scheduled' ? 'bg-ok-soft text-ok' : reason === 'free' ? 'bg-accent-soft text-accent' : 'bg-surface-2 text-ink-2'"
+        :class="reason === 'free' ? 'bg-accent-soft text-accent' : reason === 'ready' ? 'bg-ok-soft text-ok' : 'bg-surface-2 text-ink-2'"
       >
-        <Icon :name="reason === 'scheduled' ? 'check-circle' : reason === 'free' ? 'spark' : reason === 'leeches' ? 'target' : 'book'" :size="30" />
+        <Icon :name="reason === 'ready' ? 'play' : reason === 'free' ? 'spark' : reason === 'leeches' ? 'target' : 'book'" :size="30" />
       </span>
       <h1 class="display mt-3.5 text-[24px]">{{ headline }}</h1>
       <p class="mx-auto mt-2 max-w-[44ch] text-[14.5px] leading-relaxed text-ink-2">{{ blurb }}</p>

@@ -35,7 +35,7 @@ const stateAvailable = computed(() => (jur.value ? bankCount(content.manifest.va
 const nationalAvailable = computed(() => (nationalBank.value ? bankCount(content.manifest.value?.nationalStatus?.[nationalBank.value]) : 0));
 const needState = computed(() => exam.value?.state_items ?? exam.value?.total_items ?? 0);
 const needNational = computed(() => exam.value?.national_items ?? 0);
-const MIN_MOCK_ITEMS = 20;
+const MIN_MOCK_ITEMS = 1;
 const availableTotal = computed(() => stateAvailable.value + nationalAvailable.value);
 const neededTotal = computed(() => needState.value + needNational.value);
 const canBuildFull = computed(() => stateAvailable.value >= needState.value && nationalAvailable.value >= needNational.value);
@@ -59,18 +59,20 @@ const forms = computed(() => {
   if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0 || !canBuildMock.value, short: true });
   const n = Math.max(formsAvailable.value, 5);
   const full = canBuildFull.value;
+  // Every form is sittable while the bank has questions in it. A form that is shorter than the real
+  // exam says so plainly instead of being locked: a learner would rather sit 35 questions now than
+  // be told to come back when the bank is finished.
   const sittable = canBuildMock.value;
   for (let i = 1; i <= n; i++) {
-    const offered = sittable && i <= Math.max(formsAvailable.value, 1);
     list.push({
       id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`,
       title: `Form ${i}`,
-      detail: !offered
+      detail: !sittable
         ? "Arrives as this state's bank fills"
         : full
           ? "Full length · non-overlapping"
-          : `${formLength.value} of ${neededTotal.value} questions · bank still filling`,
-      locked: !complete.value || !offered,
+          : `${formLength.value} of ${neededTotal.value} questions so far · more arrive as the bank fills`,
+      locked: !complete.value || !sittable,
     });
   }
   return list;

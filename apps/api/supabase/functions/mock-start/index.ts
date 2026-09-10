@@ -162,8 +162,8 @@ serve(async (req) => {
 
   await enforceRateLimit(ctx.db, `mocks:${ctx.userId}`, MOCK_STARTS_PER_HOUR, RATE_WINDOW_SECONDS, 1);
 
-  // Fewer than this is a quiz, not a mock exam.
-  const MIN_MOCK_ITEMS = 20;
+  // Whatever the banks hold is what the learner sits; only a genuinely empty bank refuses.
+  const MIN_MOCK_ITEMS = 1;
 
   // ---- one batch per portion ------------------------------------------------------------
   const batches: { portion: "national" | "state"; batch: IssuedBatch; pass_score: string | number }[] = [];
