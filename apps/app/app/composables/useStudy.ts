@@ -297,6 +297,17 @@ export function useStudy() {
   async function resume(sessionId?: string): Promise<StudySession | null> {
     const s = sessionId ? await repo.getSession(sessionId) : await repo.activeSession();
     if (!s || s.endedAt) return null;
+    // A session is only resumable while its questions can still be resolved. Batch content has a
+    // six-hour TTL and the local cache can be cleared, so an older session can point at ids that no
+    // longer exist on this device. Offering "Continue your session" and then having nothing to show
+    // is worse than not offering it, so retire the session and let the learner start a fresh one.
+    if (s.itemIds.length > 0 && (await getItems(s.itemIds)).length === 0) {
+      await repo.setActiveSession(null);
+      active.value = null;
+      session.value = null;
+      items.value = [];
+      return null;
+    }
     await repo.setActiveSession(s.id);
     active.value = s;
     events.track("session_resume", { session_id: s.id, kind: s.kind, position: s.position });

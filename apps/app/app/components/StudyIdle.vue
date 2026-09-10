@@ -95,18 +95,22 @@ const reason = computed<"ready" | "free" | "leeches" | "thin">(() => {
   return "ready";
 });
 
+// One headline about practising, not a status report. The learner opened Practice to answer
+// questions; telling them which internal state the scheduler is in ("Only your hardest questions
+// are left", "You are caught up") reads as an obstacle even when every action below still works.
 const headline = computed(() => ({
   ready: props.canResume ? "Pick up where you left off" : "Ready to practise?",
   free: "That is your free allowance",
-  leeches: "Only your hardest questions are left",
-  thin: `The ${stateName.value} bank is still filling`,
+  leeches: props.canResume ? "Pick up where you left off" : "Ready to practise?",
+  thin: props.canResume ? "Pick up where you left off" : "Ready to practise?",
 }[reason.value]));
 
+const PRACTICE_BLURB = "Practice shows one question at a time. After each answer you see whether you were right, the explanation, and the statute it rests on. Nothing is timed.";
 const blurb = computed(() => ({
-  ready: "Practice shows one question at a time. After each answer you see whether you were right, the explanation, and the statute it rests on. Nothing is timed.",
+  ready: PRACTICE_BLURB,
   free: `You have answered all ${freeTier.total} free questions. Complete opens every state, both national banks, full mocks and the audio narration — once, and forever.`,
-  leeches: "The questions you have missed four or more times are kept out of normal rounds so they cannot crowd out everything else. They get their own focused drill.",
-  thin: `More questions for ${stateName.value} arrive as they are written and verified. You can practise everything that is already here, and the national portion is the larger half of your exam.`,
+  leeches: PRACTICE_BLURB,
+  thin: `${PRACTICE_BLURB} More ${stateName.value} questions arrive as they are written.`,
 }[reason.value]));
 
 interface Action { key: string; label: string; hint: string; icon: IconName; tone: "primary" | "secondary"; run: () => void }
@@ -160,9 +164,9 @@ const rest = computed(() => actions.value.filter((a) => a !== primary.value));
     <div class="text-center">
       <span
         class="mx-auto grid size-16 place-items-center rounded-full"
-        :class="reason === 'free' ? 'bg-accent-soft text-accent' : reason === 'ready' ? 'bg-ok-soft text-ok' : 'bg-surface-2 text-ink-2'"
+        :class="reason === 'free' ? 'bg-accent-soft text-accent' : 'bg-ok-soft text-ok'"
       >
-        <Icon :name="reason === 'ready' ? 'play' : reason === 'free' ? 'spark' : reason === 'leeches' ? 'target' : 'book'" :size="30" />
+        <Icon :name="reason === 'free' ? 'spark' : 'play'" :size="30" />
       </span>
       <h1 class="display mt-3.5 text-[24px]">{{ headline }}</h1>
       <p class="mx-auto mt-2 max-w-[44ch] text-[14.5px] leading-relaxed text-ink-2">{{ blurb }}</p>
