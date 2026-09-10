@@ -254,9 +254,18 @@ export function useStudy() {
             if (res.free_tier) freeTier.noteServerFreeTier(res.free_tier);
             const portions = res.portions?.map((p) => ({ portion: p.portion, bank: p.bank, itemIds: p.item_ids, passScore: p.pass_score }));
             await freeTier.markMockUsed();
+            // Time the form off the exam it mirrors, scaled to the questions actually served.
+            // mock-start falls back to a `mock_forms` row's time_limit_s and those rows are
+            // national — Pearson VUE "full" is 9000s — so a 240-minute Alaska exam was timed at
+            // 2:30. The state record in the manifest is the authority on exam length.
+            const served = res.item_ids.length;
+            const examMs = spec?.timeLimitMs ?? null;
+            const timeLimitMs = examMs != null && spec && spec.target > 0 && served > 0
+              ? Math.round(examMs * Math.min(1, served / spec.target))
+              : res.time_limit_s != null ? res.time_limit_s * 1000 : examMs;
             return startSession("mock", {
               id: res.session_id, banks: portions?.map((p) => p.bank) ?? [nationalBank, `state_${st.code}`].filter((x): x is string => !!x),
-              itemIds: res.item_ids, timeLimitMs: res.time_limit_s != null ? res.time_limit_s * 1000 : spec?.timeLimitMs ?? null, mockFormId: res.form_id || form, portions,
+              itemIds: res.item_ids, timeLimitMs, mockFormId: res.form_id || form, portions,
             });
           }
         } catch (e) {

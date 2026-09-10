@@ -28,7 +28,10 @@ const glossaryDir = resolve(content, "glossary");
 const glossary: Array<{ term: string; definition: string; source: string; quoted_text: string; related_terms: string[]; items: string[]; bank: string }> = [];
 if (existsSync(glossaryDir)) for (const f of readdirSync(glossaryDir).filter((f) => f.endsWith(".yaml"))) {
   const g = YAML.parse(readFileSync(resolve(glossaryDir, f), "utf8")) as { bank: string; entries: any[] };
-  for (const e of g.entries) if (e.status === "approved") glossary.push({ term: e.term, definition: e.definition, source: e.source, quoted_text: e.quoted_text, related_terms: e.related_terms ?? [], items: e.items ?? [], bank: g.bank });
+  // Ship quote-verified entries alongside approved ones, the same bar the item banks ship at
+  // (publish uses PUBLISH_INCLUDE_VERIFIED for exactly this reason). Requiring human approval first
+  // meant 89 verified definitions sat invisible and the Glossary showed "1 of 1 terms".
+  for (const e of g.entries) if (e.status === "approved" || e.status === "quote_verified") glossary.push({ term: e.term, definition: e.definition, source: e.source, quoted_text: e.quoted_text, related_terms: e.related_terms ?? [], items: e.items ?? [], bank: g.bank });
 }
 const audioDir = resolve(content, "audio");
 const audio: Record<string, number> = {};

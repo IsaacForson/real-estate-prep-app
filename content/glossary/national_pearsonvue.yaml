@@ -1,6 +1,18 @@
 bank: national_pearsonvue
-generated_on: 2026-09-08
+generated_on: 2026-09-10
 entries:
+  - term: acre
+    definition: An acre is a unit of area equal to 43,560 square feet.
+    source: REP Ref. Property & Land Use
+    quoted_text: 1 acre = 43,560 square feet = 4,840 square yards = 160 square rods = 10 square chains.
+    related_terms: []
+    items:
+      - NAT-PV-I-0006
+      - NAT-PV-I-0716
+      - NAT-PV-VIII-0136
+      - NAT-PV-VIII-0402
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: agent
     definition: An agent is a person authorized to act on behalf of a principal in dealings with third
       parties, subject to the principal’s control.
@@ -14,6 +26,62 @@ entries:
     status: approved
     model: groq/openai/gpt-oss-120b
     reviewer: qa-lead-model
+  - term: annexation
+    definition: Annexation is the process by which personal property becomes real property by being
+      attached to land or a building, such as installing a furnace or planting an orchard.
+    source: REP Ref. Property & Land Use
+    quoted_text: Personal property becomes real property by annexation (installing a furnace, planting
+      an orchard).
+    related_terms: []
+    items:
+      - NAT-PV-I-0007
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: appurtenant
+    definition: An appurtenant easement is a right that benefits a specific parcel of land and runs with
+      the land, passing automatically with ownership.
+    source: REP Ref. Property & Land Use
+    quoted_text: An appurtenance is a right that belongs to and passes with the land even if the deed
+      does not name it, such as an appurtenant easement
+    related_terms: []
+    items:
+      - NAT-PV-I-0699
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: attachment
+    definition: Attachment is the act of fastening an item to land or a building, which can convert
+      personal property into a fixture when done with the intent that the item remain.
+    source: REP Ref. Property & Land Use
+    quoted_text: A fixture is an item that began as personal property and became real property by being
+      attached to land or a building with the intent that it remain.
+    related_terms: []
+    items:
+      - NAT-PV-I-0436
+      - NAT-PV-I-0437
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: calculation
+    definition: Calculation is the process of applying a formula and carrying out arithmetic steps to
+      determine a numeric result, such as a property tax amount.
+    source: REP Ref. Real Estate Math
+    quoted_text: Each method gives the formula, the steps and two worked examples.
+    related_terms: []
+    items:
+      - NAT-PV-I-0433
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: chain of title
+    definition: Chain of title refers to the historical sequence of title transfers shown in public
+      records, such as deeds and other documents, used to trace prior ownership.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: Reviews of historical sources, such as chain of title documents, aerial photographs,
+      building department records, and land use records, to determine previous uses and occupancies
+      of the real property since the property was first developed.
+    related_terms: []
+    items:
+      - NAT-PV-II-0201
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: Commission means the Federal Trade Commission unless another meaning is specified.
     source: 15 U.S.C. §§ 1601–1667f (TILA)
@@ -27,6 +95,848 @@ entries:
     reviewer: qa-lead-model
     reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
       commission and split as brokerage compensation"
+  - term: compensation
+    definition: Compensation is payment received for real estate brokerage services, such as commissions
+      or referral fees.
+    source: REP Ref. Agency
+    quoted_text: Many states require these to be in writing for the licensee to be entitled to a commission
+    related_terms: []
+    items:
+      - NAT-PV-I-0431
+      - NAT-PV-IV-0833
+      - NAT-PV-V-0075
+      - NAT-PV-V-0323
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conversion
+    definition: Conversion is the unauthorized use of trust or client funds for purposes other than
+      those permitted, considered theft.
+    source: REP Ref. Agency
+    quoted_text: spending client funds for any unauthorized purpose is **conversion**
+    related_terms: []
+    items:
+      - NAT-PV-I-0716
+      - NAT-PV-V-0067
+      - NAT-PV-V-0321
+      - NAT-PV-V-0574
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conveyance
+    definition: A conveyance is the transfer of title, and unless a deed states otherwise, it is
+      presumed to pass fee simple absolute.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Unless a deed states otherwise, a conveyance is presumed to pass fee simple absolute.
+    related_terms: []
+    items:
+      - NAT-PV-II-0474
+      - NAT-PV-II-0480
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: covenant
+    definition: A covenant in a deed is a promise by the grantor regarding title, such as seisin, right
+      to convey, against encumbrances, quiet enjoyment, warranty, and further assurances.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A warranty deed contains the grantor's promises (covenants) about title.
+    related_terms: []
+    items:
+      - NAT-PV-II-0201
+      - NAT-PV-II-0482
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: deed
+    definition: A deed is a legal document that transfers whatever interest the grantor holds in the
+      property to the grantee, without guaranteeing that the title is free of defects.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A deed does not prove title is good; it transfers whatever the grantor has.
+    related_terms: []
+    items:
+      - NAT-PV-II-0017
+      - NAT-PV-II-0723
+      - NAT-PV-II-0764
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: defeasible fee
+    definition: A fee simple estate that may be lost automatically or at the grantor's option if a
+      specified condition is violated or a stated event occurs.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A defeasible fee is a fee simple that can be lost if a stated condition is broken or a
+      stated event occurs.
+    related_terms: []
+    items:
+      - NAT-PV-II-0008
+      - NAT-PV-II-0473
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: delivery
+    definition: Delivery of a deed occurs when the grantor transfers the deed to the grantee (or to an
+      escrow agent under conditions that satisfy the agreement) with the intent to pass title, and
+      title passes upon acceptance.
+    source: REP Ref. Financing & Closing
+    quoted_text: Title passes when the grantor delivers a validly executed deed to the grantee during
+      the grantor's lifetime intending to pass title, and the grantee accepts
+    related_terms: []
+    items:
+      - NAT-PV-II-0035
+      - NAT-PV-II-0742
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: depth
+    definition: Depth is the measurement of a lot from the front line to the rear line, perpendicular to
+      the frontage.
+    source: REP Ref. Property & Land Use
+    quoted_text: depth runs from front line to rear line.
+    related_terms: []
+    items:
+      - NAT-PV-I-0716
+      - NAT-PV-VIII-0402
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: easement
+    definition: An easement is a nonpossessory interest in land that allows the holder to use another's
+      property for a specific purpose, and it transfers part of the bundle of rights while the owner
+      retains the rest.
+    source: REP Ref. Property & Land Use
+    quoted_text: a lease, an easement, and a mortgage each transfer part of the bundle while the owner
+      keeps the rest.
+    related_terms: []
+    items:
+      - NAT-PV-I-0434
+      - NAT-PV-I-0699
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: economically viable use
+    definition: Economically viable use is the remaining use of property after a regulation that allows
+      the owner to still derive reasonable economic benefit, preventing the regulation from being
+      considered a taking.
+    source: REP Ref. Property & Land Use
+    quoted_text: Regulation under police power is not a taking and requires no compensation so long as
+      it is reasonable, applies uniformly to similar properties, and leaves the owner an
+      economically viable use.
+    related_terms: []
+    items:
+      - NAT-PV-I-0464
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: emblements
+    definition: Emblements are annual crops produced by cultivation that are treated as the personal
+      property of the person who planted them, allowing a tenant to harvest them even after the
+      lease ends if not at fault.
+    source: REP Ref. Property & Land Use
+    quoted_text: Annual crops produced by cultivation are treated as personal property of the person who
+      planted them and are called emblements.
+    related_terms: []
+    items:
+      - NAT-PV-I-0679
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: eminent domain
+    definition: Eminent domain is the government's power to take private property for public use upon
+      payment of just compensation.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Government and delegated entities may take private property for public use upon payment
+      of just compensation through condemnation; title passes by court order or by a deed signed
+      under threat of condemnation.
+    related_terms: []
+    items:
+      - NAT-PV-I-0431
+      - NAT-PV-I-0448
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: enlarging
+    definition: Enlarging means increasing the size or intensity of a nonconforming use, which zoning
+      ordinances typically forbid.
+    source: REP Ref. Property & Land Use
+    quoted_text: ordinances typically forbid enlarging or intensifying the use
+    related_terms: []
+    items:
+      - NAT-PV-I-0454
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: escrow
+    definition: Escrow is a neutral third party that holds funds or documents (such as earnest money)
+      until the conditions of a contract are met.
+    source: REP Ref. Contracts
+    quoted_text: Earnest money belongs to neither the buyer nor the seller alone while the contract is
+      pending; it is held in trust by a neutral party — commonly the listing broker, a title or
+      escrow company, or an attorney — under the terms of the contract.
+    related_terms: []
+    items:
+      - NAT-PV-II-0035
+      - NAT-PV-II-0742
+      - NAT-PV-VII-0125
+      - NAT-PV-VIII-0672
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: estate at sufferance
+    definition: The status of a tenant who remains in possession after the lease has ended without the
+      landlord's consent, having no right to stay but not being a trespasser.
+    source: REP Ref. Contracts
+    quoted_text: "- **Estate at sufferance**: the position of a tenant who remains after the lease has
+      ended without the landlord's consent."
+    related_terms: []
+    items:
+      - NAT-PV-II-0010
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exemption
+    definition: An exemption reduces the assessed value of property for tax purposes, such as a
+      homestead exemption that subtracts a qualifying amount from the assessed value.
+    source: REP Ref. Property & Land Use
+    quoted_text: exemptions are subtracted where the owner qualifies (homestead, senior, veteran, and
+      similar exemptions vary by state)
+    related_terms: []
+    items:
+      - NAT-PV-I-0433
+      - NAT-PV-V-0100
+      - NAT-PV-VII-0090
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: federal tax lien
+    definition: A federal tax lien is a general, involuntary lien that arises upon assessment and must
+      be filed to give notice.
+    source: REP Ref. Property & Land Use
+    quoted_text: "Federal tax lien: general, involuntary, arising on assessment and filed notice."
+    related_terms: []
+    items:
+      - NAT-PV-I-0686
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fee simple absolute
+    definition: Fee simple absolute is the largest estate recognized by law, granting ownership of
+      unlimited duration with the full bundle of rights, transferable during life, passing by will
+      or descent, and subject only to government powers and existing encumbrances.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "Fee simple absolute is the largest estate the law recognizes: ownership of unlimited
+      duration with the full bundle of rights, transferable during life, passing by will or descent
+      at death, and subject only to government powers and existing encumbrances."
+    related_terms: []
+    items:
+      - NAT-PV-II-0473
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fee simple determinable
+    definition: A fee simple determinable is an estate that lasts only as long as a specified condition
+      continues and automatically ends when that condition stops, returning title to the grantor
+      without any further action.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Fee simple determinable. The estate lasts only "so long as," "while," or "during" a
+      stated use continues, and it ends automatically when the use stops.
+    related_terms: []
+    items:
+      - NAT-PV-II-0008
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: first in time, first in right
+    definition: Liens are paid in the order they were recorded, with earlier liens having priority over
+      later ones, unless a statute gives certain liens (such as property tax) super‑priority.
+    source: REP Ref. Financing & Closing
+    quoted_text: Priority is generally "first in time, first in right," fixed by recording date
+    related_terms: []
+    items:
+      - NAT-PV-II-0011
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fixture
+    definition: In real estate, a fixture is personal property that, once attached to land or a building
+      with the intent to remain, becomes part of the real property and passes with the deed unless
+      the contract excludes it.
+    source: REP Ref. Property & Land Use
+    quoted_text: A fixture is an item that began as personal property and became real property by being
+      attached to land or a building with the intent that it remain.
+    related_terms: []
+    items:
+      - NAT-PV-I-0007
+      - NAT-PV-I-0436
+      - NAT-PV-I-0437
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: foreclosure
+    definition: Foreclosure is a legal process in which a property is sold to satisfy a debt, with liens
+      paid in order of priority at the sale.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: At a foreclosure sale liens are paid in order of priority; a junior lien receives
+      nothing until every senior lien is satisfied.
+    related_terms: []
+    items:
+      - NAT-PV-II-0204
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: frontage
+    definition: Frontage is the width of a lot measured along the street, used together with depth to
+      determine the lot's area.
+    source: REP Ref. Property & Land Use
+    quoted_text: Frontage is the lot's length along the street; depth runs from front line to rear line.
+    related_terms: []
+    items:
+      - NAT-PV-I-0716
+      - NAT-PV-VIII-0136
+      - NAT-PV-VIII-0402
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: general
+    definition: A general lien is a lien that attaches to all of a debtor’s property, both real and
+      personal, rather than to a single parcel.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Liens are general (attaching to all of a debtor's property) or specific (one parcel).
+    related_terms: []
+    items:
+      - NAT-PV-I-0186
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: general lien
+    definition: A general lien attaches to all of a debtor's real and personal property, such as
+      judgment or tax liens.
+    source: REP Ref. Property & Land Use
+    quoted_text: "General versus specific: a general lien attaches to all of a debtor's property, real
+      and personal (judgment liens, income tax liens, estate and inheritance tax liens);"
+    related_terms: []
+    items:
+      - NAT-PV-I-0686
+      - NAT-PV-I-0687
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: general warranty deed
+    definition: A general warranty deed gives the grantee the greatest protection because the grantor
+      warrants against title defects arising at any time in the chain of title, before or during the
+      grantor's ownership.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "A general warranty deed gives the grantee the greatest protection: the grantor makes
+      all the covenants of title and warrants against defects arising at any time in the chain of
+      title, before or during the grantor's ownership."
+    related_terms: []
+    items:
+      - NAT-PV-II-0201
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: government survey
+    definition: Government survey is the rectangular (Public Land Survey System) method used to divide
+      and describe public lands, especially west of the original states.
+    source: REP Ref. Property & Land Use
+    quoted_text: The rectangular survey, also called the government survey or Public Land Survey System
+      (PLSS), was authorized by the Land Ordinance of 1785 to divide public lands west of the
+      original states.
+    related_terms: []
+    items:
+      - NAT-PV-I-0006
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: granting clause
+    definition: The granting clause contains the words that show the grantor’s present intent to convey
+      title to the grantee.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Words of conveyance (the granting clause), such as "grants and conveys," showing
+      present intent to transfer.
+    related_terms: []
+    items:
+      - NAT-PV-II-0017
+      - NAT-PV-II-0480
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: habendum clause
+    definition: The habendum clause in a deed states what interest or estate is being transferred to the
+      grantee, describing the extent of ownership granted.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: the habendum clause ("to have and to hold"), which defines the estate granted
+    related_terms: []
+    items:
+      - NAT-PV-II-0017
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: hardship
+    definition: In the variance context, hardship is an unnecessary burden unique to the property that
+      is not caused by the owner, which must be demonstrated to justify a deviation from zoning
+      rules.
+    source: REP Ref. Property & Land Use
+    quoted_text: strict application would impose unnecessary hardship unique to the property, not
+      created by the owner
+    related_terms: []
+    items:
+      - NAT-PV-I-0455
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: height
+    definition: Height is the perpendicular distance from the base to the opposite vertex of a triangle,
+      used to calculate area.
+    source: REP Ref. Real Estate Math
+    quoted_text: "Triangle: area = ½ × base × height, where the height is measured perpendicular to the base."
+    related_terms: []
+    items:
+      - NAT-PV-I-0453
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: holdover tenant
+    definition: A tenant who stays after the lease expires without the landlord's consent, possessing
+      the property but having no right to remain unless the landlord accepts rent, which may create
+      a periodic tenancy.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Estate (tenancy) at sufferance. A holdover tenant who stays after the lease ends
+      without consent has possession but no right to it; the landlord may evict or, by accepting
+      rent, create a periodic tenancy.
+    related_terms: []
+    items:
+      - NAT-PV-II-0010
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: intent
+    definition: Intent is the purpose or design to achieve a particular result, such as showing a
+      present intent to be bound when making an offer.
+    source: REP Ref. Contracts
+    quoted_text: must show a present intent to be bound
+    related_terms: []
+    items:
+      - NAT-PV-I-0436
+      - NAT-PV-II-0480
+      - NAT-PV-IV-0537
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: interest
+    definition: Interest is money paid for the use of money, such as the interest paid to a tenant on a
+      security deposit.
+    source: REP Ref. Brokerage Practice
+    quoted_text: State law commonly limits the amount (often one or two months' rent), requires it to be
+      held in a trust account (sometimes with interest to the tenant)
+    related_terms: []
+    items:
+      - NAT-PV-I-0434
+      - NAT-PV-II-0487
+      - NAT-PV-VIII-0406
+      - NAT-PV-VIII-0408
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: involuntary
+    definition: An involuntary lien is a claim against property that arises without the owner's consent,
+      imposed by statute or court action.
+    source: REP Ref. Property & Land Use
+    quoted_text: an involuntary lien arises without consent by statute (property taxes, mechanic's
+      liens, tax liens) or by court action (judgments, attachments).
+    related_terms: []
+    items:
+      - NAT-PV-I-0427
+      - NAT-PV-I-0457
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: involuntary lien
+    definition: An involuntary lien arises without the owner's consent, such as by statute (taxes) or
+      court action (judgments).
+    source: REP Ref. Property & Land Use
+    quoted_text: "Voluntary versus involuntary: a voluntary lien is created by the owner's agreement
+      (mortgage, deed of trust); an involuntary lien arises without consent by statute (property
+      taxes, mechanic's liens, tax liens) or by court action (judgments, attachments)."
+    related_terms: []
+    items:
+      - NAT-PV-I-0686
+      - NAT-PV-I-0687
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: joint tenancy
+    definition: Co-ownership where each owner holds an equal share with the right of survivorship, so a
+      deceased owner's share passes automatically to the surviving owners.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "Joint tenancy is co-ownership with the right of survivorship: when one joint tenant
+      dies, that share passes automatically to the surviving joint tenants, outside probate and
+      outside the decedent's will."
+    related_terms: []
+    items:
+      - NAT-PV-II-0009
+      - NAT-PV-II-0474
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: judgment lien
+    definition: A judgment lien is a general, involuntary lien that arises when a money judgment is
+      recorded or docketed in a county.
+    source: REP Ref. Property & Land Use
+    quoted_text: "Judgment lien: general, involuntary, arising when a money judgment is recorded or
+      docketed in a county."
+    related_terms: []
+    items:
+      - NAT-PV-I-0687
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lender
+    definition: A lender is the payee named on a promissory note, to whom the borrower promises to repay
+      a definite sum with interest.
+    source: REP Ref. Financing & Closing
+    quoted_text: It names the maker (borrower) and payee (lender), the principal, the rate, the payment
+      schedule, the maturity date, and the consequences of late payment or default.
+    related_terms: []
+    items:
+      - NAT-PV-II-0204
+      - NAT-PV-VII-0655
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: license
+    definition: A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage, including listing, selling, buying,
+      leasing, managing, negotiating, and advertising real property.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage:"
+    related_terms: []
+    items:
+      - NAT-PV-I-0434
+      - NAT-PV-V-0309
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lien
+    definition: A lien is a legal charge against property that secures payment of a debt; if the debt
+      remains unpaid, the lienholder may force a sale and be paid from the proceeds.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A lien is a charge against property securing payment of a debt; if unpaid, the
+      lienholder may force a sale and be paid from the proceeds.
+    related_terms: []
+    items:
+      - NAT-PV-I-0186
+      - NAT-PV-I-0427
+      - NAT-PV-I-0457
+      - NAT-PV-I-0688
+      - NAT-PV-I-0691
+      - NAT-PV-VIII-0159
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: lien priority
+    definition: Lien priority determines the order in which liens are paid from foreclosure proceeds,
+      with senior liens paid before junior liens; the general rule is first in time, first in right
+      by recording date, except that property tax and special assessment liens rank first regardless
+      of date.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: At a foreclosure sale liens are paid in order of priority; a junior lien receives
+      nothing until every senior lien is satisfied. The general rule is first in time, first in
+      right, by recording date.
+    related_terms: []
+    items:
+      - NAT-PV-II-0011
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: life estate
+    definition: A life estate is a freehold estate ownership for the duration of a person's lifetime.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: The freehold estates are the fee simple estates (absolute and defeasible) and the life estate.
+    related_terms: []
+    items:
+      - NAT-PV-II-0473
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lis pendens
+    definition: A lis pendens is a recorded notice on a parcel that a lawsuit affecting the title is
+      pending, so anyone who later buys or lends against the property is bound by the suit’s result.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Lis pendens is not a lien but a recorded notice that a lawsuit affecting title is pending
+    related_terms: []
+    items:
+      - NAT-PV-I-0460
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: litigation
+    definition: Litigation is a lawsuit or legal proceeding that affects title, as indicated by a lis
+      pendens notice that records pending litigation affecting title.
+    source: REP Ref. Property & Land Use
+    quoted_text: Lis pendens is not a lien but a recorded notice that litigation affecting title is pending.
+    related_terms: []
+    items:
+      - NAT-PV-I-0460
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: marketable title
+    definition: "Marketable title is title free from reasonable doubt: one a reasonably prudent,
+      well-informed buyer would accept, not subject to undisclosed liens or encumbrances, and not
+      exposing the buyer to litigation."
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "Marketable title is title free from reasonable doubt: one a reasonably prudent,
+      well-informed buyer would accept, not subject to undisclosed liens or encumbrances, and not
+      exposing the buyer to litigation."
+    related_terms: []
+    items:
+      - NAT-PV-II-0476
+      - NAT-PV-II-0741
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mechanic's lien
+    definition: A mechanic's lien is a lien whose priority is set by state statute and may relate back
+      to when work began.
+    source: REP Ref. Property & Land Use
+    quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+    related_terms: []
+    items:
+      - NAT-PV-I-0193
+      - NAT-PV-I-0458
+      - NAT-PV-I-0713
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: metes and bounds
+    definition: Metes and bounds is a land description system that uses measured distances (metes) and
+      physical boundaries (bounds).
+    source: REP Ref. Property & Land Use
+    quoted_text: Metes are measured distances and directions; bounds are boundaries formed by monuments
+      and adjoining lands.
+    related_terms: []
+    items:
+      - NAT-PV-I-0005
+      - NAT-PV-I-0727
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: mill
+    definition: One mill equals one‑tenth of a cent, or $1 of tax for each $1,000 of assessed value.
+    source: REP Ref. Real Estate Math
+    quoted_text: One mill = one-tenth of a cent = $1 of tax per $1,000 of assessed value = 0.001.
+    related_terms: []
+    items:
+      - NAT-PV-I-0433
+      - NAT-PV-I-0692
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: monument
+    definition: A monument is a physical marker—such as an iron pin, stone, stream, or section
+      corner—used to locate a point in a land description.
+    source: REP Ref. Property & Land Use
+    quoted_text: tied to a monument (an iron pin, a stone, a stream, a section corner)
+    related_terms: []
+    items:
+      - NAT-PV-I-0005
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: mortgage
+    definition: A mortgage is a voluntary lien created when the borrower pledges the property as
+      security for a loan.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "- Mortgage and deed of trust liens: voluntary; the borrower pledges the property as security."
+    related_terms: []
+    items:
+      - NAT-PV-I-0444
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: nonconforming use
+    definition: A legal nonconforming use is an existing lawful use that becomes noncompliant after a
+      zoning change and is allowed to continue, but cannot be enlarged or intensified.
+    source: REP Ref. Property & Land Use
+    quoted_text: When a new or amended ordinance makes an existing lawful use or structure noncompliant,
+      the existing use is a legal nonconforming use
+    related_terms: []
+    items:
+      - NAT-PV-I-0454
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notice
+    definition: Notice is a communication that must be delivered according to the method specified in
+      real estate forms (e.g., to the listing licensee or electronically) to be effective.
+    source: REP Ref. Contracts
+    quoted_text: Real estate forms commonly specify how and when notice is effective — for example, on
+      delivery to the listing licensee, or on electronic transmission — and the form controls.
+    related_terms: []
+    items:
+      - NAT-PV-I-0460
+      - NAT-PV-IV-0833
+      - NAT-PV-VII-0124
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: passage of title
+    definition: Title passes at closing when the seller delivers the deed to the buyer, the buyer pays
+      the price, and documents are recorded.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Closing (settlement) is the event at which the seller delivers the deed, the buyer pays
+      the price, and documents are recorded.
+    related_terms: []
+    items:
+      - NAT-PV-II-0035
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: periodic estate
+    definition: A lease that renews automatically for successive periods (e.g., month-to-month) until
+      either party gives the required notice to terminate.
+    source: REP Ref. Contracts
+    quoted_text: "- **Periodic estate (estate from period to period)**: a lease that renews
+      automatically for successive periods (month to month is the most common) until either party
+      gives the notice required by the lease or state law"
+    related_terms: []
+    items:
+      - NAT-PV-II-0010
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: personal property
+    definition: Personal property (also called chattels or personalty) is movable property that is not
+      real estate; it becomes personal property when severed from real property, such as by cutting
+      timber.
+    source: REP Ref. Property & Land Use
+    quoted_text: Real property becomes personal property by severance (cutting timber, mining ore,
+      detaching a fixture).
+    related_terms: []
+    items:
+      - NAT-PV-I-0469
+      - NAT-PV-I-0682
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: police power
+    definition: Police power is the government's authority to regulate private property for public
+      health, safety, morals, and general welfare (e.g., zoning, building codes) without paying
+      compensation, as long as the regulation is reasonable, uniformly applied, and leaves an
+      economically viable use.
+    source: REP Ref. Property & Land Use
+    quoted_text: Police power is the state's inherent authority, delegated to counties and cities, to
+      enact and enforce laws protecting public health, safety, morals, and general welfare.
+    related_terms: []
+    items:
+      - NAT-PV-I-0464
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: possibility of reverter
+    definition: The grantor's retained interest in a fee simple determinable that allows title to revert
+      automatically to the grantor or heirs when the stated condition ends.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: The grantor keeps a possibility of reverter, and title returns to the grantor or the
+      grantor's heirs without any action.
+    related_terms: []
+    items:
+      - NAT-PV-II-0008
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: priority
+    definition: Lien priority determines the order in which liens are paid, with senior liens satisfied
+      before junior ones, except that property tax and special assessment liens usually rank ahead
+      of all others.
+    source: "[REP Ref. Property & Land Use — § 8.3 Priority of liens]"
+    quoted_text: Liens are paid in the order of their seniority (date they arose), and a junior lien is
+      paid only after every senior lien is paid in full.
+    related_terms: []
+    items:
+      - NAT-PV-I-0458
+      - NAT-PV-I-0688
+      - NAT-PV-I-0691
+      - NAT-PV-I-0713
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: property tax
+    definition: Property tax is an ad valorem tax on real property based on its assessed value, after
+      subtracting any qualifying exemptions, with the tax rate applied by local taxing authorities.
+    source: REP Ref. Property & Land Use
+    quoted_text: The general real property tax is ad valorem, based on assessed value.
+    related_terms: []
+    items:
+      - NAT-PV-I-0433
+      - NAT-PV-III-0800
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reasonable doubt
+    definition: Reasonable doubt is a doubt that would cause a reasonably prudent, well-informed buyer
+      to reject the title as unmarketable.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "Marketable title is title free from reasonable doubt: one a reasonably prudent,
+      well-informed buyer would accept"
+    related_terms: []
+    items:
+      - NAT-PV-II-0476
+      - NAT-PV-II-0741
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: right of survivorship
+    definition: The feature of joint tenancy whereby a deceased joint tenant's interest passes
+      automatically to the surviving joint tenants, outside probate and the decedent's will.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "right of survivorship: when one joint tenant dies, that share passes automatically to
+      the surviving joint tenants"
+    related_terms: []
+    items:
+      - NAT-PV-II-0009
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rule of construction
+    definition: The rule of construction is a hierarchy used to resolve conflicts in metes-and-bounds
+      descriptions, giving priority to natural monuments over artificial ones, then adjoining
+      boundaries, courses, distances, and finally stated area.
+    source: REP Ref. Property & Land Use
+    quoted_text: When elements of a description conflict, the usual rule of construction ranks natural
+      monuments first, then artificial monuments, then adjoining boundaries, then courses, then
+      distances, and stated area last
+    related_terms: []
+    items:
+      - NAT-PV-I-0727
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: seisin
+    definition: The covenant of seisin guarantees that the grantor owns the estate being conveyed.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: seisin (the grantor owns the estate conveyed)
+    related_terms: []
+    items:
+      - NAT-PV-II-0482
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: setback
+    definition: A setback is the required distance a building must be set back from a property line, and
+      a survey can reveal when this distance is violated.
+    source: REP Ref. Property & Land Use
+    quoted_text: encroachments and setback violations can be seen.
+    related_terms: []
+    items:
+      - NAT-PV-I-0453
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: severance
+    definition: Severance is the act of detaching something from real property (such as cutting timber)
+      which converts it into personal property.
+    source: REP Ref. Property & Land Use
+    quoted_text: Real property becomes personal property by severance (cutting timber, mining ore,
+      detaching a fixture).
+    related_terms: []
+    items:
+      - NAT-PV-I-0682
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: severance damages
+    definition: Severance damages are the compensation for the loss in value to the remaining land when
+      the government takes only a portion of a parcel.
+    source: REP Ref. Property & Land Use
+    quoted_text: Just compensation is ordinarily fair market value of what is taken plus, for a partial
+      taking, any loss in value to the remainder (severance damages).
+    related_terms: []
+    items:
+      - NAT-PV-I-0431
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: special warranty deed
+    definition: A special warranty deed guarantees only that the grantor has not incurred any liens or
+      encumbrances during the time they owned the property, offering no protection against problems
+      that existed before their ownership.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "A special warranty deed limits the covenants to the grantor's own period of ownership:
+      the grantor warrants only against claims \"by, through, or under\" the grantor"
+    related_terms: []
+    items:
+      - NAT-PV-II-0032
+      - NAT-PV-II-0204
+      - NAT-PV-II-0484
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: special-use permit
+    definition: A special-use permit (conditional-use permit, special exception) authorizes a use the
+      ordinance identifies as appropriate in a district only when stated conditions are met, such as
+      houses of worship, schools, or hospitals in residential areas.
+    source: REP Ref. Property & Land Use
+    quoted_text: A special-use permit (conditional-use permit, special exception) authorizes a use the
+      ordinance identifies as appropriate in a district only when stated conditions are met
+    related_terms: []
+    items:
+      - NAT-PV-I-0451
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: specific
+    definition: A specific lien is a lien that attaches only to a particular parcel of property.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Liens are general (attaching to all of a debtor's property) or specific (one parcel).
+    related_terms: []
+    items:
+      - NAT-PV-I-0427
+      - NAT-PV-I-0457
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: specific performance
+    definition: Specific performance is a court order that requires the breaching party to carry out the
+      contract exactly as written.
+    source: REP Ref. Contracts
+    quoted_text: A court order compelling the breaching party to perform the contract as written.
+    related_terms: []
+    items:
+      - NAT-PV-I-0004
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: split
     definition: A split is a portion or percentage of a charge for a real‑estate settlement service that
       is given or received without actual services performed, which is prohibited.
@@ -42,3 +952,145 @@ entries:
     reviewer: qa-lead-model
     reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
       commission and split as brokerage compensation"
+  - term: statutory
+    definition: A statutory arrangement is one established by statute, such as a broker designating
+      separate licensees to represent the seller and buyer in the same transaction.
+    source: REP Ref. Agency
+    quoted_text: A statutory arrangement, available in many states, in which the broker designates one
+      licensee in the firm to represent the seller and a different licensee to represent the buyer
+      in the same transaction.
+    related_terms: []
+    items:
+      - NAT-PV-I-0427
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: subordination agreement
+    definition: A subordination agreement is a contract that changes the priority of liens, allowing a
+      later-recorded lien to be paid before an earlier one.
+    source: REP Ref. Financing & Closing
+    quoted_text: A subordination agreement changes priority by contract.
+    related_terms: []
+    items:
+      - NAT-PV-I-0688
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: taking
+    definition: A taking is a government action that deprives the owner of all economically viable use
+      of property, which may be challenged as a regulatory taking requiring compensation.
+    source: REP Ref. Property & Land Use
+    quoted_text: A regulation that strips essentially all use may be challenged as a regulatory taking.
+    related_terms: []
+    items:
+      - NAT-PV-I-0464
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tax rate
+    definition: The tax rate is the factor applied to a property's assessed value to calculate the
+      amount of property tax due, often expressed in mills where one mill equals $1 tax per $1,000
+      of assessed value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: one mill is one-thousandth of a dollar ($0.001), or $1 of tax per $1,000 of assessed value
+    related_terms: []
+    items:
+      - NAT-PV-I-0692
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenancy in common
+    definition: Co-ownership where each owner holds an undivided fractional interest, which may be
+      unequal, with equal right to possess the whole property and no right of survivorship.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Tenancy in common is co-ownership in which each owner holds an undivided fractional
+      interest in the whole.
+    related_terms: []
+    items:
+      - NAT-PV-II-0009
+      - NAT-PV-II-0474
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenant
+    definition: A tenant is a client who has engaged the brokerage.
+    source: REP Ref. Agency
+    quoted_text: the principal is the client (a seller, buyer, landlord, or tenant who has engaged the
+      brokerage)
+    related_terms: []
+    items:
+      - NAT-PV-I-0679
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trade fixture
+    definition: A trade fixture is an item a commercial tenant installs in leased premises for business
+      use, which remains the tenant’s personal property and can be removed.
+    source: REP Ref. Property & Land Use
+    quoted_text: "A trade fixture is an item a commercial tenant attaches to leased premises to carry on
+      a business: display shelving, kitchen hoods, a barber's chairs."
+    related_terms: []
+    items:
+      - NAT-PV-I-0007
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: uniqueness
+    definition: Uniqueness means that each parcel of land is distinct and not identical to any other parcel.
+    source: REP Ref. Property & Land Use
+    quoted_text: "Uniqueness (non-homogeneity): no two parcels are identical because no two occupy the
+      same location."
+    related_terms: []
+    items:
+      - NAT-PV-I-0004
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: variance
+    definition: A variance permits deviation from a specific zoning requirement because strict
+      application would impose unnecessary hardship unique to the property, not created by the
+      owner, and the deviation would not harm the public or neighborhood.
+    source: REP Ref. Property & Land Use
+    quoted_text: A variance permits deviation from a specific zoning requirement because strict
+      application would impose unnecessary hardship unique to the property, not created by the
+      owner, and the deviation would not harm the public or neighborhood.
+    related_terms: []
+    items:
+      - NAT-PV-I-0451
+      - NAT-PV-I-0453
+      - NAT-PV-I-0455
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: voluntary lien
+    definition: A voluntary lien is a claim against property that arises from the owner's agreement,
+      such as a mortgage or deed of trust.
+    source: REP Ref. Property & Land Use
+    quoted_text: a voluntary lien is created by the owner's agreement (mortgage, deed of trust);
+    related_terms: []
+    items:
+      - NAT-PV-I-0444
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: warranty deed
+    definition: A warranty deed is a deed that includes the grantor's covenants regarding title, such as
+      seisin, right to convey, and warranties.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A warranty deed contains the grantor's promises (covenants) about title.
+    related_terms: []
+    items:
+      - NAT-PV-II-0482
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: work began
+    definition: For a mechanic's lien, the date work began can be used to establish the lien's priority,
+      as the lien may relate back to that date under state statute.
+    source: REP Ref. Property & Land Use
+    quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+    related_terms: []
+    items:
+      - NAT-PV-I-0458
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: zoning
+    definition: Zoning refers to local government regulations that specify how land may be used (e.g.,
+      residential, commercial).
+    source: REP Ref. Brokerage Practice
+    quoted_text: checking the public record for liens, zoning, and flood status
+    related_terms: []
+    items:
+      - NAT-PV-I-0454
+      - NAT-PV-I-0455
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
