@@ -41,13 +41,15 @@ export const EVENTS_PER_HOUR = 1200;
 export const HELP_AI_PER_HOUR = 30;
 export const SUPPORT_MESSAGES_PER_HOUR = 30;
 export const COUPON_ATTEMPTS_PER_HOUR = 10;
-export const MOCK_STARTS_PER_HOUR = 6;
+export const MOCK_STARTS_PER_HOUR = 20;
 
 // SPEC §5.4 "rate-limit item delivery to a plausible human ceiling per hour".
 // a fast candidate answers ~60–90 fresh items an hour plus quick reviews; 300 leaves headroom
 // for someone who pre-fetches a couple of sessions before going offline (F7).
-export const ITEMS_PER_HOUR = 300;
-export const BATCHES_PER_HOUR = 8;
+// A single full mock is 120-150 items, so 300 blocked a learner after two sittings and made
+// ordinary use look like abuse. This is still a scraping ceiling, just above real study.
+export const ITEMS_PER_HOUR = 2000;
+export const BATCHES_PER_HOUR = 60;
 export const SYNCS_PER_HOUR = 120;
 export const DEVICE_REGISTRATIONS_PER_HOUR = 10;
 

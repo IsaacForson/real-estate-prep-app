@@ -1,0 +1,39 @@
+id: FL-475-0037
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida law, how long after receipt does a real estate license application expire if the
+  applicant fails to pass the required examination?
+options:
+  - 12 months
+  - 36 months
+  - 48 months
+  - 24 months
+key: D
+explanation: The statute states that the application shall expire 2 years after the date received if
+  the applicant does not pass the appropriate examination. Two years equals 24 months.
+citation:
+  source: Fla. Stat. § 475.25
+  url: null
+  quoted_text: The application shall expire 2 years after the date received if the applicant does not
+    pass the appropriate examination.
+  secondary: []
+terms:
+  - application
+  - expiration
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

@@ -1,0 +1,37 @@
+id: WA-85-0039
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A managing broker is registered as designated broker for one firm and later accepts an
+  endorsement to also serve as designated broker for a second, unrelated firm. Based on RCW
+  18.85.121, is this arrangement permitted?
+options:
+  - No, because a designated broker may serve just one firm at a time
+  - Yes, if the firms share common ownership interests
+  - No, unless the department issues a special waiver
+  - Yes, because a designated broker may act for more than one firm
+key: D
+explanation: The statute expressly allows a designated broker to act as designated broker for more
+  than one firm, provided the department registers the designated broker for each.
+citation:
+  source: Wash. Rev. Code § 18.85.121
+  url: null
+  quoted_text: and may act as a designated broker for more than one firm
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

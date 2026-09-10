@@ -1,0 +1,37 @@
+id: OH-4735-0029
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: An attorney negotiates the sale of a client's home purely as part of representing that client
+  in the underlying legal matter. Does Ohio Rev. Code § 4735.01 require the attorney to hold a real
+  estate license for this act?
+options:
+  - Yes, an attorney handling any real estate matter is required to hold a license
+  - No, an attorney acting within the attorney's legal duties is exempt
+  - No, the exemption instead covers accountants doing similar work
+  - Yes, the exemption covers attorneys who personally own the property
+key: B
+explanation: Section 4735.01 exempts a person acting as an attorney at law in the performance of the
+  attorney's duties from the definitions of real estate broker and real estate salesperson.
+citation:
+  source: Ohio Rev. Code § 4735.01
+  url: null
+  quoted_text: As an attorney at law in the performance of the attorney's duties
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

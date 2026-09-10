@@ -1,0 +1,38 @@
+id: MN-82-0029
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: May a Minnesota real estate salesperson be licensed to act on behalf of two different brokers
+  during the same period of time?
+options:
+  - No, unless the two brokers share the same business entity license
+  - Yes, provided each broker consents in writing to the arrangement
+  - Yes, provided the salesperson discloses the arrangement to clients
+  - No, a salesperson may act on behalf of a single broker at a time
+key: D
+explanation: The statute requires a salesperson to be licensed to act on behalf of a licensed broker
+  and prohibits being licensed to act on behalf of more than one broker in the state during the same
+  period of time.
+citation:
+  source: Minn. Stat. § 82.63
+  url: null
+  quoted_text: A salesperson must be licensed to act on behalf of a licensed broker and may not be
+    licensed to act on behalf of more than one broker in this state during the same period of time.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

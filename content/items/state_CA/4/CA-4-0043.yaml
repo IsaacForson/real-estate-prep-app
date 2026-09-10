@@ -9,13 +9,13 @@ stem: A borrower has filed a Chapter 13 bankruptcy case, and the bankruptcy cour
   entered an order closing or dismissing the case. According to Cal. Civ. Code § 2920.5(c)(2)(C), is
   this borrower eligible for a foreclosure prevention alternative offered by the mortgage servicer?
 options:
+  - No, because the borrower has filed a bankruptcy case that has not been closed, dismissed, or
+    granted relief from the stay
   - Yes, because filing bankruptcy automatically qualifies the borrower for all loss mitigation
     options
   - No, because the borrower has surrendered the property by delivering the keys to the mortgagee
-  - No, because the borrower has filed a bankruptcy case that has not been closed, dismissed, or
-    granted relief from the stay
   - Yes, as long as the borrower continues to make the contractual mortgage payments
-key: C
+key: A
 explanation: Cal. Civ. Code § 2920.5(c)(2)(C) expressly excludes from the definition of 'borrower'
   any individual who has filed a bankruptcy case under Chapters 7, 11, 12, or 13 if the bankruptcy
   court has not entered an order closing or dismissing the case or granting relief from the stay.
@@ -38,11 +38,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

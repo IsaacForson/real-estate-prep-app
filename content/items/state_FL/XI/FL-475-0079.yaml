@@ -1,0 +1,39 @@
+id: FL-475-0079
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An owner sells a triplex, a structure with three residential units, and the broker seeks to
+  record a lien under the Commercial Real Estate Sales Commission Lien Act. Applying section
+  475.701, F.S., how is the triplex treated?
+options:
+  - It is excluded if the owner occupies one of the units
+  - It is included because it generates rental income for the owner
+  - It is included because it has more than one residential unit
+  - It is excluded because it holds one to four residential units
+key: D
+explanation: Section 475.701 excludes from the definition of commercial real estate any interest
+  improved with one single-family unit or a multifamily structure containing one to four residential
+  units, and a triplex falls within that carve-out.
+citation:
+  source: Fla. Stat. § 475.701
+  url: null
+  quoted_text: Improved with one single-family residential unit or one multifamily structure
+    containing one to four residential units
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

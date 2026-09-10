@@ -8,11 +8,11 @@ cognitive_level: application
 stem: A broker sells a cemetery lot with a promise that the buyer can resell it at a profit. What is
   the effect of the conveyance under Arizona law?
 options:
-  - The conveyance is valid but the broker may be fined
   - The conveyance is void and unenforceable
+  - The conveyance is valid but the broker may be fined
   - The conveyance is valid unless the buyer objects
   - The conveyance is valid but subject to a fine
-key: B
+key: A
 explanation: The statute declares it unlawful to sell cemetery property under a promise of resale at
   profit and states that the conveyance of cemetery property pursuant to such a sale is void. Thus
   the conveyance is void and unenforceable. The other options incorrectly suggest validity or fines
@@ -32,11 +32,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

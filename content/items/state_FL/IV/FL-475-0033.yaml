@@ -1,0 +1,43 @@
+id: FL-475-0033
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An unlicensed assistant helps a broker show properties and expects a commission for her
+  services. Under Florida law, is the contract for commission valid?
+options:
+  - The contract for commission is invalid unless the assistant holds a real estate license
+  - The contract for commission is valid if the assistant is paid a salary instead
+  - The contract for commission is valid if the broker signs the agreement
+  - The contract for commission is valid only for commercial properties
+key: A
+explanation: Under 475.41, no contract for a commission or compensation for any act requiring a
+  license is valid unless the person performing the act is licensed; thus, an unlicensed assistant
+  cannot earn a commission.
+citation:
+  source: Fla. Stat. § 475.41
+  url: null
+  quoted_text: No contract for a commission or compensation for any act or service enumerated in s.
+    475.01(3) is valid unless the broker or sales associate has complied with this chapter in regard
+    to issuance and renewal of the license at the time the act or service was performed.
+  secondary: []
+terms:
+  - unlicensed
+  - commission
+  - contract
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

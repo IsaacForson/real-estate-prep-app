@@ -1,0 +1,37 @@
+id: NV-645-0025
+jurisdiction: NV
+bank: state_NV
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Nevada broker wants to occasionally meet clients and sign listing agreements at a coffee
+  shop instead of her licensed office. Under NRS 645.550, this practice is:"
+options:
+  - Authorized, if the client agrees to the location
+  - Not authorized, if the coffee shop sits outside of Nevada
+  - Not authorized, since her license names one office
+  - Authorized, if the broker carries a copy of it
+key: C
+explanation: NRS 645.550(3) states that no license authorizes the licensee to transact business from
+  any office other than the one designated in the license.
+citation:
+  source: Nev. Rev. Stat. § 645.550
+  url: null
+  quoted_text: No license authorizes the licensee to transact business from any office other than that
+    designated in the license.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

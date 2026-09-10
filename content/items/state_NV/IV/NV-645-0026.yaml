@@ -1,0 +1,41 @@
+id: NV-645-0026
+jurisdiction: NV
+bank: state_NV
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensed broker wants to pay part of a transaction's commission to a family friend who
+  helped find the buyer but who holds no real estate license. Under NRS 645.280, this payment is:"
+options:
+  - Lawful, if the friend signs a written waiver first
+  - Lawful, if the sum paid stays under half of the fee
+  - Unlawful, since the friend happens to be her own close relative
+  - Unlawful, since paying an unlicensed helper a fee is barred
+key: D
+explanation: NRS 645.280(1) makes it unlawful for a licensed broker to pay any part of a commission
+  to a person who is not a licensed broker, broker-salesperson, or salesperson for services
+  performed.
+citation:
+  source: Nev. Rev. Stat. § 645.280
+  url: null
+  quoted_text: It is unlawful for any licensed real estate broker, or broker-salesperson or
+    salesperson to offer, promise, allow, give or pay, directly or indirectly, any part or share of
+    his or her commission, compensation or finders fee arising or accruing from any real estate
+    transaction to any person who is not a licensed real estate broker, broker-salesperson or
+    salesperson, in consideration of services performed or to be performed by the unlicensed person.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

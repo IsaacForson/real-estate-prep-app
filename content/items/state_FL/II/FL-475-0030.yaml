@@ -1,0 +1,47 @@
+id: FL-475-0030
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Florida Real Estate Commission wishes to hire an independent attorney to advise on a
+  disciplinary matter but has not obtained the Attorney General’s prior approval. Under Florida
+  Statute 475.03, is this action permissible?
+options:
+  - The action is not permissible because prior approval of the Attorney General is required
+  - The action is permissible if the attorney is also a commission member
+  - The action is not permissible because the commission may only delegate disciplinary powers
+  - The action is permissible because the commission may retain counsel for any matter
+key: A
+explanation: The statute requires prior approval of the Attorney General before the commission may
+  retain independent legal counsel. Without this approval, the action is not permissible. The
+  distractor suggesting permissibility if the attorney is a commission member is incorrect because
+  the approval requirement still applies.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.03(2)
+  url: null
+  quoted_text: Subject to the prior approval of the Attorney General, the commission may retain
+    independent legal counsel to provide legal advice to the commission on a specific matter.
+  secondary: []
+terms:
+  - attorney
+  - approval
+  - commission
+  - counsel
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

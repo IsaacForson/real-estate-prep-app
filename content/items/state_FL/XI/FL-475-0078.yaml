@@ -1,0 +1,37 @@
+id: FL-475-0078
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under section 475.701, F.S., who is the "closing agent" in a commercial real estate transaction?
+options:
+  - The broker who negotiated the original brokerage agreement
+  - The attorney who drafted the purchase and sale contract
+  - The person who receives documents and funds for recording
+  - The lender who approved financing for the buyer's purchase
+key: C
+explanation: Section 475.701 defines closing agent as the person who receives documents and funds
+  for recording and disbursement in closing a transaction for the disposition of commercial real
+  estate.
+citation:
+  source: Fla. Stat. § 475.701
+  url: null
+  quoted_text: “Closing agent” means the person who receives documents and funds for recording and
+    disbursement in closing a transaction for the disposition of commercial real estate.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

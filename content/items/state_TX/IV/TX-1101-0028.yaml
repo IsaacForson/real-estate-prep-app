@@ -1,0 +1,39 @@
+id: TX-1101-0028
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A broker representing a seller also accepts a fee from the buyer for the same sale, without
+  telling the seller. Under Tex. Occ. Code § 1101.652, why does this conduct expose the broker's
+  license to suspension or revocation?
+options:
+  - The broker violated a net listing agreement by capping the seller's proceeds
+  - The broker failed to file a timely education report with the commission
+  - The broker received compensation from more than one party without consent
+  - The broker exceeded the maximum commission rate set by the commission
+key: C
+explanation: Section 1101.652(b)(8) lists receiving compensation from more than one party to a
+  transaction without the full knowledge and consent of all parties as a ground for suspending or
+  revoking a license.
+citation:
+  source: Tex. Occ. Code § 1101.652
+  url: null
+  quoted_text: receives compensation from more than one party to a real estate transaction without the
+    full knowledge and consent of all parties to the transaction
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

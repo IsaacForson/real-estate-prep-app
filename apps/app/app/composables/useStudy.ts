@@ -266,6 +266,12 @@ export function useStudy() {
             else if (e.code === "free_tier_exhausted") freeTier.noteServerFreeTier({ remaining: 0, total: freeTier.total });
             return null;
           }
+          // A definitive refusal is an answer, not a failure to reach the server: mock-start says
+          // `bank_short` when the jurisdiction cannot fill the form to the real exam's shape, and
+          // `no_items` when a bank is empty. Falling through to local assembly there rebuilt exactly
+          // the short, wrongly-proportioned form the server had just declined to build — and left an
+          // abandoned session the app then advertised as "Mock in progress".
+          if (e instanceof ApiError && (e.code === "bank_short" || e.code === "no_items")) return null;
           if (!(e instanceof ApiError && (e.status === 404 || e.code === "http_404" || e.code === "not_found"))) console.warn("[mock-start] falling back to a local form", e);
         }
       }

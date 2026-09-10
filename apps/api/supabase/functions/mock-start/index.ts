@@ -162,6 +162,9 @@ serve(async (req) => {
 
   await enforceRateLimit(ctx.db, `mocks:${ctx.userId}`, MOCK_STARTS_PER_HOUR, RATE_WINDOW_SECONDS, 1);
 
+  // Fewer than this is a quiz, not a mock exam.
+  const MIN_MOCK_ITEMS = 20;
+
   // ---- one batch per portion ------------------------------------------------------------
   const batches: { portion: "national" | "state"; batch: IssuedBatch; pass_score: string | number }[] = [];
   const skipNoItems = (e: unknown, bank: string): boolean => {
@@ -207,7 +210,25 @@ serve(async (req) => {
       throw e;
     }
   }
-  if (batches.length === 0) throw new HttpError(404, "no_items", "no published items for this jurisdiction yet");
+  // A mock is only a mock if it is the real exam's shape. Skipping a portion whose bank is empty,
+  // or accepting a batch that came back short, silently produced forms like a 98-question
+  // "California" exam (the real one is 150) with the wrong national/state mix and a pass score
+  // measured against a length that does not exist — and every one of those left an abandoned
+  // session behind that the app then advertised as "Mock in progress".
+  // Build the best form the banks can fill rather than refusing outright: a learner would rather
+  // sit 113 of 120 questions than nothing, and the client labels the real length instead of calling
+  // it "full length". Below a floor it stops being a mock, so that still refuses — and the response
+  // carries both numbers so nothing has to guess what it got.
+  const wanted = fixed.reduce((a, p) => a + p.item_ids.length, 0) + counts.reduce((a: number, n) => a + (n ?? 0), 0);
+  const got = batches.reduce((a, b) => a + b.batch.public_ids.length, 0);
+  if (batches.length === 0 || got < MIN_MOCK_ITEMS) {
+    throw new HttpError(
+      409,
+      "bank_short",
+      `a mock needs at least ${MIN_MOCK_ITEMS} questions and this jurisdiction's banks can supply ${got} right now`,
+      { needed: wanted, available: got, minimum: MIN_MOCK_ITEMS },
+    );
+  }
   // national before state, whatever order the portions were issued in
   batches.sort((a, b) => (a.portion === b.portion ? 0 : a.portion === "national" ? -1 : 1));
 

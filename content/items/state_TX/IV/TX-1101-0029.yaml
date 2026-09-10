@@ -1,0 +1,39 @@
+id: TX-1101-0029
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker gives a sponsored sales agent written authorization to handle only residential
+  leasing activities. Under 22 Tex. Admin. Code § 535.2, is the broker responsible for the agent's
+  leasing activities performed within that written authorization?
+options:
+  - Yes, provided the broker personally supervises each leasing transaction
+  - No, sponsorship does not create any broker responsibility for those acts
+  - No, unless the sales agent's license had already become inactive
+  - Yes, the broker is responsible for the sales agent's authorized acts
+key: D
+explanation: Section 535.2(a) makes a broker responsible for the authorized acts of a sponsored
+  sales agent once the scope of authority has been given in writing, even though the broker need not
+  directly supervise the agent.
+citation:
+  source: 22 Tex. Admin. Code § 535.2
+  url: null
+  quoted_text: a broker is responsible for the authorized acts of the broker's sales agents, but the
+    broker is not required to supervise the sales agents directly.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

@@ -8,11 +8,11 @@ cognitive_level: application
 stem: The commission wishes to inform the public about disciplinary actions. Under which authority
   may it release the names of sanctioned individuals?
 options:
-  - Publishing the names of all persons sanctioned under § 17-42-312 in writing or electronic format.
   - Publishing the annual financial audit of the commission in writing or electronic format.
   - Publishing the minutes of every commission meeting in writing or electronic format.
   - Publishing the list of active licensees in writing or electronic format.
-key: A
+  - Publishing the names of all persons sanctioned under § 17-42-312 in writing or electronic format.
+key: D
 explanation: Section 17-42-203(e)(2) expressly permits the commission to publish in writing or
   electronic format the names of persons sanctioned under § 17-42-312. The other options describe
   publications not authorized by this subsection.
@@ -32,11 +32,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: groq/openai/gpt-oss-120b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

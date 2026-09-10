@@ -1,0 +1,51 @@
+id: FL-475-0065
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XVII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A federally insured depository institution facilitates the sale of a business enterprise's
+  assets (excluding any real property) to an accredited investor. Under Florida Statute 475.01(12),
+  is the institution required to hold a Florida real estate license to conduct this transaction?
+options:
+  - Yes, because the institution is not a dealer registered under the Securities Exchange Act.
+  - No, because subsection (12) exempts the sale of a business enterprise to an accredited investor.
+  - No, because all transactions involving accredited investors are exempt regardless of the asset
+    type.
+  - Yes, because any sale of a business enterprise requires a license.
+key: B
+explanation: Subsection (12) exempts federally insured depository institutions from licensure when
+  they are involved in the sale, exchange, purchase, or rental of a business enterprise to or by an
+  accredited investor. Since the transaction involves only the assets of the business enterprise and
+  the buyer is an accredited investor, no license is required. The option claiming that all
+  transactions with accredited investors are exempt is incorrect because the exemption applies only
+  to business enterprise transactions, not to land or other assets not connected to the business
+  enterprise.
+citation:
+  source: Fla. Stat. ch. 475 § 475.01(12)
+  url: null
+  quoted_text: Any dealer registered under the Securities and Exchange Act of 1934, as amended, or any
+    federally insured depository institution and any parent, subsidiary, or affiliate thereof, in
+    connection with the sale, exchange, purchase, or rental of a business enterprise to or by a
+    person who is an accredited investor as defined by 15 U.S.C. s. 77b, the Securities Act of 1933,
+    or any regulation adopted thereunder. This exemption applies whether stock or assets of the
+    business enterprise are purchased or sold.
+  secondary: []
+terms:
+  - accredited investor
+  - business enterprise
+  - depository institution
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

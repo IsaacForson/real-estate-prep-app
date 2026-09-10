@@ -1,0 +1,39 @@
+id: MN-82-0028
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: A Minnesota broker's renewal approval has not yet been received by June 30 of the renewal
+  year. Under Minn. Stat. § 82.62, what is this broker's status?
+options:
+  - The broker may continue transacting business for an additional 30 days
+  - The broker has to surrender the trust account funds on demand
+  - The broker may not transact business until renewal approval arrives
+  - The broker may transact business in commercial transactions
+key: C
+explanation: The statute states that a person who has not received notice of approval of renewal may
+  not continue to transact business as a broker, salesperson, or closing agent after June 30 of the
+  renewal year until approval is received.
+citation:
+  source: Minn. Stat. § 82.62
+  url: null
+  quoted_text: A person who has not received notice of approval of renewal may not continue to
+    transact business either as a real estate broker, salesperson, or closing agent after June 30 of
+    the renewal year until approval of renewal is received.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

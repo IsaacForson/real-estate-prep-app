@@ -138,7 +138,10 @@ export function nextIdFactory(bank: string) {
   const jur = jurisdictionOf(bank);
   const root = jur === "NAT" ? (bank === "national_psi" ? "PSI" : "PV") : rootFor(jur);
   const existing = existingItems(bank);
-  const drafts = collectedDraftIds(bank);
+  // Rejected drafts keep their ids. Leaving them out let a later import hand the same number to a
+  // different node, which put two items with one id in the bank and made the item_index upsert fail
+  // with "ON CONFLICT DO UPDATE command cannot affect row a second time" — so nothing published.
+  const drafts = [...collectedDraftIds(bank), ...rejectedDraftIds(bank)];
   let max = 0;
   for (const id of [...existing.map((i) => i.id), ...drafts]) {
     const n = Number(id.split("-").pop());
@@ -155,6 +158,11 @@ function rootFor(jur: string): string {
   const st = StateRecord.parse(readYaml(join(CONFIG.contentDir, "states", `${jur}.yaml`)));
   const m = st.statute_citation_root?.match(/(\d+[A-Z]?)(?!.*\d)/);
   return (m?.[1] ?? "LAW").toUpperCase();
+}
+
+function rejectedDraftIds(bank: string): string[] {
+  const dir = join(CONFIG.stateDir, "rejected", bank);
+  return listFiles(dir, ".yaml").map((p) => p.split("/").pop()!.replace(/\.yaml$/, ""));
 }
 
 function collectedDraftIds(bank: string): string[] {

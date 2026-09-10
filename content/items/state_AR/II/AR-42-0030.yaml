@@ -8,11 +8,11 @@ cognitive_level: application
 stem: An applicant has submitted fingerprints for a state and federal criminal background check and
   is waiting for the results. May the applicant take the licensing exam?
 options:
-  - The applicant may take the licensing exam while awaiting the background check results.
   - The applicant must wait for the background check results before taking the licensing exam.
   - The applicant is prohibited from taking the licensing exam if any criminal record exists.
   - The applicant may take the licensing exam after receiving a waiver from the commission.
-key: A
+  - The applicant may take the licensing exam while awaiting the background check results.
+key: D
 explanation: Section 17-42-315(a)(2)(A) expressly allows an applicant to sit for the licensing
   examination while awaiting the results of a background check. Therefore, the applicant may take
   the exam during the waiting period. The statement that the applicant must wait for the results
@@ -32,11 +32,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

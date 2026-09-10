@@ -1,0 +1,44 @@
+id: FL-475-0043
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida law, what is the maximum amount a property management firm may pay as a finder’s
+  fee to an unlicensed tenant for introducing a prospective lessee to an apartment unit without
+  violating the license law?
+options:
+  - $25 per transaction
+  - $75 per transaction
+  - $100 per transaction
+  - $50 per transaction
+key: D
+explanation: The statute exempts payments of up to $50 per transaction for finder’s fees paid to
+  unlicensed tenants in apartment complexes. Therefore, the maximum permissible amount is $50.
+  Options suggesting $25 or $75 misstate the limit, and $100 exceeds the allowed amount.
+citation:
+  source: Fla. Stat. § 475.01(13)
+  url: null
+  quoted_text: Any property management firm or any owner of an apartment complex for the act of paying
+    a finder’s fee or referral fee to an unlicensed person who is a tenant in such apartment complex
+    provided the value of the fee does not exceed $50 per transaction.
+  secondary: []
+terms:
+  - finder's fee
+  - property management
+  - tenant
+  - transaction
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

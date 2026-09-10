@@ -1,0 +1,43 @@
+id: FL-475-0047
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant finished the required pre‑license course on January 15, 2023 and has not yet
+  passed the state licensing exam. If the exam is still **NOT** passed by January 15, 2025, what is
+  the status of the applicant’s course completion under Florida law?
+options:
+  - The applicant must retake the course before attempting the exam again.
+  - The applicant may still use the course completion if the exam is passed later.
+  - The course completion remains valid for licensure indefinitely for the applicant.
+  - The course completion is invalid for licensure purposes under this rule.
+key: D
+explanation: Fla. Stat. § 475.25 states that if an applicant does not pass the licensing examination
+  within 2 years after the successful course completion date, the course completion is invalid for
+  licensure. The distractor claiming the completion remains valid contradicts this rule.
+citation:
+  source: Fla. Stat. § 475.25
+  url: null
+  quoted_text: Additionally, if an applicant does not pass the licensing examination within 2 years
+    after the successful course completion date, the applicant’s successful course completion is
+    invalid for licensure.
+  secondary: []
+terms:
+  - course
+  - completion
+  - exam
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

@@ -1,0 +1,44 @@
+id: FL-475-0060
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XVI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Florida broker provides an opinion of value to a buyer in the ordinary course of business.
+  Which statement is correct under Florida Statute 475.611?
+options:
+  - The broker may refer to the opinion of value as an appraisal if the buyer consents in writing.
+  - The broker may not refer to the opinion of value as an appraisal under any circumstance.
+  - The broker may refer to the opinion of value as an appraisal after disclosing that it is not a
+    formal appraisal.
+  - The broker may refer to the opinion of value as an appraisal if the broker also holds a
+    certified appraiser license.
+key: B
+explanation: The statute states that in no event may a comparative market analysis, broker price
+  opinion, or opinion of value be referred to as an appraisal. This prohibition applies regardless
+  of buyer consent, additional licensure, or disclosure.
+citation:
+  source: Fla. Stat. § 475.611
+  url: null
+  quoted_text: However, in no event may this comparative market analysis, broker price opinion, or
+    opinion of value of real estate be referred to as an appraisal, as defined in s. 475.611.
+  secondary: []
+terms:
+  - opinion of value
+  - appraisal
+  - broker
+  - ordinary course
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

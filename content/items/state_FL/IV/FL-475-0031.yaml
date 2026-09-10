@@ -1,0 +1,46 @@
+id: FL-475-0031
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida law, what occurs to the licenses of sales associates registered with a broker
+  when the broker's license is revoked or suspended?
+options:
+  - The licenses remain active until reemployment
+  - The licenses must be renewed within thirty days
+  - The licenses are transferred to another broker
+  - The licenses become involuntarily inactive
+key: D
+explanation: Under 475.31(1), an order revoking or suspending a broker's license automatically
+  causes the licenses of all sales associates and broker associates registered with the broker to
+  become involuntarily inactive while the broker's license is inoperative or until new employment is
+  secured.
+citation:
+  source: Fla. Stat. § 475.31(1)
+  url: null
+  quoted_text: An order revoking or suspending the license of a broker shall automatically cause the
+    licenses of all sales associates and broker associates registered with the broker, and, if a
+    partnership or corporation, of all members, officers, and directors thereof to become
+    involuntarily inactive, while the license of the broker is inoperative or until new employment
+    or connection is secured.
+  secondary: []
+terms:
+  - license
+  - broker
+  - sales associate
+  - inactivation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

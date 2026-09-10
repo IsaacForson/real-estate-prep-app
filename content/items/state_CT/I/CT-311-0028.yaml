@@ -10,11 +10,11 @@ stem: A licensed real estate salesperson serving as a member of the Connecticut 
   Governor take regarding the vacancy?
 options:
   - The Governor must leave the vacancy unfilled until the next appointment cycle
-  - The Governor must appoint a successor to serve the unexpired term and until a new successor
-    qualifies
   - The Governor must require the remaining members to vote to fill the vacancy
   - The Governor must appoint a successor to serve a full new term starting next fiscal year
-key: B
+  - The Governor must appoint a successor to serve the unexpired term and until a new successor
+    qualifies
+key: D
 explanation: The law requires the Governor to appoint a successor who serves for the unexpired
   portion of the vacated term and until that successor’s own successor is appointed and qualifies.
   Leaving the vacancy open or letting the remaining members vote internally does not satisfy this
@@ -37,11 +37,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

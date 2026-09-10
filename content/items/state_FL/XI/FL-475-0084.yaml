@@ -1,0 +1,41 @@
+id: FL-475-0084
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A buyer's deposit check bounces after a broker deposited it promptly and without any
+  carelessness on the broker's part. Analyzing Rule 61J2-14.008, F.A.C., is the broker responsible
+  for the bounced check?
+options:
+  - No, responsibility attaches through culpable negligence
+  - Yes, a broker is responsible for any check that is not paid
+  - Yes, holding client funds makes the broker a payment guarantor
+  - No, brokers bear no responsibility under any circumstance
+key: A
+explanation: The rule states that a broker is not responsible for the payment of a check or draft
+  unless the broker, through culpable negligence, fails to deposit it in the regular course of
+  business and it is not paid due to that negligence.
+citation:
+  source: Fla. Admin. Code Rule 61J2-14.008
+  url: null
+  quoted_text: A broker shall not be responsible for the payment of any check or draft, unless the
+    broker, through culpable negligence, fails to deposit the same in the regular course of
+    business, and the check or draft is not paid due to such culpable negligence, and damage results
+    to some party entitled to complain of said culpable negligence.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

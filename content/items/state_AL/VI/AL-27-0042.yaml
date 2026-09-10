@@ -1,0 +1,40 @@
+id: AL-27-0042
+jurisdiction: AL
+bank: state_AL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Ala. Code § 34-27-36, what is the maximum fine the commission may impose for a violation
+  of prohibited conduct?
+options:
+  - $5,000
+  - $10,000
+  - $1,000
+  - $2,500
+key: A
+explanation: The statute sets the fine range at not less than $100 nor more than $5,000, making
+  $5,000 the maximum possible penalty. The $2,500 option is incorrect because it represents only
+  half of the allowed maximum and is not the ceiling established by law.
+citation:
+  source: Ala. Code § 34-27-36(a)(2)a
+  url: null
+  quoted_text: a. A fine of not less than one hundred dollars ($100) nor more than five thousand
+    dollars ($5,000).
+  secondary: []
+terms:
+  - fine
+  - penalty
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

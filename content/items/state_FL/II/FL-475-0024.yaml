@@ -1,0 +1,46 @@
+id: FL-475-0024
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Florida Statute 475.02, how many members of the Florida Real Estate Commission
+  must be licensed brokers who have held an active license for at **LEAST** five years preceding
+  appointment?
+options:
+  - Three members
+  - Two members
+  - One member
+  - Four members
+key: D
+explanation: The statute states that four members must be licensed brokers, each of whom has held an
+  active license for the 5 years preceding appointment. The option 'Two members' incorrectly
+  reflects the requirement for members who are not brokers or sales associates.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.02(1)
+  url: null
+  quoted_text: Four members must be licensed brokers, each of whom has held an active license for the
+    5 years preceding appointment
+  secondary: []
+terms:
+  - commission
+  - broker
+  - appointment
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

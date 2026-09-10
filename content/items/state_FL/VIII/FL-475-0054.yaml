@@ -1,0 +1,48 @@
+id: FL-475-0054
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Alex lists and sells timeshare weeks on behalf of multiple owners, receiving a commission for
+  each transaction. Under Florida Statute 475.01(1)(a), does Alex need a real estate license to
+  conduct this activity?
+options:
+  - Yes, because the statute exempts only owners selling their own timeshare weeks, not third-party
+    agents.
+  - Yes, because selling timeshare weeks is considered a real estate transaction requiring a license
+    under all circumstances.
+  - Yes, because the broker definition includes timeshare sales unless exempt under ss. 475.011 and
+    721.20, and no exemption applies.
+  - Yes, because any person who lists timeshare weeks for others must hold a broker license
+    regardless of exemptions.
+key: C
+explanation: The broker definition in 475.01(1)(a) expressly includes persons who list or sell
+  timeshare periods per year, unless exempt under ss. 475.011 and 721.20. Since Alex is acting for
+  others and receives a commission, no exemption applies, so a license is required. The other
+  options either ignore the statutory exemptions or misstate the scope of the exemption.
+citation:
+  source: Fla. Stat. § 475.01(1)(a)
+  url: null
+  quoted_text: The term “broker” also includes any person or entity who undertakes to list or sell one
+    or more timeshare periods per year in one or more timeshare plans on behalf of any number of
+    persons, except as provided in ss. 475.011 and 721.20.
+  secondary: []
+terms:
+  - broker
+  - timeshare
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

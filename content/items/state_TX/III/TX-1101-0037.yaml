@@ -1,0 +1,38 @@
+id: TX-1101-0037
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder is buying a property for the license holder's own account and is not acting
+  as anyone's agent in the deal. Under 22 Tex. Admin. Code § 537.11, must the license holder use a
+  commission-approved contract form for that purchase?
+options:
+  - No, the exception for acting solely as a principal applies
+  - Yes, every real estate purchase in Texas requires an approved form
+  - No, the exception applies just when the seller is also a broker
+  - Yes, unless the purchase price exceeds the local median home price
+key: A
+explanation: Section 537.11(a)(1) excuses a license holder from the mandatory contract form
+  requirement when the license holder is functioning solely as a principal rather than as an agent
+  in the transaction.
+citation:
+  source: 22 Tex. Admin. Code § 537.11
+  url: null
+  quoted_text: transactions in which the license holder is functioning solely as a principal, not as an agent
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

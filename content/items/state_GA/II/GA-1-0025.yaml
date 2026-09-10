@@ -1,0 +1,48 @@
+id: GA-1-0025
+jurisdiction: GA
+bank: state_GA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee affiliated with a Georgia brokerage firm requests a release to transfer to a new
+  firm. Under Georgia Real Estate Commission Rule 520-1-.07, what is the releasing broker required
+  to do immediately upon receiving this request?
+options:
+  - Sign the release and forward the wall certificate of licensure to the Commission
+  - Wait for the new broker to submit a transfer application before signing
+  - Hold the wall certificate until the departing licensee returns all keys
+  - Send a letter to the licensee's last known address confirming the release
+key: A
+explanation: Rule 520-1-.07(5)(b) mandates that when a licensee requests a release, the releasing
+  broker shall immediately sign the release and forward the wall certificate of licensure to the
+  Commission (or notify the Commission that it was forwarded to the new broker). The broker cannot
+  withhold the certificate pending the return of keys or other property, as failure to return
+  property is grounds for a complaint, not a refusal to sign the release.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live — § 520-1-.07
+  url: null
+  quoted_text: When a licensee requests that a release form be signed, the releasing broker shall
+    immediately sign the release and forward the wall certificate of licensure of the departing
+    licensee to the Commission or notify the Commission in writing that the wall certificate of
+    licensure has been forwarded to the new broker for whom the licensee will act.
+  secondary: []
+terms:
+  - release
+  - wall certificate
+  - transfer
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

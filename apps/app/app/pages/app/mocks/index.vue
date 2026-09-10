@@ -35,20 +35,44 @@ const stateAvailable = computed(() => (jur.value ? bankCount(content.manifest.va
 const nationalAvailable = computed(() => (nationalBank.value ? bankCount(content.manifest.value?.nationalStatus?.[nationalBank.value]) : 0));
 const needState = computed(() => exam.value?.state_items ?? exam.value?.total_items ?? 0);
 const needNational = computed(() => exam.value?.national_items ?? 0);
+const MIN_MOCK_ITEMS = 20;
+const availableTotal = computed(() => stateAvailable.value + nationalAvailable.value);
+const neededTotal = computed(() => needState.value + needNational.value);
 const canBuildFull = computed(() => stateAvailable.value >= needState.value && nationalAvailable.value >= needNational.value);
-const canBuildShort = computed(() => stateAvailable.value + nationalAvailable.value >= 20);
+/** A mock is worth sitting once the banks can fill a real one; below that it is a quiz. */
+const canBuildMock = computed(() => availableTotal.value >= MIN_MOCK_ITEMS);
+/** What a form would actually be right now, so the row never claims a length it cannot deliver. */
+const formLength = computed(() => Math.min(availableTotal.value, neededTotal.value));
 const complete = computed(() => entitlement.isComplete.value);
 const active = computed(() => study.activeSession.value?.kind === "mock" ? study.activeSession.value : null);
-const history = computed<StudySession[]>(() => (study.history.value ?? []).filter((s) => s.kind === "mock" && !!s.endedAt));
+/**
+ * Finished mocks worth showing. A session with no answers is one that was opened and abandoned —
+ * listing it as "0%" reads as a failed attempt and buried the real results under rows like
+ * "0% 0/98 · full".
+ */
+const history = computed<StudySession[]>(() => (study.history.value ?? []).filter((s) => s.kind === "mock" && !!s.endedAt && Object.keys(s.answers ?? {}).length > 0));
 const busy = ref<string | null>(null);
 const confirmForm = ref<string | null>(null);
 
 const forms = computed(() => {
   const list: Array<{ id: string; title: string; detail: string; locked: boolean; short?: boolean }> = [];
-  if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0 || !canBuildShort.value, short: true });
+  if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0 || !canBuildMock.value, short: true });
   const n = Math.max(formsAvailable.value, 5);
-  const buildable = canBuildFull.value;
-  for (let i = 1; i <= n; i++) list.push({ id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`, title: `Form ${i}`, detail: buildable && i <= formsAvailable.value ? "Full length · non-overlapping" : "Arrives as this state's bank fills", locked: !complete.value || i > formsAvailable.value || !buildable });
+  const full = canBuildFull.value;
+  const sittable = canBuildMock.value;
+  for (let i = 1; i <= n; i++) {
+    const offered = sittable && i <= Math.max(formsAvailable.value, 1);
+    list.push({
+      id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`,
+      title: `Form ${i}`,
+      detail: !offered
+        ? "Arrives as this state's bank fills"
+        : full
+          ? "Full length · non-overlapping"
+          : `${formLength.value} of ${neededTotal.value} questions · bank still filling`,
+      locked: !complete.value || !offered,
+    });
+  }
   return list;
 });
 const timeLabel = computed(() => (exam.value?.time_minutes ? `${exam.value.time_minutes} min` : "—"));
@@ -66,7 +90,15 @@ async function resume() { if (!active.value) return; await study.resume(active.v
 function scoreOf(s: StudySession) {
   const a = Object.values(s.answers); const c = a.filter((x) => x.correct).length;
   const portions = (s.portions ?? []).map((p) => { const pc = p.itemIds.filter((id) => s.answers[id]?.correct).length; const need = passItemsFrom(p.passScore, p.itemIds.length); return { ...p, correct: pc, need, pass: need == null ? null : pc >= need }; });
-  const pass = portions.length ? portions.every((p) => p.pass !== false) : null;
+  // `p.pass` is null when the portion has no stated pass score. Treating null as "not false" made
+  // every such mock read "pass" — including 0% ones — so a verdict now needs every portion to have
+  // actually passed, and any failed portion fails the form. Unknown stays unknown.
+  const verdicts = portions.map((p) => p.pass);
+  const pass = verdicts.some((v) => v === false)
+    ? false
+    : verdicts.length > 0 && verdicts.every((v) => v === true)
+      ? true
+      : null;
   return { c, n: s.itemIds.length, pct: s.itemIds.length ? Math.round((100 * c) / s.itemIds.length) : 0, pass, portions };
 }
 const fmt = (t: number | null) => (t ? new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "");

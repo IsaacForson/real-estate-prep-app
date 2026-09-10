@@ -1,0 +1,41 @@
+id: NE-56-0029
+jurisdiction: NE
+bank: state_NE
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A limited agent unintentionally passes along a client's inaccurate statement about the
+  client's ability to close, and the statement turns out to be false. The client had no idea the
+  statement was inaccurate. Under Neb. Rev. Stat. § 76-2426, is the client liable for the agent's
+  misrepresentation in this situation?
+options:
+  - Yes, but liability is limited to the amount of the agent's commission
+  - No, because licensees may not repeat client statements to others
+  - Yes, a client is liable for an agent's misrepresentation regardless of knowledge
+  - No, because the client did not know and had no reason to know of it
+key: D
+explanation: Section 76-2426 provides that a client is not liable for a misrepresentation of the
+  client's limited agent arising out of the agency agreement unless the client knew or should have
+  known of the misrepresentation.
+citation:
+  source: Neb. Rev. Stat. § 76-2426
+  url: null
+  quoted_text: A client shall not be liable for a misrepresentation of his or her limited agent
+    arising out of the limited-agency agreement unless the client knew or should have known of the
+    misrepresentation
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

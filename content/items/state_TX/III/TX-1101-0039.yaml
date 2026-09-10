@@ -1,0 +1,38 @@
+id: TX-1101-0039
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to share part of a commission with a person who performs licensed real estate
+  activity but currently holds no active license. Under 22 Tex. Admin. Code § 535.147, may the
+  broker do this?
+options:
+  - Yes, provided the shared amount is less than half the commission
+  - Yes, as long as the unlicensed person signs a liability waiver first
+  - No, a broker may not share a commission with an inactive person
+  - No, unless the person previously held a license within the past year
+key: C
+explanation: Section 535.147(a) prohibits a broker or sales agent from sharing a commission or fees
+  with a person who performs licensed acts but is not actively licensed as a broker or sales agent.
+citation:
+  source: 22 Tex. Admin. Code § 535.147
+  url: null
+  quoted_text: a broker or sales agent may not share a commission or fees with any person who engages
+    in acts for which a license is required and is not actively licensed as a broker or sales agent.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

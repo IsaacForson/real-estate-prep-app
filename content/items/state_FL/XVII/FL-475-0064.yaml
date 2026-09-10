@@ -1,0 +1,41 @@
+id: FL-475-0064
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XVII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida Statute 475.01(13), what is the maximum amount a property management firm may
+  pay a tenant as a finder’s fee or referral fee for introducing a prospective lessee to an
+  apartment unit without violating the statute?
+options:
+  - $50 per transaction
+  - $25 per transaction
+  - $100 per transaction
+  - $75 per transaction
+key: A
+explanation: Subsection (13) explicitly states that the fee must not exceed $50 per transaction.
+  Therefore, $50 per transaction is the maximum allowable amount. The $75 per transaction option
+  exceeds this limit and would violate the statute.
+citation:
+  source: Fla. Stat. ch. 475 § 475.01(13)
+  url: null
+  quoted_text: provided the value of the fee does not exceed $50 per transaction.
+  secondary: []
+terms:
+  - finder’s fee
+  - referral fee
+  - apartment complex
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

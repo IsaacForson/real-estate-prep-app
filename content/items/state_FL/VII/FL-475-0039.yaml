@@ -1,0 +1,41 @@
+id: FL-475-0039
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker attends a legal agenda session of the Florida Real Estate Commission and notifies the
+  division five days before the session. The broker is not a party to any disciplinary action. How
+  many continuing education hours may the broker claim for this attendance?
+options:
+  - 3 hours
+  - 0 hours
+  - 6 hours
+  - 9 hours
+key: B
+explanation: To receive credit for a legal agenda session, the licensee must notify the division at
+  least seven days in advance; notice of only five days does not satisfy the requirement, so no
+  credit is awarded.
+citation:
+  source: Fla. Stat. § 475.182(1)(b)
+  url: null
+  quoted_text: In order to obtain credit, the licensee must notify the division at least 7 days in
+    advance of his or her intent to attend.
+  secondary: []
+terms:
+  - continuing education
+  - legal agenda
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

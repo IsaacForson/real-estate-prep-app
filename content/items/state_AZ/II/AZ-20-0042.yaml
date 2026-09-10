@@ -8,11 +8,11 @@ cognitive_level: application
 stem: A licensee knowingly causes a false advertisement about a subdivision to be published. Under
   Arizona law, what is the result?
 options:
-  - The licensee is guilty of a class 6 felony
   - The licensee is guilty of a class 1 misdemeanor
   - The licensee may be assessed a civil penalty
   - The licensee faces no disciplinary action
-key: A
+  - The licensee is guilty of a class 6 felony
+key: D
 explanation: The statute provides that a person who knowingly publishes a false statement concerning
   land or subdivision is guilty of a class 6 felony and, if a licensee, shall be tried before the
   commissioner for suspension or revocation of the license. Therefore, the licensee faces a class 6
@@ -33,11 +33,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"

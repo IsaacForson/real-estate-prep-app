@@ -1,0 +1,58 @@
+id: FL-475-0056
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XIV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate has completed 13 classroom hours of continuing education, each session
+  lasting 50 minutes. How many additional minutes of continuing education are needed to meet the
+  biennial requirement?
+options:
+  - 50 minutes
+  - 200 minutes
+  - 150 minutes
+  - 100 minutes
+key: A
+explanation: The biennial requirement is 14 hours at 50 minutes each, or 700 total minutes. Thirteen
+  hours equal 650 minutes, leaving a deficit of 50 minutes. The 100‑minute distractor would arise
+  from incorrectly adding an extra hour instead of calculating the shortfall.
+citation:
+  source: Fla. Stat. § 475.182(1)(a)
+  url: null
+  quoted_text: The renewal application for an active license as broker, broker associate, or sales
+    associate shall include proof satisfactory to the commission that the licensee has, since the
+    issuance or renewal of her or his current license, satisfactorily completed at least 14
+    classroom hours of 50 minutes each of a continuing education course during each biennium of a
+    license period
+  secondary: []
+math:
+  worked_solution: |-
+    Required hours = 14
+    Minutes per hour = 50
+    Total required minutes = 14 × 50 = 700 minutes
+    Completed hours = 13
+    Completed minutes = 13 × 50 = 650 minutes
+    Additional minutes needed = 700 − 650 = 50 minutes
+  formulas:
+    - total_minutes = required_hours × minutes_per_hour
+    - completed_minutes = completed_hours × minutes_per_hour
+    - additional_minutes = total_minutes − completed_minutes
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - minute
+  - biennium
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

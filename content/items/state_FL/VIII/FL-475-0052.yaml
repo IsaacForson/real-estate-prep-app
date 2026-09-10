@@ -1,0 +1,44 @@
+id: FL-475-0052
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Maria owns a timeshare week that she uses for her own vacation each year. She decides to sell
+  that week to a friend. Under Florida Statute 475.011(8)(a), is Maria required to hold a real
+  estate license to sell her timeshare week?
+options:
+  - No, because she received no compensation for the sale.
+  - No, because she is an owner selling her own timeshare week for personal use prior to sale.
+  - No, because the timeshare week was used for less than one year in her personal occupancy.
+  - No, because she sold the week to a friend rather than to the public.
+key: B
+explanation: The exemption in 475.011(8)(a) applies to an owner of a timeshare period for personal
+  use and occupancy who later offers that period for resale. Maria’s situation matches this
+  description, so she is exempt from licensing. The other options introduce irrelevant factors—such
+  as selling to a friend, lack of compensation, or duration of use—that are not part of the
+  statutory exemption.
+citation:
+  source: Fla. Stat. § 475.011(8)(a)
+  url: null
+  quoted_text: An owner of one or part of one or more timeshare periods for the owner’s own use and
+    occupancy who later offers one or more of such periods for resale.
+  secondary: []
+terms:
+  - timeshare
+  - exemption
+  - owner
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

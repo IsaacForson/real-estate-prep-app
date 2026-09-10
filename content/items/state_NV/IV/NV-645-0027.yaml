@@ -1,0 +1,39 @@
+id: NV-645-0027
+jurisdiction: NV
+bank: state_NV
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A broker receives an earnest money deposit from a buyer on behalf of a client. Under NRS
+  645.310, the broker must handle that money by:"
+options:
+  - Promptly placing it in a separate trust account
+  - Mixing it with the brokerage's operating funds
+  - Holding it in a personal safe to avoid bank fees
+  - Returning it straight to the buyer's account
+key: A
+explanation: NRS 645.310(4) requires a broker who receives money belonging to others to promptly
+  deposit it into a separate trust account, rather than the broker's own business or personal
+  account.
+citation:
+  source: Nev. Rev. Stat. § 645.310
+  url: null
+  quoted_text: If a real estate broker receives money, as a broker, which belongs to others, the real
+    estate broker shall promptly deposit the money in a separate checking account located in a bank
+    or credit union in this State which must be designated a trust account.
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

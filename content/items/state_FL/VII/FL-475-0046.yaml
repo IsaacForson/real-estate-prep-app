@@ -1,0 +1,42 @@
+id: FL-475-0046
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What occurs to a Florida real estate license if the licensee fails to renew it by the end of
+  the license period set by the department?
+options:
+  - It becomes voluntarily inactive status and must be renewed.
+  - It is immediately canceled and must be re‑applied for again.
+  - It automatically reverts to involuntarily inactive status.
+  - It remains active but incurs a late renewal fee each period.
+key: C
+explanation: Under Fla. Stat. § 475.182(3), a license that is not renewed at the end of the license
+  period automatically reverts to involuntarily inactive status. The distractor claiming it becomes
+  voluntarily inactive is incorrect because the statute specifies involuntary, not voluntary,
+  reversion.
+citation:
+  source: Fla. Stat. § 475.182
+  url: null
+  quoted_text: Any license that is not renewed at the end of the license period prescribed by the
+    department shall automatically revert to involuntarily inactive status.
+  secondary: []
+terms:
+  - license
+  - renewal
+  - involuntarily inactive
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

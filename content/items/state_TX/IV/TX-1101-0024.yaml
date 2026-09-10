@@ -1,0 +1,40 @@
+id: TX-1101-0024
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to act as an intermediary between the buyer and seller in the same transaction.
+  Under Tex. Occ. Code § 1101.559, what must the broker obtain from each party before doing so?
+options:
+  - Oral approval recorded during the final walkthrough of the property
+  - A signed release waiving each party's right to sue for breach of duty
+  - Written consent stating the source of the broker's compensation
+  - A notarized affidavit confirming each party's net worth and credit
+key: C
+explanation: Section 1101.559(a) permits intermediary status only when the broker obtains each
+  party's written consent, and that consent must state the source of the broker's expected
+  compensation.
+citation:
+  source: Tex. Occ. Code § 1101.559
+  url: null
+  quoted_text: "A broker may act as an intermediary between parties to a real estate transaction if:
+    (1) the broker obtains written consent from each party for the broker to act as an intermediary
+    in the transaction; and (2) the written consent of the parties states the source of any expected
+    compensation to the broker."
+  secondary: []
+terms: []
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
+version: 1
+provenance:
+  model: claude-agent
+  prompt_version: agent-v1
+  batch_id: null
+  generated_on: 2026-09-10

@@ -8,15 +8,15 @@ cognitive_level: knowledge
 stem: What must an applicant for a Colorado real estate broker license submit before submitting the
   license application?
 options:
-  - A set of fingerprints submitted to the Colorado Bureau of Investigation for a state and national
-    fingerprint-based criminal history record check
   - A copy of a college diploma in real estate accompanied by transcripts of completed coursework
     and a letter of recommendation
+  - A set of fingerprints submitted to the Colorado Bureau of Investigation for a state and national
+    fingerprint-based criminal history record check
   - A name-based judicial record check obtained from the district court where the arrest occurred
     and signed by the presiding judge
   - A surety bond posted with the Colorado Real Estate Commission in the amount of ten thousand
     dollars
-key: A
+key: B
 explanation: The statute requires each applicant to submit a set of fingerprints to the Colorado
   Bureau of Investigation for a state and national fingerprint-based criminal history record check
   before applying. The diploma option is incorrect because education proof is required later in the
@@ -40,11 +40,11 @@ status: verified
 reviewer: null
 verified_on: 2026-09-09
 qa_approved_on: null
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
 version: 1
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2
   batch_id: null
   generated_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"
