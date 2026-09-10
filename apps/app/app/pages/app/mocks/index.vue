@@ -15,6 +15,78 @@ const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const st = computed(() => (jur.value ? content.manifest.value?.states?.[jur.value] ?? null : null));
 const exam = computed(() => (studyState.settings.value?.licenseLevel === "broker" && st.value?.broker_exam ? { ...st.value.salesperson_exam, ...st.value.broker_exam } : st.value?.salesperson_exam) ?? null);
 const mockForms = useMockForms();
+const readiness = useReadiness();
+const coverage = useCoverage();
+
+/**
+ * What to sit. A mock used to be whichever fixed `mock_forms` row existed, which meant the same
+ * questions every time and no way to sit only the state or only the national portion. A generated
+ * mock is drawn at random from the chosen scope and timed at the exam's own per-question rate, so
+ * "another mock" is genuinely another mock.
+ */
+const portion = ref<"both" | "national" | "state">("both");
+const portionTabs = computed(() => [
+  { value: "both", label: "Full exam" },
+  { value: "national", label: "National" },
+  { value: "state", label: jur.value ?? "State" },
+]);
+const portionBanks = computed(() => {
+  const nb = nationalBank.value, sb = jur.value ? `state_${jur.value}` : null;
+  if (portion.value === "national") return [nb].filter((b): b is string => !!b);
+  if (portion.value === "state") return [sb].filter((b): b is string => !!b);
+  return [nb, sb].filter((b): b is string => !!b);
+});
+const portionReadiness = computed(() => (portion.value === "national" ? readiness.national.value : portion.value === "state" ? readiness.state.value : null));
+/** Sections of the chosen portion, so a mock can be sat on one topic. */
+const sections = computed(() => ((portion.value === "national" ? coverage.national.value : portion.value === "state" ? coverage.state.value : []) ?? []));
+/** How many questions a generated mock should hold for the current choice. */
+const generatedSize = computed(() => {
+  const n = needNational.value, st = needState.value;
+  const want = portion.value === "national" ? n : portion.value === "state" ? st : n + st;
+  const have = portion.value === "national" ? nationalAvailable.value : portion.value === "state" ? stateAvailable.value : availableTotal.value;
+  return Math.max(1, Math.min(want || have, have));
+});
+/** Minutes per question from the real exam, so a shorter mock is timed proportionally. */
+const msPerQuestion = computed(() => {
+  const mins = exam.value?.time_minutes ?? null;
+  const total = (needNational.value + needState.value) || null;
+  return mins && total ? (mins * 60_000) / total : 90_000;
+});
+
+async function startGenerated(node?: string) {
+  const banks = portionBanks.value;
+  if (!banks.length) { pushToast("Choose your state first.", "info"); return; }
+  busy.value = node ?? `gen-${portion.value}`;
+  try {
+    const picked: string[] = [];
+    const perBank: Array<{ portion: "national" | "state"; bank: string; itemIds: string[] }> = [];
+    for (const b of banks) {
+      const ids = await study.source.ids(b);
+      let pool = ids;
+      if (node) {
+        const its = await study.getItems(ids);
+        pool = its.filter((i) => i.blueprint_node === node || i.blueprint_node.startsWith(`${node}.`)).map((i) => i.id);
+      }
+      const shuffled = [...pool].sort(() => Math.random() - 0.5);
+      const share = node ? shuffled.length : Math.round(generatedSize.value * (banks.length === 1 ? 1 : (b === nationalBank.value ? needNational.value : needState.value) / Math.max(1, needNational.value + needState.value)));
+      const take = shuffled.slice(0, Math.max(0, Math.min(share || shuffled.length, shuffled.length)));
+      if (!take.length) continue;
+      picked.push(...take);
+      perBank.push({ portion: b === nationalBank.value ? "national" : "state", bank: b, itemIds: take });
+    }
+    if (!picked.length) { pushToast(node ? "No questions in this section yet." : "No questions in this scope yet.", "info"); return; }
+    const passFor = (p: "national" | "state") => (p === "national" ? exam.value?.pass_score_national ?? exam.value?.pass_score_combined ?? null : exam.value?.pass_score_state ?? exam.value?.pass_score_combined ?? null);
+    await study.startSession("mock", {
+      banks,
+      itemIds: picked,
+      timeLimitMs: Math.round(picked.length * msPerQuestion.value),
+      mockFormId: node ? `section-${node}` : `${portion.value}-${Date.now().toString(36)}`,
+      portions: perBank.map((x) => ({ portion: x.portion, bank: x.bank, itemIds: x.itemIds, passScore: passFor(x.portion) == null ? null : String(passFor(x.portion)) })),
+    });
+    events.track("mock_start", { form: node ? `section-${node}` : portion.value, items: picked.length });
+    await navigateTo("/app/mocks/run");
+  } finally { busy.value = null; }
+}
 const nationalBank = computed(() => (st.value?.vendor === "psi" ? "national_psi" : st.value?.vendor === "pearsonvue" ? "national_pearsonvue" : null));
 /** Published full-length forms for this learner: the state's own first, then the vendor's national forms. */
 const publishedFull = computed(() => [...mockForms.forState(jur.value), ...mockForms.national(nationalBank.value)].filter((f) => f.form_id !== "short"));
@@ -104,7 +176,7 @@ function scoreOf(s: StudySession) {
   return { c, n: s.itemIds.length, pct: s.itemIds.length ? Math.round((100 * c) / s.itemIds.length) : 0, pass, portions };
 }
 const fmt = (t: number | null) => (t ? new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "");
-onMounted(() => { void content.load().then(() => mockForms.load(jur.value, nationalBank.value)); void free.load(); void study.loadHistory(50); });
+onMounted(() => { void coverage.refresh(); void readiness.refresh?.(); void content.load().then(() => mockForms.load(jur.value, nationalBank.value)); void free.load(); void study.loadHistory(50); });
 watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.value); });
 </script>
 <template>
@@ -142,6 +214,51 @@ watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.v
       <EmptyState icon="map" title="Choose your state" body="Mocks are built to your state's exact format. Pick a state from the menu first." compact>
         <AppButton to="/app" variant="primary" size="sm">Go to Home</AppButton>
       </EmptyState>
+    </AppCard>
+
+    <AppCard title="Sit a mock">
+      <AppTabs v-model="portion" :tabs="portionTabs" aria-label="What to sit" class="mb-4" />
+
+      <div class="grid grid-cols-2 gap-3">
+        <StatTile label="Questions" :value="generatedSize" hint="drawn at random" />
+        <StatTile
+          label="Readiness"
+          :value="portionReadiness ? `${portionReadiness.expectedPct.toFixed(0)}%` : '—'"
+          :hint="portion === 'both' ? 'per portion below' : 'predicted score'"
+        />
+      </div>
+
+      <AppButton
+        class="mt-4"
+        variant="primary"
+        size="lg"
+        block
+        icon="clock"
+        :loading="busy === `gen-${portion}`"
+        :disabled="!portionBanks.length"
+        @click="startGenerated()"
+      >Start a timed mock</AppButton>
+      <p class="mt-2 text-center text-[12.5px] text-muted">
+        A new random draw every time, timed at your exam's own rate. Answers stay hidden until you submit.
+      </p>
+
+      <div v-if="sections.length" class="mt-5 border-t border-line pt-4">
+        <p class="eyebrow mb-2">Or sit one section</p>
+        <ul class="-mx-1 grid gap-0.5">
+          <li v-for="sec in sections" :key="sec.node">
+            <button
+              type="button"
+              class="flex min-h-11 w-full items-center gap-3 rounded-card px-2.5 text-left transition-colors hover:bg-surface-2 disabled:opacity-50"
+              :disabled="busy === sec.node"
+              @click="startGenerated(sec.node)"
+            >
+              <span class="tabular grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-[12px] font-semibold text-ink-2">{{ sec.node }}</span>
+              <span class="min-w-0 flex-1 truncate text-[14px]">{{ sec.label }}</span>
+              <Icon name="chevron-right" :size="16" class="shrink-0 text-muted" />
+            </button>
+          </li>
+        </ul>
+      </div>
     </AppCard>
 
     <AppCard title="Forms" padding="none">
