@@ -109,8 +109,21 @@ async function ensureSession() {
 }
 
 onMounted(async () => {
-  await content.load();
-  // never auto-start: the learner chooses to begin (or continue) from the idle screen
+  // `starting` begins true so the first paint is a skeleton rather than a flash of the idle screen.
+  // Nothing else clears it on this path — we deliberately do not auto-start — so it must be cleared
+  // here or the loader spins for ever and Practice never reaches StudyIdle. That was the bug behind
+  // "practice is always stuck on the loader": it had nothing to do with whether content existed.
+  try {
+    await content.load();
+    // Resume a practice session that was already in flight; still never auto-start a new one —
+    // the learner chooses to begin from the idle screen.
+    if (!study.session.value) {
+      const active = study.activeSession.value;
+      if (active && !active.endedAt && active.kind !== "mock") await study.resume(active.id);
+    }
+  } finally {
+    starting.value = false;
+  }
 });
 // changing state clears any finished-session summary; the learner starts the next session themselves
 watch(jur, async (j, prev) => {

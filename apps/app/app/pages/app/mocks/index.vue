@@ -19,6 +19,24 @@ const nationalBank = computed(() => (st.value?.vendor === "psi" ? "national_psi"
 /** Published full-length forms for this learner: the state's own first, then the vendor's national forms. */
 const publishedFull = computed(() => [...mockForms.forState(jur.value), ...mockForms.national(nationalBank.value)].filter((f) => f.form_id !== "short"));
 const formsAvailable = computed(() => publishedFull.value.length);
+/**
+ * Whether a form can actually be built, not just whether a mock_forms row exists.
+ *
+ * A published row is a national one, so Forms 1 and 2 showed a Start button in every state — and
+ * tapping it failed with "not enough questions in this state's bank" because a full form also needs
+ * the state portion (Arizona: 80 national + 60 state, against 34 state items). Offering a button
+ * that cannot work is worse than showing the form as still filling.
+ *
+ * Counts come from the manifest, and provisional (`verified`) items count because publish ships
+ * them alongside `qa_approved` ones — using `published` alone would under-report the live bank.
+ */
+const bankCount = (s?: { verified: number; published: number } | null) => (s ? s.verified + s.published : 0);
+const stateAvailable = computed(() => (jur.value ? bankCount(content.manifest.value?.status?.[jur.value]) : 0));
+const nationalAvailable = computed(() => (nationalBank.value ? bankCount(content.manifest.value?.nationalStatus?.[nationalBank.value]) : 0));
+const needState = computed(() => exam.value?.state_items ?? exam.value?.total_items ?? 0);
+const needNational = computed(() => exam.value?.national_items ?? 0);
+const canBuildFull = computed(() => stateAvailable.value >= needState.value && nationalAvailable.value >= needNational.value);
+const canBuildShort = computed(() => stateAvailable.value + nationalAvailable.value >= 20);
 const complete = computed(() => entitlement.isComplete.value);
 const active = computed(() => study.activeSession.value?.kind === "mock" ? study.activeSession.value : null);
 const history = computed<StudySession[]>(() => (study.history.value ?? []).filter((s) => s.kind === "mock" && !!s.endedAt));
@@ -27,9 +45,10 @@ const confirmForm = ref<string | null>(null);
 
 const forms = computed(() => {
   const list: Array<{ id: string; title: string; detail: string; locked: boolean; short?: boolean }> = [];
-  if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0, short: true });
+  if (!complete.value) list.push({ id: "short", title: "Short mock (free)", detail: `${20} questions in your exam's proportions, timed proportionally`, locked: free.mocksRemaining.value <= 0 || !canBuildShort.value, short: true });
   const n = Math.max(formsAvailable.value, 5);
-  for (let i = 1; i <= n; i++) list.push({ id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`, title: `Form ${i}`, detail: i <= formsAvailable.value ? "Full length · non-overlapping" : "Arrives as this state's bank fills", locked: !complete.value || i > formsAvailable.value });
+  const buildable = canBuildFull.value;
+  for (let i = 1; i <= n; i++) list.push({ id: publishedFull.value[i - 1]?.form_id ?? `form-${i}`, title: `Form ${i}`, detail: buildable && i <= formsAvailable.value ? "Full length · non-overlapping" : "Arrives as this state's bank fills", locked: !complete.value || i > formsAvailable.value || !buildable });
   return list;
 });
 const timeLabel = computed(() => (exam.value?.time_minutes ? `${exam.value.time_minutes} min` : "—"));
