@@ -35,7 +35,7 @@ const SCREEN_TITLES: Array<[RegExp, string]> = [
   [/^\/app\/practice/, "Practice"],
   [/^\/app$/, "Home"],
   [/^\/app\/review/, "Review"],
-  [/^\/app\/study/, "Progress"],
+  [/^\/app\/study/, "Practice"],
   [/^\/app\/glossary/, "Glossary"],
   [/^\/app\/account/, "Account"],
 ];

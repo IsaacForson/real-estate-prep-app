@@ -27,6 +27,7 @@ const study = useStudy();
 const studyState = useStudyState();
 const content = useContent();
 const panel = useAppPanel();
+const practiceScope = usePracticeScope();
 
 const session = computed(() => study.session.value ?? study.activeSession.value);
 const item = computed(() => study.current.value);
@@ -150,8 +151,15 @@ async function advance() {
   } finally { busy.value = false; }
 }
 
+/**
+ * Another random set of whatever they were just practising. `ensureSession()` starts a default
+ * both-banks set, which is why finishing a single section used to drop the learner into a mixed
+ * national one; the scope recorded when the set was started is what makes "more of this" mean it.
+ */
 async function keepGoing() {
   summary.value = null;
+  const sc = practiceScope.scope.value;
+  if (sc) { await startFrom({ kind: sc.kind, banks: sc.banks, node: sc.node ?? undefined }); return; }
   await ensureSession();
 }
 
@@ -163,12 +171,22 @@ async function startFrom(opts: StartPracticeOptions) {
   starting.value = true;
   try {
     summary.value = null;
+    practiceScope.set({ kind: opts.kind === "drill" ? "drill" : "practice", banks: opts.banks, node: opts.node ?? null });
     let s = await study.startPractice(opts);
     // nothing due right now: a deliberate start still deserves questions — pull the schedule forward
     if ((!s || !s.itemIds.length) && !opts.ignoreSchedule && !opts.itemIds) s = await study.startPractice({ ...opts, ignoreSchedule: true });
     if (!s || !s.itemIds.length) pushToast("No questions available right now. Try again in a moment.", "info");
   } finally { starting.value = false; }
 }
+
+/**
+ * /app/practice answers questions; it is not a destination. With nothing to answer and no summary
+ * to show, send the learner back to the hub, where a portion or a section is chosen — that is now
+ * the only way in, so there is no second idle screen to keep in step with it.
+ */
+watch([phase, starting], ([p, st]) => {
+  if (p === "empty" && !st) void navigateTo("/app/study");
+});
 
 /** 1-4 / A-D pick an option, Enter or Space advances once revealed. Same actions as the buttons. */
 function onKey(e: KeyboardEvent) {

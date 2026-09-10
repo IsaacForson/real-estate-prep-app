@@ -6,10 +6,11 @@ export interface AppNavRow { to: string; label: string; hint: string; icon: Icon
 export function useAppNav(opts: { due?: number | null; includeHome?: boolean } = {}): AppNavRow[] {
   const rows: AppNavRow[] = [
     { to: "/app", label: "Home", hint: "Your readiness at a glance and where to go next", icon: "home" },
-    { to: "/app/practice", label: "Practice", hint: "One question at a time, with the answer, explanation and law reference", icon: "play" },
+    // /app/practice is the question runner, not a destination: practice is chosen here, where the
+    // learner can see their readiness and pick a portion or a single section first.
+    { to: "/app/study", label: "Practice", hint: "Pick a portion or a single section, with your readiness and coverage", icon: "play" },
     { to: "/app/mocks", label: "Mock exam", hint: "Timed, real exam format. No explanations until you finish", icon: "clock" },
     { to: "/app/review", label: "Review", hint: "Missed questions and the ones due for repetition", icon: "refresh", count: opts.due ?? null },
-    { to: "/app/study", label: "Progress", hint: "Readiness score and coverage by exam section", icon: "target" },
     { to: "/app/glossary", label: "Glossary", hint: "Key terms with the statute behind each", icon: "book" },
     { to: "/app/account", label: "Account", hint: "Plan, devices, exam date and settings", icon: "user" },
   ];

@@ -1,6 +1,29 @@
 bank: national_pearsonvue
 generated_on: 2026-09-10
 entries:
+  - term: accrued
+    definition: Accrued depreciation is the amount of depreciation that has accumulated over time,
+      calculated as annual depreciation multiplied by the property's effective age.
+    source: REP Ref. Real Estate Math
+    quoted_text: Accrued depreciation = annual depreciation × effective age.
+    related_terms: []
+    items:
+      - NAT-PV-III-0518
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: accrued depreciation
+    definition: Accrued depreciation is the total depreciation taken to date, calculated as annual
+      depreciation multiplied by the effective age of the improvements.
+    source: REP Ref. Real Estate Math
+    quoted_text: Accrued depreciation = annual depreciation × effective age.
+    related_terms: []
+    items:
+      - NAT-PV-III-0042
+      - NAT-PV-III-0231
+      - NAT-PV-III-0788
+      - NAT-PV-VIII-0172
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: acre
     definition: An acre is a unit of area equal to 43,560 square feet.
     source: REP Ref. Property & Land Use
@@ -13,6 +36,18 @@ entries:
       - NAT-PV-VIII-0402
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: adjustment
+    definition: "In the sales comparison approach, adjustments are made by modifying the comparable’s
+      price toward the subject: subtract value if the comparable is superior, add value if it is
+      inferior, and never adjust the subject itself."
+    source: REP Ref. Real Estate Math
+    quoted_text: "Adjust the comparable toward the subject: comparable better, subtract; comparable
+      inferior, add. Never adjust the subject."
+    related_terms: []
+    items:
+      - NAT-PV-III-0491
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: agent
     definition: An agent is a person authorized to act on behalf of a principal in dealings with third
       parties, subject to the principal’s control.
@@ -37,6 +72,63 @@ entries:
       - NAT-PV-I-0007
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: anticipation
+    definition: Anticipation is the concept that value arises from the expectation of future benefits
+      such as income, appreciation, or amenities, and it forms the foundation of the income approach
+      to value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: "Value is created by the expectation of future benefits: income, appreciation, or amenities."
+    related_terms: []
+    items:
+      - NAT-PV-III-0489
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraisal independence
+    definition: Appraisal independence refers to the prohibition, under the Dodd‑Frank Act, against
+      anyone with an interest in a consumer‑credit transaction influencing an appraiser’s value
+      opinion.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: The Dodd-Frank Act of 2010 added appraisal independence requirements to the Truth in
+      Lending Act (15 U.S.C. § 1639e).
+    related_terms: []
+    items:
+      - NAT-PV-III-0039
+      - NAT-PV-III-0051
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraisal standards board
+    definition: The Appraisal Standards Board (ASB) is the body that writes the Uniform Standards of
+      Professional Appraisal Practice (USPAP).
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: whose Appraisal Standards Board (ASB) writes USPAP.
+    related_terms: []
+    items:
+      - NAT-PV-III-0036
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraisal threshold
+    definition: The appraisal threshold is the dollar amount below which lenders may use an automated
+      valuation model instead of a full appraisal.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Lenders use AVMs for pre-qualification, lending below the appraisal threshold, quality
+      control, and portfolio monitoring,
+    related_terms: []
+    items:
+      - NAT-PV-III-0050
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraiser
+    definition: An appraiser is a professional whose opinion of property value may be needed, and whose
+      services a licensee must recognize when required.
+    source: REP Ref. Agency
+    quoted_text: Care does not require the agent to be an inspector, appraiser, attorney, or accountant;
+      it requires the agent to recognize when the client needs one and to say so.
+    related_terms: []
+    items:
+      - NAT-PV-III-0037
+      - NAT-PV-III-0039
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appurtenant
     definition: An appurtenant easement is a right that benefits a specific parcel of land and runs with
       the land, passing automatically with ownership.
@@ -46,6 +138,43 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0699
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: aqb
+    definition: The Appraiser Qualifications Board (AQB) is the entity within The Appraisal Foundation
+      that establishes the minimum education, experience, and examination requirements for real
+      estate appraisers under the FIRREA framework.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: The Appraisal Foundation, whose Appraiser Qualifications Board (AQB) sets minimum
+      education, experience, and examination criteria
+    related_terms: []
+    items:
+      - NAT-PV-III-0238
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: assemblage
+    definition: Assemblage is the process of combining two or more adjacent parcels of land under a
+      single ownership.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Assemblage is the act of combining adjacent parcels under one ownership.
+    related_terms: []
+    items:
+      - NAT-PV-III-0507
+      - NAT-PV-III-0810
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: assessed value
+    definition: Assessed value is the value placed on a property by a public assessor for taxation
+      purposes, often a percentage of market value, used to calculate property tax.
+    source: REP Ref. Property & Land Use
+    quoted_text: The general real property tax is ad valorem, based on assessed value.
+    related_terms: []
+    items:
+      - NAT-PV-III-0048
+      - NAT-PV-III-0049
+      - NAT-PV-III-0501
+      - NAT-PV-III-0541
+      - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: attachment
@@ -60,6 +189,17 @@ entries:
       - NAT-PV-I-0437
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: bargain
+    definition: A bargain and sale deed implies that the grantor holds title and possession but does not
+      include any express warranties against liens, encumbrances, or defects.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A bargain and sale deed conveys title with an implied representation that the grantor
+      holds title and possession, but without express warranties against encumbrances or defects.
+    related_terms: []
+    items:
+      - NAT-PV-II-0723
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: calculation
     definition: Calculation is the process of applying a formula and carrying out arithmetic steps to
       determine a numeric result, such as a property tax amount.
@@ -68,6 +208,30 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0433
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: capitalization rate
+    definition: The capitalization rate (cap rate) is the ratio of net operating income to property
+      value, used to estimate value by dividing NOI by the cap rate; a higher cap rate indicates
+      lower value for the same income.
+    source: REP Ref. Real Estate Math
+    quoted_text: Income = Rate × Value; Value = Income ÷ Rate; Rate = Income ÷ Value. Income means NOI.
+    related_terms: []
+    items:
+      - NAT-PV-III-0041
+      - NAT-PV-III-0499
+      - NAT-PV-VIII-0182
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: certified residential appraiser
+    definition: A certified residential appraiser is authorized to appraise one-to-four-unit residential
+      properties of any value or complexity.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: certified residential appraiser (one-to-four-unit residential properties of any value
+      or complexity)
+    related_terms: []
+    items:
+      - NAT-PV-III-0037
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: chain of title
@@ -80,6 +244,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0201
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: coercion
+    definition: Coercion, under the Fair Housing Act, is the unlawful act of coercing, intimidating,
+      threatening, or interfering with a person’s exercise of protected rights.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: It shall be unlawful to coerce, intimidate, threaten, or interfere with any person
+    related_terms: []
+    items:
+      - NAT-PV-III-0039
+      - NAT-PV-III-0051
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
@@ -132,6 +307,18 @@ entries:
       - NAT-PV-II-0480
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: cost approach
+    definition: The cost approach estimates property value by adding land value to the current cost of
+      improvements minus accrued depreciation, based on the principle of substitution.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Cost approach value = cost new of the improvements − accrued depreciation + land (site) value.
+    related_terms: []
+    items:
+      - NAT-PV-III-0042
+      - NAT-PV-III-0524
+      - NAT-PV-III-0799
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: covenant
     definition: A covenant in a deed is a promise by the grantor regarding title, such as seisin, right
       to convey, against encumbrances, quiet enjoyment, warranty, and further assurances.
@@ -141,6 +328,29 @@ entries:
     items:
       - NAT-PV-II-0201
       - NAT-PV-II-0482
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: coverage
+    definition: Coverage refers to the specific risks and defects that a title insurance policy protects
+      against, such as known but undisclosed defects, post‑policy defects, and unrecorded liens or
+      easements.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: include defects the insured knew of and did not disclose, defects created after the
+      policy date, rights of parties in possession not shown by the records, unrecorded easements,
+      boundary and encroachment matters a survey would reveal
+    related_terms: []
+    items:
+      - NAT-PV-II-0485
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: credential
+    definition: An appraiser credential consists of the minimum education, experience, and examination
+      criteria set by the AQB for appraiser classifications.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: sets minimum education, experience, and examination criteria
+    related_terms: []
+    items:
+      - NAT-PV-III-0037
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deed
@@ -167,6 +377,17 @@ entries:
       - NAT-PV-II-0473
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: defect
+    definition: A defect is a known problem or flaw with the property that a licensee must not conceal
+      and must disclose to parties in a transaction.
+    source: REP Ref. Agency
+    quoted_text: to conceal a known defect, to misstate square footage — must be refused
+    related_terms: []
+    items:
+      - NAT-PV-II-0484
+      - NAT-PV-IV-0851
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: delivery
     definition: Delivery of a deed occurs when the grantor transfers the deed to the grantee (or to an
       escrow agent under conditions that satisfy the agreement) with the intent to pass title, and
@@ -180,6 +401,29 @@ entries:
       - NAT-PV-II-0742
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: demand
+    definition: Demand is desire coupled with the ability to pay; desire alone does not create effective
+      demand if the ability to pay is lacking.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Demand is desire coupled with the ability to pay.
+    related_terms: []
+    items:
+      - NAT-PV-III-0225
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: depreciation
+    definition: Depreciation is the annual reduction in the value of a property's improvements, found by
+      dividing the improvement cost by the total economic life, with land excluded from the
+      calculation.
+    source: REP Ref. Real Estate Math
+    quoted_text: Annual depreciation = improvement cost ÷ total economic life (land is never depreciated).
+    related_terms: []
+    items:
+      - NAT-PV-III-0518
+      - NAT-PV-VIII-0173
+      - NAT-PV-VIII-0426
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: depth
     definition: Depth is the measurement of a lot from the front line to the rear line, perpendicular to
       the frontage.
@@ -189,6 +433,16 @@ entries:
     items:
       - NAT-PV-I-0716
       - NAT-PV-VIII-0402
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: direct capitalization
+    definition: Direct capitalization estimates property value by dividing net operating income by the
+      capitalization rate.
+    source: REP Ref. Real Estate Math
+    quoted_text: "Direct capitalization: value = NOI ÷ cap rate (§ 7.2)."
+    related_terms: []
+    items:
+      - NAT-PV-III-0041
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: easement
@@ -204,6 +458,20 @@ entries:
       - NAT-PV-I-0699
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: ecoa
+    definition: ECOA (Equal Credit Opportunity Act) Regulation B requires a creditor to provide an
+      applicant with a copy of any appraisal or written valuation for a first-lien loan secured by a
+      dwelling promptly upon completion or three business days before consummation, whichever occurs
+      earlier, and to notify the applicant of that right within three business days of application.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: the ECOA valuation rule (Regulation B) requires a creditor to give an applicant a copy
+      of any appraisal or written valuation developed for a first-lien loan secured by a dwelling
+      promptly upon completion or three business days before consummation, whichever is earlier
+    related_terms: []
+    items:
+      - NAT-PV-III-0241
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: economically viable use
     definition: Economically viable use is the remaining use of property after a regulation that allows
       the owner to still derive reasonable economic benefit, preventing the regulation from being
@@ -215,6 +483,20 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0464
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: effective age
+    definition: Effective age is the age the building appears to be given its condition and utility; it
+      is less than actual age for a well-maintained or remodeled building and greater for a
+      neglected one.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Effective age is the age the building appears to be given its condition and utility; it
+      is less than actual age for a well-maintained or remodeled building and greater for a
+      neglected one.
+    related_terms: []
+    items:
+      - NAT-PV-III-0231
+      - NAT-PV-VIII-0172
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: emblements
@@ -291,6 +573,18 @@ entries:
       - NAT-PV-VII-0090
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: external obsolescence
+    definition: External obsolescence is a loss in value due to factors outside the property's
+      boundaries, such as a nearby landfill or freeway, and it cannot be cured by the owner.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: "External (economic or locational) obsolescence is a loss caused by something outside
+      the property boundaries: a new freeway next door, an oversupplied market, a neighboring
+      landfill."
+    related_terms: []
+    items:
+      - NAT-PV-III-0042
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: federal tax lien
     definition: A federal tax lien is a general, involuntary lien that arises upon assessment and must
       be filed to give notice.
@@ -299,6 +593,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0686
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: federally related transaction
+    definition: A federally related transaction is a real-estate-related financial transaction that a
+      federal financial institution regulatory agency engages in, contracts for, or regulates and
+      that requires an appraiser under the agencies' rules.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: A federally related transaction (FRT) is a real-estate-related financial transaction
+      that a federal financial institution regulatory agency engages in, contracts for, or regulates
+    related_terms: []
+    items:
+      - NAT-PV-III-0050
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fee simple absolute
@@ -324,6 +630,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0008
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: firrea
+    definition: FIRREA is the federal law that created a two-layer appraisal oversight system,
+      establishing the Appraisal Subcommittee (ASC) to oversee appraisal standards.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Title XI of the Financial Institutions Reform, Recovery, and Enforcement Act of 1989
+      (FIRREA), 12 U.S.C. §§ 3331–3356.
+    related_terms: []
+    items:
+      - NAT-PV-III-0036
+      - NAT-PV-III-0238
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: first in time, first in right
@@ -464,6 +782,18 @@ entries:
       - NAT-PV-I-0453
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: highest and best use
+    definition: Highest and best use is the reasonably probable use of a property that is legally
+      permissible, physically possible, financially feasible, and maximally productive.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Highest and best use is the reasonably probable use of vacant land or an improved
+      property that is legally permissible, physically possible, financially feasible, and maximally
+      productive.
+    related_terms: []
+    items:
+      - NAT-PV-III-0227
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: holdover tenant
     definition: A tenant who stays after the lease expires without the landlord's consent, possessing
       the property but having no right to remain unless the landlord accepts rent, which may create
@@ -475,6 +805,31 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0010
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: homestead exemption
+    definition: A homestead exemption is a reduction in the assessed value of a primary residence that
+      lowers the property tax owed.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Tax equals assessed value, less exemptions such as a homestead exemption, multiplied by
+      the tax rate.
+    related_terms: []
+    items:
+      - NAT-PV-III-0049
+      - NAT-PV-III-0800
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: income approach
+    definition: The income approach estimates a property’s value by converting its income into value,
+      most commonly using direct capitalization where value equals net operating income divided by
+      the capitalization rate (value = NOI ÷ cap rate).
+    source: REP Ref. Real Estate Math
+    quoted_text: "Direct capitalization: value = NOI ÷ cap rate (§ 7.2). For small residential rentals,
+      value = monthly rent × GRM (§ 7.3)."
+    related_terms: []
+    items:
+      - NAT-PV-III-0489
+      - NAT-PV-III-0499
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: intent
@@ -552,6 +907,15 @@ entries:
       - NAT-PV-I-0687
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: legally permissible
+    definition: Allowed by zoning, private restrictions, and environmental law.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: legally permissible under zoning, private restrictions, and environmental law
+    related_terms: []
+    items:
+      - NAT-PV-III-0227
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: lender
     definition: A lender is the payee named on a promissory note, to whom the borrower promises to repay
       a definite sum with interest.
@@ -562,6 +926,20 @@ entries:
     items:
       - NAT-PV-II-0204
       - NAT-PV-VII-0655
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: liability
+    definition: Liability means being legally responsible for the actions of another person, such as a
+      subagent, when those actions are performed within the scope of their authority. This
+      responsibility can arise even if the responsible party never directly interacted with the
+      person whose actions caused the harm.
+    source: REP Ref. Agency
+    quoted_text: A principal is generally liable for the acts of an authorized subagent within the scope
+      of the agency.
+    related_terms: []
+    items:
+      - NAT-PV-II-0484
+      - NAT-PV-IV-0247
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license
@@ -605,6 +983,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0011
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: liens
+    definition: A lien is a charge against property securing payment of a debt; if unpaid, the
+      lienholder may force a sale and be paid from the proceeds, and it is an encumbrance that does
+      not transfer ownership.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A lien is a charge against property securing payment of a debt; if unpaid, the
+      lienholder may force a sale and be paid from the proceeds.
+    related_terms: []
+    items:
+      - NAT-PV-II-0741
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: life estate
@@ -684,6 +1074,18 @@ entries:
       - NAT-PV-I-0692
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mill rate
+    definition: A mill rate is the tax rate expressed in mills, where one mill equals $1 of tax per
+      $1,000 of assessed value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: one mill = $0.001 = $1 per $1,000.
+    related_terms: []
+    items:
+      - NAT-PV-III-0048
+      - NAT-PV-III-0049
+      - NAT-PV-III-0800
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: monument
     definition: A monument is a physical marker—such as an iron pin, stone, stream, or section
       corner—used to locate a point in a land description.
@@ -702,6 +1104,20 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0444
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: net operating income
+    definition: Net operating income is the effective gross income minus operating expenses, before debt
+      service and income taxes.
+    source: REP Ref. Real Estate Math
+    quoted_text: Net operating income (NOI) = EGI − operating expenses.
+    related_terms: []
+    items:
+      - NAT-PV-III-0041
+      - NAT-PV-III-0499
+      - NAT-PV-VIII-0182
+      - NAT-PV-VIII-0183
+      - NAT-PV-VIII-0184
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: nonconforming use
@@ -764,6 +1180,19 @@ entries:
       - NAT-PV-I-0682
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: plottage
+    definition: Plottage is the increase in total value when adjacent parcels are combined into a larger
+      tract that is worth more than the sum of the separate parcels, usually because the larger size
+      enables a more productive use.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Plottage is the increase in total value when the combined parcel is worth more than the
+      sum of its parts, usually because the larger tract supports a more productive use.
+    related_terms: []
+    items:
+      - NAT-PV-III-0507
+      - NAT-PV-III-0810
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: police power
     definition: Police power is the government's authority to regulate private property for public
       health, safety, morals, and general welfare (e.g., zoning, building codes) without paying
@@ -786,6 +1215,21 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0008
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: price
+    definition: Price is the amount of money exchanged in a transaction that represents normal
+      consideration, assuming the parties are motivated, informed, acting prudently, allowed
+      reasonable exposure, paying in cash or its equivalent, and the transaction is free of special
+      financing or concessions.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: the price represents normal consideration unaffected by special or creative financing
+      or sales concessions granted by anyone associated with the sale.
+    related_terms: []
+    items:
+      - NAT-PV-III-0224
+      - NAT-PV-III-0500
+      - NAT-PV-VIII-0669
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: priority
@@ -814,6 +1258,31 @@ entries:
       - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: quitclaim deed
+    definition: A quitclaim deed transfers only the interest the grantor actually holds in the property,
+      without any warranties or guarantees about the quality of that interest.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A quitclaim deed conveys whatever interest the grantor has, if any, with no warranties
+      and no implication that the grantor has any interest.
+    related_terms: []
+    items:
+      - NAT-PV-II-0487
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: real property
+    definition: Real property means land and any permanent structures or improvements attached to it,
+      which is the subject matter of real estate license activities such as listing, selling,
+      buying, leasing, and managing.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage: listing, selling, buying, exchanging,
+      leasing, renting, managing, negotiating, advertising, and offering to do any of these with
+      respect to real property."
+    related_terms: []
+    items:
+      - NAT-PV-I-0461
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reasonable doubt
     definition: Reasonable doubt is a doubt that would cause a reasonably prudent, well-informed buyer
       to reject the title as unmarketable.
@@ -824,6 +1293,33 @@ entries:
     items:
       - NAT-PV-II-0476
       - NAT-PV-II-0741
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: redemption
+    definition: Redemption is the equitable right to stop a foreclosure or tax sale by paying the full
+      debt owed, or, after a sale, the statutory right to reclaim the property by paying the amount
+      due within a set period.
+    source: REP Ref. Financing & Closing
+    quoted_text: "The equitable right of redemption exists everywhere: before the sale the borrower (or
+      a junior lien holder) may stop the foreclosure by paying the full accelerated debt plus
+      costs."
+    related_terms: []
+    items:
+      - NAT-PV-II-0765
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: regulation b
+    definition: Regulation B (the ECOA valuation rule) mandates that a creditor give an applicant a copy
+      of any appraisal or written valuation for a first-lien loan secured by a dwelling promptly
+      upon completion or three business days before consummation, whichever is earlier, and inform
+      the applicant of that right within three business days of applying.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: the ECOA valuation rule (Regulation B) requires a creditor to give an applicant a copy
+      of any appraisal or written valuation developed for a first-lien loan secured by a dwelling
+      promptly upon completion or three business days before consummation, whichever is earlier
+    related_terms: []
+    items:
+      - NAT-PV-III-0241
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: right of survivorship
@@ -848,6 +1344,40 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0727
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sale
+    definition: A sale is a contract for the transfer of real property that binds the parties and,
+      unlike an agency relationship, usually binds the heirs of the parties.
+    source: REP Ref. Agency
+    quoted_text: Note the contrast with contracts of sale, which usually bind heirs.
+    related_terms: []
+    items:
+      - NAT-PV-II-0723
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sales comparison
+    definition: The sales comparison approach values a property by adjusting comparable sales to match
+      the subject property, adding value for features the subject has that the comparable lacks and
+      subtracting value for features the comparable has that the subject lacks.
+    source: REP Ref. Real Estate Math
+    quoted_text: Adjust the comparable, never the subject, so that the comparable becomes like the
+      subject. If the comparable has a feature the subject lacks (comparable superior), subtract the
+      feature's value from the comparable's price.
+    related_terms: []
+    items:
+      - NAT-PV-III-0491
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: scarcity
+    definition: Scarcity means the supply of land in a given location is finite, so scarcity in a
+      desirable area pushes value up.
+    source: REP Ref. Property & Land Use
+    quoted_text: "Scarcity: the supply of land in a given location is finite, so scarcity in a desirable
+      area pushes value up."
+    related_terms: []
+    items:
+      - NAT-PV-III-0225
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: seisin
@@ -889,6 +1419,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0431
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: short sale
+    definition: A short sale is a voluntary sale by a distressed owner for less than the mortgage
+      balance, with the lender's consent to release its lien, and the owner conveys the property by
+      an ordinary deed.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A short sale is a sale by a distressed owner for less than the mortgage balance, with
+      the lender's consent to release its lien for the reduced payoff.
+    related_terms: []
+    items:
+      - NAT-PV-II-0764
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: special warranty deed
@@ -974,6 +1516,18 @@ entries:
       - NAT-PV-I-0688
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: substitution
+    definition: The principle of substitution holds that a prudent buyer will pay no more for a property
+      than the cost of acquiring an equally desirable substitute, and it underlies the sales
+      comparison, cost, and income approaches to value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: A prudent buyer will pay no more for a property than the cost of acquiring an equally
+      desirable substitute.
+    related_terms: []
+    items:
+      - NAT-PV-III-0488
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: taking
     definition: A taking is a government action that deprives the owner of all economically viable use
       of property, which may be challenged as a regulatory taking requiring compensation.
@@ -982,6 +1536,19 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0464
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tax certificate
+    definition: A tax certificate is sold to an investor who is repaid with interest if the owner
+      redeems the property within the statutory period, and may receive a tax deed if the owner does
+      not redeem.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: In some states a tax certificate is sold to an investor who is repaid with interest if
+      the owner redeems within the statutory period and who may obtain a tax deed if the owner does
+      not
+    related_terms: []
+    items:
+      - NAT-PV-II-0765
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: tax rate
@@ -993,6 +1560,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0692
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: taxation
+    definition: Taxation is one of the four government powers that can affect private ownership,
+      alongside police power, eminent domain, and escheat.
+    source: REP Ref. Property & Land Use
+    quoted_text: "Private ownership is always subject to four government powers, remembered by the
+      letters P-E-T-E: police power, eminent domain, taxation, and escheat."
+    related_terms: []
+    items:
+      - NAT-PV-III-0501
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: tenancy in common
@@ -1017,6 +1595,29 @@ entries:
       - NAT-PV-I-0679
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: test
+    definition: One of the criteria evaluated in highest and best use analysis, such as being legally
+      permissible, physically possible, financially feasible, or maximally productive.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: "The four tests are applied in that order: (1) legally permissible under zoning,
+      private restrictions, and environmental law;"
+    related_terms: []
+    items:
+      - NAT-PV-III-0233
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: title insurance
+    definition: Title insurance is a policy that protects the insured against losses from title defects
+      such as undisclosed heirs, forgeries, or recording errors that are not revealed by a title
+      search.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: They give no protection against forgeries, undisclosed heirs, or recording errors,
+      which is what title insurance covers.
+    related_terms: []
+    items:
+      - NAT-PV-II-0485
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: trade fixture
     definition: A trade fixture is an item a commercial tenant installs in leased premises for business
       use, which remains the tenant’s personal property and can be removed.
@@ -1028,6 +1629,29 @@ entries:
       - NAT-PV-I-0007
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: transferability
+    definition: Transferability is the ability to transfer an asset from one party to another; it is one
+      of the four characteristics (DUST) required for an item to have economic value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: "For anything to have economic value it must exhibit four characteristics, remembered
+      as DUST: Demand, Utility, Scarcity, and Transferability."
+    related_terms: []
+    items:
+      - NAT-PV-III-0225
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: undisclosed heirs
+    definition: Undisclosed heirs are individuals who have a legal claim to property through inheritance
+      but whose interest is not reflected in public records, making them undiscoverable by a title
+      search.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: They give no protection against forgeries, undisclosed heirs, or recording errors,
+      which is what title insurance covers.
+    related_terms: []
+    items:
+      - NAT-PV-II-0485
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: uniqueness
     definition: Uniqueness means that each parcel of land is distinct and not identical to any other parcel.
     source: REP Ref. Property & Land Use
@@ -1038,6 +1662,34 @@ entries:
       - NAT-PV-I-0004
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: uspap
+    definition: USPAP stands for the Uniform Standards of Professional Appraisal Practice, which are
+      written by the Appraisal Standards Board of The Appraisal Foundation.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: whose Appraisal Standards Board (ASB) writes USPAP.
+    related_terms: []
+    items:
+      - NAT-PV-III-0036
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: value
+    definition: Value is the most probable price a property would bring in a competitive and open market
+      where buyer and seller are motivated, well informed, acting prudently, allowed reasonable
+      exposure, and the transaction is for cash or its equivalent without special financing or
+      concessions.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: '"Most probable price," not "highest price," is the phrase candidates confuse'
+    related_terms: []
+    items:
+      - NAT-PV-III-0224
+      - NAT-PV-III-0488
+      - NAT-PV-III-0500
+      - NAT-PV-III-0529
+      - NAT-PV-III-0782
+      - NAT-PV-VIII-0182
+      - NAT-PV-VIII-0660
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: variance
     definition: A variance permits deviation from a specific zoning requirement because strict
       application would impose unnecessary hardship unique to the property, not created by the
@@ -1061,6 +1713,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0444
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: warranty
+    definition: In a deed, the warranty covenant is the grantor's promise to defend the grantee's title
+      against any lawful claims.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: against encumbrances (none other than those stated), quiet enjoyment (the grantee will
+      not be disturbed by a superior claim), warranty (the grantor will defend the title
+    related_terms: []
+    items:
+      - NAT-PV-II-0487
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: warranty deed

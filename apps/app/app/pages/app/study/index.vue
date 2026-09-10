@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { pushToast } from "~/components/Toast.vue";
 /**
- * Progress: readiness per portion, the review pipeline and section-by-section coverage.
+ * Practice: the hub. Readiness per portion, the review pipeline, and section-by-section coverage
+ * you can practise directly. Choosing a portion or a section here is what makes a set, and the
+ * runner at /app/practice only answers questions.
  *
  * This is a reading screen, not a hub. The study loop schedules itself, so the only thing you can
  * start from here is a focused batch on one weak section — which then drops you into the loop.
  */
-useHead({ title: "Progress" });
+useHead({ title: "Practice" });
 const studyState = useStudyState();
 const study = useStudy();
 const readiness = useReadiness();
 const coverage = useCoverage();
 const content = useContent();
 const events = useEvents();
+const practiceScope = usePracticeScope();
 const free = useFreeTier();
 const entitlement = useEntitlement();
 
@@ -64,6 +67,8 @@ async function start(kind: "practice" | "drill", node?: string) {
       else pushToast("No questions available for this section yet.", "info");
       return;
     }
+    // remember what this set was, so "Keep going" produces another random set of the same thing
+    practiceScope.set({ kind, banks: [bank.value], node: node ?? null, label: node ? rows.value.find((x) => x.node === node)?.label ?? node : (portion.value === "state" ? "your state portion" : "the national portion") });
     events.track("session_start", { kind, bank: bank.value, node: node ?? null });
     await navigateTo("/app/practice");
   } finally { busy.value = null; }
