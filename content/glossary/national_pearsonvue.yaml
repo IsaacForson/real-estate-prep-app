@@ -1,6 +1,27 @@
 bank: national_pearsonvue
 generated_on: 2026-09-10
 entries:
+  - term: acceptance
+    definition: Acceptance is the agreement to an offer, and together with the offer shows mutual assent.
+    source: REP Ref. Contracts
+    quoted_text: "A valid contract requires: (1) competent parties; (2) mutual assent, shown by an offer
+      and an acceptance; (3) consideration;"
+    related_terms: []
+    items:
+      - NAT-PV-IV-0821
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: accessible arrangements
+    definition: Accessible arrangements are alternative ways of offering examinations or courses that
+      accommodate persons with disabilities when the usual format or location is not accessible.
+    source: 42 U.S.C. §§ 12181–12189 (ADA Title III)
+    quoted_text: offer such examinations or courses in a place and manner accessible to persons with
+      disabilities or offer alternative accessible arrangements
+    related_terms: []
+    items:
+      - NAT-PV-V-0350
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: accrued
     definition: Accrued depreciation is the amount of depreciation that has accumulated over time,
       calculated as annual depreciation multiplied by the property's effective age.
@@ -36,6 +57,18 @@ entries:
       - NAT-PV-VIII-0402
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: addendum
+    definition: An addendum is a separate document that becomes part of the original contract when it is
+      signed, used to add or change terms without rewriting the whole agreement.
+    source: REP Ref. Contracts
+    quoted_text: An addendum is a document attached to and made part of the contract at the time it is
+      formed (or at the time of a counteroffer), adding or modifying terms.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0056
+      - NAT-PV-IV-0249
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: adjustment
     definition: "In the sales comparison approach, adjustments are made by modifying the comparable’s
       price toward the subject: subtract value if the comparable is superior, add value if it is
@@ -46,6 +79,21 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0491
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: advertising
+    definition: Advertising is any representation to the public—through business cards, stationery,
+      brochures, signs, rate lists, or other promotional items—that indicates one can provide real
+      estate services.
+    source: 15 U.S.C. §§ 1601–1667f (TILA)
+    quoted_text: includes any person who represents to the public, through advertising or other means of
+      communicating or providing information (including the use of business cards, stationery,
+      brochures, signs, rate lists, or other promotional items), that such person can or will
+      provide any of the services or perform any of the activities described in subparagraph (A);
+    related_terms: []
+    items:
+      - NAT-PV-V-0086
+      - NAT-PV-V-0590
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: agent
@@ -61,6 +109,31 @@ entries:
     status: approved
     model: groq/openai/gpt-oss-120b
     reviewer: qa-lead-model
+  - term: aggrieved person
+    definition: An aggrieved person is someone who claims to have been injured by a discriminatory
+      housing practice or believes they will be injured by one that is about to occur.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (i) "Aggrieved person" includes any person who— (1) claims to have been injured by a
+      discriminatory housing practice; or (2) believes that such person will be injured by a
+      discriminatory housing practice that is about to occur.
+    related_terms: []
+    items:
+      - NAT-PV-V-0101
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: amendment
+    definition: An amendment is a modification made to an existing contract after it has been signed,
+      requiring mutual agreement of the parties and usually a written signature.
+    source: REP Ref. Contracts
+    quoted_text: An amendment is a change agreed to by both parties after the contract has been formed —
+      extending the closing date, reducing the price after inspection, changing the earnest money
+      holder.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0056
+      - NAT-PV-IV-0249
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: annexation
     definition: Annexation is the process by which personal property becomes real property by being
       attached to land or a building, such as installing a furnace or planting an orchard.
@@ -129,6 +202,20 @@ entries:
       - NAT-PV-III-0039
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: approach
+    definition: An approach is a valuation method based on the principle of substitution, such as the
+      sales comparison, cost, or income approach, which estimates what a prudent buyer would pay for
+      a comparable substitute.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: Substitution underlies the sales comparison approach (comparable sales set the
+      ceiling), the cost approach (a buyer will not pay more than the cost to build an equivalent),
+      and the income approach (an investor will not pay more than the price of another investment
+      yielding the same return).
+    related_terms: []
+    items:
+      - NAT-PV-III-0517
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appurtenant
     definition: An appurtenant easement is a right that benefits a specific parcel of land and runs with
       the land, passing automatically with ownership.
@@ -177,6 +264,32 @@ entries:
       - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: assessment ratio
+    definition: The assessment ratio is the percentage of a property's market value that is used to
+      calculate its assessed value for property tax purposes.
+    source: REP Ref. Real Estate Math
+    quoted_text: Assessed value = market value × assessment ratio (100% in some jurisdictions, a
+      fraction in others).
+    related_terms: []
+    items:
+      - NAT-PV-III-0541
+      - NAT-PV-III-0800
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: assignment
+    definition: An assignment is the transfer of a party's rights under a contract to another person,
+      who then steps into the original party's position, while the original party may remain
+      secondarily liable unless released.
+    source: REP Ref. Contracts
+    quoted_text: Unless the contract prohibits it, a party may assign its rights under a purchase
+      agreement to a third party.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0055
+      - NAT-PV-IV-0057
+      - NAT-PV-IV-0247
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: attachment
     definition: Attachment is the act of fastening an item to land or a building, which can convert
       personal property into a fixture when done with the intent that the item remain.
@@ -189,6 +302,31 @@ entries:
       - NAT-PV-I-0437
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: attorney
+    definition: An attorney is a legal professional who prepares contract forms and can give legal
+      advice; licensees may only fill in factual details on attorney‑prepared forms and must not
+      draft original language or provide legal advice.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Licensees may complete standardized, pre-printed or attorney-prepared contract forms by
+      filling in the factual terms the parties have negotiated — names, price, dates, contingencies
+      chosen from the form's menu — because that is incidental to the brokerage service.
+    related_terms: []
+    items:
+      - NAT-PV-V-0311
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: authorization
+    definition: Authorization is the permission given by a principal to an agent to act on the
+      principal's behalf, such as allowing a subagent to assist the listing broker.
+    source: REP Ref. Agency
+    quoted_text: "A **subagent** is an agent of an agent: a licensee who, with the principal's
+      authorization, assists the listing broker in serving the seller and thereby owes the seller
+      fiduciary duties"
+    related_terms: []
+    items:
+      - NAT-PV-V-0309
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: bargain
     definition: A bargain and sale deed implies that the grantor holds title and possession but does not
       include any express warranties against liens, encumbrances, or defects.
@@ -198,6 +336,40 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0723
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: best
+    definition: Best means most favorable or advantageous, as in the best terms or best use.
+    source: REP Ref. Agency
+    quoted_text: try to obtain the highest price and best terms for the seller
+    related_terms: []
+    items:
+      - NAT-PV-III-0233
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker
+    definition: In real estate brokerage, the broker is the agent who owes fiduciary duties to the
+      client and for whom salespersons and associate brokers act.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - NAT-PV-V-0072
+      - NAT-PV-V-0581
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker supervision
+    definition: Broker supervision is the duty of the broker (or a designated managing broker) to
+      oversee the brokerage activities of every licensee and every unlicensed person working in the
+      firm, including reviewing contracts, listings, and advertising.
+    source: REP Ref. Brokerage Practice
+    quoted_text: State license laws make the broker (or a designated managing broker) responsible for
+      supervising the brokerage activities of every licensee and every unlicensed person working in
+      the firm.
+    related_terms: []
+    items:
+      - NAT-PV-V-0061
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: calculation
@@ -223,6 +395,32 @@ entries:
       - NAT-PV-VIII-0182
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: care
+    definition: Care means acting with the competence expected of a licensed professional, which
+      includes recognizing when a client needs another professional and verifying facts within your
+      expertise before sharing them.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Reasonable care (REP Ref. Agency § 5.7) includes recognizing when a client needs
+      another professional.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0850
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: certified agency
+    definition: A certified agency is a state or local public agency that has been officially certified
+      by the Secretary of Housing and Urban Development to handle Fair Housing Act complaints within
+      its jurisdiction.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (A) within the jurisdiction of a State or local public agency; and (B) as to which such
+      agency has been certified by the Secretary under this subsection; the Secretary shall refer
+      such complaint to that certified agency before taking any action with respect to such
+      complaint.
+    related_terms: []
+    items:
+      - NAT-PV-V-0341
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: certified residential appraiser
     definition: A certified residential appraiser is authorized to appraise one-to-four-unit residential
       properties of any value or complexity.
@@ -246,6 +444,18 @@ entries:
       - NAT-PV-II-0201
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: client funds
+    definition: The principal's money and property (earnest money, rents, security deposits, keys,
+      documents) must be kept separate from the agent's own and accounted for.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits,
+    related_terms: []
+    items:
+      - NAT-PV-IV-0553
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: coercion
     definition: Coercion, under the Fair Housing Act, is the unlawful act of coercing, intimidating,
       threatening, or interfering with a person’s exercise of protected rights.
@@ -255,6 +465,20 @@ entries:
     items:
       - NAT-PV-III-0039
       - NAT-PV-III-0051
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: commingling
+    definition: Mixing client funds with brokerage operating funds is commingling; spending client funds
+      for any unauthorized purpose is conversion.
+    source: REP Ref. Agency
+    quoted_text: Mixing client funds with brokerage operating funds is **commingling**; spending client
+      funds for any unauthorized purpose is **conversion**
+    related_terms: []
+    items:
+      - NAT-PV-IV-0553
+      - NAT-PV-V-0062
+      - NAT-PV-V-0067
+      - NAT-PV-V-0574
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
@@ -270,6 +494,16 @@ entries:
     reviewer: qa-lead-model
     reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
       commission and split as brokerage compensation"
+  - term: comparison
+    definition: Comparison refers to adjusting a comparable sale’s price to account for differences with
+      the subject property, making the comparable more like the subject.
+    source: REP Ref. Real Estate Math
+    quoted_text: Adjust the comparable, never the subject, so that the comparable becomes like the subject.
+    related_terms: []
+    items:
+      - NAT-PV-III-0517
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: compensation
     definition: Compensation is payment received for real estate brokerage services, such as commissions
       or referral fees.
@@ -281,6 +515,117 @@ entries:
       - NAT-PV-IV-0833
       - NAT-PV-V-0075
       - NAT-PV-V-0323
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: complaint
+    definition: A complaint is a formal legal document that initiates a lawsuit, in which the plaintiff
+      alleges wrongdoing and seeks relief.
+    source: REP Ref. Financing & Closing
+    quoted_text: "Judicial foreclosure is a lawsuit: the lender files a complaint, everyone with a
+      recorded interest is named and served"
+    related_terms: []
+    items:
+      - NAT-PV-V-0101
+      - NAT-PV-V-0103
+      - NAT-PV-V-0341
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: component
+    definition: A component is any part or feature of a property whose value is determined by how much
+      it adds to or subtracts from the property's overall value.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+      value of the whole, not by what it cost.
+    related_terms: []
+    items:
+      - NAT-PV-III-0528
+      - NAT-PV-III-0529
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conciliation
+    definition: Conciliation is the informal negotiation process involving the aggrieved person, the
+      respondent, and the Secretary to resolve issues raised by a Fair Housing Act complaint or its
+      investigation.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (l) "Conciliation" means the attempted resolution of issues raised by a complaint, or
+      by the investigation of such complaint, through infor mal negotiations involving the aggrieved
+      person, the respondent, and the Secretary.
+    related_terms: []
+    items:
+      - NAT-PV-V-0103
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conduct
+    definition: Conduct refers to the parties' actions that can create an implied contract when their
+      behavior shows agreement without explicit words.
+    source: REP Ref. Contracts
+    quoted_text: An implied contract (sometimes called implied-in-fact) arises from the conduct of the
+      parties rather than from stated words.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0562
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: confidentiality
+    definition: Confidentiality is the duty to keep certain information obtained during an agency
+      relationship private.
+    source: REP Ref. Agency
+    quoted_text: A non-agent owes no fiduciary loyalty but is still bound by statutory duties that
+      commonly include honesty, disclosure of known material facts about the property, accounting
+      for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0550
+      - NAT-PV-IV-0832
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: consideration
+    definition: Consideration is something of legal value exchanged between parties to a contract, such
+      as a promise to pay money or perform an act, which makes the agreement enforceable.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0053
+      - NAT-PV-IV-0805
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contingency
+    definition: A contingency is a contract clause that makes the sale dependent on a specified
+      condition (e.g., a partner's approval); licensees should use an approved addendum or refer an
+      attorney to draft such language.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Example: A buyer asks the licensee to add a clause making the sale contingent on the
+      buyer's partner's approval of the property 'in her sole discretion.'"
+    related_terms: []
+    items:
+      - NAT-PV-V-0312
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contract
+    definition: A contract is a legally binding agreement, such as a real estate purchase agreement,
+      option, land contract, or lease.
+    source: REP Ref. Contracts
+    quoted_text: "Reference note: contract law as applied to real estate purchase agreements, options,
+      land contracts, and leases."
+    related_terms: []
+    items:
+      - NAT-PV-IV-0537
+      - NAT-PV-V-0310
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contribution
+    definition: Contribution measures how much a property component adds to or subtracts from the
+      property's overall value, regardless of its cost.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+      value of the whole, not by what it cost.
+    related_terms: []
+    items:
+      - NAT-PV-III-0526
+      - NAT-PV-III-0528
+      - NAT-PV-III-0529
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: conversion
@@ -305,6 +650,17 @@ entries:
     items:
       - NAT-PV-II-0474
       - NAT-PV-II-0480
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: cost
+    definition: Cost refers to an expense that can be reduced or avoided, such as the cost of
+      maintenance or foreclosure.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Reduces long-run cost.
+    related_terms: []
+    items:
+      - NAT-PV-III-0224
+      - NAT-PV-III-0500
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: cost approach
@@ -351,6 +707,16 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0037
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: death
+    definition: Death of either the principal or the agent terminates an agency relationship by
+      operation of law.
+    source: REP Ref. Agency
+    quoted_text: "- Death or incapacity of either the principal or the agent (broker)."
+    related_terms: []
+    items:
+      - NAT-PV-IV-0826
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deed
@@ -435,6 +801,30 @@ entries:
       - NAT-PV-VIII-0402
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated agency
+    definition: Designated agency is a practice where a brokerage assigns different agents to represent
+      the buyer and seller in the same transaction, allowing the firm to avoid dual agency when
+      state law permits.
+    source: REP Ref. Agency
+    quoted_text: Unless the state provides for designated agency, the brokerage is now a dual agent and
+      must obtain written consent from both Sam and Tia before proceeding, and must stop advocating
+      on pric
+    related_terms: []
+    items:
+      - NAT-PV-IV-0551
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: diligence
+    definition: Diligence refers to the duty of reasonable care and diligence, which is one of the
+      common-law fiduciary duties owed to a client.
+    source: REP Ref. Agency
+    quoted_text: The common-law fiduciary duties are usually listed as Obedience, Loyalty, Disclosure,
+      Confidentiality, Accounting, and Reasonable care and diligence.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0850
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: direct capitalization
     definition: Direct capitalization estimates property value by dividing net operating income by the
       capitalization rate.
@@ -443,6 +833,66 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0041
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disbursement
+    definition: A closing disbursement is the distribution of funds at settlement; the commission
+      portion becomes the broker's money only when it is earned and paid out under the closing
+      statement.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The commission portion of a closing disbursement becomes the broker's money only when
+      it is earned and disbursed to the broker under the closing statement
+    related_terms: []
+    items:
+      - NAT-PV-V-0321
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disclosure
+    definition: Disclosure is the duty to reveal important facts, such as compensation or agency
+      relationships, so clients can give informed consent.
+    source: REP Ref. Agency
+    quoted_text: The exact duties of the broker and the disclosure and consent required vary by state.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0552
+      - NAT-PV-IV-0825
+      - NAT-PV-IV-0833
+      - NAT-PV-IV-0851
+      - NAT-PV-VI-0630
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: drafting
+    definition: Drafting refers to creating original contract language from scratch, which a licensed
+      real estate agent may not do because it constitutes the unauthorized practice of law.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Licensees may **not** draft original contract language, create deeds, mortgages, or
+      leases from scratch (except where a standard lease form is expressly permitted).
+    related_terms: []
+    items:
+      - NAT-PV-V-0310
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: dual agency
+    definition: Dual agency occurs when a brokerage represents both the buyer and the seller in the same
+      transaction.
+    source: REP Ref. Agency
+    quoted_text: A single brokerage (and, in the classic form, a single licensee) represents both the
+      buyer and the seller in the same transaction.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0551
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: earnest money
+    definition: Earnest money is a deposit made by a buyer to demonstrate good faith in a real estate
+      purchase agreement, which the agent must keep separate from personal funds and account for.
+    source: REP Ref. Agency
+    quoted_text: earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0053
+      - NAT-PV-IV-0805
+      - NAT-PV-V-0062
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: easement
@@ -499,6 +949,30 @@ entries:
       - NAT-PV-VIII-0172
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: effective gross income
+    definition: Effective gross income is the potential gross income minus vacancy and collection loss,
+      plus any additional income such as from laundry or parking.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "**effective gross income** (potential gross income minus vacancy and collection loss,
+      plus other income such as laundry and parking);"
+    related_terms: []
+    items:
+      - NAT-PV-III-0807
+      - NAT-PV-VIII-0184
+      - NAT-PV-VIII-0420
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: electronic signature
+    definition: An electronic signature is a signature in electronic form that has the same legal effect
+      as a handwritten signature when a law requires a signature.
+    source: REP Ref. Contracts
+    quoted_text: Federal law provides that a signature, contract, or other record relating to a
+      transaction may not be denied legal effect solely because it is in electronic form
+    related_terms: []
+    items:
+      - NAT-PV-IV-0537
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: emblements
     definition: Emblements are annual crops produced by cultivation that are treated as the personal
       property of the person who planted them, allowing a tenant to harvest them even after the
@@ -509,6 +983,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0679
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: emergency maintenance
+    definition: Emergency maintenance refers to repairs that must be performed immediately because they
+      pose a danger or could cause ongoing damage, such as a gas leak, burst pipe, or lack of heat
+      in winter.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "- **Emergency maintenance**: repairs that cannot wait because of danger or ongoing
+      damage — a burst pipe, no heat in winter, a gas smell."
+    related_terms: []
+    items:
+      - NAT-PV-V-0370
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: eminent domain
@@ -560,6 +1046,51 @@ entries:
       - NAT-PV-II-0010
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: examinations
+    definition: Examinations are the national portion of the salesperson and broker licensing exams.
+    source: REP Ref. Financing & Closing
+    quoted_text: Authored reference note for the national portion of the salesperson and broker examinations
+    related_terms: []
+    items:
+      - NAT-PV-V-0350
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exclusive agency listing
+    definition: An exclusive agency listing is an agreement where the seller appoints one broker as the
+      exclusive agent but retains the right to sell the property personally without owing a
+      commission.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The seller appoints **one** broker as the exclusive agent for the term, and owes that
+      broker a commission if the property is sold by the broker *or by any other broker*; but the
+      seller **retains the right to sell the property personally** without paying a commission.
+    related_terms: []
+    items:
+      - NAT-PV-V-0073
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exclusive right to sell
+    definition: An exclusive right to sell listing is an agreement where the seller appoints one broker
+      as the exclusive agent and agrees to pay that broker a commission if the property sells during
+      the term, regardless of who finds the buyer—even if the seller finds the buyer themselves.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The seller appoints one broker and agrees to pay the commission if the property sells
+      during the term regardless of who procures the buyer — including the seller.
+    related_terms: []
+    items:
+      - NAT-PV-V-0074
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: execution
+    definition: Execution refers to the act of signing a contract, making it executed in the everyday
+      sense, though legally it may remain executory until performance is complete.
+    source: REP Ref. Contracts
+    quoted_text: "The word 'executed' is also used loosely to mean 'signed,' which causes confusion: a
+      contract that has merely been signed is executed"
+    related_terms: []
+    items:
+      - NAT-PV-IV-0249
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: exemption
     definition: An exemption reduces the assessed value of property for tax purposes, such as a
       homestead exemption that subtracts a qualifying amount from the assessed value.
@@ -573,6 +1104,17 @@ entries:
       - NAT-PV-VII-0090
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: expertise
+    definition: Expertise refers to the agent's area of professional knowledge and skill, such that they
+      should only verify and share facts within that expertise and seek outside help when a client
+      needs services beyond it.
+    source: REP Ref. Agency
+    quoted_text: verify facts within the agent's expertise before repeating them.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0850
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: external obsolescence
     definition: External obsolescence is a loss in value due to factors outside the property's
       boundaries, such as a nearby landfill or freeway, and it cannot be cured by the owner.
@@ -583,6 +1125,29 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0042
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fact
+    definition: A fact is any information the licensee knows or should know that could affect a party's
+      decisions in the transaction.
+    source: REP Ref. Agency
+    quoted_text: The agent must tell the principal every fact the agent knows, or should know, that
+      could affect the principal's decisions in the transaction.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0851
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: familial status
+    definition: Familial status refers to a household that includes one or more individuals under 18
+      years old living with a parent or legal custodian, or with the custodian's designee who has
+      written permission.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: '"Familial status" means one or more individuals (who have not attained the age of 18
+      years) being domiciled with—'
+    related_terms: []
+    items:
+      - NAT-PV-V-0100
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: federal tax lien
@@ -632,6 +1197,30 @@ entries:
       - NAT-PV-II-0008
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fiduciary duty
+    definition: Fiduciary duty is the obligation that is breached when an agent engages in undisclosed
+      dual agency, which can result in loss of commission, rescission of the transaction, and
+      discipline.
+    source: REP Ref. Agency
+    quoted_text: Undisclosed dual agency — representing both sides without both parties' knowledge and
+      consent — is a serious license law violation and a breach of fiduciary duty that can result in
+      loss of commission, rescission of the transaction, and discipline.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0550
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: financial condition
+    definition: Financial condition refers to a party's financial situation, such as income, debts, or
+      ability to pay, which must be kept confidential under the duty of confidentiality unless
+      disclosed with permission or required by law.
+    source: REP Ref. Agency
+    quoted_text: either party's financial condition
+    related_terms: []
+    items:
+      - NAT-PV-IV-0832
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: firrea
     definition: FIRREA is the federal law that created a two-layer appraisal oversight system,
       establishing the Appraisal Subcommittee (ASC) to oversee appraisal standards.
@@ -679,6 +1268,17 @@ entries:
       - NAT-PV-II-0204
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: formation
+    definition: Formation refers to the process of creating a contract, i.e., when parties agree to its
+      essential elements.
+    source: REP Ref. Contracts
+    quoted_text: Rescission is available for material breach, fraud, misrepresentation, mutual mistake,
+      and similar defects in formation.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0249
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: frontage
     definition: Frontage is the width of a lot measured along the street, used together with depth to
       determine the lot's area.
@@ -689,6 +1289,17 @@ entries:
       - NAT-PV-I-0716
       - NAT-PV-VIII-0136
       - NAT-PV-VIII-0402
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: gas smell
+    definition: A gas smell indicates a dangerous condition that requires immediate emergency
+      maintenance, such as a leak that cannot wait for routine repair.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "**Emergency maintenance**: repairs that cannot wait because of danger or ongoing
+      damage — a burst pipe, no heat in winter, a gas smell."
+    related_terms: []
+    items:
+      - NAT-PV-V-0370
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: general
@@ -750,6 +1361,30 @@ entries:
       - NAT-PV-II-0480
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: grm
+    definition: The gross rent multiplier (GRM) is a figure calculated by dividing a property's sale
+      price by its monthly gross rent, used to estimate the value of small residential rental
+      properties.
+    source: REP Ref. Real Estate Math
+    quoted_text: GRM = price ÷ monthly gross rent (used for one- to four-unit residences).
+    related_terms: []
+    items:
+      - NAT-PV-III-0782
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: gross rent multiplier
+    definition: The gross rent multiplier (GRM) is calculated by dividing a property's sale price by its
+      monthly gross rent, and the property's value can be found by multiplying the monthly rent by
+      the GRM.
+    source: REP Ref. Real Estate Math
+    quoted_text: GRM = price ÷ monthly gross rent (used for one- to four-unit residences).
+    related_terms: []
+    items:
+      - NAT-PV-III-0521
+      - NAT-PV-III-0523
+      - NAT-PV-VIII-0183
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: habendum clause
     definition: The habendum clause in a deed states what interest or estate is being transferred to the
       grantee, describing the extent of ownership granted.
@@ -758,6 +1393,21 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0017
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: handicap
+    definition: Under the Fair Housing Act, a handicap is a physical or mental impairment that
+      substantially limits one or more major life activities, a record of such an impairment, or
+      being regarded as having such an impairment, but it does not include current illegal use of or
+      addiction to a controlled substance.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (h) "Handicap" means, with respect to a person— (1) a physical or mental impairment
+      which substantially limits one or more of such person's major life activities, (2) a record of
+      having such an impairment, or (3) being regarded as having such an impairment
+    related_terms: []
+    items:
+      - NAT-PV-V-0084
+      - NAT-PV-V-0085
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: hardship
@@ -780,6 +1430,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0453
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: highest
+    definition: Highest means the greatest amount or most profitable, as in the highest offer or highest
+      and best use.
+    source: REP Ref. Contracts
+    quoted_text: A buyer's licensee should explain that a seller is under no obligation to accept the
+      highest offer or any offer
+    related_terms: []
+    items:
+      - NAT-PV-III-0233
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: highest and best use
@@ -819,6 +1480,31 @@ entries:
       - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: housing for older persons
+    definition: Housing for older persons is either housing provided under a state or federal program
+      that assists elderly persons, or housing intended for and solely occupied by persons aged 62
+      or older.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (A) provided under any State or Federal program that the Secretary determines is
+      specifically designed and operated to assist elderly persons (as defined in the State or
+      Federal program); or (B) intended for, and solely occupied by, persons 62 y
+    related_terms: []
+    items:
+      - NAT-PV-V-0100
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: implied agency
+    definition: Implied agency arises when a licensee's conduct leads a person to reasonably believe the
+      licensee is representing them, even without a written or spoken agreement.
+    source: REP Ref. Agency
+    quoted_text: Agency can be created by the conduct of the parties, without a written or spoken
+      agreement, when the licensee acts as though representing a person and that person reasonably
+      relies on the licensee's representation.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0552
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: income approach
     definition: The income approach estimates a property’s value by converting its income into value,
       most commonly using direct capitalization where value equals net operating income divided by
@@ -830,6 +1516,21 @@ entries:
     items:
       - NAT-PV-III-0489
       - NAT-PV-III-0499
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: independent contractor
+    definition: Under the federal statutory safe harbor, an independent contractor is a licensed real
+      estate agent treated as a statutory non-employee for federal tax purposes when the three
+      conditions are met.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Federal tax law contains a special rule treating a licensed real estate agent as a
+      statutory non-employee (independent contractor) for federal income and employment tax purposes
+      if three conditions are all met:"
+    related_terms: []
+    items:
+      - NAT-PV-V-0060
+      - NAT-PV-V-0323
+      - NAT-PV-V-0576
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: intent
@@ -856,6 +1557,17 @@ entries:
       - NAT-PV-II-0487
       - NAT-PV-VIII-0406
       - NAT-PV-VIII-0408
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: investigation
+    definition: An investigation is a systematic process of gathering facts and examining details to
+      inform a decision or advice.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Due diligence is the investigation a reasonable licensee performs before making a
+      representation or advising a client: measuring or obtaining the recorded square footage"
+    related_terms: []
+    items:
+      - NAT-PV-V-0103
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: involuntary
@@ -905,6 +1617,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0687
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: legal advice
+    definition: Legal advice is guidance on the meaning or effect of a document or how a law applies to
+      a client's situation, which a licensed real estate agent may not provide.
+    source: REP Ref. Brokerage Practice
+    quoted_text: give legal advice about the meaning or effect of a document, advise how to take title,
+      or interpret how a law applies to a client's situation.
+    related_terms: []
+    items:
+      - NAT-PV-V-0311
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: legally permissible
@@ -1016,6 +1739,19 @@ entries:
       - NAT-PV-I-0460
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: listing agreement
+    definition: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage that creates seller agency, is a personal service contract with the broker, and
+      remains with the broker if the salesperson leaves the firm.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage, creating seller agency (REP Ref. Agency § 2.2).
+    related_terms: []
+    items:
+      - NAT-PV-V-0072
+      - NAT-PV-V-0581
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: litigation
     definition: Litigation is a lawsuit or legal proceeding that affects title, as indicated by a lis
       pendens notice that records pending litigation affecting title.
@@ -1024,6 +1760,31 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0460
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: loyalty
+    definition: Loyalty is the fiduciary duty of the highest trust and faithfulness that an agent owes
+      to the principal.
+    source: REP Ref. Agency
+    quoted_text: The agent owes the principal fiduciary duties — duties of the highest trust and loyalty
+      — because the agent is handling the principal's affairs.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0825
+      - NAT-PV-IV-0828
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: market value
+    definition: Market value is the most probable price that a property should bring in a competitive
+      and open market, often referred to as fair market value.
+    source: REP Ref. Property & Land Use
+    quoted_text: Just compensation is ordinarily fair market value of what is taken plus, for a partial
+      taking, any loss in value to the remainder (severance damages).
+    related_terms: []
+    items:
+      - NAT-PV-III-0501
+      - NAT-PV-III-0512
+      - NAT-PV-III-0541
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: marketable title
@@ -1038,6 +1799,18 @@ entries:
     items:
       - NAT-PV-II-0476
       - NAT-PV-II-0741
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: material
+    definition: A material fact is a piece of information about the property that is important enough to
+      influence a party's decision and must be disclosed.
+    source: REP Ref. Agency
+    quoted_text: A non-agent owes no fiduciary loyalty but is still bound by statutory duties that
+      commonly include honesty, disclosure of known material facts about the property, accounting
+      for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0851
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: mechanic's lien
@@ -1106,6 +1879,17 @@ entries:
       - NAT-PV-I-0444
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mutual assent
+    definition: Mutual assent is the agreement between parties to a contract, demonstrated by an offer
+      and an acceptance.
+    source: REP Ref. Contracts
+    quoted_text: "A valid contract requires: (1) competent parties; (2) mutual assent, shown by an offer
+      and an acceptance; (3) consideration;"
+    related_terms: []
+    items:
+      - NAT-PV-IV-0821
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: net operating income
     definition: Net operating income is the effective gross income minus operating expenses, before debt
       service and income taxes.
@@ -1142,6 +1926,83 @@ entries:
       - NAT-PV-I-0460
       - NAT-PV-IV-0833
       - NAT-PV-VII-0124
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: novation
+    definition: A novation is the substitution of a new party for an original party in a contract,
+      releasing the original party from liability when the new party assumes the obligation.
+    source: REP Ref. Financing & Closing
+    quoted_text: A buyer who assumes a loan becomes liable and the seller stays secondarily liable
+      unless released (novation)
+    related_terms: []
+    items:
+      - NAT-PV-IV-0055
+      - NAT-PV-IV-0247
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: obedience
+    definition: Obedience is one of the common-law fiduciary duties listed in the OLD CAR mnemonic.
+    source: REP Ref. Agency
+    quoted_text: The common-law fiduciary duties are usually listed as Obedience, Loyalty, Disclosure,
+      Confidentiality, Accounting,
+    related_terms: []
+    items:
+      - NAT-PV-IV-0825
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: offer
+    definition: An offer is a proposal that, together with an acceptance, demonstrates mutual assent.
+    source: REP Ref. Contracts
+    quoted_text: "A valid contract requires: (1) competent parties; (2) mutual assent, shown by an offer
+      and an acceptance; (3) consideration;"
+    related_terms: []
+    items:
+      - NAT-PV-IV-0821
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: office policies
+    definition: Office policies are written guidelines that brokers must establish to supervise licensee
+      activities, including review of contracts, advertising, trust accounts, training, and
+      complaint handling.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Supervision typically requires: written office policies; review of contracts,
+      listings, and advertising; oversight of trust accounts; training on license law, fair housing,
+      and agency; availability to answer questions; and timely handling of complaints."
+    related_terms: []
+    items:
+      - NAT-PV-V-0567
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: option
+    definition: An option gives the holder the right to become the owner of the property after
+      fulfilling obligations, often for nominal consideration.
+    source: 15 U.S.C. §§ 1601–1667f (TILA)
+    quoted_text: has the option to become, the owner of the property upon full compliance with his
+      obligations under the contract.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0534
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: parties
+    definition: Parties are the two or more competent individuals or entities who enter into a contract.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0562
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: party
+    definition: In a contract, a party is any person or entity that is legally bound by the agreement
+      and has rights and obligations under it.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0247
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: passage of title
@@ -1217,6 +2078,16 @@ entries:
       - NAT-PV-II-0008
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: potential gross income
+    definition: Potential gross income is the total rental income a property would generate if all units
+      were leased at market rent for the entire year, with no vacancy or collection loss.
+    source: REP Ref. Brokerage Practice
+    quoted_text: potential gross income (all units rented at market rent for the full period)
+    related_terms: []
+    items:
+      - NAT-PV-III-0807
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: price
     definition: Price is the amount of money exchanged in a transaction that represents normal
       consideration, assuming the parties are motivated, informed, acting prudently, allowed
@@ -1230,6 +2101,20 @@ entries:
       - NAT-PV-III-0224
       - NAT-PV-III-0500
       - NAT-PV-VIII-0669
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: principal
+    definition: The principal is the person for whom an agent is authorized to act in dealings with
+      third parties.
+    source: REP Ref. Agency
+    quoted_text: Agency is a relationship in which one person (the agent) is authorized to act on behalf
+      of another (the principal) in dealings with third parties, and agrees to do so subject to the
+      principal's control.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0826
+      - NAT-PV-VIII-0406
+      - NAT-PV-VIII-0408
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: priority
@@ -1247,6 +2132,28 @@ entries:
       - NAT-PV-I-0713
     status: draft
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: private clubs
+    definition: A private club is an establishment exempt from ADA Title III, meaning the accessibility
+      requirements do not apply to it.
+    source: 42 U.S.C. §§ 12181–12189 (ADA Title III)
+    quoted_text: §12187. Exemptions for private clubs and religious organizations The provisions of this
+      subchapter shall not apply to private clubs
+    related_terms: []
+    items:
+      - NAT-PV-V-0338
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: procuring cause
+    definition: Under an open listing, the seller pays a commission only to the broker who is the
+      procuring cause of the sale—that is, the broker whose actions directly lead to the buyer and
+      purchase.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the seller owes a commission only to the broker who is the procuring cause (§ 4.3) of the sale.
+    related_terms: []
+    items:
+      - NAT-PV-V-0074
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: property tax
     definition: Property tax is an ad valorem tax on real property based on its assessed value, after
       subtracting any qualifying exemptions, with the tax rate applied by local taxing authorities.
@@ -1258,6 +2165,32 @@ entries:
       - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: protected class
+    definition: A protected class is a characteristic that the Fair Housing Act protects, such that
+      advertising indicating a preference, limitation, or discrimination based on that
+      characteristic is prohibited.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The cached Fair Housing Act prohibits advertising that indicates a preference,
+      limitation, or discrimination based on a protected class
+    related_terms: []
+    items:
+      - NAT-PV-V-0084
+      - NAT-PV-V-0086
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: protected information
+    definition: Protected information is information that a licensee must keep confidential unless the
+      client authorizes disclosure or the law requires it, such as a seller's willingness to accept
+      less than list price or a party's financial condition.
+    source: REP Ref. Agency
+    quoted_text: Protected information typically includes the seller's willingness to accept less than
+      list price, the reason for selling (divorce, job relocation, financial distress), the buyer's
+      maximum price or urgency, and either party's financial condition.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0832
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: quitclaim deed
     definition: A quitclaim deed transfers only the interest the grantor actually holds in the property,
       without any warranties or guarantees about the quality of that interest.
@@ -1267,6 +2200,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0487
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: real estate
+    definition: Real estate is the property that brokerage relationships concern, involving agency
+      duties and disclosures.
+    source: REP Ref. Agency
+    quoted_text: agency relationships in real estate brokerage — how they arise and end, the duties they
+      impose, and the disclosures they require.
+    related_terms: []
+    items:
+      - NAT-PV-I-0461
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real property
@@ -1295,6 +2239,28 @@ entries:
       - NAT-PV-II-0741
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: recommendation
+    definition: A recommendation is a suggestion by a licensee for a client to obtain a professional
+      inspection or test, which the licensee should document.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: (c) recommend appropriate professional inspections and tests, and document the recommendation
+    related_terms: []
+    items:
+      - NAT-PV-V-0311
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reconciliation
+    definition: Reconciliation is the process of combining value indications from different appraisal
+      approaches by weighting them according to their reliability, rather than simply averaging
+      them.
+    source: REP Ref. Real Estate Math
+    quoted_text: The final value estimate weights the three approaches by their reliability for the
+      property type; it is not a simple average.
+    related_terms: []
+    items:
+      - NAT-PV-III-0799
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: redemption
     definition: Redemption is the equitable right to stop a foreclosure or tax sale by paying the full
       debt owed, or, after a sale, the statutory right to reclaim the property by paying the amount
@@ -1306,6 +2272,31 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0765
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: referral
+    definition: A referral fee is a payment made to a broker for referring a client to another broker.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing broker who offers to share the commission with the broker who brings the
+      buyer (a cooperating broker) makes an offer that becomes binding when the cooperating broker
+      procures the buyer on the offered terms. Alternatively, a buyer's broker may be paid directly
+      by the buyer under the buyer agreement. **Referral fees** between
+    related_terms: []
+    items:
+      - NAT-PV-IV-0850
+      - NAT-PV-V-0312
+      - NAT-PV-V-0341
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: referral fee
+    definition: A referral fee is a payment made to an agent for referring a client, which can be
+      considered a secret profit if not disclosed to the client.
+    source: REP Ref. Agency
+    quoted_text: such as a referral fee or repair-vendor kickback the client does not know about.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0828
+      - NAT-PV-IV-0833
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: regulation b
@@ -1320,6 +2311,54 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0241
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rejection
+    definition: A rejection occurs when a response to an offer changes any term, operating as a
+      counteroffer that terminates the original offer.
+    source: REP Ref. Contracts
+    quoted_text: Any change to price, closing date, personal property included, contingencies, or other
+      terms is not an acceptance; it is a **counteroffer**, which operates as a rejection of the
+      original offer and creates a new offer running the other way.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0536
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: religious organizations
+    definition: A religious organization is an entity exempt from ADA Title III, meaning the
+      accessibility requirements do not apply to it or to places of worship it controls.
+    source: 42 U.S.C. §§ 12181–12189 (ADA Title III)
+    quoted_text: or to religious organizations or entities controlled by religious organizations,
+      including places of wo
+    related_terms: []
+    items:
+      - NAT-PV-V-0338
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: revocation
+    definition: A revocation withdraws an offer before acceptance, effective when communicated to the
+      offeree, unless the offer is an option supported by consideration.
+    source: REP Ref. Contracts
+    quoted_text: The offeror may withdraw (revoke) an offer at any time before it has been accepted and
+      the acceptance communicated, even if the offer stated it would remain open for a specified
+      period.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0536
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: right of first refusal
+    definition: A right of first refusal requires the owner to offer the property to the holder on the
+      same terms as any third‑party offer before selling to others.
+    source: REP Ref. Contracts
+    quoted_text: A right of first refusal (preemptive right) obligates the owner, before selling to a
+      third party, to offer the property to the holder on the same terms the third party has
+      offered.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0534
+      - NAT-PV-IV-0830
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: right of survivorship
@@ -1346,6 +2385,21 @@ entries:
       - NAT-PV-I-0727
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: safe harbor
+    definition: The federal statutory safe harbor is a special rule that treats a licensed real estate
+      agent as a statutory non-employee (independent contractor) for federal tax purposes if three
+      specific conditions are all met.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Federal tax law contains a special rule treating a licensed real estate agent as a
+      statutory non-employee (independent contractor) for federal income and employment tax purposes
+      if three conditions are all met:"
+    related_terms: []
+    items:
+      - NAT-PV-V-0060
+      - NAT-PV-V-0323
+      - NAT-PV-V-0576
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: sale
     definition: A sale is a contract for the transfer of real property that binds the parties and,
       unlike an agency relationship, usually binds the heirs of the parties.
@@ -1354,6 +2408,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0723
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sales
+    definition: Sales refer to transactions where property is sold, providing comparable data for appraisal.
+    source: REP Ref. Contracts
+    quoted_text: In real estate, the most common contracts a licensee encounters are the purchase
+      agreement (sales contract), the listing agreement, the buyer representation agreement, the
+      lease, the option, and the land contract.
+    related_terms: []
+    items:
+      - NAT-PV-III-0517
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: sales comparison
@@ -1367,6 +2432,31 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0491
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sales comparison approach
+    definition: The sales comparison approach values a property by comparing it to similar recently sold
+      properties, based on the principle that a buyer will not pay more than the cost of an equally
+      desirable substitute.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: A prudent buyer will pay no more for a property than the cost of acquiring an equally
+      desirable substitute.
+    related_terms: []
+    items:
+      - NAT-PV-III-0526
+      - NAT-PV-III-0799
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: salesperson
+    definition: A salesperson is a licensee who may perform brokerage acts only under a sponsoring
+      broker and may be compensated only by that broker.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A **salesperson** (or associate broker) may perform brokerage acts only under a
+      sponsoring broker and may be compensated only by that broker.
+    related_terms: []
+    items:
+      - NAT-PV-V-0072
+      - NAT-PV-V-0075
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: scarcity
@@ -1387,6 +2477,16 @@ entries:
     related_terms: []
     items:
       - NAT-PV-II-0482
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: seller's willingness
+    definition: Seller's willingness refers to the seller's readiness to accept a price below the listed
+      asking price, which is considered protected information under confidentiality duties.
+    source: REP Ref. Agency
+    quoted_text: the seller's willingness to accept less than list price,
+    related_terms: []
+    items:
+      - NAT-PV-IV-0832
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: setback
@@ -1494,6 +2594,40 @@ entries:
     reviewer: qa-lead-model
     reject_reason: "wrong sense: defined the Federal Trade Commission / RESPA fee-splitting; items use
       commission and split as brokerage compensation"
+  - term: sponsoring broker
+    definition: A sponsoring broker is the broker who employs or sponsors a salesperson, under whose
+      authority the salesperson may perform brokerage activities and receive compensation.
+    source: REP Ref. Brokerage Practice
+    quoted_text: a **salesperson** (or associate broker) may perform brokerage acts only under a
+      sponsoring broker and may be compensated only by that broker.
+    related_terms: []
+    items:
+      - NAT-PV-V-0075
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: Statute of Frauds
+    definition: The Statute of Frauds requires certain contracts, like leases longer than one year, to
+      be in writing to be enforceable.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Leases for more than one year generally must be in writing under the Statute of Frauds;
+      the threshold varies by state.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0564
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: statute of limitations
+    definition: A statute of limitations is a procedural defect that can render a contract unenforceable
+      if the time limit for bringing an action has expired.
+    source: REP Ref. Contracts
+    quoted_text: "Unenforceable: the agreement may appear valid but a court will not compel performance,
+      usually because of a procedural defect such as the absence of a required writing under the
+      Statute of Frauds, or the running of the statute of limitations."
+    related_terms: []
+    items:
+      - NAT-PV-V-0101
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: statutory
     definition: A statutory arrangement is one established by statute, such as a broker designating
       separate licensees to represent the seller and buyer in the same transaction.
@@ -1504,6 +2638,55 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0427
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: statutory non-employee
+    definition: A statutory non-employee is a licensed real estate agent who, under the federal
+      statutory safe harbor, is classified as an independent contractor for federal income and
+      employment tax purposes when the three conditions are satisfied.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Federal tax law contains a special rule treating a licensed real estate agent as a
+      statutory non-employee (independent contractor) for federal income and employment tax purposes
+      if three conditions are all met:"
+    related_terms: []
+    items:
+      - NAT-PV-V-0060
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: straight-line
+    definition: The straight-line (economic age-life) method estimates accrued depreciation by assuming
+      the property loses value evenly over its total economic life, using effective age to reflect
+      condition.
+    source: REP Ref. Valuation & Appraisal
+    quoted_text: The simplest estimate of total accrued depreciation assumes improvements lose value
+      evenly over their total economic life.
+    related_terms: []
+    items:
+      - NAT-PV-III-0518
+      - NAT-PV-III-0788
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: straight-line method
+    definition: The straight-line method calculates annual depreciation by dividing the improvement's
+      cost by its total economic life, then multiplies that amount by the effective age to find
+      accrued depreciation.
+    source: REP Ref. Real Estate Math
+    quoted_text: Annual depreciation = improvement cost ÷ total economic life (land is never depreciated).
+    related_terms: []
+    items:
+      - NAT-PV-III-0231
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sublease
+    definition: A sublease occurs when a tenant transfers only part of their leasehold interest—such as
+      a portion of the premises or a portion of the lease term—to another party, while the original
+      tenant usually remains liable to the landlord.
+    source: REP Ref. Contracts
+    quoted_text: When a tenant transfers less than the entire interest — a portion of the space, or the
+      whole space for part of the remaining term —
+    related_terms: []
+    items:
+      - NAT-PV-IV-0057
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: subordination agreement
@@ -1526,6 +2709,19 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0488
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: supervision
+    definition: Broker supervision is the duty to oversee all licensees and unlicensed persons in the
+      firm, typically requiring written office policies, contract review, trust account oversight,
+      training, and complaint handling.
+    source: REP Ref. Brokerage Practice
+    quoted_text: State license laws make the broker (or a designated managing broker) responsible for
+      supervising the brokerage activities of every licensee and every unlicensed person working in
+      the firm.
+    related_terms: []
+    items:
+      - NAT-PV-V-0567
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: taking
@@ -1640,6 +2836,70 @@ entries:
       - NAT-PV-III-0225
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trust account
+    definition: Trust money (earnest money, tenant security deposits, rents collected for owners,
+      advance fees) must be held in a designated trust or escrow account separate from the firm's
+      operating funds.
+    source: "[REP Ref. Brokerage Practice — § 10.1 Trust (escrow) accounts]"
+    quoted_text: money belonging to others — earnest money, tenant security deposits, rents collected
+      for owners, advance fees — is **trust money** and must be held in a designated trust or escrow
+      account separate from the firm's operating funds.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0553
+      - NAT-PV-V-0062
+      - NAT-PV-V-0067
+      - NAT-PV-V-0321
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trust money
+    definition: Trust money is money a brokerage receives that belongs to others, such as earnest money,
+      tenant security deposits, rents collected for owners, and advance fees, and must be held in a
+      designated trust or escrow account separate from the firm's operating funds.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Money a brokerage receives that belongs to others — earnest money, tenant security
+      deposits, rents collected for owners, advance fees — is **trust money**
+    related_terms: []
+    items:
+      - NAT-PV-V-0574
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unauthorized practice
+    definition: The unauthorized practice of law includes actions such as drafting original contract
+      language or giving legal advice without a license, which a real estate licensee may not
+      perform.
+    source: "[REP Ref. Brokerage Practice — § 1.2 The line with the unauthorized practice of law]"
+    quoted_text: Licensees may **not** draft original contract language, give legal advice about the
+      meaning or effect of a document, or interpret how a law applies to a client's situation.
+    related_terms: []
+    items:
+      - NAT-PV-V-0310
+      - NAT-PV-V-0312
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unauthorized purpose
+    definition: Unauthorized purpose refers to spending client funds for any purpose not authorized,
+      which constitutes conversion of trust money.
+    source: REP Ref. Agency
+    quoted_text: Mixing client funds with brokerage operating funds is commingling; spending client
+      funds for any unauthorized purpose is conversion
+    related_terms: []
+    items:
+      - NAT-PV-V-0574
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: undisclosed dual agency
+    definition: Undisclosed dual agency — representing both sides without both parties' knowledge and
+      consent — is a serious license law violation and a breach of fiduciary duty that can result in
+      loss of commission, rescission of the transaction, and discipline.
+    source: REP Ref. Agency
+    quoted_text: Undisclosed dual agency — representing both sides without both parties' knowledge and
+      consent — is a serious license law violation
+    related_terms: []
+    items:
+      - NAT-PV-IV-0552
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: undisclosed heirs
     definition: Undisclosed heirs are individuals who have a legal claim to property through inheritance
       but whose interest is not reflected in public records, making them undiscoverable by a title
@@ -1652,6 +2912,18 @@ entries:
       - NAT-PV-II-0485
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unenforceable
+    definition: Unenforceable means not capable of being enforced; for example, a deed restriction that
+      violates public policy or law cannot be enforced even if it is recorded.
+    source: REP Ref. Property & Land Use
+    quoted_text: A restriction that violates public policy or statute, such as one excluding owners by
+      race, religion, or another protected class, is void and unenforceable even if it still appears
+      in an old document.
+    related_terms: []
+    items:
+      - NAT-PV-IV-0564
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: uniqueness
     definition: Uniqueness means that each parcel of land is distinct and not identical to any other parcel.
     source: REP Ref. Property & Land Use
@@ -1662,6 +2934,19 @@ entries:
       - NAT-PV-I-0004
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: unlicensed assistant
+    definition: An unlicensed assistant may perform clerical and administrative work that does not
+      require a license, such as answering phones, scheduling appointments, preparing marketing
+      materials, assembling files, and ordering inspections, all under a licensee's direction.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "An unlicensed assistant may perform clerical and administrative work that does not
+      require a license: answering phones, scheduling appointments, preparing marketing materials
+      and assembling files under a licensee's direction,"
+    related_terms: []
+    items:
+      - NAT-PV-V-0061
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: uspap
     definition: USPAP stands for the Uniform Standards of Professional Appraisal Practice, which are
       written by the Appraisal Standards Board of The Appraisal Foundation.
@@ -1670,6 +2955,27 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0036
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: utility
+    definition: Utility refers to the usefulness of a property, particularly its ability to provide
+      essential services such as water, electricity, or gas that can be shut off.
+    source: REP Ref. Brokerage Practice
+    quoted_text: lockouts and utility shutoffs are unlawful in virtually every state.
+    related_terms: []
+    items:
+      - NAT-PV-III-0225
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: vacancy and collection loss
+    definition: Vacancy and collection loss is the amount of rental income lost due to unoccupied units
+      and tenants' failure to pay rent, expressed as a percentage or dollar amount subtracted from
+      potential gross income.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "**vacancy and collection loss**;"
+    related_terms: []
+    items:
+      - NAT-PV-III-0807
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: value
@@ -1703,6 +3009,17 @@ entries:
       - NAT-PV-I-0451
       - NAT-PV-I-0453
       - NAT-PV-I-0455
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: void
+    definition: A void contract has no legal effect from the outset because a required element is absent
+      or the subject matter is illegal.
+    source: REP Ref. Contracts
+    quoted_text: "- **Void**: the agreement has no legal effect from the start because an essential
+      element is missing or the object is illegal."
+    related_terms: []
+    items:
+      - NAT-PV-IV-0533
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: voluntary lien
@@ -1744,6 +3061,17 @@ entries:
     related_terms: []
     items:
       - NAT-PV-I-0458
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written consent
+    definition: Written consent is the informed, written agreement of both parties to allow a brokerage
+      to act as a dual agent.
+    source: REP Ref. Agency
+    quoted_text: dual agency is permitted only with the informed written consent of both parties in
+      states that allow it at all
+    related_terms: []
+    items:
+      - NAT-PV-IV-0551
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: zoning

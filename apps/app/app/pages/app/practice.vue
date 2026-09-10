@@ -38,6 +38,8 @@ const startedAt = ref(Date.now());
 const busy = ref(false);
 const starting = ref(true);
 const summary = ref<Awaited<ReturnType<typeof study.finish>> | null>(null);
+/** True only while study.finish() is in flight. See the note on `phase` below. */
+const finishing = ref(false);
 
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const needState = computed(() => studyState.ready.value && !jur.value);
@@ -52,7 +54,7 @@ const phase = computed<"need-state" | "milestone" | "question" | "empty" | "load
   if (needState.value) return "need-state";
   if (summary.value) return "milestone";
   if (session.value && item.value) return "question";
-  if (starting.value) return "loading";
+  if (starting.value || finishing.value) return "loading";
   return "empty";
 });
 
@@ -146,7 +148,14 @@ async function advance() {
   if (busy.value) return;
   busy.value = true;
   try {
-    if (isLast.value) { summary.value = await study.finish(); return; }
+    if (isLast.value) {
+      // study.finish() clears the session before it resolves, so without `finishing` the phase
+      // would read "empty" for one flush — long enough for the watcher below to bounce the learner
+      // to the hub and eat the summary screen entirely.
+      finishing.value = true;
+      try { summary.value = await study.finish(); } finally { finishing.value = false; }
+      return;
+    }
     await study.next();
   } finally { busy.value = false; }
 }
@@ -184,8 +193,8 @@ async function startFrom(opts: StartPracticeOptions) {
  * to show, send the learner back to the hub, where a portion or a section is chosen — that is now
  * the only way in, so there is no second idle screen to keep in step with it.
  */
-watch([phase, starting], ([p, st]) => {
-  if (p === "empty" && !st) void navigateTo("/app/study");
+watch([phase, starting, finishing], ([p, st, fin]) => {
+  if (p === "empty" && !st && !fin) void navigateTo("/app/study");
 });
 
 /** 1-4 / A-D pick an option, Enter or Space advances once revealed. Same actions as the buttons. */

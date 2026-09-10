@@ -41,10 +41,14 @@ const portionReadiness = computed(() => (portion.value === "national" ? readines
 const sections = computed(() => ((portion.value === "national" ? coverage.national.value : portion.value === "state" ? coverage.state.value : []) ?? []));
 /** How many questions a generated mock should hold for the current choice. */
 const generatedSize = computed(() => {
-  const n = needNational.value, st = needState.value;
-  const want = portion.value === "national" ? n : portion.value === "state" ? st : n + st;
-  const have = portion.value === "national" ? nationalAvailable.value : portion.value === "state" ? stateAvailable.value : availableTotal.value;
-  return Math.max(1, Math.min(want || have, have));
+  // Cap each portion by its own bank, never by the combined pool: with 236 national and 36 state
+  // items published, a full paper is 80 + 36, not the blueprint's 80 + 40. Promising the target and
+  // serving less is what made the count on this card disagree with the paper it built.
+  const forPortion = (want: number, have: number) => (want ? Math.min(want, have) : have);
+  const nat = forPortion(needNational.value, nationalAvailable.value);
+  const st = forPortion(needState.value, stateAvailable.value);
+  const size = portion.value === "national" ? nat : portion.value === "state" ? st : nat + st;
+  return Math.max(1, size);
 });
 /** Minutes per question from the real exam, so a shorter mock is timed proportionally. */
 const msPerQuestion = computed(() => {
@@ -60,7 +64,24 @@ async function startGenerated(node?: string) {
   try {
     const picked: string[] = [];
     const perBank: Array<{ portion: "national" | "state"; bank: string; itemIds: string[] }> = [];
+    // How many this bank owes the paper, so the card's promise and the draw agree. `ids()` only
+    // returns what is cached, while the stat tile counts what the server says is published — so
+    // without the prefetch a "80 questions" mock quietly served whatever happened to be on device.
+    // Each bank owes its own portion of the paper, capped by what that bank actually holds — the
+    // same arithmetic as `generatedSize`, so the tile's number and the draw cannot drift apart.
+    const shareFor = (b: string) => {
+      if (node) return 0;
+      const isNat = b === nationalBank.value;
+      const want = isNat ? needNational.value : needState.value;
+      const have = isNat ? nationalAvailable.value : stateAvailable.value;
+      return want ? Math.min(want, have) : have;
+    };
     for (const b of banks) {
+      const want = shareFor(b);
+      // A plain practice top-up: all we need is the items cached, and a form-less mock batch is
+      // not something issue-batch will serve. Offline or rate-limited, fall through and sit
+      // whatever is already on the device.
+      if (want > 0) { try { await study.source.prefetch?.(b, want); } catch { /* keep going */ } }
       const ids = await study.source.ids(b);
       let pool = ids;
       if (node) {
@@ -68,7 +89,7 @@ async function startGenerated(node?: string) {
         pool = its.filter((i) => i.blueprint_node === node || i.blueprint_node.startsWith(`${node}.`)).map((i) => i.id);
       }
       const shuffled = [...pool].sort(() => Math.random() - 0.5);
-      const share = node ? shuffled.length : Math.round(generatedSize.value * (banks.length === 1 ? 1 : (b === nationalBank.value ? needNational.value : needState.value) / Math.max(1, needNational.value + needState.value)));
+      const share = node ? shuffled.length : want;
       const take = shuffled.slice(0, Math.max(0, Math.min(share || shuffled.length, shuffled.length)));
       if (!take.length) continue;
       picked.push(...take);
