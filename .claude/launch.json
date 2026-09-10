@@ -15,6 +15,15 @@
         "cd apps/app && NUXT_PUBLIC_SUPABASE_URL= NUXT_PUBLIC_SUPABASE_ANON_KEY= npx nuxt dev --port 3123"
       ],
       "port": 3123
+    },
+    {
+      "name": "app-live",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "set -a; . ./.env; set +a; cd apps/app && npx nuxt dev --port 3124"
+      ],
+      "port": 3124
     }
   ]
 }

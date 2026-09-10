@@ -69,7 +69,7 @@ const forms = computed(() => {
       title: `Form ${i}`,
       detail: !sittable
         ? "Arrives as this state's bank fills"
-        : full
+        : full || formLength.value >= neededTotal.value
           ? "Full length · non-overlapping"
           : `${formLength.value} of ${neededTotal.value} questions so far · more arrive as the bank fills`,
       locked: !complete.value || !sittable,

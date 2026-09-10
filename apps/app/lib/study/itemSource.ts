@@ -84,6 +84,24 @@ const RETRY_LONG_MS = 10 * 60_000;
  * in `Item` are satisfied with a placeholder during validation and the public id is put back
  * afterwards. Fields the server strips for the client (reviewer, provenance) get neutral values.
  */
+/**
+ * The delivered batch document is deliberately narrower than an authored item: apps/api
+ * `_shared/content-store.ts` ships
+ *   { public_id, jurisdiction, bank, blueprint_node, cognitive_level, license_level, stem,
+ *     options, key, explanation, citation, math|null, terms, version }
+ * — no `vendor`, and `math` is `null` rather than absent. Validating that against the full authoring
+ * schema rejected every item on two counts (`vendor` is required with no default, and `math` is
+ * `.optional()` which allows undefined but not null), so the item cache stayed empty and Practice
+ * said "No questions available right now" with no request in flight. Fill the delivery-redacted
+ * fields here instead of loosening the schema the pipeline is gated on.
+ *
+ * `vendor` is never read off an item by the app (the exam vendor comes from the state record in the
+ * manifest), so a national bank's own name is enough and a state item is simply not vendor-specific.
+ */
+function vendorForBank(bank: unknown): "pearsonvue" | "psi" | "any" {
+  return bank === "national_pearsonvue" ? "pearsonvue" : bank === "national_psi" ? "psi" : "any";
+}
+
 export function parseBatchItem(raw: unknown, publicId: string): Item | null {
   if (!raw || typeof raw !== "object") return null;
   const r = raw as Record<string, unknown>;
@@ -92,13 +110,23 @@ export function parseBatchItem(raw: unknown, publicId: string): Item | null {
   const parsed = ItemSchema.safeParse({
     ...r,
     id: `${jurisdiction}-PUB-0000`,
+    vendor: r.vendor ?? vendorForBank(r.bank),
+    // the wire uses null for "no working shown"; the schema wants the field absent
+    math: r.math ?? undefined,
     status: r.status ?? "published",
     reviewer: r.reviewer ?? "redacted",
     verified_on: r.verified_on ?? "1970-01-01",
     version: r.version ?? 1,
     provenance: undefined,
   });
-  if (!parsed.success) return null;
+  if (!parsed.success) {
+    // Never fail silently here. A schema drift between the delivered batch document and @rep/schema
+    // drops every question in the batch, the item cache stays empty, and the app says "No questions
+    // available right now" with no request in flight and nothing in the console — which is exactly
+    // how it looked for hours.
+    if (import.meta.dev) console.warn("[batch] item rejected by schema", publicId, parsed.error.issues.slice(0, 6));
+    return null;
+  }
   return { ...parsed.data, id: publicId };
 }
 

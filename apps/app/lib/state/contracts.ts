@@ -44,11 +44,20 @@ export function parseMockStart(x: unknown): MockStartResponse | null {
     ? (s.portions as Array<Record<string, unknown>>).filter((p) => p && typeof p.bank === "string").map((p) => ({
         portion: p.portion === "national" ? "national" as const : "state" as const,
         bank: p.bank as string,
-        item_ids: Array.isArray(p.item_ids) ? (p.item_ids as unknown[]).filter((v): v is string => typeof v === "string") : [],
+        // mock-start names these `public_ids` on each portion; `item_ids` only appears on older
+        // payloads. Reading just `item_ids` parsed every portion as empty — and because the array
+        // itself was present, the `fromBatches` fallback below never ran — so the results screen
+        // showed "National 0 / 0 correct" and "State 0 / 0 correct" for a 114-question mock.
+        item_ids: Array.isArray(p.item_ids)
+          ? (p.item_ids as unknown[]).filter((v): v is string => typeof v === "string")
+          : Array.isArray(p.public_ids)
+            ? (p.public_ids as unknown[]).filter((v): v is string => typeof v === "string")
+            : [],
         pass_score: typeof p.pass_score === "string" ? p.pass_score : typeof p.pass_score === "number" ? `${Math.round(p.pass_score * 100)}%` : null,
       }))
     : undefined;
-  const portionsFinal = portions && portions.length
+  // A portions array that carries no ids is no better than none: fall through to the batch refs.
+  const portionsFinal = portions && portions.length && portions.some((p) => p.item_ids.length > 0)
     ? portions
     : fromBatches.filter((p) => p.bank).map((p) => ({ portion: p.portion === "national" ? "national" as const : "state" as const, bank: p.bank, item_ids: p.item_ids, pass_score: p.pass_score == null ? null : `${Math.round(p.pass_score * 100)}%` }));
   const timeS = typeof r.time_limit_s === "number" ? r.time_limit_s : typeof s.time_limit_s === "number" ? s.time_limit_s : typeof r.time_limit_ms === "number" ? r.time_limit_ms / 1000 : typeof s.time_limit_ms === "number" ? s.time_limit_ms / 1000 : typeof s.time_limit_minutes === "number" ? s.time_limit_minutes * 60 : null;

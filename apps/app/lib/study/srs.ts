@@ -75,14 +75,24 @@ export function scheduleSession(opts: {
   const rnd = () => ((s = (s * 1664525 + 1013904223) >>> 0) / 2 ** 32);
   const shuffle = <T,>(xs: T[]) => { const a = [...xs]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j]!, a[i]!]; } return a; };
   const buckets: Record<"red" | "yellow" | "green" | "unseen", string[]> = { red: [], yellow: [], green: [], unseen: [] };
+  // Overflow, not exclusion. Items that are not due yet, and leeches held back from normal rounds,
+  // used to be dropped outright — so a learner who had seen everything got an EMPTY session and the
+  // app said "No questions available right now". The schedule decides what comes FIRST; it must
+  // never decide that nothing comes at all. These go last, so they are only reached once the
+  // genuinely due and unseen questions are exhausted.
+  const notDue: string[] = [];
+  const heldLeeches: string[] = [];
   for (const id of opts.candidates) {
     const p = opts.progress.get(id);
     if (!p || p.attempts === 0) { buckets.unseen.push(id); continue; }
-    if (p.leech && !opts.includeLeeches) continue;
-    if (!opts.ignoreSchedule && !isDue(p, now)) continue;
+    if (p.leech && !opts.includeLeeches) { heldLeeches.push(id); continue; }
+    if (!opts.ignoreSchedule && !isDue(p, now)) { notDue.push(id); continue; }
     buckets[p.box].push(id);
   }
-  const ordered = [...shuffle(buckets.red), ...shuffle(buckets.yellow), ...shuffle(buckets.green), ...shuffle(buckets.unseen)];
+  const ordered = [
+    ...shuffle(buckets.red), ...shuffle(buckets.yellow), ...shuffle(buckets.green), ...shuffle(buckets.unseen),
+    ...shuffle(notDue), ...shuffle(heldLeeches),
+  ];
   return ordered.slice(0, opts.size);
 }
 

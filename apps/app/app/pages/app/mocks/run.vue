@@ -67,7 +67,10 @@ const firstFlagged = computed(() => session.value?.itemIds.findIndex((id) => fla
 const results = computed(() => (session.value?.portions ?? []).map((p) => {
   const c = p.itemIds.filter((id) => session.value!.answers[id]?.correct).length;
   const need = passItemsFrom(p.passScore, p.itemIds.length);
-  return { ...p, correct: c, need, pass: need == null ? null : c >= need, pct: p.itemIds.length ? Math.round((100 * c) / p.itemIds.length) : 0 };
+  // A portion with no questions has no verdict. `need` is 0 for an empty portion and `0 >= 0` is
+  // true, so an empty portion reported "Pass" — which is how a 0% mock came back passing twice.
+  const pass = p.itemIds.length === 0 || need == null ? null : c >= need;
+  return { ...p, correct: c, need, pass, pct: p.itemIds.length ? Math.round((100 * c) / p.itemIds.length) : 0 };
 }));
 const overall = computed(() => { const a = Object.values(session.value?.answers ?? {}); const c = a.filter((x) => x.correct).length; return { c, n: total.value, pct: total.value ? Math.round((100 * c) / total.value) : 0 }; });
 

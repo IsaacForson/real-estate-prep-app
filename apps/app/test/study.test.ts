@@ -26,7 +26,7 @@ describe("srs", () => {
     p = applyAnswer(p, true, T0 + 10); expect(p.leech).toBe(true);
     p = applyAnswer(p, true, T0 + 11); expect(p.leech).toBe(false);
   });
-  it("schedules due reds before yellows before unseen and skips leeches", () => {
+  it("orders due reds, yellows, unseen, then not-due and leeches last (never an empty session)", () => {
     const m = new Map<string, Progress>();
     const red = applyAnswer(newProgress("A", "b", "1", T0), false, T0);
     const yellowDue = { ...applyAnswer(newProgress("B", "b", "1", T0), true, T0), dueAt: T0 };
@@ -34,12 +34,25 @@ describe("srs", () => {
     let leech = newProgress("D", "b", "1", T0); for (let i = 0; i < 4; i++) leech = applyAnswer(leech, false, T0 + i);
     for (const p of [red, yellowDue, yellowNotDue, leech]) m.set(p.itemId, p);
     const ids = scheduleSession({ candidates: ["A", "B", "C", "D", "E", "F"], progress: m, size: 10, now: T0 + 1000, seed: 1 });
+    // Priority is what the schedule controls: due red, then due yellow, then unseen.
     expect(ids.slice(0, 2)).toEqual(["A", "B"]);
-    expect(ids).not.toContain("C"); expect(ids).not.toContain("D");
-    expect(ids.slice(2).sort()).toEqual(["E", "F"]);
+    expect(ids.slice(2, 4).sort()).toEqual(["E", "F"]);
+    // C is not due yet and D is a held leech. They come LAST rather than being dropped: excluding
+    // them meant a learner who had seen everything got an empty session and "No questions
+    // available right now" instead of practice.
+    expect(ids.slice(4).sort()).toEqual(["C", "D"]);
     expect(leechDrill(m.values())).toEqual(["D"]);
     const pl = pipeline([...m.values()], 6, T0 + 1000);
     expect(pl).toEqual({ red: 2, yellow: 2, green: 0, unseen: 2, leeches: 1, dueNow: 3 });
+  });
+  it("still returns a session when everything has been seen and nothing is due", () => {
+    const m = new Map<string, Progress>();
+    for (const id of ["A", "B", "C"]) {
+      // answered correctly, so scheduled well into the future
+      m.set(id, applyAnswer(newProgress(id, "b", "1", T0), true, T0));
+    }
+    const ids = scheduleSession({ candidates: ["A", "B", "C"], progress: m, size: 10, now: T0 + 1000, seed: 7 });
+    expect(ids.sort()).toEqual(["A", "B", "C"]);
   });
 });
 
