@@ -1,6 +1,19 @@
 bank: national_pearsonvue
 generated_on: 2026-09-10
 entries:
+  - term: abatement
+    definition: Abatement means any set of measures designed to permanently eliminate lead‑based paint
+      hazards, such as removal, permanent containment, or encapsulation, in accordance with federal
+      standards.
+    source: 42 U.S.C. §§ 4851–4856 (Lead paint — Residential Lead-Based Paint Hazard Reduction Act)
+    quoted_text: The term "abatement" means any set of measures designed to permanently eliminate
+      lead-based paint hazards in accordance with standards established by appropriate Federal
+      agencies.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0614
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: acceptance
     definition: Acceptance is the agreement to an offer, and together with the offer shows mutual assent.
     source: REP Ref. Contracts
@@ -55,6 +68,16 @@ entries:
       - NAT-PV-I-0716
       - NAT-PV-VIII-0136
       - NAT-PV-VIII-0402
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: action level
+    definition: An action level is the EPA‑set radon concentration threshold of 4 picocuries per liter,
+      at which mitigation must be performed.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: "The EPA action level is 4 pCi/L: at or above it, fix the home"
+    related_terms: []
+    items:
+      - NAT-PV-VI-0387
     status: quote_verified
     model: groq/openai/gpt-oss-120b
   - term: addendum
@@ -119,6 +142,20 @@ entries:
     related_terms: []
     items:
       - NAT-PV-V-0101
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: all appropriate inquiries
+    definition: All appropriate inquiries are the investigative steps a buyer must take before acquiring
+      a property to show they had no reason to know of any existing contamination, as required for
+      CERCLA landowner defenses.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: (i) All appropriate inquiries .—To establish that the defendant had no reason to know
+      of the matter described in subparagraph (A)(i), the defendant must demonstrate to a court
+      that—
+    related_terms: []
+    items:
+      - NAT-PV-VI-0099
+      - NAT-PV-VI-0389
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: amendment
@@ -603,6 +640,17 @@ entries:
       - NAT-PV-IV-0805
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contiguous property
+    definition: A contiguous property owner is a neighbor whose land is contaminated by migration of
+      hazardous substances from an adjacent site.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: The contiguous property owner defense protects a neighbor whose land is contaminated by
+      migration from an adjacent site.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0616
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: contingency
     definition: A contingency is a contract clause that makes the sale dependent on a specified
       condition (e.g., a partner's approval); licensees should use an approved addendum or refer an
@@ -721,6 +769,16 @@ entries:
       - NAT-PV-III-0037
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: damages
+    definition: Damages are a monetary remedy awarded to compensate a party for loss or breach, rather
+      than ordering specific performance.
+    source: REP Ref. Agency
+    quoted_text: the remedy is money, not specific performance
+    related_terms: []
+    items:
+      - NAT-PV-V-0596
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: death
     definition: Death of either the principal or the agent terminates an agency relationship by
       operation of law.
@@ -729,6 +787,18 @@ entries:
     related_terms: []
     items:
       - NAT-PV-IV-0826
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: decision
+    definition: A decision is the choice a reasonable person makes about whether to buy, sell, or lease
+      a property, or on what terms.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: "Materiality is judged by effect on a reasonable person's decision, not by the size of
+      the repair bill: a $400 repair for a recurring sewer backup is material because it reveals an
+      ongoing problem."
+    related_terms: []
+    items:
+      - NAT-PV-VI-0382
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deed
@@ -802,6 +872,17 @@ entries:
       - NAT-PV-VIII-0426
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: depressurization
+    definition: Depressurization is a radon‑reduction method that installs a pipe through the slab into
+      the gravel beneath and runs a fan continuously to vent soil gas above the roofline.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: "active soil (sub-slab) depressurization: a pipe through the slab into the gravel
+      beneath, with a continuously running fan venting soil gas above the roofline"
+    related_terms: []
+    items:
+      - NAT-PV-VI-0628
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: depth
     definition: Depth is the measurement of a lot from the front line to the rear line, perpendicular to
       the frontage.
@@ -1116,6 +1197,19 @@ entries:
       - NAT-PV-VII-0090
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exemptions
+    definition: Exemptions are certain parties or activities—such as property owners dealing with their
+      own property, attorneys, court‑appointed fiduciaries, and resident managers performing limited
+      leasing tasks—that are excluded from licensing requirements.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Owners dealing with their own property, attorneys acting within their practice,
+      court-appointed fiduciaries, and (in many states) resident managers performing limited leasing
+      tasks are common exemptions; the state portion governs.
+    related_terms: []
+    items:
+      - NAT-PV-V-0338
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: expertise
     definition: Expertise refers to the agent's area of professional knowledge and skill, such that they
       should only verify and share facts within that expertise and seek outside help when a client
@@ -1281,6 +1375,31 @@ entries:
       - NAT-PV-I-0437
     status: quote_verified
     model: groq/openai/gpt-oss-120b
+  - term: flood insurance
+    definition: Flood insurance is a separate policy, typically under the National Flood Insurance
+      Program (NFIP) or a private insurer, that provides coverage for flood damage and is not
+      included in standard homeowners insurance.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: Standard homeowners insurance does not cover flood; flood coverage is a separate NFIP
+      or private policy, and NFIP policies generally have a 30‑day waiting period except when
+      purchased for a loan closing.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0388
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
+  - term: force-placed insurance
+    definition: Force-placed insurance is hazard insurance coverage obtained by a servicer of a
+      federally related mortgage when the borrower has failed to maintain or renew the required
+      hazard insurance on the property.
+    source: 12 U.S.C. §§ 2601–2617 (RESPA)
+    quoted_text: '"force-placed insurance" means hazard insurance coverage obtained by a servicer of a
+      federally related mortgage when the borrower has failed to maintain or renew hazard insurance'
+    related_terms: []
+    items:
+      - NAT-PV-VI-0383
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: foreclosure
     definition: Foreclosure is a legal process in which a property is sold to satisfy a debt, with liens
       paid in order of priority at the sale.
@@ -1409,6 +1528,16 @@ entries:
       - NAT-PV-VIII-0183
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: guesswork
+    definition: Providing answers to condition or hazard questions without factual basis, i.e.,
+      speculation, which licensees must never do.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: Never answering condition or hazard questions from guesswork.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0630
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: habendum clause
     definition: The habendum clause in a deed states what interest or estate is being transferred to the
       grantee, describing the extent of ownership granted.
@@ -1568,6 +1697,29 @@ entries:
       - NAT-PV-V-0576
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: innocent landowner defense
+    definition: The innocent landowner defense protects a buyer who performed all appropriate inquiries
+      into the property’s prior ownership and uses and had no knowledge or reason to know of
+      contamination.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: The innocent landowner defense protects a buyer who conducted AAI and did not know and
+      had no reason to know of contamination.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0099
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: inspection
+    definition: Inspection refers to the reasonable examination of a property by a buyer to discover
+      hidden problems; defects that cannot be found through such inspection are considered latent.
+    source: REP Ref. Agency
+    quoted_text: Latent (hidden) defects known to the seller or agent that a buyer could not discover
+      through reasonable inspection are the classic category that must be disclosed
+    related_terms: []
+    items:
+      - NAT-PV-VI-0384
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: intent
     definition: Intent is the purpose or design to achieve a particular result, such as showing a
       present intent to be bound when making an offer.
@@ -1654,6 +1806,16 @@ entries:
       - NAT-PV-I-0687
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: latent defect
+    definition: A latent defect is a hidden problem in a property that would not be found by a
+      reasonably diligent inspection.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: A latent defect is hidden and would not be found by a reasonably diligent inspection
+    related_terms: []
+    items:
+      - NAT-PV-VI-0384
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: legal advice
     definition: Legal advice is guidance on the meaning or effect of a document or how a law applies to
       a client's situation, which a licensed real estate agent may not provide.
@@ -1861,6 +2023,17 @@ entries:
       - NAT-PV-IV-0851
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: material fact
+    definition: A material fact is any information about a property that a reasonable person would
+      consider important when deciding to buy, sell, or lease it and under what terms.
+    source: REP Ref. Agency
+    quoted_text: A **material fact** is one that a reasonable person would consider important in
+      deciding whether, or on what terms, to buy, sell, or lease.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0382
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: mechanic's lien
     definition: A mechanic's lien is a lien whose priority is set by state statute and may relate back
       to when work began.
@@ -1907,6 +2080,15 @@ entries:
       - NAT-PV-III-0800
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mitigation
+    definition: Mitigation is the requirement that an injured party take reasonable steps to reduce its loss.
+    source: REP Ref. Contracts
+    quoted_text: The injured party must take reasonable steps to reduce its loss.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0628
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: monument
     definition: A monument is a physical marker—such as an iron pin, stone, stream, or section
       corner—used to locate a point in a land description.
@@ -1936,6 +2118,16 @@ entries:
     related_terms: []
     items:
       - NAT-PV-IV-0821
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: negotiation
+    definition: Negotiation is a period of discussion intended to facilitate an agreement between parties.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: Whenever the President determines that a period of negotiation under this subsection
+      would facilitate an agreement with potentially responsible parties for taking response action
+    related_terms: []
+    items:
+      - NAT-PV-V-0309
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: net operating income
@@ -1976,6 +2168,17 @@ entries:
       - NAT-PV-VII-0124
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notification
+    definition: Notification is the act of informing a consumer, such as providing notice that a list of
+      certified homeownership counseling providers and their contact information is available.
+    source: 12 U.S.C. §§ 2601–2617 (RESPA)
+    quoted_text: notification that a list of certified providers of homeownership counseling in the
+      area, and their contact information, is available
+    related_terms: []
+    items:
+      - NAT-PV-VI-0383
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: novation
     definition: A novation is the substitution of a new party for an original party in a contract,
       releasing the original party from liability when the new party assumes the obligation.
@@ -2074,6 +2277,16 @@ entries:
       - NAT-PV-II-0035
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: patent defect
+    definition: A patent defect is a problem that is visible or discoverable through ordinary,
+      reasonable inspection of the property.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: A patent defect is visible or discoverable through ordinary, reasonable inspection
+    related_terms: []
+    items:
+      - NAT-PV-VI-0384
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: periodic estate
     definition: A lease that renews automatically for successive periods (e.g., month-to-month) until
       either party gives the required notice to terminate.
@@ -2099,6 +2312,16 @@ entries:
       - NAT-PV-I-0682
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: phase I
+    definition: A Phase I environmental site assessment is a review of a property's surrounding land
+      uses to identify potential environmental hazards before acquisition.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: Phase I assessment (§ 4.2) reviews surrounding land uses.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0389
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: plottage
     definition: Plottage is the increase in total value when adjacent parcels are combined into a larger
       tract that is worth more than the sum of the separate parcels, usually because the larger size
@@ -2125,6 +2348,16 @@ entries:
       - NAT-PV-I-0464
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: pollutant or contaminant
+    definition: A pollutant or contaminant is any hazardous substance that can be released into the
+      environment.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: any hazardous substance or pollutant or contaminant
+    related_terms: []
+    items:
+      - NAT-PV-VI-0097
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: possibility of reverter
     definition: The grantor's retained interest in a fee simple determinable that allows title to revert
       automatically to the grantor or heirs when the stated condition ends.
@@ -2144,6 +2377,16 @@ entries:
     related_terms: []
     items:
       - NAT-PV-III-0807
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: premiums
+    definition: Premiums are the payments made for insurance coverage, such as flood insurance, that
+      affect affordability and loan qualification.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: because premiums affect affordability and loan qualification.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0383
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: price
@@ -2293,6 +2536,18 @@ entries:
       - NAT-PV-II-0487
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: radon
+    definition: Radon is a naturally occurring radioactive gas that can seep into homes, accumulate in
+      basements, and is measured in picocuries per liter.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: "It is measured in picocuries per liter (pCi/L). The EPA action level is 4 pCi/L: at or
+      above it, fix the home; between 2 and 4, EPA recommends considering a fix"
+    related_terms: []
+    items:
+      - NAT-PV-VI-0387
+      - NAT-PV-VI-0628
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: real estate
     definition: Real estate is the property that brokerage relationships concern, involving agency
       duties and disclosures.
@@ -2330,6 +2585,16 @@ entries:
       - NAT-PV-II-0741
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reasonable person
+    definition: The reasonable person is a hypothetical individual whose judgment determines whether a
+      fact is important for buying, selling, or leasing a property.
+    source: REP Ref. Agency
+    quoted_text: a reasonable person would consider important
+    related_terms: []
+    items:
+      - NAT-PV-VI-0382
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: recommendation
     definition: A recommendation is a suggestion by a licensee for a client to obtain a professional
       inspection or test, which the licensee should document.
@@ -2416,6 +2681,21 @@ entries:
       - NAT-PV-IV-0536
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: release
+    definition: Under CERCLA, a release is any spilling, leaking, pumping, pouring, emitting, emptying,
+      discharging, injecting, escaping, leaching, dumping, or disposing into the environment,
+      excluding releases that result in workplace-only exposures and emissions from motor vehicle
+      engine exhaust.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: (22) The term "release" means any spilling, leaking, pumping, pouring, emitting,
+      emptying, discharging, injecting, escaping, leaching, dumping, or disposing into the
+      environment
+    related_terms: []
+    items:
+      - NAT-PV-VI-0096
+      - NAT-PV-VI-0616
+    status: quote_verified
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: religious organizations
     definition: A religious organization is an entity exempt from ADA Title III, meaning the
       accessibility requirements do not apply to it or to places of worship it controls.
@@ -2463,6 +2743,18 @@ entries:
       - NAT-PV-II-0009
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: risk management
+    definition: A set of practices requiring written disclosure of all known material facts,
+      recommendation of inspections, and prohibiting speculation when answering condition or hazard
+      questions.
+    source: "[REP Ref. Property Condition & Environmental — § 5.5 Risk management practices]"
+    quoted_text: Written disclosure of every known material fact before the buyer is bound. ... Never
+      answering condition or hazard questions from guesswork.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0630
+    status: draft
+    model: groq/openai/gpt-oss-120b
   - term: rule of construction
     definition: The rule of construction is a hierarchy used to resolve conflicts in metes-and-bounds
       descriptions, giving priority to natural monuments over artificial ones, then adjoining
@@ -3123,6 +3415,17 @@ entries:
       - NAT-PV-I-0444
     status: quote_verified
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: waiting period
+    definition: The waiting period is the time after purchasing an NFIP flood insurance policy before
+      the coverage becomes effective, normally 30 days unless the policy is bought for a loan
+      closing.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: NFIP policies generally have a 30‑day waiting period except when purchased for a loan closing.
+    related_terms: []
+    items:
+      - NAT-PV-VI-0629
+    status: quote_verified
+    model: groq/openai/gpt-oss-120b
   - term: warranty
     definition: In a deed, the warranty covenant is the grantor's promise to defend the grantee's title
       against any lawful claims.
