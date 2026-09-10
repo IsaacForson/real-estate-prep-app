@@ -39,7 +39,11 @@ watch(() => item.value?.id, () => { chosen.value = item.value && session.value ?
 watch(flagKey, loadFlags, { immediate: true });
 
 onMounted(async () => {
-  if (!session.value && study.activeSession.value) await study.resume(study.activeSession.value.id);
+  // `session` above falls back to `activeSession` so the header can render before the questions
+  // load — so it is truthy on arrival from Home's "Continue" banner and must NOT be what decides
+  // whether to resume. Only `study.session` means "this session's items are loaded"; testing the
+  // fallback skipped resume(), left `items` empty, and condemned a perfectly good exam below.
+  if (!study.session.value && study.activeSession.value) await study.resume(study.activeSession.value.id);
   if (!study.session.value && !study.activeSession.value) { await navigateTo("/app/mocks", { replace: true }); return; }
   // the session's questions are not on this device (stale ids from an earlier build): drop it instead of a blank exam
   if (!study.current.value && (session.value?.itemIds.length ?? 0) > 0) {

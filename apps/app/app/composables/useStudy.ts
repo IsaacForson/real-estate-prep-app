@@ -306,25 +306,36 @@ export function useStudy() {
   async function resume(sessionId?: string): Promise<StudySession | null> {
     const s = sessionId ? await repo.getSession(sessionId) : await repo.activeSession();
     if (!s || s.endedAt) return null;
-    // A session is only resumable while its questions can still be resolved. Batch content has a
-    // six-hour TTL and the local cache can be cleared, so an older session can point at ids that no
-    // longer exist on this device. Offering "Continue your session" and then having nothing to show
-    // is worse than not offering it, so retire the session and let the learner start a fresh one.
-    if (s.itemIds.length > 0 && (await getItems(s.itemIds)).length === 0) {
-      await repo.setActiveSession(null);
-      active.value = null;
-      session.value = null;
-      items.value = [];
-      return null;
-    }
+    if (await retireIfUnresolvable(s)) return null;
     await repo.setActiveSession(s.id);
     active.value = s;
     events.track("session_resume", { session_id: s.id, kind: s.kind, position: s.position });
     return loadSession(s);
   }
 
+  /**
+   * A session is only resumable while its questions can still be resolved. Batch content has a
+   * six-hour TTL and the local cache can be cleared, so an older session can point at ids that no
+   * longer exist on this device. Offering "Continue where you stopped" and then having nothing to
+   * show is worse than not offering it, so retire it and let the learner start a fresh one.
+   * Returns true when the session was retired.
+   */
+  async function retireIfUnresolvable(s: StudySession): Promise<boolean> {
+    if (!s.itemIds.length || (await getItems(s.itemIds)).length > 0) return false;
+    await repo.setActiveSession(null);
+    active.value = null;
+    session.value = null;
+    items.value = [];
+    return true;
+  }
+
   async function refreshActive(): Promise<StudySession | null> {
-    active.value = await repo.activeSession();
+    const s = await repo.activeSession();
+    // Every surface reads the active session from here — the Home "Continue" banner, the practice
+    // hub's in-progress card — so the resumability check belongs here and not only in resume(),
+    // which runs after the learner has already tapped a dead link.
+    if (s && !s.endedAt && (await retireIfUnresolvable(s))) { activeLoaded.value = true; return null; }
+    active.value = s;
     activeLoaded.value = true;
     return active.value;
   }
