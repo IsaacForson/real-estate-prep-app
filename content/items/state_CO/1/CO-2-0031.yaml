@@ -1,0 +1,44 @@
+id: CO-2-0031
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A license applicant in Colorado has a prior misdemeanor conviction and wants to know if they
+  will likely be granted a license before finishing education requirements. According to Colorado
+  rule, what may they request?
+options:
+  - A preliminary advisory opinion regarding likelihood of licensure
+  - A request for a waiver of the education and experience requirements
+  - A submission of a reciprocity application from another jurisdiction
+  - A petition for a temporary license while the investigation proceeds
+key: A
+explanation: Commission Rule 3.8 allows applicants with a past civil judgment or criminal conviction
+  to request a preliminary advisory opinion on licensure likelihood before completing requirements.
+  The distractor about a waiver is not authorized by this rule.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) Commission Rule 3.8
+  url: null
+  quoted_text: Applicants with a past civil judgment or criminal conviction may request a “preliminary
+    advisory opinion” regarding the likelihood of receiving a license before completing the
+    requirements to apply for a license
+  secondary: []
+terms:
+  - preliminary advisory opinion
+  - criminal conviction
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

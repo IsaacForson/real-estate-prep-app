@@ -1,0 +1,49 @@
+id: AZ-20-0036
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A non-licensee who works for a real estate broker collects in-person rent from tenants and
+  provides a receipt for each payment. Under Arizona law, is this person required to be licensed as
+  a real estate salesperson?
+options:
+  - The person is not required to be licensed because the activity falls under the clerical duties
+    exemption
+  - The person must be licensed only if the rent collected exceeds $1,000 per month
+  - The person must be licensed because collecting rent is a licensed activity
+  - The person is not required to be licensed only if the broker pays a salary
+key: A
+explanation: The statute exempts from licensing a non-licensee who works for a broker, collects
+  in-person rent, and provides a receipt as part of clerical duties. Therefore, the person described
+  is not required to be licensed. The distractor claiming that collecting rent always requires a
+  license is incorrect because the exemption specifically covers this scenario.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(g)
+  url: null
+  quoted_text: Collects or offers, attempts or agrees to collect rent for the use of real estate,
+    businesses and business opportunities or timeshare interests. This subdivision does not apply to
+    a person who is not a licensee, who works for a real estate broker or a real estate salesperson,
+    who collects in-person rent and related fees on behalf of the real estate broker or real estate
+    salesperson for the use of real estate as part of the person's clerical duties and who provides
+    a receipt when rent is paid.
+  secondary: []
+terms:
+  - rent
+  - license
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

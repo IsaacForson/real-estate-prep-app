@@ -1,0 +1,41 @@
+id: CA-4-0044
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A licensee asks an appraiser to provide a target value for the property before the appraisal
+  is completed. According to Cal. Code Regs. tit. 10, § 2785(a)(5), this conduct is:"
+options:
+  - permissible under the regulations
+  - considered improper influence
+  - allowed if disclosed to the lender
+  - considered negligible influence
+key: B
+explanation: The key is correct because §2785(a)(5) defines requesting an estimated, predetermined,
+  or desired valuation prior to completion of the appraisal as improper influence. The distractor
+  “permissible under the regulations” is wrong as the rule expressly prohibits such requests.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2785(a)(5)
+  url: null
+  quoted_text: requesting that an appraiser provide an estimated, predetermined, or desired valuation
+    in an appraisal report prior to the completion of the appraisal report,
+  secondary: []
+terms:
+  - appraiser
+  - valuation
+  - improper influence
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

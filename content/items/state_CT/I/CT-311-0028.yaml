@@ -1,0 +1,47 @@
+id: CT-311-0028
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed real estate salesperson serving as a member of the Connecticut Real Estate
+  Commission resigns effective immediately. According to Connecticut law, what action must the
+  Governor take regarding the vacancy?
+options:
+  - The Governor must leave the vacancy unfilled until the next appointment cycle
+  - The Governor must appoint a successor to serve the unexpired term and until a new successor
+    qualifies
+  - The Governor must require the remaining members to vote to fill the vacancy
+  - The Governor must appoint a successor to serve a full new term starting next fiscal year
+key: B
+explanation: The law requires the Governor to appoint a successor who serves for the unexpired
+  portion of the vacated term and until that successor’s own successor is appointed and qualifies.
+  Leaving the vacancy open or letting the remaining members vote internally does not satisfy this
+  requirement. Appointing someone to a full new term contradicts the provision limiting the
+  appointment to the unexpired portion.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311a
+  url: null
+  quoted_text: Upon the death, resignation or removal of a member, the Governor shall appoint a
+    successor to serve for the unexpired portion of the vacated term and until such member's
+    successor is appointed and qualifies.
+  secondary: []
+terms:
+  - vacancy
+  - successor
+  - governor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

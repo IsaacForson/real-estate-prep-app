@@ -1,0 +1,41 @@
+id: CO-2-0022
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Colorado statute, what does the term 'employing real estate broker' mean?
+options:
+  - A broker who supervises salespersons in a real estate office
+  - A broker who holds the majority ownership interest in the brokerage
+  - A broker who is shown in commission records as employing or engaging another broker
+  - A broker who has maintained an active license for five or more years
+key: C
+explanation: The statute defines ‘employing real estate broker’ as a broker shown in commission
+  records as employing or engaging another broker (Colo. Rev. Stat. § 12-10-201(2)). The distractor
+  describing supervision of salespersons is a common duty but not the statutory definition.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(2)
+  url: null
+  quoted_text: “Employing real estate broker” or “employing broker” means a broker who is shown in
+    commission records as employing or engaging another broker
+  secondary: []
+terms:
+  - employing broker
+  - commission records
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

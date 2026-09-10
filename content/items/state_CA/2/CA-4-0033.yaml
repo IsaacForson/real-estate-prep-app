@@ -1,0 +1,44 @@
+id: CA-4-0033
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a home and later discovers a cracked foundation that was visible during a
+  reasonable inspection. Under Section 2079.5, what effect does this have on the buyer's ability to
+  claim breach of duty by the broker?
+options:
+  - The buyer is barred from recovery because they had a duty to exercise reasonable care.
+  - The buyer may recover damages because the broker's inspection was insufficient.
+  - The buyer may recover damages if the defect was obvious and easily seen.
+  - The buyer can still sue the broker for nondisclosure because the broker must discover all
+    defects.
+key: A
+explanation: Section 2079.5 provides that nothing in the article relieves a buyer of the duty to
+  exercise reasonable care to protect themselves, including facts within their diligent observation.
+  Because the cracked foundation was observable, the buyer’s failure to notice it bars recovery. The
+  broker’s inspection adequacy does not override the buyer’s own duty.
+citation:
+  source: Cal. Civ. Code §§ 2079–2079.25 § 2079.5
+  url: null
+  quoted_text: Nothing in this article relieves a buyer or prospective buyer of the duty to exercise
+    reasonable care to protect himself or herself
+  secondary: []
+terms:
+  - duty
+  - reasonable care
+  - buyer
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

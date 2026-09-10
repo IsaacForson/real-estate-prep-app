@@ -1,0 +1,48 @@
+id: CO-2-0046
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A regularly salaried employee of an apartment complex owner performs customary on-site
+  management duties, including showing units to prospective tenants and collecting rent. Under Colo.
+  Rev. Stat. § 12-10-201(6)(b)(XII), does this employee need a real estate broker license?
+options:
+  - The employee must obtain a broker license unless they also hold a real estate salesperson
+    license.
+  - The employee is exempt only if they also receive a commission for lease negotiations.
+  - The employee must obtain a broker license because any leasing activity requires licensure.
+  - The employee is exempt from licensing as a salaried employee performing customary on-site
+    management duties.
+key: D
+explanation: The statute exempts a regularly salaried employee of an apartment owner who acts as an
+  on-site manager performing customary duties for the employer. The exemption applies regardless of
+  leasing activities as long as the duties are customary on-site management, so a license is not
+  required.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(6)(b)(XII)
+  url: null
+  quoted_text: (XII) A regularly salaried employee of an owner of an apartment building or complex who
+    acts as an on-site manager of such an apartment building or complex. This exemption applies only
+    in respect to the customary duties of an on-site manager performed for his or her employer.
+  secondary: []
+terms:
+  - on-site manager
+  - salaried employee
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

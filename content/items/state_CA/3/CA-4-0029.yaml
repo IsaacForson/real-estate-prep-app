@@ -1,0 +1,42 @@
+id: CA-4-0029
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A licensee tells an appraiser that payment for a completed appraisal report will be withheld
+  unless the appraiser revises the property value upward. According to Cal. Code Regs. tit. 10, §§
+  2705–3109 § 2785(a)(1), this conduct is:"
+options:
+  - The permissible request for additional information
+  - The legitimate negotiation of fees
+  - The allowed conditioning of future business
+  - The improper influence on the appraisal
+key: D
+explanation: Withholding or threatening to withhold payment for a completed appraisal report unless
+  the value is changed is expressly listed as improper influence under subsection (a)(1). The
+  permissible request for additional information is allowed only under subsection (b)(1) and does
+  not apply to this scenario.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 § 2785(a)(1)
+  url: null
+  quoted_text: (1) withholding or threatening to withhold timely payment or partial payment for a
+    completed appraisal report, regardless of whether a sale or financing transaction closes;
+  secondary: []
+terms:
+  - improper influence
+  - withholding payment
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

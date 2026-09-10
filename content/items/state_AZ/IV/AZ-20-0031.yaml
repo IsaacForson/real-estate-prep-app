@@ -1,0 +1,39 @@
+id: AZ-20-0031
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Arizona's licensing definitions, what does 'acting in concert' mean?
+options:
+  - Acting in concert means evidence of collaborating to pursue a concerted plan
+  - Acting in concert means a plan to offer lots for sale or lease
+  - Acting in concert means a person who controls an entity
+  - Acting in concert means a natural person licensed as a broker
+key: A
+explanation: The statute defines acting in concert as evidence of collaborating to pursue a
+  concerted plan (§ 32-2101(1)). The distractor describing a plan to offer lots confuses acting in
+  concert with the definition of a common promotional plan.
+citation:
+  source: Ariz. Rev. Stat. § 32-2101
+  url: null
+  quoted_text: '"Acting in concert" means evidence of collaborating to pursue a concerted plan.'
+  secondary: []
+terms:
+  - acting in concert
+  - collaborating
+  - concerted plan
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

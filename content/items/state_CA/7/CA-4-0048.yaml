@@ -1,0 +1,42 @@
+id: CA-4-0048
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a purchase agreement for a 16‑year‑old buyer who signs the contract. Under
+  Cal. Civ. Code § 1556, what is the effect on the contract?
+options:
+  - The contract is void because minors are incapable of contracting.
+  - The contract is voidable at the option of the minor.
+  - The contract is enforceable because the licensee acted in good faith.
+  - The contract is valid if a parent co-signs.
+key: A
+explanation: The statute declares minors incapable of contracting, rendering any contract they enter
+  void. Thus, the purchase agreement signed by the 16‑year‑old buyer has no legal effect. The
+  voidable‑at‑option rule applies only to voidable contracts, not to those void for incapacity, and
+  good faith or parental co‑signature does not cure the incapacity.
+citation:
+  source: "### Cal. Civ. Code §§ 1556–1559 — Cal. Civil Code - CHAPTER 2. Parties 1556-1559 — § 1556"
+  url: null
+  quoted_text: All persons are capable of contracting, except minors, persons of unsound mind, and
+    persons deprived of civil rights.
+  secondary: []
+terms:
+  - minor
+  - contract
+  - capacity
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

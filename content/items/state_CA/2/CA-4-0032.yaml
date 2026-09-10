@@ -1,0 +1,43 @@
+id: CA-4-0032
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker has a written listing agreement with a seller to find a buyer. During a visual
+  inspection, the broker discovers a leaky roof that would affect the property's value. Under
+  Section 2079(a), what must the broker do?
+options:
+  - Disclose the defect to the buyer.
+  - Wait until after closing to disclose the defect.
+  - Inform only the seller of the defect.
+  - Ignore the defect because it is not visible.
+key: A
+explanation: Section 2079(a) requires a broker with a written contract to find a buyer to disclose
+  all facts materially affecting value or desirability that an inspection would reveal. The leaky
+  roof is such a fact, so it must be disclosed to the buyer. Informing only the seller does not
+  satisfy the duty to the prospective buyer.
+citation:
+  source: Cal. Civ. Code §§ 2079–2079.25 § 2079(a)
+  url: null
+  quoted_text: to disclose to that prospective buyer all facts materially affecting the value or
+    desirability of the property
+  secondary: []
+terms:
+  - disclosure
+  - material fact
+  - inspection
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

@@ -1,0 +1,60 @@
+id: CO-2-0049
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has completed forty‑eight hours of real estate law and practice, forty‑eight
+  hours of understanding and preparation of Colorado real estate contracts, and sixty hours of
+  instruction in the areas of trust accounts and record keeping, real estate closings, current legal
+  issues, and practical applications. How many additional hours from those listed areas must the
+  applicant complete to satisfy the broker license education requirement?
+options:
+  - 18 hours
+  - 12 hours
+  - 24 hours
+  - 6 hours
+key: B
+explanation: The rule demands a total of seventy‑two hours from the listed areas; subtracting the
+  sixty hours already completed leaves twelve hours needed. The six‑hour distractor results from
+  mistakenly subtracting the forty‑eight‑hour law‑and‑practice requirement instead of the list
+  requirement.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-203(4)(a)(I)-(III)
+  url: null
+  quoted_text: >-
+    (I) Forty-eight hours of classroom instruction or equivalent correspondent hours in real estate
+    law and real estate practice; and
+
+    (II) Forty-eight hours of classroom instruction or equivalent correspondent hours in
+    understanding and preparation of Colorado real estate contracts; and
+
+    (III) A total of seventy-two hours of instruction or equivalent correspondence hours from the
+    following areas of study:
+  secondary: []
+math:
+  worked_solution: 72 required − 60 completed = 12 additional hours
+  formulas:
+    - additional_hours = required_total − completed_hours
+  onscreen_calculator_only: false
+terms:
+  - trust accounts
+  - record keeping
+  - broker license
+  - education
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

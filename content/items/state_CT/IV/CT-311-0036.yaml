@@ -1,0 +1,43 @@
+id: CT-311-0036
+jurisdiction: CT
+bank: state_CT
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After the buyer and seller have signed a purchase agreement for a residential property, what
+  must be attached to the agreement according to Conn. Gen. Stat. §20-327b?
+options:
+  - A photocopy of the report with only the seller's signature
+  - The original residential condition report only, without any copies
+  - No attachment required when the report was previously provided
+  - A photocopy of the report with both seller and buyer signatures
+key: D
+explanation: Subsection (a) mandates that a photocopy of the report containing the signatures of
+  both seller and purchaser be attached to any agreement to purchase the property. A copy with only
+  the seller's signature does not meet this requirement.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-327b
+  url: null
+  quoted_text: A photocopy, duplicate original, facsimile transmission or other exact reproduction or
+    duplicate of the written residential condition report or reports containing the signatures of
+    both seller and purchaser shall be attached to any agreement to purchase the property.
+  secondary: []
+terms:
+  - condition report
+  - signature
+  - attachment
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

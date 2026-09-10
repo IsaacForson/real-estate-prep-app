@@ -1,0 +1,41 @@
+id: DC-198-0021
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to DCMR Title 17, Chapter 26, what is the minimum number of Board members required
+  to constitute a quorum for the Board of Real Estate?
+options:
+  - Six members
+  - Five members
+  - Four members
+  - Three members
+key: B
+explanation: The correct answer is C because 2600.8 explicitly states that five members of the Board
+  constitute a quorum. The distractor "Three members" is incorrect as the rule requires five
+  members, not three.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 — DCMR Title 17, Chapter 26 - Real Estate Licenses (Board of
+    Real Estate rules) 2600.8
+  url: null
+  quoted_text: Five (5) members of the Board shall constitute a quorum.
+  secondary: []
+terms:
+  - quorum
+  - board
+  - members
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

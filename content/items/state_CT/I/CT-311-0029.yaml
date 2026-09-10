@@ -1,0 +1,43 @@
+id: CT-311-0029
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission is convened to vote on a license renewal application.
+  What condition must be satisfied for the Commission to have authority to act on this matter?
+options:
+  - The Commission must have a majority of its members present to exercise its powers
+  - The Commission must have at least one member present to exercise its powers
+  - The Commission must have all members present to act on licensing matters
+  - The Commission must have the chairperson present to exercise its powers
+key: A
+explanation: A majority of the commission members must be present to constitute a quorum, which is
+  necessary for the commission to exercise its powers, including voting on license renewals. Having
+  only one member or only the chairperson present does not meet the quorum requirement. Requiring
+  all members to be present imposes a stricter condition than the law demands.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311b
+  url: null
+  quoted_text: A majority of the members of the commission shall constitute a quorum for the exercise
+    of the powers or authority conferred upon it.
+  secondary: []
+terms:
+  - quorum
+  - majority
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

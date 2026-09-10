@@ -1,0 +1,44 @@
+id: AZ-20-0035
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person offers to sell five lots in a proposed subdivision. Under Arizona law, does this
+  person qualify as a subdivider?
+options:
+  - The person is not a subdivider because fewer than six lots are offered
+  - The person is not a subdivider because only lots, not parcels, are offered
+  - The person is a subdivider because offering any lot qualifies
+  - The person is not a subdivider because the subdivision is not yet recorded
+key: A
+explanation: The statute defines a subdivider as someone who offers six or more lots for sale or
+  lease. Offering only five lots does not meet this threshold, so the person is not a subdivider.
+  The distractor claiming that offering any lot qualifies is incorrect because the rule explicitly
+  requires six or more lots.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(58)(a)
+  url: null
+  quoted_text: Means any person who offers for sale or lease six or more lots, parcels or fractional
+    interests in a subdivision or who causes land to be subdivided into a subdivision for the
+    subdivider or for others, or who undertakes to develop a subdivision.
+  secondary: []
+terms:
+  - subdivider
+  - lot
+  - subdivision
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

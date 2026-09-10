@@ -1,0 +1,48 @@
+id: DE-2901-0023
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant holds a real estate license in another state and seeks licensure in Delaware.
+  Under Del. Code Ann. tit. 24, ch. 29, what must the Commission do regarding this applicant's
+  background?
+options:
+  - Approving the forms used for licensure applications
+  - Ordering compensation from the Real Estate Guaranty Fund for consumers
+  - Establishing qualifications for instructors and course providers
+  - Evaluating records for disciplinary history and complaints
+key: D
+explanation: The correct answer is 'Evaluating records for disciplinary history and complaints'
+  because §2906(a)(8) requires the Commission to evaluate certified records to determine whether an
+  applicant previously licensed in another jurisdiction has engaged in any act or offense that would
+  be grounds for disciplinary action and whether there are unresolved complaints. The distractor
+  'Approving the forms used for licensure applications' describes the duty under subsection (2),
+  which is unrelated to evaluating out-of-state applicants.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II), § 2906(a)(8)
+  url: null
+  quoted_text: Evaluate certified records to determine whether an applicant for licensure who
+    previously has been licensed, certified or registered in another jurisdiction to practice real
+    estate services has engaged in any act or offense that would be grounds for disciplinary action
+    under this chapter and whether there are disciplinary proceedings or unresolved complaints
+    pending against such applicant for such acts or offenses.
+  secondary: []
+terms:
+  - evaluation
+  - records
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

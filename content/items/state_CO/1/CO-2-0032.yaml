@@ -1,0 +1,43 @@
+id: CO-2-0032
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Colorado real estate broker receives notice of an administrative law judge's initial
+  decision to suspend their license. If the broker does **NOT** file written objections with the
+  Commission within what time period does the decision become final?
+options:
+  - Within 20 days
+  - Within 60 days
+  - Within 30 days
+  - Within 10 days
+key: C
+explanation: The enforcement provisions state that if written objections are not filed within 30
+  days, the administrative law judge’s initial decision becomes final. The 10‑day distractor
+  confuses the period with other procedural deadlines.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) Enforcement Section
+  url: null
+  quoted_text: If written objections are not filed with the Commission within 30 days, the initial
+    decision becomes final
+  secondary: []
+terms:
+  - written objections
+  - initial decision
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

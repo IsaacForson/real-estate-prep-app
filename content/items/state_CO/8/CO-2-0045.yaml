@@ -1,0 +1,43 @@
+id: CO-2-0045
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Colo. Rev. Stat. § 12-10-201(6)(b), which of the following persons is exempt from the
+  definition of 'real estate broker'?
+options:
+  - An attorney-in-fact acting without compensation under a power of attorney
+  - A licensed real estate salesperson who receives a share of commission
+  - A property manager who leases residential units for a fee on behalf of the owner
+  - A person who negotiates a purchase of land for a developer and receives a fee
+key: A
+explanation: The statute expressly exempts an attorney-in-fact acting without compensation under a
+  power of attorney from the definition of real estate broker. A licensed salesperson who receives a
+  share of commission is not listed as exempt and would therefore need a broker license.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(6)(b)(I)
+  url: null
+  quoted_text: (I) Any attorney-in-fact acting without compensation under a power of attorney, duly
+    executed by an owner of real estate, authorizing the consummation of a real estate transaction;
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

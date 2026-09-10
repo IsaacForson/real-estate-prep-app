@@ -1,0 +1,46 @@
+id: CO-2-0043
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A license applicant has a prior misdemeanor conviction. What may the applicant do before
+  completing the licensing requirements?
+options:
+  - Delaying application for two years after conviction
+  - Requesting a preliminary advisory opinion from the Commission
+  - Disclosing the conviction to the employing broker before licensure
+  - Undertaking additional continuing education courses before application
+key: B
+explanation: The statute allows applicants with a past civil judgment or criminal conviction to
+  request a preliminary advisory opinion regarding the likelihood of receiving a license before
+  finishing the application requirements. Waiting two years applies to reciprocity recognition, not
+  to conviction disclosures, and the other actions are not specified as permissible pre‑application
+  steps.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) B. Licensing
+  url: null
+  quoted_text: Applicants with a past civil judgment or criminal conviction may request a “preliminary
+    advisory opinion” regarding the likelihood of receiving a license before completing the
+    requirements to apply for a license
+  secondary: []
+terms:
+  - license
+  - conviction
+  - advisory opinion
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

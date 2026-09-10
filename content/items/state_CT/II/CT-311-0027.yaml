@@ -1,0 +1,45 @@
+id: CT-311-0027
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's affiliation with a broker ends on May 10. The licensee turns over all records to
+  the broker on May 12. Has the licensee complied with the regulation requiring turnover of
+  information and records?
+options:
+  - Yes, because the records were turned over within three days.
+  - No, because the licensee should have turned over the records within ten days.
+  - No, because the records must be turned over immediately upon termination.
+  - Yes, because the broker received the records before the accounting deadline.
+key: C
+explanation: The regulation states that upon termination of affiliation, a licensee shall
+  immediately turn over to the broker any and all information and records obtained during the
+  affiliation. Turning over records two days later does not satisfy the immediate requirement.
+citation:
+  source: Regs., Conn. State Agencies §§ 20-328-1a to 20-328-33 — Regulations of Connecticut State
+    Agencies, Title 20 § 20-328 - Real Estate Brokers and Salesmen (eRegulations official PDF) — §
+    20-328-10a
+  url: null
+  quoted_text: Upon termination of a licensee’s employment or affiliation with a broker, a licensee
+    shall immediately turn over to such broker any and all information and records obtained during
+    the licensee’s employment or affiliation
+  secondary: []
+terms:
+  - termination
+  - records
+  - broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

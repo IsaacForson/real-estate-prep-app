@@ -1,0 +1,42 @@
+id: AZ-20-0041
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum civil penalty per infraction that the commissioner may assess for a
+  licensee who violates any provision of this chapter?
+options:
+  - Up to $2,500 per violation
+  - Up to $5,000 per violation
+  - Up to $1,000 per violation
+  - Up to $500 per violation
+key: C
+explanation: The statute states that a licensee who violates any provision may be assessed a civil
+  penalty in an amount not to exceed one thousand dollars for each infraction. This establishes the
+  $1,000 per violation cap. The other amounts are not supported by the text.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2153 § 32-2160.01
+  url: null
+  quoted_text: may be assessed a civil penalty by the commissioner, after a hearing, in an amount not
+    to exceed one thousand dollars for each infraction.
+  secondary: []
+terms:
+  - civil penalty
+  - infraction
+  - licensee
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

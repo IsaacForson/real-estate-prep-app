@@ -1,0 +1,40 @@
+id: CA-4-0031
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Section 2079.4 of the Civil Code, what is the maximum period allowed for filing a
+  lawsuit for breach of the duty to disclose material facts to a prospective buyer?
+options:
+  - One year from the date of possession.
+  - Two years from the date of possession.
+  - Three years from the date of possession.
+  - Five years from the date of possession.
+key: B
+explanation: Section 2079.4 states that the time for commencement of legal action for breach of duty
+  shall not exceed two years from the date of possession. Therefore, the longest permissible period
+  is two years. A one‑year limit is too short and would bar otherwise timely claims.
+citation:
+  source: Cal. Civ. Code §§ 2079–2079.25 § 2079.4
+  url: null
+  quoted_text: exceed two years from the date of possession
+  secondary: []
+terms:
+  - limitation
+  - possession
+  - liability
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

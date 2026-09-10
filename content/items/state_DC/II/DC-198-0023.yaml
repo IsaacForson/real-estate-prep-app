@@ -1,0 +1,45 @@
+id: DC-198-0023
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant passes the property manager examination on March 10. By what date must the
+  applicant submit the license application to the Board to avoid having to retake the examination,
+  according to DCMR Title 17, Chapter 26?
+options:
+  - Submit the application by December 10, six months after passing the exam
+  - Submit the application by June 10, six months after passing the exam
+  - Submit the application by March 10 of the following year, six months after passing the exam
+  - Submit the application by September 10, six months after passing the exam
+key: D
+explanation: The correct answer is A because 2603.2 requires the application to be submitted within
+  six months of passing the examination; March 10 plus six months is September 10. The distractor
+  "Submit the application by June 10, six months after passing the exam" is wrong because June 10 is
+  only three months after the exam, not six months as required.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 — DCMR Title 17, Chapter 26 - Real Estate Licenses (Board of
+    Real Estate rules) 2603.2
+  url: null
+  quoted_text: An applicant for a property manager's license who has passed the required examination
+    shall submit an application for a license to the Board with the required fees within six (6)
+    months of passing the examination.
+  secondary: []
+terms:
+  - property manager
+  - license
+  - examination
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

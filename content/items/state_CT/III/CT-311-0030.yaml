@@ -1,0 +1,44 @@
+id: CT-311-0030
+jurisdiction: CT
+bank: state_CT
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Conn. Gen. Stat. § 20-311a(b), what restriction applies to the political party
+  affiliation of members of the Connecticut Real Estate Commission?
+options:
+  - The commission shall ensure that no more than half of its members belong to the same political
+    party.
+  - The commission shall require that at least one member represents each political party.
+  - The commission shall not have a bare majority of members from the same political party.
+  - The commission shall maintain equal numbers of Democrats and Republicans on its board.
+key: C
+explanation: The statute explicitly states that 'Not more than a bare majority of the commission
+  shall be members of the same political party.' This means the commission cannot have a majority
+  (more than half) of its members from any single party. The other options either impose a stricter
+  limit, require party representation, or demand equal numbers, none of which match the language of
+  the law.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311a
+  url: null
+  quoted_text: Not more than a bare majority of the commission shall be members of the same political
+    party and there shall be at least one member from each congressional district.
+  secondary: []
+terms:
+  - political party
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

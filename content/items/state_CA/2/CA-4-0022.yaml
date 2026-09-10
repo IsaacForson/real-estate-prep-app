@@ -1,0 +1,43 @@
+id: CA-4-0022
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A homeowner hires a real estate salesperson to market the property and to negotiate offers
+  with prospective buyers. Which description best characterizes the salesperson's relationship to
+  the homeowner under Section 2295?
+options:
+  - An agent representing the homeowner in dealings with third persons.
+  - An broker acting solely as a consultant to the homeowner without representation.
+  - An third‑party facilitator who provides services but does not represent the homeowner.
+  - An tenant who occupies the homeowner's property and has no agency relationship.
+key: A
+explanation: Section 2295 defines an agent as one who "represents another, called the principal, in
+  dealings with third persons." The salesperson is hired to negotiate with buyers, thus representing
+  the homeowner in third‑person dealings. The other options describe roles that lack representation
+  of the principal, so they do not meet the statutory definition.
+citation:
+  source: Cal. Civ. Code §§ 2295–2300 — Cal. Civil Code - ARTICLE 1. Definition of Agency 2295-2300 —
+    § 2295
+  url: null
+  quoted_text: An agent is one who represents another, called the principal, in dealings with third persons.
+  secondary: []
+terms:
+  - agency
+  - principal
+  - agent
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

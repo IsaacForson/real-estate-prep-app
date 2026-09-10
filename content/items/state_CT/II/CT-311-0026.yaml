@@ -1,0 +1,44 @@
+id: CT-311-0026
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker's affiliation with a supervising licensee ends on June 1. By what date
+  must the associate broker notify the department of this termination?
+options:
+  - June 08
+  - June 14
+  - June 15
+  - June 22
+key: C
+explanation: The law requires notification not later than fourteen calendar days after termination.
+  Fourteen days after June 1 is June 15, so the associate broker must notify the department by that
+  date.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-312c
+  url: null
+  quoted_text: If an associate broker's affiliation with a supervising licensee is terminated, the
+    associate broker shall notify the department of such termination not later than fourteen
+    calendar days after such termination or such associate broker's affiliation with another
+    supervising licensee, whichever occurs first.
+  secondary: []
+terms:
+  - associate
+  - broker
+  - termination
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

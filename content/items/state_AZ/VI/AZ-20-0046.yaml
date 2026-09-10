@@ -1,0 +1,51 @@
+id: AZ-20-0046
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson licensed under Arizona law receives a payment from a buyer for facilitating the
+  sale of a property. The buyer is not a licensed broker and is not authorized to provide
+  compensation under §32-2155. Which of the following is a ground for denial, suspension, or
+  revocation of the salesperson’s license under Ariz. Rev. Stat. § 32-2153?
+options:
+  - The salesperson's acceptance of compensation from a buyer who is not authorized to provide
+    compensation under §32-2155.
+  - The salesperson's acceptance of compensation from the employing broker for performing licensed
+    real estate activities as permitted by law.
+  - The salesperson's acceptance of compensation from a licensed mortgage broker for negotiating a
+    loan secured by real property, provided all conditions of §32-2155(D) are satisfied.
+  - The salesperson's acceptance of compensation from a friend in the form of a $100 gift for
+    personal reasons unrelated to any licensed activity and not tied to any real estate transaction.
+key: A
+explanation: The rule prohibits accepting compensation for performing acts specified in the chapter
+  from any person not authorized to provide compensation under §32-2155. Accepting payment from an
+  unauthorized buyer meets this prohibition. The distractor involving the employing broker describes
+  an authorized source of compensation under the statute.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2153(A)(7)
+  url: null
+  quoted_text: Accepted compensation as a licensee for performing any of the acts specified in this
+    chapter from any person who is not authorized to provide compensation pursuant to section
+    32-2155.
+  secondary: []
+terms:
+  - compensation
+  - authorization
+  - buyer
+  - licensee
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

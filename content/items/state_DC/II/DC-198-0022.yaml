@@ -1,0 +1,51 @@
+id: DC-198-0022
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed real estate broker in Washington, D.C. wishes to begin working as a property
+  manager. What must the broker do before acting as a property manager, according to DCMR Title 17,
+  Chapter 26?
+options:
+  - The applicant must begin managing properties immediately because the broker license covers
+    property management
+  - The applicant must submit a property manager license application and meet all other requirements
+    before acting
+  - The applicant must only pay the property manager license fee and submit the application
+  - The applicant must retake the real estate salesperson exam and complete additional continuing
+    education
+key: B
+explanation: The correct answer is B because 2603.3 provides that a licensed broker is deemed to
+  have satisfied the educational and examination requirements but must satisfy all other
+  requirements for property manager licensure prior to acting. The distractor "The applicant must
+  only pay the property manager license fee and submit the application" is wrong because merely
+  paying the fee and submitting the application does not fulfill all other requirements such as
+  providing addresses and a sworn affidavit.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 — DCMR Title 17, Chapter 26 - Real Estate Licenses (Board of
+    Real Estate rules) 2603.3
+  url: null
+  quoted_text: A person licensed as a real estate broker pursuant to § 2601 of this chapter shall be
+    deemed to have satisfied the educational and examination requirements for licensure as a
+    property manager under this chapter, but is required to satisfy all other requirements for
+    licensure as a property manager prior to acting as a property manager.
+  secondary: []
+terms:
+  - property manager
+  - broker
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

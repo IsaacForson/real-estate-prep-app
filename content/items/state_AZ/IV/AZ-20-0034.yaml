@@ -1,0 +1,43 @@
+id: AZ-20-0034
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Arizona law, what is the minimum number of lots, parcels, or fractional interests
+  that constitutes a subdivision?
+options:
+  - Six or more
+  - Three or more
+  - Five or more
+  - Four or more
+key: A
+explanation: The statute defines a subdivision as land divided into six or more lots, parcels, or
+  fractional interests for sale or lease. Therefore, the minimum number is six. The distractor 'Five
+  or more' is incorrect because the threshold is specifically six, not five.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(59)(a)
+  url: null
+  quoted_text: Means improved or unimproved land or lands divided or proposed to be divided for the
+    purpose of sale or lease, whether immediate or future, into six or more lots, parcels or
+    fractional interests.
+  secondary: []
+terms:
+  - subdivision
+  - lot
+  - parcel
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

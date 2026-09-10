@@ -1,0 +1,48 @@
+id: CA-4-0043
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A borrower has filed a Chapter 13 bankruptcy case, and the bankruptcy court has not yet
+  entered an order closing or dismissing the case. According to Cal. Civ. Code § 2920.5(c)(2)(C), is
+  this borrower eligible for a foreclosure prevention alternative offered by the mortgage servicer?
+options:
+  - Yes, because filing bankruptcy automatically qualifies the borrower for all loss mitigation
+    options
+  - No, because the borrower has surrendered the property by delivering the keys to the mortgagee
+  - No, because the borrower has filed a bankruptcy case that has not been closed, dismissed, or
+    granted relief from the stay
+  - Yes, as long as the borrower continues to make the contractual mortgage payments
+key: C
+explanation: Cal. Civ. Code § 2920.5(c)(2)(C) expressly excludes from the definition of 'borrower'
+  any individual who has filed a bankruptcy case under Chapters 7, 11, 12, or 13 if the bankruptcy
+  court has not entered an order closing or dismissing the case or granting relief from the stay.
+  Therefore, the borrower described is not eligible for foreclosure prevention alternatives. The
+  other options either misstate the effect of bankruptcy or describe unrelated circumstances.
+citation:
+  source: Cal. Civ. Code §§ 2920–2944.10 — Cal. Civil Code - ARTICLE 1. Mortgages in General
+    2920-2944.10 § 2920.5(c)(2)(C)
+  url: null
+  quoted_text: (C) An individual who has filed a case under Chapter 7, 11, 12, or 13 of Title 11 of
+    the United States Code and the bankruptcy court has not entered an order closing or dismissing
+    the bankruptcy case, or granting relief from a stay of foreclosure.
+  secondary: []
+terms:
+  - bankruptcy
+  - borrower
+  - foreclosure prevention
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

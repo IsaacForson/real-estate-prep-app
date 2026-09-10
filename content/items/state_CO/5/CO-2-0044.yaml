@@ -1,0 +1,43 @@
+id: CO-2-0044
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wishes to hire another broker to work under them. Under Colorado law, what must be
+  true for the hiring broker to be considered an 'employing broker'?
+options:
+  - Being recorded as the broker who sponsors the other broker's license
+  - Being listed as the sponsoring broker on the other broker's license application
+  - Being shown in commission records as employing or engaging another broker
+  - Being named as the supervising broker in the office's policy manual
+key: C
+explanation: The statute defines an employing broker as a broker who is shown in commission records
+  as employing or engaging another broker. A written contract, payment of salary or commission, or
+  length of licensure are not part of this definition.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(2), C.R.S.
+  url: null
+  quoted_text: “Employing real estate broker” or “employing broker” means a broker who is shown in
+    commission records as employing or engaging another broker
+  secondary: []
+terms:
+  - employing broker
+  - commission records
+  - broker
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

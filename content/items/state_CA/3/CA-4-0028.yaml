@@ -1,0 +1,41 @@
+id: CA-4-0028
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Cal. Bus. & Prof. Code § 11301(a), which entity is created within the Department of
+  Consumer Affairs to administer and enforce the Real Estate Appraisers’ Licensing and Certification
+  Law?
+options:
+  - Office of Appraiser Standards
+  - Division of Real Estate Licensing
+  - Committee on Real Estate Valuation
+  - Bureau of Real Estate Appraisers
+key: D
+explanation: The statute expressly states that a Bureau of Real Estate Appraisers is created within
+  the Department of Consumer Affairs to administer and enforce this part. The other options describe
+  entities that are not mentioned in the cited provision.
+citation:
+  source: Cal. Bus. & Prof. Code §§ 11300–11425 § 11301(a)
+  url: null
+  quoted_text: (a) There is hereby created within the Department of Consumer Affairs a Bureau of Real
+    Estate Appraisers to administer and enforce this part.
+  secondary: []
+terms:
+  - bureau
+  - real estate appraiser
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

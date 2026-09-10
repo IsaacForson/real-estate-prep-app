@@ -1,0 +1,46 @@
+id: AZ-20-0030
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee who works at a brokerage office uses that office address as her address of record.
+  Under Arizona's definition, does this qualify as an address of record?
+options:
+  - The licensee's use of the broker's office address does not qualify as an address of record
+    because the address must be the licensee's residential address
+  - The licensee's use of the broker's office address qualifies as an address of record because the
+    address where a licensee practices is included
+  - The licensee's use of the broker's office address qualifies as an address of record only if a
+    statutory agent address is also provided
+  - The licensee's use of the broker's office address does not qualify as an address of record
+    because only a residential address qualifies
+key: B
+explanation: The definition of address of record includes the address where a licensee practices or
+  is otherwise employed (§ 32-2101(2)(a)). Therefore using the broker's office address qualifies.
+  The distractor claiming only a residential address qualifies is incorrect because the definition
+  also lists the practice address as a valid option.
+citation:
+  source: Ariz. Rev. Stat. § 32-2101
+  url: null
+  quoted_text: '"Address of record" means any of the following: (a) The address where a licensee
+    practices or is otherwise employed.'
+  secondary: []
+terms:
+  - address of record
+  - licensee
+  - practice
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

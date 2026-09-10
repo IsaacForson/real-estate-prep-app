@@ -1,0 +1,48 @@
+id: CA-4-0042
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A mortgage broker recommends a loan product that pays a higher commission but offers less
+  favorable terms to the borrower. Which action violates the broker’s fiduciary duty under Cal. Civ.
+  Code § 2923.1(a)?
+options:
+  - Recommending a loan after disclosing all terms and associated costs to the borrower
+  - Recommending a loan that provides higher compensation to the broker but is less favorable to the
+    borrower
+  - Recommending a loan after providing the borrower with a list of available loan options
+  - Recommending a loan after obtaining the borrower's written consent to the broker's compensation
+key: A
+explanation: Under Cal. Civ. Code § 2923.1(a), a mortgage broker must place the economic interest of
+  the borrower ahead of the broker’s own economic interest. Recommending a loan that pays the broker
+  more but is worse for the borrower violates this duty. The other options describe permissible
+  conduct such as disclosure, consent, or providing options, which do not inherently breach the
+  fiduciary duty.
+citation:
+  source: Cal. Civ. Code §§ 2920–2944.10 — Cal. Civil Code - ARTICLE 1. Mortgages in General
+    2920-2944.10 § 2923.1(a)
+  url: null
+  quoted_text: A mortgage broker providing mortgage brokerage services to a borrower is the fiduciary
+    of the borrower, and any violation of the broker’s fiduciary duties shall be a violation of the
+    mortgage broker’s license law. This fiduciary duty includes a requirement that the mortgage
+    broker place the economic interest of the borrower ahead of his or her own economic interest.
+  secondary: []
+terms:
+  - fiduciary duty
+  - mortgage broker
+  - borrower
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

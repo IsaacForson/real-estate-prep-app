@@ -1,0 +1,45 @@
+id: CO-2-0025
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a Colorado real estate broker license has a prior arrest that never resulted
+  in a conviction. What additional record must the commission obtain before processing the
+  application?
+options:
+  - A name-based judicial record check as defined in section 22-2-119.3(6)(d)
+  - A federal fingerprint-based criminal history record check from the FBI
+  - A copy of the arrest report from the local police department
+  - A character reference letter from three community leaders
+key: A
+explanation: The statute directs the commission to acquire a name-based judicial record check, as
+  defined in section 22-2-119.3(6)(d), for any applicant with an arrest without disposition. The FBI
+  fingerprint check is already required for all applicants and does not satisfy this specific
+  additional requirement.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-203(1)(b)
+  url: null
+  quoted_text: The commission shall acquire a name-based judicial record check, as defined in section
+    22-2-119.3 (6)(d), for an applicant who has a record of arrest without a disposition.
+  secondary: []
+terms:
+  - judicial record
+  - arrest
+  - commission
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

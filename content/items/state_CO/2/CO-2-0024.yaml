@@ -1,0 +1,47 @@
+id: CO-2-0024
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant with a past misdemeanor conviction wants to know whether they are likely to
+  obtain a Colorado real estate license before finishing the required education. What may they
+  request under Colorado law?
+options:
+  - A waiver of the education requirement based on their criminal history
+  - A preliminary advisory opinion from the Commission regarding the likelihood of receiving a
+    license
+  - A temporary license that allows them to practice while completing education
+  - Automatic approval of their license application after submitting fingerprints
+key: B
+explanation: "Under § 12-10-202, applicants with a past civil judgment or criminal conviction may
+  request a preliminary advisory opinion regarding the likelihood of receiving a license before
+  completing the requirements to apply for a license. The other options are not supported: no waiver
+  of education is mentioned, fingerprinting does not guarantee approval, and a temporary license for
+  this purpose is not provided for in the statute."
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-202
+  url: null
+  quoted_text: Applicants with a past civil judgment or criminal conviction may request a “preliminary
+    advisory opinion” regarding the likelihood of receiving a license before completing the
+    requirements to apply for a license (Commission Rule 3.8).
+  secondary: []
+terms:
+  - preliminary advisory opinion
+  - criminal conviction
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"

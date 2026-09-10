@@ -1,0 +1,48 @@
+id: CO-2-0050
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has completed forty‑eight hours of real estate law and practice, forty‑eight
+  hours of understanding and preparation of Colorado real estate contracts, and seventy‑two hours of
+  instruction in real estate closings, current legal issues, and practical applications (with no
+  hours in trust accounts and record keeping). Does this applicant satisfy the broker license
+  education requirement?
+options:
+  - No, because trust accounts and record keeping must be completed separately.
+  - Yes, because the rule only requires a total of seventy‑two hours from the listed areas.
+  - No, because the applicant still needs additional hours of law and practice.
+  - No, because the seventy‑two hours must include at least twenty‑four hours of trust accounts.
+key: B
+explanation: The statute requires a total of seventy‑two hours from the listed areas; it does not
+  mandate a specific amount in each subarea, so completing the hours in closings, legal issues, and
+  practical applications satisfies the requirement. The distractor that insists on a separate
+  trust‑accounts component misreads the rule.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-203(4)(a)(III)
+  url: null
+  quoted_text: "(III) A total of seventy-two hours of instruction or equivalent correspondence hours
+    from the following areas of study:"
+  secondary: []
+terms:
+  - trust accounts
+  - record keeping
+  - broker license
+  - education
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
+review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
+  verifier and QA pending"
