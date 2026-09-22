@@ -1,0 +1,43 @@
+id: MA-87D-0153
+jurisdiction: MA
+bank: state_MA
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A purchaser of registered land acquires a certificate of title that does not note any existing
+  lease. The land is subject to a written lease for ten years that was executed before the purchase.
+  Under M.G.L. c.185 §46, what is the effect of the lease on the purchaser's title?
+options:
+  - The purchaser takes title subject to the lease because leases over seven years are not exempt.
+  - The lease is automatically void because it exceeds seven years.
+  - The purchaser takes title free of the lease because all leases are exempt for up to seven years.
+  - The lease is voidable at the purchaser's option because it was not noted.
+key: A
+explanation: M.G.L. c.185 §46 lists as an exception only leases for a term not exceeding seven
+  years. A ten‑year lease exceeds that limit, so it is not exempt and remains an encumbrance unless
+  noted on the certificate. The purchaser therefore takes title subject to the lease.
+citation:
+  source: M.G.L. c. 185 — Massachusetts General Laws c. 185 — The Land Court and Registration of Title
+    to Land (§ 46) (selected sections cited by the exam outline), official malegislature.gov section
+    pages read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov refuses
+    connections from scripts — § 46
+  url: null
+  quoted_text: Fourth, Any lease for a term not exceeding seven years.
+  secondary: []
+terms:
+  - registered land
+  - lease
+  - encumbrance
+  - certificate of title
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

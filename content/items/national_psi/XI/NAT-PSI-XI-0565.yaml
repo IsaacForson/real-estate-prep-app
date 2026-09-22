@@ -1,0 +1,46 @@
+id: NAT-PSI-XI-0565
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A retail space measures 2,400 square feet and rents for $22 per square foot per year. What is
+  the annual rent for the space?
+options:
+  - $264,000.00
+  - $28,800.00
+  - $4,400.00
+  - $52,800.00
+key: D
+explanation: Annual rent = area × rate per sq ft = 2,400 sq ft × $22/sq ft = $52,800. The
+  distractors represent monthly rent, incorrect multiplication, or using a different rate.
+citation:
+  source: REP Ref. Real Estate Math § 13.1
+  url: null
+  quoted_text: Annual rent = area × rate
+  secondary: []
+math:
+  worked_solution: |-
+    Area = 2,400 sq ft
+    Rate = $22 per sq ft per year
+    Annual rent = 2,400 × 22
+    = $52,800
+  formulas:
+    - Annual rent = area × rate per sq ft
+  onscreen_calculator_only: false
+terms:
+  - rent per square foot
+  - annual rent
+  - area
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

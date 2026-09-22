@@ -1,0 +1,46 @@
+id: NAT-PSI-XI-0574
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee purchased a property for $180,000, spent $25,000 on improvements, and later sold it
+  for $210,000. What is the percent profit or loss on cost?
+options:
+  - 2.38%
+  - 16.67%
+  - 4.88%
+  - 2.44%
+key: D
+explanation: Total cost is the purchase price plus improvements. Profit is the sale price minus
+  total cost. Percent profit (or loss) is the profit divided by total cost, expressed as a
+  percentage.
+citation:
+  source: REP Ref. Real Estate Math § 14.1
+  url: null
+  quoted_text: Percent = (sale price − total cost) ÷ total cost (§ 7.6).
+  secondary: []
+math:
+  worked_solution: |-
+    Total cost = purchase price + improvements = $180,000 + $25,000 = $205,000
+    Profit = sale price − total cost = $210,000 − $205,000 = $5,000
+    Percent profit = profit ÷ total cost = $5,000 ÷ $205,000 = 0.02439 = 2.44%
+  formulas:
+    - Percent profit or loss = (sale price − total cost) ÷ total cost
+  onscreen_calculator_only: false
+terms:
+  - profit
+  - cost
+  - percent
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

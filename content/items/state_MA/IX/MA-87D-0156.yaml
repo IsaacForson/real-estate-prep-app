@@ -1,0 +1,45 @@
+id: MA-87D-0156
+jurisdiction: MA
+bank: state_MA
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A husband incurs a debt for medical services, which is a necessary, and the marital home is
+  held as tenants by the entirety, but the wife lives in a separate residence. Under M.G.L. c. 209 §
+  1, what is the effect of a creditor's attempt to seize the husband's interest in the property?
+options:
+  - The creditor may seize half of the husband's interest
+  - The creditor may seize the husband's interest
+  - The creditor must seek payment from the wife first
+  - The creditor cannot seize the husband's interest
+key: B
+explanation: The statute shields a debtor spouse's interest from seizure only when the property is
+  the principal residence of the non-debtor spouse; here the wife resides elsewhere, so the
+  exemption does not apply. Furthermore, both spouses are jointly or severally liable for
+  necessaries, allowing the creditor to reach the husband's interest. The other options misapply the
+  residency requirement or incorrectly divide ownership.
+citation:
+  source: M.G.L. c. 209 § 1
+  url: null
+  quoted_text: The interest of a debtor spouse in property held as tenants by the entirety shall not
+    be subject to seizure or execution by a creditor of such debtor spouse so long as such property
+    is the principal residence of the nondebtor spouse; provided, however, both spouses shall be
+    liable jointly or severally for debts incurred on account of necessaries furnished to either
+    spouse or to a member of their family.
+  secondary: []
+terms:
+  - tenancy by entirety
+  - creditor
+  - necessaries
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

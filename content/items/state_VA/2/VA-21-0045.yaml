@@ -1,0 +1,42 @@
+id: VA-21-0045
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, by what deadline must a broker place a security deposit received from a
+  tenant into an escrow account, unless the parties agree otherwise in writing?
+options:
+  - By the end of the third business banking day following receipt
+  - By the end of the next business banking day following receipt
+  - By the end of the fifth business banking day following receipt
+  - By the end of the tenth business banking day following receipt
+key: C
+explanation: According to Va. Code Ann. § 54.1-2108.1(B)(2), security deposits paid to a licensee on
+  behalf of a landlord client must be placed in an escrow account by the end of the fifth business
+  banking day following receipt unless otherwise agreed in writing. The third‑day option misstates
+  the statutory deadline.
+citation:
+  source: Va. Code Ann. § 54.1-2108.1(B)(2)
+  url: null
+  quoted_text: Any security deposits paid to a real estate licensee acting on behalf of a landlord
+    client in connection with the lease shall be placed in an escrow account by the end of the fifth
+    business banking day following receipt, unless otherwise agreed to in writing by the principals
+    to a lease transaction.
+  secondary: []
+terms:
+  - security deposit
+  - escrow account
+  - lease
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

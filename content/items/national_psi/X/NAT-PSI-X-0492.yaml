@@ -1,0 +1,46 @@
+id: NAT-PSI-X-0492
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee uses an automatic telephone dialing system to call a residential telephone number
+  to promote a new listing, without the recipient's prior express consent. Under the TCPA, this call
+  is:"
+options:
+  - Lawful if the call is made solely to collect a debt owed to or guaranteed by the United States
+  - Unlawful only if the call is to a cellular telephone service
+  - Lawful because the call promotes a real estate listing
+  - Unlawful unless the call is made for emergency purposes or with prior express consent
+key: D
+explanation: Under TCPA subsection (b)(1)(A), it is unlawful to make any call using an automatic
+  telephone dialing system without prior express consent, except for emergency calls or debt
+  collection calls. Since the call is for promotion and lacks consent, it is unlawful unless an
+  exception applies. The option stating that the call is lawful because it promotes a real estate
+  listing is incorrect because the debt‑collection exception does not apply to a promotional call.
+citation:
+  source: "### 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions
+    on telephone solicitation (b)(1)(A)"
+  url: null
+  quoted_text: It shall be unlawful for any person within the United States, or any person outside the
+    United States if the recipient is within the United States— (A) to make any call (other than a
+    call made for emergency purposes or made with the prior express consent of the called party)
+    using any automatic telephone dialing system or an artificial or prerecorded voice—
+  secondary: []
+terms:
+  - automatic telephone dialing system
+  - prior express consent
+  - emergency purposes
+  - residential telephone line
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

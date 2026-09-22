@@ -1,0 +1,47 @@
+id: NAT-PSI-XI-0784
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property was sold at an 8% loss for $276,000. What was the original cost?
+options:
+  - $276,000
+  - $255,000
+  - $345,000
+  - $300,000
+key: D
+explanation: The formula for cost when a loss is known is Cost = sale price ÷ (1 − loss rate).
+  Applying the 8% loss rate gives a denominator of 0.92, and dividing $276,000 by 0.92 yields
+  $300,000. The distractor that simply uses the sale price ignores the loss and thus understates the
+  original investment.
+citation:
+  source: REP Ref. Real Estate Math § 14.2
+  url: null
+  quoted_text: Cost = sale price ÷ (1 + profit rate) or ÷ (1 − loss rate) (§ 3.3).
+  secondary: []
+math:
+  worked_solution: |-
+    Sale price = $276,000
+    Loss rate = 8% = 0.08
+    Denominator = 1 - 0.08 = 0.92
+    Cost = $276,000 ÷ 0.92 = $300,000
+  formulas:
+    - Cost = sale price ÷ (1 - loss rate)
+  onscreen_calculator_only: false
+terms:
+  - cost
+  - loss
+  - sale price
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

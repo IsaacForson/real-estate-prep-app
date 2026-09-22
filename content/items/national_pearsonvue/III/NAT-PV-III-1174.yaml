@@ -1,0 +1,42 @@
+id: NAT-PV-III-1174
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A parcel is zoned for multifamily housing, physically suitable for construction, and legally
+  permissible, but the projected rental income would not cover construction costs. According to the
+  highest and best use tests, which test fails first?
+options:
+  - Legally permissible
+  - Physically possible
+  - Maximally productive
+  - Financially feasible
+key: D
+explanation: "The highest and best use tests are applied in the order: legally permissible,
+  physically possible, financially feasible, then maximally productive. The parcel meets the legally
+  permissible and physically possible tests, but the projected rental income would not cover
+  construction costs, so it fails the financial feasibility test. Because it fails at that point,
+  the maximally productive test is not reached."
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.1"
+  url: null
+  quoted_text: "The four tests are applied in that order: (1) legally permissible under zoning,
+    private restrictions, and environmental law; (2) physically possible given size, shape, soil,
+    topography, and access; (3) financially feasible, producing a positive return;"
+  secondary: []
+terms:
+  - highest and best use
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

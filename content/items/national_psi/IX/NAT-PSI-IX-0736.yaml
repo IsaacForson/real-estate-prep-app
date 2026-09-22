@@ -1,0 +1,38 @@
+id: NAT-PSI-IX-0736
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a transaction where the purchase agreement specifies that the buyer will pay for the
+  owner's title policy, who is responsible for that cost?
+options:
+  - The lender
+  - The seller
+  - The agent
+  - The buyer
+key: D
+explanation: The purchase agreement governs who pays for title insurance; if it assigns that cost to
+  the buyer, the buyer must pay. Although sellers often cover the cost in many states, the
+  contract’s provision supersedes that default.
+citation:
+  source: REP Ref. Financing & Closing § 10.7
+  url: null
+  quoted_text: The purchase agreement controls; absent agreement, local custom fills the gap and
+    varies by state (the state portion governs).
+  secondary: []
+terms:
+  - contract
+  - title insurance
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

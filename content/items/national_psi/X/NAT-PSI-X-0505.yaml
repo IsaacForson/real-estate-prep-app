@@ -1,0 +1,42 @@
+id: NAT-PSI-X-0505
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two brokers claim a commission for the same sale. Broker X first showed the property to the
+  buyer but then abandoned the buyer. Broker Y later negotiated and wrote the accepted offer. Which
+  broker is the procuring cause?
+options:
+  - The broker who negotiated and wrote the accepted offer
+  - The broker who first showed the property to the buyer
+  - The broker who prepared the closing statement
+  - The broker who advertised the property in the local newspaper
+key: A
+explanation: Under the procuring cause rule, the broker whose efforts began an unbroken chain of
+  events leading to the sale earns the commission; Broker Y's negotiation and offer created that
+  chain. The distractor focusing on the broker who first showed the property is incorrect because
+  merely showing the property is not conclusive if there is a break in continuity.
+citation:
+  source: REP Ref. Brokerage Practice § 4.3
+  url: null
+  quoted_text: "When more than one broker claims a commission for the same sale, the dispute is
+    decided by identifying the procuring cause: the broker whose efforts began an unbroken chain of
+    events that led to the sale."
+  secondary: []
+terms:
+  - procuring cause
+  - efforts
+  - chain
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

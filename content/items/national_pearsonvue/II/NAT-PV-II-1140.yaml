@@ -1,0 +1,40 @@
+id: NAT-PV-II-1140
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grantor signs a deed and hands it to the grantee, who states they do not want the property.
+  The grantor later records the deed. When does title pass to the grantee?
+options:
+  - When the deed is recorded in the public records office.
+  - When the grantor hands the deed to the grantee with intent to deliver.
+  - When the grantor signs the deed and intends to transfer title.
+  - When the grantee accepts the deed and thereby takes possession.
+key: D
+explanation: A valid deed requires delivery by the grantor and acceptance by the grantee during the
+  grantor's lifetime. Mere signing and handing over the deed does not transfer title if the grantee
+  refuses acceptance. Recording the deed does not cure the lack of acceptance. Therefore, title
+  passes only upon acceptance.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.1
+  url: null
+  quoted_text: Delivery by the grantor and acceptance by the grantee during the grantor's lifetime (§ 11.2).
+  secondary: []
+terms:
+  - delivery
+  - acceptance
+  - deed
+  - title
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

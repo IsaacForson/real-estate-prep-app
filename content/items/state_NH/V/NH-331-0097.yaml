@@ -1,0 +1,46 @@
+id: NH-331-0097
+jurisdiction: NH
+bank: state_NH
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to New Hampshire Law Against Discrimination (RSA 354-A:15), which of the following
+  activities is exempt from the prohibition on discriminatory practices in housing?
+options:
+  - The publication of an advertisement stating a preference for buyers of a particular religion.
+  - The use of a real estate broker to sell a single-family home owned by an individual who owns
+    four single-family homes.
+  - The private sale of a single-family home by its owner who does not own more than three such
+    homes and resides there.
+  - The rental of a room in a private home by an owner who neither lives there nor intends to return
+    within twelve months.
+key: C
+explanation: RSA 354-A:15(I) explicitly exempts private sales of single-family homes that meet the
+  owner‑occupancy and ownership limits from the prohibition on discriminatory practices. The rental
+  of a room by an owner who does not reside there or intend to return is not exempt because RSA
+  354-A:15(III) requires the owner or a family member to reside in the home or intend to return
+  within 12 months. Publishing an advertisement expressing a religious preference is prohibited
+  under RSA 354-A:10, VII, and using a broker when the owner owns more than three homes disqualifies
+  the private‑sale exemption.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 354-A — RSA Chapter 354-A, official General Court page read via
+    Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts § 354-A:15(I)
+  url: null
+  quoted_text: Private sales of single family homes.
+  secondary: []
+terms:
+  - exemption
+  - private sale
+  - single-family home
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

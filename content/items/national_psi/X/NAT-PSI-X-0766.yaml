@@ -1,0 +1,41 @@
+id: NAT-PSI-X-0766
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager requires a minimum credit score of 680 for applicants from Region X but 720
+  for applicants from Region Y, asserting it reflects regional credit risk differences. Under §12.5,
+  is this practice permissible?
+options:
+  - Yes, because managers may adjust criteria based on local market conditions
+  - No, because screening criteria must be applied uniformly to every applicant
+  - Yes, as long as the differing scores are documented in writing and retained
+  - No, because only income ratios may differ among applicants in their screening
+key: B
+explanation: The rule states screening criteria must be applied uniformly to every applicant;
+  varying credit scores by region violates this requirement. The suggestion that managers may adjust
+  criteria based on local market conditions is incorrect.
+citation:
+  source: REP Ref. Brokerage Practice § 12.5
+  url: null
+  quoted_text: Screening criteria — income ratios, credit, rental history, criminal history where
+    lawful — must be written, applied uniformly to every applicant, and related to the tenant's
+    ability to pay and to care for the property.
+  secondary: []
+terms:
+  - screening criteria
+  - uniform application
+  - credit score
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,45 @@
+id: NAT-PSI-I-0595
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A municipality levies a special assessment for a new sidewalk, charging $12 per front foot. If
+  a property has 75 feet of frontage, what is the total special assessment?
+options:
+  - $1,200
+  - $800
+  - $1,000
+  - $900
+key: D
+explanation: "The special assessment is calculated by multiplying the front footage by the rate per
+  foot: 75 feet × $12/foot = $900. The $1,000 amount would result from using an incorrect rate of
+  about $13.33 per foot, which is not the given charge."
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: A special assessment is a separate charge levied only on properties that benefit from a
+    specific improvement (a sidewalk, sewer line, or street lighting), commonly apportioned by front
+    footage or benefit.
+  secondary: []
+math:
+  worked_solution: "Multiply 75 feet by $12 per front foot: 75 × 12 = 900"
+  formulas:
+    - Assessment = front footage × rate per foot
+  onscreen_calculator_only: false
+terms:
+  - special assessment
+  - front footage
+  - apportionment
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

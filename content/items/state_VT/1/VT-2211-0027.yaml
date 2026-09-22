@@ -1,0 +1,41 @@
+id: VT-2211-0027
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has been a licensed salesperson for 24 months and has closed six separate and
+  unrelated transactions. Under 26 V.S.A. § 2292(a)(2), does the applicant meet the experience
+  requirement for a broker license?
+options:
+  - The applicant meets the requirement because they have two years' experience
+  - The applicant does not meet the requirement because they need at least eight separate
+    transactions
+  - The applicant meets the requirement because the experience requirement is only two years
+  - The applicant does not meet the requirement because they need to be at least 18 years old
+key: B
+explanation: The rule requires at least eight separate and unrelated closed transactions in addition
+  to two years' experience; the applicant has only six transactions, so they do not qualify. The
+  distractor claiming the applicant meets the requirement because they have two years' experience
+  ignores the transaction count requirement.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2292(a)(2)
+  url: null
+  quoted_text: has gained at least two years’ experience satisfactory to the Commission as a licensed
+    salesperson, including at least eight separate and unrelated closed transactions
+  secondary: []
+terms:
+  - experience
+  - transactions
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

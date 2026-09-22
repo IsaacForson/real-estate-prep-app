@@ -1,0 +1,43 @@
+id: VA-21-0036
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the Virginia Real Estate Board believes a broker **cannot** adequately protect escrow
+  funds, what action must the Board take first?
+options:
+  - Require the broker to attend training
+  - Issue a formal written warning
+  - Suspend the broker's license
+  - File a petition for a receiver
+key: D
+explanation: The regulation states that when the Board has reason to believe the licensee cannot
+  protect escrow interests, it shall file a petition with a court seeking appointment of a receiver.
+  Issuing a warning or imposing immediate suspension is not prescribed by this rule.
+citation:
+  source: "### Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real
+    Estate Brokers, Salespersons and Rental Location Agents — § 54.1-2108"
+  url: null
+  quoted_text: Where escrow funds or other funds are held by the licensee or his agents and the Real
+    Estate Board or its agents have reason to believe that the licensee is not able to adequately
+    protect the interests of persons involved, or his conduct threatens their interests, the Board
+    shall file a petition with any court of record having equity jurisdiction over the licensee or
+    any of the funds held by him stating the facts upon which it relies.
+  secondary: []
+terms:
+  - escrow
+  - receiver
+  - petition
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

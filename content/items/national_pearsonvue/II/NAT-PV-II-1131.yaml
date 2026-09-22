@@ -1,0 +1,39 @@
+id: NAT-PV-II-1131
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the rules governing real estate owned (REO) property, what is the primary reason a buyer
+  is advised to verify that the statutory redemption period has elapsed prior to closing?
+options:
+  - To verify that no senior liens remain attached to the REO parcel
+  - To determine which type of deed the lender must issue for the REO sale
+  - To confirm that the original mortgage balance has been fully paid off
+  - To ensure the title is free from potential claims by the prior owner
+key: D
+explanation: If the statutory redemption period has not ended, the former owner retains the right to
+  redeem the property, which could defeat the buyer's title. Verifying that the period has elapsed
+  ensures the title is free from any claim by the prior owner.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.4
+  url: null
+  quoted_text: The buyer should verify that any redemption period has run and junior liens were
+    extinguished, and should obtain an owner's title policy.
+  secondary: []
+terms:
+  - redemption period
+  - REO
+  - title
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

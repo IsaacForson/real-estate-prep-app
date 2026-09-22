@@ -1,0 +1,53 @@
+id: MA-87D-0094
+jurisdiction: MA
+bank: state_MA
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under M.G.L. c. 93A, § 4, if the court finds that a defendant's act was a willful violation of
+  § 2 and the plaintiff suffered $4,000 in ascertainable loss, what is the range of restitution the
+  court may order?
+options:
+  - $8,000 to $12,000
+  - $4,000 to $6,000
+  - $6,000 to $8,000
+  - $12,000 to $16,000
+key: A
+explanation: For a willful violation, § 4 allows the court to restore the plaintiff for the actual
+  loss or up to three times but not less than two times that amount. Two times $4,000 is $8,000 and
+  three times $4,000 is $12,000, so the permissible range is $8,000 to $12,000. The $4,000‑to‑$6,000
+  range would be less than double the loss, and the $12,000‑to‑$16,000 range exceeds the
+  triple‑damage cap.
+citation:
+  source: "### M.G.L. c. 93A — Massachusetts General Laws c. 93A — Regulation of Business Practices
+    for Consumers' Protection (§§ 2, 4, 9) (selected sections cited by the exam outline), official
+    malegislature.gov section pages read via Internet Archive captures of 2025-10 to 2026-06 because
+    malegislature.gov refuses connections from scripts — § 4"
+  url: null
+  quoted_text: restore any person who has suffered any ascertainable loss of any moneys or property,
+    real or personal, or up to three but not less than two times that amount if the court finds that
+    the use of the act or practice was a willful violation of said section two
+  secondary: []
+math:
+  worked_solution: |-
+    $4,000 × 2 = $8,000
+    $4,000 × 3 = $12,000
+  formulas:
+    - lower = loss × 2
+    - upper = loss × 3
+  onscreen_calculator_only: false
+terms:
+  - willful violation
+  - restitution
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

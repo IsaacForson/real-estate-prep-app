@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0645
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower transfers the property to his spouse via quitclaim deed. The loan contains an
+  alienation clause. May the lender accelerate the loan?
+options:
+  - The lender may accelerate the loan because the alienation clause applies to any transfer.
+  - The lender may not accelerate the loan because transfers to a spouse are exempt.
+  - The lender may accelerate the loan only if the borrower is in default.
+  - The lender may not accelerate the loan unless the loan is assumable.
+key: B
+explanation: Under the Garn–St Germain Act of 1982, alienation clauses are generally enforceable but
+  transfers to a spouse are exempt. Therefore the lender may not accelerate the loan. The statement
+  that the lender may accelerate because the alienation clause applies to any transfer is incorrect
+  because it ignores the statutory exemption for spouse transfers.
+citation:
+  source: "REP Ref. Financing & Closing — Reference note: financing instruments, loan types,
+    government programs, underwriting, closing (authored, status: draft — needs licensed review) §
+    2.2"
+  url: null
+  quoted_text: The Garn–St Germain Act of 1982 made these clauses generally enforceable but exempts
+    transfers such as to a spouse or child, on the death of a joint tenant, or into the borrower's
+    living trust.
+  secondary: []
+terms:
+  - alienation clause
+  - spouse transfer
+  - exemption
+  - Garn-St Germain Act
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

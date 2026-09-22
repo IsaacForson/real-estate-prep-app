@@ -1,0 +1,39 @@
+id: NAT-PSI-VI-0679
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer asks a former listing agent, after the listing has expired, whether the seller would
+  have accepted less than the list price. According to the text, what must the agent do?
+options:
+  - Provide the information only if the buyer submits a written request
+  - Disclose the information since the seller is no longer a client
+  - Disclose the information because the listing agreement has ended
+  - Decline to answer because the information is protected
+key: D
+explanation: Section § 5.5 Confidentiality lists the seller’s willingness to accept less than list
+  price as protected information that must not be revealed without principal authorization, and the
+  duty survives the agency relationship. Therefore the agent must decline to answer. The distractor
+  that suggests disclosure because the listing ended is incorrect because confidentiality continues
+  after expiration.
+citation:
+  source: REP Ref. Agency § 5.5
+  url: null
+  quoted_text: "Example: after the listing expires, the former seller-client lists with another firm.
+    A buyer asks the first agent, 'Would they have taken less?' The agent must decline to answer."
+  secondary: []
+terms:
+  - confidentiality
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

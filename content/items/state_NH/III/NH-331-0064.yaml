@@ -1,0 +1,44 @@
+id: NH-331-0064
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under RSA 331-A:16-a, when a managing broker vacancy occurs due to death, disability, or
+  change of affiliation, who may the principal broker designate as a temporary manager of the branch
+  office?
+options:
+  - A person currently licensed with the New Hampshire real estate commission
+  - A licensed attorney not holding a real estate license
+  - A licensed appraiser not holding a real estate license
+  - A licensed mortgage loan originator not holding a real estate license
+key: A
+explanation: The statute explicitly states that the principal broker may designate as manager a
+  person currently licensed with the New Hampshire real estate commission. The other options
+  describe professionals who may hold other licenses but are not authorized under this provision
+  unless they also hold an active real estate license.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A — RSA Chapter 331-A — New Hampshire Real Estate Practice Act,
+    official General Court page read via Internet Archive capture of 2025-07-09 because gc.nh.gov
+    returns 403 to scripts — § 16-a
+  url: null
+  quoted_text: In the event of the death, disability or change of affiliation of the managing broker
+    of a real estate branch office, the principal broker may designate as a manager a person
+    currently licensed with the New Hampshire real estate commission
+  secondary: []
+terms:
+  - managing broker
+  - vacancy
+  - designation
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

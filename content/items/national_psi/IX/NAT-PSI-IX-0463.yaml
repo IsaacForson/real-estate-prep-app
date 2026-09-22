@@ -1,0 +1,39 @@
+id: NAT-PSI-IX-0463
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What does a quitclaim deed convey to the grantee?
+options:
+  - It conveys the grantor's full ownership interest and includes warranties against encumbrances.
+  - It conveys the grantor's interest and includes a promise to defend against superior claims.
+  - It conveys the grantor's interest limited to the period of the grantor's ownership.
+  - It conveys whatever interest the grantor has, if any, with no warranties.
+key: D
+explanation: The key is correct because a quitclaim deed conveys only the grantor's present
+  interest, if any, and provides no warranties. The option stating that it conveys the grantor's
+  full ownership interest and includes warranties against encumbrances is incorrect because that
+  describes a general warranty deed, not a quitclaim deed.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.6
+  url: null
+  quoted_text: A quitclaim deed conveys whatever interest the grantor has, if any, with no warranties
+    and no implication that the grantor has any interest.
+  secondary: []
+terms:
+  - quitclaim deed
+  - warranty
+  - interest
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,48 @@
+id: NH-331-0073
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a written request from the New Hampshire Real Estate Commission to provide
+  a copy of a signed purchase and sale agreement for a transaction that closed six months ago. The
+  licensee locates the file in their office but tells the investigator they cannot produce it
+  because it is confidential. Under RSA 331-A:26 IX, how should the licensee's action be classified?
+options:
+  - The licensee's action is permitted if the licensee provides a written summary of the document
+    instead
+  - The licensee's action is a violation only if the document is less than three years old when
+    requested by the commission
+  - The licensee's action is permitted because the licensee may claim confidentiality over client
+    documents
+  - The licensee's action is a violation because the licensee failed to produce a document in
+    possession upon demand
+key: D
+explanation: RSA 331-A:26 IX prohibits failing, upon demand, to produce any document, book, or
+  record in the licensee's possession for inspection by the commission. Claiming confidentiality
+  does not excuse this duty, and providing a summary does not satisfy the requirement to produce the
+  actual document. The violation applies regardless of the document's age.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 26 IX
+  url: null
+  quoted_text: Failing, upon demand, to disclose any information within the licensee's knowledge, or
+    to produce any document, book or record in the licensee's possession for inspection of and
+    copying by the commission or its authorized representatives acting under authority of law.
+  secondary: []
+terms:
+  - disclosure
+  - document
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

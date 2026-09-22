@@ -1,0 +1,45 @@
+id: VA-21-0032
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The landlord and tenant have a written agreement that rent collected by the managing agent
+  will be placed in an escrow account within three business days of receipt. After a foreclosure,
+  the licensee acting as managing agent collects rent from the tenant. According to Virginia law, by
+  what deadline must the licensee place the collected rent into an escrow account?
+options:
+  - The licensee must place the rent by the end of the fifth business banking day following receipt.
+  - The licensee must place the rent by the end of the third business banking day following receipt.
+  - The licensee must place the rent within ten calendar days of receipt.
+  - The licensee must place the rent immediately upon receipt of the rent.
+key: B
+explanation: The written agreement between landlord and tenant to place rent in escrow within three
+  business days overrides the statutory default of the fifth business banking day. The statute
+  permits the principals to a lease transaction to agree otherwise in writing, so the three‑day
+  deadline applies.
+citation:
+  source: Va. Code Ann. § 54.1-2108.1
+  url: null
+  quoted_text: Any rent paid to a real estate licensee acting on behalf of a landlord client in
+    connection with the lease shall be placed in an escrow account by the end of the fifth business
+    banking day following receipt, regardless of when received, unless otherwise agreed to in
+    writing by the principals to a lease transaction.
+  secondary: []
+terms:
+  - escrow
+  - rent
+  - written agreement
+  - timeline
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

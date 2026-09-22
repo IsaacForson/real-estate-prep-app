@@ -1,0 +1,41 @@
+id: VA-21-0058
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee hosts an open house and answers scheduling questions for an unattended visitor who
+  has not signed any agreement. According to Virginia law, what is the legal status of that visitor?
+options:
+  - A client of the licensee
+  - A agent of the licensee
+  - A customer of the licensee
+  - A prospect of the licensee
+key: C
+explanation: The visitor received only ministerial acts and no brokerage agreement was formed, so
+  under the definition of “customer,” the person is presumed to be a customer rather than a client.
+  The visitor is not a client because no agreement exists, nor a designated agent or independent
+  contractor.
+citation:
+  source: Va. Code Ann. § 54.1-2130
+  url: null
+  quoted_text: '"Customer" means a person who has not entered into a brokerage relationship with a
+    licensee but for whom a licensee performs ministerial acts in a real estate transaction. Unless
+    a licensee enters into a brokerage relationship with such person, it shall be presumed that such
+    person is a customer of the licensee rather than a client.'
+  secondary: []
+terms:
+  - customer
+  - ministerial acts
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

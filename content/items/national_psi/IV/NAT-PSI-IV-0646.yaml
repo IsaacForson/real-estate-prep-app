@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0646
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower with an FHA loan pays off the loan early and is charged a fee equal to two months'
+  interest. Is this permissible?
+options:
+  - The fee is not permissible unless the loan is in default of payment.
+  - The fee is permissible because FHA loans allow prepayment penalties.
+  - The fee is permissible only if the loan balance exceeds two hundred thousand dollars.
+  - The fee is not permissible because FHA loans have no prepayment penalty.
+key: D
+explanation: FHA, VA and USDA loans have no prepayment penalty, so charging a fee for early payoff
+  on an FHA loan is not allowed. The statement that the fee is not permissible unless the loan is in
+  default of payment is incorrect because FHA loans never permit prepayment penalties, even if the
+  loan is in default. The claim that the fee is permissible because FHA loans allow prepayment
+  penalties is false; FHA loans prohibit such penalties. The assertion that the fee is permissible
+  only if the loan balance exceeds two hundred thousand dollars is also incorrect; FHA loans do not
+  allow prepayment penalties regardless of the loan amount.
+citation:
+  source: "REP Ref. Financing & Closing — Reference note: financing instruments, loan types,
+    government programs, underwriting, closing (authored, status: draft — needs licensed review) §
+    2.3"
+  url: null
+  quoted_text: FHA, VA and USDA loans have none.
+  secondary: []
+terms:
+  - prepayment penalty
+  - FHA loan
+  - permissible
+  - exemption
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

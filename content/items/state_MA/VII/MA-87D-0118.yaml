@@ -1,0 +1,49 @@
+id: MA-87D-0118
+jurisdiction: MA
+bank: state_MA
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord refuses to rent an apartment to a prospective tenant solely because the tenant
+  receives Supplemental Nutrition Assistance Program (SNAP) benefits. Under M.G.L. c. 151B § 4(10),
+  is the landlord's action lawful?
+options:
+  - The action is lawful because SNAP benefits are not classified as public assistance under the
+    statute.
+  - The action is unlawful because SNAP benefits constitute federal public assistance.
+  - The action is lawful because the landlord may consider the source of income when screening
+    tenants.
+  - The action is unlawful only if the tenant also receives housing subsidies.
+key: B
+explanation: The landlord’s refusal is unlawful because SNAP benefits are a form of federal public
+  assistance, and M.G.L. c. 151B § 4(10) prohibits discrimination based on receipt of such
+  assistance. The claim that SNAP benefits are not classified as public assistance is incorrect; the
+  statute expressly includes them. The assertion that a landlord may consider the source of income
+  when it is public assistance is also incorrect; considering such assistance is prohibited. The
+  statement that the prohibition applies only if the tenant also receives housing subsidies is
+  incorrect; the ban applies regardless of any other assistance the tenant receives.
+citation:
+  source: M.G.L. c. 151B — Massachusetts General Laws c. 151B — Unlawful Discrimination (§§ 4, 5)
+    (selected sections cited by the exam outline), official malegislature.gov section pages read via
+    Internet Archive captures of 2025-10 to 2026-06 because malegislatore.gov refuses connections
+    from scripts — § 4 § 4(10)
+  url: null
+  quoted_text: discriminate against any individual who is a recipient of federal, state, or local
+    public assistance, including medical assistance
+  secondary: []
+terms:
+  - public assistance
+  - discrimination
+  - rental accommodations
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

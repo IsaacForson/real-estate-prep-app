@@ -1,0 +1,51 @@
+id: NAT-PV-III-1183
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is estimating the value of a subject property using the sales comparison approach.
+  The subject has 2,000 square feet of living area, three bedrooms, two baths, a two-car garage, and
+  no pool. A comparable property sold for $380,000 and has 2,100 square feet of living area,
+  otherwise identical to the subject. Using the market-derived adjustment for living area of $60 per
+  square foot from the text, what is the adjusted price of the comparable?
+options:
+  - $386,000
+  - $380,000
+  - $374,000
+  - $368,000
+key: C
+explanation: The comparable is superior by 100 square feet (2,100 − 2,000 = 100). Since a superior
+  feature requires a downward adjustment, the adjustment amount is 100 × $60 = $6,000. Subtracting
+  this from the comparable’s sale price gives $380,000 − $6,000 = $374,000. The distractor $386,000
+  results from incorrectly adding the adjustment instead of subtracting it.
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.4
+  url: null
+  quoted_text: "Market-derived adjustments: living area $60 per square foot; half bath $3,000; garage
+    bay $8,000; pool $15,000."
+  secondary: []
+math:
+  worked_solution: |-
+    Difference in living area = 2,100 sq ft - 2,000 sq ft = 100 sq ft
+    Adjustment amount = 100 sq ft × $60/sq ft = $6,000
+    Adjusted price = $380,000 - $6,000 = $374,000
+  formulas:
+    - Adjusted price = Comparable price ± (difference in living area × $60 per sq ft)
+  onscreen_calculator_only: false
+terms:
+  - sales comparison approach
+  - adjustment
+  - living area
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

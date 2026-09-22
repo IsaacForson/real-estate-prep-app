@@ -1,0 +1,36 @@
+id: NAT-PV-III-1158
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: In the context of real estate valuation, how is plottage value calculated?
+options:
+  - Add the value of the assembled parcel to the sum of the separate parcel values
+  - Multiply the sum of the separate parcel values by the value of the assembled parcel
+  - Subtract the value of the assembled parcel from the sum of the separate parcel values
+  - Subtract the sum of the separate parcel values from the value of the assembled parcel
+key: D
+explanation: Under the standard valuation formulas, plottage value is defined as the value of the
+  assembled parcel minus the sum of the values of the separate parcels. This calculation isolates
+  the value added by combining the sites. The other options incorrectly invert the subtraction or
+  use addition and multiplication, which do not yield the incremental value of assemblage.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: Plottage value = value of assembled parcel − sum of values of separate parcels.
+  secondary: []
+terms:
+  - plottage value
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

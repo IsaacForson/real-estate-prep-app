@@ -1,0 +1,40 @@
+id: NAT-PSI-X-0767
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant who uses a wheelchair requests permission to install a portable ramp at the entrance
+  of their rented unit, offering to cover all installation costs. The landlord refuses unless the
+  tenant also pays to repaint the hallway after removal. Is the landlord’s refusal permissible?
+options:
+  - Yes, as long as the tenant agrees to restore the property to its original condition
+  - No, because only structural modifications are permitted at the tenant's expense
+  - Yes, because landlords may require tenants to cover additional cosmetic costs
+  - No, because reasonable modifications must be permitted at the tenant's expense
+key: D
+explanation: Permission for reasonable modifications at the tenant's expense must be granted;
+  landlords cannot condition approval on additional payments such as requiring repainting after
+  removal. The option that says 'Yes, as long as the tenant agrees to restore the property to its
+  original condition' incorrectly allows landlords to impose extra cosmetic costs.
+citation:
+  source: REP Ref. Brokerage Practice § 12.5
+  url: null
+  quoted_text: permission for reasonable modifications at the tenant's expense in most private housing
+  secondary: []
+terms:
+  - reasonable modification
+  - tenant expense
+  - portable ramp
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

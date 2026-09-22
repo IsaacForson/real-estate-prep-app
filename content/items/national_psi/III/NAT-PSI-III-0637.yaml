@@ -1,0 +1,49 @@
+id: NAT-PSI-III-0637
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has an assessed value of $180,000. If the assessment ratio in the jurisdiction is
+  60 percent, what is the property's market value?
+options:
+  - $108,000
+  - $300,000
+  - $360,000
+  - $450,000
+key: B
+explanation: Market value is calculated by dividing the assessed value by the assessment ratio
+  expressed as a decimal. $180,000 ÷ 0.60 equals $300,000. The distractor $108,000 results from
+  multiplying the assessed value by the ratio instead of dividing.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.3
+  url: null
+  quoted_text: Assessed value is determined by a local assessor and is often a percentage of market
+    value called the assessment ratio (100 percent in some jurisdictions, far less in others; varies
+    by state).
+  secondary: []
+math:
+  worked_solution: |-
+    Assessed value = $180,000
+    Assessment ratio = 60% = 0.60
+    Market value = Assessed value ÷ Assessment ratio
+    $180,000 ÷ 0.60 = $300,000
+  formulas:
+    - Market Value = Assessed Value / Assessment Ratio
+  onscreen_calculator_only: false
+terms:
+  - assessed value
+  - market value
+  - assessment ratio
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

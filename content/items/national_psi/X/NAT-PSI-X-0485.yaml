@@ -1,0 +1,59 @@
+id: NAT-PSI-X-0485
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA, what is the definition of 'telephone solicitation'?
+options:
+  - The initiation of a telephone call or message for the purpose of encouraging the purchase or
+    rental of, or investment in, property, goods, or services, which is transmitted to any person,
+    but excludes calls by tax-exempt nonprofit organizations only
+  - The initiation of a telephone call or message for the purpose of encouraging the purchase or
+    rental of, or investment in, property, goods, or services, which is transmitted to any person,
+    but excludes calls to persons with prior express invitation or permission only
+  - The initiation of a telephone call or message for the purpose of encouraging the purchase or
+    rental of, or investment in, property, goods, or services, which is transmitted to any person,
+    but excludes calls to persons with prior express invitation or permission, to persons with an
+    established business relationship, or by tax-exempt nonprofit organizations
+  - The initiation of a telephone call or message for the purpose of encouraging the purchase or
+    rental of, or investment in, property, goods, or services, which is transmitted to any person,
+    but excludes calls to persons with an established business relationship only
+key: C
+explanation: Under 47 U.S.C. § 227, telephone solicitation is defined as the initiation of a
+  telephone call or message to encourage purchase or rental, but it does not include calls to
+  persons with prior express invitation or permission, calls to persons with an established business
+  relationship, or calls by tax‑exempt nonprofit organizations. Therefore the option that lists all
+  three exclusions is correct. The option that excludes only calls by tax‑exempt nonprofit
+  organizations leaves out the other two exclusions and is incomplete. The option that excludes only
+  calls to persons with prior express invitation or permission likewise omits the remaining
+  exclusions. The option that excludes only calls to persons with an established business
+  relationship also omits the other two exclusions.
+citation:
+  source: "### 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions
+    on telephone solicitation (a)(4)"
+  url: null
+  quoted_text: The term "telephone solicitation" means the initiation of a telephone call or message
+    for the purpose of encouraging the purchase or rental of, or investment in, property, goods, or
+    services, which is transmitted to any person, but such term does not include a call or message
+    (A) to any person with that person's prior express invitation or permission, (B) to any person
+    with whom the caller has an established business relationship, or (C) by a tax exempt nonprofit
+    organization.
+  secondary: []
+terms:
+  - telephone solicitation
+  - prior express invitation
+  - established business relationship
+  - tax exempt nonprofit organization
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,52 @@
+id: NAT-PSI-IX-0755
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The monthly homeowners' association dues are $150. The seller has paid the dues for the month
+  of September in full. Closing occurs on September 12, and the parties agree to use the 360-day
+  method (30-day months), with the closing day charged to the buyer. How much should the buyer
+  reimburse the seller for HOA dues at closing?
+options:
+  - $95
+  - $120
+  - $75
+  - $105
+key: A
+explanation: Under the 360-day method, the daily rate is $5 ($150/30). The seller owned 11 days
+  (Sept 1‑11) and prepaid for 30 days, so they overpaid by 19 days; 19 × $5 = $95. The distractor
+  $75 results from incorrectly using 15 overpaid days.
+citation:
+  source: REP Ref. Financing & Closing § 10.6
+  url: null
+  quoted_text: Two calendar conventions exist (365-day actual, or 360-day with 30-day months), and the
+    closing day is charged to one party by agreement or custom
+  secondary: []
+math:
+  worked_solution: |-
+    Daily rate = $150 / 30 = $5 per day
+    Days seller owned = closing day - 1 = 12 - 1 = 11 days
+    Overpaid days = 30 - 11 = 19 days
+    Reimbursement = 19 × $5 = $95
+  formulas:
+    - daily_rate = monthly_amount / 30
+    - overpaid_days = 30 - (closing_day - 1)
+    - reimbursement = overpaid_days * daily_rate
+  onscreen_calculator_only: false
+terms:
+  - proration
+  - hoa dues
+  - 360-day method
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

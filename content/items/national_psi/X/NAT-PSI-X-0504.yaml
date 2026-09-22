@@ -1,0 +1,42 @@
+id: NAT-PSI-X-0504
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property sells for $275,000 with a commission rate of 5.2%. What is the total commission?
+options:
+  - $14,300
+  - $143,000
+  - $1,430
+  - $1,430,000
+key: A
+explanation: "Using the formula Commission = sale price × rate, convert 5.2% to 0.052 and multiply:
+  $275,000 × 0.052 = $14,300. The distractor $143,000 results from mistakenly using 52% (0.52) as
+  the decimal equivalent, which overstates the commission by a factor of ten."
+citation:
+  source: REP Ref. Brokerage Practice § 4.5
+  url: null
+  quoted_text: Commission = sale price × rate.
+  secondary: []
+math:
+  worked_solution: Commission = $275,000 × 0.052 = $14,300
+  formulas:
+    - Commission = sale price × rate
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - rate
+  - sale price
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

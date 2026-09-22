@@ -1,0 +1,43 @@
+id: NAT-PSI-X-0487
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee calls a prospective buyer whose telephone number is listed on the national
+  Do-Not-Call registry to advertise a new property listing. Based solely on the TCPA provisions,
+  what is the status of this call?
+options:
+  - The call is permissible if made between 8 a.m. and 9 p.m.
+  - The call is prohibited because the number is in the Do-Not-Call database.
+  - The call is permissible if the consumer previously inquired about the listing.
+  - The call is permissible if the licensee blocks caller ID information.
+key: B
+explanation: The TCPA prohibits making any telephone solicitation to a subscriber whose number is
+  included in the Do-Not-Call database, so the call is prohibited. The claim that the call is
+  permissible if made between 8 a.m. and 9 p.m. incorrectly introduces a time‑of‑day restriction
+  that the TCPA does not contain for this prohibition.
+citation:
+  source: 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions on
+    telephone solicitation (3)(F)
+  url: null
+  quoted_text: prohibit any person from making or transmitting a telephone solicitation to the
+    telephone number of any subscriber included in such database
+  secondary: []
+terms:
+  - telephone
+  - solicitation
+  - prohibited
+  - database
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

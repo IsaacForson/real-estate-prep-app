@@ -1,0 +1,45 @@
+id: VA-21-0054
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lease with option to buy of a five-unit apartment building is offered. Is this transaction
+  subject to the Virginia Residential Property Disclosure Act?
+options:
+  - The transaction is subject to the disclosure chapter because it is a residential property.
+  - The transaction is subject to the disclosure chapter because it involves a lease with option to
+    buy.
+  - The transaction is not subject to the disclosure chapter because the property contains more than
+    four dwelling units.
+  - The transaction is not subject to the disclosure chapter because it is a commercial lease.
+key: C
+explanation: Under § 55.1-701, the chapter applies only to residential real property with one to
+  four dwelling units. A five-unit building exceeds this limit, so the transaction is exempt. An
+  option stating that the transaction is subject because it involves a lease with option to buy is
+  incorrect, as the lease type does not override the unit limit. An option stating that the
+  transaction is not subject because it is a commercial lease is incorrect, because the exemption is
+  based on the number of units, not the lease's commercial character.
+citation:
+  source: Va. Code Ann. § 55.1-701
+  url: null
+  quoted_text: The provisions of this chapter apply only with respect to transfers by sale, exchange,
+    installment land sales contract, or lease with option to buy of residential real property
+    consisting of not less than one nor more than four dwelling units, whether or not the
+    transaction is with the assistance of a licensed real estate broker or salesperson.
+  secondary: []
+terms:
+  - dwelling unit
+  - lease
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

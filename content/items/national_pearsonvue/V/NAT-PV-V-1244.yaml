@@ -1,0 +1,45 @@
+id: NAT-PV-V-1244
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A seller refuses to sell a house to a Black buyer because of the buyer's race. Under 42
+  U.S.C. § 1982, the seller's refusal is:"
+options:
+  - The seller's refusal based on race is impermissible because the statute guarantees all citizens
+    the right to purchase real property
+  - The seller's refusal based on race is impermissible because the statute requires sellers to
+    offer discounts to minority buyers
+  - The seller's refusal based on race is permissible because the statute only applies to federal
+    housing programs in housing transactions
+  - The seller's refusal based on race is permissible because the statute protects only white
+    citizens in housing transactions
+key: A
+explanation: The statute guarantees all citizens the same right as white citizens to purchase real
+  property, so a refusal to sell based on race violates that guarantee. The claim that the statute
+  only applies to federal housing programs is incorrect; it protects the property rights of all
+  citizens regardless of federal involvement.
+citation:
+  source: 42 U.S.C. § 1982
+  url: null
+  quoted_text: All citizens of the United States shall have the same right, in every State and
+    Territory, as is enjoyed by white citizens thereof to inherit, purchase, lease, sell, hold, and
+    convey real and personal property.
+  secondary: []
+terms:
+  - race
+  - purchase
+  - discrimination
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,41 @@
+id: NAT-PSI-IX-0483
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A grantor conveys property 'to A for life, then to C.' According to REP Ref. Ownership, Title
+  & Transfer § 1.4, what interest does C hold?
+options:
+  - C holds a leasehold estate for years
+  - C holds an estate at sufferance until A's death
+  - C holds a reversion that returns to the grantor
+  - C holds a remainder and is the remainderman
+key: D
+explanation: When the deed names a third party after a life estate, that third party holds a
+  remainder interest and is called the remainderman; the interest is transferable even though
+  possession is postponed. The incorrect option describes a reversion, which occurs when the
+  property returns to the grantor.
+citation:
+  source: "REP Ref. Ownership, Title & Transfer — Reference note: estates, ownership forms, deeds,
+    title, recording, transfer (authored, status: draft — needs licensed review) § 1.4"
+  url: null
+  quoted_text: If the deed names a third party ('to A for life, then to C'), C holds a remainder and
+    is the remainderman.
+  secondary: []
+terms:
+  - life estate
+  - remainder
+  - remainderman
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

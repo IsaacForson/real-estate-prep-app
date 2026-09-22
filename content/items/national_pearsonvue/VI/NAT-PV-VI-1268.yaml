@@ -1,0 +1,44 @@
+id: NAT-PV-VI-1268
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee discovers that a property being sold contains a storage container that previously
+  held hazardous substances. The licensee wants to know whether this storage container qualifies as
+  a 'facility' under CERCLA. Based on the definition, which statement is correct?
+options:
+  - The storage container is not a facility because it is a vessel.
+  - The storage container is not a facility because it is a consumer product.
+  - The storage container is a facility because it is a storage container.
+  - The storage container is a facility only if it is located on land.
+key: C
+explanation: The definition of 'facility' includes any storage container. Therefore, a storage
+  container that previously held hazardous substances qualifies as a facility. It is not excluded as
+  a consumer product or vessel, and location on land is not required for the definition to apply.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation §9601(9)
+  url: null
+  quoted_text: The term 'facility' means (A) any building, structure, installation, equipment, pipe or
+    pipeline (including any pipe into a sewer or publicly owned treatment works), well, pit, pond,
+    lagoon, impoundment, ditch, landfill, storage container, motor vehicle, rolling stock, or
+    aircraft, or (B) any site or area where a hazardous substance has been deposited, stored,
+    disposed of, or placed, or otherwise come to be located; but does not include any consumer
+    product in consumer use or any vessel.
+  secondary: []
+terms:
+  - facility
+  - storage container
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: NAT-PV-II-1157
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: On Monday, Owner conveys Lot to Buyer A, who does not record the deed. On Wednesday, Owner
+  conveys the same Lot to Buyer B, who pays fair market value, has no actual or constructive
+  knowledge of A's deed, and records the deed on Thursday. In a state that follows a notice statute,
+  who owns the Lot?
+options:
+  - Buyer A, because recording gives constructive notice to subsequent purchasers
+  - Buyer A, because they received the first deed and did not record it
+  - Buyer B, because they are a bona fide purchaser for value without notice
+  - Buyer B, only if they recorded before Buyer A and A remained unrecorded
+key: C
+explanation: Under a notice statute, a later bona fide purchaser for value without notice wins even
+  before recording, so Buyer B prevails. The statement that recording gives constructive notice to a
+  purchaser who lacks actual or constructive notice of the prior unrecorded deed is incorrect.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a notice statute a later bona fide purchaser for value without notice (actual or
+    constructive) of the earlier interest wins even before recording.
+  secondary: []
+terms:
+  - notice statute
+  - bona fide purchaser
+  - recording
+  - constructive notice
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

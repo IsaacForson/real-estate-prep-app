@@ -1,0 +1,41 @@
+id: VT-2211-0028
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker seeking renewal has completed 20 hours of approved continuing education during the
+  preceding two-year period. Under 26 V.S.A. § 2293, can the broker renew the license?
+options:
+  - The broker can renew the license because they have completed some continuing education
+  - The broker cannot renew the license because brokers must complete at least 24 hours
+  - The broker can renew the license because the missing hours can be made up later
+  - The broker cannot renew the license because they must pass an examination
+key: B
+explanation: Renewal requires brokers to complete at least 24 hours of approved continuing
+  education; 20 hours is insufficient, so the broker cannot renew. The distractor suggesting the
+  broker can renew because they have completed some continuing education is wrong because the
+  minimum threshold is 24 hours, not any amount.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2293
+  url: null
+  quoted_text: Licenses shall be renewed every two years without examination and on payment of the
+    required fees, provided that the person applying for renewal completes at least 24 hours of
+    instruction for brokers and 16 hours of instruction for salespersons, approved by the
+    Commission, during the preceding two-year period.
+  secondary: []
+terms:
+  - continuing education
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

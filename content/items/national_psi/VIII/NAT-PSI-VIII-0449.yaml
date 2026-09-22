@@ -1,0 +1,54 @@
+id: NAT-PSI-VIII-0449
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VIII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A 10-unit building rents at $1,000 per unit per month and experiences a 10% vacancy and
+  collection loss. Other income totals $2,000 per year and operating expenses are $60,000 per year.
+  What is the net operating income?
+options:
+  - $48,000
+  - $55,000
+  - $50,000
+  - $74,000
+key: C
+explanation: Net operating income equals effective gross income minus operating expenses. Effective
+  gross income is potential gross income minus vacancy loss plus other income, which calculates to
+  $110,000. Subtracting $60,000 in operating expenses yields $50,000. The option stating $55,000
+  results from mistakenly using the 6% vacancy rate from the example instead of the given 10%.
+citation:
+  source: REP Ref. Brokerage Practice § 12.3
+  url: null
+  quoted_text: net operating income (effective gross income minus operating expenses, before debt
+    service and income taxes)
+  secondary: []
+math:
+  worked_solution: |-
+    Potential gross income = 10 × $1,000 × 12 = $120,000
+    Vacancy and collection loss = $120,000 × 0.10 = $12,000
+    Effective gross income = $120,000 − $12,000 + $2,000 = $110,000
+    Net operating income = $110,000 − $60,000 = $50,000
+  formulas:
+    - PGI = units × rent per month × 12
+    - Vacancy loss = PGI × vacancy rate
+    - Effective gross income = PGI − vacancy loss + other income
+    - Net operating income = effective gross income − operating expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - effective gross income
+  - vacancy and collection loss
+  - operating expenses
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

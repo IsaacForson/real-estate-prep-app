@@ -1,0 +1,42 @@
+id: VT-2211-0039
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate licensee is convicted of a misdemeanor in a Vermont Superior Court on
+  March 1. Under 3 V.S.A. § 129a(11), by what date must the licensee report the conviction to the
+  Office of Professional Regulation?
+options:
+  - Report the conviction by March 31.
+  - Report the conviction by May 1.
+  - Report the conviction by April 1.
+  - Report the conviction by April 15.
+key: A
+explanation: Under 3 V.S.A. §129a(11), a licensee must report any felony or misdemeanor conviction
+  to the Office within 30 days. Counting 30 days from March 1 gives a deadline of March 31.
+  Reporting by April 1 would be after the 30‑day period, as would reporting by April 15 or May 1, so
+  those dates do not satisfy the requirement.
+citation:
+  source: "3 V.S.A. ch. 5 — 3 V.S.A. Chapter 5 — Secretary of State (Subchapter 3: Office of
+    Professional Regulation, incl. § 129a Unprofessional conduct) § 129a(11)"
+  url: null
+  quoted_text: Failing to report to the Office a conviction of any felony or misdemeanor offense in a
+    Vermont District Court, a Vermont Superior Court, a federal court, or a court outside Vermont
+    within 30 days.
+  secondary: []
+terms:
+  - conviction
+  - reporting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

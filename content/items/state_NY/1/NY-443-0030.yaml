@@ -1,0 +1,40 @@
+id: NY-443-0030
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker changes their principal business address and has two associated salespersons. What
+  total filing fee must accompany the notice of address change under New York Real Property Law §
+  441-a(5)?
+options:
+  - $10
+  - $20
+  - $30
+  - $40
+key: C
+explanation: Subsection (5) requires a filing fee of ten dollars for each licensee named in the
+  notice. The broker and two salespersons constitute three licensees, so the total fee is 3 × $10 =
+  $30. The distractors either undercount the number of licensees or overcount the fee per licensee.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 441-a
+    (5)
+  url: null
+  quoted_text: The filing fee of ten dollars for each licensee named therein shall accompany such notice.
+  secondary: []
+terms:
+  - filing fee
+  - address change
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

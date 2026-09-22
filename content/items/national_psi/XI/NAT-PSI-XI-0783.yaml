@@ -1,0 +1,41 @@
+id: NAT-PSI-XI-0783
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to §15.2 Net-to-seller shortcut, how should you calculate the sale price when you
+  know the desired net amount and the rate?
+options:
+  - Multiply the desired net by (1 + rate)
+  - Divide the desired net by (1 − rate)
+  - Multiply the desired net by (1 − rate)
+  - Divide the desired net by (1 + rate)
+key: B
+explanation: The rule states that multiplying the desired net by (1 + rate) understates the price;
+  instead you must divide the desired net by (1 − rate) to obtain the correct sale price. This
+  ensures the rate is removed from the net to recover the gross amount. The distractor that
+  multiplies by (1 + rate) would produce a price too low because it adds the rate rather than
+  reversing it.
+citation:
+  source: REP Ref. Real Estate Math § 15.2
+  url: null
+  quoted_text: Multiplying the desired net by (1 + rate) understates the price; divide by (1 − rate)
+    instead (§ 4.3).
+  secondary: []
+terms:
+  - net
+  - rate
+  - price
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

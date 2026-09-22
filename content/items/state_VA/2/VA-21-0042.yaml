@@ -1,0 +1,40 @@
+id: VA-21-0042
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Virginia real estate board regulations, what must be true of the name used for an
+  escrow account maintained by a brokerage firm?
+options:
+  - It must be the name under which the firm is licensed
+  - It must be the name of the firm's escrow account
+  - It must be the name of the firm's principal broker
+  - It must be the name of the financial institution
+key: A
+explanation: The regulation explicitly states that the escrow account must be in the name by which
+  the firm or sole proprietorship is licensed. This ensures the account is clearly tied to the
+  licensed entity. The distractor suggesting the account must be named after the firm's escrow
+  account is incorrect because the rule requires the licensed name, not merely an escrow
+  designation.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-181
+  url: null
+  quoted_text: The escrow account must be in the name by which the firm or sole proprietorship is licensed.
+  secondary: []
+terms:
+  - escrow account
+  - licensed name
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

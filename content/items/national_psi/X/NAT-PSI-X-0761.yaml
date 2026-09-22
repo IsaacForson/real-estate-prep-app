@@ -1,0 +1,44 @@
+id: NAT-PSI-X-0761
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker enters into an oral listing agreement with a seller that expires in 60 days. What is
+  the likely enforceability of this agreement?
+options:
+  - The agreement is enforceable because it has a definite expiration date
+  - The agreement is enforceable because the broker performed services
+  - The agreement is not enforceable because most states require listings to be written
+  - The agreement is not enforceable because the seller did not sign a purchase contract
+key: C
+explanation: Most states require listing agreements to be in writing, signed by the seller, and
+  include a definite expiration date. An oral agreement fails the writing requirement, making it
+  unenforceable. The presence of a definite expiration date or the broker’s performance does not
+  satisfy the writing requirement, and the lack of a purchase contract is irrelevant to the
+  enforceability of a listing agreement.
+citation:
+  source: "REP Ref. Brokerage Practice — Reference note: brokerage practice, listings, compensation,
+    supervision, risk, property management (authored, status: draft — needs licensed review) § 2.1
+    Nature and required terms"
+  url: null
+  quoted_text: Most states require listings to be written, signed by the seller, with a definite
+    expiration date, and prohibit automatic extension clauses.
+  secondary: []
+terms:
+  - listing agreement
+  - written requirement
+  - expiration date
+  - enforceability
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

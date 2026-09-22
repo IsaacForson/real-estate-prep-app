@@ -1,0 +1,42 @@
+id: NAT-PSI-VII-0716
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A state environmental agency acquires a contaminated property to conduct a remedial action
+  under CERCLA. Under CERCLA, is the agency liable solely because of acquiring the interest?
+options:
+  - The agency is liable solely because it acquired the interest
+  - The agency is not liable solely because it acquired the interest
+  - The agency is liable only if it caused the release
+  - The agency is liable only if it fails to notify EPA
+key: B
+explanation: The statute explicitly exempts Federal, State, or local government agencies from
+  liability under CERCLA solely as a result of acquiring an interest in real estate under this
+  subsection. Therefore, the state agency is not liable merely for the acquisition. The other
+  options incorrectly condition liability on causation or notification, which are not the basis of
+  this exemption.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation § 9604(j)(3)
+  url: null
+  quoted_text: No Federal, State, or local government agency shall be liable under this chapter solely
+    as a result of acquiring an interest in real estate under this subsection.
+  secondary: []
+terms:
+  - acquisition
+  - liability
+  - exemption
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

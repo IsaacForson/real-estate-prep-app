@@ -1,0 +1,42 @@
+id: NAT-PSI-IX-0730
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender sells a foreclosed property using a special warranty deed. Two years later, a claim
+  arises from a defect that existed before the lender took title. What is the lender's liability?
+options:
+  - The lender is liable only if the defect was disclosed
+  - The lender must provide further assurances to perfect title
+  - The lender must defend the title and compensate for loss
+  - The lender has no liability for the pre‑ownership defect
+key: D
+explanation: §6.4 states that a special warranty deed limits the grantor’s warranty to defects
+  arising during the grantor’s own period of ownership, giving no protection for pre‑ownership
+  defects. Hence the lender has no liability for a claim based on a defect that existed before it
+  took title. The distractor 'The lender must defend the title and compensate for loss' applies to a
+  general warranty deed, not a special warranty deed.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.4
+  url: null
+  quoted_text: "A special warranty deed limits the covenants to the grantor's own period of ownership:
+    the grantor warrants only against claims 'by, through, or under' the grantor, and gives no
+    protection against defects created before the grantor took title."
+  secondary: []
+terms:
+  - special warranty deed
+  - covenant
+  - ownership
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

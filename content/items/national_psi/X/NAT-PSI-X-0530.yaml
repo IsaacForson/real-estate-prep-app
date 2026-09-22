@@ -1,0 +1,39 @@
+id: NAT-PSI-X-0530
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is included in operating expenses?
+options:
+  - The mortgage principal
+  - The income tax
+  - The depreciation expense
+  - The property taxes
+key: D
+explanation: Operating expenses include fixed costs such as taxes and insurance, variable costs such
+  as utilities and repairs, and reserves for replacement. Property taxes are a fixed operating
+  expense. The mortgage principal is not an operating expense because debt service is excluded from
+  net operating income.
+citation:
+  source: REP Ref. Brokerage Practice § 12.3
+  url: null
+  quoted_text: operating expenses (fixed, such as taxes and insurance; variable, such as utilities and
+    repairs; and reserves for replacement of short-lived components)
+  secondary: []
+terms:
+  - operating expenses
+  - fixed expenses
+  - variable expenses
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

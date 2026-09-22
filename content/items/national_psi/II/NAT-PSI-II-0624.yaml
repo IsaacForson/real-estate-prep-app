@@ -1,0 +1,41 @@
+id: NAT-PSI-II-0624
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a western state that follows the prior appropriation system, a farmer secured a water
+  permit in 1995 and a developer secured a water permit in 2005 for the same river. During a water
+  shortage, who has the legal right to use the water first?
+options:
+  - The water right belongs to the farmer who holds the 1995 permit
+  - The water right belongs to the developer who holds the 2005 permit
+  - The water right belongs to the owner of the land bordering the river
+  - The water right belongs to the state agency that allocates water
+key: A
+explanation: Prior appropriation awards water rights based on the doctrine of “first in time, first
+  in right”; the earliest valid permit holder has priority when water is scarce. Because the
+  farmer’s permit was issued in 1995, the farmer’s right outranks the developer’s 2005 permit. The
+  riparian ownership rule does not apply in a prior‑appropriation state. (Property & Land Use, REP
+  Reference)
+citation:
+  source: REP Ref. Property & Land Use § 1.7
+  url: null
+  quoted_text: under prior appropriation, used in many western states, water rights are obtained by
+    permit apart from land ownership and the earliest user has priority.
+  secondary: []
+terms:
+  - prior appropriation
+  - water rights
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

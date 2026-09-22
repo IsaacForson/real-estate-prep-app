@@ -1,0 +1,45 @@
+id: NAT-PV-V-1269
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA, which of the following best describes the term 'telephone solicitation'?
+options:
+  - The transmission of an unsolicited advertisement via facsimile machine to a residential
+    subscriber without the recipient's prior express permission
+  - The use of an artificial or prerecorded voice to deliver a message to a telephone number
+    assigned to a paging service without the caller's prior express consent
+  - The initiation of a telephone call or message for the purpose of encouraging the purchase or
+    rental of, or investment in, property, goods, or services, which is transmitted to any person
+  - The initiation of a telephone call made for emergency purposes using an automatic telephone
+    dialing system to any person
+key: C
+explanation: Under 47 U.S.C. § 227(a)(4), telephone solicitation is defined as the initiation of a
+  call or message to encourage the purchase, rental, or investment in property, goods, or services,
+  transmitted to any person. The description of an emergency call using an automatic dialing system
+  does not meet this definition, nor do the descriptions of unsolicited fax advertisements or
+  prerecorded voice messages to paging services.
+citation:
+  source: 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions on
+    telephone solicitation (a)(4)
+  url: null
+  quoted_text: the initiation of a telephone call or message for the purpose of encouraging the
+    purchase or rental of, or investment in, property, goods, or services, which is transmitted to
+    any person
+  secondary: []
+terms:
+  - telephone solicitation
+  - automatic telephone dialing system
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

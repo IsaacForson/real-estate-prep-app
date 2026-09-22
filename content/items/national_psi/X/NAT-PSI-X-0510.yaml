@@ -1,0 +1,47 @@
+id: NAT-PSI-X-0510
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA, how is the term 'established business relationship' defined for the purposes
+  of subsection (b)(1)(C)(i)?
+options:
+  - It is defined as any relationship where the recipient has previously purchased goods or services
+    from the caller, regardless of when.
+  - It is defined as a relationship that exists only if the recipient has given prior express
+    consent to receive calls under the TCPA.
+  - It is defined as the meaning in 47 CFR §64.1200 (Jan 1 2003), applied to business subscribers
+    and subject to any time limit under paragraph (2)(G).
+  - It is defined as a relationship where the caller has previously done business with the recipient
+    within the last 18 months or more.
+key: C
+explanation: The term 'established business relationship' for subsection (b)(1)(C)(i) is defined by
+  47 U.S.C. §227 as having the meaning given in 47 CFR §64.1200 as of January 1, 2003, applied to
+  business subscribers and subject to any time limit under paragraph (2)(G). The option stating that
+  the relationship exists where the caller has previously done business with the recipient within
+  the last 18 months or more is incorrect because the definition does not include an 18‑month
+  period.
+citation:
+  source: 47 U.S.C. § 227 (TCPA / Do-Not-Call) — Telephone Consumer Protection Act — restrictions on
+    telephone solicitation (a)(2)
+  url: null
+  quoted_text: (2) The term 'established business relationship', for purposes only of subsection
+    (b)(1)(C)(i), shall have the meaning given the term in section 64.1200 of title 47, Code of
+    Federal Regulations, as in effect on January 1, 2003, except that—
+  secondary: []
+terms:
+  - established business relationship
+  - tcpa
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

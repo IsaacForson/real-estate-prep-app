@@ -1,0 +1,39 @@
+id: NAT-PSI-II-0607
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 first mortgage, a 2020 mechanic's lien, and unpaid 2022 property taxes.
+  If the property is foreclosed, which lien is paid first from the proceeds?
+options:
+  - A 2020 mechanic's lien filed
+  - A 2022 property tax lien
+  - A 2018 first mortgage loan
+  - A lien paid after all others
+key: B
+explanation: Property tax liens rank ahead of all other liens regardless of date, so the 2022
+  property tax lien is paid first. The other options ignore this statutory exception.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - priority
+  - property tax lien
+  - foreclosure
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

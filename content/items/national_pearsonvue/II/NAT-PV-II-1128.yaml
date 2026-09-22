@@ -1,0 +1,39 @@
+id: NAT-PV-II-1128
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: In a real estate transaction, a seller conveys property using a deed that limits warranties to
+  defects arising during the seller's own period of ownership. Which deed type is being used?
+options:
+  - General warranty deed
+  - Special warranty deed
+  - Bargain and sale deed
+  - Quitclaim deed
+key: B
+explanation: The special warranty deed limits the grantor's warranties to claims arising during the
+  grantor's own period of ownership, providing no protection for defects that existed before the
+  grantor took title. This matches the description in the stem. The general warranty deed would
+  warrant against defects at any time in the chain of title, which is broader than described.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.4
+  url: null
+  quoted_text: "A special warranty deed limits the covenants to the grantor's own period of ownership:
+    the grantor warrants only against claims 'by, through, or under' the grantor, and gives no
+    protection against defects created before the grantor took title."
+  secondary: []
+terms:
+  - special warranty deed
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

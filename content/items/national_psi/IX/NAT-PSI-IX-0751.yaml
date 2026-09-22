@@ -1,0 +1,38 @@
+id: NAT-PSI-IX-0751
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two unmarried individuals purchase a property together and the deed does not specify the form
+  of co-ownership. What type of ownership is presumed?
+options:
+  - Community property owned equally by spouses
+  - Tenancy by the entirety for married couples only
+  - Tenancy in common with unequal shares allowed
+  - Joint tenancy with right of survivorship
+key: C
+explanation: A conveyance to two or more unmarried persons is presumed in most states to create a
+  tenancy in common. Joint tenancy requires express language, and tenancy by the entirety is limited
+  to spouses.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 4.2
+  url: null
+  quoted_text: A conveyance to two or more unmarried persons is presumed in most states to create a
+    tenancy in common
+  secondary: []
+terms:
+  - tenancy in common
+  - unmarried persons
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

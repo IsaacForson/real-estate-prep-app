@@ -1,0 +1,50 @@
+id: VA-21-0024
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker discovers noncompliance on March 5 and submits a voluntary compliance plan to the
+  Board on March 10. What is the latest date by which the broker must finish the voluntary
+  compliance program?
+options:
+  - The broker must complete the voluntary compliance by June 8.
+  - The broker must complete the voluntary compliance by May 31.
+  - The broker must complete the voluntary compliance by July 10.
+  - The broker must complete the voluntary compliance by August 9.
+key: A
+explanation: The statute requires completion of voluntary compliance within 90 days after the plan
+  is submitted. Adding 90 days to March 10 yields June 8. The option stating May 31 is only 82 days
+  after submission and therefore too early.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2111.1
+  url: null
+  quoted_text: The broker shall notify the Board of the discovery of any noncompliance within 30 days
+    after discovery and shall submit a written statement with a plan to bring the practices,
+    policies, and procedures into voluntary compliance, which completion of such voluntary
+    compliance shall not exceed a period of 90 days from the date that the plan is submitted to the
+    Board.
+  secondary: []
+math:
+  worked_solution: "Submission date: March 10. Add 21 days to reach March 31. Add 30 days to reach
+    April 30. Add 31 days to reach May 31. Add 8 days to reach June 8. Total added days = 21+30+31+8
+    = 90."
+  formulas:
+    - Completion date = submission date + 90 days
+  onscreen_calculator_only: false
+terms:
+  - voluntary compliance
+  - notification
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

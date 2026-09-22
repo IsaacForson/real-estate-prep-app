@@ -1,0 +1,39 @@
+id: NAT-PSI-II-0610
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A county enacts a zoning ordinance that prohibits any commercial use on a parcel, leaving the
+  owner with no economically viable use. What may the owner do?
+options:
+  - The owner may seek compensation for the loss of all economically viable use.
+  - The owner may challenge the regulation as a regulatory taking.
+  - The owner must first obtain a variance before using the land for any purpose.
+  - The owner may ignore the ordinance and continue the existing commercial use.
+key: B
+explanation: A regulation that strips essentially all use may be challenged as a regulatory taking,
+  allowing the owner to contest the ordinance. The option claiming the owner must first obtain a
+  variance is incorrect because the rule does not impose that prerequisite; the owner may directly
+  challenge the regulation.
+citation:
+  source: REP Ref. Property & Land Use § 4.2
+  url: null
+  quoted_text: A regulation that strips essentially all use may be challenged as a regulatory taking.
+  secondary: []
+terms:
+  - regulatory taking
+  - zoning
+  - challenge
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

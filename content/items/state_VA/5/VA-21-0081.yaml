@@ -1,0 +1,46 @@
+id: VA-21-0081
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate licensee refuses to schedule a showing for a prospective buyer because the buyer
+  is gay. Under the Virginia Fair Housing Law, is the licensee’s action lawful?
+options:
+  - It is lawful because the buyer lacks financial qualifications.
+  - It is unlawful only if the buyer files a complaint.
+  - It is lawful because the licensee is not a lender.
+  - It is unlawful because sexual orientation is a protected class.
+key: D
+explanation: The law prohibits discrimination in residential real estate-related transactions based
+  on sexual orientation, among other protected classes. Refusing to show a property because of the
+  buyer’s sexual orientation constitutes unlawful discrimination. The financial qualification
+  exception applies only to loan transactions, not to showings, and unlawfulness does not depend on
+  a complaint being filed.
+citation:
+  source: Va. Code Ann. § 36-96.1 et seq. — Code of Virginia Title 36, Chapter 5.1 — Virginia Fair
+    Housing Law — § 36-96.4(A)
+  url: null
+  quoted_text: It is unlawful for any person or other entity, including any lending institution, whose
+    business includes engaging in residential real estate-related transactions to discriminate
+    against any person in making available such a transaction, or in the terms or conditions of such
+    a transaction, or in the manner of providing such a transaction, because of race, color,
+    religion, national origin, sex, elderliness, familial status, sexual orientation, gender
+    identity, military status, or disability.
+  secondary: []
+terms:
+  - discrimination
+  - sexual orientation
+  - protected class
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

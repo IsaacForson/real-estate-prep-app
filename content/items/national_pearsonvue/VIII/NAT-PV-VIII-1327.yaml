@@ -1,0 +1,45 @@
+id: NAT-PV-VIII-1327
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A borrower obtains a $300,000 mortgage loan. The lender charges 1.5 discount points. How much
+  does the borrower pay in points at closing?
+options:
+  - $1,500
+  - $6,000
+  - $3,000
+  - $4,500
+key: D
+explanation: The correct answer is $4,500 because one point equals 1% of the loan amount, so the
+  dollar cost is loan × (points ÷ 100) = $300,000 × (1.5 ÷ 100) = $4,500. A common mistake is to use
+  1 point instead of 1.5, which yields $3,000.
+citation:
+  source: "REP Ref. Real Estate Math — Reference note: exam math methods with worked examples
+    (authored, status: draft — needs licensed review) § 5.4"
+  url: null
+  quoted_text: One point = 1% of the loan amount, never of the price. Dollar cost = loan × points ÷ 100.
+  secondary: []
+math:
+  worked_solution: |-
+    Convert points to decimal: 1.5 ÷ 100 = 0.015.
+    Multiply loan amount by the decimal: $300,000 × 0.015 = $4,500.
+  formulas:
+    - Cost = Loan × (Points/100)
+  onscreen_calculator_only: false
+terms:
+  - point
+  - loan
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

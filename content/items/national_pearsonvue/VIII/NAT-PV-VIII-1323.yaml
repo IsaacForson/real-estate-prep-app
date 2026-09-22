@@ -1,0 +1,44 @@
+id: NAT-PV-VIII-1323
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A licensee is reviewing valuation methods for a rental property. She knows that the gross rent
+  multiplier (GRM) applies to monthly gross rent, the gross income multiplier (GIM) applies to
+  annual gross income, and the capitalization rate (cap rate) applies to annual net operating
+  income. Which of the following actions is described as a common wrong-answer pattern in the text?
+options:
+  - The action of dividing annual NOI by a cap rate is a common wrong-answer pattern
+  - The action of multiplying annual gross income by a GIM is a common wrong-answer pattern
+  - The action of dividing NOI by a GRM is a common wrong-answer pattern
+  - The action of multiplying monthly gross rent by a GRM is a common wrong-answer pattern
+key: C
+explanation: According to §15.4, GRM uses monthly gross rent and GIM uses annual gross income, so
+  multiplying those rents by their respective multipliers is correct. Cap rates use annual NOI, so
+  dividing NOI by a cap rate is also correct. Dividing NOI by a GRM, however, is explicitly cited as
+  a common wrong-answer pattern. The option about multiplying monthly gross rent by a GRM is a
+  correct use, not a mistake.
+citation:
+  source: REP Ref. Real Estate Math § 15.4
+  url: null
+  quoted_text: GRM uses monthly gross rent; GIM uses annual gross income; cap rates use annual NOI.
+    Dividing NOI by a GRM, or monthly rent by a cap rate, is a common wrong-answer pattern.
+  secondary: []
+terms:
+  - grm
+  - caprate
+  - gim
+  - noi
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

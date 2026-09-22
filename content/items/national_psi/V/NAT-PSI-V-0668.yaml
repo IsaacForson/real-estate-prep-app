@@ -1,0 +1,40 @@
+id: NAT-PSI-V-0668
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What characterizes a void contract?
+options:
+  - It is valid until the protected party cancels.
+  - It is lacking any legal effect.
+  - It is binding after ratification.
+  - It is enforceable despite missing a writing.
+key: B
+explanation: A void contract never had any legal effect; it is treated as if it never existed. In
+  contrast, a voidable contract remains valid until the party with the power to avoid it chooses to
+  cancel. Therefore, the correct description is that a void contract lacks any legal effect. The
+  option stating it is valid until the protected party cancels describes a voidable contract, not a
+  void one.
+citation:
+  source: REP Ref. Contracts § 13.1
+  url: null
+  quoted_text: "*Void vs. voidable*: void never had effect; voidable is valid until the protected
+    party cancels."
+  secondary: []
+terms:
+  - void
+  - voidable
+  - contract
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

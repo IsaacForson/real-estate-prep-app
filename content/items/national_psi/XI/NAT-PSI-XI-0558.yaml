@@ -1,0 +1,52 @@
+id: NAT-PSI-XI-0558
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A rental property has 10 units leased at $1,000 per month, a 5% vacancy rate, $2,000 of other
+  income per year, and annual operating expenses of $45,000. What is the net operating income?
+options:
+  - $75,000
+  - $116,000
+  - $69,000
+  - $71,000
+key: D
+explanation: First calculate potential gross income (10 × $1,000 × 12 = $120,000), subtract vacancy
+  loss ($120,000 × 0.05 = $6,000), add other income to get effective gross income ($116,000), then
+  subtract operating expenses to obtain NOI ($71,000). The $69,000 distractor results from omitting
+  the other income, while $75,000 arises from subtracting expenses from PGI before accounting for
+  vacancy and other income.
+citation:
+  source: REP Ref. Real Estate Math § 7.1
+  url: null
+  quoted_text: Net operating income (NOI) = EGI − operating expenses.
+  secondary: []
+math:
+  worked_solution: |-
+    PGI = 10 × $1,000 × 12 = $120,000
+    Vacancy = $120,000 × 0.05 = $6,000
+    EGI = $120,000 − $6,000 + $2,000 = $116,000
+    NOI = $116,000 − $45,000 = $71,000
+  formulas:
+    - PGI = units × rent × 12
+    - Vacancy = PGI × vacancy rate
+    - EGI = PGI − Vacancy + other income
+    - NOI = EGI − operating expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - effective gross income
+  - vacancy
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

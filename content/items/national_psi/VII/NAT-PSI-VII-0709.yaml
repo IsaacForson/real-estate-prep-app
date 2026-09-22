@@ -1,0 +1,41 @@
+id: NAT-PSI-VII-0709
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A company maintains records of hazardous substance storage at a facility established on March
+  1, 1990. Assuming no waiver is obtained, until what date must the records be retained under
+  CERCLA?
+options:
+  - March 1, 2040
+  - December 11, 2040
+  - December 11, 2030
+  - March 1, 2030
+key: A
+explanation: Under CERCLA, records must be kept for fifty years after December 11, 1980 or fifty
+  years after the date of establishment of the record, whichever is later. The facility was
+  established March 1, 1990, so the later date is March 1, 2040. The December 11, 2030 distractor
+  uses only the fixed 1980 start date and ignores the later establishment date.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — (d)(2)
+  url: null
+  quoted_text: Beginning with December 11, 1980, for fifty years thereafter or for fifty years after
+    the date of establishment of a record (whichever is later)
+  secondary: []
+terms:
+  - recordkeeping
+  - retention
+  - waiver
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,40 @@
+id: NAT-PSI-V-0673
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A purchase agreement includes a 'time is of the essence' clause setting the closing date for
+  June 30. The buyer fails to deliver the purchase funds by that date. What is the consequence?
+options:
+  - The buyer is in breach and the seller may pursue remedies or treat the contract as terminated
+  - The buyer may still perform within a reasonable time after June 30 without penalty
+  - The contract is automatically void due to the missed deadline
+  - The seller must grant an extension before exercising any remedies
+key: A
+explanation: "A 'time is of the essence' clause makes stated deadlines strict: a party who misses a
+  deadline is in breach and the other party may pursue remedies or treat the contract as terminated.
+  The buyer's failure to fund by June 30 constitutes a breach, allowing the seller to seek remedies
+  or terminate. The other options contradict the strictness of the clause."
+citation:
+  source: REP Ref. Contracts § 4.3
+  url: null
+  quoted_text: "A 'time is of the essence' clause makes stated deadlines strict: a party who misses a
+    deadline is in breach and the other party may pursue remedies or, if the contract so provides,
+    treat the contract as terminated."
+  secondary: []
+terms:
+  - time is of the essence
+  - breach
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

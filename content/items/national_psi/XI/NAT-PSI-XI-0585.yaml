@@ -1,0 +1,48 @@
+id: NAT-PSI-XI-0585
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A trapezoidal lot has 80 feet of frontage, 120 feet at the rear, and a depth of 100 feet. What
+  is the area of the lot in acres?
+options:
+  - 0.18 acre
+  - 0.28 acre
+  - 0.46 acre
+  - 0.23 acre
+key: D
+explanation: Using the trapezoid formula area = ((side1 + side2) / 2) × depth, the average width is
+  (80 + 120) / 2 = 100 ft. Multiplying by the depth gives 100 × 100 = 10,000 sq ft. Dividing by
+  43,560 converts to 0.2296 acre, which rounds to 0.23 acre. The distractor 0.46 acre results from
+  forgetting to divide by 2 before multiplying by depth, which incorrectly uses the sum of the sides
+  instead of the average.
+citation:
+  source: REP Ref. Real Estate Math § 2.3
+  url: null
+  quoted_text: "Trapezoid (two parallel sides): area = (side 1 + side 2) ÷ 2 × depth."
+  secondary: []
+math:
+  worked_solution: "Step 1: Average width = (80 ft + 120 ft) / 2 = 100 ft.\\nStep 2: Area = 100 ft ×
+    100 ft = 10,000 sq ft.\\nStep 3: Acres = 10,000 ÷ 43,560 = 0.2296...\\nStep 4: Round to two
+    decimal places → 0.23 acre."
+  formulas:
+    - Average width = (side1 + side2) / 2; Area = average width × depth; Acres = area in square feet
+      ÷ 43,560
+  onscreen_calculator_only: false
+terms:
+  - trapezoid
+  - area
+  - acre
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

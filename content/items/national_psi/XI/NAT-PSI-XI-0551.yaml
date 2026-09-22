@@ -1,0 +1,48 @@
+id: NAT-PSI-XI-0551
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property was sold for $300,000, representing a 20% profit over the total cost. What was the
+  total cost?
+options:
+  - $250,000
+  - $240,000
+  - $260,000
+  - $275,000
+key: A
+explanation: To find the cost when a sale price includes a known profit percentage, divide the sale
+  price by 1 plus the profit rate expressed as a decimal. For a sale price of $300,000 and a 20%
+  profit, the calculation is $300,000 ÷ 1.20 = $250,000. The incorrect result of $240,000 comes from
+  multiplying the sale price by 0.80, which mistakenly treats the profit as a deduction from the
+  sale price rather than as an addition to the cost.
+citation:
+  source: REP Ref. Real Estate Math § 14.2
+  url: null
+  quoted_text: Cost = sale price ÷ (1 + profit rate) or ÷ (1 − loss rate) (§ 3.3).
+  secondary: []
+math:
+  worked_solution: |-
+    Sale price = $300,000
+    Profit rate = 20% = 0.20
+    Cost = $300,000 ÷ (1 + 0.20) = $300,000 ÷ 1.20 = $250,000
+  formulas:
+    - Cost = sale price ÷ (1 + profit rate)
+  onscreen_calculator_only: false
+terms:
+  - cost
+  - sale
+  - profit
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,41 @@
+id: NAT-PSI-I-0601
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller signs a deed and gives it to an escrow agent with instructions to release the deed
+  when the buyer's funds arrive. The buyer's funds are received on Thursday, the agent releases the
+  deed, and it is recorded on Friday. When does title pass under these circumstances?
+options:
+  - When the seller signs the deed and delivers it to escrow agent for the buyer
+  - When the buyer pays the purchase price directly to the seller at closing
+  - When the deed is recorded in the public records after closing
+  - When the escrow agent releases the deed to the buyer upon receipt of funds
+key: D
+explanation: Title passes when the deed is delivered to the grantee with the grantor's present
+  intent. When a deed is delivered to an escrow agent with specific release conditions, title passes
+  when those conditions are satisfied. The option stating that title passes when the deed is
+  recorded is incorrect because recording is not the moment of transfer.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 11.2
+  url: null
+  quoted_text: delivery may also be made to an escrow agent with instructions to release it when
+    conditions are met, and title then passes when they are satisfied.
+  secondary: []
+terms:
+  - title
+  - delivery
+  - escrow
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

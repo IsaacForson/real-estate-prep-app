@@ -1,0 +1,44 @@
+id: NAT-PSI-VII-0704
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender signs a guarantee agreement to cover potential cleanup costs for a property owner but
+  does not participate in management of the facility. Under CERCLA, is the lender considered a
+  guarantor?
+options:
+  - The lender is considered a guarantor because it provides evidence of financial responsibility
+    for the owner or operator
+  - The lender is not considered a guarantor because it does not participate in management of the
+    facility
+  - The lender is not considered a guarantor because only the owner or operator can be a guarantor
+  - The lender is considered a guarantor only if it also holds title to the facility
+key: A
+explanation: According to CERCLA § 9601(13), a guarantor is any person, other than the owner or
+  operator, who provides evidence of financial responsibility for an owner or operator under this
+  chapter. The lender, by signing a guarantee agreement, provides such evidence, so it is a
+  guarantor regardless of management participation. The claim that lack of management participation
+  disqualifies the lender is incorrect, because the guarantor definition does not include a
+  management requirement.
+citation:
+  source: 42 U.S.C. §§ 9601–9628 (CERCLA) — CERCLA — Hazardous Substances Releases, Liability,
+    Compensation § 9601(13)
+  url: null
+  quoted_text: (13) The term "guarantor" means any person, other than the owner or operator, who
+    provides evidence of financial responsibility for an owner or operator under this chapter.
+  secondary: []
+terms:
+  - guarantor
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

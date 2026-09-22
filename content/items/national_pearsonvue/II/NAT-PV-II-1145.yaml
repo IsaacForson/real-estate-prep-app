@@ -1,0 +1,43 @@
+id: NAT-PV-II-1145
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a property at a tax deed sale. The buyer receives a tax deed and records it.
+  Later, the buyer discovers an undisclosed heir claiming an interest in the property. According to
+  the rules governing tax sales, what is the most likely legal consequence for the buyer's title?
+options:
+  - The buyer is protected by the implied warranty of the taxing authority
+  - The heir's claim is invalid because the tax deed extinguishes all prior interests
+  - The title is automatically void because the deed carries no warranties
+  - The buyer must file a quiet title action to make the title insurable
+key: D
+explanation: A tax deed carries no warranties, and the title may need a quiet title action before it
+  is insurable. Because the deed provides no warranties, the buyer cannot sue the seller (the taxing
+  authority) for breach of warranty. Instead, to clear the title of the heir's claim and make it
+  insurable, the buyer must initiate a quiet title action. The title is not automatically void, nor
+  is it protected by implied warranties, and the tax deed does not automatically extinguish all
+  prior interests without further legal process.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.2
+  url: null
+  quoted_text: A tax deed carries no warranties, and the title may need a quiet title action before it
+    is insurable.
+  secondary: []
+terms:
+  - tax deed
+  - quiet title action
+  - warranties
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

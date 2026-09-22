@@ -1,0 +1,50 @@
+id: NAT-PSI-XI-0554
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is budgeting rent for a 12-unit apartment building. The target NOI is $55,000,
+  annual operating expenses are $30,000, and the expected vacancy rate is 6%. What is the required
+  rent per unit per month?
+options:
+  - $406.33
+  - $627.96
+  - $555.00
+  - $7,535.46
+key: B
+explanation: First, EGI = target NOI + expenses = $55,000 + $30,000 = $85,000. Then, PGI = EGI ÷ (1
+  − vacancy rate) = $85,000 ÷ 0.94 ≈ $90,425.53. Finally, rent per unit per month = PGI ÷ units ÷ 12
+  = $90,425.53 ÷ 12 ÷ 12 ≈ $627.96. The other options result from omitting expenses, misapplying the
+  vacancy rate, or forgetting to divide by 12.
+citation:
+  source: REP Ref. Real Estate Math § 13.3
+  url: null
+  quoted_text: rent per unit per month = PGI ÷ units ÷ 12
+  secondary: []
+math:
+  worked_solution: |-
+    EGI = $55,000 + $30,000 = $85,000
+    PGI = $85,000 ÷ (1 − 0.06) = $85,000 ÷ 0.94 ≈ $90,425.53
+    rent per unit per month = $90,425.53 ÷ 12 ÷ 12 ≈ $627.96
+  formulas:
+    - EGI = target NOI + operating expenses
+    - PGI = EGI ÷ (1 − vacancy rate)
+    - rent per unit per month = PGI ÷ units ÷ 12
+  onscreen_calculator_only: false
+terms:
+  - egi
+  - pgi
+  - vacancy rate
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

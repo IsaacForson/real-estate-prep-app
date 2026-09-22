@@ -1,0 +1,45 @@
+id: NAT-PSI-I-0597
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A buyer purchases a house and receives a deed. What does the deed transfer?
+options:
+  - The deed transfers land, attachments, and ownership rights.
+  - The deed transfers only the legal rights of ownership.
+  - The deed transfers the land surface and subsurface only.
+  - The deed transfers the land and any permanent human-made attachments.
+key: A
+explanation: Real property is defined as land together with the legal rights of ownership, often
+  described as a bundle of rights to possess, control, use, enjoy, exclude, and dispose. Because a
+  deed conveys real property, it transfers the land itself, any permanent improvements attached to
+  the land, and the full bundle of ownership rights. A statement that the deed transfers only the
+  legal rights of ownership omits the land and its attachments, so it is incomplete. A statement
+  that the deed transfers only the surface and subsurface of the land leaves out both the ownership
+  bundle and any improvements, making it incorrect. A statement that the deed transfers land and
+  permanent human-made attachments but does not mention the ownership rights fails to include the
+  complete bundle of rights.
+citation:
+  source: REP Ref. Property & Land Use § 1.1
+  url: null
+  quoted_text: "Real property is real estate plus the legal rights of ownership, often described as a
+    bundle of rights: to possess, to control and use, to enjoy without interference, to exclude
+    others, and to dispose (sell, lease, give, mortgage, or will)."
+  secondary: []
+terms:
+  - real property
+  - bundle of rights
+  - deed
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

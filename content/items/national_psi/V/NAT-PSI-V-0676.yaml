@@ -1,0 +1,52 @@
+id: NAT-PSI-V-0676
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A purchase agreement for a residential home includes a 'time is of the essence' clause
+  requiring closing on October 15. The buyer fails to deliver the loan funds by that date. According
+  to the text, what is the legal consequence of the buyer's failure to close on time?
+options:
+  - The buyer's failure to close on time results in a requirement that the buyer must pay a penalty
+    but the contract remains enforceable.
+  - The buyer's failure to close on time results in a breach allowing the seller to pursue remedies
+    or treat the contract as terminated.
+  - The buyer's failure to close on time results in an automatic termination of the contract without
+    further action.
+  - The buyer's failure to close on time results in a minor delay that courts will excuse as
+    reasonable.
+key: B
+explanation: A 'time is of the essence' clause makes the closing date a strict deadline; missing
+  that deadline is a breach, giving the seller the right to pursue remedies or, if the contract
+  provides, to treat the contract as terminated. The option stating that the buyer must pay a
+  penalty but the contract remains enforceable is incorrect because the clause does not create a
+  mere penalty remedy; it allows the seller to treat the failure as a breach. The option claiming
+  automatic termination without further action is incorrect because the seller must elect to treat
+  the contract as terminated or pursue other remedies; termination is not automatic. The option
+  suggesting the delay is minor and excusable as reasonable is incorrect because a 'time is of the
+  essence' clause removes the reasonableness excuse that would apply absent such a clause.
+citation:
+  source: REP Ref. Contracts § 4.3 Time is of the essence
+  url: null
+  quoted_text: "A 'time is of the essence' clause makes stated deadlines strict: a party who misses a
+    deadline is in breach and the other party may pursue remedies or, if the contract so provides,
+    treat the contract as terminated."
+  secondary: []
+terms:
+  - time
+  - essence
+  - breach
+  - remedy
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

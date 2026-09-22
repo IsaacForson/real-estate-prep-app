@@ -1,0 +1,41 @@
+id: NAT-PSI-IX-0462
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under the text, which situation requires a revised Loan Estimate?
+options:
+  - The interest rate lock expires before closing
+  - The borrower changes the loan amount after application
+  - The lender updates the appraisal after closing
+  - The changed circumstances that alter the locked terms
+key: D
+explanation: Changed circumstances that alter the locked terms trigger a revised Loan Estimate. The
+  interest rate lock expiring before closing does not change the locked terms, so it does not
+  trigger a revised LE. Changing the loan amount after application is not a changed circumstance
+  that alters the locked terms under the rule. Updating the appraisal after closing occurs after the
+  loan is closed and therefore does not affect the locked terms or require a revised LE.
+citation:
+  source: REP Ref. Financing & Closing § 9.3
+  url: null
+  quoted_text: Changed circumstances that alter locked terms trigger a revised Loan Estimate under the
+    cached TILA rules.
+  secondary: []
+terms:
+  - loan
+  - estimate
+  - changed
+  - circumstances
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

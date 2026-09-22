@@ -1,0 +1,45 @@
+id: NY-443-0025
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A New York real estate corporation has obtained a broker’s license. The corporation’s
+  president, vice president, and treasurer all wish to act as brokers for the corporation. How many
+  additional broker licenses must the corporation obtain for its officers?
+options:
+  - One license
+  - Two licenses
+  - Zero licenses
+  - Three licenses
+key: B
+explanation: The license entitles the president to act as broker automatically; each other officer
+  who wishes to act as broker needs a separate license. Thus the vice president and treasurer each
+  require an additional license, totaling two.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — §
+    441(2)
+  url: null
+  quoted_text: If the licensee be a corporation, the license issued to it shall entitle the president
+    thereof or such other officer as shall be designated by such corporation, to act as a real
+    estate broker. For each other officer who shall desire to act as a real estate broker in behalf
+    of such corporation an additional license expiring on the same date as the license of the
+    corporation shall be applied for and issued
+  secondary: []
+terms:
+  - corporation
+  - broker
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

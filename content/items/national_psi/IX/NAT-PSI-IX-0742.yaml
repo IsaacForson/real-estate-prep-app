@@ -1,0 +1,37 @@
+id: NAT-PSI-IX-0742
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property is subject to a mortgage recorded January 1, a mechanic's lien filed March 1, and
+  the current year's property tax lien. If the property is sold at foreclosure, which lien is paid
+  first?
+options:
+  - The lien that was recorded first
+  - The property tax lien regardless of date
+  - The mechanic's lien filed later
+  - The mortgage lien recorded earliest
+key: B
+explanation: Property tax and special assessment liens rank first by statute regardless of the date
+  of recording. Therefore the property tax lien is paid before the mortgage or mechanic's lien.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: property tax and special assessment liens rank first by statute regardless of date
+  secondary: []
+terms:
+  - lien priority
+  - property tax lien
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,43 @@
+id: MA-87D-0039
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual applies for a broker license in Massachusetts but does not submit the required
+  surety bond. What is the likely outcome under Massachusetts law?
+options:
+  - The application will be automatically approved after a background check.
+  - The application may be approved if the applicant provides a letter of credit instead.
+  - The application will be denied until the bond is provided.
+  - The application will be approved pending submission of the bond within 30 days.
+key: C
+explanation: Massachusetts law (M.G.L. c. 112, § 87TT) requires that a broker's license not be
+  issued until the applicant provides a $5,000 surety bond to the board. Without the bond, the
+  application must be denied until the bond is submitted. The statute does not allow approval
+  pending later submission of the bond, nor does it permit a letter of credit to substitute for the
+  required bond.
+citation:
+  source: "### M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87TT"
+  url: null
+  quoted_text: No broker's license shall be issued or renewed until the applicant gives to the board a
+    bond in the form approved by said board in the sum of five thousand dollars
+  secondary: []
+terms:
+  - broker license
+  - bond
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,39 @@
+id: NAT-PSI-X-0773
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Which of the following actions with earnest money constitutes conversion of trust funds?
+options:
+  - Using earnest money to cover office operating expenses
+  - Holding earnest money until parties agree in writing
+  - Paying broker commission from trust account after closing
+  - Maintaining a separate ledger for each transaction
+key: A
+explanation: Conversion is using trust money for any unauthorized purpose (quoted text). Using
+  earnest money to pay office expenses is an unauthorized use, thus conversion. Holding disputed
+  funds until agreement, paying earned commissions after closing, and keeping separate ledgers are
+  permitted or required.
+citation:
+  source: REP Ref. Brokerage Practice § 10.2
+  url: null
+  quoted_text: Conversion is using trust money for any unauthorized purpose.
+  secondary: []
+terms:
+  - trust money
+  - conversion
+  - earnest money
+  - unauthorized purpose
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

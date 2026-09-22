@@ -1,0 +1,41 @@
+id: NAT-PSI-VI-0699
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller tells a neighbor, 'Talk to my nephew about buying the lot; he handles that for me.'
+  The nephew negotiates terms with the neighbor. According to the text, what is the legal effect?
+options:
+  - The seller is bound only if the nephew is a licensed real estate agent
+  - The seller may be bound due to ostensible agency and estoppel
+  - The seller is not bound because no written agency agreement exists
+  - The seller is bound only if the nephew receives a commission
+key: B
+explanation: Ostensible agency arises when a principal's words lead a third party to reasonably
+  believe that someone is the agent, and the principal is then estopped from denying that agency. In
+  this case, the seller's statement to the neighbor created such belief, so the seller may be bound
+  by the nephew's negotiations.
+citation:
+  source: REP Ref. Agency § 3.3
+  url: null
+  quoted_text: Ostensible (apparent) agency arises when a principal's words or conduct lead a third
+    party reasonably to believe that someone is the principal's agent, and the third party relies on
+    that belief.
+  secondary: []
+terms:
+  - ostensible agency
+  - estoppel
+  - third party
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

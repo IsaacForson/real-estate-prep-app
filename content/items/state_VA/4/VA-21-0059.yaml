@@ -1,0 +1,44 @@
+id: VA-21-0059
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a written brokerage agreement stating that she will act as a limited
+  service agent and lists the specific services she will provide, but omits the list of standard
+  agent duties she will not perform. Under Virginia law, is the disclosure compliant?
+options:
+  - Yes, because the agreement identifies the limited service role
+  - No, because the omission of the list of duties not provided violates the disclosure requirement
+  - Yes, as long as the services provided are disclosed in bold lettering
+  - No, because the agreement must also include a dual agency disclosure
+key: B
+explanation: The statute requires a limited service agent to disclose (i) that the licensee is
+  acting as a limited service agent, (ii) the specific services to be provided, and (iii) the
+  specific duties of a standard agent that will not be provided. Omitting the third element fails
+  the requirement, making the disclosure noncompliant. Merely stating the limited service role or
+  formatting the disclosed services in bold does not satisfy the missing element, and a dual agency
+  disclosure is only required when dual agency actually occurs.
+citation:
+  source: Va. Code Ann. § 54.1-2138.1(A)
+  url: null
+  quoted_text: (iii) provides a list of the specific duties of a standard agent set out in subdivision
+    A 2 of § 54.1-2131 , subdivision A 3 of § 54.1-2132 , subdivision A 2 of § 54.1-2133 , or
+    subdivision A 3 of § 54.1-2134 , as applicable, that the limited service agent will not provide
+    to the client.
+  secondary: []
+terms:
+  - limited service agent
+  - disclosure
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

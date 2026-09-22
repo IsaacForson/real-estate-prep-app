@@ -1,0 +1,42 @@
+id: VA-21-0051
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A brother transfers his interest in a duplex to his sister, who already owns the other half,
+  without any consideration. Under Virginia's Residential Property Disclosure Act, is the owner
+  required to provide a residential property disclosure statement to the sister?
+options:
+  - The transfer requires a disclosure statement because it is a sale of residential real property.
+  - The transfer does not require a disclosure statement because transfers between co-owners are
+    exempt under the chapter.
+  - The transfer requires a disclosure statement unless the property is owner-occupied.
+  - The transfer does not require a disclosure statement unless the property is located in a special
+    flood hazard area.
+key: B
+explanation: The key is correct because § 55.1-702(A)(4) expressly exempts transfers from one or
+  more co-owners solely to one or more other co-owners from the disclosure requirements. The most
+  tempting distractor is the option that claims a disclosure is required because the transfer is a
+  sale of residential real property, but it ignores the specific co‑owner exemption.
+citation:
+  source: Va. Code Ann. § 55.1-702(A)(4)
+  url: null
+  quoted_text: Transfers from one or more co-owners solely to one or more other co-owners.
+  secondary: []
+terms:
+  - co-owner
+  - transfer
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

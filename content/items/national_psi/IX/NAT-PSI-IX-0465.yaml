@@ -1,0 +1,41 @@
+id: NAT-PSI-IX-0465
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a notice state, Grantor conveys the same lot to Buyer A on Monday, who does not record the
+  deed. On Wednesday, Grantor conveys the lot to Buyer B, who pays value, has no actual or
+  constructive notice of A's deed, and records the deed on Thursday. Who owns the lot?
+options:
+  - The lot belongs to Buyer A because the deed was first delivered.
+  - The lot belongs to Buyer B because they lacked notice and recorded first.
+  - The lot is owned undivided by Buyers A and B.
+  - The lot reverts to the grantor due to the double conveyance.
+key: B
+explanation: Under a notice statute a later bona fide purchaser for value without notice wins even
+  before recording, so Buyer B prevails. The lot belongs to Buyer A because the deed was first
+  delivered is incorrect because mere first delivery does not defeat a later notice‑protected
+  purchaser.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a notice statute a later bona fide purchaser for value without notice (actual or
+    constructive) of the earlier interest wins even before recording.
+  secondary: []
+terms:
+  - notice statute
+  - bona fide purchaser
+  - recording
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

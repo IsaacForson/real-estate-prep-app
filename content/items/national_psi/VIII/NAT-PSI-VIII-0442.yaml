@@ -1,0 +1,48 @@
+id: NAT-PSI-VIII-0442
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VIII
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property management company pays its managers only commission based on collected rent, has a
+  written independent contractor agreement stating they are not employees for federal tax purposes,
+  and the managers hold real estate licenses. Under the federal statutory safe harbor, how are these
+  managers treated for federal tax purposes?
+options:
+  - No, because they receive a hourly wage in addition to commissions
+  - No, because they are reimbursed for travel expenses by the company
+  - Yes, they satisfy all three conditions of the safe harbor
+  - No, because they are not licensed real estate agents
+key: C
+explanation: "The safe harbor treats a licensed real estate agent as a statutory non‑employee if
+  three conditions are met: the individual is a licensed real estate agent, substantially all
+  compensation is directly related to sales or output, and services are performed under a written
+  contract stating the individual will not be treated as an employee. The scenario satisfies all
+  three, so the managers are independent contractors. The distractor claiming they receive an hourly
+  wage violates the second condition because hourly pay is not directly tied to sales or output."
+citation:
+  source: REP Ref. Brokerage Practice § 6.3
+  url: null
+  quoted_text: "Federal tax law contains a special rule treating a licensed real estate agent as a
+    statutory non-employee (independent contractor) for federal income and employment tax purposes
+    if three conditions are all met: 1. the individual is a licensed real estate agent; 2.
+    substantially all of the individual's compensation for real estate services is directly related
+    to sales or other output (commissions), rather than to the number of hours worked; and 3. the
+    services are performed under a written contract providing that the individual will not be
+    treated as an employee for federal tax purposes."
+  secondary: []
+terms:
+  - independent contractor
+  - safe harbor
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

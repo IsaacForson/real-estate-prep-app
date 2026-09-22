@@ -1,0 +1,39 @@
+id: VA-21-0072
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, what type of relationship does a dual representative have under the
+  brokerage agreements with the clients?
+options:
+  - An agency relationship under the brokerage agreements with the clients
+  - An independent contractor relationship under the brokerage agreements with the clients
+  - A fiduciary relationship under the brokerage agreements with the clients
+  - A contractual relationship under the brokerage agreements with the clients
+key: B
+explanation: The statute explicitly states that a dual representative has an independent contractor
+  relationship under the brokerage agreements with the clients. This distinguishes a dual
+  representative from a dual agent, who has an agency relationship. The fiduciary and contractual
+  options are not mentioned in the statute for this role.
+citation:
+  source: Va. Code Ann. § 54.1-2139(A)
+  url: null
+  quoted_text: A dual representative has an independent contractor relationship under the brokerage
+    agreements with the clients.
+  secondary: []
+terms:
+  - dual representative
+  - independent contractor
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

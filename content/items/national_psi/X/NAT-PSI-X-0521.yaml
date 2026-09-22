@@ -1,0 +1,47 @@
+id: NAT-PSI-X-0521
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee uses an automatic telephone dialing system to call a telephone number assigned to
+  a paging service to promote a new listing, without the recipient's prior express consent. Under
+  the TCPA, this call is:"
+options:
+  - The call is unlawful unless made solely to collect a debt owed to or guaranteed by the United
+    States
+  - The call is lawful if the licensee has an established business relationship with the recipient
+  - The call is lawful because it uses an automatic telephone dialing system rather than a live
+    operator
+  - The call is unlawful even if the recipient has previously consented to receive calls
+key: A
+explanation: The TCPA bars autodialed calls to paging service lines unless the call is solely to
+  collect a debt owed to or guaranteed by the United States; no exemption exists for established
+  business relationships or prior consent. The claim that the call is lawful if the licensee has an
+  established business relationship with the recipient is incorrect because the established business
+  relationship exception does not apply to paging service calls under this provision.
+citation:
+  source: 47 U.S.C. § 227(b)(1)(A)(iii)
+  url: null
+  quoted_text: to any telephone number assigned to a paging service, cellular telephone service,
+    specialized mobile radio service, or other radio common carrier service, or any service for
+    which the called party is charged for the call, unless such call is made solely to collect a
+    debt owed to or guaranteed by the United States;
+  secondary: []
+terms:
+  - paging service
+  - automatic telephone dialing system
+  - debt collection
+  - prior express consent
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

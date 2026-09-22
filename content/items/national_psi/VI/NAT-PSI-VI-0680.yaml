@@ -1,0 +1,40 @@
+id: NAT-PSI-VI-0680
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee tells a buyer that the basement 'never floods' without verifying with the seller;
+  the basement floods every spring. According to the text, what type of misrepresentation has
+  occurred?
+options:
+  - Intentional fraud (knowing deception)
+  - Negligent misrepresentation (failed to check)
+  - Innocent misrepresentation (no fault)
+  - Puffing (exaggerated opinion)
+key: B
+explanation: Section § 6.2 No misrepresentation defines negligent misrepresentation as a false
+  statement the licensee should have known better or failed to check, which fits the scenario of an
+  unverified claim about flooding. Intentional fraud requires intent to deceive, which is absent
+  here.
+citation:
+  source: REP Ref. Agency § 6.2
+  url: null
+  quoted_text: "Example: a listing agent tells a buyer the basement 'never floods' without asking the
+    seller; the basement floods every spring. The agent may be liable for negligent
+    misrepresentation even without intent to deceive."
+  secondary: []
+terms:
+  - misrepresentation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

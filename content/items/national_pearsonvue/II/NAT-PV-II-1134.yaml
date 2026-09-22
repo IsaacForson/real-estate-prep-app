@@ -1,0 +1,40 @@
+id: NAT-PV-II-1134
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grantor executes a quitclaim deed to convey a parcel to a buyer, but the grantor never
+  actually owned the parcel. What is the result?
+options:
+  - The grantee receives full title with warranties
+  - The grantee receives only the grantor's future interest
+  - The grantee receives nothing and has no recourse
+  - The grantee must sue to perfect title
+key: C
+explanation: Under the quitclaim deed rule, if the grantor owns nothing, the grantee receives
+  nothing and has no recourse. This directly applies to the scenario where the grantor lacks
+  ownership. The option suggesting the grantee receives future interest is incorrect because a
+  quitclaim deed conveys only whatever interest the grantor presently holds, not future interests.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.6
+  url: null
+  quoted_text: If the grantor owns nothing, the grantee receives nothing and has no recourse.
+  secondary: []
+terms:
+  - quitclaim
+  - deed
+  - grantor
+  - grantee
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

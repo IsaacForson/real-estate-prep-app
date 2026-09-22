@@ -1,0 +1,43 @@
+id: OK-605-0038
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person is appointed to the Oklahoma Real Estate Commission but has only lived in Oklahoma
+  for two years prior to appointment, although they are a U.S. citizen. Is this appointment valid
+  under the Oklahoma Real Estate License Code?
+options:
+  - The appointment is valid because U.S. citizenship is the only requirement for Commission members.
+  - The appointment is invalid because members must have been Oklahoma residents for at least three
+    years prior to appointment.
+  - The appointment is valid because the residency requirement applies only to licensed broker
+    members.
+  - The appointment is invalid because the person must also be a licensed real estate broker.
+key: B
+explanation: The statute requires all Commission members to be U.S. citizens and to have been
+  Oklahoma residents for at least three years before appointment. Since the person lacks the
+  required residency, the appointment is invalid. The other options misstate the scope of the
+  residency rule or add unrelated broker licensing requirements.
+citation:
+  source: Okla. Stat. tit. 59 § 858-201(B)
+  url: null
+  quoted_text: All members of the Commission shall be citizens of the United States and shall have
+    been residents of the State of Oklahoma for at least three (3) years prior to their appointment.
+  secondary: []
+terms:
+  - citizenship
+  - residency
+  - appointment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

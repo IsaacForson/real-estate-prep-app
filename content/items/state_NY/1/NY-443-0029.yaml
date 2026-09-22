@@ -1,0 +1,43 @@
+id: NY-443-0029
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson fails to submit proof of continuing education attendance before the
+  license expiration date because they were hospitalized, which is not their fault. What may the
+  department of state do under New York Real Property Law § 441(b)?
+options:
+  - No, the license expires and cannot be renewed without proof submission.
+  - Yes, but only if the licensee provides proof within a grace period.
+  - No, the licensee must wait for department approval before any renewal.
+  - Yes, the department may issue a temporary renewal license for submitting proof.
+key: D
+explanation: Subsection (b) states that the department may issue a temporary renewal license for a
+  period it deems appropriate to allow submission of the required proof when the failure to submit
+  is not due to the licensee's fault. The distractor claiming the license automatically expires
+  ignores this explicit discretionary authority.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 441
+    (b)
+  url: null
+  quoted_text: The department in its discretion may however issue a temporary renewal license for such
+    period of time it deems appropriate to permit the submission of the required proof of attendance
+    when the failure to submit such proof is not due to the fault of the licensee.
+  secondary: []
+terms:
+  - temporary renewal
+  - proof of attendance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

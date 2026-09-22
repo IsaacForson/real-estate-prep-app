@@ -1,0 +1,42 @@
+id: VA-21-0031
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer and seller agree in writing that the earnest money deposit will be deposited into the
+  broker's escrow account immediately upon receipt. According to Virginia law, when must the broker
+  place the deposit in escrow?
+options:
+  - The broker must place the deposit by the end of the third business banking day following
+    ratification.
+  - The broker must place the deposit by the end of the fifth business banking day following
+    ratification.
+  - The broker must place the deposit immediately upon receipt of the deposit.
+  - The broker must place the deposit within ten calendar days of ratification.
+key: C
+explanation: The parties’ written agreement to deposit the funds immediately overrides the statutory
+  default of the fifth business banking day. The statute expressly allows the principals to agree
+  otherwise in writing, making the immediate deposit the correct timing.
+citation:
+  source: Va. Code Ann. § 54.1-2108.2
+  url: null
+  quoted_text: unless otherwise agreed to in writing by the principals to the transaction
+  secondary: []
+terms:
+  - escrow
+  - earnest money
+  - written agreement
+  - timeline
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,41 @@
+id: NAT-PSI-IX-0474
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer receives a general warranty deed. Two years later an heir of a prior owner from the
+  1980s asserts an unreleased interest in the property. According to the text, what is the seller's
+  liability?
+options:
+  - The seller is not liable because the defect occurred before the seller's ownership
+  - The seller is liable only if they paid property taxes during ownership
+  - The seller is liable to defend the title and compensate the buyer for loss
+  - The seller is liable only if the buyer's title insurance does not cover the loss
+key: C
+explanation: Under a general warranty deed, the grantor warrants against defects arising at any time
+  in the chain of title, before or during the grantor's ownership, and must defend the title and
+  compensate for loss from a superior claim. The text’s example shows the seller remains liable even
+  though the defect predates the seller's ownership. The other options incorrectly deny liability,
+  tie it to tax payments, or make it contingent on title insurance coverage.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.8
+  url: null
+  quoted_text: Example. A buyer receives a general warranty deed. Two years later an heir of a 1980s
+    owner asserts an unreleased interest. The buyer may look to the seller under the covenant of
+    warranty even though the defect predates the seller's ownership.
+  secondary: []
+terms:
+  - warranty deed
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

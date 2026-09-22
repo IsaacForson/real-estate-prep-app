@@ -1,0 +1,40 @@
+id: NAT-PV-I-1111
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a first mortgage recorded in 2015, a second mortgage recorded in 2018, and
+  unpaid property taxes from 2023. In a foreclosure sale, in what order are these liens paid?
+options:
+  - Second mortgage, first mortgage, then property taxes
+  - Property taxes, second mortgage, then first mortgage
+  - First mortgage, second mortgage, then property taxes
+  - Property taxes, first mortgage, then second mortgage
+key: D
+explanation: Property tax liens are the major exception to the 'first in time, first in right' rule
+  and rank ahead of all other liens regardless of date. After the taxes are paid, the 2015 first
+  mortgage is paid before the 2018 second mortgage.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - priority of liens
+  - property tax lien
+  - mortgage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

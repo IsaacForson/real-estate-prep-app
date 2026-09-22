@@ -1,0 +1,42 @@
+id: NY-443-0026
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A New York real estate broker’s license is suspended for sixty days for failure to pay child
+  support. The broker employs two licensed salespersons. What is the effect on the salespersons’
+  licenses?
+options:
+  - They must be re‑applied for after the broker’s suspension ends
+  - They are automatically suspended for the same period
+  - They are unaffected because only the broker is penalized
+  - They remain active unless the salespersons commit a violation
+key: B
+explanation: The statute provides that a broker’s suspension automatically suspends the licenses of
+  associated salespersons, pending a change of association or expiration of the broker’s suspension.
+  Therefore the salespersons’ licenses are suspended for the same sixty‑day period.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 441-d
+  url: null
+  quoted_text: The revocation or suspension of a broker’s license shall operate to suspend the license
+    of each real estate salesperson associated with such broker, pending a change of association of
+    the salesperson or the expiration of the period of suspension of the broker’s license.
+  secondary: []
+terms:
+  - broker
+  - salesperson
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

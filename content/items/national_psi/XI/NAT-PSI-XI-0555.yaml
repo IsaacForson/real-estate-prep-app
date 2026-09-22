@@ -1,0 +1,47 @@
+id: NAT-PSI-XI-0555
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee purchased a property for $200,000, spent $50,000 on improvements, and later sold it
+  for $300,000. What is the percent profit on cost?
+options:
+  - 16.67%
+  - 50.00%
+  - 20.00%
+  - 25.00%
+key: C
+explanation: Total cost = purchase price + improvements = $200,000 + $50,000 = $250,000. Profit =
+  sale price − total cost = $300,000 − $250,000 = $50,000. Percent profit = profit ÷ total cost =
+  $50,000 ÷ $250,000 = 0.20 = 20.00%. The distractors arise from using sale price as denominator,
+  omitting improvements in the cost base, or using purchase price as denominator.
+citation:
+  source: REP Ref. Real Estate Math § 14.1
+  url: null
+  quoted_text: Percent = (sale price − total cost) ÷ total cost (§ 7.6)
+  secondary: []
+math:
+  worked_solution: |-
+    Total cost = $200,000 + $50,000 = $250,000
+    Profit = $300,000 − $250,000 = $50,000
+    Percent = $50,000 ÷ $250,000 = 0.20 = 20.00%
+  formulas:
+    - Percent = (sale price − total cost) ÷ total cost
+  onscreen_calculator_only: false
+terms:
+  - profit
+  - cost
+  - percent
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

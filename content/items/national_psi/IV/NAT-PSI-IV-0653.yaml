@@ -1,0 +1,41 @@
+id: NAT-PSI-IV-0653
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1635(c), what legal effect does a written acknowledgment of receipt of the
+  required disclosures have?
+options:
+  - It creates a conclusive presumption that the disclosures were delivered.
+  - It obligates the creditor to resend the disclosures within three business days.
+  - It waives the obligor’s right to rescind the transaction.
+  - It creates a rebuttable presumption that the disclosures were delivered.
+key: D
+explanation: Under 15 U.S.C. § 1635(c), a written acknowledgment of receipt creates only a
+  rebuttable presumption that the disclosures were delivered, not conclusive proof. It does not
+  waive the obligor’s right to rescind the transaction, nor does it obligate the creditor to resend
+  the disclosures.
+citation:
+  source: 15 U.S.C. § 1635(c)
+  url: null
+  quoted_text: written acknowledgment of receipt of any disclosures required under this subchapter by
+    a person to whom information, forms, and a statement is required to be given pursuant to this
+    section does no more than create a rebuttable presumption of delivery thereof.
+  secondary: []
+terms:
+  - rebuttable presumption
+  - disclosure
+  - acknowledgment
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,51 @@
+id: NAT-PV-VII-1340
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VII.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A buyer is purchasing a home for $300,000. The buyer's debits include: loan origination fee
+  $1,200, appraisal fee $500, prepaid interest $800, first year's hazard premium $1,200, and initial
+  escrow deposit $2,000. The buyer's credits include: loan amount $240,000 and earnest money deposit
+  $10,000. According to the text, what is the buyer's cash to close?"
+options:
+  - $55,700.00
+  - $65,700.00
+  - $54,500.00
+  - $535,700.00
+key: A
+explanation: Buyer cash to close equals buyer debits minus buyer credits. Debits sum to $305,700
+  (price plus fees); credits sum to $250,000 (loan plus earnest). Subtracting yields $55,700. The
+  option stating $65,700 results from omitting the earnest money credit; the option stating $54,500
+  results from omitting the loan origination fee; the option stating $535,700 results from adding
+  the loan amount to debits instead of crediting it.
+citation:
+  source: REP Ref. Financing & Closing § 10.5
+  url: null
+  quoted_text: Buyer cash to close = buyer debits − buyer credits; seller proceeds = seller credits −
+    seller debits.
+  secondary: []
+math:
+  worked_solution: "Step 1: Sum debits = $300,000 + $1,200 + $500 + $800 + $1,200 + $2,000 = $305,700.
+    Step 2: Sum credits = $240,000 + $10,000 = $250,000. Step 3: Cash to close = $305,700 − $250,000
+    = $55,700."
+  formulas:
+    - Buyer cash to close = buyer debits − buyer credits
+  onscreen_calculator_only: false
+terms:
+  - debit
+  - credit
+  - cash
+  - close
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

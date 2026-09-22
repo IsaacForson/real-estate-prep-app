@@ -1,0 +1,44 @@
+id: NAT-PSI-IX-0750
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer purchases an owner's title policy and later discovers an unrecorded easement that
+  would have been revealed by a survey. Is the loss covered by the standard title insurance policy?
+options:
+  - The loss is not covered because the policy only covers known defects.
+  - The loss is not covered because standard exclusions include unrecorded easements.
+  - The loss is covered because the policy covers all defects in the recorded chain.
+  - The loss is covered because the insurer must defend against any title claim.
+key: B
+explanation: Standard exclusions in an owner's title policy include unrecorded easements and
+  boundary or encroachment matters that a survey would reveal. Therefore, a loss from such an
+  easement is not covered. The distractor that claims the policy covers all defects in the recorded
+  chain is incorrect because it ignores this exclusion.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.4
+  url: null
+  quoted_text: Standard exclusions and exceptions commonly include defects the insured knew of and did
+    not disclose, defects created after the policy date, rights of parties in possession not shown
+    by the records, unrecorded easements, boundary and encroachment matters a survey would reveal,
+    unrecorded mechanic's liens, taxes not yet due, and government regulation such as zoning and
+    eminent domain.
+  secondary: []
+terms:
+  - title insurance
+  - exclusion
+  - easement
+  - survey
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

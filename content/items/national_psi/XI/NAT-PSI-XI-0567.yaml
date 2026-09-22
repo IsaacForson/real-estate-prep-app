@@ -1,0 +1,47 @@
+id: NAT-PSI-XI-0567
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A triangular lot has a base of 90 feet and a height of 60 feet. What is the area of the lot in
+  acres?
+options:
+  - 0.12 acre
+  - 0.09 acre
+  - 0.06 acre
+  - 0.03 acre
+key: C
+explanation: The area of a triangle is ½ × base × height, giving 2,700 sq ft, which converts to 0.06
+  acre. The 0.12 acre option results from omitting the ½ factor and using base × height only.
+citation:
+  source: REP Ref. Real Estate Math § 2.3
+  url: null
+  quoted_text: "Triangle: area = ½ × base × height, where the height is measured perpendicular to the base."
+  secondary: []
+math:
+  worked_solution: |-
+    Multiply base by height: 90 ft × 60 ft = 5,400 sq ft
+    Apply the one‑half factor: 5,400 × 0.5 = 2,700 sq ft
+    Convert square feet to acres: 2,700 ÷ 43,560 = 0.0620 acre
+    Round to two decimal places: 0.06 acre
+  formulas:
+    - Area_sqft = 0.5 × base × height
+    - Acres = Area_sqft ÷ 43,560
+  onscreen_calculator_only: false
+terms:
+  - triangle
+  - area
+  - acre
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

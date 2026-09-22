@@ -1,0 +1,48 @@
+id: VT-2211-0033
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a Vermont real estate broker license has a prior misdemeanor conviction.
+  Under the Office of Professional Regulation statutes, may the Office inquire into this applicant's
+  criminal background history as part of the licensure process?
+options:
+  - The Office may inquire into the applicant's criminal background history as part of the licensure
+    process.
+  - The Office may not inquire into the applicant's criminal background history as brokers are not
+    listed.
+  - The Office may inquire into the applicant's criminal background history only if the conviction
+    is a felony.
+  - The Office may not inquire into the applicant's criminal background history unless the applicant
+    discloses it.
+key: B
+explanation: The statute limits criminal background inquiries to the professions listed in
+  subsection (j)(1), and real estate brokers are not among them, so the Office may not inquire.
+  Therefore, the statement that the Office may not inquire into the applicant's criminal background
+  history as brokers are not listed is correct. The statement that the Office may inquire into the
+  applicant's criminal background history as part of the licensure process is incorrect because the
+  statute does not allow such inquiries for brokers.
+citation:
+  source: 3 V.S.A. ch. 5 § 123(j)(1)
+  url: null
+  quoted_text: The Office may inquire into the criminal background histories of applicants for initial
+    licensure and for license renewal of any Office-issued credential, including a license,
+    certification, registration, or specialty designation for the following professions
+  secondary: []
+terms:
+  - criminal
+  - background
+  - inquiry
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

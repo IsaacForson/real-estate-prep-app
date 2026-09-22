@@ -1,0 +1,43 @@
+id: NAT-PV-VIII-1314
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: VIII.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: An L-shaped lot consists of a 100‑foot by 150‑foot rectangle attached to a 50‑foot by 60‑foot
+  rectangle. Which procedure correctly calculates the total area of the lot?
+options:
+  - Calculate the area by multiplying 100 by 150 and then dividing the product of 50 by 60.
+  - Calculate the area by multiplying the sum of 100 and 50 by the sum of 150 and 60.
+  - Calculate the area by multiplying 100 by 150 and subtracting the product of 50 and 60.
+  - Calculate the area by multiplying 100 by 150 and adding the product of 50 and 60.
+key: D
+explanation: Under § 2.3, an irregular lot must be divided into rectangles and the areas summed.
+  Multiplying 100 by 150 gives the area of the first rectangle, and multiplying 50 by 60 gives the
+  area of the second; adding them yields the total area. The distractor that subtracts the second
+  product incorrectly removes area, while the distractor that combines dimensions treats the lot as
+  a single rectangle, which overcounts the overlapping region.
+citation:
+  source: "REP Ref. Real Estate Math — Reference note: exam math methods with worked examples
+    (authored, status: draft — needs licensed review) § 2.3 Triangles, trapezoids and irregular
+    lots"
+  url: null
+  quoted_text: An irregular lot is split into rectangles and triangles whose areas are summed.
+  secondary: []
+terms:
+  - irregular lot
+  - rectangle
+  - area
+  - sum
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

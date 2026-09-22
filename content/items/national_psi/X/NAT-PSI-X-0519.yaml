@@ -1,0 +1,47 @@
+id: NAT-PSI-X-0519
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the TCPA, what does the term 'automatic telephone dialing system' mean?
+options:
+  - Equipment that can store or produce telephone numbers using a random or sequential generator and
+    dial those numbers
+  - Equipment that can only store telephone numbers for later manual dialing without automatic
+    generation
+  - Equipment that generates random numbers but does not have dialing capability or storage function
+  - Equipment that sends prerecorded voice messages without storing numbers or generating sequences
+key: A
+explanation: An automatic telephone dialing system is equipment that can store or produce telephone
+  numbers using a random or sequential generator and dial those numbers (47 U.S.C. § 227(a)(1)). The
+  choice stating equipment that can only store telephone numbers for later manual dialing without
+  automatic generation is incorrect because it lacks both the random/sequential generation and
+  automatic dialing capabilities. The choice stating equipment that generates random numbers but
+  does not have dialing capability or storage function is incorrect because it omits the storage and
+  dialing functions required. The choice stating equipment that sends prerecorded voice messages
+  without storing numbers or generating sequences is incorrect because it does not involve storing
+  or producing numbers via a random or sequential generator and dialing them.
+citation:
+  source: 47 U.S.C. § 227(a)(1)
+  url: null
+  quoted_text: equipment which has the capacity— (A) to store or produce telephone numbers to be
+    called, using a random or sequential number generator; and (B) to dial such numbers.
+  secondary: []
+terms:
+  - automatic telephone dialing system
+  - equipment
+  - random sequential generator
+  - dial
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

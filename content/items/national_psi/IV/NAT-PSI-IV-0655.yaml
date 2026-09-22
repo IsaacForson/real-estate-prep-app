@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0655
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan was consummated on June 15, 2022, secured by the borrower’s principal dwelling. The
+  property has not been sold, and no enforcement proceeding has been initiated under TILA §1635.
+  Assuming no holidays affect the calculation, on what date does the borrower’s right to rescind
+  expire?
+options:
+  - June 15, 2023
+  - June 15, 2024
+  - June 15, 2025
+  - June 15, 2026
+key: C
+explanation: Under TILA §1635(f), the obligor's right of rescission expires three years after the
+  date of consummation of the transaction, unless the property is sold earlier or an enforcement
+  proceeding extends the period. With no sale or proceeding, the right ends on June 15, 2025. June
+  15, 2023 and June 15, 2024 are too early, and June 15, 2026 adds an extra year.
+citation:
+  source: 15 U.S.C. § 1635(f)
+  url: null
+  quoted_text: An obligor's right of rescission shall expire three years after the date of
+    consummation of the transaction or upon the sale of the property, whichever occurs first,
+    notwithstanding the fact that the information and forms required under this section or any other
+    disclosures required under this part have not been delivered to the obligor
+  secondary: []
+terms:
+  - rescission
+  - consummation
+  - sale
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

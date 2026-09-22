@@ -1,0 +1,38 @@
+id: NAT-PSI-X-0494
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which action is prohibited under the Fair Housing Act?
+options:
+  - Conducting a credit check on applicants
+  - Providing a copy of the lease to applicants
+  - Refusing to rent based on a protected class
+  - Offering a uniform discount to all applicants
+key: C
+explanation: The Fair Housing Act prohibits refusing to rent based on a protected class. Offering a
+  uniform discount to all applicants does not involve a protected class and therefore is not
+  prohibited.
+citation:
+  source: REP Ref. Brokerage Practice § 12.5
+  url: null
+  quoted_text: The cached Fair Housing Act prohibits refusing to rent, imposing different terms, or
+    steering based on protected class;
+  secondary: []
+terms:
+  - fair housing
+  - prohibited act
+  - protected class
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

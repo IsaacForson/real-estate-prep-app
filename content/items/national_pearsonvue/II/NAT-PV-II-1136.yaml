@@ -1,0 +1,38 @@
+id: NAT-PV-II-1136
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a tax deed is issued after a tax sale, what warranties does it provide to the buyer?
+options:
+  - No warranties at all; the buyer receives the deed without any guarantee
+  - Special warranty providing protection against defects occurring during the seller's ownership
+  - General warranty offering full protection against all title defects
+  - Bargain and sale deed with limited warranty against prior claims
+key: A
+explanation: The text explicitly says a tax deed carries no warranties, so the buyer receives no
+  guarantee of title. The other options incorrectly attribute special, general, or limited
+  warranties to a tax deed.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.2
+  url: null
+  quoted_text: A tax deed carries no warranties, and the title may need a quiet title action before it
+    is insurable.
+  secondary: []
+terms:
+  - deed
+  - tax
+  - warranty
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

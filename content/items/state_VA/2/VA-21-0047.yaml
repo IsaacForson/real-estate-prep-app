@@ -1,0 +1,45 @@
+id: VA-21-0047
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A single-family residential dwelling unit is foreclosed. There is a written property
+  management agreement between the landlord and a licensee acting as managing agent. According to
+  Virginia law, what is the default effect of the foreclosure on that agreement, unless the original
+  agreement requires an earlier termination date?
+options:
+  - It becomes month-to-month
+  - It becomes fixed-term lease
+  - It becomes month-to-week
+  - It becomes year-to-year
+key: A
+explanation: Per Va. Code Ann. § 54.1-2108.1(A)(5), foreclosure converts the property management
+  agreement into a month‑to‑month agreement between the successor landlord and the licensee acting
+  as managing agent, except when the original agreement calls for an earlier termination. The option
+  stating the agreement remains in effect ignores this conversion rule.
+citation:
+  source: Va. Code Ann. § 54.1-2108.1(A)(5)
+  url: null
+  quoted_text: the foreclosure shall convert the property management agreement into a month-to-month
+    agreement between the successor landlord and the real estate licensee acting as a managing
+    agent, except in the event that the terms of the original property management agreement between
+    the landlord and the real estate licensee acting as a managing agent require an earlier
+    termination date.
+  secondary: []
+terms:
+  - property management agreement
+  - foreclosure
+  - month-to-month
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

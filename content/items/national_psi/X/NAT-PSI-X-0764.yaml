@@ -1,0 +1,42 @@
+id: NAT-PSI-X-0764
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under the TCPA, where may a plaintiff file a civil action if the defendant resides in one
+  district but the alleged violations occurred in another?
+options:
+  - In either the defendant's district or the violation district
+  - In the district where the defendant resides only
+  - In the district where the violation occurred only
+  - In neither defendant's district nor violation district
+key: A
+explanation: The statute allows suit in the district where the defendant is found or where the
+  violation occurred, so either district is proper. Limiting the venue to only the defendant’s
+  residence ignores the alternative basis provided by the location of the violation.
+citation:
+  source: 47 U.S.C. § 227(4)
+  url: null
+  quoted_text: Any civil action brought under this subsection in a district court of the United States
+    may be brought in the district wherein the defendant is found or is an inhabitant or transacts
+    business or wherein the violation occurred or is occurring, and process in such cases may be
+    served in any district in which the defendant is an inhabitant or where the defendant may be
+    found.
+  secondary: []
+terms:
+  - venue
+  - service of process
+  - defendant
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

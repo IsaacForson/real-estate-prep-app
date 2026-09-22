@@ -1,0 +1,52 @@
+id: NAT-PSI-V-0667
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer agrees to purchase a property for $450,000 with a loan-to-value ratio of 75%. The
+  lender's appraisal comes in at $420,000 and the purchase agreement does not include an appraisal
+  contingency. How much additional cash must the buyer bring to closing to satisfy the loan amount?
+options:
+  - $22,500
+  - $24,000
+  - $15,000
+  - $30,000
+key: A
+explanation: The lender will base the loan on the lower of the purchase price or appraised value. At
+  75% LTV, the loan based on price is $337,500 and the loan based on appraisal is $315,000, leaving
+  a $22,500 shortfall that the buyer must cover in cash. The other options result from using
+  incorrect LTV rates or confusing the price‑appraisal difference with the loan shortfall.
+citation:
+  source: REP Ref. Contracts § 6.4
+  url: null
+  quoted_text: Allows the buyer to terminate (or renegotiate) if the lender's appraisal comes in below
+    the purchase price, because the lender will base the loan on the lower of price or appraised
+    value and the buyer would otherwise have to bring the difference in cash.
+  secondary: []
+math:
+  worked_solution: |-
+    Loan based on price = 0.75 × $450,000 = $337,500
+    Loan based on appraisal = 0.75 × $420,000 = $315,000
+    Additional cash needed = $337,500 − $315,000 = $22,500
+  formulas:
+    - Loan = LTV × Value
+    - Additional cash = Loan_price − Loan_appraisal
+  onscreen_calculator_only: false
+terms:
+  - appraisal contingency
+  - loan-to-value
+  - appraised value
+  - purchase price
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

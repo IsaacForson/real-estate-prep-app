@@ -1,0 +1,42 @@
+id: NAT-PSI-IX-0467
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: At a closing, a property has a mortgage lien recorded in 2018, a mechanic's lien recorded in
+  2020, and a property tax lien for the current year. Which lien must be paid first from the
+  proceeds under REP Ref. Ownership, Title & Transfer § 3.4?
+options:
+  - The lien relating back to construction start must be satisfied before any other liens.
+  - The mechanic's lien recorded in 2020 must be satisfied before any other liens.
+  - The property tax lien for the current year must be satisfied before any other liens.
+  - The mortgage lien recorded in 2018 must be satisfied before any other liens.
+key: C
+explanation: Under lien priority rules, property tax and special assessment liens rank first by
+  statute regardless of the date of recording. Therefore, the property tax lien for the current year
+  must be paid before the mortgage and mechanic's liens. The statement that the lien relating back
+  to construction start must be satisfied before any other liens is incorrect because mortgage liens
+  do not automatically outrank tax liens.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: property tax and special assessment liens rank first by statute regardless of date
+  secondary: []
+terms:
+  - lien
+  - priority
+  - tax
+  - mortgage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

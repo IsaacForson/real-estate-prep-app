@@ -1,0 +1,47 @@
+id: NAT-PV-III-1186
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has an assessed value of $320,000, exemptions of $15,000, and a mill rate of 18
+  mills. What is the property tax due?
+options:
+  - $5,760
+  - $5,490
+  - $6,100
+  - $54,900
+key: B
+explanation: Using the formula Tax = (assessed value − exemptions) × mill rate ÷ 1,000, the
+  calculation is (320,000‑15,000)=305,000; 305,000 × 18=5,490,000; ÷1,000 = $5,490. The $5,760
+  answer omits the exemptions, $6,100 uses an incorrect mill rate, and $54,900 misplaces the
+  divisor.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: Tax = (assessed value − exemptions) × mill rate ÷ 1,000; one mill = $0.001 = $1 per $1,000.
+  secondary: []
+math:
+  worked_solution: |-
+    (320,000 - 15,000) = 305,000
+    305,000 * 18 = 5,490,000
+    5,490,000 / 1,000 = 5,490
+  formulas:
+    - Tax = (Assessed value − Exemptions) × Mill rate ÷ 1,000
+  onscreen_calculator_only: false
+terms:
+  - tax
+  - mill rate
+  - assessment
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

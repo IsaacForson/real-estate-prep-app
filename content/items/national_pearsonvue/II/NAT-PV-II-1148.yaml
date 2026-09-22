@@ -1,0 +1,40 @@
+id: NAT-PV-II-1148
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A 17‑year‑old signs a deed transferring his inherited property to a friend. Based on the
+  requirements for a valid deed, is the deed valid?
+options:
+  - Yes, because the grantee is identifiable.
+  - Yes, because the deed includes words of conveyance.
+  - No, because the grantor lacks legal capacity.
+  - No, because the deed lacks acknowledgment.
+key: C
+explanation: A valid deed requires a legally competent grantor (of age and sound mind). A
+  17‑year‑old lacks the legal capacity to be a competent grantor, rendering the deed void. The other
+  options describe elements that are either present or not required for validity between the
+  parties.
+citation:
+  source: "REP Ref. Ownership, Title & Transfer — Reference note: estates, ownership forms, deeds,
+    title, recording, transfer (authored, status: draft — needs licensed review) § 6.1"
+  url: null
+  quoted_text: A legally competent grantor (of age and sound mind), identifiable, who signs the deed.
+  secondary: []
+terms:
+  - grantor
+  - competency
+  - valid deed
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

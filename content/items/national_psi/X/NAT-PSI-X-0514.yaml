@@ -1,0 +1,49 @@
+id: NAT-PSI-X-0514
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives $4,500 as her share of a commission. She is on a 60/40 split with her
+  broker (60% to the salesperson). The listing brokerage and the cooperating brokerage split the
+  total commission 50/50. What was the total commission?
+options:
+  - $13,500
+  - $12,000
+  - $16,500
+  - $15,000
+key: D
+explanation: The salesperson's share equals 60% of the brokerage share, and the brokerage share is
+  half of the total commission. Thus total commission = $4,500 ÷ 0.60 ÷ 0.5 = $15,000. A common
+  error is to forget to double the brokerage share or to use the 40% internal split, leading to
+  distractors such as $13,500.
+citation:
+  source: REP Ref. Brokerage Practice § 4.6
+  url: null
+  quoted_text: "Splits happen in layers: first between the listing brokerage and the cooperating
+    (buyer's) brokerage; then within each brokerage between the broker and the salesperson."
+  secondary: []
+math:
+  worked_solution: |-
+    $4,500 ÷ 0.60 = $7,500
+    $7,500 × 2 = $15,000
+  formulas:
+    - Salesperson share = Total commission × (listing/co-op split) × (internal split)
+    - Total commission = Salesperson share ÷ ((listing/co-op split) × (internal split))
+  onscreen_calculator_only: false
+terms:
+  - commission split
+  - brokerage
+  - salesperson
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

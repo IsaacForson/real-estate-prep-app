@@ -1,0 +1,38 @@
+id: NAT-PSI-X-0495
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant has vacated a unit. What must the landlord do with the security deposit?
+options:
+  - Return the deposit or provide an itemized statement of deductions within a stated number of days
+  - Hold the deposit in the trust account and use it for future rent payments
+  - Forfeit the deposit immediately to cover any unpaid rent or damages
+  - Transfer the deposit to a personal account and return it after thirty days
+key: A
+explanation: The landlord must return the security deposit or provide an itemized statement of
+  deductions within a stated number of days after the tenant vacates; retaining the deposit in bad
+  faith may result in penalties. Holding the deposit for future rent is not permitted.
+citation:
+  source: REP Ref. Brokerage Practice § 12.8
+  url: null
+  quoted_text: requires the landlord to return the deposit or an itemized statement of deductions
+    within a stated number of days after the tenant vacates, with penalties for bad‑faith retention.
+  secondary: []
+terms:
+  - security deposit
+  - trust account
+  - return
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

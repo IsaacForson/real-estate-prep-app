@@ -1,0 +1,41 @@
+id: NH-331-0024
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under the New Hampshire Real Estate Practice Act, what is the minimum period of state
+  residency required for an individual to be appointed to the New Hampshire real estate commission?
+options:
+  - 2 years
+  - 8 years
+  - 4 years
+  - 6 years
+key: D
+explanation: The statute explicitly states that each commission member must be a resident of the
+  state for at least six years prior to appointment. The four‑year option incorrectly reflects the
+  term length for commission members, which is five years, not four.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts Section 331-A:5
+  url: null
+  quoted_text: Each member of the commission shall be a resident of this state for at least 6 years
+    prior to appointment.
+  secondary: []
+terms:
+  - residency
+  - appointment
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

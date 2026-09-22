@@ -1,0 +1,48 @@
+id: NAT-PSI-IX-0735
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The annual property tax on a home is $3,650. The seller has paid the full tax for the year.
+  Closing occurs on July 1, and the parties agree to use the 365-day actual method, with the closing
+  day charged to the buyer. How much should the buyer reimburse the seller for property taxes at
+  closing?
+options:
+  - $1,810
+  - $1,840
+  - $1,800
+  - $1,860
+key: B
+explanation: The daily tax rate is $3,650 ÷ 365 = $10.00. The buyer owns the property from July 1
+  through December 31, which is 184 days when the closing day is counted for the buyer. Multiplying
+  the daily rate by 184 days gives $1,840, the amount the buyer must reimburse the seller.
+citation:
+  source: REP Ref. Financing & Closing § 10.6
+  url: null
+  quoted_text: Items the seller paid ahead are credited to the seller and debited to the buyer
+  secondary: []
+math:
+  worked_solution: |-
+    Daily tax rate = $3,650 ÷ 365 = $10.00 per day
+    Buyer ownership days = July 1 through December 31 = 184 days
+    Buyer reimbursement = $10.00 × 184 = $1,840
+  formulas:
+    - daily rate = annual tax ÷ days in year
+    - buyer amount = daily rate × buyer days
+  onscreen_calculator_only: false
+terms:
+  - proration
+  - property tax
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

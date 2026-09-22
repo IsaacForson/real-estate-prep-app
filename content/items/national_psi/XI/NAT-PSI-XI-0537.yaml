@@ -1,0 +1,39 @@
+id: NAT-PSI-XI-0537
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the formula for required effective gross income (EGI) when budgeting rent to reach a
+  target NOI?
+options:
+  - EGI = target NOI ÷ operating expenses.
+  - EGI = target NOI + operating expenses.
+  - EGI = target NOI × operating expenses.
+  - EGI = target NOI − operating expenses.
+key: B
+explanation: Required effective gross income (EGI) is calculated by adding the target net operating
+  income (NOI) to the operating expenses. Therefore the option stating EGI = target NOI + operating
+  expenses correctly reflects that relationship. The option stating EGI = target NOI ÷ operating
+  expenses is incorrect because it divides the two values instead of adding them.
+citation:
+  source: REP Ref. Real Estate Math § 13.3
+  url: null
+  quoted_text: required EGI = target NOI + operating expenses;
+  secondary: []
+terms:
+  - egi
+  - noi
+  - operating expenses
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

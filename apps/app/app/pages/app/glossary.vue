@@ -25,7 +25,9 @@ const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" :
       in a statute or reference you can open.
     </p>
 
-    <div class="grid gap-2.5">
+    <div
+      class="sticky top-[calc(env(safe-area-inset-top)+3.5rem)] z-20 -mx-4 grid gap-2.5 border-b border-line bg-bg px-4 pt-2 pb-3"
+    >
       <AppInput
         v-model="q"
         type="search"

@@ -1,0 +1,41 @@
+id: NAT-PV-V-1274
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: V.D
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee records a prerecorded voice message advertising an open house and begins the
+  message with the property address before stating the brokerage's name. Under the TCPA, is this
+  practice permissible?
+options:
+  - The practice is not permissible because the message omits the initiator's telephone number
+  - The practice is not permissible because the initiator's identity is not stated at the beginning
+  - The practice is permissible because the property address is relevant to the call
+  - The practice is permissible because the brokerage's name appears in the message
+key: B
+explanation: Under 47 U.S.C. § 227(d)(3)(A)(i), an artificial or prerecorded message must state the
+  initiator's identity at the beginning of the call. Starting with the property address fails to do
+  so, making the practice impermissible. The claim that the message lacks the initiator's telephone
+  number is not the basis for impermissibility under the TCPA; the rule concerns identity, not
+  telephone number.
+citation:
+  source: 47 U.S.C. § 227(d)(3)(A)(i)
+  url: null
+  quoted_text: state clearly the identity of the business, individual, or other entity initiating the call
+  secondary: []
+terms:
+  - prerecorded
+  - identity
+  - beginning
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,43 @@
+id: MA-87D-0155
+jurisdiction: MA
+bank: state_MA
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A deed conveys land to two married individuals and one single individual, stating that the
+  grantees shall take 'as joint tenants.' Under M.G.L. c. 184 § 7, what type of ownership is
+  created?
+options:
+  - A tenancy in common among all three grantees
+  - A tenancy by the entirety between the married couple
+  - A joint tenancy among all three grantees
+  - A joint tenancy between the married couple only
+key: C
+explanation: The statute provides that in a conveyance to three or more persons, words creating a
+  joint tenancy apply to all grantees regardless of marital status unless a contrary intent appears.
+  Therefore, the joint tenancy language binds all three grantees. The distractors incorrectly limit
+  the joint tenancy to the married couple or convert the estate to a tenancy in common or tenancy by
+  the entirety.
+citation:
+  source: M.G.L. c. 184 § 7
+  url: null
+  quoted_text: In a conveyance or devise to three or more persons, words creating a joint tenancy
+    shall be construed as applying to all of the grantees, or devisees, regardless of marital
+    status, unless a contrary intent appears from the tenor of the instrument.
+  secondary: []
+terms:
+  - joint tenancy
+  - conveyance
+  - marital status
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

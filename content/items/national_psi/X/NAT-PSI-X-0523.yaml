@@ -1,0 +1,48 @@
+id: NAT-PSI-X-0523
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee refuses to lease an apartment to a prospective tenant because the tenant is African
+  American. Based solely on 42 U.S.C. § 1982, is the licensee's action permissible?
+options:
+  - The licensee's action is permissible because the statute only applies to property sales, not
+    leases, as clarified in related case law.
+  - The licensee's action is impermissible because the statute guarantees the same right to lease
+    real property as white citizens enjoy, regardless of the tenant's race.
+  - The licensee's action is permissible if the licensee obtains a waiver from the Department of
+    Housing and Urban Development, which may grant exceptions under certain conditions.
+  - The licensee's action is impermissible only if the property receives federal financial
+    assistance, which triggers additional nondiscrimination requirements under other statutes.
+key: B
+explanation: The statute 42 U.S.C. § 1982 provides that all citizens have the same right as white
+  citizens to lease real property. Therefore, refusing to lease to someone because of their race is
+  impermissible. The option claiming the statute only applies to sales misstates its coverage; the
+  option suggesting a waiver from HUD adds a provision that does not exist in the statute; and the
+  option limiting the prohibition to federally assisted properties incorrectly conditions the right
+  on federal assistance, which the statute does not require.
+citation:
+  source: 42 U.S.C. § 1982 (Civil Rights Act of 1866, property rights) — Civil Rights Act of 1866 —
+    property rights of citizens §1982
+  url: null
+  quoted_text: All citizens of the United States shall have the same right, in every State and
+    Territory, as is enjoyed by white citizens thereof to inherit, purchase, lease, sell, hold, and
+    convey real and personal property.
+  secondary: []
+terms:
+  - lease
+  - race
+  - property
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

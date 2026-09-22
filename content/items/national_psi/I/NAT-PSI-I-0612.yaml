@@ -1,0 +1,45 @@
+id: NAT-PSI-I-0612
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller signs a deed on Monday and delivers it to the escrow agent with instructions to
+  release it when the buyer’s funds are verified. The buyer’s funds arrive on Thursday, the agent
+  releases the deed, and it is recorded on Friday. When does title pass to the buyer?
+options:
+  - Title passes on Thursday when the escrow conditions are satisfied and the deed is released to
+    the buyer.
+  - Title passes on Friday when the deed is recorded in the public records.
+  - Title passes on Monday when the deed is signed by the grantor and accepted by the grantee.
+  - Title passes on Monday when the deed is delivered to the escrow agent and accepted by the
+    grantee.
+key: A
+explanation: Title passes when the deed is delivered by the grantor and accepted by the grantee, not
+  when it is signed and not when it is recorded. In this scenario, title passes when the escrow
+  conditions are met and the deed is released to the buyer. The option stating that title passes on
+  Friday when the deed is recorded is incorrect because recording merely raises a presumption of
+  delivery but is not the moment of transfer.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 11.2
+  url: null
+  quoted_text: Title passes when the deed is delivered by the grantor and accepted by the grantee, not
+    when it is signed and not when it is recorded.
+  secondary: []
+terms:
+  - title passes
+  - delivery
+  - acceptance
+  - escrow
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

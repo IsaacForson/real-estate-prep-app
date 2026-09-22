@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0596
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A county condemns a 10-foot wide strip along a property for a utility line. The strip's market
+  value is $4,500 and the taking reduces the remainder's value by $1,800. What is the just
+  compensation owed to the owner?
+options:
+  - $5,500
+  - $6,000
+  - $6,300
+  - $7,200
+key: C
+explanation: "Just compensation includes the fair market value of the taken portion plus any
+  severance damages to the remainder: $4,500 + $1,800 = $6,300. The $7,200 amount would arise from
+  mistakenly adding $2,700 in severance damages, which is not the given loss."
+citation:
+  source: REP Ref. Property & Land Use § 4.3
+  url: null
+  quoted_text: Just compensation is ordinarily fair market value of what is taken plus, for a partial
+    taking, any loss in value to the remainder (severance damages).
+  secondary: []
+math:
+  worked_solution: "Add the fair market value of the taken strip ($4,500) to the severance damages
+    ($1,800): 4,500 + 1,800 = 6,300"
+  formulas:
+    - Just compensation = FMV of taken + severance damages
+  onscreen_calculator_only: false
+terms:
+  - eminent domain
+  - just compensation
+  - severance damages
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

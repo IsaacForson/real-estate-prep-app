@@ -1,0 +1,40 @@
+id: NH-331-0085
+jurisdiction: NH
+bank: state_NH
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A local restaurant employs five workers, including part‑time staff. Under the New Hampshire
+  Law Against Discrimination, how is the restaurant classified for purposes of the act’s employment
+  provisions?
+options:
+  - The restaurant is considered an employer only if it offers health benefits
+  - The restaurant is not considered an employer because it is a food service establishment
+  - The restaurant is considered an employer because it pays wages to workers
+  - The restaurant is not considered an employer because it has fewer than six persons in its employ
+key: D
+explanation: The statute explicitly excludes any employer with fewer than six persons in its employ
+  from the definition of “employer.” Since the restaurant has five workers, it falls below that
+  threshold and is not considered an employer under the act. The other options incorrectly rely on
+  wages, benefits, or industry type, which are not part of the exemption.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 354-A — RSA Chapter 354-A, official General Court page read via
+    Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts § 354-A:2(VII)
+  url: null
+  quoted_text: '"Employer" does not include any employer with fewer than 6 persons in its employ'
+  secondary: []
+terms:
+  - employer
+  - exemption
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

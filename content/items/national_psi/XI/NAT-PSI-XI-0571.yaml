@@ -1,0 +1,50 @@
+id: NAT-PSI-XI-0571
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is budgeting rent for a property. The target NOI is $70,000, annual operating
+  expenses are $40,000, and the expected vacancy rate is 10%. What is the required potential gross
+  income (PGI)?
+options:
+  - $121,000.00
+  - $99,000.00
+  - $77,777.78
+  - $122,222.22
+key: D
+explanation: First add the target NOI and operating expenses to get the effective gross income
+  ($110,000), then divide by one minus the vacancy rate (0.90) to obtain PGI. The $77,777.78 result
+  uses only the NOI and ignores expenses, while $99,000 incorrectly multiplies EGI by (1‑vacancy)
+  instead of dividing. Adding the vacancy amount to EGI yields $121,000, which understates the
+  required PGI.
+citation:
+  source: REP Ref. Real Estate Math § 13.3
+  url: null
+  quoted_text: required EGI = target NOI + operating expenses; required PGI = EGI ÷ (1 − vacancy rate);
+  secondary: []
+math:
+  worked_solution: |-
+    EGI = $70,000 + $40,000 = $110,000
+    PGI = $110,000 ÷ (1 - 0.10) = $110,000 ÷ 0.90 = $122,222.22
+  formulas:
+    - EGI = target NOI + operating expenses
+    - PGI = EGI ÷ (1 − vacancy rate)
+  onscreen_calculator_only: false
+terms:
+  - noi
+  - expenses
+  - vacancy
+  - pgi
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

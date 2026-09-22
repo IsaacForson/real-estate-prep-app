@@ -1,0 +1,37 @@
+id: NAT-PSI-XI-0570
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the formula for finding cost from a stated profit?
+options:
+  - Cost = sale price ÷ (1 − profit rate)
+  - Cost = sale price ÷ (1 + profit rate)
+  - Cost = sale price × (1 + profit rate)
+  - Cost = sale price × (1 − profit rate)
+key: B
+explanation: To find cost when a profit is known, divide the sale price by one plus the profit rate.
+  Multiplying by one plus the profit rate would increase the sale price rather than reduce it to
+  cost. Using one minus the profit rate would incorrectly treat the profit as a loss.
+citation:
+  source: REP Ref. Real Estate Math § 14.2
+  url: null
+  quoted_text: Cost = sale price ÷ (1 + profit rate) or ÷ (1 − loss rate) (§ 3.3).
+  secondary: []
+terms:
+  - profit
+  - cost
+  - formula
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

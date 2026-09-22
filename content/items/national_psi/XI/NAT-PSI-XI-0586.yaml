@@ -1,0 +1,47 @@
+id: NAT-PSI-XI-0586
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A 30-year fixed-rate mortgage has a monthly payment of $1,200 and an original principal of
+  $200,000. What is the total interest paid over the life of the loan?
+options:
+  - $282,000
+  - $332,000
+  - $182,000
+  - $232,000
+key: D
+explanation: According to the formula total interest = payment × number of payments − original
+  principal, the number of payments is 30 years × 12 = 360. Total paid equals $1,200 × 360 =
+  $432,000. Subtracting the original principal of $200,000 yields $232,000 of interest. The
+  distractor $332,000 arises from subtracting only half the principal ($100,000) instead of the full
+  amount.
+citation:
+  source: REP Ref. Real Estate Math § 5.7
+  url: null
+  quoted_text: Total interest = payment × number of payments − original principal.
+  secondary: []
+math:
+  worked_solution: "Step 1: Number of payments = 30 × 12 = 360.\\nStep 2: Total paid = $1,200 × 360 =
+    $432,000.\\nStep 3: Total interest = $432,000 − $200,000 = $232,000."
+  formulas:
+    - Number of payments = years × 12; Total paid = monthly payment × number of payments; Total
+      interest = total paid − original principal
+  onscreen_calculator_only: false
+terms:
+  - total interest
+  - loan
+  - amortization
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,41 @@
+id: VA-21-0046
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker sends a written notice to the parties that earnest money funds will be released
+  unless a written protest is received. According to Virginia law, how many calendar days does the
+  principal who is **NOT** to receive the funds have to protest the release?
+options:
+  - 15 calendar days
+  - 10 calendar days
+  - 30 calendar days
+  - 5 calendar days
+key: A
+explanation: Under Va. Code Ann. § 54.1-2108.2(3), a broker may give written notice that release of
+  earnest money will occur unless a protest is received within 15 calendar days. The 10‑day option
+  does not match the statutory period.
+citation:
+  source: Va. Code Ann. § 54.1-2108.2(3)
+  url: null
+  quoted_text: At the option of a broker, written notice may be sent by the broker that release of
+    such funds shall be made unless a written protest is received from the principal who is not
+    receiving the funds by such broker within 15 calendar days of the date of such notice.
+  secondary: []
+terms:
+  - earnest money
+  - protest
+  - notice
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

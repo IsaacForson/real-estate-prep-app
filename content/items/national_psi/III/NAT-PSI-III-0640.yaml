@@ -1,0 +1,54 @@
+id: NAT-PSI-III-0640
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An investor purchased a retail building for $800,000 and later spent $120,000 on a façade
+  renovation. An appraiser now estimates market value at $850,000. How much did the façade
+  renovation contribute to value?
+options:
+  - $50,000
+  - $120,000
+  - $730,000
+  - $850,000
+key: A
+explanation: According to the contribution principle, the value added by a component is the change
+  in market value attributable to that component, not its cost. Here, the market value increased
+  from $800,000 to $850,000, so the façade renovation contributed $50,000. The $120,000 distractor
+  incorrectly uses the renovation cost instead of the value increase. The $730,000 and $850,000
+  distractors result from subtracting the cost from the post‑renovation value or taking the
+  post‑renovation value directly.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.4"
+  url: null
+  quoted_text: The value of any component is measured by how much it adds to (or subtracts from) the
+    value of the whole, not by what it cost.
+  secondary: []
+math:
+  worked_solution: |-
+    Contribution = Market value after renovation - Market value before renovation
+    Market value before renovation = $800,000
+    Market value after renovation = $850,000
+    Contribution = $850,000 - $800,000 = $50,000
+  formulas:
+    - Contribution = V_after - V_before
+  onscreen_calculator_only: false
+terms:
+  - contribution
+  - value
+  - cost
+  - renovation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,40 @@
+id: NAT-PSI-X-0528
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager receives a tenant's security deposit. According to trust account rules,
+  what must the manager do with the funds?
+options:
+  - Hold the funds in a designated trust or escrow account separate from operating funds.
+  - Deposit the funds into the property management's operating account to cover expenses.
+  - Retain the funds in the manager's personal account until the tenant moves out.
+  - Use the funds to pay for maintenance and replenish later.
+key: A
+explanation: Trust money, which includes security deposits, must be held in a designated trust or
+  escrow account that is separate from the brokerage's operating funds. Depositing the deposit into
+  the operating account commingles trust money with firm funds, which is prohibited.
+citation:
+  source: REP Ref. Brokerage Practice § 10.1
+  url: null
+  quoted_text: Money a brokerage receives that belongs to others — earnest money, tenant security
+    deposits, rents collected for owners, advance fees — is **trust money** and must be held in a
+    designated trust or escrow account separate from the firm's operating funds.
+  secondary: []
+terms:
+  - trust account
+  - security deposit
+  - commingling
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

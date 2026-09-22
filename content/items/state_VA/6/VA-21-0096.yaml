@@ -1,0 +1,44 @@
+id: VA-21-0096
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A declarant records condominium instruments on July 5. Under the Virginia Condominium Act, by
+  what date must the declarant mail the declaration to each purchaser?
+options:
+  - By July 10
+  - By July 12
+  - By July 15
+  - By July 20
+key: C
+explanation: Section 55.1-1984 requires the declarant to forward the declaration within 10 days of
+  recordation. Counting ten days from July 5 yields a deadline of July 15, so the correct answer is
+  the choice stating 'By July 15'. The choice stating 'By July 12' reflects a seven‑day count, which
+  does not meet the statutory requirement.
+citation:
+  source: Va. Code Ann. § 55.1-1900 et seq. — Code of Virginia Title 55.1, Chapter 19 — Virginia
+    Condominium Act — § 55.1-1984
+  url: null
+  quoted_text: The declarant shall within 10 days of recordation of the condominium instruments as
+    provided for in §§ 55.1-1907 and 55.1-1911 forward to each purchaser at his last known address
+    by first-class mail, return receipt requested, an exact copy of the recorded declaration and
+    bylaws.
+  secondary: []
+terms:
+  - declarant
+  - recordation
+  - declaration
+  - purchaser
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

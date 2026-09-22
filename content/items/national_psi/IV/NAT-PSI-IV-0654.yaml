@@ -1,0 +1,47 @@
+id: NAT-PSI-IV-0654
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer signs a mortgage loan secured by their principal dwelling on Tuesday, May 2. The
+  creditor delivers the required TILA disclosures and rescission forms on Friday, May 5. Assuming no
+  holidays, what is the latest date and time by which the consumer may exercise the right to
+  rescind?
+options:
+  - Midnight of May 8
+  - Midnight of May 9
+  - Midnight of May 10
+  - Midnight of May 11
+key: C
+explanation: The right to rescind lasts until midnight of the third business day after the later of
+  consummation or delivery of the required disclosures. Consummation occurred on Tuesday, May 2, and
+  the disclosures were delivered on Friday, May 5. The later event is the delivery on May 5.
+  Counting three business days from May 5 gives May 8, May 9, and May 10, so the deadline is
+  midnight of May 10. Selecting the answer that states midnight of May 9 would count only two
+  business days after delivery, and selecting the answer that states midnight of May 8 would
+  incorrectly base the count on the consummation date.
+citation:
+  source: 15 U.S.C. § 1635(a)
+  url: null
+  quoted_text: the obligor shall have the right to rescind the transaction until midnight of the third
+    business day following the consummation of the transaction or the delivery of the information
+    and rescission forms required under this section together with a statement containing the
+    material disclosures required under this subchapter, whichever is later
+  secondary: []
+terms:
+  - rescission
+  - business day
+  - disclosure
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0592
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a lot in a planned unit development. Who owns the pool and streets?
+options:
+  - The local government authority
+  - The homeowners' association
+  - The developer of the project
+  - The lot owners as tenants in common
+key: B
+explanation: The key is correct because in a PUD, the homeowners' association owns the common areas
+  such as pools and streets, as stated in the PUD section. The most tempting distractor incorrectly
+  states that the lot owners as tenants in common own the common areas, which describes a
+  condominium arrangement.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 5.4
+  url: null
+  quoted_text: A planned unit development (PUD) is a zoning and ownership arrangement in which
+    individual lots are owned in fee simple while streets, open space, and recreational facilities
+    are owned by a homeowners' association of which every lot owner is a member. The association,
+    not the lot owners as tenants in common, owns the common areas, which is the main structural
+    difference from a condominium.
+  secondary: []
+terms:
+  - planned unit development
+  - homeowners association
+  - common areas
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

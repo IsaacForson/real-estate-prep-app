@@ -1,0 +1,46 @@
+id: MA-87D-0036
+jurisdiction: MA
+bank: state_MA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Board sends a licensee a notice dated April 1 stating that a hearing to consider
+  suspension of his license will be held on April 10. Under M.G.L. c. 112 § 87BBB, is the notice
+  sufficient?
+options:
+  - No, because the notice must be given at least fifteen days.
+  - Yes, because the notice includes a statement of the grounds.
+  - No, because at least ten days' written notice is required.
+  - Yes, because the notice is given exactly nine days before the hearing.
+key: C
+explanation: The key is correct because §87BBB requires at least ten days' written notice before a
+  hearing that may result in suspension or revocation; a notice dated April 1 for a hearing on April
+  10 provides only nine days, which is insufficient. The distractor claiming the notice is
+  sufficient because it is nine days before the hearing ignores the minimum ten‑day requirement.
+citation:
+  source: "### M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87BBB"
+  url: null
+  quoted_text: at least ten days' written notice, including a statement of the grounds and a copy of
+    the complaint or charges, if any, which the board proposes to consider, shall be given to the
+    applicant for renewal or the licensee
+  secondary: []
+terms:
+  - notice
+  - hearing
+  - suspension
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

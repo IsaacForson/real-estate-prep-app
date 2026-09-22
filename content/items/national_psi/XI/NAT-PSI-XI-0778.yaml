@@ -1,0 +1,50 @@
+id: NAT-PSI-XI-0778
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner wants a target NOI of $50,000 with operating expenses of $30,000, a vacancy rate of
+  10%, and 8 units. What is the required rent per unit per month to achieve the target?
+options:
+  - $1,041.67
+  - $763.89
+  - $925.93
+  - $833.33
+key: C
+explanation: First, EGI equals target NOI plus operating expenses ($80,000). Then PGI equals EGI
+  divided by (1 minus vacancy rate) ($88,888.89). Finally, rent per unit per month equals PGI
+  divided by units and by 12, yielding $925.93. The distractor $833.33 results from omitting the
+  vacancy adjustment and using EGI directly as PGI.
+citation:
+  source: REP Ref. Real Estate Math § 13.3
+  url: null
+  quoted_text: required EGI = target NOI + operating expenses; required PGI = EGI ÷ (1 − vacancy
+    rate); rent per unit per month = PGI ÷ units ÷ 12.
+  secondary: []
+math:
+  worked_solution: "Step 1: EGI = $50,000 + $30,000 = $80,000.\\nStep 2: PGI = $80,000 ÷ (1 - 0.10) =
+    $80,000 ÷ 0.90 = $88,888.89.\\nStep 3: Rent per unit per month = $88,888.89 ÷ 8 ÷ 12 =
+    $88,888.89 ÷ 96 = $925.93."
+  formulas:
+    - EGI = target NOI + operating expenses
+    - PGI = EGI ÷ (1 - vacancy rate)
+    - rent per unit per month = PGI ÷ units ÷ 12
+  onscreen_calculator_only: false
+terms:
+  - egi
+  - pgi
+  - vacancy rate
+  - rent per unit
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

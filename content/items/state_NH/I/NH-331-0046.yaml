@@ -1,0 +1,43 @@
+id: NH-331-0046
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson seeks to recover an unpaid commission directly from a client. Under RSA 331-A:32
+  II, whom must the salesperson sue?
+options:
+  - The broker they were licensed with
+  - The escrow agent holding funds
+  - The real estate commission authority
+  - The client who refused payment
+key: A
+explanation: RSA 331-A:32 II states that a salesperson may sue only the broker with whom they are or
+  were licensed for recovery of a commission. Suing the client directly is not permitted under this
+  provision.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:32
+  url: null
+  quoted_text: No salesperson may sue in such person's own capacity for the recovery of a fee,
+    commission or compensation for services as a salesperson unless the action is against the broker
+    with whom the person is licensed or was licensed with at the time the act or service was
+    performed
+  secondary: []
+terms:
+  - salesperson
+  - commission
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

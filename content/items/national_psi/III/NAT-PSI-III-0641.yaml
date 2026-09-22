@@ -1,0 +1,51 @@
+id: NAT-PSI-III-0641
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $420,000 in a jurisdiction that assesses at 55 percent of
+  market value. What is the assessed value?
+options:
+  - $420,000
+  - $189,000
+  - $252,000
+  - $231,000
+key: D
+explanation: Assessed value is calculated by multiplying the market value by the assessment ratio
+  expressed as a decimal. Multiplying $420,000 by 0.55 yields $231,000. The $420,000 distractor
+  mistakenly treats the market value as the assessed value. The $189,000 and $252,000 distractors
+  result from using 45 % and 60 % instead of the correct 55 %.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 3.3"
+  url: null
+  quoted_text: Assessed value is determined by a local assessor and is often a percentage of market
+    value called the assessment ratio
+  secondary: []
+math:
+  worked_solution: |-
+    Assessed value = Market value × Assessment ratio
+    Assessment ratio = 55% = 0.55
+    Assessed value = $420,000 × 0.55
+    Assessed value = $231,000
+  formulas:
+    - Assessed value = Market value × Assessment ratio
+  onscreen_calculator_only: false
+terms:
+  - assessed
+  - value
+  - market
+  - ratio
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

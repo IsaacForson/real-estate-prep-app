@@ -1,0 +1,36 @@
+id: NAT-PSI-XI-0566
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: XI
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: If you know the part and the rate, which formula do you use to find the whole?
+options:
+  - Whole = Part × Rate
+  - Whole = Part ÷ Rate
+  - Whole = Rate ÷ Part
+  - Whole = Part + Rate
+key: B
+explanation: To find the whole when you know the part and the rate, divide the part by the rate.
+  Multiplying the part by the rate would give the part again, not the whole.
+citation:
+  source: REP Ref. Real Estate Math § 1.3
+  url: null
+  quoted_text: Therefore Whole = Part ÷ Rate
+  secondary: []
+terms:
+  - part
+  - whole
+  - rate
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

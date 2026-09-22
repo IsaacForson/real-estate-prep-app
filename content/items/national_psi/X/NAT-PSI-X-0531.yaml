@@ -1,0 +1,39 @@
+id: NAT-PSI-X-0531
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord refuses to rent to a prospective tenant who uses a wheelchair. Based solely on the
+  text, is this action permissible?
+options:
+  - The action is permissible if the tenant cannot afford the rent
+  - The action is permitted if the landlord offers a different unit
+  - The action is prohibited under the Fair Housing Act
+  - The action is allowed under the housing-for-older-persons exemption
+key: C
+explanation: Refusing to rent to someone because they use a wheelchair is disability discrimination,
+  which the Fair Housing Act prohibits. The Fair Housing Act makes it illegal to deny housing based
+  on a protected class such as disability.
+citation:
+  source: REP Ref. Brokerage Practice § 12.5
+  url: null
+  quoted_text: The cached Fair Housing Act prohibits refusing to rent, imposing different terms, or
+    steering based on protected class
+  secondary: []
+terms:
+  - fair housing
+  - disability
+  - protected class
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

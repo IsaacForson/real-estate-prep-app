@@ -1,0 +1,42 @@
+id: VA-21-0049
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker purchases a certificate of deposit using funds from an escrow account and then
+  pledges the certificate as collateral for a loan. According to Virginia regulations, what is the
+  status of this action?
+options:
+  - The action is permitted provided the certificate is held in the broker's name
+  - The action is prohibited because it constitutes commingling of escrow funds
+  - The action is permitted if the broker obtains written consent from the client
+  - The action is permitted because the escrow funds remain invested
+key: B
+explanation: D.2 expressly provides that using escrow funds to purchase a certificate of deposit and
+  then pledging that certificate constitutes commingling, which is prohibited. The distractor
+  suggesting the action is permitted if the funds remain invested overlooks the specific prohibition
+  on pledging the certificate.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-181
+  url: null
+  quoted_text: If escrow funds are used to purchase a certificate of deposit, the pledging or
+    hypothecation of such certificate, or the absence of the original certificate from the direct
+    control of the principal or supervising broker, will constitute commingling
+  secondary: []
+terms:
+  - commingling
+  - certificate of deposit
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

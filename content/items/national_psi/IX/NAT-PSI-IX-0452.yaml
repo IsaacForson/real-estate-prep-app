@@ -1,0 +1,41 @@
+id: NAT-PSI-IX-0452
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IX
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller signs a deed on Monday and places it in escrow with instructions to release it when
+  the buyer’s loan funds are received. The buyer’s funds arrive on Thursday, the escrow agent
+  releases the deed, and it is recorded on Friday. When does title pass?
+options:
+  - If the grantor dies before delivery
+  - When the deed is signed
+  - When the deed is recorded
+  - When escrow releases the deed
+key: D
+explanation: Title passes when the deed is delivered by the grantor and accepted by the grantee, not
+  when it is signed or recorded. In the scenario, delivery occurs when the escrow agent releases the
+  deed after the buyer’s funds arrive, which is Thursday. The distractor confusing recording with
+  delivery is a typical error.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 11.2
+  url: null
+  quoted_text: Title passes when the deed is delivered by the grantor and accepted by the grantee, not
+    when it is signed and not when it is recorded.
+  secondary: []
+terms:
+  - delivery
+  - acceptance
+  - escrow
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

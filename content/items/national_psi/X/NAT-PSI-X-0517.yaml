@@ -1,0 +1,55 @@
+id: NAT-PSI-X-0517
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: X
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A manager of a 15-unit apartment building reports that each unit rents for $900 per month.
+  Vacancy and collection loss is estimated at 5% of potential gross income. The building also
+  generates $2,500 per year from laundry and parking. Annual operating expenses, including taxes,
+  insurance, utilities, repairs, and reserves for replacement, total $85,000. What is the net
+  operating income for the year?
+options:
+  - $68,900
+  - $71,400
+  - $69,800
+  - $87,600
+key: B
+explanation: "First calculate potential gross income: 15 × $900 × 12 = $162,000. Vacancy loss is 5%
+  of $162,000 = $8,100. Effective gross income equals $162,000 − $8,100 + $2,500 = $156,400. Net
+  operating income is effective gross income minus operating expenses: $156,400 − $85,000 =
+  $71,400."
+citation:
+  source: REP Ref. Brokerage Practice § 12.3
+  url: null
+  quoted_text: and **net operating income** (effective gross income minus operating expenses, before
+    debt service and income taxes).
+  secondary: []
+math:
+  worked_solution: |-
+    Potential gross income = 15 units × $900/month × 12 months = $162,000
+    Vacancy and collection loss = 5% × $162,000 = $8,100
+    Effective gross income = $162,000 − $8,100 + $2,500 = $156,400
+    Net operating income = $156,400 − $85,000 = $71,400
+  formulas:
+    - PGI = Units × Rent per unit × 12
+    - Vacancy Loss = PGI × Vacancy %
+    - EGI = PGI − Vacancy Loss + Other Income
+    - NOI = EGI − Operating Expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - effective gross income
+  - operating expenses
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09
