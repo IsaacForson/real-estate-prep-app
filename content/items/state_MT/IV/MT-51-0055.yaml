@@ -1,0 +1,40 @@
+id: MT-51-0055
+jurisdiction: MT
+bank: state_MT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a licensee's professional liability policy is canceled due to nonpayment of premium, what
+  automatic extended reporting period, if any, must the policy provide?
+options:
+  - A 60‑day extended reporting period
+  - No automatic extended reporting period
+  - An optional extended reporting period
+  - A 365‑day extended reporting period
+key: B
+explanation: Mont. Code Ann. § 37-51-325(3)(c) provides an automatic 60‑day extended reporting
+  period only if the policy is canceled or not renewed for any reason other than nonpayment of
+  premium or a deductible. Since the cancellation is for nonpayment of premium, the condition is not
+  met and no automatic period applies. The 365‑day period is optional and requires a request and
+  payment.
+citation:
+  source: Mont. Code Ann. § 37-51-325(3)(c)
+  url: null
+  quoted_text: provide an automatic 60-day extended reporting period to report a claim if the policy
+    is canceled or not renewed for any reason other than nonpayment of premium or a deductible
+  secondary: []
+terms:
+  - extended reporting period
+  - cancellation
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

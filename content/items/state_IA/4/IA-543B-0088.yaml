@@ -1,0 +1,42 @@
+id: IA-543B-0088
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant completed a commission‑approved 12‑hour course in Developing Professionalism and
+  Ethical Practices 13 months before submitting the salesperson license application. Under Iowa
+  Admin. Code r. 481-2016, is the applicant eligible to use this course to satisfy the salesperson
+  prelicense requirement?
+options:
+  - The applicant is eligible because the course was completed within 12 months.
+  - The applicant is ineligible because the course was completed more than 12 months prior.
+  - The applicant is eligible because the course is substantially similar.
+  - The applicant is ineligible because the course lacked commission approval.
+key: B
+explanation: The rule states that courses completed more than 12 months prior to commission
+  consideration do not qualify for substitution. Since the course was finished 13 months prior, it
+  cannot be used. The distractor about substantial similarity is irrelevant when the time limit is
+  exceeded.
+citation:
+  source: Iowa Admin. Code r. 481-2016 — Iowa Administrative Code 481—Chapter 2016 — Prelicense
+    Education And Continuing Education (Real Estate Commission) 481—2016.2(3)
+  url: null
+  quoted_text: Courses completed more than 12 months prior to commission consideration for approval do
+    not qualify for substitution.
+  secondary: []
+terms:
+  - substitution
+  - prelicense education
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

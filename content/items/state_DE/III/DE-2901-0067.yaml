@@ -1,0 +1,44 @@
+id: DE-2901-0067
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant had their real estate license revoked in another state solely for failure to pay
+  renewal fees. Under Delaware law, is this revocation a basis for denying licensure?
+options:
+  - Under Delaware law, the revocation is grounds for denial because any license revocation
+    disqualifies an applicant.
+  - Under Delaware law, the revocation is not grounds for denial because the exception excludes
+    revocations for nonpayment of renewal fees.
+  - Under Delaware law, the revocation is grounds for denial unless the applicant pays the
+    outstanding fees.
+  - Under Delaware law, the revocation is not grounds for denial, but only if the revocation
+    occurred more than five years ago.
+key: B
+explanation: Under Del. Code Ann. tit. 24, ch. 29 § 2907(a)(2), license revocations for nonpayment
+  of renewal fees are excluded from the list of disqualifying administrative penalties. Therefore,
+  such a revocation does not bar licensure. The statement that any license revocation disqualifies
+  an applicant is incorrect.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2907(a)(2)
+  url: null
+  quoted_text: (except for license revocations for nonpayment of license renewal fees)
+  secondary: []
+terms:
+  - administrative penalty
+  - revocation
+  - nonpayment
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

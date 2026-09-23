@@ -1,0 +1,43 @@
+id: IA-543B-0059
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate salesperson license tells the commission on the application
+  that they have never been convicted of any crime, but they actually have a prior felony conviction
+  for theft. Under Iowa Code ch. 543B, what is the likely outcome regarding the application?
+options:
+  - The commission is required to deny the license based on the false statement.
+  - The commission is permitted to deny the license based on the false statement.
+  - The commission is required to approve the license despite the false statement.
+  - The commission is permitted to approve the license despite the false statement.
+key: B
+explanation: Paragraph (5) of §543B.15 provides that a person who makes a false statement of
+  material fact on an application may be denied a license on that grounds, using permissive
+  language. Therefore, the commission may deny the license but is not required to do so. The option
+  stating the commission is required to deny misstates the mandatory nature of the rule.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §543B.15(5)
+  url: null
+  quoted_text: 5. A person who makes a false statement of material fact on an application for a real
+    estate broker’s or salesperson’s license, or who causes to be submitted, or has been a party to
+    preparing or submitting any false application for such license, may be denied a license by the
+    commission on the grounds of the false statement or submission.
+  secondary: []
+terms:
+  - false statement
+  - material fact
+  - license denial
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

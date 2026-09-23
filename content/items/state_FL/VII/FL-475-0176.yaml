@@ -1,0 +1,43 @@
+id: FL-475-0176
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee completes an approved distance learning continuing education course that requires a
+  final written examination to be taken at a proctored testing center. Under Florida law, may the
+  licensee claim continuing education credit for this course?
+options:
+  - C. Yes, as long as the course provider is approved by the Florida Real Estate Commission.
+  - D. No, unless the licensee also completes a live review session of the same material.
+  - A. Yes, because distance learning courses are expressly permitted under Florida law.
+  - B. No, because the commission may not require a written examination at a centralized location
+    for distance learning credit.
+key: D
+explanation: The law explicitly prohibits the commission from requiring a written examination at a
+  centralized location for distance learning or correspondence courses to count toward continuing
+  education credit. Since the course mandates such an exam, the licensee cannot claim credit. The
+  claim that distance learning courses are expressly permitted does not override the prohibition on
+  centralized exams.
+citation:
+  source: Fla. Stat. § 475.182(1)(a)
+  url: null
+  quoted_text: However, the commission may not require, for the purpose of satisfactorily completing
+    an approved correspondence or distance learning course, a written examination that is to be
+    taken at a centralized location and is to be monitored.
+  secondary: []
+terms:
+  - distance learning
+  - continuing education
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

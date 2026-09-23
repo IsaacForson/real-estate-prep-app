@@ -1,0 +1,40 @@
+id: NY-443-0065
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money deposit from a buyer client. Under 19 NYCRR § 175.1, within
+  how many business days must the broker deposit the money into a separate special bank account?
+options:
+  - Within one business day.
+  - Within five business days.
+  - Within seven business days.
+  - Within three business days.
+key: D
+explanation: The regulation requires the deposit to be made within three business days. A one‑day
+  timeframe is too short and not supported by the rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.1
+  url: null
+  quoted_text: A real estate broker shall not commingle the money or other property of his principal
+    with his own and shall at all times maintain a separate, special bank account to be used
+    exclusively for the deposit of said monies and which deposit shall be made within three business
+    days
+  secondary: []
+terms:
+  - earnest money
+  - special bank account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

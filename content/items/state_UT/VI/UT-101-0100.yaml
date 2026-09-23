@@ -1,0 +1,46 @@
+id: UT-101-0100
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An officer of a corporation personally participates in a violation of the Utah Real Estate
+  Licensing and Practices Act committed by the corporation. Under Utah Code Ann. § 61-2f-405(1),
+  what penalty is the officer subject to?
+options:
+  - The officer is subject to the same penalties as an individual under the act
+  - The officer is subject to only a corporate fine, with no individual liability
+  - The officer is subject to penalties twice those of an individual for the violation
+  - The officer is subject to no penalty unless the corporation is convicted and fined
+key: A
+explanation: Under Utah Code Ann. § 61-2f-405(1), an officer who personally participates in or is an
+  accessory to a violation committed by the corporation is subject to the same penalties prescribed
+  for an individual. The option stating that the officer is subject to only a corporate fine, with
+  no individual liability, is incorrect because the statute does not limit liability to a corporate
+  fine; the officer faces individual penalties.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-405 61-2f-405(1)
+  url: null
+  quoted_text: An officer or agent of a corporation, a member or agent of a partnership or
+    association, or an individual in a similar position of another type of entity who personally
+    participates in or is an accessory to any violation of this chapter by the entity is subject to
+    the penalties prescribed for an individual.
+  secondary: []
+terms:
+  - officer
+  - penalty
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

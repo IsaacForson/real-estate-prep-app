@@ -1,0 +1,41 @@
+id: FL-475-0178
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida law, what is the maximum number of continuing education hours that may be
+  substituted by attendance at a single legal agenda session of the Florida Real Estate Commission
+  per renewal cycle?
+options:
+  - One hour of continuing education credit.
+  - Three hours of continuing education credit.
+  - Six hours of continuing education credit.
+  - Twelve hours of continuing education credit.
+key: B
+explanation: The statute allows the commission to accept attendance at one legal agenda session as a
+  substitute for exactly 3 classroom hours per renewal cycle; therefore three hours is correct. Six
+  hours incorrectly assumes the substitution can be doubled, which the rule does not permit.
+citation:
+  source: Fla. Stat. § 475.182(1)(b)
+  url: null
+  quoted_text: The commission may accept as a substitute for 3 classroom hours, one time per renewal
+    cycle, attendance at one legal agenda session of the commission.
+  secondary: []
+terms:
+  - continuing education
+  - legal agenda session
+  - substitution
+  - renewal cycle
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

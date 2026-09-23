@@ -1,0 +1,46 @@
+id: NM-1-0088
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under New Mexico rule 16.61.19.8, how is a 'client' defined?
+options:
+  - A person who has entered into an express written agreement with a brokerage for real estate
+    services subject to the jurisdiction of the commission
+  - A person who uses real estate services without entering into an express written agreement with a
+    brokerage subject to the jurisdiction of the commission
+  - A broker who is designated in writing by their qualifying broker to represent a client of the
+    brokerage as their exclusive agent in a real estate transaction
+  - A policy whereby the qualifying broker discloses that a broker representing a client is that
+    client's only representative in the brokerage
+key: A
+explanation: The rule defines a client as a person who has entered into an express written agreement
+  with a brokerage for real estate services subject to the commission’s jurisdiction. This matches
+  the option stating that a person has such an express written agreement. The alternative describing
+  a person who uses services without an express written agreement describes a customer, not a
+  client.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.19.8
+  url: null
+  quoted_text: "“Client”: a person who has entered into an express written agreement with a brokerage
+    for real estate services subject to the jurisdiction of the commission"
+  secondary: []
+terms:
+  - client
+  - customer
+  - designated agent
+  - designated agency
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

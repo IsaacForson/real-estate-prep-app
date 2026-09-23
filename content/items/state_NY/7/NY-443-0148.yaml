@@ -1,0 +1,44 @@
+id: NY-443-0148
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: A seller of residential real property in New York learns that the property is located in a
+  Special Flood Hazard Area and the buyer's mortgage is from a federally regulated lender. How
+  should the seller answer question 13 of the Property Condition Disclosure Statement?
+options:
+  - The seller must answer Yes.
+  - The seller must answer Unkn.
+  - The seller must answer NA.
+  - The seller must answer No.
+key: A
+explanation: Under §462, sellers must answer 'Yes' to question 13 when the property is subject to a
+  federal flood‑insurance requirement. The note in the statute states that homes in the Special
+  Flood Hazard Area with federally regulated lenders are required to obtain and maintain flood
+  insurance. Therefore the correct response is 'Yes'. The distractor 'No' would be incorrect because
+  the note explicitly imposes the requirement under those conditions.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462
+  url: null
+  quoted_text: Homes in the Special Flood Hazard Area, also known as High Risk Flood Zones, on FEMA’s
+    flood insurance rate maps with mortgages from federally regulated or insured lenders are
+    required to obtain and maintain flood insurance.
+  secondary: []
+terms:
+  - flood
+  - insurance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

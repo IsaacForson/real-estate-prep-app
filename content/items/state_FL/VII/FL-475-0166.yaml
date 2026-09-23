@@ -1,0 +1,49 @@
+id: FL-475-0166
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate’s license has been involuntarily inactive for 28 months. What is the status
+  of the license under Florida law?
+options:
+  - The license remains involuntarily inactive and may be renewed after completing 28 hours of
+    continuing education
+  - The license has automatically expired and is null and void with no further action needed
+  - The license is considered voluntarily inactive and may be renewed after 12 hours of continuing ed
+  - The license is still active but subject to a fine and possible administrative penalties
+key: B
+explanation: Under Florida Statute §475.183(2)(b), any license that has been involuntarily inactive
+  for more than two years automatically expires and becomes null and void without further action.
+  The option stating that the license remains involuntarily inactive and may be renewed after
+  completing 28 hours of continuing education is incorrect because renewal is not possible after
+  expiration. The option stating that the license is considered voluntarily inactive and may be
+  renewed after 12 hours of continuing education is incorrect because the status is involuntary, not
+  voluntary, and renewal is not allowed. The option stating that the license is still active but
+  subject to a fine and possible administrative penalties is incorrect because the license is no
+  longer active.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.183(2)(b)
+  url: null
+  quoted_text: Any license that has been involuntarily inactive for more than 2 years shall
+    automatically expire. Once a license expires, it becomes null and void without any further
+    action by the commission or department.
+  secondary: []
+terms:
+  - involuntarily inactive
+  - expire
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,41 @@
+id: FL-475-0190
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate attends a legal agenda session of the Florida Real Estate Commission,
+  notifies the division eight days in advance, and is a party to an ongoing disciplinary action. How
+  many continuing education hours may the sales associate claim for this attendance?
+options:
+  - 0 hours
+  - 6 hours
+  - 14 hours
+  - 3 hours
+key: A
+explanation: According to Fla. Stat. § 475.182(1)(b), a licensee may not earn any continuing
+  education credit for attending a legal agenda session while being a party to a disciplinary
+  action, regardless of how early they notify the division. Therefore the sales associate earns zero
+  hours. The distractor “3 hours” is incorrect because it ignores the statutory prohibition that
+  applies when the licensee is a party to the proceeding.
+citation:
+  source: Fla. Stat. ch. 475 § 475.182(1)(b)
+  url: null
+  quoted_text: A licensee may not earn any continuing education credit for attending a legal agenda
+    session of the commission as a party to a disciplinary action.
+  secondary: []
+terms:
+  - continuing education
+  - legal agenda
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

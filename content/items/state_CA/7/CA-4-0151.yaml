@@ -1,0 +1,40 @@
+id: CA-4-0151
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A buyer mails a notice of cancellation for a home solicitation contract on Monday morning.
+  Under Cal. Civ. Code § 1689.6(e), when is the notice of cancellation effective?
+options:
+  - Effective when posted online
+  - Effective upon receipt by the seller
+  - Effective upon deposit in the mail
+  - Effective when the seller reads the notice
+key: C
+explanation: The statute provides that a notice of cancellation given by mail is effective when
+  deposited in the mail properly addressed with postage prepaid. The distractor stating
+  effectiveness upon receipt is incorrect because the statute ties effectiveness to deposit, not to
+  the seller's receipt or reading of the notice.
+citation:
+  source: Cal. Civ. Code §§ 1688–1693 — Cal. Civil Code - CHAPTER 2. Rescission 1688-1693 § 1689.6(e)
+  url: null
+  quoted_text: Notice of cancellation, if given by mail, is effective when deposited in the mail
+    properly addressed with postage prepaid.
+  secondary: []
+terms:
+  - notice
+  - cancellation
+  - mail
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

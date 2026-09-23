@@ -1,0 +1,42 @@
+id: IA-543B-0072
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A former employee files a complaint against their former broker alleging license violations,
+  and the complainant acted without malice. Under Iowa Admin. Code r. 481-2018, what is the
+  complainant’s civil liability for filing the complaint?
+options:
+  - The complainant is not civilly liable unless the complaint was made with malice.
+  - The complainant is not civilly liable under any circumstances in this proceeding.
+  - The complainant is civilly liable because they are a former employee in this case.
+  - The complainant is civilly liable for filing the complaint in this matter.
+key: A
+explanation: The rule states that a person is not civilly liable for filing a complaint unless the
+  act is done with malice. Since the complainant acted without malice, they are not civilly liable.
+  The distractor claiming liability regardless of intent ignores the malice exception granted by the
+  rule.
+citation:
+  source: Iowa Admin. Code r. 481-2018 — Iowa Administrative Code 481—Chapter 2018 — Investigations
+    And Disciplinary Procedures (Real Estate Commission) 481—2018.6(2)
+  url: null
+  quoted_text: A person is not civilly liable for filing a complaint unless such act is done with
+    malice as provided by Iowa Code section 272C.8(1)“a.”
+  secondary: []
+terms:
+  - complaint
+  - immunity
+  - malice
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

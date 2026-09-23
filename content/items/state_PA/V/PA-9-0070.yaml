@@ -1,0 +1,42 @@
+id: PA-9-0070
+jurisdiction: PA
+bank: state_PA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer's agent shows a property and does not notice a leaky roof that the seller never
+  mentioned. After closing, the buyer discovers the roof leak and sues the agent for violating the
+  disclosure law. Under § 7310, is the agent liable?
+options:
+  - The agent is liable for failing to discover the roof leak.
+  - The agent is not liable unless the agent had actual knowledge of the undisclosed defect.
+  - The agent is liable because the agent did not inspect the property before showing it.
+  - The agent is not liable because the law exempts agents from liability.
+key: B
+explanation: Section 7310 provides that an agent is not liable for a violation unless the agent had
+  actual knowledge of a material defect that was not disclosed. Mere failure to discover the defect
+  does not create liability. The distractor claiming liability for failing to discover the roof leak
+  is incorrect because the statute requires actual knowledge, not negligence.
+citation:
+  source: 68 Pa.C.S. §§ 7301–7315 (Real Estate Seller Disclosure Law) — Pennsylvania Real Estate
+    Seller Disclosure Law, 68 Pa.C.S. §§ 7301-7315 (as posted by the State Real Estate Commission) —
+    § 7310
+  url: null
+  quoted_text: An agent of a seller or a buyer shall not be liable for any violation of this chapter
+    unless the agent had actual knowledge of a material defect that was not disclosed to the buyer
+    or of a misrepresentation relating to a material defect.
+  secondary: []
+terms:
+  - agent liability
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,47 @@
+id: MI-25-0090
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives notice on Tuesday that an offer to purchase a client's property has been
+  accepted by all parties. According to the Michigan Occupational Code, by what deadline must the
+  broker deposit the client's earnest money into a separate custodial trust or escrow account?
+options:
+  - By the end of Wednesday.
+  - By the end of Thursday.
+  - By the end of Sunday.
+  - By the end of Saturday.
+key: B
+explanation: The rule requires deposit not later than 2 banking days after notice of acceptance.
+  Tuesday notice makes Wednesday and Thursday the two banking days, so the deposit must be made by
+  the end of Thursday. The other options either ignore the 2‑day requirement or incorrectly count
+  weekends as banking days.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512(1)(k)(v)
+  url: null
+  quoted_text: A real estate broker shall deposit, not later than 2 banking days after the broker has
+    received notice that an offer to purchase is accepted by all parties, money that belongs to
+    others and is made payable to the real estate broker into a separate custodial trust or escrow
+    account
+  secondary: []
+terms:
+  - escrow account
+  - banking days
+  - earnest money
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

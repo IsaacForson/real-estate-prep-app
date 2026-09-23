@@ -1,0 +1,43 @@
+id: WI-452-0022
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following phrases, if included in a deed, constitutes an expression of intent to
+  create a joint tenancy under Wis. Stat. § 700.19(1)?
+options:
+  - The phrase “as tenants in common”.
+  - The phrase “in equal shares”.
+  - The phrase “as joint tenants”.
+  - The phrase “subject to a mortgage”.
+key: C
+explanation: Under Wis. Stat. § 700.19(1), a deed that includes the phrase “as joint tenants”
+  expresses the intent to create a joint tenancy. The statute lists that phrase among those that
+  constitute such an expression. Therefore, the presence of that language establishes a joint
+  tenancy. The phrase “as tenants in common” indicates a tenancy in common, not a joint tenancy,
+  making it incorrect.
+citation:
+  source: Wis. Stat. ch. 700 — Wisconsin Statutes Chapter 700, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 700.19(1)
+  url: null
+  quoted_text: “as joint tenants”, “as joint owners”, “jointly”, “or the survivor”, “with right of survivorship”
+  secondary: []
+terms:
+  - joint tenancy
+  - tenancy in common
+  - intent
+  - survivorship
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

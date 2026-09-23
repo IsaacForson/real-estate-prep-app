@@ -1,0 +1,50 @@
+id: MT-51-0037
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker hires an independent contractor salesperson who, without the broker's knowledge,
+  tells a buyer that the property's roof is new when it is actually 20 years old. The buyer relies
+  on this statement and suffers a loss. Under Montana law, is the broker liable for the
+  salesperson's misrepresentation?
+options:
+  - The broker is not liable because the misrepresentation concerned a future event
+  - The broker is liable because the broker failed to supervise the salesperson
+  - The broker is liable because the salesperson acts as the broker's agent
+  - The broker is not liable because the salesperson is not an employee and the broker lacked actual
+    knowledge
+key: D
+explanation: Under Montana law, a broker is not liable for a subagent's misrepresentation unless the
+  broker had actual knowledge, the subagent is an employee, or the broker or subagent repeats the
+  broker's own misrepresentation. Since the salesperson is an independent contractor and the broker
+  lacked actual knowledge, the broker is not liable. The idea that the broker is not liable because
+  the misrepresentation concerned a future event is incorrect because liability does not depend on
+  whether the statement is about a future event; it depends on the broker's knowledge, the
+  subagent's employment status, or repetition of the broker's own misrepresentation.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-315
+  url: null
+  quoted_text: "(2) A broker is not liable for a misrepresentation made by the broker's subagent
+    unless: (a) the broker has actual knowledge of the misrepresentation; (b) the subagent making
+    the misrepresentation is an employee of the broker and not an independent contractor; or (c) a
+    broker or subagent is repeating a misrepresentation made by the broker."
+  secondary: []
+terms:
+  - vicarious liability
+  - misrepresentation
+  - employee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

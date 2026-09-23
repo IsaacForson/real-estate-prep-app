@@ -1,0 +1,41 @@
+id: IA-543B-0187
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "12"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker collects monthly rent for a property management client and deposits the funds into a
+  separate property management trust account. How often must the broker provide a complete
+  accounting of all moneys received and disbursed from this account to the client?
+options:
+  - The broker must provide accounting quarterly.
+  - The broker must provide accounting semi-annually.
+  - The broker must provide accounting monthly.
+  - The broker must provide accounting annually.
+key: D
+explanation: The rule requires the broker to provide a complete accounting not less often than
+  annually, so an annual accounting satisfies the minimum requirement. The options stating
+  quarterly, semi-annual, and monthly accounting describe more frequent intervals, which are
+  permissible but not required by the rule.
+citation:
+  source: Iowa Admin. Code r. 481-2013.1(4)(a)
+  url: null
+  quoted_text: The broker provides to the broker’s client a complete accounting of all moneys received
+    and disbursed from the trust account(s) not less often than annually.
+  secondary: []
+terms:
+  - accounting
+  - property management
+  - trust account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

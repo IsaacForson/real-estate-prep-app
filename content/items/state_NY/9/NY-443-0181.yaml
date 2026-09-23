@@ -1,0 +1,44 @@
+id: NY-443-0181
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "9"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "An owner of a two-family building lives in one unit and refuses to rent the other unit to a
+  prospective tenant because of the tenant's race. Under New York Human Rights Law, this refusal
+  is:"
+options:
+  - Lawful because the owner resides in one of the two units.
+  - Unlawful because race discrimination is prohibited in housing.
+  - Lawful only if the building contains more than two families.
+  - Unlawful unless the owner does not reside in the building.
+key: A
+explanation: The law exempts from all prohibitions in paragraph (a) the rental of a housing
+  accommodation in a building with no more than two families if the owner resides in one unit. Since
+  the owner lives in one unit of a two‑family building, the race‑based refusal is lawful. The
+  statement that race discrimination is prohibited in housing is incorrect because the exemption
+  permits race discrimination in this specific circumstance.
+citation:
+  source: N.Y. Exec. Law art. 15 — Executive Law Article 15 (Human Rights Law) excerpts — NY DOS 'Real
+    Estate License Law' booklet, March 2026 — § 296(5)(a)(1)
+  url: null
+  quoted_text: The provisions of this paragraph (a) shall not apply (1) to the rental of a housing
+    accommodation in a building which contains housing accommodations for not more than two families
+    living independently of each other, if the owner resides in one of such housing accommodations.
+  secondary: []
+terms:
+  - race
+  - owner-occupied
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

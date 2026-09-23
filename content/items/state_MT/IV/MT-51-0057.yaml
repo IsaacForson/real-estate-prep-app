@@ -1,0 +1,52 @@
+id: MT-51-0057
+jurisdiction: MT
+bank: state_MT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate brokerage seeks to purchase a professional liability insurance policy
+  directly from an insurer to cover all its affiliated licensees, bypassing the Board of Realty
+  Regulation. Under Montana law, is this permissible?
+options:
+  - No, unless the brokerage also purchases an individual policy for each licensee to supplement the
+    group coverage.
+  - Yes, provided the brokerage obtains written approval from the Board of Realty Regulation to act
+    as the policyholder.
+  - Yes, because a brokerage may purchase a group policy directly from any insurer licensed to write
+    professional liability insurance in Montana.
+  - No, because the group policy must be issued to the Board of Realty Regulation and must cover the
+    licensees as named insureds.
+key: D
+explanation: The correct option states that the group policy must be issued to the Board of Realty
+  Regulation and must cover the licensees as named insureds. This reflects Montana law, which
+  requires that a professional liability insurance policy be issued to the board and cover the group
+  of brokers and salespersons as named insureds (Mont. Code Ann. § 37-51-325(4)(a)). An option
+  suggesting the brokerage may purchase the policy directly, even with board approval, is incorrect
+  because the statute mandates issuance to the board, not the brokerage. An option claiming the
+  brokerage may buy a group policy from any insurer licensed in Montana is incorrect because it
+  omits the requirement that the policy be issued to the board. An option adding a condition that
+  each licensee also needs an individual policy is incorrect because the statute does not require
+  supplemental individual policies.
+citation:
+  source: Mont. Code Ann. § 37-51-325(4)(a)
+  url: null
+  quoted_text: A professional liability insurance policy must be issued to the board and must cover a
+    group of real estate brokers and salespersons licensed under Title 37, chapter 51, part 3, as
+    named insureds.
+  secondary: []
+terms:
+  - group policy
+  - named insured
+  - board
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,54 @@
+id: NY-443-0108
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed 68 hours of coursework, including 5 hours of Real Estate Finance.
+  How many more hours of any subject are needed to reach the 80‑hour total pre‑licensing
+  requirement?
+options:
+  - 15 hours
+  - 10 hours
+  - 20 hours
+  - 12 hours
+key: D
+explanation: Under 19 NYCRR §176.3, the salesperson pre‑licensing curriculum requires a total of 80
+  hours, with 5 hours allocated to Real Estate Finance. Having already completed 68 hours (which
+  includes the required 5 finance hours), the salesperson needs 80 − 68 = 12 additional hours of any
+  subject to meet the total. The 10‑hour option incorrectly assumes a total requirement of 78 hours,
+  perhaps by mistakenly subtracting the finance hours from the total before calculating the
+  remainder.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: |-
+    Total required hours = 80
+    Completed hours = 68
+    Hours needed = Total required - Completed
+    Hours needed = 80 - 68 = 12
+  formulas:
+    - Needed = Total required - Completed
+  onscreen_calculator_only: false
+terms:
+  - real estate finance
+  - pre-licensing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

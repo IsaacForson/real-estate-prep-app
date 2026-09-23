@@ -1,0 +1,46 @@
+id: NY-443-0174
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "10"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker represents a seller in a residential transaction and also receives a payment from the
+  buyer without the seller’s knowledge. Under 19 N.Y.C.R.R. § 175.7, is this permissible?
+options:
+  - Under 19 N.Y.C.R.R. § 175.7, the broker’s action is not permissible because the broker received
+    compensation from more than one party without the client’s knowledge and consent.
+  - Under 19 N.Y.C.R.R. § 175.7, the broker’s action is permissible because the broker disclosed the
+    compensation to both parties.
+  - Under 19 N.Y.C.R.R. § 175.7, the broker’s action is permissible because the total compensation
+    did not exceed the customary commission.
+  - Under 19 N.Y.C.R.R. § 175.7, the broker’s action is not permissible because the broker failed to
+    obtain a written agreement.
+key: A
+explanation: The rule forbids a broker from receiving compensation from more than one party unless
+  the broker’s client has full knowledge and consents. Since the seller (the client) lacked
+  knowledge and consent, the action is not permissible. The option stating that the broker’s action
+  is permissible because the broker disclosed the compensation to both parties is wrong because mere
+  disclosure does not satisfy the requirement of the client’s knowledge and consent.
+citation:
+  source: 19 N.Y.C.R.R. § 175.7
+  url: null
+  quoted_text: A real estate broker shall make it clear for which party he is acting and he shall not
+    receive compensation from more than one party except with the full knowledge and consent of the
+    broker’s client.
+  secondary: []
+terms:
+  - compensation
+  - consent
+  - knowledge
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

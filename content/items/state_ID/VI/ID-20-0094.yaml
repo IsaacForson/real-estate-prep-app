@@ -1,0 +1,53 @@
+id: ID-20-0094
+jurisdiction: ID
+bank: state_ID
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker licensed in Oregon holds an active designated broker‑equivalent license in that state
+  and wishes to list a property in Idaho. Under the Idaho Real Estate License Law, how is this
+  individual classified?
+options:
+  - The individual may act as a designated broker in Idaho without obtaining additional licensure.
+  - The individual must obtain an Idaho broker license before listing any property in Idaho.
+  - The individual is considered an out-of-state broker under Idaho Real Estate License Law.
+  - The individual is exempt from Idaho licensing requirements when holding an out-of-state license.
+key: C
+explanation: Idaho Code § 54-2004(33) defines an out-of-state broker as a person who holds the
+  equivalent of an active Idaho designated broker license in another jurisdiction and is not
+  licensed as a real estate broker under this chapter. Therefore, the broker described in the stem,
+  who holds an active designated broker‑equivalent license in Oregon and is not licensed in Idaho,
+  is classified as an out-of-state broker in Idaho. The option claiming that the individual may act
+  as a designated broker in Idaho without obtaining additional licensure is incorrect because Idaho
+  law requires a broker to be licensed in the state to perform designated broker activities. The
+  option stating that the individual must obtain an Idaho broker license before listing any property
+  in Idaho is incorrect because the question asks about classification under the definition; holding
+  an equivalent out‑of‑state license makes the person an out‑of‑state broker, not a person who needs
+  an Idaho license for that classification. The option asserting that the individual is exempt from
+  Idaho licensing requirements when holding an out‑of‑state license is incorrect because an
+  out‑of‑state broker is not exempt from Idaho licensing requirements when they wish to engage in
+  activities that require an Idaho broker license.
+citation:
+  source: Idaho Code § 54-2004(33)
+  url: null
+  quoted_text: Out-of-state broker means a person who holds the equivalent of an active Idaho
+    designated broker license in another jurisdiction who is not licensed as a real estate broker
+    under this chapter.
+  secondary: []
+terms:
+  - out-of-state broker
+  - designated broker
+  - jurisdiction
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,48 @@
+id: IA-543B-0179
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "11"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker licensed in Des Moines opens a second office in Cedar Rapids. According to Iowa Code
+  § 543B.31, what is required?
+options:
+  - The broker must obtain a duplicate license for the Cedar Rapids office and pay a fee determined
+    by the real estate commission.
+  - The broker must obtain a new original license for the Cedar Rapids office and surrender the Des
+    Moines license.
+  - The broker must close the Des Moines office before opening the Cedar Rapids office.
+  - The broker may operate the Cedar Rapids office under the same license without any additional
+    fees.
+key: A
+explanation: The statute requires a duplicate license for each additional place of business and a
+  fee set by the commission for each duplicate license. The option stating that a new original
+  license is required and the Des Moines license must be surrendered is incorrect because a
+  duplicate license suffices. The option requiring closure of the Des Moines office is unnecessary.
+  The option allowing operation under the same license without fees omits the required duplicate
+  license and fee.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.31
+  url: null
+  quoted_text: >-
+    If the real estate broker maintains more than one place of business within the state, a
+    duplicate license shall be issued to such broker for each branch office maintained.
+
+    A fee determined by the real estate commission shall be paid for each duplicate license.
+  secondary: []
+terms:
+  - broker
+  - branch office
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

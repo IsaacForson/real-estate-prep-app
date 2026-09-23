@@ -1,0 +1,49 @@
+id: NY-443-0114
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller provides a revised property condition disclosure statement to the buyer, but the
+  statement is lost in the mail and the buyer never receives it. Under § 465, is the seller liable
+  for the buyer's damages?
+options:
+  - The seller is liable for the buyer's actual damages if the failure to deliver was willful.
+  - The seller is not liable for the buyer's actual damages because the seller provided a revised
+    statement.
+  - The seller is not liable for the buyer's actual damages because the failure to deliver was not
+    willful.
+  - The seller is liable for the buyer's actual damages because the revised statement was not
+    delivered.
+key: C
+explanation: Under § 465, a seller is liable only for a willful failure to deliver a property
+  condition disclosure statement or a revised statement. Because the seller’s revised statement was
+  lost in the mail without intent, the failure was not willful, so no liability arises for the
+  buyer’s actual damages. The choice that says the seller is liable for actual damages if the
+  failure to deliver was willful is incorrect because it ignores the willfulness requirement and
+  treats any non‑delivery as a basis for liability.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    465
+  url: null
+  quoted_text: Any seller who provides a property condition disclosure statement or provides or fails
+    to provide a revised property condition disclosure statement shall be liable only for a willful
+    failure to perform the requirements of this article.
+  secondary: []
+terms:
+  - liability
+  - willful
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,47 @@
+id: NJ-1-0022
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person who has been a licensed New Jersey real estate salesperson for two years applies for
+  a broker license. Based on the statute, is the applicant eligible?
+options:
+  - No, unless the applicant passes an additional examination.
+  - Yes, because holding a salesperson license satisfies the broker requirement.
+  - Yes, if the applicant also holds a broker license from another state.
+  - No, because the applicant must have three years of experience as a salesperson.
+key: D
+explanation: The statute (N.J. Stat. Ann. tit. 45, ch. 15, § 15‑9(a)) requires that an applicant for
+  a broker license have been actively engaged as a licensed salesperson for three full years
+  immediately before filing the application. Because the applicant has only two years of experience,
+  the requirement is not satisfied, so the applicant is not eligible. The answer choice stating that
+  the applicant is ineligible unless an additional examination is passed is incorrect; the law does
+  not add an extra exam, it only mandates the three‑year experience requirement.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-9(a)
+  url: null
+  quoted_text: Every applicant for a license as a broker or broker-salesperson shall have first been
+    the holder of a New Jersey real estate salesperson's license and have been actively engaged on a
+    full-time basis in the real estate brokerage business in this State as a real estate salesperson
+    for three years immediately preceding the date of application
+  secondary: []
+terms:
+  - broker license
+  - experience
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,43 @@
+id: ND-23-0073
+jurisdiction: ND
+bank: state_ND
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A North Dakota broker who does not currently maintain a trust account receives an earnest
+  money deposit from a buyer. What must the broker do under N.D. Cent. Code § 43-23-14.1?
+options:
+  - Returning the earnest money to the buyer immediately
+  - Depositing the earnest money in an interest-bearing account
+  - Keeping the earnest money in the broker's personal account
+  - Placing the earnest money in a separate trust account
+key: D
+explanation: The statute requires a broker who receives trust funds but lacks a trust account to
+  open a designated trust account and deposit the funds. Simply keeping the money in a personal
+  account or returning it violates the rule. The account must be noninterest-bearing, so placing it
+  in an interest-bearing account is also incorrect.
+citation:
+  source: "### N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-14.1"
+  url: null
+  quoted_text: However, if a broker does not maintain a trust account and later receives trust funds
+    in a real estate brokerage transaction, the broker shall open a designated trust account as
+    required by this section and deposit any trust funds in accordance with rules adopted by the
+    commission.
+  secondary: []
+terms:
+  - trust account
+  - earnest money
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

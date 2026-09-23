@@ -1,0 +1,44 @@
+id: IA-543B-0090
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A continuing education course is scheduled from 8:00 a.m. to 5:00 p.m. with a one-hour lunch
+  break. Does the course comply with the maximum daily classroom hour limit for an approved school
+  under Iowa Admin. Code r. 481-2017?
+options:
+  - The course meets the maximum daily classroom hour limit without lunch.
+  - The course complies with the maximum daily classroom hour limit.
+  - The course exceeds the maximum daily classroom hour limit.
+  - The course violates the maximum daily classroom hour limit.
+key: B
+explanation: The rule states there is no more than eight classroom hours in any single day of
+  instruction. The course provides nine hours total minus a one-hour lunch, resulting in eight
+  classroom hours, which meets the limit. The distractor claiming the course meets the limit without
+  lunch is incorrect because omitting the lunch would leave nine classroom hours, exceeding the
+  eight‑hour maximum.
+citation:
+  source: Iowa Admin. Code r. 481-2017 — Iowa Administrative Code 481—Chapter 2017 — Approv Al Of
+    Schools, Courses And Instructors (Real Estate Commission) 481—2017.1(14)
+  url: null
+  quoted_text: Maximum hours of instruction. There is no more than eight classroom hours in any single
+    day of instruction.
+  secondary: []
+terms:
+  - classroom hour
+  - maximum
+  - continuing education
+  - compliance
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

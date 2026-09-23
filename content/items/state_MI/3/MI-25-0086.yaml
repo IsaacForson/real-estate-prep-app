@@ -1,0 +1,45 @@
+id: MI-25-0086
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker prepares a listing agreement that omits any mention of familial status. Under
+  Michigan's occupational code, what is the status of that agreement?
+options:
+  - The agreement remains void and unenforceable under the statute
+  - The agreement is enforceable but the broker faces discipline
+  - The agreement is enforceable unless the seller adds an addendum
+  - The agreement is automatically voided by law if the language is missing
+key: B
+explanation: MCL 339.2515(1) requires a listing agreement to contain language prohibiting
+  discrimination based on familial status and other protected classes. Omission does not void the
+  agreement but constitutes a violation that may subject the broker to disciplinary action.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2515"
+  url: null
+  quoted_text: A listing agreement entered into between the broker and seller or lessor of property
+    shall contain language that discrimination because of religion, race, color, national origin,
+    age, sex, disability, familial status, or marital status on the part of the real estate broker,
+    real estate salesperson, seller, or lessor is prohibited.
+  secondary: []
+terms:
+  - listing
+  - agreement
+  - discrimination
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

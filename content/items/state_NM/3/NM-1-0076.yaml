@@ -1,0 +1,47 @@
+id: NM-1-0076
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker wants to have one associate broker represent a buyer client exclusively
+  and another associate broker represent a seller client exclusively in the same transaction. Under
+  16.61.1.7 NMAC, is this permitted?
+options:
+  - It is not permitted because designated agent means the brokerage acts as facilitator for both
+    parties
+  - It is not permitted because a broker can only represent one party in any transaction
+  - It is permitted if the qualifying broker adopts a designated agency policy and discloses it to
+    the clients
+  - It is permitted only if the associate brokers are also qualifying brokers
+key: C
+explanation: "Under 16.61.1.7 NMAC, a qualifying broker may designate one associate broker to act as
+  the buyer's exclusive agent and another associate broker to act as the seller's exclusive agent in
+  the same transaction, provided the brokerage has a written designated agency policy and discloses
+  that policy to both clients. This allows each associate broker to represent a single party while
+  the brokerage facilitates the transaction. The other statements are incorrect: designated agency
+  does not turn the brokerage into a facilitator, a broker can represent more than one party when
+  using designated agency, and the associate brokers do not need to be qualifying brokers."
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition 16.61.1.7.S
+  url: null
+  quoted_text: or at such time that the qualifying broker of a brokerage determines the need to
+    designate one broker of the brokerage as agent of the buyer and another as agent of the seller
+    in the same transaction
+  secondary: []
+terms:
+  - designated agency
+  - designated agent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,39 @@
+id: VT-2211-0077
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate licensee is accused of failing to disclose a known structural defect to
+  a buyer. Under Vermont law, what is the first action the Vermont Real Estate Commission must take
+  regarding this allegation?
+options:
+  - Issue a cease-and-desist order for the violation
+  - Impose a monetary penalty on the licensee
+  - Investigate suspected unprofessional conduct
+  - Refer the case to the Attorney General
+key: C
+explanation: The Commission must investigate suspected unprofessional conduct per §2252(b)(3). The
+  distractor 'Refer the case to the Attorney General' describes a power the Commission may exercise
+  for unauthorized practice, not the required first step for unprofessional conduct.
+citation:
+  source: 26 V.S.A. § 2252(b)(3)
+  url: null
+  quoted_text: investigate suspected unprofessional conduct
+  secondary: []
+terms:
+  - unprofessional conduct
+  - disclosure
+  - commission
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

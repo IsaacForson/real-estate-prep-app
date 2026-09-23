@@ -1,0 +1,39 @@
+id: CA-4-0086
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: The Legislature decides to review the Bureau of Real Estate Appraisers' powers and duties in
+  2025. According to Cal. Bus. & Prof. Code § 11301(b), how must this review be performed?
+options:
+  - As if this part were scheduled to be repealed as of January 1, 2025
+  - As if this part were scheduled to be repealed as of January 1, 2035
+  - As if this part were scheduled to be repealed as of January 1, 2040
+  - As if this part were scheduled to be repealed as of January 1, 2030
+key: D
+explanation: The statute mandates that any review be conducted as if the part were scheduled to be
+  repealed on January 1, 2030, regardless of when the review occurs. Suggesting the review uses the
+  year 2025 mistakenly applies the effective date of the amendment instead of the prescribed repeal
+  date.
+citation:
+  source: Cal. Bus. & Prof. Code § 11301(b)
+  url: null
+  quoted_text: The review shall be performed as if this part were scheduled to be repealed as of
+    January 1, 2030.
+  secondary: []
+terms:
+  - review
+  - repeal date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

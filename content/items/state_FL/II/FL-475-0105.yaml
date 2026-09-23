@@ -1,0 +1,43 @@
+id: FL-475-0105
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a court appoints a receiver for a brokerage firm and the firm’s assets are insufficient to
+  cover the receiver’s expenses, what is the maximum amount that may be paid from the Real Estate
+  Recovery Fund for that receivership under Florida Statute 475.5017(2)?
+options:
+  - $100,000
+  - $150,000
+  - $50,000
+  - $75,000
+key: A
+explanation: The statute states that if the brokerage’s assets are insufficient to pay the
+  receiver’s expenses, the court may order disbursement from the Real Estate Recovery Fund, but such
+  disbursement may not exceed $100,000 per receivership. Therefore, the upper limit is $100,000. The
+  distractor “$75,000” understates the statutory cap.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) § 475.5017(2)
+  url: null
+  quoted_text: If the assets are not sufficient to pay all the expenses of the receiver, the court may
+    order disbursement from the Real Estate Recovery Fund, which may not exceed $100,000 per
+    receivership
+  secondary: []
+terms:
+  - receiver
+  - expenses
+  - fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

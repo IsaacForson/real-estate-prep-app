@@ -1,0 +1,49 @@
+id: NY-443-0235
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "14"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre-licensing course that includes 3 hours of Taxes and Assessments,
+  74 hours of other subjects, and 3 hours for the final examination. Does this course meet the state
+  licensing requirement?
+options:
+  - The course satisfies the Taxes and Assessments requirement only
+  - The course exceeds the licensing requirement
+  - The course meets the licensing requirement
+  - The course does not meet the licensing requirement
+key: C
+explanation: The course totals 3 + 74 + 3 = 80 hours, which matches the required 80 hours (77 hours
+  of instruction plus a 3‑hour final examination) set forth in 19 NYCRR § 176.3. The option stating
+  that the course exceeds the licensing requirement is incorrect because the total equals, not
+  exceeds, the required hours.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+terms:
+  - hours
+  - requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

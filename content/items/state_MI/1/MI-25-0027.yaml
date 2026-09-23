@@ -1,0 +1,39 @@
+id: MI-25-0027
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under MCL 339.502, within how many days must the department make a written acknowledgment of a
+  complaint after receipt?
+options:
+  - Within 5 days.
+  - Within 10 days.
+  - Within 15 days.
+  - Within 20 days.
+key: C
+explanation: The statute requires the department to send a written acknowledgment of a complaint
+  within 15 days after receipt. This timeline ensures complainants are promptly informed that their
+  allegation is being processed. The 10‑day option is too short, while the 20‑day option exceeds the
+  required period.
+citation:
+  source: Mich. Comp. Laws § 339.502
+  url: null
+  quoted_text: The department shall make a written acknowledgment of the complaint within 15 days
+    after receipt of the complaint to the person making the complaint.
+  secondary: []
+terms:
+  - acknowledgment
+  - complaint
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

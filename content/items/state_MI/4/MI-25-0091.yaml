@@ -1,0 +1,47 @@
+id: MI-25-0091
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Mich. Comp. Laws § 339.2517(11)(a), how is the term "affiliated licensees" defined?
+options:
+  - Individuals licensed as salespersons or associate brokers who are supervised by a managing broker
+  - Individuals licensed as salespersons or associate brokers who have passed the state exam within
+    the last year
+  - Individuals licensed as salespersons or associate brokers who work independently of any broker
+  - Individuals licensed as salespersons or associate brokers who are employed by the same broker
+key: D
+explanation: The definition of affiliated licensees is individuals licensed as salespersons or
+  associate brokers who are employed by the same broker. The option stating they are supervised by a
+  managing broker adds a supervision requirement that is not in the statute. The option stating they
+  have passed the state exam within the last year adds a recency condition that is not part of the
+  definition. The option stating they work independently of any broker contradicts the definition,
+  which requires employment by the same broker.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2517(11)(a)
+  url: null
+  quoted_text: '"Affiliated licensees" means individuals licensed as salespersons or associate brokers
+    who are employed by the same broker.'
+  secondary: []
+terms:
+  - affiliated licensee
+  - salesperson
+  - associate broker
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

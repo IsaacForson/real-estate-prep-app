@@ -1,0 +1,43 @@
+id: ID-20-0050
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An actively licensed Idaho real estate salesperson sells their own personal residence without
+  associating with a designated broker. Under Idaho Code § 54-2003, what is the licensee's
+  obligation regarding licensure requirements?
+options:
+  - The licensee is exempt from licensing requirements because the transaction involves their own
+    property
+  - The licensee must still comply with licensing requirements because active licensees cannot claim
+    exemptions
+  - The licensee needs only to obtain a limited broker license for personal sales
+  - The licensee may rely on the owner exemption if they disclose their license status to the buyer
+key: B
+explanation: Idaho Code § 54-2003(2) provides that an actively licensed salesperson must comply with
+  this chapter regardless of whether they otherwise qualify for any exceptions in subsection (1).
+  Therefore, the ownership exemption in subsection (1)(a) does not apply to an active licensee. That
+  claim is incorrect because it ignores the override provision for active licensees.
+citation:
+  source: Idaho Code § 54-2003(2)
+  url: null
+  quoted_text: An actively licensed real estate broker, associate broker or salesperson must comply
+    with this chapter, regardless of whether the licensee otherwise qualifies for any of the
+    exceptions of subsection (1) of this section.
+  secondary: []
+terms:
+  - active licensee
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

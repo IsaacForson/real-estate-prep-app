@@ -1,0 +1,46 @@
+id: MT-51-0038
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate agent lists a home for sale. The seller informs the agent that the basement has
+  never flooded, but the agent later learns from a neighbor that the basement flooded last year. The
+  agent does not disclose this to the buyer. Under Montana law, is the agent liable for
+  misrepresenting the basement condition?
+options:
+  - The agent is not liable because the misrepresentation was made by the principal
+  - The agent is not liable because the agent lacked actual knowledge of the misrepresentation
+  - The agent is liable because the agent should have investigated the basement condition
+  - The agent is liable because the agent repeated the seller's statement
+key: B
+explanation: Under Mont. Code Ann. § 37-51-315(3), an agent is not liable for a misrepresentation
+  made by the principal unless the agent has actual knowledge of the misrepresentation. Here, the
+  agent lacked actual knowledge at the time of the representation, so the agent is not liable. The
+  claim that the agent is not liable because the misrepresentation was made by the principal is
+  incorrect because merely repeating the principal's statement does not create liability without
+  knowledge.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-315(3)
+  url: null
+  quoted_text: An agent is not liable for a misrepresentation made by the principal unless the agent
+    has actual knowledge of the misrepresentation.
+  secondary: []
+terms:
+  - agent
+  - misrepresentation
+  - knowledge
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

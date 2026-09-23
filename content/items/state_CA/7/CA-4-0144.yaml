@@ -1,0 +1,41 @@
+id: CA-4-0144
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Cal. Civ. Code §1556, which of the following individuals is **NOT** capable of entering
+  into a contract?
+options:
+  - A licensed real estate broker in California
+  - A 20‑year‑old college student enrolled full‑time
+  - A person declared mentally incompetent by a court
+  - A homeowner who owns property outright
+key: C
+explanation: The statute states that all persons are capable of contracting except minors, persons
+  of unsound mind, and persons deprived of civil rights. A person declared mentally incompetent
+  falls under the exception for persons of unsound mind, thus lacks capacity. The other options
+  describe individuals who are not subject to any of the listed exceptions and therefore retain
+  capacity.
+citation:
+  source: Cal. Civ. Code § 1556
+  url: null
+  quoted_text: All persons are capable of contracting, except minors, persons of unsound mind, and
+    persons deprived of civil rights.
+  secondary: []
+terms:
+  - contract
+  - capacity
+  - minor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

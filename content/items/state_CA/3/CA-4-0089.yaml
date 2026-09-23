@@ -1,0 +1,41 @@
+id: CA-4-0089
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A licensee informs an appraiser that the appraisal fee will be withheld unless the
+  appraiser's final valuation matches the loan amount required by the lender. This conduct is:"
+options:
+  - Being allowed when disclosed to borrower
+  - Being permissible under the rule
+  - Being required by the rule
+  - Being considered improper influence
+key: D
+explanation: Withholding an appraisal fee unless the appraiser's value matches the loan amount ties
+  payment to a specific valuation, which Cal. Code Regs. tit. 10, § 2785(a)(4) defines as improper
+  influence. Therefore the conduct is considered improper influence. It is not allowed even if
+  disclosed to the borrower, it is not permissible under the rule, and the rule does not require
+  such conditioning.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2785(a)(4)
+  url: null
+  quoted_text: (4) conditioning the ordering of an appraisal report or the payment of an appraisal fee
+    or salary or bonus on the opinion, conclusion, or valuation to be reached, or on a preliminary
+    value estimate requested from an appraiser;
+  secondary: []
+terms:
+  - conditioning
+  - payment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

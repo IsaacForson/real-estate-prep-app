@@ -1,0 +1,56 @@
+id: FL-475-0110
+jurisdiction: FL
+bank: state_FL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A developer who regularly builds and sells residential homes to the public employs licensed
+  sales associates on a commission-only basis to show properties and negotiate sales. According to
+  Florida Statute 475.011(2), is the developer exempt from licensing requirements for these sales?
+options:
+  - The developer is exempt from licensing requirements because they own the property and are not
+    acting as a broker.
+  - The developer is not exempt from licensing requirements because they employ agents paid
+    commission strictly on a transactional basis to make sales to the public.
+  - The developer is exempt from licensing requirements because the hired sales associates hold
+    active real estate licenses.
+  - The developer is not exempt from licensing requirements because they engage in the regular
+    business of selling real property to the public.
+key: B
+explanation: The developer is not exempt because employing sales associates who are paid strictly on
+  a transactional basis to sell to the public removes the owner‑seller exemption under 475.011(2).
+  The exemption for an owner selling their own property does not apply when such agents are used.
+  Therefore, the statement that the developer is exempt because they own the property is incorrect.
+  The claim that the developer is exempt because the hired associates are licensed is also
+  incorrect; licensing of the associates does not restore the exemption. Finally, the assertion that
+  the developer is not exempt because they engage in the regular business of selling real property
+  to the public misstates the rule; the regular business activity is relevant only insofar as it
+  triggers the exception when transaction‑based agents are employed.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.011(2)
+  url: null
+  quoted_text: this exemption shall not be available if and to the extent that an agent, employee, or
+    independent contractor paid a commission or other compensation strictly on a transactional basis
+    is employed to make sales, exchanges, or leases to or with customers in the ordinary course of
+    an owner’s business of selling, exchanging, or leasing real property to the public.
+  secondary: []
+terms:
+  - developer
+  - exemption
+  - agent
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

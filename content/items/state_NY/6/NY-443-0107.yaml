@@ -1,0 +1,49 @@
+id: NY-443-0107
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker is preparing a salesperson pre‑licensing syllabus and has already allocated 2 hours
+  to the Land Use Regulations topic. To comply with NY DOS regulations, what is the minimum number
+  of additional hours the broker must add to the Land Use Regulations segment?
+options:
+  - Add 1 hour of land use regulation study
+  - Add 2 hours of land use regulation study
+  - Add 3 hours of land use regulation study
+  - Add 4 hours of land use regulation study
+key: A
+explanation: The regulation mandates three hours of instruction for Land Use Regulations. With two
+  hours already scheduled, only one additional hour is needed to reach the minimum. Adding two hours
+  would exceed the requirement and is not the minimum necessary.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(a)
+  url: null
+  quoted_text: Land Use Regulations    3
+  secondary: []
+math:
+  worked_solution: |-
+    Required hours = 3 (from regulation)
+    Allocated hours = 2 (from stem)
+    Additional hours needed = Required - Allocated = 3 - 2 = 1
+  formulas:
+    - Additional hours = Required hours - Allocated hours
+  onscreen_calculator_only: false
+terms:
+  - land
+  - use
+  - regulation
+  - hour
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

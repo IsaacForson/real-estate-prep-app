@@ -1,0 +1,39 @@
+id: NY-443-0046
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age requirement for a person to be eligible for a real estate salesperson
+  license in New York State?
+options:
+  - Over 18 years of age
+  - Over 21 years of age
+  - Under 18 years of age
+  - Exactly 18 years of age
+key: A
+explanation: The statute explicitly states that a salesperson license requires the applicant to be
+  over eighteen years of age, making 'Over 18 years of age' the correct minimum. The distractor '18
+  years of age' is insufficient because the law requires being over, not exactly, eighteen.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 440-a
+  url: null
+  quoted_text: No person shall be entitled to a license as a real estate salesperson under this
+    article unless they are over the age of eighteen years.
+  secondary: []
+terms:
+  - age
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

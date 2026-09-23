@@ -1,0 +1,43 @@
+id: VT-2211-0081
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer gives a broker an earnest money deposit that is expected to earn substantial interest
+  and asks that the funds be placed in an interest‑bearing account. What must the broker do with the
+  deposit?
+options:
+  - Place the deposit in a non-interest-bearing escrow account at the bank
+  - Place the deposit in the broker's personal checking account
+  - Place the deposit in a pooled interest-bearing trust or escrow account
+  - Place the deposit in an individual interest-bearing trust or escrow account
+key: D
+explanation: According to §2214(b), when a deposit is reasonably expected to earn a substantial
+  amount of interest and the depositor requests it, the broker must place the funds in an individual
+  interest‑bearing trust or escrow account for the benefit of the beneficial owner. Therefore, the
+  correct action is to place the deposit in such an account. The distractor proposing a pooled
+  account is wrong because the pooled account is used only when the deposit is not expected to earn
+  substantial interest or when no request is made.
+citation:
+  source: "### 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2214(b)"
+  url: null
+  quoted_text: If a deposit is reasonably expected to earn a substantial amount of interest, the
+    broker shall, at the request of the person or persons making the deposit, place the deposit in
+    an individual interest-bearing trust or escrow account for the benefit of the beneficial owner.
+  secondary: []
+terms:
+  - earnest money
+  - interest-bearing account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

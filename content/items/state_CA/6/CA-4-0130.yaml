@@ -1,0 +1,40 @@
+id: CA-4-0130
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker closes a residential purchase transaction on March 10, 2023. Under Cal. Bus. & Prof.
+  Code § 10148(a), when may the broker dispose of the related trust records?
+options:
+  - Three years after the closing date
+  - Six months after the closing date
+  - Immediately after the closing date
+  - One year after the closing date
+key: A
+explanation: Under § 10148(a), the retention period for trust records begins at the closing date (or
+  listing date if no closing) and lasts three years. Therefore, records from a March 10, 2023
+  closing may be disposed of three years later, on March 10, 2026. A one‑year retention period is
+  insufficient because the rule explicitly sets a three‑year limit.
+citation:
+  source: Cal. Bus. & Prof. Code § 10148(a)
+  url: null
+  quoted_text: The retention period shall run from the date of the closing of the transaction or from
+    the date of the listing if the transaction is not consummated.
+  secondary: []
+terms:
+  - retention
+  - closing
+  - trust records
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

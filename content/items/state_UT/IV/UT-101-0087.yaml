@@ -1,0 +1,41 @@
+id: UT-101-0087
+jurisdiction: UT
+bank: state_UT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual who is not a real estate licensee holds a duly executed power of attorney from a
+  property owner to sell the owner's vacant lot. The individual performs the sale as an isolated
+  transaction. Under Utah Code Ann. § 61-2f-202(2)(a), is a real estate license required?
+options:
+  - Yes, because the power of attorney must be solicited to be exempt.
+  - Yes, because any sale of real estate requires a license.
+  - No, because the transaction is isolated and conducted under a power of attorney.
+  - No, because the individual must be a licensed attorney.
+key: C
+explanation: The statute explicitly exempts isolated transactions performed by someone holding an
+  unsolicited, duly executed power of attorney from a property owner. Distractor A overlooks this
+  exemption, and distractor C incorrectly adds a solicitation requirement that the statute does not
+  impose.
+citation:
+  source: Utah Code Ann. § 61-2f-202(2)(a)
+  url: null
+  quoted_text: (a) an isolated transaction or service by an individual holding an unsolicited, duly
+    executed power of attorney from a property owner
+  secondary: []
+terms:
+  - power of attorney
+  - isolated transaction
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,41 @@
+id: NY-443-0247
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "14"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson's pre‑licensing course includes 4 hours of Taxes and Assessments instruction.
+  Based on 19 NYCRR §176.3(a), does this satisfy the state requirement for that subject?
+options:
+  - Yes, it meets the exact requirement.
+  - No, it exceeds the requirement.
+  - Yes, it exceeds the minimum requirement.
+  - No, it falls short of the requirement.
+key: B
+explanation: The rule requires exactly three hours for Taxes and Assessments; providing four hours
+  exceeds that requirement and therefore does not satisfy the mandated syllabus. The distractor
+  claiming that exceeding the minimum requirement is sufficient is wrong because the syllabus
+  demands the precise hour allocation.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(a)
+  url: null
+  quoted_text: Taxes and Assessments    3
+  secondary: []
+terms:
+  - taxes
+  - assessments
+  - requirement
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

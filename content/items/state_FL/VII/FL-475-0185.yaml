@@ -1,0 +1,41 @@
+id: FL-475-0185
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate’s license has been voluntarily inactive for 18 months. What is the maximum
+  number of continuing education hours the Florida Real Estate Commission may require for renewal of
+  the license?
+options:
+  - 12 hours
+  - 30 hours
+  - 18 hours
+  - 24 hours
+key: C
+explanation: The rule limits continuing education for a voluntarily inactive license to no more than
+  12 classroom hours for each year of inactivity. Eighteen months equals 1.5 years, so the maximum
+  is 1.5 × 12 = 18 hours. The distractor of 12 hours would only apply if the license were inactive
+  for exactly one year, ignoring the additional six months.
+citation:
+  source: Fla. Stat. § 475.183(1)
+  url: null
+  quoted_text: not to exceed 12 classroom hours for each year the license was inactive
+  secondary: []
+terms:
+  - continuing education
+  - hours
+  - license
+  - inactive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

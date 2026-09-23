@@ -1,0 +1,46 @@
+id: CT-311-0067
+jurisdiction: CT
+bank: state_CT
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate brokerage organized as an LLC names one of its brokers to oversee supervision
+  and overall operation of the LLC's real estate activities in Connecticut. Under the chapter 392
+  definitions, what is that broker called?
+options:
+  - The broker is considered an associate broker
+  - The broker is designated as the designated broker
+  - The broker is considered a leasing agent
+  - The broker is considered a custodial broker
+key: B
+explanation: Conn. Gen. Stat. ch. 392, § 20-311(11) defines a designated broker as the individual
+  broker named by a real estate broker business entity to supervise and oversee its real estate
+  business in the state. This matches the scenario where a broker is appointed to oversee
+  supervision and overall operation of the LLC's real estate activities. An associate broker must be
+  affiliated with a supervising licensee and act on its behalf, which is not described here. A
+  leasing agent deals with leasing activities, and a custodial broker is not a defined term in this
+  chapter.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311(11)
+  url: null
+  quoted_text: “Designated broker” means the individual real estate broker whom a real estate broker
+    business entity names as the individual broker responsible for the supervision and overall
+    operation of such business entity's engagement in the real estate business in this state;
+  secondary: []
+terms:
+  - designated broker
+  - business entity
+  - supervision
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

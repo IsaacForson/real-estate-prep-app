@@ -1,0 +1,45 @@
+id: FL-475-0129
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual holds a bachelor's degree in business administration but does not hold a broker
+  license and has not passed an instructor examination. Under Florida Statutes, can this individual
+  serve as a school permitholder for a proprietary real estate school?
+options:
+  - The individual may serve as a school permitholder after completing 7 classroom hours of
+    instruction in real estate subjects.
+  - The individual may serve as a school permitholder by teaching only non‑credit courses at a
+    career center.
+  - The individual may serve as a school permitholder only if they obtain a broker license or pass
+    an instructor examination.
+  - The individual may serve as a school permitholder if they have extensive real estate experience
+    as defined by rule.
+key: C
+explanation: The statute specifies that a school permitholder must be a holder of a broker license
+  (active or voluntarily inactive) or must have passed an instructor’s examination approved by the
+  commission. Holding a bachelor’s degree alone does not satisfy this requirement. Therefore, the
+  individual must obtain a broker license or pass the instructor exam to serve as a permitholder.
+citation:
+  source: Fla. Stat. § 475.451(2)(a)
+  url: null
+  quoted_text: A school permitholder must be the holder of a license as a broker, either active or
+    voluntarily inactive, or must have passed an instructor’s examination approved by the
+    commission.
+  secondary: []
+terms:
+  - school permitholder
+  - broker license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

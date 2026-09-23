@@ -1,0 +1,42 @@
+id: IA-543B-0199
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "12"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a property management agreement is terminated, under Iowa Admin. Code r. 481-2015.1(5)(c),
+  within how many days must the property manager provide the owner with any unobligated funds due
+  the owner?
+options:
+  - Within 60 days after the effective date of termination
+  - Within 15 days after the effective date of termination
+  - Within 90 days after the effective date of termination
+  - Within 30 days after the effective date of termination
+key: D
+explanation: Rule 481-2015.1(5)(c) requires the property manager to provide the owner with any
+  unobligated funds due the owner not later than 30 days after the effective date of the
+  termination. The distractor of 60 days applies to the final accounting of obligated funds, not to
+  unobligated funds.
+citation:
+  source: Iowa Admin. Code r. 481-2015 — Iowa Administrative Code 481—Chapter 2015 — Property
+    Management (Real Estate Commission) 481-2015.1(5)(c)
+  url: null
+  quoted_text: Provides the owner, not later than 30 days after the effective date of the termination,
+    with any unobligated funds due the owner under the agreement
+  secondary: []
+terms:
+  - property management
+  - termination
+  - funds
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

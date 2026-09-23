@@ -1,0 +1,41 @@
+id: NY-443-0176
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to 19 NYCRR §176.3, what is the total number of hours of instruction (excluding the
+  final examination) required for a real estate salesperson prelicensing course?
+options:
+  - The total instruction hours required are 77 hours.
+  - The total instruction hours required are 70 hours.
+  - The total instruction hours required are 75 hours.
+  - The total instruction hours required are 80 hours.
+key: A
+explanation: The syllabus lists 77 hours of instruction and 3 hours for the final examination,
+  totaling 80 hours. Therefore, the required instructional hours excluding the final exam are 77
+  hours. The distractor stating 80 hours incorrectly includes the final examination.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+terms:
+  - hours
+  - instruction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,49 @@
+id: NJ-1-0050
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker who already has a main office in Newark opens a second office in Trenton and places a
+  licensed broker-salesperson in charge. What must the broker do to operate the Trenton office
+  legally under N.J. Stat. Ann. § 45:15-12?
+options:
+  - Ensure the Trenton office is open only by appointment
+  - Display the broker's license certificate only at the main office
+  - Register the Trenton office as a referral company
+  - Obtain a branch office license and pay a $50 fee
+key: D
+explanation: The law requires a branch office license for each additional place of business, issued
+  upon payment of a $50 fee, provided the branch is under the direct supervision of a
+  broker-salesperson. Thus the broker must obtain a branch office license and pay the fee. The
+  option stating that the broker need only display the license at the main office is incorrect
+  because referral companies are governed by a different provision and do not replace the branch
+  office licensing requirement.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-12
+  url: null
+  quoted_text: In case a real estate broker maintains more than one place of business, a branch office
+    license shall be issued to such broker for each branch office so maintained in this State;
+    provided, however, that the said branch office or offices are under the direct supervision of a
+    broker-salesperson. The branch office license or licenses shall be issued upon the payment of a
+    fee of $50 for each license so issued.
+  secondary: []
+terms:
+  - branch
+  - office
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

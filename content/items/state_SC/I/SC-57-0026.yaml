@@ -1,0 +1,40 @@
+id: SC-57-0026
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for renewal of a South Carolina real estate broker license must undergo a state
+  fingerprint-based criminal records check. Who is responsible for paying the cost of this check
+  according to S.C. Code Ann. § 40-57-115?
+options:
+  - The cost is borne by the State Law Enforcement Division
+  - The cost is borne by the real estate commission
+  - The cost is borne by the applicant per state statute
+  - The cost is borne by the broker-in-charge per rule
+key: C
+explanation: The statute requires that costs of conducting a criminal records check be borne by the
+  applicant. Therefore, the applicant must pay for the fingerprint-based check. Assigning the cost
+  to the State Law Enforcement Division, the commission, or the broker‑in‑charge contradicts the
+  explicit allocation of responsibility to the applicant.
+citation:
+  source: S.C. Code Ann. § 40-57-115
+  url: null
+  quoted_text: Costs of conducting a criminal records check must be borne by the applicant.
+  secondary: []
+terms:
+  - background
+  - check
+  - cost
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

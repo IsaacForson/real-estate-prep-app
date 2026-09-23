@@ -1,0 +1,40 @@
+id: IA-543B-0186
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "12"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under Iowa Admin. Code r. 481-2013, a trust account maintained solely for property management
+  and rental funds:"
+options:
+  - The account must be interest-bearing.
+  - The account is not required to be interest-bearing.
+  - The account must be maintained separately from earnest money.
+  - The account must be non-interest-bearing.
+key: B
+explanation: The rule states that a separately maintained property management trust account does not
+  need to be interest‑bearing. Therefore the correct answer is that the account is not required to
+  be interest‑bearing. The other options incorrectly require the account to be interest‑bearing,
+  require it to be non‑interest‑bearing, or add a separation requirement that is not mandated for
+  property management accounts.
+citation:
+  source: Iowa Admin. Code r. 481-2013.1(4)
+  url: null
+  quoted_text: If separately maintained, this account does not need to be an interest-bearing account.
+  secondary: []
+terms:
+  - trust account
+  - property management
+  - interest-bearing
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

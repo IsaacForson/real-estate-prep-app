@@ -1,0 +1,43 @@
+id: NJ-1-0066
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-4
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker refuses to hire a salesperson because the applicant is homosexual.
+  According to the New Jersey Law Against Discrimination, is this action lawful?
+options:
+  - A. Lawful, because sexual orientation is not a protected class under the law.
+  - B. Unlawful, because affectional or sexual orientation is a protected class under the law.
+  - C. Lawful, if the broker can prove the applicant lacks required experience.
+  - D. Unlawful only if the broker also makes disparaging remarks about the applicant's religion.
+key: B
+explanation: The Law Against Discrimination lists affectional or sexual orientation as a protected
+  characteristic, so refusing to hire someone because of homosexuality is an unlawful employment
+  practice. The claim that sexual orientation is not a protected class is incorrect. The suggestions
+  that the action could be lawful based on the applicant's experience or only unlawful if the broker
+  also makes disparaging remarks about religion introduce irrelevant conditions that do not change
+  the unlawful nature of the discrimination.
+citation:
+  source: "### N.J. Stat. Ann. tit. 10, ch. 5 — New Jersey Statutes Title 10, Chapter 5 — Law Against
+    Discrimination (N.J.S.A. 10:5-1 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 — § 5-12"
+  url: null
+  quoted_text: affectional or sexual orientation
+  secondary: []
+terms:
+  - sexual orientation
+  - law against discrimination
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

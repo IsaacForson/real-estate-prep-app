@@ -1,0 +1,43 @@
+id: DC-198-0071
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On March 10, a broker terminates the employment of a salesperson. The broker mails the
+  required notification to the former employee on March 26. Is the broker's action compliant with
+  D.C. Code § 47-2853.186(b)?
+options:
+  - No, because the broker did not also notify the Mayor of the mailing.
+  - Yes, because the broker also sent a copy of the notice to the Mayor.
+  - No, because the notification was mailed after the required fifteen‑day period.
+  - Yes, because the notification was mailed within the required fifteen‑day period.
+key: C
+explanation: The rule requires the broker to mail notification within 15 calendar days of the
+  salesperson’s discharge or termination. Mailing on March 26 is 16 days after March 10, which
+  misses the deadline, so the action is not compliant. The distractor claiming compliance assumes
+  the notification was mailed within the required period, but the dates show it was late.
+citation:
+  source: D.C. Code §§ 47-2853.141 to 47-2853.199 — D.C. Code Title 47, Ch. 28, Subch. I-B, Parts K-P
+    - Property Managers, Real Estate Brokers, Salespersons; Special Rules; Duties — § 47-2853.186
+  url: null
+  quoted_text: (b) When a real estate salesperson is discharged or terminates his or her employment
+    with a licensee, the licensee, within
+  secondary: []
+terms:
+  - licensee
+  - salesperson
+  - broker
+  - notification
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

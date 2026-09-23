@@ -1,0 +1,40 @@
+id: WY-101-0053
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wyoming law, when a licensee works with a tenant in a rental transaction and there is no
+  written agreement to the contrary, how is the licensee deemed to be working with the tenant?
+options:
+  - As the tenant's sales agent.
+  - As the tenant's customer.
+  - As the tenant's intermediary.
+  - As the tenant's principal.
+key: B
+explanation: The statute expressly states that a tenant is a customer unless the parties agree
+  otherwise in writing. Therefore, absent such an agreement, the licensee is deemed to be working
+  with the tenant as a customer. The distractor calling the tenant an agent is incorrect because no
+  agency relationship arises without a written agreement.
+citation:
+  source: "### Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real
+    Estate License Act (Articles 1-4) — § 33-28-311"
+  url: null
+  quoted_text: The tenant who is a customer unless otherwise provided for in writing between the parties.
+  secondary: []
+terms:
+  - tenant
+  - customer
+  - written agreement
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

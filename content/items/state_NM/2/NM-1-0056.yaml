@@ -1,0 +1,39 @@
+id: NM-1-0056
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following individuals meets the definition of a 'Broker' under New Mexico rule?
+options:
+  - A person holding a current New Mexico associate broker license
+  - A person holding an inactive New Mexico real estate license
+  - A person holding only a real estate license from another state
+  - A person who completed prelicensing but has not passed the state exam
+key: A
+explanation: Under New Mexico rule, a broker is any person holding a current New Mexico associate
+  broker's or qualifying broker's real estate license. Therefore, a person holding a current New
+  Mexico associate broker license satisfies this definition. A person with an inactive license does
+  not hold a current license, and a person who only completed prelicensing or holds only an
+  out‑of‑state license lacks the required current New Mexico license.
+citation:
+  source: "### 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61)
+    — NMREC License Law and Rules book, 2021 web edition 16.61.1.7"
+  url: null
+  quoted_text: "Broker: any person holding a current New Mexico associate broker's or qualifying
+    broker's real estate license."
+  secondary: []
+terms:
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

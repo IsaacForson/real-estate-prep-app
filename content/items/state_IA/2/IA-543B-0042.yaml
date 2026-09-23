@@ -1,0 +1,39 @@
+id: IA-543B-0042
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson submits a transfer application to move to a new broker. Both the releasing and
+  new brokers approve the request within 48 hours, and the commission approves and issues the
+  transfer on June 10. What is the effective date of the transfer?
+options:
+  - The effective date is the date the new affiliating broker approves the transfer.
+  - The effective date is the date the releasing broker approves the transfer.
+  - The effective date is the date the salesperson submits the transfer application.
+  - The effective date is the date of approval and issuance from the commission.
+key: D
+explanation: Iowa Admin. Code r. 481-2006 § 2006.2(2) states that the effective date of a transfer
+  is the date of approval and issuance from the commission. The submission date is not effective
+  because the transfer is not complete until the commission acts.
+citation:
+  source: Iowa Admin. Code r. 481-2006 — Iowa Administrative Code 481—Chapter 2006 — Termination And
+    Transfer (Real Estate Commission) 2006.2(2)
+  url: null
+  quoted_text: The effective date of the transfer is the date of approval and issuance from the commission.
+  secondary: []
+terms:
+  - transfer
+  - effective date
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

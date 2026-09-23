@@ -1,0 +1,49 @@
+id: UT-101-0141
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property owner files an action to recover land from a neighbor who has openly occupied the
+  land for six years without the owner's permission. The owner has a deed and occasionally visits
+  the property. Under Utah law, what is the effect of the neighbor's six-year occupancy on the
+  presumption that the owner has been in possession?
+options:
+  - The neighbor must also pay property taxes for the six years to rebut the presumption.
+  - The neighbor’s six-year occupancy is sufficient to rebut the presumption, so the neighbor
+    prevails.
+  - The owner’s occasional visits reset the adverse possession clock, requiring a new seven-year
+    period.
+  - The neighbor’s six-year occupancy is insufficient to rebut the presumption, so the owner
+    prevails.
+key: D
+explanation: Under Utah Code § 78B-2-208(2), the presumption that the legal title holder has been in
+  possession can be rebutted only by showing adverse possession for at least seven years before the
+  action is filed. Because the neighbor’s occupancy lasted only six years, the statutory period is
+  not satisfied, so the presumption stands and the owner prevails. The distractor claiming six years
+  is sufficient ignores the seven‑year requirement.
+citation:
+  source: Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-208(2)
+  url: null
+  quoted_text: Subsection (1) may be rebutted by a showing that the property has been held and
+    possessed adversely to the legal title for at least seven years before commencement of the
+    action.
+  secondary: []
+terms:
+  - adverse possession
+  - presumption
+  - rebuttal
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

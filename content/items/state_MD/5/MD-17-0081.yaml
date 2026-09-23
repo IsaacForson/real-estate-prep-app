@@ -1,0 +1,45 @@
+id: MD-17-0081
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to COMAR 09.11.06(E), what information must be included in the advertising material
+  for a specific approved real estate continuing education course?
+options:
+  - The advertisement must include the title, topic, name of the approved course provider,
+    Commission approval number, number of approved hours, and the course provider’s refund policy.
+  - The advertisement must include the title, topic, name of the approved course provider,
+    Commission approval number, and number of approved hours.
+  - The advertisement must include the title, topic, name of the approved course provider,
+    Commission approval number, number of approved hours, cost of the course, and the instructor’s
+    name.
+  - The advertisement must include the title, topic, name of the approved course provider,
+    Commission approval number, number of approved hours, and cost of the course.
+key: D
+explanation: The rule explicitly requires the advertisement to contain the title, topic, provider
+  name, approval number, hours, and cost. Omitting the cost, as in the option that does not include
+  the cost, fails to meet this requirement.
+citation:
+  source: COMAR 09.11.01–09.11.09 § 09.11.06(E)
+  url: null
+  quoted_text: The advertising material for a specific course shall include the title, topic, name of
+    approved course provider, Commission approval number, number of approved hours, and cost of the
+    course.
+  secondary: []
+terms:
+  - advertising
+  - course
+  - approval
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

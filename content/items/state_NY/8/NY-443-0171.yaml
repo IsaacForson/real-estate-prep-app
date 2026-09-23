@@ -1,0 +1,65 @@
+id: NY-443-0171
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed 2 hours of Valuation Process and Pricing Properties and 70 hours
+  of other instruction. How many additional hours of Valuation Process and Pricing Properties must
+  they complete to satisfy both the subject requirement and the 80‑hour total?
+options:
+  - 3 hour
+  - 5 hour
+  - 1 hour
+  - 8 hour
+key: D
+explanation: The salesperson needs 8 more hours to reach the 80‑hour total (80 − (70+2) = 8) and
+  only 1 more hour to meet the 3‑hour valuation requirement (3 − 2 = 1). To satisfy both, they must
+  complete the larger deficit, which is 8 hours of valuation instruction. The distractor 1 hour only
+  meets the valuation requirement but leaves the total short.
+citation:
+  source: "### 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real
+    estate regulations — NY DOS booklet, March 2026 — § 176.3"
+  url: null
+  quoted_text: |-
+    Valuation Process and Pricing Properties   3
+    Human Rights and Fair Housing   6
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+    License Safety      1
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: |-
+    total deficit = 80 − (70 + 2) = 8
+    valuation deficit = 3 − 2 = 1
+    max(8, 1) = 8 hour
+  formulas:
+    - total deficit = total required − (other hours + completed valuation hours)
+    - valuation deficit = required valuation hours − completed valuation hours
+    - additional valuation hours = max(total deficit, valuation deficit)
+  onscreen_calculator_only: false
+terms:
+  - valuation
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

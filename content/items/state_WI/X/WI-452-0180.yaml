@@ -1,0 +1,43 @@
+id: WI-452-0180
+jurisdiction: WI
+bank: state_WI
+blueprint_node: X
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a tenant vacates the premises on the termination date of the rental agreement, within how
+  many days must the landlord return the security deposit (less any lawful withholdings) under Wis.
+  Admin. Code ch. ATCP 134?
+options:
+  - 7 days
+  - 14 days
+  - 21 days
+  - 30 days
+key: C
+explanation: Under Wis. Admin. Code ch. ATCP 134.06(2)(a), the landlord must return the security
+  deposit within 21 days after the termination date when the tenant vacates on that date. The 14‑day
+  period is shorter than required, so it is incorrect.
+citation:
+  source: Wis. Admin. Code ch. ATCP 134 (Residential Rental Practices) — Wisconsin Administrative Code
+    chapter ATCP 134 — Residential Rental Practices, official Wisconsin Legislature PDF read via
+    Internet Archive capture of 2026-05-24 — § 134.06(2)(a)
+  url: null
+  quoted_text: "A landlord shall deliver or mail to a tenant the full amount of any security deposit
+    paid by the tenant, less any amounts that may be withheld under sub. (3), within 21 days after
+    any of the following: (a) If the tenant vacates the premises on the termination date of the
+    rental agreement, the date on which the rental agreement terminates."
+  secondary: []
+terms:
+  - security deposit
+  - return
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

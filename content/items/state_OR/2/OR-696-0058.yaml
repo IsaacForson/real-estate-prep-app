@@ -1,0 +1,53 @@
+id: OR-696-0058
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An authorized principal broker receives a credit card payment of $1,200 from a buyer, with a
+  3% merchant discount and processing fee charged to the broker. The broker does not have a written
+  agreement with the card user authorizing a reduction of the payment amount. According to OAR
+  863-015-0257(5)(a), what amount must the broker maintain, use, and refund as necessary?
+options:
+  - $1,164.00
+  - $1,100.00
+  - $1,200.00
+  - $1,236.00
+key: C
+explanation: The rule requires that the face amount of a credit card payment, without reducing it by
+  any merchant's discount or processing fee, be maintained, used, and refunded as necessary unless a
+  separate written agreement authorizes the reduction. Since no such agreement exists, the broker
+  must keep the full $1,200.00. The distractor of $1,164.00 incorrectly subtracts the 3% fee, which
+  is only permissible with a written agreement.
+citation:
+  source: "### Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) — § 863-015-0257(5)(a)"
+  url: null
+  quoted_text: The face amount of the credit card payment, without reducing the face amount by any
+    merchant's discount and processing fee charged to the principal broker, is the amount he or she
+    must maintain, use, and refund as necessary;
+  secondary: []
+math:
+  worked_solution: Face amount = $1,200. Merchant fee = 3% of $1,200 = $0.03 × 1,200 = $36.00. Amount
+    to maintain = face amount − fee only if written agreement exists. No written agreement → amount
+    = face amount = $1,200.00.
+  formulas:
+    - "Amount = Face amount − (Fee × Written agreement? 1 : 0)"
+  onscreen_calculator_only: false
+terms:
+  - credit card
+  - fee
+  - refund
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

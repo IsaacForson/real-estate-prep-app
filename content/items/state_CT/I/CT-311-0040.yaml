@@ -1,0 +1,43 @@
+id: CT-311-0040
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After the Governor appoints eight individuals to the Connecticut Real Estate Commission, all
+  appointees reside in the state's first congressional district. Which statement correctly describes
+  the compliance of this appointment with Connecticut law?
+options:
+  - The appointment is non‑compliant because the commission requires equal representation from each
+    district
+  - The appointment is non‑compliant because at least one member must come from each congressional
+    district
+  - The appointment is compliant because members may reside in any district as electors
+  - The appointment is compliant because the commission meets broker and salesperson quotas
+key: B
+explanation: The statute requires at least one member from each congressional district; having all
+  appointees from the first district violates this requirement. The distractor claiming equal
+  representation is required is incorrect because the law only mandates at least one member per
+  district, not equal numbers.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311a(b)
+  url: null
+  quoted_text: there shall be at least one member from each congressional district
+  secondary: []
+terms:
+  - congressional district
+  - commission
+  - membership
+  - appointment
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,45 @@
+id: NY-443-0169
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "9"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker provides only an oral disclosure of the New York State Human Rights Law to a
+  prospective tenant during first substantive contact. Does this satisfy the requirement under 19
+  NYCRR § 175.28(b)?
+options:
+  - The broker's oral disclosure is acceptable when followed by an email
+  - The broker's oral disclosure is permissible only with a signed waiver
+  - The broker's oral disclosure is sufficient if documented in the file
+  - The broker's oral disclosure does not satisfy the requirements imposed by this section
+key: D
+explanation: Under 19 NYCRR § 175.28, oral disclosure does not satisfy the requirement; a written
+  disclosure is required. Therefore, the option claiming that an oral disclosure is acceptable when
+  followed by an email is incorrect because the rule does not permit curing an oral disclosure with
+  later documentation. The option stating that oral disclosure is permissible only with a signed
+  waiver is incorrect because the rule provides no waiver exception. The option asserting that oral
+  disclosure is sufficient if documented in the file is incorrect because documentation does not
+  override the requirement for a written disclosure at the time of contact. Only the option stating
+  that the oral disclosure does not satisfy the requirements aligns with the rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.28
+  url: null
+  quoted_text: Oral disclosure does not satisfy the requirements imposed by this section.
+  secondary: []
+terms:
+  - disclosure
+  - oral
+  - requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

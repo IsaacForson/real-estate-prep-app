@@ -1,0 +1,51 @@
+id: IA-543B-0109
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker's trust account earned $250 of interest during the first quarter and incurred $30 of
+  service charges directly attributable to maintaining the interest‑bearing account and remitting
+  the interest. How much must the broker remit to the state under rule 481-2013.1(2)?
+options:
+  - $220.00
+  - $250.00
+  - $280.00
+  - $30.00
+key: A
+explanation: The rule requires the amount remitted to the state to be the interest earned less any
+  service charges directly attributable to maintaining the interest‑bearing account and remitting
+  the interest. Subtracting $30 from $250 yields $220. The other options either omit the subtraction
+  or add the charges.
+citation:
+  source: Iowa Admin. Code r. 481-2013 — Iowa Administrative Code 481—Chapter 2013 — Trust Accounts
+    And Closings (Real Estate Commission) 481—2013.1(2)
+  url: null
+  quoted_text: The amount to be remitted to the state will be the amount of interest earned less any
+    service charges directly attributable to the criteria of maintaining an interest-bearing account
+    and of remitting the interest to the state.
+  secondary: []
+math:
+  worked_solution: |-
+    Interest earned = $250
+    Service charges = $30
+    Amount to remit = $250 - $30 = $220
+  formulas:
+    - Amount to remit = Interest earned - Service charges
+  onscreen_calculator_only: false
+terms:
+  - interest
+  - service charge
+  - remittance
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

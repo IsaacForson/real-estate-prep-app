@@ -1,0 +1,50 @@
+id: PA-9-0049
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Maria holds an active Pennsylvania salesperson license and wishes to sell time-share interests
+  for a developer. Under the Real Estate Licensing and Registration Act, is Maria required to obtain
+  a separate time-share salesperson license?
+options:
+  - Yes, she must obtain a separate time-share salesperson license before selling any time-share
+    interests.
+  - Yes, her existing salesperson license authorizes her to sell time-share interests without
+    additional licensing.
+  - Yes, she must complete additional continuing education specific to time-share sales before she
+    can sell.
+  - Yes, she may sell time-share interests if she is employed by a broker who holds a time-share
+    salesperson license.
+key: B
+explanation: The Real Estate Licensing and Registration Act provides that a person who holds a
+  broker or salesperson license is not required to obtain a separate time-share salesperson license
+  in order to sell or offer to sell time shares (63 P.S. § 455.201). Therefore, Maria's existing
+  Pennsylvania salesperson license authorizes her to sell time-share interests without additional
+  licensing. The statement that she must obtain a separate time-share salesperson license
+  contradicts this exemption. The claim that she must complete additional continuing education
+  specific to time-share sales adds a requirement not found in the statute. The assertion that she
+  may sell only if employed by a broker who holds a time-share salesperson license also introduces a
+  condition that the statute does not impose.
+citation:
+  source: 63 P.S. § 455.201
+  url: null
+  quoted_text: A person licensed as a broker or as a salesperson shall not be required to be licensed
+    as a time-share salesperson as a condition for selling or offering to sell time shares.
+  secondary: []
+terms:
+  - time-share salesperson
+  - salesperson
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

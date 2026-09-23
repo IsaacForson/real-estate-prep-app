@@ -1,0 +1,42 @@
+id: SD-21A-0067
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant completed the required 60 hours of prelicensing education on March 1, 2023. They
+  submit their license application on April 1, 2025. Does the education satisfy the two‑year
+  requirement?
+options:
+  - The education is invalid because it was completed more than two years before the application.
+  - The education is valid because it was completed within two years of the application.
+  - The education is invalid because the requirement is completion within one year.
+  - The education is valid because it was completed after March 1, 2023.
+key: A
+explanation: The education must be completed within the two years before the date of application.
+  Since the application is filed on April 1, 2025, the two‑year window begins on April 1, 2023;
+  education finished on March 1, 2023 falls outside that window, making it invalid. The distractor
+  claiming validity because the education was completed after March 1, 2023 ignores the two‑year
+  cutoff date.
+citation:
+  source: S.D. Admin. R. art. 20:69:03:02
+  url: null
+  quoted_text: An applicant for a license by examination shall submit proof that the applicant
+    successfully completed the required education within the two years before the date of
+    application.
+  secondary: []
+terms:
+  - education
+  - application
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

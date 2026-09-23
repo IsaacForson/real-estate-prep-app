@@ -1,0 +1,42 @@
+id: WY-101-0039
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Taylor holds a bachelor’s degree in business and has been licensed as a real estate
+  salesperson for 14 months. Taylor applies for an associate broker license in Wyoming. Does Taylor
+  meet the qualification requirements under Wyoming law?
+options:
+  - Yes, because a bachelor’s degree satisfies the education alternative.
+  - Yes, because fourteen months of salesperience counts toward the experience requirement.
+  - No, because Taylor lacks either two years of salesperson experience or a real estate degree.
+  - No, because Taylor must also provide proof of errors and omissions insurance.
+key: C
+explanation: For an associate broker license, the applicant must either have served actively for two
+  of the four years as a salesperson or hold a degree in real estate from an accredited institution.
+  Taylor’s business degree does not satisfy the real‑estate degree alternative, and 14 months is
+  insufficient experience. Therefore Taylor does not qualify. The other options misstate the degree
+  or experience criteria.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-106(n)(ii)
+  url: null
+  quoted_text: Have first served actively for two (2) of the four (4) years immediately preceding the
+    application as a salesperson or shall furnish to the commission proof indicating that the
+    applicant holds a degree in real estate from an accredited university or college;
+  secondary: []
+terms:
+  - associate broker
+  - real estate degree
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

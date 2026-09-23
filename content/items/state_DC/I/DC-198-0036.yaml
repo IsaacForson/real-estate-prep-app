@@ -1,0 +1,43 @@
+id: DC-198-0036
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A hearing panel of the Board of Real Estate issues a final decision suspending a licensee. The
+  licensee requests a rehearing before the full board. Under § 47-2853.22(i), what is the effect on
+  the licensee's ability to appeal to the District of Columbia Court of Appeals?
+options:
+  - The licensee may appeal only after paying a fee
+  - The licensee may appeal immediately to the Court of Appeals
+  - The licensee may not appeal until the full board issues a ruling
+  - The licensee may appeal only if the panel's decision is unanimous
+key: C
+explanation: Section 47-2853.22(i) states that a hearing panel’s decision is treated as the board’s
+  decision for appeal purposes, but if a rehearing before the full board is requested, no appeal to
+  the Court of Appeals is allowed until the full board issues a ruling. Therefore, the licensee must
+  wait for the full board’s ruling before appealing. The option suggesting an immediate appeal is
+  incorrect because the statute expressly bars appeal until the full board rules. The other options
+  introduce conditions not mentioned in the statute.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.22"
+  url: null
+  quoted_text: no appeal to the District of Columbia Court of Appeals shall be permitted until the
+    full board has issued a ruling
+  secondary: []
+terms:
+  - rehearing
+  - appeal
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

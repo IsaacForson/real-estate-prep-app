@@ -1,0 +1,51 @@
+id: MS-1954-0085
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Georgia-licensed broker cooperates with a Mississippi broker to sell a commercial property
+  in Jackson, Mississippi. The Georgia broker does not hold a Mississippi license. According to
+  Miss. Code Ann. § 73-35-11, what must the Georgia broker agree to as part of the cooperative
+  agreement?
+options:
+  - The Georgia broker must pay a fee to the Mississippi Real Estate Commission before any showings,
+    listings, or other activities.
+  - The Georgia broker must obtain a Mississippi salesperson license before conducting any showings,
+    listings, or other activities.
+  - The Georgia broker must agree that civil actions may be filed against him in any Mississippi
+    county where a claim arises.
+  - The Georgia broker must provide a surety bond of $10,000 to the Mississippi broker before any
+    showings, listings, or other activities.
+key: C
+explanation: The statute requires a nonresident broker who signs a cooperative agreement to agree
+  that civil actions may be commenced against him in any Mississippi county where a claim arises.
+  This matches the correct option. The distractor about obtaining a Mississippi salesperson license
+  is incorrect because the law permits cooperation without a Mississippi license, provided the
+  nonresident broker agrees to the statutory terms.
+citation:
+  source: "### Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) —
+    Mississippi Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC
+    compilation rev. 7-01-2026) — § 73-35-11"
+  url: null
+  quoted_text: By signing the agreement, the nonresident broker who is not licensed in this state
+    agrees to abide by Mississippi law, and the rules and regulations of the commission; and further
+    agrees that civil actions may be commenced against him in any court of competent jurisdiction in
+    any county of this state in which a claim may arise.
+  secondary: []
+terms:
+  - cooperative agreement
+  - nonresident broker
+  - civil action
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

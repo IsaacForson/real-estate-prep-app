@@ -1,0 +1,46 @@
+id: VT-2211-0078
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual who is not licensed as a real estate broker or salesperson negotiates the sale
+  of a property for a fee. Under Vermont law, what action may the Vermont Real Estate Commission
+  take regarding this conduct?
+options:
+  - Investigate suspected cases of unauthorized practice and refer the case to the Attorney General
+    or a State’s Attorney
+  - Impose a fine of $500 per violation, require remedial education, and order restitution, and
+    submit a corrective action plan
+  - Issue a cease-and-desist order, impose a fine, and mandate continuing education, require proof
+    of compliance, and monitor adherence
+  - Require the individual to obtain a license within 30 days and pay a penalty, submit to a
+    background check, and complete state-approved training
+key: A
+explanation: The Commission may investigate suspected cases of unauthorized practice and refer the
+  case to the Attorney General or a State’s Attorney under §2252(c)(1). The distractor 'Impose a
+  fine of $500 per violation, require remedial education, and order restitution, and submit a
+  corrective action plan' describes penalties not authorized by this provision.
+citation:
+  source: 26 V.S.A. § 2252(c)(1)
+  url: null
+  quoted_text: investigate suspected cases of unauthorized practice of activities regulated by this
+    chapter, and refer any such case to the Attorney General or a State’s Attorney for possible
+    prosecution and injunctive relief
+  secondary: []
+terms:
+  - unauthorized practice
+  - commission
+  - referral
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

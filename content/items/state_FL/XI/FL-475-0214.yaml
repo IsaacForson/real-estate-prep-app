@@ -1,0 +1,41 @@
+id: FL-475-0214
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee agrees to act as a dual agent for both buyer and seller in a residential
+  transaction, having disclosed this to both parties. According to §475.272(1), this practice is:"
+options:
+  - It is permitted under the disclosed dual agency framework
+  - It is prohibited because disclosed dual agency is expressly revoked
+  - It is allowed when both parties give written consent
+  - It is required in transactions involving residential property
+key: B
+explanation: The statute expressly revokes disclosed dual agency as an authorized form of
+  representation, making the practice prohibited regardless of disclosure or consent. The distractor
+  suggesting allowance with written consent is incorrect because the revocation is not overridden by
+  party agreement.
+citation:
+  source: Fla. Stat. § 475.272(1)
+  url: null
+  quoted_text: Disclosed dual agency as an authorized form of representation by a real estate licensee
+    in this state is expressly revoked;
+  secondary: []
+terms:
+  - dual
+  - agency
+  - disclosed
+  - revoked
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

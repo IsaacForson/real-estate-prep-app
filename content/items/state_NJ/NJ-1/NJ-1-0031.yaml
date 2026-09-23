@@ -1,0 +1,45 @@
+id: NJ-1-0031
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person who has been a licensed New Jersey real estate salesperson for four years applies for
+  a broker license. Based on the statute, is the applicant eligible?
+options:
+  - No, the applicant must have at least five years of experience.
+  - No, the applicant must have held a broker license in another state.
+  - Yes, the applicant meets the three‑year experience requirement.
+  - Yes, but only if the applicant also holds a college degree.
+key: C
+explanation: The statute requires three years as a salesperson for broker licensure; four years
+  satisfies this requirement. The claim that five years are needed contradicts the three‑year
+  minimum.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-5 § 15-9
+  url: null
+  quoted_text: Every applicant for a license as a broker or broker-salesperson shall have first been
+    the holder of a New Jersey real estate salesperson's license and have been actively engaged on a
+    full-time basis in the real estate brokerage business in this State as a real estate salesperson
+    for three years immediately preceding the date of application
+  secondary: []
+terms:
+  - broker
+  - salesperson
+  - experience
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,44 @@
+id: DE-2901-0065
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee takes a listing agreement signed by the seller, then later obtains the buyer's
+  signature on the purchase agreement. The licensee provides the seller with a copy of the listing
+  agreement at the time of signing but does not give the seller a fully executed copy of the
+  purchase agreement after all parties have signed. Under 24 Del. Admin. Code § 2900-8.4.1, has the
+  licensee complied with the rule?
+options:
+  - Yes, because the seller received a copy of the listing agreement at signing.
+  - No, because the licensee only needs to give the buyer a fully executed copy, not the seller.
+  - No, because the licensee must provide each party with a fully executed copy after all parties
+    have signed.
+  - Yes, because providing a copy at signing satisfies the requirement for all parties.
+key: C
+explanation: Under 8.4.1, the licensee must deliver a fully executed copy of the agreement to each
+  principal after all parties have signed. Merely giving the seller a copy at signing does not
+  fulfill this duty. Failure to provide the fully executed purchase agreement after the buyer’s
+  signature is noncompliant.
+citation:
+  source: 24 Del. Admin. Code § 2900-8.4.1
+  url: null
+  quoted_text: It shall be the responsibility of the Licensee to deliver the fully executed copy of
+    the agreements to the principals within a reasonable length of time after execution by all
+    parties.
+  secondary: []
+terms:
+  - fully executed copy
+  - licensee responsibility
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

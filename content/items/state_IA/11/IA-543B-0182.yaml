@@ -1,0 +1,39 @@
+id: IA-543B-0182
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "11"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a broker maintains two branch offices in Iowa, what must the broker do regarding licenses
+  and fees under Iowa Code § 543B.31?
+options:
+  - The broker must obtain a single duplicate license and pay one fee.
+  - The broker must obtain two duplicate licenses and pay a fee for each.
+  - The broker must obtain no duplicate license but pay a fee for each office.
+  - The broker must obtain two duplicate licenses but pay only one fee.
+key: B
+explanation: The statute mandates a duplicate license for each branch office maintained and a fee
+  for each duplicate license, so two offices require two licenses and two fees. The distractor
+  suggesting a single duplicate license ignores the ‘for each branch office’ provision.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.31
+  url: null
+  quoted_text: If the real estate broker maintains more than one place of business within the state, a
+    duplicate license shall be issued to such broker for each branch office maintained. A fee
+    determined by the real estate commission shall be paid for each duplicate license.
+  secondary: []
+terms:
+  - branch
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

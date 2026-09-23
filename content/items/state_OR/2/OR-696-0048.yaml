@@ -1,0 +1,43 @@
+id: OR-696-0048
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A principal broker accepts a credit card payment for earnest money in a real estate
+  transaction. According to OAR 863-015-0257(5), what amount of the credit card payment must the
+  broker maintain, use, and refund as necessary, unless there is a separate written agreement signed
+  by the credit card user authorizing a reduction?
+options:
+  - The face amount minus the merchant's discount and processing fee
+  - The face amount including any merchant's discount and processing fee
+  - The face amount without reducing by any merchant's discount and processing fee
+  - The net amount received after the merchant's discount and processing fee
+key: C
+explanation: OAR 863-015-0257(5)(a) requires the broker to maintain the face amount of the credit
+  card payment without reducing it by any merchant's discount or processing fee, unless a separate
+  written agreement authorizes a reduction. The distractor suggesting the broker may retain the net
+  amount after fees is incorrect because the rule mandates preserving the full face amount absent
+  such an agreement.
+citation:
+  source: Or. Admin. R. § 863-015-0257(5)
+  url: null
+  quoted_text: (a) The face amount of the credit card payment, without reducing the face amount by any
+    merchant's discount and processing fee charged to the principal broker, is the amount he or she
+    must maintain, use, and refund as necessary;
+  secondary: []
+terms:
+  - credit card
+  - merchant discount
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,38 @@
+id: CA-4-0074
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: "Under Cal. Civ. Code § 1620, an express contract is defined as:"
+options:
+  - A contract whose terms are stated in words
+  - A contract that is not enforceable unless recorded
+  - A contract inferred from the parties' conduct
+  - A contract that must be in writing to be enforceable
+key: A
+explanation: Section 1620 defines an express contract as one whose terms are stated in words. A
+  contract inferred from the parties' conduct is an implied contract under § 1621, so the statement
+  that a contract is not enforceable unless recorded does not match the definition. Likewise, the
+  statements that a contract must be inferred from conduct or must be in writing to be enforceable
+  add requirements not found in § 1620.
+citation:
+  source: Cal. Civ. Code §§ 1619–1633 § 1620
+  url: null
+  quoted_text: An express contract is one, the terms of which are stated in words.
+  secondary: []
+terms:
+  - express contract
+  - implied contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

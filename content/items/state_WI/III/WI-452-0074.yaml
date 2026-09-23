@@ -1,0 +1,51 @@
+id: WI-452-0074
+jurisdiction: WI
+bank: state_WI
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A rental property generates a net operating income (NOI) of $48,000 per year. If the
+  applicable capitalization rate is 6%, what is the estimated property value using the income
+  approach under Wis. Stat. ch. 70 § 70.32?
+options:
+  - $720,000
+  - $800,000
+  - $864,000
+  - $960,000
+key: B
+explanation: Under Wis. Stat. ch. 70 § 70.32, property value equals net operating income divided by
+  the capitalization rate. For a $48,000 NOI and a 6% rate, the value is $800,000. The option
+  stating $800,000 is correct. The option stating $960,000 results from mistakenly using a 5%
+  capitalization rate.
+citation:
+  source: Wis. Stat. ch. 70 — Wisconsin Statutes Chapter 70, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 70.32
+  url: null
+  quoted_text: The value of a subject property is determined by dividing its NOI by the applicable
+    capitalization rate.
+  secondary: []
+math:
+  worked_solution: |-
+    NOI = $48,000
+    CapRate = 6% = 0.06
+    Value = $48,000 / 0.06 = $800,000
+  formulas:
+    - Value = NOI / CapRate
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - capitalization rate
+  - income approach
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

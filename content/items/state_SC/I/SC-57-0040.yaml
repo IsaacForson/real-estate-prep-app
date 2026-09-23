@@ -1,0 +1,48 @@
+id: SC-57-0040
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Maria, who does not hold a real estate license, advertises that she can help buyers find
+  homes and receives a commission for a successful transaction. Under S.C. Code Ann. § 40-57-20,
+  Maria's conduct is:"
+options:
+  - It is lawful if she disclosed her unlicensed status to the buyer
+  - It is unlawful only if she also negotiated a purchase contract
+  - It is lawful because she only provided referral services
+  - It is unlawful because she acted as a broker without a license
+key: D
+explanation: Under S.C. Code Ann. § 40-57-20, it is unlawful to act as a real estate broker or to
+  advertise or provide brokerage services without an active license. Maria’s advertising of her
+  ability to help buyers find homes and her receipt of a commission for a successful transaction
+  constitute broker activity, so her conduct is unlawful. The claim that disclosure of her
+  unlicensed status makes the activity lawful is incorrect because the statute does not provide an
+  exception for disclosure. The assertion that unlawfulness requires also negotiating a purchase
+  contract is incorrect because advertising and receiving compensation for a transaction already
+  satisfy the definition of broker activity. The statement that providing referral services for
+  compensation is lawful is incorrect because referral services for compensation are included in the
+  broker definition and thus also require a license.
+citation:
+  source: S.C. Code Ann. § 40-57-20
+  url: null
+  quoted_text: It is unlawful for an individual to act as a real estate broker, real estate associate,
+    or real estate property manager or to advertise or provide services as such without an active,
+    valid license issued by the commission.
+  secondary: []
+terms:
+  - broker
+  - license
+  - advertisement
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

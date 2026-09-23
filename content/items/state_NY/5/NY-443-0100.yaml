@@ -1,0 +1,39 @@
+id: NY-443-0100
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre‑licensing course that devotes 4 hours to Real Estate Finance.
+  Under 19 NYCRR §176.3, is the course compliant?
+options:
+  - No because Real Estate Finance must be exactly five hours
+  - Yes because total instruction hours still reach seventy‑seven
+  - Yes because the course meets the minimum hour requirement for all subjects
+  - No because the course must include at least six hours of Real Estate Finance
+key: A
+explanation: The rule requires exactly five hours for Real Estate Finance, so a course with only
+  four hours fails the requirement. The option claiming the course meets the minimum hour
+  requirement is wrong because it ignores the specific five‑hour mandate for this subject.
+citation:
+  source: "### 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real
+    estate regulations — NY DOS booklet, March 2026 — § 176.3"
+  url: null
+  quoted_text: Real Estate Finance    5
+  secondary: []
+terms:
+  - real estate finance
+  - hours
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

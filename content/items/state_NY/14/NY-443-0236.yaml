@@ -1,0 +1,44 @@
+id: NY-443-0236
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "14"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre-licensing course that includes 3 hours of Taxes and Assessments,
+  75 hours of other subjects, and 2 hours for the final examination. Does this course meet the state
+  licensing requirement?
+options:
+  - No, it does not meet the requirement because the final examination must be 3 hours.
+  - No, it does not meet the requirement because all subjects except the final examination match the
+    syllabus.
+  - No, it does not meet the requirement because the total instructional hours equal 80.
+  - No, it does not meet the requirement because the Taxes and Assessments hours are less than
+    required.
+key: A
+explanation: The syllabus in §176.3(a) requires exactly 3 hours for the final examination as part of
+  the 80‑hour total. Although the course sums to 80 hours, the final examination is only 2 hours,
+  violating the required distribution. The statement that the final examination must be 3 hours is
+  correct; meeting the total hour count alone does not satisfy the syllabus—the specific hour
+  allocations must also be correct.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Final Examination    3
+  secondary: []
+terms:
+  - tax
+  - assessment
+  - final examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

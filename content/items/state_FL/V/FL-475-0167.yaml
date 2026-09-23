@@ -1,0 +1,42 @@
+id: FL-475-0167
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker and a buyer execute a residential loan alternative agreement on January 1. Listing
+  services do not begin until April 2 of the same year. What is the legal status of the agreement
+  under Florida Statutes?
+options:
+  - The agreement remains valid because listing services eventually began.
+  - The agreement is void because listing services did not begin within 90 days after execution.
+  - The agreement is void only if the parties mutually agree to terminate.
+  - The agreement is enforceable because the parties can still perform.
+key: B
+explanation: The law provides that a residential loan alternative agreement is void if listing
+  services do not begin within 90 days after the agreement is executed by both parties. Since
+  listing services started on day 92, the condition for voidance is met, making the agreement void.
+  The claim that the agreement remains valid because listing services eventually began is incorrect
+  because eventual commencement does not cure the defect.
+citation:
+  source: Fla. Stat. ch. 475 § 475.25(4)
+  url: null
+  quoted_text: A residential loan alternative agreement is void if listing services do not begin
+    within 90 days after the execution of the agreement by both parties.
+  secondary: []
+terms:
+  - residential loan alternative agreement
+  - listing services
+  - void
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

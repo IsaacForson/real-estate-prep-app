@@ -1,0 +1,49 @@
+id: NY-443-0106
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed only 2 hours of study in the Land Use Regulations subject while
+  finishing the required pre‑licensing course. Under NY DOS regulations, what must the salesperson
+  do to satisfy the land use regulation requirement before being admitted to the final examination?
+options:
+  - Complete an additional four hours of land use regulation study
+  - Complete an additional hour of land use regulation study
+  - Complete an additional three hours of land use regulation study
+  - Complete an additional two hours of land use regulation study
+key: B
+explanation: The rule requires a total of three hours for Land Use Regulations. Having already
+  completed two hours, the salesperson needs one more hour to meet the requirement. The distractor
+  suggesting two additional hours would result in four total hours, exceeding the minimum.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(a)
+  url: null
+  quoted_text: Land Use Regulations    3
+  secondary: []
+math:
+  worked_solution: |-
+    Required hours = 3 (from regulation)
+    Completed hours = 2 (from stem)
+    Additional hours needed = Required - Completed = 3 - 2 = 1
+  formulas:
+    - Additional hours = Required hours - Completed hours
+  onscreen_calculator_only: false
+terms:
+  - land
+  - use
+  - regulation
+  - hour
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,44 @@
+id: CT-311-0041
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A newly appointed member of the Connecticut Real Estate Commission begins attending commission
+  meetings before filing the required oath. According to Connecticut law, what is the correct status
+  of this member's actions?
+options:
+  - The member's actions are impermissible because the oath is only required for licensed brokers
+  - The member's actions are permissible because the oath may be filed after the first commission
+    meeting
+  - The member's actions are permissible because attending meetings is not considered entering upon
+    duties
+  - The member's actions are impermissible because the oath must be filed before entering upon duties
+key: D
+explanation: The statute requires each member to take and file an oath before entering upon duties;
+  attending meetings before filing the oath violates this requirement. The distractor suggesting the
+  oath can be filed after the first meeting is incorrect because the oath must be filed prior to any
+  duties, including attending meetings.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311a(c)
+  url: null
+  quoted_text: Each member shall, before entering upon his duties, take and file with the commission
+    an oath to faithfully perform the duties of his office.
+  secondary: []
+terms:
+  - oath
+  - duties
+  - commission
+  - member
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,50 @@
+id: UT-101-0084
+jurisdiction: UT
+bank: state_UT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A tenant who lives in an apartment complex agrees to oversee leasing and rent collection for
+  the building in exchange for a reduced monthly rent. Under Utah Code Ann. § 61-2f-202(1)(a)(iv),
+  is the tenant required to hold a real estate license?
+options:
+  - The tenant must hold a real estate license because they are performing property management
+    services for compensation.
+  - The tenant is not required to hold a real estate license because they manage the apartment where
+    they live for reduced rent.
+  - The tenant must hold a real estate license unless they also have a property manager endorsement
+    issued by the division.
+  - The tenant is not required to hold a real estate license only if they work fewer than 10 hours
+    per week.
+key: B
+explanation: The statute exempts individuals who perform property management services for the
+  apartment where they reside in exchange for free or reduced rent, making the statement that the
+  tenant is not required to hold a real estate license because they manage the apartment where they
+  live for reduced rent correct. The statement that the tenant must hold a license because they are
+  performing property management services for compensation is incorrect, as the exemption applies
+  despite compensation in the form of reduced rent. The statements that the tenant must hold a
+  license unless they also have a property manager endorsement, or that they are not required only
+  if they work fewer than 10 hours per week, add conditions not present in the exemption.
+citation:
+  source: Utah Code Ann. § 61-2f-202(1)(a)(iv)
+  url: null
+  quoted_text: (iv) an individual who performs property management services for the apartments at
+    which that individual resides in exchange for free or reduced rent on that individual's
+    apartment;
+  secondary: []
+terms:
+  - property management
+  - residence
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

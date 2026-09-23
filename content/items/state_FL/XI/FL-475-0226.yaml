@@ -1,0 +1,42 @@
+id: FL-475-0226
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A sales associate receives a buyer’s earnest money deposit directly from the buyer and
+  deposits it into her personal account without first obtaining her broker’s express consent. Under
+  Florida Statute 475.42(d), this action is:"
+options:
+  - This action is permissible because the associate holds a valid sales associate license.
+  - This action is allowed if the associate returns the deposit to the buyer the same day.
+  - This action is a violation because the associate collected money not in the name of the employer.
+  - This action is allowed if the associate notifies the broker within 24 hours.
+key: C
+explanation: The statute prohibits a sales associate from collecting any money in a brokerage
+  transaction except in the name of the employer with the employer’s express consent. The distractor
+  claiming permissibility due to licensure is wrong because the license does not override the
+  requirement to handle funds through the employer.
+citation:
+  source: Fla. Stat. § 475.42(d)
+  url: null
+  quoted_text: A sales associate may not collect any money in connection with any real estate
+    brokerage transaction, whether as a commission, deposit, payment, rental, or otherwise, except
+    in the name of the employer and with the express consent of the employer;
+  secondary: []
+terms:
+  - sales associate
+  - deposit
+  - employer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

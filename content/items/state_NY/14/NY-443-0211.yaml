@@ -1,0 +1,40 @@
+id: NY-443-0211
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "14"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: How many hours of instruction are required for the Taxes and Assessments subject in the New
+  York real estate salesperson pre-licensing course?
+options:
+  - 1 hour
+  - 2 hours
+  - 3 hours
+  - 4 hours
+key: C
+explanation: Under 19 NYCRR § 176.3(a), the salesperson course syllabus specifies 3 hours for Taxes
+  and Assessments. Therefore, the correct answer is 3 hours. The distractor of 2 hours is incorrect
+  because no subject in the syllabus is allocated only 2 hours for this topic.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Taxes and Assessments    3
+  secondary: []
+terms:
+  - tax
+  - assessment
+  - hour
+  - course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

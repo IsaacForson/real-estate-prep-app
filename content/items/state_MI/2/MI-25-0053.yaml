@@ -1,0 +1,52 @@
+id: MI-25-0053
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee renews their Michigan real estate license for a 2‑year license cycle. According to
+  Michigan Occupational Code Article 25, how many total hours of continuing education must the
+  licensee complete to satisfy the requirement?
+options:
+  - 24 hours
+  - 12 hours
+  - 6 hours
+  - 18 hours
+key: B
+explanation: Subsection 2)(f)(i) states that the department determines the required hours by
+  multiplying the number of years in the license cycle by 6. For a 2‑year cycle, 2 × 6 = 12 hours.
+  The distractor ‘6 hours’ results from mistakenly using the multiplier as the total instead of
+  applying it to the number of years.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2504a(2)(f)(i)
+  url: null
+  quoted_text: The department shall determine the number of hours that are required in a license cycle
+    by multiplying the number of years in the license cycle by 6.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the number of years in the license cycle: 2 years.
+    Multiply the number of years by 6 hours per year: 2 × 6 = 12 hours.
+  formulas:
+    - total hours = years × 6
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - license cycle
+  - hour
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

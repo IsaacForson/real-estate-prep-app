@@ -1,0 +1,45 @@
+id: WY-101-0026
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A responsible broker working with a buyer receives a promissory note as earnest money in a
+  cooperative transaction. What must the broker do with the note according to Wyoming law?
+options:
+  - Deliver the note and the contract to the responsible broker working with the seller, who shall
+    hold the note or thing of value.
+  - Return the note to the buyer because earnest money must be in cash or check form unless all
+    parties agree otherwise in writing.
+  - Deposit the note into the buyer's broker's trust account as earnest money unless all parties
+    agree otherwise in writing.
+  - Keep the note as part of the broker's compensation until the transaction closes unless all
+    interested parties agree otherwise in writing.
+key: A
+explanation: Wyoming law directs that a promissory note received as earnest money must be delivered
+  with the contract to the seller's broker, who shall hold the note. Depositing the note in the
+  buyer's broker's trust account contradicts this requirement, making the option that suggests
+  depositing the note in the buyer's broker's trust account incorrect.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(g)
+  url: null
+  quoted_text: If the responsible broker working with a buyer receives a promissory note, or thing of
+    value, the note or thing of value shall be delivered with the contract to the responsible broker
+    working with the seller, who shall hold the note or thing of value.
+  secondary: []
+terms:
+  - promissory note
+  - earnest money
+  - cooperative transaction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

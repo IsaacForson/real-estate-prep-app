@@ -1,0 +1,45 @@
+id: NY-443-0147
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: During completion of the Property Condition Disclosure Statement, a seller knows that there is
+  an abandoned underground fuel storage tank on the property that is not leaking. How should the
+  seller answer question 21 regarding fuel storage tanks?
+options:
+  - Select NA
+  - Select No
+  - Select Yes
+  - Select Unkn
+key: C
+explanation: Question 21 asks whether there have ever been fuel storage tanks above or below ground
+  on the property; a prior or existing tank triggers a Yes response regardless of current use or
+  leakage (§462). Hence “Select Yes” is the proper answer. The distractor “Select Unkn” would be
+  wrong because the seller has actual knowledge of the tank, so marking unknown contradicts the
+  instruction to answer based on actual knowledge.
+citation:
+  source: "### N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462"
+  url: null
+  quoted_text: 21.  Are there or have there ever been fuel storage tanks above or below the ground on
+    the property? Yes No Unkn NA
+  secondary: []
+terms:
+  - fuel
+  - storage
+  - tank
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

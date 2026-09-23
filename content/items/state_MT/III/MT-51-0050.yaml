@@ -1,0 +1,49 @@
+id: MT-51-0050
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person who is not a licensed real estate broker or salesperson assists a buyer in locating a
+  property, negotiates the purchase price, and expects a commission. After the transaction closes,
+  the person sues the buyer for the commission. Under Montana law, what is the likely result?
+options:
+  - The plaintiff may recover the commission because the services were performed.
+  - The plaintiff may recover the commission if they later obtain a license.
+  - The plaintiff may not recover the commission because they were not licensed at the time the
+    claim arose.
+  - The plaintiff may recover the commission if the defendant agrees to pay.
+key: C
+explanation: Under Mont. Code Ann. § 37-51-401, a person must allege and prove they were a duly
+  licensed broker or salesperson at the time the claim arose to maintain an action for compensation.
+  Since the plaintiff was unlicensed when the claim arose, they cannot recover the commission. The
+  distractor that recovery is allowed because services were performed ignores the licensure
+  prerequisite.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-401
+  url: null
+  quoted_text: Any person engaged in the business of or acting in the capacity of a real estate broker
+    or real estate salesperson within this state shall not be permitted to bring or maintain any
+    action in the courts for the collection of compensation for the sale or lease or otherwise
+    disposing of real estate without first alleging and proving that such person was a duly licensed
+    real estate broker or real estate salesperson or authorized to act as a broker under the
+    provisions of this chapter at the time the alleged cause of action or claim arose.
+  secondary: []
+terms:
+  - license
+  - commission
+  - action
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

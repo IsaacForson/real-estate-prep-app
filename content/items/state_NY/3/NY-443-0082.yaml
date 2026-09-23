@@ -1,0 +1,44 @@
+id: NY-443-0082
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker earns interest on funds held in a special trust account and wishes to retain that
+  interest as personal income. Under 19 NYCRR §175.1, what is the broker permitted to do with the
+  accrued interest?
+options:
+  - The broker may keep the interest as additional income.
+  - The broker may apply the interest to reduce commission with client consent.
+  - The broker may remit the interest to the state.
+  - The broker may deposit the interest into a personal account.
+key: B
+explanation: The rule provides that accrued interest shall not be retained by the broker except when
+  applied to, and deducted from, earned commission with the consent of all parties. Thus, the broker
+  may only use the interest to reduce commission with client consent. Keeping the interest as income
+  violates the prohibition on retention.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.1
+  url: null
+  quoted_text: Accrued interest, if any, shall not be retained by, or for the benefit of, the broker
+    except to the extent that it is applied to, and deducted from, earned commission, with the
+    consent of all parties.
+  secondary: []
+terms:
+  - interest
+  - commission
+  - consent
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,47 @@
+id: FL-475-0115
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate receives a rental payment from a tenant and deposits it into her personal
+  bank account without informing her employing broker. Under Florida law, is this permissible?
+options:
+  - It is not permissible because funds must be received in the employer's name with consent.
+  - It is permissible if the associate notifies the broker after receiving the payment.
+  - It is permissible because the associate holds a valid license.
+  - It is permissible if the associate later returns the funds to the broker.
+key: A
+explanation: The law states that a sales associate may not collect any money in connection with a
+  brokerage transaction except in the name of the employer and with the employer's express consent.
+  Depositing the payment into a personal account violates this requirement. The other options
+  incorrectly suggest that later reimbursement, notification, or licensure alone makes the action
+  permissible.
+citation:
+  source: Fla. Stat. § 475.42(d)
+  url: null
+  quoted_text: A sales associate may not collect any money in connection with any real estate
+    brokerage transaction, whether as a commission, deposit, payment, rental, or otherwise, except
+    in the name of the employer and with the express consent of the employer; and no real estate
+    sales associate, whether the holder of a valid and current license or not, shall commence or
+    maintain any action for a commission or compensation in connection with a real estate brokerage
+    transaction against any person except a person registered as her or his employer at the time the
+    sales associate performed the act or rendered the service for which the commission or
+    compensation is due.
+  secondary: []
+terms:
+  - sales associate
+  - employer
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

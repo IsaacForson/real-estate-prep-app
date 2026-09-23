@@ -1,0 +1,57 @@
+id: NY-443-0133
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed the Real Estate Mathematics (1 hour) and Municipal Agencies (2
+  hours) portions of the required course. How many hours of the course remain to be completed?
+options:
+  - 77 hours
+  - 75 hours
+  - 81 hours
+  - 79 hours
+key: A
+explanation: The total course is 80 hours; subtracting the completed 1 + 2 = 3 hours leaves 77 hours
+  remaining. The distractor of 75 hours results from mistakenly subtracting 5 hours instead of 3.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+    License Safety      1
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: Total hours = 80. Completed hours = 1 (Real Estate Mathematics) + 2 (Municipal
+    Agencies) = 3. Remaining hours = 80 - 3 = 77.
+  formulas:
+    - Remaining = Total - (Math + Municipal)
+  onscreen_calculator_only: false
+terms:
+  - course hours
+  - real estate mathematics
+  - municipal agencies
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

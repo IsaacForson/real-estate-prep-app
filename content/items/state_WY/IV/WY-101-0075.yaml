@@ -1,0 +1,45 @@
+id: WY-101-0075
+jurisdiction: WY
+bank: state_WY
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After a foreclosure sale in Wyoming, the foreclosing mortgagee must serve a copy of the sale
+  results to the record owner and subordinate lienholders within how many business days following
+  the sale?
+options:
+  - 15 business days
+  - 5 business days
+  - 10 business days
+  - 7 business days
+key: C
+explanation: The statute requires that within ten (10) business days following a foreclosure sale,
+  the foreclosing mortgagee must serve a copy of the sale results to the record owner and all
+  holders of recorded mortgages and liens subordinate to the mortgage. Therefore the answer stating
+  10 business days is correct. The answer stating 15 business days is too long, the answer stating 5
+  business days is too short, and the answer stating 7 business days is also too short.
+citation:
+  source: Wyo. Stat. Ann. § 34-4-104(b)
+  url: null
+  quoted_text: within ten (10) business days following the sale of real estate by foreclosure, the
+    foreclosing mortgagee or lienholder shall serve a copy of the sale results to the record owner
+    of the mortgaged premises and all holders of recorded mortgages and liens subordinate to the
+    mortgage or lien being foreclosed.
+  secondary: []
+terms:
+  - foreclosure sale
+  - sale results
+  - business days
+  - subordinate lienholders
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

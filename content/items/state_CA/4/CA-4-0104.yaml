@@ -1,0 +1,39 @@
+id: CA-4-0104
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Cal. Civ. Code § 2924.3(a)(1), how many days after recordation of a notice of default
+  must an agent mail a copy of the notice to each mortgagee?
+options:
+  - 5 days
+  - 10 days
+  - 15 days
+  - 20 days
+key: C
+explanation: The statute requires the agent to mail the copy within 15 days after recordation. Ten
+  days is a common mistaken timeframe but the rule specifies fifteen days.
+citation:
+  source: Cal. Civ. Code § 2924.3(a)(1)
+  url: null
+  quoted_text: (1) A copy of the notice of default filed in the office of the county recorder pursuant
+    to Section 2924 on account of a breach of obligation under the promissory note on which the
+    agent has agreed to make collections of payments, within 15 days after recordation.
+  secondary: []
+terms:
+  - notice of default
+  - mailing
+  - recordation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

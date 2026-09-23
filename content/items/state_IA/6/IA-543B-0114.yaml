@@ -1,0 +1,46 @@
+id: IA-543B-0114
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a cooperative sale, the listing broker elects to close the transaction. According to Iowa
+  Admin. Code r. 481-2013.2(5)(a), what must the selling broker do with the earnest money check?
+options:
+  - The selling broker must retain the check in the selling broker's trust account until closing.
+  - The selling broker must have the buyer make the check payable to the listing broker and deliver
+    it along with the offer to the listing broker.
+  - The selling broker must have the buyer make the check payable to the selling broker and deliver
+    it to the listing broker.
+  - The selling broker must deposit the check into the selling broker's trust account and then
+    transfer it to the listing broker.
+key: B
+explanation: When the listing broker chooses to close, the rule requires the selling broker to have
+  the buyer make the earnest money check payable to the listing broker and to deliver that check
+  together with the offer to the listing broker or listing agent. The other options either misdirect
+  the payee, add unnecessary trust‑account steps, or impose a retention period not mentioned in the
+  rule.
+citation:
+  source: Iowa Admin. Code r. 481-2013.2(5)(a)
+  url: null
+  quoted_text: If the listing broker so elects, the selling broker has the buyer make the earnest
+    money check or money order payable to the listing broker and immediately delivers the earnest
+    money check or money order along with the offer to purchase to the listing broker or listing
+    agent.
+  secondary: []
+terms:
+  - earnest money
+  - broker
+  - offer
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

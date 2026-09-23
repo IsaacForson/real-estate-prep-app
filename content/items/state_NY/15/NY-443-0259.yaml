@@ -1,0 +1,42 @@
+id: NY-443-0259
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "15"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson’s pre‑licensing course includes four hours of Condominiums and Cooperatives
+  instruction and satisfies all other subject hour requirements, but the course totals only 78
+  hours. Under New York regulations, is the course approved for licensure?
+options:
+  - The course is approved because it meets the Condominiums and Cooperatives requirement.
+  - The course is approved because the total hours are within the allowable range.
+  - The course is not approved because the total hours fall short of the required 80.
+  - The course is not approved because it exceeds the Condominiums and Cooperatives requirement.
+key: C
+explanation: The regulations require a total of 80 hours of instruction and examination (77 hours of
+  coursework plus a 3‑hour final exam). A course with only 78 hours does not meet this total, so it
+  cannot be approved even if each subject’s hours are satisfied.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+terms:
+  - hour
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

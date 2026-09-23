@@ -1,0 +1,49 @@
+id: CA-4-0067
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee publishes a website offering general information about real estate brokerage
+  services, includes the legend that services are not available to persons located within
+  California, and does not target any specific California customer. Under Cal. Code Regs. tit. 10 §
+  2770(b)(1), is the person deemed to be engaged in the business of a real estate broker?
+options:
+  - The person may only advertise if they also compile specific party information
+  - The person is not deemed to be engaged in the business of a real estate broker
+  - The person is deemed to be engaged in the business of a real estate broker
+  - The person must obtain a real estate broker license before publishing the website
+key: B
+explanation: Under subsection (b)(1), an advertisement that involves a service but is not directed
+  to any particular California customer, is limited to general information, and includes the legend
+  that services are not available to persons located within California is not deemed to be engaging
+  in the business of a real estate broker. The scenario meets all three criteria, so the person is
+  not deemed to be engaged. The other options either incorrectly assert engagement, impose
+  unnecessary licensing, or add unrelated requirements.
+citation:
+  source: "### Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner
+    (Cal. Code Regs. tit. 10, ch. 6) - DRE compilation Cal. Code Regs. tit. 10, § 2770(b)(1)"
+  url: null
+  quoted_text: The advertisement or information involves a service but (A) is not directed to any
+    particular person or customer located within the State of California, (B) is limited to general
+    information about the services offered to customers or the public in general, and (C) includes
+    the legend "The services referred to herein are not available to persons located within the
+    State of California."
+  secondary: []
+terms:
+  - advertisement
+  - legend
+  - customer
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

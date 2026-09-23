@@ -1,0 +1,42 @@
+id: NY-443-0113
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate broker who is acting as the listing agent for a seller decides to purchase the
+  seller's property for his own personal use. Under 19 N.Y.C.R.R. § 175.5, what must the broker do
+  before completing the purchase?
+options:
+  - The broker must disclose his interest in the property to the seller only.
+  - The broker must disclose his interest in the property to all parties to the transaction.
+  - The broker is not required to disclose his interest because he is not buying the property for a
+    client.
+  - The broker must obtain written consent from the seller's attorney before proceeding.
+key: C
+explanation: §175.5 requires disclosure only when the broker buys property 'for a client' in which
+  the broker has an interest. Here the broker is buying for himself, not for a client, so no
+  disclosure is required under this rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.5
+  url: null
+  quoted_text: Before a real estate broker buys property for a client in the ownership of which the
+    broker has an interest, he shall disclose his interest to all parties to the transaction.
+  secondary: []
+terms:
+  - disclosure
+  - interest
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

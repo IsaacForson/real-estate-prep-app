@@ -1,0 +1,40 @@
+id: NY-443-0240
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "15"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson candidate has completed all required subjects except Condominiums and
+  Cooperatives, for which they have only two hours of instruction. How many additional hours must be
+  added to meet the requirement for that subject?
+options:
+  - One hour
+  - Two hours
+  - Four hours
+  - Three hours
+key: B
+explanation: The subject requires four hours; with two hours already completed, two more hours are
+  needed to reach the requirement. Choosing one hour would leave the candidate with only three hours
+  total, which remains insufficient.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Condominiums and Cooperatives    4
+  secondary: []
+terms:
+  - condominiums
+  - cooperatives
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

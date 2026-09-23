@@ -1,0 +1,43 @@
+id: FL-475-0243
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A dealer registered under the Securities Exchange Act sells a business enterprise to an
+  accredited investor. The transaction also includes the sale of undeveloped land that is not
+  connected to the business enterprise. Under Florida law, does the exemption in § 475.01(12) apply
+  to the land portion?
+options:
+  - The exemption applies to the entire transaction because the investor is accredited
+  - The exemption applies to the business enterprise portion but not to the land portion
+  - The exemption does not apply because the dealer is not a Florida‑licensed real estate broker
+  - The exemption applies only if the land is sold first, then the business enterprise
+key: B
+explanation: § 475.01(12) states the exemption does not apply to a sale, exchange, purchase, or
+  rental of land, buildings, fixtures or other improvements to the land which is not made in
+  connection with the sale, exchange, purchase, or rental of a business enterprise. Therefore the
+  land portion is not exempt.
+citation:
+  source: Fla. Stat. § 475.01(12)
+  url: null
+  quoted_text: The exemption does not apply to a sale, exchange, purchase, or rental of land,
+    buildings, fixtures or other improvements to the land which is not made in connection with the
+    sale, exchange, purchase, or rental of a business enterprise.
+  secondary: []
+terms:
+  - exemption
+  - land
+  - business enterprise
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

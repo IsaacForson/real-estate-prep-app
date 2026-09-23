@@ -1,0 +1,41 @@
+id: NY-443-0049
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker acts as a dual agent with designated sales agents for a lease transaction and
+  appoints Salesperson X to represent the tenant. What must Salesperson X do under New York Real
+  Property Law § 442-l?
+options:
+  - Explain no undivided loyalty
+  - Obtain separate written consent
+  - Provide full fiduciary duties
+  - Keep tenant info confidential
+key: A
+explanation: The law states that a designated sales agent must explain that, like the dual agent,
+  they cannot provide undivided loyalty. Therefore the correct action is to disclose this
+  limitation. The distractor "Provide full fiduciary duties" is incorrect because the statute
+  prohibits a designated sales agent from offering the full range of fiduciary duties.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A § 442-l
+  url: null
+  quoted_text: A designated sales agent cannot provide the full range of fiduciary duties to the
+    landlord or tenant. The designated sales agent must explain that like the dual agent under whose
+    supervision they function, they cannot provide undivided loyalty.
+  secondary: []
+terms:
+  - designated sales agent
+  - undivided loyalty
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

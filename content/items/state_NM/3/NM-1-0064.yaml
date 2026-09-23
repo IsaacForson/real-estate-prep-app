@@ -1,0 +1,44 @@
+id: NM-1-0064
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker will be unavailable to supervise the brokerage for two weeks due to
+  medical leave. Under 16.61.16.9 NMAC, what must the qualifying broker do to comply with the rule
+  regarding supervision?
+options:
+  - Designate a broker in charge and continue to supervise remotely
+  - Designate a broker in charge and post a notice in the office
+  - Designate a broker in charge and notify the associate brokers via email
+  - Designate a broker in charge and inform the commission in writing
+key: D
+explanation: The rule requires the qualifying broker to designate a broker in charge when actual
+  supervision is not possible and to inform the commission of that designation in writing. The other
+  options do not satisfy the written notice requirement to the commission.
+citation:
+  source: "### 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61)
+    — NMREC License Law and Rules book, 2021 web edition — § 16.61.16.9"
+  url: null
+  quoted_text: N. Designate a broker in charge in the event actual supervision by the qualifying
+    broker is not possible, and inform the commission of such designation in writing. During this
+    period of time, the broker in charge shall assume all of the responsibilities of the qualifying
+    broker for the brokerage;
+  secondary: []
+terms:
+  - supervision
+  - broker in charge
+  - commission
+  - designation
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

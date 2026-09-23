@@ -1,0 +1,43 @@
+id: OK-605-0073
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property manager receives a tenant's security deposit on Monday morning. Under Oklahoma
+  Administrative Code, by what deadline must the deposit be placed in a trust account, assuming no
+  written agreement to the contrary?
+options:
+  - End of Tuesday
+  - End of Friday
+  - End of Wednesday
+  - End of Thursday
+key: D
+explanation: The rule requires escrow funds to be deposited before the end of the third banking day
+  following receipt. Monday receipt makes Tuesday the first banking day, Wednesday the second, and
+  Thursday the third, so the deposit must be placed by the end of Thursday. The option stating 'End
+  of Wednesday' is incorrect because that would be only the second banking day, which is too early.
+citation:
+  source: Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules) — Oklahoma Administrative
+    Code Title 605, Chapters 1 and 10 (OREC Code and Rules Book, as of Nov. 1, 2025) — § 10-13-1(D)
+  url: null
+  quoted_text: All escrow funds shall be deposited before the end of the third banking day following
+    acceptance of an offer by an offeree or receipt of escrow funds unless otherwise agreed to in
+    writing by all interested parties.
+  secondary: []
+terms:
+  - escrow
+  - banking day
+  - deposit
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

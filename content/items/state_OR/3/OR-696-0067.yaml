@@ -1,0 +1,46 @@
+id: OR-696-0067
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A managing principal broker notices that interest earned on a client’s trust account under OAR
+  863-015-0265 has accrued and will benefit the broker personally. Under Oregon administrative
+  rules, when must the broker disburse this interest?
+options:
+  - within ten calendar days from the date of the bank statement on which the interest first appears.
+  - within ten business days from the date the interest was credited to the account.
+  - within fifteen calendar days from the date the interest was earned.
+  - within ten calendar days from the date the transaction that generated the interest closed.
+key: A
+explanation: The rule requires that interest benefiting the managing principal broker be disbursed
+  within ten calendar days from the date of the bank statement on which the interest first appears.
+  The option stating 'within ten business days from the date the interest was credited to the
+  account' incorrectly substitutes business days for calendar days and uses the credit date instead
+  of the bank statement date.
+citation:
+  source: Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) (8)
+  url: null
+  quoted_text: If interest earned in a clients’ trust account under OAR 863-015-0265 inures to the
+    benefit of the managing principal broker, such interest must be disbursed to the managing
+    principal broker within ten calendar days from the date of the bank statement on which such
+    interest first appears.
+  secondary: []
+terms:
+  - interest
+  - trust account
+  - disbursement
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

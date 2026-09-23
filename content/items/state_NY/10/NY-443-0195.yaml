@@ -1,0 +1,47 @@
+id: NY-443-0195
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "10"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under 19 NYCRR §175.7, what must a real estate broker do regarding compensation from multiple
+  parties?
+options:
+  - The broker must accept compensation from both parties provided the broker notifies the client
+    after closing.
+  - The broker must avoid representing more than one party in any transaction.
+  - The broker must receive compensation from both parties only after informing both parties.
+  - The broker must disclose the party represented and not take compensation from more than one
+    party without the client’s consent.
+key: D
+explanation: "Under 19 NYCRR §175.7, a broker must disclose which party is being represented and may
+  not accept compensation from more than one party unless the broker’s client gives full knowledge
+  and consent. The correct option states both the disclosure requirement and the consent condition.
+  The other options are wrong: one suggests compensation from both parties is permissible after
+  notification, another imposes an absolute ban on representing more than one party, and the third
+  allows compensation from both parties only after informing both parties, which still violates the
+  consent requirement."
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.7
+  url: null
+  quoted_text: A real estate broker shall make it clear for which party he is acting and he shall not
+    receive compensation from more than one party except with the full knowledge and consent of the
+    broker’s client.
+  secondary: []
+terms:
+  - compensation
+  - disclosure
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

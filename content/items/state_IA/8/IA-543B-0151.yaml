@@ -1,0 +1,44 @@
+id: IA-543B-0151
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer refuses to sign the disclosed dual agency consent agreement presented by the licensee.
+  According to Iowa Admin. Code r. 481-2012, what action must the licensee take?
+options:
+  - The licensee must continue to act as a dual agent despite the buyer's refusal.
+  - The licensee must obtain the buyer's consent through verbal agreement before proceeding.
+  - The licensee must not act as a dual agent for that transaction.
+  - The licensee must terminate the brokerage agreement with the seller.
+key: C
+explanation: The licensee must not act as a dual agent for that transaction because rule 2012.5(1)
+  states that if any seller, landlord, buyer, or tenant rejects dual agency or refuses to sign
+  consent to dual agency, the licensee cannot act as a dual agent. The suggestion that the licensee
+  can obtain the buyer's consent through verbal agreement before proceeding is incorrect because the
+  rule requires a written consent agreement, not merely verbal agreement, and does not permit the
+  licensee to proceed without the client’s written consent.
+citation:
+  source: Iowa Admin. Code r. 481-2012 — Iowa Administrative Code 481—Chapter 2012 — Disclosure Of
+    Relationships (Real Estate Commission) 2012.5(1)
+  url: null
+  quoted_text: If any seller, landlord, buyer, or tenant rejects dual agency, or refuses to sign
+    consent to dual agency, the licensee cannot act as a dual agent.
+  secondary: []
+terms:
+  - dual agency
+  - consent
+  - licensee
+  - buyer
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

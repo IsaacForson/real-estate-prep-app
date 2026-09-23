@@ -1,0 +1,36 @@
+id: SD-21A-0066
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum passing score required on the South Dakota real estate licensing examination?
+options:
+  - A score of 70
+  - A score of 75
+  - A score of 80
+  - A score of 85
+key: B
+explanation: The rule states that the passing score on the licensing examinations is 75. Therefore a
+  score of 75 meets the requirement, while a score of 70 is below the threshold and would not permit
+  licensure.
+citation:
+  source: S.D. Admin. R. art. 20:69:03:07
+  url: null
+  quoted_text: The passing score on the licensing examinations is 75.
+  secondary: []
+terms:
+  - passing score
+  - examination
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

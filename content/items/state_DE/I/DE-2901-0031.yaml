@@ -1,0 +1,41 @@
+id: DE-2901-0031
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker’s license is revoked under § 2917. What happens to the licenses of salespersons
+  employed by that broker?
+options:
+  - They are placed on probation for 90 days
+  - They are immediately terminated and must reapply
+  - They are automatically suspended pending a change of employing broker
+  - They remain active unless the salesperson finds a new broker
+key: C
+explanation: The statute provides that revocation of a broker’s license automatically suspends every
+  license granted to individuals employed by that broker, pending a change of employing broker or
+  brokerage organization and issuance of a new license. The option suggesting immediate termination
+  ignores the statutory suspension provision.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2917
+  url: null
+  quoted_text: The revocation of a broker’s license shall automatically suspend every real estate
+    service provider’s license granted to any individual by virtue of employment either directly or
+    indirectly by the broker whose license has been revoked, pending a change of employing broker or
+    brokerage organization and the issuance of a new license.
+  secondary: []
+terms:
+  - revocation
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

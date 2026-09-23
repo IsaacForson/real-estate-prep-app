@@ -1,0 +1,43 @@
+id: IA-543B-0137
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Iowa Code section 543B.57(1), what must a licensee do before representing a party in a
+  transaction?
+options:
+  - The licensee must disclose any personal interest in the property before representing them.
+  - The licensee must obtain written consent from both parties before representing them.
+  - The licensee must make an agency disclosure to the party or parties represented before
+    representing them.
+  - The licensee must provide a written brokerage agreement before representing them.
+key: C
+explanation: The rule states a licensee shall not represent any party unless an agency disclosure is
+  made to that party. Therefore, the licensee must make the disclosure before representation begins.
+  The distractor about obtaining written consent from both parties is incorrect because written
+  consent for multiple representation is governed by section 543B.58, not the disclosure requirement
+  in 543B.57(1).
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.57(1)
+  url: null
+  quoted_text: A licensee shall not represent any party or parties to a transaction or otherwise as a
+    licensee unless that licensee makes an agency disclosure to the party or parties represented by
+    the licensee.
+  secondary: []
+terms:
+  - agency
+  - disclosure
+  - representation
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

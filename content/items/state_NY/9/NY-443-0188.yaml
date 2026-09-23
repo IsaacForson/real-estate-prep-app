@@ -1,0 +1,55 @@
+id: NY-443-0188
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "9"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An owner filed a statement with the Secretary of State wishing not to be solicited, but the
+  current cease and desist list has not yet been updated to include the owner’s name. A broker sends
+  a postcard advertising a listing to that owner. How should the broker’s action be evaluated under
+  § 442-h(3)(a)?
+options:
+  - The broker’s action is permissible because cease and desist zones only apply to telephone
+    solicitation.
+  - The broker’s action is permissible because the owner’s name does not yet appear on the current
+    cease and desist list.
+  - The broker’s action is allowed if the postcard is sent via electronic mail rather than regular
+    mail.
+  - The broker’s action constitutes a prohibited solicitation because the owner’s name is on the
+    cease and desist list.
+key: B
+explanation: Under § 442-h(3)(a), a broker may not solicit a listing from an owner only if that
+  owner’s name appears on the current cease and desist list prepared by the Secretary of State.
+  Because the owner filed a statement wishing not to be solicited but the list has not yet been
+  updated to include the name, the owner’s name is not on the current list. Therefore, sending a
+  postcard advertising a listing to that owner is permissible. The option stating that cease and
+  desist zones only apply to telephone solicitation is incorrect because the prohibition applies to
+  any solicitation, including mail. The option stating that the action is allowed if the postcard is
+  sent via electronic mail rather than regular mail is incorrect because the rule does not
+  distinguish between electronic and regular mail; both constitute solicitation. The option stating
+  that the action constitutes a prohibited solicitation because the owner’s name is on the cease and
+  desist list is incorrect because, as explained, the name is not yet on the current list.
+citation:
+  source: "### N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — §
+    442-h(3)(a)"
+  url: null
+  quoted_text: shall solicit a listing from any owner who has filed a statement with the Secretary of
+    State if such owner’s name appears on the current cease and desist list prepared by the
+    Secretary of State.
+  secondary: []
+terms:
+  - cease and desist list
+  - owner statement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

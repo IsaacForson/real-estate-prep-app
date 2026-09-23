@@ -1,0 +1,41 @@
+id: NM-1-0057
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under New Mexico rule, which of the following describes a person who holds an associate broker
+  license but is **NOT** affiliated with a qualifying broker?
+options:
+  - A person holding a New Mexico associate broker license who works independently
+  - A person holding a New Mexico associate broker license who is affiliated with a qualifying broker
+  - A person holding a New Mexico associate broker license who is not affiliated with a qualifying
+    broker
+  - A person holding a New Mexico qualifying broker license who supervises associate brokers
+key: C
+explanation: The definition of an associate broker requires the person to be affiliated with a New
+  Mexico qualifying broker. Holding the license without that affiliation does not meet the
+  definition, so such a person is not considered an associate broker. A person who is affiliated
+  with a qualifying broker would meet the definition, while a qualifying broker or an independently
+  working licensee does not.
+citation:
+  source: "### 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61)
+    — NMREC License Law and Rules book, 2021 web edition 16.61.1.7"
+  url: null
+  quoted_text: "Associate broker: a person holding a New Mexico associate broker's license who is
+    affiliated with a New Mexico qualifying broker."
+  secondary: []
+terms:
+  - associate broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

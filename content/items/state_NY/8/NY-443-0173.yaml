@@ -1,0 +1,48 @@
+id: NY-443-0173
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A prelicensing course provider plans to teach the Valuation Process and Pricing Properties
+  segment in two equal sessions. How many hours should each session be to meet the requirement?
+options:
+  - 3.0 hours
+  - 1.0 hours
+  - 2.0 hours
+  - 1.5 hours
+key: D
+explanation: The regulation requires a total of 3 hours for the Valuation Process and Pricing
+  Properties segment. Splitting that total into two equal sessions gives 1.5 hours per session. The
+  option stating 3.0 hours mistakenly treats the total as the length of each session, and the option
+  stating 2.0 hours comes from halving an incorrect total of 4 hours.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Valuation Process and Pricing Properties   3
+  secondary: []
+math:
+  worked_solution: |-
+    total_hours = 3
+    number_of_sessions = 2
+    hours_per_session = 3 / 2 = 1.5
+  formulas:
+    - hours_per_session = total_hours / number_of_sessions
+  onscreen_calculator_only: false
+terms:
+  - valuation
+  - hours
+  - session
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

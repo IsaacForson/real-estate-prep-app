@@ -1,0 +1,44 @@
+id: MI-25-0102
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Michigan's Real Estate Transfer Tax Act, how is 'value' defined?
+options:
+  - The price listed in the most recent property tax assessment statement for the parcel being
+    transferred.
+  - The value determined by a licensed appraiser for mortgage financing purposes in the current
+    market.
+  - The current or fair market worth in terms of legal monetary exchange at the time of the transfer.
+  - The amount paid by the buyer to acquire the property from the seller in a typical transaction.
+key: C
+explanation: Under Mich. Comp. Laws § 207.501(c), 'value' means the current or fair market worth in
+  terms of legal monetary exchange at the time of the transfer. This matches the option stating that
+  value is the current or fair market worth in terms of legal monetary exchange at the time of the
+  transfer. The option referring to the price listed in the most recent property tax assessment
+  statement is incorrect because the statute does not tie value to tax assessments. The option
+  referring to a licensed appraiser’s valuation for mortgage financing is incorrect because the
+  definition does not rely on an appraiser’s opinion. The option referring to the amount paid by the
+  buyer is incorrect because the statutory definition is not limited to the purchase price in a
+  transaction.
+citation:
+  source: Mich. Comp. Laws §§ 207.501–207.513 § 207.501(c)
+  url: null
+  quoted_text: "'Value' means the current or fair market worth in terms of legal monetary exchange at
+    the time of the transfer."
+  secondary: []
+terms:
+  - value
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,40 @@
+id: CT-311-0084
+jurisdiction: CT
+bank: state_CT
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner transfers his residential property to his sister with no money exchanged. Under
+  Conn. Gen. Stat. §20-327b(b)(2), is a residential condition report required?
+options:
+  - Requires a separate affidavit of consideration
+  - Requires a home inspection instead of a condition report
+  - Exempt from the residential condition report requirement
+  - Subject to the residential condition report requirement
+key: C
+explanation: The statute exempts transfers to a sibling where no consideration is paid. Therefore,
+  no residential condition report is required. The distractor claiming the report is required
+  overlooks this specific family-transfer exemption.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-327b(b)(2)
+  url: null
+  quoted_text: transfers made to the spouse, mother, father, brother, sister, child, grandparent or
+    grandchild of the transferor where no consideration is paid
+  secondary: []
+terms:
+  - transfer
+  - consideration
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

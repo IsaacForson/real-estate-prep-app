@@ -1,0 +1,44 @@
+id: IA-543B-0139
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee initially discloses to a seller that they represent the seller only. Later, the
+  licensee begins representing the buyer in the same transaction without obtaining a new disclosure.
+  Under Iowa Code section 543B.57(2)(a), what must the licensee do?
+options:
+  - The licensee must provide a written brokerage agreement to the buyer.
+  - The licensee must disclose any personal interest in the property to the seller.
+  - The licensee must make a new agency disclosure to both parties immediately.
+  - The licensee must obtain written consent from both parties before continuing.
+key: C
+explanation: The rule requires a new disclosure immediately when a change in representation makes
+  the initial disclosure incomplete, misleading, or inaccurate. Here, adding buyer representation
+  changes the disclosure, so a new disclosure must be made right away. The distractor about
+  obtaining written consent from both parties is incorrect because consent for multiple
+  representation is addressed in section 543B.58, not the disclosure update mandated by
+  543B.57(2)(a).
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — §
+    543B.57(2)(a)
+  url: null
+  quoted_text: A change in a licensee’s representation that makes the initial disclosure incomplete,
+    misleading, or inaccurate requires that a new disclosure be made immediately.
+  secondary: []
+terms:
+  - disclosure
+  - representation
+  - specific assistance
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

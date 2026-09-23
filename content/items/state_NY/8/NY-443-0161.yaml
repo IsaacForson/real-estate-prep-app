@@ -1,0 +1,40 @@
+id: NY-443-0161
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A proprietary real‑estate school designs a 78‑hour salesperson course that omits the Valuation
+  Process and Pricing Properties unit entirely. According to the regulations, is this course
+  acceptable for licensure?
+options:
+  - The course is acceptable because it exceeds the 80‑hour total.
+  - The course is acceptable if the school substitutes another subject.
+  - The course is unacceptable because it omits a required subject.
+  - The course is unacceptable unless the school obtains a waiver.
+key: C
+explanation: Regulations require all approved courses to use the prescribed syllabus, which includes
+  the Valuation Process and Pricing Properties unit; omitting that unit makes the course
+  unacceptable. The option claiming acceptability with a substitute subject is wrong because the
+  syllabus must be followed exactly, not altered.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(b)
+  url: null
+  quoted_text: All approved courses must use this course syllabus in conducting their programs.
+  secondary: []
+terms:
+  - syllabus
+  - approved
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

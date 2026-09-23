@@ -1,0 +1,44 @@
+id: MI-25-0032
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: When renewing a license with a limitation under MCL 339.204, if the notified board neither
+  approves nor disapproves the limitation within 30 days, what may the department do?
+options:
+  - The department must withdraw the limitation
+  - The department may impose the limitation
+  - The department must schedule a hearing
+  - The department must deny the renewal
+key: B
+explanation: According to MCL 339.204(3), if the notified board does not approve or disapprove the
+  limitation within 30 days, the department may impose the limitation. The statute does not require
+  withdrawal, a hearing, or denial of renewal in this circumstance.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers MCL 339.204(3)"
+  url: null
+  quoted_text: However, if the notified board, within 30 days after receipt of the notification by the
+    department, does not approve or disapprove the imposition of a limitation, the department may
+    impose the limitation.
+  secondary: []
+terms:
+  - limitation
+  - board
+  - renewal
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

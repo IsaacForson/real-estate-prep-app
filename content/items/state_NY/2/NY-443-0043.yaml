@@ -1,0 +1,51 @@
+id: NY-443-0043
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: How is a 'designated sales agent' defined?
+options:
+  - A person who has entered into a listing agreement to act as an agent of the seller or landlord
+    for compensation and who is authorized to sell or lease the residential real property
+  - An agent that cooperates with a listing agent, buyer’s agent or tenant’s agent (but does not
+    work for the same firm) to assist in locating a property to sell, buy or lease respectively
+  - A licensed real estate salesperson or associate broker who works under a broker’s supervision
+    and represents a client when another client is represented by the same broker in the same
+    transaction
+  - An agent who finds a buyer for a property and presents an offer to purchase to the seller or
+    seller’s agent, negotiating on behalf of the buyer
+key: C
+explanation: "The statute defines a designated sales agent as a licensed real estate salesperson or
+  associate broker who works under a broker’s supervision and represents a client when a different
+  client is also represented by the same broker in the same transaction. The option that states this
+  matches the definition. The other options describe different agency relationships: one describes a
+  seller’s or landlord’s agent under a listing agreement, another describes a cooperating agent from
+  a different firm, and the fourth describes an agent who finds a buyer and presents an offer on the
+  buyer’s behalf. None of these fit the statutory definition of a designated sales agent."
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — §
+    443(1)(j)
+  url: null
+  quoted_text: “Designated sales agent” means a licensed real estate salesman or associate broker,
+    working under the supervision of a real estate broker, who has been assigned to represent a
+    client when a different client is also represented by such real estate broker in the same
+    transaction
+  secondary: []
+terms:
+  - designated sales agent
+  - broker
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: SC-57-0025
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A license applicant submits an examination application and includes the required application
+  fee. If the applicant later decides not to take the examination, what is the status of the
+  application fee under S.C. Code Ann. § 40-57-70(B)?
+options:
+  - It is applied to a future application.
+  - It is forfeited and not refunded by law.
+  - It is refunded upon request and void.
+  - It is transferred to the Education Fund.
+key: B
+explanation: The statute explicitly provides that an application fee is nonrefundable when submitted
+  with an examination or license application. Consequently, the fee is forfeited and not returned to
+  the applicant. The other options incorrectly suggest refund, reapplication, or transfer to the
+  Education Fund, which the statute does not authorize.
+citation:
+  source: S.C. Code Ann. § 40-57-70(B)
+  url: null
+  quoted_text: Application and license fees must be paid to the commission in advance and must
+    accompany an examination application or a license application. An application fee is
+    nonrefundable.
+  secondary: []
+terms:
+  - application
+  - fee
+  - nonrefundable
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

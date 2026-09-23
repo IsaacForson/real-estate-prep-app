@@ -1,0 +1,40 @@
+id: FL-475-0141
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Florida licensee advertises a home as having a new roof when the roof is actually 15 years
+  old and leaking. Under Florida Statutes, this advertisement is considered:"
+options:
+  - It is a false or misleading advertisement
+  - It is considered permissible puffery
+  - It is a fraudulent misrepresentation
+  - It is a required disclosure statement
+key: A
+explanation: The statute prohibits advertising that is fraudulent, false, deceptive, or misleading
+  in form or content (Fla. Stat. § 475.25(1)(c)). Describing an old, leaking roof as new is a false
+  or misleading statement. The distractor labeling it as permissible puffery is incorrect because
+  puffery does not cover false statements of fact.
+citation:
+  source: Fla. Stat. § 475.25(1)(c)
+  url: null
+  quoted_text: Has advertised property or services in a manner which is fraudulent, false, deceptive,
+    or misleading in form or content.
+  secondary: []
+terms:
+  - advertising
+  - "false"
+  - misleading
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

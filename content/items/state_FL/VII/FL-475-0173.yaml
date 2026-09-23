@@ -1,0 +1,47 @@
+id: FL-475-0173
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee's license period ends on June 30, 2025. On what date must the department have
+  mailed the notice of renewal and possible reversion to meet the statutory requirement?
+options:
+  - May 1, 2025.
+  - May 2, 2025.
+  - May 30, 2025.
+  - June 1, 2025.
+key: A
+explanation: Statute requires the department to mail the notice sixty days before the end of the
+  license period. Subtracting sixty days from June 30, 2025 yields May 1, 2025. The distractor "May
+  2, 2025" is one day late and therefore does not satisfy the sixty‑day requirement.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections — §
+    475.182(4)
+  url: null
+  quoted_text: Sixty days before the end of the license period and automatic reversion of a license to
+    inactive status, the department shall mail a notice of renewal and possible reversion to the
+    last known address of the licensee.
+  secondary: []
+math:
+  worked_solution: June 30, 2025 minus 30 days = May 31, 2025; May 31, 2025 minus 30 days = May 1, 2025.
+  formulas:
+    - Notice date = End date - 60 days
+  onscreen_calculator_only: false
+terms:
+  - renewal notice
+  - license period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

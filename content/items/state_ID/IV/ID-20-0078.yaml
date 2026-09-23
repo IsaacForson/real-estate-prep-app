@@ -1,0 +1,46 @@
+id: ID-20-0078
+jurisdiction: ID
+bank: state_ID
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate obtains a signed seller representation agreement at 3 p.m. on Monday. When
+  must the sales associate provide a copy of this agreement to the designated broker under Idaho
+  Code § 54-2050(4)?
+options:
+  - The sales associate must provide the copy to the designated broker by the end of the next
+    business day.
+  - The sales associate must provide the copy to the designated broker immediately upon signing.
+  - The sales associate must provide the copy to the designated broker within 24 hours of signing.
+  - The sales associate must provide the copy to the designated broker by the end of the same
+    business day.
+key: A
+explanation: The rule states that a sales associate who obtains a signed representation agreement
+  must provide a true and legible copy to the designated broker prior to the end of the next
+  business day. Providing it immediately or within 24 hours may be too early or too late depending
+  on when the agreement is signed, and waiting until the same day does not satisfy the 'next
+  business day' requirement.
+citation:
+  source: Idaho Code § 54-2050(4)
+  url: null
+  quoted_text: A sales associate who obtains a signed brokerage representation agreement of any kind
+    shall provide a true and legible copy of such representation agreement to the designated broker
+    or broker’s office prior to the end of the next business day.
+  secondary: []
+terms:
+  - sales associate
+  - designated broker
+  - representation agreement
+  - copy
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

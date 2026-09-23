@@ -1,0 +1,45 @@
+id: MN-82-0047
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker maintains a pooled interest-bearing trust account for client funds. Under Minnesota
+  law, what must the broker do with the interest earned on this account, after deducting reasonable
+  transaction costs, unless the parties have a written agreement stating otherwise?
+options:
+  - The broker must pay the interest to the Minnesota Housing Finance Agency
+  - The broker must retain the interest for the broker's office expenses
+  - The broker must distribute the interest equally to the buyer and seller
+  - The broker must credit the interest to the client's individual trust account
+key: A
+explanation: The statute provides that interest accruing on the trust account, less reasonable
+  transaction costs, must be paid to the Minnesota Housing Finance Agency for deposit in the housing
+  trust fund account unless an expressed written agreement between the parties directs otherwise.
+  Retaining the interest for office expenses is not permitted absent such an agreement.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.75 Subd. 8(a)
+  url: null
+  quoted_text: The interest accruing on the trust account, less reasonable transaction costs, must be
+    paid to the Minnesota Housing Finance Agency for deposit in the housing trust fund account
+    created under section 462A.201 unless otherwise specified pursuant to an expressed written
+    agreement between the parties to a transaction.
+  secondary: []
+terms:
+  - interest
+  - trust account
+  - Minnesota Housing Finance Agency
+  - written agreement
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

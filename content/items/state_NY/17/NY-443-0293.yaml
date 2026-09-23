@@ -1,0 +1,55 @@
+id: NY-443-0293
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "17"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: If a salesperson’s pre‑licensing course omits Income Tax Issues in Real Estate Transactions
+  entirely, how many total hours would the course be short of the required 80‑hour New York
+  salesperson pre‑licensing total?
+options:
+  - 2 hours
+  - 1 hours
+  - 4 hours
+  - 3 hours
+key: D
+explanation: The syllabus shows a total of 80 hours (77 hours of instruction plus 3 hours of final
+  examination) and allocates 3 hours to Income Tax Issues in Real Estate Transactions. Removing this
+  subject reduces the total to 77 hours, leaving a shortfall of 3 hours.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(a)
+  url: null
+  quoted_text: |-
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: |-
+    Total required hours = 80 hours (Instruction 77 + Final Examination 3).
+    Income Tax Issues in Real Estate Transactions allocated hours = 3 hours.
+    If omitted, course hours = 80 - 3 = 77 hours.
+    Shortfall = 80 - 77 = 3 hours.
+  formulas:
+    - Shortfall = Income Tax hours
+  onscreen_calculator_only: false
+terms:
+  - income tax
+  - total hours
+  - omission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,43 @@
+id: UT-101-0103
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee acts as buyer's agent but is actually purchasing the property for himself and does
+  not disclose this in writing. Under Utah Code Ann. § 61-2f-401(10), this conduct is grounds for
+  disciplinary action because:"
+options:
+  - It constitutes advertising the availability of real estate in a false, misleading, or deceptive
+    manner.
+  - It constitutes a failure to disclose in writing whether the transaction is made for an
+    undisclosed principal.
+  - It constitutes a failure to furnish a copy of a document to the parties before and after
+    execution.
+  - It constitutes a failure to keep and make available transaction records for inspection.
+key: B
+explanation: Section 61-2f-401(10) mandates written disclosure of whether a transaction is for an
+  undisclosed principal; failing to do so is grounds for discipline. The other options relate to
+  furnishing documents, maintaining records, or deceptive advertising, which are addressed
+  elsewhere.
+citation:
+  source: Utah Code Ann. § 61-2f-401(10)
+  url: null
+  quoted_text: (10) failing to disclose, in writing, in the purchase, sale, or rental of real estate,
+    whether the purchase, sale, or rental is made for that person or for an undisclosed principal;
+  secondary: []
+terms:
+  - undisclosed principal
+  - disclosure
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,51 @@
+id: NY-443-0255
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "15"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson applicant completes a pre‑licensing course that includes six hours of
+  instruction on Condominiums and Cooperatives and only three hours of instruction on Real Estate
+  Finance, which requires five hours. Under New York regulations, how many of the Condominiums and
+  Cooperatives hours may be applied to satisfy the Real Estate Finance requirement?
+options:
+  - 3 hours
+  - 2 hours
+  - 1 hour
+  - 0 hours
+key: D
+explanation: The syllabus specifies exact hour requirements for each subject, and all approved
+  courses must follow this syllabus. Hours earned in one subject cannot be substituted for another
+  subject's requirement, so excess Condominiums and Cooperatives hours do not count toward the
+  Finance deficit. Therefore none of the six hours may be applied to the Finance requirement.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+    (b) All approved courses must use this course syllabus in conducting their programs.
+  secondary: []
+terms:
+  - condominiums
+  - cooperatives
+  - course syllabus
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

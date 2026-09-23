@@ -1,0 +1,39 @@
+id: IA-543B-0082
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee scores 75 percent on the final examination for a 2-hour home-study continuing
+  education course. Does the licensee receive course credit?
+options:
+  - The licensee receives credit because the licensee answered enough questions correctly
+  - The licensee receives credit because the score meets the minimum requirement
+  - The licensee does not receive credit because the passing score is 80 percent
+  - The licensee does not receive credit because the licensee must retake the entire course
+key: C
+explanation: The rule requires a passing score of 80 percent for course credit; a score of 75
+  percent fails to meet this threshold. Therefore, the licensee does not receive credit. The option
+  suggesting the licensee receives credit is incorrect because the score is below the required
+  passing score.
+citation:
+  source: Iowa Admin. Code r. 481-2017 — Iowa Administrative Code 481—Chapter 2017 — Approv Al Of
+    Schools, Courses And Instructors (Real Estate Commission) 2017.11(5)
+  url: null
+  quoted_text: A passing score of 80 percent is needed for course credit to be granted.
+  secondary: []
+terms:
+  - passing score
+  - course credit
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

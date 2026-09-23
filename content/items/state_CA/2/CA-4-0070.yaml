@@ -1,0 +1,42 @@
+id: CA-4-0070
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A lender asks a homeowner to sign an agreement promising to indemnify the lender for any
+  liability arising from the lender’s actions in a real estate transaction. Under Section
+  2079.23(b), what is the legal effect of such an indemnity clause?
+options:
+  - Enforceable if the homeowner receives a copy of the agreement
+  - Valid only if approved by the real estate commissioner
+  - Against public policy, void, and unenforceable
+  - Permitted as long as it is limited to actual damages
+key: C
+explanation: Section 2079.23(b) declares any clause that imposes an obligation to defend or
+  indemnify a lender or auction company to be against public policy, void, and unenforceable. The
+  suggestion that such a clause is permitted if limited to actual damages contradicts the blanket
+  prohibition.
+citation:
+  source: Cal. Civ. Code §§ 2079–2079.25 — Cal. Civil Code - ARTICLE 2. Duty to Prospective Purchaser
+    of Real Property 2079-2079.25 § 2079.23
+  url: null
+  quoted_text: Any clause, provision, covenant, or agreement purporting to impose an obligation to
+    defend or indemnify a lender or an auction company in violation of this subdivision is against
+    public policy, void, and unenforceable.
+  secondary: []
+terms:
+  - indemnity
+  - public policy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

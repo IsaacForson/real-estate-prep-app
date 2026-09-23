@@ -1,0 +1,43 @@
+id: CA-4-0112
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A grantor conveys the same parcel of land to Buyer A by deed but does not record the deed.
+  Later, the grantor conveys the same parcel to Buyer B for valuable consideration, and Buyer B
+  records the deed first. Under Cal. Civ. Code § 1214, which party prevails in a dispute over title?
+options:
+  - Buyer A prevails because they received the deed first and paid value
+  - The grantor prevails because neither deed was recorded and no notice was given
+  - Buyer B prevails because they recorded first and are a bona fide purchaser for value
+  - Both buyers prevail because they each hold an undivided interest in the property
+key: C
+explanation: Cal. Civ. Code § 1214 states that a conveyance is void against any subsequent purchaser
+  in good faith who records first. Buyer B is a subsequent purchaser who paid value and recorded
+  before Buyer A, so Buyer A's deed is void as against Buyer B. The claim that the first recipient
+  of the deed prevails is incorrect because the statute protects the first to record, not the first
+  to receive the deed.
+citation:
+  source: Cal. Civ. Code § 1214
+  url: null
+  quoted_text: is void as against any subsequent purchaser or mortgagee of the same property, or any
+    part thereof, in good faith and for a valuable consideration, whose conveyance is first duly
+    recorded
+  secondary: []
+terms:
+  - recording
+  - good faith
+  - valuable consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

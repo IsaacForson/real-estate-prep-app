@@ -1,0 +1,37 @@
+id: CT-311-0042
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person appointed to the Connecticut Real Estate Commission has not yet taken the required
+  oath of office. May this member vote on a license renewal application at the commission's next
+  meeting?
+options:
+  - Yes, because the oath is only required for the chairperson.
+  - No, the member must take and file the oath before performing any duties, including voting.
+  - Yes, as long as the member has taken and filed the oath of office.
+  - No, but the member may observe meetings without taking the oath.
+key: B
+explanation: The statute requires each member to take and file an oath before entering upon any
+  duties. Voting is a duty, so the member may not vote until the oath is taken.
+citation:
+  source: Conn. Gen. Stat. § 20-311a(c)
+  url: null
+  quoted_text: Each member shall, before entering upon his duties, take and file with the commission
+    an oath to faithfully perform the duties of his office.
+  secondary: []
+terms:
+  - oath
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

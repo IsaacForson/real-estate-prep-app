@@ -1,0 +1,43 @@
+id: UT-101-0142
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person has occupied a parcel openly for five years, then abandoned possession for eight
+  months, then resumed occupancy for another three years. Under Utah law, can the person establish
+  adverse possession?
+options:
+  - Adverse possession is established because total occupancy exceeds seven years.
+  - Adverse possession is not established because the occupation was not continuous for seven years.
+  - Adverse possession is established if the person pays back taxes for the abandonment period.
+  - Adverse possession is not established because the legal title holder remained in possession.
+key: B
+explanation: According to Utah Code § 78B-2-214, adverse possession requires continuous occupation
+  for seven years. An eight‑month abandonment breaks that continuity, so the claim cannot succeed
+  regardless of total time or tax payment. The distractor asserting that total occupancy exceeding
+  seven years is sufficient misstates the continuity requirement.
+citation:
+  source: Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-214
+  url: null
+  quoted_text: Adverse possession may not be established unless it is shown that the land has been
+    occupied and claimed continuously for seven years
+  secondary: []
+terms:
+  - continuous
+  - occupation
+  - adverse possession
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -6,7 +6,23 @@ const studyState = useStudyState();
 const q = ref("");
 const letter = ref<string | null>(null);
 const open = ref<string | null>(null);
+const filterEl = ref<HTMLElement | null>(null);
+const resultsEl = ref<HTMLElement | null>(null);
 onMounted(() => { void content.load(); });
+
+/** After a letter or search change, put the first match under the sticky filters. */
+function revealFirst() {
+  if (!import.meta.client) return;
+  nextTick(() => {
+    const list = resultsEl.value;
+    if (!list) return;
+    const barBottom = filterEl.value?.getBoundingClientRect().bottom ?? 0;
+    const delta = list.getBoundingClientRect().top - barBottom - 12;
+    if (Math.abs(delta) < 2) return;
+    window.scrollBy({ top: delta, behavior: "auto" });
+  });
+}
+watch([letter, () => q.value.trim()], revealFirst);
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const banks = computed(() => new Set([jur.value ? `state_${jur.value}` : null, "national_pearsonvue", "national_psi"].filter(Boolean)));
 const all = computed(() => (content.manifest.value?.glossary ?? []).filter((t) => banks.value.has(t.bank)).sort((a, b) => a.term.localeCompare(b.term)));
@@ -26,6 +42,7 @@ const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" :
     </p>
 
     <div
+      ref="filterEl"
       class="sticky top-[calc(env(safe-area-inset-top)+3.5rem)] z-20 -mx-4 grid gap-2.5 border-b border-line bg-bg px-4 pt-2 pb-3"
     >
       <AppInput
@@ -61,6 +78,7 @@ const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" :
       <p class="tabular px-1 text-[11.5px] text-muted" aria-live="polite">{{ terms.length }} of {{ all.length }} terms</p>
     </div>
 
+    <div ref="resultsEl">
     <ul v-if="terms.length" class="grid gap-2">
       <li v-for="t in terms" :key="t.bank + t.term">
         <article class="overflow-hidden rounded-card border border-line bg-surface">
@@ -110,5 +128,6 @@ const chip = (on: boolean) => (on ? "border-accent bg-accent-soft text-accent" :
     >
       <AppButton v-if="all.length && (q || letter)" variant="secondary" size="sm" @click="q = ''; letter = null">Clear filters</AppButton>
     </EmptyState>
+    </div>
   </div>
 </template>

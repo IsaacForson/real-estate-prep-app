@@ -1,0 +1,46 @@
+id: WI-452-0051
+jurisdiction: WI
+bank: state_WI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller delivers a quitclaim deed to a buyer while the seller's tenant remains in possession
+  of the land, claiming title by adverse possession. Is the conveyance void under Wis. Stat. §
+  706.10(2)?
+options:
+  - Under Wis. Stat. § 706.10(2), yes, because adverse possession voids any conveyance
+  - Under Wis. Stat. § 706.10(2), no, the conveyance is not void merely because the land is in
+    adverse possession at delivery
+  - Under Wis. Stat. § 706.10(2), yes, unless the buyer obtains a court order ejecting the possessor
+  - Under Wis. Stat. § 706.10(2), no, but the buyer must first record the deed to protect against
+    the claim
+key: B
+explanation: Under Wis. Stat. § 706.10(2), a conveyance is not void simply because the land is in
+  adverse possession of another at the time of delivery. The option stating that the conveyance is
+  not void merely because the land is in adverse possession at delivery correctly reflects this
+  rule. The option claiming that adverse possession automatically voids the conveyance is incorrect
+  because the statute expressly denies that adverse possession alone voids a conveyance.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.10(2)
+  url: null
+  quoted_text: No conveyance shall be void for the reason that at the time of delivery thereof such
+    lands are in actual possession of a person claiming under title adverse to the grantor.
+  secondary: []
+terms:
+  - adverse
+  - possession
+  - conveyance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

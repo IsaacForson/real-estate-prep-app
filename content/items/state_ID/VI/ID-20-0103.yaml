@@ -1,0 +1,44 @@
+id: ID-20-0103
+jurisdiction: ID
+bank: state_ID
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Idaho Code § 54-2004, which of the following scenarios constitutes 'acting in this state'?
+options:
+  - A licensee who lists a property located in Oregon for sale and negotiates with a buyer residing
+    in Oregon.
+  - A licensee who lists a property located in Montana for sale and negotiates with a buyer residing
+    in Montana.
+  - A licensee who lists a property located in Idaho for sale and negotiates with a buyer residing
+    in Oregon.
+  - A licensee who lists a property located in Washington for sale and negotiates with a buyer
+    residing in Washington.
+key: C
+explanation: The definition of 'acting in this state' includes dealing with any interest in real
+  property situated in Idaho. Listing an Idaho property satisfies this requirement regardless of the
+  buyer's residence. The scenario where the licensee lists a Montana property and negotiates with a
+  Montana buyer might be mistakenly thought to constitute acting in this state because the licensee
+  is engaged in a real estate transaction, but the definition requires the property to be situated
+  in Idaho or the client to be an Idaho resident.
+citation:
+  source: Idaho Code § 54-2004(2)
+  url: null
+  quoted_text: dealing with any interest in real property, or a business opportunity involving an
+    interest in real property, that is situated in the state of Idaho
+  secondary: []
+terms:
+  - acting in this state
+  - real property
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

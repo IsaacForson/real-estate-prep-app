@@ -1,0 +1,52 @@
+id: NY-443-0200
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "13"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: What percentage of the total 80‑hour salesperson course is devoted to license safety?
+options:
+  - License safety represents 2.5% of the total course.
+  - License safety represents 2.0% of the total course.
+  - License safety represents 1.5% of the total course.
+  - License safety represents 1.25% of the total course.
+key: D
+explanation: License safety is 1 hour out of 80 total hours, which equals 1.25 % when multiplied by
+  100. The distractor of 1.5 % results from mistakenly using 1.2 hours or miscalculating the
+  fraction.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    License Safety      1
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: 1 hour ÷ 80 hours = 0.0125; 0.0125 × 100 = 1.25%
+  formulas:
+    - percentage = (part ÷ whole) × 100
+  onscreen_calculator_only: false
+terms:
+  - percentage
+  - course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

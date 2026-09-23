@@ -1,0 +1,39 @@
+id: CA-4-0103
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Cal. Civ. Code § 2924e(b), what fee must accompany a request for notice of delinquencies
+  on a senior lien?
+options:
+  - $30.00
+  - $15.00
+  - $60.00
+  - $40.00
+key: D
+explanation: The statute requires that a request for notice be accompanied by the trustor's written
+  consent and a fee of forty dollars ($40). The $15.00 distractor reflects the renewal fee for
+  nonresidential properties after five notices, not the initial request fee.
+citation:
+  source: Cal. Civ. Code § 2924e(b)
+  url: null
+  quoted_text: and shall include or be accompanied by the signed written consent of the trustor or
+    mortgagor, and a fee of forty dollars ($40).
+  secondary: []
+terms:
+  - fee
+  - request
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

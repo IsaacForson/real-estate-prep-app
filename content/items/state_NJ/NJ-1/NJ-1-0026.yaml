@@ -1,0 +1,50 @@
+id: NJ-1-0026
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker whose main office is located outside New Jersey wants to employ unlicensed assistants
+  at a New Jersey branch office. Under N.J. Stat. Ann. § 45:15-20, is this permissible?
+options:
+  - The broker may employ only licensed brokers at the branch office
+  - The broker may employ assistants if they hold a real estate license from any state
+  - The broker may employ assistants who hold New Jersey broker-salesperson or salesperson licenses
+  - The broker may employ unlicensed assistants at the branch office
+key: C
+explanation: The statute provides that a broker whose main office is outside this State may only
+  provide brokerage services concerning real estate located within the State either personally or
+  through persons in the broker's employ or with whom the broker has contracted who are holders of
+  real estate broker-salesperson or salesperson licenses issued by the commission. Therefore
+  employing assistants who hold New Jersey broker‑salesperson or salesperson licenses is allowed.
+  The most tempting distractor, employing unlicensed assistants, is incorrect because the law
+  requires those persons to be licensed as broker‑salespersons or salespersons in New Jersey.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-20
+  url: null
+  quoted_text: A licensed broker whose main office is not located within this State shall only provide
+    brokerage services concerning real estate located within this State either personally or through
+    persons in the broker's employ or with whom the broker has contracted who are the holders of
+    real estate broker-salesperson or salesperson licenses issued by the commission.
+  secondary: []
+terms:
+  - nonresident
+  - broker
+  - license
+  - employ
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

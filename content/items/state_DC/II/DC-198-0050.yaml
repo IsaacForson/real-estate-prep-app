@@ -1,0 +1,41 @@
+id: DC-198-0050
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: For an applicant seeking a real estate salesperson license in the District of Columbia, what
+  is the minimum age requirement according to D.C. Code § 47-2853.12(a)(2)?
+options:
+  - At least 21 years of age
+  - At least 16 years of age
+  - At least 18 years of age
+  - At least 17 years of age
+key: C
+explanation: The statute states that an applicant must be at least 18 years of age, unless applying
+  for certain barber or cosmetologist licenses which allow 17 years of age. Since the applicant is
+  seeking a real estate salesperson license, the 18‑year threshold applies. The option stating 17
+  years of age is incorrect because that exception does not cover real estate licensure.
+citation:
+  source: "### D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.12"
+  url: null
+  quoted_text: Is at least 18 years of age, or at least 17 years of age if applying for license as a
+    barber under § 47-2853.72 or as a cosmetologist, a cosmetologist-manager, a cosmetologist-owner,
+    or any subcategory of specialty cosmetologist under § 47-2853.82;
+  secondary: []
+terms:
+  - age
+  - licensure
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

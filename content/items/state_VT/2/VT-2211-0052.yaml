@@ -1,0 +1,43 @@
+id: VT-2211-0052
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a buyer’s earnest money deposit is expected to earn substantial interest and the buyer
+  requests an interest‑bearing account, what happens to the interest if the buyer defaults on the
+  contract?
+options:
+  - The interest is payable to the seller
+  - The interest is forfeited to the broker
+  - The interest is returned to the buyer
+  - The interest is applied to the purchase price
+key: A
+explanation: Subsection (b)(1) provides that interest shall be payable to the seller if the buyer
+  defaults (§ 2214(b)(1)). The other options describe outcomes for a consummated sale or a returned
+  deposit, not a default.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2214(b)(1)
+  url: null
+  quoted_text: Unless otherwise agreed to in writing by all parties, the interest earned shall be
+    applied to the purchase price due from the buyer if the sale is consummated, shall be returned
+    to the buyer if the deposit is returned to the buyer, and shall be payable to the seller if the
+    buyer defaults.
+  secondary: []
+terms:
+  - interest
+  - buyer default
+  - seller
+  - escrow
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

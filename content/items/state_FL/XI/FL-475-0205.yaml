@@ -1,0 +1,44 @@
+id: FL-475-0205
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under Florida Statute 475.41, a contract for a commission or compensation for any act or
+  service requiring a real estate license is:"
+options:
+  - A contract that is valid if the unlicensed person obtains a license before the service is
+    performed.
+  - A contract that is valid if the parties sign a written agreement regardless of licensing.
+  - A contract that is valid only if the broker or sales associate holds a current active license
+    when the service is performed.
+  - A contract that is invalid even if the broker or sales associate is licensed at the time of
+    service.
+key: C
+explanation: The statute states that a contract for commission is invalid unless the broker or sales
+  associate has complied with licensing requirements at the time the service was performed. The
+  distractor suggesting validity if the license is obtained beforehand is incorrect because the
+  license must be held when the act or service occurs.
+citation:
+  source: Fla. Stat. § 475.41
+  url: null
+  quoted_text: No contract for a commission or compensation for any act or service enumerated in s.
+    475.01(3) is valid unless the broker or sales associate has complied with this chapter in regard
+    to issuance and renewal of the license at the time the act or service was performed.
+  secondary: []
+terms:
+  - contract
+  - commission
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

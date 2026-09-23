@@ -1,0 +1,45 @@
+id: NY-443-0060
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller is offering a condominium unit for sale. Is the seller required to complete and sign
+  a property condition disclosure statement under the Property Condition Disclosure Act?
+options:
+  - The seller must complete and sign a property condition disclosure statement.
+  - The seller must complete but not sign the property condition disclosure statement.
+  - The seller is not required to complete or sign a property condition disclosure statement.
+  - The seller must sign but not complete the property condition disclosure statement.
+key: C
+explanation: The definition of residential real property explicitly excludes condominium units, so
+  the disclosure statement is not required. Assuming all sales require disclosure—that the seller
+  must complete and sign a property condition disclosure statement—overlooks this exemption.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462
+  url: null
+  quoted_text: “Residential real property” means real property improved by a one to four family
+    dwelling used or occupied, or intended to be used or occupied, wholly or partly, as the home or
+    residence of one or more persons, but shall not refer to (a) unimproved real property upon which
+    such dwellings are to be constructed or (b) condominium units or cooperative apartments or (c)
+    property on a homeowners’ association that is not owned in fee simple by the seller.
+  secondary: []
+terms:
+  - condominium
+  - disclosure
+  - residential real property
+  - seller
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

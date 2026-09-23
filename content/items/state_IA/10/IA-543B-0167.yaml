@@ -1,0 +1,46 @@
+id: IA-543B-0167
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "10"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee directs an unlicensed assistant to record and deposit earnest money received from a
+  buyer. Under Iowa Admin. Code r. 481-2007, is this activity permitted?
+options:
+  - No, it is not permitted because earnest money may only be handled by individuals holding a real
+    estate license.
+  - Yes, it is permitted provided the assistant has received written approval from the designated
+    broker.
+  - No, it is not permitted because earnest money may only be handled by licensed real estate
+    professionals.
+  - Yes, it is permitted because recording and depositing earnest money is a permitted activity for
+    unlicensed support personnel.
+key: D
+explanation: The rule explicitly lists recording and depositing earnest money as a permitted
+  activity for unlicensed support personnel working under a licensee's supervision. The most
+  tempting distractor incorrectly suggests that individual written approval from the broker is
+  required, but the rule only mandates that the broker maintain a written company policy authorizing
+  support personnel and provide copies of the duties, not case‑by‑case approval.
+citation:
+  source: Iowa Admin. Code r. 481-2007 2007.13(4)(a)(9)
+  url: null
+  quoted_text: Record and deposit earnest money, security deposits, and advance rents, and perform
+    other bookkeeping duties;
+  secondary: []
+terms:
+  - unlicensed assistant
+  - earnest money
+  - support personnel
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

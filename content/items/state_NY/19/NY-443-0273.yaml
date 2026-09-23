@@ -1,0 +1,41 @@
+id: NY-443-0273
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "19"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker holds a tenant's security deposit but fails to pay the interest required by law.
+  Under 19 NYCRR §175.3(b), what is the consequence?
+options:
+  - The broker must return the deposit without interest
+  - The broker may retain the interest as compensation
+  - The broker may face disciplinary action by the Secretary of State
+  - The broker is exempt if the deposit is held less than sixty days
+key: C
+explanation: The regulation states that failure to pay, apply, or credit any required interest
+  constitutes grounds for disciplinary action by the Secretary of State, so the broker may face
+  discipline. The distractor about returning the deposit without interest is wrong because the rule
+  does not mandate that remedy; it focuses on the interest obligation and disciplinary consequences.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.3
+  url: null
+  quoted_text: Failure to so comply, including failure to pay, apply or credit any required interest,
+    shall constitute grounds for disciplinary or other appropriate action by the Secretary of State.
+  secondary: []
+terms:
+  - interest
+  - deposit
+  - disciplinary
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

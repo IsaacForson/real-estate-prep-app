@@ -1,0 +1,42 @@
+id: FL-475-0131
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee sends a purchase and sale agreement to a buyer via facsimile, and the buyer signs
+  and returns the faxed copy. Under Florida law, is the facsimile signature binding and sufficient
+  for the agreement?
+options:
+  - The facsimile signature is binding only if given a court order for the inspection.
+  - The facsimile signature is not binding; only an original signature is valid.
+  - The facsimile signature is binding and sufficient under Florida law.
+  - The facsimile signature is binding only if transmitted via certified mail.
+key: C
+explanation: The facsimile signature is binding and sufficient because the law expressly provides
+  that a signature transmitted by facsimile is binding and sufficient when a writing or signature is
+  required. The option stating that only an original signature is valid contradicts the statute,
+  which treats facsimile signatures as legally equivalent to original signatures.
+citation:
+  source: Fla. Stat. § 475.5018
+  url: null
+  quoted_text: When any act performed under this part must be performed in writing or acknowledged
+    with a signature, the provision of an instrument or writing by electronic means or facsimile,
+    including a signature transmitted by electronic means or facsimile, is binding and sufficient.
+  secondary: []
+terms:
+  - facsimile
+  - signature
+  - binding
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,44 @@
+id: ND-23-0047
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee wishes to transfer to a new broker, but the current broker refuses to agree to the
+  transfer without providing a justified reason. According to N.D. Admin. Code § 70-02-01-08, what
+  is the outcome?
+options:
+  - The transfer will be denied because the current broker refused.
+  - The transfer will be automatically approved without any forms.
+  - The transfer will require a new license application.
+  - The transfer will be pending until the transfer form and fee are submitted.
+key: D
+explanation: Unless the current broker provides sufficient justification for refusal, the license
+  will be transferred pending receipt of the transfer form and fee. Since the broker refused without
+  offering a justified reason, there is insufficient justification, so the transfer proceeds once
+  the form and fee are submitted. The option claiming automatic approval ignores the required form
+  and fee, and the option claiming denial contradicts the provision that lack of justification does
+  not block the transfer.
+citation:
+  source: "### N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-08"
+  url: null
+  quoted_text: Unless there is sufficient justification, the license will be transferred pending the
+    receipt of the transfer form and fee.
+  secondary: []
+terms:
+  - transfer
+  - broker
+  - licensee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

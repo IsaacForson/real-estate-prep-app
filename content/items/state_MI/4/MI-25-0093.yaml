@@ -1,0 +1,51 @@
+id: MI-25-0093
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker hires an associate broker as a designated agent for a buyer client but does not
+  execute a written designated agency agreement. According to Mich. Comp. Laws § 339.2517(6), what
+  is the client's agency relationship?
+options:
+  - The client has an agency relationship only with the designated associate broker
+  - The client has an agency relationship with the broker and all affiliated licensees
+  - The client has no agency relationship until a written agreement is signed
+  - The client has a dual agency relationship with the broker and the associate broker
+key: B
+explanation: Mich. Comp. Laws § 339.2517(6) provides that when no written designated agency
+  agreement is executed, the client is deemed to have an agency relationship with the broker and all
+  affiliated licensees. The option stating that the client’s relationship is limited to the
+  designated associate broker is incorrect because the law treats the broker and all affiliated
+  licensees as the client’s agents. The option claiming no relationship exists without a written
+  agreement contradicts the statute, which creates the relationship by default. The option
+  describing a dual agency relationship is inaccurate because dual agency requires the client’s
+  informed consent to represent both parties, which is not established here.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2517(6)
+  url: null
+  quoted_text: A broker and a client may enter into a designated agency agreement. In the absence of a
+    written designated agency agreement, a client is considered to have an agency relationship with
+    the broker and all affiliated licensees.
+  secondary: []
+terms:
+  - designated agency agreement
+  - affiliated licensee
+  - broker
+  - client
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

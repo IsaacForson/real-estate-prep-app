@@ -1,0 +1,43 @@
+id: UT-101-0048
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A principal broker dies, and the brokerage designates an acting principal broker under Utah
+  Admin. Code R162-2f-202e. Four months later, the acting broker attempts to sign a new listing
+  agreement with a buyer. Is this permitted?
+options:
+  - Yes, provided the acting broker first notifies the division.
+  - No, because an acting principal broker may not agree to represent new clients.
+  - No, because the acting broker must close all pending transactions first.
+  - Yes, because the acting broker may continue business activities for up to four months.
+key: B
+explanation: Rule R162-2f-202e(7)(a) explicitly prohibits an acting principal broker from agreeing
+  to represent new clients. The four‑month limit in (7)(b) refers to continuing existing business
+  activities, not taking new clients.
+citation:
+  source: "### Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah
+    Administrative Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective
+    Aug. 16, 2023), fetched live from the Utah Office of Administrative Rules public API (HTML
+    download behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-202e(7)(a)"
+  url: null
+  quoted_text: "An acting principal broker may not: (a) agree to represent new clients; or (b)
+    continue the business activities of the brokerage for more than four months after the occurrence
+    of the death or incapacity of the principal broker."
+  secondary: []
+terms:
+  - acting principal broker
+  - new clients
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

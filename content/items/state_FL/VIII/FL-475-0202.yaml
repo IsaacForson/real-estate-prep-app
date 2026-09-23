@@ -1,0 +1,43 @@
+id: FL-475-0202
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Florida Statute 475.278(5)(a), which of the following qualifies as a residential sale?
+options:
+  - Sale of unimproved residential property intended for six units
+  - Sale of agricultural property consisting of fifteen acres
+  - Sale of improved residential property with three units
+  - Sale of improved residential property with five units
+key: C
+explanation: According to Fla. Stat. ch. 475 § 475.278(5)(a), a residential sale includes the sale
+  of improved residential property of four units or fewer, the sale of unimproved residential
+  property intended for use of four units or fewer, or the sale of agricultural property of ten
+  acres or fewer. The option describing improved residential property with three units meets the
+  four‑unit limit, so it qualifies as a residential sale. The option describing agricultural
+  property of fifteen acres exceeds the ten‑acre limit, and the options describing unimproved
+  property for six units and improved property with five units each exceed the four‑unit limit, so
+  they do not qualify.
+citation:
+  source: Fla. Stat. ch. 475 § 475.278(5)(a)
+  url: null
+  quoted_text: the sale of improved residential property of four units or fewer
+  secondary: []
+terms:
+  - residential sale
+  - improved residential property
+  - units
+  - agricultural property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

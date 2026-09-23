@@ -1,0 +1,42 @@
+id: NM-1-0093
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker tells a broker verbally that they will represent a seller client as the
+  exclusive agent in an upcoming transaction. No written designation is made. Under 16.61.19.8 NMAC,
+  is this broker a designated agent?
+options:
+  - The broker is not a designated agent because the designation must be in writing.
+  - The broker is a designated agent because they represent the client exclusively.
+  - The broker is not a designated agent because the broker is not the qualifying broker.
+  - The broker is a designated agent because the qualifying broker made the designation.
+key: A
+explanation: A designated agent must be designated in writing by the qualifying broker to represent
+  a client as an exclusive agent. A verbal designation does not satisfy the writing requirement, so
+  the broker is not a designated agent. The claim that the broker is not a designated agent because
+  the broker is not the qualifying broker is incorrect; the writing requirement applies regardless
+  of who makes the designation.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.19.8
+  url: null
+  quoted_text: designated in writing by their qualifying broker
+  secondary: []
+terms:
+  - designated agent
+  - written
+  - qualifying broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

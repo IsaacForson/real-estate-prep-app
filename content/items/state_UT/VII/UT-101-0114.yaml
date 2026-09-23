@@ -1,0 +1,46 @@
+id: UT-101-0114
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee has two separate transactions each resulting in a final judgment of $12,000 in
+  uncollected actual damages. Assuming the fund has sufficient money, what is the maximum amount the
+  fund may pay for these judgments combined?
+options:
+  - $15,000
+  - $50,000
+  - $24,000
+  - $30,000
+key: C
+explanation: The fund's liability is limited to $15,000 per single transaction and $50,000 per
+  licensee. Each transaction's $12,000 judgment is under the per‑transaction cap, so both can be
+  paid in full, totaling $24,000, which also stays under the per‑licensee limit.
+citation:
+  source: Utah Code Ann. § 61-2f-506(3)(c)
+  url: null
+  quoted_text: "(c) Regardless of the number of claimants or parcels of real estate involved in a real
+    estate transaction, the liability of the fund may not exceed: (i) $15,000 for a single
+    transaction; and (ii) $50,000 for one licensee."
+  secondary: []
+math:
+  worked_solution: $12,000 + $12,000 = $24,000
+  formulas:
+    - Total recoverable = Σ (judgment amount per transaction)
+  onscreen_calculator_only: false
+terms:
+  - fund liability
+  - transaction limit
+  - licensee limit
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

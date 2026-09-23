@@ -1,0 +1,49 @@
+id: MI-25-0075
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker provides daily direct communication and written operating policies to a salesperson
+  but never reviews the salesperson's practice or reports. Does this satisfy the broker's
+  supervision duty under Michigan's occupational code?
+options:
+  - Under Michigan's occupational code, this satisfies the supervision duty because direct
+    communication and written policies are sufficient.
+  - Under Michigan's occupational code, this does not satisfy the supervision duty because review of
+    practice and review of reports are required.
+  - Under Michigan's occupational code, this does not satisfy the supervision duty because written
+    policies must be provided monthly.
+  - Under Michigan's occupational code, this satisfies the supervision duty as long as the
+    salesperson receives weekly guidance.
+key: B
+explanation: Supervision under §339.2512f(1) requires at least direct communication, review of
+  practice, review of reports, analyses and guidance, and written operating policies. Because the
+  broker never reviews the salesperson's practice or reports, the supervision duty is not satisfied.
+  The option stating that direct communication and written policies are sufficient incorrectly
+  treats them as sufficient.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512f
+  url: null
+  quoted_text: (b) Review of the practice of the salesperson. (c) Review of the salesperson's reports.
+  secondary: []
+terms:
+  - supervision
+  - practice
+  - reports
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

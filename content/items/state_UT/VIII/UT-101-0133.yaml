@@ -1,0 +1,52 @@
+id: UT-101-0133
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant holds a tax title to a parcel for four years, paid property taxes for three of
+  those years but failed to pay taxes in the second year, and the legal title owner never occupied
+  the property during that period. Under Utah law, what is the effect on the claimant's adverse
+  possession claim?
+options:
+  - The claimant's adverse possession claim is not presumed valid due to failure to pay taxes for
+    the full four-year period.
+  - The claimant's adverse possession claim is presumed valid because the tax title was held for
+    four years.
+  - The claimant's adverse possession claim depends on payment of back taxes for the missed year.
+  - The claimant's adverse possession claim is valid only if the legal title owner had occupied the
+    property.
+key: A
+explanation: Under Utah Code § 78B-2-209(2), the presumption of ownership from a tax title held for
+  four years is rebutted if the tax title owner failed to pay all taxes within that period; thus the
+  claimant cannot rely on the presumption.
+citation:
+  source: Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-209
+  url: null
+  quoted_text: (2) If in any action a party establishes prima facie evidence of ownership of any real
+    property under a tax title held by him and his predecessors for four years prior to the
+    commencement of the action, he is presumed to be the owner of the property by adverse
+    possession. This presumption may be rebutted if it appears that the owner of the legal title or
+    his predecessor has actually occupied or been in possession of the property under the title or
+    that the tax title owner and his predecessors have failed to pay all the taxes levied or
+    assessed upon the property within the four-year period.
+  secondary: []
+terms:
+  - tax title
+  - adverse possession
+  - presumption
+  - tax payment
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

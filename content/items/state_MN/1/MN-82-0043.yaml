@@ -1,0 +1,47 @@
+id: MN-82-0043
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer provides a stock certificate as earnest money for a real estate purchase. What must
+  the broker do with this nondepositable item under Minnesota law?
+options:
+  - The broker must deposit the item directly into the trust account
+  - The broker must deposit it with an escrow agent and give the buyer a receipt
+  - The broker must hold the item in the broker's personal account
+  - The broker must return it to the buyer within one business day
+key: B
+explanation: The statute requires that nondepositable items such as stock certificates be deposited
+  immediately with an authorized escrow agent and that a receipt be issued to the buyer for the
+  item's value. Depositing the item directly into the trust account is prohibited because the item
+  is not cash or a check.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.75 Subd. 3
+  url: null
+  quoted_text: In the event earnest money or other down payments in a real estate transaction are
+    received by the broker or salesperson in the form of a nondepositable item such as a note, bond,
+    stock certificate, treasury bill, or any other instrument or equity or thing of value received
+    by a broker, salesperson, or closing agent received in lieu of cash shall be deposited
+    immediately with an authorized escrow agent, whose authority is evidenced by a written agreement
+    executed by the offeror and the escrow agent. A receipt shall be issued to the buyer for the
+    value of the nondepositable item.
+  secondary: []
+terms:
+  - earnest money
+  - nondepositable item
+  - escrow agent
+  - receipt
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

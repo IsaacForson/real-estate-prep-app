@@ -1,0 +1,44 @@
+id: ID-20-0091
+jurisdiction: ID
+bank: state_ID
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker holds earnest money in a trust account and the purchase agreement states that the
+  funds are to be disbursed to the escrow closing agent. According to Idaho Code § 54-2046(3), when
+  must the broker make this disbursement?
+options:
+  - Disbursing the funds on or before the day of closing
+  - Disbursing the funds after the deed has been recorded
+  - Disbursing the funds only after receiving written authorization from the buyer and seller
+  - Disbursing the funds only after the closing agent provides a receipt for the disbursement
+key: A
+explanation: Subsection (3) requires that disbursements to the escrow closing agent be made on or
+  before the day of closing when the purchase agreement so provides. Disbursing after the deed is
+  recorded occurs after closing and violates this timing rule. Written authorization is not required
+  for escrow disbursements under this subsection, and a receipt is to be retained, not obtained as a
+  precondition.
+citation:
+  source: Idaho Code § 54-2046(3)
+  url: null
+  quoted_text: When set forth in the purchase and sale agreement that funds are to be disbursed to the
+    person or company named as the escrow closing agent or agency, such disbursement shall be made
+    to the person, company, agent or agency on or before the day of closing, and a receipt for such
+    disbursement shall be retained in the broker’s transaction file.
+  secondary: []
+terms:
+  - escrow
+  - disbursement
+  - closing
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

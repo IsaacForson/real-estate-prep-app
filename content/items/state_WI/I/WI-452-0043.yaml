@@ -1,0 +1,39 @@
+id: WI-452-0043
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee records a mortgage to a state bank on January 1. On February 15, a tax lien is
+  filed against the property. Which has priority under Wis. Stat. § 706.11(1)?
+options:
+  - Both the mortgage and the tax lien share equal priority.
+  - Neither the mortgage nor the tax lien affects priority.
+  - The mortgage has priority over the tax lien.
+  - The tax lien has priority over the mortgage.
+key: D
+explanation: Under Wis. Stat. § 706.11(1), a tax lien filed after a mortgage is recorded is excepted
+  from the mortgage's priority, giving the tax lien priority over the earlier mortgage. The option
+  stating that both the mortgage and the tax lien share equal priority is incorrect.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.11(1)
+  url: null
+  quoted_text: except tax and special assessment liens filed after
+  secondary: []
+terms:
+  - tax lien
+  - priority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,45 @@
+id: CA-4-0126
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: "According to Cal. Civ. Code § 1214, a conveyance of real property (other than a lease for a
+  term not exceeding one year) is **NOT** valid against a subsequent purchaser who:"
+options:
+  - A purchaser who acquires the property as a gift and records before the prior conveyance.
+  - A purchaser who acquires the property with knowledge of the prior conveyance and records after.
+  - A purchaser who acquires the property in good faith for valuable consideration and records first.
+  - A purchaser who acquires the property for nominal consideration and records after the conveyance.
+key: C
+explanation: Under Cal. Civ. Code § 1214, a conveyance of real property is not valid against a later
+  purchaser who takes the property in good faith, pays valuable consideration, and records the
+  conveyance first. The statute protects the first recorder who meets those requirements. The
+  correct answer describes a purchaser who acquires the property in good faith for valuable
+  consideration and records first. The other options fail because they lack good faith, involve
+  knowledge of the prior conveyance, lack valuable consideration, or record after the prior
+  conveyance.
+citation:
+  source: Cal. Civ. Code § 1214
+  url: null
+  quoted_text: Every conveyance of real property or an estate for years therein, other than a lease
+    for a term not exceeding one year, is void as against any subsequent purchaser or mortgagee of
+    the same property, or any part thereof, in good faith and for a valuable consideration, whose
+    conveyance is first duly recorded
+  secondary: []
+terms:
+  - conveyance
+  - recording
+  - bona fide purchaser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

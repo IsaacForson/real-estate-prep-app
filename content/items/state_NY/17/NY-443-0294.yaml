@@ -1,0 +1,40 @@
+id: NY-443-0294
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "17"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson’s pre‑licensing course divides the required instruction on Income Tax Issues in
+  Real Estate Transactions into three equal sessions of one hour each. Does this schedule satisfy
+  the New York requirement for this subject?
+options:
+  - Yes, because the total hours meet the three‑hour requirement.
+  - No, because the subject must be taught in a single continuous block.
+  - Yes, but only if the sessions are held on separate consecutive days.
+  - No, because the subject must be allocated exactly three hours each day.
+key: A
+explanation: The New York salesperson pre‑licensing requirement specifies a total of three hours for
+  Income Tax Issues in Real Estate Transactions; it does not prescribe how those hours must be
+  distributed. Therefore, three one‑hour sessions satisfy the requirement regardless of scheduling.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3(a)
+  url: null
+  quoted_text: Income Tax Issues in Real Estate Transactions   3
+  secondary: []
+terms:
+  - income tax
+  - hours
+  - distribution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

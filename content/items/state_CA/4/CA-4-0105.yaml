@@ -1,0 +1,54 @@
+id: CA-4-0105
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An agent who collects payments for a mortgagee receives notice on January 5 that a notice of
+  default has been recorded for a higher‑priority lien on the same property. The notice of default
+  for the mortgagee’s loan was recorded on January 1. According to Cal. Civ. Code § 2924.3(a)(2), by
+  what date must the agent mail notice of the higher‑priority lien to the mortgagee?
+options:
+  - January 16
+  - January 8
+  - January 11
+  - January 20
+key: A
+explanation: The rule requires mailing within 15 days after recordation or within three business
+  days after receiving the information, whichever is later. Recordation on Jan 1 gives a deadline of
+  Jan 16; receipt on Jan 5 gives a deadline of Jan 8. The later date is Jan 16.
+citation:
+  source: Cal. Civ. Code § 2924.3(a)(2)
+  url: null
+  quoted_text: (2) Notice that a notice of default has been recorded pursuant to Section 2924 on
+    account of a breach of an obligation secured by a mortgage or deed of trust against the same
+    property or estate for years therein having priority over the mortgage or deed of trust securing
+    the obligation described in paragraph (1), within 15 days after recordation or within three
+    business days after the agent receives the information, whichever is later.
+  secondary: []
+math:
+  worked_solution: |-
+    Recordation date: January 1
+    Add 15 days: January 1 + 15 days = January 16
+    Receipt date: January 5
+    Add three business days: January 5 + 3 business days = January 8
+    Select the later date: January 16
+  formulas:
+    - Result = max(recordation_date + 15 days, receipt_date + 3 business days)
+  onscreen_calculator_only: false
+terms:
+  - higher‑priority lien
+  - notice of default
+  - mailing deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

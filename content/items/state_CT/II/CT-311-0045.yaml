@@ -1,0 +1,44 @@
+id: CT-311-0045
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Connecticut law, what must a broker do with respect to escrow or trust accounts for
+  client funds received on behalf of principals or clients?
+options:
+  - Maintain a separate escrow or trust account distinct from the broker's own account
+  - Commingle client funds with the broker's personal account if monthly reconciliations are
+    performed
+  - Deposit client funds into the broker's business operating account to earn interest
+  - Hold client funds in the broker's personal account until the transaction closes
+key: A
+explanation: The statute requires brokers to maintain a separate escrow or trust account distinct
+  from their own account for all moneys received on behalf of others. Commingling funds, even with
+  monthly reconciliations, violates this requirement.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-324k(a)
+  url: null
+  quoted_text: Each broker licensed under the provisions of this chapter, who in the course of his
+    real estate business receives, accepts and holds any moneys on behalf of any principal, client
+    or other person shall at all times maintain a separate escrow or trust account, distinct from
+    his own account, in a bank of his choice doing business in this state, for the deposit of all
+    such moneys so received by him.
+  secondary: []
+terms:
+  - escrow
+  - trust account
+  - commingling
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

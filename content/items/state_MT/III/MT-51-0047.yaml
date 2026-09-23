@@ -1,0 +1,50 @@
+id: MT-51-0047
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee completes a distance education course consisting of 20 modules, each lasting 55
+  minutes. How many 'hours' of education, as defined in Montana Administrative Rule 24.210.301(9),
+  has the licensee earned?
+options:
+  - 24 hours
+  - 25 hours
+  - 20 hours
+  - 22 hours
+key: D
+explanation: Montana Administrative Rule 24.210.301(9) defines an hour of education as 50 minutes of
+  instructional time. Twenty modules at 55 minutes each total 1,100 minutes. Dividing 1,100 by 50
+  yields 22 hours. The option stating 24 hours mistakenly treats each module as one hour, ignoring
+  the 50‑minute hour definition.
+citation:
+  source: Mont. Admin. R. 24.210.101–24.210.1005 (Board of Realty Regulation) — Administrative Rules
+    of Montana, Title 24, Chapter 210 — Board of Realty Regulation (all effective rules) — §
+    24.210.301(9)
+  url: null
+  quoted_text: '"Hour" of education is equal to 50 minutes of instructional time'
+  secondary: []
+math:
+  worked_solution: |-
+    20 modules × 55 minutes/module = 1,100 minutes
+    1,100 minutes ÷ 50 minutes/hour = 22 hours
+  formulas:
+    - total_minutes = modules × minutes_per_module
+    - hours = total_minutes ÷ minutes_per_hour
+  onscreen_calculator_only: false
+terms:
+  - hour
+  - education
+  - distance education
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

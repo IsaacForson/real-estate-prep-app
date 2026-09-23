@@ -1,0 +1,45 @@
+id: PA-9-0084
+jurisdiction: PA
+bank: state_PA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller’s agent knows about a cracked foundation but does not disclose it to the buyer. After
+  closing, the buyer discovers the defect and sues the agent for violating the disclosure law. Under
+  § 7310, is the agent liable?
+options:
+  - The agent is not liable because the seller did not disclose the defect
+  - The agent is liable because they had actual knowledge of a material defect
+  - The agent is not liable because agents generally are not liable under the disclosure law
+  - The agent is liable only if the buyer asked about the foundation
+key: B
+explanation: Under 68 Pa.C.S. § 7310, an agent is liable for a violation of the disclosure law only
+  when the agent had actual knowledge of a material defect that was not disclosed. Here the agent
+  knew about the cracked foundation and failed to disclose it, so liability applies. The other
+  options are incorrect because liability does not depend on the seller’s actions, agents can be
+  liable when they have actual knowledge, and the buyer’s inquiry is not required.
+citation:
+  source: 68 Pa.C.S. §§ 7301–7315 (Real Estate Seller Disclosure Law) — Pennsylvania Real Estate
+    Seller Disclosure Law, 68 Pa.C.S. §§ 7301-7315 (as posted by the State Real Estate Commission) —
+    § 7310
+  url: null
+  quoted_text: An agent of a seller or a buyer shall not be liable for any violation of this chapter
+    unless the agent had actual knowledge of a material defect that was not disclosed to the buyer
+    or of a misrepresentation relating to a material defect.
+  secondary: []
+terms:
+  - agent
+  - liability
+  - actual knowledge
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,36 @@
+id: IA-543B-0081
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum passing score required for course credit under Iowa Admin. Code r. 481-2017?
+options:
+  - 70 percent
+  - 75 percent
+  - 80 percent
+  - 85 percent
+key: C
+explanation: The rule states that a passing score of 80 percent is needed for course credit to be
+  granted. Therefore, 80 percent is the minimum passing score. The other percentages are incorrect
+  because they do not match the required threshold.
+citation:
+  source: Iowa Admin. Code r. 481-2017 — Iowa Administrative Code 481—Chapter 2017 — Approv Al Of
+    Schools, Courses And Instructors (Real Estate Commission) 2017.11(5)
+  url: null
+  quoted_text: A passing score of 80 percent is needed for course credit to be granted.
+  secondary: []
+terms:
+  - passing score
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

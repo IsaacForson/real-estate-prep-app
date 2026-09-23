@@ -1,0 +1,49 @@
+id: MI-25-0028
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson's license expires on March 1, 2025. The licensee is mobilized for
+  military duty on January 1, 2025 and released from duty on June 1, 2025. Under MCL 339.212(11), on
+  what date does the temporary exemption from renewal fees and continuing education requirements
+  end?
+options:
+  - On June 1, 2026.
+  - On March 1, 2028.
+  - On August 30, 2025.
+  - On May 31, 2025.
+key: C
+explanation: The exemption lasts until 90 days after release from duty, but no longer than 36 months
+  after the license expiration date. Adding 90 days to June 1, 2025 yields August 30, 2025. Adding
+  36 months to March 1, 2025 yields March 1, 2028, which is later, so the earlier date controls.
+citation:
+  source: Mich. Comp. Laws § 339.212(11)
+  url: null
+  quoted_text: A temporary exemption is valid until 90 days after the licensee's or registrant's
+    release from the mobilized duty on which the exemption was based, but shall not exceed 36 months
+    from the date of expiration of the license or registration.
+  secondary: []
+math:
+  worked_solution: "Release date: June 1, 2025. Add 90 days: June has 30 days, so June 1 + 90 days =
+    August 30, 2025. License expiration: March 1, 2025. Add 36 months: March 1, 2025 + 36 months =
+    March 1, 2028. The earlier date is August 30, 2025."
+  formulas:
+    - Exemption end date = min(release date + 90 days, license expiration date + 36 months)
+  onscreen_calculator_only: false
+terms:
+  - exemption
+  - mobilization
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

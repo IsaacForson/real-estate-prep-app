@@ -1,0 +1,40 @@
+id: IA-543B-0049
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a salesperson license completed a prelicense course 13 months ago and wishes
+  to substitute it for a required course. May the course be used for substitution under the
+  commission’s rules?
+options:
+  - The course qualifies for substitution when it is substantially similar
+  - The course qualifies for substitution when completed within 24 months
+  - The course does not qualify for substitution when completed more than 12 months prior
+  - The course does not qualify for substitution when the applicant lacks a broker license
+key: C
+explanation: The commission’s rules state that courses completed more than 12 months prior to
+  commission consideration do not qualify for substitution. Since the course was finished 13 months
+  ago, it cannot be used, regardless of similarity or the applicant’s broker status.
+citation:
+  source: Iowa Admin. Code r. 481-2016 — Iowa Administrative Code 481—Chapter 2016 — Prelicense
+    Education And Continuing Education (Real Estate Commission) 481—2016.2(3)
+  url: null
+  quoted_text: Courses completed more than 12 months prior to commission consideration for approval do
+    not qualify for substitution.
+  secondary: []
+terms:
+  - substitution
+  - prelicense
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

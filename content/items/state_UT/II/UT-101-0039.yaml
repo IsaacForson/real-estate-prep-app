@@ -1,0 +1,47 @@
+id: UT-101-0039
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant completes prelicensing education on March 1, passes the state component of the
+  licensing examination on April 1, but fails the national component. Under Utah Admin. Code
+  R162-2f-202a, by what date must the applicant retake and pass the national component to remain
+  eligible for licensure?
+options:
+  - March 1 of the following year
+  - October 1 of the same year
+  - September 30 of the following year
+  - September 30 of the same year
+key: B
+explanation: The rule requires the failed component to be retaken and passed within six months of
+  the date the passed component was achieved (April 1 + 6 months = October 1) and within 12 months
+  of completing the prelicensing education (March 1 + 12 months = March 1 of the following year).
+  Both conditions must be satisfied, so the earlier deadline of October 1 controls.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-202a
+  url: null
+  quoted_text: "(b) If an individual passes one test component but fails the other, the individual
+    shall retake and pass the failed component: (i) within six months of the date on which the
+    individual achieves a passing score on the passed component; and (ii) within 12 months of the
+    date on which the individual completes the prelicensing education."
+  secondary: []
+terms:
+  - examination
+  - retake
+  - deadline
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

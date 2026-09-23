@@ -1,0 +1,39 @@
+id: MS-1954-0050
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee completed 22 hours of continuing education during the current renewal period. Under
+  Miss. Code Ann. § 73-35-6(1), what is the maximum number of those hours that may be carried over
+  to the next renewal period?
+options:
+  - 0 hours
+  - 6 hours
+  - 16 hours
+  - 22 hours
+key: B
+explanation: The rule states that no more than six (6) hours of continuing education may be carried
+  over to the next renewal period. Therefore, even though the licensee earned 22 hours, only six can
+  be carried forward. The distractor claiming 22 hours incorrectly assumes all earned hours are
+  eligible for carryover, ignoring the statutory limit.
+citation:
+  source: Miss. Code Ann. § 73-35-6(1)
+  url: null
+  quoted_text: However, no more than six (6) hours may be carried over in this manner.
+  secondary: []
+terms:
+  - continuing education
+  - carryover
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

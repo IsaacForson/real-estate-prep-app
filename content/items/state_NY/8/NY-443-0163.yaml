@@ -1,0 +1,47 @@
+id: NY-443-0163
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed 70 hours of the prelicensing course, including only two hours of
+  instruction in 'Valuation Process and Pricing Properties.' How many additional hours of valuation
+  instruction must they complete to satisfy the three‑hour requirement for that subject?
+options:
+  - 3 hours
+  - 2 hours
+  - 0 hours
+  - 1 hours
+key: D
+explanation: The regulation requires three hours for the valuation subject; having completed two
+  hours leaves a deficit of one hour. The distractor of two hours would still leave the salesperson
+  one hour short of the required total.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Valuation Process and Pricing Properties   3
+  secondary: []
+math:
+  worked_solution: |-
+    Required hours for valuation = 3 hours
+    Hours already completed = 2 hours
+    Additional hours needed = 3 - 2 = 1 hour
+  formulas:
+    - Needed = Required - Completed
+  onscreen_calculator_only: false
+terms:
+  - valuation
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

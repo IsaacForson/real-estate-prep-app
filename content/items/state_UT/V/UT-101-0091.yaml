@@ -1,0 +1,51 @@
+id: UT-101-0091
+jurisdiction: UT
+bank: state_UT
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A principal broker intends to assign half of the commission to a sales agent. Before doing
+  so, the broker provides written instructions to the title insurance agent that identify the
+  property, the broker and the sales agent, and state that the instructions may not be altered by
+  anyone other than the broker. The broker fails to include the amount of compensation each will
+  receive. Under Utah Admin. Code R162-2f-401c(1)(d), the broker's written instructions are:"
+options:
+  - sufficient because they include the required identification and prohibition against alteration
+  - insufficient because they lack the designation of compensation amounts
+  - unnecessary because compensation assignment does not require written instructions
+  - valid only if the sales agent also signs the instructions
+key: B
+explanation: The rule requires written instructions to include a designation of the amount of
+  compensation that will be received by both the principal broker and the sales agent or associate
+  broker. Because the broker omitted the compensation amounts, the instructions are insufficient.
+  The option stating that the instructions are sufficient because they include the required
+  identification and prohibition against alteration is incorrect, as identification and alteration
+  prohibition alone do not satisfy the rule.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-401c(1)(d)
+  url: null
+  quoted_text: (i) an identification of the property involved in the real estate transaction; (ii) an
+    identification of the principal broker and sales agent or associate broker who will receive
+    compensation in accordance with the written instructions; (iii) a designation of the amount of
+    compensation that will be received by both the principal broker and the sales agent or associate
+    broker; (iv) a prohibition against alteration of the written instructions by anyone other than
+    the principal broker; and (v) additional instructions at the discretion of the principal broker;
+  secondary: []
+terms:
+  - written instructions
+  - title insurance agent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

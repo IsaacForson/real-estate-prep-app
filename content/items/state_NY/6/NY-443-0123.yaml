@@ -1,0 +1,40 @@
+id: NY-443-0123
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Which subject is allocated exactly 4 hours of instruction in the NY DOS salesperson course
+  syllabus?
+options:
+  - Human Rights and Fair Housing
+  - Real Estate Finance
+  - Taxes and Assessments
+  - Condominiums and Cooperatives
+key: D
+explanation: The syllabus lists Condominiums and Cooperatives with 4 hours of instruction; Real
+  Estate Finance requires 5 hours, Human Rights and Fair Housing requires 6 hours, and Taxes and
+  Assessments requires 3 hours.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+  secondary: []
+terms:
+  - condominiums
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

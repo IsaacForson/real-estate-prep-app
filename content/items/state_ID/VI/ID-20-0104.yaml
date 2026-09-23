@@ -1,0 +1,48 @@
+id: ID-20-0104
+jurisdiction: ID
+bank: state_ID
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Idaho Code § 54-2004, which of the following individuals meets the definition of a
+  'designated broker'?
+options:
+  - An individual who is licensed as a real estate broker in Oregon and who is designated by the
+    brokerage company to supervise the brokerage company and associated licensees.
+  - An individual who is licensed as a real estate broker in Idaho and who is designated by the
+    brokerage company to supervise the brokerage company and associated licensees.
+  - An individual who is licensed as a real estate broker in Idaho and who works as a salesperson
+    under another broker but is not designated by the brokerage company.
+  - An individual who is licensed as a real estate broker in Idaho and who supervises associated
+    licensees but is not designated by the brokerage company.
+key: B
+explanation: The definition of 'designated broker' requires both an Idaho real estate broker license
+  and designation by the brokerage company to supervise the brokerage company and associated
+  licensees. Only the option describing an Idaho-licensed broker who is designated by the brokerage
+  company to supervise the brokerage company and associated licensees satisfies both criteria. The
+  scenario where an individual supervises licensees but lacks the formal designation might be
+  mistakenly considered sufficient, but the definition explicitly requires the designation by the
+  brokerage company.
+citation:
+  source: Idaho Code § 54-2004(21)
+  url: null
+  quoted_text: an individual who is licensed as a real estate broker in Idaho and who is designated by
+    the brokerage company to be responsible for the supervision of the brokerage company and the
+    activities of any associated licensees
+  secondary: []
+terms:
+  - designated broker
+  - real estate broker
+  - brokerage company
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

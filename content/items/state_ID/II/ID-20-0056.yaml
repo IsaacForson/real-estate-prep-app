@@ -1,0 +1,47 @@
+id: ID-20-0056
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has completed 80 classroom hours of real estate education in another state and
+  wants to obtain an Idaho salesperson license. Assuming the commission does **NOT** grant a waiver,
+  how many additional classroom hours must the applicant complete to meet the prelicense education
+  requirement?
+options:
+  - 90 classroom hours
+  - 100 classroom hours
+  - 10 classroom hours
+  - 20 classroom hours
+key: C
+explanation: Under Idaho Code § 54-2022(1)(a), a salesperson license requires a total of ninety (90)
+  classroom hours. Subtracting the eighty hours already completed leaves ten additional hours
+  needed. The distractor suggesting ninety additional hours incorrectly assumes the applicant needs
+  another full requirement rather than the difference.
+citation:
+  source: Idaho Code § 54-2022(1)(a)
+  url: null
+  quoted_text: For a salesperson’s license, the applicant shall complete a total of ninety (90) classroom hours;
+  secondary: []
+math:
+  worked_solution: Required total = 90 classroom hours. Completed = 80 classroom hours. Additional
+    needed = 90 - 80 = 10 classroom hours.
+  formulas:
+    - Additional hours = Required hours - Completed hours
+  onscreen_calculator_only: false
+terms:
+  - salesperson
+  - classroom hours
+  - education
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

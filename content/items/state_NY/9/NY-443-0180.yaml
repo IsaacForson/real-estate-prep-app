@@ -1,0 +1,48 @@
+id: NY-443-0180
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "9"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A landlord publishes an advertisement stating 'No children allowed' for a rental apartment
+  that is not restricted to older persons. Under New York Human Rights Law, this advertisement is:"
+options:
+  - Unlawful because it expresses a limitation based on familial status.
+  - Lawful if the building contains no more than two family units.
+  - Lawful because familial status is not a protected class under New York law.
+  - Lawful if the owner resides in the building.
+key: A
+explanation: Under N.Y. Exec. Law art. 15 § 296(5)(a)(3), it is unlawful to publish an advertisement
+  that expresses a limitation based on familial status unless an exemption applies. No exemption for
+  familial status exists in this scenario, making the advertisement unlawful. The claim that the
+  advertisement would be lawful if the building contained no more than two family units is incorrect
+  because the owner‑residence exemption only applies to buildings with no more than two families,
+  which is not indicated in the scenario.
+citation:
+  source: N.Y. Exec. Law art. 15 — Executive Law Article 15 (Human Rights Law) excerpts — NY DOS 'Real
+    Estate License Law' booklet, March 2026 — § 296(5)(a)(3)
+  url: null
+  quoted_text: To print or circulate or cause to be printed or circulated any statement, advertisement
+    or publication, or to use any form of application for the purchase, rental or lease of such
+    housing accommodation or to make any record or inquiry in connection with the prospective
+    purchase, rental or lease of such a housing accommodation which expresses, directly or
+    indirectly, any limitation, specification or discrimination as to race, creed, color, national
+    origin, sexual orientation, military status, sex, age, disability, marital status, or familial
+    status, or any intent to make any such limitation, specification or discrimination.
+  secondary: []
+terms:
+  - familial status
+  - advertisement
+  - discrimination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

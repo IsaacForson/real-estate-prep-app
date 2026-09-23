@@ -1,0 +1,44 @@
+id: UT-101-0129
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person has openly occupied a piece of land for eight years but failed to pay property taxes
+  for two of those years. Under Utah adverse possession statutes, what is the correct conclusion?
+options:
+  - Adverse possession may be established because possession exceeded seven years
+  - Adverse possession may not be established because the period must be exactly seven years
+  - Adverse possession may be established if the owner did not object
+  - Adverse possession may not be established because taxes were not paid for the entire period
+key: D
+explanation: Under Utah law, to acquire title by adverse possession a person must occupy the land
+  continuously for seven years and pay all property taxes assessed during that entire period. If
+  taxes are unpaid for any portion of the time, the requirement is not satisfied and the claim
+  fails, regardless of how long the possession lasted. See Utah Code § 78B-2-214.
+citation:
+  source: "### Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-214"
+  url: null
+  quoted_text: Adverse possession may not be established unless it is shown that the land has been
+    occupied and claimed continuously for seven years, and that the party and the party's
+    predecessors and grantors have paid all taxes which have been levied and assessed upon the land
+    according to law
+  secondary: []
+terms:
+  - adverse possession
+  - taxes
+  - continuous occupation
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

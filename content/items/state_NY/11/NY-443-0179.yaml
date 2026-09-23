@@ -1,0 +1,41 @@
+id: NY-443-0179
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "11"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker is reviewing a salesperson’s course syllabus to ensure it meets New York licensing
+  requirements. The syllabus allocates 1 hour to Municipal Agencies. According to state regulations,
+  what is the status of this course?
+options:
+  - It fails because total course hours are below eighty.
+  - It satisfies the requirement because total hours equal eighty.
+  - It fails because Municipal Agencies must be at least two hours.
+  - It satisfies because Municipal Agencies is not required.
+key: C
+explanation: The regulation mandates exactly two hours for the Municipal Agencies subject.
+  Allocating only one hour violates this requirement, rendering the course noncompliant regardless
+  of total hours. Hence the course fails.
+citation:
+  source: 19 N.Y.C.R.R. § 176.3(a)
+  url: null
+  quoted_text: |-
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+  secondary: []
+terms:
+  - municipal agency
+  - course requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

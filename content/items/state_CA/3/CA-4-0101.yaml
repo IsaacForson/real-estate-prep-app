@@ -1,0 +1,39 @@
+id: CA-4-0101
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A licensee assists a client in negotiating the purchase of a commercial building. According
+  to Cal. Bus. & Prof. Code § 10131(a), this act is:"
+options:
+  - negotiating the purchase of real property
+  - leasing residential property
+  - collecting rents from real property
+  - offering to sell a business opportunity
+key: A
+explanation: The scenario describes negotiating the purchase of real property, which is expressly
+  included in Cal. Bus. & Prof. Code § 10131(a). The option describing offering to sell a business
+  opportunity, while also listed in that subsection, involves a business opportunity rather than a
+  real property purchase, so it does not match the situation described.
+citation:
+  source: Cal. Bus. & Prof. Code § 10131(a)
+  url: null
+  quoted_text: negotiates the purchase, sale, or exchange of real property or a business opportunity.
+  secondary: []
+terms:
+  - broker
+  - purchase
+  - real property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

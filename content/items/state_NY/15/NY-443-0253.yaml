@@ -1,0 +1,42 @@
+id: NY-443-0253
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "15"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson applicant completes a pre‑licensing course that includes instruction on all
+  required subjects except Condominiums and Cooperatives. Under New York regulations, is the
+  applicant eligible for licensure based on this course?
+options:
+  - No, because Condominiums and Cooperatives is a required subject in the pre‑licensing curriculum.
+  - Yes, as long as the course includes at least four hours of Real Estate Finance instruction.
+  - Yes, because the missing subject can be waived under hardship provisions.
+  - No, unless the applicant completes an additional two hours of Property Management training.
+key: A
+explanation: New York regulations require that the pre‑licensing curriculum include instruction on
+  Condominiums and Cooperatives; omitting that subject means the course does not meet the licensing
+  requirement, so the applicant is not eligible. The regulations do not provide a waiver for missing
+  this subject.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Condominiums and Cooperatives    4
+  secondary: []
+terms:
+  - condominium
+  - cooperatives
+  - required subject
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,46 @@
+id: FL-475-0148
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A prospective buyer signs a purchase and sale agreement and transmits the signed document to
+  the broker by facsimile. Under Florida Statutes, what is the legal effect of the facsimile
+  signature?
+options:
+  - The facsimile signature is invalid unless the buyer also signs electronically through a
+    certified e-signature platform.
+  - The facsimile signature is valid only if the broker also receives the original signed document
+    within three business days.
+  - The facsimile signature is binding and sufficient to satisfy any writing or signature
+    requirement.
+  - The facsimile signature is considered informal and must be notarized to be enforceable.
+key: C
+explanation: Florida Statute 475.5018 states that a signature transmitted by facsimile is binding
+  and sufficient for any act that must be performed in writing or acknowledged with a signature.
+  Therefore, the facsimile signature alone satisfies the writing and signature requirement. The
+  other options add conditions—such as needing an electronic platform, receiving the original
+  document, or notarization—that are not required by the statute.
+citation:
+  source: Fla. Stat. ch. 475 § 475.5018
+  url: null
+  quoted_text: the provision of an instrument or writing by electronic means or facsimile, including a
+    signature transmitted by electronic means or facsimile, is binding and sufficient.
+  secondary: []
+terms:
+  - facsimile
+  - signature
+  - binding
+  - sufficient
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

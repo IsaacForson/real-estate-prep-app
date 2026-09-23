@@ -1,0 +1,47 @@
+id: NY-443-0197
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "11"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson finds that a pre‑licensing course syllabus lists the Municipal Agencies subject
+  for 3 hours. To comply with New York DOS regulations, what must the course provider do?
+options:
+  - The course must reduce Municipal Agencies instruction to 2 hours.
+  - The course must add one hour of Municipal Agencies instruction.
+  - The course must increase Municipal Agencies instruction to 4 hours.
+  - The course must keep Municipal Agencies instruction at 3 hours.
+key: A
+explanation: The rule mandates exactly 2 hours for the Municipal Agencies subject, so a syllabus
+  showing 3 hours must be reduced to 2 hours. Increasing to 4 hours or keeping at 3 would exceed the
+  requirement, and adding an hour would result in 4 hours, which also violates the rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Real Estate Finance    5
+    Land Use Regulations    3
+    Construction and Environmental Issues    5
+    Valuation Process and Pricing Properties   3
+    Human Rights and Fair Housing   6
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+  secondary: []
+terms:
+  - municipal agencies
+  - syllabus
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

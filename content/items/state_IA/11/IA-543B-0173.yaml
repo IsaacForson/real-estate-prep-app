@@ -1,0 +1,43 @@
+id: IA-543B-0173
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "11"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson who owns a residential property and intends to sell it without paying any
+  brokerage fee wants to advertise the property using only their personal name. Under Iowa Admin.
+  Code r. 481-2010, is this permissible?
+options:
+  - Yes, provided the advertisement also includes the name of the brokerage they are affiliated with
+  - No, because the property must be listed with a brokerage to be advertised
+  - Yes, because the salesperson owns the property and no brokerage fee is involved
+  - No, because the rule bars salespersons from advertising under their own names
+key: C
+explanation: The rule permits salespersons to advertise under their own name when they own the
+  property and no brokerage fee is to be paid, making the scenario allowable. The claim that
+  salespersons are barred from advertising under their own names ignores this specific exception.
+citation:
+  source: Iowa Admin. Code r. 481-2010 — Iowa Administrative Code 481—Chapter 2010 — Advertising (Real
+    Estate Commission) 481—2010.2(543B)
+  url: null
+  quoted_text: Salespersons and broker associates are barred from advertising under their own names
+    unless they are the owners of the property they are advertising for sale, rent, lease or
+    exchange, and on which no brokerage fees are to be paid.
+  secondary: []
+terms:
+  - salesperson
+  - advertising
+  - ownername
+  - fee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

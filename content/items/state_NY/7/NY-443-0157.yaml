@@ -1,0 +1,48 @@
+id: NY-443-0157
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller knows that the residential property they are selling is located wholly within a
+  FEMA-designated Special Flood Hazard Area (SFHA). The buyer’s agent asks whether the seller must
+  disclose this fact on the Property Condition Disclosure Statement. What is the seller’s
+  obligation?
+options:
+  - Leaving the SFHA question blank and providing no explanation on the disclosure form
+  - Providing a FEMA elevation certificate rather than answering the SFHA question
+  - Answering “No” to the SFHA question because the buyer can obtain private insurance
+  - Answering “Yes” to the SFHA question and attaching an explanatory note if desired
+key: D
+explanation: Under N.Y. Real Prop. Law § 462, a seller with actual knowledge that the property lies
+  wholly within a FEMA‑designated Special Flood Hazard Area must answer “Yes” to the SFHA question
+  on the Property Condition Disclosure Statement and may attach an explanatory note. Leaving the
+  question blank or providing no explanation fails to disclose known floodplain information.
+  Substituting a FEMA elevation certificate for the required answer does not satisfy the disclosure
+  requirement. Answering “No” because the buyer could obtain private insurance contradicts the
+  seller’s actual knowledge and is therefore incorrect.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462
+  url: null
+  quoted_text: Is any or all of the property located wholly or partially in the Special Flood Hazard
+    Area (“SFHA”; “100-year floodplain”) according to the Federal Emergency Management Agency’s
+    (FEMA’s) current flood insurance rate maps for your area? Yes No Unkn NA (If Yes, explain below)
+  secondary: []
+terms:
+  - floodplain
+  - disclosure
+  - SFHA
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

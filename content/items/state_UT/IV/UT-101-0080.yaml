@@ -1,0 +1,49 @@
+id: UT-101-0080
+jurisdiction: UT
+bank: state_UT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A regular salaried employee of a licensed property management company answers phones and
+  schedules maintenance requests for the company's clients. Under Utah Code Ann. §
+  61-2f-202(1)(a)(vi), is the employee required to hold a real estate license?
+options:
+  - The employee must hold a real estate license because they perform property management services.
+  - The employee is not required to hold a real estate license because they perform support services
+    as prescribed by rule.
+  - The employee must hold a real estate license unless they also have a property manager
+    endorsement.
+  - The employee is not required to hold a real estate license only if they work fewer than 20 hours
+    per week.
+key: B
+explanation: The exemption in Utah Code Ann. § 61-2f-202(1)(a)(vi) excuses regular salaried
+  employees of licensed property management companies from licensing when they perform support
+  services as defined by rule, so the employee described does not need a license. The option stating
+  the employee must hold a license because they perform property management services is incorrect
+  because the exemption covers support services. The option stating the employee must hold a license
+  unless they also have a property manager endorsement adds a condition not found in the exemption.
+  The option stating the employee is not required to hold a license only if they work fewer than 20
+  hours per week also adds a condition not present in the rule.
+citation:
+  source: Utah Code Ann. § 61-2f-202(1)(a)(vi)
+  url: null
+  quoted_text: (vi) a regular salaried employee of a licensed property management company or real
+    estate brokerage who performs support services, as prescribed by rule, for the property
+    management company or real estate brokerage;
+  secondary: []
+terms:
+  - support services
+  - property management company
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

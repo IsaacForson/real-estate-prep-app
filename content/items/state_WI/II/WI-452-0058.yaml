@@ -1,0 +1,43 @@
+id: WI-452-0058
+jurisdiction: WI
+bank: state_WI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A parties use a newly drafted deed form that is concise and conforms to chapter 706
+  requirements but was not in common use on July 1, 1971. Under Wis. Stat. § 706.10(1), is the
+  conveyance valid using this form?
+options:
+  - The conveyance is invalid because the form was not in common use on July 1, 1971.
+  - The conveyance is valid only if the form was authorized by law before July 1, 1971.
+  - The conveyance is valid as long as the form conforms to the requirements of this chapter.
+  - The conveyance is invalid unless the form is expressly authorized by this chapter.
+key: C
+explanation: Subsection (1) states that the section does not preclude the adoption or use of other,
+  different or more concise forms which conform to the requirements of this chapter. Therefore, a
+  conveyance using a form that meets chapter requirements is valid even if the form was not in
+  common use on July 1, 1971. The options that tie validity to prior authorization or common use
+  misstate the rule.
+citation:
+  source: Wis. Stat. § 706.10(1)
+  url: null
+  quoted_text: but this section shall not preclude the adoption or use of other, different or more
+    concise forms which conform to the requirements of this chapter.
+  secondary: []
+terms:
+  - form
+  - conveyance
+  - chapter
+  - requirements
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

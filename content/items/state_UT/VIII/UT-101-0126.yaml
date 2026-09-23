@@ -1,0 +1,43 @@
+id: UT-101-0126
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant holds a tax title to a parcel for four years, has paid all taxes, but the legal
+  title owner has resided on the property during that period. What is the effect on the claimant's
+  adverse possession claim under Utah law?
+options:
+  - The claimant's claim is barred because tax title must be held for seven years
+  - The claimant must also show continuous occupation for seven years
+  - The claimant automatically gains title after four years
+  - The claimant's presumption of ownership may be rebutted by the owner's actual occupation
+key: D
+explanation: Under Utah Code § 78B-2-209(2), a tax title held for four years creates a presumption
+  of ownership by adverse possession, but this presumption may be rebutted if the legal title owner
+  has actually occupied the property. The claimant does not automatically gain title, nor is the
+  claim barred solely by the four‑year period.
+citation:
+  source: "### Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-209"
+  url: null
+  quoted_text: This presumption may be rebutted if it appears that the owner of the legal title or his
+    predecessor has actually occupied or been in possession of the property under the title
+  secondary: []
+terms:
+  - tax title
+  - adverse possession
+  - rebuttal
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

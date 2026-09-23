@@ -1,0 +1,43 @@
+id: DE-2901-0044
+jurisdiction: DE
+bank: state_DE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person holds a power of attorney to consummate a real estate sale for a friend who is the
+  seller. Does this person need a real estate license to sign the deed under Delaware law?
+options:
+  - The person is required to notify the Real Estate Commission before acting
+  - The person is exempt from licensing under the power‑of‑attorney exemption
+  - The person is required to hold a salesperson license to complete the sale
+  - The person is required to hold a broker license to complete the sale
+key: B
+explanation: Section 2901(e)(2) exempts persons acting as an attorney in fact under a duly executed
+  power of attorney who are authorized to consummate a real estate transaction. Signing the deed on
+  behalf of the seller falls within this exemption, so no license is required. The distractors
+  incorrectly assert that a broker or salesperson license is necessary or that notification to the
+  Commission is required, which the statute does not mandate for this exemption.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2901(e)(2)
+  url: null
+  quoted_text: Persons acting as attorney in fact under a duly executed power of attorney from a
+    person engaged in a real estate transaction authorizing the final consummation by performance of
+    any agreement of sale, leasing or exchange of real estate.
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

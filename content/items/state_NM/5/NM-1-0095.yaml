@@ -1,0 +1,47 @@
+id: NM-1-0095
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker receives earnest money from a buyer and deposits it into an account at a
+  bank. Under 16.61.19.8, what type of account is this?
+options:
+  - An account at an acceptable financial institution established by the qualifying broker for the
+    purpose of holding money of an owner.
+  - An account at an acceptable financial institution established by the qualifying broker for the
+    purpose of holding money of others received in a transaction.
+  - An account at an acceptable financial institution established by the qualifying broker for the
+    purpose of holding money belonging to others received during the management of real property for
+    others.
+  - An account at an acceptable financial institution established by the qualifying broker for the
+    purpose of holding money of a named party to a transaction.
+key: B
+explanation: Earnest money from a buyer is money of others received in a transaction, which the rule
+  defines as a trust account. The description of an account for holding an owner’s money does not
+  apply, nor do the descriptions for accounts used in property‑management or for a named party to a
+  transaction, because earnest money involves neither an owner’s funds, a management relationship,
+  nor a specifically named party.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.19.8
+  url: null
+  quoted_text: an account at an acceptable financial institution established by the qualifying broker
+    for the purpose of holding money of others received by the qualifying broker in a transaction
+    which includes a brokerage trust account, property management trust account or special trust
+    account.
+  secondary: []
+terms:
+  - trust account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

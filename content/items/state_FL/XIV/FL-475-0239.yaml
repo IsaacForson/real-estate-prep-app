@@ -1,0 +1,48 @@
+id: FL-475-0239
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XIV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: What is the total number of minutes of continuing education required for renewal of an active
+  broker or sales associate license each biennium under Florida law?
+options:
+  - 600 minutes
+  - 650 minutes
+  - 750 minutes
+  - 700 minutes
+key: D
+explanation: The rule requires at least 14 classroom hours of 50 minutes each, which equals 700
+  minutes (14 × 50). The distractor of 650 minutes incorrectly uses 13 hours, which is below the
+  required minimum.
+citation:
+  source: Fla. Stat. § 475.182(1)(a)
+  url: null
+  quoted_text: The renewal application for an active license as broker, broker associate, or sales
+    associate shall include proof satisfactory to the commission that the licensee has, since the
+    issuance or renewal of her or his current license, satisfactorily completed at least 14
+    classroom hours of 50 minutes each of a continuing education course during each biennium of a
+    license period, as prescribed by the commission.
+  secondary: []
+math:
+  worked_solution: "Multiply 14 classroom hours by 50 minutes per hour: 14 × 50 = 700 minutes."
+  formulas:
+    - Total minutes = classroom hours × minutes per hour
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - classroom hours
+  - minutes
+  - biennium
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

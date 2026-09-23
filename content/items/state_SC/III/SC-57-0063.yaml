@@ -1,0 +1,43 @@
+id: SC-57-0063
+jurisdiction: SC
+bank: state_SC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is showing a prospective tenant a residential rental unit. Under S.C. Code Ann. §
+  40-57-370, is the licensee required to provide the brokerage relationship disclosure form?
+options:
+  - The licensee is not required to provide the disclosure form because the transaction concerns a
+    rental or lease
+  - The licensee must provide the disclosure form because substantive contact triggers the
+    requirement
+  - The licensee is not required to provide the disclosure form because the licensee is acting as a
+    transaction broker
+  - The licensee must provide the disclosure form only if the tenant signs an agency agreement
+key: A
+explanation: The correct answer states that no disclosure is required because the transaction is a
+  rental or lease, which is exempt under subsection (G)(1). Substantive contact alone does not
+  override this exemption. The other choices incorrectly claim that disclosure is required due to
+  substantive contact, because the licensee is acting as a transaction broker, or only if the tenant
+  signs an agency agreement; none of these conditions are supported by the statute.
+citation:
+  source: S.C. Code Ann. § 40-57-370(G)(1)
+  url: null
+  quoted_text: transaction is regarding the rental or lease of property
+  secondary: []
+terms:
+  - rental
+  - lease
+  - disclosure
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

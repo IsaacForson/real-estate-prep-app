@@ -1,0 +1,43 @@
+id: UT-101-0082
+jurisdiction: UT
+bank: state_UT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A regular salaried employee of a commercial office building owner manages the building's
+  property and also receives a fee to manage a residential rental property owned by a different
+  individual. Under Utah Code Ann. § 61-2f-202(1)(a)(iii), is a real estate license required for the
+  employee's property management activities?
+options:
+  - Yes, because the employee manages real estate for more than one employer.
+  - No, because the employee is a regular salaried employee of the owner.
+  - Yes, because managing residential property requires a license.
+  - No, because property management for a single employer is exempt.
+key: A
+explanation: The exemption under subsection (1)(a)(iii) allows managing real estate for only one
+  employer; managing for another employer eliminates the exemption, requiring a license. Distractor
+  B incorrectly focuses only on the employee's salaried status without considering the extra
+  management.
+citation:
+  source: Utah Code Ann. § 61-2f-202(1)(a)(iii)
+  url: null
+  quoted_text: (iii) a regular salaried employee of the owner of real estate who performs property
+    management services with reference to real estate owned by the employer, except that the
+    employee may only manage real estate for one employer
+  secondary: []
+terms:
+  - license
+  - exemption
+  - property management
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

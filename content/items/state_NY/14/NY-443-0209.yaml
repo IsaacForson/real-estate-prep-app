@@ -1,0 +1,48 @@
+id: NY-443-0209
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "14"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate school designs a combined module that covers Taxes and Assessments and Valuation
+  Process. If the Valuation Process portion is allocated 2 hours and the total module length is 5
+  hours, how many hours are allocated to Taxes and Assessments?
+options:
+  - The module allocates two hours to Taxes and Assessments.
+  - The module allocates three hours to Taxes and Assessments.
+  - The module allocates zero hours to Taxes and Assessments.
+  - The module allocates one hour to Taxes and Assessments.
+key: B
+explanation: The total module is five hours, and the Valuation Process portion uses two hours.
+  Subtracting gives three hours for Taxes and Assessments. The distractor of two hours would
+  incorrectly leave only four hours total.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — § 176.3
+  url: null
+  quoted_text: Taxes and Assessments    3
+  secondary: []
+math:
+  worked_solution: |-
+    Total module hours = 5
+    Valuation Process hours = 2
+    Taxes and Assessments hours = 5 - 2 = 3
+  formulas:
+    - Total hours - Valuation hours = Taxes and Assessments hours
+  onscreen_calculator_only: false
+terms:
+  - taxes
+  - assessments
+  - hours
+  - valuation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

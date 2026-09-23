@@ -1,0 +1,43 @@
+id: CT-311-0046
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut licensee refers a homebuyer to an attorney for legal advice and, in exchange,
+  the attorney pays the licensee a referral fee. What does Connecticut law say about this payment?
+options:
+  - The licensee may accept the fee if the buyer is informed of the arrangement in writing
+  - The licensee may accept the fee provided the attorney is not affiliated with the licensee
+  - The licensee may not receive any fee, commission or other form of referral fee for referring a
+    buyer to an attorney
+  - The licensee may receive a fee only if the attorney is licensed to practice in Connecticut
+key: C
+explanation: The law prohibits any licensee from receiving a fee, commission, or other referral fee
+  for referring a buyer to an attorney admitted to practice in the state. The other options
+  incorrectly suggest conditions under which the fee could be accepted.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-320a
+  url: null
+  quoted_text: No real estate licensee, no person affiliated with a real estate licensee, and no
+    person engaging in the real estate business may receive a fee, commission or other form of
+    referral fee for the referral of any buyer of real property to (1) an attorney-at-law admitted
+    to practice in this state or any person affiliated with such attorney
+  secondary: []
+terms:
+  - referral fee
+  - attorney
+  - prohibited
+  - licensee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

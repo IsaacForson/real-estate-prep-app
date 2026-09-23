@@ -1,0 +1,41 @@
+id: SD-21A-0070
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person operates a website that charges a fee to list real estate properties for sale and
+  collects payments from agents for each listing. May this person perform this activity without a
+  real estate license?
+options:
+  - The person may act without a license only if the listings are for commercial property
+  - The person may act without a license if they also hold a broker license in another state
+  - The person may not act without a license because collecting a fee for listings requires a license
+  - The person may act without a license because publishing listings for a fee is exempt
+key: D
+explanation: Anyone whose business practice is to collect a fee to publish real estate listings is
+  exempt from licensure under §36-21A-29(9). Operating a fee-based listing website falls under this
+  exemption. Stating that a license is required for collecting a fee for listings is incorrect.
+citation:
+  source: S.D. Codified Laws § 36-21A-29
+  url: null
+  quoted_text: (9) Any person or company whose business practice is to collect a fee or compensation
+    to publish real estate listings in print, electronic, or other media;
+  secondary: []
+terms:
+  - publish real estate listings
+  - fee
+  - business practice
+  - exemption
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,43 @@
+id: SC-57-0042
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Alex submits an application for a South Carolina real estate associate license on the
+  commission's prescribed form but forgets to include the required fee. According to S.C. Code Ann.
+  § 40-57-90, what is the status of Alex's application?
+options:
+  - The application is processed but the fee may be submitted at a later time for review.
+  - The application is incomplete and will not be processed until the fee is submitted.
+  - The application is placed on hold for thirty days while awaiting the required fee.
+  - The application is automatically denied because the required fee is missing in file.
+key: B
+explanation: The statute requires that an application for examination or licensure be accompanied by
+  all applicable fees; without the fee, the application is not accompanied and therefore remains
+  incomplete and cannot be processed until the fee is submitted. The distractor suggesting the
+  application can be processed later is incorrect because the statute does not permit processing
+  without the fee being included.
+citation:
+  source: S.C. Code Ann. § 40-57-90
+  url: null
+  quoted_text: An application for examination or licensure must be made on a form prescribed by the
+    commission and must be accompanied by all applicable fees.
+  secondary: []
+terms:
+  - application
+  - fee
+  - licensure
+  - commission
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

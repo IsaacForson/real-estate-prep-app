@@ -1,0 +1,40 @@
+id: NY-443-0150
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre‑licensing course that omits any instruction in valuation process
+  and pricing properties. Does this course satisfy the syllabus requirement for that subject?
+options:
+  - The course nearly satisfies the syllabus requirement for valuation.
+  - The course does not satisfy the syllabus requirement for valuation.
+  - The course mostly satisfies the syllabus requirement for valuation.
+  - The course partially satisfies the syllabus requirement for valuation.
+key: B
+explanation: §176.3(a) mandates 3 hours of study for 'Valuation Process and Pricing Properties'. A
+  course with zero hours for this subject fails to meet the mandatory requirement, so it does not
+  satisfy it. The option claiming satisfaction incorrectly assumes the subject can be omitted.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Valuation Process and Pricing Properties   3
+  secondary: []
+terms:
+  - valuation
+  - pricing
+  - requirement
+  - course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

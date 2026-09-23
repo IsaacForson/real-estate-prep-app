@@ -1,0 +1,48 @@
+id: MN-82-0048
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker authorizes an unlicensed assistant to show listed properties and present purchase
+  offers to potential buyers. Under Minn. Stat. § 82.81, Subd. 4, is this permissible?
+options:
+  - Under Minnesota law, the broker's action is considered permissible if the assistant receives no
+    compensation and does not negotiate offers
+  - Under Minnesota law, the broker's action is considered not permissible because only a licensed
+    person may act as broker or salesperson
+  - Under Minnesota law, the broker's action is considered permissible because the assistant is
+    supervised without the buyer's consent
+  - Under Minnesota law, the broker's action is considered not permissible unless the assistant
+    obtains a temporary permit
+key: B
+explanation: Subdivision 4 forbids a broker from engaging or authorizing any unlicensed person to
+  act as a broker, salesperson, or closing agent on the broker's behalf. Authorization of an
+  unlicensed assistant is therefore impermissible regardless of supervision or compensation. The
+  option claiming permissibility due to supervision is incorrect because the statute does not allow
+  such an exception.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.81 Subd. 4
+  url: null
+  quoted_text: No real estate broker, salesperson, or closing agent shall engage or authorize any
+    person, except one licensed as provided herein, to act as a real estate broker, salesperson, or
+    closing agent on the engager's or authorizer's behalf.
+  secondary: []
+terms:
+  - unlicensed
+  - broker
+  - authorization
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,81 @@
+id: CA-4-0100
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: How is the term “recurring obligation” defined for the purpose of reinstatement under a deed
+  of trust or mortgage?
+options:
+  - All amounts of principal and interest on the loan, or rents, subject to the deed of trust or
+    mortgage in default due after the notice of default is recorded; all amounts of principal and
+    interest or rents advanced on senior liens or leaseholds that are advanced after the recordation
+    of the notice of default; and payments of taxes, assessments, and hazard insurance advanced
+    after recordation of the notice of default.
+  - Only the unpaid principal balance of the loan as of the date the notice of default is recorded,
+    together with any accrued interest, any escrow advances made by the beneficiary prior to
+    default, and any amounts for taxes or insurance that were paid before the notice of default, but
+    excluding any amounts that became due after the notice of default, any late charges, and any
+    trustee’s sale expenses.
+  - The total amount of principal, interest, taxes, and insurance that would be due if the loan were
+    accelerated, excluding any attorney’s fees, trustee’s costs, postponement charges permitted
+    under subdivision (c), and any amounts for advances made by the beneficiary that are not
+    considered recurring obligations under subdivision (a)(1).
+  - Any late fees charged by the beneficiary after the notice of default is recorded, plus costs for
+    recording the notice of sale, mailing, publishing, and posting notices required by Sections 2924
+    to 2924i, inclusive, as well as any fees for a trustee’s sale guarantee or litigation guarantee
+    permitted under subdivision (c).
+key: A
+explanation: Cal. Civ. Code § 2924c(a)(1) defines recurring obligation as all amounts of principal
+  and interest on the loan, or rents, subject to the deed of trust or mortgage in default due after
+  the notice of default is recorded; all amounts of principal and interest or rents advanced on
+  senior liens or leaseholds that are advanced after the recordation of the notice of default; and
+  payments of taxes, assessments, and hazard insurance advanced after recordation of the notice of
+  default. The definition that includes all amounts of principal and interest on the loan, or rents,
+  subject to the deed of trust or mortgage in default due after the notice of default is recorded;
+  all amounts of principal and interest or rents advanced on senior liens or leaseholds that are
+  advanced after the recordation of the notice of default; and payments of taxes, assessments, and
+  hazard insurance advanced after recordation of the notice of default matches the statute. The
+  definition that limits the amount to the unpaid principal balance as of the notice of default,
+  together with any accrued interest, any escrow advances made by the beneficiary prior to default,
+  and any amounts for taxes or insurance that were paid before the notice of default, but excluding
+  any amounts that became due after the notice of default, any late charges, and any trustee’s sale
+  expenses is incorrect because it omits rents, advances on senior liens, and post‑default tax,
+  assessment, and insurance payments. The definition that describes the total amount of principal,
+  interest, taxes, and insurance that would be due if the loan were accelerated, excluding
+  attorney’s fees, trustee’s costs, postponement charges permitted under subdivision (c), and any
+  amounts for advances made by the beneficiary that are not considered recurring obligations under
+  subdivision (a)(1) is incorrect because it does not match the statutory language. The definition
+  that lists late fees charged by the beneficiary after the notice of default is recorded, plus
+  costs for recording the notice of sale, mailing, publishing, and posting notices required by
+  Sections 2924 to 2924i, inclusive, as well as any fees for a trustee’s sale guarantee or
+  litigation guarantee permitted under subdivision (c) is incorrect because those items are not part
+  of the recurring obligation definition.
+citation:
+  source: Cal. Civ. Code §§ 2920–2944.10 — Cal. Civil Code - ARTICLE 1. Mortgages in General
+    2920-2944.10 2924c(a)(1)
+  url: null
+  quoted_text: For the purposes of this subdivision, the term “recurring obligation” means all amounts
+    of principal and interest on the loan, or rents, subject to the deed of trust or mortgage in
+    default due after the notice of default is recorded; all amounts of principal and interest or
+    rents advanced on senior liens or leaseholds that are advanced after the recordation of the
+    notice of default; and payments of taxes, assessments, and hazard insurance advanced after
+    recordation of the notice of default.
+  secondary: []
+terms:
+  - recurring obligation
+  - notice of default
+  - deed of trust
+  - mortgage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

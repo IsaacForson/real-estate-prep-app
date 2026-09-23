@@ -1,0 +1,40 @@
+id: FL-475-0118
+jurisdiction: FL
+bank: state_FL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate completes a prelicensure course but is absent for 9 classroom hours.
+  According to Florida Statute 475.17(2)(a)1, what is the result regarding the notice of
+  satisfactory completion?
+options:
+  - The notice of satisfactory completion is issued because the absences are within the allowed limit
+  - The notice of satisfactory completion is not issued because absences exceed 8 classroom hours
+  - The notice of satisfactory completion is issued only if the student passes the final exam
+  - The notice of satisfactory completion is issued after the student completes a makeup session
+key: B
+explanation: The statute provides that notice of satisfactory completion shall not be issued if the
+  student has absences in excess of 8 classroom hours. Since the associate missed 9 hours, the
+  notice is withheld.
+citation:
+  source: Fla. Stat. ch. 475 § 475.17(2)(a)1
+  url: null
+  quoted_text: However, notice of satisfactory completion shall not be issued if the student has
+    absences in excess of 8 classroom hours.
+  secondary: []
+terms:
+  - absences
+  - satisfactory completion
+  - classroom hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

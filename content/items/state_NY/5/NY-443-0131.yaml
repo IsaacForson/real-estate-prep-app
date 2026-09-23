@@ -1,0 +1,40 @@
+id: NY-443-0131
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: If a salesperson course includes all subjects listed in 19 NYCRR §176.3(a) and adds a 2‑hour
+  elective, what must the course do to remain compliant?
+options:
+  - The course should cut Real Estate Finance to 3 hours and keep elective
+  - The course should add the elective and increase total hours to 82
+  - The course should omit the elective and keep the syllabus unchanged
+  - The course should keep the elective and reduce Legal Issues to 8 hours
+key: C
+explanation: §176.3(b) states that all approved courses must use the course syllabus exactly as
+  provided. Adding an elective changes the required hours and subjects, which is not permitted.
+  Therefore the course must omit the elective to remain compliant. The distractor suggesting a
+  reduction in Real Estate Finance hours still deviates from the mandated 5‑hour requirement.
+citation:
+  source: "### 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real
+    estate regulations — NY DOS booklet, March 2026 — § 176.3"
+  url: null
+  quoted_text: All approved courses must use this course syllabus in conducting their programs.
+  secondary: []
+terms:
+  - finance
+  - hours
+  - syllabus
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

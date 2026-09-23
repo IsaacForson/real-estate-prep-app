@@ -1,0 +1,39 @@
+id: DC-198-0038
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A board member of the Board of Real Estate attends only 4 of the 12 regular scheduled meetings
+  in a year. Under D.C. Code § 47-2853.07(c), does this constitute neglect of duty?
+options:
+  - No, because neglect of duty only applies to missing all meetings.
+  - Yes, because attending less than half of the meetings constitutes neglect of duty.
+  - No, because the member can make up missed meetings later.
+  - Yes, but only if the member also fails to pay dues.
+key: B
+explanation: Missing more than half of the regular scheduled meetings within a 12‑month period is
+  defined as neglect of duty.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.07(c)"
+  url: null
+  quoted_text: The failure of a member of a board to attend at least half of the regular scheduled
+    meetings of the board within a 12-month period shall constitute neglect of duty within the
+    meaning of this section.
+  secondary: []
+terms:
+  - neglect of duty
+  - meetings
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

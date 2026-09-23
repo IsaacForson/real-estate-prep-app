@@ -1,0 +1,41 @@
+id: DC-198-0073
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord plans to sell a newly constructed multifamily building that received its permanent
+  certificate of occupancy 10 months ago. Under D.C. Code § 42-3404.02b(b)(20), what action must the
+  landlord take regarding the tenants before completing the sale?
+options:
+  - Provide a notice within 90 days after the sale to tenants
+  - Provide a notice of the tenant opportunity to purchase
+  - Provide a notice of transfer to tenants
+  - Provide no notice because the building is new
+key: C
+explanation: The exemption for sales of new buildings under subsection (b)(20) requires that a
+  Notice of Transfer be sent to tenants. The other options either misstate the notice type,
+  incorrectly claim no notice is needed, or confuse the timing with a different provision.
+citation:
+  source: D.C. Code § 42-3404.02b(b)(20)
+  url: null
+  quoted_text: (20) A sale or other transfer of interest in a new building that has completed
+    construction, as evidenced by a permanent certificate of occupancy for a new multifamily
+    building, within the 15 years before the date of sale; provided, that a Notice of Transfer is
+    sent to tenants for this exemption pursuant to § 42-3404.03a;
+  secondary: []
+terms:
+  - notice of transfer
+  - new building
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

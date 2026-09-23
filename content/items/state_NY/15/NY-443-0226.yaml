@@ -1,0 +1,45 @@
+id: NY-443-0226
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "15"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: In the New York salesperson pre‑licensing course, the Instruction block totals 77 hours. If 4
+  hours are allocated to Condominiums and Cooperatives, how many hours remain for all other
+  Instruction subjects?
+options:
+  - 73 hours
+  - 76 hours
+  - 74 hours
+  - 75 hours
+key: A
+explanation: The Instruction block is fixed at 77 hours. Subtracting the required 4 hours for
+  Condominiums and Cooperatives leaves 73 hours for the remaining subjects. The distractor of 74
+  hours would result from subtracting only 3 hours, which does not meet the mandated 4‑hour
+  allocation.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+terms:
+  - instruction
+  - hours
+  - allocation
+  - subtraction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

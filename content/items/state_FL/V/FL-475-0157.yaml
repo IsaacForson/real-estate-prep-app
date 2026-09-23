@@ -1,0 +1,40 @@
+id: FL-475-0157
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Florida broker's license period ends on June 30. The broker fails to submit a renewal
+  application by that date. Under Florida Statutes, when does the license become involuntarily
+  inactive?
+options:
+  - Ninety days after expiration
+  - When notice of renewal is mailed
+  - On the license expiration date
+  - Sixty days after expiration
+key: C
+explanation: The statute states that any license not renewed at the end of the license period shall
+  automatically revert to involuntarily inactive status. Thus the license becomes involuntarily
+  inactive as of the expiration date, June 30. The distractor suggesting sixty days after confuses
+  the renewal notice period with the reversion timing.
+citation:
+  source: Fla. Stat. ch. 475 § 475.182(3)
+  url: null
+  quoted_text: Any license that is not renewed at the end of the license period prescribed by the
+    department shall automatically revert to involuntarily inactive status.
+  secondary: []
+terms:
+  - involuntarily inactive
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

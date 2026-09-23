@@ -1,0 +1,40 @@
+id: IA-543B-0071
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: During a disciplinary hearing, a licensee refuses to provide requested documents. What power
+  does the real estate commission have under Iowa Code §543B.36 to obtain the documents?
+options:
+  - Execute and sign a subpoena requiring the production of the documents
+  - Impose a fine of $2,500 for noncompliance
+  - Revoke the licensee's license immediately
+  - Refer the matter to the county attorney for criminal prosecution
+key: A
+explanation: The statute grants the commission power to execute and sign subpoenas to require the
+  production of papers or books. Imposing a fine is not authorized by this section; civil penalties
+  are addressed elsewhere.
+citation:
+  source: Iowa Code ch. 543B § 543B.36
+  url: null
+  quoted_text: the real estate commission shall have power to execute and sign subpoenas to require
+    the attendance and testimony of any witnesses and the producing of any papers or books.
+  secondary: []
+terms:
+  - subpoena
+  - witness
+  - document
+  - hearing
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

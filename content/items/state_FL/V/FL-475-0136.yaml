@@ -1,0 +1,47 @@
+id: FL-475-0136
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homeowner sells their own single-family residence without employing any agent or paying a
+  commission. Under Florida Statutes, is the homeowner required to hold a real estate license?
+options:
+  - Yes, because any sale of real property requires a license and must be conducted through a
+    licensed broker.
+  - No, because the homeowner is exempt when selling their own real property unless they hire a
+    commissioned agent.
+  - Yes, unless the property is valued under $100,000, in which case a license is still required.
+  - No, but only if the homeowner is also a licensed broker and the sale is conducted through their
+    brokerage.
+key: B
+explanation: Under Fla. Stat. § 475.011(2), an owner selling their own real property is exempt from
+  licensing unless they employ a commissioned agent. The statement that any sale requires a license
+  ignores this exemption. Introducing a value threshold for the exemption is not supported by the
+  statute. Adding a condition that the homeowner must be a licensed broker or use a brokerage also
+  contradicts the exemption.
+citation:
+  source: "### Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections Fla.
+    Stat. § 475.011(2)"
+  url: null
+  quoted_text: Any individual, corporation, partnership, trust, joint venture, or other entity which
+    sells, exchanges, or leases its own real property
+  secondary: []
+terms:
+  - exemption
+  - own real property
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

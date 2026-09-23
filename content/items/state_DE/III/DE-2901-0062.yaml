@@ -1,0 +1,45 @@
+id: DE-2901-0062
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Delaware licensee is found guilty of three separate violations of § 2912 (such as fraud,
+  misrepresentation, and forgery). What is the maximum total monetary penalty the Commission may
+  impose under § 2914(a)(3)?
+options:
+  - $5,000.00
+  - $10,000.00
+  - $15,000.00
+  - $20,000.00
+key: C
+explanation: Under § 2914(a)(3), the Commission may impose a monetary penalty not to exceed $5,000
+  for each violation. For three violations, the maximum total is 3 × $5,000 = $15,000. The $10,000
+  distractor incorrectly assumes only two violations.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2914(a)(3)
+  url: null
+  quoted_text: (3) Impose a monetary penalty not to exceed $5,000 for each violation;
+  secondary: []
+math:
+  worked_solution: Number of violations = 3; Maximum penalty per violation = $5,000; Total maximum
+    penalty = 3 × $5,000 = $15,000.
+  formulas:
+    - total_penalty = violations × $5,000
+  onscreen_calculator_only: false
+terms:
+  - violation
+  - penalty
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

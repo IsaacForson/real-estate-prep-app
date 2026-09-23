@@ -1,0 +1,65 @@
+id: NY-443-0110
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A school has allocated hours to all subjects except Land Use Regulations. The sum of hours for
+  all other subjects (including Instruction and Final Examination) is 77 hours. How many hours must
+  be allocated to Land Use Regulations to reach the total required 80 hours?
+options:
+  - 5 hours
+  - 4 hours
+  - 3 hours
+  - 2 hours
+key: C
+explanation: According to 19 N.Y.C.R.R. § 176.3, Land Use Regulations is allocated 3 hours in the
+  salesperson pre‑licensing course. The total required hours are 80. Subtracting the given 77 hours
+  for all other subjects from 80 leaves 3 hours for Land Use Regulations. Choosing 5 hours would
+  result from mistakenly subtracting 75, a common error.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Land Use Regulations    3
+    Construction and Environmental Issues    5
+    Valuation Process and Pricing Properties   3
+    Human Rights and Fair Housing   6
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+    License Safety      1
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+    Income Tax Issues in Real Estate Transactions   3
+    Mortgage Brokerage    1
+    Property Management   2
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+math:
+  worked_solution: |-
+    Total required hours: 80
+    Hours allocated to other subjects: 77
+    Hours needed for Land Use Regulations: 80 - 77 = 3
+  formulas:
+    - Land Use Regulations hours = Total hours - Sum of other subjects hours
+  onscreen_calculator_only: false
+terms:
+  - hours
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

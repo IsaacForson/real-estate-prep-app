@@ -1,0 +1,49 @@
+id: UT-101-0035
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person with six years' experience as a sales agent and an active sales agent license is
+  nominated for the Utah Real Estate Commission. According to Utah Code Ann. § 61-2f-103(4)(b), what
+  is true about their eligibility?
+options:
+  - The nominee qualifies for one of the four seats requiring at least five years' experience and an
+    active license.
+  - The nominee does not qualify for any of the four seats because they have fewer than five years'
+    experience.
+  - The nominee qualifies only for the general public member seat on the commission.
+  - The nominee is ineligible for any commission seat due to insufficient experience.
+key: A
+explanation: The statute requires that a commission member for those four seats have (i) at least
+  five years of experience in the real estate business and (ii) an active principal broker,
+  associate broker, or sales agent license. Because the nominee has six years of experience and
+  holds an active sales agent license, they meet both criteria and therefore are eligible for one of
+  the four experience‑required seats. The statement that the nominee does not qualify because they
+  have fewer than five years of experience is incorrect, since six years exceeds the minimum. The
+  claim that the nominee qualifies only for the general public member seat is also wrong, because
+  the experience and license requirements make them eligible for the experienced‑member seats as
+  well. The assertion that the nominee is ineligible for any seat is inaccurate for the same reason.
+citation:
+  source: Utah Code Ann. § 61-2f-103(4)(b)
+  url: null
+  quoted_text: "(b) Four of the commission members shall: (i) have at least five years' experience in
+    the real estate business; and (ii) hold an active principal broker, associate broker, or sales
+    agent license;"
+  secondary: []
+terms:
+  - commission member
+  - experience
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: NY-443-0095
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A pre-licensing course provides 70 hours of instruction and 3 hours for the final examination.
+  Does this course satisfy the total hour requirement under 19 NYCRR §176.3?
+options:
+  - Yes, because the course includes the required final examination hours.
+  - No, because the course exceeds the instruction hour limit.
+  - Yes, because the course meets the instruction hour requirement.
+  - No, because the course provides fewer than the required eighty total hours.
+key: D
+explanation: The rule requires a total of eighty hours; seventy hours of instruction plus three
+  hours of final exam equals seventy‑three hours, which is insufficient. The option asserting
+  sufficiency based only on instruction hours is wrong because it ignores the final examination
+  hours and the total requirement.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77  
+    Final Examination    3  
+    Total       80
+  secondary: []
+terms:
+  - hour
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

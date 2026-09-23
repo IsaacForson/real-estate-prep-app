@@ -1,0 +1,43 @@
+id: MS-1954-0069
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller tells the listing broker verbally to hold off presenting any other offers until
+  further notice. A second written offer is then received. According to Rule 3.2(D), what must the
+  listing broker do with this offer?
+options:
+  - The broker should present the offer to the seller because only written instructions can postpone
+    presentation
+  - The broker should withhold the offer until the seller provides written confirmation
+  - The broker should present the offer only if the seller later agrees in writing
+  - The broker should withhold the offer because verbal instructions are sufficient to postpone
+key: A
+explanation: Rule 3.2(D) states that other written offers must be presented to the owner unless the
+  broker has specific, written instructions to postpone presentation. A verbal instruction does not
+  satisfy this requirement, so the broker must present the offer. The distractor claiming verbal
+  instructions are sufficient contradicts the rule’s explicit written‑instruction condition.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.2(D)
+  url: null
+  quoted_text: unless the listing broker has specific, written instructions from the owner to postpone
+    the presentation of other offers.
+  secondary: []
+terms:
+  - written offer
+  - postpone
+  - specific written instructions
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

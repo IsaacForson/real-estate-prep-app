@@ -1,0 +1,43 @@
+id: NJ-1-0046
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant is 19 years old and has completed a General Educational Development (GED)
+  certificate but has not completed high school. Under N.J. Stat. Ann. § 45:15-9, is the applicant
+  eligible for a real estate salesperson license?
+options:
+  - Yes, because the GED satisfies the high school education requirement.
+  - No, because only a traditional high school diploma is accepted.
+  - Yes, but only if the applicant also completes 60 hours of pre-licensing education.
+  - No, because the applicant must be at least 21 years old.
+key: A
+explanation: The statute requires the equivalent of a high school education, which a GED satisfies,
+  making the applicant eligible. The claim that only a traditional diploma is accepted ignores the
+  equivalency provision. Pre‑licensing hours are a separate requirement not addressed in this
+  section, and the minimum age is 18, not 21.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-9
+  url: null
+  quoted_text: Every applicant for a license whether as a real estate broker, broker-salesperson, or
+    salesperson, shall have the equivalent of a high school education.
+  secondary: []
+terms:
+  - high school education
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

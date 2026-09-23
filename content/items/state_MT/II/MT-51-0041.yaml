@@ -1,0 +1,39 @@
+id: MT-51-0041
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana broker hires an unlicensed assistant to conduct property showings and negotiate
+  offers. Is this permissible under Montana law?
+options:
+  - Yes, as long as the assistant receives a salary instead of a commission.
+  - Yes, if the assistant works under the direct supervision of the broker.
+  - No, because a broker may not employ an unlicensed person to perform regulated acts.
+  - No, unless the assistant obtains a temporary permit from the department.
+key: C
+explanation: Mont. Code Ann. § 37-51-306(1) prohibits a licensed broker from employing or
+  compensating an unlicensed person to perform acts regulated by the chapter.
+citation:
+  source: Mont. Code Ann. § 37-51-306(1)
+  url: null
+  quoted_text: A licensed broker may not employ or compensate, directly or indirectly, a person for
+    performing the acts regulated by this chapter who is not a licensed broker, a licensed
+    salesperson, or a licensed property manager.
+  secondary: []
+terms:
+  - broker
+  - unlicensed
+  - employ
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

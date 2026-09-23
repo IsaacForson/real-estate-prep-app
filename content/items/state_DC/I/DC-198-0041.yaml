@@ -1,0 +1,43 @@
+id: DC-198-0041
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the amount deposited in the Real Estate Guaranty and Education Fund exceeds the maximum
+  balance established by the Mayor, what action must the Mayor take?
+options:
+  - The Mayor shall waive contributions to the Fund required by this subchapter
+  - The Mayor shall increase assessments on licensees to cover the shortfall
+  - The Mayor shall suspend all licenses until the balance returns to the minimum
+  - The Mayor shall transfer excess funds to the General Fund for future use
+key: A
+explanation: Under D.C. Code § 42-1707, whenever the amount deposited in the Fund exceeds the
+  maximum balance set by the Mayor, the Mayor must waive the contributions to the Fund required by
+  this subchapter. Therefore the correct answer is the option stating that the Mayor shall waive
+  contributions. The other options are incorrect because they describe actions—increasing
+  assessments, suspending licenses, or transferring excess to the General Fund—that are not required
+  by the statute when the Fund exceeds its maximum balance.
+citation:
+  source: D.C. Code §§ 42-1701–42-1709 — D.C. Code Title 42, Ch. 17, Subch. I - Real Estate Brokers'
+    Duties; Real Estate Guaranty and Education Fund — § 42-1707
+  url: null
+  quoted_text: Whenever the amount deposited in the Fund is more than the maximum balance established,
+    the Mayor shall waive contributions to the Fund required by this subchapter.
+  secondary: []
+terms:
+  - fund
+  - balance
+  - contributions
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

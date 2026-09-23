@@ -1,0 +1,44 @@
+id: OK-605-0065
+jurisdiction: OK
+bank: state_OK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives a written complaint notice from the Oklahoma Real Estate Commission on
+  March 1, 2026, via email. According to Oklahoma Administrative Code Title 605, Chapter 10, Section
+  10-17-2(b), what is the latest date by which the licensee must file an adequate written response
+  to avoid being considered in default?
+options:
+  - March 16, 2026.
+  - March 15, 2026.
+  - March 17, 2026.
+  - March 31, 2026.
+key: A
+explanation: Under 605:10-17-2(b), a licensee who receives notice of a complaint must file an
+  adequate written response within fifteen (15) days of that notice. Counting fifteen days from
+  March 1, 2026 gives a deadline of March 16, 2026, so responding by that date avoids default. The
+  distractor “March 15, 2026” assumes the fifteen‑day period ends one day early, which contradicts
+  the rule’s plain language. The other distractors either subtract or add days incorrectly.
+citation:
+  source: Okla. Admin. Code tit. 605 § 10-17-2(b)
+  url: null
+  quoted_text: When a complaint has been opened by the Investigations Department pursuant to the Code,
+    the licensee or unlicensed person  shall be  immediately notiﬁed within a reasonable time and
+    shall be required to ﬁle an adequate written  response within ﬁfteen (15) days of the notice.
+  secondary: []
+terms:
+  - complaint
+  - response
+  - notice
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

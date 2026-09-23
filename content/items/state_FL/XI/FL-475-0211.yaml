@@ -1,0 +1,46 @@
+id: FL-475-0211
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A federally insured depository institution sells a parcel of land to an accredited investor,
+  with no involvement in a business enterprise transaction. Under Florida Statute 475.01(12), is the
+  institution exempt from the real estate licensing requirement?
+options:
+  - Not exempt because the institution did not receive compensation for the land sale
+  - Exempt because the institution is a federally insured depository institution
+  - Exempt because the buyer is an accredited investor in a land-only deal
+  - Not exempt because the transaction involves land, not a business enterprise
+key: D
+explanation: The exemption under Fla. Stat. § 475.01(12) applies only when the transaction involves
+  the sale, exchange, purchase, or rental of a business enterprise; it does not apply to a sale of
+  land that is not connected with such a transaction. Therefore, a land‑only sale is not exempt. The
+  claim that exemption is based on the institution’s status is incorrect; the exemption depends on
+  the nature of the transaction, not on who the parties are.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.01(12)
+  url: null
+  quoted_text: The exemption does not apply to a sale, exchange, purchase, or rental of land,
+    buildings, fixtures or other improvements to the land which is not made in connection with the
+    sale, exchange, purchase, or rental of a business enterprise.
+  secondary: []
+terms:
+  - accredited investor
+  - business enterprise
+  - land
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

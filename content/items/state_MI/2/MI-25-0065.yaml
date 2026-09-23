@@ -1,0 +1,53 @@
+id: MI-25-0065
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Michigan real estate licensee moves to a new residence but fails to notify the department of
+  the address change within 30 days. The department sends the renewal application to the licensee's
+  old address, and the licensee does not receive it before the license expiration date. What is the
+  effect on the license expiration date under MCL 339.204(4)?
+options:
+  - The license expiration date is extended by 30 days after the licensee fails to notify the
+    department of a new address.
+  - The license expiration date remains unchanged, and the license may be subject to disciplinary
+    action if not renewed by that date.
+  - The license expiration date is automatically renewed for another cycle regardless of
+    notification.
+  - The license expiration date is voided, requiring the licensee to retake the prelicensure
+    examination.
+key: B
+explanation: Under MCL 339.204(4), the failure to notify the department of a change of address does
+  not extend the expiration date of a license or registration and may result in disciplinary action.
+  Therefore, the license expires on its original date, and the licensee may face discipline for not
+  renewing on time. The distractor that suggests an automatic extension is incorrect because the
+  statute explicitly states the expiration date is not extended.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.204(4)
+  url: null
+  quoted_text: The failure of a licensee or registrant to notify the department of a change of address
+    does not extend the expiration date of a license or registration and may result in disciplinary
+    action.
+  secondary: []
+terms:
+  - license
+  - renewal
+  - address
+  - notification
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

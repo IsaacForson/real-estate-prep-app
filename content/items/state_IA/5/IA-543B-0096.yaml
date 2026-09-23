@@ -1,0 +1,45 @@
+id: IA-543B-0096
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum number of banking days a broker has to deposit earnest money into a trust
+  account after the last signature of acceptance on a purchase agreement, according to Iowa Admin.
+  Code r. 481-2013?
+options:
+  - Two banking days
+  - Three banking days
+  - Five banking days
+  - Seven banking days
+key: C
+explanation: The rule requires that trust funds be deposited no later than five banking days after
+  the date of the last signature of acceptance, unless the contract states otherwise. Therefore,
+  five banking days is the correct maximum. Three banking days is incorrect because it understates
+  the allowed period and would prematurely require deposit.
+citation:
+  source: Iowa Admin. Code r. 481-2013 — Iowa Administrative Code 481—Chapter 2013 — Trust Accounts
+    And Closings (Real Estate Commission) 481—2013.1(1)(a)
+  url: null
+  quoted_text: All trust funds are deposited into the trust account no later than five banking days
+    after the date indicated on the document that the last signature of acceptance of the offer to
+    purchase, rent, lease, exchange, or option is obtained unless otherwise specified in the
+    contract.
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+  - banking days
+  - deposit
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

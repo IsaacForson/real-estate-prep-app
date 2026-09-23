@@ -1,0 +1,41 @@
+id: NJ-1-0052
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to N.J. Stat. Ann. § 46:15-5(f), how is a 'senior citizen' defined for purposes of
+  the Realty Transfer Fee?
+options:
+  - Any resident of New Jersey aged 62 years or older
+  - Any resident of New Jersey receiving federal disability benefits
+  - Any resident of New Jersey aged 60 years or older
+  - Any resident of New Jersey who is permanently and totally disabled
+key: A
+explanation: The statute defines a senior citizen as any resident of New Jersey aged 62 years or
+  older. The option stating any resident aged 60 years or older is incorrect because the definition
+  requires age 62 or older. The options describing disability benefits or permanent total disability
+  are incorrect because disability status is not part of this definition.
+citation:
+  source: "### N.J. Stat. Ann. tit. 46, ch. 15 — New Jersey Statutes Title 46, Chapter 15 — Realty
+    Transfer Fee (N.J.S.A. 46:15-1 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 — § 15-5"
+  url: null
+  quoted_text: '"Senior citizen" means any resident of this State of the age of 62 years or over.'
+  secondary: []
+terms:
+  - senior citizen
+  - definition
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-22
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22
