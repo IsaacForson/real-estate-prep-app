@@ -1,0 +1,50 @@
+id: AZ-20-0158
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee commits two separate violations of the Arizona real estate statutes: (1) failing
+  to deposit earnest money into a trust account, and (2) publishing an advertisement that contains a
+  false statement about the property. Assuming the commissioner finds both violations proven after a
+  hearing, what is the maximum total civil penalty that may be assessed?"
+options:
+  - $1,000
+  - $500
+  - $2,000
+  - $1,500
+key: C
+explanation: Under § 32-2160.01, the commissioner may assess a civil penalty not exceeding one
+  thousand dollars for each infraction after a hearing. Two proven infractions therefore allow a
+  maximum of $1,000 × 2 = $2,000. The $1,000 distractor applies the per‑infraction limit to the
+  total, while $500 and $1,500 reflect incorrect arithmetic or misapplication of the limit.
+citation:
+  source: Ariz. Rev. Stat. § 32-2160.01
+  url: null
+  quoted_text: may be assessed a civil penalty by the commissioner, after a hearing, in an amount not
+    to exceed one thousand dollars for each infraction.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify penalty per infraction: $1,000
+    Number of proven infractions: 2
+    Calculate total maximum penalty: $1,000 × 2 = $2,000
+  formulas:
+    - Total maximum penalty = penalty per infraction × number of infractions
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - infraction
+  - commissioner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

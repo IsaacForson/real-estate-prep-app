@@ -1,0 +1,48 @@
+id: AZ-20-0198
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits trust monies in an out‑of‑state bank under a property management trust
+  account. All parties have agreed in writing. The account is federally insured, and the property
+  management agreement includes the required disclosures about limited regulatory protection and
+  owner access, but lacks the addendum signed by the depository official authorizing examination.
+  Under A.R.S. § 32-2151(D)(1)(b)(iii), is the agreement valid?
+options:
+  - The agreement is invalid due to the missing addendum.
+  - The agreement is valid if the broker notifies the department within ten days.
+  - The agreement is valid because the disclosures are present.
+  - The agreement is invalid only if the account is not federally insured.
+key: A
+explanation: The agreement is invalid because the required addendum signed by the depository
+  official authorizing examination is missing. Even though the account is federally insured, the
+  disclosures are present, and the broker could notify the department, the statute requires the
+  signed addendum for the trust account to be valid. Therefore, an agreement lacking that addendum
+  does not meet the legal requirement, making it invalid regardless of the other factors. (See Ariz.
+  Rev. Stat. § 32-2151(D)(1)(b)(iii)).
+citation:
+  source: "### Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151(D)(1)(b)(iii)"
+  url: null
+  quoted_text: (iii) An addendum that has the signed authorization by an appropriately empowered
+    official of the depository in which the trust account is placed that the trust account and all
+    related documentation will be open to examination by the department and the owner.
+  secondary: []
+terms:
+  - property management trust account
+  - addendum
+  - depository
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

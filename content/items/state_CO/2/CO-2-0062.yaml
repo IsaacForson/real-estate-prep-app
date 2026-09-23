@@ -1,0 +1,49 @@
+id: CO-2-0062
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Colorado‑licensed broker operates solely from a home office in Nebraska and conducts all
+  brokerage activities for Colorado clients via email and phone. Under Colo. Rev. Stat.
+  § 12‑10‑203(2), is this permissible?
+options:
+  - It is permissible because the broker conducts all activities remotely and maintains no physical
+    office in Colorado.
+  - It is permissible because the broker’s Nebraska office qualifies as a place of business under an
+    exception to the place‑of‑business requirement.
+  - It is not permissible because every broker must maintain a place of business within Colorado
+    unless an exception applies.
+  - It is not permissible because the broker must also maintain a secondary office in Colorado for
+    client meetings.
+key: C
+explanation: Colorado law requires a broker to maintain a place of business in the state, and only
+  the specific exceptions listed in the statute allow a broker to operate without one. Because the
+  facts do not show any of those exceptions, a broker cannot rely solely on a Nebraska office.
+  Therefore the statement that the broker may operate remotely without a Colorado office is
+  incorrect, and the claim that the Nebraska office qualifies under an exception is also
+  unsupported. (Colo. Rev. Stat. § 12‑10‑203(2))
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-203(2)
+  url: null
+  quoted_text: Every real estate broker licensed under this part 2 shall maintain a place of business
+    within this state, except as provided in section 12-10-208.
+  secondary: []
+terms:
+  - place of business
+  - broker
+  - state
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

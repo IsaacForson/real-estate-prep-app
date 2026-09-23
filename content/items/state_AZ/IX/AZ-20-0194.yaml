@@ -1,0 +1,42 @@
+id: AZ-20-0194
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What must a broker's deposit slip documentation include according to A.R.S. § 32-2151(B)(1)?
+options:
+  - The transaction, date, amount, and names of parties involved
+  - The transaction date, deposit amount, and client ledger number
+  - The broker's license number, deposit date, and bank name
+  - The property address, deposit date, and escrow agent name
+key: A
+explanation: Under A.R.S. § 32-2151(B)(1), receipts or other documentation must identify each
+  transaction, the date and amount of each deposit, and the names of parties involved in the
+  transaction. The correct option lists these exact elements. The incorrect option omits the names
+  of parties, substituting a client ledger number, which the rule does not require.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151 § 32-2151(B)(1)
+  url: null
+  quoted_text: Receipts or other documentation shall identify each transaction, the date and the
+    amount of each deposit and the names of parties involved in the transaction represented by the
+    deposit
+  secondary: []
+terms:
+  - deposit slip
+  - transaction
+  - parties
+  - documentation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

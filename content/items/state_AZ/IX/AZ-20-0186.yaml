@@ -1,0 +1,42 @@
+id: AZ-20-0186
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under A.R.S. § 32-2151(C)(2), what is the maximum amount of personal monies a broker may
+  deposit into a trust fund account without it being considered commingling?
+options:
+  - $10,000
+  - $5,000
+  - $2,500
+  - $1,000
+key: B
+explanation: The rule states that depositing personal monies of not more than $5,000 to keep the
+  account open or avoid insufficient‑balance charges is not commingling. Amounts below $5,000 are
+  permitted but not the maximum; $10,000 exceeds the limit and would be commingling.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151(C)(2)
+  url: null
+  quoted_text: For the purposes of this paragraph, it is not commingling if a broker deposits personal
+    monies of not more than $5,000 to keep the account open or to avoid charges for an insufficient
+    minimum balance.
+  secondary: []
+terms:
+  - commingling
+  - trust fund
+  - personal monies
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

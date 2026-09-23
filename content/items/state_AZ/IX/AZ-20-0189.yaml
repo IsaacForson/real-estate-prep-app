@@ -1,0 +1,45 @@
+id: AZ-20-0189
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to A.R.S. § 32-2151(A), if a broker does **NOT** immediately place entrusted monies
+  in a neutral escrow depository within the state, where must the broker place those monies upon
+  receipt?
+options:
+  - In a trust fund account in a federally insured or guaranteed account in a depository located in
+    this state.
+  - In a personal checking account of the broker at a bank located in this state to avoid minimum
+    balance fees.
+  - In a neutral escrow depository located outside of this state unless all parties agree in writing
+    per statute.
+  - In a savings account at any financial institution regardless of location or insurance status.
+key: A
+explanation: Subsection A requires that monies not placed in a neutral escrow depository be
+  deposited in a trust fund account at a federally insured or guaranteed account in an in‑state
+  depository. Placing funds in a personal checking account would constitute commingling and is
+  prohibited. The other options either misstate the location requirement or ignore the insurance
+  guarantee.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — § 32-2151(A)
+  url: null
+  quoted_text: shall on receipt place all such monies in a trust fund account in a federally insured
+    or guaranteed account in a depository located in this state.
+  secondary: []
+terms:
+  - trust fund
+  - federally insured
+  - depository
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

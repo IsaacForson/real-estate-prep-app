@@ -1,0 +1,44 @@
+id: CO-2-0057
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is found guilty of three separate offenses of knowingly making misrepresentations.
+  What is the maximum total administrative fine the commission may impose?
+options:
+  - $2,500
+  - $5,000
+  - $10,000
+  - $7,500
+key: D
+explanation: The fine is $2,500 per separate offense, so three offenses yield a maximum total of
+  $7,500. The $5,000 option mistakenly assumes only two offenses.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-217(1)
+  url: null
+  quoted_text: has the power to impose an administrative fine not to exceed two thousand five hundred
+    dollars for each separate offense
+  secondary: []
+math:
+  worked_solution: 3 offenses × $2,500 per offense = $7,500
+  formulas:
+    - total fine = number of offenses × $2,500
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

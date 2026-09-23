@@ -1,0 +1,42 @@
+id: CO-2-0146
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee provides the purchaser and seller with a closing statement and a signed duplicate
+  copy of the listing contract, but does not provide the contract of sale or a preliminary
+  agreement. Under Colo. Rev. Stat. § 12-10-217(1)(j), is the licensee in violation?
+options:
+  - The licensee is in violation only if they also failed to retain records for four years
+  - The licensee is not in violation because providing the listing contract satisfies the requirement
+  - The licensee is in violation because they failed to provide the contract of sale or preliminary
+    agreement
+  - The licensee is not in violation because they provided the closing statement and listing contract
+key: C
+explanation: The statute requires licensees to provide both a closing statement and a signed
+  duplicate copy of the listing contract and the contract of sale or preliminary agreement. Omitting
+  the contract of sale or preliminary agreement violates this requirement, even if the other
+  documents are supplied.
+citation:
+  source: Colo. Rev. Stat. § 12-10-217(1)(j)
+  url: null
+  quoted_text: Failing to provide the purchaser and seller of real estate with a closing statement of
+    the transaction, containing such information as may be prescribed by the rules of the commission
+  secondary: []
+terms:
+  - closing statement
+  - listing contract
+  - contract of sale
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

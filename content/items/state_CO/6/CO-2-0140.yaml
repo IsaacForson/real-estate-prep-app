@@ -1,0 +1,45 @@
+id: CO-2-0140
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives confidential information from a seller marked as confidential. After the
+  listing agreement expires, under what condition may the broker disclose that information?
+options:
+  - Disclose the information only after obtaining a court order or the seller's written permission
+  - Disclose the information only with the buyer's written consent, even if marked confidential
+  - Disclose the information at any time after the agreement expires, regardless of confidentiality
+    markings
+  - Disclose info if seller consents in writing, disclosure required by law, or info becomes public
+key: D
+explanation: The rule permits disclosure only if the seller gives written consent, disclosure is
+  required by law, or the information becomes public through other means. Disclosing at any time or
+  solely with buyer's consent or a court order is not authorized unless those specific conditions
+  are met.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-409(2)(b)(II)
+  url: null
+  quoted_text: (A) The engaging party grants written consent to disclose the information; (B)
+    Disclosure of the information is required by law; or (C) The information is made public or
+    becomes public by the words or conduct of the engaging party or from a source other than the
+    broker.
+  secondary: []
+terms:
+  - confidential
+  - disclosure
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

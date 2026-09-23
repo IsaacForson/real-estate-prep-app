@@ -1,0 +1,43 @@
+id: CO-2-0105
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee moves her office to a new location within the same city but does not notify the
+  Colorado Real Estate Commission. What is the immediate effect on her license?
+options:
+  - Active license status
+  - Inactive license status
+  - Cancelled license status
+  - Suspended license status
+key: B
+explanation: The statute states that a change of business address without notification automatically
+  inactivates the licensee’s license. Therefore the license becomes inactive; it is not merely
+  active, cancelled, or suspended.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-211(1)
+  url: null
+  quoted_text: Immediate notice shall be given in a manner acceptable to the commission by each
+    licensee of any change of business location or employment. A change of business address or
+    employment without notification to the commission shall automatically inactivate the licensee’s
+    license.
+  secondary: []
+terms:
+  - change of address
+  - license inactivation
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

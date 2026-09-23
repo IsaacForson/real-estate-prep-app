@@ -1,0 +1,38 @@
+id: CO-2-0095
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Colorado law, what is the maximum administrative fine the Real Estate Commission may
+  impose for each separate offense committed by a licensee?
+options:
+  - $5,000
+  - $7,500
+  - $1,000
+  - $2,500
+key: D
+explanation: The statute authorizes the commission to impose an administrative fine not to exceed
+  $2,500 for each separate offense. The other amounts are not supported by the text.
+citation:
+  source: Colo. Rev. Stat. § 12-10-217(1)
+  url: null
+  quoted_text: has the power to impose an administrative fine not to exceed two thousand five hundred
+    dollars for each separate offense
+  secondary: []
+terms:
+  - administrative fine
+  - commission
+  - offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

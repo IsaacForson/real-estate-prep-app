@@ -1,0 +1,40 @@
+id: AZ-20-0074
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An appellant in a real estate commissioner appeal is declared indigent by the superior court.
+  Who pays for the reporter's transcript of the administrative hearing under Arizona law?
+options:
+  - The party requesting the transcript
+  - The opposing party in the appeal
+  - The Arizona Real Estate Department
+  - The clerk of the superior court
+key: C
+explanation: If the superior court declares an appealing party indigent, the department shall pay
+  the costs of the reporter's transcript of proceedings and shall produce a certified copy of all
+  documents and evidence in the administrative record at no charge. Hence the department covers the
+  transcript cost.
+citation:
+  source: Ariz. Rev. Stat. § 32-2159(B)
+  url: null
+  quoted_text: If the superior court declares an appealing party indigent, on appeal the department
+    shall pay the costs of the reporter's transcript of proceedings and shall produce a certified
+    copy of all documents and evidence in the administrative record at no charge.
+  secondary: []
+terms:
+  - indigent appeal
+  - transcript cost
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

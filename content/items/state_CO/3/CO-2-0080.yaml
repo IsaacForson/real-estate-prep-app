@@ -1,0 +1,42 @@
+id: CO-2-0080
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Broker A is listed in the Commission's records as employing Broker B. Under Colorado law, what
+  is Broker A's status?
+options:
+  - Broker A is an employing broker
+  - Broker A is a sponsoring broker
+  - Broker A is an associate broker
+  - Broker A is a temporary broker
+key: A
+explanation: The statute defines an employing broker as a broker shown in commission records as
+  employing or engaging another broker. Because Broker A appears in the records as employing Broker
+  B, Broker A meets this definition. The option describing an associate broker refers to the
+  employed party, not the employer.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(2)
+  url: null
+  quoted_text: (2) “Employing real estate broker” or “employing broker” means a broker who is shown in
+    commission records as employing or engaging another broker.
+  secondary: []
+terms:
+  - employing broker
+  - commission records
+  - associate broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

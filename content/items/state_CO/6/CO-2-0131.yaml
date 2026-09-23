@@ -1,0 +1,44 @@
+id: CO-2-0131
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A broker deposits a client’s earnest money check into his personal checking account instead
+  of a trust account. Under Colorado law, this action is:"
+options:
+  - It is permitted if the broker keeps separate records.
+  - It is allowed if the funds are returned within 30 days.
+  - It is prohibited because it constitutes commingling of trust funds.
+  - It is allowed if the broker obtains written consent from the client.
+key: C
+explanation: The rule expressly prohibits commingling funds of others with the broker’s own funds
+  and requires trust funds to be kept in an escrow or trustee account. The other options describe
+  situations the statute does not permit.
+citation:
+  source: Colo. Rev. Stat. § 12-10-217(1)(i)
+  url: null
+  quoted_text: (i) Converting funds of others, diverting funds of others without proper authorization,
+    commingling funds of others with the broker’s own funds, or failing to keep the funds of others
+    in an escrow or a trustee account with some bank or recognized depository in this state, which
+    account may be any type of checking, demand, passbook, or statement account insured by an agency
+    of the United States government, and to keep records relative to the deposit that contain such
+    information as may be prescribed by the rules of the commission relative thereto, which records
+    shall be subject to audit by the commission;
+  secondary: []
+terms:
+  - commingling
+  - trust
+  - funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

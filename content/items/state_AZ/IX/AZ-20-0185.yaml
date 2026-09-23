@@ -1,0 +1,43 @@
+id: AZ-20-0185
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a security deposit from a tenant and records the deposit in the trust fund
+  account ledger but does not label the receipt as 'nonowner tenant monies.' According to A.R.S. §
+  32-2151(C)(3), what is the consequence?
+options:
+  - The broker has committed no violation because the deposit remains in the trust account
+  - The broker has committed a violation due to failure to identify monies as nonowner tenant monies
+    in descriptive receipts
+  - The broker has committed a violation only if the tenant later disputes the deposit
+  - The broker has committed a violation only if the amount exceeds one thousand dollars
+key: B
+explanation: Subsection C(3) lists failing to identify monies as nonowner tenant monies in
+  descriptive receipts as a violation, regardless of where the funds are held. Therefore, the
+  broker’s omission constitutes a violation even though the deposit stays in the trust account. The
+  other options incorrectly condition the violation on tenant dispute, amount, or location of the
+  funds.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151(C)(3)
+  url: null
+  quoted_text: Failing to identify monies as nonowner tenant monies in descriptive receipts.
+  secondary: []
+terms:
+  - nonowner tenant monies
+  - descriptive receipts
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,46 @@
+id: CO-2-0111
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A limited liability company applies for a real estate broker license and designates a broker
+  who is currently inactive. Under Colorado law, what is the result regarding the license
+  application?
+options:
+  - The license will be issued pending completion of twenty-four clock hours of instruction
+  - The license will be issued because the designated broker can reactivate before issuance
+  - The license will be denied because the designated broker must be qualified and active
+  - The license will be issued but limited to inactive broker activities
+key: C
+explanation: The statute requires that a partnership, LLC, or corporation designate a qualified,
+  active broker to be responsible for management and supervision; designating an inactive broker
+  fails to meet this requirement. The other options incorrectly suggest that inactivity can be
+  overcome by reactivation, instruction, or limited activity, which are not stated in the statute.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(6)(a)
+  url: null
+  quoted_text: A partnership, limited liability company, or corporation, in its application for a
+    license, shall designate a qualified, active broker to be responsible for management and
+    supervision of the licensed actions of the partnership, limited liability company, or
+    corporation and all licensees shown in the commission’s records as being in the employ of the
+    entity.
+  secondary: []
+terms:
+  - designated broker
+  - LLC
+  - license application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

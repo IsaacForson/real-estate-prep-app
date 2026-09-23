@@ -1,0 +1,40 @@
+id: CO-2-0145
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee provides a purchaser and seller with a closing statement that does not include the
+  information required by the commission’s rules. Under Colo. Rev. Stat. § 12-10-217(1)(j), is the
+  licensee in violation?
+options:
+  - The licensee is in violation because the closing statement lacks required information
+  - The licensee is not in violation because a closing statement was provided
+  - The licensee is in violation only if they also failed to provide a signed duplicate copy of the
+    listing contract
+  - The licensee is not in violation because they provided some form of written statement
+key: A
+explanation: The rule treats the omission of required information as a failure to provide a closing
+  statement containing such information, which is a violation. Merely providing a closing statement
+  that lacks the required data does not satisfy the statutory obligation.
+citation:
+  source: Colo. Rev. Stat. § 12-10-217(1)(j)
+  url: null
+  quoted_text: Failing to provide the purchaser and seller of real estate with a closing statement of
+    the transaction, containing such information as may be prescribed by the rules of the commission
+  secondary: []
+terms:
+  - closing statement
+  - information requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

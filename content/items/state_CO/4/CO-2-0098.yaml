@@ -1,0 +1,41 @@
+id: CO-2-0098
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the criminal classification for acting as a real estate broker in Colorado without a
+  valid license?
+options:
+  - It is a class 1 misdemeanor.
+  - It is a class 3 misdemeanor.
+  - It is a petty offense.
+  - It is a class 2 misdemeanor.
+key: D
+explanation: Under Colo. Rev. Stat. § 12-10-223, acting as a real estate broker without a license or
+  after revocation/suspension is a class 2 misdemeanor. The other classifications do not match the
+  statute.
+citation:
+  source: Colo. Rev. Stat. § 12-10-223
+  url: null
+  quoted_text: Any natural person, firm, partnership, limited liability company, association, or
+    corporation violating the provisions of this part 2 by acting as real estate broker in this
+    state without having obtained a license or by acting as real estate broker after the broker’s
+    license has been revoked or during any period for which the license may have been suspended
+    commits a class 2 misdemeanor.
+  secondary: []
+terms:
+  - class 2 misdemeanor
+  - unlicensed brokerage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

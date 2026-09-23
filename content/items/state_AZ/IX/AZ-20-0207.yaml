@@ -1,0 +1,43 @@
+id: AZ-20-0207
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker stores computerized trust fund records off‑site but does not keep them in a manner
+  allowing reconstruction if the electronic data is destroyed. Under A.R.S. § 32-2151(B)(2), is this
+  compliant?
+options:
+  - The broker's practice is compliant because off‑site storage is permitted with prior notice
+  - The broker's practice is not compliant because computerized records must be kept allowing
+    reconstruction
+  - The broker's practice is compliant because the records are stored electronically
+  - The broker's practice is not compliant because off‑site storage requires department approval
+key: B
+explanation: The statute requires that computerized records be kept in a manner allowing
+  reconstruction if electronic data is destroyed. Failing to do so violates the rule, making the
+  practice non‑compliant. The statements claiming compliance based on off‑site storage with prior
+  notice or on electronic storage are incorrect, and the claim that non‑compliance stems from a
+  department‑approval requirement for off‑site storage is unrelated.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151(B)(2)
+  url: null
+  quoted_text: The broker shall keep any computerized records in a manner allowing reconstruction in
+    the event of destruction of electronic data.
+  secondary: []
+terms:
+  - computerized records
+  - reconstruction
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,47 @@
+id: CO-2-0103
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A brokerage firm designates Broker Alex as the designated broker for a seller in a
+  transaction. In the same transaction, Alex also works with the buyer as a transaction‑broker. Is
+  this permissible under Colorado law?
+options:
+  - The designated broker may act as a single agent for both parties if written informed consent is
+    obtained
+  - The designated broker may act as a transaction‑broker for both parties only
+  - The designated broker may act as a single agent for the seller and treat the buyer as a customer
+  - The designated broker may not work with both parties in the same transaction
+key: C
+explanation: Under Colo. Rev. Stat. § 12-10-403(6)(d), a designated broker is permitted to act as a
+  single agent for one party while treating the other party as a customer, but not as a single agent
+  for both. The option suggesting the broker may act as a single agent for both parties is incorrect
+  because the statute explicitly prohibits dual agency. The option stating the broker may only act
+  as a transaction-broker for both parties is incorrect because it ignores the permitted
+  single-agent/customer relationship. The option stating the broker may not work with both parties
+  is incorrect because the statute allows the broker to work with both, provided the agency
+  relationship is structured as single agent for one and customer for the other.
+citation:
+  source: Colo. Rev. Stat. § 12-10-403(6)(d)
+  url: null
+  quoted_text: as a single agent for the seller or landlord treating the buyer or tenant as a
+    customer, or as a single agent for a buyer or tenant treating the seller or landlord as a
+    customer, but not as a single agent for both.
+  secondary: []
+terms:
+  - designated broker
+  - transaction‑broker
+  - single agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

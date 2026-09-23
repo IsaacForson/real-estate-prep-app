@@ -1,0 +1,41 @@
+id: CO-2-0086
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker representing a buyer wants to use an attorney‑drafted purchase agreement form. The
+  Colorado Real Estate Commission has promulgated a Commission‑Approved purchase agreement form that
+  is appropriate for the transaction. Under Colorado regulations, what must the broker do?
+options:
+  - The broker should use either form.
+  - The broker should get client approval for the Attorney Form.
+  - The broker should use the Attorney Form.
+  - The broker should use the Commission‑Approved Form.
+key: D
+explanation: The rule provides that a broker may only use an Attorney Form when no
+  Commission‑Approved Form exists or the existing form is not appropriate for the transaction.
+  Because a suitable Commission‑Approved Form is available, the broker must use that form. Using the
+  Attorney Form in this circumstance would violate the regulation.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) — § 6
+  url: null
+  quoted_text: A Broker may only use an Attorney Form if a Commission-Approved Form does not exist or
+    is not appropriate for the transaction.
+  secondary: []
+terms:
+  - attorney form
+  - commission-approved form
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23
