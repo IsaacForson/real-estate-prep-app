@@ -299,13 +299,13 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
 
     <!-- The loop. -->
     <template v-else-if="phase === 'question' && item">
-      <div class="safe-px mx-auto grid w-full max-w-3xl flex-1 content-start gap-3 py-4 pb-36">
+      <div class="safe-px mx-auto grid w-full max-w-5xl flex-1 content-start gap-3 py-4 pb-36">
         <NarrationBar :item="item" :reveal="reveal" :label="`Question ${position + 1} of ${total}`" />
         <QuestionCard :key="item.id" :item="item" :answered="chosen" :reveal="reveal" class="anim-deal-in" @choose="choose" />
       </div>
 
-      <div class="safe-pb fixed inset-x-0 bottom-0 z-30 border-t border-line bg-bg/92 backdrop-blur-xl">
-        <div class="safe-px mx-auto flex max-w-3xl items-center gap-3 py-3.5">
+      <div class="safe-pb fixed right-0 bottom-0 left-[var(--app-sidebar,0px)] z-20 border-t border-line bg-bg/92 backdrop-blur-xl">
+        <div class="safe-px mx-auto flex max-w-5xl items-center gap-3 py-3.5">
           <AppButton
             variant="primary"
             size="lg"
@@ -325,7 +325,7 @@ onUnmounted(() => window.removeEventListener("keydown", onKey));
     </template>
 
     <!-- Scheduling the first batch. -->
-    <div v-else class="safe-px mx-auto grid w-full max-w-3xl flex-1 content-start gap-3 py-4">
+    <div v-else class="safe-px mx-auto grid w-full max-w-5xl flex-1 content-start gap-3 py-4">
       <Skeleton height="3rem" />
       <Skeleton height="22rem" />
     </div>

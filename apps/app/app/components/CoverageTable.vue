@@ -12,15 +12,15 @@ function pct(r: NodeCoverage) { return r.examItems ? Math.round((100 * (r.solidI
       <component
         :is="selectable ? 'button' : 'div'"
         :type="selectable ? 'button' : undefined"
-        class="grid w-full gap-2 rounded-card px-3 py-2.5 text-left transition-colors"
+        class="grid w-full min-w-0 gap-2 rounded-card px-3 py-2.5 text-left transition-colors"
         :class="selectable ? 'hover:bg-surface-2 active:bg-surface-2' : ''"
         @click="selectable && emit('select', r.node)"
       >
-        <div class="flex items-baseline justify-between gap-3">
-          <span class="truncate text-[13.5px] font-medium">
+        <div class="flex items-start justify-between gap-3">
+          <span class="min-w-0 flex-1 text-[13.5px] font-medium leading-snug">
             <span class="tabular mr-1.5 text-muted">{{ r.node }}</span>{{ r.label }}
           </span>
-          <span class="tabular shrink-0 text-[12px] text-muted">
+          <span class="tabular shrink-0 text-right text-[12px] leading-snug text-muted">
             <template v-if="r.solidItems != null"><strong class="font-semibold text-ink">{{ r.solidItems }}</strong>/{{ r.examItems }} solid</template>
             <template v-else>{{ Math.max(0, 3 - r.seen) }} more to tell</template>
           </span>

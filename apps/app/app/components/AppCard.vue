@@ -20,7 +20,7 @@ const tones = {
 };
 </script>
 <template>
-  <component :is="as" class="rounded-card overflow-hidden" :class="[tones[tone], pad[padding]]">
+  <component :is="as" class="min-w-0 max-w-full rounded-card overflow-hidden" :class="[tones[tone], pad[padding]]">
     <header
       v-if="title || $slots.header"
       class="flex items-start justify-between gap-3"

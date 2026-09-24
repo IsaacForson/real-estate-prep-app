@@ -201,7 +201,7 @@ onMounted(() => { void coverage.refresh(); void readiness.refresh?.(); void cont
 watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.value); });
 </script>
 <template>
-  <div class="grid w-full gap-4 text-ink">
+  <div class="grid w-full min-w-0 gap-4 text-ink">
     <p class="text-[13.5px] leading-relaxed text-ink-2">Timed forms in your state's exam format. Answers stay hidden until you submit.</p>
     <AppCard v-if="active" tone="accent">
       <div class="flex items-center gap-3">
@@ -269,12 +269,12 @@ watch([jur, nationalBank], () => { void mockForms.load(jur.value, nationalBank.v
           <li v-for="sec in sections" :key="sec.node">
             <button
               type="button"
-              class="flex min-h-11 w-full items-center gap-3 rounded-card px-2.5 text-left transition-colors hover:bg-surface-2 disabled:opacity-50"
+              class="flex min-h-11 w-full min-w-0 items-start gap-3 rounded-card px-2.5 py-2 text-left transition-colors hover:bg-surface-2 disabled:opacity-50"
               :disabled="busy === sec.node"
               @click="startGenerated(sec.node)"
             >
               <span class="tabular grid size-8 shrink-0 place-items-center rounded-lg bg-surface-2 text-[12px] font-semibold text-ink-2">{{ sec.node }}</span>
-              <span class="min-w-0 flex-1 truncate text-[14px]">{{ sec.label }}</span>
+              <span class="min-w-0 flex-1 text-[14px] leading-snug">{{ sec.label }}</span>
               <Icon name="chevron-right" :size="16" class="shrink-0 text-muted" />
             </button>
           </li>

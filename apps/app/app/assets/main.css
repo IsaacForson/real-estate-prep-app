@@ -325,6 +325,21 @@
   min-width: 46px;
 }
 
+/* Web app rail. Phones and the Android shell keep the top bar, so the rail width stays 0 until md. */
+.app-shell {
+  --app-sidebar: 0px;
+  --app-sticky-top: calc(env(safe-area-inset-top) + 3.5rem);
+}
+@media (min-width: 48rem) {
+  .app-shell {
+    --app-sidebar: 15.5rem;
+    --app-sticky-top: env(safe-area-inset-top);
+  }
+}
+.app-shell.is-immersive {
+  --app-sidebar: 0px;
+}
+
 /* Capacitor safe areas. */
 @utility safe-pt {
   padding-top: env(safe-area-inset-top);

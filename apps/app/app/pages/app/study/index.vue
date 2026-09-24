@@ -77,7 +77,7 @@ async function setLevel(v: string) { await studyState.set({ licenseLevel: v as "
 onMounted(() => { void content.load(); });
 </script>
 <template>
-  <div class="grid w-full gap-4">
+  <div class="grid w-full min-w-0 gap-4">
     <FreeTierGate variant="block" />
 
     <AppCard v-if="active && active.kind !== 'mock'" tone="accent">

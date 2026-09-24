@@ -7,7 +7,7 @@
  * full-screen. Public routes in the native build (pricing, help) keep the plain top bar;
  * welcome and sign-in use the `bare` layout instead.
  *
- * The immersive rule lives in composables/useAppPanel.ts so layouts/web.vue cannot drift from it.
+ * The sidebar and the wider column are web-only (layouts/web.vue).
  */
 const route = useRoute();
 

@@ -31,7 +31,7 @@ const continueLabel = computed(() => {
 const firstName = computed(() => auth.user.value?.email?.split("@")[0] ?? null);
 </script>
 <template>
-  <div class="safe-px anim-fade-up mx-auto grid w-full max-w-xl gap-5 py-8">
+  <div class="safe-px anim-fade-up mx-auto grid w-full max-w-xl gap-5 py-8 md:max-w-4xl md:px-0 md:py-2">
     <div>
       <p class="eyebrow">Home</p>
       <h1 class="display mt-1 text-[24px]">{{ firstName ? `Welcome back, ${firstName}` : "Welcome back" }}</h1>
