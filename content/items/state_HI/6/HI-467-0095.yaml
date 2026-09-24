@@ -1,0 +1,37 @@
+id: HI-467-0095
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Hawaii Administrative Rules §16-99-3(e), what must a broker do with moneys received in
+  trust for other persons?
+options:
+  - Deposit them into the broker's business savings account for temporary holding.
+  - Keep them in special bank accounts separated from the broker's own funds.
+  - Invest them in money-market funds pending client approval.
+  - Hold them in the broker's trust account alongside personal funds.
+key: B
+explanation: The rule requires brokers to keep trust moneys in special bank accounts separated from
+  their own funds. Depositing them into a personal account violates this separation requirement.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(e)
+  url: null
+  quoted_text: The broker shall keep in special bank accounts, separated from the broker's own funds,
+    moneys coming into the broker's possession in trust for other persons
+  secondary: []
+terms:
+  - trust
+  - account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

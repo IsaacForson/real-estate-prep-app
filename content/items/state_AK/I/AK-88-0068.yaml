@@ -1,0 +1,38 @@
+id: AK-88-0068
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum amount that the real estate recovery fund may be liable for any one real
+  estate licensee under Alaska law?
+options:
+  - $10,000
+  - $25,000
+  - $50,000
+  - $100,000
+key: C
+explanation: The statute explicitly caps the fund's liability at $50,000 per licensee. The other
+  amounts are not mentioned in the statute.
+citation:
+  source: Alaska Stat. § 08.88.475(a)
+  url: null
+  quoted_text: The maximum liability of the real estate recovery fund may not exceed $50,000 for any
+    one real estate licensee.
+  secondary: []
+terms:
+  - recovery fund
+  - liability
+  - licensee
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

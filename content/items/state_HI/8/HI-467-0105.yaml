@@ -1,0 +1,40 @@
+id: HI-467-0105
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Hawaii Administrative Rules §16-99-3(e), what must a broker do with escrow funds
+  received in trust for another person?
+options:
+  - Deposit funds in a special trust account separate from personal funds
+  - Place funds in the broker's personal checking account for convenience
+  - Hold funds in the office safe until the closing date arrives and is verified
+  - Transfer funds directly to the seller's attorney for processing promptly
+key: A
+explanation: The rule requires brokers to keep escrow funds in special bank accounts separated from
+  their own funds. Depositing the funds into a segregated trust account satisfies this duty. Placing
+  the funds in the broker's personal checking account violates the segregation requirement and is
+  therefore incorrect.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(e)
+  url: null
+  quoted_text: The broker shall keep in special bank accounts, separated from the broker's own funds,
+    moneys coming into the broker's possession in trust for other persons, such as escrow funds,
+    trust funds, clients' moneys, rental deposits, rental receipts, and other like items.
+  secondary: []
+terms:
+  - escrow
+  - trust
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,43 @@
+id: LA-1430-0180
+jurisdiction: LA
+bank: state_LA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensed real estate broker in Louisiana is asked to serve as the qualifying broker for two
+  different LLCs. According to La. R.S. 37:1437.2, is this permissible?
+options:
+  - The prohibition against a broker serving as qualifying broker for more than one entity without
+    commission approval
+  - The condition that the LLCs must be under common ownership for multiple qualifying brokerages
+  - The permission granted by the statute allowing an individual broker to serve as qualifying
+    broker for more than one entity
+  - The requirement of a special waiver from the commission for multiple qualifying brokerages
+key: C
+explanation: The statute allows an individual broker to serve as qualifying broker for more than one
+  corporation, limited liability company, or partnership, so serving two LLCs is permissible without
+  additional approval. The distractor claiming a prohibition is incorrect because the law explicitly
+  authorizes multiple qualifying brokerages.
+citation:
+  source: La. R.S. 37:1430–1470 (Louisiana Real Estate License Law); La. Admin. Code tit. 46, pt.
+    LXVII (Real Estate)) § 1437.2(B)
+  url: null
+  quoted_text: An individual real estate broker may serve as a qualifying broker for more than one
+    corporation, limited liability company, or partnership.
+  secondary: []
+terms:
+  - qualifying broker
+  - multiple
+  - entity
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

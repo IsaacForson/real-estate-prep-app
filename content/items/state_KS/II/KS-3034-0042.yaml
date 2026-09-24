@@ -1,0 +1,45 @@
+id: KS-3034-0042
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Kansas real estate salesperson submits her renewal application to the commission on the
+  exact date her license expires. The commission has not yet acted on the application. Under Kansas
+  law, what is the salesperson’s status regarding conducting real estate activities after the
+  expiration date?
+options:
+  - She may practice only after receiving a temporary authorization from the commission staff.
+  - She may continue practicing under her current license while the commission reviews her renewal.
+  - She may practice only if she also submits a late renewal fee along with her application.
+  - She must cease all her real estate practice immediately after the expiration of her license date.
+key: B
+explanation: The statute allows an applicant who files a timely renewal application to continue
+  operating under the existing license after expiration until the commission determines whether the
+  application meets requirements. The distractor suggesting she must stop practice is incorrect
+  because it contradicts the statutory permission to continue.
+citation:
+  source: Kan. Stat. Ann. § 58-3045(d)
+  url: null
+  quoted_text: An application for renewal filed in compliance with the requirements of subsection (b)
+    shall entitle the applicant to continue operating under the applicant's existing license after
+    its specified expiration date, unless such license has been suspended or revoked and has not
+    been reinstated or unless such license is restricted, until such time as the commission
+    determines whether the application fulfills such requirements.
+  secondary: []
+terms:
+  - renewal application
+  - existing license
+  - commission determination
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

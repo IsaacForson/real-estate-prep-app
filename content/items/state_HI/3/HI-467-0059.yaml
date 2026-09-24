@@ -1,0 +1,53 @@
+id: HI-467-0059
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord in Hawaii wishes to increase the rent for a month-to-month tenancy effective August
+  1. According to Hawaii Revised Statutes § 521-21(d), what is the latest date the landlord may give
+  the written notice to the tenant?
+options:
+  - The notice may be given on June 18.
+  - The notice may be given on June 17.
+  - The notice may be given on June 16.
+  - The notice may be given on June 15.
+key: B
+explanation: Section 521-21(d) requires written notice of a rent increase at least forty‑five
+  consecutive days before the effective date. Counting back forty‑five days from August 1 gives
+  June 17 as the latest date the notice may be given. A notice dated June 18 would be less than
+  forty‑five days before the increase, while notices dated June 16 or June 15 would be earlier than
+  required and therefore also permissible but not the latest permissible date.
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Revised Statutes Chapter 521 - Residential Landlord-Tenant
+    Code (data.capitol.hawaii.gov, section pages concatenated) — § 521-21(d)
+  url: null
+  quoted_text: (d) When the tenancy is from month to month, the amount of rent for such tenancy shall
+    not be increased by the landlord without written notice given forty-five consecutive days prior
+    to the effective date of the increase.
+  secondary: []
+math:
+  worked_solution: |-
+    Effective date: August 1
+    Notice period: 45 days
+    Subtract 31 days of July → July 1
+    Subtract remaining 14 days → June 17
+  formulas:
+    - notice_date = effective_date - notice_period
+  onscreen_calculator_only: false
+terms:
+  - rent increase
+  - notice
+  - month-to-month
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

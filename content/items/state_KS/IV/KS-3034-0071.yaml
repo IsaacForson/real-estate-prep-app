@@ -1,0 +1,43 @@
+id: KS-3034-0071
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Kan. Stat. Ann. § 58-3061(g), when may a broker disburse earnest money from a trust account?
+options:
+  - After obtaining written consent from the broker's supervising broker
+  - After receiving a written request from the buyer alone
+  - After receiving written authorization of both buyer and seller
+  - After the broker determines the transaction is likely to close
+key: C
+explanation: The statute permits disbursement only pursuant to written authorization of both buyer
+  and seller, a court order, or when the transaction is closed. The correct option matches the first
+  condition. The other options either lack required party consent or anticipate closure without
+  actual authorization or closing.
+citation:
+  source: "### Kan. Stat. Ann. § 58-3061 — K.S.A. Kan. Stat. Ann. § 58-3061 — section (g)"
+  url: null
+  quoted_text: >-
+    (g) Upon acceptance of an offer and deposit of earnest money in a broker's trust account, such
+    deposit may be disbursed only:
+     (1) Pursuant to written authorization of buyer and seller;
+     (2) pursuant to a court order; or
+     (3) when a transaction is closed according to the agreement of the parties.
+  secondary: []
+terms:
+  - earnest
+  - money
+  - disbursement
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

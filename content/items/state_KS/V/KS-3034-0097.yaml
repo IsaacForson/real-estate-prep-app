@@ -1,0 +1,45 @@
+id: KS-3034-0097
+jurisdiction: KS
+bank: state_KS
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson lists a home after the seller informs them that the roof was replaced two years
+  ago. The salesperson has no personal knowledge of the roof's actual age and relies on the seller's
+  statement. Later, the buyer discovers the roof is original and sues for negligent
+  misrepresentation. Under Kan. Stat. Ann. § 58-30,111(c), what is the likely outcome?
+options:
+  - The salesperson is liable because they failed to verify the seller's statement
+  - The salesperson is liable only if the seller intended to deceive
+  - The salesperson is liable because they have a duty to inspect the roof
+  - The salesperson is not liable because they lacked personal knowledge of the error
+key: D
+explanation: The salesperson is not liable because they lacked personal knowledge of the error.
+  Under Kan. Stat. Ann. § 58-30,111(c), a licensee shall not be liable for an innocent or negligent
+  misrepresentation when they have no personal knowledge of the error. Here the salesperson relied
+  on the seller's statement and had no personal knowledge of the roof's age, so the statutory shield
+  applies. The law does not impose a duty to verify client statements unless the licensee personally
+  knows the information is incorrect.
+citation:
+  source: Kan. Stat. Ann. § 58-30,111(c)
+  url: null
+  quoted_text: shall not be liable for an innocent or negligent misrepresentation in information
+    provided to the seller or landlord or to the buyer or tenant if the licensee does not have
+    personal knowledge of the error
+  secondary: []
+terms:
+  - imputed knowledge
+  - negligent misrepresentation
+  - personal knowledge
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

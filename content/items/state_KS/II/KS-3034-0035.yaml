@@ -1,0 +1,45 @@
+id: KS-3034-0035
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant passed the general portion of the real estate examination seven months ago and
+  the state portion four months ago. Today they submit their application for an original license.
+  Under K.S.A. 58-3039(f)(3), what is the result?
+options:
+  - The license may not be issued because both portions must be retaken
+  - The license may not be issued because the general portion was administered more than six months
+    ago
+  - The license may be issued because the general portion is still valid
+  - The license may be issued because the state portion is within six months
+key: B
+explanation: The statute provides that no license shall be issued if either examination portion was
+  administered more than six months before the application is received. Since the general portion
+  was taken seven months ago, it exceeds the six‑month limit, so the license cannot be issued. The
+  distractor that focuses only on the state portion ignores the rule that either portion invalidates
+  the application.
+citation:
+  source: Kan. Stat. Ann. § 58-3039(f)(3)
+  url: null
+  quoted_text: No license shall be issued on the basis of an examination if either or both portions of
+    the examination were administered more than six months prior to the date that the applicant's
+    application is received by the commission.
+  secondary: []
+terms:
+  - examination
+  - six months
+  - application
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,47 @@
+id: HI-467-0091
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is assisting a client in the sale of a business that includes only furniture and
+  equipment, with no interest in real property. Under Haw. Rev. Stat. § 467-1, how should this
+  transaction be treated for licensing purposes?
+options:
+  - The transaction is considered a real estate transaction under the statute.
+  - The transaction is not considered a real estate transaction under the statute.
+  - The transaction is considered a real estate transaction only if commissioned.
+  - The transaction is not considered a real estate transaction unless leased.
+key: B
+explanation: The statute provides that a transaction is considered a real estate transaction only to
+  the extent that real estate is involved; when no real estate is part of the deal, it is not a real
+  estate transaction. The transaction is considered a real estate transaction only if commissioned
+  is incorrect because paying a commission does not change the requirement that real estate must be
+  involved for the transaction to fall under the chapter.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: It shall be immaterial that a transaction also involves property other than real
+    estate, as for example a transaction for the sale of an ongoing business, an asset of which
+    consists of a leasehold or other interest in real property. In such a case, to the extent that
+    real estate is involved, it shall be considered a real estate transaction for the purpose of
+    this definition.
+  secondary: []
+terms:
+  - real estate
+  - transaction
+  - ongoing business
+  - leasehold
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

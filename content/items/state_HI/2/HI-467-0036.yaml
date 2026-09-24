@@ -1,0 +1,57 @@
+id: HI-467-0036
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is hired by a condominium association to manage the common elements and collect
+  monthly maintenance fees. Under Hawaii law, is this individual considered a custodian?
+options:
+  - No, because the association is not considered a single owner under the statute.
+  - Yes, because they have responsibility to manage or care for real property.
+  - Yes, because they are employed by the association to manage property.
+  - No, because they collect monthly maintenance fees from unit owners.
+key: A
+explanation: Hawaii law defines a custodian as an individual who, for compensation, is employed by a
+  single owner and has responsibility to manage or care for the real property. The definition
+  expressly excludes an association of condominium owners from the meaning of “single owner.”
+  Because the licensee works for the condominium association, which is not a single owner, the
+  individual does not satisfy the statutory custodian requirement. Thus the statement that the
+  association is not considered a single owner is correct. The other choices are incorrect because
+  employment alone or fee collection does not meet the single‑owner condition required by Haw. Rev.
+  Stat. ch. 467 § 467‑1.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: |-
+    "Custodian or caretaker" means any individual,
+    who for compensation or valuable consideration, is
+    employed as an employee by a single owner and has the
+    responsibility to manage or care for that real
+    property left in the individual's trust; provided that
+     the term "custodian" or "caretaker" shall not include
+    any individual who leases or offers to lease, or rents
+    or offers to rent, any real estate for more than a
+
+    467-3
+    single owner; provided further that a single owner
+    shall not include an association of owners of a
+    condominium, cooperative, or planned unit development.
+  secondary: []
+terms:
+  - custodian
+  - single owner
+  - condominium association
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

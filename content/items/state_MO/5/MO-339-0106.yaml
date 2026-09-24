@@ -1,0 +1,40 @@
+id: MO-339-0106
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under Missouri law, a person may sue for compensation for real estate brokerage services only if:"
+options:
+  - The person must have a sponsoring broker at the time of the alleged cause of action.
+  - The person must have a written agreement with the client before seeking compensation
+  - The person must be licensed at the time of filing the lawsuit.
+  - The person must have been licensed at the time the cause of action arose.
+key: D
+explanation: Under 339.160, a person must allege and prove they were a licensed real estate broker
+  at the time the cause of action arose to recover compensation. The other options describe
+  situations that do not satisfy the statutory requirement.
+citation:
+  source: Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules) — Missouri Real Estate
+    Commission — Statutes (RSMo Chapter 339) and Rules (20 CSR 2250) book (June 2023) — § 2250-9.050
+    § 339.160
+  url: null
+  quoted_text: was a licensed real estate broker, broker-salesperson or salesperson at the time when
+    the alleged cause of action arose.
+  secondary: []
+terms:
+  - license
+  - compensation
+  - cause of action
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

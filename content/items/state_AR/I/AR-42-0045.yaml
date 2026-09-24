@@ -1,0 +1,38 @@
+id: AR-42-0045
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: How many members of the Arkansas Real Estate Commission must have been licensed real estate
+  brokers or salespersons for at **LEAST** five years before their nomination?
+options:
+  - Three members
+  - One member
+  - Two members
+  - Four members
+key: A
+explanation: The statute requires three commissioners to have been licensed brokers or salespersons
+  for at least five years prior to nomination. The other options incorrectly state one, two, or four
+  members.
+citation:
+  source: Ark. Code Ann. § 17-42-201(a)(2)(A)
+  url: null
+  quoted_text: Three (3) members shall have been licensed real estate brokers or licensed real estate
+    salespersons for not fewer than five (5) years before their nominations.
+  secondary: []
+terms:
+  - commission
+  - membership
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

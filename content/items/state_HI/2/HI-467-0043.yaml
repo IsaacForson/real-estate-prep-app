@@ -1,0 +1,47 @@
+id: HI-467-0043
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Hawaii Revised Statutes § 514B-3, how is a 'condominium' defined?
+options:
+  - Real estate where each unit owner holds exclusive ownership of their unit and an undivided
+    interest in the common elements
+  - Real estate where the developer holds title to the common elements and unit owners lease their
+    units
+  - Real estate where ownership of both units and common elements is held jointly by all owners as
+    tenants in common
+  - Real estate where each owner holds a leasehold interest in their unit and a share in the common
+    elements
+key: A
+explanation: Hawaii Revised Statutes § 514B-3 defines a condominium as real estate where portions
+  are designated for separate ownership and the remainder is designated for common ownership solely
+  by the owners of those portions. This matches the description of exclusive unit ownership and an
+  undivided interest in the common elements. The option stating that the developer holds title to
+  the common elements is incorrect because the statute specifies that the common elements are owned
+  solely by the unit owners, not the developer.
+citation:
+  source: Haw. Rev. Stat. ch. 514B — Hawaii Revised Statutes Chapter 514B - Condominiums
+    (data.capitol.hawaii.gov, section pages concatenated) — § 514B-3
+  url: null
+  quoted_text: Condominium means real estate, portions of which are designated for separate ownership
+    and the remainder of which is designated for common ownership solely by the owners of those
+    portions.
+  secondary: []
+terms:
+  - condominium
+  - common elements
+  - unit ownership
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

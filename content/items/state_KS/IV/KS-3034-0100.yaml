@@ -1,0 +1,41 @@
+id: KS-3034-0100
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Kan. Stat. Ann. § 58-3061(d), when may a broker receive earnest money as part of the
+  broker's commission?
+options:
+  - After the broker receives written consent from the seller unless otherwise agreed in writing
+  - After the transaction is consummated or terminated unless otherwise agreed in writing
+  - After thirty days have passed since the deposit unless otherwise agreed in writing
+  - After the closing agent releases the funds unless otherwise agreed in writing
+key: B
+explanation: The statute prohibits a broker from being entitled to earnest money as commission until
+  the transaction has been consummated or terminated unless otherwise agreed in writing by all
+  parties. The other options are not permitted by the rule.
+citation:
+  source: Kan. Stat. Ann. § 58-3061(d)
+  url: null
+  quoted_text: A broker shall not be entitled to any part of the earnest money or other money paid to
+    the broker in connection with any real estate transaction as part or all of the broker's
+    commission or fee until the transaction has been consummated or terminated unless otherwise
+    agreed in writing by all parties to the transaction.
+  secondary: []
+terms:
+  - earnest money
+  - commission
+  - trust account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

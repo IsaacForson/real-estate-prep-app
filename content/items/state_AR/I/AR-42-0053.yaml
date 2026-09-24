@@ -1,0 +1,39 @@
+id: AR-42-0053
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: During a commission hearing, a licensee requests that a subpoena be issued for a witness to
+  produce documents. Who is responsible for paying the fees and mileage of the officer serving the
+  subpoena and the witness?
+options:
+  - The commission staff
+  - The requesting licensee
+  - The witness in the case
+  - The circuit court judge
+key: B
+explanation: Section 17-42-205(b)(2)(B) provides that the party requesting the subpoena pays the
+  fees and mileage. Since the licensee made the request, they bear the cost. The other options
+  incorrectly assign payment to the commission, witness, or court.
+citation:
+  source: Ark. Code Ann. § 17-42-205(b)(2)(B)
+  url: null
+  quoted_text: The fees and mileage of the officers serving the subpoena and of the witness shall be
+    paid by the party at whose request a witness is subpoenaed.
+  secondary: []
+terms:
+  - subpoena
+  - fees
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

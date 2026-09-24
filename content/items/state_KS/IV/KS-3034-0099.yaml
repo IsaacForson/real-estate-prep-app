@@ -1,0 +1,39 @@
+id: KS-3034-0099
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker misappropriated funds belonging to a client. Under Kan. Stat. Ann. § 58-3050(d)(2),
+  if the commission finds aggravating circumstances, what is the maximum civil fine that may be
+  imposed for this violation?
+options:
+  - $5,000
+  - $10,000
+  - $1,000
+  - $2,500
+key: A
+explanation: Subsection (d)(2) allows a civil fine not exceeding $5,000 per violation when
+  aggravating circumstances exist, such as misappropriating funds belonging to another person. The
+  $1,000 limit applies only without aggravating circumstances.
+citation:
+  source: Kan. Stat. Ann. § 58-3050(d)(2)(A)
+  url: null
+  quoted_text: Misappropriated funds belonging to another person;
+  secondary: []
+terms:
+  - misappropriation
+  - aggravating circumstances
+  - civil fine
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

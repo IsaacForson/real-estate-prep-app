@@ -1,0 +1,45 @@
+id: AR-42-0056
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Real Estate Recovery Fund currently has a balance of $180,000. Under Ark. Code Ann. §
+  17-42-405(a), what is the maximum additional fee the Arkansas Real Estate Commission may charge
+  each licensee at annual renewal?
+options:
+  - $35.00
+  - $30.00
+  - $25.00
+  - $20.00
+key: C
+explanation: The commission may charge the lesser of $25 or the amount needed to restore the fund to
+  $250,000. The shortfall is $70,000, so the lesser amount is $25. Thus the maximum permissible fee
+  is $25 per renewal.
+citation:
+  source: "### Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share
+    Law (AREC compilation, August 2024) — § 17-42-405"
+  url: null
+  quoted_text: (1) Twenty-five dollars ($25.00) per annual renewal; or (2) An amount sufficient to
+    restore the fund balance to two hundred fifty thousand dollars ($250,000).
+  secondary: []
+math:
+  worked_solution: Fund shortfall = $250,000 - $180,000 = $70,000. Maximum fee = lesser of $25 and $70,000 = $25.
+  formulas:
+    - Fee = min($25, $250,000 - FundBalance)
+  onscreen_calculator_only: false
+terms:
+  - additional fee
+  - recovery fund
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

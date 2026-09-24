@@ -1,0 +1,49 @@
+id: KS-3034-0034
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A supervising broker’s license is suspended by the commission. Assuming no prior written
+  notice from the commission authorizing another broker to act as supervising broker, within how
+  many calendar days after the effective date of the suspension order must the broker advise clients
+  that they **cannot** perform existing brokerage agreements?
+options:
+  - 3 calendar days
+  - 5 calendar days
+  - 7 calendar days
+  - 10 calendar days
+key: B
+explanation: The statute requires the broker to advise all clients and customers within five
+  calendar days after the effective date of the suspension order unless the commission has
+  authorized another broker. The other time frames are not supported by the rule.
+citation:
+  source: Kan. Stat. Ann. § 58-3083(b)
+  url: null
+  quoted_text: Unless the commission notifies the supervising broker or branch broker in writing that
+    the commission has authorized another broker to act as the supervising broker or branch broker
+    during the period of suspension, deactivation or revocation, the supervising broker or branch
+    broker whose license is suspended, deactivated or revoked, within five calendar days after the
+    effective date of the order of suspension, deactivation or revocation, shall advise all clients
+    and customers that the supervising broker or branch broker and any licensees that are employed
+    by or associated with the supervising broker or branch broker will be unable to perform the
+    terms and conditions contained in the listing or brokerage agreement with the client or customer
+    after the effective date of the suspension, deactivation or revocation.
+  secondary: []
+terms:
+  - suspension
+  - clients
+  - notification
+  - effective date
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

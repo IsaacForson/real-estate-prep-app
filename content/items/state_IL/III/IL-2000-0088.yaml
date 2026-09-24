@@ -1,0 +1,46 @@
+id: IL-2000-0088
+jurisdiction: IL
+bank: state_IL
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A sponsoring broker writes a memo naming one of its sponsored licensees as the legal agent for
+  a buyer client. Under the Act, how is this licensee classified?
+options:
+  - The licensee is considered a customer because they are not representing the licensee.
+  - The licensee is considered a broker because they perform licensed activities for compensation.
+  - The licensee is considered a designated agent because they are named by the sponsoring broker as
+    the legal agent of a client.
+  - The licensee is considered an employee because they work for the sponsoring broker.
+key: C
+explanation: Section 1-10 of the Real Estate License Act of 2000 defines a 'designated agent' as a
+  sponsored licensee named by a sponsoring broker as the legal agent of a client, as provided for in
+  Section 15-50. The scenario matches this definition exactly. The option describing the licensee as
+  a broker is incorrect because, while performing licensed activities for compensation generally
+  characterizes a broker, the specific legal relationship created by the memo is that of a
+  designated agent. The other options are incorrect because the licensee is not a customer, nor is
+  the classification based solely on employment status.
+citation:
+  source: "### 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of
+    2000 (full act text; official ilga.gov page read via Internet Archive capture of March 2025
+    because ilga.gov refuses connections from this environment) — § 1-10"
+  url: null
+  quoted_text: Designated agent" means a sponsored licensee named by a sponsoring broker as the legal
+    agent of a client, as provided for in Section 15-50 of this Act.
+  secondary: []
+terms:
+  - designated agent
+  - sponsoring broker
+  - client
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

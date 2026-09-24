@@ -1,0 +1,46 @@
+id: AR-42-0070
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Which of the following individuals must obtain a real estate license under Arkansas law?
+options:
+  - A person who shows a rental unit to a prospective tenant for a fee paid by the landlord
+  - A person who owns a rental property and collects rent from their own tenants
+  - A person who attends a real estate seminar to learn about market trends
+  - A person who refers a friend to a licensed broker but receives no compensation
+key: A
+explanation: Under Ark. Code Ann. § 17-42-301(b), anyone who performs an act listed in §
+  17-42-103(10) for another with the intention of receiving valuable consideration is deemed a
+  broker or salesperson and must be licensed. Showing a rental unit for a fee paid by the landlord
+  is an act of assisting in procuring prospects or negotiating a lease for compensation, so a
+  license is required. An owner who collects rent from their own tenants is exempt under §
+  17-42-104(a)(1)(A). Attending a real‑estate seminar to learn market trends does not involve
+  performing a listed act, and referring a friend to a licensed broker without compensation lacks
+  the required consideration, so neither situation requires a license.
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-301(b)
+  url: null
+  quoted_text: Any person who directly or indirectly for another with the intention, or on the promise
+    of receiving any valuable consideration, offers, attempts, or agrees to perform any single act
+    described in § 17-42-103(10), whether as part of a transaction or as an entire transaction,
+    shall be deemed a broker or salesperson within the meaning of this chapter.
+  secondary: []
+terms:
+  - license
+  - valuable consideration
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

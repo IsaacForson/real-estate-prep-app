@@ -1,0 +1,50 @@
+id: AK-88-0111
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee represents a seller whose property is currently under an existing purchase
+  agreement. The licensee stops seeking additional offers for the property. Under AS 08.88.620(5),
+  is the licensee's action permissible?
+options:
+  - The licensee's action is permissible only if the seller provides written consent to cease
+    seeking offers
+  - The licensee's action is impermissible because the licensee must make a good faith effort to
+    find a buyer regardless of existing contracts
+  - The licensee's action is impermissible because the licensee must seek at least one additional
+    offer before the contract closes
+  - The licensee's action is permissible because the licensee is not required to seek additional
+    offers while the property is under an existing contract for sale
+key: D
+explanation: Under AS 08.88.620(5), a licensee representing a seller is not required to seek
+  additional offers while the property is subject to an existing contract for sale. Therefore,
+  stopping the search for additional offers is permissible. The other options are incorrect because
+  they either impose a requirement that does not exist under the statute or add conditions not
+  present in the rule.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) Sec. 08.88.620
+  url: null
+  quoted_text: (5) if the represented person is a seller or a lessor, unless otherwise agreed to in
+    writing, making a good faith and continuous effort to find a buyer or lessee for the real estate
+    of the seller or lessor, except that a licensee is not required to seek additional offers to buy
+    or lease the real estate while the real estate is subject to an existing contract for sale or
+    lease;
+  secondary: []
+terms:
+  - good faith
+  - existing contract
+  - seller
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

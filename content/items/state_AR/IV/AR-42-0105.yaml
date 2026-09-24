@@ -1,0 +1,43 @@
+id: AR-42-0105
+jurisdiction: AR
+bank: state_AR
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee's real estate license is suspended by the Oklahoma Real Estate Commission on June
+  5. By what date must the licensee submit a written report to the Arkansas Real Estate Commission?
+options:
+  - June 4
+  - June 5
+  - July 5
+  - July 6
+key: C
+explanation: Rule 10.16(b) requires a licensee to submit a written report to the Commission within
+  thirty (30) days after any professional license is suspended, revoked, or otherwise sanctioned.
+  Adding thirty days to June 5 yields July 5 as the deadline. June 4 and June 5 are too early, and
+  July 6 exceeds the required period.
+citation:
+  source: Arkansas Real Estate Commission Rules § 10.16(b)
+  url: null
+  quoted_text: A licensee who after the initiation of an investigation, hearing or other
+    administrative action surrenders or who has a professional, vocational or occupational license,
+    permit, certification or registration denied, revoked, suspended or canceled or who is subjected
+    to any sanctions, including probation, involving such license, permit, certification or
+    registration or who is the subject of sanctions for practicing a profession without a license
+    shall make written report thereof to the Commission within thirty (30) days after such action.
+  secondary: []
+terms:
+  - report
+  - suspension
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

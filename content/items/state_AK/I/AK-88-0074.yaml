@@ -1,0 +1,42 @@
+id: AK-88-0074
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives notice that the commission will inspect transaction records on Friday at
+  6:00 p.m. Unless the broker agrees otherwise, what action may the broker take?
+options:
+  - Allow the inspection to proceed at the scheduled time.
+  - Submit the records electronically to avoid the inspection.
+  - Request a 24-hour delay to accommodate the inspection.
+  - Refuse the inspection because it is outside the permitted hours.
+key: D
+explanation: The rule requires inspections to be conducted between 8:00 a.m. and 5:00 p.m., Monday
+  through Friday, unless otherwise agreed. An inspection at 6:00 p.m. on Friday is outside those
+  hours, so the broker may refuse unless they agree to the time. Allowing the inspection to proceed
+  at the scheduled time violates the rule because it occurs outside the permitted hours without
+  agreement.
+citation:
+  source: "### 12 Alaska Admin. Code § 64.010 et seq. — Alaska Administrative Code Title 12, Chapter
+    64 - Real Estate Commission — § 64.135(a)"
+  url: null
+  quoted_text: the inspection must be conducted between 8:00 a.m. and 5:00 p.m., Monday through
+    Friday, unless otherwise agreed
+  secondary: []
+terms:
+  - inspection
+  - hours
+  - agreement
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

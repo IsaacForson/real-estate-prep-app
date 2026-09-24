@@ -1,0 +1,45 @@
+id: KS-3034-0082
+jurisdiction: KS
+bank: state_KS
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker begins working with a buyer to find a home. The buyer signs an offer to purchase a
+  property on June 1, but the broker and buyer have not yet signed a written agency agreement. Under
+  Kansas law, what is the status of the broker’s relationship with the buyer at the time the offer
+  is signed?
+options:
+  - The broker is considered a transaction broker because no agency relationship has been
+    established.
+  - The broker has an agency relationship with the buyer because the offer to purchase satisfies the
+    written agreement requirement.
+  - The broker is acting as a subagent of the seller because the buyer viewed the property.
+  - The broker must terminate all dealings with the buyer until a written agency agreement is signed.
+key: A
+explanation: Subsection (e) requires a written agency agreement no later than the signing of an
+  offer to establish an agency relationship. Since no written agreement exists, no agency
+  relationship is formed. Under subsection (c), the broker is then presumed to be a transaction
+  broker. The claim that the offer itself satisfies the written agreement requirement is incorrect.
+citation:
+  source: Kan. Stat. Ann. § 58-30,103(e)
+  url: null
+  quoted_text: To establish an agency relationship with a buyer or tenant, a broker shall enter into a
+    written agency agreement with the party to be represented no later than the signing of an offer
+    to purchase or lease.
+  secondary: []
+terms:
+  - written agency agreement
+  - offer to purchase
+  - transaction broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,49 @@
+id: HI-467-0060
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant in Hawaii fails to pay the monthly rent of $2,200 on time. According to Hawaii
+  Revised Statutes § 521-21(f), what is the maximum late charge the landlord may impose?
+options:
+  - The maximum late charge is $150.
+  - The maximum late charge is $160.
+  - The maximum late charge is $176.
+  - The maximum late charge is $180.
+key: C
+explanation: Section 521‑21(f) limits a late charge to no more than eight percent of the rent due.
+  Eight percent of $2,200 is $176, which is the maximum permissible charge. The amounts $150 and
+  $160 are lower than the allowed maximum, and the amount $180 exceeds the statutory cap.
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Revised Statutes Chapter 521 - Residential Landlord-Tenant
+    Code (data.capitol.hawaii.gov, section pages concatenated) — § 521-21(f)
+  url: null
+  quoted_text: (f) Where the rental agreement provides for a late charge payable to the landlord for
+    rent not paid when due, the late charge shall not exceed eight per cent of the amount of rent
+    due.
+  secondary: []
+math:
+  worked_solution: |-
+    Monthly rent: $2,200
+    Late charge limit: 8%
+    Calculation: $2,200 × 0.08 = $176
+  formulas:
+    - late_charge_max = rent × 0.08
+  onscreen_calculator_only: false
+terms:
+  - late charge
+  - rent
+  - percentage
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,40 @@
+id: HI-467-0088
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller accepts a purchase contract on June 1. By what date must the seller provide the
+  mandatory disclosure statement to the buyer under Hawaii law?
+options:
+  - By June 10
+  - By June 11
+  - By June 12
+  - By June 20
+key: B
+explanation: The statute requires the seller to deliver the disclosure statement no later than ten
+  calendar days after contract acceptance. Counting ten days from June 1 brings the deadline to June
+  11. June 10 is one day too early, while June 12 and June 20 exceed the allowed period.
+citation:
+  source: Haw. Rev. Stat. § 508D-5(a)
+  url: null
+  quoted_text: No later than ten calendar days from acceptance of a real estate purchase contract, the
+    seller, either directly or through the seller's agent, shall provide the disclosure statement to
+    the buyer.
+  secondary: []
+terms:
+  - disclosure
+  - seller
+  - buyer
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

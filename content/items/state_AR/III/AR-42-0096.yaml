@@ -1,0 +1,42 @@
+id: AR-42-0096
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson advertises her real estate services using only her personal name and phone
+  number, without mentioning the firm name. Under Arkansas Real Estate Commission Rule 10.5(b),
+  which requirement has she violated?
+options:
+  - Must include her license number in the advertisement
+  - Must not advertise under a name other than the firm's name
+  - Must include the firm name in all advertisements
+  - Must use the firm's logo in any advertisement
+key: B
+explanation: Rule 10.5(b) prohibits advertising under any name other than the firm's name; using
+  only a personal name violates this prohibition. The most tempting distractor is A, which mentions
+  including the firm name; while omitting the firm name also violates 10.5(a), the question
+  specifically concerns the prohibition in 10.5(b) against using a different name.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.5
+  url: null
+  quoted_text: (b) A principal broker and any persons licensed with said principal broker shall not
+    advertise or otherwise conduct real estate brokerage business under any name other than the name
+    in which the principal broker's license has been issued.
+  secondary: []
+terms:
+  - advertising
+  - name
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

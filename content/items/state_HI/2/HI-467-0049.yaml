@@ -1,0 +1,48 @@
+id: HI-467-0049
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A beachfront resort consists of individual condominium units that each provide front desk,
+  daily maid service, and restaurant access to guests staying less than thirty days. Under Hawaii
+  Revised Statutes § 467-1, how are these units treated for the purpose of defining a 'hotel'?
+options:
+  - The units are automatically classified as hotels regardless of the services they provide.
+  - The units are included in the definition of hotel because they provide transient lodging for
+    less than thirty days.
+  - The units are considered hotels only if they also offer bell service and telephone switchboard.
+  - The units are excluded from the definition of hotel because they are part of a condominium
+    project that provides customary hotel services.
+key: D
+explanation: Hawaii Revised Statutes § 467-1 excludes from the definition of hotel any units in a
+  condominium project that provide customary hotel services. Because the units described offer front
+  desk, maid service, and restaurant access, they meet the criterion for customary hotel services
+  and are therefore excluded from the hotel definition. The option stating that the units are
+  automatically classified as hotels ignores this specific statutory exclusion for condominium
+  project units.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: provided that for the purposes of this chapter, units in a project as defined by
+    section 514B-3 that provide customary hotel services shall be excluded from the definition of
+    hotel.
+  secondary: []
+terms:
+  - hotel
+  - customary hotel services
+  - condominium project
+  - exclusion
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

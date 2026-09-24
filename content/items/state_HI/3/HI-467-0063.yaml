@@ -1,0 +1,46 @@
+id: HI-467-0063
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Hawaii landlord terminates a tenancy and wishes to retain part of the security deposit for
+  unpaid utilities. The landlord gives the tenant written notice of the retention twelve days after
+  termination, including invoices for the utilities. According to Hawaii Revised Statutes §
+  521-44(c), what must the landlord do with any remaining portion of the security deposit?
+options:
+  - Return the remaining deposit to the tenant within fourteen days after termination
+  - Transfer the remaining deposit to the property manager as a utility reimbursement fee
+  - Deposit the remaining amount into the landlord's operating account for future use
+  - Place the remaining deposit in an escrow account until the tenant submits a written request
+key: A
+explanation: The law states that after claiming authorized amounts, any remaining security deposit
+  must be returned to the tenant no later than fourteen days after termination. Retaining the
+  remainder for utilities or applying it to future rent is not permitted; the deposit must be
+  returned unless the landlord fails to give timely notice, in which case the entire deposit must be
+  returned.
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Revised Statutes Chapter 521 - Residential Landlord-Tenant
+    Code (data.capitol.hawaii.gov, section pages concatenated) — § 521-44(c)
+  url: null
+  quoted_text: The security deposit, or the portion of the security deposit remaining after the
+    landlord has claimed and retained amounts authorized under this section, if any, shall be
+    returned to the tenant not later than fourteen days after the termination of the rental
+    agreement.
+  secondary: []
+terms:
+  - security deposit
+  - notice
+  - utilities
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

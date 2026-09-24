@@ -1,0 +1,47 @@
+id: MO-339-0104
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Missouri Real Estate Commission rules, how must a broker handle funds belonging to
+  others entrusted to the broker while acting as a real estate broker?
+options:
+  - The broker must retain the funds in the broker's personal account if the transaction is expected
+    to close within thirty days.
+  - The broker must deposit the funds into the broker's personal business account and track them
+    separately in the books.
+  - The broker must commingle personal funds with clients' funds up to five hundred dollars for any
+    purpose.
+  - The broker must maintain and deposit the funds in a special account separate from personal
+    accounts, unless all parties agree otherwise in writing.
+key: D
+explanation: Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules) § 339.105 requires
+  brokers to keep clients' funds in a separate bank account designated as an escrow or trust
+  account. Commingling personal funds with clients' funds is prohibited except for a limited amount
+  to cover service charges. Therefore, the option stating that funds must be maintained in a special
+  account separate from personal accounts, unless all parties agree otherwise in writing, correctly
+  states the requirement, while the other options describe actions that violate the rule.
+citation:
+  source: Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules) § 339.105
+  url: null
+  quoted_text: Each broker who holds funds belonging to another shall maintain such funds in a
+    separate bank account in a financial institution which shall be designated an escrow or trust
+    account.
+  secondary: []
+terms:
+  - escrow
+  - commingling
+  - trust account
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-23
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23
