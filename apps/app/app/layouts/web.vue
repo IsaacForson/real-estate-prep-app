@@ -24,7 +24,7 @@ const immersive = computed(() => isImmersivePath(route.path));
         </div>
         <AuthBanner />
       </template>
-      <main class="w-full flex-1" :class="immersive ? '' : 'safe-px mx-auto max-w-3xl pt-5 pb-14 md:max-w-6xl md:pt-8'">
+      <main class="w-full flex-1" :class="immersive ? '' : 'safe-px mx-auto max-w-3xl pt-5 pb-14 md:max-w-[calc(56rem+2rem)] md:pt-8'">
         <slot />
       </main>
     </div>
