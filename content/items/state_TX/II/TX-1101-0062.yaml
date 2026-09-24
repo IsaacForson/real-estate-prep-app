@@ -1,0 +1,53 @@
+id: TX-1101-0062
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Texas license holder wishes to allow a prospective tenant to view a rental property without
+  supervision. The property is currently occupied by a tenant, the license holder will use a
+  key‑code system to verify identity, and the owner has signed a written consent in 12‑point bold
+  font stating the owner is aware and accepts responsibility for any damage. May the license holder
+  permit the unescorted access?
+options:
+  - Yes, because the owner’s written consent satisfies all requirements except vacancy.
+  - Yes, because the license holder uses a method to control access and verify ID.
+  - No, because the property is occupied by a tenant and therefore not vacant as required.
+  - No, because the written consent does not specify which party is responsible for damage.
+key: C
+explanation: "Section 22 Tex. Admin. Code § 535.4(d) requires three conditions for unescorted
+  access: the property must be vacant, the license holder must use a method to control access and
+  verify identity, and the owner must sign a written consent in at least 12‑point bold font that
+  acknowledges the access and specifies who is responsible for damage. Because the property is
+  currently occupied by a tenant, it is not vacant, so the first condition is not met. The option
+  stating that the license holder uses a method to control access and verify ID does not overcome
+  the vacancy requirement, and the option about the owner’s written consent does not satisfy the
+  vacancy rule either."
+citation:
+  source: 22 Tex. Admin. Code § 535.4(d)
+  url: null
+  quoted_text: "(1) the property is vacant, meaning no person lives at, and no personal property
+    except property intended to remain or convey is stored at, the property; (2) the license holder
+    employs a method to control access and verify the identity of the prospective tenant; and (3)
+    the property owner has signed a written consent that sets out in bold print in at least 12-point
+    font that: (A) the property owner is aware that unescorted access may occur; and (B) specifies
+    whether the broker enabling unescorted access or the property owner will be responsible for any
+    damage that results from such unescorted access."
+  secondary: []
+terms:
+  - vacant
+  - unescorted access
+  - written consent
+  - identity verification
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

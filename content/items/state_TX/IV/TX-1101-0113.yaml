@@ -1,0 +1,46 @@
+id: TX-1101-0113
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money deposit from a buyer. According to 22 Tex. Admin. Code §
+  535.2(c), what is the broker's responsibility regarding this trust fund?
+options:
+  - Deposit the funds into the broker's personal account and track them separately in the books.
+  - Hold the funds in a non-interest-bearing account without any special controls.
+  - Properly handle the trust funds and comply with §535.146 concerning trust money.
+  - Return the funds to the buyer immediately unless the seller requests otherwise.
+key: C
+explanation: Under 22 Tex. Admin. Code § 535.2(c), a broker must properly handle trust funds and
+  comply with §535.146 concerning trust money. Depositing the funds into the broker's personal
+  account, even if tracked separately, is improper because it commingles trust money with personal
+  funds. Holding the funds in a non‑interest‑bearing account without any special controls fails to
+  meet the required safeguards for trust money. Returning the funds to the buyer immediately unless
+  the seller requests otherwise is not required by the rule. Only the option that states the broker
+  must properly handle the trust funds and follow §535.146 reflects the correct responsibility.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.2"
+  url: null
+  quoted_text: A broker is responsible for the proper handling of trust funds placed with the broker
+    and must comply with §535.146 of this chapter (relating to Maintaining Trust Money).
+  secondary: []
+terms:
+  - broker
+  - trust funds
+  - compliance
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

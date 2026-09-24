@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-09-01",
   modules: ["@pinia/nuxt"],
   css: ["~/assets/main.css"],
+  // Shown inside the empty document of client-only routes until Vue mounts. BootScreen covers the rest.
+  spaLoadingTemplate: true,
   app: {
     head: {
       title: "Real Estate Exam Prep",

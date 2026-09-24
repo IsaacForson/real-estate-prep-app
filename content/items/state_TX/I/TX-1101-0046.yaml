@@ -1,0 +1,51 @@
+id: TX-1101-0046
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee fails to deposit earnest money into an escrow account for three consecutive days.
+  Each day is considered a separate violation. What is the maximum administrative penalty the Texas
+  Real Estate Commission may impose for this conduct?
+options:
+  - $5,000
+  - $15,000
+  - $20,000
+  - $10,000
+key: B
+explanation: The statute limits penalties to $5,000 per violation and treats each day of a
+  continuing violation as a separate violation. Three days therefore yield a maximum of $5,000 × 3 =
+  $15,000. The distractor $5,000 incorrectly treats the three‑day period as a single violation.
+citation:
+  source: "### Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.702"
+  url: null
+  quoted_text: The amount of an administrative penalty may not exceed $5,000 for each violation. Each
+    day a violation continues or occurs may be considered a separate violation for purposes of
+    imposing a penalty.
+  secondary: []
+math:
+  worked_solution: "1. Identify penalty per violation: $5,000. 2. Determine number of violations: 3
+    days. 3. Multiply: $5,000 × 3 = $15,000."
+  formulas:
+    - Penalty = penalty per violation × number of violations
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - violation
+  - administrative
+  - escrow
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

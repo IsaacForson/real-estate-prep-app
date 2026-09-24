@@ -1,0 +1,43 @@
+id: TX-1101-0088
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker renews an active license on May 1 without completing the required continuing
+  education, pays the deferral fee, and defers the outstanding CE. If the broker does not submit
+  proof of completion by the end of the deferral period, what status will the license have according
+  to 22 Tex. Admin. Code §535.91(h)(2)?
+options:
+  - Active license
+  - Inactive status
+  - Revoked license
+  - Suspended license
+key: B
+explanation: According to 22 Tex. Admin. Code §535.91(h)(2), if the broker fails to provide evidence
+  of completed continuing education within the 60‑day deferral period, the license is placed on
+  inactive status. An active license would only be maintained if the proof were submitted on time.
+citation:
+  source: 22 Tex. Admin. Code § 535.91(h)(2)
+  url: null
+  quoted_text: If after expiration of the 60 day period set out in paragraph (1) of this subsection,
+    the Commission has not been provided with evidence that the license holder has completed all
+    outstanding continuing education requirements, the license holder's license will be placed on
+    inactive status.
+  secondary: []
+terms:
+  - continuing education
+  - deferral
+  - inactive status
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

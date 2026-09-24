@@ -1,0 +1,45 @@
+id: TX-1101-0127
+jurisdiction: TX
+bank: state_TX
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A married couple owns a homestead that is community property. The husband wishes to sell the
+  homestead without his wife's signature. Under Tex. Fam. Code § 5.001, which action is permissible?
+options:
+  - The sale proceeds are used to purchase money on the property
+  - The homestead is located in a rural area outside municipal limits
+  - The other spouse provides written consent to the sale
+  - The homestead is classified as the spouse's separate property
+key: C
+explanation: Tex. Fam. Code § 5.001 provides that neither spouse may sell, convey, or encumber the
+  homestead without the joinder of the other spouse. Therefore, the husband cannot sell the
+  homestead without his wife's signature unless she gives written consent. The other options—using
+  the sale proceeds to pay purchase money, locating the homestead in a rural area, or classifying
+  the property as separate—do not override the joinder requirement; the statute mandates both
+  spouses' agreement regardless of these circumstances.
+citation:
+  source: "### Tex. Fam. Code ch. 5 — Texas Family Code Chapter 5 — Homestead Rights — official Texas
+    Legislature Online statute page read via Internet Archive capture of 2025-09-05 because
+    statutes.capitol.texas.gov now serves only a JavaScript shell — § 5.001"
+  url: null
+  quoted_text: neither spouse may sell, convey, or encumber the homestead without the joinder of the
+    other spouse except as provided in this chapter or by other rules of law.
+  secondary: []
+terms:
+  - homestead
+  - joinder
+  - separate property
+  - community property
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

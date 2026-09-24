@@ -1,0 +1,49 @@
+id: TX-1101-0104
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer agrees to pay a home inspector for the inspection service. The broker representing the
+  seller wishes to accept a rebate from the inspector after closing. Under 22 Tex. Admin. Code
+  §535.148(b), what must the broker do before accepting the rebate?
+options:
+  - The license holder must disclose the rebate to the buyer and obtain the buyer's consent
+  - The license holder must disclose the rebate to the seller and obtain the seller's consent
+  - The license holder must disclose the rebate to both parties and obtain consent from both
+  - The license holder may accept the rebate without any disclosure because the inspector is not a
+    party to the transaction
+key: A
+explanation: Under 22 Tex. Admin. Code §535.148(b), if a party the license holder does not represent
+  agrees to pay a service provider, the license holder must obtain that party’s consent to accept a
+  fee, commission, or rebate from the service provider. In this scenario the buyer pays the
+  inspector and is not represented by the broker, so the broker must disclose the rebate to the
+  buyer and get the buyer’s consent. The statement that the broker should disclose to the seller and
+  obtain the seller’s consent is incorrect because the seller is the broker’s client and the rule
+  requires consent from the non‑represented party, which is the buyer.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live — § 535.148"
+  url: null
+  quoted_text: If a party the license holder does not represent agrees to pay a service provider in
+    the transaction, the license holder must also obtain the consent of that party to accept a fee,
+    commission, or rebate from the service provider.
+  secondary: []
+terms:
+  - rebate
+  - consent
+  - service provider
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

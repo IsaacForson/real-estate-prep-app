@@ -1,0 +1,39 @@
+id: MD-17-0159
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee representing a seller learns that the roof leaks but does not inform the buyer.
+  Which statement best describes the licensee's conduct under Maryland law?
+options:
+  - The licensee has violated the duty to disclose material facts.
+  - The licensee has acted permissibly as long as the licensee was unaware of the leak.
+  - The licensee has violated the duty only if the buyer suffers actual damages.
+  - The licensee has committed no violation because the buyer did not ask about the roof.
+key: A
+explanation: Under § 17-530(f)(3), a licensee must disclose all known material facts about the
+  property. Failing to disclose a known leak violates this duty irrespective of whether the buyer
+  asks or suffers damages.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. §§ 17-101–17-702 (Maryland Real Estate Brokers Act) §
+    17-530(f)(3)
+  url: null
+  quoted_text: disclose all material facts that are known or should be known relating to a property
+  secondary: []
+terms:
+  - material fact
+  - disclosure
+  - licensee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

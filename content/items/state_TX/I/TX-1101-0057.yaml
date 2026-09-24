@@ -1,0 +1,54 @@
+id: TX-1101-0057
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee continues to violate a commission rule by failing to return earnest money for 10
+  consecutive days. Under Texas Occupations Code § 1101.702(a), what is the maximum administrative
+  penalty the commission may impose for this continuing violation?
+options:
+  - The maximum administrative penalty is $10,000.
+  - The maximum administrative penalty is $25,000.
+  - The maximum administrative penalty is $5,000.
+  - The maximum administrative penalty is $50,000.
+key: D
+explanation: The rule provides that the penalty may not exceed $5,000 for each violation and that
+  each day a violation continues may be considered a separate violation. For 10 days of continuing
+  violation, the maximum is 10 × $5,000 = $50,000, making the statement that the maximum
+  administrative penalty is $50,000 correct. The statement that the maximum administrative penalty
+  is $5,000 incorrectly assumes only five days of violation.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.702
+  url: null
+  quoted_text: (a) The amount of an administrative penalty may not exceed $5,000 for each violation.
+    Each day a violation continues or occurs may be considered a separate violation for purposes of
+    imposing a penalty.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Penalty per violation = $5,000.
+    Step 2: Number of violations = 10 days (each day considered a separate violation).
+    Step 3: Total penalty = $5,000 × 10 = $50,000.
+  formulas:
+    - Penalty = per violation amount × number of violations
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - violation
+  - day
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

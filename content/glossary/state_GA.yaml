@@ -1,6 +1,19 @@
 bank: state_GA
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: advertising
+    definition: Advertising is any manner, method, or activity by which a licensee uses media to make
+      the public aware of real estate that is for sale, rent, lease, or exchange.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: the term "advertising" or "advertisement" means any manner, method, or activity by
+      which a licensee through the use of any media makes known to the general public real estate
+      for sale, rent, lease, or exchange.
+    related_terms: []
+    items:
+      - GA-1-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: A real estate license authorizes the holder, for compensation and on behalf of others,
       to perform the acts state law defines as brokerage, including listing, selling, buying,
@@ -13,7 +26,34 @@ entries:
     items:
       - GA-1-0021
       - GA-1-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage engagement
+    definition: A written contract in which a seller, buyer, landlord, or tenant becomes the broker’s
+      client and promises to pay the broker valuable consideration, or the broker may receive
+      consideration from another for producing a party.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: '"Brokerage engagement" means a written contract wherein the seller, buyer, landlord,
+      or tenant becomes the client of the broker and promises to pay the broker a valuable
+      consideration'
+    related_terms: []
+    items:
+      - GA-1-0085
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: brokerage firm
+    definition: A brokerage firm is a real estate brokerage that is involved in a transaction and
+      receives a copy of any document used in that transaction.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: one to each person signing the document and one to each brokerage firm involved in the
+      transaction.
+    related_terms: []
+    items:
+      - GA-1-0108
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: closing statement
     definition: A closing statement records the price of a real estate transaction.
@@ -23,8 +63,49 @@ entries:
     related_terms: []
     items:
       - GA-1-0029
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: continuing education
+    definition: Continuing education refers to the required instructional hours a licensee must complete
+      to renew an active license, specifically thirty-six (36) hours during the renewal period in
+      Georgia.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: In order to renew an active license, a licensee shall furnish to the Commission
+      evidence of satisfactorily completing thirty-six (36) instructional hours of continuing
+      education courses during the renewal period.
+    related_terms: []
+    items:
+      - GA-1-0062
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: copy
+    definition: A copy is a duplicate or reproduction of a document, such as a corporate charter, that
+      must be submitted with an application.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: Any corporation applying for licensure as a broker shall submit with its application a
+      copy of its corporate charter as registered with the Corporation Division of the Secretary of
+      State's Office.
+    related_terms: []
+    items:
+      - GA-1-0106
+      - GA-1-0108
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: direct link
+    definition: When advertising in electronic messages with limited information or characters, a
+      licensee must provide a direct link to a display that complies with the advertising rule.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: When advertising in electronic messages of limited information or characters, a license
+      shall provide a direct link to a display that is in compliance with this Rule.
+    related_terms: []
+    items:
+      - GA-1-0086
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: disclosure
     definition: Disclosure is the act of making known commissions, fees, rebates, or other valuable
       consideration to a principal, which must be done in advance according to pre‑established
@@ -36,7 +117,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0029
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: documents
     definition: Documents include sales contracts, brokerage engagements, closing statements, leases,
@@ -47,8 +129,35 @@ entries:
     related_terms: []
     items:
       - GA-1-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: internet advertising
+    definition: When advertising real estate on the Internet, a licensee must disclose the name and
+      telephone number of the licensee’s firm on every viewable web page of the website.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: any advertising on the Internet by a licensee of real estate for sale, rent, lease, or
+      exchange shall disclose the name and telephone number of the licensee's firm on every viewable
+      web page
+    related_terms: []
+    items:
+      - GA-1-0086
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: license
+    definition: A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage, such as listing, selling, buying, leasing,
+      managing, negotiating, and advertising real property.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage
+    related_terms: []
+    items:
+      - GA-1-0084
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: license number
     definition: A license number is the six‑digit identifier issued by the Georgia Real Estate
       Commission that a licensee must include on any brokerage engagement or offer to purchase,
@@ -61,7 +170,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: ministerial duties
     definition: Ministerial duties are tasks that do not require discretion or the exercise of judgment,
@@ -72,8 +182,44 @@ entries:
     related_terms: []
     items:
       - GA-1-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: misleading
+    definition: Misleading advertising is any advertisement that is false, inaccurate about a material
+      fact, or otherwise misrepresents real estate, and is prohibited.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: Any advertising that is misleading or inaccurate in any material fact or in any way
+      misrepresents any real estate is prohibited.
+    related_terms: []
+    items:
+      - GA-1-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: misleading advertising
+    definition: Any advertising that is misleading or inaccurate in any material fact or that
+      misrepresents any real estate is prohibited.
+    source: Ga. Comp. R. & Regs. ch. 520-1
+    quoted_text: Misleading Advertising. Any advertising that is misleading or inaccurate in any
+      material fact or in any way misrepresents any real estate is prohibited.
+    related_terms: []
+    items:
+      - GA-1-0085
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: name
+    definition: A broker must advertise using the brokerage’s licensed name; advertisements that omit
+      the brokerage and suggest the advertiser is a private owner (blind ads) are prohibited.
+    source: REP Ref. Brokerage Practice
+    quoted_text: identify the brokerage by its licensed name
+    related_terms: []
+    items:
+      - GA-1-0084
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: notification
     definition: The requirement for a licensee to inform the Commission in writing of the final
       disposition of any administrative, civil, or criminal action that involves the subject matter
@@ -84,7 +230,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: rebate
     definition: A rebate is a return of part of a commission to the principal, permissible only when
@@ -95,7 +242,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0029
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: release
     definition: A release is an agreement that frees a party from an obligation, such as when a novation
@@ -106,7 +254,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: retention
     definition: Brokers must retain copies of certain real estate transaction documents for three years,
@@ -117,7 +266,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: support personnel
     definition: Support personnel are unlicensed individuals engaged by a firm or licensee to assist in
@@ -129,7 +279,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: transfer
     definition: In risk management, transfer means shifting a brokerage’s risk to another party, usually
@@ -140,7 +291,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: groq/openai/gpt-oss-120b
   - term: violation
     definition: A breach of license law, such as undisclosed dual agency or engaging in the unauthorized
@@ -151,7 +303,8 @@ entries:
     related_terms: []
     items:
       - GA-1-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: wall certificate
     definition: A wall certificate is the official license document that a licensee must surrender to
@@ -164,5 +317,6 @@ entries:
     related_terms: []
     items:
       - GA-1-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

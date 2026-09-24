@@ -1,0 +1,42 @@
+id: TX-1101-0063
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salaried employee of a Texas limited liability company is tasked with purchasing an office
+  building for the company's use. The employee negotiates price, signs the contract, and receives a
+  salary but no commission. Does the employee need a real estate license?
+options:
+  - No, because the employee is acting for the employer to buy real property for the entity.
+  - No, because the employee’s compensation is not tied to the real estate transaction.
+  - Yes, because negotiating a purchase for the company requires a real estate license.
+  - Yes, because the employee receives valuable consideration from the transaction.
+key: A
+explanation: Section 535.5(c)(1) exempts an employee employed by a business entity for the purpose
+  of buying, selling, or leasing real property for that entity from licensing requirements. The
+  exemption applies regardless of how the employee is compensated, so the option stating that the
+  employee does not need a license because compensation is not tied to the transaction is incorrect.
+citation:
+  source: 22 Tex. Admin. Code § 535.5(c)(1)
+  url: null
+  quoted_text: for an employee employed by a business entity for the purpose of buying, selling, or
+    leasing real property for the entity
+  secondary: []
+terms:
+  - employee
+  - business entity
+  - buying real property
+  - license not required
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

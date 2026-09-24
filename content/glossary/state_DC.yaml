@@ -1,6 +1,75 @@
 bank: state_DC
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: address
+    definition: A street address used to identify a location, though it is not a legal description of property.
+    source: REP Ref. Property & Land Use
+    quoted_text: "A street address is not a legal description: addresses change, repeat across towns,
+      and do not define boundaries."
+    related_terms: []
+    items:
+      - DC-198-0043
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appeal
+    definition: An appeal is a request to the District of Columbia Court of Appeals to review a final
+      decision of the Board of Real Estate.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: Final decisions of a hearing panel shall be considered final decisions of the board for
+      purposes of appeal to the District of Columbia Court of Appeals
+    related_terms: []
+    items:
+      - DC-198-0036
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: application
+    definition: A formal request submitted to the Board to obtain or renew a real estate license.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: An applicant on inactive status who submits an application to reactivate a license
+      shall submit proof
+    related_terms: []
+    items:
+      - DC-198-0043
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraisal
+    definition: An appraisal is an evaluation of a property's value used by lenders to determine loan
+      amount, as described in the appraisal contingency clause.
+    source: REP Ref. Contracts
+    quoted_text: Allows the buyer to terminate (or renegotiate) if the lender's appraisal comes in below
+      the purchase price, because the lender will base the loan on the lower of price or appraised
+      value and the buyer would otherwise have to bring the difference in cash
+    related_terms: []
+    items:
+      - DC-198-0059
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appraiser
+    definition: An appraiser is a professional who evaluates property value or condition, for example by
+      verifying that a property meets HUD standards.
+    source: REP Ref. Financing & Closing
+    quoted_text: property must be the borrower's principal residence (1–4 units) and meet HUD minimum
+      property standards as verified by an FHA-roster appraiser.
+    related_terms: []
+    items:
+      - DC-198-0060
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: balance
+    definition: The amount of money currently held in the Real Estate Guaranty and Education Fund.
+    source: D.C. Code §§ 42-1701–42-1709
+    quoted_text: bring the balance of the Fund up to the minimum established.
+    related_terms: []
+    items:
+      - DC-198-0041
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: board
     definition: The D.C. Board of Real Estate, the regulatory body established to oversee real estate
       licensing and protect the public from incompetence, fraud, and deception.
@@ -10,7 +79,8 @@ entries:
     related_terms: []
     items:
       - DC-198-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: In real estate brokerage, the broker is the agent who acts on behalf of the client (the
@@ -21,7 +91,98 @@ entries:
     related_terms: []
     items:
       - DC-198-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: calendar days
+    definition: Calendar days are each day on the calendar, including weekends and holidays, counted
+      consecutively from a starting point.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: Within 3 calendar days of receiving or soliciting, in writing, an offer to purchase a
+      single-family accommodation
+    related_terms: []
+    items:
+      - DC-198-0063
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: cheating
+    definition: Cheating on an exam refers to any prohibited communication or assistance related to the
+      test, as barred by DCMR Title 17, Chapter 26.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: No person shall cheat or assist another in cheating on an examination required by the Act
+    related_terms: []
+    items:
+      - DC-198-0045
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: clerical capacity
+    definition: Clerical capacity means working for a broker in a solely stenographic or clerical role
+      without performing any licensed real estate activities.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: Any person who is employed by a licensed real estate broker or property manager in a
+      solely stenographic or clerical capacity and who does not perform, offer, agree, or attempt to
+      perform, any of the activities licensed by the Board
+    related_terms: []
+    items:
+      - DC-198-0048
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: continuing education
+    definition: Educational courses required to maintain or renew a real estate license.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: An applicant may satisfy continuing education requirements by taking distance-learning
+      courses approved by the Board.
+    related_terms: []
+    items:
+      - DC-198-0044
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contributions
+    definition: Payments that licensees are required to make to the Real Estate Guaranty and Education Fund.
+    source: D.C. Code §§ 42-1701–42-1709
+    quoted_text: waive contributions to the Fund required by this subchapter.
+    related_terms: []
+    items:
+      - DC-198-0041
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: days
+    definition: Days refers to a unit of time equal to a 24‑hour period, often used to state deadlines.
+    source: REP Ref. Brokerage Practice
+    quoted_text: within a stated number of days after the tenant vacates
+    related_terms: []
+    items:
+      - DC-198-0059
+      - DC-198-0064
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disability
+    definition: Disability means being non compos mentis, a minor child, or otherwise under a disability.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: (B) The committee, conservator, or legal guardian of a person described in subparagraph
+      (A) of this paragraph who is non compos mentis, a minor child, or otherwise under a
+      disability.
+    related_terms: []
+    items:
+      - DC-198-0062
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: elderly
+    definition: Elderly refers to older individuals who may have greater sensitivity to certain health risks.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: with greater sensitivity in children, the elderly, and the immunocompromised.
+    related_terms: []
+    items:
+      - DC-198-0062
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: examination
     definition: An examination approved by the Board that an applicant must pass to demonstrate
@@ -31,7 +192,54 @@ entries:
     related_terms: []
     items:
       - DC-198-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exemption
+    definition: Exemption from licensing applies to individuals employed by a broker in a purely
+      stenographic or clerical capacity who do not engage in licensed activities.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: Any person who is employed by a licensed real estate broker or property manager in a
+      solely stenographic or clerical capacity and who does not perform, offer, agree, or attempt to
+      perform, any of the activities licensed by the Board
+    related_terms: []
+    items:
+      - DC-198-0048
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fund
+    definition: The Fund is the Real Estate Guaranty and Education Fund, established to compensate
+      victims of unlawful real estate practices and support related educational purposes.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: Fund - the Real Estate Guaranty and Education Fund.
+    related_terms: []
+    items:
+      - DC-198-0039
+      - DC-198-0041
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: imminent danger
+    definition: A situation where a licensee's conduct poses an immediate threat to the health and
+      safety of persons in the District.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: presents an imminent danger to the health and safety of persons in the District
+    related_terms: []
+    items:
+      - DC-198-0057
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: instructor
+    definition: An individual approved by the Commission to instruct a continuing education program.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: The program shall be instructed by an individual approved by the Commission;
+    related_terms: []
+    items:
+      - DC-198-0044
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license
     definition: A real estate license authorizes the holder, for compensation and on behalf of others,
@@ -47,7 +255,58 @@ entries:
     items:
       - DC-198-0022
       - DC-198-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensee
+    definition: A licensee is a person who holds a real estate license and is authorized to perform
+      brokerage activities such as listing, selling, or leasing property.
+    source: REP Ref. Contracts
+    quoted_text: In real estate, the most common contracts a licensee encounters are the purchase
+      agreement (sales contract), the listing agreement, the buyer representation agreement, the
+      lease, the option, and the land contract.
+    related_terms: []
+    items:
+      - DC-198-0071
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensure
+    definition: Licensure refers to the status of being licensed to practice real estate, as evidenced
+      by the maintenance of licensure records by the Department.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: Copies of all records and papers pertaining to licensure, certification, registration,
+      inspections, investigations, and other matters under the jurisdiction of the Board shall be
+      maintained by the Department on behalf of the Board
+    related_terms: []
+    items:
+      - DC-198-0050
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: Mayor
+    definition: The Mayor means the Mayor of the District of Columbia or that official's authorized
+      representative.
+    source: D.C. Code §§ 42-1701–42-1709
+    quoted_text: (8) The term “Mayor” means the Mayor of the District of Columbia or the Mayor’s
+      authorized representative.
+    related_terms: []
+    items:
+      - DC-198-0060
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: meetings
+    definition: Meetings are the board's regular scheduled gatherings that members are expected to
+      attend, with attendance at least half required to avoid neglect of duty.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: The failure of a member of a board to attend at least half of the regular scheduled
+      meetings of the board
+    related_terms: []
+    items:
+      - DC-198-0038
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: members
     definition: Individuals appointed to serve on the Board of Real Estate who participate in its
@@ -57,7 +316,83 @@ entries:
     related_terms: []
     items:
       - DC-198-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: neglect of duty
+    definition: Neglect of duty occurs when a board member fails to attend at least half of the board's
+      regular scheduled meetings within a year, which may justify removal by the Mayor.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: The failure of a member of a board to attend at least half of the regular scheduled
+      meetings of the board within a 12-month period shall constitute neglect of duty within the
+      meaning of this section.
+    related_terms: []
+    items:
+      - DC-198-0038
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: new building
+    definition: A new building is a building that has completed construction, as evidenced by a
+      permanent certificate of occupancy for a new multifamily building, and is within 15 years
+      before the date of sale.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: A sale or other transfer of interest in a new building that has completed construction,
+      as evidenced by a permanent certificate of occupancy for a new multifamily building
+    related_terms: []
+    items:
+      - DC-198-0073
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notice
+    definition: Notice is a communication that must be delivered according to the method specified in
+      the relevant form or agreement to be effective.
+    source: REP Ref. Contracts
+    quoted_text: Real estate forms commonly specify how and when notice is effective — for example, on
+      delivery to the listing licensee, or on electronic transmission — and the form controls.
+    related_terms: []
+    items:
+      - DC-198-0063
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notice of transfer
+    definition: A notice of transfer is a notice that must be sent to tenants in order to qualify for an
+      exemption under the definition of a sale, as required by § 42-3404.03a.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: provided, that a Notice of Transfer is sent to tenants for this exemption pursuant to §
+      42-3404.03a;
+    related_terms: []
+    items:
+      - DC-198-0073
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notification
+    definition: Notification is a formal written communication informing someone of a specific fact or
+      action, such as the mailing of a license to the Mayor.
+    source: D.C. Code §§ 47-2853.141 to 47-2853.199
+    quoted_text: (b) When a real estate salesperson is discharged or terminates his or her employment
+      with a licensee, the licensee, within 15 calendar days, shall mail notification to the former
+      employee that his or her license has been mailed to the Mayor.
+    related_terms: []
+    items:
+      - DC-198-0071
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: offer
+    definition: An offer is a proposal made by one party to another indicating a willingness to enter
+      into a contract under certain terms.
+    source: REP Ref. Contracts
+    quoted_text: mutual assent, shown by an offer and an acceptance
+    related_terms: []
+    items:
+      - DC-198-0063
+      - DC-198-0064
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: property manager
     definition: A property manager is the owner's general agent charged with achieving the owner's
@@ -72,7 +407,22 @@ entries:
     items:
       - DC-198-0022
       - DC-198-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: purpose
+    definition: The purpose of the Real Estate Guaranty and Education Fund is to compensate victims of
+      unlawful real estate practices and to protect the public from incompetence, fraud, and
+      deception in real estate transactions.
+    source: D.C. Code §§ 42-1701–42-1709
+    quoted_text: The purposes of this subchapter are to protect the public against incompetence, fraud
+      and deception in real estate transactions; to establish a Real Estate Guaranty and Educational
+      Fund to compensate victims of unlawful real estate practices
+    related_terms: []
+    items:
+      - DC-198-0039
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: quorum
     definition: The minimum number of Board members required to conduct official business, which is five
@@ -82,5 +432,133 @@ entries:
     related_terms: []
     items:
       - DC-198-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: real estate broker
+    definition: A real estate broker is a person who holds a license issued under the District's real
+      estate licensing statutes, authorizing them to engage in brokerage activities.
+    source: 17 DCMR ch. 26, §§ 2600–2699
+    quoted_text: A person licensed as a real estate broker pursuant to § 2601 of this chapter shall be
+      deemed to have satisfied the educational and examination requirements for licensure as a
+      property manager under this chapter
+    related_terms: []
+    items:
+      - DC-198-0034
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rehearing
+    definition: A rehearing is a request for the full Board of Real Estate to reconsider a final
+      decision made by a hearing panel, which must be ruled on before any appeal to the Court of
+      Appeals can proceed.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: If a rehearing before the full board is requested, no appeal to the District of
+      Columbia Court of Appeals shall be permitted until the full board has issued a ruling.
+    related_terms: []
+    items:
+      - DC-198-0036
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rental agreement
+    definition: A rental agreement is a written lease or other contract that gives a tenant the right to
+      occupy a property and obligates them to pay rent.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: under the terms of a current or expired written lease or other rental agreement, are
+      entitled to occupy the housing accommodation and are liable to the owner for the payment of
+      rent.
+    related_terms: []
+    items:
+      - DC-198-0062
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: request
+    definition: To request means to ask for something formally or make a demand, such as asking a
+      regulator to provide records.
+    source: REP Ref. Brokerage Practice
+    quoted_text: and to make them available to the regulator on request.
+    related_terms: []
+    items:
+      - DC-198-0059
+      - DC-198-0060
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: salesperson
+    definition: A salesperson is a licensed real estate professional who works under a sponsoring broker
+      to perform brokerage activities.
+    source: REP Ref. Agency
+    quoted_text: "- A salesperson is generally treated as a general agent of the sponsoring broker."
+    related_terms: []
+    items:
+      - DC-198-0071
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single-family
+    definition: Single-family describes a residence intended for one family, such as a principal
+      residence that qualifies for certain loan protections.
+    source: REP Ref. Financing & Closing
+    quoted_text: Under the Homeowners Protection Act, on a borrower-paid policy for a single-family
+      principal residence the borrower may request cancellation when the balance reaches 80% of
+      original value
+    related_terms: []
+    items:
+      - DC-198-0062
+      - DC-198-0063
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: statement of interest
+    definition: A written statement of interest is a tenant's clear expression of intent to purchase the
+      housing accommodation they occupy.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: (A) Upon delivery of a written offer of sale from the owner, the tenant shall have 20
+      days to deliver a written statement of interest to the owner.
+    related_terms: []
+    items:
+      - DC-198-0064
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: summary suspension
+    definition: The Mayor may summarily suspend or restrict a license without a hearing when a
+      licensee's conduct poses an imminent danger to health and safety.
+    source: D.C. Code §§ 47-2853.01–47-2853.30
+    quoted_text: (a) If the Mayor determines, after investigation, that the conduct of a licensee,
+      registrant, person certified, or person permitted by [this subchapter] to practice in the
+      District, presents an imminent danger to the health and safety of persons in the District, the
+      Mayor may summarily suspend or rest
+    related_terms: []
+    items:
+      - DC-198-0057
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenant
+    definition: A tenant is a person who rents or leases property from a landlord and may provide a
+      security deposit.
+    source: REP Ref. Brokerage Practice
+    quoted_text: earnest money, tenant security deposits, rents collected for owners, advance fees — is
+      trust money
+    related_terms: []
+    items:
+      - DC-198-0064
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenant organization
+    definition: A tenant organization is a group of tenants that can be registered with the Mayor under
+      D.C. Code § 42-3404.11(1) and, once registered, has the right to challenge an owner's sale
+      offer as not being a bona fide offer and to request an appraisal of the property's value.
+    source: D.C. Code §§ 42-3404.01–42-3404.16
+    quoted_text: (5)(A) A tenant organization registered according to § 42-3404.11(1) may challenge the
+      offer presented by an owner
+    related_terms: []
+    items:
+      - DC-198-0072
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

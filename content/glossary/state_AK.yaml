@@ -1,6 +1,55 @@
 bank: state_AK
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: accounting
+    definition: Accounting is the duty to properly account for funds received from clients. It involves
+      keeping accurate records of money held in trust and ensuring it is used appropriately.
+    source: REP Ref. Agency
+    quoted_text: accounting for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - AK-88-0086
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: adverse
+    definition: Adverse describes a party whose interests are opposed to another party's, such that
+      representing them without informed consent is forbidden.
+    source: REP Ref. Agency
+    quoted_text: It forbids representing an adverse party without informed consent (undisclosed dual
+      agency, § 2.4).
+    related_terms: []
+    items:
+      - AK-88-0088
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agreement
+    definition: An agreement is a legally enforceable contract between parties, such as a listing
+      agreement between a seller and a brokerage.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a brokerage
+    related_terms: []
+    items:
+      - AK-88-0074
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: assistant
+    definition: A licensed assistant is a licensed real estate salesperson or associate broker who may
+      act as an assistant to another licensed salesperson or associate broker only if they are
+      employed by the same broker and do not perform licensure-required activities for more than one
+      broker.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: A licensed real estate salesperson or licensed associate real estate broker may act as
+      a licensed assistant to another licensed salesperson or associate real estate broker only if
+    related_terms: []
+    items:
+      - AK-88-0079
+      - AK-88-0098
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: authority
     definition: The powers granted to the property manager by the property owner under a property
       management contract.
@@ -9,7 +58,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: In real estate brokerage, the broker is the agent who acts for the client (the buyer,
@@ -20,7 +70,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker license
     definition: A broker license authorizes a person to act as a real estate broker, requiring passage
@@ -31,7 +82,33 @@ entries:
     related_terms: []
     items:
       - AK-88-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage
+    definition: A brokerage is the operation of a real estate brokerage, encompassing scope of practice,
+      engagement agreements, compensation, and related activities.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the operation of a real estate brokerage — scope of practice, engagement agreements,
+      compensation
+    related_terms: []
+    items:
+      - AK-88-0089
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: calculation
+    definition: Calculation is the methodical process of applying formulas and steps to arrive at a
+      numeric answer, such as determining points and fees or property tax amounts, as covered in the
+      exam's calculation domains.
+    source: REP Ref. Real Estate Math
+    quoted_text: "Authored reference note for the calculation domains of the national examinations:
+      Pearson VUE VIII.A–VIII.G and PSI XI.A–XI.B"
+    related_terms: []
+    items:
+      - AK-88-0138
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commingle
     definition: Commingling is mixing money belonging to others with the licensee’s or brokerage’s own
@@ -42,7 +119,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0010
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: A commission is the compensation earned when a real estate broker fulfills the terms of
@@ -54,7 +132,36 @@ entries:
     items:
       - AK-88-0020
       - AK-88-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: compensation
+    definition: Compensation is the payment a licensee receives for services, which may come from the
+      seller, buyer, or broker and must be disclosed to all parties. It does not determine the
+      existence of an agency relationship.
+    source: REP Ref. Agency
+    quoted_text: agent may be paid from the seller's proceeds, by the listing broker's cooperative
+      offer, or by the buyer directly,
+    related_terms: []
+    items:
+      - AK-88-0087
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conflict
+    definition: A conflict of interest occurs when a licensee's personal interests could interfere with
+      their duty to act in a client's best interest, requiring disclosure. Examples include
+      receiving compensation from multiple parties or having an ownership interest in a recommended
+      service provider.
+    source: REP Ref. Agency
+    quoted_text: "A licensee must disclose any interest that could affect the licensee's judgment or the
+      client's decision:"
+    related_terms: []
+    items:
+      - AK-88-0087
+      - AK-88-0088
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: contact hour
     definition: A contact hour is a unit of measurement for real estate education, defined as a minimum
@@ -64,8 +171,108 @@ entries:
     related_terms: []
     items:
       - AK-88-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: continuing
+    definition: Continuing refers to the ongoing education requirements that must be met after an
+      initial license is issued.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: continuing education requirements under 12 AAC 64.500 for license renewal
+    related_terms: []
+    items:
+      - AK-88-0077
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: contract
+    definition: A contract in this context is an employment contract between a seller and a brokerage
+      that creates seller agency, specifically a personal service contract with the broker.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage, creating seller agency
+    related_terms: []
+    items:
+      - AK-88-0101
+      - AK-88-0126
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: coverage
+    definition: Coverage refers to professional liability (errors and omissions) insurance that pays
+      defense costs and damages for claims arising from a licensee's negligent acts, errors, or
+      omissions in performing licensed services.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "**E&O insurance** is professional liability coverage that pays defense costs and
+      damages for claims arising from a licensee's negligent acts, errors, or omissions in
+      performing licensed services."
+    related_terms: []
+    items:
+      - AK-88-0083
+      - AK-88-0084
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: date
+    definition: A date is a specific day, such as a definite termination or expiration date, on which an
+      agreement or obligation ends.
+    source: REP Ref. Agency
+    quoted_text: Most states require listing and buyer agreements to have a definite termination date;
+      automatic renewal clauses are prohibited in many states.
+    related_terms: []
+    items:
+      - AK-88-0084
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: deadline
+    definition: A deadline is a specific time by which a required action (such as submitting an
+      application or an offer) must be completed to avoid negative consequences.
+    source: REP Ref. Agency
+    quoted_text: "perform with the competence expected of a licensed professional: know market values,
+      know the standard forms and how to complete them, meet deadlines, verify facts within the
+      agent's expertise before repeating them, recommend inspections and professional advice where
+      appropriate, and follow through"
+    related_terms: []
+    items:
+      - AK-88-0137
+      - AK-88-0138
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: detrimental
+    definition: Detrimental means harmful or damaging to a client's interest in a real estate transaction.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: (1) not taking action that the licensee knows is adverse or detrimental to the interest
+      of the represented person in a real estate transaction;
+    related_terms: []
+    items:
+      - AK-88-0088
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: duty
+    definition: A duty is an obligation imposed by law or regulation, such as the duty to account for
+      funds received from clients. Failing to fulfill a duty can result in disciplinary action.
+    source: REP Ref. Agency
+    quoted_text: accounting for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - AK-88-0086
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: education
+    definition: Education refers to the required coursework a licensee must complete, such as the
+      30‑hour post‑licensing education requirement.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: the licensee shall complete 30 hours of education that meets the applicable requirements
+    related_terms: []
+    items:
+      - AK-88-0077
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: eligibility
     definition: Eligibility means meeting the statutory requirements to qualify for a real estate broker
       license.
@@ -75,7 +282,47 @@ entries:
     related_terms: []
     items:
       - AK-88-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: employment
+    definition: In the context of licensed assistants, employment means being employed by the same
+      broker as the salesperson being assisted, and not performing licensure-required duties for
+      more than one broker.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: the licensed assistant and the salesperson or associate broker are both employed by the
+      same broker;
+    related_terms: []
+    items:
+      - AK-88-0079
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: evictions
+    definition: Evictions are the legal processes by which a landlord removes a tenant for lease
+      violations, such as nonpayment of rent, and are a required topic in post‑license property
+      management education.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: (H) notices and evictions;
+    related_terms: []
+    items:
+      - AK-88-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: exclusive listing
+    definition: An exclusive listing is a contract where the seller appoints a single broker as the sole
+      agent, obligating the seller to pay that broker a commission if the property sells during the
+      listing period, regardless of who finds the buyer.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the seller under an exclusive listing owes one commission to the listing broker and the
+      brokers sort out the split.
+    related_terms: []
+    items:
+      - AK-88-0123
+      - AK-88-0133
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: exemption
     definition: An exemption from the real estate licensing requirement includes a lawyer performing
@@ -86,7 +333,20 @@ entries:
     related_terms: []
     items:
       - AK-88-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: existing contract
+    definition: An existing contract is a currently effective agreement for the sale or lease of real
+      estate that the licensee must still treat the party fairly regardless of its existence.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: regardless of whether the real estate is subject to an existing contract for sale or
+      lease or the person is already a party to an existing contract to buy or lease real estate
+    related_terms: []
+    items:
+      - AK-88-0111
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: experience
     definition: Experience refers to active and continuous work as a licensed real estate licensee.
@@ -96,7 +356,34 @@ entries:
     related_terms: []
     items:
       - AK-88-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: expiration date
+    definition: The expiration date is the specific date on which a listing agreement ends if it is not
+      renewed or extended, and most states require listings to include a definite expiration date.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require listings to be written, signed by the seller, with a definite
+      expiration date, and prohibit automatic extension clauses.
+    related_terms: []
+    items:
+      - AK-88-0123
+      - AK-88-0133
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: extension
+    definition: An extension is an agreement to lengthen the term of a listing contract beyond its
+      original expiration date, although many states prohibit automatic extension clauses in such
+      agreements.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require listings to be written, signed by the seller, with a definite
+      expiration date, and prohibit automatic extension clauses.
+    related_terms: []
+    items:
+      - AK-88-0124
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fee agreement
     definition: A fee agreement is an agreement between a broker and a client (seller, buyer, lessor, or
@@ -107,7 +394,18 @@ entries:
     related_terms: []
     items:
       - AK-88-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: good faith
+    definition: Good faith means honest and fair dealing in real estate transactions.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: honest and good faith dealing
+    related_terms: []
+    items:
+      - AK-88-0111
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: hearing
     definition: A hearing is a proceeding in which a person is given reasonable notice and an
@@ -118,7 +416,59 @@ entries:
     related_terms: []
     items:
       - AK-88-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: hours
+    definition: Hours are the scheduled times of work that help determine whether a worker is an
+      employee or an independent contractor.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A worker with set hours, mandatory meetings, reimbursed expenses, and a salary looks
+      like an employee
+    related_terms: []
+    items:
+      - AK-88-0074
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: inactive
+    definition: Inactive describes a license status where the holder must submit a renewal application,
+      fees, and proof of education to reactivate the license.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: An applicant for renewal of an inactive license shall submit to the department...
+    related_terms: []
+    items:
+      - AK-88-0078
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: interest
+    definition: An interest is a financial or ownership stake, such as in a title or mortgage company,
+      that could affect a licensee's judgment and must be disclosed. Disclosure allows clients to
+      assess potential bias.
+    source: REP Ref. Agency
+    quoted_text: that the licensee has an ownership interest in a title, mortgage, or inspection company
+      being recommended;
+    related_terms: []
+    items:
+      - AK-88-0087
+      - AK-88-0088
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: judgment
+    definition: A judgment is a court's money judgment that, when recorded or docketed, creates a
+      judgment lien on the debtor's real property and can be enforced by writ of execution and
+      sheriff's sale.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A judgment lien arises when a money judgment is recorded or docketed and attaches to
+      the debtor's real property in that county; it is enforced by writ of execution and sheriff's
+      sale.
+    related_terms: []
+    items:
+      - AK-88-0069
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: lawyer
     definition: A lawyer performing duties as a lawyer is exempt from the real estate licensing
@@ -128,7 +478,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: legal advice
     definition: Legal advice is guidance provided by a licensee concerning the legal meaning or effect
@@ -140,7 +491,37 @@ entries:
     related_terms: []
     items:
       - AK-88-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: license
+    definition: A license is the state‑granted authorization that permits a person to perform brokerage
+      activities for compensation.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage
+    related_terms: []
+    items:
+      - AK-88-0077
+      - AK-88-0096
+      - AK-88-0098
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: licensee
+    definition: A licensee is a person licensed to act as a real estate agent who owes fiduciary duties
+      to clients, such as seeking the lowest price for a buyer and not revealing that the buyer is
+      willing to pay more than the offered price.
+    source: REP Ref. Agency
+    quoted_text: A buyer's agent must try to obtain the lowest price and best terms for the buyer and
+      must not reveal, for instance, that the buyer is willing to pay more than the offered price.
+    related_terms: []
+    items:
+      - AK-88-0068
+      - AK-88-0089
+      - AK-88-0115
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensee relationship
     definition: A licensee relationship is the role or capacity in which a real estate licensee provides
@@ -151,7 +532,22 @@ entries:
     related_terms: []
     items:
       - AK-88-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensure
+    definition: Licensure is the process of obtaining a real estate license by passing an approved
+      examination before applying for a license as a broker, associate broker, or salesperson.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: An applicant for licensure shall pass an examination, approved by the commission,
+      before applying for a license as a real estate broker, associate real estate broker, or real
+      estate salesperson.
+    related_terms: []
+    items:
+      - AK-88-0078
+      - AK-88-0140
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: listing
     definition: A listing is the broker's engagement to find a ready, willing, and able buyer for a
@@ -162,7 +558,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: listing agreement
     definition: A listing agreement is the employment contract between a seller (or landlord) and a
@@ -173,7 +570,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0019
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: management contract
     definition: A management contract is an agreement between a broker and a property owner whereby the
@@ -184,7 +582,56 @@ entries:
     related_terms: []
     items:
       - AK-88-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: money
+    definition: Money refers to the funds that a licensee receives from clients and must handle
+      properly, such as holding them in trust accounts. Proper handling includes depositing the
+      money into a trust account and accounting for it.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Because the manager handles the owner's money and binds the owner to leases, most
+      states require a written agreement
+    related_terms: []
+    items:
+      - AK-88-0086
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: neutral licensee
+    definition: A neutral licensee is a real estate licensee who may provide specific assistance to both
+      parties in a transaction when they have given written consent.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: (2) a licensee may act as a neutral licensee under (c) of this section;
+    related_terms: []
+    items:
+      - AK-88-0091
+      - AK-88-0095
+      - AK-88-0114
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notices
+    definition: Notices are formal written communications, such as notices of default or sale, that must
+      be delivered to parties in transactions like foreclosures or tenancy terminations.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: (H) notices and evictions;
+    related_terms: []
+    items:
+      - AK-88-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: party
+    definition: A party is one of the competent individuals or entities that enter into a contract.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - AK-88-0087
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: period
     definition: The length of time for which a property management contract is effective.
@@ -193,7 +640,34 @@ entries:
     related_terms: []
     items:
       - AK-88-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: personal service
+    definition: A personal service contract is an agreement where a brokerage employs a broker to
+      perform services for a client, and the contract is with the broker rather than an individual
+      salesperson.
+    source: REP Ref. Brokerage Practice
+    quoted_text: It is a personal service contract with the *broker*, not the individual salesperson
+    related_terms: []
+    items:
+      - AK-88-0101
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: personal services
+    definition: A personal services contract is an agreement in which a licensee agrees to find, locate,
+      secure, or promote obtaining a buyer or tenant for a specific property at a certain price and
+      terms.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: (8) "listing" means a personal services contract or agreement, in which the listing
+      licensee agrees to find, locate, secure, or promote obtaining a buyer or tenant for a specific
+      property at a certain price and terms;
+    related_terms: []
+    items:
+      - AK-88-0126
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: personal services contract
     definition: A personal services contract is an agreement where a licensee agrees to find, locate,
@@ -209,7 +683,46 @@ entries:
       - AK-88-0020
       - AK-88-0022
       - AK-88-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: post-license
+    definition: Post‑license education refers to the additional coursework a licensee must complete
+      after initial licensure, including certification of completion and associated fees.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: the post-license education certification and new license document fee established in 12
+      AAC 02.360 .
+    related_terms: []
+    items:
+      - AK-88-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: preauthorization
+    definition: Preauthorization is the written consent obtained from a person allowing a licensee to
+      act as a neutral licensee in that person's real estate transaction.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: obtain preauthorization from a person to act as a neutral licensee
+    related_terms: []
+    items:
+      - AK-88-0091
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: property management
+    definition: Property management refers to the oversight and administration of real estate
+      properties, covering areas such as leasing, maintenance, and legal compliance, as outlined in
+      brokerage practice references.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Reference note: the operation of a real estate brokerage — scope of practice,
+      engagement agreements, compensation, antitrust in practice, employment status, supervision,
+      advertising, risk management, trust funds, and property management"
+    related_terms: []
+    items:
+      - AK-88-0140
+      - AK-88-0142
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: property management contract
     definition: An agreement between a property owner and a property manager that outlines the manager's
@@ -221,7 +734,32 @@ entries:
     items:
       - AK-88-0025
       - AK-88-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: records
+    definition: Records are the transaction documents and information a broker must keep accurate and
+      separate from other funds and property.
+    source: REP Ref. Agency
+    quoted_text: keep accurate records
+    related_terms: []
+    items:
+      - AK-88-0073
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: recovery fund
+    definition: The real estate recovery fund is the account from which the commission may award money
+      to claimants, and upon making an award it may suspend the licensee's license.
+    source: Alaska Stat. § 08.88.011 et seq.
+    quoted_text: (b) When an award is made from the real estate recovery fund under this chapter, the
+      commission may suspend the license of the real estate licensee whose actions formed the basis
+      of the award.
+    related_terms: []
+    items:
+      - AK-88-0068
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: recovery fund fee
     definition: The recovery fund fee is a payment that a real estate licensee must make to the
@@ -234,7 +772,20 @@ entries:
     related_terms: []
     items:
       - AK-88-0002
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal
+    definition: Renewal refers to a provision that extends the term of an agreement automatically unless
+      notice is given, but many states prohibit automatic renewal clauses in listing agreements.
+    source: REP Ref. Agency
+    quoted_text: Most states require listing and buyer agreements to have a definite termination date;
+      automatic renewal clauses are prohibited in many states.
+    related_terms: []
+    items:
+      - AK-88-0124
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: responsibilities
     definition: The specific duties assigned to the property manager in a property management contract.
@@ -243,7 +794,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: security deposit
     definition: Tenant money held to secure performance of the lease, covering unpaid rent, damage
@@ -254,7 +806,19 @@ entries:
     related_terms: []
     items:
       - AK-88-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: showing
+    definition: Showing is the act of a licensee presenting a property to a prospective buyer for viewing.
+    source: REP Ref. Agency
+    quoted_text: the licensee showing them property was "their" agent
+    related_terms: []
+    items:
+      - AK-88-0095
+      - AK-88-0114
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: specific assistance
     definition: Specific assistance is the act of helping a party locate or acquire real estate.
@@ -264,7 +828,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: supervision
     definition: Broker supervision requirements and record keeping refer to the mandated training that
@@ -275,7 +840,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: temporary order
     definition: A temporary order is an order issued by the department before a hearing is held that
@@ -289,7 +855,31 @@ entries:
     related_terms: []
     items:
       - AK-88-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: timely
+    definition: Timely means done promptly or without delay, such as the timely handling of complaints
+      required of brokers. It ensures that actions are taken within a reasonable time frame.
+    source: REP Ref. Brokerage Practice
+    quoted_text: availability to answer questions; and timely handling of complaints.
+    related_terms: []
+    items:
+      - AK-88-0086
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: transaction
+    definition: A transaction is the real estate deal or agreement in which parties such as buyers,
+      sellers, landlords, or tenants are involved.
+    source: REP Ref. Agency
+    quoted_text: A person in the transaction who is *not* represented by the brokerage is a **customer**
+      (or third party).
+    related_terms: []
+    items:
+      - AK-88-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: trust account
     definition: A trust account is a separate account where funds belonging to others—such as earnest
@@ -312,7 +902,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: written agreement
     definition: A written agreement is a document that memorializes the terms of a management contract,
@@ -324,7 +915,8 @@ entries:
     related_terms: []
     items:
       - AK-88-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: written authorization
     definition: Permission from the property owner, in writing, allowing the property manager to
@@ -336,5 +928,21 @@ entries:
     related_terms: []
     items:
       - AK-88-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written consent
+    definition: Written consent is a signed agreement required for a neutral licensee to act for both
+      parties in a real estate transaction.
+    source: 12 Alaska Admin. Code § 64.010 et seq.
+    quoted_text: A written consent that a neutral licensee obtains under AS 08.88.610 must be provided
+      on the commission's form entitled Alaska Real Estate Commission Waiver of Right to Be
+      Represented, dated April 2024, and adopted by reference.
+    related_terms: []
+    items:
+      - AK-88-0091
+      - AK-88-0095
+      - AK-88-0114
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

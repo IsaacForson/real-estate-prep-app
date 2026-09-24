@@ -1,6 +1,44 @@
 bank: state_IL
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: address of record
+    definition: The address of record is the address that the Illinois Department of Financial and
+      Professional Regulation keeps on file for an applicant or licensee, taken from their
+      application or license file.
+    source: 225 ILCS 454
+    quoted_text: "\"Address of record\" means the designated address recorded by the Department in the
+      applicant's or licensee's application file or license file as maintained by the Department."
+    related_terms: []
+    items:
+      - IL-2000-0082
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: advertising
+    definition: Advertising is any method of communication intended to influence the public to purchase
+      real estate, including print, electronic, social media, and digital forums.
+    source: 225 ILCS 454
+    quoted_text: '"Medium of advertising" means any method of communication intended to influence the
+      general public to use or purchase a particular good or service or real estate, including, but
+      not limited to, print, electronic, social media, and digital forums.'
+    related_terms: []
+    items:
+      - IL-2000-0059
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agency
+    definition: Agency is a relationship where an agent is authorized to act on behalf of a principal,
+      subject to the principal's control, and owes fiduciary duties.
+    source: REP Ref. Agency
+    quoted_text: is authorized to act on behalf of another (the **principal**) in dealings with third
+      parties, and agrees to do so subject to the principal's control.
+    related_terms: []
+    items:
+      - IL-2000-0069
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: auction
     definition: An auction is a public sale where real estate is offered for sale or lease to the
       highest bidder.
@@ -9,8 +47,26 @@ entries:
     related_terms: []
     items:
       - IL-2000-0006
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: blind advertisement
+    definition: A blind advertisement is any real‑estate advertisement used by a licensee that does not
+      include the sponsoring broker’s complete business name, or for electronic ads, does not
+      provide a direct link to the required disclosure.
+    source: 225 ILCS 454
+    quoted_text: "\"Blind advertisement\" means any real estate advertisement that is used by a licensee
+      regarding the sale or lease of real estate, licensed activities, or the hiring of any licensee
+      under this Act that does not include the sponsoring broker's complete business name or, in the
+      case of electronic advertisements, does not provide a direct link to a displ"
+    related_terms: []
+    items:
+      - IL-2000-0068
+      - IL-2000-0084
+      - IL-2000-0087
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: broker price opinion
     definition: A broker price opinion is a written opinion of a property’s probable selling price
       prepared by a broker or salesperson, typically for loan modification, short sale, or
@@ -23,7 +79,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0013
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: brokerage agreement
     definition: A brokerage agreement is an agreement between a sponsoring broker and a consumer for
@@ -36,7 +93,21 @@ entries:
     related_terms: []
     items:
       - IL-2000-0019
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: client
+    definition: Client is the principal (seller, buyer, landlord, or tenant) who has engaged the
+      brokerage and for whom the agent acts.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - IL-2000-0070
+      - IL-2000-0088
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: client information
     definition: Client information refers to any details a licensee receives from a client during a
@@ -46,7 +117,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0004
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission split
     definition: A commission split is the division of a commission between brokers or agents that may be
@@ -57,7 +129,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: comparative market analysis
     definition: A comparative market analysis is a written opinion of property value that a licensee may
@@ -68,7 +141,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0014
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: compensation
     definition: Compensation is the payment (such as a commission) a licensee receives for performing
@@ -79,7 +153,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: confidential information
     definition: Confidential information is information obtained from a client during a brokerage
@@ -91,7 +166,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0001
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: confidentiality
     definition: Confidentiality requires a licensee to keep certain information received from a client
@@ -101,7 +177,31 @@ entries:
     related_terms: []
     items:
       - IL-2000-0004
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: continuing education
+    definition: Continuing education refers to courses required by the Illinois Real Estate License Act
+      that licensees must take after obtaining their license to maintain it.
+    source: 225 ILCS 454
+    quoted_text: '"Education provider" means a school licensed by the Department offering courses in
+      pre-license, post-license, or continuing education required by this Act.'
+    related_terms: []
+    items:
+      - IL-2000-0061
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: corporation
+    definition: A corporation is a business entity that can be licensed as a broker under the Act,
+      allowing it to perform brokerage activities for compensation.
+    source: 225 ILCS 454
+    quoted_text: '"Broker" means an individual, entity, corporation, foreign or domestic partnership'
+    related_terms: []
+    items:
+      - IL-2000-0056
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: customer
     definition: A customer is a consumer who is not being represented by the licensee in a real estate
@@ -111,7 +211,21 @@ entries:
     related_terms: []
     items:
       - IL-2000-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated agent
+    definition: A designated agent is a licensee whom a sponsoring broker names to act as the legal
+      representative of a client, as authorized under Section 15-50 of the Real Estate License Act
+      of 2000.
+    source: 225 ILCS 454
+    quoted_text: '"Designated agent" means a sponsored licensee named by a sponsoring broker as the
+      legal agent of a client, as provided for in Section 15-50 of this Act.'
+    related_terms: []
+    items:
+      - IL-2000-0088
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: disclosure
     definition: Disclosure is the act of revealing required information, such as when affiliated
@@ -121,7 +235,20 @@ entries:
     related_terms: []
     items:
       - IL-2000-0002
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: dual agency
+    definition: Dual agency is when a licensee represents both the buyer and seller (or landlord and
+      tenant) in the same transaction.
+    source: 225 ILCS 454
+    quoted_text: '"Dual agency" means an agency relationship in which a licensee is representing both
+      buyer and seller or both landlord and tenant in the same transaction.'
+    related_terms: []
+    items:
+      - IL-2000-0069
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: dual role
     definition: Dual role occurs when an agent represents both parties in the same transaction,
@@ -132,7 +259,21 @@ entries:
     related_terms: []
     items:
       - IL-2000-0017
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: escrow account
+    definition: An escrow account is a special account separate from personal or business accounts where
+      a sponsoring broker holds escrow money entrusted to them.
+    source: 68 Ill. Adm. Code 1450
+    quoted_text: sponsoring brokers who accept escrow moneys shall maintain and deposit in a special
+      account (hereinafter referred to as an escrow account), separate and apart from personal or
+      other business accounts
+    related_terms: []
+    items:
+      - IL-2000-0073
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: exclusive brokerage agreement
     definition: An exclusive brokerage agreement is a written brokerage agreement giving the sponsoring
@@ -145,7 +286,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0020
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fiduciary duty
     definition: Fiduciary duty is the licensee’s obligation to act loyally and in the client’s best
@@ -156,7 +298,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0001
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: HIV
     definition: HIV refers to Human Immunodeficiency Virus, a medical condition that, if present in an
@@ -166,7 +309,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0002
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: inactive status
     definition: Inactive status is the condition of a license after sponsorship ends, during which the
@@ -177,7 +321,31 @@ entries:
     related_terms: []
     items:
       - IL-2000-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: license
+    definition: A real estate license authorizes the holder to perform brokerage activities such as
+      listing, selling, leasing, and negotiating on behalf of others for compensation.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A real estate license authorizes the holder, for compensation and on behalf of others,
+      to perform the acts state law defines as brokerage
+    related_terms: []
+    items:
+      - IL-2000-0056
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: managing broker
+    definition: A managing broker is a licensee who acts as a general agent for a property owner under a
+      property management agreement, with authority to lease, set or approve rents, collect rents,
+      hire and pay vendors, evict, and spend up to a stated amount without owner approval.
+    source: "[REP Ref. Brokerage Practice — § 3.2 Property management agreement]"
+    quoted_text: The contract creating a general agency between a property owner and a managing broker
+    related_terms: []
+    items:
+      - IL-2000-0055
+    status: draft
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: material facts
     definition: A material fact is any fact a reasonable person would consider important in deciding
@@ -189,7 +357,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0001
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: mortgage loan origination
     definition: Mortgage loan origination is the process by which a financial institution creates a
@@ -200,7 +369,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0013
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: non-agency
     definition: A non-agent (such as a transaction broker or facilitator) does not represent either
@@ -213,7 +383,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: pattern of business
     definition: A pattern of business involves regularly buying, selling, offering to buy or sell,
@@ -227,8 +398,31 @@ entries:
     related_terms: []
     items:
       - IL-2000-0011
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: referral fee
+    definition: A referral fee is a payment made to a licensee for directing a client to another
+      broker's listing. If undisclosed, it is considered a secret profit under the Act.
+    source: REP Ref. Agency
+    quoted_text: secret profits, such as a referral fee
+    related_terms: []
+    items:
+      - IL-2000-0046
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal
+    definition: Renewal is the renewal period, which begins 90 days before a license’s expiration date.
+    source: 225 ILCS 454
+    quoted_text: '"Renewal period" means the period beginning 90 days prior to the expiration date of a
+      license.'
+    related_terms: []
+    items:
+      - IL-2000-0061
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: required disclosure
     definition: A required disclosure is a statement of the intended purpose of a broker price opinion
       or comparative market analysis.
@@ -238,7 +432,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0014
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reserve
     definition: A reserve is money set aside by the property owner to cover future expenses, as required
@@ -249,7 +444,20 @@ entries:
     related_terms: []
     items:
       - IL-2000-0006
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: security deposit
+    definition: A security deposit is tenant money held to secure performance of the lease, covering
+      unpaid rent, damage beyond normal wear and tear, and cleaning.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A security deposit is tenant money held to secure performance of the lease — unpaid
+      rent, damage beyond normal wear and tear, and cleaning.
+    related_terms: []
+    items:
+      - IL-2000-0073
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: solicitation
     definition: In the context of Illinois real estate licensing rules, solicitation refers to an offer
@@ -262,7 +470,20 @@ entries:
     related_terms: []
     items:
       - IL-2000-0020
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sponsored licensee
+    definition: A sponsored licensee is a licensee who works under a sponsoring broker under a written
+      employment or independent contractor agreement.
+    source: 68 Ill. Adm. Code 1450
+    quoted_text: Every sponsoring broker shall have a written employment or independent contractor
+      agreement with each sponsored licensee.
+    related_terms: []
+    items:
+      - IL-2000-0059
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: sponsoring broker
     definition: A sponsoring broker is the broker who employs or sponsors a salesperson, under whom the
@@ -275,7 +496,8 @@ entries:
     items:
       - IL-2000-0007
       - IL-2000-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: sponsorship
     definition: Sponsorship means that a sponsoring broker has certified to the Department that a
@@ -288,7 +510,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: stigmatized property
     definition: A stigmatized property is one that buyers may avoid for psychological reasons unrelated
@@ -301,7 +524,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0002
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: supervision
     definition: Supervision is the oversight provided by a sponsoring broker that allows a person to
@@ -314,7 +538,8 @@ entries:
     related_terms: []
     items:
       - IL-2000-0010
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: termination of sponsorship
     definition: Termination of sponsorship is the ending of the relationship between a licensee and
@@ -327,5 +552,18 @@ entries:
     related_terms: []
     items:
       - IL-2000-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unprofessional conduct
+    definition: Unprofessional conduct is conduct that is dishonorable, unethical, or likely to deceive,
+      defraud, or harm the public.
+    source: 225 ILCS 454
+    quoted_text: Engaging in dishonorable, unethical, or unprofessional conduct of a character likely to
+      deceive, defraud, or harm the public
+    related_terms: []
+    items:
+      - IL-2000-0070
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

@@ -1,6 +1,18 @@
 bank: state_CA
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: advertisement
+    definition: An advertisement is any communication placed by a licensee to promote brokerage
+      services, such as a print ad, sign, website, social media post, or email.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require that every advertisement placed by a licensee — print, sign,
+      website, social media post, email — identify the
+    related_terms: []
+    items:
+      - CA-4-0067
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: agency
     definition: Agency is a relationship in which one person (the agent) is authorized to act on behalf
       of another (the principal) in dealings with third parties, subject to the principal's control.
@@ -12,7 +24,20 @@ entries:
     items:
       - CA-4-0022
       - CA-4-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agency relationship
+    definition: An agency relationship exists when a broker acts on behalf of a client, such as when
+      holding trust funds for that client.
+    source: Cal. Code Regs. tit. 10, §§ 2705–3109
+    quoted_text: The relationship between a real estate broker and a client for whom the broker holds
+      funds in trust is an agency relationship.
+    related_terms: []
+    items:
+      - CA-4-0069
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: agent
     definition: An agent is a person authorized to act on behalf of another (the principal) in dealings
@@ -26,7 +51,19 @@ entries:
     items:
       - CA-4-0021
       - CA-4-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: application
+    definition: An application is a request to purchase or lease property, such as government-owned lands.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: filing an application for the purchase or lease of
+    related_terms: []
+    items:
+      - CA-4-0093
+      - CA-4-0148
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appraisal report
     definition: An appraisal report is a written appraisal that communicates the value opinion and
@@ -38,7 +75,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appraiser
     definition: An appraiser is a professional whose opinions a real estate licensee is not qualified to
@@ -51,7 +89,19 @@ entries:
     items:
       - CA-4-0036
       - CA-4-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: association
+    definition: An association refers to an organization of property owners, such as a condominium
+      association, that manages common elements and enforces rules.
+    source: REP Ref. Contracts
+    quoted_text: condominium or association documents
+    related_terms: []
+    items:
+      - CA-4-0061
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: bankruptcy
     definition: Bankruptcy is a legal proceeding in which a debtor's control of property may be
@@ -62,7 +112,20 @@ entries:
     related_terms: []
     items:
       - CA-4-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: bona fide purchaser
+    definition: A buyer who purchases property for value, in good faith, and without notice of any prior
+      claims or interests.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: a later bona fide purchaser for value without notice (actual or constructive) of the
+      earlier interest wins even before recording.
+    related_terms: []
+    items:
+      - CA-4-0126
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: borrower
     definition: A borrower is the person who signs a promissory note, promising to repay a loan with
@@ -74,7 +137,38 @@ entries:
     items:
       - CA-4-0042
       - CA-4-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker
+    definition: A broker is the agent who represents a client in a real estate transaction and performs
+      brokerage acts for compensation.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - CA-4-0067
+      - CA-4-0081
+      - CA-4-0093
+      - CA-4-0101
+      - CA-4-0102
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage agreement
+    definition: A brokerage agreement is an agreement where a customer engages a broker-dealer’s
+      services, which can be formed electronically with a signature and is deemed fully executed and
+      enforceable upon acceptance.
+    source: Cal. Civ. Code §§ 1619–1633
+    quoted_text: an application by a prospective customer to enter into a brokerage agreement with a
+      broker-dealer, which application is transmitted electronically and is accompanied by the
+      prospective customer’s electronic signature or digital signature
+    related_terms: []
+    items:
+      - CA-4-0142
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: bureau
     definition: A bureau is a government division or agency responsible for specific regulatory or
@@ -85,7 +179,24 @@ entries:
     related_terms: []
     items:
       - CA-4-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: business days
+    definition: A business day is any calendar day except Sunday or the listed federal and state
+      holidays (e.g., New Year’s Day, Washington’s Birthday, Memorial Day, Independence Day, Labor
+      Day, Columbus Day, Veterans’ Day, Thanksgiving Day, and Christmas Day).
+    source: Cal. Civ. Code §§ 1688–1693
+    quoted_text: "(e) “Business day” means any calendar day except Sunday, or the following business
+      holidays: New Year’s Day, Washington’s Birthday, Memorial Day, Independence Day, Labor Day,
+      Columbus Day, Veterans’ Day, Thanksgiving Day, and Christmas Day."
+    related_terms: []
+    items:
+      - CA-4-0152
+      - CA-4-0153
+      - CA-4-0157
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: buyer
     definition: A buyer is a person who engages a real estate brokerage as a client or principal to
@@ -96,7 +207,31 @@ entries:
     related_terms: []
     items:
       - CA-4-0033
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: buyers
+    definition: Buyers are individuals who purchase real estate, and a buyer's agent must obtain the
+      lowest price and best terms for them.
+    source: REP Ref. Agency
+    quoted_text: A buyer's agent must try to obtain the lowest price and best terms for the buyer
+    related_terms: []
+    items:
+      - CA-4-0065
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: cancellation
+    definition: Cancellation ends a contract and restores the parties to their pre‑contract positions,
+      with each returning what they received.
+    source: REP Ref. Contracts
+    quoted_text: Cancellation of the contract and restoration of the parties to their pre-contract
+      positions (each returns what it received).
+    related_terms: []
+    items:
+      - CA-4-0151
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: capacity
     definition: Capacity is the legal ability to enter into a contract, which is generally lacking for
@@ -110,7 +245,43 @@ entries:
     items:
       - CA-4-0047
       - CA-4-0048
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: closing
+    definition: The point in a real estate transaction when the deed is delivered and the purchase price
+      is paid, after which the purchase agreement is considered executed.
+    source: REP Ref. Contracts
+    quoted_text: After closing, when the deed has been delivered and the price paid, the purchase
+      agreement is executed.
+    related_terms: []
+    items:
+      - CA-4-0130
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conditioning
+    definition: Conditioning is tying the sale of one product or service to the purchase of another
+      separate item, leveraging market power to force the buyer to accept both.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Conditioning the sale of one product or service on the buyer's purchase of a second,
+      separate one
+    related_terms: []
+    items:
+      - CA-4-0089
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: confidential information
+    definition: Confidential information includes a party's bottom line or maximum price they are
+      willing to pay, which must not be disclosed to the other party.
+    source: REP Ref. Agency
+    quoted_text: for example, the seller's bottom line or the buyer's maximum
+    related_terms: []
+    items:
+      - CA-4-0068
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: contract
     definition: A valid contract requires competent parties, mutual assent shown by an offer and
@@ -124,7 +295,33 @@ entries:
     items:
       - CA-4-0047
       - CA-4-0048
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: conveyance
+    definition: The transfer of title to real property from one party to another, which is valid if both
+      parties perform their obligations under the contract.
+    source: REP Ref. Contracts
+    quoted_text: "An oral agreement to sell land is therefore generally unenforceable (§ 1.5), though
+      not void: if both parties choose to perform, the conveyance is valid."
+    related_terms: []
+    items:
+      - CA-4-0126
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: corporation
+    definition: A corporation is a legal entity that is treated as a single person for property
+      ownership purposes.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A corporation or LLC holding title holds in severalty even though it has many owners,
+      because the entity is a single legal person
+    related_terms: []
+    items:
+      - CA-4-0147
+      - CA-4-0148
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: correct errors
     definition: To correct errors means to fix mistakes in an appraisal report.
@@ -133,7 +330,32 @@ entries:
     related_terms: []
     items:
       - CA-4-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: customer
+    definition: A customer is a person in a real estate transaction who is not represented by the brokerage.
+    source: REP Ref. Agency
+    quoted_text: A person in the transaction who is *not* represented by the brokerage is a **customer**
+      (or third party).
+    related_terms: []
+    items:
+      - CA-4-0067
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: deed of trust
+    definition: A deed of trust is a voluntary lien where the borrower pledges the property as security
+      for a loan, involving a trustee who holds legal title for the lender.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "- Mortgage and deed of trust liens: voluntary; the borrower pledges the property as
+      security. Whether the lender holds a lien only (lien theory) or bare legal title (title
+      theory) varies by state."
+    related_terms: []
+    items:
+      - CA-4-0100
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: definition
     definition: A definition is a statement that explains the meaning of a term or concept.
@@ -143,7 +365,23 @@ entries:
     related_terms: []
     items:
       - CA-4-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated broker-officer
+    definition: A designated broker-officer is the officer named by a corporation to act under its real
+      estate broker license; if that officer dies or becomes incapacitated, the corporation can keep
+      operating by promptly notifying the department and applying for a replacement.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: In the event of death or incapacity of a sole designated broker-officer, a corporation
+      may operate as a licensee without interruption under its existing license if notice of the
+      death or incapacity and an application for a new designated officer is filed with the
+      department before midnight of the 10th business day after the event
+    related_terms: []
+    items:
+      - CA-4-0148
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: disclosure
     definition: Disclosure is the act of revealing information, and the exact duties and consent
@@ -153,7 +391,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0032
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: duty
     definition: A duty is a legal obligation, and breach of fiduciary duty can occur when undisclosed
@@ -165,7 +404,107 @@ entries:
     related_terms: []
     items:
       - CA-4-0033
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: emergency repairs
+    definition: Emergency repairs are repairs performed under authority to address urgent maintenance
+      needs, such as fixing a storm‑damaged roof, as part of maintenance activities.
+    source: Cal. Bus. & Prof. Code §§ 11210–11288
+    quoted_text: maintenance, and repair including emergency repairs
+    related_terms: []
+    items:
+      - CA-4-0154
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: emergency response unit
+    definition: A personal emergency response unit is a device sold via home solicitation that gives the
+      buyer a right to cancel within seven business days unless it is installed as part of a home
+      security alarm system.
+    source: Cal. Civ. Code §§ 1688–1693
+    quoted_text: any buyer has the right to cancel a home solicitation contract or offer for the
+      purchase of a personal emergency response unit
+    related_terms: []
+    items:
+      - CA-4-0153
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: enforceable
+    definition: Legally enforceable means that an agreement meets the essential elements of a contract,
+      allowing a party to seek a court remedy if the other party fails to perform.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - CA-4-0154
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: escrow
+    definition: Escrow is a neutral account where money belonging to others—like earnest money or
+      security deposits—is held separate from a brokerage’s operating funds.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Money a brokerage receives that belongs to others — earnest money, tenant security
+      deposits, rents collected for owners, advance fees — is trust money and must be held in a
+      designated trust or escrow account separate from the firm's operating funds.
+    related_terms: []
+    items:
+      - CA-4-0065
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: estate
+    definition: An estate in real property is the degree, quantity, or nature of a person's ownership
+      interest in land, such as fee simple or life estate.
+    source: Cal. Civ. Code §§ 1104–1134
+    quoted_text: Every grant of an estate in real property is conclusive against the grantor, also
+      against every one subsequently claiming under him, except a purchaser or incumbrancer who in
+      good faith and for a valuable consideration acquires a title or lien by an instrument that is
+      first duly recorded.
+    related_terms: []
+    items:
+      - CA-4-0046
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: examination
+    definition: An examination is a review of public records such as deeds, mortgages, liens, and taxes
+      to determine the status of a property's title.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A title search is an examination of the public records (deeds, mortgages, liens,
+      judgments, taxes, probate, plats)
+    related_terms: []
+    items:
+      - CA-4-0136
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: express contract
+    definition: An express contract is an agreement whose terms are explicitly stated by the parties,
+      either orally or in writing.
+    source: Cal. Civ. Code §§ 1619–1633
+    quoted_text: An express contract is one, the terms of which are stated in words.
+    related_terms: []
+    items:
+      - CA-4-0074
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fee
+    definition: A fee is a charge for a service, such as compensation paid to a broker or for assigning
+      a contract.
+    source: REP Ref. Brokerage Practice
+    quoted_text: a retainer, a flat fee, a percentage of the price
+    related_terms: []
+    items:
+      - CA-4-0103
+      - CA-4-0120
+      - CA-4-0138
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fiduciary duty
     definition: A fiduciary duty requires brokers to uphold agency relationships and not limit their
@@ -178,7 +517,20 @@ entries:
     related_terms: []
     items:
       - CA-4-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: foreclosure
+    definition: Foreclosure is the legal process whereby a lender sells a property to satisfy an unpaid
+      debt, with the sale proceeds used to pay off liens in order of priority.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: At a foreclosure sale liens are paid in order of priority; a junior lien receives
+      nothing until every senior lien is satisfied.
+    related_terms: []
+    items:
+      - CA-4-0107
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: foreclosure prevention
     definition: A foreclosure prevention alternative is a first lien loan modification or another
@@ -189,7 +541,32 @@ entries:
     related_terms: []
     items:
       - CA-4-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: funds
+    definition: Funds in this context refer to money held in trust, such as earnest money, which belongs
+      to neither buyer nor seller until the contract is completed and is held by a neutral party.
+    source: REP Ref. Contracts
+    quoted_text: Earnest money belongs to neither the buyer nor the seller alone while the contract is
+      pending; it is held in trust by a neutral party — commonly the listing broker, a title or
+      escrow company, or an attorney — under the terms of the contract.
+    related_terms: []
+    items:
+      - CA-4-0065
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: future business
+    definition: Future business refers to the expectation of receiving future work or compensation from
+      a client.
+    source: Cal. Code Regs. tit. 10, §§ 2705–3109
+    quoted_text: expressly or impliedly promising future business, promotions, or increased compensation
+    related_terms: []
+    items:
+      - CA-4-0091
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: general agent
     definition: A general agent may act for the principal in a range of matters within a continuing
@@ -202,7 +579,55 @@ entries:
     items:
       - CA-4-0021
       - CA-4-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: good faith
+    definition: Good faith means an honest intention to deal fairly, without knowledge of any prior
+      claim, as required for a purchaser to be protected under recording statutes.
+    source: Cal. Civ. Code §§ 1104–1134
+    quoted_text: except a purchaser or incumbrancer who in good faith and for a valuable consideration
+      acquires a title or lien by an instrument that is first duly recorded.
+    related_terms: []
+    items:
+      - CA-4-0112
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: Good Faith Estimate
+    definition: The Good Faith Estimate was a federal disclosure form that outlined loan terms and costs
+      for mortgage applicants, largely replaced by the Loan Estimate after 2015.
+    source: REP Ref. Financing & Closing
+    quoted_text: two federal forms replaced the Good Faith Estimate, early Truth-in-Lending statement
+      and HUD-1 for applications taken since October 2015.
+    related_terms: []
+    items:
+      - CA-4-0157
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: guard gate
+    definition: A guard gate is a controlled entry point that restricts access to a gated community or
+      development.
+    source: Cal. Civ. Code §§ 2920–2944.10
+    quoted_text: if access is denied because a common entrance to the property is restricted by a guard
+      gate or similar impediment, the property may be
+    related_terms: []
+    items:
+      - CA-4-0115
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: implied contract
+    definition: An implied contract is an agreement whose existence and terms are inferred from the
+      parties' conduct rather than from explicit words.
+    source: Cal. Civ. Code §§ 1619–1633
+    quoted_text: An implied contract is one, the existence and terms of which are manifested by conduct.
+    related_terms: []
+    items:
+      - CA-4-0074
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: improper influence
     definition: Improper influence occurs when a licensee attempts to affect an appraiser's development,
@@ -215,7 +640,21 @@ entries:
     items:
       - CA-4-0029
       - CA-4-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: indemnity
+    definition: An indemnity is a contract in which one party agrees to compensate another for loss or
+      liability, such as a title insurer defending against title defects.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Title insurance is an indemnity contract in which the insurer agrees to defend the
+      insured's title and pay losses caused by covered defects existing on the policy date, for a
+      one-time premium paid at closing.
+    related_terms: []
+    items:
+      - CA-4-0070
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: inspection
     definition: An inspection contingency gives the buyer a period to have the property inspected and to
@@ -227,7 +666,66 @@ entries:
     related_terms: []
     items:
       - CA-4-0032
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: instrument
+    definition: A negotiable instrument is a written document that evidences a financial obligation and
+      can be transferred, such as a promissory note.
+    source: REP Ref. Financing & Closing
+    quoted_text: A note is a negotiable instrument the lender can sell or assign, which is what makes
+      the secondary market (§ 7) possible.
+    related_terms: []
+    items:
+      - CA-4-0061
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lands
+    definition: Lands refers to property owned by the state or federal government.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: lands owned by the state or federal government
+    related_terms: []
+    items:
+      - CA-4-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: language
+    definition: A language specified in subdivision (b) of the statute, in which a contract or agreement
+      was negotiated, triggers the requirement for translated disclosures.
+    source: Cal. Civ. Code §§ 1619–1633
+    quoted_text: notice in any of the languages specified in subdivision (b) in which the contract or
+      agreement was negotiated shall be provided
+    related_terms: []
+    items:
+      - CA-4-0156
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: legend
+    definition: A legend is a required notice stating that services are not available to persons located
+      within California.
+    source: Cal. Code Regs. tit. 10, §§ 2705–3109
+    quoted_text: '"The services referred to herein are not available to persons located within the State
+      of California."'
+    related_terms: []
+    items:
+      - CA-4-0067
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lessor
+    definition: The landlord who leases property to a tenant and retains a reversionary interest, i.e.,
+      the right to regain possession when the lease ends.
+    source: REP Ref. Contracts
+    quoted_text: The landlord (lessor) retains a reversionary interest (the right to possession when the
+      lease ends).
+    related_terms: []
+    items:
+      - CA-4-0120
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: liability
     definition: Liability refers to being legally responsible for acts, such as a seller being liable
@@ -237,7 +735,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensing
     definition: Licensing is the portion of the Real Estate Law that governs the licensing of persons.
@@ -246,7 +745,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0036
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: limitation
     definition: A limitation period is the time allowed to file a lawsuit, which varies by state and
@@ -256,7 +756,65 @@ entries:
     related_terms: []
     items:
       - CA-4-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: listings
+    definition: Listings are the properties that a broker has placed on the market for sale or lease.
+    source: REP Ref. Agency
+    quoted_text: the death of a sole-proprietor broker terminates the firm's listings
+    related_terms: []
+    items:
+      - CA-4-0138
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: loan
+    definition: A loan is a borrowing of money with specific terms—type, amount, rate, and term—that a
+      buyer obtains to purchase real property.
+    source: REP Ref. Contracts
+    quoted_text: Makes the buyer's obligation contingent on obtaining a loan of a described type,
+      amount, rate, and term by a stated date.
+    related_terms: []
+    items:
+      - CA-4-0081
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: loan modification
+    definition: A loan modification is a permanent change to the interest rate, term, or balance of a
+      loan to make payments more affordable for the borrower.
+    source: REP Ref. Financing & Closing
+    quoted_text: Alternatives to foreclosure include forbearance (temporary suspension or reduction of
+      payments), a repayment plan, a loan modification (permanent change of rate, term or balance),
+      a deed in lieu (§ 3.7) and a short sale (§ 3.8).
+    related_terms: []
+    items:
+      - CA-4-0092
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mail
+    definition: Mail refers to sending a document or notice via the postal service, such as by certified
+      or registered mail, which can constitute effective service.
+    source: Cal. Bus. & Prof. Code §§ 10160–10249.93
+    quoted_text: Service by certified or registered mail directed to the respondent’s current address of
+      record on file with the commissioner shall be effective service.
+    related_terms: []
+    items:
+      - CA-4-0151
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mailing
+    definition: Mailing is the act of sending a document or notice through the postal service.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: within 60 days of mailing a notice of billing
+    related_terms: []
+    items:
+      - CA-4-0104
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: material fact
     definition: A material fact is information that a reasonable person would consider important when
@@ -267,7 +825,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0032
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: minor
     definition: A minor is a person under the age of majority set by state law.
@@ -277,7 +836,21 @@ entries:
     items:
       - CA-4-0047
       - CA-4-0048
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: mortgage
+    definition: A mortgage is a voluntary lien created when the borrower pledges real property as
+      security for a loan, giving the lender a claim on the property.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: "- Mortgage and deed of trust liens: voluntary; the borrower pledges the property as
+      security. Whether the lender holds a lien only (lien theory) or bare legal title (title
+      theory) varies by state."
+    related_terms: []
+    items:
+      - CA-4-0100
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: mortgage broker
     definition: A mortgage broker is a person who provides mortgage brokerage services to a borrower and
@@ -288,7 +861,70 @@ entries:
     related_terms: []
     items:
       - CA-4-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: multiple listing service
+    definition: A multiple listing service (MLS) is a cooperative facility where agents and appraisers,
+      via an intermediary, create compensation agreements for listed properties.
+    source: Cal. Civ. Code §§ 1086–1089.5
+    quoted_text: A multiple listing service (MLS) is a facility of cooperation of agents and appraisers,
+      operating through an intermediary that does not itself act as an agent or appraiser
+    related_terms: []
+    items:
+      - CA-4-0155
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: negotiation
+    definition: Negotiation is the process of discussing and agreeing upon terms, such as a loan,
+      between parties.
+    source: Cal. Bus. & Prof. Code §§ 10160–10249.93
+    quoted_text: (a) The provisions of this article do not apply to the negotiation of a loan by or on
+      behalf of a real estate broker
+    related_terms: []
+    items:
+      - CA-4-0081
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notice
+    definition: Notice is a communication that informs a party of a fact or action, effective when
+      delivered as specified by the relevant form or law.
+    source: REP Ref. Contracts
+    quoted_text: Real estate forms commonly specify how and when notice is effective - for example, on
+      delivery to the listing licensee, or on electronic transmission - and the form controls.
+    related_terms: []
+    items:
+      - CA-4-0103
+      - CA-4-0148
+      - CA-4-0151
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notice of default
+    definition: A notice of default is a recorded document that informs the borrower they have defaulted
+      on a loan and initiates the foreclosure process.
+    source: REP Ref. Financing & Closing
+    quoted_text: typically a recorded notice of default, a reinstatement period during which the
+      borrower can cure the arrears
+    related_terms: []
+    items:
+      - CA-4-0100
+      - CA-4-0104
+      - CA-4-0105
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: payment
+    definition: Payment is the act of paying money to satisfy a debt.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: securing payment of a debt
+    related_terms: []
+    items:
+      - CA-4-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: possession
     definition: Possession is the right to occupy and use a property for the duration of a lease.
@@ -297,7 +933,20 @@ entries:
     related_terms: []
     items:
       - CA-4-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: prepaid rental listing service
+    definition: A prepaid rental listing service is the business of providing prospective tenants with
+      lists of available residential rental properties.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: “Prepaid rental listing service” means the business of supplying prospective tenants
+      with listings of residential real
+    related_terms: []
+    items:
+      - CA-4-0138
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: principal
     definition: The principal is the person on whose behalf the agent acts, such as a seller, buyer,
@@ -309,7 +958,40 @@ entries:
     related_terms: []
     items:
       - CA-4-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: promise
+    definition: A promise is a commitment to repay a definite sum with interest on stated terms.
+    source: REP Ref. Financing & Closing
+    quoted_text: The promissory note is the borrower's written, unconditional promise to repay a
+      definite sum with interest on stated terms
+    related_terms: []
+    items:
+      - CA-4-0091
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: public policy
+    definition: Public policy refers to societal principles that render agreements violating them void
+      and unenforceable, such as a restriction that discriminates by race or religion.
+    source: Cal. Civ. Code §§ 1091–1099
+    quoted_text: (b) Any transfer fee created in violation of subdivision (a) is void as against public policy.
+    related_terms: []
+    items:
+      - CA-4-0070
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: purchase
+    definition: Purchase is the act of acquiring property or goods by buying them.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the buyer's purchase of a second, separate one
+    related_terms: []
+    items:
+      - CA-4-0101
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate
     definition: Real estate refers to the brokerage business that creates agency relationships,
@@ -320,7 +1002,8 @@ entries:
     related_terms: []
     items:
       - CA-4-0036
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate appraiser
     definition: A real estate appraiser is a professional who provides an opinion of value for real
@@ -332,7 +1015,19 @@ entries:
     related_terms: []
     items:
       - CA-4-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: real property
+    definition: Real property refers to land and anything permanently attached to it, such as buildings.
+    source: REP Ref. Brokerage Practice
+    quoted_text: listing, selling, buying, exchanging, leasing, renting, managing, negotiating,
+      advertising, and offering to do any of these with respect to real property
+    related_terms: []
+    items:
+      - CA-4-0101
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reasonable care
     definition: Reasonable care means performing with the competence expected of a licensed
@@ -345,7 +1040,128 @@ entries:
     related_terms: []
     items:
       - CA-4-0033
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: recordation
+    definition: Recordation is the official entry of a document, such as a deed or lien, into the public
+      records.
+    source: Cal. Bus. & Prof. Code §§ 10160–10249.93
+    quoted_text: upon recordation of the interests of the purchasers or lenders in the note and deed of trust
+    related_terms: []
+    items:
+      - CA-4-0104
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: recording
+    definition: Recording is the process of entering a deed or other instrument into the county's public
+      records to give notice to the world and establish priority.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: The general rule is first in time, first in right, by recording date.
+    related_terms: []
+    items:
+      - CA-4-0112
+      - CA-4-0126
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: recurring obligation
+    definition: Recurring obligation means the ongoing principal and interest payments (or rents) due on
+      a loan secured by a deed of trust or mortgage after a notice of default has been recorded,
+      including any such amounts advanced on senior liens.
+    source: Cal. Civ. Code §§ 2920–2944.10
+    quoted_text: For the purposes of this subdivision, the term “recurring obligation” means all amounts
+      of principal and interest on the loan, or rents, subject to the deed of trust or mortgage in
+      default due after the notice of default is recorded; all amounts of principal and interest or
+      rents advanced on senior liens or leaseholds that are advanced after the recordation of the
+      notice of default; and payment
+    related_terms: []
+    items:
+      - CA-4-0100
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rent
+    definition: Rent is the periodic payment a tenant makes to a landlord for the use of real property.
+    source: REP Ref. Agency
+    quoted_text: and documents received in the course of the agency — earnest money, rents, security
+      deposits, keys, documents.
+    related_terms: []
+    items:
+      - CA-4-0102
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: report
+    definition: A report is a signed written document that presents findings, opinions, and conclusions
+      about a property.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: a signed written report with findings, opinions, and conclusions
+    related_terms: []
+    items:
+      - CA-4-0136
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: request
+    definition: A request is an act of asking for something, such as asking a regulator to make records
+      available.
+    source: REP Ref. Brokerage Practice
+    quoted_text: to make them available to the regulator on request.
+    related_terms: []
+    items:
+      - CA-4-0103
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rescission
+    definition: Rescission is the cancellation of a contract and restoration of the parties to their
+      pre‑contract positions, available for material breach, fraud, misrepresentation, mutual
+      mistake, or similar defects.
+    source: REP Ref. Contracts
+    quoted_text: Rescission is available for material breach, fraud, misrepresentation, mutual mistake,
+      and similar defects in formation.
+    related_terms: []
+    items:
+      - CA-4-0152
+      - CA-4-0153
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: retention
+    definition: The required period—three years—during which a broker must keep trust records and
+      related documents from real estate transactions.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: A licensed real estate broker shall retain for three years copies of all listings,
+      deposit receipts, canceled checks, trust records, and other documents executed by the broker
+      or obtained by the broker in connection with any transactions for which a real estate broker
+      license is required.
+    related_terms: []
+    items:
+      - CA-4-0130
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: senior citizen
+    definition: A senior citizen is an individual who is 65 years of age or older.
+    source: Cal. Civ. Code §§ 1688–1693
+    quoted_text: “Senior citizen” means an individual who is 65 years of age or older.
+    related_terms: []
+    items:
+      - CA-4-0152
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single-family
+    definition: A residential property designed for occupancy by one family, typically a detached house.
+    source: REP Ref. Financing & Closing
+    quoted_text: for a single-family principal residence
+    related_terms: []
+    items:
+      - CA-4-0120
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: special agent
     definition: A special agent is authorized to perform one specific act or transaction and usually
@@ -356,7 +1172,58 @@ entries:
     related_terms: []
     items:
       - CA-4-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: statute of frauds
+    definition: The Statute of Frauds requires certain contracts, such as leases longer than one year,
+      to be in writing to be enforceable.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: Leases for more than one year generally must be in writing under the Statute of Frauds;
+      the threshold varies by state.
+    related_terms: []
+    items:
+      - CA-4-0141
+      - CA-4-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: supervised financial organization
+    definition: A supervised financial organization is a financial entity regulated by the state that
+      must provide translated disclosures to consumers in the language of their negotiated contract.
+    source: Cal. Civ. Code §§ 1619–1633
+    quoted_text: Provision by a supervised financial organization of a translation of the disclosures
+      required by Regulation M or Regulation Z
+    related_terms: []
+    items:
+      - CA-4-0156
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: surplus funds
+    definition: Surplus funds are the remaining proceeds from a foreclosure sale after paying off liens,
+      which belong to the property owner.
+    source: Cal. Civ. Code §§ 2920–2944.10
+    quoted_text: to claim the surplus funds from a foreclosure sale of the owner's residence before 90
+      days after the trustee's deed has been recorded
+    related_terms: []
+    items:
+      - CA-4-0107
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenants
+    definition: Tenants are individuals or entities that occupy real property under a lease agreement
+      and pay rent to the landlord.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The manager prepares leases on approved forms (see REP Ref. Contracts § 12 for lease
+      types and leasehold estates), enforces them consistently, responds promptly to maintenance
+      requests, documents communications, and handles renewals and move-outs on a schedule.
+    related_terms: []
+    items:
+      - CA-4-0102
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: transfer
     definition: Transfer means the conveyance of title to real property from one party to another.
@@ -366,7 +1233,57 @@ entries:
     related_terms: []
     items:
       - CA-4-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trust records
+    definition: Documents such as deposit receipts and canceled checks that a broker must retain in
+      connection with trust accounts for real estate transactions.
+    source: Cal. Bus. & Prof. Code §§ 10130–10171.5
+    quoted_text: copies of all listings, deposit receipts, canceled checks, trust records, and other
+      documents executed by the broker or obtained by the broker
+    related_terms: []
+    items:
+      - CA-4-0130
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trustee’s deed
+    definition: A trustee’s deed is the document that transfers legal title to the buyer after a
+      trustee’s sale (foreclosure) when the loan is not paid.
+    source: Cal. Civ. Code §§ 2920–2944.10
+    quoted_text: If a trustee’s deed upon sale has not been recorded, a borrower may bring an action for
+      injunctive relief
+    related_terms: []
+    items:
+      - CA-4-0107
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unpaid balance
+    definition: The unpaid balance is the amount of loan principal still owed, which a lender can demand
+      all at once if the borrower defaults.
+    source: REP Ref. Financing & Closing
+    quoted_text: "The acceleration clause lets the lender declare the entire unpaid balance due at once
+      upon a defined default: missed payments, unpaid taxes, lapsed insurance, or an unauthorized
+      transfer."
+    related_terms: []
+    items:
+      - CA-4-0116
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: valuable consideration
+    definition: Valuable consideration is something of worth given in exchange for property,
+      distinguishing a sale from a gift.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A statement of consideration, often nominal ("ten dollars and other good and valuable
+      consideration"); a gift deed may recite "love and affection".
+    related_terms: []
+    items:
+      - CA-4-0112
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: valuation
     definition: Valuation is the process of estimating the value of real property, covering value
@@ -380,7 +1297,31 @@ entries:
     related_terms: []
     items:
       - CA-4-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: vendor
+    definition: The seller in a land contract who holds legal title until the buyer pays the purchase
+      price, after which the vendor delivers the deed.
+    source: REP Ref. Contracts
+    quoted_text: the seller (vendor), who retains legal title until the price (or an agreed portion) is
+      paid, at which point the vendor delivers a deed.
+    related_terms: []
+    items:
+      - CA-4-0120
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: waiver
+    definition: A waiver is the relinquishment of a right, such as when a party fails to request a
+      hearing within the required time, thereby waiving that right.
+    source: Cal. Bus. & Prof. Code §§ 10050–10088
+    quoted_text: the failure to request a hearing shall constitute a waiver of the right to a hearing
+    related_terms: []
+    items:
+      - CA-4-0154
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: writing
     definition: Writing is a written document that states the terms of an agreement, such as a purchase
@@ -390,5 +1331,17 @@ entries:
     related_terms: []
     items:
       - CA-4-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written consent
+    definition: Written consent is the informed, written agreement of both parties required before a
+      licensee can act as a dual agent.
+    source: REP Ref. Agency
+    quoted_text: dual agency is permitted only with the informed written consent of both parties
+    related_terms: []
+    items:
+      - CA-4-0069
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

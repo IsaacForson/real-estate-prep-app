@@ -1,6 +1,22 @@
 bank: state_NM
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: account
+    definition: An account (specifically a trust or escrow account) is where a broker holds earnest
+      money separately from the brokerage's funds, must deposit it as state law requires, and may
+      use it only as the contract or parties direct.
+    source: REP Ref. Contracts
+    quoted_text: A broker who holds earnest money must deposit it in a trust (escrow) account within the
+      time state law prescribes, may not mix it with the brokerage's own operating funds
+      (commingling), and may not use it for any purpose other than as the contract and the parties
+      direct
+    related_terms: []
+    items:
+      - NM-1-0021
+      - NM-1-0091
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: advertising
     definition: Advertising means promoting or publicizing real estate properties for sale or lease,
       such as placing ads for vacation rentals.
@@ -10,7 +26,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: affiliation
     definition: Affiliation refers to the relationship where a qualifying broker is responsible for all
@@ -23,7 +40,20 @@ entries:
     items:
       - NM-1-0001
       - NM-1-0005
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: appointment
+    definition: Appointment is the act of appointing members to the New Mexico Real Estate Commission by
+      the governor.
+    source: N.M. Stat. Ann. § 61-29
+    quoted_text: The commission shall be appointed by the governor and shall consist of five members
+    related_terms: []
+    items:
+      - NM-1-0036
+      - NM-1-0037
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: associate broker
     definition: An associate broker (or salesperson) may perform brokerage acts only under a sponsoring
@@ -36,7 +66,50 @@ entries:
     items:
       - NM-1-0005
       - NM-1-0006
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: attorney general
+    definition: The attorney general’s office receives referrals from the commission for violations, may
+      issue a notice of contemplated action, and can pursue settlements or enforcement actions.
+    source: 16.61 NMAC
+    quoted_text: the commission may refer the complaint to the attorney general’s office and request
+      that a notice of contemplated action (NCA) be issued to the respondent, or offer the
+      respondent a pre-NCA settlement
+    related_terms: []
+    items:
+      - NM-1-0030
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker in charge
+    definition: A broker in charge is a New Mexico licensed real estate broker qualified to be a
+      qualifying broker who has been designated in writing by the qualifying broker to assume
+      responsibility for the brokerage when the qualifying broker cannot supervise.
+    source: 16.61 NMAC
+    quoted_text: "J.  “Broker in charge”:  a New Mexico licensed real estate broker qualified to be a
+      qualifying broker who has been designated in writing by the qualifying broker to assume
+      responsibility for the brokerage during a period of time when supervision by the qualifying
+      broker is not possible."
+    related_terms: []
+    items:
+      - NM-1-0064
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage
+    definition: A real estate firm that engages in brokerage activities, including engagement
+      agreements, compensation, supervision, and property management.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the operation of a real estate brokerage — scope of practice, engagement agreements,
+      compensation, antitrust in practice, employment status, supervision, advertising, risk
+      management, trust funds, and property management.
+    related_terms: []
+    items:
+      - NM-1-0097
+      - NM-1-0101
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: brokerage relationships
     definition: A brokerage relationship is a written agreement between a buyer, seller, landlord or
@@ -50,7 +123,23 @@ entries:
     related_terms: []
     items:
       - NM-1-0012
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage trust account
+    definition: A brokerage trust account is an account at an acceptable financial institution
+      established by the qualifying broker to hold money belonging to others received during a real
+      estate sales transaction.
+    source: 16.61 NMAC
+    quoted_text: "H. “Brokerage trust account”:  an account at an acceptable financial institution
+      established by the qualifying broker for the purpose of holding money belonging to others
+      received during a real estate sales transaction."
+    related_terms: []
+    items:
+      - NM-1-0066
+      - NM-1-0075
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: client
     definition: A client is a person who has entered into an express written agreement with a brokerage
@@ -61,7 +150,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0011
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commingling
     definition: Commingling is mixing client trust funds with the brokerage's own operating funds.
@@ -71,7 +161,36 @@ entries:
     related_terms: []
     items:
       - NM-1-0017
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: custodial
+    definition: Custodial refers to an account where a qualifying broker holds deposit or other money
+      received in a real estate transaction until the transaction is completed or terminated.
+    source: N.M. Stat. Ann. § 61-29
+    quoted_text: any deposit money or other money received by the qualifying broker in a real estate
+      transaction in a custodial, trust or escrow account, maintained by the qualifying broker in a
+      bank or savings and loan institution
+    related_terms: []
+    items:
+      - NM-1-0091
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: custodial account
+    definition: A custodial account is an account at an acceptable financial institution established by
+      a qualifying broker to hold an owner's money, kept in the owner's name under the broker's
+      control and possibly interest-bearing.
+    source: 16.61 NMAC
+    quoted_text: "“Custodial account”: an account at an acceptable financial institution established by
+      the qualifying broker for the purpose of holding money of an owner."
+    related_terms: []
+    items:
+      - NM-1-0075
+      - NM-1-0094
+      - NM-1-0103
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: customer
     definition: A customer is a person who uses real estate services without entering into an express
@@ -82,7 +201,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: definitions
     definition: Definitions refer to the section that explains key terms such as agency, agent, and
@@ -103,7 +223,24 @@ entries:
     items:
       - NM-1-0003
       - NM-1-0011
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: deposit
+    definition: To deposit earnest money means to place it in a trust (escrow) account within the time
+      state law prescribes, without mixing it with the brokerage’s operating funds, and to use it
+      only as the contract or parties direct.
+    source: REP Ref. Contracts
+    quoted_text: A broker who holds earnest money must deposit it in a trust (escrow) account within the
+      time state law prescribes, may not mix it with the brokerage's own operating funds
+      (commingling), and may not use it for any purpose other than as the contract and the parties
+      direct
+    related_terms: []
+    items:
+      - NM-1-0022
+      - NM-1-0084
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deposits
     definition: Deposits refer to placing earnest money or other trust funds into a designated trust or
@@ -115,7 +252,53 @@ entries:
     related_terms: []
     items:
       - NM-1-0016
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated agency
+    definition: Designated agency is a brokerage policy where the qualifying broker discloses that each
+      client is represented exclusively by a specific broker via a written agreement, making that
+      broker the client's only representative within the firm.
+    source: 16.61 NMAC
+    quoted_text: "“Designated agency”: a policy chosen by the qualifying broker of a brokerage that
+      discloses to a client of the brokerage that the broker representing them as an agent by means
+      of an express written agency agreement is their only representative in the brokerage."
+    related_terms: []
+    items:
+      - NM-1-0076
+      - NM-1-0088
+      - NM-1-0090
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated agent
+    definition: A designated agent is a broker who, by written designation from the qualifying broker,
+      acts as the exclusive agent for a particular client in a real estate transaction.
+    source: 16.61 NMAC
+    quoted_text: "R. “Designated agent”: a broker who is designated in writing by their qualifying
+      broker to represent a client of the brokerage as their exclusive agent in a real estate
+      transaction."
+    related_terms: []
+    items:
+      - NM-1-0076
+      - NM-1-0088
+      - NM-1-0090
+      - NM-1-0093
+      - NM-1-0096
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designation
+    definition: Designation refers to the act of naming or appointing a qualifying broker for a real
+      estate brokerage, as outlined in the rules governing the designation of a qualifying broker.
+    source: 16.61 NMAC
+    quoted_text: "PART 6: DESIGNATION OF A QUALIFYING BROKER TO QUALIFY A REAL ESTATE BROKERAGE"
+    related_terms: []
+    items:
+      - NM-1-0021
+      - NM-1-0064
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: discipline
     definition: Discipline refers to sanctions imposed by regulators for license law violations, such as
@@ -127,7 +310,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0018
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: document execution
     definition: All real estate transaction documents must be documented and signed by all parties to
@@ -137,7 +321,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0013
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: dual agency
     definition: Dual agency is an express written agreement that modifies existing exclusive agency
@@ -150,7 +335,35 @@ entries:
     related_terms: []
     items:
       - NM-1-0020
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: earnest
+    definition: Earnest money is a good-faith deposit the buyer delivers with an offer to show serious
+      intent; it is not required to form a contract and is not the consideration for the contract.
+    source: REP Ref. Contracts
+    quoted_text: Earnest money (a good-faith deposit) is a sum the buyer delivers with an offer to show
+      serious intent. It is not required to form a contract and is not the consideration for the
+      contract (the mutual promises are; § 2.4).
+    related_terms: []
+    items:
+      - NM-1-0022
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: express written agreement
+    definition: A written agreement that expressly creates an agency relationship between a person and a
+      brokerage, authorizing the brokerage to act as the person's agent per the scope granted.
+    source: 16.61 NMAC
+    quoted_text: the fiduciary relationship created solely by the express written agency agreement
+      between a person and a brokerage
+    related_terms: []
+    items:
+      - NM-1-0097
+      - NM-1-0101
+      - NM-1-0102
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: facilitator
     definition: A facilitator is a broker who acts as a neutral intermediary in a dual agency
@@ -162,7 +375,30 @@ entries:
     related_terms: []
     items:
       - NM-1-0020
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: felony
+    definition: A felony is a crime that is punishable by penalty, such as monopolizing trade being
+      classified as a felony.
+    source: 15 U.S.C. §§ 1–7 (Sherman Act)
+    quoted_text: Monopolizing trade a felony; penalty.
+    related_terms: []
+    items:
+      - NM-1-0031
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: governor
+    definition: The governor is the state official who appoints the members of the New Mexico Real
+      Estate Commission.
+    source: N.M. Stat. Ann. § 61-29
+    quoted_text: The commission shall be appointed by the governor
+    related_terms: []
+    items:
+      - NM-1-0037
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: guilty knowledge
     definition: Guilty knowledge refers to the qualifying broker's actual awareness or conscious
@@ -176,7 +412,19 @@ entries:
     items:
       - NM-1-0009
       - NM-1-0019
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: license fee
+    definition: The license fee is the triennial fee prescribed by the commission for issuing a
+      qualifying broker’s license.
+    source: N.M. Stat. Ann. § 61-29
+    quoted_text: The triennial license fee prescribed by the commission.
+    related_terms: []
+    items:
+      - NM-1-0039
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license revocation
     definition: License revocation is the cancellation of a broker's license, which can result from
@@ -188,7 +436,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0019
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensure
     definition: Licensure is the process of obtaining a real estate license, which requires applicants
@@ -200,7 +449,20 @@ entries:
     related_terms: []
     items:
       - NM-1-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: points
+    definition: One point equals 1% of the loan amount, used to calculate fees based on the loan
+      principal, not the purchase price.
+    source: REP Ref. Real Estate Math
+    quoted_text: One point = 1% of the loan amount, never of the price. Dollar cost = loan × points ÷
+      100. Points = dollar cost ÷ loan × 100.
+    related_terms: []
+    items:
+      - NM-1-0070
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: qualifying broker
     definition: A qualifying broker is a licensed real estate broker who has qualified a proprietorship,
@@ -217,7 +479,8 @@ entries:
       - NM-1-0001
       - NM-1-0002
       - NM-1-0009
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: rebate
     definition: A rebate is paying or receiving part of a commission to or from an unlicensed person
@@ -229,7 +492,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0018
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reconciliation
     definition: Trust account reconciliation is the process of matching a brokerage's trust account
@@ -240,7 +504,20 @@ entries:
     related_terms: []
     items:
       - NM-1-0015
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: residency
+    definition: Residency means having lived in the state for three consecutive years immediately prior
+      to appointment to the New Mexico Real Estate Commission.
+    source: N.M. Stat. Ann. § 61-29
+    quoted_text: have been residents of the state for three consecutive years immediately prior to their
+      appointment
+    related_terms: []
+    items:
+      - NM-1-0036
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: responsibilities
     definition: Responsibilities refer to the duties specific to a qualifying broker as defined by the
@@ -251,7 +528,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0006
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: trade name
     definition: A trade name is the registered business name under which a broker operates, which must
@@ -264,7 +542,8 @@ entries:
     related_terms: []
     items:
       - NM-1-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: transaction broker
     definition: A transaction broker is a qualifying broker, associate broker, or brokerage that
@@ -277,7 +556,35 @@ entries:
     related_terms: []
     items:
       - NM-1-0012
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: transactional experience
+    definition: Qualifying transactional experience requires documented experience totaling 100 points,
+      with at least one transaction completed in each of the four years before the application.
+    source: 16.61 NMAC
+    quoted_text: (6) Documented qualifying transactional experience totaling 100 points, with at least
+      one transaction accomplished during each of the four years prior to filing of the application.
+    related_terms: []
+    items:
+      - NM-1-0070
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trust
+    definition: A trust account is an account where a broker holds a client's earnest money separately
+      from the brokerage's own funds, must deposit it as required by state law, and may use it only
+      as directed by the contract or parties.
+    source: REP Ref. Contracts
+    quoted_text: A broker who holds earnest money must deposit it in a trust (escrow) account within the
+      time state law prescribes, may not mix it with the brokerage's own operating funds
+      (commingling), and may not use it for any purpose other than as the contract and the parties
+      direct
+    related_terms: []
+    items:
+      - NM-1-0021
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: trust account
     definition: A trust account is a designated account where a broker holds clients' money—such as
@@ -293,4 +600,30 @@ entries:
       - NM-1-0016
       - NM-1-0017
     status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written
+    definition: A contract or agreement that is in writing, signed by the parties, and meets state
+      requirements such as having a definite expiration date.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require listings to be written, signed by the seller, with a definite
+      expiration date, and prohibit automatic extension clauses.
+    related_terms: []
+    items:
+      - NM-1-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written agreement
+    definition: A written agreement is a contract between parties that sets terms such as deposit
+      deadlines or how deficiencies are handled, and which must be followed to resolve disputes.
+    source: REP Ref. Contracts
+    quoted_text: When buyer and seller disagree about who is entitled to the deposit after a failed
+      transaction, a broker generally may not simply decide; typical state procedures involve
+      holding the funds pending a written agreement of the parties, mediation, a court order, or a
+      statutory interpleader process.
+    related_terms: []
+    items:
+      - NM-1-0084
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

@@ -1,0 +1,50 @@
+id: TX-1101-0096
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder represents the seller in a residential transaction. The buyer offers to pay
+  the license holder a referral fee for bringing the buyer to the transaction. Before accepting the
+  fee, what must the license holder do under TREC rule?
+options:
+  - Accept the fee without disclosure because the buyer is not the license holder's client.
+  - Disclose the referral fee to both the buyer and the seller and obtain consent from both parties.
+  - Disclose the referral fee to the buyer and obtain the buyer's consent before accepting it.
+  - Disclose the referral fee to the seller and obtain the seller's consent before accepting it.
+key: D
+explanation: Under §535.148(a), a license holder may not receive a commission, rebate, or fee from a
+  person other than the person they represent without first disclosing to their client and obtaining
+  the client's consent. Here the license holder represents the seller, so the seller is the client
+  and must be consulted. Accepting the fee without disclosure because the buyer is not the license
+  holder's client is incorrect. Disclosing the referral fee to the seller and obtaining the seller's
+  consent before accepting it is correct; adding a requirement to also obtain the buyer's consent is
+  unnecessary.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.148"
+  url: null
+  quoted_text: A license holder may not receive a commission, rebate, or fee in a transaction from a
+    person other than the person the license holder represents without first disclosing to the
+    license holder's client that the license holder intends to receive the commission, rebate, or
+    fee, and obtaining the consent of the license holder's client.
+  secondary: []
+terms:
+  - commission
+  - client
+  - disclosure
+  - consent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

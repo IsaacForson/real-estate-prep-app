@@ -7,6 +7,15 @@
 const auth = useAuth();
 const bootstrap = useBootstrap();
 const purchases = usePurchases();
+const route = useRoute();
+
+/** Client-only routes ship an empty document (nuxt.config routeRules). Hold a splash until the session is ready. */
+const booting = computed(() => {
+  const path = route.path;
+  const clientRoute = path === "/account" || path === "/welcome" || path === "/signin"
+    || path.startsWith("/app") || path.startsWith("/admin") || path.startsWith("/study") || path.startsWith("/help");
+  return clientRoute && !auth.ready.value;
+});
 
 onMounted(() => { void bootstrap.start(); });
 
@@ -22,4 +31,7 @@ watch(() => auth.user.value?.id, (id) => {
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <ClientOnly>
+    <BootScreen v-if="booting" />
+  </ClientOnly>
 </template>

@@ -1,6 +1,56 @@
 bank: state_AR
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: accounting
+    definition: Accounting for funds means keeping clients’ money separate, maintaining accurate
+      records, and turning over or accounting for all money received.
+    source: REP Ref. Agency
+    quoted_text: A non-agent owes no fiduciary loyalty but is still bound by statutory duties that
+      commonly include honesty, disclosure of known material facts about the property, accounting
+      for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - AR-42-0120
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: address
+    definition: A licensee's mailing address that must be updated with the Arkansas Real Estate
+      Commission when it changes.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: 17-42-310. Change of name or address — Lost license or card.
+    related_terms: []
+    items:
+      - AR-42-0079
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: advertising
+    definition: Advertising by a licensee must identify the brokerage by its licensed name so the public
+      knows whom the licensee represents.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require that every advertisement placed by a licensee — print, sign,
+      website, social media post, email — identify the brokerage by its licensed name
+    related_terms: []
+    items:
+      - AR-42-0096
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agency
+    definition: An agency is a relationship where an agent is authorized to act on behalf of a
+      principal, subject to the principal's control, and owes fiduciary duties of trust and loyalty.
+    source: REP Ref. Agency
+    quoted_text: "**Agency** is a relationship in which one person (the **agent**) is authorized to act
+      on behalf of another (the **principal**) in dealings with third parties, and agrees to do so
+      subject to the principal's control. The agent owes the principal **fiduciary** duties — duties
+      of the highest trust and loyalty — because the agent is handling the principal's affairs."
+    related_terms: []
+    items:
+      - AR-42-0130
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: agency relationship
     definition: An agency relationship is a fiduciary relationship where a licensee acts on behalf of a
       client, which may be created expressly or impliedly through the licensee's conduct.
@@ -9,7 +59,34 @@ entries:
     related_terms: []
     items:
       - AR-42-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agent
+    definition: An agent is a person authorized to act on behalf of a principal, subject to the
+      principal's control, and owes fiduciary duties of trust and loyalty.
+    source: REP Ref. Agency
+    quoted_text: "**Agency** is a relationship in which one person (the **agent**) is authorized to act
+      on behalf of another (the **principal**) in dealings with third parties, and agrees to do so
+      subject to the principal's control. The agent owes the principal **fiduciary** duties — duties
+      of the highest trust and loyalty — because the agent is handling the principal's affairs."
+    related_terms: []
+    items:
+      - AR-42-0133
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agreement
+    definition: An agreement is a legally enforceable promise between parties to do or not do something
+      in exchange for consideration.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act in exchange for consideration.
+    related_terms: []
+    items:
+      - AR-42-0083
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: auction
     definition: Participating in a real estate auction means performing any act for compensation or
@@ -20,7 +97,44 @@ entries:
     related_terms: []
     items:
       - AR-42-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: branch
+    definition: A branch office is a principal broker's office other than his or her principal place of
+      business.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: “Branch office” means a principal broker's office other than his or her principal place
+      of business;
+    related_terms: []
+    items:
+      - AR-42-0094
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker
+    definition: The broker is the agent who acts on behalf of a client (seller, buyer, landlord, or
+      tenant) in real estate transactions.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - AR-42-0070
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: buyer
+    definition: A buyer is a client who engages a brokerage to represent them in purchasing property,
+      making the buyer the principal in a buyer agency relationship.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the client (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage).
+    related_terms: []
+    items:
+      - AR-42-0133
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: buyer's agent
     definition: A buyer's agent is a licensee who represents the buyer in a transaction, owes fiduciary
@@ -31,7 +145,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: cancellation
     definition: Cancellation of a contract means ending the agreement and returning both parties to
@@ -42,7 +157,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0038
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: citation
     definition: A citation is a formal notice issued by the executive director that imposes a monetary
@@ -55,7 +171,21 @@ entries:
     items:
       - AR-42-0024
       - AR-42-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: client
+    definition: A client is the principal who engages a brokerage to represent them in a real estate
+      transaction, such as a seller, buyer, landlord, or tenant.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the client (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - AR-42-0134
+      - AR-42-0135
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: The commission is the Arkansas Real Estate Commission, which establishes procedures for
@@ -70,7 +200,47 @@ entries:
       - AR-42-0033
       - AR-42-0037
       - AR-42-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: confidential
+    definition: Confidential refers to information that must not be disclosed, such as a seller's bottom
+      line or a buyer's maximum price.
+    source: REP Ref. Agency
+    quoted_text: may not disclose confidential information of one party to the other (for example, the
+      seller's bottom line or the buyer's maximum).
+    related_terms: []
+    items:
+      - AR-42-0132
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: confidential information
+    definition: Confidential information refers to private details such as a seller’s bottom line or a
+      buyer’s maximum price that an agent must not disclose to the other party.
+    source: REP Ref. Agency
+    quoted_text: the agent may not advocate on price or terms for either side, and may not disclose
+      confidential information of one party to the other (for example, the seller's bottom line or
+      the buyer's maximum).
+    related_terms: []
+    items:
+      - AR-42-0118
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: confidentiality
+    definition: Confidentiality is the duty to keep certain information private, as required of
+      non‑agents who must not disclose confidential information they obtain.
+    source: REP Ref. Agency
+    quoted_text: A non-agent owes no fiduciary loyalty but is still bound by statutory duties that
+      commonly include honesty, disclosure of known material facts about the property, accounting
+      for funds, reasonable skill and care, and confidentiality of certain information.
+    related_terms: []
+    items:
+      - AR-42-0118
+      - AR-42-0134
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: contract
     definition: A contract is an agreement, such as a real estate purchase agreement, that is governed
@@ -81,7 +251,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0038
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: conviction
     definition: A conviction is a legal determination that a person is guilty of a crime.
@@ -90,7 +261,21 @@ entries:
     related_terms: []
     items:
       - AR-42-0037
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: counteroffer
+    definition: A counteroffer is a response that changes any term of an original offer, operates as a
+      rejection of that offer, and creates a new offer in the opposite direction.
+    source: REP Ref. Contracts
+    quoted_text: Any change to price, closing date, personal property included, contingencies, or other
+      terms is not an acceptance; it is a counteroffer, which operates as a rejection of the
+      original offer and creates a new offer running the other way.
+    related_terms: []
+    items:
+      - AR-42-0133
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: criminal background check
     definition: A criminal background check is a review of an applicant's criminal history conducted
@@ -100,7 +285,21 @@ entries:
     related_terms: []
     items:
       - AR-42-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: director
+    definition: The director is the executive officer of the Arkansas Real Estate Commission responsible
+      for preparing meeting agendas, fixing salaries, and carrying out the duties outlined in the
+      commission's rules.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: SECTION 2. DIRECTOR DUTIES, AUTHORITY AND RESPONSIBILITY. 2.1 Director duties,
+      authority, and responsibility. 7
+    related_terms: []
+    items:
+      - AR-42-0054
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: disclosure
     definition: Disclosure is the act of making information known, such as revealing an agency
@@ -110,7 +309,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: dual agency
     definition: Dual agency occurs when a real estate licensee represents both the buyer and the seller
@@ -122,7 +322,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: duty
     definition: A duty is an obligation a licensee owes to a client, such as the duty to present all
@@ -132,7 +333,46 @@ entries:
     related_terms: []
     items:
       - AR-42-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: earnest money
+    definition: Earnest money is a buyer’s deposit to show good faith that the agent must keep separate
+      from personal funds and account for.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - AR-42-0120
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: evidence
+    definition: Evidence is something that serves as proof of a fact or obligation, such as a promissory
+      note being evidence of a debt.
+    source: REP Ref. Financing & Closing
+    quoted_text: The promissory note is the borrower's written, unconditional promise to repay a
+      definite sum with interest on stated terms. It is the evidence of the debt.
+    related_terms: []
+    items:
+      - AR-42-0114
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: expiration
+    definition: Expiration is the end of the term stated in an agreement, after which the agreement no
+      longer applies.
+    source: REP Ref. Agency
+    quoted_text: "- **Expiration** of the term stated in the agreement. Most states require listing and
+      buyer agreements to have a definite termination date; automatic renewal clauses are prohibited
+      in many states."
+    related_terms: []
+    items:
+      - AR-42-0083
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: expired
     definition: An expired license is a real estate license that is no longer valid because it has not
@@ -143,7 +383,43 @@ entries:
     related_terms: []
     items:
       - AR-42-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fees
+    definition: The fees and mileage associated with serving a subpoena and compensating witnesses are
+      the responsibility of the party who requests the subpoena.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: (a) Requests for subpoenas shall be in writing. The person requesting the subpoena has
+      the burden of obtaining and serving the subpoena.
+    related_terms: []
+    items:
+      - AR-42-0053
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fund
+    definition: The Real Estate Recovery Fund is a fund referenced in the Arkansas Real Estate License
+      Law concerning applicability and disciplinary actions.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: (e) Applicability – Real Estate Recovery Fund – Disciplinary Actions. 22
+    related_terms: []
+    items:
+      - AR-42-0049
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lessor
+    definition: A lessor is the landlord who retains a reversionary interest in leased property, i.e.,
+      the right to possession when the lease ends.
+    source: REP Ref. Contracts
+    quoted_text: The landlord (lessor) retains a reversionary interest (the right to possession when the
+      lease ends).
+    related_terms: []
+    items:
+      - AR-42-0130
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license
     definition: A real estate license authorizes the holder, for compensation and on behalf of others,
@@ -157,7 +433,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensee
     definition: A licensee is an individual who shows property to prospective buyers.
@@ -166,7 +443,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensing board
     definition: The Auctioneer's Licensing Board licenses licensees who participate in real estate auctions.
@@ -176,7 +454,105 @@ entries:
     related_terms: []
     items:
       - AR-42-0022
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: material facts
+    definition: A material fact is any fact that a reasonable person would consider important when
+      deciding to buy, sell, or lease a property or its terms.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: A material fact is any fact a reasonable person would consider important in deciding
+      whether to buy, sell, or lease a property, or on what terms.
+    related_terms: []
+    items:
+      - AR-42-0090
+      - AR-42-0135
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: misrepresentation
+    definition: Misrepresentation is a false statement of fact that another party relies on, which can
+      be intentional, negligent, or innocent.
+    source: REP Ref. Agency
+    quoted_text: A **misrepresentation** is a false statement of fact on which another party relies. It
+      may be **intentional** (fraud), **negligent** (the licensee should have known better or failed
+      to check), or **innocent**.
+    related_terms: []
+    items:
+      - AR-42-0090
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: name
+    definition: The name that must be disclosed in advertising is the brokerage's licensed name.
+    source: REP Ref. Brokerage Practice
+    quoted_text: identify the brokerage by its licensed name
+    related_terms: []
+    items:
+      - AR-42-0096
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: oath
+    definition: An oath is a solemn affirmation or promise that a statement is true, as required for a
+      complaint against a licensee to be signed under oath.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: Complaints against licensees or persons allegedly engaged in unlicensed real estate
+      activity must be in writing, signed by the complainant under oath, dated and filed with the
+      director.
+    related_terms: []
+    items:
+      - AR-42-0054
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: occupant
+    definition: An occupant is a person who rents a property on a nightly basis.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: “Occupant” means a person who rents a property on a nightly basis.
+    related_terms: []
+    items:
+      - AR-42-0097
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: offer
+    definition: An offer is a buyer’s written proposal to purchase property that a listing broker may
+      transmit but cannot accept unless specially authorized.
+    source: REP Ref. Agency
+    quoted_text: "A listing broker is a special agent: the broker is engaged to find a ready, willing,
+      and able buyer, but cannot sign a purchase agreement for the seller or accept an offer on the
+      seller's behalf unless separately authorized."
+    related_terms: []
+    items:
+      - AR-42-0119
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: oral
+    definition: An oral agreement is a spoken express agreement in which a principal authorizes an agent
+      to act.
+    source: REP Ref. Agency
+    quoted_text: Agency is most commonly created by an express agreement, written or oral, in which the
+      principal authorizes the agent to act.
+    related_terms: []
+    items:
+      - AR-42-0114
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: pecuniary interest
+    definition: A pecuniary interest is a financial or monetary stake that a person has in a business or
+      entity that could lead to profit, which must be disclosed to the owner when providing billable
+      services.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: the property manager's use of any employees or a business in which the property manager
+      or any persons licensed under him has a pecuniary interest
+    related_terms: []
+    items:
+      - AR-42-0099
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: penalty
     definition: A penalty is a fee charged for early payoff of a loan, often calculated as a percentage
@@ -188,7 +564,21 @@ entries:
     items:
       - AR-42-0024
       - AR-42-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: presentation
+    definition: A presentation is a sales presentation, such as a meeting where a time‑share plan or
+      property is shown to prospective buyers.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: (2) “Acquisition agent” means a person that by telephone, inducement, solicitation, or
+      otherwise in the ordinary course of business directly tries to encourage a person in this
+      state to attend a sales presentation for a time-share plan;
+    related_terms: []
+    items:
+      - AR-42-0119
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: principal broker
     definition: A principal broker is a licensed broker who employs or supervises associate brokers.
@@ -198,7 +588,21 @@ entries:
     related_terms: []
     items:
       - AR-42-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: property management
+    definition: Property management is the function of managing real estate properties as part of a
+      brokerage's scope of practice.
+    source: REP Ref. Brokerage Practice
+    quoted_text: the operation of a real estate brokerage — scope of practice, engagement agreements,
+      compensation, antitrust in practice, employment status, supervision, advertising, risk
+      management, trust funds, and property management.
+    related_terms: []
+    items:
+      - AR-42-0093
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: publication
     definition: A publication is an official document issued by an authority that provides information,
@@ -208,7 +612,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: report
     definition: A written report of a conviction or violation that a licensee must submit to the Commission.
@@ -219,7 +624,8 @@ entries:
     items:
       - AR-42-0033
       - AR-42-0037
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: response
     definition: In real‑estate licensing contexts, a response is the act of replying to a citation,
@@ -229,7 +635,8 @@ entries:
     related_terms: []
     items:
       - AR-42-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: groq/openai/gpt-oss-120b
   - term: sanction
     definition: A sanction is a disciplinary penalty imposed by the commission for violations.
@@ -239,7 +646,70 @@ entries:
     related_terms: []
     items:
       - AR-42-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: seller
+    definition: A seller is the party who signs a listing agreement with a brokerage to sell property,
+      thereby creating a seller agency relationship.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage, creating seller agency (REP Ref. Agency § 2.2).
+    related_terms: []
+    items:
+      - AR-42-0130
+      - AR-42-0139
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: state board
+    definition: The State Board of Finance is the body that must be consulted for advice before the
+      Arkansas Real Estate Commission invests the Real Estate Recovery Fund's assets.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: (b) The assets of the fund may be invested and reinvested as the commission may
+      determine, with the advice of the State Board of Finance.
+    related_terms: []
+    items:
+      - AR-42-0062
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: steps
+    definition: Steps are the actions a party must take—such as searching public records and inspecting
+      the property—to uncover or address title issues before closing.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A buyer who neither searches the records nor inspects the property is bound by what
+      those steps would have shown.
+    related_terms: []
+    items:
+      - AR-42-0139
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: subpoena
+    definition: A subpoena is a legal order issued by the Arkansas Real Estate Commission to compel a
+      witness to produce documents or testify in connection with an investigation or hearing, and
+      its service follows the rules for civil case subpoenas in the state circuit courts.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: (c)(1) Service of a subpoena shall be as provided by law for the service of subpoenas
+      in civil cases in the circuit courts of this state, and the fees
+    related_terms: []
+    items:
+      - AR-42-0053
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: subsequent work history
+    definition: Subsequent work history refers to the record of an applicant's employment and job
+      performance after a criminal offense, which the Commission may consider when evaluating a
+      waiver request.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: (D) Subsequent work history;
+    related_terms: []
+    items:
+      - AR-42-0103
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: temporary license
     definition: Temporary license refers to the licensing provision covered under section 7.2 of the
@@ -249,7 +719,19 @@ entries:
     related_terms: []
     items:
       - AR-42-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenant
+    definition: A tenant is a person who rents a property on other than a nightly basis.
+    source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15)
+    quoted_text: “Tenant” means a person who rents a property on other than a nightly basis.
+    related_terms: []
+    items:
+      - AR-42-0093
+      - AR-42-0098
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: time-share
     definition: A time-share is a property interest regulated under Arkansas time-share law.
@@ -258,7 +740,20 @@ entries:
     related_terms: []
     items:
       - AR-42-0038
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: timely
+    definition: Timely means done without delay, promptly enough to satisfy state requirements for
+      informed consent.
+    source: REP Ref. Agency
+    quoted_text: Consent buried in a listing agreement signed months earlier may not satisfy state
+      requirements that consent be informed and timely; the state portion governs.
+    related_terms: []
+    items:
+      - AR-42-0132
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: timely manner
     definition: Timely manner means performing an action promptly and without unnecessary delay, taking
@@ -270,7 +765,21 @@ entries:
     related_terms: []
     items:
       - AR-42-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: valuable consideration
+    definition: Something of value — money, services, or other benefit — that is received or promised in
+      exchange for performing an act that requires a real estate license.
+    source: Ark. Code Ann. § 17-42-101 et seq.
+    quoted_text: Any person who directly or indirectly for another with the intention, or on the promise
+      of receiving any valuable consideration, offers, attempts, or agrees to perform any single act
+      described
+    related_terms: []
+    items:
+      - AR-42-0070
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: violation
     definition: A violation is a breach of the license law or commission regulations, such as
@@ -284,5 +793,31 @@ entries:
     items:
       - AR-42-0026
       - AR-42-0033
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: writing
+    definition: Writing means putting an agreement or disclosure into written form, which many states
+      require for a licensee to be entitled to a commission or to satisfy licensing law.
+    source: REP Ref. Agency
+    quoted_text: Many states require these to be in writing for the licensee to be entitled to a
+      commission or as a matter of license law
+    related_terms: []
+    items:
+      - AR-42-0114
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written agreement
+    definition: A written agreement is a contract in writing that is required for property management
+      activities, such as leasing, to authorize the manager to act on behalf of the owner.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Because the manager handles the owner's money and binds the owner to leases, most
+      states require a written agreement and treat management as brokerage activity requiring a
+      license.
+    related_terms: []
+    items:
+      - AR-42-0098
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

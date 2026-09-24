@@ -1,6 +1,57 @@
 bank: state_CO
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: accounting
+    definition: Accounting for trust funds requires that the reconciled trust or escrow bank account
+      cash balance equal the sum of individual ledger balances for each owner at any given time.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "1.61. Trust or Escrow Accounting Equation: The reconciled trust or escrow bank account
+      cash balance must equal the sum total of the individual ledger balance for each owner at any
+      given point in time."
+    related_terms: []
+    items:
+      - CO-2-0108
+      - CO-2-0139
+      - CO-2-0151
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: acknowledgment
+    definition: An acknowledgment is a signed confirmation that a person has received and understood a
+      disclosure, without creating any contractual obligation.
+    source: REP Ref. Agency
+    quoted_text: Some states use a mandatory state-prescribed form; some require a pamphlet describing
+      the forms of representation available in that state; some require only a signed
+      acknowledgment.
+    related_terms: []
+    items:
+      - CO-2-0101
+      - CO-2-0138
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: address
+    definition: The address is the commission's address that must be included on a receipt or contract
+      given to a prospective tenant.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: shall include the address and telephone number of the commission
+    related_terms: []
+    items:
+      - CO-2-0081
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: administrative fine
+    definition: An administrative fine is a monetary penalty imposed by the Colorado Real Estate
+      Commission for violations of licensing law.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: administrative fees that are in the nature of an administrative fine
+    related_terms: []
+    items:
+      - CO-2-0095
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: advisory opinion
     definition: A preliminary advisory opinion is a request to the Colorado Real Estate Commission for
       an assessment of how an applicant's past conduct or criminal history might affect a future
@@ -12,7 +63,59 @@ entries:
     related_terms: []
     items:
       - CO-2-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: affiliated business arrangement
+    definition: An affiliated business arrangement exists when a provider of settlement services has an
+      affiliate relationship or owns more than one percent of another settlement services provider.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: A provider of settlement services or an associate of a provider of settlement services
+      has either an affiliate relationship with or a direct beneficial ownership interest of more
+      than one percent in another provider of settlement services
+    related_terms: []
+    items:
+      - CO-2-0099
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agency
+    definition: Agency is a relationship where an agent (the broker) acts on behalf of a principal (the
+      client) subject to the principal's control and owes fiduciary duties of trust and loyalty.
+    source: REP Ref. Agency
+    quoted_text: The agent owes the principal **fiduciary** duties — duties of the highest trust and
+      loyalty — because the agent is handling the principal's affairs.
+    related_terms: []
+    items:
+      - CO-2-0161
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agent
+    definition: An agent is a person authorized to act on behalf of a principal (such as a buyer or
+      seller) in a real estate transaction and owes fiduciary duties of loyalty and trust to that
+      principal.
+    source: REP Ref. Agency
+    quoted_text: "**Agency** is a relationship in which one person (the **agent**) is authorized to act
+      on behalf of another (the **principal**) in dealings with third parties, and agrees to do so
+      subject to the principal's control."
+    related_terms: []
+    items:
+      - CO-2-0152
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: apartment
+    definition: An apartment is a residential unit that may be leased or rented as a private dwelling,
+      abode, or place of residence.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: including apartment housing that may be leased or rented as a private dwelling, abode,
+      or place of residence
+    related_terms: []
+    items:
+      - CO-2-0090
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: applicant
     definition: An applicant is a person seeking a real estate broker license who must submit
@@ -25,7 +128,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: arrest
     definition: An arrest is a record of being taken into custody that, when without a disposition,
@@ -35,7 +139,47 @@ entries:
     related_terms: []
     items:
       - CO-2-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: associate broker
+    definition: An associate broker is a licensed broker who must work under the supervision of an
+      employing broker and may only perform brokerage acts under that supervision.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "Associate Broker: A Broker who holds an Associate Broker level license and works under
+      the supervision of an Employing Broker."
+    related_terms: []
+    items:
+      - CO-2-0080
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: attorney
+    definition: An attorney is a lawyer licensed to practice law who may act on behalf of clients in
+      legal matters.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Owners dealing with their own property, attorneys acting within their practice,
+      court-appointed fiduciaries, and (in many states) resident managers performing limited leasing
+      tasks are common exemptions;
+    related_terms: []
+    items:
+      - CO-2-0063
+      - CO-2-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: attorney form
+    definition: An attorney form is a purchase agreement drafted by a licensed Colorado attorney for the
+      broker or brokerage firm, usable only when no commission‑approved form exists or is
+      appropriate.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: An “Attorney Form” is a form drafted by a licensed Colorado attorney representing the
+      Broker, the Employing Broker, or the Brokerage Firm.
+    related_terms: []
+    items:
+      - CO-2-0086
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: attorney-in-fact
     definition: A person appointed via a power of attorney to act for another, specifically to conduct a
@@ -45,7 +189,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0045
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: background check
     definition: A background check is the state and national criminal history record check conducted
@@ -58,7 +203,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: In real estate brokerage, the broker is the agent who acts for the client (the principal).
@@ -70,7 +216,23 @@ entries:
       - CO-2-0028
       - CO-2-0042
       - CO-2-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker engagement contract
+    definition: A broker engagement contract is a written contract in which a seller, buyer, landlord,
+      or tenant of residential premises becomes the client of a broker or agrees to retain the
+      broker's services and promises to pay the broker valuable consideration.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: “broker engagement contract” means a written contract in which a seller, buyer,
+      landlord, or tenant of a residential premises becomes the client of a broker or agrees to
+      retain the services of a broker in the future and promises to pay the broker a valuable
+      consideration.
+    related_terms: []
+    items:
+      - CO-2-0119
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker license
     definition: A broker license is the credential that authorizes an individual to act as a real estate
@@ -84,7 +246,84 @@ entries:
     items:
       - CO-2-0049
       - CO-2-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: buyer
+    definition: A buyer is a person who engages a brokerage to purchase real estate and is considered
+      the principal (client) in the brokerage relationship.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the client (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the broker.
+    related_terms: []
+    items:
+      - CO-2-0152
+      - CO-2-0161
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: buyer’s agent
+    definition: A buyer’s agent is a broker who is engaged by and represents the buyer in a real estate
+      transaction.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: “Buyer’s agent”, which means a broker who is engaged by and represents the buyer in a
+      real estate transaction;
+    related_terms: []
+    items:
+      - CO-2-0107
+      - CO-2-0165
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: class 2 misdemeanor
+    definition: A class 2 misdemeanor is a criminal offense under Colorado law committed by anyone who
+      acts as a real estate broker without a valid license.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: acting as real estate broker in this state without having obtained a license
+    related_terms: []
+    items:
+      - CO-2-0098
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: classroom instruction
+    definition: Classroom instruction refers to formal, in-person or synchronous educational hours
+      required for real estate licensure.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "2. Proof of completion of one hundred sixty-eight (168) hours of classroom instruction
+      or equivalent Distance Learning hours from any accredited college or university, or any Real
+      Estate School for the following courses:"
+    related_terms: []
+    items:
+      - CO-2-0063
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: closing statement
+    definition: A closing statement is a document provided at the end of a real estate transaction that
+      details the financial aspects of the sale and must be accurate, complete, and signed by the
+      broker.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: The Broker must ensure such Consumer receives an accurate, complete and detailed
+      closing statement that is signed by the Broker.
+    related_terms: []
+    items:
+      - CO-2-0144
+      - CO-2-0145
+      - CO-2-0146
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: commingling
+    definition: Commingling is mixing client funds with brokerage operating funds.
+    source: REP Ref. Agency
+    quoted_text: Mixing client funds with brokerage operating funds is **commingling**; spending client
+      funds for any unauthorized purpose is **conversion** (§ 8).
+    related_terms: []
+    items:
+      - CO-2-0131
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: The commission is the real estate commission created by statute to oversee licensing.
@@ -93,7 +332,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission records
     definition: Commission records are the records maintained by the real estate commission that show a
@@ -108,7 +348,74 @@ entries:
     items:
       - CO-2-0022
       - CO-2-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: commission-approved form
+    definition: A commission‑approved form is a form promulgated by the Colorado Real Estate Commission
+      for brokers to use in transactions when it exists and is appropriate.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: A “Commission-Approved Form” is a form promulgated by the Commission for current use by
+      Brokers.
+    related_terms: []
+    items:
+      - CO-2-0086
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: compensation
+    definition: Compensation is the payment (such as a commission) a licensee earns for brokerage
+      services, which must be provable and may need to be in writing to be enforceable under
+      Colorado law.
+    source: REP Ref. Agency
+    quoted_text: Many states require these to be in writing for the licensee to be entitled to a
+      commission or as a matter of license law; general agency law does not always require a
+      writing.
+    related_terms: []
+    items:
+      - CO-2-0107
+      - CO-2-0153
+      - CO-2-0166
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: complaint
+    definition: A written complaint alleging a potential license law violation triggers the Division of
+      Real Estate to investigate and possibly hold a hearing.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: If a written complaint alleging a potential license law violation is filed, the office
+      is compelled to investigate.
+    related_terms: []
+    items:
+      - CO-2-0052
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: continuing education
+    definition: Continuing education consists of approved courses and activities that brokers must
+      complete to maintain their real estate license.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: iii. Each hour of an approved and designated continuing education course in the
+      Broker’s area of expertise completed after January 1, 2018, is worth one (1) point.
+    related_terms: []
+    items:
+      - CO-2-0071
+      - CO-2-0121
+      - CO-2-0126
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: contract
+    definition: In real estate, a contract is an enforceable agreement such as a purchase agreement,
+      lease, option, or land contract.
+    source: REP Ref. Contracts
+    quoted_text: "Reference note: contract law as applied to real estate purchase agreements, options,
+      land contracts, and leases."
+    related_terms: []
+    items:
+      - CO-2-0074
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: conviction
     definition: A conviction is a formal legal judgment that a person has committed a crime, specifying
@@ -120,7 +427,20 @@ entries:
     related_terms: []
     items:
       - CO-2-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: corporation
+    definition: A corporation is a legal entity that can hold title and, if it engages in real estate
+      brokerage services, must be licensed as such.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "1.1. Active: A current, valid License that allows a person, firm, partnership, limited
+      liability company, association, or corporation to engage in Real Estate Brokerage Services."
+    related_terms: []
+    items:
+      - CO-2-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: criminal conviction
     definition: A criminal conviction is a formal judgment of guilt for a crime, which can influence
@@ -133,7 +453,69 @@ entries:
     items:
       - CO-2-0031
       - CO-2-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: degree
+    definition: An academic degree is a credential awarded by a college or university upon completion of
+      a prescribed course of study.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: 1. A degree from an accredited college or university with a major course of study in
+      real estate; or
+    related_terms: []
+    items:
+      - CO-2-0061
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: designated broker
+    definition: A designated broker is the broker named on a firm's license who is authorized to conduct
+      real estate brokerage activities solely on behalf of that firm.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: the broker so designated shall conduct business as a real estate broker only through
+      the partnership, limited liability company, or corporation
+    related_terms: []
+    items:
+      - CO-2-0064
+      - CO-2-0103
+      - CO-2-0111
+      - CO-2-0137
+      - CO-2-0141
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disclosure
+    definition: A disclosure is a written informational document that a broker must provide to a client
+      or customer to convey required facts, and obtaining a signed acknowledgment confirms the
+      recipient has been informed.
+    source: REP Ref. Agency
+    quoted_text: The **agency disclosure form** is a disclosure, not a contract — signing it does not
+      create agency; it confirms that the recipient has been informed.
+    related_terms: []
+    items:
+      - CO-2-0099
+      - CO-2-0101
+      - CO-2-0138
+      - CO-2-0140
+      - CO-2-0153
+      - CO-2-0161
+      - CO-2-0166
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: district court
+    definition: A district court is a court having jurisdiction that can issue a subpoena upon petition
+      by the commission when a subpoena is not obeyed.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: If a person fails or refuses to obey a subpoena issued by the commission, the director,
+      or the appointed administrative law judge, the commission may petition the district court
+      having jurisdiction for issuance of a subpoena in the premises, and the court shall, in a
+      proper case, issue its subpoena.
+    related_terms: []
+    items:
+      - CO-2-0129
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: education
     definition: Education for a Colorado broker license consists of mandated classroom hours in subjects
@@ -147,7 +529,33 @@ entries:
       - CO-2-0028
       - CO-2-0049
       - CO-2-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: employed broker
+    definition: An employed broker is a broker who works under another broker's supervision, whose
+      license is controlled by the employing broker, and who may not act independently for certain
+      entities while employed.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: The employing broker shall have the control and custody of the employed broker’s license.
+    related_terms: []
+    items:
+      - CO-2-0158
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: employee
+    definition: An employee is a person who performs tasks such as filling in lease forms, showing
+      units, quoting rents, arranging maintenance, and collecting rent and security deposits.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: person who fills in blanks, as a scrivener, on lease forms, shows prospective tenants
+      available units, quotes rental prices established by the owner or Broker, arranges for
+      maintenance, and collects monies, including security deposits and rents
+    related_terms: []
+    items:
+      - CO-2-0090
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: employing broker
     definition: An employing broker is a broker who is shown in the commission’s records as employing or
@@ -159,7 +567,8 @@ entries:
     items:
       - CO-2-0022
       - CO-2-0044
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: exemption
     definition: An exemption is an exception that removes a legal requirement or restriction for a
@@ -170,8 +579,22 @@ entries:
     items:
       - CO-2-0045
       - CO-2-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: groq/openai/gpt-oss-120b
+  - term: experience
+    definition: Experience refers to the length of time a person has worked in the real estate business,
+      such as having at least five years’ experience in Colorado.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: have had not less than five years’ experience in the real estate business in Colorado
+    related_terms: []
+    items:
+      - CO-2-0091
+      - CO-2-0109
+      - CO-2-0136
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fee
     definition: A fee is a payment for services, such as a referral fee paid to an agent for directing a
       client to a third party.
@@ -181,7 +604,21 @@ entries:
     related_terms: []
     items:
       - CO-2-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fine
+    definition: An administrative fine is a monetary penalty that the Colorado Real Estate Commission
+      may impose on a licensee for each separate offense, up to a maximum of $2,500 per offense.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: impose an administrative fine not to exceed two thousand five hundred dollars for each
+      separate offense
+    related_terms: []
+    items:
+      - CO-2-0056
+      - CO-2-0057
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fingerprint
     definition: A fingerprint is the set of ridge patterns that an applicant must submit to the Colorado
@@ -196,7 +633,8 @@ entries:
     items:
       - CO-2-0021
       - CO-2-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fingerprints
     definition: Fingerprints are a set of fingerprints submitted to the Colorado Bureau of Investigation
@@ -209,7 +647,20 @@ entries:
     related_terms: []
     items:
       - CO-2-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: formal disciplinary proceedings
+    definition: Formal disciplinary proceedings are the commission's process for adjudicating serious
+      licensee misconduct, which can result in sanctions such as fines, suspension, or revocation.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: The Commission can also issue letters of admonishment in instances where conduct does
+      not warrant formal disciplinary proceedings.
+    related_terms: []
+    items:
+      - CO-2-0059
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: hours
     definition: Hours refer to units of classroom or distance-learning instruction that an applicant
@@ -220,7 +671,54 @@ entries:
     related_terms: []
     items:
       - CO-2-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: inactivation
+    definition: Inactivation of a license means the broker can request that the commission records show
+      the license as inactive until they request reactivation.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: A. A Broker may request that the Commission records show their License as Inactive
+      until proper request for reactivation has been made.
+    related_terms: []
+    items:
+      - CO-2-0054
+      - CO-2-0067
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: incidental
+    definition: Incidental means something that is a minor or subordinate part of a larger service or activity.
+    source: REP Ref. Brokerage Practice
+    quoted_text: because that is incidental to the brokerage service.
+    related_terms: []
+    items:
+      - CO-2-0089
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: independent
+    definition: Independent describes a worker who is engaged as an independent contractor rather than
+      as a regular salaried employee.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: either as a regularly salaried employee or as an independent contractor
+    related_terms: []
+    items:
+      - CO-2-0091
+      - CO-2-0136
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: independent brokerage
+    definition: Independent brokerage refers to a broker operating on their own behalf, not under the
+      sponsorship of another brokerage firm.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Team names must not suggest the team is an independent brokerage;
+    related_terms: []
+    items:
+      - CO-2-0065
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: initial decision
     definition: An initial decision is the administrative law judge's determination of revocation,
@@ -231,7 +729,30 @@ entries:
     related_terms: []
     items:
       - CO-2-0032
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: instruction
+    definition: Instruction refers to formal classroom or distance‑learning education that a real estate
+      applicant must complete to qualify for a broker examination.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: Proof of completion of one hundred sixty-eight (168) hours of classroom instruction
+    related_terms: []
+    items:
+      - CO-2-0093
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: investigation
+    definition: An investigation is the process the Division of Real Estate undertakes when a written
+      complaint alleging a potential license law violation is filed.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: the office is compelled to investigate.
+    related_terms: []
+    items:
+      - CO-2-0052
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: judicial record
     definition: A judicial record is a name-based judicial record check that the commission must obtain
@@ -242,7 +763,21 @@ entries:
     related_terms: []
     items:
       - CO-2-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: letter of admonition
+    definition: A letter of admonition is an informal notice from the commission for minor misconduct,
+      advising the licensee they may request formal disciplinary proceedings within twenty days of
+      receipt.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: the commission may send a letter of admonition by certified mail, return receipt
+      requested, to the licensee against whom a complaint was made
+    related_terms: []
+    items:
+      - CO-2-0059
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license
     definition: A real estate license is the state-granted authorization that allows the holder to
@@ -254,7 +789,90 @@ entries:
     related_terms: []
     items:
       - CO-2-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensee
+    definition: A licensee is a real estate professional who shows property to prospective buyers.
+    source: REP Ref. Agency
+    quoted_text: most buyers wrongly believed the licensee showing them property was "their" agent
+    related_terms: []
+    items:
+      - CO-2-0054
+      - CO-2-0055
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: lien
+    definition: A lien is a charge against property securing payment of a debt; if unpaid, the
+      lienholder may force a sale and be paid from the proceeds.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A lien is a charge against property securing payment of a debt; if unpaid, the
+      lienholder may force a sale and be paid from the proceeds.
+    related_terms: []
+    items:
+      - CO-2-0119
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: limited liability company
+    definition: A limited liability company (LLC) is a business entity that provides its owners with
+      liability protection while allowing flexible management.
+    source: REP Ref. Ownership, Title & Transfer
+    quoted_text: A limited liability company (LLC) combines liability protection with flexible management.
+    related_terms: []
+    items:
+      - CO-2-0064
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: listing agreement
+    definition: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage that creates seller agency, is a personal service contract with the broker, and is
+      typically required to be written and signed.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage, creating seller agency (REP Ref. Agency § 2.2).
+    related_terms: []
+    items:
+      - CO-2-0166
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: listing contract
+    definition: A listing contract is an agreement between a brokerage firm and a consumer in which a
+      broker affiliated with the firm is authorized to provide real estate brokerage services to
+      that consumer.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "Listing Contract: An agreement between a Brokerage Firm and a Consumer in which a
+      Broker licensed with the Brokerage Firm is designated to provide Real Estate Brokerage
+      Services to the Consumer."
+    related_terms: []
+    items:
+      - CO-2-0146
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: major
+    definition: A major is the primary field of study that a student specializes in while earning a degree.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: with a major course of study in real estate
+    related_terms: []
+    items:
+      - CO-2-0061
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: member
+    definition: A member of the Colorado Real Estate Commission is one of the five individuals appointed
+      to serve on the Commission, which conducts rulemaking, licensing, and disciplinary functions.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: The Division of Real Estate has a five-member Commission that meets bi-monthly
+    related_terms: []
+    items:
+      - CO-2-0051
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: negotiating
     definition: Negotiating means the act of bringing parties together to agree on the purchase, sale,
@@ -265,7 +883,58 @@ entries:
     related_terms: []
     items:
       - CO-2-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: non-real-estate
+    definition: Non‑real‑estate refers to business activities that are not related to real estate or
+      land transactions.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: business activities of a non-real-estate nature
+    related_terms: []
+    items:
+      - CO-2-0089
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notification
+    definition: Notification means informing the Colorado Real Estate Commission of a required change
+      (such as a criminal conviction or address change) in a manner acceptable to the Commission.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: Immediate notice shall be given in a manner acceptable to the commission by each
+      licensee of any change of business location or employment.
+    related_terms: []
+    items:
+      - CO-2-0097
+      - CO-2-0105
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: offense
+    definition: An offense is a violation of licensing law, such as knowingly making a
+      misrepresentation, for which the commission may impose disciplinary action.
+    source: REP Ref. Agency
+    quoted_text: Most state license laws make misrepresentation to any party a disciplinary offense
+      regardless of agency
+    related_terms: []
+    items:
+      - CO-2-0056
+      - CO-2-0057
+      - CO-2-0095
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: officer
+    definition: An officer is a person holding a corporate office, such as a vice president, who is a
+      regularly salaried employee of the corporation.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: '"officers or regularly salaried employees" means persons regularly employed who derive
+      not less than seventy-five percent of their'
+    related_terms: []
+    items:
+      - CO-2-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: on-site manager
     definition: An on-site manager is an unlicensed employee who performs routine leasing and collection
@@ -279,7 +948,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: partnership
     definition: A partnership is a business entity that can hold a real estate broker license.
@@ -289,7 +959,20 @@ entries:
     related_terms: []
     items:
       - CO-2-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: place of business
+    definition: A place of business is the physical location where a broker conducts licensed real
+      estate activities.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: Every Independent Broker or Employing Broker residing in Colorado must maintain a place
+      of business in this State, except for Associate Brokers or Brokers registered as Inactive.
+    related_terms: []
+    items:
+      - CO-2-0062
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: power of attorney
     definition: A power of attorney is a legal document that grants someone authority to act on
@@ -301,7 +984,8 @@ entries:
     related_terms: []
     items:
       - CO-2-0045
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: preliminary advisory opinion
     definition: A preliminary advisory opinion is a request to the Commission for an opinion on how
@@ -317,7 +1001,20 @@ entries:
     items:
       - CO-2-0031
       - CO-2-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: proven receipt
+    definition: Proven receipt is the date the licensee actually receives the letter of admonition, as
+      evidenced by return receipt or signature, which starts the twenty‑day period to request formal
+      proceedings.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: within twenty days after proven receipt, that formal disciplinary proceedings be initiated
+    related_terms: []
+    items:
+      - CO-2-0059
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate
     definition: Real estate refers to the property sector involved in brokerage activities, as indicated
@@ -328,7 +1025,34 @@ entries:
     related_terms: []
     items:
       - CO-2-0042
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: receipt
+    definition: A receipt is a written document given to a prospective tenant that must include the
+      commission's address and telephone number.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: shall give a prospective tenant a contract or receipt; and the contract or receipt
+      shall include the address and telephone number of the commission
+    related_terms: []
+    items:
+      - CO-2-0074
+      - CO-2-0081
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: record
+    definition: A record refers to documents or data that a broker must keep for the record‑retention
+      period set by the commission.
+    source: Colorado Real Estate Commission Position Statements (CP-1 et seq.)
+    quoted_text: records retention 3-20
+    related_terms: []
+    items:
+      - CO-2-0058
+      - CO-2-0130
+      - CO-2-0154
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: record keeping
     definition: Record keeping refers to the systematic maintenance of documents and data, such as
@@ -341,7 +1065,122 @@ entries:
     items:
       - CO-2-0049
       - CO-2-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: records
+    definition: Records are the accurate documentation of funds and documents received in the course of
+      agency that an agent must keep separate and account for.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - CO-2-0082
+      - CO-2-0127
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: regular renewal fee
+    definition: The regular renewal fee is the amount paid to renew a real estate broker license before
+      it expires or within the allowed grace period.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: If proper application is made within thirty-one days after the date of expiration, by
+      payment of the regular renewal fee;
+    related_terms: []
+    items:
+      - CO-2-0069
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reinstatement
+    definition: Reinstatement is the restoration of a license application after the Division receives
+      payment of all required fees and any additional costs, including clerical service fees.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: The application will only be reinstated if the Division has received valid payment of
+      all application Fees together with any fees incurred by the Division including the fee
+      required by state fiscal rules for clerical services necessary for reinstatement.
+    related_terms: []
+    items:
+      - CO-2-0106
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reinstatement fee
+    definition: A reinstatement fee is a charge required to restore an expired real estate broker
+      license, equal to half the renewal fee if the request is made within one year of expiration.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: B. If a proper application is made more than thirty-one (31) days but within one (1)
+      year after the date of expiration of a License, by payment of the renewal Fee and payment of a
+      reinstatement Fee equal to one-half (1/2) the renewal Fee
+    related_terms: []
+    items:
+      - CO-2-0069
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal
+    definition: License renewal refers to the process of renewing a broker's license after each
+      three‑year calendar year cycle.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "Calendar Year Cycle: This is the three-year licensing period commencing on January 1
+      of year one and expiring on December 31 of year three. All Brokers will eventually be on a
+      Calendar Year Cycle for their License renewal."
+    related_terms: []
+    items:
+      - CO-2-0077
+      - CO-2-0121
+      - CO-2-0126
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal fee
+    definition: The renewal fee is the payment required when submitting a renewal application to extend
+      a broker’s license, which may be made beginning forty‑five days before expiration.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: a. All Brokers, whether on Active or Inactive status, may renew their License beginning
+      forty-five (45) days prior to the expiration date of their License by use of the renewal
+      application form provided by the Commission.
+    related_terms: []
+    items:
+      - CO-2-0106
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rental location
+    definition: Rental location refers to the activity of locating rental properties for tenants, which
+      is regulated by the commission.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: shall state that the regulation of rental location agents is under the purview of the
+      commission.
+    related_terms: []
+    items:
+      - CO-2-0074
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: requirement
+    definition: A requirement is something that must be satisfied to comply with a law or rule.
+    source: REP Ref. Contracts
+    quoted_text: if a law requires a signature, an electronic signature satisfies the requirement.
+    related_terms: []
+    items:
+      - CO-2-0060
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: retention
+    definition: Retention is the period during which records must be kept as required by commission rules.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Licensees should keep copies of online advertising for the record-retention period (§ 10).
+    related_terms: []
+    items:
+      - CO-2-0058
+      - CO-2-0130
+      - CO-2-0154
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: salaried employee
     definition: A regularly salaried employee who performs customary on-site management duties for an
@@ -354,7 +1193,79 @@ entries:
     related_terms: []
     items:
       - CO-2-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single agency
+    definition: Single agency is a brokerage policy of representing only one side in a transaction and
+      never acting as a dual agent.
+    source: REP Ref. Agency
+    quoted_text: A brokerage policy of representing only one side in any transaction — never acting as
+      dual agent.
+    related_terms: []
+    items:
+      - CO-2-0072
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single agent
+    definition: Single agent means the same as defined in section 12-10-402(6) of the Colorado Revised
+      Statutes.
+    source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1)
+    quoted_text: "1.50. Single Agent: Has the same meaning pursuant to section 12-10-402(6), C.R.S."
+    related_terms: []
+    items:
+      - CO-2-0103
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: state
+    definition: State refers to the government of a U.S. state, whose laws govern real estate licensing
+      and are tested on the state portion of the exam.
+    source: REP Ref. Agency
+    quoted_text: Agency law is state law; where a rule varies by state, the state portion of the exam governs.
+    related_terms: []
+    items:
+      - CO-2-0062
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: subpoena
+    definition: A subpoena is a legal order issued by the commission, director, or administrative law
+      judge compelling attendance and testimony of witnesses and production of records and
+      documents.
+    source: "[Colo. Rev. Stat. § 12-10-201 et seq. — § 12-10-224, C.R.S.]"
+    quoted_text: The commission, the director, or the administrative law judge appointed for hearings
+      may issue a subpoena compelling the attendance and testimony of witnesses and the production
+      of records and documents.
+    related_terms: []
+    items:
+      - CO-2-0127
+      - CO-2-0129
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: telephone number
+    definition: The telephone number is the commission's telephone number that must be included on a
+      receipt or contract given to a prospective tenant.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: shall include the address and telephone number of the commission
+    related_terms: []
+    items:
+      - CO-2-0081
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: tenant
+    definition: A tenant is a client who has engaged a brokerage to represent them in a rental
+      transaction and is considered the principal in the broker‑client relationship.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - CO-2-0161
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: trust accounts
     definition: Trust accounts are designated accounts where a brokerage holds clients' money—such as
@@ -367,7 +1278,30 @@ entries:
     items:
       - CO-2-0049
       - CO-2-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: unenforceable
+    definition: Unenforceable means not legally enforceable; having no legal effect.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: Any such lien, encumbrance, or other real property security interest is void and unenforceable.
+    related_terms: []
+    items:
+      - CO-2-0119
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written agency agreement
+    definition: A written agency agreement is a written contract between a broker and a party to be
+      represented that establishes a single agency relationship and discloses the broker's duties
+      and responsibilities.
+    source: Colo. Rev. Stat. § 12-10-201 et seq.
+    quoted_text: shall enter into a written agency agreement with the party to be represented.
+    related_terms: []
+    items:
+      - CO-2-0072
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: written objections
     definition: Written objections are formal written responses filed with the Commission to contest an

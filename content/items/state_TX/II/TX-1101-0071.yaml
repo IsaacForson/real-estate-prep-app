@@ -1,0 +1,41 @@
+id: TX-1101-0071
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent's sponsoring broker's license expires. What is the status of the sales agent's
+  license under TREC rules?
+options:
+  - Suspended status
+  - Inactive status
+  - Expired status
+  - Lapsed status
+key: B
+explanation: According to §535.121(a)(2), a sales agent's license becomes inactive upon the
+  expiration, suspension, revocation or inactivation of the sponsoring broker's license. The other
+  statuses are not triggered by this event under the rule.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.121"
+  url: null
+  quoted_text: (2) the expiration, suspension, revocation or inactivation of the license of the
+    sponsoring broker;
+  secondary: []
+terms:
+  - inactive status
+  - sponsoring broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

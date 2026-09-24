@@ -1,0 +1,47 @@
+id: TX-1101-0067
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An aggrieved person gives written notice of a claim to the commission and judgment debtor on
+  March 1, 2026, and files an application for payment from the trust account on March 22, 2026.
+  Under Tex. Occ. Code § 1101.606(b), by what date must the person schedule a hearing to avoid
+  waiver of recovery?
+options:
+  - March 22, 2026
+  - March 1, 2027
+  - March 22, 2027
+  - March 21, 2027
+key: D
+explanation: The statute provides that recovery is waived if a hearing is not scheduled before the
+  first anniversary of the date the application was filed. The application was filed March 22, 2026,
+  so the first anniversary is March 22, 2027; scheduling must occur before that date, making March
+  21, 2027 the latest permissible date. Scheduling on the anniversary date (March 22, 2027) would
+  result in waiver.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.606(b)
+  url: null
+  quoted_text: If the aggrieved person does not schedule a hearing before the first anniversary of the
+    date the application was filed, recovery is waived.
+  secondary: []
+terms:
+  - hearing
+  - application
+  - waiver
+  - notice
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

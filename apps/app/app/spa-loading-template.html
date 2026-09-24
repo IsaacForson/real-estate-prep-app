@@ -1,0 +1,47 @@
+<div class="boot" role="status" aria-live="polite" aria-label="Loading">
+  <div class="boot-mark" aria-hidden="true">§</div>
+  <div class="boot-spin" aria-hidden="true"></div>
+</div>
+<style>
+  .boot {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 14px;
+    background: #faf6f1;
+    color: #231e1a;
+  }
+  .boot-mark {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 30%;
+    background: #0b7a6e;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .boot-spin {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 2px solid #ece3d8;
+    border-top-color: #0b7a6e;
+    animation: boot-spin 0.7s linear infinite;
+  }
+  @media (prefers-color-scheme: dark) {
+    .boot { background: #15120f; }
+    .boot-mark { background: #2dbaa6; color: #06231f; }
+    .boot-spin { border-color: #332c25; border-top-color: #45cdb8; }
+  }
+  @keyframes boot-spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .boot-spin { animation: none; }
+  }
+</style>

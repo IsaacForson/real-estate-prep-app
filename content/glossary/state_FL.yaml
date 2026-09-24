@@ -1,6 +1,18 @@
 bank: state_FL
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: absences
+    definition: Absences are missed classroom hours; if a student misses more than eight classroom
+      hours, the school will not issue a notice of satisfactory completion.
+    source: Fla. Stat. ch. 475
+    quoted_text: notice of satisfactory completion shall not be issued if the student has absences in
+      excess of 8 classroom hours.
+    related_terms: []
+    items:
+      - FL-475-0118
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: accredited investor
     definition: An accredited investor is a person defined under 15 U.S.C. § 77b, the Securities Act of
       1933, or related regulations.
@@ -10,7 +22,19 @@ entries:
     related_terms: []
     items:
       - FL-475-0065
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: administrative fine
+    definition: An administrative fine is a monetary penalty of up to $5,000 for each count or separate
+      offense that the Florida Real Estate Commission may impose for violations.
+    source: Fla. Stat. ch. 475
+    quoted_text: may impose an administrative fine not to exceed $5,000 for each count or separate offense
+    related_terms: []
+    items:
+      - FL-475-0096
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: advertising
     definition: Advertising, in the context of real estate brokerage, refers to the promotion or public
@@ -22,7 +46,70 @@ entries:
     related_terms: []
     items:
       - FL-475-0045
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agency
+    definition: An agency relationship in real estate brokerage arises from an agreement, imposes duties
+      on the licensee, and requires specific disclosures to the parties involved.
+    source: REP Ref. Agency
+    quoted_text: "Reference note: agency relationships in real estate brokerage — how they arise and
+      end, the duties they impose, and the disclosures they require."
+    related_terms: []
+    items:
+      - FL-475-0212
+      - FL-475-0214
+      - FL-475-0266
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agent
+    definition: An agent is a person authorized to act on behalf of another (the principal) in dealings
+      with third parties, subject to the principal's control and owing fiduciary duties.
+    source: REP Ref. Agency
+    quoted_text: "**Agency** is a relationship in which one person (the **agent**) is authorized to act
+      on behalf of another (the **principal**) in dealings with third parties, and agrees to do so
+      subject to the principal's control."
+    related_terms: []
+    items:
+      - FL-475-0110
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agreement
+    definition: An agreement is a legally enforceable contract between two or more parties to do or
+      refrain from doing a lawful act in exchange for consideration.
+    source: REP Ref. Contracts
+    quoted_text: A contract is a legally enforceable agreement between two or more competent parties to
+      do, or to refrain from doing, some lawful act
+    related_terms: []
+    items:
+      - FL-475-0213
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: agricultural property
+    definition: Agricultural property refers to land used for farming that is limited to ten acres or
+      fewer, as specified in the definition of residential sale.
+    source: Fla. Stat. ch. 475
+    quoted_text: the sale of agricultural property of 10 acres or fewer
+    related_terms: []
+    items:
+      - FL-475-0202
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: apartment community
+    definition: An apartment community is a residential property consisting of multiple rental units
+      where employees may work in an onsite rental office.
+    source: Fla. Stat. ch. 475
+    quoted_text: of an apartment community who works in an onsite rental office of the apartment
+      community in a leasing capacity
+    related_terms: []
+    items:
+      - FL-475-0137
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: apartment complex
     definition: An apartment complex is a building or group of buildings containing multiple rental
@@ -32,7 +119,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0064
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appointment
     definition: The act of designating someone to a position or role, such as by will or court order.
@@ -43,7 +131,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0024
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: appraisal
     definition: An appraisal is an opinion of value developed by a qualified, impartial appraiser,
@@ -58,7 +147,8 @@ entries:
       - FL-475-0058
       - FL-475-0059
       - FL-475-0060
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: approval
     definition: Approval is the formal permission or consent that must be obtained before proceeding
@@ -68,7 +158,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: attorney
     definition: A lawyer who provides legal advice or services, such as acting within their practice or
@@ -80,7 +171,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: biennium
     definition: A biennium is a two-year period during which a licensee must complete continuing
@@ -92,7 +184,21 @@ entries:
     items:
       - FL-475-0055
       - FL-475-0056
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: binding
+    definition: An agreement is binding when it is valid, meaning all essential elements are present and
+      it is enforceable by both parties.
+    source: REP Ref. Contracts
+    quoted_text: "- **Valid**: all essential elements are present and the agreement is binding and
+      enforceable on both parties."
+    related_terms: []
+    items:
+      - FL-475-0131
+      - FL-475-0148
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: A licensed real estate professional who can operate a brokerage, employ or sponsor
@@ -108,7 +214,21 @@ entries:
       - FL-475-0054
       - FL-475-0060
       - FL-475-0061
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: broker associate
+    definition: A broker associate is a person who holds a broker license but works under another broker
+      as a sales associate.
+    source: Fla. Stat. ch. 475
+    quoted_text: “Broker associate” means a person who is qualified to be issued a license as a broker
+      but who operates as a sales associate in the employ of another.
+    related_terms: []
+    items:
+      - FL-475-0109
+      - FL-475-0251
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker price opinion
     definition: A broker price opinion is a written opinion of probable selling price prepared by a
@@ -123,7 +243,18 @@ entries:
     related_terms: []
     items:
       - FL-475-0058
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: brokerage
+    definition: Brokerage business records refers to the records required to be kept by a brokerage
+      under Florida Statute 475.5015.
+    source: "[Fla. Stat. ch. 475]"
+    quoted_text: 475.5015 Brokerage business records.
+    related_terms: []
+    items:
+      - FL-475-0130
+    status: draft
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: business enterprise
     definition: A business enterprise refers to the stock or assets of a commercial business, distinct
@@ -133,7 +264,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0065
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: business opportunity
     definition: Business opportunity brokerage is a subject area covered in real estate education, as
@@ -143,7 +275,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0061
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: cancellation
     definition: Cancellation of a contract means ending the agreement and returning each party to its
@@ -155,7 +288,19 @@ entries:
     related_terms: []
     items:
       - FL-475-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: cemetery lot
+    definition: A cemetery lot is a burial plot in a cemetery that is excluded from the definition of
+      real property for real estate licensing purposes.
+    source: Fla. Stat. ch. 475
+    quoted_text: the term does not include any cemetery lot or right of burial in any cemetery;
+    related_terms: []
+    items:
+      - FL-475-0194
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: classroom hour
     definition: A classroom hour is a unit of instruction equal to 50 minutes.
@@ -164,7 +309,37 @@ entries:
     related_terms: []
     items:
       - FL-475-0055
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: classroom hours
+    definition: Classroom hours are the periods of live instruction delivered by an instructor in a
+      classroom or via live streaming/video conferencing while students are present.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Classroom hours are the hours delivered live by an instructor in a classroom or by a
+      live streaming
+    related_terms: []
+    items:
+      - FL-475-0117
+      - FL-475-0118
+      - FL-475-0196
+      - FL-475-0237
+      - FL-475-0239
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: college credit
+    definition: College credit refers to transferable coursework completed at an accredited institution
+      that may be applied toward a degree but does not, by itself, qualify someone for a real estate
+      license.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Accredited universities, colleges, community colleges and area technical centers in
+      this state that offer transferable college credit courses
+    related_terms: []
+    items:
+      - FL-475-0127
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: A fee paid to a real estate broker for services rendered in a transaction, such as
@@ -180,7 +355,8 @@ entries:
       - FL-475-0028
       - FL-475-0033
       - FL-475-0050
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: comparative market analysis
     definition: A comparative market analysis is an opinion of the value of real estate that a licensee
@@ -193,7 +369,8 @@ entries:
     items:
       - FL-475-0058
       - FL-475-0059
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: completion
     definition: Completion refers to finishing a required process, such as a course or remediation, and
@@ -205,7 +382,32 @@ entries:
     related_terms: []
     items:
       - FL-475-0047
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: consent
+    definition: Consent means an informed written agreement giving permission for a particular action,
+      such as allowing dual representation in a transaction.
+    source: REP Ref. Agency
+    quoted_text: dual agency is permitted only with the informed written consent of both parties
+    related_terms: []
+    items:
+      - FL-475-0115
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: consumer protection
+    definition: Consumer protection means safeguarding consumers from harm in financial transactions, as
+      reflected in the goal of carrying out consumer protection purposes.
+    source: 12 U.S.C. §§ 2601–2617 (RESPA)
+    quoted_text: (E) fail to comply with any other obligation found by the Bureau of Consumer Financial
+      Protection, by regulation, to be appropriate to carry out the consumer protection purposes of
+      this chapter.
+    related_terms: []
+    items:
+      - FL-475-0254
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: continuing education
     definition: Continuing education is the education that must be satisfied to renew or reactivate a
@@ -222,7 +424,8 @@ entries:
       - FL-475-0055
       - FL-475-0056
       - FL-475-0057
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: contract
     definition: A contract is a legally enforceable agreement between two or more competent parties to
@@ -234,7 +437,19 @@ entries:
     items:
       - FL-475-0033
       - FL-475-0053
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: control
+    definition: Control is the authority of a principal to direct an agent's actions, to which the agent
+      must be subject.
+    source: REP Ref. Agency
+    quoted_text: subject to the principal's control
+    related_terms: []
+    items:
+      - FL-475-0087
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: counsel
     definition: A legal advisor who provides advice to an organization, such as the Commission counsel
@@ -245,7 +460,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: course
     definition: A course is an education offering that may be renewed biennially as part of real estate
@@ -257,7 +473,31 @@ entries:
     related_terms: []
     items:
       - FL-475-0047
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: court
+    definition: A court is a judicial body where a party can seek a remedy for a failure to perform,
+      such as by asking the court to enforce a contract.
+    source: REP Ref. Contracts
+    quoted_text: give a party the right to ask a court for a remedy when the other side fails to perform
+    related_terms: []
+    items:
+      - FL-475-0147
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: date
+    definition: The date in a listing agreement is the definite expiration date that sets when the
+      agreement ends.
+    source: REP Ref. Brokerage Practice
+    quoted_text: Most states require listings to be written, signed by the seller, with a definite
+      expiration date, and prohibit automatic extension clauses.
+    related_terms: []
+    items:
+      - FL-475-0213
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: definition
     definition: A definition is a statement that explains the meaning of a term, such as the explanation
@@ -270,7 +510,8 @@ entries:
     items:
       - FL-475-0026
       - FL-475-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: department
     definition: A department is a governmental agency responsible for specific functions, such as
@@ -282,7 +523,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deposit
     definition: Earnest money, also called a good‑faith deposit, is a sum the buyer delivers with an
@@ -294,7 +536,8 @@ entries:
     items:
       - FL-475-0050
       - FL-475-0053
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: depository institution
     definition: A federally insured depository institution is a bank or similar financial entity insured
@@ -309,6 +552,99 @@ entries:
       - FL-475-0065
     status: draft
     model: groq/openai/gpt-oss-120b
+  - term: direction
+    definition: Direction refers to the supervision or guidance given by a licensee under which an
+      unlicensed assistant may perform tasks.
+    source: REP Ref. Brokerage Practice
+    quoted_text: under a licensee's direction
+    related_terms: []
+    items:
+      - FL-475-0087
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disciplinary action
+    definition: Disciplinary action refers to sanctions such as the suspension or revocation of a
+      license imposed by a regulatory authority.
+    source: 42 U.S.C. §§ 3601–3619 (Fair Housing Act)
+    quoted_text: (B) recommend to that governmental agency appropriate disciplinary action (including,
+      where appropriate, the suspension or revocation of the license of the respondent).
+    related_terms: []
+    items:
+      - FL-475-0114
+      - FL-475-0187
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disclosed
+    definition: Disclosed means that information is made known to all parties involved in a transaction.
+    source: REP Ref. Agency
+    quoted_text: Compensation arrangements should nevertheless be disclosed to all parties
+    related_terms: []
+    items:
+      - FL-475-0139
+      - FL-475-0214
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: dual
+    definition: Dual agency occurs when a licensee represents both buyer and seller in the same
+      transaction, requiring disclosure and subject to state restrictions.
+    source: REP Ref. Agency
+    quoted_text: Not every state permits every form; several states have abolished subagency in
+      practice, some prohibit dual agency, some define non-agency
+    related_terms: []
+    items:
+      - FL-475-0214
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: dual agency
+    definition: Dual agency is a representation arrangement where a broker acts for both the buyer and
+      seller in the same transaction.
+    source: Fla. Stat. ch. 475
+    quoted_text: Disclosed dual agency as an authorized form of representation by a real estate licensee
+    related_terms: []
+    items:
+      - FL-475-0139
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: elect
+    definition: Elect means to choose or select an option, such as choosing to renew a license as inactive.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: A voluntarily inactive licensee may elect to renew as inactive every two years by
+      submitting a request to the Department of Business and Professional Regulation (DBPR),
+    related_terms: []
+    items:
+      - FL-475-0183
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: employer
+    definition: An employer is the broker who maintains and registers the office where a sales associate
+      must be affiliated and from whom the associate must work.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Sales associates must be registered from and work out of an office maintained and
+      registered in the name of the employer.
+    related_terms: []
+    items:
+      - FL-475-0115
+      - FL-475-0226
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: entrusted
+    definition: Entrusted means given over to someone's care or responsibility, especially money or
+      funds that a broker receives from a client and must hold in escrow.
+    source: Fla. Stat. ch. 475
+    quoted_text: any money, fund, deposit, check, or draft entrusted to her or him
+    related_terms: []
+    items:
+      - FL-475-0146
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: escrow
     definition: An escrow account is a designated trust account where a brokerage holds earnest money,
       security deposits, rents, or advance fees separate from its own funds.
@@ -320,7 +656,18 @@ entries:
     items:
       - FL-475-0050
       - FL-475-0053
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: evidence
+    definition: Evidence is something that serves as proof, such as a promissory note being evidence of a debt.
+    source: REP Ref. Financing & Closing
+    quoted_text: It is the evidence of the debt.
+    related_terms: []
+    items:
+      - FL-475-0188
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: exam
     definition: The exam is the state licensing test that assesses an applicant’s knowledge of real
@@ -331,7 +678,19 @@ entries:
     related_terms: []
     items:
       - FL-475-0047
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: expenses
+    definition: Expenses are costs incurred in the course of business that may be reimbursed or owed to
+      another party.
+    source: REP Ref. Brokerage Practice
+    quoted_text: reimbursed expenses
+    related_terms: []
+    items:
+      - FL-475-0105
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: expiration
     definition: Expiration is the ending of a set time period, after which an agreement or authorization
@@ -343,7 +702,65 @@ entries:
     related_terms: []
     items:
       - FL-475-0037
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: expire
+    definition: To expire means to come to an end or cease to be valid, as when a license automatically
+      expires after a period of inactivity.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: When the total period of involuntary inactivity exceeds 2 years, the license shall
+      automatically expire per Section 475.183(2), F.S.
+    related_terms: []
+    items:
+      - FL-475-0166
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: facsimile
+    definition: A facsimile signature is a signature transmitted by fax that Florida law accepts as valid.
+    source: "[Fla. Stat. ch. 475]"
+    quoted_text: 475.5018 Facsimile signatures or writing accepted.
+    related_terms: []
+    items:
+      - FL-475-0131
+      - FL-475-0148
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: "false"
+    definition: A false statement is a misrepresentation—a statement of fact that is not true and on
+      which another party relies.
+    source: REP Ref. Agency
+    quoted_text: A **misrepresentation** is a false statement of fact on which another party relies.
+    related_terms: []
+    items:
+      - FL-475-0141
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: false affidavit
+    definition: A false affidavit is a sworn statement containing false information that is intended to
+      be used as evidence before the Florida Real Estate Commission.
+    source: Fla. Stat. ch. 475
+    quoted_text: A person may not make any false affidavit or affirmation intended for use as evidence
+      by or before the commission
+    related_terms: []
+    items:
+      - FL-475-0188
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fiduciary
+    definition: A fiduciary is someone who owes the highest trust and loyalty to another person while
+      handling that person's affairs.
+    source: REP Ref. Agency
+    quoted_text: The agent owes the principal fiduciary duties — duties of the highest trust and loyalty
+      — because the agent is handling the principal's affairs.
+    related_terms: []
+    items:
+      - FL-475-0135
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: finder's fee
     definition: A finder's fee is a type of charge, similar to a loan fee, that is included in the
@@ -354,7 +771,31 @@ entries:
     items:
       - FL-475-0043
       - FL-475-0064
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fund
+    definition: A fund is a sum of money set aside for a specific purpose, such as a recovery fund for
+      real estate transactions.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: any deposit, fund, money, check, draft, personal property, or item of value
+    related_terms: []
+    items:
+      - FL-475-0105
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: general partner
+    definition: A general partner is a partner who may be considered a broker when the partnership in
+      which they participate acts as a broker.
+    source: Fla. Stat. ch. 475
+    quoted_text: any person who is a general partner, officer, or director of a partnership or
+      corporation which acts as a broker
+    related_terms: []
+    items:
+      - FL-475-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: heading
     definition: A heading is a clear and concise label or title used to identify a section or item of
@@ -364,7 +805,44 @@ entries:
     related_terms: []
     items:
       - FL-475-0059
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: hours
+    definition: Hours are units of time used to measure the length of required continuing education
+      courses, such as the 63‑hour pre‑licensing course for sales associates.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: This course will consist of 63 hours of 50 minutes each, inclusive of examination, in
+      the basic fundamentals of real estate principles and practices,
+    related_terms: []
+    items:
+      - FL-475-0185
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: inactive
+    definition: Inactive status means a license that is not active but can be renewed as inactive,
+      allowing the licensee to maintain licensure without practicing real estate.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: A voluntarily inactive licensee may elect to renew as inactive every two years by
+      submitting a request to the Department of Business and Professional Regulation (DBPR),
+    related_terms: []
+    items:
+      - FL-475-0185
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: injunction
+    definition: An injunction is a court order that prohibits a person from continuing a particular
+      activity, such as a broker engaging in violations of the law.
+    source: Fla. Stat. ch. 475
+    quoted_text: Appropriate civil action may be brought by the department in circuit court to enjoin a
+      broker from engaging in, or continuing, a violation of this part
+    related_terms: []
+    items:
+      - FL-475-0147
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: involuntarily inactive
     definition: Involuntarily inactive status means the licensure status that results when a license is
@@ -377,7 +855,32 @@ entries:
       - FL-475-0038
       - FL-475-0046
       - FL-475-0048
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: involuntary
+    definition: Involuntary refers to a license status that becomes inactive without the licensee's
+      consent, such as when a license automatically reverts to involuntarily inactive upon failure
+      to renew.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: renew, the status automatically shall revert to involuntarily inactive.
+    related_terms: []
+    items:
+      - FL-475-0268
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: leasehold
+    definition: A leasehold is the tenant's right to possess and use real property for a fixed period
+      under a lease, in exchange for rent.
+    source: REP Ref. Contracts
+    quoted_text: it transfers to the tenant (lessee) a possessory interest in real property — a
+      leasehold estate — for a term, in exchange for rent
+    related_terms: []
+    items:
+      - FL-475-0194
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: legal agenda
     definition: A legal agenda session is a meeting of the Florida Real Estate Commission where
@@ -405,7 +908,31 @@ entries:
       - FL-475-0033
       - FL-475-0046
       - FL-475-0054
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: license period
+    definition: A license period is the duration for which a license is issued and must be renewed.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: must secure a license for each license period.
+    related_terms: []
+    items:
+      - FL-475-0171
+      - FL-475-0173
+      - FL-475-0179
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensed broker
+    definition: A licensed broker is a broker who holds a real estate license and may supervise certain
+      activities, such as a graduate student's appraisal work.
+    source: Fla. Stat. ch. 475
+    quoted_text: under the direct supervision of a licensed broker
+    related_terms: []
+    items:
+      - FL-475-0089
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensee
     definition: A licensee is a person licensed to engage in real estate activities, such as
@@ -417,7 +944,80 @@ entries:
     related_terms: []
     items:
       - FL-475-0059
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: licensure
+    definition: Licensure is the requirement that a person must register with the Florida Real Estate
+      Commission and obtain a license to practice real estate under Chapter 475.
+    source: "[Fla. Admin. Code ch. 61J2]"
+    quoted_text: must register with the Florida Real Estate Commission and must secure a license
+    related_terms: []
+    items:
+      - FL-475-0088
+      - FL-475-0192
+      - FL-475-0255
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: limited liability company
+    definition: A limited liability company (LLC) is a business entity that, if it acts as a real estate
+      broker, must register with the commission and ensure its members, officers, and directors are
+      licensed.
+    source: Fla. Stat. ch. 475
+    quoted_text: Each partnership, limited liability partnership, limited liability company, or
+      corporation which acts as a broker shall register with the commission and shall renew the
+      licenses or registrations of its members, officers, and directors for each license period.
+    related_terms: []
+    items:
+      - FL-475-0193
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: limited partnership
+    definition: A limited partnership is a partnership that, when acting as a broker, requires only its
+      general partners to be licensed brokers.
+    source: Fla. Stat. ch. 475
+    quoted_text: if the partnership is a limited partnership, only the general partners must be licensed brokers
+    related_terms: []
+    items:
+      - FL-475-0089
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: limited representation
+    definition: Limited representation occurs when a broker assists a buyer, seller, or both in a
+      transaction without owing fiduciary duties or acting as a single agent.
+    source: Fla. Stat. ch. 475
+    quoted_text: provides limited representation to a buyer, a seller, or both, in a real estate transaction
+    related_terms: []
+    items:
+      - FL-475-0135
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: listing
+    definition: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage that creates seller agency.
+    source: REP Ref. Brokerage Practice
+    quoted_text: A listing agreement is the employment contract between a seller (or landlord) and a
+      brokerage, creating seller agency
+    related_terms: []
+    items:
+      - FL-475-0213
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: material fact
+    definition: A material fact is any information that a reasonable person would consider important
+      when deciding whether or on what terms to buy, sell, or lease property.
+    source: REP Ref. Agency
+    quoted_text: A **material fact** is one that a reasonable person would consider important in
+      deciding whether, or on what terms, to buy, sell, or lease.
+    related_terms: []
+    items:
+      - FL-475-0108
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: minute
     definition: A minute is a unit of time; sixty minutes make an hour, and a classroom hour consists of
@@ -427,7 +1027,101 @@ entries:
     related_terms: []
     items:
       - FL-475-0056
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: minutes
+    definition: A minute is a unit of time; in Florida real estate education requirements, each hour of
+      instruction is defined as 50 minutes.
+    source: Fla. Stat. ch. 475
+    quoted_text: 63 classroom hours of 50 minutes each, inclusive of examination
+    related_terms: []
+    items:
+      - FL-475-0239
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: misleading
+    definition: Misleading means likely to cause a mistaken impression; advertising must not be misleading.
+    source: REP Ref. Brokerage Practice
+    quoted_text: All advertising must be truthful and not misleading.
+    related_terms: []
+    items:
+      - FL-475-0141
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: natural person
+    definition: A natural person is an individual human being, as opposed to a corporation or other
+      legal entity, who can apply for a real estate license.
+    source: "[Fla. Stat. ch. 475]"
+    quoted_text: (1)(a) An applicant for licensure who is a natural person must be at least 18 years of
+      age; hold a high school diploma or its equivalent;
+    related_terms: []
+    items:
+      - FL-475-0192
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: ninety days
+    definition: Ninety days is the period before a license expires when the department must notify the
+      licensee of impending expiration.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Ninety days prior to the expiration, the DBPR shall give notice to the involuntarily
+      inactive licensee.
+    related_terms: []
+    items:
+      - FL-475-0238
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: nonresident
+    definition: Nonresident describes a licensee who is no longer a resident of Florida and must notify
+      the Commission of that change.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Section 475.180(2)(a), F.S. – a resident licensee failed to notify the Commission of
+      becoming a nonresident as prescribed
+    related_terms: []
+    items:
+      - FL-475-0099
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: notification
+    definition: Notification is the act of informing someone in writing, such as by email or registered
+      or certified mail, as required by the Florida Real Estate Commission.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: When an application is denied by the Commission, the applicant shall be notified in
+      writing through a copy of the order by email, or registered or certified mail,
+    related_terms: []
+    items:
+      - FL-475-0099
+      - FL-475-0180
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: null and void
+    definition: Null and void means the license is invalid and no longer effective, requiring the person
+      to requalify by completing the prelicensure course and passing the exam again.
+    source: Fla. Stat. ch. 475
+    quoted_text: The license of any sales associate who does not complete the postlicensure education
+      requirement prior to the first renewal following initial licensure shall be considered null
+      and void.
+    related_terms: []
+    items:
+      - FL-475-0119
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: onsite rental office
+    definition: An onsite rental office is the leasing office located within an apartment community
+      where employees conduct rental activities.
+    source: Fla. Stat. ch. 475
+    quoted_text: works in an onsite rental office of the apartment community in a leasing capacity
+    related_terms: []
+    items:
+      - FL-475-0137
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: opinion of value
     definition: An opinion of value is an estimate of a property's worth that a licensee may give in the
@@ -440,7 +1134,8 @@ entries:
     items:
       - FL-475-0058
       - FL-475-0060
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: ordinary course
     definition: Ordinary course of business means the usual, regular activities that a person or entity
@@ -451,7 +1146,21 @@ entries:
     related_terms: []
     items:
       - FL-475-0060
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: own real property
+    definition: Owning real property means holding title to real estate that one sells, exchanges, or
+      leases on one's own behalf.
+    source: Fla. Stat. ch. 475
+    quoted_text: Any individual, corporation, partnership, trust, joint venture, or other entity which
+      sells, exchanges, or leases its own real property
+    related_terms: []
+    items:
+      - FL-475-0136
+      - FL-475-0250
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: owner
     definition: An owner is a party to a property management agreement.
@@ -460,7 +1169,47 @@ entries:
     related_terms: []
     items:
       - FL-475-0052
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: postlicensure
+    definition: Postlicensure refers to the additional education that a licensed sales associate must
+      complete to maintain or renew their license, as prescribed by the commission.
+    source: Fla. Stat. ch. 475
+    quoted_text: The commission may prescribe a postlicensure education requirement in order for a
+      person to maintain a valid sales associate’s license
+    related_terms: []
+    items:
+      - FL-475-0119
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: postlicensure education
+    definition: Postlicensure education is the commission‑prescribed coursework (up to 45 classroom
+      hours of 50 minutes each) that a sales associate must complete to maintain a valid license
+      before the first renewal.
+    source: Fla. Stat. ch. 475
+    quoted_text: The commission may prescribe a postlicensure education requirement in order for a
+      person to maintain a valid sales associate’s license, which shall not exceed 45 classroom
+      hours of 50 minutes each
+    related_terms: []
+    items:
+      - FL-475-0090
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: prelicensure
+    definition: Prelicensure refers to the initial educational course that a prospective sales associate
+      must complete before becoming licensed.
+    source: Fla. Stat. ch. 475
+    quoted_text: sales associate’s prelicensure course and passing the state examination for licensure
+      as a sales associate.
+    related_terms: []
+    items:
+      - FL-475-0117
+      - FL-475-0196
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: property management
     definition: Property management is a component of a real estate brokerage's scope of practice.
@@ -471,7 +1220,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: public lodging
     definition: Public lodging refers to an establishment licensed under chapter 509 that offers
@@ -485,6 +1235,20 @@ entries:
       - FL-475-0045
     status: draft
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: public welfare
+    definition: Public welfare refers to the interest of the general public that justifies government
+      regulation of real estate professionals.
+    source: Fla. Stat. ch. 475
+    quoted_text: The Legislature deems it necessary in the interest of the public welfare to regulate
+      real estate brokers, sales associates, and schools in this state.
+    related_terms: []
+    items:
+      - FL-475-0253
+      - FL-475-0254
+      - FL-475-0255
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: purchaser
     definition: A purchaser is the party who obtains a certificate of sale and, after the redemption
       period, receives a deed.
@@ -494,7 +1258,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0053
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reactivation
     definition: Reactivation is the process of restoring an inactive real estate license to active
@@ -506,7 +1271,62 @@ entries:
       - FL-475-0038
       - FL-475-0048
       - FL-475-0057
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: real property
+    definition: Real property means any interest or estate in land and any interest in business
+      enterprises or business opportunities, such as leaseholds or mineral rights, but excludes
+      cemetery lots and mobile home lot rentals.
+    source: Fla. Stat. ch. 475
+    quoted_text: “Real property” or “real estate” means any interest or estate in land and any interest
+      in business enterprises or business opportunities, including any assignment, leasehold,
+      subleasehold, or mineral right;
+    related_terms: []
+    items:
+      - FL-475-0194
+      - FL-475-0197
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: receipt
+    definition: A receipt is a written document confirming that a fee has been paid for the rental
+      information list.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Each broker or sales associate who furnishes a rental information list to a prospective
+      tenant for a fee paid by the tenant shall provide such prospective tenant with a written
+      contract or receipt agreement
+    related_terms: []
+    items:
+      - FL-475-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: receiver
+    definition: A receiver is a person appointed by a court to act for the benefit of another party as a
+      fiduciary.
+    source: 42 U.S.C. §§ 9601–9628 (CERCLA)
+    quoted_text: (A) Fiduciary The term "fiduciary"— (i) means a person acting for the benefit of
+      another party as a bona fide— (I) trustee; (II) executor; (III) administrator; (IV) custodian;
+      (V) guardian of estates or guardian ad litem; (VI) receiver;
+    related_terms: []
+    items:
+      - FL-475-0105
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: record
+    definition: A record is any signature, contract, or other document relating to a transaction that
+      must retain its legal effect regardless of format.
+    source: REP Ref. Contracts
+    quoted_text: Federal law provides that a signature, contract, or other record relating to a
+      transaction may not be denied legal effect solely because it is in electronic form
+    related_terms: []
+    items:
+      - FL-475-0103
+      - FL-475-0130
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: referral fee
     definition: A referral fee is a payment made to an unlicensed tenant for introducing a prospective
@@ -516,7 +1336,47 @@ entries:
     related_terms: []
     items:
       - FL-475-0064
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: registration
+    definition: Registration refers to the registration details and fee structure for branch offices as
+      set forth in the Florida Administrative Code.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: CHAPTER 61J2-1 REGISTRATION DETAILS AND FEE STRUCTURE
+    related_terms: []
+    items:
+      - FL-475-0089
+      - FL-475-0193
+      - FL-475-0200
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: reinstatement
+    definition: Reinstatement is the process by which a licensee whose license has been nullified (e.g.,
+      after a hardship extension) can have it restored by submitting a proper application, paying
+      renewal fees, and completing required reactivation education.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Any licensee who has received a hardship extension will remain null and void until a
+      valid reinstatement application for is received with proof of renewal fees and reactivation
+      education.
+    related_terms: []
+    items:
+      - FL-475-0114
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: relationship
+    definition: A relationship in the context of real estate licensing is an agency relationship where
+      one person is authorized to act on behalf of another.
+    source: REP Ref. Agency
+    quoted_text: "**Agency** is a relationship in which one person (the **agent**) is authorized to act
+      on behalf of another (the **principal**) in dealings with third parties"
+    related_terms: []
+    items:
+      - FL-475-0266
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: renewal
     definition: Renewal is the process of extending a license's validity by submitting a request,
@@ -529,7 +1389,57 @@ entries:
     related_terms: []
     items:
       - FL-475-0046
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal notice
+    definition: A renewal notice is a notification sent to a licensee’s address of record reminding them
+      to renew their license.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: A renewal notice will be sent to the licensee’s address of record.
+    related_terms: []
+    items:
+      - FL-475-0171
+      - FL-475-0173
+      - FL-475-0179
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rental information list
+    definition: A rental information list is a compilation of available rental properties that a broker
+      provides to a prospective tenant for a fee.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Each broker or sales associate who furnishes a rental information list to a prospective
+      tenant for a fee paid by the tenant shall provide such prospective tenant with a written
+      contract or receipt agreement
+    related_terms: []
+    items:
+      - FL-475-0142
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: residency
+    definition: A resident licensee is a real estate licensee who maintains their primary residence in Florida.
+    source: Fla. Stat. ch. 475
+    quoted_text: Any resident licensee who becomes a nonresident shall, within 60 days, notify the
+      commission of the change in residency
+    related_terms: []
+    items:
+      - FL-475-0099
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: retention
+    definition: Retention refers to the required period during which records must be kept and preserved.
+    source: REP Ref. Brokerage Practice
+    quoted_text: record-retention period
+    related_terms: []
+    items:
+      - FL-475-0103
+      - FL-475-0130
+      - FL-475-0146
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: rule
     definition: A rule is a legal regulation or standard, such as one that a real estate commission may
@@ -539,7 +1449,8 @@ entries:
     related_terms: []
     items:
       - FL-475-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: sales associate
     definition: A sales associate is a type of licensee who must register with the Florida Real Estate
@@ -550,7 +1461,106 @@ entries:
     related_terms: []
     items:
       - FL-475-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: satisfactory completion
+    definition: Satisfactory completion means finishing the required coursework, but it does not by
+      itself grant a license; the student must also pass the state exam.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: Satisfactory completion of these courses will not entitle any person to receive a
+      license as a real estate broker or sales associate
+    related_terms: []
+    items:
+      - FL-475-0118
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: school permitholder
+    definition: A school permitholder is the individual responsible for a proprietary real estate school
+      who must provide students with contact information for a permitted instructor and post that
+      instructor's schedule.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: the real estate school and school permitholder shall provide to students an address and
+      telephone number of a permitted instructor registered with such school to answer inquiries.
+    related_terms: []
+    items:
+      - FL-475-0129
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: showing
+    definition: Showing is when a licensee presents a property to a prospective buyer, which may lead
+      the buyer to mistakenly believe the licensee is their agent.
+    source: REP Ref. Agency
+    quoted_text: most buyers wrongly believed the licensee showing them property was 'their' agent
+    related_terms: []
+    items:
+      - FL-475-0204
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: signature
+    definition: A signature can be electronic, and if a law requires a signature, an electronic
+      signature satisfies that requirement.
+    source: REP Ref. Contracts
+    quoted_text: Federal law provides that a signature, contract, or other record relating to a
+      transaction may not be denied legal effect solely because it is in electronic form, and that
+      if a law requires a signature, an electronic signature satisfies the requirement.
+    related_terms: []
+    items:
+      - FL-475-0131
+      - FL-475-0148
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single agent
+    definition: A single agent is a real estate licensee who has entered into a relationship with a
+      principal, representing only that party in a transaction.
+    source: "[Fla. Stat. ch. 475]"
+    quoted_text: (h) “Principal” means the party with whom a real estate licensee has entered into a
+      single agent relationship.
+    related_terms: []
+    items:
+      - FL-475-0204
+    status: draft
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: single agent disclosure
+    definition: Single agent disclosure is a written explanation of a single agent's duties that must be
+      provided to a buyer or seller before or at the time of entering into a representation
+      agreement.
+    source: Fla. Stat. ch. 475
+    quoted_text: Duties of a single agent must be fully described and disclosed in writing to a buyer or
+      seller either as a separate and distinct disclosure document or included as part of another
+      document such as a listing agreement or other agreement for representation.
+    related_terms: []
+    items:
+      - FL-475-0150
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: sufficient
+    definition: Sufficient means enough or adequate, as when a single act is sufficient to bring a
+      person within the meaning of the licensing chapter.
+    source: Fla. Stat. ch. 475
+    quoted_text: A single such act is sufficient to bring a person within the meaning of this chapter
+    related_terms: []
+    items:
+      - FL-475-0148
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: suspension
+    definition: Suspension is a disciplinary penalty that temporarily withdraws a licensee's right to
+      practice real estate.
+    source: Fla. Admin. Code ch. 61J2
+    quoted_text: "the order of penalties, ranging from lowest to highest, is: letter of concern,
+      reprimand, fine, probation, suspension, and revocation or denial or application"
+    related_terms: []
+    items:
+      - FL-475-0102
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: tenant
     definition: A tenant is a person who rents property and, when they have engaged a brokerage, is
@@ -561,7 +1571,19 @@ entries:
     related_terms: []
     items:
       - FL-475-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: time limit
+    definition: A time limit is a fixed period after which a right (such as the right of rescission) expires.
+    source: 15 U.S.C. §§ 1601–1667f (TILA)
+    quoted_text: An obligor's right of rescission shall expire three years after the date of
+      consummation of the transaction
+    related_terms: []
+    items:
+      - FL-475-0161
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: timeshare
     definition: A timeshare is an arrangement where the right to use a property unit is divided into
@@ -574,7 +1596,8 @@ entries:
     items:
       - FL-475-0052
       - FL-475-0054
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: transaction
     definition: A transaction is the real estate deal or process in which parties are involved, where
@@ -585,7 +1608,22 @@ entries:
     related_terms: []
     items:
       - FL-475-0043
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: transaction broker
+    definition: A transaction broker is a broker who provides limited representation to a buyer, seller,
+      or both in a real estate transaction without acting as a fiduciary or single agent.
+    source: Fla. Stat. ch. 475
+    quoted_text: “Transaction broker” means a broker who provides limited representation to a buyer, a
+      seller, or both, in a real estate transaction, but does not represent either in a fiduciary
+      capacity or as a single agent.
+    related_terms: []
+    items:
+      - FL-475-0108
+      - FL-475-0135
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: transient occupancy
     definition: Transient occupancy refers to the short-term use or rental of a lodging establishment,
@@ -595,7 +1633,19 @@ entries:
     related_terms: []
     items:
       - FL-475-0045
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: units
+    definition: A unit is a separate residential dwelling, such as a house or apartment, that can be
+      counted toward the limit of one to four units for a principal residence.
+    source: REP Ref. Financing & Closing
+    quoted_text: The property must be the borrower's principal residence (1–4 units)
+    related_terms: []
+    items:
+      - FL-475-0202
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: unlicensed
     definition: An unlicensed person is someone who performs real estate activities for compensation
@@ -606,5 +1656,35 @@ entries:
     related_terms: []
     items:
       - FL-475-0033
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: violation
+    definition: A violation is a breach of a law or rule, such as undisclosed dual agency, which is
+      considered a serious license law violation.
+    source: REP Ref. Agency
+    quoted_text: "**Undisclosed dual agency** — representing both sides without both parties' knowledge
+      and consent — is a serious license law violation and a breach of fiduciary duty that can
+      result in loss of commission, rescission of the transaction, and discipline."
+    related_terms: []
+    items:
+      - FL-475-0147
+      - FL-475-0159
+      - FL-475-0261
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: voluntarily inactive
+    definition: Voluntarily inactive status is the licensure status that results when a licensee applies
+      to be placed on inactive status and pays the required fee.
+    source: Fla. Stat. ch. 475
+    quoted_text: “Voluntarily inactive status” means the licensure status that results when a licensee
+      has applied to the department to be placed on inactive status and has paid the fee prescribed
+      by rule.
+    related_terms: []
+    items:
+      - FL-475-0170
+      - FL-475-0183
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

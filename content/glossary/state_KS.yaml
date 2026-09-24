@@ -1,6 +1,20 @@
 bank: state_KS
-generated_on: 2026-09-10
+generated_on: 2026-09-24
 entries:
+  - term: additional instruction
+    definition: Additional instruction refers to the 12‑hour continuing‑education requirement for
+      license renewal, which must include at least three mandatory hours titled “Kansas required
+      core” and up to nine elective hours.
+    source: Kan. Admin. Regs. §§ 86-1-1–86-1-20
+    quoted_text: (f) The 12 hours of additional instruction required by K.S.A. 58-3046a(f), and
+      amendments thereto, shall consist of at least three hours designated as mandatory hours titled
+      "Kansas required core" and not more than nine hours designated as elective hours.
+    related_terms: []
+    items:
+      - KS-3034-0041
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: administrative procedure act
     definition: The Kansas administrative procedure act requires the commission to give notice and an
       opportunity to be heard before taking certain actions, unless a license application is denied
@@ -12,7 +26,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0013
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: age
     definition: Age refers to the number of years a person has lived, which determines their legal
@@ -22,7 +37,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: aggravating circumstances
     definition: Aggravating circumstances are factors (such as fraud causing substantial financial loss)
@@ -35,7 +51,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0020
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: associate broker
     definition: An associate broker is a person who holds a broker's license but works under another
@@ -46,7 +63,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0008
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: branch office
     definition: A branch office is a secondary location of a real estate brokerage for which the
@@ -56,7 +74,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: broker
     definition: A broker is a licensed individual who, for compensation, acts on behalf of clients to
@@ -69,7 +88,8 @@ entries:
     items:
       - KS-3034-0003
       - KS-3034-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: civil fine
     definition: A civil fine is a monetary penalty that the commission may impose for violations of the
@@ -81,7 +101,20 @@ entries:
     items:
       - KS-3034-0011
       - KS-3034-0015
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: clients
+    definition: A client is the person—such as a seller, buyer, landlord, or tenant—who engages a
+      brokerage and is represented by the broker.
+    source: REP Ref. Agency
+    quoted_text: In real estate brokerage the principal is the **client** (a seller, buyer, landlord, or
+      tenant who has engaged the brokerage), and the agent is the **broker**.
+    related_terms: []
+    items:
+      - KS-3034-0034
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: commission
     definition: The commission is the Kansas Real Estate Commission, the state agency that issues
@@ -92,7 +125,22 @@ entries:
     related_terms: []
     items:
       - KS-3034-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: criminal penalty
+    definition: A criminal penalty is a punishment imposed by law for committing a crime, such as filing
+      a false statement with the commission.
+    source: Kan. Stat. Ann. § 58-3073
+    quoted_text: It shall be unlawful for any person or such person's agent to file with the commission
+      any statement or other document, required under the provisions of K.S.A. 58-3066 to 58-3071 ,
+      inclusive, and amendments of such sections, which is false or untrue or contains any material
+      misstatement of fact.
+    related_terms: []
+    items:
+      - KS-3034-0066
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: deposit
     definition: To deposit means to place money into an account, such as putting a buyer's earnest money
@@ -102,7 +150,31 @@ entries:
     related_terms: []
     items:
       - KS-3034-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: diploma
+    definition: A diploma refers to a high school diploma or its equivalent, which is required for
+      licensure as a broker or salesperson.
+    source: Kan. Stat. Ann. § 58-3039
+    quoted_text: has a high school diploma or its equivalent
+    related_terms: []
+    items:
+      - KS-3034-0036
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: disbursement
+    definition: Disbursement is the payment or distribution of funds from a trust account, such as
+      earnest money, made according to the closing statement when the funds are earned.
+    source: REP Ref. Brokerage Practice
+    quoted_text: The commission portion of a closing disbursement becomes the broker's money only when
+      it is earned and disbursed to the broker under the closing statement;
+    related_terms: []
+    items:
+      - KS-3034-0071
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: earned commission
     definition: An earned commission is a commission that was personally earned while the license was
@@ -114,7 +186,56 @@ entries:
     related_terms: []
     items:
       - KS-3034-0007
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: earnest
+    definition: Earnest money is a deposit made by a buyer to show good faith in a real estate
+      transaction, held in trust until closing.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - KS-3034-0071
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: earnest money
+    definition: Earnest money is a deposit made by a buyer to demonstrate good faith in a real estate
+      transaction, which must be kept separate from the broker's own funds and accounted for.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - KS-3034-0100
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: education
+    definition: Education requirement means the applicant must have a high school diploma or its
+      equivalent to be eligible for a broker or salesperson license.
+    source: Kan. Stat. Ann. § 58-3039
+    quoted_text: has a high school diploma or its equivalent
+    related_terms: []
+    items:
+      - KS-3034-0036
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: effective date
+    definition: The effective date is the date on which a contract, order, or other instrument becomes
+      effective and enforceable.
+    source: Kan. Admin. Regs. §§ 86-3-1–86-3-31
+    quoted_text: after the effective date of each contract in any real estate transaction
+    related_terms: []
+    items:
+      - KS-3034-0034
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: eligibility
     definition: Eligibility refers to meeting the requirements necessary to qualify for something, such
@@ -124,7 +245,37 @@ entries:
     related_terms: []
     items:
       - KS-3034-0025
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: existing license
+    definition: An existing license is the license a salesperson holds at the time a renewal application
+      is filed; filing the application allows the salesperson to keep operating under that license
+      after its expiration date, unless the license has been suspended, revoked, or restricted.
+    source: Kan. Stat. Ann. § 58-3045
+    quoted_text: (d) An application for renewal filed in compliance with the requirements of subsection
+      (b) shall entitle the applicant to continue operating under the applicant's existing license
+      after its specified expiration date, unless such license has been suspended or revoked and has
+      not been reinstated or unless such license is restricted, until such time as the commission
+      determines whether the application fulfills such requirements.
+    related_terms: []
+    items:
+      - KS-3034-0042
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
+  - term: experience
+    definition: Experience means the applicant must have been actively licensed as a salesperson (or
+      equivalent) for at least two years within the three years preceding the broker license
+      application.
+    source: Kan. Stat. Ann. § 58-3039
+    quoted_text: shall have been licensed as a salesperson in this state or as a salesperson or broker
+      in another state, and shall have been actively engaged
+    related_terms: []
+    items:
+      - KS-3034-0037
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: expiration
     definition: Expiration occurs when a real estate license reaches the end of its validity period and
@@ -135,7 +286,18 @@ entries:
     related_terms: []
     items:
       - KS-3034-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: false statement
+    definition: A false statement is a statement of fact that is not true and that another party relies upon.
+    source: REP Ref. Agency
+    quoted_text: A **misrepresentation** is a false statement of fact on which another party relies.
+    related_terms: []
+    items:
+      - KS-3034-0066
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fee
     definition: A fee is a charge paid for a particular service or privilege, such as a referral fee for
@@ -146,7 +308,8 @@ entries:
     items:
       - KS-3034-0026
       - KS-3034-0031
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: fingerprinting
     definition: Fingerprinting is the process of recording a person's fingerprints for a criminal
@@ -157,7 +320,32 @@ entries:
     related_terms: []
     items:
       - KS-3034-0026
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: fraudulent
+    definition: Fraudulent means involving fraudulent misrepresentation, such as failing to disclose
+      information when required, which the law treats as fraud.
+    source: Kan. Stat. Ann. § 58-30,106
+    quoted_text: failure to disclose the information would constitute fraudulent misrepresentation.
+    related_terms: []
+    items:
+      - KS-3034-0069
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: imputed knowledge
+    definition: Imputed knowledge means that a client is not held liable for an agent's
+      misrepresentation unless the client actually knew of the misrepresentation.
+    source: Kan. Stat. Ann. § 58-30,111
+    quoted_text: A client or customer shall not be liable for a misrepresentation or omission by the
+      client's statutory agent or the transaction broker arising out of the agency or transaction
+      broker agreement unless the client or customer knew of the misrepresentation or omission.
+    related_terms: []
+    items:
+      - KS-3034-0097
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: inactive
     definition: Inactive status means a license is temporarily not active, such as when a supervising
@@ -168,7 +356,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: inactive status
     definition: Inactive status is the condition placed on a license by the commission when the
@@ -181,7 +370,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0017
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: incomplete application
     definition: An incomplete application is a license application that lacks required information or
@@ -193,7 +383,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0014
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: individual
     definition: An individual is a natural person, such as a salesperson, distinct from a business
@@ -203,7 +394,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0023
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: injunction
     definition: An injunction is a court order that the Kansas real estate commission may seek to stop
@@ -214,7 +406,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0006
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: interest
     definition: Having an interest in real estate means either owning the property or being an officer,
@@ -227,7 +420,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0004
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: Kansas judicial review act
     definition: The Kansas judicial review act is the law that permits a person to appeal a real estate
@@ -238,7 +432,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0005
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: late fee
     definition: A late fee is an additional charge that must be paid when renewing or reinstating an
@@ -248,7 +443,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0029
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: license
     definition: A real estate license authorizes the holder, for compensation and on behalf of others,
@@ -265,7 +461,8 @@ entries:
       - KS-3034-0027
       - KS-3034-0029
       - KS-3034-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: licensee
     definition: A licensee is a licensed real estate professional who shows property to buyers and,
@@ -276,7 +473,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: limited liability company
     definition: A limited liability company (LLC) is a business entity that provides its owners with
@@ -287,7 +485,71 @@ entries:
     items:
       - KS-3034-0023
       - KS-3034-0028
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: money
+    definition: Money refers to the principal's funds that a broker must keep separate from personal
+      funds and account for in a trust account.
+    source: REP Ref. Agency
+    quoted_text: The agent must keep the principal's money and property separate from the agent's own,
+      keep accurate records, and turn over or account for all funds and documents received in the
+      course of the agency — earnest money, rents, security deposits, keys, documents.
+    related_terms: []
+    items:
+      - KS-3034-0071
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: negligent misrepresentation
+    definition: A false statement made without reasonable grounds for believing it true; the licensee
+      should have verified the information before stating it.
+    source: REP Ref. Brokerage Practice
+    quoted_text: "Negligent misrepresentation: a false statement made without reasonable grounds for
+      believing it true — the licensee should have checked. Remedies include rescission and
+      compensatory damages, plus discipline."
+    related_terms: []
+    items:
+      - KS-3034-0097
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: nontransferable
+    definition: A nontransferable license cannot be used by anyone other than the individual to whom it
+      was issued.
+    source: Kan. Stat. Ann. § 58-3042
+    quoted_text: No real estate license shall give authority to any person other than the person to whom
+      the license is issued.
+    related_terms: []
+    items:
+      - KS-3034-0053
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: offer to purchase
+    definition: An offer to purchase is a buyer's written proposal to buy a property that, once
+      accepted, becomes a binding contract governing the sale from acceptance to closing.
+    source: REP Ref. Contracts
+    quoted_text: The purchase agreement (also called a sales contract, purchase and sale agreement, or
+      offer to purchase) is the bilateral, executory contract that governs the transaction from
+      acceptance to closing.
+    related_terms: []
+    items:
+      - KS-3034-0082
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: original license
+    definition: An original license is the first-time license issued by the Kansas Real Estate
+      Commission to a salesperson or broker.
+    source: Kan. Admin. Regs. §§ 86-1-1–86-1-20
+    quoted_text: The expiration date for each original license issued by the commission shall be the
+      first day of the month of issuance two years after the issuance date.
+    related_terms: []
+    items:
+      - KS-3034-0043
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: pending closings
     definition: Pending closings are real estate transactions awaiting finalization that a broker with
@@ -300,7 +562,20 @@ entries:
     related_terms: []
     items:
       - KS-3034-0021
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: personal knowledge
+    definition: The licensee’s actual awareness of an error, inaccuracy, or omission that could form the
+      basis of a misrepresentation claim.
+    source: Kan. Stat. Ann. § 58-30,111
+    quoted_text: if the licensee does not have personal knowledge of the error, inaccuracy or omission
+      that is the basis for the claim of misrepresentation.
+    related_terms: []
+    items:
+      - KS-3034-0097
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: publicly traded entity
     definition: A publicly traded entity is a company whose shares are traded on a stock exchange, and
@@ -311,7 +586,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0004
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate auction
     definition: Auctioning real estate means conducting or assisting in the sale of property by auction,
@@ -322,7 +598,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0003
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate commission
     definition: The real estate commission is the Kansas state agency that regulates and oversees real
@@ -332,7 +609,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0001
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate fee fund
     definition: The real estate fee fund is the state treasury account into which fees, charges, or
@@ -345,7 +623,8 @@ entries:
     items:
       - KS-3034-0010
       - KS-3034-0011
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: real estate recovery revolving fund
     definition: The real estate recovery revolving fund is a state treasury account that provides
@@ -356,7 +635,21 @@ entries:
     related_terms: []
     items:
       - KS-3034-0002
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: rebate
+    definition: A rebate is a discount or return of part of a payment given to a buyer beyond what is
+      normally offered.
+    source: 15 U.S.C. §§ 1–7 (Sherman Act)
+    quoted_text: any discount, rebate, allowance, or advertising service charge is granted to the
+      purchaser over and above any discount, rebate, allowance, or advertising service charge
+      available at the time of such transaction to said competitors
+    related_terms: []
+    items:
+      - KS-3034-0055
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: reinstatement
     definition: Reinstatement is the process by which an expired or deactivated real estate license is
@@ -368,7 +661,8 @@ entries:
     items:
       - KS-3034-0029
       - KS-3034-0030
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: renewal
     definition: Renewal is the procedure for extending a real estate license before it expires by paying
@@ -378,8 +672,24 @@ entries:
     related_terms: []
     items:
       - KS-3034-0029
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: renewal application
+    definition: A renewal application is the commission‑provided form, filed on or before a license’s
+      expiration date and accompanied by the renewal fee, that initiates the renewal process for a
+      real estate license.
+    source: Kan. Stat. Ann. § 58-3045
+    quoted_text: (b) (1) Each license shall be renewable upon the filing of a renewal application on or
+      before the expiration date. Such application shall be made on a form provided by the
+      commission and accompanied by the renewal fee prescribed by K.S.A. 58-3063 , and amendments
+      thereto.
+    related_terms: []
+    items:
+      - KS-3034-0042
+    status: approved
+    reviewer: auto-publish
+    model: groq/openai/gpt-oss-120b
   - term: statute of limitations
     definition: A statute of limitations is a procedural time limit that bars enforcement of a claim if
       not filed within the prescribed period, making the agreement unenforceable.
@@ -390,7 +700,8 @@ entries:
     related_terms: []
     items:
       - KS-3034-0016
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: supervising broker
     definition: A supervising broker is a broker who creates or establishes a company and is responsible
@@ -402,7 +713,44 @@ entries:
     items:
       - KS-3034-0009
       - KS-3034-0027
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: suspension
+    definition: Suspension is a temporary withdrawal of a real estate license imposed as a disciplinary action.
+    source: REP Ref. Property Condition & Environmental
+    quoted_text: license revocation or suspension, and potential criminal prosecution.
+    related_terms: []
+    items:
+      - KS-3034-0034
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: transaction broker
+    definition: A transaction broker is a facilitator who assists buyers and sellers in a real estate
+      transaction without acting as an agent for either party, a status recognized by statute in
+      many states.
+    source: REP Ref. Agency
+    quoted_text: some define non-agency "transaction broker" or "facilitator" status by statute, and
+      most have enacted statutes that replace or restate common-law duties.
+    related_terms: []
+    items:
+      - KS-3034-0082
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: trust account
+    definition: A trust account is a separate bank account where a broker holds clients' funds such as
+      earnest money, security deposits, and rents, keeping them apart from the brokerage's own
+      operating funds.
+    source: "[REP Ref. Brokerage Practice — § 10.1 Trust (escrow) accounts]"
+    quoted_text: money belonging to others — earnest money, tenant security deposits, rents collected
+      for owners, advance fees — is trust money and must be held in a designated trust or escrow
+      account separate from the firm's operating funds.
+    related_terms: []
+    items:
+      - KS-3034-0100
+    status: draft
     model: nvidia/nvidia/nemotron-3-super-120b-a12b
   - term: voluntary surrender
     definition: Voluntary surrender occurs when a licensee willingly gives up their license, which the
@@ -414,5 +762,21 @@ entries:
     related_terms: []
     items:
       - KS-3034-0018
-    status: quote_verified
+    status: approved
+    reviewer: auto-publish
+    model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  - term: written agency agreement
+    definition: A written agency agreement is a contract in which a broker and client formally establish
+      the broker's authority to act as the client's agent, which must be signed before the broker
+      performs any licensed activities for that client.
+    source: Kan. Stat. Ann. § 58-30,103
+    quoted_text: a broker intending to establish an agency relationship with a seller or landlord shall
+      enter into a written agency agreement with the party to be represented prior to the licensee's
+      engaging in any of the activities enumerated in K.S.A. 58-3035 (f), and amendments thereto, as
+      an employee of, or on behalf of, the seller or landlord
+    related_terms: []
+    items:
+      - KS-3034-0082
+    status: approved
+    reviewer: auto-publish
     model: nvidia/nvidia/nemotron-3-super-120b-a12b

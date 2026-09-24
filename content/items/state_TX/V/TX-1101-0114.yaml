@@ -1,0 +1,41 @@
+id: TX-1101-0114
+jurisdiction: TX
+bank: state_TX
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to TREC rules, under what condition may a broker accept a net listing?
+options:
+  - The principal requests the net listing and appears familiar with current market values.
+  - The broker obtains written consent from the principal’s attorney.
+  - The broker discloses the net amount to the buyer before signing.
+  - The property is appraised by a licensed appraiser within 30 days.
+key: A
+explanation: The rule states a broker may not take net listings unless the principal requires a net
+  listing and the principal appears to be familiar with current market values of real property. The
+  other options describe actions not required by the rule for a net listing.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live §535.16(b)"
+  url: null
+  quoted_text: A broker may not take net listings unless the principal requires a net listing and the
+    principal appears to be familiar with current market values of real property.
+  secondary: []
+terms:
+  - net listing
+  - principal
+  - market values
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24
