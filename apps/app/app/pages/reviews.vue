@@ -9,7 +9,17 @@ const body = ref("");
 const busy = ref(false);
 const err = ref<string | null>(null);
 const list = computed(() => reviews.approved.value ?? []);
-onMounted(() => { void reviews.loadApproved(50); });
+onMounted(() => {
+  void reviews.loadApproved(50);
+  if (auth.signedIn.value) void reviews.load().then(fillMine);
+});
+watch(() => auth.signedIn.value, (on) => { if (on) void reviews.load().then(fillMine); });
+function fillMine() {
+  const mine = reviews.mine.value;
+  if (!mine) return;
+  rating.value = mine.rating;
+  body.value = mine.body;
+}
 const avg = computed(() => (list.value.length ? list.value.reduce((a, r) => a + r.rating, 0) / list.value.length : 0));
 const dist = computed(() => [5, 4, 3, 2, 1].map((n) => ({ n, c: list.value.filter((r) => r.rating === n).length })));
 const fmt = (s: string) => new Date(s).toLocaleDateString(undefined, { month: "short", year: "numeric" });
@@ -18,7 +28,8 @@ async function submit() {
   busy.value = true; err.value = null;
   const r = await reviews.submit(rating.value, body.value.trim());
   busy.value = false;
-  if (!r.ok) { err.value = r.error ?? "Couldn't submit."; return; } rating.value = 0; body.value = ""; pushToast("Thank you. Reviews appear once approved.", "ok");
+  if (!r.ok) { err.value = r.error ?? "Couldn't save your review. Try again."; return; }
+  pushToast("Thank you. Reviews appear once approved.", "ok");
 }
 </script>
 <template>
@@ -75,7 +86,7 @@ async function submit() {
               :error="err"
               aria-label="Review"
             />
-            <AppButton type="submit" variant="primary" :loading="busy">Submit</AppButton>
+            <AppButton type="submit" variant="primary" :loading="busy">{{ reviews.mine.value ? "Update review" : "Submit" }}</AppButton>
             <p class="text-[12px] leading-relaxed text-muted">Shown with your state after approval; never your email.</p>
           </form>
           <div v-else class="grid gap-3">

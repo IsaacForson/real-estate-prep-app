@@ -1,5 +1,6 @@
 <script setup lang="ts">
 /** Glossary: terms for the learner's banks, each grounded in a cited source. */
+import type { GlossaryTerm } from "~/composables/useContent";
 useHead({ title: "Glossary" });
 const content = useContent();
 const studyState = useStudyState();
@@ -8,7 +9,23 @@ const letter = ref<string | null>(null);
 const open = ref<string | null>(null);
 const filterEl = ref<HTMLElement | null>(null);
 const resultsEl = ref<HTMLElement | null>(null);
-onMounted(() => { void content.load(); });
+const liveGlossary = ref<GlossaryTerm[] | null>(null);
+onMounted(async () => {
+  void content.load();
+  const sb = useNuxtApp().$supabase as import("@supabase/supabase-js").SupabaseClient | null;
+  if (!sb) return;
+  const all: GlossaryTerm[] = [];
+  let from = 0;
+  const PAGE = 1000;
+  while (true) {
+    const { data } = await sb.from("glossary").select("bank, term, definition, source, quoted_text, related_terms, items").range(from, from + PAGE - 1);
+    if (!data?.length) break;
+    all.push(...(data as GlossaryTerm[]));
+    if (data.length < PAGE) break;
+    from += PAGE;
+  }
+  if (all.length) liveGlossary.value = all;
+});
 
 /** After a letter or search change, put the first match under the sticky filters. */
 function revealFirst() {
@@ -25,7 +42,8 @@ function revealFirst() {
 watch([letter, () => q.value.trim()], revealFirst);
 const jur = computed(() => studyState.settings.value?.jurisdiction ?? null);
 const banks = computed(() => new Set([jur.value ? `state_${jur.value}` : null, "national_pearsonvue", "national_psi"].filter(Boolean)));
-const all = computed(() => (content.manifest.value?.glossary ?? []).filter((t) => banks.value.has(t.bank)).sort((a, b) => a.term.localeCompare(b.term)));
+const glossarySource = computed(() => liveGlossary.value ?? content.manifest.value?.glossary ?? []);
+const all = computed(() => glossarySource.value.filter((t) => banks.value.has(t.bank)).sort((a, b) => a.term.localeCompare(b.term)));
 const terms = computed(() => {
   const needle = q.value.trim().toLowerCase();
   return all.value.filter((t) => (!needle || t.term.toLowerCase().includes(needle) || t.definition.toLowerCase().includes(needle)) && (!letter.value || t.term[0]?.toUpperCase() === letter.value));

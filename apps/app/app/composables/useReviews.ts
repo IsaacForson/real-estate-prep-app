@@ -7,6 +7,10 @@ import { parseReview, type Review } from "~~/lib/state/contracts";
 
 export type { Review };
 
+function isDuplicateReview(err: { code?: string; message?: string }): boolean {
+  return err.code === "23505" || (err.message ?? "").includes("reviews_user_uniq");
+}
+
 export function useReviews() {
   const supabase = useSupabase();
   const auth = useAuth();
@@ -43,14 +47,29 @@ export function useReviews() {
     const text = body.trim().slice(0, 2000);
     busy.value = true; error.value = null;
     try {
-      const payload = { user_id: uid, rating: r, body: text, status: "pending" as const, jurisdiction: settings.value.jurisdiction || null };
-      const q = mine.value
-        ? supabase.from("reviews").update({ rating: r, body: text, status: "pending", jurisdiction: payload.jurisdiction }).eq("id", mine.value.id).select().maybeSingle()
-        : supabase.from("reviews").insert(payload).select().maybeSingle();
-      const { data, error: err } = await q;
-      if (err) { error.value = err.message; return { ok: false, error: err.message }; }
-      const wasUpdate = !!mine.value;
-      mine.value = parseReview(data) ?? { id: mine.value?.id ?? "", ...payload, created_at: new Date().toISOString(), author: null };
+      // Account never loaded `mine` before, so a second submit always inserted and Postgres
+      // answered with reviews_user_uniq. One review per account: load, then update.
+      if (!mine.value) await load();
+      const jurisdiction = settings.value.jurisdiction || null;
+      const patch = { rating: r, body: text, status: "pending" as const, jurisdiction };
+      const write = () => mine.value
+        ? supabase.from("reviews").update(patch).eq("id", mine.value.id).eq("user_id", uid).select().maybeSingle()
+        : supabase.from("reviews").insert({ user_id: uid, ...patch }).select().maybeSingle();
+      let wasUpdate = !!mine.value;
+      let { data, error: err } = await write();
+      if (err && isDuplicateReview(err) && !wasUpdate) {
+        await load();
+        if (mine.value) {
+          wasUpdate = true;
+          ({ data, error: err } = await write());
+        }
+      }
+      if (err) {
+        const message = "Couldn't save your review. Try again.";
+        error.value = message;
+        return { ok: false, error: message };
+      }
+      mine.value = parseReview(data) ?? { id: mine.value?.id ?? "", user_id: uid, ...patch, created_at: new Date().toISOString(), author: null };
       events.track("review_submitted", { rating: r, length: text.length, update: wasUpdate });
       return { ok: true };
     } finally {

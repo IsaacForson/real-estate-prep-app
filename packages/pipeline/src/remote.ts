@@ -134,6 +134,56 @@ export class SupabaseRemote {
 
 async function safeText(res: Response): Promise<string> { try { return await res.text(); } catch { return ""; } }
 
+// ---------------------------------------------------------------------------
+// Glossary remote publish
+// ---------------------------------------------------------------------------
+
+export interface GlossaryRow {
+  bank: string; term: string; definition: string; source: string;
+  quoted_text: string; related_terms: string[]; items: string[];
+  status: string; model: string | null; reviewer: string | null;
+}
+
+export interface PublishGlossaryResult { upserted: number; banks: number; warnings: string[]; dry_run: boolean }
+
+export async function publishGlossaryRemote(opts: { dryRun?: boolean; remote?: SupabaseRemote; contentDir?: string; log?: (s: string) => void } = {}): Promise<PublishGlossaryResult> {
+  const { readdirSync } = await import("node:fs");
+  const { readFileSync } = await import("node:fs");
+  const YAML = await import("yaml");
+  const contentDir = opts.contentDir ?? CONFIG.contentDir;
+  const log = opts.log ?? (() => {});
+  const glossaryDir = join(contentDir, "glossary");
+  if (!existsSync(glossaryDir)) { log("glossary: no glossary directory"); return { upserted: 0, banks: 0, warnings: ["no glossary directory"], dry_run: !!opts.dryRun }; }
+
+  const rows: GlossaryRow[] = [];
+  const files = readdirSync(glossaryDir).filter((f: string) => f.endsWith(".yaml"));
+  for (const f of files) {
+    const raw = YAML.parse(readFileSync(join(glossaryDir, f), "utf8")) as { bank: string; entries: any[] };
+    if (!raw?.entries?.length) continue;
+    for (const e of raw.entries) {
+      if (e.status !== "approved" && e.status !== "quote_verified") continue;
+      rows.push({
+        bank: raw.bank, term: e.term, definition: e.definition, source: e.source,
+        quoted_text: e.quoted_text, related_terms: e.related_terms ?? [], items: e.items ?? [],
+        status: e.status, model: e.model ?? null, reviewer: e.reviewer ?? null,
+      });
+    }
+  }
+
+  log(`glossary --remote${opts.dryRun ? " (dry run)" : ""}: ${rows.length} terms from ${files.length} banks`);
+  if (opts.dryRun || !rows.length) return { upserted: rows.length, banks: files.length, warnings: [], dry_run: !!opts.dryRun };
+
+  const remote = opts.remote ?? remoteFromEnv();
+  const warnings: string[] = [];
+  for (let i = 0; i < rows.length; i += 200) {
+    const chunk = rows.slice(i, i + 200);
+    const r = await remote.writeRows("glossary", chunk, "upsert");
+    if (r === "missing") { warnings.push("glossary table not found (migration 0026 pending)"); break; }
+  }
+  log(`glossary: ${rows.length} terms upserted${warnings.length ? ` (${warnings.join("; ")})` : ""}`);
+  return { upserted: rows.length, banks: files.length, warnings, dry_run: false };
+}
+
 
 export interface PublishRemoteOptions {
   bank?: string;

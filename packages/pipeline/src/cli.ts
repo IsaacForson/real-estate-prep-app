@@ -19,7 +19,7 @@ import { Item, domainOf } from "@rep/schema";
 import { loadItems } from "@rep/content-lint";
 import { renderAudio } from "./audio.js";
 import { watchSources, renderWatchSummary } from "./watch.js";
-import { publishRemote } from "./remote.js";
+import { publishRemote, publishGlossaryRemote } from "./remote.js";
 import { formsBuild } from "./forms.js";
 import { loadEnv } from "@rep/llm";
 loadEnv();
@@ -249,6 +249,9 @@ async function main() {
         const r = await publishRemote({ bank: positional[0] ?? flag("bank"), dryRun: rest.includes("--dry-run"), forceVersion: rest.includes("--force-version"), backfill: rest.includes("--backfill"), log: (l) => console.log(l) });
         for (const w of r.warnings) console.warn(`warning: ${w}`);
         console.log(`${r.dry_run ? "[dry run] " : ""}uploaded ${r.uploaded} · unchanged ${r.skipped} · retired ${r.unpublished} · item_content rows ${r.content_rows} · alerts ${r.alerts} · version ${r.version ?? "(no new version)"}`);
+        const gr = await publishGlossaryRemote({ dryRun: rest.includes("--dry-run"), log: (l) => console.log(l) });
+        for (const w of gr.warnings) console.warn(`warning: ${w}`);
+        console.log(`${gr.dry_run ? "[dry run] " : ""}glossary: ${gr.upserted} terms from ${gr.banks} banks`);
         break;
       }
       if (!positional[0]) throw new Error("publish <bank> | publish --remote");

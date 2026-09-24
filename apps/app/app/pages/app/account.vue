@@ -37,11 +37,23 @@ async function setLevel(v: string) { await studyState.set({ licenseLevel: v as "
 async function submitReview() {
   if (!rating.value) { err.value = "Pick a star rating."; return; }
   busy.value = true; err.value = null;
+  const updating = !!reviews.mine.value;
   const r = await reviews.submit(rating.value, reviewBody.value.trim());
   busy.value = false;
-  if (!r.ok) { err.value = r.error ?? "Couldn't submit. Try again."; return; }
-  rateSheet.value = false; pushToast("Thank you — your review is in the queue.", "ok");
+  if (!r.ok) { err.value = r.error ?? "Couldn't save your review. Try again."; return; }
+  rateSheet.value = false;
+  pushToast(updating ? "Review updated. It goes back in the queue." : "Thank you — your review is in the queue.", "ok");
 }
+watch(rateSheet, (open) => {
+  if (!open) return;
+  err.value = null;
+  void reviews.load().then(() => {
+    const mine = reviews.mine.value;
+    if (!mine) return;
+    rating.value = mine.rating;
+    reviewBody.value = mine.body;
+  });
+});
 async function redeem() {
   busy.value = true; err.value = null;
   const r = await coupons.redeem(code.value.trim().toUpperCase());
@@ -218,7 +230,7 @@ onMounted(() => { void free.load(); });
           :maxlength="800"
           :error="err"
         />
-        <AppButton type="submit" variant="primary" size="lg" block :loading="busy">Submit review</AppButton>
+        <AppButton type="submit" variant="primary" size="lg" block :loading="busy">{{ reviews.mine.value ? "Update review" : "Submit review" }}</AppButton>
       </form>
     </AppSheet>
 
