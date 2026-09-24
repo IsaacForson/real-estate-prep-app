@@ -1,0 +1,43 @@
+id: AK-88-0133
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Alaska Stat. § 08.88.341, a broker signs an exclusive listing agreement that includes a
+  definite expiration date but also states the agreement will automatically renew for another term
+  unless either party gives written notice. Is this automatic renewal provision enforceable?
+options:
+  - The contract is valid because it includes a definite expiration date.
+  - The contract is invalid because automatic renewal requires a written client agreement.
+  - The contract is valid because the parties can opt out with notice.
+  - The contract is invalid because it lacks a signed expiration date.
+key: B
+explanation: Section 08.88.341 requires that any renewal or extension of an exclusive listing must
+  be by a written agreement signed by the client. An automatic renewal clause that does not require
+  such a written agreement violates this rule. The option stating that the contract is valid because
+  the parties can opt out with notice is incorrect because an opt‑out notice does not satisfy the
+  statutory requirement for a signed written renewal agreement.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.341
+  url: null
+  quoted_text: All real estate exclusive listings or management contracts must have a definite
+    expiration date that may be renewed or extended only by a written agreement signed by the client
+    or the client's authorized representative.
+  secondary: []
+terms:
+  - exclusive listing
+  - expiration date
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

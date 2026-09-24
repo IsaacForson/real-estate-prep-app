@@ -1,0 +1,42 @@
+id: AK-88-0132
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Alaska Stat. § 08.88.361, a broker has a written personal services contract to locate a
+  buyer for a seller’s property. Despite diligent effort, the broker fails to produce any offers,
+  and the seller later sells the property to a relative without the broker’s involvement. Has the
+  broker earned a commission?
+options:
+  - The broker has not earned a commission because the broker did not fulfill the contract terms.
+  - The broker has earned a commission because the contract required only diligent effort.
+  - The broker has not earned a commission because the seller sold to a relative.
+  - The broker has earned a commission because the seller sold the property.
+key: A
+explanation: Under Alaska Stat. § 08.88.361, a commission is earned only when the broker fulfills
+  the terms of the written personal services contract. Because the broker did not produce any offers
+  despite diligent effort, the contract terms were not satisfied, so no commission is earned. The
+  statement that mere diligent effort fulfills the requirement is incorrect.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.361
+  url: null
+  quoted_text: A commission is earned when the real estate broker fulfills the terms of a written
+    personal services contract.
+  secondary: []
+terms:
+  - commission
+  - personal services contract
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

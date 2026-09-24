@@ -1,0 +1,36 @@
+id: AK-88-0128
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under Alaska Stat. § 08.88.361, a personal services contract must be:"
+options:
+  - A written agreement
+  - An oral agreement
+  - A recorded agreement
+  - A notarized agreement
+key: A
+explanation: The statute states that a commission is earned when the broker fulfills the terms of a
+  written personal services contract, indicating the contract must be written. An oral agreement
+  does not satisfy the requirement for a written personal services contract under § 08.88.361.
+citation:
+  source: Alaska Stat. § 08.88.361
+  url: null
+  quoted_text: fulfills the terms of a written personal services contract
+  secondary: []
+terms:
+  - personal services contract
+  - written
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

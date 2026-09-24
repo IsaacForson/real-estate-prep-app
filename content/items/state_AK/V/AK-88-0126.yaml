@@ -1,0 +1,42 @@
+id: AK-88-0126
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Alaska Stat. § 08.88.361, a broker has a written personal services contract to locate a
+  buyer for a seller’s property. The broker presents a qualified buyer, but the seller decides not
+  to sell. Has the broker earned a commission?
+options:
+  - The broker has not earned a commission because the seller changed his mind
+  - The broker has earned a commission because the contract terms were fulfilled
+  - The broker has not earned a commission because the property did not sell
+  - The broker has earned a commission only if a purchase agreement was signed
+key: B
+explanation: Under AS 08.88.361, a commission is earned when the broker fulfills the terms of a
+  written personal services contract. Locating a qualified buyer fulfills the contract terms, so the
+  commission is earned regardless of whether the sale closes. The distractors confuse commission
+  earning with closing the transaction.
+citation:
+  source: Alaska Stat. § 08.88.361
+  url: null
+  quoted_text: A commission is earned when the real estate broker fulfills the terms of a written
+    personal services contract.
+  secondary: []
+terms:
+  - commission
+  - personal services
+  - contract
+  - fulfill
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

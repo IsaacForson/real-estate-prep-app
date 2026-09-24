@@ -1,0 +1,43 @@
+id: AK-88-0115
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An Alaska licensee receives a commission from a transaction and wants to pay a referral fee to
+  a licensed broker from Washington who assisted in finding a buyer. Under AS 08.88.401(e)(1), is
+  this permissible?
+options:
+  - Yes, if the out-of-state licensee assisted in the act requiring a license
+  - No, because payments to out-of-state licensees are prohibited
+  - Yes, but only if the payment is less than half the commission
+  - No, unless the out-of-state licensee is also licensed in Alaska
+key: A
+explanation: The statute permits a licensee to pay a person licensed in another jurisdiction if that
+  person assisted the licensee in performing an act requiring a license. The other options
+  incorrectly prohibit the payment or add unsupported conditions.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.401(e)(1)
+  url: null
+  quoted_text: (1) payments by a licensee to a person licensed to perform real estate activities in
+    another jurisdiction if the other person has assisted the licensee in the performance of an act
+    for which a license is required by this chapter;
+  secondary: []
+terms:
+  - payment
+  - out-of-state
+  - licensee
+  - assisted
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24
