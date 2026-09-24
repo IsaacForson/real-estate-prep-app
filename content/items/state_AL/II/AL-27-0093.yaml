@@ -1,0 +1,43 @@
+id: AL-27-0093
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson licensed under Qualifying Broker XYZ places an online advertisement that reads
+  'Expert Agent – Jane Doe – Helping You Buy or Sell Homes' without displaying the name 'XYZ Realty'
+  in the ad. Under Ala. Code § 34-27-1(b)(15), what violation has occurred?
+options:
+  - Advertising without the qualifying broker's name appearing prominently as required.
+  - Advertising that contains a false promise about guaranteed sale price.
+  - Advertising that includes the qualifying broker's name but in a smaller font than other text.
+  - Advertising that uses the term 'for sale' but omits the property address.
+key: A
+explanation: The rule prohibits a salesperson from advertising as a real estate agent without the
+  qualifying broker's name appearing prominently; the advertisement omits the broker's name
+  entirely, thus violating this provision. The distractor about a smaller font still includes the
+  name, which does not match the scenario of omitting the name.
+citation:
+  source: Ala. Code § 34-27-1 et seq. § 34-27-1(b)(15)
+  url: null
+  quoted_text: advertising himself or herself as a real estate agent without the name or trade name of
+    the qualifying broker or company under whom the salesperson or associate broker is licensed
+    appearing prominently on the advertising
+  secondary: []
+terms:
+  - advertising
+  - qualifying broker
+  - prominent
+  - salesperson
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

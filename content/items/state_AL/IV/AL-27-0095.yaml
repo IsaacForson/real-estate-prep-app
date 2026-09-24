@@ -1,0 +1,41 @@
+id: AL-27-0095
+jurisdiction: AL
+bank: state_AL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Broker Alex holds licenses for Company A located at 100 Main St and Company B located at 200
+  Oak Ave. Alex wishes to be the qualifying broker for both companies. According to Ala. Code §
+  34-27-1(i), is this permissible?
+options:
+  - The arrangement is permissible if both companies provide written consent.
+  - The arrangement is not permissible because the companies do not share the same address.
+  - The arrangement is permissible as long as Alex has been a broker for over five years.
+  - The arrangement is permissible if Alex files the consent with the commission.
+key: B
+explanation: Ala. Code § 34-27-1(i)(3) requires that all broker‑companies for which a person serves
+  as qualifying broker share the same company address. Because Company A is at 100 Main St and
+  Company B is at 200 Oak Ave, the address requirement is not satisfied, making the arrangement
+  impermissible. Written consent, filing a consent form, or the broker’s length of experience do not
+  overcome this statutory limitation.
+citation:
+  source: Ala. Code § 34-27-1(i)(3)
+  url: null
+  quoted_text: All companies for which he or she is and proposes to be the qualifying broker share the
+    same company address.
+  secondary: []
+terms:
+  - qualifying broker
+  - company address
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

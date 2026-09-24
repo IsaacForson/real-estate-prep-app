@@ -1,0 +1,49 @@
+id: AL-27-0084
+jurisdiction: AL
+bank: state_AL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A qualifying broker in Alabama holds both an individual broker license and a company license
+  as the qualifying broker for that company. If the broker legally changes their personal name, what
+  total fee must they pay to update the name on both licenses under Alabama law?
+options:
+  - $75.00
+  - $0.00
+  - $25.00
+  - $50.00
+key: D
+explanation: The fee for a change of personal name of a qualifying broker is $25 for each license on
+  which the name appears. Because the broker holds two licenses (an individual broker license and a
+  company license), the total fee is 2 × $25 = $50. The $25 distractor only accounts for one license
+  and ignores the company license where the name also appears.
+citation:
+  source: Ala. Code § 34-27-34(b)(2)
+  url: null
+  quoted_text: "A fee of twenty-five dollars ($25) shall also be charged for any of the following
+    license changes:"
+  secondary: []
+math:
+  worked_solution: |-
+    Identify number of licenses: 2 (individual broker license and company license).
+    Fee per license: $25.00.
+    Total fee = number of licenses × fee per license = 2 × $25.00 = $50.00.
+  formulas:
+    - total_fee = number_of_licenses × fee_per_license
+  onscreen_calculator_only: false
+terms:
+  - qualifying broker
+  - license
+  - fee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24
