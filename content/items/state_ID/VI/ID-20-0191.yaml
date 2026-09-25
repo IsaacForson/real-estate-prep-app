@@ -1,0 +1,53 @@
+id: ID-20-0191
+jurisdiction: ID
+bank: state_ID
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under Idaho Code § 54-2054(2), a real estate broker may pay a part of a commission to an
+  unlicensed legal business entity only if:"
+options:
+  - The broker may pay a commission to an unlicensed legal business entity only if all of the
+    entity’s shareholders, members or other persons having a similar ownership interest are active
+    real estate licensees and an owner licensed under the broker performed the licensed activities
+    for which the payment is made.
+  - The broker may pay a commission to an unlicensed legal business entity only if all of the
+    entity’s shareholders, members or other persons having a similar ownership interest are active
+    real estate licensees and any unlicensed employee of the broker performed the licensed
+    activities for which the payment is made.
+  - The broker may pay a commission to an unlicensed legal business entity only if at least one of
+    the entity’s shareholders, members or other persons having a similar ownership interest is an
+    active real estate licensee and an owner licensed under the broker performed the licensed
+    activities for which the payment is made.
+  - The broker may pay a commission to an unlicensed legal business entity only if all of the
+    entity’s shareholders, members or other persons having a similar ownership interest are active
+    real estate licensees and the broker performed the licensed activities for which the payment is
+    made, regardless of licensing status.
+key: A
+explanation: Idaho Code § 54-2054(2) permits payment to an unlicensed legal business entity only
+  when all owners are active licensees and an owner licensed under the broker performed the licensed
+  activities. The option stating that an unlicensed employee performed the licensed activities is
+  incorrect because unlicensed individuals cannot perform licensed activities, and the statute
+  requires the work to be done by an owner licensed under the broker.
+citation:
+  source: Idaho Code § 54-2054
+  url: null
+  quoted_text: (a) All of the entity’s shareholders, members or other persons having a similar
+    ownership interest are active real estate licensees; and (b) An owner licensed under the broker
+    performed the licensed activities for which the payment is made.
+  secondary: []
+terms:
+  - fee-splitting
+  - unlicensed entity
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

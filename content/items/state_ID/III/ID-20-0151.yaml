@@ -1,0 +1,48 @@
+id: ID-20-0151
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens a real estate trust account and deposits $150 of firm funds to cover expected
+  bank charges. After a month, the broker incurs $20 in bank charges paid from the account. The
+  broker then deposits an additional $100 of firm funds to replenish the account. What is the new
+  balance of broker or firm funds in the account, and does it comply with Idaho law?
+options:
+  - $230 and permissible
+  - $230 and not permissible
+  - $150 and permissible
+  - $250 and not permissible
+key: A
+explanation: The balance is calculated as $150 initial deposit minus $20 charges plus $100 deposit =
+  $230, which is below the $300 limit for broker or firm funds in a trust account. The distractor
+  '$230 and not permissible' incorrectly states the balance violates the limit.
+citation:
+  source: Idaho Code § 54-2042(7)
+  url: null
+  quoted_text: In no event shall the balance of broker or firm funds in the account exceed three
+    hundred dollars ($300).
+  secondary: []
+math:
+  worked_solution: "Start with $150 deposit. Subtract $20 bank charges: $150 - $20 = $130. Add $100
+    deposit: $130 + $100 = $230."
+  formulas:
+    - Balance = Initial deposit - Charges + Additional deposit
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - broker funds
+  - limit
+  - permissible
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

@@ -1,0 +1,42 @@
+id: ID-20-0157
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to open an interest-bearing trust account for a single transaction. The buyer
+  provides written consent, but the seller does not. According to Idaho Code § 54-2043, may the
+  broker proceed with the interest-bearing trust account?
+options:
+  - The broker may proceed if the transaction closes within 30 days.
+  - The broker may not proceed because interest-bearing accounts are prohibited for single
+    transactions.
+  - The broker may proceed because the buyer's written consent satisfies the requirement.
+  - The broker may not proceed because written direction from both parties is required.
+key: D
+explanation: Section 54-2043 requires written direction from both parties to the transaction before
+  an interest‑bearing trust account may be used for a single transaction. The buyer’s consent alone
+  does not meet this requirement. The distractor about a 30‑day closing period is not mentioned in
+  the statute.
+citation:
+  source: Idaho Code § 54-2043
+  url: null
+  quoted_text: "The broker may deposit funds in a separate, interest-bearing trust account for a
+    single transaction if directed in writing by both parties to the transaction, and only if the
+    following additional requirements are met:"
+  secondary: []
+terms:
+  - interest-bearing trust account
+  - written direction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

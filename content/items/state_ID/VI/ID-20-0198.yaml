@@ -1,0 +1,43 @@
+id: ID-20-0198
+jurisdiction: ID
+bank: state_ID
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson holds an active license from another state but is not licensed in
+  Idaho. Under Idaho Code § 54-2004, how is this individual classified?
+options:
+  - The individual classified as an out-of-state sales associate
+  - The individual classified as an out-of-state broker
+  - The individual classified as having an inactive license
+  - The individual classified as a designated broker
+key: A
+explanation: Idaho Code § 54-2004 defines an 'out-of-state sales associate' as a person who holds
+  the equivalent of an active Idaho salesperson or associate broker license in another jurisdiction
+  and is not licensed in Idaho. Since the individual holds a salesperson-equivalent license, they
+  fit this definition. The distractor describing an out-of-state broker is incorrect because the
+  license held is for salesperson activity, not broker activity.
+citation:
+  source: Idaho Code § 54-2004
+  url: null
+  quoted_text: Out-of-state sales associate means a person who holds the equivalent of an active Idaho
+    salesperson or associate broker license in another jurisdiction who is not licensed as a
+    salesperson or associate broker under this chapter.
+  secondary: []
+terms:
+  - out-of-state
+  - sales
+  - associate
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

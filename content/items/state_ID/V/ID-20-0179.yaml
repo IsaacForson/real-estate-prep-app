@@ -1,0 +1,38 @@
+id: ID-20-0179
+jurisdiction: ID
+bank: state_ID
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to disburse earnest money to the seller for repairs before closing, but the
+  purchase agreement does not specify a condition for such disbursement. According to Idaho Code §
+  54-2046(2), what must the broker have before making this disbursement?
+options:
+  - Written and signed authorization from the parties to the transaction
+  - Written and signed authorization from the broker only
+  - Written and signed authorization from the escrow agent
+  - Written and signed authorization from the lender
+key: A
+explanation: Subsection (2) prohibits any advance disbursement without the required written and
+  signed authorization from the parties to the transaction. Authorization from the broker, escrow
+  agent, or lender does not satisfy this requirement.
+citation:
+  source: Idaho Code § 54-2046
+  url: null
+  quoted_text: written and signed authorization
+  secondary: []
+terms:
+  - disbursement
+  - authorization
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

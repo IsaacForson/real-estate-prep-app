@@ -1,0 +1,38 @@
+id: ID-20-0143
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee pays a fee for a license certificate and then the license is issued. Later they
+  request a refund of that fee. Are they entitled to a refund under Idaho Code § 54-2018(11)?
+options:
+  - No, fees are refundable if application withdrawn
+  - No, fees are nonrefundable after effective date
+  - No, fees are refundable if certificate returned
+  - No, fees are refundable only if license denied
+key: B
+explanation: The statute explicitly states that no licensee is entitled to a refund of any fee after
+  the license or license change has become effective. Therefore, the licensee cannot receive a
+  refund. The other options incorrectly suggest refundability under certain conditions.
+citation:
+  source: Idaho Code § 54-2018(11)
+  url: null
+  quoted_text: No licensee shall be entitled to a refund of any fee after the license or license
+    change has become effective.
+  secondary: []
+terms:
+  - refund
+  - fee
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25
