@@ -1,0 +1,41 @@
+id: DE-2901-0079
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person who held a Delaware salesperson license 7 years ago applies for a public member seat
+  on the Real Estate Commission. Under Del. Code Ann. tit. 24, ch. 29, § 2903(b)(4), is the
+  applicant eligible for appointment?
+options:
+  - The applicant is eligible because the salesperson license expired more than 5 years ago.
+  - The applicant is eligible after completing a continuing education course.
+  - The applicant is eligible if they have not worked for a brokered for a broker in the past 8
+    years.
+  - The applicant is not eligible due to prior licensure within the last 8 years.
+key: D
+explanation: The regulation bars anyone who has been a licensee within the last 8 years from serving
+  as a public member. Since the applicant held a salesperson license 7 years ago, they fall within
+  this prohibition and are ineligible. The claim that expiration after 5 years is sufficient is
+  mistaken; the threshold is 8 years.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2903(b)(4)
+  url: null
+  quoted_text: a public member shall not be, nor have been within the last 8 years prior to the
+    effective date of appointment, a licensee
+  secondary: []
+terms:
+  - public member
+  - licensure restriction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

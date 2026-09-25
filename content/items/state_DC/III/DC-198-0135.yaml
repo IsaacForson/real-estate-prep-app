@@ -1,0 +1,40 @@
+id: DC-198-0135
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under D.C. Code § 42-3404.09(b)(3)(A), who bears liability for failure to provide the notice
+  required by subsection (b)?
+options:
+  - The tenant
+  - The owner
+  - The Mayor
+  - The broker
+key: B
+explanation: The statute states that liability for failure to provide the notice required by this
+  subsection shall lie with the owner and may not attach to the real property. Therefore, the owner
+  is liable. The tenant is not liable under this provision.
+citation:
+  source: D.C. Code § 42-3404.09(b)(3)(A)
+  url: null
+  quoted_text: Liability for failure to provide the notice required by this subsection shall lie with
+    the owner and may not attach to the real property that is the subject of the required notice.
+  secondary: []
+terms:
+  - liability
+  - notice
+  - owner
+  - real property
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

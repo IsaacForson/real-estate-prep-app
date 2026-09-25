@@ -1,0 +1,43 @@
+id: DC-198-0145
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager learns that a client is experiencing financial difficulties and plans to
+  sell the property. The manager informs a prospective buyer about the client's motivation to sell
+  quickly in order to facilitate a sale, without obtaining the client's written consent. Which
+  prohibited act under D.C. Code § 47-2853.197 has the manager committed?
+options:
+  - Made a substantial misrepresentation
+  - Disclosed confidential information without prior written consent
+  - Accepted a fee from someone other than the employing broker
+  - Failed to maintain accurate accounting records
+key: B
+explanation: The manager disclosed the client's confidential personal affairs (financial
+  difficulties) to a third party without the client's prior written consent, which is prohibited by
+  § 47-2853.197(5). The other options describe different prohibited acts not triggered by the
+  scenario.
+citation:
+  source: D.C. Code § 47-2853.197(5)
+  url: null
+  quoted_text: As a property manager, disclosed to a third party confidential information which would
+    be injurious concerning the business or personal affairs of a client without prior written
+    consent of the client, except as may be required or compelled by applicable law or rules;
+  secondary: []
+terms:
+  - confidential
+  - property manager
+  - consent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

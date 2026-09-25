@@ -1,0 +1,45 @@
+id: DC-198-0082
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the Board finds that a licensee committed three separate violations of D.C. Code §
+  47-2853.17, what is the maximum total civil fine the Board may impose under § 47-2853.17(c)(5)?
+options:
+  - The maximum total civil fine is $20,000.
+  - The maximum total civil fine is $15,000.
+  - The maximum total civil fine is $10,000.
+  - The maximum total civil fine is $5,000.
+key: B
+explanation: The statute authorizes a civil fine not exceeding $5,000 for each violation. For three
+  violations, the maximum total fine is 3 × $5,000 = $15,000. The distractors correspond to one,
+  two, or four violations, which are incorrect for the given scenario.
+citation:
+  source: D.C. Code § 47-2853.17(c)(5)
+  url: null
+  quoted_text: Impose a civil fine not to exceed $5,000 for each violation by any applicant, licensee,
+    registrant, person certified, or person permitted by this subchapter to practice in the
+    District.
+  secondary: []
+math:
+  worked_solution: 3 × $5,000 = $15,000
+  formulas:
+    - total fine = number of violations × $5,000
+  onscreen_calculator_only: false
+terms:
+  - civil fine
+  - violation
+  - penalty
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

@@ -1,0 +1,39 @@
+id: DC-198-0116
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to DCMR Title 17, Chapter 26, at **LEAST** how many days before a license expires
+  must the Board send a renewal application to the licensee?
+options:
+  - 60 days
+  - 90 days
+  - 30 days
+  - 45 days
+key: A
+explanation: The rule states that the Board shall send a renewal application at least sixty (60)
+  days prior to the license expiration. Therefore, sixty days is the minimum required notice. Thirty
+  days is insufficient because the rule explicitly requires at least sixty days.
+citation:
+  source: 17 DCMR § 2621.1
+  url: null
+  quoted_text: At least sixty (60) days prior to the expiration of a license, the Board shall send a
+    renewal application
+  secondary: []
+terms:
+  - renewal
+  - notice
+  - license
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

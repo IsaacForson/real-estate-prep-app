@@ -1,0 +1,41 @@
+id: DC-198-0149
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An escrow holder holds earnest money for 120 days before the transaction closes. According to
+  D.C. Code § 42-1704(e), from which day does the escrow begin to earn interest?
+options:
+  - On the 1st day.
+  - On the 30th day.
+  - On the 60th day.
+  - On the 91st day.
+key: D
+explanation: Section 42-1704(e) states that if an escrow is held for 90 days or more, it shall earn
+  interest from the 91st day to the date the transaction is consummated or terminated. Therefore,
+  interest begins on the 91st day, not earlier.
+citation:
+  source: "### D.C. Code §§ 42-1701–42-1709 — D.C. Code Title 42, Ch. 17, Subch. I - Real Estate
+    Brokers' Duties; Real Estate Guaranty and Education Fund — § 42-1704"
+  url: null
+  quoted_text: "If an escrow or trust is held for 90 days or more, it shall earn interest from the
+    91st day to the date the transaction is consummated or terminated, at the highest of the
+    following interest rates:"
+  secondary: []
+terms:
+  - escrow
+  - interest
+  - 91st day
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

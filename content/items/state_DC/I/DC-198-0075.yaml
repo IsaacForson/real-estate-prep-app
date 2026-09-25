@@ -1,0 +1,39 @@
+id: DC-198-0075
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under D.C. Code § 42-1707(c), what is the maximum amount that may be paid from the Real Estate
+  Guaranty and Education Fund to satisfy a final judgment that became final during the fourth year
+  following March 10, 1983?
+options:
+  - $10,000.
+  - $20,000.
+  - $30,000.
+  - $40,000.
+key: D
+explanation: The statute establishes a graduated maximum payment from the Fund based on how many
+  years have passed since March 10, 1983; for the fourth year the limit is $40,000. The $30,000
+  amount applies only to judgments that became final during the third year.
+citation:
+  source: D.C. Code § 42-1707(c)
+  url: null
+  quoted_text: $40,000 ...... Judgment is final during the fourth year following March 10, 1983;
+  secondary: []
+terms:
+  - guaranty fund
+  - maximum payment
+  - judgment year
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

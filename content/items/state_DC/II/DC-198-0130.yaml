@@ -1,0 +1,40 @@
+id: DC-198-0130
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for reinstatement of a suspended license has been denied by the Board. According
+  to 17 DCMR § 2623.6, how many months must the applicant wait before they may submit a new
+  reinstatement application?
+options:
+  - Six (6) months
+  - Ten (10) months
+  - Twelve (12) months
+  - Fifteen (15) months
+key: C
+explanation: The denial rule makes the applicant ineligible for one (1) year, which equals twelve
+  (12) months. The six‑month option incorrectly applies a shorter period that does not match the
+  statutory waiting time.
+citation:
+  source: 17 DCMR ch. 26, § 2623.6
+  url: null
+  quoted_text: A person whose application for reinstatement has been denied shall be ineligible to
+    apply for reinstatement for a period of one (1) year from the date of the denial.
+  secondary: []
+terms:
+  - denial
+  - reinstatement
+  - waiting period
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

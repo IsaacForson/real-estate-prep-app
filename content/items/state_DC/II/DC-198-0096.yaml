@@ -1,0 +1,38 @@
+id: DC-198-0096
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: During a real estate licensing examination, a proctor suspects an applicant of cheating. What
+  is the first action the proctor must take according to DCMR Title 17, Chapter 26?
+options:
+  - Confiscating any materials suspected of being used to cheat
+  - Permitting the applicant to complete the examination
+  - Notifying the testing service and the Commission
+  - Seating the applicant separately for the rest of the exam
+key: D
+explanation: According to 2604.3(a), if necessary the proctor must seat the applicant in a
+  segregated location for the remainder of the examination before taking any other steps.
+  Confiscating materials occurs after seating the applicant, not first.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 § 2604.3
+  url: null
+  quoted_text: If necessary, seat the applicant in a segregated location for the remainder of the examination
+  secondary: []
+terms:
+  - proctor
+  - cheating
+  - exam
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

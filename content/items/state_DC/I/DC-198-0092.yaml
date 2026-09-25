@@ -1,0 +1,40 @@
+id: DC-198-0092
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson has been actively engaged in real estate sales for 6 years but has
+  only lived in the District for 10 months. Is the person eligible to serve as a professional member
+  of the Board of Real Estate?
+options:
+  - The nominee is ineligible because they fail the residency requirement.
+  - The nominee is eligible because they satisfy the experience requirement.
+  - The nominee is ineligible because they lack sufficient sales experience.
+  - The nominee is eligible because they are a current District resident.
+key: A
+explanation: The law requires Board of Real Estate members to have been District residents for at
+  least one year prior to appointment. The nominee has only 10 months of residency, so they do not
+  meet this requirement and are ineligible. The distractor claiming eligibility based on experience
+  is wrong because satisfying the experience requirement does not override the residency mandate.
+citation:
+  source: D.C. Code § 47-2853.07(d)(1)
+  url: null
+  quoted_text: Members of the Board of Real Estate also shall have been residents of the District for
+    at least one year prior to their appointment.
+  secondary: []
+terms:
+  - residency
+  - eligibility
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

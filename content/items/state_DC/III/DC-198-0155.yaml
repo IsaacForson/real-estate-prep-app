@@ -1,0 +1,49 @@
+id: DC-198-0155
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant organization requests an appraisal of a housing accommodation on April 5 and receives
+  the completed appraisal on April 20. Under D.C. Code § 42-3404.02, by how many days is the
+  negotiation period described in § 42-3404.11(2) extended?
+options:
+  - The negotiation period is extended by 15 days.
+  - The negotiation period is extended by 14 days.
+  - The negotiation period is extended by 12 days.
+  - The negotiation period is extended by 10 days.
+key: A
+explanation: The negotiation period is extended by one day for each day from the request date up to
+  but not including the day the appraisal is received. From April 5 to April 20 exclusive yields 15
+  days. The distractor of 14 days results from mistakenly excluding the request date or miscounting
+  the interval.
+citation:
+  source: "D.C. Code §§ 42-3404.01–42-3404.16 — D.C. Code Title 42, Ch. 34, Subch. IV - Rental Housing
+    Conversion and Sale: Tenant Opportunity to Purchase (TOPA) — § 42-3404.02(a-1)(6)"
+  url: null
+  quoted_text: Beginning with the date of a tenant organization request for an appraisal, and for each
+    day thereafter until the tenant organization receives the appraisal, the negotiation period
+    described in § 42-3404.11(2) shall be extended by one day.
+  secondary: []
+math:
+  worked_solution: Subtract request date (April 5) from receipt date (April 20) = 15 days.
+  formulas:
+    - extension = receipt_date - request_date
+  onscreen_calculator_only: false
+terms:
+  - negotiation
+  - extension
+  - appraisal
+  - request
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

@@ -1,0 +1,45 @@
+id: DE-2901-0115
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits earnest money from a client into the broker's personal checking account,
+  which also holds the broker's operating funds. Under Del. Code Ann. tit. 24, ch. 29, does this
+  account qualify as an escrow account?
+options:
+  - The account qualifies as an escrow account because the brokerage organization established it
+  - The account does not qualify as an escrow account because it is not a separate account and is
+    not used solely for the clients' moneys
+  - The account does not qualify as an escrow account because the broker failed to obtain written
+    consent from the client
+  - The account qualifies as an escrow account because the funds belong to the client
+key: B
+explanation: An escrow account must be a separate account established by the brokerage organization
+  used solely for moneys in which clients have an interest (§ 2901(14)). The personal account fails
+  both the separation and exclusive use requirements. Stating that ownership of the funds alone
+  satisfies the definition is incorrect.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2901(14)
+  url: null
+  quoted_text: “Escrow account” means a separate account established by the brokerage organization
+    used solely for moneys in which a broker’s customers or clients have an interest in accordance
+    with the terms of a real estate services transaction
+  secondary: []
+terms:
+  - escrow account
+  - brokerage organization
+  - clients
+  - moneys
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

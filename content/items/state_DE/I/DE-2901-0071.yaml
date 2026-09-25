@@ -1,0 +1,45 @@
+id: DE-2901-0071
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee has been convicted of embezzlement, a crime listed in § 2912(c). The Delaware Real
+  Estate Commission attempts to suspend the license immediately without providing notice or a
+  hearing. Under Del. Code Ann. tit. 24, ch. 29, § 2912(d), may the Commission proceed with the
+  suspension?
+options:
+  - The Commission may suspend the license right after a criminal conviction.
+  - The Commission may not suspend the license until notice and a hearing are provided.
+  - The Commission may suspend the license if the licensee agrees to the action in writing.
+  - The Commission may suspend the license only for crimes involving moral turpitude.
+key: B
+explanation: Section 2912(d) requires that no license be restricted, suspended, or revoked until the
+  licensee has been given notice and an opportunity to be heard. Therefore, the Commission cannot
+  suspend the license without first providing notice and a hearing. The distractor claiming
+  immediate suspension upon conviction ignores this mandatory procedural prerequisite.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2912(d)
+  url: null
+  quoted_text: Subject to the provisions of this chapter and subchapter IV of Chapter 101 of Title 29,
+    no license shall be restricted, suspended or revoked by the Commission, and no licensee’s right
+    to practice real estate services shall be limited by the Commission until such licensee has been
+    given notice, and an opportunity to be heard, in accordance with the Administrative Procedures
+    Act, Chapter 101 of Title 29.
+  secondary: []
+terms:
+  - notice
+  - hearing
+  - suspension
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

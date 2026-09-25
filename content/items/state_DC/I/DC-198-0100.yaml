@@ -1,0 +1,40 @@
+id: DC-198-0100
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker receives an order from the Mayor directing payment from the Real Estate
+  Guaranty and Education Fund to satisfy a judgment against him. What is the immediate effect on his
+  license?
+options:
+  - It is subject to a hearing before any suspension can occur
+  - It remains active until the judgment is fully paid
+  - It is automatically suspended upon issuance of the order
+  - It is revoked after a 30‑day grace period
+key: C
+explanation: Under § 42-1707(g), if the Mayor issues an order directing payment from the Fund toward
+  a judgment against a licensee, the license of that person is automatically suspended upon the
+  issuance of the order. The distractor suggesting a hearing is required before suspension is
+  incorrect because the suspension is immediate and automatic.
+citation:
+  source: D.C. Code §§ 42-1701–42-1709 — D.C. Code Title 42, Ch. 17, Subch. I - Real Estate Brokers'
+    Duties; Real Estate Guaranty and Education Fund — § 42-1707(g)
+  url: null
+  quoted_text: the license of the person shall be automatically suspended upon the issuance of the order.
+  secondary: []
+terms:
+  - license
+  - suspension
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

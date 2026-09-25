@@ -1,0 +1,42 @@
+id: DC-198-0117
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager license is issued on January 15, 2023. According to DCMR Title 17, Chapter
+  26, on what date does the license expire?
+options:
+  - 02/28/2024
+  - 02/28/2025
+  - 03/01/2025
+  - 01/15/2025
+key: B
+explanation: Because the license was issued between January 1 and February 28 of an odd-numbered
+  year, it is valid through the end of the two-year licensing period that begins on March 1 of that
+  year. Thus the period runs from March 1, 2023 to February 28, 2025, making February 28, 2025 the
+  expiration date. February 28, 2024 incorrectly assumes a one-year term.
+citation:
+  source: 17 DCMR § 2620.1
+  url: null
+  quoted_text: A license or certificate issued to a real estate broker, associate real estate broker,
+    or property manager between January 1 and February 28 of an odd-numbered year shall be valid
+    from the date of issuance through the end of the two-year (2) licensing period commencing on
+    March 1 of that year.
+  secondary: []
+terms:
+  - license term
+  - expiration
+  - property manager
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

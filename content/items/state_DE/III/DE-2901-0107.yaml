@@ -1,0 +1,38 @@
+id: DE-2901-0107
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens a branch office and appoints a salesperson with three years of experience as
+  the Designated On-Site Supervisor. Under 24 Del. Admin. Code § 2900-1.3.3, is this permissible?
+options:
+  - Yes, because the salesperson qualifies as a licensee
+  - No, because the supervisor needs five years of continuous experience
+  - Yes, if the broker co-signs the supervisor's continuing education logs
+  - No, because the supervisor must be a broker, not a salesperson
+key: B
+explanation: The rule requires the Designated On-Site Supervisor to be a licensee with a minimum of
+  five years of continuous real estate services experience. A salesperson with only three years does
+  not meet this requirement, regardless of co-signing CE logs or being a broker.
+citation:
+  source: 24 Del. Admin. Code § 2900-1.3.3
+  url: null
+  quoted_text: Pursuant to 29 Del.C. §2919(d), the Designated On-Site Supervisor shall be a Licensee
+    with a minimum of five (5) years of continuous Real Estate Services experience
+  secondary: []
+terms:
+  - supervisor
+  - experience
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

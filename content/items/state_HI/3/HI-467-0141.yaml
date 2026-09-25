@@ -1,0 +1,42 @@
+id: HI-467-0141
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant in Hawaii pays rent by check and requests a receipt from the landlord. According to
+  Hawaii Revised Statutes § 521-43(e), what must the landlord provide?
+options:
+  - A written receipt for the rent paid
+  - A notice posted in the elevator lobby
+  - A copy of the signed rental agreement
+  - A statement of the tax ID number
+key: A
+explanation: "Under Hawaii Revised Statutes § 521‑43(e), when rent is paid by check the landlord
+  must furnish a written receipt if the tenant requests one. Thus the landlord must provide a
+  written receipt for the rent paid. The other answer choices describe unrelated duties: posting a
+  notice in an elevator lobby, providing a copy of the signed rental agreement, and giving a
+  statement of the tax identification number are not required by this subsection."
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Rev. Stat. Chapter 521 - Residential Landlord-Tenant Code
+    (data.capitol.hawaii.gov, section pages concatenated) — § 521-43(e)
+  url: null
+  quoted_text: If rent is paid by check, the landlord shall furnish a receipt therefor, provided a
+    receipt is requested by the tenant.
+  secondary: []
+terms:
+  - receipt
+  - rent
+  - check
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

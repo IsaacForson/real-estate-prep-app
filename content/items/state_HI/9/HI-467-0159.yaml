@@ -1,0 +1,42 @@
+id: HI-467-0159
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "9"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Haw. Rev. Stat. § 467-9(b), which of the following is prohibited in a real estate
+  broker's license name unless approved by the commission?
+options:
+  - The name of a licensed broker employed by the applicant
+  - The name of a franchise registered with the business division
+  - The initials of an unlicensed individual
+  - The name of a broker whose license is held by the applicant
+key: C
+explanation: "The statute prohibits a broker's license name from containing the name, initials, or
+  nickname of an unlicensed person, a salesperson, or a broker whose license is not associated with
+  the applicant. Therefore, the initials of an unlicensed individual are prohibited. The other
+  options describe names that are expressly allowed: a franchise name, a broker whose license is
+  associated, and a licensed broker employed by the applicant."
+citation:
+  source: Haw. Rev. Stat. § 467-9(b)
+  url: null
+  quoted_text: Unless approved by the commission, no real estate broker's license shall be issued
+    under or changed to any trade name, corporate name, or partnership name which contains the name,
+    part of the name, initials, or nickname of
+  secondary: []
+terms:
+  - trade name
+  - initials
+  - unlicensed person
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25
