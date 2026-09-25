@@ -1,0 +1,44 @@
+id: MS-1954-0130
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker accepts an earnest money check from a buyer and later discovers that the check has
+  not been honored by the bank. According to Mississippi Real Estate Commission Rule 3.4, what
+  action must the broker take?
+options:
+  - The broker must immediately notify all parties involved in the transaction.
+  - The broker must wait until the next banking day to inform the buyer.
+  - The broker must deposit the check into a different escrow account.
+  - The broker must retain the check and attempt to re-deposit it.
+key: A
+explanation: Rule 3.4D requires that if a broker, as escrow agent, accepts a check that is later
+  found not to be honored, the broker shall immediately notify all parties involved in the
+  transaction. Thus, immediate notification is mandated. The distractor suggesting the broker wait
+  until the next banking day is incorrect because the rule demands immediate action, not a delay.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.4D
+  url: null
+  quoted_text: If a broker, as escrow agent, accepts a check and later finds that such check has not
+    been honored by the bank on which it was drawn, the broker shall immediately notify all parties
+    involved in the transaction.
+  secondary: []
+terms:
+  - escrow
+  - check
+  - notification
+  - parties
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

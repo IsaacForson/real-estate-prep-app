@@ -1,0 +1,41 @@
+id: AZ-20-0227
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker transfers earnest money from Buyer A's trust account to Buyer B's trust account
+  without obtaining written consent from either party. According to A.R.S. § 32-2151(C)(6), what is
+  the consequence?
+options:
+  - The broker has committed a violation of this chapter
+  - The broker may transfer funds if both parties are related
+  - The broker may proceed if the amounts transferred are equal
+  - The broker must notify the department within 24 hours of the transfer
+key: A
+explanation: The rule prohibits transferring monies between accounts owned by different persons
+  unless each person consents in writing, making the broker's action a violation. The distractor
+  suggesting equality of amounts is incorrect because written consent is required regardless of the
+  transaction size.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151(C)(6)
+  url: null
+  quoted_text: Transferring monies between accounts that are owned by different persons unless each
+    person consents in writing.
+  secondary: []
+terms:
+  - transfer
+  - consent
+  - accounts
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

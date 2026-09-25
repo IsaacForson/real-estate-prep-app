@@ -1,0 +1,43 @@
+id: CT-311-0098
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two brokers have a disagreement over a commission and voluntarily submit the dispute to the
+  Connecticut Real Estate Commission for resolution. According to Connecticut law, what authority
+  does the Commission have?
+options:
+  - The commission lacks authority to act unless the dispute involves a salesperson.
+  - The commission may act as a board of arbitration to decide the dispute.
+  - The commission may only mediate the dispute but cannot decide it.
+  - The commission must refer the dispute to the courts for resolution.
+key: B
+explanation: The statute expressly gives the commission the power to act as a board of arbitration
+  to consider and decide any dispute over commissions arising between brokers or salespersons that
+  is voluntarily submitted by the parties. Hence, the commission may decide the dispute. The
+  distractor suggesting the commission may only mediate is incorrect because the law authorizes a
+  decision, not just mediation.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311f
+  url: null
+  quoted_text: The commission shall have the power to act as a board of arbitration to consider and
+    decide any dispute over commissions arising between brokers or salespersons that is voluntarily
+    submitted to the commission by the parties to such dispute.
+  secondary: []
+terms:
+  - arbitration
+  - dispute
+  - commission
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

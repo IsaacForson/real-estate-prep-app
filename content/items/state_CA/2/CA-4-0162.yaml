@@ -1,0 +1,40 @@
+id: CA-4-0162
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A property owner hires a manager to collect rent and maintain all of the owner's rental
+  properties indefinitely. Under Section 2297 of the Civil Code, how should the manager’s authority
+  be classified?
+options:
+  - A limited agent
+  - A general agent
+  - A special agent
+  - A universal agent
+key: B
+explanation: Under Section 2297, an agent who is not limited to a particular act or transaction is a
+  general agent. Managing rental properties indefinitely involves ongoing duties beyond a single
+  act, so the manager is a general agent. A special agent would apply only to one specific
+  transaction.
+citation:
+  source: Cal. Civ. Code § 2297
+  url: null
+  quoted_text: An agent for a particular act or transaction is called a special agent. All others are
+    general agents.
+  secondary: []
+terms:
+  - general agent
+  - agent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

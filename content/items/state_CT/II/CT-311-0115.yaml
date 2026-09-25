@@ -1,0 +1,50 @@
+id: CT-311-0115
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson's print ad includes the supervising licensee's phone number in 8-point font
+  while the salesperson's phone number is 10-point font. Is this compliant with Conn. Regs
+  §20-328-5a(e)(3)?
+options:
+  - The advertisement is compliant as long as the salesperson's name is also included in the
+    advertisement
+  - The advertisement is non‑compliant because it must also include the supervising licensee's email
+    address
+  - The advertisement is compliant because the supervising licensee's contact information may be
+    smaller than the salesperson's
+  - The advertisement is non‑compliant because the supervising licensee's contact information must
+    be at least the same size as the salesperson's
+key: D
+explanation: The regulation requires the supervising licensee's contact information to be in the
+  same size font or larger than the salesperson's. Using an 8‑point font for the supervisor while
+  the salesperson uses 10‑point violates this requirement, making the ad non‑compliant. The option
+  that claims compliance if the salesperson's name is also included adds an irrelevant condition;
+  the option that says the supervisor's information may be smaller contradicts the rule; and the
+  option that adds an email address requirement introduces a condition not found in the regulation.
+citation:
+  source: "### Regs., Conn. State Agencies §§ 20-328-1a to 20-328-33 — Regulations of Connecticut
+    State Agencies, Title 20 § 20-328 - Real Estate Brokers and Salesmen (eRegulations official PDF)
+    — § 20-328-5a"
+  url: null
+  quoted_text: For any print advertisement, the supervising licensee’s contact information shall both
+    be in the same size font, or a larger size font, as the salesperson’s or associate broker’s
+    contact information.
+  secondary: []
+terms:
+  - font size
+  - advertisement
+  - contact information
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

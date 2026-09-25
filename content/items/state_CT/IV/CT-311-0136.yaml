@@ -1,0 +1,44 @@
+id: CT-311-0136
+jurisdiction: CT
+bank: state_CT
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer receives the Residential Foundation Condition Report and signs the buyer's
+  certification. According to the buyer's certification text in Conn. Gen. Stat. § 20-327b(h)(4),
+  what does the buyer acknowledge regarding the seller's knowledge?
+options:
+  - The buyer acknowledges that the seller remains liable for any undisclosed potential foundation
+    problems
+  - The buyer acknowledges that the seller must repair any foundation issues before the sale closes
+  - The buyer acknowledges that the seller warrants the foundation is free of any structural defects
+  - The buyer acknowledges that the seller lacks knowledge of property parts, including the
+    foundation
+key: D
+explanation: The buyer certification states that the buyer understands there are parts of the
+  property, including the foundation, for which the seller has no knowledge. Thus, the buyer
+  acknowledges the seller's lack of knowledge regarding those parts. The distractor claiming a
+  warranty is incorrect because the text explicitly says the report does not constitute a warranty.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-327b(h)(4)
+  url: null
+  quoted_text: The buyer understands that there are parts of the property, including the foundation,
+    for which the seller has no knowledge and that this report does not encompass those parts.
+  secondary: []
+terms:
+  - buyer
+  - acknowledgment
+  - seller knowledge
+  - disclosure
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

@@ -107,10 +107,11 @@ export class SupabaseRemote {
   }
 
   /** Insert/merge rows; returns "missing" when the table does not exist yet (PostgREST PGRST205 / Postgres 42P01 / 404). */
-  async writeRows(table: string, rows: unknown[], mode: "insert" | "upsert"): Promise<"ok" | "missing"> {
+  async writeRows(table: string, rows: unknown[], mode: "insert" | "upsert", onConflict?: string): Promise<"ok" | "missing"> {
     if (!rows.length) return "ok";
     const prefer = mode === "upsert" ? "resolution=merge-duplicates,return=minimal" : "return=minimal";
-    const res = await this.fetchImpl(`${this.url.replace(/\/$/, "")}/rest/v1/${table}`, { method: "POST", headers: this.headers({ "content-type": "application/json", prefer }), body: JSON.stringify(rows) });
+    const qs = onConflict ? `?on_conflict=${onConflict}` : "";
+    const res = await this.fetchImpl(`${this.url.replace(/\/$/, "")}/rest/v1/${table}${qs}`, { method: "POST", headers: this.headers({ "content-type": "application/json", prefer }), body: JSON.stringify(rows) });
     if (res.ok) return "ok";
     const text = await safeText(res);
     if (res.status === 404 || /PGRST205|42P01|Could not find the table|relation .* does not exist/i.test(text)) return "missing";
@@ -177,7 +178,7 @@ export async function publishGlossaryRemote(opts: { dryRun?: boolean; remote?: S
   const warnings: string[] = [];
   for (let i = 0; i < rows.length; i += 200) {
     const chunk = rows.slice(i, i + 200);
-    const r = await remote.writeRows("glossary", chunk, "upsert");
+    const r = await remote.writeRows("glossary", chunk, "upsert", "bank,term");
     if (r === "missing") { warnings.push("glossary table not found (migration 0026 pending)"); break; }
   }
   log(`glossary: ${rows.length} terms upserted${warnings.length ? ` (${warnings.join("; ")})` : ""}`);

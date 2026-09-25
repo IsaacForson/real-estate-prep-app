@@ -1,0 +1,38 @@
+id: AK-88-0145
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "Under Alaska Stat. § 08.88.351(a)(5), if the commission requests a broker's account records
+  for an investigation, the broker must:"
+options:
+  - Destroy the records to protect client confidentiality
+  - Make the records available to the commission or its designee
+  - Submit the records only after obtaining a court order
+  - Provide a summary of the records instead of the original documents
+key: B
+explanation: The statute obligates the broker to make the requested records available to the
+  commission or its designee when asked for an investigation. Destroying the records would violate
+  the duty to preserve them and is not permitted by the statute.
+citation:
+  source: Alaska Stat. § 08.88.351(a)(5)
+  url: null
+  quoted_text: make available to the commission, on request, account records and all other documents
+  secondary: []
+terms:
+  - commission
+  - inspection
+  - records
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

@@ -1,0 +1,49 @@
+id: AK-88-0170
+jurisdiction: AK
+bank: state_AK
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker of record is temporarily absent from the office and unable to supervise transactions,
+  trust accounts, or licensees. There is no associate broker available. What must the broker of
+  record do to comply with 12 AAC 64.078?
+options:
+  - Enter contract with another broker to supervise and notify commission
+  - Supervise via computer, modem, fax, telephone, email, or video conference
+  - Designate an associate broker to supervise despite their unavailability
+  - Place the broker's license on inactive status until the broker returns
+key: A
+explanation: When an associate broker is not available, the broker of record may enter a written
+  contract with another broker to supervise and must notify the commission on the approved form of
+  the substitute broker's name. The other options either apply only when supervision is possible
+  remotely, propose an impossible designation, or impose a requirement not found in the rule.
+citation:
+  source: 12 Alaska Admin. Code § 64.010 et seq. — Alaska Administrative Code Title 12, Chapter 64 -
+    Real Estate Commission 12 AAC 64.078(b)(2) and (c)
+  url: null
+  quoted_text: (2) in offices where an associate broker is not available, the broker of record may
+    enter into a written contract with another broker to supervise transactions, trust accounts, or
+    licensees including creating and signing transaction documents during the broker of record's
+    absence; the broker temporarily substituting for the broker of record shall remain employed at
+    that person's registered office. (c) Under (b)(1) or (2) of this section, the broker of record
+    shall notify the commission on a form approved by the commission, of the name of the associate
+    broker or broker designated to supervise transactions, trust accounts, or licensees during the
+    broker of record's absence. Both the broker of record and the designated associate broker or
+    broker must sign this form.
+  secondary: []
+terms:
+  - broker
+  - supervision
+  - temporary absence
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

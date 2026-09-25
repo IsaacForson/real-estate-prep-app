@@ -1,0 +1,57 @@
+id: AR-42-0154
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is a 'broker's price opinion'?
+options:
+  - An estimate prepared by a licensee that details the probable selling price of real estate and
+    provides a varying level of detail about the real estate’s condition, market, and neighborhood,
+    and information about sales of comparable real estate.
+  - An estimate prepared by a licensee that details the probable selling price of real estate and
+    provides a varying level of detail about the real estate’s condition, market, and neighborhood,
+    but excludes information about sales of comparable real estate.
+  - An estimate prepared by a licensee that details the appraised value of real estate and provides
+    a varying level of detail about the real estate’s condition, market, and neighborhood, and
+    information about sales of comparable real estate.
+  - An estimate prepared by a licensee that details the probable selling price of real estate and
+    provides a fixed level of detail about the real estate’s condition, market, and neighborhood,
+    and information about sales of comparable real estate.
+key: A
+explanation: The rule defines a broker's price opinion as an estimate prepared by a licensee that
+  details the probable selling price of real estate and includes varying detail about condition,
+  market, neighborhood, and comparable sales. The option that states 'An estimate prepared by a
+  licensee that details the probable selling price of real estate and provides a varying level of
+  detail about the real estate’s condition, market, and neighborhood, and information about sales of
+  comparable real estate.' matches this definition exactly. The option that states 'An estimate
+  prepared by a licensee that details the probable selling price of real estate and provides a
+  varying level of detail about the real estate’s condition, market, and neighborhood, but excludes
+  information about sales of comparable real estate.' incorrectly excludes comparable sales
+  information, which the definition requires.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) § 10.15(a)
+  url: null
+  quoted_text: A “broker’s price opinion” means an estimate prepared by a licensee that details the
+    probable selling price of real estate and provides a varying level of detail about the real
+    estate’s condition, market, and neighborhood, and information about sales of comparable real
+    estate.
+  secondary: []
+terms:
+  - broker's price opinion
+  - estimate
+  - probable selling price
+  - comparable real estate
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

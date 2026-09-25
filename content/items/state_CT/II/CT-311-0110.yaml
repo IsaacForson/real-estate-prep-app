@@ -1,0 +1,39 @@
+id: CT-311-0110
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Connecticut law, what type of real property may a leasing agent engage in leasing or renting?
+options:
+  - Leasing agents may lease or rent residential property only
+  - Leasing agents may lease or rent any property regardless of occupancy
+  - Leasing agents may lease or rent commercial property only
+  - Leasing agents may lease or rent both residential and commercial property
+key: A
+explanation: The statute expressly limits leasing agents to leasing or renting real property that is
+  exclusively used for residential occupancy. Therefore, the correct answer is that they may lease
+  or rent residential property only. The distractor suggesting they may also handle commercial
+  property is incorrect because the law prohibits leasing agents from engaging in any real estate
+  business beyond residential occupancy.
+citation:
+  source: Conn. Gen. Stat. § 20-324 l
+  url: null
+  quoted_text: No leasing agent shall engage in the real estate business except for leasing or renting
+    real property that is exclusively used for residential occupancy.
+  secondary: []
+terms:
+  - leasing agent
+  - residential occupancy
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

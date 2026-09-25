@@ -1,0 +1,39 @@
+id: AR-42-0170
+jurisdiction: AR
+bank: state_AR
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee participates in a real estate auction and is accused of violating auction rules.
+  Which entity has sole jurisdiction over the licensee's actions in the auction?
+options:
+  - The Auctioneer's Licensing Board
+  - The Arkansas Real Estate Commission
+  - The circuit court where the auction is held
+  - The licensee's principal broker
+key: B
+explanation: The statute states that, notwithstanding the requirement for auctioneer licensing, the
+  commission shall have sole jurisdiction over licensees and their actions when participating in
+  real estate auctions. Therefore, the Arkansas Real Estate Commission, not the Auctioneer's
+  Licensing Board, holds exclusive authority.
+citation:
+  source: Ark. Code Ann. § 17-42-203(h)(3)
+  url: null
+  quoted_text: Notwithstanding subdivision (h)(2) of this section, the commission shall have sole
+    jurisdiction over licensees and their actions when participating in real estate auctions
+  secondary: []
+terms:
+  - jurisdiction
+  - auction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

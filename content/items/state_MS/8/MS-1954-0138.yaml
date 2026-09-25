@@ -1,0 +1,44 @@
+id: MS-1954-0138
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker completes a real estate transaction on March 15, 2025. According to Mississippi Real
+  Estate Commission Rule 3.2, until what date must the broker retain the complete records for that
+  transaction?
+options:
+  - The broker must retain the records until March 15, 2027.
+  - The broker must retain the records indefinitely.
+  - The broker must retain the records until March 15, 2026.
+  - The broker must retain the records until March 15, 2028.
+key: D
+explanation: Rule 3.2G mandates that a broker must keep on file for three years following
+  consummation complete records relating to any real estate transaction. Adding three years to the
+  consummation date of March 15, 2025 yields March 15, 2028 as the retention deadline. The
+  distractor proposing a two-year retention period is incorrect because the rule explicitly requires
+  three years, not two.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.2G
+  url: null
+  quoted_text: A real estate broker must keep on file for three years following its consummation,
+    complete records relating to any real estate transaction.
+  secondary: []
+terms:
+  - records
+  - consummation
+  - retention
+  - transaction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

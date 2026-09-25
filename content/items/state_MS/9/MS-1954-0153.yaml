@@ -1,0 +1,41 @@
+id: MS-1954-0153
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "9"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee advertises a property for sale on a flyer that includes the brokerage firm's name
+  but omits the telephone number. According to Mississippi Real Estate Commission Rule 3.3, is this
+  advertising compliant?
+options:
+  - The advertisement is not compliant because it omits the required telephone number.
+  - The advertisement is compliant because it includes the brokerage firm's name.
+  - The advertisement is compliant because it includes the property address.
+  - The advertisement is not compliant because it uses a font size smaller than the Principal
+    Broker's name.
+key: A
+explanation: Rule 3.3 requires that all advertising include the telephone number of the Principal
+  Broker or the Brokerage Firm. Omitting the telephone number violates this requirement, making the
+  advertising non‑compliant regardless of whether the brokerage firm's name is present.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.3
+  url: null
+  quoted_text: All advertising must include the telephone number of the Principal Broker or the Brokerage Firm.
+  secondary: []
+terms:
+  - telephone number
+  - advertising
+  - principal broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

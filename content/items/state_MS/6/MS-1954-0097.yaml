@@ -1,0 +1,45 @@
+id: MS-1954-0097
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker accepts an earnest money check from a buyer on Tuesday. Two days later, the broker's
+  bank informs the broker that the check has been returned for insufficient funds. According to
+  Mississippi Real Estate Commission Rule 3.4(D), what must the broker do?
+options:
+  - The broker may wait until the next banking day to inform the buyer only.
+  - The broker must return the check to the buyer and await a replacement.
+  - The broker must deposit the check into the trust account within one banking day.
+  - The broker must immediately notify all parties involved in the transaction.
+key: D
+explanation: Rule 3.4(D) states that if a broker, as escrow agent, accepts a check and later finds
+  that the check has not been honored by the bank, the broker shall immediately notify all parties
+  involved in the transaction. Therefore, the correct action is to notify all parties promptly. The
+  distractor suggesting the broker should deposit the check into the trust account within one
+  banking day is incorrect because the rule requires notification, not deposit, and a dishonored
+  check cannot be deposited as earnest money.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.4
+  url: null
+  quoted_text: If a broker, as escrow agent, accepts a check and later finds that such check has not
+    been honored by the bank on which it was drawn, the broker shall immediately notify all parties
+    involved in the transaction.
+  secondary: []
+terms:
+  - earnest money
+  - escrow
+  - notification
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

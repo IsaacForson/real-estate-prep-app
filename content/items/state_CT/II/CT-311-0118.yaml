@@ -1,0 +1,41 @@
+id: CT-311-0118
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee hires an unlicensed assistant to handle paperwork and pays them a salary. Under
+  Connecticut law, is the assistant considered affiliated with the licensee?
+options:
+  - It is affiliated because the assistant has an employer-employee relationship with the licensee.
+  - It is not affiliated because the assistant is not a licensed real estate professional.
+  - It is affiliated only if the assistant holds a real estate license.
+  - It is not affiliated because the assistant performs only clerical tasks.
+key: A
+explanation: Conn. Gen. Stat. § 20-311(2) defines ‘affiliated’ as having a working relationship with
+  a real estate licensee by way of an employer‑employee or independent‑contractor relationship.
+  Because the assistant is paid a salary, they have an employer‑employee relationship with the
+  licensee, so they are affiliated. The idea that the assistant is not affiliated because they lack
+  a real estate license is incorrect; affiliation does not depend on the assistant’s licensure.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311(2)
+  url: null
+  quoted_text: “Affiliated” means having a working relationship with a real estate licensee by way of
+    an (A) employer-employee relationship, or (B) independent contractor relationship;
+  secondary: []
+terms:
+  - affiliated
+  - employer-employee relationship
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

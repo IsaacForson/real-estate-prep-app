@@ -1,0 +1,48 @@
+id: AZ-20-0213
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the anticipated appropriated budget for the Arizona real estate department for the
+  succeeding fiscal year is $480,000, what is the maximum amount of revenue that may be derived from
+  fees under the commissioner's annual revision rule?
+options:
+  - $500,000
+  - $528,000
+  - $456,000
+  - $480,000
+key: B
+explanation: The rule requires fee revenue to be no more than 110% of the anticipated appropriated
+  budget. Multiplying $480,000 by 1.10 yields $528,000 as the maximum allowable revenue. The
+  $456,000 distractor reflects mistakenly applying the minimum 95% threshold instead of the maximum.
+citation:
+  source: Ariz. Rev. Stat. § 32-2103(B)
+  url: null
+  quoted_text: the revenue derived from such fees equals at least ninety-five per cent but not more
+    than one hundred ten per cent of the anticipated appropriated budget for the department for the
+    succeeding fiscal year
+  secondary: []
+math:
+  worked_solution: |-
+    Multiply $480,000 by 1.10
+    $480,000 × 1.10 = $528,000
+  formulas:
+    - Revenue = Budget × 1.10
+  onscreen_calculator_only: false
+terms:
+  - fee revision
+  - appropriated budget
+  - revenue
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

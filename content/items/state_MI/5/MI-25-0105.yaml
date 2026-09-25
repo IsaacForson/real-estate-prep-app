@@ -1,0 +1,39 @@
+id: MI-25-0105
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee assists a client in leasing a single-family home for one year. Under the
+  Elliott-Larsen Civil Rights Act, this activity is considered:"
+options:
+  - A loan origination activity
+  - A prohibited discriminatory act
+  - A real estate transaction
+  - A security deposit arrangement
+key: C
+explanation: The Elliott-Larsen Civil Rights Act defines a real estate transaction as the sale,
+  exchange, rental, or lease of real property, or an interest in real property. Leasing a
+  single-family home is a lease of real property, thus it qualifies as a real estate transaction.
+  The activity is not inherently discriminatory, nor does it involve a security deposit or loan
+  origination.
+citation:
+  source: Mich. Comp. Laws § 37.2501
+  url: null
+  quoted_text: Real estate transaction means the sale, exchange, rental, or lease of real property, or
+    an interest in real property.
+  secondary: []
+terms:
+  - real estate transaction
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,37 @@
+id: CT-311-0103
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: How many members of the Connecticut Real Estate Commission must be licensed real estate
+  salespersons at the time of their appointment?
+options:
+  - Four members
+  - Five members
+  - Two members
+  - Three members
+key: C
+explanation: The statute explicitly states that two of the members shall be licensed real estate
+  salespersons at the time of appointment. The distractor "Three members" incorrectly reflects the
+  number of required brokers.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311a(b)
+  url: null
+  quoted_text: two of the members shall be at the time of appointment licensed real estate salespersons
+  secondary: []
+terms:
+  - salesperson
+  - commission
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

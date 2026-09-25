@@ -1,0 +1,39 @@
+id: AK-88-0146
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: According to Alaska Stat. § 08.88.351(a)(3), where must a broker deposit earnest money
+  deposits collected in a transaction?
+options:
+  - A separate trust account in a bank
+  - The broker's personal savings account
+  - The broker's business operating account
+  - The real estate recovery fund account
+key: A
+explanation: The statute directs brokers to deposit earnest money into a separate trust account in a
+  bank, keeping those funds apart from personal or business accounts. Depositing the money into the
+  broker's business operating account would commingle trust funds with operating funds, which the
+  prohibition forbids.
+citation:
+  source: Alaska Stat. § 08.88.351(a)(3)
+  url: null
+  quoted_text: keep a separate trust account in a bank
+  secondary: []
+terms:
+  - trust account
+  - earnest money
+  - broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

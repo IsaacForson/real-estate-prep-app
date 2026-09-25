@@ -1,0 +1,37 @@
+id: CA-4-0160
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to Section 2295 of the Civil Code, whom does an agent represent in dealings with
+  third persons?
+options:
+  - The principal
+  - The broker
+  - The client
+  - The third party
+key: A
+explanation: The statute defines an agent as one who represents another, called the principal, in
+  dealings with third persons. Therefore the agent represents the principal. The third party is the
+  person with whom the agent deals, not the party being represented.
+citation:
+  source: Cal. Civ. Code § 2295
+  url: null
+  quoted_text: An agent is one who represents another, called the principal, in dealings with third persons.
+  secondary: []
+terms:
+  - agent
+  - principal
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

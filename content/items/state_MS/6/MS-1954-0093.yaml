@@ -1,0 +1,47 @@
+id: MS-1954-0093
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker acts as the agent for the seller in a transaction. The seller fails to consummate the
+  deal. What must the broker do with the earnest money deposited by the purchaser under Mississippi
+  Real Estate Commission Rule 3.4(B)?
+options:
+  - The broker must return the entire earnest money deposit to the purchaser and seek compensation
+    from the seller.
+  - The broker may retain a portion of the earnest money as commission if the commission has been
+    earned.
+  - The broker may keep the earnest money in the trust account until the seller can consummate the
+    transaction.
+  - The broker must deposit the earnest money into the broker's own business account to cover
+    service charges.
+key: A
+explanation: Rule 3.4(B) states that when the broker is the seller's agent and the seller fails to
+  consummate, the broker has no right to any portion of the earnest money and must return the entire
+  amount to the purchaser, looking to the seller for compensation. The distractor suggesting the
+  broker may keep a portion as commission contradicts this rule.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 — § 3.4(B)
+  url: null
+  quoted_text: When the broker is the agent for the seller and for any reason the seller fails or is
+    unable to consummate the transaction, the broker has no right to any portion of the earnest
+    money deposited by the purchaser, even if a commission has been earned.
+  secondary: []
+terms:
+  - earnest money
+  - broker
+  - purchaser
+  - commission
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

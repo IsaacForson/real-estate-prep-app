@@ -1,0 +1,39 @@
+id: AZ-20-0219
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Ariz. Rev. Stat. § 32-2157(A), within how many days after service of a notice of hearing
+  must the respondent appear by filing a written answer to the complaint?
+options:
+  - 30 days
+  - 20 days
+  - 15 days
+  - 10 days
+key: B
+explanation: The statute requires the respondent to file a written answer within twenty days after
+  service of a notice of hearing. The ten-day option incorrectly halves the required period, while
+  fifteen- and thirty-day options do not match the specified timeframe.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — § 32-2157
+  url: null
+  quoted_text: Within twenty days after service of a notice of hearing, the respondent shall appear by
+    filing a written answer to the complaint.
+  secondary: []
+terms:
+  - notice
+  - hearing
+  - respondent
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

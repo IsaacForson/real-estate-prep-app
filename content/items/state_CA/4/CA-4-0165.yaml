@@ -1,0 +1,44 @@
+id: CA-4-0165
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to Cal. Civ. Code § 2920.5(d), how is the term 'first lien' defined?
+options:
+  - The most senior mortgage or deed of trust on the property that is the subject of the notice of
+    default or notice of sale.
+  - The mortgage or deed of trust that is recorded first in time, regardless of any notice of
+    default or notice of sale.
+  - The lien that has the highest priority according to the date of recording, irrespective of any
+    notice of default.
+  - The mortgage or deed of trust that secures the loan with the lowest interest rate on the
+    property.
+key: A
+explanation: The definition of ‘first lien’ in Cal. Civ. Code § 2920.5(d) states it is the most
+  senior mortgage or deed of trust on the property that is the subject of the notice of default or
+  notice of sale. One incorrect choice bases seniority solely on the recording date, ignoring the
+  notice requirement. Another incorrect choice also ignores the notice of default or sale condition.
+  The remaining incorrect choice introduces an irrelevant interest‑rate test.
+citation:
+  source: Cal. Civ. Code §§ 2920–2944.10 — Cal. Civil Code - ARTICLE 1. Mortgages in General
+    2920-2944.10 § 2920.5(d)
+  url: null
+  quoted_text: “First lien” means the most senior mortgage or deed of trust on the property that is
+    the subject of the notice of default or notice of sale.
+  secondary: []
+terms:
+  - first lien
+  - mortgage
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

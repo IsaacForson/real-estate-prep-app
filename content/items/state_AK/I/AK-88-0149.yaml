@@ -1,0 +1,38 @@
+id: AK-88-0149
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An associate broker whose principal place of business is Office A also attempts to act as the
+  direct supervisor of Office B, a branch office. According to Alaska Stat. § 08.88.311(a), is this
+  permissible?
+options:
+  - Yes, because an associate broker may supervise any number of branch offices.
+  - No, because an associate broker may serve as direct supervisor at only one office.
+  - Yes, provided the associate broker also holds a broker license.
+  - No, unless the associate broker obtains a temporary permit from the commission.
+key: B
+explanation: The statute limits an associate broker to serving as direct supervisor at only one
+  office; supervising a second branch office exceeds that limit and is not allowed.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.311(a)
+  url: null
+  quoted_text: An associate broker may serve in the capacity of direct supervisor at only one office.
+  secondary: []
+terms:
+  - branch office
+  - associate broker
+tags: []
+status: verified
+reviewer: auto-publish
+verified_on: 2026-09-24
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24
