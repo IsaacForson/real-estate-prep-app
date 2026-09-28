@@ -1,0 +1,40 @@
+id: MI-25-0118
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The department receives a complaint against a real estate salesperson and considers
+  designating an unlicensed department employee to investigate. According to the Michigan
+  Occupational Code, what may the department **NOT** do?
+options:
+  - Close the complaint without investigation
+  - Require the salesperson to attend continuing education
+  - Designate that employee as the investigator
+  - Issue a warning to the salesperson
+key: C
+explanation: MCL 339.201 limits investigators to persons who meet the qualifications for licensure
+  established for an occupation regulated under article 7, 20, or 22. An unlicensed department
+  employee does not meet those qualifications, so the department may not designate that employee as
+  an investigator. The other actions are not prohibited by this provision.
+citation:
+  source: Mich. Comp. Laws § 339.201
+  url: null
+  quoted_text: The department shall designate only those persons who meet the qualifications for
+    licensure established for an occupation regulated under article 7, 20, or 22 to investigate
+    licensees or persons against whom complaints have been lodged.
+  secondary: []
+terms:
+  - investigator
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

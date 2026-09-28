@@ -1,0 +1,49 @@
+id: VA-21-0159
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant who uses a wheelchair requests to keep an assistance animal for emotional support.
+  The landlord knows the tenant's disability but is unsure about the need for the animal. Under the
+  Virginia Fair Housing Law, when may the landlord request additional verification of the
+  disability-related need?
+options:
+  - The landlord may request additional verification only if the tenant's disability is not obvious
+    or known and the tenant has not provided any supporting documentation.
+  - The landlord may request additional verification whenever the tenant requests an assistance
+    animal, regardless of disability visibility.
+  - The landlord may request additional verification if the tenant's disability is known but the
+    disability-related need is not readily apparent.
+  - The landlord may request additional verification only if the tenant provides fraudulent
+    documentation.
+key: C
+explanation: Subsection B permits a request for additional verification when the disability is known
+  but the related need is not readily apparent. The option stating verification is allowed only if
+  the disability is not obvious misstates the rule, as the law also allows verification in the
+  known-disability/unknown-need scenario.
+citation:
+  source: Va. Code Ann. § 36-96.1 et seq. — Code of Virginia Title 36, Chapter 5.1 — Virginia Fair
+    Housing Law — § 36-96.3:1(B)
+  url: null
+  quoted_text: If a person's disability is readily apparent or known to the person receiving the
+    request but the disability-related need is not readily apparent or known, the person receiving
+    the request may ask for additional verification to evaluate the requester's disability-related
+    need.
+  secondary: []
+terms:
+  - assistance animal
+  - reasonable accommodation
+  - verification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

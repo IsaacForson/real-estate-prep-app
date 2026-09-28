@@ -1,0 +1,45 @@
+id: MT-51-0118
+jurisdiction: MT
+bank: state_MT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate salesperson purchases a professional liability policy from an insurer
+  that is not licensed under Title 33 to provide professional liability insurance. According to
+  Montana law, is this policy acceptable to satisfy the licensee's insurance requirement?
+options:
+  - The policy is not acceptable because it must be issued by an insurer licensed under Title 33
+  - The policy is not acceptable unless the licensee obtains written approval from the Board of
+    Realty Regulation
+  - The policy is acceptable if the licensee also obtains prior acts coverage from another source
+  - The policy is acceptable if it meets the minimum per-claim and aggregate limits required by
+    Montana law
+key: A
+explanation: Montana law requires that a professional liability policy be issued by an insurer
+  licensed under Title 33 to provide such coverage. Consequently, a policy purchased from an insurer
+  not licensed under Title 33 does not satisfy the licensee's insurance requirement, even if the
+  policy meets the minimum limits, includes prior acts coverage from another source, or has board
+  approval.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-325(3)(a)
+  url: null
+  quoted_text: be issued by an insurer licensed under Title 33 to provide professional liability insurance
+  secondary: []
+terms:
+  - insurer licensing
+  - title 33
+  - professional liability insurance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

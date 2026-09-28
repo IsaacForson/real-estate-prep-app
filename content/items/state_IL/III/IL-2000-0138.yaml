@@ -1,0 +1,44 @@
+id: IL-2000-0138
+jurisdiction: IL
+bank: state_IL
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee who is also the sole owner of a rental property collects a security deposit from a
+  tenant and holds it in a personal bank account. Under Section 1-10, is this security deposit
+  considered escrow moneys?
+options:
+  - It is not considered escrow moneys because the licensee is also the sole owner of the property
+    being leased
+  - It is considered escrow moneys only if the licensee deposits the funds into a separate trust
+    account
+  - It is considered escrow moneys because it is a security deposit received from a tenant
+  - It is not considered escrow moneys unless the tenant provides written consent to hold the deposit
+key: A
+explanation: The definition of 'escrow moneys' expressly excludes security deposits when the person
+  holding the deposit is also the sole owner of the property being leased. Since the licensee owns
+  the property, the deposit is not escrow moneys. The other options either ignore this exception or
+  add requirements not found in the statute.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) — § 1-10
+  url: null
+  quoted_text: '"Escrow moneys" includes, without limitation, earnest moneys and security deposits,
+    except those security deposits in which the person holding the security deposit is also the sole
+    owner of the property being leased and for which the security deposit is being held.'
+  secondary: []
+terms:
+  - escrow moneys
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

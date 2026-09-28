@@ -1,0 +1,45 @@
+id: MT-51-0094
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate salesperson was licensed and helped a client purchase a home, earning a
+  commission. Six months after closing, the salesperson's license lapsed due to non-renewal. The
+  salesperson then sues the client for the unpaid commission. Under Montana law, what is the likely
+  result?
+options:
+  - The salesperson may not recover because the license was not current at the time of suit
+  - The salesperson may recover if they renew the license before the court hearing
+  - The salesperson may recover because they were licensed at the time the claim arose
+  - The salesperson may recover only if the client agrees to pay after the lawsuit
+key: C
+explanation: Under Mont. Code Ann. § 37-51-401, the right to sue depends on licensure at the time
+  the claim arose, not at the time of suit. Since the salesperson was licensed when the claim arose,
+  they may recover. The option stating that the salesperson may not recover because the license was
+  not current at the time of suit is incorrect because a lapsed license after the claim does not bar
+  recovery.
+citation:
+  source: Mont. Code Ann. § 37-51-401
+  url: null
+  quoted_text: shall not be permitted to bring or maintain any action in the courts for the collection
+    of compensation for the sale or lease or otherwise disposing of real estate without first
+    alleging and proving that such person was a duly licensed real estate broker or real estate
+    salesperson
+  secondary: []
+terms:
+  - license
+  - claim
+  - recover
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

@@ -1,0 +1,42 @@
+id: MT-51-0101
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A county clerk, as part of her official duties, lists and sells surplus county-owned land.
+  Under Montana law, is she required to hold a real estate license?
+options:
+  - Yes, but only if she receives a fee or commission for the sale of the property.
+  - No, because public officials on official duty are exempt from licensing.
+  - No, but she must still complete continuing education hours each year.
+  - Yes, because she is conducting a real estate transaction for compensation.
+key: B
+explanation: Mont. Code Ann. § 37-51-103(1)(f) exempts public officials acting in the conduct of
+  their official duties from licensing requirements. The county clerk's actions are part of her
+  official duties, so no license is needed. The option stating that a license is required only if
+  she receives a fee or commission incorrectly assumes that any real estate transaction for
+  compensation requires a license, ignoring the public official exemption.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-103(1)(f)
+  url: null
+  quoted_text: (f) apply to public officials in the conduct of their official duties;
+  secondary: []
+terms:
+  - public
+  - official
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

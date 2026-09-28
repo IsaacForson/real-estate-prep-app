@@ -1,0 +1,39 @@
+id: VT-2211-0100
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Vermont law, how must a real estate broker maintain trust or escrow accounts relative to
+  the broker’s individual or office account?
+options:
+  - Kept separate and apart from the broker’s account
+  - Kept combined with the broker’s account
+  - Kept in the broker’s personal account
+  - Kept only for transactions over $10,000
+key: A
+explanation: The statute requires trust and escrow accounts to be maintained separate and apart from
+  a broker’s individual or office account. Keeping the funds combined with the broker’s account
+  would violate this rule.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2214(a)
+  url: null
+  quoted_text: Trust and escrow accounts shall be maintained separate and apart from a broker’s
+    individual or office account.
+  secondary: []
+terms:
+  - trust
+  - escrow
+  - account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

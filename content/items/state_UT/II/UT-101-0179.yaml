@@ -1,0 +1,38 @@
+id: UT-101-0179
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a sales agent license fails to disclose a prior misdemeanor on the
+  application. The division's criminal background check reveals the undisclosed conviction. Under
+  Utah Code Ann. § 61-2f-204(1)(e)(ii), what must the division do?
+options:
+  - Place a condition on the license
+  - Review the application
+  - Revoke the license
+  - Place a restriction on the license
+key: B
+explanation: The statute states that if a criminal background check discloses that an applicant
+  fails to accurately disclose a criminal history, the division shall review the application. The
+  other actions—placing a condition, restriction, or revoking the license—are permissive, not
+  required, and therefore incorrect as the mandatory step.
+citation:
+  source: Utah Code Ann. § 61-2f-204(1)(e)(ii)
+  url: null
+  quoted_text: shall review the application
+  secondary: []
+terms:
+  - criminal background check
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

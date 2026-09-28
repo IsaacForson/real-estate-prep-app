@@ -1,0 +1,46 @@
+id: KS-3034-0139
+jurisdiction: KS
+bank: state_KS
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker helps a buyer submit an offer to purchase a house but never provides a written agency
+  agreement. The seller later accepts the offer and signs the purchase contract. Under Kansas law,
+  what effect does the broker's failure to provide a written agency agreement have on the
+  enforceability of the purchase contract?
+options:
+  - The purchase contract is unenforceable as a defense to the broker's claim for commission.
+  - The purchase contract is voidable at the buyer's option despite the missing agency agreement.
+  - The purchase contract is void because no written agency agreement was ever provided.
+  - The purchase contract remains enforceable; failure to provide a written agency agreement does
+    not void it.
+key: D
+explanation: K.S.A. 58-30,101(b) states that failure to comply with any requirement of the act or
+  its rules does not by itself render any agreement void or voidable, nor does it constitute a
+  defense to enforcement. Therefore the purchase contract remains enforceable. The option suggesting
+  the contract is voidable is incorrect because the statute explicitly prohibits that outcome.
+citation:
+  source: Kan. Stat. Ann. § 58-30,101(b)
+  url: null
+  quoted_text: Failure to comply with any requirement of K.S.A. 58-30,103 or K.S.A. 58-30,110 , and
+    amendments thereto, or rules and regulations adopted thereunder, shall not by itself render any
+    agreement void or voidable nor shall it constitute a defense to any action to enforce such
+    agreement or any action for breach of such agreement.
+  secondary: []
+terms:
+  - agency agreement
+  - void
+  - voidable
+  - enforceability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

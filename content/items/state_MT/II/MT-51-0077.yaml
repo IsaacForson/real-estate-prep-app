@@ -1,0 +1,48 @@
+id: MT-51-0077
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson applicant is 19 years old, has completed two years of high school, has finished
+  70 classroom hours in an approved course, and has obtained a written recommendation from a
+  licensed broker with a supervising broker endorsement. Assuming all other requirements are
+  satisfied, is the applicant eligible for a salesperson license under Montana law?
+options:
+  - The applicant is eligible because the completed hours fall within the 60‑80 range and a broker
+    recommendation is provided.
+  - The applicant is ineligible because the completed hours exceed the maximum allowed.
+  - The applicant is ineligible because the completed hours are below the minimum required.
+  - The applicant is eligible only if the applicant also completes continuing education.
+key: A
+explanation: Montana law requires a salesperson applicant to provide written evidence of completing
+  between 60 and 80 classroom or equivalent hours and to submit a recommendation from a licensed
+  broker with a supervising broker endorsement. The applicant has 70 hours, which is within the
+  required range, and has the required broker recommendation, so the applicant meets the licensing
+  criteria. The statement that the hours exceed the maximum is incorrect because 70 does not exceed
+  80. The statement that the hours are below the minimum is incorrect because 70 meets the minimum
+  of 60. Continuing education is not a prerequisite for initial licensure, so eligibility does not
+  depend on it. (Mont. Code Ann. § 37‑51‑302(4)(a)(iv))
+citation:
+  source: Mont. Code Ann. § 37-51-302(4)(a)(iv)
+  url: null
+  quoted_text: shall furnish written evidence that the applicant has completed between 60 and 80
+    classroom or equivalent hours, as set by the board.
+  secondary: []
+terms:
+  - salesperson
+  - hours
+  - recommendation
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

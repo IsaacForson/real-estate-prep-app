@@ -1,0 +1,41 @@
+id: MI-25-0133
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Michigan's usury act, how must interest on a mortgage loan or land contract be computed?
+options:
+  - A flat fee added to the principal at closing
+  - Interest computed only on unpaid balances
+  - Interest added or deducted in advance from proceeds
+  - Interest based on original loan amount
+key: B
+explanation: Mich. Comp. Laws § 438.31c(9) requires that interest on a mortgage loan or land
+  contract be computed only on the basis of unpaid balances. Options describing interest added or
+  deducted in advance, a flat fee added at closing, or interest based on the original loan amount
+  are prohibited because they compute interest in advance or on the original principal. Therefore,
+  the option stating that interest is computed only on unpaid balances correctly reflects the rule.
+citation:
+  source: Mich. Comp. Laws § 438.31c(9)
+  url: null
+  quoted_text: A mortgage loan or land contract made under this act shall not provide for a rate of
+    interest added or deducted in advance and interest on the mortgage loan or land contract shall
+    be computed from time to time only on the basis of unpaid balances.
+  secondary: []
+terms:
+  - interest
+  - computation
+  - unpaid balances
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

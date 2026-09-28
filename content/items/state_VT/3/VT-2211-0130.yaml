@@ -1,0 +1,46 @@
+id: VT-2211-0130
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker assigns an unlicensed assistant to negotiate purchase agreements with clients,
+  knowing the assistant has no real estate license or training. Under 3 V.S.A. § 129a(a)(6), what is
+  the consequence?
+options:
+  - It is permissible because the broker supervises the assistant’s work on all client transactions.
+  - It is unprofessional conduct because the broker delegated duties to an unlicensed assistant.
+  - It is allowed if the assistant receives training from the broker under supervision.
+  - It is unprofessional conduct only if the assistant’s actions cause harm to the client.
+key: B
+explanation: The rule prohibits delegating professional responsibilities to a person whom the
+  licensee knows or has reason to know is not qualified by training, experience, education, or
+  licensing credentials. Since the broker knowingly assigned an unlicensed assistant to negotiate,
+  the conduct is unprofessional. The option suggesting it is allowed if the assistant receives
+  training is incorrect because training does not confer the required licensure or qualification to
+  perform negotiated acts.
+citation:
+  source: 3 V.S.A. § 129a(a)(6)
+  url: null
+  quoted_text: Delegating professional responsibilities, including the delivery of health care
+    services, to a person whom the licensed professional knows, or has reason to know, is not
+    qualified by training, experience, education, or licensing credentials to perform them, or
+    knowingly providing professional supervision or serving as a preceptor to a person who has not
+    been licensed or registered as required by the laws of that person’s profession.
+  secondary: []
+terms:
+  - delegate
+  - unqualified
+  - responsibilities
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

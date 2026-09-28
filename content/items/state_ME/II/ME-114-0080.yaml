@@ -1,0 +1,44 @@
+id: ME-114-0080
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Maine brokerage agency's written listing agreement with a seller expires on June 30. The
+  agreement contains a clause giving the agency a right to its fee for any sale to a buyer the
+  agency introduced, with that right lasting nine months after expiration. Under 32 M.R.S. §
+  13177-A, this clause is:"
+options:
+  - Enforceable only for the first six months after the agreement expires
+  - Enforceable for the full nine months because the seller signed it
+  - Void entirely because fee rights cannot survive expiration
+  - Enforceable only if the buyer was introduced before expiration
+key: A
+explanation: Section 13177-A(2) provides that any brokerage agreement provision extending an
+  agency's right to a fee following expiration may not extend that right beyond 6 months, so the
+  clause is enforceable, if at all, only through December 30 — six months after the June 30
+  expiration. The seller's signature cannot validate the extra three months because the statute caps
+  the extension regardless of consent. The clause is not void entirely; the statute limits, rather
+  than prohibits, post-expiration fee rights.
+citation:
+  source: 32 M.R.S. § 13177-A(2)
+  url: null
+  quoted_text: Any brokerage agreement provision extending a real estate brokerage agency's right to a
+    fee following expiration of the brokerage agreement may not extend that right beyond 6 months.
+  secondary: []
+terms:
+  - brokerage agreement
+  - compensation
+  - expiration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

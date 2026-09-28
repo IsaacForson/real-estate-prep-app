@@ -1,0 +1,39 @@
+id: IN-1-0191
+jurisdiction: IN
+bank: state_IN
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker serves as branch manager for two different branch offices of the same broker company.
+  Per 876 IAC § 8-1-2, is this permissible?
+options:
+  - Limited to one branch office
+  - Only if offices are in different counties
+  - Permitted to manage more than one office
+  - Requires an additional fee
+key: C
+explanation: The rule explicitly states that an individual broker may be a branch manager of more
+  than one branch office under this section. Therefore serving as branch manager for two offices is
+  allowed. The distractor suggesting a limit to one branch office contradicts the permissive
+  language of the rule.
+citation:
+  source: 876 Ind. Admin. Code 8 § 8-1-2
+  url: null
+  quoted_text: An individual broker may be a branch manager of more than one (1) branch office under
+    this section.
+  secondary: []
+terms:
+  - branch manager
+  - association
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

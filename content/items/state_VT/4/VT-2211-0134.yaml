@@ -1,0 +1,38 @@
+id: VT-2211-0134
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A Vermont real estate licensee changes their email address and does not notify the Office of
+  Professional Regulation within 30 days. Under Vermont law, this conduct is:"
+options:
+  - Permitted because email is not a mailing address
+  - Considered unprofessional conduct under subsection (14)
+  - Allowed if the licensee updates their website instead
+  - Subject only to a fine after a hearing or order
+key: B
+explanation: The rule requires reporting any change of email within 30 days; failure is
+  unprofessional conduct. The distractor claiming email is not a mailing address is wrong because
+  email is explicitly listed.
+citation:
+  source: "3 V.S.A. ch. 5 — 3 V.S.A. Chapter 5 — Secretary of State (Subchapter 3: Office of
+    Professional Regulation, incl. § 129a Unprofessional conduct) — § 129(14)"
+  url: null
+  quoted_text: Failing to report to the Office within 30 days a change of name, email, or mailing address.
+  secondary: []
+terms:
+  - email
+  - report
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

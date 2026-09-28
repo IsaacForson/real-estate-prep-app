@@ -1,0 +1,43 @@
+id: WA-85-0078
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker sues a client for commission after completing a sale but was never licensed. Under
+  RCW 18.85.331, can the broker recover compensation through a lawsuit?
+options:
+  - The broker cannot recover compensation because a license was lacking at the time of the
+    transaction.
+  - The broker can recover compensation because the services were performed.
+  - The broker cannot recover compensation because the client refused to pay.
+  - The broker can recover compensation because the suit was filed within the statute of limitations.
+key: A
+explanation: RCW 18.85.331 bars a suit for compensation unless the plaintiff was a duly licensed
+  broker before offering to perform the transaction. Since the broker was unlicensed, recovery is
+  barred. The claim that performing services alone entitles the broker to recover compensation is
+  incorrect because the licensing requirement is a prerequisite for any suit.
+citation:
+  source: Wash. Rev. Code § 18.85.331
+  url: null
+  quoted_text: No suit or action shall be brought for the collection of compensation as a real estate
+    broker, real estate firm, managing broker, or designated broker, without alleging and proving
+    that the plaintiff was a duly licensed real estate broker, managing broker, or real estate firm
+    before the time of offering to perform any real estate transaction or procuring any promise or
+    contract for the payment of compensation for any contemplated real estate transaction.
+  secondary: []
+terms:
+  - license
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

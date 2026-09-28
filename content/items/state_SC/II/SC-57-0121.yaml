@@ -1,0 +1,43 @@
+id: SC-57-0121
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A South Carolina resident licensee wants to pay a referral fee to a brokerage licensed in
+  North Carolina that also lists and sells homes in South Carolina for commission. Under S.C. Code
+  Ann. § 40-57-120(E), is this payment permitted?
+options:
+  - The payment is permitted because the brokerage holds a license in another state.
+  - The payment is not permitted because the brokerage conducts real estate brokerage services in
+    South Carolina for which a fee is paid.
+  - The payment is permitted if the referral fee does not exceed fifty percent of the commission.
+  - The payment is not permitted unless the resident licensee first obtains written consent from the
+    commission.
+key: B
+explanation: The rule allows a referral fee only when the out‑of‑state brokerage does not conduct
+  real estate brokerage services in South Carolina for which a fee, compensation, or commission is
+  paid. The distractor "permitted because the brokerage holds a license in another state" overlooks
+  the required limitation on the brokerage’s in‑state activity.
+citation:
+  source: S.C. Code Ann. § 40-57-120(E)
+  url: null
+  quoted_text: if that brokerage's license does not conduct, in this State, a real estate brokerage
+    service for which a fee, compensation, or commission is paid
+  secondary: []
+terms:
+  - referral fee
+  - out-of-state brokerage
+  - brokerage service
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

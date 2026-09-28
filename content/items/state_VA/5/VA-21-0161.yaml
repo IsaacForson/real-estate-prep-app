@@ -1,0 +1,40 @@
+id: VA-21-0161
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager threatens to raise rent for a tenant who filed a fair housing complaint.
+  Under the Virginia Fair Housing Law, is the property manager’s action lawful?
+options:
+  - Yes, because rent increases are permitted under Virginia law
+  - No, because threatening a tenant for exercising a fair housing right is unlawful
+  - Yes, if the tenant’s lease permits rent increases under Virginia law
+  - No, only if the threat is based on a protected class under Virginia law
+key: B
+explanation: Threatening a tenant for exercising a fair housing right constitutes coercion or
+  intimidation, which is prohibited by Va. Code Ann. § 36-96.5. The distractor that focuses on rent
+  increases being permitted misses the point that the threat itself is an unlawful retaliatory act
+  regardless of the rent increase's legality.
+citation:
+  source: Va. Code Ann. § 36-96.5
+  url: null
+  quoted_text: to coerce, intimidate, threaten, or interfere with any person in the exercise or
+    enjoyment of, or on account of his having exercised or enjoyed, or on the account of his having
+    aided or encouraged any other person in the exercise or enjoyment of, any right granted or
+    protected by this chapter.
+  secondary: []
+terms:
+  - coercion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

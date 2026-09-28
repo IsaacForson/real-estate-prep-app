@@ -1,0 +1,40 @@
+id: VA-21-0103
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives their license on June 10. By what date must they complete the 30-hour
+  post-license curriculum to avoid having their license placed on inactive status?
+options:
+  - June 30 of the following year
+  - May 31 of the following year
+  - July 31 of the following year
+  - April 30 of the following year
+key: A
+explanation: The rule mandates completion within one year from the last day of the month the license
+  was issued; a June 10 license gives a deadline of June 30 the following year. Choosing May 31
+  mistakenly uses the last day of the prior month.
+citation:
+  source: Va. Code Ann. § 54.1-2105.01.A
+  url: null
+  quoted_text: Failure of a new licensee to complete the 30-hour post-licensure curriculum within one
+    year from the last day of the month in which his license was issued shall result in the license
+    being placed on inactive status by the Board until the curriculum has been completed.
+  secondary: []
+terms:
+  - postlicense education
+  - licensure
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

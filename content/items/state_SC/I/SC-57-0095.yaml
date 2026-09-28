@@ -1,0 +1,43 @@
+id: SC-57-0095
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A prospective buyer tours homes with a licensee but never signs a written agency agreement.
+  Under S.C. Code Ann. § 40-57-30(13), the buyer is:"
+options:
+  - The buyer is considered a customer.
+  - The buyer is considered a client.
+  - The buyer is considered a subagent.
+  - The buyer is considered a broker-in-charge.
+key: A
+explanation: S.C. Code Ann. § 40‑57‑30(13) defines a customer as a buyer, seller, landlord, or
+  tenant who uses a licensee’s services without establishing an agency relationship through a
+  written agreement. Because the prospective buyer only toured homes and never signed a written
+  agency agreement, the buyer meets that definition and is a customer. A client, on the other hand,
+  requires a written agency agreement as defined in subsection (10), so labeling the buyer as a
+  client is incorrect.
+citation:
+  source: S.C. Code Ann. § 40-57-30(13)
+  url: null
+  quoted_text: "\"Customer\" means a buyer, seller, landlord, or tenant who uses the services of a
+    real estate licensee but does not establish an agency relationship through a written agency
+    agreement with the licensee's real estate brokerage firm."
+  secondary: []
+terms:
+  - customer
+  - client
+  - agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

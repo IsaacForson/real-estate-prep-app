@@ -1,0 +1,44 @@
+id: MS-1954-0177
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi broker enters into a cooperative agreement with an out-of-state broker to sell a
+  Mississippi property but forgets to file a copy of the agreement with the Mississippi Real Estate
+  Commission within ten days. What is the status of the Mississippi broker's action under Miss. Code
+  Ann. § 73-35-11?
+options:
+  - The Mississippi broker has violated the law by failing to file the agreement within ten days
+  - The Mississippi broker is in compliance because filing is only required if the agreement
+    includes a commission split
+  - The Mississippi broker may file the agreement at any time before closing without penalty
+  - The Mississippi broker must file the agreement within thirty days to avoid penalty
+key: A
+explanation: The law mandates that the Mississippi broker file a copy of each cooperative agreement
+  within ten days; failure to do so violates the statute. The distractor claiming filing is only
+  required if a commission split exists is incorrect because the filing requirement applies to all
+  cooperative agreements under this section.
+citation:
+  source: Miss. Code Ann. § 73-35-11
+  url: null
+  quoted_text: Whenever a Mississippi broker enters into a cooperative agreement under this section,
+    the Mississippi broker shall file within ten (10) days with the commission a copy of each such
+    written agreement.
+  secondary: []
+terms:
+  - cooperative
+  - agreement
+  - filing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

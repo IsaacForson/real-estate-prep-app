@@ -1,0 +1,43 @@
+id: TX-1101-0160
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder who is an associated broker has already submitted their mailing address,
+  business address, business telephone number, and business e-mail address to the Commission.
+  According to Texas Occupations Code §1101.552(e) (effective January 1, 2026), what additional
+  information must the license holder provide?
+options:
+  - Proof of completing the required continuing education
+  - A fingerprint card for background check
+  - The name of the broker with whom they are associated
+  - A copy of their most recent sales contract
+key: C
+explanation: Subsection (e) requires an associated broker to provide the name of the broker with
+  whom they are associated in addition to the contact information. The other options are not
+  mandated by this subsection for renewal.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.552(e)
+  url: null
+  quoted_text: (2) if the license holder is an associated broker, the name of the broker with whom the
+    license holder is associated.
+  secondary: []
+terms:
+  - associated broker
+  - mailing address
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

@@ -1,0 +1,48 @@
+id: MI-25-0141
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A broker signs an agreement with a salesperson stating that the broker cannot give the
+  salesperson instructions on how to show properties. According to Mich. Comp. Laws § 339.2512f(2),
+  this agreement is:"
+options:
+  - The agreement is allowed because the salesperson provides written consent to the broker
+  - The agreement is permissible because it outlines the salesperson's independent duties
+  - The agreement is prohibited because it limits the broker's authority to supervise the salesperson
+  - The agreement is valid because it applies only to salespersons with fewer than two years of
+    experience
+key: C
+explanation: The key is correct because subsection (2) prohibits a broker from contracting with a
+  salesperson in a manner that limits the broker's authority to supervise the salesperson.
+  Distractor C is tempting but incorrect because consent does not override the statutory prohibition
+  on limiting supervisory authority.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512f(2)
+  url: null
+  quoted_text: A real estate broker shall not contract with an individual real estate salesperson or
+    nonprincipal associate real estate broker who is employed by the real estate broker in a manner
+    that limits the broker's authority to supervise the salesperson under subsection (1).
+  secondary: []
+terms:
+  - broker
+  - salesperson
+  - supervision
+  - contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

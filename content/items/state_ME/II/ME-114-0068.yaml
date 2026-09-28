@@ -1,0 +1,44 @@
+id: ME-114-0068
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Maine transaction broker learns from a contractor's email that a listed home has a cracked
+  foundation, but the broker tells the buyer nothing about it before the buyer signs a purchase
+  contract. Under 32 M.R.S. § 13283, the broker's silence is:"
+options:
+  - Permissible, because only the seller may disclose property defects
+  - Permissible, because a transaction broker owes no duties to any party
+  - A violation, because the broker failed to inspect the foundation personally
+  - A violation, because known material physical defects must be timely disclosed to a buyer
+key: D
+explanation: Section 13283(2)(B) requires a transaction broker to disclose in a timely manner to a
+  buyer all material defects pertaining to the physical condition of the property of which the
+  broker has actual notice or knowledge. The broker here had actual knowledge from the email, so
+  silence breached that duty. The claim that a transaction broker owes no duties is wrong because
+  the statute imposes specific responsibilities even though no client relationship exists, and the
+  broker is not obligated to discover latent defects through inspection.
+citation:
+  source: 32 M.R.S. § 13283(2)(B)
+  url: null
+  quoted_text: Disclose in a timely manner to a buyer to a transaction all material defects pertaining
+    to the physical condition of the property of which the transaction broker has actual notice or
+    knowledge
+  secondary: []
+terms:
+  - transaction broker
+  - material defect
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

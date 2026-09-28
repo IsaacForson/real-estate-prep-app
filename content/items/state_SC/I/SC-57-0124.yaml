@@ -1,0 +1,48 @@
+id: SC-57-0124
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has completed sixty hours of fundamentals of real estate principles and practices
+  and twenty hours of advanced real estate principles. According to S.C. Code Ann. §
+  40-57-320(A)(1)(a), may the applicant sit for the associate license examination?
+options:
+  - The applicant may sit for the examination because the advanced hours requirement can be
+    fulfilled later.
+  - The applicant may not sit for the examination because all required hours must be completed
+    before applying.
+  - The applicant may sit for the examination only after completing an additional ten hours of
+    fundamentals.
+  - The applicant may not sit for the examination unless they hold a bachelor's degree in real
+    estate.
+key: A
+explanation: The provision explicitly allows an applicant to take the license examination before
+  completing the required thirty hours of advanced instruction, provided the sixty hours of
+  fundamentals are completed. Thus, the applicant may sit for the exam with only twenty advanced
+  hours. The distractor claiming all hours must be completed before applying contradicts the express
+  permission to test early.
+citation:
+  source: S.C. Code Ann. § 40-57-320(A)(1)(a)
+  url: null
+  quoted_text: completion of sixty hours of classroom instruction in fundamentals of real estate
+    principles and practices and thirty hours of classroom instruction in advanced real estate
+    principles within five years before the application, provided an applicant may take the license
+    examination before completing the required thirty hours of advanced instruction
+  secondary: []
+terms:
+  - fundamentals
+  - advanced
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

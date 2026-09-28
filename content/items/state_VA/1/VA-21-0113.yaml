@@ -1,0 +1,40 @@
+id: VA-21-0113
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, what effect does the payment or promise of payment to a real estate broker
+  have on the existence of a brokerage relationship?
+options:
+  - It creates a brokerage relationship only if the payment is made in writing.
+  - It creates a brokerage relationship between the broker and the client.
+  - It does not create a brokerage relationship between the broker and the client.
+  - It creates a brokerage relationship only for residential transactions.
+key: C
+explanation: Virginia statute § 54.1-2140 explicitly states that payment or promise of payment to a
+  broker does not create a brokerage relationship. Therefore, the correct answer is that no
+  brokerage relationship is formed by such payment alone. The distractor suggesting a relationship
+  is created contradicts the statutory language.
+citation:
+  source: "### Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real
+    Estate Brokers, Salespersons and Rental Location Agents § 54.1-2140"
+  url: null
+  quoted_text: The payment or promise of payment or compensation to a real estate broker does not
+    create a brokerage relationship between any broker, seller, landlord, buyer or tenant.
+  secondary: []
+terms:
+  - compensation
+  - brokerage relationship
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

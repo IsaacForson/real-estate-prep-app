@@ -1,0 +1,42 @@
+id: IN-1-0112
+jurisdiction: IN
+bank: state_IN
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A listing broker sends a certified letter to both parties stating the earnest money will be
+  released to the buyer unless they respond. Neither party initiates litigation or enters a written
+  release within 60 days of the mailing date. According to 876 IAC 8-2-2(d), what may the broker do?
+options:
+  - release the earnest money to the seller
+  - retain the earnest money until a court order
+  - release the earnest money to the buyer
+  - return the earnest money to the buyer's lender
+key: C
+explanation: The rule states that if neither party initiates litigation or enters a written release
+  within sixty days of the certified letter, the broker may release the earnest money to the party
+  identified in the letter. The letter identified the buyer as the recipient, making release to the
+  buyer permissible. Releasing to the seller contradicts the letter's direction.
+citation:
+  source: 876 Ind. Admin. Code 8 § 876
+  url: null
+  quoted_text: If neither the buyer nor the seller initiates litigation or enters into a written
+    release within sixty (60) days of the mailing date of the certified letter, the broker may
+    release the earnest money deposit to the party identified in the certified letter.
+  secondary: []
+terms:
+  - earnest money
+  - release
+  - certified letter
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

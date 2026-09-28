@@ -1,0 +1,53 @@
+id: UT-101-0238
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A party holds a tax title to a parcel for four years, has failed to pay taxes in the second
+  year, and the legal title owner has actually occupied the property during the third year. Under
+  Utah Code § 78B-2-209(2), what is the effect on the presumption that the tax title holder is the
+  owner by adverse possession?
+options:
+  - The presumption is rebutted, so the tax title holder is not presumed the owner.
+  - The presumption stands because the tax title holder held the title for the full four-year period.
+  - The presumption shifts to the legal title owner because of their occupancy.
+  - The presumption requires the tax title holder to pay back the missed taxes before it applies.
+key: A
+explanation: "Under Utah Code § 78B-2-209(2), a tax title holder is presumed to be the owner by
+  adverse possession, but that presumption can be rebutted if either the legal title owner has
+  actually occupied the property or the tax title holder has failed to pay all taxes assessed during
+  the four‑year period. In this scenario, both conditions are present: the legal title owner
+  occupied the property in the third year and the tax title holder did not pay taxes in the second
+  year. Either one alone is enough to rebut the presumption, so the tax title holder is not presumed
+  the owner. The option claiming the presumption stands because the holder held the title for the
+  full four years ignores the rebuttal rules. The option saying the presumption shifts to the legal
+  title owner misstates the effect; the presumption is simply rebutted, not transferred. The option
+  requiring payment of back taxes before the presumption applies adds a condition not found in the
+  statute."
+citation:
+  source: Utah Code Ann. ch. 78B-2 (Statutes of Limitations) — Utah Code Title 78B, Chapter 2 —
+    Statutes of Limitations (current version), official Utah Legislature PDF read via Internet
+    Archive capture of 2026-05-14 — § 78B-2-209
+  url: null
+  quoted_text: This presumption may be rebutted if it appears that the owner of the legal title or his
+    predecessor has actually occupied or been in possession of the property under the title or that
+    the tax title owner and his predecessors have failed to pay all the taxes levied or assessed
+    upon the property within the four-year period.
+  secondary: []
+terms:
+  - tax title
+  - presumption
+  - rebuttal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

@@ -1,0 +1,40 @@
+id: MN-82-0073
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker terminates a real estate transaction on June 1. The purchase agreement is silent on
+  disbursement timing. The broker disburses the trust funds eleven business days after termination.
+  Is the broker compliant with Minnesota law?
+options:
+  - No, because the broker should have disbursed the funds within five business days.
+  - Yes, because the broker disbursed the funds on the eleventh day, which is permissible under the
+    statute.
+  - No, because the disbursement occurred after the tenth business day following termination.
+  - Yes, because the disbursement occurred within ten business days of termination.
+key: C
+explanation: Subdivision 5(d) requires disbursement within ten business days following termination
+  when the agreement is silent. Disbursing on the eleventh business day exceeds this limit, making
+  the broker noncompliant. The other options misstate the timeframe or incorrectly allow the
+  eleventh day.
+citation:
+  source: Minn. Stat. § 82.75 Subd. 5(d)
+  url: null
+  quoted_text: Disbursement must be made within ten business days following the consummation or
+    termination of a transaction if the applicable agreements are silent as to the time of
+    disbursement.
+  secondary: []
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

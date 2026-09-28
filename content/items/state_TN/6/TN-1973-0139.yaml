@@ -1,0 +1,42 @@
+id: TN-1973-0139
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller submits a written request for the return of earnest money five days after the offer
+  is rejected. Assuming no compelling reason exists, within how many calendar days must the
+  principal broker disburse, interplead, or turn over the earnest money to an attorney under
+  Tennessee Real Estate Commission rules?
+options:
+  - 7 days
+  - 14 days
+  - 21 days
+  - 30 days
+key: C
+explanation: Under Tenn. Comp. R. & Regs. 1260-02-.09, absent a compelling reason, earnest money
+  must be disbursed, interpleaded, or turned over to an attorney within twenty-one calendar days of
+  the date of receipt of a written request for disbursement. The 14-day and 30-day timeframes do not
+  match the statutory requirement.
+citation:
+  source: Tenn. Comp. R. & Regs. 1260-02-.09
+  url: null
+  quoted_text: Absent a demonstration of a compelling reason, earnest money shall be disbursed,
+    interpleaded, or turned over to an attorney with instructions to interplead the funds within
+    twenty-one (21) calendar days from the date of receipt of a written request for disbursement.
+  secondary: []
+terms:
+  - earnest money
+  - disbursement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

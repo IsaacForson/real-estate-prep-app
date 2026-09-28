@@ -1,0 +1,46 @@
+id: KS-3034-0152
+jurisdiction: KS
+bank: state_KS
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer's agent learns that the seller has told the agent that the property is free of any
+  liens, but the agent has no independent knowledge of any liens. The seller later fails to disclose
+  an existing lien, and the buyer sues the agent for misrepresentation. Under Kansas law, what is
+  the likely outcome regarding the agent's liability?
+options:
+  - The agent is liable because they must investigate liens
+  - The agent is liable only if the buyer proves fraudulent intent
+  - The agent is not liable due to lack of personal knowledge
+  - The agent is liable for failing to discover the lien
+key: C
+explanation: Under Kan. Stat. Ann. § 58-30,111(b), a licensee is not liable for a client's
+  misrepresentation or omission unless the licensee knew of the misrepresentation. Therefore, the
+  agent who lacked personal knowledge of the lien is not liable. The claim that the agent must
+  investigate liens is incorrect because the statute does not impose a duty to discover a client's
+  omission. The assertion that liability depends on proving fraudulent intent is also incorrect; the
+  statute bases liability on the licensee's actual knowledge, not on intent. Finally, the argument
+  that the agent is liable for failing to discover the lien misstates the law, as liability requires
+  the licensee's personal knowledge of the omission.
+citation:
+  source: Kan. Stat. Ann. § 58-30,111(b)
+  url: null
+  quoted_text: (b) A statutory agent or transaction broker shall not be liable for a misrepresentation
+    or omission by the agent's client or the transaction broker's customer arising out of the agency
+    or transaction broker agreement unless the licensee knew of the misrepresentation or omission.
+  secondary: []
+terms:
+  - misrepresentation
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

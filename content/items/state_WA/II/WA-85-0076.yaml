@@ -1,0 +1,41 @@
+id: WA-85-0076
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person purchases a duplex for their own investment and does not act as a broker. Under RCW
+  18.85.151, is a real estate license required for this transaction?
+options:
+  - License not required because the property is a duplex
+  - License required because the transaction exceeds a monetary threshold
+  - License required because the purchase involves real property
+  - License not required because the purchase is for the individual's own account
+key: D
+explanation: Under RCW 18.85.151(1), a person who purchases or disposes of property for their own
+  account is exempt from licensing requirements. Since the duplex is bought for personal investment,
+  no license is needed. The assertion that a license is required because the purchase involves real
+  property is incorrect because the exemption applies to transactions conducted for one's own
+  account, regardless of the property type.
+citation:
+  source: Wash. Rev. Code § 18.85.151(1)
+  url: null
+  quoted_text: Any person who purchases or disposes of property and/or a business opportunity for that
+    individual's own account, or that of a group of which the person is a member, and their
+    employees;
+  secondary: []
+terms:
+  - exemption
+  - own account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

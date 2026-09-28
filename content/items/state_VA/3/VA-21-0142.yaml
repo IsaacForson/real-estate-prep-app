@@ -1,0 +1,52 @@
+id: VA-21-0142
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner receives a written notice from the local building department citing a pending
+  violation of the Uniform Statewide Building Code that affects the property's sanitary conditions.
+  According to Virginia's Residential Property Disclosure Act, what must the owner do?
+options:
+  - The owner must provide a written disclosure of the pending violation to the prospective
+    purchaser after ratification of the real estate purchase contract.
+  - The owner must provide a written disclosure of the pending violation to the prospective
+    purchaser before ratification of the real estate purchase contract.
+  - The owner must wait until the violation is abated before providing any disclosure to the
+    purchaser.
+  - The owner must provide only a verbal disclosure of the pending violation to the prospective
+    purchaser.
+key: B
+explanation: The statute requires the owner to provide a written disclosure of any pending building
+  code violation affecting safe, decent, sanitary living conditions when the owner has actual
+  knowledge of such violation and has been notified in writing by the locality. Waiting for
+  abatement, providing after ratification, or giving only a verbal disclosure do not satisfy this
+  requirement.
+citation:
+  source: Va. Code Ann. § 55.1-706
+  url: null
+  quoted_text: if the owner of a residential dwelling unit has actual knowledge of any pending
+    enforcement actions pursuant to the Uniform Statewide Building Code (§ 36-97 et seq.) that
+    affect the safe, decent, sanitary living conditions of the property of which the owner has been
+    notified in writing by the locality, or any pending violation of the local zoning ordinance that
+    the violator has not abated or remedied under the zoning ordinance, within a time period set out
+    in the written notice of violation from the locality or established by a court of competent
+    jurisdiction, the owner shall provide to a prospective purchaser a written disclosure that so
+    states.
+  secondary: []
+terms:
+  - pending violation
+  - building code
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

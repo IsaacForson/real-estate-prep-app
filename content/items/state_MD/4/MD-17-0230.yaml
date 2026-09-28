@@ -1,0 +1,42 @@
+id: MD-17-0230
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money deposit. The owner and beneficial owner give written
+  instructions to deposit the funds in an interest‑bearing account. Under Maryland law, where may
+  the broker deposit the earnest money?
+options:
+  - In a noninterest bearing checking account only
+  - In a noninterest bearing savings account only
+  - In an interest-bearing account as instructed
+  - In any combination of noninterest bearing accounts
+key: C
+explanation: Maryland law requires a broker to keep trust money in noninterest bearing accounts
+  unless the owner and beneficial owner provide written instructions to the contrary. Because
+  written instructions were given to use an interest‑bearing account, the broker may follow those
+  instructions and deposit the funds there. The alternatives that limit the deposit to a noninterest
+  checking account, a noninterest savings account, or any combination of noninterest accounts are
+  incorrect because they disregard the owners' written direction.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. § 17-504
+  url: null
+  quoted_text: "Unless the owner and beneficial owner give written instructions to the contrary, a
+    real estate broker may deposit trust money in:"
+  secondary: []
+terms:
+  - earnest money
+  - written instructions
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

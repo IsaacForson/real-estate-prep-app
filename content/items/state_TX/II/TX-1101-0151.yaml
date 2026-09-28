@@ -1,0 +1,41 @@
+id: TX-1101-0151
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder’s assistant contacts property owners to ask if they would like to list their
+  homes for sale but does not negotiate or show the property. Does the assistant need a real estate
+  license under Texas rule?
+options:
+  - Yes, because soliciting listings requires a license.
+  - No, because the assistant is not negotiating or showing the property.
+  - No, because the assistant is employed by a license holder.
+  - Yes, but only if the assistant also shows the property.
+key: A
+explanation: Section 535.4(f) states that a license is required for a person to solicit listings or
+  to negotiate in Texas for listings. Since the assistant is soliciting listings, a license is
+  required regardless of whether they negotiate or show the property.
+citation:
+  source: 22 Tex. Admin. Code §535.4(f)
+  url: null
+  quoted_text: A real estate license is required for a person to solicit listings or to negotiate in
+    Texas for listings.
+  secondary: []
+terms:
+  - solicit
+  - listings
+  - license
+  - negotiation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

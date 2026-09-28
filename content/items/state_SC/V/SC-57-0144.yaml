@@ -1,0 +1,45 @@
+id: SC-57-0144
+jurisdiction: SC
+bank: state_SC
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under South Carolina law, what type of financial institution must hold a real estate trust account?
+options:
+  - A federal savings association without deposit insurance
+  - Any bank operating in the state regardless of federal insurance
+  - An insured financial institution authorized to conduct business in South Carolina
+  - A state-chartered credit union that is not federally insured
+key: C
+explanation: "S.C. Code Ann. § 40-57-136 requires that a trust account be a demand deposit account
+  located in an insured financial institution authorized to conduct business in South Carolina. The
+  option describing a federal savings association without deposit insurance fails because it lacks
+  the required insurance. The option describing any bank regardless of federal insurance is
+  incorrect because the statute specifically mandates that the institution be insured. The option
+  describing a state-chartered credit union that is not federally insured is also incorrect for the
+  same reason: it does not meet the insurance requirement set by the statute."
+citation:
+  source: S.C. Code Ann. § 40-57 (Title 40, ch. 57 — Real Estate Brokers, Brokers-in-Charge,
+    Associates, and Property Managers) — South Carolina Code of Laws Title 40, Chapter 57 — Real
+    Estate Brokers, Brokers-in-Charge, Associates, and Property Managers — § 40-57-136
+  url: null
+  quoted_text: A trust account maintained by a broker-in-charge or property manager-in-charge must be
+    a demand deposit account located in an insured financial institution authorized to conduct
+    business in South Carolina.
+  secondary: []
+terms:
+  - trust account
+  - financial institution
+  - insured
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

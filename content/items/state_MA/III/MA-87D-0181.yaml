@@ -1,0 +1,42 @@
+id: MA-87D-0181
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed resident broker moves her office to a new address within Massachusetts but does not
+  notify the Board of the change. Under M.G.L. c. 112, § 87YY, what is the likely consequence?
+options:
+  - The broker must retake the licensing exam
+  - The broker's license is automatically suspended for 30 days
+  - The broker's license remains valid without penalty
+  - The broker's license is subject to revocation
+key: D
+explanation: The statute requires the broker to give written notice of any change of business
+  location, and it states that failure to give such notice is grounds for revocation of the license.
+  Consequently, the license can be revoked. The answer that says the license is automatically
+  suspended for 30 days adds a penalty that the statute does not provide.
+citation:
+  source: M.G.L. c. 112, § 87YY
+  url: null
+  quoted_text: He shall promptly give written notice to the board of any change of business location,
+    and the board shall issue a new license for such new location for the unexpired term of such
+    license. Failure to give such notice shall be grounds for the revocation of such license.
+  secondary: []
+terms:
+  - license
+  - business location
+  - notice
+  - revocation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

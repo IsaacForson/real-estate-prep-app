@@ -1,0 +1,40 @@
+id: LA-1430-0309
+jurisdiction: LA
+bank: state_LA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Louisiana licensee helps a client who wishes to lease a condominium unit for one year. The
+  client has not signed any agreement describing the broker’s compensation. Under La. R.S.
+  37:1448.4(B)(1), is a buyer agreement required?
+options:
+  - A buyer agreement is not required because the transaction involves leasing a home.
+  - A buyer agreement is required unless the client also intends to purchase the property.
+  - A buyer agreement is required because the client is seeking to lease real property.
+  - A buyer agreement is not required only if the client pays the broker upfront.
+key: A
+explanation: The statute exempts buyer agreements when a person leases or seeks to lease a home with
+  the services of a real estate licensee. Since the client is leasing a home, no buyer agreement is
+  required. The option stating that a buyer agreement is required because the client is seeking to
+  lease real property is incorrect because it ignores the home‑lease exemption.
+citation:
+  source: La. R.S. 37:1448.4(B)(1)
+  url: null
+  quoted_text: (1) When a person leases or seeks to lease a home with the services of a real estate licensee.
+  secondary: []
+terms:
+  - buyer agreement
+  - home lease
+  - exception
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

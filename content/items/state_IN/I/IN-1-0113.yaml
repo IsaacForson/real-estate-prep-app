@@ -1,0 +1,42 @@
+id: IN-1-0113
+jurisdiction: IN
+bank: state_IN
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investigator from the Indiana Attorney General's office requests a detailed summary of a
+  broker company's escrow/trust account. According to 876 IAC 8-1-13(a), what must the broker
+  company do?
+options:
+  - Provide only the total balance of the escrow account
+  - Provide the summary only after receiving a subpoena
+  - Provide the summary only if the escrow account exceeds $10,000
+  - Provide the detailed summary to the investigator
+key: D
+explanation: The rule requires a broker company to provide a detailed summary of its escrow/trust
+  account upon request by an authorized representative of the commission or the office of the
+  attorney general for investigative purposes. Providing only the total balance or conditioning the
+  response on a subpoena or account size does not satisfy this requirement.
+citation:
+  source: 876 Ind. Admin. Code 8 § 876
+  url: null
+  quoted_text: (a) A broker company shall provide a detailed summary of the broker company's
+    escrow/trust account upon request by an authorized representative of the commission or by the
+    office of the attorney general for investigative purposes.
+  secondary: []
+terms:
+  - escrow account
+  - summary
+  - investigator
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

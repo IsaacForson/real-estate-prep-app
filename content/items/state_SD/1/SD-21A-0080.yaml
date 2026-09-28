@@ -1,0 +1,40 @@
+id: SD-21A-0080
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: At a meeting of the South Dakota Real Estate Commission, only three of the five members are
+  present. According to § 36-21A-15, what is the minimum number of votes required for the commission
+  to take official action?
+options:
+  - Three votes
+  - Four votes
+  - One vote
+  - Two votes
+key: D
+explanation: The law states that actions are taken upon a majority vote of those members present.
+  With three members present, a majority is more than half, which is two votes. One vote is not a
+  majority, three votes would be unanimous but not required, and four votes cannot occur with only
+  three members present.
+citation:
+  source: S.D. Codified Laws § 36-21A-15
+  url: null
+  quoted_text: Actions of the commission shall be taken upon a majority vote of those members present.
+  secondary: []
+terms:
+  - quorum
+  - majority
+  - vote
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

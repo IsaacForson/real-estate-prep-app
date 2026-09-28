@@ -1,0 +1,43 @@
+id: LA-1430-0233
+jurisdiction: LA
+bank: state_LA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee places their Louisiana real estate license on inactive status and renews the
+  license during the renewal period. According to La. R.S. 37:1466, is errors and omissions
+  insurance required for this renewal?
+options:
+  - No, errors and omissions insurance is required only if the licensee is an active broker
+  - No, errors and omissions insurance is required regardless of license status or activity
+  - No, errors and omissions insurance is required only for property management licensees
+  - No, errors and omissions insurance is not required for inactive license renewal or reinstatement
+key: D
+explanation: The statute explicitly states that active licensees applying for inactive status and
+  those renewing while inactive may do so without the required coverage. Therefore, no E&O insurance
+  is needed for an inactive renewal. The distractor suggesting coverage is required regardless of
+  status contradicts the exemption for inactive licensees.
+citation:
+  source: La. R.S. 37:1466(G)
+  url: null
+  quoted_text: Active licensees applying for inactive status and those licensees renewing their
+    license while in an inactive status may do so without the required coverage mandated by this
+    Section.
+  secondary: []
+terms:
+  - inactive
+  - renewal
+  - errors and omissions
+  - coverage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

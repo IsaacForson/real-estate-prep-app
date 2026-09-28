@@ -1,0 +1,44 @@
+id: WA-85-0113
+jurisdiction: WA
+bank: state_WA
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker markets a residential property only to a select group of investor clients without
+  also marketing to the general public. Under Washington law, when is this practice permissible?
+options:
+  - It is permissible if the property is commercial rather than residential
+  - It is permissible if the property is also listed on the MLS
+  - It is permissible only when necessary to protect health or safety
+  - It is permissible if the broker obtains written consent from the seller
+key: C
+explanation: RCW 18.86.130 prohibits marketing residential real estate to a limited or exclusive
+  group unless the property is concurrently marketed to the general public and all other brokers,
+  except as reasonably necessary to protect the health or safety of the owner or occupant.
+  Therefore, the practice is permissible only when necessary to protect health or safety. The other
+  options incorrectly suggest that MLS listing, seller consent, or commercial status alone permit
+  exclusive marketing, which contradicts the statute.
+citation:
+  source: Wash. Rev. Code ch. 18.86 — RCW Chapter 18.86 — Real Estate Brokerage Relationships — § 18.86.130
+  url: null
+  quoted_text: A broker may not market the sale or lease of residential real estate to a limited or
+    exclusive group of prospective buyers or brokers, or any combination thereof, unless the real
+    estate is concurrently marketed to the general public and all other brokers, except as
+    reasonably necessary to protect the health or safety of the owner or occupant.
+  secondary: []
+terms:
+  - exclusive marketing
+  - residential real estate
+  - health safety
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

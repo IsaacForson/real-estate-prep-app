@@ -1,0 +1,46 @@
+id: SC-57-0111
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-in-charge receives an earnest money deposit from a buyer and deposits the funds into
+  the brokerage's operating account. Under S.C. Code Ann. § 40-57-135(A)(7), is this permissible?
+options:
+  - Depositing the earnest money into the operating account is permissible because the funds are
+    held for less than 24 hours
+  - Depositing the earnest money into the operating account is permissible if the broker-in-charge
+    reconciles the account monthly
+  - Depositing the earnest money into the operating account is not permissible because trust funds
+    must be deposited in an active trust account
+  - Depositing the earnest money into the operating account is permissible if the broker-in-charge
+    obtains written consent from the buyer
+key: C
+explanation: S.C. Code Ann. § 40-57-135(A)(7) requires a broker‑in‑charge to keep any trust funds
+  belonging to others in an active trust account that the broker controls. Earnest money is a trust
+  fund, so it must be placed in that trust account. The operating account cannot be used, even for a
+  short period, even if the broker reconciles the account monthly, or even if the buyer gives
+  written consent. Therefore the statement that depositing the earnest money into the operating
+  account is not permissible because trust funds must be deposited in an active trust account is the
+  correct choice.
+citation:
+  source: S.C. Code Ann. § 40-57-135(A)(7)
+  url: null
+  quoted_text: establish and maintain control of and responsibility for an active trust account when
+    in possession of trust funds belonging to others resulting from a real estate transaction
+  secondary: []
+terms:
+  - trust account
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

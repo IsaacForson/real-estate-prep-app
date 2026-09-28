@@ -1,0 +1,47 @@
+id: TX-1101-0181
+jurisdiction: TX
+bank: state_TX
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under TREC rules, what is the broker's responsibility regarding earnest money received from a
+  buyer?
+options:
+  - The broker may retain the earnest money as commission until the closing occurs.
+  - The broker must deposit the earnest money in a trust account and maintain it in accordance with
+    §535.146.
+  - The broker may hold the earnest money in an escrow account of the title company without
+    additional requirements.
+  - The broker may commingle the earnest money with personal funds as long as it is accounted for
+    separately.
+key: B
+explanation: Under §535.2(c), a broker is responsible for the proper handling of trust funds placed
+  with the broker and must comply with §535.146, which requires depositing earnest money in a trust
+  account and maintaining it accordingly. Therefore, the broker must deposit the earnest money
+  received from a buyer in a trust account and maintain it as required. The other options are
+  incorrect because they either allow the broker to retain the money as commission, place it in a
+  title company escrow account without additional requirements, or commingle it with personal funds,
+  all of which violate the trust money rules.
+citation:
+  source: 22 Tex. Admin. Code ch. 535 — §535.2
+  url: null
+  quoted_text: A broker is responsible for the proper handling of trust funds placed with the broker
+    and must comply with §535.146 of this chapter (relating to Maintaining Trust Money).
+  secondary: []
+terms:
+  - trust funds
+  - broker
+  - earnest money
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

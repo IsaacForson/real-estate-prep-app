@@ -1,0 +1,37 @@
+id: UT-101-0222
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What type of damages may be recovered from the Real Estate Education, Research, and Recovery Fund?
+options:
+  - Punitive damages
+  - Attorney fees
+  - Interest payments
+  - Actual damages
+key: D
+explanation: The statute explicitly prohibits recovery of punitive damages, attorney fees, interest,
+  and court costs from the fund. Therefore, only actual damages are payable.
+citation:
+  source: Utah Code Ann. § 61-2f-506(3)(b)
+  url: null
+  quoted_text: "(b) Recovery from the fund may not include: (i) punitive damages; (ii) attorney fees;
+    (iii) interest; or (iv) court costs."
+  secondary: []
+terms:
+  - damage
+  - fund
+  - recovery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

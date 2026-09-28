@@ -1,0 +1,52 @@
+id: VA-21-0141
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia's Residential Property Disclosure Act, what does the term 'electronic delivery'
+  mean?
+options:
+  - Sending the required disclosures via regular mail, provided that the sender retains a
+    certificate of mailing from the United States Postal Service as proof of delivery, which must be
+    retained for the transaction.
+  - Sending the required disclosures via the Internet, provided that the sender retains proof of
+    electronic delivery, which may be an electronic receipt, a facsimile confirmation, or a
+    sender‑prepared certificate of service.
+  - Sending the required disclosures via email, provided that the sender retains a read receipt from
+    the recipient's email server as proof of delivery, which must be retained for the transaction.
+  - Sending the required disclosures via text message, provided that the sender retains a delivery
+    confirmation from the wireless carrier as proof of delivery, which must be retained for the
+    transaction.
+key: B
+explanation: Va. Code Ann. § 55.1-700 defines electronic delivery as sending the required
+  disclosures via the Internet, provided that the sender retains sufficient proof of the electronic
+  delivery, which may be an electronic receipt of delivery, a confirmation that the notice was sent
+  by facsimile, or a certificate of service prepared by the sender confirming the electronic
+  delivery. The other choices describe delivery methods or proof types that do not satisfy this
+  statutory definition.
+citation:
+  source: Va. Code Ann. § 55.1-700
+  url: null
+  quoted_text: '"Electronic delivery," for purposes of delivery of the disclosures required by this
+    chapter, means sending the required disclosures via the Internet, provided that the sender
+    retains sufficient proof of the electronic delivery, which may be an electronic receipt of
+    delivery, a confirmation that the notice was sent by facsimile, or a certificate of service
+    prepared by the sender confirming the electronic delivery.'
+  secondary: []
+terms:
+  - electronic delivery
+  - proof
+  - internet
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

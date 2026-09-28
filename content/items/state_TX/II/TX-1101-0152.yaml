@@ -1,0 +1,42 @@
+id: TX-1101-0152
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Two siblings jointly own a rental house. One sibling agrees to market the other sibling’s half
+  of the property and receives a fee for facilitating the sale. Does the sibling need a real estate
+  license under Texas rule?
+options:
+  - No, because the sibling is selling only their own share.
+  - Yes, but only if the sibling also manages the share for pay.
+  - Yes, because the sibling acts as agent for the other owner for pay.
+  - No, because the sibling is an owner and not acting as agent for pay.
+key: C
+explanation: Under §535.5(b), a joint owner who acts for compensation as an agent for the other
+  owner must be licensed unless otherwise exempted. The sibling is receiving a fee to market the
+  other’s interest, so a license is required.
+citation:
+  source: 22 Tex. Admin. Code §535.5(b)
+  url: null
+  quoted_text: A person who owns property jointly may sell and convey title to his or her interest in
+    the property, but to act for compensation or with the expectation of compensation as an agent
+    for the other owner, the person must be licensed unless otherwise exempted by the Act.
+  secondary: []
+terms:
+  - joint ownership
+  - agency
+  - compensation
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

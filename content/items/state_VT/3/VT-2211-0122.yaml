@@ -1,0 +1,45 @@
+id: VT-2211-0122
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer at a Vermont bank shows a prospective buyer a parcel of land owned by the bank.
+  Under 26 V.S.A. § 2211(b)(4), does the loan officer need a real estate license?
+options:
+  - No, because the loan officer is performing duties as an employee of a bank with respect to
+    bank-owned real estate.
+  - No, because the loan officer is acting under a power of attorney from the bank owner.
+  - No, because the loan officer has completed the required pre‑licensing education.
+  - No, because the loan officer is only showing the property and not negotiating a sale.
+key: A
+explanation: The exemption in 26 V.S.A. § 2211(b)(4) states that any officer or employee of a bank
+  or trust company is not required to hold a real estate license when performing activities listed
+  in subdivision (a)(4) with respect to real estate owned by that bank. Showing property to a
+  prospective buyer is such an activity, so the loan officer is exempt. The other options cite
+  irrelevant factors such as power of attorney, education, or the absence of negotiation, which do
+  not affect the statutory exemption.
+citation:
+  source: "### 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2211(b)(4)"
+  url: null
+  quoted_text: (4) Any bank or trust company or any of its officers or employees in the performance of
+    their duties as an officer or employee of any such bank or trust company while performing
+    activities listed in subdivision (a)(4) of this section with respect to real estate owned by
+    that bank or trust company.
+  secondary: []
+terms:
+  - bank exemption
+  - employee
+  - real estate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

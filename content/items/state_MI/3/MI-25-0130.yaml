@@ -1,0 +1,45 @@
+id: MI-25-0130
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate school plans to have an instructor begin teaching an approved prelicensure
+  course on August 15. By what date must the school submit the instructor's qualifications to the
+  department to comply with Michigan's administrative rules?
+options:
+  - June 16
+  - June 1
+  - July 1
+  - July 16
+key: A
+explanation: The rule requires submission of instructor qualifications at least 60 days before
+  instruction begins. Counting back 60 days from August 15 gives June 16 as the latest date that
+  satisfies this requirement. June 1 is earlier than necessary but still meets the rule; however,
+  the question asks for the deadline, so June 16 is correct. July 1 and July 16 fall after the
+  60‑day cutoff and would violate the rule.
+citation:
+  source: "### Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R
+    339.22101–339.22667 — Department of Licensing and Regulatory Affairs, Real Estate Brokers and
+    Salespersons (General Rules), official LARA Administrative Rules System PDF read via Internet
+    Archive capture of 2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch
+    the current R 339.22101–339.22703 set when reachable R 339.22621(3)"
+  url: null
+  quoted_text: The real estate school shall submit the qualifications to the department at least 60
+    days before the instructor is scheduled to begin instruction.
+  secondary: []
+terms:
+  - instructor qualifications
+  - submission deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

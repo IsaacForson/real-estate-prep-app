@@ -1,0 +1,44 @@
+id: MT-51-0095
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An unlicensed individual assists a landlord in locating a tenant for a rental unit, negotiates
+  the lease terms, and expects a leasing fee. After the lease is executed, the individual sues the
+  landlord for the fee. Under Montana law, what is the likely result?
+options:
+  - The individual may recover because the landlord benefited from the services
+  - The individual may recover if they obtain a license before filing suit
+  - The individual may recover only if the lease agreement includes a fee clause
+  - The individual may not recover because they were not licensed at the time the claim arose
+key: D
+explanation: Under Mont. Code Ann. § 37-51-401, a person must allege and prove they were a duly
+  licensed broker or salesperson at the time the claim arose to recover compensation. Because the
+  individual was unlicensed at that time, they may not recover. The suggestion that the individual
+  may recover if they obtain a license before filing suit is incorrect because licensing must be
+  held at the time the claim arose, not after.
+citation:
+  source: Mont. Code Ann. § 37-51-401
+  url: null
+  quoted_text: shall not be permitted to bring or maintain any action in the courts for the collection
+    of compensation for the sale or lease or otherwise disposing of real estate without first
+    alleging and proving that such person was a duly licensed real estate broker or real estate
+    salesperson
+  secondary: []
+terms:
+  - license
+  - claim
+  - recover
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

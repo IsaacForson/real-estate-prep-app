@@ -1,0 +1,43 @@
+id: ME-114-0061
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "A Maine real estate brokerage agency begins providing brokerage services to a buyer without
+  signing any written brokerage agreement. Under 32 M.R.S. § 13282, the agency is presumed to be
+  acting as:"
+options:
+  - A transaction broker for the buyer
+  - A buyer agent for the buyer
+  - A disclosed dual agent in the deal
+  - A subagent of the seller
+key: A
+explanation: The statute presumes that an agency providing brokerage services is acting as a
+  transaction broker unless it has agreed in a written brokerage agreement to represent a party as a
+  client. Client representation cannot be created orally or by implication, so the absence of a
+  writing forecloses buyer agency. Disclosed dual agency requires informed written consent of all
+  parties, which is also missing here.
+citation:
+  source: 32 M.R.S. § 13282
+  url: null
+  quoted_text: a real estate brokerage agency providing real estate brokerage services is presumed to
+    be acting as a transaction broker unless the real estate brokerage agency has agreed, in a
+    written brokerage agreement, to represent one or more parties
+  secondary: []
+terms:
+  - transaction broker
+  - brokerage agreement
+  - presumption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

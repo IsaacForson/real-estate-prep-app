@@ -1,0 +1,43 @@
+id: KS-3034-0104
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee attends a commission meeting, signs in at the start, and remains for 2 hours and 50
+  minutes. According to Kansas Administrative Regulation 86-1-11(f)(4), how many elective hours of
+  credit may the licensee receive for this attendance?
+options:
+  - "0"
+  - "1"
+  - "2"
+  - "3"
+key: A
+explanation: K.A.R. 86-1-11(f)(4) states that a licensee may receive elective-hour credit for
+  attending a commission meeting only if physically present for at least three consecutive hours.
+  Since the licensee attended only 2 hours 50 minutes, the requirement is not met, so no credit is
+  awarded.
+citation:
+  source: Kan. Admin. Regs. § 86-1-11(f)(4)
+  url: null
+  quoted_text: Any licensee may receive a maximum of three elective hours of credit during any renewal
+    period for attending a commission meeting approved by the commission. The licensee shall sign in
+    at the beginning of the commission meeting and shall be physically present at the commission
+    meeting for at least three consecutive hours of the commission meeting, to receive the
+    three-hour credit.
+  secondary: []
+terms:
+  - elective
+  - credit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

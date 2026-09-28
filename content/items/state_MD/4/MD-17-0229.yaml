@@ -1,0 +1,37 @@
+id: MD-17-0229
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Maryland law, where must a financial institution be located to hold trust money?
+options:
+  - In a state adjacent to Maryland
+  - In a federally chartered bank
+  - In any state with FDIC insurance
+  - In the State of Maryland
+key: D
+explanation: The statute requires that trust money be deposited in a financial institution located
+  in the State of Maryland whose deposits are insured by an approved entity. The other answer
+  choices describe institutions that are in a neighboring state, a federally chartered bank, or any
+  state with FDIC insurance, none of which satisfy the location requirement.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. § 17-503
+  url: null
+  quoted_text: deposit all trust money in a financial institution that is located in the State
+  secondary: []
+terms:
+  - trust money
+  - financial institution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

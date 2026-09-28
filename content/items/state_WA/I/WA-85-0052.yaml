@@ -1,0 +1,49 @@
+id: WA-85-0052
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker signs a written agreement stating they are an employee of the firm. Does this
+  relationship qualify as an independent contractor relationship under RCW 18.85.011?
+options:
+  - Under RCW 18.85.011, the relationship does not qualify as an independent contractor relationship
+    because the broker receives compensation from other sources.
+  - Under RCW 18.85.011, the relationship qualifies as an independent contractor relationship
+    because there is no written agreement regarding employment status.
+  - Under RCW 18.85.011, the relationship does not qualify as an independent contractor relationship
+    because there is a written agreement stating the broker is an employee.
+  - Under RCW 18.85.011, the relationship qualifies as an independent contractor relationship
+    because the broker's compensation is substantially all for real estate services.
+key: C
+explanation: RCW 18.85.011(13) defines an independent contractor relationship as requiring both (a)
+  no written agreement that the broker is an employee and (b) substantially all compensation for
+  real estate services. The written agreement stating the broker is an employee violates condition
+  (a), so the relationship does not qualify.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.011(13)
+  url: null
+  quoted_text: "\"Independent contractor relationship\" means a relationship between a broker or
+    managing broker and a real estate firm that satisfies both of the following conditions: (a) No
+    written agreement with the broker or managing broker provides that the broker or managing broker
+    is an employee of the firm; and (b) substantially all of the broker's or managing broker's
+    compensation is for services related to real estate brokerage services provided by the firm."
+  secondary: []
+terms:
+  - independent contractor
+  - broker
+  - written agreement
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

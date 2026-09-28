@@ -1,0 +1,41 @@
+id: VT-2211-0088
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualified veteran requests a waiver of application fees when applying for a Vermont real
+  estate salesperson license. Under 3 V.S.A. § 125(d), what must the Office of Professional
+  Regulation do?
+options:
+  - The Office shall deny the waiver request and retain fees.
+  - The Office shall charge a reduced fee equal to 50% of the standard.
+  - The Office shall waive the application fees upon request.
+  - The Office shall require extra training before waiving fees.
+key: C
+explanation: Section 125(d) states that the Office shall waive application fees upon request for
+  qualified military members and military spouses. Therefore, the Office must grant the waiver when
+  the veteran qualifies and requests it. Denying the waiver contradicts the mandatory language of
+  the statute. Charging a reduced fee or imposing extra training adds conditions not present in the
+  rule.
+citation:
+  source: 3 V.S.A. § 125(d)
+  url: null
+  quoted_text: (d) Pursuant to qualifications and procedures determined by the Director, the Office
+    shall, upon request, waive application fees to qualified military members and military spouses.
+  secondary: []
+terms:
+  - waiver
+  - military
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

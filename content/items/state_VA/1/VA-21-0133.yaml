@@ -1,0 +1,45 @@
+id: VA-21-0133
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a residential real estate transaction, a principal broker assigns two different licensees
+  as designated agents to represent the seller and the buyer, respectively. The principal broker
+  also supervises the transaction. According to Virginia law, what is the status of the principal
+  broker in this situation?
+options:
+  - The principal broker is considered a standard agent for both parties.
+  - The principal broker is exempt from any agency relationship because designated agents are used.
+  - The principal broker is considered a limited service agent for the transaction.
+  - The principal broker is considered a dual agent or representative.
+key: D
+explanation: Section 54.1-2139.1 provides that while designated agents do not create dual agency,
+  the principal or supervising broker who oversees the transaction is deemed a dual agent or
+  representative. Thus, the principal broker assumes dual status despite the use of designated
+  agents. The distractor claiming exemption misreads the provision that only the designated agents
+  themselves are exempt from dual agency status.
+citation:
+  source: "### Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real
+    Estate Brokers, Salespersons and Rental Location Agents § 54.1-2139.1"
+  url: null
+  quoted_text: Use of such designated agents or representatives shall not constitute dual agency or
+    representation if a designated agent or representative is not representing more than one client
+    in a particular real estate transaction; however, the principal or broker who is supervising the
+    transaction shall be considered a dual agent or representative as provided in this article.
+  secondary: []
+terms:
+  - designated agent
+  - dual agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

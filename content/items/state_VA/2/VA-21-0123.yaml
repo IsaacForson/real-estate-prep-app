@@ -1,0 +1,54 @@
+id: VA-21-0123
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A real estate licensee acting as a managing agent for a landlord client decides to terminate
+  the property management agreement. The property is not in foreclosure. According to Virginia law,
+  what may the licensee do with the escrow funds held for the landlord client?
+options:
+  - The licensee must place the funds in a recovery fund and hold them until the landlord consents
+    in writing.
+  - The licensee must retain the funds in the escrow account until the property is sold and the
+    proceeds distributed.
+  - The licensee must return the funds to the landlord client only with the landlord's written
+    consent.
+  - The licensee may transfer the funds to the landlord client after notifying each tenant in
+    writing.
+key: D
+explanation: Under Va. Code Ann. § 54.1-2108.1(B)(5), a licensee acting as a managing agent who
+  terminates a property‑management agreement (when the property is not in foreclosure) may transfer
+  escrow funds to the landlord without the landlord’s consent, provided the licensee gives written
+  notice to each tenant that the funds have been transferred. The correct answer states that the
+  licensee may transfer the funds to the landlord after notifying each tenant in writing. Requiring
+  placement of the funds in a recovery fund until the landlord consents is incorrect because the
+  statute does not require landlord consent. Retaining the funds until the property is sold is also
+  incorrect because the statute permits transfer upon termination. Requiring the landlord’s written
+  consent is likewise wrong.
+citation:
+  source: Va. Code Ann. § 54.1-2108.1(B)(5)
+  url: null
+  quoted_text: Except in the event of foreclosure, if a real estate licensee acting on behalf of a
+    landlord client as a managing agent elects to terminate the property management agreement, the
+    licensee may transfer any funds held in escrow by the licensee on behalf of the landlord client
+    to the landlord client without his consent, provided that the real estate licensee provides
+    written notice to each tenant that the funds have been so transferred.
+  secondary: []
+terms:
+  - escrow
+  - property management agreement
+  - termination
+  - tenant notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

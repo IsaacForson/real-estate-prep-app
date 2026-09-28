@@ -1,0 +1,38 @@
+id: VT-2211-0128
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "According to 26 V.S.A. § 2211(a)(2), the term 'person' includes entities that are:"
+options:
+  - Domestic entities only
+  - Foreign entities only
+  - Both foreign and domestic
+  - Neither foreign nor domestic
+key: C
+explanation: The definition explicitly states that ‘person’ includes entities that are foreign or
+  domestic, meaning both foreign and domestic entities are included. The option ‘Domestic entities
+  only’ is incorrect because it omits foreign entities, which are also included.
+citation:
+  source: 26 V.S.A. § 2211(a)(2)
+  url: null
+  quoted_text: “Person” means and includes individuals, corporations, partnerships, trusts,
+    associations, cooperatives, or other firms or entities, foreign or domestic.
+  secondary: []
+terms:
+  - person
+  - foreign
+  - domestic
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

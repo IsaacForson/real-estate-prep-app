@@ -1,0 +1,41 @@
+id: KS-3034-0133
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee pays an unlicensed assistant to conduct property showings and negotiate purchase
+  offers. Under Kan. Stat. Ann. § 58-3062(a)(10), is this action permissible?
+options:
+  - The action is permissible if the assistant holds a license from another state
+  - The action is permissible because the assistant works under the licensee's supervision
+  - The action is not permissible because paying an unlicensed person to perform licensed acts is
+    prohibited
+  - The action is permissible if the assistant receives a fixed fee for services
+key: C
+explanation: The statute forbids paying any unlicensed person for performing activities that require
+  a license, regardless of supervision or payment method. Therefore, paying an unlicensed assistant
+  to conduct showings and negotiate offers is not allowed. The suggestion that supervision makes the
+  action permissible is incorrect because the prohibition applies irrespective of the assistant's
+  relationship to the licensee.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(10)
+  url: null
+  quoted_text: (10) Pay a commission or compensation to any person, not licensed under this act, for
+    performing any activity for which a license is required under this act.
+  secondary: []
+terms:
+  - commission
+  - unlicensed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

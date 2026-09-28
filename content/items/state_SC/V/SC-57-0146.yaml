@@ -1,0 +1,44 @@
+id: SC-57-0146
+jurisdiction: SC
+bank: state_SC
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-in-charge uses a computerized system to maintain trust account records. According to
+  South Carolina law, where must the backup copy of these records be stored?
+options:
+  - On the broker-in-charge's personal computer
+  - In a cloud-based service without geographic restrictions
+  - On a data storage medium stored in a separate off-site location
+  - In the same office as the original records
+key: C
+explanation: South Carolina Code Ann. § 40-57-136 requires that backup copies for computerized real
+  estate trust accounts be maintained on a data storage medium stored in a separate off-site
+  location. Storing the backup on a personal computer, in a cloud service without geographic
+  restrictions, or in the same office as the original records does not meet the statutory
+  requirement for a separate off-site location.
+citation:
+  source: S.C. Code Ann. § 40-57 (Title 40, ch. 57 — Real Estate Brokers, Brokers-in-Charge,
+    Associates, and Property Managers) — South Carolina Code of Laws Title 40, Chapter 57 — Real
+    Estate Brokers, Brokers-in-Charge, Associates, and Property Managers — § 40-57-136
+  url: null
+  quoted_text: (2) A broker-in-charge or property manager-in-charge shall ensure that backup copies
+    are maintained for computerized real estate trust accounts. A backup copy must be maintained on
+    a data storage medium that is stored in a separate off-site location.
+  secondary: []
+terms:
+  - backup copy
+  - off-site storage
+  - records
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

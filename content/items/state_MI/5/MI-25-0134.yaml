@@ -1,0 +1,43 @@
+id: MI-25-0134
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender requires a borrower to pay two discount points as a condition of making a loan
+  secured by a single-family owner-occupied dwelling. The loan is not being made to qualify for sale
+  under any federal program. Under Michigan's usury act, is this practice permitted?
+options:
+  - Yes, because the lender may collect any fees, discounts, or points as a condition of the loan
+  - No, because points are considered interest and exceed the statutory rate limit
+  - Yes, because discount points are permitted as a condition of the loan
+  - No, because points as a condition are prohibited except for federal program loans
+key: D
+explanation: The statute prohibits imposing points as a condition of making a loan unless the points
+  are required to qualify the loan for sale under a federal program. Since this loan is not for such
+  a program, the practice is not permitted. Claims that points are always allowed are incorrect, and
+  the claim that points are considered interest is also incorrect.
+citation:
+  source: Mich. Comp. Laws § 438.31c(2)(b)
+  url: null
+  quoted_text: except that a lender may impose and collect, as a condition of making a loan, all fees,
+    discounts, points, or other charges that lenders are permitted or required to impose, collect,
+    or pay in order to qualify the loan for sale, in whole or in part, or in order to obtain a
+    purchase commitment, under any program authorized by federal statute or regulation.
+  secondary: []
+terms:
+  - discount points
+  - federal program
+  - loan condition
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

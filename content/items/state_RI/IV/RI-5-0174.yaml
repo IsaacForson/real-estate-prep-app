@@ -1,0 +1,48 @@
+id: RI-5-0174
+jurisdiction: RI
+bank: state_RI
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Rhode Island landlord manages their own residential rental property and performs activities
+  such as showing the unit to prospective tenants and negotiating lease terms. Under Rhode Island's
+  real estate regulation, is the landlord required to hold a real estate broker license?
+options:
+  - Yes, because any person who performs acts within the meaning of “real estate broker” must be
+    licensed regardless of property ownership.
+  - No, because the regulation exempts bona fide owners, lessors, or lessees of the real property
+    being managed from the licensing requirement.
+  - Yes, but only if the landlord also manages properties for other owners in addition to their own.
+  - No, because the landlord must first obtain a property management certificate from the Department
+    before engaging in any leasing activities.
+key: B
+explanation: Under 230‑RICR‑30‑20‑2 § 2.12(B), a bona fide owner, lessor, or lessee of the real
+  property being managed is exempt from the broker‑licensing requirement. Because the landlord is
+  managing their own rental unit, the exemption applies and no broker license is needed. The claim
+  that any person who performs acts within the meaning of “real estate broker” must be licensed
+  regardless of ownership is incorrect because the exemption overrides that general rule. The
+  suggestion that a license is required only when the landlord also manages other owners’ properties
+  adds a condition not found in the regulation. Requiring a separate property‑management certificate
+  before leasing activities is also unsupported by the rule.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.12(B)
+  url: null
+  quoted_text: This section does not apply to a bona fide owner, lessor, or lessee of the real
+    property being managed, or the regular employees thereof.
+  secondary: []
+terms:
+  - property management
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

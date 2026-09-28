@@ -1,0 +1,42 @@
+id: MI-25-0112
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker applicant seeks a license, and the department notifies the appropriate board of its
+  intent to impose a limitation on the license. The board does not respond within 60 days. Under MCL
+  339.203(2), what may the department do?
+options:
+  - The denial of the license application
+  - The requirement to wait for board approval
+  - The imposition of the limitation
+  - The referral to the attorney general
+key: C
+explanation: The law provides that if the notified board neither approves nor disapproves the
+  limitation within 60 days after receiving the department's notice, the department may impose the
+  limitation. Waiting for board approval is not required when the board fails to act within that
+  period.
+citation:
+  source: Mich. Comp. Laws § 339.203(2)
+  url: null
+  quoted_text: However, if the notified board, within 60 days after receipt of the notification by the
+    department, neither approves nor disapproves the imposition of a limitation, the department may
+    impose the limitation.
+  secondary: []
+terms:
+  - limitation
+  - board
+  - department
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

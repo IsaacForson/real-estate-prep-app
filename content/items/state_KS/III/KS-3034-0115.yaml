@@ -1,0 +1,44 @@
+id: KS-3034-0115
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee places a 'For Sale' sign on a residential property without obtaining written
+  consent from the owner. Under Kansas law, is this action permissible?
+options:
+  - Under Kansas law, placing the sign without written consent is not permissible because written
+    consent from the owner is required
+  - Under Kansas law, placing the sign without written consent is not permissible unless the
+    property is vacant
+  - Under Kansas law, placing the sign without written consent is permissible if the owner is
+    notified verbally
+  - Under Kansas law, placing the sign without written consent is permissible if the sign is removed
+    within 24 hours
+key: A
+explanation: Kansas law prohibits placing a sign offering property for sale or lease without the
+  written consent of the owner or the owner's authorized agent. Therefore, the action is not
+  permissible. The distractor suggesting verbal notice is sufficient is wrong because the statute
+  requires written consent, not merely verbal notification.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(7)
+  url: null
+  quoted_text: Place a sign on any property offering it for sale or lease without the written consent
+    of the owner or the owner's authorized agent.
+  secondary: []
+terms:
+  - sign
+  - written consent
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

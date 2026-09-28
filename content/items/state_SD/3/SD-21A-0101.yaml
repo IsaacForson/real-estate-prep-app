@@ -1,0 +1,43 @@
+id: SD-21A-0101
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer's agent is asked by the buyer whether a registered sex offender lives near the
+  property. The agent has actual knowledge of such an offender. What must the agent do under South
+  Dakota law?
+options:
+  - To ignore the inquiry and provide no information
+  - To investigate the presence of a sex offender
+  - To volunteer the information without being asked
+  - To disclose the actual knowledge to the buyer
+key: D
+explanation: The statute states that a buyer's agent has no duty to investigate or volunteer sex
+  offender information, but must disclose any actual knowledge upon inquiry by the client. Therefore
+  the agent must disclose the known information when asked. Volunteering without being asked,
+  investigating, or ignoring the inquiry are not required.
+citation:
+  source: S.D. Codified Laws § 36-21A-138.1
+  url: null
+  quoted_text: upon inquiry by the licensee's client, the licensee representing a buyer or tenant
+    shall disclose to the client any actual knowledge that the licensee may have regarding a
+    registered sex offender residing on or near the property.
+  secondary: []
+terms:
+  - sex offender
+  - disclosure
+  - inquiry
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

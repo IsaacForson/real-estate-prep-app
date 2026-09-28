@@ -1,0 +1,50 @@
+id: MA-87D-0201
+jurisdiction: MA
+bank: state_MA
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is showing a home and the buyer asks, "Has anyone ever been suspected of having HIV
+  while living here?" The licensee knows that a former tenant was suspected of HIV infection but
+  answers, "No, there has **never** been any such suspicion." Under M.G.L. c. 93, § 114, is the
+  licensee protected from liability for that answer?
+options:
+  - No, because the buyer’s question converts the suspicion into a material fact that must be
+    disclosed.
+  - Yes, because suspicion of HIV infection is not a material fact requiring disclosure.
+  - No, because the statute does not authorize making a false statement about a psychologically
+    impacted fact.
+  - Yes, because the licensee may rely on the statute to avoid answering the question.
+key: C
+explanation: Under § 114, a suspicion of HIV infection is listed as a psychologically impacted fact
+  that need not be disclosed, but the statute expressly states it does not authorize a seller,
+  lessor, or broker to make a misrepresentation or false statement. By answering “No” when a
+  suspicion existed, the licensee made a false statement, so protection does not apply. The options
+  that claim the buyer’s question converts the suspicion into a material fact or that the
+  non‑disclosure rule shields false statements are incorrect. The option suggesting the licensee may
+  rely on the statute to avoid answering is also incorrect because the statute provides no such
+  protection.
+citation:
+  source: M.G.L. c. 93 — Massachusetts General Laws c. 93 — Regulation of Trade and Certain
+    Enterprises (§ 114 psychologically impacted property)
+  url: null
+  quoted_text: Notwithstanding the foregoing, the provisions of this section shall not authorize a
+    seller, lessor or real estate broker or salesman to make a misrepresentation of fact or false
+    statement.
+  secondary: []
+terms:
+  - psychologically impacted
+  - misrepresentation
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

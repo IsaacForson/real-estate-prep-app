@@ -1,0 +1,42 @@
+id: LA-1430-0319
+jurisdiction: LA
+bank: state_LA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee delivers the mold informational pamphlet to the buyer three days after the parties
+  sign a purchase agreement. Under La. R.S. 37:1430–1470 § 1470(A)(2), is the licensee’s delivery
+  timing compliant?
+options:
+  - The licensee’s delivery is compliant because the buyer received the pamphlet before moving in
+  - The licensee’s delivery is compliant because the licensee acted in good faith
+  - The licensee’s delivery is noncompliant because the pamphlet was delivered after the contract
+    was entered into
+  - The licensee’s delivery is compliant because the pamphlet was delivered before closing
+key: C
+explanation: The statute requires the pamphlet be delivered at or before the time a lease, rental
+  agreement, or contract for sale is entered into. Delivering it after the contract is signed
+  violates this timing requirement. Therefore, the delivery is noncompliant.
+citation:
+  source: La. R.S. 37:1430–1470 § 1470(A)(2)
+  url: null
+  quoted_text: If the licensee delivers the mold informational pamphlet to the buyer, he shall do so
+    at or before the time a lease, rental agreement, or contract for sale is entered into by the
+    parties.
+  secondary: []
+terms:
+  - delivery timing
+  - contract
+  - pamphlet
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-25
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

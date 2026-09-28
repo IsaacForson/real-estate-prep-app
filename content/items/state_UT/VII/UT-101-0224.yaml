@@ -1,0 +1,57 @@
+id: UT-101-0224
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee has three separate transactions each resulting in a final judgment of $18,000 in
+  uncollected actual damages. Assuming the fund has sufficient money, what is the maximum total
+  amount the fund may pay for these judgments?
+options:
+  - $30,000.00
+  - $45,000.00
+  - $50,000.00
+  - $60,000.00
+key: B
+explanation: Each transaction is limited to $15,000, so three transactions yield $45,000; this total
+  does not exceed the per‑licensee cap of $50,000, so the fund may pay the full $45,000. The
+  distractor $50,000 incorrectly applies the per‑licensee cap without first applying the
+  per‑transaction limit.
+citation:
+  source: Utah Code Ann. § 61-2f-506(3)(c)
+  url: null
+  quoted_text: "(c) Regardless of the number of claimants or parcels of real estate involved in a real
+    estate transaction, the liability of the fund may not exceed: (i) $15,000 for a single
+    transaction; and (ii) $50,000 for one licensee."
+  secondary: []
+math:
+  worked_solution: >-
+    1. Compare each transaction's uncollected actual damages ($18,000) to the per‑transaction cap
+    ($15,000).
+
+    2. Since $18,000 exceeds $15,000, the fund pays $15,000 per transaction.
+
+    3. Multiply the per‑transaction payment by the number of transactions: $15,000 × 3 = $45,000.
+
+    4. Verify that the total does not exceed the per‑licensee cap of $50,000; $45,000 < $50,000, so
+    the fund may pay the full amount.
+  formulas:
+    - Payment per transaction = min(uncollected actual damages, $15,000)
+    - Total fund payment = number of transactions × Payment per transaction
+  onscreen_calculator_only: false
+terms:
+  - fund
+  - transaction
+  - cap
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

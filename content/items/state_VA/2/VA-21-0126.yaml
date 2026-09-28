@@ -1,0 +1,41 @@
+id: VA-21-0126
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the Virginia Real Estate Board believes a licensee **cannot** adequately protect escrow
+  funds and petitions the court for a receiver, within how many days must the Board decide whether
+  to pay the receiver’s expenses from the Virginia Real Estate Transaction Recovery Fund or from
+  Board funds after receiving the court‑approved invoices?
+options:
+  - Within thirty calendar days
+  - Within forty-five calendar days
+  - Within ten calendar days
+  - Within fifteen calendar days
+key: A
+explanation: The law states that the Board’s determination whether to pay receiver expenses from the
+  Recovery Fund or Board funds must be made within thirty days of receiving the court‑approved
+  invoices. The fifteen‑day option confuses this with the protest period for earnest money releases.
+citation:
+  source: Va. Code Ann. § 54.1-2108
+  url: null
+  quoted_text: Such determination shall be made within thirty days of the Board's receipt of the
+    court-approved receiver invoices.
+  secondary: []
+terms:
+  - receiver
+  - escrow
+  - board
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

@@ -1,0 +1,42 @@
+id: TX-1101-0166
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Texas real estate license expired 45 days ago. What renewal fee must the license holder pay
+  to renew the license?
+options:
+  - Pay 1.5 times the required renewal fee
+  - Pay 0.5 times the required renewal fee
+  - Pay 3 times the required renewal fee
+  - Pay 2 times the required renewal fee
+key: A
+explanation: If a license has been expired for 90 days or less, the renewal fee is 1.5 times the
+  required renewal fee. Since 45 days is within this period, the license holder must pay 1.5 times
+  the fee.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.451(e)
+  url: null
+  quoted_text: A person whose license has been expired for 90 days or less may renew the license by
+    paying to the commission a fee equal to 1-1/2 times the required renewal fee.
+  secondary: []
+terms:
+  - renewal
+  - fee
+  - expired
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

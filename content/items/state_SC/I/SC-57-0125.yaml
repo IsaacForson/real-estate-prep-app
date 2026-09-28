@@ -1,0 +1,43 @@
+id: SC-57-0125
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker is renewing their license for the sixth time. According to S.C. Code Ann. §
+  40-57-340(A)(1), must the broker submit to a criminal background check as part of this renewal?
+options:
+  - The broker must not submit to a criminal background check because they have already completed
+    one in the previous renewal.
+  - The broker must submit to a criminal background check because this is the sixth renewal, which
+    is a multiple of three.
+  - The broker must submit to a criminal background check only if they have changed their contact
+    information.
+  - The broker must not submit to a criminal background check because checks are required only on
+    the first renewal.
+key: B
+explanation: The rule requires a criminal background check upon every third renewal (i.e., renewals
+  3, 6, 9, …). Since this is the sixth renewal, the broker must submit to the check. The distractor
+  stating checks are required only on the first renewal misstates the frequency requirement.
+citation:
+  source: S.C. Code Ann. § 40-57-340(A)(1)
+  url: null
+  quoted_text: A broker or associate shall submit to a criminal background check upon every third
+    renewal as required for initial applicants pursuant to Section 40-57-115
+  secondary: []
+terms:
+  - background
+  - check
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

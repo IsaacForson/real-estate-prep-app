@@ -1,0 +1,47 @@
+id: MS-1954-0216
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "9"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee places a newspaper advertisement for a listing that includes only the licensee's
+  name and phone number, without mentioning the brokerage firm. Under Mississippi Real Estate
+  Commission Rule 3.3 B, is this advertising compliant?
+options:
+  - It is not compliant because the Principal Broker's name is missing.
+  - It is compliant because the licensee's name is clearly shown.
+  - It is compliant because the telephone number is clearly shown.
+  - It is not compliant because the advertisement lacks a for sale sign.
+key: A
+explanation: Rule 3.3 B requires all advertising to be under the direct supervision of and in the
+  name of the Principal Broker or brokerage firm, and to prominently display that name. An
+  advertisement that shows only the licensee's name and phone number does not display the required
+  Principal Broker or brokerage firm name, so it is non‑compliant. Options stating that the
+  advertisement is compliant because the licensee's name or telephone number is shown are incorrect,
+  as they miss the required brokerage identification. The option mentioning a missing for‑sale sign
+  is irrelevant because the rule does not require a sign.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.3
+  url: null
+  quoted_text: All advertising must be under the direct supervision and in the name of the Principal
+    Broker or in the name of the real estate Brokerage Firm and must prominently display the name of
+    the Principal Broker or the name of the Brokerage Firm.
+  secondary: []
+terms:
+  - advertising
+  - principal broker
+  - brokerage firm
+  - rule 3.3
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

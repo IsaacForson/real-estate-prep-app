@@ -1,0 +1,45 @@
+id: TX-1101-0149
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A violation of the Real Estate License Act occurred in Dallas County, but the defendant
+  resides in Tarrant County. Under Tex. Occ. Code § 1101.752(b), in which county may the commission
+  bring an injunctive action?
+options:
+  - Either Tarrant County or Tarrant County.
+  - Either Dallas County or Ellis County.
+  - Either Dallas County or Dallas County.
+  - Either Dallas County or Tarrant County.
+key: D
+explanation: Tex. Occ. Code § 1101.752(b) allows the commission to bring suit in the county where
+  the violation occurred or where the defendant resides, providing a choice of either venue. The
+  distractor "Only in Dallas County" is wrong because the statute also permits suit in the
+  defendant's county of residence.
+citation:
+  source: Tex. Occ. Code § 1101.752(b)
+  url: null
+  quoted_text: >-
+    (b) The action shall be brought in the name of the state in the district court in the county in
+    which:
+
+    (1) the violation occurred or is about to occur; or
+
+    (2) the defendant resides.
+  secondary: []
+terms:
+  - venue
+  - injunction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

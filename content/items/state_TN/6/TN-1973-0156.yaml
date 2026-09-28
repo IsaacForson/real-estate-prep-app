@@ -1,0 +1,44 @@
+id: TN-1973-0156
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer offers to pay earnest money with a check dated two weeks in the future. The purchase
+  offer does not contain any exception allowing postdated checks. According to Tennessee Real Estate
+  Commission rules, what must the licensee do with this check?
+options:
+  - Deposit the check and notify the buyer that funds will be available after the date
+  - Accept the check and deposit it into the escrow account immediately
+  - Refuse to accept the check as payment for the earnest money
+  - Accept the check but hold it until the date written on the check before depositing
+key: C
+explanation: The rule prohibits accepting a postdated check for trust money unless the offer
+  expressly provides otherwise. Since the offer lacks such an exception, the licensee must refuse
+  the check. Accepting and holding the check until its date still constitutes acceptance, which is
+  prohibited.
+citation:
+  source: "Tenn. Comp. R. & Regs. 1260-02 — Tenn. Comp. R. & Regs. ch. 1260-02 — Tennessee Real Estate
+    Commission rules: Rules of Conduct (rev. Sept. 2025), official Secretary of State PDF read via
+    Internet Archive capture of 2026-04-16 because publications.tnsosfiles.com returns 403 to
+    scripts — § 1260-02-.09"
+  url: null
+  quoted_text: No postdated check shall be accepted for payment of trust money unless otherwise
+    provided in the offer.
+  secondary: []
+terms:
+  - postdated check
+  - trust money
+  - offer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

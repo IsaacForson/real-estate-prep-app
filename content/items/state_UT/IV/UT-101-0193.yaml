@@ -1,0 +1,48 @@
+id: UT-101-0193
+jurisdiction: UT
+bank: state_UT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A regional manager for a rental agency oversees multiple properties but does not engage in any
+  property management acts such as leasing, rent collection, or maintenance coordination. Under Utah
+  Code Ann. § 61-2f-202.5(5), is the regional manager required to hold a real estate license?
+options:
+  - The regional manager is not required to hold a real estate license because they work for a
+    rental agency.
+  - The regional manager is required to hold a real estate license because they are a regional
+    manager.
+  - The regional manager is not required to hold a real estate license because they do not engage in
+    acts described in Subsection 61-2f-102(20).
+  - The regional manager is required to hold a real estate license because they oversee properties.
+key: C
+explanation: The key is correct because subsection 61-2f-202.5(5) exempts regional managers of
+  rental agencies who do not engage in acts described in Subsection 61-2f-102(20). The most tempting
+  distractor, D, incorrectly assumes that employment at a rental agency alone confers exemption,
+  whereas the exemption depends on not performing property management acts.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-202.5(5)
+  url: null
+  quoted_text: a regional manager or a corporate official of a rental agency who does not engage in an
+    act described in Subsection 61-2f-102(20).
+  secondary: []
+terms:
+  - regional manager
+  - rental agency
+  - exemption
+  - subsection
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-27
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

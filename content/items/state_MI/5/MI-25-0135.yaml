@@ -1,0 +1,45 @@
+id: MI-25-0135
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender requires a borrower to maintain an interest-bearing deposit account as a condition of
+  a mortgage loan secured by a rental property (non-owner-occupied). Under Michigan's usury act, is
+  this requirement permissible?
+options:
+  - Yes, because any lender may require such an account as additional security
+  - No, because subsection (13) applies only to owner-occupied dwelling loans
+  - Yes, because the account serves as additional security for the loan
+  - No, because the borrower must maintain excess funds in the account
+key: B
+explanation: Subsection (13) permits an interest‑bearing deposit account only when the primary
+  security is a dwelling to be occupied by the owner. Because the property is a rental
+  (non‑owner‑occupied), the requirement is not allowed. The options stating that the requirement is
+  permissible because any lender may require such an account as additional security, and that the
+  account serves as additional security for the loan, overlook the owner‑occupancy limitation, and
+  the option stating that the borrower must maintain excess funds in the account adds an unrelated
+  requirement.
+citation:
+  source: Mich. Comp. Laws § 438.31c(13)
+  url: null
+  quoted_text: This subsection shall only apply to a loan the primary security for which is a dwelling
+    to be occupied by the owner, or a land contract given as consideration for the sale of a
+    dwelling which is to be occupied by the owner.
+  secondary: []
+terms:
+  - deposit account
+  - owner-occupied
+  - mortgage loan
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-26
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26
