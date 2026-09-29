@@ -1,0 +1,44 @@
+id: FL-475-0035
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Maria owns a single-family home and decides to sell it. She hires a licensed broker and agrees
+  to pay a commission upon sale. Under Florida law, is Maria exempt from the licensing requirement
+  for selling her own property?
+options:
+  - She is exempt as long as she does not pay any additional compensation beyond the broker's fee.
+  - She is not exempt because she employed a broker and agreed to pay a commission.
+  - She is not exempt because owners are generally not exempt from licensing requirements.
+  - She is exempt from the licensing requirement because she is the owner selling her own property.
+key: B
+explanation: Under Florida law, the exemption for owners selling their own property does not apply
+  when the owner employs a broker who is paid a commission. Since Maria hired a broker and agreed to
+  pay a commission, she is not exempt. See § 475.011(2).
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.011(2)
+  url: null
+  quoted_text: this exemption shall not be available if and to the extent that an agent, employee, or
+    independent contractor paid a commission or other compensation strictly on a transactional basis
+    is employed to make sales, exchanges, or leases to or with customers
+  secondary: []
+terms:
+  - exemption
+  - commission
+  - owner
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

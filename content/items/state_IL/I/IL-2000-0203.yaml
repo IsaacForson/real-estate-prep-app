@@ -1,0 +1,48 @@
+id: IL-2000-0203
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant was convicted of a felony four years ago, has not been convicted since, and has
+  completed all sentence requirements. Under Sec.5-25(b)(2), what is the effect on the applicant's
+  eligibility for a license?
+options:
+  - The applicant remains ineligible regardless of rehabilitation, restitution, or any mitigating
+    factors.
+  - The applicant is eligible only if the offense is unrelated to the duties of a real estate
+    licensee.
+  - The applicant is not automatically eligible because the five‑year threshold has not been met
+    without a subsequent conviction.
+  - The applicant is automatically eligible for a license because more than three years have passed
+    since the felony conviction.
+key: C
+explanation: The rule requires that either five years since a felony conviction or three years since
+  release, whichever is later, must have passed without a subsequent conviction for automatic
+  eligibility. Four years is insufficient, so the applicant is not automatically eligible.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) Sec. 5-25(b)(2)
+  url: null
+  quoted_text: unless otherwise specified, whether 5 years since a felony conviction or 3 years since
+    release from confinement for the conviction, whichever is later, have passed without a
+    subsequent conviction
+  secondary: []
+terms:
+  - felony conviction
+  - rehabilitation
+  - subsequent conviction
+  - moral character
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

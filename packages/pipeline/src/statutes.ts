@@ -185,6 +185,64 @@ export function quoteAppears(quote: string, statuteText: string): boolean {
   return n(statuteText).includes(q);
 }
 
+/**
+ * Fuzzy quote relocation — when `quoteAppears` fails, try more aggressive normalization
+ * and anchor-based matching to find where the quote actually lives in the statute.
+ * Returns the corrected verbatim text from the statute, or null if no confident match.
+ */
+export function fuzzyRelocateQuote(quote: string, docs: StatuteDoc[]): { verbatim: string; docIdx: number } | null {
+  const ultra = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const uq = ultra(quote);
+  if (uq.length < 20) return null;
+
+  for (let di = 0; di < docs.length; di++) {
+    const doc = docs[di]!;
+    const ut = ultra(doc.text);
+
+    // Strategy 1: ultra-normalized full match (strips ALL punctuation and spaces)
+    let idx = ut.indexOf(uq);
+    if (idx >= 0) {
+      const raw = extractRawSlice(doc.text, ut, idx, uq.length);
+      if (raw) return { verbatim: raw, docIdx: di };
+    }
+
+    // Strategy 2: anchor first 35% + last 35% of ultra-normalized chars
+    const anchorLen = Math.min(50, Math.floor(uq.length * 0.35));
+    if (anchorLen < 15) continue;
+    const head = uq.slice(0, anchorLen);
+    const tail = uq.slice(-anchorLen);
+    const hi = ut.indexOf(head);
+    if (hi < 0) continue;
+    const region = ut.slice(hi, hi + uq.length * 2);
+    const ti = region.lastIndexOf(tail);
+    if (ti < 0) continue;
+    const matchEnd = hi + ti + tail.length;
+    const matchLen = matchEnd - hi;
+    if (matchLen < uq.length * 0.6 || matchLen > uq.length * 1.6) continue;
+    const raw = extractRawSlice(doc.text, ut, hi, matchLen);
+    if (raw) return { verbatim: raw, docIdx: di };
+  }
+  return null;
+}
+
+function extractRawSlice(rawText: string, ultraText: string, ultraStart: number, ultraLen: number): string | null {
+  let ri = 0, ui = 0, rawStart = -1, rawEnd = -1;
+  const lower = rawText.toLowerCase();
+  while (ri < lower.length && ui < ultraText.length) {
+    const ch = lower[ri]!;
+    if (/[a-z0-9]/.test(ch)) {
+      if (ui === ultraStart && rawStart < 0) rawStart = ri;
+      if (ui === ultraStart + ultraLen - 1) { rawEnd = ri + 1; break; }
+      ui++;
+    }
+    ri++;
+  }
+  if (rawStart < 0 || rawEnd < 0) return null;
+  const verbatim = rawText.slice(rawStart, rawEnd).trim();
+  if (verbatim.length < 15 || verbatim.length > 600) return null;
+  return verbatim;
+}
+
 export function hasStatutesFor(jur: string): boolean {
   return existsSync(statuteDir(jur)) && listFiles(statuteDir(jur), ".md").length > 0;
 }

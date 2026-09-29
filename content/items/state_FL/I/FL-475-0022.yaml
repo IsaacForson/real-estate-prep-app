@@ -1,0 +1,49 @@
+id: FL-475-0022
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property management firm pays a tenant a referral fee of $75 for introducing a prospective
+  lessee to an apartment unit. Under Florida Statute 475.01(13), is this payment permissible?
+options:
+  - The fee is permissible because it is less than $100
+  - The fee is not permissible because it exceeds the $50 limit per transaction
+  - The fee is permissible as long as the tenant is not advertised
+  - The fee is not permissible because only owners may pay such fees
+key: B
+explanation: Florida Statute 475.01(13) allows a referral fee only if its value does not exceed $50
+  per transaction. Paying $75 is $25 above that limit, so the payment is not allowed. The claim that
+  the fee is permissible because it is under $100 misstates the statutory threshold.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.01(13)
+  url: null
+  quoted_text: provided the value of the fee does not exceed $50 per transaction
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the statutory limit: $50 per transaction. Step 2: Identify the
+    fee paid: $75. Step 3: Compare fee to limit: $75 > $50. Step 4: Calculate excess: $75 - $50 =
+    $25. Step 5: Because the fee exceeds the limit, the payment is not permissible."
+  formulas:
+    - Excess = Fee - Limit
+    - Permissible if Fee ≤ Limit
+  onscreen_calculator_only: false
+terms:
+  - finder's fee
+  - referral fee
+  - apartment complex
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

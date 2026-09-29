@@ -1,0 +1,46 @@
+id: FL-475-0036
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: John, a licensed sales associate, shows a property to a prospective buyer who is not
+  represented by any licensee. John provides the buyer with property details and assists with making
+  an offer, but does not represent the buyer as a fiduciary. Under Florida law, what is the buyer's
+  status?
+options:
+  - The buyer is a principal because the licensee represents them in a fiduciary capacity.
+  - The buyer is a client who receives fiduciary representation from the licensee.
+  - The buyer is a customer because they may or may not be represented by a licensee.
+  - The buyer is a prospect with no legal relationship to the licensee.
+key: C
+explanation: Florida Statute §475.01(1)(d) defines a customer as a member of the public who may or
+  may not be represented by a licensee, which fits the buyer in the scenario. The option stating
+  that the buyer is a client who receives fiduciary representation from the licensee incorrectly
+  labels the buyer as a principal, which requires a single agent fiduciary relationship.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.01(1)(d)
+  url: null
+  quoted_text: Customer means a member of the public who is or may be a buyer or seller of real
+    property and may or may not be represented by a real estate licensee in an authorized brokerage
+    relationship.
+  secondary: []
+terms:
+  - customer
+  - principal
+  - client
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

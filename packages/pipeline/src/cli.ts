@@ -54,6 +54,7 @@ const HELP = `pipeline — content factory (SPEC §3.5)
   import-drafts <bank> <file.json>                  agent-written {node, items[]} JSON → lint/quote-checked drafts
   verify-local <bank>                               drafts passing local checks → content (status verified, provisional)
   repair <id...>                                    LLM-rewrite wording of content items failing lint → back to verified
+  rehab <bank> [--limit N]                           reprocess rejected items: deterministic fixes + fuzzy quote matching + LLM repair → drafts
   qa-reject <reviewer> <id> "<reason>"              retire an item
   publish <bank> [--include-verified]               qa_approved (and verified, if flagged) → published
   publish --remote [<bank>] [--dry-run] [--force-version] [--backfill]   upload qa_approved/published items to the Supabase 'content' bucket + item_index / item_content / content_versions / content_alerts (needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY); --backfill upserts every published item's item_content row
@@ -218,6 +219,12 @@ async function main() {
       const r = verifyLocal(positional[0]!); console.log(`verify-local: ${r.verified} verified (provisional), ${r.rejected} rejected`); break;
     }
     case "repair": { const { repairContentItems } = await import("./repair.js"); console.log(await repairContentItems(positional)); break; }
+    case "rehab": {
+      const { rehabBank } = await import("./rehab.js");
+      const r = await rehabBank(positional[0]!, { limit: flag("limit") ? Number(flag("limit")) : undefined });
+      console.log(`rehab: ${r.recovered}/${r.total} recovered (${r.deterministic_fixed} deterministic, ${r.quote_relocated} quotes relocated, ${r.llm_repaired} LLM-repaired), ${r.still_rejected} still rejected`);
+      break;
+    }
     case "qa-reject": { qaReject(positional[0]!, positional[1]!, positional[2] ?? "rejected by reviewer"); break; }
     case "refs-audit": {
       const rows = auditRefs(positional[0]);

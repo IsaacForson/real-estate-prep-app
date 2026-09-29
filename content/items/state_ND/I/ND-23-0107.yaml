@@ -1,0 +1,43 @@
+id: ND-23-0107
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual advertises themselves as a real estate broker, shows properties, and negotiates
+  sales, but holds no license. Under N.D. Cent. Code § 43-23-11.1(1), may the commission investigate
+  this individual?
+options:
+  - The commission may investigate the individual only if a verified complaint is filed
+  - The commission may not investigate the individual unless the transaction involves earnest money
+  - The commission may investigate the individual because the person assumes to act as a licensee
+  - The commission may not investigate the individual because the person lacks a real estate license
+key: C
+explanation: The statute authorizes the commission to investigate activities of any licensee or any
+  person that assumes to act in such capacity within the state. Since the individual holds
+  themselves out as a broker without a license, they are a person assuming to act as a licensee and
+  thus subject to investigation. The other options incorrectly limit the commission's authority to
+  licensed persons, require a complaint, or tie jurisdiction to earnest money.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-11.1
+  url: null
+  quoted_text: shall investigate the activities of any licensee or any person that assumes to act in
+    such capacity within the state
+  secondary: []
+terms:
+  - licensee
+  - investigation
+  - assumes to act
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

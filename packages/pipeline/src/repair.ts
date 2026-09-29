@@ -19,6 +19,8 @@ export const REPAIRABLE = new Set([
   "option-form-opening",
   "option-form-punctuation",
   "absolute-qualifier",
+  "math-worked-solution",
+  "option-length-balance",
 ]);
 
 /** True when every reason is a lint rule in REPAIRABLE (quote/citation failures are not repairable). */
@@ -34,6 +36,7 @@ const Rewrite = z.object({
   stem: z.string().min(20),
   options: z.array(z.string().min(1)).length(4),
   explanation: z.string().min(40),
+  math: z.object({ worked_solution: z.string(), formulas: z.array(z.string()) }).nullable().optional(),
   changed: z.array(z.string()),
 });
 
@@ -43,7 +46,9 @@ const SYSTEM = `You repair the wording of a multiple-choice real estate licensin
 - When the citation source is a "REP Ref." reference note (not a statute or rule), the explanation must not mention any section number at all — state the rule plainly ("Writing a new contract clause from scratch is drafting, which is the unauthorized practice of law…").
 - Stems must be answerable by a candidate who has NOT seen any notes: no "according to the reference/section"; a negative stem must bold the negative word with markdown (**NOT**, **EXCEPT**).
 - Wrong options may be lightly reworded only when a check requires it (grammatical form, absolutes); they must stay wrong.
-Return JSON {"stem": string, "options": [4 strings, same order], "explanation": string, "changed": [field names]}.`;
+- Option length balance: all four options must be within ±30% of the mean character length. When an option is too long or too short, trim or extend the WRONG options so they are close in length to the correct option. Never pad with filler — adjust the level of detail.
+- Math items: if the stem involves computing a dollar amount, percentage, area, commission, or any numeric figure, provide a math field with worked_solution (every arithmetic step) and formulas (the formula names). If the item is NOT math, set math to null.
+Return JSON {"stem": string, "options": [4 strings, same order], "explanation": string, "math": {"worked_solution": string, "formulas": [string]} | null, "changed": [field names]}.`;
 
 export async function repairItem(router: LlmRouter, item: Item, reasons: string[]): Promise<{ item: Item; changed: boolean; note: string }> {
   const k = keyIndex(item.key);
@@ -56,7 +61,8 @@ export async function repairItem(router: LlmRouter, item: Item, reasons: string[
     const { data } = await chatJson(router, Rewrite, [{ role: "system", content: SYSTEM }, { role: "user", content: user + feedback }], { maxTokens: 1800, temperature: 0.3 + 0.2 * attempt });
     const options = [...data.options];
     options[k] = item.options[k]!; // the keyed option is never rewritten
-    const out: Item = { ...item, stem: data.stem, options, explanation: data.explanation, version: item.version + 1 };
+    const math = data.math ? { ...data.math, onscreen_calculator_only: item.math?.onscreen_calculator_only ?? false } : (data.math === null ? undefined : item.math);
+    const out: Item = { ...item, stem: data.stem, options, explanation: data.explanation, math, version: item.version + 1 };
     const problems = lintItem(out).filter((f) => f.severity === "error").map((f) => `${f.rule}: ${f.message}`);
     if (!problems.length) return { item: out, changed: true, note: `repaired: ${data.changed.join(", ") || "wording"}` };
     feedback = `\n\nYOUR PREVIOUS ATTEMPT STILL FAILED: ${problems.join("; ")}. Fix them.`;

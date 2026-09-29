@@ -1,0 +1,42 @@
+id: FL-475-0032
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate receives a check for a deposit made payable to herself personally. According
+  to Florida statute, may she retain the check?
+options:
+  - The sales associate may retain the check if she deposits it into her escrow account
+  - The sales associate may retain the check only with employer consent and the check payable to them
+  - The sales associate may retain the check provided she signs it over to the employer immediately
+  - The sales associate may not retain money received in a real estate transaction
+key: B
+explanation: Under 475.42(d), a sales associate may not collect any money in connection with a real
+  estate brokerage transaction except in the name of the employer and with the express consent of
+  the employer; therefore, she may retain the check only if the employer consents and the check is
+  made payable to the employer.
+citation:
+  source: Fla. Stat. § 475.42(d)
+  url: null
+  quoted_text: A sales associate may not collect any money in connection with any real estate
+    brokerage transaction, whether as a commission, deposit, payment, rental, or otherwise, except
+    in the name of the employer and with the express consent of the employer;
+  secondary: []
+terms:
+  - sales associate
+  - employer
+  - deposit
+  - consent
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

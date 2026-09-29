@@ -49,9 +49,22 @@ export function stripRefTags(text: string): string {
   return text.replace(/\s*\((?:see )?REP Ref\.?[^)]*\)\.?/g, ".").replace(/\.\./g, ".").replace(/\s+\./g, ".").trim();
 }
 
+/** If citation.source fails the section-marker check (no § / section / rule / ref.), try to add one. */
+export function fixSectionMarker(source: string): string {
+  if (/§|sec\.|section|rule|r\.|ref\./i.test(source)) return source;
+  // Pattern: source ends with a bare section number like "475.01(1)(l)" or "4735.18"
+  const trailing = source.match(/\s+(\d{2,}(?:\.\d+)*(?:\([^)]+\))*)$/);
+  if (trailing) return source.slice(0, trailing.index!) + " § " + trailing[1];
+  // Pattern: heading prefix "### Title — ... <section>"  →  strip heading, keep "Title § section"
+  const headed = source.match(/^###\s+(.+?)\s*(?:—|–|-)\s+.+?\s+(\d{2,}(?:\.\d+)*(?:\([^)]+\))*)$/);
+  if (headed) return `${headed[1]} § ${headed[2]}`;
+  return source;
+}
+
 export function normalizeDraft(item: Item, docs: StatuteDoc[]): Item {
   const stem = boldNegations(item.stem);
-  const source = normalizeSource(item.citation.source, item.citation.quoted_text, docs);
+  let source = normalizeSource(item.citation.source, item.citation.quoted_text, docs);
+  source = fixSectionMarker(source);
   return shuffleOptions({ ...item, stem, explanation: stripRefTags(item.explanation), citation: { ...item.citation, source } });
 }
 

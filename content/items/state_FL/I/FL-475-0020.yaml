@@ -1,0 +1,49 @@
+id: FL-475-0020
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homeowner decides to sell her house and hires a licensed broker to market the property,
+  agreeing to pay a commission based on the sale price. Under Florida Statute 475.011(2), what is
+  the effect on the exemption that allows an owner to sell their own property without a license?
+options:
+  - The exemption remains available because the owner is selling their own property.
+  - The exemption is not available because the owner employed an agent paid a commission on a
+    transactional basis.
+  - The exemption is not available because the owner sold the property to a family member.
+  - The exemption remains available because the broker is licensed.
+key: B
+explanation: Under 475.011(2), the exemption for owners selling their own property is lost when the
+  owner employs an agent who is paid a commission or other compensation strictly on a transactional
+  basis. Hiring a licensed broker and paying a commission based on the sale price therefore removes
+  the exemption, which is exactly what the correct answer states. The answer that says the exemption
+  remains available because the broker is licensed is incorrect; the statute’s focus is on the
+  nature of the compensation, not on the broker’s licensure.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections Fla.
+    Stat. § 475.011(2)
+  url: null
+  quoted_text: this exemption shall not be available if and to the extent that an agent, employee, or
+    independent contractor paid a commission or other compensation strictly on a transactional basis
+    is employed to make sales, exchanges, or leases to or with customers in the ordinary course of
+    an owner’s business of selling, exchanging, or leasing real property to the public.
+  secondary: []
+terms:
+  - exemption
+  - commission
+  - transactional basis
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

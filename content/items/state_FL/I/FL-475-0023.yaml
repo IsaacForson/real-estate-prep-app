@@ -1,0 +1,47 @@
+id: FL-475-0023
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee submits an initial application and pays $120 for the examination fee. Under Florida
+  Statute 475.125(1), is this amount permissible?
+options:
+  - The fee is permissible because it covers both application and examination
+  - The fee is not permissible because it exceeds the $100 maximum
+  - The fee is permissible if the applicant also pays a separate license fee
+  - The fee is not permissible only if the applicant fails the exam
+key: B
+explanation: Under Florida Statute 475.125(1), the combined initial application and examination fee
+  may not exceed $100. Because the submitted fee of $120 is greater than the $100 limit, it is not
+  permissible.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.125(1)
+  url: null
+  quoted_text: The fee for initial application and examination may not exceed $100
+  secondary: []
+math:
+  worked_solution: Maximum allowed fee = $100. Submitted fee = $120. Excess = $120 - $100 = $20. Since
+    excess > 0, the fee exceeds the maximum and is not permissible.
+  formulas:
+    - Excess = Submitted fee - Maximum allowed fee
+    - Permissible if Excess ≤ 0
+  onscreen_calculator_only: false
+terms:
+  - application fee
+  - examination fee
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

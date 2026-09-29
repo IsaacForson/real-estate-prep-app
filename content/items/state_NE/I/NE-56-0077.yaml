@@ -1,0 +1,48 @@
+id: NE-56-0077
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a kickback from a title company for referring clients and does not disclose
+  this payment to the client. Under Neb. Rev. Stat. § 81-885.24, is this action a violation?
+options:
+  - The broker’s action is not a violation because referral fees are allowed when disclosed
+  - The broker’s action is not a violation because the title company is a third-party service
+    provider
+  - The broker’s action is a violation because it constitutes undisclosed compensation
+  - The broker’s action is a violation only if the client suffers financial loss
+key: C
+explanation: Neb. Rev. Stat. § 81-885.24 prohibits accepting any form of undisclosed compensation,
+  consideration, rebate, or direct profit on expenditures made for a principal. Therefore, the
+  broker’s undisclosed kickback is a violation, making the option stating that the action is a
+  violation because it constitutes undisclosed compensation correct. The option claiming the action
+  is not a violation because referral fees are allowed when disclosed is incorrect because the fee
+  here was undisclosed, so the disclosure exception does not apply. The option asserting the action
+  is not a violation because the title company is a third‑party service provider is wrong; the
+  status of the payor does not excuse the lack of required disclosure. The option stating the
+  violation occurs only if the client suffers financial loss adds a condition not present in the
+  statute; the prohibition applies regardless of actual loss.
+citation:
+  source: Neb. Rev. Stat. § 81-885 et seq. — Nebraska Real Estate License Act, Neb. Rev. Stat. §§
+    81-885 to 81-885.56 — NREC License Manual, Aug. 2026 ed. (OCR of scanned PDF) § 81-885.24
+  url: null
+  quoted_text: Accepting, giving, or charging any form of undisclosed compensation, consideration,
+    rebate, or direct profit on expenditures made for a principal.
+  secondary: []
+terms:
+  - undisclosed compensation
+  - kickback
+  - referral fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29
