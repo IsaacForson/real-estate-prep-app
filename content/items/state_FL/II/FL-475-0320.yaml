@@ -1,0 +1,40 @@
+id: FL-475-0320
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate currently employed by Broker A receives an offer to also work as an
+  independent contractor for Broker B on weekends, while maintaining her employment with Broker A.
+  Is this permissible under Florida law?
+options:
+  - Yes, as long as she works fewer than 20 hours for Broker B
+  - No, because a sales associate may have only one registered employer
+  - Yes, if she obtains written consent from both brokers
+  - No, unless she first transfers her license to Broker B
+key: B
+explanation: Florida law prohibits a sales associate from having more than one registered employer
+  at any time. Therefore, accepting the additional work would violate the one‑employer rule. The
+  suggestion that limited hours or broker consent overrides this restriction is incorrect because
+  the statute makes no exception for part‑time work or mutual agreement.
+citation:
+  source: Fla. Stat. ch. 475 § 475.215(2)
+  url: null
+  quoted_text: A sales associate or broker associate shall have no more than one registered employer
+    at any one time.
+  secondary: []
+terms:
+  - sales associate
+  - employer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

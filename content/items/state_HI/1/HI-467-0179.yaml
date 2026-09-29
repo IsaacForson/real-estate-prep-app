@@ -1,0 +1,39 @@
+id: HI-467-0179
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Hawaii broker receives a rental deposit from a tenant while managing a property. What must
+  the broker do with this money under Haw. Admin. Rules § 16-99-3(e)?
+options:
+  - Place the money in the broker's personal savings account at the main bank
+  - Place the money in the broker's business operating account at the firm's headquarters
+  - Place the money in a special trust account separate from the broker's own funds
+  - Place the money in cash in the office safe until the tenant requests it
+key: C
+explanation: The rule mandates that trust money such as rental deposits be kept in special bank
+  accounts separated from the broker's own funds. Placing the money in a personal or business
+  account or holding it as cash violates this segregation requirement.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(e)
+  url: null
+  quoted_text: The broker shall keep in special bank accounts, separated from the broker's own funds,
+    moneys coming into the broker's possession in trust for other persons, such as escrow funds,
+    trust funds, clients' moneys, rental deposits, rental receipts, and other like items.
+  secondary: []
+terms:
+  - trust account
+  - rental deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

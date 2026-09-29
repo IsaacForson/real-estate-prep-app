@@ -1,0 +1,37 @@
+id: PA-9-0161
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under the Pennsylvania Real Estate Licensing and Registration Act, what is the maximum amount
+  that may be paid from the Real Estate Recovery Fund for a single valid claim?
+options:
+  - $10,000
+  - $20,000
+  - $50,000
+  - $100,000
+key: B
+explanation: The statute limits the fund's liability to $20,000 for any one claim. The distractor
+  $10,000 is incorrect because the law sets the limit at twice that amount.
+citation:
+  source: 63 P.S. § 455.803(d)
+  url: null
+  quoted_text: the liability of that portion of the fund allocated for the purpose of this act shall
+    not exceed $20,000 for any one claim
+  secondary: []
+terms:
+  - real estate recovery fund
+  - claim limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

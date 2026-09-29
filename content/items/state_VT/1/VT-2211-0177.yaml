@@ -1,0 +1,41 @@
+id: VT-2211-0177
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed 16 hours of approved continuing education, including 4 hours of
+  legislation, over the past two years. Under 26 V.S.A. § 2293, can the salesperson renew the
+  license?
+options:
+  - The salesperson may renew the license after meeting the requirement.
+  - The salesperson may not renew because brokers need 24 hours of education.
+  - The salesperson may not renew because legislation hours must be 8 each year.
+  - The salesperson may not renew because education must be completed each year.
+key: A
+explanation: Under 26 V.S.A. § 2293, salespersons must complete at least 16 hours of continuing
+  education, with four hours addressing legislation, over the preceding two‑year period. The
+  applicant has met this requirement, so renewal is permissible.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2293
+  url: null
+  quoted_text: completes at least 24 hours of instruction for brokers and 16 hours of instruction for
+    salespersons, approved by the Commission, during the preceding two-year period. Four hours of
+    this continuing education instruction shall address legislation
+  secondary: []
+terms:
+  - continuing education
+  - legislation
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,40 @@
+id: SC-57-0162
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Lisa, a licensee, markets herself as 'Lisa' but her legal first name is 'Elizabeth'. She has
+  not registered 'Lisa' with the commission. Under S.C. Code Ann. § 40-57-30(4), her use of 'Lisa'
+  is:"
+options:
+  - The use of 'Lisa' is permissible as an alternative name because it is a first name
+  - The use of 'Lisa' is not permissible because it must be registered with the commission
+  - The use of 'Lisa' is permissible because she uses it for marketing purposes
+  - The use of 'Lisa' is permissible if the licensee believes it is her legal first name
+key: B
+explanation: The definition of 'alternative name' requires that the name be registered with the
+  commission and used for marketing purposes. Since Lisa has not registered 'Lisa', her use does not
+  satisfy the statutory requirement, making it impermissible. The distractors omit the registration
+  requirement or add irrelevant conditions.
+citation:
+  source: S.C. Code Ann. § 40-57-30(4)
+  url: null
+  quoted_text: Alternative name means a first name, other than the licensee's legal first name, that
+    is registered with the commission and used by the licensee for marketing purposes.
+  secondary: []
+terms:
+  - alternative name
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

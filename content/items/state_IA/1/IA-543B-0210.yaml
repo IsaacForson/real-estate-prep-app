@@ -1,0 +1,44 @@
+id: IA-543B-0210
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A nonlicensed employee of a real estate broker shows a rental property to a prospective tenant
+  and collects the first month’s rent. Under Iowa Code § 543B.7A, is a real estate license required
+  for these activities?
+options:
+  - No, because the activities are excluded for a nonlicensed employee of a broker under subsection 3
+  - No, because showing rental property is exempt regardless of employment
+  - No, because collecting rent is permitted for any unlicensed person
+  - No, because the employee must first obtain a salesperson license to perform these acts
+key: A
+explanation: Under Iowa Code § 543B.7A(3), a nonlicensed employee of a real estate broker may show
+  rental property and collect rents and deposits without needing a license. The option stating that
+  showing rental property is exempt regardless of employment is incorrect because the exemption
+  applies only to nonlicensed employees of a broker, not to anyone. The option stating that
+  collecting rent is permitted for any unlicensed person is incorrect because the permission is
+  limited to nonlicensed employees of a broker acting within their employment. The option stating
+  that the employee must first obtain a salesperson license is incorrect because subsection 3
+  expressly excludes these activities from the licensing requirement for such employees.
+citation:
+  source: Iowa Code § 543B.7A(3)
+  url: null
+  quoted_text: collection of rents and deposits
+  secondary: []
+terms:
+  - nonlicensed employee
+  - rental
+  - collection
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

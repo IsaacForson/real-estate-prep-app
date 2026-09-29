@@ -1,0 +1,39 @@
+id: NE-56-0044
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a vacancy occurs on the Nebraska State Real Estate Commission, who is responsible for
+  appointing a successor to serve the remainder of the term?
+options:
+  - Selected by the Governor
+  - Selected by the Chair
+  - Selected by the Director
+  - Selected by the Counsel
+key: A
+explanation: The law states that the Governor shall fill any vacancy by appointing a member to serve
+  during the unexpired term of the departing commissioner. The Chair, Director, or Counsel do not
+  have this authority.
+citation:
+  source: Neb. Rev. Stat. § 81-885.07(2)
+  url: null
+  quoted_text: In the event of a vacancy on the commission, the Governor shall fill such vacancy by
+    appointing a member to serve during the unexpired term of the member whose office has become
+    vacant.
+  secondary: []
+terms:
+  - vacancy
+  - appointment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

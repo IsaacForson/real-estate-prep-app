@@ -1,0 +1,48 @@
+id: TX-1101-0194
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer experienced alleged misconduct by a licensee on June 1, 2020, and submitted a
+  signed, written complaint to the Texas Real Estate Commission on July 1, 2025. Under Tex. Occ.
+  Code § 1101.204(c), may the commission investigate the licensee based on this complaint?
+options:
+  - The commission may not investigate because the complaint was submitted after the fourth
+    anniversary of the incident.
+  - The commission may investigate because the complaint was submitted within four years of the
+    incident.
+  - The commission may not investigate unless the licensee consents to the investigation.
+  - The commission may investigate only if the consumer provides additional evidence of harm.
+key: A
+explanation: The complaint was submitted on July 1, 2025, which is after the fourth anniversary of
+  the June 1, 2020 incident (June 1, 2024). Section 1101.204(c) prohibits investigations based on
+  complaints submitted later than the fourth anniversary of the incident. The distractor claiming
+  the complaint was within four years is incorrect because the dates show it exceeds that period.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.204
+  url: null
+  quoted_text: (c) The commission may not conduct an investigation of a person licensed under this
+    chapter or Chapter 1102 in connection with a complaint submitted later than the fourth
+    anniversary of the date of the incident that is the subject of the complaint.
+  secondary: []
+terms:
+  - complaint
+  - investigation
+  - anniversary
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

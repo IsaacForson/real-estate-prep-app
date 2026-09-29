@@ -1,0 +1,42 @@
+id: MT-51-0136
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a citation for four separate trust account violations. What is the total
+  civil fine the broker must pay?
+options:
+  - $100.00
+  - $150.00
+  - $200.00
+  - $250.00
+key: C
+explanation: Each violation incurs a $50 fine, so four violations result in 4 × $50 = $200.00. The
+  other options result from miscalculating the number of violations or the fine amount.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-324
+  url: null
+  quoted_text: The applicable civil fine for failure to comply with trust account maintenance
+    requirements is $50 for each cited violation.
+  secondary: []
+math:
+  worked_solution: 4 violations × $50 per violation = $200.00
+  formulas:
+    - Total fine = number of violations × fine per violation
+  onscreen_calculator_only: false
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

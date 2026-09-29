@@ -1,0 +1,42 @@
+id: MI-25-0154
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee pays the required examination fee and is scheduled for the exam but does not
+  attend. What happens to the examination fee under MCL 339.407(2)?
+options:
+  - Warning and permission to reschedule
+  - Payment of a reexamination fee
+  - Forfeiture of the examination fee
+  - Refund of the examination fee
+key: C
+explanation: Under MCL 339.407(2), a licensee who fails to appear for a scheduled examination
+  forfeits the examination fee already paid. Therefore, the correct outcome is forfeiture of the
+  fee. The distractor suggesting payment of a reexamination fee describes a possible next step but
+  does not state what happens to the original fee; the rule only addresses forfeiture, not
+  subsequent payment. The other distractors incorrectly suggest a refund or a warning, which are not
+  supported by the cited provision.
+citation:
+  source: Mich. Comp. Laws § 339.407(2)
+  url: null
+  quoted_text: (2) An individual who is scheduled for examination or reexamination and who fails to
+    appear shall forfeit the examination fee.
+  secondary: []
+terms:
+  - examination fee
+  - forfeiture
+  - reschedule
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

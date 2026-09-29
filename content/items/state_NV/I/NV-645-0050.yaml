@@ -1,0 +1,41 @@
+id: NV-645-0050
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum administrative fine the Commission may impose for each violation under NRS
+  645.630?
+options:
+  - $5,000
+  - $10,000
+  - $15,000
+  - $20,000
+key: B
+explanation: NRS 645.630(1) states the Commission may require a licensee to pay an administrative
+  fine of not more than $10,000 for each violation. The $5,000 option is below the statutory
+  ceiling, while $15,000 and $20,000 exceed it.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.630
+  url: null
+  quoted_text: The Commission may require a licensee, property manager or owner-developer to pay an
+    administrative fine of not more than $10,000 for each violation he or she commits
+  secondary: []
+terms:
+  - administrative fine
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

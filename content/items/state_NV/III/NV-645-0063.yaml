@@ -1,0 +1,46 @@
+id: NV-645-0063
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "Under Nevada law, a licensee may refrain from presenting all offers made to or by a client if:"
+options:
+  - The licensee has already presented a higher offer and considers further offers unnecessary to
+    present.
+  - The client is unrepresented and the licensee is acting as a transaction broker in the
+    transaction.
+  - The offer is below the listing price and the licensee believes it is not serious enough to
+    present.
+  - The client has signed a waiver of the duty to present all offers on a form prescribed by the
+    Division.
+key: D
+explanation: NRS 645.254(4) states that the duty to present all offers may be waived only when the
+  client signs a waiver on a form prescribed by the Division. A licensee’s personal judgment about
+  an offer’s seriousness or price does not override this duty, so the distractor based on the
+  licensee’s belief is incorrect.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.254
+  url: null
+  quoted_text: Shall present all offers made to or by the client as soon as is practicable, unless the
+    client chooses to waive the duty of the licensee to present all offers and signs a waiver of the
+    duty on a form prescribed by the Division.
+  secondary: []
+terms:
+  - offer presentation
+  - waiver
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

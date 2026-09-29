@@ -1,0 +1,44 @@
+id: CA-4-0215
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A homeowner installs a satellite dish on the roof of a rented house, bolting it to the roof,
+  without any agreement about removal. At the end of the lease, the landlord demands the dish
+  remain. Who owns the dish under Cal. Civ. Code § 1013?
+options:
+  - The landlord owns it
+  - Both own it equally
+  - Neither party owns it
+  - The tenant owns it
+key: A
+explanation: Under §1013, when a person affixes property to another's land without an agreement
+  permitting removal, the fixture belongs to the landowner unless the landowner requires removal or
+  the affixer exercises a removal right. Here, there is no removal agreement, and the landlord wants
+  the dish to stay, so the landlord owns it.
+citation:
+  source: Cal. Civ. Code §§ 1013–1019 — Cal. Civil Code - CHAPTER 1. Accession to Real Property
+    1013-1019 — § 1013
+  url: null
+  quoted_text: When a person affixes his property to the land of another, without an agreement
+    permitting him to remove it, the thing affixed, except as otherwise provided in this chapter,
+    belongs to the owner of the land, unless he chooses to require the former to remove it or the
+    former elects to exercise the right of removal provided for in Section 1013.5 of this chapter.
+  secondary: []
+terms:
+  - affixion
+  - landlord
+  - tenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,39 @@
+id: AZ-20-0272
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An investor purchases vacant land expecting to resell it at a higher price after zoning
+  changes. The zoning change never occurs, and the investor suffers a loss of anticipated profit.
+  The investor obtains a judgment against the seller, who is a licensed real estate salesperson. May
+  the investor recover from the Arizona real estate recovery fund for this loss?
+options:
+  - No, because the fund does not pay for speculative losses or lost profits.
+  - Yes, but only if the investor also incurred actual out‑of‑pocket expenses.
+  - Yes, because the loss arose from a real estate transaction involving a licensee.
+  - No, because the fund only covers losses caused by natural causes or vandalism.
+key: A
+explanation: Subsection G(1) expressly excludes speculation, including lost profits and unrealized
+  losses, from fund liability. Therefore a loss of anticipated profit is not compensable, even
+  though the transaction involved a licensee.
+citation:
+  source: Ariz. Rev. Stat. § 32-2186(G)(1)
+  url: null
+  quoted_text: Speculation, including lost profits and other unrealized losses.
+  secondary: []
+terms:
+  - speculation
+  - lost profits
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

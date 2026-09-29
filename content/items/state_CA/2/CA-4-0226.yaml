@@ -1,0 +1,41 @@
+id: CA-4-0226
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller tells a dual agent that she is motivated to sell quickly because she is relocating
+  for a new job. Under Cal. Civ. Code § 2079.21(c), is this information considered confidential?
+options:
+  - No, because the seller voluntarily disclosed it to the agent.
+  - Yes, but only if it affects the price of the property.
+  - No, motivation is not listed as confidential information.
+  - Yes, the seller’s motivation is confidential information.
+key: D
+explanation: The definition of “confidential information” includes the client’s motivations, so the
+  seller’s reason for a quick sale is confidential. Options that deny confidentiality or tie it to
+  price misinterpret the statutory definition.
+citation:
+  source: Cal. Civ. Code § 2079.21(c)
+  url: null
+  quoted_text: “Confidential information” means facts relating to the client’s financial position,
+    motivations, bargaining position, or other personal information that may impact price, such as
+    the seller is willing to accept a price less than the listing price or the buyer is willing to
+    pay a price greater than the price offered.
+  secondary: []
+terms:
+  - confidential information
+  - motivation
+  - dual agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

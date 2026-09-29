@@ -1,0 +1,43 @@
+id: MS-1954-0247
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi corporation with three officers who actively participate in its brokerage
+  business applies for a real estate brokerage license. Two officers hold active broker licenses;
+  the third does not. Under Mississippi law, what is the correct outcome?
+options:
+  - The license shall be granted because two of the three officers hold broker licenses.
+  - The license shall be denied because all participating officers must hold broker licenses.
+  - The license shall be granted after the third officer obtains a broker license.
+  - The license shall be denied because the corporation has not paid the required fee.
+key: B
+explanation: Miss. Code Ann. § 73-35-6 requires that a business entity be licensed only when every
+  owner, partner, or officer who actively participates in the brokerage business holds an individual
+  broker license. Since one participating officer lacks a license, the corporation’s application
+  must be denied. The fee payment is assumed to be satisfied, so that is not the basis for denial.
+citation:
+  source: Miss. Code Ann. § 73-35-6
+  url: null
+  quoted_text: A corporation, partnership, company or association shall be granted a license when
+    individual broker’s licenses have been issued to every member, owner, partner or officer of such
+    partnership, company, association or corporation who actively participates in its brokerage
+    business and when any required fee is paid.
+  secondary: []
+terms:
+  - license
+  - business entity
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

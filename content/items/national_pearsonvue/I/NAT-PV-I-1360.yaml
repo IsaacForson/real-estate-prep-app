@@ -1,0 +1,49 @@
+id: NAT-PV-I-1360
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: According to the REP Ref. Property & Land Use, what is the total acreage described by 'the E
+  1/2 of the SW 1/4 and the NW 1/4 of the SE 1/4 of Section 22, Township 5 North, Range 2 West of
+  the Sixth Principal Meridian'?
+options:
+  - 80 acres
+  - 100 acres
+  - 120 acres
+  - 140 acres
+key: C
+explanation: The E 1/2 of the SW 1/4 equals 80 acres (640/(2×4)). The NW 1/4 of the SE 1/4 equals 40
+  acres (640/(4×4)). Their sum is 120 acres. The distractor of 80 acres only accounts for the first
+  part.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: Acreage is 640 divided by the product of the fraction denominators.
+  secondary: []
+math:
+  worked_solution: |-
+    SW 1/4 is a quarter section: 640 / 4 = 160 acres.
+    E 1/2 of that: 640 / (2 × 4) = 640 / 8 = 80 acres.
+    SE 1/4 is a quarter section: 640 / 4 = 160 acres.
+    NW 1/4 of that: 640 / (4 × 4) = 640 / 16 = 40 acres.
+    Total acreage = 80 + 40 = 120 acres.
+  formulas:
+    - Acreage = 640 / (denominator1 × denominator2)
+  onscreen_calculator_only: false
+terms:
+  - acreage
+  - quarter
+  - section
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,39 @@
+id: NAT-PSI-I-0797
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer discovers a leaky roof during inspection. Assuming no other issues, is the title
+  considered marketable?
+options:
+  - Yes, because a leaky roof is a physical defect, not a title defect.
+  - Yes, because a leaky roof is considered an encumbrance on the title.
+  - Yes, because title insurance covers physical defects like a leaky roof.
+  - Yes, because the seller must disclose all known defects before closing.
+key: A
+explanation: Section 10.5 clarifies that marketability concerns title defects, not physical
+  conditions; a leaky roof is a physical defect and does not affect marketability. The distractor
+  claiming any physical defect voids marketability misstates the rule by conflating physical flaws
+  with title issues.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.5
+  url: null
+  quoted_text: "Unmarketability is a title defect, not a physical one: an unreleased lien may make
+    title unmarketable, while a leaky roof does not."
+  secondary: []
+terms:
+  - marketable title
+  - physical defect
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

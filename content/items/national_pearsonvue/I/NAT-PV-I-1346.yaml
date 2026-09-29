@@ -1,0 +1,41 @@
+id: NAT-PV-I-1346
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 mortgage recorded February 2018, a 2020 judgment lien recorded April
+  2020, and a mechanic's lien for work begun November 2019 and filed January 2021. Assuming the
+  mechanic's lien relates back to when work began, which lien is paid second from foreclosure
+  proceeds?
+options:
+  - The mortgage lien
+  - The judgment lien
+  - The mechanic's lien
+  - The property tax lien
+key: C
+explanation: Because the mechanic's lien relates back to November 2019, its effective date is after
+  the February 2018 mortgage but before the April 2020 judgment lien, so it is paid second. The
+  mortgage lien, despite being earliest, is paid first, not second, because the mechanic's lien's
+  relation‑back date places it after the mortgage.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - lien
+  - priority
+  - relation-back
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

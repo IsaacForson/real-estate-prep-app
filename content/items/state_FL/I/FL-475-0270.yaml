@@ -1,0 +1,46 @@
+id: FL-475-0270
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate who has been licensed in Florida for the past three years, does not hold a
+  real estate degree, and has not completed the required postlicensure education wishes to apply for
+  a broker license. Under Florida law, is the applicant eligible for the broker license?
+options:
+  - The applicant is eligible because they hold an active sales associate license
+  - The applicant is not eligible because they have not completed the required postlicensure
+    education
+  - The applicant is eligible if they hold a degree in real estate
+  - The applicant is eligible because they have 24 months of experience
+key: B
+explanation: The statute provides that a person licensed as a sales associate in Florida during the
+  preceding five years may not be licensed as a broker unless they have completed the sales
+  associate postlicensure educational requirements, if prescribed. Since the applicant has not
+  completed that education and does not have a real estate degree exemption, they are not eligible.
+  The distractor about holding a degree would be correct only if the applicant possessed such a
+  degree, which the scenario excludes.
+citation:
+  source: Fla. Stat. § 475.17(2)(c)
+  url: null
+  quoted_text: A person who has been licensed as a real estate sales associate in Florida during the
+    preceding 5 years may not be licensed as a real estate broker unless, in addition to the other
+    requirements of law, she or he has completed the sales associate postlicensure educational
+    requirements, if these requirements have been prescribed by the commission pursuant to paragraph
+    (3)(a).
+  secondary: []
+terms:
+  - postlicensure
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

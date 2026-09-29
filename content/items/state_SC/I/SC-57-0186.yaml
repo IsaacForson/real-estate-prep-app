@@ -1,0 +1,47 @@
+id: SC-57-0186
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "During a transaction, a buyer learns that the property has a leaking roof that has caused
+  mold growth in the attic. Under S.C. Code Ann. § 40-57-30(25), this situation is best described
+  as:"
+options:
+  - This situation is a material adverse fact because it presents a significant health risk and
+    reduces structural integrity.
+  - This situation is not a material adverse fact because the roof leak is merely cosmetic and does
+    not affect the property's value.
+  - This situation is a material adverse fact only if the buyer intends to rescind the purchase
+    contract.
+  - This situation is not a material adverse fact because mold growth is a common issue in older
+    homes.
+key: A
+explanation: The definition of material adverse fact includes conditions that significantly reduce
+  structural integrity or present a significant health risk to occupants. A leaking roof causing
+  mold satisfies both criteria, making it a material adverse fact. The claim that the leak is merely
+  cosmetic and does not affect value is incorrect because the leak creates health hazards and
+  structural damage.
+citation:
+  source: S.C. Code Ann. § 40-57-30(25)
+  url: null
+  quoted_text: "(a) a condition or occurrence that is generally recognized as: (i) significantly and
+    adversely affecting the value of the real estate; (ii) significantly reducing the structural
+    integrity of improvements to real estate; or (iii) presenting a significant health risk to
+    occupants of the real estate"
+  secondary: []
+terms:
+  - material adverse fact
+  - health risk
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

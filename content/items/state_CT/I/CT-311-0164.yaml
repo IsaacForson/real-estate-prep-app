@@ -1,0 +1,43 @@
+id: CT-311-0164
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Which individual meets the definition of an associate broker under Conn. Gen. Stat. § 20-311?
+options:
+  - A broker who operates independently under his own license
+  - A broker who is employed by a supervising licensee and may act on their behalf
+  - A salesperson who provides services to a broker under a commission split
+  - A broker who only refers clients to other brokers without conducting transactions
+key: B
+explanation: An associate broker must be affiliated with a supervising licensee and have authority
+  to act on their behalf; the broker employed by a supervising licensee who may act on their behalf
+  meets both criteria. A broker who operates independently under his own license lacks supervision,
+  a salesperson who provides services to a broker under a commission split describes a salesperson
+  rather than a broker, and a broker who only refers clients to other brokers without conducting
+  transactions lacks authority to engage in business on behalf of another.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311(3)
+  url: null
+  quoted_text: “Associate broker” means a real estate broker who (A) is affiliated with a supervising
+    licensee as an independent contractor or employed by a supervising licensee, and (B) has the
+    authority to engage in the real estate business on behalf of such supervising licensee;
+  secondary: []
+terms:
+  - associate broker
+  - supervising licensee
+  - authority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

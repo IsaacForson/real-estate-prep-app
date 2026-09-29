@@ -43,6 +43,27 @@ export interface DraftRequest {
   existingStems: string[];
   /** keyed-answer texts already used anywhere in this domain — the same rule must not be asked again */
   coveredAnswers?: string[];
+  diversityHint?: string;
+}
+
+const DIVERSITY_ANGLES: string[] = [
+  "Focus on EXCEPTIONS and EXEMPTIONS — scenarios where a general rule does NOT apply (e.g. owner-occupied exemptions, de minimis thresholds, statutory carve-outs).",
+  "Focus on TIMELINES and DEADLINES — how many days/hours to file, respond, cure, or notify; what triggers the clock; consequences of missing a deadline.",
+  "Focus on NUMERICAL THRESHOLDS and CALCULATIONS — dollar amounts, percentages, distances, square footage, acreage, or formulas a licensee must apply.",
+  "Focus on WHO-DOES-WHAT scenarios — which party (broker, salesperson, buyer, seller, commission, escrow agent) has the duty, the right, or the liability.",
+  "Focus on PROHIBITED CONDUCT — what specific acts lead to discipline, suspension, revocation, or fines; distinguish similar-sounding violations.",
+  "Focus on DISCLOSURE REQUIREMENTS — what must be disclosed, to whom, when, in what form, and what happens if disclosure is omitted.",
+  "Focus on COMPARATIVE scenarios — two similar-sounding rules that candidates confuse; write items that force distinguishing between them.",
+  "Focus on EDGE CASES and UNUSUAL FACTS — unusual property types, uncommon transaction structures, or rarely tested subsections buried in the statute.",
+  "Focus on PRACTICAL APPLICATION — a licensee faces a real-world situation and must choose the correct course of action under the statute.",
+  "Focus on DEFINITIONS and SCOPE — who or what qualifies under a statutory definition, and who or what is excluded.",
+  "Focus on PENALTIES and CONSEQUENCES — what happens when a rule is violated, distinguishing between different severity levels.",
+  "Focus on TRUST/ESCROW ACCOUNT rules — deposit timing, commingling, shortages, interest, disbursement, and record-keeping requirements.",
+];
+
+export function pickDiversityHint(seed?: number): string {
+  const idx = (seed ?? Math.floor(Math.random() * DIVERSITY_ANGLES.length)) % DIVERSITY_ANGLES.length;
+  return DIVERSITY_ANGLES[idx]!;
 }
 
 export function draftUserPrompt(r: DraftRequest): { statuteBlock: string; taskBlock: string } {
@@ -56,6 +77,7 @@ FIGURES (v6): Do not key an item on a statutory dollar penalty or cap that is in
     `BLUEPRINT NODE: ${r.target.node} — ${r.target.label}`,
     `This node contributes ${r.target.exam_items} scored item(s) to the real exam.`,
     `Write exactly ${r.count} items with this cognitive mix: knowledge ${r.cognitiveMix.knowledge}, application ${r.cognitiveMix.application}, analysis ${r.cognitiveMix.analysis}.`,
+    r.diversityHint ? `VARIETY DIRECTIVE: ${r.diversityHint}` : "",
     r.existingStems.length ? `Existing stems in this node (do not duplicate or lightly vary):\n- ${r.existingStems.join("\n- ")}` : "Existing stems in this node: none yet.",
     r.coveredAnswers?.length ? `Rules ALREADY COVERED in this domain — do not write any item whose correct answer restates one of these, in any wording, positive or negative form:\n- ${r.coveredAnswers.join("\n- ")}` : "",
     `Return JSON: {"items": [ ... ]} where each item has cognitive_level, stem, options (4 strings), key ("A"|"B"|"C"|"D"), explanation, citation {source, quoted_text}, math ({worked_solution, formulas} or null), terms.`,

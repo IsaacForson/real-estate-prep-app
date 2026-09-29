@@ -1,0 +1,54 @@
+id: VA-21-0198
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Virginia-licensed real estate broker completes 20 hours of continuing education during a
+  licensing term, including 2 hours of ethics, 2 hours of fair housing, 2 hours of legal updates, 2
+  hours of real estate agency, 2 hours of real estate contracts, 6 hours of supervision and
+  management courses, and 4 hours of general electives. According to Virginia law, does this broker
+  satisfy the continuing education requirement for relicensure?
+options:
+  - The broker satisfies the continuing education requirement because they completed at least 20
+    hours, which meets the minimum total requirement.
+  - The broker satisfies the continuing education requirement because they completed the required
+    hours of ethics, fair housing, legal updates, agency, and contracts.
+  - The broker does not satisfy the continuing education requirement because they must complete at
+    least 24 hours total and at least 11 required hours.
+  - The broker does not satisfy the continuing education requirement because they must complete at
+    least 16 hours total, which they have not met.
+key: C
+explanation: Brokers must complete not less than 24 hours of continuing education each term, with at
+  least 11 required hours including three hours of ethics, two hours of fair housing, two hours of
+  legal updates, two hours of agency, and two hours of contracts. The broker’s total of 20 hours
+  falls short of the 24‑hour minimum, and their required‑hour total of 10 hours is below the 11‑hour
+  minimum, so the requirement is not met.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2105.03 A
+  url: null
+  quoted_text: "Brokers to whom active licenses have been issued by the Board shall be required to
+    satisfactorily complete courses of not less than 24 hours of classroom or correspondence or
+    other distance learning instruction during each licensing term. Of the total 24 hours, the
+    curriculum shall consist of: a. A minimum of 11 required hours to include at least three hours
+    of ethics and standards of conduct, two hours of fair housing, two hours of legal updates and
+    emerging trends including flood hazard areas and the National Flood Insurance Program, two hours
+    of real estate agency, and two hours of real estate contracts;"
+  secondary: []
+terms:
+  - continuing education
+  - broker
+  - required hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

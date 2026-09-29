@@ -1,0 +1,45 @@
+id: UT-101-0272
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer requests a list of all licensed real estate sales agents from the division.
+  According to Utah Code Ann. § 61-2f-104, what must the consumer do?
+options:
+  - The consumer must receive the list free of charge from the division.
+  - The consumer must pay the costs incurred by the division to make the list available.
+  - The consumer must submit a written request to the division to obtain the list.
+  - The consumer must hold an active real estate license to request the list.
+key: B
+explanation: Subsection (2) of § 61-2f-104 requires any person who requests a list to pay the costs
+  incurred by the division to make the list available. Thus the consumer must pay those costs. The
+  option stating that the consumer must submit a written request to the division to obtain the list
+  is incorrect because the statute does not require the request to be in writing; it only requires
+  payment of costs.
+citation:
+  source: "### Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title
+    61, Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-104(2)"
+  url: null
+  quoted_text: (2) A person who requests a list under Subsection (1) shall pay the costs incurred by
+    the division to make the list available.
+  secondary: []
+terms:
+  - list
+  - costs
+  - division
+  - request
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

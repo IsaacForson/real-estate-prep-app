@@ -1,0 +1,50 @@
+id: CO-2-0182
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A regularly salaried employee of an apartment building owner spends their workday showing
+  available units to prospective tenants, collecting rent, and arranging maintenance repairs. Under
+  Colorado law, does this individual need a real estate broker license to perform these duties?
+options:
+  - The person is required to have a license because showing rental units constitutes a real estate
+    brokerage activity.
+  - The person must hold a license only if they receive additional compensation beyond their regular
+    salary.
+  - The person is exempt from needing a Colorado real estate broker license when performing on-site
+    management duties for the employer.
+  - The person must obtain a Colorado real estate broker license before undertaking any on-site
+    management responsibilities.
+key: C
+explanation: Under Colo. Rev. Stat. § 12-10-201(6)(b)(XII), a regularly salaried employee of an
+  apartment building owner who serves as an on-site manager is exempt from the real estate broker
+  license requirement for customary on-site management duties. The employee described performs those
+  duties—showing units, collecting rent, and arranging maintenance—so a license is not required. The
+  first wrong option claims that showing rental units always requires a license, which overlooks the
+  statutory exemption for on-site managers. The third wrong option adds a condition about extra
+  compensation, which is not part of the exemption. The fourth wrong option states that a license
+  must be obtained before any on-site management responsibilities, which contradicts the exemption.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201(6)(b)(XII)
+  url: null
+  quoted_text: A regularly salaried employee of an owner of an apartment building or complex who acts
+    as an on-site manager of such an apartment building or complex.
+  secondary: []
+terms:
+  - broker license
+  - exemption
+  - on-site manager
+  - salaried employee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

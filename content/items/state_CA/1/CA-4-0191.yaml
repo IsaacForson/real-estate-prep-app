@@ -1,0 +1,43 @@
+id: CA-4-0191
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller provides the Existing Subdivision Interest Disclosure to a buyer in person after the
+  buyer has signed an offer to purchase. How many days does the buyer have to terminate the purchase
+  agreement under Cal. Code Regs. tit. 10, § 2790.8(c)?
+options:
+  - The buyer has one day to terminate the purchase agreement.
+  - The buyer has three days to terminate the purchase agreement.
+  - The buyer has five days to terminate the purchase agreement.
+  - The buyer has seven days to terminate the purchase agreement.
+key: B
+explanation: The regulation specifies that if the disclosure is delivered after the offer is
+  executed, the buyer has three days after delivery in person to terminate the agreement. The
+  five‑day period applies only to delivery by deposit in mail, not to in‑person delivery, making the
+  one‑ and seven‑day options incorrect.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2790.8(c)
+  url: null
+  quoted_text: If any Existing Subdivision Interest Disclosure required by this Section is delivered
+    after the execution of an offer to purchase, the buyer shall have three days after delivery in
+    person or five days after delivery by deposit in the mail, to terminate the purchase agreement
+    by delivery of a written notice of termination to the Seller.
+  secondary: []
+terms:
+  - existing subdivision interest disclosure
+  - termination
+  - buyer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

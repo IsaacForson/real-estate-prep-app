@@ -1,0 +1,42 @@
+id: RI-5-0238
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Jane owns a rental house and lists it for sale herself without a real estate license. Under
+  Rhode Island law, is she required to obtain a real estate license to sell her own property?
+options:
+  - She is required to obtain a real estate license
+  - She is not required to obtain a real estate license
+  - She is required to obtain a license only if she receives a commission
+  - She is required to obtain a license because she is advertising the home
+key: B
+explanation: As a bona fide owner selling her own property, Jane falls under the exemption for
+  owners who act in the regular course of managing their property. The distractor about receiving a
+  commission is incorrect because the exemption applies regardless of compensation when the owner
+  acts on their own property.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-2(a)(1)
+  url: null
+  quoted_text: (1) Any person, partnership, association, or corporation, who or that, as a bona fide
+    owner, lessee, or lessor, performs any of the previously stated acts as to property owned, or
+    leased by them, or to their regular employees, where those acts are performed in the regular
+    course of, or as an incident to the management of the property and the investment in the
+    property;
+  secondary: []
+terms:
+  - owner
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

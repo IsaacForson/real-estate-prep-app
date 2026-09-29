@@ -1,0 +1,47 @@
+id: PA-9-0189
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A developer plans to offer 40 lots in a subdivision advertised as a common promotional plan
+  via newspaper ads. Under Pennsylvania law, must the developer register with the State Real Estate
+  Commission before offering the lots?
+options:
+  - The developer must register with the State Real Estate Commission before offering the lots.
+  - The developer must register only if the subdivision exceeds 25 acres.
+  - The developer is not required to register because the lots are not cemetery lots.
+  - The developer is not required to register because the offering involves fewer than 50 lots.
+key: D
+explanation: Under 63 P.S. § 455.605(b), the term 'promotional real estate' expressly excludes
+  interests involving fewer than 50 lots or shares. Because the developer is offering only 40 lots,
+  the offering does not meet the definition of promotional real estate and therefore does not
+  trigger the registration requirement. The claim that registration is required ignores this
+  exemption based on lot count. The claim that registration depends on the subdivision exceeding 25
+  acres misstates the rule, as the exemption is based on the number of lots, not acreage. The claim
+  that the lack of cemetery lots eliminates the registration requirement is also incorrect; the
+  cemetery‑lot exemption applies only when the interest involves cemetery lots, which is not the
+  situation here.
+citation:
+  source: 63 P.S. § 455.605(b)
+  url: null
+  quoted_text: Provided, however, That the term shall not mean real estate interest involving less
+    than 50 lots or shares, cemetery lots and land involving less than 25 acres.
+  secondary: []
+terms:
+  - promotional real estate
+  - registration
+  - lots
+  - threshold
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

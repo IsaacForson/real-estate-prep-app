@@ -1,0 +1,39 @@
+id: VT-2211-0176
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant is 19 years old, has passed the required examination, has completed a 40‑hour
+  approved course, and is employed by a brokerage firm. Under 26 V.S.A. § 2292(b), does the
+  applicant meet the eligibility requirements for a salesperson license?
+options:
+  - The applicant meets all requirements.
+  - The applicant must be at least 21 years old.
+  - The applicant must have completed 80 hours of education.
+  - The applicant must have been employed for at least two years.
+key: A
+explanation: The statute requires a salesperson applicant to be at least 18 years old, which the
+  19‑year‑old satisfies along with the other stated qualifications. The distractor claiming a
+  21‑year minimum misstates the age requirement.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2292(b)
+  url: null
+  quoted_text: (2) is at least 18 years of age;
+  secondary: []
+terms:
+  - age
+  - eligibility
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

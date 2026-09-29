@@ -1,0 +1,45 @@
+id: AL-27-0174
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An out-of-state principal broker has already completed $30,000,000 in co-brokerage
+  transactions in Alabama during the current calendar year. What is the maximum additional amount
+  the broker may engage in under a co-brokerage agreement before reaching the statutory limit?
+options:
+  - $20,000,000
+  - $10,000,000
+  - $15,000,000
+  - $25,000,000
+key: A
+explanation: The law caps total transactions at $50,000,000 per calendar year. Subtracting the
+  $30,000,000 already completed leaves $20,000,000 as the remaining allowable amount. The
+  distractors correspond to miscalculations such as using an incorrect base or failing to subtract.
+citation:
+  source: Ala. Code § 34-27-3(a)(4)
+  url: null
+  quoted_text: A licensed out-of-state principal broker shall not use a co-brokerage agreement to
+    engage in transactions in Alabama totaling more than fifty million dollars ($50,000,000) in any
+    calendar year.
+  secondary: []
+math:
+  worked_solution: $50,000,000 - $30,000,000 = $20,000,000
+  formulas:
+    - Remaining limit = Total limit - Amount already used
+  onscreen_calculator_only: false
+terms:
+  - co-brokerage agreement
+  - transaction limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

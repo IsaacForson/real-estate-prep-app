@@ -1,0 +1,43 @@
+id: PA-9-0183
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: At the start of a biennial renewal period in 1986, the Real Estate Recovery Fund has a balance
+  of $260,000. What is the total amount of additional fees that the Commission may assess to bring
+  the fund to $500,000?
+options:
+  - $240,000
+  - $250,000
+  - $200,000
+  - $300,000
+key: A
+explanation: The commission may assess additional fees sufficient to bring the fund balance to
+  $500,000. Subtracting the current balance of $260,000 from the target yields $240,000. The
+  distractor $250,000 incorrectly assumes a $250,000 starting balance.
+citation:
+  source: 63 P.S. § 455.802
+  url: null
+  quoted_text: which will yield revenues sufficient to bring the balance of the fund to $500,000.
+  secondary: []
+math:
+  worked_solution: $500,000 - $260,000 = $240,000
+  formulas:
+    - Needed = Target Balance - Current Balance
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - balance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

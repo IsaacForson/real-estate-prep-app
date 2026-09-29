@@ -1,0 +1,41 @@
+id: CA-4-0179
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Under Cal. Code Regs. tit. 10, § 2759.1(d), what does the term “Military order” mean?
+options:
+  - A Permanent Change of Station order or equivalent order issued by a state militia
+  - A deployment order issued by a U.S. armed forces active reserve branch
+  - A temporary duty assignment order issued by a U.S. armed forces branch
+  - A Permanent Change of Station order or equivalent order issued by a U.S. armed forces branch
+key: D
+explanation: The regulation defines a Military order as a Permanent Change of Station order or any
+  equivalent permanent location change order issued by a branch of the United States armed forces.
+  Therefore the choice stating 'A Permanent Change of Station order or equivalent order issued by a
+  U.S. armed forces branch' is correct. The choice stating 'A deployment order issued by a U.S.
+  armed forces active reserve branch' is incorrect because it limits the order to a deployment order
+  and to an active reserve branch, which is not part of the definition.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2759.1(d)
+  url: null
+  quoted_text: “Military order” means a Permanent Change of Station order or any such equivalent
+    permanent location change order that is issued by a branch of the United States armed forces
+  secondary: []
+terms:
+  - military order
+  - permanent change of station
+  - armed forces branch
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

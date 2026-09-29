@@ -1,0 +1,41 @@
+id: WA-85-0142
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee files an appeal of a disciplinary order with the superior court and submits a cash
+  bond of eight hundred dollars. Under RCW 18.85.390, is the appeal properly filed?
+options:
+  - The appeal is not properly filed because the bond must be filed within fifteen days.
+  - The appeal is properly filed because the bond amount meets the requirement.
+  - The appeal is not properly filed because the bond must be exactly one thousand dollars.
+  - The appeal is properly filed because the judge may approve any bond amount.
+key: C
+explanation: RCW 18.85.390 requires a cash bond in the sum of one thousand dollars for an appeal. A
+  bond of eight hundred dollars does not satisfy this amount, so the appeal is not properly filed.
+  The fifteen‑day filing rule applies to the bond and notice, not the amount, and the judge’s
+  approval does not alter the statutory sum.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.390
+  url: null
+  quoted_text: the appellant shall give a cash bond to the state of Washington, which bond shall be
+    filed with the clerk of the court, in the sum of one thousand dollars
+  secondary: []
+terms:
+  - bond
+  - appeal
+  - cash
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,46 @@
+id: NJ-1-0091
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker's license is temporarily suspended by the New Jersey Real Estate Commission. Under
+  N.J. Stat. Ann. § 45:15-17.2, what action may the commission take regarding the broker's accounts?
+options:
+  - The commission must notify the broker after freezing
+  - The commission may only freeze trust accounts
+  - The commission must freeze all accounts
+  - The commission may freeze some or all accounts
+key: D
+explanation: Under § 45:15-17.2, when a broker's license is temporarily suspended, the commission
+  may order that some or all of the broker's accounts be frozen. The word “may” indicates
+  discretion, and the scope is “some or all,” not necessarily all accounts. Thus, the correct answer
+  reflects the commission's permissive authority. The distractor stating the commission must freeze
+  all accounts is wrong because the statute does not mandate freezing and allows partial freezing.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-17.2
+  url: null
+  quoted_text: Upon entering an order temporarily suspending the license of any broker, the commission
+    may also enter an order directing that some or all of the accounts maintained by the broker in
+    any depository institution in the State be temporarily frozen.
+  secondary: []
+terms:
+  - freeze
+  - accounts
+  - temporary suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

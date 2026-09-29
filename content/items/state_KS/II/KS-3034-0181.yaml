@@ -1,0 +1,43 @@
+id: KS-3034-0181
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A supervising broker’s license is set to expire, but the broker notifies the commission in
+  writing before the expiration date that another broker will assume the supervising role. What
+  happens to the licenses of the salespersons associated with that supervising broker?
+options:
+  - They go on inactive status five days after expiration
+  - They must move to another broker within five days to stay active
+  - They stay active with no further action needed
+  - They become inactive only if the commission rejects the substitute
+key: C
+explanation: Because the broker gave prior notice that another broker would assume the supervisory
+  role, the exception in the statute prevents the automatic placement of associated licensees on
+  inactive status. The distractor that says licenses go on inactive status ignores this statutory
+  exception.
+citation:
+  source: Kan. Stat. Ann. § 58-3080(a)
+  url: null
+  quoted_text: unless notification is provided to the commission prior to the expiration date of the
+    license or the date the license is deactivated that another broker will assume the role as the
+    supervising broker or branch broker, the licensee transfers to another supervising broker or
+    branch broker or the licensee is currently associated or employed with another broker
+  secondary: []
+terms:
+  - supervising broker
+  - inactive status
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,44 @@
+id: NV-645-0055
+jurisdiction: NV
+bank: state_NV
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the fee charged by the Nevada Real Estate Division for reinstating an inactive real
+  estate broker's license to active status?
+options:
+  - $10
+  - $40
+  - $30
+  - $20
+key: D
+explanation: The fee schedule in NRS 645.830 lists a $20 charge for reinstating an inactive broker’s
+  license to active status. The $10 amount applies to an original salesperson license, not to
+  reinstatement.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.830
+  url: null
+  quoted_text: For each reinstatement to active status of an inactive real estate brokers,
+    broker-salespersons or salespersons
+    license...................................................................................................................
+    20
+  secondary: []
+terms:
+  - reinstatement
+  - fee
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,43 @@
+id: FL-475-0287
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A hotel employee handles reservations and advertises the property for short‑term stays,
+  receiving compensation for this work. Under Florida law, this individual is:"
+options:
+  - The individual is required to hold a real estate broker license.
+  - The individual is required to hold a property management license.
+  - The individual is exempt from real estate licensing requirements.
+  - The individual is required to hold a real estate sales associate license.
+key: C
+explanation: The exemption in Fla. Stat. § 475.011(11) excludes any person who, for compensation,
+  rents or advertises for rent for transient occupancy of a public lodging establishment licensed
+  under chapter 509. Since the employee performs advertising for short‑term (transient) occupancy of
+  a hotel, the exemption applies and no license is required. The distractor suggesting a sales
+  associate license is incorrect because the statutory exemption expressly removes the licensing
+  requirement for this activity.
+citation:
+  source: Fla. Stat. § 475.011(11)
+  url: null
+  quoted_text: (11)&#x2003; Any person, partnership, corporation, or other legal entity which, for
+    another and for compensation or other valuable consideration, rents or advertises for rent, for
+    transient occupancy, any public lodging establishment licensed under chapter 509.
+  secondary: []
+terms:
+  - exempt
+  - public lodging establishment
+  - transient occupancy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

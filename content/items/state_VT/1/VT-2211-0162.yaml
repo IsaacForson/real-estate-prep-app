@@ -1,0 +1,43 @@
+id: VT-2211-0162
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A brokerage firm submits its registration application to the Vermont Real Estate Commission
+  but does not name an individual to serve as principal broker. Under 26 V.S.A. § 2291(b), what is
+  required for the application to be complete?
+options:
+  - The application must include the designation of an individual to serve as principal broker.
+  - The application may be accepted if the firm later designates a principal broker after
+    registration.
+  - The application can be processed without a principal broker if the firm has a managing broker.
+  - The application must be accompanied by a certificate of good standing from the firm's home state.
+key: A
+explanation: Section 2291(b) requires a registered brokerage firm to designate in its application
+  the individual who is to serve as the principal broker under the brokerage firm registration. Thus
+  the application must include that designation to be complete. The suggestion that the firm could
+  add the designation later does not satisfy the requirement, because the designation must be part
+  of the initial application.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2291(b)
+  url: null
+  quoted_text: (b) A registered brokerage firm shall designate in its application the individual who
+    is to serve as the principal broker under the brokerage firm registration.
+  secondary: []
+terms:
+  - brokerage firm
+  - principal broker
+  - application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

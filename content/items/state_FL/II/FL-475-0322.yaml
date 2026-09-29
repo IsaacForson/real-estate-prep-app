@@ -1,0 +1,48 @@
+id: FL-475-0322
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A corporation acting as a broker has three officers: President (licensed broker), Vice
+  President (unlicensed), Secretary (licensed broker). If the President's broker license lapses for
+  one month, what happens to the corporation's registration under Florida Statute 475.15?"
+options:
+  - The corporation's registration is suspended only if all broker officers lapse
+  - The corporation's registration remains active because at least one officer still holds a broker
+    license
+  - The corporation's registration requires appointment of a new broker officer within 30 days to
+    avoid cancellation
+  - The corporation's registration is canceled automatically during the period the President's
+    license is not in force
+key: D
+explanation: The statute states that if the license or registration of at least one active broker
+  member is not in force, the corporation's registration is canceled automatically for that period.
+  Therefore, when the President's broker license lapses, the corporation's registration is canceled
+  automatically, even though the Vice President is unlicensed and the Secretary remains licensed.
+  The idea that the registration would stay active as long as any officer holds a broker license is
+  incorrect; the rule does not permit the registration to remain active when any required broker
+  member lapses.
+citation:
+  source: Fla. Stat. ch. 475 § 475.15
+  url: null
+  quoted_text: If the license or registration of at least one active broker member is not in force,
+    the registration of a corporation, limited liability company, limited liability partnership, or
+    partnership is canceled automatically during that period of time.
+  secondary: []
+terms:
+  - registration
+  - broker
+  - canceled
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

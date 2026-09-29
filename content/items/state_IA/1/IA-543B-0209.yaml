@@ -1,0 +1,46 @@
+id: IA-543B-0209
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An auctioneer who is not a licensee advertises a property, cries the property at auction, and
+  also collects a deposit from a prospective buyer. Under Iowa Code § 543B.7, does the auctioneer
+  need to be licensed?
+options:
+  - Yes, because collecting deposit money is prohibited unless the auctioneer is licensed
+  - Yes, because the auctioneer’s role is limited to advertising and crying the property
+  - Yes, because showing the property to prospective buyers requires a license
+  - Yes, because deposit collection is permitted for unlicensed auctioneers under this section
+key: A
+explanation: Iowa Code § 543B.7(5)(b)(5) prohibits an unlicensed auctioneer from collecting deposit
+  moneys to secure or facilitate a sale; doing so brings the auctioneer under the chapter’s
+  licensing requirements. The claim that the auctioneer’s role is limited to advertising and crying
+  the property ignores the deposit collection. The claim that showing the property to prospective
+  buyers requires a license adds an irrelevant condition. The claim that deposit collection is
+  permitted for unlicensed auctioneers under this section is false. Therefore only the statement
+  that collecting deposit money is prohibited unless the auctioneer is licensed is correct.
+citation:
+  source: Iowa Code § 543B.7(5)(b)(5)
+  url: null
+  quoted_text: Collecting or holding deposit moneys, rent, other moneys, or anything of value received
+    from the owner of real property or from a prospective buyer or tenant, other than fees,
+    commissions, or other consideration paid in exchange for conducting the auction or other acts
+    permitted by this subsection
+  secondary: []
+terms:
+  - auctioneer
+  - deposit
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

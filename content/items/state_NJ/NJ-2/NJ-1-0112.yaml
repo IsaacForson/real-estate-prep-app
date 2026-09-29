@@ -1,0 +1,45 @@
+id: NJ-1-0112
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A corporation applies for a New Jersey broker license. Its board of directors includes a
+  17‑year‑old member. According to N.J. Stat. Ann. § 45:15-9, what is the correct determination?
+options:
+  - The application is approved because the corporation meets the age requirement.
+  - The application is denied because a director is under 18 years of age.
+  - The application is approved pending a waiver from the commission.
+  - The application is denied because the corporation lacks a resident director.
+key: B
+explanation: The statute requires every director of a corporation applying for a broker license to
+  be at least 18 years old. Since one director is 17, the corporation fails this requirement and the
+  application must be denied. The distractor claiming approval because the corporation meets the age
+  requirement is wrong because the rule applies to each director individually, not to the
+  corporation as a whole.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-9"
+  url: null
+  quoted_text: in the case of an association or a corporation the directors thereof shall be of the
+    age of 18 years or over.
+  secondary: []
+terms:
+  - director
+  - age
+  - corporation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

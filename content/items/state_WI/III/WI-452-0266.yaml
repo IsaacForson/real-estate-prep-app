@@ -1,0 +1,45 @@
+id: WI-452-0266
+jurisdiction: WI
+bank: state_WI
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A buyer and seller agree to sell a parcel of land. They prepare three separate documents: a
+  purchase agreement, a description of the property, and a signature page. To satisfy the writing
+  requirement under Wis. Stat. § 706.02(2), they physically attach the three documents together with
+  a staple, with the mutual consent of both parties. Does this method satisfy the statute’s writing
+  requirement?"
+options:
+  - Yes, because physical annexation of several writings with mutual consent satisfies the
+    requirement
+  - No, because only a single writing can satisfy the requirement
+  - Yes, but only if the documents are also referenced in a separate signed acknowledgment
+  - No, because the documents must be physically annexed before the conveyance is executed
+key: A
+explanation: "The statute provides that a conveyance may satisfy the writing requirement by physical
+  annexation of several writings to one another, with the mutual consent of the parties. Stapling
+  the three documents together with mutual consent meets this method. The other options misstate the
+  rule: there is no timing restriction, multiple writings are permitted, and no additional
+  acknowledgment is required."
+citation:
+  source: Wis. Stat. § 706.02(2)(b)
+  url: null
+  quoted_text: By physical annexation of several writings to one another, with the mutual consent of
+    the parties;
+  secondary: []
+terms:
+  - physical annexation
+  - writing requirement
+  - mutual consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

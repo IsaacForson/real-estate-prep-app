@@ -1,0 +1,41 @@
+id: NE-56-0075
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer submits a sworn written complaint alleging that a salesperson commingled the money
+  of principals with his or her own. What must the Nebraska Real Estate Commission do upon receiving
+  this complaint?
+options:
+  - Investigate the actions of the salesperson involved
+  - Refer the complaint to the Attorney General
+  - Automatically suspend the salesperson's license
+  - Ignore the complaint because it involves a salesperson
+key: A
+explanation: According to §81-885.24, the commission shall, upon the sworn complaint in writing of
+  any person, investigate the actions of any broker, associate broker, salesperson, or subdivider.
+  Therefore, the commission must investigate the salesperson's actions. Referring the complaint to
+  the Attorney General is not required; the Attorney General may maintain an action but only after
+  the commission's investigation.
+citation:
+  source: Neb. Rev. Stat. § 81-885.24
+  url: null
+  quoted_text: shall, upon the sworn complaint in writing of any person, investigate the actions of
+    any broker, associate broker, salesperson, or subdivider
+  secondary: []
+terms:
+  - complaint
+  - investigate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

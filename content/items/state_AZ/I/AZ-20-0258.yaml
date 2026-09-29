@@ -1,0 +1,39 @@
+id: AZ-20-0258
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The commissioner receives a completed application for payment from the real estate recovery
+  fund. Assuming no exceptions apply, how many calendar days does the commissioner have to make a
+  final written decision and order on the claim?
+options:
+  - Sixty calendar days
+  - Ninety calendar days
+  - One hundred twenty calendar days
+  - One hundred fifty calendar days
+key: B
+explanation: The statute requires the commissioner to issue a final written decision within ninety
+  calendar days of receiving a completed application, unless specific exceptions apply.
+citation:
+  source: Ariz. Rev. Stat. § 32-2188.04(A)
+  url: null
+  quoted_text: The commissioner shall make a final written decision and order on a claim within ninety
+    calendar days after receiving a completed application
+  secondary: []
+terms:
+  - commissioner
+  - decision
+  - application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

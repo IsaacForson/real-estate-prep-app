@@ -1,0 +1,39 @@
+id: DE-2901-0143
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer obtains a final judgment against a Delaware licensee for fraud and wishes to claim
+  from the Real Estate Guaranty Fund. The consumer files the verified claim seventy days after the
+  judgment. Under Del. Code Ann. tit. 24, ch. 29, § 2922(b), is the claim timely?
+options:
+  - Yes, because the Commission may accept late claims with good cause.
+  - No, because the claim must be filed within sixty days of the final judgment.
+  - Yes, as long as the claim includes a copy of the judgment.
+  - No, because the claim must be filed within thirty days of the judgment.
+key: B
+explanation: The law specifies that a verified claim must be filed within 60 days after the final
+  judgment has been obtained. Filing on the seventieth day exceeds this limit, making the claim
+  untimely. The option suggesting the Commission may accept late claims is not supported by the
+  text, and the 30‑day option misstates the deadline.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2922(b)
+  url: null
+  quoted_text: The verified claim shall be filed within 60 days after the final judgment has been obtained.
+  secondary: []
+terms:
+  - guaranty fund
+  - verified claim
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

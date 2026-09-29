@@ -1,0 +1,47 @@
+id: FL-475-0285
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate wants to receive continuing education credit for attending a legal agenda
+  session of the Florida Real Estate Commission. She notifies the division 8 days before the session
+  and is not a party to any disciplinary action. What is the maximum continuing education credit she
+  may receive for this attendance?
+options:
+  - Receive 3 hours of continuing education credit.
+  - Receive 6 hours of continuing education credit.
+  - Receive 0 hours of continuing education credit.
+  - Receive 12 hours of continuing education credit.
+key: A
+explanation: The rule allows substitution of up to 3 classroom hours for one legal agenda session
+  per renewal cycle, provided the licensee gives at least 7 days’ notice and is not a party to a
+  disciplinary action. The associate meets both conditions, so she may earn 3 hours. The option
+  stating she would receive 0 hours is incorrect because she is not a party to a disciplinary
+  action. The options stating she would receive 6 or 12 hours incorrectly award extra hours beyond
+  the allowed substitution.
+citation:
+  source: Fla. Stat. § 475.182(b)
+  url: null
+  quoted_text: The commission may accept as a substitute for 3 classroom hours, one time per renewal
+    cycle, attendance at one legal agenda session of the commission. In order to obtain credit, the
+    licensee must notify the division at least 7 days in advance of his or her intent to attend. A
+    licensee may not earn any continuing education credit for attending a legal agenda session of
+    the commission as a party to a disciplinary action.
+  secondary: []
+terms:
+  - legal agenda
+  - continuing education
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

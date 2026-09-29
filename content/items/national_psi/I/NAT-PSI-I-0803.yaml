@@ -1,0 +1,38 @@
+id: NAT-PSI-I-0803
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A grantor executes a deed and delivers it to the grantee, but the deed omits a legal
+  description of the property. Based on the requirements for a valid deed, is the deed valid?
+options:
+  - No, because an adequate legal description is required for a valid deed
+  - Yes, because delivery and acceptance are sufficient for validity
+  - Yes, if the grantee accepts the deed and records it promptly
+  - No, unless the deed is accompanied by a separate affidavit describing the property
+key: A
+explanation: A valid deed must contain an adequate legal description of the property; without it the
+  deed is invalid, even if delivered and accepted. The option stating that delivery and acceptance
+  alone are sufficient is incorrect because it ignores the description requirement.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.1
+  url: null
+  quoted_text: An adequate legal description (REP Ref. Property & Land Use § 3).
+  secondary: []
+terms:
+  - deed
+  - legal description
+  - valid
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

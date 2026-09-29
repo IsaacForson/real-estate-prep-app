@@ -1,0 +1,59 @@
+id: NV-645-0070
+jurisdiction: NV
+bank: state_NV
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has been actively licensed as a real estate salesperson for six years in another
+  state. Under NRS 645.343(4), what is the maximum number of semester units of college‑level credit
+  the applicant may receive for that experience?
+options:
+  - 48 semester units
+  - 16 semester units
+  - 32 semester units
+  - 64 semester units
+key: A
+explanation: NRS 645.343(4) awards 16 semester units for each full two‑year period of active
+  licensed experience, with a maximum credit for eight years (four increments). Six years of
+  experience contains three qualifying two‑year increments (6 ÷ 2 = 3), so the credit is 3 × 16 = 48
+  semester units. The 16‑unit option counts only one increment, 32 units counts two increments, and
+  64 units assumes the maximum four increments, which exceeds the applicant’s six‑year experience.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.343"
+  url: null
+  quoted_text: For the purposes of this section, each person who holds a license as a real estate
+    broker, broker-salesperson or salesperson, or an equivalent license, issued by a state or
+    territory of the United States, or the District of Columbia, is entitled to receive credit for
+    the equivalent of 16 semester units of college level courses for each 2 years of active
+    experience that, during the immediately preceding 10 years, the person has obtained while he or
+    she has held such a license, not to exceed 8 years of active experience.
+  secondary: []
+math:
+  worked_solution: |-
+    Years of experience: 6
+    Number of 2‑year increments: floor(6/2) = 3
+    Credit per increment: 16 semester units
+    Total credit: 3 × 16 = 48 semester units
+  formulas:
+    - increments = floor(years / 2)
+    - credit = increments × 16
+  onscreen_calculator_only: false
+terms:
+  - experience credit
+  - semester units
+  - active experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

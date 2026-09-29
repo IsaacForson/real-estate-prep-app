@@ -1,0 +1,53 @@
+id: DE-2901-0134
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a Delaware corporation leases office space in a building owned by the
+  corporation to third‑party tenants as part of their regular job duties. Under Del. Code Ann. tit.
+  24, § 2901(e)(1), is the employee required to hold a real estate license to perform these leasing
+  activities?
+options:
+  - The employee must hold a real estate license because leasing office space is a real estate
+    service
+  - The employee is exempt from licensing as a regular employee managing property owned by the
+    corporation
+  - The employee must hold a license only if the leasing exceeds one year in duration
+  - The employee is exempt only if the corporation holds a broker license
+key: B
+explanation: Section 2901(e)(1) provides an exemption for a regular employee of an owner or lessor
+  who performs leasing or other real‑estate acts in the regular course of managing property owned by
+  that person. Because the employee is acting as a regular employee of the corporation that owns the
+  building, the leasing activities are covered by the exemption and no license is required. The
+  answer choice that limits the licensing requirement to leases longer than one year adds a
+  condition that is not found in the statute, so it is incorrect.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2901(e)(1)
+  url: null
+  quoted_text: "(e) This chapter shall not apply to: (1) Any person or a subsidiary or division
+    thereof with common ownership or control who, as owner or lessor, buyer or lessee, or equitable
+    owner of an interest in an agreement of sale not engaged in wholesaling as a business, performs
+    any of the acts enumerated in this section with reference to property owned, purchased, or
+    leased by such person or a subsidiary or division thereof with common ownership or control or to
+    the regular employee of such person, with respect to the property so owned, purchased or leased,
+    where such acts are performed in the regular course of or as an incident to the management of
+    such property and the investment therein;"
+  secondary: []
+terms:
+  - exemption
+  - regular employee
+  - property management
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

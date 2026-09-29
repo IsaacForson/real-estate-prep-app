@@ -1,0 +1,42 @@
+id: CA-4-0196
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker wishes to delegate supervision of unlicensed assistants to a salesperson who has
+  worked full-time as a salesperson for 18 months in the past five years and has a written
+  agreement. Is the delegation permissible under Cal. Code Regs. tit. 10, § 2724(b)?
+options:
+  - The delegation is permissible because a written agreement is in place.
+  - The delegation is permissible because the salesperson has 18 months of experience.
+  - The delegation is not permissible because the salesperson lacks the required two years of
+    experience.
+  - The delegation is not permissible because the broker must personally supervise all assistants.
+key: C
+explanation: The rule requires at least two years of full‑time experience as a salesperson licensee
+  within the preceding five years; 18 months does not meet this threshold, so delegation is not
+  allowed. The option claiming permissibility based on 18 months of experience ignores the two‑year
+  requirement.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner (Cal.
+    Code Regs. tit. 10, ch. 6) - DRE compilation § 2724(b)
+  url: null
+  quoted_text: at least two years full-time experience as a salesperson licensee during the
+    immediately preceding five-year period
+  secondary: []
+terms:
+  - experience
+  - supervision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

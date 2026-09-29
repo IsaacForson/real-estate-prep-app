@@ -1,0 +1,44 @@
+id: CA-4-0199
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A tenant installs a custom-built shelving unit in a rented commercial space, bolting it to the
+  floor, without any agreement about removal. At lease end, the landlord demands the shelving
+  remain. Who owns the shelving under Cal. Civ. Code § 1013?
+options:
+  - The tenant owns the shelving unit
+  - The shelving unit is personal property of the tenant
+  - The shelving unit must be removed by the tenant
+  - The landlord owns the shelving unit
+key: D
+explanation: Under § 1013, when a person affixes property to another's land without an agreement
+  permitting removal, the thing affixed belongs to the landowner unless the landowner requires
+  removal or the person elects to exercise the right of removal under § 1013.5. Since there is no
+  agreement, the shelving belongs to the landlord. The tenant does not own it absent such agreement.
+citation:
+  source: Cal. Civ. Code § 1013
+  url: null
+  quoted_text: When a person affixes his property to the land of another, without an agreement
+    permitting him to remove it, the thing affixed, except as otherwise provided in this chapter,
+    belongs to the owner of the land, unless he chooses to require the former to remove it or the
+    former elects to exercise the right of removal provided for in Section 1013.5 of this chapter.
+  secondary: []
+terms:
+  - affixation
+  - fixture
+  - landlord
+  - tenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,46 @@
+id: WY-101-0129
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Wyoming licensee receives $1,200 as an undisclosed rebate from a vendor in connection with a
+  real estate transaction. According to Wyo. Stat. Ann. § 33-28-114(b), what is the maximum
+  additional penalty the licensee could be liable for?
+options:
+  - $1,200
+  - $3,600
+  - $2,400
+  - $4,800
+key: B
+explanation: The law allows a penalty of up to three times the amount received as a fee or profit
+  from a violation. Multiplying $1,200 by three yields $3,600, which is the maximum penalty. The
+  option of $2,400 represents only two times the amount and therefore understates the allowable
+  maximum.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-114(b)
+  url: null
+  quoted_text: not more than three (3) times the sum so received
+  secondary: []
+math:
+  worked_solution: "Amount received: $1,200. Multiply by 3: $1,200 × 3 = $3,600."
+  formulas:
+    - Penalty_max = 3 × amount_received
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - multiplier
+  - amount
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

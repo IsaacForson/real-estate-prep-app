@@ -1,0 +1,50 @@
+id: PA-9-0163
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Pennsylvania salesperson receives $4,000 from the Real Estate Recovery Fund in settlement of
+  a claim. Under the Act, what total amount must the salesperson repay to be eligible for license
+  reinstatement after one year, assuming interest accrues at the statutory rate?
+options:
+  - $4,000
+  - $4,200
+  - $4,400
+  - $4,600
+key: C
+explanation: Interest at 10% per year on $4,000 yields $400, so the total repayment after one year
+  is $4,400. The distractor $4,200 would result from a 5% interest rate, which is not the statutory
+  rate.
+citation:
+  source: 63 P.S. § 455.803(f)(2)
+  url: null
+  quoted_text: No such licensee shall be granted reinstatement until he has repaid in full plus
+    interest at the rate of 10% a year, the amount paid from the Real Estate Recovery Fund.
+  secondary: []
+math:
+  worked_solution: |-
+    Principal = $4,000
+    Interest rate = 10% per year = 0.10
+    Time = 1 year
+    Interest = Principal × Rate × Time = $4,000 × 0.10 × 1 = $400
+    Total repayment = Principal + Interest = $4,000 + $400 = $4,400
+  formulas:
+    - interest = P × r × t
+    - total = P + interest
+  onscreen_calculator_only: false
+terms:
+  - repayment interest
+  - reinstatement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

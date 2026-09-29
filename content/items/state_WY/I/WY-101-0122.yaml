@@ -1,0 +1,44 @@
+id: WY-101-0122
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A responsible broker accepts a 180-day certificate of deposit to hold a client's earnest money
+  deposit, claiming that the client verbally agreed to the investment. Which of the following is the
+  legal status of this action under Wyoming Real Estate Commission Rules?
+options:
+  - The action is prohibited because the client's consent must be in writing
+  - The action is permitted because the client gave verbal consent
+  - The action is prohibited because certificates of deposit cannot be used for any client funds
+  - The action is permitted because the certificate of deposit matures within one year
+key: A
+explanation: Wyoming Real Estate Commission Rules ch. 5 § 2(iii) prohibits investing client money in
+  a security with a fixed term for maturity, such as a certificate of deposit, unless there is
+  written consent obtained by the responsible broker from all parties to the transaction. Verbal
+  consent does not satisfy the requirement for written consent, making the broker's action a
+  violation of the rule.
+citation:
+  source: Wyo. Real Estate Comm'n Rules ch. 5 § 2(iii)
+  url: null
+  quoted_text: Money belonging to others, when accepted by a Responsible Broker or funds holder, shall
+    not be invested in any type of account, security, or certificate of deposit which has a fixed
+    term for maturity unless there is written consent obtained by the Responsible Broker of all
+    parties to the transaction.
+  secondary: []
+terms:
+  - earnest money
+  - certificate of deposit
+  - written consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

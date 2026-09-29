@@ -1,0 +1,40 @@
+id: NH-331-0106
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age an applicant must attain to be eligible for a salesperson license
+  under RSA 331-A:10 I(a)?
+options:
+  - 16 years
+  - 18 years
+  - 21 years
+  - 25 years
+key: B
+explanation: The statute explicitly requires that an applicant 'Has attained the age of 18' for a
+  salesperson license. Therefore, 18 years is the correct minimum age. The other ages are incorrect
+  because they either fall below the statutory requirement or exceed it without basis.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:10 I(a)
+  url: null
+  quoted_text: Has attained the age of 18;
+  secondary: []
+terms:
+  - age
+  - license
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

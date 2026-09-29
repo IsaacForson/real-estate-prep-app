@@ -1,0 +1,42 @@
+id: MS-1954-0238
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A member of the public submits a written request to inspect the Mississippi Real Estate
+  Commission's pending investigative files. Under Mississippi law, how should the commission
+  respond?
+options:
+  - The request must be granted because all commission records are open to public inspection.
+  - The request must be denied because investigative files are exempt from public inspection.
+  - The request may be granted only after the commissioner approves the inspection.
+  - The request must be forwarded to the Governor for a decision.
+key: B
+explanation: The law states that commission records are open to public inspection except for pending
+  investigative files. Therefore, a request to inspect those files must be denied. The distractor
+  asserting that all records are open overlooks the explicit exception for investigative files.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) § 73-35-5(4)
+  url: null
+  quoted_text: All records kept in the office of the commission under the authority of this chapter
+    shall be open to public inspection except pending investigative files.
+  secondary: []
+terms:
+  - public inspection
+  - records
+  - investigative files
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

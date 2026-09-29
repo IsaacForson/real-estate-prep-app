@@ -1,0 +1,46 @@
+id: ME-114-0158
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A designated broker has earned a commission from a completed sale and the funds are held in
+  the agency's trust account. Before withdrawing the commission, what must the broker do according
+  to 32 M.R.S. § 13178?
+options:
+  - The designated broker must make a full accounting to the principal and withdraw the commission
+    within 30 days after consummation or termination
+  - The designated broker must wait until the next banking cycle and then withdraw the funds after
+    providing a full accounting to the principal
+  - The designated broker must withdraw the funds immediately upon receiving the commission,
+    regardless of accounting status
+  - The designated broker must obtain written consent from the client before withdrawing any funds
+    from the trust account
+key: A
+explanation: §13178 states that the broker may withdraw fees only after making a full accounting to
+  the principal and within 30 days after consummation or termination. Withdrawing immediately or
+  without accounting violates the rule.
+citation:
+  source: 32 M.R.S. § 13178
+  url: null
+  quoted_text: The designated broker, except for an amount necessary to maintain the accounts not to
+    exceed an amount prescribed by commission rule, shall withdraw from the accounts all fees due
+    within 30 days after but not until consummation or termination of the transaction when the
+    designated broker makes or causes to be made a full accounting to the broker's principal.
+  secondary: []
+terms:
+  - trust account
+  - withdrawal
+  - accounting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

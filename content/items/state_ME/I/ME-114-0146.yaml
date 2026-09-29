@@ -1,0 +1,48 @@
+id: ME-114-0146
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee earns a $4,200 commission from a transaction in which they violated the Maine Real
+  Estate Brokerage License Act. What is the maximum total penalty a court may adjudicate for this
+  violation?
+options:
+  - $6,200
+  - $2,000
+  - $4,200
+  - $8,400
+key: A
+explanation: The statute provides a forfeiture of not more than $2,000 per violation plus the amount
+  of compensation received. Adding the $4,200 commission to the maximum forfeiture yields $6,200.
+  The other options either omit the compensation, omit the forfeiture, or double the compensation.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13005"
+  url: null
+  quoted_text: A person or entity who violates any provision of this chapter commits a civil violation
+    for which a forfeiture of not more than $2,000 for each violation may be adjudged, plus the
+    amount of compensation received in the subject transaction.
+  secondary: []
+math:
+  worked_solution: Maximum forfeiture = $2,000; Compensation received = $4,200; Total penalty = $2,000
+    + $4,200 = $6,200.
+  formulas:
+    - Total penalty = maximum forfeiture + compensation received
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - forfeiture
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

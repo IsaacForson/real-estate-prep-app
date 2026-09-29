@@ -1,0 +1,38 @@
+id: NE-56-0045
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under the Nebraska Real Estate License Act, what happens if only three members of the State
+  Real Estate Commission attend a scheduled meeting?
+options:
+  - The commission may take action only if the Secretary of State is present
+  - The commission may take action after the director calls a special meeting
+  - The commission may take action if a majority of the three members agree
+  - The commission may not take action because fewer than four members are present
+key: D
+explanation: The statute requires that not less than four members be present at any official
+  meeting; with only three members present, the commission lacks a quorum and cannot take official
+  action. The other options incorrectly suggest alternative bases for action.
+citation:
+  source: Neb. Rev. Stat. § 81-885.07(2)
+  url: null
+  quoted_text: Not less than four members of the commission must be present at any official meeting of
+    the commission.
+  secondary: []
+terms:
+  - quorum
+  - meeting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,41 @@
+id: VT-2211-0157
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person conducts a sale of land at an auction advertised as a bona fide public auction and
+  receives a commission from the seller. Under 26 V.S.A. § 2211(b)(3), is the person required to
+  hold a real estate license?
+options:
+  - The person is exempt because the sale was advertised as a bona fide public auction.
+  - The person is required to hold a license because they received a commission for the transaction.
+  - The person is exempt because they are not the owner and the auction was open to the public.
+  - The person is required to hold a license because auctions are considered brokerage activities.
+key: A
+explanation: The auctioneer exemption applies when the sale is advertised as a bona fide public
+  auction, regardless of receiving a commission. Thus the person is exempt and need not hold a
+  license. The distractor focusing on the commission overlooks this specific exemption.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons 26 V.S.A. §
+    2211(b)(3)
+  url: null
+  quoted_text: Any person selling real estate as an auctioneer, provided such sale is advertised as a
+    bona fide public auction.
+  secondary: []
+terms:
+  - auctioneer
+  - bona fide public auction
+  - exempt
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,44 @@
+id: AZ-20-0243
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A surety sends notice to the commissioner cancelling a bond posted by a real estate licensee.
+  What must the licensee do to avoid license suspension?
+options:
+  - Pay a reinstatement fee to the department within twenty days
+  - Request a hearing to contest the cancellation within ten days
+  - Submit a certificate of deposit in lieu of the bond within fifteen days
+  - File a new bond with the commissioner within thirty days of the notice
+key: D
+explanation: The statute requires the licensee to furnish a like bond within thirty days after the
+  commissioner mails the cancellation notice; failure to do so results in suspension. Substituting a
+  certificate of deposit, while allowed for an original bond, does not meet the post‑cancellation
+  requirement.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2186 to 32-2193.32 — ARS Title 32, Ch. 20, Art. 5 - Real Estate
+    Recovery Fund — § 32-2193.02
+  url: null
+  quoted_text: On receipt by the commissioner of notice to cancel a bond by any surety, the
+    commissioner shall immediately notify the licensee on the bond of the effective date of
+    cancellation of the bond and the licensee shall furnish a like bond within thirty days after
+    mailing of the notice by the commissioner or his license shall be suspended.
+  secondary: []
+terms:
+  - surety bond
+  - cancellation
+  - like bond
+  - thirty-day period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

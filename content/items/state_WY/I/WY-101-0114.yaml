@@ -1,0 +1,41 @@
+id: WY-101-0114
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A partnership performs real estate activity in Wyoming without first obtaining a license. Upon
+  conviction, what is the maximum fine that may be imposed under Wyo. Stat. Ann. § 33-28-114(a)?
+options:
+  - $7,500
+  - $2,500
+  - $5,000
+  - $10,000
+key: C
+explanation: Under Wyo. Stat. Ann. § 33-28-114(a), a corporation, partnership, or association
+  convicted of performing real estate activity without a license is subject to a fine not exceeding
+  $5,000. The correct option states this maximum fine. The $2,500 figure applies only to an
+  individual's first offense, while higher amounts are not authorized by the statute.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real Estate
+    License Act (Articles 1-4) — § 33-28-114
+  url: null
+  quoted_text: If a corporation, partnership or association is convicted it shall be punished by a
+    fine of not more than five thousand dollars ($5,000.00).
+  secondary: []
+terms:
+  - partnership
+  - fine
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

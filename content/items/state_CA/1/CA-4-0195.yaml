@@ -1,0 +1,39 @@
+id: CA-4-0195
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age a person must attain to be eligible for a real estate broker license
+  in California?
+options:
+  - At least 18 years old
+  - At least 16 years old
+  - At least 20 years old
+  - At least 21 years old
+key: A
+explanation: The regulation states that a real estate broker license shall not be issued to a person
+  who has not attained the age of 18 years, establishing 18 as the minimum age. The option stating
+  16 years old contradicts this requirement.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner (Cal.
+    Code Regs. tit. 10, ch. 6) - DRE compilation § 2720
+  url: null
+  quoted_text: A real estate broker license shall not be issued to a person who has not attained the
+    age of 18 years.
+  secondary: []
+terms:
+  - age
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

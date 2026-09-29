@@ -1,0 +1,38 @@
+id: WA-85-0132
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under RCW 18.85.021, what is the term length for each commission member appointed by the governor?
+options:
+  - Eight years.
+  - Two years.
+  - Six years.
+  - Four years.
+key: C
+explanation: The statute explicitly states that the governor appoints six commission members for a
+  term of six years each. This establishes the six-year term as the correct answer. The option
+  stating four years is a common misconception, perhaps confusing the term with that of other state
+  boards or committees.
+citation:
+  source: Wash. Rev. Code § 18.85.021
+  url: null
+  quoted_text: The governor must appoint six commission members for a term of six years each.
+  secondary: []
+terms:
+  - term
+  - commission
+  - governor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

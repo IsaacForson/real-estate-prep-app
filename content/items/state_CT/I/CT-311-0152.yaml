@@ -1,0 +1,43 @@
+id: CT-311-0152
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer and seller have a disagreement over the condition of the property and voluntarily
+  submit the dispute to the Connecticut Real Estate Commission. May the Commission act as a board of
+  arbitration to decide this dispute?
+options:
+  - No, the Commission lacks any arbitration authority under Connecticut law.
+  - No, the Commission may only arbitrate disputes over commissions between brokers or salespersons.
+  - Yes, the Commission may arbitrate any dispute voluntarily submitted by the parties.
+  - Yes, but only if the parties are both licensed real estate brokers.
+key: B
+explanation: The statute limits the Commission's arbitration power to disputes over commissions
+  arising between brokers or salespersons that are voluntarily submitted. A dispute between a buyer
+  and seller over property condition does not meet this criterion, so the Commission cannot
+  arbitrate it. The option stating the Commission may arbitrate any dispute is incorrect because it
+  ignores the statutory limitation.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311f
+  url: null
+  quoted_text: The commission shall have the power to act as a board of arbitration to consider and
+    decide any dispute over commissions arising between brokers or salespersons that is voluntarily
+    submitted to the commission by the parties to such dispute.
+  secondary: []
+terms:
+  - arbitration
+  - commission dispute
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

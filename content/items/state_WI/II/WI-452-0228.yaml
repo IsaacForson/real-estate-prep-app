@@ -1,0 +1,40 @@
+id: WI-452-0228
+jurisdiction: WI
+bank: state_WI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller delivers a warranty deed to a buyer that includes the clause 'This conveyance does
+  not include any covenant against encumbrances.' Under Wis. Stat. § 706.10(5), what is the effect
+  of this clause on the deed’s covenants?
+options:
+  - The covenant against encumbrances remains implied by law despite the clause
+  - The deed conveys only a quitclaim interest because the covenant is omitted
+  - The covenant against encumbrances is excluded because the deed expressly provides otherwise
+  - The deed is invalid because it conflicts with statutory covenant requirements
+key: C
+explanation: The statute states that a warranted deed includes the statutory covenants except as the
+  terms of the conveyance may otherwise provide, so an express exclusion removes that covenant. The
+  distractor that the covenant remains implied is incorrect because the statute allows the deed’s
+  terms to override the implied covenants.
+citation:
+  source: Wis. Stat. § 706.10(5)
+  url: null
+  quoted_text: except as the terms of the conveyance may otherwise provide, to include covenants
+  secondary: []
+terms:
+  - warranty deed
+  - covenant
+  - encumbrance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

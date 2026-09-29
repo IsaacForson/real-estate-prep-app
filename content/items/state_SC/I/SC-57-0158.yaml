@@ -1,0 +1,41 @@
+id: SC-57-0158
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submits a license application and pays the required application fee. Before the
+  commission processes the application, the applicant decides to withdraw the request. What is the
+  status of the application fee under S.C. Code Ann. § 40-57-70(B)?
+options:
+  - Refundable upon request
+  - Transferred to the education fund
+  - Forfeited and not refunded
+  - Held in escrow until reapplication
+key: C
+explanation: The statute provides that an application fee is nonrefundable, meaning it is forfeited
+  and not returned regardless of whether the application is processed or withdrawn. Therefore, the
+  fee is forfeited and not refunded. The option suggesting it is refundable upon request contradicts
+  the explicit nonrefundable rule.
+citation:
+  source: S.C. Code Ann. § 40-57 (Title 40, ch. 57 — Real Estate Brokers, Brokers-in-Charge,
+    Associates, and Property Managers) — South Carolina Code of Laws Title 40, Chapter 57 — Real
+    Estate Brokers, Brokers-in-Charge, Associates, and Property Managers — § 40-57-70
+  url: null
+  quoted_text: An application fee is nonrefundable.
+  secondary: []
+terms:
+  - application fee
+  - nonrefundable
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

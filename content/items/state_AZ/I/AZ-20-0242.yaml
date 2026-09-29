@@ -1,0 +1,42 @@
+id: AZ-20-0242
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant receives payment from the Arizona real estate recovery fund for a judgment. Later,
+  the claimant wishes to file a partial satisfaction of that judgment. What must the claimant do
+  before filing the satisfaction?
+options:
+  - Pay an additional fee to the fund
+  - Notify the commissioner within ten days
+  - Obtain the commissioner’s prior written consent
+  - File a notice of subrogation with the department
+key: C
+explanation: Once the commissioner has been subrogated to the claimant’s rights, the claimant may
+  not file a full or partial satisfaction of judgment without the commissioner’s prior written
+  consent. Simply notifying the commissioner does not satisfy this requirement.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2186 to 32-2193.32 — ARS Title 32, Ch. 20, Art. 5 - Real Estate
+    Recovery Fund — § 32-2192
+  url: null
+  quoted_text: If the commissioner is subrogated to a claimant’s rights as judgment creditor, the
+    claimant shall not file a full or partial satisfaction of judgment without the commissioner’s
+    prior written consent.
+  secondary: []
+terms:
+  - judgment creditor
+  - satisfaction of judgment
+  - prior written consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

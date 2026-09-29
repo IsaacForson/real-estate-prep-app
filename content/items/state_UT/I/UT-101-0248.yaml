@@ -1,0 +1,46 @@
+id: UT-101-0248
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Only two commission members are present at a scheduled meeting. According to Utah Code Ann.
+  § 61-2f‑103(9), what action can the commission take regarding business?
+options:
+  - The commission may proceed with voting because a simple majority of those present is sufficient.
+  - The commission must adjourn the meeting until at least three members are present.
+  - The commission can conduct business if the director authorizes the meeting.
+  - The commission may issue informal recommendations but cannot take formal action.
+key: B
+explanation: Section 61‑2f‑103(9) provides that three members of the commission constitute a quorum
+  for the transaction of business. With only two members present, a quorum does not exist, so the
+  commission must adjourn the meeting until at least three members are present. Consequently, the
+  statement that the commission must adjourn the meeting until at least three members are present is
+  the correct answer. A statement that the commission may proceed with voting because a simple
+  majority of those present is sufficient is incorrect because a quorum, not a simple majority, is
+  required. Likewise, the ideas that the director can authorize the meeting or that only informal
+  recommendations may be issued are not supported by the statute.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-103(9)
+  url: null
+  quoted_text: (9) Three members of the commission constitute a quorum for the transaction of business.
+  secondary: []
+terms:
+  - quorum
+  - members
+  - transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

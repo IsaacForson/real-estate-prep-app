@@ -1,0 +1,42 @@
+id: WY-101-0123
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum time allowed to deposit funds received for a real estate transaction into
+  an escrow or trust account under Wyoming law?
+options:
+  - Within two banking days
+  - Within one banking day
+  - Within five banking days
+  - Within three banking days
+key: B
+explanation: Wyo. Stat. Ann. § 33-28-111(xxvii) requires that all financial instruments be deposited
+  in an escrow or trust account within one (1) banking day unless the parties agree otherwise in
+  writing. Therefore the maximum permissible period is one banking day. Options specifying two or
+  more days exceed this limit absent a written agreement.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-111(xxvii)
+  url: null
+  quoted_text: Failing to deposit all financial instruments in an escrow or trust account within one
+    (1) banking day in a financial institution in this state, unless each person with an interest in
+    the funds has agreed otherwise in writing;
+  secondary: []
+terms:
+  - escrow
+  - trust
+  - deposit
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

@@ -1,0 +1,46 @@
+id: OH-4735-0073
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker who only lists and sells residential properties (does not manage any rental
+  properties) fails to maintain a separate trust account for rents received from owners. Under Ohio
+  Rev. Code § 4735.18(A)(27), is the broker subject to disciplinary sanctions for this failure?
+options:
+  - Yes, because all brokers must maintain a rent trust account regardless of activity
+  - No, because it applies only to brokers managing real property for owners
+  - Yes, but only if the broker also holds escrow funds for clients
+  - No, because the broker can use a personal account for rent funds
+key: B
+explanation: The exception in Ohio Rev. Code § 4735.18(A)(27) states that the requirement to
+  maintain a rent trust account does not apply to brokers who are not engaged in managing real
+  property on behalf of owners. Since the broker only lists and sells residential properties, the
+  exception applies and no disciplinary sanction is warranted. The claim that all brokers must
+  maintain a rent trust account ignores this statutory exemption. The suggestion that the broker
+  could use a personal account is incorrect because, when the requirement does apply, funds must be
+  kept in a separate trust account; however, here the requirement does not apply at all.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.18(A)(27)
+  url: null
+  quoted_text: Division (A)(27) of this section does not apply to brokers who are not engaged in the
+    management of real property on behalf of real property owners.
+  secondary: []
+terms:
+  - trust account
+  - property management
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,48 @@
+id: CT-311-0191
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller informs the licensee that the property was once suspected to be the site of a felony.
+  Under Conn. Gen. Stat. § 20-311, is this fact considered a nonmaterial fact concerning real
+  property?
+options:
+  - It is considered a nonmaterial fact because the property was suspected of being a felony site.
+  - It is not considered a nonmaterial fact because suspicions of felony are not listed in the
+    statute.
+  - It is considered a nonmaterial fact only if the felony resulted in a conviction.
+  - It is not considered a nonmaterial fact because the statute only covers infectious diseases.
+key: A
+explanation: Under Conn. Gen. Stat. § 20-311(21)(B), a nonmaterial fact concerning real property
+  includes any circumstance where the property was at any time suspected to have been the site of a
+  death or felony. Therefore, a suspicion of a felony site qualifies as a nonmaterial fact. The
+  claim that the statute does not list such suspicions is incorrect.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311(21)
+  url: null
+  quoted_text: “Nonmaterial fact concerning real property” means any fact, set of facts or
+    circumstances surrounding real property which includes, but is not limited to, the fact that (A)
+    an occupant of real property is or has been infected with a disease on the list of reportable
+    diseases, emergency illnesses and health conditions issued by the Commissioner of Public Health
+    pursuant to section 19a-2a , or (B) the real property was at any time suspected to have been the
+    site of a death or felony;
+  secondary: []
+terms:
+  - nonmaterial fact
+  - real property
+  - felony suspicion
+  - reportable disease
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

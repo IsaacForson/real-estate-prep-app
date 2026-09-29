@@ -1,0 +1,41 @@
+id: NE-56-0042
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The commission schedules a hearing for May 10. What is the latest date the commission may send
+  the written notice of the hearing to the licensee?
+options:
+  - April 21
+  - April 19
+  - April 18
+  - April 20
+key: D
+explanation: The statute requires the commission to notify the licensee at least twenty days prior
+  to the date set for hearing. Counting back twenty days from May 10 gives April 20 as the latest
+  permissible notice date. The distractor April 21 would provide only nineteen days notice,
+  violating the requirement.
+citation:
+  source: Neb. Rev. Stat. § 81-885.25(2)
+  url: null
+  quoted_text: The commission shall, at least twenty days prior to the date set for hearing, notify
+    the licensee or violator in writing of the date and place of the hearing.
+  secondary: []
+terms:
+  - notice
+  - hearing
+  - deadline
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

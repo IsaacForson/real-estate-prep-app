@@ -1,0 +1,44 @@
+id: PA-9-0172
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee closes a residential sale on June 10, 2022. In January 2024, the licensee disposes
+  of the file. Which provision of § 455.604 has been violated?
+options:
+  - "Violation of subsection (8): Placing a \"for sale\" or \"for rent\" sign without the owner's
+    written consent."
+  - "Violation of subsection (6): Failing to preserve transaction records for three years after
+    closing."
+  - "Violation of subsection (2): Making a false promise likely to induce a contract that cannot be
+    kept."
+  - "Violation of subsection (12): Accepting a commission from a person other than the affiliated
+    broker."
+key: B
+explanation: Subsection (6) requires preservation of records for three years following the
+  consummation of a real estate transaction. Disposing of the file in January 2024 is less than
+  three years after the June 2022 closing, thus violating this rule. The distractor about placing a
+  sign without consent addresses advertising conduct, not record retention.
+citation:
+  source: 63 P.S. § 455.604(a)(6)
+  url: null
+  quoted_text: Failing to preserve for three years following its consummation records relating to any
+    real estate transaction.
+  secondary: []
+terms:
+  - records
+  - preservation
+  - transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

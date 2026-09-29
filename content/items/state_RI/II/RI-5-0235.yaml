@@ -1,0 +1,43 @@
+id: RI-5-0235
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant completed forty‑five classroom hours thirty‑six months ago and now applies for a
+  real estate broker license. According to Rhode Island regulations, can those hours be used to
+  satisfy any part of the broker’s pre‑licensing education requirement?
+options:
+  - Yes, because the hours meet the forty‑five hour minimum.
+  - Yes, because the hours are less than four years old.
+  - No, because salesperson hours cannot be used for a broker license.
+  - No, because the hours are older than four years.
+key: C
+explanation: The regulation explicitly prohibits using the forty‑five hours earned for a salesperson
+  license to qualify for the broker’s ninety‑hour requirement. Since the applicant’s hours were
+  earned as salesperson credit, they are ineligible regardless of age. The statement that the hours
+  are too old is not applicable because thirty‑six months is less than four years.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.7(C)
+  url: null
+  quoted_text: At no time shall the forty‑five (45) classroom hours used to qualify for a
+    salesperson’s license be used to qualify for the ninety (90) hours required for a broker’s
+    license.
+  secondary: []
+terms:
+  - salesperson
+  - broker
+  - prelicensing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

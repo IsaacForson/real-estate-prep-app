@@ -1,0 +1,46 @@
+id: RI-5-0227
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A principal broker employs four licensees. What is the minimum per‑claim coverage required
+  under option (a) of the errors and omissions insurance rule for a principal broker’s blanket
+  policy?
+options:
+  - $50,000
+  - $150,000
+  - $200,000
+  - $300,000
+key: C
+explanation: Option (a) requires the per‑claim amount to be $50,000 multiplied by the number of
+  licensees. With four licensees, the calculation is $50,000 × 4 = $200,000. The $50,000 distractor
+  omits the multiplication, while $300,000 reflects the fixed amount in option (b).
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § A.2.a
+  url: null
+  quoted_text: In an amount for each claim of at least fifty thousand dollars ($50,000.00) multiplied
+    by the number of individual licensees employed by or associated with the principal broker
+  secondary: []
+math:
+  worked_solution: $50,000 × 4 = $200,000
+  formulas:
+    - Per‑claim coverage = $50,000 × number of licensees
+  onscreen_calculator_only: false
+terms:
+  - errors and omissions
+  - insurance
+  - coverage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

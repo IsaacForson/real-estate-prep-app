@@ -1,0 +1,42 @@
+id: NY-443-0318
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "19"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to 19 NYCRR §175.3(a), a real estate broker managing property for a client may
+  **NOT** accept which of the following without the client's full knowledge and consent?
+options:
+  - A late fee gathered from the tenant
+  - A referral fee from another broker
+  - A management fee charged to the client
+  - A commission on expenses for the client
+key: D
+explanation: The rule prohibits a broker from accepting any commission, rebate, or profit on
+  expenditures made for the client without the client's full knowledge and consent. A commission on
+  expenses for the client is such a profit, so it is barred. Charging a management fee for services
+  rendered is permissible compensation and not a profit on client expenditures.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.3
+  url: null
+  quoted_text: When acting as an agent in the management of property a real estate broker shall not
+    accept any commission, rebate or profit on expenditures made for his client without his full
+    knowledge and consent.
+  secondary: []
+terms:
+  - commission
+  - rebate
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

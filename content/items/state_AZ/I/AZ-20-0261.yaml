@@ -1,0 +1,42 @@
+id: AZ-20-0261
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant submits a real estate salesperson license application but has not yet obtained a
+  fingerprint clearance card. According to Arizona law, what action must the department take
+  regarding the license application?
+options:
+  - The department will issue the license immediately
+  - The department will issue the license after a background check
+  - The department will deny the license without a fingerprint clearance card
+  - The department will issue a temporary license pending card submission
+key: C
+explanation: The statute provides that the department shall not issue a license to an original
+  license applicant before receiving a valid fingerprint clearance card. Therefore, the department
+  must deny issuance when the card is absent. Issuing the license after a background check is not
+  authorized by the statute.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2108.01
+  url: null
+  quoted_text: The department shall not issue a license to an original license applicant before
+    receiving a valid fingerprint clearance card pursuant to this section.
+  secondary: []
+terms:
+  - fingerprint
+  - clearance
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

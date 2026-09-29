@@ -1,0 +1,37 @@
+id: ME-114-0153
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under 32 M.R.S. § 13007, the fee for any one purpose established by the Director may **NOT**
+  exceed what amount?
+options:
+  - $50.00
+  - $75.00
+  - $100.00
+  - $125.00
+key: C
+explanation: The statute explicitly states that the fee for any one purpose may not exceed $100,
+  making $100 the correct maximum. The $125 option exceeds this limit and is therefore incorrect,
+  while $75 is below the limit but does not represent the maximum allowed amount.
+citation:
+  source: 32 M.R.S. § 13007
+  url: null
+  quoted_text: except that the fee for any one purpose may not exceed $100.
+  secondary: []
+terms:
+  - fee
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

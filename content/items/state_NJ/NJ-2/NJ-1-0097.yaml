@@ -1,0 +1,51 @@
+id: NJ-1-0097
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A housing referral aide employed in a federally funded program also charges a fee to a tenant
+  for providing a list of rental units. Under N.J. Stat. Ann. § 45:15-1.1, is the aide required to
+  hold a real estate license for this activity?
+options:
+  - The aide must hold a license because the exemption under § 45:15-1.1 applies only to duties
+    performed within the program.
+  - The aide does not need a license because providing a list of rental units is not considered
+    engaging in the business of a real estate broker.
+  - The aide must hold a license because any fee for locating rental housing requires a license,
+    even if exempt under other statutes.
+  - The aide does not need a license because the exemption applies while performing duties in the
+    federally funded program.
+key: A
+explanation: Under N.J. Stat. Ann. § 45:15-1.1, the exemption applies only while the aide is
+  performing duties in the federally funded program; charging a fee for providing a rental list is
+  outside those duties, so the aide must be licensed. The statement that providing a list of rental
+  units is not considered engaging in the business of a real estate broker is incorrect because the
+  exemption is limited to program duties.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-1.1
+  url: null
+  quoted_text: while performing his duties in such position, shall not be deemed to be engaged in the
+    business of a real estate broker, broker-salesperson or salesperson under the provisions of
+    chapter 15 of Title 45 of the Revised Statutes.
+  secondary: []
+terms:
+  - housing referral aide
+  - exemption
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

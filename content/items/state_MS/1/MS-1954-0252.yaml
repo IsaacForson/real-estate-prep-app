@@ -1,0 +1,43 @@
+id: MS-1954-0252
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a broker's price opinion for a lienholder to be used as the basis for
+  determining the value of a property in a first mortgage loan transaction. Under Mississippi law,
+  is this permissible?
+options:
+  - No, because mortgage loan opinions must be prepared by a licensed appraiser
+  - No, because subsection (2)(d) prohibits using a BPO for mortgage loan valuation
+  - Yes, because lienholders are expressly allowed to request broker's price opinions
+  - Yes, if the lienholder provides written authorization for the opinion
+key: B
+explanation: Subsection (2)(d) allows a licensee to prepare a BPO for a lienholder only for purposes
+  other than using it as the basis to determine value for mortgage loan origination. Preparing such
+  an opinion for mortgage loan valuation is therefore prohibited. The distractor suggesting
+  permission with written authorization is incorrect because the statutory ban cannot be overridden
+  by private agreement.
+citation:
+  source: Miss. Code Ann. § 73-35-1(2)(d)
+  url: null
+  quoted_text: An existing or potential lienholder or other third party for any purpose other than as
+    the basis to determine the value of a parcel of real property, for a mortgage loan origination,
+    including first and second mortgages, refinances, or equity lines of credit
+  secondary: []
+terms:
+  - broker's price opinion
+  - lienholder
+  - mortgage loan
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

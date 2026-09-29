@@ -1,0 +1,43 @@
+id: OH-4735-0057
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A brokerage manages a rental property for an owner under a written contract. Under Ohio Rev.
+  Code § 4735.10(A)(2)(e)(i), the brokerage may exercise signatory authority for withdrawals from
+  the property management account if:"
+options:
+  - The brokerage has a verbal agreement with the property owner
+  - The brokerage has a written contract with the property manager
+  - The brokerage has a written contract with the property owner
+  - The brokerage has a written contract with the tenant
+key: C
+explanation: The rule permits a brokerage managing property for another to exercise signatory
+  authority for withdrawals from property management accounts when acting pursuant to a written
+  contract with the property owner. Verbal authorization, account naming, or withdrawal amount do
+  not satisfy this requirement. Thus, only a written contract with the owner authorizes the
+  authority.
+citation:
+  source: Ohio Rev. Code § 4735.10(A)(2)(e)(i)
+  url: null
+  quoted_text: (i) Brokerages engaged in the management of property for another may, pursuant to a
+    written contract with the property owner, exercise signatory authority for withdrawals from
+    property management accounts maintained in the name of the property owner.
+  secondary: []
+terms:
+  - signatory authority
+  - property management account
+  - written contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

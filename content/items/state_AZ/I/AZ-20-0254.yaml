@@ -1,0 +1,43 @@
+id: AZ-20-0254
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee sends a press release to a newspaper announcing a new subdivision; the newspaper
+  does not charge for publishing the release. Under Arizona law, does this press release constitute
+  advertising?
+options:
+  - It is considered advertising because it promotes a subdivision
+  - It is not advertising because it is a press release for general information
+  - It is considered advertising because it appears in a newspaper
+  - It is not advertising because it is a communication to stockholders
+key: B
+explanation: The definition of advertising excludes press releases delivered to newspapers for
+  general information when no charge is made by the newspaper. Since the press release meets this
+  exemption, it is not advertising. Options claiming it is advertising ignore this specific
+  exclusion.
+citation:
+  source: "### Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(3)"
+  url: null
+  quoted_text: Press releases or other communications delivered to newspapers, periodicals or other
+    news media for general information or public relations purposes if no charge is made by the
+    newspapers, periodicals or other news media to publish or use any part of these communications
+  secondary: []
+terms:
+  - advertising
+  - press release
+  - general information
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

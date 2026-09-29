@@ -1,0 +1,42 @@
+id: CA-4-0194
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A homeowner initiates a dispute resolution process on April 1. The subdivider appoints a
+  neutral administrator on June 2. Is this appointment compliant with Cal. Code Regs. tit. 10, §
+  2791.8(a)(3)?
+options:
+  - The appointment is not compliant because it occurred after 60 days of initiation.
+  - The appointment is compliant because it occurred within 60 days of initiation.
+  - The appointment is not compliant because it occurred before the 60‑day period began.
+  - The appointment is compliant because it occurred within 90 days of initiation.
+key: A
+explanation: The regulation requires the appointment to be made within sixty (60) days of
+  initiation; April 1 to June 2 is 62 days, exceeding the limit. The distractor claiming compliance
+  within 90 days misstates the required timeframe.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2791.8(a)(3)
+  url: null
+  quoted_text: For the appointment, or selection, as designation, or assignment of the person(s) to
+    administer and preside over the claim or dispute resolution process within a specific period of
+    time, which in no event shall be more than sixty (60) days from initiation of the claim or
+    dispute resolution process or hearing.
+  secondary: []
+terms:
+  - dispute resolution
+  - appointment
+  - time limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

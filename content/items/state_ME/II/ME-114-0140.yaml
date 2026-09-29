@@ -1,0 +1,45 @@
+id: ME-114-0140
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A brokerage agency changes its office address and fails to notify the director within ten
+  days. Under 32 M.R.S. § 13175, this failure:"
+options:
+  - The agency's failure to notify the director within ten days is permitted if the agency updates
+    its website within ten days
+  - The agency's failure to notify the director within ten days is allowed because the director can
+    discover the change through public records
+  - The agency's failure to notify the director within ten days is a violation of the requirement to
+    report any change of address, name or other material changes to the director within ten days
+  - The agency's failure to notify the director within ten days is acceptable as long as the agency
+    continues to operate from the old address
+key: C
+explanation: The statute requires that any change of address, name, or other material changes be
+  reported to the director within ten days; failing to do so violates that requirement. The idea
+  that the director could learn of the change from public records does not satisfy the reporting
+  obligation.
+citation:
+  source: 32 M.R.S. § 13175
+  url: null
+  quoted_text: Any change of address, name or other material changes in the conditions or
+    qualifications set forth in the original application must be reported to the director no later
+    than 10 days after the change.
+  secondary: []
+terms:
+  - change
+  - report
+  - director
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

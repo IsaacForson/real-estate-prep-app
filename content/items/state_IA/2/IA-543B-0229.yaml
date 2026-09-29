@@ -1,0 +1,49 @@
+id: IA-543B-0229
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson whose license expired on December 31, 2023, submits a renewal application on
+  January 15, 2024. According to Iowa Admin. Code r. 481-2009, what is the total fee due for
+  renewal?
+options:
+  - $125
+  - $150
+  - $175
+  - $200
+key: B
+explanation: The rule adds a $25 reinstatement fee to the regular renewal fee when renewal occurs
+  between January 1 and January 30 after expiration. The regular salesperson renewal fee is $125, so
+  $125 + $25 = $150. The $125 distractor omits the reinstatement fee, while $175 incorrectly adds
+  $50.
+citation:
+  source: Iowa Admin. Code r. 481-2009 — Iowa Administrative Code 481—Chapter 2009 — Fees (Real Estate
+    Commission) 481—2009.1(2)
+  url: null
+  quoted_text: Fee for renewal of broker and salesperson license between January 1 and January 30
+    following expiration of license is the regular renewal fee plus $25 reinstatement fee.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Regular renewal fee for salesperson = $125 (from 2009.1(1)).
+    Step 2: Reinstatement fee = $25 (from 2009.1(2)).
+    Step 3: Total fee = $125 + $25 = $150.
+  formulas:
+    - total = regular fee + reinstatement fee
+  onscreen_calculator_only: false
+terms:
+  - renewal
+  - reinstatement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

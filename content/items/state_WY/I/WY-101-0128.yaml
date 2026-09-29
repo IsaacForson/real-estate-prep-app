@@ -1,0 +1,41 @@
+id: WY-101-0128
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wyoming law, what is the maximum multiplier applied to the amount of money received as a
+  fee or profit in consequence of a violation when determining the additional penalty under the Real
+  Estate License Act?
+options:
+  - One times the amount received
+  - Two times the amount received
+  - Three times the amount received
+  - Four times the amount received
+key: C
+explanation: The statute states that a person who receives money as a fee or profit from a violation
+  is liable to a penalty of not more than three times the sum received. Therefore the maximum
+  multiplier is three. The option stating one times the amount received is incorrect because the law
+  allows a penalty up to three times, not limited to the amount itself.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-114(b)
+  url: null
+  quoted_text: not more than three (3) times the sum so received
+  secondary: []
+terms:
+  - penalty
+  - multiplier
+  - fee
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

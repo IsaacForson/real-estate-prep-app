@@ -1,0 +1,41 @@
+id: CT-311-0193
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate team wants to register the name 'Johnson Associates Team'. Under Conn. Gen.
+  Stat. § 20-312(e)(1)(C), why would this name be rejected?
+options:
+  - Inclusion of the term 'associates' implying a business entity
+  - Exceeding the allowed character limit for team names
+  - Missing the full name of a licensed broker or salesperson
+  - Absence of the 'at/of' phrase before the supervising licensee's name
+key: A
+explanation: The rule prohibits any term that implies the team is a business entity, such as
+  'associates', 'company', or 'LLC'. The name includes 'associates', so it violates this provision.
+  Missing the full name of a licensee is not automatically disqualifying because the name may
+  instead be followed by 'at/of' and the supervising licensee’s name.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-312(e)(1)(C)
+  url: null
+  quoted_text: (C) With the exception of “team”, not include any abbreviation, term or phrase,
+    including, but not limited to, “associates”, “company”, “corporation”, “group”, “LLC”, “real
+    estate” or “realty”, that implies that such team is a business entity;
+  secondary: []
+terms:
+  - team name
+  - associates
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

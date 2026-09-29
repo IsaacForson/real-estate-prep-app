@@ -1,0 +1,42 @@
+id: KS-3034-0182
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A supervising broker’s license expires on June 30. The broker does not inform any clients
+  before that date. According to Kansas law, what may a client do after the expiration date?
+options:
+  - Enter into a listing agreement with another broker immediately upon expiration
+  - Wait for the broker to renew the license before entering any new agreement
+  - Sue the broker for breach of contract before attempting to work with another broker
+  - Continue to rely on the expired broker to fulfill existing contracts
+key: A
+explanation: The statute states that if the broker does not advise clients, the client may enter
+  into a listing agreement with another broker as of the expiration date (or earlier if notice is
+  received). The distractor suggesting the client must wait for renewal contradicts the rule that
+  allows immediate action after expiration.
+citation:
+  source: Kan. Stat. Ann. § 58-3083(a)
+  url: null
+  quoted_text: Upon receipt of notice from the supervising broker or branch broker or the expiration
+    date or deactivation date of the supervising broker's or branch broker's license, whichever is
+    earlier, the client or customer may enter into a listing or brokerage agreement with another
+    broker of their choice.
+  secondary: []
+terms:
+  - client
+  - expiration
+  - listing agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

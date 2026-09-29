@@ -1,0 +1,42 @@
+id: FL-475-0280
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensed broker employs an unlicensed assistant to answer phone calls and schedule
+  appointments but not to negotiate or show properties. Under Florida Statute 475.01, is the
+  assistant required to hold a real estate license?
+options:
+  - Yes, because any employee of a broker must be licensed regardless of duties.
+  - No, but only if the assistant receives no compensation for the work.
+  - No, because performing clerical tasks alone does not constitute acts requiring a license.
+  - Yes, because the assistant is employed by a broker and therefore must be licensed.
+key: C
+explanation: The definition of broker and sales associate requires performing acts such as
+  appraising, auctioning, selling, exchanging, buying, renting, or negotiating. Clerical tasks like
+  answering phones and scheduling do not meet this definition, so a license is not required. The
+  other options incorrectly extend the licensing requirement to all employees or add unsupported
+  conditions.
+citation:
+  source: Fla. Stat. § 475.01(j)
+  url: null
+  quoted_text: “Sales associate” means a person who performs any act specified in the definition of
+    “broker,” but who performs such act under the direction, control, or management of another
+    person.
+  secondary: []
+terms:
+  - sales associate
+  - clerical tasks
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

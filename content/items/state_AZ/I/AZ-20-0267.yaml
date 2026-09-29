@@ -1,0 +1,36 @@
+id: AZ-20-0267
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the term of office for each member of the Arizona real estate advisory board?
+options:
+  - Two years
+  - Four years
+  - Six years
+  - Eight years
+key: C
+explanation: The statute explicitly states that the term of office of each member is six years.
+  Therefore, any other duration does not match the legal requirement.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 § 32-2104
+  url: null
+  quoted_text: The term of office of each member is six years
+  secondary: []
+terms:
+  - term
+  - office
+  - member
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

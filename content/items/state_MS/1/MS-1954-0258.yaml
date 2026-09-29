@@ -1,0 +1,41 @@
+id: MS-1954-0258
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A commissioner appointed from a Supreme Court District resigns after serving two years of a
+  four-year term. Who appoints the replacement and for what length of service?
+options:
+  - The replacement is appointed by the Governor for the unexpired term of the vacant seat.
+  - The replacement is appointed by the Governor for a new four-year term.
+  - The replacement is appointed by the Lieutenant Governor for a full four-year term.
+  - The replacement is appointed by the Mississippi Real Estate Commission for the unexpired term.
+key: A
+explanation: The law provides that vacancies on the commission are filled by the Governor for the
+  unexpired term of the vacant seat (Miss. Code Ann. § 73-35-5(1)). Therefore, the replacement
+  serves the remainder of the original four‑year term. The option stating that the replacement is
+  appointed by the Mississippi Real Estate Commission for the unexpired term is incorrect because
+  the appointing authority is the Governor, not the Commission, and the term served is the unexpired
+  portion, not a new full term.
+citation:
+  source: Miss. Code Ann. § 73-35-5(1)
+  url: null
+  quoted_text: Members to fill vacancies shall be appointed by the Governor for the unexpired term.
+  secondary: []
+terms:
+  - vacancy
+  - governor
+  - term
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

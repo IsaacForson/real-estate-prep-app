@@ -1,0 +1,46 @@
+id: KS-3034-0172
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Jane is an officer and shareholder of XYZ Realty, Inc., a corporation, but she is not the
+  supervising broker of the office. She receives earnest money from a buyer. Under Kansas law, is
+  she required to maintain a trust account?
+options:
+  - She must deposit the earnest money into a trust account.
+  - She is exempt from maintaining a trust account because she is an officer of the corporation.
+  - She may keep the earnest money in her personal account if she obtains written consent from the
+    buyer.
+  - She must obtain approval from the commission to use a trust account.
+key: B
+explanation: The trust account requirement does not apply to a broker who is an officer, member,
+  partner, shareholder or employee of a corporation and is not the supervising broker of that
+  corporation's office. Therefore Jane is exempt. The distractor suggesting she must deposit the
+  money ignores this exemption.
+citation:
+  source: Kan. Stat. Ann. § 58-3061 — K.S.A. Kan. Stat. Ann. § 58-3061 — Trust accounts § 58-3061(f)(C)
+  url: null
+  quoted_text: (C) a broker who is an officer, member, partner, shareholder or employee of an
+    association, corporation, limited liability company, limited liability partnership, partnership
+    or professional corporation and who is not the supervising broker of an office of the
+    association, corporation, limited liability company, limited liability partnership, partnership
+    or professional corporation
+  secondary: []
+terms:
+  - trust account
+  - exempt
+  - officer
+  - corporation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

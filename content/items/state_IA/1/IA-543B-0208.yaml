@@ -1,0 +1,44 @@
+id: IA-543B-0208
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Iowa Code § 543B.7, which of the following persons is excluded from the licensing
+  requirements pursuant to subsection 1?
+options:
+  - An auctioneer who is not a licensee and limits role to establishing the time, place, and method
+    of an auction
+  - A prospective purchaser who does not make repeated and successive transactions of a like
+    character
+  - A person acting as a receiver, trustee in bankruptcy, administrator, executor, or guardian
+  - A licensed attorney admitted to practice in Iowa acting solely as an incident to the practice of
+    law
+key: B
+explanation: Under Iowa Code § 543B.7(1), a person who is a prospective purchaser and does not
+  engage in repeated and successive transactions of a like character is excluded from the licensing
+  requirement. The other listed persons—an auctioneer who only sets the time, place, and method of
+  an auction, a person acting as a receiver, trustee in bankruptcy, administrator, executor, or
+  guardian, and a licensed attorney acting solely incident to the practice of law—are excluded under
+  different subsections of the same statute, not subsection 1. Therefore the correct choice is the
+  prospective purchaser who does not make repeated and successive transactions of a like character.
+citation:
+  source: Iowa Code § 543B.7(1)
+  url: null
+  quoted_text: prospective purchaser who does not make repeated and successive transactions of a like character
+  secondary: []
+terms:
+  - prospective purchaser
+  - repeated transactions
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

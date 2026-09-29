@@ -1,0 +1,43 @@
+id: NC-93A-0371
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "1"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a North Carolina real estate broker license obtains a criminal record report
+  from the local police department, which is not a reporting service designated by the Commission.
+  Under N.C. Gen. Stat. § 93A-4(b), is this report acceptable for the licensing application?
+options:
+  - No, because all applicants shall obtain criminal record reports from one or more reporting
+    services designated by the Commission.
+  - No, because the Commission does not accept any criminal record reports from local law
+    enforcement agencies.
+  - No, because applicants must also submit a credit report along with the criminal record report.
+  - No, because the applicant must pay the Commission directly for the criminal record check.
+key: A
+explanation: The law requires applicants to obtain criminal record reports exclusively from
+  Commission‑designated reporting services and to pay those services for the reports. Using a
+  non‑designated source, such as a local police department, does not satisfy this requirement. The
+  other options add conditions or prohibitions not present in the statute.
+citation:
+  source: N.C. Gen. Stat. § 93A-4(b)
+  url: null
+  quoted_text: All applicants shall obtain criminal record reports from one or more reporting services
+    designated by the Commission to provide criminal record reports. Applicants are required to pay
+    the designated reporting service for the cost of these reports.
+  secondary: []
+terms:
+  - criminal record report
+  - designated service
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

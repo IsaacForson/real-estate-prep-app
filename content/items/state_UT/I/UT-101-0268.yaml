@@ -1,0 +1,44 @@
+id: UT-101-0268
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Utah Code Ann. § 61-2f-102(5), how is a 'branch broker' defined?
+options:
+  - An individual who is an associate broker who independently operates a principal broker's branch
+    office without supervision.
+  - An individual who is a sales agent who assists a principal broker with client marketing duties.
+  - An individual who is an associate broker who manages a principal broker's branch office under
+    the supervision of the principal broker.
+  - An individual who is a principal broker who oversees multiple branch offices within the same
+    county.
+key: C
+explanation: The statute defines a branch broker as an associate broker who manages a principal
+  broker's branch office under the supervision of the principal broker. The option stating that a
+  branch broker is a sales agent who assists a principal broker with client marketing duties
+  incorrectly removes the supervision requirement, which contradicts the definition.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-102(5)
+  url: null
+  quoted_text: "\"Branch broker\" means an associate broker who manages a principal broker's branch
+    office under the supervision of the principal broker."
+  secondary: []
+terms:
+  - branch broker
+  - associate broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

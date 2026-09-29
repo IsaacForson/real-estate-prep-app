@@ -1,0 +1,46 @@
+id: AZ-20-0271
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensed real estate broker sells his own residential property to a buyer and knowingly
+  overstates the square footage in the listing. The buyer relies on the broker’s licensed status
+  when deciding to purchase. The buyer later discovers the misrepresentation and obtains a judgment
+  against the broker. May the buyer recover from the Arizona real estate recovery fund for the
+  out‑of‑pocket loss?
+options:
+  - Yes, because the broker acted as a principal and engaged in fraud or misrepresentation while the
+    buyer relied on the broker’s licensed status.
+  - No, because the fund only pays for losses arising from transactions where the licensee acted as
+    an agent, not as a principal.
+  - No, because the fund does not cover losses from misrepresentation unless the licensee is a
+    salesperson, not a broker.
+  - Yes, but only if the broker also held a cemetery license at the time of the transaction.
+key: A
+explanation: Subsection A(2) makes the fund liable when a licensee acts as a principal, commits
+  fraud or misrepresentation, and the aggrieved party relies on the licensee’s licensed status. The
+  fund is not limited to agent‑only transactions, so the claim based on principal fraud is payable.
+citation:
+  source: Ariz. Rev. Stat. § 32-2186(A)(2)
+  url: null
+  quoted_text: Engaged in fraud or misrepresentation while acting as a principal in the purchase or
+    sale of real property and the aggrieved person relied on the broker's or salesperson's licensed
+    status.
+  secondary: []
+terms:
+  - principal
+  - fraud
+  - reliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

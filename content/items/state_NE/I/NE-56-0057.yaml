@@ -1,0 +1,41 @@
+id: NE-56-0057
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A hearing officer receives an ex parte communication on Monday, May 5, 2025. By the end of
+  which day must the hearing officer file the communication in the record with the Agency?
+options:
+  - Tuesday, May 6, 2025.
+  - Wednesday, May 7, 2025.
+  - Thursday, May 8, 2025.
+  - Friday, May 9, 2025.
+key: B
+explanation: Under 002.03D, filing must be made within two working days of receipt. Counting two
+  working days after Monday (excluding Monday) gives Tuesday as day one and Wednesday as day two, so
+  the filing must be completed by the end of Wednesday. Choosing Tuesday, May 6, 2025, is incorrect
+  because it only allows one working day.
+citation:
+  source: 305 Neb. Admin. Code — Title 305 NREC Rules of Practice and Procedure — complaints,
+    investigations, hearings, declaratory orders, appeals 002.03D
+  url: null
+  quoted_text: The filing shall be made with the Agency within two (2) working days of the receipt or
+    making of the ex parte communication.
+  secondary: []
+terms:
+  - ex parte communication
+  - filing
+  - working days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

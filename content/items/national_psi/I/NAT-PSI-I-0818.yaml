@@ -1,0 +1,47 @@
+id: NAT-PSI-I-0818
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A parcel is described by metes and bounds as a rectangle 200 feet wide and 217.8 feet deep.
+  What is the area of the parcel in acres?
+options:
+  - The area is 0.5 acre
+  - The area is 0.75 acre
+  - The area is 1.0 acre
+  - The area is 1.25 acre
+key: C
+explanation: "The area in square feet is found by multiplying width by depth: 200 ft × 217.8 ft =
+  43,560 sq ft. According to §3.6, 1 acre equals 43,560 square feet, so the parcel contains 1.0
+  acre. The distractor 0.75 acre would result from using an incorrect factor (e.g., dividing by
+  58,080 instead of 43,560)."
+citation:
+  source: REP Ref. Property & Land Use § 3.6
+  url: null
+  quoted_text: 1 acre = 43,560 square feet = 4,840 square yards = 160 square rods = 10 square chains.
+  secondary: []
+math:
+  worked_solution: |-
+    200 ft × 217.8 ft = 43,560 sq ft
+    43,560 sq ft ÷ 43,560 sq ft per acre = 1.0 acre
+  formulas:
+    - area = length × width
+    - acres = area_sqft ÷ 43,560
+  onscreen_calculator_only: false
+terms:
+  - metes and bounds
+  - area
+  - acre
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,54 @@
+id: NV-645-0064
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Nevada law, what constitutes an agency relationship in real estate?
+options:
+  - A relationship between a principal and an agent arising from a brokerage or property management
+    agreement whereby the agent acts on behalf of the principal in dealings with a third party.
+  - A relationship based solely on an oral agreement between a broker and a client to assist in the
+    sale of real property, without any written brokerage agreement, and is not recognized as an
+    agency under Nevada statutes.
+  - A relationship arising solely from negotiations or communications with a client of another
+    broker with the written permission of the broker, and does not involve a brokerage agreement,
+    and is not considered an agency under Nevada law.
+  - A relationship where the agent acts independently of the principal in dealings with third
+    parties, without any brokerage agreement or property management agreement, and the principal
+    retains no control over the agent's actions.
+key: A
+explanation: "The definition of agency in NRS 645.0045(1) is: a relationship between a principal and
+  an agent arising out of a brokerage agreement or property management agreement whereby the agent
+  is engaged to do certain acts on behalf of the principal in dealings with a third party. This
+  matches the description that a relationship arises from a brokerage or property management
+  agreement whereby the agent acts on behalf of the principal in dealings with a third party. The
+  description that a relationship is based solely on an oral agreement between a broker and a client
+  to assist in the sale of real property, without any written brokerage agreement, is not recognized
+  as an agency under Nevada statutes."
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.0045
+  url: null
+  quoted_text: Agency means a relationship between a principal and an agent arising out of a brokerage
+    agreement or property management agreement whereby the agent is engaged to do certain acts on
+    behalf of the principal in dealings with a third party.
+  secondary: []
+terms:
+  - agency
+  - principal
+  - agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

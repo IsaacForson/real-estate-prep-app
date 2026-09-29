@@ -1,0 +1,42 @@
+id: NE-56-0054
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson is the subject of a formal complaint that may lead to a hearing. In addition to
+  the salesperson, who else must receive a copy of the hearing notice under the Nebraska Real Estate
+  License Act?
+options:
+  - The employing broker.
+  - The commission chair.
+  - The county attorney.
+  - The licensee's attorney.
+key: A
+explanation: Neb. Rev. Stat. § 81-885.25(2) requires the commission to send a copy of the hearing
+  notice to the broker employing a salesperson or associate broker. Thus the employing broker must
+  receive the notice. The commission chair, county attorney, and licensee’s attorney are not
+  mandated recipients by this provision.
+citation:
+  source: "### Neb. Rev. Stat. § 81-885 et seq. — Nebraska Real Estate License Act, Neb. Rev. Stat. §§
+    81-885 to 81-885.56 — NREC License Manual, Aug. 2026 ed. (OCR of scanned PDF) — § 81-885.25"
+  url: null
+  quoted_text: If the licensee is an associate broker or a salesperson, the commission shall also
+    notify the broker employing the licensee by mailing a copy of such notice to the broker's
+    last-known business address.
+  secondary: []
+terms:
+  - notice
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

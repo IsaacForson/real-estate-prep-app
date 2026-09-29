@@ -1,0 +1,47 @@
+id: AL-27-0188
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A bank employee acting as a trustee for a client's real estate holdings negotiates the sale of
+  a property on behalf of the trust without holding a real estate license. Under the license law
+  exemptions, why is this employee **NOT** required to be licensed?
+options:
+  - The employee is exempt because acting as a trustee is exempt from licensing requirements.
+  - The employee is exempt because all bank employees are exempt from licensing requirements.
+  - The employee is exempt because negotiating a sale on behalf of a trust does not require a
+    license.
+  - The employee is exempt because the transaction involves no commission.
+key: A
+explanation: Ala. Code § 34-27-2(b)(4) exempts persons acting as a receiver, trustee, administrator,
+  executor, or guardian, or acting under a court order or authority of a trust instrument or will.
+  Because the employee is serving as a trustee for the client’s real estate holdings, this exemption
+  applies and a license is not required. The claim that all bank employees are exempt is incorrect;
+  the exemption is limited to specific fiduciary roles such as trustee, not to bank employees
+  generally. The claim that negotiating a sale on behalf of a trust does not require a license
+  misstates the law; the exemption is based on the trustee capacity, not on the act of negotiating a
+  sale.
+citation:
+  source: Ala. Code § 34-27-2(b)(4)
+  url: null
+  quoted_text: Persons or a state or federally chartered financial institution acting as a receiver,
+    trustee, administrator, executor, or guardian; or acting under a court order or under authority
+    of a trust instrument or will.
+  secondary: []
+terms:
+  - trustee
+  - exemption
+  - financial institution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

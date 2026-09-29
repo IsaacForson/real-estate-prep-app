@@ -1,0 +1,41 @@
+id: SD-21A-0151
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed broker who is also the seller of a property attempts to rely on the bona fide owner
+  exemption to avoid licensure when selling the property. Is the exemption available?
+options:
+  - The exemption is available if the broker does not receive any compensation for the sale
+  - The exemption is available because the broker is acting solely as a seller in the transaction
+  - The exemption is available if the broker discloses their dual role to the buyer
+  - The exemption is not available because licensees do not qualify for exceptions under this chapter
+key: D
+explanation: Section 36-21A-27 states that any person licensed under this chapter does not qualify
+  for the exceptions set forth in this chapter, including any transaction in which that person has a
+  personal interest. Therefore, a licensed broker who is also the seller cannot rely on the bona
+  fide owner exemption, regardless of whether they receive compensation, act solely as a seller, or
+  disclose their dual role to the buyer.
+citation:
+  source: S.D. Codified Laws § 36-21A-27
+  url: null
+  quoted_text: Any person licensed under this chapter does not qualify for the exceptions set forth in
+    this chapter including any transaction in which that person has a personal interest.
+  secondary: []
+terms:
+  - licensee
+  - exemption
+  - personal interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

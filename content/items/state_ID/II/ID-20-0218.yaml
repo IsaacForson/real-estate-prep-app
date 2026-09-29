@@ -1,0 +1,50 @@
+id: ID-20-0218
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person who, for compensation, negotiates the purchase of a parcel of real estate for a
+  friend but does **NOT** hold an Idaho real estate license, is considered to be engaging in the
+  business of real estate under Idaho Code § 54-2002?
+options:
+  - The person is not considered to be engaging in the business because they are acting for a
+    friend, not for compensation.
+  - The person is considered to be engaging in the business only if they also list the property for
+    sale.
+  - The person is not considered to be engaging in the business because they only performed a single
+    act, which is insufficient to constitute engaging in the business.
+  - The person is considered to be engaging in the business because any single act described in the
+    definition of real estate broker or salesperson constitutes engaging in the business.
+key: D
+explanation: Under Idaho Code § 54-2002, any single act that falls within the definition of real
+  estate broker or salesperson is sufficient to constitute engaging in the business, so the
+  unlicensed person is engaging in the business. The claim that the person is not engaging because
+  they are acting for a friend is incorrect because the person is receiving compensation. The claim
+  that the person is not engaging because they only performed a single act is incorrect because the
+  statute explicitly states that a single act is enough. The claim that listing the property is
+  required for the act to constitute engaging in the business is incorrect because listing is not a
+  condition; any single act described in the definition suffices.
+citation:
+  source: Idaho Code § 54-2002
+  url: null
+  quoted_text: Unless exempted from this chapter, any single act described within the definitions of
+    'real estate broker' or 'real estate salesperson' shall be sufficient to constitute 'engaging in
+    the business' within the meaning of this chapter.
+  secondary: []
+terms:
+  - engaging in the business
+  - real estate broker
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

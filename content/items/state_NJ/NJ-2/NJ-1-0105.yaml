@@ -1,0 +1,46 @@
+id: NJ-1-0105
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under N.J. Stat. Ann. § 45:15-9, what is the legal effect of issuing a real estate license to
+  an applicant who is **NOT** a resident of New Jersey?
+options:
+  - The licensee consents to service of process via the commission secretary.
+  - The licensee is exempt from New Jersey court jurisdiction.
+  - The licensee must file a bond with the state treasurer.
+  - The licensee must appoint a resident agent for service of process.
+key: A
+explanation: The statute deems a nonresident licensee’s consent to service of process through the
+  commission secretary or its designee. Therefore, the licensee consents to service of process via
+  the commission secretary. The distractor suggesting the licensee must appoint a resident agent is
+  incorrect because the statute does not impose that requirement; it instead provides the deemed
+  consent mechanism.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-9"
+  url: null
+  quoted_text: The issuance of a license to an applicant who is a nonresident of this State shall be
+    deemed to be his irrevocable consent that service of process upon him as a licensee in any
+    action or proceeding may be made upon him by service upon the secretary of the commission or the
+    person in charge of the office of the commission.
+  secondary: []
+terms:
+  - nonresident
+  - service of process
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -14,7 +14,7 @@ import { writeYaml, listFiles, readYaml } from "./fsx.js";
 import { loadStatutes, today } from "./statutes.js";
 import { resolveRefs, locateQuote, excerptAround, refMatchesDoc } from "./cite.js";
 import { planBank, cognitiveMixFor, existingItems } from "./plan.js";
-import { DRAFT_SYSTEM, draftUserPrompt, VERIFY_SYSTEM, verifyUserPrompt } from "./prompts.js";
+import { DRAFT_SYSTEM, draftUserPrompt, VERIFY_SYSTEM, verifyUserPrompt, pickDiversityHint } from "./prompts.js";
 import { isRepairable, repairItem } from "./repair.js";
 import { DraftBatchSchema, bankMeta, nodeStatuteRefs, nextIdFactory, draftToItem } from "./draft.js";
 import { Verdict, localCheck, reject, jurOf } from "./verify.js";
@@ -93,8 +93,9 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
   const existing = existingItems(bank);
   const nextId = nextIdFactory(bank);
 
-  type Job = { node: string; label: string; examItems: number; count: number; chunk: string; chunkIdx: number; chunks: number; cog: Record<"knowledge" | "application" | "analysis", number> };
+  type Job = { node: string; label: string; examItems: number; count: number; chunk: string; chunkIdx: number; chunks: number; cog: Record<"knowledge" | "application" | "analysis", number>; diversityHint: string };
   const jobs: Job[] = [];
+  let diversitySeed = Date.now();
   for (const g of gaps) {
     const refs = nodeStatuteRefs(bank, g.node);
     if (!refs.length) { log(`skip ${g.node}: no statute_refs`); continue; }
@@ -105,12 +106,13 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
     if (stripped.removed.length) log(`  ${g.node}: excluded ${stripped.removed.length} non-examinable section(s): ${stripped.removed.slice(0, 4).join(" | ")}${stripped.removed.length > 4 ? " …" : ""}`);
     if (!stripped.text.trim()) { log(`skip ${g.node}: nothing examinable left after exclusions`); continue; }
     const chunks = chunkAuthority(stripped.text);
+    // Shuffle chunks so each run explores different parts of the statute
+    for (let i = chunks.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [chunks[i], chunks[j]] = [chunks[j]!, chunks[i]!]; }
     const want = Math.min(g.gap, opts.limit ?? g.gap);
-    // spread the node's items across its chunks, at most itemsPerChunk per request; rotate chunks if more needed
     let remaining = want, ci = 0, round = 0;
     while (remaining > 0 && round < 50) {
       const count = Math.min(DIRECT.itemsPerChunk, remaining);
-      jobs.push({ node: g.node, label: g.label, examItems: g.exam_items, count, chunk: chunks[ci % chunks.length]!, chunkIdx: ci % chunks.length, chunks: chunks.length, cog: cognitiveMixFor(count, g.cognitive_split) });
+      jobs.push({ node: g.node, label: g.label, examItems: g.exam_items, count, chunk: chunks[ci % chunks.length]!, chunkIdx: ci % chunks.length, chunks: chunks.length, cog: cognitiveMixFor(count, g.cognitive_split), diversityHint: pickDiversityHint(diversitySeed++) });
       remaining -= count; ci++; if (ci % chunks.length === 0) round++;
     }
   }
@@ -134,12 +136,13 @@ export async function draftDirect(bank: string, opts: { nodes?: string[]; limit?
       bank, jurisdictionName: meta.name, vendor: meta.vendor, target: { node: j.node, label: j.label, exam_items: j.examItems, target_bank_items: 0 }, count: j.count,
       cognitiveMix: j.cog, statuteCitationRoot: meta.statuteRoot, statuteText: j.chunk, existingStems: (stemsByNode.get(j.node) ?? []).slice(-40),
       coveredAnswers: [...new Set(answersByDomain.get(j.node.split(".")[0]!) ?? [])].slice(-80),
+      diversityHint: j.diversityHint,
     });
     const note = j.chunks > 1 ? `\n\nNOTE: this is part ${j.chunkIdx + 1} of ${j.chunks} of the node's authority text. Write items answerable from THIS part only.` : "";
     const { data, result } = await chatJson(router, DraftBatchSchema, [
       { role: "system", content: DRAFT_SYSTEM },
       { role: "user", content: `${statuteBlock}\n\n${taskBlock}${note}` },
-    ], { maxTokens: 9000, temperature: 0.5 });
+    ], { maxTokens: 9000, temperature: 0.7 });
     byProvider[`${result.provider}/${result.model}`] = (byProvider[`${result.provider}/${result.model}`] ?? 0) + 1;
     for (const d of data.items) {
       const id = nextId(j.node);

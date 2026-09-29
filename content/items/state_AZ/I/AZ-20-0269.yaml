@@ -1,0 +1,45 @@
+id: AZ-20-0269
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A county already has one member serving as a residential brokerage representative on the
+  Arizona real estate advisory board. How many additional residential brokerage members may be
+  appointed from that same county?
+options:
+  - The number of additional residential brokerage members that may be appointed from that county is
+    zero
+  - The number of additional residential brokerage members that may be appointed from that county is
+    one
+  - The number of additional residential brokerage members that may be appointed from that county is
+    two
+  - The number of additional residential brokerage members that may be appointed from that county is
+    three
+key: A
+explanation: The rule limits residential brokerage seats to no more than one member from any one
+  county. Since a county already has one such member, no additional residential brokerage member may
+  be appointed from that county.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 § 32-2104
+  url: null
+  quoted_text: Two members, each of whom is a real estate broker or real estate salesperson with at
+    least five years of residential brokerage experience in this state. Not more than one member
+    shall be appointed from any one county.
+  secondary: []
+terms:
+  - member
+  - county
+  - residential
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

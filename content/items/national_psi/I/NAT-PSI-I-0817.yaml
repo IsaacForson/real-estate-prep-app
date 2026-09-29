@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0817
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A restaurant tenant installs a walk-in cooler bolted to the floor of the leased premises,
+  plumbed and wired, and custom-fitted to the space. The lease agreement does not mention fixtures.
+  When the lease ends, what is the tenant's right regarding the walk-in cooler?
+options:
+  - The tenant may not remove the cooler because it is a fixture
+  - The tenant may remove the cooler but is not responsible for repairs
+  - The tenant must leave the cooler as it becomes part of the real estate
+  - The tenant may remove the cooler and must repair any damage
+key: D
+explanation: Under §1.4, a trade fixture is an item a commercial tenant attaches to leased premises
+  to carry on a business and remains the tenant's personal property. The tenant may remove them
+  before the lease ends and must repair any damage caused by removal. Because the cooler was
+  installed for the restaurant's business, it is a trade fixture, so the tenant may remove it and
+  must repair the damage. The distractor that says the tenant must leave it assumes the item is a
+  regular fixture, but trade fixtures are an exception to that rule.
+citation:
+  source: REP Ref. Property & Land Use § 1.4
+  url: null
+  quoted_text: Although attached, trade fixtures remain the tenant's personal property. The tenant may
+    remove them before the lease ends and must repair the damage removal causes.
+  secondary: []
+terms:
+  - trade fixture
+  - personal property
+  - repair
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

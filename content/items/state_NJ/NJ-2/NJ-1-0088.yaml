@@ -1,0 +1,42 @@
+id: NJ-1-0088
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson applicant completes a 75‑hour pre‑licensure course that includes 2 hours of
+  ethics training and 1 hour of fair housing instruction. Under N.J. Stat. Ann. § 45:15-10.1(a),
+  does this course satisfy the educational requirement for the salesperson examination?
+options:
+  - Yes, because the fair‑hour requirement is satisfied
+  - No, because the ethics training is insufficient
+  - Yes, because the total hours meet the 75‑hour minimum
+  - No, because the course lacks any instruction on real estate law
+key: B
+explanation: The regulation requires at least three hours of ethics training; the course provides
+  only two hours, so the ethics requirement is not met. While the course meets the total hour
+  requirement and includes the required fair‑housing hour, the insufficient ethics training means
+  the course does not satisfy the educational requirement.
+citation:
+  source: N.J. Stat. Ann. § 45:15-10.1(a)
+  url: null
+  quoted_text: At least three hours of that course of study shall be on the subject of ethics and
+    ethical conduct in the profession of a real estate salesperson, and at least one hour of that
+    course of study shall be on the subject of fair housing and housing discrimination.
+  secondary: []
+terms:
+  - ethics
+  - fair housing
+  - pre‑licensure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

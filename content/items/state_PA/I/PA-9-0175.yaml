@@ -1,0 +1,47 @@
+id: PA-9-0175
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The State Real Estate Commission plans to hold a required public meeting in Philadelphia on
+  May 10, 2025. By what date must the Commission publish notice of this meeting in a newspaper of
+  general circulation to comply with the law?
+options:
+  - May 5, 2025
+  - April 30, 2025
+  - April 25, 2025
+  - April 20, 2025
+key: C
+explanation: The statute requires that the Commission give public notice of each required public
+  meeting at least 15 days prior in a newspaper of general circulation in the area where the meeting
+  is held. Counting back 15 days from May 10 yields April 25, so notice must be published by that
+  date. The April 20 distractor is too early, while April 30 is after the required deadline.
+citation:
+  source: 63 P.S. §§ 455.101–455.902 (Real Estate Licensing and Registration Act) — Real Estate
+    Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9), official Pennsylvania
+    General Assembly PDF read via Internet Archive capture of 2025-01-14 because
+    legis.state.pa.us/palegis.us refuse connections from this network; section headings annotated
+    with 63 P.S. numbers 63 P.S. § 455.202(e)
+  url: null
+  quoted_text: At least 15 days prior to the holding of any public meeting pursuant to this
+    subsection, the commission shall give public notice of the meeting in a newspaper of general
+    circulation in each of the areas where the public meeting is to be held.
+  secondary: []
+terms:
+  - public meeting
+  - notice
+  - newspaper
+  - fifteen days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

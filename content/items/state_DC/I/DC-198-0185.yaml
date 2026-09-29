@@ -1,0 +1,34 @@
+id: DC-198-0185
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: How many property managers must be licensed in the District to serve on the Board of Real Estate?
+options:
+  - The Board of Real Estate includes three property managers.
+  - The Board of Real Estate includes four property managers.
+  - The Board of Real Estate includes one property manager.
+  - The Board of Real Estate includes two property managers.
+key: D
+explanation: The statute explicitly states that the Board of Real Estate includes two property
+  managers licensed in the District. Therefore, the correct answer is two. The distractor suggesting
+  one property manager is incorrect because the law specifies two, not one.
+citation:
+  source: D.C. Code § 47-2853.06(h)
+  url: null
+  quoted_text: 2 shall be property managers licensed in the District
+  secondary: []
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

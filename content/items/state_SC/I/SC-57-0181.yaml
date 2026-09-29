@@ -1,0 +1,49 @@
+id: SC-57-0181
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to S.C. Code Ann. § 40-57-30(7), what is a broker-in-charge?
+options:
+  - The broker-in-charge is the individual who prepares the brokerage firm's annual financial
+    statements and ensures regulatory compliance.
+  - The broker-in-charge is the sole broker designated by the commission to have responsibility over
+    the actions of all supervised licensees.
+  - The broker-in-charge is the licensee who handles all trust account deposits, withdrawals, and
+    reconciliations for the firm.
+  - The broker-in-charge is any broker who oversees the sales associates and manages the office
+    operations in a brokerage firm.
+key: B
+explanation: S.C. Code Ann. § 40-57-30(7) defines a broker-in-charge as the sole broker designated
+  by the commission to have responsibility over the actions of all supervised licensees. The option
+  stating that the broker-in-charge prepares the firm's annual financial statements and ensures
+  regulatory compliance is incorrect because it adds duties not required by the definition and omits
+  the designation by the commission and responsibility over all supervised licensees. The option
+  stating that the broker-in-charge handles all trust account deposits, withdrawals, and
+  reconciliations is incorrect because it limits the role to trust account activities, which is not
+  part of the statutory definition. The option stating that the broker-in-charge is any broker who
+  oversees sales associates and manages office operations is incorrect because it fails to require
+  that the broker be designated by the commission and to have responsibility over all supervised
+  licensees, instead describing a general supervisory role.
+citation:
+  source: S.C. Code Ann. § 40-57-30(7)
+  url: null
+  quoted_text: '"Broker-in-charge" means the sole broker designated by the commission to have
+    responsibility over the actions of all supervised licensees.'
+  secondary: []
+terms:
+  - broker-in-charge
+  - supervised licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

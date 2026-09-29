@@ -1,0 +1,41 @@
+id: CA-4-0200
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A homeowner fails to pay for roofing work; the roofer records a lien for the unpaid amount.
+  What type of lien is this under Cal. Civ. Code § 2875?
+options:
+  - A general lien covering all debts
+  - An equitable lien based on fairness
+  - A special lien for a specific act
+  - A possessory lien requiring possession
+key: C
+explanation: Section 2875 defines a special lien as one enforceable only as security for the
+  performance of a particular act or obligation and incidental obligations. A lien for unpaid
+  roofing work secures only that specific act, making it a special lien. A general lien, by
+  contrast, secures all obligations of the owner, not just a specific act.
+citation:
+  source: Cal. Civ. Code § 2875
+  url: null
+  quoted_text: A special lien is one which the holder thereof can enforce only as security for the
+    performance of a particular act or obligation, and of such obligations as may be incidental
+    thereto.
+  secondary: []
+terms:
+  - lien
+  - special
+  - general
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

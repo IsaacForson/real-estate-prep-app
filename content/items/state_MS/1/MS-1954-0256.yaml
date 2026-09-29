@@ -1,0 +1,44 @@
+id: MS-1954-0256
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a Formal Complaint and Notice of Hearing on June 1. The licensee signs an
+  agreed order with commission staff on June 15, before the hearing date. Under Rule 5.5 G, is this
+  agreed order valid?
+options:
+  - The agreed order is invalid because the licensee must sign it without commission staff
+    involvement
+  - The agreed order is valid because it was signed after the hearing but before commission approval
+  - The agreed order is valid because it was signed before the hearing and requires commission
+    approval
+  - The agreed order is invalid because it must be signed after the hearing concludes
+key: C
+explanation: Rule 5.5 G states a Formal Complaint may be resolved by agreement at any time prior to
+  an Administrative Hearing by an Agreed Order signed by the Respondent and subject to approval by
+  the full Commission. Signing on June 15, before the hearing, satisfies the timing requirement, and
+  commission approval is still needed. The distractor suggesting validity after the hearing
+  contradicts the ‘prior to a hearing’ condition, while the claim that commission staff involvement
+  invalidates the order misstates the rule.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 § 5.5 G
+  url: null
+  quoted_text: A Formal Complaint may be resolved by agreement at any time prior to an Administrative
+    Hearing by Agreed Order signed by Respondent and subject to approval by the full Commission.
+  secondary: []
+terms:
+  - agreed order
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,40 @@
+id: CA-4-0184
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A subdivider files an amended public report to offer 8 subdivision interests described in
+  Section 11004.5, for which no fees have previously been paid. What is the total filing fee
+  required under Cal. Code Regs. tit. 10, § 2790.1.5(a)(10)?
+options:
+  - $500
+  - $580
+  - $660
+  - $740
+key: B
+explanation: The fee is $500 plus $10 for each interest without a prior fee, so $500 + (8 × $10) =
+  $580. Omitting the per‑interest charge leads to the distractor $500.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner (Cal.
+    Code Regs. tit. 10, ch. 6) - DRE compilation § 2790.1.5(a)(10)
+  url: null
+  quoted_text: "(10) An amended public report for subdivision interests described in Section 11004.5:
+    Five hundred dollars ($500) plus ten dollars ($10) for each subdivision interest to be offered
+    under the amended public report for which a fee has not previously been paid."
+  secondary: []
+terms:
+  - amended public report
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

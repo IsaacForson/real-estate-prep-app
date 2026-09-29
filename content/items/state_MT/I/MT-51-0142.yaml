@@ -1,0 +1,47 @@
+id: MT-51-0142
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Board of Realty Regulation has maintained a group professional liability insurance policy
+  for six consecutive years. According to Montana law, what is the maximum number of additional
+  years the board may continue this policy without being required to place it out for bid?
+options:
+  - Zero additional years
+  - One additional year
+  - Two additional years
+  - Three additional years
+key: B
+explanation: The law sets a maximum of seven consecutive policy terms for the group contract. After
+  six years, one additional year may be used before the board must put the contract out for bid. The
+  option suggesting zero additional years incorrectly assumes a yearly bidding requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-325(4)(a)
+  url: null
+  quoted_text: The maximum contract period between the insurer and the board is seven consecutive policy terms
+  secondary: []
+math:
+  worked_solution: |-
+    Maximum allowed consecutive policy terms = 7
+    Years already used = 6
+    Additional years allowed = 7 - 6 = 1
+  formulas:
+    - Additional years = Maximum term - Years already used
+  onscreen_calculator_only: false
+terms:
+  - year
+  - term
+  - policy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

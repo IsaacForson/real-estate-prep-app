@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0800
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2017 mortgage, a 2019 mechanic's lien, and unpaid 2021 property taxes.
+  Foreclosure occurs in 2022. Assuming the jurisdiction follows the general rule and its statutory
+  exception, which lien is paid first from the foreclosure proceeds?
+options:
+  - B) The 2019 mechanic's lien
+  - D) The lien recorded most recently
+  - C) The 2021 property tax lien
+  - A) The 2017 mortgage
+key: C
+explanation: Property tax and special assessment liens rank ahead of all other liens regardless of
+  date by statutory exception. Therefore the 2021 property tax lien is paid first, before the 2017
+  mortgage and 2019 mechanic's lien. The 2017 mortgage incorrectly applies the first‑in‑time rule
+  without the exception.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - property tax lien
+  - priority
+  - statutory exception
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

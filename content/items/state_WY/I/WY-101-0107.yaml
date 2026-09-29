@@ -1,0 +1,39 @@
+id: WY-101-0107
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After an investigation finds a licensee guilty of misleading advertising, which disciplinary
+  action may the Wyoming Real Estate Commission take?
+options:
+  - Impose a criminal fine immediately
+  - Censure the licensee formally
+  - Award damages to the public promptly
+  - Revoke the license automatically
+key: B
+explanation: The statute expressly authorizes the commission to censure licensees for violations.
+  Imposing criminal fines or automatic revocation requires additional proceedings, and awarding
+  damages is not a commission power.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-105(a)
+  url: null
+  quoted_text: The commission has the power to regulate the issuance of licenses, to revoke or suspend
+    licenses issued under this act, to censure licensees
+  secondary: []
+terms:
+  - censure
+  - licensee
+  - advertising
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

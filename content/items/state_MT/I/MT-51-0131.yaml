@@ -1,0 +1,42 @@
+id: MT-51-0131
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Board of Realty Regulation obtains electronic records of a licensee's continuing education
+  completion from an approved provider. According to Montana law, how may the board use this
+  electronic information?
+options:
+  - To evaluate the licensee's adherence to advertising standards and disclosure requirements
+  - To determine whether the licensee has satisfied the board's education requirements
+  - To verify the licensee's errors and omissions insurance policy is active
+  - To calculate the licensee's renewal fee based on the board's published schedule
+key: B
+explanation: Electronic education information may be used solely to determine compliance with the
+  board’s education requirements (Mont. Code Ann. § 37-51-204(4)). Using it to evaluate advertising
+  compliance exceeds the statutory limitation. The other options describe purposes not authorized by
+  this provision.
+citation:
+  source: Mont. Code Ann. § 37-51-204(4)
+  url: null
+  quoted_text: Education information obtained electronically by the board or stored in the board's
+    databases may be used to determine compliance with education requirements established by the
+    board.
+  secondary: []
+terms:
+  - electronic information
+  - education requirements
+  - board
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

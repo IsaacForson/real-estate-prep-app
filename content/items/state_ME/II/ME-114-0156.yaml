@@ -1,0 +1,42 @@
+id: ME-114-0156
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant submits an original agency license application signed by the authorized agency
+  official but omits the required fee. Under 32 M.R.S. § 13172, what is the consequence of this
+  omission?
+options:
+  - The applicant will be automatically granted a provisional license pending fee payment.
+  - The application is considered incomplete and may be denied by the director.
+  - The application will be processed normally, and the fee can be paid later.
+  - The director may waive the fee requirement if the applicant shows financial hardship.
+key: B
+explanation: The statute mandates that each original agency license application must be accompanied
+  by the fee set under section 13007; omitting the fee renders the application incomplete and
+  subject to denial. The statute does not provide for provisional licenses, fee waivers, or deferred
+  payment in this context.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13172"
+  url: null
+  quoted_text: Each applicant for an original agency license shall submit an application, signed by
+    the authorized agency official, together with the fee as set under section 13007.
+  secondary: []
+terms:
+  - application
+  - fee
+  - agency license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

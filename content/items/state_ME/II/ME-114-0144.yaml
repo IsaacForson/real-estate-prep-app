@@ -1,0 +1,44 @@
+id: ME-114-0144
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A transaction broker receives an email from a contractor stating the roof leaks. The broker
+  does not inform the buyer before closing. Under 32 M.R.S. § 13283, the broker's failure to
+  disclose is:"
+options:
+  - Under the statute, the broker's action is permissible because the broker did not knowingly lie
+  - Under the statute, the broker's action is allowed as the broker only must account for funds
+  - Under the statute, the broker's action is permissible because the broker need not discover
+    latent defects
+  - Under the statute, the broker's action is a violation of the duty to disclose material defects
+key: D
+explanation: Subsection 2(B) requires a transaction broker to disclose material defects of which
+  they have actual notice or knowledge. The contractor's email gave actual notice, so silence
+  violates that duty. The claim that brokers need not discover latent defects does not relieve the
+  duty to disclose known defects.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13283.2(B)"
+  url: null
+  quoted_text: Disclose in a timely manner to a buyer to a transaction all material defects pertaining
+    to the physical condition of the property of which the transaction broker has actual notice or
+    knowledge;
+  secondary: []
+terms:
+  - transaction broker
+  - material defect
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

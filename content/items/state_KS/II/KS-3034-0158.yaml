@@ -1,0 +1,51 @@
+id: KS-3034-0158
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person offers to list a property for sale before obtaining a Kansas real estate license,
+  later becomes licensed and completes the listing. Under the Kansas Real Estate Brokers' and
+  Salespersons' License Act, can this person recover compensation for the listing service?
+options:
+  - The person may recover compensation because they were licensed when the service was performed.
+  - The person may not recover compensation because they were not licensed at the time of offering
+    to perform the service.
+  - The person may recover compensation because they obtained a license before completing the
+    service.
+  - The person may not recover compensation because the service was not performed under a broker's
+    supervision.
+key: B
+explanation: Under K.S.A. 58-3038(a), a person may recover compensation for licensed services only
+  if they were duly licensed at the time of offering to perform the service or procuring a promise
+  to pay. Because the individual offered to list the property before obtaining a license, they were
+  not licensed at that time and therefore cannot recover compensation. The claim that licensure at
+  the time of performance suffices (the person may recover compensation because they were licensed
+  when the service was performed) is incorrect; the statute requires licensure at the time of
+  offering. The claim that obtaining a license before completing the service allows recovery (the
+  person may recover compensation because they obtained a license before completing the service)
+  also fails for the same reason. The claim that lack of broker supervision bars recovery (the
+  person may not recover compensation because the service was not performed under a broker's
+  supervision) misstates the basis of the prohibition, which is the lack of licensure at the time of
+  offering, not supervision.
+citation:
+  source: Kan. Stat. Ann. § 58-3038(a)
+  url: null
+  quoted_text: unless such person was duly licensed under this act at the time of offering to perform
+    any such act or service
+  secondary: []
+terms:
+  - licensure
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

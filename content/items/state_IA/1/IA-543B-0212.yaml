@@ -1,0 +1,46 @@
+id: IA-543B-0212
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker allowed their license to expire and did not file a renewal application by the January
+  30 deadline. Eighteen months later, they submit a reinstatement application. Under Iowa Admin.
+  Code r. 481-2003, what additional reinstatement fee must accompany the application?
+options:
+  - $250
+  - $350
+  - $450
+  - $550
+key: C
+explanation: The rule imposes an additional reinstatement fee of $25 for each partial or full month
+  following expiration (Iowa Admin. Code r. 481-2003.6). Eighteen months × $25 = $450, making $450
+  the correct fee. The distractor of $350 results from multiplying 14 months by $25, which
+  undercounts the elapsed period.
+citation:
+  source: Iowa Admin. Code r. 481-2003.6
+  url: null
+  quoted_text: accompanied by the regular renewal fee and an additional reinstatement fee of $25 for
+    each partial or full month following expiration.
+  secondary: []
+math:
+  worked_solution: 18 months × $25/month = $450
+  formulas:
+    - fee = months × $25
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - fee
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

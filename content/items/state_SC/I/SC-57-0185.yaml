@@ -1,0 +1,47 @@
+id: SC-57-0185
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Jordan, who holds no real estate license, agrees to manage a rental property for a landlord
+  and collects a monthly fee for this service. Under S.C. Code Ann. § 40-57-20, Jordan's conduct
+  is:"
+options:
+  - Jordan's conduct is lawful because he only managed a rental property and did not engage in
+    brokerage activities.
+  - Jordan's conduct is lawful because he did not advertise or hold himself out as a real estate
+    professional.
+  - Jordan's conduct is unlawful because he acted as a property manager without an active, valid
+    license.
+  - Jordan's conduct is unlawful only if he also advertised the property management services to the
+    public.
+key: C
+explanation: Section 40-57-20 of the South Carolina Code makes it unlawful to act as a real estate
+  property manager without an active, valid license. Jordan's actions meet this definition, making
+  his conduct unlawful. The claim that his conduct is lawful because he did not advertise or hold
+  himself out as a real estate professional is incorrect because the statute prohibits acting as a
+  property manager regardless of whether advertising occurs or whether the activity is considered
+  brokerage.
+citation:
+  source: S.C. Code Ann. § 40-57-20
+  url: null
+  quoted_text: It is unlawful for an individual to act as a real estate broker, real estate associate,
+    or real estate property manager or to advertise or provide services as such without an active,
+    valid license issued by the commission.
+  secondary: []
+terms:
+  - property manager
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

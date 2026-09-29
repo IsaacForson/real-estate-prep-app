@@ -1,0 +1,38 @@
+id: ID-20-0209
+jurisdiction: ID
+bank: state_ID
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation acts as a real estate broker without a license in Idaho and is convicted. Where
+  will any civil penalty assessed by the court under Idaho Code § 54-2065 be credited?
+options:
+  - To the state general fund account
+  - To the occupational licenses fund
+  - To the local county treasury fund
+  - To the real estate recovery fund
+key: B
+explanation: Section 54-2065 explicitly provides that all civil penalties shall be credited to the
+  occupational licenses fund. The state general fund account, local county treasury fund, and real
+  estate recovery fund are incorrect destinations.
+citation:
+  source: Idaho Code § 54-2065
+  url: null
+  quoted_text: All civil penalties shall be credited to the occupational licenses fund.
+  secondary: []
+terms:
+  - civil penalty
+  - occupational
+  - fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

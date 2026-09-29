@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0802
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a cooperative, the board may reject a prospective purchaser based on financial screening
+  because widespread default puts the whole building at risk. What action is the board permitted to
+  take regarding a sale?
+options:
+  - Must obtain approval from the corporation's mortgage lender before any sale
+  - May reject a purchaser based on financial screening
+  - Must accept any buyer who offers the asking price
+  - May only reject if the purchaser intends to sublet the unit
+key: B
+explanation: Because widespread default puts the whole building at risk, boards commonly screen
+  purchasers and may reject a sale; therefore the board may reject a purchaser based on financial
+  screening. The option stating that the board must accept any buyer who offers the asking price is
+  incorrect, as is the option requiring lender approval before any sale and the option limiting
+  rejection to sublet intentions.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 5.2
+  url: null
+  quoted_text: because widespread default puts the whole building at risk, boards commonly screen
+    purchasers and may reject a sale.
+  secondary: []
+terms:
+  - cooperative
+  - board
+  - screening
+  - sale
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

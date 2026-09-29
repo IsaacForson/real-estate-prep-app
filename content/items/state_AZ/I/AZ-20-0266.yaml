@@ -1,0 +1,43 @@
+id: AZ-20-0266
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice that their fingerprint clearance card has been suspended. The
+  department notifies them that they may avoid suspension of their real estate license if they
+  submit sufficient evidence to prove they applied for a good cause exception within how many
+  business days?
+options:
+  - Ten business days
+  - Seven business days
+  - Five business days
+  - Three business days
+key: C
+explanation: The statute specifies that a licensee must submit sufficient evidence of a good cause
+  exception within five business days after being notified of the suspension to avoid license
+  suspension. Therefore, five business days is correct. Three business days is too short and does
+  not match the statutory period.
+citation:
+  source: Ariz. Rev. Stat. § 32-2108.01(C)(2)
+  url: null
+  quoted_text: The licensee fails to submit sufficient evidence to prove the individual applied for a
+    good cause exception pursuant to section 41-619.55 within five business days after being
+    notified by the department.
+  secondary: []
+terms:
+  - fingerprint clearance
+  - good cause exception
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

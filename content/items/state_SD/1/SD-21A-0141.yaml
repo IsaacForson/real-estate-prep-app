@@ -1,0 +1,43 @@
+id: SD-21A-0141
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant completed the required prelicensing education on July 15, 2023. What is the
+  latest date they may submit an application for license by examination and still satisfy the
+  education requirement?
+options:
+  - August 15, 2025
+  - July 15, 2026
+  - July 15, 2025
+  - July 15, 2024
+key: C
+explanation: SD Admin. R. art. 20:69:03:02 requires proof of education to have been completed within
+  the two years before the date of application, so education finished on July 15, 2023 remains valid
+  for applications submitted through July 15, 2025. The July 15, 2026 option incorrectly allows
+  three years, while the August 15, 2025 option adds an extra month beyond the two‑year limit.
+citation:
+  source: "### S.D. Admin. R. art. 20:69 (Real Estate Commission) — South Dakota Administrative Rules
+    Article 20:69 — Real Estate Commission (SD REC law book, as of July 1, 2025) 20:69:03:02"
+  url: null
+  quoted_text: An applicant for a license by examination shall submit proof that the applicant
+    successfully completed the required education within the two years before the date of
+    application.
+  secondary: []
+terms:
+  - education
+  - application
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

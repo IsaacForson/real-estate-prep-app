@@ -1,0 +1,48 @@
+id: AZ-20-0251
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Arizona law, does a non‑licensee employee of a real estate broker who collects rent in
+  person from tenants and provides a receipt for each payment need a real estate license to perform
+  this activity?
+options:
+  - A license is required unless the employee also advertises the property for lease
+  - A license is required because collecting rent is a licensed activity under the statute
+  - A license is not required because of the clerical‑duty exception in § 32-2101(g)
+  - A license is not required only if the employee collects more than $500 per month
+key: C
+explanation: Subdivision (g) of § 32-2101 exempts from licensing a person who is not a licensee,
+  works for a broker or salesperson, collects in‑person rent and related fees on behalf of the
+  broker, and provides a receipt when rent is paid. The scenario matches all these conditions, so no
+  license is required. The distractor claiming a license is required because collecting rent is a
+  licensed activity ignores the specific clerical‑duty exception.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(g)
+  url: null
+  quoted_text: (g) Collects or offers, attempts or agrees to collect rent for the use of real estate,
+    businesses and business opportunities or timeshare interests. This subdivision does not apply to
+    a person who is not a licensee, who works for a real estate broker or a real estate salesperson,
+    who collects in-person rent and related fees on behalf of the real estate broker or real estate
+    salesperson for the use of real estate as part of the person's clerical duties and who provides
+    a receipt when rent is paid.
+  secondary: []
+terms:
+  - license
+  - rent
+  - clerical duties
+  - exception
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

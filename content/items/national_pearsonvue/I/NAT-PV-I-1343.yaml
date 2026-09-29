@@ -1,0 +1,45 @@
+id: NAT-PV-I-1343
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A metes-and-bounds description reads: 'Beginning at an iron pin on the north line of Oak
+  Road, thence North 20 degrees East 180 feet to a stone wall, thence South 70 degrees East 220 feet
+  to the stone wall.' The description also states the distance from the iron pin to the stone wall
+  as 250 feet. According to the rule of construction for metes-and-bounds descriptions, which
+  element controls the location of the stone wall corner?"
+options:
+  - The stone wall (an artificial monument)
+  - The iron pin (the point of beginning)
+  - The bearing North 20 degrees East as given
+  - The stated distance of 250 feet as written
+key: A
+explanation: Under the rule of construction for metes-and-bounds descriptions, artificial monuments
+  are ranked above courses and distances. Therefore the stone wall, as an artificial monument,
+  controls the corner location over the stated distance, which is considered less reliable in the
+  hierarchy.
+citation:
+  source: "### REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) ### § 3.2
+    Metes and bounds"
+  url: null
+  quoted_text: When elements of a description conflict, the usual rule of construction ranks natural
+    monuments first, then artificial monuments, then adjoining boundaries, then courses, then
+    distances, and stated area last
+  secondary: []
+terms:
+  - metes and bounds
+  - rule of construction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

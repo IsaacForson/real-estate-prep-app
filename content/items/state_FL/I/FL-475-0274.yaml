@@ -1,0 +1,42 @@
+id: FL-475-0274
+jurisdiction: FL
+bank: state_FL
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation acting as a broker has two broker members. One member lets their broker license
+  lapse, leaving no active broker license for that member. What happens to the corporation's
+  registration with the Florida Real Estate Commission?
+options:
+  - The corporation's registration is still fully active
+  - The corporation's registration is placed on probation review
+  - The corporation's registration is canceled automatically
+  - The corporation's registration is subject to a fine
+key: C
+explanation: The statute states that if the license or registration of at least one active broker
+  member is not in force, the registration of a corporation, limited liability company, limited
+  liability partnership, or partnership is canceled automatically during that period of time.
+  Therefore, the corporation's registration is canceled automatically. The other options describe
+  actions not prescribed by the statute for this situation.
+citation:
+  source: Fla. Stat. § 475.15
+  url: null
+  quoted_text: If the license or registration of at least one active broker member is not in force,
+    the registration of a corporation, limited liability company, limited liability partnership, or
+    partnership is canceled automatically during that period of time.
+  secondary: []
+terms:
+  - registration
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

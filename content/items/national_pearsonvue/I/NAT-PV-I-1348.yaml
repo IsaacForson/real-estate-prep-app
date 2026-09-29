@@ -1,0 +1,41 @@
+id: NAT-PV-I-1348
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the current national vertical datum used for elevations in the United States?
+options:
+  - The Mean Sea Level datum of 1929
+  - The North American Vertical Datum of 1988 (NAVD 88)
+  - The Local City Datum established by municipalities
+  - The International Terrestrial Reference Frame
+key: B
+explanation: The current national vertical datum for elevations in the United States is the North
+  American Vertical Datum of 1988 (NAVD 88), which superseded the 1929 Mean Sea Level datum. The
+  option stating the Mean Sea Level datum of 1929 refers to the outdated datum. The option
+  describing a local city datum is not a national standard. The option citing the International
+  Terrestrial Reference Frame is a global reference system, not the U.S. vertical datum.
+citation:
+  source: REP Ref. Property & Land Use § 3.5
+  url: null
+  quoted_text: Vertical measurement requires a reference plane called a datum. Elevations were
+    historically referred to mean sea level; the current national reference is the North American
+    Vertical Datum of 1988 (NAVD 88), which replaced the 1929 datum, and many cities keep a local
+    datum.
+  secondary: []
+terms:
+  - datum
+  - NAVD 88
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

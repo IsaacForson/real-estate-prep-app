@@ -1,0 +1,38 @@
+id: MN-82-0123
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An education provider proposes a combination Course III that includes Real Estate Appraisal,
+  Real Estate Finance, Real Estate Management, and Real Estate Investment. Under Minn. Stat. §
+  82.60, is this combination permissible?
+options:
+  - The combination is permissible because it includes no more than three subjects
+  - The combination is permissible because each subject receives at least ten hours
+  - The combination is not permissible because it includes four subjects, exceeding the limit of
+    three
+  - The combination is not permissible because the total hours would be less than thirty
+key: C
+explanation: The rule limits a combination Course III to no more than three of the preceding ten
+  subjects; proposing four subjects violates this limit, making the combination impermissible. The
+  distractor focusing on the ten‑hour minimum per subject ignores the subject‑count restriction.
+citation:
+  source: Minn. Stat. ch. 82 § 82.60
+  url: null
+  quoted_text: A combination course must consist of no more than three of the preceding ten subjects
+  secondary: []
+terms:
+  - combination course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

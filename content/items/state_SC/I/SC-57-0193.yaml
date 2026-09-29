@@ -1,0 +1,41 @@
+id: SC-57-0193
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A broker's license expired on June 30, 2023, and the broker did not renew it. If the broker
+  does not reinstate the license, on what date will the license be canceled according to S.C. Code
+  Ann. § 40-57-110(E)?
+options:
+  - June 30, 2024
+  - June 30, 2025
+  - June 30, 2026
+  - July 31, 2025
+key: B
+explanation: Under S.C. Code Ann. § 40-57-110(E), a license that has lapsed and is not reinstated by
+  the last day of the twenty-fourth month following expiration is canceled. Twenty-four months after
+  June 30, 2023 is June 30, 2025, so the license cancels on that date if not reinstated. The
+  distractor June 30, 2024 incorrectly assumes only twelve months elapse before cancellation.
+citation:
+  source: S.C. Code Ann. § 40-57-110(E)
+  url: null
+  quoted_text: (E) A license that has lapsed and is not reinstated by the last day of the
+    twenty-fourth month following expiration is canceled.
+  secondary: []
+terms:
+  - license
+  - lapse
+  - cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

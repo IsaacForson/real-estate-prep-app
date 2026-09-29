@@ -1,0 +1,38 @@
+id: FL-475-0319
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum annual registration fee that a broker must pay for each branch office in
+  Florida?
+options:
+  - $25.00
+  - $75.00
+  - $100.00
+  - $50.00
+key: D
+explanation: The statute sets the branch office fee at an amount not exceeding $50 per office.
+  Therefore, the maximum allowable fee is $50.00. The $25.00 option understates the statutory
+  ceiling, while $75.00 and $100.00 exceed the permitted maximum.
+citation:
+  source: Fla. Stat. ch. 475 § 475.24
+  url: null
+  quoted_text: an annual registration fee prescribed by the commission, in an amount not exceeding
+    $50, shall be paid for each such office.
+  secondary: []
+terms:
+  - branch office
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

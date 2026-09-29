@@ -1,0 +1,43 @@
+id: PA-9-0184
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A judgment becomes final on March 1, 2023. By what date must the aggrieved person file an
+  application for recovery from the Real Estate Recovery Fund?
+options:
+  - March 1, 2024
+  - February 28, 2024
+  - March 1, 2025
+  - September 1, 2023
+key: A
+explanation: The law requires the application to be filed no more than one year after the
+  termination of proceedings. Adding one year to March 1, 2023 gives March 1, 2024. The distractor
+  March 1, 2025 mistakenly adds two years.
+citation:
+  source: 63 P.S. § 455.803(b)(4)
+  url: null
+  quoted_text: That he is making said application no more than one year after the termination of the
+    proceedings, including reviews and appeals in connection with the judgment.
+  secondary: []
+math:
+  worked_solution: March 1, 2023 + 1 year = March 1, 2024
+  formulas:
+    - Deadline = Judgment Date + 1 year
+  onscreen_calculator_only: false
+terms:
+  - application
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

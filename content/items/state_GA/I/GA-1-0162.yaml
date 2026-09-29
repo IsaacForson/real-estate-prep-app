@@ -1,0 +1,45 @@
+id: GA-1-0162
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker manages rental properties for owners and holds tenants' security deposits in a
+  designated rental trust account. According to Georgia Real Estate Commission Rule 520-1-.08(4)(b),
+  what must be true about the balance in that trust account?
+options:
+  - The account balance must be zero regardless of the amount of security deposits held.
+  - The account balance must be less than the total of security deposits if rent is owed.
+  - The account balance must exceed the total of security deposits by at least ten percent.
+  - The account balance must equal the total of security deposits held for tenants.
+key: D
+explanation: The rule requires that security deposits kept in a designated rental trust or escrow
+  account be clearly identified and credited to the tenant, and that the account balance always
+  equal the total of those security deposits. Therefore, the balance cannot be zero when deposits
+  are held, cannot be less than the total deposits (even if rent is owed), and cannot exceed the
+  total deposits by any percentage. Only an account balance that matches the total of the security
+  deposits satisfies the rule.
+citation:
+  source: Ga. Comp. R. & Regs. § 520-1-.08(4)(b)
+  url: null
+  quoted_text: Security deposits, if kept in a designated rental trust or escrow account, must be
+    clearly identified and credited to the tenant and there must always be a balance in the account
+    equal to the total of said security deposits.
+  secondary: []
+terms:
+  - security deposit
+  - trust account
+  - balance
+  - tenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

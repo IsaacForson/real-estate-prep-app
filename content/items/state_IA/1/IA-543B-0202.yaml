@@ -1,0 +1,44 @@
+id: IA-543B-0202
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A corporation employs an unlicensed individual to show properties and collect rent. The
+  individual does not hold a real estate license. Under Iowa Code § 543B.2, is the corporation
+  eligible for a license?
+options:
+  - Yes, because showing property and collecting rent are not considered salesperson acts.
+  - No, because an employee who acts as a salesperson must hold a license.
+  - Yes, because the corporation's officers are licensed brokers.
+  - No, because the corporation must also have at least one broker officer.
+key: B
+explanation: The statute requires that every employee who acts as a salesperson for a corporation
+  hold a real estate broker or salesperson license. Showing property and collecting rent are
+  considered salesperson acts, so employing an unlicensed individual to perform those tasks
+  disqualifies the corporation from licensure. The statement that showing property and collecting
+  rent are not considered salesperson acts is incorrect because those activities constitute
+  salesperson acts under the statute.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.2
+  url: null
+  quoted_text: and unless every employee who acts as a salesperson for the partnership, association,
+    corporation, professional corporation, or professional limited liability company holds a license
+    as a real estate broker or salesperson.
+  secondary: []
+terms:
+  - employee
+  - salesperson
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

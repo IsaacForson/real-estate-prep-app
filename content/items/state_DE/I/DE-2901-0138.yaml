@@ -1,0 +1,40 @@
+id: DE-2901-0138
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant received a formal reprimand from another state’s real estate commission for
+  misleading advertising. Under Del. Code Ann. tit. 24, § 2907(a)(2), what action may the Delaware
+  Real Estate Commission take regarding this applicant’s administrative penalty?
+options:
+  - Approve licensure without review since the penalty is unrelated to Delaware.
+  - Automatically deny licensure because any administrative penalty disqualifies the applicant.
+  - Refer the matter to the Attorney General for criminal prosecution.
+  - After a hearing, determine whether the penalty is grounds to deny licensure.
+key: D
+explanation: The statute says the Commission, after a hearing, may determine whether such
+  administrative penalty is grounds to deny licensure; it does not automatically deny or approve.
+  Referral to the Attorney General applies only to intentional fraud findings.
+citation:
+  source: Del. Code Ann. tit. 24, § 2907(a)(2)
+  url: null
+  quoted_text: Notwithstanding the foregoing, the Commission, after a hearing, may determine whether
+    such administrative penalty is grounds to deny licensure.
+  secondary: []
+terms:
+  - administrative penalty
+  - hearing
+  - licensure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

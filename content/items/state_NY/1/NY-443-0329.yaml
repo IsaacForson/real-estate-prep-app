@@ -1,0 +1,44 @@
+id: NY-443-0329
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee forgets to submit proof of continuing education attendance before the license
+  expiration date. According to NY Real Property Law § 441(b), what is the effect on the license?
+options:
+  - The license expires and cannot be renewed temporarily
+  - The department may issue a temporary renewal license
+  - The license is automatically extended for 30 days
+  - The licensee must retake the state licensing examination
+key: A
+explanation: The law allows a temporary renewal license only when the failure to submit proof is not
+  due to the licensee's fault. Since forgetting is considered fault, the department may not issue a
+  temporary renewal and the license expires. The distractor suggesting a temporary renewal
+  incorrectly assumes the department can always issue one.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 441 §
+    441(b)
+  url: null
+  quoted_text: The department in its discretion may however issue a temporary renewal license for such
+    period of time it deems appropriate to permit the submission of the required proof of attendance
+    when the failure to submit such proof is not due to the fault of the licensee.
+  secondary: []
+terms:
+  - continuing education
+  - temporary renewal
+  - fault
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-28
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28
