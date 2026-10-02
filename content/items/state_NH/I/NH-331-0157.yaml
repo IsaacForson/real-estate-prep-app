@@ -1,0 +1,43 @@
+id: NH-331-0157
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A principal broker retains escrow account records for only two years after a transaction
+  closes, then discards them. Under RSA 331-A:26 XVIII, this action is:"
+options:
+  - The conduct is permitted because the transaction is closed
+  - The conduct is permitted if the broker maintains separate transaction files
+  - The conduct is prohibited because escrow and trust account records must be kept for three years
+  - The conduct is permitted if the records are stored electronically
+key: C
+explanation: Section XVIII requires keeping escrow and trust account records for a period of three
+  years, showing dates of deposit, withdrawal, and payee; discarding after two years violates this
+  requirement. The option citing closure of the transaction does not override the retention period.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 1 Section 331-A:26 XVIII
+  url: null
+  quoted_text: Failing to keep for a period of 3 years, records of escrow and trust accounts
+    pertaining to funds entrusted with the principal broker relating to a real estate transaction
+    showing date deposited, date of withdrawal, to whom paid, and such other pertinent information
+    as the commission may require.
+  secondary: []
+terms:
+  - escrow
+  - trust account
+  - records
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

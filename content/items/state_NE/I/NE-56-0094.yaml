@@ -1,0 +1,42 @@
+id: NE-56-0094
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson fails to pay the renewal fee by the November 30 deadline. What happens to the
+  license on December 31 of that renewal year under the Nebraska Real Estate License Act?
+options:
+  - Automatic cancellation of the license
+  - Placement on inactive status
+  - Imposition of a monthly late fee
+  - Permission to practice until June 30
+key: A
+explanation: Neb. Rev. Stat. § 81-885.14(3) states that failure to remit renewal fees when due
+  automatically cancels the license on December 31 of the renewal year. Placement on inactive status
+  or a late fee applies only if the licensee files a late renewal application before July 1, which
+  is not the scenario described.
+citation:
+  source: Neb. Rev. Stat. § 81-885.14(3)
+  url: null
+  quoted_text: Failure to remit renewal fees when due shall automatically cancel such license on
+    December 31 of the renewal year, but otherwise the license shall remain in full force and effect
+    continuously from the date of issuance unless suspended or revoked by the commission for just
+    cause.
+  secondary: []
+terms:
+  - renewal
+  - fee
+  - cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

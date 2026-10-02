@@ -1,0 +1,38 @@
+id: NAT-PV-I-0870
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What classification best describes a mortgage or deed of trust?
+options:
+  - specific, voluntary
+  - specific, involuntary
+  - general, voluntary
+  - general, involuntary
+key: A
+explanation: "Section 8.2 lists \"Mortgage and deed of trust: specific, voluntary,\" indicating that
+  both are classified as specific liens created by the owner's agreement. The other choices mix the
+  wrong specificity or voluntariness."
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: "Mortgage and deed of trust: specific, voluntary."
+  secondary: []
+terms:
+  - mortgage
+  - classification
+  - specific
+  - voluntary
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

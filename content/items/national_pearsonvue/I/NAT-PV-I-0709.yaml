@@ -1,0 +1,44 @@
+id: NAT-PV-I-0709
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homeowner fails to pay federal income tax, resulting in a lien that attaches to all of the
+  debtor's property. What type of lien is this?
+options:
+  - A general, involuntary lien arising by statute.
+  - A specific, voluntary lien arising by contract.
+  - A general, voluntary lien arising by agreement.
+  - A specific, involuntary lien arising by court action.
+key: A
+explanation: A federal income tax lien is a general lien because it attaches to all of the debtor's
+  property, and it is involuntary because it arises by statute without the owner's consent.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: "General versus specific: a general lien attaches to all of a debtor's property, real
+    and personal (judgment liens, income tax liens, estate and inheritance tax liens); a specific
+    lien attaches to one parcel (mortgage, deed of trust, property tax and special assessment liens,
+    mechanic's liens, association assessment liens). Voluntary versus involuntary: a voluntary lien
+    is created by the owner's agreement (mortgage, deed of trust); an involuntary lien arises
+    without consent by statute (property taxes, mechanic's liens, tax liens) or by court action
+    (judgments, attachments"
+  secondary: []
+terms:
+  - lien
+  - general
+  - involuntary
+  - statute
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

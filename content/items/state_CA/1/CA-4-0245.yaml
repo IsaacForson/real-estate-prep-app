@@ -1,0 +1,54 @@
+id: CA-4-0245
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A buyer has paid $60,000 toward the purchase of a subdivision interest. The subdivider
+  estimates $4,000 for credit report and appraisal services, which are enumerated in subdivision (b)
+  of Regulation 2791. Under Cal. Code Regs. tit. 10, § 2791.1(a), what amount of this purchase money
+  must be deposited and retained in an escrow depository or trust account?
+options:
+  - $54,000
+  - $52,000
+  - $60,000
+  - $56,000
+key: D
+explanation: The regulation states that the amount to be deposited is the entire purchase money less
+  disbursements for services enumerated in subdivision (b) of Regulation 2791. Subtracting the
+  $4,000 estimated disbursements from the $60,000 purchase money leaves $56,000 required to be held
+  in escrow. The distractor $60,000 incorrectly retains the full amount without subtracting the
+  allowable disbursements.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2791.1(a)
+  url: null
+  quoted_text: (a) The amount of the money paid or advanced by a prospective buyer or lessee toward
+    the purchase or lease of a subdivision interest (Purchase Money) that must be deposited and
+    retained in an escrow depository or trust account pursuant to Section 11013.2(a) or 11013.4(a)
+    of the Code shall ordinarily be the entire amount of the Purchase Money less disbursements made
+    to third parties for services enumerated in subdivision (b) of Regulation 2791.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Purchase money paid = $60,000.
+    Step 2: Disbursements for services enumerated in 2791(b) = $4,000.
+    Step 3: Deposit required = $60,000 - $4,000 = $56,000.
+  formulas:
+    - Deposit = Purchase Money – Disbursements
+  onscreen_calculator_only: false
+terms:
+  - purchase money
+  - escrow deposit
+  - disbursements
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

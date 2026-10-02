@@ -1,0 +1,46 @@
+id: NV-645-0069
+jurisdiction: NV
+bank: state_NV
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license applicant was convicted of embezzlement, paid the court‑ordered restitution, and
+  completed parole two years later. Under NRS 645.330, how long must the applicant wait before the
+  Real Estate Division may issue a license?
+options:
+  - 2 years
+  - 5 years
+  - 6 years
+  - 3 years
+key: B
+explanation: NRS 645.330(2)(b) states that a license shall not be issued until at least three years
+  after the later of paying any fine/restitution or the expiration of parole, probation, or
+  sentence. Restitution was paid at time zero; parole ended two years later, making parole
+  expiration the later event. Adding the three‑year waiting period yields a total of five years
+  before licensure is possible.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.330"
+  url: null
+  quoted_text: "Shall not issue a license to such a person until at least 3 years after: (1) The
+    person pays any fine or restitution ordered by the court; or (2) The expiration of the period of
+    the persons parole, probation or sentence, whichever is later."
+  secondary: []
+terms:
+  - felony
+  - restitution
+  - parole
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

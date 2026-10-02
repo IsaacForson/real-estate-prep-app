@@ -1,0 +1,39 @@
+id: NY-443-0120
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to the NY DOS salesperson course syllabus, which subject requires exactly 3 hours of
+  instruction?
+options:
+  - Human Rights and Fair Housing
+  - Land Use Regulations
+  - Real Estate Finance
+  - Mortgage Brokerage
+key: B
+explanation: The syllabus table lists Land Use Regulations with a requirement of 3 hours. Real
+  Estate Finance requires 5 hours, Human Rights and Fair Housing requires 6 hours, and Mortgage
+  Brokerage requires 1 hour, so only Land Use Regulations matches the 3‑hour requirement.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Land Use Regulations    3
+  secondary: []
+terms:
+  - land use
+  - regulation
+  - hour
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

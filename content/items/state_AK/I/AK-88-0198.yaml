@@ -1,0 +1,48 @@
+id: AK-88-0198
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee gains $4,200 from conducting unlicensed brokerage activities. Under AS
+  08.88.167(b), what is the maximum civil penalty the commission may levy for this offense?
+options:
+  - $14,200.00
+  - $5,000.00
+  - $4,200.00
+  - $9,200.00
+key: D
+explanation: The penalty may not exceed the greater of $5,000 or the amount of gain realized plus
+  $5,000. Adding the gain ($4,200) to $5,000 yields $9,200, which exceeds $5,000, so the maximum is
+  $9,200. The $5,000 option ignores the gain, and $14,200 mistakenly doubles the gain.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.167
+  url: null
+  quoted_text: may not exceed $5,000, or the amount of gain realized plus $5,000, whichever is
+    greater, for each offense.
+  secondary: []
+math:
+  worked_solution: |-
+    Gain = $4,200
+    Gain + $5,000 = $9,200
+    Compare $9,200 to $5,000; greater amount is $9,200
+  formulas:
+    - Penalty = max($5,000, gain + $5,000)
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - gain
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

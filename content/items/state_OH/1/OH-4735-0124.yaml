@@ -1,0 +1,43 @@
+id: OH-4735-0124
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker obtains a seller's signature on a listing agreement on Monday at 10:00 AM. When must
+  the broker furnish a copy of the listing to the seller to comply with Ohio Rev. Code ch. 4735?
+options:
+  - The broker must furnish the copy by the end of the business day on Monday.
+  - The broker must furnish the copy within 3 business days of obtaining the signature (i.e., by
+    Thursday).
+  - The broker must furnish the copy immediately after obtaining the signature (i.e., at 10:00 AM
+    Monday).
+  - The broker must furnish the copy within 24 hours of obtaining the signature (i.e., by 10:00 AM
+    Tuesday).
+key: C
+explanation: The statute requires immediate furnishing of the copy after the signature is obtained,
+  so the correct time is right at 10:00 AM Monday. The 24‑hour option is wrong because the rule does
+  not permit a waiting period; it demands immediate delivery.
+citation:
+  source: Ohio Rev. Code ch. 4735 § 4735.03(D)
+  url: null
+  quoted_text: shall furnish a copy of the listing or other agreement to the party immediately after
+    obtaining the party's signature.
+  secondary: []
+terms:
+  - listing
+  - signature
+  - copy
+  - immediately
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

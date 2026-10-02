@@ -1,0 +1,44 @@
+id: WY-101-0133
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which action is prohibited under Wyo. Stat. Ann. § 33-28-122(e)?
+options:
+  - Using trust account funds to pay the broker's personal expenses without client consent
+  - Depositing identified personal funds to maintain a minimum balance in the trust account
+  - Depositing trust funds in an interest-bearing account with written consent of all parties
+  - Withdrawing earnest money from the trust account after all interested parties agree in writing
+key: A
+explanation: Wyo. Stat. Ann. § 33-28-122(e) forbids a responsible broker from allowing trust funds
+  belonging to others to be deposited into the broker’s personal account or commingled with the
+  broker’s personal funds. Using trust account funds to pay the broker’s personal expenses without
+  client consent is exactly that commingling, so it is prohibited. Depositing identified personal
+  funds to maintain a minimum balance in the trust account is expressly permitted. Depositing trust
+  funds in an interest‑bearing account with the written consent of all parties is also permitted.
+  Withdrawing earnest money from the trust account after all interested parties agree in writing is
+  likewise allowed.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(e)
+  url: null
+  quoted_text: No responsible broker shall permit an advance payment of funds belonging to others to
+    be deposited in the responsible broker's personal account or be commingled with his personal
+    funds.
+  secondary: []
+terms:
+  - commingling
+  - trust account
+  - personal funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

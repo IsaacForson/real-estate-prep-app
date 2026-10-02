@@ -1,0 +1,49 @@
+id: CO-2-0167
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer deposits earnest money with a Colorado real estate partnership that is licensed as a
+  broker. The partnership’s designated broker fails to deposit the funds into an escrow account, and
+  the money is lost. Under Colorado law, who may be held liable for the loss?
+options:
+  - The partnership alone bears liability to the buyer
+  - The designated broker alone bears liability to the buyer
+  - Both partnership and designated broker bear liability
+  - Neither partnership nor designated broker bears liability
+key: C
+explanation: Under Colo. Rev. Stat. § 12-10-201(7), the designated broker is personally responsible
+  for handling earnest money deposits, and any person damaged by a breach of fiduciary duty may
+  claim against both the partnership and the designated broker personally. Therefore, both the
+  partnership and the designated broker may be held liable for the loss. The distractor that only
+  the partnership is liable ignores the statute’s explicit provision that the designated broker
+  bears personal responsibility for the handling of earnest money funds.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(7)
+  url: null
+  quoted_text: In the event of any breach of duty by the partnership, limited liability company, or
+    corporation as a fiduciary, any person aggrieved or damaged by the breach of fiduciary duty
+    shall have a claim for relief against the partnership, limited liability company, or
+    corporation, as well as against the designated broker, and may pursue the claim against the
+    partnership, limited liability company, or corporation and the designated broker personally.
+  secondary: []
+terms:
+  - earnest money
+  - designated broker
+  - partnership
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

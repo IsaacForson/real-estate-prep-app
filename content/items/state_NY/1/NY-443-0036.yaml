@@ -1,0 +1,52 @@
+id: NY-443-0036
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller of a two-family home in New York completes the Property Condition Disclosure
+  Statement and gives it to the buyer's agent after the buyer has already signed a binding contract
+  of sale. Under NY Real Property Law §462(1), is the seller's action compliant with the disclosure
+  requirement?
+options:
+  - Under NY Real Property Law §462(1), the seller's action is compliant because the disclosure
+    statement was delivered to the buyer's agent.
+  - Under NY Real Property Law §462(1), the seller's action is non‑compliant because the disclosure
+    statement must be delivered prior to the buyer signing a binding contract of sale.
+  - Under NY Real Property Law §462(1), the seller's action is compliant because the seller
+    completed the form based on actual knowledge.
+  - Under NY Real Property Law §462(1), the seller's action is non‑compliant because the seller
+    failed to attach a copy to the real estate purchase contract.
+key: B
+explanation: The law requires the disclosure statement to be delivered to the buyer or buyer’s agent
+  prior to the buyer signing a binding contract of sale. Delivering it after the contract is signed
+  violates this timing requirement, making the seller’s action non‑compliant. The distractor
+  claiming compliance because the statement was delivered to the agent ignores the mandatory
+  pre‑signing timing.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462
+  url: null
+  quoted_text: Every seller of residential real property pursuant to a real estate purchase contract
+    shall complete and sign a property condition disclosure statement as prescribed by subdivision
+    two of this section and cause it, or a copy thereof, to be delivered to a buyer or buyer’s agent
+    prior to the signing by the buyer of a binding contract of sale.
+  secondary: []
+terms:
+  - disclosure
+  - seller
+  - buyer
+  - contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

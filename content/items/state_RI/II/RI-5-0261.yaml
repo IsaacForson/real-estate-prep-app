@@ -1,0 +1,46 @@
+id: RI-5-0261
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An attorney licensed by the Rhode Island Supreme Court who holds a real estate license issued
+  under R.I. Gen. Laws § 5-20.5-4(d) is applying for license renewal. Is this attorney required to
+  complete continuing education?
+options:
+  - Yes, unless the attorney has held the real estate license for over ten consecutive years.
+  - No, because attorneys licensed by the Rhode Island Supreme Court under §5-20.5-4(d) are exempt
+    from continuing education.
+  - No, because only licensees originally issued before December 12, 1984 are exempt from continuing
+    education.
+  - Yes, because the attorney must complete the standard twenty‑four hour continuing education
+    requirement for renewal.
+key: B
+explanation: Under 230-RICR-30-20-2 § 2.30(D)(2), attorneys licensed by the Rhode Island Supreme
+  Court and granted a license pursuant to R.I. Gen. Laws § 5-20.5-4(d) are exempt from the
+  continuing education requirements. Therefore, the attorney described is not required to complete
+  continuing education for renewal. The option stating that attorneys licensed by the Rhode Island
+  Supreme Court under §5-20.5-4(d) are exempt from continuing education correctly reflects this
+  rule, while the options stating a requirement or different exemption conditions are inaccurate.
+citation:
+  source: 230-RICR-30-20-2 § 2.30(D)(2)
+  url: null
+  quoted_text: Effective January 1, 2022, attorneys licensed by and in good standing with the Rhode
+    Island Supreme Court and granted a license pursuant to R.I. Gen. Laws § 5-20.5-4(d) are not
+    subject to the continuing education requirements in § 2.30 of this Part.
+  secondary: []
+terms:
+  - attorney
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

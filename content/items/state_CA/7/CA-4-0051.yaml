@@ -1,0 +1,41 @@
+id: CA-4-0051
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A licensee orally agrees with a buyer to purchase a parcel of land, with closing in six
+  months. Under California Civil Code § 1624(a)(3), the agreement is:"
+options:
+  - The agreement is enforceable because the buyer has paid earnest money
+  - The agreement is unenforceable unless it is in writing signed by the party to be charged
+  - The agreement is enforceable because the licensee is a licensed agent
+  - The agreement is unenforceable only if the price exceeds $5,000
+key: B
+explanation: Section 1624(a)(3) states that an agreement for the sale of real property is invalid
+  unless it is in writing and subscribed by the party to be charged. An oral agreement fails this
+  requirement, making it unenforceable regardless of earnest money, agent licensure, or price.
+citation:
+  source: Cal. Civ. Code § 1624(a)(3)
+  url: null
+  quoted_text: An agreement for the leasing for a longer period than one year, or for the sale of real
+    property, or of an interest therein; such an agreement, if made by an agent of the party sought
+    to be charged, is invalid, unless the authority of the agent is in writing, subscribed by the
+    party sought to be charged.
+  secondary: []
+terms:
+  - statute of frauds
+  - real property
+  - agent authority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,50 @@
+id: ME-114-0096
+jurisdiction: ME
+bank: state_ME
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A student finishes a Maine-approved Sales Agent Course with a final grade of 78% and asks the
+  course provider for proof of completion. Which document must the course provider give the student?
+options:
+  - A course transcript signed by the course provider showing the final numerical grade
+  - A certificate of licensure eligibility issued directly by the Director
+  - A notarized attendance affidavit listing each class session attended
+  - A copy of the approved syllabus with the student's grades attached
+key: A
+explanation: The rules require the course provider to give a course transcript to all students who
+  demonstrate satisfactory completion, and a 78% grade exceeds the 75% threshold. The transcript
+  must include the course title, student's name, final numerical grade, beginning and completion
+  dates, and the provider's signature. The Director does not issue licensure eligibility
+  certificates to students; the transcript comes from the provider.
+citation:
+  source: 02-039 C.M.R. ch. 360, § 2
+  url: null
+  quoted_text: The course provider shall provide a course transcript to all students who demonstrate
+    satisfactory completion of the course. Such transcript shall, at a minimum, include the course
+    title, student’s name, final numerical grade, beginning and course completion date and be signed
+    by the course provider.
+  secondary: []
+math:
+  worked_solution: The student earned a final grade of 78%. The passing threshold for satisfactory
+    completion is 75%. Since 78% is greater than or equal to 75%, the student has satisfied the
+    completion requirement.
+  formulas:
+    - grade >= passing_threshold
+  onscreen_calculator_only: false
+terms:
+  - transcript
+  - satisfactory completion
+  - course provider
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

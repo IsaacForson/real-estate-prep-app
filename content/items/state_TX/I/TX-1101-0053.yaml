@@ -1,0 +1,53 @@
+id: TX-1101-0053
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer obtains a $200,000 judgment against a licensee for misrepresentations in a single
+  sale. After the judgment is satisfied only partially, the buyer seeks payment from the real estate
+  recovery trust account. What is the maximum amount payable from the trust account for this claim,
+  including attorney's fees and court costs?
+options:
+  - $200,000
+  - $250,000
+  - $125,000
+  - $150,000
+key: C
+explanation: Under Tex. Occ. Code § 1101.610(a), payments from the trust account for claims arising
+  out of a single transaction—including attorney's fees, interest, and court costs—may not exceed
+  $125,000. Because the judgment exceeds this per‑transaction cap, the most that can be paid from
+  the trust account for this claim is the statutory limit of $125,000.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.610
+  url: null
+  quoted_text: Payments from the trust account for claims, including attorney's fees, interest, and
+    court costs, arising out of a single transaction may not exceed a total of $125,000, regardless
+    of the number of claimants.
+  secondary: []
+math:
+  worked_solution: "Identify the statutory cap per transaction: $125,000 (Tex. Occ. Code §
+    1101.610(a)). Compare the judgment amount ($200,000) to the cap. Since the judgment exceeds the
+    cap, the maximum payable from the trust account equals the cap: $125,000."
+  formulas:
+    - Maximum payable = statutory cap per transaction
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - payment limit
+  - single transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

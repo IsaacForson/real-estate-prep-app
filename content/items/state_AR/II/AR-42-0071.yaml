@@ -1,0 +1,51 @@
+id: AR-42-0071
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Which of the following individuals is exempt from licensing requirements under Arkansas law?
+options:
+  - A person who lives on the apartment complex and shows units to prospective tenants as part of
+    their job as resident manager
+  - A person who receives a salary for preparing lease agreements for a principal broker but also
+    negotiates rent amounts with tenants
+  - A person who works hourly for a corporation to lease the corporation's owned properties and
+    receives no commission
+  - A person who acts as an attorney in fact under a power of attorney to consummate a sale but
+    expects a commission
+key: A
+explanation: Arkansas law exempts a resident manager who resides on the premises and performs
+  leasing activities as part of employment (Ark. Code Ann. § 17‑42‑104(a)(5)). Therefore the
+  individual who lives on the apartment complex and shows units to prospective tenants as a resident
+  manager is exempt. An attorney in fact who expects a commission is not exempt because the
+  exemption for an attorney in fact applies only when the person acts without compensation. An
+  hourly employee who leases corporation‑owned properties and receives no commission is not covered
+  by the employee exemption, which applies only when the employee does not receive any compensation
+  for leasing activities. A salaried employee who prepares lease agreements and also negotiates rent
+  amounts is not exempt, since negotiating lease terms for compensation is an act listed in
+  § 17‑42‑103(10) and disqualifies the salaried‑employee exemption under § 17‑42‑104(a)(6).
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-104(a)(5)
+  url: null
+  quoted_text: (5) A person acting as a resident manager when the resident manager resides on the
+    premises and is engaged in the leasing of real property in connection with his or her
+    employment;
+  secondary: []
+terms:
+  - resident manager
+  - lease
+  - commission
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

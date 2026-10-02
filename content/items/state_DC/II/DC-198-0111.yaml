@@ -1,0 +1,45 @@
+id: DC-198-0111
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson's license expires on August 31, 2025. According to DCMR Title 17,
+  Chapter 26, how long after expiration may the licensee renew the license by paying a late fee and
+  still be deemed to have possessed a valid license during the intervening period?
+options:
+  - Up to 30 days after expiration
+  - Up to 60 days after expiration
+  - Up to 90 days after expiration
+  - Up to 120 days after expiration
+key: B
+explanation: The rule permits a licensee to renew within sixty days after expiration upon paying the
+  required late fee, and upon renewal the license is deemed to have been valid during the period
+  between expiration and renewal. Therefore the option stating up to sixty days after expiration is
+  correct. The option stating up to thirty days after expiration is incorrect because the grace
+  period is sixty days, not thirty. The options stating up to ninety days and up to one hundred
+  twenty days after expiration exceed the allowed renewal period.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 § 2621.5
+  url: null
+  quoted_text: A holder of a license who fails to renew before the expiration date may renew the
+    license within sixty (60) days after expiration upon paying the required late fee. Upon renewal,
+    the holder shall be deemed to have possessed a valid license during the period between the
+    expiration of the license and its renewal.
+  secondary: []
+terms:
+  - renewal
+  - late fee
+  - grace period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

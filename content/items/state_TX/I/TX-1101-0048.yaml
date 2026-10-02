@@ -1,0 +1,52 @@
+id: TX-1101-0048
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer pays $1,200 to a licensee for a property management service. If the Texas Real
+  Estate Commission orders a refund as part of an informal settlement, what is the maximum amount
+  the commission may require the licensee to refund?
+options:
+  - The licensee must refund exactly $1,200.
+  - The licensee may be required to refund up to $1,200.
+  - The licensee may be required to refund up to $5,000.
+  - The licensee is not required to refund any amount.
+key: B
+explanation: Under §1101.659(b), a refund ordered by the commission may not exceed the amount the
+  consumer paid for the service. Thus, the maximum refund is the amount paid, here $1,200. The
+  $5,000 figure refers to the administrative penalty cap, not refund limits, so it is incorrect.
+citation:
+  source: "### Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.659"
+  url: null
+  quoted_text: The amount of a refund ordered as provided in an agreement resulting from an informal
+    settlement conference or an enforcement order may not exceed the amount the consumer paid to the
+    person for a service or accommodation regulated by this commission.
+  secondary: []
+math:
+  worked_solution: |-
+    Amount paid = $1,200.
+    Maximum refund allowed = Amount paid = $1,200.
+  formulas:
+    - Refund_max = Amount_paid
+  onscreen_calculator_only: false
+terms:
+  - refund
+  - commission
+  - consumer
+  - amount
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

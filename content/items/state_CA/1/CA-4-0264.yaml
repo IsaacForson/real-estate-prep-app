@@ -1,0 +1,40 @@
+id: CA-4-0264
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A proposed set of governing instruments includes a procedure for calculating regular
+  assessments but does not include a procedure for collecting them. Does it satisfy the requirement
+  under Cal. Code Regs. tit. 10, § 2792.8(4)?
+options:
+  - Yes, because calculating assessments alone satisfies the rule
+  - No, because both calculating and collecting are required
+  - Yes, because the requirement only mentions calculating assessments
+  - No, because the requirement applies only to special assessments
+key: B
+explanation: Subsection (4) mandates both calculating and collecting regular assessments; omitting
+  the collection procedure fails to meet the standard. The distractor that claims calculating alone
+  is sufficient misreads the conjunctive language of the rule.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2792.8(4)
+  url: null
+  quoted_text: (4) Procedures for calculating and collecting regular assessments from owners to defray
+    expenses attributable to the ownership, operation or furnishing of common interests or to the
+    enjoyment of mutual and reciprocal rights of use;
+  secondary: []
+terms:
+  - assessment
+  - procedure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

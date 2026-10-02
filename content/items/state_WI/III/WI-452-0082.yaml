@@ -1,0 +1,47 @@
+id: WI-452-0082
+jurisdiction: WI
+bank: state_WI
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Wisconsin licensee prepares a warranty deed to transfer a married couple's homestead to a
+  buyer. The deed is signed only by the husband; the wife does not sign. Under Wis. Stat. §
+  706.02(1)(f), what is the effect of the deed regarding the wife's homestead interest?
+options:
+  - The deed transfers the wife's interest because the husband signed for both spouses
+  - The deed is void entirely because both spouses must sign the deed to be valid
+  - The deed does not transfer the wife's interest; her interest remains unaffected
+  - The deed transfers the wife's interest only if the buyer records it within one year
+key: C
+explanation: Under Wis. Stat. § 706.02(1)(f), a conveyance that alienates a married person's
+  homestead interest must be signed by each spouse. Because the wife did not sign the deed, her
+  homestead interest is not transferred; it remains with her. The deed may still be effective as to
+  the husband's interest, but it does not affect the wife's share. Recording the deed does not cure
+  the missing signature.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.02(1)(f)
+  url: null
+  quoted_text: |-
+    Is signed, or joined in by separate conveyance, by or on be-
+    half of each spouse, if the conveyance alienates any interest of a
+    married person in a homestead
+  secondary: []
+terms:
+  - homestead
+  - conveyance
+  - spouse
+  - signature
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

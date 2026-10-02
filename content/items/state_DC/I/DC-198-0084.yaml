@@ -1,0 +1,43 @@
+id: DC-198-0084
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Board of Real Estate wishes to delegate its hearing authority to a panel consisting of
+  only two members due to scheduling conflicts. According to D.C. Code § 47-2853.22(i), is this
+  permissible?
+options:
+  - No, unless the board first holds a settlement conference
+  - Yes, if the two members are both licensed brokers
+  - No, because the panel must consist of three or more members
+  - Yes, because the board may delegate to any number of members
+key: C
+explanation: Subsection (i) of § 47-2853.22 requires a hearing panel to consist of three or more
+  board members, so a two‑member panel is not permissible. The statement that delegation is allowed
+  if the two members are both licensed brokers is therefore incorrect because the statute sets a
+  minimum of three members, not a licensing condition. The other choices are also incorrect for the
+  same reason.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.22(i)"
+  url: null
+  quoted_text: A board may delegate its authority under this subchapter to hold hearings and issue
+    final decisions to a panel of 3 or more members of the board.
+  secondary: []
+terms:
+  - board
+  - panel
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

@@ -1,0 +1,56 @@
+id: NAT-PSI-I-0812
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: At closing, a seller owes $90,000 on a mortgage and has a $2,500 recorded judgment lien. The
+  sale price is $200,000. What must the settlement agent do to ensure the buyer receives title free
+  of these liens?
+options:
+  - Obtain payoff statements, pay each lienholder from the proceeds, and record the satisfaction or
+    release of each lien
+  - Obtain payoff statements, pay only the mortgage holder, and record the satisfaction of the
+    mortgage
+  - Obtain payoff statements, pay the judgment lien holder first, and record the release of the
+    judgment lien
+  - Obtain payoff statements, pay the lienholders after recording the deed, and record the
+    satisfaction later
+key: A
+explanation: The seller must deliver title free of liens not assumed by the buyer. The settlement
+  agent must obtain payoff statements, pay each lienholder from the proceeds, and record the
+  satisfaction or release of each lien. Paying only one lien or delaying payment until after the
+  deed is recorded would leave a lien on the title.
+citation:
+  source: "REP Ref. Ownership, Title & Transfer — Reference note: estates, ownership forms, deeds,
+    title, recording, transfer (authored, status: draft — needs licensed review) § 3.5 Clearing
+    liens at closing"
+  url: null
+  quoted_text: A seller must ordinarily deliver title free of liens other than those the buyer agreed
+    to assume. The settlement agent obtains payoff statements, pays each lienholder from the
+    proceeds, and records the satisfaction (release) of mortgage or, for a deed of trust, a deed of
+    reconveyance; until the release is recorded the lien still appears in the record.
+  secondary: []
+math:
+  worked_solution: Total liens = $90,000 + $2,500 = $92,500. Sale price = $200,000. Amount remaining
+    after paying liens = $200,000 - $92,500 = $107,500.
+  formulas:
+    - Addition
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - closing
+  - lien
+  - settlement agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

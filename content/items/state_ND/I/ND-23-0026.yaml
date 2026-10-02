@@ -1,0 +1,40 @@
+id: ND-23-0026
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a complaint on Monday, April 1. They file their answer on Friday, April
+  26. Under N.D. Admin. Code § 70-02-01-16(2), is this answer timely?
+options:
+  - The answer is untimely because it was filed after 20 calendar days.
+  - The answer is untimely because it must be filed within 10 days.
+  - The answer is timely because weekends do not count toward the deadline.
+  - The answer is timely because it was filed within 20 business days.
+key: A
+explanation: The rule mandates that the answer be filed within twenty days of receipt of the
+  complaint. Filing on April 26 for an April 1 complaint exceeds twenty calendar days, making it
+  untimely. The distractor claiming timeliness because weekends do not count is wrong because the
+  rule counts calendar days, not business days.
+citation:
+  source: N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-16
+  url: null
+  quoted_text: The licensee against whom a complaint has been filed must, within twenty days from
+    receipt of complaint, file the licensee's answer on forms furnished by the commission.
+  secondary: []
+terms:
+  - answer
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

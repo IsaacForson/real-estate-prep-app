@@ -1,0 +1,50 @@
+id: WI-452-0038
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A lender records a signed certificate stating that a mortgage has been paid in full,
+  authenticated under s. 706.06. Under Wis. Stat. § 706.05(8), what is the effect of this recorded
+  certificate?
+options:
+  - The recorded certificate creates a new encumbrance on the property.
+  - The recorded certificate is sufficient to satisfy the mortgage of record.
+  - The recorded certificate must be accompanied by a release deed to be effective.
+  - The recorded certificate satisfies the mortgage when the borrower signs an acknowledgment.
+key: B
+explanation: The statute provides that a duly recorded certificate of payment or satisfaction,
+  properly authenticated, is sufficient to satisfy the mortgage or other interest of record. Thus
+  the recorded certificate satisfies the mortgage without needing a release deed or borrower
+  acknowledgment. The claim that a release deed is required is incorrect, as the statute does not
+  mandate a release deed.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.05(8)
+  url: null
+  quoted_text: |-
+    8) A duly recorded certificate signed by or on behalf of the
+    holder of record of any mortgage or other security interest in
+    lands, and authenticated as provided by s. 706.06 or ch. 140 iden-
+    tifying the mortgage or other interest and stating that the same
+    has been paid or satisfied in whole or in part, shall be sufficient to
+    satisfy such mortgage or other interest of record
+  secondary: []
+terms:
+  - certificate
+  - mortgage
+  - satisfaction
+  - record
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

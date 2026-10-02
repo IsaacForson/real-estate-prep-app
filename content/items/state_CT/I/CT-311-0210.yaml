@@ -1,0 +1,53 @@
+id: CT-311-0210
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut real estate licensee's two-year license period ended on April 30, 2025. The
+  licensee completed the required continuing education on June 10, 2025. What fee must the licensee
+  pay to the department for failing to satisfy the continuing education requirement?
+options:
+  - $625.00
+  - $000.00
+  - $315.00
+  - $125.00
+key: C
+explanation: The license period ended April 30, 2025 and continuing education was completed June 10,
+  2025, which is within two months after expiration. According to Conn. Gen. Stat. § 20-319(e)(1),
+  the fee is three hundred fifteen dollars. Therefore the correct amount is $315.00. The $625.00
+  distractor applies only if completion occurs more than two months but not later than four months
+  after expiration.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-319(e)(1)
+  url: null
+  quoted_text: Three hundred fifteen dollars if such licensee reports to the department, in a form and
+    manner prescribed by the department, that such real estate licensee failed to satisfy such
+    continuing education requirements during such license period but completed such continuing
+    education requirements not later than two months after such license period expired;
+  secondary: []
+math:
+  worked_solution: |-
+    Determine license period end date: April 30, 2025.
+    Determine completion date: June 10, 2025.
+    Calculate elapsed time: 1 month 10 days (~1.33 months).
+    Since elapsed ≤ 2 months, apply the $315 fee.
+  formulas:
+    - Fee = $315 if months ≤ 2 else $625 if 2 < months ≤ 4
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - fee
+  - license period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

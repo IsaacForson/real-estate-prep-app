@@ -1,0 +1,43 @@
+id: KS-3034-0065
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker licensed in Nebraska refers a Kansas client to a Kansas broker and expects a referral
+  fee for the transaction. Under K.S.A. 58-3038(c), is the referral fee permissible?
+options:
+  - No, referral fees are prohibited unless both brokers are Kansas-licensed.
+  - Yes, as long as the referring broker is properly licensed in another jurisdiction.
+  - Only if the referral fee is paid to the Kansas broker’s supervising broker.
+  - Only if the referral fee is disclosed in the closing statement.
+key: B
+explanation: K.S.A. 58-3038(c) provides that a person who is properly licensed as a broker or
+  salesperson in another jurisdiction may collect a referral fee, except as provided by K.S.A.
+  58-3076. Therefore, the Nebraska broker may collect a referral fee. The option stating that the
+  referral fee is permissible as long as the referring broker is properly licensed in another
+  jurisdiction is correct; the option claiming referral fees are prohibited unless both brokers are
+  Kansas-licensed is incorrect because the statute expressly allows fees from out-of-state
+  licensees.
+citation:
+  source: Kan. Stat. Ann. § 58-3038(c)
+  url: null
+  quoted_text: Except as provided by K.S.A. 58-3076 , and amendments thereto, nothing herein shall
+    preclude a person who is properly licensed as a broker or salesperson in another jurisdiction
+    from collecting a referral fee
+  secondary: []
+terms:
+  - referral fee
+  - jurisdiction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,39 @@
+id: MS-1954-0271
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee changes principal broker on May 1 and sends written notice to the commission on May
+  5. What is the status of the licensee's license under Miss. Code Ann. § 73-35-15(2)?
+options:
+  - License is suspended until the broker acknowledges the change
+  - License is placed on inactive status pending review
+  - License is automatically cancelled for late notice
+  - License remains active because notice was given within a week
+key: C
+explanation: The rule states that failure to give notice within three days automatically cancels the
+  license. Notice on May 5 exceeds the three‑day limit, so the licence is cancelled. The one‑week
+  option misstates the required period.
+citation:
+  source: Miss. Code Ann. § 73-35-15(2)
+  url: null
+  quoted_text: The change of principal broker or employment by any licensed real estate licensee
+    without notice to the commission as required shall automatically cancel his or her license
+  secondary: []
+terms:
+  - principal broker
+  - notice
+  - cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

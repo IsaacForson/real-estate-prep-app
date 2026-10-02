@@ -1,0 +1,50 @@
+id: DC-198-0200
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate broker license has a prior conviction for driving under the
+  influence (DUI). Under D.C. Code § 47-2853.17(c-1)(B), may the Board consider this DUI conviction
+  when evaluating the application?
+options:
+  - No, because the offense is not related to the practice of real estate.
+  - Yes, if the applicant shows evidence of rehabilitation and fitness.
+  - No, unless the Board finds the conviction is directly related to brokerage.
+  - Yes, because any criminal conviction may reflect on the applicant’s fitness.
+key: C
+explanation: The Board may consider a criminal conviction only if it is directly related to the
+  occupation for which the license is sought; under D.C. Code § 47-2853.17(c-1)(B), a conviction
+  that is not directly related may not be considered. Therefore, the Board may consider the DUI
+  conviction only if it finds that the conviction is directly related to real estate brokerage. The
+  statement that the Board may not consider the offense because it is not related to the practice of
+  real estate is incorrect because the statute does not automatically bar consideration of unrelated
+  offenses; it bars consideration unless the Board determines the conviction is directly related.
+  The claim that any criminal conviction may reflect on fitness is too absolute; the statute limits
+  consideration to directly related offenses.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.17
+    (c-1)(B)"
+  url: null
+  quoted_text: (B) Consider a conviction of an offense of an applicant, licensee, registrant, person
+    certified, or person permitted by [this subchapter] to practice in the District that is not
+    directly related to the occupation for which the license, registration, or certification is
+    sought or held.
+  secondary: []
+terms:
+  - directly related
+  - conviction
+  - board consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

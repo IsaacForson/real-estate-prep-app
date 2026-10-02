@@ -1,0 +1,40 @@
+id: AZ-20-0093
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee posts a flyer for a rental house that reads 'For rent by owner – no agent fees.'
+  According to Arizona Administrative Code R4-28-502.A, what is the status of this advertisement?
+options:
+  - The advertisement is permitted if the licensee also includes their broker's name
+  - The advertisement is permitted because the statement is truthful
+  - The advertisement is prohibited because it implies no salesperson or broker is taking part
+  - The advertisement is prohibited only if the property is commercial
+key: C
+explanation: The rule prohibits advertising that implies no salesperson or broker is involved in the
+  offer. The flyer’s wording creates that implication, so it is prohibited. The distractor
+  suggesting it is permitted if the broker's name is added is incorrect because the implication
+  remains regardless of additional disclosure.
+citation:
+  source: Ariz. Admin. Code tit. 4, ch. 28 (R4-28-101 to R4-28-1310) — A.A.C. Title 4, Chapter 28 -
+    State Real Estate Department (Commissioner's Rules); Secretary of State PDF, Internet Archive
+    capture 2026-07-27 — § R4-28-502
+  url: null
+  quoted_text: A licensee shall not advertise property in a manner that implies that no salesperson or
+    broker is taking part in the offer for sale, lease, or exchange.
+  secondary: []
+terms:
+  - advertising
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

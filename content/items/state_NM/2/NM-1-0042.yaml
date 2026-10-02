@@ -1,0 +1,43 @@
+id: NM-1-0042
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to the New Mexico Real Estate Brokers and Salesmen Act, what must a person have to
+  lawfully engage in the business of an associate broker in New Mexico?
+options:
+  - A valid qualifying broker’s license issued by the commission.
+  - An associate broker’s license issued by the commission.
+  - A real estate salesperson’s license issued by the commission.
+  - A case where no license is needed for an employee of a brokerage.
+key: B
+explanation: The statute defines a license as either a qualifying broker’s license or an associate
+  broker’s license issued by the commission. To act as an associate broker, a person must hold an
+  associate broker’s license. The other options either describe a qualifying broker’s license, a
+  salesperson license (not recognized in this act), or a situation where no license is needed, which
+  is incorrect for associate broker activity.
+citation:
+  source: N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-2
+  url: null
+  quoted_text: ‘‘License’’ means a qualifying broke r’s license or an associate broker’s license
+    issued by the commission;
+  secondary: []
+terms:
+  - license
+  - associate broker
+  - qualifying broker
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

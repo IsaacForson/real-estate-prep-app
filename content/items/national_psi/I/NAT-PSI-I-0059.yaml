@@ -1,0 +1,39 @@
+id: NAT-PSI-I-0059
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer discovers an unrecorded mechanic's lien that was not disclosed in the purchase
+  contract, and the seller cannot remove it before closing. What is the buyer's typical remedy?
+options:
+  - The buyer may sue for specific performance
+  - The buyer may cancel the contract and recover the deposit
+  - The buyer may accept the title as is and sue the seller later
+  - The buyer may pay off the lien themselves
+key: B
+explanation: If the seller cannot cure a title defect before closing, the buyer may cancel the
+  contract and recover the deposit; accepting the title as is is also permitted, but suing the
+  seller later is not a recognized remedy.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.5
+  url: null
+  quoted_text: if the seller cannot cure a defect in time, the buyer may generally cancel and recover
+    the deposit or accept the title as is
+  secondary: []
+terms:
+  - marketable title
+  - defect
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

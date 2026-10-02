@@ -1,0 +1,46 @@
+id: FL-475-0044
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VIII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property management firm pays a $75 referral fee to an unlicensed tenant for introducing a
+  prospective lessee to an apartment unit. According to Florida statute, which statement is correct?
+options:
+  - The payment is permitted because it is less than $100.
+  - The payment is permitted because the tenant is a licensed sales associate.
+  - The payment violates the license law because the fee exceeds the $50 limit.
+  - The payment is permitted if the firm also holds a real estate broker license.
+key: C
+explanation: Because the fee of $75 exceeds the $50 cap set forth in subsection (13), the payment is
+  not authorized and constitutes a violation. The distractor claiming permission due to being under
+  $100 incorrectly applies a different threshold not found in the statute.
+citation:
+  source: Fla. Stat. § 475.01(13)
+  url: null
+  quoted_text: Any property management firm or any owner of an apartment complex for the act of paying
+    a finder’s fee or referral fee to an unlicensed person who is a tenant in such apartment complex
+    provided the value of the fee does not exceed $50 per transaction.
+  secondary: []
+math:
+  worked_solution: "Fee = $75; Allowed maximum = $50; Compare: 75 > 50, so the fee exceeds the limit."
+  formulas:
+    - Fee > Limit
+  onscreen_calculator_only: false
+terms:
+  - finder's fee
+  - property management
+  - tenant
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

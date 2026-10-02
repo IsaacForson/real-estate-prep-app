@@ -1,0 +1,41 @@
+id: NY-443-0080
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: When completing the property condition disclosure statement under NY Real Prop Law §462.2,
+  what should a seller do if they do **NOT** know the answer to a question?
+options:
+  - Leave the item blank
+  - Mark the item as "NA"
+  - Check "Unkn" (Unknown)
+  - Estimate based on homes
+key: C
+explanation: Under NY Real Prop Law §462.2, sellers should check 'Unkn' (Unknown) when they do not
+  know the answer to a question on the property condition disclosure statement. Leaving the item
+  blank or marking it as 'Not Applicable' does not follow the required procedure, and providing an
+  estimate is also incorrect.
+citation:
+  source: "### N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462"
+  url: null
+  quoted_text: If you do not know the answer check “Unkn” (Unknown).
+  secondary: []
+terms:
+  - disclosure
+  - unknown
+  - seller
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

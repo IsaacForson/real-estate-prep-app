@@ -1,0 +1,40 @@
+id: NAT-PSI-I-0823
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: In a notice state, a seller deeds the same lot to A on Monday (A does not record) and to B on
+  Wednesday (B pays value, has no notice of A, and records on Thursday). Who owns the lot?
+options:
+  - The lot is owned by A.
+  - The lot is owned by B.
+  - The lot is owned by A and B.
+  - The lot is owned by the seller.
+key: B
+explanation: Under a notice statute, a later bona fide purchaser for value without notice wins even
+  before recording. B paid value, lacked notice of A’s prior deed, and recorded after A failed to
+  record, so B prevails. The lot is owned by the seller is incorrect because A’s unrecorded deed
+  does not give B constructive notice.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a notice statute a later bona fide purchaser for value without notice (actual or
+    constructive) of the earlier interest wins even before recording.
+  secondary: []
+terms:
+  - notice statute
+  - bona fide purchaser
+  - recording
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

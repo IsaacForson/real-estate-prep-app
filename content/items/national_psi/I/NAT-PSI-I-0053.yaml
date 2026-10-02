@@ -1,0 +1,41 @@
+id: NAT-PSI-I-0053
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a mechanic's lien relates back to the date work began, which of the following is true
+  regarding its priority relative to a mortgage recorded after work began but before the lien was
+  filed?
+options:
+  - It has priority over the mortgage
+  - It is subordinate to the mortgage
+  - It is void because it was filed after completion
+  - It attaches only to personal property
+key: A
+explanation: According to § 3.4, a mechanic's lien may relate back to the start of construction
+  under state law, allowing it to attain priority over a later-recorded mortgage. Thus the lien
+  takes priority over the mortgage in the described situation. The subordinate option incorrectly
+  applies the strict first-in-time rule without considering relation back.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: mechanic's liens may relate back to the start of construction under state law
+  secondary: []
+terms:
+  - mechanic's lien
+  - priority
+  - relation back
+  - mortgage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

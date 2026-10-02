@@ -1,0 +1,51 @@
+id: PA-9-0022
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer obtains a $35,000 judgment against a Pennsylvania real estate licensee for fraud in
+  a transaction. What is the maximum amount the Real Estate Recovery Fund can pay toward this
+  judgment under the Recovery Fund provisions?
+options:
+  - $35000
+  - $25000
+  - $100000
+  - $20000
+key: D
+explanation: Under 63 P.S. § 455.803, the fund may pay no more than $20,000 for any one claim and no
+  more than $100,000 per licensee. Because the judgment exceeds the per‑claim limit, the most the
+  fund can contribute is $20,000.
+citation:
+  source: 63 P.S. §§ 455.101–455.902 (Real Estate Licensing and Registration Act) — Real Estate
+    Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9, as amended (63 P.S. §
+    455.101 et seq.), official Pennsylvania General Assembly PDF read via Internet Archive capture
+    of 2025-01-14 because legis.state.pa.us/palegis.us refuse connections from this network; section
+    headings annotated with 63 P.S. numbers — § 455.803
+  url: null
+  quoted_text: Notwithstanding any other provisions of this section, the liability of that portion of
+    the fund allocated for the purpose of this act shall not exceed $20,000 for any one claim and
+    shall not exceed $100,000 per licensee.
+  secondary: []
+math:
+  worked_solution: The per‑claim limit is $20,000. The judgment is $35,000, which is greater than the
+    limit. Therefore, the maximum payable amount = $20,000.
+  formulas:
+    - Per‑claim limit
+  onscreen_calculator_only: false
+terms:
+  - claim limit
+  - per claim
+  - licensee limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

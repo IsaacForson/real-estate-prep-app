@@ -1,0 +1,48 @@
+id: PA-9-0085
+jurisdiction: PA
+bank: state_PA
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Pennsylvania broker plans to host a reception on July 20 to promote a condominium
+  development located in Florida. According to 49 Pa. Code § 35.371(b), by what date must the broker
+  notify the Commission of the event?
+options:
+  - July 10
+  - July 11
+  - July 9
+  - July 12
+key: A
+explanation: The regulation requires notification at least 10 days in advance of the date, time, and
+  place of the promotional effort. Ten days before July 20 is July 10, so notice must be given on or
+  before that date. July 11 would be only nine days prior, violating the rule.
+citation:
+  source: 49 Pa. Code ch. 35 (State Real Estate Commission) — 49 Pa. Code Chapter 35 — State Real
+    Estate Commission (Pennsylvania Code, changes effective through 56 Pa.B. 4026, July 4, 2026) — §
+    35.371
+  url: null
+  quoted_text: (b) An applicant approved to engage in sales set forth in this chapter shall notify the
+    Commission at least 10 days in advance of the date, time and place of efforts to sell or
+    advertise through parties or reception or other group media.
+  secondary: []
+math:
+  worked_solution: "Start with the event date: July 20. Subtract the required advance notice period of
+    10 days. 20 - 10 = 10, so the notice date is July 10."
+  formulas:
+    - Notice date = Event date - Advance notice period
+  onscreen_calculator_only: false
+terms:
+  - notification
+  - promotion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

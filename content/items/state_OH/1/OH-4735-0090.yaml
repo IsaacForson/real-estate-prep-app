@@ -1,0 +1,55 @@
+id: OH-4735-0090
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee renews a two-year real estate license on March 15, 2025. On July 1, 2024, the real
+  estate recovery fund contained $210,000. What is the maximum special assessment that may be
+  imposed on this licensee for the renewal period?
+options:
+  - $20.00
+  - $0.00
+  - $10.00
+  - $30.00
+key: A
+explanation: Because the fund amount on the preceding July 1 is less than $250,000, a special
+  assessment up to $10 per year of the licensing period may be imposed. The license is for two
+  years, so the maximum is $10 × 2 = $20.00. The $0.00 option applies only if the fund exceeded the
+  threshold, and the other amounts misapply the per‑year limit or the license period.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.12
+  url: null
+  quoted_text: shall impose a special assessment not to exceed ten dollars per year for each year of a
+    licensing period on each licensee filing a notice of renewal under section 4735.14 of the
+    Revised Code if the amount available in the fund is less than two hundred fifty thousand dollars
+    on the first day of July preceding that filing.
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Compare the fund amount on July 1 preceding filing to the $250,000 threshold. $210,000 <
+    $250,000, so a special assessment may be imposed.
+
+    Step 2: Determine the length of the licensing period. The license is renewed for two years.
+
+    Step 3: Calculate the maximum assessment: $10 per year × 2 years = $20.00.
+  formulas:
+    - Maximum special assessment = ($10 per year) × (licensing period in years)
+  onscreen_calculator_only: false
+terms:
+  - special assessment
+  - licensing period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

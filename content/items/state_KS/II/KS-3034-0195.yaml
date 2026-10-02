@@ -1,0 +1,42 @@
+id: KS-3034-0195
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson’s license expired on January 15. The licensee submits a late renewal application
+  on August 1. According to Kansas law, what is the status of the license?
+options:
+  - The license may be reinstated via late renewal because the application was submitted within six
+    months of expiration.
+  - The license cannot be reinstated via late renewal and the licensee must submit a new application
+    for an original license.
+  - The license is automatically reinstated because the application was submitted before the end of
+    the calendar year.
+  - The license remains active because the grace period extends to nine months after expiration.
+key: B
+explanation: The six‑month window for late renewal ends on July 15 (January 15 + six months).
+  Submitting on August 1 is outside that window, so late renewal is not available; the licensee must
+  apply for an original license anew under §58-3045(c).
+citation:
+  source: Kan. Stat. Ann. § 58-3045(c)
+  url: null
+  quoted_text: if within six months following the date of the expiration of the license, the licensee
+    submits to the commission an application for late renewal.
+  secondary: []
+terms:
+  - late renewal
+  - expiration
+  - reinstatement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

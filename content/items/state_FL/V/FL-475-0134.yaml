@@ -1,0 +1,47 @@
+id: FL-475-0134
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A dealer registered under the Securities Exchange Act of 1934 sells only the land (no business
+  assets) of a business enterprise to an accredited investor. Is the dealer exempt from the real
+  estate licensing requirement for this transaction under Florida Statutes?
+options:
+  - Yes, because the buyer is an accredited investor in this transaction
+  - Yes, because the dealer is registered under the Securities Exchange Act
+  - No, because the exemption does not apply to sales of land not connected to a business enterprise
+  - No, because the dealer must also be a licensed real estate broker
+key: C
+explanation: The exemption for securities dealers applies only when the transaction involves the
+  sale or purchase of a business enterprise; it does not cover sales of land, buildings, or fixtures
+  that are not part of such a business enterprise. Since the dealer sold only the land, the
+  exemption is unavailable. The option claiming that the buyer’s accredited‑investor status makes
+  the dealer exempt incorrectly treats that status as sufficient, and the option claiming that the
+  dealer’s registration under the Securities Exchange Act makes the dealer exempt incorrectly treats
+  that registration as sufficient, while the option claiming that the dealer must also be a licensed
+  real estate broker adds a requirement not stated in the statute. See Fla. Stat. ch. 475 §
+  475.01(12).
+citation:
+  source: Fla. Stat. ch. 475 § 475.01(12)
+  url: null
+  quoted_text: The exemption does not apply to a sale, exchange, purchase, or rental of land,
+    buildings, fixtures or other improvements to the land which is not made in connection with the
+    sale, exchange, purchase, or rental of a business enterprise.
+  secondary: []
+terms:
+  - securities dealer
+  - accredited investor
+  - business enterprise
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

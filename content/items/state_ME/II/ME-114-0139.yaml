@@ -1,0 +1,41 @@
+id: ME-114-0139
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Maine real estate sales agent’s license lapsed 100 days ago. Under 32 M.R.S. § 13194, to
+  obtain a renewal license the agent must:"
+options:
+  - The agent must submit proof of completed continuing education only
+  - The agent must pass the licensing exam and pay the renewal fee
+  - The agent must obtain a letter of good standing from another state
+  - The agent must wait for the next biennial renewal period to apply
+key: B
+explanation: The statute denies renewal for licenses lapsed over 90 days unless the applicant passes
+  the required licensing exam. Thus the agent must pass the exam and pay the fee. The other options
+  either omit the exam or rely on continuing education, reciprocity, or waiting, which do not
+  satisfy the rule.
+citation:
+  source: 32 M.R.S. § 13194
+  url: null
+  quoted_text: The director shall deny a renewal license to any applicant whose license has lapsed for
+    more than 90 days, unless the renewal license applicant passes the license examination
+    designated by commission rule for this purpose.
+  secondary: []
+terms:
+  - license renewal
+  - lapse
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

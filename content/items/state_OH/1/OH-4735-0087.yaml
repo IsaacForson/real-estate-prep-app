@@ -1,0 +1,53 @@
+id: OH-4735-0087
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee renews a three-year real estate license on August 1, 2024. On July 1, 2024, the
+  real estate recovery fund contained $180,000. What is the maximum special assessment that may be
+  imposed on this licensee for the renewal period?
+options:
+  - $40.
+  - $30.
+  - $20.
+  - $10.
+key: B
+explanation: Because the fund balance on July 1, 2024 was $180,000, which is below the $250,000
+  threshold, the commission may levy a special assessment of up to $10 for each year of the license
+  term. The license is renewed for a three‑year period, so the maximum assessment is $10 × 3 = $30.
+citation:
+  source: "### Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers,
+    official Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14
+    because codes.ohio.gov times out for scripts Section 4735.12(A)"
+  url: null
+  quoted_text: The commission, in accordance with rules adopted under division (A)(2)(g) of section
+    4735.10 of the Revised Code, shall impose a special assessment not to exceed ten dollars per
+    year for each year of a licensing period on each licensee filing a notice of renewal under
+    section 4735.14 of the Revised Code if the amount available in the fund is less than two hundred
+    fifty thousand dollars on the first day of July preceding that filing.
+  secondary: []
+math:
+  worked_solution: "Step 1: Compare fund balance on July 1, 2024 ($180,000) to the $250,000 threshold.
+    Since $180,000 < $250,000, the special assessment may be imposed. Step 2: Determine the per‑year
+    limit: $10 per year (per Ohio Rev. Code §4735.12(A)). Step 3: Determine the license term: three
+    years (renewal for a three‑year license). Step 4: Compute maximum assessment: $10 × 3 = $30."
+  formulas:
+    - Maximum assessment = per‑year limit × number of years
+  onscreen_calculator_only: false
+terms:
+  - special assessment
+  - real estate recovery fund
+  - licensing period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

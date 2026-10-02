@@ -1,0 +1,45 @@
+id: LA-1430-0419
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker requests that the commission issue a broker license. What information must the
+  commission include in the broker license under the Louisiana Real Estate License Law?
+options:
+  - The business name, the street address of the business, and the mailing address of the business,
+    if it is different from the street address
+  - The business name, the mailing address of the business, and the street address of the business,
+    if it is different from the mailing address
+  - The business name, the street address of the business, and the email address of the business, if
+    it is different from the street address
+  - The business name, the telephone number of the business, and the mailing address of the
+    business, if it is different from the telephone number
+key: A
+explanation: The law specifies that a broker license must contain the business name, street address,
+  and mailing address (if different from the street address). Substituting an email address or
+  telephone number for the street address, or reordering the addresses, does not satisfy this
+  requirement. The correct option matches the statutory language exactly.
+citation:
+  source: § 1439. Issuance of license, certificate, or registration, LA R.S. 37:1439(B)
+  url: null
+  quoted_text: A broker license issued to an individual, partnership, limited liability company,
+    association, corporation, or other legal entity, shall include the business name, the street
+    address of the business, and the mailing address of the business, if it is different from the
+    street address.
+  secondary: []
+terms:
+  - broker license
+  - information
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

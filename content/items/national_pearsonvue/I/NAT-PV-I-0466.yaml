@@ -1,0 +1,47 @@
+id: NAT-PV-I-0466
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A surveyor prepares a metes-and-bounds description that begins at a point of beginning, lists
+  several courses with bearings and distances, and ends at a different point. For the description to
+  be valid, what must it do?
+options:
+  - Be recorded in the county plat book
+  - Use only artificial monuments for accuracy
+  - Return to the point of beginning so the figure closes
+  - Include at least one natural monument
+key: C
+explanation: The correct answer is that a metes-and-bounds description must return to the point of
+  beginning so the figure closes. The option stating the description must be recorded in the county
+  plat book is incorrect; recording is not required for validity. The option stating the description
+  must use only artificial monuments is incorrect; monuments may be natural or artificial, and there
+  is no requirement to use only artificial ones. The option stating the description must include at
+  least one natural monument is incorrect; while natural monuments are helpful, they are not
+  required for a valid description.
+citation:
+  source: "REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) § 3.2"
+  url: null
+  quoted_text: A metes-and-bounds description starts at a point of beginning (POB) tied to a monument
+    (an iron pin, a stone, a stream, a section corner), travels around the parcel in courses each
+    stated as a bearing and a distance (for example "North 45 degrees 30 minutes East, 210.5 feet"),
+    and must return to the point of beginning so the figure closes.
+  secondary: []
+terms:
+  - metes and bounds
+  - point of beginning
+  - closure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

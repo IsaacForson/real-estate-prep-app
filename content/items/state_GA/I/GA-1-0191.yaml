@@ -1,0 +1,41 @@
+id: GA-1-0191
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submits an incomplete salesperson license application that lacks a mailing
+  address. Under Ga. Comp. R. & Regs. r. 520-1-.04(e), where will the Commission return the
+  incomplete application?
+options:
+  - To the Commission's headquarters address on file
+  - To the applicant's employer's address on file
+  - To the Commission's last known business address on file
+  - To the applicant's current email address on file
+key: C
+explanation: The rule specifies that if an incomplete application contains no address, the
+  Commission returns it to the last known business address of record in its files. The distractor
+  referencing the applicant's email address is incorrect because the rule requires a physical
+  mailing address for return.
+citation:
+  source: Ga. Comp. R. & Regs. r. 520-1-.04(e)
+  url: null
+  quoted_text: the last known business address of record in the Commission's files if the incomplete
+    or incorrect application contains no address
+  secondary: []
+terms:
+  - incomplete application
+  - return address
+  - business address
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,48 @@
+id: DE-2901-0117
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Broker Delta's license is revoked by the Commission. Broker Delta employs two salespersons
+  whose licenses are issued under Broker Delta's brokerage. What is the effect on the salespersons'
+  licenses under Del. Code Ann. tit. 24, ch. 29 § 2917?
+options:
+  - The salespersons' licenses remain active and unaffected, allowing them to continue practicing
+    real estate under the same brokerage despite the broker's revocation.
+  - The salespersons' licenses are automatically suspended pending a change of employing broker or
+    brokerage organization and issuance of a new license
+  - The salespersons' licenses are immediately revoked, requiring the salespersons to cease all real
+    estate activity and return their license certificates to the Commission within ten business
+    days.
+  - The salespersons' licenses are placed on probationary status for six months, during which they
+    must complete additional continuing education courses and may not engage in any real estate
+    activity until the probation period ends.
+key: B
+explanation: Section 2917 provides that the revocation of a broker’s license automatically suspends
+  every license granted to individuals employed by that broker, pending a change of employing broker
+  or issuance of a new license. Thus the salespersons’ licenses are suspended, not revoked or
+  unaffected. The probationary option is not mentioned in this provision.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2917
+  url: null
+  quoted_text: The revocation of a broker’s license shall automatically suspend every real estate
+    service provider’s license granted to any individual by virtue of employment either directly or
+    indirectly by the broker whose license has been revoked, pending a change of employing broker or
+    brokerage organization and the issuance of a new license.
+  secondary: []
+terms:
+  - revocation
+  - suspension
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

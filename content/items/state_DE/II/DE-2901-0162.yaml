@@ -1,0 +1,46 @@
+id: DE-2901-0162
+jurisdiction: DE
+bank: state_DE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation wishes to offer real estate services through its employees who are licensed
+  salespersons, but the corporation does not employ a licensed broker. Under Delaware law, is this
+  permissible?
+options:
+  - No, because the organization must have a broker responsible for providing real estate services.
+  - No, because employing licensed salespersons satisfies the requirement for providing real estate
+    services.
+  - No, because only sole proprietorships may provide real estate services without a broker license.
+  - No, because the corporation can register as a brokerage organization under § 2901(c).
+key: A
+explanation: Section 2901(c) states that a brokerage organization may provide real estate services
+  only if it has a broker responsible for providing those services. Since the corporation lacks a
+  responsible broker, the activity is not permissible. The first three options misstate the rule or
+  introduce irrelevant limitations.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) — § 2901(c)
+  url: null
+  quoted_text: Nothing in this chapter, however, shall prevent such brokerage organization from
+    providing real estate services provided the individual or business entity has a broker who is
+    responsible for providing real estate services and who may have affiliated associate brokers or
+    salespersons, properly licensed in this State, who provide such services under the supervision
+    of the broker.
+  secondary: []
+terms:
+  - broker
+  - brokerage organization
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

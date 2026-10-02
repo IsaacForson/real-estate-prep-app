@@ -1,0 +1,49 @@
+id: CO-2-0047
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A corporation engaged in land development has an officer who owns one-quarter of the
+  corporation’s stock and sells property owned by the corporation. Under Colo. Rev. Stat. §
+  12-10-201(6)(b)(VIII), does this officer need a real estate broker license?
+options:
+  - The officer must obtain a broker license because the corporation is engaged in land transactions.
+  - The officer is exempt from licensing as a principal officer owning 20% or more of stock.
+  - The officer must obtain a broker license only if they receive additional compensation for the
+    sale.
+  - The officer is exempt because the sale is incidental to the corporation’s business.
+key: A
+explanation: The exemption for corporate officers applies only when the corporation is not engaged
+  in the business of land transactions. Because the corporation is engaged in land development, the
+  officer is not exempt and must hold a broker license. Ownership of 20% or more stock does not
+  override this limitation.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(6)(b)(VIII)
+  url: null
+  quoted_text: (VIII) A corporation with respect to property owned or leased by it, acting through its
+    officers or regularly salaried employees, when the acts are incidental and necessary in the
+    ordinary course of the corporation’s business activities of a non-real-estate nature (but only
+    if the corporation is not engaged in the business of land transactions), except as provided in
+    subsection (4) of this section. For the purposes of this subsection (6)(b)(VIII), the term
+    “officers or regularly salaried employees” means persons regularly employed who derive not less
+    than seventy-five percent of their compensation from the corporation in the form of salaries.
+  secondary: []
+terms:
+  - corporation
+  - land transactions
+  - officer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

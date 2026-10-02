@@ -1,0 +1,45 @@
+id: WI-452-0056
+jurisdiction: WI
+bank: state_WI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer receives a warranty deed for property that is subject to a recorded utility easement.
+  The deed does not mention the easement. Under Wis. Stat. § 706.10(5), which covenant is **NOT**
+  automatically included for the buyer's benefit because of the easement exception?
+options:
+  - The covenant that the grantor has good right to convey the land.
+  - The covenant that the grantor will guarantee and defend the title.
+  - The covenant that the land is free from any encumbrance whatsoever.
+  - The covenant that the grantor is lawfully seized of the land.
+key: C
+explanation: Subsection (5) provides that a warranty deed includes covenants of seizure, right to
+  convey, freedom from encumbrances, and defense of title, except where claims arise out of open and
+  notorious rights of easement. Because the utility easement is such an easement, the covenant that
+  the land is free from all encumbrance does not apply. The other covenants remain unaffected by the
+  easement exception.
+citation:
+  source: Wis. Stat. § 706.10(5)
+  url: null
+  quoted_text: |-
+    except as the claims may
+    arise out of open and notorious rights of easement, or out of pub-
+    lic building, zoning or use restrictions
+  secondary: []
+terms:
+  - easement
+  - encumbrance
+  - warranty
+  - covenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

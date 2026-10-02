@@ -1,0 +1,52 @@
+id: NY-443-0088
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate broker is listing a commercial property for sale on behalf of a seller client.
+  The broker personally owns a 30% interest in the property. Under New York regulation 19 NYCRR
+  §175.5, what is the broker’s obligation regarding disclosure of this interest before accepting the
+  listing?
+options:
+  - Must disclose the interest to all parties to the transaction
+  - Must disclose the interest only if it exceeds twenty percent
+  - No disclosure required because broker is not buying for client
+  - Must disclose the interest only to the seller client
+key: C
+explanation: The regulation requires disclosure only when the broker buys property for a client;
+  since the broker is listing property for sale, no disclosure is required. The statement that
+  disclosure is needed only if the interest exceeds twenty percent is incorrect because the rule
+  does not set a percentage threshold; it applies only to purchase situations. The statement that
+  disclosure must be made only to the seller client is incorrect because, when disclosure is
+  required (in a purchase scenario), it must be made to all parties to the transaction. The
+  statement that disclosure must be made to all parties to the transaction is incorrect because the
+  duty to disclose does not arise in a listing situation.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.5
+  url: null
+  quoted_text: Before a real estate broker buys property for a client in the ownership of which the
+    broker has an interest, he shall disclose his interest to all parties to the transaction.
+  secondary: []
+math:
+  worked_solution: "Convert 30% to decimal: 30 ÷ 100 = 0.30"
+  formulas:
+    - Percentage to decimal conversion
+  onscreen_calculator_only: false
+terms:
+  - disclosure
+  - interest
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

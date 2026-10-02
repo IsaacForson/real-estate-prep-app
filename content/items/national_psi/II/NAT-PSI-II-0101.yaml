@@ -1,0 +1,41 @@
+id: NAT-PSI-II-0101
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 mortgage recorded January 15, 2018, a 2020 property tax lien for unpaid
+  taxes assessed in 2020, and a 2019 judgment lien recorded March 10, 2019. Under the priority rules
+  in § 8.3 Priority of liens, which lien will be paid first from a foreclosure sale?
+options:
+  - The 2020 property tax lien
+  - The 2019 judgment lien recorded
+  - The 2018 mortgage lien
+  - 2018 mortgage & 2019 judgment lien
+key: A
+explanation: Property tax and special assessment liens are paid before all other liens, regardless
+  of when they were recorded. Therefore the 2020 property tax lien is satisfied before the 2018
+  mortgage and the 2019 judgment lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - lien
+  - priority
+  - property tax
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,50 @@
+id: ME-114-0053
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Maine broker pays an unlicensed assistant $500 for showing a property, which violates the
+  Real Estate Brokerage License Act. What is the maximum civil forfeiture that may be adjudged for
+  this violation under Maine law?
+options:
+  - $500
+  - $1,000
+  - $2,000
+  - $2,500
+key: C
+explanation: The statute provides that a person who violates any provision of the chapter commits a
+  civil violation for which a forfeiture of not more than $2,000 for each violation may be adjudged,
+  plus the amount of compensation received. Therefore, the maximum forfeiture is $2,000, regardless
+  of the $500 compensation paid. The distractor '$500' incorrectly treats the compensation amount as
+  the forfeiture amount.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13005"
+  url: null
+  quoted_text: A person or entity who violates any provision of this chapter commits a civil violation
+    for which a forfeiture of not more than $2,000 for each violation may be adjudged, plus the
+    amount of compensation received in the subject transaction.
+  secondary: []
+math:
+  worked_solution: The statute sets a maximum civil forfeiture of $2,000 per violation. The
+    compensation paid to the unlicensed assistant does not increase this cap. Thus, the maximum
+    civil forfeiture that may be adjudged is $2,000.
+  formulas:
+    - Maximum civil forfeiture = Statutory cap ($2,000)
+  onscreen_calculator_only: false
+terms:
+  - forfeiture
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

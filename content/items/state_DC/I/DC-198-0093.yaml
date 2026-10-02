@@ -1,0 +1,41 @@
+id: DC-198-0093
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker is appointed to the Board of Real Estate and thereafter ceases all real
+  estate activity to pursue another career. Under the tenure requirements, may the broker continue
+  to serve on the Board?
+options:
+  - The broker is eligible because the appointment term is fixed and non‑revocable.
+  - The broker is ineligible because they must remain active in the field during tenure.
+  - The broker is eligible if they complete continuing education credits.
+  - The broker is ineligible because they have not met the residency requirement.
+key: B
+explanation: The statute requires professional members of the Board of Real Estate to remain active
+  in their field during their tenure; ceasing activity violates this requirement. Therefore, the
+  broker may not continue to serve. The distractor claiming eligibility due to a fixed term is
+  incorrect because the activity requirement applies regardless of term length.
+citation:
+  source: D.C. Code § 47-2853.07(d)(2)
+  url: null
+  quoted_text: professional members of the Board of Real Estate shall each have been actively engaged
+    in their field for not less than 5 years immediately prior to their appointment to the Board and
+    shall remain active in their field during their tenure on the Board
+  secondary: []
+terms:
+  - active engagement
+  - tenure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

@@ -1,0 +1,38 @@
+id: AZ-20-0280
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson’s license expired 14 months ago and the licensee has not taken any action since.
+  What is the current status of the license under Arizona law?
+options:
+  - The license is active and eligible for renewal without examination.
+  - The license is expired but may be renewed within the next six months.
+  - The license is terminated and must be re-applied for as a new license.
+  - The license is inactive and requires continuing education to reactivate.
+key: C
+explanation: A license expired more than one year is terminated by the department; after fourteen
+  months the license is terminated and must be reapplied for as a new license. The distractor
+  suggesting renewal within six months ignores the one‑year termination rule.
+citation:
+  source: Ariz. Rev. Stat. § 32-2130(F)
+  url: null
+  quoted_text: The department shall terminate a license that has been expired for more than one year.
+  secondary: []
+terms:
+  - expiration
+  - termination
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

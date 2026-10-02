@@ -1,0 +1,46 @@
+id: TX-1101-0106
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker representing a seller learns from the broker's sales agent that the property's roof
+  has leaked in the past. Under 22 Tex. Admin. Code § 535.2(b), what must the broker do with this
+  information?
+options:
+  - Only disclose the information if the buyer specifically asks about the roof.
+  - Disclose the information to the seller because it may affect the seller's decision.
+  - Wait until after the sale closes to inform the seller of the past leak.
+  - Keep the information confidential to avoid alarming the seller.
+key: B
+explanation: The rule requires a broker to convey to the principal all information known to the
+  agent which may affect the principal's decision, unless prohibited by other law. The past roof
+  leak is information that may affect the seller's decision, so the broker must disclose it to the
+  seller. The other options either withhold material information, condition disclosure on buyer
+  request, or delay disclosure improperly.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.2"
+  url: null
+  quoted_text: A broker owes the highest fiduciary obligation to the principal and is obliged to
+    convey to the principal all information known to the agent which may affect the principal's
+    decision unless prohibited by other law.
+  secondary: []
+terms:
+  - broker
+  - principal
+  - fiduciary
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

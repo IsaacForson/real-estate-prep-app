@@ -1,0 +1,40 @@
+id: CT-311-0217
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker creates a printed flyer advertising a residential property for sale but
+  omits the supervising licensee's name. Under Conn. Gen. Stat. § 20-312c(d), is this flyer
+  compliant?
+options:
+  - Yes, as long as the broker's name appears somewhere in the flyer.
+  - No, the associate broker must include the supervising licensee's name in all advertisements.
+  - No, unless the advertisement is published in print media only.
+  - Yes, because the flyer is not considered an advertisement under the statute.
+key: B
+explanation: The rule requires the supervising licensee's name to be included at a prominent
+  location in all advertisements; omitting it violates the statute. The distractor that suggests
+  including the broker's name instead is incorrect because the name of the supervising licensee, not
+  the broker, is required.
+citation:
+  source: Conn. Gen. Stat. § 20-312c(d)
+  url: null
+  quoted_text: shall include the name of the supervising licensee who controls and supervises such
+    associate broker at a prominent location in all of such associate broker's advertisements.
+  secondary: []
+terms:
+  - associate broker
+  - advertisement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

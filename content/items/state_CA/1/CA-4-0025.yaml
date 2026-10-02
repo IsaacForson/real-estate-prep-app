@@ -1,0 +1,43 @@
+id: CA-4-0025
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A contractor installs a concrete patio on a homeowner’s land without any agreement permitting
+  removal. The homeowner now wants the patio removed. Who owns the patio under California Civil
+  Code?
+options:
+  - The contractor owns the patio because he lacked permission to affix it to the land.
+  - The homeowner owns the patio because the affixed thing belongs to the landowner under §1013.
+  - The homeowner owns the patio because it is considered personal property under §663.
+  - The contractor owns the patio because he may exercise the right of removal provided in §1013.5.
+key: B
+explanation: Section 1013 provides that when a person affixes property to another’s land without
+  permission, the affixed thing belongs to the landowner unless removal is required, so the
+  homeowner owns the patio. The contractor’s right of removal is optional, not automatic, and the
+  patio is not personal property under §663.
+citation:
+  source: Cal. Civ. Code § 1013
+  url: null
+  quoted_text: When a person affixes his property to the land of another, without an agreement
+    permitting him to remove it, the thing affixed, except as otherwise provided in this chapter,
+    belongs to the owner of the land, unless he chooses to require the former to remove it or the
+    former elects to exercise the right of removal provided for in Section 1013.5 of this chapter
+  secondary: []
+terms:
+  - accession
+  - affixation
+  - ownership
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

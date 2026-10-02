@@ -1,0 +1,48 @@
+id: TX-1101-0044
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer submits a signed written complaint on March 1, 2026, alleging that a licensee
+  committed misconduct on January 15, 2021. Under the Texas Occupations Code, may the Texas Real
+  Estate Commission investigate this complaint?
+options:
+  - The commission may investigate the complaint because it is signed and written.
+  - The commission may not investigate the complaint because it was submitted more than four years
+    after the incident.
+  - The commission may investigate the complaint if the licensee has a history of violations.
+  - The commission may not investigate the complaint unless the consumer supplies new evidence.
+key: B
+explanation: Section 1101.204(c) bars an investigation when a complaint is filed after the fourth
+  anniversary of the incident. The incident occurred over five years before the complaint, so the
+  commission lacks authority to investigate. The option claiming the commission may investigate
+  because the complaint is signed and written is incorrect because the time limitation overrides
+  that requirement.
+citation:
+  source: "### Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.204"
+  url: null
+  quoted_text: The commission may not conduct an investigation of a person licensed under this chapter
+    or Chapter 1102 in connection with a complaint submitted later than the fourth anniversary of
+    the date of the incident that is the subject of the complaint.
+  secondary: []
+terms:
+  - complaint
+  - investigation
+  - time limit
+  - anniversary
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

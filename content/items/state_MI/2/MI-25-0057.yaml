@@ -1,0 +1,41 @@
+id: MI-25-0057
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A proprietary real estate school’s prelicensure course approval expires on October 31. By what
+  date must the school submit its renewal application to maintain approval?
+options:
+  - The deadline is August 31
+  - The deadline is September 1
+  - The deadline is September 30
+  - The deadline is October 1
+key: B
+explanation: Under R 339.22619(3), a renewal application must be submitted at least 60 days before
+  the expiration date. Counting back 60 days from October 31 lands on September 1, making that the
+  correct deadline. The distractor “September 30” is wrong because it is only 30 days prior, not the
+  required 60 days.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 R § 339.22619(3)
+  url: null
+  quoted_text: To maintain course approval, a proprietary real estate school shall submit to the
+    department a renewal application on the form approved by the department at least 60 days before
+    the expiration date of the course approval.
+  secondary: []
+terms:
+  - renewal
+  - application
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

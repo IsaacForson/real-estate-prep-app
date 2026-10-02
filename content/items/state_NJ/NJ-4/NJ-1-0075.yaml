@@ -1,0 +1,47 @@
+id: NJ-1-0075
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-4
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A developer sends its annual financial report to stockholders who are also prospective
+  timeshare purchasers. Under the New Jersey Real Estate Timeshare Act, this communication is:"
+options:
+  - Considered an advertisement because it is directed to persons within the State.
+  - Not considered an advertisement because it is a stockholder communication such as an annual
+    report.
+  - Considered an advertisement only if it includes a promotion to sell a timeshare plan.
+  - Not considered an advertisement because it is an oral statement disseminated to broadcast media.
+key: B
+explanation: The statute explicitly excludes stockholder communications such as annual reports from
+  the definition of 'Advertisement.' Therefore the annual report sent to stockholders is not
+  considered advertising under the Act. The distractor that labels it an advertisement ignores this
+  specific statutory exclusion.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — §
+    15-16.50 45:15-16.51"
+  url: null
+  quoted_text: '"Advertisement" does not mean: (1) Any stockholder communication such as an annual
+    report or interim financial report, proxy material, a registration statement, a securities
+    prospectus, a registration, a property report or other material required to be delivered to a
+    prospective purchaser by an agency of any state or federal government;'
+  secondary: []
+terms:
+  - advertisement
+  - stockholder communication
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

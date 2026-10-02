@@ -1,0 +1,35 @@
+id: NAT-PV-I-1375
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What does one mill represent in property tax calculation?
+options:
+  - $1 of tax per $100 of assessed value
+  - $1 of tax per $1,000 of assessed value
+  - $0.10 of tax per $1,000 of assessed value
+  - $10 of tax per $1,000 of assessed value
+key: B
+explanation: One mill is defined as $1 of tax for each $1,000 of assessed value. Therefore a rate of
+  one mill produces a tax of $1 per $1,000 of value. The distractors either use an incorrect
+  denominator ($100) or an incorrect multiplier ($0.10 or $10).
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: one mill is one-tenth of a cent, that is, $1 of tax per $1,000 of assessed value.
+  secondary: []
+terms:
+  - mill
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

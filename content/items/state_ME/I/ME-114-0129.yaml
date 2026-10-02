@@ -1,0 +1,48 @@
+id: ME-114-0129
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee who violates the Maine Real Estate Brokerage License Act receives $1,200 in
+  compensation from the transaction. What is the maximum total forfeiture that may be adjudged for
+  this violation?
+options:
+  - $2,000
+  - $3,200
+  - $1,200
+  - $4,200
+key: B
+explanation: Under 32 M.R.S. §§ 13001–13283 §13005, a civil violation carries a forfeiture of not
+  more than $2,000 plus the amount of compensation received. Adding the $1,200 compensation yields a
+  maximum total of $3,200. The $2,000 option omits the compensation component.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13005"
+  url: null
+  quoted_text: A person or entity who violates any provision of this chapter commits a civil violation
+    for which a forfeiture of not more than $2,000 for each violation may be adjudged, plus the
+    amount of compensation received in the subject transaction.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the base forfeiture limit from the statute: $2,000. Step 2:
+    Identify the compensation received in the transaction: $1,200. Step 3: Add the base forfeiture
+    to the compensation: $2,000 + $1,200 = $3,200. Step 4: The maximum total forfeiture is $3,200."
+  formulas:
+    - Maximum Forfeiture = Base Forfeiture Limit + Compensation Received
+  onscreen_calculator_only: false
+terms:
+  - forfeiture
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

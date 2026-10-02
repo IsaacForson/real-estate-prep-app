@@ -1,0 +1,47 @@
+id: MS-1954-0272
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee closes his office on June 1 and notifies the commission of the new location on June
+  12. Is this notification compliant with Miss. Code Ann. § 73-35-15(1)?
+options:
+  - The notification is not compliant because notice must be given before removal only
+  - The notification is not compliant because it was made after the ten‑day window
+  - The notification is compliant because it was made within ten days after removal
+  - The notification is compliant because the commission allows a thirty‑day grace period
+key: B
+explanation: The rule requires notice before removal or within ten (10) days after removal. Counting
+  the days from June 2 (the first day after removal) through June 12 gives eleven days, which
+  exceeds the ten‑day limit. Therefore the notice is late and not compliant. The statute does not
+  provide a thirty‑day grace period.
+citation:
+  source: Miss. Code Ann. § 73-35-15(1)
+  url: null
+  quoted_text: In case of removal from the designated address, the licensee shall make application to
+    the commission before removal, or within ten (10) days after removal, designating the new
+    location of such office
+  secondary: []
+math:
+  worked_solution: Removal date = June 1. Notification date = June 12. Days after removal = (June 12 -
+    June 1) = 11 days. Since 11 > 10, the notice is outside the allowed window.
+  formulas:
+    - Days after removal = Later date − Earlier date
+  onscreen_calculator_only: false
+terms:
+  - office location
+  - notice
+  - removal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

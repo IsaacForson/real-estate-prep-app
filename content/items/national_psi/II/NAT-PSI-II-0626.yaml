@@ -1,0 +1,41 @@
+id: NAT-PSI-II-0626
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2017 first mortgage, a 2019 judgment lien, and unpaid 2021 property taxes. If
+  the property is foreclosed, which lien is paid first from the proceeds?
+options:
+  - The 2017 first mortgage
+  - The 2019 judgment lien
+  - The 2021 property taxes
+  - The surplus to the owner
+key: C
+explanation: A tax lien takes priority over all other liens, regardless of when the other liens were
+  recorded. Therefore the unpaid 2021 property taxes must be satisfied before the mortgage or
+  judgment lien, and any remaining proceeds go to the owner after all liens are paid.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - property tax lien
+  - mortgage
+  - judgment lien
+  - priority
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

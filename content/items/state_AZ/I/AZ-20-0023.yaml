@@ -1,0 +1,47 @@
+id: AZ-20-0023
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Two lots are separated by a privately maintained dirt road that is not open to the public and
+  not maintained by any government agency. Under Arizona law, are the lots considered contiguous?
+options:
+  - The lots are contiguous because they share a common boundary in the subdivision.
+  - The lots are not contiguous because any road separates them in the subdivision.
+  - The lots are contiguous because the road is not a state-established or publicly used road in the
+    subdivision.
+  - The lots are not contiguous because the road is a man-made barrier in the subdivision.
+key: C
+explanation: Section § 32-2101(18)(b)(ii) provides that lots are not considered contiguous only if
+  separated by a road established or maintained by a governmental entity and used continuously by
+  the public for at least five years. A privately maintained dirt road does not meet this criterion,
+  so the lots remain contiguous; the option stating that the lots are contiguous because they share
+  a common boundary in the subdivision correctly states this. The option stating that the lots are
+  not contiguous because any road separates them in the subdivision incorrectly asserts that any
+  road breaks contiguity, disregarding the exemption.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(18)(b)(ii)
+  url: null
+  quoted_text: (ii) A road, street or highway that has been established by this state or by any agency
+    or political subdivision of this state, that has been designated by the federal government as an
+    interstate highway or that has been regularly maintained by this state or by any agency or
+    political subdivision of this state and has been used continuously by the public for at least
+    the last five years.
+  secondary: []
+terms:
+  - contiguous
+  - road
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

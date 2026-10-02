@@ -1,0 +1,53 @@
+id: AZ-20-0025
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee wants to advertise a 0.9‑acre parcel as "approximately 0.9 acre" in an online
+  listing. The parcel actually measures 39,204 square feet. Is this advertisement compliant with
+  Arizona advertising rules?
+options:
+  - Compliance based on the belief that 'acre' can be used for any parcel size
+  - Non‑compliance due to the parcel being less than 43,560 square feet
+  - Compliance because online advertisements are exempt from acreage rules
+  - Non‑compliance because written owner consent was not obtained
+key: B
+explanation: Under Arizona Administrative Code § R4-28-502(H), a licensee may not use the term
+  “acre,” either alone or modified, unless the land area is at least 43,560 square feet. The parcel
+  measures 39,204 square feet, which is below that threshold, so the advertisement violates the
+  rule. The notion that online listings are exempt is incorrect.
+citation:
+  source: Ariz. Admin. Code tit. 4, ch. 28 (R4-28-101 to R4-28-1310) — A.A.C. Title 4, Chapter 28 -
+    State Real Estate Department (Commissioner's Rules); Secretary of State PDF, Internet Archive
+    capture 2026-07-27 — § R4-28-502(H)
+  url: null
+  quoted_text: |-
+    A licensee shall not use the term “acre,” either alone or modi-
+    fied, unless referring to an area of land representing at least
+    43,560 square feet
+  secondary: []
+math:
+  worked_solution: "Convert the parcel size to acres: 39,204 sq ft ÷ 43,560 sq ft per acre = 0.9 acre.
+    Compare the square‑footage to the minimum required: 39,204 sq ft < 43,560 sq ft, therefore the
+    parcel is smaller than one acre and the term “acre” may not be used."
+  formulas:
+    - Acres = SquareFeet ÷ 43,560
+    - SquareFeet < 43,560
+  onscreen_calculator_only: false
+terms:
+  - acre
+  - advertising
+  - measurement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

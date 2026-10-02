@@ -1,0 +1,45 @@
+id: TX-1101-0075
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent creates a single-member LLC that receives referral fees for directing clients to
+  brokers, performs no other brokerage activities, is registered with the Commission, and is owned
+  less than half by the sales agent (the remainder by an unrelated investor). Under TREC rule
+  §535.5(h), is the LLC required to be licensed as a broker?
+options:
+  - The LLC is not required to be licensed because it performs no other brokerage acts
+  - The LLC must be licensed as a broker because it receives referral fees
+  - The LLC is not required to be licensed because it is registered with the Commission
+  - The LLC must be licensed as a broker because it is less than 51% owned by the sales agent
+key: D
+explanation: The rule exempts a business entity from licensing only if it is at least 51% owned by
+  the license holder; if the sales agent owns less than half, the exemption does not apply, so the
+  LLC must be licensed. The distractor claiming no license is needed due to performing no other
+  brokerage acts ignores the ownership requirement.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.5"
+  url: null
+  quoted_text: is at least 51 percent owned by the license holder on whose behalf the business entity
+    receives compensation
+  secondary: []
+terms:
+  - ownership
+  - exemption
+  - LLC
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

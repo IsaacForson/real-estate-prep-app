@@ -1,0 +1,42 @@
+id: AK-88-0135
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker signs a written personal services contract with a property owner to locate a tenant
+  for a residential unit. The broker shows the unit to several prospects, and one prospect signs a
+  one-year lease. The property owner later refuses to pay the broker, arguing that the lease term
+  was shorter than expected. Under Alaska Statute § 08.88.361, is the broker entitled to a
+  commission?
+options:
+  - No, because a commission is only earned upon closing of a sale, even if a lease was signed
+  - No, because the lease term was shorter than anticipated, even though the broker performed the
+    service
+  - Yes, because the broker fulfilled the contract terms by procuring a tenant who signed a lease
+  - No, because the owner did not receive rent, despite the broker securing a tenant
+key: C
+explanation: Under § 08.88.361, a commission is earned when the broker fulfills the terms of a
+  written personal services contract; locating a tenant who signs a lease satisfies the contract
+  terms, so the broker has earned the commission regardless of lease length or owner’s objections.
+citation:
+  source: Alaska Stat. § 08.88.361
+  url: null
+  quoted_text: A commission is earned when the real estate broker fulfills the terms of a written
+    personal services contract.
+  secondary: []
+terms:
+  - commission
+  - personal services contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

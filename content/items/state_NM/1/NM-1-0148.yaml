@@ -1,0 +1,46 @@
+id: NM-1-0148
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A member of the New Mexico Real Estate Commission resigns with two years remaining on a
+  five-year term. According to N.M. Stat. Ann. § 61-29-4, how many years will the governor’s
+  appointee serve to complete the unexpired term?
+options:
+  - The appointee will serve two years.
+  - The appointee will serve three years.
+  - The appointee will serve five years.
+  - The appointee will serve four years.
+key: A
+explanation: The statute requires the governor to fill vacancies by appointing a member to complete
+  the unexpired term. With two years left on the term, the appointee serves exactly those two years.
+citation:
+  source: N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-4
+  url: null
+  quoted_text: In the event of vacancies, the governor shall appoint members to complete unexpired terms.
+  secondary: []
+math:
+  worked_solution: Total statutory term = 5 years. Years remaining after resignation = 2 years
+    (given). Therefore, the appointee serves 2 years to complete the unexpired term.
+  formulas:
+    - Unexpired term = Years remaining
+  onscreen_calculator_only: false
+terms:
+  - vacancy
+  - term
+  - appointment
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

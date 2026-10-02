@@ -1,0 +1,50 @@
+id: MA-87D-0085
+jurisdiction: MA
+bank: state_MA
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson working under a broker receives a $5,000 earnest money check from a buyer.
+  According to Massachusetts regulations, what must the salesperson do with the check?
+options:
+  - Immediately turn the check over to the employing broker
+  - Promptly deposit the check into a personal escrow account
+  - Quickly give the check to the buyer's attorney promptly
+  - Immediately place the check in salesperson's trust account
+key: A
+explanation: Under 254 CMR 3.00(10)(c), a salesperson engaged by another broker must immediately
+  turn over all deposit money received to the employing broker and may not hold client funds.
+  Depositing into a personal account, holding the check, or giving it to an attorney violates this
+  requirement.
+citation:
+  source: 254 CMR 3.00 — 254 CMR 3.00 — Professional Standards of Practice (Board of Registration of
+    Real Estate Brokers and Salespersons), official mass.gov PDF read via Internet Archive capture
+    of 2025-11-01 because mass.gov returns 403 to scripts § 3.00(10)(c)
+  url: null
+  quoted_text: |-
+    A real estate salesperson or broker engaged
+    by another broker shallimmediately turn over all deposit money or other money received to such
+    employing broker. No salesperson shall at any time hold client funds
+  secondary: []
+math:
+  worked_solution: The earnest money check amount is given as $5,000; no arithmetic steps are required
+    to answer the question.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - salesperson
+  - broker
+  - deposit
+  - escrow
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

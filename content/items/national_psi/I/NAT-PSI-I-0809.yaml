@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0809
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A rectangular lot measures 80 feet of frontage and 120 feet deep. What is its area in square feet?
+options:
+  - 4,800 square feet
+  - 400 square feet
+  - 9,600 square feet
+  - 200 square feet
+key: C
+explanation: The area of a rectangle is found by multiplying its frontage by its depth. Multiplying
+  80 feet by 120 feet yields 9,600 square feet, which corresponds to the answer stating 9,600 square
+  feet. The answer stating 400 square feet results from multiplying frontage by half the depth (80 ×
+  60), a common mistake when confusing the formula for triangle area.
+citation:
+  source: "REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) § 3.6"
+  url: null
+  quoted_text: "Area uses ordinary geometry: rectangle, length times width"
+  secondary: []
+math:
+  worked_solution: 80 feet × 120 feet = 9,600 square feet
+  formulas:
+    - Area = frontage × depth
+  onscreen_calculator_only: false
+terms:
+  - area
+  - rectangle
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

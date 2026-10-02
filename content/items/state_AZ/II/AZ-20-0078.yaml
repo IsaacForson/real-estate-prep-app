@@ -1,0 +1,40 @@
+id: AZ-20-0078
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Two licensees disagree about how to split a commission from a transaction; one licensee files
+  a complaint with the Arizona Real Estate Commissioner alleging the other failed to pay the agreed
+  split. Under Arizona law, what is the commissioner's likely action?
+options:
+  - Entertain the complaint and schedule a hearing to consider disciplinary action
+  - Dismiss the complaint because it involves a purely civil dispute between licensees
+  - Refer the matter to the county attorney for criminal prosecution under Arizona law
+  - Issue a consent order to resolve the dispute between the parties
+key: B
+explanation: The statute explicitly states that the commissioner shall not entertain complaints
+  regarding purely civil disputes between licensees concerning the earning, splitting, or nonpayment
+  of compensation. Therefore, the commissioner will dismiss the complaint. The other options
+  describe actions the commissioner is not authorized to take in this situation.
+citation:
+  source: Ariz. Rev. Stat. § 32-2152(B)
+  url: null
+  quoted_text: The commissioner shall not entertain complaints regarding purely civil disputes between
+    licensees concerning the earning, splitting or nonpayment of compensation.
+  secondary: []
+terms:
+  - complaint
+  - civil dispute
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

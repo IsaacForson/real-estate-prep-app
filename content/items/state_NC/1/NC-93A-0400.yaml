@@ -1,0 +1,44 @@
+id: NC-93A-0400
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "1"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Commission adopts a rule allowing a travel agent who is not a licensed broker to negotiate
+  lease agreements for vacation rentals on behalf of property owners. Under N.C. Gen. Stat. §
+  93A-3(c1), is this rule valid?
+options:
+  - The rule is valid because the Commission may authorize any person to negotiate real estate
+  - The rule is not valid because unlicensed persons may not be authorized to negotiate real estate
+  - The rule is valid provided the travel agent receives no fee or consideration
+  - The rule is not valid because only licensed brokers may pay fees to travel agents, not the
+    reverse
+key: B
+explanation: Under N.C. Gen. Stat. § 93A-3(c1), the Commission may not authorize a person or entity
+  not licensed as a broker to negotiate any real estate transaction on behalf of another. Therefore,
+  a rule allowing unlicensed travel agents to negotiate lease agreements is invalid. The claim that
+  the Commission may authorize any person to negotiate real estate is incorrect because the
+  Commission lacks authority to authorize unlicensed persons to negotiate real estate transactions,
+  regardless of the vacation rental context.
+citation:
+  source: N.C. Gen. Stat. § 93A-3(c1)
+  url: null
+  quoted_text: the Commission may not authorize a person or entity not licensed as a broker to
+    negotiate any real estate transaction on behalf of another
+  secondary: []
+terms:
+  - commission
+  - travel agent
+  - authorization
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,39 @@
+id: NY-443-0127
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre‑licensing course that includes only two hours of Land Use
+  Regulations. Does this course satisfy the state’s land use regulation requirement for licensure?
+options:
+  - The course is insufficient because it provides only 2 of the required 3 hours.
+  - The course is sufficient because total instructional hours exceed 80 by a significant margin.
+  - The course is insufficient because it omits land use regulation entirely from the curriculum.
+  - The course is sufficient because the missing hour can be completed through continuing education.
+key: A
+explanation: The rule requires three hours of Land Use Regulations; providing only two fails to meet
+  that specific requirement. The distractor claiming sufficiency because total instructional hours
+  exceed 80 is wrong because the land use regulation requirement is separate and cannot be satisfied
+  by excess hours in other subjects.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Land Use Regulations    3
+  secondary: []
+terms:
+  - land use
+  - requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

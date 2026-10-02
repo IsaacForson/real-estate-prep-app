@@ -1,0 +1,42 @@
+id: NAT-PSI-II-0128
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A mechanic's lien was filed on June 1, 2024 for work that began on January 15, 2024. A
+  judgment lien was recorded on March 1, 2024. Assuming state law allows the mechanic's lien to
+  relate back to the start of work, which lien has priority in a foreclosure sale?
+options:
+  - The judgment lien has priority because it was recorded before the mechanic's lien was filed.
+  - The mechanic's lien has priority because its priority relates back to January 15, 2024, which
+    precedes the judgment lien.
+  - The mechanic's lien has priority because it was filed after the judgment lien but before the
+    foreclosure sale.
+  - The judgment lien has priority because mechanic's liens are subordinate to judgment liens.
+key: B
+explanation: Under § 8.3 Priority of liens, a mechanic's lien's priority may relate back to when
+  work began if state law permits. With that assumption, the mechanic's lien's effective date is
+  January 15, 2024, which is earlier than the judgment lien's March 1, 2024 recording date, making
+  it senior. The distractor that focuses only on the filing date ignores the relation‑back rule.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - mechanic's lien
+  - judgment lien
+  - priority
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

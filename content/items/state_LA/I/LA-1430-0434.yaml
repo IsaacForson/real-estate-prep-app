@@ -1,0 +1,37 @@
+id: LA-1430-0434
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson renews her inactive real estate salesperson license on November 20, 2024.
+  According to the Louisiana Real Estate License Law, what is the delinquent fee due?
+options:
+  - $0.00
+  - $70.00
+  - $50.00
+  - $35.00
+key: C
+explanation: For renewals between November 16 and December 31, the delinquent fee is $50.00 for
+  inactive licensees. The distractor $35.00 is the renewal fee for an inactive salesperson, not the
+  delinquent fee.
+citation:
+  source: La. R.S. 37:1430–1470 § 1443(4)(c)
+  url: null
+  quoted_text: (c) November 16-- December 31 Inactive Licensees $ 50.00
+  secondary: []
+terms:
+  - delinquent fee
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

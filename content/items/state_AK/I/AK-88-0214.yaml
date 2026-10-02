@@ -1,0 +1,43 @@
+id: AK-88-0214
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker is authorized by the board of directors of a community association to collect and
+  control association funds. Under Alaska Stat. § 08.88.351(a)(4), where must the broker keep these
+  funds?
+options:
+  - In a general business account
+  - In a separate account at a bank
+  - In a personal savings account
+  - In a trust account for transactions
+key: B
+explanation: The statute directs that when a broker is authorized to collect, control, or disburse
+  association funds, those funds must be kept in a separate account in a financial institution.
+  Placing the funds in a general business, trust, or personal account would commingle them and
+  violate the requirement.
+citation:
+  source: Alaska Stat. § 08.88.351(a)(4)
+  url: null
+  quoted_text: (4) if authorized by the board of directors of a community association to collect,
+    control, or disburse association funds, keep a separate account in a financial institution for
+    the funds;
+  secondary: []
+terms:
+  - community association
+  - separate account
+  - financial institution
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

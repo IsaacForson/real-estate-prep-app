@@ -1,0 +1,44 @@
+id: NJ-1-0104
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer submits a signed, written complaint alleging that a licensee made false promises.
+  Under N.J. Stat. Ann. § 45:15-17, what must the commission do?
+options:
+  - Investigate the licensee's conduct immediately
+  - Wait for additional evidence before proceeding
+  - Refer the complaint to the agency for review
+  - Take no action unless the complaint is sworn
+key: A
+explanation: The statute requires the commission to investigate upon receipt of a verified complaint
+  in writing, so it must investigate the licensee's conduct. Waiting for additional evidence is not
+  required; the commission must act on the complaint as received.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-17"
+  url: null
+  quoted_text: The commission may, upon its own motion, and shall, upon the verified complaint in
+    writing of any person, investigate the actions of any real estate broker, broker-salesperson, or
+    salesperson
+  secondary: []
+terms:
+  - complaint
+  - investigation
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

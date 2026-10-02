@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0066
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner gives a neighbor oral permission to park a car in the driveway each weekend. After
+  the homeowner sells the property, what is the status of the neighbor's permission?
+options:
+  - The neighbor's permission continues as an easement because it was used regularly.
+  - The neighbor's permission becomes an easement in gross held by the neighbor.
+  - The neighbor's permission is terminated because a license ends upon sale of the property.
+  - The neighbor's permission becomes a profit à prendre allowing removal of soil.
+key: C
+explanation: A license is personal permission to use another's land for a particular purpose; it is
+  not an interest in land, may be oral, is revocable at will, cannot be assigned, and ends on the
+  death of either party or a sale of the property. Therefore the neighbor's permission terminates
+  upon sale. An oral permission does not create an easement because an easement requires a writing
+  under the Statute of Frauds.
+citation:
+  source: REP Ref. Property & Land Use § 7.5
+  url: null
+  quoted_text: "A license is personal permission to use another's land for a particular purpose. It is
+    not an interest in land: it may be oral, is revocable at will, cannot be assigned, and ends on
+    the death of either party or a sale of the property."
+  secondary: []
+terms:
+  - license
+  - easement
+  - sale of property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

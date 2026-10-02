@@ -1,0 +1,40 @@
+id: AK-88-0014
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson receives a referral fee from a mortgage broker for referring a
+  client. Under Alaska law, may the salesperson accept this fee?
+options:
+  - The fee is permitted because the mortgage broker is licensed in another state.
+  - The fee is permitted because the salesperson disclosed the referral to the employing broker.
+  - The fee is not permitted because the fee must come from the employing broker.
+  - The fee is permitted because the amount is less than $100.
+key: C
+explanation: Alaska law limits a real estate salesperson’s acceptance of fees or commissions to
+  those received only from the salesperson’s employing broker. Consequently, a referral fee paid by
+  a mortgage broker is not permissible, even if the salesperson disclosed the referral to the
+  employing broker.
+citation:
+  source: Alaska Stat. § 08.88.401(b)(2)
+  url: null
+  quoted_text: who is an associate broker or a real estate salesperson licensed in this state may
+    accept a fee or commission for performance of an act for which a license is required by this
+    chapter only from the licensee's employing broker
+  secondary: []
+terms:
+  - fee
+  - employing broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

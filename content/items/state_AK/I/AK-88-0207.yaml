@@ -1,0 +1,40 @@
+id: AK-88-0207
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee requests a hearing after receiving notice of a proposed temporary order to stop a
+  deceptive practice under Alaska Stat. § 08.88.037(b)(1). Assuming the hearing is held, within how
+  many days must the commission issue a final order after the hearing?
+options:
+  - 30 days
+  - 10 days
+  - 15 days
+  - 5 days
+key: B
+explanation: The statute states that after a hearing is held, the commission shall issue a final
+  order within 10 days. This timeline is distinct from the 15‑day period that applies when no
+  hearing is requested and the temporary order becomes final by default. Therefore, the correct
+  period after a hearing is 10 days.
+citation:
+  source: Alaska Stat. § 08.88.037(b)(1)
+  url: null
+  quoted_text: the commission shall issue a final order within 10 days after the hearing;
+  secondary: []
+terms:
+  - temporary order
+  - hearing
+  - final order
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

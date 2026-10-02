@@ -1,0 +1,40 @@
+id: CO-2-0133
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What specific language must an Attorney Form contain according to 4 CCR 725-1 § 6?
+options:
+  - 'The form must contain the language: "This form has been approved by the Colorado Real Estate
+    Commission".'
+  - 'The form must contain the language: "This form has not been approved by the Colorado Real
+    Estate Commission".'
+  - 'The form must contain the language: "This form is approved by the Colorado Bar Association".'
+  - 'The form must contain the language: "This form is provided by the client in the transaction".'
+key: B
+explanation: The rule for Attorney Forms explicitly requires the statement that the form has not
+  been approved by the Colorado Real Estate Commission. Options stating the opposite approval or
+  referencing other entities do not match this requirement.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) — § 6
+  url: null
+  quoted_text: "The form must contain the language that says: “This form has not been approved by the
+    Colorado Real Estate Commission”."
+  secondary: []
+terms:
+  - attorney form
+  - commission-approved form
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

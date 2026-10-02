@@ -1,0 +1,47 @@
+id: WI-452-0021
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wisconsin law, if a deed conveying property to two or more persons as tenants in common
+  does **NOT** specify the size of each owner's interest, what is the presumed ownership share?
+options:
+  - Ownership shares determined by the order of names
+  - Interests proportional to each owner's contribution
+  - Equal undivided interests for each owner
+  - Unequal shares unless the deed states otherwise
+key: C
+explanation: The statute states that when no intent is expressed in the deed, tenants in common are
+  presumed to own equal undivided interests for the duration of the tenancy. Therefore, the correct
+  answer is equal undivided interests for each owner. The distractor suggesting interests
+  proportional to each owner's contribution is incorrect because the law does not look to
+  contribution unless the parties expressly agree otherwise. The other distractors propose unequal
+  shares or ownership based on name order, which the statute does not support absent expressed
+  intent.
+citation:
+  source: Wis. Stat. ch. 700 — Wisconsin Statutes Chapter 700, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 700.20
+  url: null
+  quoted_text: |-
+    if no intent is expressed in the document, instrument
+    or bill of sale, tenants in common are presumed to own equal un-
+    divided interests for the duration of the tenancy
+  secondary: []
+terms:
+  - tenancy in common
+  - undivided interest
+  - presumption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

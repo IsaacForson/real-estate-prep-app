@@ -1,0 +1,43 @@
+id: NY-443-0076
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker's agent is engaged by a listing agent to assist in locating a buyer for a residential
+  property. Under NY Real Property Law §443, who is liable for the broker's agent's acts?
+options:
+  - The listing agent
+  - The buyer's agent
+  - The broker's agent
+  - The seller's agent
+key: A
+explanation: Under §443, a listing agent, buyer’s agent, or tenant’s agent who provides direction
+  and instruction to a broker’s agent assumes liability for that broker’s agent’s acts. Because the
+  listing agent engaged the broker’s agent, the listing agent bears that liability. The buyer’s
+  agent would only be liable if it had engaged the broker’s agent, which it did not in this
+  scenario.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 443
+  url: null
+  quoted_text: The listing agent, buyer’s agent or tenant’s agent do provide direction and instruction
+    to the broker’s agent and therefore the listing agent, buyer’s agent or tenant’s agent will have
+    liability for the broker’s agent.
+  secondary: []
+terms:
+  - broker's agent
+  - listing agent
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

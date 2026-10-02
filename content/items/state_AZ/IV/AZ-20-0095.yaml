@@ -1,0 +1,40 @@
+id: AZ-20-0095
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Arizona's licensing definitions, what does the term 'employing broker' mean?
+options:
+  - A natural person who is licensed as a broker and designated to act for an employer, including
+    the authority to supervise associated licensees and manage office operations
+  - A broker who employs salespersons to perform real estate activities, overseeing their
+    transactions and ensuring compliance with licensing laws
+  - A broker entity registered with the corporation commission or a sole proprietorship where the
+    sole proprietor is a licensed broker
+  - A person who holds a broker license and works under another broker's supervision, performing
+    brokerage activities on behalf of the supervising broker
+key: C
+explanation: An employing broker is either a broker entity registered with the Corporation
+  Commission or a sole proprietorship whose owner is a licensed broker, as defined in Ariz. Rev.
+  Stat. § 32-2101(26).
+citation:
+  source: Ariz. Rev. Stat. § 32-2101(26)
+  url: null
+  quoted_text: (a) Broker entity pursuant to section 32-2125, subsection A. (b) Sole proprietorship if
+    the sole proprietor is a broker licensed pursuant to this chapter.
+  secondary: []
+terms:
+  - employing broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

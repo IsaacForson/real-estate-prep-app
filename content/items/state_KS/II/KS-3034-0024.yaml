@@ -1,0 +1,44 @@
+id: KS-3034-0024
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Kansas resident who holds a valid real estate broker's license in Oklahoma but does not hold
+  a Kansas license negotiates the sale of a residential property in Topeka for a commission. Can
+  this individual recover the commission in a Kansas court?
+options:
+  - Yes, because the individual is licensed in another jurisdiction
+  - Yes, because the individual acted as a broker in the transaction
+  - No, because the individual was not licensed in Kansas at the time of the service
+  - No, because the individual failed to designate a supervising broker
+key: C
+explanation: Under Kan. Stat. Ann. § 58-3038(a), no recovery can be had for compensation for acts
+  requiring a license unless the person was duly licensed under the Kansas act at the time of
+  offering to perform the act. The individual was not licensed in Kansas, so they cannot recover the
+  commission. The exception in subsection (c) applies only to referral fees, not to the commission
+  for negotiating the sale itself.
+citation:
+  source: Kan. Stat. Ann. § 58-3038(a)
+  url: null
+  quoted_text: no action shall be instituted or recovery be had in any court of this state by any
+    person for compensation for any act or service, the performance of which requires a license
+    under this act, unless such person was duly licensed under this act at the time of offering to
+    perform any such act
+  secondary: []
+terms:
+  - recovery
+  - compensation
+  - licensure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

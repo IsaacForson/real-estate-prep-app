@@ -1,0 +1,39 @@
+id: NE-56-0091
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An 18‑year‑old high school graduate submits an application for a salesperson license.
+  According to Neb. Rev. Stat. § 81-885.13(1)(a), what is the correct outcome?
+options:
+  - License will be denied because the applicant is under the required age of nineteen.
+  - License will be denied unless the applicant completes a home school program.
+  - License will be issued after the applicant completes six hours of professional practice study.
+  - License will be issued because the applicant meets the education requirement.
+key: A
+explanation: The statute prohibits issuing a broker’s or salesperson’s license to anyone who has not
+  attained nineteen years of age. Since the applicant is only eighteen, the license must be denied.
+  The other options either ignore the age barrier or introduce irrelevant requirements.
+citation:
+  source: Neb. Rev. Stat. § 81-885.13(1)(a)
+  url: null
+  quoted_text: No broker's or salesperson's license shall be issued to any person who has not attained
+    the age of nineteen years.
+  secondary: []
+terms:
+  - age
+  - license
+  - applicant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,45 @@
+id: MT-51-0159
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Applicant A completed 72 hours of approved prelicensing education 22 months ago and seeks a
+  salesperson license. Applicant B completed 55 hours of approved prelicensing education 10 months
+  ago and seeks a broker license. Which applicant satisfies the education requirement for the
+  license they are seeking?
+options:
+  - Neither applicant
+  - Applicant A only
+  - Both applicants
+  - Applicant B only
+key: B
+explanation: For a salesperson, subsection (8)(a) requires 70 hours of education within the 24
+  months preceding application; 72 hours at 22 months meets this. For a broker, subsection (9)(a)
+  requires 60 hours within the 18 months preceding application; 55 hours at 10 months falls short,
+  so only Applicant A qualifies.
+citation:
+  source: Mont. Admin. R. 24.210.101–24.210.1005 (Board of Realty Regulation) — Administrative Rules
+    of Montana, Title 24, Chapter 210 — Board of Realty Regulation (all effective rules) — §
+    24.210.611(8)(a)
+  url: null
+  quoted_text: submit proof of completing 70 hours of approved prelicensing education obtained within
+    a period of 24 months immediately preceding the date of the submission of the application
+  secondary: []
+terms:
+  - prelicensing
+  - education
+  - salesperson
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,47 @@
+id: NAT-PV-I-0698
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A legal nonconforming grocery has operated for years in a single-family zone. The owner closes
+  the business for 14 months, and the local ordinance specifies a 12‑month abandonment period. What
+  is the status of the right to resume the use?
+options:
+  - The right to resume the use remains valid because the owner intends to reopen
+  - The right to resume the use is lost due to abandonment for the ordinance‑specified period
+  - The right to resume the use continues as long as the property is not sold
+  - The right to resume the use depends on whether the owner pays a renewal fee
+key: B
+explanation: Under the rule, if a nonconforming use is closed for the period specified in the local
+  abandonment ordinance, the right to resume that use is lost. The grocery was closed for 14 months,
+  which exceeds the 12‑month abandonment period, so the right to resume the use is gone. The
+  statement that the right to resume the use is lost due to abandonment for the ordinance‑specified
+  period correctly describes this outcome. The claim that the right depends on paying a renewal fee
+  is incorrect because abandonment is determined by the length of closure, not by fee payment. The
+  claim that the right continues as long as the property is not sold is incorrect because
+  abandonment ends the right regardless of ownership transfer. The claim that the right remains
+  valid because the owner intends to reopen is incorrect because intent does not override the
+  abandonment period.
+citation:
+  source: REP Ref. Property & Land Use § 5.3
+  url: null
+  quoted_text: if it closes for the ordinance's abandonment period the right to reopen is lost.
+  secondary: []
+terms:
+  - nonconforming use
+  - abandonment
+  - zoning ordinance
+  - right to resume
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

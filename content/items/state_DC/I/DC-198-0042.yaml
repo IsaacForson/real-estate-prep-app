@@ -1,0 +1,44 @@
+id: DC-198-0042
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson with 4 years and 11 months of experience applies for appointment to
+  the Board of Real Estate as a salesperson member. Is the applicant eligible?
+options:
+  - The applicant is eligible because the requirement is at least 4 years of experience.
+  - The applicant is ineligible because they have less than 5 years of experience.
+  - The applicant is eligible because salespersons need only 3 years of experience.
+  - The applicant is ineligible because they must also be a broker.
+key: B
+explanation: The key is correct because D.C. Code § 47-2853.07(d)(2) requires professional members
+  of the Board of Real Estate to have been actively engaged in their field for not less than 5 years
+  immediately prior to appointment. The applicant’s 4 years and 11 months of experience falls short
+  of this threshold, so they are not eligible. The distractor claiming eligibility based on a 4‑year
+  requirement is incorrect because the statute sets a 5‑year minimum for real estate board members.
+  The distractor suggesting salespersons need only 3 years is also wrong; the 5‑year rule applies to
+  all professional members of the Board of Real Estate regardless of license type.
+citation:
+  source: D.C. Code § 47-2853.07(d)(2)
+  url: null
+  quoted_text: Notwithstanding the above, professional members of the Board of Real Estate shall each
+    have been actively engaged in their field for not less than 5 years immediately prior to their
+    appointment to the Board and shall remain active in their field during their tenure on the Board
+  secondary: []
+terms:
+  - eligibility
+  - experience
+  - board member
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

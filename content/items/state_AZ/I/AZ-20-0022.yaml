@@ -1,0 +1,50 @@
+id: AZ-20-0022
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee sends a press release to a local newspaper announcing a new subdivision. The
+  newspaper publishes the release at no charge. Under Arizona law, how is this press release
+  classified?
+options:
+  - The press release is considered advertising because it is distributed to a newspaper, which is a
+    common practice in real estate marketing.
+  - The press release is considered advertising because it includes details about a subdivision,
+    which is a common practice in real estate marketing.
+  - The press release is NOT considered advertising because it is a press release delivered at no
+    charge for general information.
+  - The press release is considered advertising because it promotes a subdivision, which is a common
+    practice in real estate marketing.
+key: C
+explanation: Under § 32-2101(3)(a), a press release delivered to a newspaper at no charge for
+  general information is expressly excluded from the definition of advertising. Therefore, the press
+  release is not considered advertising, making the option that states the press release is NOT
+  considered advertising because it is a press release delivered at no charge for general
+  information correct. The option that claims it is considered advertising because it is distributed
+  to a newspaper incorrectly treats any newspaper distribution as advertising, ignoring the
+  statutory exemption.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2101 to 32-2109 — ARS Title 32, Ch. 20, Art. 1 - Real Estate
+    Department; General Provisions — § 32-2101(3)(a)
+  url: null
+  quoted_text: (a) Press releases or other communications delivered to newspapers, periodicals or
+    other news media for general information or public relations purposes if no charge is made by
+    the newspapers, periodicals or other news media to publish or use any part of these
+    communications.
+  secondary: []
+terms:
+  - advertising
+  - press release
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

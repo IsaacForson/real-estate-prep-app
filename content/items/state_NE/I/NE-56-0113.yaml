@@ -1,0 +1,40 @@
+id: NE-56-0113
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Commission schedules an Order to Show Cause hearing for June 10, what is the latest
+  date the notice may be sent?
+options:
+  - June 9
+  - June 6
+  - June 5
+  - June 15
+key: C
+explanation: Notice must be given not less than five days before the hearing date. For a June 10
+  hearing, the latest permissible notice date is five days prior, which is June 5. Sending notice on
+  June 6 would be only four days before, violating the rule.
+citation:
+  source: 305 Neb. Admin. Code — Title 305 NREC Rules of Practice and Procedure — complaints,
+    investigations, hearings, declaratory orders, appeals 008.07A
+  url: null
+  quoted_text: Such person shall be given not less than five (5) days' notice by registered mail,
+    certified mail, first-class mail using intelligent mail barcode
+  secondary: []
+terms:
+  - notice
+  - order
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

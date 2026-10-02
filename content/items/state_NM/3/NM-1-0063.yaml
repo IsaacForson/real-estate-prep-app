@@ -1,0 +1,42 @@
+id: NM-1-0063
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker manages a rental property under a written management agreement that lasts
+  18 months. After the agreement ends, how long must the qualifying broker retain the transaction
+  records for that property under 16.61.16.9 NMAC?
+options:
+  - 18 months
+  - 54 months
+  - 78 months
+  - 90 months
+key: D
+explanation: For property management, records must be kept for the full term of the agreement plus
+  six years from termination. Eighteen months plus six years (72 months) equals ninety months total
+  retention.
+citation:
+  source: "### 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61)
+    — NMREC License Law and Rules book, 2021 web edition — § 16.61.16.9"
+  url: null
+  quoted_text: Maintain all transaction records for six years if not performing property management,
+    and for the full term of the assignment if performing property management.
+  secondary: []
+terms:
+  - records
+  - retention
+  - property management
+  - term
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

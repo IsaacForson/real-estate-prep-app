@@ -1,0 +1,44 @@
+id: NAT-PSI-I-0086
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A description reads: 'Beginning at an iron pin at the northeast corner of Mill Road and
+  County Route 9; thence North 10 degrees East 300 feet to a pin; thence South 80 degrees East 200
+  feet to a pin; thence South 10 degrees West 300 feet to a pin on the north line of Mill Road;
+  thence along said line North 80 degrees West 200 feet to the point of beginning.' Which survey
+  system is being used?"
+options:
+  - Government lot
+  - Rectangular survey
+  - Metes and bounds
+  - Lot and block
+key: C
+explanation: The description starts at a point of beginning tied to a monument and proceeds with
+  courses of bearings and distances that return to the point of beginning, which matches the
+  definition of a metes-and-bounds description. The rectangular system uses township, range, and
+  section designations, which are absent here.
+citation:
+  source: REP Ref. Property & Land Use § 3.2
+  url: null
+  quoted_text: A metes-and-bounds description starts at a point of beginning (POB) tied to a monument
+    (an iron pin, a stone, a stream, a section corner), travels around the parcel in courses each
+    stated as a bearing and a distance (for example "North 45 degrees 30 minutes East, 210.5 feet"),
+    and must return to the point of beginning so the figure closes
+  secondary: []
+terms:
+  - metes and bounds
+  - point of beginning
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

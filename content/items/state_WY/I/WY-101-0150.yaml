@@ -1,0 +1,39 @@
+id: WY-101-0150
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wyoming law, what triggers the Wyoming Real Estate Commission's investigation of a licensee?
+options:
+  - Investigation requires a written sworn complaint only when filed with the commission
+  - Investigation requires the commission's own motion only when initiated by the commission
+  - Investigation requires either a written sworn complaint or the commission's own motion
+  - Investigation requires a court order directing an investigation of the alleged violation
+key: C
+explanation: The statute states that the commission shall investigate upon a written sworn complaint
+  or may investigate upon its own motion, meaning either trigger is sufficient. The distractors that
+  require only one trigger are incorrect because the law allows both.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real Estate
+    License Act (Articles 1-4) — § 33-28-111
+  url: null
+  quoted_text: The commission shall upon a written sworn complaint or may upon its own motion
+    investigate the actions of any licensee
+  secondary: []
+terms:
+  - investigation
+  - complaint
+  - motion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

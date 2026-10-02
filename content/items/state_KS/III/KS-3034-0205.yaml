@@ -1,0 +1,42 @@
+id: KS-3034-0205
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee pays a referral fee to another licensee who is properly licensed, knowing that the
+  payment will result in the other licensee giving a rebate to the client. Under Kansas law, is this
+  permissible?
+options:
+  - Permissible because both parties are licensed brokers
+  - Permissible if the referral fee is less than $100
+  - Not permissible because the licensee knows a rebate will result
+  - Permissible if the rebate is disclosed to the client
+key: C
+explanation: Kan. Stat. Ann. § 58-3062(a)(4) prohibits paying a referral fee when the licensee knows
+  that the payment will result in a rebate to the client. This prohibition applies regardless of
+  whether both parties are licensed or the fee amount is small. Therefore, the option stating that
+  it is permissible because both parties are licensed brokers is incorrect.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(4)
+  url: null
+  quoted_text: Pay a referral fee to a person who is properly licensed as a broker or salesperson in
+    Kansas or another jurisdiction or who holds a corporate real estate license in another
+    jurisdiction if the licensee knows that the payment of the referral fee will result in the
+    payment of a rebate by the Kansas or out-of-state licensee.
+  secondary: []
+terms:
+  - referral fee
+  - rebate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

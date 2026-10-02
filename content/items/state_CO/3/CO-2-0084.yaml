@@ -1,0 +1,43 @@
+id: CO-2-0084
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person passes the Colorado real estate broker examination but does not submit a license
+  application within one year. What happens to their examination results under Colorado law?
+options:
+  - The person may still apply for a license but must retake the exam
+  - The examination score is retained for two years before expiring
+  - The examination is automatically canceled and the passing score is terminated
+  - The examination score is transferred to a salesperson license application
+key: C
+explanation: The statute provides that failure to file the appropriate broker’s application within
+  one year of passing the exam automatically cancels the examination and terminates all rights to a
+  passing score. Therefore, the candidate must retake the exam to obtain a new score. The distractor
+  'The examination score is retained for two years before expiring' contradicts the explicit
+  cancellation rule.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-212(2)
+  url: null
+  quoted_text: Failure by the person taking an examination to file the appropriate broker’s
+    application within one year of the date the person passed the examination will automatically
+    cancel the examination, and all rights to a passing score will be terminated.
+  secondary: []
+terms:
+  - examination
+  - application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

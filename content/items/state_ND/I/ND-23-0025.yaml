@@ -1,0 +1,40 @@
+id: ND-23-0025
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A complainant files a complaint against a salesperson but omits the broker employer's name and
+  address. Under N.D. Admin. Code § 70-02-01-16(1), is the complaint valid?
+options:
+  - The complaint is valid as long as it is verified and signed.
+  - The complaint is invalid because it lacks the broker employer's name and address.
+  - The complaint is invalid unless it also includes the salesperson's license number.
+  - The complaint is valid because it includes the salesperson's name and address.
+key: B
+explanation: The rule requires that a complaint against a salesperson include the broker employer's
+  name and address. Omitting this information makes the complaint invalid. The distractor asserting
+  the complaint is valid because it includes the salesperson's name and address ignores the
+  mandatory broker employer detail.
+citation:
+  source: N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-16
+  url: null
+  quoted_text: an allegation that respondent is either a licensed broker or salesperson, and if the
+    respondent is a salesperson, then the full name and address of the broker employer;
+  secondary: []
+terms:
+  - complaint
+  - broker employer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

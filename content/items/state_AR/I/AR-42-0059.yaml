@@ -1,0 +1,50 @@
+id: AR-42-0059
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: In a disciplinary hearing, the commission determines that a licensee caused $3,000 in actual
+  damages. Can the commission award punitive damages in addition to the actual damages?
+options:
+  - The commission may award actual, compensatory damages.
+  - The commission may award punitive damages in addition to actual damages.
+  - The commission may award interest on the actual damages.
+  - The commission may award exemplary damages but not interest.
+key: A
+explanation: Ark. Code Ann. § 17‑42‑407(a) limits the commission’s authority to award only actual,
+  compensatory damages and expressly prohibits punitive, exemplary damages and interest.
+  Consequently, the commission may award the actual, compensatory damages but cannot add punitive
+  damages.
+citation:
+  source: Ark. Code Ann. § 17-42-407(a)
+  url: null
+  quoted_text: The Arkansas Real Estate Commission's jurisdiction and authority to award damages to an
+    aggrieved party pursuant to § 17-42-406 is limited to actual, compensatory damages. The
+    commission shall not award punitive or exemplary damages, nor shall it award interest on
+    damages.
+  secondary: []
+math:
+  worked_solution: The $3,000 amount of actual damages does not affect the commission’s authority.
+    Under the statute, only actual, compensatory damages may be awarded; punitive damages are
+    prohibited. Therefore, no additional punitive damages can be awarded regardless of the $3,000
+    figure.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - jurisdiction
+  - damage
+  - compensatory
+  - punitive
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

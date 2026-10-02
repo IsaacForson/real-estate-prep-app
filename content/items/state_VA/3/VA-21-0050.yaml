@@ -1,0 +1,57 @@
+id: VA-21-0050
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia's Residential Property Disclosure Act, what does the term "electronic delivery"
+  mean for providing the required disclosures?
+options:
+  - Sending the required disclosures via the Internet, provided that the sender retains sufficient
+    proof of the electronic delivery, which may be an electronic receipt of delivery, a confirmation
+    that the notice was sent by facsimile, or a certificate of service prepared by the sender
+    confirming the electronic delivery.
+  - Sending the required disclosures via email only, provided that the sender retains sufficient
+    proof of delivery, which may be a read receipt from the email server confirming that the message
+    was opened, but this method does not satisfy the statutory definition because the law requires
+    delivery over the Internet and allows fax or certificate of service as proof, not merely an
+    email read receipt.
+  - Sending the required disclosures by facsimile, provided that the sender retains sufficient proof
+    of delivery, which may be a transmission report confirming successful fax transmission, yet this
+    approach is not permissible under the statute because electronic delivery is defined as sending
+    the disclosures via the Internet, not by fax alone.
+  - Sending the required disclosures through a courier service, provided that the sender retains
+    sufficient proof of delivery, which may be a signed delivery confirmation from the courier, but
+    this method is excluded from the definition of electronic delivery, which is limited to Internet
+    transmission with allowable electronic proof.
+key: A
+explanation: Virginia Code § 55.1‑700 defines “electronic delivery” as sending the disclosures via
+  the Internet, with the sender keeping sufficient proof such as an electronic receipt, a fax
+  confirmation, or a certificate of service. The only answer that matches this definition describes
+  Internet delivery with those forms of proof. The other answers limit delivery to email, fax, or
+  courier, which the statute does not recognize as electronic delivery.
+citation:
+  source: Va. Code Ann. § 55.1-700
+  url: null
+  quoted_text: '"Electronic delivery," for purposes of delivery of the disclosures required by this
+    chapter, means sending the required disclosures via the Internet, provided that the sender
+    retains sufficient proof of the electronic delivery, which may be an electronic receipt of
+    delivery, a confirmation that the notice was sent by facsimile, or a certificate of service
+    prepared by the sender confirming the electronic delivery.'
+  secondary: []
+terms:
+  - electronic delivery
+  - disclosure
+  - proof
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

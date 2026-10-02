@@ -1,0 +1,42 @@
+id: CO-2-0188
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker refers a client to a title company for a federally related residential mortgage and
+  receives a gift card as a thank‑you. Under 4 CCR 725-1, is this referral fee permissible?
+options:
+  - The referral fee is permissible under RESPA and Colorado rule.
+  - The referral fee is not permissible under RESPA and Colorado rule.
+  - The referral fee is permissible if disclosed in writing to the client.
+  - The referral fee is permissible if the value is less than $25.
+key: B
+explanation: The rule prohibits accepting any thing of value for referrals in federally related
+  residential mortgage transactions, so the gift card is not allowed. The option suggesting
+  permissibility if disclosed is wrong because disclosure does not override the prohibition.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) 6.21. Referral Fees and RESPA
+  url: null
+  quoted_text: A Broker or Brokerage Firm, whether engaged in an Affiliated Business Arrangement
+    pursuant to section 12-10-218, C.R.S. or not, will not accept or give any incentive,
+    disincentive, remuneration, commission, fee, or other Thing of Value to or from a settlement
+    service provider for the referral of business in a real estate transaction involving a federally
+    related residential mortgage transaction.
+  secondary: []
+terms:
+  - referral fee
+  - RESPA
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

@@ -1,0 +1,39 @@
+id: DC-198-0095
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a property manager license submits the application but forgets to have it
+  sworn to before a notary public. What must the applicant do to complete the application
+  requirement under DCMR Title 17, Chapter 26?
+options:
+  - Having the application notarized before submission
+  - Submitting a new application on the prescribed form
+  - Paying the required application fee with the submission
+  - Providing evidence of having passed the examination
+key: A
+explanation: Section 2603.1(d) requires the application to be sworn to or affirmed before a notary
+  public; therefore the applicant must have the application notarized. Submitting a new application
+  is unnecessary because the original only needs notarization.
+citation:
+  source: 17 DCMR ch. 26, §§ 2600–2699 § 2603.1
+  url: null
+  quoted_text: Have the application sworn to or affirmed before a notary public
+  secondary: []
+terms:
+  - notarization
+  - application
+  - property manager
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

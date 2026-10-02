@@ -1,0 +1,44 @@
+id: ID-20-0090
+jurisdiction: ID
+bank: state_ID
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker has completed a sale and received signed closing statements from the escrow agent.
+  The broker wishes to withdraw their commission now. Under Idaho Code § 54-2046(4), what must occur
+  before the broker can disburse any portion of the commission?
+options:
+  - Obtaining written, signed authorization from the buyer and seller
+  - Receiving a court order authorizing the disbursement
+  - Delivering signed closing statements and confirming buyer and seller payment
+  - Waiting until the closing agent provides a receipt for the disbursement
+key: C
+explanation: Subsection (4) allows commission disbursement only after either written authorization
+  from the buyer and seller OR delivery of signed closing statements to the broker and payment to
+  the parties. Since the scenario provides no written authorization, the broker must have delivered
+  the signed closing statements and confirmed payment. The distractor about obtaining written
+  authorization describes an alternative condition that is not satisfied in the given facts.
+citation:
+  source: Idaho Code § 54-2046(4)
+  url: null
+  quoted_text: No disbursement of any portion of the broker’s commission shall take place without
+    prior written, signed authorization from the buyer and seller or until copies of the closing
+    statements, signed by the buyer and seller, have been delivered to the broker and until the
+    buyer or seller has been paid the amount due as determined by the closing statement.
+  secondary: []
+terms:
+  - commission
+  - closing statement
+  - authorization
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

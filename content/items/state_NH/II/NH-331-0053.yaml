@@ -1,0 +1,46 @@
+id: NH-331-0053
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson who performed services while licensed with Broker Alpha attempts to collect a
+  commission from Broker Beta, with whom they were never affiliated. According to RSA 331-A:32, may
+  the salesperson sue Broker Beta for the commission?
+options:
+  - The salesperson may sue Broker Beta only with proof of commission.
+  - The salesperson may sue Broker Beta for the earned commission.
+  - The salesperson may not sue Broker Beta; sue Broker Alpha instead.
+  - The salesperson may not sue Broker Beta without a prior complaint.
+key: C
+explanation: RSA 331-A:32 provides that no action for compensation may be instituted unless the
+  person was duly licensed at the time of the act. Thus the salesperson must sue Broker Alpha, the
+  broker with whom they were licensed when services were rendered. The distractor allowing suit
+  against Broker Beta contradicts the licensing requirement.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:32
+  url: null
+  quoted_text: No action or suit shall be instituted, nor recovery be had, in any court of this state
+    by any person for compensation for any act done or service rendered as a broker or salesperson
+    under this chapter, unless such person was duly licensed under this chapter as a broker or
+    salesperson at the time of offering to perform any such act or service.
+  secondary: []
+terms:
+  - commission
+  - broker
+  - salesperson
+  - license
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

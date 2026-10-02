@@ -1,0 +1,42 @@
+id: AZ-20-0290
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An instructor applicant who is not a panelist, guest speaker, attorney, or out‑of‑state
+  instructor has not attended the required three‑hour professional seminar. Under Arizona law, what
+  is the correct way for this applicant to still qualify for instructor approval?
+options:
+  - The applicant may substitute the seminar with additional teaching experience
+  - The applicant is automatically ineligible for instructor approval
+  - The applicant may request a waiver that the commissioner may grant after review
+  - The applicant must retake the seminar before any approval can be considered
+key: C
+explanation: The statute allows the commissioner to waive the three‑hour professional‑seminar
+  requirement for instructor applicants based on an individual request review. Substituting
+  experience or automatically denying approval are not permitted, and retaking the seminar is
+  unnecessary if a waiver is granted. Therefore, requesting a waiver that the commissioner may
+  approve after review is the proper course.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2121 to 32-2137 — ARS Title 32, Ch. 20, Art. 2 - Licensing — § 32-2135(L)
+  url: null
+  quoted_text: At the discretion of the commissioner this requirement may be waived based on
+    individual request review.
+  secondary: []
+terms:
+  - waiver
+  - professional seminar
+  - instructor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

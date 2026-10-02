@@ -1,0 +1,52 @@
+id: PA-9-0064
+jurisdiction: PA
+bank: state_PA
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson receives a $75 gift card from a buyer as a thank‑you after closing a residential
+  sale. The salesperson did not inform the broker. According to 63 P.S. § 455.604(a)(12), how should
+  this action be classified?
+options:
+  - The salesperson's acceptance of the gift card is permissible because it is a nominal gift under
+    $100.
+  - The salesperson's acceptance of the gift card is permissible because the salesperson disclosed
+    it to the buyer.
+  - The salesperson's acceptance of the gift card is prohibited because it is valuable consideration
+    received from a person other than the broker.
+  - The salesperson's acceptance of the gift card is permissible because the buyer is not a licensed
+    real estate broker.
+key: C
+explanation: The rule forbids a salesperson from receiving any valuable consideration for performing
+  licensed acts from anyone other than the affiliated broker. The gift card constitutes valuable
+  consideration from the buyer, so accepting it is prohibited regardless of its value or whether the
+  salesperson told the buyer. Claims that the gift is allowed because the buyer is not a broker,
+  because it is under $100, or because the salesperson disclosed it to the buyer are all contrary to
+  the provision.
+citation:
+  source: 63 P.S. § 455.604(a)(12)
+  url: null
+  quoted_text: (12) Accepting a commission or any valuable consideration by a salesperson or associate
+    broker for the performance of any acts specified in this act, from any person, except the
+    licensed real estate broker with whom he is affiliated.
+  secondary: []
+math:
+  worked_solution: The stem mentions a $75 gift card; no arithmetic steps are needed to answer the question.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - valuable consideration
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

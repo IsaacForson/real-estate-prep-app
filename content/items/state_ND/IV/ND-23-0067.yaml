@@ -1,0 +1,52 @@
+id: ND-23-0067
+jurisdiction: ND
+bank: state_ND
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Under N.D. Cent. Code ch. 43-23 § 43-23-14.1, a broker who receives a $2,000 earnest money
+  deposit must:"
+options:
+  - The broker must deposit the funds into the broker's personal checking account and track them
+    separately.
+  - The broker must place the funds in a separate noninterest-bearing trust account immediately.
+  - The broker must hold the funds in the broker's escrow account at the title company without
+    recording them.
+  - The broker must deposit the funds into a trust account but may commingle up to $1,000 of
+    personal funds for service charges.
+key: B
+explanation: N.D. Cent. Code ch. 43-23 § 43-23-14.1 requires brokers to deposit all nonpersonal
+  funds into a separate noninterest-bearing trust account immediately and prohibits commingling
+  personal funds except for a small specified amount. Depositing into a personal account violates
+  the commingling prohibition.
+citation:
+  source: N.D. Cent. Code ch. 43-23 § 43-23-14.1
+  url: null
+  quoted_text: Except as otherwise provided in this section, every broker, at all times, shall
+    maintain in the broker's name or firm name, a separate, noninterest-bearing trust account
+    designated as such in a federally insured financial institution in this state in which the
+    broker immediately shall place as a demand deposit all funds not the broker's own coming into
+    the broker's possession.
+  secondary: []
+math:
+  worked_solution: The item involves a dollar amount ($2,000) but requires no arithmetic computation;
+    the correct action is a procedural requirement to deposit the full amount into a trust account
+    immediately. No calculation is performed.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - earnest money
+  - commingling
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

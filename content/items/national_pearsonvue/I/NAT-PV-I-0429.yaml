@@ -1,0 +1,43 @@
+id: NAT-PV-I-0429
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has an unpaid property tax lien recorded in 2023, a first mortgage recorded in
+  2020, and a mechanic's lien recorded in 2024 for work completed in 2022. In a foreclosure sale,
+  which lien is paid first from the proceeds?
+options:
+  - the mechanic's lien
+  - the property tax lien
+  - the first mortgage lien
+  - the surplus to the owner
+key: B
+explanation: Property tax liens have priority over all other liens, regardless of when they were
+  recorded, so the tax lien is satisfied first. The first mortgage, although recorded earlier, is
+  junior to the tax lien, as is the mechanic's lien. Any remaining surplus after all liens are paid
+  goes to the owner.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - lien
+  - priority
+  - foreclosure
+  - property tax
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

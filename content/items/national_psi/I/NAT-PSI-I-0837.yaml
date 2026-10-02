@@ -1,0 +1,40 @@
+id: NAT-PSI-I-0837
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property owner fails to pay the annual property tax bill. What action may the taxing
+  authority take to enforce the lien?
+options:
+  - Filing a lis pendens notice against the title
+  - Placing a mechanic's lien on the property title
+  - Initiating a tax foreclosure sale to satisfy debt
+  - Seeking a judgment lien on the owner's property
+key: C
+explanation: The rule states that if a lien is unpaid, the lienholder can force a sale and be paid
+  from the proceeds. Therefore, the taxing authority may initiate a foreclosure sale to satisfy the
+  tax debt. Filing a lis pendens notice merely records pending litigation and does not itself
+  collect the debt.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: if unpaid, the lienholder can force a sale and be paid from the proceeds.
+  secondary: []
+terms:
+  - lien
+  - foreclosure
+  - tax
+  - enforcement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

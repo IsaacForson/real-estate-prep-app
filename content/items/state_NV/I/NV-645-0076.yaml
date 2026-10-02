@@ -1,0 +1,52 @@
+id: NV-645-0076
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Nevada-licensed salesperson receives a $500 referral fee from a mortgage lender for
+  directing a buyer to that lender. The salesperson’s employing broker is unaware of the payment.
+  According to NRS 645.630(c), which statement is correct?
+options:
+  - The salesperson may keep the fee if the buyer signs a written disclosure acknowledging the
+    payment.
+  - The salesperson may keep the fee if the broker provides a retroactive authorization letter.
+  - The salesperson may be disciplined for accepting a fee from anyone other than the broker.
+  - The salesperson may keep the fee if the amount is less than five hundred dollars.
+key: C
+explanation: NRS 645.630(c) prohibits a salesperson from accepting a commission or valuable
+  consideration from anyone other than the employing broker or owner‑developer. Therefore, accepting
+  a referral fee from a mortgage lender subjects the salesperson to disciplinary action. The idea
+  that broker approval after the fact permits the fee is incorrect because the rule bars the
+  acceptance regardless of later approval.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.630(c)
+  url: null
+  quoted_text: Accepting a commission or valuable consideration as a real estate broker-salesperson or
+    salesperson for the performance of any of the acts specified in this chapter or chapter 119 or
+    119A of NRS from any person except the licensed real estate broker with whom he or she is
+    associated or the owner-developer by whom he or she is employed.
+  secondary: []
+math:
+  worked_solution: The stem states a referral fee of $500. No calculation is needed to answer the question.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - broker
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

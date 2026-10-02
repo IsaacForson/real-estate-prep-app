@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0081
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Grantor conveys a parcel to A, who does not record. Later the same grantor conveys the parcel
+  to B, who pays value, has no actual or constructive notice of A's deed, and records first. In a
+  race-notice jurisdiction, who prevails?
+options:
+  - The first grantee (A) prevails because they took possession first
+  - The second grantee (B) prevails because they lacked notice and recorded first
+  - The first grantee (A) prevails because they recorded before any notice arose
+  - The second grantee (B) prevails because they paid consideration
+key: B
+explanation: "Under a race-notice statute, a later purchaser prevails only if they lack notice of
+  the prior interest and record first. B meets both requirements: B had no notice and recorded
+  before A. Therefore B prevails. The distractor that A prevails due to possession is incorrect
+  because possession does not determine priority under recording acts; lack of notice and recording
+  first are required."
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a race-notice statute the later purchaser wins only by both lacking notice and
+    recording first.
+  secondary: []
+terms:
+  - race-notice statute
+  - notice
+  - recording
+  - purchaser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

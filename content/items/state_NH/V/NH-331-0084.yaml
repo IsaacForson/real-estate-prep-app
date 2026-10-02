@@ -1,0 +1,54 @@
+id: NH-331-0084
+jurisdiction: NH
+bank: state_NH
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee learns that a prospective buyer previously received treatment for opioid addiction
+  but has been sober for two years and is not currently using any illegal substances. Under the New
+  Hampshire Law Against Discrimination, how should the licensee treat the buyer’s condition?
+options:
+  - The buyer is not protected because opioid addiction is not a recognized disability
+  - The buyer is considered to have a disability due to a record of impairment
+  - The buyer is only protected if they request a reasonable accommodation
+  - The buyer is excluded because addiction to a controlled substance is not a disability
+key: B
+explanation: Under RSA 354‑A:2(IV), disability includes a record of a physical or mental impairment.
+  Past opioid addiction therefore qualifies as a disability. The exclusion for current illegal use
+  of a controlled substance does not apply to a past record, so the buyer is protected.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 354-A — RSA Chapter 354-A, official General Court page read via
+    Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts § 354-A:2(IV)
+  url: null
+  quoted_text: >-
+    Disability" means, with respect to a person:
+
+
+    (a) A physical or mental impairment which substantially limits one or more of such person's
+    major life activities;
+
+
+    (b) A record of having such an impairment; or
+
+
+    (c) Being regarded as having such an impairment.
+
+
+    Provided, that "disability" does not include current, illegal use of or addiction to a
+    controlled substance as defined in the Controlled Substances Act (21 U.S.C. 802 sec. 102
+  secondary: []
+terms:
+  - disability
+  - record
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

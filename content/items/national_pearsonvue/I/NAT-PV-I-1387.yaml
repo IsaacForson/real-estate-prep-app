@@ -1,0 +1,38 @@
+id: NAT-PV-I-1387
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a debt secured by a lien is **NOT** satisfied, what can the lienholder do to obtain payment?
+options:
+  - Request a loan modification from the mortgage lender
+  - Seek a court order to garnish the debtor's wages
+  - File a complaint with the federal housing agency
+  - Force a sale of the property and be paid from the proceeds
+key: D
+explanation: If a debt secured by a lien remains unpaid, the lienholder may enforce the lien by
+  forcing a sale of the property and receiving payment from the sale proceeds. Requesting a loan
+  modification is a borrower‑initiated change to loan terms, not a lienholder remedy. Seeking a wage
+  garnishment is a remedy for unsecured debts, not for a lien on property. Filing a complaint with a
+  federal housing agency does not provide a mechanism to collect on a lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: if unpaid, the lienholder can force a sale and be paid from the proceeds.
+  secondary: []
+terms:
+  - lien
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

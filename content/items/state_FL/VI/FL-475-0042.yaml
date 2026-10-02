@@ -1,0 +1,42 @@
+id: FL-475-0042
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate’s license expires on June 30, 2025. The associate does not submit the
+  renewal application or fee by that date. According to Florida Statute § 475.182(3), what is the
+  status of the license after June 30, 2025?
+options:
+  - The license automatically becomes voluntarily inactive.
+  - The license automatically reverts to involuntarily inactive status.
+  - The license is void and must be re‑applied for as a new applicant.
+  - The license remains active but incurs a late renewal fee.
+key: B
+explanation: According to Fla. Stat. § 475.182(3), a license that is not renewed by the end of its
+  license period automatically reverts to involuntarily inactive status. It does not remain active
+  with a late fee, it does not become voluntarily inactive, and it is not void requiring a new
+  application.
+citation:
+  source: Fla. Stat. § 475.182(3)
+  url: null
+  quoted_text: (3) Any license that is not renewed at the end of the license period prescribed by the
+    department shall automatically revert to involuntarily inactive status. Such license may
+    subsequently be renewed only if the licensee meets the other qualifications specified in s.
+    475.183.
+  secondary: []
+terms:
+  - renewal
+  - involuntarily inactive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

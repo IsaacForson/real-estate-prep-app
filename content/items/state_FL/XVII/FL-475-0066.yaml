@@ -1,0 +1,47 @@
+id: FL-475-0066
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XVII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property management firm in Miami pays a current tenant $75 for referring a prospective
+  lessee who signs a lease for an apartment unit. Under Florida Statute 475.01(13), which statement
+  is correct regarding this payment?
+options:
+  - The payment is permissible because the tenant is unlicensed but the fee is below $100.
+  - The payment is permissible because the tenant is a licensed sales associate.
+  - The payment is not permissible because the fee exceeds the $50 limit per transaction.
+  - The payment is permissible because finder’s fees are exempt for apartment complexes.
+key: C
+explanation: Subsection (13) limits finder’s fees or referral fees to a maximum of $50 per
+  transaction when paid to an unlicensed tenant. A payment of $75 exceeds this limit, making the
+  transaction impermissible. The option suggesting permissibility because the fee is below $100
+  ignores the specific $50 cap.
+citation:
+  source: Fla. Stat. ch. 475 § 475.01(13)
+  url: null
+  quoted_text: provided the value of the fee does not exceed $50 per transaction.
+  secondary: []
+math:
+  worked_solution: "Step 1: Determine the maximum allowable referral fee under Fla. Stat. §
+    475.01(13): $50 per transaction. Step 2: Note the actual payment made: $75. Step 3: Compare: $75
+    > $50. Step 4: Conclude the payment exceeds the limit and is therefore not permissible."
+  formulas:
+    - Fee > Limit (impermissible if true)
+  onscreen_calculator_only: false
+terms:
+  - finder’s fee
+  - referral fee
+  - apartment complex
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-10

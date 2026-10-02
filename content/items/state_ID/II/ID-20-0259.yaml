@@ -1,0 +1,43 @@
+id: ID-20-0259
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A maintenance worker employed by an apartment complex owner is tasked with purchasing a vacant
+  lot adjacent to the complex for the owner’s expansion plans. The worker acts within the scope of
+  employment and receives no separate compensation for the transaction. Under Idaho Code §
+  54-2003(1)(b), is the worker required to hold an Idaho real estate license to complete the
+  purchase?
+options:
+  - No, because any real estate transaction requires a license
+  - No, because the worker is an employee acting within scope of employment
+  - No, unless the worker also holds an active Idaho license
+  - No, only if the worker receives a commission for the transaction
+key: B
+explanation: Subsection (1)(b) exempts acquisition of real property by a regular employee of the
+  owner when acting within the scope of employment. Since the worker is purchasing the lot for the
+  owner and acting within scope, no license is required. The claim that any real estate transaction
+  requires a license ignores this statutory exception.
+citation:
+  source: Idaho Code § 54-2003(1)(b)
+  url: null
+  quoted_text: The acquisition, exchange or other disposition of any interest in real property or
+    business opportunity by its owner or a regular employee of the owner, acting within the scope of
+    his or her employment;
+  secondary: []
+terms:
+  - employee
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,48 @@
+id: TX-1101-0230
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A single transaction results in three judgments totaling $200,000 in claims against a license
+  holder. What is the maximum amount that may be paid from the real estate recovery trust account
+  for these claims?
+options:
+  - $125,000
+  - $150,000
+  - $100,000
+  - $200,000
+key: A
+explanation: Payments from the trust account for claims arising out of a single transaction may not
+  exceed $125,000, regardless of the number of claimants. The $200,000 option ignores this
+  per‑transaction cap.
+citation:
+  source: Tex. Occ. Code § 1101.610(a)
+  url: null
+  quoted_text: Payments from the trust account for claims, including attorney's fees, interest, and
+    court costs, arising out of a single transaction may not exceed a total of $125,000, regardless
+    of the number of claimants.
+  secondary: []
+math:
+  worked_solution: The statute sets a per‑transaction cap of $125,000. Therefore, even though the
+    total judgments equal $200,000, the most that can be paid from the recovery trust account is
+    $125,000.
+  formulas:
+    - Per‑transaction cap
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - transaction limit
+  - claims
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

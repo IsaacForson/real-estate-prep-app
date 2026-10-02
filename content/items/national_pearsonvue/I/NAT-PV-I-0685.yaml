@@ -1,0 +1,40 @@
+id: NAT-PV-I-0685
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 mortgage, a 2020 judgment lien, and unpaid 2023 property taxes. If the
+  property is foreclosed, which lien is paid first?
+options:
+  - The 2018 first mortgage lien
+  - The 2020 court judgment lien
+  - The 2023 property tax lien
+  - The 2019 home equity lien
+key: C
+explanation: Section 8.3 states that property tax liens rank ahead of all other liens regardless of
+  date, including an earlier-recorded mortgage. Therefore, the 2023 property tax lien is paid first
+  before the mortgage or judgment lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - property tax lien
+  - priority
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

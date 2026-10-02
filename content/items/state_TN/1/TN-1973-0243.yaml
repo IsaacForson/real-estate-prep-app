@@ -1,0 +1,53 @@
+id: TN-1973-0243
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant was convicted of a felony theft of money 8 years ago and wishes to apply for a
+  real estate broker license. How many more years must pass before the conviction is no longer
+  within the lookback period under Tenn. Comp. R. & Regs. 1260-01-.01(5)?
+options:
+  - 2 years
+  - 3 years
+  - 4 years
+  - 5 years
+key: A
+explanation: The lookback period is ten years; subtracting the eight years that have already passed
+  leaves two years remaining before the conviction falls outside the period. The three‑year
+  distractor results from mistakenly subtracting seven years instead of eight.
+citation:
+  source: "### Tenn. Comp. R. & Regs. 1260-01 — Tenn. Comp. R. & Regs. ch. 1260-01 — Tennessee Real
+    Estate Commission rules: Licensing (rev. Sept. 2025), official Secretary of State PDF read via
+    Internet Archive capture of 2026-08-04 because publications.tnsosfiles.com returns 403 to
+    scripts — § 1260-01-.01"
+  url: null
+  quoted_text: "If within the past ten (10) years, an applicant has been convicted of or pled nolo
+    contendere or guilty to any felony or a misdemeanor involving the theft of services, money or
+    property, or had disciplinary sanctions imposed on them by any local, state or federal
+    occupational licensing body, the applicant shall:"
+  secondary: []
+math:
+  worked_solution: |-
+    Lookback period = 10 years
+    Years since conviction = 8 years
+    Remaining years = 10 - 8 = 2 years
+  formulas:
+    - Remaining years = Lookback period - Years since conviction
+  onscreen_calculator_only: false
+terms:
+  - lookback period
+  - conviction
+  - years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

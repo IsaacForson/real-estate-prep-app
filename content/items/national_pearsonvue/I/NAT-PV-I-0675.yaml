@@ -1,0 +1,44 @@
+id: NAT-PV-I-0675
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: How many acres are in a section?
+options:
+  - A section contains 640 acres.
+  - A section contains 320 acres.
+  - A section contains 160 acres.
+  - A section contains 40 acres.
+key: A
+explanation: A section is defined as a one‑mile square, which contains 640 acres. The option stating
+  that a section contains 640 acres is correct. The option stating that a section contains 320 acres
+  describes a half‑section, which is a common mistake.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: "A section is 1 mile square: 1 square mile, 640 acres, 5,280 feet per side."
+  secondary: []
+math:
+  worked_solution: 1 mile = 5,280 feet. Area of a section = (5,280 ft)^2 = 27,878,400 square feet. 1
+    acre = 43,560 square feet. Number of acres = 27,878,400 ÷ 43,560 = 640 acres.
+  formulas:
+    - Area of a square = side^2
+    - 1 acre = 43,560 square feet
+  onscreen_calculator_only: false
+terms:
+  - section
+  - acre
+  - square mile
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,47 @@
+id: WY-101-0134
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A responsible broker working with a buyer receives a check for earnest money in a cooperative
+  transaction. According to Wyo. Stat. Ann. § 33-28-122(g), what must the broker do with the check
+  and contract?
+options:
+  - Depositing the check in his own trust account and keeping the contract for his records
+  - Delivering the check and contract to seller's broker for deposit in seller's trust account
+  - Returning the check to the buyer and retaining the contract for his records
+  - Holding the check in his personal account until the transaction closes
+key: B
+explanation: The rule requires that, unless otherwise agreed, the buyer's broker must deliver both
+  the contract and the earnest money check to the seller's broker, who then deposits the check in
+  his trust account. Delivering the check and contract to the seller's broker for deposit in the
+  seller's trust account matches this requirement. Depositing the check in his own trust account and
+  keeping the contract for his records violates the rule by keeping the funds. Returning the check
+  to the buyer and retaining the contract for his records violates the rule by not forwarding the
+  earnest money. Holding the check in his personal account until the transaction closes violates the
+  rule by misdirecting the funds.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(g)
+  url: null
+  quoted_text: Unless otherwise agreed by all parties to the contract, in a cooperative transaction in
+    which the responsible broker working with a buyer receives cash or a check as earnest money, the
+    responsible broker shall deliver the contract and the cash or check to the responsible broker
+    working with the seller who shall deposit the cash or check in his trust account.
+  secondary: []
+terms:
+  - cooperative transaction
+  - earnest money
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

@@ -1,0 +1,43 @@
+id: DC-198-0203
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice of a Real Estate Guaranty and Education Fund assessment on June 1.
+  If the licensee does not pay the assessment until July 5, what is the effect on the license under
+  D.C. Code § 42-1707(n)?
+options:
+  - The licensee's license is automatically suspended
+  - The licensee's license remains active but subject to a fine
+  - The licensee's license is placed on probation for 90 days
+  - The licensee's license is revoked pending a hearing
+key: A
+explanation: The statute provides that failure to pay an assessment within 30 days after receipt of
+  notice results in automatic suspension of the license. Paying on July 5 is 34 days after June 1,
+  exceeding the 30‑day limit, so the license is suspended. The option suggesting a fine misstates
+  the consequence.
+citation:
+  source: D.C. Code § 42-1707(n)
+  url: null
+  quoted_text: A failure by any licensee to pay an assessment required pursuant to subsection (l) of
+    this section within 30 days after the licensee has received notice of the assessment shall
+    result in the automatic suspension of the license of the licensee.
+  secondary: []
+terms:
+  - assessment
+  - payment
+  - suspension
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

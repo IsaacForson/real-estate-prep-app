@@ -1,0 +1,44 @@
+id: MT-51-0160
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant who held a real estate license in another state five years ago but let it lapse
+  now applies for a Montana salesperson license. What is required before the Montana license can be
+  issued?
+options:
+  - License verification is required only if the license was held within the past 12 months
+  - License verification is required only if the license is currently active
+  - License verification is not required if the license has expired
+  - License verification is required regardless of whether the license is current or lapsed
+key: D
+explanation: Subsection (4) mandates license verification if the applicant currently holds or has
+  ever held a license in another jurisdiction; a lapsed license still counts as 'ever held,' so
+  verification is required. The other options incorrectly limit the requirement to active or recent
+  licenses or exempt expired licenses.
+citation:
+  source: Mont. Admin. R. 24.210.101–24.210.1005 (Board of Realty Regulation) — Administrative Rules
+    of Montana, Title 24, Chapter 210 — Board of Realty Regulation (all effective rules) — §
+    24.210.611(4)
+  url: null
+  quoted_text: If an applicant currently holds, or has ever held a real estate license in another
+    jurisdiction, a license verification from that licensing jurisdiction is required before a
+    Montana license will be issued.
+  secondary: []
+terms:
+  - license
+  - verification
+  - jurisdiction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

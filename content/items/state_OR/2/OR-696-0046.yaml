@@ -1,0 +1,46 @@
+id: OR-696-0046
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An authorized principal broker accepts a credit card payment for earnest money but does not
+  have a separate written agreement with the cardholder authorizing a reduction for merchant fees.
+  According to OAR 863-015-0257(5), what amount must the broker maintain, use, and refund as
+  necessary?
+options:
+  - The face amount of the credit card payment, without reducing it by any merchant's discount or
+    processing fee
+  - The face amount of the credit card payment, plus any merchant's discount and processing fee
+  - The face amount of the credit card payment, reduced by any merchant's discount and processing fee
+  - The net amount received after deducting the merchant's discount and processing fee
+key: A
+explanation: The rule requires that, without a written agreement allowing a reduction for merchant
+  fees, the broker must keep, use, and refund the full face amount of the credit card payment, not
+  deducting any discount or fee. The option describing the net amount after deducting the merchant's
+  discount and processing fee would only be correct if such a written agreement existed.
+citation:
+  source: Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) — § 863-015-0257
+  url: null
+  quoted_text: (a) The face amount of the credit card payment, without reducing the face amount by any
+    merchant's discount and processing fee charged to the principal broker, is the amount he or she
+    must maintain, use, and refund as necessary;
+  secondary: []
+terms:
+  - credit card payment
+  - merchant's discount
+  - authorized principal broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

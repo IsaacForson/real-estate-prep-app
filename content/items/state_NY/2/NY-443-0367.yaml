@@ -1,0 +1,46 @@
+id: NY-443-0367
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker obtains an exclusive listing for a parcel of land that is intended to have a
+  single-family home built on it in the future. The land is currently unimproved. Under 19 NYCRR §
+  175.24(a), how is this property classified for the purpose of the exclusive listing explanation
+  requirement?
+options:
+  - The property is considered residential because it is intended for a home
+  - The property is considered residential only if a cooperative apartment is planned
+  - The property is considered residential if the broker plans to build a condominium
+  - The property is considered non-residential because it is unimproved land
+key: D
+explanation: According to 19 NYCRR § 175.24(a), residential property must be improved by a
+  one‑to‑four family dwelling, condominium, or cooperative apartment; unimproved land is expressly
+  excluded. Hence the parcel is classified as non‑residential. The distractor that calls the land
+  residential because of intended use ignores the explicit exclusion of unimproved land.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.24
+  url: null
+  quoted_text: "residential real property as used in this section shall mean real property used or
+    occupied, or intended to be used or occupied, wholly or partly, as a home or residence of one or
+    more persons improved by: (i) a one to four family dwelling or (ii) condominium or cooperative
+    apartments but shall not refer to unimproved real property upon which such dwellings are to be
+    constructed."
+  secondary: []
+terms:
+  - residential property
+  - unimproved land
+  - exclusive listing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

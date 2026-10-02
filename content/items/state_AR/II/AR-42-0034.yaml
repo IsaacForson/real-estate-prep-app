@@ -1,0 +1,48 @@
+id: AR-42-0034
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: John, who does not hold a real estate license, agrees to help his friend sell a house by
+  showing the property to prospective buyers and negotiating the sale price, expecting to receive a
+  portion of the commission if the sale closes. According to Arkansas law, what is John's status?
+options:
+  - John is exempt from licensing because he is assisting a friend without a written agreement.
+  - John is not required to hold a license because he has not yet received any commission.
+  - John is deemed a broker or salesperson and must hold a license to perform these acts.
+  - John may perform these acts without a license as long as he does not receive payment.
+key: C
+explanation: Under Ark. Code Ann. § 17-42-301(b), any person who performs acts described in §
+  17-42-103(10) for another with the intention of receiving valuable consideration is deemed a
+  broker or salesperson and must be licensed. John shows the property and negotiates the price while
+  expecting a commission, which means he is performing those acts with the intention of receiving
+  compensation. Therefore, the option stating that John is deemed a broker or salesperson and must
+  hold a license to perform these acts is correct. The other options incorrectly suggest exemptions
+  that do not apply when compensation is expected.
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-301(b)
+  url: null
+  quoted_text: Any person who directly or indirectly for another with the intention, or on the promise
+    of receiving any valuable consideration, offers, attempts, or agrees to perform any single act
+    described in § 17-42-103(10), whether as part of a transaction or as an entire transaction,
+    shall be deemed a broker or salesperson within the meaning of this chapter.
+  secondary: []
+terms:
+  - unlicensed activity
+  - valuable consideration
+  - broker
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

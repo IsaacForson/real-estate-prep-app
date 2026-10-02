@@ -1,0 +1,51 @@
+id: IL-2000-0109
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wants to renew their license but has an unpaid $500 fine from a disciplinary action
+  that has not been paid or placed on a payment plan. According to the Illinois Real Estate License
+  Act of 2000, can the broker renew the license at this time?
+options:
+  - Yes, provided the fine is paid before submitting the renewal application
+  - No, unless the fine is settled or a payment plan is established
+  - No, renewal is denied until the fine is paid or a payment plan is current
+  - Yes, if the broker completes continuing education before the renewal date
+key: C
+explanation: The Act prohibits renewal of a license when there is an unpaid fine or fee from a
+  disciplinary matter until the fine is paid or the licensee is current on a payment plan (see
+  subsection 5-50(h)). The most tempting distractor, suggesting that completing continuing education
+  allows renewal, ignores the explicit bar on renewal for unpaid disciplinary fines.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) § 5-50(h)
+  url: null
+  quoted_text: The Department shall not issue or renew a license if the applicant or licensee has an
+    unpaid fine or fee from a disciplinary matter or from a non-disciplinary action imposed by the
+    Department until the fine or fee is paid to the Department or the applicant or licensee has
+    entered into a payment plan and is current on the required payments.
+  secondary: []
+math:
+  worked_solution: The fine amount is $500. The Act states that renewal is denied until the fine is
+    paid or a payment plan is current. No arithmetic computation is required; the determination is
+    based on whether the $500 fine is satisfied.
+  formulas:
+    - None
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

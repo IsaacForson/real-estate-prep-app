@@ -1,0 +1,41 @@
+id: OH-4735-0117
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: When a broker provides a purchaser with only two licensed home‑inspector names, which
+  statutory requirement has been violated?
+options:
+  - the requirement that the broker provide the buyer with the names of at least three licensed home
+    inspectors
+  - the requirement that the broker endorse one of the listed home inspectors
+  - the requirement that the broker disclose any financial interest in the home inspectors
+  - the requirement that the broker obtain written consent from the buyer before naming any home
+    inspector
+key: A
+explanation: Section 4735.22 mandates that a broker or salesperson must give the buyer or seller the
+  names of at least three licensed home inspectors. Providing fewer than three names violates this
+  requirement; endorsement, disclosure, or consent are not required by the statute.
+citation:
+  source: Ohio Rev. Code ch. 4735 § 4735.22
+  url: null
+  quoted_text: the broker or salesperson shall provide the buyer or seller with the names of at least
+    three home inspectors.
+  secondary: []
+terms:
+  - home inspector
+  - broker
+  - purchaser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

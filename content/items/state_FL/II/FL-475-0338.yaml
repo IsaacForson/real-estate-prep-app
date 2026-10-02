@@ -1,0 +1,42 @@
+id: FL-475-0338
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker earns a commission on June 1, 2024, and the closing is scheduled for July 5, 2024.
+  What is the latest date the broker may deliver a copy of the commission notice to the owner and
+  closing agent to satisfy both the 30‑day and the at‑**LEAST**‑1‑day‑before‑closing requirements?
+options:
+  - June 30, 2024
+  - July 1, 2024
+  - July 4, 2024
+  - July 5, 2024
+key: B
+explanation: The broker must deliver the notice within 30 days of earning the commission
+  (June 1 + 30 days = July 1) and at least one day before closing (on or before July 4). The earlier
+  of these two deadlines is July 1, so that is the latest permissible date. Choosing July 4 ignores
+  the 30‑day limit.
+citation:
+  source: Fla. Stat. § 475.705(3)
+  url: null
+  quoted_text: within 30 days after a commission is earned by the broker pursuant to s. 475.703(2) and
+    at least 1 day before the closing
+  secondary: []
+terms:
+  - commission
+  - closing
+  - notice
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,49 @@
+id: AZ-20-0028
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A salesperson licensed under Broker X receives a payment directly from a buyer for showing a
+  property, without Broker X's knowledge or authorization. According to Arizona law, this action is
+  grounds for discipline because:"
+options:
+  - The salesperson accepted compensation from a person who is not authorized to provide
+    compensation under §32-2155.
+  - The salesperson disclosed the payment to the employing broker and obtained written consent to
+    retain it.
+  - The salesperson characterized the payment as a personal gift unrelated to the licensed activity.
+  - The salesperson transferred the payment to the employing broker within one business day.
+key: A
+explanation: Under Ariz. Rev. Stat. § 32-2153(A)(7), a licensee may be disciplined for accepting
+  compensation for performing any act specified in the chapter from a person who is not authorized
+  to provide compensation under §32-2155. In this situation, the salesperson received payment
+  directly from a buyer, who is not an authorized source under that statute. Characterizing the
+  payment as a personal gift does not alter its nature as compensation for licensed activity.
+  Transferring the payment to the employing broker within one business day does not cure the
+  violation because the acceptance from an unauthorized person already occurred. Likewise,
+  disclosing the payment and obtaining written consent to retain it does not change the fact that
+  the compensation came from an unauthorized source, so the action remains grounds for discipline.
+citation:
+  source: Ariz. Rev. Stat. § 32-2153(A)(7)
+  url: null
+  quoted_text: Accepted compensation as a licensee for performing any of the acts specified in this
+    chapter from any person who is not authorized to provide compensation pursuant to section
+    32-2155.
+  secondary: []
+terms:
+  - compensation
+  - authorization
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,52 @@
+id: WI-452-0092
+jurisdiction: WI
+bank: state_WI
+blueprint_node: IV.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A firm hires another firm as a sub-agent to show properties. The sub-agent's licensee tells a
+  prospective buyer that the property includes a garage when it does not. The hiring firm had no
+  knowledge of the false statement and did not repeat it. Under Wis. Stat. § 452.139(2)(b), is the
+  hiring firm liable for the sub-agent's misrepresentation?
+options:
+  - Yes, because the firm received a commission from the transaction and must answer for the
+    sub-agent's statements.
+  - Yes, because the sub-agent acted on behalf of the firm, and the firm is liable for the
+    sub-agent's misrepresentation.
+  - No, unless the firm knew or should have known of the misrepresentation or the sub-agent repeated
+    a misrepresentation made by the firm.
+  - No, if the buyer suffered no damages and the misrepresentation was immaterial to the decision.
+key: C
+explanation: The statute shields the firm from liability for a sub-agent's misrepresentation unless
+  the firm knew or should have known of it or the sub-agent repeated a misrepresentation made by the
+  firm. Since the firm lacked knowledge and did not repeat the statement, it is not liable. The
+  option stating that the firm is liable regardless of knowledge is incorrect.
+citation:
+  source: Wis. Stat. § 452.139(2)(b)
+  url: null
+  quoted_text: |-
+    b) A firm that is providing brokerage services to a client and
+    that retains another firm to provide brokerage services as a sub-
+    agent is not liable for a misrepresentation made by the subagent
+    or any licensee associated with the subagent, unless the firm
+    knew or should have known of the misrepresentation or the sub-
+    agent or licensee is repeating a misrepresentation made to by the
+    firm or any licensee associated with the firm
+  secondary: []
+terms:
+  - firm
+  - sub-agent
+  - misrepresentation
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

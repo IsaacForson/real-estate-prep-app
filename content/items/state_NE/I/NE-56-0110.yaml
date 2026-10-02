@@ -1,0 +1,52 @@
+id: NE-56-0110
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson applicant intends to operate through a limited liability company in which a
+  single member holds 55% ownership and has a prior conviction for embezzlement. The applicant
+  otherwise meets all qualification requirements. Based on Neb. Rev. Stat. § 81-885.12(1), what is
+  the most likely outcome regarding the license?
+options:
+  - The license will be granted because the applicant’s personal reputation is satisfactory
+  - The license will be granted pending a hearing to evaluate the member’s reputation
+  - The license will be granted if the applicant signs a personal indemnity agreement
+  - The license will be denied because the controlling member lacks a good reputation
+key: D
+explanation: The statute prohibits granting a license when the applicant conducts business through a
+  corporation, partnership, or LLC unless any controlling stockholder, partner, or member bears a
+  good reputation. The controlling member’s embezzlement conviction fails that requirement, so the
+  license is denied. The other choices incorrectly assume the applicant’s own reputation or
+  procedural remedies can overcome the controlling‑interest requirement.
+citation:
+  source: Neb. Rev. Stat. § 81-885.12(1)
+  url: null
+  quoted_text: No license shall be granted to an applicant who will be conducting business through a
+    corporation, partnership, or limited liability company unless any stockholder, partner, or
+    member having a controlling interest therein, if any, bears a good reputation for honesty,
+    trustworthiness, and integrity.
+  secondary: []
+math:
+  worked_solution: "Determine if the member holds a controlling interest: 55% ownership is greater
+    than the 50% threshold for control, so the member is a controlling interest."
+  formulas:
+    - "Controlling interest threshold: ownership > 50%"
+  onscreen_calculator_only: false
+terms:
+  - corporation
+  - controlling interest
+  - reputation
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

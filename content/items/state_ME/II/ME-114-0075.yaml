@@ -1,0 +1,41 @@
+id: ME-114-0075
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A buyer asks a Maine transaction broker to investigate whether the seller's statement about
+  the home's annual heating costs is accurate and to analyze whether the asking price is fair. Under
+  32 M.R.S. § 13283, the broker:"
+options:
+  - May not conduct the investigation or analysis for the buyer's benefit
+  - Must conduct the investigation as part of honest treatment of parties
+  - May conduct the analysis if the seller consents in writing
+  - Must verify the seller's statements before the closing occurs
+key: A
+explanation: Section 13283(3) prohibits a transaction broker from conducting an inspection,
+  investigation or analysis of a property for the benefit of any party and from verifying the
+  accuracy or completeness of statements made by the seller or buyer. Honest treatment under
+  subsection (2)(E) does not create a duty to investigate; it only bars knowingly giving false
+  information. Consent from the seller cannot override the statutory prohibition.
+citation:
+  source: 32 M.R.S. § 13283(3)
+  url: null
+  quoted_text: Conduct an inspection, investigation or analysis of a property for the benefit of any party
+  secondary: []
+terms:
+  - transaction broker
+  - prohibited acts
+  - verification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

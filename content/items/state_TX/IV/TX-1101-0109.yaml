@@ -1,0 +1,46 @@
+id: TX-1101-0109
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Tex. Occ. Code § 1101.558(c)(1), a license holder is **NOT** required to provide the
+  written notice described in Subsection (b-1) if the proposed transaction is for which of the
+  following?
+options:
+  - A. A residential lease for less than one year where a sale is also being considered.
+  - B. A residential lease for less than one year and a sale is not being considered.
+  - C. A commercial lease for any duration where the tenant is represented by another broker.
+  - D. A residential lease for exactly one year with no sale contemplated.
+key: B
+explanation: The statute exempts a license holder from providing the written notice when the
+  transaction is a residential lease for less than one year and a sale is not being considered. The
+  option stating 'A residential lease for less than one year and a sale is not being considered'
+  matches this condition exactly. The option stating 'A residential lease for less than one year
+  where a sale is also being considered' does not qualify because a sale being considered removes
+  the exemption.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.558(c)(1)
+  url: null
+  quoted_text: (1) the proposed transaction is for a residential lease for less than one year and a
+    sale is not being considered;
+  secondary: []
+terms:
+  - notice
+  - lease
+  - residential
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

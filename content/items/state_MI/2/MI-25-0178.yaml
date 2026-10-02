@@ -1,0 +1,42 @@
+id: MI-25-0178
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson submits a completed application for transfer of their license to a
+  new broker and pays the required fees. How long is the pocket card considered proper evidence of
+  licensing under MCL 339.2506(5)?
+options:
+  - The pocket card is valid for 30 days from the date of fee payment.
+  - The pocket card is valid for 60 days from the date of application.
+  - The pocket card is valid for 45 days from the latest date written on the back of the card.
+  - The pocket card is valid for 45 days from the date the new broker receives the wall license.
+key: C
+explanation: The statute provides that when a completed transfer application and fees are received,
+  the department shall consider the pocket card as proper evidence of licensing for 45 days from the
+  latest date written on the back of the card. This makes the 45‑day period the correct timeframe.
+  The distractor citing 30 days from the date of application is incorrect because the law specifies
+  45 days and measures from the date on the card, not the application date.
+citation:
+  source: Mich. Comp. Laws § 339.2506(5)
+  url: null
+  quoted_text: the department shall consider the pocket card as proper evidence of licensing for 45
+    days from the latest date written on the back of the card.
+  secondary: []
+terms:
+  - pocket card
+  - transfer
+  - evidence of licensing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

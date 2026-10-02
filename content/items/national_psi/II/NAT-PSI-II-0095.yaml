@@ -1,0 +1,42 @@
+id: NAT-PSI-II-0095
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A city rezones a single residential lot to allow a commercial store while the surrounding area
+  is residential and the comprehensive plan designates the area for residential use. What is the
+  status of this rezoning?
+options:
+  - The rezoning is valid because it conforms to the comprehensive plan
+  - The rezoning is valid because the owner benefits from the change
+  - The rezoning is invalid because it constitutes spot zoning
+  - The rezoning is invalid because it violates state environmental law
+key: C
+explanation: Reclassifying one small parcel for its owner's benefit, inconsistently with the plan
+  and surroundings, is spot zoning and generally invalid. The described rezoning fits this
+  definition, so it is invalid. The distractor claiming the rezoning is valid because it conforms to
+  the comprehensive plan is incorrect because the rezoning is inconsistent with the plan.
+citation:
+  source: REP Ref. Property & Land Use § 5.2
+  url: null
+  quoted_text: Reclassifying one small parcel for its owner's benefit, inconsistently with the plan
+    and surroundings, is spot zoning and generally invalid.
+  secondary: []
+terms:
+  - spot zoning
+  - comprehensive plan
+  - rezoning
+  - invalid
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

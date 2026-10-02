@@ -1,0 +1,46 @@
+id: ME-114-0058
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage agency proposes to charge a $120 fee for processing a real estate license
+  application. Under 32 M.R.S. § 13007, is this fee permissible?
+options:
+  - The fee is permissible if approved by the Real Estate Commission before implementation.
+  - The fee is permissible because it is reasonable and necessary for the service provided.
+  - The fee is impermissible because it exceeds the $100 maximum allowed for any one purpose.
+  - The fee is impermissible because only the Director may set fees, not the brokerage agency.
+key: C
+explanation: The statute sets a cap of $100 for any one purpose fee. A $120 fee exceeds this cap,
+  making it impermissible. Reasonableness, commission approval, or who sets the fee does not
+  override the statutory limit.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13007"
+  url: null
+  quoted_text: except that the fee for any one purpose may not exceed $100.
+  secondary: []
+math:
+  worked_solution: "Statutory maximum allowed for any one purpose = $100. Proposed fee = $120.
+    Compare: $120 > $100, so the fee exceeds the allowed maximum by $20. Therefore the fee is not
+    permissible."
+  formulas:
+    - Fee - Maximum Allowed = Excess
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - maximum
+  - purpose
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

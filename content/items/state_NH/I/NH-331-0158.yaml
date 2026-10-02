@@ -1,0 +1,42 @@
+id: NH-331-0158
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under RSA 331-A:11, an applicant who has passed the real estate salesperson or broker
+  examination must become licensed within how many months of the examination date?
+options:
+  - Six months
+  - Twelve months
+  - Nine months
+  - Three months
+key: A
+explanation: The statute states that anyone who passes the broker or salesperson exam must become
+  licensed within 6 months of the examination date; otherwise they must retake the exam. Therefore
+  six months is the correct period. Three months is incorrect because the law allows up to six
+  months, not a shorter deadline.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts Section 331-A:11
+  url: null
+  quoted_text: Any person who has passed the examination for broker or salesperson shall become
+    licensed within 6 months of the date of the examination.
+  secondary: []
+terms:
+  - license
+  - examination
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

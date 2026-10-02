@@ -1,0 +1,46 @@
+id: MI-25-0180
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate broker license completed the required 90 clock hours of
+  prelicensure classroom education 40 months ago. During the past 30 months, the applicant has held
+  an active real estate salesperson license. Under Michigan administrative rules, is the applicant’s
+  prelicensure education still valid for the broker license application?
+options:
+  - Yes, the active salesperson license waives the 36‑month limit.
+  - No, the education must be completed within 36 months regardless of salesperson licensure.
+  - Yes, but only if the applicant also completed 9 hours of civil rights education.
+  - No, the applicant must retake the entire prelicensure course.
+key: A
+explanation: "The rule provides an exception: the 36‑month limit does not apply if the applicant
+  held an active real estate salesperson license during that period. Since the applicant maintained
+  an active salesperson license for the past 30 months, the education remains valid despite being 40
+  months old. The distractor that insists on the 36‑month limit ignores this statutory exception."
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R 339.22101–339.22667
+    — Department of Licensing and Regulatory Affairs, Real Estate Brokers and Salespersons (General
+    Rules), official LARA Administrative Rules System PDF read via Internet Archive capture of
+    2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch the current R
+    339.22101–339.22703 set when reachable R 339.22203(1)
+  url: null
+  quoted_text: unless the applicant held an active real estate salesperson license during that period.
+  secondary: []
+terms:
+  - broker
+  - prelicensure
+  - salesperson
+  - waiver
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,44 @@
+id: OK-605-0049
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property management broker receives a security deposit from a tenant on Monday. Assuming no
+  written agreement to the contrary, by what deadline must the broker deposit the funds into the
+  trust account?
+options:
+  - The broker must deposit the funds by the close of the next banking day.
+  - The broker must deposit the funds by the end of the third banking day following receipt.
+  - The broker may hold the funds in the broker's personal account until the lease terminates.
+  - The broker must deposit the funds only if the tenant requests a receipt.
+key: B
+explanation: Under OAC 10-13-1(D), escrow funds including security deposits must be deposited before
+  the end of the third banking day following receipt unless otherwise agreed in writing. Therefore,
+  the broker must deposit by the end of the third banking day after Monday. The distractor that says
+  the broker must deposit by the close of the next banking day misstates the deadline; the rule
+  requires the third banking day, not the next.
+citation:
+  source: Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules) — Oklahoma Administrative
+    Code Title 605, Chapters 1 and 10 (OREC Code and Rules Book, as of Nov. 1, 2025) — § 10-13-1(D)
+  url: null
+  quoted_text: All escrow funds shall be deposited before the end of the third banking day following
+    acceptance of an offer by an offeree or receipt of escrow funds unless otherwise agreed to in
+    writing by all interested parties.
+  secondary: []
+terms:
+  - security deposit
+  - trust account
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: NAT-PV-I-0430
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: When both a property tax lien and a federal tax lien are attached to the same parcel, which
+  lien will be satisfied first in a foreclosure proceeding?
+options:
+  - the federal tax lien
+  - the first mortgage lien
+  - the property tax lien
+  - the mechanic's lien
+key: C
+explanation: Property tax liens are given statutory seniority over all other liens, including
+  federal tax liens, so the property tax lien is satisfied before the federal tax lien in a
+  foreclosure. The federal tax lien, while a general involuntary lien, does not enjoy the same
+  priority; mortgage and mechanic's liens are also junior to the tax lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - lien
+  - priority
+  - tax
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

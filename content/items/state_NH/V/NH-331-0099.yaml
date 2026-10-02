@@ -1,0 +1,47 @@
+id: NH-331-0099
+jurisdiction: NH
+bank: state_NH
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A seller includes a clause in the purchase agreement stating that the property may only be
+  conveyed to individuals who are members of a specific religious denomination. Under the New
+  Hampshire Law Against Discrimination, this clause is:"
+options:
+  - This clause is enforceable because religious institutions may limit sales to co-religionists.
+  - This clause is void as it restricts conveyance based on religion.
+  - This clause is permissible if the seller also offers the property to non-members at a higher
+    price.
+  - This clause is exempt under the religious organization exemption for properties owned by a
+    religious institution.
+key: B
+explanation: RSA 354-A:13(I) declares void any provision in a written instrument that restricts
+  conveyance of real property on the basis of religion. The clause limiting conveyance to members of
+  a specific denomination is therefore void and unenforceable. Offering the property to non‑members
+  at a higher price does not cure the violation, and the religious organization exemption in RSA
+  354-A:18 applies only to properties owned and operated by a religious organization for
+  non‑commercial purposes, not to a private seller’s deed restriction.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 354-A — RSA Chapter 354-A, official General Court page read via
+    Internet Archive capture (2025–2026) because gc.nh.gov returns 403 to scripts § 354-A:13(I)
+  url: null
+  quoted_text: Every provision in an oral agreement or a written instrument relating to real property
+    which purports to forbid or restrict the conveyance, encumbrance, occupancy, or lease thereof on
+    the basis of race, color, religion, or national origin is void.
+  secondary: []
+terms:
+  - restrictive covenant
+  - religion
+  - void
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

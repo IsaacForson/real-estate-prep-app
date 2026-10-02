@@ -1,0 +1,44 @@
+id: FL-475-0122
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker changes her business address from Miami to Orlando. Under Florida law, within how
+  many days must she notify the commission of this change?
+options:
+  - Within 10 days.
+  - Within 20 days.
+  - Within 15 days.
+  - Within 5 days.
+key: A
+explanation: The statute requires a licensee to notify the commission of a change of business
+  address no later than 10 days after the change. Therefore the option stating 'Within 10 days.' is
+  correct. The option stating 'Within 5 days.' is incorrect because the rule sets a 10‑day deadline,
+  not 5 days.
+citation:
+  source: Fla. Stat. § 475.23
+  url: null
+  quoted_text: The licensee shall notify the commission of the change no later than 10 days after the change
+  secondary: []
+math:
+  worked_solution: The statute specifies a 10‑day deadline for notifying the commission of a
+    business‑address change. Thus the correct numeric answer is 10 days.
+  formulas:
+    - Statutory deadline
+  onscreen_calculator_only: false
+terms:
+  - address change
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

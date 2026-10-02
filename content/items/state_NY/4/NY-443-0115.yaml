@@ -1,0 +1,44 @@
+id: NY-443-0115
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller provides a property condition disclosure statement but accidentally omits a defect in
+  the roof. According to N.Y. Real Prop. Law § 465, what is the seller's liability for this
+  omission?
+options:
+  - The seller is liable for the actual damages suffered by the buyer because any omission triggers
+    liability.
+  - The seller is liable only if the omission was willful; otherwise, there is no liability under
+    this article.
+  - The seller must pay a statutory fine of two thousand dollars to the Department of State.
+  - The seller must refund the purchase price and cover all repair costs regardless of intent.
+key: B
+explanation: §465(2) limits liability to willful failures to perform the article's requirements; an
+  accidental omission is not willful, so no liability arises under this provision.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    465
+  url: null
+  quoted_text: Any seller who provides a property condition disclosure statement or provides or fails
+    to provide a revised property condition disclosure statement shall be liable only for a willful
+    failure to perform the requirements of this article.
+  secondary: []
+terms:
+  - liability
+  - willful
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

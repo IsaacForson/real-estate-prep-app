@@ -1,0 +1,54 @@
+id: SD-21A-0026
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The commission pays $7,500 from the real estate recovery fund to satisfy a judgment against a
+  licensee. What must the licensee do before being reinstated?
+options:
+  - A mandate to complete an additional 30 hours of continuing education.
+  - A six-month waiting period after the payment before applying for reinstatement.
+  - A requirement to repay the $7,500 plus interest at the Category A rate to the fund.
+  - An obligation to file for bankruptcy discharge to relieve the repayment requirement.
+key: C
+explanation: Section 36‑21A‑114 states that a licensee may not be reinstated until the amount paid
+  from the real estate recovery fund on the licensee’s account is repaid in full together with
+  interest at the Category A rate established in § 54‑3‑16. The other actions listed are not
+  required for reinstatement under this provision.
+citation:
+  source: S.D. Codified Laws § 36-21A (Real Estate Licensing) — South Dakota Codified Laws Chapter
+    36-21A — Real Estate Licensing (SD Real Estate Commission License Laws & Administrative Rules
+    book, as of July 1, 2025) — § 36-21A-114
+  url: null
+  quoted_text: >-
+    No 
+
+    licensee may be reinstated or issued a license until he has repaid in full the amount paid from
+    the fund 
+
+    on his account plus intere st thereon at the Category A rate of interest as established in § 54
+    -3-16
+  secondary: []
+math:
+  worked_solution: "The licensee must repay the principal of $7,500 plus interest. Interest is
+    calculated using simple interest: Interest = principal × Category A rate × time. Total repayment
+    = $7,500 + ( $7,500 × Category A rate × time )."
+  formulas:
+    - Simple Interest
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - reinstatement
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,60 @@
+id: MI-25-0083
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker compensates an associate broker with a written agreement stating the
+  associate is not an employee for tax purposes, but only 50% of the associate’s annual compensation
+  comes from sales commissions. According to the Michigan Occupational Code, does this relationship
+  qualify as an independent contractor relationship?
+options:
+  - No, because the associate receives any commission income
+  - No, because less than 75% of compensation is from commissions
+  - No, because the broker pays a salary instead of commissions
+  - No, because a written agreement does not exist
+key: B
+explanation: For an independent contractor relationship under Mich. Comp. Laws § 339.2501(h), both a
+  written tax‑nonemployee agreement and at least 75% of annual compensation from commissions are
+  required. Here the associate receives only 50% from commissions, so the second condition fails;
+  therefore the relationship does not qualify as an independent contractor.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2501(h)
+  url: null
+  quoted_text: '"Independent contractor relationship" means a relationship between a real estate
+    broker and an associate real estate broker or real estate salesperson that satisfies both of the
+    following conditions: (i) A written agreement exists in which the real estate broker does not
+    consider the associate real estate broker or real estate salesperson as an employee for federal
+    and state income tax purposes. (ii) At least 75% of the annual compensation paid by the real
+    estate broker to the associate real estate broker or real estate salesperson is from commissions
+    from the sale of real estate.'
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the required commission percentage for an independent contractor
+    relationship: at least 75% (Mich. Comp. Laws § 339.2501(h)). Step 2: Determine the actual
+    commission percentage from the stem: 50%. Step 3: Compare the actual percentage to the required
+    percentage: 50% is less than 75%. Step 4: Because the required condition is not met, the
+    relationship does not qualify as an independent contractor."
+  formulas:
+    - Required percentage ≤ Actual percentage? (Check if actual meets or exceeds required)
+    - Shortfall = Required percentage - Actual percentage
+  onscreen_calculator_only: false
+terms:
+  - independent contractor relationship
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

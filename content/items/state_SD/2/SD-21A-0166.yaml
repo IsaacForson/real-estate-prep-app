@@ -1,0 +1,48 @@
+id: SD-21A-0166
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice of the required terms and conditions of errors and omissions
+  coverage 18 days before the biennial license renewal date. By how many days does the notice fall
+  short of the required minimum?
+options:
+  - 12 days
+  - 8 days
+  - 22 days
+  - 2 days
+key: A
+explanation: The statute requires at least thirty days notice before renewal. Receiving notice only
+  eighteen days prior leaves a shortfall of thirty minus eighteen, which equals twelve days. The
+  distractor "8 days" would arise from subtracting eighteen from twenty‑six, an incorrect required
+  period.
+citation:
+  source: S.D. Codified Laws § 36-21A-122
+  url: null
+  quoted_text: Each licensee shall be notified of the required terms and conditions of coverage at
+    least thirty days before the biennial license renewal date.
+  secondary: []
+math:
+  worked_solution: |-
+    Required notice: 30 days
+    Actual notice: 18 days
+    Shortfall: 30 - 18 = 12 days
+  formulas:
+    - Shortfall = Required notice - Actual notice
+  onscreen_calculator_only: false
+terms:
+  - notice
+  - shortfall
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

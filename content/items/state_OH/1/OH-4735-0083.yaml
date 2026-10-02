@@ -1,0 +1,45 @@
+id: OH-4735-0083
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson submits an application to the superintendent to leave the association of Broker
+  A and associate with Broker B. Under Ohio Rev. Code § 4735.13(H), is Broker A required to notify
+  the superintendent of the salesperson's departure?
+options:
+  - Broker A must notify the superintendent and keep a copy of the notification for three years.
+  - Broker A must notify the superintendent if the salesperson's license is not returned to the
+    superintendent.
+  - Broker A must notify the superintendent within three business days after the salesperson leaves.
+  - Broker A is not required to notify the superintendent of the salesperson's departure.
+key: D
+explanation: Under Ohio Rev. Code § 4735.13(H), when a salesperson files an application to leave one
+  broker and associate with another, the broker who holds the salesperson's license is not required
+  to notify the superintendent of the departure. Therefore, Broker A does not have to notify the
+  superintendent, making the option that states Broker A is not required to notify the
+  superintendent the correct choice.
+citation:
+  source: Ohio Rev. Code § 4735.13(H)
+  url: null
+  quoted_text: If a licensed real estate salesperson submits an application to the superintendent to
+    leave the association of one broker to associate with a different broker, the broker possessing
+    the licensee's license need not notify the superintendent pursuant to division (B) of this
+    section.
+  secondary: []
+terms:
+  - notification
+  - broker
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

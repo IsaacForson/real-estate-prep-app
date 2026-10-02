@@ -1,0 +1,43 @@
+id: VT-2211-0048
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money deposit on a purchase contract. The broker determines that
+  the deposit is not reasonably expected to earn a substantial amount of interest. What must the
+  broker do with the deposit under Vermont law?
+options:
+  - Place the deposit in a separate escrow account for the buyer
+  - Place the deposit in a pooled interest-bearing trust account
+  - Place the deposit in the broker's trust account
+  - Place the deposit in an interest-bearing trust account
+key: B
+explanation: Under 26 V.S.A. § 2214(c), when a deposit is not reasonably expected to earn a
+  substantial amount of interest, the broker must place the deposit in a pooled interest‑bearing
+  trust or escrow account and direct the interest to the Vermont Housing Finance Agency. Placing the
+  deposit in an individual interest‑bearing account is permitted only when the deposit is expected
+  to earn substantial interest and the depositor requests it.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2214(c)
+  url: null
+  quoted_text: If a deposit is not reasonably expected to earn a substantial amount of interest, the
+    broker shall place the deposit in a pooled interest-bearing trust or escrow account and direct
+    that the interest be remitted to the Vermont Housing Finance Agency in accordance with the
+    provisions of 8 V.S.A. § 14210.
+  secondary: []
+terms:
+  - pooled account
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

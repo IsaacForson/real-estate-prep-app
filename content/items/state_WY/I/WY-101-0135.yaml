@@ -1,0 +1,43 @@
+id: WY-101-0135
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker participated in two transactions: one on January 5, 2023 and another on
+  February 20, 2023. Until what date must the broker retain the records of both transactions?"
+options:
+  - February 20, 2025
+  - February 5, 2025
+  - January 5, 2025
+  - March 5, 2025
+key: A
+explanation: Under Wyo. Stat. Ann. § 33-28-123, a broker must keep records for at least two years
+  from the latest date on which they participated in a transaction. The later of the two
+  transactions occurred on February 20, 2023. Adding two years to that date gives February 20, 2025,
+  which is the date until which the records must be retained.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-123
+  url: null
+  quoted_text: Every responsible broker licensed by the commission in this state shall keep and
+    maintain a full set of records of every real estate transaction in which he participates on
+    behalf of or to assist any party to the transaction. The records shall be maintained not less
+    than two (2) years from the latest date on which the real estate company participated in the
+    transaction.
+  secondary: []
+terms:
+  - record retention
+  - latest date
+  - two years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

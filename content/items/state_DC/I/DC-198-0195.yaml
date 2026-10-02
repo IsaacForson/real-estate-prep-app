@@ -1,0 +1,49 @@
+id: DC-198-0195
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the Mayor determines that an assessment is needed and decides to assess each of 120
+  licensees the maximum permitted amount, what is the total assessment that could be collected?
+options:
+  - $4,000
+  - $3,000
+  - $6,000
+  - $5,000
+key: A
+explanation: Section 42-1707(l) limits any annual assessment to $50 per licensee. Assessing 120
+  licensees at $50 each yields $120 × $50 = $6,000. The $5,000 distractor would arise from
+  mistakenly using 100 licensees instead of 120.
+citation:
+  source: D.C. Code §§ 42-1701–42-1709 — D.C. Code Title 42, Ch. 17, Subch. I - Real Estate Brokers'
+    Duties; Real Estate Guaranty and Education Fund — § 42-1707(l)
+  url: null
+  quoted_text: The Mayor shall assess each licensee an amount, not to exceed $50 during any license
+    year, within 30 calendar days, which is sufficient, when combined with similar assessments of
+    other licensees, to bring the balance of the Fund up to the minimum established.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify number of licensees: 120.
+    Identify maximum assessment per licensee: $50.
+    Multiply: 120 × $50 = $6,000.
+  formulas:
+    - total = number of licensees × maximum assessment per licensee
+  onscreen_calculator_only: false
+terms:
+  - assessment
+  - licensee
+  - maximum amount
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

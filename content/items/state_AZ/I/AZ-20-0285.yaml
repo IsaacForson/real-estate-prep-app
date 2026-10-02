@@ -1,0 +1,45 @@
+id: AZ-20-0285
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice that their fingerprint clearance card has been suspended and fails
+  to submit sufficient evidence of a good cause exception within the required timeframe. What action
+  may the commissioner take regarding the licensee's real estate license?
+options:
+  - Suspend the license
+  - Issue a warning
+  - Impose a fine
+  - Require extra training
+key: A
+explanation: The law states that the department may suspend a license if the licensee’s fingerprint
+  clearance card is suspended and the licensee fails to submit sufficient evidence of a good cause
+  exception within five business days after being notified. Thus, suspension is permitted. The other
+  actions are not specified as consequences for this failure.
+citation:
+  source: Ariz. Rev. Stat. § 32-2108.01(C)
+  url: null
+  quoted_text: "The department may suspend a license if the licensee's fingerprint clearance card is
+    suspended and either: 1. If the person was convicted of the alleged crime causing the
+    fingerprint clearance card suspension, the commissioner could use the conviction to deny the
+    license application pursuant to this chapter. 2. The licensee fails to submit sufficient
+    evidence to prove the individual applied for a good cause exception pursuant to section
+    41-619.55 within five business days after being notified by the department."
+  secondary: []
+terms:
+  - fingerprint clearance
+  - good cause exception
+  - license suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

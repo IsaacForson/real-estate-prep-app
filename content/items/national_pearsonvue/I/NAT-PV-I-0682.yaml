@@ -5,34 +5,39 @@ blueprint_node: I
 vendor: pearsonvue
 license_level: both
 cognitive_level: application
-stem: A landowner cuts down timber on his property and sells the logs. What is the legal
-  classification of the logs after they are cut?
+stem: A property has a mortgage recorded in January 2018, a judgment lien recorded in March 2019,
+  and unpaid property taxes for 2020. Which lien is paid first from foreclosure proceeds?
 options:
-  - The item is real property
-  - The item is personal property
-  - The item is a fixture of the house
-  - The item is a trade fixture
-key: B
-explanation: Severance converts real property into personal property. Cutting timber is an act of
-  severance, so the logs become personal property. Fixtures and trade fixtures involve attachment
-  with intent to remain, which does not apply to severed timber.
+  - The mortgage recorded in January 2018.
+  - The judgment lien recorded in March 2019.
+  - The property tax lien for 2020.
+  - The lien recorded most recently.
+key: C
+explanation: Property tax and special assessment liens rank ahead of all other liens regardless of
+  date, including an earlier-recorded mortgage. Therefore the 2020 property tax lien is paid before
+  the 2018 mortgage and the 2019 judgment lien. The option stating that the lien recorded most
+  recently is paid first incorrectly applies the first-in-time rule and overlooks the tax-lien
+  exception. The option stating that the judgment lien recorded in March 2019 is paid first ignores
+  both the tax-lien exception and the earlier mortgage. The option stating that the mortgage
+  recorded in January 2018 is paid first misstates the rule, because priority is not based solely on
+  the most recent recording.
 citation:
-  source: REP Ref. Property & Land Use § 1.6
+  source: REP Ref. Property & Land Use § 8.3
   url: null
-  quoted_text: Real property becomes personal property by severance (cutting timber, mining ore,
-    detaching a fixture).
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
   secondary: []
 terms:
-  - severance
-  - personal property
+  - lien
+  - priority
+  - property tax
 tags: []
 status: published
-reviewer: provisional-skip-qa
-verified_on: 2026-09-09
-qa_approved_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"
-version: 1
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2

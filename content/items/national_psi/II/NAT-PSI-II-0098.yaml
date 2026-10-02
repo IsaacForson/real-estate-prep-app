@@ -1,0 +1,40 @@
+id: NAT-PSI-II-0098
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2017 mortgage, a 2021 home-equity line of credit, a 2023 mechanic's lien, and
+  unpaid property taxes. If the property is sold at foreclosure, which claim is paid first from the
+  proceeds?
+options:
+  - Mechanic's lien
+  - Home equity line
+  - Property taxes
+  - First mortgage loan
+key: C
+explanation: Property tax and special assessment liens rank ahead of all other liens regardless of
+  date, including an earlier-recorded mortgage. Therefore, unpaid property taxes are paid before the
+  mortgage, equity line, and mechanic's lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - property tax lien
+  - priority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

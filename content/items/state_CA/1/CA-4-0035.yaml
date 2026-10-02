@@ -1,0 +1,44 @@
+id: CA-4-0035
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An applicant has submitted the application to take the real estate salesperson examination but
+  has not yet taken the exam. According to Cal. Code Regs. tit. 10, § 2712, when may the applicant
+  submit fingerprints?
+options:
+  - The applicant may submit fingerprints only with the application to take the examination.
+  - The applicant may submit fingerprints only after passing the examination.
+  - The applicant may submit fingerprints at any time after submitting the application to take the
+    examination.
+  - The applicant may submit fingerprints only with the application for a real estate license.
+key: C
+explanation: Section 2712(b) expressly allows fingerprint submission 'at anytime after submitting
+  the application to take the license examination,' which corresponds to the option stating that
+  fingerprints may be submitted at any time after submitting the application to take the
+  examination. The option stating that fingerprints may be submitted only with the application to
+  take the examination is incorrect because it limits submission to that time only, ignoring the
+  'anytime after' provision.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2712
+  url: null
+  quoted_text: An original applicant for a real estate license may submit his or her fingerprints (a)
+    with the application to take the license examination; (b) at anytime after submitting the
+    application to take the license examination; or (c) with the application for a real estate
+    license.
+  secondary: []
+terms:
+  - fingerprint
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

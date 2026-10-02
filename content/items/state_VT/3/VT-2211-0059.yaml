@@ -1,0 +1,49 @@
+id: VT-2211-0059
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a $10,000 earnest money deposit that is expected to earn substantial
+  interest. The buyer requests that the interest be paid to them. Assuming no written agreement to
+  the contrary, under 26 V.S.A. § 2214(b)(1), what happens to the interest if the sale is
+  consummated?
+options:
+  - A) The interest is paid to the buyer.
+  - B) The interest is added to the purchase price due from the buyer.
+  - C) The interest is paid to the seller.
+  - D) The interest is remitted to the Vermont Housing Finance Agency.
+key: B
+explanation: Unless otherwise agreed in writing, interest earned on an individual interest‑bearing
+  trust account is applied to the purchase price due from the buyer if the sale is consummated. The
+  interest being paid to the buyer would apply only if the deposit were returned to the buyer, and
+  the interest being paid to the seller applies if the buyer defaults. The interest being remitted
+  to the Vermont Housing Finance Agency pertains to pooled accounts under subsection (c).
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2214(b)(1)
+  url: null
+  quoted_text: Unless otherwise agreed to in writing by all parties, the interest earned shall be
+    applied to the purchase price due from the buyer if the sale is consummated, shall be returned
+    to the buyer if the deposit is returned to the buyer, and shall be payable to the seller if the
+    buyer defaults.
+  secondary: []
+math:
+  worked_solution: No calculation is required; the question asks about the allocation of interest, not its amount.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - interest
+  - purchase price
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

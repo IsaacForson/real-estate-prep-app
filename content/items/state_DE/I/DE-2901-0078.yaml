@@ -1,0 +1,41 @@
+id: DE-2901-0078
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person who has been a licensed broker for 4 years and 11 months and resides in Kent County
+  applies for a broker seat on the Delaware Real Estate Commission. Under Del. Code Ann. tit. 24,
+  ch. 29, § 2903(b)(1), is the applicant eligible for appointment?
+options:
+  - The applicant is eligible because they meet the residency requirement.
+  - The applicant is not eligible due to insufficient broker experience.
+  - The applicant is eligible after completing 5 years of experience.
+  - The applicant is eligible if they also have an associate broker license.
+key: B
+explanation: The rule requires broker members of the Commission to have been active licensees for at
+  least five years immediately prior to appointment. Because the applicant has only four years and
+  eleven months of experience, they do not satisfy the experience requirement. The statement that
+  the applicant is eligible because they meet the residency requirement is incorrect, as residency
+  alone does not satisfy the statutory experience condition.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2903(b)(1)
+  url: null
+  quoted_text: Broker members of the Commission shall have been active licensees for at least 5 years
+    immediately prior to their appointment.
+  secondary: []
+terms:
+  - broker member
+  - experience requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

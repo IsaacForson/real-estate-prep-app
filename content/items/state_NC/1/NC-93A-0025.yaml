@@ -1,0 +1,48 @@
+id: NC-93A-0025
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "1"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's license expires on June 30, 2024. On May 1, 2024, the broker submits a renewal
+  application and pays the $45 renewal fee. Is the renewal timely under North Carolina law?
+options:
+  - The renewal is timely because it was submitted within the 45-day window before expiration.
+  - The renewal is timely because it was submitted more than 45 days before expiration.
+  - The renewal is not timely because it was submitted within the 45-day window before expiration.
+  - The renewal is not timely because it was submitted more than 45 days before expiration.
+key: D
+explanation: Under N.C. Gen. Stat. § 93A-4(c), a license may be renewed starting 45 days before its
+  expiration date. Submitting a renewal earlier than that 45‑day window is not permitted. May 1,
+  2024 is 60 days before June 30, 2024, which is outside the allowed period, so the renewal is not
+  timely. The statement that the renewal is timely because it was submitted within the 45‑day window
+  before expiration is incorrect because the submission occurred earlier than the permitted window.
+citation:
+  source: N.C. Gen. Stat. ch. 93A — N.C. General Statutes Chapter 93A - Real Estate License Law;
+    ncleg.gov PDF, Internet Archive capture 2026-04-19 — § 93A-4(c)
+  url: null
+  quoted_text: A license may be renewed 45 days prior to the expiration date by filing an application
+    with and paying to the Executive Director of the Commission the license renewal fee.
+  secondary: []
+math:
+  worked_solution: Calculate the number of days between May 1, 2024 and June 30, 2024. May has 31
+    days, so days remaining in May after May 1 = 31 - 1 = 30 days. Add the full month of June (30
+    days). Total = 30 + 30 = 60 days.
+  formulas:
+    - Date difference = (Expiration date - Submission date)
+  onscreen_calculator_only: false
+terms:
+  - renewal
+  - expiration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,46 @@
+id: AL-27-0018
+jurisdiction: AL
+bank: state_AL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker faces a judgment of $70,000 from a single transaction, with two claimants each
+  seeking $35,000. What is the maximum total amount the Recovery Fund may pay for this transaction?
+options:
+  - Thirty-five thousand dollars
+  - Seventy thousand dollars
+  - Fifty thousand dollars
+  - Twenty-five thousand dollars
+key: D
+explanation: Under Ala. Code § 34-27-31(b)(3), the Recovery Fund’s aggregate payment for claims
+  arising out of the same transaction cannot exceed twenty‑five thousand dollars ($25,000),
+  regardless of how many claimants are involved. Therefore, even though two claimants each seek
+  $35,000, the fund may pay no more than $25,000 in total. The $50,000 amount mistakenly applies a
+  per‑person limit, and the $70,000 amount uses the combined judgment figure.
+citation:
+  source: Ala. Code § 34-27-31(b)(3)
+  url: null
+  quoted_text: (3) Payments for claims arising out of the same transaction shall not exceed
+    twenty-five thousand dollars ($25,000) in the aggregate, regardless of the number of claimants.
+  secondary: []
+math:
+  worked_solution: The statutory cap for a single transaction is $25,000 (Ala. Code § 34-27-31(b)(3)).
+    Thus, the maximum total amount the Recovery Fund may pay is $25,000.
+  formulas:
+    - Maximum payment = Statutory cap = $25,000
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - aggregate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

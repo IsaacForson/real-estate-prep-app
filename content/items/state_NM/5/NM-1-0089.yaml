@@ -1,0 +1,48 @@
+id: NM-1-0089
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer signs a written buyer representation agreement with XYZ Brokerage before viewing
+  properties. How is this buyer classified under 16.61.19.8?
+options:
+  - A person who uses brokerage services without signing an express written agreement
+  - A broker designated in writing by the qualifying broker to represent a client exclusively
+  - A person who has signed an express written buyer representation agreement with a brokerage
+  - A broker who provides real estate services without entering into an agency relationship
+key: C
+explanation: The buyer has signed an express written buyer representation agreement, which under
+  16.61.19.8 NMAC defines a client as a person who has entered into an express written agreement
+  with a brokerage for real estate services. Therefore the buyer is a client. The option that states
+  'A person who has signed an express written buyer representation agreement with a brokerage'
+  matches this definition and is correct. The option describing a broker designated in writing by
+  the qualifying broker to represent a client exclusively refers to a designated broker, not the
+  buyer. The option describing a person who uses brokerage services without signing an express
+  written agreement describes a customer, not a client. The option describing a broker who provides
+  real estate services without entering into an agency relationship describes an unlicensed or
+  non‑agent broker, which is unrelated to the buyer's classification.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.19.8
+  url: null
+  quoted_text: "“Client”: a person who has entered into an express written agreement with a brokerage
+    for real estate services subject to the jurisdiction of the commission"
+  secondary: []
+terms:
+  - client
+  - customer
+  - designated agent
+  - transaction broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

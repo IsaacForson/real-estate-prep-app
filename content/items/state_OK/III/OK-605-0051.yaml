@@ -1,0 +1,44 @@
+id: OK-605-0051
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money check on Tuesday, May 5, and the offer is accepted the same
+  day. The parties have not agreed in writing to a different timeline. Under Oklahoma Admin. Code §
+  10-13-1(a)(1)(D), by what date must the broker deposit the funds?
+options:
+  - Deposit by the close of business on Saturday, May 8.
+  - Deposit by the close of business on Thursday, May 6.
+  - Deposit by the close of business on Wednesday, May 6.
+  - Deposit by the close of business on Friday, May 7.
+key: D
+explanation: The rule requires deposit before the end of the third banking day after receipt.
+  Tuesday counts as day 0; Wednesday is day 1, Thursday day 2, and Friday day 3, so the deadline is
+  the close of business on Friday. The distractor listing Thursday is incorrect because it only
+  allows two banking days.
+citation:
+  source: Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules) — Oklahoma Administrative
+    Code Title 605, Chapters 1 and 10 (OREC Code and Rules Book, as of Nov. 1, 2025) — §
+    10-13-1(a)(1)(D)
+  url: null
+  quoted_text: All escrow funds shall be deposited before the end of the third banking day following
+    acceptance of an offer by an offeree or receipt of escrow funds unless otherwise agreed to in
+    writing by all interested parties.
+  secondary: []
+terms:
+  - escrow
+  - deposit
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

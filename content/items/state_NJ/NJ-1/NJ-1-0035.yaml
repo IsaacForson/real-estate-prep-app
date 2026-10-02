@@ -1,0 +1,46 @@
+id: NJ-1-0035
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate school license is issued on March 15, 2024. What is the latest possible
+  expiration date for this license under New Jersey statute?
+options:
+  - March 14, 2026
+  - March 16, 2026
+  - March 15, 2026
+  - March 15, 2025
+key: C
+explanation: The law states that a school license shall expire on a date fixed by the commission
+  that is not more than two years from the date of issuance. Therefore the latest permissible
+  expiration date is exactly two years later, March 15, 2026. The option showing only one year is
+  incorrect because it does not represent the maximum allowed term.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — §
+    15-10.6"
+  url: null
+  quoted_text: All licenses issued to real estate schools shall expire on a date fixed by the
+    commission which date shall not be more than two years from the date of issuance of the license.
+  secondary: []
+terms:
+  - expiration
+  - license
+  - school
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

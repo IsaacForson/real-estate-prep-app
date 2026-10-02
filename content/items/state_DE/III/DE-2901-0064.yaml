@@ -1,0 +1,42 @@
+id: DE-2901-0064
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker plans to move their office to a new location two weeks from today and has not yet
+  notified the Commission. Under 24 Del. Admin. Code § 2900-7.3, is this permitted?
+options:
+  - Yes, because the broker can notify the Commission after the move as long as they submit a new
+    office application.
+  - No, because the broker must notify the Commission in writing at least 30 days prior to the move
+    or as soon as practical.
+  - Yes, because the broker only needs to submit a new office application; notice is not required.
+  - No, because the broker must wait until after the move to notify the Commission.
+key: B
+explanation: Section 7.3 mandates that brokers notify the Commission in writing at least 30 days
+  prior to moving their office, or as soon as practical, and submit a new office application. Moving
+  in two weeks without prior notice violates this requirement. Notifying after the move or relying
+  solely on the office application is insufficient.
+citation:
+  source: 24 Del. Admin. Code § 2900-7.3
+  url: null
+  quoted_text: All Brokers who move the physical location of their office shall notify the Commission
+    in writing at least 30 days, or as soon as practical, prior to such move by submitting a new
+    office application.
+  secondary: []
+terms:
+  - office move
+  - notice period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

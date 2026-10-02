@@ -1,0 +1,42 @@
+id: NAT-PV-I-0459
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Which statement correctly compares the priority treatment of property tax liens and mechanic's
+  liens?
+options:
+  - Mechanic liens beat tax liens
+  - Tax liens paid after mechanic liens
+  - Tax liens ahead regardless of date
+  - Both liens paid in recording order
+key: C
+explanation: Property tax liens generally rank ahead of all other liens regardless of date,
+  including an earlier-recorded mortgage. Mechanic's lien priority is set by state statute and may
+  relate back to when work began. Therefore, the statement that tax liens take precedence regardless
+  of date is correct, while the statement claiming mechanic's liens beat tax liens is incorrect.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage. Mechanic's lien priority is set by state statute and may relate back to when work
+    began."
+  secondary: []
+terms:
+  - property tax lien
+  - mechanic's lien
+  - priority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

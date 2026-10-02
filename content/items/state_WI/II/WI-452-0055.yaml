@@ -1,0 +1,47 @@
+id: WI-452-0055
+jurisdiction: WI
+bank: state_WI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wis. Stat. § 706.10(3), what is the effect of omitting words of inheritance in a deed
+  that intends to convey a fee simple?
+options:
+  - The deed is void on account of uncertainty entirely.
+  - The deed conveys only a life estate, nothing more.
+  - The deed fails to convey any interest whatsoever.
+  - The deed conveys estate unless intent differs.
+key: D
+explanation: Subsection (3) states that words of inheritance are not necessary to create or convey a
+  fee, and that every conveyance passes all the estate or interest of the grantor unless a different
+  intent appears expressly or by necessary implication. Therefore, the deed still conveys the
+  grantor's full estate unless a different intent appears. The option stating that the deed conveys
+  only a life estate is incorrect because the statute does not limit the estate to a life estate
+  when inheritance words are omitted.
+citation:
+  source: Wis. Stat. § 706.10(3)
+  url: null
+  quoted_text: |-
+    In conveyances of lands words of inheritance shall not be
+    necessary to create or convey a fee, and every conveyance shall
+    pass all the estate or interest of the grantor unless a different in-
+    tent shall appear expressly or by necessary implication in the
+    terms of such conveyance
+  secondary: []
+terms:
+  - inheritance
+  - fee
+  - intent
+  - conveyance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

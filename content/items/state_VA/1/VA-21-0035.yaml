@@ -1,0 +1,40 @@
+id: VA-21-0035
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Virginia firm’s license expires on August 15. By what date must the principal broker
+  complete the required audit to comply with board regulations?
+options:
+  - May 17
+  - May 27
+  - June 14
+  - July 1
+key: A
+explanation: The rule mandates an audit within 90 days prior to the firm license expiration date.
+  Counting back 90 days from August 15 yields May 17, so the audit must be finished by that date.
+  June 14 is only 62 days prior and does not satisfy the 90‑day requirement.
+citation:
+  source: "### 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing
+    Regulations — § 135-20-225"
+  url: null
+  quoted_text: A principal broker or supervising broker must conduct or have a third party conduct an
+    audit within 90 days prior to the expiration of the firm license.
+  secondary: []
+terms:
+  - audit
+  - firm license
+  - principal broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

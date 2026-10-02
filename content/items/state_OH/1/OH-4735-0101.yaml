@@ -1,0 +1,47 @@
+id: OH-4735-0101
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives her license on June 1, 2024. What is the latest date by which she must
+  submit proof of completion of the required twenty hours of continuing education to avoid automatic
+  suspension under Ohio Rev. Code § 4735.09(J)?
+options:
+  - May 31, 2025
+  - June 1, 2025
+  - June 30, 2025
+  - July 1, 2025
+key: B
+explanation: The rule states that the salesperson must submit proof not earlier than the date of
+  issue and not later than twelve months after the date of issue. Twelve months after June 1, 2024
+  is June 1, 2025, which is the latest date that still avoids suspension. The distractor May 31,
+  2025 is wrong because it is not the latest permissible date; submitting after May 31 but before
+  June 2 would still comply, but the latest allowable date is June 1, 2025.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts Section 4735.09(J)
+  url: null
+  quoted_text: (J) Not earlier than the date of issue of a real estate salesperson's license to a
+    licensee, but not later than twelve months after the date of issue of a real estate salesperson
+    license to a licensee, the licensee shall submit proof satisfactory to the superintendent, on
+    forms made available by the superintendent, of the completion of twenty hours of instruction
+    that shall be completed in schools, seminars, and educational institutions approved by the
+    commission.
+  secondary: []
+terms:
+  - continuing education
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

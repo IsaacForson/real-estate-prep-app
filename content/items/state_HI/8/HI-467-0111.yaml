@@ -1,0 +1,44 @@
+id: HI-467-0111
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives a cash deposit from a buyer on a Tuesday and receives no written
+  instructions otherwise. When must the salesperson deliver the cash to the principal broker under
+  Hawaii Administrative Rules?
+options:
+  - By the next business day
+  - By the third business day
+  - By the end of the same business day
+  - By the fifth business day
+key: A
+explanation: The rule requires that property received in trust be delivered to the principal broker
+  by the next business day after receipt unless otherwise instructed in writing. Delivering by the
+  end of the same day is too soon and not required.
+citation:
+  source: Haw. Admin. Rules § 16-99-4(g)
+  url: null
+  quoted_text: |-
+    shall be delivered
+    immediately by the next business day after receipt to the salesperson's or broker-
+    salesperson's principal broker or broker-in-charge, unless the salesperson or broker-
+    salesperson is instructed as to another time in writing by the depositor
+  secondary: []
+terms:
+  - salesperson
+  - principal broker
+  - next business day
+  - written instruction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

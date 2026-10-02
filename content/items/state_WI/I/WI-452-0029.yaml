@@ -1,0 +1,44 @@
+id: WI-452-0029
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A will names two siblings as co‑personal representatives of the decedent’s estate, and the
+  deed transferring the decedent’s house lists them as owners. Under Wis. Stat. § 700.19(4), how do
+  they hold title?
+options:
+  - They hold title as joint tenants under Wisconsin law
+  - They hold title as tenants in common with equal shares under Wisconsin law
+  - They hold title as tenants in common unless otherwise agreed under Wisconsin law
+  - They hold title as tenants in common if shares unequal under Wisconsin law
+key: A
+explanation: Under Wis. Stat. § 700.19(4), co‑personal representatives and cotrustees hold title as
+  joint tenants regardless of any contrary intent. This rule overrides the default presumption of
+  equal tenancy in common shares. Therefore, the siblings hold the property as joint tenants. The
+  distractor suggesting equal tenancy in common shares ignores the specific statutory rule for
+  co‑fiduciaries.
+citation:
+  source: Wis. Stat. § 700.19(4)
+  url: null
+  quoted_text: |-
+    Notwithstanding s. 700.18 and subs. (1)
+    to (3), co-personal representatives and cotrustees hold title to in-
+    terests in property as joint tenants
+  secondary: []
+terms:
+  - joint tenancy
+  - co-personal representative
+  - tenancy in common
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

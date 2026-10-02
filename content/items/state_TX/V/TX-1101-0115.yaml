@@ -1,0 +1,45 @@
+id: TX-1101-0115
+jurisdiction: TX
+bank: state_TX
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sponsoring broker authorizes a sales agent to show a property and receive offers, but the
+  agent also negotiates the purchase price and prepares a purchase agreement without the broker’s
+  written authorization. Under TREC rules, who is responsible for the agent’s actions?
+options:
+  - The broker is responsible because the agent acted beyond the authorized scope.
+  - The sales agent is solely responsible because they performed the negotiation.
+  - The broker is responsible only if the agent had a written contract with the buyer.
+  - The sales agent and broker share responsibility equally unless the broker limited the scope in
+    writing.
+key: A
+explanation: The rule provides that if a broker permits a sponsored sales agent to conduct
+  activities beyond the scope explicitly authorized, those acts are for which the broker is
+  responsible. The agent is not solely liable, and the broker’s responsibility does not depend on a
+  written contract with the buyer.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live §535.2(a)"
+  url: null
+  quoted_text: If a broker permits a sponsored sales agent to conduct activities beyond the scope
+    explicitly authorized by the broker, those are acts for which the broker is responsible.
+  secondary: []
+terms:
+  - broker
+  - sales agent
+  - scope
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

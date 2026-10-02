@@ -1,0 +1,48 @@
+id: HI-467-0058
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Hawaii Revised Statutes § 521‑8, what does the term “premises” include?
+options:
+  - A dwelling unit, appurtenances thereto, grounds, and facilities held out for the use of tenants
+    generally, including parking spaces.
+  - A dwelling unit, appurtenances thereto, grounds, and facilities held out for the use of tenants
+    generally and any other area or facility whose use is promised to the tenant.
+  - A dwelling unit, appurtenances thereto, grounds, and facilities held out for the use of tenants
+    generally, but not any other area or facility whose use is promised to the tenant.
+  - A dwelling unit, appurtenances thereto, grounds, and facilities held out for the use of tenants
+    generally, plus any additional structures not used by tenants.
+key: B
+explanation: Section 521‑8 defines “premises” as a dwelling unit, its appurtenances, the grounds,
+  facilities held out for the use of tenants generally, and any other area or facility whose use is
+  promised to the tenant. The answer that includes both the general facilities and the promised‑use
+  clause matches this definition exactly. The answer that lists only the dwelling unit,
+  appurtenances, grounds and general facilities omits the promised‑use language and is therefore
+  incomplete.
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Revised Statutes Chapter 521 - Residential Landlord-Tenant
+    Code (data.capitol.hawaii.gov, section pages concatenated) — § 521-8
+  url: null
+  quoted_text: '"Premises" means a dwelling unit, appurtenances thereto, grounds, and facilities held
+    out for the use of tenants generally and any other area or facility whose use is promised to the
+    tenant.'
+  secondary: []
+terms:
+  - premises
+  - dwelling unit
+  - appurtenances
+  - facilities
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

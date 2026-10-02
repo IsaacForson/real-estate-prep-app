@@ -1,0 +1,54 @@
+id: WI-452-0052
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases land. Twenty‑eight years before the purchase, a mortgage was recorded that
+  merely states ‘Mortgage granted to Bank’ without specifying the property, amount, or date. The
+  buyer had no actual or constructive notice of the mortgage. Under Wis. Stat. § 706.09(2)(b), does
+  the buyer have notice of the mortgage?
+options:
+  - The buyer does not have notice because the recorded mortgage does not satisfy the definiteness
+    requirement of sub. (1)(b).
+  - The buyer does not have notice because the buyer lacked actual or constructive notice.
+  - The buyer has notice because any recorded instrument within 30 years automatically constitutes
+    notice.
+  - The buyer has notice because the mortgage appears of record within 30 years prior to the
+    purchase.
+key: A
+explanation: Under subsection (2)(b), notice of record within 30 years requires an instrument
+  appearing of record within 30 years that also affords affirmative and express notice meeting the
+  definiteness requirement of subsection (1)(b). The mortgage lacks definiteness, so the buyer does
+  not have notice. The claim that the buyer has notice because the mortgage appears of record within
+  30 years prior to the purchase incorrectly ignores the definiteness requirement.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.09(2)(b)
+  url: null
+  quoted_text: |-
+    There appears of record
+    in the chain of title of the real estate affected, within 30 years and
+    prior to the time at which the interest of such purchaser arises in
+    law or equity, an instrument affording affirmative and express no-
+    tice of such prior outstanding interest conforming to the require-
+    ments of definiteness of sub. (1) (b
+  secondary: []
+terms:
+  - notice
+  - prior claim
+  - definiteness
+  - record
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

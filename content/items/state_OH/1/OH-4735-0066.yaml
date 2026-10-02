@@ -1,0 +1,44 @@
+id: OH-4735-0066
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two witnesses subpoenaed by the Ohio real estate commission travel to the hearing in the same
+  car. How is the mileage fee handled under Ohio Rev. Code § 4735.04?
+options:
+  - Each witness receives the full mileage fee for travel.
+  - One witness gets the mileage fee; others may share it.
+  - The mileage fee is split equally between the two witnesses.
+  - No mileage fee is paid when witnesses share the same vehicle.
+key: B
+explanation: The law provides that when two or more witnesses travel together in the same vehicle,
+  the mileage fee shall be paid to only one of those witnesses, but the witnesses may agree to
+  divide the fee among themselves in any manner. Therefore, the fee is paid to one witness who may
+  share it. The option stating the fee is split equally between the two witnesses is incorrect
+  because the statute does not require an automatic split; division only occurs if the witnesses
+  agree.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.04
+  url: null
+  quoted_text: If two or more witnesses travel together in the same vehicle, the mileage fee shall be
+    paid to only one of those witnesses, but the witnesses may agree to divide the fee among
+    themselves in any manner.
+  secondary: []
+terms:
+  - mileage
+  - witness
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

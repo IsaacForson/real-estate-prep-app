@@ -1,0 +1,52 @@
+id: MI-25-0098
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under Mich. Comp. Laws § 438.31c(2)(c), a lender charges a prepayment fee equal to 2% of the
+  prepayment amount made 18 months after the loan date. Which statement correctly describes the
+  legality of this fee?
+options:
+  - The fee is permitted because any prepayment fee is allowed within the first three years.
+  - The fee is permitted because the fee is less than 5% of the prepayment amount.
+  - The fee is not permitted because prepayment fees are prohibited after the first year.
+  - The fee is not permitted because it exceeds the 1% maximum allowed for prepayments made within
+    three years.
+key: D
+explanation: The statute limits prepayment fees to no more than 1% of the prepayment amount if made
+  within three years of the loan date; any higher fee is impermissible. Because the fee is 2% and
+  the prepayment occurred at 18 months (within the three‑year window), it exceeds the allowed
+  maximum. The statement that any prepayment fee is allowed within the first three years misstates
+  the 1% cap.
+citation:
+  source: Mich. Comp. Laws §§ 438.31–438.32 — Michigan Compiled Laws — Interest rates (usury), MCL
+    438.31–438.32 (Act 326-of-1966) — official Michigan Legislature compiled-act PDF read via
+    Internet Archive capture of 2025-09-12 because legislature.mi.gov's WAF blocks scripts — §
+    438.31c(2)(c)
+  url: null
+  quoted_text: (c) Charge a prepayment fee or penalty in excess of 1% of the amount of any prepayment
+    made within 3 years of the date of the loan, or any prepayment fee or penalty at all thereafter,
+    or prohibit prepayment at any time.
+  secondary: []
+math:
+  worked_solution: The prepayment fee is calculated as 2% of the prepayment amount. Multiply the
+    prepayment amount by 0.02 to obtain the fee.
+  formulas:
+    - Fee = percentage × prepayment amount
+  onscreen_calculator_only: false
+terms:
+  - prepayment fee
+  - penalty
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

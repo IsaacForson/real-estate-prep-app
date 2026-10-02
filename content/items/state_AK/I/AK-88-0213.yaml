@@ -1,0 +1,52 @@
+id: AK-88-0213
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee managing a community association receives $18,000 in quarterly assessments. The
+  estimated budgeted expenditures for the next three months are $12,000. According to Alaska Stat. §
+  08.88.351(b)(4), what must the licensee do with the excess funds in the operating account?
+options:
+  - Transfer excess to reserve account
+  - Leave excess in operating account
+  - Deposit excess into trust account
+  - Return excess to association
+key: A
+explanation: Under Alaska Stat. § 08.88.351(b)(4), if the operating account contains more money than
+  is estimated to be needed for budgeted expenditures for the subsequent three months, the licensee
+  must transfer the excess funds to the reserve account as soon as practicable. Keeping the excess
+  in the operating account would violate this requirement.
+citation:
+  source: Alaska Stat. § 08.88.351(b)(4)
+  url: null
+  quoted_text: (4) shall promptly deposit community association funds or proceeds from periodic
+    community association assessments into either a community association reserve account or a
+    community association operating account; if, at any time, the community association operating
+    account contains more money than is estimated to be needed for budgeted expenditures for the
+    subsequent three months, the licensee shall transfer the excess funds to the community
+    association reserve account as soon as practicable;
+  secondary: []
+math:
+  worked_solution: Assessments = $18,000\nBudgeted expenditures = $12,000\nExcess = Assessments -
+    Budgeted expenditures = $18,000 - $12,000 = $6,000
+  formulas:
+    - Excess = Assessments - Budgeted expenditures
+  onscreen_calculator_only: false
+terms:
+  - community association
+  - operating account
+  - reserve account
+  - excess
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

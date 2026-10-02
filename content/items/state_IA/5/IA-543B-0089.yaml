@@ -1,0 +1,52 @@
+id: IA-543B-0089
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Iowa Code § 543B.46(1), what happens to the interest earned on a trust account unless
+  there is a written agreement between the buyer and seller to the contrary?
+options:
+  - The interest shall be retained by the broker as compensation for managing the trust account, per
+    rule.
+  - The interest shall be paid directly to the buyer and seller in proportion to their
+    contributions, per rule.
+  - The interest shall be transferred quarterly to the treasurer of state and then to the Iowa
+    finance authority for deposit in the housing trust fund.
+  - The interest shall be deposited into the broker's operating account to cover administrative
+    expenses, per rule.
+key: C
+explanation: Iowa Code § 543B.46(1) requires that interest on a trust account be transferred
+  quarterly to the treasurer of state and then to the Iowa finance authority for deposit in the
+  housing trust fund, unless a written agreement between buyer and seller directs otherwise. The
+  broker may not retain or benefit from this interest. The statement that the broker retains the
+  interest as compensation is incorrect because the statute prohibits the broker from keeping the
+  interest. The statement that the interest goes to the broker's operating account is also incorrect
+  for the same reason. The statement that interest is paid directly to the buyer and seller is
+  incorrect because the statute directs the interest to the state treasurer and finance authority
+  unless a written agreement says otherwise.
+citation:
+  source: Iowa Code § 543B.46(1)
+  url: null
+  quoted_text: The account shall be an interest-bearing account. The interest on the account shall be
+    transferred quarterly to the treasurer of state and transferred to the Iowa finance authority
+    for deposit in the housing trust fund established in section 16.181 unless there is a written
+    agreement between the buyer and seller to the contrary.
+  secondary: []
+terms:
+  - trust account
+  - interest
+  - treasurer
+  - housing trust fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

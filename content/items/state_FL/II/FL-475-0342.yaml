@@ -1,0 +1,50 @@
+id: FL-475-0342
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant obtains a final judgment for $80,000 in actual damages against a sales associate.
+  After levying execution, only $20,000 can be recovered from the sales associate’s assets. What is
+  the maximum amount the claimant may receive from the Real Estate Recovery Fund under Florida
+  Statute 475.484(1)(a)?
+options:
+  - $20,000
+  - $30,000
+  - $40,000
+  - $50,000
+key: D
+explanation: The unsatisfied portion of the judgment is $60,000 ($80,000 minus $20,000). The statute
+  limits payment to the lesser of the unsatisfied portion or $50,000, so the claimant may receive
+  $50,000. The distractor $60,000 ignores the statutory cap.
+citation:
+  source: Fla. Stat. § 475.484(1)(a)
+  url: null
+  quoted_text: Under s. 475.482(1), in an amount equal to the unsatisfied portion of such person’s
+    judgment or $50,000, whichever is less, but only to the extent and amount reflected in the
+    judgment as being actual or compensatory damages.
+  secondary: []
+math:
+  worked_solution: |-
+    Unsatisfied portion = $80,000 - $20,000 = $60,000
+    Payment = lesser of unsatisfied portion and $50,000 = min($60,000, $50,000) = $50,000
+  formulas:
+    - Unsatisfied = Judgment - Recovered
+    - Payment = min(Unsatisfied, $50,000)
+  onscreen_calculator_only: false
+terms:
+  - judgment
+  - unsatisfied
+  - recovery fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

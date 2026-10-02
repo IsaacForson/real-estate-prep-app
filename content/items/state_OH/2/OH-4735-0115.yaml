@@ -1,0 +1,44 @@
+id: OH-4735-0115
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Ohio law, who qualifies as an “affiliated licensee” for purposes of paying commissions?
+options:
+  - a person who holds a valid and active license issued under this chapter and is associated with
+    the broker at the time the commission is earned
+  - a person who holds a license issued under a different state and receives a commission from the
+    Ohio broker
+  - a person who holds a valid and active license issued under this chapter but is not associated
+    with the broker at the time the commission is earned
+  - a person who does not hold a license but works for the broker as an employee when the commission
+    is earned
+key: A
+explanation: The statute defines an affiliated licensee as a person who holds a valid and active
+  license issued under this chapter and who is associated with the broker at the time the fee is
+  earned. The other choices describe persons who lack the required license or association.
+citation:
+  source: Ohio Rev. Code ch. 4735 § 4735.20(J)
+  url: null
+  quoted_text: For purposes of this section, "affiliated licensee" means a person who holds a valid
+    and active license issued under this chapter and who is associated with the broker that is
+    paying a fee, commission, or other compensation at the time that that fee, commission, or other
+    compensation is earned.
+  secondary: []
+terms:
+  - affiliated licensee
+  - commission
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

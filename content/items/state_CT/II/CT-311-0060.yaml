@@ -1,0 +1,54 @@
+id: CT-311-0060
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission collects $12,000 in licensing fees during a month. Of
+  this amount, $2,000 is required to be paid to the University of Connecticut under section 10a-125,
+  and $1,500 must be paid to the Real Estate Guaranty Fund. According to Connecticut law, what
+  happens to the remaining $8,500 of fees?
+options:
+  - The remaining fees are deposited with the State Treasurer and added to the General Fund.
+  - The remaining fees are retained by the commission to cover administrative expenses.
+  - The remaining fees are returned to the licensees who paid the fees as required by law.
+  - The remaining fees are forwarded to the Real Estate Guaranty Fund for additional reserves.
+key: A
+explanation: According to Conn. Gen. Stat. § 20-311e, after setting aside amounts required for the
+  University of Connecticut and the Real Estate Guaranty Fund, the remaining fees must be deposited
+  with the State Treasurer and become part of the General Fund. Hence, the remaining $8,500 are
+  deposited with the Treasurer and added to the General Fund. The distractor stating the fees are
+  retained by the commission for administrative expenses conflicts with the deposit mandate, as the
+  statute directs the remainder to the Treasurer, not to the commission’s accounts.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311e
+  url: null
+  quoted_text: The commission shall deposit all moneys received by it from fees in accordance with the
+    provisions of this chapter with the State Treasurer, and they shall, except as to that portion
+    thereof required to be paid over to The University of Connecticut under the provisions of
+    section 10a-125 , or that portion required to be paid to the Real Estate Guaranty Fund pursuant
+    to this chapter, become part of the General Fund
+  secondary: []
+math:
+  worked_solution: "Total fees collected: $12,000. Subtract amount for University of Connecticut:
+    $12,000 - $2,000 = $10,000. Subtract amount for Real Estate Guaranty Fund: $10,000 - $1,500 =
+    $8,500. The remaining $8,500 is the amount in question."
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - deposit
+  - general fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

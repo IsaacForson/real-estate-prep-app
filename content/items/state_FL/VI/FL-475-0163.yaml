@@ -1,0 +1,55 @@
+id: FL-475-0163
+jurisdiction: FL
+bank: state_FL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Three claimants each have an unsatisfied judgment of $20,000 arising from the same real estate
+  brokerage transaction. According to Fla. Stat. § 475.484(3), what is the maximum total amount the
+  Real Estate Recovery Fund may pay for these claims?
+options:
+  - The fund may pay a maximum of $20,000.
+  - The fund may pay a maximum of $40,000.
+  - The fund may pay a maximum of $50,000.
+  - The fund may pay a maximum of $60,000.
+key: C
+explanation: Under Fla. Stat. § 475.484(3), payments for claims arising out of the same transaction
+  are limited in the aggregate to $50,000, regardless of how many claimants are involved. Although
+  the three claimants together have unsatisfied judgments totaling $60,000, the fund cannot exceed
+  the $50,000 cap. Therefore the option stating the fund may pay a maximum of $50,000 is correct,
+  while the option stating the fund may pay a maximum of $60,000 exceeds the statutory limit.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.484(3)
+  url: null
+  quoted_text: Payments for claims arising out of the same transaction shall be limited, in the
+    aggregate, to $50,000, regardless of the number of claimants or parcels of real estate involved
+    in the transaction.
+  secondary: []
+math:
+  worked_solution: "First, calculate the total unsatisfied judgments: 3 claimants × $20,000 = $60,000.
+    Second, apply the statutory limit from Fla. Stat. § 475.484(3), which caps aggregate payments
+    for claims from the same transaction at $50,000. The fund may pay the lesser of the total
+    judgments and the cap: min($60,000, $50,000) = $50,000."
+  formulas:
+    - Total judgments = number of claimants × judgment per claimant
+    - Fund payment = min(total judgments, statutory cap)
+  onscreen_calculator_only: false
+terms:
+  - aggregate
+  - transaction
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,41 @@
+id: MS-1954-0061
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Rule 4.2 of the Mississippi Real Estate Commission Rules, how is the term "Client" defined?
+options:
+  - The person to whom the agent owes a fiduciary duty, who may be a seller, buyer, landlord, tenant
+    or both
+  - The person to whom the agent owes a fiduciary duty, who is either the seller or the buyer
+  - The person to whom the agent owes a fiduciary duty, who is the party paying the commission
+  - The person to whom the agent owes a fiduciary duty, who is the landlord in a lease transaction
+key: A
+explanation: Rule 4.2(C) defines "Client" as the person to whom the agent owes a fiduciary duty,
+  noting it can be a seller, buyer, landlord, tenant, or both. The option that limits the client to
+  only seller or buyer incorrectly omits landlord, tenant, or both parties.
+citation:
+  source: "### 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 4.2"
+  url: null
+  quoted_text: '"Client" shall mean the person to whom the agent owes a fiduciary duty. It can be a
+    seller, buyer, landlord, tenant or both.'
+  secondary: []
+terms:
+  - client
+  - fiduciary duty
+  - agent
+  - principal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

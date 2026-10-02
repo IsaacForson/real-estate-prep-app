@@ -1,0 +1,49 @@
+id: NC-93A-0388
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "1"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salaried employee of a licensed broker, employed to manage an apartment complex owned by a
+  third party, shows units to prospective tenants, provides lease information, accepts applications,
+  completes preprinted lease forms, and negotiates the monthly rent amount with those tenants. Under
+  N.C. Gen. Stat. § 93A-2(c)(6), is the employee required to hold a real estate broker license?
+options:
+  - The employee must hold a real estate broker license because negotiating rent is prohibited under
+    the exemption.
+  - The employee is exempt from licensure because showing units and accepting applications are
+    permitted acts.
+  - The employee must hold a license only if they also negotiate security deposit amounts.
+  - The employee is exempt from licensure as long as rent payments are made payable to the owner.
+key: A
+explanation: N.C. Gen. Stat. § 93A-2(c)(6) provides that a salaried employee of a licensed broker
+  shall not negotiate the amount of security deposits or rental payments and shall not negotiate
+  leases or any rental agreements on behalf of the owner or broker. Because the employee in the
+  scenario negotiates the monthly rent, the exemption does not apply, and a real estate broker
+  license is required. The other listed activities—showing units, providing information, accepting
+  applications, and using preprinted lease forms—are permitted, but the rent‑negotiation step
+  removes the exemption.
+citation:
+  source: N.C. Gen. Stat. § 93A-2(c)(6)
+  url: null
+  quoted_text: The salaried employee shall not negotiate the amount of security deposits or rental
+    payments and shall not negotiate leases or any rental agreements on behalf of the owner or
+    broker.
+  secondary: []
+terms:
+  - exemption
+  - salaried employee
+  - negotiate
+  - rental payments
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

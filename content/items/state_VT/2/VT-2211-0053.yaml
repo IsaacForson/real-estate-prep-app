@@ -1,0 +1,45 @@
+id: VT-2211-0053
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A Vermont real estate broker receives a $2,500 earnest money deposit from a buyer and places
+  the funds in a trust account but fails to keep any records of the deposit or subsequent
+  transactions. Under Vermont law, this action is considered:"
+options:
+  - The broker's action of failing to keep records of the trust account.
+  - The broker's action of providing the buyer with a written receipt for the deposit.
+  - The broker's action of depositing the funds into an interest-bearing account.
+  - The broker's action of informing the buyer that the deposit will earn interest.
+key: A
+explanation: Under Vermont Statutes § 2296(2), failing to maintain records of trust or escrow monies
+  is declared unprofessional conduct. The broker’s failure to keep any records therefore violates
+  this rule. Providing a written receipt, while a good practice, is not mandated by this provision
+  and thus does not constitute unprofessional conduct.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2296(2)
+  url: null
+  quoted_text: failing to inform clients, establish trust and escrow accounts, maintain records, and
+    otherwise act in accordance with the provisions of section 2214
+  secondary: []
+math:
+  worked_solution: No calculation is required; the earnest money deposit is given as $2,500.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - trust
+  - escrow
+  - records
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

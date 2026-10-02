@@ -1,0 +1,43 @@
+id: NE-56-0093
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: If a check submitted to the Nebraska Real Estate Commission as payment for a license renewal
+  is returned unpaid by the State Treasurer, what action may the commission take?
+options:
+  - Place the license on inactive status
+  - Renew the license with a late fee
+  - Require retaking the broker exam
+  - Revoke or deny the license outright
+key: D
+explanation: Under Neb. Rev. Stat. § 81-885.14(4), a check returned unpaid by the State Treasurer is
+  cause for revocation or denial of the license. The other options describe actions that are not
+  mandated for a returned check; for example, placing a license on inactive status applies to
+  renewal inactivity, not payment failure.
+citation:
+  source: Neb. Rev. Stat. § 81-885.14(4)
+  url: null
+  quoted_text: Any check presented to the commission as a fee for either an original or renewal
+    license or for examination for license which is returned to the State Treasurer unpaid or any
+    electronic payment presented to the commission as a fee for either an original or renewal
+    license or for examination for license that is not accepted against the commission shall be
+    cause for revocation or denial of license.
+  secondary: []
+terms:
+  - license
+  - check
+  - revocation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

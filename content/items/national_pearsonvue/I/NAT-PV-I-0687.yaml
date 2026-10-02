@@ -4,36 +4,41 @@ bank: national_pearsonvue
 blueprint_node: I
 vendor: pearsonvue
 license_level: both
-cognitive_level: knowledge
-stem: Which lien is a general, involuntary lien that arises when a money judgment is recorded or
-  docketed in a county?
+cognitive_level: application
+stem: A county takes a 10-foot strip along a residential lot valued at $150,000. The remainder loses
+  $5,000 in value due to loss of driveway. What is just compensation?
 options:
-  - Property tax lien
-  - Mechanic's lien
-  - Federal tax lien
-  - Judgment lien
+  - $150,000.00
+  - $5,000.00
+  - $160,000.00
+  - $155,000.00
 key: D
-explanation: A judgment lien is created by the recording or docketing of a money judgment and is
-  classified as general and involuntary. Federal tax liens arise from assessment, not judgment.
-  Mechanic's and property tax liens are specific liens.
+explanation: Just compensation is ordinarily the fair market value of what is taken plus, for a
+  partial taking, any loss in value to the remainder (severance damages). In this case, the taken
+  portion is valued at $150,000 and the remainder loses $5,000, so just compensation is $150,000 +
+  $5,000 = $155,000. The option stating $150,000.00 omits the severance damages, a common error when
+  calculating compensation for a partial taking.
 citation:
-  source: REP Ref. Property & Land Use § 8.2
+  source: REP Ref. Property & Land Use § 4.3
   url: null
-  quoted_text: "Judgment lien: general, involuntary, arising when a money judgment is recorded or
-    docketed in a county."
+  quoted_text: Just compensation is ordinarily fair market value of what is taken plus, for a partial
+    taking, any loss in value to the remainder (severance damages).
   secondary: []
+math:
+  worked_solution: Just compensation = value of taken portion + severance damages = $150,000 + $5,000 = $155,000.
+  formulas:
+    - Just compensation = value taken + severance damages
+  onscreen_calculator_only: false
 terms:
-  - judgment lien
-  - general lien
-  - involuntary lien
+  - just compensation
+  - severance damages
+  - fair market value
 tags: []
 status: published
-reviewer: provisional-skip-qa
-verified_on: 2026-09-09
-qa_approved_on: 2026-09-09
-review_reason: "provisional: agent-drafted, local checks only (quote verbatim + lint); model
-  verifier and QA pending"
-version: 1
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
 provenance:
   model: nvidia/nvidia/nemotron-3-super-120b-a12b
   prompt_version: draft-v7 / verify-v2

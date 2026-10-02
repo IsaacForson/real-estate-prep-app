@@ -1,0 +1,52 @@
+id: MS-1954-0045
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a $5,000 earnest money check on Monday morning. Assuming Tuesday is a
+  banking day, what is the latest time by which the licensee must deposit the check into a trust
+  account under Miss. Code Ann. § 73-35-21?
+options:
+  - By the close of business Tuesday
+  - By the close of business Wednesday
+  - By the close of business Thursday
+  - By the close of business Friday
+key: B
+explanation: Reasonable time is defined as the close of business of two banking days after the date
+  of receipt. Received Monday, the following banking days are Tuesday and Wednesday, so deposit must
+  be made by close of business Wednesday. By the close of business Friday would be only one banking
+  day, which is insufficient.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) — § 73-35-21
+  url: null
+  quoted_text: “Reasonable time” in this context means by the close of business of two (2) banking
+    days immediately following the date on which a licensee comes into possession of monies
+    belonging to others or on which a responsible broker takes or receives any cash or checks from
+    procuring the execution of an earnest money contract or option or other contract;
+  secondary: []
+math:
+  worked_solution: The licensee must deposit the earnest money within two banking days of receipt.
+    Received on Monday, the first banking day is Tuesday and the second banking day is Wednesday.
+    Therefore, the latest allowable deposit time is the close of business on Wednesday.
+  formulas:
+    - Addition of banking days
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - trust account
+  - banking day
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

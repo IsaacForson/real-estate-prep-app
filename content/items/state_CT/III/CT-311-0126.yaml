@@ -1,0 +1,52 @@
+id: CT-311-0126
+jurisdiction: CT
+bank: state_CT
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut real estate broker collects $5,000 in license renewal fees from salespersons and
+  submits them to the Real Estate Commission. According to Conn. Gen. Stat. § 20-311e, where must
+  the commission deposit these fees?
+options:
+  - Deposit the fees into the Real Estate Guaranty Fund
+  - Deposit the fees to the University of Connecticut
+  - Deposit the fees with the State Treasurer
+  - Deposit the fees into the commission's own account
+key: C
+explanation: The statute mandates that all fee moneys be deposited with the State Treasurer, unless
+  a specific portion is required to be paid to the University of Connecticut or the Real Estate
+  Guaranty Fund. Since the scenario does not mention any such required payments, the entire $5,000
+  must go to the State Treasurer. The other options describe destinations that apply only to
+  exempted portions, not to the full amount.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311e
+  url: null
+  quoted_text: The commission shall deposit all moneys received by it from fees in accordance with the
+    provisions of this chapter with the State Treasurer, and they shall, except as to that portion
+    thereof required to be paid over to The University of Connecticut under the provisions of
+    section 10a-125 , or that portion required to be paid to the Real Estate Guaranty Fund pursuant
+    to this chapter, become part of the General Fund.
+  secondary: []
+math:
+  worked_solution: The broker collected $5,000 in license renewal fees. The question asks where to
+    deposit this amount; no arithmetic computation is required.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - deposit
+  - fee
+  - state treasurer
+  - general fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

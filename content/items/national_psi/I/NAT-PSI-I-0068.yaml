@@ -1,0 +1,41 @@
+id: NAT-PSI-I-0068
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On Tuesday a grantor conveys a parcel to X, who does not record. On Friday the same grantor
+  conveys the parcel to Y, who pays value, has no actual or constructive notice of X's deed, and
+  records the same day. In a notice jurisdiction, who prevails?
+options:
+  - The lot belongs to X alone.
+  - The lot belongs to Y alone.
+  - The lot belongs to both X and Y.
+  - The lot belongs to the grantor.
+key: B
+explanation: Under a notice statute a later bona fide purchaser for value without notice wins even
+  before recording, as stated in §9.3. Y paid value and lacked notice, so Y's interest prevails over
+  X's unrecorded deed. The distractor favoring X ignores the notice statute's protection for a BFP
+  who lacks notice.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a notice statute a later bona fide purchaser for value without notice (actual or
+    constructive) of the earlier interest wins even before recording.
+  secondary: []
+terms:
+  - notice
+  - purchaser
+  - recording
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

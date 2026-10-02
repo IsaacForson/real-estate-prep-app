@@ -1,0 +1,44 @@
+id: NY-443-0366
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker learns that a homeowner has signed an exclusive right-to-sell listing agreement with
+  another broker. The homeowner asks the broker to show the property and discuss price. What must
+  the broker do under 19 NYCRR § 175.8?
+options:
+  - The broker must decline to negotiate the sale directly with the homeowner
+  - The broker must proceed with showing the property as long as no commission is accepted
+  - The broker must inform the homeowner that dual agency is permitted
+  - The broker must obtain written consent from the other broker before showing the property
+key: A
+explanation: Section 175.8 forbids a broker from negotiating the sale of property directly with an
+  owner who has an existing exclusive listing with another broker. Since the homeowner already has
+  such an agreement, the broker must decline to negotiate. The distractor that permits showing the
+  property as long as no commission is accepted still constitutes negotiation and is therefore
+  prohibited.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.8
+  url: null
+  quoted_text: No real estate broker shall negotiate the sale, exchange or lease of any property
+    directly with an owner or lessor if he knows that such owner, or lessor, has an existing written
+    contract granting exclusive authority in connection with such property with another broker.
+  secondary: []
+terms:
+  - exclusive listing
+  - negotiation
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

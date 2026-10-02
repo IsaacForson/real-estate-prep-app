@@ -1,0 +1,41 @@
+id: FL-475-0328
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: An applicant submits a real estate license application on March 15, 2024, but does not pass
+  the required examination. According to Florida Statute 475.181(2), when does the application
+  expire?
+options:
+  - The application expires on March 15, 2025, and cannot be renewed.
+  - The application stays valid until the applicant passes the exam.
+  - The application expires on March 15, 2026, and cannot be renewed.
+  - The application expires six months after the date received, per statute.
+key: C
+explanation: The statute provides that an application expires two years after the date received if
+  the applicant does not pass the appropriate examination. Therefore, an application received on
+  March 15, 2024, expires on March 15, 2026. The distractor stating a one‑year expiration misstates
+  the statutory period.
+citation:
+  source: Fla. Stat. § 475.181(2)
+  url: null
+  quoted_text: The application shall expire 2 years after the date received if the applicant does not
+    pass the appropriate examination.
+  secondary: []
+terms:
+  - application
+  - expiration
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

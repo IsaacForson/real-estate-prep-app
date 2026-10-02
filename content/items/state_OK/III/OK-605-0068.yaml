@@ -1,0 +1,43 @@
+id: OK-605-0068
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person manages a furnished suite rented daily to travelers for stays under 30 days, not as a
+  principal residence. Under Oklahoma Real Estate License Code, does this person need a real estate
+  license to perform leasing activities?
+options:
+  - License is required because any rental activity needs licensure
+  - License is required unless the person also holds a broker license
+  - License is not required due to transient lodging facility exemption
+  - License is not required only if the stays are longer than 30 days
+key: C
+explanation: The statute exempts anyone managing a transient lodging facility, defined as a
+  furnished suite rented daily for less than thirty days, from licensure requirements. Therefore, no
+  license is required. The distractor stating a license is not required only if stays exceed thirty
+  days inverts the threshold and is incorrect.
+citation:
+  source: "### Okla. Stat. tit. 59 (Oklahoma Real Estate License Code, §§ 858-101 to 858-605) —
+    Oklahoma Real Estate License Code, 59 O.S. §§ 858-101 to 858-605 (OREC Code and Rules Book, as
+    of Nov. 1, 2025) — § 858-301"
+  url: null
+  quoted_text: Apply to any person or entity managing a transient lodging facility. For purposes of
+    this paragraph, 'transient lodging facility' means a furnished room or furnished suite of rooms
+    which is rented
+  secondary: []
+terms:
+  - transient lodging facility
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

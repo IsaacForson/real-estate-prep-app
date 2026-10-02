@@ -1,0 +1,38 @@
+id: NY-443-0374
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: Jordan, who is 20 years old, wishes to obtain a real estate salesperson license in New York
+  State. Is Jordan eligible for the license?
+options:
+  - The applicant is eligible because they meet the broker age requirement.
+  - The applicant is not eligible because they are under 18 years of age.
+  - The applicant is eligible because they are over 18 years of age.
+  - The applicant is not eligible because they must be at least 21 years of age.
+key: C
+explanation: Jordan is 20 years old, which is over 18, satisfying the salesperson age requirement in
+  §440-a. The option stating that the applicant is eligible because they are over 18 years of age is
+  correct.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 440-a
+  url: null
+  quoted_text: unless they are over the age of eighteen years.
+  secondary: []
+terms:
+  - age
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

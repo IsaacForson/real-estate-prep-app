@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0793
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 first mortgage, a 2020 property tax lien for unpaid taxes, and a 2021
+  mechanic's lien. If the property is foreclosed, in what order will the lienholders be paid from
+  the proceeds?
+options:
+  - Paid first to the 2018 mortgage, then the 2020 property tax lien, then the 2021 mechanic's lien.
+  - Paid first to the 2020 property tax lien, then the 2018 mortgage, then the 2021 mechanic's lien.
+  - Paid first to the 2021 mechanic's lien, then the 2020 property tax lien, then the 2018 mortgage.
+  - Paid first to the 2020 property tax lien, then the 2021 mechanic's lien, then the 2018 mortgage.
+key: B
+explanation: Property tax liens rank ahead of all other liens regardless of date, so the 2020 tax
+  lien is paid first. After that, the remaining liens follow the first‑in‑time, first‑in‑right rule,
+  making the 2018 mortgage senior to the 2021 mechanic's lien. The distractor that pays the
+  mechanic's lien before the mortgage ignores the priority rule that liens are paid by recording
+  date unless a statutory exception applies.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage."
+  secondary: []
+terms:
+  - property tax lien
+  - mechanic's lien
+  - mortgage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

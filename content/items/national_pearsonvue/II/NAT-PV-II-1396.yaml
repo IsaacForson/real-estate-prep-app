@@ -1,0 +1,49 @@
+id: NAT-PV-II-1396
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller owes $180,000 on a mortgage and has a $6,000 recorded judgment lien. If the property
+  sells for $300,000, what are the seller's net proceeds after paying off the mortgage and judgment
+  lien?
+options:
+  - "Net proceeds: $114,000"
+  - "Net proceeds: $120,000"
+  - "Net proceeds: $108,000"
+  - "Net proceeds: $294,000"
+key: A
+explanation: "Net proceeds equal the sale price minus the mortgage and judgment lien: $300,000 -
+  ($180,000 + $6,000) = $114,000. Distractor B omits the judgment lien, C incorrectly subtracts the
+  judgment lien twice, and D subtracts only the judgment lien."
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.5
+  url: null
+  quoted_text: A seller owes $180,000 on a mortgage and has a $6,000 recorded judgment lien. At a
+    $300,000 closing the settlement agent pays both from the seller's proceeds and records both
+    releases, so the buyer takes title free of them.
+  secondary: []
+math:
+  worked_solution: |-
+    Add mortgage and judgment lien: $180,000 + $6,000 = $186,000
+    Subtract total liens from sale price: $300,000 - $186,000 = $114,000
+  formulas:
+    - Net proceeds = Sale price - (Mortgage + Judgment lien)
+  onscreen_calculator_only: false
+terms:
+  - mortgage
+  - judgment lien
+  - net proceeds
+  - closing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,49 @@
+id: AK-88-0067
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual engages in unlicensed real estate brokerage activity in Alaska and realizes a
+  gain of $3,000. According to AS 08.88.167(b), what is the maximum civil penalty that may be
+  imposed for this offense?
+options:
+  - $5,000.00
+  - $3,000.00
+  - $10,000.00
+  - $8,000.00
+key: D
+explanation: Under AS 08.88.167(b), the civil penalty may not exceed $5,000 or the amount of gain
+  realized plus $5,000, whichever is greater. For a $3,000 gain, gain plus $5,000 equals $8,000,
+  which is greater than the $5,000 floor, so the maximum penalty is $8,000. The option stating
+  $5,000 incorrectly ignores the gain, while the option stating $3,000 omits the mandatory $5,000
+  addition.
+citation:
+  source: Alaska Stat. § 08.88.167(b)
+  url: null
+  quoted_text: A civil penalty levied under this section may not exceed $5,000, or the amount of gain
+    realized plus $5,000, whichever is greater, for each offense.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify gain = $3,000. Step 2: Compute gain plus $5,000 = $3,000 + $5,000
+    = $8,000. Step 3: Determine the floor amount = $5,000. Step 4: Take the greater of $5,000 and
+    $8,000 = $8,000. Therefore, the maximum civil penalty is $8,000."
+  formulas:
+    - Penalty = max($5,000, gain + $5,000)
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - gain
+  - offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

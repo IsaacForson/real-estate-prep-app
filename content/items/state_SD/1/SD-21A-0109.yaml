@@ -1,0 +1,51 @@
+id: SD-21A-0109
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After the commission authorizes payment of $7,000 from the real estate recovery fund toward a
+  judgment against a licensee, and later authorizes an additional $8,000 payment for a separate
+  judgment, what is the effect on the fund's liability for that licensee under § 36-21A-112?
+options:
+  - The fund remains liable for any further judgments against the licensee.
+  - The fund's liability for the licensee ends when payments total $15,000.
+  - The licensee must repay the $15,000 received before seeking reinstatement.
+  - The commission may suspend the licensee until the fund is fully reimbursed.
+key: B
+explanation: Under § 36-21A-112, the fund's liability for a licensee terminates when an order
+  authorizes payments from the fund in an aggregate amount of fifteen thousand dollars on behalf of
+  that licensee. The authorized payments total $15,000 ($7,000 + $8,000), so liability ends. The
+  option stating that the fund remains liable for any further judgments against the licensee
+  incorrectly suggests ongoing liability. The options stating that the commission may suspend the
+  licensee until the fund is fully reimbursed and that the licensee must repay the $15,000 received
+  before seeking reinstatement address reinstatement and suspension, which are governed by other
+  provisions.
+citation:
+  source: S.D. Codified Laws § 36-21A-112
+  url: null
+  quoted_text: The liability of the fund for the acts of a licensee, when acting as such and occurring
+    before the date of the court order entered pursuant to §§ 36-21A-101 to 36-21A-115, inclusive,
+    is terminated whenever such order authorizes payments from the fund for judgments or unsatisfied
+    portions thereof, in an aggregate amount of fifteen thousand dollars on behalf of such licensee.
+  secondary: []
+math:
+  worked_solution: 7,000 + 8,000 = 15,000
+  formulas:
+    - Addition
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

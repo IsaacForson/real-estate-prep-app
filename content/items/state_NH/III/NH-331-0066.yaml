@@ -1,0 +1,48 @@
+id: NH-331-0066
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A principal broker pays a commission to Harbor View LLC, a limited liability company whose
+  three members are all licensed real estate brokers and which is registered to do business in New
+  Hampshire. The broker does not retain any records of the payment. Under RSA 331-A:16-b, what is
+  the broker required to do for each transaction involving such a payment?
+options:
+  - Keep a record of quarterly reports filed with the commission detailing all payments
+  - Keep a record of the buyer's consent before disbursing the commission
+  - Keep a record of the LLC's members' contact information for 30 days
+  - Keep a record of the licensee's name, amount paid, and LLC name for 3 years
+key: D
+explanation: The statute mandates that the broker keep a record of the licensee's name, the amount
+  paid, and the name of the entity receiving the payment for three years after the transaction.
+  Recording buyer consent, quarterly reports, or member contact information is not required by this
+  provision.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A — RSA Chapter 331-A — New Hampshire Real Estate Practice Act,
+    official General Court page read via Internet Archive capture of 2025-07-09 because gc.nh.gov
+    returns 403 to scripts — § 16-b
+  url: null
+  quoted_text: "The broker keeps a record of all of the following information for each transaction,
+    for a period of 3 years after the date of the transaction: (1) The name of the licensee who
+    earned the fee, commission, or other compensation; (2) The amount of the fee, commission, or
+    other compensation that was earned; (3) The name of the partnership, association, limited
+    liability company, limited liability partnership, or corporation to which the broker paid the
+    licensee's fee, commission, or other compensation."
+  secondary: []
+terms:
+  - record keeping
+  - commission
+  - LLC
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,47 @@
+id: MD-17-0060
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Maryland real estate broker accepts a purchase contract on a Tuesday. According to
+  §17-502(b)(1), by what deadline must the broker deposit the trust money into a separate trust
+  account?
+options:
+  - End of the same day
+  - Within 3 business days
+  - Within 7 business days
+  - Within 10 business days
+key: C
+explanation: The broker must deposit trust money promptly but no later than seven business days
+  after both parties have accepted the contract of sale. The deposit must be into an account
+  separate from the broker’s own funds and used solely for trust money. This timing protects the
+  client’s funds and complies with Maryland’s trust accounting rules.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. §§ 17-101–17-702 (Maryland Real Estate Brokers Act) —
+    Annotated Code of Maryland, Business Occupations and Professions Article, Title 17 — Real Estate
+    Brokers (MGA Statute_Web, 2025RS) § 17-502(b)(1)
+  url: null
+  quoted_text: |-
+    Except as otherwise provided in subsection (c) of this section, a 
+    real estate broker promptly, but not more than 7 business days after the acceptance 
+    of a contract of sale by both parties, shall depo sit trust money in an account that is 
+    maintained by the real estate broker: 
+     
+       (i) separately from the real estate broker’s own accounts; and 
+     
+       (ii) solely for trust money
+  secondary: []
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

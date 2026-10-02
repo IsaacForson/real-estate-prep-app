@@ -1,0 +1,45 @@
+id: NY-443-0359
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A mortgagor transfers residential real property to the mortgagee by deed in lieu of
+  foreclosure. Is a property condition disclosure statement required?
+options:
+  - A disclosure statement is required in this transaction
+  - A disclosure statement is required only for bank-owned mortgages
+  - A disclosure statement is not required in this transaction
+  - A disclosure statement is required only for older properties
+key: C
+explanation: Under N.Y. Real Prop. Law §463(2), a transfer to a mortgagee (or its affiliate or
+  agent) by a mortgagor by deed in lieu of foreclosure is exempt from the property condition
+  disclosure requirement. Therefore, no disclosure statement is needed in this transaction. The
+  option stating that a disclosure statement is required in this transaction is incorrect because
+  the statute provides an exemption, not a requirement. The options that limit the requirement to
+  bank‑owned mortgages or to older properties add conditions that are not present in the exemption.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    463
+  url: null
+  quoted_text: 2. A transfer to mortgagee or an affiliate or agent thereof by a mortgagor by deed in
+    lieu of foreclosure or in satisfaction of the mortgage debt;
+  secondary: []
+terms:
+  - mortgagee
+  - foreclosure
+  - disclosure
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,61 @@
+id: NY-443-0089
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed all required subjects except the Contract of Sales and Leases and
+  Real Estate Mathematics. According to the NY DOS syllabus, how many hours of study remain to be
+  completed?
+options:
+  - 2 hours
+  - 3 hours
+  - 4 hours
+  - 5 hours
+key: C
+explanation: The syllabus assigns 3 hours to the Contract of Sales and Leases and 1 hour to Real
+  Estate Mathematics, so the remaining study time is 3 + 1 = 4 hours. The distractor "3 hours" only
+  accounts for the Contract of Sales and Leases subject, omitting the Real Estate Mathematics
+  requirement.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    License Law and Regulations    3 
+    Law of Agency    11 
+    Legal Issues     10 
+    The Contract of Sales and Leases    3 
+
+     
+    NYS Department of State Division of Licensing Services                                                                                       Real Estate License Law / Page 33 
+    Real Estate Finance    5 
+    Land Use Regulations    3 
+    Construction and Environmental Issues    5 
+    Valuation Process and Pricing Properties   3 
+    Human Rights and Fair Housing   6 
+    Real Estate Mathematics    1
+  secondary: []
+math:
+  worked_solution: |-
+    Identify hours for Contract of Sales and Leases: 3 hours
+    Identify hours for Real Estate Mathematics: 1 hour
+    Add: 3 + 1 = 4 hours
+  formulas:
+    - Total remaining hours = hours_Contract + hours_Math
+  onscreen_calculator_only: false
+terms:
+  - contract
+  - mathematics
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

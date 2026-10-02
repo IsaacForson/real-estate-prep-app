@@ -1,0 +1,47 @@
+id: AK-88-0120
+jurisdiction: AK
+bank: state_AK
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Alaska Stat. § 08.88.600, a licensee who provides specific assistance to a prospective
+  buyer but has no written agreement, does the licensee represent the buyer?
+options:
+  - The licensee represents the buyer because providing specific assistance creates representation
+    unless the parties agree otherwise in writing.
+  - The licensee represents the buyer because a written personal services contract signed by both
+    parties is required for representation to exist.
+  - The licensee represents the buyer because a written disclosure of the agency relationship must
+    be provided at the time specific assistance begins.
+  - The licensee represents the buyer because a signed listing agreement must be present and
+    delivered to the client for representation to arise.
+key: A
+explanation: Under § 08.88.600(a), a licensee who provides real estate services to one party
+  represents that party unless the parties agree otherwise in writing. Providing specific assistance
+  constitutes real estate services, so representation exists absent a written agreement. The
+  distractor B incorrectly imposes a written contract requirement for representation, which the
+  statute does not.
+citation:
+  source: "### Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.600"
+  url: null
+  quoted_text: A real estate licensee who provides real estate services to one party in a real estate
+    transaction represents only that party unless the parties to the transaction agree otherwise in
+    writing.
+  secondary: []
+terms:
+  - representation
+  - specific assistance
+  - personal services contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

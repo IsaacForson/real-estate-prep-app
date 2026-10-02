@@ -1,0 +1,46 @@
+id: DC-198-0051
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate brokerage corporation seeks a license. Its treasurer, who is not a licensed real
+  estate broker, only prepares financial statements and does not engage in any activity defined as
+  real estate brokerage under the subchapter. According to D.C. Code § 47-2853.183, which statement
+  is correct regarding the corporation’s eligibility for a broker’s license?
+options:
+  - The corporation is eligible if the treasurer’s duties are not considered activities defined in
+    this subsection
+  - The corporation is ineligible because the treasurer must hold a real estate broker license
+  - The corporation is eligible only if the treasurer obtains a broker license within 30 days
+  - The corporation is ineligible because any officer must be licensed regardless of duties
+key: A
+explanation: The law requires that every member, partner, trustee, or officer who is engaged in
+  activities defined in the subsection must be licensed. Since the treasurer’s duties are not
+  considered such activities, the licensing requirement does not apply to that position. Therefore,
+  the corporation may be eligible provided the other conditions are satisfied. The claim that the
+  treasurer must be licensed misreads the statute because it applies only to those engaged in the
+  defined activities.
+citation:
+  source: "### D.C. Code §§ 47-2853.141 to 47-2853.199 — D.C. Code Title 47, Ch. 28, Subch. I-B, Parts
+    K-P - Property Managers, Real Estate Brokers, Salespersons; Special Rules; Duties — §
+    47-2853.183"
+  url: null
+  quoted_text: (2) Every person member, partner, trustee, or officer who is engaged in activities
+    defined in this subsection is licensed under this subchapter;
+  secondary: []
+terms:
+  - officer
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

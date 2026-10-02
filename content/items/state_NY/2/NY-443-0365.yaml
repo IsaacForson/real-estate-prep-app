@@ -1,0 +1,40 @@
+id: NY-443-0365
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to 19 NYCRR § 175.19(b), what is prohibited for a real estate broker?
+options:
+  - The broker must receive compensation from more than one party without client consent
+  - The broker must negotiate directly with an owner who has an exclusive listing with another broker
+  - The broker must enter into a net listing contract for the sale of real property
+  - The broker must fail to disclose a material defect in rental property
+key: C
+explanation: Under 19 NYCRR § 175.19(b), a broker is prohibited from making or entering into a net
+  listing contract for the sale of real property. Therefore, entering into such a contract is not
+  permitted. The distractor about negotiating with an owner who has an exclusive listing with
+  another broker describes a different prohibition under § 175.8, not the net listing ban.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.19
+  url: null
+  quoted_text: No real estate broker shall make or enter into a “net listing” contract for the sale of
+    real property or any interest therein.
+  secondary: []
+terms:
+  - net listing
+  - broker
+  - prohibition
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

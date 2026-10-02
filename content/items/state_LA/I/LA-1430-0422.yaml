@@ -1,0 +1,48 @@
+id: LA-1430-0422
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee who submitted a cash deposit in lieu of a surety bond finds that a claim has
+  reduced the deposit to $15,000. Upon license renewal, what must the licensee do to remain
+  compliant with the surety bond requirement?
+options:
+  - Increasing the cash deposit to $20,000
+  - Submitting a new $20,000 surety bond
+  - Taking no action to restore the deposit
+  - Filing a waiver exempting the deposit requirement
+key: A
+explanation: When a cash deposit falls below $20,000 due to a claim, the licensee must restore it to
+  $20,000 at renewal, as required by §30302.F. Taking no action leaves the deposit insufficient.
+  Substituting a surety bond or seeking a waiver are not permitted alternatives under the rule.
+citation:
+  source: La. Admin. Code tit. 46, pt. LXVII — Louisiana Administrative Code Title 46, Part LXVII -
+    Real Estate (LREC rules); Division of Administration docx, Internet Archive capture 2026-01-23
+    §30302.F
+  url: null
+  quoted_text: A licensee who elects to submit a cash deposit or security in lieu of a surety bond, as
+    provided in R.S. 37:3515.3(D)(5), shall restore the cash deposit or security annually upon
+    license renewal, if a claim has reduced the deposit amount or security below $20,000.
+  secondary: []
+math:
+  worked_solution: "Required minimum deposit: $20,000. Current deposit after claim: $15,000. Amount to
+    add: $20,000 - $15,000 = $5,000."
+  formulas:
+    - Restoration Amount = Required Minimum - Current Balance
+  onscreen_calculator_only: false
+terms:
+  - deposit
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

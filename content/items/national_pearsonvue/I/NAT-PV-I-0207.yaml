@@ -1,0 +1,41 @@
+id: NAT-PV-I-0207
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A landlord installs a built-in oven in a leased apartment. The lease does not mention the
+  oven. At lease end, the tenant removes the oven, claiming it is a trade fixture. Who prevails?
+options:
+  - The landlord retains ownership of the oven because it is a fixture under the lease terms
+  - The tenant may remove the oven as a trade fixture under the lease agreement
+  - The oven becomes personal property of the tenant upon removal after the lease ends
+  - The landlord and tenant must share the oven's value equally in the event of disagreement
+key: A
+explanation: When a landlord installs an item in leased premises, it becomes a fixture belonging to
+  the real estate unless it is a trade fixture installed by a business tenant. Since the landlord
+  installed the oven and it is not a trade fixture, the oven remains the landlord's property and the
+  tenant may not remove it.
+citation:
+  source: REP Ref. Property & Land Use § 1.3
+  url: null
+  quoted_text: "Relationship of the parties. Ambiguity is resolved against the party who attached the
+    item: in favor of the buyer over the seller and the tenant over the landlord, except for trade
+    fixtures (§ 1.4)."
+  secondary: []
+terms:
+  - fixture
+  - trade fixture
+  - relationship of parties
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

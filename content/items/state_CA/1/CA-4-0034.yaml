@@ -1,0 +1,40 @@
+id: CA-4-0034
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker changes her principal place of business address on a Monday. According to Cal. Code
+  Regs. tit. 10, § 2715, by when must she notify the Commissioner of this change?
+options:
+  - She must notify the Commissioner by the end of the same day.
+  - She must notify the Commissioner by the close of the next business day.
+  - She must notify the Commissioner within five days.
+  - She must notify the Commissioner within 90 days.
+key: B
+explanation: Section 2715 requires notification 'not later than the next business day following the
+  change,' making the option that states she must notify the Commissioner by the close of the next
+  business day correct. The option stating she must notify within five days is a frequent
+  misapplication of the five‑day rule for general license information changes found in § 2710(c),
+  which does not govern address changes.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2715
+  url: null
+  quoted_text: Whenever there is a change in the location or address of the principal place of
+    business or of a branch office of a broker, that broker shall notify the Commissioner thereof
+    not later than the next business day following the change.
+  secondary: []
+terms:
+  - address change
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

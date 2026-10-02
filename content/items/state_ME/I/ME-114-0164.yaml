@@ -1,0 +1,45 @@
+id: ME-114-0164
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A member of the Maine Real Estate Commission was appointed on August 1, 2023. Assuming no
+  removal for cause, on what date will their term end?
+options:
+  - August 1, 2025
+  - August 1, 2027
+  - July 31, 2026
+  - August 1, 2026
+key: D
+explanation: The law provides that commission members serve three‑year terms. Adding three years to
+  the August 1, 2023 appointment date yields an expiration of August 1, 2026. The July 31, 2026
+  option incorrectly subtracts one day, while the one‑year‑short and one‑year‑long options misapply
+  the term length.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13062(4)"
+  url: null
+  quoted_text: Terms of the members of the commission are for 3 years.
+  secondary: []
+math:
+  worked_solution: "Start date: August 1, 2023. Term length: 3 years. End date = August 1, 2023 + 3
+    years = August 1, 2026."
+  formulas:
+    - End date = Start date + term length
+  onscreen_calculator_only: false
+terms:
+  - term
+  - date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

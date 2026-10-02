@@ -1,0 +1,41 @@
+id: OH-4735-0079
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Ohio Rev. Code § 4735.021(A), what is the maximum amount a licensee may charge a
+  prospective tenant for a referral fee without being required to refund it if the tenant does
+  **NOT** obtain a suitable rental?
+options:
+  - $5.00
+  - $10.00
+  - $15.00
+  - $20.00
+key: B
+explanation: The rule states that any fee charged in excess of ten dollars must be refunded if the
+  tenant does not obtain a suitable rental, so a fee of exactly ten dollars is not subject to
+  refund. The $5.00 distractor is below the threshold and would also not require a refund, but the
+  question asks for the maximum amount that may be charged without triggering a refund, which is ten
+  dollars.
+citation:
+  source: Ohio Rev. Code § 4735.021(A)
+  url: null
+  quoted_text: Any fee charged in excess of ten dollars shall be repaid or refunded to the prospective tenant
+  secondary: []
+terms:
+  - fee
+  - refund
+  - tenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

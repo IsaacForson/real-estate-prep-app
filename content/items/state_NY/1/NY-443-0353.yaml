@@ -1,0 +1,49 @@
+id: NY-443-0353
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A New York real estate broker who is not registered under article 23-A of the General Business
+  Law wishes to pay part of a commission earned from the sale of a cooperative apartment to an
+  individual who holds a real estate broker license in another state and regularly engages in
+  brokerage business there. Under NY Real Property Law § 442, is this payment permissible?
+options:
+  - A) Yes, because the individual is licensed in another state.
+  - B) Yes, because the payment is for a cooperative sale.
+  - C) No, because the broker lacks article 23-A registration.
+  - D) No, because paying commissions to unlicensed persons is generally prohibited.
+key: C
+explanation: Under N.Y. Real Prop. Law § 442, a New York broker may pay part of a commission to an
+  out‑of‑state broker only if the New York broker is registered under article 23‑A of the General
+  Business Law. Because the broker in the scenario lacks that registration, the exception does not
+  apply and the general prohibition on paying commissions to unlicensed persons stands. The idea
+  that the out‑of‑state license alone permits the payment ignores the registration requirement, and
+  the notion that the cooperative nature of the transaction matters is also incorrect. The claim
+  that paying commissions to unlicensed persons is always prohibited is too broad, as the statute
+  provides an exception when the New York broker is properly registered.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 442
+  url: null
+  quoted_text: Furthermore, notwithstanding any other provision of law, it shall be permissible for a
+    broker properly registered pursuant to the provisions of article 23-A of the General Business
+    Law
+  secondary: []
+terms:
+  - commission
+  - registration
+  - exception
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

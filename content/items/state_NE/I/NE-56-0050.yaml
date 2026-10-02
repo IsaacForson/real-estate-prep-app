@@ -1,0 +1,44 @@
+id: NE-56-0050
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A petitioner files a declaratory order petition with the Agency on May 5. According to the
+  rules, on what date must the petitioner serve a copy of the petition on all necessary parties?
+options:
+  - May 12
+  - May 6
+  - May 5
+  - May 4
+key: C
+explanation: The rule in 004.03 requires service of the petition at the same time it is filed with
+  the Agency, so the service date equals the filing date. The May 6 option mistakenly adds a day,
+  while May 4 precedes filing and May 12 is unrelated.
+citation:
+  source: 305 Neb. Admin. Code — Title 305 NREC Rules of Practice and Procedure — complaints,
+    investigations, hearings, declaratory orders, appeals 004.03
+  url: null
+  quoted_text: |-
+    At the same time the petition is filed with the Agency, the 
+    petitioner shall serve a copy of the petition, by registered mail, 
+    certified mail, return receipt requested, first-class mail using 
+    intelligent mail barcode or another similar tracking method used or 
+    approved by the United States Postal Service, or a designated delivery 
+    service as provided in section 25-505.01,on all necessary parties
+  secondary: []
+terms:
+  - petition
+  - service
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

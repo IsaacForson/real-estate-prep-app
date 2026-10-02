@@ -1,0 +1,46 @@
+id: NAT-PSI-I-0599
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: What is the acreage of the SW 1/4 of the NE 1/4 of Section 22, Township 5 North, Range 1 East
+  of the Third Principal Meridian?
+options:
+  - 80 acres
+  - 20 acres
+  - 160 acres
+  - 40 acres
+key: D
+explanation: A quarter‑quarter of a section contains 40 acres because a section is 640 acres;
+  dividing by four gives a quarter (160 acres) and dividing by four again gives a quarter‑quarter
+  (40 acres). The SW 1/4 of the NE 1/4 is such a quarter‑quarter, so it is 40 acres. The other
+  answer choices represent an eighth of a section (80 acres), a thirty‑second of a section (20
+  acres), and a quarter of a section (160 acres).
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres and 1,320 feet per side.
+  secondary: []
+math:
+  worked_solution: 640 acres per section ÷ 4 = 160 acres for a quarter section; 160 acres ÷ 4 = 40
+    acres for a quarter‑quarter section.
+  formulas:
+    - acres = 640 / (denominator1 × denominator2)
+  onscreen_calculator_only: false
+terms:
+  - quarter-quarter
+  - section
+  - acreage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

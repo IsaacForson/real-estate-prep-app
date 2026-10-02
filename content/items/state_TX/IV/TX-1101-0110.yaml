@@ -1,0 +1,52 @@
+id: TX-1101-0110
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker representing a buyer signs an agreement with a mortgage broker that requires the
+  broker to refer clients exclusively to that mortgage broker and not to refer to any other mortgage
+  broker. Under 22 Tex. Admin. Code § 535.148(c), is this agreement permissible?
+options:
+  - A. Yes, because the broker disclosed the agreement to the client and obtained the client's
+    consent.
+  - B. Yes, because the mortgage broker is a service provider and the broker is providing services
+    for it.
+  - C. No, because the contract prohibits the broker from offering similar services for a competing
+    service provider.
+  - D. No, because the broker must obtain the client's consent before signing any agreement with a
+    service provider.
+key: C
+explanation: Section 535.148(c) prohibits a license holder from entering into an agreement with a
+  service provider when the agreement bars the license holder from offering similar services for a
+  competing service provider, provided the license holder provides services for that service
+  provider. The described agreement meets both conditions, so it is not permissible. The assertion
+  that the broker must obtain the client's consent before signing any agreement with a service
+  provider is incorrect because it overlooks the prohibition against restricting similar services
+  for competing providers.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live — § 535.148(c)"
+  url: null
+  quoted_text: (1) the license holder provides services for or on behalf of the service provider; and
+    (2) the contract or agreement prohibits the license holder from offering similar services for or
+    on behalf of a competing service provider.
+  secondary: []
+terms:
+  - service provider
+  - competing
+  - contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0073
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "A mortgage lien is classified as:"
+options:
+  - Specific voluntary lien
+  - General involuntary lien
+  - Specific involuntary lien
+  - General voluntary lien
+key: A
+explanation: Under the lien classification rules, a mortgage is a specific lien because it attaches
+  to one parcel, and it is voluntary because it arises from the owner's agreement. Therefore, the
+  correct classification is specific voluntary. The distractor 'General involuntary lien' is
+  incorrect because a mortgage is neither general (it does not attach to all property) nor
+  involuntary (it requires the owner's consent).
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: "a specific lien attaches to one parcel (mortgage, deed of trust, property tax and
+    special assessment liens, mechanic's liens, association assessment liens). Voluntary versus
+    involuntary: a voluntary lien is created by the owner's agreement (mortgage, deed of trust"
+  secondary: []
+terms:
+  - lien
+  - mortgage
+  - voluntary
+  - specific
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

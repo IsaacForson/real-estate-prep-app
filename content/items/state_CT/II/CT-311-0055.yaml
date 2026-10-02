@@ -1,0 +1,40 @@
+id: CT-311-0055
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker seeks to recover commission under the substantial compliance provision of Conn. Gen.
+  Stat. § 20-325a(d) based on an oral listing agreement. Is the broker entitled to recover
+  commission under this provision?
+options:
+  - Yes, if the broker substantially complied with all other statutory requirements.
+  - No, because the substantial compliance allowance applies only to written agreements.
+  - Yes, provided the owner signed the oral agreement and later ratified it in writing.
+  - No, unless the oral agreement concerned commercial real property and was witnessed by a third
+    party.
+key: B
+explanation: The statute's substantial compliance allowance under subsection (d) applies only to
+  written agreements, so an oral listing agreement cannot qualify. The option suggesting recovery if
+  the owner signed the oral agreement is incorrect because the writing requirement cannot be waived
+  by signature alone.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-325a(d)
+  url: null
+  quoted_text: Substantial compliance allowance under Subsec. contemplates written agreements only
+  secondary: []
+terms:
+  - substantial compliance
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

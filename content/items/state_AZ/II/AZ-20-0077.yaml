@@ -1,0 +1,46 @@
+id: AZ-20-0077
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits a buyer's $2,000 earnest money check into the broker's personal checking
+  account to cover office expenses. Under Arizona law, which violation does this constitute?
+options:
+  - Failing to identify monies as nonowner tenant monies in descriptive receipts
+  - Failing to remove any interest that is earned on a trust fund account at least once every twelve
+    months
+  - Allowing advance payment of monies belonging to others to be deposited in the broker's personal
+    account
+  - Failing to maintain separate ledgers for each property transaction
+key: C
+explanation: The statute prohibits depositing advance payments that belong to others into a broker's
+  personal account. Ariz. Rev. Stat. § 32-2151(C)(2) defines this as a violation. The broker’s
+  action of placing the $2,000 earnest money check into a personal account to cover office expenses
+  commingles client funds with personal funds, which is not allowed. The other options describe
+  different trust‑fund requirements that are not violated by this conduct.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151(C)(2)
+  url: null
+  quoted_text: Allowing advance payment of monies belonging to others to be deposited in the broker's
+    personal account or to be commingled with personal monies.
+  secondary: []
+math:
+  worked_solution: The earnest money amount is $2,000; no arithmetic computation is required to answer the question.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - trust fund
+  - commingling
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

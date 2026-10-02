@@ -1,0 +1,42 @@
+id: AL-27-0082
+jurisdiction: AL
+bank: state_AL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker whose principal business is property management wishes to serve as qualifying broker
+  for a salesperson. Under Alabama law, is this permissible?
+options:
+  - Yes, as long as the broker holds an active Alabama license
+  - No, because the broker’s principal business must be that of a real estate broker
+  - No, unless the broker also obtains a property‑management endorsement
+  - Yes, if the broker agrees to supervise the salesperson on a part‑time basis
+key: B
+explanation: The law requires that a qualifying broker’s principal business be that of a real estate
+  broker. Since property management is not real estate brokerage, the broker may not serve as
+  qualifying broker. The other options either ignore the principal‑business requirement or add
+  conditions not found in the statute.
+citation:
+  source: Ala. Code § 34-27-34(a)(1)
+  url: null
+  quoted_text: A broker may serve as qualifying broker for a salesperson or associate broker only if
+    licensed in Alabama, his or her principal business is that of a real estate broker, and he or
+    she shall be in a position to actually supervise the real estate activities of the associate
+    broker or salesperson on a full‑time basis.
+  secondary: []
+terms:
+  - qualifying broker
+  - principal business
+  - real estate broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

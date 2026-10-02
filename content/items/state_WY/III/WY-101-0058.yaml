@@ -1,0 +1,52 @@
+id: WY-101-0058
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker holds earnest money from two buyers for a property: Buyer A contributed
+  $6,000 and Buyer B contributed $4,000. No written agreement exists regarding interest. If the
+  deposit earns $200 in interest, how should the interest be distributed under Wyo. Stat. §
+  33-28-122(c)?"
+options:
+  - Buyer A receives $120 and Buyer B receives $80
+  - Buyer A receives $200 and Buyer B receives $0
+  - Buyer A receives $100 and Buyer B receives $100
+  - Buyer A receives $60 and Buyer B receives $40
+key: A
+explanation: Under Wyo. Stat. § 33-28-122(c), when no written agreement exists, interest earned on
+  an earnest money deposit must be distributed to each contributor in the same proportion as their
+  contribution to the total deposit. The total deposit is $10,000 ($6,000 from Buyer A and $4,000
+  from Buyer B). Buyer A's share is 60% ($6,000/$10,000) and Buyer B's share is 40%
+  ($4,000/$10,000). Applying these percentages to the $200 of interest gives Buyer A $120 (0.60 ×
+  $200) and Buyer B $80 (0.40 × $200).
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(c)
+  url: null
+  quoted_text: each person entitled to receive any portion of the deposit shall also be paid a portion
+    of the interest in the same proportion as the funds withdrawn and paid out to each person bears
+    to the total deposit.
+  secondary: []
+math:
+  worked_solution: 1. Total deposit = $6,000 + $4,000 = $10,000.\n2. Buyer A proportion = $6,000 /
+    $10,000 = 0.60 (60%).\n3. Buyer B proportion = $4,000 / $10,000 = 0.40 (40%).\n4. Interest for
+    Buyer A = 0.60 × $200 = $120.\n5. Interest for Buyer B = 0.40 × $200 = $80.
+  formulas:
+    - Proportion = Contribution / Total Deposit
+    - Interest Allocation = Proportion × Total Interest
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

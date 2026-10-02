@@ -1,0 +1,41 @@
+id: MT-51-0026
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives a citation via certified mail on Thursday, March 7. Assuming no holidays,
+  what is the last business day the licensee may pay the fine or file a written dispute?
+options:
+  - March 12
+  - March 13
+  - March 14
+  - March 15
+key: C
+explanation: The rule provides five business days from receipt to pay or dispute. Counting five
+  business days after March 7 (Friday March 8, Monday March 11, Tuesday March 12, Wednesday March
+  13, Thursday March 14) makes March 14 the final day. March 12 only counts three business days,
+  March 13 counts four, and March 15 would be the sixth business day.
+citation:
+  source: "### Mont. Admin. R. 24.210.101–24.210.1005 (Board of Realty Regulation) — Administrative
+    Rules of Montana, Title 24, Chapter 210 — Board of Realty Regulation (all effective rules) — §
+    24.210.643"
+  url: null
+  quoted_text: A licensee who receives a citation has five business days from the receipt of the
+    citation to either pay the fee or file a written dispute.
+  secondary: []
+terms:
+  - citation
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

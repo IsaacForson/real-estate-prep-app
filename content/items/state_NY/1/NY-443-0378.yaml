@@ -1,0 +1,45 @@
+id: NY-443-0378
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker applicant submits all required information but does not include evidence of having
+  passed the state written examination. According to NY Real Property Law §441(1)(b), what is the
+  likely outcome?
+options:
+  - The requirement to retake the examination
+  - The issuance of a temporary license pending exam
+  - The denial of the license application
+  - The automatic approval based on experience
+key: C
+explanation: The key is correct because §441(1)(b) requires the applicant to furnish sufficient
+  proof of having taken and passed a written examination; failure to provide such proof leads to
+  denial of the application. The most tempting distractor, “The issuance of a temporary license
+  pending exam,” is incorrect because the statute does not provide for a temporary license; the
+  proof must be submitted with the application.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — §
+    441(1)(b)
+  url: null
+  quoted_text: Such further information as the department may reasonably require shall be furnished by
+    the applicant including sufficient proof of having taken and passed a written examination
+  secondary: []
+terms:
+  - broker
+  - application
+  - proof
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

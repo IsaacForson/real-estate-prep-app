@@ -1,0 +1,40 @@
+id: NH-331-0164
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual has been a resident of New Hampshire for 5 years and 8 months. Under RSA 331-A:5
+  V, is this individual eligible for appointment to the New Hampshire Real Estate Commission?
+options:
+  - Yes, because the residency requirement is five years.
+  - No, because the residency requirement is at least six years.
+  - Yes, if they possess an active real estate license.
+  - No, because the residency requirement is ten years or more.
+key: B
+explanation: RSA 331-A:5 V requires commission members to be state residents for at least six years
+  before appointment; five years and eight months is insufficient. The distractor stating five years
+  misstates the minimum.
+citation:
+  source: "### N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter
+    331-A — New Hampshire Real Estate Practice Act, official General Court page read via Internet
+    Archive capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 5 V"
+  url: null
+  quoted_text: Each member of the commission shall be a resident of this state for at least 6 years
+    prior to appointment.
+  secondary: []
+terms:
+  - residency
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

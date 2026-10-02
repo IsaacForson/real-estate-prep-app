@@ -1,0 +1,59 @@
+id: TX-1101-0051
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer suffers $200,000 in actual damages from a single transaction due to a licensee's
+  fraud, incurs $30,000 in attorney's fees, and $5,000 in court costs. Under Tex. Occ. Code §
+  1101.610(a), what is the maximum amount that may be paid from the trust account for these claims?
+options:
+  - The maximum payable is $250,000
+  - The maximum payable is $150,000
+  - The maximum payable is $200,000
+  - The maximum payable is $125,000
+key: D
+explanation: Tex. Occ. Code § 1101.610(a) limits payments from the trust account for claims arising
+  out of a single transaction to $125,000, regardless of the number of claimants. Although the
+  buyer’s total damages, attorney’s fees, and court costs add up to $235,000, the most that may be
+  paid from the trust account is $125,000. The other options describe higher amounts that exceed the
+  statutory per‑transaction limit.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.610(a)
+  url: null
+  quoted_text: Payments from the trust account for claims, including attorney's fees, interest, and
+    court costs, arising out of a single transaction may not exceed a total of $125,000, regardless
+    of the number of claimants.
+  secondary: []
+math:
+  worked_solution: >-
+    1. Add the amounts of the claims: $200,000 (damages) + $30,000 (attorney's fees) + $5,000 (court
+    costs) = $235,000 total claims.
+
+    2. Compare the total claims to the statutory limit of $125,000.
+
+    3. The maximum payable is the lesser of the two amounts, so the trust account may pay $125,000.
+  formulas:
+    - Total Claims = Damages + AttorneyFees + CourtCosts
+    - Maximum Payable = min(TotalClaims, StatutoryLimit)
+  onscreen_calculator_only: false
+terms:
+  - payment limit
+  - trust account
+  - single transaction
+  - attorney's fees
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

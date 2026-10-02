@@ -1,0 +1,37 @@
+id: NY-443-0373
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age requirement for a person to be eligible for a real estate broker
+  license in New York State?
+options:
+  - 18 years of age
+  - 19 years of age
+  - 20 years of age
+  - 21 years of age
+key: C
+explanation: Under NY Real Property Law §440-a, a person must be twenty years of age or over to be
+  eligible for a broker license. The other ages do not meet this threshold.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 440-a
+  url: null
+  quoted_text: unless they are twenty years of age or over.
+  secondary: []
+terms:
+  - age
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

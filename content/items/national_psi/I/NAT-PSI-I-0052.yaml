@@ -1,0 +1,40 @@
+id: NAT-PSI-I-0052
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a 2018 mortgage, a 2020 mechanic's lien, and unpaid 2022 property taxes. In a
+  foreclosure sale, which claim is paid first?
+options:
+  - The 2020 mechanic's lien
+  - The 2018 mortgage
+  - The owner's equity
+  - The 2022 property taxes
+key: D
+explanation: Section 3.4 of the same reference states that property tax and special assessment liens
+  rank first by statute regardless of date. Consequently, the 2022 property taxes are satisfied
+  before the 2018 mortgage and the 2020 mechanic's lien. The owner's equity is not a lien and
+  receives any residual proceeds only after all liens are paid.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: Property tax and special assessment liens rank first by statute regardless of date
+  secondary: []
+terms:
+  - lien
+  - priority
+  - property tax
+  - mechanic's lien
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

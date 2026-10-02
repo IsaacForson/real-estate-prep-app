@@ -1,0 +1,50 @@
+id: GA-1-0184
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An instructor license allowed their license to lapse for ten months. What is the total
+  reinstatement fee for this instructor?
+options:
+  - $200.00
+  - $100.00
+  - $150.00
+  - $250.00
+key: A
+explanation: The rule provides a $100 reinstatement fee plus $25 for each month or portion of a
+  month beyond six months for an individual or instructor. Ten months lapsed means four months
+  beyond six, adding $100, for a total of $200. The $100 option omits the additional monthly fee,
+  while $150 incorrectly calculates two months beyond six, and $250 adds six months of extra fees.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live — § 520-1-.04
+  url: null
+  quoted_text: if the license or approval is reinstated more than four months after the date of
+    lapsing, $100.00 plus an additional fee of $25.00 for an individual or instructor or $50.00 for
+    a firm or school for each month or portion of a month beyond six months from the date of
+    lapsing;
+  secondary: []
+math:
+  worked_solution: Months lapsed = 10. Months beyond six = 10 - 6 = 4. Additional fee = 4 × $25 =
+    $100. Total fee = $100 + $100 = $200.
+  formulas:
+    - Reinstatement fee = $100 + ($25 × max(0, months_lapsed - 6)) for individual/instructor
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - fee
+  - instructor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

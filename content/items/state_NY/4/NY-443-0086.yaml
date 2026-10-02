@@ -1,0 +1,48 @@
+id: NY-443-0086
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate broker is buying a house for a client and holds an 8% ownership interest in the
+  house. Under New York regulation, to whom must the broker disclose this interest?
+options:
+  - Disclosure to all parties is required
+  - Disclosure to the client is required
+  - Disclosure to the seller is required
+  - Disclosure to no one is required
+key: A
+explanation: New York regulation requires a broker who has an ownership interest in property being
+  purchased for a client to disclose that interest to every party involved in the transaction.
+  Therefore the correct answer is the option stating that disclosure to all parties is required. The
+  other options are incorrect because limiting disclosure to no one, to only the client, or to only
+  the seller does not satisfy the rule’s requirement to inform all parties.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.5
+  url: null
+  quoted_text: Before a real estate broker buys property for a client in the ownership of which the
+    broker has an interest, he shall disclose his interest to all parties to the transaction.
+  secondary: []
+math:
+  worked_solution: The broker's ownership interest is given as 8%; no further calculation is needed to
+    determine the disclosure requirement.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - broker
+  - interest
+  - disclosure
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

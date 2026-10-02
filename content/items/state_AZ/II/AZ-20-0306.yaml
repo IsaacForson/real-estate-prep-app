@@ -1,0 +1,41 @@
+id: AZ-20-0306
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After the commissioner issues a summary suspension of a license, when does the suspension
+  become final under Arizona law?
+options:
+  - The suspension becomes final if the licensee does not surrender the license within thirty days
+  - The suspension becomes final if the licensee fails to pay the renewal fee within thirty days
+  - The suspension becomes final if the licensee requests a hearing within thirty days
+  - The suspension becomes final if the licensee does not request a hearing within thirty days
+key: D
+explanation: The rule states that 'A summary suspension shall be deemed to be final if a request for
+  a hearing is not received within thirty days as provided by section 41-1092.03.' Therefore,
+  failure to request a hearing within thirty days makes the suspension final. The distractor about
+  failing to pay the renewal fee is incorrect because payment of fees is unrelated to the finality
+  of a summary suspension.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — § 32-2157(B)
+  url: null
+  quoted_text: A summary suspension shall be deemed to be final if a request for a hearing is not
+    received within thirty days as provided by section 41-1092.03.
+  secondary: []
+terms:
+  - summary
+  - suspension
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

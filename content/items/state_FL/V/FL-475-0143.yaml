@@ -1,0 +1,48 @@
+id: FL-475-0143
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Assuming the Real Estate Recovery Fund has not exceeded $1 million, a broker renews her
+  Florida real estate license for the upcoming year. Under Florida Statutes, how much of the
+  additional Real Estate Recovery Fund fee must be added to her license fee?
+options:
+  - $1.50 added to the license fee
+  - $3.50 added to the license fee
+  - $5.00 added to the license fee
+  - $0.00 added to the license fee
+key: B
+explanation: The statute provides a $3.50 per year fee added to the license fee for brokers. The
+  option stating $5.00 is incorrect. The option stating $0.00 is incorrect. The option stating $1.50
+  applies to sales associates, not brokers.
+citation:
+  source: Fla. Stat. § 475.482(3)
+  url: null
+  quoted_text: A fee of $3.50 per year shall be added to the license fee for both new licenses and
+    renewals of licenses for brokers, and a fee of $1.50 per year shall be added for new licenses
+    and renewals of licenses for sales associates.
+  secondary: []
+math:
+  worked_solution: The statute specifies a $3.50 per year fee for brokers. Therefore, the amount to
+    add to the license fee is $3.50.
+  formulas:
+    - Broker Recovery Fund Fee = Statutory broker fee
+  onscreen_calculator_only: false
+terms:
+  - real estate recovery fund
+  - license fee
+  - broker
+  - sales associate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,43 @@
+id: HI-467-0054
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Hawaii Revised Statutes § 514B-86(d), how long must a developer retain the receipts,
+  return receipts, or cancellation notices obtained under this section?
+options:
+  - One year from the date the receipt was obtained.
+  - Two years from the date the receipt was obtained.
+  - Three years from the date the receipt was obtained.
+  - Five years from the date the receipt was obtained.
+key: C
+explanation: The statute requires the developer to keep the receipts, return receipts, or
+  cancellation notices for three years from the date the receipt or return receipt was obtained. The
+  two‑year option is incorrect because the law specifies a three‑year retention period.
+citation:
+  source: Haw. Rev. Stat. ch. 514B — Hawaii Revised Statutes Chapter 514B - Condominiums
+    (data.capitol.hawaii.gov, section pages concatenated) — § 514B-86
+  url: null
+  quoted_text: (d) The receipts, return receipts, or cancellation notices obtained under this section
+    shall be kept on file in possession of the developer and shall be subject to inspection at any
+    reasonable time by the commission or its staff or agents for a period of three years from the
+    date the receipt or return receipt was obtained.
+  secondary: []
+terms:
+  - receipt
+  - retention
+  - developer
+  - cancellation notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

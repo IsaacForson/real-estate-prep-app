@@ -1,0 +1,43 @@
+id: NV-645-0109
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee deposits client earnest money into his personal checking account to cover a
+  temporary shortfall. According to NRS 645.630, this action constitutes:"
+options:
+  - The action is permitted if the money is returned quickly.
+  - The action is allowed if disclosed to the client.
+  - The action is prohibited as commingling of funds.
+  - The action is acceptable with a ledger only.
+key: C
+explanation: NRS 645.630(h) expressly prohibits commingling the money or other property of clients
+  with the licensee’s own or converting client funds to personal use. Depositing client earnest
+  money into a personal account is commingling, regardless of intent to return the funds. The
+  distractor 'The action is permitted if the money is returned quickly.' is incorrect because the
+  rule does not permit commingling even if the funds are returned promptly.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.630
+  url: null
+  quoted_text: (h) Commingling the money or other property of his or her clients with his or her own
+    or converting the money of others to his or her own use.
+  secondary: []
+terms:
+  - commingling
+  - client funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

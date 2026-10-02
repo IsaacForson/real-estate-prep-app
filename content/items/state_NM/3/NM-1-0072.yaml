@@ -1,0 +1,53 @@
+id: NM-1-0072
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker manages a residential property that contains 12 separate units, each with
+  its own postal address. According to the commission’s property management points rule, how many
+  points would the broker earn for managing this property for one year?
+options:
+  - 12 points
+  - 14 points
+  - 15 points
+  - 18 points
+key: B
+explanation: The rule awards three points for the property itself plus one point for each additional
+  unit beyond the first. With 12 units, the calculation is 3 + (12 − 1) = 3 + 11 = 14 points. The
+  maximum of 25 points per property per year is not exceeded. The distractor of 12 points mistakenly
+  omits the base three points, while 15 points results from adding one point per unit including the
+  first.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition § (7)(a)
+  url: null
+  quoted_text: "Residential Property Management: Each property receives three points, plus one point
+    for each additional unit in that property to a maximum of 25 points per property per year. A
+    unit is defined as a separate residence with its own postal address."
+  secondary: []
+math:
+  worked_solution: |-
+    Base points for property: 3 points
+    Additional units: 12 total units − 1 = 11 additional units
+    Points for additional units: 11 × 1 point = 11 points
+    Total points = 3 + 11 = 14 points
+  formulas:
+    - Total points = 3 + (number of units − 1)
+  onscreen_calculator_only: false
+terms:
+  - property management
+  - units
+  - points
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

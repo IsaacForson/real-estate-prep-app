@@ -1,0 +1,40 @@
+id: CA-4-0259
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A prospective purchaser executes an offer to purchase an interest in an undivided-interest
+  subdivision on April 5, 2024, and the interest is not exempt under Section 11000.1(b). If the
+  purchaser attempts to rescind the contract on April 9, 2024, what is the legal effect?
+options:
+  - The rescission is valid because the purchaser acted within five days of executing the offer
+  - The rescission is invalid because the right of rescission expired at midnight on April 8, 2024
+  - The rescission is valid because the right of rescission extends to the fifth calendar day after
+    the offer
+  - The rescission is valid because weekends and holidays are excluded from the rescission period
+key: B
+explanation: The statutory rescission period ends at midnight of the third calendar day after the
+  offer date, which is April 8, 2024. An attempt to rescind on April 9 is after that deadline and
+  therefore ineffective. The five‑day option adds days not authorized by the statute.
+citation:
+  source: Cal. Bus. & Prof. Code § 11000.2(a)
+  url: null
+  quoted_text: until midnight of the third calendar day following the day on which the prospective
+    purchaser executed the offer to purchase
+  secondary: []
+terms:
+  - rescission
+  - expiration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

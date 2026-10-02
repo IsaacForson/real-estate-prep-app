@@ -1,0 +1,53 @@
+id: WI-452-0035
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A married homeowner executes and records a warranty deed conveying his homestead to a buyer.
+  The deed states that the grantor is 'single' and has been recorded for six years. The buyer had no
+  actual or constructive notice of the spouse's homestead interest. Under Wis. Stat. § 706.09(1)(e),
+  what is the effect of the spouse's homestead interest?
+options:
+  - The spouse's homestead interest is barred, and the buyer takes title free of that interest.
+  - The spouse's homestead interest remains valid and may be enforced against the buyer.
+  - The spouse's homestead interest is barred only if the buyer had actual notice of the interest.
+  - The spouse's homestead interest is barred only if the conveyance was a quitclaim deed.
+key: A
+explanation: Under Wis. Stat. § 706.09(1)(e), a purchaser who takes a conveyance stating the
+  transferor is single and that has been of record for five years takes title free of the spouse’s
+  homestead interest, unless the interest is described as held in joint tenancy or marital property
+  with the transferor. Since the deed states the grantor is single and has been recorded for six
+  years, the buyer takes free of the homestead interest. The option stating that the spouse's
+  homestead interest remains valid and may be enforced against the buyer incorrectly claims the
+  interest remains valid, ignoring the statutory bar.
+citation:
+  source: Wis. Stat. ch. 706 — Wisconsin Statutes Chapter 706, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 706.09(1)(e)
+  url: null
+  quoted_text: |-
+    Homestead of the spouse of any trans-
+    feror of an interest in real estate, if the recorded conveyance pur-
+    porting to transfer the homestead states that the person executing
+    it is single, unmarried or widowed or fails to indicate the marital
+    status of the transferor, and if the conveyance has, in either case,
+    appeared of record for 5 years
+  secondary: []
+terms:
+  - homestead
+  - marital interest
+  - conveyance
+  - record
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

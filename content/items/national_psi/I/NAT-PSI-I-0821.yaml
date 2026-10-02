@@ -1,0 +1,43 @@
+id: NAT-PSI-I-0821
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner conveys 'the surface estate only,' reserving all oil, gas, and minerals. When the
+  surface owner later sells the land, what happens to the mineral estate?
+options:
+  - The mineral estate passes to the buyer as part of the surface estate.
+  - The mineral estate remains with the original owner who reserved it.
+  - The mineral estate is automatically transferred to the state.
+  - The mineral estate is divided equally between the buyer and the original owner.
+key: B
+explanation: When a landowner conveys only the surface estate and reserves the oil, gas, and
+  minerals, the reservation creates a severed mineral estate that remains with the grantor.
+  Consequently, a later sale of the surface estate does not transfer the mineral rights; they stay
+  with the original owner who reserved them. The mineral estate does not automatically pass to the
+  buyer, go to the state, or get split between parties.
+citation:
+  source: REP Ref. Property & Land Use § 1.7
+  url: null
+  quoted_text: Example. A farmer conveys 'the surface estate only,' reserving all oil, gas, and
+    minerals. When the surface owner later sells, the mineral estate does not pass, because the
+    farmer severed it and the reservation appears in the chain of title.
+  secondary: []
+terms:
+  - mineral estate
+  - surface estate
+  - reservation
+  - chain of title
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

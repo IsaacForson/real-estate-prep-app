@@ -1,0 +1,41 @@
+id: AK-88-0212
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under Alaska Stat. § 08.88.351(b)(1), a real estate licensee is **NOT** exempt from
+  maintaining records for at least three years for transactions in which the licensee was a:"
+options:
+  - Client in the transaction
+  - Agent in the transaction
+  - Customer in the transaction
+  - Principal in the transaction
+key: D
+explanation: Alaska Stat. § 08.88.351(b)(1) requires a licensee to keep a complete record of any
+  transaction in which the licensee acted as a principal for a minimum of three years. Roles such as
+  client, agent, or customer do not meet the definition of principal and therefore are not subject
+  to this record‑keeping requirement.
+citation:
+  source: Alaska Stat. § 08.88.351(b)(1)
+  url: null
+  quoted_text: (1) shall keep, for a minimum of three years, a complete record of all real estate
+    transactions in which the licensee was a principal;
+  secondary: []
+terms:
+  - principal
+  - record
+  - transaction
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

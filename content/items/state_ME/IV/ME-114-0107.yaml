@@ -1,0 +1,48 @@
+id: ME-114-0107
+jurisdiction: ME
+bank: state_ME
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A party wishes to intervene in a Commission proceeding. The hearing is scheduled for November
+  5. Assuming no good cause shown, by what date must the party file the application for intervention
+  to comply with Maine Real Estate Commission rules?
+options:
+  - October 29
+  - October 30
+  - November 1
+  - November 3
+key: A
+explanation: The rule requires intervention applications to be filed, except for good cause, at
+  least seven days before the hearing. Subtracting seven days from November 5 gives October 29,
+  which meets the deadline. The October 30 date would provide only six days' notice, which is
+  insufficient.
+citation:
+  source: ===== 02-039 C.M.R. ch. 350 ===== § 4
+  url: null
+  quoted_text: An application for intervention in a Commission proceeding shall be filed, except for
+    good cause shown, at least seven (7) days in advance of the scheduled hearing.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify hearing date: November 5.
+    Step 2: Subtract 7 days: November 5 - 7 days = October 29.
+    Step 3: Conclusion: the application must be filed by October 29.
+  formulas:
+    - Result = Given date - N days
+  onscreen_calculator_only: false
+terms:
+  - intervention
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

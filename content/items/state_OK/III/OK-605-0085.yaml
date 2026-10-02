@@ -1,0 +1,42 @@
+id: OK-605-0085
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's employee leases units in a three-unit affordable housing development to persons
+  qualifying under a federal housing subsidy program. Under Oklahoma Real Estate License Code, is a
+  real estate license required?
+options:
+  - Yes, a real estate license is required.
+  - No, a real estate license is not required.
+  - Yes, only if the employee is compensated.
+  - No, because the tenants qualify for a housing subsidy.
+key: A
+explanation: The exemption for employees of a licensed broker applies only to affordable housing
+  developments of four or more units. A three-unit development does not meet this threshold, so the
+  exemption does not apply and a license is required. The distractor claiming no license is required
+  incorrectly assumes the tenant qualification alone suffices.
+citation:
+  source: Okla. Stat. tit. 59 § 858-301(9)
+  url: null
+  quoted_text: |-
+    Affordable housing development project" 
+    means a housing development of four or more units constructed for lease to speciﬁcally eligible 
+    persons as required by the particular federal or state housing program
+  secondary: []
+terms:
+  - affordable housing development
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

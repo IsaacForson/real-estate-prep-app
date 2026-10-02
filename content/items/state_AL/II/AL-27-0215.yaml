@@ -1,0 +1,49 @@
+id: AL-27-0215
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson applies for an original license on August 1, 2025. The license period runs from
+  October 1, 2024 to September 30, 2026. Assuming the license period is after October 1, 2004, what
+  is the original fee for the salesperson's license?
+options:
+  - $85.00
+  - $127.50
+  - $170.00
+  - $255.00
+key: C
+explanation: From August 1, 2025 to September 30, 2026 is 1 year and 2 months; any portion of a year
+  counts as a full year, so 2 years apply. At $85.00 per year, the fee is 2 × $85.00 = $170.00.
+citation:
+  source: Ala. Code § 34-27-35(c)(2)
+  url: null
+  quoted_text: The original fee for each salesperson’s license shall be eighty-five dollars ($85) per
+    year for each year or portion of a year remaining in the respective license period
+  secondary: []
+math:
+  worked_solution: |-
+    Determine remaining time: August 1, 2025 to September 30, 2026 = 1 year 2 months.
+    Convert months to years: 2 months = 2/12 year ≈ 0.1667 year.
+    Total remaining = 1 + 0.1667 = 1.1667 years.
+    Any portion of a year counts as a full year, so round up to 2 years.
+    Fee per year = $85.00.
+    Total fee = 2 × $85.00 = $170.00.
+  formulas:
+    - total fee = ceil(remaining years) × fee per year
+  onscreen_calculator_only: false
+terms:
+  - original fee
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

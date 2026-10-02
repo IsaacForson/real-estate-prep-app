@@ -1,0 +1,47 @@
+id: VT-2211-0058
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate broker opens a trust account at a state-chartered bank on March 3. Under
+  26 V.S.A. § 2214(a), by what date must the broker notify the Vermont Real Estate Commission of the
+  bank where the account is located?
+options:
+  - A) March 8
+  - B) March 13
+  - C) March 18
+  - D) March 25
+key: B
+explanation: Under 26 V.S.A. § 2214(a), a broker must notify the Vermont Real Estate Commission
+  within ten days after opening any trust or escrow account. Counting ten days from March 3 gives
+  March 13 as the deadline. The other options reflect incorrect time frames, such as the
+  five‑banking‑day rule or periods longer than ten days.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2214(a)
+  url: null
+  quoted_text: The broker shall notify the Commission, within 10 days after opening any trust or
+    escrow account, of the bank or other financial institution in which the account is located.
+  secondary: []
+math:
+  worked_solution: "Start date: March 3. Add 10 days: March 3 + 10 days = March 13. Since March has 31
+    days, the calculation stays within the month."
+  formulas:
+    - Date = Start Date + Notice Period
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - notification
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

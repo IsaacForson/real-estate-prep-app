@@ -1,0 +1,45 @@
+id: AL-27-0111
+jurisdiction: AL
+bank: state_AL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker agrees to sell a property for the owner to receive $200,000 net, with any amount over
+  that paid to the broker as commission. Which prohibited conduct does this constitute under Ala.
+  Code § 34-27-36?
+options:
+  - Accepting a net listing agreement
+  - Accepting a flat fee for brokerage services
+  - Accepting an earnest money deposit from the buyer
+  - Accepting a comparative market analysis request
+key: A
+explanation: Subsection (b)(19) expressly prohibits a broker from accepting a net listing agreement,
+  which sets a net price for the owner and pays the broker any excess. Accepting a flat fee, earnest
+  money, or a market analysis request is not prohibited by this subsection.
+citation:
+  source: Ala. Code § 34-27-36(b)(19)
+  url: null
+  quoted_text: If a broker accepts a “net listing” agreement for sale of real property or any interest therein.
+  secondary: []
+math:
+  worked_solution: The owner’s net amount is $200,000. Any sale price above $200,000 is the broker’s
+    commission. Because the sale price is not given, no numeric calculation is needed.
+  formulas:
+    - Commission = Sale Price - Net Amount
+  onscreen_calculator_only: false
+terms:
+  - net listing
+  - broker
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

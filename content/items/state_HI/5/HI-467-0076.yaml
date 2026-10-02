@@ -1,0 +1,43 @@
+id: HI-467-0076
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A property manager oversees the common areas of a condominium association for a fee, but does
+  not lease any units. Under Haw. Rev. Stat. § 467-1, this individual would **NOT** be considered a
+  custodian or caretaker because:"
+options:
+  - Because they receive no compensation for their services
+  - Because the single owner exclusion does not apply to condominium associations
+  - Because they are hired as independent contractors rather than employees
+  - Because they regularly lease units to tenants
+key: B
+explanation: The statute specifies that a 'single owner' does not include an association of owners
+  of a condominium, cooperative, or planned unit development. Therefore, managing a condominium
+  association's common areas excludes the individual from the custodian or caretaker definition. The
+  other options are incorrect because the individual is compensated, may be an employee or
+  contractor, and does not lease units.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: provided further that a single owner shall not include an association of owners of a
+    condominium, cooperative, or planned unit development.
+  secondary: []
+terms:
+  - custodian
+  - caretaker
+  - condominium
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

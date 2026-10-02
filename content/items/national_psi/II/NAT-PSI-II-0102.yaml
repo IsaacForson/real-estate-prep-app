@@ -1,0 +1,39 @@
+id: NAT-PSI-II-0102
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: How is the priority of a mechanic's lien determined?
+options:
+  - The priority of a mechanic's lien is determined by the date it is recorded
+  - The priority of a mechanic's lien is determined by state statute and may relate back to work
+    start
+  - The priority of a mechanic's lien is determined by the date the work is completed
+  - The priority of a mechanic's lien is determined by the amount of the claim
+key: B
+explanation: Mechanic's lien priority is set by state statute and may relate back to when work
+  began. The option stating that priority is based solely on the recording date is incorrect because
+  state statute governs mechanic's lien priority, not the recording date alone.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - lien
+  - mechanic's lien
+  - priority
+  - state statute
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

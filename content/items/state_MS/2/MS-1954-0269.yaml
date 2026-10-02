@@ -1,0 +1,43 @@
+id: MS-1954-0269
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Miss. Code Ann. § 73-35-10(2)(b)(ii), which of the following will result in denial of a
+  real estate license regardless of when it occurred?
+options:
+  - A felony conviction for fraud at any time before the application.
+  - A misdemeanor theft conviction two years prior to application.
+  - A traffic violation for speeding within the last year.
+  - A real estate license revoked in another state six years ago.
+key: A
+explanation: The statute denies a license if the applicant has been convicted of a felony involving
+  fraud, dishonesty, breach of trust, or money laundering at any time before application. Therefore,
+  a felony conviction for fraud at any time before application results in denial. A misdemeanor
+  theft conviction is not listed as a ground for denial, making it incorrect. License revocation
+  more than five years prior and traffic violations are also not automatic denial reasons under this
+  provision.
+citation:
+  source: Miss. Code Ann. § 73-35-10(2)(b)(ii)
+  url: null
+  quoted_text: At any time preceding the date of the application, if such felony involved an act of
+    fraud, dishonesty or a breach of trust, or money laundering.
+  secondary: []
+terms:
+  - felony
+  - fraud
+  - denial
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

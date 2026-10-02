@@ -1,0 +1,47 @@
+id: NAT-PV-I-0703
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A parcel is described as "the NW 1/4 of the SE 1/4 of Section 12, Township 4 North, Range 3
+  East of the Fourth Principal Meridian." What is the acreage of this parcel?
+options:
+  - 40 acres.
+  - 80 acres.
+  - 160 acres.
+  - 320 acres.
+key: A
+explanation: A quarter‑quarter section (the NW 1/4 of the SE 1/4) is one‑sixteenth of a full
+  section. Because a section contains 640 acres, one‑sixteenth of that is 40 acres. The option
+  stating 80 acres would describe a half‑quarter (for example, the N 1/2 of the SE 1/4), which is
+  not the parcel described.
+citation:
+  source: "REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) § 3.3"
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres and 1,320 feet per side
+  secondary: []
+math:
+  worked_solution: "Step 1: A section is 640 acres. Step 2: The NW 1/4 of the SE 1/4 is a
+    quarter‑quarter, which is 1/4 × 1/4 = 1/16 of a section. Step 3: 640 acres × 1/16 = 40 acres."
+  formulas:
+    - Section area = 640 acres
+    - Quarter-quarter area = Section area × (1/4) × (1/4)
+  onscreen_calculator_only: false
+terms:
+  - section
+  - quarter-quarter
+  - acreage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

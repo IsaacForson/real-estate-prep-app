@@ -1,0 +1,56 @@
+id: MI-25-0061
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An attorney‑in‑fact acting under a recorded power of attorney for an owner occasionally helps
+  the owner sell a vacant lot, spending less than 10 hours per month on the activity. Under MCL
+  339.2503(1), is the attorney‑in‑fact required to hold a real estate license?
+options:
+  - The attorney‑in‑fact must obtain a license because any brokerage activity requires licensure.
+  - The attorney‑in‑fact is exempt from licensure because the act is not performed as a principal
+    vocation.
+  - The attorney‑in‑fact is exempt only if the owner is a licensed builder.
+  - The attorney‑in‑fact must obtain a license only if the property is residential.
+key: B
+explanation: Under MCL 339.2503, an attorney‑in‑fact acting under a recorded power of attorney is
+  exempt unless the activity is performed as a principal vocation. Since the attorney‑in‑fact works
+  less than 10 hours per month, it is not a principal vocation, so no license is required. The
+  statement that the attorney‑in‑fact must obtain a license because any brokerage activity requires
+  licensure is incorrect because the exemption expressly applies unless the activity is a principal
+  vocation.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2503"
+  url: null
+  quoted_text: This article does not apply to an owner or lessor, an attorney-in-fact acting under a
+    duly executed and recorded power of attorney from the owner or lessor, or a person appointed by
+    a court, that performs an act as a real estate broker or real estate salesperson with reference
+    to property owned by it, unless performed as a principal vocation not through a licensed real
+    estate broker.
+  secondary: []
+math:
+  worked_solution: The attorney‑in‑fact spends less than 10 hours per month, which is not a principal
+    vocation; therefore, no license is required.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - attorney-in-fact
+  - principal vocation
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,54 @@
+id: WA-85-0184
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is notified on April 1 that the transcript of a disciplinary hearing has been filed
+  and that the cost is $120. The licensee pays the cost on April 18. What is the effect on the
+  appeal under RCW 18.85.401?
+options:
+  - The director must reissue transcript
+  - The licensee is fined $500
+  - The appeal is dismissed
+  - The appeal proceeds normally
+key: C
+explanation: Under RCW 18.85.401, if the transcript cost is not paid in full within fifteen days of
+  notification, the appeal is dismissed. The licensee was notified on April 1 and paid on April 18,
+  which is seventeen days later—beyond the fifteen‑day limit—so the appeal is dismissed. The idea
+  that the appeal proceeds normally ignores the mandatory dismissal for late payment.
+citation:
+  source: "### Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing
+    Brokers — § 18.85.401"
+  url: null
+  quoted_text: If the cost is not paid in full within fifteen days the appeal is dismissed.
+  secondary: []
+math:
+  worked_solution: >-
+    1. Determine the number of days between notification (April 1) and payment (April 18). April 18
+    minus April 1 equals 17 days.
+
+    2. Compare the elapsed days to the statutory limit of 15 days.
+
+    3. Since 17 days > 15 days, the condition for dismissal is met.
+
+    4. Therefore, the appeal is dismissed.
+  formulas:
+    - Days elapsed = Payment date - Notification date
+  onscreen_calculator_only: false
+terms:
+  - appeal
+  - transcript
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

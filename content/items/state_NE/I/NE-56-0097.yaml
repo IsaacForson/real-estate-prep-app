@@ -1,0 +1,41 @@
+id: NE-56-0097
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is placed on probation after the commission stayed a suspension penalty. During the
+  probation period, the licensee commits another violation of the Act. What is the consequence under
+  Neb. Rev. Stat. § 81-885.29?
+options:
+  - The suspension penalty is immediately executed
+  - License revocation is imposed immediately
+  - The licensee receives only a warning
+  - A new hearing is required before any penalty
+key: A
+explanation: Under Neb. Rev. Stat. § 81-885.29, a violation committed while on probation triggers
+  the immediate execution of the previously stayed suspension penalty. The option claiming that
+  license revocation is imposed immediately is incorrect because the statute does not provide for
+  revocation in this circumstance; it only provides for the suspension penalty to take effect.
+citation:
+  source: Neb. Rev. Stat. § 81-885.29
+  url: null
+  quoted_text: Any violation of the act or the rules and regulations by the licensee during the period
+    of probation shall cause the immediate execution of the suspension penalty.
+  secondary: []
+terms:
+  - probation
+  - violation
+  - execution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,39 @@
+id: AZ-20-0073
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A process server delivers a subpoena issued by the Arizona Real Estate Commissioner. What is
+  the maximum compensation the server may receive under Arizona law?
+options:
+  - The actual cost incurred by the server in service
+  - The fees set by the commissioner for that service
+  - The fees prescribed by law for similar service
+  - Double the usual court fees for similar service
+key: C
+explanation: The law provides that the person serving process shall receive compensation allowed by
+  the commissioner, not to exceed the fees prescribed by law for similar service. Thus the upper
+  limit is the statutory fee for comparable service, not the commissioner's discretion or actual
+  costs.
+citation:
+  source: Ariz. Rev. Stat. § 32-2158(B)
+  url: null
+  quoted_text: The person serving process shall receive compensation allowed by the commissioner, not
+    to exceed the fees prescribed by law for similar service.
+  secondary: []
+terms:
+  - process service
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

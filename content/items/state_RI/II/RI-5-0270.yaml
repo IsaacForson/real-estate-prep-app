@@ -1,0 +1,44 @@
+id: RI-5-0270
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a Rhode Island real estate broker license submits the required application
+  and fee but fails to include a statement under oath regarding whether they have ever been refused
+  a license or had a license suspended or revoked. According to Rhode Island law, what is the status
+  of the application?
+options:
+  - The application is complete because the omission does not affect licensing eligibility.
+  - The application is incomplete and must be supplemented with the missing statement.
+  - The application will be automatically denied due to the omission.
+  - The applicant may correct the omission after the license is issued.
+key: B
+explanation: The application must contain a statement under oath giving the applicant’s age,
+  residence, place of business, present occupation, and whether or not the applicant has been
+  refused a license or had a license suspended or revoked. Omitting any of these required elements
+  renders the application incomplete and it must be supplemented before processing can continue.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-3(a)
+  url: null
+  quoted_text: contains a statement under oath by the applicant giving his or her age; residence;
+    place of business; present occupation; and whether or not he or she has been refused a real
+    estate broker’s or salesperson’s license in this or in any other state or had any real estate
+    license suspended or revoked.
+  secondary: []
+terms:
+  - application
+  - statement under oath
+  - license refusal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

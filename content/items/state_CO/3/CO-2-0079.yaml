@@ -1,0 +1,49 @@
+id: CO-2-0079
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee charges a fee to a prospective tenant for providing a list of available rental
+  apartments. Under Colorado law, is this person considered a real estate broker?
+options:
+  - The licensee is exempt as a prospective‑tenant fee collector
+  - The licensee requires a broker license for fee collection
+  - The licensee is engaged in leasing activity requiring licensure
+  - The licensee is exempt because only property management is exempt
+key: A
+explanation: The exemption in the broker definition excludes anyone who solicits a fee from a
+  prospective tenant for information about real‑property availability. Since the licensee is
+  charging a prospective tenant for rental‑listing information, the exemption applies and no broker
+  license is needed. The option claiming that a broker license is required for fee collection
+  incorrectly states that any fee for real‑estate information requires a license, ignoring the
+  prospective‑tenant exemption.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-201(6)(a)
+  url: null
+  quoted_text: Any person, firm, partnership, limited liability company, association, or corporation
+    or any employee or authorized agent thereof engaged in the act of soliciting a fee or valuable
+    consideration from any person other than a prospective tenant for furnishing information
+    concerning the availability of real property, including apartment housing that may be leased or
+    rented as a private dwelling, abode, or place of residence, is exempt from this definition of
+    “real estate broker” or “broker”.
+  secondary: []
+terms:
+  - prospective tenant
+  - fee
+  - exemption
+  - real property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

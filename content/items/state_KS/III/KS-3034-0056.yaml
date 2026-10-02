@@ -1,0 +1,54 @@
+id: KS-3034-0056
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson receives an earnest money check of $2,000 and deposits $1,900 into the broker's
+  trust account, retaining $100 to cover account maintenance fees. Later, the salesperson uses an
+  additional $50 from the trust account to pay for personal office supplies. Under Kansas law, is
+  this permissible?
+options:
+  - Yes, because the licensee retained only $100 for account maintenance, which is allowed.
+  - No, because the licensee retained more than $100 for expenses, which is prohibited.
+  - Yes, because the earnest money was deposited within five business days as required.
+  - No, because the licensee failed to deposit the earnest money within five business days.
+key: B
+explanation: A broker may keep no more than $100 in the trust account to cover account‑maintenance
+  expenses; retaining $150 exceeds that limit and constitutes prohibited conversion of trust funds.
+  The timing of the deposit does not cure the excess retention.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(2)
+  url: null
+  quoted_text: except that nothing herein shall prohibit a broker from having funds in an amount not
+    to exceed $100 in the broker's trust account to pay expenses for the use and maintenance of such
+    account.
+  secondary: []
+math:
+  worked_solution: |-
+    Initial retention = $100
+    Additional personal use = $50
+    Total retained = $100 + $50 = $150
+    Allowed maximum retention = $100
+    Since $150 > $100, the retention is prohibited.
+  formulas:
+    - Total retained = Initial retention + Additional use
+    - Excess = Total retained - Allowed maximum
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - earnest money
+  - expenses
+  - licensee
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

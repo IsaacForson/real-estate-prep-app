@@ -1,0 +1,49 @@
+id: IA-543B-0060
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate broker license submits an application today. Their FBI criminal
+  history check was completed 250 days ago. Under Iowa Code ch. 543B, what action must the
+  commission take regarding the application?
+options:
+  - The commission shall process the application but hold delivery of the license until the
+    background check is complete.
+  - The commission shall waive the background check requirement due to the age of the check.
+  - The commission shall reject and return the application to the applicant.
+  - The commission shall approve the application because the check was completed within the required
+    period.
+key: C
+explanation: Paragraph (9) of §543B.15 states that unless the criminal history check was completed
+  within 210 days prior to the application date, the commission shall reject and return the
+  application. Since the check was completed 250 days ago, the commission must reject and return it.
+  The option about processing and holding delivery applies only when the check is within the 210‑day
+  window.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §543B.15(9)
+  url: null
+  quoted_text: |-
+    Unless the criminal history check was completed within the two hundred ten calendar
+    days prior to the date the license application is received by the real estate commission,
+    Tue Dec 09 22:02:12 2025 Iowa Code 2026, Chapter 543B (41, 1)
+
+    §543B.15, REAL ESTATE BROKERS AND SALESPERSONS 10
+    the commission shall reject and return the application to the applicant
+  secondary: []
+terms:
+  - criminal history check
+  - application rejection
+  - two hundred ten days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

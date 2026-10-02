@@ -1,0 +1,46 @@
+id: KS-3034-0081
+jurisdiction: KS
+bank: state_KS
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "A broker shall be considered a transaction broker unless:"
+options:
+  - The broker shall be considered a transaction broker unless the broker has entered into a written
+    agency agreement prior to engaging in any activities enumerated in K.S.A. 58-3035(f).
+  - The broker shall be considered a transaction broker unless the broker works with a buyer or
+    tenant as a subagent of the seller or landlord by accepting an offer of subagency and has a
+    written agency agreement with that party.
+  - The broker shall be considered a transaction broker unless an agency relationship between the
+    broker and the party to be represented is established pursuant to this section.
+  - The broker shall be considered a transaction broker unless the broker has obtained verbal
+    authorization from a federal agency to engage in activities enumerated in K.S.A. 58-3035(f).
+key: C
+explanation: Under Kan. Stat. Ann. § 58-30,103(c), a broker is presumed to be a transaction broker
+  unless an agency relationship with the party to be represented is established pursuant to that
+  subsection. The option stating that an agency relationship is established under the section
+  correctly identifies when the presumption does not apply. The other options add conditions not
+  found in the statute, such as requiring a written agency agreement for subagency or verbal federal
+  authorization, which are not part of the exception.
+citation:
+  source: Kan. Stat. Ann. § 58-30,103(c)
+  url: null
+  quoted_text: An agency relationship between the broker and the party to be represented is
+    established pursuant to this section
+  secondary: []
+terms:
+  - transaction broker
+  - agency relationship
+  - subagent
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

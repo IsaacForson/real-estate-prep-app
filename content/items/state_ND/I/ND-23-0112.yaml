@@ -1,0 +1,41 @@
+id: ND-23-0112
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum amount of a broker's personal funds that may be deposited in a trust
+  account to cover service charges under North Dakota law?
+options:
+  - One thousand dollars
+  - Five hundred dollars
+  - Seven hundred fifty dollars
+  - Two hundred fifty dollars
+key: B
+explanation: The rule permits a broker to deposit and keep a sum not to exceed five hundred dollars
+  in the trust account from the broker's personal funds to cover service charges. Therefore, five
+  hundred dollars is the correct maximum. The distractor of one thousand dollars exceeds the allowed
+  limit and would violate the prohibition on commingling personal funds beyond the specified amount.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-14.1
+  url: null
+  quoted_text: except a broker may deposit and keep a sum not to exceed five hundred dollars in the
+    account from the broker's personal funds
+  secondary: []
+terms:
+  - trust account
+  - personal funds
+  - service charges
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

@@ -1,0 +1,44 @@
+id: MS-1954-0037
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi resident who has held an active real estate salesperson license for ten months
+  applies for a broker license. Under Miss. Code Ann. § 73-35-7, is the applicant eligible to sit
+  for the broker examination?
+options:
+  - The applicant is eligible because they satisfy the age and domicile requirements.
+  - The applicant is not eligible because they have not held a salesperson license for the required
+    twelve months.
+  - The applicant is eligible because they have completed the required 120 hours of coursework.
+  - The applicant is not eligible because they must also pass the background investigation.
+key: B
+explanation: Subsection (d) requires twelve months of active salesperson licensure before applying
+  for the broker examination; ten months is insufficient. While age, domicile, coursework, and
+  background clearance are also required, the twelve‑month salesperson prerequisite is the decisive
+  factor.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) — § 73-35-7
+  url: null
+  quoted_text: (d) shall have held a license as an active real estate salesperson for twelve (12)
+    months prior to making application for the broker’s examination hereafter specified;
+  secondary: []
+terms:
+  - salesperson
+  - broker
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

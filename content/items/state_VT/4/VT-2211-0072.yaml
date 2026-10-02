@@ -1,0 +1,43 @@
+id: VT-2211-0072
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A Vermont real estate salesperson is convicted of a misdemeanor in a Vermont District Court
+  and fails to notify the Office of Professional Regulation within 30 days. Under Vermont law, this
+  failure is:"
+options:
+  - It is considered unprofessional conduct under Vermont law.
+  - It is subject to a civil penalty under the statute.
+  - It is allowed if the conviction is unrelated to real estate.
+  - It is permitted if the conviction occurred out of state.
+key: A
+explanation: Under §129(11), failing to report any felony or misdemeanor conviction within 30 days
+  is unprofessional conduct. Therefore the licensee’s failure to report the misdemeanor conviction
+  is unprofessional conduct. The distractor that claims the conduct is only subject to a civil fine
+  is incorrect because the statute treats the failure to report as a disciplinary violation, not a
+  mere civil penalty.
+citation:
+  source: "3 V.S.A. ch. 5 — 3 V.S.A. Chapter 5 — Secretary of State (Subchapter 3: Office of
+    Professional Regulation, incl. § 129a Unprofessional conduct) — § 129(11)"
+  url: null
+  quoted_text: (11) Failing to report to the Office a conviction of any felony or misdemeanor offense
+    in a Vermont District Court, a Vermont Superior Court, a federal court, or a court outside
+    Vermont within 30 days.
+  secondary: []
+terms:
+  - conviction
+  - report
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

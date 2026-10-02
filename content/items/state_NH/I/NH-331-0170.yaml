@@ -1,0 +1,41 @@
+id: NH-331-0170
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under RSA 331-A:26, what is the required frequency for a licensee to reconcile trust account
+  records?
+options:
+  - Annually basis
+  - Quarterly basis
+  - Monthly basis
+  - Weekly basis
+key: C
+explanation: RSA 331-A:26 VIII states that failing to reconcile records monthly is a prohibited act,
+  establishing monthly reconciliation as the required frequency. The weekly basis is too frequent
+  and not mandated by statute.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:26 VIII
+  url: null
+  quoted_text: failing to reconcile records monthly
+  secondary: []
+terms:
+  - trust
+  - account
+  - reconcile
+  - frequency
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,39 @@
+id: NAT-PSI-I-0083
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner who holds an appurtenant easement across a neighboring parcel later purchases that
+  neighboring parcel. What is the effect on the easement?
+options:
+  - The easement remains enforceable against the now‑owned parcel.
+  - The easement is extinguished by merger.
+  - The easement becomes a license revocable at will.
+  - The easement converts to an easement in gross.
+key: B
+explanation: Under §7.4, merger occurs when one person acquires both the dominant and servient
+  tenements, extinguishing the easement because no one holds an easement over their own land.
+citation:
+  source: REP Ref. Property & Land Use § 7.4
+  url: null
+  quoted_text: Merger. When one person acquires both tenements the easement is extinguished, because
+    no one holds an easement over their own land; it does not revive if the parcels are later
+    separated.
+  secondary: []
+terms:
+  - merger
+  - easement
+  - extinguished
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

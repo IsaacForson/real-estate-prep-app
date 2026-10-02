@@ -1,0 +1,49 @@
+id: IL-2000-0095
+jurisdiction: IL
+bank: state_IL
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An Illinois broker refers a buyer to a property management company in which the broker owns 2%
+  equity. According to Section 10-10(c), what must the broker do?
+options:
+  - The broker must disclose that fact to the client at the time of making the referral.
+  - The broker must disclose that fact only if the company is publicly held or traded.
+  - The broker must disclose that fact only if receives dividends or profit-sharing distributions.
+  - The broker must not disclose any information about the referral to the client.
+key: A
+explanation: Section 10-10(c) mandates disclosure when a licensee has greater than a 1% ownership
+  interest in a referred third party, regardless of public status or dividend receipt. The statement
+  that disclosure is required only if the company is publicly held or traded is incorrect because it
+  ignores the ownership interest threshold.
+citation:
+  source: 225 ILCS 454 § 10-10(c)
+  url: null
+  quoted_text: (c) If a licensee refers a client to a third party in which the licensee has greater
+    than a 1% ownership interest or from which the licensee receives or may receive dividends or
+    other profit sharing distributions, other than a publicly held or traded company, for the
+    purpose of the client obtaining services related to the transaction, then the licensee shall
+    disclose that fact to the client at the time of making the referral.
+  secondary: []
+math:
+  worked_solution: The broker's ownership interest is 2%. The rule requires disclosure if interest >
+    1%. Since 2% > 1%, disclosure is required.
+  formulas:
+    - Ownership interest > 1% triggers disclosure
+  onscreen_calculator_only: false
+terms:
+  - disclosure
+  - referral
+  - ownership
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

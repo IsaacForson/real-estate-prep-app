@@ -1,0 +1,42 @@
+id: NAT-PV-I-0680
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the acreage of a quarter-quarter section?
+options:
+  - 320 acres
+  - 80 acres
+  - 40 acres
+  - 160 acres
+key: C
+explanation: A quarter-quarter section is 40 acres. A section contains 640 acres; dividing it by 4
+  yields a quarter section of 160 acres, and dividing that quarter section by 4 yields a
+  quarter-quarter section of 40 acres.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres and 1,320 feet per side.
+  secondary: []
+math:
+  worked_solution: 640 acres ÷ 4 = 160 acres (quarter section). 160 acres ÷ 4 = 40 acres (quarter-quarter section).
+  formulas:
+    - Division
+  onscreen_calculator_only: false
+terms:
+  - quarter-quarter
+  - section
+  - acreage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

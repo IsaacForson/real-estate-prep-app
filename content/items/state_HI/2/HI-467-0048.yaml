@@ -1,0 +1,60 @@
+id: HI-467-0048
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager is employed by a corporation that owns a single office building and is
+  responsible for managing the building and collecting rent. Under Hawaii Revised Statutes § 467-1,
+  does this individual qualify as a custodian?
+options:
+  - Yes, because the corporation is a single owner and the manager performs custodial duties.
+  - No, because the corporation is considered an association of owners under the statute.
+  - Yes, but only if the manager also leases units to tenants.
+  - No, because the manager is not employed directly by an individual owner.
+key: A
+explanation: The definition of custodian applies to anyone employed by a single owner to manage
+  property, and a corporation owning a single building qualifies as a single owner. The manager’s
+  duties match the custodial role, and there is no leasing activity that would trigger the
+  exclusion. The claim that the manager is not employed directly by an individual owner is incorrect
+  because a corporation can be a single owner. The statement that the manager would qualify only if
+  also leasing units is wrong because leasing activity would exclude the individual from the
+  custodian definition. The assertion that the corporation is considered an association of owners is
+  false because the statute excludes associations of owners of condominiums, cooperatives, or
+  planned unit developments, not a corporation owning a single office building.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: |-
+    Custodian or caretaker" means any individual,
+    who for compensation or valuable consideration, is
+    employed as an employee by a single owner and has the
+    responsibility to manage or care for that real
+    property left in the individual's trust; provided that
+    the term "custodian" or "caretaker" shall not include
+    any individual who leases or offers to lease, or rents
+    or offers to rent, any real estate for more than a
+
+    467-3
+    single owner; provided further that a single owner
+    shall not include an association of owners of a
+    condominium, cooperative, or planned unit development
+  secondary: []
+terms:
+  - custodian
+  - single owner
+  - association
+  - corporation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

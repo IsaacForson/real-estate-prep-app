@@ -1,0 +1,48 @@
+id: PA-9-0041
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a cemetery company is paid a $20 per showing fee to show burial lots to
+  families and accepts deposits on behalf of the cemetery. Under 63 P.S. § 455.304(7), is this
+  employee required to hold a real estate license?
+options:
+  - "Answer: Yes, because receiving remuneration removes the exclusion"
+  - "Answer: No, because the employee only shows lots and does not negotiate"
+  - "Answer: Yes, because accepting deposits requires a license"
+  - "Answer: No, because cemetery employees are exempt"
+key: A
+explanation: Under 63 P.S. § 455.304(7), the exclusion for cemetery employees applies only when
+  services are performed without remuneration. Because the employee receives a $20 fee for each
+  showing, the exclusion does not apply and a real estate license is required. The option that
+  claims accepting deposits alone triggers the requirement is incorrect; the determining factor is
+  receipt of remuneration.
+citation:
+  source: 63 P.S. § 455.304(7)
+  url: null
+  quoted_text: without remuneration therefor, shows lots in such company's cemetery to persons for
+    their use as a family burial lot and who accepts deposits on such lots
+  secondary: []
+math:
+  worked_solution: For one showing, the fee is $20 per showing × 1 showing = $20.
+  formulas:
+    - Total fee = fee per showing × number of showings
+  onscreen_calculator_only: false
+terms:
+  - cemetery
+  - remuneration
+  - exclusion
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

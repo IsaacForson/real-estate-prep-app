@@ -1,0 +1,41 @@
+id: NE-56-0092
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson license applicant has finished two approved real estate courses totaling sixty
+  class hours. What additional step must the applicant take to satisfy the education requirement
+  under Neb. Rev. Stat. § 81-885.13(2)?
+options:
+  - Complete a third approved course of at least thirty class hours.
+  - Submit proof of a high school equivalency certificate.
+  - Pass the salesperson licensing examination.
+  - Provide evidence of six hours of professional practice study.
+key: A
+explanation: The rule requires three approved courses totalling at least ninety class hours. Having
+  only sixty hours leaves a deficit of thirty hours, so a third course of at least thirty class
+  hours is needed. The other options address unrelated prerequisites.
+citation:
+  source: Neb. Rev. Stat. § 81-885.13(2)
+  url: null
+  quoted_text: Each applicant for a salesperson's license shall furnish evidence that he or she has
+    completed three courses in real estate subjects, approved by the commission, composed of not
+    less than ninety class hours of study in total
+  secondary: []
+terms:
+  - salesperson
+  - education
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

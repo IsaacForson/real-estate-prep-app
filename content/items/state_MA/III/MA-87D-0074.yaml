@@ -1,0 +1,58 @@
+id: MA-87D-0074
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller agrees to pay a broker whatever amount exceeds $200,000 from the sale of their
+  property. Under M.G.L. c. 112, § 87AAA, may the broker accept this arrangement?
+options:
+  - The broker may accept the arrangement because the seller set a minimum price.
+  - The broker may not accept the arrangement because it constitutes a prohibited net listing.
+  - The broker may accept the arrangement if the seller signs a written agreement.
+  - The broker may not accept the arrangement only if the excess amount exceeds 10% of the sale
+    price.
+key: B
+explanation: M.G.L. c. 112, § 87AAA defines a net listing as an agreement that authorizes the broker
+  to keep any amount received above a stated price and expressly prohibits a broker from accepting
+  such an arrangement. Because the seller’s offer would pay the broker any amount over $200,000, it
+  is a prohibited net listing, so the broker may not accept it. The option stating that the broker
+  may accept the arrangement if the seller signs a written agreement is incorrect because a written
+  agreement does not cure the statutory prohibition. The option suggesting acceptance only when the
+  excess exceeds 10% of the sale price is also incorrect; the percentage is irrelevant to the
+  prohibition. The option that the broker may accept because the seller set a minimum price
+  mischaracterizes the rule, as the minimum price does not remove the net‑listing restriction.
+citation:
+  source: "### M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87AAA"
+  url: null
+  quoted_text: accepted from a prospective seller a net listing, an agreement to sell real estate for
+    a stated price which authorized the broker to keep as commission any amount of money received
+    from the sale of said real estate in excess of the stated price.
+  secondary: []
+math:
+  worked_solution: Excess amount = Sale Price – $200,000. Since the sale price is not provided, the
+    exact excess cannot be calculated, but the broker would be entitled to any amount above
+    $200,000, which the statute prohibits.
+  formulas:
+    - Excess = Sale Price – Minimum Amount
+  onscreen_calculator_only: false
+terms:
+  - net listing
+  - stated price
+  - commission
+  - excess
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

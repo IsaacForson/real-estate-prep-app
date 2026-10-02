@@ -1,0 +1,42 @@
+id: ND-23-0110
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives trust money on a Thursday, and the broker's depository is closed Friday
+  for a holiday. Under N.D. Cent. Code § 43-23-11.1(1)(s), by when must the money be deposited?
+options:
+  - By end of day Thursday
+  - By end of day Friday
+  - By end of day Monday
+  - By end of day Tuesday
+key: C
+explanation: "The statute requires deposit within twenty‑four hours, but provides an exception: if
+  the money is received on a day before a holiday or before the depository is closed, it must be
+  deposited during the next business day. Since Friday is a holiday, the next business day is
+  Monday."
+citation:
+  source: N.D. Cent. Code § 43-23-11.1(1)(s)
+  url: null
+  quoted_text: Provided that if trust money is received on a day before a holiday or on another day
+    before which the depository is closed where the trust fund is maintained, the moneys must then
+    be deposited during the next business day of the depository.
+  secondary: []
+terms:
+  - salesperson
+  - trust money
+  - deposit
+  - holiday
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

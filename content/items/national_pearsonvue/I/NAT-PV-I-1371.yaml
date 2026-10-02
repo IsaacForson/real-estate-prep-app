@@ -1,0 +1,38 @@
+id: NAT-PV-I-1371
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: If a lien remains unpaid, what action can the lienholder take?
+options:
+  - The lienholder can wait until the property is sold voluntarily.
+  - The lienholder can sue the borrower for personal damages only.
+  - The lienholder can automatically acquire title to the property.
+  - The lienholder can force a sale of the property and be paid from the proceeds.
+key: D
+explanation: Under § 8.1, a lienholder may force a sale of the property and be paid from the
+  proceeds if the debt remains unpaid. The distractor suggesting automatic acquisition of title is
+  incorrect because a lien does not convey ownership; it only gives the right to satisfy the debt
+  from sale proceeds.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: if unpaid, the lienholder can force a sale and be paid from the proceeds.
+  secondary: []
+terms:
+  - lien
+  - foreclosure
+  - proceeds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

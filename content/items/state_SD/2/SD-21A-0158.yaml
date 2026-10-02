@@ -1,0 +1,44 @@
+id: SD-21A-0158
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A custodian of an apartment building shows units to prospective tenants, accepts lease
+  applications, and also negotiates lease terms with those tenants. According to South Dakota law,
+  is the custodian exempt from licensure for these activities?
+options:
+  - Exempt, as showing units and accepting applications are covered by the exemption
+  - Not exempt, because negotiating lease terms is not included in the exemption
+  - Exempt, since the custodian is an employee of the owner
+  - Not exempt, because the custodian received compensation for the services
+key: B
+explanation: Under §36-21A-29(5), a custodian is exempt only when exhibiting units, accepting
+  applications, and furnishing rental information; negotiating lease terms is not listed as an
+  exempt activity. Because the custodian negotiates lease terms, that activity falls outside the
+  exemption and requires a license. Thus the custodian is not exempt for the negotiating activity.
+citation:
+  source: S.D. Codified Laws § 36-21A-29(5)
+  url: null
+  quoted_text: Any custodian, janitor, or employee of the owner or manager of a residential building
+    who exhibits a residential unit therein to prospective tenants, accepts applications for leases
+    and furnishes prospective tenants with information relative to the rental of the unit, terms and
+    conditions of leases required by the owner or manager and similar information
+  secondary: []
+terms:
+  - custodian
+  - exemption
+  - lease
+  - licensure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

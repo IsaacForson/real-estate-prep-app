@@ -1,0 +1,39 @@
+id: IA-543B-0252
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee learns that their real estate license was revoked by another state on August 1,
+  2024. They notify the Iowa Real Estate Commission on August 20, 2024. Under Iowa Admin. Code r.
+  481-2005.10(543B), what is the consequence of this delay?
+options:
+  - The licensee must pay a $1,000 civil penalty
+  - The delay is cause for disciplinary action
+  - The licensee must complete remedial education
+  - The out-of-state revocation is automatically recognized in Iowa
+key: B
+explanation: The licensee notified the commission 19 days after the adverse action, exceeding the
+  15‑day window. Failure to notify within 15 days is expressly declared cause for disciplinary
+  action. The other options introduce penalties or requirements not mentioned in the rule.
+citation:
+  source: Iowa Admin. Code r. 481-2005.10(543B)
+  url: null
+  quoted_text: Failure to notify the commission within 15 days of an adverse action taken by another
+    state or jurisdiction is cause for disciplinary action.
+  secondary: []
+terms:
+  - notification
+  - adverse action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

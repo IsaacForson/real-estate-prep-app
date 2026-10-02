@@ -1,0 +1,40 @@
+id: NAT-PV-I-0726
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the acreage of a quarter section?
+options:
+  - 40 acres
+  - 80 acres
+  - 160 acres
+  - 320 acres
+key: C
+explanation: Under the rectangular survey system, a quarter section equals 160 acres.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: A quarter section (the NE 1/4) is 160 acres and 2,640 feet per side
+  secondary: []
+math:
+  worked_solution: "One section contains 640 acres. A quarter section is one‑fourth of a section: 640
+    acres × 1/4 = 160 acres."
+  formulas:
+    - Quarter section acreage = (1/4) × Section acreage
+    - Section acreage = 640 acres
+  onscreen_calculator_only: false
+terms:
+  - quarter section
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

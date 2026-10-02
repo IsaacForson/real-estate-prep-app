@@ -1,0 +1,46 @@
+id: SD-21A-0162
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submitted a South Dakota real estate license application yesterday. In the past
+  ten months, the applicant wrote two insufficient funds checks for personal expenses, and yesterday
+  wrote an insufficient funds check to pay the application fee. Based solely on §36-21A-33(1), what
+  is the correct consequence?
+options:
+  - The application may be approved if the applicant provides proof of funds to cover the checks
+  - The application may be denied because of the insufficient funds check for the application fee
+  - The application may be approved because the insufficient funds checks were written more than six
+    months ago
+  - The application may be approved even if the applicant has a felony conviction
+key: B
+explanation: Under S.D. Codified Laws § 36-21A-33(1), an application may be denied if the applicant
+  has written an insufficient funds check for the application fee, or has written any insufficient
+  funds checks within the calendar year before applying. Because the applicant wrote an insufficient
+  funds check to pay the fee yesterday, the application may be denied regardless of the earlier
+  checks.
+citation:
+  source: S.D. Codified Laws § 36-21A (Real Estate Licensing) — South Dakota Codified Laws Chapter
+    36-21A — Real Estate Licensing (SD Real Estate Commission License Laws & Administrative Rules
+    book, as of July 1, 2025) — § 36-21A-33
+  url: null
+  quoted_text: (1) The applicant has written insufficient funds checks within the calendar year before
+    application or has written an insufficient funds check for the application;
+  secondary: []
+terms:
+  - insufficient funds
+  - application
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

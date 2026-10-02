@@ -1,0 +1,37 @@
+id: VT-2211-0087
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the fee for a preapplication criminal background determination under 3 V.S.A. § 125(a)(5)?
+options:
+  - $30.00
+  - $75.00
+  - $50.00
+  - $25.00
+key: D
+explanation: The statute explicitly sets the fee for a preapplication criminal background
+  determination at $25.00. The $30.00 amount corresponds to the verification of license fee, not the
+  background check. The $50.00 and $75.00 amounts relate to other profession-specific fees (peer
+  support providers and community-based perinatal doulas) and are not applicable here.
+citation:
+  source: 3 V.S.A. § 125(a)(5)
+  url: null
+  quoted_text: (5) A preapplication criminal background determination, $25.00.
+  secondary: []
+terms:
+  - fee
+  - background check
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

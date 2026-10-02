@@ -1,0 +1,51 @@
+id: CA-4-0263
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A petition signed by members representing 6% of the association’s voting power is received by
+  the governing body on March 1. According to Cal. Code Regs. tit. 10, § 2792.4(2), what is the
+  earliest and latest date by which the special meeting must be held?
+options:
+  - March 15 through May 15
+  - March 30 through April 30
+  - April 5 through April 15
+  - April 1 through April 30
+key: C
+explanation: Under Cal. Code Regs. tit. 10, § 2792.4(2), the meeting must be held not less than 35
+  days nor more than 45 days after receipt of the petition. Adding 35 days to March 1 gives April 5,
+  and adding 45 days gives April 15. Therefore the earliest date is April 5 and the latest is April
+  15.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2792.4(2)
+  url: null
+  quoted_text: (2) A special meeting of members for the purpose of voting to override a decision by
+    the governing body not to initiate action to enforce the obligations under the Bond or on the
+    failure of the governing body to consider and vote on the question. The meeting shall be
+    required to be held not less than 35 days nor more than 45 days after receipt by the governing
+    body of a petition for such a meeting signed by members representing 5% or more of the total
+    voting power of the Association.
+  secondary: []
+math:
+  worked_solution: "March has 31 days. March 1 + 31 days = April 1. Then add remaining 4 days to reach
+    35 days total: April 1 + 4 days = April 5. For 45 days: March 1 + 31 days = April 1, then add
+    remaining 14 days: April 1 + 14 days = April 15."
+  formulas:
+    - "Date addition: start date + n days"
+  onscreen_calculator_only: false
+terms:
+  - petition
+  - special meeting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

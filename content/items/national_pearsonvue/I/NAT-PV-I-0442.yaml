@@ -1,0 +1,39 @@
+id: NAT-PV-I-0442
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: If work on a property began in January 2021, a mortgage was recorded in March 2021, and a
+  mechanic's lien for that work was recorded in May 2021, which factor determines whether the
+  mechanic's lien has priority over the mortgage under the rule described in the text?
+options:
+  - The date when the lien was recorded.
+  - The date when the work began.
+  - The amount of the lien claimed.
+  - The type of work performed.
+key: B
+explanation: Mechanic's lien priority is set by state statute and may relate back to when work
+  began. Thus, the determining factor is the date the work began, not the recording date or other
+  considerations.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - mechanic's lien
+  - priority
+  - work
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

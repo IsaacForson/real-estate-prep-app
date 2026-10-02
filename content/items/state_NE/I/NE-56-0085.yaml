@@ -1,0 +1,43 @@
+id: NE-56-0085
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Real Estate Commissioner receives a telephone call from a licensee who is scheduled for a
+  disciplinary hearing next week. The licensee asks the commissioner about the hearing process and
+  possible outcomes. According to Neb. Admin. Code tit. 299, ch. 5 § 002, is the commissioner’s
+  discussion permissible?
+options:
+  - The commissioner’s discussion is permissible because the licensee initiated contact
+  - The commissioner’s discussion is improper because it concerns a disciplinary matter set for
+    hearing
+  - The commissioner’s discussion is permissible as long as no details of the case are disclosed
+  - The commissioner’s discussion is improper only if the commissioner shares confidential evidence
+key: B
+explanation: Section 002 prohibits a commissioner from discussing any disciplinary matter set for
+  hearing with a licensee or any other person, except commission staff. Therefore the discussion is
+  improper regardless of who initiated it or whether case details are disclosed.
+citation:
+  source: Neb. Admin. Code tit. 299, ch. 5 § 002
+  url: null
+  quoted_text: It shall be improper for a Real Estate Commissioner to discuss with a licensee or any
+    other person, except members of the Commission staff, any matter of a disciplinary nature which
+    is set for hearing by the Commission.
+  secondary: []
+terms:
+  - commissioner
+  - disciplinary
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

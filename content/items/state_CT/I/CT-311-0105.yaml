@@ -1,0 +1,40 @@
+id: CT-311-0105
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If six members of the Connecticut Real Estate Commission are registered with the same
+  political party, is this composition permissible under Connecticut law?
+options:
+  - It is permissible because the law allows up to a bare majority of members from the same party.
+  - It is permissible because the law does not restrict party affiliation beyond the bare majority
+    requirement.
+  - It is not permissible because the commission must have equal numbers of members from each
+    political party.
+  - It is not permissible because more than a bare majority of the commission would be from the same
+    party.
+key: D
+explanation: With eight members, a bare majority is five; six members from the same party exceeds
+  that limit, making the composition impermissible. The distractor claiming permissibility
+  misapplies the bare majority rule.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311a(b)
+  url: null
+  quoted_text: Not more than a bare majority of the commission shall be members of the same political party
+  secondary: []
+terms:
+  - political party
+  - majority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

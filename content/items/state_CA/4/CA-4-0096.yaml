@@ -1,0 +1,38 @@
+id: CA-4-0096
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A lender files a notice of default on March 1. According to Cal. Civ. Code § 2924(a)(2), what
+  is the minimum time that must elapse before the lender may record a notice of sale?
+options:
+  - At least 60 days must elapse.
+  - At least 120 days must elapse.
+  - At least 90 days must elapse.
+  - At least 30 days must elapse.
+key: C
+explanation: The statute states that not less than three months shall elapse from the filing of the
+  notice of default before a notice of sale may be recorded. Three months is approximately 90 days,
+  making the 90‑day option correct. Shorter periods violate the rule, and longer periods exceed the
+  minimum required.
+citation:
+  source: Cal. Civ. Code § 2924(a)(2)
+  url: null
+  quoted_text: (2) Not less than three months shall elapse from the filing of the notice of default.
+  secondary: []
+terms:
+  - notice of default
+  - notice of sale
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

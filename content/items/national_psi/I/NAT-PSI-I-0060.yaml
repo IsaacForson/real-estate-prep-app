@@ -1,0 +1,40 @@
+id: NAT-PSI-I-0060
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a property with a loan and obtains only a lender's title insurance policy.
+  Later a forged deed in the chain is discovered. According to the text, what is the likely outcome?
+options:
+  - The insurer will pay the buyer up to the loan balance
+  - The insurer will pay the lender up to the loan balance
+  - The insurer will pay the buyer up to the purchase price
+  - The insurer will require the buyer to sue the third party
+key: B
+explanation: Without an owner's policy, a lender's title insurance policy pays only the loan amount
+  to the lender. Therefore, the insurer will pay the lender up to the loan balance. The distractor
+  suggesting payment to the buyer up to the purchase price is incorrect because the lender's policy
+  does not cover the buyer's equity.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.4
+  url: null
+  quoted_text: Without the owner's policy, the lender's policy would have paid only the loan balance,
+    to the lender.
+  secondary: []
+terms:
+  - title insurance
+  - lender's policy
+  - loan balance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

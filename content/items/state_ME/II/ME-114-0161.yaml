@@ -1,0 +1,48 @@
+id: ME-114-0161
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has been licensed as an associate broker for 18 months within the five years
+  preceding application and has completed the required course of study. Under 32 M.R.S. § 13198.2,
+  is the applicant eligible for a broker license?
+options:
+  - The applicant is not eligible because the course of study was not completed as required
+  - The applicant is eligible because the course of study requirement is satisfied
+  - The applicant is not eligible because associate broker experience is less than the required 2
+    years
+  - The applicant is eligible because 18 months of associate broker experience satisfies the 2‑year
+    minimum
+key: C
+explanation: To qualify for a broker license, the applicant must have been licensed as an associate
+  broker for at least 2 years within the prior 5 years and must complete the required course of
+  study. The applicant meets the course‑of‑study requirement but has only 18 months of associate
+  broker experience, failing the experience requirement. The option stating that the applicant is
+  eligible because 18 months of associate broker experience satisfies the 2‑year minimum incorrectly
+  focuses only on the course of study while ignoring the experience deficit.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13198.2"
+  url: null
+  quoted_text: The applicant must have been licensed as an associate broker affiliated with a real
+    estate brokerage agency for 2 years within the 5 years immediately preceding the date of
+    application.
+  secondary: []
+terms:
+  - associate broker
+  - broker license
+  - course of study
+  - experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

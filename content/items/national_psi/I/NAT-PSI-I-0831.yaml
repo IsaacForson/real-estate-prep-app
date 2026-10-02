@@ -1,0 +1,41 @@
+id: NAT-PSI-I-0831
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: At closing, a seller has a mortgage and a judgment lien. The buyer agrees to assume the
+  mortgage but not the judgment lien. What must the settlement agent do with the judgment lien?
+options:
+  - The settlement agent must wait until after closing to pay it from the buyer's funds
+  - The settlement agent must pay it from the seller's proceeds and record a release
+  - The settlement agent must add its amount to the buyer's loan balance
+  - The settlement agent must ignore it because the buyer assumes the mortgage
+key: B
+explanation: The seller must deliver title free of any liens that the buyer did not agree to assume.
+  Therefore, the settlement agent must pay off the judgment lien from the seller's proceeds and
+  record a release to clear the title.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.5
+  url: null
+  quoted_text: A seller must ordinarily deliver title free of liens other than those the buyer agreed
+    to assume. The settlement agent obtains payoff statements, pays each lienholder from the
+    proceeds, and records the satisfaction (release) of mortgage or, for a deed of trust, a deed of
+    reconveyance; until the release is recorded the lien still appears in the record.
+  secondary: []
+terms:
+  - closing
+  - lien
+  - judgment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

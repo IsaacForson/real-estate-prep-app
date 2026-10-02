@@ -1,0 +1,45 @@
+id: IA-543B-0241
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson licensed in another state allowed their license to lapse eight months ago. They
+  now wish to obtain an Iowa real estate salesperson license by passing the Iowa portion of the
+  salesperson examination. Under Iowa Admin. Code r. 481-2005.3(2), what determines their
+  eligibility?
+options:
+  - They are eligible because they have been licensed as a salesperson in another state.
+  - They are eligible if they finish thirty hours of approved prelicense education.
+  - They are not eligible because their license lapsed more than six months before the exam.
+  - They are eligible if they pass both the national and Iowa portions of the exam.
+key: C
+explanation: Iowa Admin. Code r. 481-2005.3(2) requires that a nonresident salesperson seeking Iowa
+  license by examination must have been actively licensed as a salesperson and that the license has
+  not been inactive or expired for more than six months immediately before passing the Iowa portion
+  of the exam. Because the applicant’s license lapsed eight months prior, they fail the recency
+  requirement and are not eligible. The distractor asserting eligibility solely based on licensure
+  in another state ignores the active‑license condition.
+citation:
+  source: Iowa Admin. Code r. 481-2005.3(2)
+  url: null
+  quoted_text: The person has been actively licensed as a salesperson and the license has not been
+    inactive or expired for more than six months immediately preceding the date of passage of the
+    Iowa portion of the salesperson real estate examination.
+  secondary: []
+terms:
+  - license
+  - examination
+  - active
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

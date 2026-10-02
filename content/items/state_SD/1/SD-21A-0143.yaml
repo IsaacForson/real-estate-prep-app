@@ -1,0 +1,42 @@
+id: SD-21A-0143
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A commission member appointed after July 1, 2005 is appointed to fill a vacancy for the
+  unexpired portion of a term. How is this appointment treated regarding the limit on consecutive
+  full terms?
+options:
+  - It does not count as a full term toward the limit of three consecutive terms
+  - It counts as a full term toward the limit of three consecutive terms
+  - It resets the consecutive term count to zero and begins a new term
+  - It adds the unexpired period to the member's current term, extending their service
+key: A
+explanation: The law states that an appointment to fill a vacancy serves only the unexpired portion
+  of the term and is not considered a full term. Thus, it does not count toward the limit on
+  consecutive full terms. The other options incorrectly treat the vacancy appointment as a full
+  term, reset the count, or extend the term.
+citation:
+  source: S.D. Codified Laws § 36-21A-14
+  url: null
+  quoted_text: Any member appointed to fill a vacancy arising during a commissioner's term shall serve
+    for the unexpired portion of the term. The appointment to an unexpired term is not considered a
+    full term.
+  secondary: []
+terms:
+  - vacancy
+  - term
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

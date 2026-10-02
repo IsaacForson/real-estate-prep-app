@@ -1,0 +1,44 @@
+id: NAT-PV-I-1385
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases a property that includes an easement for driveway access over a neighbor's
+  land, but the deed does not reference the easement. According to the REP Ref. Property & Land Use,
+  what is the status of the easement?
+options:
+  - The easement is an appurtenance that passes with the land even though the deed does not name it
+  - The easement is a personal property item that must be transferred by bill of sale
+  - The easement is a license that expires when the property is sold
+  - The easement is a trade fixture that belongs to the buyer
+key: A
+explanation: An easement is a right that belongs to and passes with the land even if the deed does
+  not name it, which makes it an appurtenance. The claim that it is personal property requiring a
+  bill of sale is incorrect because an easement is not personal property; it runs with the land. The
+  claim that it is a license that ends when the property is sold is incorrect because an easement is
+  not a revocable license; it is a lasting interest in land. The claim that it is a trade fixture
+  belonging to the buyer is incorrect because an easement is not a fixture; it is a nonpossessory
+  right over another's land.
+citation:
+  source: REP Ref. Property & Land Use § 1.7
+  url: null
+  quoted_text: An appurtenance is a right that belongs to and passes with the land even if the deed
+    does not name it
+  secondary: []
+terms:
+  - easement
+  - appurtenance
+  - deed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

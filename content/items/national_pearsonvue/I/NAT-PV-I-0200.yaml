@@ -1,0 +1,39 @@
+id: NAT-PV-I-0200
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A commercial tenant installs display shelving and a kitchen hood in a leased restaurant space.
+  The lease is silent about who owns these items. At the end of the lease, the tenant removes the
+  shelving and hood, causing minor damage to the walls. Who is responsible for repairing the damage?
+options:
+  - The tenant must repair the damage because the items are trade fixtures
+  - The landlord and tenant share responsibility for the damage equally
+  - The tenant may remove the items without any obligation to repair the walls
+  - The landlord must repair the damage because the items became his fixtures
+key: A
+explanation: Under the trade fixture rule, items installed by a tenant for business remain the
+  tenant's personal property and may be removed, but the tenant must repair any damage caused by
+  removal. The landlord is not responsible because the items are not fixtures, and the tenant cannot
+  avoid repair obligations.
+citation:
+  source: REP Ref. Property & Land Use § 1.4
+  url: null
+  quoted_text: The tenant may remove them before the lease ends and must repair the damage removal causes.
+  secondary: []
+terms:
+  - trade fixture
+  - damage repair
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

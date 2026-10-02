@@ -1,0 +1,51 @@
+id: VT-2211-0111
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker appointed to the Vermont Real Estate Commission is a member of a professional real
+  estate association at the time of appointment but resigns after two months; the other two broker
+  members have never been members of the association. Is the Commission in compliance with the
+  requirement that at **LEAST** one broker member shall not be a member of a professional real
+  estate association at the time of appointment or during tenure?
+options:
+  - The Commission is not in compliance because the broker never rejoined after resigning two months
+    into his term
+  - The Commission is in compliance because at least one broker member never held association
+    membership
+  - The Commission is in compliance only if all three broker members never become members of the
+    association
+  - The Commission is not in compliance because the appointed broker was never removed from the
+    association during his tenure
+key: B
+explanation: The statute states that at least one broker member must not be a member of a
+  professional real‑estate association at the time of appointment or at any time during tenure. In
+  the described scenario, two of the three broker members have never been members of such an
+  association, which satisfies the requirement. Consequently, the statement that the Commission is
+  in compliance because at least one broker member never held association membership correctly
+  reflects the rule.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2251
+  url: null
+  quoted_text: Three members of the Commission shall be licensed real estate brokers whose vocations
+    shall have been that of real estate broker for at least four years. At least one of the broker
+    members shall not be a member of a professional real estate association at the time of
+    appointment or at any time during tenure as a member.
+  secondary: []
+terms:
+  - broker member
+  - professional real estate association
+  - tenure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

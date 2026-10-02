@@ -1,0 +1,47 @@
+id: TX-1101-0111
+jurisdiction: TX
+bank: state_TX
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker pays a title company for a title search that was actually performed at market rates.
+  Under 22 Tex. Admin. Code § 535.148(h)(2), is this payment prohibited?
+options:
+  - A. Yes, because the broker did not disclose the payment to the client.
+  - C. Yes, because the title company is a settlement service provider and the broker represents a
+    party.
+  - D. No, because the broker must obtain the client's consent before paying any settlement service
+    provider.
+  - B. No, because a payment at market rates for services actually performed is exempt from
+    prohibition.
+key: D
+explanation: Subsection 535.148(h)(2) expressly excludes from prohibition any payment at market
+  rates for goods actually furnished or services actually performed. Since the title search was
+  performed at market rates, the payment is allowed. The option stating that the broker must obtain
+  the client's consent before paying any settlement service provider is incorrect because this
+  exemption does not require consent.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live — § 535.148(h)(2)"
+  url: null
+  quoted_text: a payment at market rates to any person for goods actually furnished or for services
+    actually performed;
+  secondary: []
+terms:
+  - payment
+  - market rates
+  - services
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

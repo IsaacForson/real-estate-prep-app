@@ -1,0 +1,38 @@
+id: ID-20-0249
+jurisdiction: ID
+bank: state_ID
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: According to Idaho Code § 54-2006(2), how long may a commissioner continue to hold office
+  after the expiration of their term?
+options:
+  - The commissioner may hold office only until the last day of the term
+  - The commissioner may hold office until a specific date set by the governor
+  - The commissioner may hold office until a qualified successor is appointed
+  - The commissioner may hold office indefinitely, with no limitation
+key: C
+explanation: The statute explicitly says each commissioner shall hold office until a qualified
+  successor is appointed, allowing service beyond the term until a replacement is named. The option
+  limiting service to the last day of the term ignores this provision, and the option suggesting a
+  governor‑set date adds a condition not found in the law.
+citation:
+  source: Idaho Code § 54-2006(2)
+  url: null
+  quoted_text: Each commissioner shall hold office until a qualified successor is appointed.
+  secondary: []
+terms:
+  - commissioner
+  - successor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

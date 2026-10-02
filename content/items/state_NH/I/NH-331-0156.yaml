@@ -1,0 +1,50 @@
+id: NH-331-0156
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A salesperson receives a $5,000 earnest money check from a buyer and deposits it into their
+  personal checking account, intending to transfer it to the broker's trust account after two weeks.
+  Under RSA 331-A:26 VIII, this conduct is:"
+options:
+  - The conduct is permitted because the funds will eventually be placed in a trust account
+  - The conduct is permitted if the salesperson reconciles the account monthly and keeps proper
+    documentation
+  - The conduct is prohibited because trust funds must be placed promptly in a proper trust account
+  - The conduct is permitted only if the broker provides written consent and obtains the owner's
+    approval
+key: C
+explanation: RSA 331-A:26 VIII makes it unlawful to fail to promptly place trust funds in a proper
+  trust account. Because the earnest‑money check was kept in a personal account for two weeks before
+  being transferred, the conduct violates that provision. A statement that the funds will eventually
+  be deposited is insufficient, since the statute requires prompt placement.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 1 Section 331-A:26 VIII
+  url: null
+  quoted_text: Failing to promptly place trust funds in a proper trust account, or failing to
+    reconcile records monthly.
+  secondary: []
+math:
+  worked_solution: No calculation is required; the question tests compliance with the trust‑fund rule,
+    not arithmetic.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - earnest money
+  - promptly
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

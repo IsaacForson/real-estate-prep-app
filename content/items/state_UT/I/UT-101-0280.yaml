@@ -1,0 +1,42 @@
+id: UT-101-0280
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person holds an active associate broker license and has ten years of experience in the real
+  estate business. The governor proposes appointing this person to the Real Estate Commission.
+  Another current commission member resides in the same county as this proposed appointee. Under
+  Utah Code Ann. § 61-2f-103(4)(d), what is the status of this appointment?
+options:
+  - The appointment is invalid because the candidate resides in the same county as another member.
+  - The appointment is valid because the candidate meets the experience and license requirements.
+  - The appointment is invalid because the candidate must reside in a county of the first class.
+  - The appointment is valid if the Senate approves the candidate despite the residency overlap.
+key: A
+explanation: Utah Code Ann. § 61-2f-103(4)(d) prohibits the governor from appointing a commission
+  member described in Subsection (4)(b) (those with real estate experience and licenses) if, at the
+  time of appointment, they reside in the same county as another commission member. Since the
+  candidate resides in the same county as an existing member, the appointment is prohibited
+  regardless of experience or Senate approval.
+citation:
+  source: Utah Code Ann. § 61-2f-103(4)(d)
+  url: null
+  quoted_text: The governor may not appoint a commission member described in Subsection (4)(b) who, at
+    the time of appointment, resides in the same county in the state as another commission member.
+  secondary: []
+terms:
+  - commission member
+  - appointment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

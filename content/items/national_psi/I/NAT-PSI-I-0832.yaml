@@ -1,0 +1,41 @@
+id: NAT-PSI-I-0832
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner hires a contractor to build an addition. Work begins January 1. The contractor
+  files a mechanic's lien on March 15 for nonpayment. The homeowner records a new mortgage on
+  February 15. If the state allows mechanic's liens to relate back to the start of construction,
+  which lien has priority in a foreclosure sale?
+options:
+  - The mortgage recorded February 15 has priority
+  - The mechanic's lien filed March 15 has priority
+  - Both liens have equal priority in this situation
+  - The owner receives any surplus before either lien is paid
+key: B
+explanation: When a mechanic's lien relates back to the date work began, its effective date is
+  January 1, which precedes the February 15 mortgage. Thus the mechanic's lien is senior and paid
+  first. The other options incorrectly treat the mortgage as senior, treat them as equal, or give
+  surplus to the owner before lien payment.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.4
+  url: null
+  quoted_text: mechanic's liens may relate back to the start of construction under state law
+  secondary: []
+terms:
+  - mechanic's lien
+  - priority
+  - relation back
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

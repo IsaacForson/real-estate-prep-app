@@ -1,0 +1,56 @@
+id: NV-645-0133
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee committed a violation on January 10, 2020. The violation was discovered
+  immediately, and no related legal proceeding has been filed. On February 1, 2025, the
+  Administrator files a complaint seeking disciplinary action. May the Commission proceed with the
+  disciplinary action under NRS 645.685?
+options:
+  - No, because more than five years have elapsed since the violation.
+  - Yes, because the violation occurred within the past five years.
+  - Yes, because the Administrator filed the complaint before the five‑year period expired.
+  - No, because the violation was not discovered until after the five‑year period.
+key: A
+explanation: NRS 645.685(3) bars a proceeding unless notice is given within 5 years after the act
+  charged. From January 10, 2020 to February 1, 2025 is 5 years and 22 days, exceeding the limit, so
+  the Commission may not proceed.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.685
+  url: null
+  quoted_text: "No proceeding to suspend, revoke or deny the renewal of any license or registration of
+    an owner-developer may be maintained unless it is commenced by the giving of notice to the
+    licensee, permittee or owner-developer within 5 years after the date of the act charged, whether
+    of commission or omission, except:"
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: January 10, 2020
+    End date: February 1, 2025
+    Years difference: 2025 - 2020 = 5 years
+    Days from Jan 10 to Feb 1 = 22 days
+    Total elapsed = 5 years + 22 days ≈ 5.06 years
+    Since 5.06 years > 5 years, the 5‑year limit has been exceeded.
+  formulas:
+    - Elapsed years = (end year - start year) + (days difference / 365)
+  onscreen_calculator_only: false
+terms:
+  - limitation period
+  - disciplinary action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

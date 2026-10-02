@@ -1,0 +1,42 @@
+id: ME-114-0049
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer asks a transaction broker to arrange a home inspection to evaluate the property's
+  condition. How must the broker respond under Maine law?
+options:
+  - A transaction broker must refuse to conduct the home inspection for the benefit of any party.
+  - A transaction broker must arrange the home inspection because it benefits the buyer.
+  - A transaction broker may perform the home inspection only if the seller consents.
+  - A transaction broker may conduct the home inspection but must disclose the findings to both
+    parties.
+key: A
+explanation: Maine law prohibits a transaction broker from conducting an inspection, investigation,
+  or analysis of a property for the benefit of any party. Consequently, the broker must refuse to
+  conduct the home inspection for the benefit of any party. Arranging the inspection, performing it
+  with seller consent, or conducting it and then disclosing findings would still constitute
+  conducting the inspection and would violate the statute (32 M.R.S. §13283).
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13283"
+  url: null
+  quoted_text: Conduct an inspection, investigation or analysis of a property for the benefit of any party
+  secondary: []
+terms:
+  - transaction broker
+  - inspection
+  - prohibited act
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

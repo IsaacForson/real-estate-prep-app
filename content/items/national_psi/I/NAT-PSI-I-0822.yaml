@@ -1,0 +1,40 @@
+id: NAT-PSI-I-0822
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: If a grantor breaches the covenant against encumbrances in a warranty deed, when is the breach
+  considered to have occurred?
+options:
+  - The breach occurs when a superior claim is later asserted.
+  - The breach occurs at the time the defect is discovered.
+  - The breach occurs at delivery of the deed.
+  - The breach occurs after the grantee records the deed.
+key: C
+explanation: The covenant against encumbrances is one of the present covenants in a warranty deed;
+  present covenants are breached, if at all, at the moment the deed is delivered. Therefore the
+  breach occurs at delivery. The statement that the breach occurs when a superior claim is later
+  asserted describes a future covenant, which is only breached when such a claim arises.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.2
+  url: null
+  quoted_text: The first three are present covenants, breached if at all at delivery; the last three
+    are future covenants, breached only when a superior claim is later asserted.
+  secondary: []
+terms:
+  - covenant
+  - warranty deed
+  - present covenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

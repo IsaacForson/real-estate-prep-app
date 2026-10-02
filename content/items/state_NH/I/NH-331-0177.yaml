@@ -1,0 +1,47 @@
+id: NH-331-0177
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller's agent has a listing under contract; the seller asks the agent to continue marketing
+  the property and seek backup offers. The agent refuses, citing that they are not obligated to seek
+  additional offers while under contract. Is the agent's refusal permissible under RSA
+  331-A:25-b(b)(1)?
+options:
+  - No, because the agent must seek offers unless the seller objects in writing.
+  - Yes, but only if the seller agrees to pay an additional commission for the extra work.
+  - No, because the agent must seek additional offers to protect the seller's interests.
+  - Yes, because the licensee is not obligated unless the brokerage agreement provides otherwise.
+key: D
+explanation: The key is correct because RSA 331-A:25-b(b)(1) states that a licensee is not obligated
+  to seek additional offers while the property is under contract unless the brokerage agreement
+  provides otherwise. Since no such agreement term is mentioned, the agent’s refusal is permissible.
+  The most tempting distractor, 'No, because the agent must seek additional offers to protect the
+  seller's interests,' incorrectly ignores the statutory exception.
+citation:
+  source: "### N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter
+    331-A — New Hampshire Real Estate Practice Act, official General Court page read via Internet
+    Archive capture of 2025-07-09 because gc.nh.gov returns 403 to scripts Section 331-A:25-b(b)(1)"
+  url: null
+  quoted_text: Seeking a sale, lease, rent, or exchange at the price and terms stated in the brokerage
+    agreement or a price and terms acceptable to the seller or landlord except that the licensee is
+    not obligated to seek additional offers to purchase the real estate while the real estate is
+    subject to a contract of sale unless the brokerage agreement so provides.
+  secondary: []
+terms:
+  - offer
+  - contract
+  - brokerage agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,42 @@
+id: CO-2-0113
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker passes the real estate examination on June 1, 2024, but does not submit the
+  application for licensure until June 15, 2025. What is the result under Colorado law?
+options:
+  - The application is accepted with a late fee and must be processed.
+  - The examination is automatically cancelled and the passing score is terminated.
+  - The broker must retake only the national portion of the examination.
+  - The broker may still be licensed if they pay a penalty to the commission.
+key: B
+explanation: The statute provides that failure to file the appropriate broker’s application within
+  one year of passing the examination automatically cancels the examination and terminates all
+  rights to a passing score. Since the application was filed after one year, the examination is
+  cancelled and the passing score terminated.
+citation:
+  source: Colo. Rev. Stat. § 12-10-212, C.R.S. License fees – partnership, limited liability company,
+    and corporation licenses – rules. (2)
+  url: null
+  quoted_text: Failure by the person taking an examination to file the appropriate broker’s
+    application within one year of the date the person passed the examination will automatically
+    cancel the examination, and all rights to a passing score will be terminated.
+  secondary: []
+terms:
+  - examination
+  - application
+  - passing score
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

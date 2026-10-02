@@ -1,0 +1,42 @@
+id: FL-475-0350
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida Statute 475.43, which of the following is excluded from the presumption that a
+  party is acting as a real estate broker?
+options:
+  - A lease agreement for residential property.
+  - A sales associate's commission agreement.
+  - A mortgage loan secured by real estate.
+  - An irrevocable gift of real property.
+key: D
+explanation: The statute explicitly states that the presumption does not apply to irrevocable gifts,
+  unconditional contracts to purchase, or options based on substantial consideration actually paid.
+  A lease agreement does not fall under this exemption, so the presumption would still apply if the
+  party lacks title.
+citation:
+  source: Fla. Stat. § 475.43
+  url: null
+  quoted_text: however, this section shall not apply to irrevocable gifts, to unconditional contracts
+    to purchase, or to options based upon a substantial consideration actually paid and not subject
+    to any agreements to return or right of return reserved.
+  secondary: []
+terms:
+  - presumption
+  - exemption
+  - gift
+  - contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

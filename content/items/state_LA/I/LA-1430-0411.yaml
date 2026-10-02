@@ -1,0 +1,42 @@
+id: LA-1430-0411
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee delivers the mold informational pamphlet to a buyer two days after the parties sign
+  a purchase agreement. Under Louisiana Real Estate License Law, is the licensee in compliance with
+  the delivery timing requirement?
+options:
+  - Yes, as long as the buyer acknowledges receipt of the pamphlet.
+  - No, unless the licensee also provides a separate mold disclosure.
+  - Yes, because delivery within a reasonable time after contract entry is permitted.
+  - No, because delivery must occur at or before the contract is entered into.
+key: D
+explanation: The rule requires delivery at or before the time the contract is entered into;
+  delivering two days after violates this requirement. The statute does not allow a grace period
+  after entry, nor does buyer acknowledgment cure the timing defect.
+citation:
+  source: La. R.S. 37:1430–1470 (Louisiana Real Estate License Law) — Louisiana Real Estate License
+    Law, La. R.S. Title 37, Chapter 17 (LREC compilation, Aug. 2026) § 1470(A)(2)
+  url: null
+  quoted_text: If the licensee delivers the mold informational pamphlet to the buyer, he shall do so
+    at or before the time a lease, rental agreement, or contract for sale is entered into by the
+    parties.
+  secondary: []
+terms:
+  - delivery timing
+  - contract entry
+  - mold pamphlet
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

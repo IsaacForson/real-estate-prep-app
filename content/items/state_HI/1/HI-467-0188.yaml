@@ -1,0 +1,41 @@
+id: HI-467-0188
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wants to pay a cooperating broker’s salesperson directly for bringing a buyer to a
+  transaction. What must the broker do under Haw. Admin. Rules § 16-99-3(k)?
+options:
+  - Withhold payment until the transaction closes
+  - Pay the salesperson only if the cooperating broker agrees in writing
+  - Pay the salesperson directly to avoid delay in compensation
+  - Pay the cooperating brokerage firm, which will then compensate its salesperson
+key: D
+explanation: The rule prohibits compensating a licensee of another brokerage firm without paying
+  directly to that licensee's brokerage firm. Therefore, the broker must pay the cooperating
+  brokerage firm, which will then compensate its salesperson. Paying the salesperson directly
+  violates the requirement to route payment through the brokerage firm.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(k)
+  url: null
+  quoted_text: The brokerage firm shall not compensate a licensee of another brokerage firm in
+    connection with a real estate transaction without paying directly or causing the payment to be
+    made directly to the other brokerage firm.
+  secondary: []
+terms:
+  - compensation
+  - brokerage
+  - cooperating
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

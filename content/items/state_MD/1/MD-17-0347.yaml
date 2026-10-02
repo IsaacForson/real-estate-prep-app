@@ -1,0 +1,43 @@
+id: MD-17-0347
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner who works as a teacher rents out their spare room to a tenant and handles all
+  leasing activities themselves. Under Maryland law, does the homeowner need a real estate license
+  for this activity?
+options:
+  - The exemption that applies only to owners who lease their own property
+  - The requirement that a license is needed unless the owner hires a property manager
+  - The exemption for an owner managing their own property when not a real estate broker
+  - The requirement that any leasing or rental activity necessitates a real estate license
+key: C
+explanation: Section 17-102(5) exempts an owner or lessor managing, leasing, or selling real estate
+  unless their primary business is providing real estate brokerage services. The homeowner is an
+  owner managing their own property and their primary business is teaching, not brokerage, so no
+  license is required. The other options either impose a license requirement, add unnecessary
+  conditions, or incorrectly limit the exemption.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. § 17-102(5)
+  url: null
+  quoted_text: (5) an owner or lessor of any real estate while managing, leasing, or selling the real
+    estate, unless the primary business of the owner or lessor is providing real estate brokerage
+    services;
+  secondary: []
+terms:
+  - owner
+  - exemption
+  - primary business
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

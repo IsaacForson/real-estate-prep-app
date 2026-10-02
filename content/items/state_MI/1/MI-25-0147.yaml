@@ -1,0 +1,41 @@
+id: MI-25-0147
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual submits a request for a preliminary determination on a department‑provided form,
+  identifies the license they seek, and includes a detailed description of their criminal
+  proceedings, but forgets to include the required nonrefundable fee. According to MCL 339.202a,
+  what is the likely outcome?
+options:
+  - The request will be processed and a determination issued
+  - The request will be returned for correction
+  - The request will be denied as incomplete
+  - The request will be considered but the fee waived
+key: C
+explanation: MCL 339.202a(2)(a)(iv) requires that a request for a preliminary determination include
+  the nonrefundable fee. Because the fee is missing, the request does not meet all required
+  elements, so the department will deny it as incomplete. The option suggesting the request will be
+  returned for correction is not supported by the text, which does not provide for correction of a
+  missing fee.
+citation:
+  source: Mich. Comp. Laws § 339.202a(2)(a)(iv)
+  url: null
+  quoted_text: Includes the nonrefundable fee required by the department.
+  secondary: []
+terms:
+  - preliminary determination
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

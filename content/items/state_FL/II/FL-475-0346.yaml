@@ -1,0 +1,41 @@
+id: FL-475-0346
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has completed 180 classroom hours of approved qualifying education courses,
+  inclusive of examination, and wishes to become a certified residential appraiser. Does the
+  applicant meet the education requirement under Florida Statute 475.617(2)(b)?
+options:
+  - Yes, because 180 classroom hours satisfies the minimum education requirement
+  - No, because the applicant needs at least 200 classroom hours of approved qualifying education
+  - No, because the applicant has not completed the required 15‑hour USPAP course
+  - Yes, because distance learning hours can be substituted for the deficient classroom hours
+key: B
+explanation: The statute mandates at least 200 classroom hours inclusive of examination, including a
+  15‑hour USPAP course; 180 hours fails to meet the hourly threshold.
+citation:
+  source: Fla. Stat. § 475.617(2)(b)
+  url: null
+  quoted_text: Has successfully completed at least 200 classroom hours, inclusive of examination, of
+    approved qualifying education courses in subjects related to real estate appraisal, which must
+    include a 15‑hour National Uniform Standards of Professional Appraisal Practice course, or its
+    equivalent, as established by rule of the board
+  secondary: []
+terms:
+  - education
+  - residential appraiser
+  - classroom hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

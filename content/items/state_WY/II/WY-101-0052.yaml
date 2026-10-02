@@ -1,0 +1,46 @@
+id: WY-101-0052
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A resident manager who lives on-site and leases apartments for the owner but does **not**
+  hold a real estate license is:"
+options:
+  - The resident manager must obtain a salesperson license
+  - The resident manager is exempt only if they hold a management certificate
+  - The resident manager must obtain a broker license
+  - The resident manager is exempt from licensing requirements
+key: D
+explanation: Under § 33-28-101(vi), any person acting as a resident manager for the owner who
+  resides on the premises and is engaged in leasing real estate in connection with employment is
+  exempt from licensing unless that individual is a licensee. Since the manager is unlicensed, the
+  exemption applies. The option stating that the resident manager must obtain a salesperson license
+  is incorrect because the statute provides an exemption for unlicensed resident managers meeting
+  those conditions; a salesperson license is not required.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101(vi)
+  url: null
+  quoted_text: Any person or employee acting as the resident manager for the owner or an employee
+    acting as the resident manager for a responsible broker managing an apartment building, duplex,
+    apartment complex or court, when the resident manager resides on the premises and is engaged in
+    the leasing of real estate in connection with his employment, unless that individual is a
+    licensee
+  secondary: []
+terms:
+  - resident manager
+  - licensing exemption
+  - premises
+  - leasing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,40 @@
+id: PA-9-0128
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee employed by a broker to prepare comparative market analyses for clients must hold a
+  salesperson license under the Pennsylvania Real Estate Licensing and Registration Act.
+options:
+  - Yes, because preparing comparative market analyses requires a salesperson license.
+  - No, because comparative market analysis is exempt from licensing requirements.
+  - No, because only brokers, not salespersons, may prepare comparative market analyses.
+  - Yes, but only if the analysis includes an automated valuation model.
+key: A
+explanation: The salesperson definition expressly includes performing comparative market analyses as
+  a duty that requires a license. Therefore, preparing such analyses necessitates a salesperson
+  license. The distractor suggesting the analysis must include an automated valuation model is
+  incorrect because the definition explicitly excludes automated valuation models from the
+  salesperson's scope.
+citation:
+  source: 63 P.S. § 455.201
+  url: null
+  quoted_text: Any person employed by a licensed real estate broker to perform comparative market
+    analyses or to list for sale, sell or offer for sale
+  secondary: []
+terms:
+  - salesperson
+  - comparative market analysis
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

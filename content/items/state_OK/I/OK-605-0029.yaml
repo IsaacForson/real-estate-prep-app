@@ -1,0 +1,45 @@
+id: OK-605-0029
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A sales associate receives a referral fee from a mortgage lender for directing clients to
+  that lender. Under the Oklahoma Real Estate License Code, this action most likely constitutes:"
+options:
+  - Accepting a bonus from the broker for exceeding sales targets
+  - Accepting a salary from the broker for performing associate acts
+  - Accepting a gift of nominal value from a client
+  - Accepting a commission from a mortgage lender for referring clients
+key: D
+explanation: The Code prohibits a real estate associate from accepting a commission or other
+  valuable consideration for performing associate acts except from the broker with whom the
+  associate is associated (Okla. Stat. tit. 59 § 858-312). Receiving a referral fee from a mortgage
+  lender is a commission from someone other than the broker, so it is not permitted. Accepting a
+  bonus from the broker for exceeding sales targets and accepting a salary from the broker for
+  performing associate acts are both forms of compensation from the broker, which the exception
+  allows. Accepting a gift of nominal value from a client is not a commission for associate acts and
+  therefore is not prohibited.
+citation:
+  source: Okla. Stat. tit. 59 § 858-312
+  url: null
+  quoted_text: Accepting a commission or other valuable consideration as a real estate associate for
+    the performance of any acts as an associate, except from the real estate broker with whom the
+    associate is associated
+  secondary: []
+terms:
+  - commission
+  - associate
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

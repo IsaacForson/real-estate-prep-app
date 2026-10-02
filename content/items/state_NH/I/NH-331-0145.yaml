@@ -1,0 +1,41 @@
+id: NH-331-0145
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following individuals is eligible to serve as the licensed real estate
+  salesperson member of the New Hampshire Real Estate Commission?
+options:
+  - Licensed real estate broker
+  - Licensed real estate salesperson
+  - Public member with no real estate
+  - Attorney licensed in New Hampshire
+key: B
+explanation: RSA 331-A:5 II(b) specifies that the commission shall include one licensed real estate
+  salesperson. Therefore, only an active salesperson qualifies for that seat. A broker, attorney, or
+  public member with prior real estate experience does not meet the statutory requirement for the
+  salesperson position.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 5 II(b)
+  url: null
+  quoted_text: (b) One licensed real estate salesperson.
+  secondary: []
+terms:
+  - commission
+  - salesperson
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

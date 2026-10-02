@@ -1,0 +1,39 @@
+id: SD-21A-0153
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The investigative committee dismisses a complaint on March 10. The commission's next scheduled
+  meeting is April 5. What is the latest date by which the dismissal must be reported to the agency?
+options:
+  - April 5
+  - April 9
+  - April 15
+  - May 5
+key: A
+explanation: The law requires reporting at the next scheduled meeting or within thirty days,
+  whichever is shorter. April 5 (the next meeting) precedes April 9 (thirty days after dismissal),
+  so the latest permissible date is April 5.
+citation:
+  source: S.D. Codified Laws § 36-1C-4
+  url: null
+  quoted_text: Any dismissal by the investigative committee must be reported to the agency at its next
+    scheduled meeting or within thirty days, whichever is shorter.
+  secondary: []
+terms:
+  - investigative committee
+  - dismissal
+  - reporting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

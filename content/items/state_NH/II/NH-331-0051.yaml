@@ -1,0 +1,46 @@
+id: NH-331-0051
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant receives notice from the New Hampshire Real Estate Commission on May 10 that the
+  check used to pay the examination fee has been dishonored. According to Rea 301.04(b), by what
+  date must the applicant remit the required original or renewal fee plus any applicable
+  dishonored‑check fee to avoid further penalty?
+options:
+  - May 17
+  - May 20
+  - May 24
+  - May 31
+key: C
+explanation: The rule requires remittance within 14 days after receiving notice of a dishonored
+  check; counting from May 11 as day 1, the fourteenth day is May 24. Remitting by May 17 would be
+  too early and does not meet the full 14‑day window.
+citation:
+  source: N.H. Code Admin. R. Rea 100–799 (Real Estate Commission rules) — N.H. Code of Administrative
+    Rules, Rea 100–700 (Real Estate Commission), official General Court rules page read via Internet
+    Archive capture of 2022-06-30 (the current rea100-1000.html has no archive capture and
+    gencourt.state.nh.us returns 403) — re-fetch live when reachable — § 301.04
+  url: null
+  quoted_text: Any applicant or licensee who has paid a fee or fine to the commission with a check,
+    draft or money order that has subsequently been dishonored, shall within 14 days after receiving
+    notice from the commission that said check, draft or money order has been dishonored, remit to
+    the commission the required original or renewal fee plus the fee prescribed by Rea 301.02(g) for
+    a dishonored check, draft or money order.
+  secondary: []
+terms:
+  - dishonored check
+  - remittance period
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

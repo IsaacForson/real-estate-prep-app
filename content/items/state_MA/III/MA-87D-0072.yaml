@@ -1,0 +1,55 @@
+id: MA-87D-0072
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under M.G.L. c. 112, § 87PP, a corporation is considered a 'non-resident' if it:"
+options:
+  - Is organized under the laws of another state and maintains a usual place of business outside the
+    commonwealth.
+  - Is organized under the laws of the commonwealth and does not maintain a usual place of business
+    within the commonwealth.
+  - Is organized under the laws of another state and does not maintain a usual place of business
+    within the commonwealth.
+  - Is organized under the laws of another state and maintains a usual place of business within the
+    commonwealth.
+key: C
+explanation: M.G.L. c. 112, § 87PP defines a 'non-resident' corporation as one organized under the
+  laws of another state that does not maintain a usual place of business within the commonwealth.
+  The option stating that the corporation is organized under the laws of another state and does not
+  maintain a usual place of business within the commonwealth is correct. The option suggesting the
+  corporation maintains a usual place of business outside the commonwealth is incorrect because the
+  statute specifically requires the absence of a usual place of business *within* the commonwealth,
+  not merely outside it. The option claiming the corporation is organized under the laws of the
+  commonwealth is incorrect because a corporation organized in Massachusetts is not a non-resident
+  under this definition. Finally, the option stating the corporation maintains a usual place of
+  business within the commonwealth is incorrect because maintaining such a place of business within
+  the state disqualifies the corporation from being classified as a non-resident.
+citation:
+  source: "### M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87PP"
+  url: null
+  quoted_text: to a corporation, society, association or partnership, organized, formed or existing
+    under the laws of another state and which does not maintain a usual place of business within the
+    commonwealth.
+  secondary: []
+terms:
+  - non-resident
+  - corporation
+  - usual place of business
+  - laws of another state
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

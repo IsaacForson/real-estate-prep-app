@@ -1,0 +1,40 @@
+id: TN-1973-0253
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant was denied licensure by the Tennessee Real Estate Commission on March 1, 2025.
+  According to Tenn. Comp. R. & Regs. 1260-01-.01(5)(d), what is the earliest date the applicant may
+  request reconsideration?
+options:
+  - March 1, 2026
+  - September 1, 2025
+  - March 1, 2024
+  - September 1, 2026
+key: B
+explanation: The rule bars reconsideration for six months after a denial; adding six months to March
+  1, 2025 gives September 1, 2025 as the earliest permissible date. March 1, 2026 would be twelve
+  months, which is too long.
+citation:
+  source: Tenn. Comp. R. & Regs. 1260-01-.01(5)(d)
+  url: null
+  quoted_text: An applicant who appears before the Commission requesting licensure and who is denied
+    will not be eligible for reconsideration for six (6) months from the date of denial.
+  secondary: []
+terms:
+  - reconsideration
+  - denial
+  - date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

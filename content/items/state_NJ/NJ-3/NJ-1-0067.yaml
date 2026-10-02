@@ -1,0 +1,59 @@
+id: NJ-1-0067
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner owns 6 acres of land that has been used to grow vegetables for sale for the past
+  three years. The landowner applies for farmland assessment under the Farmland Assessment Act.
+  According to N.J. Stat. Ann. § 54:4-23.2, what is the correct assessment value for this land?
+options:
+  - The land's value for agricultural or horticultural use.
+  - The land's value based on comparable farmland sales.
+  - The land's market value for residential development.
+  - The land's value determined by the local assessor's office.
+key: A
+explanation: Under N.J. Stat. Ann. § 54:4-23.2, land not less than 5 acres in area, actively devoted
+  to agricultural or horticultural use for at least two successive years, shall be assessed at its
+  value for agricultural or horticultural use upon proper application. The land is 6 acres and has
+  been used for vegetables for sale for the past three years, satisfying the acreage, use, and
+  duration requirements. Therefore its assessment must reflect its agricultural or horticultural
+  value. The distractor suggesting value based on comparable farmland sales is incorrect because the
+  statute ties assessment to the land's agricultural use value, not to market sales of similar
+  farmland.
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 — New Jersey Statutes Title 54, Chapter 4 — Taxation of Real
+    and Personal Property (N.J.S.A. 54:4-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 54:4-23.2
+  url: null
+  quoted_text: For general property tax purposes, the value of land, not less than 5 acres  in area,
+    which is actively devoted to agricultural or horticultural use and  which has been so devoted
+    for at least the 2 successive years immediately preceding the tax year in issue, shall, on
+    application of the owner, and approval thereof as hereinafter provided, be that value which such
+    land has for  agricultural or horticultural use.
+  secondary: []
+math:
+  worked_solution: The land is 6 acres, which is ≥5 acres required. It has been used for vegetables
+    for sale for the past three years, which is ≥2 successive years required. Therefore the land
+    qualifies for farmland assessment and must be assessed at its value for agricultural or
+    horticultural use.
+  formulas:
+    - "Acreage requirement: acres ≥ 5"
+    - "Duration requirement: years ≥ 2"
+  onscreen_calculator_only: false
+terms:
+  - farmland assessment
+  - agricultural use
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

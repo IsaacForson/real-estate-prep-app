@@ -1,0 +1,47 @@
+id: AL-27-0017
+jurisdiction: AL
+bank: state_AL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson is sued for misrepresentation in a residential sale and the court awards a
+  judgment of $40,000 against the salesperson. No other claims arise from that transaction. What is
+  the maximum amount the Recovery Fund may pay to satisfy this judgment?
+options:
+  - Forty thousand dollars
+  - Fifty thousand dollars
+  - Twenty-five thousand dollars
+  - Thirty thousand dollars
+key: C
+explanation: Although the judgment is $40,000, Ala. Code § 34-27-31(b)(3) limits the Recovery Fund’s
+  payout for all claims arising from the same transaction to $25,000 in the aggregate. Because only
+  one claimant exists, the fund cannot pay more than $25,000. The $40,000 answer mistakenly uses the
+  judgment amount, while $50,000 incorrectly applies a per‑person limit that does not exist here.
+citation:
+  source: Ala. Code § 34-27-31(b)(3)
+  url: null
+  quoted_text: (3) Payments for claims arising out of the same transaction shall not exceed
+    twenty-five thousand dollars ($25,000) in the aggregate, regardless of the number of claimants.
+  secondary: []
+math:
+  worked_solution: 1. Judgment amount = $40,000. 2. Statutory limit per transaction from Ala. Code §
+    34-27-31(b)(3) = $25,000. 3. Maximum Recovery Fund payment = min(judgment amount, statutory
+    limit) = min($40,000, $25,000) = $25,000.
+  formulas:
+    - Maximum payment = min(Judgment amount, Statutory limit per transaction)
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - transaction limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: CA-4-0109
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A mortgagee records a notice of default on Monday, April 1, 2025. Assuming no holidays, what
+  is the latest day by which the mortgagee must mail a copy of the notice to each person who filed a
+  recorded request for copies, under Cal. Civ. Code § 2924b(b)(1)?
+options:
+  - April 12, 2025
+  - April 8, 2025
+  - April 15, 2025
+  - April 5, 2025
+key: A
+explanation: The rule requires mailing within 10 business days after the notice of default is
+  recorded; counting from Monday April 1 gives a deadline of Friday April 12. The April 8 distractor
+  reflects only one week (5 business days) and is incorrect.
+citation:
+  source: Cal. Civ. Code §§ 2920–2944.10 — Cal. Civil Code - ARTICLE 1. Mortgages in General
+    2920-2944.10 § 2924b(b)(1)
+  url: null
+  quoted_text: (1) Within 10 business days following recordation of the notice of default, deposit or
+    cause to be deposited in the United States mail an envelope, sent by registered or certified
+    mail with postage prepaid, containing a copy of the notice with the recording date shown
+    thereon, addressed to each person whose name and address are set forth in a duly recorded
+    request therefor
+  secondary: []
+terms:
+  - notice of default
+  - business days
+  - mailing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

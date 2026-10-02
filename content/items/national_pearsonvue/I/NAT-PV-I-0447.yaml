@@ -1,0 +1,38 @@
+id: NAT-PV-I-0447
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: Which lien is both general and involuntary?
+options:
+  - Mortgage lien
+  - Property tax lien
+  - Judgment lien
+  - Mechanic's lien
+key: C
+explanation: A judgment lien is general because it can attach to any real property the debtor owns
+  in the county, and it is involuntary because it arises automatically when a money judgment is
+  recorded or docketed, without the debtor's consent.
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: "Judgment lien: general, involuntary, arising when a money judgment is recorded or
+    docketed in a county."
+  secondary: []
+terms:
+  - judgment lien
+  - general
+  - involuntary
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

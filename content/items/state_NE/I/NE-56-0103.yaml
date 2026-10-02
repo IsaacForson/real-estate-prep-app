@@ -1,0 +1,45 @@
+id: NE-56-0103
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the oral argument in a declaratory order proceeding is scheduled for June 15, what is the
+  latest date the Agency may provide notice of the proceeding to the parties?
+options:
+  - June 7
+  - June 9
+  - June 8
+  - June 10
+key: C
+explanation: The Agency must provide notice not less than seven (7) days in advance of the scheduled
+  date. Seven days before June 15 is June 8, which is the latest permissible notice date. June 7 is
+  earlier than required, while June 9 and June 10 would be less than seven days before the argument.
+citation:
+  source: 305 Neb. Admin. Code — Title 305 NREC Rules of Practice and Procedure — complaints,
+    investigations, hearings, declaratory orders, appeals 007.01
+  url: null
+  quoted_text: The Agency shall provide each of the parties with notice of the proceeding not less
+    than seven (7) days in advance of the scheduled date.
+  secondary: []
+math:
+  worked_solution: "Scheduled date: June 15. Subtract 7 days: June 15 - 7 days = June 8."
+  formulas:
+    - Result = ScheduledDate - NoticeDays
+  onscreen_calculator_only: false
+terms:
+  - oral argument
+  - notice
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,52 @@
+id: AZ-20-0055
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IX
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits $3,500 of personal money into the trust fund account to avoid a monthly
+  service fee for insufficient minimum balance. No parties to any transaction have objected. Is this
+  action permissible?
+options:
+  - Yes, because the broker may deposit personal monies of not more than $5,000 to keep the account
+    open or to avoid charges for an insufficient minimum balance
+  - Yes, but only if the broker provides prior written notification of the off-site storage location
+    for the trust account records
+  - No, because personal monies may only be deposited if the commissioner has adopted rules allowing
+    commingling
+  - No, because any deposit of personal monies into a trust fund account constitutes commingling and
+    is prohibited
+key: A
+explanation: Under A.R.S. § 32-2151(C)(2), depositing up to $5,000 of personal money into a trust
+  account to keep it open or avoid minimum‑balance fees is not considered commingling. Since the
+  broker deposited $3,500, which is below the $5,000 limit, the action is permissible.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151(C)(2)
+  url: null
+  quoted_text: For the purposes of this paragraph, it is not commingling if a broker deposits personal
+    monies of not more than $5,000 to keep the account open or to avoid charges for an insufficient
+    minimum balance.
+  secondary: []
+math:
+  worked_solution: "The broker deposited $3,500. The statute allows up to $5,000. Compare: $3,500 ≤
+    $5,000, so the deposit is within the permissible limit."
+  formulas:
+    - Deposit ≤ $5,000 limit
+  onscreen_calculator_only: false
+terms:
+  - commingling
+  - personal monies
+  - trust fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

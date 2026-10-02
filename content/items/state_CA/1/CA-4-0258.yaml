@@ -1,0 +1,39 @@
+id: CA-4-0258
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A prospective purchaser executes an offer to purchase an interest in an undivided-interest
+  subdivision on April 5, 2024. According to Cal. Bus. & Prof. Code § 11000.2(a), by what date and
+  time must the purchaser exercise the right of rescission to be valid?
+options:
+  - April 8, 2024 at 11:59 p.m.
+  - April 9, 2024 at 11:59 p.m.
+  - April 6, 2024 at 11:59 p.m.
+  - April 7, 2024 at 11:59 p.m.
+key: A
+explanation: The right of rescission lasts until midnight of the third calendar day after the offer
+  date. Counting April 6 as day 1, April 7 as day 2, and April 8 as day 3 makes the deadline
+  midnight of April 8. Choosing April 7 incorrectly treats the second day as the deadline.
+citation:
+  source: Cal. Bus. & Prof. Code § 11000.2(a)
+  url: null
+  quoted_text: until midnight of the third calendar day following the day on which the prospective
+    purchaser executed the offer to purchase
+  secondary: []
+terms:
+  - rescission
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

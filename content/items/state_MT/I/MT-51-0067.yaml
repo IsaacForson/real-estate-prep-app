@@ -1,0 +1,49 @@
+id: MT-51-0067
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Board of Realty Regulation proposes a new license renewal fee that would generate revenue
+  exceeding the actual cost of processing renewals by 20%. Based on Montana statute, is this fee
+  permissible?
+options:
+  - The fee is permissible as long as the fee is approved by the legislature
+  - The fee is not permissible because fees must be reasonably related to the cost incurred in
+    regulating the industry
+  - The fee is not permissible because fees must be lower than the cost to encourage compliance
+  - The fee is permissible because the board may set any fee it deems necessary
+key: B
+explanation: Under 37-51-207, any fee adopted by the board must be reasonably related to the cost of
+  regulating the industry; a fee that exceeds cost by 20% violates this requirement. The distractor
+  claiming the board may set any fee it deems necessary ignores the statutory limitation tying fees
+  to regulatory costs.
+citation:
+  source: Mont. Code Ann. § 37-51-207
+  url: null
+  quoted_text: The fees charged must be reasonably related to the cost incurred in regulating the real
+    estate industry.
+  secondary: []
+math:
+  worked_solution: Let C = cost of processing renewals. The proposed fee generates revenue that
+    exceeds C by 20%. Revenue = C + (20% of C) = C × (1 + 0.20) = 1.20C. The excess amount = Revenue
+    – C = 0.20C, which is 20% above cost.
+  formulas:
+    - "Percentage increase: New Value = Original Value × (1 + percent/100)"
+    - Excess amount = Original Value × (percent/100)
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - cost
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

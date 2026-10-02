@@ -1,0 +1,47 @@
+id: TX-1101-0097
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder stops using an alternate name in advertising. According to TREC rule, what
+  must the license holder do regarding the Commission?
+options:
+  - Notify the Commission within 10 days after stopping use of the alternate name.
+  - Notify the Commission immediately upon stopping use of the alternate name.
+  - Submit a new application for the alternate name to the Commission within 30 days.
+  - No notification is required if the alternate name was not previously registered.
+key: A
+explanation: Section §535.154(b)(3) requires a license holder to notify the Commission and their
+  sponsoring broker not later than the tenth day after the date the license holder stops using an
+  alternate name. Stating that notice must be given immediately is incorrect; requiring a new
+  application within thirty days is incorrect; and claiming that no notification is needed if the
+  alternate name was never registered is incorrect because notice is required irrespective of prior
+  registration status.
+citation:
+  source: "### 22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions
+    (19 rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92,
+    .121, .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State
+    TAC viewer, rule PDFs generated live — § 535.154"
+  url: null
+  quoted_text: A license holder must notify the Commission using a process acceptable to the
+    Commission, and their sponsoring broker, not later than the 10th day after the date the license
+    holder stops using an alternate name.
+  secondary: []
+terms:
+  - alternate name
+  - notification
+  - Commission
+  - ten days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

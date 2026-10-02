@@ -1,0 +1,43 @@
+id: NY-443-0364
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee was active as an associate broker for 24 months five years ago and has been
+  inactive since. Does this licensee meet the experience requirement to be appointed as an office
+  manager under NY Real Property Law §440(6)?
+options:
+  - Yes, because the licensee has 24 months of active experience.
+  - No, because the licensee has less than 24 months of active experience.
+  - Yes, because the licensee has at least two years of active experience.
+  - No, because the experience must be within the last four years.
+key: D
+explanation: The rule requires the active experience to occur within the four‑year period preceding
+  appointment; experience from five years ago does not satisfy this condition. Therefore the
+  licensee does not qualify. The distractor “Yes, because the licensee has 24 months of active
+  experience” is incorrect because, although the amount of experience meets the minimum, it is not
+  recent enough to fulfill the recency requirement.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — §
+    440(6)
+  url: null
+  quoted_text: An associate real estate broker shall be required to have been active as a licensed
+    associate broker for at least two of the four years preceding appointment as an office manager.
+  secondary: []
+terms:
+  - associate broker
+  - office manager
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

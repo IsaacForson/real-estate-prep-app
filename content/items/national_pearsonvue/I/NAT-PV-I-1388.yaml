@@ -1,0 +1,40 @@
+id: NAT-PV-I-1388
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a landowner divides a parcel and one resulting lot has no access to a public road, what
+  type of easement may be implied by law?
+options:
+  - Easement by necessity
+  - Appurtenant easement
+  - Easement by prescription
+  - Easement in gross
+key: A
+explanation: The statute states that when a division leaves one part landlocked, the law implies an
+  easement of access over the part that keeps road access. This defines an easement by necessity. An
+  easement by prescription requires open, notorious, and continuous use for the statutory period,
+  which is not present in the scenario.
+citation:
+  source: REP Ref. Property & Land Use § 7.3
+  url: null
+  quoted_text: "- Necessity. When a division leaves one part landlocked, the law implies an easement
+    of access over the part that keeps road access."
+  secondary: []
+terms:
+  - easement
+  - necessity
+  - landlocked
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

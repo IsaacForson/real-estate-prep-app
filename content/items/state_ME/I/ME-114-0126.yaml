@@ -1,0 +1,44 @@
+id: ME-114-0126
+jurisdiction: ME
+bank: state_ME
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A transaction broker learns of a leaky roof during a showing and does not inform the buyer.
+  What must the transaction broker do under Maine law?
+options:
+  - Disclosing the defect to the buyer promptly
+  - Conducting an inspection to verify the defect
+  - Promoting the buyer's interest by noting the defect
+  - Withholding information about the defect
+key: A
+explanation: Under 32 M.R.S. § 13283(2)(B), a transaction broker must disclose in a timely manner
+  all material defects of which they have actual notice or knowledge. Therefore, the broker must
+  disclose the leaky roof to the buyer. Conducting an inspection to verify the defect is prohibited
+  by § 13283(3)(A). Promoting the buyer's interest by noting the defect violates the prohibition
+  against promoting a party's interest under § 13283(3)(C). Withholding information about the defect
+  fails to satisfy the disclosure duty.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act § 13283(2)(B)"
+  url: null
+  quoted_text: Disclose in a timely manner to a buyer to a transaction all material defects pertaining
+    to the physical condition of the property of which the transaction broker has actual notice or
+    knowledge;
+  secondary: []
+terms:
+  - transaction broker
+  - material defect
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

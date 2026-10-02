@@ -1,0 +1,39 @@
+id: ME-114-0154
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A newly appointed industry member to the Real Estate Commission has been a real estate broker
+  for 4 years. Under 32 M.R.S. § 13062(2), is this appointment valid?
+options:
+  - Yes, because they have 4 years experience
+  - No, because they need at least 5 years
+  - Yes, because they are a public member
+  - No, because they need only 3 years as broker
+key: B
+explanation: The statute requires industry members to have been a real estate broker or associate
+  broker for at least 5 years prior to appointment; with only 4 years of experience the appointment
+  does not meet this requirement. The distractor citing 3 years is incorrect because the requirement
+  is 5 years, not 3.
+citation:
+  source: 32 M.R.S. § 13062(2)
+  url: null
+  quoted_text: Each industry member of the commission must have been a real estate broker or associate
+    broker by vocation in this State for at least 5 years prior to appointment.
+  secondary: []
+terms:
+  - industry member
+  - qualification
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

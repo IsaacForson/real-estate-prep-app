@@ -1,0 +1,42 @@
+id: DE-2901-0187
+jurisdiction: DE
+bank: state_DE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage organization receives a buyer's earnest money deposit. Where must that money be
+  held under Delaware law?
+options:
+  - In a general operating account for business expenses
+  - In a state‑maintained real estate trust fund
+  - In a separate escrow account for client funds
+  - In a personal trust account for broker funds
+key: C
+explanation: Delaware law defines an escrow account as a separate account established by the
+  brokerage organization used solely for moneys in which a broker’s customers or clients have an
+  interest. Therefore, the earnest money must be placed in that escrow account. The distractor of
+  placing it in the broker's personal trust account violates the requirement that the account be
+  separate and solely for clients' interests.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II), § 2901(14)
+  url: null
+  quoted_text: “Escrow account” means a separate account established by the brokerage organization
+    used solely for moneys in which a broker’s customers or clients have an interest in accordance
+    with the terms of a real estate services transaction.
+  secondary: []
+terms:
+  - escrow account
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

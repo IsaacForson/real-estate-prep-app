@@ -1,0 +1,39 @@
+id: MA-87D-0025
+jurisdiction: MA
+bank: state_MA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under M.G.L. c. 112 § 87BBB, what effect does filing an appeal have on the Board's decision to
+  refuse renewal of a license?
+options:
+  - It stays the refusal until the court rules.
+  - It does not stay the refusal; the decision stands.
+  - It reverses the refusal as soon as it is filed.
+  - It stays the refusal only if a bond is posted.
+key: B
+explanation: The statute provides that an appeal does not operate as a stay of the board's refusal,
+  suspension, or revocation, so the decision remains effective while the appeal is pending. The
+  suggestion that the appeal automatically stays the refusal contradicts this provision.
+citation:
+  source: M.G.L. c. 112, § 87BBB
+  url: null
+  quoted_text: Such appeal from a decision of the board refusing renewal of or suspending or revoking
+    a license shall not operate as a stay of such refusal, suspension or revocation pending the
+    final determination of such appeal.
+  secondary: []
+terms:
+  - appeal
+  - stay
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,41 @@
+id: FL-475-0339
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker recorded a commission notice on January 15, 2024. The owner remains obligated to pay
+  a commission after the notice’s one‑year expiration. What is the latest date the broker may record
+  an extension notice to extend the lien for another year?
+options:
+  - November 15, 2024
+  - December 15, 2024
+  - January 14, 2025
+  - January 15, 2025
+key: C
+explanation: A commission notice expires one year after recording (January 15, 2025). An extension
+  notice must be recorded within the last 60 days before that expiration date, which runs from
+  November 16, 2024 through January 14, 2025. The latest allowable date is therefore
+  January 14, 2025. Selecting January 15 incorrectly uses the expiration date itself.
+citation:
+  source: Fla. Stat. § 475.707(3)
+  url: null
+  quoted_text: within the last 60 days before such expiration date
+  secondary: []
+terms:
+  - extension
+  - expiration
+  - notice
+  - lien
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

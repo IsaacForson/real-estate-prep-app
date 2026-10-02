@@ -1,0 +1,48 @@
+id: IL-2000-0208
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant was convicted of a felony six years ago, completed the sentence, and was released
+  from confinement five years ago. The applicant has not been convicted of any offense since.
+  According to Sec. 5-25(b)(2) of the Illinois Real Estate License Act of 2000, is the applicant
+  eligible for a license?
+options:
+  - Yes, because more than five years have passed since the conviction and no subsequent conviction
+    has occurred.
+  - No, because the applicant must wait five years after release from confinement before applying.
+  - No, because fewer than five years have elapsed since the conviction and a subsequent conviction
+    would be required.
+  - Yes, because more than three years have passed since release from confinement and the conviction
+    is non‑violent.
+key: A
+explanation: The rule requires that either five years since the felony conviction or three years
+  since release, whichever is later, have passed without a subsequent conviction. Here six years
+  have passed since conviction (later than five years since release) with no subsequent conviction,
+  so the applicant is eligible.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) § 5-25(b)(2)
+  url: null
+  quoted_text: (2) unless otherwise specified, whether 5 years since a felony conviction or 3 years
+    since release from confinement for the conviction, whichever is later, have passed without a
+    subsequent conviction;
+  secondary: []
+terms:
+  - felony
+  - conviction
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

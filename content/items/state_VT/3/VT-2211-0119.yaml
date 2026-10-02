@@ -1,0 +1,39 @@
+id: VT-2211-0119
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two members of the Vermont Real Estate Commission request a meeting. What must the Chair do
+  under 26 V.S.A. § 2253(b)?
+options:
+  - Calling the meeting
+  - Ignoring the request
+  - Delaying the meeting
+  - Referring the request
+key: A
+explanation: The rule states that meetings shall be called upon the request of any other two
+  members, so the Chair must call the meeting. Ignoring the request contradicts the mandatory
+  language of the statute.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2253(b)
+  url: null
+  quoted_text: (b) Meetings may be called by the Chair and shall be called upon the request of any
+    other two members.
+  secondary: []
+terms:
+  - meeting
+  - request
+  - chair
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

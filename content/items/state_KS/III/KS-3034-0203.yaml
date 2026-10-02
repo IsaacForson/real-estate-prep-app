@@ -1,0 +1,39 @@
+id: KS-3034-0203
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Kansas law, what is the maximum amount of money a broker may retain in a trust account
+  to pay expenses for the use and maintenance of such account?
+options:
+  - $50.00
+  - $75.00
+  - $100.00
+  - $150.00
+key: C
+explanation: The statute explicitly allows a broker to keep up to $100 in a trust account for
+  account expenses, making $100.00 correct. The $150.00 distractor exceeds this limit and is
+  therefore impermissible.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(2)
+  url: null
+  quoted_text: except that nothing herein shall prohibit a broker from having funds in an amount not
+    to exceed $100 in the broker's trust account to pay expenses for the use and maintenance of such
+    account.
+  secondary: []
+terms:
+  - trust account
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

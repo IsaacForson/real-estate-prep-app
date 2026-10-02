@@ -1,0 +1,40 @@
+id: WY-101-0078
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the chairman of the Wyoming Real Estate Commission is absent, who serves as the presiding
+  officer according to Wyo. Stat. Ann. § 33-28-105(h)?
+options:
+  - The member present who is senior in time of service
+  - The Liaison Commission Member appointed
+  - The Attorney General of the state
+  - The commission director of the agency
+key: A
+explanation: The statute provides that in the chairman's absence, the member present who is senior
+  in time of service serves as the presiding officer. The director does not automatically assume
+  this role unless they meet the seniority requirement.
+citation:
+  source: "### Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real
+    Estate License Act (Articles 1-4) — § 33-28-105(h)"
+  url: null
+  quoted_text: In the absence of the chairman, the member of the commission present who is senior in
+    time of service shall serve as the presiding officer.
+  secondary: []
+terms:
+  - chairman
+  - presiding
+  - service
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

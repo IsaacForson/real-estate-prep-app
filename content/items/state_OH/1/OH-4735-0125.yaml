@@ -1,0 +1,43 @@
+id: OH-4735-0125
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A nonresident broker is served with a lawsuit in Ohio; the superintendent receives the
+  process. According to Ohio Rev. Code ch. 4735, what must the broker do with a duplicate copy of
+  the process?
+options:
+  - The broker must immediately forward the duplicate copy by certified mail to the broker's main
+    office.
+  - The broker must file the duplicate copy with the court where the lawsuit was filed.
+  - The broker must keep the duplicate copy in the broker's file.
+  - The broker must send the duplicate copy via regular mail to the broker's main office.
+key: A
+explanation: The statute directs that a duplicate copy of any process served on the superintendent
+  must be immediately forwarded by certified mail to the licensee's main office. Filing with the
+  court or keeping the copy does not satisfy this requirement.
+citation:
+  source: Ohio Rev. Code ch. 4735 § 4735.17(B)
+  url: null
+  quoted_text: A duplicate copy of any process or pleading served on the superintendent shall be
+    immediately forwarded by certified mail to the main office of the licensee against which that
+    process or pleading is directed.
+  secondary: []
+terms:
+  - nonresident
+  - process
+  - certified mail
+  - main office
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

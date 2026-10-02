@@ -1,0 +1,40 @@
+id: NAT-PV-I-0441
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a 2017 judgment lien, a 2019 mortgage, and unpaid property taxes from 2020. If
+  the property is foreclosed in 2022, which lien is paid second from the proceeds?
+options:
+  - The property tax lien.
+  - The judgment lien.
+  - The mortgage lien.
+  - The home-equity line lien.
+key: C
+explanation: "Property tax liens rank ahead of all other liens regardless of date, so they are paid
+  first. After taxes, the remaining liens are paid in order of recording date: the 2019 mortgage is
+  senior to the 2017 judgment lien, so the mortgage is paid second."
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Foreclosure proceeds go first to the taxes, then the 2019 mortgage, then the 2022 line,
+    then the mechanic's lien (unless state law gives it an earlier effective date), and any surplus
+    to the owner.
+  secondary: []
+terms:
+  - property tax lien
+  - mortgage
+  - judgment lien
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-09

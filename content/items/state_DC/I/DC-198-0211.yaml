@@ -1,0 +1,41 @@
+id: DC-198-0211
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate broker license discloses a prior felony conviction for fraud.
+  Before the Board may consider this conviction in its licensing decision, what must the Board first
+  determine under D.C. Code § 47-2853.17?
+options:
+  - Whether the conviction is directly related to real estate brokerage
+  - Whether the applicant is otherwise qualified for the license
+  - Whether the applicant has completed any rehabilitation program
+  - Whether the conviction has been sealed or expunged
+key: B
+explanation: Under subsection (c-1)(A)(i), the Board may not inquire into or consider an applicant's
+  criminal conviction until after the applicant is found to be otherwise qualified. Therefore, the
+  Board must first determine if the applicant is otherwise qualified.
+citation:
+  source: "### D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.17"
+  url: null
+  quoted_text: (i) An applicant's criminal conviction until after the applicant is found by the board
+    to be otherwise qualified;
+  secondary: []
+terms:
+  - otherwise qualified
+  - criminal conviction
+  - licensing decision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

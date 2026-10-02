@@ -1,0 +1,47 @@
+id: DE-2901-0181
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives written notification of a temporary suspension on Monday, June 3.
+  According to § 2915(c), by what date must the licensee request an expedited hearing to be
+  considered timely?
+options:
+  - June 8
+  - June 7
+  - June 6
+  - June 5
+key: A
+explanation: The rule requires the request to be made within 5 calendar days of notification.
+  Counting five days from June 3 leads to June 8 as the final day to request. The distractors
+  represent earlier dates that would be too soon or miscount the period.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2915(c)
+  url: null
+  quoted_text: The Commission shall schedule the hearing on an expedited basis, provided that the
+    Commission receives the request within 5 calendar days from the date on which the licensee
+    received notification of the decision to temporarily suspend the license.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: June 3
+    Add 5 calendar days: June 3 + 5 days = June 8
+  formulas:
+    - deadline = notification date + 5 days
+  onscreen_calculator_only: false
+terms:
+  - expedited hearing
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,45 @@
+id: NY-443-0067
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee is preparing to list a condominium unit for sale. Under NY Real Property Law §462,
+  is the seller required to complete and sign a property condition disclosure statement?
+options:
+  - The seller is not required to provide a disclosure statement
+  - The seller must provide a disclosure statement for homes
+  - The seller is not required to provide a disclosure statement unless asked
+  - The seller must provide a disclosure statement for the buyer
+key: A
+explanation: The definition of residential property expressly excludes condominium units, so the
+  disclosure statement requirement does not apply. The statement that the seller is not required to
+  provide a disclosure statement correctly reflects this exclusion. The option suggesting the seller
+  must provide a statement for the buyer is incorrect because condos are not residential real
+  property under the statute.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462
+  url: null
+  quoted_text: but shall not refer to (a) unimproved real property upon which such dwellings are to be
+    constructed or (b) condominium units or cooperative apartments or (c) property on a homeowners’
+    association that is not owned in fee simple by the seller
+  secondary: []
+terms:
+  - residential real property
+  - condominium unit
+  - cooperative apartment
+  - disclosure statement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

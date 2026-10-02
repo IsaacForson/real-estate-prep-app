@@ -1,0 +1,54 @@
+id: CT-311-0071
+jurisdiction: CT
+bank: state_CT
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The commission collected $12,000 in fees this month. $2,000 must be paid to the Real Estate
+  Guaranty Fund and $1,000 to the University of Connecticut. How much of the fees becomes part of
+  the General Fund?
+options:
+  - $9,000
+  - $10,000
+  - $11,000
+  - $8,000
+key: A
+explanation: Under § 20-311e, the amount that goes to the General Fund equals total fees minus the
+  mandatory payments to the Guaranty Fund and the University of Connecticut. Subtracting $2,000 and
+  $1,000 from $12,000 leaves $9,000. The distractor $10,000 results from omitting the University
+  payment, while $11,000 omits the Guaranty Fund payment.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311e
+  url: null
+  quoted_text: The commission shall deposit all moneys received by it from fees in accordance with the
+    provisions of this chapter with the State Treasurer, and they shall, except as to that portion
+    thereof required to be paid over to The University of Connecticut under the provisions of
+    section 10a-125 , or that portion required to be paid to the Real Estate Guaranty Fund pursuant
+    to this chapter, become part of the General Fund.
+  secondary: []
+math:
+  worked_solution: |-
+    Total fees collected = $12,000
+    Subtract Real Estate Guaranty Fund payment: $12,000 - $2,000 = $10,000
+    Subtract University of Connecticut payment: $10,000 - $1,000 = $9,000
+    Amount to General Fund = $9,000
+  formulas:
+    - General Fund = Total Fees - Guaranty Fund Payment - University Payment
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - guaranty fund
+  - university
+  - general fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,55 @@
+id: OR-696-0045
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: During the monthly trust account reconciliation, the authorized principal broker finds that
+  the balance of the receipts and disbursements journal as of the bank statement closing date is
+  $12,500. According to the rule, what must the sum of all the balances of the individual trust
+  account ledgers as of the same date be?
+options:
+  - $0 (none)
+  - Varies?
+  - $25,000?
+  - $12,500
+key: D
+explanation: All three components of a trust‑account reconciliation—(1) the adjusted bank‑statement
+  balance, (2) the receipts and disbursements journal balance, and (3) the sum of the individual
+  trust‑account ledger balances—must be equal. Therefore, when the journal balance is $12,500, the
+  ledger‑balance total must also be $12,500. (OAR § 863‑015‑0275)
+citation:
+  source: Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) — § 863-015-0275
+  url: null
+  quoted_text: (b) The balance of the receipts and disbursements journal or check book register as of
+    the bank statement closing date; and (c) The sum of all the balances of the individual trust
+    account ledgers as of the bank statement closing date. (3) The balances of each component of the
+    reconciliation must be equal to and reconciled with each other.
+  secondary: []
+math:
+  worked_solution: |-
+    The rule requires equality of the three reconciliation components.
+    1. Journal balance = $12,500.
+    2. Ledger‑balance total must equal the journal balance.
+    3. Ledger‑balance total = $12,500.
+  formulas:
+    - Equality of reconciliation components
+  onscreen_calculator_only: false
+terms:
+  - receipts and disbursements journal
+  - individual trust account ledgers
+  - reconciliation equality
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

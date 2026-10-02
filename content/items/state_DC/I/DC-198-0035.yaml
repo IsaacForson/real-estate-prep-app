@@ -1,0 +1,39 @@
+id: DC-198-0035
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person has lived in the District for 10 months and is nominated for appointment to the Board
+  of Real Estate. Under D.C. Code § 47-2853.07(d)(1), is the person eligible?
+options:
+  - Yes, because they are a resident at the time of appointment.
+  - No, because they must have been a resident for at least one year prior to appointment.
+  - Yes, because the residency requirement only applies to consumer members.
+  - No, because they must be a licensed real estate professional.
+key: B
+explanation: The law requires Board of Real Estate members to have been District residents for at
+  least one year prior to appointment; 10 months is insufficient.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — §
+    47-2853.07(d)(1)"
+  url: null
+  quoted_text: Members of the Board of Real Estate also shall have been residents of the District for
+    at least one year prior to their appointment.
+  secondary: []
+terms:
+  - residency
+  - appointment
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

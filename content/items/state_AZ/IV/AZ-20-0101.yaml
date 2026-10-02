@@ -1,0 +1,42 @@
+id: AZ-20-0101
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee in Yavapai County is assessed a civil penalty for violating a subdivision
+  advertising rule. Who is responsible for bringing the action to recover that penalty under Ariz.
+  Rev. Stat. § 32-2160.01(B)?
+options:
+  - The county attorney of Yavapai County
+  - The attorney general of Arizona
+  - The Arizona Commissioner of Real Estate
+  - The licensee’s employing broker
+key: B
+explanation: The statute specifies that actions to recover penalties assessed under this chapter
+  shall be brought by the attorney general in the name of the state. The county attorney only
+  prosecutes violations upon request (§32-2160(A)), while the commissioner assesses penalties but
+  does not bring the recovery action.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2153 § 32-2160.01(B)
+  url: null
+  quoted_text: Actions to recover penalties assessed pursuant to this chapter shall be brought by the
+    attorney general in the name of the state in the superior court in the county in which the
+    violation occurred or in a county in which the commissioner maintains an office.
+  secondary: []
+terms:
+  - attorney general
+  - penalty recovery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

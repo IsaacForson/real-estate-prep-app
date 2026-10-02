@@ -1,0 +1,39 @@
+id: ME-114-0168
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A designated broker writes a check from the agency's real estate trust account to pay a
+  vendor. The check includes the words "Real Estate Trust Account" but does not name the agency.
+  Under 32 M.R.S. § 13178, is this check permissible?
+options:
+  - No, because the check must also name the subject agency.
+  - No, because trust account checks must be pre‑approved by the Commission.
+  - Yes, as long as the check is signed by the designated broker.
+  - Yes, because the check identifies the account as a real estate trust account.
+key: A
+explanation: The statute requires that withdrawal orders, including checks, must name the subject
+  agency and be identified as a real estate trust account. Omitting the agency name violates this
+  rule, making the check impermissible.
+citation:
+  source: 32 M.R.S. § 13178
+  url: null
+  quoted_text: The trust account and withdrawal orders, including all checks drawn on the account,
+    must name the subject agency and be identified as a real estate trust account.
+  secondary: []
+terms:
+  - trust account
+  - withdrawal order
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

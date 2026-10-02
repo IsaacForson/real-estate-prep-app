@@ -1,0 +1,44 @@
+id: MT-51-0117
+jurisdiction: MT
+bank: state_MT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate firm's professional liability policy has an annual aggregate limit of
+  $800,000. Does this policy meet the minimum annual aggregate limit required for a firm-issued
+  policy under Montana law?
+options:
+  - Meets the $1,000,000 minimum aggregate limit
+  - Falls short of the $1,000,000 minimum aggregate limit
+  - Exceeds the $1,000,000 minimum aggregate limit
+  - Matches the $300,000 minimum aggregate limit
+key: B
+explanation: Montana law requires a firm-issued professional liability policy to have a minimum
+  annual aggregate limit of $1 million. An $800,000 limit does not meet this requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-325(7)(b)
+  url: null
+  quoted_text: have a minimum annual aggregate limit of $1 million
+  secondary: []
+math:
+  worked_solution: The policy limit is $800,000. The required minimum aggregate limit is $1,000,000.
+    Since $800,000 < $1,000,000, the policy does not meet the requirement.
+  formulas:
+    - "Comparison: policy limit < required limit"
+  onscreen_calculator_only: false
+terms:
+  - annual aggregate limit
+  - firm policy
+  - minimum limit
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

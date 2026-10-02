@@ -1,0 +1,41 @@
+id: MI-25-0058
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual who teaches real estate courses at a local community college but holds no real
+  estate license wishes to be approved as an instructor for a prelicensure course. Under R
+  339.22621(1), is this individual qualified to be an instructor?
+options:
+  - The individual is not qualified because department licensure is required
+  - The individual is qualified because teaching at an accredited institution meets the requirement
+  - The individual is qualified only if they also hold a real estate law certification
+  - The individual is not qualified because a real estate license is mandatory
+key: B
+explanation: Rule R 339.22621(1)(a) lists teaching at an accredited institution of higher learning
+  as a minimum qualification for instructors, so the individual qualifies. The distractor claiming a
+  license is mandatory is wrong because the rule does not require a real estate license for
+  instructor approval.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 R § 339.22621(1)
+  url: null
+  quoted_text: "An instructor must possess at least 1 of the following minimum qualifications: (a)
+    Teaches or has taught real estate courses at an accredited institution of higher learning."
+  secondary: []
+terms:
+  - instructor
+  - qualification
+  - accredited
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

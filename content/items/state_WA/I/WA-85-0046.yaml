@@ -1,0 +1,44 @@
+id: WA-85-0046
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An appellant receives a transcript of the disciplinary hearing and an invoice for its
+  preparation costs. If the appellant fails to pay the invoice within fifteen days, what happens to
+  the appeal under RCW 18.85.401?
+options:
+  - The appeal is dismissed for nonpayment of transcript costs
+  - The appeal is stayed until payment is received and verified
+  - The appeal is automatically granted upon receipt of payment
+  - The appeal is referred to the attorney general for review
+key: A
+explanation: RCW 18.85.401 requires the appellant to pay the transcript cost within fifteen days; if
+  the cost is not paid in full within that period, the appeal is dismissed. The distractor
+  suggesting a stay is incorrect because the statute provides for dismissal, not a continuance, upon
+  nonpayment.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.401
+  url: null
+  quoted_text: The appellant is notified of the filing of the transcript and the cost thereof and
+    shall within fifteen days thereafter pay the cost of said transcript. If the cost is not paid in
+    full within fifteen days the appeal is dismissed.
+  secondary: []
+terms:
+  - transcript
+  - cost
+  - appeal
+  - payment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

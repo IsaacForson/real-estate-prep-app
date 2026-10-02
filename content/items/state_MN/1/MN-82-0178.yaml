@@ -1,0 +1,43 @@
+id: MN-82-0178
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Minnesota real estate salesperson who is the sole owner of a limited liability company
+  wishes to have the commission from a residential sale paid directly to the LLC. Under Minn. Stat.
+  § 82.70 Subd. 5, is this permissible?
+options:
+  - No, because commissions must be paid to the individual licensee.
+  - Yes, provided the salesperson is the sole owner of the LLC.
+  - Yes, but only if the broker authorizes the payment in writing.
+  - No, unless the LLC is also licensed as a real estate broker.
+key: B
+explanation: Subd. 5 allows a licensee to direct commissions to a corporation, LLC, or sole
+  proprietorship of which they are the sole owner; no broker authorization is required. The
+  statement that broker authorization is needed is not required by the statute.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.70 Subd. 5
+  url: null
+  quoted_text: A licensed real estate broker or salesperson may assign or direct that commissions or
+    other compensation earned in connection with a real estate or business opportunity transaction
+    be paid to a corporation, limited liability company, or sole proprietorship of which the
+    licensed real estate broker or salesperson is the sole owner.
+  secondary: []
+terms:
+  - sole owner
+  - LLC
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

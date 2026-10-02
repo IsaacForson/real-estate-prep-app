@@ -1,0 +1,41 @@
+id: CO-2-0128
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a subpoena from the commission to produce trust account records but
+  willfully refuses to comply. Under Colo. Rev. Stat. § 12-10-225, what is the consequence for each
+  day the licensee continues to refuse?
+options:
+  - A petty offense for each day of refusal
+  - A class 2 misdemeanor for the entire refusal
+  - A civil fine of one thousand dollars per day
+  - Automatic suspension of the broker license
+key: A
+explanation: The statute states that a willful failure to produce records required by a subpoena is
+  a petty offense, and each day of refusal constitutes a separate offense. A class 2 misdemeanor,
+  civil fine, or license suspension are not prescribed for this violation.
+citation:
+  source: Colo. Rev. Stat. § 12-10-225
+  url: null
+  quoted_text: Any person who willfully fails or neglects to appear and testify or to produce books,
+    papers, or records required by subpoena, duly served upon him or her in any matter conducted
+    under parts 2 and 5 of this article 10 commits a petty offense. Each day a person so refuses or
+    neglects constitutes a separate offense.
+  secondary: []
+terms:
+  - subpoena
+  - petty offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,41 @@
+id: NAT-PV-I-0865
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a mortgage recorded March 2021, a home‑equity line recorded July 2022, a
+  mechanic’s lien filed September 2023, and unpaid property taxes for 2024. In a foreclosure sale,
+  which lien will be paid third?
+options:
+  - the first mortgage recorded in March 2021
+  - the mechanic’s lien filed in September 2023
+  - the home‑equity line of credit
+  - the unpaid property taxes for the year 2024
+key: C
+explanation: § 8.3 provides that property‑tax liens rank ahead of all others, then liens are paid in
+  order of their recording dates. The tax lien is first, the 2021 mortgage second, the 2022
+  home‑equity line third, and the 2023 mechanic’s lien fourth. The tax lien is therefore not the
+  third lien; the home‑equity line is.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Foreclosure proceeds go first to the taxes, then the 2019 mortgage, then the 2022 line,
+    then the mechanic's lien
+  secondary: []
+terms:
+  - lien
+  - priority
+  - foreclosure
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-01
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,48 @@
+id: NY-443-0099
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate broker has agreed to purchase an investment property on behalf of a buyer client
+  and holds a 10% ownership interest in the property. According to 19 NYCRR §175.5, when must the
+  broker disclose this interest under New York regulation?
+options:
+  - Before signing the purchase contract on behalf of the client
+  - Before presenting the purchase offer to the client
+  - Before showing the property to the prospective buyer
+  - Before discussing financing terms with the lender
+key: A
+explanation: Under 19 NYCRR §175.5, a broker who holds any personal ownership interest in a property
+  must disclose that interest to all parties before buying the property for a client. Signing the
+  purchase contract on behalf of the client constitutes the act of buying, so the disclosure must
+  occur prior to that step. Merely presenting an offer or discussing financing terms does not yet
+  constitute the broker buying the property, so disclosure is not required at those points.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.5
+  url: null
+  quoted_text: Before a real estate broker buys property for a client in the ownership of which the
+    broker has an interest, he shall disclose his interest to all parties to the transaction.
+  secondary: []
+math:
+  worked_solution: No arithmetic steps are needed; the 10% ownership interest is given as contextual
+    information and does not affect the disclosure timing.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - disclosure
+  - interest
+  - timing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

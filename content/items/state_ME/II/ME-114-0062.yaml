@@ -1,0 +1,47 @@
+id: ME-114-0062
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Maine brokerage agency serves as a disclosed dual agent with proper written consent from
+  both the seller and the buyer. During negotiations, the buyer tells the affiliated licensee she
+  would pay up to $15,000 more than her current offer if necessary. Under 32 M.R.S. § 13275, the
+  dual agent:"
+options:
+  - Must withdraw from representing the buyer
+  - Must keep that information from the seller
+  - Must disclose that information to the seller
+  - May share it if the seller asks directly
+key: B
+explanation: A disclosed dual agent may share information gained from one party that is relevant to
+  the transaction, but the statute carves out specific exceptions, including the willingness or
+  ability of the buyer to pay more than has been offered. The buyer's ceiling price falls squarely
+  within that protected category, so it may not be revealed. Relevance to the transaction does not
+  override the enumerated exceptions, and a seller's request does not create consent.
+citation:
+  source: 32 M.R.S. § 13275(4)(B)
+  url: null
+  quoted_text: The willingness or ability of the buyer to pay more than has been offered
+  secondary: []
+math:
+  worked_solution: No calculation is required; the item tests knowledge of dual agency disclosure
+    rules under 32 M.R.S. § 13275(4)(B).
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - disclosed dual agent
+  - confidential information
+  - negotiating strategy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

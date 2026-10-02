@@ -1,0 +1,45 @@
+id: LA-1430-0444
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant obtains a final judgment against a licensee for fraud in a real estate transaction
+  on March 1, 2024. The claimant sends notice to the Real Estate Commission by certified mail on
+  March 15, 2024, but does not submit an application for recovery from the fund until September 1,
+  2024. Under the Louisiana Real Estate License Law, what is the consequence?
+options:
+  - The claim is eligible because notice was given within 180 days of the judgment.
+  - The claim is barred because the application was submitted after 180 days from the judgment.
+  - The claim is eligible because the claimant gave notice to the commission.
+  - The claim is barred because notice was not given within 90 days of the judgment.
+key: B
+explanation: The recovery fund bars recovery unless an application is filed within 180 days of the
+  final judgment. Here the application was filed on September 1, 2024, which is 184 days after the
+  March 1, 2024 judgment, exceeding the limit. Therefore the claim is barred. A claim that relies
+  only on having given notice is incorrect because eligibility requires an application within the
+  180‑day period, not just notice. A claim that cites a 90‑day notice requirement is incorrect
+  because the rule specifies a 180‑day period for filing an application, not a notice deadline.
+citation:
+  source: La. R.S. 37:1462.A(1)(f)
+  url: null
+  quoted_text: The right to recovery under this Subsection shall be forever barred unless application
+    is made within one hundred eighty days from the date of the final judgment of all judicial
+    proceedings, including appeals.
+  secondary: []
+terms:
+  - recovery fund
+  - judgment
+  - application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

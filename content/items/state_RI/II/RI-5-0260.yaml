@@ -1,0 +1,45 @@
+id: RI-5-0260
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson who has been licensed for 4 years and works 30 hours per week wishes
+  to become an instructor at an authorized real estate school. According to Rhode Island
+  regulations, is this person qualified?
+options:
+  - No, because the person has not attained the required five years of licensed experience.
+  - Yes, because the person can substitute equivalent qualifications under §2.29(F)(2).
+  - Yes, because the person holds a valid salesperson license and works over 25 hours per week.
+  - No, because the person must also hold a broker’s license, not just a salesperson’s license.
+key: A
+explanation: According to 230‑RICR‑30‑20‑2 § 2.29(F)(1), an instructor must (a) hold a broker or
+  salesperson license in good standing and (b) attest to at least five years of licensed experience,
+  working a minimum of twenty‑five hours per week. The salesperson has only four years of
+  experience, so the experience requirement is not satisfied and the person is not qualified. The
+  regulation does not allow substitution of other qualifications, and a broker’s license is not
+  required if the five‑year experience threshold is met.
+citation:
+  source: 230-RICR-30-20-2 § 2.29(F)(1)
+  url: null
+  quoted_text: "No person may act as an instructor of the salesperson or broker curriculum in any
+    authorized real estate school unless such person: a. Holds a real estate broker’s license or
+    salesperson’s license in good standing in this State; and b. Attests that he or she has worked
+    as a licensed real estate broker or salesperson for a minimum of five (5) years at least
+    twenty-five (25) hours per week."
+  secondary: []
+terms:
+  - instructor
+  - qualification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

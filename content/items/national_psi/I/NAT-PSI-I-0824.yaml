@@ -1,0 +1,49 @@
+id: NAT-PSI-I-0824
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property sells at foreclosure for $80,000, but the outstanding mortgage debt is $100,000.
+  Assuming the jurisdiction allows it, what may the lender seek?
+options:
+  - The lender may receive a surplus payment of $20,000.
+  - The lender may seek a deficiency judgment for $20,000.
+  - The lender may accept a deed in lieu of foreclosure.
+  - The lender may absorb the $20,000 loss.
+key: B
+explanation: If the foreclosure sale price is less than the outstanding debt, the lender may seek a
+  deficiency judgment for the difference where the jurisdiction allows it. The option stating the
+  lender may absorb the loss is incorrect because the lender is not required to absorb the
+  shortfall; the option stating the lender may receive a surplus payment is incorrect because a
+  surplus occurs only when the sale price exceeds the debt; and the option stating the lender may
+  accept a deed in lieu of foreclosure describes an alternative remedy that is not applicable when a
+  deficiency exists.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 8.5
+  url: null
+  quoted_text: If the price is less than the debt the lender may seek a deficiency judgment where
+    allowed; a surplus goes to junior lienholders and then the borrower.
+  secondary: []
+math:
+  worked_solution: "Subtract the foreclosure sale price from the outstanding mortgage debt: $100,000 -
+    $80,000 = $20,000."
+  formulas:
+    - Deficiency = Outstanding Debt - Foreclosure Sale Price
+  onscreen_calculator_only: false
+terms:
+  - deficiency judgment
+  - foreclosure
+  - surplus
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

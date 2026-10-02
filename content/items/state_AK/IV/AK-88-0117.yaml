@@ -1,0 +1,41 @@
+id: AK-88-0117
+jurisdiction: AK
+bank: state_AK
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Real Estate Commission has seven members. At a meeting, four members attend, but they all
+  represent only the First Judicial District. Does this meeting satisfy the quorum requirements
+  under AS 08.88.051(b)?
+options:
+  - Yes, because the majority requirement is satisfied.
+  - Yes, because at least two judicial districts are represented.
+  - No, because only one judicial district is represented.
+  - No, because the majority requirement is not satisfied.
+key: C
+explanation: Quorum requires both representation from at least two judicial districts and a majority
+  of members present. Although four members (a majority) attend, they represent only one district,
+  so the quorum is not met. The distractor that focuses solely on the majority being satisfied
+  ignores the district representation requirement.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) Sec. 08.88.051(b)
+  url: null
+  quoted_text: At least two judicial districts shall be represented and at least a majority of the
+    commission members shall be present in order to conduct business.
+  secondary: []
+terms:
+  - quorum
+  - judicial district
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-29
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

@@ -1,0 +1,50 @@
+id: GA-1-0095
+jurisdiction: GA
+bank: state_GA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee preparing a closing statement states that the earnest money deposit is $5,000,
+  although the actual deposit received was $3,000. According to Georgia Real Estate Commission
+  rules, this action is:"
+options:
+  - Permitted if the buyer agrees to the higher amount
+  - Allowed as long as the discrepancy is disclosed later in the transaction
+  - Prohibited because it misrepresents the true amount of earnest money
+  - Acceptable if the licensee believes the higher amount will assist financing
+key: C
+explanation: Georgia Real Estate Commission rules prohibit representing an earnest money amount
+  other than the true and actual amount; such a misrepresentation is not cured by buyer agreement,
+  later disclosure, or the licensee's belief about financing (Ga. Comp. R. & Regs. § 520-1-.10).
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live — § 520-1-.10
+  url: null
+  quoted_text: (c) an amount other than the true and actual earnest money, security deposit, or other
+    trust funds or that such trust funds have been tendered in any form other than its true and
+    actual form;
+  secondary: []
+math:
+  worked_solution: "Identify the stated earnest money amount ($5,000) and the actual amount received
+    ($3,000). Subtract the actual from the stated to find the overstatement: $5,000 - $3,000 =
+    $2,000."
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - misrepresentation
+  - closing statement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-09-30
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23
