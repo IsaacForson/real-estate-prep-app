@@ -1,0 +1,61 @@
+id: MA-87D-0101
+jurisdiction: MA
+bank: state_MA
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee files a notice of intention with a filing fee of $75. Under M.G.L. c.131 §40, how
+  much of the fee is payable to the department of environmental protection?
+options:
+  - $25.00
+  - $37.50
+  - $50.00
+  - $75.00
+key: A
+explanation: Under M.G.L. c.131 §40, fifty percent of any filing fee that exceeds twenty‑five
+  dollars is payable to the department of environmental protection. For a $75 filing fee, the amount
+  exceeding $25 is $50 ($75 − $25). Half of that excess is $25 (0.5 × $50). Therefore the correct
+  amount payable to the department is $25.00. The option stating $50.00 incorrectly assumes the
+  entire excess amount is payable, overlooking the 50 % requirement. The other options do not follow
+  the calculation.
+citation:
+  source: M.G.L. c. 131 — Massachusetts General Laws c. 131 — Inland Fisheries and Game and Other
+    Natural Resources (§ 40 Wetlands Protection Act) (selected sections cited by the exam outline),
+    official malegislature.gov section pages read via Internet Archive captures of 2025-10 to
+    2026-06 because malegislatore.gov refuses connections from scripts — § 40
+  url: null
+  quoted_text: Fifty percent of any filing fee in excess of twenty-five dollars shall be made payable
+    to the department of environmental protection, in a manner to be determined by the commissioner
+    of environmental protection, at the same time as the copies of the notice are sent to the
+    department of environmental protection. The remainder of said fee shall be made payable to the
+    city or town; provided, that said remainder shall be expended solely by the local conservation
+    commission for the performance of its duties under this chapter and shall accompany the copy of
+    the notice sent to the city or town.
+  secondary: []
+math:
+  worked_solution: |-
+    Fee = $75
+    Threshold = $25
+    Excess = Fee - Threshold = $75 - $25 = $50
+    DEP Share = 0.5 × Excess = 0.5 × $50 = $25
+    Result = $25.00
+  formulas:
+    - Excess = Fee - Threshold
+    - DEP Share = 0.5 × Excess
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - department
+  - conservation commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

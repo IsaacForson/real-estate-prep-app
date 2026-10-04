@@ -1,0 +1,41 @@
+id: OH-4735-0164
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a notice of pending revocation sent via regular mail on July 1, stating
+  that the license will be revoked on September 1 and that the reason is failure to pay renewal
+  fees. The notice does not include the procedure to reactivate. According to Ohio Adm. Code
+  1301:5-1-19(D), is the notice compliant?
+options:
+  - No, because it was sent fewer than sixty days before revocation
+  - Yes, because it includes the revocation date and reason
+  - Yes, because regular mail is an authorized delivery method
+  - No, because it omits the reactivation procedure
+key: D
+explanation: The notice must specify the reactivation procedure; omitting it makes the notice
+  noncompliant. The timing is actually sufficient because July 1 is more than sixty days before
+  September 1.
+citation:
+  source: Ohio Adm. Code ch. 1301:5-1 — § 5-1-19(D)
+  url: null
+  quoted_text: specify in such notice the date the license will be revoked, the reason for pending
+    license revocation and the procedure by which the licensee may reactivate the license
+  secondary: []
+terms:
+  - notice
+  - procedure
+  - reactivation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

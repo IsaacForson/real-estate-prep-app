@@ -1,0 +1,56 @@
+id: UT-101-0093
+jurisdiction: UT
+bank: state_UT
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives a $300 gift from an unlicensed individual who referred a prospect that
+  resulted in a lease transaction. According to Utah Admin. Code R162-2f-401b, is this permissible?
+options:
+  - The gift is permissible because it is under the $250 limit for property management referrals.
+  - The gift is not permissible because it exceeds the $250 limit for unsolicited referrals.
+  - The gift is permissible because licensees may give any gift as appreciation for a referral.
+  - The gift is not permissible because referral fees from unlicensed persons are prohibited.
+key: B
+explanation: The rule allows a gift of up to $250 for an unsolicited referral that results in a real
+  estate transaction; any amount over that limit is prohibited. Since the gift is $300, it exceeds
+  the permissible amount, making it impermissible. The claim that the gift is not permissible
+  because referral fees from unlicensed persons are prohibited incorrectly applies the property
+  management tenant compensation exception, which does not apply to an unlicensed referral source.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-401b
+  url: null
+  quoted_text: "(l) pay a finder's fee or give any valuable consideration to an unlicensed person or
+    entity for referring a prospect, except that: (i) a licensee may give a gift valued at $250 or
+    less to an individual in appreciation for an unsolicited referral of a prospect that results in
+    a real estate transaction;"
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the permissible gift limit for an unsolicited referral:
+    $250.\\nStep 2: Identify the gift amount received: $300.\\nStep 3: Compare the gift amount to
+    the limit: $300 > $250.\\nStep 4: Calculate the excess: $300 - $250 = $50.\\nStep 5: Since the
+    gift amount exceeds the limit, the gift is not permissible."
+  formulas:
+    - Limit = $250
+    - Excess = Gift amount - Limit
+    - "Comparison: Gift amount > Limit"
+  onscreen_calculator_only: false
+terms:
+  - referral fee
+  - gift limit
+  - unlicensed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

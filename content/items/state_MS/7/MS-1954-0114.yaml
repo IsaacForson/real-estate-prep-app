@@ -1,0 +1,42 @@
+id: MS-1954-0114
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Miss. Code Ann. § 73-35-21(f), within what timeframe must a responsible broker deposit
+  earnest money or other funds received from a client into a trust or escrow account?
+options:
+  - Within five calendar days of receipt
+  - By the close of business of two banking days after receipt
+  - By the close of business of the next banking day after receipt
+  - By the end of the same business day
+key: B
+explanation: The statute defines “reasonable time” for depositing trust funds as the close of
+  business of two banking days after the licensee comes into possession of the money. Therefore, the
+  broker must wait until the end of the second banking day. The option that limits the deposit to
+  the next banking day is incorrect because the rule requires two banking days.
+citation:
+  source: Miss. Code Ann. § 73-35-21(f)
+  url: null
+  quoted_text: “Reasonable time” in this context means by the close of business of two (2) banking
+    days immediately following the date on which a licensee comes into possession of monies
+    belonging to others or on which a responsible broker takes or receives any cash or checks from
+    procuring the execution of an earnest money contract or option or other contract;
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

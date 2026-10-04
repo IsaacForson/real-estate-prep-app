@@ -1,0 +1,57 @@
+id: MA-87D-0100
+jurisdiction: MA
+bank: state_MA
+blueprint_node: VI
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee plans to develop a 120‑acre parcel that does not involve water bodies. According to
+  M.G.L. c.131 §40, to whom must written notification of the notice of intent be given?
+options:
+  - All abutters within 100 feet of the proposed project site
+  - All abutters within 50 feet of the proposed project site
+  - All abutters within 200 feet of the proposed project site
+  - All abutters within 100 feet of the proposed project site, plus the municipality
+key: A
+explanation: The statute requires written notification to all abutters within 100 feet of the
+  proposed project site when the tract exceeds 50 acres. Because the parcel is 120 acres, the
+  100‑foot requirement applies, making the option that mentions notification to all abutters within
+  100 feet correct. Adding the municipality is not required by the statute, so the option that
+  includes the municipality is incorrect.
+citation:
+  source: M.G.L. c. 131 — Massachusetts General Laws c. 131 — Inland Fisheries and Game and Other
+    Natural Resources (§ 40 Wetlands Protection Act) (selected sections cited by the exam outline),
+    official malegislature.gov section pages read via Internet Archive captures of 2025-10 to
+    2026-06 because malegislatore.gov refuses connections from scripts — § 40
+  url: null
+  quoted_text: When a notice of intent proposes activities on land under water bodies and waterways or
+    on a tract of land greater than 50 acres, written notification shall be given to all abutters
+    within 100 feet of the proposed project site.
+  secondary: []
+math:
+  worked_solution: >-
+    1. Compare parcel size to the statutory threshold: 120 acres > 50 acres.
+
+    2. Because the parcel exceeds 50 acres, the law mandates notification to all abutters within 100
+    feet of the project site.
+
+    Result: Notification must be given to all abutters within 100 feet; no additional parties are
+    required.
+  formulas:
+    - If acreage > 50 then required notification distance = 100 ft
+  onscreen_calculator_only: false
+terms:
+  - abutter
+  - notification
+  - project site
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

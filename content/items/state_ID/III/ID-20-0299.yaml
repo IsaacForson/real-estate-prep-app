@@ -1,0 +1,53 @@
+id: ID-20-0299
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A relocation company seeks a referral fee from a broker for referring a buyer who later signs
+  an offer to purchase with that broker. The relocation company has a written contract for the
+  referral fee that existed when the buyer signed the offer. Under Idaho Code § 54-2054(8), is the
+  referral fee permissible?
+options:
+  - The referral fee is not permissible because the written contract for the fee existed but was not
+    signed by the broker
+  - The referral fee is permissible because a written contract for the fee existed when the buyer
+    signed the offer to purchase
+  - The referral fee is not permissible because no written contract for the fee existed between the
+    broker and the relocation company
+  - The referral fee is permissible because a written contract for the fee existed after the buyer
+    signed the offer to purchase
+key: B
+explanation: "Under Idaho Code § 54-2054(8), a referral fee is allowed only when the person seeking
+  the fee has a written contractual relationship with the broker for the fee and that contract
+  exists at the time the buyer signs the offer to purchase. The correct option states that such a
+  written contract existed when the buyer signed the offer, satisfying both the written‑contract and
+  timing requirements. The other options are incorrect: one claims the contract was not signed by
+  the broker (which is irrelevant to the rule), another asserts that no written contract existed,
+  and another places the contract after the signing, which fails the timing condition."
+citation:
+  source: Idaho Code § 54-2054(8)
+  url: null
+  quoted_text: '"Reasonable cause" shall not exist unless: (a) The person seeking the referral fee has
+    a written contractual relationship with the Idaho real estate broker for a referral fee or
+    similar payment; and (b) The contractual relationship providing for the referral fee exists at
+    the time the buyer or seller purportedly referred by such person signs a written agreement with
+    the Idaho broker for the listing of the real estate or for representation by the broker, or the
+    buyer signs an offer to purchase the real estate involved in the transaction.'
+  secondary: []
+terms:
+  - referral fee
+  - written contract
+  - reasonable cause
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

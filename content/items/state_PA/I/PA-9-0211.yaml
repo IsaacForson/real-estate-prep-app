@@ -1,0 +1,46 @@
+id: PA-9-0211
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Pennsylvania individual spends most of their time creating advertising campaigns for real
+  estate developers and occasionally helps clients locate properties for purchase. Under the Real
+  Estate Licensing and Registration Act, is this individual required to hold a broker license?
+options:
+  - Licensure is not required because the individual's main business is advertising, promotion, or
+    public relations.
+  - Licensure is required because the individual receives compensation for real estate-related
+    services.
+  - Licensure is required because any assistance in locating properties constitutes brokerage
+    activity.
+  - Licensure is not required because the individual only occasionally helps clients and does not
+    meet the threshold for licensure.
+key: A
+explanation: The proviso excludes persons whose main business is advertising, promotion, or public
+  relations from the broker definition; therefore no license is needed. The statement that
+  occasional assistance in locating properties requires a license is incorrect because the exemption
+  applies when the primary activity is advertising, not real estate brokerage.
+citation:
+  source: 63 P.S. § 455.201
+  url: null
+  quoted_text: "undertakes to promote the sale, exchange, purchase or rental of real estate: Provided,
+    however, That this provision shall not include any person whose main business is that of
+    advertising, promotion or public relations"
+  secondary: []
+terms:
+  - broker
+  - advertising
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

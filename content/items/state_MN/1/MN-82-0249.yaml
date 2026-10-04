@@ -1,0 +1,42 @@
+id: MN-82-0249
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is informed by a seller on Monday that the seller will not perform under the
+  purchase agreement. The licensee waits until Wednesday to inform the buyer of the seller's intent
+  not to perform. Is the licensee compliant with Minnesota law?
+options:
+  - Yes, because the licensee acted within a reasonable time.
+  - No, because the licensee must disclose immediately.
+  - Yes, because the licensee notified the seller first.
+  - No, because the licensee must wait for written confirmation.
+key: B
+explanation: Under Minn. Stat. § 82.68 Subd. 4, a licensee who receives notice that a party will not
+  perform must immediately disclose that fact to the other party; delaying disclosure until
+  Wednesday violates the immediate disclosure requirement. The distractor suggesting a reasonable
+  time is permissible is incorrect because the rule requires immediacy.
+citation:
+  source: Minn. Stat. § 82.68 Subd. 4
+  url: null
+  quoted_text: If a licensee is put on notice by a party to a real estate transaction that the party
+    will not perform according to the terms of a purchase agreement or other similar written
+    agreement to convey real estate, the licensee shall immediately disclose the fact of that
+    party's intent not to perform to the other party or parties to the transaction.
+  secondary: []
+terms:
+  - nonperformance
+  - immediate disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

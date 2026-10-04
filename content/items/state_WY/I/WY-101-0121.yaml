@@ -1,0 +1,47 @@
+id: WY-101-0121
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker maintains a trust account and deposits $500 of his personal funds into
+  it solely to avoid a monthly minimum balance charge from the financial institution. This specific
+  deposit of personal funds into the trust account is considered a violation of the prohibition
+  against commingling if:"
+options:
+  - The $500 deposit is not identified as personal funds at the time of deposit
+  - The trust account is designated as an interest-bearing account under state regulation
+  - The broker fails to notify the commission of the account's name within thirty days
+  - The $500 deposit remains in the trust account for a period longer than thirty days
+key: A
+explanation: Under Wyo. Stat. Ann. § 33-28-122(e), depositing personal funds to keep an account open
+  or avoid minimum balance charges is not considered commingling, provided that the deposit is
+  identified at the time of deposit. Failing to identify the funds at the time of deposit means the
+  statutory exception does not apply, making the action a violation of the commingling prohibition.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(e)
+  url: null
+  quoted_text: It will not be considered commingling if, when establishing the trust account, the
+    responsible broker deposits some of his funds to keep the account open or to avoid charges for a
+    minimum balance, so long as that deposit is identified at the time of deposit.
+  secondary: []
+math:
+  worked_solution: No calculation is required; the $500 deposit amount is given directly in the stem.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - commingling
+  - trust account
+  - personal funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/qwen/qwen3.8-27b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

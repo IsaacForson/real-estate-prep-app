@@ -1,0 +1,47 @@
+id: OH-4735-0149
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A dealer sells manufactured homes and also negotiates a lease of the land on which the homes
+  are placed. According to Ohio Rev. Code § 4735.01(I)(1)(f), does the dealer need a real estate
+  license?
+options:
+  - The dealer must hold a real estate license because negotiating a lease of land is dealing in an
+    interest in real estate.
+  - The dealer is exempt from licensing because selling manufactured homes excludes all real estate
+    activities.
+  - The dealer only needs a license if the manufactured homes are attached to the land.
+  - The dealer is exempt as long as the lease is for less than one year.
+key: A
+explanation: Under § 4735.01(I)(1)(f), a person selling manufactured homes is exempt only if the
+  sale does not include the negotiation, sale, lease, exchange, or assignment of any interest in
+  real estate. Negotiating a lease of land involves an interest in real estate, so the exemption
+  does not apply and a license is required. The claim that selling manufactured homes excludes all
+  real estate activities is wrong because the exemption applies only when no real estate interest is
+  involved.
+citation:
+  source: "### Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers,
+    official Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14
+    because codes.ohio.gov times out for scripts Section 4735.01(I)(1)(f)"
+  url: null
+  quoted_text: provided the sale does not include the negotiation, sale, lease, exchange, or
+    assignment of any interest in real estate
+  secondary: []
+terms:
+  - manufactured homes
+  - lease
+  - real estate license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

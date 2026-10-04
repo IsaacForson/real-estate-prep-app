@@ -1,0 +1,46 @@
+id: VA-21-0025
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A regulant has already paid a $15 assessment during the current biennial license period. What
+  is the maximum additional assessment that may be levied during the same biennial period?
+options:
+  - The regulant may be assessed an additional amount of $10.
+  - The regulant may be assessed an additional amount of $20.
+  - The regulant may be assessed an additional amount of $15.
+  - The regulant may be assessed an additional amount of $5.
+key: D
+explanation: The statute limits total assessments to $20 per biennial period. Since $15 has already
+  been paid, only $5 more can be assessed. The option that says the regulant may be assessed an
+  additional amount of $5 results in a total of $20, which is the maximum allowed; any larger
+  additional amount would exceed the $20 limit.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2113
+  url: null
+  quoted_text: No regulant shall be assessed a total amount of more than $20 during any biennial
+    license period or part thereof, the biennial period expiring on June 30 of each even-numbered
+    year.
+  secondary: []
+math:
+  worked_solution: Maximum additional assessment = $20 - $15 = $5.
+  formulas:
+    - Additional = Maximum total - Already paid
+  onscreen_calculator_only: false
+terms:
+  - assessment
+  - biennial
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,42 @@
+id: MT-51-0185
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's employee subagent tells a buyer that the roof is new when it is actually 20 years
+  old. The broker knew the subagent was making this false statement before it was made. Under
+  Montana law, is the broker liable for the misrepresentation?
+options:
+  - The broker is not liable because the buyer did not rely on the statement
+  - The broker is not liable because the subagent is an employee
+  - The broker is liable because the broker had actual knowledge of the misrepresentation
+  - The broker is liable if the misrepresentation came from the broker
+key: C
+explanation: Under § 37-51-315(2)(a), a broker is liable for a subagent's misrepresentation when the
+  broker has actual knowledge of the misrepresentation. The broker's actual knowledge satisfies this
+  condition, creating liability. The distractor that claims no liability because the subagent is an
+  employee is wrong; employee status alone does not shield the broker when the broker knows of the
+  false statement.
+citation:
+  source: Mont. Code Ann. § 37-51-315(2)(a)
+  url: null
+  quoted_text: (a) the broker has actual knowledge of the misrepresentation;
+  secondary: []
+terms:
+  - vicarious liability
+  - misrepresentation
+  - broker
+  - subagent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

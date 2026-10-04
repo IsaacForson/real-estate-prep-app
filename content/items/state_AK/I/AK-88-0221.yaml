@@ -1,0 +1,49 @@
+id: AK-88-0221
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate broker's associate broker makes a false promise to a client to induce a sale.
+  The broker had no actual knowledge of the associate's statement and did not ratify the conduct
+  after learning of it. Under Alaska Stat. § 08.88.071(c), is the broker liable for the associate's
+  conduct?
+options:
+  - The broker is liable for the associate's false promise because the broker employed the associate.
+  - The broker is not liable because the broker lacked actual knowledge of the associate's conduct
+    and did not ratify it.
+  - The broker is liable because the associate's conduct occurred within the scope of employment.
+  - The broker is not liable only if the associate had a valid license at the time of the conduct.
+key: B
+explanation: Under § 08.88.071(c), an employee's conduct is attributable to the broker only if the
+  broker has actual knowledge that the employee is going to engage in the conduct and agrees to it,
+  either actively or by remaining silent, or ratifies the conduct after it occurs. Since the broker
+  lacked actual knowledge and did not ratify, the conduct is not attributable, so the broker is not
+  liable. The distractor that claims liability based solely on employment is incorrect because mere
+  employment does not satisfy the statutory requirement of knowledge or ratification.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.071(c)
+  url: null
+  quoted_text: For the purposes of (a)(3) of this section, the conduct of an employee is attributable
+    to a real estate broker if the real estate broker has actual knowledge that the employee is
+    going to engage in the conduct and agrees to the conduct, either actively or by remaining
+    silent, or ratifies the conduct after it is engaged in.
+  secondary: []
+terms:
+  - broker
+  - associate
+  - knowledge
+  - ratify
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

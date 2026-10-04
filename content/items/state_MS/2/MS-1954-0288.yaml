@@ -1,0 +1,54 @@
+id: MS-1954-0288
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson who obtained a temporary license on March 1, 2024 must complete the thirty‑hour
+  post‑license course. The course is offered in no less than fifteen‑hour increments and no more
+  than eight hours may be earned in a single day. What is the minimum number of days required to
+  complete the course?
+options:
+  - 2 days
+  - 4 days
+  - 6 days
+  - 8 days
+key: B
+explanation: Because the course must be taken in increments of at least fifteen hours and no more
+  than eight hours per day, each fifteen‑hour segment needs at least two days (8 hours + 7 hours).
+  Two such segments therefore require a minimum of four days. The two‑day option would require
+  fifteen hours in a single day, which exceeds the daily limit.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) § 73-35-14.5(4)
+  url: null
+  quoted_text: The thirty-hour post-license coursework shall be offered in no less than fifteen-hour
+    increments of classroom instruction. No more than eight (8) hours may be earned in a single day.
+  secondary: []
+math:
+  worked_solution: |-
+    Each day maximum = 8 hours.
+    Each increment minimum = 15 hours.
+    Days needed for one increment = ceil(15 / 8) = 2 days (8 h + 7 h).
+    Two increments required for 30 hours.
+    Total days = 2 increments × 2 days per increment = 4 days.
+  formulas:
+    - days_per_increment = ceil(increment_hours / max_hours_per_day)
+    - total_days = increments × days_per_increment
+  onscreen_calculator_only: false
+terms:
+  - post‑license course
+  - daily limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

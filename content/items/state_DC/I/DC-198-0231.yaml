@@ -1,0 +1,42 @@
+id: DC-198-0231
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A board member has served three consecutive three-year terms and is nominated for a fourth
+  term. Under D.C. Code § 47-2853.07(a), is the appointment permissible?
+options:
+  - The appointment is permissible because members may be appointed to succeed themselves.
+  - The appointment is not permissible because a member may not serve more than three consecutive
+    three-year terms.
+  - The appointment is permissible if the member has been a resident for at least one year prior.
+  - The appointment is not permissible because the member must disqualify themselves from own
+    licensure matters.
+key: B
+explanation: Section 47-2853.07(a) permits reappointment but prohibits any member from serving more
+  than three full consecutive three‑year terms. A member who has already served three consecutive
+  terms cannot be appointed to a fourth consecutive term. The other options either misstate the rule
+  or introduce irrelevant conditions.
+citation:
+  source: D.C. Code § 47-2853.07(a)
+  url: null
+  quoted_text: Members may be appointed to succeed themselves, provided, however, that no member shall
+    be appointed to serve more than 3 full consecutive 3-year terms.
+  secondary: []
+terms:
+  - term limit
+  - board member
+  - reappointment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

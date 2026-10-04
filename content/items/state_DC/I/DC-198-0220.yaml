@@ -1,0 +1,39 @@
+id: DC-198-0220
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice under § 47-2853.22(a-1)(1) on May 1. Under § 47-2853.22(a-1)(2),
+  how many business days does the licensee have to respond?
+options:
+  - 30 business days
+  - 45 business days
+  - 60 business days
+  - 90 business days
+key: B
+explanation: The rule provides that after receiving notice, the licensee shall have 45 business days
+  to respond. The other numbers do not match the statutory period.
+citation:
+  source: D.C. Code § 47-2853.22(a-1)(2)
+  url: null
+  quoted_text: After receiving notice pursuant to paragraph (1) of this subsection, the applicant,
+    licensee, registrant, person certified, or person permitted to practice shall have 45 business
+    days to respond.
+  secondary: []
+terms:
+  - notice
+  - response
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

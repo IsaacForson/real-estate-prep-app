@@ -1,0 +1,46 @@
+id: NAT-PSI-II-0117
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant plants wheat on leased farmland. The lease ends on the agreed expiration date, and
+  the landlord does not renew the lease. Under REP Ref. Property & Land Use § 1.5, may the tenant
+  re-enter to harvest the wheat?
+options:
+  - The tenant may not re-enter to harvest the wheat in this situation.
+  - The tenant may re-enter to harvest the wheat with landlord approval.
+  - The tenant may re-enter to harvest the wheat in this situation.
+  - The tenant may not re-enter to harvest the wheat without landlord approval.
+key: A
+explanation: The key is correct because the doctrine of emblements allows re-entry only when the
+  tenancy ends through no fault of the tenant at an unpredictable time; a lease ending on the agreed
+  date is predictable, so the tenant may not re-enter. The option stating that the tenant may
+  re-enter to harvest the wheat in this situation is incorrect because it ignores the
+  unpredictability requirement. The options stating that the tenant may re-enter with landlord
+  approval or may not re-enter without landlord approval are incorrect because landlord approval is
+  not relevant to the emblements right; the right depends solely on the nature of the tenancy's
+  termination.
+citation:
+  source: REP Ref. Property & Land Use § 1.5
+  url: null
+  quoted_text: Under the doctrine of emblements, a tenant whose tenancy ends through no fault of the
+    tenant at an unpredictable time may re-enter to harvest crops the tenant planted.
+  secondary: []
+terms:
+  - emblements
+  - tenant
+  - lease
+  - harvest
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

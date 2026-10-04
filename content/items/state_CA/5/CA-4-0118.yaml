@@ -1,0 +1,40 @@
+id: CA-4-0118
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A buyer deposits funds with a title company, agreeing that the funds will be released to the
+  seller only after the seller provides a grant deed free of liens. Under Cal. Civ. Code § 1057,
+  this arrangement is best described as:"
+options:
+  - The escrow arrangement
+  - The trust account agreement
+  - The conditional gift deed
+  - The loan commitment letter
+key: A
+explanation: Section 1057 defines an escrow as a grant deposited with a third person to be delivered
+  on performance of a condition, which matches the scenario of the buyer’s deposit. A trust account
+  agreement refers to the handling of funds, not the conditional delivery of a grant, so it does not
+  satisfy the statutory definition.
+citation:
+  source: Cal. Civ. Code §§ 1052–1059 — Cal. Civil Code - ARTICLE 3. Mode of Transfer 1052-1059 — § 1057
+  url: null
+  quoted_text: While in the possession of the third person, and subject to condition, it is called an escrow.
+  secondary: []
+terms:
+  - escrow
+  - grant
+  - condition
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

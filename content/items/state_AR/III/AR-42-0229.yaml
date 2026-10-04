@@ -1,0 +1,42 @@
+id: AR-42-0229
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A principal broker reconciles the trust account bank statements every quarter (every three
+  months). Is this practice compliant with Rule 10.8(g)(2)?
+options:
+  - The broker's practice is compliant as long as the broker keeps copies for three years.
+  - The broker's practice is not compliant because the broker must reconcile weekly.
+  - The broker's practice is not compliant because reconciliation must be performed at least monthly.
+  - The broker's practice is compliant because quarterly reconciliation meets the requirement.
+key: C
+explanation: The rule requires trust account bank statements to be reconciled in writing at least
+  monthly. Quarterly reconciliation does not meet this minimum frequency, making the practice
+  noncompliant. The option suggesting compliance if copies are kept for three years confuses the
+  retention period with the reconciliation frequency.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.8(g)(2)
+  url: null
+  quoted_text: All trust account bank statements shall be reconciled in writing at least monthly and
+    balanced to the total amount of trust funds deposited in the account which have not been
+    disbursed.
+  secondary: []
+terms:
+  - reconciliation
+  - trust account
+  - monthly
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

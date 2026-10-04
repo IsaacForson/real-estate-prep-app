@@ -1,0 +1,42 @@
+id: NAT-PV-II-0477
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under a notice statute, who prevails when a grantor conveys the same lot to Buyer A, who does
+  **NOT** record, and then to Buyer B, who pays value, has no notice of A’s deed, and records later?
+options:
+  - The prevailing party is Buyer B, because a later bona fide purchaser for value without notice
+    wins under a notice statute
+  - The prevailing party is Buyer A, because the first deed creates the superior interest regardless
+    of recording
+  - The prevailing party is both buyers, because the grantor remains liable to each for breach of
+    warranty
+  - The prevailing party is neither buyer, because the grantor’s deed is void for double conveyance
+key: A
+explanation: Under a notice statute, a later bona fide purchaser for value without notice of the
+  earlier interest wins even before recording. Buyer B paid value, had no notice, and recorded
+  later, thus prevailing. The distractor that Buyer A prevails incorrectly assumes the first deed
+  always wins, which is true only under a race statute, not a notice statute.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a notice statute a later bona fide purchaser for value without notice (actual or
+    constructive) of the earlier interest wins even before recording.
+  secondary: []
+terms:
+  - notice statute
+  - bona fide purchaser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

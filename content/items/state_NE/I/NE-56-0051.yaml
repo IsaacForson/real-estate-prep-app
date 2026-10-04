@@ -1,0 +1,39 @@
+id: NE-56-0051
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a petition for a declaratory order is filed on June 1 and the Commission grants a request
+  for oral argument, what is the latest date the oral argument may be held?
+options:
+  - July 1
+  - July 31
+  - July 15
+  - July 16
+key: D
+explanation: Under 007.01, oral argument must be scheduled not more than forty‑five days after the
+  petition is filed. Adding forty‑five days to June 1 yields July 16 as the latest permissible date;
+  July 15 is one day short and July 31 mistakenly uses the sixty‑day issuance period.
+citation:
+  source: 305 Neb. Admin. Code — Title 305 NREC Rules of Practice and Procedure — complaints,
+    investigations, hearings, declaratory orders, appeals 007.01
+  url: null
+  quoted_text: If opportunity for oral argument is granted, then argument shall be scheduled to be
+    conducted not more than forty-five (45) days after filing of the petition.
+  secondary: []
+terms:
+  - oral
+  - argument
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

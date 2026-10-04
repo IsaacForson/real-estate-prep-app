@@ -1,0 +1,55 @@
+id: IL-2000-0246
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A sponsor broker begins supervising a trainee in residential leasing activities on January 10,
+  2025, notifies the Department that the trainee is pursuing licensure, and the trainee enrolls in
+  the required pre‑license education course on February 28, 2025. Assuming all other requirements
+  are satisfied, what is the last calendar date the trainee may continue to engage in residential
+  leasing activities without obtaining a license?
+options:
+  - May 8, 2025
+  - May 10, 2025
+  - May 11, 2025
+  - May 9, 2025
+key: D
+explanation: The trainee may act unlicensed for 120 consecutive days from the start date, provided
+  enrollment occurs within 60 days. Starting January 10, 2025 and adding 120 days yields May 9, 2025
+  as the final day. The enrollment on February 28 satisfies the 60‑day requirement.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) — § 5-5(d)
+  url: null
+  quoted_text: for a period of 120 consecutive days without being licensed, so long as the person is
+    acting under the supervision of a sponsoring broker, the sponsoring broker has notified the
+    Department that the person is pursuing licensure under this Section, and the person has enrolled
+    in the residential leasing agent pre-license education course no later than 60 days after
+    beginning to engage in residential leasing activities.
+  secondary: []
+math:
+  worked_solution: "Start date: January 10, 2025. Days remaining in January after Jan 10: 31 - 10 = 21
+    days (Jan 11‑31) + Jan 10 counts as day 1, so total days in Jan = 22. Subtract from 120: 120 -
+    22 = 98 days left. February has 28 days: 98 - 28 = 70 days left. March has 31 days: 70 - 31 = 39
+    days left. April has 30 days: 39 - 30 = 9 days left. The 9th day of May is May 9, 2025."
+  formulas:
+    - End date = Start date + 120 days
+  onscreen_calculator_only: false
+terms:
+  - residential leasing agent
+  - supervision
+  - pre-license education
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

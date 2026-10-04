@@ -1,0 +1,44 @@
+id: WI-452-0068
+jurisdiction: WI
+bank: state_WI
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A taxpayer wishes to challenge her property tax assessment directly in circuit court without
+  first filing an objection with the board of review. The property is taxable and located within the
+  taxing district. Under Wisconsin property tax law, what is required before the taxpayer can
+  proceed to court?
+options:
+  - The taxpayer must first file an objection with the board of review
+  - The taxpayer may file a complaint directly with the Department of Revenue
+  - The taxpayer must obtain a written waiver from the municipal clerk
+  - The taxpayer must pay the disputed tax before filing any objection
+key: A
+explanation: The Hermann case held that exhaustion of remedies before the board of review is
+  required unless the property is exempt or lies outside the taxing district. Because the property
+  is taxable and within the district, the taxpayer must first file an objection with the board of
+  review before seeking judicial review. The option allowing direct court access ignores the
+  exhaustion requirement, and the other options introduce conditions not mentioned in the statute.
+citation:
+  source: Wis. Stat. ch. 70 § 70.47
+  url: null
+  quoted_text: |-
+    Hermann, 215 Wis. 2d 370 (1998), makes clear that exhaustion of remedies be-
+    fore the board of review is required unless the property taxed is exempt or lies out-
+    side of the taxing district
+  secondary: []
+terms:
+  - exhaustion
+  - remedies
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

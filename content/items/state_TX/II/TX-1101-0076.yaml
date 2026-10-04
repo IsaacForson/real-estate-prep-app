@@ -1,0 +1,45 @@
+id: TX-1101-0076
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent let their license lapse for four months. According to Texas Occupations Code
+  §1101.451(e), what fee must the sales agent pay to renew the license?
+options:
+  - The sales agent must pay no fee; the license cannot be renewed and a new license must be
+    obtained.
+  - The sales agent must pay a fee equal to two times the required renewal fee.
+  - The sales agent must pay a fee equal to the same amount as the original renewal fee.
+  - The sales agent must pay a fee equal to one and one-half times the required renewal fee.
+key: B
+explanation: A license expired for more than 90 days but less than six months requires a renewal fee
+  equal to two times the required renewal fee. Four months falls within this range, so the agent
+  must pay double the fee. The one-and-one-half fee applies only to expirations of 90 days or less.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.451
+  url: null
+  quoted_text: If a license has been expired for more than 90 days but less than six months, the
+    person may renew the license by paying to the commission a fee equal to two times the required
+    renewal fee.
+  secondary: []
+terms:
+  - license expiration
+  - renewal fee
+  - lapsed license
+  - renewal
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

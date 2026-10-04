@@ -1,0 +1,48 @@
+id: PA-9-0217
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An attorney-in-fact holds a power of attorney from an owner solely to avoid the need for a
+  real estate broker in managing property. Under 49 Pa. Code § 35.202(4), is the attorney-in-fact
+  excluded from the Real Estate Licensing and Registration Act?
+options:
+  - The attorney-in-fact is excluded because the power of attorney is recorded
+  - The attorney-in-fact is excluded only if also licensed as an attorney-at-law
+  - The attorney-in-fact is required to hold a real estate license for property management
+  - The attorney-in-fact is exempt if the owner receives no compensation
+key: C
+explanation: Under 49 Pa. Code § 35.202(4), an attorney-in-fact is excluded only if the power of
+  attorney is not used to circumvent the intent of the act; using it solely to avoid needing a
+  broker constitutes circumvention. Therefore, the attorney-in-fact who holds the power of attorney
+  for that purpose is not excluded and must hold a real estate license, as stated in the choice that
+  says the attorney‑in‑fact is required to hold a real estate license for property management. The
+  distractor suggesting exclusion because the power of attorney is recorded ignores the
+  anti‑circumvention provision.
+citation:
+  source: 49 Pa. Code ch. 35 (State Real Estate Commission) — 49 Pa. Code Chapter 35 — State Real
+    Estate Commission (Pennsylvania Code, changes effective through 56 Pa.B. 4026, July 4, 2026) — §
+    35.202(4)
+  url: null
+  quoted_text: An attorney in fact who renders services under an executed and recorded power of
+    attorney from an owner or lessor of real estate, if the power of attorney is not used to
+    circumvent the intent of the act.
+  secondary: []
+terms:
+  - attorney
+  - power
+  - owner
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

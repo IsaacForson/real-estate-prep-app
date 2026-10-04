@@ -1,0 +1,41 @@
+id: AZ-20-0310
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Arizona law, who may bring an action to recover amounts paid from the real estate
+  recovery fund including interest, attorney fees, and costs of collection?
+options:
+  - The commissioner may bring the action in the name of the real estate recovery fund.
+  - The attorney general may bring the action in the name of this state.
+  - The judgment creditor may bring the action after receiving payment from the fund.
+  - The surety company may bring the action on behalf of the licensee.
+key: B
+explanation: The statute explicitly states that the attorney general shall bring any actions to
+  recover amounts paid from the fund, including interest, attorney fees, and costs of collection, in
+  the name of this state. The commissioner’s authority is limited to defending the fund, not
+  initiating recovery actions.
+citation:
+  source: Ariz. Rev. Stat. § 32-2192(D)
+  url: null
+  quoted_text: The attorney general shall bring any actions to recover amounts paid from the fund
+    including interest, attorney fees and costs of collection pursuant to this chapter in the name
+    of this state
+  secondary: []
+terms:
+  - attorney general
+  - recovery fund
+  - action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

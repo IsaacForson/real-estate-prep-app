@@ -1,0 +1,43 @@
+id: MN-82-0237
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee acts as principal in four real estate transactions in the past 12 months and is not
+  represented by a broker. Under Minn. Stat. § 82.55, Subd. 19(g), is the licensee presumed to be
+  engaged in the business of selling real estate?
+options:
+  - No, because the licensee must have a broker to be presumed engaged.
+  - No, because fewer than five transactions were completed.
+  - Yes, because any transaction triggers the presumption.
+  - Yes, because the licensee acted as principal in each transaction.
+key: B
+explanation: The presumption applies only when the licensee completes five or more transactions as
+  principal in a 12‑month period; with four transactions the threshold is not met, so no presumption
+  arises. The statement that any transaction triggers the presumption is incorrect, as it
+  contradicts the five‑transaction requirement.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.55 Subd. 19(g)
+  url: null
+  quoted_text: A person shall be presumed to be engaged in the business of selling real estate if the
+    person engages as principal in five or more transactions during any 12-month period, unless the
+    person is represented by a licensed real estate broker or salesperson.
+  secondary: []
+terms:
+  - transaction
+  - presumption
+  - represented
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

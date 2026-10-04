@@ -1,0 +1,50 @@
+id: NV-645-0097
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is sued and a court enters a final judgment of $40,000 against them for fraud in a
+  real estate transaction. Assuming all other requirements of NRS 645.844 are met, what is the
+  maximum amount that may be paid from the Real Estate Education, Research and Recovery Fund to
+  satisfy this judgment?
+options:
+  - $100,000
+  - $25,000
+  - $10,000
+  - $40,000
+key: B
+explanation: NRS 645.844(1) limits recovery from the Fund to the unpaid actual damages in the
+  judgment but not more than $25,000 per judgment. Even though the judgment is $40,000, the Fund can
+  pay only $25,000. The distractor $40,000 mistakenly assumes the Fund covers the full judgment
+  amount.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.844"
+  url: null
+  quoted_text: for an order directing payment out of the Fund in the amount of the unpaid actual
+    damages included in the judgment, but not more than $25,000 per judgment.
+  secondary: []
+math:
+  worked_solution: Judgment amount = $40,000. Statutory limit per judgment from NRS 645.844(1) =
+    $25,000. Maximum payable = min($40,000, $25,000) = $25,000.
+  formulas:
+    - Maximum recovery = min(judgment amount, statutory limit)
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - judgment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

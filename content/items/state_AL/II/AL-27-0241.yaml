@@ -1,0 +1,48 @@
+id: AL-27-0241
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Recovery Fund balance is below $500,000 and a broker holds two active licenses, how
+  much total fee must the broker pay to the Fund?
+options:
+  - $30
+  - $75
+  - $45
+  - $60
+key: D
+explanation: When the Fund’s balance is under $500,000, each broker and salesperson must pay a $30
+  fee per license. With two active licenses, the total is 2 × $30 = $60. The $45 option would result
+  from incorrectly multiplying by 1.5 licenses.
+citation:
+  source: Ala. Code § 34-27-1 et seq. § 34-27-31(d)
+  url: null
+  quoted_text: When the balance remaining in the Recovery Fund is less than five hundred thousand
+    dollars ($500,000), each broker and salesperson shall on order of the commission pay a fee of
+    thirty dollars ($30) per license for deposit in the Recovery Fund.
+  secondary: []
+math:
+  worked_solution: |-
+    Fee per license = $30
+    Number of active licenses = 2
+    Total fee = $30 × 2 = $60
+  formulas:
+    - total_fee = fee_per_license × number_of_licenses
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - license
+  - fee
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

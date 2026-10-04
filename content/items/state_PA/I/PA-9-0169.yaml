@@ -1,0 +1,56 @@
+id: PA-9-0169
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: At the commencement of a biennial renewal period beginning in 1982, the Real Estate Recovery
+  Fund balance is $250,000. What action may the Commission take under 63 P.S. § 455.802?
+options:
+  - Suspend all license renewals until the fund balance reaches $300,000.
+  - Assess a fee of up to $10 per licensee to raise the fund to $500,000.
+  - Transfer excess funds from the fund to the State Treasury for deposit.
+  - Refund $10 to each licensee upon renewal of their license.
+key: B
+explanation: Under 63 P.S. § 455.802, if the fund balance is less than $300,000 at the start of a
+  biennial renewal period beginning in 1982, the Commission may assess an additional fee of up to
+  $10 per licensee to raise the fund balance to $500,000. A distractor that proposes refunding $10
+  to each licensee is incorrect because the statute authorizes assessing, not refunding, fees in
+  this circumstance.
+citation:
+  source: "### 63 P.S. §§ 455.101–455.902 (Real Estate Licensing and Registration Act) — Real Estate
+    Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9, as amended (63 P.S. §
+    455.101 et seq.), official Pennsylvania General Assembly PDF read via Internet Archive capture
+    of 2025-01-14 because legis.state.pa.us/palegis.us refuse connections from this network; section
+    headings annotated with 63 P.S. numbers — § 455.802"
+  url: null
+  quoted_text: If at the commencement of any biennial renewal period beginning in 1982 and thereafter,
+    the balance of the fund is less than $300,000, the commission may assess an additional fee, in
+    addition to the renewal fee, against each licensee and registrant in an amount not to exceed $10
+    which will yield revenues sufficient to bring the balance of the fund to $500,000.
+  secondary: []
+math:
+  worked_solution: "The fund balance is $250,000. Compare this to the threshold of $300,000: $250,000
+    < $300,000, so the condition is satisfied. Therefore, under 63 P.S. § 455.802 the Commission may
+    assess an additional fee of up to $10 per licensee to raise the fund balance to $500,000."
+  formulas:
+    - "Comparison: balance < $300,000"
+    - Shortfall = $300,000 - balance (optional)
+    - Target increase = $500,000 - balance
+  onscreen_calculator_only: false
+terms:
+  - renewal fee
+  - additional fee
+  - fund balance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

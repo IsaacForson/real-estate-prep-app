@@ -1,0 +1,46 @@
+id: WY-101-0179
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Wyoming Responsible Broker deposits his personal commission check into the company’s trust
+  account to cover a temporary shortfall, intending to repay the amount later. Is this permissible
+  under the Commission’s trust account rules?
+options:
+  - The action is allowed if the broker later reimburses the account
+  - The action is allowed if the amount is less than $500
+  - The action is prohibited because personal funds must remain separate from trust funds
+  - The action is allowed if the broker obtains written consent from all parties
+key: C
+explanation: Under Wyoming Real Estate Commission Rules Chapter 5, §1(a), trust or escrow accounts
+  must be kept separate from the broker’s personal or business money. Depositing personal commission
+  checks into the trust account commingles funds and is therefore prohibited, regardless of intent
+  to repay, the amount involved, or obtaining consent. Therefore the statement that the action is
+  prohibited because personal funds must remain separate from trust funds is correct, while the
+  other statements are incorrect.
+citation:
+  source: Wyo. Real Estate Comm'n Rules ch. 5 — Wyoming Real Estate Commission Rules, Chapter 5 —
+    Brokers' Trust or Escrow Accounts — § 1(a)
+  url: null
+  quoted_text: All money belonging to others accepted by the Responsible Broker shall be deposited
+    with a funds holder or in a bank, financial institution or other recognized depository in this
+    state in a trust or escrow account separate from personal or business money belonging to the
+    Responsible Broker.
+  secondary: []
+terms:
+  - commingling
+  - trust account
+  - personal funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

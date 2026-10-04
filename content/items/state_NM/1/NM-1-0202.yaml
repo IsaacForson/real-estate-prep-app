@@ -1,0 +1,42 @@
+id: NM-1-0202
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person pays a civil penalty and administrative costs to the New Mexico Real Estate
+  Commission after being found guilty of unlicensed real estate activity. According to N.M. Stat.
+  Ann. § 61-29-17.2, where must the commission deposit the money collected?
+options:
+  - The money must be deposited into the state’s general fund.
+  - The money must be deposited into the real estate education and training fund.
+  - The money must be returned to the person who paid it.
+  - The money must be deposited into the real estate recovery fund.
+key: D
+explanation: The statute directs that any money collected by the commission under this section shall
+  be deposited into the real estate recovery fund. Depositing into the general fund or the education
+  and training fund is not authorized, and the money is not returned to the payor. Therefore, the
+  correct destination is the real estate recovery fund.
+citation:
+  source: N.M. Stat. Ann. § 61-29-17.2
+  url: null
+  quoted_text: Any money collected by the commission under the provisions of this section shall be
+    deposited into the real estate recovery fund.
+  secondary: []
+terms:
+  - penalty
+  - cost
+  - deposit
+  - fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

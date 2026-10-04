@@ -1,0 +1,45 @@
+id: AR-42-0220
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: In a disciplinary hearing, the commission finds that a licensee's violation caused $4,500 in
+  actual damages to a buyer. What is the maximum amount the commission may award to the buyer?
+options:
+  - $0,000.00
+  - $2,250.00
+  - $4,500.00
+  - $6,750.00
+key: C
+explanation: Ark. Code Ann. § 17-42-407(a) limits the commission’s award to actual, compensatory
+  damages only; it may not award punitive damages or interest. Therefore, the maximum award equals
+  the proven actual damages of $4,500. The $2,250.00 option incorrectly halves the damages, while
+  $6,750.00 erroneously adds extra amounts.
+citation:
+  source: Ark. Code Ann. § 17-42-407(a)
+  url: null
+  quoted_text: The Arkansas Real Estate Commission's jurisdiction and authority to award damages to an
+    aggrieved party pursuant to § 17-42-406 is limited to actual, compensatory damages.
+  secondary: []
+math:
+  worked_solution: The commission may award only actual, compensatory damages. The actual damages
+    proven are $4,500. Therefore, the maximum award = $4,500.
+  formulas:
+    - Maximum award = Actual damages
+  onscreen_calculator_only: false
+terms:
+  - damages
+  - actual
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

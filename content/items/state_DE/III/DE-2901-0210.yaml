@@ -1,0 +1,43 @@
+id: DE-2901-0210
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer and seller agree in writing to use an attorney as the escrow agent for their
+  transaction instead of the broker’s escrow account. Under Delaware law, where must the earnest
+  money deposit be held
+options:
+  - In the broker’s personal checking account.
+  - In the name of the attorney as escrow agent.
+  - In a joint account held by buyer and seller.
+  - In the name of the brokerage organization.
+key: B
+explanation: The statute requires escrow deposits to be accepted in the name of the brokerage
+  organization unless the parties have agreed to a different third‑party escrow agent. Since the
+  buyer and seller agreed to use an attorney, the deposit must be held in the attorney’s name as the
+  agreed third‑party escrow agent.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2923(c)
+  url: null
+  quoted_text: All escrow deposits accepted by a licensee in accordance with the terms of a real
+    estate services transaction shall be accepted in the name of the brokerage organization unless
+    the parties have agreed to a different third-party escrow agent.
+  secondary: []
+terms:
+  - escrow deposit
+  - third‑party escrow agent
+  - agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

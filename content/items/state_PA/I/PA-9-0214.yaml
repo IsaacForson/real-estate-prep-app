@@ -1,0 +1,42 @@
+id: PA-9-0214
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Pennsylvania salesperson passed the salesperson license examination on August 14, 2023 and
+  submitted the license application on August 15, 2026. Is the application timely under 63 P.S. §
+  455.522(c)?
+options:
+  - The application is timely because the commission may accept late applications with a penalty.
+  - The application is untimely because the applicant must retake the examination before submitting
+    an application.
+  - The application is timely because it was submitted within three years of passing the examination.
+  - The application is untimely because it was submitted after the three‑year period expired.
+key: D
+explanation: The statute requires the application to be received within three years of passing the
+  examination; submitting on August 15, 2026 is one day after the three‑year deadline ending August
+  14, 2026. Therefore the application is untimely. The statute does not provide for late acceptance
+  with a penalty or allow submission without retaking the exam after expiration.
+citation:
+  source: 63 P.S. § 455.522(c)
+  url: null
+  quoted_text: The application shall be received by the commission within three years of the date upon
+    which the applicant passed the examination.
+  secondary: []
+terms:
+  - application
+  - deadline
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

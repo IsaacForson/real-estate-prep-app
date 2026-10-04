@@ -1,0 +1,55 @@
+id: OH-4735-0170
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker renews a three-year license and has 15 associated real estate salespersons. What is
+  the total renewal fee the broker must pay?
+options:
+  - $381.00
+  - $344.00
+  - $307.00
+  - $243.00
+key: C
+explanation: The base renewal fee for a three-year broker license is $243.00; with 11‑20 associated
+  salespersons an additional $64.00 is assessed (§4735.15(B)(2)), giving a total of $307.00. The
+  distractor $344.00 incorrectly adds the $37.00 increment for each extra ten salespersons, which
+  only applies when the broker has more than twenty associated salespersons.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.15(B)(2)
+  url: null
+  quoted_text: If the real estate broker has not less than eleven nor more than twenty real estate
+    salespersons associated with the broker, an additional fee of sixty-four dollars shall be
+    assessed to the brokerage.
+  secondary: []
+math:
+  worked_solution: >-
+    1. Base renewal fee for a three-year broker license = $243.00.
+
+    2. Because the broker has 15 associated salespersons (between 11 and 20), add the additional fee
+    of $64.00.
+
+    3. $243.00 + $64.00 = $307.00.
+  formulas:
+    - total = base_fee + additional_fee
+  onscreen_calculator_only: false
+terms:
+  - broker
+  - renewal
+  - fee
+  - salespersons
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

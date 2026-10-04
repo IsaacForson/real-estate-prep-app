@@ -1,0 +1,43 @@
+id: MS-1954-0284
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A responsible broker discovers that one of his salespersons has been conducting real estate
+  transactions under another broker's supervision without his knowledge. What action must the broker
+  take under Mississippi law?
+options:
+  - Notify the Commission immediately and forward the license.
+  - Notify the Commission if a felony occurs and forward the license.
+  - Notify the Commission within ten days and forward the license.
+  - Notify the Commission after review and forward the license.
+key: A
+explanation: Rule 5.1 D requires the broker to notify the Commission immediately and forward the
+  licensee's license when discovering a licensee operating independently or through another broker.
+  Waiting ten days or for a review does not meet the immediate requirement, and a felony is not the
+  trigger.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 § 5.1
+  url: null
+  quoted_text: If a broker finds that a licensee licensed under that broker has been operating
+    independently or through some other broker, the broker shall notify the Commission immediately
+    and forward said individual's license to the Commission.
+  secondary: []
+terms:
+  - broker
+  - licensee
+  - commission
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

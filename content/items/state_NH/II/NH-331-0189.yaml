@@ -1,0 +1,42 @@
+id: NH-331-0189
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum amount of the surety bond required for a principal or managing broker's
+  license in New Hampshire?
+options:
+  - $20,000
+  - $30,000
+  - $25,000
+  - $35,000
+key: C
+explanation: RSA 331-A:14 requires a surety bond of not less than $25,000 for principal or managing
+  broker licenses. The bond must be approved by the commission and executed by an authorized surety
+  company. Amounts below $25,000 do not satisfy the statutory minimum.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts Section 331-A:14
+  url: null
+  quoted_text: No principal or managing broker's license shall be issued or renewed until the
+    applicant gives to the commission a surety bond in any form approved by the commission in a sum
+    of not less than $25,000
+  secondary: []
+terms:
+  - surety bond
+  - principal broker
+  - managing broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

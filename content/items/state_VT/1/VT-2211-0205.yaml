@@ -1,0 +1,44 @@
+id: VT-2211-0205
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives an initial license on June 1, 2024. The Office’s renewal schedule sets
+  the next renewal date for June 30, 2025. When must the licensee first renew the license under 3
+  V.S.A. § 123(12)(B)?
+options:
+  - June 30, 2025
+  - June 30, 2026
+  - May 31, 2025
+  - July 1, 2025
+key: A
+explanation: Under 3 V.S.A. § 123(12)(B), if the initial license is issued more than 90 days before
+  the set renewal date, the licensee must renew at the scheduled renewal date. Here the license was
+  issued June 1, 2024, which is more than 90 days before the set renewal date of June 30, 2025, so
+  the first renewal is due on June 30, 2025. The option stating June 30, 2026 incorrectly applies a
+  biennial delay that only applies when the initial license is issued within 90 days of the renewal
+  date.
+citation:
+  source: 3 V.S.A. § 123(12)(B)
+  url: null
+  quoted_text: (B) A person whose initial license is issued within 90 days prior to the set renewal
+    date shall not be required to renew the license until the end of the first full biennial
+    licensing period following initial licensure.
+  secondary: []
+terms:
+  - initial license
+  - renewal date
+  - biennial period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

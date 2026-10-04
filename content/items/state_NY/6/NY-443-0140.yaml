@@ -1,0 +1,48 @@
+id: NY-443-0140
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre‑licensing course that includes 4 hours of Real Estate Finance
+  and 6 hours of Construction and Environmental Issues. According to the NY DOS syllabus, does the
+  course meet the minimum required hours for each of these two subjects?
+options:
+  - The course meets the minimum for both subjects because it exceeds the required hours for
+    Construction and Environmental Issues.
+  - The course meets the minimum for both subjects because the average of the two subjects meets the
+    requirement.
+  - The course does not meet the minimum for both subjects because it falls short of the required
+    hours for Real Estate Finance.
+  - The course does not meet the minimum for both subjects because it exceeds the allowed hours for
+    Construction and Environmental Issues.
+key: C
+explanation: Real Estate Finance mandates five hours; providing only four hours falls short of that
+  requirement. Although Construction and Environmental Issues is satisfied with six hours, the
+  shortfall in Finance means the course does not meet the minimum for both subjects. The distractor
+  that cites exceeding Construction hours incorrectly assumes one subject’s excess can compensate
+  for another’s deficit.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Real Estate Finance    5 
+    Land Use Regulations    3 
+    Construction and Environmental Issues    5
+  secondary: []
+terms:
+  - real estate finance
+  - construction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

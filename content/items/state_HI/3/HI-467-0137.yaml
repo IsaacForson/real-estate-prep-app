@@ -1,0 +1,42 @@
+id: HI-467-0137
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord and tenant in Hawaii enter into a written six-month lease agreement with no special
+  payment terms. According to Hawaii Revised Statutes § 521-21(b), when is rent payable under this
+  agreement?
+options:
+  - In a single payment at the beginning of the six-month term
+  - In equal monthly installments payable at the end of each month
+  - In equal monthly installments payable at the beginning of each month
+  - In weekly installments payable each Friday
+key: C
+explanation: Section 521-21(b) provides that, unless otherwise agreed, rent for longer terms is
+  payable in equal monthly installments at the beginning of each month. Since the six-month lease
+  has no special payment terms, rent follows this default rule. The other options either misstate
+  the timing, frequency, or default rule.
+citation:
+  source: Haw. Rev. Stat. ch. 521 — Hawaii Revised Statutes Chapter 521 - Residential Landlord-Tenant
+    Code (data.capitol.hawaii.gov, section pages concatenated) — § 521-21
+  url: null
+  quoted_text: Unless otherwise agreed, the entire rent shall be payable at the beginning of any term
+    for one month or less, and for longer terms in equal monthly installments payable at the
+    beginning of each month.
+  secondary: []
+terms:
+  - rent
+  - installment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

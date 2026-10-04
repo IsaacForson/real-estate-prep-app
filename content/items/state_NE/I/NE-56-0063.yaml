@@ -1,0 +1,43 @@
+id: NE-56-0063
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A witness who has been subpoenaed refuses to testify at the hearing. What action may the
+  commission take next?
+options:
+  - Impose a civil fine on the witness immediately
+  - Issue a cease and desist order against the witness
+  - File a petition with the district court to compel testimony
+  - Dismiss the case for lack of evidence
+key: C
+explanation: If a subpoenaed witness refuses to testify, the commission may apply to the district
+  court for an order compelling attendance and testimony, as stated in § 81‑885.28(1). Imposing a
+  fine, dismissing the case, or issuing a cease and desist order are not authorized responses to a
+  witness’s refusal to testify under this provision.
+citation:
+  source: Neb. Rev. Stat. § 81-885.28(1)
+  url: null
+  quoted_text: If any witness so subpoenaed shall refuse to attend the taking of a deposition or the
+    hearing, or if attending shall refuse to testify, the commission may apply to the district court
+    of the county in which the deposition is to be taken or in which the hearing is to be held for
+    an order compelling the attendance of the witness, the giving of testimony, and the production
+    of books, papers, and documents.
+  secondary: []
+terms:
+  - witness
+  - subpoena
+  - court
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

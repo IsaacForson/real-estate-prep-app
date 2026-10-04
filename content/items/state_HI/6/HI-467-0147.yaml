@@ -1,0 +1,41 @@
+id: HI-467-0147
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A brokerage firm receives a referral fee from another brokerage firm for a client. To comply
+  with Hawaii Administrative Rules §16-99-3(k), how must the brokerage firm compensate the licensee
+  of the other firm?
+options:
+  - Pay the other brokerage firm directly
+  - Pay the licensee directly for the referral
+  - Pay through the broker's trust account
+  - Pay after obtaining consent from commission
+key: A
+explanation: The rule prohibits compensating a licensee of another brokerage firm unless payment is
+  made directly to the other brokerage firm or caused to be made directly to that firm. Paying the
+  other brokerage firm directly satisfies this requirement. Paying the licensee directly violates
+  the rule because it bypasses the required direct payment to the brokerage firm.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(k)
+  url: null
+  quoted_text: (k) The brokerage firm shall not compensate a licensee of another brokerage firm in
+    connection with a real estate transaction without paying directly or causing the payment to be
+    made directly to the other brokerage firm.
+  secondary: []
+terms:
+  - compensation
+  - brokerage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

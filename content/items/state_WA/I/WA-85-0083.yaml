@@ -1,0 +1,41 @@
+id: WA-85-0083
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A presiding officer who personally participated in the decision to deny a broker’s license
+  renewal is assigned to conduct the brief adjudicative proceeding on that denial. Is this
+  permissible under Washington Administrative Code?
+options:
+  - The presiding officer may not preside because the director has not granted explicit permission.
+  - The presiding officer may not preside because they personally participated in the decision.
+  - The presiding officer may not preside because they will not issue an oral order.
+  - The presiding officer may not preside because they have disclosed their prior involvement.
+key: B
+explanation: The rule requires that the presiding officer for brief adjudicative proceedings shall
+  not have personally participated in the decision which resulted in the request. Therefore the
+  officer may not preside. The other options are not allowed by the text.
+citation:
+  source: Wash. Admin. Code ch. 308-124 — WAC Chapter 308-124 — Real Estate—General Provisions — §
+    308-124-315
+  url: null
+  quoted_text: The presiding officer for brief adjudicative proceedings shall not have personally
+    participated in the decision which resulted in the request for a brief adjudicative proceeding.
+  secondary: []
+terms:
+  - presiding officer
+  - brief adjudicative proceeding
+  - decision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

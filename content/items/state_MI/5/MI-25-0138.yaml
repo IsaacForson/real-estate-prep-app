@@ -1,0 +1,41 @@
+id: MI-25-0138
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender extends a loan secured by a first lien on a single-family owner-occupied dwelling.
+  Which of the following actions is prohibited under Michigan's usury act?
+options:
+  - Requiring borrower deposit
+  - Charging a prepayment fee
+  - Collecting recording fees
+  - Providing settlement statement
+key: A
+explanation: The statute prohibits a lender from directly or indirectly requiring a deposit to be
+  maintained by the borrower (other than an escrow account) as a condition of the loan for a
+  single-family dwelling. Charging a prepayment fee up to 1% is allowed, collecting recording fees
+  is permissible as a reasonable charge, and providing a loan settlement statement is required.
+citation:
+  source: Mich. Comp. Laws § 438.31c(2)(a)
+  url: null
+  quoted_text: Directly or indirectly require as a condition of the making of the loan, a deposit to
+    be maintained by the borrower, other than an escrow account or a deposit account which is
+    established pursuant to subsection (13).
+  secondary: []
+terms:
+  - deposit
+  - prepayment
+  - single-family
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

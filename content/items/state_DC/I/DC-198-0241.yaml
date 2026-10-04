@@ -1,0 +1,50 @@
+id: DC-198-0241
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Real Estate Guaranty and Education Fund has $400,000 deposited at the start of the fiscal
+  year. Under D.C. Code § 42-1707(o), what is the maximum amount that may be expended from the Fund
+  for educational programs on October 1 of that year?
+options:
+  - $60,000.00
+  - $80,000.00
+  - $100,000.00
+  - $120,000.00
+key: B
+explanation: The statute allows the Board to spend up to 20% of the Fund's deposits for educational
+  programs each October 1. The $60,000 distractor mistakenly uses 15% of the deposit.
+citation:
+  source: D.C. Code §§ 42-1701–42-1709 — D.C. Code Title 42, Ch. 17, Subch. I - Real Estate Brokers'
+    Duties; Real Estate Guaranty and Education Fund — § 42-1707
+  url: null
+  quoted_text: The Board may expend a sum not to exceed 20% of the amounts deposited in the Fund, on
+    October 1 of each year, for the establishment and maintenance of educational programs for
+    improving the competency of licensees and applicants for licensure so as to further protect the
+    public interest, and for conferences, workshops, and educational programs for real estate
+    license officials.
+  secondary: []
+math:
+  worked_solution: |-
+    Deposit amount = $400,000.
+    Maximum educational expenditure = 0.20 × $400,000 = $80,000.
+  formulas:
+    - maximum_educational_expenditure = deposit_amount × 0.20
+  onscreen_calculator_only: false
+terms:
+  - educational expenditure
+  - fund deposit
+  - percentage limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

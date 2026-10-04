@@ -1,0 +1,45 @@
+id: MS-1954-0291
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person holds a duly executed power of attorney from a property owner authorizing the sale of
+  the owner's residential home. Under Miss. Code Ann. § 73-35-3(9)(b), is a real estate license
+  required for this person to conduct the sale?
+options:
+  - The person must first become a licensed real estate salesperson to act under the power of
+    attorney
+  - The person must obtain a real estate license before proceeding with the sale
+  - The person is exempt as they hold a valid power of attorney from the owner
+  - The person may only act if they are also the owner of the property being sold
+key: C
+explanation: Under §73-35-3(9)(b), any person holding in good faith a duly executed power of
+  attorney from the owner authorizing the sale of real estate is exempt from licensing requirements.
+  Therefore, no license is needed. The distractor suggesting a salesperson license is required
+  contradicts the statutory exemption.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) §73-35-3(9)(b)
+  url: null
+  quoted_text: (b) Any person holding in good faith a duly executed power of attorney from the owner,
+    authorizing the final consummation and execution for the sale, purchase, leasing or exchange of
+    real estate.
+  secondary: []
+terms:
+  - power of attorney
+  - exemption
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

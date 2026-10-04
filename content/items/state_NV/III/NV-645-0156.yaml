@@ -1,0 +1,51 @@
+id: NV-645-0156
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee terminated a brokerage agreement with a client on June 15, 2023. On July 20, 2024,
+  the licensee discloses the client's confidential financial details to a colleague without the
+  client's permission or a court order. According to Nevada law, is the licensee's disclosure
+  permissible?
+options:
+  - Yes, because more than one year has passed since the agreement ended.
+  - No, because less than six months have elapsed since termination.
+  - Yes, because the client gave written permission for the disclosure.
+  - No, because the disclosure occurred prior to the one‑year period ending.
+key: A
+explanation: Under Nev. Rev. Stat. § 645.254(2), a licensee must not disclose confidential client
+  information for one year after the brokerage agreement is terminated, unless required by a court
+  order. The disclosure on July 20, 2024 occurred more than one year after the June 15, 2023
+  termination, so the confidentiality prohibition no longer applies. Therefore, the disclosure is
+  permissible absent a court order or client permission. The statement that more than one year has
+  passed since the agreement ended correctly reflects this rule. The claim that less than six months
+  have elapsed is incorrect because the elapsed time exceeds one year. The claim that the client
+  gave written permission is unsupported by the facts. The claim that the disclosure occurred prior
+  to the one‑year period ending is also incorrect because the disclosure happened after that period.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.254(2)
+  url: null
+  quoted_text: Shall not disclose confidential information relating to a client for 1 year after the
+    revocation or termination of the brokerage agreement, unless he or she is required to do so
+    pursuant to an order of a court
+  secondary: []
+terms:
+  - confidentiality
+  - termination
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

@@ -1,0 +1,45 @@
+id: UT-101-0316
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee representing a buyer learns that the buyer cannot secure financing, a known
+  material fact concerning the client's ability to perform. The licensee discloses this fact to the
+  seller without the buyer's permission. Is this permitted under Utah Admin. Code R162-2f-401a?
+options:
+  - Not permitted, because the licensee must obtain the buyer's permission before disclosing any
+    information
+  - Permitted, but only if the licensee also discloses a known defect in the property
+  - Not permitted, because the licensee must first inform the principal broker
+  - Permitted, as the confidentiality duty excludes known material facts concerning the client's
+    ability to perform
+key: D
+explanation: The rule exempts known material facts concerning the client's ability to perform from
+  the confidentiality duty, allowing disclosure without permission. The most tempting distractor
+  incorrectly asserts that permission is always required, ignoring the statutory exception.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-401a
+  url: null
+  quoted_text: "but excepting any known material fact concerning: (i) a defect in the property; or
+    (ii) the client's ability to perform on the contract;"
+  secondary: []
+terms:
+  - confidentiality
+  - ability to perform
+  - material fact
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

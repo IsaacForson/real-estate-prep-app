@@ -1,0 +1,47 @@
+id: ID-20-0301
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens a real estate trust account and deposits $120 of firm funds to cover
+  anticipated bank charges. During the month, the broker incurs $15 in bank charges paid from the
+  account. To replenish the account, the broker deposits an additional $80 of firm funds. What is
+  the resulting balance of broker or firm funds in the trust account, and does it comply with Idaho
+  law?
+options:
+  - $200 and non‑compliant
+  - $105 and compliant
+  - $185 and compliant
+  - $250 and compliant
+key: C
+explanation: The broker’s funds are calculated as $120 initial deposit minus $15 in charges, leaving
+  $105, then plus an $80 replenishment equals $185. Under Idaho Code § 54-2042(7), broker or firm
+  funds must not exceed $300, so $185 is compliant. The $105 and compliant option is incorrect
+  because it omits the second deposit.
+citation:
+  source: Idaho Code § 54-2042(7)
+  url: null
+  quoted_text: In no event shall the balance of broker or firm funds in the account exceed three
+    hundred dollars ($300).
+  secondary: []
+math:
+  worked_solution: 120 - 15 = 105; 105 + 80 = 185
+  formulas:
+    - Balance = Initial deposit - Charges + Additional deposit
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - broker funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

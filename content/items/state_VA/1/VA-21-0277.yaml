@@ -1,0 +1,38 @@
+id: VA-21-0277
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, what is the maximum length of time that bidding may remain open at a real
+  estate auction conducted by a licensed auctioneer employed by the property owner?
+options:
+  - 24 hours
+  - 36 hours
+  - 48 hours
+  - 72 hours
+key: C
+explanation: The exemption for auctioneers applies only when the bidding at the auction is held open
+  for no longer than 48 hours. This limit is set forth in Virginia Code § 54.1-2103.A.8. Therefore,
+  bidding may not exceed 48 hours.
+citation:
+  source: Va. Code Ann. § 54.1-2103.A.8
+  url: null
+  quoted_text: provided the bidding at such auction is held open for no longer than 48 hours.
+  secondary: []
+terms:
+  - auction
+  - bidding
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

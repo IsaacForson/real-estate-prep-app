@@ -1,0 +1,42 @@
+id: WY-101-0171
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Wyoming responsible broker who does not own a parcel of land wishes to advertise its sale.
+  What must the advertisement include under Wyoming law?
+options:
+  - The broker's personal phone number under his license
+  - The real estate company name under his license
+  - The broker's license number under his license
+  - The property's street address under his license
+key: B
+explanation: Wyoming law requires a responsible broker who does not own the advertised property to
+  include the real estate company name under which he is licensed in the advertisement. Omitting
+  that name violates the advertising rule. The distractor suggesting a personal email address is
+  insufficient because the rule specifically mandates the company name, not personal contact
+  details.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-119(f)
+  url: null
+  quoted_text: A licensed responsible broker shall not advertise the sale, purchase, exchange or lease
+    of real estate, unless owned by him, without including in the advertisement the real estate
+    company name under which he is licensed by the commission.
+  secondary: []
+terms:
+  - advertisement
+  - responsible broker
+  - company name
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

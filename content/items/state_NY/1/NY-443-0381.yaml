@@ -1,0 +1,54 @@
+id: NY-443-0381
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A seller knowingly fails to provide a property condition disclosure statement despite being
+  aware of a defective foundation. The buyer discovers the defect after closing and incurs $12,000
+  in repair costs. Under NY Real Property Law § 465, what is the seller’s liability for this willful
+  failure?
+options:
+  - The seller is liable for the buyer’s actual damages plus any other existing equitable or
+    statutory remedy.
+  - The seller is liable only for statutory damages set by the Department of State.
+  - The seller has no liability because the disclosure statement was not required.
+  - The seller is liable only if the buyer can prove fraudulent intent.
+key: A
+explanation: Under NY Real Property Law § 465, for a willful failure to provide the required
+  property condition disclosure statement, the seller is liable for the buyer’s actual damages plus
+  any other existing equitable or statutory remedy. The $12,000 repair cost is the actual damages,
+  so the seller must pay that amount plus any other remedy available.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    465
+  url: null
+  quoted_text: Any seller who provides a property condition disclosure statement or provides or fails
+    to provide a revised property condition disclosure statement shall be liable only for a willful
+    failure to perform the requirements of this article. For such a willful failure, the seller
+    shall be liable for the actual damages suffered by the buyer in addition to any other existing
+    equitable or statutory remedy.
+  secondary: []
+math:
+  worked_solution: Given repair cost = $12,000. Actual damages = repair cost = $12,000.
+  formulas:
+    - Actual damages = repair cost
+  onscreen_calculator_only: false
+terms:
+  - willful
+  - actual damages
+  - liability
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

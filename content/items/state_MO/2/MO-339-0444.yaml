@@ -1,0 +1,52 @@
+id: MO-339-0444
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A corporation applies for a Missouri real estate broker license. Its sole shareholder is an
+  individual whose real estate salesperson license was revoked two years ago for violating
+  commission rules. Under 339.080 RSMo, may the commission refuse to issue the broker license to
+  this corporation?
+options:
+  - A decision to refuse the license, but only if the revoked licensee serves as an officer or
+    general partner
+  - A decision to approve the license because revocation of a salesperson license does not affect
+    corporate eligibility
+  - A decision to refuse the license because the revoked licensee holds a controlling interest as
+    the sole stockholder
+  - A decision to approve the license because the revocation occurred more than one year ago
+key: C
+explanation: The commission may refuse to issue a license to any corporation where a person whose
+  license has been revoked holds a controlling interest as a stockholder. Since the shareholder is
+  the sole stockholder and his salesperson license was revoked, refusal is permitted. The claim that
+  revocation of a salesperson license does not affect corporate eligibility is incorrect because the
+  statute bases refusal on the person’s revoked license and controlling interest, not on the license
+  type.
+citation:
+  source: Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules) — Missouri Real Estate
+    Commission — Statutes (RSMo Chapter 339) and Rules (20 CSR 2250) book (June 2023) — § 339.080
+  url: null
+  quoted_text: or may refuse to issue a license to any association, partnership, corporation,
+    professional corporation, limited partnership, or limited liability company of which such person
+    is a manager, officer or general partner, or in which as a member, partner or associate such
+    person has or exercises a controlling interest either directly or indirectly, or to any
+    corporation of which such person is an officer or in which as a stockholder such person has or
+    exercises a controlling interest either directly or indirectly.
+  secondary: []
+terms:
+  - license
+  - corporation
+  - controlling interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

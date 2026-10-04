@@ -1,0 +1,49 @@
+id: NV-645-0169
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee ends a brokerage agreement with a seller on July 10, 2023. The licensee waits until
+  July 11, 2024 to share the seller's confidential closing statement with a family member, without
+  the seller's permission or a court order. According to Nevada law, is the licensee allowed to
+  disclose the information?
+options:
+  - No, because the licensee must obtain written permission regardless of time.
+  - Yes, because the one-year confidentiality period has expired.
+  - No, because disclosure to a family member is prohibited.
+  - Yes, but only if the licensee first notifies the broker.
+key: B
+explanation: Under Nev. Rev. Stat. § 645.254, a licensee shall not disclose confidential information
+  relating to a client for 1 year after the revocation or termination of the brokerage agreement,
+  unless required by court order or given written permission by the client. The one-year period ends
+  on July 10, 2024; a disclosure on July 11, 2024 occurs after that date, so the statutory
+  prohibition no longer applies. The assertion that written permission is always needed overlooks
+  the automatic expiration of the confidentiality duty after one year.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.254"
+  url: null
+  quoted_text: Shall not disclose confidential information relating to a client for 1 year after the
+    revocation or termination of the brokerage agreement, unless he or she is required to do so
+    pursuant to an order of a court of competent jurisdiction or is given written permission to do
+    so by the client;
+  secondary: []
+terms:
+  - confidentiality
+  - brokerage agreement
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

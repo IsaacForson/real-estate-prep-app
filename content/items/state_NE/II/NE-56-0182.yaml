@@ -1,0 +1,43 @@
+id: NE-56-0182
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a broker's price opinion for a lienholder to determine loan value, and the
+  lienholder uses it as the sole basis for the loan. Under Neb. Rev. Stat. § 81-885.16(3), is this
+  permissible?
+options:
+  - yes, because the licensee is engaged directly by the lienholder
+  - no, unless the opinion includes the required disclosure
+  - yes, because the opinion is in writing
+  - no, because it cannot be the sole basis for loan value
+key: D
+explanation: The statute prohibits using a broker's price opinion as the sole basis to determine the
+  value of real estate for originating a loan secured by that real estate. Therefore, even if the
+  opinion is in writing or includes disclosure, using it as the sole basis for loan value is not
+  allowed.
+citation:
+  source: Neb. Rev. Stat. § 81-885 et seq. — Nebraska Real Estate License Act, Neb. Rev. Stat. §§
+    81-885 to 81-885.56 — NREC License Manual, Aug. 2026 ed. (OCR of scanned PDF) — § 81-885.16(3)
+  url: null
+  quoted_text: A broker's price opinion or comparative market analysis prepared for an existing or
+    potential lienholder originating, extending, renewing, or modifying a loan in a transaction
+    other than a federally related transaction may not be used as the sole basis to determine the
+    value of the real estate for the purpose of originating a loan secured by such real estate,
+  secondary: []
+terms:
+  - broker's price opinion
+  - loan value
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

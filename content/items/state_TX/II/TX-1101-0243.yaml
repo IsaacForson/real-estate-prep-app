@@ -1,0 +1,40 @@
+id: TX-1101-0243
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker who lives in Oklahoma holds an active Texas real estate license and conducts all
+  business remotely. Under Texas Occupations Code §1101.552, which statement is correct regarding
+  the broker’s office requirement?
+options:
+  - The broker must maintain a fixed office in Texas.
+  - The broker must designate an office address on the license.
+  - The broker is not required to maintain a fixed office in Texas.
+  - The broker must submit an address change within 10 days of moving.
+key: C
+explanation: Subsection (d) explicitly states that a nonresident licensed broker is not required to
+  maintain a place of business in this state. The broker resides in Oklahoma and holds a Texas
+  license, so the exemption applies. A frequent error is to assume all brokers must maintain a fixed
+  office in Texas, which only applies to resident brokers under subsection (a).
+citation:
+  source: Tex. Occ. Code § 1101.552(d)
+  url: null
+  quoted_text: A nonresident licensed broker is not required to maintain a place of business in this state.
+  secondary: []
+terms:
+  - resident broker
+  - nonresident broker
+  - fixed office
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

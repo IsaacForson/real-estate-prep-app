@@ -1,0 +1,47 @@
+id: MS-1954-0119
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: analysis
+stem: Which of the following actions by a responsible broker would violate both the requirement to
+  deposit earnest money within two banking days and the prohibition against commingling monies
+  belonging to others with personal funds under § 73-35-21(f)?
+options:
+  - Deposits the earnest money into the broker’s personal checking account on the day it is received
+  - Deposits the earnest money into the trust account on the third banking day after receipt
+  - Keeps the earnest money in the office safe for two banking days, then deposits it into the trust
+    account
+  - Deposits earnest money in trust account on second banking day, then uses some for personal
+    expenses.
+key: A
+explanation: Placing earnest money in a personal account mixes client funds with the broker’s own
+  funds (commingling) and fails to place the money in a trust or escrow account, thus violating both
+  the commingling prohibition and the deposit‑timing rule. The other options violate only one of the
+  two requirements.
+citation:
+  source: Miss. Code Ann. § 73-35-21(f)
+  url: null
+  quoted_text: Failing, within a reasonable time, to account for or to remit any monies coming into
+    his or her possession which belong to others, or commingling of monies belonging to others with
+    his or her own funds. Every responsible broker procuring the execution of an earnest money
+    contract or option or other contract who shall take or receive any cash or checks shall deposit,
+    within a reasonable period of time, the sum or sums so received in a trust or escrow account in
+    a bank or trust company pending the consummation or termination of the transaction.
+  secondary: []
+terms:
+  - commingling
+  - trust account
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

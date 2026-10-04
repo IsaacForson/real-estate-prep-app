@@ -1,0 +1,55 @@
+id: UT-101-0067
+jurisdiction: UT
+bank: state_UT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee gives a $300 gift to an individual who provided an unsolicited referral that
+  resulted in a real estate transaction. Under Utah Admin. Code R162-2f-401b(1)(l)(i), is this
+  permissible?
+options:
+  - It is not permissible because the gift exceeds $250 in value.
+  - It is permissible because the gift is under $500 in value.
+  - It is permissible because the referral led to a transaction.
+  - It is not permissible because gifts for referrals are prohibited.
+key: A
+explanation: The rule permits a licensee to give a gift valued at $250 or less to an individual for
+  an unsolicited referral that results in a real estate transaction. A $300 gift exceeds this limit,
+  so it is not permissible. The option stating that the gift is permissible because the referral led
+  to a transaction fails to consider the dollar cap.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-401b
+  url: null
+  quoted_text: (i) a licensee may give a gift valued at $250 or less to an individual in appreciation
+    for an unsolicited referral of a prospect that results in a real estate transaction;
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the maximum allowed gift amount under Utah Admin. Code
+    R162-2f-401b(1)(l)(i): $250. Step 2: Compare the actual gift amount of $300 to the limit. Step
+    3: Since $300 is greater than $250, the gift exceeds the allowed limit. Step 4: Therefore,
+    giving a $300 gift for an unsolicited referral that results in a transaction is not
+    permissible."
+  formulas:
+    - Permissible if gift amount ≤ $250
+    - Not permissible if gift amount > $250
+  onscreen_calculator_only: false
+terms:
+  - gift
+  - referral
+  - unsolicited
+  - value
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

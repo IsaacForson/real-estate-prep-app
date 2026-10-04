@@ -1,0 +1,40 @@
+id: TX-1101-0244
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder attends continuing education courses that are offered in 2‑hour segments each
+  day. What is the minimum number of days the license holder must attend to satisfy the total
+  continuing education requirement under Texas Occupations Code §1101.455?
+options:
+  - 9 days
+  - 7 days
+  - 8 days
+  - 10 days
+key: C
+explanation: Subsection (b) requires at least 15 classroom hours of continuing education for
+  renewal. Attending 2‑hour segments each day, eight days yield 16 hours, meeting the minimum; seven
+  days provide only 14 hours, which is insufficient. The distractor of seven days is tempting
+  because it is close to the required total, but it falls short of the 15‑hour minimum.
+citation:
+  source: Tex. Occ. Code § 1101.455(b)
+  url: null
+  quoted_text: The commission by rule shall prescribe the number of classroom hours of continuing
+    education courses the license holder must attend, which must be at least 15 classroom hours.
+  secondary: []
+terms:
+  - continuing education
+  - classroom hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

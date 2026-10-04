@@ -1,0 +1,48 @@
+id: TN-1973-0145
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Tennessee Real Estate Commission rules, how is 'trust money' defined?
+options:
+  - The act of a licensee maintaining funds belonging to others in the same bank account that
+    contains his or her personal or business funds without prior written consent
+  - Money belonging to others received by a licensee acting as an agent in a real estate
+    transaction, or any money held by a licensee as temporary custodian of others' funds
+  - Funds deposited by a licensee into a personal savings account for future business expenses,
+    subject to approval by the principal broker
+  - Money held by a broker on behalf of a principal broker for office overhead, provided the funds
+    are properly recorded in the broker's ledger
+key: B
+explanation: The rule defines trust money as money belonging to others received by a licensee acting
+  as an agent in a real estate transaction, or any money held by a licensee as temporary custodian
+  of others' funds. The option describing money held by a broker on behalf of a principal broker for
+  office overhead describes commingling, which is a different concept.
+citation:
+  source: "### Tenn. Comp. R. & Regs. 1260-02 — Tenn. Comp. R. & Regs. ch. 1260-02 — Tennessee Real
+    Estate Commission rules: Rules of Conduct (rev. Sept. 2025), official Secretary of State PDF
+    read via Internet Archive capture of 2026-04-16 because publications.tnsosfiles.com returns 403
+    to scripts — § 1260-02-.09"
+  url: null
+  quoted_text: |-
+    Money belonging to others received by a licensee who is acting as an agent or
+    facilitator in a real estate transaction; or
+    2. Any money held by a licensee who acts as the temporary custodian of funds
+    belonging to others
+  secondary: []
+terms:
+  - trust money
+  - commingling
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

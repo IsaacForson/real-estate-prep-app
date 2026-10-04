@@ -1,0 +1,49 @@
+id: NM-1-0195
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer submits an application to register a time share project with 80 interests to be
+  sold. According to 16.61.25.8 NMAC, what is the total registration fee that must accompany the
+  application?
+options:
+  - $1,500.00
+  - $1,000.00
+  - $1,200.00
+  - $1,600.00
+key: A
+explanation: The fee is $20 per interest, but the total may not exceed $1,500. For 80 interests, 80
+  × $20 = $1,600, which exceeds the cap, so the fee is limited to $1,500. The $1,600.00 distractor
+  results from applying the per‑interest rate without observing the maximum, while $1,000.00 and
+  $1,200.00 use incorrect interest counts.
+citation:
+  source: 16.61 NMAC § 16.61.25.8
+  url: null
+  quoted_text: "Registration fee: Every application for time share project registration must be
+    accompanied by a certified check made payable to the New Mexico real estate commission in the
+    amount of twenty dollars ($20.00) per time share interest to be sold, to a maximum of one
+    thousand five hundred dollars ($1,500.00)."
+  secondary: []
+math:
+  worked_solution: "Step 1: Multiply number of interests by $20: 80 × $20 = $1,600. Step 2: Compare to
+    maximum $1,500; since $1,600 > $1,500, the fee is capped at $1,500."
+  formulas:
+    - Fee = min(Number of interests × $20, $1,500)
+  onscreen_calculator_only: false
+terms:
+  - registration fee
+  - time share interest
+  - maximum
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

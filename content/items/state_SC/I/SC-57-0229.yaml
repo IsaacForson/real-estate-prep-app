@@ -1,0 +1,42 @@
+id: SC-57-0229
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-in-charge asks a supervised licensee to oversee the brokerage's real estate trust
+  account. According to S.C. Code Ann. § 40-57-30(7), is this permissible?
+options:
+  - The assignment is permissible if the broker-in-charge remains liable for the trust account
+  - The assignment is permissible because supervised licensees may assist with trust account duties
+  - The assignment is not permissible because the authority cannot be assigned to another licensee
+  - The assignment is not permissible unless the supervised licensee holds a broker-in-charge license
+key: C
+explanation: Section 40-57-30(7) explicitly states that the authority granted to the
+  broker-in-charge cannot be assigned or designated to another licensee. Therefore, delegating
+  oversight of the trust account to a supervised licensee violates this prohibition. The assignment
+  might seem plausible if the broker-in-charge remains liable for the trust account, but the rule
+  forbids any assignment of authority regardless of retained liability.
+citation:
+  source: S.C. Code Ann. § 40-57-30(7)
+  url: null
+  quoted_text: The authority granted to the broker-in-charge cannot be assigned or designated to
+    another licensee
+  secondary: []
+terms:
+  - broker-in-charge
+  - supervised licensee
+  - trust account
+  - authority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,41 @@
+id: AK-88-0258
+jurisdiction: AK
+bank: state_AK
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee holds both an active broker license and an active salesperson license under AS
+  08.88.161. The licensee’s insurer notifies the commission that the premium was not paid, resulting
+  in termination of coverage on May 10. According to 12 AAC 64.620, what is the status of the
+  licensee’s licenses as of May 10?
+options:
+  - Broker license suspended; salesperson license active.
+  - Salesperson license suspended; broker license active.
+  - Both licenses are suspended effective May 10.
+  - Neither license is suspended until notice is received.
+key: C
+explanation: The rule requires suspension of any license under AS 08.88.161 held by the licensee as
+  of the date of termination of coverage, so both licenses are suspended on May 10. The other
+  options incorrectly limit the suspension to one license or delay it.
+citation:
+  source: 12 Alaska Admin. Code § 64.010 et seq. — Alaska Administrative Code Title 12, Chapter 64 -
+    Real Estate Commission — § 64.620
+  url: null
+  quoted_text: the commission shall suspend any license under AS 08.88.161 held by that licensee as of
+    the date of termination of coverage.
+  secondary: []
+terms:
+  - license
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

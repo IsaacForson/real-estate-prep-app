@@ -1,0 +1,49 @@
+id: SC-57-0228
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee who is representing a buyer in a purchase transaction deposits the buyer's earnest
+  money into an account titled 'Trust Account' at their bank. According to S.C. Code Ann. §
+  40-57-30(28), is this permissible?
+options:
+  - The deposit is permissible because the account includes the word "trust" and is properly titled
+  - The deposit is not permissible because the account must be for the licensee's personal real
+    estate
+  - The deposit is permissible because the licensee is acting as an agent for the buyer in the
+    transaction
+  - The deposit is not permissible because the licensee failed to notify the commission of the change
+key: B
+explanation: The definition of a personal trust account limits its use to safeguarding funds for the
+  licensee's own personal real estate that is not managed through a brokerage firm. Since the
+  licensee is holding earnest money for a client transaction, the account does not meet that
+  requirement, making the deposit impermissible. The idea that merely including the word 'trust' in
+  the account title and calling it properly titled is insufficient, because the statute limits such
+  accounts to the licensee's own personal real estate not managed through a brokerage.
+citation:
+  source: S.C. Code Ann. § 40-57-30(28)
+  url: null
+  quoted_text: means an escrow account or demand deposit bank account properly designated and titled
+    to include the words "trust" or "escrow" that is established and maintained by a licensee to
+    safeguard funds belonging to parties to a real estate transaction when the transaction involves
+    the licensee's personal real estate and the real estate is not managed or listed through a real
+    estate brokerage firm
+  secondary: []
+terms:
+  - personal trust account
+  - earnest money
+  - licensee
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

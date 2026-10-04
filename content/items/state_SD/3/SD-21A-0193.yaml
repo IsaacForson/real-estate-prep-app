@@ -1,0 +1,43 @@
+id: SD-21A-0193
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under South Dakota law, what is the legal consequence for an unlicensed person who sues to
+  recover compensation for performing real estate services that require a license?
+options:
+  - The court may award compensation only if the services were merely informative
+  - The court may award compensation if the unlicensed person later obtains a license
+  - The court may not award any compensation for the services performed
+  - The court may award compensation if the client agreed to pay in writing
+key: C
+explanation: "Under S.D. Codified Laws § 36-21A-88, an unlicensed person may not maintain an action
+  or recover compensation for performing services that require a license. Therefore, a court may not
+  award any compensation for such services. The other options are incorrect because: services that
+  are merely informative still constitute prohibited acts if they require a license; obtaining a
+  license after the services were performed does not retroactively authorize recovery; and a
+  client’s written agreement to pay does not override the statutory bar on recovery."
+citation:
+  source: S.D. Codified Laws § 36-21A-88
+  url: null
+  quoted_text: No action or suit may be instituted, nor recovery be had, in any court of this state by
+    a person for compensation for an act done or service rendered, the doing or rendering of which
+    is prohibited under the provisions of this chapter, to other than persons licensed under this
+    chapter
+  secondary: []
+terms:
+  - unlicensed
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

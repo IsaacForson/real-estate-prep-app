@@ -1,0 +1,42 @@
+id: MN-82-0248
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee has a buyer's broker agreement that expired on June 1. The licensee furnished the
+  buyer with a protective list on June 4. The licensee now seeks to enforce an override clause in
+  the agreement. Is the licensee permitted to enforce the override clause?
+options:
+  - No, because override clauses are not enforceable.
+  - No, because override clauses are not allowed.
+  - Yes, because the list was furnished within 72 hours.
+  - No, because the list was furnished after 72 hours.
+key: C
+explanation: Under Minn. Stat. § 82.66 Subd. 2(d)(1), a licensee may seek to enforce an override
+  clause only after furnishing a protective list to the buyer within 72 hours of the agreement's
+  expiration. Here the agreement expired on June 1 and the list was furnished on June 4, which is
+  within the 72‑hour period, so the licensee may enforce the override clause. If the list were
+  furnished after 72 hours, enforcement would not be permitted.
+citation:
+  source: Minn. Stat. § 82.66 Subd. 2(d)(1)
+  url: null
+  quoted_text: Licensees shall not seek to enforce an override clause unless a protective list has
+    been furnished to the buyer within 72 hours after the expiration of the buyer's broker
+    agreement.
+  secondary: []
+terms:
+  - override clause
+  - protective list
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

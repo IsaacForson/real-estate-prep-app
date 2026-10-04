@@ -1,0 +1,62 @@
+id: MN-82-0040
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Minnesota real estate salesperson had a claim paid from the real estate education, research
+  and recovery fund in the amount of $7,500. After the license was automatically suspended, what
+  must the salesperson do to have the license reinstated?
+options:
+  - The salesperson must repay the $7,500 paid from the fund and obtain a $20,000 surety bond.
+  - The salesperson must repay twice the amount paid ($15,000) plus interest at 12% per year and
+    obtain a $40,000 surety bond.
+  - The salesperson must repay the $7,500 plus interest at 6% per year and obtain a $40,000 surety
+    bond.
+  - The salesperson must repay the $7,500 and complete 30 hours of continuing education.
+key: B
+explanation: Under Minn. Stat. § 82.86 Subd. 13, a licensee whose claim has been paid from the real
+  estate education, research and recovery fund must repay twice the amount paid from the fund, plus
+  interest at 12 percent per year, and obtain a $40,000 surety bond before the license can be
+  reinstated. The correct option states that the salesperson must repay twice the $7,500 ($15,000)
+  plus interest at 12% per year and obtain a $40,000 surety bond. The other options are incorrect
+  because they either specify a different bond amount, omit the double repayment or interest
+  requirement, or add a continuing education requirement that is not required for reinstatement.
+citation:
+  source: Minn. Stat. § 82.86 Subd. 13
+  url: null
+  quoted_text: No broker, salesperson, or closing agent shall be granted reinstatement until the
+    person has repaid in full, plus interest at the rate of 12 percent a year, twice the amount paid
+    from the fund on the person's account, and has obtained a surety bond issued by an insurer
+    authorized to transact business in this state in the amount of $40,000.
+  secondary: []
+math:
+  worked_solution: |-
+    Fund payment = $7,500.
+    Twice the amount = 2 × $7,500 = $15,000.
+    Interest rate = 12% per year.
+    Interest per year = $15,000 × 0.12 = $1,800.
+    Total repayment after one year = $15,000 + $1,800 = $16,800.
+    Surety bond required = $40,000.
+  formulas:
+    - "Twice the fund payment: 2 × fund amount"
+    - "Interest: principal × rate"
+    - "Total repayment: principal + interest"
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - surety bond
+  - interest
+  - repayment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

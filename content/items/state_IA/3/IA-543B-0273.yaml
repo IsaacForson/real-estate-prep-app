@@ -1,0 +1,40 @@
+id: IA-543B-0273
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum civil penalty that may be imposed per violation under Iowa Code ch. 543B
+  for licensee discipline?
+options:
+  - $1,000 per violation
+  - $500 per violation
+  - $5,000 per violation
+  - $2,500 per violation
+key: D
+explanation: Iowa Code §543B.48 states that licensee discipline may include a civil penalty not to
+  exceed two thousand five hundred dollars per violation. Therefore, the correct amount is $2,500
+  per violation. The $1,000 figure applies to the limit for personal funds in a trust account, not
+  to civil penalties.
+citation:
+  source: "### Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §
+    543B.48"
+  url: null
+  quoted_text: Notwithstanding section 272C.3, licensee discipline may include a civil penalty not to
+    exceed two thousand five hundred dollars per violation.
+  secondary: []
+terms:
+  - civil penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,44 @@
+id: NY-443-0153
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "9"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A broker publishes an advertisement stating 'Adults only, no children' for a rental apartment
+  in a building that is not designated as senior housing. Under New York Executive Law §
+  296(5)(a)(3), this advertisement is:"
+options:
+  - It is lawful because the building is owner-occupied
+  - It is unlawful because it expresses a familial status limitation
+  - It is lawful because familial status is not a protected class
+  - It is unlawful because it discriminates based on age
+key: B
+explanation: The statute prohibits printing any statement that expresses a limitation as to familial
+  status, which includes restrictions on children. Therefore, the advertisement is unlawful. The
+  distractor claiming it is lawful because the building is owner-occupied is incorrect because that
+  exemption applies only to buildings with not more than two families where the owner resides, a
+  condition not present in the scenario.
+citation:
+  source: N.Y. Exec. Law art. 15 — Executive Law Article 15 (Human Rights Law) excerpts — NY DOS 'Real
+    Estate License Law' booklet, March 2026 — § 296(5)(a)(3)
+  url: null
+  quoted_text: expresses, directly or indirectly, any limitation, specification or discrimination as
+    to race, creed, color, national origin, sexual orientation, military status, sex, age,
+    disability, marital status, or familial status
+  secondary: []
+terms:
+  - familial status
+  - advertisement
+  - discrimination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

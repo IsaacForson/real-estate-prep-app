@@ -1,0 +1,44 @@
+id: TX-1101-0242
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A broker who works as an employee for another broker and receives a salary but no commission
+  asks whether they need to provide additional information when renewing their license. According to
+  Texas Occupations Code §1101.552(g), what is the correct classification of this broker?
+options:
+  - The broker is classified as an associated broker
+  - The broker is classified as a resident broker
+  - The broker is classified as a nonresident broker
+  - The broker is classified as a sales agent
+key: A
+explanation: Subsection (g) defines an associated broker as a broker who associates with and is paid
+  through another broker under a continuous relationship, including as an employee. The scenario
+  describes a broker working as an employee for another broker and receiving a salary, which matches
+  this definition. A common misconception is to think the broker must be classified as a resident
+  broker, but residency is unrelated to the associated broker definition.
+citation:
+  source: Tex. Occ. Code § 1101.552(g)
+  url: null
+  quoted_text: In this section, "associated broker" means a broker who associates with and is paid
+    through another broker under a relationship that is intended to be a continuous relationship,
+    including as an employee or an ongoing independent contractor.
+  secondary: []
+terms:
+  - associated broker
+  - resident broker
+  - nonresident broker
+  - sales agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,39 @@
+id: ME-114-0199
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A transaction broker conducts an inspection of a property for the benefit of the buyer. Under
+  32 M.R.S. § 13283(3)(A), this action is:"
+options:
+  - This action is allowed if the buyer consents to the inspection.
+  - This action is prohibited as it violates the duty not to conduct inspections.
+  - This action is permitted because it is considered a ministerial act.
+  - This action is required to protect the buyer's interests during the transaction.
+key: B
+explanation: The statute prohibits a transaction broker from conducting an inspection,
+  investigation, or analysis of a property for the benefit of any party. Therefore, performing such
+  an inspection for the buyer’s benefit is prohibited. The most tempting distractor is the claim
+  that the action is permitted as a ministerial act, but the statute explicitly forbids inspections
+  regardless of their characterization.
+citation:
+  source: 32 M.R.S. § 13283(3)(A)
+  url: null
+  quoted_text: A. Conduct an inspection, investigation or analysis of a property for the benefit of any party;
+  secondary: []
+terms:
+  - inspection
+  - prohibited act
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

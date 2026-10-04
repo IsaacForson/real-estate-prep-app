@@ -1,0 +1,42 @@
+id: PA-9-0228
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson whose license was originally issued 4 months ago applies for renewal of the
+  current license. Under 49 Pa. Code § 35.383(a)(1), is the salesperson eligible for a full waiver
+  of the continuing education requirement?
+options:
+  - The salesperson is ineligible for any waiver
+  - The salesperson must complete the full 14 hours
+  - The salesperson qualifies for a partial waiver of 1 hour
+  - The salesperson qualifies for a full waiver
+key: D
+explanation: Section 35.383(a)(1) provides a full waiver when a license holder seeks renewal of a
+  license initially issued within 6 months of the biennial period; the license in question was
+  issued 4 months ago, satisfying this condition. The distractor suggesting a partial waiver is
+  incorrect because the rule specifies a full waiver, not a partial one, for this situation.
+citation:
+  source: 49 Pa. Code § 35.383(a)(1)
+  url: null
+  quoted_text: (1) A standard license holder who seeks to renew a current license that was initially
+    issued within 6 months of the biennial license period for which renewal is sought will be deemed
+    eligible, on the basis of hardship, for a full waiver of the continuing education requirement.
+  secondary: []
+terms:
+  - waiver
+  - hardship
+  - continuing education
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

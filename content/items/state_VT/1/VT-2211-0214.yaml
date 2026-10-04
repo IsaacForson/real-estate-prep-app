@@ -1,0 +1,44 @@
+id: VT-2211-0214
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker changes the name under which they are licensed and notifies the Vermont Real Estate
+  Commission 45 days after the change becomes effective. Under 26 V.S.A. § 2294(a), what is the
+  status of the broker's compliance?
+options:
+  - The broker is compliant because notice was eventually given
+  - The broker is noncompliant due to notice after the 30‑day period
+  - The broker is subject to a late‑filing penalty fee
+  - The broker is required to retake the licensing examination
+key: B
+explanation: The law requires notice of a name change to be given to the Commission within 30 days
+  after the change becomes effective. Providing notice after 45 days violates this requirement,
+  making the broker noncompliant. The distractor claiming compliance because notice was eventually
+  given ignores the 30‑day deadline.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2294(a)
+  url: null
+  quoted_text: Whenever a licensed broker desires to be licensed under a different name, the broker
+    shall pay the fee established under section 2255 of this chapter. Notice of any change in the
+    names and addresses of the licensees shall be given to the Commission within 30 days after the
+    change becomes effective.
+  secondary: []
+terms:
+  - name change
+  - notice
+  - commission
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,48 @@
+id: NAT-PV-I-0463
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A deed conveys 'the S 1/2 of the NW 1/4 and the E 1/2 of the SW 1/4 of Section 8.' How many
+  acres does the deed convey?
+options:
+  - 80 acres
+  - 120 acres
+  - 160 acres
+  - 200 acres
+key: C
+explanation: Each part described is a quarter-quarter section, calculated by dividing the standard
+  640-acre section by the product of the denominators (2 × 4), which equals 80 acres per part. Since
+  the deed conveys two such parts, the total acreage is 160 acres. The 80-acre answer reflects only
+  one part, while the 200-acre and 120-acre answers result from incorrect denominator combinations.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: "Acreage is 640 divided by the product of the fraction denominators: 640 / (4 x 4) = 40 acres"
+  secondary: []
+math:
+  worked_solution: |-
+    Section = 640 acres
+    Part 1: S 1/2 of NW 1/4 => denominators 2 and 4 => 640 / (2*4) = 640 / 8 = 80 acres
+    Part 2: E 1/2 of SW 1/4 => denominators 2 and 4 => 640 / (2*4) = 640 / 8 = 80 acres
+    Total acres = 80 + 80 = 160 acres
+  formulas:
+    - Acres = 640 / (d1 * d2)
+  onscreen_calculator_only: false
+terms:
+  - aliquot part
+  - section
+  - acreage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v6 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

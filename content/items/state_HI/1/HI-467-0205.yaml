@@ -1,0 +1,42 @@
+id: HI-467-0205
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Hawaii real estate broker learns that the occupant of a listed property has AIDS. Under Haw.
+  Rev. Stat. ch. 467 § 467-14(18), is the broker required to disclose this fact as a material fact?
+options:
+  - The broker may disclose the fact only if the buyer specifically asks about health conditions.
+  - The broker must disclose the fact as a material fact because any health condition affecting
+    occupants is considered material.
+  - The broker must not disclose the fact as a material fact because the statute excludes AIDS, ARC,
+    or HIV test history.
+  - The broker may disclose the fact only if the property’s value is affected by the occupant’s
+    condition.
+key: C
+explanation: The statute expressly provides that AIDS, ARC, or HIV test history shall not be
+  considered a material fact, so disclosure is not required.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-14(18)
+  url: null
+  quoted_text: provided that for the purposes of this paragraph, the fact that an occupant has AIDS or
+    AIDS Related Complex (ARC) or has been tested for HIV (human immunodeficiency virus) infection
+    shall not be considered a material fact;
+  secondary: []
+terms:
+  - AIDS
+  - material fact
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

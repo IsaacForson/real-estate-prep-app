@@ -1,0 +1,45 @@
+id: PA-9-0206
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Taylor applies for a broker's license but fails to include details of a prior misdemeanor
+  conviction on the application. Under 49 Pa. Code § 35.221, what is the most likely outcome?
+options:
+  - Application deemed complete; license granted with a fine for missing conviction info
+  - Application processed normally; license issued after background check clears undisclosed
+    conviction
+  - Application approved pending review; license issued with condition to submit conviction details
+    later
+  - Application considered incomplete; license withheld until conviction details are submitted
+key: D
+explanation: The regulation mandates that applicants submit complete details of any felony or
+  misdemeanor conviction. Omitting this information renders the application incomplete, and the
+  license will not be issued until the missing data is provided. The distractor claiming that only
+  felony convictions must be disclosed is incorrect because the rule explicitly includes
+  misdemeanors.
+citation:
+  source: 49 Pa. Code ch. 35 (State Real Estate Commission) — 49 Pa. Code Chapter 35 — State Real
+    Estate Commission (Pennsylvania Code, changes effective through 56 Pa.B. 4026, July 4, 2026) — §
+    35.221
+  url: null
+  quoted_text: Complete details of a conviction of, or plea of guilty or nolo contendere to, a felony
+    or misdemeanor and the sentence imposed.
+  secondary: []
+terms:
+  - conviction
+  - disclosure
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

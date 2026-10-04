@@ -1,0 +1,48 @@
+id: CA-4-0117
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "5"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to Cal. Civ. Code § 1214, a conveyance of real property that is **NOT** recorded is
+  void as against which of the following?
+options:
+  - A lessee under a lease for a term not exceeding one year who takes possession without recording
+    the lease
+  - A judgment creditor whose judgment was recorded after the conveyance but before the purchaser's
+    deed was recorded
+  - A subsequent purchaser who had actual notice of the prior conveyance before it was recorded in
+    the same county
+  - A subsequent purchaser or mortgagee in good faith and for valuable consideration whose
+    conveyance is first duly recorded
+key: D
+explanation: Section 1214 states that an unrecorded conveyance is void against a subsequent
+  purchaser or mortgagee in good faith who records first. Therefore, the conveyance is void against
+  such a purchaser. A purchaser who had actual notice is not in good faith, so the conveyance is not
+  void against them, making that option incorrect.
+citation:
+  source: Cal. Civ. Code §§ 1213–1220 — Cal. Civil Code - ARTICLE 4. Effect of Recording, or the Want
+    Thereof 1213-1220 — § 1214
+  url: null
+  quoted_text: Every conveyance of real property or an estate for years therein, other than a lease
+    for a term not exceeding one year, is void as against any subsequent purchaser or mortgagee of
+    the same property, or any part thereof, in good faith and for a valuable consideration, whose
+    conveyance is first duly recorded, and as against any judgment affecting the title, unless the
+    conveyance shall have been duly recorded prior to the record of notice of action.
+  secondary: []
+terms:
+  - recording
+  - good faith
+  - subsequent purchaser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

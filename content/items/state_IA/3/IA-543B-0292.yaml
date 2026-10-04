@@ -1,0 +1,42 @@
+id: IA-543B-0292
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson’s license was suspended by the Iowa Real Estate Commission, and the suspension
+  order did not specify any terms for reinstatement. Under Iowa Admin. Code r. 481-2018.15(2), when
+  may the salesperson first apply for reinstatement?
+options:
+  - After three years
+  - After four years
+  - After one year
+  - After two years
+key: D
+explanation: The rule states that an initial application for reinstatement cannot be made until at
+  least two years have elapsed from the date of the order when no terms were set. Therefore, the
+  earliest the salesperson may apply is after two years. An option suggesting eligibility after one
+  year contradicts the two‑year waiting period required by the provision.
+citation:
+  source: Iowa Admin. Code r. 481-2018 — Iowa Administrative Code 481—Chapter 2018 — Investigations
+    And Disciplinary Procedures (Real Estate Commission).15(2)
+  url: null
+  quoted_text: initial application for reinstatement cannot be made until at least two years have
+    elapsed from the date of the order or the date the commission accepted the order.
+  secondary: []
+terms:
+  - reinstatement
+  - suspension
+  - waiting period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

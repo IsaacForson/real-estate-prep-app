@@ -1,0 +1,46 @@
+id: WI-452-0461
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Wis. Stat. § 700.19(2), if a married couple acquires property on or after January 1,
+  1986 and ch. 766 applies to the property, does this subsection apply?
+options:
+  - Yes, the subsection applies and they are joint tenants unless intent to create tenancy in common
+    is expressed
+  - No, the subsection does not apply, so the general rules of joint tenancy creation govern
+  - Yes, but only if the owners are domestic partners under chapter 770 of the Wisconsin Statutes
+  - No, the subsection applies only to property acquired before January 1, 1986, regardless of ch.
+    766 status
+key: B
+explanation: The subsection only applies to property acquired before January 1, 1986, or to property
+  acquired on or after that date when ch. 766 does NOT apply; when ch. 766 applies, the subsection
+  does not govern, so the general joint tenancy creation rules apply. The most tempting distractor
+  is “Yes, the subsection applies and they are joint tenants unless intent to create tenancy in
+  common is expressed,” which mistakenly assumes the subsection applies regardless of ch. 766
+  status.
+citation:
+  source: Wis. Stat. ch. 700 — Wisconsin Statutes Chapter 700, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 700.19(2)
+  url: null
+  quoted_text: This subsection applies to property acquired before January 1, 1986, and, if ch. 766
+    does not apply when the property is acquired, to property acquired on or after January 1, 1986.
+  secondary: []
+terms:
+  - married couple
+  - ch. 766
+  - joint tenancy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,45 @@
+id: OH-4735-0142
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee’s license was suspended for a second offense under Ohio Rev. Code §
+  4735.18(A)(7)(b). After serving one month of the suspension, how many more months must the
+  licensee serve to satisfy the minimum suspension period?
+options:
+  - 1 month.
+  - 0 months.
+  - 3 months.
+  - 2 months.
+key: A
+explanation: The rule imposes a minimum suspension of two months for a second offense. After serving
+  one month, one month remains to meet the minimum. Choosing two months would incorrectly treat the
+  remaining time as the full minimum.
+citation:
+  source: Ohio Rev. Code § 4735.18(A)(7)(b)
+  url: null
+  quoted_text: For any second offense under this division, the commission shall suspend for a minimum
+    of two months or revoke the license of the broker or salesperson.
+  secondary: []
+math:
+  worked_solution: minimum_suspension = 2 months; months_served = 1 month; remaining = 2 - 1 = 1 month.
+  formulas:
+    - remaining_months = minimum_months - months_served
+  onscreen_calculator_only: false
+terms:
+  - suspension
+  - minimum
+  - months
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

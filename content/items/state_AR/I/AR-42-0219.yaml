@@ -1,0 +1,45 @@
+id: AR-42-0219
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After the commission pays $6,000 to a claimant from the Real Estate Recovery Fund due to a
+  licensee's violation, what is the maximum amount the licensee could owe after one year if interest
+  accrues at the maximum allowable rate?
+options:
+  - $6,300.00
+  - $6,600.00
+  - $6,000.00
+  - $7,200.00
+key: B
+explanation: The licensee must reimburse the commission for the payment plus interest at a rate not
+  exceeding ten percent per annum under Ark. Code Ann. § 17-42-409(3). At the maximum rate, interest
+  on $6,000 is $600, making the total owed $6,600. The $6,000.00 option omits interest, while
+  $7,200.00 incorrectly assumes a 20% rate.
+citation:
+  source: Ark. Code Ann. § 17-42-409(3)
+  url: null
+  quoted_text: plus interest at a rate to be determined by the commission. The rate shall not exceed
+    ten percent (10%) per annum.
+  secondary: []
+math:
+  worked_solution: Interest = $6,000 × 0.10 = $600; Total owed = $6,000 + $600 = $6,600.
+  formulas:
+    - Interest = Principal × Rate; Total = Principal + Interest
+  onscreen_calculator_only: false
+terms:
+  - interest
+  - reimbursement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

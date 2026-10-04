@@ -1,0 +1,40 @@
+id: IN-1-0042
+jurisdiction: IN
+bank: state_IN
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the fee for activating an inactive real estate broker license in Indiana?
+options:
+  - $10.00
+  - $20.00
+  - $50.00
+  - $100.00
+key: A
+explanation: The fee for activating an inactive license is $10 as stated in 876 IAC 5-3-1(a)(4).
+  Therefore the correct answer is $10.00. A common mistake is to confuse this with the renewal fee,
+  which is $50.00, but the rule clearly sets the activation fee at $10.
+citation:
+  source: 876 Ind. Admin. Code 5 — 876 IAC Article 5 — General Provisions (Indiana Real Estate
+    Commission rules; official iac.iga.in.gov 2024 edition PDF read via Internet Archive capture of
+    2024-02-14 because iga.in.gov now serves the IAC only through a JavaScript app and in.gov
+    refuses connections from this environment) — § 5-3-1
+  url: null
+  quoted_text: "(4) Activation of inactive license: $10"
+  secondary: []
+terms:
+  - fee
+  - license
+  - activation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

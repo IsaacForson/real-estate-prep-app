@@ -1,0 +1,46 @@
+id: CT-311-0229
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is found guilty of three separate violations of §20-320(a). What is the maximum
+  total fine that may be imposed?
+options:
+  - $5,000
+  - $10,000
+  - $15,000
+  - $20,000
+key: C
+explanation: Each violation can draw a fine up to $5,000; three violations therefore allow a maximum
+  total of 3 × $5,000 = $15,000. The distractor $10,000 assumes only two violations, which
+  undercounts the number of violations.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-320
+  url: null
+  quoted_text: may, in the commission's or department's discretion, impose a fine of not more than
+    five thousand dollars per violation
+  secondary: []
+math:
+  worked_solution: First, identify the maximum fine per violation as $5,000. Then multiply by the
+    number of violations, which is 3. Finally, compute 3 × $5,000 = $15,000.
+  formulas:
+    - total fine = number of violations × maximum fine per violation
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - violation
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

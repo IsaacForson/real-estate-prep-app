@@ -1,0 +1,40 @@
+id: GA-1-0226
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What fee must a licensee pay if they submit a check to the Commission that is returned unpaid?
+options:
+  - string3
+  - string1
+  - $100.00
+  - string2
+key: C
+explanation: Under Rule 520-1-.04(1)(a)5, a $100.00 fee is required for submitting a check that is
+  returned unpaid. The $25.00 amount applies to failures such as not notifying the Commission of an
+  address change within 30 days, not to a returned check.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live Rule 520-1-.04(1)(a)5
+  url: null
+  quoted_text: $100.00 for submitting to the Commission a check that is returned unpaid or for
+    disputing a charge to a credit card for a fee owed to the Commission when the dispute results in
+    a chargeback to the Commission's account;
+  secondary: []
+terms:
+  - fee
+  - check
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

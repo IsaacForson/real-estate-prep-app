@@ -1,0 +1,50 @@
+id: NM-1-0106
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A commission member is offered a $500 honorarium for speaking at a real estate conference.
+  Under N.M. Stat. Ann. § 61-29-7, may the member accept this payment?
+options:
+  - Yes, as long as the honorarium is unrelated to commission duties.
+  - No, the member may receive only per diem and mileage as compensation.
+  - Yes, if the governor approves the additional payment.
+  - No, unless the honorarium is less than $100.
+key: B
+explanation: Under N.M. Stat. Ann. § 61-29-7, commission members may receive only per diem and
+  mileage as compensation; they may not receive any other compensation, perquisite, or allowance.
+  Therefore, accepting a $500 honorarium is not permitted.
+citation:
+  source: N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-7
+  url: null
+  quoted_text: Each member of the commission shall receive per diem and mileage as provided in the Per
+    Diem and Mileage Act [10-8-1 NMSA 1978] and shall receive no other compensation, perquisite or
+    allowance.
+  secondary: []
+math:
+  worked_solution: The honorarium offered is $500. According to N.M. Stat. Ann. § 61-29-7, commission
+    members may receive only per diem and mileage and no other compensation. Since $500 is greater
+    than zero, it constitutes prohibited compensation. Therefore, the member may not accept the
+    honorarium.
+  formulas:
+    - Compensation = Honorarium amount
+    - If Compensation > 0 then prohibited
+  onscreen_calculator_only: false
+terms:
+  - commission
+  - compensation
+  - per diem
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

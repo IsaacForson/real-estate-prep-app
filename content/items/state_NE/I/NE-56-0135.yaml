@@ -1,0 +1,38 @@
+id: NE-56-0135
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Neb. Rev. Stat. § 81-885.19(2), who may manage a branch office?
+options:
+  - The broker only manager
+  - The associate broker only manager
+  - The broker or an associate broker manager
+  - Any licensed salesperson manager
+key: C
+explanation: The statute explicitly states that the broker or an associate broker shall be the
+  manager of a branch office, so only those two roles qualify. The option "The broker only manager"
+  is incorrect because an associate broker may also serve as manager.
+citation:
+  source: Neb. Rev. Stat. § 81-885.19(2)
+  url: null
+  quoted_text: The broker or an associate broker shall be the manager of a branch office.
+  secondary: []
+terms:
+  - branch office
+  - manager
+  - broker
+  - associate broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

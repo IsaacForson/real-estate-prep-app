@@ -1,0 +1,47 @@
+id: GA-1-0211
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wishes to retain part of the earnest money as commission after a sales transaction
+  has closed. According to Georgia Real Estate Commission Rule 520-1-.08(3)(d), which condition must
+  be satisfied for the broker to be deemed to have complied with O.C.G.A. § 43-40-20(e)?
+options:
+  - The broker has received written approval from the Georgia Real Estate Commission to retain the
+    earnest money and disburse funds accordingly
+  - The broker has deposited the earnest money into an interest-bearing account and notified the
+    parties of the interest earned
+  - The broker has disclosed the commission on the closing statement and obtained the buyer’s
+    written consent before closing
+  - The broker has secured a separate written agreement signed by all parties agreeing the broker is
+    entitled to the commission
+key: D
+explanation: The rule states that claiming earnest money as commission complies with O.C.G.A. §
+  43-40-20(e) only when the broker has a separate written agreement signed by all interested parties
+  agreeing to the commission. Verbal consent, Commission approval, or depositing into an
+  interest‑bearing account do not satisfy this requirement.
+citation:
+  source: Ga. Comp. R. & Regs. § 520-1-.08(3)(d)
+  url: null
+  quoted_text: the broker has secured a written agreement, separate from the sales contract or lease
+    agreement, signed by all parties having an interest in the transaction who have agreed that the
+    broker is entitled to any commission.
+  secondary: []
+terms:
+  - earnest money
+  - commission
+  - written agreement
+  - parties
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

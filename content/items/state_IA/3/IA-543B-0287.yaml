@@ -1,0 +1,42 @@
+id: IA-543B-0287
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is convicted of a felony but fails to notify the commission within ten days. Under
+  Iowa Code §543B.29(1), what is the consequence?
+options:
+  - The licensee's license is immediately suspended pending a hearing before the commission
+  - The licensee's license is subject to a civil penalty of up to ten thousand dollars for the
+    violation
+  - The licensee's license is placed on probation for one year with mandatory continuing education
+  - The licensee's license is revoked for failure to notify the commission of the felony conviction
+key: D
+explanation: The statute states that failure to notify the commission of a felony conviction within
+  ten days is sufficient grounds for revocation of the license. Therefore the license is revoked,
+  not merely suspended or penalized. The distractor suggesting immediate suspension applies only
+  after notification and a hearing, not to a failure to notify.
+citation:
+  source: Iowa Code ch. 543B §543B.29(1)
+  url: null
+  quoted_text: The failure of the licensee to notify the commission of the conviction within ten days
+    of the date of the conviction is sufficient grounds for revocation of the license.
+  secondary: []
+terms:
+  - license
+  - revocation
+  - felony
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

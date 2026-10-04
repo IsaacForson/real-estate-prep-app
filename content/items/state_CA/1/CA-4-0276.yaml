@@ -1,0 +1,48 @@
+id: CA-4-0276
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A person solicits borrowers for loans secured by real property and collects payments. Under
+  Cal. Bus. & Prof. Code § 10131(d), does the person need a real estate license?
+options:
+  - The person must hold a real estate license only if they also negotiate purchases or sales of
+    real property.
+  - The person is exempt from licensing if they only collect payments and do not negotiate loans.
+  - The person must hold a real estate license because soliciting borrowers for loans secured by
+    real property is a broker activity.
+  - The person is not required to have a license because loan solicitation is exempt under §
+    10131.01.
+key: C
+explanation: Section 10131(d) includes soliciting borrowers for loans secured by real property and
+  collecting payments in connection with such loans as acts that define a real estate broker.
+  Therefore a license is required regardless of whether the person also negotiates loans or engages
+  in other real estate activities. The option stating that the person is exempt from licensing if
+  they only collect payments and do not negotiate loans is incorrect because collecting payments
+  alone still falls under the broker definition when tied to real‑property‑secured loans.
+citation:
+  source: "Cal. Bus. & Prof. Code §§ 10130–10171.5 — B&P Code Div. 4, Pt. 1, Ch. 3, Arts. 1-2.5 (§§
+    10130-10171.5) - Real Estate Regulations: Scope, Licenses, Exams, Fictitious names,
+    Corporations, Restricted licenses Cal. Bus. & Prof. Code § 10131"
+  url: null
+  quoted_text: Solicits borrowers or lenders for or negotiates loans or collects payments or performs
+    services for borrowers or lenders or note owners in connection with loans secured directly or
+    collaterally by liens on real property or on a business opportunity.
+  secondary: []
+terms:
+  - loan solicitation
+  - broker
+  - real property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

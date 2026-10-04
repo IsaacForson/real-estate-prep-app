@@ -1,0 +1,40 @@
+id: MN-82-0246
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee includes an arbitration clause in a purchase agreement that addresses the broker’s
+  rights and liabilities. Under Minn. Stat. § 82.81, Subd. 5, when is this clause permissible?
+options:
+  - If the buyer agrees to the clause in writing before closing.
+  - If the clause is limited to disputes over earnest money only.
+  - If the broker discloses the clause to the buyer before signing.
+  - If the broker is a principal in the transaction.
+key: D
+explanation: Subd. 5 prohibits arbitration clauses that address the rights or liabilities of
+  licensed persons unless that person is a principal in the transaction. When the broker is a
+  principal, the clause is allowed. The other options describe circumstances that do not meet the
+  statutory exception.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.81 Subd. 5
+  url: null
+  quoted_text: unless the person required to be licensed is a principal in the transaction.
+  secondary: []
+terms:
+  - arbitration clause
+  - principal
+  - purchase agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,56 @@
+id: TX-1101-0140
+jurisdiction: TX
+bank: state_TX
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: During a declared disaster, a licensee increases the price of bottled water from $2 to $10.
+  Under Tex. Bus. & Com. Code ch. 17, when does the price gouging prohibition under Section
+  17.46(b)(27) apply?
+options:
+  - The price gouging prohibition under Section 17.46(b)(27) applies only during a designated
+    disaster period in this state.
+  - The price gouging prohibition under Section 17.46(b)(27) applies at any time when a disaster is
+    declared by the governor.
+  - The price gouging prohibition under Section 17.46(b)(27) applies only to essential goods such as
+    food, water, and medicine.
+  - The price gouging prohibition under Section 17.46(b)(27) applies only if the price increase
+    exceeds 100 percent of the pre-disaster price.
+key: A
+explanation: Under Tex. Bus. & Com. Code § 17.4625(b), the price gouging prohibition applies only to
+  acts occurring during a designated disaster period in this state. The idea that the prohibition
+  applies whenever the governor declares a disaster is incorrect because the statute ties the
+  prohibition to the designated disaster period, not merely to the governor's declaration.
+citation:
+  source: Tex. Bus. & Com. Code ch. 17 — Texas Business and Commerce Code Chapter 17 — Deceptive Trade
+    Practices — official Texas Legislature Online statute page read via Internet Archive capture of
+    2025-11-19 because statutes.capitol.texas.gov now serves only a JavaScript shell Sec. 17.4625(b)
+  url: null
+  quoted_text: Notwithstanding any other provision of this subchapter, Section 17.46 (b)(27) applies
+    only to an act described by that subdivision that occurs during a designated disaster period in
+    this state.
+  secondary: []
+math:
+  worked_solution: Original price = $2. New price = $10. Increase = New price - Original price = $10 -
+    $2 = $8. Percent increase = (Increase / Original price) × 100 = ($8 / $2) × 100 = 4 × 100 =
+    400%.
+  formulas:
+    - Percent Increase = ((New Price - Original Price) / Original Price) × 100
+  onscreen_calculator_only: false
+terms:
+  - price
+  - gouging
+  - disaster
+  - period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

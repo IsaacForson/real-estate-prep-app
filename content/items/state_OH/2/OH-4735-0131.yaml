@@ -1,0 +1,49 @@
+id: OH-4735-0131
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives a $2,000 earnest money deposit from a buyer. What must the salesperson
+  do with that deposit?
+options:
+  - Collection only in the broker’s name with consent
+  - Deposit only in the salesperson’s account with consent
+  - Transfer only to the escrow agent with consent
+  - Hold only in the broker’s trust account without consent
+key: A
+explanation: Under Ohio Rev. Code § 4735.21, a salesperson may collect money only in the name of and
+  with the consent of the employing broker. Therefore, the salesperson must collect the earnest
+  money deposit in the broker’s name with the broker’s consent. Depositing the money into a personal
+  account or holding it elsewhere violates this rule.
+citation:
+  source: Ohio Rev. Code § 4735.21
+  url: null
+  quoted_text: No real estate salesperson or foreign real estate salesperson shall collect any money
+    in connection with any real estate or foreign real estate brokerage transaction, whether as a
+    commission, deposit, payment, rental, or otherwise, except in the name of and with the consent
+    of the licensed real estate broker or licensed foreign real estate dealer under whom the
+    salesperson is licensed at the time the sales person earned the commission.
+  secondary: []
+math:
+  worked_solution: The deposit amount ($2,000) does not affect the required action; the rule applies
+    regardless of amount, so no calculation is needed.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - salesperson
+  - broker
+  - earnest money
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

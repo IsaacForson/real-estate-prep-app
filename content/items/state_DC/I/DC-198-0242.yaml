@@ -1,0 +1,41 @@
+id: DC-198-0242
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A vacancy occurs on the Board of Real Estate with six months remaining in the term. A
+  successor is appointed and sworn into office four months after the vacancy arises. How long does
+  the interim member appointed to fill the vacancy serve?
+options:
+  - Four months
+  - Two months
+  - Six months
+  - Eight months
+key: C
+explanation: The interim member serves until the expiration of the term or until a successor is
+  appointed and sworn into office, whichever is later. Since the successor is appointed at four
+  months, which is earlier than the term’s end at six months, the later event is the term
+  expiration, so the interim serves six months. The distractor "Four months" is wrong because it
+  assumes service ends when the successor is appointed, ignoring the “whichever later” provision.
+citation:
+  source: D.C. Code § 47-2853.07(a)
+  url: null
+  quoted_text: A member appointed to fill a vacancy shall serve until the expiration of the term or
+    until a successor is appointed and sworn into office, whichever is later.
+  secondary: []
+terms:
+  - vacancy
+  - term
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

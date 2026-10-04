@@ -1,0 +1,47 @@
+id: NJ-1-0044
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Maria owns a duplex and handles all leasing, rent collection, and showing of the units
+  herself, without holding a real estate license. Under N.J. Stat. Ann. § 45:15-4, is Maria required
+  to have a real estate license for these activities?
+options:
+  - Maria must obtain a license because she is leasing property to tenants.
+  - Maria does not need a license as she is a bona fide owner performing acts on her own property.
+  - Maria must obtain a license only if she collects rent from tenants.
+  - Maria does not need a license because she is not advertising the units for rent.
+key: B
+explanation: Under N.J. Stat. Ann. § 45:15-4, a bona fide owner who performs acts with reference to
+  property they own is exempt from licensing requirements. Maria’s activities of leasing, collecting
+  rent, and showing her own duplex fall within this owner exemption, so she does not need a license.
+  The idea that leasing always requires a license overlooks this exemption for owners managing their
+  own property.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-4"
+  url: null
+  quoted_text: The provisions of this article shall not apply to any person, firm, partnership,
+    association or corporation who, as a bona fide owner or lessor, shall perform any of the
+    aforesaid acts with reference to property owned by him
+  secondary: []
+terms:
+  - owner
+  - exemption
+  - license
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

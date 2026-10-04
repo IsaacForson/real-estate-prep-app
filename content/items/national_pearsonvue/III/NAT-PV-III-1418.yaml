@@ -1,0 +1,54 @@
+id: NAT-PV-III-1418
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is valuing a multifamily property using the gross income multiplier (GIM) method.
+  The subject's annual gross income is $250,000 and the market-derived GIM from comparable sales is
+  8.5. What is the indicated property value?
+options:
+  - $1,875,000
+  - $2,250,000
+  - $2,000,000
+  - $2,125,000
+key: D
+explanation: The indicated value is found by multiplying the subject's annual gross income by the
+  market-derived gross income multiplier (GIM). Using the formula Value = Annual Gross Income × GIM,
+  $250,000 × 8.5 equals $2,125,000. The option stating $2,250,000 results from using a GIM of 9.0 or
+  miscomputing the product.
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.6
+  url: null
+  quoted_text: The gross income multiplier (GIM), used for larger commercial or multifamily
+    properties, is sale price ÷ gross annual income.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify annual gross income = $250,000.
+    Step 2: Identify market-derived GIM = 8.5.
+    Step 3: Apply the GIM formula: Property Value = Annual Gross Income × GIM.
+    Step 4: Multiply: $250,000 × 8 = $2,000,000.
+    Step 5: Multiply: $250,000 × 0.5 = $125,000.
+    Step 6: Add the partial products: $2,000,000 + $125,000 = $2,125,000.
+    Result: Indicated property value = $2,125,000.
+  formulas:
+    - Property Value = Annual Gross Income × Gross Income Multiplier (GIM)
+  onscreen_calculator_only: false
+terms:
+  - gross income multiplier
+  - annual gross income
+  - market-derived
+  - indicated value
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

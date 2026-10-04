@@ -1,0 +1,39 @@
+id: NAT-PSI-II-0114
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner obtains a mortgage loan to buy a house and signs a deed of trust. According to the
+  text, how is this lien classified?
+options:
+  - A general involuntary lien
+  - A specific involuntary lien
+  - A general voluntary lien
+  - A specific voluntary lien
+key: D
+explanation: A mortgage or deed of trust creates a lien that applies only to the specific property
+  used as security and is established with the borrower's consent, which makes it a specific
+  voluntary lien.
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: "Mortgage and deed of trust: specific, voluntary."
+  secondary: []
+terms:
+  - mortgage
+  - deed of trust
+  - specific
+  - voluntary
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

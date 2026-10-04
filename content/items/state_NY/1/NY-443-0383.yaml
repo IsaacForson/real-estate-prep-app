@@ -1,0 +1,42 @@
+id: NY-443-0383
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to NY Real Property Law §462, which of the following is **NOT** considered
+  residential real property for the purpose of the property condition disclosure statement?
+options:
+  - A condominium unit not owned in fee simple
+  - A single-family home used as a rental property
+  - A two-family house occupied as a primary residence
+  - A three-family dwelling occupied by the owner
+key: A
+explanation: The definition of residential real property explicitly excludes condominium units,
+  cooperative apartments, unimproved land, and HOA property not owned in fee simple. Therefore a
+  condominium unit is not residential real property for disclosure purposes. The two-family house,
+  single-family home, and three-family dwelling all meet the definition of a one‑to‑four family
+  dwelling used as a residence.
+citation:
+  source: N.Y. Real Prop. Law art. 14 — Real Property Law Article 14 (§§ 460 to 467), Property
+    Condition Disclosure in the Sale of Residential Real Property — NY DOS booklet, March 2026 — §
+    462 §462
+  url: null
+  quoted_text: (b) condominium units or cooperative apartments
+  secondary: []
+terms:
+  - condominium
+  - residential real property
+  - fee simple
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

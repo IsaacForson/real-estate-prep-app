@@ -1,0 +1,51 @@
+id: TX-1101-0073
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A single real estate transaction results in three claimants obtaining judgments totaling
+  $200,000 against a license holder. Under Texas Occupations Code §1101.610(a), what is the maximum
+  amount that may be paid from the real estate recovery trust account for these claims?
+options:
+  - The maximum payment is $62,500.
+  - The maximum payment is $125,000.
+  - The maximum payment is $200,000.
+  - The maximum payment is $250,000.
+key: B
+explanation: Under Tex. Occ. Code §1101.610(a), payments from the real estate recovery trust account
+  for claims arising from a single transaction may not exceed $125,000 total, regardless of the
+  number of claimants. Therefore, even though the judgments total $200,000, the maximum payable is
+  $125,000.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.610
+  url: null
+  quoted_text: (a) Payments from the trust account for claims, including attorney's fees, interest,
+    and court costs, arising out of a single transaction may not exceed a total of $125,000,
+    regardless of the number of claimants.
+  secondary: []
+math:
+  worked_solution: "The total judgments are $200,000. The statutory cap per transaction is $125,000.
+    The maximum payment is the lesser of the total judgments and the cap: min($200,000, $125,000) =
+    $125,000."
+  formulas:
+    - Maximum payment = min(total judgments, statutory cap)
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - payment limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

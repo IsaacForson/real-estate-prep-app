@@ -1,0 +1,45 @@
+id: TX-1101-0237
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Texas real estate sales agent’s license expired 100 days ago. Assuming the license holder
+  wishes to renew the license, what renewal fee must be paid to the Commission?
+options:
+  - 1 times the required renewal fee
+  - 1.5 times the required renewal fee
+  - 2 times the required renewal fee
+  - 2.5 times the required renewal fee
+key: C
+explanation: According to Texas Occupations Code §1101.451(e), a license expired for more than 90
+  days but less than six months may be renewed by paying a fee equal to two times the required
+  renewal fee. Since 100 days falls within that range, the correct fee is twice the standard renewal
+  fee. The 1.5‑times option applies only to licenses expired 90 days or less, making it incorrect
+  for this scenario.
+citation:
+  source: "### Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.451(e)"
+  url: null
+  quoted_text: If a license has been expired for more than 90 days but less than six months, the
+    person may renew the license by paying to the commission a fee equal to two times the required
+    renewal fee.
+  secondary: []
+terms:
+  - fee
+  - renewal
+  - expired
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

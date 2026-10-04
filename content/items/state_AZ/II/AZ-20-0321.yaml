@@ -1,0 +1,41 @@
+id: AZ-20-0321
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker completes trust fund account reconciliations every three months. Under Arizona law,
+  does this satisfy the requirement for three-way reconciliations?
+options:
+  - No, because reconciliations must be completed on a monthly basis
+  - No, unless the broker also removes interest annually
+  - Yes, as long as the broker provides an explanation for any variation
+  - Yes, because quarterly meets the monthly requirement
+key: A
+explanation: The statute mandates that reconciliations be completed on a monthly basis. Performing
+  them only every three months does not meet this requirement. The distractor claiming "Yes, as long
+  as the broker provides an explanation for any variation" is incorrect because providing an
+  explanation does not substitute for the required monthly frequency.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151(B)(3)
+  url: null
+  quoted_text: On a monthly basis the broker must complete a three-way reconciliation between the
+    trust fund account bank statements, client ledgers and trust fund account ledgers and provide an
+    explanation for any variation.
+  secondary: []
+terms:
+  - reconciliation
+  - monthly
+  - trust fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

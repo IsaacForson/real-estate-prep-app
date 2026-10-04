@@ -1,0 +1,50 @@
+id: AZ-20-0315
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: On June 30, 2024, the Arizona real estate recovery fund has a balance of $550,000. A real
+  estate salesperson renews his license for the 2024-2025 license year. What additional fee, if any,
+  must the salesperson pay to the recovery fund at renewal?
+options:
+  - Ten dollars
+  - Thirty dollars
+  - Twenty dollars
+  - Zero dollars
+key: A
+explanation: Under Ariz. Rev. Stat. § 32-2187(B), when the recovery fund balance on June 30 is below
+  $600,000, each salesperson renewing a license must pay an additional $10 to the fund. Since the
+  balance is $550,000, the required fee is $10.
+citation:
+  source: Ariz. Rev. Stat. § 32-2187(B)
+  url: null
+  quoted_text: If, on June 30 of any year, the balance remaining in the real estate recovery fund is
+    less than six hundred thousand dollars, every broker when renewing a real estate or cemetery
+    license during the following license year shall pay, in addition to the license renewal fee, a
+    fee of twenty dollars for deposit in the real estate recovery fund, and every salesperson when
+    renewing a real estate or cemetery license during such year shall pay, in addition to the
+    license renewal fee, a fee of ten dollars for deposit in the real estate recovery fund.
+  secondary: []
+math:
+  worked_solution: The fund balance on June 30, 2024 is $550,000. The statute requires an additional
+    $10 fee for salesperson renewals when the balance is less than $600,000. Since $550,000 <
+    $600,000, the fee is $10.
+  formulas:
+    - Additional fee = $10 if balance < $600,000 else $0
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - salesperson license renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

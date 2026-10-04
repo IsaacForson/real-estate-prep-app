@@ -1,0 +1,46 @@
+id: SD-21A-0180
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person conducts an auction of real estate for compensation without holding an active real
+  estate license. Is this permissible under South Dakota law?
+options:
+  - Yes, as long as the person holds a license in another state
+  - Yes, because auctioning real estate is exempt from licensing requirements
+  - No, but the person may collect compensation if they later obtain a license
+  - No, the person must hold an active license issued by the commission
+key: D
+explanation: Under S.D. Codified Laws § 36-21A-28, a person may not perform any act enumerated in
+  the chapter without an active license unless exempted. Conducting an auction of real estate for
+  compensation is such an act, and no exemption applies. Therefore the person must hold an active
+  license at the time of the auction. The option stating that the person must hold an active license
+  issued by the commission is correct. The option claiming that a license from another state
+  suffices is incorrect because South Dakota does not recognize reciprocity for this activity. The
+  option claiming that auctioning real estate is exempt from licensing requirements is incorrect
+  because no such exemption exists. The option stating that the person may collect compensation
+  after obtaining a license is incorrect because compensation for performing the act requires a
+  license at the time the act is performed.
+citation:
+  source: S.D. Codified Laws § 36-21A-28
+  url: null
+  quoted_text: No person, unless exempted under this chapter, may offer, attempt or agree to perform,
+    or perform any act enumerated within this chapter without an active license issued by the
+    commission
+  secondary: []
+terms:
+  - license
+  - auction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

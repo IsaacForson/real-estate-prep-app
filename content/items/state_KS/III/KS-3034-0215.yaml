@@ -1,0 +1,40 @@
+id: KS-3034-0215
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Kansas licensee is listing a property for sale that is owned by the licensee's sibling. The
+  licensee does not mention the sibling's ownership in the listing agreement. According to Kansas
+  regulation, is this permissible?
+options:
+  - Yes, because the licensee does not own the property
+  - No, because immediate family member interests must be disclosed
+  - Yes, because disclosure is not required for siblings
+  - No, because only the licensee's own interest requires disclosure
+key: B
+explanation: The regulation requires disclosure of any interest held by the licensee or immediate
+  family member in the property being sold; a sibling is an immediate family member, so disclosure
+  is required.
+citation:
+  source: Kan. Admin. Regs. § 86-3-19(a)
+  url: null
+  quoted_text: "Each licensee shall disclose in the real estate contract or lease any interest that
+    the licensee or the licensee's immediate family member has or will have in the following, as
+    applicable: (1) The real estate being sold or leased by the seller or lessor;"
+  secondary: []
+terms:
+  - disclosure
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

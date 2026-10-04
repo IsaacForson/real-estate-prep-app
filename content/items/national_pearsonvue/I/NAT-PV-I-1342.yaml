@@ -1,0 +1,48 @@
+id: NAT-PV-I-1342
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: How many acres are in a quarter-quarter section of land under the rectangular survey system?
+options:
+  - The area of 80 acres
+  - The area of 160 acres
+  - The area of 40 acres
+  - The area of 320 acres
+key: C
+explanation: A quarter‑quarter section equals one‑quarter of a quarter section. A full section
+  contains 640 acres, so a quarter section is 640 × ¼ = 160 acres and a quarter‑quarter is
+  160 × ¼ = 40 acres. Therefore the correct answer is the option stating 40 acres. The other options
+  describe 80 acres (half of a quarter section), 160 acres (a quarter section), and 320 acres (half
+  a section), which are not the size of a quarter‑quarter section.
+citation:
+  source: "### REP Ref. Property & Land Use — Reference note: property characteristics, legal
+    descriptions, land use controls (authored, status: draft — needs licensed review) ### § 3.3
+    Rectangular (government) survey system"
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres
+  secondary: []
+math:
+  worked_solution: |-
+    1. A full section = 640 acres.
+    2. Quarter section = 640 acres × 1/4 = 160 acres.
+    3. Quarter‑quarter section = 160 acres × 1/4 = 40 acres.
+  formulas:
+    - Quarter section = Section size × 1/4
+    - Quarter‑quarter = Quarter section × 1/4
+  onscreen_calculator_only: false
+terms:
+  - quarter-quarter
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

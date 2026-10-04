@@ -1,0 +1,57 @@
+id: NM-1-0098
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker opens an interest‑bearing account at a bank to hold earnest money
+  deposited by a seller (the owner) under the broker’s control, with the account titled in the
+  seller’s name. How should this account be classified?
+options:
+  - It is a trust account because it holds money of others received in such a transaction
+  - It is a property management trust account because it holds money belonging to others received
+    during the management of real property
+  - It is a custodial account because it is established by the qualifying broker to hold money of an
+    owner in the owner's name under broker's control
+  - It is a special trust account because it holds money of a named party to such a transaction
+key: C
+explanation: Under 16.61.19.8 P, a custodial account is an account at an acceptable financial
+  institution established by the qualifying broker to hold money of an owner in the owner’s name
+  under the broker’s control, and it may be interest bearing. This matches the scenario where the
+  broker opens an interest‑bearing account in the seller’s name to hold the seller’s earnest money.
+  The description of a trust account as holding money of others received in a transaction does not
+  fit because the funds belong to the owner, not to others generally. The property management trust
+  account description applies to funds received during management of real property, which is not the
+  case here. The special trust account description applies to money of a named party to a
+  transaction, but the rule specifically defines a custodial account for owner’s funds under the
+  broker’s control.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.19.8 P
+  url: null
+  quoted_text: |-
+    P.  “Custodial account”:  an account at an acceptable financial institution 
+    established by the qualifying broker for the purpose of holding money of an owner. 
+
+    52 
+     
+    . 
+    The account shall be established in the owner’s name under the qualifying broker’s 
+    control.  This account may be interest bearing
+  secondary: []
+terms:
+  - custodial account
+  - qualifying broker
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

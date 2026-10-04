@@ -1,0 +1,51 @@
+id: NAT-PSI-II-0119
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A home is assessed at $340,000. The owner qualifies for a $30,000 homestead exemption. If the
+  combined tax rate is 18 mills, what is the annual property tax?
+options:
+  - $5,580.00
+  - $6,120.00
+  - $6,660.00
+  - $6,820.00
+key: A
+explanation: "One mill equals $1 of tax per $1,000 of assessed value. First subtract the homestead
+  exemption: $340,000 − $30,000 = $310,000 taxable value. Convert 18 mills to a decimal: 18/1000 =
+  0.018. Multiply the taxable value by the decimal rate: $310,000 × 0.018 = $5,580. The option that
+  does not apply the exemption calculates tax on the full assessed value. The option that adds the
+  exemption before calculating tax yields a higher amount. The option that uses the correct
+  exemption but an incorrect tax rate (22 mills) also produces a different result."
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: one mill is one-tenth of a cent, that is, $1 of tax per $1,000 of assessed value.
+  secondary: []
+math:
+  worked_solution: "Step 1: Taxable assessed value = $340,000 - $30,000 = $310,000.\\nStep 2: Mill
+    rate as decimal = 18 mills / 1000 = 0.018.\\nStep 3: Property tax = $310,000 × 0.018 =
+    $5,580.\\nStep 4: Annual property tax = $5,580."
+  formulas:
+    - Taxable Assessed Value = Assessed Value - Exemption
+    - Tax Rate (decimal) = Mills / 1000
+    - Property Tax = Taxable Assessed Value × Tax Rate (decimal)
+  onscreen_calculator_only: false
+terms:
+  - property tax
+  - assessed value
+  - mills
+  - exemption
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

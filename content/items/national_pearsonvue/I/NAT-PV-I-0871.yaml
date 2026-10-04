@@ -1,0 +1,45 @@
+id: NAT-PV-I-0871
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property has a 2020 judgment lien recorded March 2020, a 2021 mortgage recorded January
+  2021, an unpaid 2022 property‑tax lien, and a 2023 mechanic's lien that relates back to work begun
+  in 2022. In a foreclosure sale, which lien would be paid second?
+options:
+  - the property tax lien
+  - the judgment lien
+  - the mortgage
+  - the mechanic's lien
+key: B
+explanation: Section 8.3 states that property‑tax liens rank ahead of all other liens regardless of
+  recording date, making the tax lien senior and paid first. After that, the general rule of
+  first‑in‑time applies, so the earlier‑recorded judgment lien is paid second. The mortgage and
+  mechanic's lien are junior to both.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: "Priority is the order in which lienholders are paid from a foreclosure sale. The
+    general rule is first in time, first in right: liens rank by recording date (or, for some
+    statutory liens, the date they arose), and a junior lien is paid only after every senior lien is
+    paid in full. Property tax and special assessment liens are the major exception: by statute they
+    generally rank ahead of all other liens regardless of date, including an earlier-recorded
+    mortgage"
+  secondary: []
+terms:
+  - priority
+  - lien
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

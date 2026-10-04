@@ -1,0 +1,55 @@
+id: UT-101-0322
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant passes both the state and national components of the licensing examination on
+  June 1. By what date must the applicant submit the application for licensure to remain eligible
+  under Utah Admin. Code R162-2f-202a?
+options:
+  - Aug 30
+  - Aug 31
+  - Sep 01
+  - Sep 02
+key: A
+explanation: The rule requires the application to be submitted within 90 days of passing both
+  examination components. Adding 90 days to June 1 yields August 30, making Aug 30 the correct
+  deadline.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-202a
+  url: null
+  quoted_text: An application for licensure shall be submitted within 90 days of the date on which the
+    individual achieves passing scores on both examination components.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: June 1
+    June has 30 days, so June 1 + 30 days = July 1
+    July 1 + 31 days = August 1
+    August 1 + 29 days = August 30
+    Total added = 30 + 31 + 29 = 90 days
+    Therefore deadline = August 30
+  formulas:
+    - Deadline = Start date + 90 days
+  onscreen_calculator_only: false
+terms:
+  - application deadline
+  - licensing examination
+  - ninety days
+  - date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

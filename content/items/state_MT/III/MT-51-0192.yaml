@@ -1,0 +1,44 @@
+id: MT-51-0192
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An unlicensed individual assists a client in leasing a timeshare week, negotiates the lease
+  terms, and expects a leasing fee. After the lease is executed, the individual sues the client for
+  the fee. Under Montana law, what is the likely result?
+options:
+  - The individual may recover because a timeshare lease is not considered real estate under the
+    statute.
+  - The individual may not recover because they were not licensed at the time the claim arose.
+  - The individual may recover because the statute only applies to sales, not leases.
+  - The individual may recover if they had a written agreement with the client.
+key: B
+explanation: The statute covers lease of real estate and requires licensure or authorization at the
+  time the claim arose; since the individual was unlicensed, recovery is barred. The claim that a
+  timeshare lease is not real estate or that the statute only applies to sales misstates the
+  statute's scope, and the claim that a written agreement would allow recovery incorrectly suggests
+  that such an agreement overrides the licensure requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-401
+  url: null
+  quoted_text: without first alleging and proving that such person was a duly licensed real estate
+    broker or real estate salesperson or authorized to act as a broker under the provisions of this
+    chapter at the time the alleged cause of action or claim arose.
+  secondary: []
+terms:
+  - lease
+  - timeshare
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

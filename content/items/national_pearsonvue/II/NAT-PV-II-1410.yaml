@@ -1,0 +1,44 @@
+id: NAT-PV-II-1410
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A buyer purchases real estate for $340,000 and obtains an owner's title insurance policy. What
+  is the maximum amount the policy will pay for a covered defect existing at closing?
+options:
+  - $340,000
+  - $300,000
+  - $200,000
+  - $100,000
+key: A
+explanation: An owner's title insurance policy covers the buyer for the full purchase price as long
+  as the insured or their heirs retain an interest. Therefore, the maximum payout for a covered
+  defect existing at closing equals the purchase price of $340,000.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 10.4
+  url: null
+  quoted_text: An owner's policy protects the buyer for the purchase price for as long as the insured
+    or the insured's heirs hold an interest
+  secondary: []
+math:
+  worked_solution: The policy limit equals the purchase price, which is $340,000.
+  formulas:
+    - Policy limit = Purchase price
+  onscreen_calculator_only: false
+terms:
+  - owner's policy
+  - purchase price
+  - coverage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

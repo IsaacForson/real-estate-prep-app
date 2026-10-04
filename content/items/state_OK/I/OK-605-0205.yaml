@@ -1,0 +1,49 @@
+id: OK-605-0205
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate who is affiliated with Broker X receives a commission from Broker Y for
+  assisting in a transaction where Broker Y is the listing broker. Under Oklahoma Statute § 858-312,
+  which provision most directly prohibits this conduct?
+options:
+  - Representing or attempting to represent a real estate broker other than the broker with whom the
+    associate is associated without the express knowledge and consent of the broker with whom the
+    associate is associated
+  - A. Accepting a commission or other valuable consideration as a real estate associate for the
+    performance of any acts as an associate, except from the real estate broker with whom the
+    associate is associated
+  - Paying a commission or valuable consideration to any person for acts or services performed in
+    violation of the Oklahoma Real Estate License Code
+  - Failing, within a reasonable time, to account for or to remit any monies, documents, or other
+    property coming into possession of the licensee which belong to others
+key: B
+explanation: The associate accepted a commission from a broker other than the one with whom they are
+  associated, which directly violates the provision that prohibits accepting compensation as an
+  associate except from the associated broker. The option concerning representing another broker
+  addresses a different violation, while the other options address unrelated prohibited acts such as
+  failing to account for funds or paying unlicensed persons.
+citation:
+  source: Okla. Stat. tit. 59 § 858-312(4)
+  url: null
+  quoted_text: Accepting a commission or other valuable consideration as a real estate associate for
+    the performance of any acts as an associate, except from the real estate broker with whom the
+    associate is associated
+  secondary: []
+terms:
+  - commission
+  - associate
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,47 @@
+id: AL-27-0222
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A daughter holds a duly executed power of attorney for her mother and, without receiving any
+  compensation, helps her mother sell the mother's house. Under Ala. Code § 34-27-2(b)(3), does the
+  daughter need a real estate license to perform these actions?
+options:
+  - Yes, she must hold a real estate license because she is assisting with the sale of the mother's
+    house.
+  - No, she is exempt from licensure because she is acting without compensation and in good faith
+    under a duly executed power of attorney.
+  - Yes, she must hold a real estate license because the power of attorney does not exempt her from
+    licensing requirements.
+  - No, she is exempt from licensure because any family member may act under a power of attorney
+    without needing a license.
+key: B
+explanation: The correct answer is that she is exempt because Ala. Code § 34-27-2(b)(3) exempts
+  persons who act without compensation and in good faith under a duly executed power of attorney for
+  a real estate transaction. The option stating she must hold a license because she is assisting
+  with the sale is incorrect because the statutory exemption applies. The option stating she must
+  hold a license because the power of attorney does not exempt her is incorrect because the statute
+  explicitly provides that exemption. The option stating she is exempt because any family member may
+  act under a power of attorney is incorrect because the exemption depends on lack of compensation
+  and good faith, not on familial relationship.
+citation:
+  source: Ala. Code § 34-27-2(b)(3)
+  url: null
+  quoted_text: (3) Persons acting without compensation and in good faith under a duly executed power
+    of attorney authorizing the consummation of a real estate transaction.
+  secondary: []
+terms:
+  - power of attorney
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

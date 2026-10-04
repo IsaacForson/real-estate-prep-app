@@ -1,0 +1,41 @@
+id: MT-51-0184
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Montana's vicarious liability statute (37-51-315), a broker is liable for a
+  misrepresentation made by the broker's subagent if which condition exists?
+options:
+  - The broker employs the subagent as an independent contractor
+  - The broker has actual knowledge of the misrepresentation
+  - The broker provides written disclosure to the client
+  - The broker receives a commission from the transaction
+key: B
+explanation: The statute provides that a broker is not liable for a subagent's misrepresentation
+  unless the broker has actual knowledge of the misrepresentation. Therefore, actual knowledge makes
+  the broker liable. The distractor claiming liability based on employing an independent contractor
+  is incorrect because the statute limits liability to employee subagents, not independent
+  contractors, unless another condition applies.
+citation:
+  source: Mont. Code Ann. § 37-51-315(2)(a)
+  url: null
+  quoted_text: (a) the broker has actual knowledge of the misrepresentation;
+  secondary: []
+terms:
+  - vicarious liability
+  - misrepresentation
+  - broker
+  - subagent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,44 @@
+id: WA-85-0209
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker was licensed when she first offered to help a seller sell a house, but her license
+  expired before the closing. She later sues the seller for commission. Under RCW 18.85.331, can she
+  recover compensation?
+options:
+  - She cannot recover compensation because her license was not active at the time of closing.
+  - She can recover compensation only if she renews her license before filing the lawsuit.
+  - She can recover compensation because she was licensed at the time she made the offer to perform
+    the transaction.
+  - She cannot recover compensation because she did not have a license when the lawsuit was filed.
+key: C
+explanation: The law requires the plaintiff to prove they were licensed before offering to perform
+  the transaction; licensure at closing or at lawsuit filing is irrelevant. The distractor focusing
+  on renewal before lawsuit misstates the timing requirement.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.331
+  url: null
+  quoted_text: without alleging and proving that the plaintiff was a duly licensed real estate broker,
+    managing broker, or real estate firm before the time of offering to perform any real estate
+    transaction
+  secondary: []
+terms:
+  - license
+  - offering
+  - transaction
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

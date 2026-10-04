@@ -1,0 +1,40 @@
+id: NJ-1-0156
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What must appear on every check and deposit slip for a broker's trust or escrow account under
+  N.J. Stat. Ann. § 45:15-12.5(a)?
+options:
+  - The words 'broker license' or 'trust number'
+  - The words "trust account" or "escrow account"
+  - The words 'client name' or 'property address'
+  - The words 'bank routing number' or 'account number'
+key: B
+explanation: The statute requires that all checks and deposit slips for the trust/escrow account
+  contain the words "trust account" or "escrow account". The license number, client name, and bank
+  routing numbers are not mandated by this provision.
+citation:
+  source: N.J. Stat. Ann. § 45:15-12.5(a)
+  url: null
+  quoted_text: All checks and deposit slips produced as a result of the establishment of the account
+    shall contain the words 'trust account' or 'escrow account'.
+  secondary: []
+terms:
+  - trust account
+  - escrow account
+  - check
+  - deposit slip
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

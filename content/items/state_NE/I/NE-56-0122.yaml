@@ -1,0 +1,47 @@
+id: NE-56-0122
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is assessed a civil fine by the Nebraska Real Estate Commission and does not pay it
+  within seventy days. What may the Attorney General do under the Nebraska Real Estate License Act?
+options:
+  - Require the licensee to complete additional continuing education hours before any further
+    licensing action
+  - Issue a cease and desist order against the licensee for failing to display the broker's license
+    number
+  - Recover the fine as a debt to the State, along with reasonable attorney's fees and court costs,
+    in a district court action
+  - Suspend the licensee's license until the fine is paid, pending further commission review and
+    possible additional penalties
+key: C
+explanation: Under Neb. Rev. Stat. § 81-885.31(2), a civil fine unpaid for more than sixty days
+  becomes a debt to the State recoverable by the Attorney General with fees and costs. The
+  distractor about issuing a cease and desist order is incorrect because that remedy applies to
+  subdivision violations, not unpaid fines.
+citation:
+  source: Neb. Rev. Stat. § 81-885.31(2)
+  url: null
+  quoted_text: Any civil fine imposed pursuant to the act which remains unpaid for more than sixty
+    days shall constitute a debt to the State of Nebraska which may be recovered by the Attorney
+    General, along with reasonable attorney's fees and court costs, in a proper form of action in
+    the name of the state in the district court of the county in which the violator resides.
+  secondary: []
+terms:
+  - civil fine
+  - debt
+  - Attorney General
+  - district court
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

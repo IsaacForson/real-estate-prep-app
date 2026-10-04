@@ -1,0 +1,60 @@
+id: TX-1101-0135
+jurisdiction: TX
+bank: state_TX
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee advertises a flower shop that earns 60% of its gross income from floral
+  arrangements as being located in Austin, Texas, but the shop is actually in Round Rock and the
+  advertisement does not include a conspicuous notice of the true location. Under Tex. Bus. & Com.
+  Code ch. 17, which statement is correct?
+options:
+  - The advertisement is permissible under the statute because the licensee provided the shop's
+    telephone number and the business name in the listing.
+  - The advertisement constitutes a false, misleading, or deceptive act or practice because it
+    misrepresents the geographical location of a business that derives 50% or more of its gross
+    income from floral arrangements.
+  - The advertisement is allowed under the statute if the shop's website includes a conspicuous
+    disclaimer stating the true municipality and state and the disclaimer is visible before any
+    purchase.
+  - The advertisement is not a violation because the shop continues to sell flowers and floral
+    arrangements to customers and maintains the same telephone number.
+key: B
+explanation: The advertisement misrepresents the geographical location of a business that derives
+  50% or more of its income from floral arrangements, which is prohibited by Sec. 17.462(a) and
+  (b)(1)-(3). Providing the shop's telephone number and business name in the listing does not cure
+  the misrepresentation.
+citation:
+  source: Tex. Bus. & Com. Code ch. 17 — Texas Business and Commerce Code Chapter 17 — Deceptive Trade
+    Practices — official Texas Legislature Online statute page read via Internet Archive capture of
+    2025-11-19 because statutes.capitol.texas.gov now serves only a JavaScript shell Sec. 17.462(a)
+  url: null
+  quoted_text: "A person may not misrepresent the geographical location of a business that derives 50
+    percent or more of its gross income from the sale or arranging for the sale of flowers or floral
+    arrangements in the listing of the business:"
+  secondary: []
+math:
+  worked_solution: The shop earns 60% of its gross income from floral arrangements. The statute
+    applies to businesses that derive 50% or more of gross income from floral arrangements. Since
+    60% ≥ 50%, the business meets the threshold, so the misrepresentation of location is a
+    violation.
+  formulas:
+    - "Comparison: percentage ≥ 50%"
+  onscreen_calculator_only: false
+terms:
+  - misrepresent
+  - geographical
+  - location
+  - floral
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

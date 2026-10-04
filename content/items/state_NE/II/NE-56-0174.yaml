@@ -1,0 +1,38 @@
+id: NE-56-0174
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum license fee that the Nebraska Real Estate Commission may charge for a
+  broker's license?
+options:
+  - $100
+  - $150
+  - $200
+  - $250
+key: D
+explanation: The statute sets the broker license fee at no more than two hundred fifty dollars.
+  Therefore, the maximum allowable fee is $250. The other options list lower amounts ($100, $150,
+  $200) which are possible fees but not the maximum.
+citation:
+  source: Neb. Rev. Stat. § 81-885.14(1)
+  url: null
+  quoted_text: For a broker's license, not more than two hundred fifty dollars
+  secondary: []
+terms:
+  - license fee
+  - broker
+  - maximum
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

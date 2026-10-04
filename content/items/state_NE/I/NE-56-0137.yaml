@@ -1,0 +1,44 @@
+id: NE-56-0137
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker maintains an interest-bearing trust account and wishes to distribute the interest to
+  a Nebraska‑based nonprofit that builds affordable housing but does not have federal tax‑exempt
+  status. Under Neb. Rev. Stat. § 81-885.21(6), may the broker distribute the interest to this
+  organization?
+options:
+  - Yes, because the organization promotes housing in Nebraska
+  - No, because the organization must also be exempt from federal income taxes
+  - Yes, as long as all parties whose money is in the account approve
+  - No, because interest may only be retained by the broker
+key: B
+explanation: Subsection (6) limits interest distribution to nonprofit organizations that promote
+  housing in Nebraska and are exempt from federal income taxes; lacking tax‑exempt status prohibits
+  distribution. The option "Yes, because the organization promotes housing in Nebraska" ignores the
+  tax‑exempt requirement.
+citation:
+  source: Neb. Rev. Stat. § 81-885.21(6)
+  url: null
+  quoted_text: If the trust account is an interest-bearing account, as authorized under subsection (1)
+    of this section, the interest from the interest-bearing account may be distributed or otherwise
+    accrue only to nonprofit organizations that promote housing in Nebraska and that are exempt from
+    the payment of federal income taxes.
+  secondary: []
+terms:
+  - interest-bearing account
+  - nonprofit
+  - tax-exempt
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

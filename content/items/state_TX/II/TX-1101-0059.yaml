@@ -1,0 +1,52 @@
+id: TX-1101-0059
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person employed by an owner in the sale of structures and land on which the structures are
+  located, where the structures were erected by the owner in the course of the owner's business,
+  asks whether this activity constitutes real estate brokerage under Texas Occupations Code
+  §1101.005. What is the correct conclusion?
+options:
+  - Under Texas Occupations Code §1101.005, a person employed by an owner in the sale of structures
+    is engaged in real estate brokerage because they are selling structures.
+  - Under Texas Occupations Code §1101.005, a person employed by an owner in the sale of structures
+    is not engaged in real estate brokerage if the structures were erected by the owner in the
+    course of the owner's business.
+  - Under Texas Occupations Code §1101.005, a person employed by an owner in the sale of structures
+    is engaged in real estate brokerage only if they receive a commission.
+  - Under Texas Occupations Code §1101.005, a person employed by an owner in the sale of structures
+    is not engaged in real estate brokerage only if they hold a real estate license.
+key: B
+explanation: Section 1101.005(6) exempts a person employed by an owner in the sale of structures
+  erected by the owner in the course of the owner's business from being considered engaged in real
+  estate brokerage. Therefore, the person is not engaged in brokerage. The claim that holding a real
+  estate license is required for this exemption is incorrect because the exemption applies
+  regardless of licensure.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.005
+  url: null
+  quoted_text: (6) a person employed by an owner in the sale of structures and land on which
+    structures are located if the structures are erected by the owner in the course of the owner's
+    business;
+  secondary: []
+terms:
+  - exemption
+  - structures
+  - brokerage
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

@@ -1,0 +1,50 @@
+id: PA-9-0216
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a public utility negotiates the purchase of a right-of-way for a new pipeline
+  as part of ordinary utility-related business. Under 63 P.S. § 455.304(2), is the employee required
+  to hold a real estate license?
+options:
+  - The employee is required to hold a license because they are negotiating property
+  - The employee is exempt only if they are also a licensed attorney
+  - The employee is not required to hold a license due to the public utility exclusion
+  - The employee must obtain a license only if the transaction exceeds $100,000
+key: C
+explanation: Under 63 P.S. § 455.304(2), employees of a public utility acting in the ordinary course
+  of utility-related business under Title 66 are excluded from licensing when negotiating the
+  purchase, sale or lease of property. The employee negotiating a right-of-way for a pipeline is
+  performing such utility-related negotiations, so the exclusion applies and no license is needed.
+  The distractor that claims a license is required because they are negotiating property overlooks
+  the specific public utility exclusion. Therefore, the correct answer is the one stating the
+  employee is not required to hold a license due to the public utility exclusion.
+citation:
+  source: 63 P.S. §§ 455.101–455.902 (Real Estate Licensing and Registration Act) — Real Estate
+    Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9), official Pennsylvania
+    General Assembly PDF read via Internet Archive capture of 2025-01-14 because
+    legis.state.pa.us/palegis.us refuse connections from this network; section headings annotated
+    with 63 P.S. numbers — § 455.304(2)
+  url: null
+  quoted_text: The employees of a public utility acting in the ordinary course of utility-related
+    business under the provisions of Title 66 of the Pennsylvania Consolidated Statutes (relating to
+    public utilities), with respect to negotiating the purchase, sale or lease of property.
+  secondary: []
+terms:
+  - public
+  - utility
+  - employee
+  - property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

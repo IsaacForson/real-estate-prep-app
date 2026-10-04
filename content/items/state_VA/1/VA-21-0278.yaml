@@ -1,0 +1,46 @@
+id: VA-21-0278
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An auctioneer employed by the owner opens bidding at 9:00 AM on Monday. Assuming no
+  extensions, what is the latest time by which bidding must conclude to comply with Virginia law?
+options:
+  - 9:00 AM Friday
+  - 9:00 AM Tuesday
+  - 9:00 AM Thursday
+  - 9:00 AM Wednesday
+key: D
+explanation: Virginia law requires that bidding at an auction conducted by an owner‑employed
+  auctioneer not remain open longer than 48 hours. Adding 48 hours (2 days) to a Monday 9:00 AM
+  start yields a Wednesday 9:00 AM finish.
+citation:
+  source: Va. Code Ann. § 54.1-2103.A.8
+  url: null
+  quoted_text: provided the bidding at such auction is held open for no longer than 48 hours.
+  secondary: []
+math:
+  worked_solution: |-
+    Start time: 9:00 AM Monday
+    Add 48 hours (2 days)
+    Result: 9:00 AM Wednesday
+  formulas:
+    - end_time = start_time + 48 hours
+  onscreen_calculator_only: false
+terms:
+  - auction
+  - bidding
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,41 @@
+id: NAT-PV-II-0203
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer receives a quitclaim deed from a seller who actually owns the property in fee simple.
+  Later, a third party asserts a superior claim based on an unrecorded easement. Can the buyer rely
+  on the seller's covenant of warranty to defend against the claim?
+options:
+  - The buyer can enforce the warranty against the third party
+  - The buyer cannot enforce any warranty against the third party
+  - The buyer can enforce the warranty only if the easement is recorded
+  - The buyer cannot enforce the warranty unless title insurance is purchased
+key: B
+explanation: A quitclaim deed conveys whatever interest the grantor has with no warranties, as
+  stated in § 6.6. Therefore the buyer has no warranty to enforce against the third party’s claim.
+  The distractor suggesting enforcement if the easement is recorded is incorrect because the deed
+  lacks any warranty regardless of record status.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.6
+  url: null
+  quoted_text: A quitclaim deed conveys whatever interest the grantor has, if any, with no warranties
+    and no implication that the grantor has any interest.
+  secondary: []
+terms:
+  - quitclaim deed
+  - warranty
+  - easement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

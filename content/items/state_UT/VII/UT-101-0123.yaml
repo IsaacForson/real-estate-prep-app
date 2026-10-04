@@ -1,0 +1,54 @@
+id: UT-101-0123
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: At the start of a fiscal year, the Real Estate Education, Research, and Recovery Fund contains
+  $120,000. According to Utah Code Ann. § 61-2f-504(1), how much of this money is available for the
+  division to use for investigating violations and advancing education and research?
+options:
+  - "Amount available for investigation and education: $20,000"
+  - "Amount available for investigation and education: $100,000"
+  - "Amount available for investigation and education: $120,000"
+  - "Amount available for investigation and education: $0"
+key: A
+explanation: Under Utah Code Ann. § 61-2f-504(1), any money in the fund that exceeds $100,000 must
+  be set aside for investigating violations and advancing education and research. With a starting
+  balance of $120,000, the amount over $100,000 is $20,000, so the statement that the amount
+  available for investigation and education is $20,000 is correct. The statement that the amount
+  available is $0 incorrectly treats the $100,000 threshold as the usable amount rather than the
+  excess above it.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network § 61-2f-504
+  url: null
+  quoted_text: "Money accumulated in the fund in excess of $100,000 shall be set aside and segregated
+    to be used by the division to: (a) investigate violations of this chapter related to fraud,
+    misrepresentation, or deceit; and (b) advance education and research in the field of real
+    estate."
+  secondary: []
+math:
+  worked_solution: "Starting fund balance: $120,000. Threshold amount: $100,000. Excess = $120,000 -
+    $100,000 = $20,000."
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - fund
+  - excess
+  - investigation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

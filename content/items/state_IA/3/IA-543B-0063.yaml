@@ -1,0 +1,45 @@
+id: IA-543B-0063
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a real estate broker’s license is revoked under Iowa Code §543B.29, what is the immediate
+  effect on the licenses of salespersons employed by that broker?
+options:
+  - Automatic revocation of the licenses pending reemployment
+  - Suspension of the licenses pending a new employer
+  - No action required; licenses may be continued
+  - Issuance of a new license to each salesperson
+key: B
+explanation: The statute provides that the revocation of a broker’s license automatically suspends
+  every license granted to persons employed by that broker, pending a change of employer and
+  issuance of a new license. Therefore, the salespersons’ licenses are suspended pending a new
+  employer. The distractor “Automatic revocation of the licenses pending reemployment” is incorrect
+  because the licenses are suspended, not revoked, upon the broker’s revocation.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §543B.29
+  url: null
+  quoted_text: |-
+    The revocation of a broker’s license shall automatically suspend every license granted
+    Tue Dec 09 22:02:12 2025 Iowa Code 2026, Chapter 543B (41, 1)
+
+    §543B.29, REAL ESTATE BROKERS AND SALESPERSONS 14
+    to any person by virtue of the person’s employment by the broker whose license has been
+    revoked, pending a change of employer and the issuance of a new license
+  secondary: []
+terms:
+  - revocation
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,54 @@
+id: MI-25-0156
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker enters into a written agreement with an associate broker stating that the
+  associate broker is not an employee for federal and state income tax purposes. Under this
+  agreement, 60% of the associate broker's annual compensation comes from commissions from real
+  estate sales. According to MCL 339.2501(h), does this relationship qualify as an independent
+  contractor relationship?
+options:
+  - The relationship qualifies as an independent contractor relationship because the written
+    agreement satisfies condition (i) and the commission percentage is irrelevant.
+  - The relationship does not qualify as an independent contractor relationship because less than
+    75% of the associate broker's compensation is from commissions, failing condition (ii).
+  - The relationship does not qualify as an independent contractor relationship because the broker
+    must also provide benefits to the associate broker for the relationship to qualify.
+  - The relationship qualifies as an independent contractor relationship because any written
+    agreement that avoids employee status automatically creates an independent contractor
+    relationship.
+key: B
+explanation: The statute requires both a written agreement that avoids employee status and at least
+  75% of compensation from commissions. While the written agreement satisfies condition (i), the 60%
+  commission share fails condition (ii). Therefore the relationship does not qualify. The option
+  that claims the relationship qualifies because the written agreement satisfies condition (i) and
+  the commission percentage is irrelevant incorrectly ignores the commission threshold.
+citation:
+  source: Mich. Comp. Laws § 339.2501(h)
+  url: null
+  quoted_text: At least 75% of the annual compensation paid by the real estate broker to the associate
+    real estate broker or real estate salesperson is from commissions from the sale of real estate.
+  secondary: []
+math:
+  worked_solution: The associate broker receives 60% of compensation from commissions. The statute
+    requires at least 75%. Since 60% is less than 75%, condition (ii) is not satisfied.
+  formulas:
+    - Commission percentage >= 75% (threshold test)
+  onscreen_calculator_only: false
+terms:
+  - independent contractor relationship
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

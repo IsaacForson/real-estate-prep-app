@@ -1,0 +1,42 @@
+id: MS-1954-0278
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson obtained their Mississippi license on March 1, 2024. Their license renews on
+  June 30, 2025. Under Miss. Code Ann. § 73-35-6(2), is the salesperson required to complete
+  continuing education for this first renewal?
+options:
+  - Yes, because they have been licensed more than one year.
+  - No, because they have been licensed less than one year.
+  - Yes, because the renewal date is after July 1, 1994.
+  - No, because inactive licensees are exempt from continuing education.
+key: A
+explanation: The exemption applies only to applicants for first renewal who have been licensed for
+  not more than one year; the salesperson has been licensed over one year, so they must complete
+  continuing education. The distractor claiming exemption because the renewal date is after July 1,
+  1994 misstates the condition, which is based on licensure duration, not the calendar date.
+citation:
+  source: Miss. Code Ann. § 73-35-6(2)
+  url: null
+  quoted_text: an applicant for first renewal who has been licensed for not more than one (1) year
+    shall not be required to comply with this section for the first renewal of the applicant’s
+    license.
+  secondary: []
+terms:
+  - first renewal
+  - continuing education
+  - licensure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

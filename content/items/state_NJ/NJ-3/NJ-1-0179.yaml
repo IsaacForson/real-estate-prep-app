@@ -1,0 +1,42 @@
+id: NJ-1-0179
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord receives the statement of tenant and landlord rights on April 10 and distributes
+  copies to existing tenants on May 15. Has the landlord complied with the distribution requirement
+  under N.J. Stat. Ann. § 46:8-46?
+options:
+  - The landlord has complied because distribution occurred within 30 days.
+  - The landlord has complied because distribution occurred before the statement was made available.
+  - The landlord has not complied because distribution must occur within 15 days.
+  - The landlord has not complied because distribution occurred after 30 days.
+key: D
+explanation: From April 10 to May 15 is 35 days, exceeding the 30‑day limit, so the landlord has not
+  complied. The option claiming compliance because distribution occurred within 30 days ignores the
+  actual elapsed time.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 8 — New Jersey Statutes Title 46, Chapter 8 — Landlord and
+    Tenant (incl. Truth-in-Renting Act 46:8-43 et seq.) (N.J.S.A. 46:8-1 et seq.), extracted from
+    the New Jersey Legislature's official full-text statutes download (STATUTES-TEXT.zip dated
+    2025-08-07) read via Internet Archive capture of 2025-08-08 — § 8-43 § 46:8-46
+  url: null
+  quoted_text: within 30 days after it has been made available by the department
+  secondary: []
+terms:
+  - distribution
+  - statement
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

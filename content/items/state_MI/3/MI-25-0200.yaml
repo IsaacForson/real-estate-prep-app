@@ -1,0 +1,40 @@
+id: MI-25-0200
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "According to Mich. Comp. Laws § 339.2512(4), a real estate salesperson may advertise to sell
+  real property under his or her own name only if:"
+options:
+  - Yes, because the advertisement includes employing broker's phone number
+  - Yes, because the property is listed for lease or rent in the MLS today
+  - Yes, because the property is the principal residence of the salesperson
+  - Yes, because the salesperson holds a valid broker's license in the state
+key: C
+explanation: The key is correct because Mich. Comp. Laws § 339.2512(4) permits a salesperson to
+  advertise under his or her own name only when the property is the salesperson's principal
+  residence. The most tempting distractor is B, which suggests that holding a broker's license
+  allows the exemption, but the statute does not mention licensure status as a condition for this
+  exception.
+citation:
+  source: Mich. Comp. Laws § 339.2512(4)
+  url: null
+  quoted_text: (4) A real estate salesperson shall not advertise to sell real property under his or
+    her own name unless the property is the principal residence of the salesperson.
+  secondary: []
+terms:
+  - advertising
+  - principal residence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

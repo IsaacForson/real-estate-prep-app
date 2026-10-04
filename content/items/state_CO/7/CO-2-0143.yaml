@@ -1,0 +1,43 @@
+id: CO-2-0143
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker is acting as the seller’s agent for a residential property. The broker learns that
+  the roof has a significant leak that requires immediate repair. The broker does not inform the
+  prospective buyer about the leak. According to Colorado law, is the broker in compliance?
+options:
+  - Yes, because the leak is not a material fact under Colorado law.
+  - No, because the broker must disclose all adverse material facts actually known to the broker.
+  - No, because the broker must first obtain the seller’s consent before disclosing.
+  - Yes, because the broker owes no duty to the buyer under Colorado law.
+key: B
+explanation: Under Colorado law, a seller’s agent owes no duty to the buyer except to disclose all
+  adverse material facts actually known by the broker. The leak is an adverse material fact that
+  must be disclosed to the prospective buyer. The claim that the broker owes no duty to the buyer is
+  incorrect; the claim that the leak is not a material fact is incorrect; the claim that the broker
+  must first obtain the seller’s consent before disclosing is incorrect.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. § 12-10-404(3)(a)
+  url: null
+  quoted_text: A broker acting as a seller’s or landlord’s agent owes no duty or obligation to the
+    buyer or tenant; except that a broker shall, subject to the limitations of section 38-35.5-101,
+    concerning psychologically impacted property, disclose to any prospective buyer or tenant all
+    adverse material facts actually known by the broker.
+  secondary: []
+terms:
+  - disclosure
+  - adverse material fact
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,38 @@
+id: NJ-1-0176
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer drives pilings to support a boardwalk in a freshwater wetland. Under the
+  Freshwater Wetlands Protection Act, does this activity require a freshwater wetlands permit?
+options:
+  - Yes, but only if the wetland is classified as a transition area.
+  - No, because the pilings are temporary and do not constitute a permanent structure.
+  - No, because constructing a boardwalk is exempt from permit requirements.
+  - Yes, because driving pilings is a regulated activity requiring a permit.
+key: D
+explanation: Driving pilings is defined as a regulated activity under N.J. Stat. Ann. § 13:9B-3 and
+  therefore requires a freshwater wetlands permit. The other options incorrectly claim exemptions or
+  limitations not present in the statute.
+citation:
+  source: N.J. Stat. Ann. § 13:9B-3
+  url: null
+  quoted_text: The driving of pilings;
+  secondary: []
+terms:
+  - regulated activity
+  - permit
+  - pilings
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

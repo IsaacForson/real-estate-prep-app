@@ -1,0 +1,44 @@
+id: OH-4735-0081
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An out-of-state commercial broker provides the required documentation to an Ohio cooperating
+  broker on August 10, 2024. According to Ohio Rev. Code § 4735.022, what is the latest date the
+  Ohio broker may destroy that documentation?
+options:
+  - August 10, 2025
+  - August 10, 2026
+  - August 10, 2027
+  - August 10, 2028
+key: C
+explanation: The rule mandates that the Ohio broker retain the documentation for three years after
+  the date it is provided. Adding three years to August 10, 2024 yields August 10, 2027 as the
+  latest permissible destruction date. The August 10, 2026 distractor reflects only a two‑year
+  retention period.
+citation:
+  source: Ohio Rev. Code § 4735.022
+  url: null
+  quoted_text: The Ohio broker described in division (A)(1) of this section shall retain the
+    documentation that is provided by the out-of-state commercial broker as required under division
+    (A)(7) of this section, and the records and documents related to a transaction, for a period of
+    three years after the date the documentation is provided, or the transaction occurred, as
+    appropriate.
+  secondary: []
+terms:
+  - documentation
+  - retention
+  - years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

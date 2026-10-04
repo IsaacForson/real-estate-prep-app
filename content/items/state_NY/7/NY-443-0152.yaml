@@ -1,0 +1,42 @@
+id: NY-443-0152
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to 19 N.Y.C.R.R. §176.3(a), what is the total number of hours required for the real
+  estate salesperson pre-licensing course of study?
+options:
+  - The course requires 75 hours.
+  - The course requires 90 hours.
+  - The course requires 80 hours.
+  - The course requires 85 hours.
+key: C
+explanation: The regulation requires 77 hours of instruction and 3 hours for the final examination,
+  for a total of 80 hours. The 75‑hour choice leaves out the final‑examination time, and the 85‑hour
+  choice adds time that is not included in the rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Instruction     77
+    Final Examination    3
+    Total       80
+  secondary: []
+terms:
+  - hour
+  - course
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

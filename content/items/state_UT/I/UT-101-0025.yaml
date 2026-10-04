@@ -1,0 +1,42 @@
+id: UT-101-0025
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer requests the division to provide a list of all licensed real estate sales agents in
+  Utah. Under Utah Code Ann. § 61-2f-104(2), what must the consumer do?
+options:
+  - They must wait thirty days for the list to be prepared.
+  - They must be a licensed real estate broker to receive the list.
+  - They must pay the costs incurred by the division to make the list available.
+  - They must provide a written request to the commission.
+key: C
+explanation: Under §61-2f-104(2), anyone who requests a list of licensees must pay the division's
+  costs for providing that list. The rule does not impose a waiting period, require the requester to
+  be a broker, or direct the request to the commission. Therefore, the consumer must cover the
+  incurred expenses.
+citation:
+  source: "### Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title
+    61, Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-104"
+  url: null
+  quoted_text: (2) A person who requests a list under Subsection (1) shall pay the costs incurred by
+    the division to make the list available.
+  secondary: []
+terms:
+  - list
+  - costs
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

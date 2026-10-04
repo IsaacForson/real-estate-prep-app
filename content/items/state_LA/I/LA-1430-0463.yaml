@@ -1,0 +1,41 @@
+id: LA-1430-0463
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: On March 15, 2004, a licensee gives a buyer the mold informational pamphlet while discussing a
+  purchase agreement that will be signed on April 10, 2004. Under Louisiana Real Estate License Law,
+  is the licensee in compliance with the distribution timing requirement?
+options:
+  - Yes, because the licensee delivered the pamphlet before the contract was signed.
+  - No, because the pamphlet may only be distributed for transactions entered into on or after July
+    1, 2004.
+  - Yes, because the licensee provided the pamphlet at no cost to the buyer.
+  - No, because the licensee must deliver the pamphlet at or before the contract is entered into.
+key: B
+explanation: The pamphlet may only be distributed for transactions entered into on or after July 1,
+  2004, as stated in subsection (A)(1). Since both the pamphlet delivery and the contemplated
+  contract occur before that date, the distribution is not compliant regardless of timing. The
+  option citing pre‑contract delivery overlooks the July 1 restriction and is therefore incorrect.
+citation:
+  source: La. R.S. 37:1470(A)(1)
+  url: null
+  quoted_text: which may be distributed to buyers by licensees in connection with any real estate
+    transaction entered into on or after July 1, 2004.
+  secondary: []
+terms:
+  - mold pamphlet
+  - effective date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

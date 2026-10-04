@@ -1,0 +1,42 @@
+id: CO-2-0075
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wants to use an Attorney Form for a transaction, but a Commission-Approved Form
+  exists and is appropriate for that transaction. Under Colorado Real Estate Commission rules, may
+  the broker use the Attorney Form?
+options:
+  - No, the broker may not use the Attorney Form because a Commission-Approved Form exists and is
+    appropriate for the transaction.
+  - Yes, the broker may use the Attorney Form as long as it includes the required disclaimer.
+  - Yes, the broker may use the Attorney Form after obtaining written confirmation from the client.
+  - No, the broker may not use the Attorney Form unless the broker alters the form to suit the
+    transaction.
+key: A
+explanation: The rule permits an Attorney Form only when a Commission-Approved Form does not exist
+  or is not appropriate for the transaction. The option suggesting the broker may use the Attorney
+  Form as long as it includes the disclaimer incorrectly adds a condition not found in the rule.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) — § 6
+  url: null
+  quoted_text: A Broker may only use an Attorney Form if a Commission-Approved Form does not exist or
+    is not appropriate for the transaction.
+  secondary: []
+terms:
+  - attorney form
+  - commission-approved form
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,46 @@
+id: OR-696-0060
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A managing principal broker wishes to authorize a broker to temporarily supervise the managing
+  principal broker's professional real estate activity. The managing principal broker provides
+  written authorization with an effective date and a termination date that is 100 days in the
+  future. The broker accepts the supervisory responsibility in writing. Under Oregon administrative
+  rules, what is the status of this authorization?
+options:
+  - The authorization is valid because written authorization and acceptance are present
+  - The authorization is invalid because the authorization exceeds the maximum 90‑day period
+  - The authorization is invalid because it was not filed with the Agency before the effective date
+  - The authorization is invalid because the broker lacks three years of active experience
+key: B
+explanation: OAR 863-014-0090(2)(a) requires that the written authorization include an effective and
+  termination date, which may not exceed 90 days. A termination date set at 100 days violates this
+  limit, making the authorization invalid regardless of other compliance. While filing with the
+  Agency before the effective date is also required (subsection 5), the primary defect here is the
+  impermissible duration. The broker's experience is not mentioned in the scenario, so that
+  distractor is unsupported.
+citation:
+  source: Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) 863-014-0090
+  url: null
+  quoted_text: Authorization by the managing principal broker, including the effective date and
+    termination date of such authorization, which may not exceed 90 days;
+  secondary: []
+terms:
+  - temporary supervision
+  - written authorization
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

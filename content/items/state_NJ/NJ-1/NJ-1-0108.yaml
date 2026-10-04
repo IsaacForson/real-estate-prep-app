@@ -1,0 +1,53 @@
+id: NJ-1-0108
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The president of the New Jersey Real Estate Commission receives an annual salary of $15,000.
+  If the commission has eight members total, what is the total annual salary paid to all commission
+  members, assuming the department representative serves without compensation?
+options:
+  - $75,000
+  - $85,000
+  - $95,000
+  - $105,000
+key: A
+explanation: The president earns $15,000 and the six other compensated members (eight total minus
+  the president and the unpaid department representative) each earn $10,000, resulting in a total of
+  $75,000. The distractor of $85,000 incorrectly adds an extra $10,000, perhaps by treating all
+  eight members as paid at the $10,000 rate.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-6
+  url: null
+  quoted_text: The president shall receive a salary of $15,000.00 per year and each other member of
+    the commission shall receive a salary of $10,000.00 per year, except the department
+    representative who serves without compensation
+  secondary: []
+math:
+  worked_solution: |-
+    Determine number of paid members besides president and department rep: 8 total - 2 = 6.
+    Multiply 6 by $10,000 = $60,000.
+    Add president salary $15,000 to $60,000 = $75,000.
+  formulas:
+    - total = S_president + (N_total - 2) * S_other
+  onscreen_calculator_only: false
+terms:
+  - salary
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

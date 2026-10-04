@@ -1,0 +1,40 @@
+id: SD-21A-0185
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lawful permanent resident of the United States who lives in South Dakota wishes to obtain a
+  broker license. Is the applicant eligible for the broker license under South Dakota law?
+options:
+  - Yes, because South Dakota residency satisfies the citizenship-or-residency requirement for a
+    broker license.
+  - No, because only United States citizens may obtain a broker license.
+  - Yes, but only if the applicant also obtains United States citizenship within six months.
+  - No, because lawful permanent residents are not considered residents for licensing purposes.
+key: A
+explanation: The statute states that a broker license applicant must be either a U.S. citizen or a
+  resident of South Dakota. Lawful permanent residency in South Dakota meets the residency
+  requirement, making the applicant eligible. The other options incorrectly impose citizenship or
+  additional conditions not found in the law.
+citation:
+  source: S.D. Codified Laws § 36-21A-30
+  url: null
+  quoted_text: No one except a citizen of the United States of America, or resident of South Dakota,
+    is eligible to secure a license as a broker, except as otherwise provided by this chapter.
+  secondary: []
+terms:
+  - broker
+  - residency
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

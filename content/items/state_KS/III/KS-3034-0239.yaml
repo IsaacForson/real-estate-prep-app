@@ -1,0 +1,39 @@
+id: KS-3034-0239
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker received advance listing fees on January 1, 2025 and must provide written reports to
+  the principal every 30 days. The broker provides the first report on January 31, 2025. When is the
+  next report due?
+options:
+  - February 28, 2025
+  - March 02, 2025
+  - March 30, 2025
+  - April 01, 2025
+key: B
+explanation: Reports are required every 30 days; adding 30 days to January 31 yields March 02.
+  February 28 is only 28 days later, a typical mis‑calculation of the monthly interval.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(c)(5)
+  url: null
+  quoted_text: Fail to provide to the principal a written report every 30 days, along with a final
+    report, itemizing disbursements made by the broker from advance listing fees.
+  secondary: []
+terms:
+  - report
+  - principal
+  - advance listing fees
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

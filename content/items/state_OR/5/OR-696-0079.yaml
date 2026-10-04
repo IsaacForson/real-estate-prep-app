@@ -1,0 +1,41 @@
+id: OR-696-0079
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money check made payable to the seller. The offer is accepted.
+  What must the broker do within three banking days following acceptance?
+options:
+  - The broker must deposit the check into a clients' trust account.
+  - The broker must deposit the check to a licensed neutral escrow depository.
+  - The broker must deliver the check to the seller.
+  - The broker must hold the check un-deposited until closing.
+key: C
+explanation: The rule requires delivery of the check to the seller when the check is made payable to
+  the seller, as stated in subsection (c). Depositing the check into a clients' trust account is
+  incorrect because that procedure applies only when the check is not made payable to the seller.
+citation:
+  source: "### Or. Admin. R. ch. 863 (Real Estate Agency) — Oregon Real Estate Agency permanent
+    administrative rules filing implementing HB 3137 (OAR chapter 863, divisions 14, 15, 20, 22, 24,
+    25; filed Oct. 9, 2025, effective Jan. 1, 2026) — § 863-015-0260 OAR 863-015-0257(3)(c)"
+  url: null
+  quoted_text: (c) For a check made payable to the seller, deliver the check to the seller.
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+  - seller
+  - escrow depository
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

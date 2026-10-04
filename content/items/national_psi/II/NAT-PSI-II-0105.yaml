@@ -1,0 +1,42 @@
+id: NAT-PSI-II-0105
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner divides a parcel, leaving one part without road access. According to the text,
+  what type of easement is implied by law?
+options:
+  - A revocable personal permission to use land
+  - A utility easement held in gross
+  - A necessity-based easement implied by law
+  - A easement appurtenant to a parcel
+key: C
+explanation: When a division leaves one part landlocked, the law implies an easement of access over
+  the part that retains road access; this is an easement by necessity. The option describing a
+  utility easement held in gross is incorrect because such easements are created by express grant,
+  not implied by law.
+citation:
+  source: REP Ref. Property & Land Use § 7.3
+  url: null
+  quoted_text: When a division leaves one part landlocked, the law implies an easement of access over
+    the part that keeps road access. It arises from the common ownership at division, requires
+    strict necessity rather than convenience, and ends when the necessity ends.
+  secondary: []
+terms:
+  - necessity
+  - easement
+  - landlocked
+  - access
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

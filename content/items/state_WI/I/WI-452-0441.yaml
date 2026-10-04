@@ -1,0 +1,44 @@
+id: WI-452-0441
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A deed from Alex to Alex and Bailey conveys property to Alex and Bailey as joint tenants, with
+  Alex serving as both grantor and grantee. Under Wis. Stat. § 700.19(5), what is the effect of this
+  conveyance?
+options:
+  - The deed creates a valid joint tenancy between Alex and Bailey.
+  - The deed does not create a joint tenancy because a grantor cannot also be a grantee.
+  - The deed creates a tenancy in common between Alex and Bailey.
+  - The deed creates a joint tenancy only if Alex and Bailey are married.
+key: A
+explanation: The statute abolishes the common law rule that a grantor cannot also be a grantee in a
+  deed creating a joint tenancy. Therefore, the deed creates a valid joint tenancy between Alex and
+  Bailey. The distractor claiming no joint tenancy is created relies on the abolished common law
+  requirement and is therefore incorrect.
+citation:
+  source: "### Wis. Stat. ch. 700 — Wisconsin Statutes Chapter 700, official Wisconsin Legislature PDF
+    read via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses
+    connections from this network — § 700.19(5)"
+  url: null
+  quoted_text: The common law requirement that a grantor cannot also be a grantee in a deed creating a
+    joint tenancy is no longer the law in Wisconsin.
+  secondary: []
+terms:
+  - grantor
+  - grantee
+  - joint tenancy
+  - common law
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

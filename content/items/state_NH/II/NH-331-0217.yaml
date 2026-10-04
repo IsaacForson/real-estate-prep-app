@@ -1,0 +1,48 @@
+id: NH-331-0217
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee whose New Hampshire license expired six months ago previously worked under Broker
+  Alpha and participated in a closing while licensed. The licensee now receives a referral fee from
+  Broker Alpha for that transaction. According to RSA 331-A:16(XXIV), is the licensee permitted to
+  receive this compensation?
+options:
+  - The licensee may not receive the referral fee unless they are currently employed by Broker Alpha
+  - The licensee may receive the referral fee because they participated in the transaction while
+    licensed
+  - The licensee may receive the referral fee only after reactivating the license
+  - The licensee may not receive the referral fee because the license has expired
+key: B
+explanation: The rule allows a licensee whose license has expired to receive compensation from the
+  previous responsible broker for transactions in which the person participated while under that
+  broker's supervision. The distractor claiming an expired license prohibits any compensation is
+  wrong because the rule expressly permits such compensation for prior transactions.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:16(XXIV)
+  url: null
+  quoted_text: A licensee who has allowed his or her license to expire or who has changed to inactive
+    status or who has transferred to another responsible broker may receive compensation from the
+    previous responsible broker for transactions in which the person participated during the time
+    that the licensee was under the supervision of that responsible broker.
+  secondary: []
+terms:
+  - license
+  - compensation
+  - broker
+  - supervision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

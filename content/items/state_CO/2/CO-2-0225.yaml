@@ -1,0 +1,43 @@
+id: CO-2-0225
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker who manages properties collects both rent and security deposits from tenants.
+  According to 4 CCR 725-1 § 5.5, what must the broker do with these funds?
+options:
+  - The broker must deposit rent and security deposits in a personal account if reconciled monthly.
+  - The broker must keep rent and security deposits in separate trust accounts, with at least one
+    account for each.
+  - The broker must deposit both rent and security deposits in the same trust account.
+  - The broker must combine rent and security deposits when a ledger is maintained.
+key: B
+explanation: The rule requires rental receipts and security deposits to be placed in separate trust
+  or escrow accounts, with a minimum of one account for each purpose. Depositing both in the same
+  account would commingle the funds and violate the rule.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) § 5.5
+  url: null
+  quoted_text: A Brokerage Firm who engages in Property Management must deposit rental receipts and
+    security deposits and disburse money collected for such purposes in separate Trust or Escrow
+    Accounts, a minimum of one for rental receipts and a minimum of one for security deposits.
+  secondary: []
+terms:
+  - rental receipts
+  - security deposit
+  - trust account
+  - separate accounts
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,42 @@
+id: SC-57-0218
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Under S.C. Code Ann. § 40-57-120(B), a nonresident licensee who maintains an active place of
+  business in their home state is:"
+options:
+  - The licensee must obtain a South Carolina broker-in-charge license
+  - The licensee is not required to maintain a place of business in South Carolina
+  - The licensee must close the out-of-state office within 30 days
+  - The licensee must also maintain a place of business in South Carolina
+key: B
+explanation: The statute provides that a nonresident licensee acknowledged by the commission is not
+  required to maintain a place of business in this State if the nonresident maintains an active
+  place of business in the state of residence. Therefore, maintaining an out-of-state office
+  satisfies the requirement and no South Carolina office is needed. The other options impose
+  requirements not found in the statute.
+citation:
+  source: S.C. Code Ann. § 40-57-120(B)
+  url: null
+  quoted_text: A nonresident licensee, acknowledged by the commission, is not required to maintain a
+    place of business in this State if the nonresident maintains an active place of business in the
+    state of residence.
+  secondary: []
+terms:
+  - nonresident
+  - place of business
+  - residence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

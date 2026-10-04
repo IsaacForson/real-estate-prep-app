@@ -1,0 +1,43 @@
+id: TN-1973-0128
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A property management company collects security deposits from tenants for leased residential
+  units. Under Tenn. Comp. R. & Regs. 1260-02-.09(12), these deposits must be held:"
+options:
+  - In the same escrow account used for sales transactions, contrary to the requirement.
+  - In one or more separate escrow or trustee accounts distinct from the sales escrow account.
+  - In the licensee's personal checking account for convenience.
+  - Only if the deposits exceed $1,000, as some might think.
+key: B
+explanation: The rule requires that trust money related to lease property be held in one or more
+  separate escrow or trustee accounts, in addition to any account used for sales transactions.
+  Therefore, security deposits from tenants must be placed in a separate account. Placing the
+  deposits in the licensee's personal checking account is incorrect because commingling lease trust
+  money with sales trust money violates the separation requirement.
+citation:
+  source: Tenn. Comp. R. & Regs. 1260-02-.09(12)
+  url: null
+  quoted_text: In addition to the escrow or trustee account referenced in paragraph (2), all trust
+    money received and held which relates to the lease of property must be held in one (1) or more
+    separate escrow or trustee accounts.
+  secondary: []
+terms:
+  - escrow
+  - trustee account
+  - lease property
+  - separate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

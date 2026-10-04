@@ -1,0 +1,47 @@
+id: NV-645-0161
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee terminates a brokerage agreement with a buyer and, eight months later, shares the
+  buyer's confidential financial information with a third party after obtaining the buyer's written
+  permission. According to Nevada law, is the licensee permitted to disclose the information?
+options:
+  - The licensee is not permitted to disclose the information because sharing confidential
+    information with a third party is prohibited.
+  - The licensee is permitted to disclose the information because eight months exceeds the required
+    confidentiality period.
+  - The licensee is not permitted to disclose the information because the one‑year confidentiality
+    period has not yet expired.
+  - The licensee is permitted to disclose the information because the client gave written permission.
+key: D
+explanation: NRS 645.254(2) permits disclosure after termination if the client gives written
+  permission, which overrides the one‑year confidentiality ban. The rationale that relies only on
+  the eight‑month period overlooks this written‑permission exception.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.254(2)
+  url: null
+  quoted_text: Shall not disclose confidential information relating to a client for 1 year after the
+    revocation or termination of the brokerage agreement, unless he or she is required to do so
+    pursuant to an order of a court of competent jurisdiction or is given written permission to do
+    so by the client;
+  secondary: []
+terms:
+  - confidentiality
+  - written permission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

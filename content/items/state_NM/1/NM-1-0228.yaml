@@ -1,0 +1,40 @@
+id: NM-1-0228
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker collects a security deposit from a tenant and deposits it into the
+  property management trust account. According to 16.61.24.12(A), how must the broker show this
+  security deposit in the monthly owner statement?
+options:
+  - Funds deposited by category
+  - Funds disbursed by category
+  - Previous balance
+  - Ending balance
+key: A
+explanation: The rule mandates that the owner statement list funds deposited by category. A security
+  deposit is a type of deposit, so it must appear under that heading. Funds disbursed by category
+  refers to outflows, not the deposit itself.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.1.7 § 16.61.24.12(A)
+  url: null
+  quoted_text: (2) Funds deposited by category;
+  secondary: []
+terms:
+  - security deposit
+  - trust account
+  - owner statement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,49 @@
+id: RI-5-0308
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Rhode Island real estate licensee is convicted of a misdemeanor on June 1, 2024. By what
+  date must the licensee file a written report with the Department to comply with regulations?
+options:
+  - July 15, 2024
+  - August 15, 2024
+  - July 31, 2024
+  - July 1, 2024
+key: C
+explanation: The rule requires a written report within sixty (60) days of the final judgment. Sixty
+  days after June 1, 2024 is July 31, 2024. July 1, 2024 is only thirty days later, which does not
+  satisfy the sixty‑day requirement.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.13
+  url: null
+  quoted_text: Any licensee convicted of, or otherwise pleads guilty or nolo contendere to, any felony
+    or misdemeanor, or is disciplined by any governmental agency in connection with any other
+    occupational license, shall file with the Department a written report of such conviction or
+    disciplinary action within sixty (60) days of the final judgment or final order in the case.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: June 1, 2024
+    Add 30 days to reach July 1, 2024
+    Add another 30 days to reach July 31, 2024
+    Result: July 31, 2024
+  formulas:
+    - Future date = Start date + 60 days
+  onscreen_calculator_only: false
+terms:
+  - reporting conviction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,42 @@
+id: WY-101-0124
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives earnest money from a buyer on a Thursday afternoon. According to Wyoming
+  law, by when must the licensee deposit the funds into an escrow or trust account?
+options:
+  - By the close of Thursday
+  - By the close of Friday
+  - By the close of Monday
+  - By the close of Tuesday
+key: B
+explanation: The rule in § 33-28-111(xxvii) mandates deposit within one banking day. Assuming Friday
+  is a banking day, the latest permissible time is the close of Friday. Depositing by close of
+  Thursday is allowed but not required; close of Monday would be two banking days later, exceeding
+  the limit.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-111(xxvii)
+  url: null
+  quoted_text: Failing to deposit all financial instruments in an escrow or trust account within one
+    (1) banking day in a financial institution in this state, unless each person with an interest in
+    the funds has agreed otherwise in writing;
+  secondary: []
+terms:
+  - earnest money
+  - escrow
+  - deposit
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

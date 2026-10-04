@@ -1,0 +1,52 @@
+id: CA-4-0281
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An association’s budgeted gross expenses for the fiscal year are $200,000. It proposes a
+  special assessment of $25,000 to repair damage to an accommodation. Under Cal. Bus. & Prof. Code §
+  11265(a)(6)(B), is this special assessment permissible without a vote of the owners other than the
+  developer?
+options:
+  - The special assessment is permissible because it does not exceed 5% of the budgeted gross
+    expenses.
+  - The special assessment is not permissible because it exceeds 5% of the budgeted gross expenses.
+  - The special assessment is permissible because it does not exceed 10% of the budgeted gross
+    expenses.
+  - The special assessment is not permissible because it exceeds 10% of the budgeted gross expenses.
+key: D
+explanation: Under Cal. Bus. & Prof. Code § 11265(a)(6)(B), a special assessment for repair or
+  rebuilding of an accommodation may not exceed 10 percent of the association's budgeted gross
+  expenses for the fiscal year without a vote. Ten percent of $200,000 is $20,000. The proposed
+  $25,000 exceeds this limit, so a vote is required.
+citation:
+  source: Cal. Bus. & Prof. Code § 11265(a)(6)(B)
+  url: null
+  quoted_text: A special assessment for the repair or rebuilding of an accommodation that does not
+    exceed 10 percent of the budgeted gross expenses of the association for the fiscal year in which
+    the assessment is levied
+  secondary: []
+math:
+  worked_solution: "Calculate 10% of $200,000: 0.10 × 200,000 = 20,000. Compare the proposed
+    assessment of $25,000 to the limit: 25,000 > 20,000, so the assessment exceeds the allowable
+    amount."
+  formulas:
+    - Limit = 0.10 × budgeted gross expenses
+  onscreen_calculator_only: false
+terms:
+  - special assessment
+  - budgeted gross expenses
+  - repair
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

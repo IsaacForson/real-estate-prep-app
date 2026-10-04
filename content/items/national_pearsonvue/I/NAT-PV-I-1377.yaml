@@ -1,0 +1,47 @@
+id: NAT-PV-I-1377
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property is assessed at $300,000. The owner qualifies for a $30,000 homestead exemption. The
+  combined tax rate is 15 mills. What is the annual property tax?
+options:
+  - $4,050
+  - $4,500
+  - $3,150
+  - $4,950
+key: A
+explanation: "First subtract the exemption: $300,000 - $30,000 = $270,000 taxable value. Fifteen
+  mills equals 0.015 (15 × 0.001). Multiply: $270,000 × 0.015 = $4,050. The distractors result from
+  failing to apply the exemption, using the wrong mill conversion, or mis‑calculating the product."
+citation:
+  source: REP Ref. Property & Land Use § 4.4
+  url: null
+  quoted_text: Example. A home assessed at $250,000 with a combined rate of 22 mills owes 250,000 x
+    0.022 = $5,500. With a $25,000 homestead exemption the tax is 225,000 x 0.022 = $4,950.
+  secondary: []
+math:
+  worked_solution: |-
+    Taxable value = Assessed value - Exemption = $300,000 - $30,000 = $270,000
+    Mill rate as decimal = Mills × 0.001 = 15 × 0.001 = 0.015
+    Property tax = Taxable value × Mill rate decimal = $270,000 × 0.015 = $4,050
+  formulas:
+    - Tax = (Assessed value - Exemption) × (Mills × 0.001)
+  onscreen_calculator_only: false
+terms:
+  - property tax
+  - mill
+  - exemption
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

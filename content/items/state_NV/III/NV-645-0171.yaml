@@ -1,0 +1,50 @@
+id: NV-645-0171
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "According to NRS 645.259, a licensee may be held liable for a misrepresentation made by the
+  licensee's client if:"
+options:
+  - The licensee knew the client made the misrepresentation but informed the person to whom the
+    client made the misrepresentation that the statement was false
+  - The licensee knew the client made the misrepresentation and failed to inform the person to whom
+    the client made the misrepresentation that the statement was false
+  - The licensee did not know the client made the misrepresentation and failed to inform the person
+    to whom the client made the misrepresentation that the statement was false
+  - The licensee did not know the client made the misrepresentation and informed the person to whom
+    the client made the misrepresentation that the statement was false
+key: B
+explanation: The statute provides that a licensee is not liable for a client's misrepresentation
+  unless the licensee knew of the misrepresentation and failed to inform the recipient that the
+  statement was false. Thus, both conditions must be met for liability. The most tempting
+  distractor, where the licensee informed the recipient, is incorrect because informing negates the
+  failure-to-inform requirement.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.259
+  url: null
+  quoted_text: "A licensee may not be held liable for: 1. A misrepresentation made by his or her
+    client unless the licensee: (a) Knew the client made the misrepresentation; and (b) Failed to
+    inform the person to whom the client made the misrepresentation that the statement was false."
+  secondary: []
+terms:
+  - licensee
+  - client
+  - misrepresentation
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

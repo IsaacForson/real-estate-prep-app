@@ -1,0 +1,54 @@
+id: MN-82-0224
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Minnesota real estate broker offers a $200 referral fee to an unlicensed acquaintance for
+  referring a client interested in purchasing a timeshare week. The payment is not contingent on a
+  sale and is made solely for the referral. Under Minn. Stat. § 82.70 Subd. 2(b)(4), is this
+  permissible?
+options:
+  - The fee is permissible because it is not contingent on a sale and involves a timeshare referral
+  - The fee is not permissible because the amount exceeds the $150 limit for timeshare referral fees
+  - The fee is not permissible because referral fees are prohibited unless the recipient is a
+    licensed broker
+  - The fee is permissible because the acquaintance is unlicensed and the fee is a referral fee
+key: B
+explanation: Under Minn. Stat. § 82.70 Subd. 2(b)(4), a referral fee for timeshare or recreational
+  lands is allowed only if the amount does not exceed $150 and is not contingent on a sale. Because
+  the offered fee is $200, it exceeds the $150 limit, making the payment impermissible regardless of
+  the lack of contingency.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.70 Subd. 2(b)(4)
+  url: null
+  quoted_text: (4) involving timeshare or other recreational lands where the amount offered or paid
+    does not exceed $150, and payment is not conditioned upon any sale but is made merely for
+    providing the referral and the person paying the fee is bound by any representations made by the
+    person receiving the fee;
+  secondary: []
+math:
+  worked_solution: "The offered fee is $200. The statutory limit is $150. Subtract the limit from the
+    offered fee: $200 - $150 = $50. Since the result is greater than zero, the fee exceeds the limit
+    and is therefore not permissible."
+  formulas:
+    - "Comparison: fee > limit"
+    - Excess amount = fee - limit
+  onscreen_calculator_only: false
+terms:
+  - referral fee
+  - timeshare
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,49 @@
+id: OH-4735-0161
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant seeks to qualify a foreign real estate offering that includes 1,200 lots. What is
+  the total filing fee the applicant must pay to the superintendent?
+options:
+  - $2500
+  - $500
+  - $1200
+  - $1700
+key: D
+explanation: The filing fee is $500 plus $1 for each lot, unit, parcel, or interest (Ohio Rev. Code
+  § 4735.25(D)). For 1,200 lots, the fee is $500 + (1,200 × $1) = $1,700, which is below the $2,500
+  cap. The $1,200 amount omits the $500 base, the $500 amount omits the per‑lot charge, and the
+  $2,500 amount incorrectly applies the maximum cap.
+citation:
+  source: Ohio Rev. Code § 4735.25(D)
+  url: null
+  quoted_text: Upon filing the application, the applicant shall pay to the superintendent a filing fee
+    of five hundred dollars plus an additional one dollar for each lot, unit, parcel, or interest
+    included in the offering, with the aggregate fee not to exceed two thousand five hundred dollars
+  secondary: []
+math:
+  worked_solution: |-
+    Identify base fee: $500
+    Calculate per‑lot charge: $1 × 1,200 = $1,200
+    Add base and per‑lot: $500 + $1,200 = $1,700
+    Verify cap: $1,700 ≤ $2,500, so fee is $1,700
+  formulas:
+    - Fee = 500 + (1 × Lots)
+  onscreen_calculator_only: false
+terms:
+  - filing
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

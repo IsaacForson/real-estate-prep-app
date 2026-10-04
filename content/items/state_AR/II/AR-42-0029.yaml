@@ -1,0 +1,41 @@
+id: AR-42-0029
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a broker's license has completed 100 total education hours, of which 30 hours
+  were in a commission-developed course. Does the applicant satisfy the education requirement?
+options:
+  - The applicant does not meet the education requirement.
+  - The applicant meets the education requirement.
+  - The applicant meets the experience requirement.
+  - The applicant does not meet the experience requirement.
+key: A
+explanation: Under § 17-42-303(B), a broker applicant must complete at least forty‑five of the
+  required education hours in a commission‑developed course. The applicant has only thirty such
+  hours, so the education requirement is not satisfied. The claim that the applicant meets the
+  education requirement ignores this forty‑five‑hour minimum.
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-303
+  url: null
+  quoted_text: |-
+    Effective on May 1, 2014, an applicant for a broker's license shall complete at least forty-
+    five (45) of the required education hours in a course developed by the commission
+  secondary: []
+terms:
+  - education requirement
+  - commission-developed course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

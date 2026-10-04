@@ -1,0 +1,54 @@
+id: CT-311-0154
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission collects $12,000 in licensing fees during a month.
+  Statute requires $4,000 to be paid to the University of Connecticut and $1,000 to the Real Estate
+  Guaranty Fund. Where does the remaining $7,000 belong after the Commission deposits the fees with
+  the State Treasurer?
+options:
+  - Real Guaranty Fund
+  - University of CT
+  - The General Fund
+  - Treasurer Office
+key: C
+explanation: Under Conn. Gen. Stat. ch. 392, § 20-311e, after depositing all fees with the State
+  Treasurer, any amount not required to be paid to the University of Connecticut or the Real Estate
+  Guaranty Fund becomes part of the General Fund. Therefore, the remaining $7,000 belongs to the
+  General Fund.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311e
+  url: null
+  quoted_text: The commission shall deposit all moneys received by it from fees in accordance with the
+    provisions of this chapter with the State Treasurer, and they shall, except as to that portion
+    thereof required to be paid over to The University of Connecticut under the provisions of
+    section 10a-125 , or that portion required to be paid to the Real Estate Guaranty Fund pursuant
+    to this chapter, become part of the General Fund.
+  secondary: []
+math:
+  worked_solution: "Step 1: Total fees collected = $12,000.\\nStep 2: Amount to be paid to the
+    University of Connecticut = $4,000.\\nStep 3: Amount to be paid to the Real Estate Guaranty Fund
+    = $1,000.\\nStep 4: Calculate remaining amount = Total - (UConn amount + Guaranty Fund amount) =
+    $12,000 - ($4,000 + $1,000) = $12,000 - $5,000 = $7,000.\\nStep 5: By statute, the remaining
+    amount goes to the General Fund."
+  formulas:
+    - Remaining = Total - (Amount to UConn + Amount to Guaranty Fund)
+  onscreen_calculator_only: false
+terms:
+  - fees
+  - general fund
+  - university of connecticut
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

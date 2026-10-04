@@ -1,0 +1,42 @@
+id: WY-101-0166
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "Under Wyoming law, a non-licensee who holds a duly executed and recorded power of attorney to
+  convey real estate for an owner is:"
+options:
+  - The attorney-in-fact is required to hold a real estate license.
+  - The attorney-in-fact is exempt from licensing requirements.
+  - The attorney-in-fact must obtain a broker's license.
+  - The attorney-in-fact must be employed by a licensed broker.
+key: B
+explanation: The statute exempts an attorney-in-fact acting under a duly executed and recorded power
+  of attorney to convey real estate, unless the attorney is a licensee. Since the individual is not
+  a licensee, the exemption applies and no license is required. The distractor that asserts a
+  license is required overlooks the specific exemption for attorneys-in-fact.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real Estate
+    License Act (Articles 1-4) § 33-28-103(ii)
+  url: null
+  quoted_text: An attorney in fact under a duly executed and recorded power of attorney to convey real
+    estate from the owner or lessor, or the services rendered by an attorney-at-law in the
+    performance of his duties as an attorney unless the attorney is a licensee;
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,39 @@
+id: SD-21A-0111
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two members of the South Dakota Real Estate Commission submit a written request for a special
+  meeting. According to § 36-21A-21, is the commission required to hold the meeting?
+options:
+  - The commission must hold the meeting because any member can call a meeting.
+  - The commission is not required to hold the meeting because at least three members must request a
+    meeting.
+  - The commission must hold the meeting if the executive director agrees to the request.
+  - The commission is not required to hold the meeting unless the chairperson also calls for a
+    meeting.
+key: B
+explanation: The law requires a written request from three or more members for a special meeting; a
+  request from only two members does not trigger this requirement.
+citation:
+  source: S.D. Codified Laws § 36-21A-21
+  url: null
+  quoted_text: The commission shall meet annually and at other times upon call by the executive
+    director, chairperson, or upon a written request of three or more members of the commission.
+  secondary: []
+terms:
+  - meeting
+  - request
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

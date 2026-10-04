@@ -1,0 +1,47 @@
+id: HI-467-0042
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager is employed by the association of owners of a planned unit development to
+  oversee common areas and collect monthly dues. Under Hawaii Revised Statutes § 467‑1, does this
+  individual qualify as a custodian?
+options:
+  - Yes, because the association is considered a single owner under the statute, which treats the
+    collective as a single entity for licensing purposes.
+  - No, because the association of owners of a planned unit development is expressly excluded from
+    the definition of a single owner.
+  - Yes, because the manager is an employee of the association and therefore acts as its agent in
+    collecting dues.
+  - No, because the manager also engages in leasing activities, which would make him a broker rather
+    than a custodian.
+key: B
+explanation: Hawaii Revised Statutes § 467‑1 defines a “single owner” and expressly excludes an
+  association of owners of a condominium, cooperative, or planned unit development. Because the
+  association is not a single owner, the manager does not satisfy the custodian requirement. The
+  manager’s status as an employee does not create a single‑owner relationship, and the fact that the
+  manager also performs leasing activities does not affect the custodian analysis.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: provided further that a single owner shall not include an association of owners of a
+    condominium, cooperative, or planned unit development.
+  secondary: []
+terms:
+  - custodian
+  - single owner
+  - planned unit development
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,40 @@
+id: ID-20-0302
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens an interest‑bearing trust account and deposits earnest money from two separate
+  sales transactions into the same account, with written consent from both buyers and sellers. Is
+  this permissible under Idaho Code § 54-2043?
+options:
+  - Yes, because written consent from all parties overrides the one‑transaction requirement.
+  - No, because the account may contain funds relating to only one transaction per the rule.
+  - Yes, as long as the broker maintains separate records for each transaction.
+  - No, unless the broker receives a specific commission waiver for multiple transactions.
+key: B
+explanation: Idaho Code § 54-2043(2) requires that an interest‑bearing trust account for a single
+  transaction contain only the funds relating to that one transaction. This limitation applies
+  regardless of written consent or separate record‑keeping. Therefore, commingling funds from two
+  transactions is not allowed. The option suggesting consent overrides the rule is incorrect because
+  the statute does not provide such an exception.
+citation:
+  source: Idaho Code § 54-2043(2)
+  url: null
+  quoted_text: each such account shall contain only the funds relating to one (1) transaction.
+  secondary: []
+terms:
+  - interest-bearing trust account
+  - transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

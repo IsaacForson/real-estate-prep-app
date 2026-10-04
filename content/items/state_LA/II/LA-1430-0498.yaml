@@ -1,0 +1,41 @@
+id: LA-1430-0498
+jurisdiction: LA
+bank: state_LA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee’s unlicensed assistant helps prepare a purchase agreement and receives a gift card
+  from the buyer for the assistance. According to La. R.S. 37:1459(D), may the assistant retain the
+  gift card as compensation for the service rendered?
+options:
+  - No, because the commission may impose a civil penalty but does not affect the assistant’s right
+    to keep the gift card.
+  - No, because the assistant may keep the gift card if it is less than $100.
+  - No, because the statute prohibits an unlicensed person from receiving compensation for real
+    estate activity.
+  - No, because the assistant can retain the gift card if the buyer agrees in writing.
+key: C
+explanation: The law provides that no person engaged in real estate activity without a currently
+  valid license shall have the right to receive any compensation for services so rendered, so the
+  assistant cannot keep the gift card.
+citation:
+  source: La. R.S. § 37:1459(D)
+  url: null
+  quoted_text: No person engaged in real estate activity without a currently valid license shall have
+    the right to receive any compensation for services so rendered.
+  secondary: []
+terms:
+  - compensation
+  - unlicensed person
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

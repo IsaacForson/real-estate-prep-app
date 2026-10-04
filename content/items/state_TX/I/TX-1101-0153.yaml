@@ -1,0 +1,49 @@
+id: TX-1101-0153
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer obtains a court judgment for $200,000 arising from a single transaction against a
+  license holder for a violation covered by the real estate recovery trust account. What is the
+  maximum amount that may be paid from the trust account for this claim, including attorney's fees
+  and court costs?
+options:
+  - $200,000.
+  - $250,000.
+  - $0.00.
+  - $125,000.
+key: D
+explanation: Under Tex. Occ. Code § 1101.610(a), payments from the trust account for a single
+  transaction, including attorney's fees and court costs, cannot exceed a total of $125,000,
+  regardless of the number of claimants or the size of the judgment. Therefore, even though the
+  judgment is $200,000, the most that can be paid from the trust account for this claim is $125,000.
+citation:
+  source: Tex. Occ. Code § 1101.610(a)
+  url: null
+  quoted_text: (a) Payments from the trust account for claims, including attorney's fees, interest,
+    and court costs, arising out of a single transaction may not exceed a total of $125,000,
+    regardless of the number of claimants.
+  secondary: []
+math:
+  worked_solution: The statute caps payments from the trust account for a single transaction at
+    $125,000, inclusive of attorney's fees and court costs. Because the judgment arises from a
+    single transaction, the maximum payable is $125,000, regardless of the $200,000 judgment amount.
+  formulas:
+    - Maximum payment = Statutory cap per transaction
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

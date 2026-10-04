@@ -1,0 +1,52 @@
+id: WY-101-0160
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee performs real estate activity without a license and receives a $1,200 commission
+  for the transaction. Under Wyoming law, what is the maximum additional penalty the person may be
+  liable to pay for receiving that compensation?
+options:
+  - One thousand two hundred dollars ($1,200.00).
+  - Two thousand four hundred dollars ($2,400.00).
+  - Three thousand six hundred dollars ($3,600.00).
+  - Four thousand eight hundred dollars ($4,800.00).
+key: C
+explanation: Under Wyo. Stat. Ann. § 33-28-114(b), a person who receives compensation for unlicensed
+  real estate activity is liable to an additional penalty of not less than the amount received and
+  not more than three times that amount. For a $1,200 commission, the maximum additional penalty is
+  three times $1,200, which equals $3,600. An amount of $2,400 represents only two times the
+  received amount and is therefore not the maximum.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real Estate
+    License Act (Articles 1-4) — § 33-28-114(b)
+  url: null
+  quoted_text: If any person receives any money or the equivalent thereof as a fee, compensation or
+    profit by or in consequence of a violation of any provision of this act, he shall, in addition,
+    be liable to a penalty of not less than the amount of the sum of money so received and not more
+    than three (3) times the sum so received as may be determined by the court
+  secondary: []
+math:
+  worked_solution: "Multiply the received commission ($1,200) by 3 to find the maximum additional
+    penalty: $1,200 × 3 = $3,600."
+  formulas:
+    - Maximum penalty = 3 × amount received
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - compensation
+  - violation
+  - multiplier
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

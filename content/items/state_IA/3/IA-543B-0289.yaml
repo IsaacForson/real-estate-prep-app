@@ -1,0 +1,40 @@
+id: IA-543B-0289
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate salesperson license has a misdemeanor conviction for petty
+  theft that is not classified as an indictable offense. Under Iowa Code §543B.16(1), what must the
+  applicant disclose on the application regarding this conviction?
+options:
+  - The applicant must disclose the misdemeanor conviction
+  - The applicant must not disclose the misdemeanor conviction
+  - The applicant must disclose the conviction only if it is a felony
+  - The applicant must disclose the conviction only if it is a misdemeanor
+key: B
+explanation: The rule requires disclosure only of criminal convictions for crimes classified as
+  indictable offenses; a non‑indictable misdemeanor need not be reported. Disclosing it would be
+  unnecessary and could be mistakenly interpreted as a false statement if the applicant incorrectly
+  labels it as indictable.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §543B.16(1)
+  url: null
+  quoted_text: The real estate commission shall only require an applicant to disclose on the
+    application criminal convictions for crimes classified as indictable offenses.
+  secondary: []
+terms:
+  - indictable offense
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

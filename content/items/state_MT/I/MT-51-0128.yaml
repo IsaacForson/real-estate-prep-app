@@ -1,0 +1,43 @@
+id: MT-51-0128
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker advertises a property for sale that belongs to another person without having a signed
+  listing agreement from the owner. What is the legal status of this advertisement under Montana
+  law?
+options:
+  - It is unlawful unless the broker has a signed listing agreement from the owner
+  - It is permissible if the broker includes a disclaimer about the missing agreement
+  - It is allowed only when the broker has written permission from the owner
+  - It is acceptable provided the broker obtains verbal consent from the owner
+key: A
+explanation: Montana Code Ann. § 37-51-321(2)(a) makes it unlawful to advertise property belonging
+  to others without a signed listing agreement from the owner. Adding a disclaimer or relying on
+  verbal consent does not cure the lack of a written agreement.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-321
+  url: null
+  quoted_text: It is unlawful for a broker or salesperson to openly advertise property belonging to
+    others, whether by means of printed material, radio, television, or display or by other means,
+    unless the broker or salesperson has a signed listing agreement from the owner of the property.
+  secondary: []
+terms:
+  - listing agreement
+  - advertisement
+  - unlawful
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,42 @@
+id: NM-1-0223
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The commission last met in February. The next meeting is scheduled for May. Does this schedule
+  satisfy the statutory meeting frequency requirement under N.M. Stat. Ann. § 61-29-6?
+options:
+  - No, because the commission must meet at least once each month
+  - Yes, because the commission must meet at least once each quarter-year and February to May spans
+    three months
+  - No, because the commission may meet only when called by the governor
+  - No, because the commission must meet at least once each quarter-year but February to May is only
+    two months
+key: B
+explanation: The rule requires the commission to meet at least once each quarter-year (i.e., at
+  least every three months); the interval from February to May is three months, meeting the
+  requirement (see quoted text). The distractor claiming only two months is incorrect because
+  February to May comprises three months.
+citation:
+  source: N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-6
+  url: null
+  quoted_text: The commission shall meet at least once each quarter-year
+  secondary: []
+terms:
+  - meeting
+  - quarter
+  - frequency
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

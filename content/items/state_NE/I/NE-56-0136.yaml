@@ -1,0 +1,40 @@
+id: NE-56-0136
+jurisdiction: NE
+bank: state_NE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Which of the following brokers is **NOT** required to maintain a separate trust account under
+  Neb. Rev. Stat. § 81-885.21(1)?
+options:
+  - An inactive broker with no trust account activity
+  - An active broker holding earnest money deposits
+  - An active broker who received a referral fee
+  - An active broker with no trust account activity
+key: A
+explanation: Subsection (1) requires each broker other than an inactive broker to maintain a trust
+  account, so inactive brokers are exempt. The option "An active broker holding earnest money
+  deposits" is incorrect because such brokers must maintain a trust account for those funds.
+citation:
+  source: Neb. Rev. Stat. § 81-885.21(1)
+  url: null
+  quoted_text: Each broker other than an inactive broker shall maintain in a bank, savings bank,
+    building and loan association, or savings and loan association a separate, insured checking
+    account...
+  secondary: []
+terms:
+  - inactive broker
+  - trust account
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

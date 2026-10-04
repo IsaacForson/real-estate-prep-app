@@ -1,0 +1,44 @@
+id: IA-543B-0271
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson’s license is suspended by the Iowa Real Estate Commission. The licensee mails
+  written notice to all clients eight days after receiving the commission’s final order. Under Iowa
+  Admin. Code r. 481-2018, what is the consequence?
+options:
+  - Reapplication for licensure within thirty days
+  - Payment of a twenty‑five hundred dollar civil penalty
+  - Violation of the seven‑day notice requirement
+  - Compliance with the seven‑day notice requirement
+key: C
+explanation: The rule mandates that notice to clients be given within seven days of receipt of the
+  final order. Mailing the notice on the eighth day violates this requirement and may result in
+  disciplinary action. The distractor about a civil penalty incorrectly assumes a fine applies for
+  this specific notice failure.
+citation:
+  source: Iowa Admin. Code r. 481-2018 — Iowa Administrative Code 481—Chapter 2018 — Investigations
+    And Disciplinary Procedures (Real Estate Commission) 481—2018.14(4)(a)
+  url: null
+  quoted_text: Within seven days of receipt of the commission’s final order, notifies in writing all
+    clients of the fact that the license has been revoked, suspended, limited, or voluntarily
+    surrendered.
+  secondary: []
+terms:
+  - notice
+  - suspension
+  - client
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

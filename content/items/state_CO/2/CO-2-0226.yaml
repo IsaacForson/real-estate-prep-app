@@ -1,0 +1,49 @@
+id: CO-2-0226
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a $500 kickback from a title company for referring clients, which violates
+  § 12-10-218. What penalty must the Colorado Real Estate Commission assess under §
+  12-10-217(z)(II)?
+options:
+  - Five hundred dollars
+  - Two hundred fifty dollars
+  - One thousand dollars
+  - Seven hundred fifty dollars
+key: A
+explanation: For a violation of § 12-10-218, the commission must assess a penalty equal to the
+  amount of remuneration improperly paid and transmit it to the state treasurer (§
+  12-10-217(z)(II)). The $500 kickback is that amount; the other figures do not match the improper
+  remuneration.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-217(z)(II)
+  url: null
+  quoted_text: The penalty shall be the amount of remuneration improperly paid and shall be
+    transmitted to the state treasurer and credited to the general fund.
+  secondary: []
+math:
+  worked_solution: The kickback amount is $500. According to § 12-10-217(z)(II), the penalty equals
+    the amount of improper remuneration. Therefore, penalty = $500.
+  formulas:
+    - Penalty = Improper remuneration
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - remuneration
+  - kickback
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

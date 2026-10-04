@@ -1,0 +1,58 @@
+id: OK-605-0077
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits $75 of personal cash into the trust account to cover the bank's monthly
+  service fee and potential overdraft charges. The bank's monthly service fee is $12 and no
+  overdraft charges are expected. Under Oklahoma Administrative Code, is this permissible?
+options:
+  - The deposit is permissible because personal funds may cover any anticipated fees.
+  - The deposit is impermissible because personal funds are generally prohibited in a trust account.
+  - The deposit is permissible because the amount is sufficient to cover the bank's charges.
+  - The deposit is impermissible because the amount exceeds what is sufficient to cover charges.
+key: D
+explanation: A broker may keep personal funds in a trust account only when the amount is sufficient
+  to insure the integrity of the account and to cover any charges made by the financial institution
+  for servicing the trust or escrow account. Because the bank fee is $12, depositing $75 provides
+  more than enough to cover the charge, so the deposit exceeds what is sufficient and is therefore
+  impermissible under Oklahoma Administrative Code § 10‑13‑1(b).
+citation:
+  source: Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules) — Oklahoma Administrative
+    Code Title 605, Chapters 1 and 10 (OREC Code and Rules Book, as of Nov. 1, 2025) — § 10-13-1(b)
+  url: null
+  quoted_text: |-
+    A broker may not keep any personal funds in the trust account except 
+    amounts suﬃcient to insure the integrity of the account and cover any charges made by the 
+    ﬁnancial institution for servicing the trust or escrow account
+  secondary: []
+math:
+  worked_solution: >-
+    Bank fee = $12
+
+    Deposit = $75
+
+    Excess amount = Deposit – Fee = $75 – $12 = $63
+
+    Since $75 is greater than the amount needed to cover the fee, the deposit exceeds the
+    permissible amount.
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - commingling
+  - trust account
+  - charges
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,50 @@
+id: UT-101-0124
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation that holds a real estate broker license obtains a final judgment for $30,000 in
+  actual damages due to fraud by its licensed agent. Assuming the fund has sufficient money, what is
+  the maximum amount the fund may pay for that judgment?
+options:
+  - "Maximum reimbursement amount: $0"
+  - "Maximum reimbursement amount: $15,000"
+  - "Maximum reimbursement amount: $30,000"
+  - "Maximum reimbursement amount: $50,000"
+key: A
+explanation: Under Utah Code Ann. § 61-2f-503, the real estate recovery fund reimburses only damages
+  caused by individual licensees; it may not pay for a final judgment against an entity. Therefore,
+  the maximum reimbursement is $0.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network § 61-2f-503
+  url: null
+  quoted_text: This part applies to damages caused by an individual licensee. Reimbursement may not be
+    made for a final judgment against an entity.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify that the judgment is against an entity (the corporation). Step 2:
+    Apply Utah Code Ann. § 61-2f-503, which prohibits reimbursement for judgments against entities.
+    Step 3: Conclude that the maximum amount payable is $0."
+  formulas:
+    - Entity judgment reimbursement prohibition
+  onscreen_calculator_only: false
+terms:
+  - fund
+  - entity
+  - judgment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

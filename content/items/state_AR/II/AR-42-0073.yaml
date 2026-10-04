@@ -1,0 +1,43 @@
+id: AR-42-0073
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has completed the required education, passed the licensing exam, and has no
+  record of unprofessional conduct, but the commission has not yet received the applicant's state
+  and federal criminal background check. May the commission issue a license to this applicant at
+  this time?
+options:
+  - The commission may issue the license after meeting all other requirements.
+  - The commission may withhold the license until the background check is approved.
+  - The commission may issue the license after receiving the required fees.
+  - The commission may issue the license after verifying the applicant's experience.
+key: B
+explanation: The law provides that a license shall not be issued until the commission receives and
+  approves the state and federal criminal background check. Therefore, the commission must withhold
+  issuance until the background check is approved. The other options describe circumstances that do
+  not override this background check requirement.
+citation:
+  source: "### Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share
+    Law (AREC compilation, August 2024) — § 17-42-315"
+  url: null
+  quoted_text: A license shall not be issued to an applicant until the commission receives and
+    approves the state and federal criminal background checks.
+  secondary: []
+terms:
+  - background
+  - check
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

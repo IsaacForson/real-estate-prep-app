@@ -1,0 +1,43 @@
+id: AL-27-0179
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A branch school is licensed for a 2‑year license period. According to Ala. Code § 34-27-1(d),
+  what is the total renewal fee due for the entire period?
+options:
+  - $125
+  - $250
+  - $375
+  - $500
+key: B
+explanation: The renewal fee is $125 for each year of the license period. For a 2‑year period, the
+  total fee is $125 × 2 = $250.
+citation:
+  source: Ala. Code § 34-27-1(d)
+  url: null
+  quoted_text: The renewal fee for each school license shall be one hundred twenty-five dollars ($125)
+    for each year of the license period.
+  secondary: []
+math:
+  worked_solution: $125 per year × 2 years = $250
+  formulas:
+    - Renewal fee = annual fee × number of years
+  onscreen_calculator_only: false
+terms:
+  - renewal fee
+  - branch school
+  - license period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

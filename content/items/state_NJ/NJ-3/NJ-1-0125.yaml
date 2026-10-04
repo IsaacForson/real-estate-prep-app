@@ -1,0 +1,52 @@
+id: NJ-1-0125
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer proposes to clear 6,000 square feet of land for a commercial parking lot in the
+  Pinelands area. According to N.J. Stat. Ann. § 13:18A-3(g), is this considered a major
+  development?
+options:
+  - The project qualifies as a major development because it involves clearing more than 5,000 square
+    feet for a non-agricultural purpose
+  - The project does not qualify as a major development because the cleared area is less than three
+    acres
+  - The project qualifies as a major development only if it also includes construction of a housing
+    development with five or more units
+  - The project does not qualify as a major development because agricultural use is exempt from the
+    clearing threshold
+key: A
+explanation: Under N.J. Stat. Ann. § 13:18A-3(g), major development includes any grading, clearing,
+  or disturbance of an area exceeding 5,000 square feet for purposes other than agricultural or
+  horticultural. The proposed clearing of 6,000 square feet for a commercial parking lot exceeds
+  this threshold, so it qualifies as a major development.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 18A § 13:18A-3(g)
+  url: null
+  quoted_text: any grading, clearing or disturbance of any area in excess of 5,000 square feet for
+    other than agricultural or horticultural purposes
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the threshold from N.J. Stat. Ann. § 13:18A-3(g): 5,000 square
+    feet. Step 2: Note the proposed cleared area: 6,000 square feet. Step 3: Compare: 6,000 sq ft >
+    5,000 sq ft. Step 4: Since the cleared area exceeds the threshold, the project meets the
+    definition of major development."
+  formulas:
+    - "Threshold comparison: cleared area > 5,000 sq ft"
+  onscreen_calculator_only: false
+terms:
+  - major development
+  - clearing
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,42 @@
+id: AZ-20-0122
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Ariz. Rev. Stat. § 32-2158(A), who is responsible for paying the fees and mileage of a
+  witness who appears at a commissioner's hearing upon the witness being subpoenaed?
+options:
+  - The state treasury department
+  - The witness who was subpoenaed
+  - The party that requested the witness
+  - The commissioner's office staff
+key: C
+explanation: The statute states that any witness who appears by order of the commissioner shall
+  receive the same fees and mileage allowed by law to a witness in civil cases, which shall be paid
+  by the party at whose request the witness is subpoenaed. Therefore, the requesting party bears the
+  cost. The option suggesting the commissioner's office pays is incorrect because the commissioner
+  does not cover witness fees.
+citation:
+  source: Ariz. Rev. Stat. § 32-2158(A)
+  url: null
+  quoted_text: Any witness who appears by order of the commissioner shall receive the same fees and
+    mileage allowed by law to a witness in civil cases, which shall be paid by the party at whose
+    request the witness is subpoenaed.
+  secondary: []
+terms:
+  - witness
+  - fee
+  - subpoena
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

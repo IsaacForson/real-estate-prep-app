@@ -1,0 +1,49 @@
+id: AZ-20-0308
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson’s Arizona license expired eight months ago. During that period the licensee
+  completed ten hours of approved continuing education. When renewing the license, how may those ten
+  hours be treated under Arizona law?
+options:
+  - They cannot be used because continuing education must be finished before the license expired.
+  - They may be applied toward the continuing education required for license renewal.
+  - They must be retaken as part of the initial licensing education requirement for the license.
+  - They count only if the licensee also passes the state licensing exam before renewal.
+key: B
+explanation: Under Ariz. Rev. Stat. § 32-2130(B), an applicant renewing a license within one year
+  after expiration may apply continuing education hours completed after the expiration toward the
+  continuing education required for renewal. Therefore the ten hours may be applied toward the
+  renewal requirement, which matches the option stating that they may be applied toward the
+  continuing education required for license renewal. The option stating that they cannot be used
+  because continuing education must be finished before the license expired is incorrect because the
+  statute expressly allows post‑expiration CE to count within the one‑year window. The option
+  stating that they must be retaken as part of the initial licensing education requirement for the
+  license is incorrect because it adds a requirement not found in the statute. The option stating
+  that they count only if the licensee also passes the state licensing exam before renewal is
+  incorrect because it adds a requirement not found in the statute.
+citation:
+  source: Ariz. Rev. Stat. § 32-2130(B)
+  url: null
+  quoted_text: If an applicant is renewing a license within one year after it expired, the applicant
+    may apply continuing education hours completed after the expiration toward the continuing
+    education required for renewal.
+  secondary: []
+terms:
+  - continuing education
+  - renewal
+  - expired license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

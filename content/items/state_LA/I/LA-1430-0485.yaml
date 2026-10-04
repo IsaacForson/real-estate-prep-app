@@ -1,0 +1,39 @@
+id: LA-1430-0485
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A vendor changes the instructor for a continuing education course scheduled for May 15, 2025.
+  The vendor notifies the executive director of the change on May 9, 2025. Is this notice compliant
+  with the law?
+options:
+  - No, because the notice was given after the course date.
+  - No, because the notice was given less than seven days before the course.
+  - Yes, because the notice was given at least seven days before the course.
+  - Yes, because the notice was given exactly seven days before the course.
+key: B
+explanation: May 9 is only six days before May 15, which is fewer than the required seven days. The
+  law mandates notice at least seven days prior to the course, so the notice is untimely.
+citation:
+  source: § 1460.1. Continuing education; meetings and conferences; approved vendors; approval
+    process;..., LA R.S. 37:1460.1 F(2)
+  url: null
+  quoted_text: at least seven days prior to the course
+  secondary: []
+terms:
+  - instructor change
+  - notice
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

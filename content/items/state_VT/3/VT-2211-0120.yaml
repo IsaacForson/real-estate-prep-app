@@ -1,0 +1,39 @@
+id: VT-2211-0120
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the Vermont Real Estate Commission has five members present, how many votes are required to
+  pass a motion under 26 V.S.A. § 2253(d)?
+options:
+  - Four votes
+  - Three votes
+  - Five votes
+  - Seven votes
+key: B
+explanation: A majority of the members present and voting is required for action. With five members
+  present, a majority is three votes. Two votes constitute only a minority and would not satisfy the
+  majority requirement.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2253(d)
+  url: null
+  quoted_text: (d) A majority of the members of the Commission shall be a quorum for transacting
+    business, and all action shall be taken upon a majority vote of the members present and voting.
+  secondary: []
+terms:
+  - quorum
+  - majority
+  - vote
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

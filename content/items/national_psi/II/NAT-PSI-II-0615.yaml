@@ -1,0 +1,48 @@
+id: NAT-PSI-II-0615
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: What must a metes-and-bounds description do to be considered valid?
+options:
+  - It must be recorded in a plat book before it can be used for conveyance
+  - It must begin at a monument-marked point of beginning and return to that point
+  - It must use only bearings and distances, starting from a known monument
+  - It must rely solely on artificial monuments and ignore natural ones in the description
+key: B
+explanation: A metes-and-bounds description must start at a point of beginning that is tied to a
+  monument and travel around the parcel, returning to that same point so the figure closes.
+  Therefore the description that says it must begin at a monument-marked point of beginning and
+  return to that point is correct. The description that says it must rely solely on artificial
+  monuments and ignore natural ones is incorrect because natural monuments are given higher weight
+  than artificial ones when conflicts arise. The description that says it must use only bearings and
+  distances, starting from a known monument is incomplete; while bearings and distances are used,
+  the description must also return to the point of beginning to close the figure. The description
+  that says it must be recorded in a plat book before it can be used for conveyance is incorrect;
+  recording in a plat book is not a requirement for the validity of a metes-and-bounds description
+  itself.
+citation:
+  source: REP Ref. Property & Land Use § 3.2
+  url: null
+  quoted_text: A metes-and-bounds description starts at a point of beginning (POB) tied to a monument
+    (an iron pin, a stone, a stream, a section corner), travels around the parcel in courses each
+    stated as a bearing and a distance (for example "North 45 degrees 30 minutes East, 210.5 feet"),
+    and must return to the point of beginning so the figure closes
+  secondary: []
+terms:
+  - metes and bounds
+  - point of beginning
+  - monument
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

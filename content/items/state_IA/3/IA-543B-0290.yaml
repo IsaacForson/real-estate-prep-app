@@ -1,0 +1,39 @@
+id: IA-543B-0290
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson employed by a broker receives their license from the commission. Under Iowa Code
+  §543B.24, what must the broker do with the license?
+options:
+  - The broker must return the license to the salesperson immediately
+  - The broker must file the license with the Iowa Real Estate Commission
+  - The broker must destroy the license after thirty days
+  - The broker must keep the license in the broker's custody and control
+key: D
+explanation: The statute directs that the salesperson’s license be delivered to the employing broker
+  and retained in the broker’s custody and control. Returning, filing with the commission, or
+  destroying the license would violate this requirement.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons §543B.24
+  url: null
+  quoted_text: The license of a real estate salesperson shall be delivered or mailed to the real
+    estate broker by whom the real estate salesperson is employed and shall be kept in the custody
+    and control of the broker.
+  secondary: []
+terms:
+  - custody
+  - control
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

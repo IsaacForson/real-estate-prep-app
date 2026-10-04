@@ -1,0 +1,48 @@
+id: AR-42-0228
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A principal broker's trust account incurs a monthly service charge of $15. What is the maximum
+  amount the broker may retain in the trust account to cover service charges under Rule 10.8(d)(2)?
+options:
+  - $75.00
+  - $90.00
+  - $105.00
+  - $120.00
+key: B
+explanation: The rule limits the amount retained for service charges to no more than six months of
+  charges. Six months × $15 = $90, so $90.00 is the maximum allowable amount. The $75.00 option
+  corresponds to only five months and understates the permitted maximum.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.8(d)(2)
+  url: null
+  quoted_text: If the bank in which the account is maintained requires a service charge to be paid for
+    the account, the broker may maintain a reasonable amount to cover that service charge in the
+    account in the broker's name, provided, however, that such amount shall not exceed the total of
+    six (6) months service charges.
+  secondary: []
+math:
+  worked_solution: Monthly service charge = $15. Six months of service charges = $15 × 6 = $90.
+    Therefore, the maximum amount that may be retained is $90.00.
+  formulas:
+    - Maximum allowable amount = monthly service charge × 6
+  onscreen_calculator_only: false
+terms:
+  - service charge
+  - trust account
+  - maximum amount
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

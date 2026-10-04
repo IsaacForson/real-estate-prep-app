@@ -1,0 +1,58 @@
+id: NE-56-0144
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee purchases equivalent Errors and Omissions insurance effective July 1, 2024. The
+  group plan deductible for 2024 is 2% of the combined single limit, but effective January 1, 2025
+  the group plan deductible increases to 3%. The licensee does not renew or renegotiate the
+  equivalent policy during 2025. According to Neb. Admin. Code tit. 299, ch. 8, § 004.01(d), what
+  deductible may the licensee retain for the 2025 coverage period?
+options:
+  - 2% of the combined single limit liability coverage amount
+  - 3% of the combined single limit liability coverage amount
+  - 0% of the combined single limit liability coverage amount
+  - 2.5% of the combined single limit liability coverage amount
+key: A
+explanation: Under Neb. Admin. Code tit. 299, ch. 8, § 004.01(d), an equivalent insurance policy may
+  retain the deductible amount that was in effect when the policy went into effect, as long as the
+  policy is not renewed or renegotiated. The licensee’s equivalent policy began on July 1, 2024,
+  when the group plan deductible was 2%. Because the policy was not renewed or renegotiated during
+  2025, the licensee may continue to use that 2% deductible for the 2025 coverage period. The group
+  plan’s increase to 3% effective January 1, 2025 applies only to the group plan and does not affect
+  the existing equivalent policy.
+citation:
+  source: Neb. Admin. Code tit. 299, ch. 8, § 004.01(d)
+  url: null
+  quoted_text: Specifies a deductible amount of not greater than the deductible amount specified in
+    the group policy secured by the Commission for the calendar year during which the equivalent
+    insurance goes into effect. Any equivalent insurance which extends into a calendar year when the
+    deductible on the group policy has changed effective January 1 of the year may retain the
+    deductible amount until such time as the equivalent insurance is renewed or renegotiated in that
+    calendar year
+  secondary: []
+math:
+  worked_solution: The policy effective date is July 1, 2024. At that date the group plan deductible
+    was 2% of the combined single limit. Since the equivalent policy is not renewed or renegotiated
+    in 2025, the deductible remains 2% per §004.01(d). Therefore the deductible for the 2025
+    coverage period is 2% of the combined single limit.
+  formulas:
+    - Deductible retained = Deductible at policy inception
+  onscreen_calculator_only: false
+terms:
+  - equivalent insurance
+  - deductible
+  - group plan
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

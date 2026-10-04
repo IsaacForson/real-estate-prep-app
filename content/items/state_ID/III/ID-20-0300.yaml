@@ -1,0 +1,38 @@
+id: ID-20-0300
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum amount of broker or firm funds that may be maintained in a real estate
+  trust account under Idaho law?
+options:
+  - $300
+  - $500
+  - $100
+  - $200
+key: A
+explanation: Idaho Code § 54-2042(7) states that the balance of broker or firm funds in a trust
+  account may not exceed three hundred dollars ($300). Therefore, $300 is the correct limit. The
+  $200 distractor is incorrect because it understates the statutory ceiling.
+citation:
+  source: Idaho Code § 54-2042(7)
+  url: null
+  quoted_text: In no event shall the balance of broker or firm funds in the account exceed three
+    hundred dollars ($300).
+  secondary: []
+terms:
+  - trust account
+  - broker funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

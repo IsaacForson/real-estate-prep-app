@@ -1,0 +1,41 @@
+id: AZ-20-0317
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker has not removed interest earned on a trust fund account for 14 months. Under Arizona
+  law, what is the result?
+options:
+  - Violation because interest must be removed at least once every twelve months
+  - Violation only if the interest exceeds $100 under Arizona regulations
+  - No violation because interest removal is only required annually
+  - No violation if the broker provides written notice to the commissioner
+key: A
+explanation: The rule states that failing to remove trust account interest at least once every
+  twelve months is a violation. Fourteen months without removal exceeds the allowed interval, so it
+  is a violation. The distractor claiming "No violation because interest removal is only required
+  annually" is wrong because the rule sets a minimum frequency of at least once per year, not a
+  maximum.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151(C)(1)
+  url: null
+  quoted_text: Failing to remove any interest that is earned on a trust fund account at least once
+    every twelve months.
+  secondary: []
+terms:
+  - interest removal
+  - trust fund
+  - annual
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

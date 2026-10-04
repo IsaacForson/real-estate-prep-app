@@ -1,0 +1,39 @@
+id: NV-645-0146
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Nevada law, what is the status of a waiver of a licensee's duties?
+options:
+  - The waiver is permitted if the client signs a written waiver
+  - The waiver is prohibited under any circumstances
+  - The waiver is allowed for property management agreements
+  - The waiver is allowed when the licensee discloses the waiver to the broker
+key: B
+explanation: NRS 645.255 explicitly states that a waiver of duties of a licensee or property manager
+  is prohibited. Therefore, any waiver of a licensee's duties is not permitted under Nevada law. The
+  other options incorrectly suggest circumstances under which a waiver might be allowed.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.255
+  url: null
+  quoted_text: Waiver of duties of licensee or property manager prohibited.
+  secondary: []
+terms:
+  - waiver
+  - duty
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

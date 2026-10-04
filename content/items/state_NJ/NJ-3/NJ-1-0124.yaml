@@ -1,0 +1,47 @@
+id: NJ-1-0124
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner has 6 acres of land used for growing corn and soybeans for sale, has been so
+  devoted for the past 3 years, but has not yet submitted an application to the local tax assessor.
+  According to N.J. Stat. Ann. § 54:4-23.2, is the land eligible for farmland assessment?
+options:
+  - The land is ineligible for farmland assessment because the owner has not submitted an
+    application to the assessor
+  - The land is eligible for farmland assessment only if the owner also receives payments from a
+    soil conservation program
+  - The land is ineligible for farmland assessment because corn and soybeans are not considered
+    agricultural use
+  - The land is eligible for farmland assessment because it is over five acres, devoted to
+    agricultural use for at least two years.
+key: A
+explanation: The statute requires that the land’s value be based on agricultural use only on
+  application of the owner and approval thereof. Without an application, the land does not receive
+  farmland assessment valuation regardless of meeting acreage, use, and duration requirements.
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 § 54:4-23.2
+  url: null
+  quoted_text: shall, on application of the owner, and approval thereof as hereinafter provided, be
+    that value which such land has for agricultural or horticultural use.
+  secondary: []
+math:
+  worked_solution: No arithmetic computation is required; eligibility is determined by statutory criteria.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - farmland assessment
+  - application
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

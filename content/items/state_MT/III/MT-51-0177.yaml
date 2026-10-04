@@ -1,0 +1,51 @@
+id: MT-51-0177
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee advertises a residential property as having 2,000 square feet when the actual size
+  is 1,500 square feet. Under Montana’s unprofessional-conduct statute, this conduct is best
+  described as which violation?
+options:
+  - It constitutes accepting an undisclosed commission.
+  - It constitutes failing to account for trust money.
+  - It constitutes intentionally misleading advertising.
+  - It constitutes using the term 'realtor' without authorization.
+key: C
+explanation: Under Mont. Code Ann. § 37-51-321(1)(a), intentionally misleading or inaccurate
+  advertising that misrepresents property is unprofessional conduct. Advertising a property as 2,000
+  square feet when it is actually 1,500 square feet misrepresents the size, which is intentionally
+  misleading advertising.
+citation:
+  source: Mont. Code Ann. § 37-51-321(1)(a)
+  url: null
+  quoted_text: intentionally misleading, untruthful, or inaccurate advertising, whether printed or by
+    radio, display, or other nature, if the advertising in any material particular or in any
+    material way misrepresents any property, terms, values, policies, or services of the business
+    conducted.
+  secondary: []
+math:
+  worked_solution: Advertised size = 2,000 sq ft\nActual size = 1,500 sq ft\nDifference = Advertised -
+    Actual = 2,000 - 1,500 = 500 sq ft\nPercent overstatement = (Difference / Actual) × 100 = (500 /
+    1,500) × 100 = 33.33%
+  formulas:
+    - Difference = Advertised - Actual
+    - Percent Overstatement = (Difference / Actual) × 100
+  onscreen_calculator_only: false
+terms:
+  - advertising
+  - misleading
+  - unprofessional
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

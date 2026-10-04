@@ -1,0 +1,41 @@
+id: HI-467-0077
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer acquires an easement across a neighbor’s land to access a property. Under Hawaii
+  Revised Statutes § 467-1, is this easement considered part of "real estate"?
+options:
+  - Only if the easement is appurtenant to the dominant estate
+  - Yes, because it is an interest in real property
+  - Only if the easement is recorded with the bureau of conveyances
+  - No, because easements are classified as personal property
+key: B
+explanation: The definition includes "all other interests in real property," which encompasses
+  easements. Thus the easement is part of real estate. The claim that easements are personal
+  property contradicts the statute, and the recording or appurtenance conditions are not required
+  for inclusion.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: and all other interests in real property.
+  secondary: []
+terms:
+  - easement
+  - real estate
+  - interest
+  - property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

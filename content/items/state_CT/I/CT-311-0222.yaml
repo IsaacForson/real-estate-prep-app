@@ -1,0 +1,43 @@
+id: CT-311-0222
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut real estate school plans to offer a prelicensing course entirely through
+  recorded video lectures with no live interaction. According to Conn. Gen. Stat. § 20-314e(d), what
+  is the outcome regarding department approval?
+options:
+  - The course will be approved if the school includes periodic interactive assessments.
+  - The course will be approved because electronic means are allowed.
+  - The course will be denied because it lacks a live online format.
+  - The course will be approved only if offered in-person.
+key: C
+explanation: The statute provides that the department shall not approve any prelicensing course
+  unless it is offered in-person or via electronic means that incorporates a live online format.
+  Recorded video lectures lack real-time audio communication, so they do not satisfy the live-online
+  requirement and therefore cannot be approved. The distractor about interactive assessments
+  pertains to subsection (f), which only applies when electronic means lack real-time audio, but the
+  course still fails the live-online condition of subsection (d).
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-314e(d)
+  url: null
+  quoted_text: The department shall not approve any prelicensing course under this section unless such
+    course is provided on an in-person basis or by way of electronic means that incorporates a live
+    online format.
+  secondary: []
+terms:
+  - prelicensing course
+  - electronic means
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,38 @@
+id: VT-2211-0199
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum administrative penalty per unprofessional conduct violation under 3 V.S.A.
+  § 129a(d)(1)?
+options:
+  - $5000
+  - $2500
+  - $10000
+  - $1000
+key: A
+explanation: The statute states that a board may impose an administrative penalty not to exceed
+  $5,000 for each unprofessional conduct violation. Therefore the correct amount is $5,000. The
+  distractor $2,500 is incorrect because it understates the maximum allowed by the rule.
+citation:
+  source: 3 V.S.A. § 129a(d)(1)
+  url: null
+  quoted_text: imposing an administrative penalty not to exceed $5,000.00 for each unprofessional
+    conduct violation.
+  secondary: []
+terms:
+  - penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

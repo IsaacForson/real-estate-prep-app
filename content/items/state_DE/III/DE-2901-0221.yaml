@@ -1,0 +1,43 @@
+id: DE-2901-0221
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens a separate account at a Delaware bank and deposits earnest money from a client
+  into that account, which is used solely for the client's funds. Does this account qualify as an
+  escrow account under Delaware law?
+options:
+  - Yes, because the account is separate and used solely for the client's funds.
+  - No, because the account is not maintained at a Delaware bank.
+  - No, because the account commingles the broker's personal funds with client funds.
+  - No, because the account may be used to pay office expenses.
+key: A
+explanation: The definition requires an escrow account to be a separate account used solely for
+  clients' moneys. Since the broker opened a separate account used solely for the client's funds, it
+  qualifies as an escrow account. The distractor claiming the account is not at a Delaware bank is
+  wrong because the definition does not require a Delaware bank; it only requires separation and
+  sole use for client funds.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2901(14)
+  url: null
+  quoted_text: “Escrow account” means a separate account established by the brokerage organization
+    used solely for moneys in which a broker’s customers or clients have an interest in accordance
+    with the terms of a real estate services transaction.
+  secondary: []
+terms:
+  - escrow account
+  - separate account
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

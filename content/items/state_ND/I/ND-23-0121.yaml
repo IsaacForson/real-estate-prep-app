@@ -1,0 +1,39 @@
+id: ND-23-0121
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker's trust account had no activity during the month of March. Under N.D. Admin. Code §
+  70-02-01-15(2)(f), is the broker required to reconcile the trust account for March?
+options:
+  - The broker must reconcile the trust account because reconciliation is required monthly
+  - The broker is not required to reconcile the trust account because there was no activity
+  - The broker must reconcile the trust account only if the balance exceeds $1,000
+  - The broker is not required to reconcile the trust account unless the commission requests it
+key: B
+explanation: The rule states that trust accounts must be reconciled monthly except when there has
+  been no activity during the month. Because March had no activity, reconciliation is not required.
+  The other options either ignore the exception, add an unrelated balance threshold, or incorrectly
+  tie the requirement to a commission request.
+citation:
+  source: N.D. Admin. Code § 70-02-01-15(2)(f)
+  url: null
+  quoted_text: The trust account must be reconciled monthly except in the case where there had been no
+    activity during that month.
+  secondary: []
+terms:
+  - trust account
+  - reconciliation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

@@ -1,0 +1,45 @@
+id: RI-5-0309
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A pre‑licensing course consists of ten sessions, each lasting forty‑five minutes. How many
+  clock hours of instruction does the course provide under Rhode Island regulations?
+options:
+  - 10 clock hours
+  - 6 clock hours
+  - 12 clock hours
+  - 0 clock hours
+key: D
+explanation: A clock hour is defined as a period of at least fifty (50) minutes of classroom
+  instruction. Each forty‑five‑minute session is shorter than fifty minutes, so it does not qualify
+  as a clock hour. Therefore ten such sessions yield zero clock hours.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.2(A)(5)
+  url: null
+  quoted_text: “Clock hour” means a period of at least fifty (50) minutes of classroom instruction.
+  secondary: []
+math:
+  worked_solution: |-
+    Each session: 45 minutes < 50 minutes → 0 clock hours per session
+    Total clock hours = 10 sessions × 0 clock hours/session = 0 clock hours
+  formulas:
+    - Clock hours per session = 1 if session length ≥ 50 minutes else 0
+    - Total clock hours = number of sessions × clock hours per session
+  onscreen_calculator_only: false
+terms:
+  - clock hour
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,55 @@
+id: IL-2000-0247
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A resident lessee refers four prospective lessees to the owner's agent in a 12‑month period
+  and receives $4,800 in compensation. Does the lessee qualify for the exemption?
+options:
+  - Yes, compensation under $5,000
+  - Yes, compensation under two months' rent
+  - No, referred more than three lessees
+  - No, compensation over two months' rent
+key: C
+explanation: Under Section 5-20(10) of the Real Estate License Act of 2000, a resident lessee may
+  refer no more than three prospective lessees in any 12‑month period. Referring four lessees
+  violates this condition, so the exemption does not apply regardless of the compensation amount.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) — § 5-20(10)
+  url: null
+  quoted_text: Any resident lessee of a residential dwelling unit who refers for compensation to the
+    owner of the dwelling unit, or to the owner's agent, prospective lessees of dwelling units in
+    the same building or complex as the resident lessee's unit, but only if the resident lessee (i)
+    refers no more than 3 prospective lessees in any 12-month period, (ii) receives compensation of
+    no more than $5,000 or the equivalent of 2 months' rent, whichever is less, in any 12-month
+    period, and (iii) limits activities to referring prospective lessees to the owner, or the
+    owner's agent, and does not show a residential dwelling unit to a prospective lessee, discuss
+    terms or conditions of leasing a dwelling unit with a prospective lessee, or otherwise
+    participate in the negotiation of the leasing of a dwelling unit.
+  secondary: []
+math:
+  worked_solution: "Compensation received: $4,800. Compare to the $5,000 limit: $4,800 ≤ $5,000, so
+    the compensation condition is satisfied. (The alternative limit of two months' rent cannot be
+    evaluated without the rent amount, but the compensation alone does not exceed $5,000.)"
+  formulas:
+    - Compensation ≤ $5,000
+  onscreen_calculator_only: false
+terms:
+  - resident lessee
+  - exemption
+  - referral
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

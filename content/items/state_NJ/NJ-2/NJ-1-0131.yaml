@@ -1,0 +1,46 @@
+id: NJ-1-0131
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-2
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the New Jersey Real Estate Commission has eight members, what is the minimum number of
+  members that must be present to constitute a quorum?
+options:
+  - Four members
+  - Six members
+  - Seven members
+  - Five members
+key: D
+explanation: A majority of the eight members constitutes a quorum, which is more than half of eight,
+  or five members. Four members is only half and does not meet the majority requirement.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-5
+  url: null
+  quoted_text: A majority of the voting members of the commission shall constitute a quorum thereof.
+  secondary: []
+math:
+  worked_solution: Total members = 8. Half of 8 = 4. Majority requires more than half, so 4 + 1 = 5.
+  formulas:
+    - majority = floor(total/2) + 1
+  onscreen_calculator_only: false
+terms:
+  - quorum
+  - majority
+  - members
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

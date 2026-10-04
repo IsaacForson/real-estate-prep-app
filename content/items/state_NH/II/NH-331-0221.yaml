@@ -1,0 +1,46 @@
+id: NH-331-0221
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Jane Doe, who is not a licensee, owns a rental property and regularly employs John Smith, who
+  is also not a licensee, to handle leasing activities. Under RSA 331-A:4, which statement is
+  correct regarding the need for a real estate license?
+options:
+  - Jane Doe must obtain a real estate license before she can lease her rental property.
+  - John Smith must obtain a real estate license to perform leasing activities for the owner.
+  - Neither Jane Doe nor John Smith needs a real estate license for these activities.
+  - Only Jane Doe needs a real estate license because she is the property owner.
+key: C
+explanation: RSA 331-A:4 I exempts a non‑licensee owner and the regular employees of that owner who
+  are also non‑licensees from needing a real estate license when they act with respect to the
+  owner’s real property. Jane Doe is a non‑licensee owner and John Smith is her regular employee who
+  is also not a licensee, so neither needs a license. The statement that John Smith must obtain a
+  real estate license to perform leasing activities for the owner is incorrect because the exemption
+  applies when the employee works for a non‑licensee owner.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 4 I
+  url: null
+  quoted_text: An owner who is not a licensee, or the regular employees of an owner of real estate who
+    are not licensees, with respect to the real property of the owner;
+  secondary: []
+terms:
+  - owner
+  - regular employees
+  - licensee
+  - exempt
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

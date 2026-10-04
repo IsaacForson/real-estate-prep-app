@@ -1,0 +1,40 @@
+id: NAT-PSI-II-0842
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A homeowner obtains a loan from a bank and signs a deed of trust to secure the loan.
+  According to the lien classifications, this deed of trust is:"
+options:
+  - a specific and voluntary lien created by agreement.
+  - a specific lien arising without owner consent.
+  - a voluntary lien arising with owner consent.
+  - a general lien affecting all property.
+key: A
+explanation: A deed of trust is a specific and voluntary lien created by agreement. Therefore the
+  option stating that it is a specific and voluntary lien created by agreement is correct. The other
+  options are incorrect because they describe the lien as arising without consent, as merely
+  voluntary without specificity, or as a general lien, which does not match the nature of a deed of
+  trust.
+citation:
+  source: REP Ref. Property & Land Use § 8.2
+  url: null
+  quoted_text: "Mortgage and deed of trust: specific, voluntary."
+  secondary: []
+terms:
+  - lien
+  - specific
+  - voluntary
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

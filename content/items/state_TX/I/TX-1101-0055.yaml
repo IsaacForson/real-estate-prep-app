@@ -1,0 +1,54 @@
+id: TX-1101-0055
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: "Under Tex. Occ. Code §1101.752(b), an injunctive action to enforce the Real Estate License
+  Act may be brought in the district court of the county where:"
+options:
+  - the violation occurred or is about to occur, but not where the defendant resides
+  - the defendant resides, regardless of where the violation occurred
+  - either the violation occurred or is about to occur or the defendant resides
+  - the commission's headquarters is located in Austin, Texas
+key: C
+explanation: Tex. Occ. Code §1101.752(b) provides that venue lies in the county where the violation
+  occurred or is about to occur, or where the defendant resides. Either location satisfies the
+  requirement. Limiting venue to the commission’s headquarters is incorrect because the statute does
+  not list that as a permissible venue. Limiting venue to only where the violation occurred or is
+  about to occur is incorrect because the statute also allows venue where the defendant resides.
+  Limiting venue to only where the defendant resides is incorrect because the statute also allows
+  venue where the violation occurred or is about to occur.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.752
+  url: null
+  quoted_text: >-
+    (b) The action shall be brought in the name of the state in the district court in the county in
+    which:
+
+
+    (1) the violation occurred or is about to occur; or
+
+
+    (2) the defendant resides.
+  secondary: []
+terms:
+  - injunctive action
+  - venue
+  - district court
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

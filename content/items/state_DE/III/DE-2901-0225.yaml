@@ -1,0 +1,40 @@
+id: DE-2901-0225
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee wants to name their team 'Capital Realty Associates'. Under 24 Del. Admin. Code §
+  2900-8.5.2.1 and § 2900-8.5.2.2, which part of the name violates the team naming rules?
+options:
+  - A. The term "Capital"
+  - B. The term "Realty"
+  - C. The term "Associates"
+  - D. The term "Team"
+key: B
+explanation: Under 24 Del. Admin. Code § 2900-8.5.2.2, a team name may not include terms suggesting
+  a separate brokerage such as 'Realty', 'Real Estate', or 'Realtors'. The name must also include
+  'team', 'group', or 'associates' to satisfy the inclusion requirement. In 'Capital Realty
+  Associates', the term 'Realty' violates the prohibition, while 'Associates' satisfies the
+  inclusion requirement.
+citation:
+  source: 24 Del. Admin. Code § 2900-8.5.2.2
+  url: null
+  quoted_text: The Team name may not include terms which suggest that the Team is a separate Brokerage
+    Organization, such as “Realty”, “Real Estate”, or “Realtors".
+  secondary: []
+terms:
+  - team
+  - name
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

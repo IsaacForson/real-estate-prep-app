@@ -1,0 +1,40 @@
+id: NAT-PV-II-1408
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer purchases property at a tax deed sale and receives a tax deed but does not pursue a
+  quiet title action. Based on the rules governing tax sales, what is the likely result regarding
+  the title's insurability?
+options:
+  - The title is automatically insured because the tax deed conveys clear ownership
+  - The title may not be insurable without a quiet title action to resolve potential defects
+  - The title becomes subject to a statutory right of redemption that the buyer must honor
+  - The title is transferred with full warranties against all prior claims
+key: B
+explanation: A tax deed conveys ownership without any warranties, so the title may contain defects
+  that must be cleared—often through a quiet title action—before a title insurer will issue a
+  policy. If the buyer does not pursue such an action, the title may remain uninsurable.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.2
+  url: null
+  quoted_text: A tax deed carries no warranties, and the title may need a quiet title action before it
+    is insurable.
+  secondary: []
+terms:
+  - tax deed
+  - quiet title action
+  - insurability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

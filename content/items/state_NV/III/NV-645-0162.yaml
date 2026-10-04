@@ -1,0 +1,39 @@
+id: NV-645-0162
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee represents a buyer in a transaction and will receive a commission from the seller.
+  According to Nevada law, when must the licensee disclose this source of compensation to the buyer?
+options:
+  - The licensee must disclose the compensation source as soon as practicable.
+  - The licensee must disclose the compensation source only at closing.
+  - The licensee must disclose the compensation source only if the buyer asks.
+  - The licensee must not disclose the compensation source.
+key: A
+explanation: NRS 645.252(1)(b) requires the licensee to disclose each source of compensation as soon
+  as practicable. Stating that disclosure may wait until closing does not satisfy that requirement.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.252(1)(b)
+  url: null
+  quoted_text: Each source from which the licensee will receive compensation as a result of the transaction.
+  secondary: []
+terms:
+  - compensation
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

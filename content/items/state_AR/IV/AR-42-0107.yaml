@@ -1,0 +1,56 @@
+id: AR-42-0107
+jurisdiction: AR
+bank: state_AR
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A developer in Arkansas registers a new time-share plan and, during the same registration
+  year, also requests a material change to the plan. According to the Arkansas Real Estate
+  Commission Rules, what total fee must the developer pay to the Commission for both the
+  registration and the material change?
+options:
+  - $1,200.00
+  - $900.00
+  - $750.00
+  - $1,050.00
+key: B
+explanation: The rule sets the time-share plan registration fee at $750.00 and the material change
+  fee at $150.00, so the total is $900.00. The $1,050.00 amount results from adding the registration
+  fee to the abbreviated renewal and recertification fee of $300.00, which is not required for a
+  material change.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 13.1
+  url: null
+  quoted_text: |-
+    (1) Time-share plan registration fee - $750.00
+    (2) Time-share plan annual renewal fee - $350.00
+    (3) Abbreviated registration application fee - $500.00
+    (4) Abbreviated registration renewal and recertification fee - $300
+    (5) Acquisition agent registration and renewal fee - $150.00
+    (6) Principal broker registration and renewal fee - $75.00
+    (7) Managing agent registration and renewal fee - $75.00
+    (8) Exchange agent registration and renewal fee - $75.00
+    (9) Material change fee - $150.00
+  secondary: []
+math:
+  worked_solution: 750.00 + 150.00 = 900.00
+  formulas:
+    - Total Fee = Registration Fee + Material Change Fee
+  onscreen_calculator_only: false
+terms:
+  - registration
+  - material change
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

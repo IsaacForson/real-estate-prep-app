@@ -1,0 +1,41 @@
+id: AL-27-0224
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee changed her residential address on April 5 and notified the Alabama Real Estate
+  Commission on May 10. According to Ala. Code § 34-27-1(n), what is the status of this
+  notification?
+options:
+  - Within the required 30‑day period
+  - After the required 30‑day period
+  - Within the allowed 60‑day period
+  - After the allowed 60‑day period
+key: B
+explanation: The licensee notified the commission 35 days after the address change, which exceeds
+  the 30‑day window mandated by Ala. Code § 34-27-1(n). Hence the notification was not made within
+  the required period and is non‑compliant. The other options either misstate the time frame or
+  incorrectly suggest compliance.
+citation:
+  source: Ala. Code § 34-27-1(n)
+  url: null
+  quoted_text: Each licensee shall notify the commission of any change of address, business or
+    residential, within 30 days of such change.
+  secondary: []
+terms:
+  - address
+  - notification
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

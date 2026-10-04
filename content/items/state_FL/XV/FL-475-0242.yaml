@@ -1,0 +1,49 @@
+id: FL-475-0242
+jurisdiction: FL
+bank: state_FL
+blueprint_node: XV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property management firm pays a tenant $60 as a finder’s fee for introducing a prospective
+  lessee, and does not advertise the tenant’s services. Under Florida law, is this payment
+  permissible?
+options:
+  - The payment is permissible because the fee was paid to a tenant and no advertising occurred
+  - The payment is permissible because the fee was credited toward the tenant’s rent
+  - The payment is not permissible because the fee exceeds the $50 limit set by statute
+  - The payment is not permissible because the tenant must hold a sales associate license to receive
+    any fee
+key: C
+explanation: Florida law limits finder’s fees paid to unlicensed tenants to $50 per transaction; a
+  $60 payment exceeds that limit, making it impermissible.
+citation:
+  source: Fla. Stat. § 475.01(13)
+  url: null
+  quoted_text: Any property management firm or any owner of an apartment complex for the act of paying
+    a finder’s fee or referral fee to an unlicensed person who is a tenant in such apartment complex
+    provided the value of the fee does not exceed $50 per transaction.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the statutory limit for finder’s fees under Fla. Stat. §
+    475.01(13): $50 per transaction.\\nStep 2: Compare the actual fee paid: $60.\\nStep 3: Determine
+    if the fee exceeds the limit: $60 > $50, so it exceeds the limit.\\nStep 4: Conclude that the
+    payment is not permissible."
+  formulas:
+    - Fee > Limit
+  onscreen_calculator_only: false
+terms:
+  - finder's fee
+  - limit
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

@@ -1,0 +1,40 @@
+id: NH-331-0230
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee disposed of escrow trust account records after 2 years, believing the records were
+  no longer needed. According to RSA 331-A:26, is this permissible?
+options:
+  - No, because records must be retained for at least 3 years.
+  - Yes, if there are no pending investigations or complaints.
+  - Yes, because the commission requires only 1 year of retention.
+  - No, unless the commission grants written permission for disposal.
+key: A
+explanation: The statute requires escrow and trust account records to be kept for a period of three
+  years; disposing of them after two years violates this requirement. The distractor suggesting a
+  one‑year period misstates the statutory duration.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A § 331-A:26(XVIII)
+  url: null
+  quoted_text: Failing to keep for a period of 3 years, records of escrow and trust accounts
+    pertaining to funds entrusted with the principal broker relating to a real estate transaction
+    showing date deposited, date of withdrawal, to whom paid, and such other pertinent information
+    as the commission may require.
+  secondary: []
+terms:
+  - record retention
+  - escrow
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

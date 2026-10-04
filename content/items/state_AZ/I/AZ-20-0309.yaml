@@ -1,0 +1,49 @@
+id: AZ-20-0309
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson employed by an Arizona broker learns that the broker’s license has expired. What
+  happens to the salesperson’s license under Arizona law?
+options:
+  - They remain active and affiliated with the broker in good standing until the broker renews the
+    license.
+  - They are severed from the broker on expiration date and may be rehired after the broker’s
+    license is renewed.
+  - They automatically convert to an inactive status that requires continuing education before
+    reactivation.
+  - They are terminated by the department and must submit a new application to obtain a real estate
+    license.
+key: B
+explanation: Under Ariz. Rev. Stat. § 32-2130(F), when an employing broker’s license expires, the
+  licenses of salespersons employed by that broker are severed from the broker on the expiration
+  date; those salespersons may be rehired after the broker renews the license. The statement that
+  the license remains active and affiliated with the broker in good standing until the broker renews
+  the license is incorrect. The statement that the license automatically converts to an inactive
+  status requiring continuing education before reactivation is incorrect. The statement that the
+  license is terminated by the department and requires a new application is incorrect.
+citation:
+  source: Ariz. Rev. Stat. § 32-2130(F)
+  url: null
+  quoted_text: If the license of an employing broker expires under this subsection, the licenses of
+    persons who are employed by the employing broker shall be severed from the employing broker on
+    the license expiration date of the employing broker. These persons may be rehired on renewal of
+    the employing broker's license.
+  secondary: []
+terms:
+  - employing broker
+  - license severance
+  - rehire
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

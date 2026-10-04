@@ -1,0 +1,43 @@
+id: NAT-PV-I-0710
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A deed describes a lot as 'Lot 5, Block 2, Greenfield Subdivision, Instrument #2021-04567,
+  County Y, State Z.' Is this a valid lot and block description?"
+options:
+  - Yes, but only if the instrument number is recorded in the same plat book
+  - No, because plat book and page are mandatory and cannot be substituted
+  - No, because the description must also include the surveyor's signature
+  - Yes, because instrument number may be used in place of plat book and page
+key: D
+explanation: A lot and block description is valid when it includes the lot number, block number,
+  subdivision name, either the plat book and page or an instrument number, and the county and state
+  of recording. The given description meets these requirements, so it is valid. Saying that plat
+  book and page are mandatory ignores the allowance for an instrument number. Requiring the
+  instrument number to be recorded in the same plat book adds a condition not required by the rule.
+  Adding a surveyor's signature is not required for a lot and block description.
+citation:
+  source: REP Ref. Property & Land Use § 3.4
+  url: null
+  quoted_text: A complete description names the lot number, block number, subdivision name, plat book
+    and page (or instrument number), and the county and state of recording.
+  secondary: []
+terms:
+  - lot
+  - block
+  - subdivision
+  - instrument
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,57 @@
+id: NE-56-0166
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee's active license was inactivated on Thursday, March 7, 2024 for failure to maintain
+  errors and omissions insurance. Assuming no state holidays, by what date must the Nebraska Real
+  Estate Commission send the inactivation notice required by Neb. Admin. Code tit. 299, ch. 8, §
+  006.02?
+options:
+  - March 12, 2024
+  - March 13, 2024
+  - March 14, 2024
+  - March 15, 2024
+key: C
+explanation: The rule requires the commission to send the notice within five working days of the
+  inactivation date. Counting five working days from March 7, 2024 (excluding weekends) leads to
+  March 14, 2024 as the deadline. The distractor of March 12 results from counting five calendar
+  days instead of five working days.
+citation:
+  source: Neb. Admin. Code tit. 299, ch. 8, § 006.02
+  url: null
+  quoted_text: Within five working days of the date of inactivation under this Section, the Commission
+    shall cause to be sent, by registered mail, certified mail, first-class mail using intelligent
+    mail barcode or another similar tracking method used or approved by the United States Postal
+    Service, or a designated delivery service as provided in section 25-505.01 to the licensee's
+    residence address as reflected in the records of the Commission Office, a notice to any affected
+    licensee of the inactivation of license.
+  secondary: []
+math:
+  worked_solution: |-
+    Start with inactivation date: March 7, 2024 (Thursday).
+    Count the next working day: March 8, 2024 (Friday) = 1.
+    Skip weekend March 9-10.
+    Next working day: March 11, 2024 (Monday) = 2.
+    Next working day: March 12, 2024 (Tuesday) = 3.
+    Next working day: March 13, 2024 (Wednesday) = 4.
+    Next working day: March 14, 2024 (Thursday) = 5.
+    Thus the notice must be sent by March 14, 2024.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - inactivation
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,48 @@
+id: UT-101-0116
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A claimant obtains a final judgment for $20,000 in actual damages from a single real estate
+  transaction involving fraud by a licensee. Assuming the fund has sufficient money, what is the
+  maximum amount the fund may pay for that judgment?
+options:
+  - $25,000
+  - $20,000
+  - $50,000
+  - $15,000
+key: D
+explanation: The fund's liability is limited to $15,000 for a single transaction per Utah Code Ann.
+  § 61-2f-506(3)(c)(i). The $20,000 option incorrectly uses the judgment amount without applying the
+  statutory cap.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-506 (3)(c)(i)
+  url: null
+  quoted_text: $15,000 for a single transaction;
+  secondary: []
+math:
+  worked_solution: "The judgment amount is $20,000. The statutory cap for a single transaction is
+    $15,000. Since the judgment exceeds the cap, the fund may pay only the cap amount: $15,000."
+  formulas:
+    - Maximum payment = min(judgment amount, statutory cap)
+  onscreen_calculator_only: false
+terms:
+  - transaction
+  - limit
+  - fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

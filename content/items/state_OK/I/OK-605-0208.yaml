@@ -1,0 +1,49 @@
+id: OK-605-0208
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker collects a $300 fee in advance for a property management service to be performed in
+  45 days. The client does not submit a written request for the accounting. According to Oklahoma
+  Statute § 858-303B, by what date must the broker provide the detailed accounting of expenditures?
+options:
+  - By day 10 after the fee is paid
+  - By day 30 after the fee is paid
+  - By day 55 after the fee is paid
+  - By day 60 after the fee is paid
+key: C
+explanation: Under 59 O.S. § 858-303B, a broker must provide a detailed accounting of expenditures
+  within ten days after the time specified to perform the service. Since the service is scheduled
+  for 45 days after the advance fee is paid, the accounting is due 45 + 10 = 55 days after the fee
+  is paid.
+citation:
+  source: Okla. Stat. tit. 59 (Oklahoma Real Estate License Code, §§ 858-101 to 858-605) — Oklahoma
+    Real Estate License Code, 59 O.S. §§ 858-101 to 858-605 (OREC Code and Rules Book, as of Nov. 1,
+    2025) — § 858-303B
+  url: null
+  quoted_text: provide a detailed accounting of expenditures to the person such services are performed
+    for within ten (10) days after the time speciﬁed to perform such services
+  secondary: []
+math:
+  worked_solution: Service date = advance fee date + 45 days. Accounting due date = service date + 10
+    days = (advance fee date + 45 days) + 10 days = advance fee date + 55 days.
+  formulas:
+    - AccountingDue = AdvanceFeeDate + ServicePeriod + AccountingPeriod
+  onscreen_calculator_only: false
+terms:
+  - broker
+  - accounting
+  - advance fees
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

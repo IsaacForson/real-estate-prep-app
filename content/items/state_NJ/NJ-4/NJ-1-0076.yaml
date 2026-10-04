@@ -1,0 +1,54 @@
+id: NJ-1-0076
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-4
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer offers a prospective purchaser a free weekend stay at the timeshare property and a
+  discounted golf package. The aggregate good‑faith value of these incidental benefits is $1,500,
+  and the purchaser paid $8,000 for the timeshare interest. Under the New Jersey Real Estate
+  Timeshare Act, is this permissible?
+options:
+  - Yes, because the incidental benefits are voluntary and disclosed.
+  - No, because the incidental benefits exceed 20 percent of the purchase price.
+  - Yes, because the developer may offer any incidental benefits as long as they are not exchange
+    programs.
+  - No, because free use of accommodations is prohibited as an incidental benefit.
+key: D
+explanation: The statute states that an incidental benefit does not include an offer of the use of
+  the accommodations on a free or discounted one‑time basis. Offering a free weekend stay violates
+  this prohibition regardless of the 20 % value limit. The distractor focusing on the percentage
+  overlooks the separate ban on free accommodations.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — §
+    15-16.50 45:15-16.51"
+  url: null
+  quoted_text: The term shall not include an offer of the use of the accommodations of the timeshare
+    plan on a free or discounted one-time basis.
+  secondary: []
+math:
+  worked_solution: "Calculate the percentage of incidental benefits relative to purchase price: (1,500
+    / 8,000) × 100 = 0.1875 × 100 = 18.75 %. This is below the 20 % threshold, but the free
+    accommodation prohibition still applies."
+  formulas:
+    - Percentage = (part/whole) × 100
+  onscreen_calculator_only: false
+terms:
+  - incidental benefit
+  - accommodation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

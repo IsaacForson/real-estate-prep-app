@@ -1,0 +1,51 @@
+id: NH-331-0220
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to RSA 331-A:2 I-b, what is an 'appointing agent'?
+options:
+  - It is a person who assists or directs in procuring prospects likely to result in a sale,
+    exchange, lease, or rental of real estate, and who also assists in negotiating any transaction
+    intended to achieve such outcomes.
+  - It is a broker who manages a branch office, defined as any real estate broker's office other
+    than the principal place of business, and who supervises licensees working at that location.
+  - It is a licensee who has been appointed by an appointing agent to represent one party of a real
+    estate transaction and who owes fiduciary duties to that party, regardless of whether the other
+    party is represented by another licensee from the same firm.
+  - It is a broker named by the principal broker who appoints individual real estate licensees to
+    represent either the buyer or tenant, or the seller or landlord, in an office of a firm that
+    practices designated agency.
+key: D
+explanation: The definition of appointing agent is explicitly stated in RSA 331-A:2 I-b as a broker
+  named by the principal broker who appoints individual real estate licensees to represent either
+  the buyer or tenant, or the seller or landlord, in an office of a firm that practices designated
+  agency. The option describing a broker who manages a branch office and supervises licensees refers
+  to a different role, not the appointing agent, making it incorrect.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 2 I-b
+  url: null
+  quoted_text: Appointing agent means a broker named by the principal broker who appoints individual
+    real estate licensees to represent either the buyer or tenant, or the seller or landlord, in an
+    office of a firm that practices designated agency.
+  secondary: []
+terms:
+  - appointing agent
+  - broker
+  - principal broker
+  - designated agency
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

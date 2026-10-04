@@ -1,0 +1,48 @@
+id: KS-3034-0218
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker keeps $150 in the trust account to pay office expenses. Under Kansas law, is this
+  permissible?
+options:
+  - It is prohibited because the amount exceeds $100 for trust expenses.
+  - It is allowed if the broker obtains written commission consent.
+  - It is permissible because the funds are used for office expenses.
+  - It is permissible if the funds are returned within 30 days.
+key: A
+explanation: Kansas law permits a broker to retain no more than $100 in the trust account for
+  expenses related to the account’s use and maintenance. Keeping $150 exceeds this $100 cap, so the
+  practice is prohibited. The distractor stating that the funds are used for office expenses is
+  incorrect because the $100 limit applies regardless of purpose.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(2)
+  url: null
+  quoted_text: except that nothing herein shall prohibit a broker from having funds in an amount not
+    to exceed $100 in the broker's trust account to pay expenses for the use and maintenance of such
+    account
+  secondary: []
+math:
+  worked_solution: The statute allows a broker to retain up to $100. The broker retained $150. $150 –
+    $100 = $50 excess. Because the retained amount exceeds the $100 limit, the action is prohibited.
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - broker
+  - expenses
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,47 @@
+id: WA-85-0106
+jurisdiction: WA
+bank: state_WA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A managing broker creates a Facebook advertisement for a residential listing that includes the
+  broker’s photo, contact information, and the statement 'Licensed Real Estate Agent in Washington,'
+  but does not mention the name of the firm. The property is listed by the firm, not the broker’s
+  personal residence. Under RCW 18.85.361(8), what must the managing broker do to make the
+  advertisement compliant?
+options:
+  - Add the firm's name in a clear and conspicuous manner
+  - Include only the broker's license number
+  - State that the advertisement is for personal property only
+  - Remove the statement about being a licensed agent
+key: A
+explanation: RCW 18.85.361(8) requires that any advertisement include the real estate firm's name or
+  assumed name in a clear and conspicuous manner, unless the advertisement is for the licensee's
+  personally owned real property. Since the property belongs to the firm, the firm's name must be
+  added. Including only the broker's license number does not satisfy the firm‑name requirement.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.361
+  url: null
+  quoted_text: (8) Advertising in any manner without including the real estate firm's name or assumed
+    name as licensed in a clear and conspicuous manner in the advertisement; except, that real
+    estate brokers, managing brokers, or firms advertising their personally owned real property must
+    only disclose that they hold a real estate license;
+  secondary: []
+terms:
+  - advertising
+  - firm name
+  - disclosure
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

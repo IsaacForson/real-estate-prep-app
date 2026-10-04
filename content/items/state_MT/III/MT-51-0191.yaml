@@ -1,0 +1,44 @@
+id: MT-51-0191
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee assists a seller in selling a parcel of land, negotiates a commission, and the sale
+  closes. Two weeks after closing, the applicant obtains a real estate salesperson license. The
+  licensee then sues the seller for the promised commission. Under Montana law, what is the likely
+  result?
+options:
+  - The licensee may not recover because they were not licensed at the time the claim arose.
+  - The licensee may recover only if they had a written agreement with the seller.
+  - The licensee may recover because they are now licensed.
+  - The licensee may recover because they performed the services before licensure.
+key: A
+explanation: Mont. Code Ann. § 37-51-401 requires a person to be a duly licensed real estate broker
+  or salesperson, or authorized to act as a broker, at the time the cause of action arises. Because
+  the license was obtained after the closing, the claim arose while the person was unlicensed, so
+  recovery is barred. The other options incorrectly suggest that later licensure, performance of
+  services, or a written agreement can overcome the licensing requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-401
+  url: null
+  quoted_text: without first alleging and proving that such person was a duly licensed real estate
+    broker or real estate salesperson or authorized to act as a broker under the provisions of this
+    chapter at the time the alleged cause of action or claim arose.
+  secondary: []
+terms:
+  - license
+  - timing
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

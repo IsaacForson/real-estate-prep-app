@@ -1,0 +1,44 @@
+id: MT-51-0174
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker pays a $200 licensing fee to the Montana Department of Labor and Industry. Where must
+  that fee be deposited?
+options:
+  - Into the state special revenue fund for the use of the board
+  - Into the broker's escrow account pending commission disbursement
+  - Into the municipality's general fund where the broker's office is located
+  - Into a private trust account managed by the brokerage
+key: A
+explanation: Mont. Code Ann. § 37-51-311 requires that fees prescribed by the board be paid into the
+  state special revenue fund for the use of the board. Therefore, the $200 licensing fee must be
+  deposited into that fund. Depositing the fee into a broker's escrow account or a municipal fund
+  would violate this requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-311
+  url: null
+  quoted_text: The fees prescribed by the board must be charged by the department and paid into the
+    state special revenue fund for the use of the board, subject to 37-1-101 (6).
+  secondary: []
+math:
+  worked_solution: No arithmetic steps are needed; the question only asks where to deposit the known $200 fee.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - department
+  - state special revenue fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

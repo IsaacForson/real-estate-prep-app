@@ -1,0 +1,40 @@
+id: WA-85-0064
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An investigator telephones a licensee and asks for copies of transaction files. The licensee
+  refuses. Later that day, the investigator emails a written request for the same files. Under WAC
+  308-124I-060, may the licensee be charged for failure to cooperate based on the telephone refusal?
+options:
+  - No, because the investigator had not yet made a written request at the time of the refusal
+  - Yes, because the investigator eventually made a written request
+  - Yes, because any refusal to provide records results in a charge
+  - No, because a licensee is not charged for failure to cooperate in this context
+key: A
+explanation: The rule provides that a licensee will not be charged for failure to cooperate unless
+  the investigator has made a written request for records. Since no written request existed at the
+  time of the refusal, no charge may be based on that refusal.
+citation:
+  source: Wash. Admin. Code ch. 308-124I — WAC Chapter 308-124I — Real Estate—Fees and Miscellaneous —
+    § 308-124I-060
+  url: null
+  quoted_text: a licensee will not be charged for failure to cooperate with the department unless the
+    investigator has made a written request for records or documents
+  secondary: []
+terms:
+  - investigation
+  - records
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

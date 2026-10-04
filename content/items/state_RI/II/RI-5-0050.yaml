@@ -1,0 +1,41 @@
+id: RI-5-0050
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson obtains a license on June 3, 2022. When is the first renewal deadline for this
+  license?
+options:
+  - June 3, 2024
+  - May 1, 2024
+  - June 3, 2023
+  - June 3, 2025
+key: B
+explanation: According to § 2.9(C), licenses issued after January 1, 2020 are renewed every two
+  years on the anniversary of the issuance date. The license was issued June 3, 2022, so the first
+  renewal occurs two years later on June 3, 2024. The May 1 date applies only to licenses issued
+  before 2020, the 2023 date is only one year later, and the 2025 date is three years later.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.9(C)
+  url: null
+  quoted_text: Licenses issued after January 1, 2020, shall be renewed every two (2) years on the
+    anniversary of the date the license was issued.
+  secondary: []
+terms:
+  - renewal
+  - anniversary
+  - two years
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

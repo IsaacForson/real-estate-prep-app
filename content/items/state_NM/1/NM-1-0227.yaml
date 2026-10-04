@@ -1,0 +1,39 @@
+id: NM-1-0227
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under 16.61.24.12(A), which item must be included in the monthly owner statement of receipts
+  and disbursements?
+options:
+  - Number of units managed
+  - Previous balance
+  - Property tax assessment
+  - Broker's commission percentage
+key: B
+explanation: The rule requires the owner statement to show the previous balance, funds deposited by
+  category, funds disbursed by category, and the ending balance. Therefore, the previous balance
+  must be included. The number of units managed is not listed in the rule and is not required.
+citation:
+  source: 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61) —
+    NMREC License Law and Rules book, 2021 web edition — § 16.61.1.7 § 16.61.24.12(A)
+  url: null
+  quoted_text: (1) Previous balance;
+  secondary: []
+terms:
+  - owner statement
+  - receipts
+  - disbursements
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

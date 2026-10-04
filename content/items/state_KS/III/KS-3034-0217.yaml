@@ -1,0 +1,44 @@
+id: KS-3034-0217
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Kansas law, what is the consequence of a licensee failing to deposit earnest money
+  received from a buyer within five business days after the purchase agreement is signed, unless
+  otherwise agreed in writing?
+options:
+  - It is subject to an automatic fine of $500.
+  - It is permissible if the broker notifies the commission.
+  - It is allowed if the earnest money is less than $1,000.
+  - It is a prohibited act under §58-3062(a)(19).
+key: D
+explanation: The statute explicitly prohibits failing to deposit earnest money within five business
+  days after the purchase agreement is signed by all parties, unless a written agreement specifies a
+  different date. Therefore, the consequence is that the act is prohibited under §58-3062(a)(19).
+  The distractor suggesting permissibility if the broker notifies the commission is incorrect
+  because the statute provides no such exception; notification does not cure the violation.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(19)
+  url: null
+  quoted_text: Fail to deposit any check or cash received as an earnest money deposit or as a deposit
+    on the purchase of a lot within five business days after the purchase agreement or lot
+    reservation agreement is signed by all parties
+  secondary: []
+terms:
+  - earnest money
+  - deposit
+  - business days
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,45 @@
+id: DE-2901-0213
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer obtains a final judgment on April 15. By what date must they file a verified claim
+  with the Commission to be eligible for payment from the Real Estate Guaranty Fund?
+options:
+  - June 12
+  - June 14
+  - June 10
+  - June 16
+key: B
+explanation: The Guaranty Fund provision requires a verified claim to be filed within 60 days after
+  the final judgment is obtained. Adding 60 days to April 15 yields June 14 as the final permissible
+  date. The option ‘June 12’ is incorrect because it falls two days short of the 60‑day period.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2922(b)
+  url: null
+  quoted_text: The verified claim shall be filed within 60 days after the final judgment has been obtained.
+  secondary: []
+math:
+  worked_solution: "Start date: April 15. Add 15 days to reach April 30. Remaining days: 60 - 15 = 45.
+    Add 31 days to reach May 31. Remaining days: 45 - 31 = 14. Add 14 days to reach June 14.
+    Therefore, the deadline is June 14."
+  formulas:
+    - deadline = judgment date + 60 days
+  onscreen_calculator_only: false
+terms:
+  - verified claim
+  - guaranty fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

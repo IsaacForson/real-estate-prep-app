@@ -1,0 +1,39 @@
+id: VA-21-0294
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson changes her home address on April 5. By what date must she notify the Virginia
+  Real Estate Board in writing to comply with the rule?
+options:
+  - May 5, 2024
+  - May 15, 2024
+  - April 30, 2024
+  - May 30, 2024
+key: A
+explanation: The rule mandates notice within 30 calendar days of the address change. Adding 30 days
+  to April 5 yields May 5, 2024. Choosing May 15 mistakenly adds 40 days, while April 30 only adds
+  25 days.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-170 A.1
+  url: null
+  quoted_text: Changes of name and address must be reported to the board in writing within 30 calendar
+    days of such change.
+  secondary: []
+terms:
+  - deadline
+  - notice
+tags: []
+status: verified
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

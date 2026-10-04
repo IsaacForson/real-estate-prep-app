@@ -1,0 +1,42 @@
+id: NAT-PSI-II-0108
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor obtains a money judgment against a debtor and records the judgment in the county
+  where the debtor owns real property. How is this lien classified?
+options:
+  - a general, involuntary lien
+  - a general, voluntary lien
+  - a specific, involuntary lien
+  - a specific, voluntary lien
+key: A
+explanation: A judgment lien attaches to all of a debtor's property, making it a general lien, and
+  it arises without the debtor's consent, making it involuntary. The option that describes a
+  general, involuntary lien correctly characterizes a judgment lien. The other options incorrectly
+  describe the lien as specific, voluntary, or both.
+citation:
+  source: REP Ref. Property & Land Use § 8.1
+  url: null
+  quoted_text: "General versus specific: a general lien attaches to all of a debtor's property, real
+    and personal (judgment liens, income tax liens, estate and inheritance tax liens); a specific
+    lien attaches to one parcel (mortgage, deed of trust, property tax and special assessment liens,
+    mechanic's liens, association assessment liens)."
+  secondary: []
+terms:
+  - judgment lien
+  - general
+  - involuntary
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

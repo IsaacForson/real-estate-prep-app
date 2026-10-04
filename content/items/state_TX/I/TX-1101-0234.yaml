@@ -1,0 +1,49 @@
+id: TX-1101-0234
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee failed to disclose a material defect on March 15, 2023. The consumer submitted a
+  signed, written complaint to the Texas Real Estate Commission on March 10, 2026. Under Tex. Occ.
+  Code § 1101.204(c), may the commission investigate the licensee based on this complaint?
+options:
+  - Yes, the commission may investigate because the complaint was submitted before the fourth
+    anniversary of the incident.
+  - Yes, the commission may investigate because the complaint includes written documentation.
+  - No, the commission may not investigate because the complaint was submitted after the fourth
+    anniversary of the incident.
+  - No, the commission may not investigate because the complaint was submitted anonymously.
+key: A
+explanation: The statute bars investigations only when a complaint is submitted later than the
+  fourth anniversary of the incident. Here the complaint was filed about three years after the
+  incident, which is within the fourth anniversary, so the commission may investigate. The
+  distractor that cites the complaint’s documentation is incorrect because timeliness, not
+  documentation, governs the commission’s authority to investigate.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.204(c)
+  url: null
+  quoted_text: (c) The commission may not conduct an investigation of a person licensed under this
+    chapter or Chapter 1102 in connection with a complaint submitted later than the fourth
+    anniversary of the date of the incident that is the subject of the complaint.
+  secondary: []
+terms:
+  - complaint
+  - investigation
+  - fourth anniversary
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

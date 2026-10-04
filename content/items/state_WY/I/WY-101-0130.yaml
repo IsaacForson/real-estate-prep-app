@@ -1,0 +1,40 @@
+id: WY-101-0130
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives earnest money on a Tuesday that is a banking day. Under Wyo. Stat. Ann. §
+  33-28-111(xxvii), by what date must the broker deposit the funds into an escrow or trust account?
+options:
+  - By the end of Tuesday
+  - By the end of Thursday
+  - By the end of Wednesday
+  - By the end of Friday
+key: C
+explanation: The rule requires deposit of all financial instruments within one banking day of
+  receipt. If the earnest money is received on a Tuesday, the next banking day is Wednesday, so the
+  funds must be deposited by the end of Wednesday. Depositing by the end of Tuesday would be
+  same-day, which does not satisfy the 'within one banking day' requirement.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-111(xxvii)
+  url: null
+  quoted_text: within one (1) banking day
+  secondary: []
+terms:
+  - deposit
+  - banking day
+  - escrow
+  - trust
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

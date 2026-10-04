@@ -1,0 +1,40 @@
+id: NJ-1-0173
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord resides in one unit of a four-unit residential building and rents out the other
+  three units. According to the Truth-in-Renting Act, is this landlord subject to the act's
+  requirements?
+options:
+  - Yes, because the building contains more than three dwelling units
+  - No, because the owner occupies one of the units
+  - Yes, only if the landlord requires electronic payment
+  - No, because the landlord gives receipts for cash payments
+key: A
+explanation: The definition of landlord excludes owner‑occupied premises of not more than three
+  dwelling units; since the building has four units, the exclusion does not apply and the landlord
+  remains subject to the act. The claim that occupancy of one unit automatically exempts the
+  landlord ignores the four‑unit threshold.
+citation:
+  source: N.J. Stat. Ann. § 46:8-44
+  url: null
+  quoted_text: owner-occupied premises of not more than three dwelling units
+  secondary: []
+terms:
+  - landlord
+  - owner-occupied
+  - dwelling units
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

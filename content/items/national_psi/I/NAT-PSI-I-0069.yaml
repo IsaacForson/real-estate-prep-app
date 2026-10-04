@@ -1,0 +1,48 @@
+id: NAT-PSI-I-0069
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer acquires a property via a quitclaim deed from a seller who actually owned only a 50%
+  interest in the property. After closing, the buyer discovers that the other 50% is owned by an
+  undisclosed heir. What is the buyer's legal recourse against the seller?
+options:
+  - The buyer can sue the seller for breach of warranty of title.
+  - The buyer may recover the purchase price from the seller under the covenant against encumbrances.
+  - The buyer has no recourse against the seller and must rely on title insurance or action against
+    the heir.
+  - The buyer can compel the seller to obtain the missing interest and convey it.
+key: C
+explanation: A quit‑claim deed transfers only the interest the grantor actually owns and provides no
+  warranty of title. Because the seller owned only half of the property, the deed conveyed only that
+  half, leaving the buyer without any claim against the seller for the missing interest. The buyer’s
+  remedy is limited to relying on any title insurance or pursuing a claim against the heir who holds
+  the other half. This follows the real‑estate practice reference on ownership, title, and transfer,
+  which states that a quit‑claim deed conveys whatever interest the grantor has, with no warranties.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 6.6
+  url: null
+  quoted_text: A quitclaim deed conveys whatever interest the grantor has, if any, with no warranties
+    and no implication that the grantor has any interest.
+  secondary: []
+math:
+  worked_solution: No calculation required.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - quitclaim
+  - warranty
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

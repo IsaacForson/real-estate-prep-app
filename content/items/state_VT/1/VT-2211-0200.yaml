@@ -1,0 +1,44 @@
+id: VT-2211-0200
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is found to have committed four distinct violations of unprofessional conduct in a
+  single disciplinary proceeding. What is the maximum total administrative penalty that could be
+  imposed under 3 V.S.A. § 129a(d)(1)?
+options:
+  - $15000
+  - $5000
+  - $10000
+  - $20000
+key: D
+explanation: Since the penalty is $5,000 per violation, four violations yield a maximum total of 4 ×
+  $5,000 = $20,000. The distractor $15,000 is incorrect because it corresponds to only three
+  violations.
+citation:
+  source: 3 V.S.A. § 129a(d)(1)
+  url: null
+  quoted_text: imposing an administrative penalty not to exceed $5,000.00 for each unprofessional
+    conduct violation.
+  secondary: []
+math:
+  worked_solution: 4 violations × $5,000 per violation = $20,000
+  formulas:
+    - Total penalty = number of violations × $5,000
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,43 @@
+id: NE-56-0164
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant seeks a broker license through an LLC in which a member owning a controlling
+  interest has a felony fraud conviction. Under Neb. Rev. Stat. § 81-885.12(1), what is the result?
+options:
+  - The license will be granted.
+  - The license will be suspended.
+  - The license will be denied.
+  - The license will be revoked.
+key: C
+explanation: Under Neb. Rev. Stat. § 81-885.12(1), a license shall not be granted to an applicant
+  conducting business through a corporation, partnership, or limited liability company unless any
+  stockholder, partner, or member having a controlling interest bears a good reputation for honesty,
+  trustworthiness, and integrity. Because the controlling‑interest member lacks that reputation due
+  to the felony fraud conviction, the license must be denied. The distractor suggesting the license
+  will be granted overlooks the controlling‑interest reputation requirement.
+citation:
+  source: Neb. Rev. Stat. § 81-885.12(1)
+  url: null
+  quoted_text: No license shall be granted to an applicant who will be conducting business through a
+    corporation, partnership, or limited liability company unless any stockholder, partner, or
+    member having a controlling interest therein, if any, bears a good reputation for honesty,
+    trustworthiness, and integrity.
+  secondary: []
+terms:
+  - controlling interest
+  - reputation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,40 @@
+id: OK-605-0223
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker’s license is suspended effective June 1. According to Oklahoma Administrative Code §
+  10-17-6, what must the broker do with their listings?
+options:
+  - Cancel the listings between receipt of the suspension order and the effective date
+  - Keep the listings active until the suspension period ends
+  - Transfer the listings to another broker without the owner’s written consent
+  - Continue to advertise the listings while the suspension is in effect
+key: A
+explanation: The rule requires a suspended/revoked broker to cancel listings between the time the
+  Order of suspension/revocation is received and the effective date of suspension/revocation,
+  because listings become void on that effective date. Keeping the listings active would violate
+  this requirement.
+citation:
+  source: Okla. Admin. Code tit. 605 § 10-17-6
+  url: null
+  quoted_text: Listings must be cancelled by a suspended/revoked broker between the time the Order of
+    suspension/revocation is received and the effective date of suspension/revocation, as listings
+    will be void on the date the suspension/revocation becomes effective.
+  secondary: []
+terms:
+  - suspended license
+  - listings
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

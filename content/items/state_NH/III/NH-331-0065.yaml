@@ -1,0 +1,45 @@
+id: NH-331-0065
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker earns a commission on a sale and directs the principal broker to pay the commission
+  to Maple Lane LLC, a limited liability company whose two members are both licensed real estate
+  salespeople. Maple Lane LLC has not filed a certificate of formation with the New Hampshire
+  Secretary of State and is not registered to do business in the state. Under RSA 331-A:16-b, why is
+  this payment arrangement **NOT** permitted?
+options:
+  - Because the LLC is not registered to do business in New Hampshire
+  - Because the commission amount is above the statutory threshold
+  - Because the broker failed to obtain written consent from the seller
+  - Because the LLC's members are not officers of the brokerage
+key: A
+explanation: RSA 331-A:16-b requires that any unlicensed business entity receiving commission
+  payments be registered to do business in New Hampshire. Since Maple Lane LLC is not registered,
+  the payment is prohibited. The commission amount is irrelevant to this rule, and buyer consent is
+  not required by this section.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A — RSA Chapter 331-A — New Hampshire Real Estate Practice Act,
+    official General Court page read via Internet Archive capture of 2025-07-09 because gc.nh.gov
+    returns 403 to scripts — § 16-b
+  url: null
+  quoted_text: the partnership, association limited liability company, limited liability partnership,
+    or corporation is registered to do business in New Hampshire
+  secondary: []
+terms:
+  - commission
+  - LLC
+  - registration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

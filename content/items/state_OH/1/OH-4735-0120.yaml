@@ -1,0 +1,54 @@
+id: OH-4735-0120
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wants to pay a commission to a broker licensed in Indiana for a referral transaction.
+  The broker has not reviewed any rules adopted by the Ohio real estate commission pursuant to
+  section 4735.10. Under Ohio Rev. Code 4735.20(B), is the broker permitted to make this payment?
+options:
+  - The broker is permitted because the out‑of‑state broker holds a valid license and the
+    transaction is otherwise lawful
+  - The broker is permitted because the referral was for a single transaction and no other
+    conditions apply
+  - The broker is not permitted unless the payment complies with rules adopted by the Ohio real
+    estate commission under section 4735.10
+  - The broker is not permitted because Indiana brokers are not recognized by Ohio law and no
+    reciprocity exists
+key: C
+explanation: Ohio Rev. Code 4735.20(B) allows an interstate commission payment only when it follows
+  rules adopted by the Ohio real estate commission under section 4735.10. Because the broker has not
+  ensured compliance with those rules, the payment is not permitted. Statements that the broker is
+  permitted because the referral involved a single transaction or because the out‑of‑state broker
+  holds a valid license are incorrect, as the rule requires adherence to the commission‑adopted
+  regulations regardless of transaction type or license status.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts Section 4735.20(B)
+  url: null
+  quoted_text: A licensed real estate broker or licensed foreign real estate dealer may pay a
+    commission to a licensed real estate broker or licensed foreign real estate dealer of another
+    state or country and may receive a commission from a licensed real estate broker or licensed
+    foreign real estate dealer of another state or country, but only when done in accordance with
+    rules adopted by the Ohio real estate commission pursuant to section 4735.10 of the Revised
+    Code.
+  secondary: []
+terms:
+  - commission
+  - out‑of‑state broker
+  - rules
+  - section 4735.10
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-01

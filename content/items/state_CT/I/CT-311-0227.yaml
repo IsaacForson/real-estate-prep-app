@@ -1,0 +1,48 @@
+id: CT-311-0227
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A business entity changes its designated broker on April 5. By what date must it notify the
+  commission of the change?
+options:
+  - May 4
+  - May 5
+  - May 6
+  - May 7
+key: B
+explanation: Under Conn. Gen. Stat. § 20-312(c), a business entity must notify the commission of a
+  change in its designated broker not later than thirty days after the change becomes effective.
+  Adding thirty days to April 5 yields May 5. The distractor “May 4” results from mistakenly
+  counting only twenty‑nine days.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 - Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) - § 20-312(c)
+  url: null
+  quoted_text: Such business entity shall notify the commission of any change in the identity of, or
+    contact information for, such designated broker not later than thirty days after such change
+    becomes effective.
+  secondary: []
+math:
+  worked_solution: "Start date: April 5. Add 30 days: April has 30 days, so April 5 + 25 days reaches
+    April 30. Remaining 5 days go into May: May 5."
+  formulas:
+    - Result date = Start date + 30 days
+  onscreen_calculator_only: false
+terms:
+  - designated broker
+  - notification
+  - change
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,41 @@
+id: TN-1973-0138
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An affiliated broker receives an earnest money deposit from a buyer. What must the affiliated
+  broker do with the money under Tennessee Real Estate Commission rules?
+options:
+  - The affiliated broker must return the money to the buyer within 24 hours.
+  - The affiliated broker must pay the money over to the principal broker immediately.
+  - The affiliated broker must place the money in a separate escrow account under his or her own
+    name.
+  - The affiliated broker must deposit the money into his or her personal checking account.
+key: B
+explanation: Under Tenn. Comp. R. & Regs. 1260-02-.09, an affiliated broker must pay over all trust
+  money to the principal broker immediately upon receipt. Therefore, the affiliated broker must give
+  the earnest money deposit to the principal broker right away. Placing the funds in the broker's
+  personal checking account would be commingling, which is prohibited.
+citation:
+  source: Tenn. Comp. R. & Regs. 1260-02-.09
+  url: null
+  quoted_text: An affiliated broker shall pay over to the principal broker with whom he is affiliated
+    all trust money immediately upon receipt.
+  secondary: []
+terms:
+  - affiliated broker
+  - principal broker
+  - trust money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

@@ -1,0 +1,46 @@
+id: MS-1954-0038
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi real estate licensee receives an earnest money check from a buyer on a Tuesday
+  that is not a bank holiday. According to Miss. Code Ann. § 73-35-21(1)(f), by what time must the
+  licensee deposit the funds into a trust or escrow account?
+options:
+  - By the close of business on Wednesday.
+  - By the close of business on Thursday.
+  - By the close of business on Friday.
+  - By the close of business on the same Tuesday.
+key: B
+explanation: The rule defines a reasonable time for depositing earnest money as the close of
+  business on the second banking day after receipt. Since the funds were received on Tuesday, the
+  second banking day is Thursday, requiring deposit by close of business that day. The option
+  stating 'By the close of business on Wednesday' is incorrect because it assumes only one banking
+  day rather than the two‑day period specified.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) § 73-35-21
+  url: null
+  quoted_text: “Reasonable time” in this context means by the close of business of two (2) banking
+    days immediately following the date on which a licensee comes into possession of monies
+    belonging to others or on which a responsible broker takes or receives any cash or checks from
+    procuring the execution of an earnest money contract or option or other contract;
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+  - reasonable time
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

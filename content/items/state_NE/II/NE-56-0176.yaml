@@ -1,0 +1,51 @@
+id: NE-56-0176
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's license expired on November 30, 2023. The licensee submits a renewal application
+  and fee on February 10, 2024. What is the maximum late renewal fee the commission may charge for
+  this late submission?
+options:
+  - $25
+  - $50
+  - $75
+  - $100
+key: C
+explanation: The late fee is $25 for each month or fraction of a month beginning December 1. The
+  submission on February 10 covers December, January, and February (three months), so 3 × $25 = $75.
+citation:
+  source: Neb. Rev. Stat. § 81-885.14(3)
+  url: null
+  quoted_text: shall pay, in addition to the renewal fee, an amount to be established by the
+    commission of not more than twenty-five dollars for each month or fraction thereof beginning
+    with the first day of December if such late application is filed before July 1 of the ensuing
+    year.
+  secondary: []
+math:
+  worked_solution: |-
+    December = 1 month
+    January = 2 months
+    February (fraction) = 3 months
+    3 × $25 = $75
+  formulas:
+    - Late fee = months late × $25
+  onscreen_calculator_only: false
+terms:
+  - late renewal fee
+  - month
+  - fraction
+  - penalty
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

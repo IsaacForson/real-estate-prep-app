@@ -1,0 +1,42 @@
+id: LA-1430-0468
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for certified residential appraiser licensure seeks experience credit for 900
+  hours, of which 500 hours were earned by reviewing appraisal reports. Under the Louisiana
+  Administrative Code, is this amount of review credit permissible?
+options:
+  - Permitted because review hours under half total requirement
+  - Not permitted; review credit exceeds fifty percent limit
+  - Permitted; review credit allowed up to sixty percent
+  - Not permitted; review credit barred for residential
+key: B
+explanation: The rule caps review credit at fifty percent of total experience hours; 500/900 exceeds
+  that limit, so the credit is not allowed. The distractor claiming the review hours are under half
+  is wrong because 500 hours is actually more than half of 900 hours.
+citation:
+  source: La. Admin. Code tit. 46, pt. LXVII — Louisiana Administrative Code Title 46, Part LXVII -
+    Real Estate (LREC rules); Division of Administration docx, Internet Archive capture 2026-01-23
+    §10315.C
+  url: null
+  quoted_text: No more than 50 percent of experience credit hours shall be awarded for review of appraisals.
+  secondary: []
+terms:
+  - review
+  - experience credit
+  - percent
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-02
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

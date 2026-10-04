@@ -1,0 +1,40 @@
+id: MI-25-0201
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Michigan-licensed real estate salesperson places an online advertisement offering to sell a
+  client's vacant land, using only the salesperson's name and contact information. The vacant land
+  is not the salesperson's principal residence. Under Mich. Comp. Laws § 339.2512(4), is this
+  advertisement permissible?
+options:
+  - No, because the salesperson disclosed the employing broker's address
+  - No, because the property is not the salesperson's principal residence
+  - No, because online ads are exempt from the rule under Michigan law
+  - No, because the advertisement did not include the broker's business name
+key: B
+explanation: The key is correct because the rule prohibits advertising under the salesperson's own
+  name unless the property is the salesperson's principal residence. The most tempting distractor is
+  C, which incorrectly claims that online ads are exempt from the rule.
+citation:
+  source: Mich. Comp. Laws § 339.2512(4)
+  url: null
+  quoted_text: (4) A real estate salesperson shall not advertise to sell real property under his or
+    her own name unless the property is the principal residence of the salesperson.
+  secondary: []
+terms:
+  - advertising
+  - principal residence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-03
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03
