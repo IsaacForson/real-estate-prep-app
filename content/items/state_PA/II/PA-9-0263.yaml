@@ -1,0 +1,40 @@
+id: PA-9-0263
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation that owns real estate has three officers who all engage in real estate
+  transactions on behalf of the corporation. Under 63 P.S. § 455.304(1), how many of those officers
+  are excluded from the act?
+options:
+  - One officer
+  - Three officers
+  - Two officers
+  - Zero officers
+key: B
+explanation: The exclusion for an owner does not extend to more than five partners or officers. With
+  only three officers, all fall within the five-officer limit, so each officer is excluded. The
+  distractors suggest fewer officers are excluded, which contradicts the statutory limit.
+citation:
+  source: 63 P.S. § 455.304(1)
+  url: null
+  quoted_text: In the case of a partnership or corporation, this exclusion shall not extend to more
+    than five of its partners or officers, respectively
+  secondary: []
+terms:
+  - officer
+  - exclusion
+  - corporation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

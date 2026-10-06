@@ -1,0 +1,41 @@
+id: KS-3034-0299
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee violates § 58-3062(g) by working for two supervising brokers without the required
+  consents. A buyer sues the licensee for damages, alleging a violation of this section. Under
+  Kansas law, may the buyer recover damages based solely on this statutory violation?
+options:
+  - Under Kansas law, the buyer may recover damages only if the licensee acted knowingly and
+    intentionally.
+  - Under Kansas law, the buyer may recover damages because the statute creates a private right of
+    action.
+  - Under Kansas law, the buyer must first obtain a written commission order before suing.
+  - Under Kansas law, the buyer may not recover damages, but may sue under other theories.
+key: D
+explanation: Because § 58-3062(h) states that the section does not grant a private right of action
+  for damages, the buyer cannot recover damages based solely on a violation of this provision. The
+  buyer may, however, pursue remedies available under other statutes or common law.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(h)
+  url: null
+  quoted_text: Nothing in this section shall be construed to grant any person a private right of
+    action for damages or to eliminate any right of action pursuant to other statutes or common law.
+  secondary: []
+terms:
+  - private right of action
+  - damages
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,59 @@
+id: MN-82-0268
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice from the Minnesota Department of Revenue that they owe $800 in
+  delinquent taxes and has not obtained a tax clearance certificate. What action may the
+  commissioner take regarding the licensee's license renewal?
+options:
+  - The commissioner may renew the license if the licensee pays half the amount
+  - The commissioner may renew the license but must impose a $500 fine
+  - The commissioner may not renew the license without a tax clearance certificate
+  - The commissioner may renew the license after 30 days if no payment is made
+key: C
+explanation: Under Minn. Stat. § 82.82, Subd. 9(a), the commissioner may not issue or renew a
+  license if the licensee owes $500 or more in delinquent taxes unless a tax clearance certificate
+  is obtained. Since the licensee owes $800, which exceeds the $500 threshold, renewal is not
+  allowed without the certificate. The other options propose conditions—such as paying half the
+  amount, imposing a fine, or waiting 30 days without payment—that are not authorized by the
+  statute.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.82 Subd. 9(a)
+  url: null
+  quoted_text: The commissioner may not issue or renew a license if the commissioner of revenue
+    notifies the commissioner and the licensee or applicant for a license that the licensee or
+    applicant owes the state delinquent taxes in the amount of $500 or more.
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Identify the delinquent tax amount from the stem: $800.
+
+    Step 2: Identify the statutory threshold for renewal prohibition: $500.
+
+    Step 3: Compare the amount to the threshold: $800 ≥ $500 is true.
+
+    Step 4: Because the amount meets or exceeds the threshold, the commissioner may not renew the
+    license without a tax clearance certificate.
+  formulas:
+    - "Threshold comparison: Delinquent Tax Amount ≥ $500 → Renewal prohibited without tax clearance
+      certificate"
+  onscreen_calculator_only: false
+terms:
+  - delinquent taxes
+  - tax clearance
+  - license renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

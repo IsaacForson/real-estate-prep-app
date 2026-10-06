@@ -1,0 +1,35 @@
+id: VA-21-0333
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the term length for a member of the Virginia Real Estate Board?
+options:
+  - Five years
+  - Three years
+  - Two years
+  - Four years
+key: D
+explanation: The statute sets the term length for Board members at four years. Therefore, the
+  correct answer is four years. The other options are incorrect lengths not specified in the law.
+citation:
+  source: Va. Code Ann. § 54.1-2104
+  url: null
+  quoted_text: The terms of Board members shall be four years.
+  secondary: []
+terms:
+  - term
+  - board
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,40 @@
+id: NAT-PV-II-0208
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grantor conveys land 'to A for life, then to B.' What interest does B hold?
+options:
+  - It is a remainder that becomes possessory after A's death
+  - It is a reversion that returns to the grantor upon A's death
+  - It is an executory interest that cuts short A's estate
+  - It is a life estate measured by B's life
+key: A
+explanation: When a deed names a third party after a life estate ('to A for life, then to C'), that
+  third party holds a remainder. Therefore B holds a remainder, making the statement 'It is a
+  remainder that becomes possessory after A's death' correct. The statement 'It is a reversion that
+  returns to the grantor upon A's death' describes a reversion, which occurs when the property
+  returns to the grantor, not a third party.
+citation:
+  source: "REP Ref. Ownership, Title & Transfer — Reference note: estates, ownership forms, deeds,
+    title, recording, transfer (authored, status: draft — needs licensed review) § 1.4"
+  url: null
+  quoted_text: If the deed names a third party ('to A for life, then to C'), C holds a remainder and
+    is the remainderman.
+  secondary: []
+terms:
+  - remainder
+  - life estate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

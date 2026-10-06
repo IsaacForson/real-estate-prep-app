@@ -1,0 +1,44 @@
+id: NM-1-0244
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker receives an earnest money check on Monday, obtains all parties' signatures
+  that same day, but waits until Thursday to deposit the funds into the trust account. Under N.M.
+  Stat. Ann. § 61-29-12(A)(8), is this permissible?
+options:
+  - The broker's action is permissible because the delay was only three business days.
+  - The broker's action is not permissible because the funds must be deposited as soon after receipt
+    as is practicably possible.
+  - The broker's action is permissible because the broker obtained all parties' signatures before
+    depositing.
+  - The broker's action is not permissible because the broker failed to provide written notice to
+    the commission.
+key: B
+explanation: The rule mandates that deposit money be placed in a trust account as soon after receipt
+  as practicably possible after signatures are obtained. A three‑day delay without justification
+  fails this timeliness requirement, even though signatures were secured.
+citation:
+  source: N.M. Stat. Ann. § 61-29-12(A)(8)
+  url: null
+  quoted_text: place as soon after receipt as is practicably possible, after securing signatures of
+    all parties to the transaction, any deposit money or other money received by the qualifying
+    broker in a real estate transaction in a custodial, trust or escrow account
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+  - timeline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

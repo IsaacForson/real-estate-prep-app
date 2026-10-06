@@ -1,0 +1,50 @@
+id: NAT-PSI-II-0120
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A state highway department takes a 10-foot wide strip along the front of a commercial lot for
+  a utility easement. The strip's fair market value is $12,000. Due to the taking, the remainder lot
+  loses $3,000 in value. What is the just compensation?
+options:
+  - $9,000.00
+  - $18,000.00
+  - $12,000.00
+  - $15,000.00
+key: D
+explanation: Just compensation for a partial taking equals the fair market value of the taken
+  portion plus any loss in value to the remainder (severance damages). In this case, the taken strip
+  is worth $12,000 and the remainder loses $3,000 in value, so the total is $15,000. The option that
+  only includes the taken value omits severance damages, the option that subtracts the severance
+  damages is incorrect, and the option that doubles the severance damages is also incorrect.
+citation:
+  source: REP Ref. Property & Land Use § 4.3
+  url: null
+  quoted_text: Just compensation is ordinarily fair market value of what is taken plus, for a partial
+    taking, any loss in value to the remainder (severance damages).
+  secondary: []
+math:
+  worked_solution: "First, identify the fair market value of the taken strip: $12,000. Next, identify
+    the severance damages (loss in value to the remainder): $3,000. Then add them: $12,000 + $3,000
+    = $15,000. Therefore, just compensation is $15,000.00."
+  formulas:
+    - Just compensation = FMV of taken portion + severance damages
+  onscreen_calculator_only: false
+terms:
+  - eminent domain
+  - just compensation
+  - severance damages
+  - partial taking
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

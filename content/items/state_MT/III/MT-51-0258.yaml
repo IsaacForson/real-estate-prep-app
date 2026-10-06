@@ -1,0 +1,40 @@
+id: MT-51-0258
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Montana law, what is the maximum number of supervising brokers with which a salesperson
+  may be associated at any one time?
+options:
+  - "3"
+  - "0"
+  - "1"
+  - "2"
+key: C
+explanation: The statute prohibits a salesperson from being associated with more than one
+  supervising broker, so the highest permissible number is one. The distractor "2" is wrong because
+  it suggests a salesperson may work for two supervising brokers simultaneously, which the statute
+  forbids.
+citation:
+  source: Mont. Code Ann. § 37-51-309(1)
+  url: null
+  quoted_text: A salesperson may not be associated with, be under contract to, or perform services for
+    more than one supervising broker
+  secondary: []
+terms:
+  - supervising broker
+  - association
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

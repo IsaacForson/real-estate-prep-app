@@ -1,0 +1,48 @@
+id: KS-3034-0255
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a referral fee from another broker and fails to disclose his financial
+  interest in the referral brokerage to the client. Under Kansas law, is this permissible?
+options:
+  - Under Kansas law, this action is permissible as long as the referral fee is less than $500.
+  - Under Kansas law, this action is not permissible because written disclosure of the financial
+    interest is required.
+  - Under Kansas law, this action is permissible if the client verbally agrees to the arrangement.
+  - Under Kansas law, this action is permissible because the referral fee was earned before closing.
+key: B
+explanation: Under Kansas law, a broker who receives a referral fee must disclose in writing any
+  financial interest the broker has in the brokerage that receives the fee; failure to make this
+  written disclosure violates Kan. Stat. Ann. § 58-30,105(d)(3). Therefore, the statement that the
+  action is not permissible because written disclosure is required is correct. The claim that the
+  action is permissible if the referral fee is less than $500 is incorrect because the statute does
+  not provide a monetary threshold for the disclosure requirement. The claim that the action is
+  permissible if the client verbally agrees is incorrect because the statute mandates written
+  disclosure, and verbal agreement does not satisfy that requirement. The claim that the action is
+  permissible because the referral fee was earned before closing is incorrect because the timing of
+  the fee does not relieve the broker of the written disclosure obligation.
+citation:
+  source: Kan. Stat. Ann. § 58-30,105(d)(3)
+  url: null
+  quoted_text: provided that written disclosure is made to the client of any financial interest that
+    the broker has in the brokerage firm receiving the referral fee.
+  secondary: []
+terms:
+  - referral fee
+  - disclosure
+  - financial interest
+  - written
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

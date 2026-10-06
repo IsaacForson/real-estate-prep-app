@@ -1,0 +1,52 @@
+id: WA-85-0214
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An investigator sends a written request for 'any documents related to transactions' without
+  specifying which transactions or time period. The licensee does not produce the documents. May the
+  licensee be charged for failure to cooperate under Washington Administrative Code?
+options:
+  - Charge not permitted because the investigator made no telephone request
+  - Charge permitted because the licensee refused to comply
+  - Charge not permitted because the request lacked sufficient specificity
+  - Charge permitted because the request was in writing
+key: C
+explanation: The rule in WAC 308-124I-060 states that a licensee will not be charged for failure to
+  cooperate unless the investigator’s written request for records the licensee must keep describes
+  those records with sufficient specificity. Because the investigator’s request for ‘any documents
+  related to transactions’ did not specify which transactions or time period, it lacked the required
+  specificity, so no charge may be imposed. The option stating that charge is not permitted because
+  the request lacked sufficient specificity correctly reflects this rule. The option claiming a
+  charge is permitted because the licensee refused to comply ignores the specificity requirement;
+  refusal alone does not support a charge when the request is insufficiently specific. The option
+  asserting a charge is not permitted because the investigator made no telephone request is
+  irrelevant, as the rule only requires a written request, not a telephone one. The option stating a
+  charge is permitted because the request was in writing overlooks the specificity requirement; a
+  written request that is too vague does not authorize a charge.
+citation:
+  source: "### Wash. Admin. Code ch. 308-124I — WAC Chapter 308-124I — Real Estate—Fees and
+    Miscellaneous — § 308-124I-060"
+  url: null
+  quoted_text: a licensee will not be charged for failure to cooperate with the department unless the
+    investigator has made a written request for records or documents that the licensee is required
+    to keep, and has described the records or documents with sufficient specificity to notify the
+    licensee of what records or documents are being sought.
+  secondary: []
+terms:
+  - records
+  - specificity
+  - investigation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

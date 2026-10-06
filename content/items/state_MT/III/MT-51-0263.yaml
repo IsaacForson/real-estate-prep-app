@@ -1,0 +1,48 @@
+id: MT-51-0263
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate broker's claims-made professional liability policy is canceled effective
+  June 1 for reasons other than nonpayment of premium. On July 20, a claim is made against the
+  broker for an error that occurred during the policy period. Under Montana law, is the claim
+  covered?
+options:
+  - Yes, because the claim is made within the automatic 60-day extended reporting period.
+  - Yes, only if the broker purchased an optional extended reporting period.
+  - No, because the error occurred before cancellation but the claim must be made during the policy
+    period.
+  - No, because the policy was canceled and no coverage extends after cancellation.
+key: A
+explanation: The statute requires policies to provide an automatic 60-day extended reporting period
+  to report a claim if the policy is canceled or not renewed for any reason other than nonpayment of
+  premium or a deductible. Since the claim was made on July 20, within 60 days of the June 1
+  cancellation, it is covered. The distractor that claims-made policies provide no coverage after
+  cancellation ignores the statutory extended reporting period.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-325
+  url: null
+  quoted_text: (c) provide an automatic 60-day extended reporting period to report a claim if the
+    policy is canceled or not renewed for any reason other than nonpayment of premium or a
+    deductible; and
+  secondary: []
+terms:
+  - extended
+  - reporting
+  - policy
+  - cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

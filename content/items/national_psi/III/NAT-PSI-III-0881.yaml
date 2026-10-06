@@ -1,0 +1,39 @@
+id: NAT-PSI-III-0881
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer sends a text message to the appraiser stating, 'We need the appraisal to be at
+  least the contract price or we will withdraw the loan commitment.' Under federal appraisal
+  independence rules, how should this message be classified, **not** considering any exemptions?
+options:
+  - It is an acceptable follow‑up after receiving the appraisal report
+  - It is a permissible way to convey loan conditions to the appraiser
+  - It is a required notice under the Truth in Lending Act
+  - It is a prohibited attempt to influence the appraiser's value opinion
+key: D
+explanation: Under appraisal independence rules, a loan officer cannot condition loan approval on
+  achieving a particular appraisal value; such a statement is a prohibited attempt to influence the
+  appraiser's opinion of value.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.6
+  url: null
+  quoted_text: The loan officer emails, 'We need at least $436,000 or this deal dies'; that is a
+    prohibited attempt to influence value.
+  secondary: []
+terms:
+  - appraisal independence
+  - prohibited conduct
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

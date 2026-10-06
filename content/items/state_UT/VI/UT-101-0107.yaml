@@ -1,0 +1,54 @@
+id: UT-101-0107
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker secretly receives a $4,000 referral fee from a mortgage lender for directing a buyer
+  to that lender, which is a violation of Utah Code Ann. § 61-2f-405. What is the range of the
+  additional penalty the broker may be liable for under this provision?
+options:
+  - Between $4,000 and $8,000
+  - Between $4,000 and $12,000
+  - Between $4,000 and $16,000
+  - Between $4,000 and $20,000
+key: B
+explanation: Under Utah Code Ann. § 61-2f-405, a person who receives money as a result of a
+  violation is liable for an additional penalty of not less than the amount received and not more
+  than three times that amount. For a $4,000 receipt, the penalty ranges from $4,000 (the amount
+  received) to $12,000 (three times the amount). A penalty limited to $8,000 would be only twice the
+  amount received, which does not satisfy the statutory maximum.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-405
+  url: null
+  quoted_text: If a person receives money or its equivalent, as commission, compensation, or profit by
+    or in consequence of a violation of this chapter, that person is liable for an additional
+    penalty of not less than the amount of the money received and not more than three times the
+    amount of money received, as may be determined by the court.
+  secondary: []
+math:
+  worked_solution: Amount received = $4,000. Minimum penalty = amount received = $4,000. Maximum
+    penalty = 3 × amount received = 3 × $4,000 = $12,000. Therefore the penalty range is $4,000 to
+    $12,000.
+  formulas:
+    - Penalty_min = Amount_received
+    - Penalty_max = 3 × Amount_received
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,50 @@
+id: MI-25-0258
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant completed the required 90 hours of broker prelicensure education 40 months ago
+  but maintained an active real estate salesperson license throughout that period. Under Michigan's
+  administrative rules, is this education still valid for a broker license application?
+options:
+  - Yes, because holding an active salesperson license during the period exempts the education from
+    the 36‑month recency requirement.
+  - No, because broker prelicensure education must be completed within 36 months of application
+    regardless of any other license held.
+  - No, because the education expired after 36 months and a salesperson license does not extend its
+    validity.
+  - Yes, because any active real estate license automatically renews prelicensure education for
+    another 36 months.
+key: A
+explanation: "Under Mich. Admin. Code R § 339.22203, broker prelicensure education is valid if
+  completed within 36 months of application, unless the applicant held an active real estate
+  salesperson license during that period. Because the applicant kept an active salesperson license
+  for the full 40 months, the education remains valid despite exceeding the 36‑month limit. The
+  other options are incorrect: the education is not automatically invalid after 36 months when an
+  active salesperson license is held; holding a salesperson license does not exempt the education
+  from the recency requirement unless the license was active during the period; and an active
+  license does not renew the education for another 36 months."
+citation:
+  source: Mich. Admin. Code R § 339.22203
+  url: null
+  quoted_text: The broker prelicensure education must be completed not more than 36 months before the
+    date of application, unless the applicant held an active real estate salesperson license during
+    that period.
+  secondary: []
+terms:
+  - prelicensure
+  - salesperson
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

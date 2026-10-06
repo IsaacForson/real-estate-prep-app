@@ -1,0 +1,47 @@
+id: KS-3034-0247
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson's license is suspended effective May 1. On May 15, the salesperson conducts a
+  showing that leads to a sale, and the salesperson expects to receive a commission for that
+  showing. Under Kansas law, may the salesperson receive the commission?
+options:
+  - The salesperson may receive the commission because the broker agreed to pay it under the
+    circumstances
+  - The salesperson may not receive the commission because the act occurred after the license was
+    suspended
+  - The salesperson may receive the commission because the licensee acted in good faith under the
+    circumstances
+  - The salesperson may receive the commission because the act was personally earned under the
+    circumstances
+key: B
+explanation: The statute allows a suspended licensee to receive commissions only for acts performed
+  while actively licensed prior to the suspension. Since the showing occurred after the suspension,
+  the commission is not recoverable. The distractors incorrectly focus on personal effort, good
+  faith, or broker agreement, which do not override the statutory restriction.
+citation:
+  source: Kan. Stat. Ann. § 58-3082(a)
+  url: null
+  quoted_text: A licensee whose license is suspended, deactivated or revoked may receive any
+    personally earned commission during the period of suspension, deactivation or revocation only
+    for those acts performed and for which commission was personally earned when the person was
+    actively licensed prior to the effective date of the suspension, deactivation or revocation.
+  secondary: []
+terms:
+  - suspended license
+  - commission
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

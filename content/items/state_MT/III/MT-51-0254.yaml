@@ -1,0 +1,47 @@
+id: MT-51-0254
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a citation for three separate trust account violations. What is the total
+  civil fine under Montana law?
+options:
+  - The total civil fine is $50.
+  - The total civil fine is $100.
+  - The total civil fine is $150.
+  - The total civil fine is $200.
+key: C
+explanation: Under Mont. Code Ann. § 37-51-324(3), the civil fine is $50 for each cited violation.
+  Multiplying $50 by three violations yields a total fine of $150. The $50 option applies to a
+  single violation, $100 to two violations, and $200 to four violations, none of which match the
+  scenario.
+citation:
+  source: Mont. Code Ann. § 37-51-324(3)
+  url: null
+  quoted_text: (3) The applicable civil fine for failure to comply with trust account maintenance
+    requirements is $50 for each cited violation.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify fine per violation: $50 (from 37-51-324(3)). Step 2: Multiply by
+    number of violations: 3 × $50 = $150."
+  formulas:
+    - total fine = number of violations × $50 per violation
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - violation
+  - trust account
+  - penalty
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

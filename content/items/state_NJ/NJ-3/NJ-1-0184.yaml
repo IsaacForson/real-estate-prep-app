@@ -1,0 +1,43 @@
+id: NJ-1-0184
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to N.J.S.A. 46:15-5(c), which of the following is excluded from consideration when
+  determining the amount for the realty transfer fee?
+options:
+  - The purchase price paid in cash at the closing settlement
+  - The value of personal property transferred with the realty
+  - The amount of any prior mortgage assumed by the grantee
+  - The amount of liens for real property taxes for the current year
+key: D
+explanation: The statute explicitly excludes liens for real property taxes from consideration when
+  calculating the realty transfer fee. Therefore, the amount of liens for real property taxes for
+  the current year is not part of the consideration. The purchase price paid in cash is included in
+  consideration as the actual amount of money paid for the transfer.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 15 § 46:15-5(c)
+  url: null
+  quoted_text: The amount of liens for real property taxes, water or sewerage charges for the current
+    or any subsequent year, or by way of added assessment or other adjustment, as well as of other
+    like liens or encumbrances of a current and continuing nature ordinarily adjusted between the
+    parties according to the period of ownership shall be excluded as an element in determining the
+    consideration, notwithstanding that such amount is to be paid by the grantee.
+  secondary: []
+terms:
+  - consideration
+  - lien
+  - exclusion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

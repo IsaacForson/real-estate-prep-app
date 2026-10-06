@@ -1,0 +1,49 @@
+id: SD-21A-0206
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker's written employment contract authorizes retention of a principal's funds until final
+  settlement. The broker accepts the purchase contract on a Thursday, September 5, 2024. Assuming no
+  holidays, on what date must the broker deposit the funds into a special trust account at a
+  federally insured financial institution?
+options:
+  - September 5, 2024
+  - September 7, 2024
+  - September 8, 2024
+  - September 6, 2024
+key: D
+explanation: The broker must deposit the money on the first legal banking day after contract
+  acceptance. Acceptance on Thursday, September 5, 2024 makes Friday, September 6, 2024 the first
+  subsequent banking day. The option September 5, 2024 is the acceptance date itself, not the day
+  after.
+citation:
+  source: S.D. Codified Laws § 36-21A-80
+  url: null
+  quoted_text: shall deposit the money in a federally insured financial institution in a special trust
+    account on the first legal banking day after the acceptance of the contract
+  secondary: []
+math:
+  worked_solution: "Acceptance date: September 5, 2024. Next calendar day: September 6, 2024. Assuming
+    September 6, 2024 is a legal banking day and no holidays, that is the first legal banking day
+    after acceptance."
+  formulas:
+    - DepositDate = AcceptanceDate + 1 business day (assuming next day is a banking day)
+  onscreen_calculator_only: false
+terms:
+  - deposit
+  - trust account
+  - acceptance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,52 @@
+id: UT-101-0332
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Utah Admin. Code R162-2f-102, how is an 'expired license' defined?
+options:
+  - A license that is not renewed pursuant to Section 61-2f-204 and Section R162-2f-204 by the close
+    of business on the expiration date if the division is open, or by the next business day if the
+    division is closed.
+  - A license that is not renewed pursuant to Section 61-2f-204 and Section R162-2f-204 by the close
+    of business on the expiration date regardless of whether the division is open.
+  - A license that is not renewed pursuant to Section 61-2f-204 and Section R162-2f-204 by the next
+    business day following the expiration date regardless of division status.
+  - A license that is not renewed pursuant to Section 61-2f-204 and Section R162-2f-204 by the close
+    of business on the expiration date only if the division is closed.
+key: A
+explanation: Under Utah Admin. Code R162-2f-102(18)(a)-(b), an expired license is defined as a
+  license not renewed by the close of business on the expiration date when the division is open, or
+  by the next business day when the division is closed. The option that states the deadline is the
+  close of business on the expiration date regardless of division status incorrectly ignores the
+  division’s status, making it incorrect.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-102
+  url: null
+  quoted_text: '(18) "Expired license" means a license that is not renewed pursuant to Section
+    61-2f-204 and Section R162-2f-204 by: (a) the close of business on the expiration date, if the
+    expiration date falls on a day when the division is open for business; or (b) the next business
+    day following the expiration date, if the expiration date falls on a day when the division is
+    closed.'
+  secondary: []
+terms:
+  - expired license
+  - business day
+  - division
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,42 @@
+id: KS-3034-0283
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives an earnest money check on Tuesday. The purchase agreement, signed by all
+  parties that day, includes a written agreement stating that the earnest money must be deposited on
+  the date specified in the agreement, which is two business days after signing. Under Kan. Stat.
+  Ann. § 58-3062(a)(19), by what date must the licensee deposit the earnest money?
+options:
+  - On the following Friday
+  - On the following Thursday
+  - On the following Saturday
+  - On the following Wednesday
+key: B
+explanation: When a written agreement provides a deposit date, the licensee must deposit on that
+  date. Two business days after Tuesday is Thursday, so the deposit is due Thursday. The Wednesday
+  option assumes only one business day, which contradicts the written agreement.
+citation:
+  source: Kan. Stat. Ann. § 58-3062 — K.S.A. Kan. Stat. Ann. § 58-3062 — Prohibited acts (a)(19)
+  url: null
+  quoted_text: unless otherwise specifically provided by written agreement of all parties to the
+    purchase agreement or lot reservation agreement, in which case the licensee shall deposit the
+    check or cash received on the date provided by such written agreement.
+  secondary: []
+terms:
+  - earnest money
+  - written agreement
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

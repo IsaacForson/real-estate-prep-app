@@ -1,0 +1,42 @@
+id: DE-2901-0235
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a licensee requests a continuance of the hearing date after receiving a temporary
+  suspension order, how long may the suspension remain in effect under Del. Code Ann. tit. 24, ch.
+  29 § 2915(a)?
+options:
+  - Until 90 days have passed from the issuance of the order
+  - Until the Commission convenes and renders a decision
+  - Until 60 days have passed from the issuance of the order
+  - Until 30 days have passed from the issuance of the order
+key: B
+explanation: If a continuance is requested, the temporary suspension stays in effect until the
+  Commission convenes and renders a decision, per §2915(a). A fixed day limit such as 30 days only
+  applies when no continuance is requested.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2915(a)
+  url: null
+  quoted_text: If the temporarily suspended licensee requests a continuance, the order of temporary
+    suspension remains in effect until the Commission convenes and a decision is rendered.
+  secondary: []
+terms:
+  - continuance
+  - suspension
+  - hearing
+  - decision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

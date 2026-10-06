@@ -1,0 +1,46 @@
+id: IL-2000-0364
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee places an online advertisement for a residential property that includes only the
+  licensee's name and phone number, with no mention of the sponsoring broker's business name or a
+  link to required disclosures. Under the Illinois Real Estate License Act of 2000, this
+  advertisement is:"
+options:
+  - It is permissible because the licensee disclosed the property details to the public.
+  - It is a blind advertisement because it omits the sponsoring broker's name and disclosure link.
+  - It is permissible if the licensee is acting as a residential leasing agent for the owner.
+  - It is not an advertisement because it lacks the sponsoring broker's identification.
+key: B
+explanation: The Act defines a blind advertisement as any electronic advertisement that does not
+  include the sponsoring broker's complete business name or does not provide a direct link to a
+  display with all required disclosures. The described online ad lacks both, making it a blind
+  advertisement. The other options incorrectly assert permissibility or mischaracterize the nature
+  of the communication.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) Sec. 1-10
+  url: null
+  quoted_text: does not include the sponsoring broker's complete business name or, in the case of
+    electronic advertisements, does not provide a direct link to a display with all the required
+    disclosures.
+  secondary: []
+terms:
+  - blind advertisement
+  - sponsoring broker
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

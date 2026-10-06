@@ -1,0 +1,55 @@
+id: DC-198-0280
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A judgment creditor has investigated the judgment debtor's assets and found $5,000 of personal
+  property. After selling the property, the creditor realizes $5,000, leaving an unpaid balance of
+  $7,000 on a $12,000 judgment. Assuming the creditor has filed the required affidavit, is the
+  creditor eligible to file an application for payment from the Fund under D.C. Code §
+  42-1707(b)(3)?
+options:
+  - Yes, because the investigation showed insufficient assets to satisfy the judgment after applying
+    the realized proceeds
+  - No, because the creditor did not exhaust all possible assets before seeking payment
+  - Yes, but only if the creditor first obtains a court order authorizing the sale
+  - No, because any discovered assets automatically disqualify the creditor from receiving Fund
+    payment
+key: A
+explanation: Under D.C. Code § 42-1707(b)(3), if an investigation discloses assets, the creditor
+  must have taken all necessary action to sell or apply them, and the amount realized must be
+  insufficient to satisfy the judgment. Here the creditor sold the $5,000 of personal property and
+  the remaining unpaid balance is $7,000, so the requirement is met.
+citation:
+  source: D.C. Code § 42-1707(b)(3)
+  url: null
+  quoted_text: if the investigation has disclosed the existence of real or personal property or other
+    assets (which shall be described in the affidavit) the person has taken all action necessary for
+    the sale or application, and the amount so realized is insufficient to satisfy the judgment
+    (which amount shall have been stated in the affidavit together with the balance remaining due on
+    the judgment after the sale or application)
+  secondary: []
+math:
+  worked_solution: "Judgment amount: $12,000. Realized proceeds from sale of assets: $5,000. Unpaid
+    balance = Judgment amount - Realized proceeds = $12,000 - $5,000 = $7,000."
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - assets
+  - investigation
+  - judgment
+  - affidavit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

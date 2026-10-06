@@ -1,0 +1,52 @@
+id: NAT-PSI-III-0875
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $350,000, the county assesses at 50 percent of market value,
+  and there is a $15,000 homestead exemption. If the tax rate is 20 mills, what is the annual
+  property tax?
+options:
+  - $3,200
+  - $3,600
+  - $2,400
+  - $2,800
+key: A
+explanation: Assessed value is $350,000 × 0.50 = $175,000. Subtracting the $15,000 exemption gives a
+  taxable value of $160,000. At 20 mills (0.020), the tax is $160,000 × 0.020 = $3,200.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 3.3 Assessed value and
+    mill rates"
+  url: null
+  quoted_text: "Tax equals assessed value, less exemptions such as a homestead exemption, multiplied
+    by the tax rate. Rates are commonly expressed in mills: one mill is one-thousandth of a dollar
+    ($0.001), or $1 of tax per $1,000 of assessed value, so 25 mills equals $25 per $1,000, or 2.5
+    percent."
+  secondary: []
+math:
+  worked_solution: Assessed value = $350,000 × 0.50 = $175,000; Taxable value = $175,000 − $15,000 =
+    $160,000; Tax rate in decimal = 20 mills ÷ 1000 = 0.020; Annual tax = $160,000 × 0.020 = $3,200.
+  formulas:
+    - Assessed value = Market value × Assessment ratio
+    - Taxable value = Assessed value − Exemptions
+    - Tax = Taxable value × (Mill rate / 1000)
+  onscreen_calculator_only: false
+terms:
+  - assessed
+  - exemption
+  - mill
+  - tax
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

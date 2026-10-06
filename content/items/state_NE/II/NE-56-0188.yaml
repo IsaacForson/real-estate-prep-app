@@ -1,0 +1,44 @@
+id: NE-56-0188
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An unlicensed assistant provides a list of potential buyers to a broker and makes initial
+  contact, but during the conversation discusses the buyer's motivation and the price they are
+  willing to offer. According to the Nebraska Real Estate License Act, what is the result?
+options:
+  - The unlicensed assistant is not exempt because they failed to disclose their employer
+  - The unlicensed assistant is exempt because they identified themselves and the broker at the
+    start of contact
+  - The unlicensed assistant is not exempt because they discussed the buyer's motivation and price
+  - The unlicensed assistant is exempt from licensing because they only provided a list of potential
+    buyers
+key: C
+explanation: The exemption for unlicensed persons who provide lists of potential purchasers
+  prohibits discussing the client's motivation, motivating factors, or price the client is willing
+  to offer or accept. Since the assistant discussed motivation and price, the exemption does not
+  apply and a license is required.
+citation:
+  source: Neb. Rev. Stat. § 81-885 et seq. — Nebraska Real Estate License Act, Neb. Rev. Stat. §§
+    81-885 to 81-885.56 — NREC License Manual, Aug. 2026 ed. (OCR of scanned PDF) — § 81-885.04
+  url: null
+  quoted_text: The unlicensed person acting under this exemption may not discuss with such potential
+    client or customer the client's or customer's motivation, motivating factors, or price such
+    potential client or customer is willing to offer or accept.
+  secondary: []
+terms:
+  - unlicensed person
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

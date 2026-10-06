@@ -1,0 +1,48 @@
+id: SD-21A-0165
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice of the required terms and conditions of errors and omissions
+  coverage on May 10. If the biennial license renewal date is July 20, how many days before the
+  renewal date was the notice given?
+options:
+  - 81 days
+  - 51 days
+  - 71 days
+  - 61 days
+key: C
+explanation: The notice was given on May 10 and the renewal date is July 20, which is 71 days prior.
+  This satisfies the statutory requirement of at least thirty days notice. The distractor "61 days"
+  results from mistakenly counting only the days in May and June, omitting the July days.
+citation:
+  source: S.D. Codified Laws § 36-21A-122
+  url: null
+  quoted_text: Each licensee shall be notified of the required terms and conditions of coverage at
+    least thirty days before the biennial license renewal date.
+  secondary: []
+math:
+  worked_solution: |-
+    May: 31 - 10 = 21 days
+    June: 30 days
+    July: 20 days
+    Total: 21 + 30 + 20 = 71 days
+  formulas:
+    - Days = (Renewal date - Notice date)
+  onscreen_calculator_only: false
+terms:
+  - notice
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

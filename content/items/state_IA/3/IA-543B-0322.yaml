@@ -1,0 +1,41 @@
+id: IA-543B-0322
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A civil lawsuit subpoenas the Iowa Real Estate Commission for all complaint files related to a
+  licensee. Under Iowa Admin. Code r. 481-2018.8, how may the commission respond to the subpoena?
+options:
+  - The commission may release only non‑confidential information.
+  - The commission must notify the licensee before any release.
+  - The commission may assert confidentiality and refuse to comply.
+  - The commission must produce the files despite the subpoena request.
+key: C
+explanation: The rule declares complaint and investigative information privileged and confidential,
+  not subject to discovery or subpoena, so the commission may assert confidentiality and refuse to
+  comply. The distractor stating the commission must produce the files contradicts the
+  confidentiality provision.
+citation:
+  source: Iowa Admin. Code r. 481-2018.8
+  url: null
+  quoted_text: All complaint and investigative information received or created by the commission is
+    privileged and confidential pursuant to Iowa Code section 272C.6(4) and as such is not subject
+    to discovery, subpoena, or other means of legal compulsion for release
+  secondary: []
+terms:
+  - confidentiality
+  - subpoena
+  - privilege
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

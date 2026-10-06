@@ -1,0 +1,40 @@
+id: DC-198-0303
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under D.C. Code § 42-3404.09(d)(3), what is the maximum number of days before issuing an offer
+  of sale that an owner may serve a tenant with a notice of intent to sell, demolish, or discontinue
+  the housing use of a single-family accommodation?
+options:
+  - 30 days
+  - 60 days
+  - 90 days
+  - 120 days
+key: B
+explanation: The statute explicitly states that an owner may not serve such notice more than 60 days
+  before issuing the offer of sale, making 60 days the maximum permissible period.
+citation:
+  source: D.C. Code § 42-3404.09(d)(3)
+  url: null
+  quoted_text: An owner may not serve a tenant with notice of intent to sell, demolish, or discontinue
+    the housing use of the single-family accommodation pursuant to this subsection more than 60 days
+    before issuing the offer of sale.
+  secondary: []
+terms:
+  - notice
+  - intent
+  - sale
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

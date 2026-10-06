@@ -1,0 +1,40 @@
+id: SC-57-0271
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A person advertises real estate services to the public without holding an active license.
+  Under S.C. Code Ann. § 40-57-20, this conduct is:"
+options:
+  - Permissible under supervision
+  - Allowed after a disclaimer
+  - Unlawful under the statute
+  - Lawful if no fee charged
+key: C
+explanation: The statute declares it unlawful to act as a broker, associate, or property manager or
+  to advertise or provide such services without an active, valid license. Advertising without a
+  license therefore falls under the prohibition.
+citation:
+  source: S.C. Code Ann. § 40-57-20
+  url: null
+  quoted_text: It is unlawful for an individual to act as a real estate broker, real estate associate,
+    or real estate property manager or to advertise or provide services as such without an active,
+    valid license issued by the commission.
+  secondary: []
+terms:
+  - license
+  - unlawful
+  - advertise
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

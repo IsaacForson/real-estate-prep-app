@@ -1,0 +1,42 @@
+id: AZ-20-0348
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is accused of violating Arizona real estate law in Pima County. The commissioner
+  has received a written request to prosecute. Under Arizona law, who is responsible for prosecuting
+  the violation?
+options:
+  - The Pima County Attorney
+  - The Arizona Attorney General
+  - The commissioner personally
+  - The Maricopa County Attorney
+key: A
+explanation: Subsection A of Ariz. Rev. Stat. § 32-2160 provides that the county attorney of the
+  county where a violation occurs shall, upon the written request of the commissioner or the
+  attorney general, prosecute the violation. Because the alleged violation occurred in Pima County
+  and the commissioner has made a written request, the Pima County Attorney handles prosecution. The
+  Arizona Attorney General does not prosecute directly; the commissioner does not prosecute
+  personally; and Maricopa County is irrelevant to the venue of the violation.
+citation:
+  source: Ariz. Rev. Stat. § 32-2160(A)
+  url: null
+  quoted_text: The county attorney of any county in which a violation occurs shall, upon the written
+    request of the commissioner or the attorney general, prosecute the violation.
+  secondary: []
+terms:
+  - prosecution
+  - county attorney
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,42 @@
+id: MA-87D-0335
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson in Massachusetts receives a commission directly from a buyer for helping locate
+  a property, without involving her sponsoring broker. Under Massachusetts law, what is the
+  consequence?
+options:
+  - The salesperson must remit the commission to her sponsoring broker; accepting it directly
+    violates the law.
+  - The salesperson may keep the commission as long as she reports it to her broker.
+  - The salesperson may accept the commission if she also holds a broker license.
+  - The salesperson may accept the commission if the buyer agrees in writing.
+key: A
+explanation: The statute expressly forbids a salesman from accepting any fee, commission, or other
+  valuable consideration from anyone except his licensed broker. Receiving a commission directly
+  from a buyer therefore violates the law and the commission must be turned over to the sponsoring
+  broker. The other options incorrectly suggest exceptions that the law does not provide.
+citation:
+  source: M.G.L. c. 112, § 87RR
+  url: null
+  quoted_text: nor shall any salesman be entitled to any fee, commission or other valuable
+    consideration or solicit or accept the same from any person except his licensed broker in
+    connection with any such agreement or transaction.
+  secondary: []
+terms:
+  - salesman
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

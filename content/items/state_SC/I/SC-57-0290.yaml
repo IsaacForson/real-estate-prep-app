@@ -1,0 +1,43 @@
+id: SC-57-0290
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker submits the renewal fee but does not submit the required criminal background check by
+  the renewal date. What is the immediate status of the license?
+options:
+  - Active
+  - Inactive
+  - Revoked
+  - Suspended
+key: B
+explanation: The statute provides that failing to submit the required criminal background check by
+  the renewal date results in the license being placed on inactive status immediately. Therefore,
+  the correct answer is Inactive. The distractor Revoked is incorrect because revocation is a more
+  severe penalty that does not arise solely from this omission.
+citation:
+  source: S.C. Code Ann. § 40-57 (Title 40, ch. 57 — Real Estate Brokers, Brokers-in-Charge,
+    Associates, and Property Managers) — South Carolina Code of Laws Title 40, Chapter 57 — Real
+    Estate Brokers, Brokers-in-Charge, Associates, and Property Managers — § 40-57-340
+  url: null
+  quoted_text: A broker or associate who fails to submit to criminal background check requirements of
+    this section or complete the continuing education requirements of this section by the date of
+    license renewal may renew by submitting applicable fees but immediately must be placed on
+    inactive status.
+  secondary: []
+terms:
+  - criminal background check
+  - inactive status
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

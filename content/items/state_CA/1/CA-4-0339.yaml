@@ -1,0 +1,50 @@
+id: CA-4-0339
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: Broker Alex acts as a salesperson for Broker Bella under a written agreement. Bella is
+  licensed to conduct real estate activity at her main office in San Diego and also at a branch
+  office in Los Angeles where she holds a branch office license. According to Cal. Code Regs. tit.
+  10, § 2728.5, at which locations may Alex perform acts for which a real estate license is required
+  on behalf of Bella?
+options:
+  - Alex may perform acts only at Bella's branch office in Los Angeles.
+  - Alex may perform acts nowhere unless he obtains his own broker license.
+  - Alex may perform acts at any location where Bella is licensed to perform acts.
+  - Alex may perform acts only at Bella's main office in San Diego.
+key: C
+explanation: Under Cal. Code Regs. tit. 10, § 2728.5, a broker who acts as a salesperson for another
+  broker under a written agreement may perform any act requiring a real estate license on behalf of
+  that broker at any location where the responsible broker is licensed to conduct real estate
+  activity. Therefore, Alex may perform licensed acts at both Bella's main office in San Diego and
+  her branch office in Los Angeles, making the option stating that Alex may act at any location
+  where Bella is licensed correct. The option limiting Alex to only the branch office is too
+  restrictive, the option requiring Alex to obtain his own broker license is unnecessary because he
+  is operating under Bella's license, and the option limiting Alex to only the main office ignores
+  Bella's branch office license.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2728.5
+  url: null
+  quoted_text: A real estate broker acting in the capacity of a salesperson to another broker under
+    written agreement may perform acts for which a license is required on behalf of the responsible
+    broker at any place of business at which the responsible broker is currently licensed to perform
+    acts for which a real estate license is required.
+  secondary: []
+terms:
+  - broker
+  - salesperson
+  - branch office
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

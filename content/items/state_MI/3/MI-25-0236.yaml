@@ -1,0 +1,42 @@
+id: MI-25-0236
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A right-to-list home sale agreement includes an early termination option allowing the owner to
+  terminate by paying the broker the initial consideration, but the explanation of the early
+  termination option appears on page 2 of the agreement. Under Michigan's occupational code, what is
+  the status of this agreement?
+options:
+  - The agreement is enforceable because the early termination consideration meets the statutory
+    limit
+  - The agreement is void and unenforceable because the term exceeds two years
+  - The agreement is enforceable because the term is under two years
+  - The agreement is void and unenforceable because the early termination explanation is not on the
+    first page
+key: D
+explanation: The agreement fails to satisfy MCL 339.2512g(1)(d)(ii), which requires the explanation
+  of the early termination option to appear on the first page. Because that requirement is missing,
+  the agreement is void and unenforceable regardless of the term length or consideration amount.
+citation:
+  source: Mich. Comp. Laws § 339.2512g(1)(d)(ii)
+  url: null
+  quoted_text: an explanation of the early termination option on the first page of the agreement in a
+    conspicuous manner.
+  secondary: []
+terms:
+  - right-to-list
+  - home sale agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

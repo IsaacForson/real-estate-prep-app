@@ -1,0 +1,59 @@
+id: IN-1-0338
+jurisdiction: IN
+bank: state_IN
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A listing broker receives final acceptance of an offer to purchase on Tuesday, April 2. The
+  following Wednesday, April 3, is a bank holiday, and Thursday, April 4, is also a bank holiday.
+  Assuming the next two banking days after acceptance are Friday, April 5 and Monday, April 8, by
+  what date must the broker deposit the earnest money received in connection with the transaction?
+options:
+  - April 8
+  - April 5
+  - April 4
+  - April 9
+key: A
+explanation: According to 876 IAC 8-2-2(a), the broker must deposit the earnest money on or before
+  the next two banking days after final acceptance. Since April 3 and April 4 are holidays
+  (non‑banking days), the first banking day is April 5 and the second is April 8. Thus the latest
+  permissible deposit date is April 8. The other options either represent only the first banking
+  day, a date after the second banking day, or a holiday.
+citation:
+  source: 876 Ind. Admin. Code 8 — 876 IAC Article 8 — Article 8 (Indiana Real Estate Commission
+    rules; official iac.iga.in.gov 2024 edition PDF read via Internet Archive capture of 2024-02-14
+    because iga.in.gov now serves the IAC only through a JavaScript app and in.gov refuses
+    connections from this environment) — § 8-2-2(a)
+  url: null
+  quoted_text: "The listing broker shall, on or before the next two (2) banking days after final
+    acceptance of the offer to purchase, do one (1) of the following:"
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Acceptance date is Tuesday, April 2.
+    Step 2: Identify banking days (days when banks are open).
+    Step 3: Wednesday, April 3 is a bank holiday → not a banking day.
+    Step 4: Thursday, April 4 is a bank holiday → not a banking day.
+    Step 5: Friday, April 5 is a banking day → first banking day.
+    Step 6: Saturday, April 6 and Sunday, April 7 are weekends → not banking days.
+    Step 7: Monday, April 8 is a banking day → second banking day.
+    Step 8: Therefore, the broker must deposit the earnest money on or before Monday, April 8.
+  formulas:
+    - Deposit date = acceptance date + number of calendar days needed to accumulate two banking
+      days, skipping non‑banking days
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - banking day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

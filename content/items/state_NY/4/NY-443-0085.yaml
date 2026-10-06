@@ -1,0 +1,53 @@
+id: NY-443-0085
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "4"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate broker is purchasing a condominium unit for a client and holds a 12% ownership
+  interest in the unit. According to New York regulation, when must the broker disclose this
+  interest to the parties involved?
+options:
+  - The broker must disclose the interest to all parties before proceeding with the purchase
+  - The broker must disclose the interest only to the client before proceeding with the purchase
+  - The broker must disclose the interest to all parties after closing before proceeding with the
+    purchase
+  - The broker must not disclose the interest if it is less than 10% before proceeding with the
+    purchase
+key: A
+explanation: The regulation requires the broker to disclose any ownership interest to all parties
+  before moving forward with the purchase; therefore the option stating that the broker must
+  disclose the interest to all parties before proceeding is correct. Options that limit disclosure
+  to the client, allow nondisclosure for small interests, or delay disclosure until after closing do
+  not satisfy the rule.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 175.5
+  url: null
+  quoted_text: Before a real estate broker buys property for a client in the ownership of which the
+    broker has an interest, he shall disclose his interest to all parties to the transaction.
+  secondary: []
+math:
+  worked_solution: The broker's ownership interest is given as 12%. The regulation requires disclosure
+    when the broker has any ownership interest (greater than 0%). Since 12% > 0%, disclosure is
+    required before proceeding.
+  formulas:
+    - Disclosure required if ownership interest > 0%
+  onscreen_calculator_only: false
+terms:
+  - broker
+  - interest
+  - disclosure
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,38 @@
+id: TX-1101-0307
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: What is the maximum number of days after a closing that an advertisement may mention the
+  property without needing to include the property's current status under TREC rule §535.155(d)(15)?
+options:
+  - 5 days
+  - 9 days
+  - 10 days
+  - 15 days
+key: B
+explanation: The rule permits advertising about a property without the current status only for fewer
+  than 10 days after closing; thus the maximum allowable is 9 days. The distractor of 10 days is
+  wrong because at 10 days or more the current status must be included.
+citation:
+  source: 22 Tex. Admin. Code § 535.155(d)(15)
+  url: null
+  quoted_text: about a property 10 days or more after the closing of a transaction unless the current
+    status of the property is included in the advertisement
+  secondary: []
+terms:
+  - advertisement
+  - closing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,54 @@
+id: CA-4-0310
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An association's budgeted gross expenses for the fiscal year are $400,000. It proposes a
+  special assessment of $18,000 to fund new landscaping across the property (not for repair or
+  rebuilding). Under Cal. Bus. & Prof. Code § 11265(a)(6)(A), may this special assessment be imposed
+  without a vote of the owners other than the developer?
+options:
+  - The special assessment is not permissible without a vote because all special assessments require
+    a vote.
+  - The special assessment is not permissible without a vote because it exceeds 5 percent of the
+    budgeted gross expenses.
+  - The special assessment is permissible without a vote because it does not exceed 10 percent of
+    the budgeted gross expenses.
+  - The special assessment is permissible without a vote because it does not exceed 5 percent of the
+    budgeted gross expenses.
+key: D
+explanation: Five percent of $400,000 is $20,000; the proposed $18,000 assessment is below this
+  threshold, so it may be imposed without a vote. The option citing a 10 percent limit incorrectly
+  applies the rule for repair-or-rebuild special assessments under subsection (B).
+citation:
+  source: Cal. Bus. & Prof. Code § 11265(a)(6)(A)
+  url: null
+  quoted_text: Special assessments against all time-share interest owners in the time-share plan,
+    other than a special assessment to restore or rebuild because of damage or destruction to an
+    accommodation, which in the aggregate in any fiscal year do not exceed 5 percent of the budgeted
+    gross expenses of the association for that fiscal year.
+  secondary: []
+math:
+  worked_solution: "Calculate 5% of $400,000: $400,000 × 0.05 = $20,000. Compare the proposed
+    assessment $18,000 to the 5% limit: $18,000 < $20,000, so the assessment is allowed without a
+    vote."
+  formulas:
+    - Percentage Calculation
+  onscreen_calculator_only: false
+terms:
+  - special assessment
+  - budget
+  - vote
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

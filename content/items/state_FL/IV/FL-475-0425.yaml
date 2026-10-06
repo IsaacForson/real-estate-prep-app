@@ -1,0 +1,42 @@
+id: FL-475-0425
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salaried employee of an apartment community owner works in the onsite rental office handling
+  leasing of units. According to Florida law, is this employee exempt from the real estate licensing
+  requirement?
+options:
+  - The employee is exempt because the work is limited to onsite leasing
+  - The employee is not exempt because leasing activities require a license
+  - The employee is exempt only if also holding a broker license
+  - The employee is not exempt because the exemption applies only to public utility employees
+key: A
+explanation: The law exempts any salaried employee of an owner who works in an onsite rental office
+  in a leasing capacity. The other options misstate the scope of the exemption or add unnecessary
+  conditions.
+citation:
+  source: Fla. Stat. § 475.011(4)
+  url: null
+  quoted_text: Any salaried employee of an owner, or of a registered broker for an owner, of an
+    apartment community who works in an onsite rental office of the apartment community in a leasing
+    capacity.
+  secondary: []
+terms:
+  - salaried employee
+  - apartment community
+  - onsite rental office
+  - leasing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

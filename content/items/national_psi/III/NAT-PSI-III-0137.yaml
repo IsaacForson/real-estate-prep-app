@@ -1,0 +1,52 @@
+id: NAT-PSI-III-0137
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A rental property has potential gross income of $250,000, vacancy and collection loss of 8
+  percent, other income of $5,000, and operating expenses of $90,000. What is the net operating
+  income (NOI)?
+options:
+  - $145,000
+  - $140,000
+  - $135,000
+  - $155,000
+key: A
+explanation: "Net operating income is found by starting with the property’s potential gross income,
+  subtracting the vacancy and collection loss, adding any other income, and then subtracting
+  operating expenses. Applying the numbers: $250,000 potential gross income minus 8% vacancy
+  ($20,000) gives $230,000; add $5,000 other income for $235,000 effective gross income; subtract
+  $90,000 operating expenses yields $145,000 NOI. The option that states $140,000 leaves out the
+  $5,000 of other income, so it is incorrect."
+citation:
+  source: REP Ref. Valuation & Appraisal § 9.2
+  url: null
+  quoted_text: Subtract operating expenses to reach net operating income (NOI).
+  secondary: []
+math:
+  worked_solution: "1. Calculate vacancy and collection loss: $250,000 × 0.08 = $20,000. 2. Subtract
+    loss from potential gross income: $250,000 - $20,000 = $230,000 (gross income after vacancy). 3.
+    Add other income: $230,000 + $5,000 = $235,000 effective gross income. 4. Subtract operating
+    expenses: $235,000 - $90,000 = $145,000 net operating income."
+  formulas:
+    - Vacancy and Collection Loss = Potential Gross Income × Vacancy Rate
+    - Effective Gross Income = Potential Gross Income - Vacancy and Collection Loss + Other Income
+    - Net Operating Income = Effective Gross Income - Operating Expenses
+  onscreen_calculator_only: false
+terms:
+  - net operating income
+  - potential gross income
+  - vacancy and collection loss
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

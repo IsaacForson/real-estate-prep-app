@@ -1,0 +1,46 @@
+id: WI-452-0023
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A deed conveys property to “John and Jane, husband and wife” but also states they hold the
+  property “as tenants in common.” Under Wis. Stat. § 700.19(2), what is the resulting ownership?
+options:
+  - They are joint tenants with right of survivorship.
+  - They are tenants in common holding equal undivided interests.
+  - They are joint tenants unless the deed states otherwise.
+  - They are tenants in common only if a written agreement exists.
+key: B
+explanation: Under Wis. Stat. § 700.19(2), persons described as husband and wife are presumed joint
+  tenants unless the deed expresses an intent to create a tenancy in common. The deed’s language “as
+  tenants in common” expresses that intent, overriding the presumption. Consequently, they hold the
+  property as tenants in common. In the absence of a specified share, § 700.20 presumes equal
+  undivided interests, making the statement that they are tenants in common holding equal undivided
+  interests correct.
+citation:
+  source: Wis. Stat. ch. 700 — Wisconsin Statutes Chapter 700, official Wisconsin Legislature PDF read
+    via Internet Archive capture (2025–2026) because docs.legis.wisconsin.gov refuses connections
+    from this network — § 700.19(2)
+  url: null
+  quoted_text: |-
+    they are joint tenants, unless the intent to create a tenancy in com-
+    mon is expressed in the document, instrument or bill of sale
+  secondary: []
+terms:
+  - husband
+  - wife
+  - joint tenancy
+  - tenancy in common
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

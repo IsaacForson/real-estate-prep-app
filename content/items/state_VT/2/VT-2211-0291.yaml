@@ -1,0 +1,42 @@
+id: VT-2211-0291
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a request from the buyer to withdraw funds from an earnest money deposit for
+  repairs; the buyer and seller both provide written agreement to allow the withdrawal before the
+  contract is terminated. Under Vermont law, may the broker honor this withdrawal request?
+options:
+  - Yes, only if the deposit has cleared
+  - No, unless a court orders the withdrawal
+  - Yes, because all parties agreed in writing
+  - No, withdrawals are not allowed before contract ends
+key: C
+explanation: Section 2214(b)(3) prohibits withdrawal of contract deposits unless the contract has
+  been terminated by performance, its own terms, written agreement of all parties, or court order.
+  Since all parties have agreed in writing, the broker may honor the request. The distractor stating
+  withdrawals are prohibited until termination ignores the written‑agreement exception.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2214(b)(3)
+  url: null
+  quoted_text: None of the contract deposits shall be withdrawn until the contract has been terminated
+    by performance, or by operation of its own terms, or by agreement in writing between all parties
+    involved in the contract, or by order of a court of competent jurisdiction.
+  secondary: []
+terms:
+  - withdrawal
+  - written agreement
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

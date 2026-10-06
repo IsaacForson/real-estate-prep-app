@@ -1,0 +1,52 @@
+id: MA-87D-0371
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is fined $1,800 for violating the prohibition against soliciting residential
+  property sales based on the prospective entry of a person of another race, religion, or ethnic
+  origin into the neighborhood. Under M.G.L. c.112 § 87AAA, what is the greatest additional amount
+  that could be added to this fine without exceeding the statutory maximum?
+options:
+  - $900
+  - $500
+  - $700
+  - $1100
+key: C
+explanation: "Under M.G.L. c.112 § 87AAA, a violation of clause (k) may be punished by a fine of not
+  less than $1,000 nor more than $2,500. The licensee has already been fined $1,800, so the most
+  that can be added is the difference between the statutory ceiling and the amount already imposed:
+  $2,500 – $1,800 = $700. Therefore $700 is the greatest additional amount permissible."
+citation:
+  source: M.G.L. c. 112, §§ 87PP–87DDD § 87AAA
+  url: null
+  quoted_text: Whoever violates the provisions of clause (k) shall be punished by a fine of not less
+    than one thousand nor more than twenty-five hundred dollars, or by imprisonment for not more
+    than six months, or both.
+  secondary: []
+math:
+  worked_solution: |-
+    Maximum fine allowed = $2,500
+    Fine already imposed = $1,800
+    Additional amount allowed = Maximum fine – Fine already imposed
+    = $2,500 – $1,800
+    = $700
+  formulas:
+    - Maximum fine – imposed fine = additional allowable fine
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - maximum
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

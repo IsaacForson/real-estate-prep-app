@@ -1,0 +1,48 @@
+id: IA-543B-0350
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker deposits $800 of personal funds into the trust account to cover bank service charges.
+  Later, the broker deposits an additional $300 of personal funds for the same purpose. Is the total
+  deposit of $1,100 permissible under Iowa Code §543B.46(4)?
+options:
+  - The deposit is impermissible because the total exceeds $1,000
+  - The deposit is permissible because each individual deposit is under $1,000
+  - The deposit is impermissible because personal funds are prohibited in trust accounts
+  - The deposit is permissible because the broker may deposit up to $1,500
+key: A
+explanation: Iowa Code §543B.46(4) allows a broker to deposit personal funds into a trust account
+  only up to a total of one thousand dollars to cover bank service charges. The broker deposited
+  $800 and later $300, for a total of $1,100, which exceeds the $1,000 limit. Therefore the deposit
+  is impermissible.
+citation:
+  source: Iowa Code ch. 543B §543B.46(4)
+  url: null
+  quoted_text: with the exception that a broker may deposit and keep a sum not to exceed one thousand
+    dollars in the account from the broker’s personal funds, which sum shall be specifically
+    identified and deposited to cover bank service charges relating to the trust account.
+  secondary: []
+math:
+  worked_solution: 800 + 300 = 1100; 1100 > 1000, so the total exceeds the permitted limit.
+  formulas:
+    - Addition
+    - Comparison to limit
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - personal funds
+  - total
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

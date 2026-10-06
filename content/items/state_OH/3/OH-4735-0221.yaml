@@ -1,0 +1,45 @@
+id: OH-4735-0221
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker who has received superintendent approval to conduct business under the trade names
+  'Lakeview Properties' and 'Riverfront Realty' places a newspaper advertisement for a listing that
+  includes only the name 'Lakeview Properties'. Under Ohio Adm. Code Rule 1301:5-1-02(C)(2), is this
+  advertisement compliant?
+options:
+  - The advertisement is compliant because the broker used an approved trade name
+  - The advertisement is noncompliant because both approved trade names must be used in every
+    advertisement
+  - The advertisement is noncompliant because the broker must also include the brokerage's legal name
+  - The advertisement is noncompliant because the trade name must contain the word 'Realty'
+key: A
+explanation: The rule requires the broker to advertise in at least one of the approved trade names;
+  using 'Lakeview Properties' meets this requirement. The distractor claiming both trade names must
+  be used is incorrect because the rule only mandates at least one approved trade name.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 Rule 1301:5-1-02(C)(2)"
+  url: null
+  quoted_text: such trade names as it appears on the license and addendum issued by the division shall
+    be the identifying name used by such person, partnership, corporation, limited liability
+    company, limited liability partnership or association in all advertising. The licensee must
+    advertise in at least one of the approved trade names as it appears on the license or addendum.
+  secondary: []
+terms:
+  - trade name
+  - advertising
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

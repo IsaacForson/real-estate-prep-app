@@ -1,0 +1,38 @@
+id: NAT-PSI-IV-0883
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower provides the six items needed for a loan application and receives a Loan Estimate
+  but does not indicate intent to proceed. What is the lender prohibited from doing under TILA/RESPA
+  rules?
+options:
+  - Charging most fees
+  - Locking the rate
+  - Ordering an appraisal
+  - Providing disclosures
+key: A
+explanation: Under TILA/RESPA rules, a lender may not charge most fees until the borrower indicates
+  intent to proceed. Providing disclosures is required regardless of intent, so that option is
+  incorrect.
+citation:
+  source: REP Ref. Financing & Closing § 9.2
+  url: null
+  quoted_text: the borrower must indicate intent to proceed before most fees can be charged
+  secondary: []
+terms:
+  - Loan Estimate
+  - intent to proceed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

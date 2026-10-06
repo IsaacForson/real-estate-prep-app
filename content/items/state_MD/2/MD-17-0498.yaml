@@ -1,0 +1,37 @@
+id: MD-17-0498
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum civil penalty the Maryland Real Estate Commission may impose for a first
+  violation of any provision of the Maryland Real Estate Brokers Act?
+options:
+  - $5,000
+  - $10,000
+  - $15,000
+  - $25,000
+key: A
+explanation: The Commission may impose a civil penalty not exceeding $5,000 for a first violation
+  under § 17-613(c)(1)(i). The $10,000 distractor incorrectly doubles the amount, which applies only
+  after multiple violations.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. § 17-613(c)(1)(i)
+  url: null
+  quoted_text: (i) $5,000 for a first violation;
+  secondary: []
+terms:
+  - penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

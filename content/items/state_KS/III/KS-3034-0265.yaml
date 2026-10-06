@@ -1,0 +1,49 @@
+id: KS-3034-0265
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson employed by Broker X also works as a personal assistant for Licensee Y, who is
+  also licensed under Broker X. Broker X has given written consent that the personal assistant may
+  be paid by Licensee Y. May the salesperson accept a commission from Licensee Y for assisting with
+  a transaction?
+options:
+  - The salesperson may accept the commission from Licensee Y under the personal‑assistant exception.
+  - The salesperson may accept the commission only if it comes from the employing broker.
+  - The salesperson may accept the commission only if the amount is less than $500.
+  - The salesperson may accept the commission only if also holding a broker’s license.
+key: A
+explanation: Subsection (b)(1)(A) permits a salesperson to accept a commission from another licensee
+  when that licensee employs the salesperson as a personal assistant, both are supervised by the
+  same broker, and the supervising broker agrees in writing that the assistant may be paid by the
+  licensee. The scenario satisfies all three conditions, making the commission permissible. The
+  option stating that the salesperson may accept the commission only if it comes from the employing
+  broker incorrectly limits commissions to the employing broker, ignoring the statutory exception.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(b)(1)(A)
+  url: null
+  quoted_text: "(A) A salesperson or associate broker may accept a commission or other valuable
+    consideration from a licensee who employs the salesperson or associate broker as a personal
+    assistant provided that: (i) The licensee and the salesperson or associate broker who is
+    employed as a personal assistant are licensed under the supervision of the same broker; and (ii)
+    the supervising broker agrees in writing that the personal assistant may be paid by the
+    licensee."
+  secondary: []
+terms:
+  - salesperson
+  - commission
+  - personal assistant
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

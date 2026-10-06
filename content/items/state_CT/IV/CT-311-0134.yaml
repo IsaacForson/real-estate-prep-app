@@ -1,0 +1,38 @@
+id: CT-311-0134
+jurisdiction: CT
+bank: state_CT
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What do the abbreviations UNK and N/A represent?
+options:
+  - Known and Not Applicable
+  - Unknown and Not Applicable
+  - Unknown and Not Available
+  - Unfamiliar and Not Applicable
+key: B
+explanation: UNK means Unknown and N/A means Not Applicable. The option stating 'Unknown and Not
+  Available' is incorrect because N/A stands for Not Applicable, not Not Available. Conn. Gen. Stat.
+  ch. 392, § 20-327b(h)(1).
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-327b(h)(1)
+  url: null
+  quoted_text: UNK means Unknown, N/A means Not Applicable.
+  secondary: []
+terms:
+  - unk
+  - n/a
+  - abbreviation
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

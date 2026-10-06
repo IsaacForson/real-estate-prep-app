@@ -1,0 +1,52 @@
+id: TX-1101-0303
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker employs an unlicensed assistant who only answers phones and files paperwork, does not
+  engage in any activity requiring a real estate license, and does not hold themselves out as a
+  broker. Under which condition may the broker share a commission with this assistant according to
+  22 Tex. Admin. Code § 535.147(b)?
+options:
+  - Sharing a commission is permitted if the unlicensed assistant performs any act that requires a
+    real estate license
+  - Sharing a commission is permitted if the unlicensed assistant engages in no acts requiring a
+    license and does not represent themselves as a broker
+  - Sharing a commission is permitted if the unlicensed assistant receives a fixed fee instead of a
+    commission share
+  - Sharing a commission is permitted if the unlicensed assistant is a relative of the broker and
+    performs only clerical tasks
+key: B
+explanation: Section 535.147(b) allows commission sharing with an unlicensed person only when they
+  perform no licensed activity and do not hold themselves out as a broker. The correct option states
+  that sharing a commission is permitted if the unlicensed assistant engages in no acts requiring a
+  license and does not represent themselves as a broker; the other options either involve licensed
+  activity or irrelevant factors.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live — § 535.147(b)"
+  url: null
+  quoted_text: (b) An unlicensed person may share in the income earned by a business entity licensed
+    as a broker or exempted from the licensing requirements under the Act if the person engages in
+    no acts for which a license is required and does not lead the public to believe that the person
+    is in the real estate brokerage business.
+  secondary: []
+terms:
+  - unlicensed person
+  - commission sharing
+  - license required
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

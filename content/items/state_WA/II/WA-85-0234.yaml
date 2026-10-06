@@ -1,0 +1,45 @@
+id: WA-85-0234
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An attorney-in-fact acting under a power of attorney receives a commission for negotiating the
+  sale of a client's property. Under RCW 18.85.151 and RCW 18.85.331, what is the consequence?
+options:
+  - They may recover compensation if they can prove they acted in good faith
+  - They cannot recover compensation because they lacked a license at the time of the transaction
+  - They must first obtain a license before the court will hear the case
+  - They may recover compensation only after completing a remedial course
+key: B
+explanation: RCW 18.85.151(2) exempts only attorney-in-facts acting without compensation; receiving
+  a commission removes that exemption. RCW 18.85.331 then bars any suit for compensation by an
+  unlicensed person, so the attorney-in-fact cannot recover compensation. The distractor claiming
+  the exemption applies regardless of compensation ignores the statutory limitation.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.331
+  url: null
+  quoted_text: No suit or action shall be brought for the collection of compensation as a real estate
+    broker, real estate firm, managing broker, or designated broker, without alleging and proving
+    that the plaintiff was a duly licensed real estate broker, managing broker, or real estate firm
+    before the time of offering to perform any real estate transaction or procuring any promise or
+    contract for the payment of compensation for any contemplated real estate transaction.
+  secondary: []
+terms:
+  - attorney-in-fact
+  - commission
+  - license
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

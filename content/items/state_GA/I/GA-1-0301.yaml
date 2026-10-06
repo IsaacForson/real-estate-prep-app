@@ -1,0 +1,40 @@
+id: GA-1-0301
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum fine that may be assessed for a single citation under Ga. Comp. R. & Regs.
+  § 520-1-.14(1)?
+options:
+  - $500.00
+  - $100.00
+  - $5,000.00
+  - $1,000.00
+key: C
+explanation: The rule states that fines for multiple violations are limited to $5,000.00 in any one
+  citation, making this the maximum possible fine for a single citation. A fine of $1,000.00 is the
+  maximum for a single violation, not for the citation as a whole.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live — § 520-1-.14(1)
+  url: null
+  quoted_text: fines for multiple violations limited to $5,000.00 in any one citation.
+  secondary: []
+terms:
+  - fine
+  - citation
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

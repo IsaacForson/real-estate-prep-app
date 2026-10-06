@@ -1,0 +1,47 @@
+id: SC-57-0265
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-in-charge changes the office telephone number on April 2. By what date must the
+  broker-in-charge notify the South Carolina Real Estate Commission of this change under S.C. Code
+  Ann. § 40-57-135(A)(8)?
+options:
+  - April 10
+  - April 12
+  - April 15
+  - April 20
+key: B
+explanation: Under S.C. Code Ann. § 40-57-135(A)(8), a broker‑in‑charge must notify the commission
+  within ten days of any change to the office telephone number. Starting from April 2 and counting
+  ten days forward gives April 12 as the latest day to make the notification. April 10 would be
+  before the ten‑day period ends, while April 15 and April 20 are after the allowed ten days.
+citation:
+  source: S.C. Code Ann. § 40-57-135(A)(8)
+  url: null
+  quoted_text: notify the commission by mail within ten days of any change of office name, address,
+    email address, or telephone number.
+  secondary: []
+math:
+  worked_solution: "1. Identify the change date: April 2.\\n2. Add the required notice period of 10
+    days.\\n3. April 2 + 10 days = April 12."
+  formulas:
+    - "Date addition: new_date = original_date + notice_period"
+  onscreen_calculator_only: false
+terms:
+  - notification
+  - ten days
+  - office change
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

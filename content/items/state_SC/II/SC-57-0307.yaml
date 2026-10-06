@@ -1,0 +1,49 @@
+id: SC-57-0307
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-in-charge opens a trust account for the firm but delegates check-signing authority to
+  an unlicensed office assistant, who then disburses funds to vendors. Is this permissible under §
+  40-57-135(A)(7)?
+options:
+  - Yes, if the broker-in-charge reviews the assistant's actions weekly
+  - Yes, as long as the assistant is supervised by a licensed employee
+  - No, because the broker-in-charge must maintain control of and responsibility for the trust
+    account
+  - No, because trust accounts may only be managed by the broker-in-charge personally
+key: C
+explanation: Under § 40-57-135(A)(7), a broker‑in‑charge must establish and maintain control of and
+  responsibility for an active trust account when holding trust funds belonging to others.
+  Delegating check‑signing authority to an unlicensed office assistant means the broker‑in‑charge no
+  longer has that control, which violates the rule. The first distractor is incorrect because a
+  weekly review of the assistant’s actions does not restore the broker‑in‑charge’s control;
+  responsibility cannot be shifted to an unlicensed person. The second distractor is incorrect
+  because supervision by a licensed employee does not satisfy the requirement that the
+  broker‑in‑charge personally maintain control of the account. The fourth distractor is incorrect
+  because the rule does not require the broker‑in‑charge to perform every task personally; it only
+  requires that the broker‑in‑charge retain control and responsibility, and the prohibition applies
+  specifically to delegating check‑signing to an unlicensed assistant.
+citation:
+  source: S.C. Code Ann. § 40-57-135(A)(7)
+  url: null
+  quoted_text: establish and maintain control of and responsibility for an active trust account when
+    in possession of trust funds belonging to others resulting from a real estate transaction
+  secondary: []
+terms:
+  - trust account
+  - broker-in-charge
+  - control
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

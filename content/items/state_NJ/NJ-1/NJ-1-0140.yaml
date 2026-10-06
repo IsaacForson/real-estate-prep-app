@@ -1,0 +1,47 @@
+id: NJ-1-0140
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A department representative appointed to the New Jersey Real Estate Commission expects to
+  receive an annual salary. Based solely on the statute, is the representative entitled to a salary?
+options:
+  - The representative is entitled to an annual salary of $15,000, as set forth in the commission’s
+    internal compensation policy for the president.
+  - The representative is entitled to an annual salary of $10,000, as set forth in the commission’s
+    internal compensation policy for regular members.
+  - The representative is not entitled to any salary because the statute provides that the
+    department representative serves without compensation.
+  - The representative is entitled to a salary only if they also hold a real estate broker license,
+    according to a common misconception about commission compensation rules.
+key: C
+explanation: The statute explicitly states that the department representative serves without
+  compensation, so no salary is payable. The other options incorrectly assign a salary or add
+  conditions not present in the law.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-6
+  url: null
+  quoted_text: except the department representative who serves without compensation pursuant to
+    section 2 of P.L. 1971, c. 60 (C. 45:1-2.2).
+  secondary: []
+terms:
+  - compensation
+  - department representative
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,41 @@
+id: WY-101-0203
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A Wyoming licensee lists his personal residence for sale and advertises it with the
+  brokerage's company name but does not disclose that he is the owner. Under Wyoming law, this
+  advertisement is:"
+options:
+  - Permissible because the owner is the licensee
+  - Permissible if the licensee's personal name is added
+  - Not permissible because owner license status missing
+  - Permissible because the brokerage name is shown
+key: C
+explanation: The statute requires that when advertising property they own, licensees must include a
+  statement that the owner is a licensee. Merely showing the brokerage name or adding the licensee's
+  personal name does not satisfy this requirement. Therefore the advertisement is not permissible
+  because it omits the required disclosure of owner licensee status.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-119(h)
+  url: null
+  quoted_text: A licensee shall not advertise the sale, purchase, exchange or lease of real estate
+    owned by the licensee unless the advertisement includes the fact that an owner of the real
+    estate is a licensee.
+  secondary: []
+terms:
+  - advertising
+  - ownership disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,57 @@
+id: MN-82-0280
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee has three approved accelerated claims totaling $18,000, $20,000, and $15,000. What
+  is the maximum amount the commissioner may pay under the accelerated claims process, and how must
+  any remaining amount be handled, according to Minn. Stat. § 82.86, Subd. 8?
+options:
+  - $50,000 paid via accelerated process; remaining $3,000 paid under subdivision 7
+  - $53,000 paid via accelerated process; no remaining amount
+  - $48,000 paid via accelerated process; remaining $5,000 paid under subdivision 7
+  - $50,000 paid via accelerated process; remaining $3,000 paid under subdivision 13
+key: A
+explanation: The total of the three claims is $53,000, which exceeds the $50,000 cap for accelerated
+  payments. The commissioner may pay up to $50,000 under the accelerated process, prorating the
+  claims if necessary, and any unpaid portion must be satisfied according to subdivision 7. Thus
+  $50,000 is paid via the accelerated process and the remaining $3,000 is paid under subdivision 7.
+  The distractor offering $53,000 ignores the accelerated‑process limit, while the other distractors
+  miscalculate the total or cite the wrong subdivision for the remainder.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.86, Subd. 8
+  url: null
+  quoted_text: The commissioner may pay claims which total no more than $50,000 against the licensee
+    under this accelerated process. The commissioner may prorate the amount of claims paid under
+    this subdivision if claims in excess of $50,000 against the licensee are submitted. Any unpaid
+    portions of these claims must be satisfied in the manner set forth in subdivision 7.
+  secondary: []
+math:
+  worked_solution: "Step 1: Sum the claim amounts: $18,000 + $20,000 + $15,000 = $53,000. Step 2:
+    Apply the accelerated‑process limit: the commissioner may pay no more than $50,000 under this
+    process. Step 3: Since $53,000 > $50,000, the accelerated payment is $50,000 (claims may be
+    prorated to reach this total). Step 4: Calculate the remainder: $53,000 - $50,000 = $3,000,
+    which must be paid according to subdivision 7."
+  formulas:
+    - Total claims = Σ claim_i; Accelerated payable = min(Total claims, $50,000); Remainder = Total
+      claims - Accelerated payable (if any) to be paid per subdivision 7.
+  onscreen_calculator_only: false
+terms:
+  - accelerated claims
+  - claim limit
+  - subdivision 7
+  - prorate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

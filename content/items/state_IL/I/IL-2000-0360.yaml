@@ -1,0 +1,52 @@
+id: IL-2000-0360
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A sponsoring broker has a current address of record on file with the Department but has not
+  provided an email address. The Department mails the renewal notice for the broker’s sponsored
+  licensees to the address of record. According to the Real Estate License Act of 2000, is the
+  notice considered properly delivered?
+options:
+  - The notice is considered properly delivered because mailing to the sponsor's address of record
+    satisfies the statutory requirement.
+  - The notice is not considered properly delivered because the Department must also email the
+    notice to the sponsor.
+  - The notice is not considered properly delivered because the sponsor must acknowledge receipt
+    before it is valid.
+  - The notice is not considered properly delivered because the statute requires delivery via both
+    mail and email.
+key: A
+explanation: The statute states that the Department shall provide the notice by mailing to the
+  sponsor's address of record or, at its discretion, by emailing to the email address of record.
+  Mailing alone satisfies the requirement, so the notice is properly delivered. The claim that the
+  Department must also email the notice is incorrect because the email option is discretionary, not
+  mandatory.
+citation:
+  source: 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of 2000
+    (full act text; official ilga.gov page read via Internet Archive capture of March 2025 because
+    ilga.gov refuses connections from this environment) — § 5-50(f)
+  url: null
+  quoted_text: The Department shall provide to the sponsoring broker a notice of renewal for all
+    sponsored licensees by mailing the notice to the sponsoring broker's address of record, or, at
+    the Department's discretion, emailing the notice to the sponsoring broker's email address of
+    record.
+  secondary: []
+terms:
+  - notice of renewal
+  - address of record
+  - email discretion
+  - sponsoring broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

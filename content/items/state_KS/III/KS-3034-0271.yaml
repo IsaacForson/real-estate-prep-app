@@ -1,0 +1,42 @@
+id: KS-3034-0271
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller receives notice of cancellation of a real estate purchase agreement on June 1. The
+  seller makes a written demand for forfeiture of the earnest money deposit on June 30. Under Kansas
+  law, is this demand permissible?
+options:
+  - No, because the demand was made after the 45‑day period.
+  - Yes, because the demand was made within the 30‑day period.
+  - No, because the demand was made before the 15‑day period.
+  - Yes, because the demand was made within the 14‑day period.
+key: B
+explanation: Under Kansas law, a written demand for return or forfeiture must be made within 30 days
+  of notice of cancellation to be effective; a demand on June 30 falls within that window, so it is
+  permissible. The distractor claiming the demand was made after the 30‑day period is incorrect
+  because June 30 is still within 30 days of June 1.
+citation:
+  source: Kan. Stat. Ann. § 58-3061(h)
+  url: null
+  quoted_text: failure to make written demand for return or forfeiture of an earnest money deposit
+    within 30 days of notice of cancellation of this agreement shall constitute consent to
+    distribution of the earnest money
+  secondary: []
+terms:
+  - deadline
+  - earnest money
+  - notice of cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

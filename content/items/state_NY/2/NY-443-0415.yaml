@@ -1,0 +1,52 @@
+id: NY-443-0415
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee obtained a signed acknowledgment from a seller on January 10, 2022. Under NY Real
+  Property Law § 443(d), what is the earliest date on which the licensee may first destroy the
+  acknowledgment?
+options:
+  - January 10, 2024
+  - January 10, 2025
+  - January 10, 2023
+  - January 10, 2026
+key: B
+explanation: The law requires the licensee to maintain a copy of the signed acknowledgment for not
+  less than three years. Therefore the acknowledgment may be destroyed only after three full years
+  have elapsed from the date it was obtained. Adding three years to January 10, 2022 yields January
+  10, 2025 as the earliest permissible destruction date. The one‑year option (January 10, 2024)
+  violates the minimum retention period, while the later dates exceed the required minimum and are
+  not the earliest allowable date.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 442-l
+    § 443(d)
+  url: null
+  quoted_text: maintain a copy of the signed acknowledgment for not less than three years.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the date the acknowledgment was obtained: January 10, 2022.
+    Add the required retention period of three years: January 10, 2022 + 3 years = January 10, 2025.
+    The earliest date the acknowledgment may be destroyed is January 10, 2025.
+  formulas:
+    - Date obtained + 3 years = earliest destruction date
+  onscreen_calculator_only: false
+terms:
+  - acknowledgment
+  - retention
+  - year
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

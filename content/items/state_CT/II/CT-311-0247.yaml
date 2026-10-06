@@ -1,0 +1,51 @@
+id: CT-311-0247
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut broker assisted in leasing residential property. The tenant took possession of
+  the leased premises on July 1, 2024. The broker did not provide written notice of the intended
+  signing of the lease at least ten days prior to that signing. The broker recorded the claim for
+  lien on August 10, 2024. Under Conn. Gen. Stat. § 20-325a(h), is the claim for lien valid?
+options:
+  - The claim for lien is valid because it was recorded within thirty days of possession
+  - The claim for lien is invalid because it was recorded after thirty days of possession and no
+    notice was given
+  - The claim for lien is valid because the broker gave notice at least ten days prior to signing
+  - The claim for lien is invalid because the lease is for residential property only
+key: B
+explanation: Subsection (h) requires that, absent a pre‑signing notice, the claim for lien be
+  recorded no later than thirty days after the tenant takes possession. Here possession began July
+  1, 2024, the claim was recorded August 10, 2024 (40 days later), and no notice was given, so the
+  lien is invalid. The distractor asserting validity because the recording was within thirty days is
+  incorrect because the recording occurred after the thirty‑day period.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-325a(h)
+  url: null
+  quoted_text: (h) In the case of a lease for real property where the broker's compensation will not
+    be paid in installments, the claim for lien must be recorded no later than thirty days after the
+    tenant takes possession of the leased premises unless written notice of the intended signing of
+    the lease is delivered to the broker entitled to claim a lien by registered or certified mail,
+    return receipt requested, or by personal service, at least ten days prior to the date of the
+    intended signing of the lease for the real property in which case the claim for lien must be
+    recorded before the date indicated for the signing of the lease in the notice delivered to the
+    broker. The lien shall attach as of the recording of the claim for lien.
+  secondary: []
+terms:
+  - lease
+  - possession
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,45 @@
+id: ME-114-0204
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is applying for renewal and completed 24 clock hours of approved continuing
+  education 18 months ago. Under 32 M.R.S. § 13197(1), is this sufficient to meet the continuing
+  education requirement for renewal?
+options:
+  - The licensee has met the requirement because the hours were completed within the prior 2 years
+    and exceed 21 hours.
+  - The licensee has not met the requirement because at least 21 clock hours must be completed
+    within the 2 years prior to application.
+  - The licensee has met the requirement because any continuing education completed within the last
+    3 years qualifies.
+  - The licensee has not met the requirement because the licensee must complete exactly 21 clock
+    hours.
+key: A
+explanation: The rule demands 21 clock hours of CE completed within the 2 years before the renewal
+  application; 24 hours finished 18 months ago satisfies both the hour and timeframe requirements.
+  The distractor claiming at least 21 hours must be completed within the 2 years prior is actually
+  true but leads to a “no” answer, which is wrong because the condition is met.
+citation:
+  source: 32 M.R.S. § 13197(1)
+  url: null
+  quoted_text: 1. Requirement. As a prerequisite to renewal of a license, applicants must complete 21
+    clock hours of continuing education within 2 years prior to the date of application in programs
+    or courses approved by the commission.
+  secondary: []
+terms:
+  - continuing education
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

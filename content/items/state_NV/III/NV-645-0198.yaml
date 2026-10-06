@@ -1,0 +1,61 @@
+id: NV-645-0198
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee terminates a brokerage agreement with a seller on January 1, 2024. On October 1,
+  2024, the licensee shares the seller's confidential financial information with a coworker without
+  the seller's permission or a court order. According to Nevada law, is the licensee permitted to
+  make this disclosure?
+options:
+  - No, because the one-year confidentiality period has not elapsed and no exception applies
+  - Yes, because the licensee shared the information with a coworker rather than a friend or family
+    member
+  - Yes, because more than six months have passed since the agreement ended
+  - No, because the licensee must first obtain written consent from the broker to disclose any
+    confidential information
+key: A
+explanation: >-
+  Under NRS 645.254, a licensee must not disclose confidential information relating to a client for
+  one year after the termination of a brokerage agreement unless disclosure is required by a court
+  order or the client gives written permission. The brokerage agreement was terminated on January 1,
+  2024, and the disclosure occurred on October 1, 2024—ten months later, which is within the
+  one‑year period. No court order or client permission was obtained, so the disclosure is not
+  permitted.
+
+
+  The option stating that sharing with a coworker makes the disclosure permissible is incorrect
+  because the confidentiality prohibition applies regardless of who receives the information.
+
+
+  The option claiming that more than six months have passed since the agreement ended is incorrect
+  because the confidentiality period lasts one year, not six months.
+
+
+  The option asserting that written consent from the broker is required is incorrect because the
+  exception requires written permission from the client, not the broker.
+citation:
+  source: Nev. Rev. Stat. ch. 645 § 645.254
+  url: null
+  quoted_text: Shall not disclose confidential information relating to a client for 1 year after the
+    revocation or termination of the brokerage agreement, unless he or she is required to do so
+    pursuant to an order of a court of competent jurisdiction or is given written permission to do
+    so by the client;
+  secondary: []
+terms:
+  - confidential information
+  - brokerage agreement
+  - court order
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

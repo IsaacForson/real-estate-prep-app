@@ -1,0 +1,43 @@
+id: AZ-20-0352
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employing broker wishes to assign a real estate employment agreement to another broker.
+  Under Arizona law, what is required for the assignment to be valid?
+options:
+  - Obtain express written consent from all parties at the time of assignment
+  - Obtain verbal consent from the broker assigning the agreement
+  - Obtain consent only from the employing broker who holds the agreement
+  - Obtain consent only from the licensee whose agreement is being assigned
+key: A
+explanation: Under Arizona law, an employing broker may not assign a real estate employment
+  agreement to another broker without the express written consent of all parties to the agreement at
+  the time of assignment (Ariz. Rev. Stat. § 32-2151.02(B)). Therefore, the assignment is valid only
+  when express written consent is obtained from every party involved. Verbal consent does not
+  satisfy this requirement, and consent obtained from only the assigning broker or only the licensee
+  whose agreement is being assigned is insufficient.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151.02(B)
+  url: null
+  quoted_text: B. An employing broker shall not assign a real estate employment agreement to another
+    broker without the express written consent of all parties to the agreement at the time of the
+    assignment.
+  secondary: []
+terms:
+  - employment agreement
+  - assignment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

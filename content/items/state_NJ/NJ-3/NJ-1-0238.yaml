@@ -1,0 +1,43 @@
+id: NJ-1-0238
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum acreage required for land to qualify for farmland assessment under N.J.
+  Stat. Ann. § 54:4-23.2?
+options:
+  - 3 acres
+  - 5 acres
+  - 1 acre
+  - 10 acres
+key: B
+explanation: Under N.J. Stat. Ann. § 54:4-23.2, land must be not less than 5 acres in area to
+  qualify for farmland assessment. The correct answer is 5 acres because the statute establishes
+  this minimum threshold. The distractor of 3 acres is incorrect because the statute does not permit
+  qualification with less than 5 acres, regardless of other factors.
+citation:
+  source: N.J. Stat. Ann. § 54:4-23.2
+  url: null
+  quoted_text: not less than 5 acres in area
+  secondary: []
+math:
+  worked_solution: No calculation is required; the statute directly states the minimum acreage is 5 acres.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - farmland assessment
+  - acre
+  - agricultural use
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

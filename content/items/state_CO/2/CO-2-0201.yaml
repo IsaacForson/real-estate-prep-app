@@ -1,0 +1,40 @@
+id: CO-2-0201
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Colorado law, what is the legal status of a broker who is engaged as a transaction-broker?
+options:
+  - An agent for the buyer only
+  - Not an agent for either party
+  - An agent for the seller only
+  - A dual agent for both parties
+key: B
+explanation: The statute defines a transaction-broker as a broker who is not an agent for either
+  party. Therefore, the correct answer is that the broker is not an agent for either party. The
+  distractors suggesting agency for one party or dual agency are incorrect because the statute
+  expressly denies any agency role.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-407, C.R.S.
+  url: null
+  quoted_text: A broker engaged as a transaction-broker is not an agent for either party.
+  secondary: []
+terms:
+  - transaction-broker
+  - agent
+  - party
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

@@ -1,0 +1,45 @@
+id: OH-4735-0194
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee’s license has been suspended. The renewal fee for the license is $80. If the
+  licensee reactivates the license within twelve months of suspension, what total amount must be
+  paid to the superintendent?
+options:
+  - "080"
+  - "100"
+  - "120"
+  - "140"
+key: C
+explanation: The rule requires payment of the renewal fee plus a penalty fee equal to fifty percent
+  of the renewal fee for reactivation within twelve months of suspension. Fifty percent of $80 is
+  $40, so the total is $80 + $40 = $120.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts § 4735.14(C)
+  url: null
+  quoted_text: A suspended license may be reactivated within twelve months of the date of suspension,
+    provided that the renewal fee plus a penalty fee of fifty per cent of the renewal fee is paid to
+    the superintendent.
+  secondary: []
+math:
+  worked_solution: Renewal fee = $80. Penalty = 50% of $80 = $40. Total amount = $80 + $40 = $120.
+  formulas:
+    - Total = Renewal fee + (0.5 × Renewal fee)
+  onscreen_calculator_only: false
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

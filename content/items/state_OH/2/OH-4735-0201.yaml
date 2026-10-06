@@ -1,0 +1,48 @@
+id: OH-4735-0201
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following correctly defines 'foreign real estate' under Ohio Rev. Code § 4735.01?
+options:
+  - Real estate not situated in this state and any interest in real estate not situated in this
+    state.
+  - Real estate situated in this state and any interest in real estate situated in this state.
+  - Real estate not situated in this state, excluding any interest in real estate not situated in
+    this state.
+  - Real estate situated in this state, including any interest in real estate not situated in this
+    state.
+key: A
+explanation: Ohio Rev. Code § 4735.01 defines foreign real estate as real estate not situated in
+  this state and any interest in real estate not situated in this state. The option that reads 'Real
+  estate not situated in this state and any interest in real estate not situated in this state'
+  matches this language exactly. The option that states 'Real estate not situated in this state,
+  excluding any interest in real estate not situated in this state' incorrectly excludes interests,
+  which is not the definition. The option that says 'Real estate situated in this state and any
+  interest in real estate situated in this state' describes domestic real estate rather than foreign
+  real estate. The option that reads 'Real estate situated in this state, including any interest in
+  real estate not situated in this state' mixes situs and is not the statutory definition.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.01
+  url: null
+  quoted_text: (E) "Foreign real estate" means real estate not situated in this state and any interest
+    in real estate not situated in this state.
+  secondary: []
+terms:
+  - real estate
+  - foreign real estate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,45 @@
+id: NH-331-0120
+jurisdiction: NH
+bank: state_NH
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An out-of-state broker advertises commercial real estate for sale in New Hampshire under a
+  cooperative agreement with a licensed New Hampshire broker. Under RSA 331-A:22-a III, what must
+  the out-of-state broker include in any advertising material?
+options:
+  - The out-of-state broker's license number from the home state
+  - The name and contact information of the cooperating New Hampshire broker
+  - The disclaimer that the broker is not licensed in New Hampshire
+  - The property's tax map number, legal description, and zoning classification
+key: B
+explanation: RSA 331-A:22-a III requires that any advertising material for commercial real estate
+  include the name and contact information of the New Hampshire licensed broker with whom the
+  out-of-state broker has a written agreement, displayed equally prominently. The out-of-state
+  broker's own license number is not mandated in the advertisement. A disclaimer about lack of New
+  Hampshire licensure is not required by this provision. The property's tax map number is unrelated
+  to advertising rules for out-of-state brokers.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts § 331-A:22-a
+  url: null
+  quoted_text: shall include in any advertising material the name and contact information in equal
+    prominence of the New Hampshire licensed broker with whom the out-of-state-broker has a written
+    agreement
+  secondary: []
+terms:
+  - advertising
+  - out-of-state broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

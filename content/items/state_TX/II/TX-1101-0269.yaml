@@ -1,0 +1,42 @@
+id: TX-1101-0269
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent held an active Texas license that expired five months ago and now submits a new
+  license application. According to Texas Occupations Code §1101.358(b), are the education
+  requirements for a sales agent license waived?
+options:
+  - Yes, because the applicant was licensed within the six months preceding the application date.
+  - No, because the license must be current at the time of application.
+  - Yes, but only if the applicant also completed continuing education during the lapse.
+  - No, because education requirements are typically waived for sales agent applicants.
+key: A
+explanation: The rule waives education requirements if the applicant has been licensed as a broker
+  or sales agent within the six months preceding the application date. A license that expired five
+  months ago satisfies this condition, so the requirements are waived. The claim that the license
+  must be current is incorrect, as the rule does not require current licensure for the waiver.
+citation:
+  source: Tex. Occ. Code § 1101.358(b)
+  url: null
+  quoted_text: (b) The commission shall waive the education requirements of Subsection (a) if the
+    applicant has been licensed in this state as a broker or sales agent within the six months
+    preceding the date the application is filed.
+  secondary: []
+terms:
+  - education
+  - waiver
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

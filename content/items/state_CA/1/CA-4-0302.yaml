@@ -1,0 +1,41 @@
+id: CA-4-0302
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is permitted under Cal. Code Regs. tit. 10, § 2705(t)?
+options:
+  - Advertising housing accommodation services for persons with physical disabilities
+  - Advertising a preference for families with children in rental listings
+  - Advertising a limitation based on religion in residential property listings
+  - Advertising an intention to discriminate based on national origin in property listings
+key: A
+explanation: The regulation explicitly states that subdivision (t) does not prohibit advertising of
+  housing accommodation services or housing accommodations for persons with physical disabilities.
+  Therefore, advertising such services is allowed. Advertising a preference for families with
+  children indicates discrimination based on familial status, which is prohibited under the same
+  subdivision because it shows a preference based on protected class.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2705(t)
+  url: null
+  quoted_text: This subdivision does not prohibit advertising of housing accommodation services or
+    housing accommodations for persons with physical disabilities.
+  secondary: []
+terms:
+  - advertising
+  - disability
+  - housing accommodation
+  - protected class
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

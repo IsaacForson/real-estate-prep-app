@@ -1,0 +1,45 @@
+id: NAT-PV-III-1435
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Using the data from the worked example, what is the average adjusted price of the three sales
+  used in the CMA?
+options:
+  - $412,000
+  - $418,000
+  - $418,333
+  - $425,000
+key: C
+explanation: The three adjusted prices sum to $1,255,000. Dividing by three gives $418,333.33, which
+  rounds to $418,333. Therefore the option stating $418,333 is correct. The option stating $418,000
+  is the median price, not the average.
+citation:
+  source: REP Ref. Valuation & Appraisal § 11.6
+  url: null
+  quoted_text: A licensee's CMA finds three sales in the past four months at adjusted prices of
+    $412,000, $418,000, and $425,000
+  secondary: []
+math:
+  worked_solution: Sum = $412,000 + $418,000 + $425,000 = $1,255,000. Average = $1,255,000 ÷ 3 =
+    $418,333.33... Rounded to the nearest dollar = $418,333.
+  formulas:
+    - Summation
+    - Arithmetic mean
+  onscreen_calculator_only: false
+terms:
+  - average
+  - adjusted price
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

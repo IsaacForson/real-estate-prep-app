@@ -1,0 +1,42 @@
+id: IA-543B-0371
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson whose license expires on September 30, 2025, passes the salesperson examination
+  on March 15, 2025. Can the examination score be used to satisfy continuing education requirements
+  for the current license term?
+options:
+  - Yes, because the exam was taken within six months of expiration
+  - No, because the exam was taken more than six months before expiration
+  - Yes, because any passing exam score satisfies CE requirements
+  - No, because only the broker exam can substitute for CE
+key: B
+explanation: The salesperson exam may substitute for CE only if taken within the six months
+  immediately preceding license expiration; March 15 is more than six months before September 30,
+  2025.
+citation:
+  source: Iowa Admin. Code r. 481-2016 — Iowa Administrative Code 481—Chapter 2016 — Prelicense
+    Education And Continuing Education (Real Estate Commission) 481—2016.9(1)(a)
+  url: null
+  quoted_text: If the salesperson takes and passes the salesperson examination within the six months
+    immediately preceding the expiration of the license, the salesperson examination score report
+    may be substituted for the necessary hours of continuing education credit for the current
+    license term and will satisfy all previous deficiencies.
+  secondary: []
+terms:
+  - continuing education
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

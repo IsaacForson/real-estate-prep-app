@@ -1,0 +1,43 @@
+id: VA-21-0337
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A principal broker employed by a Virginia real estate firm terminates active status with the
+  firm on March 15. According to Virginia licensing regulations, which party is responsible for
+  notifying the Board, and within how many calendar days must the notification be made?
+options:
+  - The principal broker must notify the Board within 10 calendar days.
+  - The firm must notify the Board within 30 calendar days.
+  - The firm must notify the Board within 10 calendar days.
+  - The principal broker must notify the Board within 30 calendar days.
+key: C
+explanation: The regulation requires the firm to notify the board within 10 calendar days when a
+  principal broker terminates active status. The distractor suggesting the principal broker must
+  notify is incorrect because the duty falls on the firm, not the broker.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-170
+  url: null
+  quoted_text: When any principal broker is discharged or in any way terminates active status with a
+    firm, it is the duty of the firm to notify the board with the licensee name, license number, and
+    date of termination within 10 calendar days of the date of termination.
+  secondary: []
+terms:
+  - principal broker
+  - firm
+  - termination
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

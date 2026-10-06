@@ -1,0 +1,46 @@
+id: ND-23-0155
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee leaves Broker X and later uses a listing agreement obtained while at Broker X to
+  represent a client, without specific authorization from Broker X. Under N.D. Admin. Code §
+  70-02-01-10, is this permitted?
+options:
+  - Under the rule, the licensee's action is permissible because the agreement was obtained during
+    employment.
+  - Under the rule, the licensee's action is permissible if the licensee informs the new broker.
+  - Under the rule, the licensee's action is not permissible because use of former broker's
+    agreements requires specific authorization.
+  - Under the rule, the licensee's action is permissible if the agreement is for a different
+    property type.
+key: C
+explanation: The rule explicitly forbids a licensee from using agreements secured through a former
+  broker unless specifically authorized by that former broker, so using the listing agreement
+  without authorization is prohibited. Merely informing the new broker does not satisfy the
+  authorization requirement.
+citation:
+  source: "### N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-10"
+  url: null
+  quoted_text: Any licensee leaving a broker shall not take nor use any agreements secured through the
+    office or through licensees of the former broker unless specifically authorized by the former
+    broker.
+  secondary: []
+terms:
+  - licensee
+  - former broker
+  - agreements
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

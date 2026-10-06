@@ -1,0 +1,41 @@
+id: MI-25-0245
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A real estate salesperson wishes to advertise for sale her own home, which is her principal
+  residence, using only her name and phone number. Is this advertisement permissible under Mich.
+  Comp. Laws § 339.2512(4)?
+options:
+  - Yes, because the property is the salesperson's principal residence.
+  - No, because the property is not the salesperson's principal residence.
+  - Yes, because the salesperson owns the property.
+  - No, because the salesperson does not own the property.
+key: A
+explanation: Under § 339.2512(4), a salesperson may advertise under their own name to sell real
+  property only if the property is their principal residence. Since the home is the salesperson's
+  principal residence, the advertisement is permissible. The distractor citing ownership is
+  incorrect because ownership alone does not satisfy the exception for sales advertisements; the
+  rule requires the property to be the principal residence.
+citation:
+  source: Mich. Comp. Laws § 339.2512(4)
+  url: null
+  quoted_text: A real estate salesperson shall not advertise to sell real property under his or her
+    own name unless the property is the principal residence of the salesperson.
+  secondary: []
+terms:
+  - advertisement
+  - principal residence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

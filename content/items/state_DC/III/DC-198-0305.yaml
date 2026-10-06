@@ -1,0 +1,40 @@
+id: DC-198-0305
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner initiates delivery of a notice to a tenant on April 5. By what date must the owner
+  deliver copies of that notice to the Mayor with written evidence of the date of delivery,
+  according to D.C. Code § 42-3404.09(f)(2)?
+options:
+  - April 10
+  - April 12
+  - April 15
+  - April 20
+key: C
+explanation: Copies must be delivered to the Mayor within 10 days of the initiation of delivery;
+  April 5 plus 10 days is April 15.
+citation:
+  source: D.C. Code § 42-3404.09(f)(2)
+  url: null
+  quoted_text: Within 10 days of the initiation of delivery, copies of all documents delivered to a
+    tenant, owner, or OTA pursuant to subsections (c) or (d) of this section shall be delivered to
+    the Mayor with written evidence of the date of delivery of the original document.
+  secondary: []
+terms:
+  - copies
+  - Mayor
+  - delivery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

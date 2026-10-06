@@ -1,0 +1,66 @@
+id: MI-25-0223
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker pays an owner $5,000 as initial consideration for a right-to-list home sale
+  agreement. The agreement includes an early termination option allowing the owner to terminate by
+  paying the broker $5,500. Assuming the termination occurs one year after the agreement date, is
+  the early termination provision enforceable under Michigan's occupational code?
+options:
+  - No, because the consideration exceeds the initial amount plus 6% annual interest for one year.
+  - Yes, because the broker may charge any amount the owner agrees to pay for early termination.
+  - No, because the interest must be compounded monthly, making the allowed amount higher.
+  - Yes, because the termination payment of $5,500 is less than twice the initial consideration.
+key: A
+explanation: Under MCL 339.2512g(1)(d)(i), the early‑termination consideration may not exceed the
+  initial amount plus 6% simple interest per annum. For a $5,000 initial payment, one year’s
+  interest is $300, so the maximum allowable termination payment is $5,300. The proposed $5,500
+  exceeds that limit, making the provision unenforceable. The option stating that the broker may
+  charge any amount the owner agrees to pay for early termination is incorrect because the law caps
+  the amount at the initial consideration plus statutory interest. The option claiming that a
+  payment less than twice the initial consideration is permissible is also incorrect because the
+  allowable amount is based on the interest limit, not a multiple of the initial payment.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512g(1)(d)(i)
+  url: null
+  quoted_text: An option for the owner to terminate the agreement before its expiration date for an
+    amount of consideration payable to the real estate broker that is not more than the initial
+    consideration the broker paid to the owner with interest of 6% per annum that starts from the
+    date the broker provided the initial consideration through the date that the owner terminated
+    the agreement.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify initial consideration P = $5,000.
+    Step 2: Identify annual interest rate r = 6% = 0.06.
+    Step 3: Identify time t = 1 year.
+    Step 4: Compute simple interest I = P × r × t = $5,000 × 0.06 × 1 = $300.
+    Step 5: Compute maximum allowable termination amount = P + I = $5,000 + $300 = $5,300.
+    Step 6: Compare proposed termination payment $5,500 to maximum $5,300.
+    Step 7: Since $5,500 > $5,300, the provision exceeds the statutory limit and is unenforceable.
+  formulas:
+    - "Simple interest: I = P × r × t"
+    - Total allowable amount = P + I
+  onscreen_calculator_only: false
+terms:
+  - right-to-list
+  - early termination
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

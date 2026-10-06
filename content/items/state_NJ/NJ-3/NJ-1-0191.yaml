@@ -1,0 +1,47 @@
+id: NJ-1-0191
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner files a farmland assessment application on July 1, 2021. The Commissioner’s first
+  on‑site inspection takes place on August 1, 2024. According to N.J. Stat. Ann. § 54:4-23.3a, is
+  this inspection timing compliant?
+options:
+  - The inspection timing is compliant because it occurred after the first three years.
+  - The inspection timing is compliant because it occurred within the first three years after
+    application.
+  - The inspection timing is not compliant because it occurred within the first three years.
+  - The inspection timing is not compliant because it occurred after the first three years.
+key: D
+explanation: The statute requires the on‑site inspection to occur "during one of the first three
+  years in which applications are received." An inspection in August 2024 falls outside the
+  2021‑2023 window, violating this requirement. Therefore the timing is not compliant. The
+  distractor asserting compliance because the inspection occurred within the first three years is
+  incorrect, as the inspection actually occurred after that period.
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 — New Jersey Statutes Title 54, Chapter 4 — Taxation of Real
+    and Personal Property (N.J.S.A. 54:4-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 4-23.1 54:4-23.3a
+  url: null
+  quoted_text: The application review shall include an on-site inspection of the property during one
+    of the first three years in which applications are received, and not less frequently than once
+    every three years following
+  secondary: []
+terms:
+  - inspection
+  - timing
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

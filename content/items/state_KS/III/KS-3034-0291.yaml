@@ -1,0 +1,50 @@
+id: KS-3034-0291
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee deposits $250 of personal money into the broker's trust account to cover a
+  temporary shortfall, intending to repay the amount later. Under Kansas law, is this action
+  permissible?
+options:
+  - The action is permissible as long as the amount is repaid within thirty days of deposit
+  - The action is impermissible unless the broker secures prior written approval from the commission
+  - The action is impermissible because commingling personal funds with trust funds is prohibited
+  - The action is permissible because the funds are intended to be temporary and will be repaid
+    promptly
+key: C
+explanation: Under Kan. Stat. Ann. § 58-3062(a)(2), a licensee may not commingle personal funds with
+  trust funds, except that a broker may keep up to $100 in the trust account for account expenses.
+  Depositing personal money, even if intended to be temporary or repaid, is prohibited commingling.
+  Therefore the action is not permissible.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(2)
+  url: null
+  quoted_text: convert such moneys to the licensee's personal use or commingle the money or other
+    property of the licensee's principals with the licensee's own money or property, except that
+    nothing herein shall prohibit a broker from having funds in an amount not to exceed $100 in the
+    broker's trust account to pay expenses for the use and maintenance of such account
+  secondary: []
+math:
+  worked_solution: The licensee deposits $250 of personal money. No further arithmetic steps are
+    needed to determine permissibility.
+  formulas:
+    - Deposit amount = $250
+  onscreen_calculator_only: false
+terms:
+  - commingling
+  - trust account
+  - personal funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

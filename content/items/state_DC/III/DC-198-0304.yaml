@@ -1,0 +1,42 @@
+id: DC-198-0304
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant delivers a written statement of interest to the owner on March 1. The owner delays
+  providing required information under the subchapter for 4 days. How many days must the owner
+  afford the tenant to negotiate a contract of sale, **NOT** including the 20 days for the statement
+  of interest?
+options:
+  - 37 days
+  - 25 days
+  - 33 days
+  - 29 days
+key: D
+explanation: The base negotiation period is 25 days, and each day of owner delay adds one day; 25 + 4 = 29 days.
+citation:
+  source: D.C. Code § 42-3404.09(c)(4)
+  url: null
+  quoted_text: If a tenant has delivered a written statement of interest in accordance with paragraph
+    (3) of this subsection, the owner shall afford the tenant at least 25 days after delivery of the
+    statement of interest to the owner to negotiate a contract of sale, not including the 20 days
+    provided by paragraph (3) of this subsection. For every day of delay in providing information by
+    the owner as required by this subchapter, the negotiation period is extended by one day.
+  secondary: []
+terms:
+  - negotiation
+  - delay
+  - statement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

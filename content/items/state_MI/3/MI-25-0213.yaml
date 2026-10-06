@@ -1,0 +1,40 @@
+id: MI-25-0213
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives written notice of termination from a salesperson on March 3. By what date
+  must the broker deliver or mail the salesperson's license to the department under Mich. Comp. Laws
+  § 339.2507(1)?
+options:
+  - March 9, 2025
+  - March 10, 2025
+  - March 8, 2025
+  - March 11, 2025
+key: C
+explanation: The broker must deliver or mail the license within five days of receiving the written
+  notice. Counting five days from March 3 brings the deadline to March 8. Choosing March 9
+  incorrectly adds a sixth day.
+citation:
+  source: Mich. Comp. Laws § 339.2507(1)
+  url: null
+  quoted_text: the real estate broker shall deliver or mail by certified mail to the department,
+    within 5 days, the real estate salesperson's license.
+  secondary: []
+terms:
+  - termination
+  - notice
+  - delivery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

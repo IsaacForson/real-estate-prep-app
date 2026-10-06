@@ -1,0 +1,45 @@
+id: NAT-PV-I-0874
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: What is the acreage of the SW 1/4 of the NW 1/4 of Section 14 in the rectangular survey system?
+options:
+  - A. 10 acres
+  - B. 40 acres
+  - C. 80 acres
+  - D. 160 acres
+key: B
+explanation: A quarter‑quarter of a section is 1/16 of a section. Since a section contains 640
+  acres, 1/16 of 640 acres equals 40 acres. Therefore the SW 1/4 of the NW 1/4 of a section is 40
+  acres.
+citation:
+  source: REP Ref. Property & Land Use § 3.3
+  url: null
+  quoted_text: A quarter-quarter (the NW 1/4 of the SE 1/4) is 40 acres and 1,320 feet per side.
+  secondary: []
+math:
+  worked_solution: |-
+    1. A section = 640 acres.
+    2. A quarter‑quarter = 1/4 × 1/4 = 1/16 of a section.
+    3. Multiply: 640 acres × 1/16 = 40 acres.
+  formulas:
+    - Section acreage = 640 acres
+    - Quarter‑quarter fraction = 1/4 × 1/4 = 1/16
+    - Acreage = Section acreage × Quarter‑quarter fraction
+  onscreen_calculator_only: false
+terms:
+  - quarter-quarter
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

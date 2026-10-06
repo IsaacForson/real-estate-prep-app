@@ -1,0 +1,44 @@
+id: AZ-20-0366
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee seeks to obtain an exclusive real estate employment agreement from a seller who
+  currently has an exclusive agreement with another broker. The licensee obtains written
+  acknowledgment from the seller that signing another agreement could expose the seller to liability
+  for substantial additional commissions. Under Arizona law, the licensee's action is:"
+options:
+  - The action is prohibited because the seller is already under an exclusive agreement.
+  - The action is permitted only if the licensee also discloses the potential liability in writing
+    to the seller.
+  - The action is permitted because the licensee has obtained the required written acknowledgment.
+  - The action is prohibited unless the existing broker consents in writing.
+key: C
+explanation: Subsection C of § 32-2151.02 allows a licensee to procure an agreement from a party
+  already under an exclusive agreement if the licensee has received the party's written
+  acknowledgment of potential liability for additional commissions. No additional disclosure is
+  required by the statute.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151.02(C)
+  url: null
+  quoted_text: unless the licensee has received written acknowledgment from the party that the
+    execution of additional real estate employment agreements could expose the party to liability
+    for substantial additional commissions.
+  secondary: []
+terms:
+  - real estate employment agreement
+  - exclusive agreement
+  - written acknowledgment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

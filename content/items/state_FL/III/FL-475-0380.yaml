@@ -1,0 +1,41 @@
+id: FL-475-0380
+jurisdiction: FL
+bank: state_FL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida Statute 475.483(1)(c), what is the maximum time allowed to file a claim for
+  recovery from the Real Estate Recovery Fund after the act giving rise to the claim?
+options:
+  - Three years from act or discovery, not exceeding five years from act.
+  - Two years from act or discovery, not exceeding four years from act.
+  - Two years from act only, not exceeding four years from act.
+  - Two years from discovery only, not exceeding four years from act.
+key: B
+explanation: The statute allows a claim to be filed within two years of the act or its discovery,
+  but in no event may a claim be made more than four years after the act. Therefore the outer limit
+  is four years from the act. The other options either omit the four‑year cap or misstate the
+  trigger.
+citation:
+  source: Fla. Stat. § 475.483(1)(c)
+  url: null
+  quoted_text: In no event may a claim for recovery be made more than 4 years after the date of the
+    act giving rise to the claim.
+  secondary: []
+terms:
+  - claim
+  - recovery fund
+  - timeline
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

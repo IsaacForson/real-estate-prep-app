@@ -1,0 +1,41 @@
+id: ID-20-0317
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate terminates his licensed association with a broker effective Friday, March 1,
+  2024. By what date must the associate provide written notice to the broker under Idaho Code §
+  54-2056(1)?
+options:
+  - March 7, 2024
+  - March 6, 2024
+  - March 5, 2024
+  - March 4, 2024
+key: B
+explanation: The rule requires notice within three business days after the effective date; counting
+  March 4, 5, and 6 as the three business days makes March 6 the deadline. The March 5 option
+  results from counting only two business days, a common mistake.
+citation:
+  source: Idaho Code § 54-2056(1)
+  url: null
+  quoted_text: A sales associate who terminates his licensed association with a broker shall provide
+    the broker written notice of the termination no later than three (3) business days after the
+    effective date.
+  secondary: []
+terms:
+  - termination
+  - notice
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

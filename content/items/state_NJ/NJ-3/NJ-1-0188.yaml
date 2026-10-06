@@ -1,0 +1,47 @@
+id: NJ-1-0188
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee plans to install an underground gas pipeline across a freshwater wetland. Does this
+  activity require a freshwater wetlands permit?
+options:
+  - Yes, because installing a gas pipeline involves excavation/disturbance of soil, which is a
+    regulated activity.
+  - Yes, because installing a gas pipeline is exempt when using directional drilling that avoids
+    surface disturbance.
+  - Yes, because installing a gas pipeline requires a permit only if the wetland is classified as
+    'high quality'.
+  - Yes, because installing a gas pipeline only requires a permit if it crosses a designated wetland
+    buffer zone.
+key: A
+explanation: Installing a gas pipeline entails excavation or disturbance of soil, which is expressly
+  listed as a regulated activity under subsection (1) of the definition of regulated activity.
+  Therefore a permit is required. The other options introduce exemptions or thresholds not found in
+  the statute.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 9B-1 § 13:9B-3
+  url: null
+  quoted_text: (1) The removal, excavation, disturbance or dredging of soil, sand, gravel, or
+    aggregate material of any kind
+  secondary: []
+terms:
+  - excavation
+  - regulated activity
+  - permit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

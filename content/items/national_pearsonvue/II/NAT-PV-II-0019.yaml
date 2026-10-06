@@ -1,0 +1,52 @@
+id: NAT-PV-II-0019
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A seller owes $240,000 on a mortgage and has a $9,000 recorded judgment lien. The property
+  sells for $360,000. To deliver title free of these liens, the settlement agent should:"
+options:
+  - Pay only the judgment lien because the mortgage is a voluntary lien
+  - Pay both lienholders from the seller's proceeds and record the releases
+  - Record a lis pendens so the buyer is protected against both creditors
+  - Require the buyer to assume the mortgage and satisfy the judgment later
+key: B
+explanation: To deliver clear title, the settlement agent must satisfy all existing liens unless the
+  buyer agrees to assume them. The agent obtains payoff statements for the mortgage and judgment
+  lien, pays each from the sale proceeds, and records the releases. Assuming the mortgage would
+  leave the lien on the property, and a lis pendens only gives notice of a lawsuit, it does not pay
+  off the debt.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 3.5
+  url: null
+  quoted_text: The settlement agent obtains payoff statements, pays each lienholder from the proceeds,
+    and records the satisfaction (release) of mortgage
+  secondary: []
+math:
+  worked_solution: "Step 1: Calculate total amount needed to satisfy liens: $240,000 (mortgage) +
+    $9,000 (judgment lien) = $249,000.\\nStep 2: Compare to sale proceeds: $360,000 (sale price) -
+    $249,000 (total liens) = $111,000 remaining for seller.\\nStep 3: Since proceeds exceed total
+    liens, the settlement agent can pay both lienholders in full from the proceeds and record
+    releases."
+  formulas:
+    - Total liens = Mortgage amount + Judgment lien amount
+    - Net proceeds for seller = Sale price - Total liens
+  onscreen_calculator_only: false
+terms:
+  - lien
+  - payoff
+  - satisfaction
+  - settlement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/moonshotai/kimi-k3
+  prompt_version: draft-v3 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

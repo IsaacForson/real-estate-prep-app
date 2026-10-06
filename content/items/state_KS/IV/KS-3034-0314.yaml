@@ -1,0 +1,41 @@
+id: KS-3034-0314
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following brokers is exempt from the requirement to maintain a trust account
+  under Kan. Stat. Ann. § 58-3061(f)?
+options:
+  - A broker whose license is on deactivated status
+  - A broker who actively handles earnest money deposits for clients
+  - A broker who is the supervising broker of a corporation's office
+  - A broker who holds a current active license and performs residential sales
+key: A
+explanation: The statute explicitly exempts brokers whose licenses are on deactivated status from
+  the trust account requirement. The other options describe brokers who are actively handling trust
+  funds, serving as supervising brokers, or holding active licenses, none of which qualify for the
+  exemption.
+citation:
+  source: Kan. Stat. Ann. § 58-3061(f)
+  url: null
+  quoted_text: "(f) The requirement of maintaining a trust account shall not apply to: (A) A broker
+    whose license is on deactivated status;"
+  secondary: []
+terms:
+  - trust account
+  - exemption
+  - deactivated status
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

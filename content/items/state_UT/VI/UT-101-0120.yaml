@@ -1,0 +1,51 @@
+id: UT-101-0120
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A principal broker pays a sales agent who is not affiliated with the principal broker at the
+  time the sales agent earned the commission. Under Utah Code Ann. § 61-2f-401, this conduct is
+  grounds for disciplinary action because:"
+options:
+  - Because the principal broker paid a sales agent who was not affiliated with the principal broker
+    at the time the sales agent earned the compensation.
+  - Because the principal broker failed to disclose in writing whether the transaction was for an
+    undisclosed principal or for the broker's own account.
+  - Because the principal broker commingled trust money received from a client with the broker's
+    personal funds in the broker's business account.
+  - Because the principal broker represented both the buyer and seller in the same transaction
+    without obtaining their informed written consent.
+key: A
+explanation: The scenario matches subsection (6) of § 61-2f-401, which prohibits a principal broker
+  from paying or offering to pay a sales agent or associate broker who is not affiliated with the
+  principal broker at the time the compensation is earned. The distractor concerning failure to
+  disclose an undisclosed principal is incorrect because the facts do not involve an undisclosed
+  principal; they involve payment to an unaffiliated agent.
+citation:
+  source: "### Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title
+    61, Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-401"
+  url: null
+  quoted_text: for a principal broker, paying or offering to pay a sales agent or associate broker who
+    is not affiliated with the principal broker at the time the sales agent or associate broker
+    earned the compensation
+  secondary: []
+terms:
+  - principal broker
+  - sales agent
+  - affiliation
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

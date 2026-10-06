@@ -1,0 +1,45 @@
+id: NAT-PV-III-1437
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A borrower submitted a loan application on Monday, March 4. The appraisal was completed on
+  Thursday, March 14. The loan is scheduled to close (consummation) on Friday, March 22. When must
+  the creditor provide the applicant with a copy of the appraisal under the ECOA valuation rule?
+options:
+  - On the appraisal completion date of the property (March 14)
+  - On the loan closing date of the transaction (March 22)
+  - On the date three business days before closing (March 19)
+  - On the date three business days after application (March 7)
+key: A
+explanation: The ECOA valuation rule requires the creditor to give the applicant a copy of the
+  appraisal promptly upon completion or three business days before consummation, whichever is
+  earlier. In this scenario, the appraisal was completed on March 14, while three business days
+  before the March 22 closing is March 19. Because March 14 is earlier, the creditor must provide
+  the copy on the appraisal completion date.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 6.4"
+  url: null
+  quoted_text: requires a creditor to give an applicant a copy of any appraisal or written valuation
+    developed for a first-lien loan secured by a dwelling promptly upon completion or three business
+    days before consummation, whichever is earlier
+  secondary: []
+terms:
+  - ecoa
+  - valuation
+  - consummation
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

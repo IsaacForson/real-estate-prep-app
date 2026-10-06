@@ -1,0 +1,41 @@
+id: NJ-1-0237
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate salesperson license was convicted of burglary six years ago.
+  According to N.J. Stat. Ann. § 45:15-12.1, what action must the commission take regarding the
+  license application?
+options:
+  - Imposition of fine
+  - Placement on probation
+  - Denial of application
+  - Approval of application
+key: D
+explanation: The statute bars licensure only for convictions within five years; a conviction six
+  years old is outside that period, so the commission may issue the license. The denial option
+  applies only to recent convictions within the five-year window.
+citation:
+  source: N.J. Stat. Ann. § 45:15-12.1
+  url: null
+  quoted_text: No license shall be issued by the commission to any person known by it to have been,
+    within five years theretofore, convicted of forgery, burglary, robbery, any theft offense other
+    than shoplifting, criminal conspiracy to defraud, or other like offense or offenses
+  secondary: []
+terms:
+  - conviction
+  - five years
+  - license issuance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,46 @@
+id: MI-25-0216
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A student enrolls in a prelicensure course approved for 30 clock hours. To obtain credit for
+  the course, how many hours must the student attend?
+options:
+  - 15 hours
+  - 20 hours
+  - 30 hours
+  - 40 hours
+key: C
+explanation: Rule R 339.22623(1) states that a student shall attend 100% of a real estate
+  prelicensure course to obtain credit, so for a 30‑hour course the student must attend all 30
+  hours.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 R § 339.22623
+  url: null
+  quoted_text: A student shall attend 100% of a real estate prelicensure course in order to obtain
+    credit for the course.
+  secondary: []
+math:
+  worked_solution: |-
+    Approved hours = 30
+    Required percentage = 100% = 1.00
+    Required hours = 30 × 1.00 = 30
+  formulas:
+    - required_hours = approved_hours × (percentage/100)
+  onscreen_calculator_only: false
+terms:
+  - attendance
+  - credit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

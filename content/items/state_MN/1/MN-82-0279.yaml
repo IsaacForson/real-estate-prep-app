@@ -1,0 +1,57 @@
+id: MN-82-0279
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee has two separate judgments from different claimants arising from the same
+  transaction, each for $130,000. What is the maximum amount the real estate education, research and
+  recovery fund may pay for these claims under Minn. Stat. § 82.86, Subd. 7?
+options:
+  - $130,000
+  - $260,000
+  - $250,000
+  - $150,000
+key: C
+explanation: Each claim is below the $150,000 per‑claimant limit, so the full $130,000 for each
+  claimant would be payable, but the fund may not obligate more than $250,000 per licensee
+  regardless of the number of claims. The sum of the two claims ($260,000) exceeds the licensee
+  limit, so the fund pays the lesser amount, $250,000. The distractor $260,000 incorrectly ignores
+  the per‑licensee cap.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.86, Subd. 7
+  url: null
+  quoted_text: provided that nothing in this chapter shall be construed to obligate the fund for more
+    than $150,000 per claimant, per transaction, subject to the limitations set forth in subdivision
+    14, regardless of the number of persons aggrieved or parcels of real estate involved in the
+    transaction, provided that regardless of the number of claims against a licensee, nothing in
+    this chapter may obligate the fund for more than $250,000 per licensee.
+  secondary: []
+math:
+  worked_solution: "Step 1: Each judgment of $130,000 is less than the $150,000 per claimant limit, so
+    each claimant may recover the full $130,000. Step 2: Sum the claim amounts: $130,000 + $130,000
+    = $260,000. Step 3: Apply the licensee limit: the fund may not obligate more than $250,000 per
+    licensee. Step 4: The payable amount is the lesser of the sum ($260,000) and the licensee limit
+    ($250,000), which is $250,000."
+  formulas:
+    - Payable = min(Σ Claim_i, Licensee_limit) where Σ Claim_i = $130,000 + $130,000 = $260,000 and
+      Licensee_limit = $250,000.
+  onscreen_calculator_only: false
+terms:
+  - claimant limit
+  - licensee limit
+  - recovery fund
+  - judgment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

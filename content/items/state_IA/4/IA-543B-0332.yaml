@@ -1,0 +1,49 @@
+id: IA-543B-0332
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee completes a commission‑approved continuing education course and receives a
+  certificate of attendance that includes the school name, course name, licensee name, date, credit
+  hours, instructor name, and coordinator signature, but does not indicate whether the hours are for
+  distance learning or live instruction. Under Iowa Admin. Code r. 481-2017, is the certificate
+  sufficient for the licensee to receive continuing education credit?
+options:
+  - No, because the certificate must also note whether credit hours are for distance learning or
+    live instruction.
+  - No, because the certificate must also list the school’s accreditation number and contact phone.
+  - Yes, as long as the licensee attended the entire course and passed the final exam.
+  - Yes, because the certificate contains all required data except the learning‑mode indicator.
+key: A
+explanation: Under Iowa Admin. Code r. 481-2017, a certificate of attendance must include a notation
+  indicating whether the credit hours are for distance learning or live instruction. The option
+  stating that the certificate must also note whether credit hours are for distance learning or live
+  instruction correctly reflects this requirement. The option stating that the certificate must also
+  list the school’s accreditation number and contact phone adds a requirement not found in the rule.
+  The option stating that the certificate is sufficient as long as the licensee attended the entire
+  course and passed the final exam introduces conditions not required by the rule. The option
+  stating that the certificate is sufficient because it contains all required data except the
+  learning‑mode indicator incorrectly assumes the missing notation is irrelevant.
+citation:
+  source: Iowa Admin. Code r. 481-2017 — Iowa Administrative Code 481—Chapter 2017 — Approv Al Of
+    Schools, Courses And Instructors (Real Estate Commission) 2017.2(1)(h)
+  url: null
+  quoted_text: A notation as to whether credit hours are to be used as distance learning or as live instruction.
+  secondary: []
+terms:
+  - certificate
+  - distance learning
+  - live instruction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

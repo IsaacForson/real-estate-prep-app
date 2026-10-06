@@ -1,0 +1,48 @@
+id: FL-475-0411
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A closing agent has received $2,500 in disputed reserved proceeds from a commercial real
+  estate transaction. The closing agent incurred $120 in attorney fees to commence an interpleader
+  action, $30 to record the required affidavit, and $15 in clerk of court service charges. According
+  to Florida Statute 475.711(2), what is the net amount of disputed reserved proceeds that the
+  closing agent must deposit into the court registry?
+options:
+  - $2,350
+  - $2,380
+  - $2,365
+  - $2,335
+key: D
+explanation: "The net amount is the disputed proceeds minus attorney fees, recording costs, and
+  clerk charges: $2,500 - ($120 + $30 + $15) = $2,335."
+citation:
+  source: Fla. Stat. § 475.711(2)
+  url: null
+  quoted_text: "The closing agent shall determine the net amount of disputed reserved proceeds
+    deposited in the court registry by deducting from the disputed reserved proceeds:"
+  secondary: []
+math:
+  worked_solution: Start with $2,500 disputed reserved proceeds. Subtract attorney fees $120,
+    recording costs $30, and clerk service charges $15. Total deductions = $120 + $30 + $15 = $165.
+    Net amount = $2,500 - $165 = $2,335.
+  formulas:
+    - Net = Disputed - (AttorneyFees + RecordingCosts + ClerkCharges)
+  onscreen_calculator_only: false
+terms:
+  - disputed reserved proceeds
+  - court registry
+  - deduction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

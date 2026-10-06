@@ -1,0 +1,42 @@
+id: CA-4-0049
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "7"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee enters into a listing agreement with a seller who has been deprived of civil rights
+  due to a felony conviction. Under Cal. Civ. Code § 1556, what is the status of the listing
+  agreement?
+options:
+  - The agreement is enforceable if the licensee discloses the seller's status today.
+  - The agreement is void because persons deprived of civil rights are incapable of contracting.
+  - The agreement is voidable at the seller's discretion today.
+  - The agreement is valid if a court appoints a guardian today.
+key: B
+explanation: Persons deprived of civil rights are expressly excluded from the capacity to contract
+  under § 1556, making any agreement they sign void. Consequently, the listing agreement with such a
+  seller lacks legal enforceability. The other options incorrectly suggest voidability,
+  enforceability upon disclosure, or validity with a guardian, none of which override the statutory
+  incapacity.
+citation:
+  source: "### Cal. Civ. Code §§ 1556–1559 — Cal. Civil Code - CHAPTER 2. Parties 1556-1559 — § 1556"
+  url: null
+  quoted_text: All persons are capable of contracting, except minors, persons of unsound mind, and
+    persons deprived of civil rights.
+  secondary: []
+terms:
+  - civil rights
+  - contract
+  - capacity
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

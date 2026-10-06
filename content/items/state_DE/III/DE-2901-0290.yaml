@@ -1,0 +1,45 @@
+id: DE-2901-0290
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits his earned commission into the same escrow account that holds clients’
+  earnest money deposits. Under Delaware law, is this allowed?
+options:
+  - It is allowed because the broker’s commission is considered part of the transaction proceeds.
+  - It is not allowed because the escrow account must be used solely for clients’ funds.
+  - It is allowed if the broker provides a written disclosure to the client after the deposit.
+  - It is not allowed when the earnest money exceeds $10,000.
+key: B
+explanation: Under Delaware law, an escrow account may hold only money in which a broker’s customers
+  or clients have an interest. A broker’s commission is the broker’s own funds, not client money, so
+  depositing it into the escrow account violates the requirement that the account be used solely for
+  clients’ funds. Therefore the statement that it is not allowed because the escrow account must be
+  used solely for clients’ funds is correct. The claim that it is allowed because the commission is
+  part of transaction proceeds is incorrect because the commission remains the broker’s own funds.
+  Providing written disclosure after the deposit does not permit mixing broker funds with client
+  funds. The amount of earnest money does not affect the rule; any commingling is prohibited.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2901(14)
+  url: null
+  quoted_text: “Escrow account” means a separate account established by the brokerage organization
+    used solely for moneys in which a broker’s customers or clients have an interest in accordance
+    with the terms of a real estate services transaction.
+  secondary: []
+terms:
+  - escrow account
+  - commission
+  - client funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

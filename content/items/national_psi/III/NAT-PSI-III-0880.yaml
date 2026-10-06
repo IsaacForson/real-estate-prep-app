@@ -1,0 +1,38 @@
+id: NAT-PSI-III-0880
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer leaves a voicemail for the appraiser saying, 'If the appraisal comes in below
+  the purchase price, we will **not** fund the loan.' Under federal appraisal independence rules,
+  what is the status of this communication?
+options:
+  - It is a permitted attempt to provide market data to the appraiser
+  - It is a prohibited attempt to influence the appraiser's value opinion
+  - It is a required disclosure under Regulation B
+  - It is an acceptable way to discuss loan terms with the appraiser
+key: B
+explanation: Any communication that conditions loan funding on a specific appraisal result is a
+  prohibited attempt to influence the appraiser's value opinion.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.6
+  url: null
+  quoted_text: The loan officer emails, 'We need at least $436,000 or this deal dies'; that is a
+    prohibited attempt to influence value.
+  secondary: []
+terms:
+  - appraisal independence
+  - prohibited conduct
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,59 @@
+id: NY-443-0111
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A school includes Land Use Regulations (3 hours) and Commercial and Investment Properties (10
+  hours) in its curriculum. If it allocates the minimum required hours for each subject, what is the
+  total combined hours for these two topics?
+options:
+  - 12 hours
+  - 13 hours
+  - 14 hours
+  - 15 hours
+key: B
+explanation: According to 19 N.Y.C.R.R. § 176.3, Land Use Regulations requires 3 hours and
+  Commercial and Investment Properties requires 10 hours. Adding these gives 13 hours, so the option
+  stating 13 hours is correct. The option stating 12 hours results from omitting one of the hour
+  values, a typical addition mistake.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    Land Use Regulations    3
+    Construction and Environmental Issues    5
+    Valuation Process and Pricing Properties   3
+    Human Rights and Fair Housing   6
+    Real Estate Mathematics    1
+    Municipal Agencies    2
+    Property Insurance     1
+    License Safety      1
+    Taxes and Assessments    3
+    Condominiums and Cooperatives    4
+    Commercial and Investment Properties  10
+  secondary: []
+math:
+  worked_solution: |-
+    Land Use Regulations hours: 3
+    Commercial and Investment Properties hours: 10
+    Total combined hours: 3 + 10 = 13
+  formulas:
+    - Total = Hours_subject1 + Hours_subject2
+  onscreen_calculator_only: false
+terms:
+  - land use
+  - commercial
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

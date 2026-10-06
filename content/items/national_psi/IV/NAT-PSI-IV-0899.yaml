@@ -1,0 +1,48 @@
+id: NAT-PSI-IV-0899
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A retailer of manufactured homes sells a home and, as part of the sale, helps the buyer
+  complete the loan application and collects a fee that is less than what they would receive in a
+  comparable cash transaction. The retailer also discloses in writing its corporate affiliation with
+  a creditor and provides the name of at least one unaffiliated creditor. The retailer does not
+  directly negotiate loan terms with the buyer or lender. Under TILA §1602, is the retailer
+  considered a mortgage originator?
+options:
+  - D. No, because the retailer is not licensed as a mortgage originator.
+  - B. No, because the retailer meets all three conditions of the manufactured‑home retailer
+    exclusion.
+  - A. Yes, because the retailer assists the consumer in obtaining a loan.
+  - C. Yes, because the retailer receives any compensation for loan‑related activities.
+key: B
+explanation: Section §1602(C)(ii) excludes a manufactured‑home retailer when it (I) does not receive
+  excess compensation, (II) discloses its creditor affiliation and an unaffiliated creditor, and
+  (III) does not negotiate loan terms. The scenario satisfies all three, so the retailer is not a
+  mortgage originator.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1602(C)(ii)
+  url: null
+  quoted_text: (I) does not receive compensation or gain for engaging in activities described in
+    subparagraph (A) that is in excess of any compensation or gain received in a comparable cash
+    transaction; (II) discloses to the consumer— (aa) in writing any corporate affiliation with any
+    creditor; and (bb) if the retailer has a corporate affiliation with any creditor, at least 1
+    unaffiliated creditor; and (III) does not directly negotiate with the consumer or lender on loan
+    terms (including rates, fees, and other costs).
+  secondary: []
+terms:
+  - manufactured home
+  - exclusion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

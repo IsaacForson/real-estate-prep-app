@@ -1,0 +1,45 @@
+id: MD-17-0503
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A course provider seeks approval for three continuing education courses. What total fee must
+  be paid to the Maryland Real Estate Commission?
+options:
+  - $25.00
+  - $50.00
+  - $75.00
+  - $100.00
+key: C
+explanation: Each CE course approval costs $25, as provided in COMAR 09.11.09.02(I). For three
+  courses the total is $25 × 3 = $75. The $50.00 distractor corresponds to approval for only two
+  courses.
+citation:
+  source: COMAR § 09.11.09.02
+  url: null
+  quoted_text: I. CE Course Approval—$25.
+  secondary: []
+math:
+  worked_solution: |-
+    Fee per course = $25
+    Number of courses = 3
+    Total = $25 × 3 = $75
+  formulas:
+    - Total = Fee per course × Number of courses
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - approval
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

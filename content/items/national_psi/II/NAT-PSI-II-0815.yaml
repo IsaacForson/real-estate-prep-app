@@ -1,0 +1,40 @@
+id: NAT-PSI-II-0815
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A contractor began work on a property on Jan 1 2023 and filed a mechanic’s lien on
+  Mar 15 2024. A first mortgage was recorded on Feb 10 2023. Assuming the state follows the rule
+  that a mechanic’s lien may relate back to the date work began, which lien has senior priority?
+options:
+  - the mechanic’s lien
+  - the first mortgage
+  - both have equal priority
+  - seniority depends on date
+key: A
+explanation: Because the mechanic’s lien relates back to the date work began, its effective date is
+  Jan 1 2023, which is earlier than the Feb 10 2023 recording of the first mortgage; therefore the
+  mechanic’s lien has senior priority.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Mechanic's lien priority is set by state statute and may relate back to when work began.
+  secondary: []
+terms:
+  - mechanic's lien
+  - priority
+  - mortgage
+  - statute
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

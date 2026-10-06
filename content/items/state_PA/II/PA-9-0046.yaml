@@ -1,0 +1,38 @@
+id: PA-9-0046
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the minimum age requirement for an applicant seeking a broker's license under
+  Pennsylvania law?
+options:
+  - 18 years of age
+  - 19 years of age
+  - 20 years of age
+  - 21 years of age
+key: D
+explanation: Under 63 P.S. § 455.511, a broker license applicant must be at least 21 years old. The
+  options listing 18, 19, and 20 years of age list ages below this threshold and therefore do not
+  satisfy the requirement.
+citation:
+  source: 63 P.S. § 455.511
+  url: null
+  quoted_text: (1) The applicant shall be at least 21 years of age.
+  secondary: []
+terms:
+  - age
+  - broker
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

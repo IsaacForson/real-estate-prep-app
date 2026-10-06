@@ -1,0 +1,45 @@
+id: WA-85-0226
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker commits a violation that continues for 2 days. Under RCW 18.85.041(8)(e), what is the
+  maximum fine that may be imposed for this violation?
+options:
+  - $2,000
+  - $4,000
+  - $3,000
+  - $1,000
+key: A
+explanation: The rule limits fines to $1,000 per day for each violation, and each day the violation
+  continues counts as a separate violation. Multiplying $1,000 by 2 days yields a maximum fine of
+  $2,000. The $1,000 option would apply only to a single‑day violation, understating the total
+  duration.
+citation:
+  source: Wash. Rev. Code § 18.85.041(8)(e)
+  url: null
+  quoted_text: Payment of a fine for each violation not to exceed one thousand dollars per day per
+    violation. Each day a violation continues or occurs is a separate violation for purposes of
+    imposing a penalty.
+  secondary: []
+math:
+  worked_solution: Daily maximum fine = $1,000; Number of days = 2; Total fine = $1,000 × 2 = $2,000.
+  formulas:
+    - fine = daily_max × days
+  onscreen_calculator_only: false
+terms:
+  - fine per day
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

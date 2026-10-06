@@ -1,0 +1,43 @@
+id: IA-543B-0101
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker decides to keep the quarterly interest earned on the trust account as additional
+  compensation for managing the account. Is this permissible under Iowa Code § 543B.46(1)?
+options:
+  - The broker's action is permissible because the broker may retain interest as compensation for
+    account management
+  - The broker's action is not permissible only if a written agreement exists between buyer and
+    seller to the contrary
+  - The broker's action is not permissible because the broker shall not benefit from interest
+    received on funds of others
+  - The broker's action is permissible if the interest is less than $100 per quarter
+key: C
+explanation: Subsection 1 explicitly states that the broker shall not benefit from interest received
+  on funds of others in the broker’s possession. Retaining the interest as personal compensation
+  violates this prohibition.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.46
+  url: null
+  quoted_text: The broker shall not benefit from interest received on funds of others in the broker’s
+    possession.
+  secondary: []
+terms:
+  - interest
+  - benefit
+  - trust account
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,41 @@
+id: DC-198-0270
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After closing, a buyer learns that the property was once the site of a suicide. The buyer sues
+  the seller for non-disclosure. Under D.C. Code § 47-2853.198(3), is the buyer likely to succeed?
+options:
+  - No, because the buyer waived disclosure rights
+  - No, because the fact is not material
+  - Yes, because suicide is a material fact
+  - Yes, because the seller violated disclosure duty
+key: B
+explanation: The statute lists a suicide as an example of information that is not a material fact
+  and cannot be the basis for a cause of action, so the buyer is unlikely to succeed. The option
+  claiming suicide is a material fact contradicts the statute.
+citation:
+  source: D.C. Code §§ 47-2853.141 to 47-2853.199 — D.C. Code Title 47, Ch. 28, Subch. I-B, Parts K-P
+    - Property Managers, Real Estate Brokers, Salespersons; Special Rules; Duties — § 47-2853.198
+  url: null
+  quoted_text: it shall not be a material fact that must be disclosed in a real estate transaction,
+    nor shall it be the basis for a cause of action
+  secondary: []
+terms:
+  - suicide
+  - fact
+  - cause
+  - action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

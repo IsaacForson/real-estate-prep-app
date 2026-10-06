@@ -1,0 +1,43 @@
+id: RI-5-0323
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant completed ninety classroom hours thirty months ago and applies for a real estate
+  broker license. According to Rhode Island regulations, does the applicant satisfy the
+  pre‑licensing education requirement?
+options:
+  - Yes, but only if the applicant also completes an additional forty‑five hours.
+  - Yes, because the hours were completed within the four‑year limit for broker applicants.
+  - No, because salesperson hours cannot be applied toward a broker license.
+  - No, because the hours were completed more than two years before the application.
+key: B
+explanation: Under 230-RICR-30-20-2 § 2.7(C), classroom hours completed more than four years before
+  the application are not counted toward the broker’s ninety‑hour requirement. The applicant’s
+  ninety hours were finished thirty months (2.5 years) prior, which is within the four‑year window,
+  so they satisfy the requirement. The distractor that claims the hours are too old mistakenly
+  applies the two‑year limit that applies only to salesperson applicants.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.7(C)
+  url: null
+  quoted_text: classroom hours completed more than four (4) years from the date the application will
+    not be considered in meeting the ninety (90) hour requirement.
+  secondary: []
+terms:
+  - prelicensing education
+  - classroom hour
+  - broker license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

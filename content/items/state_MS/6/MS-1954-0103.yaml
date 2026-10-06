@@ -1,0 +1,43 @@
+id: MS-1954-0103
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "6"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker accepts an earnest money check, deposits it, and later learns the check has not been
+  honored by the bank. What must the broker do under Mississippi Real Estate Commission Rules?
+options:
+  - Wait until closing to inform the parties involved.
+  - Return the check to the buyer without notifying anyone.
+  - Immediately notify all parties involved in the transaction.
+  - Deposit additional personal funds to cover the shortage.
+key: C
+explanation: Rule 3.4(D) requires the broker to immediately notify all parties involved if a check
+  is not honored. Waiting until closing to inform the parties violates the immediacy requirement,
+  depositing additional personal funds to cover the shortage is not required, and returning the
+  check to the buyer without notifying anyone fails to notify the parties.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.4
+  url: null
+  quoted_text: If a broker, as escrow agent, accepts a check and later finds that such check has not
+    been honored by the bank on which it was drawn, the broker shall immediately notify all parties
+    involved in the transaction.
+  secondary: []
+terms:
+  - earnest money
+  - escrow agent
+  - bounced check
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

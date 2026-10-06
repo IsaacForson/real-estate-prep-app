@@ -1,0 +1,39 @@
+id: MT-51-0210
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Which individual is authorized to issue a citation for a trust account violation under Montana law?
+options:
+  - An employee of the department
+  - An officer of the brokerage
+  - An agent of the real estate board
+  - An aide of the sales office
+key: A
+explanation: The statute specifies that an employee of the department may issue a citation for trust
+  account violations. Brokers, salespersons, and board chairs are not granted this authority under
+  the provision. Therefore, only the department employee is authorized.
+citation:
+  source: Mont. Code Ann. § 37-51-324
+  url: null
+  quoted_text: (1) An employee of the department may issue a citation to a broker responsible for
+    maintenance of a trust account for failure to comply with trust account maintenance requirements
+    as provided by rule under 37-1-319 (3).
+  secondary: []
+terms:
+  - citation
+  - trust account
+  - department
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

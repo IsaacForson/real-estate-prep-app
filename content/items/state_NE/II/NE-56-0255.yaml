@@ -1,0 +1,47 @@
+id: NE-56-0255
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker maintains five branch offices in Nebraska and is charged $260 in annual fees for
+  those offices. Is this amount permissible under the Nebraska Real Estate License Act?
+options:
+  - Yes, because each office fee is less than $50.
+  - No, because commissions may not charge fees for branch offices.
+  - No, because the total exceeds the maximum allowable of $250.
+  - Yes, because the total fee for all offices is under $300.
+key: C
+explanation: Under Neb. Rev. Stat. § 81-885.19, the fee for each branch office license may not
+  exceed $50. For five offices the maximum total is 5 × $50 = $250. Charging $260 exceeds this cap,
+  so the amount is not permissible. The idea that a $300 limit applies misstates the statutory
+  maximum.
+citation:
+  source: Neb. Rev. Stat. § 81-885 et seq. — Nebraska Real Estate License Act, Neb. Rev. Stat. §§
+    81-885 to 81-885.56 — NREC License Manual, Aug. 2026 ed. (OCR of scanned PDF) — § 81-885.19
+  url: null
+  quoted_text: The commission shall issue a branch office license upon the payment of an annual fee to
+    be established by the commission of not more than fifty dollars per license.
+  secondary: []
+math:
+  worked_solution: Number of offices = 5. Maximum fee per office = $50. Maximum total = 5 × $50 =
+    $250. Charged amount = $260. Since $260 > $250, the amount is not permissible.
+  formulas:
+    - Maximum allowable total fee = number of branch offices × maximum fee per office
+  onscreen_calculator_only: false
+terms:
+  - branch office
+  - fee
+  - maximum
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

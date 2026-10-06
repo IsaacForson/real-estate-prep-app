@@ -1,0 +1,47 @@
+id: RI-5-0342
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a broker license submits the names of six Rhode Island residents who have
+  known him for at least three years and are not related. How many more references than the minimum
+  required has the applicant provided?
+options:
+  - Zero references
+  - One reference
+  - Two references
+  - Three references
+key: D
+explanation: The rule mandates at least three references for a broker license application.
+  Submitting six references exceeds the minimum by three (6 − 3 = 3). The option ‘One reference’
+  would be correct only if four references were submitted, which is not the case.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-3(c)
+  url: null
+  quoted_text: The application for a broker’s license shall be accompanied by the names of at least
+    three (3) Rhode Island residents who have known the applicant for three (3) years,
+  secondary: []
+math:
+  worked_solution: |-
+    Submitted references = 6
+    Minimum required = 3
+    Extra references = 6 - 3 = 3
+  formulas:
+    - Extra references = Submitted references - Minimum required
+  onscreen_calculator_only: false
+terms:
+  - reference
+  - broker license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

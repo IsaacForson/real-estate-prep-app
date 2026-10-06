@@ -1,0 +1,42 @@
+id: NE-56-0260
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a Nebraska salesperson license states on the application that they have never
+  been convicted of a crime, but they were convicted of misdemeanor theft two years ago. According
+  to Neb. Rev. Stat. § 81-885.12(4), what is the likely outcome?
+options:
+  - The commission must approve the license because theft is not a felony
+  - The commission may refuse the license based on the false statement
+  - The commission must impose a fine but still issue the license
+  - The commission must accept the application and issue the license
+key: B
+explanation: The statute provides that a false statement of material fact on an application may
+  itself be sufficient ground for refusal of a license. Theft conviction is a material fact, and the
+  false statement about it triggers this provision. The other options add consequences not stated in
+  the statute.
+citation:
+  source: Neb. Rev. Stat. § 81-885.12(4)
+  url: null
+  quoted_text: When an applicant has made a false statement of material fact on an application, such
+    false stalernent may In Itself be sufficient ground for refusal of a license.
+  secondary: []
+terms:
+  - false statement
+  - material fact
+  - application
+  - refusal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

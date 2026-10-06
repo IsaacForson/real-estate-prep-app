@@ -1,0 +1,47 @@
+id: DE-2901-0289
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits a client’s earnest money check into his personal checking account instead of
+  the brokerage’s escrow account. Under Delaware law, is this permissible?
+options:
+  - It is not permissible when the client does not provide written consent to the deposit.
+  - It is permissible as long as the broker maintains a separate ledger for the client’s funds.
+  - It is permissible because the broker can access the funds immediately for business needs.
+  - It is not permissible because the account is not established by the brokerage organization.
+key: D
+explanation: The Delaware statute defines an escrow account as a separate account established by the
+  brokerage organization used solely for clients’ moneys. Depositing a client’s earnest money into a
+  personal checking account violates this definition because the account is not established by the
+  brokerage organization. Therefore the option stating that it is not permissible because the
+  account is not established by the brokerage organization is correct. The option claiming
+  permissibility based on client written consent is incorrect because consent does not override the
+  requirement for a brokerage‑established escrow account. The option claiming permissibility due to
+  maintaining a separate ledger is incorrect because a ledger does not change the nature of the
+  account. The option claiming permissibility because the broker can access the funds immediately is
+  incorrect because immediate access does not satisfy the escrow account requirement.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2901(14)
+  url: null
+  quoted_text: “Escrow account” means a separate account established by the brokerage organization
+    used solely for moneys in which a broker’s customers or clients have an interest in accordance
+    with the terms of a real estate services transaction.
+  secondary: []
+terms:
+  - escrow account
+  - personal account
+  - brokerage organization
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

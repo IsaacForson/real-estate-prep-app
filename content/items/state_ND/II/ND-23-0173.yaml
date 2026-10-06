@@ -1,0 +1,45 @@
+id: ND-23-0173
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker submits her renewal application on November 10, includes the required fee, but
+  forgets to attach the continuing education certificate. According to N.D. Cent. Code § 43-23-13.1,
+  what is the status of her application for the upcoming license period?
+options:
+  - License not renewed timely because application lacks required certification
+  - License renewed timely because fee submitted before November fifteenth
+  - License renewed but broker may not charge commission after December thirty-first
+  - License automatically canceled and must reapply for licensure
+key: A
+explanation: The renewal application must be accompanied by certification showing compliance with
+  continuing education and submitted by the deadline; without that certification the application is
+  not proper, so the license will not be renewed timely. The most tempting distractor is License
+  renewed timely because fee submitted before November fifteenth because timely fee submission alone
+  does not satisfy the certification requirement.
+citation:
+  source: N.D. Cent. Code § 43-23-13.1
+  url: null
+  quoted_text: The application for renewal must be accompanied by such certification as required by
+    this chapter and rules of the commission to show compliance with the educational requirements of
+    sections 43-23-08 and 43-23-08.2, and must be submitted to the commission with the appropriate
+    fee no later than the application deadline set by the commission.
+  secondary: []
+terms:
+  - renewal
+  - application
+  - certification
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

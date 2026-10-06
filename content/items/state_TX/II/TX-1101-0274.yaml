@@ -1,0 +1,44 @@
+id: TX-1101-0274
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A business entity seeks a broker license. Its designated broker owns 5 percent of the entity.
+  According to Texas Occupations Code §1101.355(a)(2), what is the minimum errors and omissions
+  insurance limit the entity must maintain?
+options:
+  - $500,000
+  - $1,000,000
+  - $750,000
+  - $2,000,000
+key: B
+explanation: Because the designated broker owns less than 10 percent of the entity, the statute
+  mandates a minimum errors and omissions insurance limit of $1 million per occurrence. The $750,000
+  distractor falls short of this requirement and would not satisfy the rule.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.355(a)(2)
+  url: null
+  quoted_text: provide proof that the entity maintains errors and omissions insurance with a minimum
+    annual limit of $1 million for each occurrence if the designated broker owns less than 10
+    percent of the business entity.
+  secondary: []
+terms:
+  - errors and omissions insurance
+  - designated broker
+  - ownership
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,41 @@
+id: AL-27-0297
+jurisdiction: AL
+bank: state_AL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: John, acting under a power of attorney for his uncle, receives a commission for helping sell
+  the uncle's house. According to Ala. Code § 34-27-2(b)(3), does John need a real estate license?
+options:
+  - John must hold a real estate license because he received compensation for the transaction
+  - John is exempt from licensing requirements because he acted under a power of attorney
+  - John is exempt from licensing requirements because he acted in good faith
+  - John must hold a real estate license only if he also negotiated the sale price
+key: A
+explanation: The exemption for persons acting under a power of attorney requires that they act
+  without compensation. Because John received a commission, he does not meet the exemption’s
+  condition and must hold a license. The distractor that claims exemption based solely on acting
+  under a power of attorney ignores the compensation requirement.
+citation:
+  source: Ala. Code § 34-27-2(b)(3)
+  url: null
+  quoted_text: Persons acting without compensation and in good faith under a duly executed power of
+    attorney authorizing the consummation of a real estate transaction.
+  secondary: []
+terms:
+  - power of attorney
+  - compensation
+  - good faith
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

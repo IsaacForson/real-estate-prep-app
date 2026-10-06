@@ -1,0 +1,46 @@
+id: MI-25-0221
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A Michigan real estate broker adopts an assumed name 'Lakeview Realty' on April 10. According
+  to Michigan's occupational code, by what date must the broker notify the department of this
+  assumed name?
+options:
+  - April 10
+  - April 30
+  - May 10
+  - May 20
+key: C
+explanation: The statute requires a broker to notify the department within 30 days after adopting an
+  assumed name (or with the license application, whichever is earlier). Adding 30 days to April 10
+  gives May 10, so that is the deadline. April 30 is only 20 days after adoption, which is too
+  early; May 20 is 40 days after adoption, which exceeds the allowed period.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512(5)
+  url: null
+  quoted_text: A real estate broker shall notify the department of its adoption of an assumed name
+    with its license application, or within 30 days after it adopts an assumed name, whichever is
+    earlier.
+  secondary: []
+terms:
+  - assumed name
+  - notification
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

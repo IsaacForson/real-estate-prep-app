@@ -1,0 +1,63 @@
+id: ND-23-0130
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A commissioner attends two days of commission meetings in a month. The legislative assembly
+  daily compensation rate is $150 per day, and the commission has set the per diem at $120 per day
+  in its annual budget. Under N.D. Cent. Code § 43-23-04, what is the maximum amount the
+  commissioner may receive for one day of service?
+options:
+  - $120
+  - $150
+  - $270
+  - $300
+key: A
+explanation: The commission may pay a per diem that does not exceed the daily compensation rate a
+  member of the legislative assembly receives, as set by the commission in its annual budget process
+  (N.D. Cent. Code § 43-23-04). The legislative rate is $150 per day, but the commission has
+  budgeted $120 per day. Because the commission’s amount is lower, the maximum payable for one day
+  of service is $120. The option stating $150 reflects the legislative rate but does not incorporate
+  the commission’s lower budget limit.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-04
+  url: null
+  quoted_text: The members of the commission are entitled to receive per diem, not to exceed the daily
+    compensation rate a member of the legislative assembly is entitled to receive under section
+    54-35-10 for attendance at a legislative management committee meeting, as determined by the
+    commission in the annual budget process, for each day actually engaged in the service of the
+    commission
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Legislative daily compensation rate = $150.
+
+    Step 2: Commission-set per diem = $120.
+
+    Step 3: Apply N.D. Cent. Code § 43-23-04: maximum per diem = min(legislative rate,
+    commission-set per diem).
+
+    Step 4: Compute min($150, $120) = $120.
+
+    Step 5: Therefore, the maximum amount for one day of service is $120.
+  formulas:
+    - Maximum per diem = min(legislative daily compensation rate, commission-set per diem)
+  onscreen_calculator_only: false
+terms:
+  - per diem
+  - commission
+  - legislative assembly
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

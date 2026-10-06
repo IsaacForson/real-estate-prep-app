@@ -1,0 +1,40 @@
+id: ID-20-0318
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker closed a transaction on August 20, 2022. Until what date must the broker retain the
+  transaction file records under Idaho Code § 54-2049?
+options:
+  - December 31, 2023
+  - December 31, 2024
+  - December 31, 2025
+  - December 31, 2026
+key: C
+explanation: Records must be kept for three calendar years after the year the transaction closed;
+  adding 2023, 2024, and 2025 yields a retention deadline of December 31, 2025. The December 31,
+  2024 option results from counting only two years after the closed year, a frequent error.
+citation:
+  source: Idaho Code § 54-2049
+  url: null
+  quoted_text: The following records must be kept by a broker for three (3) calendar years after the
+    year in which the event occurred, the transaction closed, all funds were disbursed, or the
+    agreement and any written extension expired.
+  secondary: []
+terms:
+  - record
+  - retention
+  - years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

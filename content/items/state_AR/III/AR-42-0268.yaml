@@ -1,0 +1,42 @@
+id: AR-42-0268
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives earnest money on a Friday, and the purchase contract is executed by both
+  parties that same day. If the following Monday is a state holiday, by what date must the trust
+  funds be deposited or otherwise handled according to Rule 10.8(g)(1)?
+options:
+  - Tuesday
+  - Wednesday
+  - Thursday
+  - Friday
+key: A
+explanation: Rule 10.8(g)(1) requires trust funds to be handled no later than three days after
+  contract execution, with the third day extended if it falls on a Saturday, Sunday, or legal
+  holiday. Counting Friday as day 0, Saturday day 1, Sunday day 2, and Monday as the third day;
+  because Monday is a holiday, the deadline moves to the next business day, Tuesday.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.8(g)(1)
+  url: null
+  quoted_text: Should the third (3rd) day be a Saturday, Sunday, or legal holiday, then the third
+    (3rd) day is extended to the next day which is not a Saturday, Sunday, or legal holiday.
+  secondary: []
+terms:
+  - trust funds
+  - deadline
+  - holiday
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,39 @@
+id: ND-23-0157
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under N.D. Admin. Code § 70-02-01-16(2), how many days does a licensee have to file an answer
+  after receiving a verified complaint?
+options:
+  - 5 days
+  - 10 days
+  - 20 days
+  - 30 days
+key: C
+explanation: The rule states that the licensee must file the answer within twenty days from receipt
+  of the complaint. Therefore, twenty days is the correct timeframe. Ten days is incorrect because
+  the rule specifies twenty days, not ten.
+citation:
+  source: N.D. Admin. Code § 70-02-01-16(2)
+  url: null
+  quoted_text: The licensee against whom a complaint has been filed must, within twenty days from
+    receipt of complaint, file the licensee's answer on forms furnished by the commission.
+  secondary: []
+terms:
+  - complaint
+  - answer
+  - timeline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

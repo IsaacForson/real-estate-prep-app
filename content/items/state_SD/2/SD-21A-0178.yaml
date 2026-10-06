@@ -1,0 +1,42 @@
+id: SD-21A-0178
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant failed the real estate licensing examination in another state eight months ago
+  and has not otherwise been rejected for a license. May the applicant submit a South Dakota real
+  estate license application now?
+options:
+  - Yes, the applicant may apply because a prior examination failure does not constitute a rejection
+    under the statute.
+  - No, because the applicant must wait one year after any exam failure before applying.
+  - Yes, but only if the applicant retakes and passes the examination in South Dakota first.
+  - No, because any prior exam failure permanently disqualifies the applicant from licensure.
+key: A
+explanation: S.D. Codified Laws § 36-21A-30 permits an application despite a prior exam failure,
+  provided the failure is not the basis for a rejection within the prior year. Since the applicant
+  has not been rejected, the application may be submitted. The one-year wait applies only if the
+  failure caused a rejection, which is not the case here.
+citation:
+  source: S.D. Codified Laws § 36-21A-30
+  url: null
+  quoted_text: whose application for a license has not been rejected, except for the reason that the
+    applicant failed any examination required by this chapter, in this or any other state within one
+    year prior to the date of application;
+  secondary: []
+terms:
+  - examination
+  - rejection
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

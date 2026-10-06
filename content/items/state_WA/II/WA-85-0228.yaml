@@ -1,0 +1,43 @@
+id: WA-85-0228
+jurisdiction: WA
+bank: state_WA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A managing broker informs a departing broker that the broker's license will not be surrendered
+  until the broker completes a pending transaction. Under WAC 308-124A-730, what is the consequence
+  of the managing broker's action?
+options:
+  - The managing broker's action is permissible if the broker agrees in writing.
+  - The managing broker's action constitutes a violation that may lead to disciplinary action.
+  - The managing broker's action is required to protect the firm's interests.
+  - The managing broker's action has no effect on the license surrender process.
+key: B
+explanation: The rule prohibits a managing broker from conditioning the surrender of a license on
+  any act by the broker or managing broker. Conditioning surrender on completing a transaction
+  violates this prohibition and may lead to disciplinary action. The other options incorrectly
+  suggest the action is allowed, required, or inconsequential.
+citation:
+  source: Wash. Admin. Code ch. 308-124A — WAC Chapter 308-124A — Real Estate—Licensing and
+    Examination — § 308-124A-730
+  url: null
+  quoted_text: The managing broker, branch manager or designated broker may not condition his or her
+    surrender of license to the real estate program upon performance of any act by the broker or
+    managing broker.
+  secondary: []
+terms:
+  - condition
+  - surrender
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

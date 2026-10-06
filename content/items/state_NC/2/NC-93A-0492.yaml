@@ -1,0 +1,42 @@
+id: NC-93A-0492
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "2"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A client sends a written request to a broker for copies of all trust account records
+  pertaining to a completed transaction. Under 21 NCAC 58A .0108, by when must the broker furnish
+  the copies?
+options:
+  - Within thirty days after receipt of the request
+  - Within five days after receipt of the request
+  - Within ten days after receipt of the request
+  - Within fifteen days after receipt of the request
+key: C
+explanation: The rule states that upon written request, the broker shall furnish copies no later
+  than ten days after receipt. Distractor B proposes five days, which is too short; the rule
+  specifies ten days.
+citation:
+  source: 21 NCAC 58A 0101–0120 — 21 N.C. Admin. Code 58A Section .0100 — General Brokerage (Rules
+    .0101 to .0120; NC OAH compilation) .0108
+  url: null
+  quoted_text: Upon the written request of a client, a broker shall, no later than ten days after
+    receipt of the request, furnish the client with copies of any records retained as required by
+    Rule .0108 of this Section that pertain to the transaction to which the client was a party.
+  secondary: []
+terms:
+  - written request
+  - copies
+  - ten days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

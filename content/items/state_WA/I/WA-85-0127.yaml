@@ -1,0 +1,45 @@
+id: WA-85-0127
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee places an advertisement in a newspaper using 8-point gray text on a white
+  background. Under RCW 18.85.011, is this advertisement considered 'clear and conspicuous'?
+options:
+  - Yes because the text is legible and large enough to be easily read by most viewers
+  - No because the color contrast and size are insufficient to be readily noticed and understood
+  - Yes because the advertisement appears in a newspaper which is an approved advertising medium
+  - No because the advertisement lacks the licensee's name and contact information required by law
+key: B
+explanation: The advertisement uses 8‑point gray text on a white background, which does not provide
+  sufficient color contrast or size to be readily noticed and understood, so it is not clear and
+  conspicuous under RCW 18.85.011. The statement that the text is legible and large enough ignores
+  the contrast requirement. The claim that appearing in an approved medium makes it clear and
+  conspicuous overlooks the specific visual standards. The assertion that the ad lacks the
+  licensee’s name and contact information introduces a requirement that is not part of the clear and
+  conspicuous definition.
+citation:
+  source: "### Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing
+    Brokers — § 18.85.011"
+  url: null
+  quoted_text: '"Clear and conspicuous" in an advertising statement means the representation or term
+    being used is of such a color, contrast, size, or audibility, and presented in a manner so as to
+    be readily noticed and understood.'
+  secondary: []
+terms:
+  - clear and conspicuous
+  - advertising
+  - readability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

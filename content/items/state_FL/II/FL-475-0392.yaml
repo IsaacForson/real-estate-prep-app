@@ -1,0 +1,43 @@
+id: FL-475-0392
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Florida Statute 475.709(7), if the owner and broker are unable to agree in
+  writing regarding the release of a purchase-money note, within how many days after closing must
+  the closing agent interplead the note?
+options:
+  - The closing agent must interplead the note within 7 days after closing.
+  - The closing agent must interplead the note within 5 days after closing.
+  - The closing agent must interplead the note within 10 days after closing.
+  - The closing agent must interplead the note within 3 days after closing.
+key: B
+explanation: The statute states that if the owner and broker cannot agree within 5 days after
+  closing regarding the release of the purchase-money note, the closing agent shall interplead the
+  note. Therefore, the 5‑day period triggers the interpleader requirement. A 3‑day period is
+  incorrect because the law specifies 5 days, not a shorter interval.
+citation:
+  source: Fla. Stat. § 475.709(7)
+  url: null
+  quoted_text: If the owner and the broker are unable to agree within 5 days after the closing
+    regarding the closing agent’s release of the purchase-money note, the closing agent shall
+    interplead the purchase-money note along with any money reserved proceeds in accordance with s.
+    475.711.
+  secondary: []
+terms:
+  - closing
+  - interplead
+  - purchase-money note
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,42 @@
+id: DC-198-0274
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee applicant fails the required real estate examination. Under D.C. Code § 47-2853.22,
+  what action may the Board of Real Estate take without first providing the applicant a hearing?
+options:
+  - Deny the application
+  - Impose a civil penalty
+  - Require remedial training
+  - Suspend the licensee
+key: A
+explanation: The statute provides that a board must give an opportunity for a hearing before denying
+  a license, except where the denial is based solely on the applicant’s failure to pass a required
+  examination. Therefore, the board may deny the application without a hearing. Imposing a civil
+  penalty would require a hearing because it is not covered by that exception.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.22"
+  url: null
+  quoted_text: except where the denial of the license is based solely on an applicant’s failure to
+    meet minimum age, education, or experience requirements, pass a required examination, pay the
+    applicable fees established by the board, or where there are no material facts at issue.
+  secondary: []
+terms:
+  - denial
+  - hearing
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

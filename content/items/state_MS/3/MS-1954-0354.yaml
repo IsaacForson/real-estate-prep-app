@@ -1,0 +1,44 @@
+id: MS-1954-0354
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A listing broker receives a second written offer from a prospective buyer before the owner has
+  accepted the first offer. The owner has not given any written instructions to postpone
+  presentation of offers. Under Mississippi rule, what must the broker do with the second offer?
+options:
+  - The broker must discard the second offer as it conflicts with the first offer
+  - The broker must seek the owner’s verbal permission before presenting the second offer
+  - The broker must present the second offer to the owner immediately
+  - The broker must hold the second offer until the owner accepts the first offer
+key: C
+explanation: Rule 30 Miss. Admin. Code Pt. 1601 § 3.2(D) requires that any other written offer
+  received before the owner has accepted an offer be presented to the owner unless the owner has
+  given specific written instructions from the owner to postpone. Since no postponement instructions
+  exist, the broker must present the offer. Holding the offer violates this requirement.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 § 3.2(D)
+  url: null
+  quoted_text: In the event that more than one written offer is made before the owner has accepted an
+    offer, any other written offer received by the listing broker, whether from a prospective
+    purchaser or from another licensee cooperating in a sale, shall be presented to the owner unless
+    the listing broker has specific, written instructions from the owner to postpone the
+    presentation of other offers.
+  secondary: []
+terms:
+  - offer
+  - presentation
+  - postpone
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

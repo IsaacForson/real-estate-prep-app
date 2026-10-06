@@ -1,0 +1,47 @@
+id: KS-3034-0301
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee, acting as a transaction broker, receives a $75 gift card from a title insurance
+  agent after referring a client for a title policy. Under Kan. Stat. Ann. § 58-3062(a)(23), is this
+  action permissible?
+options:
+  - No, unless the licensee has a written agreement with the title insurance agent.
+  - Yes, provided the licensee discloses the gift card to the client.
+  - No, because accepting any special favor from a title insurance agent is prohibited.
+  - Yes, because the gift card is less than $100 and therefore exempt.
+key: C
+explanation: The statute prohibits a licensee from knowingly receiving any special favor or
+  advantage from a title insurance agent related to title insurance. The statement that the licensee
+  may accept the gift card if there is a written agreement with the title insurance agent is
+  incorrect because the $100 exemption applies only to trust account expenses, not to gifts from
+  title agents.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(23)
+  url: null
+  quoted_text: knowingly receive or accept, directly or indirectly, any rebate, reduction or abatement
+    of any charge, or any special favor or advantage or any monetary consideration or inducement,
+    involving the issuance of a title insurance policy or contract
+  secondary: []
+math:
+  worked_solution: The gift card amount is $75.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - rebate
+  - title insurance
+  - special favor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

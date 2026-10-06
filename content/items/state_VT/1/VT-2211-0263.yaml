@@ -1,0 +1,38 @@
+id: VT-2211-0263
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has been a licensed salesperson for two years and has completed six separate and
+  unrelated closed transactions. Under 26 V.S.A. § 2292(a)(2), does the applicant meet the
+  experience requirement for a broker license?
+options:
+  - Passing the broker examination satisfies the requirement
+  - At least eight separate and unrelated closed transactions are required
+  - Two years of experience satisfies the requirement
+  - Completion of the required 40‑hour course satisfies the requirement
+key: B
+explanation: The rule requires at least eight separate and unrelated closed transactions in addition
+  to two years’ experience. Six transactions fails the transaction count, so the applicant does not
+  qualify. The distractor about two years’ experience ignores the transaction requirement.
+citation:
+  source: 26 V.S.A. § 2292(a)(2)
+  url: null
+  quoted_text: including at least eight separate and unrelated closed transactions
+  secondary: []
+terms:
+  - broker license
+  - experience requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

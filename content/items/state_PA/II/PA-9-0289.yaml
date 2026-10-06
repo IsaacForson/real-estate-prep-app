@@ -1,0 +1,44 @@
+id: PA-9-0289
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An attorney-in-fact holds a power of attorney from an owner solely to avoid the need for a
+  real estate broker in managing property. An attorney-at-law receives a fee from a client for
+  rendering services within the attorney-client relationship and does not hold himself out as a real
+  estate broker. Under 49 Pa. Code § 35.202, which of these individuals is excluded from the Real
+  Estate Licensing and Registration Act?
+options:
+  - The attorney-in-fact is excluded, but the attorney-at-law is not.
+  - Both individuals are excluded from the Act.
+  - Neither individual is excluded from the Act.
+  - The attorney-at-law is excluded, but the attorney-in-fact is not.
+key: D
+explanation: Subsection (4) excludes an attorney-in-fact only if the power of attorney is not used
+  to circumvent the intent of the act; here it is used to avoid a broker, so the exclusion does not
+  apply. Subsection (5) excludes an attorney-at-law who receives a fee and does not hold out as a
+  broker, which matches the second individual.
+citation:
+  source: 49 Pa. Code § 35.202(5)
+  url: null
+  quoted_text: An attorney-at-law who receives a fee from his client for rendering services within the
+    scope of the attorney-client relationship and does not hold himself out as a real estate broker
+  secondary: []
+terms:
+  - attorney
+  - fee
+  - exclusion
+  - power of attorney
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,47 @@
+id: VA-21-0330
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under Virginia law, the Virginia Real Estate Board must pay a receiver's expenses and fees if:"
+options:
+  - the licensee lacks sufficient funds to pay the receiver
+  - the court finds the licensee blameless and violation-free
+  - the receiver is appointed by a court with equity jurisdiction
+  - the escrow funds are insufficient to cover any outstanding debt
+key: B
+explanation: Under § 54.1‑2108, the Board is required to pay a receiver’s expenses and fees only
+  when a court determines that the licensee was without fault and did not violate any provision of
+  the chapter or Board regulations. The statement that the licensee lacks sufficient funds to pay
+  the receiver is incorrect because the Board’s responsibility is not triggered by the licensee’s
+  inability to pay; liability remains with the licensee unless the court finds no fault. Likewise,
+  the assertion that the receiver is appointed by a court with equity jurisdiction and the claim
+  that escrow funds are insufficient do not satisfy the statutory condition, so they are also
+  incorrect.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2108. Protection of escrow funds,
+    etc., held by broker.
+  url: null
+  quoted_text: If the court finds that the licensee was without fault and that he is found not to have
+    violated any provisions of this chapter or of the regulations of the Board, then the receiver's
+    expenses and fees shall be paid by the Board.
+  secondary: []
+terms:
+  - receiver
+  - expenses
+  - fault
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

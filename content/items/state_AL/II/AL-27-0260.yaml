@@ -1,0 +1,38 @@
+id: AL-27-0260
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An Alabama qualifying broker signs a co-brokerage agreement on July 3 and files a copy with
+  the commission on July 14. Under Ala. Code § 34-27-3(b), what is the status of this filing?
+options:
+  - Compliant because the filing occurred within the 10‑day period.
+  - Non‑compliant because the filing occurred after the 10‑day period.
+  - Compliant because the filing occurred exactly on the 10th day.
+  - Non‑compliant because the filing occurred before the agreement was signed.
+key: B
+explanation: The filing on July 14 is one day after the July 13 deadline (10 days after the July 3
+  signing), so it exceeds the allowed period and is non‑compliant. The option stating the filing
+  occurred within the 10‑day period is incorrect because the filing was made after the deadline.
+citation:
+  source: Ala. Code § 34-27-3(b)
+  url: null
+  quoted_text: the Alabama qualifying broker shall file with the commission a copy of each such
+    written agreement not more than 10 days after the agreement is signed by all of the parties.
+  secondary: []
+terms:
+  - co-brokerage agreement
+  - filing deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

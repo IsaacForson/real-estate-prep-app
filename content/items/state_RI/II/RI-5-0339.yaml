@@ -1,0 +1,42 @@
+id: RI-5-0339
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Attorney Jane, licensed by the Rhode Island Supreme Court, applies for a real estate
+  salesperson license. Does she need to take the written examination?
+options:
+  - Yes, she must pass the written exam before licensure
+  - No, she is exempt from the written examination
+  - Yes, but only the state-specific portion of the exam
+  - No, but she must finish forty-five classroom hours
+key: B
+explanation: Under § 5-20.5-4(d), an attorney licensed by the Rhode Island Supreme Court who applies
+  for a real estate license and pays the fee is granted a license without examination. Therefore,
+  Jane is exempt from the written exam. The option stating she must pass the exam contradicts the
+  statutory exemption.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-4(d)
+  url: null
+  quoted_text: When an attorney-at-law licensed by the supreme court of the state desires to have a
+    real estate broker’s license or a real estate salesperson’s license, the attorney, by
+    application, and upon payment of the applicable fee as provided in § 5-20.5-11, shall be granted
+    a license without examination.
+  secondary: []
+terms:
+  - attorney
+  - examination
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

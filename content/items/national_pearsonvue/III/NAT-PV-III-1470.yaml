@@ -1,0 +1,50 @@
+id: NAT-PV-III-1470
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A comparable property sold for $340,000 and includes a half bath that the subject property
+  does not have. If the market-derived adjustment for a half bath is $3,000, what is the adjusted
+  price of the comparable using the sales comparison approach?
+options:
+  - $337,000
+  - $343,000
+  - $340,000
+  - $350,000
+key: A
+explanation: Because the comparable has a feature the subject lacks (a half bath), it is considered
+  superior and its price must be adjusted downward by the market-derived amount. Subtracting $3,000
+  from $340,000 yields $337,000. Adding the adjustment would be incorrect as it would treat the
+  comparable as inferior.
+citation:
+  source: REP Ref. Valuation & Appraisal § 7.3
+  url: null
+  quoted_text: If a comparable has a feature the subject lacks (comparable superior), its price is
+    adjusted downward.
+  secondary: []
+math:
+  worked_solution: "Start with the comparable sale price of $340,000. Since the comparable includes a
+    half bath that the subject property lacks, the comparable is considered superior. Apply a
+    downward adjustment of $3,000 for the half bath. Subtract: $340,000 - $3,000 = $337,000. The
+    adjusted price is $337,000."
+  formulas:
+    - Adjusted Price = Comparable Price - Adjustment for Superior Feature
+  onscreen_calculator_only: false
+terms:
+  - sales comparison
+  - adjustment
+  - comparable
+  - half bath
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

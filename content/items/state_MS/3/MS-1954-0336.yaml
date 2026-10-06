@@ -1,0 +1,43 @@
+id: MS-1954-0336
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives an earnest money check on Wednesday, May 15, 2024, and deposits the funds
+  into the trust account on Monday, May 20, 2024. Assuming Thursday and Friday are banking days,
+  which subsection of §73-35-21 provides grounds for discipline?
+options:
+  - Making any substantial misrepresentation in a real estate transaction
+  - Making any false promises likely to influence, persuade, or induce a client
+  - Failing to account for or remit others' money within a reasonable time
+  - Acting for more than one party without all parties' knowledge
+key: C
+explanation: The licensee had until the close of business on Friday, May 17 (the second banking day
+  after receipt) to deposit the funds. Depositing on Monday, May 20 is late, constituting a failure
+  to account for others' money within a reasonable time.
+citation:
+  source: Miss. Code Ann. § 73-35-21(f)
+  url: null
+  quoted_text: “Reasonable time” in this context means by the close of business of two (2) banking
+    days immediately following the date on which a licensee comes into possession of monies
+    belonging to others or on which a responsible broker takes or receives any cash or checks from
+    procuring the execution of an earnest money contract or option or other contract;
+  secondary: []
+terms:
+  - earnest money
+  - banking day
+  - trust account
+  - reasonable time
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

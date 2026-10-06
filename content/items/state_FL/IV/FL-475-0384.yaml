@@ -1,0 +1,58 @@
+id: FL-475-0384
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person oversees an appraiser panel of 18 state-certified appraisers within Florida and
+  coordinates appraisal services for compensation. Under Florida law, does this person qualify as an
+  appraisal management company?
+options:
+  - The person does not qualify as an appraisal management company because the statute requires
+    oversight of 25 or more appraisers in two or more states, and overseeing fewer than 25 in a
+    single state is insufficient.
+  - The person does not qualify as an appraisal management company because only licensed real estate
+    brokers may perform appraisal management services under Florida law.
+  - The person qualifies as an appraisal management company because they oversee more than 15
+    state-certified appraisers in a single state and perform appraisal management services for
+    compensation.
+  - The person qualifies as an appraisal management company only if they also hold a certified
+    appraiser license, which is not required by the definition.
+key: C
+explanation: Under subsection 475.611(c), an appraisal management company is defined as a person who
+  oversees more than 15 state‑certified or state‑licensed appraisers in a state (or 25 or more in
+  two or more states) and performs appraisal management services. The scenario meets the first
+  threshold, so the person qualifies. The statement that the person does not qualify because the
+  statute requires oversight of 25 or more appraisers in two or more states is incorrect because the
+  single‑state threshold of more than 15 is sufficient. The claim that only licensed real estate
+  brokers may perform appraisal management services adds a requirement that the definition does not
+  contain. The assertion that the person qualifies only if they also hold a certified appraiser
+  license imposes an extra certification requirement that the definition does not include.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.611(c)
+  url: null
+  quoted_text: '"Appraisal management company" means a person who, within a 12‑month period, oversees
+    an appraiser panel of more than 15 state‑certified or state‑licensed appraisers in a state, or
+    25 or more state‑certified or state‑licensed appraisers in two or more states, and who performs
+    appraisal management services regardless of the use of the term "appraisal management company,"
+    "appraiser cooperative," "appraiser portal," "mortgage technology company," or other term.'
+  secondary: []
+terms:
+  - appraisal management company
+  - appraiser panel
+  - state-certified appraiser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

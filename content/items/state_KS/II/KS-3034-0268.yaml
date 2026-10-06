@@ -1,0 +1,44 @@
+id: KS-3034-0268
+jurisdiction: KS
+bank: state_KS
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker allows an unlicensed assistant to use the broker's license to list a property for
+  sale. The assistant finds a buyer and negotiates a purchase agreement. The broker later seeks to
+  collect the commission from the seller. Under K.S.A. 58-3042(a), what is the likely outcome
+  regarding the broker's ability to recover the commission?
+options:
+  - The broker may recover the commission only if the assistant later obtains a real estate license.
+  - The broker may not recover the commission because the license gives authority only to the person
+    to whom it is issued.
+  - The broker may recover the commission because the assistant acted under the broker's supervision.
+  - The broker may recover the commission if the assistant was employed as an independent contractor.
+key: B
+explanation: The statute provides that a real estate license gives authority only to the person to
+  whom it is issued, so the unlicensed assistant had no authority to perform brokerage acts. Because
+  the assistant was not licensed, any commission earned from those acts cannot be recovered by the
+  broker. The distractor claiming recovery if supervised is incorrect because supervision does not
+  cure the lack of individual licensure required by the statute.
+citation:
+  source: Kan. Stat. Ann. § 58-3042(a)
+  url: null
+  quoted_text: No real estate license shall give authority to any person other than the person to whom
+    the license is issued.
+  secondary: []
+terms:
+  - license
+  - authority
+  - unlicensed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

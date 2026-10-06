@@ -1,0 +1,48 @@
+id: GA-1-0287
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A firm licensee allowed their license to lapse for seven months. What is the total
+  reinstatement fee for this license?
+options:
+  - $100.00.
+  - $150.00.
+  - $200.00.
+  - $125.00.
+key: B
+explanation: Per Ga. Comp. R. & Regs. § 520-1-.04(1)(a)3(ii), the reinstatement fee is $100.00 plus
+  $50.00 for each month or portion beyond six months. Seven months lapsed means one month beyond
+  six, so $100.00 + $50.00 = $150.00. The $200.00 distractor would correspond to eight months lapsed
+  (two months beyond six).
+citation:
+  source: Ga. Comp. R. & Regs. § 520-1-.04(1)(a)3(ii)
+  url: null
+  quoted_text: if the license or approval is reinstated more than four months after the date of
+    lapsing, $100.00 plus an additional fee of $25.00 for an individual or instructor or $50.00 for
+    a firm or school for each month or portion of a month beyond six months from the date of
+    lapsing;
+  secondary: []
+math:
+  worked_solution: "Base fee: $100.00. Months lapsed: 7. Months beyond six: 7 - 6 = 1. Additional fee:
+    1 × $50.00 = $50.00. Total: $100.00 + $50.00 = $150.00."
+  formulas:
+    - Reinstatement fee = $100 + ($50 × months beyond six)
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - fee
+  - lapse
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

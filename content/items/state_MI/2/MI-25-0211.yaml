@@ -1,0 +1,43 @@
+id: MI-25-0211
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker opened a trust or escrow account on January 1, 2022. According to Michigan
+  administrative rules, what is the earliest date by which the broker may destroy the account’s
+  records?
+options:
+  - January 1, 2023
+  - January 1, 2024
+  - January 1, 2025
+  - January 1, 2026
+key: C
+explanation: Records must be kept for not less than three years from the date the account was
+  opened. Three years after January 1, 2022 is January 1, 2025, which is the earliest permissible
+  destruction date. Destroying them after only two years would violate the three‑year minimum.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R 339.22101–339.22667
+    — Department of Licensing and Regulatory Affairs, Real Estate Brokers and Salespersons (General
+    Rules), official LARA Administrative Rules System PDF read via Internet Archive capture of
+    2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch the current R
+    339.22101–339.22703 set when reachable R 339.22313(8)
+  url: null
+  quoted_text: All trust or escrow account records must be maintained for a period of not less than 3
+    years from the date of inception of the records.
+  secondary: []
+terms:
+  - trust account
+  - record retention
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

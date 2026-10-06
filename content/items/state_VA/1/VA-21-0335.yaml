@@ -1,0 +1,40 @@
+id: VA-21-0335
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person has been actively engaged as a licensed real estate broker for eight consecutive
+  years. Does this person qualify to serve as one of the seven broker members of the Virginia Real
+  Estate Board?
+options:
+  - The person does not qualify because they lack the required consecutive years of experience.
+  - The person does not qualify because they exceed the required consecutive years of experience.
+  - The person qualifies because they meet the required consecutive years of experience.
+  - The person qualifies because they have less than the required consecutive years of experience.
+key: C
+explanation: The person has eight consecutive years of experience, which satisfies the minimum of
+  seven consecutive years required for the seven broker seats on the Board. Hence, they qualify to
+  serve as one of those members. The other options incorrectly state that they lack experience, have
+  too little, or are disqualified by excess experience.
+citation:
+  source: Va. Code Ann. § 54.1-2104
+  url: null
+  quoted_text: seven members who have been actively engaged as licensed real estate brokers or
+    salespersons for at least seven consecutive years before their appointment
+  secondary: []
+terms:
+  - experience
+  - consecutive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

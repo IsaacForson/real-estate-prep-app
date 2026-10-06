@@ -1,0 +1,48 @@
+id: FL-475-0405
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker charges a prospective tenant $120 for a rental information list, and the tenant does
+  not obtain a rental. Under Florida law, how much must the broker refund to the tenant?
+options:
+  - The broker must refund $30
+  - The broker must refund $60
+  - The broker must refund $90
+  - The broker must refund $120
+key: C
+explanation: The rule requires repayment of any amount over 25 percent of the fee when the tenant
+  does not obtain a rental; 25 percent of $120 is $30, so the refund is $120 − $30 = $90. Stating
+  that the broker must refund $60 incorrectly assumes a 50 percent refund.
+citation:
+  source: Fla. Stat. § 475.453(1)
+  url: null
+  quoted_text: contains a provision for the repayment of any amount over 25 percent of the fee to the
+    prospective tenant if the prospective tenant does not obtain a rental.
+  secondary: []
+math:
+  worked_solution: |-
+    Fee = $120
+    Allowable retain = Fee × 0.25 = $120 × 0.25 = $30
+    Refund = Fee − Allowable retain = $120 − $30 = $90
+  formulas:
+    - Allowable retain = Fee × 0.25
+    - Refund = Fee − Allowable retain
+  onscreen_calculator_only: false
+terms:
+  - rental
+  - fee
+  - refund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

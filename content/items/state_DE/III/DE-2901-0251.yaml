@@ -1,0 +1,43 @@
+id: DE-2901-0251
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker opens an escrow account at a bank located in Pennsylvania but maintains an office in
+  Delaware. Under 24 Del. Admin. Code § 2900-6.4, is the escrow account valid for the broker’s
+  license?
+options:
+  - The escrow account is valid because the broker maintains a Delaware office
+  - The escrow account is valid because the broker can use any U.S. bank
+  - The escrow account is invalid because the bank must have an office located in Delaware
+  - The escrow account is invalid because the broker must also maintain a separate trust account for
+    clients
+key: C
+explanation: The rule explicitly states that an escrow account must be opened and maintained in a
+  bank with an office located in Delaware. A bank in Pennsylvania without a Delaware office does not
+  satisfy this requirement, making the account invalid. Merely having a Delaware office does not
+  override the bank location requirement.
+citation:
+  source: 24 Del. Admin. Code § 2900 — 24 DE Admin. Code 2900 - Real Estate Commission Rules and
+    Regulations (Delaware Registrar of Regulations current text) § 6.4
+  url: null
+  quoted_text: An Escrow Account shall be opened and maintained by the Broker in a bank with an office
+    located in Delaware in order to receive and maintain a valid license.
+  secondary: []
+terms:
+  - escrow account
+  - Delaware bank
+  - office
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

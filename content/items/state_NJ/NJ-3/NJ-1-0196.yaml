@@ -1,0 +1,44 @@
+id: NJ-1-0196
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A builder plans to construct a housing development with four single-family homes in the
+  Pinelands area. According to N.J. Stat. Ann. tit. 13, ch. 18A, is this development considered a
+  'major development' under the Pinelands Protection Act?
+options:
+  - Classification as a major development due to exceeding the five-unit threshold
+  - Classification as not a major development because it has fewer than five dwelling units
+  - Classification as a major development because it involves residential construction
+  - Classification as not a major development because it is under three acres
+key: B
+explanation: According to N.J. Stat. Ann. tit. 13, ch. 18A, a major development is defined as any
+  housing development of five or more dwelling units. Since the proposed development contains only
+  four units, it does not meet that threshold and therefore is not a major development. The option
+  stating that the development is not a major development because it has fewer than five dwelling
+  units correctly reflects this rule.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 18A — New Jersey Statutes Title 13, Chapter 18A — Pinelands
+    Protection Act (N.J.S.A. 13:18A-1 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 — § 13:18A-3(h)
+  url: null
+  quoted_text: any construction or expansion of any housing development of five or more dwelling units
+  secondary: []
+terms:
+  - major development
+  - dwelling units
+  - Pinelands
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

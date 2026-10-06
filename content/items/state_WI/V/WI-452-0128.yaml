@@ -1,0 +1,45 @@
+id: WI-452-0128
+jurisdiction: WI
+bank: state_WI
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A prospective buyer receives a completed property condition report on Tuesday morning.
+  According to Wis. Stat. § 709.05(3), by what deadline must the buyer deliver a written rescission
+  to be timely?
+options:
+  - By the close of business on Wednesday
+  - By the close of business on Friday
+  - By the close of business on Monday
+  - By the close of business on Thursday
+key: D
+explanation: The rule requires delivery within 2 business days after receipt of the report. Counting
+  Tuesday as day zero, Wednesday is the first business day and Thursday the second, so the
+  rescission must be delivered by the end of Thursday. Delivering on Wednesday would be only one
+  business day after receipt, which is insufficient.
+citation:
+  source: Wis. Stat. § 709.05(3)
+  url: null
+  quoted_text: |-
+    Rescissions under this section are timely if they are deliv-
+    ered to the owner or the owner’s agent within 2 business days af-
+    ter the prospective buyer or the prospective buyer’s agent receives
+    the report, amended report or amendment to the report
+  secondary: []
+terms:
+  - rescission
+  - business days
+  - report
+  - timely
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

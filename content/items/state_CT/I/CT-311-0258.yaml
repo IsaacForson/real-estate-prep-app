@@ -1,0 +1,48 @@
+id: CT-311-0258
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Mr. Davis, a licensed broker who also operates a Connecticut real estate school, registers
+  four new prelicensing courses for the next licensing period. What total fee must he pay to the
+  department for these course registrations?
+options:
+  - $100.00
+  - $150.00
+  - $200.00
+  - $250.00
+key: C
+explanation: Each course registration costs fifty dollars per Conn. Gen. Stat. § 20-314e(a).
+  Multiplying four courses by $50.00 yields a total of $200.00. The $150.00 distractor results from
+  multiplying three courses instead of four, and the $250.00 distractor adds an extra $50.00
+  erroneously.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-314e. Courses of prelicensing or continuing education.
+    Registration. Fees. (a)
+  url: null
+  quoted_text: "The fee to register each course under this section shall be fifty dollars, and each
+    course registration application submitted to the department pursuant to this section shall
+    include:"
+  secondary: []
+math:
+  worked_solution: Course fee per course = $50.00; Number of courses = 4; Total fee = 4 × $50.00 = $200.00
+  formulas:
+    - Total fee = number of courses × course fee
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - course
+  - registration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,38 @@
+id: SD-21A-0023
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The commission has five members. If only three members attend a meeting, can they take
+  official action?
+options:
+  - No, because at least four members must be present.
+  - Only if the meeting is called by the chairperson.
+  - Only if the executive director is present.
+  - Yes, because three present is a majority and may act.
+key: D
+explanation: A majority of the commission, which is three of five members, constitutes a quorum and
+  may perform all duties and powers. The distractor claiming at least four members are needed
+  incorrectly imposes a supermajority requirement.
+citation:
+  source: S.D. Codified Laws § 36-21A-15
+  url: null
+  quoted_text: A majority of the commission, in meetings duly assembled, may perform and exercise all
+    of the duties and powers of the commission.
+  secondary: []
+terms:
+  - quorum
+  - majority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

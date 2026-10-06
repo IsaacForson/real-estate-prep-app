@@ -1,0 +1,43 @@
+id: HI-467-0240
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Hawaii broker receives a referral fee from a licensed broker in California who did not
+  participate in any negotiations for the Hawaii transaction. Under Haw. Rev. Stat. § 467-14(14)(A),
+  may the Hawaii broker accept this fee?
+options:
+  - The fee may be accepted because the out-of-state broker did not conduct negotiations in this
+    State
+  - The fee may be accepted because the out-of-state broker is licensed in any state
+  - The fee may not be accepted because any fee split with another broker is prohibited
+  - The fee may not be accepted because the Hawaii broker must share it equally
+key: A
+explanation: The exception in paragraph (14)(A) of Haw. Rev. Stat. § 467-14 allows a Hawaii broker
+  to accept a referral fee from an out-of-state broker who does not conduct any of the negotiations
+  for the Hawaii transaction. The statement that any fee split with another broker is prohibited
+  ignores this exception and is therefore incorrect.
+citation:
+  source: Haw. Rev. Stat. § 467-14(14)(A)
+  url: null
+  quoted_text: A licensed real estate broker of another state, territory, or possession of the United
+    States if that real estate broker does not conduct in this State any of the negotiations for
+    which a commission is paid
+  secondary: []
+terms:
+  - commission
+  - broker
+  - negotiation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

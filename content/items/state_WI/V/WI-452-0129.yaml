@@ -1,0 +1,46 @@
+id: WI-452-0129
+jurisdiction: WI
+bank: state_WI
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A purchaser receives all required condominium disclosure documents on a Friday. Under Wis.
+  Stat. § 703.33(4)(a), what is the latest day by which the purchaser may deliver a written
+  rescission without stating any reason?
+options:
+  - By the close of business on the following Monday
+  - By the close of business on the following Tuesday
+  - By the close of business on the following Wednesday
+  - By the close of business on the following Friday
+key: D
+explanation: The statute allows rescission within 5 business days after receipt of all required
+  documents. Starting with Friday as day zero, the fifth business day is the following Friday.
+  Therefore, the purchaser may rescind by the close of business on that Friday. Earlier days, such
+  as Wednesday, fall short of the five‑day period.
+citation:
+  source: Wis. Stat. § 703.33(4)(a)
+  url: null
+  quoted_text: |-
+    Any purchaser may at any time within 5 business days following
+    receipt of all of the documents required under sub. (1) and within
+    5 business days following receipt of any amendment required un-
+    der sub. (3m), rescind in writing a contract of sale without stating
+    any reason and without any liability on his or her part
+  secondary: []
+terms:
+  - condominium
+  - disclosure
+  - rescission
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

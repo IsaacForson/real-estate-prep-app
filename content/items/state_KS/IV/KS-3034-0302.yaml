@@ -1,0 +1,43 @@
+id: KS-3034-0302
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker, acting as the listing agent, places a yard sign advertising a property for sale
+  before obtaining the seller's written consent. Under Kan. Stat. Ann. § 58-3062(a)(7), is this
+  action permissible?
+options:
+  - Yes, because the sign is temporary and does not affect the property's value or marketability.
+  - No, because written consent is required before placing a sign offering property for sale or
+    lease.
+  - Yes, provided the broker informs the seller verbally after placing the sign and obtains
+    retroactive approval.
+  - No, unless the sign is removed within one business day and the seller provides written consent
+    afterward.
+key: B
+explanation: The statute forbids placing a sign offering property for sale or lease without the
+  owner's written consent. The claim that the sign is temporary and does not affect the property's
+  value or marketability is incorrect because the prohibition does not depend on those factors.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(7)
+  url: null
+  quoted_text: Place a sign on any property offering it for sale or lease without the written consent
+    of the owner or the owner's authorized agent.
+  secondary: []
+terms:
+  - sign
+  - consent
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

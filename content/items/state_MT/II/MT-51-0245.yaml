@@ -1,0 +1,44 @@
+id: MT-51-0245
+jurisdiction: MT
+bank: state_MT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer agent has completed all performance under the buyer broker agreement, but the
+  agreement's expiration date is still two months away. When does the agency relationship end under
+  Montana law?
+options:
+  - The agency relationship ends upon an authorized termination of the agreement
+  - The agency relationship ends upon mutual agreement of the parties
+  - The agency relationship ends upon completion of performance by the agent
+  - The agency relationship ends upon the expiration date agreed to in the agreement
+key: C
+explanation: According to § 37-51-103(11)(a), the agency relationship continues until the earliest
+  of completion of performance, expiration date, or authorized termination. Since performance is
+  complete, that is the earliest event, ending the relationship. The distractor focusing on the
+  expiration date ignores the 'earliest' rule.
+citation:
+  source: Mont. Code Ann. § 37-51-103(11)(a)
+  url: null
+  quoted_text: "(11) (a) The agency relationship of a buyer agent, seller agent, or dual agent
+    continues until the earliest of the following dates: (i) completion of performance by the agent;
+    (ii) the expiration date agreed to in the listing agreement or buyer broker agreement; or (iii)
+    the occurrence of any authorized termination of the listing agreement or buyer broker
+    agreement."
+  secondary: []
+terms:
+  - agency relationship
+  - buyer agent
+  - completion of performance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

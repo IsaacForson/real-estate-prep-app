@@ -1,0 +1,41 @@
+id: MN-82-0283
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker has made full disclosure to both parties about dual agency but has not obtained their
+  written consent. May the broker proceed as a dual agent in a residential transaction under Minn.
+  Stat. § 82.67 Subd. 4?
+options:
+  - The broker may proceed because disclosure alone is sufficient
+  - The broker may not proceed without written consent of both parties
+  - The broker may proceed if the broker believes the parties will not object
+  - The broker may proceed with only the seller’s consent
+key: B
+explanation: The statute requires the broker to obtain the consent of all parties after making full
+  disclosure; proceeding without consent is not permitted. The other options misstate the consent
+  requirement.
+citation:
+  source: Minn. Stat. ch. 82 § 82.67 Subd. 4
+  url: null
+  quoted_text: A broker, having made full disclosure, must obtain the consent of all parties to these
+    circumstances in residential real property transactions in the purchase agreement in the form
+    set forth below...
+  secondary: []
+terms:
+  - dual agency
+  - consent
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

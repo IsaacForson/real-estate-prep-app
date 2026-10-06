@@ -1,0 +1,42 @@
+id: VA-21-0300
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a Virginia broker license by reciprocity has been actively engaged as a
+  salesperson for 34 of the last 48 months. According to Virginia regulations, what is missing for
+  them to meet the experience requirement?
+options:
+  - Two additional months of active engagement as a salesperson
+  - Passing the Virginia real estate broker examination
+  - Proof of substantially equivalent education
+  - Verification of experience by a principal broker
+key: A
+explanation: The rule requires 36 months of active engagement; the applicant has only 34, so they
+  need two more months. The other options describe requirements that are either already satisfied
+  (exam, education) or not the specific deficiency (verification).
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-35
+  url: null
+  quoted_text: the applicant must have been actively engaged as defined by 18VAC135-20-10 for 36 of
+    the preceding 48 months.
+  secondary: []
+terms:
+  - active engagement
+  - broker license
+  - reciprocity
+  - experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,47 @@
+id: MI-25-0228
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant finished the required 90 clock hours of prelicensure classroom education 20
+  months ago and has held an active real estate salesperson license for the past 20 months. Under
+  Michigan Occupational Code Article 25, is the applicant eligible to receive a real estate broker's
+  license based on the prelicensure education requirement?
+options:
+  - Eligible if the applicant also completes an additional 9 hours of civil rights instruction
+  - Eligible because the education was completed within the 36‑month period
+  - Ineligible because the education must be completed within 24 months for broker applicants
+  - Ineligible because the applicant has not held an active salesperson license for the full
+    36‑month period
+key: B
+explanation: The statute waives the 36‑month timing requirement only if the applicant has held an
+  active salesperson license for the entire 36‑month period preceding the application. Since the
+  applicant has held active license for only 20 months, the waiver does not apply, but the education
+  was completed within 20 months, which is inside the 36‑month window, so the requirement is
+  satisfied. The other options either misstate the waiver condition or invent a 24‑month limit that
+  does not exist.
+citation:
+  source: Mich. Comp. Laws § 339.2504(1)(b)(iii)
+  url: null
+  quoted_text: The applicant must complete the 90 hours within the 36-month period preceding the date
+    of the application unless the applicant has held an active license as a real estate salesperson
+    for that period.
+  secondary: []
+terms:
+  - prelicensure
+  - broker
+  - license
+  - active
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,47 @@
+id: AL-27-0262
+jurisdiction: AL
+bank: state_AL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a licensee's continuous surety bond is revoked by the surety company on March 1, by what
+  date must the licensee file a new bond to avoid suspension under Ala. Code § 34-27-1(a)?
+options:
+  - March 21
+  - March 19
+  - March 20
+  - March 22
+key: A
+explanation: The rule gives the licensee 20 days to file a replacement bond after revocation. Adding
+  20 days to March 1 yields March 21, so filing by that date prevents suspension.
+citation:
+  source: "Ala. Code § 34-27-1 et seq. — Code of Alabama Title 34, Chapter 27 - Real Estate Brokers
+    (Arts. 1-4: License Law, Time-Sharing, RECAD) - Alabama Legislature (ALISON) current text §
+    34-27-1(a)"
+  url: null
+  quoted_text: In the event the continuous bond is revoked by the surety company, it shall immediately
+    notify the commission and the licensee shall have 20 days in which to file another bond with the
+    Alabama Real Estate Commission or his or her license shall be suspended until such new bond is
+    filed.
+  secondary: []
+math:
+  worked_solution: "Start date: March 1. Add 20 days: March 1 + 20 days = March 21."
+  formulas:
+    - result_date = start_date + days
+  onscreen_calculator_only: false
+terms:
+  - continuous bond
+  - revocation
+  - filing deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

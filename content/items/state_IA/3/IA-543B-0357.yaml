@@ -1,0 +1,48 @@
+id: IA-543B-0357
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed real estate salesperson is appointed to the Iowa Real Estate Commission. After
+  serving one year, they obtain a real estate broker license and continue to serve the remainder of
+  their term. At the end of the term, they seek reappointment to the commission. Under Iowa Code
+  §543B.8, what is the outcome?
+options:
+  - They may serve out the remainder of the term but are not eligible for reappointment as a
+    licensed real estate salesperson.
+  - They are eligible for reappointment as a licensed real estate salesperson because they held that
+    license at the time of appointment.
+  - They must vacate the commission immediately upon obtaining a broker license.
+  - They are ineligible for any further service on the commission after obtaining a broker license.
+key: A
+explanation: The rule states that a licensed real estate salesperson who becomes a licensed real
+  estate broker during a term may complete the term but is not eligible for reappointment on the
+  commission as a licensed real estate salesperson. Therefore, the licensee may finish the current
+  term but cannot be reappointed as a salesperson. The distractor claiming eligibility for
+  reappointment as a salesperson is incorrect because the rule explicitly prohibits such
+  reappointment after becoming a broker during the term.
+citation:
+  source: Iowa Code ch. 543B §543B.8(2)
+  url: null
+  quoted_text: At least one of the licensed members shall be a licensed real estate salesperson,
+    except that if the licensed real estate salesperson becomes a licensed real estate broker during
+    a term of office, that person may complete the term, but is not eligible for reappointment on
+    the commission as a licensed real estate salesperson.
+  secondary: []
+terms:
+  - commission
+  - salesperson
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

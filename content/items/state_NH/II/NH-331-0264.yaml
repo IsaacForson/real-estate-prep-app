@@ -1,0 +1,43 @@
+id: NH-331-0264
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a broker license resides in Massachusetts. According to New Hampshire
+  Administrative Rule Rea 301.01, what additional document must the applicant submit with their
+  application?
+options:
+  - A completed Criminal History Record Information Release Authorization Form
+  - A statement from the employing broker listing hours per week
+  - A set of signed affidavits from three character references
+  - A signed irrevocable consent and power of attorney statement
+key: D
+explanation: Non-resident applicants must submit a signed irrevocable consent and power of attorney
+  statement under Rea 301.01(a)(1)(d). The distractor about the criminal history release form is
+  required of all applicants, not just non-residents.
+citation:
+  source: N.H. Code Admin. R. Rea 100–799 (Real Estate Commission rules) — N.H. Code of Administrative
+    Rules, Rea 100–700 (Real Estate Commission), official General Court rules page read via Internet
+    Archive capture of 2022-06-30 (the current rea100-1000.html has no archive capture and
+    gencourt.state.nh.us returns 403) — re-fetch live when reachable Rea 301.01(a)(1)d
+  url: null
+  quoted_text: If the applicant is a non-resident, a signed irrevocable consent and power of attorney
+    statement, as required by RSA 331-A:22, II
+  secondary: []
+terms:
+  - non-resident
+  - consent
+  - power of attorney
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

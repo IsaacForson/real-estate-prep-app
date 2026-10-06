@@ -1,0 +1,47 @@
+id: GA-1-0276
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "According to Georgia Real Estate Commission Rule 520-1-.06(6)(d), a customer who is working
+  primarily with the broker but is also represented by another broker in the same transaction is:"
+options:
+  - The customer is considered the licensee's principal for disclosure purposes in the specific real
+    estate transaction.
+  - The customer is not considered the licensee's principal because the customer is represented by
+    another broker in the transaction.
+  - The customer is considered the licensee's principal only if the broker discloses the rebate to
+    the customer in the transaction.
+  - The customer is considered the licensee's principal only if the customer pays a fee to the
+    broker for the referral in the transaction.
+key: B
+explanation: The rule excludes from the definition any customer who is being represented by another
+  broker, so such a customer is not a licensee's principal. The distractor that treats the customer
+  as a principal incorrectly overlooks the representation disqualification.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live § (6)(d)
+  url: null
+  quoted_text: the term "licensee's principal" shall, in the specific real estate transaction for
+    which disclosure is required, mean both the client of the broker and a customer of the broker if
+    the customer is working primarily with the broker and is not being represented by another broker
+    in the transaction.
+  secondary: []
+terms:
+  - licensee
+  - principal
+  - customer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

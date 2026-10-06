@@ -1,0 +1,44 @@
+id: OK-605-0067
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A resident manager lives on-site at an apartment complex and handles leasing of units as part
+  of employment. According to Oklahoma Real Estate License Code, is a real estate license required
+  for this resident manager to perform leasing activities?
+options:
+  - License is not required only if the manager receives a referral fee over $100
+  - License is not required because the resident manager exemption applies
+  - License is required for the resident manager's leasing activities
+  - License is required unless the manager also holds a broker license
+key: B
+explanation: The exemption applies to a resident manager who resides on the premises and is engaged
+  in leasing in connection with employment, so no license is needed. The distractor claiming a
+  license is required unless the manager also holds a broker license incorrectly adds a condition
+  not present in the exemption.
+citation:
+  source: "### Okla. Stat. tit. 59 (Oklahoma Real Estate License Code, §§ 858-101 to 858-605) —
+    Oklahoma Real Estate License Code, 59 O.S. §§ 858-101 to 858-605 (OREC Code and Rules Book, as
+    of Nov. 1, 2025) — § 858-301"
+  url: null
+  quoted_text: Apply to any person acting as the resident manager for the owner or an employee acting
+    as the resident manager for a licensed real estate broker managing an apartment building,
+    duplex, apartment complex or court, when such resident manager resides on the premises and is
+    engaged in the leasing of property
+  secondary: []
+terms:
+  - resident manager
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

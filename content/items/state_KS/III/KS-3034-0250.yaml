@@ -1,0 +1,39 @@
+id: KS-3034-0250
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee purchases a dwelling that is subject to a mortgage in default at the time of
+  purchase. The licensee gives written notice of the purchase to the mortgage holder on the
+  nineteenth day after the purchase. Under Kansas law, is this action permissible?
+options:
+  - It is permissible because the licensee also notified the judgment creditor.
+  - It is permissible because notice was given within the 20‑day deadline.
+  - It is not permissible because the licensee failed to notify the judgment creditor.
+  - It is not permissible because notice was given after the 20‑day deadline.
+key: B
+explanation: Notice given on the 19th day satisfies the 20‑day requirement, so the action is
+  permissible. The distractor claiming impermissibility due to missing the judgment creditor is
+  wrong because the statute only requires notice to the mortgage holder in this scenario.
+citation:
+  source: Kan. Stat. Ann. § 58-3062 — K.S.A. Kan. Stat. Ann. § 58-3062 — Prohibited acts (a)(24)(B)
+  url: null
+  quoted_text: the licensee fails to give written notice of the purchase, within 20 days thereafter,
+    to the mortgage holder
+  secondary: []
+terms:
+  - notice
+  - mortgage holder
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

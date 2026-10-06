@@ -1,0 +1,44 @@
+id: DE-2901-0156
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a Delaware bank, acting as trustee under a trust agreement, sells real estate
+  held in the trust to a third party. Under Del. Code Ann. tit. 24, § 2901(e)(3), is the employee
+  required to hold a real estate license to perform this sale?
+options:
+  - The employee is exempt from licensing requirements as a trustee acting under a trust agreement.
+  - The employee must hold a real estate license because any sale of real estate requires licensure.
+  - The employee must hold a real estate license unless they also hold a broker license.
+  - The employee is exempt only if they are also an attorney-at-law.
+key: A
+explanation: Section 2901(e)(3) exempts trustees acting under a trust agreement from licensing
+  requirements. The option claiming that a license is always required is incorrect because it
+  overlooks this exemption.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2901(e)(3)
+  url: null
+  quoted_text: (3) This chapter shall not be construed to include in any way the services rendered by
+    an attorney-at-law, nor shall it be held to include, while acting as such, the receiver, trustee
+    in bankruptcy, administrator or executor, or any person selling real estate under order of any
+    court, or a trustee acting under a trust agreement, deed of trust or will, or the regular
+    salaried employee thereof.
+  secondary: []
+terms:
+  - trustee
+  - exemption
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

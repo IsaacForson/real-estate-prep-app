@@ -1,0 +1,43 @@
+id: NE-56-0246
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual, acting as attorney-in-fact under a duly executed power of attorney, sells a
+  parcel of land on behalf of the owner who granted the power. According to the Nebraska Real Estate
+  License Act, is this individual required to hold a real estate license?
+options:
+  - The individual is required to hold a real estate license.
+  - The individual is exempt from licensing requirements.
+  - The individual must renew an existing license.
+  - The individual must obtain a temporary permit.
+key: B
+explanation: The statute expressly exempts an attorney in fact under a duly executed power of
+  attorney to convey real estate from the licensing requirements. Consequently, the individual does
+  not need a license to perform the sale. The distractor that asserts a license is required ignores
+  this specific exemption.
+citation:
+  source: Neb. Rev. Stat. § 81-885.04(2)
+  url: null
+  quoted_text: An attorney in fact under a duly executed power of attorney to convey real estate from
+    the owner or lessor or the services rendered by any attorney at law in the performance of his or
+    her duty as such attorney at law;
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - exemption
+  - real estate license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

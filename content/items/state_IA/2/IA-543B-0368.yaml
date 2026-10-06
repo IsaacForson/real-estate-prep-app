@@ -1,0 +1,44 @@
+id: IA-543B-0368
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a written request from the Iowa Real Estate Commission for proof of errors
+  and omissions insurance on June 10. By what date must the licensee provide the proof to avoid
+  prima facie evidence of a violation?
+options:
+  - June 20
+  - June 25
+  - June 30
+  - July 5
+key: C
+explanation: The rule requires compliance within 20 calendar days of the commission’s request;
+  failure to do so is prima facie evidence of a violation. Adding 20 days to June 10 yields June 30.
+  June 20 would be only 10 days later, and June 25 would be 15 days later, both insufficient.
+citation:
+  source: Iowa Admin. Code r. 481-2019 — Iowa Administrative Code 481—Chapter 2019 — Requirements For
+    Mandatory Errors And Omissions Insurance (Real Estate Commission) 481—2019.6(6)
+  url: null
+  quoted_text: within 20 calendar days of the commission’s request is prima facie evidence of a violation
+  secondary: []
+math:
+  worked_solution: June 10 + 20 days = June 30
+  formulas:
+    - result_date = start_date + offset_days
+  onscreen_calculator_only: false
+terms:
+  - compliance deadline
+  - errors and omissions insurance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

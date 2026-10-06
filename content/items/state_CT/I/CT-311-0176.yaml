@@ -1,0 +1,42 @@
+id: CT-311-0176
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: During a scheduled meeting, only three of the eight commission members are present. The
+  commission attempts to vote on a license renewal. According to Connecticut law, what is the
+  result?
+options:
+  - The vote is valid because any number present can act
+  - The vote is valid if the chairman approves
+  - The vote is invalid because a quorum is not present
+  - The vote is valid only if the matter concerns licensing
+key: C
+explanation: A majority of the commission members is required to constitute a quorum for exercising
+  the commission’s powers. With only three of eight members present, a majority is lacking, so the
+  commission lacks authority to act and the vote is invalid. The other options incorrectly suggest
+  that the vote could be valid under other conditions.
+citation:
+  source: "### Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter
+    392 - Real Estate Licensees (2025 supplement) — § 20-311b"
+  url: null
+  quoted_text: A majority of the members of the commission shall constitute a quorum for the exercise
+    of the powers or authority conferred upon it.
+  secondary: []
+terms:
+  - quorum
+  - majority
+  - vote
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

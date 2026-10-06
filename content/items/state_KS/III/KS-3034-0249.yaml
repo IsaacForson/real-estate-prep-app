@@ -1,0 +1,40 @@
+id: KS-3034-0249
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee purchases a dwelling that is subject to a right of redemption due to foreclosure.
+  The licensee provides written notice of the purchase to the mortgage holder on the twenty‑first
+  day after the purchase. Under Kansas law, is this action permissible?
+options:
+  - It is permissible because the licensee believed the deadline was longer.
+  - It is not permissible because the notice was provided after the 20‑day deadline.
+  - It is permissible because the notice was provided within the required timeframe.
+  - It is not permissible because the licensee omitted to notify the judgment creditor.
+key: B
+explanation: The rule mandates that notice be given within 20 days; providing notice on the 21st day
+  violates this requirement, making the action impermissible. The distractor suggesting
+  permissibility based on the licensee’s belief is incorrect because good faith does not override
+  the statutory deadline.
+citation:
+  source: Kan. Stat. Ann. § 58-3062 — K.S.A. Kan. Stat. Ann. § 58-3062 — Prohibited acts (a)(24)(A)
+  url: null
+  quoted_text: the licensee fails to give written notice of the purchase, within 20 days thereafter,
+    to the mortgage holder or judgment creditor who held such mortgage
+  secondary: []
+terms:
+  - notice
+  - mortgage holder
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

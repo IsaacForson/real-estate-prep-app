@@ -1,0 +1,42 @@
+id: CT-311-0259
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Connecticut real estate school's registration was issued on September 1, 2023. Assuming the
+  school does **NOT** renew early, on what date will the registration expire?
+options:
+  - September 1, 2025
+  - September 1, 2024
+  - September 1, 2027
+  - September 1, 2026
+key: A
+explanation: Under Conn. Gen. Stat. § 20-314(b), each school registration issued pursuant to this
+  section shall expire biennially, meaning every two years. Adding two years to September 1, 2023
+  gives an expiration date of September 1, 2025. The September 1, 2024 distractor assumes an annual
+  renewal, while the September 1, 2026 distractor adds three years instead of two.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-314(b)
+  url: null
+  quoted_text: Each school registration issued pursuant to this section shall expire biennially, and
+    the initial registration fee and renewal fee for each such school registration shall be one
+    hundred dollars.
+  secondary: []
+terms:
+  - registration
+  - expiration
+  - biennial
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

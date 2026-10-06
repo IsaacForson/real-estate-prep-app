@@ -1,0 +1,46 @@
+id: OK-605-0074
+jurisdiction: OK
+bank: state_OK
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits personal cash into the trust account to cover the bank's monthly service fee
+  for the account. Under Oklahoma Administrative Code, is this permissible?
+options:
+  - No, because personal funds are generally not permitted in a trust account.
+  - Yes, but only if the broker also deposits an equal amount of client funds.
+  - Yes, because personal funds may be kept to cover charges for servicing the trust account.
+  - No, unless the broker obtains written consent from all clients whose funds are in the account.
+key: C
+explanation: The rule permits a broker to keep personal funds in the trust account only in amounts
+  sufficient to cover charges made by the financial institution for servicing the account.
+  Therefore, depositing personal cash to pay a monthly service fee is allowed. The claim that
+  personal funds are never permitted is incorrect because the rule expressly allows limited amounts
+  for such charges. The requirement that an equal amount of client funds also be deposited is not
+  part of the rule. Likewise, obtaining written consent from all clients is not required for
+  covering service fees.
+citation:
+  source: Okla. Admin. Code tit. 605 (Oklahoma Real Estate Commission rules) — Oklahoma Administrative
+    Code Title 605, Chapters 1 and 10 (OREC Code and Rules Book, as of Nov. 1, 2025) — § 10-13-1(b)
+  url: null
+  quoted_text: |-
+    A broker may not keep any personal funds in the trust account except 
+    amounts suﬃcient to insure the integrity of the account and cover any charges made by the 
+    ﬁnancial institution for servicing the trust or escrow account
+  secondary: []
+terms:
+  - commingling
+  - personal funds
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

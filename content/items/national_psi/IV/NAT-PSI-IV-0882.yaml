@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0882
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: If a conventional loan has a loan-to-value ratio above 80%, what is normally required?
+options:
+  - An upfront guarantee fee of 2% (UGF)
+  - A VA funding fee of 1.25% (VFF)
+  - A down payment of at least 10% (DP)
+  - Private mortgage insurance (PMI)
+key: D
+explanation: Conventional loans with a loan-to-value ratio above 80% normally require private
+  mortgage insurance (PMI). Therefore PMI is required. The option about a down payment of at least
+  10% does not change this requirement.
+citation:
+  source: REP Ref. Financing & Closing § 6.1
+  url: null
+  quoted_text: Conventional loans with a loan-to-value ratio above 80% normally require private
+    mortgage insurance (PMI)
+  secondary: []
+math:
+  worked_solution: "Convert 80% to a decimal: 80 / 100 = 0.80. If the loan-to-value ratio (LTV) is
+    greater than 0.80, private mortgage insurance (PMI) is normally required."
+  formulas:
+    - Percentage to decimal conversion
+  onscreen_calculator_only: false
+terms:
+  - loan-to-value
+  - private mortgage insurance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,58 @@
+id: PA-9-0257
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A developer plans to offer 60 lots in a subdivision covering 20 acres of land, advertised as a
+  common promotional plan via newspaper ads. Under 63 P.S. § 455.605(b), is the developer required
+  to register with the State Real Estate Commission before offering the lots?
+options:
+  - Yes, because the offering involves more than 25 acres.
+  - Yes, because the offering involves more than 50 lots.
+  - No, because the offering involves less than 50 lots.
+  - No, because the offering involves less than 25 acres.
+key: D
+explanation: Under 63 P.S. § 455.605(b), promotional real estate requires both at least 50 lots or
+  shares and at least 25 acres of land. Since the subdivision has 60 lots but only 20 acres, it
+  fails the acreage requirement and therefore is not promotional real estate, so registration is not
+  required. The option that says 'Yes, because the offering involves more than 25 acres' incorrectly
+  assumes that exceeding the lot threshold alone triggers the registration requirement.
+citation:
+  source: 63 P.S. § 455.605(b)
+  url: null
+  quoted_text: Provided, however, That the term shall not mean real estate interest involving less
+    than 50 lots or shares, cemetery lots and land involving less than 25 acres.
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Check lot threshold: 60 lots ≥ 50 lots → true.
+
+    Step 2: Check acreage threshold: 20 acres ≥ 25 acres → false.
+
+    Step 3: Both conditions must be true for the offering to be considered promotional real estate
+    requiring registration.
+
+    Step 4: Since the acreage condition is false, the offering is not promotional real estate.
+
+    Step 5: Therefore, registration with the State Real Estate Commission is not required.
+  formulas:
+    - "Lot threshold test: lots ≥ 50"
+    - "Acreage threshold test: acres ≥ 25"
+  onscreen_calculator_only: false
+terms:
+  - promotional real estate
+  - lot
+  - acre
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,43 @@
+id: WY-101-0138
+jurisdiction: WY
+bank: state_WY
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate company license is issued on August 15, 2024. By what date must the license be
+  renewed to avoid expiration?
+options:
+  - August 31, 2024
+  - August 15, 2025
+  - December 31, 2024
+  - December 31, 2025
+key: C
+explanation: The license issued for the balance of the year expires on December 31 of the year it
+  was issued, and must be renewed on or before that date to remain in effect (Wyo. Real Estate
+  Comm'n Rules ch. 1 § 6). Thus, an August 15, 2024 issuance requires renewal by December 31, 2024.
+  The distractor of August 15, 2025 mistakenly treats the license as valid for a full year from
+  issuance.
+citation:
+  source: Wyo. Real Estate Comm'n Rules ch. 1 — Wyoming Real Estate Commission Rules, Chapter 1 —
+    General Provisions and Licensing — § 6
+  url: null
+  quoted_text: All initial Real Estate Company Licenses will expire on December 31 of the year in
+    which issued. In order to maintain the License, the Real Estate Company License must be renewed
+    on or before December 31.
+  secondary: []
+terms:
+  - license
+  - renewal
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

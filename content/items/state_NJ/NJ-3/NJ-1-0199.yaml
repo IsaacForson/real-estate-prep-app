@@ -1,0 +1,50 @@
+id: NJ-1-0199
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner has ten acres of woodland used exclusively for sustainable forestland (producing
+  timber for sale) but has not established a forest stewardship plan. According to N.J. Stat. Ann.
+  tit. 54, ch. 4, is this land considered in agricultural use for farmland assessment?
+options:
+  - Classification as not agricultural use because the woodland exceeds five acres
+  - Classification as agricultural use because the land is devoted to timber production
+  - Classification as not agricultural use because the landowner lacks a forest stewardship plan
+  - Classification as agricultural use because sustainable forestland automatically qualifies
+key: C
+explanation: The statute provides that land devoted as sustainable forestland is not deemed
+  agricultural use unless the landowner fulfills additional conditions, including establishing a
+  forest stewardship plan. Since the plan is missing, the land does not qualify. The statement that
+  sustainable forestland automatically qualifies is incorrect.
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 — New Jersey Statutes Title 54, Chapter 4 — Taxation of Real
+    and Personal Property (N.J.S.A. 54:4-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 54:4-23.3
+  url: null
+  quoted_text: "land which is devoted exclusively to the production for sale of tree and forest
+    products, other than Christmas trees, or devoted as sustainable forestland, and is not
+    appurtenant woodland, shall not be deemed to be in agricultural use unless the landowner
+    fulfills the following additional conditions:"
+  secondary: []
+math:
+  worked_solution: No arithmetic computation is required; the answer is derived from statutory interpretation.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - sustainable forestland
+  - forest stewardship plan
+  - agricultural use
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

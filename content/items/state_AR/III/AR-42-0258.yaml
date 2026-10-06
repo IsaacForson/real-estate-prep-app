@@ -1,0 +1,46 @@
+id: AR-42-0258
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee lists a home and advertises it as 2,000 square feet based solely on the seller’s
+  verbal statement, without verifying the measurement. After closing, the buyer learns the actual
+  size is 1,800 square feet. Which requirement of Rule 10.6 did the licensee fail to meet?
+options:
+  - advertise the property using only the seller’s provided dimensions.
+  - exert reasonable efforts to ascertain material facts about the property’s size.
+  - obtain a written waiver from the buyer regarding square footage.
+  - reduce the listing price to reflect the discrepancy.
+key: B
+explanation: Rule 10.6 obligates a licensee to exert reasonable efforts to ascertain material facts
+  about a property to avoid misrepresentation. By relying solely on the seller’s statement without
+  verification, the licensee failed to exert those efforts. Obtaining a written waiver does not
+  fulfill the licensee’s duty to verify material facts.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.6
+  url: null
+  quoted_text: A licensee shall exert reasonable efforts to ascertain those facts which are material
+    to the value or desirability of every property for which the licensee accepts the agency
+  secondary: []
+math:
+  worked_solution: Advertised size = 2,000 sq ft\nActual size = 1,800 sq ft\nDifference = 2,000 - 1,800 = 200 sq ft
+  formulas:
+    - Difference = Advertised size - Actual size
+  onscreen_calculator_only: false
+terms:
+  - disclosure
+  - material facts
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

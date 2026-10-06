@@ -1,0 +1,41 @@
+id: IA-543B-0320
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A complaint filed with the Iowa Real Estate Commission in March 2024 is assigned the case
+  number 24-057. What does the '057' portion of the case number indicate?
+options:
+  - The disciplinary committee assigned to the case.
+  - The year the complaint was received.
+  - The order in which the case file was opened.
+  - The amount of civil penalty assessed.
+key: C
+explanation: The rule states that the second three digits of a case number represent the order in
+  which the case file was opened. Therefore '057' indicates the fifty‑seventh case file opened in
+  that year. The distractor about the year is incorrect because the year is shown by the first two
+  digits.
+citation:
+  source: Iowa Admin. Code r. 481-2018.7
+  url: null
+  quoted_text: Complaints are assigned case numbers in chronological order with the first two digits
+    representing the year in which the complaint was received or initiated, and the second three
+    digits representing the order in which the case file was opened
+  secondary: []
+terms:
+  - case number
+  - complaint
+  - chronological order
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

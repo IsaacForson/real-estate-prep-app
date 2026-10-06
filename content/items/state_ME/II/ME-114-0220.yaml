@@ -1,0 +1,52 @@
+id: ME-114-0220
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee has completed 12 clock hours of approved continuing education, including 2 hours of
+  core course, within the preceding two years. How many additional clock hours of core continuing
+  education must the licensee complete to satisfy the core requirement for license renewal?
+options:
+  - 1 clock hours
+  - 2 clock hours
+  - 3 clock hours
+  - 4 clock hours
+key: A
+explanation: Under Section 8 of the Maine Real Estate Commission rules, licensees must complete
+  three (3) core clock hours as part of the twenty‑one hour continuing education requirement for
+  renewal. Having already earned 2 core hours, the licensee needs 1 more core hour to meet the core
+  requirement. The distractor of 2 clock hours incorrectly assumes the licensee needs three
+  additional core hours rather than recognizing the 2 already earned.
+citation:
+  source: 02-039 C.M.R. chs. 300–410 (Maine Real Estate Commission rules) — Maine Real Estate
+    Commission Rules, 02-039 C.M.R. Chapters 300, 310, 340, 350, 360, 370, 390, 400, 410 (Secretary
+    of State compilation, 2025) — § 8
+  url: null
+  quoted_text: Three (3) of those clock hours must consist of the core course approved by the
+    Commission, and the remaining eighteen (18) hours may consist of any combination of other
+    approved continuing education courses that otherwise meet the criteria set forth in this
+    chapter.
+  secondary: []
+math:
+  worked_solution: Required core hours = 3; Completed core hours = 2; Additional core hours needed = 3 - 2 = 1.
+  formulas:
+    - Additional core hours = Required core hours - Completed core hours
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - core course
+  - clock hour
+  - license renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

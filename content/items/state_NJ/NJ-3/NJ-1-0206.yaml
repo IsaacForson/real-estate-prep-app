@@ -1,0 +1,44 @@
+id: NJ-1-0206
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner wants to install a drainage ditch to lower the water table in a freshwater
+  wetland. Does this activity require a freshwater wetlands permit?
+options:
+  - The activity does not require a permit because the wetland is not designated as a significant
+    resource.
+  - The activity requires a permit because draining or disturbing the water level is a regulated
+    activity.
+  - The activity requires a permit only if the ditch alters more than ten percent of the wetland
+    area.
+  - The activity does not require a permit because the work is classified as routine maintenance.
+key: B
+explanation: The regulated activity definition includes drainage or disturbance of the water level
+  or water table, thus installing a drainage ditch requires a permit. The distractor claiming
+  exemption for drainage ditches is incorrect because the act provides no exemption for this
+  activity.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 13:9B-3
+  url: null
+  quoted_text: (2) The drainage or disturbance of the water level or water table;
+  secondary: []
+terms:
+  - drainage
+  - water table
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

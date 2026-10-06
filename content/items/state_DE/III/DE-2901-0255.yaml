@@ -1,0 +1,47 @@
+id: DE-2901-0255
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Del. Code Ann. tit. 24, ch. 29 § 2922(h), how many times is a licensee required to pay
+  the $25 fee to the Real Estate Recovery Fund?
+options:
+  - Once per license term
+  - Once unless reassessed later
+  - Twice each renewal cycle
+  - Annually regardless of balance
+key: B
+explanation: Del. Code Ann. tit. 24, ch. 29 § 2922(h) limits the $25 fee to a single payment unless
+  the Commission orders a later assessment under subsection (i). Therefore a licensee must pay the
+  fee only once, except when reassessed.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2922(h)
+  url: null
+  quoted_text: Each licensee shall pay a fee of $25 which shall be credited to the Fund; provided,
+    that in no case shall any licensee be required to pay said fee of $25 more than once, unless
+    assessed as provided in subsection (i) of this section.
+  secondary: []
+math:
+  worked_solution: The statute states the fee shall not be required more than once unless reassessed.
+    Hence the required number of payments is 1 (with a possible additional payment only if
+    reassessed).
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - fund
+  - licensee
+  - reassessment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

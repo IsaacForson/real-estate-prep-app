@@ -1,0 +1,45 @@
+id: AR-42-0241
+jurisdiction: AR
+bank: state_AR
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A complainant alleges that a licensee committed violations four years ago and files a
+  complaint today. The commission has not initiated any investigation prior to the complaint. May
+  the Arkansas Real Estate Commission conduct a disciplinary hearing regarding these allegations
+  under Ark. Code Ann. § 17-42-314(b)?
+options:
+  - The commission may proceed because the allegations involve serious violations
+  - The commission may not proceed because the complaint was filed more than three years after the
+    actions
+  - The commission may proceed if the licensee waives the three‑year limitation
+  - The commission may not proceed unless the complainant submits additional evidence
+key: B
+explanation: The statute prohibits the commission from investigating or conducting a disciplinary
+  hearing unless the complaint is filed or an investigation is initiated within three years of the
+  actions. The seriousness of the allegations, a waiver by the licensee, or additional evidence do
+  not override this time limitation.
+citation:
+  source: Ark. Code Ann. § 17-42-314(b)
+  url: null
+  quoted_text: the Arkansas Real Estate Commission shall not investigate the actions of or conduct any
+    disciplinary hearing regarding any real estate broker or salesperson unless the complaint is
+    filed or the investigation initiated within three (3) years from the date of the actions
+    complained of or concerning which an investigation is initiated.
+  secondary: []
+terms:
+  - three-year
+  - complaint
+  - investigation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,40 @@
+id: MI-25-0237
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson places an online advertisement offering to lease a client's
+  condominium, using only the salesperson's name and phone number. The salesperson does not own the
+  condominium. Under Michigan's occupational code, is this advertisement permissible?
+options:
+  - The advertisement is permissible because the salesperson used their own name
+  - The advertisement is impermissible because the salesperson is not the owner of the property
+  - The advertisement is permissible because the property is a condominium
+  - The advertisement is impermissible because the salesperson did not include the broker's
+    telephone number
+key: B
+explanation: MCL 339.2512(4) prohibits a salesperson from advertising real property for rent or
+  lease under his or her own name unless the salesperson is the owner of the property. Since the
+  salesperson does not own the condominium, the advertisement is impermissible.
+citation:
+  source: Mich. Comp. Laws § 339.2512(4)
+  url: null
+  quoted_text: A real estate salesperson shall not advertise real property for rent or lease under his
+    or her own name unless the salesperson is the owner of the property.
+  secondary: []
+terms:
+  - advertising
+  - rental
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

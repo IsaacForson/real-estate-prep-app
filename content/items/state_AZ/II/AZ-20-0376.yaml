@@ -1,0 +1,49 @@
+id: AZ-20-0376
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits $6,000 of personal monies into a trust fund account to keep the account open
+  and avoid insufficient‑balance fees. Under Arizona law, what is the result?
+options:
+  - It is permissible if the broker discloses the deposit to the parties to the transaction
+  - It is not a violation because the deposit consists of the broker’s personal funds
+  - It is a violation because the exemption for personal monies applies only to deposits of $5,000
+    or less
+  - It is required to prevent the account from being closed due to insufficient balance
+key: C
+explanation: Under Ariz. Rev. Stat. § 32-2151.02, a broker may deposit personal monies of not more
+  than $5,000 to keep a trust account open or to avoid insufficient‑balance fees without
+  constituting commingling. Depositing $6,000 exceeds that limit, so the act is a violation. The
+  other options incorrectly state that the deposit is permissible, claim it is not a violation
+  because the funds are personal, or suggest it is required to prevent account closure.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2151.02 § 32-2151
+  url: null
+  quoted_text: For the purposes of this paragraph, it is not commingling if a broker deposits personal
+    monies of not more than $5,000 to keep the account open or to avoid charges for an insufficient
+    minimum balance.
+  secondary: []
+math:
+  worked_solution: The deposit amount is given as $6,000.
+  formulas:
+    - Deposit amount = $6,000
+  onscreen_calculator_only: false
+terms:
+  - commingling
+  - trust fund
+  - personal monies
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

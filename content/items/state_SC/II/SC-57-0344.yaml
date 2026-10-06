@@ -1,0 +1,44 @@
+id: SC-57-0344
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee uses an artificial intelligence program to generate a property description that
+  omits known defects. Under S.C. Code Ann. § 40-57-820, how is this conduct treated for
+  disciplinary purposes?
+options:
+  - As if the violation was committed directly by the licensee.
+  - As a separate violation attributable only to the software provider.
+  - As a mitigating factor reducing potential discipline.
+  - As permissible because the licensee did not personally create the description.
+key: A
+explanation: The statute treats any violation that occurs through the use of an AI program as if the
+  licensee themselves committed the violation. Therefore, the option stating that the violation is
+  treated as if committed directly by the licensee is correct. The option that assigns
+  responsibility only to the software provider is incorrect because the rule holds the licensee
+  accountable. The option that suggests the conduct is a mitigating factor is incorrect; the statute
+  does not reduce discipline for AI‑generated descriptions. Finally, the option that claims the act
+  is permissible because the licensee did not personally create the description is incorrect; the
+  rule does not excuse the licensee for using AI to omit known defects.
+citation:
+  source: S.C. Code Ann. § 40-57-820
+  url: null
+  quoted_text: A violation of this chapter that is committed through the use of these programs will be
+    treated as if the violation was committed directly by the licensee.
+  secondary: []
+terms:
+  - work product
+  - artificial intelligence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

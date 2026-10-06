@@ -1,0 +1,42 @@
+id: NY-443-0417
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker receives a client’s earnest money and deposits it into his personal checking account,
+  planning to move it to the special trust account the next day. Under 19 NYCRR §175.1, is the
+  broker’s action permissible?
+options:
+  - The broker's action is permissible as long as the money is deposited within three business days.
+  - The broker's action is not permissible because it commingles the principal’s money with the
+    broker’s own funds.
+  - The broker's action is permissible if the broker safeguards the money in a secure location.
+  - The broker's action is permissible because the money will be transferred soon.
+key: B
+explanation: The regulation explicitly forbids a broker from commingling a principal’s money with
+  the broker’s own funds, so depositing earnest money into a personal account violates this rule
+  regardless of how quickly the money is later moved. The distractor that focuses on the three‑day
+  deposit deadline is incorrect because the commingling prohibition applies independently of timing.
+citation:
+  source: 19 N.Y.C.R.R. § 175.1
+  url: null
+  quoted_text: A real estate broker shall not commingle the money or other property of his principal
+    with his own
+  secondary: []
+terms:
+  - commingling
+  - principal
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

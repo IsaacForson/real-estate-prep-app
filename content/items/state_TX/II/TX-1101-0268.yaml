@@ -1,0 +1,43 @@
+id: TX-1101-0268
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant submitted a Texas real estate license application on March 1, 2024. According to
+  Texas Occupations Code §1101.401(f), by what date must the applicant pass the required examination
+  to satisfy the requirement?
+options:
+  - March 31, 2025.
+  - April 1, 2025.
+  - February 28, 2025.
+  - March 1, 2025.
+key: D
+explanation: The rule requires the examination to be satisfied not later than one year after the
+  application filing date. Adding one year to March 1, 2024 gives March 1, 2025 as the latest
+  permissible date. Therefore the option stating March 1, 2025 meets the requirement. The options
+  stating March 31, 2025 and April 1, 2025 fall after that deadline, while the option stating
+  February 28, 2025 falls before the deadline (also satisfies the requirement but is not the latest
+  date).
+citation:
+  source: Tex. Occ. Code § 1101.401(f)
+  url: null
+  quoted_text: An applicant must satisfy the examination requirement not later than one year after the
+    date the license application is filed.
+  secondary: []
+terms:
+  - examination
+  - application
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

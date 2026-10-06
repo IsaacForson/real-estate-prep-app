@@ -1,0 +1,44 @@
+id: AZ-20-0332
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Arizona state fiscal year ends on June 30, by what date must monies in the real estate
+  department education revolving fund exceeding $25,000 revert to the state general fund?
+options:
+  - May 31, 2025
+  - July 1, 2025
+  - June 30, 2025
+  - August 1, 2025
+key: C
+explanation: Under Ariz. Rev. Stat. § 32-2107(E), monies in the real estate department education
+  revolving fund that exceed twenty‑five thousand dollars at the end of the fiscal year revert to
+  the state general fund. Since the fiscal year ends June 30, the reversion date is June 30, 2025.
+citation:
+  source: Ariz. Rev. Stat. § 32-2107(E)
+  url: null
+  quoted_text: Monies received in the real estate department education revolving fund are not subject
+    to reversion, except that all monies in the fund in excess of twenty-five thousand dollars at
+    the end of the fiscal year revert to the state general fund.
+  secondary: []
+math:
+  worked_solution: No calculation is required; the answer is determined by the fiscal year end date.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - fiscal year
+  - reversion
+  - revolving fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

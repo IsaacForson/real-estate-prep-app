@@ -1,0 +1,44 @@
+id: CA-4-0325
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee completes sole authorship of a 5‑hour real estate educational program. Under Cal.
+  Code Regs. tit. 10, § 3011(d)(1), how many continuing education credit hours may the licensee
+  claim for this activity?
+options:
+  - The licensee may claim 5 hours of continuing education credit.
+  - The licensee may claim 8 hours of continuing education credit.
+  - The licensee may claim 2 hours of continuing education credit.
+  - The licensee may claim 10 hours of continuing education credit.
+key: D
+explanation: The regulation awards two continuing education credit hours for each hour of sole
+  authorship or program development. Multiplying the 5‑hour program by 2 gives 10 credit hours.
+citation:
+  source: Cal. Code Regs. tit. 10, § 3011(d)(1)
+  url: null
+  quoted_text: Sole authorship or development of a real estate educational program shall be credited
+    upon an approved petition, with two hours continuing education credit for each hour of the
+    program entitled to continuing education credit.
+  secondary: []
+math:
+  worked_solution: 5 hours × 2 = 10 hours
+  formulas:
+    - CE credit = program hours × 2
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - authorship
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

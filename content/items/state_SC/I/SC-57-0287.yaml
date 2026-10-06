@@ -1,0 +1,40 @@
+id: SC-57-0287
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If a license is revoked on March 1, 2024 and the revocation is not made permanent, what is the
+  earliest date the person may reapply for licensure under S.C. Code Ann. § 40-57-730(A)?
+options:
+  - March 1, 2025
+  - March 1, 2026
+  - March 1, 2027
+  - March 1, 2028
+key: C
+explanation: The statute bars reapplication for three years from the date of revocation unless the
+  revocation is made permanent. Adding three years to March 1, 2024 yields March 1, 2027 as the
+  earliest permissible date. Dates earlier than this violate the three‑year bar, while later dates
+  are permissible but not the earliest.
+citation:
+  source: S.C. Code Ann. § 40-57-730(A)
+  url: null
+  quoted_text: after revocation of a license, a person may not reapply for three years from the date
+    of revocation
+  secondary: []
+terms:
+  - revocation
+  - reapply
+  - three-year
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

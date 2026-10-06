@@ -1,0 +1,48 @@
+id: MS-1954-0306
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi real estate broker receives a $2,500 commission for a transaction that required
+  a license but the broker was unlicensed at the time. Under Miss. Code Ann. § 73-35-31(2), what is
+  the maximum penalty the broker may be liable to pay for this violation?
+options:
+  - A penalty of $2,500.
+  - A penalty of $5,000.
+  - A penalty of $7,500.
+  - A penalty of $10,000.
+key: D
+explanation: Under Miss. Code Ann. § 73-35-31(2), a person who earns a commission while unlicensed
+  must pay a penalty of not less than the amount received and not more than four times that amount.
+  For a $2,500 commission, the maximum penalty is 4 × $2,500 = $10,000. The other options represent
+  lower multiples (1×, 2×, 3×) and therefore are below the statutory maximum.
+citation:
+  source: Miss. Code Ann. § 73-35-31(2)
+  url: null
+  quoted_text: such person, partnership, association or corporation shall also be liable to a penalty
+    of not less than the amount of the sum of money so received and not more than four (4) times the
+    sum so received
+  secondary: []
+math:
+  worked_solution: 1. Commission received = $2,500.\n2. Maximum multiplier = 4.\n3. Maximum penalty =
+    $2,500 × 4 = $10,000.
+  formulas:
+    - Maximum penalty = 4 × commission received
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - commission
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

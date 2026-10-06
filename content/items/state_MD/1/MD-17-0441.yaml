@@ -1,0 +1,45 @@
+id: MD-17-0441
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker purchases a property for his own investment and then lists it for sale, representing
+  both himself as buyer and the seller, without obtaining consent from the seller. Under COMAR
+  09.11.01.02, how is this conduct classified?
+options:
+  - The broker's action is permitted if the broker discloses his dual role to the seller
+  - The broker's action is permitted if the broker obtains written consent from the seller after the
+    purchase
+  - The broker's action is prohibited because the broker is acting as principal and agent without
+    consent of all parties
+  - The broker's action is permitted because the broker is not receiving a commission
+key: C
+explanation: COMAR 09.11.01.02 states that a broker may not act as both principal and agent in the
+  same transaction without the consent of all parties. Since the broker is purchasing the property
+  for himself and then representing the seller without obtaining that consent, the conduct is
+  prohibited. Options suggesting that mere disclosure or lack of a commission makes the act
+  permissible misstate the rule, which requires explicit consent.
+citation:
+  source: COMAR 09.11.01–09.11.09 (Real Estate Commission regulations) — Code of Maryland Regulations
+    Title 09, Subtitle 11 — Real Estate Commission (Chapters 01–09) COMAR § 09.11.01.02
+  url: null
+  quoted_text: A broker may not act as principal and agent in the same transaction without consent of
+    all parties concerned.
+  secondary: []
+terms:
+  - dual agency
+  - principal and agent
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

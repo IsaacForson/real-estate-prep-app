@@ -1,0 +1,38 @@
+id: ID-20-0344
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant takes the Idaho real estate licensing exam but does not achieve a passing score.
+  According to Idaho Code § 54-2014, what must the applicant do to retake the exam?
+options:
+  - Waiting six months and paying a re-exam fee
+  - Submitting a new application and paying exam fee
+  - Retaking the national portion and paying the fee
+  - Requesting a waiver and paying the exam fee
+key: B
+explanation: If an applicant fails to pass the exam, they may register for another attempt and must
+  submit a new exam fee. The statute does not require a waiting period or allow retaking only one
+  portion without a new fee. Thus, submitting a new application and paying the fee is the required
+  action.
+citation:
+  source: Idaho Code § 54-2014(4)
+  url: null
+  quoted_text: An individual who fails to appear for the exam or to pass the exam may register to take
+    another exam. The individual must register and submit a new exam fee.
+  secondary: []
+terms:
+  - exam retake
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

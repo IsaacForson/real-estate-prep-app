@@ -1,0 +1,41 @@
+id: AK-88-0271
+jurisdiction: AK
+bank: state_AK
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant has 40 months of active and continuous experience as a real estate licensee
+  within the 50 months immediately preceding application. According to Alaska Statute §
+  08.88.171(a), is the applicant eligible for a broker license?
+options:
+  - The applicant is ineligible because the experience is not within the 60‑month window
+  - The applicant is ineligible because they have fewer than 36 months of experience
+  - The applicant is ineligible because the experience is not continuous and active
+  - The applicant is eligible because they have 36 months of experience within the 60‑month window
+key: D
+explanation: The statute requires at least 36 months of active and continuous experience within the
+  60 months before application; having 40 months within a 50‑month period satisfies this. The
+  distractor claiming insufficiency due to fewer than 36 months misapplies the threshold, as the
+  applicant exceeds it.
+citation:
+  source: Alaska Stat. § 08.88.171(a)
+  url: null
+  quoted_text: has had at least 36 months of active and continuous experience as a real estate
+    licensee within the 60 months immediately preceding application for the broker license
+  secondary: []
+terms:
+  - experience
+  - months
+  - continuous
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

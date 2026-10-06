@@ -1,0 +1,45 @@
+id: CA-4-0318
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A real estate licensee who is 72 years old has held an active license for 35 years but had a
+  disciplinary suspension that ended two years ago. Under Cal. Bus. & Prof. Code § 10170.8(a), is
+  this licensee exempt from continuing education requirements?
+options:
+  - The licensee is exempt because the age and total years of licensure satisfy the statute.
+  - The licensee is not exempt because the suspension breaks the required continuous good‑standing
+    period.
+  - The licensee is exempt because any disciplinary action older than one year is disregarded.
+  - The licensee is not exempt because the statute requires the licensee to be exactly 70 years old.
+key: B
+explanation: To qualify for the exemption, the licensee must have been in good standing for 30
+  continuous years. A disciplinary suspension breaks good‑standing status, so the continuous‑years
+  requirement is not met. The option that claims exemption based on age and total years ignores the
+  suspension; the option that claims exemption because any disciplinary action older than one year
+  is disregarded is incorrect; the option that claims exemption because the statute requires the
+  licensee to be exactly 70 years old misstates the age requirement.
+citation:
+  source: Cal. Bus. & Prof. Code § 10170.8(a)
+  url: null
+  quoted_text: (a) This article shall not apply to a real estate licensee who submits proof
+    satisfactory to the commissioner that the real estate licensee has been a real estate licensee
+    in good standing for 30 continuous years in this state and is 70 years of age or older.
+  secondary: []
+terms:
+  - good standing
+  - suspension
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

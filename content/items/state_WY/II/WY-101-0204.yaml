@@ -1,0 +1,40 @@
+id: WY-101-0204
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker receives earnest money from a buyer and, before closing, uses part of it
+  to pay for personal office rent, intending to repay later. Under Wyoming law, this action is:"
+options:
+  - Not permissible because trust funds cannot be used elsewhere
+  - Not permissible because all parties agree in writing to the use
+  - Not permissible because the amount is repaid before settlement
+  - Not permissible because the broker labels the funds as personal
+key: A
+explanation: Wyo. Stat. Ann. § 33-28-122(e) prohibits using trust account deposits for any purpose
+  other than the specific transaction for which they were received. Using earnest money to pay
+  office rent violates this rule, regardless of intent to repay or obtaining party consent. The
+  distractor suggesting repayment before settlement is incorrect because the prohibition applies at
+  the time of use, not contingent on later repayment.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(e)
+  url: null
+  quoted_text: No responsible broker shall use deposits in a trust account for a purpose other than
+    the transaction for which they were provided.
+  secondary: []
+terms:
+  - trust account
+  - use of funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

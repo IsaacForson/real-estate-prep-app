@@ -1,0 +1,46 @@
+id: AK-88-0293
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker ends employment with a licensee who is another licensed broker and hands over the
+  broker’s transaction records to that licensee. According to Alaska Stat. § 08.88.351(a)(6), what
+  is the broker’s responsibility regarding those records?
+options:
+  - The broker is not required to ensure by contract the maintenance and availability of the records
+    for a minimum of three years.
+  - The broker must notify the commission within ten days of transferring the records and submit a
+    copy of the transfer agreement.
+  - The broker must ensure by contract the maintenance and availability of the records for a minimum
+    of three years.
+  - The broker must destroy the records within thirty days of transfer and provide written
+    confirmation to the commission.
+key: A
+explanation: The statute imposes the contract‑maintenance requirement only when records are
+  delivered to a partnership, corporation, or business entity other than another licensed broker;
+  because the recipient is another licensed broker, the exemption applies and no contract is needed.
+  The distractor that imposes the contract requirement incorrectly ignores this exemption.
+citation:
+  source: Alaska Stat. § 08.88.351(a)(6)
+  url: null
+  quoted_text: if records are delivered to a partnership, corporation, or business entity other than
+    another licensed broker upon termination of employment, ensure by contract the maintenance and
+    availability of those records for a minimum of three years in accordance with this section.
+  secondary: []
+terms:
+  - records
+  - contract
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

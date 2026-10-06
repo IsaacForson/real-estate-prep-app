@@ -1,0 +1,56 @@
+id: MT-51-0239
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee obtains property data from another broker's MLS listing showing 1,800 square feet
+  and advertises the property as 2,000 square feet, but includes the disclaimer 'The foregoing
+  material was abstracted from another source and does not contain all of the information available
+  at the source site. Please request further information when considering this property.' Under
+  Montana Administrative Rule 24.210.428(3)(d), is this permissible?
+options:
+  - Yes, because the disclaimer permits any alterations to the data obtained from another source
+  - Yes, because formatting differently and condensing is allowed, and the disclaimer satisfies the
+    requirement
+  - No, because the disclaimer must be placed at the beginning of the advertisement to be valid
+  - No, because the data may not be changed in whole or in part, even when a disclaimer is included
+key: D
+explanation: The rule prohibits changing the content of property data obtained from another source
+  in whole or in part; altering the square footage constitutes a change, which is not allowed even
+  with a disclaimer. The option stating that formatting differently and condensing is allowed with
+  the disclaimer is incorrect because changing the measurement is not mere formatting.
+citation:
+  source: Mont. Admin. R. 24.210.101–24.210.1005 (Board of Realty Regulation) — Administrative Rules
+    of Montana, Title 24, Chapter 210 — Board of Realty Regulation (all effective rules) — §
+    24.210.428
+  url: null
+  quoted_text: "The content of any property data obtained from another listing agent or multiple
+    listing system may not be changed in whole or in part. Such property data may be formatted
+    differently, be condensed, and further advertised if the advertisement contains the following or
+    similar language: 'The foregoing material was abstracted from another source and does not
+    contain all of the information available at the source site. Please request further information
+    when considering this property.'"
+  secondary: []
+math:
+  worked_solution: The source data shows 1,800 sq ft. The advertisement states 2,000 sq ft. Difference
+    = 2,000 - 1,800 = 200 sq ft.
+  formulas:
+    - Difference = Advertised size - Source size
+  onscreen_calculator_only: false
+terms:
+  - property data
+  - disclaimer
+  - MLS
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,42 @@
+id: DC-198-0307
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner of a housing accommodation that qualifies for the exemption under subsection (b)(20)
+  leases a unit to a prospective tenant without providing the written notice required before the
+  lease begins. Is the exemption still valid under D.C. Code § 42-3404.02(d)?
+options:
+  - No, because notice was required and not given.
+  - Yes, because failure to give notice does not affect the validity of the exemption
+  - Only if the tenant later receives notice from the owner.
+  - Only if the owner provides notice within 30 days after lease signing.
+key: B
+explanation: Subsection (d)(3) states that failure to provide the required notice does not affect
+  the validity of the exemption. Thus, even though notice was omitted, the exemption remains valid.
+  The other options incorrectly condition validity on later notice or impose a time limit not
+  present in the statute.
+citation:
+  source: D.C. Code § 42-3404.02(d)(3)
+  url: null
+  quoted_text: (3) Failure of the owner of a housing accommodation to provide proper notice under this
+    subsection shall not affect the validity of the exemption from the tenant opportunity to
+    purchase applicable to the housing accommodation.
+  secondary: []
+terms:
+  - notice
+  - exemption
+  - lease
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

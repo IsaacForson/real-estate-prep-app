@@ -1,0 +1,49 @@
+id: NAT-PV-III-1433
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: An investor spends $25,000 on a kitchen remodel that increases property value by $22,000.
+  Later, they spend an additional $15,000 on luxury finishes that increase value by only $3,000.
+  Which principle explains why the second investment yielded a smaller increase in value per dollar
+  spent?
+options:
+  - The principle of substitution in market valuation.
+  - The principle of anticipation in market value.
+  - The principle of conformity in residential real estate.
+  - The principle of increasing and decreasing returns.
+key: D
+explanation: Added investment raises value only up to a point, after which each added dollar returns
+  less than a dollar, which is the principle of increasing and decreasing returns. This principle
+  accounts for the diminishing return on the second investment. The distractor invoking substitution
+  incorrectly refers to a buyer’s limit based on comparable substitutes, not to diminishing returns.
+citation:
+  source: "REP Ref. Valuation & Appraisal — Reference note: value concepts, appraisal process, three
+    approaches, CMA/BPO (authored, status: draft — needs licensed review) § 4.4"
+  url: null
+  quoted_text: The related principle of increasing and decreasing returns holds that added investment
+    raises value only up to a point, after which each added dollar returns less than a dollar.
+  secondary: []
+math:
+  worked_solution: "First investment: $22,000 increase ÷ $25,000 spent = 0.88 (88% return). Second
+    investment: $3,000 increase ÷ $15,000 spent = 0.20 (20% return). The second investment yields a
+    lower return per dollar spent."
+  formulas:
+    - Return on Investment (ROI) = Increase in Value ÷ Amount Spent
+  onscreen_calculator_only: false
+terms:
+  - increasing and decreasing returns
+  - contribution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

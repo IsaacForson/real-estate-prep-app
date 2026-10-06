@@ -1,0 +1,45 @@
+id: TX-1101-0147
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A limited liability company receives referral fees from a sales agent for locating buyers but
+  does not perform any other acts of a broker. Must the LLC be licensed as a broker?
+options:
+  - The LLC must be licensed as a broker because it receives compensation on behalf of a license
+    holder.
+  - The LLC must be licensed as a broker because referral fees are valuable consideration, but it is
+    exempt if owned by a license holder.
+  - The LLC does not need a license because it does not perform any other acts of a broker.
+  - The LLC does not need a license because referral fees are exempt from the licensing requirement.
+key: A
+explanation: Tex. Occ. Code §1101.355(c) requires that a business entity receiving compensation on
+  behalf of a license holder be licensed as a broker. The LLC receives referral fees from a sales
+  agent, which constitutes compensation on behalf of a license holder, so it must be licensed. The
+  option claiming the LLC must be licensed because referral fees are valuable consideration but is
+  exempt if owned by a license holder is incorrect because the statute does not provide such an
+  exemption.
+citation:
+  source: Tex. Occ. Code §1101.355(c)
+  url: null
+  quoted_text: A business entity that receives compensation on behalf of a license holder must be
+    licensed as a broker under this chapter.
+  secondary: []
+terms:
+  - business entity
+  - license holder
+  - compensation
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

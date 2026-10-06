@@ -1,0 +1,44 @@
+id: MT-51-0070
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Board of Realty Regulation receives a $5,000 donation earmarked for board operations, but
+  there is no specific statutory provision dictating where this money should be deposited. Where
+  must the board deposit this money according to Montana law?
+options:
+  - The money must be deposited in the state general fund for board operations
+  - The money must be deposited in the real estate recovery fund for board use
+  - The money must be deposited in the board's operating account for board expenses
+  - The money must be deposited in the state special revenue fund for board use
+key: D
+explanation: Section 37-51-208 directs that money received for the board’s use with no specific
+  deposit provision must go into the state special revenue fund for the board’s use. The distractor
+  suggesting the board’s operating account is incorrect because the statute does not authorize that
+  deposit absent a specific provision.
+citation:
+  source: Mont. Code Ann. § 37-51-208
+  url: null
+  quoted_text: the money is to be deposited in the state special revenue fund for the use of the board.
+  secondary: []
+math:
+  worked_solution: The deposit location is determined by statute regardless of the donation amount;
+    therefore no arithmetic calculation is needed.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - deposit
+  - fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

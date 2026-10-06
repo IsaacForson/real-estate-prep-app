@@ -1,0 +1,41 @@
+id: AR-42-0263
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A continuing education course provides fifty-five (55) minutes of actual classroom instruction
+  with the instructor present. Under Arkansas Code Ann. § 17-42-103, does this instruction qualify
+  as a classroom hour?
+options:
+  - The instruction qualifies as a classroom hour because any period of actual classroom instruction
+    counts.
+  - The instruction does not qualify as a classroom hour because it lasts more than sixty minutes.
+  - The instruction does not qualify as a classroom hour because it lasts less than fifty minutes.
+  - The instruction qualifies as a classroom hour because it lasts between fifty and sixty minutes.
+key: D
+explanation: Fifty-five minutes falls within the range of at least fifty minutes and no more than
+  sixty minutes specified in the definition of a classroom hour. Therefore the instruction meets the
+  criteria.
+citation:
+  source: Ark. Code Ann. § 17-42-101 et seq. — Arkansas Real Estate License Law and Time-Share Law
+    (AREC compilation, August 2024) — § 17-42-103(4)
+  url: null
+  quoted_text: “Classroom hour” means a period of at least fifty (50) minutes, but not more than sixty
+    (60) minutes, of actual classroom instruction with the instructor present;
+  secondary: []
+terms:
+  - classroom hour
+  - continuing education
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

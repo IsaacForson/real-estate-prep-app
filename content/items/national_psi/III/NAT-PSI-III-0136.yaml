@@ -1,0 +1,50 @@
+id: NAT-PSI-III-0136
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An appraiser estimates a building's cost new at $400,000, effective age at 12 years, and total
+  economic life at 80 years. Using the straight-line (economic age-life) method, what is the accrued
+  depreciation?
+options:
+  - $60,000
+  - $30,000
+  - $48,000
+  - $72,000
+key: A
+explanation: The straight-line (economic age-life) method finds the portion of the building's total
+  economic life that has been used by dividing effective age by total economic life. This fraction
+  is then multiplied by the cost new to get accrued depreciation. With an effective age of 12 years
+  and a total economic life of 80 years, the fraction is 12 ÷ 80 = 0.15. Multiplying 0.15 by the
+  cost new of $400,000 gives $60,000. The option stating $48,000 results from mistakenly using a
+  100‑year economic life instead of 80 years, which yields a smaller fraction and thus understates
+  the depreciation.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.5
+  url: null
+  quoted_text: Accrued depreciation = (effective age ÷ total economic life) × cost new
+  secondary: []
+math:
+  worked_solution: |-
+    1) Divide effective age by total economic life: 12 ÷ 80 = 0.15
+    2) Multiply the fraction by cost new: 0.15 × $400,000 = $60,000
+  formulas:
+    - Accrued depreciation = (effective age ÷ total economic life) × cost new
+  onscreen_calculator_only: false
+terms:
+  - straight-line method
+  - effective age
+  - accrued depreciation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

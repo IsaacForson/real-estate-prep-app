@@ -1,0 +1,47 @@
+id: NY-443-0166
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: Which pair of subjects in the salesperson course syllabus each require three hours of instruction?
+options:
+  - License Law and Regulations and Valuation Process and Pricing Properties
+  - Human Rights and Fair Housing and Real Estate Mathematics and Related Issues
+  - Law of Agency and Real Estate Finance and Related Topics in Practice Today
+  - License Law and Regulations and Legal Issues and Related Topics Today
+key: A
+explanation: The syllabus lists License Law and Regulations and Valuation Process and Pricing
+  Properties each with three hours of instruction. Pairing License Law and Regulations with Legal
+  Issues is incorrect because Legal Issues requires ten hours.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: |-
+    License Law and Regulations    3
+    Law of Agency    11
+    Legal Issues     10
+    The Contract of Sales and Leases    3
+
+    NYS Department of State Division of Licensing Services                                                                                       Real Estate License Law / Page 33
+    Real Estate Finance    5
+    Land Use Regulations    3
+    Construction and Environmental Issues    5
+    Valuation Process and Pricing Properties   3
+  secondary: []
+terms:
+  - license law
+  - valuation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

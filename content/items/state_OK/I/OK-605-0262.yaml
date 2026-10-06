@@ -1,0 +1,47 @@
+id: OK-605-0262
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant was convicted of a felony that substantially relates to the occupation of a real
+  estate agent and poses a reasonable threat to public safety. The applicant completed the criminal
+  sentence, including parole and probation, eight (8) years ago. According to Oklahoma Statute
+  § 858-301.1(B), is the applicant eligible to obtain a real estate license?
+options:
+  - No, because the applicant must wait twenty (20) years for any felony.
+  - Yes, because more than ten (10) years have passed since the sentence ended.
+  - Yes, because the felony does not substantially relate to real estate.
+  - No, because less than ten (10) years have passed since the sentence ended.
+key: D
+explanation: Oklahoma Statute § 858-301.1(B) provides a ten‑year ineligibility period for any
+  applicant whose felony conviction substantially relates to the real‑estate occupation and
+  threatens public safety. Because only eight years have passed since the sentence ended, the
+  ten‑year period has not yet elapsed, so the applicant is not eligible. The claim that a
+  twenty‑year wait is required or that the felony does not substantially relate is inconsistent with
+  the statute.
+citation:
+  source: Okla. Stat. tit. 59 (Oklahoma Real Estate License Code, §§ 858-101 to 858-605) — Oklahoma
+    Real Estate License Code, 59 O.S. §§ 858-101 to 858-605 (OREC Code and Rules Book, as of Nov. 1,
+    2025) — § 858-301.1
+  url: null
+  quoted_text: Any applicant convicted of a felony crime that substantially relates to the occupation
+    of a real estate agent and poses a reasonable threat to public safety shall not be eligible to
+    obtain a real estate license within ten (10) years of the completion of any criminal sentence,
+    including parole and probation.
+  secondary: []
+terms:
+  - felony
+  - ineligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

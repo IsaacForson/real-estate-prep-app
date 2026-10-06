@@ -1,0 +1,40 @@
+id: ND-23-0140
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a verified complaint on June 1. They submit their answer on June 15, but
+  the answer is a simple letter not notarized. Under N.D. Admin. Code § 70-02-01-16(2), is the
+  answer compliant?
+options:
+  - The answer is compliant because it was filed within twenty days
+  - The answer is compliant because it was submitted in writing
+  - The answer is not compliant because it was not filed within twenty days
+  - The answer is not compliant because it is not in affidavit form and not properly certified
+key: D
+explanation: The rule requires the answer to be in affidavit form and properly certified; a simple
+  letter that is not notarized fails this requirement. The distractor that focuses only on
+  timeliness or writing alone ignores the mandatory affidavit and certification elements.
+citation:
+  source: N.D. Admin. Code § 70-02-01-16(2)
+  url: null
+  quoted_text: This answer must be in affidavit form, properly certified, and contain a factual
+    response to the allegations set out in the complaint.
+  secondary: []
+terms:
+  - answer
+  - affidavit
+  - complaint
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

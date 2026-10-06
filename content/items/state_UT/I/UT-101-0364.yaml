@@ -1,0 +1,48 @@
+id: UT-101-0364
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller signs a net listing agreement setting a minimum price of $180,000. The property later
+  sells for $230,000. What is the commission earned under this net listing per Utah Admin. Code
+  R162-2f-102(24)?
+options:
+  - $40,000
+  - $60,000
+  - $70,000
+  - $50,000
+key: D
+explanation: The rule defines commission under a net listing as the difference between the actual
+  selling price and the minimum price set by the seller. Subtracting $180,000 from $230,000 yields
+  $50,000. The distractor "$40,000" is wrong because it results from subtracting $190,000 instead of
+  $180,000.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-102
+  url: null
+  quoted_text: Net listing means a listing agreement under which the real estate commission is the
+    difference between the actual selling price of the property and a minimum selling price as set
+    by the seller.
+  secondary: []
+math:
+  worked_solution: $230,000 - $180,000 = $50,000
+  formulas:
+    - commission = selling_price - minimum_price
+  onscreen_calculator_only: false
+terms:
+  - net listing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

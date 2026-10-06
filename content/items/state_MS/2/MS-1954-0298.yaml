@@ -1,0 +1,44 @@
+id: MS-1954-0298
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Mississippi corporation wants to obtain a real estate broker license. Two of its three
+  officers actively participate in the brokerage business and each holds an individual broker’s
+  license; the third officer does not participate in brokerage activities. Under Miss. Code Ann. §
+  73-35-6, is the corporation eligible for a license?
+options:
+  - No, because all officers must hold broker licenses regardless of participation.
+  - Yes, because the non‑participating officer does not need a broker license.
+  - No, because at least one officer lacks a broker license.
+  - Yes, provided the corporation pays the required fee.
+key: D
+explanation: The law requires a license when individual broker’s licenses have been issued to every
+  member, owner, partner or officer who actively participates in the brokerage business and when any
+  required fee is paid. Since only the two participating officers need licenses and they already
+  have them, eligibility hinges on paying the fee. The other options misstate the participation
+  requirement or ignore the fee condition.
+citation:
+  source: Miss. Code Ann. § 73-35-6
+  url: null
+  quoted_text: A corporation, partnership, company or association shall be granted a license when
+    individual broker’s licenses have been issued to every member, owner, partner or officer of such
+    partnership, company, association or corporation who actively participates in its brokerage
+    business and when any required fee is paid.
+  secondary: []
+terms:
+  - business entity
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

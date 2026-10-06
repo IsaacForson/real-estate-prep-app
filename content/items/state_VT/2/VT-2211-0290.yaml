@@ -1,0 +1,44 @@
+id: VT-2211-0290
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Buyer defaults on a purchase contract; the buyer and seller agree in writing that interest
+  earned on the earnest money deposit will be returned to the buyer. The deposit is held in an
+  individual interest‑bearing trust account. Under Vermont law, what happens to the interest earned
+  on the deposit?
+options:
+  - It is applied to the purchase price
+  - It is forfeited to the broker
+  - It is returned to the buyer
+  - It is payable to the seller
+key: C
+explanation: The default rule in §2214(b)(1) makes interest payable to the seller upon buyer
+  default, but the statute allows the parties to agree otherwise in writing. Because the buyer and
+  seller have done so, the interest is returned to the buyer. The distractor stating the interest is
+  payable to the seller reflects the default rule and ignores the written agreement.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2214(b)(1)
+  url: null
+  quoted_text: Unless otherwise agreed to in writing by all parties, the interest earned shall be
+    applied to the purchase price due from the buyer if the sale is consummated, shall be returned
+    to the buyer if the deposit is returned to the buyer, and shall be payable to the seller if the
+    buyer defaults.
+  secondary: []
+terms:
+  - interest
+  - default
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

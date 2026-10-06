@@ -1,0 +1,38 @@
+id: FL-475-0410
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum number of days a closing agent may be required to serve involuntarily as
+  an escrow agent or stakeholder for disputed moneys or property under Florida Statute 475.709(12)?
+options:
+  - 3 days
+  - 5 days
+  - 7 days
+  - 10 days
+key: B
+explanation: The statute expressly limits involuntary service to five days after closing.
+citation:
+  source: Fla. Stat. § 475.709(12)
+  url: null
+  quoted_text: No provision of this part shall require a closing agent to serve involuntarily more
+    than 5 days after a closing as an escrow agent or stakeholder for any moneys or other property
+    that are disputed by the owner and the broker under the provisions of this part.
+  secondary: []
+terms:
+  - closing agent
+  - escrow agent
+  - disputed proceeds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

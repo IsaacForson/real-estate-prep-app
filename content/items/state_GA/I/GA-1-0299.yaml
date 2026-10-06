@@ -1,0 +1,41 @@
+id: GA-1-0299
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker, acting as escrow agent, disburses earnest money to the seller before the closing
+  date, despite the purchase agreement stating that funds are to be released only at closing.
+  According to Ga. Comp. R. & Regs. r. 520-1-.08(3)(a), what is the likely consequence for the
+  broker?
+options:
+  - Being considered to have demonstrated incompetence as a broker
+  - Being allowed to keep the disbursed amount as commission without approval
+  - Being permitted to continue as escrow agent after notifying the Commission in writing
+  - Being required to refund the earnest money immediately to the parties
+key: A
+explanation: Disbursing earnest money before the closing date violates the contract terms, which
+  triggers the rule that such conduct is considered demonstrated incompetence. The distractors
+  suggest remedies or allowances that the rule does not provide for this violation.
+citation:
+  source: Ga. Comp. R. & Regs. r. 520-1-.08(3)(a)
+  url: null
+  quoted_text: A broker who disburses trust funds from the broker's designated trust or escrow account
+    contrary to the terms of a contract for the sale or rental of real estate
+  secondary: []
+terms:
+  - trust account
+  - disbursement
+  - incompetence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

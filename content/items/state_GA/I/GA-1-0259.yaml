@@ -1,0 +1,43 @@
+id: GA-1-0259
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker residing in Florida holds an active Georgia broker license and wishes to serve as the
+  qualifying broker for a Georgia-licensed limited liability company that is authorized to do
+  business in Georgia. According to Georgia Real Estate Commission Rule 520-1-.02(c), what is the
+  broker's eligibility?
+options:
+  - The broker is ineligible unless also licensed in Florida
+  - The broker is eligible to serve as qualifying broker
+  - The broker is eligible only if the LLC members are Georgia residents
+  - The broker is ineligible due to residency requirements
+key: B
+explanation: The rule permits a nonresident broker to serve as qualifying broker for any
+  corporation, LLC, or partnership licensed by the Commission, regardless of the broker's state of
+  residence. Therefore, the Florida broker is eligible. The incorrect options add residency,
+  ownership, or licensing conditions that the rule does not require.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live Rule 520-1-.02(c)
+  url: null
+  quoted_text: A nonresident broker can serve as a qualifying broker for any corporation, limited
+    liability company, or partnership licensed by the Commission.
+  secondary: []
+terms:
+  - nonresident broker
+  - qualifying broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

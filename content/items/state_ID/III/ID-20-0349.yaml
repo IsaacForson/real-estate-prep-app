@@ -1,0 +1,42 @@
+id: ID-20-0349
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate who is not actively licensed at the time a cause of action arises attempts
+  to sue a client for an unpaid commission. What is the result under Idaho Code § 54-2054(1)?
+options:
+  - The court will automatically award the commission to the sales associate regardless of licensure
+    status
+  - The sales associate may not bring or maintain any court action for commission collection
+  - The sales associate must pay a fine equal to double the amount of the commission sought
+  - The sales associate may proceed with the lawsuit if the client agrees in writing
+key: B
+explanation: Idaho Code § 54-2054(1) prohibits a person from bringing or maintaining a court action
+  for compensation unless they were actively licensed at the time the cause of action arose.
+  Therefore, the sales associate cannot sue for the commission. The other options describe outcomes
+  not supported by the statute.
+citation:
+  source: Idaho Code § 54-2054(1)
+  url: null
+  quoted_text: No person engaged in the business or acting in the capacity of real estate broker or
+    salesperson in Idaho shall bring or maintain any action in the courts for the collection of a
+    fee, commission or other compensation for the performance of any acts requiring a real estate
+    license
+  secondary: []
+terms:
+  - fee collection
+  - court action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,58 @@
+id: MI-25-0167
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker has a written agreement stating the salesperson is not an employee for federal and
+  state income tax purposes, but only 60% of the salesperson's annual compensation comes from
+  commissions. Is this an independent contractor relationship under MCL 339.2501(h)?
+options:
+  - The relationship does not qualify as an independent contractor relationship because less than
+    75% of the annual compensation is from commissions
+  - The relationship qualifies as an independent contractor relationship because a written agreement
+    states the salesperson is not an employee for tax purposes
+  - The relationship qualifies as an independent contractor relationship because the salesperson
+    receives any commission income
+  - The relationship does not qualify as an independent contractor relationship because there is no
+    written agreement between the broker and the salesperson
+key: A
+explanation: The relationship does not qualify as an independent contractor relationship because,
+  although a written agreement states the salesperson is not an employee for tax purposes, only 60%
+  of annual compensation comes from commissions, which is less than the required 75%.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2501"
+  url: null
+  quoted_text: '"Independent contractor relationship" means a relationship between a real estate
+    broker and an associate real estate broker or real estate salesperson that satisfies both of the
+    following conditions: (i) A written agreement exists in which the real estate broker does not
+    consider the associate real estate broker or real estate salesperson as an employee for federal
+    and state income tax purposes. (ii) At least 75% of the annual compensation paid by the real
+    estate broker to the associate real estate broker or real estate salesperson is from commissions
+    from the sale of real estate.'
+  secondary: []
+math:
+  worked_solution: "Required commission percentage: 75%. Actual commission percentage: 60%. Since 60%
+    < 75%, the second condition is not met."
+  formulas:
+    - "Threshold comparison: required commission percentage ≥ 75%; actual commission percentage =
+      60%; result = actual < required"
+  onscreen_calculator_only: false
+terms:
+  - independent contractor relationship
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

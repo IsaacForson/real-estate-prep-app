@@ -1,0 +1,39 @@
+id: MT-51-0260
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson currently holds an active license with a supervising broker. How many additional
+  active licenses may the salesperson hold concurrently under Montana law?
+options:
+  - "1"
+  - "2"
+  - "0"
+  - "3"
+key: C
+explanation: The statute provides that only one license issued to a salesperson is in effect at one
+  time, meaning no additional active licenses may be held. The distractor "1" is wrong because it
+  implies the salesperson could hold a second active license, which would exceed the statutory limit
+  of one license.
+citation:
+  source: Mont. Code Ann. § 37-51-309(5)
+  url: null
+  quoted_text: Only one license issued to a salesperson is in effect at one time
+  secondary: []
+terms:
+  - active license
+  - concurrent
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

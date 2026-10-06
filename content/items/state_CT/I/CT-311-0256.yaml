@@ -1,0 +1,43 @@
+id: CT-311-0256
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A business entity changes its designated broker on April 15, 2025 and fails to notify the
+  commission within the required period. What is the earliest date on which the commission could
+  consider the violation to have occurred under Conn. Gen. Stat. § 20-312(c)?
+options:
+  - May 14, 2025
+  - May 15, 2025
+  - May 16, 2025
+  - May 17, 2025
+key: C
+explanation: The entity must notify the commission not later than thirty days after the change,
+  making May 15, 2025 the final day to comply. Failure to notify by that date means the violation
+  first occurs on the following day, May 16, 2025. May 15 is the last permissible date, not a
+  violation date.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-312(c)
+  url: null
+  quoted_text: Such business entity shall notify the commission of any change in the identity of, or
+    contact information for, such designated broker not later than thirty days after such change
+    becomes effective.
+  secondary: []
+terms:
+  - business entity
+  - designated broker
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

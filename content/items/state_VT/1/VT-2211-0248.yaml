@@ -1,0 +1,42 @@
+id: VT-2211-0248
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant is an active-duty member of the U.S. Armed Forces assigned to duty in Vermont and
+  has submitted a complete application for full licensure. Under 3 V.S.A. § 130(a)(3), is the
+  applicant eligible for a 90‑day provisional license?
+options:
+  - No, because provisional licenses are limited to out‑of‑state verification
+  - Yes, but only if the applicant’s spouse is also on active duty
+  - No, because the applicant must also satisfy a background check requirement
+  - Yes, because the applicant meets the active‑duty military criterion
+key: D
+explanation: The statute grants eligibility for a 90‑day provisional license to an active‑duty
+  member assigned to duty in Vermont or the spouse of such a member. Since the applicant meets the
+  active‑duty criterion, they are eligible. The distractor that adds a background‑check requirement
+  is incorrect because that condition applies only to the alternative eligibility path, not to the
+  active‑duty path.
+citation:
+  source: 3 V.S.A. ch. 5 § 130(a)(3)
+  url: null
+  quoted_text: (3) who is an active-duty member of the U.S. Armed Forces assigned to duty in Vermont
+    or the spouse of such a member.
+  secondary: []
+terms:
+  - provisional license
+  - active duty
+  - eligibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

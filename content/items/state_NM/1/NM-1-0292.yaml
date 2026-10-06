@@ -1,0 +1,42 @@
+id: NM-1-0292
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee associated with Qualifying Broker X attempts to represent Qualifying Broker Y in a
+  transaction without X's knowledge or consent. Under N.M. Stat. Ann. § 61-29-12(A)(4), is this
+  permissible?
+options:
+  - It is permissible if the licensee is also a qualifying broker.
+  - It is not permissible because it violates § 61-29-12(A)(4).
+  - It is permissible if Qualifying Broker Y provides written consent.
+  - It is permissible if the licensee discloses the arrangement to the client.
+key: B
+explanation: The statute lists representing or attempting to represent a different qualifying broker
+  without the associated broker's express knowledge and consent as a ground for disciplinary action.
+  The distractor suggesting permissibility with disclosure to the client is wrong because the
+  required consent is from the associated broker, not the client.
+citation:
+  source: N.M. Stat. Ann. § 61-29-12(A)(4)
+  url: null
+  quoted_text: Represented or attempted to represent a qualifying broker other than a qualifying
+    broker with whom the licensee is associated without the express knowledge and consent of that
+    qualifying broker
+  secondary: []
+terms:
+  - representing
+  - qualifying broker
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

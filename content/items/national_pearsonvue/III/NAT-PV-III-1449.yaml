@@ -1,0 +1,47 @@
+id: NAT-PV-III-1449
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer contracts to purchase a home for $436,000 with a conventional loan from a federally
+  regulated bank. The appraisal comes in at $425,000. What must the bank do under Regulation B?
+options:
+  - The bank must provide both parties a copy of the appraisal
+  - The bank must take no action because the appraisal is below the contract price
+  - The bank must provide the borrower a copy of the appraisal
+  - The bank must provide the seller a copy of the appraisal
+key: C
+explanation: The worked example explains that if the appraisal comes in at $425,000, the bank must
+  give the borrower a copy under Regulation B, allowing the parties to renegotiate, increase the
+  down payment, or invoke an appraisal contingency. Providing the copy to the borrower is the
+  required action; giving it to the seller or taking no action is not correct under the rule.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.6
+  url: null
+  quoted_text: If the appraisal comes in at $425,000, the bank must give the borrower a copy under
+    Regulation B, and the parties may renegotiate, increase the down payment, or invoke an appraisal
+    contingency if the contract has one.
+  secondary: []
+math:
+  worked_solution: Contract price $436,000 - Appraised value $425,000 = $11,000 shortfall.
+  formulas:
+    - Difference = Contract Price - Appraised Value
+  onscreen_calculator_only: false
+terms:
+  - Regulation B
+  - appraisal copy
+  - borrower
+  - federally regulated bank
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

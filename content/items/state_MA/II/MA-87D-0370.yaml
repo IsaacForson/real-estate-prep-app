@@ -1,0 +1,43 @@
+id: MA-87D-0370
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a final finding from the Massachusetts Commission Against Discrimination
+  for an unlawful practice; the commission also notes that the violation occurred within two years
+  of a prior final violation of chapter 151B. Under M.G.L. c.112 § 87AAA, what is the length of the
+  license suspension?
+options:
+  - 90 days
+  - 60 days
+  - 120 days
+  - 30 days
+key: A
+explanation: The law provides for a sixty‑day suspension for a first discrimination finding, but if
+  the violation occurred within two years of a prior final violation of chapter 151B, the board must
+  suspend the license for ninety days. Hence the correct length is ninety days. The sixty‑day option
+  would apply only absent a prior violation within the two‑year window.
+citation:
+  source: M.G.L. c. 112, §§ 87PP–87DDD § 87AAA
+  url: null
+  quoted_text: and, if the said commission finds that said violation by such licensed broker or
+    salesman occurred within two years of the date of a prior violation of said chapter one hundred
+    and fifty-one B, which finding has been final, it shall so notify the board, and the board shall
+    forthwith suspend the license of such broker or salesman for a period of ninety days
+  secondary: []
+terms:
+  - prior violation
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,45 @@
+id: UT-101-0363
+jurisdiction: UT
+bank: state_UT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent’s license expires on a Saturday, and the division is closed that day. According
+  to Utah Admin. Code R162-2f-102(18), by what deadline must the license be renewed to avoid
+  expiration?
+options:
+  - By the close of business on Saturday
+  - By the close of business on Sunday
+  - By the close of business on Monday
+  - By the close of business on Tuesday
+key: C
+explanation: The rule provides that if the expiration date falls on a day when the division is
+  closed, the license is not renewed by the next business day following the expiration date. Since
+  Saturday is a closed day, the deadline is the next business day, Monday. The distractor "By the
+  close of business on Sunday" is wrong because Sunday is not a business day and the rule specifies
+  the next business day, not the following calendar day.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-102
+  url: null
+  quoted_text: "Expired license means a license that is not renewed pursuant to Section 61-2f-204 and
+    Section R162-2f-204 by: (a) the close of business on the expiration date, if the expiration date
+    falls on a day when the division is open for business; or (b) the next business day following
+    the expiration date, if the expiration date falls on a day when the division is closed."
+  secondary: []
+terms:
+  - expired license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,45 @@
+id: FL-475-0426
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a rural electric cooperative purchases land for the cooperative’s use,
+  receiving no additional compensation beyond salary. Under Florida law, is this employee required
+  to hold a real estate license?
+options:
+  - The employee is exempt because the purchase is for the employer’s use without extra compensation
+  - The employee is exempt only if the transaction involves leasing rather than purchase
+  - The employee is not exempt because any real property transaction requires a license
+  - The employee is exempt only when acting as a certified public accountant
+key: A
+explanation: The statute exempts employees of public utilities or rural electric cooperatives who
+  act within their employment scope without extra compensation to acquire real property for their
+  employer. The other options incorrectly impose licensing requirements or limit the exemption to
+  unrelated scenarios.
+citation:
+  source: Fla. Stat. § 475.011(3)
+  url: null
+  quoted_text: Any employee of a public utility, a rural electric cooperative, a railroad, or a state
+    or local governmental agency who acts within the scope of her or his employment, for which no
+    compensation in addition to the employee’s salary is paid, to buy, sell, appraise, exchange,
+    rent, auction, or lease any real property or any interest in real property for the use of her or
+    his employer.
+  secondary: []
+terms:
+  - public utility employee
+  - rural electric cooperative
+  - exemption
+  - real property
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

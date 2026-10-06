@@ -1,0 +1,55 @@
+id: TX-1101-0301
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder entered a plea of guilty to a felony involving fraud on March 1, with the
+  final conviction entered that day. The license holder notified the Texas Real Estate Commission of
+  the conviction on March 31. According to Tex. Occ. Code § 1101.652(a)(7), is this notification
+  compliant?
+options:
+  - "Result: Compliant; notification made on the 30th day."
+  - "Result: Non‑compliant; notification made after the 30‑day deadline."
+  - "Result: Compliant; notification made within a reasonable time."
+  - "Result: Non‑compliant; notification made before the 30‑day deadline."
+key: A
+explanation: The statute requires notification not later than the 30th day after the conviction;
+  March 31 is exactly the 30th day after March 1, so the notification is compliant. The option
+  citing a reasonable time misapplies the rule, which specifies a fixed 30‑day period.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.652(a)(7)
+  url: null
+  quoted_text: fails to notify the commission, not later than the 30th day after the date of a final
+    conviction or the entry of a plea of guilty or nolo contendere, that the person has been
+    convicted of or entered a plea of guilty or nolo contendere to a felony or a criminal offense
+    involving fraud;
+  secondary: []
+math:
+  worked_solution: "Conviction date: March 1. Notification date: March 31. Days between = March 31 -
+    March 1 = 30 days. The statute requires notification not later than the 30th day after
+    conviction. Since the notification was made on the 30th day, it is compliant."
+  formulas:
+    - Days difference = Notification date − Conviction date
+    - Compliant if days difference ≤ 30
+  onscreen_calculator_only: false
+terms:
+  - notification
+  - deadline
+  - conviction
+  - fraud
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

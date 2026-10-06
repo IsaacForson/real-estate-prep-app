@@ -1,0 +1,49 @@
+id: KS-3034-0266
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: In a real estate transaction, the earnest money is held by an escrow agent who also prepares
+  and delivers the closing statement to both the buyer and the seller. The broker does not prepare
+  or deliver a closing statement. Under Kansas law, is the broker relieved of the responsibility to
+  provide closing statements?
+options:
+  - The broker must still provide a closing statement to both parties.
+  - The broker is relieved only if it also retains a copy of the statement.
+  - The broker is relieved of the responsibility to provide closing statements.
+  - The broker is relieved only if the escrow agent is also a licensed broker.
+key: C
+explanation: Under Kan. Stat. Ann. § 58-3062(c)(2), the broker’s duty to deliver and retain closing
+  statements is excused when an escrow agent furnishes those statements to the seller and buyer.
+  Because the escrow agent in the scenario provides the closing statement to both parties, the
+  broker’s responsibility is relieved. The claim that the broker is relieved only if it also retains
+  a copy of the statement is not supported by the statute.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(c)(2)
+  url: null
+  quoted_text: Fail to deliver to the seller in every real estate transaction, at the time the
+    transaction is closed, a complete, detailed closing statement showing all of the receipts and
+    disbursements handled by the broker for the seller, or fail to deliver to the buyer a complete
+    statement showing all money received in the transaction from such buyer and how and for what the
+    same was disbursed, or fail to retain true copies of such statements in the broker's files,
+    except that the furnishing of such statements to the seller and buyer by an escrow agent shall
+    relieve the broker's responsibility to the seller and the buyer.
+  secondary: []
+terms:
+  - closing statement
+  - escrow agent
+  - broker
+  - responsibility
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

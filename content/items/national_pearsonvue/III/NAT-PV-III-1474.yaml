@@ -1,0 +1,39 @@
+id: NAT-PV-III-1474
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the definition of one mill in the property tax calculation formula?
+options:
+  - One mill equals $0.0001 per dollar of assessed value.
+  - One mill equals $0.01 per dollar of assessed value.
+  - One mill equals $0.001 per dollar of assessed value.
+  - One mill equals $1 per $100 of assessed value.
+key: C
+explanation: One mill equals $0.001 per dollar of assessed value, which is equivalent to $1 for each
+  $1,000 of assessed value. The claim that one mill equals $0.0001 per dollar of assessed value is
+  incorrect because it is ten times too small. The claim that one mill equals $0.01 per dollar of
+  assessed value is incorrect because it is ten times too large. The claim that one mill equals $1
+  per $100 of assessed value is incorrect because it represents a rate of $10 per $1,000, which is
+  ten times the correct mill rate.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: one mill = $0.001 = $1 per $1,000.
+  secondary: []
+terms:
+  - mill
+  - tax
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

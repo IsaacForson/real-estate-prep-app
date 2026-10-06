@@ -1,0 +1,48 @@
+id: CT-311-0192
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Conn. Gen. Stat. § 20-312(c), within how many days must a business entity notify
+  the commission of a change in the identity or contact information for its designated broker?
+options:
+  - Fifteen days
+  - Sixty days
+  - Thirty days
+  - Five days
+key: C
+explanation: Conn. Gen. Stat. § 20-312(c) requires that a business entity notify the commission of
+  any change in the identity or contact information for its designated broker not later than thirty
+  days after the change becomes effective. Therefore the correct answer is thirty days. Fifteen days
+  is incorrect because it confuses the timeline for team supervising licensee changes, which is
+  twelve days.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-312(c)
+  url: null
+  quoted_text: Such business entity shall notify the commission of any change in the identity of, or
+    contact information for, such designated broker not later than thirty days after such change
+    becomes effective.
+  secondary: []
+math:
+  worked_solution: The statute specifies the notification deadline as not later than thirty days after
+    the change becomes effective. Therefore the answer is 30 days.
+  formulas:
+    - Notification deadline = 30 days
+  onscreen_calculator_only: false
+terms:
+  - designated broker
+  - notification
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,42 @@
+id: CO-2-0269
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a rental payment on Thursday, June 6, and the lease was mutually executed on
+  the same day. By what date must the broker deposit the funds into the trust or escrow account
+  under 4 CCR 725-1 § 5.7.A?
+options:
+  - June 11
+  - June 10
+  - June 13
+  - June 12
+key: C
+explanation: The rule requires deposit no later than five (5) business days after the later of
+  receipt or lease execution. Counting five business days from June 6 leads to June 13. June 12
+  would be only four business days, so that distractor is incorrect.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) § 5.7.A
+  url: null
+  quoted_text: All Money Belonging to Others received by a Brokerage Firm for Property Management must
+    be deposited in the Brokerage Firm’s appropriate Trust or Escrow Account no later than five (5)
+    business days following receipt of funds or mutual execution of a lease, whichever is later.
+  secondary: []
+terms:
+  - property management
+  - business days
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

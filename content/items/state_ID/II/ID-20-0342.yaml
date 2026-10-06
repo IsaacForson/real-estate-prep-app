@@ -1,0 +1,51 @@
+id: ID-20-0342
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee attends a regularly scheduled Idaho Real Estate Commission meeting that lasts three
+  hours and forty‑five minutes. How many continuing education classroom hours may the licensee claim
+  for this meeting under Idaho Code § 54‑2023(6)(b)?
+options:
+  - 4.25 hours of continuing education credit
+  - 4 hours of continuing education credit
+  - 3 hours of continuing education credit
+  - 3.75 hours of continuing education credit
+key: D
+explanation: The rule allows credit for the actual time spent attending a commission meeting, up to
+  a maximum of four hours per meeting per license period. Three hours and forty‑five minutes equals
+  3.75 hours, which is below the four‑hour limit, so the licensee may claim 3.75 hours. The
+  distractor claiming the full four hours incorrectly assumes the maximum is awarded regardless of
+  actual attendance.
+citation:
+  source: Idaho Code § 54-2023(6)(b)
+  url: null
+  quoted_text: Attend a regularly scheduled meeting of the commission from the time the meeting is
+    called to order until the meeting is adjourned or until the licensee is excused by the
+    commission chairperson. A maximum of four (4) hours for this activity shall be credited for any
+    one (1) meeting in any one (1) license period;
+  secondary: []
+math:
+  worked_solution: "Convert 45 minutes to hours: 45 ÷ 60 = 0.75 hours. Add to 3 hours: 3 + 0.75 = 3.75
+    hours. Since 3.75 ≤ 4, the creditable hours are 3.75."
+  formulas:
+    - hours = hours + minutes/60
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - classroom hour
+  - commission meeting
+  - credit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

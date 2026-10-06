@@ -1,0 +1,37 @@
+id: AZ-20-0344
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Arizona law, what is the maximum total amount the real estate recovery fund will pay for
+  all claims arising from the acts of a single licensee?
+options:
+  - $90,000
+  - $60,000
+  - $120,000
+  - $30,000
+key: A
+explanation: Subsection B(2) of § 32-2186 sets the fund’s liability at ninety thousand dollars for
+  each licensee. The thirty‑thousand‑dollar limit in subsection B(1) applies per transaction, not
+  per licensee. Therefore the correct aggregate cap is $90,000.
+citation:
+  source: Ariz. Rev. Stat. § 32-2186(B)(2)
+  url: null
+  quoted_text: Ninety thousand dollars for each licensee.
+  secondary: []
+terms:
+  - recovery fund
+  - liability limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

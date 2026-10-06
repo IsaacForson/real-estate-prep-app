@@ -1,0 +1,53 @@
+id: TX-1101-0296
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of a Texas limited liability company is assigned to purchase an office building
+  for the company's use. The employee negotiates the purchase price, signs the contract, and
+  receives a salary but no commission or other fee for the transaction. Under the Texas Occupations
+  Code, is the employee required to hold a real estate license to perform these activities?
+options:
+  - No, because the employee receives only a salary and no commission, which automatically exempts
+    them from licensing.
+  - No, because negotiating a purchase price and signing a contract are acts that require a broker
+    license.
+  - No, because any person who negotiates a real estate transaction must be licensed regardless of
+    compensation.
+  - No, because the employee is acting as a financial manager of an investment in real estate, which
+    is exempt from licensing.
+key: D
+explanation: Under Tex. Occ. Code §1101.004(b)(2), a person is not engaged in real estate brokerage
+  if they are sponsoring, promoting, managing, or otherwise participating as a principal, partner,
+  or financial manager of an investment in real estate. The employee negotiates the purchase and
+  signs the contract while receiving a salary, acting as a financial manager for the LLC's
+  investment, so no license is required. The distractor that focuses solely on receiving no
+  commission is incorrect because the exemption depends on the nature of the activity, not the
+  compensation form.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.004(b)(2)
+  url: null
+  quoted_text: (2) sponsoring, promoting, or managing, or otherwise participating as a principal,
+    partner, or financial manager of, an investment in real estate;
+  secondary: []
+terms:
+  - brokerage
+  - exemption
+  - investment
+  - manager
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

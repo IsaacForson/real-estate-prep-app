@@ -1,0 +1,45 @@
+id: NAT-PSI-III-0148
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property has a market value of $480,000. The jurisdiction assesses property at 55 percent of
+  market value. What is the assessed value?
+options:
+  - $264,000
+  - $216,000
+  - $744,000
+  - $872,727
+key: A
+explanation: The assessed value is found by multiplying the market value by the assessment ratio
+  expressed as a decimal. Here, 55 percent becomes 0.55, and $480,000 × 0.55 equals $264,000. One
+  incorrect option results from using 45 percent instead of 55 percent, which yields a lower value.
+citation:
+  source: REP Ref. Valuation & Appraisal § 3.3
+  url: null
+  quoted_text: Assessed value is determined by a local assessor and is often a percentage of market
+    value called the assessment ratio
+  secondary: []
+math:
+  worked_solution: "Convert the assessment ratio to a decimal: 55% = 0.55. Multiply the market value
+    by the decimal: $480,000 × 0.55 = $264,000."
+  formulas:
+    - Assessed Value = Market Value × Assessment Ratio
+  onscreen_calculator_only: false
+terms:
+  - assessed value
+  - market value
+  - assessment ratio
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

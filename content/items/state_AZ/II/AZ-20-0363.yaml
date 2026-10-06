@@ -1,0 +1,39 @@
+id: AZ-20-0363
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate commissioner subpoenas a witness for a hearing without a request from any party.
+  Who is responsible for paying the witness’s fees and mileage under Arizona law?
+options:
+  - The witness personally
+  - The Arizona Real Estate Department
+  - The party that requested the witness
+  - The attorney general representing the state
+key: B
+explanation: When the commissioner subpoenas a witness without a party’s request, the fees and
+  mileage are paid as other department expenses. The party‑requested rule does not apply because no
+  party requested the witness.
+citation:
+  source: Ariz. Rev. Stat. § 32-2158(B)
+  url: null
+  quoted_text: Fees for serving process and of witnesses subpoenaed by the commissioner not upon the
+    request of any other person shall be paid as other expenses of the department are paid.
+  secondary: []
+terms:
+  - witness
+  - fee
+  - department
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

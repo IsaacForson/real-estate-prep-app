@@ -1,0 +1,50 @@
+id: MS-1954-0321
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson whose license expires on August 1, 2024 submits a renewal application on July
+  20, 2024 but does not include fingerprint cards. Under Miss. Code Ann. § 73-35-10(1)(b), is the
+  renewal application complete?
+options:
+  - The renewal application is complete because the salesperson submitted the application before the
+    license expiration date.
+  - The renewal application is complete because fingerprints are only required for initial licensure.
+  - The renewal application is incomplete because fingerprints are required for all renewal
+    applications after July 1, 2016.
+  - The renewal application is incomplete because the salesperson failed to pay the renewal fee.
+key: C
+explanation: From July 1, 2016 onward, all renewal applicants must undergo a fingerprint-based
+  criminal history check. Omitting fingerprints makes the application incomplete regardless of
+  timeliness. The idea that the application is complete simply because it was submitted before
+  expiration is wrong because fingerprints are required for renewal, not only for initial licensure.
+citation:
+  source: Miss. Code Ann. §§ 73-35-1 et seq. (Real Estate Brokers License Law of 1954) — Mississippi
+    Real Estate Brokers License Law, Miss. Code Ann. Title 73, Chapter 35 (MREC compilation rev.
+    7-01-2026) § 73-35-10(1)(b)
+  url: null
+  quoted_text: To assist the commission in conducting its licensure investigation, from and after July
+    1, 2016, all applicants for a Mississippi real estate broker's license, or a Mississippi
+    resident license as a real estate salesperson, or a nonresident's license in Mississippi, and
+    all applicants for renewal of any real estate license shall undergo a fingerprint-based criminal
+    history records check of the Mississippi central criminal database and the Federal Bureau of
+    Investigation criminal history database.
+  secondary: []
+terms:
+  - fingerprint
+  - renewal
+  - background check
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

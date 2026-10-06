@@ -1,0 +1,41 @@
+id: NY-443-0416
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "3"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: According to 19 NYCRR §175.1, what must a broker do with a principal’s money before it is
+  deposited into the special bank account?
+options:
+  - The broker must place the money in a federally insured money market fund.
+  - The broker must safeguard the money in a secure location to prevent loss or misappropriation.
+  - The broker must combine the money with personal funds in a separate account.
+  - The broker must invest the money in a state‑approved bond.
+key: B
+explanation: The regulation requires that money received for a principal be safeguarded in a secure
+  location until it can be deposited into the special bank account; therefore the broker must
+  safeguard the money in a secure location to prevent loss or misappropriation. The distractor
+  suggesting placement in a federally insured money market fund is incorrect because the rule limits
+  deposits to federally insured bank accounts only.
+citation:
+  source: 19 N.Y.C.R.R. § 175.1
+  url: null
+  quoted_text: until such time as the money is deposited into a separate, special bank account, it
+    shall be safeguarded in a secure location so as to prevent loss or misappropriation.
+  secondary: []
+terms:
+  - commingling
+  - safeguard
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

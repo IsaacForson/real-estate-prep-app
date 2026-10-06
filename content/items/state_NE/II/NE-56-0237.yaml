@@ -1,0 +1,42 @@
+id: NE-56-0237
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee’s active license was inactivated on March 1, 2024 for failure to maintain errors
+  and omissions insurance. Assuming no state holidays, what is the last date the licensee may file a
+  certificate of coverage to have the license reactivated retroactive to the inactivation date?
+options:
+  - April 1, 2024
+  - March 31, 2024
+  - February 29, 2024
+  - March 30, 2024
+key: B
+explanation: Regulations allow reactivation relating back to the inactivation date if a certificate
+  is filed within thirty days of inactivation. March 1 plus thirty days is March 31, 2024. The March
+  30 distractor reflects filing one day early, which would still be valid but is not the last
+  permissible date.
+citation:
+  source: Neb. Admin. Code tit. 299, ch. 8 — Title 299 NREC Rules and Regulations, Chapter 8 — Errors
+    and omissions insurance § 006.03
+  url: null
+  quoted_text: provided that, within thirty days of the date of inactivation, the licensee or Group
+    Plan Administrator files with the Commission a certificate of coverage showing that such
+    coverage has been and is currently in effect on and from the date of inactivation
+  secondary: []
+terms:
+  - inactivation
+  - reactivation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

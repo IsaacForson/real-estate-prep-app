@@ -1,0 +1,42 @@
+id: KS-3034-0286
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's license expires on April 5. The broker removes all advertising bearing the broker's
+  name on April 9. Under Kansas law, is this action permissible?
+options:
+  - Yes, because the broker also notified clients of the expiration.
+  - No, because advertising must be removed within three days after expiration.
+  - No, because advertising must be removed on the expiration date.
+  - Yes, because the removal occurred within the required five‑day period.
+key: D
+explanation: The rule mandates that advertising be removed or covered within five calendar days
+  after the license expiration date; April 9 falls within that window. The distractors either impose
+  an incorrect deadline or add an unnecessary requirement.
+citation:
+  source: Kan. Stat. Ann. § 58-3085(a)
+  url: null
+  quoted_text: all advertising under the supervising broker's or branch broker's name or trade name,
+    including, but not limited to, signage, must be removed or covered within five calendar days
+    after the expiration date or date of deactivation of the supervising broker's or branch broker's
+    license or the effective date of the order of suspension, deactivation or revocation.
+  secondary: []
+terms:
+  - advertising
+  - expiration
+  - removal
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,49 @@
+id: SC-57-0332
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker‑in‑charge dies on July 15, 2024. The department permits a supervised licensee to act
+  as broker‑in‑charge. What is the latest date the supervised licensee may serve in that role
+  without violating the rule?
+options:
+  - January 15, 2025
+  - February 15, 2025
+  - January 16, 2025
+  - January 14, 2025
+key: A
+explanation: Six months after July 15, 2024 is January 15, 2025, the maximum period allowed by §
+  40-57-135(C)(4). The January 14, 2025 option falls one day short of the full six‑month period,
+  while January 16, 2025 exceeds it by one day.
+citation:
+  source: S.C. Code Ann. § 40-57-135(C)(4)
+  url: null
+  quoted_text: the department may permit a supervised licensee to act as broker-in-charge or property
+    manager-in-charge for up to six months.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: July 15, 2024
+    Add 6 months: July + 6 = January of next year
+    Day remains 15 because January has 31 days
+    Result: January 15, 2025
+  formulas:
+    - Result = Start date + 6 months
+  onscreen_calculator_only: false
+terms:
+  - broker-in-charge
+  - supervised licensee
+  - death
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

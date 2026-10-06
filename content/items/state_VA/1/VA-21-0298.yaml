@@ -1,0 +1,45 @@
+id: VA-21-0298
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A salesperson submitted an activation application to Broker XYZ on April 1. The license has
+  not yet been issued by the Board. On April 5, the salesperson shows a listing to a prospective
+  buyer. Under Virginia law, this action is:"
+options:
+  - Considered permitted activity under Virginia law only
+  - Considered unlicensed activity may lead to discipline
+  - Considered allowed after completing continuing education
+  - Considered permitted if the broker provides verbal approval
+key: B
+explanation: The key is correct because the regulation prohibits conducting licensed activity with
+  the firm named in the application until the license is issued; showing a listing constitutes such
+  activity and is therefore unlicensed, potentially leading to discipline. The option stating that
+  the activity is allowed after completing continuing education is incorrect because completing
+  continuing education does not satisfy the activation requirement; the license must be issued by
+  the Board before any licensed activity may occur.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-70
+  url: null
+  quoted_text: A licensee who submits an activate application to the board must not conduct licensed
+    activity with the real estate firm or sole proprietorship set forth in the application until the
+    license is issued by the board.
+  secondary: []
+terms:
+  - activation
+  - licensed activity
+  - application
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

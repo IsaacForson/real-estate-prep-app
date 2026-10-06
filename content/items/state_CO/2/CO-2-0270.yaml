@@ -1,0 +1,42 @@
+id: CO-2-0270
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker deposits personal funds into the trust account used for client earnest money. Under 4
+  CCR 725-1 § 5.2, is this permissible?
+options:
+  - No, unless the broker obtains written consent from the client.
+  - Yes, if the broker records the deposit as a loan.
+  - Yes, as long as the funds are returned within 24 hours.
+  - No, because trust accounts must hold only money belonging to others.
+key: D
+explanation: The rule requires that money belonging to others be kept separate from the broker’s own
+  money and deposited only into trust or escrow accounts. Depositing personal funds commingles the
+  accounts, which is prohibited. The distractor suggesting it is allowed if recorded as a loan
+  incorrectly assumes a loan exception that the rule does not provide.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) § 5.2
+  url: null
+  quoted_text: All Money Belonging to Others accepted by a Broker or Brokerage Firm must be kept
+    separate from other money belonging to the Broker or Brokerage Firm and must be deposited into
+    one or more of the Broker’s or Brokerage Firm’s Trust or Escrow Accounts.
+  secondary: []
+terms:
+  - commingling
+  - trust account
+  - separate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

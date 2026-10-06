@@ -1,0 +1,40 @@
+id: MS-1954-0299
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a Mississippi resident real estate broker license lives in Alabama but
+  maintains a Mississippi mailing address and works remotely for a Mississippi‑based brokerage.
+  Under Miss. Code Ann. § 73-35-7(a), is the applicant eligible for a resident license?
+options:
+  - Yes, because the applicant has a Mississippi mailing address.
+  - No, because the applicant must have legal domicile in Mississippi at the time of application.
+  - Yes, if the applicant declares intent to establish domicile within six months.
+  - No, unless the applicant also holds an active salesperson license for twelve months.
+key: B
+explanation: Subsection (a) requires the applicant to be age twenty‑one or over and to have his
+  legal domicile in the State of Mississippi at the time he applies. A mailing address alone does
+  not satisfy the domicile requirement. The other options either add conditions not in the statute
+  or confuse it with unrelated rules.
+citation:
+  source: Miss. Code Ann. § 73-35-7(a)
+  url: null
+  quoted_text: (a) shall be age twenty-one (21) years or over, and have his legal domicile in the
+    State of Mississippi at the time he applies;
+  secondary: []
+terms:
+  - domicile
+  - resident license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

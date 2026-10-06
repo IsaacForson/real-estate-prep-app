@@ -1,0 +1,42 @@
+id: KS-3034-0284
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson receives a closing statement that must be kept in the broker's records on
+  Monday. Under Kan. Stat. Ann. § 58-3062(b)(6), by what date must the salesperson submit the
+  document to the supervising broker?
+options:
+  - On the following Tuesday
+  - On the following Friday
+  - On the following Wednesday
+  - On the following Monday
+key: B
+explanation: The rule requires submission within 10 business days of receipt. Counting ten business
+  days from Monday lands on the following Friday. The Monday option would be only seven days later,
+  which does not satisfy the ten‑day requirement.
+citation:
+  source: Kan. Stat. Ann. § 58-3062 — K.S.A. Kan. Stat. Ann. § 58-3062 — Prohibited acts (b)(6)
+  url: null
+  quoted_text: Fail to submit to the supervising broker or branch broker, within 10 business days, any
+    document that must be maintained in the supervising broker's or branch broker's business records
+    for each real estate transaction. The ten-day period shall commence when the document is
+    executed by the client or customer
+  secondary: []
+terms:
+  - document
+  - supervising broker
+  - business days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

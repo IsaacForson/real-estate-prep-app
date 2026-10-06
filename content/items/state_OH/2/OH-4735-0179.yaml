@@ -1,0 +1,45 @@
+id: OH-4735-0179
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under Ohio Adm. Code 1301:5-1-19(D), the superintendent sends a notice of pending license
+  revocation on August 1 stating the license will be revoked on September 1. Is this notice
+  compliant with the rule?
+options:
+  - Yes, because the notice was sent more than sixty days before revocation.
+  - No, because the notice was sent less than sixty days before revocation.
+  - Yes, because the notice included the reason for revocation.
+  - No, because the notice was sent via regular mail instead of electronic mail.
+key: B
+explanation: The rule requires the notice to be sent no later than sixty days prior to revocation.
+  August 1 is only thirty-one days before a September 1 revocation, which fails this timing
+  requirement.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 — § 5-1-19(D)"
+  url: null
+  quoted_text: (D) The superintendent shall provide a licensee suspended for failing to renew pursuant
+    to section 4735.14 of the Revised Code notice of pending license revocation, no later than sixty
+    days prior to revocation, and specify in such notice the date the license will be revoked, the
+    reason for pending license revocation and the procedure by which the licensee may reactivate the
+    license.
+  secondary: []
+terms:
+  - notice
+  - revocation
+  - procedure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

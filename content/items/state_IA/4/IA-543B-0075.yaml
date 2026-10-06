@@ -1,0 +1,48 @@
+id: IA-543B-0075
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant has been a licensed real estate salesperson actively engaged for 30 months and
+  completed 60 contact hours of commission‑approved real estate education 22 months before applying
+  for a broker license. Is the applicant qualified under Iowa Code § 543B.15?
+options:
+  - The applicant is qualified because both the education and experience requirements are satisfied.
+  - The applicant is qualified because the experience requirement is satisfied, but the education
+    requirement is not.
+  - The applicant is not qualified because the experience requirement is not satisfied.
+  - The applicant is not qualified because the education requirement is not satisfied.
+key: A
+explanation: Subsection 7 mandates sixty contact hours of broker education within twenty‑four months
+  prior to the broker exam and at least twenty‑four months of active salesperson experience. The
+  applicant’s education (22 months prior) and experience (30 months) both satisfy these thresholds.
+  The distractor claiming the education requirement is not satisfied is incorrect because the
+  22‑month‑old education falls within the allowed twenty‑four‑month period.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.15(7)
+  url: null
+  quoted_text: |-
+    To qualify for a license as a real estate broker, a person shall complete at least
+    sixty contact hours of commission approved real estate education within twenty-four
+    months prior to taking the broker examination. This education shall be in addition to the
+    required salesperson prelicense course. The applicant shall have been a licensed real estate
+    salesperson actively engaged in real estate for a period of at least twenty-four months
+    preceding the date of application
+  secondary: []
+terms:
+  - broker
+  - education
+  - experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

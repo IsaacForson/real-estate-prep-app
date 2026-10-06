@@ -1,0 +1,47 @@
+id: ME-114-0268
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A continuing education provider schedules a course to begin next Monday and advertises it as
+  offering continuing education credit, but has not yet received written approval from the Director.
+  Under Maine Real Estate Commission rules, is the provider permitted to conduct the course as
+  scheduled?
+options:
+  - Yes, because the advertisement includes the required course description and provider
+    identification.
+  - No, because conducting the class before receiving written approval is prohibited.
+  - Yes, as long as the provider submits the course approval application before the class starts.
+  - No, unless the provider also includes notice of approval status and clock hours in the
+    advertisement.
+key: B
+explanation: Section 6 explicitly prohibits conducting classes for which students expect continuing
+  education credit prior to receiving written approval from the Director. Therefore, the provider
+  may not hold the class until approval is granted. The other options incorrectly suggest that
+  advertising or submitting an application overrides this prohibition.
+citation:
+  source: 02-039 C.M.R. chs. 300–410 (Maine Real Estate Commission rules) — Maine Real Estate
+    Commission Rules, 02-039 C.M.R. Chapters 300, 310, 340, 350, 360, 370, 390, 400, 410 (Secretary
+    of State compilation, 2025) — § 6
+  url: null
+  quoted_text: Course providers shall not conduct classes for which students expect to receive
+    continuing education credit prior to receiving written approval from the Director.
+  secondary: []
+terms:
+  - continuing education
+  - provider
+  - approval
+  - course
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

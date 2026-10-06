@@ -1,0 +1,41 @@
+id: HI-467-0092
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual is employed by a single owner to manage an apartment building and also leases
+  units to multiple tenants. According to Haw. Rev. Stat. § 467-1, which term best describes this
+  individual?
+options:
+  - Real estate salesperson
+  - Property manager agent
+  - Custodian caretaker
+  - Real estate broker
+key: D
+explanation: Managing real estate for others for compensation falls under the broker definition,
+  which includes managing or offering to manage any real estate for others. The individual also
+  leases units, which disqualifies them from being a custodian or caretaker because the statute
+  excludes anyone who leases or rents real estate for more than a single owner from that term.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: manages or offers to manage, any real estate, or the improvements thereon, for others
+  secondary: []
+terms:
+  - real estate broker
+  - custodian
+  - lease
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

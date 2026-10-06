@@ -1,0 +1,48 @@
+id: SD-21A-0203
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives 50% of the agreed commission from the buyer at the time the purchase
+  agreement is signed, before the closing occurs.
+options:
+  - Failing to deposit earnest money into a trust account
+  - Commingling personal funds with client funds
+  - Accepting compensation before the transaction is consummated or terminated
+  - Failing to provide a copy of the agency agreement to the client
+key: C
+explanation: Under §36-21A-84, a broker is not entitled to any part of the commission until the
+  transaction has been consummated or terminated. Accepting compensation before that point violates
+  this prohibition. Commingling funds, while also prohibited, involves mishandling trust accounts
+  rather than the timing of compensation.
+citation:
+  source: "### S.D. Codified Laws § 36-21A (Real Estate Licensing) — South Dakota Codified Laws
+    Chapter 36-21A — Real Estate Licensing (SD Real Estate Commission License Laws & Administrative
+    Rules book, as of July 1, 2025) — § 36-21A-84"
+  url: null
+  quoted_text: No responsible broker is entitled to any part of the money paid to the responsible
+    broker in any transaction as part of the responsible broker's compensation until the transaction
+    has been consummated or terminated.
+  secondary: []
+math:
+  worked_solution: 50% ÷ 100 = 0.5. Therefore, the broker receives 0.5 times the agreed commission.
+  formulas:
+    - "Percentage to decimal conversion: decimal = percent / 100"
+    - Amount = decimal × total commission
+  onscreen_calculator_only: false
+terms:
+  - compensation
+  - consummated
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

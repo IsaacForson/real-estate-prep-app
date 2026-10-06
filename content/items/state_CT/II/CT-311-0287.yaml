@@ -1,0 +1,40 @@
+id: CT-311-0287
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee representing a seller learns that the property was the site of a felony five years
+  ago. Under Connecticut law, is the licensee required to disclose this fact to prospective buyers?
+options:
+  - No, the licensee must disclose the felony history to all prospective buyers
+  - No, the licensee is not required to disclose because it is a nonmaterial fact
+  - No, the licensee must disclose only if the buyer asks about criminal history
+  - No, the licensee must disclose only if the felony occurred within the last year
+key: B
+explanation: Under Conn. Gen. Stat. § 20-311(21), a property suspected to be the site of a death or
+  felony is deemed a nonmaterial fact, which triggers no disclosure obligation. Therefore the
+  licensee is not required to disclose the felony history. The statement that the licensee must
+  disclose the felony history to all prospective buyers incorrectly asserts a duty to disclose,
+  which contradicts the statutory definition.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311(21)
+  url: null
+  quoted_text: (B) the real property was at any time suspected to have been the site of a death or felony;
+  secondary: []
+terms:
+  - felony
+  - nonmaterial fact
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

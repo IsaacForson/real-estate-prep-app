@@ -1,0 +1,46 @@
+id: MI-25-0210
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer and seller disagree over who is entitled to an earnest money deposit after a purchase
+  agreement falls through. According to Michigan administrative rules, what must the broker do with
+  the deposit?
+options:
+  - Return the deposit to the buyer immediately upon request
+  - Hold the deposit until a court decides or parties agree in writing
+  - Disburse the deposit to the seller as liquidated damages per agreement
+  - Place the deposit in an interest-bearing account until resolved
+key: B
+explanation: The rule states that an earnest money deposit for which the buyer and seller have made
+  claim must remain in the trust account until a civil action determines payment or the parties
+  agree in writing to its disposition. Hence the broker must hold the deposit. Returning it
+  immediately would violate the requirement to wait for resolution.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R 339.22101–339.22667
+    — Department of Licensing and Regulatory Affairs, Real Estate Brokers and Salespersons (General
+    Rules), official LARA Administrative Rules System PDF read via Internet Archive capture of
+    2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch the current R
+    339.22101–339.22703 set when reachable R 339.22313(9)
+  url: null
+  quoted_text: any deposit in the trust account of the broker for which the buyer and seller have made
+    claim must remain in the broker's trust account until a civil action has determined to whom the
+    deposit must be paid, or until the buyer and seller have agreed, in writing, to the disposition
+    of the deposit.
+  secondary: []
+terms:
+  - earnest money
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

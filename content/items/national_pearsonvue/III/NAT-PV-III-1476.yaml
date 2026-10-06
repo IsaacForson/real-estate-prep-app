@@ -1,0 +1,54 @@
+id: NAT-PV-III-1476
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: III.C
+vendor: pearsonvue
+license_level: both
+cognitive_level: analysis
+stem: A comparable rental property sold for $300,000 with a monthly rent of $2,000. A comparable
+  office building sold for $1,800,000 with an annual gross income of $150,000. The subject property
+  rents for $2,200 per month and has an annual gross income of $130,000. Which valuation method
+  yields the higher indicated value for the subject property?
+options:
+  - The GRM method results in a higher value estimate.
+  - Both methods result in the same value estimate.
+  - Neither method can be used for this property.
+  - The GIM method results in a higher value estimate.
+key: D
+explanation: GRM = $300,000 ÷ $2,000 = 150; GRM value = $2,200 × 150 = $330,000. GIM = $1,800,000 ÷
+  $150,000 = 12; GIM value = $130,000 × 12 = $1,560,000. Since $1,560,000 > $330,000, the GIM method
+  gives the higher estimate. The GRM option is incorrect because it undervalues the subject relative
+  to the income approach.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: GRM = sale price ÷ gross monthly rent; value = monthly rent × GRM. GIM = sale price ÷
+    gross annual income; value = annual income × GIM.
+  secondary: []
+math:
+  worked_solution: |-
+    GRM = $300,000 ÷ $2,000 = 150
+    GRM value = $2,200 × 150 = $330,000
+    GIM = $1,800,000 ÷ $150,000 = 12
+    GIM value = $130,000 × 12 = $1,560,000
+    Since $1,560,000 > $330,000, GIM yields the higher indicated value
+  formulas:
+    - GRM = sale price ÷ gross monthly rent; value = monthly rent × GRM
+    - GIM = sale price ÷ gross annual income; value = annual income × GIM
+  onscreen_calculator_only: false
+terms:
+  - GRM
+  - GIM
+  - rent
+  - income
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

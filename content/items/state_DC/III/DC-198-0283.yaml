@@ -1,0 +1,42 @@
+id: DC-198-0283
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant organization requests an appraisal and delivers the request to the Mayor and owner on
+  May 1. The tenant organization and owner fail to agree on an appraiser within the next 14 days. On
+  May 16, the tenant organization delivers a written request to the Mayor to select an appraiser.
+  Under D.C. Code § 42-3404.02, by what date must the Mayor select an appraiser?
+options:
+  - May 25.
+  - May 24.
+  - May 23.
+  - May 22.
+key: C
+explanation: The Mayor must select an appraiser within 7 days of receiving the request. The request
+  was received on May 16, so the selection must be made by May 23. The distractor “May 22” is one
+  day too early, while “May 24” is one day late.
+citation:
+  source: "D.C. Code §§ 42-3404.01–42-3404.16 — D.C. Code Title 42, Ch. 34, Subch. IV - Rental Housing
+    Conversion and Sale: Tenant Opportunity to Purchase (TOPA) — § 42-3404.02"
+  url: null
+  quoted_text: (iii) The Mayor shall select the appraiser on a sole source basis within 7 days of
+    receiving the request for an appraiser.
+  secondary: []
+terms:
+  - appraiser
+  - request
+  - Mayor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,40 @@
+id: ID-20-0351
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage operates a satellite office where earnest money checks are deposited and held, but
+  the brokerage does not obtain a separate branch office license for that location. Under Idaho Code
+  § 54-2016(4)(e), is this arrangement permissible?
+options:
+  - Yes, provided the brokerage maintains a centralized trust account at the main office
+  - No, unless the satellite office also handles original transaction files
+  - Yes, because the satellite office is considered part of the main office
+  - No, because holding trust funds at the satellite office requires a separate branch office license
+key: D
+explanation: The statute states that a separate branch office license is required when trust funds
+  or original transaction records are kept at a location other than the main office. Since earnest
+  money (trust funds) is held at the satellite office, a license is needed.
+citation:
+  source: Idaho Code § 54-2016(4)(e)
+  url: null
+  quoted_text: No separate branch office license or manager is required for business locations other
+    than the main office unless trust funds or original transaction records are kept at the branch.
+  secondary: []
+terms:
+  - branch office
+  - trust funds
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

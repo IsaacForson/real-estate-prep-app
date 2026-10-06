@@ -1,0 +1,38 @@
+id: MD-17-0500
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An unlicensed individual commits three separate violations of the Maryland Real Estate Brokers
+  Act by performing brokerage services without a license. What is the maximum total civil penalty
+  the Commission may impose for all three violations?
+options:
+  - $15,000
+  - $20,000
+  - $5,000
+  - $10,000
+key: A
+explanation: Each violation may incur a civil penalty not exceeding $5,000, so three violations
+  could total up to $15,000 under § 16-707(a). The $5,000 distractor reflects the penalty for a
+  single violation only.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. §§ 17-101–17-702 (Maryland Real Estate Brokers Act) § 16-707
+  url: null
+  quoted_text: a civil penalty not exceeding $5,000 for each violation
+  secondary: []
+terms:
+  - penalty
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

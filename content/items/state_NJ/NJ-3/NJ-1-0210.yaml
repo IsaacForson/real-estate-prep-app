@@ -1,0 +1,43 @@
+id: NJ-1-0210
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner fills a freshwater wetland with soil to create a building pad. Does this activity
+  require a freshwater wetlands permit?
+options:
+  - The activity does not require a permit because filling with soil is considered landscaping and
+    exempt.
+  - The activity requires a permit only if the fill exceeds one hundred cubic yards.
+  - The activity requires a permit because dumping, discharging or filling with any materials is a
+    regulated activity.
+  - The activity does not require a permit because the act only applies to wetlands larger than one
+    acre.
+key: C
+explanation: The definition lists dumping, discharging or filling with any materials as a regulated
+  activity, so filling a wetland with soil requires a permit. The distractor claiming exemption for
+  landscaping fill is incorrect because the act does not exempt filling activities.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 13:9B-3
+  url: null
+  quoted_text: (3) The dumping, discharging or filling with any materials;
+  secondary: []
+terms:
+  - filling
+  - dumping
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

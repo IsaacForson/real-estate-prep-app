@@ -1,0 +1,50 @@
+id: KS-3034-0290
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives an earnest money check of $4,000 on Tuesday. The purchase agreement,
+  signed by all parties, states that the earnest money shall be delivered to the named escrow agent
+  on the tenth business day after signing. Under Kansas law, when must the licensee deposit the
+  check?
+options:
+  - On the tenth business day after signing
+  - Within three business days of signing the agreement
+  - Within five business days of receipt
+  - Immediately upon receiving the check
+key: A
+explanation: Under Kansas law a licensee must deposit an earnest‑money check within five business
+  days after receipt, unless the purchase agreement contains a written provision that sets a
+  different deadline. When such a provision exists, the licensee must deposit the funds on the date
+  specified in that provision. Because the agreement requires delivery to the escrow agent on the
+  tenth business day after signing, the licensee must wait until that tenth business day to make the
+  deposit. Kan. Stat. Ann. § 58‑3062(a)(19).
+citation:
+  source: Kan. Stat. Ann. § 58-3062(a)(19)
+  url: null
+  quoted_text: unless otherwise specifically provided by written agreement of all parties to the
+    purchase agreement or lot reservation agreement, in which case the licensee shall deposit the
+    check or cash received on the date provided by such written agreement
+  secondary: []
+math:
+  worked_solution: No arithmetic is required; the answer is determined by the statutory deadline and
+    the written agreement provision.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - deposit
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

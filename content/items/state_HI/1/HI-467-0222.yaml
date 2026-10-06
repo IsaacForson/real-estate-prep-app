@@ -1,0 +1,44 @@
+id: HI-467-0222
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Hawaii real estate broker acquires an ownership interest in a distressed property 400 days
+  after the broker’s listing agreement for that property ended. The property had been listed with
+  the broker at the time of the original listing. Under Haw. Rev. Stat. § 467-14(21), is the
+  broker’s acquisition prohibited?
+options:
+  - The acquisition is prohibited because it occurred within 365 days of the listing agreement’s
+    expiration.
+  - The acquisition is permitted because it occurred outside the 365‑day window.
+  - The acquisition is permitted because it occurred within 365 days of the listing agreement’s
+    expiration.
+  - The acquisition is prohibited because it occurred outside the 365‑day window.
+key: B
+explanation: The acquisition took place 400 days after the listing agreement ended, exceeding the
+  365‑day limit set by § 467‑14(21). Thus the broker’s purchase is not prohibited under this
+  subsection. The distractor asserting a prohibition because the acquisition occurred within the
+  window misapplies the time frame, and the other distractors either add a disclosure requirement
+  not in the statute or incorrectly claim that acting as a principal exempts the licensee.
+citation:
+  source: Haw. Rev. Stat. § 467-14(21)
+  url: null
+  quoted_text: within three hundred sixty-five days after the licensee's listing agreement for the
+    distressed property has expired or is terminated
+  secondary: []
+terms:
+  - distressed property
+  - listing agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

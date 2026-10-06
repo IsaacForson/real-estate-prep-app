@@ -1,0 +1,47 @@
+id: VA-21-0312
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee closes a residential sale and saves the signed settlement statement as a PDF file
+  on a password-protected cloud storage service. The licensee does not retain any paper copy. Under
+  Virginia law, is this permissible?
+options:
+  - Yes, because any document required to be maintained may be an electronic record if it complies
+    with the Uniform Electronic Transactions Act.
+  - No, because Virginia law requires transaction records to be kept in paper form for at least
+    three years.
+  - Yes, but the licensee must also notify the Virginia Real Estate Board of the electronic storage
+    method.
+  - No, because electronic records are not permitted for settlement statements under Virginia
+    regulations.
+key: A
+explanation: The statute expressly permits any required document to be kept as an electronic record
+  provided it complies with the Uniform Electronic Transactions Act. Storing the settlement
+  statement as a PDF on a secure cloud service satisfies this condition if it meets UETA standards.
+  The distractor claiming a paper‑form requirement is incorrect because the law does not mandate
+  paper; it allows electronic records.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. § 54.1-2146
+  url: null
+  quoted_text: Any document or record required to be maintained by a licensee under this chapter may
+    be an electronic record in accordance with the Uniform Electronic Transactions Act (§ 59.1-479
+    et seq.).
+  secondary: []
+terms:
+  - electronic record
+  - uniform electronic transactions act
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

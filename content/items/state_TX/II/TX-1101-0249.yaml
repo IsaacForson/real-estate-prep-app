@@ -1,0 +1,45 @@
+id: TX-1101-0249
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person who has submitted an application for a Texas sales agent license but has not yet
+  received the license shows a property to a prospective buyer for a fee. According to Texas
+  Occupations Code §1101.351(b), is this permissible?
+options:
+  - Yes, because the application is pending with the Commission
+  - No, because the person must wait until the license is received
+  - Yes, if the person is sponsored by a licensed broker
+  - No, unless the person is acting as a residential rental locator
+key: B
+explanation: The law prohibits an applicant from acting as a broker or sales agent until the license
+  is received, so showing a property for a fee without the license is not allowed. The distractor
+  suggesting permission if sponsored by a broker is wrong because the sponsorship exception applies
+  only after licensure, not to an unlicensed applicant.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.351
+  url: null
+  quoted_text: An applicant for a broker or sales agent license may not act as a broker or sales agent
+    until the person receives the license evidencing that authority.
+  secondary: []
+terms:
+  - license
+  - applicant
+  - broker
+  - sales agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

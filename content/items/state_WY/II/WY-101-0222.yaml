@@ -1,0 +1,39 @@
+id: WY-101-0222
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum administrative fine that the Wyoming Real Estate Commission may impose for
+  a single offense under the Real Estate License Act?
+options:
+  - $1,000
+  - $2,500
+  - $5,000
+  - $10,000
+key: B
+explanation: Under Wyo. Stat. Ann. § 33-28-111(a), the commission may impose an administrative fine
+  not to exceed $2,500 for each separate offense. This directly sets the ceiling for a single
+  violation. The $5,000 amount applies to subsequent unlicensed activity penalties under
+  §33-28-114(a), not to administrative fines for licensees.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-111(a)
+  url: null
+  quoted_text: impose an administrative fine not to exceed two thousand five hundred dollars
+    ($2,500.00) for each separate offense
+  secondary: []
+terms:
+  - administrative fine
+  - offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,40 @@
+id: NC-93A-0507
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "2"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A vacancy occurs on the North Carolina Real Estate Commission due to a member's resignation.
+  The vacancy is not a legislative appointment. Under N.C. Gen. Stat. § 93A-3(a), who has the power
+  to fill this vacancy?
+options:
+  - The General Assembly of North Carolina
+  - The Governor of North Carolina
+  - The Speaker of the House of Representatives
+  - The President Pro Tempore of the Senate
+key: B
+explanation: The statute gives the Governor authority to fill all vacancies on the Commission,
+  except those that are legislative appointments, which are filled under G.S. 120-122. The General
+  Assembly only fills legislative vacancies, making it incorrect for this scenario.
+citation:
+  source: N.C. Gen. Stat. ch. 93A — N.C. General Statutes Chapter 93A - Real Estate License Law;
+    ncleg.gov PDF, Internet Archive capture 2026-04-19 — § 93A-3
+  url: null
+  quoted_text: The Governor shall have the power to fill all vacancies occurring on the Commission,
+    except vacancies in legislative appointments shall be filled under G.S. 120-122.
+  secondary: []
+terms:
+  - vacancy
+  - governor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

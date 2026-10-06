@@ -1,0 +1,43 @@
+id: NV-645-0206
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: According to Nevada law, what is the broker's responsibility when assigning two licensees from
+  the same firm to represent the buyer and seller in a residential transaction?
+options:
+  - The broker need not obtain written consent from the parties for the licensees to act
+  - The broker must obtain written consent from both parties before the licensees may act
+  - The broker must ensure the licensees present all offers made to or by the client
+  - The broker must disclose each licensee's interest in the transaction to the parties
+key: A
+explanation: The broker does not need to obtain written consent when assigning two licensees from
+  the same firm to represent the buyer and seller, as NRS 645.253 provides that licensees assigned
+  to separate parties are not required to obtain the written consent otherwise mandated by NRS
+  645.252(1)(d). Requiring written consent in this situation is incorrect.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.253"
+  url: null
+  quoted_text: Licensees affiliated with his or her brokerage to separate parties to a real estate
+    transaction, the licensees are not required to obtain the written consent required pursuant to
+    paragraph (d) of subsection 1 of NRS 645.252
+  secondary: []
+terms:
+  - consent
+  - assignment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

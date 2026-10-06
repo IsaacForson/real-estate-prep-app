@@ -1,0 +1,57 @@
+id: TX-1101-0060
+jurisdiction: TX
+bank: state_TX
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A limited liability company receives compensation on behalf of a licensed sales agent for
+  referral services, performs no other brokerage acts, is registered with the Texas Real Estate
+  Commission, and is 60% owned by the sales agent. Under Texas Occupations Code §1101.355, is the
+  LLC required to be licensed as a broker?
+options:
+  - Under Texas Occupations Code §1101.355, the limited liability company must be licensed as a
+    broker because any entity receiving compensation must be licensed.
+  - Under Texas Occupations Code §1101.355, the limited liability company is not required to be
+    licensed as a broker because it meets all exceptions in subsection (d).
+  - Under Texas Occupations Code §1101.355, the limited liability company must be licensed as a
+    broker because it is not a corporation.
+  - Under Texas Occupations Code §1101.355, the limited liability company is not required to be
+    licensed as a broker only if it is owned less than fifty-one percent by the license holder.
+key: B
+explanation: Section 1101.355(d) provides that a business entity is not required to be licensed if
+  it receives compensation on behalf of a license holder, performs no other brokerage acts, is an
+  LLC or S corporation, is registered with the commission, and is at least 51% owned by the license
+  holder. The LLC satisfies all these conditions, so it is exempt. The statement that any entity
+  receiving compensation must be licensed is incorrect because the exemption applies despite receipt
+  of compensation.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.355
+  url: null
+  quoted_text: "(d) Notwithstanding Subsection (c) or any other law, a business entity is not required
+    to be licensed under this chapter if the business entity:"
+  secondary: []
+math:
+  worked_solution: The LLC is 60% owned by the sales agent. The exemption requires at least 51%
+    ownership. Since 60% ≥ 51%, the ownership condition is satisfied.
+  formulas:
+    - Ownership percentage ≥ 51%
+  onscreen_calculator_only: false
+terms:
+  - business entity
+  - licensing
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

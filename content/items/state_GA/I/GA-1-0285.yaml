@@ -1,0 +1,49 @@
+id: GA-1-0285
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A veteran who served two years on active duty, with at least 90 days during wartime, takes the
+  Georgia salesperson examination and scores 70. What is the applicant's final score after veterans
+  preference points are applied?
+options:
+  - 70 points
+  - 80 points
+  - 85 points
+  - 75 points
+key: D
+explanation: The rule grants a credit of five points to any candidate who served at least one year
+  on active duty with 90 days during wartime. Adding those five points to the exam score of 70
+  yields a final score of 75 points. The 70‑point option omits the veteran credit, while 80 and 85
+  points would incorrectly add ten or fifteen points.
+citation:
+  source: Ga. Comp. R. & Regs. r. 520-1-.04 — Ga. Comp. R. & Regs. 520-1-.04 — Obtaining a License
+    (GREC-hosted official rule PDF) (3)(b)
+  url: null
+  quoted_text: Any candidate for licensure who served on active duty in the armed forces of the United
+    States, or on active duty in a reserve component of the armed forces of the United States
+    including the National Guard, for a period of one year or more, of which at least 90 days were
+    served during wartime or during any conflict when military personnel were committed by the
+    President of the United States, shall be entitled to a credit of five points.
+  secondary: []
+math:
+  worked_solution: "Exam score: 70; Veterans points: 5; 70 + 5 = 75."
+  formulas:
+    - final_score = exam_score + veterans_points
+  onscreen_calculator_only: false
+terms:
+  - veterans preference points
+  - exam score
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

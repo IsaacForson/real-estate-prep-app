@@ -1,0 +1,39 @@
+id: DC-198-0300
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to D.C. Code § 47-2853.161, a real estate broker who is also the owner of a
+  subdivision may sell or offer to sell lots in that subdivision only if the subdivision comprises
+  at **LEAST** how many lots?
+options:
+  - 6 lots
+  - 3 lots
+  - 5 lots
+  - 4 lots
+key: C
+explanation: The statute explicitly states that a broker acting as owner may sell lots in a
+  subdivision comprising 5 lots or more. Therefore, the threshold is 5 lots. The distractor of 4
+  lots is incorrect because the requirement is for 5 lots or more.
+citation:
+  source: D.C. Code § 47-2853.161
+  url: null
+  quoted_text: who as owner may sell or, through solicitation or advertising, offer to sell or
+    negotiate the sale of any lot in any subdivision of land comprising 5 lots or more.
+  secondary: []
+terms:
+  - subdivision
+  - lots
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

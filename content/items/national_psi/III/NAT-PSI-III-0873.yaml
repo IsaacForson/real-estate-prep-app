@@ -1,0 +1,54 @@
+id: NAT-PSI-III-0873
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee preparing a CMA has a comparable property that lacks a garage, while the subject
+  property includes a garage. If the market-derived adjustment for a garage is $5,000, what
+  adjustment should be made to the comparable's sale price?
+options:
+  - Decrease by $5,000
+  - Increase by $6,000
+  - Increase by $5,000
+  - Decrease by $6,000
+key: C
+explanation: When a comparable property lacks a feature that the subject property has, the
+  comparable is considered inferior. For an inferior comparable, you add the market‑derived
+  adjustment for that feature to the comparable’s sale price. You never adjust the subject
+  property’s price. Here the comparable lacks a garage while the subject has one, and the garage
+  adjustment is $5,000, so you add $5,000 to the comparable’s price.
+citation:
+  source: REP Ref. Valuation & Appraisal § 12.1
+  url: null
+  quoted_text: "Adjustment direction: comparable superior, subtract; comparable inferior, add; never
+    adjust the subject."
+  secondary: []
+math:
+  worked_solution: >-
+    1. Identify the difference: comparable lacks garage, subject has garage → comparable is
+    inferior.
+
+    2. Market‑derived garage adjustment = $5,000.
+
+    3. For an inferior comparable, add the adjustment: $0 + $5,000 = $5,000 increase.
+
+    4. Therefore, adjust the comparable’s sale price upward by $5,000.
+  formulas:
+    - "Adjustment = (Feature present in subject? + adjustment : - adjustment)"
+  onscreen_calculator_only: false
+terms:
+  - adjustment direction
+  - cma
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

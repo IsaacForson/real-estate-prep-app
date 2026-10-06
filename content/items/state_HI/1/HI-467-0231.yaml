@@ -1,0 +1,45 @@
+id: HI-467-0231
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A broker holds rental deposits from two different tenants in the same trust account that is
+  separate from the broker's business operating account. Under Haw. Admin. Rules § 16-99-3(e), this
+  practice is:"
+options:
+  - The practice of holding rental deposits from multiple tenants in a single trust account separate
+    from the broker's own funds is permitted
+  - The practice of holding rental deposits from multiple tenants is allowed only with written
+    consent from each tenant
+  - The practice of holding rental deposits from multiple tenants requires a separate trust account
+    for each tenant
+  - The practice of holding rental deposits from multiple tenants in a single trust account separate
+    from the broker's own funds
+key: A
+explanation: The rule only mandates that trust funds be kept separate from the broker's own funds;
+  it does not require separate accounts for each tenant or tenant consent. Therefore, holding
+  multiple tenants' deposits in one account that is separate from the broker's own funds is
+  permissible.
+citation:
+  source: Haw. Admin. Rules § 16-99-3(e)
+  url: null
+  quoted_text: The broker shall keep in special bank accounts, separated from the broker's own funds,
+    moneys coming into the broker's possession in trust for other persons, such as escrow funds,
+    trust funds, clients' moneys, rental deposits, rental receipts, and other like items
+  secondary: []
+terms:
+  - trust account
+  - commingling
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

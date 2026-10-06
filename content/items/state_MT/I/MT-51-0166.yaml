@@ -1,0 +1,50 @@
+id: MT-51-0166
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A firm's professional liability insurance policy sets a deductible of $15,000 per claim.
+  According to Montana law, what must the firm do to comply with the deductible requirement?
+options:
+  - The firm must reduce the deductible to $10,000
+  - The firm must increase the deductible to $20,000
+  - The firm must take no further action
+  - The firm must obtain written board approval
+key: D
+explanation: Montana law allows a professional liability deductible of up to $10,000 per claim
+  without any additional approval. When the deductible is greater than $10,000 but does not exceed
+  $100,000, the firm must first obtain written approval from its board of directors. Because the
+  policy’s deductible is $15,000, which is above the $10,000 threshold, the firm must secure written
+  board approval before the policy complies with the statute. Reducing the deductible to $10,000
+  would eliminate the need for approval but is not required, and increasing it to $20,000 still
+  requires board approval. Taking no action would leave the firm out of compliance.
+citation:
+  source: Mont. Code Ann. § 37-51-325(7)(c)(ii)
+  url: null
+  quoted_text: greater than $10,000 a claim but not to exceed $100,000 a claim, provided the firm has
+    obtained written approval from the board
+  secondary: []
+math:
+  worked_solution: |-
+    Deductible set in policy = $15,000.
+    Allowed deductible without board approval = $10,000.
+    Since $15,000 > $10,000, written board approval is required.
+  formulas:
+    - Comparison of deductible amount to threshold
+  onscreen_calculator_only: false
+terms:
+  - deductible
+  - board approval
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

@@ -1,0 +1,49 @@
+id: GA-1-0306
+jurisdiction: GA
+bank: state_GA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee fails to have the financial institution designate two separate trust accounts as
+  trust or escrow accounts, and the institution did not make an error. What is the total fine that
+  may be assessed for these violations under Rule 520-1-.14(3)(o)?
+options:
+  - $800.00
+  - $1,500
+  - $1,000
+  - $1,200
+key: D
+explanation: The rule imposes a $600 fine for each account not properly designated. With two
+  accounts, the total fine is 2 × $600 = $1,200. The other amounts correspond to one account, one
+  and a half accounts, or an incorrect calculation.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live .14(3)(o)
+  url: null
+  quoted_text: Failure of a licensee to have the financial institution designate an account as a trust
+    or escrow account, except where the financial institution has erred. 43-40-20(b). Fine of
+    $600.00 per account not designated.
+  secondary: []
+math:
+  worked_solution: 2 accounts × $600 per account = $1,200
+  formulas:
+    - Total fine = number of accounts × fine per account
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - designation
+  - fine
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

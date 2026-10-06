@@ -1,0 +1,47 @@
+id: NJ-1-0240
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner has 4 acres of land that has been actively devoted to agricultural use for the
+  past three years. Does this land qualify for farmland assessment under N.J. Stat. Ann. §
+  54:4-23.2?
+options:
+  - No, because the land is less than the required five acres.
+  - Yes, because the land meets the required years of agricultural use.
+  - No, because the land has not been used for five successive years.
+  - Yes, because the land has been used agriculturally for more than two years.
+key: A
+explanation: To qualify for farmland assessment, N.J. Stat. Ann. § 54:4-23.2 requires land of not
+  less than 5 acres in area. Since the landowner’s parcel is only 4 acres, it does not satisfy the
+  acreage requirement despite meeting the years-of-use condition. The distractor suggesting
+  qualification based on years of use is incorrect because both acreage and duration must be
+  satisfied.
+citation:
+  source: N.J. Stat. Ann. § 54:4-23.2
+  url: null
+  quoted_text: not less than 5 acres in area
+  secondary: []
+math:
+  worked_solution: "The landowner has 4 acres. The statute requires not less than 5 acres. Compare: 4
+    acres < 5 acres, so the acreage requirement is not met. Therefore the land does not qualify."
+  formulas:
+    - acreage >= required acreage
+  onscreen_calculator_only: false
+terms:
+  - farmland assessment
+  - acre
+  - agricultural use
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

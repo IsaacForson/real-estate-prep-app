@@ -1,0 +1,51 @@
+id: CA-4-0309
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A time-share association's regular assessment for the prior fiscal year was $500 per interest.
+  The board proposes to raise the assessment to $625 per interest for the coming year without
+  obtaining a vote. Under Cal. Bus. & Prof. Code § 11265(a)(5), is this increase permissible without
+  a vote of the owners other than the developer?
+options:
+  - The increase is permissible without a vote because it is exactly 20 percent.
+  - The increase is permissible without a vote because it is less than 20 percent.
+  - The increase is not permissible without a vote because it exceeds 20 percent.
+  - The increase is not permissible without a vote because it is exactly 20 percent.
+key: C
+explanation: The increase from $500 to $625 represents a 25 percent increase, which is more than the
+  20 percent allowed without a vote under Cal. Bus. & Prof. Code § 11265(a)(5). Therefore the
+  increase may not be levied without the vote or written assent of a majority of the voting power
+  residing in owners other than the developer. The option stating the increase is exactly 20 percent
+  misstates the actual percentage increase.
+citation:
+  source: Cal. Bus. & Prof. Code § 11265(a)(5)
+  url: null
+  quoted_text: An annual assessment for each time-share interest that is more than 20 percent greater
+    than the regular assessment per time-share interest for the immediately preceding fiscal year
+    may not be levied without the vote or written assent of a majority of the voting power of the
+    association residing in members other than the developer.
+  secondary: []
+math:
+  worked_solution: "Step 1: Find the difference: $625 - $500 = $125. Step 2: Divide the difference by
+    the original amount: $125 / $500 = 0.25. Step 3: Convert to percentage: 0.25 × 100 = 25%."
+  formulas:
+    - Percent Increase = ((New Value - Old Value) / Old Value) × 100
+  onscreen_calculator_only: false
+terms:
+  - assessment
+  - increase
+  - vote
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

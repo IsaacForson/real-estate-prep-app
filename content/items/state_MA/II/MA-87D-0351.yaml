@@ -1,0 +1,43 @@
+id: MA-87D-0351
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An individual who is 17 years old submits a complete application for a Massachusetts broker
+  license, including the required bond and proof of good moral character. Under Massachusetts law,
+  what is the likely outcome?
+options:
+  - The license is issued after passing the examination
+  - The license is issued but restricted to salesman activities
+  - The license is issued pending parental consent
+  - The license is denied because the applicant is under 18 years of age
+key: D
+explanation: The law explicitly states that no broker's license shall be issued to any individual
+  under eighteen years of age, so a 17‑year‑old applicant must be denied regardless of other
+  qualifications. The distractor suggesting issuance pending parental consent is incorrect because
+  the statute provides no exception for minors.
+citation:
+  source: "### M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87TT"
+  url: null
+  quoted_text: No broker's license shall be issued to any individual under eighteen years of age
+  secondary: []
+terms:
+  - age
+  - broker license
+  - minority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

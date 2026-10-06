@@ -1,0 +1,46 @@
+id: FL-475-0393
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Closing occurs on May 1. The owner and broker have not agreed in writing regarding the release
+  of disputed reserved proceeds by May 6. What action may the closing agent take under Florida
+  Statute 475.711?
+options:
+  - The closing agent may file an interpleader action to have the court decide the rights to the
+    disputed reserved proceeds.
+  - The closing agent must release the disputed reserved proceeds to the broker without further
+    delay or additional conditions.
+  - The closing agent must deduct recording expenses from the disputed reserved proceeds before any
+    distribution is made.
+  - The closing agent must continue holding the disputed reserved proceeds until the owner and
+    broker agree on their distribution.
+key: A
+explanation: Under Florida Statute § 475.711(1)(b), when the owner and broker have not reached a
+  written agreement within five days after closing about the disputed reserved proceeds, the closing
+  agent is authorized to file an interpleader action so a court can determine the proper
+  distribution. The agent may not release the proceeds to either party, may not deduct expenses, and
+  may not simply retain the funds without seeking court direction.
+citation:
+  source: Fla. Stat. § 475.711(1)(b)
+  url: null
+  quoted_text: The owner and the broker have not agreed in writing, within 5 days after the closing,
+    regarding the closing agent’s release of the disputed reserved proceeds.
+  secondary: []
+terms:
+  - closing agent
+  - interpleader
+  - disputed reserved proceeds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

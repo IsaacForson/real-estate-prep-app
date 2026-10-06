@@ -1,0 +1,50 @@
+id: AZ-20-0345
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A judgment debtor receives a notice of claim and copy of application from the real estate
+  recovery fund on March 10, 2024. Assuming no weekends or holidays affect the deadline, by what
+  date must the judgment debtor file a written response to avoid waiving the right to object?
+options:
+  - April 10, 2024
+  - April 11, 2024
+  - April 14, 2024
+  - April 15, 2024
+key: C
+explanation: The notice requires a response within thirty‑five calendar days. March has 31 days, so
+  March 10 plus 21 days reaches March 31; adding the remaining 14 days lands on April 14. Therefore
+  the deadline is April 14, 2024.
+citation:
+  source: Ariz. Rev. Stat. § 32-2188.01(C)
+  url: null
+  quoted_text: If the judgment debtor fails to file a written response to the application with the
+    department within thirty-five calendar days after service under subsection B of this section or
+    after the first publication of the notice, the judgment debtor is not thereafter entitled to
+    notice of any action taken or proposed to be taken by the commissioner with respect to the
+    claim.
+  secondary: []
+math:
+  worked_solution: |-
+    Days left in March after March 10: 31 - 10 = 21
+    Remaining days to count: 35 - 21 = 14
+    Add 14 days to April 1: April 1 + 13 days = April 14
+  formulas:
+    - deadline = start date + N days
+  onscreen_calculator_only: false
+terms:
+  - notice
+  - response deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,47 @@
+id: SC-57-0315
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee deposits a buyer’s earnest money into an account titled ‘Trust Account’ at their
+  bank. The account is properly designated and titled to include the word ‘trust’. According to S.C.
+  Code Ann. § 40-57-30(28), is this permissible?
+options:
+  - The licensee’s action is permissible because any escrow account titled ‘Trust Account’ satisfies
+    the definition of a personal trust account.
+  - The licensee’s action is not permissible because the account must be for the licensee's personal
+    real estate and the real estate is not managed or listed through a brokerage firm.
+  - The licensee’s action is not permissible because the licensee must obtain commission approval
+    before using any trust account for client funds.
+  - The licensee’s action is permissible because the account is properly titled and safeguards funds
+    for the transaction.
+key: B
+explanation: The statute defines a personal trust account as one used only for the licensee's
+  personal real estate that is not managed or listed through a brokerage firm. Since the earnest
+  money belongs to a buyer (a client) and the property is not the licensee's personal real estate,
+  the use is impermissible. The option stating that any escrow account titled ‘Trust Account’
+  satisfies the definition of a personal trust account mistakenly focuses only on the account's
+  title, ignoring the required ownership and management conditions.
+citation:
+  source: S.C. Code Ann. § 40-57-30(28)
+  url: null
+  quoted_text: when the transaction involves the licensee's personal real estate and the real estate
+    is not managed or listed through a real estate brokerage firm
+  secondary: []
+terms:
+  - personal trust account
+  - earnest money
+  - client
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

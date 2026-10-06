@@ -1,0 +1,40 @@
+id: VT-2211-0236
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A board member is appointed to fill a vacancy with two months remaining in the term. Under 3
+  V.S.A. §129b(b), does this appointment count toward the two‑consecutive‑term limit?
+options:
+  - It counts as a full term
+  - It does not count as a term
+  - It counts as half a term
+  - It counts as a term after six
+key: B
+explanation: The statute specifies that members appointed to fill a vacancy before the term ends are
+  not deemed to have served a term, so the appointment does not count toward the limit. The
+  distractor “It counts as a full term” incorrectly treats the vacancy appointment as a full term,
+  which contradicts the explicit provision.
+citation:
+  source: "3 V.S.A. ch. 5 — 3 V.S.A. Chapter 5 — Secretary of State (Subchapter 3: Office of
+    Professional Regulation, incl. § 129a Unprofessional conduct) — § 129 §129b(b)"
+  url: null
+  quoted_text: Members appointed to fill a vacancy created before the end of a term shall not be
+    deemed to have served a term for purposes of this section.
+  secondary: []
+terms:
+  - vacancy
+  - term
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

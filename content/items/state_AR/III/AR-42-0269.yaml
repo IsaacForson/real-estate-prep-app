@@ -1,0 +1,49 @@
+id: AR-42-0269
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A bank requires a minimum balance of $400 to keep a trust account open. According to Rule
+  10.8(d)(1), what amount may the principal broker retain in the trust account as the broker's own
+  funds?
+options:
+  - $300
+  - $500
+  - $400
+  - $200
+key: C
+explanation: Rule 10.8(d)(1) permits the broker to keep in the trust account the amount the bank
+  designates as the minimum balance needed to keep the account open, and that amount is treated as
+  the broker’s own funds. Since the bank’s required minimum is $400, the broker may retain $400.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.8(d)(1)
+  url: null
+  quoted_text: (1) If the bank in which the account is maintained designates a specific minimum
+    balance that must be maintained in order to keep the account open, the broker may maintain that
+    amount in the account designated as the broker's funds.
+  secondary: []
+math:
+  worked_solution: |-
+    The bank’s required minimum balance = $400.
+    Rule 10.8(d)(1) allows the broker to retain the exact minimum balance as the broker’s funds.
+    Therefore, amount the broker may retain = $400.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - minimum balance
+  - trust account
+  - broker's funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

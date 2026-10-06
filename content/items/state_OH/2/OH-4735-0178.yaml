@@ -1,0 +1,42 @@
+id: OH-4735-0178
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's license was suspended on January 1, 2025 for disciplinary reasons. The licensee
+  submits a reactivation application on March 1, 2026. What is the status of the license under Ohio
+  Adm. Code 1301:5-1-19(C)?
+options:
+  - The license has been revoked due to failure to reactivate within twelve months.
+  - The licensee must retake the salesperson examination.
+  - The license remains suspended until reactivation is completed.
+  - The license is automatically reinstated after paying a late fee.
+key: A
+explanation: More than twelve months have elapsed between the suspension date (January 1, 2025) and
+  the reactivation attempt (March 1, 2026). The rule mandates revocation when reactivation does not
+  occur within twelve months of suspension.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 — § 5-1-19(C)"
+  url: null
+  quoted_text: (C) A license shall be revoked for the failure of a licensee to reactivate a suspended
+    license within twelve months of the date of the suspension of the license.
+  secondary: []
+terms:
+  - reactivation
+  - suspension
+  - revocation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

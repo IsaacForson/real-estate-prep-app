@@ -1,0 +1,44 @@
+id: LA-1430-0573
+jurisdiction: LA
+bank: state_LA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Louisiana salesperson receives a commission check directly from the buyer after closing a
+  residential sale, without the check first going to the sponsoring broker. Under La. R.S.
+  37:1446(F), is this permissible?
+options:
+  - The salesperson may accept the commission because the buyer is the source of funds.
+  - The salesperson may not accept the commission because licensees may only accept commissions from
+    their sponsoring broker.
+  - The salesperson may accept the commission if they have a written agreement with the buyer.
+  - The salesperson may not accept the commission unless they are also a licensed broker.
+key: B
+explanation: La. R.S. 37:1446(F) prohibits a licensee from accepting commission from any person
+  except their sponsoring or qualifying broker. Therefore, the salesperson may not accept the
+  commission check directly from the buyer. The statement that the salesperson may accept the
+  commission because the buyer is the source of funds is incorrect because the source of funds does
+  not override the statutory restriction. The statement that the salesperson may accept the
+  commission if they have a written agreement with the buyer is also incorrect for the same reason.
+citation:
+  source: La. R.S. 37:1446(F)
+  url: null
+  quoted_text: An active real estate licensee shall not accept a commission or other valuable
+    consideration for the performance of any act herein specified, or for performing any act
+    relating thereto, from any person, except their sponsoring or qualifying broker.
+  secondary: []
+terms:
+  - commission
+  - sponsoring broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

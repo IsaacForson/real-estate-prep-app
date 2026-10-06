@@ -1,0 +1,51 @@
+id: NM-1-0278
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker’s associate broker commits a violation of the real estate license law by
+  failing to remit escrow funds. The qualifying broker had no knowledge of the associate broker’s
+  action. May the commission revoke the qualifying broker’s license based solely on the associate
+  broker’s violation under N.M. Stat. Ann. § 61-29-12(B)?
+options:
+  - Yes, because any violation by an associate broker automatically implicates the qualifying broker.
+  - Yes, because the commission may revoke the license for any violation occurring in the brokerage.
+  - No, because the qualifying broker lacked guilty knowledge of the associate broker’s violation.
+  - No, because only the associate broker’s license may be revoked, not the qualifying broker’s.
+key: C
+explanation: Under N.M. Stat. Ann. § 61-29-12(B), a qualifying broker’s license may not be revoked
+  for an associate broker’s violation unless the qualifying broker had guilty knowledge of that
+  violation. Because the qualifying broker had no knowledge, the commission may not revoke the
+  license on that basis. One wrong option states that any violation by an associate broker
+  automatically implicates the qualifying broker, which ignores the knowledge requirement. Another
+  wrong option says the commission may revoke the license for any violation occurring in the
+  brokerage, also disregarding the knowledge requirement. A third wrong option asserts that only the
+  associate broker’s license may be revoked, not the qualifying broker’s, which contradicts the
+  statute’s provision that the qualifying broker’s license can be revoked if guilty knowledge is
+  shown.
+citation:
+  source: N.M. Stat. Ann. § 61-29-12(B)
+  url: null
+  quoted_text: An unlawful act or violation of Chapter 61, Article 29 NMSA 1978 by an associate
+    broker, employee, partner or associate of a qualifying broker shall not be cause for the
+    revocation of a license of the qualifying broker unless it appears to the satisfaction of the
+    commission that the qualifying broker had guilty knowledge of the unlawful act or violation.
+  secondary: []
+terms:
+  - qualifying broker
+  - associate broker
+  - guilty knowledge
+  - revocation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

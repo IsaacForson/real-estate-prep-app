@@ -1,0 +1,43 @@
+id: NJ-1-0214
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: In a New Jersey county that does not have a register of deeds and mortgages, who is the county
+  recording officer according to N.J.S.A. 46:15-5(b)?
+options:
+  - The register of deeds and mortgages
+  - The county surrogate
+  - The county clerk and his office
+  - The county treasurer
+key: C
+explanation: The statute defines the county recording officer as the county clerk and his office in
+  counties lacking a register of deeds and mortgages. The other options describe officers that are
+  not specified for this role.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 15 — New Jersey Statutes Title 46, Chapter 15 — Realty Transfer
+    Fee (N.J.S.A. 46:15-1 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 — § 15-5
+  url: null
+  quoted_text: The terms "county recording officer" and "office of the county recording officer" mean
+    the register of deeds and mortgages in counties having such an officer and office, and the
+    county clerk and his office in the other counties.
+  secondary: []
+terms:
+  - county recording officer
+  - county clerk
+  - register of deeds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

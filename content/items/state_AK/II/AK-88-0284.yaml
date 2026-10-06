@@ -1,0 +1,48 @@
+id: AK-88-0284
+jurisdiction: AK
+bank: state_AK
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An employee of an Alaska-based corporation regularly prepares lease agreements for the
+  corporation’s owned office buildings as part of their job duties. The employee receives a bonus
+  that is calculated as a percentage of the total lease value of each transaction. Under Alaska law,
+  is the employee required to hold a real estate license to perform these activities?
+options:
+  - The employee does not need a license because they are acting within the regular course of
+    business for their employer.
+  - The employee must hold a real estate license because the compensation is tied to the value of
+    the real estate.
+  - The employee does not need a license because preparing lease agreements is exempt under AS
+    08.88.900(a)(9).
+  - The employee must hold a license only if they also receive a commission from a third party.
+key: B
+explanation: The exemption for corporate employees performing acts incidental to regular business
+  does not apply when compensation is dependent on the value of the real estate. Since the
+  employee's bonus is a percentage of lease value, the exemption is lost and a license is required.
+  The other options incorrectly rely on the exemption or add unrelated conditions.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. (AS 08.88, Real Estate Brokers and Other Licensees) §
+    08.88.900(a)(9)
+  url: null
+  quoted_text: the exemption under this paragraph does not apply to a person employed by a foreign or
+    domestic corporation, partnership, limited partnership, or limited liability company who
+    performs an act described in AS 08.88.161 either (A) as a vocation; or (B) for compensation if
+    the amount of the compensation is dependent upon or directly related to the value of the real
+    estate with respect to which the act is performed
+  secondary: []
+terms:
+  - exemption
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

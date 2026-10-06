@@ -1,0 +1,51 @@
+id: AR-42-0261
+jurisdiction: AR
+bank: state_AR
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Laura, who is not a licensed real estate broker, holds a duly executed and recorded power of
+  attorney from her uncle, the owner of a rental house, authorizing her to sign the sale contract on
+  his behalf. Laura does not receive any fee, commission, or other consideration for performing this
+  act. Under Arkansas law, is Laura required to hold a real estate license to perform this act?
+options:
+  - Under Arkansas law, Laura is exempt from holding a real estate license because she is acting as
+    the owner.
+  - Under Arkansas law, Laura is exempt from holding a real estate license as an attorney-in-fact
+    with no compensation.
+  - Under Arkansas law, Laura must hold a real estate license because she is using a power of
+    attorney to sell the property.
+  - Under Arkansas law, Laura must hold a real estate license to perform the sale contract on behalf
+    of the owner.
+key: B
+explanation: The exemption for an attorney-in-fact under a power of attorney applies when the person
+  receives no fee, commission, or other consideration for performing the act, as stated in §
+  17-42-104(a)(2). Since Laura receives no compensation, she is exempt from licensing requirements.
+  The distractors claiming Laura must hold a license ignore this exemption because they overlook the
+  lack of compensation.
+citation:
+  source: Ark. Code Ann. § 17-42-104(a)(2)
+  url: null
+  quoted_text: An attorney in fact under a duly executed and recorded power of attorney from the owner
+    or lessor authorizing the final consummation by performance of any contract for the sale, lease,
+    or exchange of real estate, provided that the attorney in fact does not receive or have an
+    expectation of receiving a fee, commission, or other consideration, directly or indirectly, for
+    performing the act
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - exemption
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

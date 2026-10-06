@@ -1,0 +1,40 @@
+id: NAT-PSI-II-0814
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower has a judgment lien recorded in 2020 and a mortgage recorded in 2021. They later
+  record a subordination agreement that makes the judgment lien senior to the mortgage. In a
+  foreclosure sale, which lien will be paid first?
+options:
+  - the mortgage lien is senior
+  - the judgment lien
+  - both paid at same time
+  - the borrower gets nothing first
+key: B
+explanation: Because parties can rearrange priority by a recorded subordination agreement, the
+  agreement made the judgment lien senior to the mortgage, so the judgment lien is paid first in
+  foreclosure.
+citation:
+  source: REP Ref. Property & Land Use § 8.3
+  url: null
+  quoted_text: Parties can rearrange priority by a recorded subordination agreement.
+  secondary: []
+terms:
+  - priority
+  - subordination
+  - lien
+  - foreclosure
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

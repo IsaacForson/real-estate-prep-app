@@ -1,0 +1,42 @@
+id: WY-101-0247
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Maria has been a licensed real estate salesperson in Wyoming for 3 years. She wants to apply
+  for a responsible broker license. Does she meet the experience requirement?
+options:
+  - No, she needs at least 4 years.
+  - No, she needs at least 5 years.
+  - No, she needs exactly 2 years.
+  - Yes, she meets the requirement.
+key: D
+explanation: The rule states that an applicant for a responsible broker license must have served
+  actively for two of the four years preceding the application as a salesperson or associate broker.
+  Maria's three years of experience satisfies this requirement. The distractor "No, she needs at
+  least 4 years" is incorrect because the requirement is two of four years, not a minimum of four
+  years.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-101 et seq. — Wyoming Statutes Title 33, Chapter 28 — Real Estate
+    License Act (Articles 1-4) Wyo. Stat. Ann. § 33-28-106(c)(ii)
+  url: null
+  quoted_text: Have first served actively for two (2) of the four (4) years immediately preceding the
+    application as a real estate salesperson or associate broker;
+  secondary: []
+terms:
+  - experience
+  - responsible broker
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

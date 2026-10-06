@@ -1,0 +1,42 @@
+id: IA-543B-0327
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant completed their sentence for a felony involving forgery four years ago. Under
+  Iowa Code § 543B.15, when may the applicant be considered for licensure?
+options:
+  - Eligible after 0 years
+  - Eligible after 1 years
+  - Eligible after 2 years
+  - Eligible after 5 years
+key: B
+explanation: For a felony involving forgery, the statute requires five years to elapse after
+  completion of any incarceration, fine, or sentence before the applicant may be considered. Having
+  waited four years, the applicant must wait one more year, making them eligible after 1 year. The
+  option stating eligibility after 0 years is wrong because the full five‑year period has not yet
+  been satisfied.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — §
+    543B.15(3)(a)(1)
+  url: null
+  quoted_text: For an offense which is classified as a felony, an offense including or involving
+    forgery, embezzlement, obtaining money under false pretenses, theft, arson, extortion,
+    conspiracy to defraud, or other similar offense, or any other offense involving a criminal
+    breach of fiduciary duty, five years.
+  secondary: []
+terms:
+  - felony
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

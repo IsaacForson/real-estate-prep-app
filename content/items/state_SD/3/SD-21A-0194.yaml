@@ -1,0 +1,49 @@
+id: SD-21A-0194
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An unlicensed individual shows a property to a prospective buyer and discusses the buyer's
+  financing preferences. Later, the individual asks the buyer to pay a $500 fee for the service.
+  Under South Dakota law, can the individual recover that fee in court?
+options:
+  - The individual can recover the fee because the buyer agreed to pay
+  - The individual cannot recover the fee because the individual was unlicensed at the time of
+    service
+  - The individual can recover the fee after obtaining a real estate license
+  - The individual cannot recover the fee unless the service was limited to informative acts
+key: B
+explanation: Under §36-21A-88, an unlicensed person may not recover compensation for performing acts
+  that require a license; showing a property and discussing financing preferences constitutes more
+  than informative acts, so recovery is barred. The option stating that the individual can recover
+  the fee because the buyer agreed to pay is incorrect because the statute bars recovery regardless
+  of the buyer's agreement to pay.
+citation:
+  source: S.D. Codified Laws § 36-21A-88
+  url: null
+  quoted_text: No action or suit may be instituted, nor recovery be had, in any court of this state by
+    a person for compensation for an act done or service rendered, the doing or rendering of which
+    is prohibited under the provisions of this chapter, to other than persons licensed under this
+    chapter
+  secondary: []
+math:
+  worked_solution: The fee requested is $500; no further calculation is needed to determine whether
+    recovery is allowed.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - unlicensed
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

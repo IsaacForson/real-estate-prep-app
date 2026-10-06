@@ -1,0 +1,36 @@
+id: FL-475-0419
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum initial application fee for an appraiser under Florida Statute 475.6147?
+options:
+  - $250
+  - $200
+  - $100
+  - $150
+key: D
+explanation: The statute sets the cap at $150 for initial application fee. The $200 distractor
+  incorrectly reflects the combined application and examination cap.
+citation:
+  source: Fla. Stat. § 475.6147(1)(b)
+  url: null
+  quoted_text: The fee for initial application of an appraiser may not exceed $150
+  secondary: []
+terms:
+  - fee
+  - application
+  - appraiser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

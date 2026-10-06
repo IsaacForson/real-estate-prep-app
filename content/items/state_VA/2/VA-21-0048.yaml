@@ -1,0 +1,44 @@
+id: VA-21-0048
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker wants to pay a vendor for appraisal fees using money from an escrow account that
+  holds funds for multiple clients. The escrow account's total balance is sufficient, but the amount
+  allocated to the specific client whose closing is pending is insufficient. According to Virginia
+  regulations, may the broker disburse the payment from the escrow account?
+options:
+  - The broker may disburse the payment because the total escrow balance is sufficient
+  - The broker may disburse the payment after obtaining written consent from the client
+  - The broker may not disburse the payment unless sufficient funds are on deposit for that specific
+    client
+  - The broker may disburse the payment by transferring funds from another client's escrow allocation
+key: C
+explanation: Under B.4, a licensee may not disburse funds from an escrow account unless sufficient
+  money is on deposit for that individual client or property. The total account balance being
+  sufficient does not override this requirement. The distractor that focuses on the total balance
+  ignores the rule's focus on the specific client's credit.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-181
+  url: null
+  quoted_text: A licensee must not disburse or cause to be disbursed moneys from an escrow account
+    unless sufficient money is on deposit in that account to the credit of the individual client or
+    property involved.
+  secondary: []
+terms:
+  - disbursement
+  - escrow account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

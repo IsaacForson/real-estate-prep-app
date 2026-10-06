@@ -1,0 +1,40 @@
+id: DE-2901-0284
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker maintains an escrow account at a Delaware bank and occasionally transfers money from
+  the account to cover the brokerage’s monthly office rent. Under Delaware law, is this permissible?
+options:
+  - The broker may use the escrow account for office rent with client consent
+  - The broker may use the escrow account for office rent if funds returned
+  - The broker may use the escrow account for office rent to cover fees
+  - The broker may not use the escrow account for office rent
+key: D
+explanation: Except for the minimum balance and money to cover bank fees, the escrow account shall
+  be used only for escrow deposits, earnest money deposits, rental money, or other moneys in which
+  clients have an interest (§ 2923(a)(3)). Using the account for office rent is not permitted.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2923(a)(3)
+  url: null
+  quoted_text: Except for the minimum balance required by the bank and money to cover bank fees, each
+    account shall be used only for escrow deposits, earnest money deposits, rental money or other
+    moneys in which broker’s customers or clients have an interest where such money is to be held by
+    broker in accordance with the terms of a real estate services transaction.
+  secondary: []
+terms:
+  - escrow account
+  - use limitation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

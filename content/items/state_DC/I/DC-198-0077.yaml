@@ -1,0 +1,43 @@
+id: DC-198-0077
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A 22-year-old applicant wishes to serve as a consumer member on the Board of Real Estate. The
+  applicant is not a real estate practitioner, but their sibling, who lives with them, is a licensed
+  real estate salesperson. Is the applicant eligible to serve as a consumer member?
+options:
+  - Yes, because the applicant meets the age requirement and is not a practitioner.
+  - No, because the applicant has a household member who is a practitioner supervised by the board.
+  - Yes, because sibling relationships are excluded from the household member definition.
+  - No, because the applicant must be at least 25 years old.
+key: B
+explanation: The applicant is ineligible because the statute prohibits a consumer member from having
+  a household member who is a practitioner of a profession supervised by the board. A sibling who
+  lives with the applicant qualifies as a household member, and being a licensed real estate
+  salesperson makes them a practitioner. The distractor claiming sibling relationships are excluded
+  is incorrect; the definition of household member includes relatives by blood or marriage who share
+  residence.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.07"
+  url: null
+  quoted_text: Not have a household member who is a practitioner of a profession or occupation
+    supervised by that board, or in training to become one.
+  secondary: []
+terms:
+  - consumer member
+  - household member
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

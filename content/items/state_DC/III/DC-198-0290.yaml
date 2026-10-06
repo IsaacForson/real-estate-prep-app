@@ -1,0 +1,38 @@
+id: DC-198-0290
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under D.C. Code § 47-2853.197, what is the maximum fine that may be imposed for each
+  prohibited act violation?
+options:
+  - $1,000 per violation
+  - $2,500 per violation
+  - $5,000 per violation
+  - $10,000 per violation
+key: B
+explanation: The statute explicitly states that fines for violations shall not exceed $2,500 per
+  violation. Therefore, the maximum allowable fine per violation is $2,500. The other options
+  represent amounts not supported by the text.
+citation:
+  source: D.C. Code § 47-2853.197
+  url: null
+  quoted_text: fines not to exceed $2,500 per violation
+  secondary: []
+terms:
+  - fine
+  - violation
+  - prohibited act
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

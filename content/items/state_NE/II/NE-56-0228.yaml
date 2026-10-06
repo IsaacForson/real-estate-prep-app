@@ -1,0 +1,46 @@
+id: NE-56-0228
+jurisdiction: NE
+bank: state_NE
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Group Plan Errors and Omissions Insurance provides a combined single limit liability
+  coverage of $200,000 per occurrence, what is the maximum deductible allowed under Neb. Admin. Code
+  tit. 299, ch. 8, § 003.03(c)?
+options:
+  - $2,000
+  - $3,000
+  - $4,000
+  - $6,000
+key: D
+explanation: Under Neb. Admin. Code tit. 299, ch. 8, § 003.03(c), the deductible may not exceed 3%
+  of the combined single limit. For a $200,000 limit, 3% equals $6,000, so the maximum allowable
+  deductible is $6,000. The options listing $2,000, $3,000, and $4,000 are incorrect because they
+  are below this maximum; the option listing $6,000 is correct.
+citation:
+  source: Neb. Admin. Code tit. 299, ch. 8, § 003.03(c)
+  url: null
+  quoted_text: a deductible amount of not greater than 3% of the total combined single limit liability
+    coverage amount for each occurrence;
+  secondary: []
+math:
+  worked_solution: "Convert 3% to decimal: 0.03. Multiply the combined single limit of $200,000 by
+    0.03: $200,000 × 0.03 = $6,000."
+  formulas:
+    - Maximum deductible = Combined single limit × Deductible percentage
+  onscreen_calculator_only: false
+terms:
+  - deductible
+  - combined single limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

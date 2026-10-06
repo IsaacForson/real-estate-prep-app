@@ -1,0 +1,49 @@
+id: RI-5-0341
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant submits an original salesperson license application accompanied by a check for
+  five dollars ($5.00) to cover the processing fee.
+options:
+  - The application is rejected and the applicant must reapply after six months.
+  - The application is accepted but will incur a late penalty.
+  - The application is incomplete and must be supplemented with the correct fee.
+  - The application is complete because the fee is sufficient.
+key: C
+explanation: The statute requires a fee of ten dollars ($10.00) for any original broker or
+  salesperson license application. Submitting only five dollars fails to meet this requirement, so
+  the application is incomplete and must be supplemented with the correct fee. The option claiming
+  the fee is sufficient contradicts the $10 mandate.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-3(b)
+  url: null
+  quoted_text: All applicants for a license to act as a real estate broker or real estate salesperson
+    shall accompany their applications with a fee of ten dollars ($10.00) to cover costs of
+    processing those applications.
+  secondary: []
+math:
+  worked_solution: Required fee = $10.00; Submitted fee = $5.00; Shortfall = Required fee - Submitted
+    fee = $10.00 - $5.00 = $5.00. Because the submitted fee is less than the required fee, the
+    application is incomplete and must be supplemented with the correct fee.
+  formulas:
+    - Required fee = $10.00
+    - Submitted fee = $5.00
+    - Shortfall = Required fee - Submitted fee
+  onscreen_calculator_only: false
+terms:
+  - application fee
+  - salesperson license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

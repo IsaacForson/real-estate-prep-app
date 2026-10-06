@@ -1,0 +1,40 @@
+id: NAT-PSI-IV-0889
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower misses three consecutive mortgage payments and fails to pay property taxes. The
+  loan contains an acceleration clause. What action may the lender take?
+options:
+  - The lender may declare the entire unpaid balance due at once
+  - The lender may sue only for each missed installment as it comes due
+  - The lender may immediately take possession of the property without court action
+  - The lender may forgive the missed payments and extend the loan term
+key: A
+explanation: The acceleration clause allows the lender to declare the entire unpaid balance due at
+  once upon a defined default such as missed payments or unpaid taxes.
+citation:
+  source: REP Ref. Financing & Closing § 2.1
+  url: null
+  quoted_text: "The acceleration clause lets the lender declare the entire unpaid balance due at once
+    upon a defined default: missed payments, unpaid taxes, lapsed insurance, or an unauthorized
+    transfer."
+  secondary: []
+terms:
+  - acceleration clause
+  - default
+  - unpaid balance
+  - declare
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

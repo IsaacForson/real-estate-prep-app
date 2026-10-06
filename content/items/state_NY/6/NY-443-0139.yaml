@@ -1,0 +1,43 @@
+id: NY-443-0139
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "6"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson completes a pre‑licensing course that includes exactly 3 hours of Land Use
+  Regulations and no instruction in any other required subject. According to the NY DOS syllabus,
+  does this course satisfy the state’s licensing requirements for a real estate salesperson?
+options:
+  - The course satisfies the licensing requirement because total instructional hours exceed the
+    state minimum.
+  - The course does not satisfy the licensing requirement because it exceeds the allowed hours for
+    Land Use Regulations.
+  - The course does not satisfy the licensing requirement because it omits instruction in other
+    required subjects.
+  - The course satisfies the licensing requirement because it meets the Land Use Regulations hour
+    mandate.
+key: C
+explanation: The syllabus requires every listed subject to be taught at the specified hour level;
+  omitting any subject fails the approval standard. The distractor that focuses only on meeting the
+  Land Use Regulations hour mandate ignores the compulsory inclusion of all other topics.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: All approved courses must use this course syllabus in conducting their programs.
+  secondary: []
+terms:
+  - land use
+  - licensing requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,53 @@
+id: CT-311-0160
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker's license expired on January 1, 2023. The licensee worked as a broker
+  during the lapse and applies for reinstatement on July 1, 2024. According to Conn. Gen. Stat. §
+  20-314(f), what is the total late fee due for the broker's license?
+options:
+  - $375
+  - $750
+  - $1,125
+  - $1,500
+key: B
+explanation: Under subsection (f), late fees for a broker's license are assessed at three hundred
+  seventy-five dollars for each year or fraction thereof from the date of expiration to the date of
+  payment for reinstatement. The period from January 1, 2023 to July 1, 2024 is one and a half
+  years, which counts as two years or fractions, resulting in a late fee of two times three hundred
+  seventy-five dollars, or seven hundred fifty dollars. The distractor of three hundred seventy-five
+  dollars incorrectly treats the period as a single year.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-314
+  url: null
+  quoted_text: Such late fees shall be assessed for each real estate broker's license in the amount of
+    three hundred seventy-five dollars and for each real estate salesperson's license in the amount
+    of two hundred eighty-five dollars for each year or fraction thereof from the date of expiration
+    of the previous license to the date of payment for reinstatement.
+  secondary: []
+math:
+  worked_solution: |-
+    Determine elapsed time: July 1, 2024 - January 1, 2023 = 1 year, 6 months = 1.5 years
+    Apply 'year or fraction thereof' rule: 1.5 years rounds up to 2 years
+    Calculate late fee: 2 × $375 = $750
+  formulas:
+    - late fee = (number of years or fractions) × $375
+  onscreen_calculator_only: false
+terms:
+  - late fee
+  - reinstatement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

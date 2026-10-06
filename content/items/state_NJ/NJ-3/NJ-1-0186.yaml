@@ -1,0 +1,55 @@
+id: NJ-1-0186
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee transfers a leasehold interest for 99 years or more in a property. The assessed
+  value of the property for local real property tax purposes is $180,000. The county percentage
+  level established for the current year is 1.15. According to N.J.S.A. 46:15-5(c), what is the
+  consideration for the deed?
+options:
+  - $198,000
+  - $207,000
+  - $180,000
+  - $225,000
+key: B
+explanation: For a leasehold interest of 99 years or more, the consideration equals the assessed
+  value adjusted by the county percentage level to reflect true value. Multiplying $180,000 by 1.15
+  gives $207,000. The option that omits this adjustment incorrectly uses the unadjusted assessed
+  value.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 15 § 46:15-5(c)
+  url: null
+  quoted_text: In the case of a leasehold interest for 99 years or more as defined in subsection (a)
+    of this section, the consideration shall be in the amount of the assessed value of the property
+    at the date of the transaction for the purpose of levying local real property taxes adjusted to
+    reflect the true value in accordance with the county percentage level established for the
+    current year.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify assessed value = $180,000.
+    Step 2: Identify county percentage level = 1.15.
+    Step 3: Multiply assessed value by county percentage level: $180,000 × 1.15 = $207,000.
+    Step 4: Consideration = $207,000.
+  formulas:
+    - Consideration = Assessed Value × County Percentage Level
+  onscreen_calculator_only: false
+terms:
+  - leasehold interest
+  - assessed value
+  - county percentage level
+  - consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

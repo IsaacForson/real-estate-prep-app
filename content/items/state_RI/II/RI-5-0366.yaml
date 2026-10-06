@@ -1,0 +1,43 @@
+id: RI-5-0366
+jurisdiction: RI
+bank: state_RI
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant passes the real estate examination and pays all required fees on April 10.
+  According to Rhode Island law, by what date must the real estate division issue the certificate of
+  licensure, and what is the maximum amount that may be charged for it?
+options:
+  - Must be issued by May 10 at a cost not exceeding $10.
+  - Must be issued by April 30 at a cost not exceeding $25.
+  - Must be issued by April 30 at a cost not exceeding $10.
+  - Must be issued by May 10 at a cost not exceeding $25.
+key: D
+explanation: The certificate of licensure must be issued within thirty days of the request and may
+  not cost more than twenty-five dollars. Adding thirty days to April 10 yields May 10, and the
+  maximum fee is $25. The distractors either use an incorrect fee or miscalculate the deadline.
+citation:
+  source: "### R.I. Gen. Laws ch. 5-20.5 (Real Estate Brokers and Salespersons) — R.I. Gen. Laws Title
+    5, Chapter 20.5 — Real Estate Brokers and Salespersons, §§ 5-20.5-1 to 5-20.5-28 concatenated
+    from the official RI General Assembly section pages read via Internet Archive captures of
+    2025–2026 because webserver.rilegislature.gov times out from this network — § 5-20.5-4"
+  url: null
+  quoted_text: A certificate of licensure shall be issued by the real estate division of the
+    department of business regulation within thirty (30) days after it is requested at a cost of not
+    more than twenty-five dollars ($25.00) for each certificate issued.
+  secondary: []
+terms:
+  - certificate of licensure
+  - thirty days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

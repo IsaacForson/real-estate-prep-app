@@ -1,0 +1,38 @@
+id: MT-51-0232
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person seeking a Montana salesperson license has completed 55 classroom hours in an approved
+  course. According to Montana law, what is the status of this applicant's education requirement?
+options:
+  - The applicant satisfies the minimum education requirement.
+  - The applicant must complete an additional 20 hours to reach the maximum of 80 hours.
+  - The applicant does not meet the education requirement because fewer than 60 hours were completed.
+  - The applicant may substitute equivalent experience for the missing hours.
+key: C
+explanation: The statute requires salesperson applicants to complete between 60 and 80 classroom or
+  equivalent hours. With only 55 hours, the applicant falls short of the minimum and does not
+  satisfy the requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-302(4)(a)(iv)
+  url: null
+  quoted_text: completed between 60 and 80 classroom or equivalent hours, as set by the board.
+  secondary: []
+terms:
+  - education
+  - hours
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

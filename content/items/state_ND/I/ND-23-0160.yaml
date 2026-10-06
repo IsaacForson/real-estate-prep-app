@@ -1,0 +1,42 @@
+id: ND-23-0160
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under N.D. Cent. Code § 43-23-14.1, a broker is exempt from the requirement to maintain a
+  designated trust account if:"
+options:
+  - The broker maintains a trust account in a federally insured financial institution.
+  - The broker deposits personal funds not exceeding five hundred dollars to cover service charges.
+  - The broker does not accept trust funds and has obtained a waiver from the commission.
+  - The broker maintains records of all trust transactions for at least six years.
+key: C
+explanation: The statute explicitly exempts a broker who does not accept trust funds and has
+  received a waiver from maintaining a designated trust account. Depositing up to $500 of personal
+  funds is merely an allowance to cover service charges and does not eliminate the trust account
+  requirement.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-14.1
+  url: null
+  quoted_text: A broker that does not accept trust funds in real estate brokerage transactions and
+    which has applied for and received a waiver from the real estate commission is not required to
+    maintain a designated trust account.
+  secondary: []
+terms:
+  - trust account
+  - waiver
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

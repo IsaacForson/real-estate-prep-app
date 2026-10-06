@@ -1,0 +1,43 @@
+id: MD-17-0443
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker prepares a purchase agreement for a buyer and seller and presents it to the buyer.
+  Must the broker include the Guaranty Fund notice?
+options:
+  - Yes, only if the contract price exceeds $50,000
+  - Yes, because the broker provided the sales contract
+  - No, because the buyer already knows about the fund
+  - No, because the notice is only required in lease agreements
+key: B
+explanation: Since the broker prepared and presented the sales contract, the broker provided the
+  contract and must include the notice. The distractor that the buyer already knows about the fund
+  is incorrect because the statute imposes the duty regardless of the buyer’s knowledge.
+citation:
+  source: Md. Code Ann., Bus. Occ. & Prof. §§ 17-101–17-702 (Maryland Real Estate Brokers Act) —
+    Annotated Code of Maryland, Business Occupations and Professions Article, Title 17 — Real Estate
+    Brokers (MGA Statute_Web, 2025RS) — § 17-405
+  url: null
+  quoted_text: A real estate broker shall include in each sales contract that is provided by the real
+    estate broker a written notice to the buyer that the buyer is protected by the Guaranty Fund in
+    an amount not exceeding $50,000.
+  secondary: []
+terms:
+  - guaranty fund
+  - notice
+  - broker
+  - contract
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

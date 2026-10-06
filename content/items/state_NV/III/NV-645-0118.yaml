@@ -1,0 +1,46 @@
+id: NV-645-0118
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee’s brokerage agreement with a seller terminated on March 1, 2024. Assuming no court
+  order or written permission, on what date may the licensee first disclose confidential information
+  about the seller without violating Nevada law?
+options:
+  - March 1, 2025
+  - February 28, 2025
+  - March 2, 2024
+  - March 1, 2026
+key: A
+explanation: The confidentiality duty lasts one year after termination; adding one year to March 1,
+  2024 yields March 1, 2025. The distractors reflect errors such as subtracting a day, using the
+  wrong year, or adding two years.
+citation:
+  source: Nev. Rev. Stat. § 645.254
+  url: null
+  quoted_text: Shall not disclose confidential information relating to a client for 1 year after the
+    revocation or termination of the brokerage agreement, unless he or she is required to do so
+    pursuant to an order of a court of competent jurisdiction or is given written permission to do
+    so by the client;
+  secondary: []
+math:
+  worked_solution: "Start date: March 1, 2024. Add one year: March 1, 2024 + 1 year = March 1, 2025."
+  formulas:
+    - end_date = start_date + 1 year
+  onscreen_calculator_only: false
+terms:
+  - confidentiality
+  - brokerage agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-29

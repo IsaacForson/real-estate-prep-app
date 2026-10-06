@@ -1,0 +1,45 @@
+id: VT-2211-0254
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's biennial renewal fee is $275. If reinstatement occurs 4 months after the
+  expiration date, what is the total reinstatement penalty under 3 V.S.A. § 127(d)(1)(B)?
+options:
+  - $375.00
+  - $355.00
+  - $395.00
+  - $435.00
+key: C
+explanation: The rule adds $40 for each month beyond the initial 30 days; 4 months after expiration
+  leaves 3 extra months, adding $120 to the $275 renewal fee for a total of $395. The distractor
+  $355 results from mistakenly adding only two months' penalty.
+citation:
+  source: 3 V.S.A. § 127(d)(1)(B)
+  url: null
+  quoted_text: (B) if reinstatement occurs more than 30 days after the expiration date, an amount
+    equal to the renewal fee increased by $40.00 for every additional month or fraction of a month,
+    provided the total penalty shall not exceed $1,500.00.
+  secondary: []
+math:
+  worked_solution: 1. Renewal fee = $275. 2. Months beyond 30 days = 4 months - 1 month = 3 months. 3.
+    Additional penalty = 3 × $40 = $120. 4. Total penalty = $275 + $120 = $395.
+  formulas:
+    - Total penalty = renewal fee + ($40 × months_beyond_30)
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - penalty
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

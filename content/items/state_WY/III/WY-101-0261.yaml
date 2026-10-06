@@ -1,0 +1,42 @@
+id: WY-101-0261
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker deposits a client's earnest money into his personal checking account to
+  cover office expenses, intending to repay the amount later. Under Wyo. Stat. § 33-28-122(e), this
+  action is:"
+options:
+  - Permitted if the broker keeps a separate ledger for the funds and reports it monthly
+  - Prohibited because client funds may not be deposited in the broker's personal account
+  - Allowed as long as the broker repays the funds within 30 days and provides proof
+  - Permitted if the broker obtains written consent from the client and documents it in the file
+key: B
+explanation: The statute explicitly prohibits depositing advance payments belonging to others in the
+  responsible broker's personal account or commingling them with personal funds. This prohibition
+  applies irrespective of separate bookkeeping, intent to repay, or client consent. Therefore, the
+  deposit is a violation.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(e)
+  url: null
+  quoted_text: No responsible broker shall permit an advance payment of funds belonging to others to
+    be deposited in the responsible broker's personal account or be commingled with his personal
+    funds.
+  secondary: []
+terms:
+  - commingling
+  - personal account
+  - advance payment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,44 @@
+id: NM-1-0280
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On July 1, 2005, the balance in the New Mexico real estate recovery fund exceeded $250,000.
+  According to N.M. Stat. Ann. § 61-29-19.1(C), what must happen with the excess amount?
+options:
+  - It must be used to pay administrative costs of the commission.
+  - It must be returned to the contributing licensees.
+  - It must be transferred to the real estate education and training fund.
+  - It must remain in the recovery fund until the next fiscal year.
+key: C
+explanation: The statute requires that on July 1, 2005 any balance in excess of $250,000 in the
+  recovery fund shall be transferred to the real estate education and training fund. Keeping the
+  excess in the recovery fund contradicts the mandatory transfer provision.
+citation:
+  source: N.M. Stat. Ann. § 61-29-19.1(C)
+  url: null
+  quoted_text: Notwithstanding the provisions of Sections 61-29-21 and 61-29-22 NMSA 1978, on July 1,
+    2005, the balance in excess of two hundred fifty thousand dollars ($250,000) in the real estate
+    recovery fund shall be transferred to the real estate education and training fund.
+  secondary: []
+math:
+  worked_solution: No calculation is required; the excess amount is defined as any amount over
+    $250,000, and the statute directs its transfer.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - transfer
+  - excess balance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

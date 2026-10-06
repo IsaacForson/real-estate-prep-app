@@ -1,0 +1,42 @@
+id: ME-114-0262
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller agent learns of a material fact that could negatively impact the seller’s property
+  value. The seller consents in writing to the disclosure of this fact to a prospective buyer.
+  According to Maine law, may the seller agent disclose the fact to the buyer?
+options:
+  - The agent may disclose the fact because the seller has granted consent to disclose the
+    information.
+  - The agent may disclose the fact because the information is required by law.
+  - The agent may disclose the fact because the information has become public through the seller’s
+    conduct.
+  - The agent may disclose the fact because the information is considered non-material.
+key: A
+explanation: The confidentiality duty of a seller agent does not apply when the seller grants
+  consent to disclose the information. The statute lists seller consent as an exception to the
+  confidentiality obligation. The other options, while also exceptions, do not match the scenario;
+  the claim that the information is non-material is not a recognized exception.
+citation:
+  source: 32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) § 13273(F)(1)
+  url: null
+  quoted_text: (1) The seller to whom the information pertains grants consent to disclose the information
+  secondary: []
+terms:
+  - confidentiality
+  - consent
+  - material fact
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

@@ -1,0 +1,46 @@
+id: VT-2211-0156
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan officer of a Vermont bank sells a parcel of land owned by the bank to a third party for
+  a fee. Under 26 V.S.A. § 2211(b)(4), is the loan officer required to hold a real estate license to
+  conduct this sale?
+options:
+  - The loan officer is required to hold a license because the bank is not a licensed real estate
+    entity.
+  - The loan officer is exempt because the transaction involves real estate owned by the bank.
+  - The loan officer is required to hold a license because they received a commission for the
+    transaction.
+  - The loan officer is exempt as a bank employee performing duties regarding bank-owned real estate.
+key: D
+explanation: The exemption for bank employees applies when they perform brokerage activities
+  concerning real estate owned by their bank. Therefore the loan officer is exempt and need not hold
+  a license. The distractor claiming a license is required because a commission was received ignores
+  this statutory exemption.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons 26 V.S.A. §
+    2211(b)(4)
+  url: null
+  quoted_text: Any bank or trust company or any of its officers or employees in the performance of
+    their duties as an officer or employee of any such bank or trust company while performing
+    activities listed in subdivision (a)(4) of this section with respect to real estate owned by
+    that bank or trust company.
+  secondary: []
+terms:
+  - bank employee
+  - exempt
+  - real estate owned
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-04
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

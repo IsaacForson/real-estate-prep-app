@@ -1,0 +1,42 @@
+id: ID-20-0335
+jurisdiction: ID
+bank: state_ID
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "Under Idaho Code § 54-2004(2), a Nevada-licensed real estate broker who negotiates the
+  purchase of a rental house in Idaho for a client residing in Oregon is considered to be:"
+options:
+  - Not acting in this state because the transaction is for investment purposes
+  - Acting in this state only if the client is an Idaho resident
+  - Not acting in this state because the broker is not physically present in Idaho
+  - Acting in this state because the property is located in Idaho
+key: D
+explanation: The definition of 'acting in this state' includes dealing with any interest in real
+  property situated in Idaho. Since the rental house is in Idaho, the broker is acting in this state
+  regardless of the broker's location or the client's residence. The other options incorrectly
+  require physical presence, client residency, or consider the purpose of the transaction.
+citation:
+  source: Idaho Code § 54-2004(2)
+  url: null
+  quoted_text: Acting in this state means and includes dealing with any interest in real property, or
+    a business opportunity involving an interest in real property, that is situated in the state of
+    Idaho, or conducting or attempting to conduct or solicit real estate business with residents of
+    the state of Idaho.
+  secondary: []
+terms:
+  - acting in this state
+  - real property
+  - Idaho
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

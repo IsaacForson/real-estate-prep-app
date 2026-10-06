@@ -1,0 +1,43 @@
+id: WY-101-0223
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee is found responsible for three separate offenses under the Wyoming Real Estate
+  License Act. What is the maximum total administrative fine that could be imposed?
+options:
+  - $10,000
+  - $2,500
+  - $7,500
+  - $5,000
+key: C
+explanation: Each offense carries a maximum fine of $2,500 per §33-28-111(a). Multiplying three
+  offenses by $2,500 yields a total maximum of $7,500. The $5,000 option would only cover two
+  offenses, while $10,000 would correspond to four offenses.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-111(a)
+  url: null
+  quoted_text: impose an administrative fine not to exceed two thousand five hundred dollars
+    ($2,500.00) for each separate offense
+  secondary: []
+math:
+  worked_solution: 3 × $2,500 = $7,500 (three offenses)
+  formulas:
+    - total fine = number of offenses × maximum fine per offense
+  onscreen_calculator_only: false
+terms:
+  - administrative fine
+  - offense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

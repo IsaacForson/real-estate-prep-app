@@ -1,0 +1,39 @@
+id: DE-2901-0272
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage hires a licensee as a common law agent to assist a client in a purchase
+  transaction. The licensee negligently misstates the property’s square footage. Is the broker
+  vicariously liable for the licensee’s error under Delaware law?
+options:
+  - Yes, the broker is vicariously liable for the licensee’s mistake regardless of agency type
+  - Yes, but only if the licensee is classified as an employee of the broker
+  - No, because §2937(e) does not apply when the licensee is hired as a common law agent
+  - No, because brokers are not liable for licensees working as independent contractors
+key: C
+explanation: Section 2937(e) expressly states that the vicarious liability rule does not apply if
+  the licensee or brokerage organization is hired as a common law agent, so the broker is not liable
+  in this scenario.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2937(e)
+  url: null
+  quoted_text: This section does not apply if the licensee or brokerage organization is hired as a
+    common law agent.
+  secondary: []
+terms:
+  - vicarious liability
+  - common law agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

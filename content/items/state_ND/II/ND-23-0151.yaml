@@ -1,0 +1,50 @@
+id: ND-23-0151
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson has kept their license on inactive status for four continuing education periods.
+  To reactivate the license, how many hours of continuing education must the salesperson complete,
+  given that the requirement is twelve hours per period but **NOT** more than the equivalent of
+  three periods?
+options:
+  - A continuing education requirement of 36 hours
+  - A continuing education requirement of 24 hours
+  - A continuing education requirement of 48 hours
+  - A continuing education requirement of 12 hours
+key: A
+explanation: N.D. Admin. Code § 70-02-01-05 requires that to reactivate an inactive license, the
+  licensee must complete continuing education hours for each inactive period, but not more than the
+  hours required for the three periods prior to reactivation. With twelve hours per period, three
+  periods equal 36 hours. Although the license was inactive for four periods, the maximum required
+  is 36 hours.
+citation:
+  source: N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-05
+  url: null
+  quoted_text: To reactivate an inactive license, a licensee must meet the continuing education hours
+    as required by section 70-02-04-02 for each continuing education period the licensee's license
+    was inactive, not to exceed the number of hours required for the three continuing education
+    periods prior to reactivation.
+  secondary: []
+math:
+  worked_solution: Maximum allowed periods = 3. Hours per period = 12. Total hours = 3 × 12 = 36.
+  formulas:
+    - total hours = maximum periods × hours per period
+  onscreen_calculator_only: false
+terms:
+  - continuing education
+  - inactive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

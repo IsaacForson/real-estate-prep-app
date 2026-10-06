@@ -1,0 +1,50 @@
+id: MS-1954-0339
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a sales contract showing a purchase price of $250,000 to submit to a
+  lender, although the actual agreed price is $220,000. Which Mississippi rule provides grounds for
+  discipline?
+options:
+  - Violating the requirement to deposit earnest money received from a client within two business
+    days
+  - Violating the prohibition on misrepresenting a property’s condition or value
+  - Violating the rule against false sales contracts exceeding true price for lenders
+  - Violating the ban on acting for both buyer and seller without disclosing dual agency
+key: C
+explanation: The correct answer is that rule 30 Miss. Admin. Code Pt. 1601 § 3.2(F) prohibits a
+  licensee from representing to a lender an amount exceeding the true selling price via a false
+  sales contract. The option stating that the licensee violated the requirement to deposit earnest
+  money within two business days is incorrect because that requirement is governed by Miss. Code
+  Ann. § 73-35-21(1)(f), not the rule in question.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 § 3.2(F)
+  url: null
+  quoted_text: No licensee shall represent to a lender or any other interested party, either verbally
+    or through the preparation of a false sales contract, an amount in excess of the true and actual
+    selling price.
+  secondary: []
+math:
+  worked_solution: Stated price = $250,000; Actual price = $220,000; Difference = $250,000 - $220,000 = $30,000.
+  formulas:
+    - Difference = Stated Price - Actual Price
+  onscreen_calculator_only: false
+terms:
+  - false sales contract
+  - lender
+  - true selling price
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

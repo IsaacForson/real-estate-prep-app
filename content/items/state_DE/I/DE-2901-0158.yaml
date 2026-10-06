@@ -1,0 +1,44 @@
+id: DE-2901-0158
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer files a complaint with the Delaware Real Estate Commission alleging that a licensee
+  violated § 2912 by committing fraud. What must the Commission do next?
+options:
+  - Immediately impose a monetary penalty not exceeding $5,000 for the alleged violation.
+  - Refer the complaint to the Division of Professional Regulation for further investigation.
+  - Automatically suspend the licensee’s license pending the outcome of the investigation.
+  - Set a time and place to conduct a hearing on the complaint and give notice of the hearing.
+key: D
+explanation: Under § 2913(a), upon receiving a complaint alleging a violation of § 2912, the
+  Commission must schedule a hearing and provide notice; it may not impose penalties or suspend a
+  license without first holding a hearing. Imposing a monetary penalty without a hearing and
+  findings is not permitted because penalties require a hearing under § 2914. Suspending the
+  licensee’s license without notice and a hearing violates due‑process requirements under § 2912(d).
+  Referring the complaint to the Division of Professional Regulation is not required; the Commission
+  itself handles the complaint under this section.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2913(a)
+  url: null
+  quoted_text: If a complaint is filed with the Commission pursuant to § 8735 of Title 29 alleging
+    violation of § 2912 of this title, the Commission shall set a time and place to conduct a
+    hearing on the complaint.
+  secondary: []
+terms:
+  - complaint
+  - hearing
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-05
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28
