@@ -1,0 +1,43 @@
+id: PA-9-0313
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A cemetery employee shows lots in the company's cemetery to prospective buyers and accepts
+  deposits on those lots, but does not receive additional compensation beyond regular salary. Under
+  63 P.S. § 455.304(7), is the employee required to hold a real estate license?
+options:
+  - Yes, because accepting deposits requires a license.
+  - Yes, because showing lots is a real estate activity requiring licensure.
+  - No, only if the employee receives a commission for the sale.
+  - No, the employee is excluded under the cemetery company employee provision.
+key: D
+explanation: The exclusion applies because the employee shows lots and accepts deposits without
+  extra remuneration, meeting the cemetery employee provision. The most tempting distractor, that
+  accepting deposits alone requires a license, is wrong because the exclusion covers this activity
+  when it is incidental and performed without additional pay.
+citation:
+  source: 63 P.S. § 455.304(7)
+  url: null
+  quoted_text: Any officer or employee of a cemetery company who, as incidental to his principal
+    duties and without remuneration therefor, shows lots in such company's cemetery to persons for
+    their use as a family burial lot and who accepts deposits on such lots for the representatives
+    of the cemetery company legally authorized to sell the same.
+  secondary: []
+terms:
+  - cemetery
+  - exclusion
+  - remuneration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

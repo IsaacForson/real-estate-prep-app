@@ -1,0 +1,38 @@
+id: NAT-PV-IV-1558
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: If a contract for the sale of real property has an illegal object, what is its legal status?
+options:
+  - "Please select the correct answer: Voidable contract"
+  - "Please select the correct answer: Void contract"
+  - "Please select the correct answer: Valid contract"
+  - "Please select the correct answer: Unenforceable contract"
+key: B
+explanation: Under §2.5, a contract whose object is illegal is void, meaning it has no legal effect
+  from the outset. The Voidable contract option is incorrect because voidability applies to
+  contracts affected by incapacity or fraud, not illegality.
+citation:
+  source: REP Ref. Contracts § 2.5
+  url: null
+  quoted_text: A contract whose object is illegal — for example, an agreement between competing
+    brokers to fix commission rates, which the cached Sherman Act prohibits, or an agreement to
+    violate zoning law — is void.
+  secondary: []
+terms:
+  - void
+  - illegal object
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

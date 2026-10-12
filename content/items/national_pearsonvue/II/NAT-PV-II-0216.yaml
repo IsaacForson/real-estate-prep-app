@@ -1,0 +1,36 @@
+id: NAT-PV-II-0216
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.B
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller lists a property for sale at a price below the mortgage balance and informs the buyer
+  that the sale is contingent on lender approval. Which statement best describes the nature of this
+  contingency?
+options:
+  - The sale is automatically void if the lender does not respond within 48 hours
+  - The buyer may proceed with closing without lender approval if the seller signs a waiver
+  - The lender's approval is required before the lien can be released for the reduced payoff
+  - The seller must obtain a court order to complete the sale
+key: C
+explanation: Lender approval is a contingency needed to release the lien for the reduced payoff in a short sale.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.3
+  url: null
+  quoted_text: Lender approval is a contingency that can take weeks
+  secondary: []
+terms:
+  - short sale
+  - lender approval
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v5 / verify-v1
+  batch_id: null
+  generated_on: 2026-09-08

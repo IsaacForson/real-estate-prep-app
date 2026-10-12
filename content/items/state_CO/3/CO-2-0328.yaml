@@ -1,0 +1,53 @@
+id: CO-2-0328
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A natural person who is a manager of a limited liability company owns 25% of the LLC and is
+  authorized to sell property owned by the LLC. Under Colorado law, which statement is correct
+  regarding whether this person needs a real estate broker license to perform those sales?
+options:
+  - The person must obtain a broker license because ownership below twenty percent requires
+    licensing.
+  - The person is exempt from licensing requirements because they own twenty percent or more of the
+    LLC.
+  - The person must obtain a broker license because managing an LLC does not qualify for any
+    exemption.
+  - The person is exempt only if they also receive no additional compensation for the activity.
+key: B
+explanation: Under Colo. Rev. Stat. § 12-10-203(6)(b)(VII), a natural person who is a manager of a
+  limited liability company or owns twenty percent or more of the LLC is exempt from needing a real
+  estate broker license when selling property owned by the LLC. The person in the stem is both a
+  manager and owns 25% of the LLC, which exceeds the 20% threshold, so they are exempt. The
+  distractor that claims exemption requires no additional compensation is incorrect because the
+  exemption does not include that condition.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-203(6)(b)(VII)
+  url: null
+  quoted_text: owner of twenty percent or more of such partnership or limited liability company
+  secondary: []
+math:
+  worked_solution: The threshold for exemption is 20% ownership. The person owns 25%. Since 25% ≥ 20%,
+    the person meets the ownership exemption criterion.
+  formulas:
+    - ownership percentage ≥ threshold percentage (20%)
+  onscreen_calculator_only: false
+terms:
+  - ownership
+  - manager
+  - LLC
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

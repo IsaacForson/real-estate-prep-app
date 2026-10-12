@@ -1,0 +1,45 @@
+id: OH-4735-0233
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker manages a property for an owner and holds security deposits in a property management
+  trust account. During the first quarter, the account earns interest. The broker credits the
+  interest to the owner's ledger on April 15. Under Ohio Adm. Code 1301:5-5-11(B)(1), is the
+  broker's action compliant?
+options:
+  - The broker's action is compliant because the interest was credited within the same quarter.
+  - The broker's action is not compliant because interest was not credited by the end of the quarter.
+  - The broker's action is compliant because interest may be credited anytime before year‑end.
+  - The broker's action is not compliant because interest must be credited monthly.
+key: B
+explanation: The rule requires interest to be paid or credited on a regular basis but in no event
+  later than on a quarterly basis, meaning interest earned in a quarter must be credited by the end
+  of that quarter. Crediting on April 15, after the first quarter ended, violates this requirement.
+  The claim that interest must be credited monthly is incorrect because the rule only requires
+  crediting by the end of the quarter, not monthly.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-5 — Ohio Administrative Code Chapter 1301:5-5 — Real Estate
+    Division: Standards of Conduct / Duties, official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-17 — § 5-5-11(B)(1)"
+  url: null
+  quoted_text: The interest shall be paid or credited on a regular basis, but in no event later than
+    on a quarterly basis.
+  secondary: []
+terms:
+  - interest
+  - property management trust account
+  - quarterly
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-12
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

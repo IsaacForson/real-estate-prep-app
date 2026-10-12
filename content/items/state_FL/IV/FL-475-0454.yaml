@@ -1,0 +1,43 @@
+id: FL-475-0454
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual who is not a licensed appraiser performs appraisals of a railroad terminal
+  company using the unit-rule method for ad valorem tax purposes. The individual receives
+  compensation for this service. According to Florida law, is the individual exempt from the real
+  estate licensing requirement?
+options:
+  - Exemption under subsection (9) of § 475.01
+  - Exemption under subsection (10) of § 475.01
+  - Exemption under subsection (11) of § 475.01
+  - Exemption under subsection (13) of § 475.01
+key: B
+explanation: The individual's activity falls under subsection (10), which exempts anyone who
+  appraises a railroad or railroad terminal company using the unit-rule method for ad valorem tax
+  purposes, regardless of licensing status. The exemption under subsection (9) requires the person
+  to be a registered or licensed appraiser under part II, which the individual is not, so it does
+  not apply.
+citation:
+  source: Fla. Stat. § 475.01(10)
+  url: null
+  quoted_text: Any person who appraises under the unit-rule method of valuation a railroad or railroad
+    terminal company assessed for ad valorem tax purposes pursuant to s. 193.085.
+  secondary: []
+terms:
+  - unit-rule
+  - exemption
+  - railroad
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

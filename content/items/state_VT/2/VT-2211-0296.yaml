@@ -1,0 +1,40 @@
+id: VT-2211-0296
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker changes the principal business address on May 5. By what date must the broker notify
+  the Vermont Real Estate Commission to comply with the notice requirement?
+options:
+  - The broker must notify the Commission by May 30.
+  - The broker must notify the Commission by June 4.
+  - The broker must notify the Commission by June 5.
+  - The broker must notify the Commission by June 10.
+key: B
+explanation: Section 2294(a) requires notice of any change in a licensee’s name or address within 30
+  days after the change becomes effective. Adding 30 days to May 5 gives June 4, so the correct
+  response is that the broker must notify the Commission by June 4. The broker must notify the
+  Commission by May 30, which is less than the required 30‑day period, so that choice is incorrect.
+citation:
+  source: 26 V.S.A. § 2294(a)
+  url: null
+  quoted_text: Notice of any change in the names and addresses of the licensees shall be given to the
+    Commission within 30 days after the change becomes effective
+  secondary: []
+terms:
+  - notice
+  - address
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

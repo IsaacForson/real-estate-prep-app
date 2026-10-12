@@ -1,0 +1,48 @@
+id: AZ-20-0393
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A judgment debtor does not hold a current real estate license and personal delivery cannot be
+  effected despite reasonable diligence. Under A.R.S. § 32-2188.01(B), what must the claimant do to
+  serve the notice of claim?
+options:
+  - The claimant must send the notice by certified mail, return receipt requested, to the judgment
+    debtor's last known business address on file with the department.
+  - The claimant must email the notice to the judgment debtor's last known email address and request
+    a read receipt.
+  - The claimant must publish the notice once a week for two consecutive weeks in a newspaper of
+    general circulation in the county where the judgment debtor was last known to reside.
+  - The claimant must deliver the notice in person to the judgment debtor's residence and obtain a
+    signed acknowledgment of receipt.
+key: C
+explanation: The statute requires publication in a newspaper for two weeks when the judgment debtor
+  lacks a current license and personal delivery cannot be achieved with reasonable diligence. The
+  distractor proposing certified mail is incorrect because that method applies only when the
+  judgment debtor holds a current license.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2186 to 32-2193.32 — ARS Title 32, Ch. 20, Art. 5 - Real Estate
+    Recovery Fund — § 32-2187 § 32-2188.01(B)
+  url: null
+  quoted_text: If the judgment debtor does not hold a current license and if personal delivery cannot
+    be effected by exercising reasonable diligence, the claimant must publish the notice once a week
+    for two consecutive weeks in a newspaper of general circulation in the county in which the
+    judgment debtor was last known to reside.
+  secondary: []
+terms:
+  - service
+  - publication
+  - judgment debtor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

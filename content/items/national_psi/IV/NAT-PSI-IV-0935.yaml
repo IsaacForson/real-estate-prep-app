@@ -1,0 +1,41 @@
+id: NAT-PSI-IV-0935
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1639(e)(1), which party is prohibited from including a term requiring arbitration
+  in a residential mortgage loan?
+options:
+  - The creditor
+  - The consumer
+  - The broker
+  - The appraiser
+key: A
+explanation: The statute prohibits any residential mortgage loan from containing terms that require
+  arbitration as the method for resolving controversies arising from the transaction. Therefore, the
+  creditor may not include such an arbitration term. The consumer, broker, or appraiser are not
+  barred by this provision from agreeing to arbitration after a dispute arises.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639(e)(1)
+  url: null
+  quoted_text: No residential mortgage loan and no extension of credit under an open end consumer
+    credit plan secured by the principal dwelling of the consumer may include terms which require
+    arbitration or any other nonjudicial procedure as the method for resolving any controversy or
+    settling any claims arising out of the transaction.
+  secondary: []
+terms:
+  - arbitration
+  - residential mortgage loan
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

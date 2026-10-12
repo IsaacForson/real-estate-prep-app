@@ -1,0 +1,44 @@
+id: MI-25-0289
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer requests that the broker waive the service of 'Acceptance of delivery and presentation
+  of offers and counteroffers to buy, sell, or lease your property' in a limited service agreement.
+  According to Mich. Comp. Laws § 339.2517(4), is this waiver permissible?
+options:
+  - No, because limited service agreements cannot waive any services
+  - Yes, because that service is explicitly listed as eligible for waiver
+  - Yes, but only if the buyer also waives the other two services
+  - No, because that service is not listed as eligible for waiver
+key: B
+explanation: The limited service agreement form enumerates ‘Acceptance of delivery and presentation
+  of offers and counteroffers’ as a service that may be waived. The distractor claiming the service
+  is not listed contradicts the explicit enumeration in the statute.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2517(4)
+  url: null
+  quoted_text: —Acceptance of delivery and presentation of offers and counteroffers to buy, sell, or
+    lease your property or the property you seek to purchase or lease.
+  secondary: []
+terms:
+  - limited service agreement
+  - waiver
+  - services
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

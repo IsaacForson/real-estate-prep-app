@@ -1,0 +1,53 @@
+id: DE-2901-0329
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives a signed written agreement from all parties on Thursday at 8:30 AM. Under
+  Del. Code Ann. tit. 24, ch. 29 § 2923(d), by what date and time must the licensee deposit the
+  escrow money into the broker’s escrow account, excluding weekends and federal holidays?
+options:
+  - Tuesday 8:30 AM
+  - Monday 8:30 AM
+  - Saturday 8:30 AM
+  - Friday 8:30 AM
+key: B
+explanation: Adding 72 hours to Thursday 8:30 AM reaches Sunday 8:30 AM. Since weekends are
+  excluded, the deadline moves to the next business day, Monday 8:30 AM. The Friday option ignores
+  the full 72-hour period, while Saturday and Tuesday are incorrect adjustments.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2923(d)
+  url: null
+  quoted_text: The broker shall deposit the moneys into the broker’s escrow account within 72 hours of
+    the signing of the written agreement by all parties, or by the dates defined therein, excluding
+    weekends and federal holidays.
+  secondary: []
+math:
+  worked_solution: |-
+    Start: Thursday 8:30 AM
+    Add 24 hours → Friday 8:30 AM
+    Add 24 hours → Saturday 8:30 AM
+    Add 24 hours → Sunday 8:30 AM
+    Sunday is a weekend, so move to next business day: Monday 8:30 AM
+  formulas:
+    - deadline = signing_time + 72 hours; if deadline falls on weekend or holiday, advance to next
+      business day
+  onscreen_calculator_only: false
+terms:
+  - escrow
+  - deposit
+  - weekend
+  - holiday
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,46 @@
+id: NV-645-0224
+jurisdiction: NV
+bank: state_NV
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A licensee employed by XYZ Brokerage represents both the buyer and the seller in a
+  residential sale. According to Nevada law, before continuing to act as agent for both parties, the
+  licensee must:"
+options:
+  - Written consent from the buyer only, as required by law
+  - Written consent from the seller only, as required by law
+  - Written consent from both the buyer and the seller, as required
+  - Disclosure of the dual agency to both parties without obtaining consent
+key: C
+explanation: NRS 645.252(1)(d) mandates written consent from each party when a licensee acts for
+  more than one party, unless an exception under NRS 645.253 applies. The exception applies only
+  when different licensees from the same brokerage represent separate parties, not when the same
+  licensee represents both parties. Therefore, written consent from both buyer and seller is
+  required.
+citation:
+  source: "### Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.252"
+  url: null
+  quoted_text: If a licensee makes such a disclosure, he or she must obtain the written consent of
+    each party to the transaction for whom the licensee is acting before he or she may continue to
+    act in his or her capacity as an agent.
+  secondary: []
+terms:
+  - consent
+  - dual agency
+  - transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

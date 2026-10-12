@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0934
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer and seller orally agree on the sale of a parcel of land. The buyer pays the purchase
+  price and the seller delivers the deed. Later, a creditor of the seller argues the conveyance is
+  invalid because the contract was only oral. What is the likely result?
+options:
+  - The conveyance is valid because the parties have fully performed
+  - The conveyance is voidable at the buyer's election
+  - The conveyance is void because oral contracts for land are illegal
+  - The conveyance is unenforceable and must be set aside by the court
+key: A
+explanation: Although an oral contract for the sale of land is generally unenforceable under the
+  Statute of Frauds, it is not void if the parties fully perform. When the buyer pays and the seller
+  delivers the deed, the conveyance is valid despite the lack of a writing, as explained in § 2.6.
+  Therefore, the creditor's argument fails.
+citation:
+  source: REP Ref. Contracts § 2.6
+  url: null
+  quoted_text: "An oral agreement to sell land is therefore generally unenforceable (§ 1.5), though
+    not void: if both parties choose to perform, the conveyance is valid."
+  secondary: []
+terms:
+  - statute of frauds
+  - enforceable
+  - performance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

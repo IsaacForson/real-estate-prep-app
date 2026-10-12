@@ -1,0 +1,39 @@
+id: NAT-PSI-V-0969
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A tenant transfers their entire remaining lease term to a new tenant, but the original tenant
+  remains liable to the landlord if the new tenant fails to pay rent. According to the text, what
+  has the tenant performed?
+options:
+  - The novation of the lease substitutes a new tenant and releases the original tenant.
+  - The sublease of the premises transfers only part of the lease term to a subtenant.
+  - The assignment of the lease transfers the tenant's remaining term to another party.
+  - The amendment of the lease changes a term after the contract has been signed.
+key: C
+explanation: Assignment transfers rights and leaves the assignor secondarily liable, while novation
+  substitutes a party and releases the original; the scenario describes assignment because the
+  original tenant remains liable after transferring the lease.
+citation:
+  source: REP Ref. Contracts § 13.1
+  url: null
+  quoted_text: "*Assignment vs. novation*: assignment transfers rights and leaves the assignor
+    secondarily liable; novation substitutes a party and releases the original."
+  secondary: []
+terms:
+  - assignment
+  - novation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

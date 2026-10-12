@@ -1,0 +1,40 @@
+id: MT-51-0023
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: When the Board of Realty Regulation receives money that has no specific provision for its
+  deposit or disposition, where must that money be deposited according to Montana law?
+options:
+  - Be deposited in the state special revenue fund
+  - Be placed in the board's operating account
+  - Be transferred to the state general fund
+  - Be returned to the payer immediately
+key: A
+explanation: According to 37-51-208, money lacking a specific deposit provision must be deposited in
+  the state special revenue fund for the board's use, so depositing it there is correct. The option
+  about placing the money in the board's operating account is incorrect because the statute directs
+  it to the state special revenue fund, not a board‑operated account.
+citation:
+  source: Mont. Code Ann. § 37-51-208
+  url: null
+  quoted_text: the money is to be deposited in the state special revenue fund for the use of the board.
+  secondary: []
+terms:
+  - deposit
+  - fund
+  - board
+  - money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-08
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

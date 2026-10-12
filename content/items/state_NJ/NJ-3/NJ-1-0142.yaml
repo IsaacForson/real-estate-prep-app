@@ -1,0 +1,40 @@
+id: NJ-1-0142
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's client plans to install an underground gas pipeline across a freshwater wetland
+  to connect two properties. Does this activity require a freshwater wetlands permit under the Act?
+options:
+  - No, because pipeline installation is considered linear development and is exempt
+  - No, because the activity involves the placement of obstructions, which is not regulated
+  - Yes, because installing the pipeline requires excavation or disturbance of soil, a regulated
+    activity
+  - Yes, but the permit requirement does not depend on pipeline length
+key: C
+explanation: The Act defines regulated activity to include removal, excavation, disturbance or
+  dredging of soil (N.J. Stat. Ann. § 13:9B-3). Installing a pipeline entails excavation of soil,
+  thus a permit is required. The claim that pipeline installation is exempt as linear development is
+  not supported by the Act.
+citation:
+  source: N.J. Stat. Ann. § 13:9B-3
+  url: null
+  quoted_text: (1)  The removal, excavation, disturbance or dredging of soil, sand, gravel, or
+    aggregate material of any kind;
+  secondary: []
+terms:
+  - excavation
+  - regulated activity
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-30

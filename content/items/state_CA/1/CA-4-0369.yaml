@@ -1,0 +1,41 @@
+id: CA-4-0369
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker closes a residential sale on March 15, 2024. Assuming no exceptions apply, what is
+  the earliest date the broker may destroy the paper deposit receipt associated with that
+  transaction?
+options:
+  - March 15, 2027
+  - March 15, 2028
+  - March 15, 2025
+  - March 15, 2026
+key: A
+explanation: The retention period runs from the date of closing and lasts three years, so the broker
+  must keep the receipt until March 15, 2027. After that date the records may be disposed of,
+  provided no audit or investigation is pending. The distractor "March 15, 2026" reflects a common
+  error of applying only two years, perhaps confusing the rule with a different reporting deadline,
+  but the statute clearly mandates a three‑year span.
+citation:
+  source: Cal. Bus. & Prof. Code § 10148(a)
+  url: null
+  quoted_text: The retention period shall run from the date of the closing of the transaction or from
+    the date of the listing if the transaction is not consummated.
+  secondary: []
+terms:
+  - retention
+  - closing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

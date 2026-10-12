@@ -1,0 +1,43 @@
+id: SC-57-0413
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is fined for failing to renew license. The commission attempts to collect the fine
+  by placing a lien on the licensee's property without following the procedure in Section 40-1-180.
+  Is this permissible under S.C. Code Ann. § 40-57-760?
+options:
+  - No, because fines cannot be collected after 30 days
+  - Yes, as long as the licensee is notified
+  - No, because collection must comply with Section 40-1-180
+  - Yes, because the commission may use any collection method
+key: C
+explanation: Under § 40-57-760, the collection of any fine must follow the procedures in Section
+  40-1-180; attempting to collect via a lien without complying with that section is not permitted.
+  Therefore, the action described is not permissible.
+citation:
+  source: S.C. Code Ann. § 40-57 (Title 40, ch. 57 — Real Estate Brokers, Brokers-in-Charge,
+    Associates, and Property Managers) — South Carolina Code of Laws Title 40, Chapter 57 — Real
+    Estate Brokers, Brokers-in-Charge, Associates, and Property Managers — § 40-57-760
+  url: null
+  quoted_text: Imposition and collection of all costs and fines imposed pursuant to this chapter must
+    comply with Section 40-1-180.
+  secondary: []
+terms:
+  - fine
+  - collection
+  - procedure
+  - section
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

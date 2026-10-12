@@ -1,0 +1,44 @@
+id: NAT-PSI-V-0928
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer purchases an option to buy a commercial lot for $300,000. The option fee is $15,000
+  and the contract states that the fee applies to the purchase price if the option is exercised.
+  What is the effective purchase price if the buyer exercises the option?
+options:
+  - $300,000
+  - $330,000
+  - $315,000
+  - $285,000
+key: D
+explanation: The effective purchase price equals the option price minus the option fee when the
+  contract specifies that the fee applies to the price, yielding $300,000 − $15,000 = $285,000. The
+  distractor of $300,000 incorrectly ignores the fee’s application to the price.
+citation:
+  source: REP Ref. Contracts § 9.1
+  url: null
+  quoted_text: The option fee is generally kept by the optionor whether or not the option is
+    exercised, unless the contract provides that it applies to the price on exercise.
+  secondary: []
+math:
+  worked_solution: Option price = $300,000; Option fee = $15,000; Effective price = $300,000 - $15,000 = $285,000
+  formulas:
+    - Effective price = Option price - Option fee (when fee applies to price)
+  onscreen_calculator_only: false
+terms:
+  - option fee
+  - purchase price
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,39 @@
+id: NAT-PV-II-0733
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A grantor conveys property 'to A for the life of B.' If A dies before B, who holds the estate
+  after A's death?
+options:
+  - Life tenant B
+  - The heirs of A
+  - The grantor's heirs
+  - The remainderman
+key: B
+explanation: When a life estate is measured by another's life (pur autre vie), if the life tenant
+  dies before the measuring life, the life tenant's heirs hold the estate until the measuring life
+  ends.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 1.4
+  url: null
+  quoted_text: If the measuring life is someone else ('to A for the life of B'), the estate is pur
+    autre vie; if A dies before B, A's heirs hold it until B dies.
+  secondary: []
+terms:
+  - life estate
+  - pur autre vie
+  - heirs
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

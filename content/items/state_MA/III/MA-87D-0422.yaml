@@ -1,0 +1,42 @@
+id: MA-87D-0422
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under 254 CMR 3.00(10)(a), when must a broker deposit client funds received in a real estate
+  transaction?
+options:
+  - The broker must deposit the funds in an escrow account within three business days.
+  - The broker must hold the funds in a personal account until closing.
+  - The broker must deposit the funds in an escrow account only after the transaction is consummated.
+  - The broker must immediately deposit the funds in a bank escrow account.
+key: D
+explanation: The rule states that all money paid over to a broker to be held during the pendency of
+  a transaction shall be immediately deposited in a bank escrow account. Therefore, the broker must
+  deposit the funds immediately upon receipt. Keeping the funds in a personal account or delaying
+  deposit violates this requirement.
+citation:
+  source: 254 CMR 3.00 — 254 CMR 3.00 — Professional Standards of Practice (Board of Registration of
+    Real Estate Brokers and Salespersons), official mass.gov PDF read via Internet Archive capture
+    of 2025-11-01 because mass.gov returns 403 to scripts Section 10(a)
+  url: null
+  quoted_text: all money of whatever kind and nature paid over to a real estate broker to be held
+    during the pendency of a transaction shall be immediately deposited in a bank escrow account
+  secondary: []
+terms:
+  - escrow
+  - deposit
+  - client funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

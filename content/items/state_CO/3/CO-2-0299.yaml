@@ -1,0 +1,49 @@
+id: CO-2-0299
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker received an earnest money deposit check on April 3, 2021 and placed it in the
+  employer's trust account. According to Colorado law, what is the last date the broker must retain
+  the related records for possible Commission inspection?
+options:
+  - April 3, 2023
+  - April 3, 2024
+  - April 3, 2025
+  - April 3, 2026
+key: C
+explanation: The statute requires retention for four years. Adding four years to April 3, 2021 gives
+  April 3, 2025.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-217(1)(k)
+  url: null
+  quoted_text: Failing to maintain possession, for future use or inspection by an authorized
+    representative of the commission, for a period of four years, of the documents or records
+    prescribed by the rules of the commission
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: April 3, 2021
+    Add 4 years: April 3, 2021 + 4 years = April 3, 2025
+  formulas:
+    - Result = Start date + 4 years
+  onscreen_calculator_only: false
+terms:
+  - record retention
+  - earnest money
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

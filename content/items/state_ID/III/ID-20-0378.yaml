@@ -1,0 +1,44 @@
+id: ID-20-0378
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money check from a buyer on Tuesday. The purchase and sale
+  agreement includes written instructions signed by both parties to withhold deposit until the
+  seller accepts the offer. What action is required of the broker under Idaho Code § 54-2045(2)?
+options:
+  - The broker creates a ledger record and returns the check to the buyer uncashed.
+  - The broker creates a ledger record and deposits the check into the trust account immediately.
+  - The broker creates a ledger record and deposits the check into the broker's business account.
+  - The broker creates a ledger record and holds the check per the written instructions.
+key: D
+explanation: The rule requires a ledger record when a check is received for later deposit, but only
+  if accompanied by written instructions to withhold deposit until a certain time. The broker must
+  therefore create the ledger record and hold the check as directed. Depositing immediately,
+  returning the check, or placing it in a business account would violate the instruction.
+citation:
+  source: Idaho Code § 54-2045(2)
+  url: null
+  quoted_text: A ledger record must also be created when the broker or associate receives a check to
+    be held for later deposit. However, such a check must be accompanied by written instructions in
+    the purchase and sale agreement or offer to withhold deposit until a time certain, such as
+    acceptance of the offer by the seller.
+  secondary: []
+terms:
+  - ledger record
+  - written instructions
+  - check
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

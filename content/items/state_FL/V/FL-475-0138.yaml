@@ -1,0 +1,49 @@
+id: FL-475-0138
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A real estate school charges $110 for the initial application and examination processing fee.
+  Under Florida Statutes, is this fee permissible?
+options:
+  - Yes, because the school may set its own fee
+  - Yes, because the fee is less than the $150 allowance
+  - No, because the fee exceeds the statutory maximum of $100
+  - No, because only the commission sets the fee amount
+key: C
+explanation: Florida Statute 475.125(1) limits the initial application and examination fee to $100.
+  Charging $110 exceeds that limit, so the fee is not permissible. The idea that the school may set
+  any fee or that any amount under $150 is allowed contradicts the statutory cap, and the claim that
+  only the commission sets the fee misstates the rule—schools may charge fees up to the statutory
+  maximum set by the commission.
+citation:
+  source: Fla. Stat. ch. 475 § 475.125(1)
+  url: null
+  quoted_text: The fee for initial application and examination may not exceed $100.
+  secondary: []
+math:
+  worked_solution: |-
+    Statutory maximum = $100
+    Charged fee = $110
+    Excess = Charged fee - Statutory maximum = $110 - $100 = $10
+    Since excess > 0, the fee exceeds the allowable maximum and is not permissible.
+  formulas:
+    - Excess = Charged fee - Statutory maximum
+  onscreen_calculator_only: false
+terms:
+  - application fee
+  - examination fee
+  - statutory maximum
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

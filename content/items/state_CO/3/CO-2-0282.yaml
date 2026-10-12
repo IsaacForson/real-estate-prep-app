@@ -1,0 +1,46 @@
+id: CO-2-0282
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee who is part of an affiliated business arrangement with a title insurance company
+  receives a payment from the title insurance company for services actually performed in issuing a
+  title insurance policy. Under Colorado law, may the licensee accept this payment?
+options:
+  - No, because any payment received from an affiliated business arrangement is prohibited
+    regardless of the service provided.
+  - Yes, because the payment is for services actually performed and falls under an exception to the
+    prohibition on fees from affiliated business arrangements.
+  - No, unless the licensee discloses the payment to all parties to the real estate transaction in
+    writing.
+  - Yes, but only if the payment is structured as a return on the licensee’s investment in the title
+    insurance company.
+key: B
+explanation: Under Colo. Rev. Stat. § 12-10-218(2)(e)(II), a title insurance company may pay its
+  duly appointed agent for services actually performed in issuing a title insurance policy.
+  Therefore, a licensee who performs such services may accept the payment; the prohibition on fees
+  from affiliated business arrangements does not apply when the payment is for actual services
+  rendered.
+citation:
+  source: Colo. Rev. Stat. § 12-10-218(2)(e)(II)
+  url: null
+  quoted_text: (II) A title insurance company to its duly appointed agent for services actually
+    performed in the issuance of a policy of title insurance;
+  secondary: []
+terms:
+  - affiliated business arrangement
+  - title insurance
+  - exception
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

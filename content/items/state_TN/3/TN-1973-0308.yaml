@@ -1,0 +1,43 @@
+id: TN-1973-0308
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's YouTube channel features a property tour video; the firm name and telephone
+  number appear in the video description, which requires one click to view. Is the advertisement
+  compliant under Tenn. Comp. R. & Regs. § 1260-02-.12(6)(b)?
+options:
+  - Yes, because the firm name and telephone number are accessible within one click.
+  - No, because the firm name and telephone number must be visible without any clicks.
+  - Yes, because YouTube is not considered social media under the rule.
+  - No, because the licensee must also include the firm name in the video itself.
+key: A
+explanation: The rule requires the firm name and telephone number to be no more than one click away;
+  one click satisfies this requirement, making the advertisement compliant. The distractor claiming
+  visibility without any clicks is incorrect because the rule permits up to one click, not zero
+  clicks only.
+citation:
+  source: Tenn. Comp. R. & Regs. § 1260-02-.12(6)(b)
+  url: null
+  quoted_text: With regards to social media advertising by licensees, the firm name and firm telephone
+    number listed on file with the Commission must be no more than one click away from the viewable
+    page.
+  secondary: []
+terms:
+  - click
+  - YouTube
+  - firm name
+  - telephone number
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

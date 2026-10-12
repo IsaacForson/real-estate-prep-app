@@ -1,0 +1,44 @@
+id: MT-51-0180
+jurisdiction: MT
+bank: state_MT
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A supervising broker notifies the salesperson of termination of supervision but fails to
+  notify the board. According to Montana law, when does the termination of supervision become
+  effective?
+options:
+  - Effective upon salesperson notification only
+  - Effective upon board notification only
+  - Effective after a five‑business‑day delay
+  - Effective only after both parties agree
+key: B
+explanation: The termination of supervision is not effective until the supervising broker has
+  notified both the salesperson and the board. Since the board was not notified, the termination
+  does not become effective until that occurs; the other options incorrectly base effectiveness on
+  the salesperson alone, a fixed delay, or mutual agreement.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-202(4)
+  url: null
+  quoted_text: Termination of supervision by the supervising broker is not effective under this
+    subsection until the supervising broker has notified both the salesperson and the board.
+  secondary: []
+terms:
+  - supervising broker
+  - salesperson
+  - board
+  - termination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

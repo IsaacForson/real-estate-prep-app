@@ -1,0 +1,40 @@
+id: FL-475-0466
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida Statutes, within how many days after a commission is earned must a broker
+  deliver a copy of the commission notice to the owner and closing agent, assuming the delivery
+  occurs at **LEAST** one day before closing?
+options:
+  - 10 days
+  - 15 days
+  - 20 days
+  - 30 days
+key: C
+explanation: The statute requires the broker to deliver the copy within 30 days after the commission
+  is earned and at least one day before closing. Therefore, the correct interval is 30 days. The
+  distractor “20 days” incorrectly shortens the period, which does not satisfy the statutory window.
+citation:
+  source: Fla. Stat. ch. 475 § 475.705(3)
+  url: null
+  quoted_text: within 30 days after a commission is earned by the broker pursuant to s. 475.703(2) and
+    at least 1 day before the closing, deliver a copy of the commission notice
+  secondary: []
+terms:
+  - commission
+  - notice
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

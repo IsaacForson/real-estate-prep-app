@@ -1,0 +1,41 @@
+id: NJ-1-0175
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A contractor excavates soil to install a septic system in an area identified as a freshwater
+  wetland. Under the Freshwater Wetlands Protection Act, does this activity require a freshwater
+  wetlands permit?
+options:
+  - Yes, but only if the wetland has been officially designated by the Department of Environmental
+    Protection.
+  - No, because installing a septic system is exempt from permit requirements.
+  - Yes, because excavation of soil is a regulated activity requiring a permit.
+  - No, because the activity occurs only near, not in, the freshwater wetland.
+key: C
+explanation: Excavation of soil is expressly listed as a regulated activity under the act, which
+  requires a freshwater wetlands permit. The exemption for installing a septic system is not
+  mentioned in the provided text, so it does not apply.
+citation:
+  source: N.J. Stat. Ann. § 13:9B-3
+  url: null
+  quoted_text: The removal, excavation, disturbance or dredging of soil, sand, gravel, or aggregate
+    material of any kind
+  secondary: []
+terms:
+  - regulated activity
+  - permit
+  - excavation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-12
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

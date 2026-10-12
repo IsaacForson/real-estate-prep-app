@@ -1,0 +1,45 @@
+id: NM-1-0053
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Which activity is permitted for an unlicensed assistant under New Mexico Commission rules?
+options:
+  - An unlicensed assistant may negotiate offers for a property without first presenting them to the
+    responsible broker for review or obtaining any form of written consent
+  - An unlicensed assistant may host an open house and discuss offers with visitors after obtaining
+    written permission from the responsible broker and signing a disclosure form
+  - An unlicensed assistant may pick up and deliver paperwork to a seller after a contract has been
+    executed if the paperwork has been reviewed and approved by the responsible person
+  - An unlicensed assistant may prepare agency disclosure documents for client review after
+    completing a mandatory training course and passing a state-administered examination
+key: C
+explanation: Commission rules allow an unlicensed assistant to pick up and deliver paperwork to
+  sellers or purchasers after a contract has been executed, provided the paperwork has been reviewed
+  and approved by the responsible person and no questions are answered. Negotiating offers,
+  discussing offers, and preparing agency disclosures are prohibited because they require licensure.
+citation:
+  source: 16.61 NMAC § 16.61.21.8
+  url: null
+  quoted_text: Picking up and delivering paperwork to sellers or purchasers after a contract has been
+    executed if the paperwork has already been reviewed and approved by the responsible person,
+    without answering any questions or providing any opinions or advice to the recipient of the
+    paperwork.
+  secondary: []
+terms:
+  - unlicensed assistant
+  - paperwork
+  - responsible person
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

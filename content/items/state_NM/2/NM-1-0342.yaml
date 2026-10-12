@@ -1,0 +1,41 @@
+id: NM-1-0342
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under New Mexico rule, within how many days must the commission process an application for a
+  qualifying broker license for a military service member, spouse, dependent child, or recent
+  veteran who meets all licensure requirements?
+options:
+  - 30 days
+  - 45 days
+  - 60 days
+  - 90 days
+key: C
+explanation: The rule states the commission shall process the application and issue a license within
+  60 days after the qualifying individual meets all requirements. Thirty days is incorrect because
+  the specified period is 60 days.
+citation:
+  source: 16.61 NMAC § 16.61.3.12
+  url: null
+  quoted_text: The commission shall, within 60 days after a military service member, the spouse of a
+    military service member, a dependent child of a military service member, or a recent veteran who
+    meets all the requirements for licensure as a real estate broker in New Mexico, process the
+    application and issue a license to a qualified applicant.
+  secondary: []
+terms:
+  - military
+  - processing time
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

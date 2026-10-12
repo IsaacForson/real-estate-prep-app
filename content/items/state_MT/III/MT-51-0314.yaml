@@ -1,0 +1,45 @@
+id: MT-51-0314
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual who never obtained a real estate license assists a friend in selling a house and
+  expects a referral fee. After the sale, they sue the friend for the fee. Under Montana law, what
+  is the likely result?
+options:
+  - allow the person to recover because they performed valuable services.
+  - dismiss the action because the person was not licensed at the time the claim arose.
+  - allow the person to recover because the friend agreed to pay the fee.
+  - allow the person to recover because the sale closed successfully.
+key: B
+explanation: To recover compensation, the plaintiff must allege and prove they were a licensed
+  broker or salesperson at the time the claim arose. Since the individual was never licensed, they
+  cannot meet this requirement and the court will dismiss the action. The distractor that relies on
+  the value of services performed is wrong because licensure is a prerequisite regardless of the
+  services rendered.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-401
+  url: null
+  quoted_text: without first alleging and proving that such person was a duly licensed real estate
+    broker or real estate salesperson or authorized to act as a broker under the provisions of this
+    chapter at the time the alleged cause of action or claim arose.
+  secondary: []
+terms:
+  - license
+  - claim
+  - fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

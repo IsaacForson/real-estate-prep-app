@@ -1,0 +1,42 @@
+id: VT-2211-0335
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money deposit on a Monday. The broker deposits the funds into the
+  trust account on the following Monday. Is the broker in compliance with Vermont’s five‑banking‑day
+  deposit requirement?
+options:
+  - The broker is in compliance with the five‑banking‑day deposit requirement.
+  - The broker must also notify the Commission within 10 days of opening the account.
+  - The broker must place the deposit in an interest‑bearing trust account.
+  - The broker has violated the five‑banking‑day deposit requirement.
+key: A
+explanation: The deposit was made on the fifth banking day after receipt (Tuesday–Friday = days 1‑4,
+  following Monday = day 5), which satisfies the 'within five banking days' rule. Therefore the
+  broker is compliant. The option about violating the requirement incorrectly treats the fifth day
+  as late, and the other options introduce unrelated obligations.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2214(a)
+  url: null
+  quoted_text: Every real estate broker, within five banking days, shall deposit in a trust or escrow
+    account in a bank or other financial institution licensed to do business in this State all
+    earnest money and contract deposits
+  secondary: []
+terms:
+  - earnest money
+  - banking days
+  - deposit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

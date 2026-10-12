@@ -1,0 +1,47 @@
+id: PA-9-0300
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A corporation owns real estate and has 4 officers who all engage in real estate transactions
+  on behalf of the corporation. Under 63 P.S. § 455.304(1), how many of those officers are excluded
+  from the act?
+options:
+  - 5 officers
+  - 2 officers
+  - 4 officers
+  - 3 officers
+key: C
+explanation: The corporation has four officers, which is fewer than the five‑partner/officer cap, so
+  all four officers are excluded under the statute. The rule allows exclusion up to five officers,
+  so any number at or below that threshold is fully excluded. The distractor "5 officers"
+  incorrectly applies the maximum limit as the exact number excluded, even though only four officers
+  exist.
+citation:
+  source: 63 P.S. § 455.304(1)
+  url: null
+  quoted_text: In the case of a partnership or corporation, this exclusion shall not extend to more
+    than five of its partners or officers, respectively
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify exclusion limit: 5 officers (from 63 P.S. § 455.304(1)).
+    Step 2: Compare total officers (4) to limit.
+    Step 3: Excluded officers = lesser of total officers and limit = 4.
+  formulas:
+    - excluded = min(total officers, 5)
+  onscreen_calculator_only: false
+terms: []
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

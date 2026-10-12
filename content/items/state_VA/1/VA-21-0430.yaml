@@ -1,0 +1,48 @@
+id: VA-21-0430
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person who is not licensed by the Virginia Real Estate Board receives $1,200 in compensation
+  for facilitating a lease transaction. According to Virginia law, what is the maximum civil penalty
+  the Board may impose for this unlicensed activity?
+options:
+  - $1,000
+  - $1,200
+  - $1,500
+  - $2,000
+key: B
+explanation: Under Va. Code Ann. § 54.1‑2105.2(C), the Board may impose a civil penalty not to
+  exceed $1,000 for any real‑estate transaction or the compensation received from that transaction,
+  whichever is greater. Because the compensation of $1,200 is greater than $1,000, the maximum
+  penalty is $1,200.
+citation:
+  source: Va. Code Ann. § 54.1-2105.2(C)
+  url: null
+  quoted_text: Any person engaging in unlicensed activity shall be subject to further proceedings
+    before the Board and the Board may impose a civil penalty not to exceed $1,000 for any real
+    estate transaction or the compensation received from any such real estate transaction, whichever
+    is greater.
+  secondary: []
+math:
+  worked_solution: Compare the statutory maximum of $1,000 with the compensation received ($1,200).
+    The larger amount is $1,200, so the Board may impose a penalty of $1,200.
+  formulas:
+    - Maximum penalty = max($1,000, compensation)
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - unlicensed activity
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

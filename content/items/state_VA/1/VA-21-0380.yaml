@@ -1,0 +1,50 @@
+id: VA-21-0380
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson’s license has been inactive for four years. During that period, the
+  licensee’s spouse, an active-duty member of the U.S. Armed Forces, was permanently assigned
+  outside Virginia, and the licensee kept current in real estate matters. Under Virginia law, may
+  the Board waive the educational requirements for reactivation of this license?
+options:
+  - Yes, because the licensee’s spouse qualifies under the military assignment exception.
+  - No, because only the licensee’s own occupation can justify a waiver.
+  - Yes, but only if the licensee completes a 30‑hour post‑license course first.
+  - No, because the license has been inactive for more than three years.
+key: A
+explanation: Under Va. Code Ann. § 54.1-2105.04.B(ii), the Board may waive the educational
+  requirements for reactivating a license when the license holder is the spouse of a U.S.
+  armed‑forces member who has been permanently assigned outside Virginia for part of the inactive
+  period and the holder has remained current in real‑estate knowledge. The facts in the stem meet
+  both conditions, so a waiver is allowed. The statement that only the licensee’s own occupation can
+  justify a waiver is wrong because the rule explicitly covers the spouse of a military member. The
+  claim that a 30‑hour post‑license course must be completed first adds a requirement that the
+  statute does not contain. The assertion that more than three years of inactivity automatically
+  bars waiver is incorrect; the three‑year threshold actually makes the licensee eligible to request
+  the waiver under the military‑spouse provision.
+citation:
+  source: Va. Code Ann. § 54.1-2105.04.B
+  url: null
+  quoted_text: (ii) the holder of such license is a member or the spouse of a member of the armed
+    forces of the United States who has been permanently assigned outside Virginia for a portion of
+    the time the license has been inactive, and the holder of the inactive license remained current
+    in the field of real estate and demonstrates this fact to the satisfaction of the Board.
+  secondary: []
+terms:
+  - reactivation
+  - waiver
+  - military
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

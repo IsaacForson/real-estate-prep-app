@@ -1,0 +1,38 @@
+id: ND-23-0192
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under N.D. Cent. Code § 43-23-17, what is the penalty for a person who violates section 43-23-14.1?
+options:
+  - A civil penalty up to $5,000
+  - An infraction offense
+  - A felony offense
+  - A class B misdemeanor
+key: B
+explanation: Section 43-23-17 states that a violation of section 43-23-14.1 is an infraction, not a
+  class B misdemeanor which applies to violations of section 43-23-05. Therefore the correct answer
+  is an infraction offense.
+citation:
+  source: N.D. Cent. Code § 43-23-17
+  url: null
+  quoted_text: Any person violating section 43-23-14.1 is guilty of an infraction.
+  secondary: []
+terms:
+  - penalty
+  - infraction
+  - section 43-23-14.1
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

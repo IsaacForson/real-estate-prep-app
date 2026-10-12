@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0910
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan applicant receives Supplemental Nutrition Assistance Program (SNAP) benefits. The
+  creditor denies the loan solely because the applicant receives SNAP benefits. Under ECOA, is this
+  action permissible?
+options:
+  - Yes, because the creditor may consider public assistance income when determining
+    creditworthiness.
+  - No, because discrimination based on public assistance income is prohibited.
+  - Yes, if the creditor provides a statement of reasons for the denial.
+  - No, unless the applicant waives the right to receive a copy of the appraisal.
+key: B
+explanation: ECOA §1691(a)(2) prohibits denying credit when all or part of an applicant’s income
+  comes from a public assistance program. Therefore, denying the loan solely because the applicant
+  receives SNAP benefits is unlawful discrimination. The option stating that a creditor may deny the
+  loan if it provides a statement of reasons is incorrect because providing a statement of reasons
+  does not overcome a prohibited basis for denial.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(a)(2)
+  url: null
+  quoted_text: because all or part of the applicant's income derives from any public assistance program;
+  secondary: []
+terms:
+  - public assistance
+  - discrimination
+  - income
+  - denial
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

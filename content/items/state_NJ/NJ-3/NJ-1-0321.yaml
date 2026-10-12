@@ -1,0 +1,44 @@
+id: NJ-1-0321
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee plans to construct a small pier by driving wooden pilings into a freshwater
+  wetland. Under N.J.S.A. 13:9B-3, is a freshwater wetlands permit required before driving the
+  pilings?
+options:
+  - Under the act, a permit is required because driving pilings is a regulated activity
+  - Under the act, a permit is not required because driving pilings is considered linear development
+  - Under the act, a permit is not required because the pier is temporary and does not disturb the
+    wetland
+  - Under the act, a permit is required only if the pilings exceed three feet in length
+key: A
+explanation: The statute lists driving of pilings as a regulated activity, which requires a
+  freshwater wetlands permit. The claim that a permit is not required because driving pilings is
+  considered linear development is incorrect, because the definition of linear development does not
+  exempt regulated activities.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 9B-1 13:9B-3
+  url: null
+  quoted_text: (4)  The driving of pilings;
+  secondary: []
+terms:
+  - permit
+  - regulated activity
+  - driving pilings
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

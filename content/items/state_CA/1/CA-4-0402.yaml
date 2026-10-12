@@ -1,0 +1,38 @@
+id: CA-4-0402
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson enters a written retention agreement with a new responsible broker on April 10.
+  By what date must the responsible broker notify the Commissioner of this retention under Cal. Code
+  Regs. tit. 10, § 2752(a)?
+options:
+  - April 13
+  - April 15
+  - April 17
+  - April 20
+key: B
+explanation: The rule requires notification within five days of the retention agreement; counting
+  five days from April 10 brings the deadline to April 15. April 13 is only three days later, while
+  April 17 and April 20 exceed the permitted period.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2752(a)
+  url: null
+  quoted_text: the responsible broker shall notify the Commissioner of that fact within five days.
+  secondary: []
+terms:
+  - notice
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

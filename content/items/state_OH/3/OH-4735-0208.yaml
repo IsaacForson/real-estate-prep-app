@@ -1,0 +1,40 @@
+id: OH-4735-0208
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is considered advertising under Ohio Adm. Code Rule 1301:5-1-02(H)?
+options:
+  - A private email to a client about a property listing
+  - A blog post offering property management services
+  - A voicemail left for a friend about a house for sale
+  - A password-protected site showing listings to client
+key: B
+explanation: A blog post is advertising because Rule 1301:5-1-02(H) includes blogs as a
+  manner/method to make known services requiring a license to the general public. A private email is
+  excluded as private communication initiated at client request under Rule 1301:5-1-02(I).
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 Rule 1301:5-1-02(H)"
+  url: null
+  quoted_text: (11) Social networking sites, (12) Blogs, (13) Business cards, (14) Property listing
+    data base service.
+  secondary: []
+terms:
+  - advertising
+  - blog
+  - private communication
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

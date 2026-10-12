@@ -1,0 +1,40 @@
+id: DC-198-0401
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submits a petition to the Board requesting a determination of disqualification
+  under D.C. Code § 47-2853.12(n)(1). According to D.C. Code § 47-2853.12(n)(2), by when must the
+  Board render its decision on the petition?
+options:
+  - Within 120 days of receiving the petition.
+  - Within 90 days of receiving the petition.
+  - Within 60 days of receiving the petition.
+  - Within 30 days of receiving the petition.
+key: B
+explanation: Subsection (n)(2) requires the Board to render its decision on a person's petition
+  within 90 days after receipt of the petition. Therefore, the correct deadline is 90 days. The
+  60‑day option is incorrect because the statute specifies a 90‑day period, not 60 days.
+citation:
+  source: D.C. Code § 47-2853.12(n)(2)
+  url: null
+  quoted_text: (2) The board shall render its decision on a person's petition within 90 days after
+    receipt of the petition.
+  secondary: []
+terms:
+  - petition
+  - decision
+  - timeline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

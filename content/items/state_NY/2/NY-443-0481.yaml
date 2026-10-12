@@ -1,0 +1,41 @@
+id: NY-443-0481
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker enters into a net listing agreement with a seller, authorizing the broker to retain
+  the difference between the sale price and a specified net amount to the seller, violating 19 NYCRR
+  § 175.19(b). Under New York Real Property Law § 441-c, which of the following actions may the
+  Department of State take?
+options:
+  - Impose a fine of $5,000 today.
+  - Impose a fine of $2,000 today.
+  - Require broker to complete training.
+  - Order the broker to pay damages.
+key: B
+explanation: The statute permits a fine not exceeding two thousand dollars, so a $2,000 fine is
+  allowable. A $5,000 fine exceeds the limit, while requiring training and ordering damages are not
+  authorized penalties under § 441-c.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 441-c
+  url: null
+  quoted_text: or in lieu thereof may impose a fine not exceeding two thousand dollars payable to the
+    department of state,
+  secondary: []
+terms:
+  - fine
+  - net listing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

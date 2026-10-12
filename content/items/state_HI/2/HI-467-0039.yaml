@@ -1,0 +1,41 @@
+id: HI-467-0039
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer delivers the required public report and cancellation notice to a prospective
+  purchaser on June 1. The purchaser signs the contract on June 5. According to Hawaii law, when
+  does the purchaser's thirty-day cancellation period begin?
+options:
+  - June 1, the day the public report was delivered
+  - June 5, the day the contract was signed
+  - June 15, fifteen days after signing
+  - June 30, thirty days after delivery
+key: B
+explanation: The cancellation period starts after both the contract signing and delivery of the
+  required items have occurred; the later of the two dates controls, which in this case is June 5.
+citation:
+  source: Haw. Rev. Stat. ch. 514B — Hawaii Revised Statutes Chapter 514B - Condominiums
+    (data.capitol.hawaii.gov, section pages concatenated) — § 514B-86
+  url: null
+  quoted_text: "(b) Purchasers may cancel a sales contract at any time up to midnight of the thirtieth
+    day after: (1) The date that the purchaser signs the contract; and (2) All of the items
+    specified in subsection (a)(1) have been delivered to the purchaser."
+  secondary: []
+terms:
+  - cancellation period
+  - contract signing
+  - delivery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

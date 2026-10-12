@@ -1,0 +1,42 @@
+id: DE-2901-0390
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee works under a brokerage agreement that does not specify they are a common law
+  agent. Under Delaware law, how is the licensee presumed to be classified?
+options:
+  - The licensee is presumed to be a common law agent.
+  - The licensee is presumed to be a statutory agent.
+  - The licensee is presumed to be a dual agent.
+  - The licensee is presumed to be a designated agent.
+key: B
+explanation: Delaware Code Title 24, Chapter 29, §2901(25) provides that a licensee is presumed to
+  be a statutory agent unless the brokerage agreement specifically identifies them as a common law
+  agent. Since the agreement in the question does not make that identification, the licensee is
+  presumed to be a statutory agent. The other classifications—common law agent, dual agent, and
+  designated agent—are not presumed absent such an agreement.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2901(25)
+  url: null
+  quoted_text: Every licensee shall be presumed to be a statutory agent and may refer to themselves as
+    agent or statutory agent unless specifically identified as a common law agent in their brokerage
+    agreement.
+  secondary: []
+terms:
+  - statutory agent
+  - presumption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,43 @@
+id: DE-2901-0317
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer signs a wholesale agreement of sale on March 10. The consumer has not yet taken
+  title and the property has not been conveyed. Under Del. Code Ann. tit. 24, ch. 29 § 2940(a) and
+  (e)(3), until what date and time does the consumer have the right to cancel the agreement?
+options:
+  - Midnight of March 30
+  - Midnight of April 1
+  - Midnight of March 28
+  - Midnight of March 31
+key: D
+explanation: The statute grants the right to cancel until midnight of the twenty-first calendar day
+  after the consumer executed the agreement, unless conveyance occurs first. Twenty-one days after
+  March 10 is March 31, so the right expires at midnight of that date. The distractor listing March
+  30 is one day early, April 1 is one day late, and March 28 is two days early.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2940(a)
+  url: null
+  quoted_text: has the right to cancel an agreement of sale or contract that contains the information
+    required under subsection (e) of this section until midnight of the twenty-first calendar day
+    after the date when the consumer executed the agreement or contract, or until conveyance,
+    whichever occurs first.
+  secondary: []
+terms:
+  - wholesale
+  - cancellation
+  - consumer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

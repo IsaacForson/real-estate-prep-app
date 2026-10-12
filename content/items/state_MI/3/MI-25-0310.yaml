@@ -1,0 +1,50 @@
+id: MI-25-0310
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker's sole principal associate broker died on March 1. The broker's salesperson continues
+  working for the broker until September 1 (six months later), then leaves to work for another
+  licensed broker. Under Mich. Admin. Code R 339.22221, is the salesperson eligible to receive a new
+  license without charge from the department at that time?
+options:
+  - Yes, but only if the new license is issued in the same term as the original.
+  - No, because the salesperson must wait until the one‑year period ends before changing employers.
+  - Yes, because the transfer happened during the one‑year wind‑up period.
+  - No, because the license remains active until the statutory suspension takes effect.
+key: D
+explanation: The free license provision in R 339.22221(4) applies only after a license has been
+  suspended under subrule (3), which occurs one year after the death or disability. Since the
+  salesperson moved after six months, before suspension, the condition for a free license is not
+  met. Therefore the salesperson is not eligible for a free license at that time. The distractor
+  suggesting eligibility during the wind‑up period confuses the wind‑up allowance with the
+  free‑license condition.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R 339.22101–339.22667
+    — Department of Licensing and Regulatory Affairs, Real Estate Brokers and Salespersons (General
+    Rules), official LARA Administrative Rules System PDF read via Internet Archive capture of
+    2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch the current R
+    339.22101–339.22703 set when reachable R 339.22221(3)
+  url: null
+  quoted_text: One year after the date of death or disability of a broker’s sole associate principal
+    broker, the licenses of all affiliated real estate salespersons and associate real estate
+    brokers who are employed by the broker are automatically suspended, pending a replacement of the
+    sole principal associate broker or change of employer and the issuance of a new license.
+  secondary: []
+terms:
+  - suspension
+  - wind‑up period
+  - free license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

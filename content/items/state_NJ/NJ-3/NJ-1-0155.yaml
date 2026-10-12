@@ -1,0 +1,47 @@
+id: NJ-1-0155
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee seeks to install an underground sewer pipe that will traverse a freshwater wetland.
+  According to the New Jersey Freshwater Wetlands Protection Act, is a freshwater wetlands permit
+  required for this installation?
+options:
+  - A permit is required because installing a sewer pipe involves placing obstructions and/or
+    filling, which are regulated activities
+  - A permit is not required because linear development activities such as sewer pipes are expressly
+    exempt from permit requirements
+  - A permit is required only if the pipe diameter exceeds 24 inches; smaller installations are
+    exempt
+  - A permit is not required because the installation occurs entirely beneath the wetland surface
+    and does not disturb the water table
+key: A
+explanation: Installing a sewer pipe entails placing obstructions and/or filling materials within
+  the wetland, both of which are listed as regulated activities under subsections (3) and (5). The
+  statute provides no exemption for underground utilities or subsurface work, so a permit is
+  required.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 9B-1 § 13:9B-3
+  url: null
+  quoted_text: (5) The placing of obstructions;
+  secondary: []
+terms:
+  - linear development
+  - regulated activity
+  - permit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-02

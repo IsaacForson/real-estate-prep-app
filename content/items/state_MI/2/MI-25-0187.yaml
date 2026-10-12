@@ -1,0 +1,55 @@
+id: MI-25-0187
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate broker license resided in City X for four months and worked as
+  a real estate salesperson there for two months, resided in City Y for five months and worked as a
+  salesperson there for four months, and resided in City Z for eight months without performing any
+  real estate activity. According to MCL 339.2505(1)(a), which address(es) must the applicant
+  include in the application?
+options:
+  - The applicant must list the addresses of City X and City Y, because they worked as a salesperson
+    there
+  - The applicant must list the address of City Z only, because they resided there for eight months
+  - The applicant must list the address of City Z only, because they worked as a salesperson there
+    for six months
+  - The applicant must list the addresses of City X, City Y, and City Z, because each location
+    involved either residence or sales activity
+key: B
+explanation: The rule requires listing each former place where the applicant resided for 60 days or
+  more, or acted as a salesperson for 60 days or more, within the five years preceding the
+  application. City Z meets the residence threshold (eight months), while City X and City Y fall
+  short on both residence and salesperson duration. Therefore only City Z's address must be
+  included. The option stating that the applicant must list City Z only because they worked as a
+  salesperson there for six months incorrectly focuses on salesperson activity that does not reach
+  the 60‑day threshold.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2505"
+  url: null
+  quoted_text: the complete address of each former place where the applicant resided or was engaged in
+    business, or acted as a real estate salesperson, for a period of 60 days or more, during the 5
+    years immediately preceding the date of application
+  secondary: []
+terms:
+  - application
+  - address
+  - residence
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

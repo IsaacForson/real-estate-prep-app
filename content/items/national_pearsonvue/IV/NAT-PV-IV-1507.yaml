@@ -1,0 +1,41 @@
+id: NAT-PV-IV-1507
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A listing agent learns that the buyer, whose offer is pending, has just been laid off.
+  According to § 5.4 Disclosure (full disclosure to the principal), what must the agent do?
+options:
+  - Inform the seller immediately
+  - Wait until closing to mention
+  - Keep the information confidential
+  - Disclose with buyer's consent
+key: A
+explanation: The example in § 5.4 states that when a listing agent learns the buyer's offer is
+  pending and the buyer has just been laid off, the agent must tell the seller. Keeping the
+  information confidential or waiting until closing violates the duty of full disclosure to the
+  principal, and disclosing with buyer's consent is not sufficient because the duty runs to the
+  principal.
+citation:
+  source: REP Ref. Agency § 5.4
+  url: null
+  quoted_text: The agent must tell the seller.
+  secondary: []
+terms:
+  - disclosure
+  - principal
+  - buyer
+  - seller
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

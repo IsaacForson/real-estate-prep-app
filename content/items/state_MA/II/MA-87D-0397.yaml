@@ -1,0 +1,50 @@
+id: MA-87D-0397
+jurisdiction: MA
+bank: state_MA
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Board of Registration of Real Estate Brokers and Salespersons mails a license renewal
+  notice to a broker twenty-five days before the license expires. Under Massachusetts law, is this
+  notice compliant?
+options:
+  - Under Massachusetts law, the notice is compliant because the Board may mail notice at any time
+    before expiration.
+  - Under Massachusetts law, the notice is not compliant because the Board must mail notice not less
+    than thirty days prior to expiration.
+  - Under Massachusetts law, the notice is compliant as long as the broker receives it before
+    expiration.
+  - Under Massachusetts law, the notice is not compliant because the Board must mail notice not less
+    than fifteen days prior to expiration.
+key: B
+explanation: Under Massachusetts law, the Board must mail renewal notices not less than thirty days
+  prior to license expiration; therefore a notice mailed only twenty-five days before expiration
+  does not satisfy this requirement. The claim that the Board may mail notice at any time before
+  expiration is incorrect, as it contradicts the statutory timing rule.
+citation:
+  source: M.G.L. c. 112, §§ 87PP–87DDD — Massachusetts General Laws c. 112, §§ 87PP–87DDD — Real
+    Estate Brokers and Salesmen (license law), official malegislature.gov section pages (15
+    sections) read via Internet Archive captures of 2025-10 to 2026-06 because malegislature.gov
+    refuses connections from scripts — § 87XX
+  url: null
+  quoted_text: Such application forms shall be mailed by the board to each broker and salesman
+    registered with the board, together with notice of the expiration of his license, not less than
+    thirty days prior to such expiration.
+  secondary: []
+terms:
+  - renewal notice
+  - thirty days
+  - board
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

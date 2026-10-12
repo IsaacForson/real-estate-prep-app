@@ -1,0 +1,43 @@
+id: LA-1430-0640
+jurisdiction: LA
+bank: state_LA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After the Louisiana Real Estate Commission issues an order suspending a licensee's license on
+  February 5, 2024, the licensee submits an application for recovery from the real estate recovery
+  fund on August 10, 2024. Under Louisiana Real Estate License Law, what is the consequence?
+options:
+  - The claim is valid because notice was given within 180 days of the order.
+  - The claim is barred because the application was submitted after 180 days from the effective date
+    of the order.
+  - The claim is barred because the licensee did not wait for the commission's intervention.
+  - The claim is valid because the application was submitted within 180 days of notice.
+key: B
+explanation: The right to recover under the recovery fund is forever barred unless application is
+  made within one hundred eighty days from the effective date of the order; submitting on August 10
+  exceeds that period.
+citation:
+  source: La. R.S. 37:1430–1470 (Louisiana Real Estate License Law); La. Admin. Code tit. 46, pt.
+    LXVII (Real Estate) § 1462(B)(2)
+  url: null
+  quoted_text: (2) The right to recover under the provisions of this Subsection shall be forever
+    barred unless application is made within one hundred eighty days from the effective date of the
+    order issued.
+  secondary: []
+terms:
+  - recovery fund
+  - order
+  - application deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

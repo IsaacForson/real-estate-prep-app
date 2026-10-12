@@ -1,0 +1,47 @@
+id: NH-331-0351
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker advertises her own residential condominium for sale, stating in the ad that she is
+  the principal selling the property but omitting her legal name and the name of her firm. Under
+  N.H. Code Admin. R. Rea 404.05(a) and RSA 331-A:16 IV(a), is this advertisement permissible?
+options:
+  - The advertisement is permissible as long as she includes a link to an Internet display
+  - The advertisement is impermissible because she must also include her cell phone number
+  - The advertisement is impermissible because she must include her legal name and firm name
+  - The advertisement is permissible because she is advertising her own property
+key: C
+explanation: Rea 404.05(a) requires any advertisement that indicates the offer is being made by a
+  principal to clearly indicate it is an advertisement of a principal broker. RSA 331-A:16 IV(a)
+  further requires that all advertisements include the broker’s legal name and the firm’s regular
+  business name. Omitting the legal name and firm name violates this requirement, even when
+  advertising one’s own property. The distractor claiming permissibility due to own‑property
+  advertisement is wrong because the own‑property exemption in Rea 404.05(a) only lifts the ban on
+  indicating principal status; it does not remove the separate duty to identify the broker and firm.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 16 (IV)(a)
+  url: null
+  quoted_text: All advertisements by a broker or salesperson shall include the broker's or
+    salesperson's legal name or reasonable derivative thereof and the regular business name of the
+    firm or the principal broker's name when licensed under an individual principal broker license.
+  secondary: []
+terms:
+  - advertisement
+  - principal broker
+  - legal name
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

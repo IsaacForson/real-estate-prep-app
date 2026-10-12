@@ -1,0 +1,52 @@
+id: VT-2211-0322
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Vermont law, which of the following individuals is exempt from real estate licensing
+  requirements when acting under a duly executed power of attorney?
+options:
+  - A person who holds a power of attorney to sell property owned by a bank, where the bank employee
+    is acting within duties.
+  - A person who holds a power of attorney to sell the owner's vacation home, a one-time
+    transaction, and intends to avoid licensing requirements.
+  - A person who holds a power of attorney to manage rental properties on an ongoing basis for the
+    owner.
+  - A person who holds a power of attorney to lease commercial space for the owner, a one-time lease.
+key: B
+explanation: Vermont statutes exempt a person who, in good faith, holds a duly executed power of
+  attorney that authorizes a final consummation of a sale, purchase, or exchange of real estate,
+  when the transaction is not recurrent and the person’s purpose is to avoid the licensing
+  requirement (26 V.S.A. ch. 41 § 2211(b)(5)). The scenario that satisfies all of those elements is
+  the individual who has a power of attorney to sell the owner’s vacation home in a one‑time
+  transaction and who intends to evade licensing. The person with a power of attorney to sell
+  property owned by a bank is acting on behalf of a bank employee and does not involve the intent to
+  evade licensing. The individual with a power of attorney to manage rental properties is performing
+  a recurring management activity, not a sale, purchase, or exchange. The person with a power of
+  attorney to lease commercial space is conducting a lease, which is not covered by the exemption
+  for sale, purchase, or exchange.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2211(b)(5)
+  url: null
+  quoted_text: (5) Any person holding in good faith a duly executed power of attorney from the owner,
+    authorizing a final consummation and execution for the sale, purchase, or exchange of real
+    estate when such acts are not of a recurrent nature and done with the intention of evading this
+    section.
+  secondary: []
+terms:
+  - power of attorney
+  - exemption
+  - licensing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,43 @@
+id: IL-2000-0411
+jurisdiction: IL
+bank: state_IL
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee agrees to work as an unlicensed assistant for a broker who is sponsored by a
+  different sponsoring broker. Under 68 Ill. Adm. Code 1450.740(e), is this permissible?
+options:
+  - Not permitted, because the licensee is assisting a broker sponsored by a different sponsoring
+    broker
+  - Not permitted, unless the licensee obtains written consent from both sponsoring brokers
+  - Permitted, because the licensee is not performing licensed activities
+  - Permitted, as long as the assistant receives no compensation
+key: A
+explanation: The rule prohibits a licensee from acting as an assistant for any licensee other than
+  their own sponsoring broker or a licensee sponsored by the same sponsoring broker, regardless of
+  compensation or whether licensed activities are performed. Therefore the arrangement is not
+  permitted.
+citation:
+  source: 68 Ill. Adm. Code § 1450.740(e)
+  url: null
+  quoted_text: A licensee is prohibited from acting as an assistant, as provided for in this Section,
+    for any licensee other than the licensee's sponsoring broker or a licensee sponsored by the same
+    sponsoring broker.
+  secondary: []
+terms:
+  - licensee
+  - assistant
+  - sponsoring broker
+  - sponsored
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

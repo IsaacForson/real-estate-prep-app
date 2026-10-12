@@ -1,0 +1,48 @@
+id: VA-21-0400
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson obtains her Virginia real estate license on May 5, 2024. By what date must she
+  complete the required 30-hour post-license education to avoid having her license placed on
+  inactive status?
+options:
+  - June 5, 2025
+  - April 30, 2025
+  - May 5, 2025
+  - May 31, 2025
+key: D
+explanation: The education must be completed within one year from the last day of the month of
+  issuance; May 5, 2024 falls in May, last day is May 31, 2024, plus one year equals May 31, 2025.
+citation:
+  source: "### 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing
+    Regulations — § 135-20-95"
+  url: null
+  quoted_text: Failure to complete the 30-hour post-licensure curriculum within one year from the last
+    day of the month in which the license was issued will result in the license being placed on
+    inactive status by the board until the curriculum has been completed.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the month of issuance: May 2024.
+    Determine the last day of that month: May 31, 2024.
+    Add one year to that date: May 31, 2024 + 1 year = May 31, 2025.
+  formulas:
+    - Deadline = LastDayOfMonth(IssueDate) + 1 year
+  onscreen_calculator_only: false
+terms:
+  - post-license education
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,42 @@
+id: HI-467-0271
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager is hired as an independent contractor by a single owner to manage
+  residential real estate and receives compensation for the services. Under Hawaii Revised Statutes
+  § 467-1, does this individual qualify as a custodian or caretaker?
+options:
+  - The individual does not qualify as a custodian because they are not employed as an employee.
+  - The individual does not qualify as a custodian because they work for a single owner.
+  - The individual qualifies as a custodian because they manage real property.
+  - The individual qualifies as a custodian because they receive compensation.
+key: A
+explanation: The statute defines a custodian as an individual who, for compensation, is employed as
+  an employee by a single owner and manages the property. Being an independent contractor means the
+  individual is not an employee, so they do not meet the definition. The distractor that focuses
+  only on compensation ignores the employment requirement.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: "\"Custodian or caretaker\" means any individual, who for compensation or valuable
+    consideration, is employed as an employee by a single owner and has the responsibility to manage
+    or care for that real property left in the individual's trust;"
+  secondary: []
+terms:
+  - custodian
+  - employee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

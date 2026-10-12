@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0924
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1639h(f)(1)(A), for a first-lien residential mortgage loan whose original
+  principal obligation does **NOT** exceed the applicable maximum limitation, how many percentage
+  points must the annual percentage rate exceed the average prime offer rate for the loan to be
+  considered a higher-risk mortgage?
+options:
+  - 3.5 percentage points
+  - 0.5 percentage points
+  - 1.5 percentage points
+  - 2.5 percentage points
+key: C
+explanation: The statute states that for a first-lien loan not exceeding the maximum limitation, the
+  APR must exceed the average prime offer rate by 1.5 or more percentage points to be a higher-risk
+  mortgage. The 2.5 percentage point threshold applies only when the loan’s original principal
+  obligation exceeds that maximum limitation.
+citation:
+  source: 15 U.S.C. § 1639h(f)(1)(A)
+  url: null
+  quoted_text: by 1.5 or more percentage points, in the case of a first lien residential mortgage loan
+    having an original principal obligation amount that does not exceed the amount of the maximum
+    limitation on the original principal obligation of mortgage in effect for a residence of the
+    applicable size, as of the date of such interest rate set, pursuant to the sixth sentence of
+    section 1454(a)(2) of title 12;
+  secondary: []
+terms:
+  - higher-risk mortgage
+  - annual percentage rate
+  - average prime offer rate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

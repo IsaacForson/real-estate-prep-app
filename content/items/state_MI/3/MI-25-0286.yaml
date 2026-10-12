@@ -1,0 +1,42 @@
+id: MI-25-0286
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A process is served upon the department under Mich. Comp. Laws § 339.2514. What must be done
+  with the copies of the process or pleading?
+options:
+  - Both copies are forwarded by registered mail to the applicant and none is filed
+  - Both copies are filed with the department and neither is mailed to the applicant
+  - One copy is filed with the department; the other is destroyed after receipt
+  - One copy is filed with the department; the other is mailed to the applicant
+key: D
+explanation: The law states that when a process or pleading is served upon the department, it shall
+  be by duplicate copies, with one copy filed in the department and the other immediately forwarded
+  by registered mail to the applicant's main office. Therefore, one copy is filed and the other is
+  mailed to the applicant. The distractor claiming both copies are filed with the department
+  contradicts the requirement that only one copy is filed.
+citation:
+  source: Mich. Comp. Laws § 339.2514
+  url: null
+  quoted_text: duplicate copies, 1 of which shall be filed in the department and the other immediately
+    forwarded by registered mail to the main office of the applicant
+  secondary: []
+terms:
+  - process
+  - service of process
+  - department
+  - applicant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

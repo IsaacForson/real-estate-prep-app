@@ -1,0 +1,45 @@
+id: MI-25-0299
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager acting for a landlord collects rent from a tenant and also negotiates a
+  lease renewal with the same tenant without informing either party. Under Mich. Comp. Laws §
+  339.2512(1)(a), is this conduct prohibited?
+options:
+  - Yes, because the property manager acted for more than one party without their knowledge.
+  - No, because property management is exempt from the prohibition.
+  - Yes, because the property manager failed to provide written agency disclosure.
+  - No, because the tenant consented to the arrangement verbally.
+key: B
+explanation: The rule prohibits acting for more than one party without knowledge, except in cases
+  involving property management. Since the scenario involves property management, the prohibition
+  does not apply. The 'Yes, because the property manager acted for more than one party without their
+  knowledge' distractor is incorrect because it ignores the property management exception.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2512(1)(a)
+  url: null
+  quoted_text: Except in a case involving property management, acts for more than 1 party in a
+    transaction without the knowledge of the parties.
+  secondary: []
+terms:
+  - property management
+  - dual agency
+  - knowledge
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

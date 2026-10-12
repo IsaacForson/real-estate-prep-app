@@ -1,0 +1,48 @@
+id: IA-543B-0408
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker pays the original broker license fee of $170. How much of that fee is appropriated to
+  the department of inspections, appeals, and licensing for hiring a real estate education director
+  and regulatory compliance personnel?
+options:
+  - $000.00
+  - $025.00
+  - $170.00
+  - $145.00
+key: B
+explanation: Iowa Code § 543B.14 directs that $25 from each broker and salesperson license fee is
+  appropriated to the department for the education director and compliance staff. Thus $25 of the
+  $170 fee goes to that purpose. The $0 and $170 amounts misapply the rule, and $145 incorrectly
+  subtracts the appropriation.
+citation:
+  source: Iowa Code § 543B.14
+  url: null
+  quoted_text: twenty-five dollars from each real estate salesperson’s license fee and each broker’s
+    license fee shall be appropriated to the department of inspections, appeals, and licensing
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the statutory appropriation amount: $25 per broker license fee
+    (Iowa Code § 543B.14).\\nStep 2: The broker paid a license fee of $170.\\nStep 3: The
+    appropriation is a fixed amount per license, not a percentage of the fee, so the amount
+    appropriated remains $25.\\nStep 4: Therefore, $25 of the $170 fee is appropriated to the
+    department for the education director and compliance staff."
+  formulas:
+    - Appropriation = Statutory amount per license
+  onscreen_calculator_only: false
+terms:
+  - fee appropriation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

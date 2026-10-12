@@ -1,0 +1,42 @@
+id: MI-25-0322
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "Under Mich. Admin. Code R 339.22305(2), a service provision agreement that includes a clause
+  requiring the client to notify the broker of their intention to cancel the agreement after the
+  expiration date is:"
+options:
+  - The clause is permissible if the client agrees
+  - The clause is prohibited under this rule
+  - The clause is required for enforceability
+  - The clause is permissible only if the broker provides a copy
+key: B
+explanation: The rule explicitly states that a service provision agreement must not contain a
+  provision requiring the party signing the agreement to notify the broker of the party's intention
+  to cancel upon or after the expiration date. Therefore, such a clause is prohibited regardless of
+  client agreement or broker provision of a copy. The distractor suggesting permissibility misstates
+  the rule's prohibition.
+citation:
+  source: Mich. Admin. Code R § 339.22305(2)
+  url: null
+  quoted_text: must not contain a provision requiring the party signing the agreement to notify the
+    broker of the party's intention to cancel the agreement upon or after the expiration date.
+  secondary: []
+terms:
+  - service provision agreement
+  - expiration date
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

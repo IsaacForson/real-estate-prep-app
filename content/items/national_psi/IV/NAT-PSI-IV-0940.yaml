@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0940
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A borrower consummates a hybrid adjustable rate mortgage on January 1, 2024. The fixed
+  introductory period is five years, so the interest rate will adjust on January 1, 2029. According
+  to TILA §1638a(b), during which period must the creditor provide the written notice of reset?
+options:
+  - During the 1-month period that ends 6 months before the adjustment date
+  - During the 6-month period that ends 1 month before the adjustment date
+  - During the 1-month period that begins 6 months before the adjustment date
+  - During the 6-month period that begins 1 month before the adjustment date
+key: A
+explanation: Under 15 U.S.C. § 1638a(b), the creditor must give the written reset notice during the
+  one‑month period that ends six months before the interest rate adjusts. The other answer choices
+  describe periods that either start at the wrong time or end at the wrong time, so they do not
+  satisfy the statute’s requirement.
+citation:
+  source: 15 U.S.C. § 1638a(b)
+  url: null
+  quoted_text: "During the 1-month period that ends 6 months before the date on which the interest
+    rate in effect during the introductory period of a hybrid adjustable rate mortgage adjusts or
+    resets to a variable interest rate or, in the case of such an adjustment or resetting that
+    occurs within the first 6 months after consummation of such loan, at consummation, the creditor
+    or servicer of such loan shall provide a written notice, separate and distinct from all other
+    correspondence to the consumer, that includes the following:"
+  secondary: []
+terms:
+  - hybrid adjustable rate mortgage
+  - notice of reset
+  - adjustment date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

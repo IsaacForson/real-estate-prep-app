@@ -1,0 +1,40 @@
+id: NAT-PSI-IV-0925
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor obtains a second appraisal as required by TILA §1639h(b)(2)(A) for a higher-risk
+  mortgage and then charges the applicant for that second appraisal. What does TILA §1639h(b)(2)(B)
+  require regarding the cost of that second appraisal?
+options:
+  - The creditor may not charge the applicant; the creditor must bear the cost
+  - The creditor may charge the applicant, but the cost cannot exceed $500
+  - The creditor must require the applicant to pay half the cost upfront
+  - The creditor may charge the applicant only if the loan is subordinate
+key: A
+explanation: The statute explicitly says the cost of any second appraisal required under
+  subparagraph (A) may not be charged to the applicant, meaning the creditor must absorb the cost.
+  Allowing any charge to the applicant violates this prohibition.
+citation:
+  source: 15 U.S.C. § 1639h(b)(2)(B)
+  url: null
+  quoted_text: The cost of any second appraisal required under subparagraph (A) may not be charged to
+    the applicant.
+  secondary: []
+terms:
+  - second appraisal
+  - cost
+  - applicant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

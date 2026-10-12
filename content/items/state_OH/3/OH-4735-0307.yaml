@@ -1,0 +1,47 @@
+id: OH-4735-0307
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A provider submits a new 3‑credit‑hour continuing education course offering for 20 attendees
+  twenty‑two days before the course date. What penalty must the provider pay to obtain a waiver of
+  the forty‑five day notification requirement under Ohio Adm. Code 1301:5-7-06(B)(1)?
+options:
+  - $60.00
+  - $90.00
+  - $120.00
+  - $150.00
+key: C
+explanation: The penalty is two dollars per credit hour per attendee for a new course offering
+  submitted less than 45 days but not less than 15 days prior; 22 days falls in that range, so $2 ×
+  3 × 20 = $120.00.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-7 — Ohio Administrative Code Chapter 1301:5-7 — Real Estate
+    Division: Continuing Education / Miscellaneous, official Ohio Laws chapter page read via
+    Internet Archive capture of 2026-03-09 Rule 1301:5-7-06(B)(1)"
+  url: null
+  quoted_text: "(1) New continuing education course offering submitted less than forty-five days prior
+    to the offering date, but not less than fifteen days prior to the offering: two dollars per
+    credit hour per attendee;"
+  secondary: []
+math:
+  worked_solution: 2 × 3 = 6; 6 × 20 = 120; therefore the penalty is $120.00.
+  formulas:
+    - penalty = 2 × credit_hours × attendees
+  onscreen_calculator_only: false
+terms:
+  - penalty
+  - continuing education
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

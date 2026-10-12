@@ -1,0 +1,48 @@
+id: AZ-20-0399
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives $3,000 earnest money from Buyer A and $2,000 from Buyer B for two separate
+  properties. He deposits both amounts into a single trust fund account and later transfers $1,000
+  from Buyer A's funds to cover expenses for Buyer B's transaction without obtaining written consent
+  from either party. Under Arizona law, which violation does this constitute?
+options:
+  - Failure to maintain separate ledgers for each property as required
+  - Failure to limit personal monies deposits to $5,000 or less in a trust fund account
+  - Failure to remove interest earned on a trust fund account at least once every twelve months
+  - Failure to obtain written consent before transferring monies between accounts owned by different
+    persons
+key: D
+explanation: The statute prohibits transferring monies between accounts owned by different persons
+  unless each person provides written consent. The broker's transfer of funds between Buyer A and
+  Buyer B without consent violates this rule. The distractor about failing to remove interest is
+  irrelevant because the scenario does not involve interest earnings.
+citation:
+  source: Ariz. Rev. Stat. § 32-2151 C.6
+  url: null
+  quoted_text: Transferring monies between accounts that are owned by different persons unless each
+    person consents in writing.
+  secondary: []
+math:
+  worked_solution: Total earnest money received = $3,000 + $2,000 = $5,000.
+  formulas:
+    - Addition
+  onscreen_calculator_only: false
+terms:
+  - trust fund
+  - consent
+  - monies
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

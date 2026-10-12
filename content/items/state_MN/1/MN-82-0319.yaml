@@ -1,0 +1,55 @@
+id: MN-82-0319
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Two joint tenants each suffer a $80,000 out-of-pocket loss from the same transaction involving
+  a licensee's fraudulent practice. Under Minn. Stat. § 82.86, Subd. 7, what is the maximum amount
+  the real estate education, research and recovery fund may pay for their combined claim?
+options:
+  - The fund may pay up to $80,000.
+  - The fund may pay up to $150,000.
+  - The fund may pay up to $160,000.
+  - The fund may pay up to $250,000.
+key: B
+explanation: The correct answer is $150,000 because Subdivision 7 treats joint tenants as a single
+  claimant, so the statutory limit of $150,000 per claimant per transaction applies to the combined
+  loss. The $80,000 choice assumes each tenant is a separate claimant, which the statute does not
+  allow.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.86, Subd. 7
+  url: null
+  quoted_text: For purposes of this section, persons who are joint tenants or tenants in common are
+    deemed to be a single claimant.
+  secondary: []
+math:
+  worked_solution: >-
+    1. Compute total loss: $80,000 × 2 = $160,000.
+
+    2. Statutory cap per claimant per transaction: $150,000.
+
+    3. Joint tenants are deemed a single claimant, so the cap applies to the combined claim.
+
+    4. Maximum fund payment is the lesser of total loss and the cap:
+    min($160,000,$150,000) = $150,000.
+  formulas:
+    - Total Loss = loss per tenant × number of tenants
+    - Maximum Recovery = min(Total Loss, Statutory Cap)
+  onscreen_calculator_only: false
+terms:
+  - joint tenant
+  - claimant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

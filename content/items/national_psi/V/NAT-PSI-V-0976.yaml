@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0976
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer sees a newspaper advertisement offering a house and sends a signed purchase agreement
+  to the seller. The seller does not respond. Which statement best describes the legal situation?
+options:
+  - A contract is formed because the advertisement was an offer.
+  - No contract exists because the advertisement was merely an invitation to make offers.
+  - A contract exists if the buyer's agreement is considered acceptance.
+  - The seller is bound to sell because the buyer's offer was communicated.
+key: B
+explanation: An advertisement is ordinarily an invitation to make offers, not an offer itself. Thus
+  the buyer's signed agreement is an offer, but no contract exists until the seller accepts. The
+  distractor that treats the advertisement as an offer confuses invitation with offer.
+citation:
+  source: REP Ref. Contracts § 3.1 Requirements of an offer
+  url: null
+  quoted_text: An advertisement or listing is ordinarily an invitation to make offers, not an offer
+    itself; the buyer who submits a purchase agreement is the offeror, and the seller becomes the
+    offeree.
+  secondary: []
+terms:
+  - advertisement
+  - offer
+  - invitation
+  - offeree
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

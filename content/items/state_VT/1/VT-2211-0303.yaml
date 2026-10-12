@@ -1,0 +1,43 @@
+id: VT-2211-0303
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant submits a license application accompanied by a personal check for the fee. The
+  check is later returned by the bank for insufficient funds. Under 3 V.S.A. § 129(a)(11), how must
+  the Office treat the application?
+options:
+  - The Office must automatically deny the application due to financial irresponsibility
+  - The Office must waive the fee and proceed with the application
+  - The Office must process the application normally and notify the applicant to resubmit payment
+  - The Office must treat the application as incomplete and not proceed until a valid payment is
+    received
+key: D
+explanation: The rule provides that an application submitted with a check subsequently returned for
+  insufficient funds must be treated as incomplete. Consequently, the Office must not proceed with
+  the application until a valid payment is received. The distractor suggesting normal processing
+  ignores the incompleteness requirement, while the distractors proposing denial or fee waiver add
+  actions not authorized by this provision.
+citation:
+  source: "### 3 V.S.A. ch. 5 — 3 V.S.A. Chapter 5 — Secretary of State (Subchapter 3: Office of
+    Professional Regulation, incl. § 129a Unprofessional conduct) — § 129 § 129(a)(11)"
+  url: null
+  quoted_text: Treat as incomplete any license application submitted with a check subsequently
+    returned for insufficient funds
+  secondary: []
+terms:
+  - insufficient funds
+  - application incomplete
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

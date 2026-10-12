@@ -1,0 +1,49 @@
+id: GA-1-0131
+jurisdiction: GA
+bank: state_GA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a purchase agreement and states the earnest money deposit as $5,000 when
+  the actual amount deposited is $3,000. According to Georgia Real Estate Commission rules, what is
+  the licensee doing?
+options:
+  - The licensee is violating the prohibition against falsifying transaction documents.
+  - The licensee is allowed to do so if the amount is disclosed later in the transaction.
+  - The licensee is making a permissible estimate of the earnest money amount.
+  - The licensee is acting acceptably if the buyer agrees to the stated amount.
+key: A
+explanation: The rule prohibits representing an amount other than the true and actual earnest money,
+  security deposit, or other trust funds. Stating an incorrect earnest money amount constitutes
+  falsification of a transaction document. Disclosing later or obtaining buyer agreement does not
+  cure the prohibition. See Ga. Comp. R. & Regs. § 520-1-.10.
+citation:
+  source: Ga. Comp. R. & Regs. ch. 520-1 — Ga. Comp. R. & Regs. Chapter 520-1 — Licensure and
+    Brokerage (Georgia Real Estate Commission rules), official Georgia Secretary of State Rules &
+    Regulations site, fetched live — § 520-1-.10
+  url: null
+  quoted_text: an amount other than the true and actual earnest money, security deposit, or other
+    trust funds or that such trust funds have been tendered in any form other than its true and
+    actual form;
+  secondary: []
+math:
+  worked_solution: The licensee stated $5,000 but the actual deposit is $3,000. The overstatement is
+    $5,000 - $3,000 = $2,000.
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - earnest
+  - falsification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

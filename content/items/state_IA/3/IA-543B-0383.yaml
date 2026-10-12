@@ -1,0 +1,50 @@
+id: IA-543B-0383
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An unlicensed individual assists a buyer in negotiating the purchase of a residential property
+  and receives a fee for this service. The property sells for $250,000. Under Iowa Code §543B.34(3),
+  what is the maximum civil penalty that may be imposed?
+options:
+  - $10,000
+  - $20,000
+  - $25,000
+  - $30,000
+key: C
+explanation: Under Iowa Code §543B.34(3), the civil penalty is the greater of $10,000 or 10% of the
+  sale price. For a $250,000 sale, 10% equals $25,000, which is greater than $10,000, so the maximum
+  penalty is $25,000. An amount of $20,000 is incorrect because it is less than 10% of the sale
+  price and not the greater amount.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.34(3)
+  url: null
+  quoted_text: shall impose a civil penalty of up to the greater of ten thousand dollars or ten
+    percent of the real estate sale price.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Calculate 10% of the sale price: 0.10 × $250,000 = $25,000.
+    Step 2: Compare this to the fixed amount: $25,000 > $10,000.
+    Step 3: The greater amount is $25,000, which is the maximum civil penalty.
+  formulas:
+    - Percentage = (percent/100) × amount
+    - Maximum penalty = max($10,000, 10% × sale price)
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - unlicensed
+  - sale price
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

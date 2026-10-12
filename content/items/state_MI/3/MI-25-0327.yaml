@@ -1,0 +1,54 @@
+id: MI-25-0327
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property owner enters into a right-to-list home sale agreement with a broker. The broker
+  paid the owner $5,000 as initial consideration. The agreement allows the owner to terminate early
+  by paying the broker the initial consideration plus 6% annual interest from the date the broker
+  provided the consideration. Six months later, the owner wishes to terminate. What is the maximum
+  amount the owner may pay to exercise the early termination option under Mich. Comp. Laws §
+  339.2512g(1)(d)(i)?
+options:
+  - The owner may pay $5,300.
+  - The owner may pay $5,600.
+  - The owner may pay $5,000.
+  - The owner may pay $5,150.
+key: D
+explanation: The law limits the early termination payment to the initial consideration plus 6% per
+  annum interest from the date the broker paid the consideration to the date of termination. Six
+  months is half a year, so interest is $5,000 × 0.06 × 0.5 = $150, making the maximum $5,150. The
+  option stating $5,000 omits interest, while the options stating $5,300 and $5,600 overstate the
+  interest amount.
+citation:
+  source: Mich. Comp. Laws § 339.2512g(1)(d)(i)
+  url: null
+  quoted_text: An option for the owner to terminate the agreement before its expiration date for an
+    amount of consideration payable to the real estate broker that is not more than the initial
+    consideration the broker paid to the owner with interest of 6% per annum that starts from the
+    date the broker provided the initial consideration through the date that the owner terminated
+    the agreement.
+  secondary: []
+math:
+  worked_solution: Interest = $5,000 × 0.06 × (6/12) = $5,000 × 0.06 × 0.5 = $150. Total = $5,000 + $150 = $5,150.
+  formulas:
+    - Interest = Principal × Rate × Time
+  onscreen_calculator_only: false
+terms:
+  - right-to-list
+  - early termination
+  - interest
+  - consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,41 @@
+id: IL-2000-0383
+jurisdiction: IL
+bank: state_IL
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: If a sponsoring broker keeps records electronically, what is the minimum frequency at which
+  the broker must back up those records to protect the data?
+options:
+  - Every week
+  - Every year
+  - Every month
+  - Every quarter
+key: C
+explanation: The rule requires electronic records to be backed up at reasonable intervals but no
+  less than once a month to safeguard the data. Therefore, the minimum frequency is monthly. The
+  option stating weekly is more frequent than required, while quarterly and yearly intervals would
+  fail to meet the monthly minimum.
+citation:
+  source: 68 Ill. Adm. Code 1450 — 68 Ill. Adm. Code Part 1450 — Real Estate License Act of 2000 rules
+    (entire part; official ilga.gov JCAR page read via Internet Archive capture of 2025-08-20
+    because ilga.gov refuses connections from this environment) — § 1450.755
+  url: null
+  quoted_text: If the records are kept electronically, the sponsoring broker shall ensure that a
+    back-up is made at reasonable intervals, but at least once a month, so as to protect the data.
+  secondary: []
+terms:
+  - backup
+  - recordkeeping
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

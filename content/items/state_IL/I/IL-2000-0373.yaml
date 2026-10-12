@@ -1,0 +1,51 @@
+id: IL-2000-0373
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A limited liability company seeks a broker license. One member actively participates in real
+  estate activities and holds only a residential leasing agent license. The other member does not
+  participate in real estate activities and has no disciplinary history. According to the Act, what
+  is the result for the LLC’s license application?
+options:
+  - The LLC may be granted a license because the participating member holds a real estate license.
+  - The LLC may be granted a license if the nonparticipating member submits an affidavit of
+    nonparticipation.
+  - The LLC may not be granted a license because the participating member does not hold a managing
+    broker or broker license.
+  - The LLC may be granted a license after the participating member completes 15 hours of classroom
+    instruction.
+key: C
+explanation: Section 5-15(d) requires that every member or manager who actively participates in the
+  real estate activities of an LLC must hold a managing broker or broker license. Holding only a
+  residential leasing agent license does not satisfy this requirement, so the LLC cannot be
+  licensed.
+citation:
+  source: 225 ILCS 454 § 5-15(d)
+  url: null
+  quoted_text: No limited liability company shall be granted a license or engage in the business or
+    serve in the capacity, either directly or indirectly, of a broker unless every member or manager
+    in the limited liability company that actively participates in the real estate activities of the
+    limited liability company holds a license as a managing broker or broker and unless every other
+    member and employee who acts as a managing broker, broker, or residential leasing agent for the
+    limited liability company holds a license as a managing broker, broker, or residential leasing
+    agent.
+  secondary: []
+terms:
+  - limited liability company
+  - managing broker
+  - broker
+  - residential leasing agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

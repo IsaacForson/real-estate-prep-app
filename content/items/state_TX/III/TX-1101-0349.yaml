@@ -1,0 +1,47 @@
+id: TX-1101-0349
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A license holder knows that a seller has an exclusive listing agreement with another broker
+  but still negotiates a purchase agreement directly with the seller. Under Tex. Occ. Code §
+  1101.652(b)(22), this action is considered:"
+options:
+  - Considered permissible if the exclusive agency is disclosed
+  - Considered permissible if the seller starts the negotiation
+  - Considered prohibited because it ignores an existing exclusive agency
+  - Considered permissible if the other broker consents in writing
+key: C
+explanation: The statute forbids negotiating with an owner, landlord, buyer, or tenant when the
+  license holder knows that person is bound by an outstanding written contract granting exclusive
+  agency to another broker. Because the license holder proceeded with negotiations despite knowing
+  about the exclusive listing, the conduct is prohibited. The option suggesting permissibility if
+  the exclusive agency is disclosed is incorrect because disclosure does not negate the prohibition.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.652(b)(22)
+  url: null
+  quoted_text: (22) negotiates or attempts to negotiate the sale, exchange, or lease of real property
+    with an owner, landlord, buyer, or tenant with knowledge that that person is a party to an
+    outstanding written contract that grants exclusive agency to another broker in connection with
+    the transaction;
+  secondary: []
+terms:
+  - exclusive
+  - agency
+  - negotiates
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

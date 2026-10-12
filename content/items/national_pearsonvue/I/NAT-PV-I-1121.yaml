@@ -1,0 +1,47 @@
+id: NAT-PV-I-1121
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A parcel described by metes and bounds forms a rectangle measuring 500 feet in width and 100
+  feet in depth. What is the area of the parcel in acres?
+options:
+  - 1.25 acres
+  - 1.05 acres
+  - 1.35 acres
+  - 1.15 acres
+key: D
+explanation: 'First, compute the area in square feet: 500 ft × 100 ft = 50,000 sq ft. Then convert
+  to acres using the standard conversion 1 acre = 43,560 sq ft: 50,000 ÷ 43,560 ≈ 1.147 acres, which
+  rounds to 1.15 acres. The distractor "1.05 acres" would result from using an incorrect conversion
+  factor or miscalculating the square footage.'
+citation:
+  source: REP Ref. Property & Land Use § 3.2
+  url: null
+  quoted_text: "The parcel is a 300-by-200-foot rectangle: 60,000 square feet / 43,560 = 1.38 acres."
+  secondary: []
+math:
+  worked_solution: |-
+    Area in square feet = width × depth = 500 ft × 100 ft = 50,000 sq ft
+    Area in acres = square feet ÷ 43,560 sq ft/acre = 50,000 ÷ 43,560 = 1.147... acres
+    Rounded to two decimal places = 1.15 acres
+  formulas:
+    - Area = width × depth
+    - Acres = square feet ÷ 43,560
+  onscreen_calculator_only: false
+terms:
+  - metes and bounds
+  - acre
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

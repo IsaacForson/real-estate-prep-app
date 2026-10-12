@@ -1,0 +1,40 @@
+id: WY-101-0287
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wyoming's Real Estate License Act, what is the definition of an 'active license'?
+options:
+  - A license that has expired but may be renewed during the grace period
+  - A real estate license that has been inactivated, suspended, or revoked
+  - A real estate license that has not been inactivated, suspended, or revoked
+  - A license that authorizes the holder to act as a responsible broker only
+key: C
+explanation: Wyo. Stat. Ann. § 33-28-102(b)(i) defines an active license as a real estate license
+  that has not been inactivated, suspended, or revoked. The option stating that an active license is
+  one that has expired but may be renewed during the grace period is incorrect because an expired
+  license is not active. The option stating that an active license is one that has been inactivated,
+  suspended, or revoked describes the opposite condition. The option stating that an active license
+  authorizes the holder to act as a responsible broker only incorrectly limits the license’s
+  authority rather than describing its status.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-102(b)(i)
+  url: null
+  quoted_text: '"Active license" means a real estate license that has not been inactivated, suspended
+    or revoked;'
+  secondary: []
+terms:
+  - active license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,40 @@
+id: DE-2901-0365
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker keeps escrow account records at his home office rather than at the broker’s approved
+  place of business. Under Delaware law, is this permissible?
+options:
+  - No, the records may be kept at home if they are also stored electronically
+  - No, the broker may keep records at home provided the office is supervised
+  - No, the records can be kept at home if the broker visits daily
+  - No, the records must be accessible at the approved place of business
+key: D
+explanation: The law requires the broker to have all books and records accessible at the approved
+  place of business for inspection or audit. Keeping them elsewhere violates this requirement.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2923(e)
+  url: null
+  quoted_text: The broker shall have accessible at the broker’s approved place of business, all books,
+    records, written agreements and other necessary documents to determine the adequacy of the
+    escrow account or accounts. These accounts and records shall be opened to inspection or audit by
+    the Commission and its duly authorized agents at the broker’s approved place of business during
+    regular business hours.
+  secondary: []
+terms:
+  - escrow records
+  - approved place of business
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

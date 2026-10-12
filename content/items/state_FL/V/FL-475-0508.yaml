@@ -1,0 +1,47 @@
+id: FL-475-0508
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate who lives in Georgia but holds a Florida real estate license does not notify
+  the Florida Real Estate Commission of her change to nonresident status for 70 days. Under Florida
+  Statutes, what is the consequence of this failure to notify?
+options:
+  - The sales associate has committed a violation of the license law.
+  - The sales associate must pay a one hundred dollar fine.
+  - The sales associate’s license is automatically revoked.
+  - The sales associate must complete additional continuing education.
+key: A
+explanation: The statute states that failure to notify the commission of a change to nonresident
+  status within sixty days is a violation of the license law, subject to penalties. The distractor
+  claiming automatic revocation is incorrect because the statute only declares a violation;
+  revocation would require further disciplinary action.
+citation:
+  source: Fla. Stat. ch. 475 § 475.180(2)(a)
+  url: null
+  quoted_text: Failure to notify and comply is a violation of the license law, subject to the
+    penalties in s. 475.25.
+  secondary: []
+math:
+  worked_solution: "The associate failed to notify for 70 days. The required notification period is 60
+    days. Subtract: 70 - 60 = 10 days overdue."
+  formulas:
+    - Subtraction
+  onscreen_calculator_only: false
+terms:
+  - nonresident
+  - notification
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

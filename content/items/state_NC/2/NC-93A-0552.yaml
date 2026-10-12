@@ -1,0 +1,42 @@
+id: NC-93A-0552
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "2"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker deposits earnest money into an interest-bearing trust account after obtaining written
+  authorization from the principals that the deposit may earn interest and that any interest will be
+  disbursed to them. Under N.C. Gen. Stat. § 93A-6(a)(12), is this allowed?
+options:
+  - No, unless the broker also obtains separate Commission approval for the interest-bearing account.
+  - Yes, because the principals authorized in writing and provided for disbursement of interest.
+  - Yes, only if the bank is federally insured and the broker notifies the Commission.
+  - No, because trust accounts may not bear interest under the statute.
+key: B
+explanation: The statute prohibits trust accounts from bearing interest unless the principals
+  authorize in writing and provide for disbursement of the interest accrued. When those conditions
+  are met, an interest-bearing account is permissible. The other options either ignore the written
+  authorization requirement or add irrelevant conditions.
+citation:
+  source: N.C. Gen. Stat. § 93A-6(a)(12)
+  url: null
+  quoted_text: provided, these accounts shall not bear interest unless the principals authorize in
+    writing the deposit be made in an interest bearing account and also provide for the disbursement
+    of the interest accrued.
+  secondary: []
+terms:
+  - trust account
+  - interest
+  - written authorization
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

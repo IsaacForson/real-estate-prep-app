@@ -1,0 +1,61 @@
+id: DC-198-0376
+jurisdiction: DC
+bank: state_DC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to DCMR Title 17, Chapter 26, what must an online disclosure contain?
+options:
+  - a notice that contains the firm's licensed name, the city and state in which the firm's main
+    office is located, and the jurisdiction in which the firm holds a license or advertising that
+    contains the licensee's name, the name of the firm with which the licensee is affiliated, the
+    city and state in which the licensee's office is located, and the jurisdiction in which the firm
+    does not hold a license
+  - a notice that contains the firm's licensed name, the city and state in which the firm's main
+    office is located, and the jurisdiction in which the firm holds a license or advertising that
+    contains the licensee's name, the name of the firm with which the licensee is affiliated, the
+    city and state in which the licensee's office is located, and the jurisdiction in which the
+    licensee holds a license
+  - a notice that contains the firm's licensed name, the city and state in which the firm's main
+    office is located, and the jurisdiction in which the licensee holds a license or advertising
+    that contains the licensee's name, the name of the firm with which the licensee is affiliated,
+    the city and state in which the licensee's office is located, and the jurisdiction in which the
+    firm holds a license
+  - a notice that contains the firm's licensed name, the city and state in which the firm's main
+    office is located, and the jurisdiction in which the firm holds a license and advertising that
+    contains the licensee's name, the name of the firm with which the licensee is affiliated, the
+    city and state in which the licensee's office is located, and the jurisdiction in which the
+    licensee holds a license
+key: B
+explanation: The definition of “On-line Disclosure” in 17 DCMR § 2699.1 states that it is a notice
+  containing either the firm’s licensed name, city and state of its main office, and jurisdiction
+  where the firm holds a license, or advertising that contains the licensee’s name, the affiliated
+  firm’s name, city and state of the licensee’s office, and jurisdiction where the licensee holds a
+  license. The option that uses “and” between the two parts incorrectly implies both parts are
+  required, which the definition does not mandate.
+citation:
+  source: 17 DCMR ch. 26, § 2699.1
+  url: null
+  quoted_text: On-line Disclosure - a notice that contains the firm's licensed name, the city and
+    state in which the firm's main office is located, and the jurisdiction in which the firm holds a
+    license or advertising that contains the licensee's name, the name of the firm with which the
+    licensee is affiliated, the city and state in which the licensee's office is located, and the
+    jurisdiction in which the licensee holds a license.
+  secondary: []
+terms:
+  - online disclosure
+  - firm
+  - licensee
+  - jurisdiction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

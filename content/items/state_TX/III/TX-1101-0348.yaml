@@ -1,0 +1,49 @@
+id: TX-1101-0348
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A license holder representing a buyer receives a $500 rebate from a title company for
+  referring closing business but does not disclose it to the buyer. Under Tex. Occ. Code §
+  1101.652(b)(13), this action is considered:"
+options:
+  - Considered permissible if the buyer agrees verbally
+  - Considered permissible if disclosed after closing
+  - Considered permissible if the rebate is under $600
+  - Considered prohibited because it is an undisclosed rebate
+key: D
+explanation: Under Tex. Occ. Code § 1101.652(b)(13), a license holder may not accept, receive, or
+  charge an undisclosed commission, rebate, or direct profit on an expenditure made for a principal.
+  Because the license holder kept the $500 rebate secret from the buyer, the rebate is undisclosed
+  and therefore prohibited. The idea that the rebate could be permissible if disclosed after closing
+  is irrelevant because the rebate was never disclosed.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.652(b)(13)
+  url: null
+  quoted_text: (13) accepts, receives, or charges an undisclosed commission, rebate, or direct profit
+    on an expenditure made for a principal;
+  secondary: []
+math:
+  worked_solution: No calculation is needed; the rebate amount is given as $500.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - undisclosed
+  - commission
+  - rebate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,43 @@
+id: MT-51-0186
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's independent contractor subagent tells a buyer that the property includes a garage
+  when it does not. The broker knew the subagent was making this false statement before it was made.
+  Under Montana law, is the broker liable for the misrepresentation?
+options:
+  - The broker is liable because the broker had actual knowledge of the misrepresentation
+  - The broker is not liable because the subagent is an independent contractor
+  - The broker is liable if the misrepresentation came from the broker
+  - The broker is not liable because the buyer suffered no harm
+key: A
+explanation: The statute makes a broker liable for a subagent's misrepresentation when the broker
+  has actual knowledge of the misrepresentation, regardless of the subagent's employee or
+  independent contractor status. Here the broker's actual knowledge triggers liability. The
+  distractor that claims no liability because the subagent is an independent contractor is
+  incorrect; independent contractor status does not exempt the broker when the broker knows of the
+  false statement.
+citation:
+  source: Mont. Code Ann. § 37-51-315(2)(a)
+  url: null
+  quoted_text: (a) the broker has actual knowledge of the misrepresentation;
+  secondary: []
+terms:
+  - vicarious liability
+  - misrepresentation
+  - broker
+  - subagent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

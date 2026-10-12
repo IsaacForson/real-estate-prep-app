@@ -1,0 +1,47 @@
+id: NJ-1-0310
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee prepares a deed for the sale of a residential property where the transfer is
+  subject to the realty transfer fee. The deed contains no statement of the true consideration and
+  no affidavit is attached. According to N.J.S.A. 46:15-6, what is the consequence?
+options:
+  - The deed shall not be recorded in the office of the county recording officer
+  - The county recording officer may impose a fine but still record the deed
+  - The deed may still be recorded if the parties agree to pay the fee later
+  - The county recording officer must return the deed for correction before recording
+key: A
+explanation: The statute provides that no deed evidencing transfer of title shall be recorded unless
+  it satisfies the requirements, including a statement of true consideration when subject to the
+  fee. Without that statement, the deed fails the requirement and cannot be recorded.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 15 — New Jersey Statutes Title 46, Chapter 15 — Realty Transfer
+    Fee (N.J.S.A. 46:15-1 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 — § 46:15-6
+  url: null
+  quoted_text: "no deed evidencing transfer of title to real property shall be recorded in the office
+    of any county recording officer unless it satisfies the following requirements: a. If the
+    transfer is subject to any fee established under section 3 of P.L.1968, c.49 (C.46:15-7) or
+    section 2 of P.L.2003, c.113 (C.46:15-7.1), a statement of the true consideration for the
+    transfer shall be contained in the deed, the acknowledgment, the proof of the execution, or an
+    appended affidavit by one of the parties to the deed or that party's legal representative."
+  secondary: []
+terms:
+  - deed
+  - recording
+  - true consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

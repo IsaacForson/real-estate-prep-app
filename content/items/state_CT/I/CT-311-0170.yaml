@@ -1,0 +1,39 @@
+id: CT-311-0170
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The commission's chairman decides to hold a meeting in Stamford, outside Hartford. Is this
+  permissible under Connecticut law?
+options:
+  - Yes, because the chairman may set the meeting location outside Hartford
+  - Yes, because the commission may meet only in Hartford under state law
+  - Yes, because the Commissioner must approve any meeting held outside Hartford
+  - Yes, because a two-thirds vote of the commission allows meetings outside Hartford
+key: A
+explanation: The statute expressly allows the chairman to determine places outside Hartford for
+  commission meetings, making the chairman’s decision permissible. The claim that the Commissioner
+  must approve outside meetings is incorrect because the statute places that authority solely with
+  the chairman.
+citation:
+  source: Conn. Gen. Stat. § 20-311b(e)
+  url: null
+  quoted_text: or at such places outside of Hartford as shall be determined by the chairman of the commission
+  secondary: []
+terms:
+  - commission
+  - chairman
+  - meeting location
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

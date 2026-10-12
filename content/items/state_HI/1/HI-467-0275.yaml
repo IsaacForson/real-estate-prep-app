@@ -1,0 +1,49 @@
+id: HI-467-0275
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer receives the seller's disclosure statement on June 1. On June 18 the buyer decides to
+  rescind the purchase contract but does not deliver written notification of rescission to the
+  seller until June 20. What is the effect of the buyer's delay under Haw. Rev. Stat. § 508D-5(b)?
+options:
+  - The contract is terminated automatically and the buyer may seek damages for nondisclosure.
+  - The seller is required to refund the buyer’s earnest money deposit without delay.
+  - The rescission is ineffective and the disclosure statement is considered accepted under the
+    statute.
+  - The rescission remains valid because the buyer made the decision within the fifteen‑day review
+    period.
+key: C
+explanation: "Under Haw. Rev. Stat. § 508D-5(b), a buyer who decides to rescind must deliver written
+  notice to the seller within the fifteen‑day review period. If the notice is not delivered within
+  that period, the disclosure statement is deemed accepted and the rescission is ineffective. The
+  buyer’s decision to rescind on June 18, with notice delivered on June 20, misses the deadline, so
+  the disclosure statement is considered accepted and the contract remains in force. The other
+  answer choices are incorrect: one assumes that the decision alone terminates the contract, another
+  imposes a refund requirement not provided by the statute, and the last claims the rescission
+  remains valid despite the late notice."
+citation:
+  source: Haw. Rev. Stat. ch. 508D — Hawaii Revised Statutes Chapter 508D - Mandatory Seller
+    Disclosures in Real Estate Transactions (data.capitol.hawaii.gov, section pages concatenated) —
+    § 508D-5(b)
+  url: null
+  quoted_text: Failure to deliver the written notification to the seller within the fifteen-day period
+    shall be deemed an acceptance of the disclosure statement.
+  secondary: []
+terms:
+  - rescission
+  - disclosure
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

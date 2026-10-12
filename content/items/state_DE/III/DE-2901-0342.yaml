@@ -1,0 +1,49 @@
+id: DE-2901-0342
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property manager licensee collects a $1,200 security deposit from a tenant and deposits it
+  into the brokerage’s trust account. The tenant moves out three months later, but the licensee does
+  not return the deposit or provide an accounting until 60 days after move‑out. Under § 2912(a)(4),
+  is the licensee subject to disciplinary action?
+options:
+  - Yes, because the licensee failed to account for or remit the tenant’s money within a reasonable
+    time
+  - No, because the licensee had no duty to return the deposit until the tenant demanded it
+  - No, because the security deposit was held in a trust account, which satisfies the statute
+  - Yes, because the licensee commingled the deposit with operating funds
+key: A
+explanation: Under Del. Code Ann. tit. 24, ch. 29 § 2912(a)(4), a licensee must account for or remit
+  others’ money within a reasonable time; failing to do so for 60 days after move‑out is
+  unreasonable and thus grounds for discipline. The other options incorrectly claim that holding
+  funds in a trust account satisfies the duty, allege commingling not present, or delay the duty
+  until tenant demand.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2912(a)(4)
+  url: null
+  quoted_text: Has failed, within a reasonable time, to account for or to remit any money coming into
+    the licensee’s possession which belongs to others
+  secondary: []
+math:
+  worked_solution: "Identify the security deposit amount: $1,200."
+  formulas:
+    - Deposit = $1,200
+  onscreen_calculator_only: false
+terms:
+  - security deposit
+  - trust account
+  - accounting
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,40 @@
+id: NY-443-0177
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "8"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A salesperson has completed 78 hours of prelicensing instruction, including 3 hours of
+  Valuation Process and Pricing Properties. According to the regulations, is the salesperson
+  eligible to sit for the licensing examination?
+options:
+  - The salesperson is eligible because the total hours exceed the required 77 hours of instruction.
+  - The salesperson is eligible because the valuation requirement is satisfied.
+  - The salesperson is not eligible because the valuation hours are below the required three.
+  - The salesperson is not eligible because the total instruction hours are insufficient.
+key: D
+explanation: The salesperson must complete 80 total hours, with at least 3 hours in valuation.
+  Having 78 total hours leaves a deficit of 2 hours, making the candidate ineligible despite meeting
+  the valuation requirement. The distractor claiming eligibility because total hours exceed 77
+  ignores the 80‑hour total requirement.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 — 19 NYCRR Parts 175 to 179 — Department of State real estate
+    regulations — NY DOS booklet, March 2026 — § 176.3
+  url: null
+  quoted_text: Valuation Process and Pricing Properties   3
+  secondary: []
+terms:
+  - eligible
+  - hours
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

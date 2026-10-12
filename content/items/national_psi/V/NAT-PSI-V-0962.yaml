@@ -1,0 +1,46 @@
+id: NAT-PSI-V-0962
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "After a purchase agreement falls through, the buyer and seller each claim the earnest money.
+  The broker, without obtaining a written agreement or court order, releases the funds to the
+  seller. The broker's action is:"
+options:
+  - The broker's action is permissible if the broker believes the seller is entitled to the funds
+  - The broker's action is allowed after the broker holds the funds for 30 days
+  - The broker's action is required under state escrow rules for disputed deposits
+  - The broker's action is a violation because the broker may not simply decide who is entitled to
+    the deposit
+key: D
+explanation: When buyer and seller disagree about who is entitled to the deposit after a failed
+  transaction, a broker generally may not simply decide who gets the funds; instead, the money must
+  be held pending a written agreement of the parties, mediation, a court order, or a statutory
+  interpleader process. Releasing the earnest money to the seller without such proceedings violates
+  that rule. The idea that the broker may release the funds if he believes the seller is entitled
+  contradicts the prohibition on unilateral decisions.
+citation:
+  source: REP Ref. Contracts § 5.2
+  url: null
+  quoted_text: When buyer and seller disagree about who is entitled to the deposit after a failed
+    transaction, a broker generally may not simply decide; typical state procedures involve holding
+    the funds pending a written agreement of the parties, mediation, a court order, or a statutory
+    interpleader process.
+  secondary: []
+terms:
+  - earnest money
+  - broker
+  - dispute
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

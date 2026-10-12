@@ -1,0 +1,39 @@
+id: MA-87D-0438
+jurisdiction: MA
+bank: state_MA
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker closes a residential sale and provides the signed purchase and sale agreement to the
+  buyer only. Under M.G.L. c. 112, § 87AAA, is this permissible?
+options:
+  - It is permissible provided the agreement is recorded with the registry of deeds
+  - It is permissible because the buyer needs the document for financing
+  - It is permissible if the seller waives the right to receive a copy
+  - It is not permissible; both buyer and seller must receive a copy
+key: D
+explanation: The statute requires that a licensee give both the buyer and seller a copy of the
+  purchase and sale agreement; providing it to only one party violates this duty. A seller’s waiver
+  does not override the statutory requirement, and recording the deed does not satisfy the
+  copy‑delivery obligation.
+citation:
+  source: M.G.L. c. 112, § 87AAA
+  url: null
+  quoted_text: failed to give to both the buyer and seller a copy of the purchase and sale agreement
+  secondary: []
+terms:
+  - broker
+  - purchase and sale agreement
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

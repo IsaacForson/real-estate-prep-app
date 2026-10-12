@@ -1,0 +1,38 @@
+id: SC-57-0362
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives an administrative citation on June 1, 2025 and decides to appeal. What is
+  the last day the appeal can be filed to be timely?
+options:
+  - June 9, 2025
+  - June 10, 2025
+  - June 11, 2025
+  - June 12, 2025
+key: C
+explanation: The rule requires an appeal to be filed within ten days of receiving the citation.
+  Counting ten days from June 1, 2025 brings the deadline to June 11, 2025. June 10 would be only
+  nine days after receipt, while June 12 would be the eleventh day, exceeding the limit.
+citation:
+  source: S.C. Code Ann. § 40-57-725(D)
+  url: null
+  quoted_text: An individual or entity assessed administrative penalties may appeal those penalties to
+    the commission within ten days of receipt of the citation.
+  secondary: []
+terms:
+  - appeal deadline
+  - ten days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,51 @@
+id: SD-21A-0327
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives an administrative fine of $300 on April 1, 2025. Under SDCL 36-1C-5, what
+  is the last day to file a notice of appeal assuming no holidays?
+options:
+  - April 14, 2025
+  - April 21, 2025
+  - April 28, 2025
+  - May 5, 2025
+key: B
+explanation: SDCL 36-1C-5 requires that a notice of appeal be filed within twenty calendar days
+  after the fine is served. Starting from April 1, 2025 and counting twenty calendar days forward
+  gives April 21, 2025 as the final day to submit the notice of appeal.
+citation:
+  source: "S.D. Codified Laws chs. 36-1C, 43-15A, 43-15B, 43-32, 43-16, 43-4 (related real estate
+    statutes) — South Dakota Codified Laws: ch. 36-1C (Uniform Complaint Procedures), 43-15A
+    (Condominiums), 43-15B (Time-Share Estates), 43-32 (Lease of Real Property), 43-16 (Forcible
+    Entry and Detainer), 43-4 (Transfer of Property, incl. §§ 43-4-37 to 43-4-57 disclosure) (SD REC
+    law book, July 1, 2025) § 36-1C-5"
+  url: null
+  quoted_text: Any administrative fine issued under this section may be appealed by requesting a
+    contested case under chapter 1-26. Notice of appeal must be submitted to the administrator
+    within twenty calendar days of service of the fine.
+  secondary: []
+math:
+  worked_solution: "Start date: April 1, 2025. Add 20 calendar days: April 2 is day 1, April 3 day 2,
+    …, April 21 is day 20. Therefore, the last day to file is April 21, 2025."
+  formulas:
+    - end_date = start_date + n days
+  onscreen_calculator_only: false
+terms:
+  - appeal
+  - fine
+  - calendar days
+  - administrator
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

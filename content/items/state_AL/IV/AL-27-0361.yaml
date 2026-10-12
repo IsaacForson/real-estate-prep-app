@@ -1,0 +1,48 @@
+id: AL-27-0361
+jurisdiction: AL
+bank: state_AL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A vacation time-sharing licensee placed their license on inactive status on January 1, 2023.
+  Under Ala. Code § 34-27-1(m), assuming no further action, on what date will the license
+  automatically expire due to exceeding the maximum inactive period?
+options:
+  - January 2, 2025
+  - January 1, 2025
+  - February 2, 2025
+  - December 31, 2025
+key: A
+explanation: The license may remain inactive for up to 24 consecutive months; it expires the day
+  following that period. Starting January 1, 2023, the 24-month period ends January 1, 2025, so
+  expiration occurs on January 2, 2025. The distractor January 1, 2025 marks the end of the 24-month
+  period, not the expiration date.
+citation:
+  source: Ala. Code § 34-27-1 et seq. § 34-27-1(m)
+  url: null
+  quoted_text: Any license which has been on inactive status for longer than 24 consecutive months
+    shall automatically expire as of the day following the 24-month period.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: January 1, 2023
+    Add 24 months: January 1, 2025
+    Expiration date = day following = January 2, 2025
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - inactive status
+  - expiration
+  - months
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

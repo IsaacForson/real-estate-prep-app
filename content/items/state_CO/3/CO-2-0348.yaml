@@ -1,0 +1,44 @@
+id: CO-2-0348
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker is served via certified mail mailed on March 5. The broker signs for receipt on March
+  9, and the return receipt shows a signature date of March 8. When is service perfected under
+  Colorado law?
+options:
+  - March 10
+  - March 6
+  - March 9
+  - March 8
+key: D
+explanation: Service is perfected at the earliest of the receipt date, the return‑receipt date, or
+  five days after mailing. Here the return‑receipt date is March 8, which is earlier than the
+  receipt date (March 9) and five days after mailing (March 10). Thus service is perfected on March
+  8. The March 9 option reflects the receipt date, which is not the earliest.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. — Colorado Real Estate Manual 2026, Chapter 1 - Real
+    Estate Broker License Law (C.R.S. Title 12, Art. 10, Pts. 1-2 as compiled by the Division of
+    Real Estate) § 12-10-208(2)
+  url: null
+  quoted_text: "Service is perfected under this subsection (2) at the earliest of: (a) The date the
+    broker receives the process, notice, or demand; (b) The date shown on the return receipt, if
+    signed by or on behalf of the broker; or (c) Five days after mailing."
+  secondary: []
+terms:
+  - service
+  - mailing
+  - return receipt
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

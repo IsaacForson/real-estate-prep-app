@@ -1,0 +1,55 @@
+id: MN-82-0396
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee owes $600 in delinquent taxes to the state, has no payment agreement, and requests
+  a license renewal. What action must the commissioner take regarding the licensee's license
+  application under Minn. Stat. § 82.82 Subdivision 9(a)?
+options:
+  - To issue the license
+  - To deny the license
+  - To renew the license
+  - To suspend the license
+key: B
+explanation: Under Minn. Stat. § 82.82 Subdivision 9(a), the commissioner may not issue or renew a
+  license if the licensee owes $500 or more in delinquent taxes. Since the licensee owes $600 and
+  has no payment agreement, the commissioner must deny the license application. Renewing the license
+  would violate this prohibition.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.82 Subdivision 9(a)
+  url: null
+  quoted_text: the commissioner may not issue or renew a license if the commissioner of revenue
+    notifies the commissioner and the licensee or applicant for a license that the licensee or
+    applicant owes the state delinquent taxes in the amount of $500 or more
+  secondary: []
+math:
+  worked_solution: >-
+    1) Identify the statutory threshold for delinquent taxes: $500.
+
+    2) Note the licensee's delinquent tax amount: $600.
+
+    3) Compare the amount owed to the threshold: $600 ≥ $500, so the condition is satisfied.
+
+    4) Because the condition is met, the commissioner may not issue or renew the license; the
+    required action is to deny the license.
+  formulas:
+    - "Threshold comparison: owed ≥ $500 → deny"
+  onscreen_calculator_only: false
+terms:
+  - delinquent tax
+  - clearance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

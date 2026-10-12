@@ -1,0 +1,41 @@
+id: CO-2-0224
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a security deposit from a tenant on Wednesday, March 5. By what date must
+  the broker deposit the funds into the security deposit escrow account to comply with 4 CCR 725-1?
+options:
+  - March 6.
+  - March 10.
+  - March 11.
+  - March 12.
+key: C
+explanation: The rule requires deposit within five business days; counting March 5 as day one, the
+  fifth business day is March 11. March 10 is only four business days and would be non‑compliant.
+citation:
+  source: 4 Colo. Code Regs. § 725-1 (4 CCR 725-1) — 4 CCR 725-1 Rules Regarding Real Estate Brokers
+    (eff. 01/30/2026) § 5.7.A
+  url: null
+  quoted_text: All Money Belonging to Others received by a Brokerage Firm for Property Management must
+    be deposited in the Brokerage Firm’s appropriate Trust or Escrow Account no later than five (5)
+    business days following receipt of funds or mutual execution of a lease, whichever is later.
+  secondary: []
+terms:
+  - security deposit
+  - trust account
+  - deposit timing
+  - business days
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

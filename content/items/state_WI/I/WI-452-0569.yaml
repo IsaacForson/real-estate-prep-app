@@ -1,0 +1,41 @@
+id: WI-452-0569
+jurisdiction: WI
+bank: state_WI
+blueprint_node: I.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A married couple purchases a home in 1992. The Wisconsin Marital Property Act (ch. 766) does
+  **NOT** apply to the property. The deed lists them as husband and wife with no other language.
+  Under Wis. Stat. § 700.19(2), how do they hold title?
+options:
+  - As joint tenants with right of survivorship.
+  - As tenants in common with equal shares each.
+  - As tenants in common with unequal shares each.
+  - As community property with right of survivorship.
+key: A
+explanation: Because ch. 766 does NOT apply, subsection (2) governs and makes the husband and wife
+  joint tenants unless the deed expresses an intent to create a tenancy in common. No such intent is
+  present, so they hold as joint tenants. The distractor suggesting a tenancy in common with equal
+  shares mistakenly ignores the statutory default for married couples when subsection (2) applies.
+citation:
+  source: Wis. Stat. § 700.19(2)
+  url: null
+  quoted_text: This subsection applies to property acquired before January 1, 1986, and, if ch. 766
+    does not apply when the property is acquired, to property acquired on or after January 1, 1986.
+  secondary: []
+terms:
+  - joint tenancy
+  - husband and wife
+  - ch. 766
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

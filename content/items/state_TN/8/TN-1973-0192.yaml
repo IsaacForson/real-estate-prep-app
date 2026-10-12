@@ -1,0 +1,47 @@
+id: TN-1973-0192
+jurisdiction: TN
+bank: state_TN
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee includes both a physical street address and a post office box number in all
+  advertising and on their website, stating that the post office box is used for receiving mail.
+  Under Tenn. Comp. R. & Regs. 1260-02-.05, is this permissible?
+options:
+  - No, because use of a post office box as a business location is prohibited
+  - No, unless the licensee also maintains a physical office at the post office box location
+  - Yes, but only if the physical address is not listed and the post office box is used exclusively
+    for mailing
+  - Yes, because a post office box may be included in a business address for the purpose of
+    receiving mail
+key: D
+explanation: The rule prohibits using a post office box as a business location but allows including
+  a post office box in a business address for receiving mail. Since the licensee lists both
+  addresses and states the PO box is for mail, this is permissible. The statement that any use of a
+  post office box is prohibited incorrectly treats any PO box use as prohibited.
+citation:
+  source: "Tenn. Comp. R. & Regs. 1260-02 — Tenn. Comp. R. & Regs. ch. 1260-02 — Tennessee Real Estate
+    Commission rules: Rules of Conduct (rev. Sept. 2025), official Secretary of State PDF read via
+    Internet Archive capture of 2026-04-16 because publications.tnsosfiles.com returns 403 to
+    scripts — § 1260-02-.05"
+  url: null
+  quoted_text: Use of a post office box as a business location is prohibited. However, a post office
+    box may be included in a business address for the purpose of receiving mail.
+  secondary: []
+terms:
+  - post office box
+  - business address
+  - advertising
+  - mail receipt
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

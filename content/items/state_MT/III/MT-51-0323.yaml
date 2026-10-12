@@ -1,0 +1,42 @@
+id: MT-51-0323
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker notifies the department on April 5 of an upcoming move of the broker's designated
+  physical address to a new location, with the move scheduled for April 10. Under Montana law, is
+  this notification timely?
+options:
+  - The notification is timely because it was made before removal.
+  - The notification is timely because it was made within 10 days after removal.
+  - The notification is not timely because it was made more than 10 days before removal.
+  - The notification is not timely because it was made after removal.
+key: A
+explanation: The statute permits notice either before removal or within 10 days after removal. Since
+  the broker notified on April 5, which is before the April 10 removal, the notice is timely.
+  Notification after removal would also be acceptable if within 10 days, but that is not the case
+  here.
+citation:
+  source: Mont. Code Ann. § 37-51-308(3)
+  url: null
+  quoted_text: In case of removal from the designated address, the broker shall notify the department
+    before removal or within 10 days after removal, designating the new physical address and paying
+    the required fee.
+  secondary: []
+terms:
+  - timeliness
+  - notice
+  - removal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

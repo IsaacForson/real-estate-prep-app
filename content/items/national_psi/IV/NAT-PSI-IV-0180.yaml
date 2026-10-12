@@ -1,0 +1,53 @@
+id: NAT-PSI-IV-0180
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A lender includes a clause in a residential mortgage loan agreement requiring that any dispute
+  be resolved through binding arbitration. The loan is secured by the borrower's principal dwelling.
+  Under TILA §1639(e)(1), is this clause permissible?
+options:
+  - The clause is permissible because the parties may agree to arbitration after a dispute arises
+    under paragraph (e)(2), which allows post‑controversy arbitration agreements.
+  - The clause is not permissible because TILA §1639(e)(1) expressly forbids any term requiring
+    arbitration or other nonjudicial procedure in residential mortgage loans secured by the
+    consumer's principal dwelling.
+  - The clause is permissible if the loan is a reverse mortgage, as reverse mortgages are explicitly
+    excluded from the arbitration prohibition in TILA §1639(e)(1).
+  - The clause is not permissible unless the borrower provides written consent after closing, which
+    would constitute a post‑controversy agreement allowed under TILA §1639(e)(2).
+key: B
+explanation: Under 15 U.S.C. § 1639(e)(1), a residential mortgage loan secured by a principal
+  dwelling may not include a term that requires arbitration or any other nonjudicial procedure as
+  the method for resolving controversies. Therefore a clause that mandates binding arbitration in
+  the loan agreement is not permissible. The statement that parties may agree to arbitration after a
+  dispute arises describes a post‑controversy agreement permitted by subsection (e)(2), but it does
+  not allow an upfront arbitration clause. The claim that written borrower consent after closing
+  would make the clause permissible mischaracterizes such consent as a post‑controversy agreement
+  when the term is still part of the original loan contract. The assertion that reverse mortgages
+  are exempt from the prohibition is incorrect; the statute does not exclude reverse mortgages from
+  the arbitration ban.
+citation:
+  source: 15 U.S.C. § 1639(e)(1)
+  url: null
+  quoted_text: No residential mortgage loan and no extension of credit under an open end consumer
+    credit plan secured by the principal dwelling of the consumer may include terms which require
+    arbitration or any other nonjudicial procedure as the method for resolving any controversy or
+    settling any claims arising out of the transaction.
+  secondary: []
+terms:
+  - arbitration
+  - residential mortgage loan
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

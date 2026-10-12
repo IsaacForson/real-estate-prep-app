@@ -1,0 +1,45 @@
+id: NAT-PSI-V-0949
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer submits an offer on Monday at 9 a.m. stating it expires Friday at 5 p.m. On Wednesday
+  at 3 p.m., the buyer's agent emails the seller withdrawing the offer. The seller receives the
+  email on Thursday at 10 a.m. and replies accepting the original offer on Friday at 4 p.m. Assuming
+  no other communications, what is the legal status of the seller's acceptance?
+options:
+  - The acceptance creates a binding contract because it was sent before the expiration date.
+  - The acceptance is ineffective because the offer was terminated when the buyer communicated the
+    withdrawal.
+  - The acceptance is valid because the seller received it after the buyer's withdrawal but before
+    the expiration date.
+  - The acceptance creates a contract that the seller can enforce despite the buyer's attempt to
+    withdraw.
+key: B
+explanation: A revocation is effective when communicated to the offeree; the seller's receipt of the
+  withdrawal email on Thursday terminated the offer, so the later acceptance is ineffective. The
+  distractor that claims the acceptance is valid because it was received before the expiration date
+  mistakenly relies on the expiration date rather than the communication of revocation.
+citation:
+  source: REP Ref. Contracts § 3.4
+  url: null
+  quoted_text: A revocation is effective when it is communicated to the offeree.
+  secondary: []
+terms:
+  - revocation
+  - offer
+  - withdrawal
+  - acceptance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

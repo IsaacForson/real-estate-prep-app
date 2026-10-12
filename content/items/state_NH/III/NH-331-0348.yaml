@@ -1,0 +1,47 @@
+id: NH-331-0348
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker earns a commission on a residential sale and instructs the principal broker to pay
+  the commission to Cedar Ridge LLC, a limited liability company whose four members are all licensed
+  real estate brokers, but the broker who earned the commission is not a member of Cedar Ridge LLC.
+  Under RSA 331-A:16-b, why is this payment arrangement **NOT** permitted?
+options:
+  - Because the LLC is not registered to do business in New Hampshire
+  - Because the broker who earned the commission is not a member of the LLC
+  - Because the LLC engages in prohibited acts under RSA 331-A:26
+  - Because the broker failed to keep records of the payment for three years
+key: B
+explanation: RSA 331-A:16-b requires that at least one member of the entity be the licensee who
+  earned the commission. Since the earning broker is not a member of Cedar Ridge LLC, this condition
+  is violated and the payment is impermissible. The record‑keeping distractor is irrelevant; even
+  with proper records the payment would still be disallowed.
+citation:
+  source: "### N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter
+    331-A — New Hampshire Real Estate Practice Act, official General Court page read via Internet
+    Archive capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 16-b"
+  url: null
+  quoted_text: At least one of the partners, members, officers, or shareholders of the unlicensed
+    business entity, including a partnership, association, limited liability company, limited
+    liability partnership, or corporation, is the licensee who earned the fee, commission, or other
+    compensation.
+  secondary: []
+terms:
+  - commission
+  - llc
+  - member
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,38 @@
+id: SC-57-0391
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A provider renewed their license on June 30, 2021. As of January 1, 2024, has the provider met
+  the biennial renewal requirement under S.C. Code Ann. § 40-57-930(A)?
+options:
+  - No, because the provider renewed exactly one year ago.
+  - No, the provider has not met the biennial renewal requirement.
+  - Yes, the provider has met the biennial renewal requirement.
+  - Yes, because the provider renewed less than one year ago.
+key: B
+explanation: Biennial renewal means the license must be renewed every two years. The provider’s last
+  renewal was June 30, 2021, so the next renewal was due June 30, 2023. As of January 1, 2024 that
+  deadline has passed, so the requirement has not been met. The distractor claiming less than one
+  year has passed is false; more than two years have elapsed.
+citation:
+  source: S.C. Code Ann. § 40-57-930(A)
+  url: null
+  quoted_text: Providers and instructors shall renew their licenses with the commission biennially.
+  secondary: []
+terms:
+  - biennial
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

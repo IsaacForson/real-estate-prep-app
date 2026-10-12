@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0190
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer takes title to a property that is subject to a mortgage containing an alienation
+  clause but does not obtain the lender’s consent. What action may the lender take?
+options:
+  - Extend the loan repayment term
+  - Reduce the interest rate
+  - Forgive the outstanding debt
+  - Accelerate the loan balance
+key: D
+explanation: The alienation (due-on-sale) clause permits the lender to accelerate the loan if title
+  is transferred without consent, making the entire balance due immediately. Forgiving the debt or
+  reducing the rate are not authorized by this clause.
+citation:
+  source: "REP Ref. Financing & Closing — Reference note: financing instruments, loan types,
+    government programs, underwriting, closing (authored, status: draft — needs licensed review) §
+    2.2"
+  url: null
+  quoted_text: The alienation or due-on-sale clause lets the lender accelerate if the borrower
+    transfers title without consent, so a buyer cannot assume a below-market loan without
+    re-underwriting.
+  secondary: []
+terms:
+  - alienation clause
+  - due-on-sale
+  - lender
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

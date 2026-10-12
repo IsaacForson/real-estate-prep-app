@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0920
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor miscalculates the annual percentage rate due to a software glitch, leading to a
+  TILA violation. The creditor demonstrates that the error was unintentional and resulted from a
+  computer malfunction. Under TILA §1640(c), is the creditor liable for the violation?
+options:
+  - The creditor is liable because the error was not corrected within 60 days.
+  - The creditor is not liable because the creditor demonstrated good faith compliance with Bureau
+    rule.
+  - The creditor is liable because the violation was intentional.
+  - The creditor is not liable because the violation resulted from a bona fide error.
+key: D
+explanation: The creditor avoids liability by proving the violation was unintentional and resulted
+  from a bona fide error, such as a computer malfunction, which the statute expressly excuses. The
+  option asserting liability because the violation was intentional contradicts the creditor’s
+  showing, and the option citing failure to correct within 60 days misapplies the separate
+  correction‑of‑errors provision.
+citation:
+  source: 15 U.S.C. § 1640(c)
+  url: null
+  quoted_text: if the creditor or assignee shows by a preponderance of evidence that the violation was
+    not intentional and resulted from a bona fide error
+  secondary: []
+terms:
+  - bona fide error
+  - liability
+  - defense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

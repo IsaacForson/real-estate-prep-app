@@ -1,0 +1,44 @@
+id: FL-475-0473
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker records a lien notice for an automatic renewal commission that has been earned but is
+  not yet payable. Assuming the broker does **NOT** commence a foreclosure action, when does the
+  lien notice expire?
+options:
+  - The lien notice expires 20 years after the date of recording
+  - The lien notice expires 10 years after the date of recording
+  - The lien notice expires 5 years after the date of recording
+  - The lien notice expires 2 years after the date of recording
+key: B
+explanation: When a lien notice claims an automatic renewal commission that is earned but not yet
+  payable, the notice expires 10 years after recording unless the broker commences a foreclosure
+  action within that period. Without such action, the expiration is at the 10‑year mark.
+citation:
+  source: Fla. Stat. § 475.807(8)(b)
+  url: null
+  quoted_text: To the extent that a lien notice recorded by a broker under this part claims an
+    automatic renewal commission that is earned but not then payable, the lien notice expires 10
+    years after the date of recording, unless within that time the broker commences an action to
+    foreclose the lien under s. 475.809 and records a notice of lis pendens in the public records of
+    the county where the lien notice was recorded.
+  secondary: []
+terms:
+  - automatic renewal commission
+  - lien notice
+  - expiration
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

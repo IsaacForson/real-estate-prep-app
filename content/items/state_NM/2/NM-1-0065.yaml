@@ -1,0 +1,41 @@
+id: NM-1-0065
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A qualifying broker’s license is suspended by commission order. What is the status of any
+  associate broker licenses that are associated with that qualifying broker?
+options:
+  - Active and usable for brokerage activities
+  - Inactive pending appointment of a new qualifying broker
+  - Revoked and cannot be used for any activity
+  - Surrendered to the commission and held inactive
+key: B
+explanation: The statute provides that associate broker licenses associated with a qualifying broker
+  whose license is suspended or revoked shall be automatically placed on inactive status until a new
+  qualifying broker or qualifying broker in charge is designated. The other options describe active
+  status, revoked status, or surrendered status, which are not correct under the rule.
+citation:
+  source: N.M. Stat. Ann. § 61-29-11
+  url: null
+  quoted_text: '"any associate broker licenses hanging with a qualifying broker whose license is
+    suspended or revoked shall be automatically placed on inactive status until a new qualifying
+    broker or a qualifying broker in charge is designated."'
+  secondary: []
+terms:
+  - suspension
+  - inactive status
+  - qualifying broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

@@ -1,0 +1,47 @@
+id: OR-696-0327
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker who has been licensed for 18 months supervises another licensee's
+  professional real estate activity while the principal broker is temporarily absent. According to
+  ORS 696.022, is the broker permitted to supervise?
+options:
+  - The broker is permitted to supervise because they have at least one year of experience.
+  - The broker is not permitted to supervise because they lack the required three years of
+    experience.
+  - The broker is permitted to supervise if the supervision period is under 90 days.
+  - The broker is not permitted to supervise unless they are directly supervised by a principal
+    broker.
+key: B
+explanation: ORS 696.022(2)(c) allows a broker to supervise another licensee only after acquiring
+  three years of active experience. Since the broker has only 18 months of experience, they do not
+  meet this requirement and may not supervise. The option suggesting supervision is allowed if under
+  90 days is incorrect because the experience prerequisite is not satisfied.
+citation:
+  source: Or. Rev. Stat. ch. 696 (Real Estate and Escrow Activities) — ORS Chapter 696 — Real Estate
+    and Escrow Activities (2025 edition), official Oregon Legislature page read via Internet Archive
+    capture of 2025-11-13 because oregonlegislature.gov times out from this network — §
+    696.022(2)(c)
+  url: null
+  quoted_text: A real estate broker who has acquired three years of active experience as a real estate
+    broker may supervise for up to 90 days the professional real estate activity of another real
+    estate licensee due to unforeseen circumstances or the temporary absence of a sole principal
+    real estate broker, as provided by the agency by rule.
+  secondary: []
+terms:
+  - supervision
+  - experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

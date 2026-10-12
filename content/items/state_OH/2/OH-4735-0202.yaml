@@ -1,0 +1,48 @@
+id: OH-4735-0202
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person, not associated with any broker, negotiates the sale of a house for a friend and
+  receives a commission. According to Ohio Rev. Code § 4735.01, what is required?
+options:
+  - They must be licensed as a real estate broker.
+  - They do not need a license because they are acting for a friend.
+  - They must be licensed as a real estate salesperson.
+  - They need a license only if they also list the property.
+key: A
+explanation: The definition of a real estate broker includes any person who, for another, negotiates
+  the sale of real estate for a fee or commission. Because the individual is not affiliated with a
+  broker, they cannot be licensed as a salesperson; they must hold a broker license. The option
+  stating they do not need a license because they are acting for a friend is incorrect because a
+  salesperson must be sponsored by a licensed broker. The options stating they must be licensed as a
+  real estate salesperson and that they need a license only if they also list the property are
+  incorrect because the law does not exempt transactions with friends nor require listing activities
+  for licensing.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.01
+  url: null
+  quoted_text: "who for another, whether pursuant to a power of attorney or otherwise, and who for a
+    fee, commission, or other valuable consideration, or with the intention, or in the expectation,
+    or upon the promise of receiving or collecting a fee, commission, or other valuable
+    consideration does any of the following: (1) Sells, exchanges, purchases, rents, or leases, or
+    negotiates the sale, exchange, purchase, rental, or leasing of any real estate;"
+  secondary: []
+terms:
+  - real estate broker
+  - real estate salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

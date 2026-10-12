@@ -1,0 +1,44 @@
+id: ND-23-0205
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under N.D. Cent. Code § 43-23-24(1), a person enters into an agreement to purchase a parcel of
+  land with the intent to later assign their purchase interest to another buyer for a fee. Does this
+  person meet the statutory definition of a "wholesaler"?
+options:
+  - The person qualifies as a wholesaler because they intend to make income from transferring an
+    equitable interest.
+  - The person does not qualify as a wholesaler because they must close on the purchase before
+    assigning interest.
+  - The person qualifies as a wholesaler if they also hold a real estate license issued by the state.
+  - The person does not qualify as a wholesaler because the statute requires holding title to the
+    property.
+key: A
+explanation: The definition of wholesaler covers anyone who enters an agreement to make income or
+  profit from the transfer of or equitable interest in real property. The scenario describes
+  entering such an agreement to profit from transferring the purchase interest, so the person
+  qualifies. The distractor about needing to close first adds a requirement not present in the
+  definition.
+citation:
+  source: N.D. Cent. Code § 43-23-24(1)
+  url: null
+  quoted_text: As used in this section, 'wholesaler' means a person that enters an agreement to make
+    income or profit from the transfer of or equitable interest in real property.
+  secondary: []
+terms:
+  - wholesaler
+  - equitable interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

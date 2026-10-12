@@ -1,0 +1,42 @@
+id: DC-198-0336
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner of a single-family accommodation delivers a written notice of intent to sell to a
+  tenant on April 3. Under D.C. Code § 42-3404.09(d)(2), by what date must the tenant deliver a
+  written response stating their status as an elderly tenant or a tenant with a disability?
+options:
+  - April 10
+  - April 17
+  - April 23
+  - April 30
+key: C
+explanation: The tenant has 20 days from the date of the notice to respond. Counting 20 days from
+  April 3 leads to April 23. The distractor April 17 results from mistakenly counting only 14 days.
+citation:
+  source: "D.C. Code §§ 42-3404.01–42-3404.16 — D.C. Code Title 42, Ch. 34, Subch. IV - Rental Housing
+    Conversion and Sale: Tenant Opportunity to Purchase (TOPA) — § 42-3404.09(d)(2)"
+  url: null
+  quoted_text: The tenant shall have 20 days from the date of delivery of the notice to deliver to the
+    owner, in writing, a response that states the tenant's status as an elderly tenant or a tenant
+    with a disability.
+  secondary: []
+terms:
+  - notice
+  - response
+  - tenant
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

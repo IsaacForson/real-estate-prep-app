@@ -1,0 +1,44 @@
+id: SD-21A-0283
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer files a notice of intent for a time-share project valued at $1,200,000. What is
+  the required inspection fee according to South Dakota rule?
+options:
+  - $200
+  - $500
+  - $300
+  - $400
+key: D
+explanation: The rule requires $100 for each $300,000 of project value. Dividing $1,200,000 by
+  $300,000 yields four units, and four times $100 equals $400. The other options result from using
+  three, two, or five units.
+citation:
+  source: S.D. Admin. R. art. 20:69 (Real Estate Commission) 20:69:07:04
+  url: null
+  quoted_text: An estimated inspection fee in the amount of $100 for each $300,000 value of the
+    project must be included with the notice of intent.
+  secondary: []
+math:
+  worked_solution: "Divide the project value by $300,000: $1,200,000 ÷ $300,000 = 4. Multiply the
+    result by $100: 4 × $100 = $400."
+  formulas:
+    - Inspection fee = (Project value ÷ 300,000) × 100
+  onscreen_calculator_only: false
+terms:
+  - inspection fee
+  - project value
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

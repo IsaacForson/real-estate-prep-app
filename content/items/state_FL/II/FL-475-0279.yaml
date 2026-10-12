@@ -1,0 +1,38 @@
+id: FL-475-0279
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales associate employed by a broker wants to list a timeshare week for resale that she owns
+  personally. Under Florida Statute 475.011, is she exempt from licensure for this activity?
+options:
+  - Yes, because owners of timeshare periods may resell their own periods without a license.
+  - No, because the exemption applies only to owners who are not real estate licensees.
+  - Yes, but only if she does not receive any compensation for the resale.
+  - No, because she is acting as a sales associate and must be licensed regardless of ownership.
+key: A
+explanation: The exemption in 475.011(8)(a) allows an owner of a timeshare period to resell their
+  own period without licensure, regardless of their license status. The other options incorrectly
+  impose limitations not present in the statute.
+citation:
+  source: Fla. Stat. § 475.011(8)(a)
+  url: null
+  quoted_text: An owner of one or part of one or more timeshare periods for the owner’s own use and
+    occupancy who later offers one or more of such periods for resale.
+  secondary: []
+terms:
+  - timeshare
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

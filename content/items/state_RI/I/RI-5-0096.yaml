@@ -1,0 +1,41 @@
+id: RI-5-0096
+jurisdiction: RI
+bank: state_RI
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson accepts a commission directly from a buyer, not from her affiliated broker.
+  Which provision of § 5-20.5-14 has been violated?
+options:
+  - Accepting a commission from a person other than the affiliated broker
+  - Failing to deposit escrow funds as required
+  - Making a substantial misrepresentation to a client
+  - Failing to preserve transaction records for three years
+key: C
+explanation: Subsection (a)(12) prohibits a salesperson from accepting a commission or valuable
+  consideration from any person except the licensed broker with whom they are affiliated. Accepting
+  a commission directly from the buyer violates this rule. The distractor about failing to deposit
+  escrow funds refers to subsection (a)(5), which is unrelated to commission receipt.
+citation:
+  source: R.I. Gen. Laws ch. 5-20.5 (Real Estate Brokers and Salespersons) § 5-20.5-14(a)(12)
+  url: null
+  quoted_text: (12) Accepting a commission or any valuable consideration by a salesperson for the
+    performance of any acts specified in this chapter, from any person, except the licensed real
+    estate broker with whom he or she is affiliated;
+  secondary: []
+terms:
+  - commission
+  - affiliated
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

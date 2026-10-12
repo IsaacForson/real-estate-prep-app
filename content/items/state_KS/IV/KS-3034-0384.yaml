@@ -1,0 +1,41 @@
+id: KS-3034-0384
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker closes a sale on Friday. The broker must deliver to the seller a complete, detailed
+  closing statement showing all receipts and disbursements handled by the broker for the seller.
+  Under Kan. Stat. Ann. § 58-3062(c)(2), when must this be delivered?
+options:
+  - Within ten business days after closing
+  - Upon request from the seller after closing
+  - At the time the transaction is closed
+  - Within five business days after closing
+key: C
+explanation: The statute requires the broker to deliver the closing statement to the seller at the
+  time the transaction is closed. Delivering within five or ten business days or only upon request
+  does not satisfy the immediate‑at‑closing requirement.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(c)(2)
+  url: null
+  quoted_text: Fail to deliver to the seller in every real estate transaction, at the time the
+    transaction is closed, a complete, detailed closing statement showing all of the receipts and
+    disbursements handled by the broker for the seller
+  secondary: []
+terms:
+  - closing statement
+  - broker
+  - seller
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

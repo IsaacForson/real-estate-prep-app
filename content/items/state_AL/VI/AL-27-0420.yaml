@@ -1,0 +1,38 @@
+id: AL-27-0420
+jurisdiction: AL
+bank: state_AL
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: The Alabama Real Estate Commission schedules a disciplinary hearing and sends notice to the
+  licensee 12 days before the hearing date. Is this notice sufficient under Ala. Code § 34-27-37(a)?
+options:
+  - Yes, the notice meets the minimum requirement.
+  - No, the notice must be at least 15 days.
+  - Yes, as long as the hearing is held in Montgomery County.
+  - No, the notice must be delivered by certified mail only.
+key: B
+explanation: The rule requires at least 15 days’ notice of the hearing; 12 days is insufficient,
+  making the notice defective. The distractor "Yes, the notice meets the minimum requirement"
+  incorrectly assumes 12 days satisfies the rule.
+citation:
+  source: "### Ala. Code § 34-27-37(a)"
+  url: null
+  quoted_text: The accused shall be given at least 15 days' notice of the time, date, and place of hearing.
+  secondary: []
+terms:
+  - notice
+  - hearing
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

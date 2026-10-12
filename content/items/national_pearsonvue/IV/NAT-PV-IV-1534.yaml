@@ -1,0 +1,40 @@
+id: NAT-PV-IV-1534
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives earnest money from a buyer and deposits it into the brokerage's operating
+  account to pay office rent. Which prohibited act(s) has the broker committed?
+options:
+  - Conversion only
+  - Commingling only
+  - Neither commingling nor conversion
+  - Both commingling and conversion
+key: D
+explanation: Depositing earnest money into the operating account mixes it with the brokerage's own
+  funds (commingling) and uses it for a purpose not directed by the contract (paying office rent),
+  which is conversion. Therefore both violations occur.
+citation:
+  source: REP Ref. Contracts § 5.2
+  url: null
+  quoted_text: may not mix it with the brokerage's own operating funds (commingling), and may not use
+    it for any purpose other than as the contract and the parties direct (using it otherwise is
+    conversion).
+  secondary: []
+terms:
+  - commingling
+  - conversion
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

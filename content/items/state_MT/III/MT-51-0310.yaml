@@ -1,0 +1,44 @@
+id: MT-51-0310
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A seller informs their agent that the roof does not leak, believing it to be true. The agent
+  later tells a prospective buyer that the roof does not leak, relying on the seller’s statement.
+  The roof actually leaks, and the buyer sues the seller for misrepresentation. Under Montana law,
+  is the seller liable for the misrepresentation?
+options:
+  - Yes, because the agent repeated a misrepresentation made by the seller.
+  - No, because the agent acted independently without the seller’s knowledge.
+  - No, because the seller had no actual knowledge of the misrepresentation.
+  - Yes, because the seller had actual knowledge of the misrepresentation.
+key: A
+explanation: Under § 37-51-315(1), a party is liable for an agent’s misrepresentation if the agent
+  is repeating a misrepresentation made by the party, regardless of the party’s actual knowledge.
+  Here the agent repeated the seller’s statement, so the seller is liable. The ‘no actual knowledge’
+  distractor is incorrect because liability can arise under the repetition rule even without the
+  party’s knowledge.
+citation:
+  source: Mont. Code Ann. §§ 37-51-101–37-51-607 (Real Estate Brokers and Salespersons) — Montana Code
+    Annotated 2025, Title 37, Chapter 51 — Real Estate Brokers and Salespersons (all parts) — §
+    37-51-315
+  url: null
+  quoted_text: (a) the party has actual knowledge of the misrepresentation; or (b) the agent or
+    subagent is repeating a misrepresentation made by the party.
+  secondary: []
+terms:
+  - vicarious liability
+  - misrepresentation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

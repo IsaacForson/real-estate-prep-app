@@ -1,0 +1,50 @@
+id: AK-88-0313
+jurisdiction: AK
+bank: state_AK
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person acting as attorney-in-fact under a power of attorney that authorizes the consummation
+  of a specific real estate transaction has already facilitated two such transactions this calendar
+  year. Under Alaska Statute § 08.88.900(a)(2), may the person act as attorney-in-fact for a third
+  transaction in the same year without obtaining a real estate license?
+options:
+  - The person may act as attorney-in-fact for the third transaction because the limit applies only
+    to transactions involving relatives
+  - The person may act as attorney-in-fact for the third transaction if they obtain a temporary
+    permit from the commission
+  - "C: The person may not act as attorney-in-fact for the third transaction because the exemption
+    allows only two transactions per calendar year"
+  - The person may not act as attorney-in-fact for the third transaction unless the transaction is
+    for a family member
+key: C
+explanation: Under Alaska Stat. § 08.88.900(a)(2), an attorney‑in‑fact may not act for more than two
+  transactions in a calendar year; therefore a third transaction would require a license. The claim
+  that the two‑transaction limit only applies to transactions involving relatives is incorrect; the
+  limit applies to any attorney‑in‑fact act. The idea that a temporary permit from the commission
+  would allow a third transaction is incorrect; the statute provides no such permit exception. The
+  statement that a family‑member transaction would exempt the person from the limit is incorrect;
+  the family‑member relationship does not override the two‑transaction cap.
+citation:
+  source: Alaska Stat. § 08.88.900(a)(2)
+  url: null
+  quoted_text: (2) an attorney-in-fact under a power of attorney authorizing the consummation of a
+    specific real estate transaction; an attorney-in-fact may not act as such under this paragraph
+    for more than two transactions in a calendar year;
+  secondary: []
+terms:
+  - attorney-in-fact
+  - power of attorney
+  - transaction limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

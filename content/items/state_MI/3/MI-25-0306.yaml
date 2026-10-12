@@ -1,0 +1,42 @@
+id: MI-25-0306
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A nonresident corporation seeks Michigan real estate broker licensure and submits its consent
+  to service of process authenticated by the acknowledged signature of its president, but without a
+  corporate seal. According to MCL 339.2514, is the consent sufficient for licensure?
+options:
+  - The consent must also include a certified copy of a resolution.
+  - The document being notarized satisfies the requirement.
+  - The signature alone satisfies the authentication requirement.
+  - The corporate seal is required for corporate applicants.
+key: D
+explanation: Under MCL 339.2514, a corporation’s consent to service of process must be authenticated
+  by a corporate seal; a mere acknowledged signature does not satisfy this requirement. Therefore,
+  the consent submitted without a seal is insufficient for licensure.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2514"
+  url: null
+  quoted_text: An instrument containing a consent shall be authenticated by a seal, if a corporation,
+    or by the acknowledged signature of a member or officer of the corporation, if otherwise.
+  secondary: []
+terms:
+  - consent to service of process
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

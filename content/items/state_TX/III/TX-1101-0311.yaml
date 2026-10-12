@@ -1,0 +1,40 @@
+id: TX-1101-0311
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under TREC rule §535.154, how many days after a sponsored sales agent stops using a team name
+  must the broker notify the Texas Real Estate Commission?
+options:
+  - Five days
+  - Ten days
+  - Twenty days
+  - Fifteen days
+key: B
+explanation: The rule requires the broker to notify the Commission not later than the 10th day after
+  the date the sponsored sales agent stops using a team name. Therefore, the correct interval is ten
+  days. The distractors represent common misinterpretations of the deadline as shorter or longer
+  periods.
+citation:
+  source: 22 Tex. Admin. Code § 535.154(c)(4)
+  url: null
+  quoted_text: A broker must notify the Commission using a process acceptable to the Commission not
+    later than the 10th day after the date the associated broker or a sales agent sponsored by the
+    broker stops using a team name.
+  secondary: []
+terms:
+  - team name
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

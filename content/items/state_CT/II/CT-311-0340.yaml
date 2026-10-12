@@ -1,0 +1,47 @@
+id: CT-311-0340
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee modifies a listing on Friday at 5:00 PM. By what date and time must the licensee
+  update the listing to satisfy Conn. Regs § 20-328-5a(d)?
+options:
+  - Sunday 5:00 PM
+  - Monday 5:00 PM
+  - Tuesday 5:00 PM
+  - Saturday 5:00 PM
+key: B
+explanation: Seventy‑two (72) hours after Friday 5:00 PM brings the deadline to Monday 5:00 PM. The
+  Sunday 5:00 PM choice reflects only forty‑eight (48) hours later, which does not meet the required
+  update period.
+citation:
+  source: Regs., Conn. State Agencies § 20-328-5a(d)
+  url: null
+  quoted_text: Updating such listing within seventy-two (72) hours after any change to the listing;
+  secondary: []
+math:
+  worked_solution: |-
+    Start time: Friday 5:00 PM.
+    Add 24 hours → Saturday 5:00 PM.
+    Add another 24 hours → Sunday 5:00 PM.
+    Add another 24 hours → Monday 5:00 PM.
+  formulas:
+    - new_time = start_time + 72 hours
+  onscreen_calculator_only: false
+terms:
+  - listing
+  - update
+  - hour
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

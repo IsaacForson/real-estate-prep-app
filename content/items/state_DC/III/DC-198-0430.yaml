@@ -1,0 +1,45 @@
+id: DC-198-0430
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An elderly tenant signed a rental agreement on April 5, 2018 and took occupancy on April 20,
+  2018. The owner delivers a written offer of sale on May 1, 2024. Under D.C. Code §
+  42-3404.09(c)(1), does the subchapter apply to this tenant?
+options:
+  - The subchapter does not apply because the tenant signed the rental agreement after March 31,
+    2018.
+  - The subchapter applies because the tenant satisfies all eligibility criteria.
+  - The subchapter does not apply because the tenant is neither elderly nor disabled.
+  - The subchapter applies because the tenant took occupancy by April 15, 2018.
+key: A
+explanation: For the subchapter to apply to an elderly or disabled tenant, the tenant must have
+  signed the rental agreement by March 31, 2018. The tenant signed on April 5, 2018, which is after
+  the cutoff, so the subchapter does not apply. The distractor claiming applicability because the
+  tenant took occupancy by April 15, 2018 ignores the signing deadline.
+citation:
+  source: D.C. Code § 42-3404.09(c)(1)
+  url: null
+  quoted_text: If a tenant is an elderly tenant or is a tenant with a disability as of the date of the
+    offer of sale, and the tenant signed a rental agreement to occupy a single-family accommodation
+    or a unit in a single-family accommodation by March 31, 2018, and took occupancy by April 15,
+    2018, the provisions of this subchapter shall apply, as modified by this section.
+  secondary: []
+terms:
+  - elderly
+  - disability
+  - rental agreement
+  - cutoff
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

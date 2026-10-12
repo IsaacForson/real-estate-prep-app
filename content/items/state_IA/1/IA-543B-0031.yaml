@@ -1,0 +1,46 @@
+id: IA-543B-0031
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee charges a $500 fee for listing a property and a $200 fee solely for a newspaper
+  advertisement. Which fee is classified as an advance fee?
+options:
+  - $500 listing fee
+  - $200 newspaper ad fee
+  - Escrow holding fee
+  - Closing coordination fee
+key: A
+explanation: The rule defines advance fees as any fees paid in advance for services, including
+  listing fees, but excludes fees paid solely for newspaper advertisement. Therefore the $500
+  listing fee is an advance fee, while the newspaper ad fee and other fees are not.
+citation:
+  source: Iowa Admin. Code r. 481-2002
+  url: null
+  quoted_text: '"Advance fees" means any fees charged for services to be paid in advance of the
+    rendering of such services including, without limitation, any fees charged for listing,
+    advertising, or offering for sale or lease any real property, but excluding any fees paid solely
+    for advertisement in a newspaper of general circulation.'
+  secondary: []
+math:
+  worked_solution: No arithmetic is required. The question asks which fee meets the definition of an
+    advance fee. Under Iowa Admin. Code r. 481‑2002, a listing fee paid in advance qualifies as an
+    advance fee, whereas a fee paid solely for a newspaper advertisement does not. Hence the $500
+    listing fee is the advance fee.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - advance fee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

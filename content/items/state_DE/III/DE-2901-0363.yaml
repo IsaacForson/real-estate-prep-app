@@ -1,0 +1,44 @@
+id: DE-2901-0363
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A consumer obtains a final judgment against a licensee for $60,000 due to fraud. What is the
+  maximum amount recoverable from the Real Estate Guaranty Fund under § 2922(a)?
+options:
+  - $10,000
+  - $25,000
+  - $60,000
+  - $50,000
+key: D
+explanation: § 2922(a) limits Guaranty Fund recovery to $50,000 per transaction or claim, regardless
+  of the judgment amount. Thus the maximum recoverable is $50,000, not the full $60,000 judgment.
+  The distractor $60,000 incorrectly assumes the Fund pays the entire judgment.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2922(a)
+  url: null
+  quoted_text: compensation in an amount not exceeding in the aggregate the sum of $50,000 in
+    connection with any 1 transaction or claim
+  secondary: []
+math:
+  worked_solution: Judgment $60,000 > Fund cap $50,000 → maximum recoverable = $50,000
+  formulas:
+    - Recoverable = min(judgment amount, Fund cap)
+  onscreen_calculator_only: false
+terms:
+  - guaranty fund
+  - judgment
+  - recovery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

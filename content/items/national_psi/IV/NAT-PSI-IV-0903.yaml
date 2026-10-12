@@ -1,0 +1,40 @@
+id: NAT-PSI-IV-0903
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA §1631(a), to whom is a creditor required to disclose the information required by
+  this subchapter in a consumer credit transaction?
+options:
+  - The creditor's internal compliance officer
+  - The real estate broker facilitating the transaction
+  - The settlement agent handling the closing
+  - The person who is obligated on the transaction
+key: D
+explanation: The regulation states that a creditor shall disclose to the person who is obligated on
+  the transaction. The other options describe parties that are not required to receive the
+  disclosures under this provision.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1631(a)
+  url: null
+  quoted_text: Subject to subsection (b), a creditor or lessor shall disclose to the person who is
+    obligated on a consumer lease or a consumer credit transaction the information required under
+    this subchapter.
+  secondary: []
+terms:
+  - creditor
+  - obligor
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,42 @@
+id: ID-20-0396
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker collects a portion of the commission from the buyer and the remainder from the seller
+  in a residential sale but does not provide any written disclosure to either party before closing.
+  According to Idaho Code § 54-2054(7), is this arrangement permissible?
+options:
+  - Permissibility as long as the total commission does not exceed the usual rate
+  - Impermissibility because of missing written disclosure
+  - Permissibility because the broker received compensation from both parties
+  - Impermissibility because any compensation from the buyer is prohibited
+key: B
+explanation: The rule prohibits accepting compensation from more than one party without first making
+  full written disclosure of the intent to do so. Because the broker omitted the required written
+  disclosure, the arrangement is impermissible. The idea that receiving compensation from both
+  parties is automatically allowed ignores the disclosure requirement.
+citation:
+  source: Idaho Code § 54-2054(7)
+  url: null
+  quoted_text: No licensed real estate broker or salesperson shall charge or accept compensation from
+    more than one (1) party in any one (1) transaction, without first making full disclosure in
+    writing of the broker’s intent to do so, to all parties involved in the transaction.
+  secondary: []
+terms:
+  - disclosure
+  - compensation
+  - parties
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

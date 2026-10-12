@@ -1,0 +1,46 @@
+id: MT-51-0293
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson helped a buyer purchase a home in January, but their salesperson license had
+  lapsed in December of the previous year and was not renewed until March. The salesperson sues the
+  buyer in April for the promised commission. Under Montana law, what is the likely result?
+options:
+  - The court will dismiss the action because the person was not licensed at the time the claim arose
+  - The court will allow the person to recover because they were employed by a licensed broker at
+    the time the claim arose
+  - The court will allow the person to recover because they were a resident of Montana at the time
+    the claim arose
+  - The court will allow the person to recover because they had a written contract for the services
+    at the time the claim arose
+key: A
+explanation: Under Mont. Code Ann. § 37-51-401, a person cannot maintain an action for compensation
+  unless they allege and prove they were duly licensed at the time the claim arose. Because the
+  salesperson's license had lapsed before the services were performed, they were not licensed at
+  that time, so the court will dismiss the action. The distractors incorrectly suggest that a
+  written contract, employment by a broker, or residency can substitute for the licensure
+  requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-401
+  url: null
+  quoted_text: without first alleging and proving that such person was a duly licensed real estate
+    broker or real estate salesperson
+  secondary: []
+terms:
+  - license
+  - claim
+  - action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

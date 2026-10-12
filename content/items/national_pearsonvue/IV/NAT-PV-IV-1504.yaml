@@ -1,0 +1,47 @@
+id: NAT-PV-IV-1504
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A buyer pays an option fee of $5,000 for the right to purchase a property at $200,000 within
+  one year. The option agreement expressly states that the fee will be applied to the purchase price
+  if the option is exercised. If the buyer exercises the option, what amount must the buyer pay to
+  complete the purchase?
+options:
+  - $200,000
+  - $195,000
+  - $205,000
+  - $5,000
+key: B
+explanation: Because the contract provides that the option fee applies to the price, the fee is
+  credited against the purchase price, leaving $195,000 due. The default rule is that the option fee
+  is retained by the optionor unless the contract says otherwise.
+citation:
+  source: REP Ref. Contracts § 9.1
+  url: null
+  quoted_text: unless the contract provides that it applies to the price on exercise.
+  secondary: []
+math:
+  worked_solution: |-
+    Purchase price: $200,000
+    Option fee: $5,000
+    Amount due = Purchase price - Option fee = $200,000 - $5,000 = $195,000
+  formulas:
+    - Amount due = Purchase price - Option fee
+  onscreen_calculator_only: false
+terms:
+  - option fee
+  - purchase price
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

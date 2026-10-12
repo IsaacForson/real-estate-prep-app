@@ -1,0 +1,46 @@
+id: CT-311-0296
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission held a meeting on January 10. To comply with the
+  statutory requirement to meet at **LEAST** once each three-month period, by what date must the
+  commission hold its next meeting?
+options:
+  - July 10.
+  - April 9.
+  - October 10.
+  - April 10.
+key: D
+explanation: The commission must meet at least once every three months. After a meeting on January
+  10, the latest date for the next meeting that still satisfies this requirement is April 10. July
+  10 and October 10 are later than three months after January 10, so they violate the rule. April 9
+  is earlier than the latest permissible date but still within the three‑month window; however the
+  question asks for the deadline by which the meeting must occur, which is April 10. Conn. Gen.
+  Stat. ch. 392, § 20‑311b(e) requires the commission to meet at least once in each three‑month
+  period.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311b(e)
+  url: null
+  quoted_text: The commission shall hold meetings and hearings in Hartford, in space provided by the
+    Commissioner of Administrative Services, or at such places outside of Hartford as shall be
+    determined by the chairman of the commission. The commission shall meet at least once in each
+    three-month period and may meet more often at the call of its chairman.
+  secondary: []
+terms:
+  - meeting
+  - three-month period
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

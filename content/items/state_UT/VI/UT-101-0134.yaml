@@ -1,0 +1,49 @@
+id: UT-101-0134
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VI
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee affiliated with a principal broker gives a $75 gift card to a buyer after closing,
+  thanking the buyer for using the brokerage's services.
+options:
+  - A closing gift given to the buyer
+  - A prohibited inducement under state law
+  - A personal loan from licensee to buyer
+  - A marketing expense for the brokerage
+key: A
+explanation: The definition of 'closing gift' includes any gift given by a licensee affiliated with
+  a principal broker to a buyer in appreciation for using the brokerage's services. The scenario
+  matches this definition, making the answer 'A closing gift given to the buyer' correct. The option
+  'A prohibited inducement under state law' is not supported by the definition provided.
+citation:
+  source: Utah Admin. Code R162-2f (Real Estate Licensing and Practices Rules) — Utah Administrative
+    Code R162-2f — Real Estate Licensing and Practices Rules (current rule, effective Aug. 16,
+    2023), fetched live from the Utah Office of Administrative Rules public API (HTML download
+    behind adminrules.utah.gov/public/rule/R162-2f/Current%20Rules) — § R162-2f-403 §
+    R162-2f-102(10)
+  url: null
+  quoted_text: "'Closing gift' means any gift given by a principal broker, or a licensee affiliated
+    with the principal broker, to a buyer or seller, lessor or lessee, in appreciation for having
+    used the services of a real estate brokerage."
+  secondary: []
+math:
+  worked_solution: The gift amount is $75; no further calculation is needed.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - closing gift
+  - licensee
+  - buyer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

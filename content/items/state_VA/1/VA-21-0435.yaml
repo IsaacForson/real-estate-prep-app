@@ -1,0 +1,49 @@
+id: VA-21-0435
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An auctioneer licensed under Virginia Chapter 6 is hired by the owner of a commercial property
+  to conduct a public auction of the property. The auctioneer opens bidding at 9:00 AM on Monday and
+  keeps bidding open until 9:00 AM on Thursday. Under Va. Code § 54.1-2103, is the auctioneer exempt
+  from licensure for conducting this auction?
+options:
+  - Under Virginia law, the auctioneer is not exempt because bidding remained open longer than 48
+    hours
+  - Under Virginia law, the auctioneer is not exempt because they advertised that they are
+    authorized to sell real estate
+  - Under Virginia law, the auctioneer is exempt because they are licensed under Chapter 6 and
+    employed by the owner
+  - Under Virginia law, the auctioneer is exempt because they may advertise for sale at public
+    auction when employed to do so
+key: A
+explanation: Subsection A(8) grants exemption only if the bidding at the auction is held open for no
+  longer than 48 hours. Keeping bidding open from Monday 9:00 AM to Thursday 9:00 AM exceeds that
+  limit, voiding the exemption. The most tempting distractor B incorrectly assumes exemption based
+  solely on the auctioneer's license and employment, ignoring the mandatory time restriction.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2103(A)(8)
+  url: null
+  quoted_text: Any auctioneer licensed in accordance with Chapter 6 (§ 54.1-600 et seq.) selling real
+    estate at public auction when employed for such purpose by the owner of the real estate and
+    provided the bidding at such auction is held open for no longer than 48 hours.
+  secondary: []
+terms:
+  - auctioneer
+  - bidding
+  - public auction
+  - employment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

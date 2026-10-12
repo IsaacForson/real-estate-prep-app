@@ -1,0 +1,52 @@
+id: UT-101-0121
+jurisdiction: UT
+bank: state_UT
+blueprint_node: VII
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under the Real Estate Education, Research, and Recovery Fund Act, a buyer obtains a final
+  judgment for $18,000 in actual damages against a real estate brokerage (an LLC) for fraud in a
+  transaction. Assuming the fund has sufficient money, what is the correct statement about the
+  fund's ability to pay?
+options:
+  - The fund may pay up to $15,000 because it limits payment per transaction.
+  - The fund may pay up to $18,000 because it reimburses actual damages.
+  - The fund may not pay because it cannot reimburse judgments against entities.
+  - The fund may not pay because the judgment exceeds the fund's per-licensee cap of $50,000.
+key: C
+explanation: Under Utah Code § 61-2f-503, the fund may only reimburse damages caused by an
+  individual licensee; reimbursement is prohibited for a final judgment against an entity.
+  Therefore, despite the judgment amount, the fund cannot pay anything. Options that suggest the
+  fund could pay up to a transaction- or claim-based limit are incorrect because they ignore the
+  prohibition on reimbursing judgments against entities.
+citation:
+  source: Utah Code Ann. ch. 61-2f (Real Estate Licensing and Practices Act) — Utah Code Title 61,
+    Chapter 2f — Real Estate Licensing and Practices Act (current version), official Utah
+    Legislature PDF read via Internet Archive capture of 2025-09-14 because le.utah.gov refuses
+    connections from this network — § 61-2f-503
+  url: null
+  quoted_text: This part applies to damages caused by an individual licensee. Reimbursement may not be
+    made for a final judgment against an entity.
+  secondary: []
+math:
+  worked_solution: No arithmetic steps are needed to determine the fund's ability to pay; the judgment
+    amount is given as $18,000.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - fund
+  - entity
+  - judgment
+  - reimbursement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

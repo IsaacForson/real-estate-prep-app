@@ -1,0 +1,40 @@
+id: MT-51-0290
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An agent shows a property and tells a buyer that the foundation is sound, relying on
+  information provided by the seller. The agent did not know the foundation was cracked. Under
+  Montana law, is the agent liable for the misrepresentation?
+options:
+  - No, because the seller, not the agent, made the misrepresentation
+  - Yes, because the agent is responsible for all statements made during the showing
+  - No, unless the agent had actual knowledge of the misrepresentation
+  - Yes, because the agent repeated information given by the principal
+key: C
+explanation: Under 37-51-315(3), an agent is not liable for a misrepresentation made by the
+  principal unless the agent has actual knowledge of the misrepresentation. Since the agent lacked
+  actual knowledge, there is no liability.
+citation:
+  source: Mont. Code Ann. § 37-51-315(3)
+  url: null
+  quoted_text: An agent is not liable for a misrepresentation made by the principal unless the agent
+    has actual knowledge of the misrepresentation.
+  secondary: []
+terms:
+  - agent
+  - misrepresentation
+  - liability
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

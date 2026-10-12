@@ -1,0 +1,43 @@
+id: CT-311-0175
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission wishes to hold a meeting in New Haven to discuss
+  pending license applications. According to Connecticut law, who determines whether the commission
+  may hold a meeting outside Hartford?
+options:
+  - The Commissioner
+  - The Governor
+  - The chairman
+  - The majority
+key: C
+explanation: The law states that meetings outside Hartford shall be determined by the chairman of
+  the commission. Therefore, the chairman has the authority to approve a meeting location outside
+  Hartford. The Commissioner, Governor, or a majority of members do not have this specific authority
+  under the statute.
+citation:
+  source: "### Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter
+    392 - Real Estate Licensees (2025 supplement) — § 20-311b"
+  url: null
+  quoted_text: The commission shall hold meetings and hearings in Hartford, in space provided by the
+    Commissioner of Administrative Services, or at such places outside of Hartford as shall be
+    determined by the chairman of the commission.
+  secondary: []
+terms:
+  - chairman
+  - meeting
+  - location
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

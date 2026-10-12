@@ -1,0 +1,40 @@
+id: HI-467-0151
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Haw. Admin. Rules §16-99-4(c), if there is no written agreement regarding disbursement
+  of accrued interest on a client trust account, to whom must the interest be paid?
+options:
+  - The principal broker
+  - The real estate commission
+  - The broker-in-charge
+  - The owner of the funds
+key: D
+explanation: The rule states that in the absence of a written agreement, any interest accrued shall
+  be paid to the owner of the funds. The principal broker or broker-in-charge may not retain that
+  interest unless agreed otherwise, making those options incorrect.
+citation:
+  source: Haw. Admin. Rules § 16-99-4
+  url: null
+  quoted_text: In the absence of a written agreement, any interest accrued shall be paid to the owner
+    of the funds.
+  secondary: []
+terms:
+  - trust account
+  - interest
+  - disbursement
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

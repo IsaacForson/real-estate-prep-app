@@ -1,0 +1,44 @@
+id: CA-4-0390
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker closes a residential sale on March 15, 2024 and destroys the paper deposit receipt on
+  March 15, 2025. Under Cal. Code Regs. tit. 10, § 2729(a)(6), is this permissible?
+options:
+  - The broker may destroy the receipt because the electronic copy satisfies the three‑year
+    requirement
+  - The broker may not destroy the receipt because records must be retained for three years pursuant
+    to Section 10148
+  - The broker may destroy the receipt after providing a paper copy to the Department upon request
+  - The broker may destroy the receipt if the transaction involved a commercial property rather than
+    residential
+key: B
+explanation: The regulation requires records to be retained for three years; destroying the receipt
+  after one year violates this requirement. The claim that retaining an electronic copy satisfies
+  the requirement is incorrect because the regulation does not allow substitution of an electronic
+  copy for the required retention period.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2729(a)(6)
+  url: null
+  quoted_text: Records copied and stored under this section shall be retained for three years pursuant
+    to Section 10148 of the Code.
+  secondary: []
+terms:
+  - record retention
+  - three years
+  - deposit receipt
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

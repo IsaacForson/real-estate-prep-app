@@ -1,0 +1,42 @@
+id: PA-9-0312
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A candidate completed a real estate finance course 12 years ago and now wants to use it to
+  satisfy the education requirement for a Pennsylvania broker’s license. May the course be counted
+  toward the requirement under 49 Pa. Code § 35.271(b)(5)?
+options:
+  - The course may be counted toward the education requirement
+  - The course may be counted if the candidate holds a salesperson license
+  - The course may not be counted toward the education requirement
+  - The course may be counted if it is completed within ten years
+key: C
+explanation: The regulation requires that courses used for the education requirement be completed
+  within 10 years prior to passing the licensing examination (49 Pa. Code § 35.271(b)(5)). A course
+  taken 12 years ago falls outside this window and therefore cannot be counted. The option
+  suggesting the course may be counted if the candidate holds a salesperson license is incorrect
+  because the time limit applies regardless of other licenses held.
+citation:
+  source: 49 Pa. Code § 35.271(b)(5)
+  url: null
+  quoted_text: Courses shall have been completed within 10 years prior to the date of successful
+    completion of the licensing examination.
+  secondary: []
+terms:
+  - course
+  - education
+  - timeline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,53 @@
+id: MA-87D-0412
+jurisdiction: MA
+bank: state_MA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee is found guilty of violating clause (k) of M.G.L. c. 112 § 87AAA for publishing an
+  advertisement that indicates a preference based on race. The Board of Registration imposes a fine
+  of $1,800. Is this fine within the statutory range permitted by law?
+options:
+  - The fine is below the minimum allowed.
+  - The fine is within the statutory range.
+  - The fine is exactly the minimum allowed.
+  - The fine is above the maximum allowed.
+key: B
+explanation: Under M.G.L. c. 112 § 87AAA a violation of clause (k) is punishable by a fine of not
+  less than $1,000 nor more than $2,500. The imposed fine of $1,800 falls between those two limits,
+  so the fine is permissible. The statement that the fine is below the minimum is incorrect because
+  $1,800 exceeds the $1,000 minimum.
+citation:
+  source: M.G.L. c. 112, § 87AAA
+  url: null
+  quoted_text: Whoever violates the provisions of clause (k) shall be punished by a fine of not less
+    than one thousand nor more than twenty-five hundred dollars
+  secondary: []
+math:
+  worked_solution: |-
+    Minimum fine = $1,000
+    Maximum fine = $2,500
+    Imposed fine = $1,800
+    Check lower bound: $1,800 ≥ $1,000 → true
+    Check upper bound: $1,800 ≤ $2,500 → true
+    Both conditions are true, therefore the fine is within the statutory range.
+  formulas:
+    - Range inclusion test
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - clause
+  - range
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

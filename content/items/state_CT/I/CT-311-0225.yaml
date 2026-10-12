@@ -1,0 +1,42 @@
+id: CT-311-0225
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Governor appoints five members of the Connecticut Real Estate Commission who are
+  registered Democrats and three members who are registered Republicans. Does this appointment
+  comply with the statutory limitation on political party representation?
+options:
+  - Yes, because a bare majority of eight members is five
+  - No, because the statute prohibits any political party from having a majority of members
+  - No, because the commission must have an equal number of members from each major party
+  - Yes, because the Governor may appoint any combination of party affiliations
+key: A
+explanation: Under Conn. Gen. Stat. § 20-311a(b), not more than a bare majority of the commission
+  may belong to the same political party. For an eight‑member commission, a bare majority is five,
+  so five Democrats and three Republicans does not exceed that limit. The claim that the Governor
+  may appoint any combination of party affiliations is incorrect, as is the claim that the
+  commission must have equal numbers from each major party, and the claim that the statute prohibits
+  any party from having a majority is also incorrect.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311 § 20-311a(b)
+  url: null
+  quoted_text: Not more than a bare majority of the commission shall be members of the same political party.
+  secondary: []
+terms:
+  - political party
+  - bare majority
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

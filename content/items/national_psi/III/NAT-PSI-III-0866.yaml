@@ -1,0 +1,52 @@
+id: NAT-PSI-III-0866
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A building has replacement cost new of $320,000. The appraiser estimates an effective age of
+  12 years and a total economic life of 40 years. Land value is $70,000. Using the straight-line
+  method, what is the indicated value?
+options:
+  - $294,000
+  - $224,000
+  - $264,000
+  - $324,000
+key: A
+explanation: The cost approach value equals cost new minus accrued depreciation plus land value.
+  Accrued depreciation is (effective age ÷ total economic life) × cost new = (12 ÷ 40) × $320,000 =
+  $96,000. Depreciated cost is $320,000 − $96,000 = $224,000. Adding land value of $70,000 gives
+  $294,000. The $224,000 distractor omits the land value, which is a common error.
+citation:
+  source: REP Ref. Valuation & Appraisal § 8.1
+  url: null
+  quoted_text: Cost approach value = cost new of the improvements − accrued depreciation + land (site) value.
+  secondary: []
+math:
+  worked_solution: |-
+    Accrued depreciation = (effective age / total economic life) × cost new
+    Accrued depreciation = (12 / 40) × 320,000 = 0.3 × 320,000 = 96,000
+    Depreciated cost = cost new − accrued depreciation = 320,000 − 96,000 = 224,000
+    Value indication = depreciated cost + land value = 224,000 + 70,000 = 294,000
+  formulas:
+    - Accrued depreciation = (effective age ÷ total economic life) × cost new
+    - Depreciated cost = cost new − accrued depreciation
+    - Value indication = depreciated cost + land value
+  onscreen_calculator_only: false
+terms:
+  - cost approach
+  - straight-line method
+  - accrued depreciation
+  - land value
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

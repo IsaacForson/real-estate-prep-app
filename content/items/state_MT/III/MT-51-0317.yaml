@@ -1,0 +1,38 @@
+id: MT-51-0317
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Which item must be included in a citation issued by the department for a trust account
+  maintenance violation under Montana law?
+options:
+  - The name of the buyer's lender
+  - The amount of the broker's annual commission
+  - The time and date on which the citation is issued
+  - The broker's social security number
+key: C
+explanation: Under Mont. Code Ann. § 37-51-324(2)(a), a citation must include the time and date on
+  which it is issued. The broker's social security number, commission amount, and buyer's lender
+  name are not required elements of the citation.
+citation:
+  source: Mont. Code Ann. § 37-51-324(2)
+  url: null
+  quoted_text: (a) the time and date on which the citation is issued;
+  secondary: []
+terms:
+  - citation
+  - trust account
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

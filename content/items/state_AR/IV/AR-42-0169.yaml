@@ -1,0 +1,44 @@
+id: AR-42-0169
+jurisdiction: AR
+bank: state_AR
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate license had her cosmetology license revoked by the State Board
+  of Cosmetology on January 10. She submits her real estate license application on March 1.
+  According to Arkansas Real Estate Commission Rules, when must she submit the written report of the
+  cosmetology license revocation?
+options:
+  - Only if requested by the Commission
+  - With the real estate license application
+  - Within thirty days of the revocation
+  - After the cosmetology license is reinstated
+key: B
+explanation: Rule 10.16(c) requires an applicant who has had a professional license denied, revoked,
+  suspended, or canceled to furnish the written report at the time the application is submitted if
+  the action has already occurred. Since the revocation occurred before the application, the report
+  must accompany the application. Reporting within thirty days of the revocation applies to new
+  convictions, not prior license actions.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.16(c)
+  url: null
+  quoted_text: shall furnish the written report referred to in Regulation 10.16 (a) and/or (b) to the
+    Commission at the time the application is submitted if such action has already occurred,
+    otherwise such report shall be made immediately after the action occurs
+  secondary: []
+terms:
+  - report
+  - application
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-24

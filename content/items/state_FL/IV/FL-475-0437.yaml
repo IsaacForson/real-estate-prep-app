@@ -1,0 +1,54 @@
+id: FL-475-0437
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker’s lien notice claims a commission of $12,000. The owner decides to transfer the lien
+  to a bond under s. 475.811(1)(a)2. Assuming the legal rate of interest is 5% per year, what is the
+  minimum amount of the bond required by statute?
+options:
+  - $15,000
+  - $16,800
+  - $17,800
+  - $14,800
+key: B
+explanation: The statute requires the bond to equal the amount claimed, plus interest at the legal
+  rate for 3 years, plus the greater of $1,000 or 25% of the amount claimed. Interest is $12,000 ×
+  0.05 × 3 = $1,800; 25% of $12,000 is $3,000 (greater than $1,000). Summing $12,000 + $1,800 +
+  $3,000 yields $16,800. The distractor that omits interest ($15,000) is incorrect because the
+  statute expressly includes interest for the three‑year period.
+citation:
+  source: Fla. Stat. § 475.811(1)(a)2
+  url: null
+  quoted_text: equal to the amount claimed in the lien notice, plus interest thereon at the legal rate
+    for 3 years, plus $1,000 or 25 percent of the amount demanded in the lien notice, whichever is
+    greater
+  secondary: []
+math:
+  worked_solution: |-
+    Amount claimed: $12,000
+    Interest for 3 years at legal rate 5%: $12,000 × 0.05 × 3 = $1,800
+    Greater of $1,000 or 25% of amount claimed: 25% × $12,000 = $3,000 (greater than $1,000)
+    Total bond amount: $12,000 + $1,800 + $3,000 = $16,800
+  formulas:
+    - Interest = Principal × Rate × Time
+    - Total = Principal + Interest + Greater of $1,000 or 25% of Principal
+  onscreen_calculator_only: false
+terms:
+  - lien
+  - bond
+  - interest
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

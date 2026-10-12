@@ -1,0 +1,44 @@
+id: MN-82-0333
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate closing agent intends to charge a borrower a closing fee at settlement. The fee
+  was disclosed in writing to the borrower three business days before settlement. Is the fee
+  permissible under Minn. Stat. § 82.70 Subd. 6?
+options:
+  - The fee is permissible because it is less than $1,000 regardless of disclosure timing under any
+    circumstances.
+  - The fee is not permissible because a closing agent generally may not charge a borrower a fee.
+  - The fee is permissible because the disclosure was made at least one business day before
+    settlement.
+  - The fee is not permissible because disclosure must occur at least two business days before
+    settlement.
+key: C
+explanation: The statute permits a closing fee if it was disclosed in writing at least one business
+  day before settlement; a three‑day notice satisfies this requirement. The other options add
+  conditions not found in the statute.
+citation:
+  source: Minn. Stat. ch. 82 § 82.70 Subd. 6
+  url: null
+  quoted_text: A real estate closing agent may not charge a fee for closing services to a borrower,
+    and a borrower may not be required to pay such a fee at settlement, if the fee was not
+    previously disclosed in writing at least one business day before the settlement.
+  secondary: []
+terms:
+  - closing agent fee
+  - disclosure
+  - settlement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

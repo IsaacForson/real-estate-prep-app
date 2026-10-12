@@ -1,0 +1,42 @@
+id: IA-543B-0427
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee purchases a home-study continuing education course on March 1. They complete all
+  quizzes and assignments on August 20 and pass the final examination on August 25. Does the
+  licensee receive course credit under Iowa Admin. Code r. 481-2017?
+options:
+  - The licensee receives course credit.
+  - No credit because exam after deadline.
+  - No credit because quizzes after deadline.
+  - Credit only if retake after deadline.
+key: A
+explanation: Under Iowa Admin. Code r. 481-2017 — 2017.11(6), a licensee has six months from
+  purchase to finish quizzes, assignments, and the final exam. Since the licensee finished all work
+  by August 25, which is within six months of the March 1 purchase, credit is awarded. The claim
+  that the final exam was taken after the deadline is false because the exam occurred on August 25,
+  before the September 1 deadline.
+citation:
+  source: Iowa Admin. Code r. 481-2017 — 2017.11(6)
+  url: null
+  quoted_text: A licensee has six months from the date of purchase to complete all quizzes and
+    assignments and to pass the final examination.
+  secondary: []
+terms:
+  - licensee
+  - purchase
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

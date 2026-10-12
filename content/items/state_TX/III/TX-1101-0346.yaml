@@ -1,0 +1,42 @@
+id: TX-1101-0346
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A license holder stopped using an alternate name on April 5. Besides the Texas Real Estate
+  Commission, who else must the license holder notify within 10 days under 22 Tex. Admin. Code §
+  535.154?
+options:
+  - The buyer in the transaction
+  - Their sponsoring broker only
+  - The title company handling closing
+  - The seller in the transaction
+key: B
+explanation: The rule requires the license holder to notify both the Commission and their sponsoring
+  broker after stopping use of an alternate name. Therefore, besides the Commission, the sponsoring
+  broker must also be notified. The buyer, seller, and title company are not required recipients of
+  this notice.
+citation:
+  source: 22 Tex. Admin. Code ch. 535 § 535.154
+  url: null
+  quoted_text: A license holder must notify the Commission using a process acceptable to the
+    Commission, and their sponsoring broker, not later than the 10th day after the date the license
+    holder stops using an alternate name.
+  secondary: []
+terms:
+  - alternate name
+  - notification
+  - sponsoring broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

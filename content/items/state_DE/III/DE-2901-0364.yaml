@@ -1,0 +1,40 @@
+id: DE-2901-0364
+jurisdiction: DE
+bank: state_DE
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Delaware law, within how many hours must a broker deposit escrow money into the broker’s
+  escrow account after a written agreement is signed by all parties, excluding weekends and federal
+  holidays?
+options:
+  - 24 hours
+  - 48 hours
+  - 72 hours
+  - 96 hours
+key: C
+explanation: The statute requires the broker to deposit the moneys within 72 hours of the signing of
+  the written agreement by all parties, excluding weekends and federal holidays. The other options
+  represent incorrect time periods.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 § 2923(d)
+  url: null
+  quoted_text: The broker shall deposit the moneys into the broker’s escrow account within 72 hours of
+    the signing of the written agreement by all parties, or by the dates defined therein, excluding
+    weekends and federal holidays.
+  secondary: []
+terms:
+  - escrow deposit
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

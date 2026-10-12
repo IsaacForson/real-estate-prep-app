@@ -1,0 +1,39 @@
+id: OK-605-0359
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property manager rents a furnished suite to a traveler for 35 days. Under Oklahoma Statute §
+  858-301(8), is the manager exempt from licensing requirements?
+options:
+  - The manager is exempt because the rental period is less than thirty days.
+  - The manager is not exempt because the rental period exceeds thirty days.
+  - The manager is exempt because the property is furnished and rented for less than thirty days.
+  - The manager is not exempt because the manager is not an employee of a licensed broker.
+key: B
+explanation: The exemption applies only to rentals of less than thirty days; a 35‑day rental exceeds
+  that limit, so the manager is not exempt. The distractor claiming exemption because the property
+  is furnished is incorrect because furnishing does not affect the time‑based exemption.
+citation:
+  source: Okla. Stat. tit. 59 § 858-301(8)
+  url: null
+  quoted_text: '"transient lodging facility" means a furnished room or furnished suite of rooms which
+    is rented to a person on a daily basis, not as a principal residence, for a period less than
+    thirty (30) days'
+  secondary: []
+terms:
+  - transient lodging
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

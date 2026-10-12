@@ -1,0 +1,42 @@
+id: NAT-PV-IV-1521
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to the text, how is a death on the premises treated regarding disclosure as a
+  material fact?
+options:
+  - Assuming it is generally not material because it is not a physical defect
+  - Treating it as a material fact only if the buyer asks directly
+  - Considering it a material fact that must be disclosed in all states
+  - Recognizing that disclosure requirements vary by state and many states exclude it
+key: D
+explanation: Facts that are not about the physical property, such as a death on the premises, are
+  treated as material only according to state law; many states expressly exclude them from
+  disclosure requirements. Therefore, the correct approach is to recognize that disclosure
+  obligations vary by state.
+citation:
+  source: REP Ref. Agency § 6.3
+  url: null
+  quoted_text: Whether facts *not* about the physical property (a death on the premises, a nearby
+    registered offender, alleged hauntings, or the property's stigma) are material and must be
+    disclosed varies by state; many states expressly exclude some of these.
+  secondary: []
+terms:
+  - death on premises
+  - material fact
+  - disclosure
+  - state
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

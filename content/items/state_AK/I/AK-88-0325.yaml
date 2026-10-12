@@ -1,0 +1,48 @@
+id: AK-88-0325
+jurisdiction: AK
+bank: state_AK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: A licensee receives written notice from the Alaska Real Estate Commission of a proposed civil
+  penalty order for unlicensed practice. How many days does the licensee have to request a hearing
+  on the record after receiving this notice?
+options:
+  - 15 days to request a hearing
+  - 10 days to request a hearing
+  - 30 days to request a hearing
+  - 60 days to request a hearing
+key: C
+explanation: Under AS 08.88.167(c), the commission must provide a 30‑day period to request a hearing
+  after sending notice of a proposed civil penalty order. The 10‑day option confuses this with the
+  shorter period that applies only after a court judgment on a stayed order.
+citation:
+  source: Alaska Stat. § 08.88.011 et seq. — Alaska Statutes Title 08, Chapter 88 - Real Estate
+    Brokers and Other Licensees (2025) — § 08.88.167
+  url: null
+  quoted_text: Before entering an order under (a) of this section, the commission shall send the
+    person written notice of the proposed order that grants the person a 30-day period during which
+    the person may request a hearing on the record.
+  secondary: []
+math:
+  worked_solution: The statute (AS 08.88.167) grants a 30‑day period to request a hearing after notice
+    of a proposed civil penalty order. Therefore, the licensee has 30 days.
+  formulas:
+    - Statutory period = 30 days
+  onscreen_calculator_only: false
+terms:
+  - hearing
+  - civil penalty
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,39 @@
+id: OH-4735-0288
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum fine that may be assessed in a single citation under Ohio Rev. Code §
+  4735.16(C)(1)?
+options:
+  - $200 per violation.
+  - $500 per violation.
+  - $2,500 per citation.
+  - $5,000 per citation.
+key: C
+explanation: The rule states that a citation must contain a fine of $200 per violation, not to
+  exceed $2,500 per citation. Therefore the maximum per citation is $2,500. The $200 per violation
+  amount applies to each individual violation, not the citation total.
+citation:
+  source: Ohio Rev. Code § 4735.16(C)(1)
+  url: null
+  quoted_text: The citation also shall contain a statement of a fine of two hundred dollars per
+    violation, not to exceed two thousand five hundred dollars per citation.
+  secondary: []
+terms:
+  - fine
+  - citation
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

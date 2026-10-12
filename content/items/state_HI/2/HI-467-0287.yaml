@@ -1,0 +1,48 @@
+id: HI-467-0287
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A developer reserves the right in the declaration to construct a new swimming pool on land
+  adjacent to the existing condominium building. Under Hawaii Revised Statutes § 514B-3, does this
+  reservation constitute a development right?
+options:
+  - Yes, because adding real estate to a condominium is one of the enumerated development rights.
+  - No, because adding real estate to a condominium is not listed as a development right.
+  - Yes, because the swimming pool is considered a limited common element.
+  - No, because the association alone decides on new amenities.
+key: A
+explanation: The definition of development rights includes the right to add real estate to a
+  condominium. Reserving the right to build a swimming pool on adjacent land constitutes adding real
+  estate, so it qualifies. The option that says adding real estate is not listed as a development
+  right is incorrect because the statute explicitly lists adding real estate as a development right.
+  The option that characterizes the pool as a limited common element is incorrect because the
+  reservation concerns adding real estate, not classifying the pool as a limited common element. The
+  option that places authority solely with the association is incorrect because the developer’s
+  reservation in the declaration creates the development right, not the association.
+citation:
+  source: "### Haw. Rev. Stat. ch. 514B — Hawaii Revised Statutes Chapter 514B - Condominiums
+    (data.capitol.hawaii.gov, section pages concatenated) — § 514B-3"
+  url: null
+  quoted_text: '"Development rights" means any right or combination of rights reserved by a developer
+    in the declaration to: (1) Add real estate to a condominium; (2) Create units, common elements,
+    or limited common elements within a condominium; (3) Subdivide units, combine units, or convert
+    units into common elements; (4) Withdraw real estate from a condominium; (5) Merge projects or
+    increments of a project; or (6) Otherwise alter the condominium.'
+  secondary: []
+terms:
+  - development
+  - right
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

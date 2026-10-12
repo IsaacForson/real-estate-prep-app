@@ -1,0 +1,42 @@
+id: MN-82-0379
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker asks an unlicensed assistant to show properties to prospective buyers and negotiate
+  offers. Is this permissible under Minn. Stat. § 82.81, Subd. 4?
+options:
+  - The broker's action is permissible because the assistant is supervised.
+  - The broker's action is permissible if the assistant obtains a temporary permit.
+  - The broker's action is permissible because the assistant is not compensated.
+  - The broker's action is prohibited because the assistant is unlicensed.
+key: D
+explanation: Subd. 4 forbids a broker from engaging or authorizing any unlicensed person to act as a
+  broker, salesperson, or closing agent on the broker's behalf. Supervision or lack of compensation
+  does not override this prohibition.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.81 Subd. 4
+  url: null
+  quoted_text: No real estate broker, salesperson, or closing agent shall engage or authorize any
+    person, except one licensed as provided herein, to act as a real estate broker, salesperson, or
+    closing agent on the engager's or authorizer's behalf.
+  secondary: []
+terms:
+  - unlicensed person
+  - broker
+  - salesperson
+  - closing agent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

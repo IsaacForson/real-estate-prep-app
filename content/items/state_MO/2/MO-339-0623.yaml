@@ -1,0 +1,47 @@
+id: MO-339-0623
+jurisdiction: MO
+bank: state_MO
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A corporation applies for a broker license. Its manager has been convicted of forgery. Under §
+  339.110, may the commission refuse to issue the license to the corporation?
+options:
+  - Yes, because the manager is a manager of the corporation.
+  - Yes, because forgery is not listed as an offense under the statute.
+  - Yes, but only if the manager also holds a controlling interest as a stockholder.
+  - Yes, because the manager's conviction does not affect the corporation's eligibility.
+key: A
+explanation: The statute permits the commission to deny a broker license to a corporation when an
+  individual who serves as a manager, officer, or general partner of that corporation has been
+  convicted of forgery. Therefore, the option stating that the manager's conviction allows refusal
+  because the manager is a manager of the corporation is correct. The option claiming that forgery
+  is not listed as an offense under the statute is incorrect because forgery is expressly listed as
+  an offense. The option suggesting refusal only if the manager also holds a controlling interest as
+  a stockholder is incorrect because the statute does not require a stockholding interest; any
+  manager, officer, or general partner suffices. The option asserting that the manager's conviction
+  does not affect the corporation's eligibility is incorrect because the statute explicitly ties the
+  conviction of a manager, officer, or general partner to the corporation's eligibility.
+citation:
+  source: Mo. Rev. Stat. ch. 339; 20 CSR 2250 (MREC Statutes and Rules) — Missouri Real Estate
+    Commission — Statutes (RSMo Chapter 339) and Rules (20 CSR 2250) book (June 2023) — § 339.110
+  url: null
+  quoted_text: or to any association, partnership, corporation, professional corporation, limited
+    partnership, or limited liability company of which such person is a manager, officer or general
+    partner
+  secondary: []
+terms:
+  - manager
+  - forgery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

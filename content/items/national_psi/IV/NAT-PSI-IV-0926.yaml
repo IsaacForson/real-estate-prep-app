@@ -1,0 +1,41 @@
+id: NAT-PSI-IV-0926
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An appraiser conducts only an exterior inspection of a property for a higher-risk mortgage.
+  Does this appraisal satisfy the requirement of TILA §1639h(b)(1)?
+options:
+  - No, unless the property is a condominium unit, in any case
+  - Yes, provided the appraiser is certified or licensed in the state
+  - No, because the appraisal must include a physical property visit of the interior
+  - Yes, because an exterior inspection is sufficient for all property types
+key: C
+explanation: The regulation requires that an appraisal for a higher-risk mortgage be performed by a
+  certified or licensed appraiser who conducts a physical property visit of the interior of the
+  mortgaged property. An exterior-only inspection fails to meet this requirement.
+citation:
+  source: 15 U.S.C. § 1639h(b)(1)
+  url: null
+  quoted_text: Subject to the rules prescribed under paragraph (4), an appraisal of property to be
+    secured by a higher-risk mortgage does not meet the requirement of this section unless it is
+    performed by a certified or licensed appraiser who conducts a physical property visit of the
+    interior of the mortgaged property.
+  secondary: []
+terms:
+  - appraisal
+  - physical property visit
+  - certified appraiser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

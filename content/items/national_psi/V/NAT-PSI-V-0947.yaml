@@ -1,0 +1,40 @@
+id: NAT-PSI-V-0947
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord sells a rental house while a tenant has a six-month lease remaining. According to
+  the text, what is the effect on the tenant's lease?
+options:
+  - The lease ends and the tenant must vacate.
+  - The lease continues unchanged under the new owner.
+  - The lease is automatically renewed for another term.
+  - The lease becomes void and the tenant receives a refund.
+key: B
+explanation: The text expressly states that the sale of the property does not terminate a lease; the
+  new owner takes subject to existing tenancies. Thus the lease continues with the new owner
+  unchanged. The distractor that the lease ends mistakenly treats sale as a terminating event.
+citation:
+  source: REP Ref. Contracts § 12.5
+  url: null
+  quoted_text: The sale of the property does not terminate a lease; the new owner takes subject to
+    existing tenancies.
+  secondary: []
+terms:
+  - lease
+  - sale
+  - tenancy
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

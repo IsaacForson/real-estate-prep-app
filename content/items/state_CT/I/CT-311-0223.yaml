@@ -1,0 +1,46 @@
+id: CT-311-0223
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A school hires an instructor to teach a continuing education course on property management.
+  The instructor has three years of experience as a practicing real estate licensee and holds a
+  professional designation from the National Association of Property Managers. According to Conn.
+  Gen. Stat. § 20-314(c), does the instructor meet the qualification requirement?
+options:
+  - Yes, because the instructor has at least five years of experience.
+  - No, because the instructor lacks five years of experience but has a professional designation.
+  - Yes, because the instructor has expertise or a professional designation in the field.
+  - No, because the instructor must have teaching experience and a master's degree.
+key: C
+explanation: Under subsection (c), an instructor qualifies if they have expertise or a professional
+  designation from an institute or society in the field they propose to teach. The instructor’s
+  professional designation satisfies this alternative, so the requirement is met. The distractor
+  incorrectly claims that lacking five years of experience disqualifies the instructor, but the
+  designation provides an independent path to qualification.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-314(c)
+  url: null
+  quoted_text: "(c) No school shall permit an instructor to teach a course approved under this chapter
+    unless such school has determined that the instructor has: (1) At least five years of experience
+    as a practicing real estate licensee; (2) Expertise, or a professional designation from an
+    institute or society, in the field in which such instructor proposes to teach; or (3) Experience
+    teaching a course in a formal education program or has attended an accredited college or
+    university extension instructors' seminar."
+  secondary: []
+terms:
+  - instructor qualification
+  - professional designation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

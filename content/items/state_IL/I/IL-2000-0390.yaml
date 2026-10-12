@@ -1,0 +1,46 @@
+id: IL-2000-0390
+jurisdiction: IL
+bank: state_IL
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee holds escrow funds for a residential sale and, prior to closing, disburses the
+  funds to the seller following written instructions signed by both the buyer and seller. Under the
+  Illinois Real Estate License Act of 2000, is this disbursement permissible?
+options:
+  - The disbursement is permissible because disbursement followed written principals' direction
+  - The disbursement is impermissible because the licensee must obtain verbal approval from the
+    principals
+  - The disbursement is impermissible because escrow funds must remain on deposit until termination
+  - The disbursement is impermissible because only a court order may authorize early disbursement
+key: A
+explanation: The disbursement is allowed because it follows the written direction of the principals,
+  which is an express exception to the rule that escrow must remain on deposit until termination or
+  court order. The other options incorrectly require verbal approval, a court order, or indefinite
+  retention.
+citation:
+  source: "### 225 ILCS 454 — Illinois Compiled Statutes 225 ILCS 454 — Real Estate License Act of
+    2000 (full act text; official ilga.gov page read via Internet Archive capture of March 2025
+    because ilga.gov refuses connections from this environment) Sec. 20-20(a)(17)"
+  url: null
+  quoted_text: "except to the extent that the moneys, or any part thereof, shall be: (A) disbursed
+    prior to the consummation or termination (i) in accordance with the written direction of the
+    principals to the transaction or their duly authorized agents"
+  secondary: []
+terms:
+  - escrow
+  - disbursement
+  - written direction
+  - principals
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,46 @@
+id: OH-4735-0317
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: If the one-year renewal fee for a salesperson license is $45, what is the total fee for a
+  three-year renewal under Ohio Adm. Code Rule 1301:5-1-22?
+options:
+  - $135.00
+  - $180.00
+  - $90.00
+  - $105.00
+key: A
+explanation: The rule states that a three‑year renewal fee is three times the one‑year fee.
+  Multiplying $45 by 3 yields $135.00, making that option correct. The $105.00 option incorrectly
+  adds $60 to the one‑year fee instead of tripling it.
+citation:
+  source: "Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 — § 5-1-22"
+  url: null
+  quoted_text: All licenses renewed on a timely basis shall be renewed for a three year period for a
+    fee that is three times the renewal fee for one year for that license
+  secondary: []
+math:
+  worked_solution: "Step 1: One-year renewal fee = $45.00. Step 2: Three-year renewal fee = 3 × $45.00 = $135.00."
+  formulas:
+    - Three-year fee = 3 × one-year fee
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - renewal
+  - three-year
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

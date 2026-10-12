@@ -1,0 +1,49 @@
+id: MS-1954-0145
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "8"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a second written offer from a buyer after the seller has already accepted a
+  first offer. The seller has not given written instructions to postpone presentation of other
+  offers. According to Mississippi Real Estate Commission Rule 3.2, what must the broker do with
+  this second offer?
+options:
+  - The broker must withhold the second offer unless the seller orders postponement.
+  - The broker must present the second offer to the seller promptly.
+  - The broker must return the second offer to the buyer and note the acceptance.
+  - The broker has no duty to present the second offer after acceptance.
+key: D
+explanation: Rule 3.2 requires the broker to present any other written offer received before the
+  seller has accepted an offer, unless the seller has given specific written instructions to
+  postpone presentation. Once the seller has accepted an offer, the condition that triggers the duty
+  to present additional offers is no longer satisfied, so the broker is not required to present the
+  second offer. The option stating that the broker must withhold the second offer unless the seller
+  orders postponement incorrectly extends the duty beyond acceptance, and the option stating that
+  the broker must present the second offer promptly adds a requirement not found in the rule.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 3.2
+  url: null
+  quoted_text: In the event that more than one written offer is made before the owner has accepted an
+    offer, any other written offer received by the listing broker, whether from a prospective
+    purchaser or from another licensee cooperating in a sale, shall be presented to the owner unless
+    the listing broker has specific, written instructions from the owner to postpone the
+    presentation of other offers.
+  secondary: []
+terms:
+  - offer
+  - presentation
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

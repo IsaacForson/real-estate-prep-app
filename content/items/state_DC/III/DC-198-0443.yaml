@@ -1,0 +1,41 @@
+id: DC-198-0443
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An escrow account is opened on February 1 and remains open for 95 days before the transaction
+  is consummated. According to D.C. Code § 42-1704(e), on what date does the escrow begin to earn
+  interest?
+options:
+  - May 1
+  - May 2
+  - May 3
+  - May 4
+key: B
+explanation: Interest accrues from the 91st day after the escrow is opened. Adding 90 days to
+  February 1 yields May 2, which is the 91st day. The distractor “May 3” mistakenly adds 91 days
+  instead of 90.
+citation:
+  source: D.C. Code § 42-1704(e)
+  url: null
+  quoted_text: "If an escrow or trust is held for 90 days or more, it shall earn interest from the
+    91st day to the date the transaction is consummated or terminated, at the highest of the
+    following interest rates:"
+  secondary: []
+terms:
+  - escrow
+  - interest
+  - trust
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

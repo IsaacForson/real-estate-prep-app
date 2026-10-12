@@ -1,0 +1,43 @@
+id: VT-2211-0331
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate broker informs a depositor whether earnest money is placed in an
+  individual interest‑bearing trust account or a pooled interest‑bearing trust account but does not
+  retain a written statement signed by the beneficial owner. Under Vermont law, what is the
+  consequence for this omission?
+options:
+  - The broker must return the deposit to the buyer immediately.
+  - The broker’s license is automatically revoked.
+  - The broker is subject to penalties under 3 V.S.A. § 127.
+  - The broker must pay a fine of $500 to the Vermont Real Estate Commission.
+key: C
+explanation: Section 2214(d) requires the broker to retain a written statement signed by the
+  beneficial owner indicating the account type; omitting this violates the chapter. By § 2213, any
+  violation triggers penalties under 3 V.S.A. § 127. The distractor about automatic license
+  revocation overstates the penalty, as the statute provides for penalties but not automatic
+  revocation.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2213
+  url: null
+  quoted_text: A person who shall violate any provision of this chapter shall be subject to the
+    penalties provided in 3 V.S.A. § 127.
+  secondary: []
+terms:
+  - written statement
+  - beneficial owner
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

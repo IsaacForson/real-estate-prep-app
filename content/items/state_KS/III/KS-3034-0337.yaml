@@ -1,0 +1,41 @@
+id: KS-3034-0337
+jurisdiction: KS
+bank: state_KS
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Kansas branch broker enters into a broker cooperation agreement with a foreign licensee to
+  sell a residential property that is improved with a single-family residence. The agreement
+  includes all other required provisions. Under Kansas law, is the branch broker permitted to share
+  commissions with the foreign licensee?
+options:
+  - Yes, because the agreement includes all required provisions
+  - Yes, because the property is commercial real estate
+  - No, because the property is improved with a single-family residence
+  - No, because the foreign licensee must be licensed in Kansas
+key: C
+explanation: Kansas law allows a broker to share commission with a foreign‑licensed broker only when
+  the real estate is not improved with a single‑family residence. Because the property is improved
+  with a single‑family residence, the sharing condition is not met, so the broker may not share the
+  commission. The other answer choices incorrectly rely on the presence of required provisions, a
+  commercial classification, or the foreign broker’s licensing status.
+citation:
+  source: Kan. Stat. Ann. § 58-3077(b)(1)
+  url: null
+  quoted_text: The real estate is not improved with a single family residence;
+  secondary: []
+terms:
+  - single-family residence
+  - foreign licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

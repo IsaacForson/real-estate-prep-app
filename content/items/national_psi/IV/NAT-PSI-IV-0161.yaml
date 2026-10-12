@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0161
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: On Monday, January 1, the loan is consummated. The licensee delivers the required TILA
+  disclosures and rescission forms on Wednesday, January 3. Assuming no holidays, at what time does
+  the obligor's right to rescind expire?
+options:
+  - Midnight of Thursday, January 11.
+  - Midnight of Tuesday, January 9.
+  - Midnight of Monday, January 8.
+  - Midnight of Wednesday, January 10.
+key: C
+explanation: The later event is the delivery on Wednesday, January 3. The third business day after
+  that is Thursday (1), Friday (2), and Monday (3), so the right expires at midnight of Monday,
+  January 8. The option stating midnight of Tuesday, January 9 mistakenly uses the earlier
+  consummation date, while the options stating midnight of Wednesday, January 10 and midnight of
+  Thursday, January 11 add extra days.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1635(a)
+  url: null
+  quoted_text: until midnight of the third business day following the consummation of the transaction
+    or the delivery of the information and rescission forms required under this section together
+    with a statement containing the material disclosures required under this subchapter, whichever
+    is later
+  secondary: []
+terms:
+  - rescission
+  - consummation
+  - disclosures
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

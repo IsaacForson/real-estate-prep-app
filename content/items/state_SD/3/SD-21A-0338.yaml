@@ -1,0 +1,51 @@
+id: SD-21A-0338
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A subdivision certificate holder originally registered for 85 lots. What is the annual fee due
+  each January first under South Dakota law?
+options:
+  - $60
+  - $50
+  - $80
+  - $70
+key: A
+explanation: Under S.D. Codified Laws § 36-21A-97, the annual fee is $50 plus $10 for each 100‑lot
+  increment or fraction thereof. For 85 lots, the fraction of a 100‑lot block counts as one
+  increment, so the fee is $50 + (1 × $10) = $60. The $50 option omits the required increment
+  charge; the $70 option would apply two increments (appropriate for 101‑200 lots); the $80 option
+  would apply three increments (appropriate for 201‑300 lots).
+citation:
+  source: S.D. Codified Laws § 36-21A-97
+  url: null
+  quoted_text: After issuance of a certificate, an annual fee of fifty dollars plus ten dollars for
+    each one hundred lots or fraction thereof computed on the number of lots in the original
+    application shall be due and payable on or before January first of each year.
+  secondary: []
+math:
+  worked_solution: |-
+    Base fee = $50
+    Number of 100‑lot increments = ceil(85/100) = 1
+    Increment charge = 1 × $10 = $10
+    Total annual fee = $50 + $10 = $60
+  formulas:
+    - Annual fee = base fee + (ceil(lots/100) × increment fee)
+  onscreen_calculator_only: false
+terms:
+  - annual fee
+  - subdivision certificate
+  - lots
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,45 @@
+id: FL-475-0436
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker transfers a lien to a cash deposit under s. 475.811(1)(a)1. If the broker does
+  **NOT** commence a proceeding to enforce the transferred lien before the lien notice expires, what
+  must the clerk do upon the depositor's request?
+options:
+  - The clerk shall retain the deposit as payment for administrative fees.
+  - The clerk shall apply the deposit to any outstanding attorney’s fees and court costs.
+  - The clerk shall return the security to the depositor.
+  - The clerk shall forward the deposit to the Florida Real Estate Commission.
+key: C
+explanation: Under s. 475.811(4), if a proceeding to enforce a transferred lien is not commenced
+  within the time specified in s. 475.809, the clerk shall return the security to the person who
+  deposited it upon request. Thus the clerk must return the deposit. The distractor that the clerk
+  should apply the deposit to fees is incorrect because the statute mandates return, not
+  application, when the enforcement deadline is missed.
+citation:
+  source: Fla. Stat. § 475.811(4)
+  url: null
+  quoted_text: If a proceeding to enforce a transferred lien is not commenced within the time
+    specified in s. 475.809 or if it appears that the transferred lien has been satisfied of record,
+    the clerk shall return said security upon request of the person depositing or filing the same,
+    or the insurer.
+  secondary: []
+terms:
+  - lien
+  - transfer
+  - security
+  - request
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

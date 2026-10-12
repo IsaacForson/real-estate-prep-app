@@ -1,0 +1,41 @@
+id: SD-21A-0195
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under South Dakota law, what is the consequence if a responsible broker receives compensation
+  before a transaction is consummated or terminated?
+options:
+  - The broker must return the money only if the client demands it
+  - The broker may retain the money if the transaction is later terminated
+  - The broker may keep the money as an advance on future earnings
+  - The broker is not entitled to retain the money as compensation
+key: D
+explanation: Per §36-21A-84, a responsible broker is not entitled to any part of the compensation
+  until the transaction has been consummated or terminated; therefore receiving money earlier does
+  not confer entitlement to retain it as compensation. The option stating that the broker may keep
+  the money as an advance on future earnings is incorrect because the statute does not condition
+  repayment on a client demand; the broker simply lacks entitlement to keep the funds.
+citation:
+  source: S.D. Codified Laws § 36-21A-84
+  url: null
+  quoted_text: No responsible broker is entitled to any part of the money paid to the responsible
+    broker in any transaction as part of the responsible broker's compensation until the transaction
+    has been consummated or terminated.
+  secondary: []
+terms:
+  - broker
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

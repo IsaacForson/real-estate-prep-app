@@ -1,0 +1,45 @@
+id: ND-23-0176
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker represents both buyer and seller in a transaction. At closing, the broker provides
+  the parties with a copy of the purchase agreement and the earnest money receipt but does not
+  provide a detailed closing statement showing all receipts and disbursements. What has the broker
+  done?
+options:
+  - The broker violated the rule by failing to deliver a detailed closing statement
+  - The broker complied because the purchase agreement serves as the closing statement
+  - The broker violated the rule only if the transaction exceeds $100,000
+  - The broker committed no violation since the parties received the purchase agreement
+key: A
+explanation: Under N.D. Cent. Code § 43-23-11.1(1)(o), a broker must deliver a detailed closing
+  statement at consummation showing all receipts and disbursements handled for the parties.
+  Providing only the purchase agreement and earnest money receipt does not meet this requirement, so
+  the broker violated the rule.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-11.1(1)(o)
+  url: null
+  quoted_text: A broker failing to deliver to the party or parties represented by the broker a
+    complete detailed closing statement in every real estate transaction, at the time the
+    transaction is consummated, showing all of the receipts and disbursements handled by the broker
+    for the party or parties represented by the broker
+  secondary: []
+terms:
+  - closing
+  - statement
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

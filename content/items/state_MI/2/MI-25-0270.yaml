@@ -1,0 +1,46 @@
+id: MI-25-0270
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker advertises a virtual office with no physical location as the place where
+  clients may consult and do business. Under MCL 339.2501(m), is this considered a place of
+  business?
+options:
+  - Yes, because the broker advertises the virtual office to the public.
+  - No, because a place of business must be a physical location.
+  - Yes, because clients can consult and do business via the virtual office.
+  - No, because the broker does not have a signed lease for the virtual space.
+key: B
+explanation: MCL 339.2501(m) defines a place of business as a physical location that the broker
+  represents to the public as a place for consultation or business. A virtual office without a
+  physical location does not meet this definition. The distractor citing lack of a lease is
+  incorrect because the definition does not require a lease.
+citation:
+  source: "### Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers — § 339.2501"
+  url: null
+  quoted_text: '"Place of business" means a physical location that a real estate broker, by
+    advertisement, signage, or otherwise, represents to the public is a place where clients and
+    customers may consult or do business with a licensee.'
+  secondary: []
+terms:
+  - place of business
+  - physical location
+  - advertisement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

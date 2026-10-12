@@ -1,0 +1,42 @@
+id: FL-475-0475
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An appraiser is convicted of a felony on March 1. According to Florida law, what is the last
+  day she may notify the board in writing to satisfy the 30‑day notification requirement?
+options:
+  - April 01, 2025
+  - April 15, 2025
+  - March 31, 2025
+  - May 01, 2025
+key: C
+explanation: The rule requires the appraiser to inform the board in writing within 30 days after a
+  felony conviction. Counting 30 days from March 1 brings the deadline to March 31, so that date is
+  correct. The April 01 option mistakenly adds an extra day, while the later dates exceed the
+  statutory window.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.624(9)
+  url: null
+  quoted_text: Has failed to inform the board in writing within 30 days after pleading guilty or nolo
+    contendere to, or being convicted or found guilty of, any felony.
+  secondary: []
+terms:
+  - felony
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,37 @@
+id: CA-4-0381
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A licensee prepares the billing disclosure form using 9‑point type. Is this compliant with
+  Cal. Civ. Code § 4528?
+options:
+  - No, unless the seller provides the documents at no cost.
+  - Yes, because the form is legible and meets the requirement.
+  - Yes, as long as the association approves the format.
+  - No, because the type size is below the minimum required.
+key: D
+explanation: The rule mandates at least 10‑point type for the billing disclosure form; 9‑point type
+  falls below this minimum and therefore is not compliant. The option claiming compliance because
+  the form is legible ignores the specific size requirement.
+citation:
+  source: Cal. Civ. Code § 4528
+  url: null
+  quoted_text: The form for billing disclosures required by Section 4530 shall be in at least 10‑point type
+  secondary: []
+terms:
+  - type size
+  - compliance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

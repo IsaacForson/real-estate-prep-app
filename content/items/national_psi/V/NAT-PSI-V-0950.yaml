@@ -1,0 +1,42 @@
+id: NAT-PSI-V-0950
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A purchase agreement for a commercial property lacks a 'time is of the essence' clause and
+  sets closing for August 15. The buyer tenders the funds on August 22. What is the likely result?
+options:
+  - The buyer is not in breach if the delay is considered a reasonable time.
+  - The contract is automatically terminated due to the late performance.
+  - The buyer is in breach because the funds were delivered after the closing date.
+  - The seller may retain the earnest money as liquidated damages.
+key: A
+explanation: Without a 'time is of the essence' clause, courts generally allow performance within a
+  reasonable time after the stated date, so the buyer's performance on August 22 may not be a breach
+  if the delay is reasonable. The distractor that asserts the buyer is in breach because funds were
+  delivered after the closing date ignores the reasonable‑time allowance granted when the clause is
+  absent.
+citation:
+  source: REP Ref. Contracts § 4.3
+  url: null
+  quoted_text: Without such a clause, courts generally allow performance within a reasonable time
+    after a stated date.
+  secondary: []
+terms:
+  - time is of the essence
+  - reasonable time
+  - closing date
+  - breach
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

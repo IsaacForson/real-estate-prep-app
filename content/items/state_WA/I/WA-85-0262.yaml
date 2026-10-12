@@ -1,0 +1,48 @@
+id: WA-85-0262
+jurisdiction: WA
+bank: state_WA
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker obtains an original real estate license and later renews it three times. Under RCW
+  18.85.451, what is the total amount of fees assessed for the original license and the three
+  renewals?
+options:
+  - $40
+  - $20
+  - $80
+  - $60
+key: C
+explanation: Under RCW 18.85.451, a $20 fee is assessed on each original license and each renewal.
+  The broker has one original license and three renewals, for a total of four assessments. Four
+  assessments multiplied by $20 equals $80. The distractor $60 results from counting only the three
+  renewals and omitting the original license fee.
+citation:
+  source: Wash. Rev. Code ch. 18.85 — RCW Chapter 18.85 — Real Estate Brokers and Managing Brokers — §
+    18.85.451
+  url: null
+  quoted_text: (1) A fee of 20 dollars is created and shall be assessed on each real estate broker and
+    managing broker's original license and upon each renewal of a license with an expiration date
+    after October 1, 1999, including renewals of inactive licenses.
+  secondary: []
+math:
+  worked_solution: 1 original license + 3 renewals = 4 assessments; 4 assessments × $20 = $80.
+  formulas:
+    - Total fee = number of assessments × $20
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - license
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

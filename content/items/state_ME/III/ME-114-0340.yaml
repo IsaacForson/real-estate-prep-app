@@ -1,0 +1,43 @@
+id: ME-114-0340
+jurisdiction: ME
+bank: state_ME
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If an agency’s license expires, what is the immediate effect on the licenses of brokers
+  employed by that agency under 32 M.R.S. § 13182?
+options:
+  - Having their licenses automatically voided until they obtain a new agency license or change
+    employers
+  - Remaining active but requiring renewal within 30 days and paying the prescribed fee
+  - Continuing to act under their individual licenses until the agency renews and paying the renewal
+    fee
+  - Being placed on inactive status automatically and needing to reapply for active licensure
+key: A
+explanation: The statute provides that the expiration of an agency license automatically voids every
+  license granted to persons employed by that agency pending a change of employer and issuance of a
+  new license; the other options incorrectly suggest the licenses remain active or are merely placed
+  on inactive status.
+citation:
+  source: 32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) § 13182
+  url: null
+  quoted_text: The suspension, revocation or expiration of an agency or designated broker's license
+    automatically voids every license granted to any person by virtue of the person's employment by
+    the agency whose license has been suspended, revoked or expired pending a change of employer and
+    the issuance of a new license.
+  secondary: []
+terms:
+  - license
+  - void
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

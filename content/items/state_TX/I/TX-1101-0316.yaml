@@ -1,0 +1,44 @@
+id: TX-1101-0316
+jurisdiction: TX
+bank: state_TX
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee continues to fail to return earnest money for 7 consecutive days. Under Tex. Occ.
+  Code § 1101.702(a), how may the commission treat each day that the violation continues when
+  calculating administrative penalties?
+options:
+  - As a violation only if it exceeds 30 days
+  - As a violation only if reported by a consumer
+  - As a single violation regardless of duration
+  - As a separate violation for each day
+key: D
+explanation: Tex. Occ. Code § 1101.702(a) states that each day a violation continues may be
+  considered a separate violation for penalty purposes, so the commission treats each day as a
+  separate violation. The option describing a single violation regardless of duration contradicts
+  this provision.
+citation:
+  source: Tex. Occ. Code ch. 1101 — Texas Occupations Code Chapter 1101 — Real Estate Brokers and
+    Sales Agents (The Real Estate License Act), official Texas Legislature Online statute page read
+    via Internet Archive capture of 2025-12-07 because statutes.capitol.texas.gov now serves only a
+    JavaScript shell — § 1101.702
+  url: null
+  quoted_text: Each day a violation continues or occurs may be considered a separate violation for
+    purposes of imposing a penalty.
+  secondary: []
+terms:
+  - administrative penalty
+  - violation
+  - day
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

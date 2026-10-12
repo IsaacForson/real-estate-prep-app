@@ -1,0 +1,41 @@
+id: NY-443-0471
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker terminates a salesperson's association on Monday morning. When must the broker notify
+  the Department of State under NY Real Property Law §442-b?
+options:
+  - The broker must notify the Department of State within 24 hours of the termination.
+  - The broker must notify the Department of State by the close of the next business day.
+  - The broker must notify the Department of State forthwith (immediately) after the termination.
+  - The broker must notify the Department of State within three business days of the termination.
+key: C
+explanation: Section 442‑b mandates that the broker shall forthwith notify the Department of State,
+  which means immediately upon the termination. Options that impose a 24‑hour limit,
+  end‑of‑next‑business‑day, or three‑business‑day period introduce specific timeframes not present
+  in the statute and are therefore incorrect.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 442 §
+    442-b
+  url: null
+  quoted_text: forthwith notify the Department of State thereof
+  secondary: []
+terms:
+  - forthwith
+  - notification
+  - termination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

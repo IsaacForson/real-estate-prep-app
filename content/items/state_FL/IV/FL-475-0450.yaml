@@ -1,0 +1,47 @@
+id: FL-475-0450
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A prospective tenant pays a fee for a rental information list on March 1 and does not obtain a
+  rental. The tenant wishes to demand a refund of the portion over 25% of the fee. By what date must
+  the tenant make the demand to be valid under Florida law?
+options:
+  - March 31
+  - April 1
+  - March 30
+  - April 30
+key: A
+explanation: A demand for the return of the fee or any part thereof must be made within 30 days
+  following the day on which the broker contracted to perform services. Counting 30 days from March
+  1 gives a deadline of March 31. The distractor of April 1 mistakenly adds an extra day.
+citation:
+  source: Fla. Stat. § 475.453(1)
+  url: null
+  quoted_text: A demand from the prospective tenant for the return of the fee, or any part thereof,
+    shall be made within 30 days following the day on which the real estate broker or sales
+    associate has contracted to perform services to the prospective tenant.
+  secondary: []
+math:
+  worked_solution: "Start date: March 1. Add 30 days: March 1 + 30 days = March 31. Therefore the
+    latest valid demand date is March 31."
+  formulas:
+    - "Date addition: end_date = start_date + n days"
+  onscreen_calculator_only: false
+terms:
+  - demand
+  - refund
+  - 30 days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

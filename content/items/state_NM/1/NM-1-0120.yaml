@@ -1,0 +1,40 @@
+id: NM-1-0120
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The New Mexico Real Estate Commission president schedules meetings for January, April, July,
+  and October each year. According to N.M. Stat. Ann. § 61-29-6, does this schedule satisfy the
+  commission’s meeting requirement?
+options:
+  - Yes, because the commission must meet at least once each quarter-year
+  - Yes, because the commission must meet exactly every three months
+  - Yes, provided the meetings are held in the commission’s official publication
+  - Yes, but the secretary must attend each meeting for it to count
+key: A
+explanation: The rule requires the commission to meet at least once each quarter-year; scheduling
+  meetings in January, April, July, and October meets that minimum. The distractor claiming meetings
+  must be exactly every three months adds a requirement not present in the statute.
+citation:
+  source: "### N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-6"
+  url: null
+  quoted_text: The commission shall meet at least once each quarter-year
+  secondary: []
+terms:
+  - meeting
+  - quarter-year
+  - president
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

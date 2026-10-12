@@ -1,0 +1,39 @@
+id: CA-4-0398
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A bank acquires subdivided lots through foreclosure on January 10. By what date must the bank
+  notify the Commissioner to satisfy Cal. Bus. & Prof. Code § 11010.5?
+options:
+  - February 10
+  - February 9
+  - February 11
+  - February 8
+key: B
+explanation: The rule requires notification within 30 days of acquisition. Adding 30 days to January
+  10 yields February 9 as the deadline.
+citation:
+  source: Cal. Bus. & Prof. Code §§ 11000–11288 — B&P Code Div. 4, Pt. 2, Ch. 1 - Subdivided Lands §
+    11010.5
+  url: null
+  quoted_text: the commissioner is notified of the change of ownership within 30 days of the
+    acquisition of the title to such property.
+  secondary: []
+terms:
+  - deadline
+  - notification
+  - foreclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

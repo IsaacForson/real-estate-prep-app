@@ -1,0 +1,42 @@
+id: ID-20-0409
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to disburse earnest money from a trust account to the seller as part of a
+  closing, but the buyer and seller have not provided written authorization. According to Idaho Code
+  § 54-2046(1), what must the broker do?
+options:
+  - The broker must disburse the funds anyway because the closing statement shows the amount due
+  - The broker must obtain written, signed authorization from the parties before disbursing
+  - The broker must disburse the funds and later obtain retroactive authorization
+  - The broker must hold the funds indefinitely until a court orders disbursement
+key: B
+explanation: The rule prohibits any disbursement without a written, signed authorization from the
+  parties or a court order. Therefore the broker must obtain the required authorization before
+  disbursing. The option that says the broker may disburse based on the closing statement, the
+  option that allows disbursement with later authorization, and the option that requires holding
+  funds until a court order each violate the rule.
+citation:
+  source: Idaho Code § 54-2046(1)
+  url: null
+  quoted_text: No disbursements shall be made without a written, signed authorization by the parties
+    to the transaction or an order of the court.
+  secondary: []
+terms:
+  - disbursement
+  - authorization
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

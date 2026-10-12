@@ -1,0 +1,46 @@
+id: NJ-1-0285
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner has land used for solar energy generation that is consistent with P.L.2009,c.213.
+  According to N.J. Stat. Ann. § 54:4-23.3, what is the status of this land for farmland assessment
+  purposes?
+options:
+  - The land qualifies only after submitting a forest stewardship plan
+  - The land does not qualify as agricultural use
+  - The land qualifies as agricultural use
+  - The land qualifies only if it is also used for forage crops
+key: C
+explanation: The statute expressly includes solar energy generation as an agricultural use when it
+  is consistent with the provisions of P.L.2009,c.213 and related rules. Since the scenario states
+  the solar generation meets that consistency requirement, the land qualifies. The statement that
+  the land does not qualify as agricultural use is incorrect because it ignores the explicit
+  inclusion of solar energy in the definition of agricultural use.
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 — New Jersey Statutes Title 54, Chapter 4 — Taxation of Real
+    and Personal Property (N.J.S.A. 54:4-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 54:4-23.3
+  url: null
+  quoted_text: agricultural use shall also include biomass, solar, or wind energy generation, provided
+    that the biomass, solar, or wind energy generation is consistent with the provisions of
+    P.L.2009, c.213 (C.4:1C-32.4 et al.), as applicable, and the rules and regulations adopted
+    therefor
+  secondary: []
+terms:
+  - solar energy
+  - agricultural use
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

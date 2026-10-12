@@ -1,0 +1,43 @@
+id: ND-23-0165
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson receives trust money on a Monday, and the broker's depository is closed Tuesday
+  due to a state holiday. Under N.D. Cent. Code § 43-23-11.1(1)(s), by when must the money be
+  deposited?
+options:
+  - By the end of the business day on Tuesday.
+  - By the close of business on Wednesday.
+  - By the close of business on Thursday.
+  - By the end of the business day on Monday.
+key: C
+explanation: The rule states that if trust money is received on a day before a holiday or a day when
+  the depository is closed, it must be deposited during the next business day of the depository.
+  Since Tuesday is closed, the next business day is Wednesday. Depositing on Tuesday would violate
+  the rule because the depository is not open.
+citation:
+  source: N.D. Cent. Code § 43-23-11.1(1)(s)
+  url: null
+  quoted_text: Provided that if trust money is received on a day before a holiday or on another day
+    before which the depository is closed where the trust fund is maintained, the moneys must then
+    be deposited during the next business day of the depository.
+  secondary: []
+terms:
+  - trust
+  - money
+  - deposit
+  - holiday
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-05

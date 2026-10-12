@@ -1,0 +1,38 @@
+id: DC-198-0452
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate broker’s license was suspended on June 1. According to D.C. Code §
+  47-2853.186(a), by what date must the broker’s employed salespersons mail their licenses to the
+  Mayor?
+options:
+  - June 15, 2024
+  - June 17, 2024
+  - June 16, 2024
+  - May 31, 2024
+key: C
+explanation: The rule requires salespersons to mail their licenses within 15 days of the suspension;
+  June 16 is the fifteenth day after June 1. Mailing on June 17 would exceed the allowed period.
+citation:
+  source: D.C. Code § 47-2853.186(a)
+  url: null
+  quoted_text: must mail their licenses to the Mayor within 15 days of the revocation or suspension.
+  secondary: []
+terms:
+  - broker
+  - salesperson
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

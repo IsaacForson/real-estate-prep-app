@@ -1,0 +1,51 @@
+id: AL-27-0400
+jurisdiction: AL
+bank: state_AL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Two buyers obtain judgments of $40,000 each against a broker for misrepresentation in the same
+  transaction. What is the maximum total amount the Recovery Fund may pay for this transaction?
+options:
+  - Up to $50,000
+  - Up to $40,000
+  - Up to $25,000
+  - Up to $80,000
+key: C
+explanation: Ala. Code § 34-27-31(b)(3) limits Recovery Fund payments for claims arising out of the
+  same transaction to $25,000 in the aggregate, regardless of the number of claimants. The
+  distractor of $50,000 incorrectly applies the per‑person limit from subsection (b)(2) without
+  considering the stricter transaction‑level cap.
+citation:
+  source: "Ala. Code § 34-27-1 et seq. — Code of Alabama Title 34, Chapter 27 - Real Estate Brokers
+    (Arts. 1-4: License Law, Time-Sharing, RECAD) - Alabama Legislature (ALISON) current text — §
+    34-27-31(b)(3)"
+  url: null
+  quoted_text: Payments for claims arising out of the same transaction shall not exceed twenty-five
+    thousand dollars ($25,000) in the aggregate, regardless of the number of claimants.
+  secondary: []
+math:
+  worked_solution: |-
+    1. Each buyer judgment = $40,000.
+    2. Sum of claims = 2 × $40,000 = $80,000.
+    3. Transaction‑level cap per Ala. Code § 34-27-31(b)(3) = $25,000.
+    4. Maximum total payment = min($80,000, $25,000) = $25,000.
+  formulas:
+    - Maximum payment = min(total claims, transaction‑level cap)
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - judgment
+  - transaction limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

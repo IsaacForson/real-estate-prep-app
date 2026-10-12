@@ -1,0 +1,41 @@
+id: OK-605-0331
+jurisdiction: OK
+bank: state_OK
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker collects a fee in advance for a consulting service to be performed in 24 months.
+  According to Oklahoma Statute § 858-303B, what is the latest date by which the broker must provide
+  a detailed accounting of expenditures?
+options:
+  - Within ten (10) days after the time specified to perform the services.
+  - Within thirty (30) days after the time specified to perform the services.
+  - Within one (1) year from the date of the contract.
+  - Within sixty (60) days after the time specified to perform the services.
+key: C
+explanation: The statute limits the accounting to no longer than one year from the contract date,
+  irrespective of when the services are to be performed. The distractor citing ten (10) days after
+  the time specified incorrectly applies the short‑term rule that governs situations without a
+  written request, not the absolute one‑year ceiling.
+citation:
+  source: Okla. Stat. tit. 59, § 858-303B
+  url: null
+  quoted_text: but no longer than one (1) year from date of contract for such services.
+  secondary: []
+terms:
+  - accounting
+  - expenditure
+  - contract
+  - advance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,55 @@
+id: MN-82-0334
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker offers a $120 referral fee to an unlicensed individual for referring a client who
+  later purchases a timeshare week. The payment will be made only if the client completes the
+  purchase. Is this referral fee permissible under Minn. Stat. § 82.70 Subd. 2(b)(4)?
+options:
+  - The fee is not permissible because the amount exceeds the statutory limit.
+  - The fee is not permissible because only licensed persons may receive it.
+  - The fee is permissible because the broker is bound by the recipient's representations.
+  - The fee is permissible because the payment is made solely for the referral.
+key: B
+explanation: Under Minn. Stat. ch. 82 § 82.70 Subd. 2(b)(4), a referral fee for a timeshare
+  transaction is permissible only if it is paid to a licensed person, the amount does not exceed
+  $150, and the payment is not contingent on a sale. Here the fee is offered to an unlicensed
+  individual, so it is not permissible regardless of the amount or the contingency. The other
+  options incorrectly focus on the amount, the broker’s reliance on the recipient’s statements, or
+  the nature of the payment.
+citation:
+  source: Minn. Stat. ch. 82 § 82.70 Subd. 2(b)(4)
+  url: null
+  quoted_text: involving timeshare or other recreational lands where the amount offered or paid does
+    not exceed $150, and payment is not conditioned upon any sale but is made merely for providing
+    the referral
+  secondary: []
+math:
+  worked_solution: |-
+    1) Statutory limit for a permissible referral fee: $150.
+    2) Offered fee amount: $120.
+    3) Compare: $120 ≤ $150, so the amount does not exceed the limit.
+    4) Compute difference (optional): $150 - $120 = $30.
+    5) Because the recipient is unlicensed, the fee is not permissible irrespective of the amount.
+  formulas:
+    - "Comparison: amount ≤ limit"
+    - "Subtraction: limit - amount = difference"
+  onscreen_calculator_only: false
+terms:
+  - referral fee
+  - timeshare
+  - condition
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: groq/openai/gpt-oss-120b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

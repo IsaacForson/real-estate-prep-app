@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0944
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A consumer pays one bona fide discount point on a loan whose interest rate is reduced by 2.5
+  percentage points relative to the average prime offer rate. Under TILA §1602(ee), how many of
+  those discount points may be excluded from points and fees?
+options:
+  - Zero discount points
+  - One discount points
+  - Two discount points
+  - Three discount points
+key: A
+explanation: Paragraphs (1) and (2) only permit exclusion of discount points when the interest rate
+  reduction does not exceed one or two percentage points, respectively. A reduction of 2.5
+  percentage points exceeds both thresholds, so neither paragraph applies and no discount points may
+  be excluded. The option suggesting one point is incorrect because the condition for any exclusion
+  is not satisfied.
+citation:
+  source: 15 U.S.C. § 1602(ee)
+  url: null
+  quoted_text: "For the purposes of determining the amount of points and fees for purposes of
+    subsection (aa), either the amounts described in paragraph (1) or (2) of the following
+    paragraphs, but not both, shall be excluded:"
+  secondary: []
+terms:
+  - discount point
+  - interest rate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,40 @@
+id: MN-82-0356
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "A licensee receives an earnest money check from a buyer. To satisfy the trust account
+  requirement under Minn. Stat. § 82.55 Subd. 25, the licensee must:"
+options:
+  - Cash the check and keep the proceeds in a fire‑proof safe on premises.
+  - Endorse the check over to the broker’s personal operating account.
+  - Hold the check in a locked drawer until the closing date arrives.
+  - Deposit the check into a trust account as defined in Minn. Stat. § 82.55 Subd. 25.
+key: D
+explanation: The statute requires that trust funds be deposited into an account that segregates them
+  from other funds, which is a trust account as defined. Holding the check, endorsing it to a
+  personal account, or cashing it fails to segregate the funds. Therefore, depositing the check into
+  a trust account satisfies the requirement.
+citation:
+  source: Minn. Stat. § 82.55 Subd. 25
+  url: null
+  quoted_text: Trust account means, for purposes of this chapter, a savings account, negotiable order
+    of withdrawal account, demand deposit or checking account maintained for the purpose of
+    segregating trust funds from other funds.
+  secondary: []
+terms:
+  - trust account
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

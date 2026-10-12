@@ -1,0 +1,52 @@
+id: VT-2211-0317
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate broker opens a trust account on June 1 and notifies the Vermont Real
+  Estate Commission of the account on June 15. Under Vermont law, what is the consequence for this
+  failure to notify within the required time?
+options:
+  - Must pay a fine of $250 to the Commission
+  - Subject to penalties under 3 V.S.A. §127
+  - No penalty if the account is later reported
+  - License automatically revoked for 30 days
+key: B
+explanation: Vermont law requires a broker to notify the Real Estate Commission of a newly opened
+  trust account within ten days (26 V.S.A. § 2214(a)). Failure to meet this deadline is a violation
+  of the chapter, and any violation incurs penalties under 3 V.S.A. § 127 (see 26 V.S.A. § 2213).
+  Therefore, the broker is subject to penalties under that statute. There is no preset fine of $250;
+  the Commission determines the penalty amount under 3 V.S.A. § 127. Reporting the account later
+  does not erase the violation, so a penalty still applies. The law does not provide for an
+  automatic 30‑day license revocation for this offense.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2213
+  url: null
+  quoted_text: A person who shall violate any provision of this chapter shall be subject to the
+    penalties provided in 3 V.S.A. § 127.
+  secondary: []
+math:
+  worked_solution: "Opening date: June 1. Required notification within 10 days → deadline = June 1 +
+    10 days = June 11. Actual notification date: June 15. Days late = June 15 − June 11 = 4 days."
+  formulas:
+    - Date addition
+    - Date subtraction
+  onscreen_calculator_only: false
+terms:
+  - notification
+  - trust account
+  - penalty
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

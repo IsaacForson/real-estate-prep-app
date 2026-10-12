@@ -1,0 +1,51 @@
+id: OH-4735-0274
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner of foreign real estate receives a $600 referral fee in March and a $500 referral fee
+  in April from the same buyer. Assuming no other referral fees in the preceding twelve months, has
+  the owner exceeded the limit set by Ohio Rev. Code § 4735.20(G)(2)?
+options:
+  - Yes, because the total $1,100 exceeds the $1,000 limit
+  - No, because each payment is under the $1,000 limit
+  - No, because the limit applies per transaction, not per year
+  - Yes, because the limit is calculated monthly
+key: A
+explanation: The rule limits total consideration to $1,000 in any twelve‑consecutive‑month period;
+  $600 plus $500 equals $1,100, which exceeds that limit. The distractor claiming each payment is
+  under the limit ignores the aggregate nature of the restriction.
+citation:
+  source: Ohio Rev. Code ch. 4735 — Ohio Revised Code Chapter 4735 — Real Estate Brokers, official
+    Ohio Laws (codes.ohio.gov) chapter page read via Internet Archive capture of 2026-05-14 because
+    codes.ohio.gov times out for scripts — § 4735.20 (G)(2)
+  url: null
+  quoted_text: Any fee, commission, or other valuable consideration promised or collected during any
+    period consisting of twelve consecutive months does not exceed one thousand dollars.
+  secondary: []
+math:
+  worked_solution: |-
+    600 + 500 = 1,100
+    1,100 > 1,000 therefore the limit is exceeded
+  formulas:
+    - Sum = amount1 + amount2
+    - Exceeds if Sum > limit
+  onscreen_calculator_only: false
+terms:
+  - referral fee
+  - foreign real estate
+  - twelve‑month period
+  - valuable consideration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

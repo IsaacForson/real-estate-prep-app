@@ -1,0 +1,41 @@
+id: DC-198-0453
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson employed by Broker A advertises themselves as a salesperson for Broker B without
+  Broker A’s knowledge or written consent. Which prohibited act under D.C. Code § 47-2853.197 has
+  been committed?
+options:
+  - Disclosing confidential client information without prior written consent
+  - Representing another broker as their salesperson without consent
+  - Failing to deposit earnest money into an escrow account within three days
+  - Accepting a commission directly from a buyer for a sale
+key: B
+explanation: The scenario matches the prohibition against representing another broker as one’s
+  salesperson without the broker’s express knowledge and written consent. Accepting a commission
+  directly from a buyer, while also prohibited, does not describe the conduct in the scenario.
+citation:
+  source: D.C. Code § 47-2853.197(8)
+  url: null
+  quoted_text: Represented or attempted to represent any real estate broker, other than the broker
+    under whose name he or she is licensed, as a real estate salesperson without the express
+    knowledge and written consent of the broker under whose name he or she is licensed
+  secondary: []
+terms:
+  - represent
+  - broker
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,48 @@
+id: NC-93A-0574
+jurisdiction: NC
+bank: state_NC
+blueprint_node: "2"
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker executes a lease agreement on March 1 for a rental property. Under 21 NCAC 58A
+  .0106(b)(3), by what date must the broker deliver an accounting of the lease to the property
+  owner?
+options:
+  - April 15
+  - March 30
+  - April 10
+  - April 30
+key: A
+explanation: The rule requires the broker to deliver an accounting within 45 days after executing
+  the lease. Starting from March 1, March has 31 days, so 30 days remain in March after March 1;
+  adding the remaining 15 days reaches April 15. The distractor "April 10" is wrong because it only
+  adds 40 days, falling short of the required 45-day period.
+citation:
+  source: 21 NCAC 58A .0101–0120 — 21 N.C. Admin. Code 58A Section .0100 — General Brokerage (Rules
+    .0101 to .0120; NC OAH compilation).0106(b)(3)
+  url: null
+  quoted_text: "(3) delivers to the property owner an accounting within 45 days following the date of
+    execution of the lease or rental agreement that identifies:"
+  secondary: []
+math:
+  worked_solution: "Start date: March 1. March has 31 days. Days remaining in March after March 1 = 31
+    - 1 = 30. Remaining days to add = 45 - 30 = 15. Adding 15 days to April 1 gives April 15."
+  formulas:
+    - End date = Start date + 45 days
+  onscreen_calculator_only: false
+terms:
+  - lease agreement
+  - accounting
+  - delivery
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

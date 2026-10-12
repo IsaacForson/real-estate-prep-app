@@ -1,0 +1,45 @@
+id: CO-2-0100
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under Colorado law, when is a real estate broker liable for an unlawful act committed by an
+  employee?
+options:
+  - The broker is liable for any unlawful act committed by an employee, regardless of the broker's
+    knowledge or supervision.
+  - The broker is liable only if the broker had actual knowledge of the act or was negligent in
+    supervising the employee.
+  - The broker is liable only if the employee is a licensed real estate broker, regardless of the
+    broker's knowledge or supervision.
+  - The broker is liable only if the act results in financial loss to a client, regardless of the
+    broker's knowledge or supervision.
+key: B
+explanation: Colo. Rev. Stat. § 12-10-222 states that a broker is not liable for an employee's
+  unlawful act unless the broker had actual knowledge or was negligent in supervision. The other
+  options are not supported by the statute.
+citation:
+  source: Colo. Rev. Stat. § 12-10-222
+  url: null
+  quoted_text: Any unlawful act or violation of any of the provisions of this part 2 upon the part of
+    an employee, officer, or member of a licensed real estate broker shall not be cause for
+    disciplinary action against a real estate broker, unless it appears to the satisfaction of the
+    commission that the real estate broker had actual knowledge of the unlawful act or violation or
+    had been negligent in the supervision of employees.
+  secondary: []
+terms:
+  - broker liability
+  - employee supervision
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

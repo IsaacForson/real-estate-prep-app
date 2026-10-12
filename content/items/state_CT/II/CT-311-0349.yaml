@@ -1,0 +1,51 @@
+id: CT-311-0349
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Real Estate Commission received $9,000 in fees. It is required to pay $3,000 to the Real
+  Estate Guaranty Fund and no amount to the University of Connecticut. How much of the fees becomes
+  part of the General Fund under § 20-311e?
+options:
+  - $3,000
+  - $4,500
+  - $6,000
+  - $7,500
+key: C
+explanation: Under Conn. Gen. Stat. § 20-311e, after the Real Estate Commission pays the required
+  amount to the Real Estate Guaranty Fund, any remaining fee revenue is deposited with the State
+  Treasurer and becomes part of the General Fund. Subtracting the $3,000 Guaranty Fund payment from
+  the $9,000 total fees leaves $6,000, which matches the option stating '$6,000'.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 - Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) - § 20-311 § 20-311e
+  url: null
+  quoted_text: The commission shall deposit all moneys received by it from fees in accordance with the
+    provisions of this chapter with the State Treasurer, and they shall, except as to that portion
+    thereof required to be paid over to The University of Connecticut under the provisions of
+    section 10a-125 , or that portion required to be paid to the Real Estate Guaranty Fund pursuant
+    to this chapter, become part of the General Fund.
+  secondary: []
+math:
+  worked_solution: "Start with total fees received: $9,000. Subtract the required Guaranty Fund
+    payment: $3,000. $9,000 - $3,000 = $6,000."
+  formulas:
+    - General Fund = Total Fees - Guaranty Fund Payment
+  onscreen_calculator_only: false
+terms:
+  - fees
+  - guaranty fund
+  - general fund
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

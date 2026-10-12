@@ -1,0 +1,43 @@
+id: FL-475-0435
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Florida law, if a broker fails to commence a foreclosure action to enforce a lien before
+  the lien notice expires, what is the legal effect of the lien notice?
+options:
+  - The lien notice becomes null and void and has no further force or effect.
+  - The lien notice can be revived by filing a new lien notice after 30 days.
+  - The lien notice automatically attaches to the owner's personal property.
+  - The lien notice remains enforceable until the owner pays the claimed commission.
+key: A
+explanation: The statute states that a foreclosure action must be commenced before the lien notice
+  expires; otherwise the lien notice becomes null and void and has no further force or effect.
+  Therefore, the lien notice loses all legal effect if the deadline is missed. The distractor that
+  the lien notice remains enforceable is incorrect because the statute expressly voids the lien when
+  the foreclosure is not timely filed.
+citation:
+  source: Fla. Stat. § 475.809(1)
+  url: null
+  quoted_text: The foreclosure action shall be commenced before the lien notice expires or is
+    extinguished under s. 475.807(8); otherwise, the lien notice shall become null and void and have
+    no further force or effect.
+  secondary: []
+terms:
+  - lien
+  - foreclosure
+  - expiration
+  - "null"
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

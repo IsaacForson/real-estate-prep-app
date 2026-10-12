@@ -1,0 +1,41 @@
+id: ND-23-0211
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker fails to submit a renewal application by the commission's established late renewal
+  date. According to N.D. Cent. Code § 43-23-13.1, what is the status of the broker's license?
+options:
+  - The license is renewed after a late fee is paid
+  - The license is canceled without notice or opportunity for hearing
+  - The license is placed on inactive status pending renewal
+  - The broker may continue practicing while awaiting review
+key: B
+explanation: According to N.D. Cent. Code § 43-23-13.1, if a license is not renewed by the
+  commission's late renewal date, it must be canceled. The cancellation occurs without notice or
+  opportunity for a hearing. Thus, the broker's license is canceled under those circumstances. The
+  option suggesting automatic renewal with a late fee is incorrect because renewal is not possible
+  after the late date.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-13.1
+  url: null
+  quoted_text: Any license not renewed by the late renewal date set by the commission must be
+    canceled. The cancellation must be performed without any notice or opportunity for hearing.
+  secondary: []
+terms:
+  - cancellation
+  - late renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

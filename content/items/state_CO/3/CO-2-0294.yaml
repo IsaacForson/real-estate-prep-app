@@ -1,0 +1,42 @@
+id: CO-2-0294
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker agrees to represent both the landlord and the tenant in the same lease transaction,
+  hoping to earn commissions from both parties. Under Colorado law, is this arrangement allowed?
+options:
+  - The broker may represent both the landlord and the tenant if written consent is obtained from
+    both parties.
+  - The broker may not represent both the landlord and the tenant in the same transaction.
+  - The broker may represent both the landlord and the tenant as long as the dual relationship is
+    disclosed to both parties.
+  - The broker may not represent both the landlord and the tenant unless also acting as a
+    transaction-broker.
+key: B
+explanation: Colorado law flatly forbids a broker from establishing dual agency with any seller,
+  landlord, buyer, or tenant. Consequently, representing both landlord and tenant in the same lease
+  is not allowed regardless of consent or disclosure. The distractor suggesting allowance with
+  consent is wrong because consent does not override the statutory prohibition.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. § 12-10-406
+  url: null
+  quoted_text: A broker shall not establish dual agency with any seller, landlord, buyer, or tenant.
+  secondary: []
+terms:
+  - dual agency
+  - landlord
+  - tenant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

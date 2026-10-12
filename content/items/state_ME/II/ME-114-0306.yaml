@@ -1,0 +1,47 @@
+id: ME-114-0306
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A designated broker withdraws the agreed-upon commission from the trust account three days
+  after executing a purchase and sale agreement, but before the transaction is consummated. Is this
+  action permissible under 32 M.R.S. § 13178?
+options:
+  - Permissible, provided the broker leaves enough funds in the account to cover any potential
+    shortages.
+  - Permissible, as long as the broker provides a full accounting to the principal before withdrawal
+    and the transaction is still pending.
+  - Not permissible, because fees may not be withdrawn until after consummation or termination of
+    the transaction.
+  - Not permissible, unless the broker obtains written approval from the Director to withdraw early.
+key: C
+explanation: Under 32 M.R.S. § 13178, fees may be withdrawn only within 30 days after, and not
+  until, consummation or termination of the transaction, following a full accounting. Withdrawing
+  before consummation violates this rule, regardless of any accounting or assurances about funds.
+  The ideas that withdrawal is allowed if enough funds remain, that it is allowed with the
+  director’s written approval, or that it is allowed with prior accounting while the transaction is
+  still pending are incorrect.
+citation:
+  source: 32 M.R.S. § 13178
+  url: null
+  quoted_text: shall withdraw from the accounts all fees due within 30 days after but not until
+    consummation or termination of the transaction when the designated broker makes or causes to be
+    made a full accounting to the broker's principal.
+  secondary: []
+terms:
+  - trust account
+  - commission
+  - consummation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

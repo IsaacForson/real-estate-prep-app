@@ -1,0 +1,43 @@
+id: CA-4-0370
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker communicates with a client via text messages about showing a property. These text
+  messages are considered ephemeral electronic messages under Civil Code § 1624(d). Under Cal. Bus.
+  & Prof. Code § 10148(a), is the broker required to retain these text messages for three years?
+options:
+  - Yes, the broker must retain all electronic messages for three years
+  - No, ephemeral electronic messages are exempt from the retention requirement
+  - Yes, but only if the messages contain confidential information
+  - No, only paper-based records need to be retained for three years
+key: B
+explanation: The law exempts ephemeral electronic messages from the three‑year retention
+  requirement, so the broker does not need to keep those texts. This exemption is expressly stated
+  in the subdivision that governs record retention. The distractor "Yes, the broker must retain all
+  electronic messages for three years" is appealing because it overlooks the specific carve‑out for
+  ephemeral communications, but the statute clearly excludes such messages from the retention
+  obligation.
+citation:
+  source: Cal. Bus. & Prof. Code § 10148(a)
+  url: null
+  quoted_text: This subdivision shall not be construed to require a licensed real estate broker to
+    retain electronic messages of an ephemeral nature, as described in subdivision (d) of Section
+    1624 of the Civil Code.
+  secondary: []
+terms:
+  - ephemeral
+  - electronic
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

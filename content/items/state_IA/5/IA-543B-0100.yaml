@@ -1,0 +1,60 @@
+id: IA-543B-0100
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker deposits $500 of personal funds into the trust account to cover bank service charges
+  but does not label the deposit. Is this permissible under Iowa Code § 543B.46(4)?
+options:
+  - The deposit is not permissible because personal funds must be specifically identified to be
+    allowed
+  - The deposit is permissible because the amount is under the $1,000 limit and the funds are
+    intended for bank service charges
+  - The deposit is not permissible because the amount exceeds the $1,000 limit
+  - The deposit is permissible because bank service charges are a valid use of personal funds
+key: A
+explanation: Iowa Code § 543B.46(4) permits a broker to deposit up to $1,000 of personal money in
+  the trust account only when the deposit is clearly identified and is intended to cover bank
+  service charges. Because the broker failed to label the $500 deposit, the identification
+  requirement is not satisfied, so the deposit is not permissible.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.46
+  url: null
+  quoted_text: A broker may deposit and keep a sum not to exceed one thousand dollars in the account
+    from the broker’s personal funds, which sum shall be specifically identified and deposited to
+    cover bank service charges relating to the trust account.
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Identify the statutory limit for personal funds in the trust account: $1,000.
+
+    Step 2: Compare the broker’s deposit amount to the limit: $500 < $1,000.
+
+    Step 3: Since $500 is under the $1,000 limit, the amount requirement is met.
+
+    Step 4: However, the statute also requires the personal funds to be specifically identified for
+    bank service charges. The deposit was not labeled, so the identification requirement is not met.
+
+    Conclusion: The deposit is not permissible because the identification condition is violated,
+    even though the amount is within the limit.
+  formulas:
+    - Comparison of amounts
+  onscreen_calculator_only: false
+terms:
+  - personal funds
+  - identification
+  - bank service charges
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

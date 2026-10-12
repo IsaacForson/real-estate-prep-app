@@ -1,0 +1,53 @@
+id: CA-4-0364
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: An association's CC&R's state that a 60% vote of total voting power is required to increase
+  the maximum annual assessment. Under Cal. Code Regs. tit. 10, §§ 2705–3109, what is the minimum
+  percentage of total voting power that must approve an amendment to this provision?
+options:
+  - 50%
+  - 60%
+  - 70%
+  - 75%
+key: B
+explanation: Under Cal. Code Regs. tit. 10, §§ 2705–3109, the percentage of voting power needed to
+  amend a clause cannot be lower than the percentage required to take action under that clause. The
+  clause in question requires a 60% vote to raise the maximum annual assessment, so at least 60% of
+  the total voting power must approve any amendment to that provision. An answer of 50% does not
+  meet this requirement because it is below the prescribed threshold.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner (Cal.
+    Code Regs. tit. 10, ch. 6) - DRE compilation 2792.24(a)
+  url: null
+  quoted_text: The percentage of the voting power necessary to amend a specific clause or provision
+    shall not be less than the percentage of affirmative votes prescribed for action to be taken
+    under that clause.
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the required vote for the action: 60% to increase the assessment.
+    Step 2: Apply the regulation: the percentage needed to amend a clause must be at least the
+    percentage required for the action. Step 3: Therefore, the minimum percentage to amend the
+    clause equals 60%."
+  formulas:
+    - Required amendment percentage = Required action percentage
+  onscreen_calculator_only: false
+terms:
+  - voting power
+  - amendment
+  - CC&R
+  - members
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

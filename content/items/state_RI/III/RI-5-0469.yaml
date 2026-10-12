@@ -1,0 +1,39 @@
+id: RI-5-0469
+jurisdiction: RI
+bank: state_RI
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker receives a disputed earnest money deposit on March 3. According to R.I. Gen. Laws §
+  5-20.5-26(a)(1)(iv), by what date must the broker deposit the monies with the general treasurer
+  unless the parties agree in writing to extend the period?
+options:
+  - July 30
+  - August 30
+  - September 1
+  - August 15
+key: B
+explanation: The law requires deposit within 180 days of the original deposit. Counting 180 days
+  from March 3 lands on August 30 in a non‑leap year. The other dates result from miscalculating the
+  month lengths.
+citation:
+  source: R.I. Gen. Laws § 5-20.5-26(a)(1)(iv)
+  url: null
+  quoted_text: within one hundred eighty (180) days of the date of the original deposit
+  secondary: []
+terms:
+  - escrow
+  - dispute
+  - general treasurer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,43 @@
+id: NM-1-0370
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives informal notice that their name appears on the certified list and, within 20
+  days, mails a certified letter requesting a hearing. What must the commission do before taking any
+  action against the broker’s license?
+options:
+  - A. Commence a formal proceeding immediately
+  - B. Schedule a hearing as requested
+  - C. Renew the broker’s license automatically
+  - D. Close the case without further action
+key: B
+explanation: The commission may take action only if the broker neither requests a hearing within 20
+  days nor provides a statement of compliance within 30 days. Since a hearing request was made
+  timely, the commission must schedule that hearing before any action. Commencing a proceeding
+  immediately would violate the rule.
+citation:
+  source: 16.61 NMAC § 16.61.35.11
+  url: null
+  quoted_text: "The commission has grounds to take such action, and that the commission shall take
+    such action unless the broker or broker applicant: (1) Mails a letter (certified, return receipt
+    requested) within twenty (20) days after service of the notice requesting a hearing;"
+  secondary: []
+terms:
+  - broker
+  - hearing
+  - notice
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

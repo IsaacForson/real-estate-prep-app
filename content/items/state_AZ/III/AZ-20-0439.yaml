@@ -1,0 +1,44 @@
+id: AZ-20-0439
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: According to Ariz. Rev. Stat. § 32-2195.05(G), which entity is exempt from the advertising
+  prohibitions and filing requirements when it has no knowledge of the advertiser's intent?
+options:
+  - The owner of a newspaper that publishes the advertisement without knowing the advertiser's intent
+  - The licensed real estate broker who prepares the advertisement for the subdivision
+  - The subdivider who files advertising material with the commissioner annually
+  - The radio station operator who knows the advertiser's intent before dissemination
+key: A
+explanation: The exemption in subsection G expressly excludes newspaper publishers and radio/TV
+  operators who lack knowledge of the advertiser's intent from the section's prohibitions and filing
+  requirements. A licensed broker who prepares the advertisement is not exempt because the exemption
+  applies only to media entities without such knowledge.
+citation:
+  source: Ariz. Rev. Stat. § 32-2195.05(G)
+  url: null
+  quoted_text: Nothing contained in this section shall apply to the owner or publisher of a newspaper,
+    magazine or other publication of printed matter wherein such advertisement appears or to the
+    owner or operator of a radio or television station which disseminates such advertisement when
+    the owner, publisher or operator has no knowledge of the intent, design or purpose of the
+    advertiser.
+  secondary: []
+terms:
+  - exemption
+  - newspaper
+  - radio
+  - knowledge
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

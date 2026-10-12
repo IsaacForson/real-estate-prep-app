@@ -1,0 +1,50 @@
+id: ND-23-0136
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant receives notice of license application denial on March 1 and files a request for
+  a hearing on March 21. Under N.D. Cent. Code § 43-23-11.1(2), what is the latest date the
+  commission may schedule the hearing?
+options:
+  - June 18
+  - May 19
+  - May 30
+  - May 20
+key: D
+explanation: The request is filed March 21; adding sixty days yields May 20 as the latest
+  permissible hearing date. May 30 incorrectly adds sixty days from the notice date instead of the
+  request date.
+citation:
+  source: N.D. Cent. Code § 43-23-11.1(2)
+  url: null
+  quoted_text: In such cases the commission shall fix the time for such hearing on a date within sixty
+    days from receipt of the request for the particular hearing
+  secondary: []
+math:
+  worked_solution: |-
+    Days left in March after March 21: 31 - 21 = 10
+    Remaining days: 60 - 10 = 50
+    Days in April: 30
+    Remaining after April: 50 - 30 = 20
+    Thus the date is May 20
+  formulas:
+    - latest_date = request_date + 60 days
+  onscreen_calculator_only: false
+terms:
+  - request
+  - hearing
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

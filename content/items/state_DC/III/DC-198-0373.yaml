@@ -1,0 +1,43 @@
+id: DC-198-0373
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager discloses confidential client information to a third party without
+  obtaining the client's prior written consent. Which prohibited act under D.C. Code § 47-2853.197
+  has been committed?
+options:
+  - Failing to furnish a copy of the contract to signatories
+  - Offering property for rent without owner's consent
+  - Making oral representations about repairs after conveyance without written notice
+  - Disclosing confidential information without prior written consent
+key: D
+explanation: The provision prohibits a property manager from disclosing to a third party
+  confidential information that could injure the client’s business or personal affairs without the
+  client’s prior written consent. Disclosing such information without consent therefore violates
+  this specific prohibition. Offering property without the owner’s consent addresses a different
+  requirement and does not fit the scenario.
+citation:
+  source: D.C. Code § 47-2853.197(5)
+  url: null
+  quoted_text: Disclosed to a third party confidential information which would be injurious concerning
+    the business or personal affairs of a client without prior written consent of the client, except
+    as may be required or compelled by applicable law or rules;
+  secondary: []
+terms:
+  - confidential
+  - consent
+  - disclosure
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

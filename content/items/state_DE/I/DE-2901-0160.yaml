@@ -1,0 +1,45 @@
+id: DE-2901-0160
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual who was employed by a brokerage organization six years ago applies for a public
+  member seat on the Delaware Real Estate Commission. Under Del. Code Ann. tit. 24, § 2903(b)(4), is
+  the applicant eligible for appointment?
+options:
+  - The applicant is ineligible due to employment by a brokerage organization within the last eight
+    years prior to appointment
+  - The applicant is eligible because the restriction only applies to individuals who are currently
+    licensed as brokers or salespersons
+  - The applicant is eligible because the employment ended more than five years ago, which the
+    Commission considers sufficient
+  - The applicant is eligible because they have not held a real estate license in any jurisdiction
+key: A
+explanation: Section 2903(b)(4) bars public members who have been employed by a broker or brokerage
+  organization within the last eight years prior to appointment; six years ago falls within that
+  period, making the applicant ineligible. The claim that the restriction applies only to current
+  licensees is incorrect.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29, § 2903(b)(4)
+  url: null
+  quoted_text: shall not be, nor have been with the last 8 years prior to the effective date of
+    appointment, employed by a broker or brokerage organization
+  secondary: []
+terms:
+  - public member
+  - employment restriction
+  - brokerage organization
+  - eight years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

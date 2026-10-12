@@ -1,0 +1,42 @@
+id: ID-20-0081
+jurisdiction: ID
+bank: state_ID
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A brokerage and a seller sign a written representation agreement on March 1 stating that the
+  brokerage will represent the seller until the property closes. The parties mutually agree to
+  terminate the representation on April 15, and the property closes on May 30. Under Idaho law, when
+  does the agency relationship end?
+options:
+  - The date that the parties mutually agree to terminate representation
+  - The date that the representation is fully performed according to the written agreement
+  - The date that the written agreement expires on its stated expiration date
+  - The date that the brokerage unilaterally withdraws from the agreement
+key: A
+explanation: Under Idaho Code § 54-2091(1), an agency relationship ends at the earliest of
+  performance/completion, agreement by the parties, or expiration of the agreement. Here the parties
+  agreed to terminate on April 15, which ends the relationship before performance on May 30. The
+  date that the representation is fully performed according to the written agreement is incorrect
+  because performance occurred later.
+citation:
+  source: Idaho Code § 54-2091
+  url: null
+  quoted_text: Agreement by the parties;
+  secondary: []
+terms:
+  - agency relationship
+  - termination
+  - agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

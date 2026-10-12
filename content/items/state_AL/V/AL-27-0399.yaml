@@ -1,0 +1,49 @@
+id: AL-27-0399
+jurisdiction: AL
+bank: state_AL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson who paid the $30 Recovery Fund fee later obtains a broker license and pays
+  another $30 broker fee. Upon request, what refund is available under the Recovery Fund provisions?
+options:
+  - A refund of one $30 fee
+  - A refund of no fees
+  - A refund of a $15 fee
+  - A refund of both $30 fees
+key: A
+explanation: Under Ala. Code § 34-27-31(c)(2), a salesperson who has become a broker and paid both
+  fees is entitled to a refund of one of the additional fees upon request. The idea that both fees
+  are refundable is incorrect; the rule limits the refund to a single fee.
+citation:
+  source: "Ala. Code § 34-27-1 et seq. — Code of Alabama Title 34, Chapter 27 - Real Estate Brokers
+    (Arts. 1-4: License Law, Time-Sharing, RECAD) - Alabama Legislature (ALISON) current text — §
+    34-27-31(c)(2)"
+  url: null
+  quoted_text: Any salesperson licensee who has paid the additional fee and who has attained a broker
+    license and has paid the additional broker fee shall be refunded, upon request, one of the
+    additional fees and no other salesperson licensee shall be required to pay an additional fee
+    upon attaining broker status.
+  secondary: []
+math:
+  worked_solution: The refund is one of the additional fees paid. Each fee is $30, so the refund amount is $30.
+  formulas:
+    - Refund = Fee amount
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - fee
+  - refund
+  - broker license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

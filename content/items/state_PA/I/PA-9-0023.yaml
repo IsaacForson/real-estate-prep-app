@@ -1,0 +1,50 @@
+id: PA-9-0023
+jurisdiction: PA
+bank: state_PA
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After the Commission pays $4,000 from the Real Estate Recovery Fund to settle a claim against
+  a licensee, what interest rate must the licensee pay on the amount owed to be eligible for
+  reinstatement?
+options:
+  - 9% per year
+  - 7% per year
+  - 12% per year
+  - 10% per year
+key: D
+explanation: Subsection (f)(2) states that a licensee may be reinstated only after repaying the
+  amount paid from the fund plus interest at the rate of 10% a year; the 6% rate applies to unpaid
+  claims awaiting fund reimbursement, while 5% and 8% are not specified in the rule.
+citation:
+  source: 63 P.S. §§ 455.101–455.902 (Real Estate Licensing and Registration Act) — Real Estate
+    Licensing and Registration Act, Act of Feb. 19, 1980, P.L. 15, No. 9, as amended (63 P.S. §
+    455.101 et seq.), official Pennsylvania General Assembly PDF read via Internet Archive capture
+    of 2025-01-14 because legis.state.pa.us/palegis.us refuse connections from this network; section
+    headings annotated with 63 P.S. numbers — § 455.803
+  url: null
+  quoted_text: No such licensee shall be granted reinstatement until he has repaid in full plus
+    interest at the rate of 10% a year, the amount paid from the Real Estate Recovery Fund.
+  secondary: []
+math:
+  worked_solution: Interest = Principal × Rate × Time. For a one‑year period, Interest = $4,000 × 0.10
+    × 1 = $400. Therefore the required rate is 10% per year.
+  formulas:
+    - Simple Interest = Principal × Rate × Time
+  onscreen_calculator_only: false
+terms:
+  - reinstatement
+  - interest rate
+  - repayment
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

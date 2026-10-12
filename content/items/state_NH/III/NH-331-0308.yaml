@@ -1,0 +1,47 @@
+id: NH-331-0308
+jurisdiction: NH
+bank: state_NH
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker agrees to prepare a comparative market analysis for a seller only if the analysis
+  concludes the property is worth at least $350,000, with the broker's fee contingent on that
+  outcome. Under RSA 331-A:26 XIV, is this arrangement permitted?
+options:
+  - No, unless the broker also obtains the buyer's written consent
+  - Yes, because the broker is providing a professional opinion of value
+  - Yes, provided the broker discloses the contingency to the seller in writing
+  - No, because accepting compensation contingent on a predetermined value is prohibited
+key: D
+explanation: RSA 331-A:26 XIV prohibits accepting compensation for a comparative market analysis
+  that is contingent on reporting a predetermined value. The broker's fee being tied to a specific
+  value outcome violates this rule. Disclosure or buyer consent does not cure the prohibition.
+citation:
+  source: "### N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter
+    331-A — New Hampshire Real Estate Practice Act, official General Court page read via Internet
+    Archive capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 26 XIV"
+  url: null
+  quoted_text: XIV. Accepting employment or compensation for comparative market analysis of real
+    property contingent upon reporting a predetermined value.
+  secondary: []
+math:
+  worked_solution: No calculation is required to answer the question; the stem merely states a
+    threshold value of $350,000.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - comparative market analysis
+  - contingent
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

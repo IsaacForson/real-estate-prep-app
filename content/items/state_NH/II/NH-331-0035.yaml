@@ -1,0 +1,39 @@
+id: NH-331-0035
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Which of the following is **NOT** considered an 'advance fee' under RSA 331-A:2?
+options:
+  - A fee charged for offering a property for lease.
+  - A fee charged for advertising a property on a television commercial.
+  - A fee charged for listing a property for sale.
+  - A fee charged for advertising a property in a newspaper.
+key: D
+explanation: The statute defines advance fees as any fees for services including listing,
+  advertising, or offering for sale or lease, but explicitly excludes fees paid solely for
+  advertisement in a newspaper or other publication of general circulation. Therefore, a newspaper
+  advertising fee is not an advance fee, while the other options are included.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts — § 2
+  url: null
+  quoted_text: Advance fees shall not include fees paid solely for advertisement in a newspaper or
+    other publication of general circulation, including electronic publications.
+  secondary: []
+terms:
+  - advance fees
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

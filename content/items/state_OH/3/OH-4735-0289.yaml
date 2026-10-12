@@ -1,0 +1,46 @@
+id: OH-4735-0289
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a citation that includes fifteen separate violations of the advertising
+  rule. Under Ohio Rev. Code § 4735.16(C)(1), what is the maximum fine that may be assessed for this
+  citation?
+options:
+  - $1,800.
+  - $2,500.
+  - $1,200.
+  - $3,000.
+key: B
+explanation: Each violation carries a $200 fine, so fifteen violations would total $3,000. However
+  the rule caps the fine per citation at $2,500, so the assessable fine is limited to $2,500. The
+  $3,000 option ignores the cap.
+citation:
+  source: Ohio Rev. Code § 4735.16(C)(1)
+  url: null
+  quoted_text: The citation also shall contain a statement of a fine of two hundred dollars per
+    violation, not to exceed two thousand five hundred dollars per citation.
+  secondary: []
+math:
+  worked_solution: 15 violations × $200 per violation = $3,000. The cap is $2,500 per citation, so the
+    fine is the lesser of $3,000 and $2,500, which is $2,500.
+  formulas:
+    - total_raw = violations × $200; final_fine = min(total_raw, $2,500)
+  onscreen_calculator_only: false
+terms:
+  - fine
+  - violation
+  - citation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

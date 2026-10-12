@@ -1,0 +1,43 @@
+id: NJ-1-0252
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker-salesperson has been licensed for 42 years and is applying for biennial license
+  renewal. Under N.J.S.A. 45:15-16.2a, is this person required to complete continuing education?
+options:
+  - Yes, they must complete up to 16 hours of continuing education.
+  - Yes, they must complete 8 hours of continuing education.
+  - No, they are exempt because they have 40 or more years of experience.
+  - No, but they must still complete 4 hours of continuing education.
+key: C
+explanation: The statute exempts brokers or broker-salespersons with 40 or more years of experience
+  from the continuing education requirement. Since the broker-salesperson has 42 years, they are
+  exempt, making options requiring any CE incorrect.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-3 45:15-16.2a
+  url: null
+  quoted_text: This subsection shall not apply to any real estate broker or broker-salesperson who has
+    been a real estate broker or broker-salesperson for 40 years or more
+  secondary: []
+terms:
+  - continuing education
+  - exemption
+  - experience
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

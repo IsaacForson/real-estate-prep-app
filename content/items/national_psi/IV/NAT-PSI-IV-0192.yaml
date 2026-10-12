@@ -1,0 +1,42 @@
+id: NAT-PSI-IV-0192
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee places a newspaper advertisement for a single-family home for sale that does not
+  mention any financing terms. Under TILA §1664(b), is this advertisement subject to the advertising
+  requirements of this section?
+options:
+  - Yes, because all real estate advertisements are subject to TILA advertising rules
+  - No, because real estate ads are exempt unless Bureau requires them
+  - Yes, unless the advertisement includes a down payment amount or APR
+  - No, only if the ad states the annual percentage rate or finance charge
+key: B
+explanation: Subsection (b) provides that the advertising requirements of this section do not apply
+  to advertisements of residential real estate except to the extent that the Bureau may by
+  regulation require. Therefore, an ad for a home that mentions no financing terms is exempt unless
+  the Bureau has imposed a regulation requiring disclosures. The claim that all real estate ads are
+  subject ignores this exclusion.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1664(b)
+  url: null
+  quoted_text: The provisions of this section do not apply to advertisements of residential real
+    estate except to the extent that the Bureau may by regulation require.
+  secondary: []
+terms:
+  - advertisement
+  - residential real estate
+  - Bureau
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

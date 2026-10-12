@@ -1,0 +1,47 @@
+id: ME-114-0106
+jurisdiction: ME
+bank: state_ME
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee plans to request a subpoena for a witness to testify at a Commission hearing set
+  for October 20. Assuming no good cause, by what date must the licensee submit the subpoena request
+  to comply with Maine Real Estate Commission rules?
+options:
+  - October 15
+  - October 18
+  - October 10
+  - October 12
+key: C
+explanation: The rule requires subpoena requests to be made at least ten days before the hearing.
+  Subtracting ten days from October 20 yields October 10, which satisfies the requirement. The
+  October 12 date would provide only eight days' notice, which fails to meet the ten‑day minimum.
+citation:
+  source: ===== 02-039 C.M.R. ch. 350 ===== § 6
+  url: null
+  quoted_text: Subpoenas shall be requested, except for good cause, at least ten (10) days in advance
+    of a scheduled hearing.
+  secondary: []
+math:
+  worked_solution: |-
+    Step 1: Identify hearing date: October 20.
+    Step 2: Subtract 10 days: October 20 - 10 days = October 10.
+    Step 3: Conclusion: request must be submitted by October 10.
+  formulas:
+    - Result = Given date - N days
+  onscreen_calculator_only: false
+terms:
+  - subpoena
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

@@ -1,0 +1,44 @@
+id: DC-198-0407
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner sends the offer of sale to tenants via regular first‑class mail. Is this compliant
+  with D.C. Code § 42-3404.03(b)(1)?
+options:
+  - The owner's action is non‑compliant unless the owner obtains a signed waiver from the tenant.
+  - The owner's action is compliant because first‑class mail satisfies the requirement.
+  - The owner's action is compliant if the tenant acknowledges receipt in writing.
+  - The owner's action is non‑compliant because only certified mail, tracked delivery, or hand
+    delivery are permitted.
+key: D
+explanation: Subsection (b)(1) requires that the offer of sale be delivered by certified mail, a
+  delivery service that provides tracking confirmation, or hand delivery. Regular first‑class mail
+  does not satisfy any of these permitted methods, so the owner's action is non‑compliant. The claim
+  that first‑class mail meets the requirement is incorrect, and adding conditions such as a signed
+  waiver or written acknowledgment does not cure the defect.
+citation:
+  source: "D.C. Code §§ 42-3404.01–42-3404.16 — D.C. Code Title 42, Ch. 34, Subch. IV - Rental Housing
+    Conversion and Sale: Tenant Opportunity to Purchase (TOPA) — § 42-3404.03"
+  url: null
+  quoted_text: The owner shall provide each tenant with a written copy of the offer of sale by
+    certified mail, a delivery service providing delivery tracking confirmation, or hand delivery.
+  secondary: []
+terms:
+  - delivery
+  - mail
+  - certified
+  - tracking
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

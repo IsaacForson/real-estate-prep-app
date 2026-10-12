@@ -1,0 +1,40 @@
+id: SD-21A-0271
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A limited agent discovers that the property may have structural issues requiring engineering
+  evaluation, which is beyond the agent's expertise. What must the limited agent do?
+options:
+  - Advise the client to obtain expert advice as to material matters beyond the licensee's expertise
+  - Advise the client to obtain expert advice only if the client requests it
+  - Advise the client to rely on the agent's personal assessment of the structural condition
+  - Advise the client to proceed with the transaction without further investigation
+key: A
+explanation: Section 36-21A-140(5) requires a limited agent to advise the client to obtain expert
+  advice for material matters that are beyond the licensee's expertise. The agent must give this
+  advice irrespective of whether the client asks for it. The option that says the client should rely
+  on the agent's personal assessment of the structural condition is wrong because it makes the
+  advice contingent on the client's request, which the rule does not allow.
+citation:
+  source: S.D. Codified Laws § 36-21A-140(5)
+  url: null
+  quoted_text: To advise the client to obtain expert advice as to material matters about which the
+    licensee knows but the specifics of which are beyond the expertise of the licensee;
+  secondary: []
+terms:
+  - limited agent
+  - expert advice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

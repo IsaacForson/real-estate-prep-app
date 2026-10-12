@@ -1,0 +1,40 @@
+id: NY-443-0458
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: knowledge
+stem: "Under 19 NYCRR §175.8, a broker may negotiate the sale of property directly with an owner who
+  has an existing written exclusive authority contract with another broker only if:"
+options:
+  - The broker has obtained written consent from the owner
+  - The broker is unaware of the existing exclusive contract
+  - The broker offers to reduce the commission rate
+  - The property is located outside New York State
+key: B
+explanation: The regulation prohibits direct negotiation only when the broker knows of the owner’s
+  exclusive contract with another broker; therefore, lack of knowledge permits the negotiation. The
+  distractor suggesting written consent from the owner is incorrect because the rule does not
+  provide an exception based on the owner’s consent.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 § 175.8
+  url: null
+  quoted_text: if he knows that such owner, or lessor, has an existing written contract granting
+    exclusive authority in connection with such property with another broker.
+  secondary: []
+terms:
+  - exclusive contract
+  - knowledge
+  - negotiation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

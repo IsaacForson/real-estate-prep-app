@@ -1,0 +1,42 @@
+id: VA-21-0368
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under Virginia law, a broker's noncompliance with chapter 21 regulations will **NOT** qualify
+  for the voluntary compliance program if the noncompliance was:"
+options:
+  - The noncompliance was intentional or resulted from gross negligence.
+  - The noncompliance was due to ordinary negligence only.
+  - The noncompliance involved a failure to pay the required assessment fee.
+  - The noncompliance occurred more than one year before discovery.
+key: A
+explanation: The voluntary compliance program is unavailable when the noncompliance is intentional
+  or results from gross negligence, as explicitly stated in § 54.1-2111.1.C. Ordinary negligence,
+  failure to pay an assessment, or the age of the noncompliance do not trigger this exemption.
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2111.1
+  url: null
+  quoted_text: The provisions of this section do not apply if the noncompliance by the broker was
+    intentional or a result of gross negligence of the broker, including any actions by an
+    unlicensed employee negotiating the provisions of a rental agreement as prohibited under
+    subsection C of § 54.1-2103 .
+  secondary: []
+terms:
+  - voluntary compliance
+  - gross negligence
+  - intentional
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

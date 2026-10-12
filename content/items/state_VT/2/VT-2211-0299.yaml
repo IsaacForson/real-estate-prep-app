@@ -1,0 +1,51 @@
+id: VT-2211-0299
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson applying for a license and also registering a branch office must pay which total
+  amount under Vermont law?
+options:
+  - $200.00
+  - $300.00
+  - $400.00
+  - $500.00
+key: B
+explanation: The salesperson license application fee is $100.00 and the branch office registration
+  fee is $200.00, for a total of $300.00 under § 2255(a). The $200.00 distractor reflects only the
+  branch office fee, omitting the application fee.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2255(a)
+  url: null
+  quoted_text: |-
+    (B) Salesperson license
+     $ 100.00
+
+     (C) Brokerage firm registration
+     $ 200.00
+
+     (D) Branch office registration
+     $ 200.00
+  secondary: []
+math:
+  worked_solution: 100.00 + 200.00 = 300.00
+  formulas:
+    - Total = Application fee + Registration fee
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - application
+  - registration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

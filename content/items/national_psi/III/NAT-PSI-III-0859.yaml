@@ -1,0 +1,38 @@
+id: NAT-PSI-III-0859
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: What is the maximum transaction value for a complex one-to-four-unit residential property that
+  a licensed residential appraiser may appraise under AQB criteria?
+options:
+  - $1,000,000
+  - $400,000
+  - $500,000
+  - $250,000
+key: B
+explanation: The AQB criteria state that a licensed residential appraiser may handle complex
+  one-to-four-unit residential properties only when the transaction value is below $400,000. The
+  $1,000,000 limit applies to non‑complex properties, not complex ones. The other amounts are either
+  the exemption thresholds or unrelated figures.
+citation:
+  source: REP Ref. Valuation & Appraisal § 6.2
+  url: null
+  quoted_text: licensed residential appraiser (non-complex one-to-four-unit residential properties
+    with a transaction value below $1,000,000, and complex ones below $400,000)
+  secondary: []
+terms:
+  - licensed residential appraiser
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-04

@@ -1,0 +1,48 @@
+id: NM-1-0376
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker receives an earnest money check from a buyer, obtains all parties'
+  signatures the same day, but holds the check for two days before delivering it to the qualifying
+  broker. Is this a violation under N.M. Stat. Ann. § 61-29-12(A)(9)?
+options:
+  - The action is a violation if the money was commingled with personal funds, regardless of any
+    other circumstances.
+  - The action is not a violation because the associate broker is not required to handle deposit
+    money.
+  - The action is a violation because the associate broker failed to place the money with the
+    qualifying broker as soon as practicably possible.
+  - The action is not a violation because the associate broker may hold the check for any length of
+    time before giving it to the qualifying broker.
+key: C
+explanation: The statute requires an associate broker to place deposit money with the qualifying
+  broker as soon after receipt as practicably possible after obtaining signatures; holding the check
+  for two days violates this duty. The associate broker cannot hold the check arbitrarily, and the
+  duty to transfer money timely is unconditional.
+citation:
+  source: N.M. Stat. Ann. § 61-29 — New Mexico Real Estate Brokers and Salesmen Act, NMSA 1978 §§
+    61-29-1 to 61-29-29 — NMREC License Law and Rules book, 2021 web edition — § 61-29-12
+  url: null
+  quoted_text: (9) Failed, if an associate broker, to place as soon after receipt as is practicably
+    possible in the custody of the associate broker’s qualifying broker, after securing signatures
+    of all parties to the transaction, any deposit money or other money entrusted to the associate
+    broker by any person dealing with the associate broker as the representative of the qualifying
+    broker;
+  secondary: []
+terms:
+  - associate broker
+  - deposit money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

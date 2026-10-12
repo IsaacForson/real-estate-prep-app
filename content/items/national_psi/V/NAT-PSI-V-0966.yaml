@@ -1,0 +1,43 @@
+id: NAT-PSI-V-0966
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer includes an inspection contingency that allows termination for any reason during the
+  inspection period. After completing inspections, the buyer requests repairs; the seller refuses.
+  What may the buyer do?
+options:
+  - The buyer must proceed with the purchase because the seller’s refusal ends the contingency
+  - The buyer may terminate the contract and recover the earnest money
+  - The buyer can only sue the seller for specific performance to force the repairs
+  - The buyer must accept a price reduction equal to the repair cost
+key: B
+explanation: An inspection contingency that allows termination for any reason permits the buyer to
+  end the contract and receive a refund of the earnest money, regardless of the seller’s response to
+  a repair request. The other choices are incorrect because they either require the buyer to proceed
+  with the purchase, limit the buyer to suing for specific performance, or require accepting a price
+  reduction, none of which are allowed when the contingency gives the buyer an unrestricted right to
+  terminate.
+citation:
+  source: REP Ref. Contracts § 6.3
+  url: null
+  quoted_text: Gives the buyer a period to have the property inspected and, depending on the form,
+    either to terminate for any reason, to terminate only for defects above a stated threshold, or
+    to request repairs which the seller may accept or refuse.
+  secondary: []
+terms:
+  - inspection contingency
+  - termination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

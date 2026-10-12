@@ -1,0 +1,47 @@
+id: NJ-1-0257
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker voluntarily surrendered her license in January. In March, the commission receives a
+  verified complaint alleging false promises that occurred in February while she was still licensed.
+  May the commission investigate under N.J.S.A. 45:15-17?
+options:
+  - Yes, the commission may investigate
+  - No, the commission may not investigate
+  - Yes, but only if the broker re‑applies
+  - No, unless the surrender was involuntary
+key: A
+explanation: The statute provides that the lapse or suspension of a license, or the voluntary
+  surrender of a license, does not deprive the commission of jurisdiction to investigate, provided
+  the alleged charges arose while the licensee was duly licensed. Since the alleged conduct occurred
+  in February while the broker was still licensed, the commission may proceed.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-17
+  url: null
+  quoted_text: The lapse or suspension of a license by operation of law or the voluntary surrender of
+    a license by a licensee shall not deprive the commission of jurisdiction to proceed with any
+    investigation as herein provided or prevent the commission from taking any regulatory action
+    against such licensee, provided, however, that the alleged charges arose while said licensee was
+    duly licensed.
+  secondary: []
+terms:
+  - jurisdiction
+  - surrender
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

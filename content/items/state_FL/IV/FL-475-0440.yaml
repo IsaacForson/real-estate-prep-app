@@ -1,0 +1,46 @@
+id: FL-475-0440
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: After a court finally reverses and sets aside an order that denied a license applicant’s
+  application, what effect does the reversal have on the allegations made in the original
+  information?
+options:
+  - The allegations are automatically deemed proven and the license is granted.
+  - The applicant must submit a new application to have the allegations considered.
+  - The allegations shall not be reexamined in any other proceeding concerning the licensure of the
+    applicant.
+  - The allegations may be reexamined in a later proceeding concerning the applicant’s licensure.
+key: C
+explanation: The statute provides that if an order denying a license or taking disciplinary action
+  is finally reversed and set aside, the matters and things alleged in the information shall not
+  thereafter be reexamined in any other proceeding concerning the licensure of the defendant (Fla.
+  Stat. § 475.37). Therefore, the allegations cannot be raised again in a later licensure
+  proceeding. The other answer choices are incorrect because they suggest the allegations are
+  automatically proven, require a new application, or may be reexamined, which contradicts the
+  statutory prohibition.
+citation:
+  source: Fla. Stat. § 475.37
+  url: null
+  quoted_text: The matters and things alleged in the information shall not thereafter be reexamined in
+    any other proceeding concerning the licensure of the defendant.
+  secondary: []
+terms:
+  - reversal
+  - information
+  - allegations
+  - reexamination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

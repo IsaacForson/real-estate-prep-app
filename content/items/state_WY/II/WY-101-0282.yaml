@@ -1,0 +1,41 @@
+id: WY-101-0282
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A required education class is scheduled for 8 clock hours. According to Wyoming Real Estate
+  Commission Rules, what is the minimum attendance time a participant must have to be eligible for
+  continuing education credit?
+options:
+  - The participant must attend at least 7.2 clock hours.
+  - The participant must attend at least 7.5 clock hours.
+  - The participant must attend at least 8.0 clock hours.
+  - The participant must attend at least 6.4 clock hours.
+key: A
+explanation: The rule requires participants to be present for at least ninety percent (90%) of the
+  approved course to receive credit; 90% of 8 clock hours equals 7.2 clock hours, so the correct
+  requirement is that the participant must attend at least 7.2 clock hours. The other options
+  overstate the requirement, demand full attendance, or understate it.
+citation:
+  source: Wyo. Real Estate Comm'n Rules ch. 4 — Wyoming Real Estate Commission Rules, Chapter 4 —
+    Renewals and Education Section 6(j)(v)
+  url: null
+  quoted_text: All instructors and/or providers shall certify that participants were present for at
+    least ninety percent (90%) of the approved course.
+  secondary: []
+terms:
+  - attendance
+  - credit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

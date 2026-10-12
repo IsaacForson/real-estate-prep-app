@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0904
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A loan involves two co‑borrowers who are jointly obligated on the loan. The creditor provides
+  the required TILA disclosures to the borrower designated as the primary obligor on the loan
+  documents. Under TILA §1631(a), is the creditor’s disclosure practice compliant?
+options:
+  - Yes, because disclosure to the secondary obligor satisfies the requirement if the primary
+    obligor is also notified orally.
+  - Yes, because disclosure to the primary obligor satisfies the requirement only if the loan is
+    secured by real property.
+  - Yes, because disclosure to one obligor satisfies the requirement when that obligor is the
+    primary obligor.
+  - Yes, because disclosure to any obligor satisfies the requirement regardless of which obligor is
+    primary.
+key: C
+explanation: The rule permits disclosure to only one obligor when that obligor is the primary
+  obligor; no additional conditions are required. The other options add unnecessary requirements.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1631(a)
+  url: null
+  quoted_text: In a transaction involving more than one obligor, a creditor or lessor, except in a
+    transaction under section 1635 of this title, need not disclose to more than one of such
+    obligors if the obligor given disclosure is a primary obligor.
+  secondary: []
+terms:
+  - primary obligor
+  - disclosure
+  - co‑borrowers
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

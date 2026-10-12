@@ -1,0 +1,47 @@
+id: VA-21-0399
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Virginia real estate salesperson's license was issued on March 10, 2024. According to
+  Virginia law, on what date does this license expire?
+options:
+  - March 31, 2026
+  - March 10, 2026
+  - March 31, 2025
+  - April 10, 2026
+key: A
+explanation: The license expires two years from the last day of the month of issuance; March 10,
+  2024 falls in March, last day is March 31, 2024, plus two years equals March 31, 2026.
+citation:
+  source: "### 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing
+    Regulations — § 135-20-90"
+  url: null
+  quoted_text: Licenses issued under this chapter for salespersons, brokers, and firms will expire two
+    years from the last day of the month in which the licenses were issued, as indicated on the
+    license.
+  secondary: []
+math:
+  worked_solution: |-
+    Identify the month of issuance: March 2024.
+    Determine the last day of that month: March 31, 2024.
+    Add two years to that date: March 31, 2024 + 2 years = March 31, 2026.
+  formulas:
+    - Expiration Date = LastDayOfMonth(IssueDate) + 2 years
+  onscreen_calculator_only: false
+terms:
+  - license expiration
+  - issuance date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

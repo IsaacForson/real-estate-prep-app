@@ -1,0 +1,41 @@
+id: AZ-20-0406
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A purchaser discovers a fraudulent scheme (subsection C violation) 20 months after the
+  violation occurred. Under Arizona Revised Statutes § 32-2195.06(I), may the purchaser bring an
+  action to enforce liability for that violation?
+options:
+  - Yes, because the limitation period is one year.
+  - Yes, because the limitation period is two years.
+  - No, because the limitation period is two years.
+  - No, because the limitation period is one year.
+key: B
+explanation: For violations under subsection C, the statute allows up to two years to bring an
+  action. At 20 months, the claim is still timely. The distractor “No, because the limitation period
+  is one year” mistakenly applies the shorter A/B deadline to a subsection C violation.
+citation:
+  source: Ariz. Rev. Stat. § 32-2195.06(I)
+  url: null
+  quoted_text: No action shall be maintained to enforce any liability created pursuant to subsection C
+    of this section unless brought within two years after the violation upon which it is based.
+  secondary: []
+terms:
+  - fraudulent scheme
+  - subsection C
+  - limitation period
+  - action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

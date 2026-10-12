@@ -1,0 +1,44 @@
+id: NJ-1-0322
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee advises a client to clear trees from a freshwater wetland to improve the view.
+  Under N.J.S.A. 13:9B-3, is a freshwater wetlands permit required before cutting the trees?
+options:
+  - Under the act, a permit is required because destruction of plant life, including the cutting of
+    trees, is a regulated activity
+  - Under the act, a permit is not required because tree cutting is considered routine maintenance
+    and is exempt
+  - Under the act, a permit is not required if the trees are less than six inches in diameter
+  - Under the act, a permit is required only if more than ten trees are removed
+key: A
+explanation: The statute includes the destruction of plant life, including the cutting of trees, as
+  a regulated activity requiring a permit. The claim that tree cutting is considered routine
+  maintenance and is exempt is not supported by the statute.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 9B-1 13:9B-3
+  url: null
+  quoted_text: (6)  The destruction of plant life which would alter the character of a freshwater
+    wetland, including the cutting of trees;
+  secondary: []
+terms:
+  - permit
+  - regulated activity
+  - destruction of plant life
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

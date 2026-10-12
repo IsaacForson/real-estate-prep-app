@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0954
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor receives a completed loan application on March 10. Under ECOA, what is the latest
+  date by which the creditor must notify the applicant of its action on the application, assuming no
+  holidays affect the calculation?
+options:
+  - The creditor must notify the applicant by April 9.
+  - The creditor must notify the applicant by April 10.
+  - The creditor must notify the applicant by March 31.
+  - The creditor must notify the applicant by April 8.
+key: A
+explanation: Under 15 U.S.C. § 1691(d)(1), a creditor must notify the applicant of its action within
+  thirty days of receiving a completed application. Counting thirty days from March 10 brings us to
+  April 9. The option that says April 10 adds an extra day beyond the thirty‑day period, the option
+  that says March 31 ends before the thirty days are complete, and the option that says April 8
+  subtracts a day, none of which satisfy the thirty‑day rule.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(d)(1)
+  url: null
+  quoted_text: Within thirty days (or such longer reasonable time as specified in regulations of the
+    Bureau for any class of credit transaction) after receipt of a completed application for credit,
+    a creditor shall notify the applicant of its action on the application.
+  secondary: []
+terms:
+  - notification
+  - adverse action
+  - timing
+  - days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

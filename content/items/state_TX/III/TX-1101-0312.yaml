@@ -1,0 +1,46 @@
+id: TX-1101-0312
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker stopped using an assumed business name on June 10. According to TREC rule §535.154,
+  by what date must the broker notify the Texas Real Estate Commission?
+options:
+  - June 19
+  - June 21
+  - June 20
+  - June 30
+key: C
+explanation: The rule requires notification not later than the 10th day after the date the broker
+  stops using an assumed business name. Counting June 11 as day 1, the tenth day is June 20.
+  Therefore, the broker must notify by June 20. The distractors result from miscounting the interval
+  by one day short, one day long, or incorrectly adding twenty days.
+citation:
+  source: 22 Tex. Admin. Code § 535.154(d)(2)
+  url: null
+  quoted_text: A broker must notify the Commission using a process acceptable to the Commission not
+    later than the 10th day after the date the broker stops using an assumed business name.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: June 10
+    Add 10 days: June 10 + 10 days = June 20
+  formulas:
+    - deadline = start date + 10 days
+  onscreen_calculator_only: false
+terms:
+  - assumed business name
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

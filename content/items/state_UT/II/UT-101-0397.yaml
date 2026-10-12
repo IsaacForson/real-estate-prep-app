@@ -1,0 +1,49 @@
+id: UT-101-0397
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Utah Code Ann. § 61-2f-404, what is the default maximum civil penalty per violation when
+  the victim is **NOT** 65 years old or older and the licensee derived no gain exceeding $5,000 from
+  the violation?
+options:
+  - $5,000 per violation
+  - $7,500 per violation
+  - $10,000 per violation
+  - $12,500 per violation
+key: A
+explanation: Under Utah Code Ann. § 61-2f-404(1)(a)(ii)(A), the default maximum civil penalty is
+  $5,000 per violation when there are no aggravating factors such as the victim being 65 years or
+  older or the licensee gaining more than $5,000 from the violation. Since the stem specifies the
+  victim is NOT 65 or older and the gain does not exceed $5,000, no aggravating factors apply, so
+  the penalty is $5,000 per violation.
+citation:
+  source: Utah Code Ann. § 61-2f-404(1)(a)(ii)(A)
+  url: null
+  quoted_text: $5,000 for each violation;
+  secondary: []
+math:
+  worked_solution: "Step 1: Identify the applicable statute: Utah Code Ann. § 61-2f-404(1)(a)(ii)(A).
+    Step 2: Confirm that the victim is NOT 65 or older and the licensee's gain does not exceed
+    $5,000, meaning no aggravating factors are present. Step 3: Apply the statute, which sets the
+    default maximum civil penalty at $5,000 per violation under these conditions. Therefore, the
+    correct answer is $5,000 per violation."
+  formulas:
+    - Statutory penalty cap = $5,000 per violation
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - default
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

@@ -1,0 +1,47 @@
+id: AL-27-0351
+jurisdiction: AL
+bank: state_AL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee’s violation causes actual damages of $8,000. Under Ala. Code § 34-27-101(c), what
+  is the maximum total amount a court may award, including actual damages and additional damages?
+options:
+  - $8,000
+  - $16,000
+  - $24,000
+  - $32,000
+key: D
+explanation: "The maximum additional damages are three times the actual damages: 3 × $8,000 =
+  $24,000. Adding the actual damages gives $8,000 + $24,000 = $32,000 as the highest possible
+  award."
+citation:
+  source: Ala. Code § 34-27-101(c)
+  url: null
+  quoted_text: the court may award an amount up to three times the amount of actual damages sustained
+  secondary: []
+math:
+  worked_solution: |-
+    Actual damages = $8,000
+    Maximum additional damages = 3 × $8,000 = $24,000
+    Maximum total award = $8,000 + $24,000 = $32,000
+  formulas:
+    - Total = Actual + (3 × Actual)
+    - Total = 4 × Actual
+  onscreen_calculator_only: false
+terms:
+  - damages
+  - actual
+  - violation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

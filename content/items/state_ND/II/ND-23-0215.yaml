@@ -1,0 +1,44 @@
+id: ND-23-0215
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson's license has been on inactive status for one full continuing education period.
+  To reactivate the license, how many hours of continuing education must the salesperson complete,
+  assuming the standard requirement is twelve hours per period?
+options:
+  - Twenty-four hours of continuing education
+  - Six hours of continuing education
+  - Twelve hours of continuing education
+  - Thirty-six hours of continuing education
+key: C
+explanation: N.D. Admin. Code § 70-02-01-05 requires that to reactivate an inactive license, the
+  licensee must complete the continuing education hours for each period the license was inactive,
+  subject to a three‑period cap. For one inactive period, this equals twelve hours. Therefore,
+  twelve hours of continuing education are needed. The option of six hours is incorrect because it
+  does not meet the hourly requirement per period.
+citation:
+  source: N.D. Admin. Code ch. 70-02-01 — North Dakota Administrative Code Chapter 70-02-01,
+    Licensing, Trust Accounts, and Complaints — § 70-02-01-05
+  url: null
+  quoted_text: To reactivate an inactive license, a licensee must meet the continuing education hours
+    as required by section 70-02-04-02 for each continuing education period the licensee's license
+    was inactive, not to exceed the number of hours required for the three continuing education
+    periods prior to reactivation.
+  secondary: []
+terms:
+  - continuing education
+  - reactivation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

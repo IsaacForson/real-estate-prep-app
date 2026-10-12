@@ -1,0 +1,40 @@
+id: ND-23-0194
+jurisdiction: ND
+bank: state_ND
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The North Dakota Real Estate Commission plans to file an injunction against an unlicensed
+  individual practicing real estate. Under N.D. Cent. Code § 43-23-18, is the commission required to
+  post a bond when commencing this action?
+options:
+  - No bond required for commission action
+  - No bond required unless court orders
+  - No a bond equal to damages is required
+  - No bond needed if defendant asks
+key: A
+explanation: Section 43-23-18 explicitly states that the commission is not required to give any bond
+  for commencing an injunction action. Therefore, no bond is required. The other options incorrectly
+  impose a bond requirement not found in the statute.
+citation:
+  source: N.D. Cent. Code § 43-23-18
+  url: null
+  quoted_text: The commission is not required to give any bond for commencing this action.
+  secondary: []
+terms:
+  - injunction
+  - bond
+  - commission
+  - action
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

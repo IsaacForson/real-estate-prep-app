@@ -1,0 +1,47 @@
+id: WY-101-0339
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: "A responsible broker holds earnest money from two buyers for a property: Buyer A contributed
+  $8,000 and Buyer B contributed $2,000. The parties have a written agreement that any interest
+  earned on the deposit shall be split 75% to Buyer A and 25% to Buyer B. If the deposit earns $100
+  in interest, how should the interest be distributed under Wyo. Stat. § 33-28-122(c)?"
+options:
+  - Buyer A receives $60 and Buyer B receives $40.
+  - Buyer A receives $50 and Buyer B receives $50.
+  - Buyer A receives $75 and Buyer B receives $25.
+  - Buyer A receives $80 and Buyer B receives $20.
+key: C
+explanation: Under Wyo. Stat. Ann. § 33-28-122(c), interest on trust deposits must be paid out as
+  agreed in writing by all parties. When a written agreement specifies a 75%-25% split, the $100
+  interest is divided accordingly, giving Buyer A $75 and Buyer B $25.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-122(c)
+  url: null
+  quoted_text: Any interest accrued on any deposit in a trust account shall be paid out as agreed in
+    writing by all persons having an interest in the deposit.
+  secondary: []
+math:
+  worked_solution: "Step 1: Calculate Buyer A's share: $100 × 75% = $75.\\nStep 2: Calculate Buyer B's
+    share: $100 × 25% = $25."
+  formulas:
+    - Interest allocation = Total interest × (percentage/100)
+  onscreen_calculator_only: false
+terms:
+  - earnest money
+  - interest
+  - written agreement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

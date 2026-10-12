@@ -1,0 +1,39 @@
+id: ND-23-0253
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker terminates a salesperson's supervision on Monday but does not notify the commission
+  in writing until Thursday. Under N.D. Cent. Code § 43-23-10, is the broker's action permissible?
+options:
+  - C) Yes, as long as the salesperson does not perform any licensed acts.
+  - B) No, because the broker must notify the commission immediately.
+  - D) No, unless the broker obtains a written waiver from the commission.
+  - A) Yes, because the broker has up to five days to notify.
+key: B
+explanation: The rule requires the broker to notify the commission "immediately" upon termination of
+  supervision. Waiting three days violates this immediate notice requirement. The distractor about
+  five days incorrectly applies the notice period for broker changes to this situation.
+citation:
+  source: N.D. Cent. Code § 43-23-10
+  url: null
+  quoted_text: Upon termination of a real estate salesperson's supervision by a broker, the broker
+    immediately shall notify the commission in writing.
+  secondary: []
+terms:
+  - broker
+  - supervision
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,48 @@
+id: FL-475-0449
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker provides a rental information list to a prospective tenant for a fee of $80. The list
+  contains outdated information that is materially inaccurate. The tenant demands a refund. Under
+  Florida law, what amount must the broker refund?
+options:
+  - $60 (75% of fee)
+  - $80 (full fee)
+  - $0 (no refund)
+  - $20 (25% of fee)
+key: B
+explanation: If the rental information list is not current or accurate in any material respect, the
+  full fee must be repaid to the prospective tenant upon demand. The distractor of $60 incorrectly
+  applies the 25% rule, which only applies when the list is accurate but the tenant fails to obtain
+  a rental.
+citation:
+  source: Fla. Stat. § 475.453(1)
+  url: null
+  quoted_text: If the rental information list provided by the broker or sales associate to a
+    prospective tenant is not current or accurate in any material respect, the full fee shall be
+    repaid to the prospective tenant upon demand.
+  secondary: []
+math:
+  worked_solution: "The fee charged is $80. Because the list is materially inaccurate, Florida law
+    requires the broker to refund the full fee. Therefore, the refund amount equals the fee: $80."
+  formulas:
+    - Refund = Fee when the list is materially inaccurate
+  onscreen_calculator_only: false
+terms:
+  - rental information list
+  - refund
+  - materially inaccurate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

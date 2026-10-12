@@ -1,0 +1,49 @@
+id: CT-311-0188
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A commissioner incurs $150 in mileage to attend a commission meeting in Hartford. May the
+  commissioner be reimbursed for this expense?
+options:
+  - Yes, members shall be reimbursed for necessary expenses incurred while performing duties.
+  - No, members are not compensated for any expenses related to commission duties.
+  - Yes, but reimbursement requires prior approval from the commission chairperson.
+  - No, unless the expense is directly tied to a licensing examination activity.
+key: A
+explanation: Under the statute, members are not compensated for their services but are reimbursed
+  for necessary expenses incurred while performing their duties. Mileage for attending a commission
+  meeting is a necessary expense related to duty performance, so it is reimbursable. The claim that
+  members receive no compensation for any expenses overlooks the reimbursement provision for
+  necessary expenses.
+citation:
+  source: "### Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter
+    392 - Real Estate Licensees (2025 supplement) — § 20-311a"
+  url: null
+  quoted_text: Members shall not be compensated for their services but shall be reimbursed for
+    necessary expenses incurred in the performance of their duties.
+  secondary: []
+math:
+  worked_solution: The commissioner incurred $150 in mileage. According to Conn. Gen. Stat. § 20-311a,
+    members shall be reimbursed for necessary expenses incurred in the performance of their duties.
+    Attending a commission meeting is a duty, so the $150 mileage is a necessary expense and thus
+    reimbursable. Therefore, the reimbursable amount is $150.
+  formulas:
+    - Reimbursement = Eligible Expense
+  onscreen_calculator_only: false
+terms:
+  - reimbursement
+  - expense
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

@@ -1,0 +1,41 @@
+id: MT-51-0322
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker closes the office at 123 Main Street on March 15 and does not notify the department
+  beforehand. According to Montana law, by what date must the broker notify the department to comply
+  with the address change requirement?
+options:
+  - Notify the department by March 25.
+  - Notify the department by March 20.
+  - Notify the department by April 5.
+  - Notify the department by March 30.
+key: A
+explanation: The rule states that notice must be given before removal or within 10 days after
+  removal. Since the broker removed on March 15 without prior notice, the latest permissible notice
+  is 10 days later, which is March 25. Notifying by March 25 satisfies the requirement.
+citation:
+  source: Mont. Code Ann. § 37-51-308(3)
+  url: null
+  quoted_text: In case of removal from the designated address, the broker shall notify the department
+    before removal or within 10 days after removal, designating the new physical address and paying
+    the required fee.
+  secondary: []
+terms:
+  - deadline
+  - notice
+  - removal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

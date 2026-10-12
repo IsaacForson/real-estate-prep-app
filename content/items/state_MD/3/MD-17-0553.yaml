@@ -1,0 +1,41 @@
+id: MD-17-0553
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A course provider receives a denial of course approval on Thursday, March 7. According to
+  COMAR 09.11.02(B), what is the last business day on which the provider may file a request for
+  review to be timely?
+options:
+  - March 13
+  - March 20
+  - March 15
+  - March 22
+key: B
+explanation: The rule requires the request to be filed within 10 business days of receipt of the
+  denial notice. Counting 10 business days from March 7 (excluding weekends) leads to March 20.
+  March 15 would only be six business days after receipt.
+citation:
+  source: COMAR § 09.11.02(B)
+  url: null
+  quoted_text: B. A course provider who has been denied approval of a course by Commission staff may
+    request the Committee to review that decision. The request for review shall be filed within 10
+    business days of receipt of the denial notice.
+  secondary: []
+terms:
+  - business days
+  - review
+  - denial
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

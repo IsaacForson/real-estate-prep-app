@@ -1,0 +1,44 @@
+id: DC-198-0390
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An elderly tenant signed a rental agreement on March 10, 2018 and took occupancy on April 10,
+  2018. On May 1, 2024, the owner delivers a written offer of sale. Under D.C. Code §
+  42-3404.09(c)(1), does the subchapter apply to this tenant?
+options:
+  - The subchapter applies because the tenant meets all three conditions
+  - The subchapter does not apply because the tenant signed the agreement after March 31
+  - The subchapter does not apply because the tenant took occupancy after April 15
+  - The subchapter applies but only if the tenant also has a disability
+key: A
+explanation: The subchapter applies if the tenant is elderly as of the offer date, signed the lease
+  by March 31, 2018, and took occupancy by April 15, 2018. The tenant meets all three conditions, so
+  the subchapter applies. The distractor claiming the subchapter applies only if the tenant also has
+  a disability is incorrect because elderly status alone suffices.
+citation:
+  source: "D.C. Code §§ 42-3404.01–42-3404.16 — D.C. Code Title 42, Ch. 34, Subch. IV - Rental Housing
+    Conversion and Sale: Tenant Opportunity to Purchase (TOPA) — § 42-3404.09"
+  url: null
+  quoted_text: If a tenant is an elderly tenant or is a tenant with a disability as of the date of the
+    offer of sale, and the tenant signed a rental agreement to occupy a single-family accommodation
+    or a unit in a single-family accommodation by March 31, 2018, and took occupancy by April 15,
+    2018, the provisions of this subchapter shall apply, as modified by this section.
+  secondary: []
+terms:
+  - elderly tenant
+  - rental agreement
+  - occupancy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

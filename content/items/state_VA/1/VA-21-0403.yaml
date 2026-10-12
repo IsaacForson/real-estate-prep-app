@@ -1,0 +1,42 @@
+id: VA-21-0403
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Virginia-licensed real estate salesperson who also serves as an approved instructor teaches
+  a 3-hour continuing education course. According to Virginia regulations, how may the salesperson
+  treat those 3 hours for continuing education credit?
+options:
+  - The salesperson may claim the 3 hours as continuing education credit for teaching the course
+  - The salesperson must retake the course to receive any continuing education credit
+  - The salesperson may only claim half of the hours as continuing education credit
+  - The salesperson cannot claim any continuing education credit for teaching activities
+key: A
+explanation: The regulation explicitly allows instructors who are also licensees to earn continuing
+  education credit for teaching continuing education courses. Therefore, the salesperson may claim
+  the full 3 hours as credit. The distractor stating the salesperson cannot claim any credit
+  contradicts the rule that permits such credit for teaching.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    subsection G
+  url: null
+  quoted_text: Instructors who are also licensees of the board may earn continuing education credit
+    for teaching continuing education courses.
+  secondary: []
+terms:
+  - instructor
+  - continuing education credit
+  - teaching
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

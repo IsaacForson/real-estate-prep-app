@@ -1,0 +1,41 @@
+id: VA-21-0429
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, what is the maximum civil penalty the Real Estate Board may impose for
+  unlicensed activity in a real estate transaction where the violator received no compensation?
+options:
+  - $500
+  - $750
+  - $1,000
+  - $1,500
+key: C
+explanation: The statute states that the Board may impose a civil penalty not to exceed $1,000 for
+  any real estate transaction or the compensation received, whichever is greater. When no
+  compensation is received, the $1,000 cap applies. The $750 amount is a common misconception but is
+  not the statutory limit.
+citation:
+  source: Va. Code Ann. § 54.1-2105.2(C)
+  url: null
+  quoted_text: Any person engaging in unlicensed activity shall be subject to further proceedings
+    before the Board and the Board may impose a civil penalty not to exceed $1,000 for any real
+    estate transaction or the compensation received from any such real estate transaction, whichever
+    is greater.
+  secondary: []
+terms:
+  - civil penalty
+  - unlicensed activity
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

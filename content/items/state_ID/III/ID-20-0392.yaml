@@ -1,0 +1,44 @@
+id: ID-20-0392
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sole proprietor seeking a real estate license completed the required business conduct and
+  office operations course 2 years and 11 months ago. Under Idaho Code § 54-2016(2)(c), does this
+  satisfy the course requirement for licensure?
+options:
+  - The course completion is insufficient because it must have been completed within the two‑year
+    period.
+  - The course completion is sufficient because it occurred within the three‑year period.
+  - The course completion is sufficient because any prior completion satisfies the requirement.
+  - The course completion is insufficient because it must have been completed within the one‑year
+    period.
+key: B
+explanation: The statute requires the course to be completed within three years immediately prior to
+  the application for license. Completion 2 years and 11 months ago falls within that window, so the
+  requirement is satisfied. The distractor asserting a two‑year requirement misstates the statutory
+  period.
+citation:
+  source: Idaho Code § 54-2016(2)(c)
+  url: null
+  quoted_text: The individual designated broker shall have satisfactorily completed a
+    commission-approved business conduct and office operations course within three (3) years
+    immediately prior to the application for license.
+  secondary: []
+terms:
+  - sole proprietor
+  - course completion
+  - three-year
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

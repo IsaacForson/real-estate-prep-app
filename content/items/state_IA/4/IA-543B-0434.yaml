@@ -1,0 +1,44 @@
+id: IA-543B-0434
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant held a nursing license that was suspended in another state eight months ago and
+  now applies for an Iowa real estate salesperson license. Under Iowa Code § 543B.15, what action
+  may the commission take regarding this applicant?
+options:
+  - The commission may refer the case to the other state's licensing board.
+  - The commission may approve the license despite the suspension.
+  - The commission may deny the license based on the suspension.
+  - The commission may require additional education before issuing the license.
+key: C
+explanation: Under Iowa Code § 543B.15(4), an applicant who has had a professional license suspended
+  in any jurisdiction may be denied a license on the grounds of that suspension. Therefore, the
+  commission may deny the license based on the suspension. The distractor suggesting approval
+  despite the suspension is incorrect because the statute explicitly allows denial for a suspension,
+  not automatic approval.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — §
+    543B.15 § 543B.15(4)
+  url: null
+  quoted_text: An applicant for a real estate broker’s or salesperson’s license who has had a
+    professional license of any kind revoked or suspended or who has had any other form of
+    discipline imposed, in this or any other jurisdiction, may be denied a license by the commission
+    on the grounds of the revocation, suspension, or other discipline.
+  secondary: []
+terms:
+  - suspension
+  - professional license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

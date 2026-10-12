@@ -1,0 +1,43 @@
+id: VT-2211-0345
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont broker receives an earnest money deposit, places the funds in a trust account, but
+  fails to keep any deposit slips, ledger entries, or other records of the transaction. Under
+  Vermont law, how should this action be classified?
+options:
+  - It is considered unprofessional conduct because failing to maintain records of trust account
+    funds violates Vermont law.
+  - It is permissible as long as the broker can also later reconstruct the transactions from memory.
+  - It is allowed if the omission also occurs only once during the licensing period.
+  - It is also subject only to a verbal warning from the Vermont Real Estate Commission.
+key: A
+explanation: Vermont law lists failing to maintain records as unprofessional conduct; the broker’s
+  omission violates this requirement. The distractor suggesting memory reconstruction is sufficient
+  misstates the rule, which mandates actual record retention.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2296(2)
+  url: null
+  quoted_text: failing to inform clients, establish trust and escrow accounts, maintain records, and
+    otherwise act in accordance with the provisions of section 2214 of this chapter with respect to
+    all monies received by the licensee as a real estate broker, or as escrow agent, or as the
+    temporary custodian of the funds of others, in a real estate transaction;
+  secondary: []
+terms:
+  - records
+  - trust account
+  - unprofessional conduct
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

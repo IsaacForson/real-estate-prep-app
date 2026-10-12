@@ -1,0 +1,42 @@
+id: NJ-1-0306
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to N.J.S.A. 46:8-48, what type of lease provision is a landlord prohibited from
+  including in a written lease after the effective date of the Truth-in-Renting Act?
+options:
+  - A provision that allows the landlord to enter the premises without notice for inspections
+  - A provision that violates clearly established legal rights of tenants or responsibilities of
+    landlords
+  - A provision that requires the tenant to pay for repairs normally the landlord's responsibility
+  - A provision that increases the rent annually based on the consumer price index
+key: B
+explanation: The statute explicitly prohibits any lease provision that violates clearly established
+  legal rights of tenants or responsibilities of landlords. The other options describe specific
+  lease terms that may or may not be prohibited depending on whether they violate those rights, but
+  they do not capture the general prohibition.
+citation:
+  source: N.J. Stat. Ann. § 46:8-48
+  url: null
+  quoted_text: No landlord shall offer to any tenant or prospective tenant or enter into any written
+    lease after the effective date of this act which includes a lease provision which violates
+    clearly established legal rights of tenants or responsibilities of landlords
+  secondary: []
+terms:
+  - lease provision
+  - tenant rights
+  - landlord responsibilities
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

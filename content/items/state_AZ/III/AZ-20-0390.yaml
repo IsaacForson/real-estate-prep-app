@@ -1,0 +1,42 @@
+id: AZ-20-0390
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A subdivider advertises a lot as suitable for building a home, but the lot lacks both potable
+  water and a sewer connection. The advertisement includes a conspicuous statement that 'facts to
+  the contrary are included in each advertisement pertaining to the property.' Under Ariz. Rev.
+  Stat. § 32-2183.01(B)(4), is this advertisement compliant?
+options:
+  - The advertisement is compliant because the disclosure satisfies the exception.
+  - The advertisement is non‑compliant because water and sewer are required regardless of disclosure.
+  - The advertisement is compliant because any statement about suitability is permitted.
+  - The advertisement is non‑compliant because the disclosure must be in a separate document.
+key: A
+explanation: The rule permits a suitability statement if facts to the contrary are clearly and
+  conspicuously included in the advertisement. Since the advertiser provided such a disclosure, the
+  statement is allowed. The claim that water and sewer are required regardless of disclosure ignores
+  the explicit exception in subsection (B)(4)(b).
+citation:
+  source: Ariz. Rev. Stat. § 32-2183.01(B)(4)
+  url: null
+  quoted_text: (b) Facts to the contrary are clearly and conspicuously included in each advertisement
+    pertaining to the property.
+  secondary: []
+terms:
+  - suitability
+  - disclosure
+  - exception
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

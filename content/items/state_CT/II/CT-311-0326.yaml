@@ -1,0 +1,38 @@
+id: CT-311-0326
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Connecticut Real Estate Commission has eight members. What is the minimum number of
+  members required to constitute a quorum under Conn. Gen. Stat. § 20-311b(a)?
+options:
+  - A quorum of the Connecticut Real Estate Commission requires at least 6 members
+  - A quorum of the Connecticut Real Estate Commission requires at least 7 members
+  - A quorum of the Connecticut Real Estate Commission requires at least 4 members
+  - A quorum of the Connecticut Real Estate Commission requires at least 5 members
+key: D
+explanation: The statute defines a quorum as a majority of the members. With eight members, a
+  majority is five, so at least five members are needed for a quorum. Four members constitute less
+  than a majority and therefore do not meet the quorum requirement.
+citation:
+  source: Conn. Gen. Stat. ch. 392, § 20-311b(a)
+  url: null
+  quoted_text: A majority of the members of the commission shall constitute a quorum for the exercise
+    of the powers or authority conferred upon it.
+  secondary: []
+terms:
+  - quorum
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

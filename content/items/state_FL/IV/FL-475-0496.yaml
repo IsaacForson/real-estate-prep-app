@@ -1,0 +1,41 @@
+id: FL-475-0496
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee attempts to record a residential loan alternative agreement in the public records.
+  Under Florida law, what is the result?
+options:
+  - The recording is prohibited and the agreement is unenforceable.
+  - The recording is permitted and provides constructive notice to third parties.
+  - The recording is allowed only if the broker consents in writing.
+  - The recording is permitted but does not affect the agreement's enforceability.
+key: A
+explanation: The statute requires that a residential loan alternative agreement meet all
+  requirements of the section or it is unenforceable; one requirement is that the agreement may not
+  be recorded by the clerk. Attempting to record violates this requirement, rendering the agreement
+  unenforceable. The other options incorrectly claim recording is permitted, allowed with broker
+  consent, or has no effect on enforceability.
+citation:
+  source: Fla. Stat. § 475.25(6)
+  url: null
+  quoted_text: A residential loan alternative agreement must meet all of the requirements of this
+    section or it is unenforceable in law or equity.
+  secondary: []
+terms:
+  - residential loan alternative agreement
+  - recording
+  - unenforceable
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

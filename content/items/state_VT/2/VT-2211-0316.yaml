@@ -1,0 +1,43 @@
+id: VT-2211-0316
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A Vermont real estate broker receives a three-thousand-dollar earnest money deposit on Monday
+  and deposits it into the trust account on the following Monday (six banking days later). Under
+  Vermont law, what is the consequence for this action?
+options:
+  - Subject to penalties under 3 V.S.A. §127
+  - No penalty if the funds are still held in the trust account
+  - Required to pay interest to the buyer for the delay
+  - Must return the deposit to the buyer immediately
+key: A
+explanation: Vermont law requires an earnest money deposit to be deposited into a trust account
+  within five banking days. Depositing it on the sixth banking day violates that rule, and any
+  violation of the real estate brokerage statutes subjects the broker to penalties under 3 V.S.A.
+  §127. The idea that no penalty applies if the funds remain in the trust account is incorrect
+  because the timeliness violation itself triggers penalties.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons § 2213
+  url: null
+  quoted_text: A person who shall violate any provision of this chapter shall be subject to the
+    penalties provided in 3 V.S.A. § 127.
+  secondary: []
+terms:
+  - deposit
+  - timing
+  - penalty
+  - trust account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

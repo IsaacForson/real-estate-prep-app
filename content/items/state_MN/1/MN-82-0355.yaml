@@ -1,0 +1,43 @@
+id: MN-82-0355
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives an earnest money deposit from a buyer. Which of the following amounts
+  received by the licensee would be considered trust funds under Minn. Stat. § 82.55 Subd. 26?
+options:
+  - A sales commission earned after closing a transaction and deposited into the broker’s operating
+    account.
+  - An earnest money deposit received from a buyer on a purchase agreement for residential real
+    property.
+  - A personal loan obtained from a relative to cover office rent and utilities for the brokerage.
+  - A monthly salary paid by the employing broker for administrative services performed.
+key: B
+explanation: Earnest money deposits are explicitly listed as trust funds in the statute. Personal
+  loans, sales commissions, and salaries are not included in the definition of trust funds.
+  Therefore, only the earnest money deposit qualifies.
+citation:
+  source: Minn. Stat. § 82.55 Subd. 26
+  url: null
+  quoted_text: Trust funds means funds received by a broker, salesperson, or closing agent in a
+    fiduciary capacity as a part of a real estate or business opportunity transaction, pending the
+    consummation or termination of a transaction, and includes all down payments, earnest money
+    deposits, rents for clients, tax and insurance escrow payments, damage deposits, and any funds
+    received on behalf of any person.
+  secondary: []
+terms:
+  - trust funds
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

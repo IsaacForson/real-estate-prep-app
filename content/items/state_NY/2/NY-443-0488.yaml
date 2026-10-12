@@ -1,0 +1,48 @@
+id: NY-443-0488
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: "A broker wants to pay part of a commission to an unlicensed limited liability company. The
+  LLC has two members: one is a licensed salesperson associated with the broker, and the other is
+  not licensed. Is this permissible under NY Real Property Law § 442?"
+options:
+  - It is permissible because the LLC is unlicensed but at least one member is licensed.
+  - It is permissible because the broker may pay any part of a commission to any unlicensed entity.
+  - It is not permissible because the LLC includes a member who is not licensed as an associate.
+  - It is not permissible because the LLC must be a licensed broker to receive compensation.
+key: C
+explanation: NY Real Property Law § 442 allows a broker to pay any portion of a commission to an
+  unlicensed corporation or limited liability company only when each shareholder or member is
+  associated with the broker as a duly licensed associate broker or salesperson. Because the LLC
+  includes a member who is not licensed, the payment is not permissible. The statement that a broker
+  may pay any part of a commission to any unlicensed entity is incorrect; the statute limits the
+  permission to LLCs whose members are all licensed associates.
+citation:
+  source: N.Y. Real Prop. Law art. 12-A — Real Property Law Article 12-A (§§ 440 to 443-a), Real
+    Estate Brokers and Salespersons — NY DOS 'Real Estate License Law' booklet, March 2026 — § 442
+  url: null
+  quoted_text: provided, however, that notwithstanding any other provision of this section, it shall
+    be permissible for a real estate broker to pay any part of a fee, commission, or other
+    compensation received to an unlicensed corporation or an unlicensed limited liability company if
+    each of its shareholders or members, respectively, is associated as an individual with the
+    broker as a duly licensed associate broker or salesman.
+  secondary: []
+terms:
+  - commission
+  - broker
+  - licensed associate
+  - limited liability company
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

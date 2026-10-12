@@ -1,0 +1,48 @@
+id: VT-2211-0086
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to 26 V.S.A. § 2251(a), what does the term "financial interest" mean for public
+  members of the Vermont Real Estate Commission?
+options:
+  - It means having a spouse, parent, child, brother, or sister who is a licensed real estate
+    broker, regardless of whether they actually participate in the broker's business
+  - It means dealing in goods or services that are uniquely related to activities regulated under
+    this chapter, or investing anything of value in a business licensed under this chapter
+  - It means receiving any income from real estate transactions as a consumer, even if the income is
+    minimal and not derived from brokerage activities
+  - It means owning residential property that is not used for business purposes, such as a personal
+    vacation home used solely by the owner and not leased to tenants
+key: B
+explanation: The statute defines “financial interest” as dealing in goods or services that are
+  uniquely related to activities regulated under the chapter, or investing anything of value in a
+  business licensed under the chapter. That description matches the answer that states a financial
+  interest means dealing in such goods or services or making an investment in a licensed business.
+  The answer that describes a spouse, parent, child, brother, or sister who is a broker is incorrect
+  because a family relationship alone does not create a financial interest unless it involves the
+  specified dealings or investments.
+citation:
+  source: 26 V.S.A. ch. 41 — 26 V.S.A. Chapter 41 — Real Estate Brokers and Salespersons — § 2251
+  url: null
+  quoted_text: “Financial interest” means dealing in goods or services that are uniquely related to
+    activities regulated under this chapter, or investing anything of value in a business licensed
+    under this chapter
+  secondary: []
+terms:
+  - financial interest
+  - public member
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-27

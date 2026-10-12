@@ -1,0 +1,43 @@
+id: PA-9-0305
+jurisdiction: PA
+bank: state_PA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant completed 30 hours of real estate instruction before the effective date of the
+  amendment to 63 P.S. § 455.521(2) and now seeks a salesperson license. How many total hours of
+  instruction must the applicant complete to satisfy the education requirement?
+options:
+  - 30 hours.
+  - 45 hours.
+  - 60 hours.
+  - 75 hours.
+key: C
+explanation: Under 63 P.S. § 455.521(2)(ii), an applicant who has completed any portion of the
+  required hours before the effective date must complete a total of 60 hours of instruction to
+  qualify for a salesperson license. Selecting 60 hours meets this requirement. Choosing 30 hours
+  does not reach the required total.
+citation:
+  source: 63 P.S. § 455.521(2)(ii)
+  url: null
+  quoted_text: An applicant shall be required to complete 60 hours of real estate instruction as
+    prescribed under subparagraph (i) if the applicant has completed a portion of the hours before
+    the effective date of this subparagraph.
+  secondary: []
+terms:
+  - real estate instruction
+  - salesperson license
+  - effective date
+  - hour requirement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

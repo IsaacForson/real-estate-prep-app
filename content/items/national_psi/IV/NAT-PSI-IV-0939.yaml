@@ -1,0 +1,49 @@
+id: NAT-PSI-IV-0939
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A private educational lender approves a private education loan application on April 1 and
+  provides the required disclosure documents on April 3. The lender attempts to increase the
+  interest rate on April 10, before the borrower has accepted the terms. According to TILA
+  §1638(e)(6)(B), is this permissible?
+options:
+  - The change is permissible because the lender provided the disclosure documents before attempting
+    the change
+  - The change is permissible because the adjustment is based on the loan's index
+  - The change is not permissible because rates and terms may not be changed prior to the borrower's
+    acceptance
+  - The change is not permissible because the lender must wait until after consummation to adjust
+    the rate
+key: C
+explanation: Under 15 U.S.C. § 1638(e)(6)(B), rates and terms may not be changed prior to the
+  earlier of borrower acceptance or expiration of the 30‑day period, except for changes based on
+  adjustments to the loan's index. The lender’s increase is not an index‑based adjustment, so it is
+  not allowed. The idea that the change is permissible because it is based on the loan's index is
+  incorrect because the increase is not an index‑based adjustment.
+citation:
+  source: 15 U.S.C. § 1638(e)(6)(B)
+  url: null
+  quoted_text: Except for changes based on adjustments to the index used for a loan, the rates and
+    terms of the loan may not be changed by the private educational lender prior to the earlier of—
+    (i) the date of acceptance of the terms of the loan and consummation of the transaction by the
+    borrower, as described in subparagraph (A); or (ii) the expiration of the period described in
+    subparagraph (A).
+  secondary: []
+terms:
+  - private education loan
+  - interest rate
+  - acceptance period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

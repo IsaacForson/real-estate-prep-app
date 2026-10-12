@@ -1,0 +1,41 @@
+id: NJ-1-0120
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under N.J. Stat. Ann. § 54:4-23.3, which of the following is included in the definition of
+  agricultural use?
+options:
+  - The production of Christmas trees for sale
+  - The raising of dogs for sale
+  - The cultivation of biomass for energy generation
+  - The operation of a commercial quarry
+key: C
+explanation: The statute explicitly states that agricultural use includes biomass, solar, or wind
+  energy generation when consistent with P.L.2009, c.213 and related rules. The other options are
+  either excluded (dogs are not livestock) or not automatically qualifying (Christmas trees require
+  additional conditions; commercial quarry is not mentioned).
+citation:
+  source: N.J. Stat. Ann. tit. 54, ch. 4 § 54:4-23.3
+  url: null
+  quoted_text: (1) agricultural use shall also include biomass, solar, or wind energy generation,
+    provided that the biomass, solar, or wind energy generation is consistent with the provisions of
+    P.L.2009, c.213 (C.4:1C-32.4 et al.), as applicable, and the rules and regulations adopted
+    therefor;
+  secondary: []
+terms:
+  - agricultural use
+  - biomass
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

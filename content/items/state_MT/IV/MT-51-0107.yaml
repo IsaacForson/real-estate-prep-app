@@ -1,0 +1,51 @@
+id: MT-51-0107
+jurisdiction: MT
+bank: state_MT
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Montana real estate firm wants its professional liability policy to have a deductible of
+  $15,000 per claim. What must the firm do to obtain board approval for this deductible amount?
+options:
+  - The firm must submit a letter from a qualified accountant stating that the firm is financially
+    able to pay the difference between the deductible and $10,000.
+  - The firm must obtain written consent from each affiliated licensee before the deductible can
+    exceed the $10,000 threshold.
+  - The firm must reduce the deductible to $10,000 or lower to avoid any board review of the
+    professional liability policy.
+  - The firm must provide documentation showing that it has not had any claims exceeding $5,000
+    during the previous five-year period.
+key: A
+explanation: Under the Board’s rule, a firm may adopt a deductible between $10,000 and $100,000 per
+  claim only with board approval, which requires a letter from a qualified accountant showing the
+  firm can pay the amount of the deductible above $10,000 (Mont. Admin. R. 24.210.438(2)). The other
+  options describe consent from licensees, reducing the deductible, or claim history, which are not
+  required for approval.
+citation:
+  source: Mont. Admin. R. 24.210.438(2)
+  url: null
+  quoted_text: To obtain approval, a real estate firm must submit a letter from a qualified accountant
+    stating that the firm is financially able to pay the difference between the deductible in the
+    firm’s professional liability policy and $10,000.
+  secondary: []
+math:
+  worked_solution: The deductible is $15,000. The base threshold is $10,000. The difference is $15,000
+    - $10,000 = $5,000. The accountant must certify the firm can pay this $5,000 difference.
+  formulas:
+    - Difference = Deductible - Base Threshold
+  onscreen_calculator_only: false
+terms:
+  - deductible
+  - board approval
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-08
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-26

@@ -1,0 +1,53 @@
+id: CA-4-0436
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: The Commissioner sends a notice of withdrawal of approval for a course on March 10, 2024.
+  Assuming the sponsor does not request a hearing, on what date does the withdrawal become effective
+  under Cal. Code Regs. tit. 10, § 3003(a)?
+options:
+  - April 8, 2024
+  - April 16, 2024
+  - April 9, 2024
+  - April 10, 2024
+key: C
+explanation: The regulation provides that a withdrawal or denial of approval becomes effective 30
+  days after the notice is received by the sponsor, unless a hearing is requested. Adding 30 days to
+  March 10, 2024 results in an effective date of April 9, 2024. The distractor of April 10, 2024
+  mistakenly adds 31 days, overlooking the exact 30‑day period.
+citation:
+  source: Cal. Code Regs. tit. 10, §§ 2705–3109 — Regulations of the Real Estate Commissioner (Cal.
+    Code Regs. tit. 10, ch. 6) - DRE compilation 3003(a)
+  url: null
+  quoted_text: Withdrawal or denial of approval will be effective 30 days after the notice of
+    withdrawal or denial is received by the sponsor unless the sponsor earlier files a written
+    request for hearing on the withdrawal or denial action.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: March 10, 2024
+    Add 30 days
+    March has 31 days; days remaining in March after March 10 = 31 - 10 = 21
+    Add 21 days to reach March 31, 2024
+    Remaining days to add = 30 - 21 = 9
+    Add 9 days to March 31, 2024 = April 9, 2024
+  formulas:
+    - Effective date = Notice date + 30 days
+  onscreen_calculator_only: false
+terms:
+  - withdrawal
+  - effective date
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

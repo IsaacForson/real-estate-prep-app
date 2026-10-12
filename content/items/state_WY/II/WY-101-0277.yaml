@@ -1,0 +1,41 @@
+id: WY-101-0277
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If a cause of action for fraud against a licensee accrued on January 15, 2024, by what date
+  must a lawsuit be commenced to be eligible for payment from the real estate recovery account?
+options:
+  - January 15, 2024
+  - January 14, 2025
+  - January 15, 2026
+  - January 15, 2025
+key: D
+explanation: The statute requires that a suit for payment from the real estate recovery account be
+  commenced within one year after the cause of action accrues (Wyo. Stat. Ann. § 33-28-203(a)).
+  Adding one year to January 15, 2024 gives January 15, 2025. The option January 15, 2024 is
+  incorrect because it is the same day as the accrual date, not one year later.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-203(a)
+  url: null
+  quoted_text: No order for payment from the real estate recovery account shall be issued unless the
+    suit in which the order subsequently results was commenced within one (1) year after the cause
+    of action accrued.
+  secondary: []
+terms:
+  - cause of action
+  - commencement
+  - recovery account
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

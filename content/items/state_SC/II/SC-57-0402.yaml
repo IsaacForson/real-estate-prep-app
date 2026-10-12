@@ -1,0 +1,42 @@
+id: SC-57-0402
+jurisdiction: SC
+bank: state_SC
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: "An individual negotiates the sale of a residential property for a fee without holding any
+  license. Under S.C. Code Ann. § 40-57-20, this conduct is:"
+options:
+  - A. It is lawful because the individual neither advertised nor provided services.
+  - B. It is unlawful because acting as a broker without an active license is prohibited.
+  - C. It is permissible if the individual discloses the lack of license to both parties.
+  - D. It is allowed only when the fee is paid by the buyer and disclosed in writing.
+key: B
+explanation: Section 40-57-20 makes it unlawful to act as a broker, associate, or property manager
+  without an active, valid license, regardless of disclosure or lack of advertising. The option
+  suggesting permissibility with disclosure is incorrect because the statute does not provide an
+  exception for disclosed unlicensed activity.
+citation:
+  source: S.C. Code Ann. § 40-57-20
+  url: null
+  quoted_text: It is unlawful for an individual to act as a real estate broker, real estate associate,
+    or real estate property manager or to advertise or provide services as such without an active,
+    valid license issued by the commission.
+  secondary: []
+terms:
+  - broker
+  - license
+  - unlawful
+  - act
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

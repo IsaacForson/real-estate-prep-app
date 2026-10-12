@@ -1,0 +1,39 @@
+id: NAT-PSI-V-0978
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee who is also the trusted financial advisor of an elderly seller convinces the seller
+  to sign a purchase agreement at a price far below market value. Assuming the licensee abused the
+  position of trust, what is the likely legal status of the contract?
+options:
+  - The contract is valid and enforceable
+  - The contract is voidable by the seller
+  - The contract is void due to illegality
+  - The contract is voidable by the licensee
+key: B
+explanation: The key is correct because undue influence makes a contract voidable by the victim,
+  here the seller. The most tempting distractor, 'The contract is valid and enforceable,' ignores
+  the defect in consent that voids the agreement.
+citation:
+  source: "REP Ref. Contracts — Reference note: contract law, purchase agreements, leases, remedies
+    (authored, status: draft — needs licensed review) § 2.3"
+  url: null
+  quoted_text: undue influence (abuse of a position of trust), or a mutual mistake about a material
+    fact is defective, and the resulting contract is typically voidable by the victim.
+  secondary: []
+terms:
+  - undue influence
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

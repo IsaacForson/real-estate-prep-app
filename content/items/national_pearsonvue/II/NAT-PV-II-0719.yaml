@@ -1,0 +1,40 @@
+id: NAT-PV-II-0719
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: On Day 1, Grantor G conveys Lot 1 to Buyer B1, who does not record the deed. On Day 2, G
+  conveys the same Lot 1 to Buyer B2, who records the deed immediately. Assuming the jurisdiction
+  follows a race recording act, who holds title to Lot 1?
+options:
+  - Title belongs to B1, who received the deed first.
+  - Title belongs to B2, who recorded the deed first.
+  - Title belongs to B1 and B2 as tenants in common.
+  - Title belongs to G, who recorded the deed first.
+key: B
+explanation: Under a race statute, the first to record wins regardless of knowledge, so B2 holds
+  title. The option stating that title belongs to G, who recorded the deed first, incorrectly
+  focuses on who received the deed first, ignoring the recording requirement that determines
+  priority under a race statute.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 9.3
+  url: null
+  quoted_text: Under a race statute the first to record wins regardless of knowledge.
+  secondary: []
+terms:
+  - race statute
+  - recording act
+  - title
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

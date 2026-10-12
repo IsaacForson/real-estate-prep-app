@@ -1,0 +1,41 @@
+id: WY-101-0285
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A person applying for a Wyoming salesperson license submits all required documents except the
+  name and address of their previous employer. According to Wyoming law, what is the most likely
+  consequence?
+options:
+  - The commission may refuse the license because omitting a material fact is grounds for denial
+  - The application will be processed normally because employment history is not required for
+    licensure
+  - The commission will request the missing information and then proceed with processing the
+    application
+  - The applicant will receive a $250 fine but the license will still be issued
+key: A
+explanation: The statute requires furnishing the name and address of the previous employer; omission
+  constitutes a false statement of material fact, which is sufficient grounds for refusal under
+  §33-28-106(m).
+citation:
+  source: Wyo. Stat. Ann. § 33-28-106(f)(xiii)
+  url: null
+  quoted_text: Furnish the name and address of his previous employer;
+  secondary: []
+terms:
+  - disclosure
+  - application
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

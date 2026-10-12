@@ -1,0 +1,39 @@
+id: WY-101-0325
+jurisdiction: WY
+bank: state_WY
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: If the Wyoming real estate recovery account has insufficient funds to pay all valid claims,
+  how are the available funds distributed according to Wyo. Stat. § 33-28-202(b)?
+options:
+  - Equally divided among all claimants
+  - Divided proportionally to each claim's size
+  - Paid to the earliest filed claims first
+  - Distributed by random selection
+key: B
+explanation: The law requires distribution in the ratio that each claim bears to the total valid
+  claims when funds are insufficient. Thus, funds are divided proportionally to each claim's size.
+  The distractor of equal division ignores the claim-size ratio mandated by the statute.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-202(b)
+  url: null
+  quoted_text: shall be distributed among them in the ratio that their respective claims bear to the
+    aggregate of the valid claims
+  secondary: []
+terms:
+  - recovery account
+  - claims
+  - distribution
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

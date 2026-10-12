@@ -1,0 +1,42 @@
+id: OR-696-0313
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives an earnest money check from a buyer that is not made payable to the seller.
+  According to OAR 863-015-0257(1), within how many banking days must the broker deliver the check
+  to the authorized principal broker?
+options:
+  - 3 banking days
+  - 2 banking days
+  - 5 banking days
+  - 7 banking days
+key: A
+explanation: OAR 863-015-0257(1) requires a broker to deliver any money received while conducting
+  professional real estate activity to the authorized principal broker within three banking days.
+  Hence, the earnest money check must be delivered within three banking days. The distractor of two
+  banking days likely confuses this rule with the provision allowing a check to be held un‑deposited
+  until offer acceptance, which does not set a delivery deadline.
+citation:
+  source: Or. Admin. R. § 863-015-0257(1)
+  url: null
+  quoted_text: A real estate broker or principal broker must deliver to the authorized principal
+    broker within three banking days any money, checks, drafts, warrants, promissory notes, or other
+    consideration received while conducting professional real estate activity.
+  secondary: []
+terms:
+  - banking days
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

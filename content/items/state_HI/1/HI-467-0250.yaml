@@ -1,0 +1,55 @@
+id: HI-467-0250
+jurisdiction: HI
+bank: state_HI
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A property manager is hired by a single owner to oversee a rental building and also leases
+  individual units to tenants. Under Haw. Rev. Stat. § 467-1, is this individual considered a
+  custodian or caretaker?
+options:
+  - The individual is considered a custodian or caretaker because they manage the property for
+    compensation.
+  - The individual is not considered a custodian or caretaker because they are employed by multiple
+    owners.
+  - The individual is not considered a custodian or caretaker because they lease units to tenants.
+  - The individual is considered a custodian or caretaker only if they do not receive valuable
+    consideration.
+key: A
+explanation: Under Haw. Rev. Stat. § 467-1, a custodian or caretaker is any individual who, for
+  compensation or valuable consideration, is employed by a single owner and has responsibility to
+  manage or care for that real property. The exception excludes only those who lease or offer to
+  lease, or rent or offer to rent, real estate for more than a single owner. Since the property
+  manager works for a single owner and manages the property, they meet the definition and qualify as
+  a custodian or caretaker. The claim that the individual is not a custodian or caretaker because
+  they are employed by multiple owners is incorrect because the scenario specifies a single owner.
+  The claim that leasing units to tenants automatically excludes the individual is incorrect because
+  the exclusion applies only when leasing is done for more than one owner. The claim that the
+  individual qualifies only if they do not receive valuable consideration is incorrect because the
+  statute includes both compensation and valuable consideration as qualifying factors.
+citation:
+  source: Haw. Rev. Stat. ch. 467 — Hawaii Revised Statutes Chapter 467 — Real Estate Brokers and
+    Salespersons — § 467-1
+  url: null
+  quoted_text: "\"Custodian or caretaker\" means any individual, who for compensation or valuable
+    consideration, is employed as an employee by a single owner and has the responsibility to manage
+    or care for that real property left in the individual's trust; provided that the term
+    \"custodian\" or \"caretaker\" shall not include any individual who leases or offers to lease,
+    or rents or offers to rent, any real estate for more than a"
+  secondary: []
+terms:
+  - custodian
+  - caretaker
+  - lease
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

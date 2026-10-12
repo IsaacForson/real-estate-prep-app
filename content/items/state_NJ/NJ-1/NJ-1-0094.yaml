@@ -1,0 +1,56 @@
+id: NJ-1-0094
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-1
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate school applying for a license in the first 12 months of a two‑year term seeks
+  licensure for three locations. What is the total license fee the school must pay under N.J. Stat.
+  Ann. § 45:15-10.6?
+options:
+  - $400
+  - $600
+  - $800
+  - $1,000
+key: C
+explanation: The statute sets the license fee at $400 for the first location and $200 for each
+  additional location during the first 12 months of a two‑year term. For three locations, the fee is
+  $400 + 2 × $200 = $800. The $600 option would correspond to only two locations, and $1,000 to four
+  locations.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-10.4
+  url: null
+  quoted_text: The license fee for each real estate school license issued in the first 12 months of
+    any two-year real estate school license term established by the commission shall be $400 for the
+    first location and $200 for each additional location licensed.
+  secondary: []
+math:
+  worked_solution: |-
+    First location fee: $400
+    Additional locations: 3 total - 1 first = 2 additional
+    Additional fee: 2 × $200 = $400
+    Total fee: $400 + $400 = $800
+  formulas:
+    - Total = First location fee + (Number of additional locations × Additional location fee)
+  onscreen_calculator_only: false
+terms:
+  - license fee
+  - first location
+  - additional location
+  - two-year term
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

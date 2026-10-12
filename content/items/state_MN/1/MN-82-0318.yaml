@@ -1,0 +1,51 @@
+id: MN-82-0318
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee has three approved accelerated claims totaling $45,000 arising from separate
+  transactions. Under Minn. Stat. § 82.86, Subd. 8, what is the maximum amount the commissioner may
+  pay under the accelerated claims process?
+options:
+  - The commissioner may pay none of the claims because the total exceeds the limit.
+  - The commissioner may pay $45,000 and retain any excess for later payment.
+  - The commissioner may pay up to $50,000, the accelerated process limit.
+  - The commissioner may pay the full $45,000 amount for the claims.
+key: D
+explanation: Subdivision 8 of Minn. Stat. § 82.86 authorizes the commissioner to pay accelerated
+  claims whose combined amount does not exceed $50,000. Because the three approved claims total
+  $45,000, which is less than the $50,000 ceiling, the commissioner may pay the entire $45,000. The
+  limit only caps the maximum payable amount; it does not require payment beyond the actual claim
+  total.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.86, Subd. 8
+  url: null
+  quoted_text: The commissioner may pay claims which total no more than $50,000 against the licensee
+    under this accelerated process.
+  secondary: []
+math:
+  worked_solution: |-
+    1. Total of approved accelerated claims = $45,000.
+    2. Statutory limit for accelerated claims = $50,000.
+    3. Since $45,000 ≤ $50,000, the commissioner may pay the full $45,000.
+    Maximum payable amount = $45,000.
+  formulas:
+    - Maximum payable = min(total claims, statutory limit)
+  onscreen_calculator_only: false
+terms:
+  - accelerated claim
+  - limit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

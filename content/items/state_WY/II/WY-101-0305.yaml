@@ -1,0 +1,40 @@
+id: WY-101-0305
+jurisdiction: WY
+bank: state_WY
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Wyoming real estate license expires on November 15, 2023. According to the definition of
+  "grace period" in Wyo. Stat. Ann. § 33-28-102(b)(xxii), by what date must the licensee renew the
+  license to avoid lapse?
+options:
+  - March 1, 2024
+  - February 28, 2024
+  - January 31, 2024
+  - April 1, 2024
+key: A
+explanation: The grace period runs from January 1 to March 1 of each year for renewing an expired
+  license. A license that expires on November 15, 2023 falls within the 2023‑2024 grace period,
+  which ends on March 1, 2024. Renewing by that date avoids lapse.
+citation:
+  source: Wyo. Stat. Ann. § 33-28-102(b)(xxii)
+  url: null
+  quoted_text: '"Grace period" means January 1 to March 1 of each year during which an expired license
+    may be renewed;'
+  secondary: []
+terms:
+  - grace period
+  - expired license
+  - renewal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,45 @@
+id: MI-25-0264
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to Michigan Administrative Code R 339.22101(1)(d), how is the term 'Instructor' defined?
+options:
+  - An individual who is employed by a real estate school to administer course schedules.
+  - An individual who is a holder of a master's degree in business administration and teaches real
+    estate courses at a community college.
+  - An individual who is licensed as a real estate broker and has completed at least 30 clock hours
+    of continuing education.
+  - An individual who is approved to teach prelicensure classes pursuant to section 2504(4) of the
+    code, MCL 339.2504.
+key: D
+explanation: The rule defines an instructor as someone approved to teach prelicensure classes under
+  section 2504(4) of the code. The option stating that an instructor is a broker with continuing
+  education confuses licensing with teaching approval and does not match the definition.
+citation:
+  source: Mich. Admin. Code R 339.22101–339.22667 — Michigan Administrative Code R 339.22101–339.22667
+    — Department of Licensing and Regulatory Affairs, Real Estate Brokers and Salespersons (General
+    Rules), official LARA Administrative Rules System PDF read via Internet Archive capture of
+    2023-07-19 because ars.apps.lara.state.mi.us returns 403 to scripts; re-fetch the current R
+    339.22101–339.22703 set when reachable R 339.22101(1)(d)
+  url: null
+  quoted_text: “Instructor” means an individual who is approved to teach prelicensure classes pursuant
+    to section 2504(4) of the code, MCL 339.2504.
+  secondary: []
+terms:
+  - instructor
+  - prelicensure
+  - code
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

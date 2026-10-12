@@ -1,0 +1,58 @@
+id: AL-27-0368
+jurisdiction: AL
+bank: state_AL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker, while assisting his wife in purchasing a rental property that his wife intends to
+  buy, is found liable for fraud and a court enters a $30,000 judgment against him. No other claims
+  arise from that transaction. What amount will the Recovery Fund pay for this claim?
+options:
+  - The Recovery Fund will pay $0.
+  - The Recovery Fund will pay $75,000.
+  - The Recovery Fund will pay $25,000.
+  - The Recovery Fund will pay $50,000.
+key: A
+explanation: Because the broker was acting on behalf of his spouse concerning property the spouse
+  was attempting to acquire, Ala. Code § 34-27-31(b)(1) excludes the Recovery Fund from liability
+  for such acts. Consequently, the fund pays $0 for the judgment.
+citation:
+  source: "Ala. Code § 34-27-1 et seq. — Code of Alabama Title 34, Chapter 27 - Real Estate Brokers
+    (Arts. 1-4: License Law, Time-Sharing, RECAD) - Alabama Legislature (ALISON) current text — §
+    34-27-31(b)(1)"
+  url: null
+  quoted_text: The fund shall not be obligated for the acts or omissions of a broker or salesperson
+    while acting on his or her own behalf or on behalf of his or her child, spouse, or parent
+    regarding property in which he or she or his or her spouse, child, or parent has, or is
+    attempting to acquire, an interest;
+  secondary: []
+math:
+  worked_solution: >-
+    Step 1: Identify the judgment amount: $30,000.
+
+    Step 2: Determine if the Recovery Fund applies: Ala. Code § 34-27-31(b)(1) states the fund is
+    not obligated for acts of a broker acting on behalf of a spouse regarding property the spouse is
+    attempting to acquire.
+
+    Step 3: Since the exclusion applies, the fund's liability is $0.
+
+    Step 4: Therefore, the amount the Recovery Fund will pay is $0.
+  formulas:
+    - Recovery Fund payment = Judgment amount × Exclusion factor (0 if excluded, 1 if not)
+  onscreen_calculator_only: false
+terms:
+  - recovery fund
+  - spouse
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

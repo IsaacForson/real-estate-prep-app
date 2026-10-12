@@ -1,0 +1,47 @@
+id: NAT-PSI-V-0929
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A seller sues a buyer for breach after the buyer defaults on a purchase agreement. The
+  contract price was $350,000, the property later resold for $330,000, and the seller incurred
+  $2,000 in carrying costs while the property was off the market. What amount of compensatory
+  damages may the seller recover?
+options:
+  - $22,000
+  - $25,000
+  - $27,000
+  - $20,000
+key: A
+explanation: Compensatory damages for a seller are calculated as the difference between the contract
+  price and the resale price plus any carrying costs, giving ($350,000 − $330,000) + $2,000 =
+  $22,000. The distractor of $20,000 omits the carrying costs that must be added to the price
+  difference.
+citation:
+  source: REP Ref. Contracts § 7.5
+  url: null
+  quoted_text: For a seller whose buyer defaults, the measure is often the difference between the
+    contract price and the price obtained on resale, plus carrying costs.
+  secondary: []
+math:
+  worked_solution: Contract price = $350,000; Resale price = $330,000; Difference = $350,000 -
+    $330,000 = $20,000; Carrying costs = $2,000; Total = $20,000 + $2,000 = $22,000
+  formulas:
+    - Compensatory damages = (Contract price - Resale price) + Carrying costs
+  onscreen_calculator_only: false
+terms:
+  - compensatory damages
+  - carrying costs
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,43 @@
+id: MD-17-0508
+jurisdiction: MD
+bank: state_MD
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee holds an earnest money deposit; the buyer and seller disagree on who is entitled to
+  the funds, the contract contains no provision to the contrary, and the licensee cannot obtain
+  signed releases from both parties. According to COMAR 09.11.01.18, what action may the licensee
+  take?
+options:
+  - The licensee may disburse the deposit to the seller upon mutual verbal agreement
+  - The licensee may hold the deposit until one party provides a written release
+  - The licensee may file a bill of interpleader to have the court decide the disposition
+  - The licensee may apply the deposit toward outstanding commission fees owed by the buyer
+key: C
+explanation: The regulation permits the licensee to file a bill of interpleader when releases cannot
+  be obtained, causing the court to hold the funds. Holding the deposit indefinitely is not allowed;
+  the licensee must either secure releases, file interpleader, await a court order from a filed
+  suit, or disburse under §17-505. Immediate disbursement or retaining the deposit as compensation
+  is prohibited without releases or court order.
+citation:
+  source: COMAR § 09.11.01.18
+  url: null
+  quoted_text: B. File a bill of interpleader in the proper court in the county or Baltimore City, as
+    the case may be, thereby causing these funds to be deposited in the registry of this court;
+  secondary: []
+terms:
+  - deposit
+  - interpleader
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

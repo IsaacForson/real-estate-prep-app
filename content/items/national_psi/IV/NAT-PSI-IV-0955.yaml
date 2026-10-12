@@ -1,0 +1,50 @@
+id: NAT-PSI-IV-0955
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor who processed 120 loan applications in the previous calendar year denies a loan
+  application and provides the reasons for the denial verbally to the applicant. Under ECOA, is this
+  permissible?
+options:
+  - The creditor's verbal statement of reasons is permissible because the creditor processed fewer
+    than 150 applications in the preceding calendar year.
+  - The creditor's verbal statement of reasons is impermissible because ECOA requires a written
+    statement of reasons.
+  - The creditor's verbal statement of reasons is permissible only if the applicant requests it in
+    writing.
+  - The creditor's verbal statement of reasons is impermissible unless the denial is based on public
+    assistance income.
+key: A
+explanation: Under 15 U.S.C. §1691(d)(5), a creditor that processed no more than 150 applications in
+  the prior calendar year may give reasons verbally. Since the creditor processed 120 applications,
+  a verbal statement satisfies the requirement. The claim that ECOA always requires a written
+  statement is inaccurate; the claim that a verbal statement is permissible only if the applicant
+  requests it in writing adds a condition not present in the law; and the claim that permissibility
+  depends on whether the denial is based on public assistance income misstates the rule.
+citation:
+  source: 15 U.S.C. §§ 1691–1691f (ECOA) — Equal Credit Opportunity Act §1691(d)(5)
+  url: null
+  quoted_text: The requirements of paragraph (2), (3), or (4) may be satisfied by verbal statements or
+    notifications in the case of any creditor who did not act on more than one hundred and fifty
+    applications during the calendar year preceding the calendar year in which the adverse action is
+    taken, as determined under regulations of the Bureau.
+  secondary: []
+terms:
+  - verbal
+  - statement
+  - reasons
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

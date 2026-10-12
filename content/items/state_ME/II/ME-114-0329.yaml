@@ -1,0 +1,42 @@
+id: ME-114-0329
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent’s license expired on March 1. The agent wishes to renew the license on June 1
+  without retaking the examination. Under Maine law, may the agent renew the license without passing
+  the exam?
+options:
+  - No, because the license has been expired for more than 90 days
+  - Yes, because the license has been expired for less than 90 days
+  - No, unless the agent completes continuing education
+  - Yes, if the agent submits a waiver request
+key: A
+explanation: The director shall not issue a renewal license if the license has been expired for more
+  than 90 days unless the applicant passes the designated examination. From March 1 to June 1 is 92
+  days, exceeding the 90‑day limit, so the agent must pass the exam. The distractor “Yes, because
+  the license has been expired for less than 90 days” incorrectly calculates the elapsed period.
+citation:
+  source: 32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) § 13069(8)
+  url: null
+  quoted_text: The director shall not issue a license to any applicant for renewal if the license has
+    been expired for more than 90 days, unless the applicant passes the license examination
+    designated by commission rule for this purpose.
+  secondary: []
+terms:
+  - renewal
+  - expiration
+  - examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

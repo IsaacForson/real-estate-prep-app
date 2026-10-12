@@ -1,0 +1,38 @@
+id: NAT-PV-IV-1556
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Using earnest money for any purpose other than as the contract and the parties direct
+  constitutes what?
+options:
+  - Conversion violation only
+  - Commingling violation only
+  - No violation of escrow rules
+  - Both commingling and conversion
+key: A
+explanation: Using earnest money for any purpose other than as directed by the contract and the
+  parties is an unauthorized use of the funds, which constitutes conversion. It does not involve
+  mixing the earnest money with other funds, so it is not commingling.
+citation:
+  source: REP Ref. Contracts § 5.2
+  url: null
+  quoted_text: may not use it for any purpose other than as the contract and the parties direct (using
+    it otherwise is conversion)
+  secondary: []
+terms:
+  - conversion
+  - earnest money
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

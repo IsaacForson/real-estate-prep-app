@@ -1,0 +1,39 @@
+id: FL-475-0500
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker misses the renewal deadline for his sales associate license. What happens to the
+  license immediately after the expiration date?
+options:
+  - It is canceled and must be re‑applied for.
+  - It automatically reverts to inactive status.
+  - It requires completion of continuing education to renew.
+  - It is subject to a $100 late renewal fee.
+key: B
+explanation: If a license is not renewed at the end of its period, it automatically reverts to
+  inactive status. This occurs before any late renewal fee or continuing education requirement
+  applies.
+citation:
+  source: Fla. Stat. § 475.618(3)
+  url: null
+  quoted_text: Any registration, license, certification, or instructor permit which is not renewed at
+    the end of the registration, license, certification, or instructor permit period prescribed by
+    the department shall automatically revert to inactive status.
+  secondary: []
+terms:
+  - revert
+  - inactive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

@@ -1,0 +1,40 @@
+id: KS-3034-0342
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under Kan. Stat. Ann. § 58-3061(d), which action is prohibited regarding a broker's trust account?
+options:
+  - Paying the broker's office rent from the trust account related to the business.
+  - Withdrawing earned commissions payable to the broker for services rendered.
+  - Distributing funds to beneficiaries of the trust account when the transaction is completed.
+  - Returning earnest money to the buyer after termination of the transaction.
+key: A
+explanation: The statute permits only withdrawals of earned commissions payable to the broker or
+  distributions to beneficiaries; paying office rent from the trust account is not allowed. The idea
+  that withdrawing earned commissions is prohibited is inaccurate because such withdrawals are
+  expressly allowed.
+citation:
+  source: Kan. Stat. Ann. § 58-3061(d)
+  url: null
+  quoted_text: No payments shall be made from the broker's trust account other than a withdrawal of
+    earned commissions payable to the broker or distributions made on behalf of the beneficiaries of
+    the trust account.
+  secondary: []
+terms:
+  - trust account
+  - earned commissions
+  - beneficiaries
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

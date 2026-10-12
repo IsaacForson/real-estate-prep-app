@@ -1,0 +1,47 @@
+id: NJ-1-0324
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker lists a property and, at the time of signing the sales contract, fails to give the
+  buyer a fully executed copy of the contract. Under N.J.S.A. 45:15-17, may the commission consider
+  this a violation?
+options:
+  - Yes, but only if the buyer requests the copy in writing.
+  - Yes, because failure to provide a fully executed copy is a ground for penalty.
+  - No, because providing a copy is only required after closing.
+  - No, unless the broker also misrepresented the property.
+key: B
+explanation: The statute lists failure to provide a fully executed copy of a sale or rental contract
+  at the time of execution as a ground for penalty. Thus the commission may treat this as a
+  violation. The other options incorrectly limit the requirement to after closing, to a buyer
+  request, or to additional misrepresentation.
+citation:
+  source: "### N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real
+    Estate Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full
+    Disclosure Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 because njleg.state.nj.us refuses connections from this network — §
+    15-17(f)"
+  url: null
+  quoted_text: Failure to provide his client with a fully executed copy of any sale or exclusive sales
+    or rental listing contract at the time of execution thereof, or failure to specify therein a
+    definite terminal date which terminal date shall not be subject to any qualifying terms or
+    conditions;
+  secondary: []
+terms:
+  - contract
+  - copy
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

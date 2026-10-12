@@ -1,0 +1,48 @@
+id: NJ-1-0320
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A person who advertises himself as a real estate broker without holding a license is
+  discovered by the commission. According to N.J. Stat. Ann. § 45:15-17, may the commission
+  investigate this person's actions?
+options:
+  - Yes, but only if the person has previously held a license.
+  - No, unless the person also receives compensation from a licensed broker.
+  - Yes, the commission may investigate the person's actions.
+  - No, the commission may not investigate because the person is not licensed.
+key: C
+explanation: The statute expressly authorizes the commission to investigate any person who assumes,
+  advertises or represents himself as being authorized to act as a real estate broker without being
+  licensed. Therefore investigation is permitted. The claim that investigation is allowed only if
+  the person also receives compensation from a licensed broker is incorrect, because the statute
+  permits investigation regardless.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-17
+  url: null
+  quoted_text: any person who assumes, advertises or represents himself as being authorized to act as
+    a real estate broker, broker-salesperson, or salesperson or engages in any of the activities
+    described in R.S.45:15-3 without being licensed so to do.
+  secondary: []
+terms:
+  - investigate
+  - advertises
+  - license
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

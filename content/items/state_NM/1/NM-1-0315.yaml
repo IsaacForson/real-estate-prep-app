@@ -1,0 +1,42 @@
+id: NM-1-0315
+jurisdiction: NM
+bank: state_NM
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An associate broker for a registered time share project sells a time share interest directly
+  to a buyer without routing the sale through the project's qualifying broker. Under 16.61.25.13(B)
+  NMAC, is this permissible?
+options:
+  - The sale is permitted if the associate broker obtains written consent from the developer
+  - The sale is permitted if the qualifying broker is temporarily unavailable
+  - The sale is prohibited because all sales must be through the qualifying broker
+  - The sale is permitted if the commission is paid directly to the associate broker
+key: C
+explanation: The rule requires that all sales of time share interests by associate brokers be made
+  through the qualifying broker and that commissions be disbursed by that broker. Selling directly
+  violates this requirement, regardless of developer consent or the qualifying broker's
+  availability.
+citation:
+  source: "### 16.61 NMAC — New Mexico Real Estate Commission Rules, 16.61 NMAC (Title 16, Chapter 61)
+    — NMREC License Law and Rules book, 2021 web edition — § 16.61.1.7 § 16.61.25.13"
+  url: null
+  quoted_text: All sales of time share interests by associate brokers must be through the  qualifying
+    broker of the time share project, and all commissions  to  such associate  brokers must be
+    disbursed by the qualifying broker.
+  secondary: []
+terms:
+  - time share
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

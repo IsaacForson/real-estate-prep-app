@@ -1,0 +1,49 @@
+id: DC-198-0417
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner leases a unit in a housing accommodation that is not subject to the Tenant
+  Opportunity to Purchase because it is a new multifamily building with a certificate of occupancy
+  issued less than 15 years ago. The owner provides written notice of the exemption to the
+  prospective tenant three days after the lease begins. Under D.C. Code § 42-3404.02(d)(1), is the
+  notice compliant?
+options:
+  - The notice is not compliant because the owner should have provided oral notice instead of
+    written notice.
+  - The notice is not compliant because it must be provided before the individual enters into the
+    lease, not after.
+  - The notice is compliant because the accommodation is exempt under subsection (b)(20), so no
+    notice is required.
+  - The notice is compliant because written notice was provided within three days of the lease start.
+key: B
+explanation: Subsection (d)(1) requires written notice before an individual enters into a lease for
+  a unit not subject to TOPA based on subsection (b)(20). Providing notice after the lease begins
+  fails this requirement. Distractor C incorrectly claims no notice is needed because the unit is
+  exempt, but the statute still requires notice for exempt units.
+citation:
+  source: D.C. Code § 42-3404.02(d)(1)
+  url: null
+  quoted_text: (d)(1) Before an individual enters into a lease for a rental unit located in a housing
+    accommodation that is not subject to the tenant opportunity to purchase based on subsection
+    (b)(20) of this section, the owner of the housing accommodation shall provide written notice to
+    the individual regarding such exemption.
+  secondary: []
+terms:
+  - notice
+  - lease
+  - exemption
+  - timing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

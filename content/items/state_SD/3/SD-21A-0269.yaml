@@ -1,0 +1,50 @@
+id: SD-21A-0269
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee takes a listing for a property and learns from the seller that there is a hidden
+  underground oil tank. The licensee does not independently verify the tank’s condition but tells
+  the buyer that the information about the tank comes solely from the seller’s representation. Under
+  South Dakota law, is the licensee in violation of § 36-21A-78 regarding latent defects?
+options:
+  - The licensee is in violation because they did not independently verify the latent defect.
+  - The licensee is not in violation because they disclosed that the defect information came solely
+    from the seller.
+  - The licensee is in violation because latent defects must be disclosed even if the seller
+    provided the information.
+  - The licensee is not in violation because the seller's statement alone meets the substantiation
+    requirement.
+key: B
+explanation: Under SDCL 36-21A-78, a licensee must substantiate listing information, but it is not a
+  violation if the licensee discloses to the buyer that the information or parts thereof are solely
+  the seller's representations. By telling the buyer the oil‑tank details came solely from the
+  seller, the licensee satisfied the exception, so no violation occurs. The distractor claiming a
+  violation because latent defects must be disclosed regardless of the source ignores the statutory
+  exception for seller‑provided representations.
+citation:
+  source: S.D. Codified Laws § 36-21A (Real Estate Licensing) — South Dakota Codified Laws Chapter
+    36-21A — Real Estate Licensing (SD Real Estate Commission License Laws & Administrative Rules
+    book, as of July 1, 2025) — § 36-21A-78
+  url: null
+  quoted_text: As far as latent defects are concerned, it is not a violation of this section if the
+    licensee disclosed to the buyer that the listing information or parts of the listing information
+    are solely the representations of the seller.
+  secondary: []
+terms:
+  - latent defect
+  - disclosure
+  - substantiation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

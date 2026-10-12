@@ -1,0 +1,49 @@
+id: FL-475-0427
+jurisdiction: FL
+bank: state_FL
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant successfully completed the required prelicensure course on June 1, 2022. She took
+  the state licensing exam on July 1, 2024 and failed. According to Florida Statute 475.181(2), is
+  her course completion still valid for licensure?
+options:
+  - No, because the course completion remains valid provided the application is still active and has
+    not reached its expiration date.
+  - No, because the application expires two years after the date it is received, irrespective of
+    whether the licensing exam is passed or not.
+  - No, because the licensing examination may be retaken at any time without affecting the validity
+    of the course completion.
+  - No, because the course completion is invalid if the licensing examination is not passed within
+    two years of successful course completion.
+key: D
+explanation: Under Fla. Stat. § 475.181(2), an applicant’s course completion becomes invalid if the
+  licensing examination is not passed within two years of the successful course completion date. The
+  applicant completed the course on June 1, 2022, so she had until June 1, 2024 to pass the exam;
+  taking it on July 1, 2024 and failing means the course completion is no longer valid. The most
+  tempting distractor is the claim that the application expiration governs validity, i.e., that the
+  application expires two years after it is received regardless of exam outcome, but the statute
+  ties course completion validity to the exam‑passing deadline, not to the application’s two‑year
+  life. Therefore, the course completion is not valid for licensure.
+citation:
+  source: Fla. Stat. § 475.181(2)
+  url: null
+  quoted_text: if an applicant does not pass the licensing examination within 2 years after the
+    successful course completion date, the applicant’s successful course completion is invalid for
+    licensure.
+  secondary: []
+terms:
+  - course completion
+  - licensing examination
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

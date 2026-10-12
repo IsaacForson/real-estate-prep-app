@@ -1,0 +1,48 @@
+id: NAT-PV-II-0739
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A distressed owner sells their home for $180,000, which is $20,000 less than the outstanding
+  mortgage. The lender consents to the sale and will release its lien for the reduced payoff.
+  According to the text, what disclosure is commonly required in this type of transaction?
+options:
+  - The seller must disclose that the sale requires lender approval
+  - The seller must disclose that the buyer must pay the difference to the lender after closing
+  - The seller must disclose that the buyer must obtain private mortgage insurance
+  - The seller must disclose that the property is being sold 'as is' with no warranties
+key: A
+explanation: Disclosure that the sale requires lender approval is commonly required in short sales.
+  The option stating that the buyer must pay the difference to the lender after closing is not a
+  required disclosure. The option stating that the property is being sold 'as is' with no warranties
+  is not a required disclosure. The option stating that the buyer must obtain private mortgage
+  insurance is not a required disclosure.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.3
+  url: null
+  quoted_text: Disclosure that the sale requires lender approval is commonly required.
+  secondary: []
+math:
+  worked_solution: Sale price = $180,000; Shortfall = $20,000; Outstanding mortgage = Sale price +
+    Shortfall = $180,000 + $20,000 = $200,000.
+  formulas:
+    - Outstanding mortgage = Sale price + Shortfall
+  onscreen_calculator_only: false
+terms:
+  - short sale
+  - lender approval
+  - disclosure
+  - mortgage balance
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

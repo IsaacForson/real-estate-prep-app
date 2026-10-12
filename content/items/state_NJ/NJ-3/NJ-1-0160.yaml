@@ -1,0 +1,52 @@
+id: NJ-1-0160
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landowner owns 6 acres of land that has been used to grow vegetables for sale for the past
+  12 months. The landowner applies for farmland assessment under the Farmland Assessment Act.
+  According to N.J. Stat. Ann. § 54:4-23.2, what is the correct outcome?
+options:
+  - The land qualifies for farmland assessment and is assessed at its agricultural value.
+  - The land does not qualify for farmland assessment because it has not been devoted for at least
+    two successive years.
+  - The land qualifies for farmland assessment only if the owner submits a forest stewardship plan.
+  - The land qualifies for farmland assessment but must be assessed at market value until the second
+    year is completed.
+key: B
+explanation: The Farmland Assessment Act requires that land be devoted to agricultural or
+  horticultural use for at least the two successive years immediately preceding the tax year (N.J.
+  Stat. Ann. § 54:4-23.2). Since the land has only been used for vegetables for the past 12 months,
+  it does not meet this two‑year requirement and therefore does not qualify for farmland assessment.
+  The suggestion that qualification depends on submitting a forest stewardship plan applies only to
+  woodland, not to vegetable crops.
+citation:
+  source: "### N.J. Stat. Ann. tit. 54, ch. 4 — New Jersey Statutes Title 54, Chapter 4 — Taxation of
+    Real and Personal Property (N.J.S.A. 54:4-1 et seq.), extracted from the New Jersey
+    Legislature's official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via
+    Internet Archive capture of 2025-08-08 — § 54:4-23.2"
+  url: null
+  quoted_text: which has been so devoted for at least the 2 successive years immediately preceding the
+    tax year in issue
+  secondary: []
+math:
+  worked_solution: No arithmetic steps are required to answer this question.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - farmland
+  - assessment
+  - years
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

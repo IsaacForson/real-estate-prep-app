@@ -1,0 +1,42 @@
+id: NAT-PSI-I-0604
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A grantor conveys property 'to A for the life of B'. If A dies before B, who holds the
+  property until B's death?
+options:
+  - The grantor's reversion
+  - The remainderman C
+  - The heirs of A
+  - The life tenant B
+key: C
+explanation: When the measuring life is someone else, the estate is pur autre vie; if the life
+  tenant dies first, the life tenant's heirs hold the estate until the measuring life ends per §
+  1.4. The grantor's reversion would only apply if no remainder were named, which is not the case
+  here.
+citation:
+  source: "REP Ref. Ownership, Title & Transfer — Reference note: estates, ownership forms, deeds,
+    title, recording, transfer (authored, status: draft — needs licensed review) § 1.4 Life estates"
+  url: null
+  quoted_text: If the measuring life is someone else ('to A for the life of B'), the estate is pur
+    autre vie; if A dies before B, A's heirs hold it until B
+  secondary: []
+terms:
+  - life estate
+  - pur autre vie
+  - heirs
+  - measuring life
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

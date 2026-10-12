@@ -1,0 +1,42 @@
+id: AZ-20-0431
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee deposits a client's earnest money into the trust account, then writes a check from
+  the trust account to pay the licensee's personal office rent without obtaining the client's
+  written consent. Under Arizona law, which ground for denial, suspension, or revocation of a
+  license does this constitute?
+options:
+  - Failure to keep client trust funds separate and use them for personal expenses
+  - Failure to keep an escrow or trust account for client funds
+  - Failure to disclose that the property is located near a registered sex offender
+  - Failure to respond to a commissioner's investigation within the required time
+key: A
+explanation: The licensee converted client trust monies to personal use by paying office rent from
+  the trust account without client consent, which constitutes commingling or conversion of client
+  funds under Ariz. Rev. Stat. § 32-2153(A)(16). Failing to keep a separate escrow or trust account
+  for client funds would apply if no trust account were used at all, which is not the case here.
+citation:
+  source: Ariz. Rev. Stat. §§ 32-2151 to 32-2166 — ARS Title 32, Ch. 20, Art. 3 - Regulation — §
+    32-2153(A)(16)
+  url: null
+  quoted_text: Commingled the monies or other property of the licensee's principal or client with the
+    licensee's own or converted these monies or property to the licensee or another.
+  secondary: []
+terms:
+  - commingling
+  - conversion
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

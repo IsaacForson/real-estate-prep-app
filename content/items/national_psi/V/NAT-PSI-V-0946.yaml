@@ -1,0 +1,38 @@
+id: NAT-PSI-V-0946
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord and tenant agree orally to a six-month residential lease. Under the Statute of
+  Frauds, is the lease enforceable?
+options:
+  - The lease is unenforceable because all leases must be in writing.
+  - The lease is enforceable because it is for less than one year.
+  - The lease is unenforceable because oral agreements for residential property are void.
+  - The lease is enforceable only if recorded with the county.
+key: B
+explanation: Under the Statute of Frauds, leases longer than one year must be in writing; a
+  six‑month lease is shorter than one year, so it is enforceable orally.
+citation:
+  source: REP Ref. Contracts § 12.1
+  url: null
+  quoted_text: leases longer than one year generally must be in writing under the Statute of Frauds
+  secondary: []
+terms:
+  - statute of frauds
+  - lease
+  - writing requirement
+  - exemption
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

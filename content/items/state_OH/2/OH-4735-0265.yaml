@@ -1,0 +1,42 @@
+id: OH-4735-0265
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Ohio Adm. Code 1301:5-1-18(B)(1), within how many days must a licensee pay a fine
+  imposed by the real estate commission?
+options:
+  - The licensee must pay the fine within 120 days.
+  - The licensee must pay the fine within 90 days.
+  - The licensee must pay the fine within 60 days.
+  - The licensee must pay the fine within 30 days.
+key: D
+explanation: The rule specifies that payment of any fine must be received by the division within
+  thirty days of the commission's order imposing the fine. Therefore, the correct timeframe is
+  thirty days. The sixty‑day option is incorrect because the rule does not allow an automatic
+  extension for fine payment unless the superintendent grants an extended payment period under
+  paragraph (B)(2), which is not assumed in the question.
+citation:
+  source: "### Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 Rule 1301:5-1-18(B)(1)"
+  url: null
+  quoted_text: payment of any fine shall be received by the division of real estate and professional
+    licensing within thirty days of the date of the commission's finding and order imposing the fine
+  secondary: []
+terms:
+  - fine
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

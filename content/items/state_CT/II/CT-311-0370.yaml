@@ -1,0 +1,50 @@
+id: CT-311-0370
+jurisdiction: CT
+bank: state_CT
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker completes a residential sale and is entitled to compensation under the written
+  contract. The broker does not give written notice of the claim for lien to the buyer before the
+  closing date. Under Conn. Gen. Stat. § 20-325a(r), is the broker entitled to claim a lien on the
+  property?
+options:
+  - Yes, because the broker has already earned the compensation under the contract.
+  - No, because the broker failed to give the required written notice to the owner and prospective
+    buyer.
+  - Yes, because the notice requirement only applies to commercial transactions.
+  - No, because the lien automatically attaches upon recording regardless of notice.
+key: B
+explanation: Subsection (r) requires the broker to give written notice of the claim for lien to the
+  owner and the prospective buyer or tenant not later than three days prior to the later of the
+  contractually set conveyance date or the actual date of conveyance or tenant possession. Failure
+  to provide this notice bars the broker from claiming a lien, even if compensation is earned.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-325a (r)
+  url: null
+  quoted_text: (1) after the broker is entitled to compensation, without contingencies other than
+    closing or transfer of title, under the terms set forth in the written contract and not later
+    than three days prior to the later of the date of the conveyance or lease as set forth in the
+    real estate sales contract or lease or the actual date of the conveyance or the date when the
+    tenant takes possession, the broker gives written notice of the claim for lien to the owner of
+    the real property and to the prospective buyer or tenant that the broker is entitled to
+    compensation under the terms set forth in the written contract and intends to claim a lien on
+    the real property
+  secondary: []
+terms:
+  - notice
+  - owner
+  - prospective buyer
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

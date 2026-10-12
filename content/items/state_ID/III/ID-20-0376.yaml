@@ -1,0 +1,40 @@
+id: ID-20-0376
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker wants to pay a portion of a commission received from a regulated real estate
+  transaction to an unlicensed legal business entity. Under Idaho Code § 54-2054(2), which condition
+  must be satisfied for such a payment to be permissible?
+options:
+  - The unlicensed entity must be a title company licensed in another state.
+  - All owners of the entity must be active real estate licensees.
+  - The broker must first obtain written permission from the commission.
+  - The payment must be less than 25% of the total commission.
+key: B
+explanation: The statute allows payment to an unlicensed legal business entity only if all of its
+  owners are active real estate licensees and an owner licensed under the broker performed the
+  licensed activities for which the payment is made. The other options are not conditions specified
+  in the rule.
+citation:
+  source: Idaho Code § 54-2054(2)
+  url: null
+  quoted_text: All of the entity’s shareholders, members or other persons having a similar ownership
+    interest are active real estate licensees
+  secondary: []
+terms:
+  - fee splitting
+  - unlicensed entity
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

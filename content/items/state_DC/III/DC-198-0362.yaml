@@ -1,0 +1,43 @@
+id: DC-198-0362
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under D.C. Code § 47-2853.186(a), when a real estate broker’s license has been suspended or
+  revoked, what must employed real estate salespersons do with their licenses?
+options:
+  - The salesperson must notify the Mayor in writing within 15 days of the revocation or suspension.
+  - The salesperson must return their licenses to the employing broker within 15 days of the
+    revocation or suspension.
+  - The salesperson must mail their licenses to the Mayor within 15 days of the revocation or
+    suspension.
+  - The salesperson must continue to perform licensed acts until a new broker license is issued.
+key: C
+explanation: The statute explicitly requires salespersons to mail their licenses to the Mayor within
+  15 days of a broker’s suspension or revocation. Simply notifying the Mayor or returning the
+  license to the broker does not satisfy this requirement.
+citation:
+  source: D.C. Code § 47-2853.186(a)
+  url: null
+  quoted_text: Whenever a real estate broker’s license has been suspended or revoked pursuant to this
+    subchapter, all real estate salespersons employed by that real estate broker must mail their
+    licenses to the Mayor within 15 days of the revocation or suspension.
+  secondary: []
+terms:
+  - suspension
+  - revocation
+  - mail
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

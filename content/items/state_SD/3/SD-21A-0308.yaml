@@ -1,0 +1,48 @@
+id: SD-21A-0308
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee wishes to advertise an absolute auction for a property that has an existing
+  mortgage lien. Which of the following must be true for the advertisement to be permissible under
+  South Dakota law?
+options:
+  - The licensee must ensure the auction is conducted with a reserve price equal to the outstanding
+    mortgage balance.
+  - The licensee must obtain written agreement from each lien holder to proceed with the absolute
+    auction regardless of bid amount or bidder identity.
+  - The licensee must obtain a signed waiver from the mortgage lender allowing the auction to be
+    advertised as absolute and pay a processing fee to the commission.
+  - The licensee must include the property's full legal description in the auction advertisement.
+key: B
+explanation: South Dakota rule prohibits advertising an absolute auction unless each lien holder
+  agrees in writing to the auction without regard to bid amount or bidder identity. This requirement
+  ensures the lien holder will not assert a claim based on the auction outcome. The option about
+  setting a reserve price misstates the rule, as absolute auctions have no reserve, and the other
+  options describe actions not required by the statute for absolute auction advertising.
+citation:
+  source: S.D. Admin. R. art. 20:69 (Real Estate Commission) — South Dakota Administrative Rules
+    Article 20:69 — Real Estate Commission (SD REC law book, as of July 1, 2025) 20:69:06:06
+  url: null
+  quoted_text: (b) Each holder of a lien or encumbrance, by execution of the auction contract or other
+    written agreement provided to the auctioneer, agrees to the absolute auction without regard to
+    the amount of the highest bid or to the identity of the highest bidder;
+  secondary: []
+terms:
+  - absolute
+  - auction
+  - lien
+  - advertisement
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

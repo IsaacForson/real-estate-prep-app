@@ -1,0 +1,46 @@
+id: ND-23-0236
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed salesperson notifies the commission of a broker change six days after the change
+  occurs. What is the effect on the salesperson's license under N.D. Cent. Code § 43-23-10?
+options:
+  - The license is subject to a fine but remains valid.
+  - The license is placed on inactive status.
+  - The license is automatically cancelled.
+  - The license remains active and in good standing.
+key: C
+explanation: Under N.D. Cent. Code § 43-23-10, a change of broker without notice to the commission
+  automatically cancels the salesperson’s license. Providing notice six days after the change is
+  considered untimely and thus constitutes no notice for the purpose of the rule, resulting in
+  cancellation. The other options are incorrect because the law does not allow the license to remain
+  active, be placed on inactive status, or merely incur a fine when notice is late.
+citation:
+  source: N.D. Cent. Code § 43-23-10
+  url: null
+  quoted_text: The change of broker by any licensed real estate salesperson, without notice to the
+    commission, automatically cancels that person's license.
+  secondary: []
+math:
+  worked_solution: Delay = Notice date – Change date = 6 days – 0 days = 6 days. Because any delay
+    (>0) means the notice is untimely and treated as no notice, the license is cancelled.
+  formulas:
+    - Delay = Notice date – Change date
+  onscreen_calculator_only: false
+terms:
+  - notice
+  - license cancellation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

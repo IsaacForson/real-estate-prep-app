@@ -1,0 +1,53 @@
+id: OH-4735-0267
+jurisdiction: OH
+bank: state_OH
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee's license was suspended on January 15, 2024. The licensee's renewal deadline of
+  June 30, 2024 occurred while the license was suspended. The renewal fee for the license is $120.
+  According to Ohio Adm. Code 1301:5-1-18, what total amount must the licensee pay to reactivate the
+  license?
+options:
+  - $60.00
+  - $240.00
+  - $180.00
+  - $120.00
+key: C
+explanation: When a renewal deadline passes during a suspension, the licensee must pay the renewal
+  fee plus a penalty fee of fifty percent of the renewal fee. The penalty is $60 (50% of $120), so
+  the total amount due is $180.
+citation:
+  source: "### Ohio Adm. Code ch. 1301:5-1 — Ohio Administrative Code Chapter 1301:5-1 — Real Estate
+    Division: Brokers and Salespersons (general), official Ohio Laws chapter page read via Internet
+    Archive capture of 2026-05-18 Rule 1301:5-1-18(B)(4)(d)"
+  url: null
+  quoted_text: If the licensee's renewal deadline passed during the period of license suspension,
+    renewal of the license including payment of the renewal fee plus a penalty fee of fifty per cent
+    of the renewal fee, as required by section 4735.14 of the Revised Code.
+  secondary: []
+math:
+  worked_solution: |-
+    Renewal fee = $120
+    Penalty = 50% of $120 = $60
+    Total = $120 + $60 = $180
+  formulas:
+    - Total = Renewal fee × (1 + penalty rate)
+    - Penalty rate = 0.5
+  onscreen_calculator_only: false
+terms:
+  - renewal
+  - penalty
+  - suspension
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

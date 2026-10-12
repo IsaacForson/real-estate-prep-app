@@ -1,0 +1,42 @@
+id: CA-4-0367
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker pays a referral fee to an unlicensed assistant for showing a property to a
+  prospective buyer. Under Cal. Bus. & Prof. Code § 10137, is this permissible?
+options:
+  - The payment is permissible as long as the assistant is paid through the broker's escrow account
+  - The payment is unlawful because the assistant is not licensed to perform acts requiring a real
+    estate license
+  - The payment is permissible if the broker discloses the fee to the buyer
+  - The payment is permissible because the assistant performed only clerical work
+key: B
+explanation: Under Cal. Bus. & Prof. Code § 10137, a broker may not compensate an unlicensed person
+  for performing acts that require a real estate license. Showing a property to a prospective buyer
+  is such an act, so paying the unlicensed assistant is unlawful.
+citation:
+  source: Cal. Bus. & Prof. Code § 10137
+  url: null
+  quoted_text: It is unlawful for any licensed real estate broker to retain, compensate, directly or
+    indirectly, any person for performing any of the acts within the scope of this chapter who is
+    not a licensed real estate broker, or a real estate salesperson licensed under the responsible
+    broker retaining or compensating him or her
+  secondary: []
+terms:
+  - broker
+  - compensation
+  - unlicensed
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

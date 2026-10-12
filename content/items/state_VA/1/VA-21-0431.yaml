@@ -1,0 +1,41 @@
+id: VA-21-0431
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: After the Virginia Real Estate Board issues a cease and desist order against an unlicensed
+  individual, how many days does that person have to file an appeal to prevent the order from
+  becoming final?
+options:
+  - 10 days
+  - 14 days
+  - 21 days
+  - 30 days
+key: C
+explanation: The statute provides that a cease and desist order becomes final unless the person
+  files an appeal with the Board within 21 days of the order's entry. Therefore, the individual has
+  21 days to appeal. Selecting 10 days confuses this deadline with other procedural timeframes not
+  specified in this section.
+citation:
+  source: Va. Code Ann. § 54.1-2105.2(A)
+  url: null
+  quoted_text: The order shall be effective upon its entry and shall become final unless such person
+    files an appeal with the Board in accordance with the Administrative Process Act (§ 2.2-4000 et
+    seq.) within 21 days of the date of entry of the order.
+  secondary: []
+terms:
+  - cease and desist
+  - appeal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

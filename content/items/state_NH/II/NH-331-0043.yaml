@@ -1,0 +1,54 @@
+id: NH-331-0043
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under RSA 331-A:10, which of the following applicants would be eligible for a salesperson's
+  license?
+options:
+  - An applicant who is 17 years old, has completed 40 hours of approved study, and has passed the
+    licensing exam.
+  - An applicant who is 18 years old, has completed 30 hours of approved study, and has passed the
+    licensing exam.
+  - An applicant who is 18 years old, has completed 40 hours of approved study, and has not yet
+    taken the licensing exam.
+  - An applicant who is 18 years old, has completed 40 hours of approved study, has passed the
+    licensing exam, and has no record of unprofessional conduct.
+key: D
+explanation: RSA 331-A:10 I requires an applicant to be at least 18 years old, to have completed 40
+  hours of approved study, to pass the licensing exam, and to have no record of unprofessional
+  conduct. Only the applicant who is 18 years old, has completed 40 hours of approved study, has
+  passed the licensing exam, and has no record of unprofessional conduct satisfies all of these
+  requirements. The applicant who is 17 years old fails the age requirement. The applicant who has
+  completed only 30 hours of approved study fails the study‑hour requirement. The applicant who has
+  not yet taken the licensing exam fails the examination requirement.
+citation:
+  source: N.H. Rev. Stat. Ann. ch. 331-A (New Hampshire Real Estate Practice Act) — RSA Chapter 331-A
+    — New Hampshire Real Estate Practice Act, official General Court page read via Internet Archive
+    capture of 2025-07-09 because gc.nh.gov returns 403 to scripts Section 331-A:10
+  url: null
+  quoted_text: "I. The office shall issue a salesperson's license to any applicant who: (a) Has
+    attained the age of 18; (b) Has successfully completed an examination administered or approved
+    by the commission which demonstrates satisfactory knowledge and understanding of the principles
+    of real estate practice. The executive director shall only accept for licensure, an applicant
+    who shows proof of completion of 40 hours of approved study which shall have been completed
+    prior to the date of the applicant's examination;"
+  secondary: []
+terms:
+  - licensure
+  - age
+  - study hours
+  - exam
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-12
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

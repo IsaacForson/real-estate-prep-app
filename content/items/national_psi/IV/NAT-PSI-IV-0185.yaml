@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0185
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor is preparing to consummate a residential mortgage loan that will require an escrow
+  account for taxes and insurance. Under TILA §1639d(h), when must the creditor disclose the amount
+  required at closing to initially fund the escrow account?
+options:
+  - The creditor must disclose the amount required at closing to initially fund the escrow account
+    at least 3 business days before consummation.
+  - The creditor must disclose the amount required at closing to initially fund the escrow account
+    within 7 days after consummation.
+  - The creditor must disclose the amount required at closing to initially fund the escrow account
+    only if the borrower requests it.
+  - The creditor must disclose the amount required at closing to initially fund the escrow account
+    at the time of consummation.
+key: A
+explanation: Section 1639d(h) requires the creditor to disclose, at least 3 business days before
+  consummation, the amount needed to initially fund the escrow account. Disclosing the amount at
+  consummation does not satisfy the advance‑notice requirement.
+citation:
+  source: 15 U.S.C. § 1639d(h)
+  url: null
+  quoted_text: the creditor shall disclose by written notice to the consumer at least 3 business days
+    before the consummation of the consumer credit transaction giving rise to such account
+  secondary: []
+terms:
+  - escrow account
+  - consummation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

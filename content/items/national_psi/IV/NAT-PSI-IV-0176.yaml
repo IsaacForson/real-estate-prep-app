@@ -1,0 +1,44 @@
+id: NAT-PSI-IV-0176
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: According to TILA §1639d(i)(1), how is the term 'flood insurance' defined?
+options:
+  - The term "flood insurance" means flood insurance coverage provided under the national flood
+    insurance program pursuant to the National Flood Insurance Act of 1968 [42 U.S.C. 4001 et seq.].
+  - The term "flood insurance" means any private insurance policy that covers damage from flooding,
+    regardless of federal program participation, and may be issued by any licensed insurer.
+  - The term "flood insurance" means insurance that covers only sewer backup and not surface water
+    flooding, and is typically offered as an endorsement to homeowner's policies.
+  - The term "flood insurance" means coverage offered exclusively by state-run insurance agencies
+    for properties in designated flood zones, and does not include federal program benefits.
+key: A
+explanation: According to 15 U.S.C. § 1639d(i)(1), flood insurance means coverage provided under the
+  national flood insurance program pursuant to the National Flood Insurance Act of 1968. The option
+  stating that flood insurance means insurance that covers only sewer backup and not surface water
+  flooding, and is typically offered as an endorsement to homeowner's policies, is incorrect because
+  the definition limits flood insurance to the federal NFIP, not any private policy.
+citation:
+  source: 15 U.S.C. § 1639d(i)(1)
+  url: null
+  quoted_text: The term "flood insurance" means flood insurance coverage provided under the national
+    flood insurance program pursuant to the National Flood Insurance Act of 1968 [42 U.S.C. 4001 et
+    seq.]
+  secondary: []
+terms:
+  - flood insurance
+  - national flood insurance program
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,44 @@
+id: CT-311-0224
+jurisdiction: CT
+bank: state_CT
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: The Governor appoints three licensed real estate brokers, two licensed real estate
+  salespersons, and three public members to the Connecticut Real Estate Commission. All three public
+  members reside in the same congressional district, leaving two districts with no commission
+  member. Does this appointment satisfy the statutory requirement regarding congressional district
+  representation?
+options:
+  - Yes, because the public members are electors of the state
+  - No, because the statute requires at least one member from each congressional district
+  - Yes, because the commission has the required number of brokers and salespersons
+  - No, because the public members must be from different districts
+key: B
+explanation: The statute explicitly requires that there be at least one member from each
+  congressional district. Having all three public members in the same district leaves two districts
+  unrepresented, violating this requirement. One incorrect option cites the broker and salesperson
+  counts as sufficient, while another incorrect option claims the public members must be from
+  different districts; neither satisfies the statutory requirement that at least one member come
+  from each congressional district.
+citation:
+  source: Conn. Gen. Stat. ch. 392, §§ 20-311 to 20-329 — Connecticut General Statutes Chapter 392 -
+    Real Estate Licensees (2025 supplement) — § 20-311 § 20-311a(b)
+  url: null
+  quoted_text: there shall be at least one member from each congressional district.
+  secondary: []
+terms:
+  - congressional district
+  - public member
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-03

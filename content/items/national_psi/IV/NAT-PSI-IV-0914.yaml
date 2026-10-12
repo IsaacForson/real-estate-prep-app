@@ -1,0 +1,40 @@
+id: NAT-PSI-IV-0914
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Under TILA §1639h(e), if a creditor willfully fails to obtain a required appraisal for a
+  higher-risk mortgage, what is the liability to the applicant?
+options:
+  - The creditor is liable to the applicant for the sum of $2,000 as statutory damages.
+  - The creditor is liable to the applicant for triple the amount of any finance charges paid.
+  - The creditor is liable to the applicant for actual damages plus court costs.
+  - The creditor is liable to the applicant for the amount of the loan origination fee.
+key: A
+explanation: TILA §1639h(e) explicitly states that a creditor who willfully fails to obtain an
+  appraisal as required shall be liable to the applicant or borrower for the sum of $2,000. The
+  other options describe liabilities that are not prescribed by this provision.
+citation:
+  source: 15 U.S.C. § 1639h(e)
+  url: null
+  quoted_text: a creditor found to have willfully failed to obtain an appraisal as required in this
+    section shall be liable to the applicant or borrower for the sum of $2,000.
+  secondary: []
+terms:
+  - willful failure
+  - appraisal
+  - liability
+  - TILA
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

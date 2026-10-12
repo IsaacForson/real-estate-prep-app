@@ -1,0 +1,45 @@
+id: TX-1101-0329
+jurisdiction: TX
+bank: state_TX
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under TREC rule §535.155(a), what two pieces of information must every advertisement include
+  in a readily noticeable location?
+options:
+  - The license holder's phone number and email address
+  - The license holder's name and the broker's name
+  - The license holder's name and the property address
+  - The broker's license number and the license holder's website
+key: B
+explanation: The rule explicitly requires the license holder’s (or team’s) name and the broker’s
+  name, with the broker’s name at least half the size of the largest contact information. The other
+  options substitute contact details, license numbers, or property information, which are not
+  mandated by this subsection.
+citation:
+  source: "22 Tex. Admin. Code ch. 535 — 22 Tex. Admin. Code Chapter 535 — TREC General Provisions (19
+    rules cited by the exam blueprint: §§ 535.2, .4, .5, .16, .51, .52, .55, .56, .91, .92, .121,
+    .122, .146–.148, .154–.157; as in effect 2026-09-08), official Texas Secretary of State TAC
+    viewer, rule PDFs generated live — § 535.155(a)"
+  url: null
+  quoted_text: (1) the name of the license holder or team placing the advertisement; and (2) the
+    broker's name in at least half the size of the largest contact information for any sales agent,
+    associated broker, or team name contained in the advertisement.
+  secondary: []
+terms:
+  - license holder
+  - broker's name
+  - advertisement
+  - contact information
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

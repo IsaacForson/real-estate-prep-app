@@ -1,0 +1,45 @@
+id: NJ-1-0279
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee plans to install a septic system that requires excavation of soil in an area
+  identified as a freshwater wetland. Under N.J.S.A. 13:9B-3, is a freshwater wetlands permit
+  required before beginning the excavation?
+options:
+  - Yes, a permit is required because excavation of soil is a regulated activity
+  - No, a permit is not required because septic system installation is exempt
+  - No, a permit is not required because only filling with materials requires a permit
+  - No, a permit is not required because the activity affects less than one acre of wetland
+key: A
+explanation: The definition of regulated activity includes the removal, excavation, disturbance or
+  dredging of soil, sand, gravel, or aggregate material. Excavation for a septic system therefore
+  constitutes a regulated activity requiring a freshwater wetlands permit. The exemptions listed do
+  not apply to excavation, and size thresholds are not mentioned in the statute for this activity.
+citation:
+  source: "### N.J. Stat. Ann. tit. 13, ch. 9B — New Jersey Statutes Title 13, Chapter 9B — Freshwater
+    Wetlands Protection Act (N.J.S.A. 13:9B-1 et seq.), extracted from the New Jersey Legislature's
+    official full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet
+    Archive capture of 2025-08-08 — § 9B-1 13:9B-3"
+  url: null
+  quoted_text: '"Regulated activity" means any of the following activities in a freshwater wetland:
+    (1) The removal, excavation, disturbance or dredging of soil, sand, gravel, or aggregate
+    material of any kind;'
+  secondary: []
+terms:
+  - regulated activity
+  - excavation
+  - permit
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

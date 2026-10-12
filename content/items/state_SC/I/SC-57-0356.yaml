@@ -1,0 +1,39 @@
+id: SC-57-0356
+jurisdiction: SC
+bank: state_SC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: Alex, who is 20 years old, wants to obtain a property manager-in-charge license in South
+  Carolina. According to S.C. Code Ann. § 40-57-510(A)(1), what is the outcome?
+options:
+  - He is eligible after seven hours of accounting instruction.
+  - He is not eligible because he is under twenty-one.
+  - He is eligible if he holds a property manager license.
+  - He is eligible because he meets the age requirement.
+key: B
+explanation: The rule mandates that an applicant for a property manager‑in‑charge license must be at
+  least twenty‑one years old. Since Alex is only twenty, he does not satisfy this requirement and is
+  therefore ineligible. Holding a property manager license or completing accounting instruction does
+  not override the age requirement.
+citation:
+  source: S.C. Code Ann. § 40-57-510(A)(1)
+  url: null
+  quoted_text: attain the age of twenty-one if applying for a property manager-in-charge;
+  secondary: []
+terms:
+  - age
+  - eligibility
+  - property manager-in-charge
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

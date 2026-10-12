@@ -1,0 +1,42 @@
+id: ND-23-0254
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee submits an application to change office location two days before ceasing to work
+  under the current designated broker. Under N.D. Cent. Code § 43-23-10, is this permissible?
+options:
+  - B) No, unless the licensee also notifies the broker in writing.
+  - D) Yes, but only if the application is submitted within five days after removal.
+  - C) Yes, because the statute allows application before removal.
+  - A) No, because applications may only be submitted after removal.
+key: C
+explanation: The statute explicitly permits the licensee to make the application either before the
+  removal or within five days after removal. Submitting two days before removal falls within the
+  allowed "before removal" window. The distractors incorrectly limit the timing to after removal
+  only or add unrelated conditions.
+citation:
+  source: N.D. Cent. Code § 43-23-10
+  url: null
+  quoted_text: In case of removal from the designated broker, the licensee shall make application to
+    the commission before the removal or within five days after the removal, designating the new
+    location of such office, whereupon the commission immediately shall issue a new license for the
+    new location for the unexpired period.
+  secondary: []
+terms:
+  - application
+  - removal
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

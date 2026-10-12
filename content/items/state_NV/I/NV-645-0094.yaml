@@ -1,0 +1,47 @@
+id: NV-645-0094
+jurisdiction: NV
+bank: state_NV
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Under NRS 645.844(2), when is a licensee prohibited from recovering from the Real Estate
+  Education, Research and Recovery Fund?
+options:
+  - The licensee may recover from the Fund when the judgment is based on fraud, misrepresentation,
+    or deceit
+  - The licensee may not recover from the Fund for damages related to a transaction in which the
+    licensee acted in his or her capacity as a licensee
+  - The licensee may recover from the Fund if the judgment exceeds $25,000 and the licensee has
+    satisfied the judgment
+  - The licensee may recover from the Fund if the licensee is not the spouse of the debtor and the
+    judgment is final
+key: B
+explanation: The statute explicitly bars a licensee from recovering from the Fund for damages
+  related to a transaction in which they acted as a licensee. The other options describe
+  circumstances where recovery might be allowed, which contradict the rule.
+citation:
+  source: Nev. Rev. Stat. ch. 645 — Nevada Revised Statutes Chapter 645 — Real Estate Brokers and
+    Salespersons (rev. 4/15/2026, through 2025 session), official Nevada Legislature page read via
+    Internet Archive capture of 2026-04-22 because leg.state.nv.us returns Cloudflare 403 to scripts
+    — § 645.844
+  url: null
+  quoted_text: A person who is licensed pursuant to this chapter may not recover from the Fund for
+    damages which are related to a transaction in which the person acted in his or her capacity as a
+    licensee.
+  secondary: []
+terms:
+  - recovery
+  - fund
+  - licensee
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

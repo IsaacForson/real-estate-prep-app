@@ -1,0 +1,41 @@
+id: AR-42-0307
+jurisdiction: AR
+bank: state_AR
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A property manager uses cash receipts numbered 101, 103, and 104 for three separate cash
+  payments from tenants. According to Arkansas Real Estate Commission Rule 10.24(a), what must the
+  property manager do to comply?
+options:
+  - Using receipts with consecutive numbers starting at 101
+  - Skipping numbers only when a receipt is voided
+  - Re‑issuing the missing receipt number 102 before continuing
+  - Maintaining a log of missing numbers for audit purposes
+key: A
+explanation: The rule mandates that cash receipts be consecutively pre‑numbered, so the manager must
+  use sequential numbers without gaps. Skipping numbers is only permissible if a receipt is voided,
+  re‑issuing the missing number after the fact does not restore consecutiveness, and merely logging
+  gaps does not correct the numbering sequence.
+citation:
+  source: Arkansas Real Estate Commission Rules (Rule 1 – Rule 15) — Arkansas Real Estate Commission
+    Regulations, Time-Share Regulations (April 2024) — § 10.24
+  url: null
+  quoted_text: Cash receipts must be consecutively pre-numbered, be printed in at least duplicate form
+  secondary: []
+terms:
+  - cash receipt
+  - pre-numbered
+  - consecutive
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

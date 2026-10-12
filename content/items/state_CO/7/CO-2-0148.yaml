@@ -1,0 +1,47 @@
+id: CO-2-0148
+jurisdiction: CO
+bank: state_CO
+blueprint_node: "7"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker is acting as a transaction-broker in a sale. The broker receives a counteroffer from
+  the buyer while the seller has already signed a purchase agreement. The broker does not present
+  the counteroffer to the seller because the property is under contract. Is this permissible?
+options:
+  - Yes, because once a purchase agreement is signed, the broker’s duty to present additional offers
+    ends and they may ignore any counteroffers received from the buyer.
+  - No, because the broker must present all offers and counteroffers in a timely manner regardless
+    of whether the property is subject to a contract for sale or lease.
+  - Yes, because the broker should first seek the seller’s approval before presenting any
+    counteroffer, and without that consent the broker may withhold it.
+  - No, because the broker must wait for the existing contract to be terminated or rescinded before
+    presenting any counteroffer to the seller.
+key: B
+explanation: The transaction-broker statute requires presenting all offers and counteroffers in a
+  timely manner regardless of whether the property is subject to a contract for sale or lease or
+  letter of intent. Therefore, withholding a counteroffer due to an existing contract violates this
+  duty. The option that says the broker is not obligated to present counteroffers once a contract is
+  signed and the option that says the broker must first obtain the seller’s consent both incorrectly
+  excuse the broker based on contract status or consent; the option that says the broker must wait
+  until the contract is terminated adds a waiting period not required by law.
+citation:
+  source: Colo. Rev. Stat. § 12-10-201 et seq. § 12-10-407(2)(b)(I)
+  url: null
+  quoted_text: Presenting all offers and counteroffers in a timely manner regardless of whether the
+    property is subject to a contract for sale or lease or letter of intent;
+  secondary: []
+terms:
+  - counteroffer
+  - presentation
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-23

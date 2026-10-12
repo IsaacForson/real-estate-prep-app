@@ -1,0 +1,44 @@
+id: FL-475-0429
+jurisdiction: FL
+bank: state_FL
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A leasing agent for an apartment community receives a commission for each lease signed and
+  works in the onsite rental office. Under Florida Statute 475.011(4), is this person exempt from
+  licensing requirements?
+options:
+  - The person is not exempt because they are paid a commission.
+  - The person is exempt because they work in an onsite rental office.
+  - The person is not exempt because they work for a management company.
+  - The person is exempt because they only lease apartments.
+key: A
+explanation: Under subsection (4) of the exemptions, only a salaried employee of an owner or a
+  registered broker for an owner of an apartment community who works in an onsite rental office in a
+  leasing capacity is exempt from licensing. Because the leasing agent is paid a commission, they
+  are not a salaried employee and therefore do not qualify for the exemption. The distractor that
+  claims exemption based solely on working in an onsite rental office overlooks the salary
+  requirement.
+citation:
+  source: Fla. Stat. § 475.011(4)
+  url: null
+  quoted_text: Any salaried employee of an owner, or of a registered broker for an owner, of an
+    apartment community who works in an onsite rental office of the apartment community in a leasing
+    capacity.
+  secondary: []
+terms:
+  - exemption
+  - salaried
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

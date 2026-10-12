@@ -1,0 +1,46 @@
+id: SD-21A-0263
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A subdivision certificate holder has 250 lots in the original application. What is the annual
+  fee due each January first?
+options:
+  - $90
+  - $70
+  - $60
+  - $80
+key: D
+explanation: The annual fee equals fifty dollars plus ten dollars for each one hundred lots or
+  fraction thereof. For 250 lots, this is three increments, giving $50 + (3 × $10) = $80. The $90
+  distractor arises from adding four increments of $10 to the base fee.
+citation:
+  source: S.D. Codified Laws § 36-21A-97
+  url: null
+  quoted_text: After issuance of a certificate, an annual fee of fifty dollars plus ten dollars for
+    each one hundred lots or fraction thereof computed on the number of lots in the original
+    application shall be due and payable on or before January first of each year.
+  secondary: []
+math:
+  worked_solution: Base fee = $50. Number of 100‑lot increments = ceil(250/100) = 3. Increment charge
+    = 3 × $10 = $30. Total annual fee = $50 + $30 = $80.
+  formulas:
+    - AnnualFee = 50 + 10 × ceil(Lots/100)
+  onscreen_calculator_only: false
+terms:
+  - fee
+  - lot
+  - certificate
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

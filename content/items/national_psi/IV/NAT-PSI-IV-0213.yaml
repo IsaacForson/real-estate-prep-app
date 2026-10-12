@@ -1,0 +1,48 @@
+id: NAT-PSI-IV-0213
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor offers a high-cost mortgage with a late fee equal to 5% of the past due payment. Is
+  this late fee permissible under TILA §1639(k)(1)(A)?
+options:
+  - The late fee is permissible because it is less than 5% of the payment past due
+  - The late fee is impermissible because it exceeds the 4% limit
+  - The late fee is permissible if disclosed in the loan agreement
+  - The late fee is impermissible only if the loan is not a high-cost mortgage
+key: B
+explanation: Under 15 U.S.C. § 1639(k)(1)(A), a late payment charge on a high-cost mortgage may not
+  exceed 4 percent of the amount of the payment past due. A fee of 5 percent of the past due payment
+  is greater than this limit, so it is impermissible. Disclosure does not override the substantive
+  limit.
+citation:
+  source: 15 U.S.C. § 1639(k)(1)(A)
+  url: null
+  quoted_text: No creditor may impose a late payment charge or fee in connection with a high-cost
+    mortgage— (A) in an amount in excess of 4 percent of the amount of the payment past due;
+  secondary: []
+math:
+  worked_solution: Let P represent the past due payment. The maximum permissible late fee is 4% of P,
+    which equals 0.04P. The proposed late fee is 5% of P, which equals 0.05P. Since 0.05P is greater
+    than 0.04P, the fee exceeds the allowed limit and is therefore impermissible.
+  formulas:
+    - "Percentage calculation: amount = rate × base"
+    - "Comparison: fee > limit"
+  onscreen_calculator_only: false
+terms:
+  - late
+  - fee
+  - mortgage
+tags: []
+status: published
+reviewer: null
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

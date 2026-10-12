@@ -1,0 +1,45 @@
+id: ME-114-0313
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A sales agent held a license from January 1, 2020 to January 1, 2022. Assuming no waiver is
+  granted, what is the earliest date on which the agent may be issued a new sales agent license
+  under Maine law?
+options:
+  - January 1, 2026
+  - January 1, 2025
+  - January 1, 2024
+  - January 1, 2023
+key: B
+explanation: The law bars reissuance of a sales agent license within 5 years of the date the
+  previous license was issued.
+citation:
+  source: 32 M.R.S. § 13200(4)
+  url: null
+  quoted_text: A new sales agent license may not be reissued within 5 years following the date the
+    previous sales agent license was issued.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: January 1, 2020
+    Add 5 years: January 1, 2020 + 5 years = January 1, 2025
+  formulas:
+    - Earliest reissue date = issue date + 5 years
+  onscreen_calculator_only: false
+terms:
+  - sales agent license
+  - reissue restriction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

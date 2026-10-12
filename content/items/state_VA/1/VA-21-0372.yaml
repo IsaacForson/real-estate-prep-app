@@ -1,0 +1,40 @@
+id: VA-21-0372
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A new salesperson received their license on March 15, 2024. By what date must they complete
+  the 30-hour post-license education to avoid license inactivation?
+options:
+  - April 30, 2025
+  - April 15, 2025
+  - March 31, 2025
+  - March 15, 2025
+key: C
+explanation: The rule requires completion within one year from the last day of the month in which
+  the license was issued. The license was issued in March, so the last day is March 31, 2024; one
+  year later is March 31, 2025 (§ 54.1-2105.01(A)).
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2105.01
+  url: null
+  quoted_text: Failure of a new licensee to complete the 30-hour post-licensure curriculum within one
+    year from the last day of the month in which his license was issued shall result in the license
+    being placed on inactive status by the Board until the curriculum has been completed.
+  secondary: []
+terms:
+  - post-license education
+  - deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

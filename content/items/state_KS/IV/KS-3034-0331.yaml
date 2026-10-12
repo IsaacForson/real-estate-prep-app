@@ -1,0 +1,49 @@
+id: KS-3034-0331
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An associate broker is employed by Broker X and also wishes to work with Broker Y. Both
+  brokers have signed the commission-provided consent forms, which have been filed with the
+  commission. Under Kan. Stat. Ann. § 58-3062(b)(3)(B), is this arrangement permissible?
+options:
+  - The arrangement is permissible because each supervising broker has consented and the signed
+    forms have been filed with the commission.
+  - The arrangement is permissible because the associate broker also holds an active salesperson
+    license.
+  - The arrangement is permissible because the consent forms have been notarized before filing.
+  - The arrangement is permissible because the associate broker works less than 20 hours per week
+    for each broker.
+key: A
+explanation: The statute allows an associate broker to work for more than one supervising broker
+  when each broker consents via a commission-provided form and the signed form is filed with the
+  commission. The scenario satisfies both conditions, making the arrangement permissible. The other
+  options introduce irrelevant factors such as holding a salesperson license, notarization, or hour
+  limits, which are not required by the rule.
+citation:
+  source: Kan. Stat. Ann. § 58-3062(b)(3)(B)
+  url: null
+  quoted_text: An associate broker may be employed by or associated with more than one supervising
+    broker at any one time if each supervising broker who employs or associates with the associate
+    broker consents to such multiple employment or association. Such consent shall be on a form
+    provided by the commission and shall not be effective until a signed copy of the completed form
+    has been filed with the commission.
+  secondary: []
+terms:
+  - associate broker
+  - supervising broker
+  - consent form
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

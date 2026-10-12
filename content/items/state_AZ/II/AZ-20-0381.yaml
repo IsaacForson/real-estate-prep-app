@@ -1,0 +1,41 @@
+id: AZ-20-0381
+jurisdiction: AZ
+bank: state_AZ
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee receives notice of a disciplinary hearing scheduled for June 30. The licensee
+  submits a voluntary surrender of the license on June 25. Under Arizona law, is the surrender
+  effective?
+options:
+  - Yes, because the surrender occurred before the hearing date
+  - No, because the surrender must occur at least ten days prior to the hearing
+  - Yes, provided the licensee also pays all outstanding renewal fees
+  - No, unless the commissioner issues a written waiver of the ten‑day requirement
+key: B
+explanation: The surrender on June 25 is five days before the June 30 hearing, which is less than
+  the ten‑day minimum, so it is ineffective. The distractor “Yes, because the surrender occurred
+  before the hearing date” is wrong because prematurity alone does not satisfy the statutory ten‑day
+  rule.
+citation:
+  source: Ariz. Rev. Stat. § 32-2157(A)
+  url: null
+  quoted_text: if the surrender of the license occurs not less than ten days prior to a hearing under
+    this section.
+  secondary: []
+terms:
+  - voluntary surrender
+  - hearing
+  - ten days
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

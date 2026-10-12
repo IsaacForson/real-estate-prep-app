@@ -1,0 +1,40 @@
+id: OR-696-0312
+jurisdiction: OR
+bank: state_OR
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: A principal broker receives a written request to disburse disputed earnest money from a
+  clients’ trust account. According to ORS 696.241(11), what is the maximum number of days allowed
+  to complete the disbursal after the request is made?
+options:
+  - 10 days
+  - 15 days
+  - 20 days
+  - 30 days
+key: C
+explanation: The rule states that the procedure for disbursing disputed funds must allow disbursal
+  not more than 20 days after a request is made (Or. Rev. Stat. § 696.241(11)). Therefore, the
+  maximum allowable period is 20 days. A common mistake is to recall the 10‑business‑day
+  notification requirement for trust accounts, which would incorrectly suggest 10 days.
+citation:
+  source: Or. Rev. Stat. § 696.241(11)
+  url: null
+  quoted_text: The procedure must allow disbursal not more than 20 days after a request is made for
+    the disbursal.
+  secondary: []
+terms:
+  - disbursal
+  - disputed funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

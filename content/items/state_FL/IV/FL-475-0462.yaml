@@ -1,0 +1,44 @@
+id: FL-475-0462
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: During a disciplinary hearing before the Florida Real Estate Commission, a licensed sales
+  associate, under oath, states that she never received a deposit from a buyer, although she
+  actually did. Under Florida law, what is the status of her testimony?
+options:
+  - It is permissible if the commission does not object to the statement.
+  - It is prohibited as false testimony under oath before the commission.
+  - It is allowed if she later corrects the statement before the hearing ends.
+  - It is permissible because she believed the statement was true at the time.
+key: B
+explanation: The law forbids any person from giving false testimony under oath or affirmation before
+  the commission in a proceeding authorized by the chapter. The sales associate's statement is
+  false, making her testimony prohibited regardless of her belief or later correction. Saying that
+  it is permissible if the commission does not object to the statement is incorrect because a
+  sincere belief does not alter the falsity of the testimony; the rule focuses on the truthfulness
+  of the statement, not the witness's state of mind.
+citation:
+  source: Fla. Stat. § 475.42(f)
+  url: null
+  quoted_text: nor may any person give false testimony under oath or affirmation to or before the
+    commission or any member thereof in any proceeding authorized by this chapter.
+  secondary: []
+terms:
+  - testimony
+  - oath
+  - commission
+  - hearing
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

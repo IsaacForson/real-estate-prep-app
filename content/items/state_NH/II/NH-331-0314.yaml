@@ -1,0 +1,50 @@
+id: NH-331-0314
+jurisdiction: NH
+bank: state_NH
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A salesperson leaves Broker A to join Broker B. According to Rea 404.02(c), within how many
+  days must Broker A notify the New Hampshire Real Estate Commission of the affiliation change?
+options:
+  - Broker A must notify the commission within 3 days
+  - Broker A must notify the commission within 5 days
+  - Broker A must notify the commission within 7 days
+  - Broker A must notify the commission within 10 days
+key: B
+explanation: Rea 404.02(c) requires the principal broker to notify the commission in writing no
+  later than five days after a licensee changes affiliation from one principal broker to another.
+  The five‑day period is distinct from the ten‑day reporting deadline for address or contact changes
+  under Rea 404.02(b).
+citation:
+  source: N.H. Code Admin. R. Rea 100–799 (Real Estate Commission rules) — N.H. Code of Administrative
+    Rules, Rea 100–700 (Real Estate Commission), official General Court rules page read via Internet
+    Archive capture of 2022-06-30 (the current rea100-1000.html has no archive capture and
+    gencourt.state.nh.us returns 403) — re-fetch live when reachable Rea 404.02(c)
+  url: null
+  quoted_text: Whenever a licensee changes his or her affiliation from one principal broker to
+    another, or ceases to represent a principal broker, the principal broker shall notify the
+    commission, in writing, no later than 5 days after the change along with the appropriate form
+    described in (b) above.
+  secondary: []
+math:
+  worked_solution: Rea 404.02(c) states the principal broker must notify the commission in writing no
+    later than 5 days after a licensee changes affiliation. Therefore the required notification
+    period is 5 days.
+  formulas: []
+  onscreen_calculator_only: false
+terms:
+  - affiliation change
+  - notification
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

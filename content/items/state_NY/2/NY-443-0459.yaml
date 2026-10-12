@@ -1,0 +1,42 @@
+id: NY-443-0459
+jurisdiction: NY
+bank: state_NY
+blueprint_node: "2"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A broker who represents the seller in a residential transaction receives the agreed commission
+  from the seller and also accepts a referral fee from the buyer’s agent. Under 19 NYCRR §175.7, is
+  this permissible?
+options:
+  - The broker's action is permissible only if the seller gave full knowledge and consent to
+    receiving compensation from more than one party.
+  - The broker's action is impermissible unless the broker also obtains the buyer’s written consent.
+  - The broker's action is impermissible because receiving any compensation from the buyer’s agent
+    violates the prohibition.
+  - The broker's action is permissible because the broker disclosed the dual compensation to both
+    parties.
+key: A
+explanation: The rule allows compensation from more than one party only with the full knowledge and
+  consent of the broker’s client (the seller). Mere disclosure to both parties does not satisfy this
+  requirement, making the first distractor incorrect.
+citation:
+  source: 19 N.Y.C.R.R. Parts 175-179 § 175.7
+  url: null
+  quoted_text: except with the full knowledge and consent of the broker’s client.
+  secondary: []
+terms:
+  - compensation
+  - client
+  - consent
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

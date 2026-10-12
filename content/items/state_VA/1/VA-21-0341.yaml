@@ -1,0 +1,53 @@
+id: VA-21-0341
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee engages in unlicensed activity and receives $750 in compensation from a real estate
+  transaction. What is the maximum civil penalty the Virginia Real Estate Board may impose for this
+  violation?
+options:
+  - $500
+  - $750
+  - $1000
+  - $1250
+key: C
+explanation: Under Virginia law, a person who engages in unlicensed real estate activity may be
+  assessed a civil penalty not exceeding $1,000 or the amount of compensation received, whichever is
+  greater. In this case the licensee received $750, which is less than the statutory cap of $1,000,
+  so the maximum penalty the Board may impose is $1,000 (Va. Code Ann. § 54.1-2105.2).
+citation:
+  source: Va. Code Ann. § 54.1-2100 et seq. — Code of Virginia Title 54.1, Chapter 21 — Real Estate
+    Brokers, Salespersons and Rental Location Agents — § 54.1-2105.2
+  url: null
+  quoted_text: Any person engaging in unlicensed activity shall be subject to further proceedings
+    before the Board and the Board may impose a civil penalty not to exceed $1,000 for any real
+    estate transaction or the compensation received from any such real estate transaction, whichever
+    is greater.
+  secondary: []
+math:
+  worked_solution: |-
+    1. Compensation received = $750.
+    2. Statutory maximum penalty = $1,000 (Va. Code Ann. § 54.1-2105.2).
+    3. Maximum penalty = max($750, $1,000) = $1,000.
+    4. Therefore, the maximum civil penalty the Board may impose is $1,000.
+  formulas:
+    - Maximum penalty = max(statutory cap, compensation)
+  onscreen_calculator_only: false
+terms:
+  - civil penalty
+  - unlicensed activity
+  - compensation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

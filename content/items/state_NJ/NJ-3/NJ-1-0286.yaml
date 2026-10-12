@@ -1,0 +1,58 @@
+id: NJ-1-0286
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee advises a client who plans to clear 6,000 square feet of land for a parking lot in
+  the Pinelands area. According to N.J. Stat. Ann. tit. 13, ch. 18A, is this activity considered a
+  major development under the Pinelands Protection Act?
+options:
+  - The activity does not qualify as a major development
+  - The activity qualifies as a major development
+  - The activity qualifies only if the parcel is less than three acres
+  - The activity qualifies only if it is for agricultural purposes
+key: B
+explanation: The Pinelands Protection Act defines major development as any grading, clearing, or
+  disturbance of an area exceeding 5,000 square feet for purposes other than agricultural or
+  horticultural. Clearing 6,000 square feet for a parking lot is non‑agricultural and exceeds the
+  5,000‑square‑foot threshold, therefore the activity meets the definition of major development.
+citation:
+  source: N.J. Stat. Ann. tit. 13, ch. 18A — New Jersey Statutes Title 13, Chapter 18A — Pinelands
+    Protection Act (N.J.S.A. 13:18A-1 et seq.), extracted from the New Jersey Legislature's official
+    full-text statutes download (STATUTES-TEXT.zip dated 2025-08-07) read via Internet Archive
+    capture of 2025-08-08 — § 13:18A-3
+  url: null
+  quoted_text: any grading, clearing or disturbance of any area in excess of 5,000 square feet for
+    other than agricultural or horticultural purposes
+  secondary: []
+math:
+  worked_solution: >-
+    Threshold = 5,000 sq ft
+
+    Actual cleared area = 6,000 sq ft
+
+    Comparison: 6,000 sq ft > 5,000 sq ft → condition satisfied
+
+    Purpose: parking lot (non‑agricultural)
+
+    Since both size (>5,000 sq ft) and non‑agricultural purpose are met, the activity qualifies as
+    major development.
+  formulas:
+    - "Area comparison: if area > threshold then major development"
+  onscreen_calculator_only: false
+terms:
+  - major development
+  - Pinelands
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

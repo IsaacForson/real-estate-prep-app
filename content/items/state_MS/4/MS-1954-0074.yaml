@@ -1,0 +1,43 @@
+id: MS-1954-0074
+jurisdiction: MS
+bank: state_MS
+blueprint_node: "4"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: How is a 'Customer' defined in a real estate transaction?
+options:
+  - A person who is represented by the broker and owes a fiduciary duty to the broker
+  - A person who is not represented in a real estate transaction
+  - A person who delegates authority to act on their behalf in a real estate transaction
+  - A person who receives compensation for rendering services in a real estate transaction
+key: B
+explanation: Rule 4.2.E defines a customer as a person not represented in a real estate transaction.
+  The option stating that a customer is a person who receives compensation for rendering services in
+  a real estate transaction describes a broker or agent, not a customer. The option stating that a
+  customer is a person who is represented by the broker and owes a fiduciary duty to the broker
+  describes a client, who is represented and owed fiduciary duties. The option stating that a
+  customer is a person who delegates authority to act on their behalf in a real estate transaction
+  describes a principal, who appoints an agent to act for them.
+citation:
+  source: 30 Miss. Admin. Code Pt. 1601 (MREC Rules and Regulations) — Mississippi Real Estate
+    Commission Rules and Regulations, 30 Miss. Admin. Code Part 1601 (rev. 02-21-2025) — § 4.2
+  url: null
+  quoted_text: Customer shall mean that person not represented in a real estate transaction. It may be
+    the buyer, seller, landlord or tenant.
+  secondary: []
+terms:
+  - customer
+  - agency
+  - principal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-08
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

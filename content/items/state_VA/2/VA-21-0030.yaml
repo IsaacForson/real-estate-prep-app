@@ -1,0 +1,44 @@
+id: VA-21-0030
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under Virginia law, by what deadline must a broker place an earnest money deposit received
+  from a buyer into an escrow account, unless the parties agree otherwise in writing?
+options:
+  - The deposit must be placed by the end of the seventh calendar day following receipt.
+  - The deposit must be placed by the end of the third business banking day following receipt.
+  - The deposit must be placed by the end of the fifth business banking day following receipt.
+  - The deposit must be placed immediately upon receipt of the funds.
+key: C
+explanation: The statute requires that an earnest money deposit be placed in the firm's escrow
+  account by the end of the fifth business banking day following ratification, unless the principals
+  agree otherwise in writing. The other options either shorten or lengthen the deadline or ignore
+  the written‑agreement exception.
+citation:
+  source: Va. Code Ann. § 54.1-2108.2
+  url: null
+  quoted_text: Upon the ratification of a contract, an earnest money deposit received by the principal
+    broker or supervising broker, or an agent of such principal broker or supervising broker, that
+    is to be held in the firm's escrow account shall be placed in such escrow account by the end of
+    the fifth business banking day following ratification, unless otherwise agreed to in writing by
+    the principals to the transaction.
+  secondary: []
+terms:
+  - escrow
+  - earnest money
+  - deposit
+  - timeline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

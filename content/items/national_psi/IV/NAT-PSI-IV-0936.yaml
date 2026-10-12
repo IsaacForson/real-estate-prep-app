@@ -1,0 +1,46 @@
+id: NAT-PSI-IV-0936
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A creditor is refinancing a residential mortgage loan that is subject to anti-deficiency
+  protection, and the refinancing would cause the loan to lose that protection. Under TILA
+  §1639(g)(3), when must the creditor provide the written notice describing the protection and
+  significance of loss?
+options:
+  - Before any agreement for such refinancing is consummated
+  - At the time of the original loan consummation
+  - Only if the consumer requests the notice
+  - After the refinancing is consummated
+key: A
+explanation: The regulation requires that, before any agreement for a refinancing that would
+  eliminate anti-deficiency protection is consummated, the creditor must give the consumer a written
+  notice describing that protection and the consequence of its loss. Providing the notice after
+  consummation or only upon request does not satisfy the timing requirement.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1639(g)(3)
+  url: null
+  quoted_text: In the case of any residential mortgage loan that is subject to protection under an
+    anti-deficiency law, if a creditor or mortgage originator provides an application to a consumer,
+    or receives an application from a consumer, for any type of refinancing for such loan that would
+    cause the loan to lose the protection of such anti-deficiency law, the creditor or mortgage
+    originator shall provide a written notice to the consumer describing the protection provided by
+    the anti-deficiency law and the significance for the consumer of the loss of such protection
+    before any agreement for any such refinancing is consummated.
+  secondary: []
+terms:
+  - anti-deficiency law
+  - notice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

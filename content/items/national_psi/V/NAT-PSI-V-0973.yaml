@@ -1,0 +1,41 @@
+id: NAT-PSI-V-0973
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord and tenant agree orally to an eleven-month residential lease. Is the lease enforceable?
+options:
+  - The lease is enforceable because it is for less than one year.
+  - The lease is unenforceable because oral leases are generally not valid.
+  - The lease is enforceable only if the tenant pays rent in advance.
+  - The lease is unenforceable because it exceeds one year.
+key: A
+explanation: Under the Statute of Frauds, a lease for more than one year must be in writing to be
+  enforceable; a lease for one year or less may be oral and still enforceable. An eleven‑month lease
+  is therefore enforceable even though it is oral. The claim that the lease is unenforceable because
+  oral leases are generally not valid is incorrect because oral leases for terms of one year or less
+  are permissible. The claim that the lease is enforceable only if the tenant pays rent in advance
+  is incorrect because advance payment is not required for enforceability. The claim that the lease
+  is unenforceable because it exceeds one year is incorrect because the lease does not exceed one
+  year.
+citation:
+  source: REP Ref. Contracts § 12.1
+  url: null
+  quoted_text: Leases longer than one year generally must be in writing under the Statute of Frauds.
+  secondary: []
+terms:
+  - statute of frauds
+  - lease
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,38 @@
+id: NAT-PV-IV-1560
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: Jordan, age 17, signs a contract to buy a condominium. Under general contract principles, what
+  is the legal status of this contract?
+options:
+  - "Please select the correct answer: Void contract"
+  - "Please select the correct answer: Voidable contract"
+  - "Please select the correct answer: Unenforceable contract"
+  - "Please select the correct answer: Valid contract"
+key: B
+explanation: As illustrated in §1.5, a contract signed by a minor is voidable by the minor, not
+  void, and remains enforceable unless the minor chooses to rescind. The Void contract option is
+  incorrect because minors’ contracts are voidable, not automatically void.
+citation:
+  source: REP Ref. Contracts § 1.5
+  url: null
+  quoted_text: Jordan, age 17, signs a contract to buy a condominium. The contract is voidable by
+    Jordan (the minor), not void, and not voidable by the adult seller.
+  secondary: []
+terms:
+  - voidable
+  - minor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

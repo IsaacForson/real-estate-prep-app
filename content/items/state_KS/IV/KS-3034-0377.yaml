@@ -1,0 +1,42 @@
+id: KS-3034-0377
+jurisdiction: KS
+bank: state_KS
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A salesperson creates and runs an online advertisement for a listing without the direct
+  supervision of their supervising broker. Under Kan. Stat. Ann. § 58-3086(b)(A), what is the status
+  of this advertisement?
+options:
+  - The advertisement is permitted if it includes the broker's contact information
+  - The advertisement is prohibited because it lacks direct supervision
+  - The advertisement is allowed if the supervising broker later approves it
+  - The advertisement is permitted because the salesperson is licensed
+key: B
+explanation: The key is correct because §58-3086(b)(A) requires all advertising by a licensee to be
+  conducted under the direct supervision of the supervising broker or branch broker. The most
+  tempting distractor is “The advertisement is permitted because the salesperson is licensed,” which
+  mistakenly thinks individual licensing suffices, but the rule mandates broker supervision
+  regardless of the salesperson’s license status.
+citation:
+  source: Kan. Stat. Ann. § 58-3086(b)(A)
+  url: null
+  quoted_text: Be conducted under the direct supervision of the supervising broker or branch broker
+  secondary: []
+terms:
+  - supervision
+  - advertisement
+  - licensee
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

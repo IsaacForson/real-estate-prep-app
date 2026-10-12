@@ -1,0 +1,40 @@
+id: NAT-PSI-V-0980
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A buyer signs a purchase agreement and faxes it to the seller's office, but the seller's agent
+  does not receive the fax until the next day. When is the contract formed?
+options:
+  - When the buyer's agent transmits the fax.
+  - When the buyer's agent sends the fax.
+  - When the buyer signs the agreement.
+  - When the seller's agent receives the fax.
+key: D
+explanation: According to §3.3, acceptance is effective only when it is communicated to the offeror
+  (or the offeror's agent). The contract is formed at that moment, not when the offeree signs. The
+  distractor that points to the buyer's signature ignores the communication requirement.
+citation:
+  source: REP Ref. Contracts § 3.3 Communication of acceptance
+  url: null
+  quoted_text: An acceptance is generally effective only when it is communicated to the offeror (or
+    the offeror's agent). The contract is formed at that moment, not when the offeree signs.
+  secondary: []
+terms:
+  - acceptance
+  - communication
+  - offeror
+  - contract formation
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

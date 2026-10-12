@@ -1,0 +1,45 @@
+id: MI-25-0295
+jurisdiction: MI
+bank: state_MI
+blueprint_node: "3"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A right-to-list home sale agreement is in writing, signed by only one of two co-owners, for a
+  period of 18 months, and includes the required early termination option and explanation on the
+  first page. Is the agreement enforceable under Michigan's occupational code?
+options:
+  - The agreement is not enforceable because it lacks a written termination option
+  - The agreement is enforceable because it is in writing and includes the required termination
+    option
+  - The agreement is not enforceable because it is not signed by all owners
+  - The agreement is enforceable because the period is less than 2 years
+key: C
+explanation: The statute provides that a right-to-list home sale agreement is void and unenforceable
+  if it is not signed by all owners with an ownership interest. The distractor claiming
+  enforceability because the agreement is in writing and includes the termination option ignores the
+  signature requirement.
+citation:
+  source: Mich. Comp. Laws §§ 339.101–339.2919 (Occupational Code, Act 299 of 1980) — Michigan
+    Compiled Laws, Occupational Code (1980 PA 299), MCL 339.101–339.2919 — includes Article 25 (Real
+    Estate Brokers and Salespersons, MCL 339.2501–339.2518) — official Michigan Legislature
+    compiled-act PDF read via Internet Archive capture of 2026-01-09 because legislature.mi.gov's
+    Check Point WAF blocks scripts and headless browsers  § 339.2512g(1)(b)
+  url: null
+  quoted_text: It is not signed by all persons that have an ownership interest in the residential real
+    estate considered in the agreement.
+  secondary: []
+terms:
+  - right-to-list
+  - signature
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

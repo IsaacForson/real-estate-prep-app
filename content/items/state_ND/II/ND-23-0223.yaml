@@ -1,0 +1,41 @@
+id: ND-23-0223
+jurisdiction: ND
+bank: state_ND
+blueprint_node: II
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under N.D. Cent. Code § 43-23-08(1), which individual is eligible to apply for a real estate
+  license in North Dakota?
+options:
+  - A. A person whose license was revoked 6 months ago and is applying today.
+  - B. A person whose license was revoked 18 months ago and is applying today.
+  - C. A person whose license was revoked 30 months ago and is applying today.
+  - D. A person whose license was revoked 12 months ago and is applying today.
+key: C
+explanation: The statute bars licensure for anyone whose real estate license has been revoked within
+  two years before the application date. A revocation 30 months prior falls outside that two‑year
+  window, so the person is eligible. The other options describe revocations within the two‑year
+  period, which disqualify the applicant.
+citation:
+  source: N.D. Cent. Code ch. 43-23 — North Dakota Century Code Chapter 43-23, State Real Estate
+    Commission — § 43-23-08(1)
+  url: null
+  quoted_text: whose real estate license has not been revoked in this or any other state within two
+    years before the date of application
+  secondary: []
+terms:
+  - license revocation
+  - eligibility
+  - two-year period
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

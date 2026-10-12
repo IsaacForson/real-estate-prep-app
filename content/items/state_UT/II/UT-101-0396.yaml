@@ -1,0 +1,39 @@
+id: UT-101-0396
+jurisdiction: UT
+bank: state_UT
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An individual who is not licensed under Utah law agrees to collect rent and handle maintenance
+  requests for a single-family home owned by another person, in exchange for a monthly fee. Under
+  Utah Code Ann. § 61-2f-201(1)(d), is this conduct lawful?
+options:
+  - It is lawful because the individual is only handling maintenance, not leasing.
+  - It is unlawful because it constitutes property management without a license.
+  - It is lawful because the property is residential, not commercial.
+  - It is unlawful only if the individual also advertises the property.
+key: B
+explanation: Collecting rent and handling maintenance for another's property constitutes property
+  management, which Utah Code Ann. § 61-2f-201(1)(d) prohibits without a license. The claim that it
+  is lawful because the property is residential, not commercial is incorrect because the
+  property‑management prohibition applies to both residential and non‑residential real estate.
+citation:
+  source: Utah Code Ann. § 61-2f-201(1)(d)
+  url: null
+  quoted_text: (d) engage in property management.
+  secondary: []
+terms:
+  - property management
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07

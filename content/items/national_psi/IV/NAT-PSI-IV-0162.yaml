@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0162
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A homeowner refinances her existing mortgage with the same bank, borrowing only enough to pay
+  off the current loan balance and accrued interest, with no additional funds. The loan is secured
+  by the same property. Under TILA §1635(e), does the homeowner have a right to rescind?
+options:
+  - The homeowner has no right to rescind only if the creditor is a state agency.
+  - The homeowner has a right to rescind because all refinancings permit rescission.
+  - The homeowner has a right to rescind only if the loan amount exceeds eighty percent of the
+    property's value.
+  - The homeowner has no right to rescind because the transaction is exempt as a refinancing with no
+    new advances.
+key: D
+explanation: Subsection (e)(2) of TILA exempts a transaction that is a refinancing or consolidation
+  with no new advances of the existing balance by the same creditor secured by the same property.
+  Therefore the homeowner has no right to rescind. The idea that all refinancings allow rescission
+  is incorrect, and adding conditions such as loan‑to‑value limits or creditor type is not supported
+  by the statute.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1635(e)
+  url: null
+  quoted_text: (2) a transaction which constitutes a refinancing or consolidation (with no new
+    advances) of the principal balance then due and any accrued and unpaid finance charges of an
+    existing extension of credit by the same creditor secured by an interest in the same property
+  secondary: []
+terms:
+  - refinancing
+  - exemption
+  - creditor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

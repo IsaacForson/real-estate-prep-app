@@ -1,0 +1,41 @@
+id: MN-82-0316
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker receives a stock certificate as earnest money and intends to act as the escrow agent.
+  What must the broker obtain before holding the stock certificate in escrow?
+options:
+  - Deposit of the stock certificate with an authorized escrow agent
+  - Written authority from the buyer and seller to hold the item in escrow
+  - A receipt issued to the buyer for the value of the stock certificate
+  - A record of the item in the broker's trust account records
+key: B
+explanation: Subd. 3 states that if the broker acts as the escrow agent, the broker must obtain
+  written authority from the buyer and seller to hold such items in escrow. While issuing a receipt
+  and keeping records are also required, the specific prerequisite for acting as escrow agent is
+  obtaining that written authority. Simply depositing with another escrow agent contradicts the
+  broker’s role as the escrow agent.
+citation:
+  source: Minn. Stat. ch. 82 (Real Estate Brokers and Salespersons) — Minnesota Statutes Chapter 82 —
+    Real Estate Brokers and Salespersons (full chapter) — § 82.75 Subd. 3
+  url: null
+  quoted_text: In the event the broker acts as the escrow agent, the broker shall obtain written
+    authority from the buyer and seller to hold such items in escrow.
+  secondary: []
+terms:
+  - escrow agent
+  - written authority
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

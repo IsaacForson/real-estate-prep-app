@@ -1,0 +1,42 @@
+id: WI-452-0127
+jurisdiction: WI
+bank: state_WI
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: Under Wis. Stat. § 452.24(1), when does a licensee have a duty to disclose information about
+  the sex offender registry to a person receiving brokerage services?
+options:
+  - When the licensee receives a request and possesses actual knowledge of the information
+  - When the licensee receives a request, irrespective of any knowledge of the information
+  - When the licensee believes the person may be required to register as a sex offender
+  - When the licensee is providing brokerage services in any real estate transaction
+key: A
+explanation: The statute states that a licensee has a duty to disclose such information if the
+  licensee has actual knowledge of the information. Without actual knowledge, no duty arises.
+  Therefore, the correct condition is receipt of a request coupled with actual knowledge. The other
+  options either ignore the knowledge requirement or add unsupported conditions.
+citation:
+  source: Wis. Stat. § 452.24(1)
+  url: null
+  quoted_text: |-
+    the licensee has a duty to disclose such informa-
+    tion, if the licensee has actual knowledge of the information
+  secondary: []
+terms:
+  - sex offender
+  - disclosure
+  - licensee
+  - actual knowledge
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-22

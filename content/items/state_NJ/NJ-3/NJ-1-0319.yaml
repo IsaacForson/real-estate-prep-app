@@ -1,0 +1,48 @@
+id: NJ-1-0319
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An applicant for a real estate salesperson license was convicted of a sex offense that
+  requires registration under Megan’s Law. According to N.J. Stat. Ann. § 45:15-12.1, what action
+  must the commission take regarding the application?
+options:
+  - Approval of the license application despite the conviction.
+  - Denial of the license application based on the conviction.
+  - Referral of the applicant to the Attorney General for evaluation.
+  - Hold of the license application pending further review.
+key: B
+explanation: The statute prohibits issuing or renewing a license to anyone known to have been
+  convicted of a sex offense requiring registration. Therefore the commission must deny the
+  application. The option stating that the license application should be approved despite the
+  conviction contradicts the statutory prohibition.
+citation:
+  source: N.J. Stat. Ann. tit. 45, ch. 15 — New Jersey Statutes Title 45, Chapter 15 — Real Estate
+    Brokers and Salespersons (N.J.S.A. 45:15-1 to 45:15-42, incl. Real Estate Sales Full Disclosure
+    Act 45:15-16.27 et seq.), extracted from the New Jersey Legislature's official full-text
+    statutes download (STATUTES-TEXT.zip, dated 2025-08-07) read via Internet Archive capture of
+    2025-08-08 because njleg.state.nj.us refuses connections from this network — § 15-12.1
+  url: null
+  quoted_text: No license shall be issued or renewed by the commission to any person known by it to
+    have been convicted of any sex offense that would qualify the person for registration pursuant
+    to section 2 of P.L.1994, c.133 (C.2C:7-2) or under an equivalent statute of another state or
+    jurisdiction.
+  secondary: []
+terms:
+  - sex offense
+  - registration
+  - license
+  - commission
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

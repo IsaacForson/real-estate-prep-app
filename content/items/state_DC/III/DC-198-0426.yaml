@@ -1,0 +1,43 @@
+id: DC-198-0426
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A real estate salesperson employed by a broker whose license was suspended on June 1 fails to
+  mail their license to the Mayor within the required 15‑day period. Under D.C. Code §
+  47-2853.186(a), when may the salesperson lawfully resume performing real estate acts?
+options:
+  - After paying a fine to the Mayor and completing a remedial education course
+  - After waiting 30 days and then submitting a new license application to the Mayor
+  - After being reemployed by a broker and having the license reissued by the Mayor
+  - After the broker’s license is reinstated and the salesperson is reemployed
+key: C
+explanation: The statute states the salesperson may not perform acts until they are reemployed and
+  have their license reissued by the Mayor. The distractor “After the broker’s license is reinstated
+  and the salesperson is reemployed” omits the requirement that the salesperson’s own license be
+  reissued, so performing acts would remain unlawful.
+citation:
+  source: D.C. Code § 47-2853.186(a)
+  url: null
+  quoted_text: It shall be unlawful for the real estate salesperson to perform any of the acts
+    specified in this subchapter from the date of revocation or suspension until he or she has been
+    reemployed and a license has been reissued to him or her by the Mayor.
+  secondary: []
+terms:
+  - license
+  - suspension
+  - reemployment
+  - Mayor
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

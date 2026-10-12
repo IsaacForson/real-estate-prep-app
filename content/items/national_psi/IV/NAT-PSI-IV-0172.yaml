@@ -1,0 +1,45 @@
+id: NAT-PSI-IV-0172
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: According to the default allocations assumed by examination items unless told otherwise, which
+  of the following is typically paid by the seller?
+options:
+  - The lender's title policy
+  - The brokerage commission
+  - The recording of the deed
+  - The prepaid interest
+key: B
+explanation: Under the default allocation used in exam items when no other agreement is specified,
+  the seller is responsible for paying the brokerage commission. The buyer, by contrast, pays the
+  lender's title policy, the recording of the deed and security instrument, and prepaid interest.
+  Therefore, the brokerage commission is the seller's cost, while the lender's title policy is a
+  buyer cost.
+citation:
+  source: REP Ref. Financing & Closing § 10.7
+  url: null
+  quoted_text: the buyer pays lender fees (origination, discount points, appraisal, credit report,
+    flood certification), the lender's title policy, recording of the deed and security instrument,
+    prepaid interest, the first year's hazard premium and the initial escrow deposits; the seller
+    pays the brokerage commission, payoff of existing liens and recording of their releases, deed
+    preparation, and in many but not all states the owner's title policy and the transfer tax
+  secondary: []
+terms:
+  - brokerage commission
+  - lender's title policy
+  - recording
+  - prepaid interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,42 @@
+id: SD-21A-0248
+jurisdiction: SD
+bank: state_SD
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed salesperson who is also the buyer of a property attempts to rely on the bona fide
+  owner exemption to avoid licensure when purchasing the property. Under S.D. Codified Laws §
+  36-21A-27, is the exemption available?
+options:
+  - The exemption is not available because licensees do not qualify for exceptions
+  - The exemption is available because the person owns the property
+  - The exemption is available because the person is a salesperson, not a broker
+  - The exemption is available if the transaction is not for compensation
+key: A
+explanation: The statute explicitly states that licensed persons do not qualify for any exceptions,
+  including the bona fide owner exemption, when they have a personal interest in the transaction.
+  Ownership does not override this prohibition for licensees.
+citation:
+  source: S.D. Codified Laws § 36-21A (Real Estate Licensing) — South Dakota Codified Laws Chapter
+    36-21A — Real Estate Licensing (SD Real Estate Commission License Laws & Administrative Rules
+    book, as of July 1, 2025) — § 36-21A-27
+  url: null
+  quoted_text: Any person licensed under this chapter does not qualify for the exceptions set forth in
+    this chapter including any transaction in which that person has a personal interest.
+  secondary: []
+terms:
+  - licensee
+  - exemption
+  - personal interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-06
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

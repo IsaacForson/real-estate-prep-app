@@ -1,0 +1,46 @@
+id: NJ-1-0328
+jurisdiction: NJ
+bank: state_NJ
+blueprint_node: NJ-3
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A landlord posts the annual statement of tenant and landlord rights in a locked maintenance
+  closet accessible only to building staff. Has the landlord complied with the posting requirement
+  under the Truth-in-Renting Act?
+options:
+  - The landlord is compliant because the statement is posted in a maintenance closet.
+  - The landlord is not compliant because the statement is not prominent and accessible to all
+    tenants.
+  - The landlord is compliant because a copy of the statement is posted somewhere on the premises.
+  - The landlord is not compliant because the landlord failed to provide a copy to each tenant.
+key: B
+explanation: The statute requires that the statement be posted in one or more locations so that it
+  is prominent and accessible to all tenants. Posting in a locked closet accessible only to staff
+  fails to meet the prominence and accessibility requirement. Providing a copy to each tenant is a
+  separate distribution duty, not the posting requirement at issue.
+citation:
+  source: N.J. Stat. Ann. tit. 46, ch. 8 — New Jersey Statutes Title 46, Chapter 8 — Landlord and
+    Tenant (incl. Truth-in-Renting Act 46:8-43 et seq.) (N.J.S.A. 46:8-1 et seq.), extracted from
+    the New Jersey Legislature's official full-text statutes download (STATUTES-TEXT.zip dated
+    2025-08-07) read via Internet Archive capture of 2025-08-08 — § 8-43 46:8-46
+  url: null
+  quoted_text: In addition, every landlord shall keep a copy of the current statement posted in one or
+    more locations so that the statement is prominent and accessible to all his tenants.
+  secondary: []
+terms:
+  - landlord
+  - posted
+  - prominent
+  - accessible
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

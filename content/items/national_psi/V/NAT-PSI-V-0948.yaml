@@ -1,0 +1,38 @@
+id: NAT-PSI-V-0948
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: V
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under general contract law, when is a revocation of an offer effective?
+options:
+  - The offer is terminated when the buyer communicates the withdrawal to the seller.
+  - The offer remains open because the buyer's withdrawal was not received before the expiration
+    date.
+  - The offer is terminated only if the buyer notifies the seller before the expiration date.
+  - The offer remains open until the stated expiration date passes.
+key: A
+explanation: A revocation is effective when it is communicated to the offeree, which terminates the
+  offer at that moment.
+citation:
+  source: REP Ref. Contracts § 3.4
+  url: null
+  quoted_text: A revocation is effective when it is communicated to the offeree.
+  secondary: []
+terms:
+  - revocation
+  - offer
+  - communication
+  - offeree
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

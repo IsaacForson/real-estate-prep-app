@@ -1,0 +1,44 @@
+id: DC-198-0078
+jurisdiction: DC
+bank: state_DC
+blueprint_node: I
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensed property manager has actively practiced property management in the District for 4
+  years. They are nominated to serve as a professional member on the Board of Real Estate. Under the
+  tenure requirements, is the nominee eligible for appointment?
+options:
+  - No, because professional members of the Board of Real Estate must have at least 5 years of
+    active practice.
+  - No, because the nominee must also be a resident for at least 2 years prior according to the rule.
+  - Yes, because property managers are generally exempt from the experience requirement.
+  - Yes, because 4 years also meets the 3-year minimum for professional members.
+key: A
+explanation: The nominee is ineligible because professional members of the Board of Real Estate must
+  have been actively engaged in their field for not less than 5 years immediately prior to
+  appointment. Although the general rule for other boards requires 3 years, the real estate board
+  imposes a higher threshold. The distractor citing the 3‑year minimum applies to other boards, not
+  the Board of Real Estate.
+citation:
+  source: "D.C. Code §§ 47-2853.01–47-2853.30 — D.C. Code Title 47, Ch. 28, Subch. I-B, Part A -
+    Non-Health Related Occupations and Professions Licensure: General Provisions — § 47-2853.07"
+  url: null
+  quoted_text: Notwithstanding the above, professional members of the Board of Real Estate shall each
+    have been actively engaged in their field for not less than 5 years immediately prior to their
+    appointment to the Board and shall remain active in their field during their tenure on the Board
+  secondary: []
+terms:
+  - professional member
+  - active practice
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-25

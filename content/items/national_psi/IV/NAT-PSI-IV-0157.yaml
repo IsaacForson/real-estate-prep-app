@@ -1,0 +1,43 @@
+id: NAT-PSI-IV-0157
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: "Under TILA §1635(a), the obligor's right to rescind a consumer credit transaction secured by
+  the principal dwelling expires at:"
+options:
+  - Three years after the date of consummation of the transaction.
+  - Midnight of the third business day after consummation of the transaction.
+  - Midnight of the third business day after the later of consummation or delivery of the
+    disclosures.
+  - Midnight of the third business day after delivery of the required disclosures.
+key: C
+explanation: Under TILA §1635(a), the rescission right expires at midnight of the third business day
+  after the later of consummation or delivery of the required disclosures. The answer that states
+  this later‑event rule is correct. The answers that base the period on only consummation or only
+  delivery of the disclosures are incorrect because they ignore the later‑event requirement.
+citation:
+  source: 15 U.S.C. §§ 1601–1667f (TILA) — Truth in Lending Act — § 1635(a)
+  url: null
+  quoted_text: until midnight of the third business day following the consummation of the transaction
+    or the delivery of the information and rescission forms required under this section together
+    with a statement containing the material disclosures required under this subchapter, whichever
+    is later
+  secondary: []
+terms:
+  - rescission
+  - consummation
+  - disclosures
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

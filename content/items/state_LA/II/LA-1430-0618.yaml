@@ -1,0 +1,41 @@
+id: LA-1430-0618
+jurisdiction: LA
+bank: state_LA
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee representing a buyer accepts a rebate from the seller for closing costs incurred on
+  the buyer’s behalf and does not inform the buyer of the rebate. According to La. R.S. 37:1455(7),
+  is the licensee in violation?
+options:
+  - Yes, but only if the rebate is disclosed to the buyer in writing.
+  - No, because the licensee may keep the rebate if it is placed in escrow.
+  - Yes, because accepting an undisclosed rebate from a principal is prohibited.
+  - No, because rebates from sellers are allowed when applied to closing costs.
+key: C
+explanation: The statute prohibits accepting any undisclosed rebate from a principal; failure to
+  disclose makes the rebate undisclosed, thus a violation. The suggestion that rebates are allowed
+  when used for closing costs contradicts the disclosure requirement.
+citation:
+  source: La. R.S. 37:1430–1470 (Louisiana Real Estate License Law) — Louisiana Real Estate License
+    Law, La. R.S. Title 37, Chapter 17 (LREC compilation, Aug. 2026) La. R.S. 37:1455(7)
+  url: null
+  quoted_text: Accepting, giving, or charging any undisclosed commission, rebate, or direct profit on
+    expenditures made for a principal.
+  secondary: []
+terms:
+  - undisclosed
+  - rebate
+  - principal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

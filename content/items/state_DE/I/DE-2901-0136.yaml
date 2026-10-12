@@ -1,0 +1,55 @@
+id: DE-2901-0136
+jurisdiction: DE
+bank: state_DE
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A Delaware salesperson has formed a limited liability company (LLC) that does not engage in
+  any real estate brokerage activity and exists solely to receive the salesperson’s commission.
+  Under Del. Code Ann. tit. 24, ch. 29, § 2930(d), may the salesperson receive their commission
+  through this LLC?
+options:
+  - The salesperson may receive compensation through the LLC only if the LLC employs at least one
+    licensed real estate agent and the LLC must file an annual report with the Division of
+    Professional Regulation.
+  - The salesperson may receive compensation through the LLC because the entity does not need
+    Commission approval as it does not engage in brokerage business and is solely for receiving
+    compensation.
+  - The salesperson may receive compensation through the LLC only if the LLC is first approved by
+    the Commission as a brokerage organization and the LLC must maintain a separate bank account for
+    commission funds.
+  - The salesperson may receive compensation through the LLC only if the LLC is registered as a real
+    estate brokerage and the LLC must obtain a tax identification number from the IRS.
+key: B
+explanation: Under § 2930(d), a broker may pay a licensee’s compensation to an entity created by the
+  licensee if the entity does not need Commission approval because it does not engage in brokerage
+  business and is established solely to receive compensation. Since the LLC in the scenario does not
+  engage in brokerage business and exists only to receive the salesperson’s commission, the
+  salesperson may receive compensation through it. The distractor claiming Commission approval is
+  required is incorrect because the statute explicitly exempts such entities from approval when they
+  do not engage in brokerage business. The other distractors impose additional conditions (employing
+  a licensee or being registered as a brokerage) that the statute does not mention.
+citation:
+  source: Del. Code Ann. tit. 24, ch. 29 — Delaware Code Title 24, Chapter 29 - Real Estate Services,
+    Brokers, Associate Brokers and Salespersons (Subchapters I-II) § 2930(d)
+  url: null
+  quoted_text: the entity does not need to be approved because it does not engage in the brokerage
+    business but is only established for business purposes to receive the licensee’s compensation
+  secondary: []
+terms:
+  - compensation
+  - entity
+  - brokerage
+  - approval
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-28

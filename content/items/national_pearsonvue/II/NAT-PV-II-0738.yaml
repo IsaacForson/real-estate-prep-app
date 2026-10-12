@@ -1,0 +1,41 @@
+id: NAT-PV-II-0738
+jurisdiction: NAT
+bank: national_pearsonvue
+blueprint_node: II.A
+vendor: pearsonvue
+license_level: both
+cognitive_level: knowledge
+stem: When a tax certificate is sold at a tax sale and the property owner redeems within the
+  statutory period, what does the investor who purchased the certificate receive?
+options:
+  - The investor receives immediate title to the property upon redemption
+  - The investor receives a tax deed after the redemption period ends
+  - The investor receives repayment of the purchase price plus interest
+  - The investor receives a portion of the property's sale proceeds
+key: C
+explanation: If the property owner redeems the tax certificate within the statutory period, the
+  investor who bought the certificate is repaid the amount paid plus interest. The investor only
+  obtains a tax deed if the owner fails to redeem.
+citation:
+  source: REP Ref. Ownership, Title & Transfer § 12.2
+  url: null
+  quoted_text: In some states a tax certificate is sold to an investor who is repaid with interest if
+    the owner redeems within the statutory period and who may obtain a tax deed if the owner does
+    not
+  secondary: []
+terms:
+  - tax sale
+  - tax certificate
+  - redemption
+  - interest
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

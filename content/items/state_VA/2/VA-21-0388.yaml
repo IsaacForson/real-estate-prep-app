@@ -1,0 +1,43 @@
+id: VA-21-0388
+jurisdiction: VA
+bank: state_VA
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives monthly property management fees that are deposited into the firm's escrow
+  account and belong to the licensee. The licensee withdraws these fees from the escrow account
+  every eight months. According to Virginia Real Estate Board regulations, what is the effect of
+  this practice?
+options:
+  - The practice is permissible because the funds belong to the licensee under Virginia law.
+  - The practice constitutes commingling because withdrawals exceed the six‑month interval limit.
+  - The practice is allowed as long as the licensee maintains separate records for all escrow funds.
+  - The practice is prohibited only if the escrow account balance falls below the required minimum.
+key: B
+explanation: The regulation states that withdrawals of funds belonging to the licensee must occur at
+  intervals of not more than six months to avoid commingling. An eight‑month interval exceeds this
+  limit, so the practice constitutes commingling. The distractor that claims permissibility because
+  the funds belong to the licensee ignores the interval requirement.
+citation:
+  source: 18 VAC 135-20-10 et seq. — 18 VAC 135-20 — Virginia Real Estate Board Licensing Regulations
+    — § 135-20-181 A.2.c
+  url: null
+  quoted_text: provided that there are periodic withdrawals of the funds at intervals of not more than
+    six months
+  secondary: []
+terms:
+  - escrow
+  - commingling
+  - withdrawal
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-09

@@ -1,0 +1,42 @@
+id: FL-475-0492
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An owner wants to subordinate a broker’s lien for an automatic renewal commission and prepares
+  a written subordination instrument, records it in the correct county, but does not obtain the
+  broker’s consent. What is the effect under Florida law?
+options:
+  - The subordination is effective only if the lien is for a purchase money mortgage
+  - The subordination is ineffective unless the mortgage holder agrees
+  - The subordination is ineffective because the broker did not consent
+  - The subordination is effective because the owner may subordinate with or without the broker’s
+    consent
+key: D
+explanation: The statute expressly states that the owner may subordinate a lien for an automatic
+  renewal commission with or without the broker’s consent. Therefore, lack of broker consent does
+  not affect the validity of the subordination.
+citation:
+  source: Fla. Stat. § 475.813(2)
+  url: null
+  quoted_text: The subordination instrument described in this subsection shall be made in writing and
+    shall be recorded by the owner in the public records of the same county where the broker’s lien
+    notice was recorded.
+  secondary: []
+terms:
+  - subordination
+  - consent
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

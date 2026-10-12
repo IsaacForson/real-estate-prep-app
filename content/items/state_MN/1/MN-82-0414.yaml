@@ -1,0 +1,40 @@
+id: MN-82-0414
+jurisdiction: MN
+bank: state_MN
+blueprint_node: "1"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A licensee receives a damage deposit from a tenant for a rental property. Under Minn. Stat. §
+  82.55, Subd. 26, is this amount considered trust funds?
+options:
+  - The amount is considered trust funds because damage deposits are explicitly included in the
+    definition
+  - The amount is not considered trust funds because only earnest money deposits qualify
+  - The amount is considered trust funds only if the licensee holds a broker's license
+  - The amount is not considered trust funds because it is received after the transaction is
+    terminated
+key: A
+explanation: Under Minn. Stat. § 82.55 Subd. 26, damage deposits are included in the definition of
+  trust funds, so the amount received is trust funds. The other options are incorrect because they
+  incorrectly limit trust funds to earnest money only, condition trust funds on the licensee holding
+  a broker's license, or claim that funds received after a transaction ends are not trust funds.
+citation:
+  source: Minn. Stat. ch. 82 § 82.55 Subd. 26
+  url: null
+  quoted_text: includes all down payments, earnest money deposits, rents for clients, tax and
+    insurance escrow payments, damage deposits, and any funds received on behalf of any person.
+  secondary: []
+terms:
+  - trust funds
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

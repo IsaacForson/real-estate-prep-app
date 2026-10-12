@@ -1,0 +1,40 @@
+id: CA-4-0417
+jurisdiction: CA
+bank: state_CA
+blueprint_node: "1"
+vendor: state
+license_level: both
+cognitive_level: application
+stem: A servicemember receives a Permanent Change of Station order assigning them to a duty station
+  outside California. According to Cal. Code Regs. tit. 10, § 2759.6(a)(1), within how many days
+  must the servicemember notify the Department of this change?
+options:
+  - 15 days
+  - 30 days
+  - 45 days
+  - 60 days
+key: B
+explanation: Section 2759.6(a) requires registrants to notify the Department within 30 days of
+  events such as issuance of new military orders to a duty station outside California. The other
+  time frames do not match this requirement.
+citation:
+  source: Cal. Code Regs. tit. 10, § 2759.6(a)
+  url: null
+  quoted_text: "(a) Registrants must notify the Department via the Department's internet website
+    within 30 days of any of the following events, specifying the effective date of these events:"
+  secondary: []
+terms:
+  - notification
+  - military orders
+  - registration
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

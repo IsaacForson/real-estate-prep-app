@@ -1,0 +1,49 @@
+id: ME-114-0295
+jurisdiction: ME
+bank: state_ME
+blueprint_node: II
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A licensee changes their mailing address on January 15. Under Maine law, by what date must the
+  licensee report this change to the director?
+options:
+  - The licensee must report the change by January 20.
+  - The licensee must report the change by January 25.
+  - The licensee must report the change by January 30.
+  - The licensee must report the change by February 4.
+key: B
+explanation: The law requires that any change of address be reported to the director no later than
+  10 days after the change. Adding 10 days to January 15 yields January 25, which is the reporting
+  deadline. The other dates either fall short of the 10‑day period or exceed it.
+citation:
+  source: "32 M.R.S. §§ 13001–13283 (Real Estate Brokerage License Act) — Maine Revised Statutes Title
+    32, Chapter 114: Real Estate Brokerage License Act §13195"
+  url: null
+  quoted_text: Any change of address, name or other material change in the conditions or
+    qualifications set forth in the original application, including but not limited to criminal
+    convictions or suspension or revocation of any professional license, must be reported to the
+    director no later than 10 days after the change.
+  secondary: []
+math:
+  worked_solution: |-
+    Start date: January 15
+    Add 10 days: January 15 + 10 days = January 25
+    Result: January 25
+  formulas:
+    - result_date = start_date + 10 days
+  onscreen_calculator_only: false
+terms:
+  - address change
+  - reporting deadline
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

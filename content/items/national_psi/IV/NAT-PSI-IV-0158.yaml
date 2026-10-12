@@ -1,0 +1,39 @@
+id: NAT-PSI-IV-0158
+jurisdiction: NAT
+bank: national_psi
+blueprint_node: IV
+vendor: psi
+license_level: both
+cognitive_level: knowledge
+stem: Under TILA, what term is defined as the sum of the amount financed and the finance charge?
+options:
+  - Amount financed (credit)
+  - Finance charge (credit cost)
+  - Total of payments
+  - Total sale price (cash)
+key: C
+explanation: "The statute defines the sum of the amount financed and the finance charge as the
+  'total of payments'. The other options refer to distinct disclosures: amount financed is the
+  credit actually used, finance charge is the cost of credit, and total sale price includes the cash
+  price plus additional charges and the finance charge."
+citation:
+  source: 15 U.S.C. § 1638(a)(5)
+  url: null
+  quoted_text: The sum of the amount financed and the finance charge, which shall be termed the 'total
+    of payments'.
+  secondary: []
+terms:
+  - amount financed
+  - finance charge
+  - total of payments
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-09
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-09-09

@@ -1,0 +1,47 @@
+id: IA-543B-0411
+jurisdiction: IA
+bank: state_IA
+blueprint_node: "5"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A broker deposits $1,500 of personal funds into the trust account to cover bank service
+  charges. According to Iowa Code § 543B.46(4), is this action permissible?
+options:
+  - The action is permissible because any amount of personal funds may be deposited.
+  - The action is permissible if the funds are identified for service charges.
+  - The action is impermissible because personal funds may not be deposited in a trust account.
+  - The action is impermissible because the amount exceeds the $1,000 limit.
+key: D
+explanation: Iowa Code § 543B.46(4) permits a broker to deposit up to $1,000 of personal funds for
+  service charges. Depositing $1,500 exceeds that limit, so the action is not allowed. Although
+  identifying the funds for service charges is relevant, the amount still must not exceed $1,000.
+citation:
+  source: Iowa Code ch. 543B — Iowa Code Chapter 543B — Real Estate Brokers and Salespersons — § 543B.46(4)
+  url: null
+  quoted_text: a broker may deposit and keep a sum not to exceed one thousand dollars in the account
+    from the broker’s personal funds
+  secondary: []
+math:
+  worked_solution: "The limit for personal funds is $1,000. The broker deposited $1,500. Compare:
+    $1,500 > $1,000, so the deposit exceeds the limit by $500. Therefore the action is
+    impermissible."
+  formulas:
+    - "Limit check: deposited amount ≤ $1,000"
+  onscreen_calculator_only: false
+terms:
+  - trust account
+  - personal funds
+  - service charges
+  - broker
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

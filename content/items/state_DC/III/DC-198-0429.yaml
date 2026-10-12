@@ -1,0 +1,47 @@
+id: DC-198-0429
+jurisdiction: DC
+bank: state_DC
+blueprint_node: III
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: An owner delivered written notice to a tenant on January 1, 2022, informing the tenant of a
+  received offer to purchase. The owner receives another written offer to purchase the property on
+  February 1, 2024. Under D.C. Code § 42-3404.09(b)(2), is the owner required to provide notice to
+  the tenant of the new offer?
+options:
+  - The owner is required to provide notice for every offer regardless of timing.
+  - The owner is not required to provide notice because single-family accommodations are exempt from
+    notice requirements.
+  - The owner is required to provide notice because more than one year has passed since the previous
+    notice.
+  - The owner is not required to provide notice because less than one year has passed since the
+    previous notice.
+key: C
+explanation: The exemption from providing subsequent notice lasts only one year after the initial
+  notice. Since more than one year passed between the January 1, 2022 notice and the February 1,
+  2024 offer, the owner must give notice again. The distractor claiming less than one year has
+  passed misstates the elapsed time.
+citation:
+  source: D.C. Code § 42-3404.09(b)(2)
+  url: null
+  quoted_text: For one year after delivering notice to a tenant pursuant to paragraph (1) of this
+    subsection, an owner is not required to provide the same tenant with subsequent notice that the
+    owner has received or solicited offers to purchase the single-family accommodation.
+  secondary: []
+terms:
+  - notice
+  - exemption
+  - one-year
+  - owner
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

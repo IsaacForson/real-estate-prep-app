@@ -1,0 +1,40 @@
+id: ID-20-0402
+jurisdiction: ID
+bank: state_ID
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker changed license status on April 1, 2023. For a real estate transaction that closed on
+  September 30, 2021, under Idaho Code § 54-2056(6), until what date must the broker make the trust
+  account records available to the commission?
+options:
+  - December 31, 2024
+  - September 30, 2024
+  - April 1, 2026
+  - December 31, 2025
+key: A
+explanation: Records must be available for three years following the year of closure; a 2021
+  transaction requires availability through the end of 2024. September 30, 2024 incorrectly adds
+  three calendar years to the closing date.
+citation:
+  source: Idaho Code § 54-2056(6)
+  url: null
+  quoted_text: These records shall be available to the commission for three (3) years following the
+    year in which each transaction was closed.
+  secondary: []
+terms:
+  - records
+  - availability
+  - transaction
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-11
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-11

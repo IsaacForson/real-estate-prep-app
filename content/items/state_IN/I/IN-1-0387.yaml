@@ -1,0 +1,45 @@
+id: IN-1-0387
+jurisdiction: IN
+bank: state_IN
+blueprint_node: I
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A listing broker receives final acceptance of an offer to purchase on Monday, May 6, 2024.
+  Tuesday, May 7 is a bank holiday, and Wednesday, May 8 and Thursday, May 9 are regular banking
+  days. According to 876 IAC 8-2-2(a), by what date must the broker deposit the earnest money
+  received in connection with the transaction?
+options:
+  - Thursday, May 9, 2024.
+  - Wednesday, May 8, 2024.
+  - Friday, May 10, 2024.
+  - Monday, May 13, 2024.
+key: A
+explanation: After acceptance on Monday, May 6, the next banking days are Wednesday, May 8 (first)
+  and Thursday, May 9 (second). The deposit must be made on or before the second banking day, which
+  is Thursday, May 9. Wednesday, May 8 is only the first banking day and does not satisfy the
+  deadline.
+citation:
+  source: 876 Ind. Admin. Code 8 — 876 IAC Article 8 — Article 8 (Indiana Real Estate Commission
+    rules; official iac.iga.in.gov 2024 edition PDF read via Internet Archive capture of 2024-02-14
+    because iga.in.gov now serves the IAC only through a JavaScript app and in.gov refuses
+    connections from this environment) — § 8-2-2
+  url: null
+  quoted_text: "The listing broker shall, on or before the next two (2) banking days after final
+    acceptance of the offer to purchase, do one (1) of the following:"
+  secondary: []
+terms:
+  - banking day
+  - acceptance
+  - escrow
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-06

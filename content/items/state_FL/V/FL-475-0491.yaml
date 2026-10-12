@@ -1,0 +1,46 @@
+id: FL-475-0491
+jurisdiction: FL
+bank: state_FL
+blueprint_node: V
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A homebuyer takes out a mortgage loan to purchase their primary residence, with the loan
+  secured by the dwelling. Under Fla. Stat. § 475.611(1)(n), is this transaction considered a
+  covered transaction?
+options:
+  - The transaction is a covered transaction because it is a consumer credit transaction secured by
+    the consumer's principal dwelling
+  - The transaction is not a covered transaction because it is a commercial loan secured by business
+    property
+  - The transaction is not a covered transaction because the loan is not secured by the dwelling
+  - The transaction is a covered transaction because any real estate loan qualifies
+key: A
+explanation: "The loan meets both criteria: it is a consumer credit transaction and it is secured by
+  the buyer’s principal dwelling, satisfying the statutory definition. The option stating that any
+  real estate loan qualifies is incorrect because the definition requires a consumer credit
+  transaction secured by the principal dwelling, not any loan."
+citation:
+  source: "### Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) — official Online Sunshine page,
+    read via Internet Archive capture because leg.state.fl.us/flsenate.gov refused connections §
+    475.611(1)(n)"
+  url: null
+  quoted_text: “Covered transaction” means a consumer credit transaction secured by the consumer’s
+    principal dwelling
+  secondary: []
+terms:
+  - covered transaction
+  - consumer credit
+  - principal dwelling
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

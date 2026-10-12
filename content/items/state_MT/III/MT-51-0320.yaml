@@ -1,0 +1,41 @@
+id: MT-51-0320
+jurisdiction: MT
+bank: state_MT
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker's claims-made professional liability policy is canceled effective March 1 due to
+  nonpayment of premium. On April 25, a claim is made for an error that occurred during the policy
+  period. Under Montana law, is the claim covered?
+options:
+  - No, because the claim is for an error that occurred after the policy period ended.
+  - Yes, because the policy provides prior acts coverage for claims made after cancellation.
+  - No, because the claim is made after the policy expired and no extended reporting period applies.
+  - Yes, because the claim is made within the automatic 60-day extended reporting period.
+key: C
+explanation: Mont. Code Ann. § 37-51-325(3)(c) provides an automatic 60-day extended reporting
+  period only if cancellation is for reasons other than nonpayment of premium. Since the policy was
+  canceled for nonpayment of premium, no automatic extended reporting applies, making the claim
+  uncovered.
+citation:
+  source: Mont. Code Ann. § 37-51-325(3)(c)
+  url: null
+  quoted_text: provide an automatic 60-day extended reporting period to report a claim if the policy
+    is canceled or not renewed for any reason other than nonpayment of premium or a deductible
+  secondary: []
+terms:
+  - policy
+  - cancellation
+  - claim
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

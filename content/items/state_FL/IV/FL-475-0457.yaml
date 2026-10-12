@@ -1,0 +1,47 @@
+id: FL-475-0457
+jurisdiction: FL
+bank: state_FL
+blueprint_node: IV
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: A broker serves as trustee of a family trust created under chapter 689 that holds rental
+  properties and collects rent. Under Florida law, is the broker required to hold an active real
+  estate license?
+options:
+  - The broker must hold an active real estate license only if the trust generates more than $50,000
+    annual income
+  - The broker must hold an active real estate license unless the trustee is a bank, state or
+    federal association, or trust company with trust powers
+  - The broker is exempt from licensing if the trust holds only residential property and collects no
+    rent
+  - The broker is exempt from licensing because serving as a trustee automatically satisfies the
+    requirement
+key: B
+explanation: Under 475.01(4), a broker acting as a trustee is subject to the chapter unless the
+  trustee is a bank, state/federal association, or trust company with trust powers. Since the
+  trustee is a broker, a license is required. The claim that the broker is exempt simply because
+  they serve as trustee is incorrect.
+citation:
+  source: Fla. Stat. ch. 475 — Florida Statutes 2025, Chapter 475 — Real Estate Brokers, Sales
+    Associates, Schools, and Appraisers (Part I is the license law) § 475.01(4)
+  url: null
+  quoted_text: A broker acting as a trustee of a trust created under chapter 689 is subject to the
+    provisions of this chapter unless the trustee is a bank, state or federal association, or trust
+    company possessing trust powers as defined in s. 658.12.
+  secondary: []
+terms:
+  - broker
+  - trustee
+  - license
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 2
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,37 @@
+id: VT-2211-0328
+jurisdiction: VT
+bank: state_VT
+blueprint_node: "2"
+vendor: psi
+license_level: both
+cognitive_level: application
+stem: A 17-year-old individual has passed the required salesperson exam and completed the 40-hour
+  course. Under Vermont law, what is the outcome of their application for a salesperson license?
+options:
+  - The application is approved because the exam was passed
+  - The application is denied due to insufficient age
+  - The application is approved pending parental consent
+  - The application is placed on hold until the applicant turns 18
+key: B
+explanation: The statute requires every applicant to have attained the age of majority; a
+  17‑year‑old has not met this threshold, so the application must be denied. No provision allows
+  approval based on parental consent or pending a birthday.
+citation:
+  source: 26 V.S.A. ch. 41 — § 2291(c)
+  url: null
+  quoted_text: (c) Every applicant for licensure shall have attained the age of majority.
+  secondary: []
+terms:
+  - age of majority
+  - applicant
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-10
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-10

@@ -1,0 +1,42 @@
+id: RI-5-0420
+jurisdiction: RI
+bank: state_RI
+blueprint_node: III
+vendor: pearsonvue
+license_level: both
+cognitive_level: application
+stem: An applicant completed 45 classroom hours in May 2021 and submitted a salesperson license
+  application in November 2023. Are those classroom hours acceptable to meet the pre‑licensing
+  education requirement?
+options:
+  - No, because the applicant must complete the hours after submitting the application
+  - Yes, because any hours completed within the last four years are acceptable
+  - No, because the hours were completed more than two years before the application
+  - Yes, because the hours were completed within the last two years
+key: C
+explanation: The rule states that classroom hours completed more than two years from the date of
+  application will not be considered. Since May 2021 to November 2023 exceeds two years, the hours
+  are invalid. The distractor "Yes, because the hours were completed within the last two years"
+  incorrectly claims the hours fall within the allowable window.
+citation:
+  source: 230-RICR-30-20-2 (Real Estate Brokers and Salespersons) — Rhode Island Code of Regulations
+    230-RICR-30-20-2 — Real Estate Brokers and Salespersons (DBR Commercial Licensing) § 2.7(A)
+  url: null
+  quoted_text: Classroom hours completed more than two (2) years from the date of the application will
+    not be considered in meeting the forty-five (45) hour requirement.
+  secondary: []
+terms:
+  - classroom hours
+  - two-year limit
+  - salesperson
+tags: []
+status: published
+reviewer: auto-publish
+verified_on: 2026-10-07
+qa_approved_on: null
+version: 1
+provenance:
+  model: nvidia/nvidia/nemotron-3-super-120b-a12b
+  prompt_version: draft-v7 / verify-v2
+  batch_id: null
+  generated_on: 2026-10-07
